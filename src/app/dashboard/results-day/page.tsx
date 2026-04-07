@@ -16,10 +16,10 @@ const ResultsDayPage = async () => {
     <SharedPageLayout>
       <div className="flex flex-col gap-6 w-full min-h-full px-4 py-10">
         <div className="mx-auto w-full max-w-lg">
-          <h1 className="text-xl font-bold text-[#1A2332]">
+          <h1 className="text-xl font-bold text-foreground">
             Results Day
           </h1>
-          <p className="mt-1 text-sm text-[#4A5568]">
+          <p className="mt-1 text-sm text-muted-foreground">
             {new Date().toLocaleDateString('en-PH', {
               year: 'numeric',
               month: 'long',

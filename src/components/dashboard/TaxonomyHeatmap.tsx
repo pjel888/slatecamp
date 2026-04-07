@@ -136,8 +136,10 @@ export const TaxonomyHeatmap = ({
                     {/* Delta indicator */}
                     {showDelta && node.delta != null && node.delta !== 0 && (
                       <span
-                        className="text-[11px] font-medium shrink-0"
-                        style={{ color: node.delta > 0 ? '#2D9F6F' : '#D64545' }}
+                        className={[
+                          'text-[11px] font-medium shrink-0',
+                          node.delta > 0 ? 'text-success' : 'text-destructive',
+                        ].join(' ')}
                       >
                         {node.delta > 0 ? '↑' : '↓'}
                       </span>

@@ -23,15 +23,14 @@ const CustomTooltip = ({ active, payload }: any) => {
     const item = payload[0].payload as SubjectMastery
     return (
       <div
-        className="rounded-md bg-card px-3 py-2"
-        style={{ border: '1px solid #E5E7EB', boxShadow: '0 1px 3px rgba(0,0,0,0.08)' }}
+        className="rounded-md bg-card px-3 py-2 border border-border shadow-sm"
       >
-        <p className="text-xs font-semibold" style={{ color: '#1A2332' }}>
+        <p className="text-xs font-semibold text-foreground">
           {item.subject}
         </p>
-        <p className="text-[13px] font-semibold tabular-nums" style={{ color: '#1A2332' }}>
+        <p className="text-[13px] font-semibold tabular-nums text-foreground">
           {item.mastery}%{' '}
-          <span className="text-xs font-normal" style={{ color: '#6B6B6B' }}>
+          <span className="text-xs font-normal text-muted-foreground">
             · {item.questionsAnswered} answered
           </span>
         </p>
@@ -90,11 +89,11 @@ export function SubjectRadarChart({ data }: SubjectRadarChartProps) {
                 <Radar
                   name="Mastery"
                   dataKey="mastery"
-                  stroke="#1B3FC4"
+                  stroke="var(--primary)"
                   strokeWidth={2}
-                  fill="#1B3FC4"
+                  fill="var(--primary)"
                   fillOpacity={0.15}
-                  dot={{ r: 4, fill: '#1B3FC4', stroke: '#1B3FC4', strokeWidth: 0 }}
+                  dot={{ r: 4, fill: 'var(--primary)', stroke: 'var(--primary)', strokeWidth: 0 }}
                   animationDuration={300}
                   animationEasing="ease-out"
                 />

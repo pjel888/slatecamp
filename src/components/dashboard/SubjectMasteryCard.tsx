@@ -225,7 +225,7 @@ const RadialHeatmap = ({
                   y={ly}
                   textAnchor='middle'
                   dominantBaseline='central'
-                  fill={isHovered ? '#1A2332' : '#8896A7'}
+                  fill={isHovered ? 'var(--foreground)' : 'var(--muted-foreground)'}
                   fontSize={8}
                   fontWeight={isHovered ? 600 : 400}
                   style={{ transition: 'fill 150ms ease-out' }}
@@ -244,7 +244,7 @@ const RadialHeatmap = ({
             x={cx}
             y={cy - 6}
             textAnchor='middle'
-            fill='#1A2332'
+            fill='var(--foreground)'
             fontSize={14}
             fontWeight={700}
           >
@@ -254,7 +254,7 @@ const RadialHeatmap = ({
             x={cx}
             y={cy + 6}
             textAnchor='middle'
-            fill='#8896A7'
+            fill='var(--muted-foreground)'
             fontSize={7}
           >
             {data[hovered].shortLabel}
@@ -265,7 +265,7 @@ const RadialHeatmap = ({
           x={cx}
           y={cy + 2}
           textAnchor='middle'
-          fill='#8896A7'
+          fill='var(--muted-foreground)'
           fontSize={7}
           fontWeight={500}
         >
@@ -356,7 +356,7 @@ export const SubjectMasteryCard = ({ data }: SubjectMasteryCardProps) => {
                     {clamped}%
                   </span>
                 </div>
-                <div className='h-1 w-full bg-white rounded-full overflow-hidden border border-border-design'>
+                <div className='h-1 w-full bg-card rounded-full overflow-hidden border border-border-design'>
                   <div
                     className='h-full rounded-full'
                     style={{
@@ -368,7 +368,7 @@ export const SubjectMasteryCard = ({ data }: SubjectMasteryCardProps) => {
                 </div>
                 <span
                   className='text-[11px] font-medium block leading-tight'
-                  style={{ color: barColor === MASTERY_COLORS.unexplored ? '#8896A7' : barColor }}
+                  style={{ color: barColor === MASTERY_COLORS.unexplored ? 'var(--muted-foreground)' : barColor }}
                 >
                   {label}
                 </span>
@@ -386,8 +386,7 @@ export const SubjectMasteryCard = ({ data }: SubjectMasteryCardProps) => {
           </p>
           <Link
             href='/dashboard/analytics'
-            className='text-[11px] font-medium underline underline-offset-2 shrink-0 ml-2'
-            style={{ color: '#1B3FC4' }}
+            className='text-[11px] font-medium underline underline-offset-2 shrink-0 ml-2 text-primary'
           >
             Analytics &rarr;
           </Link>

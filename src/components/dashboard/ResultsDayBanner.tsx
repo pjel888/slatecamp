@@ -23,15 +23,14 @@ const ResultsDayBanner = () => {
 
   return (
     <div
-      className="rounded-md border border-[#1B3FC4]/20 bg-[#EEF2FC] px-4 py-3"
+      className="rounded-md border border-primary/20 bg-primary-50 px-4 py-3"
       role="alert"
       aria-label="PRC results notification"
     >
       <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <div className="flex items-start gap-3">
           <div
-            className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full"
-            style={{ background: '#1B3FC4' }}
+            className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary"
             aria-hidden
           >
             <svg
@@ -45,16 +44,16 @@ const ResultsDayBanner = () => {
             </svg>
           </div>
           <div>
-            <p className="text-sm font-medium text-[#1A2332]">
+            <p className="text-sm font-medium text-foreground">
               PRC results are expected.
             </p>
-            <p className="text-xs text-[#4A5568] mt-0.5">
+            <p className="text-xs text-muted-foreground mt-0.5">
               Have you checked{' '}
               <a
                 href="https://online.prc.gov.ph"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline underline-offset-2 hover:text-[#1B3FC4] transition-colors duration-150"
+                className="underline underline-offset-2 hover:text-primary transition-colors duration-150"
               >
                 online.prc.gov.ph
               </a>
@@ -68,7 +67,7 @@ const ResultsDayBanner = () => {
             type="button"
             onClick={handlePassed}
             disabled={isLoading}
-            className="rounded-sm bg-[#1B3FC4] px-3 py-1.5 text-xs font-semibold text-white transition-colors duration-150 ease-out hover:bg-primary-700 disabled:opacity-60"
+            className="rounded-sm bg-primary px-3 py-1.5 text-xs font-semibold text-white transition-colors duration-150 ease-out hover:bg-primary-700 disabled:opacity-60"
           >
             {isPassing ? 'Saving…' : 'I Passed!'}
           </button>

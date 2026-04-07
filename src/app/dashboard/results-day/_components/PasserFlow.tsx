@@ -12,8 +12,8 @@ const SocialCard = ({ firstName }: { firstName: string | null }) => {
 
   return (
     <div
-      className="relative flex flex-col items-center justify-center rounded-md p-8 text-center"
-      style={{ background: '#1B3FC4', minHeight: '200px' }}
+      className="relative flex flex-col items-center justify-center rounded-md p-8 text-center bg-primary"
+      style={{ minHeight: '200px' }}
       aria-label="Shareable achievement card"
     >
       <p className="text-xs font-semibold uppercase tracking-widest text-white/60 mb-3">
@@ -26,8 +26,7 @@ const SocialCard = ({ firstName }: { firstName: string | null }) => {
         ALE Passer
       </p>
       <div
-        className="mt-5 h-px w-16"
-        style={{ background: '#2D9F6F' }}
+        className="mt-5 h-px w-16 bg-success"
         aria-hidden
       />
       <p className="mt-3 text-[11px] font-medium uppercase tracking-widest text-white/50">
@@ -53,10 +52,7 @@ const PasserFlow = ({ firstName }: PasserFlowProps) => {
   return (
     <div className="mx-auto w-full max-w-lg space-y-4">
       {/* Congratulations card */}
-      <div
-        className="rounded-md p-8 text-center"
-        style={{ background: '#1B3FC4' }}
-      >
+      <div className="rounded-md p-8 text-center bg-primary">
         <p className="text-xs font-semibold uppercase tracking-widest text-white/60 mb-2">
           Architecture Licensure Exam
         </p>
@@ -70,9 +66,9 @@ const PasserFlow = ({ firstName }: PasserFlowProps) => {
       </div>
 
       {/* Social share section */}
-      <div className="rounded-md border border-[#D4DAE3] bg-white p-5 space-y-4">
+      <div className="rounded-md border border-border bg-card p-5 space-y-4">
         <div>
-          <p className="text-xs font-semibold uppercase tracking-wider text-[#8896A7] mb-3">
+          <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-3">
             Share your achievement
           </p>
           <SocialCard firstName={firstName} />
@@ -81,25 +77,25 @@ const PasserFlow = ({ firstName }: PasserFlowProps) => {
         <button
           type="button"
           onClick={handleCopyLink}
-          className="w-full rounded-sm border border-[#D4DAE3] px-4 py-2.5 text-sm font-medium text-[#4A5568] transition-colors duration-150 ease-out hover:border-[#1B3FC4] hover:bg-[#EEF2FC] hover:text-[#1B3FC4]"
+          className="w-full rounded-sm border border-border px-4 py-2.5 text-sm font-medium text-muted-foreground transition-colors duration-150 ease-out hover:border-primary hover:bg-primary-50 hover:text-primary"
         >
           {copied ? 'Link copied!' : 'Copy share link'}
         </button>
       </div>
 
       {/* What's next */}
-      <div className="rounded-md border border-[#D4DAE3] bg-white p-5 space-y-3">
-        <p className="text-xs font-semibold uppercase tracking-wider text-[#8896A7]">
+      <div className="rounded-md border border-border bg-card p-5 space-y-3">
+        <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
           What&apos;s next
         </p>
 
         <Link
           href="/dashboard/campfire"
-          className="flex items-center justify-between rounded-sm border border-[#D4DAE3] px-4 py-3 text-sm font-medium text-[#1A2332] transition-colors duration-150 ease-out hover:border-[#1B3FC4] hover:bg-[#EEF2FC]"
+          className="flex items-center justify-between rounded-sm border border-border px-4 py-3 text-sm font-medium text-foreground transition-colors duration-150 ease-out hover:border-primary hover:bg-primary-50"
         >
           <span>Your story is someone&apos;s map — Share in Campfire</span>
           <svg
-            className="h-4 w-4 shrink-0 text-[#8896A7]"
+            className="h-4 w-4 shrink-0 text-muted-foreground"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -112,11 +108,11 @@ const PasserFlow = ({ firstName }: PasserFlowProps) => {
 
         <Link
           href="/dashboard"
-          className="flex items-center justify-between rounded-sm border border-[#D4DAE3] px-4 py-3 text-sm font-medium text-[#1A2332] transition-colors duration-150 ease-out hover:border-[#1B3FC4] hover:bg-[#EEF2FC]"
+          className="flex items-center justify-between rounded-sm border border-border px-4 py-3 text-sm font-medium text-foreground transition-colors duration-150 ease-out hover:border-primary hover:bg-primary-50"
         >
           <span>Go to your dashboard</span>
           <svg
-            className="h-4 w-4 shrink-0 text-[#8896A7]"
+            className="h-4 w-4 shrink-0 text-muted-foreground"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"

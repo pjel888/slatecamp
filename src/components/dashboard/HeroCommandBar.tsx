@@ -107,10 +107,10 @@ export function HeroCommandBar({
               </span>
               {readinessScore > 0 && delta != null && Math.abs(delta) >= 1 ? (
                 <span
-                  className='text-[11px] font-medium'
-                  style={{
-                    color: delta > 0 ? '#8FE5B0' : 'rgba(255,255,255,0.5)',
-                  }}
+                  className={[
+                    'text-[11px] font-medium',
+                    delta > 0 ? 'text-success-300' : 'text-white/50',
+                  ].join(' ')}
                 >
                   {delta > 0 ? `+${delta}` : delta} since last session
                 </span>
@@ -178,13 +178,10 @@ export function HeroCommandBar({
                       </span>
                       {stat.delta != null && stat.delta !== 0 && (
                         <span
-                          className='text-[11px] font-semibold'
-                          style={{
-                            color:
-                              stat.delta > 0
-                                ? '#F5A623'
-                                : 'rgba(255,255,255,0.4)',
-                          }}
+                          className={[
+                            'text-[11px] font-semibold',
+                            stat.delta > 0 ? 'text-warning' : 'text-white/40',
+                          ].join(' ')}
                         >
                           {stat.delta > 0 ? `+${stat.delta}` : stat.delta}
                         </span>
@@ -224,10 +221,9 @@ export function HeroCommandBar({
               </span>
               <div className='h-1.5 flex-1 rounded-full overflow-hidden bg-white/10'>
                 <div
-                  className='h-full rounded-full'
+                  className='h-full rounded-full bg-warning'
                   style={{
                     width: `${Math.max(syllabusCoveragePercent, 1)}%`,
-                    backgroundColor: '#F5A623',
                     transition: 'width 300ms ease-out',
                   }}
                 />

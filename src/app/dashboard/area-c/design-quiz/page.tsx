@@ -11,10 +11,10 @@ const DesignQuizPage = async () => {
     <SharedPageLayout>
       <div className='max-w-4xl mx-auto px-4 py-6 w-full'>
         <div className='mb-6'>
-          <h1 className='text-xl font-semibold' style={{ color: '#1A2332' }}>
+          <h1 className='text-xl font-semibold text-foreground'>
             Design Quiz
           </h1>
-          <p className='mt-1 text-sm' style={{ color: '#4A5568' }}>
+          <p className='mt-1 text-sm text-muted-foreground'>
             Scenario-based computation questions. Each scenario shares a brief and site data — questions build on each other.
           </p>
         </div>

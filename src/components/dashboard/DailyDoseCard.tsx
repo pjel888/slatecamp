@@ -52,18 +52,17 @@ const MiniStepper = ({
       {Array.from({ length: total }).map((_, i) => (
         <div
           key={i}
-          className="h-1.5 w-1.5 rounded-full transition-colors duration-150"
-          style={{
-            backgroundColor:
-              i < completedCount
-                ? '#2D9F6F' // Emerald — completed
-                : i === completedCount
-                  ? '#1B3FC4' // Cobalt — current
-                  : '#D4DAE3', // Border — remaining
-          }}
+          className={[
+            'h-1.5 w-1.5 rounded-full transition-colors duration-150',
+            i < completedCount
+              ? 'bg-success'
+              : i === completedCount
+                ? 'bg-primary'
+                : 'bg-border',
+          ].join(' ')}
         />
       ))}
-      <span className="ml-1 text-[11px] tabular-nums" style={{ color: '#8896A7' }}>
+      <span className="ml-1 text-[11px] tabular-nums text-muted-foreground">
         {completedCount} of {total}
       </span>
     </div>
@@ -170,8 +169,8 @@ export const DailyDoseCard = () => {
     return (
       <Card className="border border-border bg-card p-4">
         <div className="flex items-center gap-2">
-          <SpinnerGap size={16} className="animate-spin" style={{ color: '#1B3FC4' }} />
-          <span className="text-sm" style={{ color: '#4A5568' }}>
+          <SpinnerGap size={16} className="animate-spin text-primary" />
+          <span className="text-sm text-muted-foreground">
             Building your daily session...
           </span>
         </div>
@@ -192,12 +191,12 @@ export const DailyDoseCard = () => {
     return (
       <Card className="border border-border bg-card p-4">
         <div className="flex items-center gap-2">
-          <CheckCircle size={20} weight="fill" style={{ color: '#2D9F6F' }} />
+          <CheckCircle size={20} weight="fill" className="text-success" />
           <div>
-            <p className="text-sm font-medium" style={{ color: '#1A2332' }}>
+            <p className="text-sm font-medium text-foreground">
               Today&apos;s session complete
             </p>
-            <p className="text-xs" style={{ color: '#4A5568' }}>
+            <p className="text-xs text-muted-foreground">
               You studied for {studiedMinutes} {studiedMinutes === 1 ? 'minute' : 'minutes'} today.
             </p>
           </div>
@@ -225,14 +224,14 @@ export const DailyDoseCard = () => {
   const completedCount = dose.startedAt ? 0 : 0
 
   return (
-    <Card className="border border-border bg-white p-4 space-y-3">
+    <Card className="border border-border bg-card p-4 space-y-3">
       {/* Header row */}
       <div className="flex items-center justify-between">
         <div>
-          <p className="text-sm font-medium" style={{ color: '#1A2332' }}>
+          <p className="text-sm font-medium text-foreground">
             Today&apos;s Study Plan
           </p>
-          <p className="text-xs" style={{ color: '#8896A7' }}>
+          <p className="text-xs text-muted-foreground">
             ~{dose.estimatedMinutes} min &middot; {activities.length}{' '}
             {activities.length === 1 ? 'activity' : 'activities'}
           </p>
@@ -241,7 +240,7 @@ export const DailyDoseCard = () => {
       </div>
 
       {/* Rationale */}
-      <p className="text-xs leading-relaxed" style={{ color: '#4A5568' }}>
+      <p className="text-xs leading-relaxed text-muted-foreground">
         {dose.rationale}
       </p>
 
@@ -267,16 +266,19 @@ export const DailyDoseCard = () => {
                 <Icon
                   size={18}
                   weight={isFirst ? 'fill' : 'regular'}
-                  style={{ color: isFirst ? '#1B3FC4' : '#8896A7', flexShrink: 0 }}
+                  className={[
+                    'shrink-0',
+                    isFirst ? 'text-primary' : 'text-muted-foreground',
+                  ].join(' ')}
                 />
                 <div className="min-w-0">
-                  <p
-                    className="text-sm font-medium truncate"
-                    style={{ color: isFirst ? '#1B3FC4' : '#1A2332' }}
-                  >
+                  <p className={[
+                    'text-sm font-medium truncate',
+                    isFirst ? 'text-primary' : 'text-foreground',
+                  ].join(' ')}>
                     {label}
                   </p>
-                  <p className="text-xs truncate" style={{ color: '#4A5568' }}>
+                  <p className="text-xs truncate text-muted-foreground">
                     {activity.reason} &middot; ~{activity.minutes} min
                   </p>
                 </div>
@@ -288,11 +290,10 @@ export const DailyDoseCard = () => {
                   onClick={() => void handleStart(dose.id)}
                   className={[
                     'inline-flex items-center gap-1 rounded-sm px-3 py-1.5',
-                    'text-sm font-medium text-white',
+                    'text-sm font-medium text-white bg-primary',
                     'transition-colors duration-150 ease-out',
-                    'hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-1',
+                    'hover:bg-primary-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-1',
                   ].join(' ')}
-                  style={{ backgroundColor: '#1B3FC4' }}
                 >
                   Start
                   <ArrowRight size={14} weight="bold" />
@@ -307,8 +308,7 @@ export const DailyDoseCard = () => {
       <button
         type="button"
         onClick={() => setShowTimePicker(true)}
-        className="text-xs font-medium transition-colors duration-150 ease-out hover:underline"
-        style={{ color: '#1B3FC4' }}
+        className="text-xs font-medium text-primary transition-colors duration-150 ease-out hover:underline"
       >
         Adjust available time
       </button>

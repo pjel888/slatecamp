@@ -33,8 +33,7 @@ export function ImprovedActivityFeed({ sessions }: ImprovedActivityFeedProps) {
         <Tooltip>
           <TooltipTrigger asChild>
             <h3
-              className='text-sm font-semibold cursor-default'
-              style={{ color: '#1A2332' }}
+              className='text-sm font-semibold cursor-default text-foreground'
             >
               Recent Activity
             </h3>
@@ -45,20 +44,19 @@ export function ImprovedActivityFeed({ sessions }: ImprovedActivityFeedProps) {
           </TooltipContent>
         </Tooltip>
       </div>
-      <p className='text-[11px] mb-3' style={{ color: '#8896A7' }}>
+      <p className='text-[11px] mb-3 text-muted-foreground'>
         Your last 7 days of study sessions
       </p>
 
       {sessions.length === 0 ? (
         <div className='flex flex-col items-center justify-center py-6 gap-2'>
-          <p className='text-xs text-center' style={{ color: '#4A5568' }}>
+          <p className='text-xs text-center text-muted-foreground'>
             No sessions in the last 7 days. Your activity will appear here after
             your first quiz.
           </p>
           <Link
             href='/quiz/camp/setup'
-            className='text-[11px] font-medium underline underline-offset-2'
-            style={{ color: '#1B3FC4' }}
+            className='text-[11px] font-medium underline underline-offset-2 text-primary'
           >
             Start a session →
           </Link>
@@ -74,8 +72,7 @@ export function ImprovedActivityFeed({ sessions }: ImprovedActivityFeedProps) {
               <Tooltip>
                 <TooltipTrigger asChild>
                   <span
-                    className='font-dm-mono shrink-0 rounded px-1.5 py-0.5 text-[11px] font-bold uppercase tracking-wider cursor-default'
-                    style={{ backgroundColor: '#EEF2FC', color: '#1B3FC4' }}
+                    className='font-dm-mono shrink-0 rounded px-1.5 py-0.5 text-[11px] font-bold uppercase tracking-wider cursor-default bg-primary-50 text-primary'
                   >
                     {s.modeBadge}
                   </span>
@@ -87,13 +84,10 @@ export function ImprovedActivityFeed({ sessions }: ImprovedActivityFeedProps) {
 
               {/* Mode + topic + question count */}
               <div className='flex-1 min-w-0'>
-                <p
-                  className='text-xs font-medium truncate'
-                  style={{ color: '#1A2332' }}
-                >
+                <p className='text-xs font-medium truncate text-foreground'>
                   {s.testMode} · {s.questionCount} question{s.questionCount !== 1 ? 's' : ''}
                 </p>
-                <p className='text-[11px]' style={{ color: '#8896A7' }}>
+                <p className='text-[11px] text-muted-foreground'>
                   {s.subjectName ?? 'General Practice'}
                 </p>
               </div>
@@ -103,12 +97,12 @@ export function ImprovedActivityFeed({ sessions }: ImprovedActivityFeedProps) {
                 <Tooltip>
                   <TooltipTrigger>
                     <span
-                      className='shrink-0 rounded-full px-2 py-0.5 text-[11px] font-bold tabular-nums cursor-default'
-                      style={{
-                        backgroundColor:
-                          s.scorePercent >= 70 ? '#EDFAF4' : '#F5F5F5',
-                        color: s.scorePercent >= 70 ? '#1B7A3C' : '#4A5568',
-                      }}
+                      className={[
+                        'shrink-0 rounded-full px-2 py-0.5 text-[11px] font-bold tabular-nums cursor-default',
+                        s.scorePercent >= 70
+                          ? 'bg-success-50 text-success-700'
+                          : 'bg-muted text-muted-foreground',
+                      ].join(' ')}
                     >
                       {s.scorePercent}%
                     </span>
@@ -121,10 +115,7 @@ export function ImprovedActivityFeed({ sessions }: ImprovedActivityFeedProps) {
               )}
 
               {/* Time */}
-              <span
-                className='shrink-0 text-[11px]'
-                style={{ color: '#8896A7' }}
-              >
+              <span className='shrink-0 text-[11px] text-muted-foreground'>
                 {formatRelative(s.updatedAt)}
               </span>
             </div>

@@ -67,10 +67,10 @@ export const StreakRibbon = ({
         ))}
       </div>
       <span
-        className="text-xs font-medium"
-        style={{
-          color: streakStatus === 'at_risk' ? '#D4951A' : '#4A5568',
-        }}
+        className={[
+          'text-xs font-medium',
+          streakStatus === 'at_risk' ? 'text-warning' : 'text-muted-foreground',
+        ].join(' ')}
       >
         {streakLabel}
       </span>

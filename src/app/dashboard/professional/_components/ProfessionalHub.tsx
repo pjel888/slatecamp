@@ -118,21 +118,21 @@ const ProfessionalHub = ({ accountMode }: ProfessionalHubProps) => {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
               </svg>
             </div>
-            <p className="text-sm font-semibold text-[#1A2332]">Campfire Community</p>
+            <p className="text-sm font-semibold text-foreground">Campfire Community</p>
           </div>
-          <p className="text-xs text-[#4A5568] leading-relaxed">
+          <p className="text-xs text-muted-foreground leading-relaxed">
             Connect with fellow licensed professionals. Share practice insights, ask questions, and support the next cohort of reviewees.
           </p>
-          <span className="text-xs text-[#8896A7] mt-auto">Opening soon</span>
+          <span className="text-xs text-muted-foreground mt-auto">Opening soon</span>
         </div>
       </div>
 
       {/* ── Mode switcher ───────────────────────────────── */}
       {accountMode === 'professional_mode' && (
-        <div className="rounded-md border border-[#D4DAE3] bg-white px-4 py-3 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+        <div className="rounded-md border border-border bg-card px-4 py-3 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
           <div>
-            <p className="text-xs font-medium text-[#1A2332]">Returning to review?</p>
-            <p className="text-xs text-[#4A5568]">
+            <p className="text-xs font-medium text-foreground">Returning to review?</p>
+            <p className="text-xs text-muted-foreground">
               You can switch back to Study Mode at any time. Your progress is preserved.
             </p>
           </div>
@@ -140,7 +140,7 @@ const ProfessionalHub = ({ accountMode }: ProfessionalHubProps) => {
             type="button"
             onClick={handleReturnToReview}
             disabled={isSwitching}
-            className="rounded-sm border border-[#D4DAE3] bg-white px-3 py-1.5 text-xs font-medium text-[#4A5568] transition-colors duration-150 ease-out hover:border-[#1B3FC4] hover:text-[#1B3FC4] disabled:opacity-60 shrink-0"
+            className="rounded-sm border border-border bg-card px-3 py-1.5 text-xs font-medium text-muted-foreground transition-colors duration-150 ease-out hover:border-primary hover:text-primary disabled:opacity-60 shrink-0"
           >
             {isSwitching ? 'Switching…' : 'Switch to Study Mode'}
           </button>

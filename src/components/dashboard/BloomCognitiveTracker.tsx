@@ -22,15 +22,15 @@ const BLOOM_LABELS: Record<BloomLevel, string> = {
 }
 
 const getBarColor = (accuracy: number): string => {
-  if (accuracy >= 70) return '#2D9F6F'  // Emerald
-  if (accuracy >= 50) return '#D4951A'  // Amber
-  return '#D64545'                       // Warm Red
+  if (accuracy >= 70) return 'var(--success)'      // Emerald
+  if (accuracy >= 50) return 'var(--warning)'      // Amber
+  return 'var(--destructive)'                       // Warm Red
 }
 
 const getBarBg = (accuracy: number): string => {
-  if (accuracy >= 70) return '#EDFAF4'  // Emerald 50
-  if (accuracy >= 50) return '#FEF8ED'  // Amber 50
-  return '#FDF0F0'                       // Warm Red 50
+  if (accuracy >= 70) return 'var(--success-50)'   // Emerald 50
+  if (accuracy >= 50) return 'var(--warning-50)'   // Amber 50
+  return 'var(--destructive-50)'                    // Warm Red 50
 }
 
 // ── Diagnostic copy ───────────────────────────────────────────────────────────
@@ -95,10 +95,7 @@ const BloomBarRow = ({
           >
             {accuracy}%
           </span>
-          <span
-            className="font-mono text-[11px] tabular-nums"
-            style={{ color: '#8896A7' }}
-          >
+          <span className="font-mono text-[11px] tabular-nums text-muted-foreground">
             {attempts} attempts
           </span>
         </div>
@@ -139,11 +136,10 @@ const SubjectTabs = ({
           key={s.subjectId}
           type="button"
           onClick={() => onSelect(s.subjectId)}
-          className="text-[11px] font-medium px-2 py-0.5 rounded-sm transition-colors duration-150"
-          style={{
-            backgroundColor: isActive ? '#1B3FC4' : '#EEF2FC',
-            color: isActive ? '#FFFFFF' : '#1B3FC4',
-          }}
+          className={[
+            'text-[11px] font-medium px-2 py-0.5 rounded-sm transition-colors duration-150',
+            isActive ? 'bg-primary text-white' : 'bg-primary-50 text-primary',
+          ].join(' ')}
         >
           {s.subject}
         </button>
@@ -157,13 +153,7 @@ const SubjectTabs = ({
 const DiagnosticBanner = ({ message }: { message: string }) => {
   if (!message) return null
   return (
-    <div
-      className="mt-3 rounded-md px-3 py-2 border"
-      style={{
-        backgroundColor: '#F8F7F5',
-        borderColor: '#D4DAE3',
-      }}
-    >
+    <div className="mt-3 rounded-md px-3 py-2 border border-border bg-background">
       <p className="text-[11px] text-text-secondary leading-relaxed">{message}</p>
     </div>
   )
@@ -179,12 +169,11 @@ const LockedState = ({ sessionsCompleted }: { sessionsCompleted: number }) => (
     <p className="text-[11px] text-muted-foreground">
       {sessionsCompleted} of {SESSIONS_THRESHOLD} sessions completed
     </p>
-    <div className="mt-2 h-1.5 w-48 rounded-full overflow-hidden" style={{ backgroundColor: '#EEF2FC' }}>
+    <div className="mt-2 h-1.5 w-48 rounded-full overflow-hidden bg-primary-50">
       <div
-        className="h-full rounded-full"
+        className="h-full rounded-full bg-primary"
         style={{
           width: `${Math.min((sessionsCompleted / SESSIONS_THRESHOLD) * 100, 100)}%`,
-          backgroundColor: '#1B3FC4',
           transition: 'width 300ms ease-out',
         }}
       />

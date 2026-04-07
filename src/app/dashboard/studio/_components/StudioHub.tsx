@@ -58,10 +58,10 @@ export const StudioHub = ({ userName }: StudioHubProps) => {
     <div className="flex flex-col gap-6 w-full max-w-3xl mx-auto py-6 px-4">
       {/* Header */}
       <div className="flex flex-col gap-1">
-        <h1 className="text-xl font-semibold text-[#1A2332]">
+        <h1 className="text-xl font-semibold text-foreground">
           Studio Mode
         </h1>
-        <p className="text-sm text-[#4A5568]">
+        <p className="text-sm text-muted-foreground">
           Your code reference library for design projects.
         </p>
       </div>
@@ -74,25 +74,25 @@ export const StudioHub = ({ userName }: StudioHubProps) => {
             <Link
               key={card.href}
               href={card.href}
-              className="group flex flex-col gap-3 rounded-md border border-[#D4DAE3] bg-white p-5 shadow-none transition-shadow duration-150 ease-out hover:shadow-sm"
+              className="group flex flex-col gap-3 rounded-md border border-border bg-card p-5 shadow-none transition-shadow duration-150 ease-out hover:shadow-sm"
             >
               {/* Icon */}
-              <div className="flex h-9 w-9 items-center justify-center rounded-sm bg-[#EEF2FC]">
-                <Icon size={18} weight="regular" className="text-[#1B3FC4]" />
+              <div className="flex h-9 w-9 items-center justify-center rounded-sm bg-primary-50">
+                <Icon size={18} weight="regular" className="text-primary" />
               </div>
 
               {/* Text */}
               <div className="flex flex-col gap-1 flex-1">
-                <span className="text-sm font-semibold text-[#1A2332]">
+                <span className="text-sm font-semibold text-foreground">
                   {card.title}
                 </span>
-                <span className="text-xs text-[#4A5568] leading-relaxed">
+                <span className="text-xs text-muted-foreground leading-relaxed">
                   {card.description}
                 </span>
               </div>
 
               {/* CTA */}
-              <div className="flex items-center gap-1 text-xs font-medium text-[#1B3FC4] mt-auto">
+              <div className="flex items-center gap-1 text-xs font-medium text-primary mt-auto">
                 <span>{card.cta}</span>
                 <ArrowRight
                   size={12}

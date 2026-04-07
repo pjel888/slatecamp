@@ -31,11 +31,11 @@ export const AccountModeCard = ({ currentMode }: AccountModeCardProps) => {
   }
 
   return (
-    <div className="rounded-md border border-[#D4DAE3] bg-white overflow-hidden">
+    <div className="rounded-md border border-border bg-card overflow-hidden">
       {/* Header */}
-      <div className="bg-[#F8F7F5] border-b border-[#D4DAE3] px-4 py-3">
-        <p className="text-sm font-semibold text-[#1A2332]">Account Mode</p>
-        <p className="text-xs text-[#4A5568] mt-0.5">
+      <div className="bg-background border-b border-border px-4 py-3">
+        <p className="text-sm font-semibold text-foreground">Account Mode</p>
+        <p className="text-xs text-muted-foreground mt-0.5">
           Switch between exam preparation and professional reference.
         </p>
       </div>
@@ -47,24 +47,24 @@ export const AccountModeCard = ({ currentMode }: AccountModeCardProps) => {
           return (
             <div
               key={mode}
-              className={`px-4 py-3 flex items-start gap-3 ${isActive ? 'bg-[#EEF2FC]' : ''}`}
+              className={`px-4 py-3 flex items-start gap-3 ${isActive ? 'bg-primary-50' : ''}`}
             >
               <div className="mt-0.5 shrink-0">
                 <div
                   className={`h-4 w-4 rounded-full border-2 flex items-center justify-center ${
-                    isActive ? 'border-[#1B3FC4]' : 'border-[#D4DAE3]'
+                    isActive ? 'border-primary' : 'border-border'
                   }`}
                 >
                   {isActive && (
-                    <div className="h-2 w-2 rounded-full bg-[#1B3FC4]" />
+                    <div className="h-2 w-2 rounded-full bg-primary" />
                   )}
                 </div>
               </div>
               <div className="flex-1 min-w-0">
-                <p className={`text-sm font-medium ${isActive ? 'text-[#1B3FC4]' : 'text-[#1A2332]'}`}>
+                <p className={`text-sm font-medium ${isActive ? 'text-primary' : 'text-foreground'}`}>
                   {MODE_LABELS[mode]}
                 </p>
-                <p className="text-xs text-[#4A5568] mt-0.5 leading-relaxed">
+                <p className="text-xs text-muted-foreground mt-0.5 leading-relaxed">
                   {MODE_DESCRIPTIONS[mode]}
                 </p>
               </div>
@@ -74,12 +74,12 @@ export const AccountModeCard = ({ currentMode }: AccountModeCardProps) => {
       </div>
 
       {/* Action */}
-      <div className="px-4 py-3 border-t border-[#D4DAE3] flex justify-end">
+      <div className="px-4 py-3 border-t border-border flex justify-end">
         <button
           type="button"
           onClick={handleSwitch}
           disabled={isSwitching}
-          className="rounded-sm bg-[#1B3FC4] px-3 py-1.5 text-xs font-semibold text-white transition-colors duration-150 ease-out hover:bg-primary-700 disabled:opacity-60"
+          className="rounded-sm bg-primary px-3 py-1.5 text-xs font-semibold text-white transition-colors duration-150 ease-out hover:bg-primary-700 disabled:opacity-60"
         >
           {isSwitching
             ? 'Switching…'

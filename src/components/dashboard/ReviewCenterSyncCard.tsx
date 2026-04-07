@@ -27,10 +27,7 @@ export const ReviewCenterSyncCard = ({
   return (
     <div className="rounded-md border border-border bg-card p-4 space-y-2">
       <div className="flex items-center gap-2">
-        <div
-          className="flex h-6 w-6 shrink-0 items-center justify-center rounded-sm"
-          style={{ backgroundColor: '#EEF2FC' }}
-        >
+        <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-sm bg-primary-50">
           <svg
             width="12"
             height="12"
@@ -38,34 +35,35 @@ export const ReviewCenterSyncCard = ({
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             aria-hidden="true"
+            className="text-primary"
           >
             <path
               d="M6 1L7.236 3.528L10 3.927L8 5.878L8.472 8.635L6 7.344L3.528 8.635L4 5.878L2 3.927L4.764 3.528L6 1Z"
-              stroke="#1B3FC4"
+              stroke="currentColor"
               strokeWidth="1.1"
               strokeLinejoin="round"
             />
           </svg>
         </div>
-        <h3 className="text-sm font-semibold" style={{ color: '#1A2332' }}>
+        <h3 className="text-sm font-semibold text-foreground">
           Review Center Sync
         </h3>
       </div>
 
       {prioritySubject ? (
         <>
-          <p className="text-sm" style={{ color: '#4A5568' }}>
+          <p className="text-sm text-muted-foreground">
             Based on your heatmap, this week&apos;s priority subject is:{' '}
-            <span className="font-semibold" style={{ color: '#1A2332' }}>
+            <span className="font-semibold text-foreground">
               {prioritySubject}
             </span>
           </p>
-          <p className="text-xs" style={{ color: '#8896A7' }}>
+          <p className="text-xs text-muted-foreground">
             Check if this matches your review center schedule for maximum efficiency.
           </p>
         </>
       ) : (
-        <p className="text-sm" style={{ color: '#4A5568' }}>
+        <p className="text-sm text-muted-foreground">
           Complete a session to see which subject to prioritize this week.
         </p>
       )}

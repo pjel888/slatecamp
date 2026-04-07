@@ -28,15 +28,14 @@ const TransitionPrompt = ({ variant }: TransitionPromptProps) => {
 
   return (
     <div
-      className="rounded-md border border-[#1B3FC4]/20 bg-[#EEF2FC] px-4 py-3"
+      className="rounded-md border border-primary/20 bg-primary-50 px-4 py-3"
       role="alert"
       aria-label="Account mode transition"
     >
       <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <div className="flex items-start gap-3">
           <div
-            className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full"
-            style={{ background: '#1B3FC4' }}
+            className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary"
             aria-hidden
           >
             <svg
@@ -54,10 +53,10 @@ const TransitionPrompt = ({ variant }: TransitionPromptProps) => {
             </svg>
           </div>
           <div>
-            <p className="text-sm font-medium text-[#1A2332]">
+            <p className="text-sm font-medium text-foreground">
               Your exam has passed. How would you like to use SlateCamp?
             </p>
-            <p className="text-xs text-[#4A5568] mt-0.5">
+            <p className="text-xs text-muted-foreground mt-0.5">
               {variant === 'passed'
                 ? 'You can switch modes at any time from Settings.'
                 : 'This is optional — continue reviewing or switch when ready.'}
@@ -78,7 +77,7 @@ const TransitionPrompt = ({ variant }: TransitionPromptProps) => {
             type="button"
             onClick={handleActivate}
             disabled={isLoading}
-            className="rounded-sm bg-[#1B3FC4] px-3 py-1.5 text-xs font-semibold text-white transition-colors duration-150 ease-out hover:bg-primary-700 disabled:opacity-60"
+            className="rounded-sm bg-primary px-3 py-1.5 text-xs font-semibold text-white transition-colors duration-150 ease-out hover:bg-primary-700 disabled:opacity-60"
           >
             {isActivating ? 'Saving…' : 'I passed — take me to Professional Mode'}
           </button>
