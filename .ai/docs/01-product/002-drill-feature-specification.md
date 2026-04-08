@@ -79,7 +79,8 @@ The codebase uses three terms interchangeably due to historical evolution. The c
 | Mid | `102f822` | Quiz-v2 architecture with shells, intelligent routing, DB schema |
 | Late | `c9597dc` | Testing to Drills route migration + subscription tier consolidation |
 | Late | `a1a3f2c` | Gesture reliability, performance, a11y audit (33 findings) |
-| Latest | `31ac84f` | Global ALE to LEA terminology migration |
+| Late | `31ac84f` | Global ALE to LEA terminology migration |
+| Latest | — | Drill optimization: P0 results race condition fix, server action parallelization, CAGE verification wired end-to-end, session_status enum expanded, offline queue auto-flush |
 
 ---
 
@@ -890,6 +891,65 @@ Tracks overconfidence (said "sure" but wrong) and lucky guess rate (said "guessi
 ## 9. Behavioral Signal Capture (CAGE)
 
 **Status:** Fully implemented, patent-protected (IPOPHL filing).
+**Classification:** CONFIDENTIAL — Trade Secret / Patent-Protected IP
+
+### Intellectual Property Context
+
+The drill feature contains SlateCamp's core patent-protected intellectual property. An IPOPHL (Intellectual Property Office of the Philippines) utility model/patent application covers the complete pipeline from gesture capture to cognitive state inference. The system has **six confirmed white spaces** (no prior art identified):
+
+1. **Submission gesture as cognitive signal source** — Using the deliberate answer-submission gesture (not passive behavior) as the primary behavioral signal source. No prior art in educational assessment.
+2. **CAGE (Cryptographic Answer-Gesture Binding)** — Cryptographic binding of each answer to the physical gesture that confirmed it. Zero prior art across all domains.
+3. **Deliberate interaction as primary behavioral signal** — Inverts the behavioral biometrics field (which uses passive observation). SlateCamp uses the intentional submission act itself.
+4. **Educational integrity via internal interaction analysis** — All existing proctoring patents rely on external surveillance (cameras, screen recording). This system analyzes the interaction itself.
+5. **Submission state machine + behavioral attestation** — Combined state machine with cryptographic attestation. No combined prior art.
+6. **Population-level behavioral modeling for education** — Novel modeling paradigm distinct from individual-profile approaches (e.g., BioCatch).
+
+### Patent Claims → Implementation Mapping
+
+| Claim | Title | Implementation | Files |
+|-------|-------|---------------|-------|
+| **Claim 1** | Computer-Implemented Method (Broadest) | End-to-end pipeline: instrumented interaction region → signal capture → behavioral feature extraction → cognitive state inference → multi-factor validation → server-enforced state machine | Full drill subsystem |
+| **Claim 2** | System Claim | Hardware/software system embodiment | Full stack |
+| **Claim 3** | CAGE Method | Cryptographic Answer-Gesture Binding: response hash + behavioral attestation + nonce + sequence → signed token → server verification | `src/lib/cage/*` |
+| **Claims 4-8** | Signal Capture | Velocity profiles, path deviation, dwell-time, reversal metrics, touch pressure/area, accelerometer/gyroscope, jerk metric | `useGestureSignalCapture.ts`, `useDeviceSensors.ts` |
+| **Claims 9-13** | Feature Extraction & Inference | Sliding window micropatterns, ML model training, confidence classification, multi-signal fusion, individual behavioral profiles | `cognitive_state_indicators` table, `generateCoachObservation.ts` |
+| **Claims 14-16** | Submission Control | Start-zone → completion-zone traversal (SlideToSubmit), endpoint + temporal validation, configurable modalities | `SlideToSubmit.tsx` (IDENTITY-LOCKED) |
+| **Claims 17-21** | State Machine & Security | Active → confirming → submitted transitions, single-use session tokens, temporal policy enforcement, CAGE hash chain (Claim 20), nonce TTL + active-state gating (Claim 21) | `session-helpers.ts`, `nonceService.ts`, `verifyBindingToken.ts` |
+| **Claims 22-25** | Adaptive Output | Scoring weight modification, adaptive item selection, disengagement detection, aggregate session behavioral summary, population-level behavioral models | `adaptive-difficulty.ts`, `session_behavioral_summaries` table |
+| **Claims 26-28** | Implementation | React/Next.js client, Supabase/PostgreSQL backend, mobile touchscreen embodiment, real-time streaming during confirmation interaction | Full stack |
+
+### SlideToSubmit — Patent Claim 14 (Identity-Locked)
+
+The `SlideToSubmit` component (`src/components/quiz-v2/SlideToSubmit.tsx`) is the physical embodiment of **Patent Claim 14** (start-zone → completion-zone traversal). It is the primary answer confirmation mechanism and the source of all behavioral signal data used by the CAGE system.
+
+**Why it is identity-locked:** This component is the physical interface between the user and the patent-protected signal capture pipeline. Its gesture physics (spring overshoot, threshold position, haptic feedback timing) are calibrated to produce behavioral signal data with specific statistical properties. Modifying the gesture mechanics would alter the signal characteristics that the cognitive inference model is trained on, and would potentially invalidate the behavioral attestation described in Claim 3.
+
+**Patent-critical properties:**
+- 80% threshold (`THRESHOLD_PERCENT = 0.80`) — Claim 14: completion-zone boundary
+- Spring-back animation on incomplete drag — Claim 15: endpoint rejection
+- Haptic feedback at threshold — Claim 16: configurable modality feedback
+- `@use-gesture/react` pointer event capture — Claim 1(b): continuous signal capture
+- 44x44px handle — Claim 14: start-zone definition
+
+See [Section 16](#16-protected-components-identity-lock) for complete locked values.
+
+### CAGE Sessions — Patent Claims 3, 18, 20, 21
+
+A CAGE session is the cryptographic context that spans an entire drill session. It consists of:
+
+1. **Session key** (`cage_session_key` on `quiz_sessions`) — A 32-byte random key generated server-side at session start, stored in the DB, and shared with the client. Used as the HMAC-SHA256 signing key for all binding tokens in the session. (Claim 3)
+2. **Nonce set** (`issued_nonces` table) — One cryptographic nonce per question, issued at session start with a 15-minute TTL. Each nonce can be consumed exactly once (optimistic lock). Prevents replay attacks. (Claim 21)
+3. **Token chain** (`cage_binding_tokens` table) — Each binding token references the hash of the previous token's signature (`previousTokenHash`). This creates a tamper-evident chain — modifying any token invalidates all subsequent tokens. The chain-head can verify entire session integrity. (Claim 20)
+4. **Sequence numbers** — Monotonic counter incremented per submission. Combined with the hash chain, ensures ordering integrity. (Claim 20)
+
+**Lifecycle:**
+```
+Session Start → Generate session key + issue nonces (stored server-side)
+                → Return key + nonces to client (stored in Zustand, not persisted)
+Per Answer    → Client: capture gesture signals → generate binding token (HMAC with session key)
+              → Server: receive token → verify (hash + nonce + signature + chain) → store in cage_binding_tokens
+Session End   → Chain verification: validate token sequence integrity
+```
 
 ### Architecture Overview
 
@@ -986,15 +1046,25 @@ type CAGETrustLevel =
 - **Consumption:** Atomic via optimistic lock (`consumed = false` guard)
 - **Storage:** `issued_nonces` table
 
+### Session Key Storage
+
+**Source:** `src/lib/actions/quiz-v2/start-session.ts`
+
+The CAGE session key is generated server-side via `randomBytes(32).toString('hex')` and stored in `quiz_sessions.cage_session_key` (TEXT column, 64-char hex). The key is also returned to the client for HMAC signing. No application-level encryption — access controlled by Supabase service-role boundary.
+
 ### Server-Side Verification
 
 **Source:** `src/lib/cage/verifyBindingToken.ts`
+**Wired in:** `src/lib/actions/quiz-v2/submit-answer.ts` (fire-and-forget background task)
+**Token storage:** `src/lib/cage/cageTokenStore.ts` → `cage_binding_tokens` table
 
 Four checks:
 1. **Response hash** — recompute from received answers, compare
 2. **Nonce validity** — check issued_nonces: exists, not consumed, not expired
 3. **HMAC signature** — verify with server session key (timing-safe comparison)
 4. **Chain verification** — verify previousTokenHash matches signature of previous token (Claim 20)
+
+Verification results are persisted to `cage_binding_tokens` with `trust_level` (`verified`/`failed`/`unavailable`) and `verified_at` timestamp. All verification is non-blocking — failures are logged but never prevent answer submission.
 
 ### Temporal Bounds
 
@@ -1286,7 +1356,7 @@ Created via Supabase dashboard or early migration. Schema inferred from server a
 | `user_id` | UUID FK (auth.users) | Owner |
 | `discipline_id` | UUID FK (disciplines) | Current discipline |
 | `test_mode` | TEXT | DB mode key (camp, storm, proof_sim, etc.) |
-| `status` | TEXT | configuring / in_progress / paused / completed / abandoned / auto_submitted |
+| `status` | session_status (ENUM) | configuring / in_progress / paused / completed / abandoned / auto_submitted |
 | `config` | JSONB | Full QuizSessionConfig |
 | `question_ids` | UUID[] | Ordered question IDs |
 | `subject_ids` | UUID[] | Topic IDs involved |
@@ -1299,8 +1369,9 @@ Created via Supabase dashboard or early migration. Schema inferred from server a
 | `session_discovery` | JSONB | Post-session insights + `_finalization` payload |
 | `mastery_snapshot_at_start` | JSONB | Node mastery weights at session start |
 | `pre_session_confidence_ratings` | JSONB | Pre-session subject confidence |
+| `cage_session_key` | TEXT | CAGE HMAC signing key (64-char hex). Service role only. Null if CAGE unavailable. |
 
-**RLS:** Users can CRUD own sessions. Delete policy added in migration 010.
+**RLS:** Users can CRUD own sessions. Delete policy added in migration 010. Duplicate public-role policies removed (2026-04-08) — only authenticated-role policies remain.
 
 ### user_interactions
 
@@ -1693,13 +1764,13 @@ Wraps SlideToSubmit with CAGE signal capture. Must not modify `touch-action`, `u
 
 ### Type Safety Issues
 
-| File | Issue |
-|------|-------|
-| `src/lib/actions/quiz-v2/end-session.ts:331` | `session.status as any` — unsafe cast on terminal status check |
-| `src/lib/actions/quiz-v2/get-review-data.ts:70,116` | `data as any[]` — question data cast |
-| `src/lib/actions/quiz-v2/submit-answer.ts:282` | `rationaleFromDb as any` — rationale type resolution |
-| `src/lib/actions/quiz-v2/start-session.ts:227` | `(question as any).is_interleaved` — interleaved flag cast |
-| `src/lib/actions/quiz-v2/submit-answer.test.ts:183` | `finalResult as any` — test-only type mismatch |
+| File | Issue | Status |
+|------|-------|--------|
+| `src/lib/actions/quiz-v2/end-session.ts:331` | `session.status as any` — unsafe cast on terminal status check | RESOLVED — `SessionRow.status` typed as `SessionStatus` |
+| `src/lib/actions/quiz-v2/get-review-data.ts:70,116` | `data as any[]` — question data cast | Open — needs `QuestionReviewRow` type |
+| `src/lib/actions/quiz-v2/submit-answer.ts:282` | `rationaleFromDb as any` — rationale type resolution | RESOLVED — cast to `string \| null` |
+| `src/lib/actions/quiz-v2/start-session.ts:227` | `(question as any).is_interleaved` — interleaved flag cast | RESOLVED — typed assertion |
+| `src/lib/actions/quiz-v2/submit-answer.test.ts:183` | `finalResult as any` — test-only type mismatch | RESOLVED — `expect.objectContaining` |
 
 ### Mode Key Naming Mismatch
 
@@ -1711,14 +1782,14 @@ The `quiz_sessions` and `user_interactions` base `CREATE TABLE` statements are n
 
 ### Pause State Gap
 
-The DB `quiz_sessions.status` enum does not include `'paused'`. Pause state is tracked via a `_pausedAt` field injected into the config JSONB (see `pause-resume.ts` line 33). This is a workaround that should be formalized.
+~~The DB `quiz_sessions.status` enum does not include `'paused'`.~~ **RESOLVED (2026-04-08):** The `session_status` enum now includes `paused`, `auto_submitted`, and `configuring` (migration `20260408_drill_session_status_enum.sql`). Pause state is still tracked via `_pausedAt` in config JSONB as the primary mechanism, but the enum now supports direct status transitions.
 
 ### Future Work Items
 
 | Area | Description |
 |------|-------------|
 | **Monitoring** | Add Sentry/observability for SRS failures, CAGE verification failures, and offline queue persistence |
-| **CAGE Verification** | Server-side verification (`verifyBindingToken`) is implemented but not called in the submit-answer flow — needs integration |
+| **CAGE Verification** | **RESOLVED (2026-04-08):** `verifyBindingToken` is now wired as a fire-and-forget background task in `submit-answer.ts`. Session key stored in `quiz_sessions.cage_session_key`. Verified tokens persisted to `cage_binding_tokens` table via `cageTokenStore.ts`. |
 | **Fullexam Results Delay** | The 24-hour delay is configured (`delayHours: 24`) but the enforcement mechanism on the client (checking `resultsAvailableAt`) needs verification |
 | **Question Pagination** | StandardQuizShell calls `getSessionQuestions` for paginated loading but the full pagination flow for 200-question fullexam sessions needs stress testing |
 | **SR Integration** | The `processSuccessiveRelearning` action is defined but its integration point in the post-answer hook chain is not explicitly wired in `submit-answer.ts` |
