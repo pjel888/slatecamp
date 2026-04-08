@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation'
 import { MODE_PRESETS } from '@/lib/quiz/mode-presets'
 import { fetchQuestionsForClient } from '@/lib/quiz/to-client-question'
-import { createClient, getUser } from '@/lib/supabase/server'
+import { createClient, createServiceClient, getUser } from '@/lib/supabase/server'
 import type { QuizAnswerState, QuizMode, QuizSessionConfig } from '@/types/quiz-config'
 
 interface SessionPageProps {
@@ -36,9 +36,11 @@ const QuizSessionPage = async ({ params }: SessionPageProps) => {
     Math.max(10, resumeIndex + 10),
   )
 
+  // Use service client for questions — RLS on `questions` table restricts to admins only
+  const serviceClient = await createServiceClient()
   const [initialQuestions, interactionsResponse] = await Promise.all([
     fetchQuestionsForClient({
-      supabase,
+      supabase: serviceClient,
       questionIds: questionIds.slice(0, initialLoadCount),
       offset: 0,
     }),

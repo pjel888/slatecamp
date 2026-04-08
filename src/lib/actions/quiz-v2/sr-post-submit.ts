@@ -1,6 +1,6 @@
 'use server'
 
-import { createClient } from '@/lib/supabase/server'
+import { createClient, createServiceClient } from '@/lib/supabase/server'
 import { processSuccessiveRelearning } from './successive-relearning'
 import type { SRProcessResult } from './successive-relearning'
 
@@ -44,7 +44,9 @@ export const srPostSubmit = async (
   if (!isSRSession) return null
 
   // 2. Look up the question's topic_id
-  const { data: question } = await supabase
+  // questions table has admin-only RLS — must use service client
+  const serviceClient = await createServiceClient()
+  const { data: question } = await serviceClient
     .from('questions')
     .select('topic_id')
     .eq('question_id', questionId)

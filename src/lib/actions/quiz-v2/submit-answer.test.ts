@@ -15,8 +15,8 @@ const createServiceClientMock = mock(() => {
     in: () => mockQuery,
   }
   return Promise.resolve({ 
-    rpc: () => mockQuery,
-    from: () => mockQuery,
+    rpc: (name: string) => mockQuery,
+    from: (table: string) => mockQuery,
   })
 })
 const getUserMock = mock(() =>
@@ -120,7 +120,7 @@ describe('submitAnswer', () => {
       })
     }))
 
-    createServiceClientMock.mockReturnValue({
+    createServiceClientMock.mockReturnValue(Promise.resolve({
       rpc: rpcMock,
       from: (table: string) => ({
         select: () => ({
@@ -132,7 +132,7 @@ describe('submitAnswer', () => {
           })
         })
       })
-    })
+    }))
 
     const result = await submitAnswer(baseInput)
 
@@ -163,7 +163,7 @@ describe('submitAnswer', () => {
     const finalResult = { score: { correct: 1, total: 1, percent: 100 } }
     endSessionActionMock.mockResolvedValue(finalResult)
 
-    createServiceClientMock.mockReturnValue({
+    createServiceClientMock.mockReturnValue(Promise.resolve({
       rpc: rpcMock,
       from: (table: string) => ({
         select: () => ({
@@ -175,7 +175,7 @@ describe('submitAnswer', () => {
           })
         })
       })
-    })
+    }))
 
     const result = await submitAnswer(baseInput)
 
@@ -216,7 +216,7 @@ describe('submitAnswer', () => {
       update: updateMock,
     }
 
-    createServiceClientMock.mockReturnValue({
+    createServiceClientMock.mockReturnValue(Promise.resolve({
       rpc: (name: string) => {
         if (name === 'submit_quiz_answer_v2') return { single: () => Promise.resolve({ data: null, error: { message: 'Method not found', code: 'P0001' } }) }
         if (name === 'get_quiz_session_interaction_stats') return Promise.resolve({
@@ -230,7 +230,7 @@ describe('submitAnswer', () => {
         }
         return mockQuery
       }
-    })
+    }))
 
     const result = await submitAnswer(baseInput)
 

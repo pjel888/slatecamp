@@ -1,13 +1,13 @@
 'use client'
 
-import { useEffect, useRef, useCallback } from 'react'
+import { useEffect, useRef, useMemo } from 'react'
 import { useRouter } from 'next/navigation'
 import { useQuizStore } from '@/stores/useQuizStore'
 import { useQuizTimerStore } from '@/stores/useQuizTimerStore'
 import { BaseQuizShell } from './BaseQuizShell'
 import { QuizBody } from './QuizBody'
+import { useQuizShellHandlers } from '@/hooks/useQuizShellHandlers'
 import { 
-  endSession as endSessionAction, 
   getSessionQuestions, 
   updateSessionProgress 
 } from '@/lib/actions/quiz-v2'
@@ -28,10 +28,10 @@ interface SimulationShellProps {
 }
 
 /**
- * SimulationShell: Specialized shell for high-stakes "Full Exam Simulation".
- * - Enforces "Silent Mode" (no feedback, minimal UI).
- * - High-volume pre-fetching (200 questions).
- * - Checkpoint saves every 5 questions.
+ * SimulationShell: Specialized shell for "Full Exam Simulation".
+ * - No immediate feedback.
+ * - Strict countdown timer.
+ * - Results delayed (optional).
  */
 export const SimulationShell = ({
   sessionId,
@@ -44,7 +44,6 @@ export const SimulationShell = ({
 }: SimulationShellProps) => {
   const router = useRouter()
   const initializedRef = useRef(false)
-  const directionRef = useRef<'forward' | 'backward'>('forward')
 
   // Store Selectors
   const status = useQuizStore((s) => s.status)
@@ -57,25 +56,46 @@ export const SimulationShell = ({
   const currentAnswer = useQuizStore((s) => 
     currentQuestion ? s.answers[currentQuestion.question_id] : null
   )
-  
+
+  const feedback = useQuizStore((s) => s.feedback)
+  const feedbackData = useMemo(() => {
+    if (!feedback.visible || !feedback.questionId) return null
+    return {
+      questionId: feedback.questionId,
+      isCorrect: feedback.isCorrect ?? false,
+      correctOptionId: feedback.correctOptionId ?? '',
+      rationale: feedback.rationale,
+      wikiUrl: feedback.wikiUrl,
+      errorDiagnostic: feedback.errorDiagnostic,
+      closeness: feedback.closeness,
+    }
+  }, [feedback])
+
+  // Handlers Hook
+  const {
+    direction,
+    handleSelectOption,
+    handleSubmit,
+    handleNext,
+    handlePrevious,
+    handleExit,
+    handleSubmitAll,
+  } = useQuizShellHandlers({ sessionId, mode: 'fullexam' })
+
   // Actions
   const initSession = useQuizStore((s) => s.initSession)
   const addQuestions = useQuizStore((s) => s.addQuestions)
-  const selectAnswer = useQuizStore((s) => s.selectAnswer)
-  const submitCurrentAnswer = useQuizStore((s) => s.submitCurrentAnswer)
-  const goNext = useQuizStore((s) => s.goNext)
-  const goPrevious = useQuizStore((s) => s.goPrevious)
-  const endSession = useQuizStore((s) => s.endSession)
   const reset = useQuizStore((s) => s.reset)
   const startTimer = useQuizTimerStore((s) => s.startTimer)
   const stopTimer = useQuizTimerStore((s) => s.stopTimer)
   const resetTimer = useQuizTimerStore((s) => s.resetTimer)
 
-  // 1. Strict Initialization
+  // 1. Initialization
   useEffect(() => {
     if (initializedRef.current) return
     initializedRef.current = true
 
+    // Always re-init with fresh server data — persist may have stale/empty questions
     initSession({
       success: true,
       sessionId,
@@ -90,7 +110,7 @@ export const SimulationShell = ({
 
     startTimer({
       limitMs: (config.timer.totalSeconds || 14400) * 1000,
-      sessionId,
+      sessionId
     })
 
     return () => {
@@ -102,7 +122,7 @@ export const SimulationShell = ({
     }
   }, [sessionId, config, questions, allQuestionIds, totalQuestionCount, initialCurrentIndex, restoredAnswers, initSession, startTimer, reset, resetTimer])
 
-  // 2. High-Volume Pre-fetching (Batch of 50)
+  // 2. Pre-fetching
   useEffect(() => {
     if (!_hasHydrated) return
     const remainingIds = allQuestionIds.slice(questions.length)
@@ -126,92 +146,39 @@ export const SimulationShell = ({
     void fetchRemaining()
   }, [_hasHydrated, sessionId, allQuestionIds, questions.length, addQuestions])
 
-  // 3. Checkpoint Saves (Every 5 questions)
+  // 3. Navigation & Progress Sync (Throttled to every 5 questions or last)
   useEffect(() => {
     if (!_hasHydrated || !sessionId || status === 'results') return
     
-    // Always sync progress, but maybe throttled or at checkpoints for Simulation
-    void updateSessionProgress(sessionId, currentIndex).catch(() => {})
-  }, [_hasHydrated, sessionId, currentIndex, status])
+    const isLast = currentIndex === totalQuestions - 1
+    if (currentIndex % 5 === 0 || isLast) {
+      void updateSessionProgress(sessionId, currentIndex).catch(() => {})
+    }
+  }, [_hasHydrated, sessionId, currentIndex, status, totalQuestions])
 
-  // 4. Results Delay Redirection
   useEffect(() => {
     if (status === 'results' && results) {
       stopTimer()
-      // Enforce the 24h delay routing if configured
-      if (config.results.delayHours > 0) {
-        router.push(`/quiz/fullexam/session/${sessionId}/debrief`)
-      } else {
-        router.push(`/quiz/fullexam/session/${sessionId}/results`)
-      }
+      router.push(`/quiz/fullexam/session/${sessionId}/results`)
     }
-  }, [status, results, sessionId, router, stopTimer, config.results.delayHours])
-
-  // 5. Handlers
-  const handleSelectOption = (optionId: string) => {
-    if (currentQuestion) selectAnswer(currentQuestion.question_id, optionId)
-  }
-
-  const handleSubmit = () => {
-    // In Simulation, handleSubmit just records the answer locally and proceeds.
-    // Real submission to DB happens at the end or via checkpoints.
-    submitCurrentAnswer([]) // No gesture signals in strict proctoring if desired, or empty
-    handleNext()
-  }
-
-  const handleNext = useCallback(() => {
-    directionRef.current = 'forward'
-    if (currentIndex === totalQuestions - 1) {
-      // Last question - handled by BaseQuizShell's onSubmitAll
-      return
-    }
-    goNext()
-  }, [currentIndex, totalQuestions, goNext])
-
-  const handlePrevious = useCallback(() => {
-    directionRef.current = 'backward'
-    goPrevious()
-  }, [goPrevious])
-
-  const handleExit = async () => {
-    // High-stakes sessions usually warn more aggressively on exit
-    try {
-      const result = await endSessionAction({ sessionId, endReason: 'user_exit' })
-      stopTimer()
-      endSession(result)
-    } catch {
-      reset()
-      resetTimer()
-      router.push('/dashboard')
-    }
-  }
-
-  const handleSubmitAll = async () => {
-    useQuizStore.setState(s => ({ ui: { ...s.ui, calculatingResults: true } }))
-    try {
-      const result = await endSessionAction({ sessionId, endReason: 'completed' })
-      endSession(result)
-    } catch {
-      router.push(`/quiz/fullexam/session/${sessionId}/debrief`)
-    }
-  }
+  }, [status, results, sessionId, router, stopTimer])
 
   return (
     <BaseQuizShell
       config={config}
-      direction={directionRef.current}
+      direction={direction}
       onExit={handleExit}
       onSubmitAll={handleSubmitAll}
+      onNext={handleNext}
+      onPrevious={handlePrevious}
     >
-      <div className="simulation-proctor-overlay pointer-events-none absolute inset-0 border-4 border-primary/10" />
-      
       <QuizBody
         question={currentQuestion!}
         selectedOptionId={currentAnswer?.selectedOptionId ?? null}
-        confidenceLevel={null} // Simulation disables confidence rating
-        feedback={null}        // Simulation disables immediate feedback
+        confidenceLevel={null} // Simulation disables immediate feedback
+        feedback={feedbackData!}
         config={config}
-        onSelectOption={handleSelectOption}
+        onSelectOption={(optId) => handleSelectOption(currentQuestion!.question_id, optId)}
         onConfidenceChange={() => {}} 
         onSubmit={handleSubmit}
         onNext={handleNext}

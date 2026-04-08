@@ -98,13 +98,16 @@ const spinnerSizeClass: Record<string, string> = {
 type ButtonVariantProps = VariantProps<typeof buttonVariants>
 
 interface ButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement>,
+  extends Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, 'onClick'>,
     ButtonVariantProps {
   leftIcon?: React.ReactNode
   rightIcon?: React.ReactNode
   loading?: boolean
+  loadingText?: React.ReactNode
+  showSpinner?: boolean
   fullWidth?: boolean
   asChild?: boolean
+  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => any
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
@@ -116,17 +119,36 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       leftIcon,
       rightIcon,
       loading = false,
+      loadingText,
+      showSpinner = true,
       fullWidth = false,
       disabled,
+      onClick,
       children,
       asChild = false,
       ...props
     },
     ref,
   ) => {
+    const [isAutoLoading, setIsAutoLoading] = React.useState(false)
     const resolvedSize = size ?? 'default'
-    const resolvedDisabled = loading || disabled
+    const resolvedLoading = loading || isAutoLoading
+    const resolvedDisabled = resolvedLoading || disabled
     const Comp = asChild ? Slot : ButtonPrimitive
+
+    const handleClick = async (e: React.MouseEvent<HTMLButtonElement>) => {
+      if (onClick) {
+        const result = onClick(e)
+        if (result instanceof Promise) {
+          setIsAutoLoading(true)
+          try {
+            await result
+          } finally {
+            setIsAutoLoading(false)
+          }
+        }
+      }
+    }
 
     return (
       <Comp
@@ -135,10 +157,11 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         suppressHydrationWarning
         className={cn(
           buttonVariants({ variant, size, className }),
-          loading && 'pointer-events-none opacity-70',
+          resolvedLoading && 'pointer-events-none opacity-70',
           fullWidth && 'w-full',
         )}
         aria-disabled={resolvedDisabled ? true : undefined}
+        onClick={handleClick}
         {...(!asChild ? { disabled: resolvedDisabled } : {})}
         {...props}
       >
@@ -146,13 +169,24 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
           children
         ) : (
           <>
-            {loading ? (
-              <Spinner className={spinnerSizeClass[resolvedSize]} />
+            {resolvedLoading ? (
+              <>
+                {showSpinner && (
+                  <Spinner className={spinnerSizeClass[resolvedSize]} />
+                )}
+                {loadingText && (
+                  <span className="animate-in fade-in slide-in-from-left-1 duration-200">
+                    {loadingText}
+                  </span>
+                )}
+              </>
             ) : (
-              leftIcon
+              <>
+                {leftIcon}
+                {children}
+                {rightIcon}
+              </>
             )}
-            {children}
-            {!loading && rightIcon}
           </>
         )}
       </Comp>
@@ -186,11 +220,13 @@ const PendingButton = ({
       variant={variant}
       size={size}
       className={cn(pending && PENDING_CLASSES, className)}
-      disabled={pending || disabled}
+      loading={pending}
+      loadingText={pendingLabel}
+      disabled={disabled}
       aria-busy={pending ? true : undefined}
       {...props}
     >
-      {pending && pendingLabel !== undefined ? pendingLabel : children}
+      {children}
     </Button>
   )
 }

@@ -2,7 +2,7 @@
 // Selects a mix of primary-topic and sibling-topic questions to improve
 // discrimination through contextual interleaving (Hwang 2025).
 
-import { createClient } from '@/lib/supabase/server'
+import { createServiceClient } from '@/lib/supabase/server'
 import { normalizeOptions } from '@/lib/utils/question'
 
 // ─── Types ───────────────────────────────────────────────────────────────────
@@ -68,7 +68,8 @@ export const selectQuestionsWithInterleaving = async (
     difficultyRange,
   } = params
 
-  const supabase = await createClient()
+  // questions table has admin-only RLS — must use service client
+  const supabase = await createServiceClient()
   const excludeSet = new Set(excludeQuestionIds)
 
   // 1. Calculate split
@@ -171,7 +172,7 @@ export const selectQuestionsWithInterleaving = async (
  * Handles Supabase .in() limit by batching if needed.
  */
 const fetchQuestions = async (
-  supabase: Awaited<ReturnType<typeof createClient>>,
+  supabase: Awaited<ReturnType<typeof createServiceClient>>,
   topicIds: string[],
   limit: number,
   difficultyRange?: { min: number; max: number } | null,
@@ -211,7 +212,7 @@ const fetchQuestions = async (
  * as the primary topics but are not themselves in the primary set.
  */
 const findSiblingTopics = async (
-  supabase: Awaited<ReturnType<typeof createClient>>,
+  supabase: Awaited<ReturnType<typeof createServiceClient>>,
   primaryTopicIds: string[],
 ): Promise<string[]> => {
   if (primaryTopicIds.length === 0) return []

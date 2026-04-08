@@ -1,6 +1,6 @@
 'use server'
 
-import { createClient } from '@/lib/supabase/server'
+import { createClient, createServiceClient } from '@/lib/supabase/server'
 import { classifyError } from '@/lib/quiz/error-classifier'
 import { getMedianTimeForDifficulty } from '@/lib/quiz/median-time'
 import type { ErrorClassification } from '@/lib/quiz/error-classifier'
@@ -37,7 +37,9 @@ export const classifyErrorDiagnostic = async ({
   let topicId = questionData?.topic_id
 
   if (difficulty === undefined || topicId === undefined) {
-    const { data: question } = await supabase
+    // questions table has admin-only RLS — must use service client
+    const serviceClient = await createServiceClient()
+    const { data: question } = await serviceClient
       .from('questions')
       .select('difficulty, topic_id')
       .eq('question_id', questionId)

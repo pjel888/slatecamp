@@ -1,6 +1,6 @@
 'use server'
 
-import { createClient, getUser } from '@/lib/supabase/server'
+import { createClient, createServiceClient, getUser } from '@/lib/supabase/server'
 import { normalizeOptions, resolveRationaleText } from '@/lib/utils/question'
 import type { QuestionHistoryStats, ReviewDataResult, ReviewQuestionData } from '@/types/quiz-config'
 
@@ -44,6 +44,9 @@ export const getReviewData = async (
   const questionIds: string[] = session.question_ids ?? []
   const BATCH_SIZE = 80
 
+  // questions table has admin-only RLS — must use service client
+  const serviceClient = await createServiceClient()
+
   const allQuestions: Array<{
     question_id: string
     text: string
@@ -56,7 +59,7 @@ export const getReviewData = async (
 
   for (let i = 0; i < questionIds.length; i += BATCH_SIZE) {
     const batch = questionIds.slice(i, i + BATCH_SIZE)
-    const { data, error: batchError } = await supabase
+    const { data, error: batchError } = await serviceClient
       .from('questions')
       .select(
         'question_id, text, options, correct_option_id, rationale, prompt_image_url, topic_id, difficulty',

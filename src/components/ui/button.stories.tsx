@@ -42,6 +42,36 @@ export const Loading: Story = {
   },
 }
 
+export const LoadingWithText: Story = {
+  args: {
+    children: 'Save',
+    loading: true,
+    loadingText: 'Saving...',
+  },
+}
+
+export const LoadingTextOnly: Story = {
+  args: {
+    children: 'Confirm',
+    loading: true,
+    loadingText: 'LOADING...',
+    showSpinner: false,
+  },
+}
+
+export const AsyncLoading: Story = {
+  render: () => {
+    const handleClick = async () => {
+      await new Promise((resolve) => setTimeout(resolve, 2000))
+    }
+    return (
+      <Button onClick={handleClick} loadingText="Processing...">
+        Click for 2s Async Task
+      </Button>
+    )
+  },
+}
+
 export const Variants: Story = {
   render: () => (
     <div className="flex flex-wrap gap-3">

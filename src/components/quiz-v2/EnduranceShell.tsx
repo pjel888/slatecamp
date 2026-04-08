@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useRef, useCallback, useMemo } from 'react'
+import { useEffect, useRef, useMemo } from 'react'
 import { useRouter } from 'next/navigation'
 import { useQuizStore } from '@/stores/useQuizStore'
 import { useQuizTimerStore } from '@/stores/useQuizTimerStore'
@@ -8,12 +8,11 @@ import { BaseQuizShell } from './BaseQuizShell'
 import { QuizBody } from './QuizBody'
 import { analyzeStamina, detectFatigue } from '@/lib/quiz/stamina-analysis'
 import { cn } from '@/lib/utils'
+import { useQuizShellHandlers } from '@/hooks/useQuizShellHandlers'
 import { 
-  endSession as endSessionAction, 
   getSessionQuestions, 
   updateSessionProgress 
 } from '@/lib/actions/quiz-v2'
-import type { GestureSignalEvent } from '@/types/patent'
 import type { 
   QuizSessionConfig, 
   QuestionForClient,
@@ -34,7 +33,6 @@ interface EnduranceShellProps {
  * EnduranceShell: Specialized shell for "Design Endurance Training".
  * - Real-time stamina tracking (accuracy-by-block).
  * - Fatigue nudges when accuracy drops > 15%.
- * - Expanded layout for design-based interactive questions.
  */
 export const EnduranceShell = ({
   sessionId,
@@ -47,7 +45,6 @@ export const EnduranceShell = ({
 }: EnduranceShellProps) => {
   const router = useRouter()
   const initializedRef = useRef(false)
-  const directionRef = useRef<'forward' | 'backward'>('forward')
 
   // Store Selectors
   const status = useQuizStore((s) => s.status)
@@ -63,6 +60,19 @@ export const EnduranceShell = ({
   
   const answers = useQuizStore((s) => s.answers)
   const answersVersion = useQuizStore((s) => s.answersVersion)
+  const feedback = useQuizStore((s) => s.feedback)
+  const feedbackData = useMemo(() => {
+    if (!feedback.visible || !feedback.questionId) return null
+    return {
+      questionId: feedback.questionId,
+      isCorrect: feedback.isCorrect ?? false,
+      correctOptionId: feedback.correctOptionId ?? '',
+      rationale: feedback.rationale,
+      wikiUrl: feedback.wikiUrl,
+      errorDiagnostic: feedback.errorDiagnostic,
+      closeness: feedback.closeness,
+    }
+  }, [feedback])
 
   // Stamina Analysis (Memoized)
   const staminaMetrics = useMemo(() => {
@@ -70,23 +80,28 @@ export const EnduranceShell = ({
       is_correct: a.isCorrect,
       time_spent_ms: a.timeSpentMs
     }))
-    const blocks = analyzeStamina(answerList, 10) // Smaller block size for endurance sensitivity
+    const blocks = analyzeStamina(answerList, 10)
     return {
       blocks,
       fatigue: detectFatigue(blocks)
     }
   }, [answers, answersVersion])
 
+  // Handlers Hook
+  const {
+    direction,
+    handleSelectOption,
+    handleSubmit,
+    handleNext,
+    handlePrevious,
+    handleExit,
+    handleSubmitAll,
+  } = useQuizShellHandlers({ sessionId, mode: 'extended' })
+
   // Actions
   const initSession = useQuizStore((s) => s.initSession)
   const addQuestions = useQuizStore((s) => s.addQuestions)
-  const selectAnswer = useQuizStore((s) => s.selectAnswer)
-  const submitCurrentAnswer = useQuizStore((s) => s.submitCurrentAnswer)
-  const goNext = useQuizStore((s) => s.goNext)
-  const goPrevious = useQuizStore((s) => s.goPrevious)
-  const endSession = useQuizStore((s) => s.endSession)
   const reset = useQuizStore((s) => s.reset)
-  const hideFeedback = useQuizStore((s) => s.hideFeedback)
   const startTimer = useQuizTimerStore((s) => s.startTimer)
   const stopTimer = useQuizTimerStore((s) => s.stopTimer)
   const resetTimer = useQuizTimerStore((s) => s.resetTimer)
@@ -96,6 +111,7 @@ export const EnduranceShell = ({
     if (initializedRef.current) return
     initializedRef.current = true
 
+    // Always re-init with fresh server data — persist may have stale/empty questions
     initSession({
       success: true,
       sessionId,
@@ -119,7 +135,7 @@ export const EnduranceShell = ({
     }
   }, [sessionId, config, questions, allQuestionIds, totalQuestionCount, initialCurrentIndex, restoredAnswers, initSession, startTimer, reset, resetTimer])
 
-  // 2. Pre-fetching & Progress
+  // 2. Pre-fetching
   useEffect(() => {
     if (!_hasHydrated) return
     const remainingIds = allQuestionIds.slice(questions.length)
@@ -143,10 +159,15 @@ export const EnduranceShell = ({
     void fetchRemaining()
   }, [_hasHydrated, sessionId, allQuestionIds, questions.length, addQuestions])
 
+  // 3. Navigation & Progress Sync (Throttled to every 5 questions or last)
   useEffect(() => {
     if (!_hasHydrated || !sessionId || status === 'results') return
-    void updateSessionProgress(sessionId, currentIndex).catch(() => {})
-  }, [_hasHydrated, sessionId, currentIndex, status])
+    
+    const isLast = currentIndex === totalQuestions - 1
+    if (currentIndex % 5 === 0 || isLast) {
+      void updateSessionProgress(sessionId, currentIndex).catch(() => {})
+    }
+  }, [_hasHydrated, sessionId, currentIndex, status, totalQuestions])
 
   useEffect(() => {
     if (status === 'results' && results) {
@@ -155,70 +176,19 @@ export const EnduranceShell = ({
     }
   }, [status, results, sessionId, router, stopTimer])
 
-  // 3. Handlers
-  const handleSelectOption = (optionId: string) => {
-    if (currentQuestion) selectAnswer(currentQuestion.question_id, optionId)
-  }
-
-  const handleSubmit = (signalTrace?: GestureSignalEvent[]) => {
-    submitCurrentAnswer(signalTrace)
-  }
-
-  const handleNext = useCallback(() => {
-    directionRef.current = 'forward'
-    const isLast = currentIndex === totalQuestions - 1
-    const feedbackVisible = useQuizStore.getState().feedback.visible
-
-    if (feedbackVisible) {
-      if (isLast) useQuizStore.setState(s => ({ ui: { ...s.ui, calculatingResults: true } }))
-      hideFeedback()
-    }
-
-    if (isLast) {
-      if (results) endSession(results)
-      return
-    }
-    goNext()
-  }, [currentIndex, totalQuestions, results, hideFeedback, endSession, goNext])
-
-  const handlePrevious = useCallback(() => {
-    directionRef.current = 'backward'
-    goPrevious()
-  }, [goPrevious])
-
-  const handleExit = async () => {
-    try {
-      const result = await endSessionAction({ sessionId, endReason: 'user_exit' })
-      stopTimer()
-      endSession(result)
-    } catch {
-      reset()
-      resetTimer()
-      router.push('/dashboard')
-    }
-  }
-
-  const handleSubmitAll = async () => {
-    useQuizStore.setState(s => ({ ui: { ...s.ui, calculatingResults: true } }))
-    try {
-      const result = await endSessionAction({ sessionId, endReason: 'completed' })
-      endSession(result)
-    } catch {
-      router.push(`/quiz/extended/session/${sessionId}/results`)
-    }
-  }
-
   return (
     <BaseQuizShell
       config={config}
-      direction={directionRef.current}
+      direction={direction}
       onExit={handleExit}
       onSubmitAll={handleSubmitAll}
+      onNext={handleNext}
+      onPrevious={handlePrevious}
     >
       {/* Stamina Dashboard / Overlay */}
       {staminaMetrics.blocks.length > 0 && (
-        <div className="absolute right-4 top-20 z-20 flex flex-col items-end gap-2 pointer-events-none opacity-60 hover:opacity-100 transition-opacity">
-          <div className="bg-card/80 backdrop-blur-sm border border-border rounded-lg p-2 shadow-sm text-[10px] font-mono">
+        <div className="absolute right-4 top-20 z-20 flex flex-col items-end gap-2 pointer-events-none">
+          <div className="bg-card/80 backdrop-blur-sm border border-border rounded-lg p-2 shadow-sm text-[10px] font-mono opacity-60 hover:opacity-100 transition-opacity pointer-events-auto">
             <span className="text-muted-foreground mr-2">STAMINA:</span>
             <span className={cn(
               "font-bold",
@@ -228,7 +198,7 @@ export const EnduranceShell = ({
             </span>
           </div>
           {staminaMetrics.fatigue.hasFatigue && (
-            <div className="bg-accent text-white rounded-lg px-3 py-1.5 text-xs font-bold shadow-lg animate-bounce">
+            <div className="bg-accent text-white rounded-lg px-3 py-1.5 text-xs font-bold shadow-lg animate-pulse pointer-events-auto">
               FATIGUE DETECTED: Check Posture
             </div>
           )}
@@ -239,9 +209,9 @@ export const EnduranceShell = ({
         question={currentQuestion!}
         selectedOptionId={currentAnswer?.selectedOptionId ?? null}
         confidenceLevel={null}
-        feedback={useQuizStore.getState().getFeedbackData()!}
+        feedback={feedbackData!}
         config={config}
-        onSelectOption={handleSelectOption}
+        onSelectOption={(optId) => handleSelectOption(currentQuestion!.question_id, optId)}
         onConfidenceChange={() => {}}
         onSubmit={handleSubmit}
         onNext={handleNext}

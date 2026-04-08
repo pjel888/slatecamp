@@ -1,8 +1,6 @@
 import { normalizeOptions } from '@/lib/utils/question'
 import type { QuestionForClient } from '@/types/quiz-config'
 
-type JsonRecord = Record<string, unknown>
-
 export interface QuestionForClientRow {
   question_id: string
   topic_id: string | null
@@ -11,7 +9,7 @@ export interface QuestionForClientRow {
   prompt_image_url?: string | null
   difficulty?: number | null
   question_type?: string | null
-  metadata?: JsonRecord | null
+  hint_text?: string | null
   breadcrumb?: string | null
   is_interleaved?: boolean | null
 }
@@ -29,7 +27,6 @@ export const toClientQuestion = (
   question: QuestionForClientRow,
   position: number,
 ): QuestionForClient => {
-  const metadata = (question.metadata ?? {}) as JsonRecord
   const difficulty = question.difficulty ?? 0.5
 
   return {
@@ -39,13 +36,13 @@ export const toClientQuestion = (
     position,
     stem: question.text,
     image_url: question.prompt_image_url ?? null,
-    image_alt_text: toStringOrNull(metadata.image_alt_text),
+    image_alt_text: null,
     taxonomy_breadcrumb: question.breadcrumb ?? '',
     difficulty_label: toDifficultyLabel(difficulty),
     is_interleaved: question.is_interleaved ?? false,
     question_type: (question.question_type ?? 'mcq') as QuestionForClient['question_type'],
-    unit: toStringOrNull(metadata.unit),
-    hint_text: toStringOrNull(metadata.hint_text ?? metadata.hint),
+    unit: null,
+    hint_text: toStringOrNull(question.hint_text),
     options: normalizeOptions(question.options),
   }
 }
@@ -99,11 +96,12 @@ export const fetchQuestionsForClient = async ({
   const { data: questions, error } = await supabase
     .from('questions')
     .select(
-      'question_id, topic_id, text, options, difficulty, prompt_image_url, question_type, metadata',
+      'question_id, topic_id, text, options, difficulty, prompt_image_url, question_type, hint_text',
     )
     .in('question_id', questionIds)
 
   if (error || !questions) {
+    console.error('[fetchQuestionsForClient] QUERY FAILED:', { error, questionsNull: !questions, idCount: questionIds.length })
     return []
   }
 

@@ -1,6 +1,6 @@
 'use server'
 
-import { createClient, getUser } from '@/lib/supabase/server'
+import { createClient, createServiceClient, getUser } from '@/lib/supabase/server'
 import { matchGenerationAnswer } from '@/lib/quiz/answer-matching'
 import { resolveRationaleText } from '@/lib/utils/question'
 import type { QuestionMatchData } from '@/lib/quiz/answer-matching'
@@ -32,8 +32,11 @@ export const checkGenerationAnswer = async (
   } = await getUser()
   if (!user) throw new Error('Unauthorized')
 
+  // questions table has admin-only RLS — must use service client
+  const serviceClient = await createServiceClient()
+
   // Fetch question with generation-specific columns
-  const { data: question, error } = await supabase
+  const { data: question, error } = await serviceClient
     .from('questions')
     .select(
       'question_id, question_type, correct_value, value_tolerance, accepted_answers, correct_option_id, rationale',

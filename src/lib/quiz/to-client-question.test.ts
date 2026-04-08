@@ -30,11 +30,7 @@ describe('toClientQuestion', () => {
         prompt_image_url: 'https://example.com/image.png',
         difficulty: 0.65,
         question_type: 'numeric',
-        metadata: {
-          unit: 'sqm',
-          hint: 'Think about the footprint.',
-          image_alt_text: 'A plan view of the site.',
-        },
+        hint_text: 'Think about the footprint.',
         breadcrumb: 'Area C > Site Planning',
         is_interleaved: true,
       },
@@ -48,12 +44,12 @@ describe('toClientQuestion', () => {
       position: 7,
       stem: 'What is the answer?',
       image_url: 'https://example.com/image.png',
-      image_alt_text: 'A plan view of the site.',
+      image_alt_text: null,
       taxonomy_breadcrumb: 'Area C > Site Planning',
       difficulty_label: 'Medium',
       is_interleaved: true,
       question_type: 'numeric',
-      unit: 'sqm',
+      unit: null,
       hint_text: 'Think about the footprint.',
       options: [
         { id: 'a', letter: 'A', text: 'Alpha' },
@@ -80,7 +76,7 @@ describe('fetchQuestionsForClient', () => {
                   difficulty: 0.9,
                   prompt_image_url: null,
                   question_type: 'mcq',
-                  metadata: { hint_text: 'Check the code clause.' },
+                  hint_text: 'Check the code clause.',
                 },
                 {
                   question_id: 'q-2',
@@ -90,7 +86,7 @@ describe('fetchQuestionsForClient', () => {
                   difficulty: 0.2,
                   prompt_image_url: null,
                   question_type: 'mcq',
-                  metadata: { unit: 'mm' },
+                  hint_text: null,
                 },
               ]
 

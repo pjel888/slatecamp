@@ -1,6 +1,6 @@
 'use server'
 
-import { createClient, getUser } from '@/lib/supabase/server'
+import { createClient, createServiceClient, getUser } from '@/lib/supabase/server'
 import { getOwnedSessionOrThrow } from '@/lib/actions/quiz-v2/session-helpers'
 import { sessionQuestionSliceInputSchema, type SessionQuestionSliceInput } from '@/lib/actions/quiz-v2/schemas'
 import { fetchQuestionsForClient } from '@/lib/quiz/to-client-question'
@@ -35,8 +35,10 @@ export const getSessionQuestions = async (
       parsedInput.offset + parsedInput.limit,
     )
 
+    // Use service client for questions — RLS on `questions` table restricts to admins only
+    const serviceClient = await createServiceClient()
     return await fetchQuestionsForClient({
-      supabase,
+      supabase: serviceClient,
       questionIds: slice,
       offset: parsedInput.offset,
     })
