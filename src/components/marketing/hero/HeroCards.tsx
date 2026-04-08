@@ -125,7 +125,7 @@ const MockQuestionCard = () => (
               isIncorrect && 'border-destructive bg-destructive-50 text-destructive',
               !isCorrect &&
                 !isIncorrect &&
-                'border-border-design bg-white text-zinc-800 hover:bg-white',
+                'border-border-design bg-white text-foreground hover:bg-white',
             )}
           >
             <span
@@ -133,7 +133,7 @@ const MockQuestionCard = () => (
                 'h-2 w-2 shrink-0 rounded-full',
                 isCorrect && 'bg-emerald',
                 isIncorrect && 'bg-destructive',
-                !isCorrect && !isIncorrect && 'bg-zinc-400',
+                !isCorrect && !isIncorrect && 'bg-muted-foreground',
               )}
               aria-hidden='true'
             />
@@ -176,7 +176,7 @@ const ConversionHookCard = ({ isLoggedIn }: { isLoggedIn: boolean }) => {
           : 'Most students walk into the ALE not knowing where their gaps are. This is where you find out.'}
       </p>
 
-      <div className='mt-3 flex items-center gap-3 rounded-md bg-white/80 p-3 ring-1 ring-zinc-100'>
+      <div className='mt-3 flex items-center gap-3 rounded-md bg-white/80 p-3 ring-1 ring-border'>
         <ReadinessDial
           value={isHovered ? 98 : 42}
           label={isHovered ? 'Exam-ready' : 'At risk — typical starting score'}

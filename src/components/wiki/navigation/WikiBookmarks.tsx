@@ -95,7 +95,7 @@ export function WikiBookmarks({ currentArticleId, currentSlug, currentTitle }: W
   return (
     <Popover>
       <PopoverTrigger
-        className="inline-flex items-center justify-center h-7 w-7 p-0 rounded-sm text-zinc-400 hover:bg-zinc-100 hover:text-zinc-600 transition-colors"
+        className="inline-flex items-center justify-center h-7 w-7 p-0 rounded-sm text-muted-foreground hover:bg-muted hover:text-text-secondary transition-colors"
         aria-label="Bookmarks"
       >
         <SCIcon
@@ -107,8 +107,8 @@ export function WikiBookmarks({ currentArticleId, currentSlug, currentTitle }: W
       </PopoverTrigger>
       <PopoverContent align="end" className="w-72 p-0">
         {/* Header with save/unsave toggle for current page */}
-        <div className="px-3 py-2 border-b border-zinc-100 flex items-center justify-between">
-          <p className="text-xs font-medium text-zinc-900">Bookmarks</p>
+        <div className="px-3 py-2 border-b border-border flex items-center justify-between">
+          <p className="text-xs font-medium text-foreground">Bookmarks</p>
           {currentArticleId && currentSlug && currentTitle && (
             <button
               onClick={() =>
@@ -125,24 +125,24 @@ export function WikiBookmarks({ currentArticleId, currentSlug, currentTitle }: W
 
         {bookmarks.length === 0 ? (
           <div className="px-3 py-6 text-center">
-            <p className="text-xs text-zinc-400">No bookmarks yet</p>
-            <p className="text-[11px] text-zinc-300 mt-1">
+            <p className="text-xs text-muted-foreground">No bookmarks yet</p>
+            <p className="text-[11px] text-muted-foreground/70 mt-1">
               Save articles to quickly return to them later.
             </p>
           </div>
         ) : (
           <ul className="max-h-64 overflow-y-auto py-1">
             {bookmarks.map(b => (
-              <li key={b.articleId} className="group flex items-center gap-2 px-3 py-1.5 hover:bg-zinc-50">
+              <li key={b.articleId} className="group flex items-center gap-2 px-3 py-1.5 hover:bg-muted">
                 <Link
                   href={ROUTES.WIKI_PAGE(b.slug)}
-                  className="flex-1 text-xs text-zinc-700 hover:text-zinc-900 truncate"
+                  className="flex-1 text-xs text-foreground hover:text-foreground truncate"
                 >
                   {b.title}
                 </Link>
                 <button
                   onClick={() => removeBookmark(b.articleId)}
-                  className="opacity-0 group-hover:opacity-100 p-0.5 text-zinc-300 hover:text-destructive transition-opacity"
+                  className="opacity-0 group-hover:opacity-100 p-0.5 text-muted-foreground/50 hover:text-destructive transition-opacity"
                   aria-label={`Remove ${b.title} from bookmarks`}
                 >
                   <SCIcon icon={Trash} size="xs" />

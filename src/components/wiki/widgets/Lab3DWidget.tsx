@@ -132,7 +132,7 @@ export default function Lab3DWidget({ moduleId, height = 420, caption }: Lab3DWi
 
   return (
     <div className="not-prose my-8 space-y-2">
-      <Card className="overflow-hidden bg-zinc-950 border-zinc-800" style={{ height }}>
+      <Card className="overflow-hidden bg-foreground border-foreground/20" style={{ height }}>
         <div className="relative h-full w-full group">
           {renderScene()}
           
@@ -141,7 +141,7 @@ export default function Lab3DWidget({ moduleId, height = 420, caption }: Lab3DWi
             <Button
               variant="outline"
               size="xs"
-              className="bg-zinc-900/80 border-zinc-700 text-zinc-300 hover:text-white"
+              className="bg-foreground/80 border-foreground/40 text-background/70 hover:text-background"
               onClick={() => window.open(`/dashboard/3d-lab?node=${moduleId}`, '_blank')}
             >
               <ArrowsOut size={12} className="mr-1.5" />
@@ -150,8 +150,8 @@ export default function Lab3DWidget({ moduleId, height = 420, caption }: Lab3DWi
           </div>
           
           {/* Module Identity Badge */}
-          <div className="absolute bottom-3 left-3 px-2 py-1 bg-zinc-900/80 border border-zinc-700 rounded-sm pointer-events-none">
-            <p className="text-[10px] font-mono text-zinc-400 uppercase tracking-wider flex items-center gap-1.5">
+          <div className="absolute bottom-3 left-3 px-2 py-1 bg-foreground/80 border border-foreground/40 rounded-sm pointer-events-none">
+            <p className="text-[10px] font-mono text-background/60 uppercase tracking-wider flex items-center gap-1.5">
               <Cube size={10} className="text-primary" />
               {registryEntry.title}
             </p>

@@ -3,20 +3,20 @@
 import * as React from 'react'
 import { useWikiNavigation } from './WikiNavigationContext'
 
-/** Skeleton bar — uses bg-zinc-200 for visibility against bg-background (#F5F5F5) */
+/** Skeleton bar — uses bg-border for visibility against bg-background (#F5F5F5) */
 const Bone = ({ className = '' }: { className?: string }) => (
-  <div className={`animate-pulse rounded-sm bg-zinc-200/80 ${className}`} />
+  <div className={`animate-pulse rounded-sm bg-border/80 ${className}`} />
 )
 
 const ArticleSkeleton = () => (
   <>
     {/* Breadcrumb header — matches WikiHeader sticky bar */}
-    <div className="sticky top-0 z-30 border-b border-zinc-200 bg-background">
+    <div className="sticky top-0 z-30 border-b border-border bg-background">
       <div className="px-6 py-3 flex items-center gap-2">
         <Bone className="h-3.5 w-16" />
-        <span className="text-zinc-300 text-xs">/</span>
+        <span className="text-muted-foreground text-xs">/</span>
         <Bone className="h-3.5 w-24" />
-        <span className="text-zinc-300 text-xs">/</span>
+        <span className="text-muted-foreground text-xs">/</span>
         <Bone className="h-3.5 w-32" />
       </div>
     </div>
@@ -32,10 +32,10 @@ const ArticleSkeleton = () => (
               <Bone className="h-6 w-80 mb-3" />
               <div className="flex items-center gap-2">
                 <Bone className="h-3 w-16" />
-                <div className="w-1 h-1 rounded-full bg-zinc-300" />
+                <div className="w-1 h-1 rounded-full bg-muted-foreground/50" />
                 <Bone className="h-3 w-28" />
               </div>
-              <div className="h-px w-full bg-zinc-200 mt-4" />
+              <div className="h-px w-full bg-border mt-4" />
             </div>
 
             {/* First paragraph block */}
@@ -57,7 +57,7 @@ const ArticleSkeleton = () => (
             </div>
 
             {/* Callout / key fact block */}
-            <div className="border border-zinc-200 rounded-md bg-zinc-50 pl-4 py-3 mb-6">
+            <div className="border border-border rounded-md bg-muted pl-4 py-3 mb-6">
               <Bone className="h-2.5 w-16 mb-2" />
               <div className="space-y-2">
                 <Bone className="h-3.5 w-full" />
@@ -77,7 +77,7 @@ const ArticleSkeleton = () => (
             </div>
 
             {/* Another callout */}
-            <div className="border border-zinc-200 rounded-md bg-zinc-50 pl-4 py-3">
+            <div className="border border-border rounded-md bg-muted pl-4 py-3">
               <Bone className="h-2.5 w-20 mb-2" />
               <div className="space-y-2">
                 <Bone className="h-3.5 w-full" />
@@ -88,7 +88,7 @@ const ArticleSkeleton = () => (
         </div>
 
         {/* Prev/Next footer — matches actual sticky footer */}
-        <div className="shrink-0 border-t border-zinc-200 bg-background">
+        <div className="shrink-0 border-t border-border bg-background">
           <div className="max-w-4xl mx-auto px-8 py-3 flex items-center justify-between">
             <Bone className="h-3 w-24" />
             <Bone className="h-3 w-20" />
@@ -97,7 +97,7 @@ const ArticleSkeleton = () => (
       </main>
 
       {/* Right sidebar — matches WikiRightSidebar layout */}
-      <aside className="hidden lg:flex w-56 shrink-0 border-l border-zinc-100 bg-zinc-50/30 flex-col">
+      <aside className="hidden lg:flex w-56 shrink-0 border-l border-border bg-muted/30 flex-col">
         <div className="py-6 px-4 space-y-0">
           {/* Practice button */}
           <div className="mb-5">
@@ -118,7 +118,7 @@ const ArticleSkeleton = () => (
           </div>
 
           {/* Related topics */}
-          <div className="pt-4 border-t border-zinc-200/60">
+          <div className="pt-4 border-t border-border/60">
             <Bone className="h-3 w-28 mb-3" />
             <div className="space-y-2">
               <Bone className="h-8 w-full rounded-sm" />

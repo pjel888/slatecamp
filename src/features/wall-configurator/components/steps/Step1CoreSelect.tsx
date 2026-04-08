@@ -81,7 +81,7 @@ export function Step1CoreSelect() {
               type="button"
               onClick={() => handleSelect(option.value)}
               className={[
-                'cursor-pointer rounded-[10px] p-3 text-left transition-colors duration-150 ease-out',
+                'cursor-pointer rounded-md p-3 text-left transition-colors duration-150 ease-out',
                 isSelected
                   ? 'border-l-[3px] border-l-[#1B3FC4] bg-[#EEF2FC]'
                   : 'border border-border hover:border-primary',

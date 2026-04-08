@@ -12,7 +12,7 @@ interface FormulaStep {
 export const FormulaBlock = ({ label, steps }: { label: string; steps: FormulaStep[] | string }) => {
   const parsed = parseMdxProp<FormulaStep[]>(steps, [])
   return (
-    <div className="not-prose bg-formula-surface rounded-[10px] px-6 py-5 my-4">
+    <div className="not-prose bg-formula-surface rounded-md px-6 py-5 my-4">
       <div className="font-[var(--font-dm-mono)] text-[11px] uppercase tracking-[0.12em] text-formula-accent mb-3">
         {label}
       </div>

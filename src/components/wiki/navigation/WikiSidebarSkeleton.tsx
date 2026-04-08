@@ -7,15 +7,15 @@ export const WikiSidebarSkeleton = () => (
   <aside className="w-full h-full bg-background flex flex-col overflow-hidden">
     {/* Search bar placeholder */}
     <div className="shrink-0 p-2 pb-1">
-      <div className="h-8 w-full rounded-sm bg-zinc-100 animate-pulse" />
+      <div className="h-8 w-full rounded-sm bg-muted animate-pulse" />
     </div>
 
     {/* Tree skeleton */}
     <div className="flex-1 overflow-hidden p-2 pt-1 space-y-1">
       {/* Section label */}
       <div className="flex items-center gap-1.5 px-1 mb-1.5">
-        <div className="h-3 w-3 rounded-sm bg-zinc-200 animate-pulse" />
-        <div className="h-2.5 w-14 bg-zinc-200 animate-pulse rounded" />
+        <div className="h-3 w-3 rounded-sm bg-border animate-pulse" />
+        <div className="h-2.5 w-14 bg-border animate-pulse rounded" />
       </div>
 
       {/* Tree items — staggered widths to look natural */}
@@ -38,8 +38,8 @@ export const WikiSidebarSkeleton = () => (
           key={i}
           className={`flex items-center gap-2 py-1 ${item.indent ? 'ml-6' : ''}`}
         >
-          <div className="h-3 w-3 rounded-sm bg-zinc-200 animate-pulse shrink-0" />
-          <div className={`h-3 ${item.w} bg-zinc-200 animate-pulse rounded`} />
+          <div className="h-3 w-3 rounded-sm bg-border animate-pulse shrink-0" />
+          <div className={`h-3 ${item.w} bg-border animate-pulse rounded`} />
         </div>
       ))}
     </div>

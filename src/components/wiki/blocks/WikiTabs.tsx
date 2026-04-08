@@ -30,7 +30,7 @@ export const Tabs = ({ defaultTab, children }: TabsProps) => {
   if (tabs.length === 0) return null
 
   return (
-    <div className="not-prose my-5 border border-border rounded-[10px] overflow-hidden bg-background">
+    <div className="not-prose my-5 border border-border rounded-md overflow-hidden bg-background">
       {/* Tab bar */}
       <div role="tablist" className="flex border-b border-border bg-muted">
         {tabs.map((tab) => (

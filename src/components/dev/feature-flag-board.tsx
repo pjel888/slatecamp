@@ -79,7 +79,7 @@ export function FeatureFlagBoard({ dbFlags }: FeatureFlagBoardProps) {
                         setFeatureOverride(key, source === 'override' ? null : !enabled)
                       }
                       className={`relative h-5 w-9 rounded-full transition-colors ${
-                        enabled ? 'bg-emerald-500' : 'bg-zinc-400'
+                        enabled ? 'bg-emerald-500' : 'bg-muted-foreground'
                       }`}
                     >
                       <span

@@ -80,7 +80,7 @@ export const SectionEyebrow = ({
     <Starburst className='h-3 w-3 text-camp-amber' />
     <span
       className={`font-mono text-[11px] tracking-[.2em] uppercase ${
-        dark ? 'text-white/40' : amber ? 'text-black/50' : 'text-zinc-500'
+        dark ? 'text-white/40' : amber ? 'text-black/50' : 'text-muted-foreground'
       }`}
     >
       {label}

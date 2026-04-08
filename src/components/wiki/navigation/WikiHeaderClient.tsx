@@ -39,7 +39,7 @@ export function WikiHeaderClient({
           {disciplineId && (
             <div className="md:hidden shrink-0">
               <Sheet>
-                <SheetTrigger className="inline-flex items-center justify-center h-7 w-7 rounded-sm text-zinc-500 hover:bg-zinc-100 hover:text-zinc-900 transition-colors">
+                <SheetTrigger className="inline-flex items-center justify-center h-7 w-7 rounded-sm text-muted-foreground hover:bg-muted hover:text-foreground transition-colors">
                   <SCIcon icon={List} size="sm" />
                   <span className="sr-only">Open navigation</span>
                 </SheetTrigger>
@@ -55,7 +55,7 @@ export function WikiHeaderClient({
 
           <Link
             href={ROUTES.WIKI}
-            className="flex items-center gap-1 text-xs text-zinc-400 hover:text-zinc-600 transition-colors shrink-0"
+            className="flex items-center gap-1 text-xs text-muted-foreground hover:text-text-secondary transition-colors shrink-0"
             aria-label="Back to syllabus"
           >
             <SCIcon icon={ArrowLeft} size="xs" />
@@ -66,16 +66,16 @@ export function WikiHeaderClient({
               <ol className="flex items-center gap-1 min-w-0">
                 {breadcrumbs.map((crumb) => (
                   <li key={crumb.node_id} className="flex items-center gap-1 min-w-0">
-                    <SCIcon icon={CaretRight} size="xs" className="text-zinc-300 shrink-0" />
-                    <span className="text-xs text-zinc-400 truncate max-w-[140px]">
+                    <SCIcon icon={CaretRight} size="xs" className="text-muted-foreground shrink-0" />
+                    <span className="text-xs text-muted-foreground truncate max-w-[140px]">
                       {crumb.name}
                     </span>
                   </li>
                 ))}
                 {articleTitle && (
                   <li className="flex items-center gap-1 min-w-0">
-                    <SCIcon icon={CaretRight} size="xs" className="text-zinc-300 shrink-0" />
-                    <span className="text-xs font-medium text-zinc-700 truncate max-w-[180px]">
+                    <SCIcon icon={CaretRight} size="xs" className="text-muted-foreground shrink-0" />
+                    <span className="text-xs font-medium text-foreground truncate max-w-[180px]">
                       {articleTitle}
                     </span>
                   </li>
@@ -97,7 +97,7 @@ export function WikiHeaderClient({
           {mobileActionsContent && (
             <div className="lg:hidden">
               <Sheet>
-                <SheetTrigger className="inline-flex items-center justify-center h-7 w-7 rounded-sm text-zinc-500 hover:bg-zinc-100 hover:text-zinc-900 transition-colors">
+                <SheetTrigger className="inline-flex items-center justify-center h-7 w-7 rounded-sm text-muted-foreground hover:bg-muted hover:text-foreground transition-colors">
                   <SCIcon icon={ListBullets} size="sm" />
                   <span className="sr-only">Actions & table of contents</span>
                 </SheetTrigger>

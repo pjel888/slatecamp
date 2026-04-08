@@ -51,7 +51,7 @@ export const SpatialQualityDrill = () => {
         <button
           type="button"
           onClick={() => setRevealed(true)}
-          className={`w-full rounded-[10px] p-7 min-h-[120px] flex flex-col items-center justify-center transition-colors duration-150 cursor-pointer select-none ${
+          className={`w-full rounded-md p-7 min-h-[120px] flex flex-col items-center justify-center transition-colors duration-150 cursor-pointer select-none ${
             revealed
               ? 'bg-cobalt-light dark:bg-camp-cobalt/10'
               : 'bg-muted hover:bg-cobalt-light dark:bg-wiki-surface-dark dark:hover:bg-camp-cobalt/10'

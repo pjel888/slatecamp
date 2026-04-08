@@ -56,7 +56,7 @@ export const WikiSourcesPopover = ({ sources }: WikiSourcesPopoverProps) => {
 
   return (
     <div className="mb-5">
-      <p className="text-[11px] font-medium text-zinc-500 uppercase tracking-wider mb-2">
+      <p className="text-[11px] font-medium text-muted-foreground uppercase tracking-wider mb-2">
         Sources
       </p>
       <div>
@@ -75,7 +75,7 @@ export const WikiSourcesPopover = ({ sources }: WikiSourcesPopoverProps) => {
         {isOpen && pos && createPortal(
           <div
             ref={popoverRef}
-            className="fixed w-64 max-h-[360px] overflow-y-auto bg-white border border-wiki-border rounded-[10px] shadow-lg z-[100] dark:bg-wiki-ink dark:border-wiki-invert-divider"
+            className="fixed w-64 max-h-[360px] overflow-y-auto bg-white border border-wiki-border rounded-md shadow-lg z-[100] dark:bg-wiki-ink dark:border-wiki-invert-divider"
             style={{ top: pos.top, right: pos.right }}
           >
             <div className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.1em] text-wiki-muted px-3 pt-3 pb-1.5 border-b border-wiki-divider dark:border-wiki-invert-divider">

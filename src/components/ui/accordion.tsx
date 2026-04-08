@@ -128,7 +128,7 @@ export const Accordion = ({ children, allowMultiple = false }: AccordionProps) =
 
   return (
     <AccordionContext.Provider value={{ allowMultiple, openIndices, toggle }}>
-      <div className="not-prose my-4 border border-border rounded-[10px] overflow-hidden">
+      <div className="not-prose my-4 border border-border rounded-md overflow-hidden">
         {items}
       </div>
     </AccordionContext.Provider>

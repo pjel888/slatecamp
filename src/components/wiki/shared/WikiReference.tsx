@@ -68,7 +68,7 @@ export function WikiReference({ slug, children, className }: WikiReferenceProps)
               side="top"
               align="center"
               sideOffset={5}
-              className="z-[100] w-64 p-3 bg-white border border-border rounded-md shadow-lg animate-in fade-in zoom-in-95 duration-150"
+              className="z-[100] w-64 p-3 bg-card border border-border rounded-md shadow-lg animate-in fade-in zoom-in-95 duration-150"
             >
               {isLoading ? (
                 <div className="space-y-2">

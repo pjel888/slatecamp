@@ -261,12 +261,12 @@ export const WikiQuizModal = ({ nodeId, topicName, articleSlug, onClose }: WikiQ
         aria-label="Quick review quiz"
         className={cn(
           'relative w-full max-w-[560px] mx-4 max-h-[90vh] overflow-y-auto',
-          'rounded-lg bg-white shadow-lg',
+          'rounded-lg bg-card shadow-lg',
           'animate-in zoom-in-95 duration-150 ease-out',
         )}
       >
         {/* ── Header ──────────────────────────────────────────────────── */}
-        <div className="sticky top-0 z-10 flex items-center justify-between border-b border-border bg-white px-5 py-3.5 rounded-t-lg">
+        <div className="sticky top-0 z-10 flex items-center justify-between border-b border-border bg-card px-5 py-3.5 rounded-t-lg">
           <div className="flex items-center gap-3">
             <button
               ref={closeButtonRef}

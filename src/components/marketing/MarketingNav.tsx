@@ -40,7 +40,7 @@ export async function MarketingNav({
     'fixed inset-x-0 top-0 z-50 border-b backdrop-blur-xl px-6',
     isDark
       ? 'border-white/10 bg-primary/80 text-white'
-      : 'border-border-design bg-white/90 text-zinc-900',
+      : 'border-border-design bg-white/90 text-foreground',
   )
 
   return (

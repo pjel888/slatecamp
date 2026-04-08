@@ -3,7 +3,7 @@ import { Skeleton } from '@/components/ui/skeleton'
 const Loading = () => (
   <div className="min-h-screen bg-muted">
     {/* Nav placeholder */}
-    <div className="h-16 border-b border-zinc-200 bg-white" />
+    <div className="h-16 border-b border-border bg-white" />
 
     <div className="px-6 pt-32 pb-24 sm:pt-40">
       <div className="mx-auto max-w-[1200px]">

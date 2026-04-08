@@ -21,12 +21,12 @@ export function WikiArticleHeader({
         {readingTime != null && readingTime > 0 && (
           <>
             <span>{readingTime} min read</span>
-            <span className="text-zinc-300">&bull;</span>
+            <span className="text-muted-foreground">&bull;</span>
           </>
         )}
         <span>Updated {format(new Date(updatedAt), 'MMM d, yyyy')}</span>
       </div>
-      <div className="h-px w-full bg-zinc-200 mt-4" />
+      <div className="h-px w-full bg-border mt-4" />
     </header>
   )
 }

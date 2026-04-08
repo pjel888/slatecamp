@@ -58,7 +58,7 @@ export const AccessibilityChangesTable = ({ rows }: AccessibilityChangesTablePro
         </table>
       </div>
       {activeRow !== null && data[activeRow] && (
-        <div className="mt-3.5 p-3 px-4 bg-white border-[1.5px] border-camp-cobalt rounded-md text-[13px] text-[var(--widget-ink)]">
+        <div className="mt-3.5 p-3 px-4 bg-card border-[1.5px] border-camp-cobalt rounded-md text-[13px] text-[var(--widget-ink)]">
           <strong className="text-camp-cobalt">{data[activeRow].elem}</strong>
           {' — '}
           <span className="font-dm-mono text-[11px] text-marketing-tertiary">{data[activeRow].src}</span>

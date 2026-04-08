@@ -23,8 +23,8 @@ export const MarketingFooter = ({
   variant?: 'light' | 'dark'
 }) => {
   const isDark = variant === 'dark'
-  const borderClass = isDark ? 'border-white/10' : 'border-zinc-200'
-  const textMuted = isDark ? 'text-white/60' : 'text-zinc-400'
+  const borderClass = isDark ? 'border-white/10' : 'border-border'
+  const textMuted = isDark ? 'text-white/60' : 'text-muted-foreground'
 
   return (
     <footer className={`border-t ${borderClass}`}>

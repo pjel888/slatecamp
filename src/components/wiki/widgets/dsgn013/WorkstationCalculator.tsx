@@ -112,7 +112,7 @@ export const WorkstationCalculator = () => {
         </div>
 
         {/* Result */}
-        <div className="p-4 bg-muted rounded-[10px] mt-3 dark:bg-wiki-surface-dark">
+        <div className="p-4 bg-muted rounded-md mt-3 dark:bg-wiki-surface-dark">
           <div className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-camp-cobalt mb-1.5">
             Required Gross Floor Area
           </div>

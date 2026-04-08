@@ -1,9 +1,9 @@
 import { Skeleton } from '@/components/ui/skeleton'
 
 const Loading = () => (
-  <div className="min-h-screen bg-zinc-100">
+  <div className="min-h-screen bg-muted">
     {/* Nav placeholder */}
-    <div className="h-16 border-b border-zinc-200 bg-white" />
+    <div className="h-16 border-b border-border bg-white" />
 
     {/* Hero */}
     <div className="mx-auto max-w-[1200px] px-6 pt-36 pb-20">
@@ -17,7 +17,7 @@ const Loading = () => (
     </div>
 
     {/* Story section */}
-    <div className="border-t border-zinc-200 bg-white">
+    <div className="border-t border-border bg-white">
       <div className="mx-auto max-w-[1200px] px-6 py-20">
         <div className="grid gap-12 sm:grid-cols-2 sm:gap-20">
           <div className="space-y-3">

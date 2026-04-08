@@ -86,7 +86,7 @@ export function WikiSidebarShell({ children }: { children: React.ReactNode }) {
         {!isCollapsed && (
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 grid grid-cols-2 gap-[3px] pointer-events-none">
             {Array.from({ length: 6 }).map((_, i) => (
-              <div key={i} className="w-[3px] h-[3px] rounded-full bg-zinc-300 group-hover:bg-camp-cobalt transition-colors duration-150" />
+              <div key={i} className="w-[3px] h-[3px] rounded-full bg-border group-hover:bg-camp-cobalt transition-colors duration-150" />
             ))}
           </div>
         )}
@@ -98,7 +98,7 @@ export function WikiSidebarShell({ children }: { children: React.ReactNode }) {
         onClick={() => setIsCollapsed(p => !p)}
         aria-expanded={!isCollapsed}
         aria-label={isCollapsed ? 'Expand sidebar' : 'Collapse sidebar'}
-        className="shrink-0 border-r border-border bg-zinc-50/50 px-1.5 text-zinc-600 hover:bg-zinc-100 hover:text-zinc-900 transition-colors z-10"
+        className="shrink-0 border-r border-border bg-muted/50 px-1.5 text-text-secondary hover:bg-muted hover:text-foreground transition-colors z-10"
       >
         <SCIcon icon={SidebarSimple} size="sm" />
       </button>

@@ -59,7 +59,7 @@ export const baseMdxComponents = {
   // Code blocks — horizontal scroll, styled container
   pre: (props: React.HTMLAttributes<HTMLPreElement>) => (
     React.createElement('pre', {
-      className: 'not-prose my-6 overflow-x-auto rounded-md bg-zinc-950 text-zinc-100 p-4 text-[13px] leading-relaxed font-mono border border-zinc-800',
+      className: 'not-prose my-6 overflow-x-auto rounded-md bg-foreground text-background p-4 text-[13px] leading-relaxed font-mono border border-foreground/20',
       ...props,
     })
   ),

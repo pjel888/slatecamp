@@ -4,7 +4,7 @@ import { useEffect, useRef } from 'react'
 import { annotate } from 'rough-notation'
 
 const H1_CLASS =
-  'motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 motion-safe:delay-100 font-[family-name:var(--font-geist-sans)] text-[clamp(3rem,8vw,5.8rem)] font-bold leading-[0.92] text-zinc-900'
+  'motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 motion-safe:delay-100 font-[family-name:var(--font-geist-sans)] text-[clamp(3rem,8vw,5.8rem)] font-bold leading-[0.92] text-foreground'
 
 export const HeroHeadline = () => {
   const knowRef = useRef<HTMLSpanElement>(null)

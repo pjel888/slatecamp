@@ -30,8 +30,8 @@ export function CanvasLoadingOverlay({
   return (
     <div className={`absolute inset-0 flex items-center justify-center ${bgClassName} z-10`}>
       <div className="flex flex-col items-center gap-3">
-        <SCIcon icon={CircleNotch} size="lg" className="animate-spin text-zinc-300" />
-        <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-zinc-400">
+        <SCIcon icon={CircleNotch} size="lg" className="animate-spin text-muted-foreground/50" />
+        <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-muted-foreground">
           {message}
         </span>
       </div>

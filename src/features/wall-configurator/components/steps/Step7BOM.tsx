@@ -47,7 +47,7 @@ export function Step7BOM() {
   return (
     <div id="bom-content" className="flex flex-col p-4">
       {/* Dark Area Breakdown Card */}
-      <div className="bg-ink-primary rounded-[10px] p-4 text-white mb-4">
+      <div className="bg-ink-primary rounded-md p-4 text-white mb-4">
         <p className="font-mono text-[9px] font-medium uppercase tracking-[0.12em] text-white/50 mb-3">
           Area Breakdown
         </p>
@@ -96,7 +96,7 @@ export function Step7BOM() {
       </div>
 
       {/* BOM Table */}
-      <div className="border border-border rounded-[10px] overflow-hidden">
+      <div className="border border-border rounded-md overflow-hidden">
         <table className="w-full">
           <thead>
             <tr className="bg-ink-primary">

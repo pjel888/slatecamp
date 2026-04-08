@@ -115,7 +115,7 @@ export const ElaborativeInterrogation = ({
     : 'Write your thinking before seeing the explanation'
 
   return (
-    <div className="not-prose my-7 border border-wiki-border rounded-xl overflow-hidden bg-card dark:bg-wiki-ink dark:border-wiki-invert-divider">
+    <div className="not-prose my-7 border border-wiki-border rounded-md overflow-hidden bg-card dark:bg-wiki-ink dark:border-wiki-invert-divider">
       {/* Header */}
       <div className="flex items-center gap-2.5 px-5 py-3.5 bg-gradient-to-br from-cobalt-light to-[var(--wiki-gradient-blue)] border-b border-wiki-border dark:from-primary/15 dark:to-primary/10 dark:border-wiki-invert-divider">
         <div className="w-7 h-7 rounded-lg bg-camp-cobalt flex items-center justify-center text-white text-sm">
@@ -176,7 +176,7 @@ export const ElaborativeInterrogation = ({
                   type="button"
                   onClick={() => handleMCQSelect(i)}
                   disabled={isSubmitted || isPending}
-                  className={`flex items-start gap-3 px-4 py-3 border-[1.5px] rounded-[10px] transition-all duration-150 text-left text-sm text-wiki-body leading-[1.45] dark:text-wiki-invert-body ${containerStyle}`}
+                  className={`flex items-start gap-3 px-4 py-3 border-[1.5px] rounded-md transition-all duration-150 text-left text-sm text-wiki-body leading-[1.45] dark:text-wiki-invert-body ${containerStyle}`}
                 >
                   <span
                     className={`w-6 h-6 rounded-full border-[1.5px] flex items-center justify-center text-xs font-semibold shrink-0 mt-px font-[var(--font-dm-mono)] transition-all duration-150 ${letterStyle}`}
@@ -198,7 +198,7 @@ export const ElaborativeInterrogation = ({
               onChange={(e) => setOpenText(e.target.value)}
               aria-label="Write your answer"
               placeholder={placeholder || "Write your answer here. There is no single correct answer, but the explanation below will help you calibrate your thinking."}
-              className="w-full min-h-[80px] px-3.5 py-3 border-[1.5px] border-wiki-border rounded-[10px] font-sans text-sm text-wiki-ink resize-y outline-none transition-colors duration-150 focus:border-camp-cobalt placeholder:text-wiki-muted dark:bg-wiki-ink dark:border-wiki-invert-divider dark:text-wiki-invert-heading"
+              className="w-full min-h-[80px] px-3.5 py-3 border-[1.5px] border-wiki-border rounded-md font-sans text-sm text-wiki-ink resize-y outline-none transition-colors duration-150 focus:border-camp-cobalt placeholder:text-wiki-muted dark:bg-wiki-ink dark:border-wiki-invert-divider dark:text-wiki-invert-heading"
             />
             <div className="flex justify-end mt-2.5">
               <button
@@ -218,13 +218,13 @@ export const ElaborativeInterrogation = ({
           <textarea
             value={openText}
             readOnly
-            className="w-full min-h-[80px] px-3.5 py-3 border-[1.5px] border-wiki-border rounded-[10px] font-sans text-sm text-wiki-ink opacity-70 resize-none outline-none dark:bg-wiki-ink dark:border-wiki-invert-divider dark:text-wiki-invert-heading"
+            className="w-full min-h-[80px] px-3.5 py-3 border-[1.5px] border-wiki-border rounded-md font-sans text-sm text-wiki-ink opacity-70 resize-none outline-none dark:bg-wiki-ink dark:border-wiki-invert-divider dark:text-wiki-invert-heading"
           />
         )}
 
         {/* Reveal text */}
         {isRevealed && sanitizedAnswer && (
-          <div className="mt-4 p-4 bg-muted rounded-[10px] dark:bg-wiki-surface-dark">
+          <div className="mt-4 p-4 bg-muted rounded-md dark:bg-wiki-surface-dark">
             <div className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.1em] text-camp-cobalt mb-1.5">
               Why This Matters
             </div>

@@ -16,7 +16,7 @@ export const ThreeDCanvasPlaceholder = ({
     <div
       className={cn(
         'relative w-full min-h-[300px] lg:min-h-[400px] rounded-md border border-border overflow-hidden',
-        'bg-surface-focused dark:bg-zinc-900',
+        'bg-surface-focused dark:bg-card',
       )}
       style={{
         backgroundImage: `

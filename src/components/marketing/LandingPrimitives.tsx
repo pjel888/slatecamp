@@ -96,7 +96,7 @@ export const ReadinessDial = ({
             cy={44}
             r={radius}
             fill='none'
-            stroke='#E4E4E7' // zinc-200
+            stroke='var(--border)' // border token
             strokeWidth={6}
           />
           <circle
@@ -116,7 +116,7 @@ export const ReadinessDial = ({
             }
           />
         </svg>
-        <span className='absolute inset-0 flex items-center justify-center text-[18px] font-bold text-zinc-900'>
+        <span className='absolute inset-0 flex items-center justify-center text-[18px] font-bold text-foreground'>
           {value}%
         </span>
         {showWarning && (
@@ -125,7 +125,7 @@ export const ReadinessDial = ({
           </div>
         )}
       </div>
-      <span className='mt-1 text-[11px] font-medium text-zinc-600'>
+      <span className='mt-1 text-[11px] font-medium text-text-secondary'>
         {label}
       </span>
     </div>

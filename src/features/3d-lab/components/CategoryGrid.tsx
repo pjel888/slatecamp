@@ -127,14 +127,14 @@ export function FeaturedModuleBanner({ basePath }: { basePath?: string }) {
 
   return (
     <Link href={href} className="group block mb-8">
-      <div className="relative overflow-hidden rounded-xl border border-primary/20 bg-primary/5 px-6 py-5 transition-all duration-200 ease-out hover:border-primary/40 hover:shadow-lg">
+      <div className="relative overflow-hidden rounded-md border border-primary/20 bg-primary/5 px-6 py-5 transition-all duration-200 ease-out hover:border-primary/40 hover:shadow-lg">
         {/* Background accent */}
         <div className="pointer-events-none absolute right-0 top-0 h-full w-1/2 bg-gradient-to-l from-primary/10 to-transparent" />
 
         <div className="relative flex items-center justify-between gap-4">
           <div className="flex items-start gap-4">
             {/* Icon */}
-            <div className="mt-0.5 flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary shadow-indigo-200/50 shadow-lg">
+            <div className="mt-0.5 flex h-11 w-11 shrink-0 items-center justify-center rounded-md bg-primary shadow-indigo-200/50 shadow-lg">
               <MapTrifold size={24} weight="duotone" className="text-white" />
             </div>
 

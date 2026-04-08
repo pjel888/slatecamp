@@ -35,7 +35,7 @@ interface DevToolbarProps {
 }
 
 const TIER_CONFIG: Record<UserTier, { label: string; color: string }> = {
-  free: { label: 'Free', color: 'bg-zinc-500' },
+  free: { label: 'Free', color: 'bg-muted-foreground' },
   pro: { label: 'Pro', color: 'bg-blue-500' },
   prime: { label: 'Prime', color: 'bg-indigo-500' },
   institutional: { label: 'Institutional', color: 'bg-amber-500' },
@@ -292,7 +292,7 @@ export function DevToolbar({
                   </span>
                   <span
                     className={`h-2 w-2 rounded-full ${
-                      flags[key] ? 'bg-emerald-500' : 'bg-zinc-400'
+                      flags[key] ? 'bg-emerald-500' : 'bg-muted-foreground'
                     }`}
                   />
                 </button>

@@ -27,7 +27,7 @@ export const InlineQuiz = ({ question, options: rawOptions, rationale }: InlineQ
   }
 
   return (
-    <div className="not-prose my-6 border border-camp-cobalt rounded-[10px] overflow-hidden">
+    <div className="not-prose my-6 border border-camp-cobalt rounded-md overflow-hidden">
       {/* Header */}
       <div className="bg-camp-cobalt px-[18px] py-3 flex items-center gap-2.5">
         <div className="w-5 h-5 bg-white/20 rounded-full flex items-center justify-center text-[11px] text-white font-bold">
