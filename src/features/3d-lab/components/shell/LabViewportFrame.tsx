@@ -1,11 +1,15 @@
 'use client'
 
-import React, { Suspense, useState, useCallback } from 'react'
+import React, { Suspense, useState, useCallback, useMemo } from 'react'
 import { Canvas } from '@react-three/fiber'
-import { PerformanceMonitor } from '@react-three/drei'
+import { PerformanceMonitor, useGLTF } from '@react-three/drei'
 import { SceneTunnel } from '@/features/3d-lab/components/GlobalCanvasPortal'
 import { WebGLErrorBoundary } from '@/components/r3f/WebGLErrorBoundary'
 import { DOMOverlayLayer } from '@/features/3d-lab/components/overlays/DOMOverlayLayer'
+
+// Configure DRACO decoder path globally for all useGLTF calls in the 3D Lab.
+// The /draco/ directory in /public/ must contain the Draco WASM decoder files.
+useGLTF.setDecoderPath('/draco/')
 
 interface LabViewportFrameProps {
   children?: React.ReactNode
@@ -22,20 +26,35 @@ interface LabViewportFrameProps {
  *
  * PerformanceMonitor dynamically adjusts DPR to maintain frame rate.
  * flipflops={3} prevents DPR oscillation between incline/decline thresholds.
+ *
+ * Mobile: DPR is capped at 1.25 on viewports ≤768px to preserve frame rate
+ * on lower-powered devices. touch-action: none on the container prevents the
+ * browser from intercepting touch events during orbit/pinch gestures.
  */
 export const LabViewportFrame = ({ children }: LabViewportFrameProps) => {
-  const [dpr, setDpr] = useState(1.5)
+  // Mobile DPR cap: detect ≤768px viewport and limit max DPR to 1.25.
+  // Evaluated once on mount; typeof window guard ensures SSR safety.
+  const isMobile = useMemo(() => {
+    if (typeof window === 'undefined') return false
+    return window.matchMedia('(max-width: 768px)').matches
+  }, [])
+
+  const maxDpr = isMobile ? 1.25 : 2
+  const [dpr, setDpr] = useState(() => (isMobile ? 1.25 : 1.5))
 
   const handleDecline = useCallback(() => {
     setDpr((prev) => Math.max(1, prev - 0.5))
   }, [])
 
   const handleIncline = useCallback(() => {
-    setDpr((prev) => Math.min(2, prev + 0.5))
-  }, [])
+    setDpr((prev) => Math.min(maxDpr, prev + 0.5))
+  }, [maxDpr])
 
   return (
-    <div className="absolute inset-0 z-0 overflow-hidden bg-[#F8F7F5]">
+    <div
+      className="absolute inset-0 z-0 overflow-hidden bg-[#F8F7F5]"
+      style={{ touchAction: 'none' }}
+    >
       <WebGLErrorBoundary>
         <Canvas
           frameloop="demand"

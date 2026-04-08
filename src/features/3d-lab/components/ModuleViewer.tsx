@@ -1,11 +1,11 @@
 'use client'
 
-import { useState, useEffect, useCallback, useMemo } from 'react'
+import { useState, useEffect, useCallback, useMemo, useRef } from 'react'
 import { useRouter } from 'next/navigation'
-import { 
-  LabTopBar, 
-  OnboardingFlow, 
-  ModuleContextCard, 
+import {
+  LabTopBar,
+  OnboardingFlow,
+  ModuleContextCard,
   LabViewport,
   LabModuleShell,
   LabViewportFrame
@@ -74,12 +74,17 @@ const loadModuleConfig = (moduleId: string): Promise<any> => {
 export const ModuleViewer = ({ modelId, basePath }: ModuleViewerProps) => {
   const router = useRouter()
   const entry = getModuleById(modelId)
-  
+
   const [config, setConfig] = useState<any>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
 
   const resetSession = useLabStore((s) => s.resetSession)
+
+  // Ref-based guard: tracks the module ID that initiated the current load.
+  // If modelId changes before a dynamic import resolves, the stale callback
+  // checks this ref and discards the result rather than clobbering new state.
+  const activeModuleIdRef = useRef<string | null>(null)
 
   const [showOnboarding, setShowOnboarding] = useState(false)
   const [showContextCard, setShowContextCard] = useState(false)
@@ -90,6 +95,7 @@ export const ModuleViewer = ({ modelId, basePath }: ModuleViewerProps) => {
   // Load config and init session
   useEffect(() => {
     let cancelled = false
+    activeModuleIdRef.current = modelId
     setLoading(true)
     setError(null)
 
@@ -97,30 +103,32 @@ export const ModuleViewer = ({ modelId, basePath }: ModuleViewerProps) => {
 
     loadModuleConfig(modelId)
       .then((cfg) => {
-        if (!cancelled) {
-          setConfig(cfg)
-          setLoading(false)
-          
-          // Show onboarding/context card after load
-          if (typeof window !== 'undefined') {
-            if (!localStorage.getItem('3dlab_onboarded')) {
-              setShowOnboarding(true)
-            } else if (!localStorage.getItem(`module_${modelId}_seen`)) {
-              setShowContextCard(true)
-            }
+        // Guard 1: effect cleanup (component unmounted or dep changed)
+        // Guard 2: ref check catches cases where the effect re-ran and set a
+        //          new activeModuleIdRef before this promise resolved
+        if (cancelled || activeModuleIdRef.current !== modelId) return
+
+        setConfig(cfg)
+        setLoading(false)
+
+        // Show onboarding/context card after load
+        if (typeof window !== 'undefined') {
+          if (!localStorage.getItem('3dlab_onboarded')) {
+            setShowOnboarding(true)
+          } else if (!localStorage.getItem(`module_${modelId}_seen`)) {
+            setShowContextCard(true)
           }
         }
       })
       .catch((err: unknown) => {
-        if (!cancelled) {
-          setError(String(err))
-          setLoading(false)
-        }
+        if (cancelled || activeModuleIdRef.current !== modelId) return
+        setError(String(err))
+        setLoading(false)
       })
 
-    return () => { 
+    return () => {
       cancelled = true
-      resetSession() 
+      resetSession()
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [modelId])
@@ -143,7 +151,7 @@ export const ModuleViewer = ({ modelId, basePath }: ModuleViewerProps) => {
   const codeRef = config?.codeReference ?? entry?.codeRef ?? ''
   const description = config?.description ?? entry?.description ?? ''
   const subject = config?.subject ?? entry?.subject ?? ''
-  
+
   const hotspotCount = config?.hotspots?.length ?? 0
   const totalALEQuestions = entry?.aleQuestionCount ?? 0
 
