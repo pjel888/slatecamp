@@ -1,18 +1,17 @@
 'use client'
 
-import { useEffect, useRef, useCallback, useMemo } from 'react'
+import { useEffect, useRef, useMemo } from 'react'
 import { useRouter } from 'next/navigation'
 import { useQuizStore } from '@/stores/useQuizStore'
 import { useQuizTimerStore } from '@/stores/useQuizTimerStore'
 import { BaseQuizShell } from './BaseQuizShell'
 import { QuizBody } from './QuizBody'
 import { PacingNudge } from './PacingNudge'
+import { useQuizShellHandlers } from '@/hooks/useQuizShellHandlers'
 import { 
-  endSession as endSessionAction, 
   getSessionQuestions, 
   updateSessionProgress 
 } from '@/lib/actions/quiz-v2'
-import type { GestureSignalEvent } from '@/types/patent'
 import type { 
   QuizSessionConfig, 
   QuestionForClient,
@@ -40,7 +39,6 @@ export const StandardQuizShell = ({
 }: StandardQuizShellProps) => {
   const router = useRouter()
   const initializedRef = useRef(false)
-  const directionRef = useRef<'forward' | 'backward'>('forward')
 
   // Store Selectors
   const status = useQuizStore((s) => s.status)
@@ -54,18 +52,38 @@ export const StandardQuizShell = ({
     currentQuestion ? s.answers[currentQuestion.question_id] : null
   )
   
+  const feedback = useQuizStore((s) => s.feedback)
+  const feedbackData = useMemo(() => {
+    if (!feedback.visible || !feedback.questionId) return null
+    return {
+      questionId: feedback.questionId,
+      isCorrect: feedback.isCorrect ?? false,
+      correctOptionId: feedback.correctOptionId ?? '',
+      rationale: feedback.rationale,
+      wikiUrl: feedback.wikiUrl,
+      errorDiagnostic: feedback.errorDiagnostic,
+      closeness: feedback.closeness,
+    }
+  }, [feedback])
+
+  // Handlers Hook
+  const {
+    direction,
+    handleSelectOption,
+    handleConfidenceChange,
+    handleSubmit,
+    handleNext,
+    handlePrevious,
+    handleExit,
+    handleSubmitAll,
+  } = useQuizShellHandlers({ sessionId, mode: config.mode })
+
   // Actions
   const initSession = useQuizStore((s) => s.initSession)
   const addQuestions = useQuizStore((s) => s.addQuestions)
-  const selectAnswer = useQuizStore((s) => s.selectAnswer)
-  const setConfidence = useQuizStore((s) => s.setConfidence)
-  const submitCurrentAnswer = useQuizStore((s) => s.submitCurrentAnswer)
   const skipCurrentQuestion = useQuizStore((s) => s.skipCurrentQuestion)
   const goNext = useQuizStore((s) => s.goNext)
-  const goPrevious = useQuizStore((s) => s.goPrevious)
-  const endSession = useQuizStore((s) => s.endSession)
   const reset = useQuizStore((s) => s.reset)
-  const hideFeedback = useQuizStore((s) => s.hideFeedback)
   const startTimer = useQuizTimerStore((s) => s.startTimer)
   const stopTimer = useQuizTimerStore((s) => s.stopTimer)
   const resetTimer = useQuizTimerStore((s) => s.resetTimer)
@@ -75,28 +93,26 @@ export const StandardQuizShell = ({
     if (initializedRef.current) return
     initializedRef.current = true
 
-    const storeState = useQuizStore.getState()
-    if (storeState.sessionId !== sessionId) {
-      initSession({
-        success: true,
-        sessionId,
-        config,
-        questions,
-        totalQuestions: totalQuestionCount ?? allQuestionIds.length,
-        readinessScoreBefore: 0,
-        allQuestionIds,
-        initialCurrentIndex,
-        restoredAnswers,
-      })
+    // Always re-init with fresh server data — persist may have stale/empty questions
+    initSession({
+      success: true,
+      sessionId,
+      config,
+      questions,
+      totalQuestions: totalQuestionCount ?? allQuestionIds.length,
+      readinessScoreBefore: 0,
+      allQuestionIds,
+      initialCurrentIndex,
+      restoredAnswers,
+    })
 
-      if (config.timer.enabled) {
-        startTimer({
-          limitMs: config.timer.totalSeconds ? config.timer.totalSeconds * 1000 : undefined,
-          sessionId,
-        })
-      } else {
-        useQuizStore.setState({ status: 'active' })
-      }
+    if (config.timer.enabled) {
+      startTimer({
+        limitMs: config.timer.totalSeconds ? config.timer.totalSeconds * 1000 : undefined,
+        sessionId,
+      })
+    } else {
+      useQuizStore.setState({ status: 'active' })
     }
 
     return () => {
@@ -132,11 +148,15 @@ export const StandardQuizShell = ({
     void fetchRemaining()
   }, [_hasHydrated, sessionId, allQuestionIds, questions.length, addQuestions])
 
-  // 3. Navigation & Progress Sync
+  // 3. Navigation & Progress Sync (Throttled to every 5 questions or last)
   useEffect(() => {
     if (!_hasHydrated || !sessionId || status === 'results') return
-    void updateSessionProgress(sessionId, currentIndex).catch(() => {})
-  }, [_hasHydrated, sessionId, currentIndex, status])
+    
+    const isLast = currentIndex === totalQuestions - 1
+    if (currentIndex % 5 === 0 || isLast) {
+      void updateSessionProgress(sessionId, currentIndex).catch(() => {})
+    }
+  }, [_hasHydrated, sessionId, currentIndex, status, totalQuestions])
 
   useEffect(() => {
     if (status === 'results' && results) {
@@ -144,63 +164,6 @@ export const StandardQuizShell = ({
       router.push(`/quiz/${config.mode}/session/${sessionId}/results`)
     }
   }, [status, results, config.mode, sessionId, router, stopTimer])
-
-  // 4. Handlers
-  const handleSelectOption = (optionId: string) => {
-    if (currentQuestion) selectAnswer(currentQuestion.question_id, optionId)
-  }
-
-  const handleConfidenceChange = (level: 1 | 2 | 3) => {
-    if (currentQuestion) setConfidence(currentQuestion.question_id, level)
-  }
-
-  const handleSubmit = (signalTrace?: GestureSignalEvent[]) => {
-    submitCurrentAnswer(signalTrace)
-  }
-
-  const handleNext = useCallback(() => {
-    directionRef.current = 'forward'
-    const isLast = currentIndex === totalQuestions - 1
-    const feedbackVisible = useQuizStore.getState().feedback.visible
-
-    if (feedbackVisible) {
-      if (isLast) useQuizStore.setState(s => ({ ui: { ...s.ui, calculatingResults: true } }))
-      hideFeedback()
-    }
-
-    if (isLast) {
-      if (results) endSession(results)
-      return
-    }
-    goNext()
-  }, [currentIndex, totalQuestions, results, hideFeedback, endSession, goNext])
-
-  const handlePrevious = useCallback(() => {
-    directionRef.current = 'backward'
-    goPrevious()
-  }, [goPrevious])
-
-  const handleExit = async () => {
-    try {
-      const result = await endSessionAction({ sessionId, endReason: 'user_exit' })
-      stopTimer()
-      endSession(result)
-    } catch {
-      reset()
-      resetTimer()
-      router.push('/dashboard')
-    }
-  }
-
-  const handleSubmitAll = async () => {
-    useQuizStore.setState(s => ({ ui: { ...s.ui, calculatingResults: true } }))
-    try {
-      const result = await endSessionAction({ sessionId, endReason: 'completed' })
-      endSession(result)
-    } catch {
-      router.push(`/quiz/${config.mode}/session/${sessionId}/results`)
-    }
-  }
 
   const handlePacingAutoAdvance = () => {
     if (!currentQuestion) return
@@ -212,12 +175,17 @@ export const StandardQuizShell = ({
     }
   }
 
+  // Guard: BaseQuizShell shows skeleton, but children must not receive null question
+  if (!currentQuestion) return null
+
   return (
     <BaseQuizShell
       config={config}
-      direction={directionRef.current}
+      direction={direction}
       onExit={handleExit}
       onSubmitAll={handleSubmitAll}
+      onNext={handleNext}
+      onPrevious={handlePrevious}
       showPacingNudge={(config.pressure_level ?? 0) >= 2}
       pacingNudgeSlot={
         currentQuestion && (
@@ -231,13 +199,13 @@ export const StandardQuizShell = ({
       }
     >
       <QuizBody
-        question={currentQuestion!}
+        question={currentQuestion}
         selectedOptionId={currentAnswer?.selectedOptionId ?? null}
         confidenceLevel={(currentAnswer?.confidenceLevel as 1 | 2 | 3) ?? null}
-        feedback={useQuizStore.getState().getFeedbackData()!}
+        feedback={feedbackData!}
         config={config}
-        onSelectOption={handleSelectOption}
-        onConfidenceChange={handleConfidenceChange}
+        onSelectOption={(optId) => handleSelectOption(currentQuestion.question_id, optId)}
+        onConfidenceChange={(lvl) => handleConfidenceChange(currentQuestion.question_id, lvl)}
         onSubmit={handleSubmit}
         onNext={handleNext}
       />

@@ -85,13 +85,18 @@ export const GestureCaptureZone = ({ children, onBufferReady }: GestureCaptureZo
     [captureEvent, onBufferReady],
   )
 
+  const handlePointerCancel = useCallback(() => {
+    capturingRef.current = false
+  }, [])
+
   return (
     <div
       ref={zoneRef}
-      className="touch-none select-none"
+      className="select-none"
       onPointerDown={handlePointerDown}
       onPointerMove={handlePointerMove}
       onPointerUp={handlePointerUp}
+      onPointerCancel={handlePointerCancel}
     >
       {children}
     </div>

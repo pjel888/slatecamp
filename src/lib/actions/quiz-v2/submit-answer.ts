@@ -83,22 +83,37 @@ export const submitAnswer = async (
 ): Promise<SubmitAnswerResult> => {
   try {
     const parsedInput = submitAnswerInputSchema.parse(input)
-    const {
-      data: { user },
-    } = await getUser()
+
+    // Parallel: auth check + service client (independent operations)
+    const [{ data: { user } }, supabase] = await Promise.all([
+      getUser(),
+      createServiceClient(),
+    ])
 
     if (!user) throw new Error('Unauthorized')
 
-    const supabase = await createServiceClient()
-    const session = await getOwnedSessionOrThrow<SessionRow>(
-      supabase,
-      user.id,
-      parsedInput.sessionId,
-      'session_id, user_id, status, config, question_ids, answered_count, correct_count',
-    )
+    // Parallel: session validation + question fetch (eliminates sequential waterfall)
+    // Always fetch rationale — single row, negligible overhead vs round-trip latency saved
+    const [session, { data: question }] = await Promise.all([
+      getOwnedSessionOrThrow<SessionRow>(
+        supabase,
+        user.id,
+        parsedInput.sessionId,
+        'session_id, user_id, status, config, question_ids, answered_count, correct_count',
+      ),
+      supabase
+        .from('questions')
+        .select('question_id, topic_id, correct_option_id, rationale, difficulty, options, question_type, correct_value, value_tolerance, accepted_answers')
+        .eq('question_id', parsedInput.questionId)
+        .single(),
+    ])
 
     if (session.status !== 'in_progress') {
       throw new Error('Session is not in progress')
+    }
+
+    if (!question) {
+      throw new Error('Question not found')
     }
 
     const questionIds = session.question_ids ?? []
@@ -109,21 +124,6 @@ export const submitAnswer = async (
 
     const config = session.config ?? null
     const feedbackTiming = config?.feedback?.timing ?? 'immediate'
-
-    // Only fetch rationale when immediate feedback is needed — avoids large JSONB payload
-    const questionColumns = feedbackTiming === 'immediate'
-      ? 'question_id, topic_id, correct_option_id, rationale, difficulty, options, question_type, correct_value, value_tolerance, accepted_answers'
-      : 'question_id, topic_id, correct_option_id, difficulty, options, question_type, correct_value, value_tolerance, accepted_answers'
-
-    const { data: question } = await supabase
-      .from('questions')
-      .select(questionColumns)
-      .eq('question_id', parsedInput.questionId)
-      .single()
-
-    if (!question) {
-      throw new Error('Question not found')
-    }
 
     const typedQuestion = question as QuestionRow
     const topicId = parsedInput.topicId ?? typedQuestion.topic_id

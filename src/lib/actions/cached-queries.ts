@@ -135,3 +135,118 @@ export const getCachedArticleAndNode = unstable_cache(
     tags: [CACHE_TAGS.wiki, CACHE_TAGS.taxonomy],
   }
 )
+
+// ── Taxonomy graph for session topic resolution (cached 2h) ────────────
+
+interface TaxonomyGraphNode {
+  node_id: string
+  parent_id: string | null
+  is_leaf: boolean
+  is_cross_ref_only: boolean
+}
+
+const getCachedTaxonomyGraph = unstable_cache(
+  async () => {
+    const supabase = await createStaticClient()
+    const [{ data: nodes }, { data: crossRefs }] = await Promise.all([
+      supabase
+        .from('taxonomy_tree')
+        .select('node_id, parent_id, is_leaf, is_cross_ref_only')
+        .is('deprecated_at', null),
+      supabase
+        .from('taxonomy_cross_references')
+        .select('source_node_id, target_node_id'),
+    ])
+    return {
+      nodes: (nodes ?? []) as TaxonomyGraphNode[],
+      crossRefs: (crossRefs ?? []) as { source_node_id: string; target_node_id: string }[],
+    }
+  },
+  ['taxonomy-graph-session'],
+  { revalidate: 7200, tags: [CACHE_TAGS.taxonomy] }
+)
+
+/**
+ * Resolves selected topic node_ids to all descendant node_ids where questions live.
+ * Handles non-leaf → leaf traversal AND cross-reference resolution.
+ * Uses cached taxonomy graph — zero DB queries on cache hit.
+ */
+export const resolveTaxonomyDescendants = async (selectedTopicIds: string[]): Promise<string[]> => {
+  if (selectedTopicIds.length === 0) return []
+
+  const { nodes, crossRefs } = await getCachedTaxonomyGraph()
+
+  // Build lookup maps
+  const childrenOf = new Map<string, TaxonomyGraphNode[]>()
+  const nodeMap = new Map<string, TaxonomyGraphNode>()
+  for (const node of nodes) {
+    nodeMap.set(node.node_id, node)
+    if (node.parent_id) {
+      const siblings = childrenOf.get(node.parent_id)
+      if (siblings) siblings.push(node)
+      else childrenOf.set(node.parent_id, [node])
+    }
+  }
+
+  // Build cross-ref map: source → targets
+  const crossRefTargets = new Map<string, string[]>()
+  for (const cr of crossRefs) {
+    const targets = crossRefTargets.get(cr.source_node_id)
+    if (targets) targets.push(cr.target_node_id)
+    else crossRefTargets.set(cr.source_node_id, [cr.target_node_id])
+  }
+
+  // BFS from selected nodes — collect all descendants
+  const result = new Set<string>()
+  const crossRefSources: string[] = []
+  const visited = new Set<string>()
+  const queue = [...selectedTopicIds]
+
+  while (queue.length > 0) {
+    const nodeId = queue.shift()!
+    if (visited.has(nodeId)) continue
+    visited.add(nodeId)
+
+    const node = nodeMap.get(nodeId)
+    if (!node) {
+      result.add(nodeId) // Unknown node — include as-is
+      continue
+    }
+
+    if (node.is_cross_ref_only) {
+      crossRefSources.push(nodeId)
+    } else {
+      result.add(nodeId)
+    }
+
+    const children = childrenOf.get(nodeId)
+    if (children) {
+      for (const child of children) queue.push(child.node_id)
+    }
+  }
+
+  // Resolve cross-references → target nodes + their descendants
+  for (const sourceId of crossRefSources) {
+    const targets = crossRefTargets.get(sourceId) ?? []
+    for (const targetId of targets) {
+      if (visited.has(targetId)) continue
+      const targetQueue = [targetId]
+      while (targetQueue.length > 0) {
+        const tid = targetQueue.shift()!
+        if (visited.has(tid)) continue
+        visited.add(tid)
+        const tNode = nodeMap.get(tid)
+        if (tNode?.is_cross_ref_only) continue
+        result.add(tid)
+        const tChildren = childrenOf.get(tid)
+        if (tChildren) {
+          for (const child of tChildren) {
+            if (!child.is_cross_ref_only) targetQueue.push(child.node_id)
+          }
+        }
+      }
+    }
+  }
+
+  return Array.from(result)
+}

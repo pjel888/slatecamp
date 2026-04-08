@@ -2,6 +2,8 @@
 
 import Link from 'next/link'
 import { useMemo } from 'react'
+import { Lock } from '@phosphor-icons/react'
+import { ROUTES } from '@/lib/constants/routes'
 import { ReadinessScoreRing } from '@/components/score/ReadinessScoreRing'
 import { SectionHeader } from '@/components/shared/section-header'
 import { HeroConfigurator } from './HeroConfigurator'
@@ -63,6 +65,7 @@ interface ReviewHubProps {
   blindspotQueues: RawBlindspotQueue[]
   targetExamDate: string | null
   weakNodes: RawWeakNode[]
+  coreSubjects?: { node_id: string; name: string; subject_area: string }[]
   srActiveCycles?: SRActiveCycle[]
   srDueCycles?: SRDueCycle[]
   srProgress?: SRProgressSummary
@@ -219,6 +222,7 @@ const ReviewHub = ({
   blindspotQueues,
   targetExamDate,
   weakNodes,
+  coreSubjects,
   srActiveCycles = [],
   srDueCycles = [],
   srProgress = { active: 0, spacing: 0, durable: 0, reset: 0, total: 0 },
@@ -235,6 +239,7 @@ const ReviewHub = ({
     () => getReadinessZone(readinessScore),
     [readinessScore],
   )
+  const effectiveTier = (isDevEnvironment || userTier !== 'free') ? 'pro' : 'free'
   const normalizedTier = (userTier === 'free' ? 'free' : 'pro') as 'free' | 'pro'
   const daysUntilExam = useMemo(
     () => getDaysUntilExam(targetExamDate),
@@ -297,10 +302,10 @@ const ReviewHub = ({
     }
 
     return signals.slice(0, 3)
-  }, [daysUntilExam, focusQueue, simulationGateStatus.isUnlocked, srDueCycles.length, weakTopicsPreview])
+  }, [daysUntilExam, focusQueue, srDueCycles.length, weakTopicsPreview])
 
   return (
-    <div className="w-full" style={{ backgroundColor: 'var(--background)' }}>
+    <div className="w-full bg-background">
       <main
         className="w-full px-6 py-8"
         aria-label="Review and Testing hub"
@@ -316,7 +321,7 @@ const ReviewHub = ({
 
         <div className="space-y-10">
           <section className="grid gap-4 lg:grid-cols-[1.2fr_0.8fr]">
-            <div className="rounded-md border border-border bg-white p-5">
+            <div className="rounded-md border border-border bg-card p-5">
               <SectionHeader
                 eyebrow="Readiness"
                 title="Today’s testing posture"
@@ -366,7 +371,7 @@ const ReviewHub = ({
               </div>
             </div>
 
-            <div className="rounded-md border border-border bg-white p-5">
+            <div className="rounded-md border border-border bg-card p-5">
               <SectionHeader
                 eyebrow="Next Best Move"
                 title={inProgressSession ? 'Resume your live session' : 'Choose today’s launch point'}
@@ -415,7 +420,7 @@ const ReviewHub = ({
               level="section"
             />
             <div className="mt-4">
-              <HeroConfigurator />
+              <HeroConfigurator initialSubjects={coreSubjects} />
             </div>
           </section>
 
@@ -428,7 +433,7 @@ const ReviewHub = ({
               />
               <div className="mt-4 grid gap-3 md:grid-cols-3">
                 {hubSignals.map((signal) => (
-                  <div key={signal.title} className="rounded-md border border-border bg-white p-4">
+                  <div key={signal.title} className="rounded-md border border-border bg-card p-4">
                     <h3 className="text-sm font-semibold text-foreground">{signal.title}</h3>
                     <p className="mt-2 text-sm leading-relaxed text-text-secondary">{signal.description}</p>
                     <a
@@ -451,7 +456,7 @@ const ReviewHub = ({
               level="section"
             />
             <div className="mt-4 grid gap-4 md:grid-cols-2">
-              <div className="flex flex-col justify-between rounded-md border border-border bg-white p-5">
+              <div className="flex flex-col justify-between rounded-md border border-border bg-card p-5">
                 <div>
                   <h3 className="text-lg font-bold text-foreground">Full Exam Simulation</h3>
                   <p className="mt-2 text-sm text-text-secondary">
@@ -459,7 +464,20 @@ const ReviewHub = ({
                   </p>
                 </div>
                 <div className="mt-6">
-                  {simulationGateStatus.isUnlocked ? (
+                  {effectiveTier === 'free' ? (
+                    <div className="flex items-center justify-between p-3 rounded-md bg-muted/50 border border-dashed border-border">
+                      <div className="flex items-center gap-2 text-xs font-medium text-muted-foreground">
+                        <Lock size={14} weight="bold" />
+                        <span>Pro Subscription Required</span>
+                      </div>
+                      <Link
+                        href={ROUTES.PRICING}
+                        className="text-xs font-bold text-primary hover:underline"
+                      >
+                        Upgrade
+                      </Link>
+                    </div>
+                  ) : simulationGateStatus.isUnlocked ? (
                     <Link
                       href="/quiz/fullexam/setup"
                       className="inline-flex w-full items-center justify-center rounded-sm bg-primary px-4 py-2.5 text-sm font-medium text-white transition-opacity duration-150 hover:opacity-90"
@@ -474,7 +492,7 @@ const ReviewHub = ({
                 </div>
               </div>
               
-              <div className="flex flex-col justify-between rounded-md border border-border bg-white p-5">
+              <div className="flex flex-col justify-between rounded-md border border-border bg-card p-5">
                 <div>
                   <h3 className="text-lg font-bold text-foreground">Design Endurance</h3>
                   <p className="mt-2 text-sm text-text-secondary">
@@ -482,12 +500,27 @@ const ReviewHub = ({
                   </p>
                 </div>
                 <div className="mt-6">
-                  <Link
-                    href="/quiz/extended/setup"
-                    className="inline-flex w-full items-center justify-center rounded-sm border border-border bg-white px-4 py-2.5 text-sm font-medium text-foreground transition-colors duration-150 hover:bg-background"
-                  >
-                    Start Endurance Training
-                  </Link>
+                  {effectiveTier === 'free' ? (
+                    <div className="flex items-center justify-between p-3 rounded-md bg-muted/50 border border-dashed border-border">
+                      <div className="flex items-center gap-2 text-xs font-medium text-muted-foreground">
+                        <Lock size={14} weight="bold" />
+                        <span>Pro Subscription Required</span>
+                      </div>
+                      <Link
+                        href={ROUTES.PRICING}
+                        className="text-xs font-bold text-primary hover:underline"
+                      >
+                        Upgrade
+                      </Link>
+                    </div>
+                  ) : (
+                    <Link
+                      href="/quiz/extended/setup"
+                      className="inline-flex w-full items-center justify-center rounded-sm border border-border bg-card px-4 py-2.5 text-sm font-medium text-foreground transition-colors duration-150 hover:bg-background"
+                    >
+                      Start Endurance Training
+                    </Link>
+                  )}
                 </div>
               </div>
             </div>

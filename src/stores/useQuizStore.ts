@@ -370,7 +370,8 @@ const createSessionSlice: StateCreator<QuizStore, [["zustand/subscribeWithSelect
     const answerState = answers[question.question_id]
     if (!answerState?.selectedOptionId) return
 
-    const timeSpentMs = Date.now() - answerState.timeStartedMs
+    const rawTimeMs = Date.now() - (answerState.timeStartedMs || Date.now())
+    const timeSpentMs = Math.max(0, Math.min(rawTimeMs, 3_600_000))
 
     // Patent: Generate CAGE binding token (Claim 20)
     const questionNonce = nonces[question.question_id]
@@ -387,9 +388,10 @@ const createSessionSlice: StateCreator<QuizStore, [["zustand/subscribeWithSelect
       ? { cageSequenceNumber: cageSequenceNumber + 1, previousCageTokenHash: cageResult.token.signature }
       : { cageSequenceNumber: cageSequenceNumber + 1 }
 
-    const gestureDurationMs = (signalTrace && signalTrace.length >= 2)
+    const rawGestureDuration = (signalTrace && signalTrace.length >= 2)
       ? signalTrace[signalTrace.length - 1].timestamp - signalTrace[0].timestamp
       : 0
+    const gestureDurationMs = Number.isFinite(rawGestureDuration) ? Math.round(rawGestureDuration) : 0
 
     const input: SubmitAnswerInput = {
       sessionId,
@@ -792,7 +794,7 @@ export const useQuizStore = create<QuizStore>()(
           config: state.config,
           status: state.status,
           mode: state.mode,
-          questions: state.questions,
+          // questions excluded — re-fetched on session init, avoids 200KB+ localStorage writes per answer
           currentIndex: state.currentIndex,
           totalQuestions: state.totalQuestions,
           answers: state.answers,

@@ -31,6 +31,8 @@ interface BaseQuizShellProps {
   pacingNudgeSlot?: ReactNode
   onExit: () => void
   onSubmitAll: () => void
+  onNext: () => void
+  onPrevious: () => void
 }
 
 // ─── Sub-components ──────────────────────────────────────────────────────────
@@ -91,6 +93,8 @@ export const BaseQuizShell = ({
   pacingNudgeSlot,
   onExit,
   onSubmitAll,
+  onNext,
+  onPrevious,
 }: BaseQuizShellProps) => {
   const reducedMotion = useReducedMotion()
 
@@ -163,7 +167,11 @@ export const BaseQuizShell = ({
     return (
       <div className="flex flex-col min-h-screen bg-surface-focused">
         <div className="flex items-center gap-3 px-4 py-2.5 border-b border-border bg-card">
+          <span className="text-xs font-medium text-muted-foreground capitalize">{config.mode}</span>
           <div className="flex-1 h-1.5 rounded-full bg-border" />
+          {totalQuestions > 0 && (
+            <span className="text-xs text-muted-foreground">{totalQuestions}q</span>
+          )}
         </div>
         <main className="flex-1">
           <QuestionSkeleton />
@@ -210,15 +218,13 @@ export const BaseQuizShell = ({
         currentPosition={currentIndex + 1}
         totalQuestions={totalQuestions}
         hasAnswered={hasAnswered}
-        onPrevious={goPrevious}
+        onPrevious={onPrevious}
         onNext={() => {
-          const isLast = currentIndex === totalQuestions - 1
-          if (isLast) {
-            if (getAnsweredCount() < totalQuestions) showSubmitModal()
-            else /* This will be handled by the specialized shell's next handler */ {}
-          } else {
-            goNext()
-          }
+          // Footer 'Next' should always trigger the specialized shell's handleNext logic
+          // which decides whether to go next or finish the session.
+          // Note: Standard/Simulation/Endurance shells all pass their handleNext to QuizBody,
+          // but we also need it here in the footer.
+          onNext()
         }}
       />
 

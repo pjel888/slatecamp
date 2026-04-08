@@ -36,16 +36,15 @@ export const SlideToSubmit = ({
   const [completed, setCompleted] = useState(false)
   const [trackWidth, setTrackWidth] = useState(0)
 
-  // Measure track on mount and resize
+  // Measure track — ResizeObserver for reliable measurement on mount, resize, and layout shifts
   useEffect(() => {
-    const measure = () => {
-      if (trackRef.current) {
-        setTrackWidth(trackRef.current.clientWidth - HANDLE_SIZE - TRACK_PADDING * 2)
-      }
-    }
+    const el = trackRef.current
+    if (!el) return
+    const measure = () => setTrackWidth(el.clientWidth - HANDLE_SIZE - TRACK_PADDING * 2)
     measure()
-    window.addEventListener('resize', measure)
-    return () => window.removeEventListener('resize', measure)
+    const ro = new ResizeObserver(measure)
+    ro.observe(el)
+    return () => ro.disconnect()
   }, [])
 
   const maxOffset = trackWidth
@@ -66,25 +65,36 @@ export const SlideToSubmit = ({
         return
       }
 
+      // Re-measure if track not yet laid out (fast touch before effect fires)
+      let currentMax = maxOffset
+      if (currentMax <= 0 && trackRef.current) {
+        currentMax = trackRef.current.clientWidth - HANDLE_SIZE - TRACK_PADDING * 2
+        if (currentMax > 0) setTrackWidth(currentMax)
+      }
+      if (currentMax <= 0) {
+        cancel()
+        return
+      }
+
       if (active) {
         setIsDragging(true)
-        const clamped = Math.max(0, Math.min(mx, maxOffset))
+        const clamped = Math.max(0, Math.min(mx, currentMax))
         setOffset(clamped)
 
-        if (clamped / maxOffset >= THRESHOLD_PERCENT) {
+        if (clamped / currentMax >= THRESHOLD_PERCENT) {
           hapticSelect()
         }
       } else {
         setIsDragging(false)
-        if (offset / maxOffset >= THRESHOLD_PERCENT) {
-          setOffset(maxOffset)
+        if (offset / currentMax >= THRESHOLD_PERCENT) {
+          setOffset(currentMax)
           handleComplete()
         } else {
           setOffset(0)
         }
       }
     },
-    { axis: 'x', filterTaps: true },
+    { axis: 'x', filterTaps: true, pointer: { capture: true } },
   )
 
   // Reset when checked goes from true → false (new question loaded)
@@ -166,6 +176,7 @@ export const SlideToSubmit = ({
           width: HANDLE_SIZE,
           height: HANDLE_SIZE,
           transform: `translateX(${offset}px)`,
+          touchAction: 'none',
           backgroundColor: completed || isDragging ? '#1B3FC4' : undefined,
           color: completed || isDragging ? '#FFFFFF' : '#8896A7',
           border: completed || isDragging ? 'none' : '1px solid #D4DAE3',

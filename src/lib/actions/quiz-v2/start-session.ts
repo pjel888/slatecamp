@@ -7,6 +7,7 @@ import { selectQuestionsWithInterleaving } from '@/lib/quiz/interleaved-selectio
 import { selectQuestionsWithRouting } from '@/lib/quiz/intelligent-routing'
 import { mergeWithPreset } from '@/lib/quiz/mode-presets'
 import { buildTaxonomyBreadcrumbMap, toClientQuestion } from '@/lib/quiz/to-client-question'
+import { resolveTaxonomyDescendants } from '@/lib/actions/cached-queries'
 import { createServiceClient, getUser } from '@/lib/supabase/server'
 import type {
   QuestionForClient,
@@ -119,6 +120,7 @@ export const startSession = async (
       .select('question_id')
       .eq('user_id', user.id)
       .gte('interaction_timestamp', recentCutoff)
+      .limit(1000)
 
     const recentQuestionIds = (recentInteractions ?? []).map(
       (interaction: { question_id: string }) => interaction.question_id,
@@ -128,79 +130,9 @@ export const startSession = async (
     let filterByDisciplineId: string | null = null
 
     if (topics.length > 0) {
-      const { data: selectedNodes } = await supabase
-        .from('taxonomy_tree')
-        .select('node_id, is_leaf')
-        .in('node_id', topics)
-
-      const leafIds = (selectedNodes ?? [])
-        .filter((node: { is_leaf: boolean }) => node.is_leaf)
-        .map((node: { node_id: string }) => node.node_id)
-
-      let parentIds = (selectedNodes ?? [])
-        .filter((node: { is_leaf: boolean }) => !node.is_leaf)
-        .map((node: { node_id: string }) => node.node_id)
-
-      // Traverse down the tree to find all leaf nodes.
-      // Since our taxonomy is typically max 3-4 levels, a loop is safe.
-      let depth = 0
-      while (parentIds.length > 0 && depth < 3) {
-        const { data: children } = await supabase
-          .from('taxonomy_tree')
-          .select('node_id, is_leaf')
-          .in('parent_id', parentIds)
-          .eq('is_cross_ref_only', false)
-          .is('deprecated_at', null)
-
-        const childLeaves = (children ?? []).filter(c => c.is_leaf).map(c => c.node_id)
-        const childParents = (children ?? []).filter(c => !c.is_leaf).map(c => c.node_id)
-
-        leafIds.push(...childLeaves)
-        parentIds = childParents
-        depth++
-      }
-
-      // Handle Cross-References
-      const crossRefSourceIds = (selectedNodes ?? [])
-        .filter((node: { is_leaf: boolean }) => !node.is_leaf)
-        .map((node: { node_id: string }) => node.node_id)
-
-      if (crossRefSourceIds.length > 0) {
-        const { data: crossRefs } = await supabase
-          .from('taxonomy_cross_references')
-          .select('target_node_id')
-          .in('source_node_id', crossRefSourceIds)
-
-        if (crossRefs && crossRefs.length > 0) {
-          const targetIds = crossRefs.map(
-            (crossRef: { target_node_id: string }) => crossRef.target_node_id,
-          )
-          
-          let crParentIds = targetIds
-          let crDepth = 0
-          while (crParentIds.length > 0 && crDepth < 3) {
-            const { data: crChildren } = await supabase
-              .from('taxonomy_tree')
-              .select('node_id, is_leaf')
-              .in('parent_id', crParentIds)
-              .eq('is_cross_ref_only', false)
-              .is('deprecated_at', null)
-
-            const crLeaves = (crChildren ?? []).filter(c => c.is_leaf).map(c => c.node_id)
-            const crParents = (crChildren ?? []).filter(c => !c.is_leaf).map(c => c.node_id)
-
-            const existingLeafIds = new Set(leafIds)
-            crLeaves.forEach(id => {
-              if (!existingLeafIds.has(id)) leafIds.push(id)
-            })
-
-            crParentIds = crParents
-            crDepth++
-          }
-        }
-      }
-
-      topicIds = leafIds.length > 0 ? leafIds : topics
+      // Cached in-memory traversal — replaces 4-7 sequential DB queries with zero on cache hit
+      const resolved = await resolveTaxonomyDescendants(topics)
+      topicIds = resolved.length > 0 ? resolved : topics
     } else if (disciplines.length > 0 && disciplines.length <= 3) {
       filterByDisciplineId = disciplines[0]
     } else if (disciplineId) {
@@ -229,7 +161,7 @@ export const startSession = async (
       throw new Error('No topics selected or found for the current discipline.')
     }
 
-    // Question Selection (Intelligent Routing vs Interleaving)
+    // Question Selection (Intelligent Routing vs Interleaving) — chunked for large topic sets
     let selectedQuestions: any[] = []
 
     if (mergedConfig.interleave === true) {
@@ -248,6 +180,7 @@ export const startSession = async (
         topicIds,
         questionCount,
         difficultyRange,
+        excludeQuestionIds: recentQuestionIds,
       })
     }
 
@@ -261,23 +194,26 @@ export const startSession = async (
 
     const questionIds = selectedQuestions.map((q) => q.question_id)
     const uniqueTopicIds = [...new Set(selectedQuestions.map((q) => q.topic_id))] as string[]
-    const taxonomyMap = await buildTaxonomyBreadcrumbMap(supabase, uniqueTopicIds)
 
-    const { data: session, error: sessionError } = await supabase
-      .from('quiz_sessions')
-      .insert({
-        user_id: user.id,
-        discipline_id: disciplineId,
-        test_mode: dbTestMode,
-        status: 'in_progress',
-        config: mergedConfig,
-        question_ids: questionIds,
-        subject_ids: uniqueTopicIds,
-        current_question_index: 0,
-        started_at: new Date().toISOString(),
-      })
-      .select('session_id')
-      .single()
+    // Parallel: breadcrumb map + session insert (independent operations)
+    const [taxonomyMap, { data: session, error: sessionError }] = await Promise.all([
+      buildTaxonomyBreadcrumbMap(supabase, uniqueTopicIds),
+      supabase
+        .from('quiz_sessions')
+        .insert({
+          user_id: user.id,
+          discipline_id: disciplineId,
+          test_mode: dbTestMode,
+          status: 'in_progress',
+          config: mergedConfig,
+          question_ids: questionIds,
+          subject_ids: uniqueTopicIds,
+          current_question_index: 0,
+          started_at: new Date().toISOString(),
+        })
+        .select('session_id')
+        .single(),
+    ])
 
     if (sessionError || !session) {
       throw sessionError ?? new Error('Failed to create session')
