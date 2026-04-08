@@ -2,8 +2,9 @@
 
 import { useEffect } from 'react'
 import Link from 'next/link'
+import { ROUTES } from '@/lib/routes'
 
-interface ErrorProps {
+type ErrorProps = {
   error: Error & { digest?: string }
   reset: () => void
 }
@@ -19,7 +20,7 @@ export default function AuthError({ error, reset }: ErrorProps) {
       <p className="text-sm text-muted-foreground">
         Something went wrong during sign in.
       </p>
-      <Link href="/login" className="text-sm text-primary underline underline-offset-4">
+      <Link href={ROUTES.auth.login} className="text-sm text-primary underline underline-offset-4">
         Return to login
       </Link>
     </div>

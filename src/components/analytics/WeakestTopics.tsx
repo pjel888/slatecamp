@@ -3,8 +3,10 @@
 import Link from 'next/link'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { RichInfoPopover } from '@/components/dashboard/RichInfoPopover'
+import { ChartEmptyState } from '@/components/analytics/ChartEmptyState'
 import { cn } from '@/lib/utils'
 import type { WeakestTopicItem } from '@/lib/actions/analytics-data'
+import { ROUTES } from '@/lib/routes'
 
 interface Props {
   data: WeakestTopicItem[]
@@ -34,11 +36,11 @@ export const WeakestTopics = ({ data }: Props) => (
     </CardHeader>
     <CardContent className="p-2 pt-0">
       {data.length === 0 ? (
-        <div className="h-[220px] flex items-center justify-center">
-          <p className="text-xs text-center leading-snug max-w-[200px] text-muted-foreground">
-            Complete a few study sessions to see your analytics here.
-          </p>
-        </div>
+        <ChartEmptyState
+          title="No weak topics identified"
+          description="Topics to focus on appear after answering enough questions."
+          height="h-[320px]"
+        />
       ) : (
         <div className="flex flex-col gap-1">
           {data.map((item) => {

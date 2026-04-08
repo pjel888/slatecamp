@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
+import { ROUTES } from '@/lib/routes'
 
 export default function NotFound() {
   return (
@@ -14,10 +15,10 @@ export default function NotFound() {
         This page doesn&apos;t exist or may have moved.
       </p>
       <div className="flex gap-3">
-        <Link href="/dashboard">
+        <Link href={ROUTES.dashboard.root}>
           <Button>Go to Dashboard</Button>
         </Link>
-        <Link href="/">
+        <Link href={ROUTES.home}>
           <Button variant="outline">Home</Button>
         </Link>
       </div>

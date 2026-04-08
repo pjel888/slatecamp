@@ -12,7 +12,9 @@ import {
 import { ChartBar } from '@phosphor-icons/react/dist/ssr'
 import Link from 'next/link'
 import { EmptyState } from '@/components/shared/empty-state'
+import { useChartColors } from '@/hooks/useChartColors'
 import type { SubjectMastery } from '@/types/dashboard'
+import { ROUTES } from '@/lib/routes'
 
 interface SubjectRadarChartProps {
   data: SubjectMastery[]
@@ -41,6 +43,7 @@ const CustomTooltip = ({ active, payload }: any) => {
 }
 
 export function SubjectRadarChart({ data }: SubjectRadarChartProps) {
+  const colors = useChartColors()
   const hasData = data.some(d => d.questionsAnswered > 0)
 
   return (
@@ -62,7 +65,7 @@ export function SubjectRadarChart({ data }: SubjectRadarChartProps) {
             description="Complete a quiz session and your subject coverage will appear here."
             action={
               <Link
-                href="/dashboard/drills"
+                href={ROUTES.dashboard.drills}
                 className="inline-flex h-8 items-center justify-center rounded-sm bg-primary px-4 text-xs font-medium text-primary-foreground transition-colors hover:bg-primary/90"
               >
                 Start a quiz
@@ -71,12 +74,13 @@ export function SubjectRadarChart({ data }: SubjectRadarChartProps) {
           />
         ) : (
           <div className="w-full h-[260px]">
+            <div role="img" aria-label="Subject mastery radar chart showing coverage across LEA exam subject areas">
             <ResponsiveContainer width="100%" height="100%">
               <RadarChart cx="50%" cy="50%" outerRadius="75%" data={data}>
-                <PolarGrid stroke="#E5E7EB" strokeWidth={1} />
+                <PolarGrid stroke={colors.gridStroke} strokeWidth={1} />
                 <PolarAngleAxis
                   dataKey="shortLabel"
-                  tick={{ fill: '#555555', fontSize: 11 }}
+                  tick={{ fill: colors.textSecondary, fontSize: 11 }}
                 />
                 <PolarRadiusAxis
                   angle={90}
@@ -89,16 +93,17 @@ export function SubjectRadarChart({ data }: SubjectRadarChartProps) {
                 <Radar
                   name="Mastery"
                   dataKey="mastery"
-                  stroke="var(--primary)"
+                  stroke={colors.primary}
                   strokeWidth={2}
-                  fill="var(--primary)"
+                  fill={colors.primary}
                   fillOpacity={0.15}
-                  dot={{ r: 4, fill: 'var(--primary)', stroke: 'var(--primary)', strokeWidth: 0 }}
+                  dot={{ r: 4, fill: colors.primary, stroke: colors.primary, strokeWidth: 0 }}
                   animationDuration={300}
                   animationEasing="ease-out"
                 />
               </RadarChart>
             </ResponsiveContainer>
+            </div>
           </div>
         )}
       </div>

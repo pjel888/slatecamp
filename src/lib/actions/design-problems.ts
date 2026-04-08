@@ -2,6 +2,7 @@
 
 import { revalidatePath } from "next/cache"
 import { createClient, getUser } from "@/lib/supabase/server"
+import { ROUTES } from "@/lib/routes"
 
 export type DesignProblem = {
   problem_id: string
@@ -145,7 +146,7 @@ export const startDesignSession = async (problemId: string): Promise<StartDesign
     .single()
 
   if (error) return { error: error.message }
-  revalidatePath("/dashboard/area-c/design-problems")
+  revalidatePath(ROUTES.dashboard.designProblems)
   return { session_id: data.session_id }
 }
 

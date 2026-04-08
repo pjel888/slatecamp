@@ -6,7 +6,8 @@ const ProgressCard = dynamic(
 )
 
 export const ProgressCardSection = async () => {
-  const report = await getMonthlyReport()
-  if (!report) return null
-  return <ProgressCard report={report} />
+  const result = await getMonthlyReport()
+  if (result.error) throw new Error(result.error)
+  if (!result.data) return null
+  return <ProgressCard report={result.data} />
 }

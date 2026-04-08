@@ -44,8 +44,6 @@ mock.module("@/lib/supabase/server", () => ({
 // Import AFTER mock.module registration
 import {
   getTaxonomyHeatmap,
-  getNodePerformance,
-  getAnalyticsSummary,
   getReadinessTrajectory,
 } from "./analytics"
 
@@ -119,105 +117,6 @@ describe("getTaxonomyHeatmap", () => {
   })
 })
 
-// ── getNodePerformance ────────────────────────────────────────────────────────
-
-describe("getNodePerformance", () => {
-  beforeEach(() => {
-    mockUser = { id: "user-test-123" }
-    resetFromImpl()
-  })
-
-  test("returns [] when user is not logged in", async () => {
-    mockUser = null
-    const result = await getNodePerformance("topic-xyz")
-    expect(result).toEqual([])
-  })
-
-  test("returns [] when user_interactions query errors", async () => {
-    fromImpl = (_table: string) => makeErrorStub("query timed out")
-    const result = await getNodePerformance("topic-xyz")
-    expect(result).toEqual([])
-  })
-
-  test("returns [] when query returns null", async () => {
-    fromImpl = (_table: string) => makeQueryStub({ data: null, error: null })
-    const result = await getNodePerformance("topic-xyz")
-    expect(Array.isArray(result)).toBe(true)
-    expect(result.length).toBe(0)
-  })
-
-  test("returns [] when no interactions exist for topic", async () => {
-    fromImpl = (_table: string) => makeDataStub([])
-    const result = await getNodePerformance("topic-xyz")
-    expect(result).toEqual([])
-  })
-
-  test("groups interactions by date and computes accuracy", async () => {
-    const interactions = [
-      { is_correct: true,  interaction_timestamp: "2026-03-10T09:00:00Z" },
-      { is_correct: false, interaction_timestamp: "2026-03-10T10:00:00Z" },
-      { is_correct: true,  interaction_timestamp: "2026-03-11T09:00:00Z" },
-    ]
-    fromImpl = (_table: string) => makeDataStub(interactions)
-
-    const result = await getNodePerformance("topic-xyz")
-    expect(Array.isArray(result)).toBe(true)
-    expect(result.length).toBe(2)
-
-    const mar10 = result.find((r: any) => r.date === "2026-03-10")
-    const mar11 = result.find((r: any) => r.date === "2026-03-11")
-    expect(mar10?.accuracy).toBe(50)
-    expect(mar11?.accuracy).toBe(100)
-  })
-})
-
-// ── getAnalyticsSummary ───────────────────────────────────────────────────────
-
-describe("getAnalyticsSummary", () => {
-  beforeEach(() => {
-    mockUser = { id: "user-test-123" }
-    resetFromImpl()
-  })
-
-  test("returns null when user is not logged in", async () => {
-    mockUser = null
-    const result = await getAnalyticsSummary()
-    expect(result).toBeNull()
-  })
-
-  test("returns a summary object when user is authenticated", async () => {
-    fromImpl = (_table: string) =>
-      makeQueryStub({ data: { global_readiness_score: 72 }, error: null })
-
-    const result = await getAnalyticsSummary()
-    expect(result).not.toBeNull()
-    expect(typeof result?.readinessScore).toBe("number")
-    expect(typeof result?.averageSecondsPerItem).toBe("number")
-    expect(result?.targetSecondsPerItem).toBe(120)
-    expect(result?.enduranceMinutes).toBe(240)
-  })
-
-  test("returns readinessScore of 0 when stats query returns no data", async () => {
-    fromImpl = (_table: string) => makeDataStub(null)
-    const result = await getAnalyticsSummary()
-    expect(result).not.toBeNull()
-    expect(result?.readinessScore).toBe(0)
-  })
-
-  test("summary shape includes all required keys", async () => {
-    fromImpl = (_table: string) => makeDataStub([])
-    const result = await getAnalyticsSummary()
-    expect(result).not.toBeNull()
-    const keys = Object.keys(result ?? {})
-    expect(keys).toContain("readinessScore")
-    expect(keys).toContain("readinessTrend")
-    expect(keys).toContain("averageSecondsPerItem")
-    expect(keys).toContain("targetSecondsPerItem")
-    expect(keys).toContain("enduranceMinutes")
-    expect(keys).toContain("trend")
-  })
-})
-
 // ── getReadinessTrajectory ────────────────────────────────────────────────────
 
 describe("getReadinessTrajectory", () => {
@@ -229,19 +128,19 @@ describe("getReadinessTrajectory", () => {
   test("returns [] when user is not logged in", async () => {
     mockUser = null
     const result = await getReadinessTrajectory()
-    expect(result).toEqual([])
+    expect(result.data).toEqual([])
   })
 
   test("returns [] when no snapshot data exists", async () => {
     fromImpl = (_table: string) => makeDataStub([])
     const result = await getReadinessTrajectory()
-    expect(result).toEqual([])
+    expect(result.data).toEqual([])
   })
 
   test("returns [] when snapshot query returns null", async () => {
     fromImpl = (_table: string) => makeDataStub(null)
     const result = await getReadinessTrajectory()
-    expect(result).toEqual([])
+    expect(result.data).toEqual([])
   })
 
   test("maps snapshots to trajectory points with correct shape", async () => {
@@ -253,10 +152,10 @@ describe("getReadinessTrajectory", () => {
     fromImpl = (_table: string) => makeDataStub(snapshots)
 
     const result = await getReadinessTrajectory()
-    expect(Array.isArray(result)).toBe(true)
-    expect(result.length).toBe(3)
+    expect(Array.isArray(result.data)).toBe(true)
+    expect(result.data.length).toBe(3)
 
-    const point = result[0]
+    const point = result.data[0]
     expect(typeof point.date).toBe("string")
     expect(typeof point.score).toBe("number")
     expect(typeof point.target).toBe("number")
@@ -269,6 +168,6 @@ describe("getReadinessTrajectory", () => {
     fromImpl = (_table: string) => makeDataStub(snapshots)
 
     const result = await getReadinessTrajectory()
-    expect(result[0].score).toBe(74)
+    expect(result.data[0].score).toBe(74)
   })
 })

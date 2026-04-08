@@ -8,7 +8,10 @@ import {
   CartesianGrid, Tooltip, ReferenceArea, ReferenceLine, Cell,
 } from 'recharts'
 import { ChartCoachingAnnotation } from './ChartCoachingAnnotation'
+import { ChartEmptyState } from '@/components/analytics/ChartEmptyState'
 import { QuadrantOverlay } from './QuadrantOverlay'
+import { useChartColors } from '@/hooks/useChartColors'
+import { CHART_COLORS } from '@/lib/constants/chart-colors'
 import type { DifficultyMasteryPoint } from '@/lib/actions/analytics/chart-data'
 
 interface Props {
@@ -32,10 +35,10 @@ const MASTERY_MID = 50
 const getQuadrantColor = (point: DifficultyMasteryPoint): string => {
   const hard = point.avgDifficulty >= DIFFICULTY_MID
   const mastered = point.masteryPct >= MASTERY_MID
-  if (hard && mastered) return '#2D9F6F'     // Strengths
-  if (!hard && mastered) return '#8896A7'    // Move on
-  if (hard && !mastered) return '#D64545'    // Priority targets
-  return '#D4951A'                           // Quick fixes
+  if (hard && mastered) return CHART_COLORS.success        // Strengths
+  if (!hard && mastered) return CHART_COLORS.mutedForeground // Move on
+  if (hard && !mastered) return CHART_COLORS.destructive   // Priority targets
+  return CHART_COLORS.warning                              // Quick fixes
 }
 
 const CustomDot = ({ cx, cy, payload }: CustomDotProps) => {
@@ -63,13 +66,13 @@ const CustomTooltip = ({ active, payload }: CustomTooltipProps) => {
   return (
     <div
       className="rounded-md bg-card p-2 text-xs"
-      style={{ border: '1px solid #D4DAE3', boxShadow: '0 1px 2px rgba(0,0,0,0.05)' }}
+      style={{ border: `1px solid ${CHART_COLORS.tooltipBorder}`, boxShadow: '0 1px 2px rgba(0,0,0,0.05)' }}
     >
-      <p className="font-bold mb-1" style={{ color: '#1A2332' }}>{d.topicName}</p>
-      <p style={{ color: '#4A5568' }}>
+      <p className="font-bold mb-1" style={{ color: CHART_COLORS.foreground }}>{d.topicName}</p>
+      <p style={{ color: CHART_COLORS.textSecondary }}>
         Difficulty: {(d.avgDifficulty * 100).toFixed(0)}% | Mastery: {d.masteryPct}%
       </p>
-      <p style={{ color: '#8896A7' }}>{d.questionCount} attempts</p>
+      <p style={{ color: CHART_COLORS.mutedForeground }}>{d.questionCount} attempts</p>
     </div>
   )
 }
@@ -107,26 +110,16 @@ const buildCoaching = (data: DifficultyMasteryPoint[]): { text: string; variant:
 }
 
 export const DifficultyMasteryScatter = ({ data }: Props) => {
+  const colors = useChartColors()
   const coaching = buildCoaching(data)
 
   if (data.length === 0) {
     return (
-      <Card className="border-border bg-card p-2 relative h-full">
-        <RichInfoPopover
-          title="Difficulty vs. Mastery"
-          description="Maps each topic by question difficulty and your mastery level. Identifies priority targets and quick wins."
-        />
-        <CardHeader className="p-2 pt-1">
-          <CardTitle className="text-[11px] font-bold tracking-wider uppercase text-muted-foreground">
-            Difficulty vs. Mastery
-          </CardTitle>
-        </CardHeader>
-        <CardContent className="flex-1 flex flex-col items-center justify-center text-center px-6 gap-2 min-h-[200px]">
-          <p className="text-sm font-medium text-muted-foreground">
-            Complete quizzes across topics to map your difficulty-mastery profile.
-          </p>
-        </CardContent>
-      </Card>
+      <ChartEmptyState
+        title="No mastery data"
+        description="Difficulty vs mastery analysis appears after multiple sessions."
+        height="h-[340px]"
+      />
     )
   }
 
@@ -153,18 +146,19 @@ export const DifficultyMasteryScatter = ({ data }: Props) => {
               bottomRight: 'Priority targets',
             }}
             colors={{
-              topLeft: '#8896A7',
-              topRight: '#2D9F6F',
-              bottomLeft: '#D4951A',
-              bottomRight: '#D64545',
+              topLeft: colors.mutedForeground,
+              topRight: colors.success,
+              bottomLeft: colors.warning,
+              bottomRight: colors.destructive,
             }}
             className="[&_span]:text-[10px]"
           />
 
           <div className="h-[280px]">
+            <div role="img" aria-label="Difficulty versus mastery scatter plot showing topics by question difficulty and mastery level">
             <ResponsiveContainer width="100%" height="100%">
               <ScatterChart margin={{ top: 20, right: 20, left: 0, bottom: 30 }}>
-                <CartesianGrid strokeDasharray="3 3" stroke="#D4DAE3" />
+                <CartesianGrid strokeDasharray="3 3" stroke={colors.gridStroke} />
                 <XAxis
                   type="number"
                   dataKey="avgDifficulty"
@@ -172,8 +166,8 @@ export const DifficultyMasteryScatter = ({ data }: Props) => {
                   tickFormatter={v => `${Math.round(v * 100)}%`}
                   axisLine={false}
                   tickLine={false}
-                  tick={{ fill: '#4A5568', fontSize: 11 }}
-                  label={{ value: 'Avg Question Difficulty', position: 'insideBottom', offset: -18, fontSize: 11, fill: '#4A5568' }}
+                  tick={{ fill: colors.axisTickFill, fontSize: 11 }}
+                  label={{ value: 'Avg Question Difficulty', position: 'insideBottom', offset: -18, fontSize: 11, fill: colors.axisTickFill }}
                 />
                 <YAxis
                   type="number"
@@ -182,20 +176,20 @@ export const DifficultyMasteryScatter = ({ data }: Props) => {
                   tickFormatter={v => `${v}%`}
                   axisLine={false}
                   tickLine={false}
-                  tick={{ fill: '#4A5568', fontSize: 11 }}
+                  tick={{ fill: colors.axisTickFill, fontSize: 11 }}
                   width={36}
                 />
                 <Tooltip content={<CustomTooltip />} />
 
                 {/* Quadrant backgrounds */}
-                <ReferenceArea x1={DIFFICULTY_MID} x2={maxDifficulty} y1={MASTERY_MID} y2={100} fill="#2D9F6F" fillOpacity={0.04} />
-                <ReferenceArea x1={0} x2={DIFFICULTY_MID} y1={MASTERY_MID} y2={100} fill="#E5E7EB" fillOpacity={0.15} />
-                <ReferenceArea x1={DIFFICULTY_MID} x2={maxDifficulty} y1={0} y2={MASTERY_MID} fill="#D64545" fillOpacity={0.04} />
-                <ReferenceArea x1={0} x2={DIFFICULTY_MID} y1={0} y2={MASTERY_MID} fill="#D4951A" fillOpacity={0.04} />
+                <ReferenceArea x1={DIFFICULTY_MID} x2={maxDifficulty} y1={MASTERY_MID} y2={100} fill={colors.success} fillOpacity={0.04} />
+                <ReferenceArea x1={0} x2={DIFFICULTY_MID} y1={MASTERY_MID} y2={100} fill={colors.border} fillOpacity={0.15} />
+                <ReferenceArea x1={DIFFICULTY_MID} x2={maxDifficulty} y1={0} y2={MASTERY_MID} fill={colors.destructive} fillOpacity={0.04} />
+                <ReferenceArea x1={0} x2={DIFFICULTY_MID} y1={0} y2={MASTERY_MID} fill={colors.warning} fillOpacity={0.04} />
 
                 {/* Reference lines */}
-                <ReferenceLine x={DIFFICULTY_MID} stroke="#D4DAE3" strokeDasharray="4 4" strokeWidth={1} />
-                <ReferenceLine y={MASTERY_MID} stroke="#D4DAE3" strokeDasharray="4 4" strokeWidth={1} />
+                <ReferenceLine x={DIFFICULTY_MID} stroke={colors.border} strokeDasharray="4 4" strokeWidth={1} />
+                <ReferenceLine y={MASTERY_MID} stroke={colors.border} strokeDasharray="4 4" strokeWidth={1} />
 
                 <Scatter data={data} shape={<CustomDot />}>
                   {data.map((entry, i) => (
@@ -204,6 +198,7 @@ export const DifficultyMasteryScatter = ({ data }: Props) => {
                 </Scatter>
               </ScatterChart>
             </ResponsiveContainer>
+            </div>
           </div>
         </div>
         {coaching && <ChartCoachingAnnotation text={coaching.text} variant={coaching.variant} />}

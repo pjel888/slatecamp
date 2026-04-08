@@ -6,6 +6,7 @@ const ExamCountdown = dynamic(
 )
 
 export const ExamCountdownSection = async () => {
-  const data = await getExamCountdownData()
-  return <ExamCountdown data={data} />
+  const result = await getExamCountdownData()
+  if (result.error) throw new Error(result.error)
+  return <ExamCountdown data={result.data} />
 }

@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import SharedPageLayout from '@/components/layouts/SharedPageLayout'
+import { ROUTES } from '@/lib/routes'
 import {
   getTrailBySlug,
   getTrailDays,
@@ -56,7 +57,7 @@ const TrailDetailPage = async ({
     <SharedPageLayout>
       <div className="w-full max-w-3xl mx-auto flex flex-col gap-6">
         <Link
-          href="/dashboard/camptrails"
+          href={ROUTES.dashboard.camptrails}
           className="flex items-center gap-1.5 text-sm text-text-secondary hover:text-text-primary transition-colors duration-150 w-fit"
         >
           <ArrowLeft size={14} />

@@ -3,6 +3,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { RichInfoPopover } from '@/components/dashboard/RichInfoPopover'
 import { ChartCoachingAnnotation } from './ChartCoachingAnnotation'
+import { ChartEmptyState } from '@/components/analytics/ChartEmptyState'
 import type { StaminaHeatmapData } from '@/lib/actions/analytics/chart-data'
 
 interface Props {
@@ -51,11 +52,11 @@ export const StaminaHeatmap = ({ data }: Props) => {
       </CardHeader>
       <CardContent className="p-2 pt-0">
         {data.rows.length === 0 ? (
-          <div className="h-[200px] flex items-center justify-center">
-            <p className="text-xs text-center leading-snug max-w-[200px] text-muted-foreground">
-              Complete sessions to see your stamina patterns across question positions.
-            </p>
-          </div>
+          <ChartEmptyState
+            title="No session data"
+            description="Complete a few drill sessions to see your stamina heatmap."
+            height="h-[340px]"
+          />
         ) : (
           <>
             <div className="overflow-x-auto">
@@ -98,22 +99,36 @@ export const StaminaHeatmap = ({ data }: Props) => {
                       {row.date}
                     </text>
                     {/* Cells */}
-                    {row.cells.map((cell, colIdx) => (
-                      <rect
-                        key={colIdx}
-                        x={72 + colIdx * (CELL_SIZE + CELL_GAP)}
-                        y={0}
-                        width={CELL_SIZE}
-                        height={CELL_SIZE}
-                        rx={2}
-                        fill={CELL_COLORS[cell.result]}
-                        opacity={cell.result === 'skipped' ? 0.5 : 0.85}
-                      >
-                        <title>
-                          Q{colIdx + 1}: {cell.result}
-                        </title>
-                      </rect>
-                    ))}
+                    {row.cells.map((cell, colIdx) => {
+                      const cellX = 72 + colIdx * (CELL_SIZE + CELL_GAP)
+                      const symbol = cell.result === 'correct' ? '✓' : cell.result === 'incorrect' ? '✗' : '–'
+                      const symbolColor = cell.result === 'skipped' ? '#6B7280' : '#FFFFFF'
+                      return (
+                        <g key={colIdx}>
+                          <rect
+                            x={cellX}
+                            y={0}
+                            width={CELL_SIZE}
+                            height={CELL_SIZE}
+                            rx={2}
+                            fill={CELL_COLORS[cell.result]}
+                            opacity={cell.result === 'skipped' ? 0.5 : 0.85}
+                          >
+                            <title>Q{colIdx + 1}: {cell.result}</title>
+                          </rect>
+                          <text
+                            x={cellX + CELL_SIZE / 2}
+                            y={CELL_SIZE / 2 + 3}
+                            textAnchor="middle"
+                            fontSize={8}
+                            fill={symbolColor}
+                            style={{ userSelect: 'none', pointerEvents: 'none' }}
+                          >
+                            {symbol}
+                          </text>
+                        </g>
+                      )
+                    })}
                     {/* Fatigue line */}
                     {data.fatiguePoint && (
                       <line

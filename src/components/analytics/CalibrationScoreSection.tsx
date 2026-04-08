@@ -1,7 +1,12 @@
+import dynamic from 'next/dynamic'
 import { getCalibrationCurveData } from '@/lib/actions/analytics/get-calibration-data'
-import { CalibrationScoreCard } from './CalibrationScoreCard'
+
+const CalibrationScoreCard = dynamic(
+  () => import('@/components/analytics/CalibrationScoreCard').then(m => m.CalibrationScoreCard),
+)
 
 export const CalibrationScoreSection = async () => {
-  const data = await getCalibrationCurveData()
-  return <CalibrationScoreCard data={data} />
+  const result = await getCalibrationCurveData()
+  if (result.error) throw new Error(result.error)
+  return <CalibrationScoreCard data={result.data} />
 }

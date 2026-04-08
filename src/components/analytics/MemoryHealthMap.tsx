@@ -1,6 +1,7 @@
 'use client'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { RichInfoPopover } from '@/components/dashboard/RichInfoPopover'
+import { ChartEmptyState } from '@/components/analytics/ChartEmptyState'
 import { cn } from '@/lib/utils'
 import type { MemoryHealthItem } from '@/lib/actions/analytics'
 
@@ -30,7 +31,11 @@ export function MemoryHealthMap({ data }: Props) {
       </CardHeader>
       <CardContent className="p-2 pt-0">
         {sorted.length === 0 ? (
-          <p className="text-xs text-muted-foreground leading-snug">Start quizzing to track which topics need review.</p>
+          <ChartEmptyState
+            title="No memory data"
+            description="Memory health analysis needs multiple study sessions."
+            height="h-[320px]"
+          />
         ) : (
           <>
             <div className="flex flex-wrap gap-1">

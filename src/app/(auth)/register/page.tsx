@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { RegisterForm } from './register-form'
 import { siteConfig } from '@/lib/constants/site'
+import { ROUTES } from '@/lib/routes'
 
 export const metadata = { title: 'Create Account' }
 
@@ -10,7 +11,7 @@ export default function RegisterPage() {
       <div className='w-full max-w-[380px] space-y-8'>
         <div className='text-center'>
           <Link
-            href='/'
+            href={ROUTES.home}
             className='text-lg font-semibold text-foreground transition-colors duration-150 hover:opacity-80'
           >
             {siteConfig.name}
@@ -31,7 +32,7 @@ export default function RegisterPage() {
         <p className='text-center text-sm text-muted-foreground'>
           Already have an account?{' '}
           <Link
-            href='/login'
+            href={ROUTES.auth.login}
             className='font-medium text-foreground underline underline-offset-4 transition-colors duration-150 hover:text-primary'
           >
             Log in

@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import { ROUTES } from '@/lib/routes'
 
 interface PasserFlowProps {
   firstName: string | null
@@ -90,7 +91,7 @@ const PasserFlow = ({ firstName }: PasserFlowProps) => {
         </p>
 
         <Link
-          href="/dashboard/campfire"
+          href={ROUTES.dashboard.campfire}
           className="flex items-center justify-between rounded-sm border border-border px-4 py-3 text-sm font-medium text-foreground transition-colors duration-150 ease-out hover:border-primary hover:bg-primary-50"
         >
           <span>Your story is someone&apos;s map — Share in Campfire</span>
@@ -107,7 +108,7 @@ const PasserFlow = ({ firstName }: PasserFlowProps) => {
         </Link>
 
         <Link
-          href="/dashboard"
+          href={ROUTES.dashboard.root}
           className="flex items-center justify-between rounded-sm border border-border px-4 py-3 text-sm font-medium text-foreground transition-colors duration-150 ease-out hover:border-primary hover:bg-primary-50"
         >
           <span>Go to your dashboard</span>

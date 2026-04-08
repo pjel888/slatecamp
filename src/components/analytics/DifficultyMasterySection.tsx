@@ -6,6 +6,7 @@ const DifficultyMasteryScatter = dynamic(
 )
 
 export const DifficultyMasterySection = async () => {
-  const data = await getDifficultyMasteryData()
-  return <DifficultyMasteryScatter data={data} />
+  const result = await getDifficultyMasteryData()
+  if (result.error) throw new Error(result.error)
+  return <DifficultyMasteryScatter data={result.data} />
 }

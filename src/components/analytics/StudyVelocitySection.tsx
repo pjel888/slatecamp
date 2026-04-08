@@ -6,6 +6,7 @@ const StudyVelocity = dynamic(
 )
 
 export const StudyVelocitySection = async () => {
-  const data = await getStudyVelocityData()
-  return <StudyVelocity data={data} />
+  const result = await getStudyVelocityData()
+  if (result.error) throw new Error(result.error)
+  return <StudyVelocity data={result.data} />
 }

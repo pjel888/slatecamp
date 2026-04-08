@@ -11,6 +11,7 @@ import {
 import { EmptyState } from '@/components/shared/empty-state'
 import { getScoreColorHex } from '@/components/shared/score-display'
 import type { SubjectMastery } from '@/types/dashboard'
+import { ROUTES } from '@/lib/routes'
 
 interface SubjectMasteryCardProps {
   data: SubjectMastery[]
@@ -316,7 +317,7 @@ export const SubjectMasteryCard = ({ data }: SubjectMasteryCardProps) => {
             description="Complete a quiz session to see how your skills map across subjects."
             action={
               <Link
-                href="/dashboard/drills"
+                href={ROUTES.dashboard.drills}
                 className="inline-flex h-8 items-center justify-center rounded-sm bg-primary px-4 text-xs font-medium text-primary-foreground transition-colors hover:bg-primary/90"
               >
                 Start a quiz
@@ -385,7 +386,7 @@ export const SubjectMasteryCard = ({ data }: SubjectMasteryCardProps) => {
               : 'Bars fill as you answer questions'}
           </p>
           <Link
-            href='/dashboard/analytics'
+            href={ROUTES.dashboard.analytics}
             className='text-[11px] font-medium underline underline-offset-2 shrink-0 ml-2 text-primary'
           >
             Analytics &rarr;

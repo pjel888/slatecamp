@@ -7,6 +7,7 @@ import { getScoreColorHex } from '@/components/shared/score-display'
 import { ZoneContextCard } from '@/components/score/ZoneContextCard'
 import type { ScoreZone } from '@/components/score/ZoneContextCard'
 import type { AssessmentSubjectScore, TrailRecommendation } from '@/types/app'
+import { ROUTES } from '@/lib/routes'
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -62,8 +63,8 @@ const ScoreReveal = ({
   }, [])
 
   const trailHref = recommendation
-    ? `/dashboard/camptrails/${recommendation.trail.slug}`
-    : '/dashboard/camptrails'
+    ? `${ROUTES.dashboard.camptrails}/${recommendation.trail.slug}`
+    : ROUTES.dashboard.camptrails
 
   return (
     <div
@@ -145,7 +146,7 @@ const ScoreReveal = ({
             style={{ opacity: showSecondary ? 1 : 0 }}
           >
             <Link
-              href="/dashboard/upgrade"
+              href={ROUTES.dashboard.upgrade}
               className="inline-flex items-center gap-1.5 text-sm text-text-secondary transition-colors duration-150 ease-out hover:text-camp-cobalt"
             >
               View Full Map

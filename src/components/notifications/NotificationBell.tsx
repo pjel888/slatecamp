@@ -13,6 +13,7 @@ import { SCIcon } from '@/components/graphics/icons/Icon'
 import Link from 'next/link'
 import { createClient } from '@/lib/supabase/client'
 import type { Notification } from '@/types/notifications'
+import { ROUTES } from '@/lib/routes'
 
 interface NotificationBellProps {
   userId?: string

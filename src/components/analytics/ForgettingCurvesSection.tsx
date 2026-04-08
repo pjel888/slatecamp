@@ -6,6 +6,7 @@ const ForgettingCurves = dynamic(
 )
 
 export const ForgettingCurvesSection = async () => {
-  const data = await getForgettingCurveData()
-  return <ForgettingCurves data={data} />
+  const result = await getForgettingCurveData()
+  if (result.error) throw new Error(result.error)
+  return <ForgettingCurves data={result.data} />
 }

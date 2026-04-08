@@ -9,6 +9,7 @@ import {
 import { generateRecommendations } from '@/lib/actions/quiz-v2/generate-recommendations'
 import { runPostSessionHooks } from '@/lib/actions/quiz-v2/post-session-hooks'
 import { revalidateDashboardCacheTags } from '@/lib/actions/cache-tags'
+import { writeUserTheta } from '@/lib/actions/analytics/write-theta'
 import { endSessionInputSchema } from './schemas'
 import {
   getOwnedSessionOrThrow,
@@ -413,6 +414,12 @@ export const endSession = async (
         }
       })()
     }
+
+    // Fire-and-forget theta write — never blocks results
+    if (shouldRunCompletionHooks(finalStatus)) {
+      void writeUserTheta(user.id, parsedInput.sessionId)
+    }
+
     const sessionDiscovery = {
       ...(session.session_discovery ?? {}),
       _finalization: {

@@ -1,6 +1,8 @@
 'use server'
 
+import { unstable_cache } from 'next/cache'
 import { createClient, getUser } from '@/lib/supabase/server'
+import { wrapResult, wrapError, type AnalyticsResult } from '@/lib/actions/analytics/shared-helpers'
 
 export interface SubjectMastery {
   subject: string
@@ -8,20 +10,18 @@ export interface SubjectMastery {
   fullMark: number
 }
 
-export async function getSubjectMasteryData(): Promise<SubjectMastery[]> {
+const getSubjectMasteryDataInternal = async (userId: string): Promise<AnalyticsResult<SubjectMastery[]>> => {
   try {
     const supabase = await createClient()
-    const { data: { user } } = await getUser()
-    if (!user) return []
 
     // 1. Get current discipline
     const { data: stats } = await supabase
       .from('user_global_stats')
       .select('current_discipline_id')
-      .eq('user_id', user.id)
+      .eq('user_id', userId)
       .maybeSingle()
 
-    if (!stats?.current_discipline_id) return []
+    if (!stats?.current_discipline_id) return wrapResult([])
 
     // 2. Fetch all taxonomy nodes for this discipline to build the tree map
     // Exclude LEA-LAWS (cross-ref only) and deprecated v1 nodes
@@ -33,13 +33,13 @@ export async function getSubjectMasteryData(): Promise<SubjectMastery[]> {
       .is('deprecated_at', null)
       .not('lea_id', 'is', null)
 
-    if (!taxonomyNodes) return []
+    if (!taxonomyNodes) return wrapResult([])
 
     // 3. Fetch user mastery
     const { data: userMastery } = await supabase
       .from('user_node_mastery')
       .select('topic_id, current_mastery_weight')
-      .eq('user_id', user.id)
+      .eq('user_id', userId)
 
     const masteryMap = new Map<string, number>()
     userMastery?.forEach(m => masteryMap.set(m.topic_id, m.current_mastery_weight))
@@ -84,9 +84,19 @@ export async function getSubjectMasteryData(): Promise<SubjectMastery[]> {
       }
     })
 
-    return subjectScores
+    return wrapResult(subjectScores)
   } catch (err) {
     console.error('[MASTERY: getSubjectMasteryData]', err)
-    return []
+    return wrapError('Failed to load subject mastery data', [])
   }
+}
+
+export const getSubjectMasteryData = async (): Promise<AnalyticsResult<SubjectMastery[]>> => {
+  const { data: { user } } = await getUser()
+  if (!user) return wrapResult([])
+  return unstable_cache(
+    () => getSubjectMasteryDataInternal(user.id),
+    [`subject-mastery-${user.id}`],
+    { revalidate: 300 },
+  )()
 }

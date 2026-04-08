@@ -31,6 +31,7 @@ import { useCHBStore } from '@/app/calculators/_stores/chbStore'
 import { FloatingCameraBar, getCalcCameraPresets, type CalcCameraPreset } from '@/components/calculators/FloatingCameraBar'
 import type { CalculatorConfig } from '../_types/templates'
 import Link from 'next/link'
+import { ROUTES } from '@/lib/routes'
 
 // ─── Shared Types ─────────────────────────────────────────────────────────────
 
@@ -188,7 +189,7 @@ function CalculatorLayout({
                   This calculation is tested in the LEA (Building Technology).
                 </p>
                 <Link
-                  href="/pricing"
+                  href={ROUTES.pricing}
                   className="mt-1 inline-block font-sans text-xs text-primary hover:underline"
                 >
                   Master it with SlateCamp &rarr;

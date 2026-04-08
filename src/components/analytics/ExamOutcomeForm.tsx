@@ -2,6 +2,8 @@
 
 import { useState, useTransition } from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Input } from '@/components/ui/input'
+import { Button } from '@/components/ui/button'
 import { reportExamOutcome } from '@/lib/actions/progress-report/actions'
 
 interface Props {
@@ -17,10 +19,25 @@ export const ExamOutcomeForm = ({ targetExamDate }: Props) => {
   const [result, setResult] = useState<'pass' | 'fail'>('pass')
   const [score, setScore] = useState('')
 
-  // Only show if user has an exam date that has passed
+  // Show informational message if exam date is in the future
   if (targetExamDate) {
     const examDateObj = new Date(targetExamDate)
-    if (examDateObj.getTime() > Date.now()) return null
+    if (examDateObj.getTime() > Date.now()) {
+      const formatDate = (d: Date) =>
+        d.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })
+      return (
+        <Card className="h-[280px] border-border/50">
+          <CardContent className="flex flex-col items-center justify-center h-full gap-2 p-4 text-center">
+            <p className="text-sm font-medium text-foreground">
+              Your exam is on {formatDate(examDateObj)}.
+            </p>
+            <p className="text-xs text-muted-foreground">
+              After the exam, you can report your result here.
+            </p>
+          </CardContent>
+        </Card>
+      )
+    }
   }
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -83,13 +100,13 @@ export const ExamOutcomeForm = ({ targetExamDate }: Props) => {
             <label htmlFor="exam-date" className="block text-[11px] font-semibold text-text-secondary mb-1">
               Exam Date
             </label>
-            <input
+            <Input
               id="exam-date"
               type="date"
               value={examDate}
               onChange={(e) => setExamDate(e.target.value)}
               max={new Date().toISOString().split('T')[0]}
-              className="w-full rounded-sm border border-border bg-card px-3 py-1.5 text-sm text-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+              className="rounded-sm text-sm"
             />
           </div>
 
@@ -99,28 +116,26 @@ export const ExamOutcomeForm = ({ targetExamDate }: Props) => {
               Result
             </label>
             <div className="flex gap-2">
-              <button
+              <Button
                 type="button"
+                variant="outline"
                 onClick={() => setResult('pass')}
-                className={`flex-1 rounded-sm px-3 py-1.5 text-sm font-semibold transition-colors duration-150 ${
-                  result === 'pass'
-                    ? 'bg-success text-white'
-                    : 'border border-border bg-card text-text-secondary hover:bg-surface-light'
+                className={`flex-1 rounded-sm text-sm font-semibold transition-colors duration-150 ${
+                  result === 'pass' ? 'bg-success text-white border-success hover:bg-success hover:text-white' : ''
                 }`}
               >
                 Passed
-              </button>
-              <button
+              </Button>
+              <Button
                 type="button"
+                variant="outline"
                 onClick={() => setResult('fail')}
-                className={`flex-1 rounded-sm px-3 py-1.5 text-sm font-semibold transition-colors duration-150 ${
-                  result === 'fail'
-                    ? 'bg-destructive text-white'
-                    : 'border border-border bg-card text-text-secondary hover:bg-surface-light'
+                className={`flex-1 rounded-sm text-sm font-semibold transition-colors duration-150 ${
+                  result === 'fail' ? 'bg-destructive text-white border-destructive hover:bg-destructive hover:text-white' : ''
                 }`}
               >
                 Not Yet
-              </button>
+              </Button>
             </div>
           </div>
 
@@ -129,7 +144,7 @@ export const ExamOutcomeForm = ({ targetExamDate }: Props) => {
             <label htmlFor="exam-score" className="block text-[11px] font-semibold text-text-secondary mb-1">
               Score (optional)
             </label>
-            <input
+            <Input
               id="exam-score"
               type="number"
               min="0"
@@ -138,7 +153,7 @@ export const ExamOutcomeForm = ({ targetExamDate }: Props) => {
               value={score}
               onChange={(e) => setScore(e.target.value)}
               placeholder="e.g. 78.5"
-              className="w-full rounded-sm border border-border bg-card px-3 py-1.5 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+              className="rounded-sm text-sm"
             />
           </div>
 
@@ -148,13 +163,13 @@ export const ExamOutcomeForm = ({ targetExamDate }: Props) => {
             </p>
           )}
 
-          <button
+          <Button
             type="submit"
             disabled={isPending}
-            className="rounded-sm bg-primary px-4 py-2 text-sm font-semibold text-white transition-colors duration-150 hover:bg-primary-700 disabled:opacity-50 disabled:cursor-not-allowed"
+            className="rounded-sm text-sm font-semibold"
           >
             {isPending ? 'Submitting...' : 'Submit Outcome'}
-          </button>
+          </Button>
         </form>
       </CardContent>
     </Card>

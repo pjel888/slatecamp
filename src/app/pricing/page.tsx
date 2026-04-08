@@ -4,6 +4,7 @@ import { FaqSection } from "@/components/marketing/FaqSection";
 import { FinalCtaSection } from "@/components/marketing/FinalCtaSection";
 import { PricingContent } from "./pricing-content";
 import { siteConfig } from "@/lib/constants/site";
+import { ROUTES } from "@/lib/routes";
 
 export const metadata = { title: `Pricing — ${siteConfig.name}` };
 
@@ -19,7 +20,7 @@ const PRICING_FAQS = [
 export default function PricingPage() {
   return (
     <div className="min-h-screen bg-muted">
-      <MarketingNav activeRoute="/pricing" />
+      <MarketingNav activeRoute={ROUTES.pricing} />
       <main>
         <div className="px-6 pt-32 pb-24 sm:pt-40">
           <PricingContent />
@@ -31,7 +32,7 @@ export default function PricingPage() {
           className="mx-auto max-w-[1200px] px-6 pb-20"
         />
         <FinalCtaSection
-          ctaHref="/try"
+          ctaHref={ROUTES.try}
           ctaLabel="Get Your Free Readiness Score"
           isLoggedIn={false}
         />

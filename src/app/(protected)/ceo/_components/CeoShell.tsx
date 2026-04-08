@@ -9,6 +9,7 @@ import {
   Package,
   Buildings,
   GearSix,
+  ChartBar,
 } from '@phosphor-icons/react/dist/ssr'
 import { PortalLayout } from '@/components/portal'
 import { PORTALS } from '@/config/portals'
@@ -29,6 +30,7 @@ const ceoNavItems: NavGroup[] = [
       { href: '/ceo/users', label: 'Users', icon: <Users className="w-3.5 h-3.5" /> },
       { href: '/ceo/outcomes', label: 'Outcomes', icon: <Crosshair className="w-3.5 h-3.5" /> },
       { href: '/ceo/content', label: 'Content', icon: <Package className="w-3.5 h-3.5" /> },
+      { href: '/ceo/analytics', label: 'Analytics', icon: <ChartBar className="w-3.5 h-3.5" /> },
     ],
   },
   {

@@ -4,6 +4,7 @@ import { unstable_cache } from 'next/cache'
 import { createClient, getUser, createServiceClient } from '@/lib/supabase/server'
 import { generateProgressReport, type ProgressReport } from './generate'
 import { getDashboardCacheTags } from '../cache-tags'
+import { wrapResult, wrapError, type AnalyticsResult } from '@/lib/actions/analytics/shared-helpers'
 
 // ── Types ────────────────────────────────────────────────────────────────────
 
@@ -23,42 +24,56 @@ export interface ExamOutcomeInput {
 
 // ── Monthly Report ───────────────────────────────────────────────────────────
 
-export const getMonthlyReport = async (): Promise<ProgressReport | null> => {
-  const { data: { user } } = await getUser()
-  if (!user) return null
+export const getMonthlyReport = async (): Promise<AnalyticsResult<ProgressReport | null>> => {
+  try {
+    const { data: { user } } = await getUser()
+    if (!user) return wrapResult(null)
 
-  const now = new Date()
-  const start = new Date(now.getFullYear(), now.getMonth(), 1)
-  const end = new Date(now.getFullYear(), now.getMonth() + 1, 0, 23, 59, 59)
+    const now = new Date()
+    const start = new Date(now.getFullYear(), now.getMonth(), 1)
+    const end = new Date(now.getFullYear(), now.getMonth() + 1, 0, 23, 59, 59)
 
-  return unstable_cache(
-    async () => generateProgressReport(
-      user.id,
-      start.toISOString(),
-      end.toISOString(),
-    ),
-    [`monthly-report-${user.id}-${start.toISOString()}`],
-    {
-      revalidate: 3600,
-      tags: getDashboardCacheTags(user.id),
-    }
-  )()
+    const report = await unstable_cache(
+      async () => generateProgressReport(
+        user.id,
+        start.toISOString(),
+        end.toISOString(),
+      ),
+      [`monthly-report-${user.id}-${start.toISOString()}`],
+      {
+        revalidate: 3600,
+        tags: getDashboardCacheTags(user.id),
+      }
+    )()
+
+    return wrapResult(report)
+  } catch (err) {
+    console.error('[PROGRESS] getMonthlyReport failed:', err)
+    return wrapError('Failed to load monthly report', null)
+  }
 }
 
 // ── Simulation Trajectory ────────────────────────────────────────────────────
 
-export const getSimulationTrajectory = async (): Promise<SimulationPoint[]> => {
-  const { data: { user } } = await getUser()
-  if (!user) return []
+export const getSimulationTrajectory = async (): Promise<AnalyticsResult<SimulationPoint[]>> => {
+  try {
+    const { data: { user } } = await getUser()
+    if (!user) return wrapResult([])
 
-  return unstable_cache(
-    async () => fetchSimulationTrajectory(user.id),
-    [`simulation-trajectory-${user.id}`],
-    {
-      revalidate: 3600,
-      tags: getDashboardCacheTags(user.id),
-    }
-  )()
+    const data = await unstable_cache(
+      async () => fetchSimulationTrajectory(user.id),
+      [`simulation-trajectory-${user.id}`],
+      {
+        revalidate: 3600,
+        tags: getDashboardCacheTags(user.id),
+      }
+    )()
+
+    return wrapResult(data)
+  } catch (err) {
+    console.error('[PROGRESS] getSimulationTrajectory failed:', err)
+    return wrapError('Failed to load simulation trajectory', [])
+  }
 }
 
 const fetchSimulationTrajectory = async (userId: string): Promise<SimulationPoint[]> => {

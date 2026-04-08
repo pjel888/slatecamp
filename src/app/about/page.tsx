@@ -8,6 +8,7 @@ import {
 import { MarketingNav } from "@/components/marketing/MarketingNav";
 import { MarketingFooter } from "@/components/marketing/MarketingFooter";
 import { siteConfig } from "@/lib/constants/site";
+import { ROUTES } from "@/lib/routes";
 
 export const metadata = { title: `About — ${siteConfig.name}` };
 
@@ -32,7 +33,7 @@ const TECH_PILLARS = [
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-muted">
-      <MarketingNav activeRoute="/about" />
+      <MarketingNav activeRoute={ROUTES.about} />
 
       <main>
         {/* ── Hero ── */}
@@ -142,7 +143,7 @@ export default function AboutPage() {
               Score across every LEA taxonomy in under 20 minutes.
             </p>
             <Link
-              href="/try"
+              href={ROUTES.try}
               className="mt-8 inline-flex items-center gap-2 rounded-sm bg-card px-6 py-3 text-[14px] font-medium text-primary transition-colors duration-150 hover:bg-card/90"
             >
               Start your diagnostic

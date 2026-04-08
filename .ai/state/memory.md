@@ -52,6 +52,10 @@
 - `/ceo` - 4 pages (nested under `(protected)`)
 - `/developer` - 21 pages
 
+### Conventions
+- **Routing:** ALL application routes must use `@/lib/routes.ts` constants. ZERO hardcoded strings in `Link href`, `router.push`, `redirect`, or `revalidatePath`.
+- **Dynamic Routes:** Always use typed helper functions (e.g., `ROUTES.wiki.article(slug)`) instead of inline template literals.
+
 ### Empty / Deprecated Folders
 - `.ai/docs/05-Design/` - empty
 - `.ai/docs/XX-Archive/` - empty

@@ -5,12 +5,33 @@ import { useRouter } from 'next/navigation'
 import { CalendarBlank, Warning, Clock, ArrowRight } from '@phosphor-icons/react'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
-import type {
-  ReviewCalendarData,
-  ReviewCalendarDay,
-  ReviewCalendarTopic,
-  ReviewUrgency,
-} from '@/lib/actions/analytics/get-review-calendar'
+// ── Types (inlined from deleted get-review-calendar.ts) ──────────────────────
+
+export type ReviewUrgency = 'overdue' | 'due_today' | 'upcoming'
+
+export interface ReviewCalendarTopic {
+  topicId: string
+  topicName: string
+  urgency: ReviewUrgency
+  predictedRecall: number
+  optimalReviewAt: string | null
+}
+
+export interface ReviewCalendarDay {
+  date: string
+  label: string
+  topics: ReviewCalendarTopic[]
+}
+
+export interface ReviewCalendarData {
+  days: ReviewCalendarDay[]
+  overdue: ReviewCalendarTopic[]
+  summary: {
+    overdueCount: number
+    dueTodayCount: number
+    upcomingCount: number
+  }
+}
 
 // ── Urgency styling ──────────────────────────────────────────────────────────
 

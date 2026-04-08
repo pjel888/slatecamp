@@ -7,6 +7,9 @@ import {
   CartesianGrid, Tooltip,
 } from 'recharts'
 import { ChartCoachingAnnotation } from './ChartCoachingAnnotation'
+import { ChartEmptyState } from '@/components/analytics/ChartEmptyState'
+import { useChartColors } from '@/hooks/useChartColors'
+import { CHART_COLORS } from '@/lib/constants/chart-colors'
 import type { StudyVelocityData } from '@/lib/actions/analytics/chart-data'
 
 interface Props {
@@ -24,10 +27,10 @@ const CustomTooltip = ({ active, payload, label }: CustomTooltipProps) => {
   return (
     <div
       className="rounded-md bg-card p-2 text-xs"
-      style={{ border: '1px solid #D4DAE3', boxShadow: '0 1px 2px rgba(0,0,0,0.05)' }}
+      style={{ border: `1px solid ${CHART_COLORS.tooltipBorder}`, boxShadow: '0 1px 2px rgba(0,0,0,0.05)' }}
     >
-      <p className="font-bold mb-0.5" style={{ color: '#1A2332' }}>Week of {label}</p>
-      <p style={{ color: '#4A5568' }}>
+      <p className="font-bold mb-0.5" style={{ color: CHART_COLORS.foreground }}>Week of {label}</p>
+      <p style={{ color: CHART_COLORS.textSecondary }}>
         {payload[0]?.value ?? 0} topic{(payload[0]?.value ?? 0) === 1 ? '' : 's'} mastered
       </p>
     </div>
@@ -61,6 +64,7 @@ const buildCoaching = (data: StudyVelocityData): { text: string; variant: 'succe
 }
 
 export const StudyVelocity = ({ data }: Props) => {
+  const colors = useChartColors()
   const coaching = buildCoaching(data)
 
   // Calculate trend line data
@@ -85,7 +89,7 @@ export const StudyVelocity = ({ data }: Props) => {
             Study Velocity
           </CardTitle>
           {data.avgPerWeek > 0 && (
-            <span className="text-[11px] font-bold tabular-nums" style={{ color: '#1B3FC4' }}>
+            <span className="text-[11px] font-bold tabular-nums" style={{ color: colors.primary }}>
               {data.avgPerWeek}/wk avg
             </span>
           )}
@@ -93,33 +97,34 @@ export const StudyVelocity = ({ data }: Props) => {
       </CardHeader>
       <CardContent className="p-2 pt-0">
         {data.weeks.length === 0 || data.weeks.every(w => w.nodesMastered === 0) ? (
-          <div className="h-[200px] flex items-center justify-center">
-            <p className="text-xs text-center leading-snug max-w-[200px] text-muted-foreground">
-              Master topics (reach 70% mastery) to track your study velocity over time.
-            </p>
-          </div>
+          <ChartEmptyState
+            title="No velocity data"
+            description="Study velocity tracks weekly mastery progress."
+            height="h-[320px]"
+          />
         ) : (
           <div className="h-[200px]">
+            <div role="img" aria-label="Study velocity chart showing topics mastered per week with rolling average trend line">
             <ResponsiveContainer width="100%" height="100%">
               <ComposedChart data={trendData} margin={{ top: 5, right: 10, left: -20, bottom: 5 }}>
-                <CartesianGrid stroke="#D4DAE3" strokeDasharray="3 3" />
+                <CartesianGrid stroke={colors.gridStroke} strokeDasharray="3 3" />
                 <XAxis
                   dataKey="weekLabel"
                   axisLine={false}
                   tickLine={false}
-                  tick={{ fill: '#4A5568', fontSize: 10 }}
+                  tick={{ fill: colors.axisTickFill, fontSize: 10 }}
                   interval={1}
                 />
                 <YAxis
                   axisLine={false}
                   tickLine={false}
-                  tick={{ fill: '#4A5568', fontSize: 11 }}
+                  tick={{ fill: colors.axisTickFill, fontSize: 11 }}
                   allowDecimals={false}
                 />
                 <Tooltip content={<CustomTooltip />} />
                 <Bar
                   dataKey="nodesMastered"
-                  fill="#1B3FC4"
+                  fill={colors.primary}
                   fillOpacity={0.75}
                   radius={[3, 3, 0, 0]}
                   barSize={20}
@@ -136,6 +141,7 @@ export const StudyVelocity = ({ data }: Props) => {
                 />
               </ComposedChart>
             </ResponsiveContainer>
+            </div>
           </div>
         )}
         {coaching && <ChartCoachingAnnotation text={coaching.text} variant={coaching.variant} />}

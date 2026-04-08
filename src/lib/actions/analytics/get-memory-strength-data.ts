@@ -8,6 +8,7 @@ import {
   type MemoryQuadrant,
   type ActivityRecommendation,
 } from '@/lib/quiz/memory-strength'
+import { wrapResult, wrapError, type AnalyticsResult } from '@/lib/actions/analytics/shared-helpers'
 
 // ── Types ────────────────────────────────────────────────────────────────────
 
@@ -36,13 +37,14 @@ export interface MemoryStrengthOverview {
  * Returns all topics with SS/RS values, quadrant classification,
  * and activity recommendations.
  */
-export const getMemoryStrengthOverview = async (
+export const getMemoryStrengthData = async (
   userId?: string,
-): Promise<MemoryStrengthOverview | null> => {
+): Promise<AnalyticsResult<MemoryStrengthOverview | null>> => {
+  try {
   const supabase = await createClient()
 
   const effectiveUserId = userId ?? (await getUser()).data.user?.id
-  if (!effectiveUserId) return null
+  if (!effectiveUserId) return wrapResult(null)
 
   // Fetch all mastery rows that have any practice (storage_strength > 0 OR total_attempts > 0)
   const { data: rows, error } = await supabase
@@ -54,7 +56,7 @@ export const getMemoryStrengthOverview = async (
     .gt('total_attempts', 0)
     .order('last_encountered', { ascending: false })
 
-  if (error || !rows) return null
+  if (error || !rows) return wrapResult(null)
 
   const now = Date.now()
 
@@ -108,11 +110,18 @@ export const getMemoryStrengthOverview = async (
     }
   }
 
-  return {
+  return wrapResult({
     topics,
     mastered,
     rusty,
     needsLearning,
     surfaceLearning,
+  })
+  } catch (err) {
+    console.error('[ANALYTICS] getMemoryStrengthData failed:', err)
+    return wrapError('Failed to load memory strength data', null)
   }
 }
+
+/** @deprecated Use getMemoryStrengthData */
+export const getMemoryStrengthOverview = getMemoryStrengthData

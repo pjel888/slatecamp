@@ -9,7 +9,9 @@ import {
   CartesianGrid, Tooltip, ReferenceLine,
 } from 'recharts'
 import { cn } from '@/lib/utils'
+import { useChartColors } from '@/hooks/useChartColors'
 import { getScoreColor } from '@/components/shared/score-display'
+import { ChartEmptyState } from '@/components/analytics/ChartEmptyState'
 import type { ReadinessTrajectoryPoint } from '@/lib/actions/analytics'
 
 interface Props {
@@ -19,6 +21,7 @@ interface Props {
 }
 
 export function ReadinessTrajectory({ data, currentScore, previousScore }: Props) {
+  const colors = useChartColors()
   const clamped = Math.max(0, Math.min(100, Math.round(currentScore)))
   const trend = !previousScore || currentScore === previousScore ? 'flat'
     : currentScore > previousScore ? 'up' : 'down'
@@ -63,25 +66,27 @@ export function ReadinessTrajectory({ data, currentScore, previousScore }: Props
       </CardHeader>
       <CardContent className="p-2 pt-0">
         {data.length < 2 ? (
-          <div className="h-[120px] flex items-center justify-center">
-            <p className="text-xs text-center leading-snug max-w-[200px] text-muted-foreground">
-              Complete more quizzes to see your readiness trajectory here.
-            </p>
-          </div>
+          <ChartEmptyState
+            title="No readiness data yet"
+            description="Complete a few quizzes to see your readiness trajectory."
+            height="h-[220px]"
+          />
         ) : (
           <div className="h-[120px]">
+            <div role="img" aria-label="Readiness score trajectory chart showing progress over time">
             <ResponsiveContainer width="100%" height="100%">
               <ComposedChart data={data} margin={{ top: 5, right: 5, left: -25, bottom: 0 }}>
-                <CartesianGrid stroke="#D4DAE3" strokeDasharray="3 3" />
-                <XAxis dataKey="date" axisLine={false} tickLine={false} tick={{ fill: '#4A5568', fontSize: 11 }} />
+                <CartesianGrid stroke={colors.gridStroke} strokeDasharray="3 3" />
+                <XAxis dataKey="date" axisLine={false} tickLine={false} tick={{ fill: colors.axisTickFill, fontSize: 11 }} />
                 <YAxis hide domain={[0, 100]} />
-                <Tooltip contentStyle={{ borderRadius: '8px', border: '1px solid #D4DAE3', boxShadow: '0 1px 2px rgba(0,0,0,0.05)', fontSize: '12px' }} />
-                <ReferenceLine y={75} stroke="#2D9F6F" strokeDasharray="4 4" strokeWidth={1} />
-                <Area name="Readiness" type="monotone" dataKey="score" stroke="#1B3FC4" strokeWidth={1.5}
-                  fillOpacity={0.08} fill="#1B3FC4"
-                  dot={{ r: 2, fill: '#1B3FC4', stroke: '#fff', strokeWidth: 1 }} />
+                <Tooltip contentStyle={{ borderRadius: '8px', border: `1px solid ${colors.tooltipBorder}`, boxShadow: '0 1px 2px rgba(0,0,0,0.05)', fontSize: '12px' }} />
+                <ReferenceLine y={75} stroke={colors.referenceLine} strokeDasharray="4 4" strokeWidth={1} />
+                <Area name="Readiness" type="monotone" dataKey="score" stroke={colors.primary} strokeWidth={1.5}
+                  fillOpacity={0.08} fill={colors.primary}
+                  dot={{ r: 2, fill: colors.primary, stroke: '#fff', strokeWidth: 1 }} />
               </ComposedChart>
             </ResponsiveContainer>
+            </div>
           </div>
         )}
       </CardContent>

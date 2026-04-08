@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import { ROUTES } from '@/lib/routes'
 
 type Props = {
   totalSessions: number
@@ -47,7 +48,7 @@ export const CramCardGate = ({ totalSessions }: Props) => {
 
       {/* CTA */}
       <Link
-        href="/dashboard/drills"
+        href={ROUTES.dashboard.drills}
         className="inline-flex items-center gap-1 text-sm text-primary hover:text-primary-700 transition-colors duration-150 ease-out"
       >
         Start a session to get closer →

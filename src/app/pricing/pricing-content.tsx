@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/button'
 import { trackEvent } from '@/lib/analytics'
 import { PricingCard } from '@/components/marketing/PricingCard'
 import { FEATURE_PAYMENTS_ENABLED } from '@/lib/constants/feature-flags'
+import { ROUTES } from '@/lib/routes'
 import {
   INDIVIDUAL_TIERS,
   EDUCATIONAL_TIERS,
@@ -40,7 +41,7 @@ export const PricingContent = () => {
           All features are currently available for free. Start studying now.
         </p>
         <Button asChild className="mt-8">
-          <Link href="/dashboard">Go to Dashboard</Link>
+          <Link href={ROUTES.dashboard.root}>Go to Dashboard</Link>
         </Button>
       </div>
     )

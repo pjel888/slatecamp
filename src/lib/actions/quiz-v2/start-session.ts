@@ -9,6 +9,7 @@ import { mergeWithPreset } from '@/lib/quiz/mode-presets'
 import { buildTaxonomyBreadcrumbMap, toClientQuestion } from '@/lib/quiz/to-client-question'
 import { resolveTaxonomyDescendants } from '@/lib/actions/cached-queries'
 import { createServiceClient, getUser } from '@/lib/supabase/server'
+import { ROUTES } from '@/lib/routes'
 import type {
   QuestionForClient,
   QuizSessionConfig,

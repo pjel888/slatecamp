@@ -4,6 +4,7 @@ import { useTransition } from 'react'
 import Link from 'next/link'
 import { switchAccountMode } from '@/lib/actions/professional-mode'
 import type { AccountMode } from '@/lib/actions/professional-mode'
+import { ROUTES } from '@/lib/routes'
 
 interface ProfessionalHubProps {
   accountMode: AccountMode

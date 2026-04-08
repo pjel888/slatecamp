@@ -1,7 +1,12 @@
+import dynamic from 'next/dynamic'
 import { getTimeSpentDistribution } from '@/lib/actions/analytics-data'
-import { TimeSpentDistribution } from './TimeSpentDistribution'
+
+const TimeSpentDistribution = dynamic(
+  () => import('@/components/analytics/TimeSpentDistribution').then(m => m.TimeSpentDistribution),
+)
 
 export const TimeSpentDistributionSection = async () => {
-  const data = await getTimeSpentDistribution()
-  return <TimeSpentDistribution data={data} />
+  const result = await getTimeSpentDistribution()
+  if (result.error) throw new Error(result.error)
+  return <TimeSpentDistribution data={result.data} />
 }

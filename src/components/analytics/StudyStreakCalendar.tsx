@@ -2,6 +2,7 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { RichInfoPopover } from '@/components/dashboard/RichInfoPopover'
+import { ChartEmptyState } from '@/components/analytics/ChartEmptyState'
 import { cn } from '@/lib/utils'
 import type { StudyActivityDay } from '@/lib/actions/analytics-data'
 
@@ -51,11 +52,11 @@ export const StudyStreakCalendar = ({ data, monthLabel }: Props) => {
       </CardHeader>
       <CardContent className="p-2 pt-0">
         {data.length === 0 ? (
-          <div className="h-[140px] flex items-center justify-center">
-            <p className="text-xs text-center leading-snug max-w-[200px] text-muted-foreground">
-              Complete a few study sessions to see your analytics here.
-            </p>
-          </div>
+          <ChartEmptyState
+            title="No activity data"
+            description="Your study activity calendar will fill in as you practice."
+            height="h-[280px]"
+          />
         ) : (
           <div>
             {/* Day-of-week header */}
@@ -80,16 +81,24 @@ export const StudyStreakCalendar = ({ data, monthLabel }: Props) => {
                     key={day.date}
                     title={day.count > 0 ? `${dayNum}: ${day.count} questions` : `${dayNum}: no activity`}
                     className={cn(
-                      'aspect-square rounded-sm flex items-center justify-center cursor-default',
+                      'aspect-square rounded-sm flex flex-col items-center justify-center cursor-default overflow-hidden',
                       INTENSITY_CLASSES[day.intensity],
                     )}
                   >
                     <span className={cn(
-                      'text-[9px] font-medium select-none',
+                      'text-[9px] font-medium select-none leading-none',
                       day.intensity >= 3 ? 'text-white' : 'text-text-secondary',
                     )}>
                       {dayNum}
                     </span>
+                    {day.count > 0 && (
+                      <span className={cn(
+                        'text-[8px] font-bold select-none leading-none tabular-nums',
+                        day.intensity >= 3 ? 'text-white' : 'text-foreground',
+                      )}>
+                        {day.count}
+                      </span>
+                    )}
                   </div>
                 )
               })}

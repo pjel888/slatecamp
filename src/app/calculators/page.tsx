@@ -1,6 +1,7 @@
 // src/app/calculators/page.tsx
 // Suite index page — Server Component. Renders tool card grid.
 import Link from 'next/link'
+import { ROUTES } from '@/lib/routes'
 
 const TOOLS = [
   {
@@ -76,7 +77,7 @@ export default function CalculatorsIndexPage() {
             </p>
             {tool.ready ? (
               <Link
-                href={`/calculators/${tool.slug}`}
+                href={ROUTES.calculators.tool(tool.slug)}
                 className="mt-3 inline-block font-sans text-xs text-primary hover:underline"
               >
                 Start estimating &rarr;
@@ -100,7 +101,7 @@ export default function CalculatorsIndexPage() {
           Licensure Examination.
         </p>
         <Link
-          href="/pricing"
+          href={ROUTES.pricing}
           className="mt-2 inline-block font-sans text-xs text-camp-orange hover:underline"
         >
           Learn more &rarr;

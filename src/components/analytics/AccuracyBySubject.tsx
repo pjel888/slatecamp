@@ -6,6 +6,9 @@ import {
   ResponsiveContainer, BarChart, Bar, XAxis, YAxis,
   CartesianGrid, Tooltip, Cell,
 } from 'recharts'
+import { ChartEmptyState } from '@/components/analytics/ChartEmptyState'
+import { useChartColors } from '@/hooks/useChartColors'
+import { CHART_COLORS } from '@/lib/constants/chart-colors'
 import type { AccuracyBySubjectItem } from '@/lib/actions/analytics-data'
 
 interface Props {
@@ -13,12 +16,14 @@ interface Props {
 }
 
 const getBarColor = (accuracy: number) => {
-  if (accuracy >= 70) return '#2D9F6F'
-  if (accuracy >= 50) return '#D4951A'
-  return '#D64545'
+  if (accuracy >= 70) return CHART_COLORS.success
+  if (accuracy >= 50) return CHART_COLORS.warning
+  return CHART_COLORS.destructive
 }
 
-export const AccuracyBySubject = ({ data }: Props) => (
+export const AccuracyBySubject = ({ data }: Props) => {
+  const colors = useChartColors()
+  return (
   <Card className="border-border bg-card rounded-md shadow-none p-2 relative">
     <RichInfoPopover
       title="Accuracy by Subject"
@@ -31,27 +36,28 @@ export const AccuracyBySubject = ({ data }: Props) => (
     </CardHeader>
     <CardContent className="p-2 pt-0">
       {data.length === 0 ? (
-        <div className="h-[220px] flex items-center justify-center">
-          <p className="text-xs text-center leading-snug max-w-[200px] text-muted-foreground">
-            Complete a few study sessions to see your analytics here.
-          </p>
-        </div>
+        <ChartEmptyState
+          title="No accuracy data"
+          description="Subject accuracy appears after answering quiz questions."
+          height="h-[280px]"
+        />
       ) : (
         <div className="h-[220px]">
+          <div role="img" aria-label="Accuracy by subject bar chart showing correct-answer rate per subject area">
           <ResponsiveContainer width="100%" height="100%">
             <BarChart
               data={data}
               layout="vertical"
               margin={{ top: 4, right: 32, left: 4, bottom: 4 }}
             >
-              <CartesianGrid stroke="#D4DAE3" strokeDasharray="3 3" horizontal={false} />
+              <CartesianGrid stroke={colors.gridStroke} strokeDasharray="3 3" horizontal={false} />
               <XAxis
                 type="number"
                 domain={[0, 100]}
                 tickFormatter={v => `${v}%`}
                 axisLine={false}
                 tickLine={false}
-                tick={{ fill: '#4A5568', fontSize: 11 }}
+                tick={{ fill: colors.axisTickFill, fontSize: 11 }}
                 ticks={[0, 25, 50, 75, 100]}
               />
               <YAxis
@@ -60,13 +66,13 @@ export const AccuracyBySubject = ({ data }: Props) => (
                 width={90}
                 axisLine={false}
                 tickLine={false}
-                tick={{ fill: '#1A2332', fontSize: 11 }}
+                tick={{ fill: colors.foreground, fontSize: 11 }}
               />
               <Tooltip
                 formatter={(v: any) => [`${v}%`, 'Accuracy']}
                 contentStyle={{
                   borderRadius: '8px',
-                  border: '1px solid #D4DAE3',
+                  border: `1px solid ${colors.tooltipBorder}`,
                   boxShadow: '0 1px 2px rgba(0,0,0,0.05)',
                   fontSize: '12px',
                 }}
@@ -78,8 +84,10 @@ export const AccuracyBySubject = ({ data }: Props) => (
               </Bar>
             </BarChart>
           </ResponsiveContainer>
+          </div>
         </div>
       )}
     </CardContent>
   </Card>
-)
+  )
+}

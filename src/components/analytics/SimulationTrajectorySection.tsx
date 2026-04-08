@@ -6,6 +6,7 @@ const SimulationTrajectory = dynamic(
 )
 
 export const SimulationTrajectorySection = async () => {
-  const data = await getSimulationTrajectory()
-  return <SimulationTrajectory data={data} />
+  const result = await getSimulationTrajectory()
+  if (result.error) throw new Error(result.error)
+  return <SimulationTrajectory data={result.data} />
 }

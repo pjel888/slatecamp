@@ -6,6 +6,7 @@ const StaminaCurve = dynamic(
 )
 
 export const StaminaSection = async () => {
-  const data = await getStaminaCurveData()
-  return <StaminaCurve data={data} />
+  const result = await getStaminaCurveData()
+  if (result.error) throw new Error(result.error)
+  return <StaminaCurve data={result.data} />
 }

@@ -6,6 +6,7 @@ const PacingQuadrant = dynamic(
 )
 
 export const PacingQuadrantSection = async () => {
-  const data = await getPacingQuadrantData()
-  return <PacingQuadrant data={data} targetTimeMs={120_000} passingAccuracy={75} />
+  const result = await getPacingQuadrantData()
+  if (result.error) throw new Error(result.error)
+  return <PacingQuadrant data={result.data} targetTimeMs={120_000} passingAccuracy={75} />
 }

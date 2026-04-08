@@ -4,6 +4,7 @@ import { CalendarBlank, Target, Warning, ArrowUp, ArrowDown, Minus } from '@phos
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { RichInfoPopover } from '@/components/dashboard/RichInfoPopover'
+import { ChartEmptyState } from '@/components/analytics/ChartEmptyState'
 import { cn } from '@/lib/utils'
 import { getScoreColor } from '@/components/shared/score-display'
 import type { ExamCountdownData } from '@/lib/actions/analytics/chart-data'
@@ -37,12 +38,11 @@ export const ExamCountdown = ({ data }: Props) => {
       </CardHeader>
       <CardContent className="p-2 pt-0">
         {!hasExamDate ? (
-          <div className="flex flex-col items-center justify-center text-center gap-2 py-4">
-            <SCIcon icon={CalendarBlank} size="md" className="text-muted-foreground" />
-            <p className="text-sm font-medium text-muted-foreground">
-              Set your target exam date in Settings to unlock your countdown and projections.
-            </p>
-          </div>
+          <ChartEmptyState
+            title="Exam date not set"
+            description="Set your exam date in settings to see your countdown."
+            height="h-[220px]"
+          />
         ) : (
           <div className="flex flex-col gap-3">
             {/* Days remaining */}

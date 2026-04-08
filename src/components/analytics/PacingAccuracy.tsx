@@ -7,7 +7,10 @@ import {
   CartesianGrid, Tooltip, ReferenceLine, ReferenceArea, Cell,
 } from 'recharts'
 import { ChartCoachingAnnotation } from './ChartCoachingAnnotation'
+import { ChartEmptyState } from '@/components/analytics/ChartEmptyState'
 import { QuadrantOverlay } from './QuadrantOverlay'
+import { useChartColors } from '@/hooks/useChartColors'
+import { CHART_COLORS } from '@/lib/constants/chart-colors'
 import { PACING_TARGET_MS, PASSING_ACCURACY } from '@/lib/constants/analytics'
 import type { PacingAccuracyPoint } from '@/lib/actions/analytics/chart-data'
 
@@ -49,10 +52,10 @@ const CustomTooltip = ({ active, payload }: CustomTooltipProps) => {
   return (
     <div
       className="rounded-md bg-card p-2 text-xs"
-      style={{ border: '1px solid #D4DAE3', boxShadow: '0 1px 2px rgba(0,0,0,0.05)' }}
+      style={{ border: `1px solid ${CHART_COLORS.tooltipBorder}`, boxShadow: '0 1px 2px rgba(0,0,0,0.05)' }}
     >
-      <p className="font-bold mb-0.5 capitalize" style={{ color: '#1A2332' }}>{d.mode} session</p>
-      <p style={{ color: '#4A5568' }}>
+      <p className="font-bold mb-0.5 capitalize" style={{ color: CHART_COLORS.foreground }}>{d.mode} session</p>
+      <p style={{ color: CHART_COLORS.textSecondary }}>
         {d.avgSeconds}s avg | {d.accuracy}% accuracy | {d.questionCount}Q
       </p>
     </div>
@@ -100,27 +103,17 @@ const getUniqueModes = (data: PacingAccuracyPoint[]): Array<{ mode: string; colo
 }
 
 export const PacingAccuracy = ({ data }: Props) => {
+  const colors = useChartColors()
   const coaching = buildCoaching(data)
   const modes = getUniqueModes(data)
 
   if (data.length === 0) {
     return (
-      <Card className="border-border bg-card p-2 relative h-full">
-        <RichInfoPopover
-          title="Session Pacing vs. Accuracy"
-          description="Each dot is one session. The optimal zone is top-left (fast + accurate)."
-        />
-        <CardHeader className="p-2 pt-1">
-          <CardTitle className="text-[11px] font-bold tracking-wider uppercase text-muted-foreground">
-            Session Pacing vs. Accuracy
-          </CardTitle>
-        </CardHeader>
-        <CardContent className="flex-1 flex flex-col items-center justify-center text-center px-6 gap-2 min-h-[200px]">
-          <p className="text-sm font-medium text-muted-foreground">
-            Complete sessions to see your pacing and accuracy patterns.
-          </p>
-        </CardContent>
-      </Card>
+      <ChartEmptyState
+        title="No pacing data"
+        description="Pacing vs accuracy analysis needs at least 5 completed sessions."
+        height="h-[340px]"
+      />
     )
   }
 
@@ -147,18 +140,19 @@ export const PacingAccuracy = ({ data }: Props) => {
               bottomRight: 'Struggling',
             }}
             colors={{
-              topLeft: '#2D9F6F',
-              topRight: '#1B3FC4',
-              bottomLeft: '#D4951A',
-              bottomRight: '#D64545',
+              topLeft: colors.success,
+              topRight: colors.primary,
+              bottomLeft: colors.warning,
+              bottomRight: colors.destructive,
             }}
             className="[&_span]:text-[10px]"
           />
 
           <div className="h-[260px]">
+            <div role="img" aria-label="Session pacing versus accuracy scatter plot showing speed and accuracy per study session by mode">
             <ResponsiveContainer width="100%" height="100%">
               <ScatterChart margin={{ top: 20, right: 20, left: 0, bottom: 30 }}>
-                <CartesianGrid strokeDasharray="3 3" stroke="#D4DAE3" />
+                <CartesianGrid strokeDasharray="3 3" stroke={colors.gridStroke} />
                 <XAxis
                   type="number"
                   dataKey="avgSeconds"
@@ -166,8 +160,8 @@ export const PacingAccuracy = ({ data }: Props) => {
                   tickFormatter={v => `${v}s`}
                   axisLine={false}
                   tickLine={false}
-                  tick={{ fill: '#4A5568', fontSize: 11 }}
-                  label={{ value: 'Avg Seconds / Question', position: 'insideBottom', offset: -18, fontSize: 11, fill: '#4A5568' }}
+                  tick={{ fill: colors.axisTickFill, fontSize: 11 }}
+                  label={{ value: 'Avg Seconds / Question', position: 'insideBottom', offset: -18, fontSize: 11, fill: colors.axisTickFill }}
                 />
                 <YAxis
                   type="number"
@@ -176,20 +170,20 @@ export const PacingAccuracy = ({ data }: Props) => {
                   tickFormatter={v => `${v}%`}
                   axisLine={false}
                   tickLine={false}
-                  tick={{ fill: '#4A5568', fontSize: 11 }}
+                  tick={{ fill: colors.axisTickFill, fontSize: 11 }}
                   width={36}
                 />
                 <Tooltip content={<CustomTooltip />} />
 
                 {/* Quadrant backgrounds */}
-                <ReferenceArea x1={0} x2={TARGET_SECONDS} y1={PASSING_ACCURACY} y2={100} fill="#2D9F6F" fillOpacity={0.03} />
-                <ReferenceArea x1={TARGET_SECONDS} x2={maxSeconds} y1={PASSING_ACCURACY} y2={100} fill="#1B3FC4" fillOpacity={0.03} />
-                <ReferenceArea x1={0} x2={TARGET_SECONDS} y1={0} y2={PASSING_ACCURACY} fill="#D4951A" fillOpacity={0.04} />
-                <ReferenceArea x1={TARGET_SECONDS} x2={maxSeconds} y1={0} y2={PASSING_ACCURACY} fill="#D64545" fillOpacity={0.03} />
+                <ReferenceArea x1={0} x2={TARGET_SECONDS} y1={PASSING_ACCURACY} y2={100} fill={colors.success} fillOpacity={0.03} />
+                <ReferenceArea x1={TARGET_SECONDS} x2={maxSeconds} y1={PASSING_ACCURACY} y2={100} fill={colors.primary} fillOpacity={0.03} />
+                <ReferenceArea x1={0} x2={TARGET_SECONDS} y1={0} y2={PASSING_ACCURACY} fill={colors.warning} fillOpacity={0.04} />
+                <ReferenceArea x1={TARGET_SECONDS} x2={maxSeconds} y1={0} y2={PASSING_ACCURACY} fill={colors.destructive} fillOpacity={0.03} />
 
                 {/* Reference lines */}
-                <ReferenceLine x={TARGET_SECONDS} stroke="#D4DAE3" strokeDasharray="4 4" strokeWidth={1} />
-                <ReferenceLine y={PASSING_ACCURACY} stroke="#D4DAE3" strokeDasharray="4 4" strokeWidth={1} />
+                <ReferenceLine x={TARGET_SECONDS} stroke={colors.border} strokeDasharray="4 4" strokeWidth={1} />
+                <ReferenceLine y={PASSING_ACCURACY} stroke={colors.border} strokeDasharray="4 4" strokeWidth={1} />
 
                 <Scatter data={data} shape={<CustomDot />}>
                   {data.map((entry, i) => (
@@ -198,6 +192,7 @@ export const PacingAccuracy = ({ data }: Props) => {
                 </Scatter>
               </ScatterChart>
             </ResponsiveContainer>
+            </div>
           </div>
         </div>
 
@@ -206,7 +201,7 @@ export const PacingAccuracy = ({ data }: Props) => {
           {modes.map(m => (
             <div key={m.mode} className="flex items-center gap-1">
               <div className="h-2 w-2 rounded-full" style={{ backgroundColor: m.color }} />
-              <span className="text-[11px] capitalize" style={{ color: '#4A5568' }}>{m.mode}</span>
+              <span className="text-[11px] capitalize" style={{ color: colors.textSecondary }}>{m.mode}</span>
             </div>
           ))}
         </div>

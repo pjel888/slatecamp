@@ -7,9 +7,10 @@ const SubjectRadarChart = dynamic(
 )
 
 export const RadarSection = async () => {
-  const raw = await getSubjectMasteryData()
+  const result = await getSubjectMasteryData()
+  if (result.error) throw new Error(result.error)
 
-  const data: SubjectMastery[] = raw.map(d => ({
+  const data: SubjectMastery[] = result.data.map(d => ({
     subject: d.subject,
     shortLabel: d.subject.split(' ').slice(0, 2).join(' '),
     leaId: null,

@@ -7,6 +7,8 @@ import {
   CartesianGrid, Tooltip, ReferenceLine,
 } from 'recharts'
 import { ChartCoachingAnnotation } from './ChartCoachingAnnotation'
+import { ChartEmptyState } from '@/components/analytics/ChartEmptyState'
+import { useChartColors } from '@/hooks/useChartColors'
 import type { StaminaBucket } from '@/lib/actions/analytics'
 
 interface Props { data: StaminaBucket[] }
@@ -32,6 +34,7 @@ function buildCoaching(data: StaminaBucket[]): { text: string; variant: 'warning
 }
 
 export function StaminaCurve({ data }: Props) {
+  const colors = useChartColors()
   const coaching = buildCoaching(data)
   return (
     <Card className="border-border bg-card p-2 relative h-full">
@@ -43,29 +46,31 @@ export function StaminaCurve({ data }: Props) {
       </CardHeader>
       <CardContent className="p-2 pt-0">
         {data.length < 2 ? (
-          <div className="h-[160px] flex items-center justify-center">
-            <p className="text-xs text-center leading-snug max-w-[180px] text-muted-foreground">
-              Complete sessions with 10+ questions to see your stamina curve.
-            </p>
-          </div>
+          <ChartEmptyState
+            title="No stamina data"
+            description="Stamina analysis needs at least one completed session."
+            height="h-[360px]"
+          />
         ) : (
           <div className="h-[200px]">
+            <div role="img" aria-label="Stamina curve chart showing accuracy decline over question position">
             <ResponsiveContainer width="100%" height="100%">
               <LineChart data={data} margin={{ top: 5, right: 10, left: -20, bottom: 5 }}>
-                <CartesianGrid stroke="#D4DAE3" strokeDasharray="3 3" />
-                <XAxis dataKey="bucket" axisLine={false} tickLine={false} tick={{ fill: '#4A5568', fontSize: 11 }} />
+                <CartesianGrid stroke={colors.gridStroke} strokeDasharray="3 3" />
+                <XAxis dataKey="bucket" axisLine={false} tickLine={false} tick={{ fill: colors.axisTickFill, fontSize: 11 }} />
                 <YAxis domain={[0, 100]} tickFormatter={v => `${v}%`} axisLine={false} tickLine={false}
-                  tick={{ fill: '#4A5568', fontSize: 11 }} ticks={[0, 50, 75, 100]} />
+                  tick={{ fill: colors.axisTickFill, fontSize: 11 }} ticks={[0, 50, 75, 100]} />
                 <Tooltip
                   formatter={(v: any, _: any, props: any) => [`${v}% (${props.payload.sampleSize}Q)`, 'Accuracy']}
-                  contentStyle={{ borderRadius: '8px', border: '1px solid #D4DAE3', boxShadow: '0 1px 2px rgba(0,0,0,0.05)', fontSize: '12px' }}
+                  contentStyle={{ borderRadius: '8px', border: `1px solid ${colors.tooltipBorder}`, boxShadow: '0 1px 2px rgba(0,0,0,0.05)', fontSize: '12px' }}
                 />
-                <ReferenceLine y={75} stroke="#2D9F6F" strokeDasharray="4 4" strokeWidth={1} />
-                <Line type="monotone" dataKey="accuracy" stroke="#1B3FC4" strokeWidth={1.5}
-                  dot={{ r: 3, fill: '#1B3FC4', stroke: '#fff', strokeWidth: 1.5 }}
+                <ReferenceLine y={75} stroke={colors.referenceLine} strokeDasharray="4 4" strokeWidth={1} />
+                <Line type="monotone" dataKey="accuracy" stroke={colors.primary} strokeWidth={1.5}
+                  dot={{ r: 3, fill: colors.primary, stroke: '#fff', strokeWidth: 1.5 }}
                   activeDot={{ r: 4 }} animationDuration={1200} />
               </LineChart>
             </ResponsiveContainer>
+            </div>
           </div>
         )}
         {coaching && <ChartCoachingAnnotation text={coaching.text} variant={coaching.variant} />}

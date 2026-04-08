@@ -6,6 +6,7 @@ const StaminaHeatmap = dynamic(
 )
 
 export const StaminaHeatmapSection = async () => {
-  const data = await getStaminaHeatmapData()
-  return <StaminaHeatmap data={data} />
+  const result = await getStaminaHeatmapData()
+  if (result.error) throw new Error(result.error)
+  return <StaminaHeatmap data={result.data} />
 }

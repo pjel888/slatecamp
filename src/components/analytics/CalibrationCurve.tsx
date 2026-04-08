@@ -11,6 +11,8 @@ import {
   ReferenceLine,
   ReferenceArea,
 } from 'recharts'
+import { useChartColors } from '@/hooks/useChartColors'
+import { CHART_COLORS } from '@/lib/constants/chart-colors'
 
 // ── Types ────────────────────────────────────────────────────────────────────
 
@@ -41,15 +43,15 @@ const CustomTooltip = ({ active, payload }: CustomTooltipProps) => {
       className="rounded-md bg-card p-2 text-xs"
       style={{
         borderRadius: '8px',
-        border: '1px solid #D4DAE3',
+        border: `1px solid ${CHART_COLORS.tooltipBorder}`,
         boxShadow: '0 1px 2px rgba(0,0,0,0.05)',
         fontSize: '12px',
       }}
     >
-      <p className="font-bold mb-0.5" style={{ color: '#1A2332' }}>
+      <p className="font-bold mb-0.5" style={{ color: CHART_COLORS.foreground }}>
         {d.label}
       </p>
-      <p style={{ color: '#4A5568' }}>
+      <p style={{ color: CHART_COLORS.textSecondary }}>
         Expected: {d.confidence}% / Actual: {d.accuracy}%
       </p>
     </div>
@@ -63,6 +65,7 @@ export const CalibrationCurve = ({
   guessingAccuracy,
   partlyAccuracy,
 }: Props) => {
+  const colors = useChartColors()
   // Build the three data points: Guessing (33%), Partly Sure (67%), Confident (100%)
   const data: CalibrationPoint[] = [
     {
@@ -89,24 +92,25 @@ export const CalibrationCurve = ({
 
   return (
     <div className="h-[200px]">
+      <div role="img" aria-label="Calibration curve chart comparing confidence levels to actual accuracy">
       <ResponsiveContainer width="100%" height="100%">
         <LineChart
           data={data}
           margin={{ top: 8, right: 12, left: -16, bottom: 8 }}
         >
-          <CartesianGrid stroke="#D4DAE3" strokeDasharray="3 3" />
+          <CartesianGrid stroke={colors.gridStroke} strokeDasharray="3 3" />
           <XAxis
             dataKey="label"
             axisLine={false}
             tickLine={false}
-            tick={{ fill: '#4A5568', fontSize: 11 }}
+            tick={{ fill: colors.axisTickFill, fontSize: 11 }}
           />
           <YAxis
             domain={[0, 100]}
             tickFormatter={(v) => `${v}%`}
             axisLine={false}
             tickLine={false}
-            tick={{ fill: '#4A5568', fontSize: 11 }}
+            tick={{ fill: colors.axisTickFill, fontSize: 11 }}
             ticks={[0, 25, 50, 75, 100]}
           />
           <Tooltip content={<CustomTooltip />} />
@@ -117,7 +121,7 @@ export const CalibrationCurve = ({
               { x: 'Guessing', y: 33 },
               { x: 'Confident', y: 100 },
             ]}
-            stroke="#D4DAE3"
+            stroke={colors.border}
             strokeDasharray="6 4"
             strokeWidth={1.5}
             ifOverflow="extendDomain"
@@ -128,7 +132,7 @@ export const CalibrationCurve = ({
             <ReferenceArea
               y1={0}
               y2={100}
-              fill="#D64545"
+              fill={colors.destructive}
               fillOpacity={0.04}
               ifOverflow="extendDomain"
             />
@@ -139,7 +143,7 @@ export const CalibrationCurve = ({
             <ReferenceArea
               y1={0}
               y2={100}
-              fill="#1B3FC4"
+              fill={colors.primary}
               fillOpacity={0.04}
               ifOverflow="extendDomain"
             />
@@ -149,11 +153,11 @@ export const CalibrationCurve = ({
           <Line
             type="monotone"
             dataKey="accuracy"
-            stroke="#1B3FC4"
+            stroke={colors.primary}
             strokeWidth={2}
             dot={{
               r: 5,
-              fill: '#1B3FC4',
+              fill: colors.primary,
               stroke: '#fff',
               strokeWidth: 2,
             }}
@@ -162,6 +166,7 @@ export const CalibrationCurve = ({
           />
         </LineChart>
       </ResponsiveContainer>
+      </div>
     </div>
   )
 }

@@ -3,6 +3,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { RichInfoPopover } from '@/components/dashboard/RichInfoPopover'
 import { ChartCoachingAnnotation } from './ChartCoachingAnnotation'
+import { ChartEmptyState } from '@/components/analytics/ChartEmptyState'
 import { CalibrationCurve } from './CalibrationCurve'
 import type { CalibrationData } from '@/lib/actions/analytics/get-calibration-data'
 
@@ -45,27 +46,11 @@ const buildCoachingMessage = (
 export const CalibrationScoreCard = ({ data }: Props) => {
   if (!data) {
     return (
-      <Card className="border-border bg-card rounded-md shadow-none p-2 relative h-full min-h-[280px] flex flex-col">
-        <RichInfoPopover
-          title="Calibration Score"
-          description="Measures how well your confidence matches your actual accuracy using the Brier Score. A score of 100 means perfect calibration."
-        />
-        <CardHeader className="p-2 pt-1">
-          <CardTitle className="text-[11px] font-bold tracking-wider uppercase text-muted-foreground">
-            Calibration Score
-          </CardTitle>
-        </CardHeader>
-        <CardContent className="flex-1 flex flex-col items-center justify-center text-center px-6 gap-2">
-          <p className="text-sm font-medium text-muted-foreground">
-            Complete study sessions with confidence ratings to see your
-            calibration profile.
-          </p>
-          <p className="text-xs text-muted-foreground">
-            This chart shows how well your self-assessed confidence matches your
-            actual performance.
-          </p>
-        </CardContent>
-      </Card>
+      <ChartEmptyState
+        title="No calibration data"
+        description="Confidence calibration needs questions answered with confidence ratings."
+        height="h-[280px]"
+      />
     )
   }
 

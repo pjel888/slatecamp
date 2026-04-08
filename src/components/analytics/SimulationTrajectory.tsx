@@ -7,6 +7,8 @@ import {
   CartesianGrid, Tooltip, ReferenceLine,
 } from 'recharts'
 import { ChartCoachingAnnotation } from './ChartCoachingAnnotation'
+import { ChartEmptyState } from '@/components/analytics/ChartEmptyState'
+import { useChartColors } from '@/hooks/useChartColors'
 import type { SimulationPoint } from '@/lib/actions/progress-report/actions'
 
 interface Props {
@@ -33,6 +35,7 @@ const buildCoaching = (data: SimulationPoint[]): { text: string; variant: 'succe
 }
 
 export const SimulationTrajectory = ({ data }: Props) => {
+  const colors = useChartColors()
   const coaching = buildCoaching(data)
 
   return (
@@ -48,28 +51,29 @@ export const SimulationTrajectory = ({ data }: Props) => {
       </CardHeader>
       <CardContent className="p-2 pt-0">
         {data.length < 2 ? (
-          <div className="h-[200px] flex items-center justify-center">
-            <p className="text-xs text-center leading-snug max-w-[220px] text-muted-foreground">
-              Complete two or more full simulations (50+ questions) to see your trajectory here.
-            </p>
-          </div>
+          <ChartEmptyState
+            title="No simulation data"
+            description="Take a full simulation exam to see your trajectory."
+            height="h-[280px]"
+          />
         ) : (
           <div className="h-[200px]">
+            <div role="img" aria-label="Simulation score trajectory chart showing score trend across full-length simulations">
             <ResponsiveContainer width="100%" height="100%">
               <LineChart data={data} margin={{ top: 5, right: 10, left: -20, bottom: 5 }}>
-                <CartesianGrid stroke="#D4DAE3" strokeDasharray="3 3" />
+                <CartesianGrid stroke={colors.gridStroke} strokeDasharray="3 3" />
                 <XAxis
                   dataKey="date"
                   axisLine={false}
                   tickLine={false}
-                  tick={{ fill: '#4A5568', fontSize: 11 }}
+                  tick={{ fill: colors.axisTickFill, fontSize: 11 }}
                 />
                 <YAxis
                   domain={[0, 100]}
                   tickFormatter={(v) => `${v}%`}
                   axisLine={false}
                   tickLine={false}
-                  tick={{ fill: '#4A5568', fontSize: 11 }}
+                  tick={{ fill: colors.axisTickFill, fontSize: 11 }}
                   ticks={[0, 25, 50, 75, 100]}
                 />
                 <Tooltip
@@ -79,34 +83,35 @@ export const SimulationTrajectory = ({ data }: Props) => {
                   ]}
                   contentStyle={{
                     borderRadius: '8px',
-                    border: '1px solid #D4DAE3',
+                    border: `1px solid ${colors.tooltipBorder}`,
                     boxShadow: '0 1px 2px rgba(0,0,0,0.05)',
                     fontSize: '12px',
                   }}
                 />
                 <ReferenceLine
                   y={75}
-                  stroke="#2D9F6F"
+                  stroke={colors.referenceLine}
                   strokeDasharray="4 4"
                   strokeWidth={1}
                   label={{
                     value: '75% target',
                     position: 'right',
-                    fill: '#2D9F6F',
+                    fill: colors.referenceLine,
                     fontSize: 10,
                   }}
                 />
                 <Line
                   type="monotone"
                   dataKey="score"
-                  stroke="#1B3FC4"
+                  stroke={colors.primary}
                   strokeWidth={2}
-                  dot={{ r: 4, fill: '#1B3FC4', stroke: '#fff', strokeWidth: 2 }}
+                  dot={{ r: 4, fill: colors.primary, stroke: '#fff', strokeWidth: 2 }}
                   activeDot={{ r: 5 }}
                   animationDuration={300}
                 />
               </LineChart>
             </ResponsiveContainer>
+            </div>
           </div>
         )}
         {coaching && <ChartCoachingAnnotation text={coaching.text} variant={coaching.variant} />}

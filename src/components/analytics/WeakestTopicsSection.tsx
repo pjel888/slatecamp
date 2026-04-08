@@ -1,7 +1,12 @@
+import dynamic from 'next/dynamic'
 import { getWeakestTopics } from '@/lib/actions/analytics-data'
-import { WeakestTopics } from './WeakestTopics'
+
+const WeakestTopics = dynamic(
+  () => import('@/components/analytics/WeakestTopics').then(m => m.WeakestTopics),
+)
 
 export const WeakestTopicsSection = async () => {
-  const data = await getWeakestTopics()
-  return <WeakestTopics data={data} />
+  const result = await getWeakestTopics()
+  if (result.error) throw new Error(result.error)
+  return <WeakestTopics data={result.data} />
 }

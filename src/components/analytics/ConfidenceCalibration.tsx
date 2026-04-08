@@ -6,6 +6,8 @@ import {
   ResponsiveContainer, BarChart, Bar, XAxis, YAxis,
   CartesianGrid, Tooltip, Legend,
 } from 'recharts'
+import { ChartEmptyState } from '@/components/analytics/ChartEmptyState'
+import { useChartColors } from '@/hooks/useChartColors'
 import type { ConfidenceCalibrationItem } from '@/lib/actions/analytics-data'
 
 interface Props {
@@ -23,6 +25,7 @@ const getInsight = (data: ConfidenceCalibrationItem[]): string | null => {
 }
 
 export const ConfidenceCalibration = ({ data }: Props) => {
+  const colors = useChartColors()
   const insight = getInsight(data)
 
   return (
@@ -38,39 +41,40 @@ export const ConfidenceCalibration = ({ data }: Props) => {
       </CardHeader>
       <CardContent className="p-2 pt-0">
         {data.length === 0 ? (
-          <div className="h-[220px] flex items-center justify-center">
-            <p className="text-xs text-center leading-snug max-w-[200px] text-muted-foreground">
-              Complete a few study sessions to see your analytics here.
-            </p>
-          </div>
+          <ChartEmptyState
+            title="No confidence data"
+            description="Confidence calibration appears after rating your confidence on answers."
+            height="h-[280px]"
+          />
         ) : (
           <>
             <div className="h-[180px]">
+              <div role="img" aria-label="Confidence calibration bar chart comparing expected confidence versus actual accuracy by confidence level">
               <ResponsiveContainer width="100%" height="100%">
                 <BarChart
                   data={data}
                   margin={{ top: 4, right: 8, left: -20, bottom: 4 }}
                 >
-                  <CartesianGrid stroke="#D4DAE3" strokeDasharray="3 3" />
+                  <CartesianGrid stroke={colors.gridStroke} strokeDasharray="3 3" />
                   <XAxis
                     dataKey="level"
                     axisLine={false}
                     tickLine={false}
-                    tick={{ fill: '#4A5568', fontSize: 11 }}
+                    tick={{ fill: colors.axisTickFill, fontSize: 11 }}
                   />
                   <YAxis
                     domain={[0, 100]}
                     tickFormatter={v => `${v}%`}
                     axisLine={false}
                     tickLine={false}
-                    tick={{ fill: '#4A5568', fontSize: 11 }}
+                    tick={{ fill: colors.axisTickFill, fontSize: 11 }}
                     ticks={[0, 25, 50, 75, 100]}
                   />
                   <Tooltip
                     formatter={(v: any, name: string) => [`${v}%`, name]}
                     contentStyle={{
                       borderRadius: '8px',
-                      border: '1px solid #D4DAE3',
+                      border: `1px solid ${colors.tooltipBorder}`,
                       boxShadow: '0 1px 2px rgba(0,0,0,0.05)',
                       fontSize: '12px',
                     }}
@@ -81,7 +85,7 @@ export const ConfidenceCalibration = ({ data }: Props) => {
                   <Bar
                     dataKey="confidence"
                     name="Expected"
-                    fill="#1B3FC4"
+                    fill={colors.primary}
                     fillOpacity={0.3}
                     radius={[3, 3, 0, 0]}
                     maxBarSize={36}
@@ -89,12 +93,13 @@ export const ConfidenceCalibration = ({ data }: Props) => {
                   <Bar
                     dataKey="accuracy"
                     name="Actual"
-                    fill="#1B3FC4"
+                    fill={colors.primary}
                     radius={[3, 3, 0, 0]}
                     maxBarSize={36}
                   />
                 </BarChart>
               </ResponsiveContainer>
+              </div>
             </div>
             {insight && (
               <p className="text-[11px] text-text-secondary mt-1 leading-snug">

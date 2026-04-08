@@ -6,6 +6,7 @@ import { NotificationFilters } from '@/components/notifications/NotificationFilt
 import { groupNotificationsByTime } from '@/lib/utils/notifications'
 import { markAllNotificationsAsRead } from '@/lib/actions/notifications'
 import Link from 'next/link'
+import { ROUTES } from '@/lib/routes'
 import type { Notification, NotificationFilter } from '@/types/notifications'
 import { FILTER_TYPE_MAP } from '@/types/notifications'
 

@@ -12,6 +12,7 @@ import { useWikiNavigation } from './WikiNavigationContext'
 import { Eyebrow } from '@/components/ui/eyebrow'
 import { TaxonomyTree } from '@/components/shared/taxonomy-tree'
 import type { TaxonomyTreeNode } from '@/components/shared/taxonomy-tree'
+import { ROUTES } from '@/lib/routes'
 
 /* ------------------------------------------------------------------ */
 /*  Helpers                                                            */
@@ -104,7 +105,7 @@ export const WikiSidebar = ({
 
   // Extract active slug from pathname
   const activeSlug = React.useMemo(() => {
-    const prefix = '/dashboard/wiki/'
+    const prefix = ROUTES.wiki.root + '/'
     if (!pathname.startsWith(prefix)) return undefined
     return pathname.slice(prefix.length).split('/')[0] || undefined
   }, [pathname])
@@ -126,7 +127,7 @@ export const WikiSidebar = ({
         <p className="text-[11px] text-muted-foreground leading-relaxed mb-3">
           Select your exam type in Settings to view the syllabus.
         </p>
-        <Link href="/dashboard/settings">
+        <Link href={ROUTES.dashboard.settings}>
           <button className="text-[11px] font-semibold text-primary hover:text-primary/80 uppercase tracking-wider cursor-pointer">
             Go to Settings
           </button>
@@ -150,7 +151,7 @@ export const WikiSidebar = ({
     )
   }
 
-  const hasArticleOpen = pathname !== '/dashboard/wiki' && pathname.startsWith('/dashboard/wiki/')
+  const hasArticleOpen = pathname !== ROUTES.wiki.root && pathname.startsWith(ROUTES.wiki.root + '/')
 
   return (
     <aside className="w-full h-full bg-background flex flex-col overflow-hidden">
@@ -165,7 +166,7 @@ export const WikiSidebar = ({
           <TaxonomyTree
             nodes={syllabusTree}
             activeSlug={activeSlug}
-            basePath="/dashboard/wiki"
+            basePath={ROUTES.wiki.root}
             onNavigate={handleNavigate}
             showCounts
             showSearch

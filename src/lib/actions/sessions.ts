@@ -3,6 +3,7 @@
 import { revalidatePath } from "next/cache";
 import { createClient, getUser } from "@/lib/supabase/server";
 import { sessionIdSchema } from "@/lib/validations";
+import { ROUTES } from "@/lib/routes";
 
 export type SessionActionResult = { error?: string };
 
@@ -43,8 +44,8 @@ export async function closeSession(sessionId: string): Promise<SessionActionResu
     .eq("user_id", user.id);
 
   if (error) return { error: error.message };
-  revalidatePath("/dashboard/drills");
-  revalidatePath("/dashboard");
+  revalidatePath(ROUTES.dashboard.drills);
+  revalidatePath(ROUTES.dashboard.root);
   return {};
 }
 
@@ -69,7 +70,7 @@ export async function deleteSession(sessionId: string): Promise<SessionActionRes
     .eq("user_id", user.id);
 
   if (error) return { error: error.message };
-  revalidatePath("/dashboard/drills");
-  revalidatePath("/dashboard");
+  revalidatePath(ROUTES.dashboard.drills);
+  revalidatePath(ROUTES.dashboard.root);
   return {};
 }

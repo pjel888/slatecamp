@@ -1,7 +1,12 @@
+import dynamic from 'next/dynamic'
 import { getPacingInsights } from '@/lib/actions/analytics'
-import { PacingInsights } from '@/components/analytics/PacingInsights'
 
-export async function PacingInsightsSection() {
-  const data = await getPacingInsights()
-  return <PacingInsights data={data} />
+const PacingInsights = dynamic(
+  () => import('@/components/analytics/PacingInsights').then(m => m.PacingInsights),
+)
+
+export const PacingInsightsSection = async () => {
+  const result = await getPacingInsights()
+  if (result.error) throw new Error(result.error)
+  return <PacingInsights data={result.data} />
 }

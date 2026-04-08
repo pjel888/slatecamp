@@ -1,4 +1,5 @@
 import { redirect } from 'next/navigation'
+import { ROUTES } from '@/lib/routes'
 import Link from 'next/link'
 import { createClient, getUser } from '@/lib/supabase/server'
 import { isPaidUser } from '@/lib/paywall/check-access'
@@ -15,7 +16,7 @@ import { getSubjectName } from '@/types/testing'
 
 const WelcomeProPage = async () => {
   const { data: { user } } = await getUser()
-  if (!user) redirect('/login')
+  if (!user) redirect(ROUTES.auth.login)
 
   const paid = await isPaidUser()
   if (!paid) redirect('/dashboard')
@@ -129,7 +130,7 @@ const WelcomeProPage = async () => {
 
         {/* CTA */}
         <Link
-          href="/dashboard"
+          href={ROUTES.dashboard.root}
           className="mt-8 inline-flex items-center justify-center rounded-sm bg-primary px-8 py-3.5 text-sm font-semibold text-white transition-colors duration-150 ease-out hover:bg-primary/90"
         >
           Go to Dashboard

@@ -5,6 +5,7 @@ import { createClient } from "@/lib/supabase/client";
 import { SignInWithGoogleButton } from "@/components/auth/SignInWithGoogleButton";
 import { Eyebrow } from "@/components/ui/eyebrow";
 import Link from "next/link";
+import { ROUTES } from "@/lib/routes";
 
 export default function AdminLandingPage() {
   const [error, setError] = useState<string | null>(null);
@@ -18,7 +19,7 @@ export default function AdminLandingPage() {
     const { data, error: oauthError } = await supabase.auth.signInWithOAuth({
       provider: "google",
       options: {
-        redirectTo: `${window.location.origin}/auth/callback?next=/admin/dashboard`,
+        redirectTo: `${window.location.origin}${ROUTES.auth.callback}?next=${ROUTES.admin.dashboard}`,
       },
     });
 
@@ -36,7 +37,7 @@ export default function AdminLandingPage() {
     <div className="flex min-h-screen flex-col items-center justify-center bg-surface-light px-6">
       <div className="w-full max-w-[400px] space-y-8">
         <div className="text-center">
-          <Link href="/" className="text-xl font-bold text-text-primary">
+          <Link href={ROUTES.home} className="text-xl font-bold text-text-primary">
             SLATECAMP <span className="text-text-tertiary">ADMIN</span>
           </Link>
           <h1 className="mt-6 text-xl font-semibold text-text-primary">Staff Portal</h1>

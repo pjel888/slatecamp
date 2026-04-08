@@ -4,10 +4,11 @@ import { useCallback } from 'react'
 import { ArrowUp, ArrowDown, Minus, DownloadSimple, ShareNetwork } from '@phosphor-icons/react'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Card, CardContent } from '@/components/ui/card'
+import { ChartEmptyState } from '@/components/analytics/ChartEmptyState'
 import type { ProgressReport } from '@/lib/actions/progress-report/generate'
 
 interface Props {
-  report: ProgressReport
+  report: ProgressReport | null
 }
 
 const formatMinutes = (mins: number): string => {
@@ -24,6 +25,15 @@ const formatPeriod = (start: string, end: string): string => {
 }
 
 export const ProgressCard = ({ report }: Props) => {
+  if (!report) {
+    return (
+      <ChartEmptyState
+        title="No progress data"
+        description="Your monthly progress report generates after a week of studying."
+        height="h-[280px]"
+      />
+    )
+  }
   const handleDownload = useCallback(async () => {
     try {
       // Use the clipboard API to copy as a screenshot prompt,

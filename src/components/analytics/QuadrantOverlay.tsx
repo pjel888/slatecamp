@@ -1,6 +1,7 @@
 'use client'
 
 import { cn } from '@/lib/utils'
+import { CHART_COLORS } from '@/lib/constants/chart-colors'
 
 interface QuadrantLabels {
   topLeft?: string
@@ -26,10 +27,10 @@ export function QuadrantOverlay({
   className,
 }: QuadrantOverlayProps) {
   const defaultColors = {
-    topLeft: colors?.topLeft ?? '#4A5568',
-    topRight: colors?.topRight ?? '#4A5568',
-    bottomLeft: colors?.bottomLeft ?? '#4A5568',
-    bottomRight: colors?.bottomRight ?? '#4A5568',
+    topLeft: colors?.topLeft ?? CHART_COLORS.quadrantFallback,
+    topRight: colors?.topRight ?? CHART_COLORS.quadrantFallback,
+    bottomLeft: colors?.bottomLeft ?? CHART_COLORS.quadrantFallback,
+    bottomRight: colors?.bottomRight ?? CHART_COLORS.quadrantFallback,
   }
 
   return (

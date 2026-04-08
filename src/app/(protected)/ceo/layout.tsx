@@ -1,4 +1,5 @@
 import { redirect } from 'next/navigation'
+import { ROUTES } from '@/lib/routes'
 import { createClient } from '@/lib/supabase/server'
 import { CeoShell } from './_components/CeoShell'
 
@@ -14,7 +15,7 @@ export default async function CeoLayout({
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
 
-  if (!user) redirect('/login')
+  if (!user) redirect(ROUTES.auth.login)
 
   const { data: profile } = await supabase
     .from('profiles')
@@ -23,7 +24,7 @@ export default async function CeoLayout({
     .single()
 
   if (!profile || !['ceo', 'super_admin'].includes(profile.role ?? '')) {
-    redirect('/dashboard')
+    redirect(ROUTES.dashboard.root)
   }
 
   return (

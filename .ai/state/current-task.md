@@ -1,14 +1,38 @@
-# Current Task: Drills PRD & Technical Specification — COMPLETE
+# Current Task: Analytics Unified Overhaul — ALL 16 PHASES COMPLETE
 
 **STATUS:** COMPLETE
-**DATE:** 2026-04-08
+**DATE:** 2026-04-09
 
-## Accomplishments
-- **PRD Written:** Comprehensive 7-part PRD at `.ai/docs/01-product/002-drill-modes.md`.
-- **Naming Consolidation:** Successfully migrated "Quiz/Test" terminology to "Drills" for user-facing surfaces.
-- **Sections Covered:** Product Vision, Learning Science (Testing Effect, Bjork, etc.), Mode Catalog (Camp, Storm, Blindspot, Endurance, Proof Sim), Question Engine (60/30/10 Routing), Distractor Normalization Pipeline, UX/UI Spec (Mermaid IA, Component Hierarchy), Technical Architecture (Zustand, CAGE, Supabase Schema, EMA Formula), Integration Points (Mastery, Wiki, 3D Lab), and Roadmap.
-- **Audit Verified:** Schema and logic verified against actual codebase (`src/lib/quiz`, `src/lib/readiness-score.ts`, `src/lib/actions/quiz-v2/submit-answer.ts`).
-- **Plan Created & Archived:** `.ai/plans/document_drill_modes_plan.md` -> `.ai/archive/plans/document_drill_modes_plan.md`.
+## Completed: All Remediation Phases (58 gaps closed)
+- **Phase 0:** Foundations — ChartEmptyState, shared-helpers, chart-colors, AnalyticsErrorBoundary, useChartColors
+- **Phase 1A:** Error boundaries — error.tsx + 23 sections wrapped
+- **Phase 1B:** Result types — 22 server actions migrated to AnalyticsResult<T>
+- **Phase 2:** Design tokens — 15 Recharts components, 7 magic numbers extracted
+- **Phase 3:** Consistency — shadcn migration, dynamic imports, ReadinessSection refactor
+- **Phase 4:** Performance — pagination, unstable_cache, React.cache dedup
+- **Phase 5:** Orphan resolution — ErrorPatterns wired, 4 orphans deleted, CalibrationCurve wired
+- **Phase 6:** Accessibility — 14 aria-labels, 3 heatmap text overlays
+- **Phase 7:** Empty states — 22+ section-specific ChartEmptyState messages
 
-## Previous Task
-- 3D Lab PRD & Technical Specification (complete 2026-04-08)
+## Completed: All Expansion Phases (18 new sections)
+- **EX-Phase 0:** Data pipeline — user_theta write, trackEvent, cross-feature-data helpers
+- **EX-Phase 0.5:** Tab infrastructure — /dashboard/analytics/advanced route + AnalyticsTabNav
+- **EX-Phase 1:** Student Drill Intelligence — 5 sections (IRT, Mastery, ModeFunnel, Metacognition, Relearning)
+- **EX-Phase 2:** Student Reading Intelligence — 2 sections (ReadingCorrelation, ReadingDepth)
+- **EX-Phase 3:** CEO Core Analytics — 4 sections + /ceo/analytics page + nav link
+- **EX-Phase 4:** CEO Advanced — 4 sections (PassRate, CAGEQuality, StudyCohort, QuestionHealth)
+- **EX-Phase 5:** Cross-Feature Intelligence — 3 sections (MultimodalStudy, TopicIntelligence, LearningVelocity)
+
+## Product Decisions — ALL RESOLVED (2026-04-09)
+- Orphaned fetchers: Wire error patterns + memory strength, delete review calendar
+- CalibrationCurve: Card + curve in same section
+- Empty states: Section-specific messages
+- Caching: 5min unstable_cache for slow sections, force-dynamic for readiness + streak
+- Tab placement: "Advanced Insights" tab via /dashboard/analytics/advanced route
+- Analytics events: 5 key funnel events via trackEvent()
+- CEO access: CEO role only, /ceo/analytics page
+- Engagement weights: Fixed weights (highlights 0.15, bookmarks 0.1, teach-backs 0.25, EI 0.2, session 0.3)
+
+## Previous: Analytics Feature Spec — COMPLETE (2026-04-08)
+
+## Previous: Route & Path Constants Consolidation — Phase 1 COMPLETE

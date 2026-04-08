@@ -1,4 +1,5 @@
 import { redirect } from 'next/navigation'
+import { ROUTES } from '@/lib/routes'
 import { getUser } from '@/lib/supabase/server'
 import SharedPageLayout from '@/components/layouts/SharedPageLayout'
 import ExamOutcomeSurvey from './ExamOutcomeSurvey'
@@ -21,7 +22,7 @@ const CURRENT_EXAM_BATCH = 'June 2026'
 
 const ExamOutcomePage = async () => {
   const { data: { user } } = await getUser()
-  if (!user) redirect('/login')
+  if (!user) redirect(ROUTES.auth.login)
 
   return (
     <SharedPageLayout>

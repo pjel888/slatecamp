@@ -1,4 +1,5 @@
 import { redirect } from 'next/navigation'
+import { ROUTES } from '@/lib/routes'
 import { getAssessmentResults } from '@/lib/actions/assessment'
 import { recommendTrail } from '@/lib/queries/trails'
 import { checkScoreRevealAccess, markScoreRevealed } from '@/lib/paywall/score-reveal'
@@ -8,17 +9,17 @@ import ScoreReveal from '@/components/assessment/ScoreReveal'
 
 const ScoreRevealPage = async () => {
   const { data: { user } } = await getUser()
-  if (!user) redirect('/login')
+  if (!user) redirect(ROUTES.auth.login)
 
   const results = await getAssessmentResults()
   if (!results) {
-    redirect('/dashboard/assessment')
+    redirect(ROUTES.dashboard.assessment)
   }
 
   // Score reveal "shown once" enforcement for free users
   const revealAccess = await checkScoreRevealAccess(user.id)
   if (!revealAccess.canView) {
-    redirect('/dashboard')
+    redirect(ROUTES.dashboard.root)
   }
 
   // Mark as shown (fire-and-forget) and track funnel event

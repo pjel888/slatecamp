@@ -6,6 +6,8 @@ import {
   ResponsiveContainer, ComposedChart, Area, Line,
   XAxis, YAxis, CartesianGrid, Tooltip, ReferenceLine,
 } from 'recharts'
+import { ChartEmptyState } from '@/components/analytics/ChartEmptyState'
+import { useChartColors } from '@/hooks/useChartColors'
 import type { SessionHistoryData } from '@/lib/actions/analytics-data'
 
 interface Props {
@@ -19,6 +21,7 @@ const trendLabel = (trend: SessionHistoryData['trend']) => {
 }
 
 export const SessionHistory = ({ data }: Props) => {
+  const colors = useChartColors()
   const trend = trendLabel(data.trend)
 
   return (
@@ -44,28 +47,29 @@ export const SessionHistory = ({ data }: Props) => {
       </CardHeader>
       <CardContent className="p-2 pt-0">
         {data.points.length < 2 ? (
-          <div className="h-[220px] flex items-center justify-center">
-            <p className="text-xs text-center leading-snug max-w-[200px] text-muted-foreground">
-              Complete a few study sessions to see your analytics here.
-            </p>
-          </div>
+          <ChartEmptyState
+            title="No session history"
+            description="Session accuracy trends appear after completing drills."
+            height="h-[260px]"
+          />
         ) : (
           <div className="h-[220px]">
+            <div role="img" aria-label="Session accuracy history chart showing performance trends over time">
             <ResponsiveContainer width="100%" height="100%">
               <ComposedChart data={data.points} margin={{ top: 5, right: 8, left: -25, bottom: 0 }}>
-                <CartesianGrid stroke="#D4DAE3" strokeDasharray="3 3" />
+                <CartesianGrid stroke={colors.gridStroke} strokeDasharray="3 3" />
                 <XAxis
                   dataKey="date"
                   axisLine={false}
                   tickLine={false}
-                  tick={{ fill: '#4A5568', fontSize: 11 }}
+                  tick={{ fill: colors.axisTickFill, fontSize: 11 }}
                 />
                 <YAxis
                   domain={[0, 100]}
                   tickFormatter={v => `${v}%`}
                   axisLine={false}
                   tickLine={false}
-                  tick={{ fill: '#4A5568', fontSize: 11 }}
+                  tick={{ fill: colors.axisTickFill, fontSize: 11 }}
                   ticks={[0, 25, 50, 75, 100]}
                 />
                 <Tooltip
@@ -75,30 +79,31 @@ export const SessionHistory = ({ data }: Props) => {
                   ]}
                   contentStyle={{
                     borderRadius: '8px',
-                    border: '1px solid #D4DAE3',
+                    border: `1px solid ${colors.tooltipBorder}`,
                     boxShadow: '0 1px 2px rgba(0,0,0,0.05)',
                     fontSize: '12px',
                   }}
                 />
-                <ReferenceLine y={75} stroke="#2D9F6F" strokeDasharray="4 4" strokeWidth={1} />
+                <ReferenceLine y={75} stroke={colors.referenceLine} strokeDasharray="4 4" strokeWidth={1} />
                 <Area
                   type="monotone"
                   dataKey="accuracy"
-                  stroke="#1B3FC4"
+                  stroke={colors.primary}
                   strokeWidth={1.5}
                   fillOpacity={0.08}
-                  fill="#1B3FC4"
-                  dot={{ r: 3, fill: '#1B3FC4', stroke: '#fff', strokeWidth: 1.5 }}
+                  fill={colors.primary}
+                  dot={{ r: 3, fill: colors.primary, stroke: '#fff', strokeWidth: 1.5 }}
                 />
                 <Line
                   type="monotone"
                   dataKey="accuracy"
-                  stroke="#1B3FC4"
+                  stroke={colors.primary}
                   strokeWidth={0}
                   dot={false}
                 />
               </ComposedChart>
             </ResponsiveContainer>
+            </div>
           </div>
         )}
       </CardContent>

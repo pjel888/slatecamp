@@ -6,6 +6,8 @@ import {
   ResponsiveContainer, BarChart, Bar, XAxis, YAxis,
   CartesianGrid, Tooltip,
 } from 'recharts'
+import { ChartEmptyState } from '@/components/analytics/ChartEmptyState'
+import { useChartColors } from '@/hooks/useChartColors'
 import type { TimeSpentDistributionData } from '@/lib/actions/analytics-data'
 
 interface Props {
@@ -27,6 +29,7 @@ const getInsight = (avgMs: number): string => {
 }
 
 export const TimeSpentDistribution = ({ data }: Props) => {
+  const colors = useChartColors()
   const avgLabel = formatAvg(data.avgMs)
 
   return (
@@ -49,43 +52,45 @@ export const TimeSpentDistribution = ({ data }: Props) => {
       </CardHeader>
       <CardContent className="p-2 pt-0">
         {data.buckets.length === 0 ? (
-          <div className="h-[220px] flex items-center justify-center">
-            <p className="text-xs text-center leading-snug max-w-[200px] text-muted-foreground">
-              Complete a few study sessions to see your analytics here.
-            </p>
-          </div>
+          <ChartEmptyState
+            title="No timing data"
+            description="Response time distribution appears after completing drills."
+            height="h-[280px]"
+          />
         ) : (
           <>
             <div className="h-[180px]">
+              <div role="img" aria-label="Response time distribution bar chart showing how long you spend per question">
               <ResponsiveContainer width="100%" height="100%">
                 <BarChart
                   data={data.buckets}
                   margin={{ top: 4, right: 8, left: -20, bottom: 4 }}
                 >
-                  <CartesianGrid stroke="#D4DAE3" strokeDasharray="3 3" />
+                  <CartesianGrid stroke={colors.gridStroke} strokeDasharray="3 3" />
                   <XAxis
                     dataKey="label"
                     axisLine={false}
                     tickLine={false}
-                    tick={{ fill: '#4A5568', fontSize: 11 }}
+                    tick={{ fill: colors.axisTickFill, fontSize: 11 }}
                   />
                   <YAxis
                     axisLine={false}
                     tickLine={false}
-                    tick={{ fill: '#4A5568', fontSize: 11 }}
+                    tick={{ fill: colors.axisTickFill, fontSize: 11 }}
                   />
                   <Tooltip
                     formatter={(v: any) => [v, 'Questions']}
                     contentStyle={{
                       borderRadius: '8px',
-                      border: '1px solid #D4DAE3',
+                      border: `1px solid ${colors.tooltipBorder}`,
                       boxShadow: '0 1px 2px rgba(0,0,0,0.05)',
                       fontSize: '12px',
                     }}
                   />
-                  <Bar dataKey="count" fill="#1B3FC4" radius={[3, 3, 0, 0]} maxBarSize={40} />
+                  <Bar dataKey="count" fill={colors.primary} radius={[3, 3, 0, 0]} maxBarSize={40} />
                 </BarChart>
               </ResponsiveContainer>
+              </div>
             </div>
             {data.avgMs > 0 && (
               <p className="text-[11px] text-text-secondary mt-1 leading-snug">

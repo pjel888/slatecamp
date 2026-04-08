@@ -2,6 +2,7 @@
 
 import { createClient, getUser } from '@/lib/supabase/server'
 import type { ErrorCategory } from '@/lib/quiz/error-classifier'
+import { wrapResult, wrapError, type AnalyticsResult } from '@/lib/actions/analytics/shared-helpers'
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -31,10 +32,10 @@ export interface ErrorPatternData {
  * Fetch error pattern analytics for the current user.
  * Returns category distribution and top struggling topics.
  */
-export const getErrorPatterns = async (): Promise<ErrorPatternData | null> => {
+export const getErrorPatterns = async (): Promise<AnalyticsResult<ErrorPatternData | null>> => {
   const supabase = await createClient()
   const { data: { user } } = await getUser()
-  if (!user) return null
+  if (!user) return wrapResult(null)
 
   const thirtyDaysAgo = new Date()
   thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30)
@@ -52,7 +53,7 @@ export const getErrorPatterns = async (): Promise<ErrorPatternData | null> => {
 
     if (error || !interactions) {
       console.error('[get-error-patterns] Query failed:', error?.message)
-      return null
+      return wrapError('Failed to load error patterns', null)
     }
 
     // 2. Count by category
@@ -121,14 +122,14 @@ export const getErrorPatterns = async (): Promise<ErrorPatternData | null> => {
       errorCount: knowledgeGapByTopic.get(id) ?? 0,
     }))
 
-    return {
+    return wrapResult({
       categoryCounts,
       totalClassified,
       conceptConfusionTopics,
       knowledgeGapTopics,
-    }
+    })
   } catch (err) {
     console.error('[get-error-patterns] Unexpected error:', err)
-    return null
+    return wrapError('Failed to load error patterns', null)
   }
 }

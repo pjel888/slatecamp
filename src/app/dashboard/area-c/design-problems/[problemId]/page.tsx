@@ -7,6 +7,7 @@ import { getUser } from "@/lib/supabase/server"
 import { DesignProblemSession } from "../../_components/DesignProblemSession"
 import SharedPageLayout from "@/components/layouts/SharedPageLayout"
 import { Skeleton } from "@/components/ui/skeleton"
+import { ROUTES } from "@/lib/routes"
 
 const DIFFICULTY_LABELS: Record<number, string> = {
   1: "Introductory",

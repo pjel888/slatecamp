@@ -8,6 +8,7 @@ import {
 } from '@/components/ui/tooltip'
 import { Card } from '@/components/ui/card'
 import { RichInfoPopover } from '@/components/dashboard/RichInfoPopover'
+import { ChartEmptyState } from '@/components/analytics/ChartEmptyState'
 import { cn } from '@/lib/utils'
 
 // ─── Types ────────────────────────────────────────────────────────────────────
@@ -141,6 +142,16 @@ export function TimelineHeatmap({ rows, weekLabels }: TimelineHeatmapProps) {
   )
 
   const gridW = visibleWeeks.length * (CELL_W + COL_GAP) - COL_GAP
+
+  if (rows.length === 0 || weekLabels.length === 0) {
+    return (
+      <ChartEmptyState
+        title="No study activity yet"
+        description="Your study timeline will appear after your first drill session."
+        height="h-[140px]"
+      />
+    )
+  }
 
   return (
     <Card className="border-border bg-card p-3 relative">

@@ -4,6 +4,7 @@ import { Timer, Warning } from '@phosphor-icons/react'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { RichInfoPopover } from '@/components/dashboard/RichInfoPopover'
+import { ChartEmptyState } from '@/components/analytics/ChartEmptyState'
 import { cn } from '@/lib/utils'
 import type { PacingInsightItem } from '@/lib/actions/analytics'
 
@@ -20,7 +21,11 @@ export function PacingInsights({ data }: Props) {
       </CardHeader>
       <CardContent className="p-2 pt-0">
         {data.length === 0 ? (
-          <p className="text-xs text-muted-foreground leading-snug">No significant pacing patterns detected yet. Complete more quizzes to identify time drains.</p>
+          <ChartEmptyState
+            title="No pacing insights"
+            description="Pacing insights appear after answering questions across subjects."
+            height="h-[320px]"
+          />
         ) : (
           <div className="flex flex-col gap-2">
             {data.map(item => {

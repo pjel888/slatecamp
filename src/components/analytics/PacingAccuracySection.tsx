@@ -6,6 +6,7 @@ const PacingAccuracy = dynamic(
 )
 
 export const PacingAccuracySection = async () => {
-  const data = await getPacingAccuracyData()
-  return <PacingAccuracy data={data} />
+  const result = await getPacingAccuracyData()
+  if (result.error) throw new Error(result.error)
+  return <PacingAccuracy data={result.data} />
 }

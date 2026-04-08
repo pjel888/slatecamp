@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { ArrowRight, Path } from '@phosphor-icons/react/dist/ssr'
+import { ROUTES } from '@/lib/routes'
 
 interface DashboardTrailCardProps {
   dayNumber: number
@@ -22,7 +23,7 @@ export const DashboardTrailCard = ({
 }: DashboardTrailCardProps) => {
   return (
     <Link
-      href={`/dashboard/camptrails/${trailSlug}/today`}
+      href={ROUTES.dashboard.trailToday(trailSlug)}
       className="block rounded-md border border-camp-cobalt bg-primary-50 p-4 transition-shadow duration-150 ease-out hover:shadow-sm"
     >
       <div className="flex items-start justify-between mb-2">
@@ -57,7 +58,7 @@ export const DashboardTrailCard = ({
 export const DashboardTrailPrompt = () => {
   return (
     <Link
-      href="/dashboard/trails"
+      href={ROUTES.dashboard.trails}
       className="block rounded-md border border-dashed border-border bg-surface-light p-4 transition-shadow duration-150 ease-out hover:shadow-sm hover:border-camp-cobalt"
     >
       <div className="flex items-center gap-3">
