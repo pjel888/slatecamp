@@ -257,23 +257,24 @@ Files to MODIFY (removed ALL `<Html>` and `<Text>`):
 ---
 
 ### Wave 1: Foundation (13 modules — LOW/MEDIUM)
+**Status:** ✅ COMPLETE (2026-04-08)
 **Depends on:** Architecture P0-P2 + Build Phase 0
 
-| # | Module | Status |
-|---|--------|--------|
-| 1 | MOD-102 Room Sizer | [ ] Verify BUILT |
-| 2 | MOD-103 FLAR & Setback | [ ] Verify BUILT |
-| 3 | MOD-105 Height Visualizer | [ ] Verify BUILT |
-| 4 | MOD-106 Doorway + Fenestration | [ ] Build (PARTIAL) |
-| 5 | MOD-207 Accessible Parking | [ ] Build |
-| 6 | MOD-208 Elevator Cab | [ ] Build |
-| 7 | MOD-405 Parks Ratio | [ ] Build |
-| 8 | MOD-504 Solar Painter | [ ] Build |
-| 9 | MOD-502 Erosion Fence | [ ] Build |
-| 10 | Light & Vent Well | [ ] Verify BUILT |
-| 11 | Fire Extinguisher | [ ] Verify BUILT |
-| 12 | FAR Massing | [ ] Verify BUILT |
-| 13 | ISA vs USA | [ ] Verify BUILT |
+| # | Module | Config ID | Template | Status |
+|---|--------|-----------|----------|--------|
+| 1 | MOD-102 Room Sizer | `room-size-minimums` | parametric | [x] Verified |
+| 2 | MOD-103 FLAR & Setback | `nbcp-envelope` | parametric | [x] Verified |
+| 3 | MOD-105 Height Visualizer | `building-height-limits` | parametric | [x] Verified |
+| 4 | MOD-106 Doorway + Fenestration | `accessible-door-clearances` | parametric | [x] Verified (door clearances; fenestration via light-ventilation-openings) |
+| 5 | MOD-207 Accessible Parking | `accessible-parking` | floorplan | [x] Verified |
+| 6 | MOD-208 Elevator Cab | `accessible-elevator-cab` | parametric | [x] Verified |
+| 7 | MOD-405 Parks Ratio | `open-space-requirements` | parametric | [x] Verified |
+| 8 | MOD-504 Solar Painter | `solar-orientation-painter` | parametric | [x] BUILT (new) |
+| 9 | MOD-502 Erosion Fence | `erosion-control-fence` | parametric | [x] BUILT (new) |
+| 10 | Light & Vent Well | `light-ventilation-openings` | parametric | [x] Verified |
+| 11 | Fire Extinguisher | `fire-extinguisher-placement` | floorplan | [x] Verified |
+| 12 | FAR Massing | `nbcp-envelope` | parametric | [x] Verified (FAR included in NBCP envelope) |
+| 13 | ISA vs USA | `site-development-controls` | bespoke | [x] Verified (bespoke DevControls scene) |
 
 ---
 

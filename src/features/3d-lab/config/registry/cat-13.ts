@@ -15,6 +15,7 @@ import { subdivisionLayoutBp220Config } from '@/features/3d-lab/config/modules/1
 import { subdivisionLayoutPd957Config } from '@/features/3d-lab/config/modules/13-planning/subdivision-layout-pd957'
 import { waterCodeEasementsConfig } from '@/features/3d-lab/config/modules/13-planning/water-code-easements'
 import { zoningSetbackOverlayConfig } from '@/features/3d-lab/config/modules/13-planning/zoning-setback-overlay'
+import { erosionControlFenceConfig } from '@/features/3d-lab/config/modules/13-planning/erosion-control-fence'
 
 export const cat13Modules: ModuleRegistryEntry[] = [
   {
@@ -146,6 +147,16 @@ export const cat13Modules: ModuleRegistryEntry[] = [
     launchPhase: 2,
     status: 'ready' as const,
     description: zoningSetbackOverlayConfig.description,
+  },
+  {
+    id: erosionControlFenceConfig.id,
+    title: erosionControlFenceConfig.title,
+    templateType: 'parametric' as const,
+    subject: erosionControlFenceConfig.subject,
+    categoryId: 'PLANNING',
+    launchPhase: 1,
+    status: 'ready' as const,
+    description: erosionControlFenceConfig.description,
   },
 ]
 

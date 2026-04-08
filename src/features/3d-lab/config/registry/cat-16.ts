@@ -5,6 +5,7 @@ import type { ModuleRegistryEntry } from '@/features/3d-lab/types/templates'
 import { carportAbutmentRulesConfig } from '@/features/3d-lab/config/modules/16-site-dev/carport-abutment-rules'
 import { parkingLayoutConfig } from '@/features/3d-lab/config/modules/16-site-dev/parking-layout'
 import { parkingSlotDimensionsConfig } from '@/features/3d-lab/config/modules/16-site-dev/parking-slot-dimensions'
+import { solarOrientationPainterConfig } from '@/features/3d-lab/config/modules/16-site-dev/solar-orientation-painter'
 
 export const cat16Modules: ModuleRegistryEntry[] = [
   {
@@ -36,6 +37,16 @@ export const cat16Modules: ModuleRegistryEntry[] = [
     launchPhase: 3,
     status: 'ready' as const,
     description: parkingSlotDimensionsConfig.description,
+  },
+  {
+    id: solarOrientationPainterConfig.id,
+    title: solarOrientationPainterConfig.title,
+    templateType: 'parametric' as const,
+    subject: solarOrientationPainterConfig.subject,
+    categoryId: 'SITE_DEV',
+    launchPhase: 1,
+    status: 'ready' as const,
+    description: solarOrientationPainterConfig.description,
   },
 ]
 
