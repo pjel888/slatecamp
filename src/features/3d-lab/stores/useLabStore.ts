@@ -1,191 +1,210 @@
-// src/stores/useLabStore.ts — Global 3D Lab state (Zustand)
-// No component-local state for anything that crosses component boundaries.
+// src/features/3d-lab/stores/useLabStore.ts
+// Backward-compatible re-export that delegates to the three focused stores.
+// New code should import directly from the focused stores:
+//   useLabNavigationStore, useLabProgressStore, useLabViewStore
 
-import { create } from 'zustand'
-import type {
-  PanelMode,
-  ExploreMode,
-  ComplianceState,
-  QuizResult,
-} from '@/types/3d-lab'
+export { useLabNavigationStore } from './useLabNavigationStore'
+export type { LabNavigationState } from './useLabNavigationStore'
 
-interface LabState {
-  // Panel state
+export { useLabProgressStore } from './useLabProgressStore'
+export type { LabProgressState } from './useLabProgressStore'
+
+export { useLabViewStore } from './useLabViewStore'
+export type { LabViewState } from './useLabViewStore'
+
+// ---------------------------------------------------------------------------
+// Combined selector hook — mirrors the original useLabStore API surface so
+// existing call-sites (useComplianceCheck, useGuidedSequence, LabViewport,
+// ModuleViewer) keep working without any changes.
+// ---------------------------------------------------------------------------
+
+import { useLabNavigationStore } from './useLabNavigationStore'
+import { useLabProgressStore } from './useLabProgressStore'
+import { useLabViewStore } from './useLabViewStore'
+import type { ExploreMode, ComplianceState, QuizResult, PanelMode } from '@/types/3d-lab'
+
+export interface LabState {
+  // View state
   activeHotspotId: string | null
   panelMode: PanelMode
   questionAnswered: boolean
   selectedOptionId: string | null
+  crossSectionEnabled: boolean
+  explodedViewEnabled: boolean
+  quizModeActive: boolean
 
   // Progress tracking
   visitedHotspotIds: Set<string>
   answeredQuestionIds: Set<string>
   correctQuestionIds: Set<string>
-  currentSequenceIndex: number
+  parametricValues: Record<string, number>
+  complianceState: ComplianceState
+  quizResults: QuizResult[]
 
-  // Exploration mode
+  // Navigation
+  currentSequenceIndex: number
   exploreMode: ExploreMode
   guidedSequenceComplete: boolean
 
-  // Parametric state
-  parametricValues: Record<string, number>
-  complianceState: ComplianceState
-
-  // View state
-  crossSectionEnabled: boolean
-  explodedViewEnabled: boolean
-  quizModeActive: boolean
-
-  // Quiz results
-  quizResults: QuizResult[]
-
-  // Actions
+  // Actions — view
   openHotspot: (id: string) => void
   closePanel: () => void
   openQuestion: () => void
   selectOption: (optionId: string) => void
-  advanceSequence: () => void
-  setExploreMode: (mode: ExploreMode) => void
-  setParametricValue: (controlId: string, value: number) => void
-  setComplianceState: (state: ComplianceState) => void
   toggleCrossSection: () => void
   toggleExplodedView: () => void
   enterQuizMode: () => void
   exitQuizMode: () => void
-  addQuizResult: (result: QuizResult) => void
   resetCamera: () => void
+
+  // Actions — progress
+  addQuizResult: (result: QuizResult) => void
+  setParametricValue: (controlId: string, value: number) => void
+  setComplianceState: (state: ComplianceState) => void
+
+  // Actions — navigation
+  advanceSequence: () => void
+  setExploreMode: (mode: ExploreMode) => void
+
+  // Session reset
   resetSession: () => void
 }
 
-export const useLabStore = create<LabState>((set, get) => ({
-  // Panel state
-  activeHotspotId: null,
-  panelMode: 'none',
-  questionAnswered: false,
-  selectedOptionId: null,
+const buildCombined = (): LabState => {
+  const nav = useLabNavigationStore.getState()
+  const progress = useLabProgressStore.getState()
+  const view = useLabViewStore.getState()
 
-  // Progress tracking
-  visitedHotspotIds: new Set(),
-  answeredQuestionIds: new Set(),
-  correctQuestionIds: new Set(),
-  currentSequenceIndex: 0,
+  return {
+    // View
+    activeHotspotId: view.activeHotspotId,
+    panelMode: view.panelMode,
+    questionAnswered: view.questionAnswered,
+    selectedOptionId: view.selectedOptionId,
+    crossSectionEnabled: view.crossSectionEnabled,
+    explodedViewEnabled: view.explodedViewEnabled,
+    quizModeActive: view.quizModeActive,
+    openHotspot: view.openHotspot,
+    closePanel: view.closePanel,
+    openQuestion: view.openQuestion,
+    selectOption: view.selectOption,
+    toggleCrossSection: view.toggleCrossSection,
+    toggleExplodedView: view.toggleExplodedView,
+    enterQuizMode: view.enterQuizMode,
+    exitQuizMode: view.exitQuizMode,
+    resetCamera: view.resetCamera,
 
-  // Exploration mode
-  exploreMode: 'guided',
-  guidedSequenceComplete: false,
+    // Progress
+    visitedHotspotIds: progress.visitedHotspotIds,
+    answeredQuestionIds: progress.answeredQuestionIds,
+    correctQuestionIds: progress.correctQuestionIds,
+    parametricValues: progress.parametricValues,
+    complianceState: progress.complianceState,
+    quizResults: progress.quizResults,
+    addQuizResult: progress.addQuizResult,
+    setParametricValue: progress.setParametricValue,
+    setComplianceState: progress.setComplianceState,
 
-  // Parametric state
-  parametricValues: {},
-  complianceState: 'compliant',
+    // Navigation
+    currentSequenceIndex: nav.currentSequenceIndex,
+    exploreMode: nav.exploreMode,
+    guidedSequenceComplete: nav.guidedSequenceComplete,
+    advanceSequence: nav.advanceSequence,
+    setExploreMode: nav.setExploreMode,
 
-  // View state
-  crossSectionEnabled: false,
-  explodedViewEnabled: false,
-  quizModeActive: false,
+    resetSession: () => {
+      view.resetView()
+      progress.resetProgress()
+      nav.resetNavigation()
+    },
+  }
+}
 
-  // Quiz results
-  quizResults: [],
+/**
+ * Combined hook that merges all three focused stores into the original
+ * useLabStore API. Selector-based usage is preferred to avoid over-subscribing.
+ *
+ * Usage (selector — preferred):
+ *   const parametricValues = useLabStore((s) => s.parametricValues)
+ *
+ * Usage (full state — use sparingly):
+ *   const { resetSession } = useLabStore((s) => s)
+ */
+export const useLabStore = <T>(selector: (state: LabState) => T): T => {
+  const nav = useLabNavigationStore()
+  const progress = useLabProgressStore()
+  const view = useLabViewStore()
 
-  // Actions
-  openHotspot: (id) =>
-    set({
-      activeHotspotId: id,
-      panelMode: 'info',
-      questionAnswered: false,
-      selectedOptionId: null,
-    }),
+  const combined: LabState = {
+    activeHotspotId: view.activeHotspotId,
+    panelMode: view.panelMode,
+    questionAnswered: view.questionAnswered,
+    selectedOptionId: view.selectedOptionId,
+    crossSectionEnabled: view.crossSectionEnabled,
+    explodedViewEnabled: view.explodedViewEnabled,
+    quizModeActive: view.quizModeActive,
+    openHotspot: view.openHotspot,
+    closePanel: view.closePanel,
+    openQuestion: view.openQuestion,
+    selectOption: view.selectOption,
+    toggleCrossSection: view.toggleCrossSection,
+    toggleExplodedView: view.toggleExplodedView,
+    enterQuizMode: view.enterQuizMode,
+    exitQuizMode: view.exitQuizMode,
+    resetCamera: view.resetCamera,
+    visitedHotspotIds: progress.visitedHotspotIds,
+    answeredQuestionIds: progress.answeredQuestionIds,
+    correctQuestionIds: progress.correctQuestionIds,
+    parametricValues: progress.parametricValues,
+    complianceState: progress.complianceState,
+    quizResults: progress.quizResults,
+    addQuizResult: progress.addQuizResult,
+    setParametricValue: progress.setParametricValue,
+    setComplianceState: progress.setComplianceState,
+    currentSequenceIndex: nav.currentSequenceIndex,
+    exploreMode: nav.exploreMode,
+    guidedSequenceComplete: nav.guidedSequenceComplete,
+    advanceSequence: nav.advanceSequence,
+    setExploreMode: nav.setExploreMode,
+    resetSession: () => {
+      view.resetView()
+      progress.resetProgress()
+      nav.resetNavigation()
+    },
+  }
 
-  closePanel: () => {
-    const { activeHotspotId, visitedHotspotIds, questionAnswered } = get()
-    const nextVisited = new Set(visitedHotspotIds)
-    if (activeHotspotId && questionAnswered) {
-      nextVisited.add(activeHotspotId)
-    }
-    set({
-      activeHotspotId: null,
-      panelMode: 'none',
-      questionAnswered: false,
-      selectedOptionId: null,
-      visitedHotspotIds: nextVisited,
-    })
-  },
+  return selector(combined)
+}
 
-  openQuestion: () =>
-    set({ panelMode: 'question' }),
+// Static setState — used by useGuidedSequence:
+//   useLabStore.setState({ guidedSequenceComplete: true })
+useLabStore.setState = (partial: Partial<LabState>) => {
+  if ('guidedSequenceComplete' in partial) {
+    useLabNavigationStore.setState({ guidedSequenceComplete: partial.guidedSequenceComplete })
+  }
+  if ('currentSequenceIndex' in partial) {
+    useLabNavigationStore.setState({ currentSequenceIndex: partial.currentSequenceIndex })
+  }
+  if ('exploreMode' in partial) {
+    useLabNavigationStore.setState({ exploreMode: partial.exploreMode })
+  }
+  if ('complianceState' in partial) {
+    useLabProgressStore.setState({ complianceState: partial.complianceState })
+  }
+  if ('parametricValues' in partial) {
+    useLabProgressStore.setState({ parametricValues: partial.parametricValues })
+  }
+  if ('activeHotspotId' in partial) {
+    useLabViewStore.setState({ activeHotspotId: partial.activeHotspotId })
+  }
+  if ('panelMode' in partial) {
+    useLabViewStore.setState({ panelMode: partial.panelMode })
+  }
+  if ('quizModeActive' in partial) {
+    useLabViewStore.setState({ quizModeActive: partial.quizModeActive })
+  }
+}
 
-  selectOption: (optionId) =>
-    set({
-      selectedOptionId: optionId,
-      questionAnswered: true,
-    }),
-
-  advanceSequence: () => {
-    const { currentSequenceIndex } = get()
-    set({ currentSequenceIndex: currentSequenceIndex + 1 })
-  },
-
-  setExploreMode: (mode) =>
-    set({ exploreMode: mode }),
-
-  setParametricValue: (controlId, value) =>
-    set((state) => ({
-      parametricValues: { ...state.parametricValues, [controlId]: value },
-    })),
-
-  setComplianceState: (state) =>
-    set({ complianceState: state }),
-
-  toggleCrossSection: () =>
-    set((state) => ({ crossSectionEnabled: !state.crossSectionEnabled })),
-
-  toggleExplodedView: () =>
-    set((state) => ({ explodedViewEnabled: !state.explodedViewEnabled })),
-
-  enterQuizMode: () =>
-    set({
-      quizModeActive: true,
-      panelMode: 'quiz',
-      activeHotspotId: null,
-      quizResults: [],
-    }),
-
-  exitQuizMode: () =>
-    set({
-      quizModeActive: false,
-      panelMode: 'none',
-    }),
-
-  addQuizResult: (result) =>
-    set((state) => {
-      const nextAnswered = new Set(state.answeredQuestionIds)
-      nextAnswered.add(result.questionId)
-      const nextCorrect = new Set(state.correctQuestionIds)
-      if (result.correct) nextCorrect.add(result.questionId)
-      return {
-        quizResults: [...state.quizResults, result],
-        answeredQuestionIds: nextAnswered,
-        correctQuestionIds: nextCorrect,
-      }
-    }),
-
-  resetCamera: () => {},
-
-  resetSession: () =>
-    set({
-      activeHotspotId: null,
-      panelMode: 'none',
-      questionAnswered: false,
-      selectedOptionId: null,
-      visitedHotspotIds: new Set(),
-      answeredQuestionIds: new Set(),
-      correctQuestionIds: new Set(),
-      currentSequenceIndex: 0,
-      exploreMode: 'guided',
-      guidedSequenceComplete: false,
-      parametricValues: {},
-      complianceState: 'compliant',
-      crossSectionEnabled: false,
-      explodedViewEnabled: false,
-      quizModeActive: false,
-      quizResults: [],
-    }),
-}))
+// Static getState — used by LabViewport:
+//   useLabStore.getState().resetSession()
+useLabStore.getState = (): LabState => buildCombined()
