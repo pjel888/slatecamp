@@ -137,7 +137,7 @@ Each task is a standalone `.md` file:
     │   └── 002-changelog.md
     ├── 01-product/
     │   ├── 001-features.md
-    │   ├── 002-quiz-modes.md
+    │   ├── 002-drill-modes.md
     │   ├── 003-testing-hub.md
     │   ├── 004-wiki.md
     │   ├── 005-analytics.md
@@ -323,7 +323,7 @@ Each task is a standalone `.md` file:
 
 **Deliverables:**
 - `01-product/001-features.md`
-- `01-product/002-quiz-modes.md`
+- `01-product/002-drill-modes.md`
 - `01-product/003-testing-hub.md`
 - `01-product/004-wiki.md`
 - `01-product/005-analytics.md`
@@ -507,7 +507,7 @@ and interactive 3D learning modules under a shared Next.js codebase.
 
 **Product (8):**
 - [ ] `01-product/001-features.md`
-- [ ] `01-product/002-quiz-modes.md`
+- [ ] `01-product/002-drill-modes.md`
 - [ ] `01-product/003-testing-hub.md`
 - [ ] `01-product/004-wiki.md`
 - [ ] `01-product/005-analytics.md`

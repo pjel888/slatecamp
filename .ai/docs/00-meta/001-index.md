@@ -34,7 +34,7 @@ Each entry follows this format:
 | # | File | Status | Last Updated | Source |
 |---|------|--------|-------------|--------|
 | 001 | `01-product/001-features.md` | ✅ Active | 2026-04-06 | `src/app/dashboard/AGENTS.md` |
-| 002 | `01-product/002-quiz-modes.md` | ✅ Active | 2026-04-06 | `src/types/app.ts`, `src/lib/quiz/` |
+| 002 | `01-product/002-drill-modes.md` | ✅ Active | 2026-04-08 | `src/types/app.ts`, `src/lib/quiz/`, `src/lib/actions/quiz-v2/`, `src/components/quiz-v2/` |
 | 003 | `01-product/003-readiness-score.md` | ✅ Active | 2026-04-06 | `src/lib/readiness-score.ts` |
 | 004 | `01-product/004-wiki.md` | ✅ Active | 2026-04-06 | `src/components/wiki/` |
 | 005 | `01-product/005-notes.md` | ✅ Active | 2026-04-06 | `src/types/app.ts`, `src/components/notes/` |

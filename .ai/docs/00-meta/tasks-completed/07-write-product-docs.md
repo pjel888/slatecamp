@@ -17,7 +17,7 @@ Content:
 - 33 pages total under `/dashboard`
 - Feature descriptions verified against actual route components
 
-### 7.2 Write `01-product/002-quiz-modes.md`
+### 7.2 Write `01-product/002-drill-modes.md`
 
 **Source:** `src/lib/actions/quiz-v2/`, `src/types/app.ts`, `src/lib/quiz/`
 
