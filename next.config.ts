@@ -43,8 +43,8 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
-        source: '/dashboard/wiki/ale-:slug*',
-        destination: '/dashboard/wiki/lea-:slug*',
+        source: '/dashboard/wiki/ale-:slug',
+        destination: '/dashboard/wiki/lea-:slug',
         permanent: true,
       },
       {
