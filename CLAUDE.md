@@ -15,8 +15,8 @@ bun install
 bun run dev
 ```
 - Runs `scripts/dev.js`.
-- On Windows, `scripts/dev.js` starts Next.js with `--webpack`.
-- On non-Windows platforms, it starts Next.js with `--turbopack`.
+- Uses Turbopack on all platforms (default in Next.js 16).
+- Pass `-- --webpack` to force Webpack if needed.
 
 ```bash
 bun run build
