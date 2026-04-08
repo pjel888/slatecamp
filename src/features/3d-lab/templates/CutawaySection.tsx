@@ -5,6 +5,7 @@ import { useMemo } from 'react'
 import { Stack, BookOpen } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { CanvasWrapper } from '@/features/3d-lab/components/CanvasWrapper'
+import { SceneErrorBoundary } from '@/features/3d-lab/components/templates/SceneErrorBoundary'
 import { CutawaySectionScene } from './CutawaySectionScene'
 import { createModuleStore } from '@/features/3d-lab/stores/createModuleStore'
 import { Slider } from '@/components/ui/slider'
@@ -176,32 +177,33 @@ export default function CutawaySection({ config }: CutawaySectionProps) {
     return d
   }, [config.parameters, cutMax])
 
-  // Create a stable Zustand store
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  const useStore = useMemo(() => createModuleStore(defaults), [config.id])
+  // Create a stable Zustand store — intentionally keyed on config.id only
+  const useStore = useMemo(() => createModuleStore(defaults), [config.id]) // eslint-disable-line react-hooks/exhaustive-deps
 
   const cameraPos = config.camera?.position ?? [2, 1.5, 2]
   const cameraFov = config.camera?.fov ?? 40
 
   return (
-    <div className="relative h-full w-full">
-      {/* 3D Canvas */}
-      <CanvasWrapper
-        sceneConfig={{
-          cameraPosition: cameraPos,
-          cameraFov: cameraFov,
-          minDistance: 1,
-          maxDistance: 20,
-        }}
-      >
-        <CutawaySectionScene config={config} useStore={useStore} />
-      </CanvasWrapper>
+    <SceneErrorBoundary>
+      <div className="relative h-full w-full">
+        {/* 3D Canvas */}
+        <CanvasWrapper
+          sceneConfig={{
+            cameraPosition: cameraPos,
+            cameraFov: cameraFov,
+            minDistance: 1,
+            maxDistance: 20,
+          }}
+        >
+          <CutawaySectionScene config={config} useStore={useStore} />
+        </CanvasWrapper>
 
-      {/* Right-side annotation panel */}
-      <AnnotationPanel config={config} useStore={useStore} />
+        {/* Right-side annotation panel */}
+        <AnnotationPanel config={config} useStore={useStore} />
 
-      {/* Bottom cut slider */}
-      <CutSliderBar config={config} useStore={useStore} />
-    </div>
+        {/* Bottom cut slider */}
+        <CutSliderBar config={config} useStore={useStore} />
+      </div>
+    </SceneErrorBoundary>
   )
 }

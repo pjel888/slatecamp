@@ -5,6 +5,7 @@
 // Uses the wall-specific Zustand store (useWallLabStore) instead of createModuleStore.
 
 import { CanvasWrapper } from '@/features/3d-lab/components/CanvasWrapper'
+import { SceneErrorBoundary } from '@/features/3d-lab/components/templates/SceneErrorBoundary'
 import { LabPanelLayout } from '@/features/3d-lab/components/templates/LabPanelLayout'
 import { WallConfiguratorRenderer } from './WallConfiguratorRenderer'
 import { ConfigPanel } from '@/features/3d-lab/components/templates/WallConfigurator/ConfigPanel'
@@ -27,17 +28,19 @@ export default function WallConfiguratorTemplate({ config }: Props) {
       rightPanel={<BOMPanel />}
       rightWidth={340}
     >
-      <CanvasWrapper
-        sceneConfig={{
-          cameraPosition: cameraPos,
-          cameraFov: cameraFov,
-          minDistance: 1,
-          maxDistance: 25,
-          showGround: false,
-        }}
-      >
-        <WallConfiguratorRenderer config={config} />
-      </CanvasWrapper>
+      <SceneErrorBoundary>
+        <CanvasWrapper
+          sceneConfig={{
+            cameraPosition: cameraPos,
+            cameraFov: cameraFov,
+            minDistance: 1,
+            maxDistance: 25,
+            showGround: false,
+          }}
+        >
+          <WallConfiguratorRenderer config={config} />
+        </CanvasWrapper>
+      </SceneErrorBoundary>
     </LabPanelLayout>
   )
 }

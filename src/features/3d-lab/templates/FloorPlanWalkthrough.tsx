@@ -5,6 +5,7 @@ import { useMemo } from 'react'
 import { Warning } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { CanvasWrapper } from '@/features/3d-lab/components/CanvasWrapper'
+import { SceneErrorBoundary } from '@/features/3d-lab/components/templates/SceneErrorBoundary'
 import { GenericControlPanel } from '@/features/3d-lab/components/templates/GenericControlPanel'
 import { FloorPlanScene } from './FloorPlanScene'
 import { createModuleStore } from '@/features/3d-lab/stores/createModuleStore'
@@ -87,15 +88,15 @@ const DEAD_END_LIMITS: Record<string, number> = {
   Residential: 15,
 }
 
-function getMaxTravelDistance(
+const getMaxTravelDistance = (
   occupancy: string,
   sprinklered: boolean
-): number {
+): number => {
   const limits = TRAVEL_DISTANCE_LIMITS[occupancy] ?? [46, 61]
   return sprinklered ? limits[1] : limits[0]
 }
 
-function pathLength(points: Array<[number, number]>): number {
+const pathLength = (points: Array<[number, number]>): number => {
   let total = 0
   for (let i = 1; i < points.length; i++) {
     const dx = points[i][0] - points[i - 1][0]
@@ -123,9 +124,8 @@ export default function FloorPlanWalkthrough({
     return d
   }, [config.parameters])
 
-  // Create a stable Zustand store
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  const useStore = useMemo(() => createModuleStore(defaults), [config.id])
+  // Create a stable Zustand store — intentionally keyed on config.id only
+  const useStore = useMemo(() => createModuleStore(defaults), [config.id]) // eslint-disable-line react-hooks/exhaustive-deps
 
   const params = useStore((s) => s.params)
   const cameraPos = config.camera?.position ?? [0, 15, 8]
@@ -156,40 +156,41 @@ export default function FloorPlanWalkthrough({
   }, [params.occupancyType])
 
   return (
-    <div className="relative h-full w-full">
-      {/* 3D Canvas */}
-      <CanvasWrapper
-        sceneConfig={{
-          cameraPosition: cameraPos,
-          cameraFov: cameraFov,
-          showGround: false,
-          minDistance: 5,
-          maxDistance: 40,
-        }}
-      >
-        <FloorPlanScene
-          config={config}
+    <SceneErrorBoundary>
+      <div className="relative h-full w-full">
+        {/* 3D Canvas */}
+        <CanvasWrapper
+          sceneConfig={{
+            cameraPosition: cameraPos,
+            cameraFov: cameraFov,
+            showGround: false,
+            minDistance: 5,
+            maxDistance: 40,
+          }}
+        >
+          <FloorPlanScene
+            config={config}
+            useStore={useStore}
+            computePathCompliance={computePathCompliance}
+            deadEndZones={deadEndZones}
+            sprinklerRadius={3}
+          />
+        </CanvasWrapper>
+
+        {/* Control Panel */}
+        <GenericControlPanel
+          title={config.title}
+          parameters={config.parameters ?? []}
+          presets={config.presets}
           useStore={useStore}
-          computePathCompliance={computePathCompliance}
-          deadEndZones={deadEndZones}
-          sprinklerRadius={3}
         />
-      </CanvasWrapper>
 
-      {/* Control Panel */}
-      <GenericControlPanel
-        title={config.title}
-        parameters={config.parameters ?? []}
-        presets={config.presets}
-        useStore={useStore}
-      />
+        {/* Legend */}
+        <LegendOverlay />
 
-      {/* Legend */}
-      <LegendOverlay />
-
-      {/* Violation Summary Bar */}
-      <ViolationBar config={config} useStore={useStore} />
-    </div>
+        {/* Violation Summary Bar */}
+        <ViolationBar config={config} useStore={useStore} />
+      </div>
+    </SceneErrorBoundary>
   )
 }
-

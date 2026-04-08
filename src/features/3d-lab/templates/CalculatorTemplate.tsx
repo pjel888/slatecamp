@@ -6,6 +6,7 @@
 
 import { Suspense, useState, type ReactNode } from 'react'
 import { CanvasWrapper } from '@/features/3d-lab/components/CanvasWrapper'
+import { SceneErrorBoundary } from '@/features/3d-lab/components/templates/SceneErrorBoundary'
 import { CalculatorLighting } from '@/features/3d-lab/components/templates/CalculatorLighting'
 import { SceneInvalidator } from '@/components/r3f/SceneInvalidator'
 import { CanvasEmptyState } from '@/components/calculators/CanvasEmptyState'
@@ -114,24 +115,26 @@ function CalculatorLayout({
         <div className="relative min-h-[56vw] bg-[#F2F0EB] lg:min-h-0">
           {tool.hasDimensions ? (
             <>
-              <CanvasWrapper
-                sceneConfig={{
-                  orthographic: cam.isOrtho,
-                  flat: cam.isOrtho,
-                  disableLighting: true,
-                  disableSceneBase: true,
-                  cameraPosition: cam.position,
-                  cameraFov: cam.fov,
-                  cameraZoom: cam.zoom,
-                  clearColor: '#F2F0EB',
-                  minPolarAngle: Math.PI * 0.05,
-                  maxPolarAngle: Math.PI * 0.48,
-                }}
-              >
-                <CalculatorLighting />
-                <SceneInvalidator inputVersion={tool.inputVersion} />
-                <Suspense fallback={null}>{tool.scene}</Suspense>
-              </CanvasWrapper>
+              <SceneErrorBoundary>
+                <CanvasWrapper
+                  sceneConfig={{
+                    orthographic: cam.isOrtho,
+                    flat: cam.isOrtho,
+                    disableLighting: true,
+                    disableSceneBase: true,
+                    cameraPosition: cam.position,
+                    cameraFov: cam.fov,
+                    cameraZoom: cam.zoom,
+                    clearColor: '#F2F0EB',
+                    minPolarAngle: Math.PI * 0.05,
+                    maxPolarAngle: Math.PI * 0.48,
+                  }}
+                >
+                  <CalculatorLighting />
+                  <SceneInvalidator inputVersion={tool.inputVersion} />
+                  <Suspense fallback={null}>{tool.scene}</Suspense>
+                </CanvasWrapper>
+              </SceneErrorBoundary>
               <FloatingCameraBar current={cameraPreset} onChange={setCameraPreset} />
             </>
           ) : (

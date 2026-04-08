@@ -4,6 +4,7 @@
 
 import { useMemo } from 'react'
 import { CanvasWrapper } from '@/features/3d-lab/components/CanvasWrapper'
+import { SceneErrorBoundary } from '@/features/3d-lab/components/templates/SceneErrorBoundary'
 import { GenericControlPanel } from '@/features/3d-lab/components/templates/GenericControlPanel'
 import { ComplianceReportPanel } from '@/features/3d-lab/components/templates/ComplianceReportPanel'
 import { LabPanelLayout } from '@/features/3d-lab/components/templates/LabPanelLayout'
@@ -24,8 +25,7 @@ export default function ParametricScene({ config }: ParametricSceneProps) {
     return d
   }, [config.parameters])
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  const useStore = useMemo(() => createModuleStore(defaults), [config.id])
+  const useStore = useMemo(() => createModuleStore(defaults), [config.id]) // eslint-disable-line react-hooks/exhaustive-deps
 
   const cameraPos = config.camera?.position ?? [3, 3, 3]
   const cameraFov = config.camera?.fov ?? 45
@@ -68,21 +68,23 @@ export default function ParametricScene({ config }: ParametricSceneProps) {
       rightPanel={rightPanel}
       rightWidth={280}
     >
-      <CanvasWrapper
-        sceneConfig={{
-          cameraPosition: cameraPos,
-          cameraFov: cameraFov,
-          minDistance: 1,
-          maxDistance: 25,
-          showGround: false,
-        }}
-      >
-        <ParametricSceneRenderer
-          config={config}
-          useStore={useStore}
-          hideOverlays={hasCompliancePanel}
-        />
-      </CanvasWrapper>
+      <SceneErrorBoundary>
+        <CanvasWrapper
+          sceneConfig={{
+            cameraPosition: cameraPos,
+            cameraFov: cameraFov,
+            minDistance: 1,
+            maxDistance: 25,
+            showGround: false,
+          }}
+        >
+          <ParametricSceneRenderer
+            config={config}
+            useStore={useStore}
+            hideOverlays={hasCompliancePanel}
+          />
+        </CanvasWrapper>
+      </SceneErrorBoundary>
     </LabPanelLayout>
   )
 }
