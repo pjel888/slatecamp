@@ -171,72 +171,72 @@ Files to MODIFY (removed ALL `<Html>` and `<Text>`):
 ---
 
 ### Phase 5: Store Lifecycle & Isolation [F-11, F-09]
-**Status:** NOT STARTED
+**Status:** ✅ COMPLETE (2026-04-08)
 **Depends on:** P0
 
-- [ ] Split `useLabStore` → `useLabNavigationStore` + `useLabProgressStore` + `useLabViewStore` (keep re-export)
-- [ ] Add `resetOnUnmount` to `createModuleStore()`
-- [ ] Create `src/features/3d-lab/hooks/useModuleLifecycle.ts`
-- [ ] Verify/delete `useInvalidateOnChange.ts` (potentially broken — see Appendix B.2 in master doc)
-- [ ] Selective invalidation: remove `invalidateFn()` from `setActiveAnnotation`
+- [x] Split `useLabStore` → `useLabNavigationStore` + `useLabProgressStore` + `useLabViewStore` (keep re-export)
+- [x] Add `resetOnUnmount` to `createModuleStore()`
+- [x] Create `src/features/3d-lab/hooks/useModuleLifecycle.ts`
+- [x] Verify/delete `useInvalidateOnChange.ts` (potentially broken — see Appendix B.2 in master doc)
+- [x] Selective invalidation: remove `invalidateFn()` from `setActiveAnnotation`
 
-**Blockers:**
-**Notes:**
+**Blockers:** None
+**Notes:** Commits `c84a249`, `9ee93d9`. Store split verified — useLabNavigationStore, useLabProgressStore, useLabViewStore all exist. useModuleLifecycle.ts created.
 
 ---
 
 ### Phase 6: Asset Loading [F-12]
-**Status:** NOT STARTED
+**Status:** ✅ COMPLETE (2026-04-08)
 **Depends on:** P0
 
-- [ ] Create `AssetPreloader.tsx`
-- [ ] Upgrade `CanvasLoadingOverlay` → `LoadingProgress.tsx` (backward compatible)
-- [ ] Extend `ModuleRegistryEntry` with `assets?` field
-- [ ] Configure DRACO decoder path globally
+- [x] Create `AssetPreloader.tsx`
+- [x] Upgrade `CanvasLoadingOverlay` → `LoadingProgress.tsx` (backward compatible)
+- [x] Extend `ModuleRegistryEntry` with `assets?` field
+- [x] Configure DRACO decoder path globally
 
-**Blockers:**
-**Notes:**
+**Blockers:** None
+**Notes:** Commit `c3b63ab`. AssetPreloader.tsx created at `components/rendering/AssetPreloader.tsx`. LoadingProgress.tsx re-export at `src/components/r3f/LoadingProgress.tsx`. DRACO decoder configured in LabViewportFrame via `useGLTF.setDecoderPath('/draco/')`.
 
 ---
 
 ### Phase 7: Animation Completion [F-14]
-**Status:** NOT STARTED
+**Status:** ✅ COMPLETE (2026-04-08)
 **Depends on:** P0
 
-- [ ] Create `useAnimationComplete.ts` hook
-- [ ] Refactor 5 scenes: AnimatedSequence, Cutaway, Exploded, NBCP, FAR
+- [x] Create `useAnimationComplete.ts` hook
+- [x] Refactor 5 scenes: AnimatedSequence, Cutaway, Exploded, NBCP, FAR
 
-**Blockers:**
-**Notes:**
+**Blockers:** None
+**Notes:** Commit `011887d`. useAnimationComplete.ts created at `hooks/useAnimationComplete.ts`.
 
 ---
 
 ### Phase 8: Mobile & Navigation [F-10, F-17, F-19]
-**Status:** NOT STARTED
+**Status:** ✅ COMPLETE (2026-04-08)
 **Depends on:** P0
 
-- [ ] `ModuleViewer.tsx` stale-closure guard
-- [ ] Create `camera-presets.ts` (shared registry)
-- [ ] Mobile: `touch-action: none`, mobile DPR `[1, 1.25]`, `enableDamping={false}`
+- [x] `ModuleViewer.tsx` stale-closure guard
+- [x] Create `camera-presets.ts` (shared registry)
+- [x] Mobile: `touch-action: none`, mobile DPR `[1, 1.25]`, `enableDamping={false}`
 
-**Blockers:**
-**Notes:**
+**Blockers:** None
+**Notes:** No dedicated commit tag. stale-closure guard implemented via `activeModuleIdRef` in ModuleViewer.tsx. camera-presets.ts at `config/camera-presets.ts`. Mobile DPR capped at 1.25 in LabViewportFrame. touch-action: none on LabViewportFrame container.
 
 ---
 
 ### Phase 9: Template Normalization [F-21-F-25]
-**Status:** NOT STARTED
+**Status:** ✅ COMPLETE (2026-04-08)
 **Depends on:** P0
 
-- [ ] Fix ExplodedAssembly store deps: `[]` → `[config.id]`
-- [ ] Fix AnimatedSequence store deps: `[]` → `[config.id]`
-- [ ] Stabilize useMemo pattern, remove ESLint disables (3 templates)
-- [ ] Create `SceneErrorBoundary.tsx` + add to all 7 templates
-- [ ] Create `SceneEmptyState.tsx` + add to all scene renderers
-- [ ] Evaluate LabPanelLayout adoption for remaining templates
+- [x] Fix ExplodedAssembly store deps: `[]` → `[config.id]`
+- [x] Fix AnimatedSequence store deps: `[]` → `[config.id]`
+- [x] Stabilize useMemo pattern, remove ESLint disables (3 templates)
+- [x] Create `SceneErrorBoundary.tsx` + add to all 7 templates
+- [x] Create `SceneEmptyState.tsx` + add to all scene renderers
+- [x] Evaluate LabPanelLayout adoption for remaining templates
 
-**Blockers:**
-**Notes:**
+**Blockers:** None
+**Notes:** Commit `2ecf755`. SceneErrorBoundary.tsx created. Store deps fixed in ExplodedAssembly and AnimatedSequence.
 
 ---
 
