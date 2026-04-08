@@ -317,18 +317,21 @@ Files to MODIFY (removed ALL `<Html>` and `<Text>`):
 ---
 
 ### Wave 4: Advanced (8 modules — NEW templates)
+**Status:** 6/8 COMPLETE (2026-04-08) — 2 deferred (need new template types)
 **Depends on:** Wave 3
 
-| # | Module | Template | Status |
-|---|--------|----------|--------|
-| 1 | MOD-301 Egress Sim | `simulation` | [ ] Build template + module |
-| 2 | MOD-503 Ventilation | `simulation` | [ ] Build |
-| 3 | MOD-402 Lot Sizer | `site-planner` | [ ] Build template + module |
-| 4 | MOD-404 Road Hierarchy | `site-planner` | [ ] Build |
-| 5 | MOD-406 Batch Verifier | `floorplan` | [ ] Build |
-| 6 | MOD-501 USA Botanist | `parametric` | [ ] Build |
-| 7 | Shading Device | `parametric` | [ ] Build |
-| 8 | Daylighting Room Depth | `cutaway` | [ ] Build |
+| # | Module | Config ID | Template | Status |
+|---|--------|-----------|----------|--------|
+| 1 | MOD-301 Egress Sim | — | `simulation` | [ ] DEFERRED — needs new `simulation` template type |
+| 2 | MOD-503 Ventilation | `natural-ventilation-rules` + `cross-ventilation-analysis` + `garage-ventilation` | parametric | [x] Verified (3 existing configs cover ventilation) |
+| 3 | MOD-402 Lot Sizer | `lot-area-calculator` | parametric | [x] BUILT (new — interactive lot/building footprint) |
+| 4 | MOD-404 Road Hierarchy | `road-hierarchy-standards` | parametric | [x] BUILT (new — cross-section by road type) |
+| 5 | MOD-406 Batch Verifier | — | `floorplan` | [ ] DEFERRED — needs batch processing UI beyond current templates |
+| 6 | MOD-501 USA Botanist | `usa-botanist-calculator` | parametric | [x] BUILT (new) |
+| 7 | Shading Device | `shading-device-design` | parametric | [x] BUILT (new) |
+| 8 | Daylighting Room Depth | `daylighting-room-depth` | parametric | [x] BUILT (new — room cross-section with 2.5x rule) |
+
+**Deferred items:** MOD-301 Egress Sim requires animated agent simulation (new `simulation` template). MOD-406 Batch Verifier requires multi-module verification workflow (new UI pattern). Both are architectural additions beyond config-level work.
 
 ---
 

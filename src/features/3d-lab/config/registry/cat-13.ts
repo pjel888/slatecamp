@@ -19,6 +19,7 @@ import { erosionControlFenceConfig } from '@/features/3d-lab/config/modules/13-p
 import { rowhouseClusterConfig } from '@/features/3d-lab/config/modules/13-planning/rowhouse-cluster'
 import { lotFrontageRequirementsConfig } from '@/features/3d-lab/config/modules/13-planning/lot-frontage-requirements'
 import { housingLotMinimumsConfig } from '@/features/3d-lab/config/modules/13-planning/housing-lot-minimums'
+import { roadHierarchyStandardsConfig } from '@/features/3d-lab/config/modules/13-planning/road-hierarchy-standards'
 
 export const cat13Modules: ModuleRegistryEntry[] = [
   {
@@ -190,6 +191,16 @@ export const cat13Modules: ModuleRegistryEntry[] = [
     launchPhase: 2,
     status: 'ready' as const,
     description: housingLotMinimumsConfig.description,
+  },
+  {
+    id: roadHierarchyStandardsConfig.id,
+    title: roadHierarchyStandardsConfig.title,
+    templateType: 'parametric' as const,
+    subject: roadHierarchyStandardsConfig.subject,
+    categoryId: 'PLANNING',
+    launchPhase: 3,
+    status: 'ready' as const,
+    description: roadHierarchyStandardsConfig.description,
   },
 ]
 

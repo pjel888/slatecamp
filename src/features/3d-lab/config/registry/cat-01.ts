@@ -27,6 +27,10 @@ import { skylightRequirementsConfig } from '@/features/3d-lab/config/modules/01-
 import { siteDevelopmentControlsConfig } from '@/features/3d-lab/config/modules/01-building-code/site-development-controls'
 import { ventShaftDimensionsConfig } from '@/features/3d-lab/config/modules/01-building-code/vent-shaft-dimensions'
 import { saleableAreaRatioConfig } from '@/features/3d-lab/config/modules/01-building-code/saleable-area-ratio'
+import { usaBotanistCalculatorConfig } from '@/features/3d-lab/config/modules/01-building-code/usa-botanist-calculator'
+import { shadingDeviceDesignConfig } from '@/features/3d-lab/config/modules/01-building-code/shading-device-design'
+import { daylightingRoomDepthConfig } from '@/features/3d-lab/config/modules/01-building-code/daylighting-room-depth'
+import { lotAreaCalculatorConfig } from '@/features/3d-lab/config/modules/01-building-code/lot-area-calculator'
 
 export const cat01Modules: ModuleRegistryEntry[] = [
   {
@@ -278,6 +282,46 @@ export const cat01Modules: ModuleRegistryEntry[] = [
     launchPhase: 2,
     status: 'ready' as const,
     description: saleableAreaRatioConfig.description,
+  },
+  {
+    id: usaBotanistCalculatorConfig.id,
+    title: usaBotanistCalculatorConfig.title,
+    templateType: 'parametric' as const,
+    subject: usaBotanistCalculatorConfig.subject,
+    categoryId: 'BUILDING_CODE',
+    launchPhase: 3,
+    status: 'ready' as const,
+    description: usaBotanistCalculatorConfig.description,
+  },
+  {
+    id: shadingDeviceDesignConfig.id,
+    title: shadingDeviceDesignConfig.title,
+    templateType: 'parametric' as const,
+    subject: shadingDeviceDesignConfig.subject,
+    categoryId: 'BUILDING_CODE',
+    launchPhase: 3,
+    status: 'ready' as const,
+    description: shadingDeviceDesignConfig.description,
+  },
+  {
+    id: daylightingRoomDepthConfig.id,
+    title: daylightingRoomDepthConfig.title,
+    templateType: 'parametric' as const,
+    subject: daylightingRoomDepthConfig.subject,
+    categoryId: 'BUILDING_CODE',
+    launchPhase: 3,
+    status: 'ready' as const,
+    description: daylightingRoomDepthConfig.description,
+  },
+  {
+    id: lotAreaCalculatorConfig.id,
+    title: lotAreaCalculatorConfig.title,
+    templateType: 'parametric' as const,
+    subject: lotAreaCalculatorConfig.subject,
+    categoryId: 'BUILDING_CODE',
+    launchPhase: 3,
+    status: 'ready' as const,
+    description: lotAreaCalculatorConfig.description,
   },
 ]
 
