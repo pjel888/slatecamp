@@ -1,8 +1,9 @@
 // src/app/dashboard/3d-lab/_templates/AnimatedSequenceScene.tsx
 import { useEffect, useRef } from 'react'
 import { useDisposeOnUnmount } from '@/components/r3f/useDisposeOnUnmount'
-import { useFrame, useThree } from '@react-three/fiber'
+import { useThree } from '@react-three/fiber'
 import { useModuleInvalidate } from '@/features/3d-lab/hooks/useModuleInvalidate'
+import { useAnimationComplete } from '@/features/3d-lab/hooks/useAnimationComplete'
 import { GeometryElement } from '@/features/3d-lab/components/templates/GeometryMesh'
 import { useOverlayStore } from '@/features/3d-lab/stores/useOverlayStore'
 import { GroundPlane } from '@/features/3d-lab/components/rendering/GroundPlane'
@@ -32,38 +33,41 @@ function FadingMesh({ inst, isCurrent, fadeDurationMs }: FadingMeshProps) {
   // Speed: how fast we approach target opacity per second
   const fadeSpeed = fadeDurationMs > 0 ? 1000 / fadeDurationMs : 10
 
-  useFrame((_, delta) => {
-    if (!meshRef.current || !matRef.current) return
+  useAnimationComplete(
+    (_, delta) => {
+      if (!meshRef.current || !matRef.current) return
 
-    const mat = matRef.current
+      const mat = matRef.current
 
-    if (isCurrent) {
-      // Fade in towards target
-      if (Math.abs(opacityRef.current - targetOpacity) > 0.005) {
-        opacityRef.current = MathUtils.lerp(
-          opacityRef.current,
-          targetOpacity,
-          Math.min(delta * fadeSpeed * 3, 1),
-        )
-        mat.opacity = opacityRef.current
-        mat.transparent = true
-        invalidate()
-      } else if (opacityRef.current !== targetOpacity) {
-        opacityRef.current = targetOpacity
-        mat.opacity = targetOpacity
-        mat.transparent = targetOpacity < 1
-        invalidate()
+      if (isCurrent) {
+        // Fade in towards target
+        if (Math.abs(opacityRef.current - targetOpacity) > 0.005) {
+          opacityRef.current = MathUtils.lerp(
+            opacityRef.current,
+            targetOpacity,
+            Math.min(delta * fadeSpeed * 3, 1),
+          )
+          mat.opacity = opacityRef.current
+          mat.transparent = true
+          invalidate()
+        } else if (opacityRef.current !== targetOpacity) {
+          opacityRef.current = targetOpacity
+          mat.opacity = targetOpacity
+          mat.transparent = targetOpacity < 1
+          invalidate()
+        }
+      } else {
+        // Already visible — snap to target
+        if (opacityRef.current !== targetOpacity) {
+          opacityRef.current = targetOpacity
+          mat.opacity = targetOpacity
+          mat.transparent = targetOpacity < 1
+          invalidate()
+        }
       }
-    } else {
-      // Already visible — snap to target
-      if (opacityRef.current !== targetOpacity) {
-        opacityRef.current = targetOpacity
-        mat.opacity = targetOpacity
-        mat.transparent = targetOpacity < 1
-        invalidate()
-      }
-    }
-  })
+    },
+    () => Math.abs(opacityRef.current - targetOpacity) <= 0.005,
+  )
 
   // Emit overlay for label
   const overlayId = `animated-step-${inst.id}`

@@ -1,7 +1,8 @@
 // src/app/dashboard/3d-lab/_templates/ExplodedAssemblyScene.tsx
 import { useRef, useState, useCallback, useEffect, useMemo } from 'react'
 import { useDisposeOnUnmount } from '@/components/r3f/useDisposeOnUnmount'
-import { useFrame, useThree } from '@react-three/fiber'
+import { useThree } from '@react-three/fiber'
+import { useAnimationComplete } from '@/features/3d-lab/hooks/useAnimationComplete'
 import { useModuleInvalidate } from '@/features/3d-lab/hooks/useModuleInvalidate'
 import { GeometryElement } from '@/features/3d-lab/components/templates/GeometryMesh'
 import { useOverlayStore } from '@/features/3d-lab/stores/useOverlayStore'
@@ -36,21 +37,37 @@ function PartMesh({ part, explodeValue, isActive, isFaded, onPartClick }: PartMe
   const targetY = basePos[1] + part.explodeOffset[1] * explodeValue
   const targetZ = basePos[2] + part.explodeOffset[2] * explodeValue
 
-  useFrame(() => {
-    if (!meshRef.current) return
-    const pos = meshRef.current.position
-    const needsUpdate =
-      Math.abs(pos.x - targetX) > 0.001 ||
-      Math.abs(pos.y - targetY) > 0.001 ||
-      Math.abs(pos.z - targetZ) > 0.001
+  const { reset: resetAnim } = useAnimationComplete(
+    () => {
+      if (!meshRef.current) return
+      const pos = meshRef.current.position
+      const needsUpdate =
+        Math.abs(pos.x - targetX) > 0.001 ||
+        Math.abs(pos.y - targetY) > 0.001 ||
+        Math.abs(pos.z - targetZ) > 0.001
 
-    if (needsUpdate) {
-      pos.x = MathUtils.lerp(pos.x, targetX, 0.12)
-      pos.y = MathUtils.lerp(pos.y, targetY, 0.12)
-      pos.z = MathUtils.lerp(pos.z, targetZ, 0.12)
-      invalidate()
-    }
-  })
+      if (needsUpdate) {
+        pos.x = MathUtils.lerp(pos.x, targetX, 0.12)
+        pos.y = MathUtils.lerp(pos.y, targetY, 0.12)
+        pos.z = MathUtils.lerp(pos.z, targetZ, 0.12)
+        invalidate()
+      }
+    },
+    () => {
+      if (!meshRef.current) return true
+      const pos = meshRef.current.position
+      return (
+        Math.abs(pos.x - targetX) <= 0.001 &&
+        Math.abs(pos.y - targetY) <= 0.001 &&
+        Math.abs(pos.z - targetZ) <= 0.001
+      )
+    },
+  )
+
+  // Restart animation whenever the target position changes
+  useEffect(() => {
+    resetAnim()
+  }, [targetX, targetY, targetZ, resetAnim])
 
   // Emit overlay for active part tooltip
   const overlayId = `exploded-part-${part.id}`

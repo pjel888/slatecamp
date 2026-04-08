@@ -1,7 +1,8 @@
 // src/app/dashboard/3d-lab/_templates/CutawaySectionScene.tsx
 import { useEffect, useMemo, useRef } from 'react'
 import { useDisposeOnUnmount } from '@/components/r3f/useDisposeOnUnmount'
-import { useFrame, useThree } from '@react-three/fiber'
+import { useThree } from '@react-three/fiber'
+import { useAnimationComplete } from '@/features/3d-lab/hooks/useAnimationComplete'
 import * as THREE from 'three'
 import { useModuleInvalidate } from '@/features/3d-lab/hooks/useModuleInvalidate'
 import { GeometryElement } from '@/features/3d-lab/components/templates/GeometryMesh'
@@ -60,19 +61,22 @@ function LayerMesh({ geometry, targetOpacity }: LayerMeshProps) {
   const groupRef = useRef<THREE.Group>(null)
   const { invalidate } = useThree()
 
-  useFrame(() => {
-    if (matRef.current) {
-      const current = matRef.current.opacity
-      const next = THREE.MathUtils.lerp(current, targetOpacity, 0.15)
-      if (Math.abs(next - current) > 0.001) {
-        matRef.current.opacity = next
-        invalidate()
+  useAnimationComplete(
+    () => {
+      if (matRef.current) {
+        const current = matRef.current.opacity
+        const next = THREE.MathUtils.lerp(current, targetOpacity, 0.15)
+        if (Math.abs(next - current) > 0.001) {
+          matRef.current.opacity = next
+          invalidate()
+        }
       }
-    }
-    if (groupRef.current) {
-      groupRef.current.visible = targetOpacity > 0.01 || (matRef.current?.opacity ?? 0) > 0.01
-    }
-  })
+      if (groupRef.current) {
+        groupRef.current.visible = targetOpacity > 0.01 || (matRef.current?.opacity ?? 0) > 0.01
+      }
+    },
+    () => !matRef.current || Math.abs(matRef.current.opacity - targetOpacity) <= 0.001,
+  )
 
   return (
     <group ref={groupRef}>
@@ -163,6 +167,9 @@ export function CutawaySectionScene({ config, useStore }: CutawaySectionScenePro
     })
     return () => ids.forEach((id) => removeItem(id))
   }, [layersWithOpacity, upsertItem, removeItem])
+
+  // Suppress unused variable warning — activeAnnotation is subscribed for reactivity
+  void activeAnnotation
 
   return (
     <group ref={groupRef} scale={config.scale ?? 1}>

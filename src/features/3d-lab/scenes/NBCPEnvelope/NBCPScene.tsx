@@ -3,7 +3,8 @@
 
 import { useRef, useEffect, useLayoutEffect } from 'react'
 import { useDisposeOnUnmount } from '@/components/r3f/useDisposeOnUnmount'
-import { useFrame, useThree } from '@react-three/fiber'
+import { useThree } from '@react-three/fiber'
+import { useAnimationComplete } from '@/features/3d-lab/hooks/useAnimationComplete'
 import * as THREE from 'three'
 import { useNBCPStore } from '@/features/3d-lab/stores/nbcpStore'
 import { useNBCPInvalidateOnChange } from '@/features/3d-lab/hooks/useNBCPInvalidateOnChange'
@@ -49,6 +50,9 @@ export function NBCPScene() {
   const targetRef = useRef({ w: 0.001, d: 0.001, h: 0.001, hasViolations: false })
   const animRef = useRef({ w: 0.001, d: 0.001, h: 0.001 })
 
+  // resetAnim ref — populated after useAnimationComplete call below
+  const resetAnimRef = useRef<(() => void) | null>(null)
+
   // Subscribe to store changes once on mount
   useEffect(() => {
     return useNBCPStore.subscribe((state) => {
@@ -56,6 +60,7 @@ export function NBCPScene() {
       targetRef.current.d = Math.max(0.001, toU(state.computed.buildableDepth))
       targetRef.current.h = Math.max(0.001, toU(state.computed.displayHeight))
       targetRef.current.hasViolations = state.computed.violations.length > 0
+      resetAnimRef.current?.()
     })
   }, [])
 
@@ -71,7 +76,7 @@ export function NBCPScene() {
   // Update instance matrices for floor plates, property lines, and setbacks
   useLayoutEffect(() => {
     if (!instancedRef.current || !propLinesRef.current || !setbacksRef.current) return
-    
+
     // 1. Floor plates
     const bw = toU(computed.buildableWidth)
     const bd = toU(computed.buildableDepth)
@@ -112,7 +117,7 @@ export function NBCPScene() {
     const rearSbU  = toU(setbacks.rear)
     const leftSbU  = toU(setbacks.left)
     const rightSbU = toU(setbacks.right)
-    
+
     let setbackIdx = 0
     if (frontSbU > 0) {
       tempObject.position.set(0, LOT_Y, lotDu / 2 - frontSbU / 2)
@@ -142,34 +147,49 @@ export function NBCPScene() {
     setbacksRef.current.instanceMatrix.needsUpdate = true
   }, [displayStoreys, computed.buildableWidth, computed.buildableDepth, inputs.lotWidth, inputs.lotDepth, setbacks])
 
-  useFrame(() => {
-    const target = targetRef.current
-    const LERP_FACTOR = 0.12  // ~400ms to settle at 60fps
-    
-    const [nw, wSettled] = lerp(animRef.current.w, target.w, LERP_FACTOR)
-    const [nd, dSettled] = lerp(animRef.current.d, target.d, LERP_FACTOR)
-    const [nh, hSettled] = lerp(animRef.current.h, target.h, LERP_FACTOR)
+  const { reset: resetAnim } = useAnimationComplete(
+    () => {
+      const target = targetRef.current
+      const LERP_FACTOR = 0.12  // ~400ms to settle at 60fps
 
-    // Mutate existing ref directly to avoid GC pressure
-    animRef.current.w = nw
-    animRef.current.d = nd
-    animRef.current.h = nh
+      const [nw, wSettled] = lerp(animRef.current.w, target.w, LERP_FACTOR)
+      const [nd, dSettled] = lerp(animRef.current.d, target.d, LERP_FACTOR)
+      const [nh, hSettled] = lerp(animRef.current.h, target.h, LERP_FACTOR)
 
-    const anyMoving = !wSettled || !dSettled || !hSettled
+      // Mutate existing ref directly to avoid GC pressure
+      animRef.current.w = nw
+      animRef.current.d = nd
+      animRef.current.h = nh
 
-    if (buildingRef.current) {
-      buildingRef.current.scale.set(nw, nh, nd)
-      buildingRef.current.position.y = LOT_Y * 2 + nh / 2
-    }
+      if (buildingRef.current) {
+        buildingRef.current.scale.set(nw, nh, nd)
+        buildingRef.current.position.y = LOT_Y * 2 + nh / 2
+      }
 
-    // Building color: blue = compliant, red = BHL violated
-    if (buildingMatRef.current) {
-      const color = target.hasViolations ? '#D64545' : '#1B3FC4'
-      buildingMatRef.current.color.set(color)
-    }
+      // Building color: blue = compliant, red = BHL violated
+      if (buildingMatRef.current) {
+        const color = target.hasViolations ? '#D64545' : '#1B3FC4'
+        buildingMatRef.current.color.set(color)
+      }
 
-    if (anyMoving) invalidate()  // self-schedule next frame while animating
-  })
+      const anyMoving = !wSettled || !dSettled || !hSettled
+      if (anyMoving) invalidate()
+    },
+    () => {
+      const t = targetRef.current
+      const a = animRef.current
+      return (
+        Math.abs(a.w - t.w) <= 0.001 &&
+        Math.abs(a.d - t.d) <= 0.001 &&
+        Math.abs(a.h - t.h) <= 0.001
+      )
+    },
+  )
+
+  // Expose reset to the store subscription
+  useEffect(() => {
+    resetAnimRef.current = resetAnim
+  }, [resetAnim])
 
   const lotWu = toU(inputs.lotWidth)
   const lotDu = toU(inputs.lotDepth)
@@ -300,6 +320,9 @@ export function NBCPScene() {
     setbacks, computed.buildableWidth, displayHeight, displayStoreys, ambf, flar,
     bhl_meters, bhl_effective, bhl_source, bhlU, violations.length, upsertItem, removeItem,
   ])
+
+  // Suppress unused variable warning — tla is part of the destructured computed object
+  void tla
 
   return (
     <group ref={groupRef}>

@@ -2,7 +2,8 @@
 
 import { useRef, useEffect, useLayoutEffect } from 'react'
 import { useDisposeOnUnmount } from '@/components/r3f/useDisposeOnUnmount'
-import { useFrame, useThree } from '@react-three/fiber'
+import { useThree } from '@react-three/fiber'
+import { useAnimationComplete } from '@/features/3d-lab/hooks/useAnimationComplete'
 import * as THREE from 'three'
 import { useLabStore } from '@/features/3d-lab/stores/legacyLabStore'
 import { useInvalidateOnChange } from '@/features/3d-lab/hooks/useInvalidateOnChange'
@@ -68,10 +69,13 @@ export function FARScene() {
   const instancedRef = useRef<THREE.InstancedMesh>(null)
   const propLinesRef = useRef<THREE.InstancedMesh>(null)
   const setbacksRef = useRef<THREE.InstancedMesh>(null)
-  
+
   // Pre-allocated refs for performance
   const targetRef = useRef({ w: 0.001, h: 0.001, isViolation: false })
   const animRef = useRef({ w: 0.001, h: 0.001 })
+
+  // resetAnim ref — populated after useAnimationComplete call below
+  const resetAnimRef = useRef<(() => void) | null>(null)
 
   // Subscribe to store changes once on mount
   useEffect(() => {
@@ -80,6 +84,7 @@ export function FARScene() {
       targetRef.current.w = Math.max(0.001, toU(s.footprintSideM))
       targetRef.current.h = Math.max(0.001, toU(s.buildingHeightM))
       targetRef.current.isViolation = s.isViolation
+      resetAnimRef.current?.()
     })
   }, [])
 
@@ -96,7 +101,7 @@ export function FARScene() {
   // Update instance matrices for floor plates, property lines, and setbacks
   useLayoutEffect(() => {
     if (!instancedRef.current || !propLinesRef.current || !setbacksRef.current) return
-    
+
     // 1. Floor plates
     const bw = toU(s.footprintSideM)
     const count = Math.max(0, s.floors - 1)
@@ -156,27 +161,42 @@ export function FARScene() {
     setbacksRef.current.instanceMatrix.needsUpdate = true
   }, [s.floors, s.footprintSideM, s.lotSideM, frontSbU, sideSbU])
 
-  useFrame(() => {
-    const target = targetRef.current
-    const LERP_FACTOR = 0.12
-    
-    const [nw, wSettled] = lerp(animRef.current.w, target.w, LERP_FACTOR)
-    const [nh, hSettled] = lerp(animRef.current.h, target.h, LERP_FACTOR)
+  const { reset: resetAnim } = useAnimationComplete(
+    () => {
+      const target = targetRef.current
+      const LERP_FACTOR = 0.12
 
-    // Mutate existing ref directly to avoid GC pressure
-    animRef.current.w = nw
-    animRef.current.h = nh
+      const [nw, wSettled] = lerp(animRef.current.w, target.w, LERP_FACTOR)
+      const [nh, hSettled] = lerp(animRef.current.h, target.h, LERP_FACTOR)
 
-    if (buildingRef.current) {
-      buildingRef.current.scale.set(nw, nh, nw)
-      buildingRef.current.position.y = LOT_Y * 2 + nh / 2
-    }
-    if (buildingMatRef.current) {
-      buildingMatRef.current.color.set(target.isViolation ? '#D64545' : '#1B3FC4')
-    }
+      // Mutate existing ref directly to avoid GC pressure
+      animRef.current.w = nw
+      animRef.current.h = nh
 
-    if (!wSettled || !hSettled) invalidate()
-  })
+      if (buildingRef.current) {
+        buildingRef.current.scale.set(nw, nh, nw)
+        buildingRef.current.position.y = LOT_Y * 2 + nh / 2
+      }
+      if (buildingMatRef.current) {
+        buildingMatRef.current.color.set(target.isViolation ? '#D64545' : '#1B3FC4')
+      }
+
+      if (!wSettled || !hSettled) invalidate()
+    },
+    () => {
+      const t = targetRef.current
+      const a = animRef.current
+      return (
+        Math.abs(a.w - t.w) <= 0.001 &&
+        Math.abs(a.h - t.h) <= 0.001
+      )
+    },
+  )
+
+  // Expose reset to the store subscription
+  useEffect(() => {
+    resetAnimRef.current = resetAnim
+  }, [resetAnim])
 
   // Emit overlay items for all labels
   const upsertItem = useOverlayStore((s) => s.upsertItem)
@@ -291,7 +311,7 @@ export function FARScene() {
         <meshStandardMaterial color={SCENE_COLORS.setbackZone} transparent opacity={0.45} />
       </instancedMesh>
 
-      {/* ── Building envelope (unit cube, scaled by useFrame) ───────────── */}
+      {/* ── Building envelope (unit cube, scaled by animation) ───────────── */}
       <mesh ref={buildingRef} castShadow>
         <boxGeometry args={[1, 1, 1]} />
         <meshStandardMaterial
