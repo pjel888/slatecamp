@@ -20,7 +20,7 @@ export const ResultsCTAs = ({ sessionId, missedCount }: ResultsCTAsProps) => {
   }
 
   const handleDashboard = () => {
-    router.push('/dashboard')
+    router.push('/dashboard/drills')
   }
 
   return (
@@ -53,7 +53,7 @@ export const ResultsCTAs = ({ sessionId, missedCount }: ResultsCTAsProps) => {
           'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border focus-visible:ring-offset-2',
         )}
       >
-        Back to Dashboard
+        Back to Drills
       </button>
     </div>
   )
