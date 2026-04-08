@@ -331,6 +331,18 @@
 - **Prose Config:** `prose-wiki` utility in globals.css — 15px base, 1.7 line-height, 65ch max-width — refinements: h2-h4 spacing, blockquote styling
 - **3-Phase Wiki Roadmap:** (W1) Typography + tables, (W2) Callout refinement, (W3) Widget containers
 
+### Flowbite Integration & Component Optimization (2026-04-08)
+- **Plan Location:** `.ai/plans/3d-module-improvement/flowbite-integration-and-component-optimization.md`
+- **Strategy:** Adapt Flowbite Pro patterns without installing `flowbite-react`. Map patterns to existing `ui/` components.
+- **Slider Consolidation:** Canonical `UnifiedSlider.tsx` identified. Fragmented implementations in `PredictionSlider.tsx` and 3D Lab (LotInputPanel, NBCPControlPanel) targeted for refactoring.
+- **3D Overlay Strategy:** 2D DOM overlays mandatory (no `<Html>`/`<Text>` in Canvas). Flowbite's "Tooltip", "Popover", and "Card" patterns are primary choice for projected 3D annotations.
+- **Identity Lock:** `SlideToSubmit.tsx` and `GestureCaptureZone.tsx` are brand-locked and EXCLUDED from all design system migrations.
+
+### 3D Lab Research Consolidation (2026-04-08)
+- **Location:** `.ai/plans/3d-module-improvement/research/3d_lab_research_consolidation.md`
+- **Context:** Consolidated strategic blueprints from Google and Perplexity research into a single source of truth for the 3D Lab implementation roadmap (Phases 0-9) and repo-level audit framework.
+- **Archive:** Original `google_research.md` and `perplexity_research.md` moved to `.ai/archive/`.
+
 ---
 
 ## Session History
