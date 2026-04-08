@@ -199,15 +199,39 @@
   "hotPaths": [
     {
       "path": "",
-      "accessCount": 54,
-      "lastAccessed": 1775549314584,
+      "accessCount": 59,
+      "lastAccessed": 1775611048795,
       "type": "directory"
     },
     {
+      "path": "src\\lib\\quiz\\intelligent-routing.ts",
+      "accessCount": 39,
+      "lastAccessed": 1775612878189,
+      "type": "file"
+    },
+    {
+      "path": "src\\lib\\actions\\quiz-v2\\start-session.ts",
+      "accessCount": 39,
+      "lastAccessed": 1775613020834,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\testing\\hub\\HeroConfigurator.tsx",
+      "accessCount": 35,
+      "lastAccessed": 1775611626418,
+      "type": "file"
+    },
+    {
       "path": "src",
-      "accessCount": 30,
-      "lastAccessed": 1775539592600,
+      "accessCount": 35,
+      "lastAccessed": 1775613403358,
       "type": "directory"
+    },
+    {
+      "path": "src\\stores\\useQuizStore.ts",
+      "accessCount": 24,
+      "lastAccessed": 1775610283585,
+      "type": "file"
     },
     {
       "path": "src\\app\\api\\webhooks\\lemonsqueezy\\route.ts",
@@ -217,14 +241,32 @@
     },
     {
       "path": ".ai\\state\\memory.md",
+      "accessCount": 16,
+      "lastAccessed": 1775571042093,
+      "type": "file"
+    },
+    {
+      "path": "supabase",
+      "accessCount": 16,
+      "lastAccessed": 1775611894522,
+      "type": "directory"
+    },
+    {
+      "path": "src\\lib\\actions\\quiz-v2\\submit-answer.ts",
       "accessCount": 15,
-      "lastAccessed": 1775551679769,
+      "lastAccessed": 1775610308070,
       "type": "file"
     },
     {
       "path": "src\\app\\api\\webhooks\\payrex\\route.ts",
       "accessCount": 13,
       "lastAccessed": 1775536515482,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\quiz-v2\\StandardQuizShell.tsx",
+      "accessCount": 13,
+      "lastAccessed": 1775611556636,
       "type": "file"
     },
     {
@@ -240,27 +282,21 @@
       "type": "file"
     },
     {
-      "path": "src\\components\\testing\\hub\\HeroConfigurator.tsx",
-      "accessCount": 10,
-      "lastAccessed": 1775539026113,
+      "path": "src\\components\\quiz-v2\\EnduranceShell.tsx",
+      "accessCount": 8,
+      "lastAccessed": 1775584723963,
       "type": "file"
     },
     {
-      "path": "src\\stores\\useQuizStore.ts",
-      "accessCount": 9,
-      "lastAccessed": 1775529877052,
+      "path": "src\\lib\\quiz\\to-client-question.ts",
+      "accessCount": 7,
+      "lastAccessed": 1775581178604,
       "type": "file"
     },
     {
-      "path": "src\\lib\\actions\\quiz-v2\\start-session.ts",
-      "accessCount": 9,
-      "lastAccessed": 1775531693478,
-      "type": "file"
-    },
-    {
-      "path": "src\\lib\\actions\\quiz-v2\\submit-answer.ts",
-      "accessCount": 6,
-      "lastAccessed": 1775530614663,
+      "path": "src\\components\\quiz-v2\\SimulationShell.tsx",
+      "accessCount": 7,
+      "lastAccessed": 1775584705380,
       "type": "file"
     },
     {
@@ -283,20 +319,32 @@
     },
     {
       "path": "src\\types\\quiz-config.ts",
-      "accessCount": 4,
-      "lastAccessed": 1775536686083,
+      "accessCount": 5,
+      "lastAccessed": 1775571614276,
       "type": "directory"
-    },
-    {
-      "path": "src\\components\\quiz-v2\\EnduranceShell.tsx",
-      "accessCount": 4,
-      "lastAccessed": 1775550501753,
-      "type": "file"
     },
     {
       "path": "src\\lib\\supabase\\middleware.ts",
       "accessCount": 3,
       "lastAccessed": 1775529208929,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\quiz\\[mode]\\setup\\page.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1775579394352,
+      "type": "file"
+    },
+    {
+      "path": "supabase\\migrations\\20260406183904_add_user_question_states.sql",
+      "accessCount": 3,
+      "lastAccessed": 1775611898638,
+      "type": "file"
+    },
+    {
+      "path": "supabase\\migrations\\004_add_user_roles.sql",
+      "accessCount": 3,
+      "lastAccessed": 1775611985721,
       "type": "file"
     },
     {
@@ -316,24 +364,6 @@
       "accessCount": 2,
       "lastAccessed": 1775528756273,
       "type": "directory"
-    },
-    {
-      "path": "src\\lib\\quiz\\intelligent-routing.ts",
-      "accessCount": 2,
-      "lastAccessed": 1775528812846,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\quiz-v2\\SimulationShell.tsx",
-      "accessCount": 2,
-      "lastAccessed": 1775529298902,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\quiz-v2\\StandardQuizShell.tsx",
-      "accessCount": 2,
-      "lastAccessed": 1775529300872,
-      "type": "file"
     },
     {
       "path": ".ai\\plans\\implementation-api-routes.md",
@@ -366,12 +396,6 @@
       "type": "directory"
     },
     {
-      "path": "supabase",
-      "accessCount": 2,
-      "lastAccessed": 1775530890812,
-      "type": "directory"
-    },
-    {
       "path": "src\\app\\api\\cron\\blindspot-scan\\route.ts",
       "accessCount": 2,
       "lastAccessed": 1775531703199,
@@ -390,9 +414,21 @@
       "type": "file"
     },
     {
-      "path": "src\\lib\\quiz\\to-client-question.ts",
-      "accessCount": 1,
-      "lastAccessed": 1775528531214,
+      "path": "supabase\\migrations\\20260407_query_optimization.sql",
+      "accessCount": 2,
+      "lastAccessed": 1775569570621,
+      "type": "file"
+    },
+    {
+      "path": "src\\stores",
+      "accessCount": 2,
+      "lastAccessed": 1775608898721,
+      "type": "directory"
+    },
+    {
+      "path": "supabase\\migrations\\20260406144507_optimize_quiz_interactions.sql",
+      "accessCount": 2,
+      "lastAccessed": 1775611857802,
       "type": "file"
     },
     {
@@ -402,33 +438,9 @@
       "type": "file"
     },
     {
-      "path": "supabase\\migrations\\004_add_user_roles.sql",
-      "accessCount": 1,
-      "lastAccessed": 1775528605822,
-      "type": "file"
-    },
-    {
-      "path": "supabase\\migrations\\20260406183904_add_user_question_states.sql",
-      "accessCount": 1,
-      "lastAccessed": 1775528645312,
-      "type": "file"
-    },
-    {
-      "path": "supabase\\migrations\\20260406144507_optimize_quiz_interactions.sql",
-      "accessCount": 1,
-      "lastAccessed": 1775528659829,
-      "type": "file"
-    },
-    {
       "path": "supabase\\migrations\\20260407_unique_constraints.sql",
       "accessCount": 1,
       "lastAccessed": 1775528731415,
-      "type": "file"
-    },
-    {
-      "path": "supabase\\migrations\\20260407_query_optimization.sql",
-      "accessCount": 1,
-      "lastAccessed": 1775528780268,
       "type": "file"
     },
     {
@@ -444,22 +456,10 @@
       "type": "file"
     },
     {
-      "path": "src\\app\\quiz\\[mode]\\setup\\page.tsx",
-      "accessCount": 1,
-      "lastAccessed": 1775529148428,
-      "type": "file"
-    },
-    {
       "path": "src\\app\\quiz\\[mode]\\setup\\client.tsx",
       "accessCount": 1,
       "lastAccessed": 1775529148883,
       "type": "file"
-    },
-    {
-      "path": "src\\stores",
-      "accessCount": 1,
-      "lastAccessed": 1775529309044,
-      "type": "directory"
     },
     {
       "path": "src\\app\\api\\ai\\generate-questions\\route.ts",

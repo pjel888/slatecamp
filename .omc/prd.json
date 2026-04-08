@@ -1,0 +1,36 @@
+{
+  "title": "Drills Route E2E Verification",
+  "stories": [
+    {
+      "id": "US-001",
+      "title": "Drills page loads with all sections",
+      "passes": true
+    },
+    {
+      "id": "US-002",
+      "title": "Intelligent Configurator creates session and navigates to quiz",
+      "passes": true
+    },
+    {
+      "id": "US-003",
+      "title": "Quiz session — select answer, submit, see feedback, navigate",
+      "passes": true
+    },
+    {
+      "id": "US-004",
+      "title": "Full Exam Simulation setup page loads",
+      "passes": true
+    },
+    {
+      "id": "US-005",
+      "title": "Design Endurance setup page loads",
+      "passes": true
+    },
+    {
+      "id": "US-006",
+      "title": "Resume session flow works",
+      "passes": true,
+      "note": "Verified via browser — resume link navigates to active session which loads at correct question"
+    }
+  ]
+}
