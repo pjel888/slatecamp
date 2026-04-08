@@ -25,6 +25,7 @@ import type {
   SubmitAnswerResult,
 } from '@/types/quiz-config'
 import type { QuestionMatchData } from '@/lib/quiz/answer-matching'
+import type { CAGEBindingToken } from '@/types/patent'
 
 interface SessionRow {
   session_id: string
@@ -34,6 +35,7 @@ interface SessionRow {
   question_ids: string[] | null
   answered_count?: number | null
   correct_count?: number | null
+  cage_session_key?: string | null
 }
 
 interface QuestionRow {
@@ -99,7 +101,7 @@ export const submitAnswer = async (
         supabase,
         user.id,
         parsedInput.sessionId,
-        'session_id, user_id, status, config, question_ids, answered_count, correct_count',
+        'session_id, user_id, status, config, question_ids, answered_count, correct_count, cage_session_key',
       ),
       supabase
         .from('questions')
@@ -333,30 +335,74 @@ export const submitAnswer = async (
         )
       }
 
-      if (interactionId && (input.signalTrace?.length || input.cageToken)) {
+      if (interactionId && input.signalTrace?.length) {
         backgroundTasks.push(
           (async () => {
             const { createAdminClient: getAdmin } = await import('@/lib/supabase/admin')
             const admin = getAdmin()
 
-            if (input.signalTrace?.length) {
-              const first = input.signalTrace[0]
-              const last = input.signalTrace[input.signalTrace.length - 1]
-              const durationMs = Math.round(last.timestamp - first.timestamp)
+            const first = input.signalTrace![0]
+            const last = input.signalTrace![input.signalTrace!.length - 1]
+            const durationMs = Math.round(last.timestamp - first.timestamp)
 
-              const { error } = await admin.from('interaction_signal_traces').insert({
-                interaction_id: interactionId,
-                events: input.signalTrace,
-                event_count: input.signalTrace.length,
-                duration_ms: durationMs,
-                capture_rate_hz:
-                  durationMs > 0 ? input.signalTrace.length / (durationMs / 1000) : 0,
-                device_sensors_available: input.sensorsAvailable ?? false,
+            const { error } = await admin.from('interaction_signal_traces').insert({
+              interaction_id: interactionId,
+              events: input.signalTrace,
+              event_count: input.signalTrace!.length,
+              duration_ms: durationMs,
+              capture_rate_hz:
+                durationMs > 0 ? input.signalTrace!.length / (durationMs / 1000) : 0,
+              device_sensors_available: input.sensorsAvailable ?? false,
+            })
+
+            if (error) {
+              console.error('[submitAnswer] Failed to store signal trace:', error)
+            }
+          })(),
+        )
+      }
+
+      // CAGE verification — fire-and-forget (Patent Claims 3(f), 3(g), 20, 21)
+      if (interactionId && input.cageToken) {
+        backgroundTasks.push(
+          (async () => {
+            try {
+              const { verifyBindingToken } = await import('@/lib/cage/verifyBindingToken')
+              const { storeCageToken } = await import('@/lib/cage/cageTokenStore')
+              const token = input.cageToken as CAGEBindingToken
+              const cageSessionKey = session.cage_session_key
+
+              if (!cageSessionKey) {
+                await storeCageToken({
+                  interactionId: interactionId!,
+                  sessionId: parsedInput.sessionId,
+                  questionId: parsedInput.questionId,
+                  token,
+                  trustLevel: 'unavailable',
+                })
+                console.warn('[CAGE] Session key unavailable, skipping verification')
+                return
+              }
+
+              const result = await verifyBindingToken(
+                token,
+                { questionId: parsedInput.questionId, selectedOptionId: parsedInput.selectedOptionId },
+                cageSessionKey,
+                parsedInput.sessionId,
+              )
+
+              await storeCageToken({
+                interactionId: interactionId!,
+                sessionId: parsedInput.sessionId,
+                questionId: parsedInput.questionId,
+                token,
+                trustLevel: result.trustLevel as 'verified' | 'failed',
+                failureReasons: result.failureReasons.length > 0 ? result.failureReasons : undefined,
               })
 
-              if (error) {
-                console.error('[submitAnswer] Failed to store signal trace:', error)
-              }
+              console.log(`[CAGE] session=${parsedInput.sessionId} status=${result.trustLevel} reasons=${result.failureReasons.join(',')}`)
+            } catch (err) {
+              console.error('[CAGE] Verification pipeline failed:', err)
             }
           })(),
         )

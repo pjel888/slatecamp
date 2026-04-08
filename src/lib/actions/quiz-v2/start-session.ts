@@ -28,25 +28,26 @@ const DB_TEST_MODE_BY_APP_MODE: Record<StartSessionInput['mode'], string> = {
   article_review: 'practice',
 }
 
-const issueSessionSecurity = async (
+const generateCageSessionKey = (): string | null => {
+  try {
+    return randomBytes(32).toString('hex')
+  } catch {
+    return null
+  }
+}
+
+const issueSessionNonces = async (
   sessionId: string,
   questionIds: string[],
   userId: string,
-) => {
-  let nonces: Record<string, { nonce: string; expiresAt: string }> = {}
-  let sessionKey: string | null = null
-
+): Promise<Record<string, { nonce: string; expiresAt: string }>> => {
   try {
     const { issueNonceBatch } = await import('@/lib/cage/nonceService')
     const nonceMap = await issueNonceBatch(sessionId, questionIds, userId)
-    nonces = Object.fromEntries(nonceMap)
-    sessionKey = randomBytes(32).toString('hex')
+    return Object.fromEntries(nonceMap)
   } catch {
-    nonces = {}
-    sessionKey = null
+    return {}
   }
-
-  return { nonces, sessionKey }
 }
 
 export const startSession = async (
@@ -195,6 +196,9 @@ export const startSession = async (
     const questionIds = selectedQuestions.map((q) => q.question_id)
     const uniqueTopicIds = [...new Set(selectedQuestions.map((q) => q.topic_id))] as string[]
 
+    // Generate CAGE session key before insert (sync, no dependencies)
+    const sessionKey = generateCageSessionKey()
+
     // Parallel: breadcrumb map + session insert (independent operations)
     const [taxonomyMap, { data: session, error: sessionError }] = await Promise.all([
       buildTaxonomyBreadcrumbMap(supabase, uniqueTopicIds),
@@ -210,6 +214,7 @@ export const startSession = async (
           subject_ids: uniqueTopicIds,
           current_question_index: 0,
           started_at: new Date().toISOString(),
+          cage_session_key: sessionKey,
         })
         .select('session_id')
         .single(),
@@ -230,7 +235,8 @@ export const startSession = async (
       ),
     )
 
-    const { nonces, sessionKey } = await issueSessionSecurity(
+    // Issue nonces after insert (needs session_id from insert result)
+    const nonces = await issueSessionNonces(
       session.session_id,
       clientQuestions.map((question) => question.question_id),
       user.id,
