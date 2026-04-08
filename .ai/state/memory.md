@@ -357,6 +357,15 @@
 - **Context:** Consolidated strategic blueprints from Google and Perplexity research into a single source of truth for the 3D Lab implementation roadmap (Phases 0-9) and repo-level audit framework.
 - **Archive:** Original `google_research.md` and `perplexity_research.md` moved to `.ai/archive/`.
 
+### Drills Feature PRD & Specification (2026-04-08)
+- **Naming Consolidation:** All user-facing references to "Quiz" and "Test" are migrated to **"Drills"** for behavioral and legal reasons.
+- **Drill Modes:** 5 core modes documented (`camp`, `storm`, `focused`, `extended`, `fullexam`). `Quick Fire` flagged as in-development.
+- **Intelligent Routing:** Standardized on **60/30/10 algorithm** (60% Unseen, 30% Remediation, 10% Spaced Repetition).
+- **CAGE Support:** 3-state cryptographic binding (`bound`, `degraded`, `unavailable`) documented for patented gesture-answer verification.
+- **Mastery Engine:** EMA formula verified: `newWeight = prevMastery + alpha * baseWeight * (answerValue - prevMastery)`.
+- **Readiness Score:** Computed via 6 anti-inflation vectors including grey node penalties and Bloom's level ceilings.
+- **Distractor Normalization:** ✅ Active script at `scripts/normalize-distractors.ts` using GPT-4o to expand short distractors.
+
 ---
 
 ## Session History
