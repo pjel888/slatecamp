@@ -46,7 +46,7 @@ export function LabPanelLayout({
 
   return (
     <div
-      className="h-full w-full grid max-md:flex max-md:flex-col"
+      className="h-full w-full grid max-md:flex max-md:flex-col pointer-events-auto"
       style={{ gridTemplateColumns, gridTemplateRows: '1fr' }}
     >
       {/* ── Left Panel ──────────────────────────────────────────────────── */}
@@ -68,7 +68,7 @@ export function LabPanelLayout({
       </div>
 
       {/* ── Viewport (1fr — absorbs remaining space) ────────────────────── */}
-      <div className="relative overflow-hidden max-md:flex-1">
+      <div className="relative overflow-hidden max-md:flex-1 pointer-events-none">
         {children}
       </div>
 

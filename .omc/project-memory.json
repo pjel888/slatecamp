@@ -235,15 +235,33 @@
       "type": "file"
     },
     {
-      "path": "src\\features\\3d-lab\\templates\\AnimatedSequenceScene.tsx",
-      "accessCount": 3,
-      "lastAccessed": 1775626560864,
+      "path": "src\\features\\3d-lab\\templates\\ParametricScene.tsx",
+      "accessCount": 4,
+      "lastAccessed": 1775628810854,
+      "type": "file"
+    },
+    {
+      "path": "src\\features\\3d-lab\\templates\\WallConfiguratorTemplate.tsx",
+      "accessCount": 4,
+      "lastAccessed": 1775628811293,
+      "type": "file"
+    },
+    {
+      "path": "src\\features\\3d-lab\\templates\\CalculatorTemplate.tsx",
+      "accessCount": 4,
+      "lastAccessed": 1775628812916,
       "type": "file"
     },
     {
       "path": "src\\features\\3d-lab\\components\\ModuleViewer.tsx",
+      "accessCount": 4,
+      "lastAccessed": 1775628821305,
+      "type": "file"
+    },
+    {
+      "path": "src\\features\\3d-lab\\templates\\AnimatedSequenceScene.tsx",
       "accessCount": 3,
-      "lastAccessed": 1775626598991,
+      "lastAccessed": 1775626560864,
       "type": "file"
     },
     {
@@ -271,6 +289,12 @@
       "type": "directory"
     },
     {
+      "path": "src\\features\\3d-lab\\components\\shell\\LabViewportFrame.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1775628830379,
+      "type": "file"
+    },
+    {
       "path": "src\\features\\3d-lab\\templates\\CutawaySectionScene.tsx",
       "accessCount": 2,
       "lastAccessed": 1775626533744,
@@ -283,21 +307,9 @@
       "type": "file"
     },
     {
-      "path": "src\\features\\3d-lab\\templates\\ParametricScene.tsx",
-      "accessCount": 2,
-      "lastAccessed": 1775626614217,
-      "type": "file"
-    },
-    {
       "path": "src\\features\\3d-lab\\hooks\\useModuleLifecycle.ts",
       "accessCount": 2,
       "lastAccessed": 1775626619935,
-      "type": "file"
-    },
-    {
-      "path": "src\\features\\3d-lab\\components\\shell\\LabViewportFrame.tsx",
-      "accessCount": 2,
-      "lastAccessed": 1775626622416,
       "type": "file"
     },
     {
@@ -313,18 +325,6 @@
       "type": "file"
     },
     {
-      "path": "src\\features\\3d-lab\\templates\\WallConfiguratorTemplate.tsx",
-      "accessCount": 2,
-      "lastAccessed": 1775626689992,
-      "type": "file"
-    },
-    {
-      "path": "src\\features\\3d-lab\\templates\\CalculatorTemplate.tsx",
-      "accessCount": 2,
-      "lastAccessed": 1775626700811,
-      "type": "file"
-    },
-    {
       "path": "src\\features\\3d-lab",
       "accessCount": 2,
       "lastAccessed": 1775626777041,
@@ -335,6 +335,36 @@
       "accessCount": 2,
       "lastAccessed": 1775627501492,
       "type": "directory"
+    },
+    {
+      "path": "src\\components\\calculators\\FlooringScene.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1775628813405,
+      "type": "file"
+    },
+    {
+      "path": "src\\features\\3d-lab\\templates\\WallConfiguratorRenderer.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1775628813745,
+      "type": "file"
+    },
+    {
+      "path": "src\\features\\3d-lab\\stores\\useWallLabStore.ts",
+      "accessCount": 2,
+      "lastAccessed": 1775628821944,
+      "type": "file"
+    },
+    {
+      "path": "src\\features\\3d-lab\\config\\registry\\cat-08.ts",
+      "accessCount": 2,
+      "lastAccessed": 1775628844682,
+      "type": "file"
+    },
+    {
+      "path": "src\\features\\3d-lab\\config\\registry\\cat-10.ts",
+      "accessCount": 2,
+      "lastAccessed": 1775628845102,
+      "type": "file"
     },
     {
       "path": "src\\features\\3d-lab\\templates\\ExplodedAssembly.tsx",
@@ -371,6 +401,90 @@
       "accessCount": 1,
       "lastAccessed": 1775627525432,
       "type": "directory"
+    },
+    {
+      "path": ".ai\\state\\current-task.md",
+      "accessCount": 1,
+      "lastAccessed": 1775628622355,
+      "type": "file"
+    },
+    {
+      "path": ".ai\\plans\\3d-module-improvement\\audit & implementation\\01_master_architecture.md",
+      "accessCount": 1,
+      "lastAccessed": 1775628623489,
+      "type": "file"
+    },
+    {
+      "path": ".ai\\plans\\3d-module-improvement\\audit & implementation\\02_phase_tracker.md",
+      "accessCount": 1,
+      "lastAccessed": 1775628624132,
+      "type": "file"
+    },
+    {
+      "path": ".ai\\state\\memory.md",
+      "accessCount": 1,
+      "lastAccessed": 1775628637605,
+      "type": "file"
+    },
+    {
+      "path": "src\\features\\3d-lab\\config\\modules\\15-estimating\\calculator-flooring.ts",
+      "accessCount": 1,
+      "lastAccessed": 1775628686557,
+      "type": "file"
+    },
+    {
+      "path": "src\\features\\3d-lab\\config\\modules\\10-materials\\unified-wall-configurator.ts",
+      "accessCount": 1,
+      "lastAccessed": 1775628686838,
+      "type": "file"
+    },
+    {
+      "path": "src\\features\\3d-lab\\config\\modules\\08-vertical\\stairway-configurator.ts",
+      "accessCount": 1,
+      "lastAccessed": 1775628692288,
+      "type": "file"
+    },
+    {
+      "path": "src\\features\\3d-lab\\config\\registry\\cat-15.ts",
+      "accessCount": 1,
+      "lastAccessed": 1775628699608,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\calculators\\FlooringInputPanel.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1775628714569,
+      "type": "file"
+    },
+    {
+      "path": "src\\features\\3d-lab\\templates\\ParametricSceneRenderer.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1775628813965,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\calculators\\_stores\\flooringStore.ts",
+      "accessCount": 1,
+      "lastAccessed": 1775628822930,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\calculators\\_lib\\calculator-materials.ts",
+      "accessCount": 1,
+      "lastAccessed": 1775628823015,
+      "type": "file"
+    },
+    {
+      "path": "src\\features\\3d-lab\\components",
+      "accessCount": 1,
+      "lastAccessed": 1775628829267,
+      "type": "directory"
+    },
+    {
+      "path": "src\\features\\3d-lab\\components\\LabViewport.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1775628835010,
+      "type": "file"
     }
   ],
   "userDirectives": []

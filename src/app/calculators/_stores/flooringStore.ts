@@ -22,8 +22,8 @@ interface FlooringState extends BaseCalculatorStore, FlooringInputs {
 
 const DEFAULT_INPUTS: FlooringInputs = {
   roomMode: 'rectangle',
-  roomLengthMm: 0,
-  roomWidthMm: 0,
+  roomLengthMm: 4000,
+  roomWidthMm: 3000,
   floorPolygonPoints: [],
   exclusions: [],
   tileLengthMm: 600,
@@ -62,8 +62,8 @@ export const useFlooringStore = create<FlooringState>()((set, get) => ({
   // Flooring-specific inputs
   ...DEFAULT_INPUTS,
 
-  // Computed results
-  computed: EMPTY_COMPUTED,
+  // Computed results — pre-compute from default inputs so scene renders on load
+  computed: computeFlooringEstimate(DEFAULT_INPUTS),
 
   setInput: (key, value) => {
     set((s) => {

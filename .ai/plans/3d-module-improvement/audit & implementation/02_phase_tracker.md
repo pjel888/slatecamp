@@ -243,13 +243,16 @@ Files to MODIFY (removed ALL `<Html>` and `<Text>`):
 ## Module Rollout
 
 ### Build Phase 0: Repair Broken Existing Modules
-**Status:** NOT STARTED
+**Status:** ✅ COMPLETE (2026-04-08)
 **Depends on:** Architecture P0
 
-- [ ] Site Development Controls — verify against new architecture
-- [ ] Stairway Geometry Configurator — Git review, implement SceneConfig + DOM overlay
-- [ ] Unified Wall Configurator — Git review, align with LabPanelLayout
-- [ ] Flooring / Tile Visualizer — rendering audit, fix Canvas mounting
+- [x] Site Development Controls — verified working (bespoke, own Canvas, unaffected)
+- [x] Stairway Geometry Configurator — fixed pointer-events-none blocking LabPanelLayout panels
+- [x] Unified Wall Configurator — fixed pointer-events-none blocking LabPanelLayout panels
+- [x] Flooring / Tile Visualizer — fixed pointer-events-none on CalculatorTemplate + set default room dimensions (4000x3000mm) + pre-computed initial tile grid
+
+**Root Cause:** LabViewportFrame children wrapper had `pointer-events-none` that cascaded to all template panels, making controls unclickable. Fixed by adding `pointer-events-auto` to LabPanelLayout grid root and CalculatorTemplate layout, with `pointer-events-none` on center viewport divs to preserve Canvas event pass-through.
+**Plan:** `.ai/plans/archive/build_phase_0_module_repair_plan.md`
 
 ---
 
