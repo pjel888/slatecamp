@@ -6,7 +6,6 @@ import { getFeatureFlags, hasTierAccess } from "@/lib/admin/feature-flags";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Lock } from "@phosphor-icons/react/dist/ssr";
-import { SCIcon } from "@/components/graphics/icons/Icon";
 import { LabBrowser, LabBrowserShell } from "@/features/3d-lab/components";
 
 export const metadata = { title: "3D Lab" };
@@ -41,7 +40,7 @@ export default async function ThreeDLabPage({
     return (
       <LabBrowserShell>
         <div className="flex flex-col items-center justify-center py-24 text-center">
-          <SCIcon icon={Lock} size="2xl" className="text-muted-foreground" />
+          <Lock size={48} className="text-muted-foreground" />
           <h1 className="mt-4 text-xl font-semibold text-foreground">
             3D Interactive Lab
           </h1>
