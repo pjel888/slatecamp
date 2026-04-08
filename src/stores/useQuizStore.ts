@@ -474,10 +474,16 @@ const createSessionSlice: StateCreator<QuizStore, [["zustand/subscribeWithSelect
         }
 
         if (config?.feedback.timing === 'immediate') {
-          set({
-            status: 'feedback',
-            results: finalResult,
-          })
+          if (get().ui.calculatingResults) {
+            // Race condition recovery: user already tapped Next while server was processing.
+            // Skip feedback and go directly to results.
+            get().endSession(finalResult)
+          } else {
+            set({
+              status: 'feedback',
+              results: finalResult,
+            })
+          }
         } else {
           set({ status: 'finalizing' })
           get().endSession(finalResult)
@@ -582,10 +588,11 @@ const createSessionSlice: StateCreator<QuizStore, [["zustand/subscribeWithSelect
     get().goToQuestion(currentIndex - 1)
   },
 
-  endSession: (result) => set({
+  endSession: (result) => set((state) => ({
     status: 'results',
     results: result,
-  }),
+    ui: { ...state.ui, calculatingResults: false },
+  })),
 
   queueOfflineSubmission: (input) => set((state) => ({
     pendingSubmissions: [...state.pendingSubmissions, input],

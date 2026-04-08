@@ -8,6 +8,7 @@ import { BaseQuizShell } from './BaseQuizShell'
 import { QuizBody } from './QuizBody'
 import { PacingNudge } from './PacingNudge'
 import { useQuizShellHandlers } from '@/hooks/useQuizShellHandlers'
+import { useOnlineStatus } from '@/hooks/useOnlineStatus'
 import { 
   getSessionQuestions, 
   updateSessionProgress 
@@ -84,6 +85,10 @@ export const StandardQuizShell = ({
   const skipCurrentQuestion = useQuizStore((s) => s.skipCurrentQuestion)
   const goNext = useQuizStore((s) => s.goNext)
   const reset = useQuizStore((s) => s.reset)
+  const endSession = useQuizStore((s) => s.endSession)
+  const calculatingResults = useQuizStore((s) => s.ui.calculatingResults)
+  const flushOfflineQueue = useQuizStore((s) => s.flushOfflineQueue)
+  const isOnline = useOnlineStatus()
   const startTimer = useQuizTimerStore((s) => s.startTimer)
   const stopTimer = useQuizTimerStore((s) => s.stopTimer)
   const resetTimer = useQuizTimerStore((s) => s.resetTimer)
@@ -132,17 +137,21 @@ export const StandardQuizShell = ({
 
     const fetchRemaining = async () => {
       const BATCH_SIZE = 50
+      const batches = []
       for (let i = 0; i < remainingIds.length; i += BATCH_SIZE) {
-        try {
-          const batchData = await getSessionQuestions({
-            sessionId,
-            offset: questions.length + i,
-            limit: Math.min(BATCH_SIZE, remainingIds.length - i),
-          })
+        batches.push({ offset: questions.length + i, limit: Math.min(BATCH_SIZE, remainingIds.length - i) })
+      }
+      try {
+        const results = await Promise.all(
+          batches.map(({ offset, limit }) =>
+            getSessionQuestions({ sessionId, offset, limit })
+          ),
+        )
+        for (const batchData of results) {
           addQuestions(batchData)
-        } catch (err) {
-          console.error('Background fetch failed:', err)
         }
+      } catch (err) {
+        console.error('Background fetch failed:', err)
       }
     }
     void fetchRemaining()
@@ -164,6 +173,21 @@ export const StandardQuizShell = ({
       router.push(`/quiz/${config.mode}/session/${sessionId}/results`)
     }
   }, [status, results, config.mode, sessionId, router, stopTimer])
+
+  // Safety net: recover from race condition where calculatingResults is true
+  // but endSession was never called (results arrived after user tapped Next)
+  useEffect(() => {
+    if (calculatingResults && results && status !== 'results') {
+      endSession(results)
+    }
+  }, [calculatingResults, results, status, endSession])
+
+  // Flush offline answer queue when connectivity is restored
+  useEffect(() => {
+    if (isOnline) {
+      void flushOfflineQueue()
+    }
+  }, [isOnline, flushOfflineQueue])
 
   const handlePacingAutoAdvance = () => {
     if (!currentQuestion) return

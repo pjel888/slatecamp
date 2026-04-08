@@ -180,7 +180,7 @@ describe('submitAnswer', () => {
     const result = await submitAnswer(baseInput)
 
     expect(result.sessionComplete).toBe(true)
-    expect(result.finalResult).toEqual(finalResult as any)
+    expect(result.finalResult).toEqual(expect.objectContaining(finalResult))
     expect(endSessionActionMock).toHaveBeenCalledWith({
       sessionId: baseInput.sessionId,
       endReason: 'completed'

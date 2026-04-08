@@ -5,6 +5,7 @@ import { MODE_PRESETS } from '@/lib/quiz/mode-presets'
 import { analyzeStamina } from '@/lib/quiz/stamina-analysis'
 import { getReviewData, getConfidenceMatrix } from '@/lib/actions/quiz-v2'
 import { generateRecommendations } from '@/lib/actions/quiz-v2/generate-recommendations'
+import ResultsDashboard from '@/components/quiz-v2/results/ResultsDashboard'
 const PREDICTION_MODES = ['storm', 'fullexam', 'extended']
 const shouldShowPrediction = (mode: string) => PREDICTION_MODES.includes(mode)
 import type { QuizMode } from '@/types/quiz-config'
@@ -56,13 +57,28 @@ const QuizResultsPage = async ({ params }: ResultsPageProps) => {
     }
   }
 
-  // Fetch interactions — compute counts from actual data (not session columns)
-  const { data: interactions } = await supabase
-    .from('user_interactions')
-    .select('question_id, is_correct, time_spent_ms')
-    .eq('session_id', sessionId)
-    .eq('user_id', user.id)
-    .order('created_at', { ascending: true })
+  // Parallel: interactions, global stats, and prior snapshot are independent queries
+  const [{ data: interactions }, { data: globalStats }, { data: priorSnapshot }] = await Promise.all([
+    supabase
+      .from('user_interactions')
+      .select('question_id, is_correct, time_spent_ms')
+      .eq('session_id', sessionId)
+      .eq('user_id', user.id)
+      .order('created_at', { ascending: true }),
+    supabase
+      .from('user_global_stats')
+      .select('global_readiness_score')
+      .eq('user_id', user.id)
+      .single(),
+    supabase
+      .from('readiness_score_snapshots')
+      .select('score')
+      .eq('user_id', user.id)
+      .lt('created_at', session.started_at)
+      .order('created_at', { ascending: false })
+      .limit(1)
+      .maybeSingle(),
+  ])
 
   const allInteractions = interactions ?? []
   const answeredCount = allInteractions.length
@@ -70,25 +86,7 @@ const QuizResultsPage = async ({ params }: ResultsPageProps) => {
     (i: { is_correct: boolean }) => i.is_correct,
   ).length
 
-  // Get readiness score from user_global_stats (current value)
-  const { data: globalStats } = await supabase
-    .from('user_global_stats')
-    .select('global_readiness_score')
-    .eq('user_id', user.id)
-    .single()
-
   const readinessScoreAfter = globalStats?.global_readiness_score ?? 0
-
-  // Get the most recent snapshot before this session for delta calculation
-  const { data: priorSnapshot } = await supabase
-    .from('readiness_score_snapshots')
-    .select('score')
-    .eq('user_id', user.id)
-    .lt('created_at', session.started_at)
-    .order('created_at', { ascending: false })
-    .limit(1)
-    .maybeSingle()
-
   const readinessScoreBefore = priorSnapshot?.score ?? readinessScoreAfter
 
   const result: EndSessionResult = {
@@ -114,56 +112,32 @@ const QuizResultsPage = async ({ params }: ResultsPageProps) => {
     staminaBlocks = analyzeStamina(allInteractions)
   }
 
-  // Fetch review data for inline question review
-  let reviewData
-  try {
-    reviewData = await getReviewData(sessionId)
-  } catch {
-    // If review data fails to load, render with empty questions
-    reviewData = null
-  }
-
-  // Fetch confidence matrix data (skip for chill mode — no confidence input)
-  let confidenceMatrix = null
-  if (config.mode !== 'chill') {
-    try {
-      confidenceMatrix = await getConfidenceMatrix(sessionId)
-    } catch {
-      // Non-critical — render without confidence matrix
-      confidenceMatrix = null
-    }
-  }
-
-  // Fetch prediction data if this mode supports predictions
+  // Parallel: review data, confidence matrix, prediction, and recommendations are independent
   const quizMode = mode as QuizMode
-  let predictionData: { predictionScore: number; postdictionScore: number | null } | null = null
 
-  if (shouldShowPrediction(quizMode)) {
-    const { data: prediction } = await supabase
-      .from('session_predictions')
-      .select('prediction_score, postdiction_score')
-      .eq('session_id', sessionId)
-      .eq('user_id', user.id)
-      .maybeSingle()
+  const [reviewData, confidenceMatrix, predictionRow, recommendations] = await Promise.all([
+    getReviewData(sessionId).catch(() => null),
+    config.mode !== 'chill'
+      ? getConfidenceMatrix(sessionId).catch(() => null)
+      : Promise.resolve(null),
+    shouldShowPrediction(quizMode)
+      ? supabase
+          .from('session_predictions')
+          .select('prediction_score, postdiction_score')
+          .eq('session_id', sessionId)
+          .eq('user_id', user.id)
+          .maybeSingle()
+          .then(({ data }) => data)
+      : Promise.resolve(null),
+    generateRecommendations(user.id, sessionId, 3).catch((): Recommendation[] => []),
+  ])
 
-    if (prediction) {
-      predictionData = {
-        predictionScore: prediction.prediction_score,
-        postdictionScore: prediction.postdiction_score,
+  const predictionData = predictionRow
+    ? {
+        predictionScore: predictionRow.prediction_score,
+        postdictionScore: predictionRow.postdiction_score,
       }
-    }
-  }
-
-  // Generate feed-forward recommendations
-  let recommendations: Recommendation[] = []
-  try {
-    recommendations = await generateRecommendations(user.id, sessionId, 3)
-  } catch {
-    // Non-critical — render without recommendations
-    recommendations = []
-  }
-
-  const ResultsDashboard = (await import('@/components/quiz-v2/results/ResultsDashboard')).default
+    : null
 
   return (
     <ResultsDashboard

@@ -279,7 +279,7 @@ export const submitAnswer = async (
     }
 
     const rationaleForClient =
-      feedbackTiming === 'immediate' ? resolveRationaleText(rationaleFromDb as any) || null : null
+      feedbackTiming === 'immediate' ? resolveRationaleText(rationaleFromDb as string | null) || null : null
     const wikiArticleUrl =
       feedbackTiming === 'immediate' && wikiSlug ? `/dashboard/wiki/${wikiSlug}?from=quiz` : null
     const sessionComplete = answeredCount >= questionIds.length

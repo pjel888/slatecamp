@@ -15,12 +15,12 @@ import {
   isTerminalSessionStatus,
 } from './session-helpers'
 import { createClient, getUser } from '@/lib/supabase/server'
-import type { EndSessionInput, EndSessionResult, QuizSessionConfig } from '@/types/quiz-config'
+import type { EndSessionInput, EndSessionResult, QuizSessionConfig, SessionStatus } from '@/types/quiz-config'
 
 interface SessionRow {
   session_id: string
   user_id: string
-  status: string
+  status: SessionStatus
   config: QuizSessionConfig | null
   question_ids: string[] | null
   started_at: string | null
@@ -328,7 +328,7 @@ export const endSession = async (
     const allInteractions = (interactions ?? []) as InteractionRow[]
     const storedFinalization = getStoredFinalization(session)
 
-    if (isTerminalSessionStatus(session.status as any)) {
+    if (isTerminalSessionStatus(session.status)) {
       const { data: stats } = await supabase
         .from('user_global_stats')
         .select('global_readiness_score')
@@ -377,35 +377,42 @@ export const endSession = async (
     const readinessScoreAfter =
       updatedStats?.global_readiness_score ?? readinessScoreBefore
 
-    if (shouldRunCompletionHooks(finalStatus)) {
-      const firstTopicId = allInteractions[0]?.topic_id ?? null
-      let sessionTopicName = 'your session'
-
-      if (firstTopicId) {
-        const { data: topicNode } = await supabase
-          .from('taxonomy_tree')
-          .select('name')
-          .eq('node_id', firstTopicId)
-          .maybeSingle()
-
-        if (topicNode?.name) sessionTopicName = topicNode.name
-      }
-
-      void triggerScoreChangeNotification(
-        user.id,
-        readinessScoreBefore,
-        readinessScoreAfter,
-        sessionTopicName,
-      )
-      void triggerZoneTransitionNotification(
-        user.id,
-        readinessScoreBefore,
-        readinessScoreAfter,
-      )
-      void runPostSessionHooks(user.id)
-    }
-
     const nowIso = new Date().toISOString()
+
+    // Fire notifications in background — topic fetch + triggers are not needed for results
+    if (shouldRunCompletionHooks(finalStatus)) {
+      void (async () => {
+        try {
+          const firstTopicId = allInteractions[0]?.topic_id ?? null
+          let sessionTopicName = 'your session'
+
+          if (firstTopicId) {
+            const { data: topicNode } = await supabase
+              .from('taxonomy_tree')
+              .select('name')
+              .eq('node_id', firstTopicId)
+              .maybeSingle()
+
+            if (topicNode?.name) sessionTopicName = topicNode.name
+          }
+
+          void triggerScoreChangeNotification(
+            user.id,
+            readinessScoreBefore,
+            readinessScoreAfter,
+            sessionTopicName,
+          )
+          void triggerZoneTransitionNotification(
+            user.id,
+            readinessScoreBefore,
+            readinessScoreAfter,
+          )
+          void runPostSessionHooks(user.id)
+        } catch {
+          // Never block results on notification delivery
+        }
+      })()
+    }
     const sessionDiscovery = {
       ...(session.session_discovery ?? {}),
       _finalization: {

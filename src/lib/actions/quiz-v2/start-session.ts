@@ -224,7 +224,7 @@ export const startSession = async (
         {
           ...question,
           breadcrumb: taxonomyMap.get(question.topic_id) ?? '',
-          is_interleaved: (question as any).is_interleaved ?? false,
+          is_interleaved: (question as { is_interleaved?: boolean }).is_interleaved ?? false,
         },
         index + 1,
       ),

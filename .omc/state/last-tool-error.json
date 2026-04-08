@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"find \\\"/c/Users/Philip Lewis/Desktop/slatecamp/supabase/migrations\\\" -type f -name \\\"*.sql\\\" | xargs grep -l \\\"cage_binding_tokens\\\\|issued_nonces\\\" 2>/dev/null\"}",
+  "error": "Exit code 123",
+  "timestamp": "2026-04-08T13:19:30.316Z",
+  "retry_count": 1
+}

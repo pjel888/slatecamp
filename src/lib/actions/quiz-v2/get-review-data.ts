@@ -57,15 +57,23 @@ export const getReviewData = async (
     topic_id: string
   }> = []
 
+  const questionBatches = []
   for (let i = 0; i < questionIds.length; i += BATCH_SIZE) {
-    const batch = questionIds.slice(i, i + BATCH_SIZE)
-    const { data, error: batchError } = await serviceClient
-      .from('questions')
-      .select(
-        'question_id, text, options, correct_option_id, rationale, prompt_image_url, topic_id, difficulty',
-      )
-      .in('question_id', batch)
+    questionBatches.push(questionIds.slice(i, i + BATCH_SIZE))
+  }
 
+  const questionBatchResults = await Promise.all(
+    questionBatches.map((batch) =>
+      serviceClient
+        .from('questions')
+        .select(
+          'question_id, text, options, correct_option_id, rationale, prompt_image_url, topic_id, difficulty',
+        )
+        .in('question_id', batch)
+    ),
+  )
+
+  for (const { data, error: batchError } of questionBatchResults) {
     if (batchError) throw batchError
     if (data) allQuestions.push(...(data as any[]))
   }
@@ -76,29 +84,35 @@ export const getReviewData = async (
   const taxonomyMap = new Map<string, string>()
   const wikiMap = new Map<string, string | null>()
 
+  const topicBatches = []
   for (let i = 0; i < topicIds.length; i += BATCH_SIZE) {
-    const batch = topicIds.slice(i, i + BATCH_SIZE)
-
-    const { data: taxonomyNodes } = await supabase
-      .from('taxonomy_tree')
-      .select('node_id, name, subject_area')
-      .in('node_id', batch)
-
-    for (const n of (taxonomyNodes ?? []) as Array<{ node_id: string; name: string; subject_area: string }>) {
-      taxonomyMap.set(n.node_id, `${n.subject_area} > ${n.name}`)
-    }
-
-    // 5. Fetch wiki article URLs for topics
-    const { data: wikiLinks } = await supabase
-      .from('wiki_article_taxonomy')
-      .select('node_id, article_id, wiki_articles(slug)')
-      .in('node_id', batch)
-      .eq('is_primary', true)
-
-    for (const w of (wikiLinks ?? []) as Array<{ node_id: string; wiki_articles?: { slug?: string } }>) {
-      wikiMap.set(w.node_id, w.wiki_articles?.slug ? `/dashboard/wiki/${w.wiki_articles.slug}?from=quiz` : null)
-    }
+    topicBatches.push(topicIds.slice(i, i + BATCH_SIZE))
   }
+
+  await Promise.all(
+    topicBatches.map(async (batch) => {
+      // Parallel: taxonomy + wiki are independent queries
+      const [{ data: taxonomyNodes }, { data: wikiLinks }] = await Promise.all([
+        supabase
+          .from('taxonomy_tree')
+          .select('node_id, name, subject_area')
+          .in('node_id', batch),
+        supabase
+          .from('wiki_article_taxonomy')
+          .select('node_id, article_id, wiki_articles(slug)')
+          .in('node_id', batch)
+          .eq('is_primary', true),
+      ])
+
+      for (const n of (taxonomyNodes ?? []) as Array<{ node_id: string; name: string; subject_area: string }>) {
+        taxonomyMap.set(n.node_id, `${n.subject_area} > ${n.name}`)
+      }
+
+      for (const w of (wikiLinks ?? []) as Array<{ node_id: string; wiki_articles?: { slug?: string } }>) {
+        wikiMap.set(w.node_id, w.wiki_articles?.slug ? `/dashboard/wiki/${w.wiki_articles.slug}?from=quiz` : null)
+      }
+    }),
+  )
 
   type QuestionRow = {
     question_id: string
@@ -193,14 +207,22 @@ export const getReviewData = async (
   if (isPro && questionIds.length > 0) {
     const historyMap: Record<string, QuestionHistoryStats> = {}
 
+    const historyBatches = []
     for (let i = 0; i < questionIds.length; i += BATCH_SIZE) {
-      const batch = questionIds.slice(i, i + BATCH_SIZE)
-      const { data: batchHistory } = await supabase
-        .from('user_interactions')
-        .select('question_id, is_correct, created_at')
-        .eq('user_id', user.id)
-        .in('question_id', batch)
+      historyBatches.push(questionIds.slice(i, i + BATCH_SIZE))
+    }
 
+    const historyResults = await Promise.all(
+      historyBatches.map((batch) =>
+        supabase
+          .from('user_interactions')
+          .select('question_id, is_correct, created_at')
+          .eq('user_id', user.id)
+          .in('question_id', batch)
+      ),
+    )
+
+    for (const { data: batchHistory } of historyResults) {
       for (const row of batchHistory ?? []) {
         const stats = historyMap[row.question_id] ?? {
           timesSeen: 0,
