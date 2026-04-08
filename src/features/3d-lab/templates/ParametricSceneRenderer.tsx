@@ -1,15 +1,14 @@
 'use client'
 
 // src/app/dashboard/3d-lab/_templates/ParametricSceneRenderer.tsx
-import { useMemo, useRef } from 'react'
+import { useEffect, useMemo, useRef } from 'react'
+import * as THREE from 'three'
 import type { Group } from 'three'
 import { useDisposeOnUnmount } from '@/components/r3f/useDisposeOnUnmount'
-import { Html } from '@react-three/drei'
-import { Warning } from '@phosphor-icons/react/dist/ssr'
-import { SCIcon } from '@/components/graphics/icons/Icon'
 import { useModuleInvalidate } from '@/features/3d-lab/hooks/useModuleInvalidate'
 import { InstructionMesh } from '@/features/3d-lab/components/templates/GeometryMesh'
 import { HumanSilhouette } from '@/features/3d-lab/components/templates/HumanSilhouette'
+import { useOverlayStore } from '@/features/3d-lab/stores/useOverlayStore'
 import type { ParametricSceneConfig } from '@/features/3d-lab/types/templates'
 import type { ModuleStoreState } from '@/features/3d-lab/stores/createModuleStore'
 import type { StoreApi, UseBoundStore } from 'zustand'
@@ -59,6 +58,51 @@ export function ParametricSceneRenderer({
     [config.annotations, params]
   )
 
+  // Emit overlay items for violations and annotations
+  const upsertItem = useOverlayStore((s) => s.upsertItem)
+  const removeItem = useOverlayStore((s) => s.removeItem)
+
+  useEffect(() => {
+    if (hideOverlays) return
+
+    // Upsert violation overlays
+    activeViolations.forEach((v) => {
+      const pos = v.position?.(params) ?? [0, 0, 0]
+      upsertItem({
+        id: `parametric-violation-${v.id}`,
+        worldPosition: new THREE.Vector3(pos[0], pos[1], pos[2]),
+        type: 'violation',
+        payload: {
+          law: v.codeCitation ?? '',
+          section: v.codeCitation ?? '',
+          message: v.message,
+          severity: 'error',
+        },
+        visible: true,
+      })
+    })
+
+    // Upsert annotation overlays
+    visibleAnnotations.forEach((a) => {
+      const pos = a.position(params)
+      upsertItem({
+        id: `parametric-annotation-${a.id}`,
+        worldPosition: new THREE.Vector3(pos[0], pos[1], pos[2]),
+        type: 'label',
+        payload: {
+          text: a.label,
+          codeRef: a.codeCitation,
+        },
+        visible: true,
+      })
+    })
+
+    return () => {
+      activeViolations.forEach((v) => removeItem(`parametric-violation-${v.id}`))
+      visibleAnnotations.forEach((a) => removeItem(`parametric-annotation-${a.id}`))
+    }
+  }, [activeViolations, visibleAnnotations, params, hideOverlays, upsertItem, removeItem])
+
   return (
     <group ref={groupRef} scale={config.scale ?? 1}>
       {/* Human scale reference — 1.7m silhouette (research: scale calibration) */}
@@ -70,65 +114,6 @@ export function ParametricSceneRenderer({
       {geometryInstructions.map((inst) => (
         <InstructionMesh key={inst.id} inst={inst} />
       ))}
-
-      {/* Violation annotations — hidden when ComplianceReportPanel handles display */}
-      {!hideOverlays &&
-        activeViolations.map((v) => {
-          const pos = v.position?.(params) ?? [0, 0, 0]
-          return (
-            <Html
-              key={v.id}
-              position={pos}
-              distanceFactor={8}
-              occlude={false}
-            >
-              <div
-                style={{ pointerEvents: 'none' }}
-                className="flex items-start gap-1 bg-red-50 border border-red-300 rounded px-1.5 py-1 shadow-sm whitespace-nowrap -translate-x-1/2"
-              >
-                <SCIcon icon={Warning} size="xs" className="text-red-600 shrink-0 mt-px" />
-                <div>
-                  <div className="text-[11px] font-bold text-red-700">
-                    {v.message}
-                  </div>
-                  {v.codeCitation && (
-                    <div className="text-[11px] text-red-500">
-                      {v.codeCitation}
-                    </div>
-                  )}
-                </div>
-              </div>
-            </Html>
-          )
-        })}
-
-      {/* Static annotations — hidden when ComplianceReportPanel handles display */}
-      {!hideOverlays &&
-        visibleAnnotations.map((a) => {
-          const pos = a.position(params)
-          return (
-            <Html
-              key={a.id}
-              position={pos}
-              distanceFactor={8}
-              occlude={false}
-            >
-              <div
-                style={{ pointerEvents: 'none' }}
-                className="bg-card/90 backdrop-blur-sm border border-border rounded px-1.5 py-0.5 shadow-sm whitespace-nowrap -translate-x-1/2"
-              >
-                <div className="text-[11px] font-bold text-foreground">
-                  {a.label}
-                </div>
-                {a.codeCitation && (
-                  <div className="text-[11px] text-muted-foreground">
-                    {a.codeCitation}
-                  </div>
-                )}
-              </div>
-            </Html>
-          )
-        })}
     </group>
   )
 }

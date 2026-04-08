@@ -1,11 +1,12 @@
 // src/app/dashboard/3d-lab/_templates/CutawaySectionScene.tsx
-import { useMemo, useRef } from 'react'
+import { useEffect, useMemo, useRef } from 'react'
 import { useDisposeOnUnmount } from '@/components/r3f/useDisposeOnUnmount'
 import { useFrame, useThree } from '@react-three/fiber'
-import { Html } from '@react-three/drei'
 import * as THREE from 'three'
 import { useModuleInvalidate } from '@/features/3d-lab/hooks/useModuleInvalidate'
 import { GeometryElement } from '@/features/3d-lab/components/templates/GeometryMesh'
+import { useOverlayStore } from '@/features/3d-lab/stores/useOverlayStore'
+import { SCENE_COLORS } from '@/features/3d-lab/constants/scene-colors'
 import type { CutawaySectionConfig, GeometryInstruction } from '@/features/3d-lab/types/templates'
 import type { ModuleStoreState } from '@/features/3d-lab/stores/createModuleStore'
 import type { StoreApi, UseBoundStore } from 'zustand'
@@ -37,7 +38,7 @@ function CutPlane({
     <mesh position={position} rotation={rotation}>
       <planeGeometry args={[3, 3]} />
       <meshBasicMaterial
-        color="#D64545"
+        color={SCENE_COLORS.cutPlaneRed}
         transparent
         opacity={0.15}
         side={THREE.DoubleSide}
@@ -129,6 +130,40 @@ export function CutawaySectionScene({ config, useStore }: CutawaySectionScenePro
     })
   }, [config.layers, cutPosition])
 
+  // Emit overlay items for layer annotations
+  const upsertItem = useOverlayStore((s) => s.upsertItem)
+  const removeItem = useOverlayStore((s) => s.removeItem)
+
+  useEffect(() => {
+    const ids: string[] = []
+    layersWithOpacity.forEach(({ layer, opacity }) => {
+      const overlayId = `cutaway-layer-${layer.id}`
+      ids.push(overlayId)
+      if (opacity < 0.3) {
+        removeItem(overlayId)
+        return
+      }
+      const pos = layer.geometry.position
+      const annotationPos = new THREE.Vector3(
+        pos[0] + (layer.geometry.args?.[0] ?? 1) * 0.6 + 0.15,
+        pos[1],
+        pos[2],
+      )
+      upsertItem({
+        id: overlayId,
+        worldPosition: annotationPos,
+        type: 'label',
+        payload: {
+          text: layer.label,
+          subtext: layer.material,
+          codeRef: layer.codeCitation,
+        },
+        visible: true,
+      })
+    })
+    return () => ids.forEach((id) => removeItem(id))
+  }, [layersWithOpacity, upsertItem, removeItem])
+
   return (
     <group ref={groupRef} scale={config.scale ?? 1}>
       {/* Layer meshes */}
@@ -138,54 +173,6 @@ export function CutawaySectionScene({ config, useStore }: CutawaySectionScenePro
 
       {/* Cut plane indicator */}
       <CutPlane cutPosition={cutPosition} cutAxis={cutAxis} />
-
-      {/* Layer annotations */}
-      {layersWithOpacity.map(({ layer, opacity }) => {
-        if (opacity < 0.3) return null
-
-        const pos = layer.geometry.position
-        const annotationPos: [number, number, number] = [
-          pos[0] + (layer.geometry.args?.[0] ?? 1) * 0.6 + 0.15,
-          pos[1],
-          pos[2],
-        ]
-
-        const isActive = activeAnnotation === layer.id
-
-        return (
-          <Html
-            key={`ann-${layer.id}`}
-            position={annotationPos}
-            distanceFactor={6}
-            occlude={false}
-          >
-            <div
-              style={{ pointerEvents: 'none', opacity: Math.min(opacity, 1) }}
-              className={`
-                whitespace-nowrap rounded px-1.5 py-0.5 shadow-sm border
-                ${isActive
-                  ? 'bg-primary-50 border-primary/40'
-                  : 'bg-card/90 backdrop-blur-sm border-border'
-                }
-              `}
-            >
-              <div className="text-[11px] font-bold text-foreground">
-                {layer.label}
-              </div>
-              {layer.material && (
-                <div className="text-[11px] text-text-secondary">
-                  {layer.material}
-                </div>
-              )}
-              {layer.codeCitation && (
-                <div className="text-[11px] text-primary font-medium">
-                  {layer.codeCitation}
-                </div>
-              )}
-            </div>
-          </Html>
-        )
-      })}
     </group>
   )
 }

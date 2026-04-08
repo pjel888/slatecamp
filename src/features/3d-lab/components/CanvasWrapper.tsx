@@ -5,6 +5,7 @@ import { CanvasLoadingOverlay } from '@/components/r3f/CanvasLoadingOverlay'
 import { useInvalidateOnChange } from '@/features/3d-lab/hooks/useInvalidateOnChange'
 import { SceneTunnel } from './GlobalCanvasPortal'
 import { SceneConfig, type SceneConfigProps } from './rendering/SceneConfig'
+import { CameraSync } from './overlays/CameraSync'
 
 interface CanvasWrapperProps {
   children: ReactNode
@@ -36,6 +37,7 @@ export const CanvasWrapper = memo(function CanvasWrapper({
       <SceneTunnel.In>
         <InvalidateRegistrar />
         <SceneConfig {...sceneConfig} />
+        <CameraSync />
         <Suspense fallback={null}>{children}</Suspense>
       </SceneTunnel.In>
     </div>

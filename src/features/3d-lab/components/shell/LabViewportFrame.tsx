@@ -5,6 +5,7 @@ import { Canvas } from '@react-three/fiber'
 import { PerformanceMonitor } from '@react-three/drei'
 import { SceneTunnel } from '@/features/3d-lab/components/GlobalCanvasPortal'
 import { WebGLErrorBoundary } from '@/components/r3f/WebGLErrorBoundary'
+import { DOMOverlayLayer } from '@/features/3d-lab/components/overlays/DOMOverlayLayer'
 
 interface LabViewportFrameProps {
   children?: React.ReactNode
@@ -56,6 +57,9 @@ export const LabViewportFrame = ({ children }: LabViewportFrameProps) => {
           </Suspense>
         </Canvas>
       </WebGLErrorBoundary>
+
+      {/* DOM overlay system — projects 3D positions to 2D screen coordinates */}
+      <DOMOverlayLayer />
 
       {/* Overlay UI elements (hotspots, panels, etc.) */}
       <div className="relative z-10 pointer-events-none h-full w-full">

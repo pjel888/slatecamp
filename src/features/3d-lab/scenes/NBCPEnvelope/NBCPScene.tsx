@@ -4,11 +4,12 @@
 import { useRef, useEffect, useLayoutEffect } from 'react'
 import { useDisposeOnUnmount } from '@/components/r3f/useDisposeOnUnmount'
 import { useFrame, useThree } from '@react-three/fiber'
-import { Html } from '@react-three/drei'
 import * as THREE from 'three'
 import { useNBCPStore } from '@/features/3d-lab/stores/nbcpStore'
 import { useNBCPInvalidateOnChange } from '@/features/3d-lab/hooks/useNBCPInvalidateOnChange'
+import { useOverlayStore } from '@/features/3d-lab/stores/useOverlayStore'
 import { LotType } from '@/features/3d-lab/constants/nbcp'
+import { SCENE_COLORS } from '@/features/3d-lab/constants/scene-colors'
 
 // ─── Scale ────────────────────────────────────────────────────────────────────
 // 1 Three.js unit = 20m
@@ -21,14 +22,6 @@ const tempObject = new THREE.Object3D()
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
 function toU(meters: number) { return meters * SCALE }
-
-/** Clamp distanceFactor for <Html> based on lot area for readability at all scales */
-function labelDistanceFactor(tla: number): number {
-  if (tla < 100)   return 6
-  if (tla < 1000)  return 7
-  if (tla < 5000)  return 9
-  return 12
-}
 
 /** Lerp a value toward target. Returns true when settled (within epsilon). */
 function lerp(current: number, target: number, factor: number, epsilon = 0.001): [number, boolean] {
@@ -182,8 +175,6 @@ export function NBCPScene() {
   const lotDu = toU(inputs.lotDepth)
   const bhlU  = toU(bhl_meters)
 
-  const df = labelDistanceFactor(tla)
-
   // Setback zone positions
   const frontSbDepth = toU(setbacks.front)
   const rearSbDepth  = toU(setbacks.rear)
@@ -191,7 +182,7 @@ export function NBCPScene() {
   const rightSbWidth = toU(setbacks.right)
 
   // BHL line color
-  const bhlLineColor = violations.length > 0 ? '#D64545' : '#2D9F6F'
+  const bhlLineColor = violations.length > 0 ? SCENE_COLORS.bhlViolation : SCENE_COLORS.bhlCompliant
 
   // RROW plane(s)
   const rrowWu = toU(inputs.rrowWidth)
@@ -203,37 +194,139 @@ export function NBCPScene() {
   const showLeftRrow      = inputs.lotType === LotType.CORNER
   const showRightRrow     = inputs.lotType === LotType.END
 
+  // Emit overlay items for all labels
+  const upsertItem = useOverlayStore((s) => s.upsertItem)
+  const removeItem = useOverlayStore((s) => s.removeItem)
+
+  useEffect(() => {
+    const ids: string[] = []
+
+    // RROW label
+    const rrowId = 'nbcp-rrow'
+    ids.push(rrowId)
+    upsertItem({
+      id: rrowId,
+      worldPosition: new THREE.Vector3(0, 0, lotDu / 2 + rrowWu / 2),
+      type: 'label',
+      payload: { text: `RROW: ${inputs.rrowWidth.toFixed(1)}m` },
+      visible: true,
+    })
+
+    // Setback labels
+    if (frontSbDepth > 0) {
+      const id = 'nbcp-sb-front'
+      ids.push(id)
+      upsertItem({
+        id,
+        worldPosition: new THREE.Vector3(0, LOT_Y, lotDu / 2 - frontSbDepth / 2),
+        type: 'dimension',
+        payload: { value: setbacks.front, unit: 'm', label: 'Front', isViolating: false },
+        visible: true,
+      })
+    }
+    if (rearSbDepth > 0) {
+      const id = 'nbcp-sb-rear'
+      ids.push(id)
+      upsertItem({
+        id,
+        worldPosition: new THREE.Vector3(0, LOT_Y, -(lotDu / 2 - rearSbDepth / 2)),
+        type: 'dimension',
+        payload: { value: setbacks.rear, unit: 'm', label: 'Rear', isViolating: false },
+        visible: true,
+      })
+    }
+    if (leftSbWidth > 0) {
+      const id = 'nbcp-sb-left'
+      ids.push(id)
+      upsertItem({
+        id,
+        worldPosition: new THREE.Vector3(-(lotWu / 2 - leftSbWidth / 2), LOT_Y, 0),
+        type: 'dimension',
+        payload: { value: setbacks.left, unit: 'm', label: 'Left', isViolating: false },
+        visible: true,
+      })
+    }
+    if (rightSbWidth > 0) {
+      const id = 'nbcp-sb-right'
+      ids.push(id)
+      upsertItem({
+        id,
+        worldPosition: new THREE.Vector3(lotWu / 2 - rightSbWidth / 2, LOT_Y, 0),
+        type: 'dimension',
+        payload: { value: setbacks.right, unit: 'm', label: 'Right', isViolating: false },
+        visible: true,
+      })
+    }
+
+    // Height + storeys label
+    const heightId = 'nbcp-height'
+    ids.push(heightId)
+    upsertItem({
+      id: heightId,
+      worldPosition: new THREE.Vector3(toU(computed.buildableWidth) / 2 + 0.08, LOT_Y * 2 + toU(displayHeight) / 2, 0),
+      type: 'label',
+      payload: { text: `${displayHeight.toFixed(1)}m · ${displayStoreys}F` },
+      visible: true,
+    })
+
+    // AMBF / FLAR label
+    const ambfId = 'nbcp-ambf'
+    ids.push(ambfId)
+    upsertItem({
+      id: ambfId,
+      worldPosition: new THREE.Vector3(0, LOT_Y * 2 + toU(displayHeight) + 0.06, 0),
+      type: 'label',
+      payload: { text: `AMBF: ${ambf.toFixed(0)} sqm`, subtext: `FLAR ${flar.toFixed(2)}x` },
+      visible: true,
+    })
+
+    // BHL label
+    const bhlId = 'nbcp-bhl'
+    ids.push(bhlId)
+    const bhlText = `BHL ${bhl_meters.toFixed(1)}m (${bhl_effective}F) — ${bhl_source === 'rrow' ? 'RROW-limited' : 'Zoning-limited'}`
+    upsertItem({
+      id: bhlId,
+      worldPosition: new THREE.Vector3(lotWu * 0.6 + 0.08, LOT_Y * 2 + bhlU, 0),
+      type: violations.length > 0 ? 'violation' : 'label',
+      payload: violations.length > 0
+        ? { law: 'BHL', section: 'NBCP', message: bhlText, severity: 'error' as const }
+        : { text: bhlText },
+      visible: true,
+    })
+
+    return () => ids.forEach((id) => removeItem(id))
+  }, [
+    lotWu, lotDu, rrowWu, inputs.rrowWidth, frontSbDepth, rearSbDepth, leftSbWidth, rightSbWidth,
+    setbacks, computed.buildableWidth, displayHeight, displayStoreys, ambf, flar,
+    bhl_meters, bhl_effective, bhl_source, bhlU, violations.length, upsertItem, removeItem,
+  ])
+
   return (
     <group ref={groupRef}>
       {/* ── RROW plane(s) ──────────────────────────────────────────────── */}
       <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0, lotDu / 2 + rrowWu / 2]}>
         <planeGeometry args={[lotWu + rrowWu, rrowWu]} />
-        <meshStandardMaterial color="#d1d5db" />
+        <meshStandardMaterial color={SCENE_COLORS.rrowSurface} />
       </mesh>
-      <Html position={[0, 0, lotDu / 2 + rrowWu / 2]} distanceFactor={df} occlude={false}>
-        <div style={{ pointerEvents: 'none' }} className="bg-card/90 border border-border rounded px-1.5 py-0.5 text-[11px] font-bold text-text-secondary whitespace-nowrap -translate-x-1/2">
-          RROW: {inputs.rrowWidth.toFixed(1)}m
-        </div>
-      </Html>
 
       {showRearRrow && (
         <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0, -(lotDu / 2 + rrowWu / 2)]}>
           <planeGeometry args={[lotWu + rrowWu, rrowWu]} />
-          <meshStandardMaterial color="#d1d5db" />
+          <meshStandardMaterial color={SCENE_COLORS.rrowSurface} />
         </mesh>
       )}
 
       {showLeftRrow && (
         <mesh rotation={[-Math.PI / 2, 0, 0]} position={[-(lotWu / 2 + rrowWu / 2), 0, 0]}>
           <planeGeometry args={[rrowWu, lotDu + rrowWu]} />
-          <meshStandardMaterial color="#d1d5db" />
+          <meshStandardMaterial color={SCENE_COLORS.rrowSurface} />
         </mesh>
       )}
 
       {showRightRrow && (
         <mesh rotation={[-Math.PI / 2, 0, 0]} position={[(lotWu / 2 + rrowWu / 2), 0, 0]}>
           <planeGeometry args={[rrowWu, lotDu + rrowWu]} />
-          <meshStandardMaterial color="#d1d5db" />
+          <meshStandardMaterial color={SCENE_COLORS.rrowSurface} />
         </mesh>
       )}
 
@@ -242,11 +335,11 @@ export function NBCPScene() {
         <group position={[-lotWu, 0, 0]}>
           <mesh rotation={[-Math.PI / 2, 0, 0]}>
             <planeGeometry args={[lotWu, lotDu]} />
-            <meshStandardMaterial color="#f3f4f6" />
+            <meshStandardMaterial color={SCENE_COLORS.neighborLot} />
           </mesh>
           <mesh position={[0, LOT_Y * 2 + neighborH / 2, 0]}>
             <boxGeometry args={[lotWu * 0.65, neighborH, lotDu * 0.6]} />
-            <meshStandardMaterial color="#9ca3af" transparent opacity={0.35} roughness={0.8} />
+            <meshStandardMaterial color={SCENE_COLORS.neighborBuilding} transparent opacity={0.35} roughness={0.8} />
           </mesh>
         </group>
       )}
@@ -254,11 +347,11 @@ export function NBCPScene() {
         <group position={[lotWu, 0, 0]}>
           <mesh rotation={[-Math.PI / 2, 0, 0]}>
             <planeGeometry args={[lotWu, lotDu]} />
-            <meshStandardMaterial color="#f3f4f6" />
+            <meshStandardMaterial color={SCENE_COLORS.neighborLot} />
           </mesh>
           <mesh position={[0, LOT_Y * 2 + neighborH / 2, 0]}>
             <boxGeometry args={[lotWu * 0.65, neighborH, lotDu * 0.6]} />
-            <meshStandardMaterial color="#9ca3af" transparent opacity={0.35} roughness={0.8} />
+            <meshStandardMaterial color={SCENE_COLORS.neighborBuilding} transparent opacity={0.35} roughness={0.8} />
           </mesh>
         </group>
       )}
@@ -266,56 +359,27 @@ export function NBCPScene() {
       {/* ── Lot plate ──────────────────────────────────────────────────── */}
       <mesh rotation={[-Math.PI / 2, 0, 0]} receiveShadow>
         <planeGeometry args={[lotWu, lotDu]} />
-        <meshStandardMaterial color="#e5e7eb" />
+        <meshStandardMaterial color={SCENE_COLORS.groundNeutral} />
       </mesh>
 
       {/* Property lines (Optimized via InstancedMesh) */}
       <instancedMesh ref={propLinesRef} args={[null, null, 4]}>
         <boxGeometry args={[1, 1, 1]} />
-        <meshStandardMaterial color="#374151" />
+        <meshStandardMaterial color={SCENE_COLORS.propertyLine} />
       </instancedMesh>
 
       {/* Setback zones (Optimized via InstancedMesh) */}
       <instancedMesh ref={setbacksRef} args={[null, null, 4]} rotation={[-Math.PI / 2, 0, 0]}>
         <planeGeometry args={[1, 1]} />
-        <meshStandardMaterial color="#bfdbfe" transparent opacity={0.45} />
+        <meshStandardMaterial color={SCENE_COLORS.setbackZone} transparent opacity={0.45} />
       </instancedMesh>
-
-      {frontSbDepth > 0 && (
-        <Html position={[0, LOT_Y, lotDu / 2 - frontSbDepth / 2]} distanceFactor={df} occlude={false}>
-          <div style={{ pointerEvents: 'none' }} className="bg-card/80 border border-border rounded px-1 py-0.5 text-[11px] font-mono text-foreground -translate-x-1/2 whitespace-nowrap">
-            Front: {setbacks.front.toFixed(1)}m
-          </div>
-        </Html>
-      )}
-      {rearSbDepth > 0 && (
-        <Html position={[0, LOT_Y, -(lotDu / 2 - rearSbDepth / 2)]} distanceFactor={df} occlude={false}>
-          <div style={{ pointerEvents: 'none' }} className="bg-card/80 border border-border rounded px-1 py-0.5 text-[11px] font-mono text-foreground -translate-x-1/2 whitespace-nowrap">
-            Rear: {setbacks.rear.toFixed(1)}m
-          </div>
-        </Html>
-      )}
-      {leftSbWidth > 0 && (
-        <Html position={[-(lotWu / 2 - leftSbWidth / 2), LOT_Y, 0]} distanceFactor={df} occlude={false}>
-          <div style={{ pointerEvents: 'none' }} className="bg-card/80 border border-border rounded px-1 py-0.5 text-[11px] font-mono text-foreground -translate-x-1/2 whitespace-nowrap">
-            Left: {setbacks.left.toFixed(1)}m
-          </div>
-        </Html>
-      )}
-      {rightSbWidth > 0 && (
-        <Html position={[(lotWu / 2 - rightSbWidth / 2), LOT_Y, 0]} distanceFactor={df} occlude={false}>
-          <div style={{ pointerEvents: 'none' }} className="bg-card/80 border border-border rounded px-1 py-0.5 text-[11px] font-mono text-foreground -translate-x-1/2 whitespace-nowrap">
-            Right: {setbacks.right.toFixed(1)}m
-          </div>
-        </Html>
-      )}
 
       {/* ── Building envelope ───────────────────────────────────────────── */}
       <mesh ref={buildingRef} castShadow>
         <boxGeometry args={[1, 1, 1]} />
         <meshStandardMaterial
           ref={buildingMatRef}
-          color="#1B3FC4"
+          color={SCENE_COLORS.buildingPrimary}
           transparent
           opacity={0.65}
           roughness={0.3}
@@ -326,52 +390,14 @@ export function NBCPScene() {
       {/* Floor plate lines (Optimized via InstancedMesh) */}
       <instancedMesh ref={instancedRef} args={[null, null, 100]} frustumCulled={false}>
         <boxGeometry args={[1, 0.005, 1]} />
-        <meshStandardMaterial color="#1535A8" transparent opacity={0.4} />
+        <meshStandardMaterial color={SCENE_COLORS.floorPlateEdge} transparent opacity={0.4} />
       </instancedMesh>
-
-      {/* ── 3D-anchored labels ──────────────────────────────────────────── */}
-      <Html
-        position={[toU(computed.buildableWidth) / 2 + 0.08, LOT_Y * 2 + toU(displayHeight) / 2, 0]}
-        distanceFactor={df} occlude={false}
-      >
-        <div style={{ pointerEvents: 'none' }} className="bg-card/90 backdrop-blur-sm px-1.5 py-0.5 rounded border border-border shadow-sm whitespace-nowrap">
-          <span className="text-[11px] font-bold text-foreground">
-            {displayHeight.toFixed(1)}m · {displayStoreys}F
-          </span>
-        </div>
-      </Html>
-
-      <Html
-        position={[0, LOT_Y * 2 + toU(displayHeight) + 0.06, 0]}
-        distanceFactor={df} occlude={false}
-      >
-        <div style={{ pointerEvents: 'none' }} className="bg-card/90 backdrop-blur-sm px-1.5 py-0.5 rounded border border-border shadow-sm whitespace-nowrap text-center">
-          <div className="text-[11px] font-bold text-foreground">AMBF: {ambf.toFixed(0)} sqm</div>
-          <div className="text-[11px] text-text-secondary">FLAR {flar.toFixed(2)}x</div>
-        </div>
-      </Html>
 
       {/* ── BHL reference line ──────────────────────────────────────────── */}
       <mesh position={[0, LOT_Y * 2 + bhlU, 0]}>
         <boxGeometry args={[lotWu * 1.2, 0.006, 0.006]} />
         <meshStandardMaterial color={bhlLineColor} transparent opacity={0.85} />
       </mesh>
-      <Html
-        position={[lotWu * 0.6 + 0.08, LOT_Y * 2 + bhlU, 0]}
-        distanceFactor={df} occlude={false}
-      >
-        <div style={{ pointerEvents: 'none' }} className={`px-1.5 py-0.5 rounded border shadow-sm whitespace-nowrap ${
-          violations.length > 0 ? 'bg-red-50 border-red-200' :
-          bhl_source === 'rrow' ? 'bg-amber-50 border-amber-200' : 'bg-slate-50 border-slate-200'
-        }`}>
-          <span className={`text-[11px] font-bold ${
-            violations.length > 0 ? 'text-red-700' :
-            bhl_source === 'rrow' ? 'text-amber-700' : 'text-slate-500'
-          }`}>
-            BHL {bhl_meters.toFixed(1)}m ({bhl_effective}F) — {bhl_source === 'rrow' ? 'RROW-limited' : 'Zoning-limited'}
-          </span>
-        </div>
-      </Html>
     </group>
   )
 }

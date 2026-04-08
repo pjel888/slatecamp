@@ -1,12 +1,15 @@
 'use client'
 
-import { useState, useCallback, useRef } from 'react'
+import { useState, useCallback, useEffect, useRef } from 'react'
+import { Vector3 } from 'three'
 import type { Group } from 'three'
 import { useDisposeOnUnmount } from '@/components/r3f/useDisposeOnUnmount'
-import { Html } from '@react-three/drei'
 import { useThree } from '@react-three/fiber'
 import { useLabStore } from '@/features/3d-lab/stores/legacyLabStore'
-import { HotspotAnnotation, type HotspotDef } from '@/features/3d-lab/components/templates/HotspotAnnotation'
+import { useOverlayStore } from '@/features/3d-lab/stores/useOverlayStore'
+import { GroundPlane } from '@/features/3d-lab/components/rendering/GroundPlane'
+import { SCENE_COLORS } from '@/features/3d-lab/constants/scene-colors'
+import type { HotspotDef } from '@/features/3d-lab/components/templates/HotspotAnnotation'
 
 /* ── Types ─────────────────────────────────────────────────────────────────── */
 
@@ -102,8 +105,8 @@ function getEmissive(
 ): { emissive: string; emissiveIntensity: number } {
   const isActive = !isQuizMode && activePartId === partId
   const isHovered = hoveredPart === partId
-  if (isActive) return { emissive: '#3b82f6', emissiveIntensity: 0.40 }
-  if (isHovered) return { emissive: '#3b82f6', emissiveIntensity: 0.22 }
+  if (isActive) return { emissive: SCENE_COLORS.activeEmissive, emissiveIntensity: 0.40 }
+  if (isHovered) return { emissive: SCENE_COLORS.hoverEmissive, emissiveIntensity: 0.22 }
   return { emissive: '#000000', emissiveIntensity: 0 }
 }
 
@@ -144,13 +147,58 @@ export function ClassicalOrdersScene({ onPartClick }: Props) {
   // Per-part emissive helper — pure function, not a hook
   const e = (partId: PartId) => getEmissive(partId, hoveredPart, activeHotspotId, isQuizMode)
 
+  // Emit overlay items for hotspots and quiz prompt
+  const upsertItem = useOverlayStore((s) => s.upsertItem)
+  const removeItem = useOverlayStore((s) => s.removeItem)
+
+  useEffect(() => {
+    const ids: string[] = []
+
+    // Hotspot overlays (hidden in quiz mode)
+    if (!isQuizMode) {
+      HOTSPOTS.forEach((hotspot) => {
+        const id = `classical-hotspot-${hotspot.id}`
+        ids.push(id)
+        upsertItem({
+          id,
+          worldPosition: new Vector3(hotspot.position[0], hotspot.position[1], hotspot.position[2]),
+          type: 'hotspot',
+          payload: {
+            title: hotspot.title,
+            body: hotspot.description,
+            codeRef: hotspot.wikiSlug ? `/dashboard/wiki/${hotspot.wikiSlug}` : undefined,
+            isOpen: activeHotspotId === hotspot.id,
+          },
+          visible: true,
+          zIndex: 20,
+        })
+      })
+    }
+
+    // Quiz mode prompt
+    if (isQuizMode && quizTargetPartId) {
+      const id = 'classical-quiz-prompt'
+      ids.push(id)
+      upsertItem({
+        id,
+        worldPosition: new Vector3(0, 3.1, 0),
+        type: 'label',
+        payload: {
+          text: `Click the ${PART_NAMES[quizTargetPartId] ?? quizTargetPartId}`,
+          subtext: 'Find it',
+        },
+        visible: true,
+        zIndex: 30,
+      })
+    }
+
+    return () => ids.forEach((id) => removeItem(id))
+  }, [isQuizMode, quizTargetPartId, activeHotspotId, upsertItem, removeItem])
+
   return (
     <group ref={groupRef}>
       {/* ── Ground plane ──────────────────────────────────────────────────── */}
-      <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -0.005, 0]} receiveShadow>
-        <planeGeometry args={[5, 5]} />
-        <meshStandardMaterial color="#f1f5f9" roughness={0.9} />
-      </mesh>
+      <GroundPlane />
 
       {/* ── Stylobate: 2-step platform ───────────────────────────────────── */}
       {/* Step 1 — base step (widest) */}
@@ -161,7 +209,7 @@ export function ClassicalOrdersScene({ onPartClick }: Props) {
         onClick={() => handleMeshClick('stylobate')}
       >
         <boxGeometry args={[1.10, 0.05, 1.10]} />
-        <meshStandardMaterial color="#c8cdd6" {...MAT} {...e('stylobate')} />
+        <meshStandardMaterial color={SCENE_COLORS.stoneMedium} {...MAT} {...e('stylobate')} />
       </mesh>
       {/* Step 2 — stylobate proper */}
       <mesh
@@ -171,7 +219,7 @@ export function ClassicalOrdersScene({ onPartClick }: Props) {
         onClick={() => handleMeshClick('stylobate')}
       >
         <boxGeometry args={[0.90, 0.05, 0.90]} />
-        <meshStandardMaterial color="#c8cdd6" {...MAT} {...e('stylobate')} />
+        <meshStandardMaterial color={SCENE_COLORS.stoneMedium} {...MAT} {...e('stylobate')} />
       </mesh>
 
       {/* ── Column Shaft (tapered cylinder — entasis simplified) ─────────── */}
@@ -183,13 +231,13 @@ export function ClassicalOrdersScene({ onPartClick }: Props) {
         onClick={() => handleMeshClick('shaft')}
       >
         <cylinderGeometry args={[0.19, 0.24, 1.70, 24]} />
-        <meshStandardMaterial color="#dde1ea" {...MAT} {...e('shaft')} />
+        <meshStandardMaterial color={SCENE_COLORS.stoneLight} {...MAT} {...e('shaft')} />
       </mesh>
 
       {/* Necking ring (narrow band at top of shaft) */}
       <mesh position={[0, 1.785, 0]}>
         <cylinderGeometry args={[0.205, 0.205, 0.03, 24]} />
-        <meshStandardMaterial color="#a8adb6" {...MAT} />
+        <meshStandardMaterial color={SCENE_COLORS.stoneNecking} {...MAT} />
       </mesh>
 
       {/* ── Echinus (convex cushion capital) ────────────────────────────── */}
@@ -200,7 +248,7 @@ export function ClassicalOrdersScene({ onPartClick }: Props) {
         onClick={() => handleMeshClick('echinus')}
       >
         <cylinderGeometry args={[0.30, 0.20, 0.12, 24]} />
-        <meshStandardMaterial color="#c4c9d4" {...MAT} {...e('echinus')} />
+        <meshStandardMaterial color={SCENE_COLORS.stoneCapital} {...MAT} {...e('echinus')} />
       </mesh>
 
       {/* ── Abacus (flat square slab) ────────────────────────────────────── */}
@@ -211,7 +259,7 @@ export function ClassicalOrdersScene({ onPartClick }: Props) {
         onClick={() => handleMeshClick('abacus')}
       >
         <boxGeometry args={[0.68, 0.10, 0.68]} />
-        <meshStandardMaterial color="#b8bdc8" {...MAT} {...e('abacus')} />
+        <meshStandardMaterial color={SCENE_COLORS.stoneDark} {...MAT} {...e('abacus')} />
       </mesh>
 
       {/* ── Entablature ──────────────────────────────────────────────────── */}
@@ -223,7 +271,7 @@ export function ClassicalOrdersScene({ onPartClick }: Props) {
         onClick={() => handleMeshClick('entablature')}
       >
         <boxGeometry args={[0.80, 0.20, 0.80]} />
-        <meshStandardMaterial color="#ced2db" {...MAT} {...e('entablature')} />
+        <meshStandardMaterial color={SCENE_COLORS.stoneEntablature} {...MAT} {...e('entablature')} />
       </mesh>
       {/* Frieze: triglyphs + metopes zone */}
       <mesh
@@ -233,7 +281,7 @@ export function ClassicalOrdersScene({ onPartClick }: Props) {
         onClick={() => handleMeshClick('entablature')}
       >
         <boxGeometry args={[0.84, 0.30, 0.84]} />
-        <meshStandardMaterial color="#ced2db" {...MAT} {...e('entablature')} />
+        <meshStandardMaterial color={SCENE_COLORS.stoneEntablature} {...MAT} {...e('entablature')} />
       </mesh>
       {/* Cornice: projecting crown molding */}
       <mesh
@@ -243,38 +291,9 @@ export function ClassicalOrdersScene({ onPartClick }: Props) {
         onClick={() => handleMeshClick('entablature')}
       >
         <boxGeometry args={[0.94, 0.08, 0.94]} />
-        <meshStandardMaterial color="#c2c7d1" {...MAT} {...e('entablature')} />
+        <meshStandardMaterial color={SCENE_COLORS.stoneCornice} {...MAT} {...e('entablature')} />
       </mesh>
 
-      {/* ── Hotspot Annotations (hidden in quiz mode) ────────────────────── */}
-      {!isQuizMode &&
-        HOTSPOTS.map((hotspot) => (
-          <HotspotAnnotation
-            key={hotspot.id}
-            hotspot={hotspot}
-            isActive={activeHotspotId === hotspot.id}
-            onActivate={(id) => setActiveHotspot(id)}
-            onDeactivate={() => setActiveHotspot(null)}
-            isQuizMode={false}
-          />
-        ))}
-
-      {/* ── Quiz Mode Prompt ─────────────────────────────────────────────── */}
-      {isQuizMode && quizTargetPartId && (
-        <Html position={[0, 3.1, 0]} distanceFactor={8} occlude={false} center>
-          <div
-            style={{ pointerEvents: 'none' }}
-            className="px-3 py-2 bg-amber-50 border border-amber-200 rounded-md shadow-sm text-center whitespace-nowrap"
-          >
-            <div className="text-[11px] font-black uppercase tracking-widest text-amber-600 mb-0.5">
-              Find it
-            </div>
-            <div className="text-xs font-bold text-amber-900">
-              Click the {PART_NAMES[quizTargetPartId] ?? quizTargetPartId}
-            </div>
-          </div>
-        </Html>
-      )}
     </group>
   )
 }

@@ -3,10 +3,11 @@
 import { useRef, useEffect, useLayoutEffect } from 'react'
 import { useDisposeOnUnmount } from '@/components/r3f/useDisposeOnUnmount'
 import { useFrame, useThree } from '@react-three/fiber'
-import { Html } from '@react-three/drei'
 import * as THREE from 'three'
 import { useLabStore } from '@/features/3d-lab/stores/legacyLabStore'
 import { useInvalidateOnChange } from '@/features/3d-lab/hooks/useInvalidateOnChange'
+import { useOverlayStore } from '@/features/3d-lab/stores/useOverlayStore'
+import { SCENE_COLORS } from '@/features/3d-lab/constants/scene-colors'
 
 // 1 Three.js unit = 12.5 metres
 const SCALE = 0.08
@@ -90,7 +91,7 @@ export function FARScene() {
   const bhlU    = toU(bhl)
   const frontSbU = toU(setbackFront)
   const sideSbU  = toU(setbackSide)
-  const bhlColor = s.isBHLViolation ? '#D64545' : '#2D9F6F'
+  const bhlColor = s.isBHLViolation ? SCENE_COLORS.bhlViolation : SCENE_COLORS.bhlCompliant
 
   // Update instance matrices for floor plates, property lines, and setbacks
   useLayoutEffect(() => {
@@ -177,48 +178,125 @@ export function FARScene() {
     if (!wSettled || !hSettled) invalidate()
   })
 
+  // Emit overlay items for all labels
+  const upsertItem = useOverlayStore((s) => s.upsertItem)
+  const removeItem = useOverlayStore((s) => s.removeItem)
+
+  useEffect(() => {
+    const ids: string[] = []
+
+    // Setback labels
+    if (frontSbU > 0) {
+      const id = 'far-sb-front'
+      ids.push(id)
+      upsertItem({
+        id,
+        worldPosition: new THREE.Vector3(0, LOT_Y, lotU / 2 - frontSbU / 2),
+        type: 'dimension',
+        payload: { value: setbackFront, unit: 'm', label: 'Front/Rear', isViolating: false },
+        visible: true,
+      })
+    }
+    if (sideSbU > 0) {
+      const id = 'far-sb-side'
+      ids.push(id)
+      upsertItem({
+        id,
+        worldPosition: new THREE.Vector3(-(lotU / 2 - sideSbU / 2), LOT_Y, 0),
+        type: 'dimension',
+        payload: { value: setbackSide, unit: 'm', label: 'Side', isViolating: false },
+        visible: true,
+      })
+    }
+
+    // Height label
+    const heightId = 'far-height'
+    ids.push(heightId)
+    upsertItem({
+      id: heightId,
+      worldPosition: new THREE.Vector3(toU(s.footprintSideM) / 2 + 0.1, LOT_Y * 2 + toU(s.buildingHeightM) / 2, 0),
+      type: 'label',
+      payload: { text: `${s.buildingHeightM.toFixed(1)}m · ${s.floors}F` },
+      visible: true,
+    })
+
+    // FAR / GFA label
+    const farId = 'far-gfa'
+    ids.push(farId)
+    const farText = `FAR ${far.toFixed(1)}x — ${s.maxFloorAreaM2.toFixed(0)} sqm GFA`
+    if (s.isFARViolation) {
+      upsertItem({
+        id: farId,
+        worldPosition: new THREE.Vector3(0, LOT_Y * 2 + toU(s.buildingHeightM) + 0.1, 0),
+        type: 'violation',
+        payload: { law: 'FAR', section: 'Zoning', message: farText, severity: 'error' },
+        visible: true,
+      })
+    } else {
+      upsertItem({
+        id: farId,
+        worldPosition: new THREE.Vector3(0, LOT_Y * 2 + toU(s.buildingHeightM) + 0.1, 0),
+        type: 'label',
+        payload: { text: farText },
+        visible: true,
+      })
+    }
+
+    // BHL label
+    const bhlId = 'far-bhl'
+    ids.push(bhlId)
+    const bhlText = `BHL ${bhl}m${s.isBHLViolation ? ' EXCEEDED' : ' (limit)'}`
+    if (s.isBHLViolation) {
+      upsertItem({
+        id: bhlId,
+        worldPosition: new THREE.Vector3(lotU * 0.62 + 0.06, LOT_Y * 2 + bhlU, 0),
+        type: 'violation',
+        payload: { law: 'BHL', section: 'Zoning', message: bhlText, severity: 'error' },
+        visible: true,
+      })
+    } else {
+      upsertItem({
+        id: bhlId,
+        worldPosition: new THREE.Vector3(lotU * 0.62 + 0.06, LOT_Y * 2 + bhlU, 0),
+        type: 'label',
+        payload: { text: bhlText },
+        visible: true,
+      })
+    }
+
+    return () => ids.forEach((id) => removeItem(id))
+  }, [
+    frontSbU, sideSbU, lotU, bhlU, setbackFront, setbackSide,
+    s.footprintSideM, s.buildingHeightM, s.floors, s.maxFloorAreaM2,
+    s.isFARViolation, s.isBHLViolation, far, bhl, upsertItem, removeItem,
+  ])
+
   return (
     <group ref={groupRef}>
       {/* ── Lot plate ──────────────────────────────────────────────────── */}
       <mesh rotation={[-Math.PI / 2, 0, 0]} receiveShadow>
         <planeGeometry args={[lotU, lotU]} />
-        <meshStandardMaterial color="#e5e7eb" />
+        <meshStandardMaterial color={SCENE_COLORS.groundNeutral} />
       </mesh>
 
       {/* Property boundary lines (Optimized via InstancedMesh) */}
       <instancedMesh ref={propLinesRef} args={[null, null, 4]}>
         <boxGeometry args={[1, 1, 1]} />
-        <meshStandardMaterial color="#374151" />
+        <meshStandardMaterial color={SCENE_COLORS.propertyLine} />
       </instancedMesh>
 
       {/* Setback zones (Optimized via InstancedMesh) */}
       <instancedMesh ref={setbacksRef} args={[null, null, 4]} rotation={[-Math.PI / 2, 0, 0]}>
         <planeGeometry args={[1, 1]} />
-        <meshStandardMaterial color="#bfdbfe" transparent opacity={0.45} />
+        <meshStandardMaterial color={SCENE_COLORS.setbackZone} transparent opacity={0.45} />
       </instancedMesh>
-
-      {/* Setback labels */}
-      {frontSbU > 0 && (
-        <Html position={[0, LOT_Y, lotU / 2 - frontSbU / 2]} distanceFactor={8} occlude={false}>
-          <div style={{ pointerEvents: 'none' }} className="bg-card/80 border border-border rounded px-1 py-0.5 text-[11px] font-mono text-foreground -translate-x-1/2 whitespace-nowrap">
-            Front/Rear: {setbackFront.toFixed(1)}m
-          </div>
-        </Html>
-      )}
-      {sideSbU > 0 && (
-        <Html position={[-(lotU / 2 - sideSbU / 2), LOT_Y, 0]} distanceFactor={8} occlude={false}>
-          <div style={{ pointerEvents: 'none' }} className="bg-card/80 border border-border rounded px-1 py-0.5 text-[11px] font-mono text-foreground -translate-x-1/2 whitespace-nowrap">
-            Side: {setbackSide.toFixed(1)}m
-          </div>
-        </Html>
-      )}
 
       {/* ── Building envelope (unit cube, scaled by useFrame) ───────────── */}
       <mesh ref={buildingRef} castShadow>
         <boxGeometry args={[1, 1, 1]} />
         <meshStandardMaterial
           ref={buildingMatRef}
-          color="#1B3FC4"
+          color={SCENE_COLORS.buildingPrimary}
           transparent
           opacity={0.65}
           roughness={0.3}
@@ -229,56 +307,14 @@ export function FARScene() {
       {/* Floor plate lines (Optimized via InstancedMesh) */}
       <instancedMesh ref={instancedRef} args={[null, null, 100]} frustumCulled={false}>
         <boxGeometry args={[1, 0.005, 1]} />
-        <meshStandardMaterial color="#1535A8" transparent opacity={0.4} />
+        <meshStandardMaterial color={SCENE_COLORS.floorPlateEdge} transparent opacity={0.4} />
       </instancedMesh>
-
-      {/* ── 3D-anchored labels ──────────────────────────────────────────── */}
-      {/* Height label — right face */}
-      <Html
-        position={[toU(s.footprintSideM) / 2 + 0.1, LOT_Y * 2 + toU(s.buildingHeightM) / 2, 0]}
-        distanceFactor={8} occlude={false}
-      >
-        <div style={{ pointerEvents: 'none' }} className="bg-card/90 backdrop-blur-sm px-1.5 py-0.5 rounded border border-border shadow-sm whitespace-nowrap">
-          <span className="text-[11px] font-bold text-foreground">
-            {s.buildingHeightM.toFixed(1)}m · {s.floors}F
-          </span>
-        </div>
-      </Html>
-
-      {/* FAR / GFA label — above building */}
-      <Html
-        position={[0, LOT_Y * 2 + toU(s.buildingHeightM) + 0.1, 0]}
-        distanceFactor={8} occlude={false}
-      >
-        <div style={{ pointerEvents: 'none' }} className={`px-1.5 py-0.5 rounded border shadow-sm whitespace-nowrap text-center ${
-          s.isFARViolation ? 'bg-red-50 border-red-200' : 'bg-card/90 backdrop-blur-sm border-border'
-        }`}>
-          <div className={`text-[11px] font-bold ${s.isFARViolation ? 'text-red-700' : 'text-foreground'}`}>
-            FAR {far.toFixed(1)}× — {s.maxFloorAreaM2.toFixed(0)} sqm GFA
-          </div>
-          {s.isFARViolation && (
-            <div className="text-[11px] text-red-500">Exceeds zone max {MAX_ZONE_FAR}×</div>
-          )}
-        </div>
-      </Html>
 
       {/* ── BHL reference line ──────────────────────────────────────────── */}
       <mesh position={[0, LOT_Y * 2 + bhlU, 0]}>
         <boxGeometry args={[lotU * 1.2, 0.006, 0.006]} />
         <meshStandardMaterial color={bhlColor} transparent opacity={0.85} />
       </mesh>
-      <Html
-        position={[lotU * 0.62 + 0.06, LOT_Y * 2 + bhlU, 0]}
-        distanceFactor={8} occlude={false}
-      >
-        <div style={{ pointerEvents: 'none' }} className={`px-1.5 py-0.5 rounded border shadow-sm whitespace-nowrap ${
-          s.isBHLViolation ? 'bg-red-50 border-red-200' : 'bg-slate-50 border-slate-200'
-        }`}>
-          <span className={`text-[11px] font-bold ${s.isBHLViolation ? 'text-red-700' : 'text-slate-500'}`}>
-            BHL {bhl}m{s.isBHLViolation ? ' ⚠ EXCEEDED' : ' (limit)'}
-          </span>
-        </div>
-      </Html>
     </group>
   )
 }

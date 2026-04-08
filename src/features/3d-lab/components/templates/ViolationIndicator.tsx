@@ -1,9 +1,9 @@
 // src/app/dashboard/3d-lab/_components/ViolationIndicator.tsx
 'use client'
 
-import { Html } from '@react-three/drei'
-import { Warning } from '@phosphor-icons/react/dist/ssr'
-import { SCIcon } from '@/components/graphics/icons/Icon'
+import { useEffect } from 'react'
+import { Vector3 } from 'three'
+import { useOverlayStore } from '@/features/3d-lab/stores/useOverlayStore'
 
 interface ViolationIndicatorProps {
   position: [number, number, number]
@@ -13,17 +13,40 @@ interface ViolationIndicatorProps {
   distanceFactor?: number
 }
 
-export function ViolationIndicator({ position, message, codeRef, visible, distanceFactor = 8 }: ViolationIndicatorProps) {
-  if (!visible) return null
-  return (
-    <Html position={position} distanceFactor={distanceFactor} occlude={false}>
-      <div style={{ pointerEvents: 'none' }} className="flex items-start gap-1 bg-red-50/95 backdrop-blur-sm border border-red-300 rounded px-2 py-1 shadow-md max-w-[200px] -translate-x-1/2">
-        <SCIcon icon={Warning} size="xs" className="text-red-600 shrink-0 mt-0.5" />
-        <div>
-          <p className="text-[11px] font-bold text-red-700 leading-tight">{message}</p>
-          <p className="text-[11px] text-red-500 mt-0.5">{codeRef}</p>
-        </div>
-      </div>
-    </Html>
-  )
+/**
+ * Emits a violation overlay item to useOverlayStore.
+ * The actual DOM rendering is handled by DOMOverlayLayer + ViolationBadge.
+ */
+export const ViolationIndicator = ({
+  position,
+  message,
+  codeRef,
+  visible,
+}: ViolationIndicatorProps) => {
+  const upsertItem = useOverlayStore((s) => s.upsertItem)
+  const removeItem = useOverlayStore((s) => s.removeItem)
+
+  const overlayId = `violation-${message.replace(/\s+/g, '-').slice(0, 30)}`
+
+  useEffect(() => {
+    if (!visible) {
+      removeItem(overlayId)
+      return
+    }
+    upsertItem({
+      id: overlayId,
+      worldPosition: new Vector3(position[0], position[1], position[2]),
+      type: 'violation',
+      payload: {
+        law: codeRef,
+        section: codeRef,
+        message,
+        severity: 'error',
+      },
+      visible: true,
+    })
+    return () => removeItem(overlayId)
+  }, [position, message, codeRef, visible, upsertItem, removeItem, overlayId])
+
+  return null
 }

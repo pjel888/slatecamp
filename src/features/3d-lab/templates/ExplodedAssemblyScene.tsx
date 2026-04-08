@@ -1,15 +1,17 @@
 // src/app/dashboard/3d-lab/_templates/ExplodedAssemblyScene.tsx
-import { useRef, useState, useCallback, useMemo } from 'react'
+import { useRef, useState, useCallback, useEffect, useMemo } from 'react'
 import { useDisposeOnUnmount } from '@/components/r3f/useDisposeOnUnmount'
 import { useFrame, useThree } from '@react-three/fiber'
-import { Html } from '@react-three/drei'
 import { useModuleInvalidate } from '@/features/3d-lab/hooks/useModuleInvalidate'
 import { GeometryElement } from '@/features/3d-lab/components/templates/GeometryMesh'
+import { useOverlayStore } from '@/features/3d-lab/stores/useOverlayStore'
+import { GroundPlane } from '@/features/3d-lab/components/rendering/GroundPlane'
+import { SCENE_COLORS } from '@/features/3d-lab/constants/scene-colors'
 import type { ExplodedAssemblyConfig, AssemblyPart } from '@/features/3d-lab/types/templates'
 import type { ModuleStoreState } from '@/features/3d-lab/stores/createModuleStore'
 import type { StoreApi, UseBoundStore } from 'zustand'
 import type { Group } from 'three'
-import { MathUtils } from 'three'
+import { MathUtils, Vector3 } from 'three'
 
 // ─── Single Assembly Part ───────────────────────────────────────────────────
 
@@ -25,6 +27,8 @@ function PartMesh({ part, explodeValue, isActive, isFaded, onPartClick }: PartMe
   const meshRef = useRef<Group>(null)
   const [hovered, setHovered] = useState(false)
   const { invalidate } = useThree()
+  const upsertItem = useOverlayStore((s) => s.upsertItem)
+  const removeItem = useOverlayStore((s) => s.removeItem)
 
   // Compute target position: base position + explodeOffset * explodeValue
   const basePos = part.geometry.position
@@ -48,8 +52,30 @@ function PartMesh({ part, explodeValue, isActive, isFaded, onPartClick }: PartMe
     }
   })
 
+  // Emit overlay for active part tooltip
+  const overlayId = `exploded-part-${part.id}`
+  useEffect(() => {
+    if (isActive) {
+      upsertItem({
+        id: overlayId,
+        worldPosition: new Vector3(targetX, targetY, targetZ),
+        type: 'label',
+        payload: {
+          text: part.label,
+          subtext: part.description,
+          codeRef: part.codeCitation,
+        },
+        visible: true,
+        zIndex: 20,
+      })
+    } else {
+      removeItem(overlayId)
+    }
+    return () => removeItem(overlayId)
+  }, [isActive, targetX, targetY, targetZ, part.label, part.description, part.codeCitation, upsertItem, removeItem, overlayId])
+
   const opacity = isFaded ? 0.2 : (part.geometry.opacity ?? 1)
-  const emissive = isActive ? '#3b82f6' : hovered ? '#3b82f6' : '#000000'
+  const emissive = isActive ? SCENE_COLORS.activeEmissive : hovered ? SCENE_COLORS.hoverEmissive : '#000000'
   const emissiveIntensity = isActive ? 0.4 : hovered ? 0.22 : 0
 
   const handlePointerEnter = useCallback(() => {
@@ -91,33 +117,6 @@ function PartMesh({ part, explodeValue, isActive, isFaded, onPartClick }: PartMe
           metalness={0.0}
         />
       </mesh>
-
-      {/* Active part annotation */}
-      {isActive && (
-        <Html distanceFactor={8} occlude={false} center>
-          <div
-            style={{ pointerEvents: 'none' }}
-            className="w-52 bg-card/95 backdrop-blur-sm border border-border rounded-md shadow-lg p-2.5 -translate-y-full"
-          >
-            <div className="text-[11px] font-black uppercase tracking-widest text-muted-foreground mb-0.5">
-              Part
-            </div>
-            <h4 className="text-xs font-bold text-foreground leading-snug mb-1">
-              {part.label}
-            </h4>
-            {part.description && (
-              <p className="text-[11px] text-text-secondary leading-relaxed mb-1.5">
-                {part.description}
-              </p>
-            )}
-            {part.codeCitation && (
-              <div className="text-[11px] text-muted-foreground mb-1">
-                {part.codeCitation}
-              </div>
-            )}
-          </div>
-        </Html>
-      )}
     </group>
   )
 }
@@ -141,6 +140,23 @@ function AssemblyGroup({
   offsetX = 0,
   label,
 }: AssemblyGroupProps) {
+  const upsertItem = useOverlayStore((s) => s.upsertItem)
+  const removeItem = useOverlayStore((s) => s.removeItem)
+
+  const overlayId = `assembly-group-${label ?? 'default'}`
+  useEffect(() => {
+    if (label) {
+      upsertItem({
+        id: overlayId,
+        worldPosition: new Vector3(offsetX, -0.15, 0),
+        type: 'label',
+        payload: { text: label },
+        visible: true,
+      })
+    }
+    return () => removeItem(overlayId)
+  }, [label, offsetX, upsertItem, removeItem, overlayId])
+
   return (
     <group position={[offsetX, 0, 0]}>
       {parts.map((part) => (
@@ -153,18 +169,6 @@ function AssemblyGroup({
           onPartClick={onPartClick}
         />
       ))}
-      {label && (
-        <Html position={[0, -0.15, 0]} distanceFactor={8} occlude={false} center>
-          <div
-            style={{ pointerEvents: 'none' }}
-            className="px-2 py-0.5 bg-card/90 backdrop-blur-sm border border-border rounded shadow-sm whitespace-nowrap"
-          >
-            <span className="text-[11px] font-bold text-foreground uppercase tracking-wide">
-              {label}
-            </span>
-          </div>
-        </Html>
-      )}
     </group>
   )
 }
@@ -224,11 +228,7 @@ export function ExplodedAssemblyScene({
 
     return (
       <group ref={groupRef} scale={config.scale ?? 1}>
-        {/* Ground plane */}
-        <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -0.005, 0]} receiveShadow>
-          <planeGeometry args={[totalOrders * spacing + 2, 4]} />
-          <meshStandardMaterial color="#f1f5f9" roughness={0.9} />
-        </mesh>
+        <GroundPlane size={[totalOrders * spacing + 2, 4]} />
 
         {orderGroups.map((group, i) => (
           <AssemblyGroup
@@ -248,10 +248,7 @@ export function ExplodedAssemblyScene({
   // Standard single-assembly mode
   return (
     <group ref={groupRef} scale={config.scale ?? 1}>
-      <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -0.005, 0]} receiveShadow>
-        <planeGeometry args={[5, 5]} />
-        <meshStandardMaterial color="#f1f5f9" roughness={0.9} />
-      </mesh>
+      <GroundPlane />
 
       {config.parts.map((part) => (
         <PartMesh

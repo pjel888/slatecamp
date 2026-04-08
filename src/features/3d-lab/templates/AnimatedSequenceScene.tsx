@@ -1,15 +1,16 @@
 // src/app/dashboard/3d-lab/_templates/AnimatedSequenceScene.tsx
-import { useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import { useDisposeOnUnmount } from '@/components/r3f/useDisposeOnUnmount'
 import { useFrame, useThree } from '@react-three/fiber'
-import { Html } from '@react-three/drei'
 import { useModuleInvalidate } from '@/features/3d-lab/hooks/useModuleInvalidate'
 import { GeometryElement } from '@/features/3d-lab/components/templates/GeometryMesh'
+import { useOverlayStore } from '@/features/3d-lab/stores/useOverlayStore'
+import { GroundPlane } from '@/features/3d-lab/components/rendering/GroundPlane'
 import type { AnimatedSequenceConfig, GeometryInstruction } from '@/features/3d-lab/types/templates'
 import type { ModuleStoreState } from '@/features/3d-lab/stores/createModuleStore'
 import type { StoreApi, UseBoundStore } from 'zustand'
 import type { Mesh, MeshStandardMaterial, Group } from 'three'
-import { MathUtils } from 'three'
+import { MathUtils, Vector3 } from 'three'
 
 // ─── Fading Geometry Mesh ───────────────────────────────────────────────────
 
@@ -25,6 +26,8 @@ function FadingMesh({ inst, isCurrent, fadeDurationMs }: FadingMeshProps) {
   const opacityRef = useRef(isCurrent ? 0 : (inst.opacity ?? 1))
   const targetOpacity = inst.opacity ?? 1
   const { invalidate } = useThree()
+  const upsertItem = useOverlayStore((s) => s.upsertItem)
+  const removeItem = useOverlayStore((s) => s.removeItem)
 
   // Speed: how fast we approach target opacity per second
   const fadeSpeed = fadeDurationMs > 0 ? 1000 / fadeDurationMs : 10
@@ -62,6 +65,22 @@ function FadingMesh({ inst, isCurrent, fadeDurationMs }: FadingMeshProps) {
     }
   })
 
+  // Emit overlay for label
+  const overlayId = `animated-step-${inst.id}`
+  useEffect(() => {
+    if (inst.label) {
+      const pos = inst.position
+      upsertItem({
+        id: overlayId,
+        worldPosition: new Vector3(pos[0], pos[1], pos[2]),
+        type: 'label',
+        payload: { text: inst.label },
+        visible: true,
+      })
+    }
+    return () => removeItem(overlayId)
+  }, [inst.label, inst.position, upsertItem, removeItem, overlayId])
+
   return (
     <mesh
       ref={meshRef}
@@ -78,18 +97,6 @@ function FadingMesh({ inst, isCurrent, fadeDurationMs }: FadingMeshProps) {
         roughness={0.75}
         metalness={0.0}
       />
-      {inst.label && (
-        <Html distanceFactor={8} occlude={false} center>
-          <div
-            style={{ pointerEvents: 'none' }}
-            className="px-1.5 py-0.5 bg-card/90 backdrop-blur-sm border border-border rounded shadow-sm whitespace-nowrap"
-          >
-            <span className="text-[11px] font-bold text-foreground">
-              {inst.label}
-            </span>
-          </div>
-        </Html>
-      )}
     </mesh>
   )
 }
@@ -137,11 +144,7 @@ export function AnimatedSequenceScene({
 
   return (
     <group ref={groupRef} scale={config.scale ?? 1}>
-      {/* Ground plane */}
-      <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -0.005, 0]} receiveShadow>
-        <planeGeometry args={[12, 12]} />
-        <meshStandardMaterial color="#f1f5f9" roughness={0.9} />
-      </mesh>
+      <GroundPlane size={[12, 12]} />
 
       {config.steps.map((step, idx) => {
         if (idx > currentStep) return null

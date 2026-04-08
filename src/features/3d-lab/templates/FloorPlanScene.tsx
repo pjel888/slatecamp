@@ -1,13 +1,14 @@
 'use client'
 
 // src/app/dashboard/3d-lab/_templates/FloorPlanScene.tsx
-import { useMemo, useRef } from 'react'
+import { useEffect, useMemo, useRef } from 'react'
+import * as THREE from 'three'
 import type { Group } from 'three'
 import { useDisposeOnUnmount } from '@/components/r3f/useDisposeOnUnmount'
-import { Line, Html } from '@react-three/drei'
-import { Warning } from '@phosphor-icons/react/dist/ssr'
-import { SCIcon } from '@/components/graphics/icons/Icon'
+import { Line } from '@react-three/drei'
 import { useModuleInvalidate } from '@/features/3d-lab/hooks/useModuleInvalidate'
+import { useOverlayStore } from '@/features/3d-lab/stores/useOverlayStore'
+import { SCENE_COLORS } from '@/features/3d-lab/constants/scene-colors'
 import type { FloorPlanConfig } from '@/features/3d-lab/types/templates'
 import type { ModuleStoreState } from '@/features/3d-lab/stores/createModuleStore'
 import type { StoreApi, UseBoundStore } from 'zustand'
@@ -40,37 +41,43 @@ function RoomPlane({
   color,
   opacity,
   label,
+  roomId,
 }: {
   bounds: [number, number, number, number]
   color: string
   opacity: number
   label?: string
+  roomId: string
 }) {
   const [x, z, w, d] = bounds
   const cx = x + w / 2
   const cz = z + d / 2
+  const upsertItem = useOverlayStore((s) => s.upsertItem)
+  const removeItem = useOverlayStore((s) => s.removeItem)
+
+  const overlayId = `floorplan-room-${roomId}`
+  useEffect(() => {
+    if (label) {
+      upsertItem({
+        id: overlayId,
+        worldPosition: new THREE.Vector3(cx, 0.02, cz),
+        type: 'label',
+        payload: { text: label },
+        visible: true,
+      })
+    }
+    return () => removeItem(overlayId)
+  }, [label, cx, cz, upsertItem, removeItem, overlayId])
 
   return (
-    <group>
-      <mesh position={[cx, 0.001, cz]} rotation={[-Math.PI / 2, 0, 0]}>
-        <planeGeometry args={[w, d]} />
-        <meshStandardMaterial
-          color={color}
-          opacity={opacity}
-          transparent={opacity < 1}
-        />
-      </mesh>
-      {label && (
-        <Html position={[cx, 0.02, cz]} center>
-          <div
-            style={{ pointerEvents: 'none' }}
-            className="text-[11px] font-bold text-foreground whitespace-nowrap"
-          >
-            {label}
-          </div>
-        </Html>
-      )}
-    </group>
+    <mesh position={[cx, 0.001, cz]} rotation={[-Math.PI / 2, 0, 0]}>
+      <planeGeometry args={[w, d]} />
+      <meshStandardMaterial
+        color={color}
+        opacity={opacity}
+        transparent={opacity < 1}
+      />
+    </mesh>
   )
 }
 
@@ -83,6 +90,7 @@ function PathLine({
   label,
   actualDistance,
   maxDistance,
+  pathId,
 }: {
   points: Array<[number, number]>
   color: string
@@ -90,6 +98,7 @@ function PathLine({
   label?: string
   actualDistance?: number
   maxDistance?: number
+  pathId: string
 }) {
   const points3D = useMemo<Vector3Tuple[]>(
     () => points.map(([x, z]) => [x, 0.01, z]),
@@ -101,42 +110,45 @@ function PathLine({
     maxDistance !== undefined &&
     actualDistance > maxDistance
 
-  const lineColor = isViolation ? '#D64545' : color
+  const lineColor = isViolation ? SCENE_COLORS.buildingViolation : color
 
   const mid = midpoint(points)
+  const upsertItem = useOverlayStore((s) => s.upsertItem)
+  const removeItem = useOverlayStore((s) => s.removeItem)
+
+  const overlayId = `floorplan-path-${pathId}`
+  useEffect(() => {
+    if (actualDistance !== undefined && maxDistance !== undefined) {
+      upsertItem({
+        id: overlayId,
+        worldPosition: new THREE.Vector3(mid[0], 0.05, mid[1]),
+        type: 'dimension',
+        payload: {
+          value: actualDistance,
+          unit: 'm',
+          label: `max ${maxDistance}m`,
+          isViolating: isViolation,
+        },
+        visible: true,
+      })
+    } else if (label) {
+      upsertItem({
+        id: overlayId,
+        worldPosition: new THREE.Vector3(mid[0], 0.05, mid[1]),
+        type: 'label',
+        payload: { text: label },
+        visible: true,
+      })
+    }
+    return () => removeItem(overlayId)
+  }, [actualDistance, maxDistance, label, mid, isViolation, upsertItem, removeItem, overlayId])
 
   return (
-    <group>
-      <Line
-        points={points3D}
-        color={lineColor}
-        lineWidth={width}
-      />
-      {actualDistance !== undefined && maxDistance !== undefined && (
-        <Html position={[mid[0], 0.05, mid[1]]} center>
-          <div
-            style={{ pointerEvents: 'none' }}
-            className={`text-[11px] font-bold whitespace-nowrap px-1 py-0.5 rounded ${
-              isViolation
-                ? 'bg-red-100 text-red-700 border border-red-300'
-                : 'bg-green-100 text-green-700 border border-green-300'
-            }`}
-          >
-            {actualDistance.toFixed(1)}m / max {maxDistance}m
-          </div>
-        </Html>
-      )}
-      {label && actualDistance === undefined && (
-        <Html position={[mid[0], 0.05, mid[1]]} center>
-          <div
-            style={{ pointerEvents: 'none' }}
-            className="text-[11px] font-medium text-text-secondary whitespace-nowrap"
-          >
-            {label}
-          </div>
-        </Html>
-      )}
-    </group>
+    <Line
+      points={points3D}
+      color={lineColor}
+      lineWidth={width}
+    />
   )
 }
 
@@ -148,21 +160,39 @@ function Fixture({
   color,
   label,
   coverageRadius,
+  fixtureId,
 }: {
   type: string
   position: [number, number]
   color: string
   label?: string
   coverageRadius?: number
+  fixtureId: string
 }) {
   const [x, z] = position
+  const upsertItem = useOverlayStore((s) => s.upsertItem)
+  const removeItem = useOverlayStore((s) => s.removeItem)
+
+  const overlayId = `floorplan-fixture-${fixtureId}`
+  useEffect(() => {
+    if (label) {
+      upsertItem({
+        id: overlayId,
+        worldPosition: new THREE.Vector3(x, 0.1, z),
+        type: 'label',
+        payload: { text: label },
+        visible: true,
+      })
+    }
+    return () => removeItem(overlayId)
+  }, [label, x, z, upsertItem, removeItem, overlayId])
 
   return (
     <group>
       {type === 'exit' && (
         <mesh position={[x, 0.025, z]}>
           <boxGeometry args={[0.5, 0.05, 0.3]} />
-          <meshStandardMaterial color={color || '#2D9F6F'} />
+          <meshStandardMaterial color={color || SCENE_COLORS.fixtureExit} />
         </mesh>
       )}
 
@@ -170,13 +200,13 @@ function Fixture({
         <>
           <mesh position={[x, 0.005, z]}>
             <cylinderGeometry args={[0.1, 0.1, 0.01, 16]} />
-            <meshStandardMaterial color={color || '#1B3FC4'} />
+            <meshStandardMaterial color={color || SCENE_COLORS.fixtureSprinkler} />
           </mesh>
           {coverageRadius && (
             <mesh position={[x, 0.002, z]} rotation={[-Math.PI / 2, 0, 0]}>
               <ringGeometry args={[coverageRadius - 0.05, coverageRadius, 32]} />
               <meshStandardMaterial
-                color={color || '#1B3FC4'}
+                color={color || SCENE_COLORS.fixtureSprinkler}
                 opacity={0.15}
                 transparent
               />
@@ -188,19 +218,8 @@ function Fixture({
       {type !== 'exit' && type !== 'sprinkler' && (
         <mesh position={[x, 0.015, z]}>
           <boxGeometry args={[0.3, 0.03, 0.3]} />
-          <meshStandardMaterial color={color || '#71717a'} />
+          <meshStandardMaterial color={color || SCENE_COLORS.fixtureDefault} />
         </mesh>
-      )}
-
-      {label && (
-        <Html position={[x, 0.1, z]} center>
-          <div
-            style={{ pointerEvents: 'none' }}
-            className="text-[11px] font-bold text-text-secondary whitespace-nowrap"
-          >
-            {label}
-          </div>
-        </Html>
       )}
     </group>
   )
@@ -220,7 +239,7 @@ function DeadEndZone({
   return (
     <mesh position={[cx, 0.003, cz]} rotation={[-Math.PI / 2, 0, 0]}>
       <planeGeometry args={[w, d]} />
-      <meshStandardMaterial color="#D64545" opacity={0.25} transparent />
+      <meshStandardMaterial color={SCENE_COLORS.deadEndZone} opacity={0.25} transparent />
     </mesh>
   )
 }
@@ -282,6 +301,52 @@ export function FloorPlanScene({
     [config.fixtures, params]
   )
 
+  // Emit overlay items for violations and annotations
+  const upsertItem = useOverlayStore((s) => s.upsertItem)
+  const removeItem = useOverlayStore((s) => s.removeItem)
+
+  useEffect(() => {
+    const ids: string[] = []
+
+    // Violation overlays
+    activeViolations.forEach((v) => {
+      const id = `floorplan-violation-${v.id}`
+      ids.push(id)
+      const pos = v.position?.(params) ?? [planW / 2, 1, planD / 2]
+      upsertItem({
+        id,
+        worldPosition: new THREE.Vector3(pos[0], pos[1], pos[2]),
+        type: 'violation',
+        payload: {
+          law: v.codeCitation ?? '',
+          section: v.codeCitation ?? '',
+          message: v.message,
+          severity: 'error',
+        },
+        visible: true,
+      })
+    })
+
+    // Annotation overlays
+    visibleAnnotations.forEach((a) => {
+      const id = `floorplan-annotation-${a.id}`
+      ids.push(id)
+      const pos = a.position(params)
+      upsertItem({
+        id,
+        worldPosition: new THREE.Vector3(pos[0], pos[1], pos[2]),
+        type: 'label',
+        payload: {
+          text: a.label,
+          codeRef: a.codeCitation,
+        },
+        visible: true,
+      })
+    })
+
+    return () => ids.forEach((id) => removeItem(id))
+  }, [activeViolations, visibleAnnotations, params, planW, planD, upsertItem, removeItem])
+
   return (
     <group ref={groupRef} scale={config.scale ?? 1}>
       {/* Floor plan base plane */}
@@ -290,13 +355,14 @@ export function FloorPlanScene({
         rotation={[-Math.PI / 2, 0, 0]}
       >
         <planeGeometry args={[planW, planD]} />
-        <meshStandardMaterial color="#e4e4e7" />
+        <meshStandardMaterial color={SCENE_COLORS.groundFloorPlan} />
       </mesh>
 
       {/* Room planes */}
       {config.rooms.map((room) => (
         <RoomPlane
           key={room.id}
+          roomId={room.id}
           bounds={room.bounds}
           color={room.color}
           opacity={room.opacity ?? 0.6}
@@ -315,6 +381,7 @@ export function FloorPlanScene({
         return (
           <PathLine
             key={path.id}
+            pathId={path.id}
             points={path.points}
             color={path.color}
             width={path.width ?? 2}
@@ -329,67 +396,16 @@ export function FloorPlanScene({
       {visibleFixtures.map((fixture) => (
         <Fixture
           key={fixture.id}
+          fixtureId={fixture.id}
           type={fixture.type}
           position={fixture.position}
-          color={fixture.color ?? '#71717a'}
+          color={fixture.color ?? SCENE_COLORS.fixtureDefault}
           label={fixture.label}
           coverageRadius={
             fixture.type === 'sprinkler' ? sprinklerRadius : undefined
           }
         />
       ))}
-
-      {/* Violation annotations */}
-      {activeViolations.map((v) => {
-        const pos = v.position?.(params) ?? [planW / 2, 1, planD / 2]
-        return (
-          <Html
-            key={v.id}
-            position={pos}
-            distanceFactor={12}
-            occlude={false}
-          >
-            <div
-              style={{ pointerEvents: 'none' }}
-              className="flex items-start gap-1 bg-red-50 border border-red-300 rounded px-1.5 py-1 shadow-sm whitespace-nowrap -translate-x-1/2"
-            >
-              <SCIcon icon={Warning} size="xs" className="text-red-600 shrink-0 mt-px" />
-              <div>
-                <div className="text-[11px] font-bold text-red-700">
-                  {v.message}
-                </div>
-                {v.codeCitation && (
-                  <div className="text-[11px] text-red-500">
-                    {v.codeCitation}
-                  </div>
-                )}
-              </div>
-            </div>
-          </Html>
-        )
-      })}
-
-      {/* Static annotations */}
-      {visibleAnnotations.map((a) => {
-        const pos = a.position(params)
-        return (
-          <Html key={a.id} position={pos} distanceFactor={12} occlude={false}>
-            <div
-              style={{ pointerEvents: 'none' }}
-              className="bg-card/90 backdrop-blur-sm border border-border rounded px-1.5 py-0.5 shadow-sm whitespace-nowrap -translate-x-1/2"
-            >
-              <div className="text-[11px] font-bold text-foreground">
-                {a.label}
-              </div>
-              {a.codeCitation && (
-                <div className="text-[11px] text-muted-foreground">
-                  {a.codeCitation}
-                </div>
-              )}
-            </div>
-          </Html>
-        )
-      })}
     </group>
   )
 }
