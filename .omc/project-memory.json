@@ -229,6 +229,12 @@
   },
   "hotPaths": [
     {
+      "path": "src\\features\\3d-lab\\templates\\CalculatorTemplate.tsx",
+      "accessCount": 9,
+      "lastAccessed": 1775629107833,
+      "type": "file"
+    },
+    {
       "path": "src\\features\\3d-lab\\scenes\\FARPlayground\\FARScene.tsx",
       "accessCount": 8,
       "lastAccessed": 1775626757359,
@@ -247,16 +253,22 @@
       "type": "file"
     },
     {
-      "path": "src\\features\\3d-lab\\templates\\CalculatorTemplate.tsx",
-      "accessCount": 4,
-      "lastAccessed": 1775628812916,
-      "type": "file"
-    },
-    {
       "path": "src\\features\\3d-lab\\components\\ModuleViewer.tsx",
       "accessCount": 4,
       "lastAccessed": 1775628821305,
       "type": "file"
+    },
+    {
+      "path": "src\\app\\calculators\\_stores\\flooringStore.ts",
+      "accessCount": 4,
+      "lastAccessed": 1775629100627,
+      "type": "file"
+    },
+    {
+      "path": "src\\features\\3d-lab",
+      "accessCount": 4,
+      "lastAccessed": 1775629132558,
+      "type": "directory"
     },
     {
       "path": "src\\features\\3d-lab\\templates\\AnimatedSequenceScene.tsx",
@@ -295,6 +307,18 @@
       "type": "file"
     },
     {
+      "path": "src\\features\\3d-lab\\components\\templates\\LabPanelLayout.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1775629013404,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\calculators\\FloatingCameraBar.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1775629067584,
+      "type": "directory"
+    },
+    {
       "path": "src\\features\\3d-lab\\templates\\CutawaySectionScene.tsx",
       "accessCount": 2,
       "lastAccessed": 1775626533744,
@@ -323,12 +347,6 @@
       "accessCount": 2,
       "lastAccessed": 1775626667866,
       "type": "file"
-    },
-    {
-      "path": "src\\features\\3d-lab",
-      "accessCount": 2,
-      "lastAccessed": 1775626777041,
-      "type": "directory"
     },
     {
       "path": "src\\app\\dashboard\\3d-lab",
@@ -364,6 +382,30 @@
       "path": "src\\features\\3d-lab\\config\\registry\\cat-10.ts",
       "accessCount": 2,
       "lastAccessed": 1775628845102,
+      "type": "file"
+    },
+    {
+      "path": "src\\features\\3d-lab\\config\\registry\\cat-15.ts",
+      "accessCount": 2,
+      "lastAccessed": 1775628845579,
+      "type": "file"
+    },
+    {
+      "path": "src\\features\\3d-lab\\config\\modules\\15-estimating\\calculator-flooring.ts",
+      "accessCount": 2,
+      "lastAccessed": 1775628846601,
+      "type": "file"
+    },
+    {
+      "path": ".ai\\plans\\3d-module-improvement\\audit & implementation\\02_phase_tracker.md",
+      "accessCount": 2,
+      "lastAccessed": 1775629185158,
+      "type": "file"
+    },
+    {
+      "path": ".ai\\state\\current-task.md",
+      "accessCount": 2,
+      "lastAccessed": 1775629194706,
       "type": "file"
     },
     {
@@ -403,33 +445,15 @@
       "type": "directory"
     },
     {
-      "path": ".ai\\state\\current-task.md",
-      "accessCount": 1,
-      "lastAccessed": 1775628622355,
-      "type": "file"
-    },
-    {
       "path": ".ai\\plans\\3d-module-improvement\\audit & implementation\\01_master_architecture.md",
       "accessCount": 1,
       "lastAccessed": 1775628623489,
       "type": "file"
     },
     {
-      "path": ".ai\\plans\\3d-module-improvement\\audit & implementation\\02_phase_tracker.md",
-      "accessCount": 1,
-      "lastAccessed": 1775628624132,
-      "type": "file"
-    },
-    {
       "path": ".ai\\state\\memory.md",
       "accessCount": 1,
       "lastAccessed": 1775628637605,
-      "type": "file"
-    },
-    {
-      "path": "src\\features\\3d-lab\\config\\modules\\15-estimating\\calculator-flooring.ts",
-      "accessCount": 1,
-      "lastAccessed": 1775628686557,
       "type": "file"
     },
     {
@@ -445,12 +469,6 @@
       "type": "file"
     },
     {
-      "path": "src\\features\\3d-lab\\config\\registry\\cat-15.ts",
-      "accessCount": 1,
-      "lastAccessed": 1775628699608,
-      "type": "file"
-    },
-    {
       "path": "src\\components\\calculators\\FlooringInputPanel.tsx",
       "accessCount": 1,
       "lastAccessed": 1775628714569,
@@ -460,12 +478,6 @@
       "path": "src\\features\\3d-lab\\templates\\ParametricSceneRenderer.tsx",
       "accessCount": 1,
       "lastAccessed": 1775628813965,
-      "type": "file"
-    },
-    {
-      "path": "src\\app\\calculators\\_stores\\flooringStore.ts",
-      "accessCount": 1,
-      "lastAccessed": 1775628822930,
       "type": "file"
     },
     {
@@ -485,6 +497,18 @@
       "accessCount": 1,
       "lastAccessed": 1775628835010,
       "type": "file"
+    },
+    {
+      "path": "src\\features\\3d-lab\\components\\CanvasWrapper.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1775628907281,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\calculators\\CanvasEmptyState.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1775629073235,
+      "type": "directory"
     }
   ],
   "userDirectives": []
