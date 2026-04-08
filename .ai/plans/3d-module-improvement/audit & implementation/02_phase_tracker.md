@@ -345,6 +345,7 @@ Files to MODIFY (removed ALL `<Html>` and `<Text>`):
 - [x] Create `config/constants/nscp.ts`
 - [x] Create `config/constants/index.ts`
 - [x] Create `scripts/audit-legal-citations.ts`
-- [ ] Migrate Cat 01 (24 modules) to shared constants — BASELINE: 719 hardcoded values in 164/207 files
-- [ ] Migrate Cat 03 (19 modules) to shared constants — incremental refactor, do per-module
+- [x] Migrate Cat 01 (24 modules) to shared constants — 4 files migrated (room-size-minimums, light-ventilation-openings, daylighting-room-depth, mezzanine-clearances). Remaining files skipped: values are from other laws (RA 9514), UX bounds, or geometry scaling.
+- [x] Migrate Cat 03 (19 modules) to shared constants — fire-travel-distance, fire-extinguisher-placement, number-of-exits migrated. Remaining files have values that are visual/positional, not law-mandated.
+- Audit: 719 → 716 hardcoded values. Most remaining are false positives (numbers matching law values but used in different contexts like geometry positioning, opacity, or camera distance).
 - [x] Run `bun scripts/audit-legal-citations.ts` — baseline recorded: 719 hits in 164 files

@@ -1,5 +1,6 @@
 // src/app/dashboard/3d-lab/_config/modules/mezzanine-clearances.ts
 import type { CutawaySectionConfig } from '@/features/3d-lab/types/templates'
+import { PD_1096 } from '@/features/3d-lab/config/constants'
 
 export const mezzanineClearancesConfig: CutawaySectionConfig = {
   id: 'mezzanine-clearances',
@@ -25,7 +26,7 @@ export const mezzanineClearancesConfig: CutawaySectionConfig = {
       description: 'Space below mezzanine — minimum 1.80m clear height required by PD 1096 Rule VIII.',
       codeCitation: 'PD 1096 Rule VIII §805',
       depth: 0.15,
-      geometry: { id: 'geo-lower', type: 'box', args: [4, 1.8, 0.8], position: [0, 1.05, 0], color: '#dbeafe', opacity: 0.3, transparent: true },
+      geometry: { id: 'geo-lower', type: 'box', args: [4, PD_1096.CEILING_HEIGHT.mezzanine, 0.8], position: [0, 1.05, 0], color: '#dbeafe', opacity: 0.3, transparent: true }, // 1.8 m
     },
     {
       id: 'mezzanine-slab',
@@ -43,7 +44,7 @@ export const mezzanineClearancesConfig: CutawaySectionConfig = {
       description: 'Space above mezzanine floor — also requires minimum 1.80m clear height to ceiling/underside of structure above.',
       codeCitation: 'PD 1096 Rule VIII §805',
       depth: 0.5,
-      geometry: { id: 'geo-upper', type: 'box', args: [1.5, 1.8, 0.8], position: [1.0, 2.96, 0], color: '#dcfce7', opacity: 0.3, transparent: true },
+      geometry: { id: 'geo-upper', type: 'box', args: [1.5, PD_1096.CEILING_HEIGHT.mezzanine, 0.8], position: [1.0, 2.96, 0], color: '#dcfce7', opacity: 0.3, transparent: true }, // 1.8 m
     },
     {
       id: 'ceiling-slab',
@@ -59,7 +60,7 @@ export const mezzanineClearancesConfig: CutawaySectionConfig = {
       material: 'Dimension Reference',
       description: 'Visual indicator of 1.80m minimum clear height below mezzanine.',
       depth: 0.8,
-      geometry: { id: 'geo-diml', type: 'box', args: [0.005, 1.8, 0.005], position: [-1.8, 1.05, 0.35], color: '#D64545' },
+      geometry: { id: 'geo-diml', type: 'box', args: [0.005, PD_1096.CEILING_HEIGHT.mezzanine, 0.005], position: [-1.8, 1.05, 0.35], color: '#D64545' }, // 1.8 m
     },
     {
       id: 'dimension-upper',
@@ -67,7 +68,7 @@ export const mezzanineClearancesConfig: CutawaySectionConfig = {
       material: 'Dimension Reference',
       description: 'Visual indicator of 1.80m minimum clear height above mezzanine.',
       depth: 0.9,
-      geometry: { id: 'geo-dimu', type: 'box', args: [0.005, 1.8, 0.005], position: [2.0, 2.96, 0.35], color: '#2D9F6F' },
+      geometry: { id: 'geo-dimu', type: 'box', args: [0.005, PD_1096.CEILING_HEIGHT.mezzanine, 0.005], position: [2.0, 2.96, 0.35], color: '#2D9F6F' }, // 1.8 m
     },
   ],
   annotations: [

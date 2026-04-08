@@ -1,6 +1,7 @@
 // src/app/dashboard/3d-lab/_config/modules/light-ventilation-openings.ts
 // Light and Ventilation Openings — PD 1096 Rule VIII §803
 import type { ParametricSceneConfig, ParameterDef, GeometryInstruction, ViolationRule, AnnotationDef, Preset } from '@/features/3d-lab/types/templates'
+import { PD_1096 } from '@/features/3d-lab/config/constants'
 
 function num(v: number | string | boolean): number { return typeof v === 'number' ? v : Number(v) }
 function mm(v: number | string | boolean): number { return num(v) / 1000 }
@@ -24,7 +25,7 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   const floorA = rW * rD
   const openA = wW * wH * nW
   const ratio = openA / floorA
-  const violated = openA < floorA * 0.10 || (wW * wH) < 1.0
+  const violated = openA < floorA * PD_1096.LIGHT_VENT.minWindowToFloorRatio || (wW * wH) < 1.0 // 0.10
   const inst: GeometryInstruction[] = []
 
   // Floor
@@ -53,8 +54,8 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   // Front wall segments (around windows)
   inst.push({ id: 'wall-front-left', type: 'box', position: [-(rW / 2) + spacing / 2, cH / 2, rD / 2 + wallT / 2], args: [spacing * 0.4, cH, wallT], color: '#d4d4d8', opacity: 0.25, transparent: true })
   // Required opening area indicator
-  const reqA = floorA * 0.10
-  inst.push({ id: 'req-area-plane', type: 'box', position: [0, 0.01, 0], args: [Math.sqrt(reqA), 0.005, Math.sqrt(reqA)], color: ratio >= 0.10 ? '#2D9F6F' : '#D64545', opacity: 0.25, transparent: true, label: '10% min' })
+  const reqA = floorA * PD_1096.LIGHT_VENT.minWindowToFloorRatio // 0.10
+  inst.push({ id: 'req-area-plane', type: 'box', position: [0, 0.01, 0], args: [Math.sqrt(reqA), 0.005, Math.sqrt(reqA)], color: ratio >= PD_1096.LIGHT_VENT.minWindowToFloorRatio ? '#2D9F6F' : '#D64545', opacity: 0.25, transparent: true, label: '10% min' }) // 0.10
 
   return inst
 }
@@ -65,7 +66,7 @@ const violations: ViolationRule[] = [
     check: (p) => {
       const floorA = mm(p.roomWidth) * mm(p.roomDepth)
       const openA = mm(p.windowWidth) * mm(p.windowHeight) * num(p.numWindows)
-      return openA < floorA * 0.10
+      return openA < floorA * PD_1096.LIGHT_VENT.minWindowToFloorRatio // 0.10
     },
     message: 'Total window area below 10% of floor area minimum',
     codeCitation: 'PD 1096 IRR Rule VIII §803', severity: 'error',

@@ -12,34 +12,35 @@ import type {
   AnnotationDef,
   Preset,
 } from '@/features/3d-lab/types/templates'
+import { RA_9514 } from '@/features/3d-lab/config/constants'
 
 // ─── RA 9514 Constants ──────────────────────────────────────────────────────
 
 /** Travel distance max [no sprinkler, sprinklered] in meters */
 const TRAVEL_LIMITS: Record<string, [number, number]> = {
-  'Assembly/Business': [46, 61],
-  Mercantile: [30, 46],
-  Industrial: [31, 46],
-  Educational: [46, 61],
-  Residential: [46, 61],
+  'Assembly/Business': [RA_9514.TRAVEL_DISTANCE.noSprinkler.assembly, RA_9514.TRAVEL_DISTANCE.sprinklered.assembly], // [46, 61]
+  Mercantile: [RA_9514.TRAVEL_DISTANCE.noSprinkler.mercantile, RA_9514.TRAVEL_DISTANCE.sprinklered.mercantile], // [30, 46]
+  Industrial: [RA_9514.TRAVEL_DISTANCE.noSprinkler.industrial, RA_9514.TRAVEL_DISTANCE.sprinklered.industrial], // [31, 46]
+  Educational: [RA_9514.TRAVEL_DISTANCE.noSprinkler.educational, RA_9514.TRAVEL_DISTANCE.sprinklered.educational], // [46, 61]
+  Residential: [RA_9514.TRAVEL_DISTANCE.noSprinkler.residential, RA_9514.TRAVEL_DISTANCE.sprinklered.residential], // [46, 61]
 }
 
 /** Dead-end corridor max length in meters */
 const DEAD_END_LIMITS: Record<string, number> = {
-  'Assembly/Business': 6,
-  Mercantile: 15,
-  Industrial: 15,
-  Educational: 6,
-  Residential: 15,
+  'Assembly/Business': RA_9514.DEAD_END_MAX.assembly, // 6
+  Mercantile: RA_9514.DEAD_END_MAX.mercantile, // 15
+  Industrial: RA_9514.DEAD_END_MAX.industrial, // 15
+  Educational: RA_9514.DEAD_END_MAX.educational, // 6
+  Residential: RA_9514.DEAD_END_MAX.residential, // 15
 }
 
 /** Occupant Load Factor (sqm per person) */
 const OLF: Record<string, number> = {
   'Assembly/Business': 1.4, // Assembly less concentrated (default for mixed A/B)
-  Mercantile: 2.8, // Street floor
-  Industrial: 9.3,
-  Educational: 1.8, // Classrooms
-  Residential: 18.6,
+  Mercantile: RA_9514.OCCUPANT_LOAD_FACTOR.mercantile, // 2.8 — Street floor
+  Industrial: RA_9514.OCCUPANT_LOAD_FACTOR.industrial, // 9.3
+  Educational: 1.8, // Classrooms (site-specific approximation, RA_9514 uses 1.85)
+  Residential: RA_9514.OCCUPANT_LOAD_FACTOR.residential, // 18.6
 }
 
 // ─── Helpers ────────────────────────────────────────────────────────────────
@@ -69,9 +70,9 @@ function pathLength(points: Array<[number, number]>): number {
 
 /** Minimum exits required for given occupant count (RA 9514 IRR Rule 10) */
 function requiredExits(occupantCount: number): number {
-  if (occupantCount <= 500) return 2
-  if (occupantCount <= 1000) return 3
-  return 4
+  if (occupantCount <= RA_9514.REQUIRED_EXITS[0].maxOccupants) return RA_9514.REQUIRED_EXITS[0].minExits // ≤500 → 2
+  if (occupantCount <= RA_9514.REQUIRED_EXITS[1].maxOccupants) return RA_9514.REQUIRED_EXITS[1].minExits // ≤1000 → 3
+  return RA_9514.REQUIRED_EXITS[2].minExits // >1000 → 4
 }
 
 // ─── Floor Plan Layout (~30m x 20m commercial building) ─────────────────────

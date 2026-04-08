@@ -3,18 +3,19 @@
 // ─────────────────────────────────────────────────────────────────────────────
 
 import type { ParametricSceneConfig, ParameterDef, GeometryInstruction, ViolationRule, AnnotationDef, Preset } from '@/features/3d-lab/types/templates'
+import { RA_9514 } from '@/features/3d-lab/config/constants'
 
 function num(v: number | string | boolean): number { return typeof v === 'number' ? v : Number(v) }
 function str(v: number | string | boolean): string { return String(v) }
 
 // Occupant load factors (sqm per person) per RA 9514 IRR Rule 10 §1004
 const OCCUPANT_LOAD_FACTORS: Record<string, { factor: number; label: string; color: string }> = {
-  Assembly:    { factor: 0.65, label: 'Assembly',    color: '#7c3aed' },
-  Business:    { factor: 9.3,  label: 'Business',    color: '#3b82f6' },
-  Educational: { factor: 1.85, label: 'Educational', color: '#2D9F6F' },
-  Residential: { factor: 18.6, label: 'Residential', color: '#f97316' },
-  Mercantile:  { factor: 2.8,  label: 'Mercantile',  color: '#0891b2' },
-  Industrial:  { factor: 9.3,  label: 'Industrial',  color: '#78716c' },
+  Assembly:    { factor: RA_9514.OCCUPANT_LOAD_FACTOR.assembly,    label: 'Assembly',    color: '#7c3aed' }, // 0.65
+  Business:    { factor: RA_9514.OCCUPANT_LOAD_FACTOR.business,    label: 'Business',    color: '#3b82f6' }, // 9.3
+  Educational: { factor: RA_9514.OCCUPANT_LOAD_FACTOR.educational, label: 'Educational', color: '#2D9F6F' }, // 1.85
+  Residential: { factor: RA_9514.OCCUPANT_LOAD_FACTOR.residential, label: 'Residential', color: '#f97316' }, // 18.6
+  Mercantile:  { factor: RA_9514.OCCUPANT_LOAD_FACTOR.mercantile,  label: 'Mercantile',  color: '#0891b2' }, // 2.8
+  Industrial:  { factor: RA_9514.OCCUPANT_LOAD_FACTOR.industrial,  label: 'Industrial',  color: '#78716c' }, // 9.3
 }
 
 const parameters: ParameterDef[] = [

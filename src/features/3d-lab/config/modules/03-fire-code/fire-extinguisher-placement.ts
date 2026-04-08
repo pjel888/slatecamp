@@ -12,6 +12,7 @@ import type {
   AnnotationDef,
   Preset,
 } from '@/features/3d-lab/types/templates'
+import { RA_9514 } from '@/features/3d-lab/config/constants'
 
 // RA 9514 Fire Extinguisher requirements:
 // Max travel distance: 23m (Class A), 15m (Class B/C higher hazard)
@@ -128,7 +129,7 @@ const PARAMETERS: ParameterDef[] = [
     min: 5,
     max: 30,
     step: 0.5,
-    default: 23,
+    default: RA_9514.EXTINGUISHER_MAX_TRAVEL_M, // 23m
     unit: 'm',
     group: 'Placement',
   },
@@ -151,8 +152,8 @@ const VIOLATIONS: ViolationRule[] = [
     id: 'travel-distance-exceeded',
     field: 'maxTravelDistance',
     severity: 'error',
-    check: (p) => Number(p.maxTravelDistance) > 23,
-    message: 'Travel distance to extinguisher exceeds 23m maximum (Class A hazard)',
+    check: (p) => Number(p.maxTravelDistance) > RA_9514.EXTINGUISHER_MAX_TRAVEL_M, // 23m
+    message: `Travel distance to extinguisher exceeds ${RA_9514.EXTINGUISHER_MAX_TRAVEL_M}m maximum (Class A hazard)`,
     codeCitation: 'RA 9514 IRR Rule 10',
     position: () => [11, 1, 11],
   },
@@ -201,7 +202,7 @@ const ANNOTATIONS: AnnotationDef[] = [
 ]
 
 const PRESETS: Preset[] = [
-  { label: 'Light Hazard Office', values: { hazardClass: 'light', maxTravelDistance: 23, extinguisherRating: '2A10BC' } },
+  { label: 'Light Hazard Office', values: { hazardClass: 'light', maxTravelDistance: RA_9514.EXTINGUISHER_MAX_TRAVEL_M, extinguisherRating: '2A10BC' } }, // 23m
   { label: 'Retail (Ordinary)', values: { hazardClass: 'ordinary', maxTravelDistance: 20, extinguisherRating: '2A10BC' } },
   { label: 'Workshop (Extra)', values: { hazardClass: 'extra', maxTravelDistance: 15, extinguisherRating: '4A60BC' } },
   { label: 'Violation Demo', values: { hazardClass: 'extra', maxTravelDistance: 25, extinguisherRating: '1A5BC' } },

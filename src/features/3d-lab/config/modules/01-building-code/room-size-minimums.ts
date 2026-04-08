@@ -1,16 +1,25 @@
 // src/app/dashboard/3d-lab/_config/modules/room-size-minimums.ts
 // Room Size Minimums — PD 1096 Rule VIII §801
 import type { ParametricSceneConfig, ParameterDef, GeometryInstruction, ViolationRule, AnnotationDef, Preset } from '@/features/3d-lab/types/templates'
+import { PD_1096 } from '@/features/3d-lab/config/constants'
 
 function num(v: number | string | boolean): number { return typeof v === 'number' ? v : Number(v) }
 function mm(v: number | string | boolean): number { return num(v) / 1000 }
 function str(v: number | string | boolean): string { return String(v) }
 
 const ROOM_MINS: Record<string, { area: number; dim: number; label: string; color: string }> = {
-  'habitable':  { area: 6.0, dim: 2.0, label: 'Habitable Room', color: '#3b82f6' },
-  'kitchen':    { area: 3.0, dim: 1.5, label: 'Kitchen', color: '#f97316' },
-  'bathroom':   { area: 1.2, dim: 0.9, label: 'Bathroom/Toilet', color: '#0891b2' },
-  'laundry':    { area: 1.5, dim: 0.9, label: 'Laundry Room', color: '#2D9F6F' },
+  'habitable':  { area: PD_1096.ROOM_MIN_AREA.habitable, // 6.0 sqm
+                  dim: PD_1096.ROOM_MIN_DIMENSION.habitable, // 2.0 m
+                  label: 'Habitable Room', color: '#3b82f6' },
+  'kitchen':    { area: PD_1096.ROOM_MIN_AREA.kitchen, // 3.0 sqm
+                  dim: PD_1096.ROOM_MIN_DIMENSION.kitchen, // 1.5 m
+                  label: 'Kitchen', color: '#f97316' },
+  'bathroom':   { area: PD_1096.ROOM_MIN_AREA.bathroom, // 1.2 sqm
+                  dim: PD_1096.ROOM_MIN_DIMENSION.bathroom, // 0.9 m
+                  label: 'Bathroom/Toilet', color: '#0891b2' },
+  'laundry':    { area: PD_1096.ROOM_MIN_AREA.laundry, // 1.5 sqm
+                  dim: PD_1096.ROOM_MIN_DIMENSION.laundry, // 0.9 m
+                  label: 'Laundry Room', color: '#2D9F6F' },
 }
 
 const parameters: ParameterDef[] = [

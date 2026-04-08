@@ -1,6 +1,7 @@
 // src/features/3d-lab/config/modules/01-building-code/daylighting-room-depth.ts
 // Daylighting Room Depth — PD 1096 Rule VIII §803 (2.5× rule)
 import type { ParametricSceneConfig, ParameterDef, GeometryInstruction, ViolationRule, AnnotationDef, Preset } from '@/features/3d-lab/types/templates'
+import { PD_1096 } from '@/features/3d-lab/config/constants'
 
 function num(v: number | string | boolean): number { return typeof v === 'number' ? v : Number(v) }
 
@@ -19,13 +20,13 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   const winWidth = num(params.windowWidth)
   const ceilH = num(params.ceilingHeight)
 
-  const maxAllowedDepth = 2.5 * winHead
+  const maxAllowedDepth = PD_1096.LIGHT_VENT.maxRoomDepthToWindowHeadRatio * winHead // 2.5
   const floorArea = rWidth * rDepth
   const winArea = winWidth * winHead
   const winRatio = winArea / floorArea
 
   const depthViolated = rDepth > maxAllowedDepth
-  const winAreaViolated = winRatio < 0.10
+  const winAreaViolated = winRatio < PD_1096.LIGHT_VENT.minWindowToFloorRatio // 0.10
 
   const wallT = 0.15
   const inst: GeometryInstruction[] = []
@@ -82,7 +83,7 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
 const violations: ViolationRule[] = [
   {
     id: 'depth-exceeds-2-5x', field: 'roomDepth',
-    check: (p) => num(p.roomDepth) > 2.5 * num(p.windowHeadHeight),
+    check: (p) => num(p.roomDepth) > PD_1096.LIGHT_VENT.maxRoomDepthToWindowHeadRatio * num(p.windowHeadHeight), // 2.5
     message: 'Room depth exceeds 2.5× the window head height — far zone will not receive adequate natural daylighting',
     codeCitation: 'PD 1096 Rule VIII §803.1 — habitable rooms shall have natural light penetrating to 2.5× window head height from the window wall', severity: 'error',
     position: (p) => [0, 2, -(num(p.roomDepth) / 2) + 0.5],
@@ -92,7 +93,7 @@ const violations: ViolationRule[] = [
     check: (p) => {
       const floorArea = num(p.roomWidth) * num(p.roomDepth)
       const winArea = num(p.windowWidth) * num(p.windowHeadHeight)
-      return winArea / floorArea < 0.10
+      return winArea / floorArea < PD_1096.LIGHT_VENT.minWindowToFloorRatio // 0.10
     },
     message: 'Window area is below 10% of floor area — minimum light opening requirement not met for habitable rooms',
     codeCitation: 'PD 1096 Rule VIII §803.2 — window opening area shall not be less than 10% of floor area', severity: 'error',

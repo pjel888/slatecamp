@@ -12,6 +12,7 @@ import type {
   AnnotationDef,
   Preset,
 } from '@/features/3d-lab/types/templates'
+import { RA_9514 } from '@/features/3d-lab/config/constants'
 
 // RA 9514 travel distances:
 // Business/Assembly unsprinklered: 46m | sprinklered: 61m
@@ -138,10 +139,10 @@ const VIOLATIONS: ViolationRule[] = [
     field: 'sprinklered',
     severity: 'error',
     check: (p) => {
-      const limit = p.sprinklered ? 61 : 46
-      return p.occupancyType === 'mercantile' ? limit > (p.sprinklered ? 46 : 30) : false
+      const limit = p.sprinklered ? RA_9514.TRAVEL_DISTANCE.sprinklered.business : RA_9514.TRAVEL_DISTANCE.noSprinkler.business // 61 : 46
+      return p.occupancyType === 'mercantile' ? limit > (p.sprinklered ? RA_9514.TRAVEL_DISTANCE.sprinklered.mercantile : RA_9514.TRAVEL_DISTANCE.noSprinkler.mercantile) : false // 46 : 30
     },
-    message: 'Mercantile travel distance exceeds 30m unsprinklered (46m sprinklered)',
+    message: `Mercantile travel distance exceeds ${RA_9514.TRAVEL_DISTANCE.noSprinkler.mercantile}m unsprinklered (${RA_9514.TRAVEL_DISTANCE.sprinklered.mercantile}m sprinklered)`,
     codeCitation: 'RA 9514 IRR Rule 10 §1016',
     position: () => [12.5, 1, 21],
   },
