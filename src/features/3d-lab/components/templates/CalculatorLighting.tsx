@@ -1,19 +1,18 @@
-// src/app/dashboard/3d-lab/_components/CalculatorLighting.tsx
-// Minimal lighting for Calculator Suite scenes.
-// No shadows, uniform readability — calculators are diagrams, not arch-viz.
+// src/features/3d-lab/components/templates/CalculatorLighting.tsx
+//
+// @deprecated — Use <StudioLighting preset="flat" /> from
+//   src/features/3d-lab/components/rendering/StudioLighting.tsx
+//
+// The `flat` preset reproduces this component's values exactly:
+//   ambientLight intensity={0.6}, directionalLight intensity={0.8} from [5, 8, 3], no shadows.
+//
+// This file is retained for reference only and will be removed in a future cleanup pass.
 'use client'
 
+import { StudioLighting } from '../rendering/StudioLighting'
+
 /**
- * Lightweight two-light setup for Calculator Suite scenes.
- * Ambient at 0.6 provides base illumination.
- * Single directional at 0.8 from upper-right for subtle depth cues.
- * No shadow casting — keeps draw calls minimal.
+ * @deprecated Use <StudioLighting preset="flat" /> instead.
+ * Kept for backward compatibility only.
  */
-export function CalculatorLighting() {
-  return (
-    <>
-      <ambientLight intensity={0.6} />
-      <directionalLight position={[5, 8, 3]} intensity={0.8} />
-    </>
-  )
-}
+export const CalculatorLighting = () => <StudioLighting preset="flat" />

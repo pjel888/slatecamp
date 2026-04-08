@@ -5,6 +5,7 @@ import { useThree } from '@react-three/fiber'
 import { OrbitControls, OrthographicCamera } from '@react-three/drei'
 import * as THREE from 'three'
 import { StudioLighting } from './StudioLighting'
+import type { LightingPreset } from './StudioLighting'
 import { SceneBase } from './SceneBase'
 
 // ─── Types ───────────────────────────────────────────────────────────────────
@@ -30,6 +31,8 @@ export interface SceneConfigProps {
   showGround?: boolean
   /** Disable StudioLighting. Default: false */
   disableLighting?: boolean
+  /** Lighting preset passed to StudioLighting. Default: 'studio' */
+  lightingPreset?: LightingPreset
   /** Disable SceneBase (ground, fog, tone mapping). Default: false */
   disableSceneBase?: boolean
   /** Override canvas clear color. Default: undefined (uses SceneBase) */
@@ -118,6 +121,7 @@ export const SceneConfig = ({
   maxDistance = Infinity,
   showGround = true,
   disableLighting = false,
+  lightingPreset,
   disableSceneBase = false,
   clearColor,
   flat = false,
@@ -145,7 +149,7 @@ export const SceneConfig = ({
       />
 
       {/* Lighting */}
-      {!disableLighting && <StudioLighting />}
+      {!disableLighting && <StudioLighting preset={lightingPreset} />}
 
       {/* Scene environment (ground, fog, tone mapping) */}
       {!disableSceneBase && <SceneBase showGround={showGround} />}
