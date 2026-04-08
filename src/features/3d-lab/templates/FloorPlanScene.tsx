@@ -1,7 +1,9 @@
 'use client'
 
 // src/app/dashboard/3d-lab/_templates/FloorPlanScene.tsx
-import { useMemo } from 'react'
+import { useMemo, useRef } from 'react'
+import type { Group } from 'three'
+import { useDisposeOnUnmount } from '@/components/r3f/useDisposeOnUnmount'
 import { Line, Html } from '@react-three/drei'
 import { Warning } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
@@ -246,6 +248,9 @@ export function FloorPlanScene({
   deadEndZones,
   sprinklerRadius,
 }: FloorPlanSceneProps) {
+  const groupRef = useRef<Group>(null)
+  useDisposeOnUnmount(groupRef)
+
   // Register invalidate bridge
   useModuleInvalidate(useStore)
 
@@ -278,7 +283,7 @@ export function FloorPlanScene({
   )
 
   return (
-    <group scale={config.scale ?? 1}>
+    <group ref={groupRef} scale={config.scale ?? 1}>
       {/* Floor plan base plane */}
       <mesh
         position={[planW / 2, 0, planD / 2]}

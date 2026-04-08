@@ -2,6 +2,7 @@
 'use client'
 
 import { useRef, useEffect, useLayoutEffect } from 'react'
+import { useDisposeOnUnmount } from '@/components/r3f/useDisposeOnUnmount'
 import { useFrame, useThree } from '@react-three/fiber'
 import { Html } from '@react-three/drei'
 import * as THREE from 'three'
@@ -38,6 +39,9 @@ function lerp(current: number, target: number, factor: number, epsilon = 0.001):
 // ─── Scene ────────────────────────────────────────────────────────────────────
 
 export function NBCPScene() {
+  const groupRef = useRef<THREE.Group>(null)
+  useDisposeOnUnmount(groupRef)
+
   useNBCPInvalidateOnChange()
   const { invalidate } = useThree()
 
@@ -200,7 +204,7 @@ export function NBCPScene() {
   const showRightRrow     = inputs.lotType === LotType.END
 
   return (
-    <group>
+    <group ref={groupRef}>
       {/* ── RROW plane(s) ──────────────────────────────────────────────── */}
       <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0, lotDu / 2 + rrowWu / 2]}>
         <planeGeometry args={[lotWu + rrowWu, rrowWu]} />

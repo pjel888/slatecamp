@@ -2,6 +2,7 @@
 
 import { useRef, useMemo, useEffect } from 'react'
 import * as THREE from 'three'
+import { useDisposeOnUnmount } from '@/components/r3f/useDisposeOnUnmount'
 import { Line } from '@react-three/drei'
 import { useFlooringStore } from '@/app/calculators/_stores/flooringStore'
 import { CALC_MATERIALS } from '@/app/calculators/_lib/calculator-materials'
@@ -185,8 +186,11 @@ function PatternOrientationArrow() {
 // ─── FlooringScene (main export) ─────────────────────────────────────────────
 
 export function FlooringScene() {
+  const groupRef = useRef<THREE.Group>(null)
+  useDisposeOnUnmount(groupRef)
+
   return (
-    <group>
+    <group ref={groupRef}>
       <FloorPlane />
       <ExclusionZones />
       <TileGridInstanced />

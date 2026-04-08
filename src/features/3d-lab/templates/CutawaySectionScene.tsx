@@ -1,5 +1,6 @@
 // src/app/dashboard/3d-lab/_templates/CutawaySectionScene.tsx
 import { useMemo, useRef } from 'react'
+import { useDisposeOnUnmount } from '@/components/r3f/useDisposeOnUnmount'
 import { useFrame, useThree } from '@react-three/fiber'
 import { Html } from '@react-three/drei'
 import * as THREE from 'three'
@@ -103,6 +104,9 @@ interface CutawaySectionSceneProps {
 const FADE_ZONE = 0.08
 
 export function CutawaySectionScene({ config, useStore }: CutawaySectionSceneProps) {
+  const groupRef = useRef<THREE.Group>(null)
+  useDisposeOnUnmount(groupRef)
+
   useModuleInvalidate(useStore)
 
   const params = useStore((s) => s.params)
@@ -126,7 +130,7 @@ export function CutawaySectionScene({ config, useStore }: CutawaySectionScenePro
   }, [config.layers, cutPosition])
 
   return (
-    <group scale={config.scale ?? 1}>
+    <group ref={groupRef} scale={config.scale ?? 1}>
       {/* Layer meshes */}
       {layersWithOpacity.map(({ layer, opacity }) => (
         <LayerMesh key={layer.id} geometry={layer.geometry} targetOpacity={opacity} />

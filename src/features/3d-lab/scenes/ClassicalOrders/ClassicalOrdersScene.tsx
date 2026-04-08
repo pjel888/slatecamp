@@ -1,6 +1,8 @@
 'use client'
 
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useRef } from 'react'
+import type { Group } from 'three'
+import { useDisposeOnUnmount } from '@/components/r3f/useDisposeOnUnmount'
 import { Html } from '@react-three/drei'
 import { useThree } from '@react-three/fiber'
 import { useLabStore } from '@/features/3d-lab/stores/legacyLabStore'
@@ -112,6 +114,9 @@ interface Props {
 }
 
 export function ClassicalOrdersScene({ onPartClick }: Props) {
+  const groupRef = useRef<Group>(null)
+  useDisposeOnUnmount(groupRef)
+
   const { invalidate } = useThree()
   const [hoveredPart, setHoveredPartRaw] = useState<PartId | null>(null)
 
@@ -140,7 +145,7 @@ export function ClassicalOrdersScene({ onPartClick }: Props) {
   const e = (partId: PartId) => getEmissive(partId, hoveredPart, activeHotspotId, isQuizMode)
 
   return (
-    <group>
+    <group ref={groupRef}>
       {/* ── Ground plane ──────────────────────────────────────────────────── */}
       <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -0.005, 0]} receiveShadow>
         <planeGeometry args={[5, 5]} />

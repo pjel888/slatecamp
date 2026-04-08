@@ -1,5 +1,8 @@
 'use client'
 
+import { useRef } from 'react'
+import type { Group } from 'three'
+import { useDisposeOnUnmount } from '@/components/r3f/useDisposeOnUnmount'
 import { useDrywallStore } from '@/app/calculators/_stores/drywallStore'
 import { CALC_MATERIALS } from '@/app/calculators/_lib/calculator-materials'
 
@@ -207,8 +210,11 @@ function BoardPanels() {
 // ─── Main Export ─────────────────────────────────────────────────────────────
 
 export function DrywallScene() {
+  const groupRef = useRef<Group>(null)
+  useDisposeOnUnmount(groupRef)
+
   return (
-    <group>
+    <group ref={groupRef}>
       <StudArray />
       <TrackBars />
       <HeaderTracks />

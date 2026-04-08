@@ -1,5 +1,6 @@
 // src/app/dashboard/3d-lab/_templates/AnimatedSequenceScene.tsx
 import { useRef } from 'react'
+import { useDisposeOnUnmount } from '@/components/r3f/useDisposeOnUnmount'
 import { useFrame, useThree } from '@react-three/fiber'
 import { Html } from '@react-three/drei'
 import { useModuleInvalidate } from '@/features/3d-lab/hooks/useModuleInvalidate'
@@ -7,7 +8,7 @@ import { GeometryElement } from '@/features/3d-lab/components/templates/Geometry
 import type { AnimatedSequenceConfig, GeometryInstruction } from '@/features/3d-lab/types/templates'
 import type { ModuleStoreState } from '@/features/3d-lab/stores/createModuleStore'
 import type { StoreApi, UseBoundStore } from 'zustand'
-import type { Mesh, MeshStandardMaterial } from 'three'
+import type { Mesh, MeshStandardMaterial, Group } from 'three'
 import { MathUtils } from 'three'
 
 // ─── Fading Geometry Mesh ───────────────────────────────────────────────────
@@ -127,12 +128,15 @@ export function AnimatedSequenceScene({
   config,
   useStore,
 }: AnimatedSequenceSceneProps) {
+  const groupRef = useRef<Group>(null)
+  useDisposeOnUnmount(groupRef)
+
   useModuleInvalidate(useStore)
 
   const currentStep = useStore((s) => (s.params.currentStep as number) ?? 0)
 
   return (
-    <group scale={config.scale ?? 1}>
+    <group ref={groupRef} scale={config.scale ?? 1}>
       {/* Ground plane */}
       <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -0.005, 0]} receiveShadow>
         <planeGeometry args={[12, 12]} />

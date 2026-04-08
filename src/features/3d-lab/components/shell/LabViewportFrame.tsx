@@ -4,6 +4,7 @@ import React, { Suspense, useState, useCallback } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { PerformanceMonitor } from '@react-three/drei'
 import { SceneTunnel } from '@/features/3d-lab/components/GlobalCanvasPortal'
+import { WebGLErrorBoundary } from '@/components/r3f/WebGLErrorBoundary'
 
 interface LabViewportFrameProps {
   children?: React.ReactNode
@@ -34,25 +35,27 @@ export const LabViewportFrame = ({ children }: LabViewportFrameProps) => {
 
   return (
     <div className="absolute inset-0 z-0 overflow-hidden bg-[#F8F7F5]">
-      <Canvas
-        frameloop="demand"
-        shadows
-        dpr={[1, dpr]}
-        camera={{ position: [6, 6, 6], fov: 35 }}
-        gl={{ antialias: true, alpha: false, stencil: false, depth: true }}
-        style={{ pointerEvents: 'auto' }}
-      >
-        <PerformanceMonitor
-          flipflops={3}
-          onDecline={handleDecline}
-          onIncline={handleIncline}
-        />
+      <WebGLErrorBoundary>
+        <Canvas
+          frameloop="demand"
+          shadows
+          dpr={[1, dpr]}
+          camera={{ position: [6, 6, 6], fov: 35 }}
+          gl={{ antialias: true, alpha: false, stencil: false, depth: true }}
+          style={{ pointerEvents: 'auto' }}
+        >
+          <PerformanceMonitor
+            flipflops={3}
+            onDecline={handleDecline}
+            onIncline={handleIncline}
+          />
 
-        {/* Scene content portaled from CanvasWrapper instances via SceneTunnel */}
-        <Suspense fallback={null}>
-          <SceneTunnel.Out />
-        </Suspense>
-      </Canvas>
+          {/* Scene content portaled from CanvasWrapper instances via SceneTunnel */}
+          <Suspense fallback={null}>
+            <SceneTunnel.Out />
+          </Suspense>
+        </Canvas>
+      </WebGLErrorBoundary>
 
       {/* Overlay UI elements (hotspots, panels, etc.) */}
       <div className="relative z-10 pointer-events-none h-full w-full">

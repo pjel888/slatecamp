@@ -1,7 +1,9 @@
 'use client'
 
 // src/app/dashboard/3d-lab/_templates/ParametricSceneRenderer.tsx
-import { useMemo } from 'react'
+import { useMemo, useRef } from 'react'
+import type { Group } from 'three'
+import { useDisposeOnUnmount } from '@/components/r3f/useDisposeOnUnmount'
 import { Html } from '@react-three/drei'
 import { Warning } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
@@ -27,6 +29,9 @@ export function ParametricSceneRenderer({
   useStore,
   hideOverlays = false,
 }: ParametricSceneRendererProps) {
+  const groupRef = useRef<Group>(null)
+  useDisposeOnUnmount(groupRef)
+
   // Register invalidate bridge
   useModuleInvalidate(useStore)
 
@@ -55,7 +60,7 @@ export function ParametricSceneRenderer({
   )
 
   return (
-    <group scale={config.scale ?? 1}>
+    <group ref={groupRef} scale={config.scale ?? 1}>
       {/* Human scale reference — 1.7m silhouette (research: scale calibration) */}
       {config.showHumanScale && (
         <HumanSilhouette position={[-1.2, 0, 0]} opacity={0.4} />

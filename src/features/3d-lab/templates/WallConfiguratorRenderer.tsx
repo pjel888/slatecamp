@@ -4,7 +4,9 @@
 // R3F renderer for the Wall Configurator. Reads from useWallLabStore and builds
 // geometry instructions dynamically — independent of the old parameter system.
 
-import { useMemo, useEffect } from 'react'
+import { useMemo, useEffect, useRef } from 'react'
+import type { Group } from 'three'
+import { useDisposeOnUnmount } from '@/components/r3f/useDisposeOnUnmount'
 import { useThree } from '@react-three/fiber'
 import { InstructionMesh } from '@/features/3d-lab/components/templates/GeometryMesh'
 import { useWallLabStore } from '@/features/3d-lab/stores/useWallLabStore'
@@ -445,6 +447,9 @@ interface Props {
 }
 
 export function WallConfiguratorRenderer({ config }: Props) {
+  const groupRef = useRef<Group>(null)
+  useDisposeOnUnmount(groupRef)
+
   const invalidate      = useThree((s) => s.invalidate)
   const setInvalidateFn = useWallLabStore((s) => s.setInvalidateFn)
 
@@ -485,7 +490,7 @@ export function WallConfiguratorRenderer({ config }: Props) {
   )
 
   return (
-    <group>
+    <group ref={groupRef}>
       {geometryInstructions.map((inst) => (
         <InstructionMesh key={inst.id} inst={inst} />
       ))}

@@ -1,5 +1,6 @@
 // src/app/dashboard/3d-lab/_templates/ExplodedAssemblyScene.tsx
 import { useRef, useState, useCallback, useMemo } from 'react'
+import { useDisposeOnUnmount } from '@/components/r3f/useDisposeOnUnmount'
 import { useFrame, useThree } from '@react-three/fiber'
 import { Html } from '@react-three/drei'
 import { useModuleInvalidate } from '@/features/3d-lab/hooks/useModuleInvalidate'
@@ -179,6 +180,9 @@ export function ExplodedAssemblyScene({
   config,
   useStore,
 }: ExplodedAssemblySceneProps) {
+  const groupRef = useRef<Group>(null)
+  useDisposeOnUnmount(groupRef)
+
   // Register invalidate bridge
   useModuleInvalidate(useStore)
 
@@ -219,7 +223,7 @@ export function ExplodedAssemblyScene({
     const startX = -((totalOrders - 1) * spacing) / 2
 
     return (
-      <group scale={config.scale ?? 1}>
+      <group ref={groupRef} scale={config.scale ?? 1}>
         {/* Ground plane */}
         <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -0.005, 0]} receiveShadow>
           <planeGeometry args={[totalOrders * spacing + 2, 4]} />
@@ -243,7 +247,7 @@ export function ExplodedAssemblyScene({
 
   // Standard single-assembly mode
   return (
-    <group scale={config.scale ?? 1}>
+    <group ref={groupRef} scale={config.scale ?? 1}>
       <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -0.005, 0]} receiveShadow>
         <planeGeometry args={[5, 5]} />
         <meshStandardMaterial color="#f1f5f9" roughness={0.9} />

@@ -1,6 +1,8 @@
 'use client'
 
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
+import type { Group } from 'three'
+import { useDisposeOnUnmount } from '@/components/r3f/useDisposeOnUnmount'
 import { useThree } from '@react-three/fiber'
 import { Edges } from '@react-three/drei'
 import { usePaintStore } from '@/app/calculators/_stores/paintStore'
@@ -156,8 +158,11 @@ function CeilingSurface() {
 // ─── PaintScene (main export) ────────────────────────────────────────────────
 
 export function PaintScene() {
+  const groupRef = useRef<Group>(null)
+  useDisposeOnUnmount(groupRef)
+
   return (
-    <group>
+    <group ref={groupRef}>
       <ColorUpdater />
       <RoomShell />
       <OpeningCutouts />

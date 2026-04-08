@@ -2,6 +2,7 @@
 
 import { useRef, useMemo, useEffect } from 'react'
 import * as THREE from 'three'
+import { useDisposeOnUnmount } from '@/components/r3f/useDisposeOnUnmount'
 import { useCHBStore } from '@/app/calculators/_stores/chbStore'
 import { CALC_MATERIALS } from '@/app/calculators/_lib/calculator-materials'
 
@@ -247,8 +248,11 @@ function LintelsAboveOpenings() {
 // ─── CHBScene (main export) ─────────────────────────────────────────────────
 
 export function CHBScene() {
+  const groupRef = useRef<THREE.Group>(null)
+  useDisposeOnUnmount(groupRef)
+
   return (
-    <group>
+    <group ref={groupRef}>
       <CHBBlockWall />
       <CHBCutBlocks />
       <MortarGrid />

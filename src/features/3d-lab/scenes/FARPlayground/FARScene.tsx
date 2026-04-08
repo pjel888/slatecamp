@@ -1,6 +1,7 @@
 'use client'
 
 import { useRef, useEffect, useLayoutEffect } from 'react'
+import { useDisposeOnUnmount } from '@/components/r3f/useDisposeOnUnmount'
 import { useFrame, useThree } from '@react-three/fiber'
 import { Html } from '@react-three/drei'
 import * as THREE from 'three'
@@ -55,6 +56,9 @@ function computeScene(lotArea: number, far: number, bhl: number, setbackFront: n
  * Optimized with InstancedMesh for floor plates, property lines, and setbacks.
  */
 export function FARScene() {
+  const groupRef = useRef<THREE.Group>(null)
+  useDisposeOnUnmount(groupRef)
+
   useInvalidateOnChange()
   const { invalidate } = useThree()
 
@@ -174,7 +178,7 @@ export function FARScene() {
   })
 
   return (
-    <group>
+    <group ref={groupRef}>
       {/* ── Lot plate ──────────────────────────────────────────────────── */}
       <mesh rotation={[-Math.PI / 2, 0, 0]} receiveShadow>
         <planeGeometry args={[lotU, lotU]} />
