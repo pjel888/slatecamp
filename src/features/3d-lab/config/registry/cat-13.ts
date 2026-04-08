@@ -16,6 +16,9 @@ import { subdivisionLayoutPd957Config } from '@/features/3d-lab/config/modules/1
 import { waterCodeEasementsConfig } from '@/features/3d-lab/config/modules/13-planning/water-code-easements'
 import { zoningSetbackOverlayConfig } from '@/features/3d-lab/config/modules/13-planning/zoning-setback-overlay'
 import { erosionControlFenceConfig } from '@/features/3d-lab/config/modules/13-planning/erosion-control-fence'
+import { rowhouseClusterConfig } from '@/features/3d-lab/config/modules/13-planning/rowhouse-cluster'
+import { lotFrontageRequirementsConfig } from '@/features/3d-lab/config/modules/13-planning/lot-frontage-requirements'
+import { housingLotMinimumsConfig } from '@/features/3d-lab/config/modules/13-planning/housing-lot-minimums'
 
 export const cat13Modules: ModuleRegistryEntry[] = [
   {
@@ -157,6 +160,36 @@ export const cat13Modules: ModuleRegistryEntry[] = [
     launchPhase: 1,
     status: 'ready' as const,
     description: erosionControlFenceConfig.description,
+  },
+  {
+    id: rowhouseClusterConfig.id,
+    title: rowhouseClusterConfig.title,
+    templateType: 'parametric' as const,
+    subject: rowhouseClusterConfig.subject,
+    categoryId: 'PLANNING',
+    launchPhase: 2,
+    status: 'ready' as const,
+    description: rowhouseClusterConfig.description,
+  },
+  {
+    id: lotFrontageRequirementsConfig.id,
+    title: lotFrontageRequirementsConfig.title,
+    templateType: 'parametric' as const,
+    subject: lotFrontageRequirementsConfig.subject,
+    categoryId: 'PLANNING',
+    launchPhase: 2,
+    status: 'ready' as const,
+    description: lotFrontageRequirementsConfig.description,
+  },
+  {
+    id: housingLotMinimumsConfig.id,
+    title: housingLotMinimumsConfig.title,
+    templateType: 'parametric' as const,
+    subject: housingLotMinimumsConfig.subject,
+    categoryId: 'PLANNING',
+    launchPhase: 2,
+    status: 'ready' as const,
+    description: housingLotMinimumsConfig.description,
   },
 ]
 

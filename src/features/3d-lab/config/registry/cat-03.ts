@@ -21,6 +21,8 @@ import { smokePartitionRequirementsConfig } from '@/features/3d-lab/config/modul
 import { sprinklerLayoutConfig } from '@/features/3d-lab/config/modules/03-fire-code/sprinkler-layout'
 import { stairwellEnclosureConfig } from '@/features/3d-lab/config/modules/03-fire-code/stairwell-enclosure'
 import { standpipeClassesConfig } from '@/features/3d-lab/config/modules/03-fire-code/standpipe-classes'
+import { numberOfExitsConfig } from '@/features/3d-lab/config/modules/03-fire-code/number-of-exits'
+import { fireRatedBarrierConfig } from '@/features/3d-lab/config/modules/03-fire-code/fire-rated-barrier'
 
 export const cat03Modules: ModuleRegistryEntry[] = [
   {
@@ -212,6 +214,26 @@ export const cat03Modules: ModuleRegistryEntry[] = [
     launchPhase: 1,
     status: 'ready' as const,
     description: standpipeClassesConfig.description,
+  },
+  {
+    id: numberOfExitsConfig.id,
+    title: numberOfExitsConfig.title,
+    templateType: 'parametric' as const,
+    subject: numberOfExitsConfig.subject,
+    categoryId: 'FIRE_CODE',
+    launchPhase: 2,
+    status: 'ready' as const,
+    description: numberOfExitsConfig.description,
+  },
+  {
+    id: fireRatedBarrierConfig.id,
+    title: fireRatedBarrierConfig.title,
+    templateType: 'parametric' as const,
+    subject: fireRatedBarrierConfig.subject,
+    categoryId: 'FIRE_CODE',
+    launchPhase: 2,
+    status: 'ready' as const,
+    description: fireRatedBarrierConfig.description,
   },
 ]
 

@@ -15,6 +15,7 @@ import { rampAccessibleToiletConfig } from '@/features/3d-lab/config/modules/02-
 import { rampTactileWarningsConfig } from '@/features/3d-lab/config/modules/02-accessibility/ramp-tactile-warnings'
 import { tactileBlockTypesConfig } from '@/features/3d-lab/config/modules/02-accessibility/tactile-block-types'
 import { wheelchairManeuveringConfig } from '@/features/3d-lab/config/modules/02-accessibility/wheelchair-maneuvering'
+import { reachRangeSphereConfig } from '@/features/3d-lab/config/modules/02-accessibility/reach-range-sphere'
 
 export const cat02Modules: ModuleRegistryEntry[] = [
   {
@@ -146,6 +147,16 @@ export const cat02Modules: ModuleRegistryEntry[] = [
     launchPhase: 1,
     status: 'ready' as const,
     description: wheelchairManeuveringConfig.description,
+  },
+  {
+    id: reachRangeSphereConfig.id,
+    title: reachRangeSphereConfig.title,
+    templateType: 'parametric' as const,
+    subject: reachRangeSphereConfig.subject,
+    categoryId: 'ACCESSIBILITY',
+    launchPhase: 2,
+    status: 'ready' as const,
+    description: reachRangeSphereConfig.description,
   },
 ]
 

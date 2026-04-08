@@ -26,6 +26,7 @@ import { roomSizeMinimumsConfig } from '@/features/3d-lab/config/modules/01-buil
 import { skylightRequirementsConfig } from '@/features/3d-lab/config/modules/01-building-code/skylight-requirements'
 import { siteDevelopmentControlsConfig } from '@/features/3d-lab/config/modules/01-building-code/site-development-controls'
 import { ventShaftDimensionsConfig } from '@/features/3d-lab/config/modules/01-building-code/vent-shaft-dimensions'
+import { saleableAreaRatioConfig } from '@/features/3d-lab/config/modules/01-building-code/saleable-area-ratio'
 
 export const cat01Modules: ModuleRegistryEntry[] = [
   {
@@ -267,6 +268,16 @@ export const cat01Modules: ModuleRegistryEntry[] = [
     launchPhase: 1,
     status: 'ready' as const,
     description: ventShaftDimensionsConfig.description,
+  },
+  {
+    id: saleableAreaRatioConfig.id,
+    title: saleableAreaRatioConfig.title,
+    templateType: 'parametric' as const,
+    subject: saleableAreaRatioConfig.subject,
+    categoryId: 'BUILDING_CODE',
+    launchPhase: 2,
+    status: 'ready' as const,
+    description: saleableAreaRatioConfig.description,
   },
 ]
 

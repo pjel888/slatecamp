@@ -279,38 +279,40 @@ Files to MODIFY (removed ALL `<Html>` and `<Text>`):
 ---
 
 ### Wave 2: Parametric Powerhouses (9 modules — HIGH)
+**Status:** ✅ COMPLETE (2026-04-08)
 **Depends on:** P3 + Wave 1
 
-| # | Module | Status |
-|---|--------|--------|
-| 1 | MOD-101 Staircase | [ ] Build |
-| 2 | MOD-202 Ramp + Zocalo | [ ] Build |
-| 3 | MOD-104 Firewall | [ ] Build |
-| 4 | MOD-305 Fire Escape | [ ] Build |
-| 5 | MOD-205 Accessible Toilet | [ ] Build |
-| 6 | MOD-403 Rowhouse Cluster | [ ] Build |
-| 7 | MOD-109 Parking Layout | [ ] Build |
-| 8 | Exit Width Calculator | [ ] Build |
-| 9 | Number of Exits | [ ] Build |
+| # | Module | Config ID | Template | Status |
+|---|--------|-----------|----------|--------|
+| 1 | MOD-101 Staircase | `stairway-configurator` | parametric | [x] Verified |
+| 2 | MOD-202 Ramp + Zocalo | `ramp-gradient-building` + `ramp-accessible-toilet` | parametric | [x] Verified (2 configs cover ramp topic) |
+| 3 | MOD-104 Firewall | `firewall-construction` | parametric | [x] Verified |
+| 4 | MOD-305 Fire Escape | `fire-exit-layout` | floorplan | [x] Verified |
+| 5 | MOD-205 Accessible Toilet | `accessible-toilet-detailed` | parametric | [x] Verified |
+| 6 | MOD-403 Rowhouse Cluster | `rowhouse-cluster` | parametric | [x] BUILT (new) |
+| 7 | MOD-109 Parking Layout | `parking-layout` | floorplan | [x] Verified |
+| 8 | Exit Width Calculator | `exit-width-calculator` | parametric | [x] Verified |
+| 9 | Number of Exits | `number-of-exits` | parametric | [x] BUILT (new) |
 
 ---
 
 ### Wave 3: Floor Plan & Measurement (11 modules)
+**Status:** ✅ COMPLETE (2026-04-08)
 **Depends on:** Wave 2
 
-| # | Module | Status |
-|---|--------|--------|
-| 1 | MOD-302 Travel Distance | [ ] Build |
-| 2 | MOD-304 Sprinkler Coverage | [ ] Build |
-| 3 | MOD-201 Wheelchair Turning | [ ] Build |
-| 4 | MOD-209 Corridor Width | [ ] Build |
-| 5 | MOD-204 Reach Sphere | [ ] Build |
-| 6 | MOD-203 Tactile Paving | [ ] Build |
-| 7 | MOD-303 Fire Barrier | [ ] Build |
-| 8 | MOD-306 Smoke Enclosure | [ ] Build |
-| 9 | MOD-401 Saleable Ratio | [ ] Build |
-| 10 | MOD-406 Lot Frontage | [ ] Build |
-| 11 | Housing Lot Minimums | [ ] Build |
+| # | Module | Config ID | Template | Status |
+|---|--------|-----------|----------|--------|
+| 1 | MOD-302 Travel Distance | `fire-travel-distance` | floorplan | [x] Verified |
+| 2 | MOD-304 Sprinkler Coverage | `sprinkler-layout` | floorplan | [x] Verified |
+| 3 | MOD-201 Wheelchair Turning | `wheelchair-maneuvering` | parametric | [x] Verified |
+| 4 | MOD-209 Corridor Width | `corridor-width-calculator` + `accessible-corridor-widths` | parametric | [x] Verified (2 configs) |
+| 5 | MOD-204 Reach Sphere | `reach-range-sphere` | parametric | [x] BUILT (new) |
+| 6 | MOD-203 Tactile Paving | `tactile-block-types` + `ramp-tactile-warnings` | parametric | [x] Verified (2 configs) |
+| 7 | MOD-303 Fire Barrier | `fire-rated-barrier` | parametric | [x] BUILT (new) |
+| 8 | MOD-306 Smoke Enclosure | `smoke-control-systems` + `smoke-partition-requirements` | parametric | [x] Verified (2 configs) |
+| 9 | MOD-401 Saleable Ratio | `saleable-area-ratio` | parametric | [x] BUILT (new) |
+| 10 | MOD-406 Lot Frontage | `lot-frontage-requirements` | parametric | [x] BUILT (new) |
+| 11 | Housing Lot Minimums | `housing-lot-minimums` | parametric | [x] BUILT (new) |
 
 ---
 
