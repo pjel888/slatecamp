@@ -395,4 +395,15 @@ export interface ModuleRegistryEntry {
   aleQuestionCount?: number
   /** Which learning phases are built */
   supportedPhases?: Array<'guided' | 'faded' | 'sandbox' | 'challenge'>
+  // ── Asset Preloading Manifest ──────────────────────────────
+  /**
+   * Optional asset manifest for future preloading support.
+   * Paths are relative to /public/.
+   */
+  assets?: {
+    /** GLTF/GLB/DRACO model paths to preload */
+    models?: string[]
+    /** Texture image paths to preload */
+    textures?: string[]
+  }
 }
