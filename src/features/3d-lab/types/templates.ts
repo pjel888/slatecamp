@@ -149,10 +149,10 @@ export interface ParametricSceneConfig {
   // ── Research-Driven Additions ──────────────────────────────
   /** 2-sentence professional scenario shown at module open */
   contextScenario?: string
-  /** Estimated ALE questions per sitting covered by this module */
-  aleQuestionCount?: number
+  /** Estimated LEA questions per sitting covered by this module */
+  leaQuestionCount?: number
   /** e.g. 'code compliance', 'dimensional recall', 'visual identification' */
-  aleQuestionType?: string
+  leaQuestionType?: string
   /** Which learning phases are built */
   supportedPhases?: Array<'guided' | 'faded' | 'sandbox' | 'challenge'>
   /** Whether challenge mode (find violations) is available */
@@ -192,8 +192,8 @@ export interface ExplodedAssemblyConfig {
   scale?: number
   // ── Research-Driven Additions ──────────────────────────────
   contextScenario?: string
-  aleQuestionCount?: number
-  aleQuestionType?: string
+  leaQuestionCount?: number
+  leaQuestionType?: string
   supportedPhases?: Array<'guided' | 'faded' | 'sandbox' | 'challenge'>
   hasChallengeMode?: boolean
   showHumanScale?: boolean
@@ -255,8 +255,8 @@ export interface FloorPlanConfig {
   scale?: number
   // ── Research-Driven Additions ──────────────────────────────
   contextScenario?: string
-  aleQuestionCount?: number
-  aleQuestionType?: string
+  leaQuestionCount?: number
+  leaQuestionType?: string
   supportedPhases?: Array<'guided' | 'faded' | 'sandbox' | 'challenge'>
   hasChallengeMode?: boolean
 }
@@ -292,8 +292,8 @@ export interface CutawaySectionConfig {
   scale?: number
   // ── Research-Driven Additions ──────────────────────────────
   contextScenario?: string
-  aleQuestionCount?: number
-  aleQuestionType?: string
+  leaQuestionCount?: number
+  leaQuestionType?: string
   supportedPhases?: Array<'guided' | 'faded' | 'sandbox' | 'challenge'>
   hasChallengeMode?: boolean
 }
@@ -330,8 +330,8 @@ export interface AnimatedSequenceConfig {
   scale?: number
   // ── Research-Driven Additions ──────────────────────────────
   contextScenario?: string
-  aleQuestionCount?: number
-  aleQuestionType?: string
+  leaQuestionCount?: number
+  leaQuestionType?: string
   supportedPhases?: Array<'guided' | 'faded' | 'sandbox' | 'challenge'>
   hasChallengeMode?: boolean
 }
@@ -364,8 +364,8 @@ export interface CalculatorConfig {
   }
   // ── Research-Driven Additions ──────────────────────────────
   contextScenario?: string
-  aleQuestionCount?: number
-  aleQuestionType?: string
+  leaQuestionCount?: number
+  leaQuestionType?: string
 }
 
 // ─── Discriminated Union ─────────────────────────────────────────────────────
@@ -405,8 +405,8 @@ export interface ModuleRegistryEntry {
   // ── Research-Driven Additions ──────────────────────────────
   /** 2-sentence professional scenario shown at module open */
   contextScenario?: string
-  /** Estimated ALE questions per sitting */
-  aleQuestionCount?: number
+  /** Estimated LEA questions per sitting */
+  leaQuestionCount?: number
   /** Which learning phases are built */
   supportedPhases?: Array<'guided' | 'faded' | 'sandbox' | 'challenge'>
   // ── Asset Preloading Manifest ──────────────────────────────

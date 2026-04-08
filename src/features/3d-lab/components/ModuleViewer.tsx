@@ -153,7 +153,7 @@ export const ModuleViewer = ({ modelId, basePath }: ModuleViewerProps) => {
   const subject = config?.subject ?? entry?.subject ?? ''
 
   const hotspotCount = config?.hotspots?.length ?? 0
-  const totalALEQuestions = entry?.aleQuestionCount ?? 0
+  const totalALEQuestions = entry?.leaQuestionCount ?? 0
 
   // Construct a consistent ModuleConfig object for the context card
   const moduleMetadata: ModuleConfig = useMemo(() => ({

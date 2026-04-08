@@ -19,7 +19,7 @@ import { cn } from '@/lib/utils'
 interface ContentBarProps {
   title: string
   onTitleChange: (val: string) => void
-  aleId: string | null
+  leaId: string | null
   status: string
   onStatusChange: (val: string) => void
   difficultyLabel: string
@@ -60,7 +60,7 @@ const dispatchSave = () => {
 export const ContentBar = ({
   title,
   onTitleChange,
-  aleId,
+  leaId,
   status,
   onStatusChange,
   difficultyLabel,
@@ -113,10 +113,10 @@ export const ContentBar = ({
 
       <Divider />
 
-      {/* 5. ALE ID badge */}
-      {aleId ? (
+      {/* 5. LEA ID badge */}
+      {leaId ? (
         <span className="whitespace-nowrap font-mono text-[11px] text-text-tertiary" title="Linked Subject Node">
-          {aleId}
+          {leaId}
         </span>
       ) : (
         <span className="whitespace-nowrap rounded-sm bg-warning-50 px-2 py-0.5 text-[11px] font-medium text-warning">

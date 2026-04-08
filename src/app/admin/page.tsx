@@ -100,8 +100,8 @@ const AdminDashboardPage = async () => {
             </p>
             <p className="text-xs text-amber-700 mt-0.5">
               <span className="font-semibold">{coverageGap.name}</span>
-              {coverageGap.ale_id && (
-                <span className="font-[family-name:var(--font-dm-mono)] ml-1">({coverageGap.ale_id})</span>
+              {coverageGap.lea_id && (
+                <span className="font-[family-name:var(--font-dm-mono)] ml-1">({coverageGap.lea_id})</span>
               )}
               {' '}has <span className="font-semibold">{coverageGap.exam_frequency}</span> exam frequency but 0 questions.
             </p>
@@ -172,14 +172,14 @@ const AdminDashboardPage = async () => {
               
               // Color mapping based on subject code
               const colorClass = 
-                subject.ale_id?.includes('PRAC') ? 'bg-emerald-500' :
-                subject.ale_id?.includes('HIST') ? 'bg-amber-500' :
-                subject.ale_id?.includes('THEO') ? 'bg-sky-500' :
-                subject.ale_id?.includes('PLAN') ? 'bg-indigo-500' :
-                subject.ale_id?.includes('STRC') ? 'bg-rose-500' :
-                subject.ale_id?.includes('MATL') ? 'bg-violet-500' :
-                subject.ale_id?.includes('DSGN') ? 'bg-cyan-500' :
-                subject.ale_id?.includes('UTIL') ? 'bg-orange-500' :
+                subject.lea_id?.includes('PRAC') ? 'bg-emerald-500' :
+                subject.lea_id?.includes('HIST') ? 'bg-amber-500' :
+                subject.lea_id?.includes('THEO') ? 'bg-sky-500' :
+                subject.lea_id?.includes('PLAN') ? 'bg-indigo-500' :
+                subject.lea_id?.includes('STRC') ? 'bg-rose-500' :
+                subject.lea_id?.includes('MATL') ? 'bg-violet-500' :
+                subject.lea_id?.includes('DSGN') ? 'bg-cyan-500' :
+                subject.lea_id?.includes('UTIL') ? 'bg-orange-500' :
                 'bg-primary'
 
               return (
@@ -187,7 +187,7 @@ const AdminDashboardPage = async () => {
                   <div className="flex items-end justify-between gap-2">
                     <div className="min-w-0">
                       <p className="text-[11px] font-bold text-text-tertiary uppercase truncate">
-                        {subject.ale_id || 'Subject'}
+                        {subject.lea_id || 'Subject'}
                       </p>
                       <p className="text-xs font-semibold text-foreground truncate" title={subject.name}>
                         {subject.name}

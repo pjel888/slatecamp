@@ -193,7 +193,7 @@ const ExamOutcomeSurvey = ({ examBatch }: { examBatch: string }) => {
   return (
     <Card className="p-6 space-y-4">
       <p className="text-sm font-medium text-foreground">
-        Did you take the {examBatch} ALE?
+        Did you take the {examBatch} LEA?
       </p>
 
       <div className="space-y-2">

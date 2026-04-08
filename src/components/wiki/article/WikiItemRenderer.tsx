@@ -8,8 +8,8 @@ export interface WikiItem {
 
 interface WikiItemRendererProps {
   items: WikiItem[]
-  /** ale_id of the parent node — used for the 3D Lab CTA link */
-  aleId?: string | null
+  /** lea_id of the parent node — used for the 3D Lab CTA link */
+  leaId?: string | null
   /** If true, renders "See this in the 3D Lab →" CTA above the items */
   threeDLabLinked?: boolean
 }
@@ -19,16 +19,16 @@ interface WikiItemRendererProps {
  * Each item has a `type` that controls its visual treatment.
  * WARNING items use full Warm Red background — must be impossible to miss.
  */
-export const WikiItemRenderer = ({ items, aleId, threeDLabLinked }: WikiItemRendererProps) => {
+export const WikiItemRenderer = ({ items, leaId, threeDLabLinked }: WikiItemRendererProps) => {
   if (!items || items.length === 0) return null
 
   return (
     <div className="space-y-3">
       {/* 3D Lab CTA — shown at the TOP of article content when three_d_lab_linked = true */}
-      {threeDLabLinked && aleId && (
+      {threeDLabLinked && leaId && (
         <div className="mb-5">
           <Link
-            href={`/dashboard/3d-lab?node=${aleId}`}
+            href={`/dashboard/3d-lab?node=${leaId}`}
             className="inline-flex items-center gap-2 bg-primary hover:bg-primary-700 text-white text-sm font-semibold px-4 py-2 rounded-sm transition-colors duration-150 ease-out"
           >
             See this in the 3D Lab

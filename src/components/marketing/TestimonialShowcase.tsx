@@ -10,7 +10,7 @@ const TESTIMONIALS = [
   },
   {
     quote:
-      'The Readiness Score predicted my ALE passing rate with terrifying accuracy. I walked into the exam room with zero panic.',
+      'The Readiness Score predicted my LEA passing rate with terrifying accuracy. I walked into the exam room with zero panic.',
     name: 'Juan D.',
     title: 'Newly Licensed Architect',
     rating: 5,
@@ -19,7 +19,7 @@ const TESTIMONIALS = [
     quote:
       'I abandoned my physical flashcards entirely. The Spaced Repetition engine on this platform is unmatched.',
     name: 'Carlos R.',
-    title: 'ALE Topnotcher',
+    title: 'LEA Topnotcher',
     rating: 5,
   },
 ]

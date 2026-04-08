@@ -24,14 +24,14 @@ export async function getSubjectMasteryData(): Promise<SubjectMastery[]> {
     if (!stats?.current_discipline_id) return []
 
     // 2. Fetch all taxonomy nodes for this discipline to build the tree map
-    // Exclude ALE-LAWS (cross-ref only) and deprecated v1 nodes
+    // Exclude LEA-LAWS (cross-ref only) and deprecated v1 nodes
     const { data: taxonomyNodes } = await supabase
       .from('taxonomy_tree')
       .select('node_id, parent_id, level, name')
       .eq('discipline_id', stats.current_discipline_id)
       .eq('is_cross_ref_only', false)
       .is('deprecated_at', null)
-      .not('ale_id', 'is', null)
+      .not('lea_id', 'is', null)
 
     if (!taxonomyNodes) return []
 

@@ -252,8 +252,8 @@ export type Database = {
           sequence_number: number
           session_id: string
           signature: string
-          token_id?: string
-          trust_level?: string
+          token_id: string
+          trust_level: string
           verified_at?: string | null
         }
         Update: {
@@ -271,75 +271,7 @@ export type Database = {
           trust_level?: string
           verified_at?: string | null
         }
-        Relationships: [
-          {
-            foreignKeyName: "cage_binding_tokens_interaction_id_fkey"
-            columns: ["interaction_id"]
-            isOneToOne: false
-            referencedRelation: "user_interactions"
-            referencedColumns: ["interaction_id"]
-          },
-        ]
-      }
-      calibration_snapshots: {
-        Row: {
-          brier_score: number
-          calibration_score: number
-          confident_accuracy: number | null
-          created_at: string
-          guessing_accuracy: number | null
-          id: string
-          overconfidence_index: number | null
-          sample_size: number
-          underconfidence_index: number | null
-          user_id: string
-          window_end: string
-          window_start: string
-        }
-        Insert: {
-          brier_score: number
-          calibration_score: number
-          confident_accuracy?: number | null
-          created_at?: string
-          guessing_accuracy?: number | null
-          id?: string
-          overconfidence_index?: number | null
-          sample_size: number
-          underconfidence_index?: number | null
-          user_id: string
-          window_end: string
-          window_start: string
-        }
-        Update: {
-          brier_score?: number
-          calibration_score?: number
-          confident_accuracy?: number | null
-          created_at?: string
-          guessing_accuracy?: number | null
-          id?: string
-          overconfidence_index?: number | null
-          sample_size?: number
-          underconfidence_index?: number | null
-          user_id?: string
-          window_end?: string
-          window_start?: string
-        }
-        Relationships: [
-          {
-            foreignKeyName: "calibration_snapshots_user_id_fkey"
-            columns: ["user_id"]
-            isOneToOne: false
-            referencedRelation: "profiles"
-            referencedColumns: ["id"]
-          },
-          {
-            foreignKeyName: "calibration_snapshots_user_id_fkey"
-            columns: ["user_id"]
-            isOneToOne: false
-            referencedRelation: "user_capabilities"
-            referencedColumns: ["user_id"]
-          },
-        ]
+        Relationships: []
       }
       camp_trails: {
         Row: {
@@ -455,7 +387,22 @@ export type Database = {
           testimonial_id?: string
           user_id?: string | null
         }
-        Relationships: []
+        Relationships: [
+          {
+            foreignKeyName: "campfire_testimonials_user_id_fkey"
+            columns: ["user_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "campfire_testimonials_user_id_fkey"
+            columns: ["user_id"]
+            isOneToOne: false
+            referencedRelation: "user_capabilities"
+            referencedColumns: ["user_id"]
+          },
+        ]
       }
       ceo_cash_balance_entries: {
         Row: {
@@ -501,7 +448,7 @@ export type Database = {
           amount_php: number
           category: string
           created_at?: string
-          created_by: string
+          created_by?: string
           description?: string | null
           entry_date: string
           entry_type: Database["public"]["Enums"]["financial_entry_type"]
@@ -535,7 +482,7 @@ export type Database = {
         }
         Insert: {
           created_at?: string
-          created_by: string
+          created_by?: string
           entered_at?: string
           exit_conditions_met?: Json
           gate_number: number
@@ -593,13 +540,28 @@ export type Database = {
           updated_at?: string
           user_id?: string | null
         }
-        Relationships: []
+        Relationships: [
+          {
+            foreignKeyName: "ceo_team_members_user_id_fkey"
+            columns: ["user_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "ceo_team_members_user_id_fkey"
+            columns: ["user_id"]
+            isOneToOne: false
+            referencedRelation: "user_capabilities"
+            referencedColumns: ["user_id"]
+          },
+        ]
       }
       code_updates: {
         Row: {
-          ale_id: string | null
           effective_date: string | null
-          is_ale_testable: boolean
+          is_lea_testable: boolean
+          lea_id: string | null
           new_value: string | null
           previous_value: string | null
           published_at: string
@@ -607,9 +569,9 @@ export type Database = {
           update_id: string
         }
         Insert: {
-          ale_id?: string | null
           effective_date?: string | null
-          is_ale_testable?: boolean
+          is_lea_testable?: boolean
+          lea_id?: string | null
           new_value?: string | null
           previous_value?: string | null
           published_at?: string
@@ -617,68 +579,16 @@ export type Database = {
           update_id?: string
         }
         Update: {
-          ale_id?: string | null
           effective_date?: string | null
-          is_ale_testable?: boolean
+          is_lea_testable?: boolean
+          lea_id?: string | null
           new_value?: string | null
           previous_value?: string | null
           published_at?: string
           summary?: string
           update_id?: string
         }
-        Relationships: [
-          {
-            foreignKeyName: "code_updates_ale_id_fkey"
-            columns: ["ale_id"]
-            isOneToOne: false
-            referencedRelation: "taxonomy_tree"
-            referencedColumns: ["ale_id"]
-          },
-        ]
-      }
-      cognitive_state_indicators: {
-        Row: {
-          anomalous_behavior_likelihood: number
-          cognitive_load_proxy: number
-          created_at: string | null
-          decision_confidence: string
-          hesitancy_index: number
-          identity_consistency_score: number | null
-          indicator_id: string
-          interaction_id: string
-          model_version: string | null
-        }
-        Insert: {
-          anomalous_behavior_likelihood: number
-          cognitive_load_proxy: number
-          created_at?: string | null
-          decision_confidence: string
-          hesitancy_index: number
-          identity_consistency_score?: number | null
-          indicator_id?: string
-          interaction_id: string
-          model_version?: string | null
-        }
-        Update: {
-          anomalous_behavior_likelihood?: number
-          cognitive_load_proxy?: number
-          created_at?: string | null
-          decision_confidence?: string
-          hesitancy_index?: number
-          identity_consistency_score?: number | null
-          indicator_id?: string
-          interaction_id?: string
-          model_version?: string | null
-        }
-        Relationships: [
-          {
-            foreignKeyName: "cognitive_state_indicators_interaction_id_fkey"
-            columns: ["interaction_id"]
-            isOneToOne: false
-            referencedRelation: "user_interactions"
-            referencedColumns: ["interaction_id"]
-          },
-        ]
+        Relationships: []
       }
       confusion_pairs: {
         Row: {
@@ -709,6 +619,13 @@ export type Database = {
           topic_b?: string
         }
         Relationships: [
+          {
+            foreignKeyName: "confusion_pairs_disambiguation_article_id_fkey"
+            columns: ["disambiguation_article_id"]
+            isOneToOne: false
+            referencedRelation: "wiki_articles"
+            referencedColumns: ["article_id"]
+          },
           {
             foreignKeyName: "confusion_pairs_topic_a_fkey"
             columns: ["topic_a"]
@@ -759,22 +676,7 @@ export type Database = {
           started_at?: string | null
           user_id?: string
         }
-        Relationships: [
-          {
-            foreignKeyName: "daily_doses_user_id_fkey"
-            columns: ["user_id"]
-            isOneToOne: false
-            referencedRelation: "profiles"
-            referencedColumns: ["id"]
-          },
-          {
-            foreignKeyName: "daily_doses_user_id_fkey"
-            columns: ["user_id"]
-            isOneToOne: false
-            referencedRelation: "user_capabilities"
-            referencedColumns: ["user_id"]
-          },
-        ]
+        Relationships: []
       }
       design_problem_sessions: {
         Row: {
@@ -874,7 +776,6 @@ export type Database = {
           rationale: Json | null
           scenario_id: string
           solution_steps: string[]
-          type: Database["public"]["Enums"]["design_question_type"]
           updated_at: string
           wiki_ref: string | null
         }
@@ -892,7 +793,6 @@ export type Database = {
           rationale?: Json | null
           scenario_id: string
           solution_steps?: string[]
-          type: Database["public"]["Enums"]["design_question_type"]
           updated_at?: string
           wiki_ref?: string | null
         }
@@ -910,11 +810,18 @@ export type Database = {
           rationale?: Json | null
           scenario_id?: string
           solution_steps?: string[]
-          type?: Database["public"]["Enums"]["design_question_type"]
           updated_at?: string
           wiki_ref?: string | null
         }
-        Relationships: []
+        Relationships: [
+          {
+            foreignKeyName: "design_questions_scenario_id_fkey"
+            columns: ["scenario_id"]
+            isOneToOne: false
+            referencedRelation: "design_problems"
+            referencedColumns: ["problem_id"]
+          },
+        ]
       }
       design_scenario_interactions: {
         Row: {
@@ -958,20 +865,6 @@ export type Database = {
         }
         Relationships: [
           {
-            foreignKeyName: "design_scenario_interactions_question_id_fkey"
-            columns: ["question_id"]
-            isOneToOne: false
-            referencedRelation: "design_scenario_questions"
-            referencedColumns: ["question_id"]
-          },
-          {
-            foreignKeyName: "design_scenario_interactions_scenario_id_fkey"
-            columns: ["scenario_id"]
-            isOneToOne: false
-            referencedRelation: "design_scenarios"
-            referencedColumns: ["scenario_id"]
-          },
-          {
             foreignKeyName: "design_scenario_interactions_session_id_fkey"
             columns: ["session_id"]
             isOneToOne: false
@@ -1002,8 +895,8 @@ export type Database = {
           created_at?: string | null
           difficulty_rating?: number | null
           discrimination_rating?: number | null
-          options?: Json
-          question_id?: string
+          options: Json
+          question_id: string
           question_number: number
           question_stem: string
           question_type?: string | null
@@ -1092,9 +985,9 @@ export type Database = {
           created_at: string | null
           difficulty: string
           hidden_traps: Json | null
-          program: Json
+          program: Json | null
           scenario_id: string
-          site_data: Json
+          site_data: Json | null
           time_limit_minutes: number | null
           title: string
           trap_count: number | null
@@ -1107,9 +1000,9 @@ export type Database = {
           created_at?: string | null
           difficulty: string
           hidden_traps?: Json | null
-          program?: Json
+          program?: Json | null
           scenario_id: string
-          site_data?: Json
+          site_data?: Json | null
           time_limit_minutes?: number | null
           title: string
           trap_count?: number | null
@@ -1120,11 +1013,11 @@ export type Database = {
           code_references?: string[] | null
           computation_sheet?: Json | null
           created_at?: string | null
-          difficulty?: string
+          difficulty: string
           hidden_traps?: Json | null
-          program?: Json
+          program?: Json | null
           scenario_id?: string
-          site_data?: Json
+          site_data?: Json | null
           time_limit_minutes?: number | null
           title?: string
           trap_count?: number | null
@@ -1228,7 +1121,15 @@ export type Database = {
           user_id?: string | null
           verified?: boolean | null
         }
-        Relationships: []
+        Relationships: [
+          {
+            foreignKeyName: "exam_outcomes_discipline_id_fkey"
+            columns: ["discipline_id"]
+            isOneToOne: false
+            referencedRelation: "disciplines"
+            referencedColumns: ["discipline_id"]
+          },
+        ]
       }
       feature_flags: {
         Row: {
@@ -1266,90 +1167,13 @@ export type Database = {
         }
         Relationships: []
       }
-      interaction_signal_traces: {
-        Row: {
-          capture_rate_hz: number | null
-          created_at: string | null
-          device_sensors_available: boolean | null
-          duration_ms: number
-          event_count: number
-          events: Json
-          interaction_id: string
-          trace_id: string
-        }
-        Insert: {
-          capture_rate_hz?: number | null
-          created_at?: string | null
-          device_sensors_available?: boolean | null
-          duration_ms: number
-          event_count: number
-          events: Json
-          interaction_id: string
-          trace_id?: string
-        }
-        Update: {
-          capture_rate_hz?: number | null
-          created_at?: string | null
-          device_sensors_available?: boolean | null
-          duration_ms?: number
-          event_count?: number
-          events?: Json
-          interaction_id?: string
-          trace_id?: string
-        }
-        Relationships: [
-          {
-            foreignKeyName: "interaction_signal_traces_interaction_id_fkey"
-            columns: ["interaction_id"]
-            isOneToOne: false
-            referencedRelation: "user_interactions"
-            referencedColumns: ["interaction_id"]
-          },
-        ]
-      }
-      issued_nonces: {
-        Row: {
-          consumed: boolean | null
-          consumed_at: string | null
-          expires_at: string
-          issued_at: string | null
-          nonce: string
-          nonce_id: string
-          question_id: string
-          session_id: string
-          user_id: string
-        }
-        Insert: {
-          consumed?: boolean | null
-          consumed_at?: string | null
-          expires_at: string
-          issued_at?: string | null
-          nonce: string
-          nonce_id?: string
-          question_id: string
-          session_id: string
-          user_id: string
-        }
-        Update: {
-          consumed?: boolean | null
-          consumed_at?: string | null
-          expires_at?: string
-          issued_at?: string | null
-          nonce?: string
-          nonce_id?: string
-          question_id?: string
-          session_id?: string
-          user_id?: string
-        }
-        Relationships: []
-      }
       models_3d: {
         Row: {
-          ale_question_count: number | null
-          ale_question_type: string | null
           context_scenario: string | null
           created_at: string
-          has_challenge_mode: boolean | null
+          has_challenge_mode: boolean
+          lea_question_count: number | null
+          lea_question_type: string | null
           metadata: Json | null
           model_id: string
           name: string
@@ -1363,11 +1187,11 @@ export type Database = {
           url: string
         }
         Insert: {
-          ale_question_count?: number | null
-          ale_question_type?: string | null
           context_scenario?: string | null
           created_at?: string
-          has_challenge_mode?: boolean | null
+          has_challenge_mode?: boolean
+          lea_question_count?: number | null
+          lea_question_type?: string | null
           metadata?: Json | null
           model_id?: string
           name: string
@@ -1381,11 +1205,11 @@ export type Database = {
           url: string
         }
         Update: {
-          ale_question_count?: number | null
-          ale_question_type?: string | null
           context_scenario?: string | null
           created_at?: string
-          has_challenge_mode?: boolean | null
+          has_challenge_mode?: boolean
+          lea_question_count?: number | null
+          lea_question_type?: string | null
           metadata?: Json | null
           model_id?: string
           name?: string
@@ -1779,18 +1603,17 @@ export type Database = {
       profiles: {
         Row: {
           account_mode: string | null
-          ale_result: string | null
           avatar_url: string | null
           comp_exam_date: string | null
           comp_exam_scores: Json | null
           created_at: string | null
           dae_contexts_updated_at: string | null
           dae_work_contexts: string[] | null
-          discipline_id: string | null
           display_name: string | null
           enrolled_review_center: string | null
           full_name: string | null
           id: string
+          lea_result: string | null
           oath_taking_date: string | null
           onboarding_completed_at: string | null
           preferred_study_window: string | null
@@ -1806,18 +1629,17 @@ export type Database = {
         }
         Insert: {
           account_mode?: string | null
-          ale_result?: string | null
           avatar_url?: string | null
           comp_exam_date?: string | null
           comp_exam_scores?: Json | null
           created_at?: string | null
           dae_contexts_updated_at?: string | null
           dae_work_contexts?: string[] | null
-          discipline_id?: string | null
           display_name?: string | null
           enrolled_review_center?: string | null
           full_name?: string | null
           id: string
+          lea_result?: string | null
           oath_taking_date?: string | null
           onboarding_completed_at?: string | null
           preferred_study_window?: string | null
@@ -1833,18 +1655,17 @@ export type Database = {
         }
         Update: {
           account_mode?: string | null
-          ale_result?: string | null
           avatar_url?: string | null
           comp_exam_date?: string | null
           comp_exam_scores?: Json | null
           created_at?: string | null
           dae_contexts_updated_at?: string | null
           dae_work_contexts?: string[] | null
-          discipline_id?: string | null
           display_name?: string | null
           enrolled_review_center?: string | null
           full_name?: string | null
           id?: string
+          lea_result?: string | null
           oath_taking_date?: string | null
           onboarding_completed_at?: string | null
           preferred_study_window?: string | null
@@ -1858,15 +1679,7 @@ export type Database = {
           updated_at?: string | null
           user_type?: string | null
         }
-        Relationships: [
-          {
-            foreignKeyName: "profiles_discipline_id_fkey"
-            columns: ["discipline_id"]
-            isOneToOne: false
-            referencedRelation: "disciplines"
-            referencedColumns: ["discipline_id"]
-          },
-        ]
+        Relationships: []
       }
       questions: {
         Row: {
@@ -1878,7 +1691,6 @@ export type Database = {
           correct_option_id: string
           correct_value: number | null
           created_at: string
-          created_by: string | null
           difficulty: number | null
           difficulty_rating: number | null
           discrimination_rating: number | null
@@ -1902,7 +1714,6 @@ export type Database = {
           text: string
           topic_id: string
           updated_at: string
-          updated_by: string | null
           value_tolerance: number | null
         }
         Insert: {
@@ -1914,7 +1725,6 @@ export type Database = {
           correct_option_id: string
           correct_value?: number | null
           created_at?: string
-          created_by?: string | null
           difficulty?: number | null
           difficulty_rating?: number | null
           discrimination_rating?: number | null
@@ -1929,7 +1739,7 @@ export type Database = {
           normalization_log?: Json | null
           normalization_run_at?: string | null
           normalization_status?: string | null
-          options?: Json
+          options: Json
           practice_context?: string[] | null
           prompt_image_url?: string | null
           question_id?: string
@@ -1938,7 +1748,6 @@ export type Database = {
           text: string
           topic_id: string
           updated_at?: string
-          updated_by?: string | null
           value_tolerance?: number | null
         }
         Update: {
@@ -1950,7 +1759,6 @@ export type Database = {
           correct_option_id?: string
           correct_value?: number | null
           created_at?: string
-          created_by?: string | null
           difficulty?: number | null
           difficulty_rating?: number | null
           discrimination_rating?: number | null
@@ -1974,7 +1782,6 @@ export type Database = {
           text?: string
           topic_id?: string
           updated_at?: string
-          updated_by?: string | null
           value_tolerance?: number | null
         }
         Relationships: [
@@ -1997,10 +1804,8 @@ export type Database = {
       quiz_sessions: {
         Row: {
           accuracy_by_block: Json | null
-          answered_count: number
           completed_at: string | null
           config: Json
-          correct_count: number
           current_question_index: number
           discipline_id: string | null
           is_endurance_session: boolean | null
@@ -2019,10 +1824,8 @@ export type Database = {
         }
         Insert: {
           accuracy_by_block?: Json | null
-          answered_count?: number
           completed_at?: string | null
           config?: Json
-          correct_count?: number
           current_question_index?: number
           discipline_id?: string | null
           is_endurance_session?: boolean | null
@@ -2041,10 +1844,8 @@ export type Database = {
         }
         Update: {
           accuracy_by_block?: Json | null
-          answered_count?: number
           completed_at?: string | null
           config?: Json
-          correct_count?: number
           current_question_index?: number
           discipline_id?: string | null
           is_endurance_session?: boolean | null
@@ -2112,72 +1913,6 @@ export type Database = {
           },
         ]
       }
-      saved_session_configs: {
-        Row: {
-          config: Json
-          created_at: string
-          id: string
-          last_used_at: string | null
-          name: string
-          updated_at: string
-          usage_count: number
-          user_id: string
-        }
-        Insert: {
-          config: Json
-          created_at?: string
-          id?: string
-          last_used_at?: string | null
-          name?: string
-          updated_at?: string
-          usage_count?: number
-          user_id: string
-        }
-        Update: {
-          config?: Json
-          created_at?: string
-          id?: string
-          last_used_at?: string | null
-          name?: string
-          updated_at?: string
-          usage_count?: number
-          user_id?: string
-        }
-        Relationships: []
-      }
-      session_behavioral_summaries: {
-        Row: {
-          created_at: string | null
-          integrity_flag_counts: Json | null
-          item_confidence_levels: Json
-          session_consistency_score: number | null
-          session_engagement_score: number | null
-          session_id: string
-          summary_id: string
-          user_id: string
-        }
-        Insert: {
-          created_at?: string | null
-          integrity_flag_counts?: Json | null
-          item_confidence_levels: Json
-          session_consistency_score?: number | null
-          session_engagement_score?: number | null
-          session_id: string
-          summary_id?: string
-          user_id: string
-        }
-        Update: {
-          created_at?: string | null
-          integrity_flag_counts?: Json | null
-          item_confidence_levels?: Json
-          session_consistency_score?: number | null
-          session_engagement_score?: number | null
-          session_id?: string
-          summary_id?: string
-          user_id?: string
-        }
-        Relationships: []
-      }
       session_predictions: {
         Row: {
           actual_score: number | null
@@ -2215,80 +1950,6 @@ export type Database = {
         Relationships: [
           {
             foreignKeyName: "session_predictions_session_id_fkey"
-            columns: ["session_id"]
-            isOneToOne: false
-            referencedRelation: "quiz_sessions"
-            referencedColumns: ["session_id"]
-          },
-          {
-            foreignKeyName: "session_predictions_user_id_fkey"
-            columns: ["user_id"]
-            isOneToOne: false
-            referencedRelation: "profiles"
-            referencedColumns: ["id"]
-          },
-          {
-            foreignKeyName: "session_predictions_user_id_fkey"
-            columns: ["user_id"]
-            isOneToOne: false
-            referencedRelation: "user_capabilities"
-            referencedColumns: ["user_id"]
-          },
-        ]
-      }
-      session_questions: {
-        Row: {
-          answered_at: string | null
-          confidence_level: number | null
-          created_at: string
-          id: string
-          is_correct: boolean | null
-          is_flagged: boolean
-          is_skipped: boolean
-          position: number
-          question_id: string
-          session_id: string
-          time_spent_ms: number | null
-          user_answer_id: string | null
-        }
-        Insert: {
-          answered_at?: string | null
-          confidence_level?: number | null
-          created_at?: string
-          id?: string
-          is_correct?: boolean | null
-          is_flagged?: boolean
-          is_skipped?: boolean
-          position: number
-          question_id: string
-          session_id: string
-          time_spent_ms?: number | null
-          user_answer_id?: string | null
-        }
-        Update: {
-          answered_at?: string | null
-          confidence_level?: number | null
-          created_at?: string
-          id?: string
-          is_correct?: boolean | null
-          is_flagged?: boolean
-          is_skipped?: boolean
-          position?: number
-          question_id?: string
-          session_id?: string
-          time_spent_ms?: number | null
-          user_answer_id?: string | null
-        }
-        Relationships: [
-          {
-            foreignKeyName: "session_questions_question_id_fkey"
-            columns: ["question_id"]
-            isOneToOne: false
-            referencedRelation: "questions"
-            referencedColumns: ["question_id"]
-          },
-          {
-            foreignKeyName: "session_questions_session_id_fkey"
             columns: ["session_id"]
             isOneToOne: false
             referencedRelation: "quiz_sessions"
@@ -2396,13 +2057,6 @@ export type Database = {
         }
         Relationships: [
           {
-            foreignKeyName: "spatial_hotspots_linked_question_id_fkey"
-            columns: ["linked_question_id"]
-            isOneToOne: false
-            referencedRelation: "questions"
-            referencedColumns: ["question_id"]
-          },
-          {
             foreignKeyName: "spatial_hotspots_model_id_fkey"
             columns: ["model_id"]
             isOneToOne: false
@@ -2452,41 +2106,6 @@ export type Database = {
         }
         Relationships: []
       }
-      submission_state_log: {
-        Row: {
-          created_at: string | null
-          from_state: string
-          interaction_id: string
-          log_id: string
-          to_state: string
-          validation_metadata: Json | null
-        }
-        Insert: {
-          created_at?: string | null
-          from_state: string
-          interaction_id: string
-          log_id?: string
-          to_state: string
-          validation_metadata?: Json | null
-        }
-        Update: {
-          created_at?: string | null
-          from_state?: string
-          interaction_id?: string
-          log_id?: string
-          to_state?: string
-          validation_metadata?: Json | null
-        }
-        Relationships: [
-          {
-            foreignKeyName: "submission_state_log_interaction_id_fkey"
-            columns: ["interaction_id"]
-            isOneToOne: false
-            referencedRelation: "user_interactions"
-            referencedColumns: ["interaction_id"]
-          },
-        ]
-      }
       successive_relearning_cycles: {
         Row: {
           consecutive_correct: number
@@ -2496,7 +2115,6 @@ export type Database = {
           next_retest_at: string | null
           spacing_level: number
           status: string
-          topic_id: string
           total_resets: number
           updated_at: string
           user_id: string
@@ -2509,7 +2127,6 @@ export type Database = {
           next_retest_at?: string | null
           spacing_level?: number
           status?: string
-          topic_id: string
           total_resets?: number
           updated_at?: string
           user_id: string
@@ -2522,34 +2139,11 @@ export type Database = {
           next_retest_at?: string | null
           spacing_level?: number
           status?: string
-          topic_id?: string
           total_resets?: number
           updated_at?: string
           user_id?: string
         }
-        Relationships: [
-          {
-            foreignKeyName: "successive_relearning_cycles_topic_id_fkey"
-            columns: ["topic_id"]
-            isOneToOne: false
-            referencedRelation: "taxonomy_tree"
-            referencedColumns: ["node_id"]
-          },
-          {
-            foreignKeyName: "successive_relearning_cycles_user_id_fkey"
-            columns: ["user_id"]
-            isOneToOne: false
-            referencedRelation: "profiles"
-            referencedColumns: ["id"]
-          },
-          {
-            foreignKeyName: "successive_relearning_cycles_user_id_fkey"
-            columns: ["user_id"]
-            isOneToOne: false
-            referencedRelation: "user_capabilities"
-            referencedColumns: ["user_id"]
-          },
-        ]
+        Relationships: []
       }
       taxonomy_cross_references: {
         Row: {
@@ -2645,7 +2239,7 @@ export type Database = {
           label: string
           node_id: string
           sort_order?: number
-          source_type: Database["public"]["Enums"]["taxonomy_source_type"]
+          source_type?: Database["public"]["Enums"]["taxonomy_source_type"]
           updated_at?: string
           url?: string
         }
@@ -2672,7 +2266,6 @@ export type Database = {
       }
       taxonomy_tree: {
         Row: {
-          ale_id: string | null
           area_weight_pct: number | null
           bloom_level: Database["public"]["Enums"]["bloom_level_type"] | null
           created_at: string
@@ -2680,12 +2273,10 @@ export type Database = {
           description: string | null
           difficulty: number | null
           discipline_id: string
-          exam_frequency:
-            | Database["public"]["Enums"]["exam_frequency_level"]
-            | null
           is_computation_heavy: boolean
           is_cross_ref_only: boolean
           is_leaf: boolean
+          lea_id: string | null
           level: number
           mastery_criteria: Json | null
           name: string
@@ -2703,7 +2294,6 @@ export type Database = {
           wiki_items: Json
         }
         Insert: {
-          ale_id?: string | null
           area_weight_pct?: number | null
           bloom_level?: Database["public"]["Enums"]["bloom_level_type"] | null
           created_at?: string
@@ -2711,12 +2301,10 @@ export type Database = {
           description?: string | null
           difficulty?: number | null
           discipline_id: string
-          exam_frequency?:
-            | Database["public"]["Enums"]["exam_frequency_level"]
-            | null
           is_computation_heavy?: boolean
           is_cross_ref_only?: boolean
           is_leaf?: boolean
+          lea_id?: string | null
           level: number
           mastery_criteria?: Json | null
           name: string
@@ -2734,7 +2322,6 @@ export type Database = {
           wiki_items?: Json
         }
         Update: {
-          ale_id?: string | null
           area_weight_pct?: number | null
           bloom_level?: Database["public"]["Enums"]["bloom_level_type"] | null
           created_at?: string
@@ -2742,12 +2329,10 @@ export type Database = {
           description?: string | null
           difficulty?: number | null
           discipline_id?: string
-          exam_frequency?:
-            | Database["public"]["Enums"]["exam_frequency_level"]
-            | null
           is_computation_heavy?: boolean
           is_cross_ref_only?: boolean
           is_leaf?: boolean
+          lea_id?: string | null
           level?: number
           mastery_criteria?: Json | null
           name?: string
@@ -2838,20 +2423,13 @@ export type Database = {
             referencedRelation: "taxonomy_tree"
             referencedColumns: ["node_id"]
           },
-          {
-            foreignKeyName: "teach_back_submissions_trail_day_id_fkey"
-            columns: ["trail_day_id"]
-            isOneToOne: false
-            referencedRelation: "trail_days"
-            referencedColumns: ["day_id"]
-          },
         ]
       }
       topic_teach_back_criteria: {
         Row: {
           authored_by: string | null
-          code_citations: string[]
-          common_misconceptions: string[]
+          code_citations: string[] | null
+          common_misconceptions: string[] | null
           created_at: string | null
           criteria_id: string
           required_concepts: string[]
@@ -2861,8 +2439,8 @@ export type Database = {
         }
         Insert: {
           authored_by?: string | null
-          code_citations?: string[]
-          common_misconceptions?: string[]
+          code_citations?: string[] | null
+          common_misconceptions?: string[] | null
           created_at?: string | null
           criteria_id?: string
           required_concepts?: string[]
@@ -2872,8 +2450,8 @@ export type Database = {
         }
         Update: {
           authored_by?: string | null
-          code_citations?: string[]
-          common_misconceptions?: string[]
+          code_citations?: string[] | null
+          common_misconceptions?: string[] | null
           created_at?: string | null
           criteria_id?: string
           required_concepts?: string[]
@@ -3082,33 +2660,6 @@ export type Database = {
             referencedColumns: ["model_id"]
           },
         ]
-      }
-      user_behavioral_profiles: {
-        Row: {
-          feature_vector_mean: Json
-          feature_vector_variance: Json
-          last_updated: string | null
-          profile_id: string
-          submission_count: number
-          user_id: string
-        }
-        Insert: {
-          feature_vector_mean: Json
-          feature_vector_variance: Json
-          last_updated?: string | null
-          profile_id?: string
-          submission_count?: number
-          user_id: string
-        }
-        Update: {
-          feature_vector_mean?: Json
-          feature_vector_variance?: Json
-          last_updated?: string | null
-          profile_id?: string
-          submission_count?: number
-          user_id?: string
-        }
-        Relationships: []
       }
       user_computed_signals: {
         Row: {
@@ -3373,15 +2924,11 @@ export type Database = {
       user_interactions: {
         Row: {
           answer_changes: number
-          cage_trust_level: string | null
           confidence: string | null
-          confidence_score: number | null
           created_at: string
           error_category: string | null
           error_confidence: number | null
           error_type: string | null
-          gesture_duration_ms: number | null
-          integrity_status: string | null
           interaction_id: string
           interaction_timestamp: string
           is_correct: boolean
@@ -3401,15 +2948,11 @@ export type Database = {
         }
         Insert: {
           answer_changes?: number
-          cage_trust_level?: string | null
           confidence?: string | null
-          confidence_score?: number | null
           created_at?: string
           error_category?: string | null
           error_confidence?: number | null
           error_type?: string | null
-          gesture_duration_ms?: number | null
-          integrity_status?: string | null
           interaction_id?: string
           interaction_timestamp?: string
           is_correct: boolean
@@ -3429,26 +2972,22 @@ export type Database = {
         }
         Update: {
           answer_changes?: number
-          cage_trust_level?: string | null
           confidence?: string | null
-          confidence_score?: number | null
           created_at?: string
           error_category?: string | null
           error_confidence?: number | null
           error_type?: string | null
-          gesture_duration_ms?: number | null
-          integrity_status?: string | null
           interaction_id?: string
           interaction_timestamp?: string
           is_correct?: boolean
           is_flagged?: boolean
           is_suspected_lucky_guess?: boolean
           options_eliminated?: number
-          question_id?: string
+          question_id: string
           question_order?: number | null
           rationale_view_ms?: number | null
           selected_option_id?: string | null
-          session_id?: string
+          session_id: string
           source_type?: string | null
           time_spent_ms?: number | null
           topic_id?: string | null
@@ -3486,9 +3025,9 @@ export type Database = {
           mastery_weight: number
           session_id: string | null
           snapshot_reason: string | null
-          topic_id: string
           total_attempts: number
           total_correct: number
+          topic_id: string
           user_id: string
         }
         Insert: {
@@ -3497,9 +3036,9 @@ export type Database = {
           mastery_weight: number
           session_id?: string | null
           snapshot_reason?: string | null
-          topic_id: string
           total_attempts?: number
           total_correct?: number
+          topic_id: string
           user_id: string
         }
         Update: {
@@ -3508,25 +3047,25 @@ export type Database = {
           mastery_weight?: number
           session_id?: string | null
           snapshot_reason?: string | null
-          topic_id?: string
           total_attempts?: number
           total_correct?: number
+          topic_id?: string
           user_id?: string
         }
         Relationships: [
-          {
-            foreignKeyName: "fk_mastery_history_topic_id"
-            columns: ["topic_id"]
-            isOneToOne: false
-            referencedRelation: "taxonomy_tree"
-            referencedColumns: ["node_id"]
-          },
           {
             foreignKeyName: "user_mastery_history_session_id_fkey"
             columns: ["session_id"]
             isOneToOne: false
             referencedRelation: "quiz_sessions"
             referencedColumns: ["session_id"]
+          },
+          {
+            foreignKeyName: "user_mastery_history_topic_id_fkey"
+            columns: ["topic_id"]
+            isOneToOne: false
+            referencedRelation: "taxonomy_tree"
+            referencedColumns: ["node_id"]
           },
         ]
       }
@@ -3553,9 +3092,9 @@ export type Database = {
           storage_strength: number | null
           teach_back_attempted: boolean | null
           teach_back_gap_count: number | null
-          topic_id: string
           total_attempts: number
           total_correct: number
+          topic_id: string
           updated_at: string | null
           user_id: string
         }
@@ -3581,9 +3120,9 @@ export type Database = {
           storage_strength?: number | null
           teach_back_attempted?: boolean | null
           teach_back_gap_count?: number | null
-          topic_id: string
           total_attempts?: number
           total_correct?: number
+          topic_id: string
           updated_at?: string | null
           user_id: string
         }
@@ -3609,9 +3148,9 @@ export type Database = {
           storage_strength?: number | null
           teach_back_attempted?: boolean | null
           teach_back_gap_count?: number | null
-          topic_id?: string
           total_attempts?: number
           total_correct?: number
+          topic_id?: string
           updated_at?: string | null
           user_id?: string
         }
@@ -3697,6 +3236,20 @@ export type Database = {
             referencedRelation: "questions"
             referencedColumns: ["question_id"]
           },
+          {
+            foreignKeyName: "user_question_responses_question_id_fkey"
+            columns: ["question_id"]
+            isOneToOne: false
+            referencedRelation: "user_question_stats"
+            referencedColumns: ["question_id"]
+          },
+          {
+            foreignKeyName: "user_question_responses_session_id_fkey"
+            columns: ["session_id"]
+            isOneToOne: false
+            referencedRelation: "quiz_sessions"
+            referencedColumns: ["session_id"]
+          },
         ]
       }
       user_question_states: {
@@ -3727,7 +3280,22 @@ export type Database = {
           total_time_ms?: number
           user_id?: string
         }
-        Relationships: []
+        Relationships: [
+          {
+            foreignKeyName: "user_question_states_question_id_fkey"
+            columns: ["question_id"]
+            isOneToOne: false
+            referencedRelation: "questions"
+            referencedColumns: ["question_id"]
+          },
+          {
+            foreignKeyName: "user_question_states_question_id_fkey"
+            columns: ["question_id"]
+            isOneToOne: false
+            referencedRelation: "user_question_stats"
+            referencedColumns: ["question_id"]
+          },
+        ]
       }
       user_roles: {
         Row: {
@@ -3804,13 +3372,13 @@ export type Database = {
           email_notifications_enabled: boolean | null
           free_cap_reset_date: string | null
           free_questions_today: number
+          lemonsqueezy_customer_id: string | null
+          lemonsqueezy_subscription_id: string | null
           marketing_emails_enabled: boolean | null
           payrex_customer_id: string | null
           payrex_reference: string | null
           readiness_score_at_conversion: number | null
           status: Database["public"]["Enums"]["subscription_status"]
-          stripe_customer_id: string | null
-          stripe_subscription_id: string | null
           subscription_id: string
           tier: Database["public"]["Enums"]["subscription_tier"]
           trial_started_at: string | null
@@ -3825,13 +3393,13 @@ export type Database = {
           email_notifications_enabled?: boolean | null
           free_cap_reset_date?: string | null
           free_questions_today?: number
+          lemonsqueezy_customer_id?: string | null
+          lemonsqueezy_subscription_id?: string | null
           marketing_emails_enabled?: boolean | null
           payrex_customer_id?: string | null
           payrex_reference?: string | null
           readiness_score_at_conversion?: number | null
           status?: Database["public"]["Enums"]["subscription_status"]
-          stripe_customer_id?: string | null
-          stripe_subscription_id?: string | null
           subscription_id?: string
           tier?: Database["public"]["Enums"]["subscription_tier"]
           trial_started_at?: string | null
@@ -3846,13 +3414,13 @@ export type Database = {
           email_notifications_enabled?: boolean | null
           free_cap_reset_date?: string | null
           free_questions_today?: number
+          lemonsqueezy_customer_id?: string | null
+          lemonsqueezy_subscription_id?: string | null
           marketing_emails_enabled?: boolean | null
           payrex_customer_id?: string | null
           payrex_reference?: string | null
           readiness_score_at_conversion?: number | null
           status?: Database["public"]["Enums"]["subscription_status"]
-          stripe_customer_id?: string | null
-          stripe_subscription_id?: string | null
           subscription_id?: string
           tier?: Database["public"]["Enums"]["subscription_tier"]
           trial_started_at?: string | null
@@ -4040,49 +3608,6 @@ export type Database = {
           },
         ]
       }
-      wiki_article_feedback: {
-        Row: {
-          article_id: string
-          is_helpful: boolean
-          updated_at: string
-          user_id: string
-        }
-        Insert: {
-          article_id: string
-          is_helpful: boolean
-          updated_at?: string
-          user_id: string
-        }
-        Update: {
-          article_id?: string
-          is_helpful?: boolean
-          updated_at?: string
-          user_id?: string
-        }
-        Relationships: [
-          {
-            foreignKeyName: "wiki_article_feedback_article_id_fkey"
-            columns: ["article_id"]
-            isOneToOne: false
-            referencedRelation: "wiki_articles"
-            referencedColumns: ["article_id"]
-          },
-          {
-            foreignKeyName: "wiki_article_feedback_user_id_fkey"
-            columns: ["user_id"]
-            isOneToOne: false
-            referencedRelation: "profiles"
-            referencedColumns: ["id"]
-          },
-          {
-            foreignKeyName: "wiki_article_feedback_user_id_fkey"
-            columns: ["user_id"]
-            isOneToOne: false
-            referencedRelation: "user_capabilities"
-            referencedColumns: ["user_id"]
-          },
-        ]
-      }
       wiki_article_reads: {
         Row: {
           article_id: string
@@ -4148,7 +3673,6 @@ export type Database = {
           is_verified?: boolean
           label: string
           sort_order?: number
-          source_id?: string
           source_type: Database["public"]["Enums"]["taxonomy_source_type"]
           updated_at?: string
           url?: string | null
@@ -4160,7 +3684,6 @@ export type Database = {
           is_verified?: boolean
           label?: string
           sort_order?: number
-          source_id?: string
           source_type?: Database["public"]["Enums"]["taxonomy_source_type"]
           updated_at?: string
           url?: string | null
@@ -4213,13 +3736,13 @@ export type Database = {
       }
       wiki_articles: {
         Row: {
-          ale_tests_you: string | null
           article_id: string
           content: string
           created_at: string
           created_by: string | null
           difficulty_label: string | null
           fts: unknown
+          lea_tests_you: string | null
           read_time: string | null
           reviewed_at: string | null
           reviewed_by: string | null
@@ -4233,13 +3756,13 @@ export type Database = {
           updated_note: string | null
         }
         Insert: {
-          ale_tests_you?: string | null
           article_id?: string
           content: string
           created_at?: string
           created_by?: string | null
           difficulty_label?: string | null
           fts?: unknown
+          lea_tests_you?: string | null
           read_time?: string | null
           reviewed_at?: string | null
           reviewed_by?: string | null
@@ -4253,13 +3776,13 @@ export type Database = {
           updated_note?: string | null
         }
         Update: {
-          ale_tests_you?: string | null
           article_id?: string
           content?: string
           created_at?: string
           created_by?: string | null
           difficulty_label?: string | null
           fts?: unknown
+          lea_tests_you?: string | null
           read_time?: string | null
           reviewed_at?: string | null
           reviewed_by?: string | null
@@ -4616,6 +4139,7 @@ export type Database = {
           text: string
         }[]
       }
+      get_article_with_node: { Args: { p_slug: string }; Returns: Json }
       get_fallback_questions: {
         Args: {
           p_exclude_ids: string[]

@@ -10,8 +10,8 @@ const supabase = createClient(supaUrl, supaKey);
 async function run() {
   const { data: tax } = await supabase.from('wiki_article_taxonomy').select('node_id').limit(20);
   const nodeIds = tax.map(t => t.node_id);
-  const { data: nodes } = await supabase.from('taxonomy_tree').select('ale_id, level, name').in('node_id', nodeIds);
-  console.log('Sample node ale_ids:', nodes.map(n => n.ale_id));
+  const { data: nodes } = await supabase.from('taxonomy_tree').select('lea_id, level, name').in('node_id', nodeIds);
+  console.log('Sample node lea_ids:', nodes.map(n => n.lea_id));
 }
 
 run();

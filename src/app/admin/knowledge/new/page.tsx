@@ -15,7 +15,7 @@ const NewContentPage = async () => {
   const supabase = await createClient()
   const { data: nodes } = await supabase
     .from('taxonomy_tree')
-    .select('node_id, name, ale_id, level, parent_id, subject_area, is_leaf')
+    .select('node_id, name, lea_id, level, parent_id, subject_area, is_leaf')
     .order('level', { ascending: true })
     .order('name', { ascending: true })
 
@@ -27,7 +27,7 @@ const NewContentPage = async () => {
     slug: '',
     content: '',
     status: 'draft',
-    ale_tests_you: null,
+    lea_tests_you: null,
     updated_note: null,
     subject_label: null,
     difficulty_label: null,

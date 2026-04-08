@@ -107,7 +107,7 @@ export const Preview: Story = {
     variant: 'preview',
     metadata: {
       difficulty: 0.62,
-      aleId: 'AR-PLN-014',
+      leaId: 'AR-PLN-014',
       topicName: 'Planning and Site Design',
       status: 'Published',
     },

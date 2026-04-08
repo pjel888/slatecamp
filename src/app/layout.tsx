@@ -46,11 +46,11 @@ const isDemo = !process.env.NEXT_PUBLIC_SUPABASE_URL
 
 export const metadata: Metadata = {
   title: {
-    default: `${siteConfig.name} — Personalized ALE Review`,
+    default: `${siteConfig.name} — Personalized LEA Review`,
     template: `%s | ${siteConfig.name}`,
   },
   description:
-    'A cognitive-first review platform built for the ALE. Active recall, spaced repetition, and interactive study tools for professional licensure success.',
+    'A cognitive-first review platform built for the LEA. Active recall, spaced repetition, and interactive study tools for professional licensure success.',
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_APP_URL ?? 'http://localhost:3000',
   ),

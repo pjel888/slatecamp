@@ -596,8 +596,8 @@ export const unifiedWallConfiguratorConfig: ParametricSceneConfig = {
   showHumanScale: false,
   contextScenario:
     'You are preparing a wall material takeoff for a mixed-use building with different wall types per area. Determine the correct finishing sequence and estimate materials for each wall type under Philippine construction standards.',
-  aleQuestionCount: 5,
-  aleQuestionType: 'dimensional recall',
+  leaQuestionCount: 5,
+  leaQuestionType: 'dimensional recall',
   supportedPhases: ['guided', 'sandbox'],
   hasChallengeMode: true,
 }

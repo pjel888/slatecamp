@@ -14,7 +14,7 @@ import { EmptyState } from '@/components/shared/empty-state'
 
 interface TaxonomyPickerNode {
   node_id: string
-  ale_id?: string
+  lea_id?: string
   name: string
   level: number
   parent_id?: string | null
@@ -124,8 +124,8 @@ const filterTree = (
   const walk = (list: TaxonomyPickerNode[]) => {
     for (const node of list) {
       const nameMatch = node.name.toLowerCase().includes(q)
-      const aleMatch = node.ale_id?.toLowerCase().includes(q) ?? false
-      if (nameMatch || aleMatch) {
+      const leaMatch = node.lea_id?.toLowerCase().includes(q) ?? false
+      if (nameMatch || leaMatch) {
         directMatches.add(node.node_id)
       }
       if (node.children?.length) walk(node.children)
@@ -216,15 +216,15 @@ const TreeNode = React.memo(({
   const fontSize = isLeaf ? 'text-[11px]' : 'text-xs'
   const fontWeight = isL0 && !isSelected ? 'font-medium' : ''
 
-  // Extract ALE ID suffix for compact display (e.g., "ALE-HIST-001-06" → "001-06")
-  const aleIdSuffix = React.useMemo(() => {
-    if (!node.ale_id) return null
-    const parts = node.ale_id.split('-')
+  // Extract LEA ID suffix for compact display (e.g., "LEA-HIST-001-06" → "001-06")
+  const leaIdSuffix = React.useMemo(() => {
+    if (!node.lea_id) return null
+    const parts = node.lea_id.split('-')
     // Show last 2 segments for leaf nodes, last 1 for others
     if (isLeaf && parts.length >= 4) return parts.slice(-2).join('-')
     if (parts.length >= 3) return parts.slice(-1)[0]
-    return node.ale_id
-  }, [node.ale_id, isLeaf])
+    return node.lea_id
+  }, [node.lea_id, isLeaf])
 
   return (
     <>
@@ -298,7 +298,7 @@ const TreeNode = React.memo(({
           {node.name}
         </span>
 
-        {/* Right-aligned: counts and/or ALE ID suffix in DM Mono */}
+        {/* Right-aligned: counts and/or LEA ID suffix in DM Mono */}
         <span className="ml-auto flex shrink-0 items-center gap-0.5 font-[family-name:var(--font-dm-mono)] text-[11px] text-muted-foreground">
           {showCounts && (node.article_count || node.question_count) ? (
             <>
@@ -313,9 +313,9 @@ const TreeNode = React.memo(({
                 <span>{node.question_count}q</span>
               )}
             </>
-          ) : showAleId && aleIdSuffix ? (
+          ) : showAleId && leaIdSuffix ? (
             <span className={cn(isSelected && 'text-primary')}>
-              {aleIdSuffix}
+              {leaIdSuffix}
             </span>
           ) : null}
         </span>

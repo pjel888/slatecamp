@@ -40,6 +40,20 @@ const nextConfig: NextConfig = {
       },
     ]
   },
+  async redirects() {
+    return [
+      {
+        source: '/dashboard/wiki/ale-:slug*',
+        destination: '/dashboard/wiki/lea-:slug*',
+        permanent: true,
+      },
+      {
+        source: '/ale-starter',
+        destination: '/lea-starter',
+        permanent: true,
+      },
+    ]
+  },
   experimental: {
     serverActions: {
       bodySizeLimit: '4mb',

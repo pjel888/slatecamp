@@ -84,9 +84,9 @@ const AdminTaxonomyCoveragePage = async () => {
           return (
             <Card key={subject.node_id} size="sm">
               <div className="flex items-baseline gap-2 mb-2">
-                {subject.ale_id && (
+                {subject.lea_id && (
                   <span className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-widest text-muted-foreground">
-                    {subject.ale_id}
+                    {subject.lea_id}
                   </span>
                 )}
                 <span className="text-sm font-medium text-foreground">
@@ -146,8 +146,8 @@ const CoverageCell = ({ cell }: { cell: CoverageCellData }) => {
         hover:scale-105 hover:shadow-sm hover:z-10
         ${coverageStyles[level]}
       `}
-      aria-label={`${cell.ale_id ?? cell.name}: ${cell.questionCount} question${cell.questionCount !== 1 ? 's' : ''}, ${level} coverage — click to view content`}
-      title={`${cell.name}${cell.ale_id ? ` (${cell.ale_id})` : ''} — ${cell.questionCount}q${cell.hasArticle ? ', has article' : ''}${cell.examFrequency ? `, freq: ${cell.examFrequency}` : ''}`}
+      aria-label={`${cell.lea_id ?? cell.name}: ${cell.questionCount} question${cell.questionCount !== 1 ? 's' : ''}, ${level} coverage — click to view content`}
+      title={`${cell.name}${cell.lea_id ? ` (${cell.lea_id})` : ''} — ${cell.questionCount}q${cell.hasArticle ? ', has article' : ''}${cell.examFrequency ? `, freq: ${cell.examFrequency}` : ''}`}
     >
       {isCritical && (
         <Warning size={10} className="text-destructive absolute top-0.5 right-0.5" />
@@ -156,7 +156,7 @@ const CoverageCell = ({ cell }: { cell: CoverageCellData }) => {
         {cell.questionCount > 0 ? `${cell.questionCount}q` : '0'}
       </span>
       <span className="font-[family-name:var(--font-dm-mono)] text-[11px] text-muted-foreground leading-tight truncate max-w-full px-0.5 mt-0.5">
-        {cell.ale_id ?? cell.name.slice(0, 6)}
+        {cell.lea_id ?? cell.name.slice(0, 6)}
       </span>
     </Link>
   )

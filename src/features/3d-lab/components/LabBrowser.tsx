@@ -18,7 +18,7 @@ import { ModuleCard } from './ModuleCard'
  *   → Simplified flat grid showing only allowlisted modules
  *
  * When DASHBOARD_VISIBLE_IDS is empty (future restore):
- *   → Level 1: CategoryGrid (16 ALE-aligned categories)
+ *   → Level 1: CategoryGrid (16 LEA-aligned categories)
  *   → Level 2: ModuleList (filtered by category)
  *
  * Uses URL search params (?category=STRUCTURAL) so the state is shareable/bookmarkable.

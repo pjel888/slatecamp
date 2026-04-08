@@ -31,7 +31,7 @@ interface QuestionCardProps {
   // Preview variant
   metadata?: {
     difficulty?: number | string
-    aleId?: string
+    leaId?: string
     topicName?: string
     status?: string
   }
@@ -315,8 +315,8 @@ const MetadataBar = ({
     {metadata.topicName && (
       <span className="text-xs text-muted-foreground">{metadata.topicName}</span>
     )}
-    {metadata.aleId && (
-      <span className="font-mono text-xs text-muted-foreground">{metadata.aleId}</span>
+    {metadata.leaId && (
+      <span className="font-mono text-xs text-muted-foreground">{metadata.leaId}</span>
     )}
   </div>
 )

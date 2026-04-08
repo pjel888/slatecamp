@@ -31,7 +31,7 @@ export interface TaxonomyNode {
   created_at: string;
   updated_at: string;
   // Taxonomy v5.0 fields (from DB, used by wiki hero)
-  ale_id?: string | null;
+  lea_id?: string | null;
   description?: string | null;
   exam_frequency?: string | null;
   bloom_level?: string | null;
@@ -88,7 +88,7 @@ export interface WikiArticle {
   created_at: string;
   updated_at: string;
   // Wiki hero metadata (spec v1)
-  ale_tests_you?: string | null;
+  lea_tests_you?: string | null;
   updated_note?: string | null;
   subject_label?: string | null;
   difficulty_label?: 'Foundational' | 'Intermediate' | 'Advanced' | null;

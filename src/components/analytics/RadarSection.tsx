@@ -12,7 +12,7 @@ export const RadarSection = async () => {
   const data: SubjectMastery[] = raw.map(d => ({
     subject: d.subject,
     shortLabel: d.subject.split(' ').slice(0, 2).join(' '),
-    aleId: null,
+    leaId: null,
     mastery: d.score,
     questionsAnswered: d.score,
     topics: [],

@@ -7,11 +7,11 @@ export const SocialProofBar = () => (
       <ScrollReveal y={0} duration={0.3}>
         <div className='mx-auto flex max-w-[1200px] flex-wrap items-center justify-center gap-x-8 gap-y-2 text-center'>
           <span className='text-[12px] font-medium text-text-2'>
-            Built for the Philippine ALE
+            Built for the Philippine LEA
           </span>
           <span className='text-[12px] text-gray-400'>&middot;</span>
           <span className='text-[12px] font-medium text-text-2'>
-            Every question mapped to the ALE syllabus
+            Every question mapped to the LEA syllabus
           </span>
           <span className='text-[12px] text-gray-400'>&middot;</span>
           <span className='text-[12px] font-medium text-text-2'>

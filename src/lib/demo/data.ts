@@ -30,7 +30,7 @@ export function getDemoProfile(tier: UserTier = 'institutional') {
     avatar_url: null,
     tier,
     profession: 'architecture' as const,
-    exam_target: 'ALE 2026',
+    exam_target: 'LEA 2026',
     target_exam_date: '2026-09-15',
     daily_streak: 14,
     longest_streak: 21,
@@ -46,9 +46,9 @@ export const DEMO_PROFILE = getDemoProfile('institutional')
 
 export const DEMO_DISCIPLINES = [
   {
-    discipline_id: 'ale-uuid',
+    discipline_id: 'lea-uuid',
     name: 'Architecture Licensure Exam',
-    acronym: 'ALE',
+    acronym: 'LEA',
     created_at: daysAgo(30),
     updated_at: daysAgo(30)
   }
@@ -103,7 +103,7 @@ export function getDemoDataForTable(table: string, tier?: UserTier): unknown[] {
         { 
           question_id: 'q-1', 
           text: 'What is the primary material used in reinforced concrete?', 
-          topic_id: 'ale-uuid', 
+          topic_id: 'lea-uuid', 
           difficulty: 2, 
           options: ['Steel', 'Wood', 'Plastic', 'Glass'], 
           correct_option_id: 'Steel',

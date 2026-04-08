@@ -27,7 +27,7 @@ interface ArticleResult {
 interface TaxonomyResult {
   node_id: string
   name: string
-  ale_id: string
+  lea_id: string
 }
 
 /* ------------------------------------------------------------------ */
@@ -80,8 +80,8 @@ export const ContentSearchClient = () => {
             .limit(20),
           supabase
             .from('taxonomy_tree')
-            .select('node_id, name, ale_id')
-            .or(`name.ilike.${searchTerm},ale_id.ilike.${searchTerm}`)
+            .select('node_id, name, lea_id')
+            .or(`name.ilike.${searchTerm},lea_id.ilike.${searchTerm}`)
             .limit(20),
         ])
 
@@ -140,9 +140,9 @@ export const ContentSearchClient = () => {
         </Badge>
         <div className="min-w-0">
           <span className="text-sm line-clamp-1">{t.name}</span>
-          {t.ale_id && (
+          {t.lea_id && (
             <span className="font-[family-name:var(--font-dm-mono)] text-[11px] text-muted-foreground block truncate">
-              {t.ale_id}
+              {t.lea_id}
             </span>
           )}
         </div>

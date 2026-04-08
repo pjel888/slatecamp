@@ -175,7 +175,7 @@ export const BentoFeatureGrid = () => (
             1 in 3
           </div>
           <p className='mt-3 max-w-[200px] text-[13px] leading-[1.5] text-text-2'>
-            ALE examinees don&apos;t pass in a given sitting. Most didn&apos;t know
+            LEA examinees don&apos;t pass in a given sitting. Most didn&apos;t know
             they were at risk.
           </p>
           <p className='mt-2 font-[family-name:var(--font-dm-mono)] text-[11px] text-marketing-subtle'>

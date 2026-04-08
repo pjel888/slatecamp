@@ -44,11 +44,11 @@ export const INDIVIDUAL_TIERS: PricingTier[] = [
   {
     id: 'pro',
     tierName: 'Pro',
-    subtitle: 'The "ALE Season Pass"',
-    targetAudience: 'Active ALE Reviewees',
+    subtitle: 'The "LEA Season Pass"',
+    targetAudience: 'Active LEA Reviewees',
     price: '₱499',
     priceSubtext: '/ month',
-    hook: 'Everything you need to pass the ALE.',
+    hook: 'Everything you need to pass the LEA.',
     features: [
       '100% Ad-Free',
       'Full SRS (Spaced Repetition System)',

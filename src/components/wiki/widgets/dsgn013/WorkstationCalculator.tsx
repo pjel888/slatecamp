@@ -3,7 +3,7 @@
 import { useState } from 'react'
 
 const DENSITY_OPTIONS = [
-  { value: 9.3, label: 'ALE standard (9.30 sq m)' },
+  { value: 9.3, label: 'LEA standard (9.30 sq m)' },
   { value: 5.0, label: 'Philippine practice (5.00 sq m)' },
   { value: 14.0, label: 'International standard (14.00 sq m)' },
 ]

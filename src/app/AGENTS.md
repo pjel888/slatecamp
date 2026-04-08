@@ -5,7 +5,7 @@
 
 ## Purpose
 
-Root Next.js App Router directory for SlateCamp -- a cognitive-first, personalized ALE review platform. Contains 105 pages, 13 layouts, 87 loading states, and 8 error boundaries across 4 portals: Dashboard (student), Admin (content management), CEO (business analytics), and Developer (internal docs/tools). Handles all user-facing routes, API endpoints, authentication flows, and the main application interface.
+Root Next.js App Router directory for SlateCamp -- a cognitive-first, personalized LEA review platform. Contains 105 pages, 13 layouts, 87 loading states, and 8 error boundaries across 4 portals: Dashboard (student), Admin (content management), CEO (business analytics), and Developer (internal docs/tools). Handles all user-facing routes, API endpoints, authentication flows, and the main application interface.
 
 This directory implements the Slatecamp design system and enforces strict pedagogical constraints: no generic gamification, zero temperature AI tutor, Item Response Theory (IRT) mastery calculations, and growth-framed voice throughout.
 

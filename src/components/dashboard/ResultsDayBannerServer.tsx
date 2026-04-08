@@ -9,7 +9,7 @@ export const ResultsDayBannerServer = async () => {
   const [ { data: profile }, { data: globalStats } ] = await Promise.all([
     supabase
       .from('profiles')
-      .select('ale_result')
+      .select('lea_result')
       .eq('id', user.id)
       .maybeSingle(),
     supabase
@@ -19,11 +19,11 @@ export const ResultsDayBannerServer = async () => {
       .maybeSingle(),
   ]);
 
-  const aleResult = profile?.ale_result ?? null;
+  const leaResult = profile?.lea_result ?? null;
   const examDateRaw = globalStats?.target_exam_date ?? null;
 
   let showResultsDayBanner = false;
-  if (examDateRaw && !aleResult) {
+  if (examDateRaw && !leaResult) {
     const daysSinceExam = Math.floor((Date.now() - new Date(examDateRaw).getTime()) / (24 * 60 * 60 * 1000));
     showResultsDayBanner = daysSinceExam >= 3 && daysSinceExam <= 14;
   }

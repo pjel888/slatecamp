@@ -10,7 +10,7 @@ import {
 import type { Icon as PhosphorIcon } from '@phosphor-icons/react/lib'
 import { cn } from '@/lib/utils'
 import { ROUTES } from '@/lib/constants/routes'
-import { ASSET_TAXONOMY, ALE_SUBJECTS, PHASE_LABELS, type CategoryKey } from '../config/taxonomy'
+import { ASSET_TAXONOMY, LEA_SUBJECTS, PHASE_LABELS, type CategoryKey } from '../config/taxonomy'
 
 // ─── Icon Map ─────────────────────────────────────────────────────────────────
 
@@ -190,9 +190,9 @@ export function CategoryGrid({ onCategorySelect, moduleCounts = {} }: CategoryGr
       {/* Hero: Featured module */}
       <FeaturedModuleBanner />
 
-      {/* ALE Subject Groups */}
+      {/* LEA Subject Groups */}
       <div className="space-y-12">
-        {ALE_SUBJECTS.map((subject) => (
+        {LEA_SUBJECTS.map((subject) => (
           <section key={subject.label}>
             {/* Subject heading */}
             <h2 className="mb-5 font-mono text-[11px] font-black uppercase tracking-[0.2em] text-muted-foreground opacity-60">

@@ -18,7 +18,7 @@ interface TaxonomyTreeNode {
   slug?: string | null
   level: number
   parent_id?: string | null
-  ale_id?: string | null
+  lea_id?: string | null
   sort_order?: number | null
   is_leaf?: boolean
   children?: TaxonomyTreeNode[]
@@ -151,10 +151,10 @@ const filterNodes = (nodes: TaxonomyTreeNode[], query: string): Set<string> | nu
   const walk = (list: TaxonomyTreeNode[]) => {
     for (const node of list) {
       const nameMatch = node.name.toLowerCase().includes(q)
-      const aleMatch = node.ale_id?.toLowerCase().includes(q) ?? false
+      const leaMatch = node.lea_id?.toLowerCase().includes(q) ?? false
       const articleMatch = node.articles?.some(a => a.title.toLowerCase().includes(q)) ?? false
 
-      if (nameMatch || aleMatch || articleMatch) {
+      if (nameMatch || leaMatch || articleMatch) {
         matches.add(node.node_id)
         for (const id of path) matches.add(id)
       }

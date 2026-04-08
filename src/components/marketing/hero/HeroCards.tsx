@@ -31,7 +31,7 @@ const SUBJECT_READINESS = [
   { label: 'Planning & Design', value: 47, improved: 99 },
 ] as const
 
-/* ── Card 1: ALE Subject Coverage (Back Left) ── */
+/* ── Card 1: LEA Subject Coverage (Back Left) ── */
 
 const ALESubjectCoverageCard = () => {
   const subjects = [
@@ -55,7 +55,7 @@ const ALESubjectCoverageCard = () => {
       <div className='mb-2.5 flex items-center gap-1.5 border-b border-border-design pb-2'>
         <Starburst className='h-3 w-3 text-camp-amber' />
         <span className='font-[family-name:var(--font-dm-mono)] text-[11px] font-extrabold uppercase tracking-[0.22em] text-text-2'>
-          ALE Coverage
+          LEA Coverage
         </span>
       </div>
       <ul className='space-y-1.5'>
@@ -173,7 +173,7 @@ const ConversionHookCard = ({ isLoggedIn }: { isLoggedIn: boolean }) => {
       <p className='mt-2 text-[12px] leading-snug text-text-2'>
         {isHovered
           ? 'This is what your score can look like once SlateCamp is driving your review.'
-          : 'Most students walk into the ALE not knowing where their gaps are. This is where you find out.'}
+          : 'Most students walk into the LEA not knowing where their gaps are. This is where you find out.'}
       </p>
 
       <div className='mt-3 flex items-center gap-3 rounded-md bg-white/80 p-3 ring-1 ring-border'>

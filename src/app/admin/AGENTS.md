@@ -31,7 +31,7 @@ Admin control room for content and system management. Gated by role check (`canR
 | Directory | Purpose |
 |-----------|---------|
 | `dashboard/` | High-level overview. Stats (questions, wiki, coverage gaps), quick actions, and recent activity feed. |
-| `taxonomy/` | Global taxonomy management. View/edit the discipline tree structure and ALE IDs. |
+| `taxonomy/` | Global taxonomy management. View/edit the discipline tree structure and LEA IDs. |
 | `reviews/` | SME Review Queue. Content submitted for approval, deep-linked to unified editors. |
 | `audit/` | Audit Log. Deep-linked history of every change made to the knowledge base. |
 | `assets/` | 3D Asset Management. Catalog and preview models used in the 3D Lab scenes. |

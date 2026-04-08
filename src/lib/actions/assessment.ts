@@ -206,7 +206,7 @@ export const getAssessmentQuestions = async (disciplineId: string): Promise<stri
     .not('subject_area', 'is', null)
     .eq('is_cross_ref_only', false)
     .is('deprecated_at', null)
-    .not('ale_id', 'is', null)
+    .not('lea_id', 'is', null)
 
   const uniqueSubjects = [...new Set((subjects || []).map((s: any) => s.subject_area))]
 
@@ -222,7 +222,7 @@ export const getAssessmentQuestions = async (disciplineId: string): Promise<stri
       .eq('is_leaf', true)
       .eq('is_cross_ref_only', false)
       .is('deprecated_at', null)
-      .not('ale_id', 'is', null)
+      .not('lea_id', 'is', null)
 
     const nodeIds = (nodes || []).map((n: any) => n.node_id)
     if (nodeIds.length === 0) continue

@@ -41,7 +41,7 @@ _Generated: 2026-03-31 | Source: `_config/moduleRegistry.ts` · 187 modules acro
 
 ## Top 10 Priority Modules
 
-These are the highest-priority modules with full ALE question sets and multi-phase support.
+These are the highest-priority modules with full LEA question sets and multi-phase support.
 
 | # | Title | ID | Type | Subject | Code Ref |
 |---|-------|-----|------|---------|----------|
@@ -561,6 +561,6 @@ These are the highest-priority modules with full ALE question sets and multi-pha
 
 ---
 
-_★ = Top-10 priority module with full ALE question set and multi-phase support_
+_★ = Top-10 priority module with full LEA question set and multi-phase support_
 
 _End of catalog. Total: **187 modules**._

@@ -48,7 +48,7 @@ export const getWikiArticleBySlug = async (slug: string) => {
       article_id: 'storybook-article',
       slug,
       title: wikiArticleHeroFixture.title,
-      ale_tests_you: wikiArticleHeroFixture.aleTestsYou,
+      lea_tests_you: wikiArticleHeroFixture.leaTestsYou,
     }
   }
 

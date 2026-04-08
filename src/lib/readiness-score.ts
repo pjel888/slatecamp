@@ -19,8 +19,8 @@
 
 export interface NodeMasteryInput {
   topic_id: string
-  ale_id: string | null
-  subject_ale_id: string             // e.g., 'ALE-HIST'
+  lea_id: string | null
+  subject_lea_id: string             // e.g., 'LEA-HIST'
   subject_name: string
   prc_area: 'A' | 'B' | 'C'
   area_weight_pct: number            // 30 or 40
@@ -43,7 +43,7 @@ export interface NodeMasteryInput {
 }
 
 export interface SubjectScore {
-  ale_id: string
+  lea_id: string
   name: string
   prc_area: 'A' | 'B' | 'C'
   score: number                     // 0–100
@@ -51,7 +51,7 @@ export interface SubjectScore {
   touchedCount: number              // nodes with mastery data
   greyCount: number                 // unvisited nodes (no user_node_mastery row)
   thinCoverageCount: number         // nodes with < 5 distinct_questions_seen
-  belowFloor: boolean               // score < 50 (ALE subject floor requirement)
+  belowFloor: boolean               // score < 50 (LEA subject floor requirement)
 }
 
 export interface ReadinessResult {
@@ -65,11 +65,11 @@ export interface ReadinessResult {
   ceilingValue: number | null       // what the ceiling is (70, 75, 82, 87, 92, or null)
   ceilingReason: string | null      // why the ceiling is active
   greyPenalty: number               // 0.0–1.0 penalty from unvisited nodes
-  activeCoverageGaps: string[]      // node ale_ids in 'thin_coverage' state
+  activeCoverageGaps: string[]      // node lea_ids in 'thin_coverage' state
 }
 
 export interface SubjectLeafCounts {
-  [ale_id: string]: number          // total leaf nodes per subject
+  [lea_id: string]: number          // total leaf nodes per subject
 }
 
 // ─────────────────────────────────────────────────────────────
@@ -124,7 +124,7 @@ export const computeReadinessScore = (
   touchedNodes: NodeMasteryInput[],
   totalActiveLeafCount: number,
   allSubjects: Array<{
-    ale_id: string
+    lea_id: string
     name: string
     prc_area: 'A' | 'B' | 'C'
     subject_weight_within_area_pct: number
@@ -160,15 +160,15 @@ export const computeReadinessScore = (
   // Group touched nodes by subject
   const subjectMap = new Map<string, typeof effectiveNodeScores>()
   for (const item of effectiveNodeScores) {
-    const key = item.nodeInput.subject_ale_id
+    const key = item.nodeInput.subject_lea_id
     if (!subjectMap.has(key)) subjectMap.set(key, [])
     subjectMap.get(key)!.push(item)
   }
 
   // Build sub-scores
   const subScores: SubjectScore[] = allSubjects.map(subject => {
-    const subjectNodes = subjectMap.get(subject.ale_id) ?? []
-    const totalLeafsForSubject = subjectLeafCounts[subject.ale_id] ?? 0
+    const subjectNodes = subjectMap.get(subject.lea_id) ?? []
+    const totalLeafsForSubject = subjectLeafCounts[subject.lea_id] ?? 0
     const touchedCount = subjectNodes.length
     const greyCount = Math.max(0, totalLeafsForSubject - touchedCount)
 
@@ -192,7 +192,7 @@ export const computeReadinessScore = (
     ).length
 
     return {
-      ale_id: subject.ale_id,
+      lea_id: subject.lea_id,
       name: subject.name,
       prc_area: subject.prc_area,
       score: Math.round(rawSubjectScore * 10) / 10,
@@ -218,7 +218,7 @@ export const computeReadinessScore = (
 
   for (const sub of subScores) {
     const areaWeight = PRC_AREA_WEIGHTS[sub.prc_area] ?? 0.30
-    const matchingSubject = allSubjects.find(s => s.ale_id === sub.ale_id)
+    const matchingSubject = allSubjects.find(s => s.lea_id === sub.lea_id)
     const subjectWeight = matchingSubject?.subject_weight_within_area_pct ?? 1
     const areaTotal = areaWeightSumByArea.get(sub.prc_area) ?? subjectWeight
     const finalWeight = areaWeight * (subjectWeight / areaTotal)
@@ -305,7 +305,7 @@ export const computeReadinessScore = (
 
   const activeCoverageGaps = touchedNodes
     .filter(n => n.distinct_questions_seen < 5)
-    .map(n => n.ale_id ?? n.topic_id)
+    .map(n => n.lea_id ?? n.topic_id)
     .filter(Boolean) as string[]
 
   // ── Step 10: below-floor subjects ──

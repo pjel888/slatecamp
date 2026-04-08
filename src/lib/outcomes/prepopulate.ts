@@ -3,7 +3,7 @@
 import { createClient } from '@/lib/supabase/server'
 
 /**
- * Pre-populate exam_outcomes rows for all active users before an ALE batch.
+ * Pre-populate exam_outcomes rows for all active users before an LEA batch.
  * Called manually (or via cron) 1 day before PRC results release.
  * Users then just confirm pass/fail — all analytics data is already there.
  */

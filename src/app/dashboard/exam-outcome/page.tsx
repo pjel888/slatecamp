@@ -7,7 +7,7 @@ import ExamOutcomeSurvey from './ExamOutcomeSurvey'
  * Exam Outcome Survey — D3
  *
  * 3 questions only:
- * 1. "Did you take the June 2026 ALE?" → passed / failed / did not take
+ * 1. "Did you take the June 2026 LEA?" → passed / failed / did not take
  * 2. (If passed or failed) "What was your reported score?" → optional number
  * 3. "Thank you. Your result helps us improve SlateCamp."
  *
@@ -27,7 +27,7 @@ const ExamOutcomePage = async () => {
     <SharedPageLayout>
       <div className="mx-auto w-full max-w-md px-4 py-12">
         <h1 className="font-[family-name:var(--font-boldonse)] text-xl font-bold text-text-primary">
-          How did the {CURRENT_EXAM_BATCH} ALE go?
+          How did the {CURRENT_EXAM_BATCH} LEA go?
         </h1>
         <p className="mt-2 text-sm text-text-secondary">
           Your response helps us improve SlateCamp for the next batch of candidates.

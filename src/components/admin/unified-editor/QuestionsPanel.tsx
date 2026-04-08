@@ -830,7 +830,7 @@ const QuestionCard = ({
   onUndoDelete,
 }: QuestionCardProps) => {
   const node = taxonomyNodes.find((n) => n.node_id === question.topic_id)
-  const aleId = node?.ale_id || null
+  const leaId = node?.lea_id || null
   const nodeName = node?.name || null
   const hasCitation = Boolean(question.code_citation)
   const hasRationale = Boolean(question.rationale)
@@ -882,8 +882,8 @@ const QuestionCard = ({
 
           <DifficultyBar value={question.difficulty} />
 
-          {aleId && (
-            <span className="font-mono text-[11px] text-text-tertiary">{aleId}</span>
+          {leaId && (
+            <span className="font-mono text-[11px] text-text-tertiary">{leaId}</span>
           )}
 
           {hasCitation && (
@@ -930,8 +930,8 @@ const QuestionCard = ({
             <span className="h-2 w-2 shrink-0 rounded-full bg-warning" title="Unsaved changes" />
           )}
           <DifficultyBar value={question.difficulty} />
-          {aleId && (
-            <span className="font-mono text-[11px] text-text-tertiary">{aleId}</span>
+          {leaId && (
+            <span className="font-mono text-[11px] text-text-tertiary">{leaId}</span>
           )}
         </div>
         <div className="flex items-center gap-2">
@@ -959,7 +959,7 @@ const QuestionCard = ({
 
       <QuestionCardExpanded
         question={question}
-        nodeAleId={aleId}
+        nodeAleId={leaId}
         nodeName={nodeName}
         onUpdate={onUpdate}
         onDelete={onDelete}
@@ -1015,7 +1015,7 @@ const TaxonomyGroup = ({
           <path d="M4 2l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
         <span className="font-mono text-[11px] text-text-tertiary">
-          {node.ale_id || node.node_id.slice(0, 12)}
+          {node.lea_id || node.node_id.slice(0, 12)}
         </span>
         <span className="text-xs font-medium text-text-secondary">&mdash; {node.name}</span>
         <span className="text-[11px] text-text-tertiary">
@@ -1165,7 +1165,7 @@ export const QuestionsPanel = ({
         node: {
           node_id: '__ungrouped__',
           name: 'Other',
-          ale_id: null,
+          lea_id: null,
           level: 0,
           parent_id: null,
           subject_area: '',

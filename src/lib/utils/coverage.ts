@@ -6,7 +6,7 @@
 export interface CoverageCellData {
   node_id: string
   name: string
-  ale_id: string | null
+  lea_id: string | null
   questionCount: number
   hasArticle: boolean
   examFrequency: string | null

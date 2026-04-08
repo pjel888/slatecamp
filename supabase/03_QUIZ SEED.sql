@@ -83,7 +83,7 @@ INSERT INTO public.questions (topic_id, text, options, correct_option_id, ration
 -- ------------------------------------------------------------
 (
     '00000000-0000-0000-0003-000000000031', 
-    'How many years of diversified experience are required before taking the ALE?', 
+    'How many years of diversified experience are required before taking the LEA?', 
     '[{"id": "a", "text": "1 year"}, {"id": "b", "text": "2 years"}, {"id": "c", "text": "3 years"}, {"id": "d", "text": "5 years"}]'::jsonb, 
     'b', 
     'Section 13 of RA 9266 requires at least two years of experience.', 

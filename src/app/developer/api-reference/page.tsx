@@ -85,7 +85,7 @@ const cronEndpoints = [
 //   blindspot_queues    — skip users with pending/in_progress queues
 //   user_subscriptions  — paid users only (active/trialing, tier != free)
 //   user_node_mastery   — weak nodes (mastery < 0.4)
-//   taxonomy_tree       — grey leaf nodes (is_leaf, not deprecated, has ale_id)
+//   taxonomy_tree       — grey leaf nodes (is_leaf, not deprecated, has lea_id)
 
 // Tables written:
 //   blindspot_queues    — INSERT { user_id, node_ids[3], question_count:12,

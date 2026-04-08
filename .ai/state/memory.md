@@ -640,6 +640,15 @@
 - **Re-enablement path documented:** Clear steps to reverse changes when payments are ready
 - **Next action:** Execute plan to fix build and enable "Free Mode" operation
 
+### ALE to LEA Global Migration (2026-04-08)
+- **Terminology Update:** All references to "ALE" (Architects Licensure Exam) migrated to "LEA" (Licensure Exam for Architects) per PRC guidelines.
+- **Database Schema:** Columns renamed in `profiles` (`lea_result`), `taxonomy_tree` (`lea_id`), `wiki_articles` (`lea_tests_you`), `code_updates` (`lea_id`, `is_lea_testable`), and `models_3d` (`lea_question_count`, `lea_question_type`).
+- **Data Content:** Global case-sensitive replacement in `camp_trails`, `wiki_articles`, `questions`, and `taxonomy_tree`.
+- **Codebase:** 5-pass regex refactor applied to all `.tsx`, `.ts`, `.sql`, and `.md` files, preserving non-exam terms like "scale", "palette", "alert", and "rationale".
+- **Redirects:** `next.config.ts` implements permanent 301 redirects from `/ale-*` and `/dashboard/wiki/ale-*` to `/lea-*` equivalents.
+- **Assets:** Renamed `.ai/skills/ale-*` and archive directories to `lea-*`.
+- **Rollback:** Reverse script available at `supabase/migrations/rollback_lea_to_ale.sql`.
+
 ---
 
 *Add verified facts here. Every entry must be traceable to a source file.*

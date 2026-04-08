@@ -5,12 +5,12 @@
 
 CREATE TABLE IF NOT EXISTS public.code_updates (
   update_id       UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  ale_id          TEXT REFERENCES public.taxonomy_tree(ale_id) ON DELETE SET NULL,
+  lea_id          TEXT REFERENCES public.taxonomy_tree(lea_id) ON DELETE SET NULL,
   summary         TEXT NOT NULL,
   previous_value  TEXT,
   new_value       TEXT,
   effective_date  DATE,
-  is_ale_testable BOOLEAN NOT NULL DEFAULT true,
+  is_lea_testable BOOLEAN NOT NULL DEFAULT true,
   published_at    TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 
@@ -22,6 +22,6 @@ CREATE POLICY "cu_admin_manage" ON public.code_updates
   USING (EXISTS (SELECT 1 FROM auth.users WHERE users.id = auth.uid()
     AND (users.raw_app_meta_data ->> 'role') = 'admin'));
 
-CREATE INDEX idx_code_updates_ale_id ON public.code_updates (ale_id)
-  WHERE ale_id IS NOT NULL;
+CREATE INDEX idx_code_updates_lea_id ON public.code_updates (lea_id)
+  WHERE lea_id IS NOT NULL;
 CREATE INDEX idx_code_updates_published ON public.code_updates (published_at DESC);

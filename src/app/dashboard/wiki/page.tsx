@@ -31,7 +31,7 @@ export default function WikiPage() {
               <SCIcon icon={MagnifyingGlass} size="sm" className='text-warning' />
             </div>
             <h3 className='font-dm-mono text-[11px] font-medium uppercase tracking-[0.15em] text-text-2'>Syllabus Mapped</h3>
-            <p className='text-xs text-muted-foreground leading-relaxed'>Every article is aligned strictly with the 8 ALE root categories.</p>
+            <p className='text-xs text-muted-foreground leading-relaxed'>Every article is aligned strictly with the 8 LEA root categories.</p>
           </div>
 
           <div className='p-4 bg-card rounded-md border border-border shadow-sm space-y-2'>

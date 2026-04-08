@@ -130,7 +130,7 @@ export const PacingAccuracy = ({ data }: Props) => {
     <Card className="border-border bg-card p-2 relative h-full">
       <RichInfoPopover
         title="Session Pacing vs. Accuracy"
-        description="Each dot is one session, colored by mode. Vertical line = ALE target pace (120s). Horizontal line = 75% passing threshold. Top-left = optimal."
+        description="Each dot is one session, colored by mode. Vertical line = LEA target pace (120s). Horizontal line = 75% passing threshold. Top-left = optimal."
       />
       <CardHeader className="p-2 pt-1">
         <CardTitle className="text-[11px] font-bold tracking-wider uppercase text-muted-foreground">

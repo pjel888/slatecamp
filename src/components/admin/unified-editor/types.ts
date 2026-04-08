@@ -6,7 +6,7 @@ export interface ArticleData {
   slug: string
   content: string
   status: string
-  ale_tests_you: string | null
+  lea_tests_you: string | null
   updated_note: string | null
   subject_label: string | null
   difficulty_label: string | null
@@ -68,7 +68,7 @@ export interface EIPromptData {
 export interface TaxonomyNodeInfo {
   node_id: string
   name: string
-  ale_id: string | null
+  lea_id: string | null
   level: number
   parent_id: string | null
   subject_area: string

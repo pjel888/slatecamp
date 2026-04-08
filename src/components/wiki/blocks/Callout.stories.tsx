@@ -38,7 +38,7 @@ export const VariantMatrix: Story = {
         Exit count and exit width are related, but they are not the same question.
       </Callout>
       <Callout variant="version-alert">
-        Some accessibility values changed in the 2024 IRR and still appear in ALE distractors.
+        Some accessibility values changed in the 2024 IRR and still appear in LEA distractors.
       </Callout>
     </div>
   ),

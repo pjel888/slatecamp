@@ -11,7 +11,7 @@ import Link from 'next/link'
  * The account gate becomes "save your results" not "sign up for a product."
  */
 
-// Sample questions — representative of ALE subjects
+// Sample questions — representative of LEA subjects
 const SAMPLE_QUESTIONS = [
   {
     id: 'sample-1',

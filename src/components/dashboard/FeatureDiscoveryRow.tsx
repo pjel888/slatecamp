@@ -242,7 +242,7 @@ export function RecentNotesCard({
           </TooltipTrigger>
           <TooltipContent side='top'>
             Notes you&apos;ve saved while reading articles in the Wiki or
-            reviewing quiz explanations. Everything is tagged to the ALE
+            reviewing quiz explanations. Everything is tagged to the LEA
             taxonomy automatically.
           </TooltipContent>
         </Tooltip>

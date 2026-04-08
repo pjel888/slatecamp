@@ -4,7 +4,7 @@
 // dashboard. Pure data aggregation — no React, no side effects.
 
 import { ALL_MODULES } from '@/features/3d-lab/config/registry'
-import { ASSET_TAXONOMY, ALE_SUBJECTS } from '@/features/3d-lab/config/taxonomy'
+import { ASSET_TAXONOMY, LEA_SUBJECTS } from '@/features/3d-lab/config/taxonomy'
 import type { CategoryKey } from '@/features/3d-lab/config/taxonomy'
 import type { ModuleConfig } from '@/features/3d-lab/types/templates'
 
@@ -28,19 +28,19 @@ export interface CategoryNode {
   description: string
   icon: string
   phase: number
-  aleSubject: string
+  leaSubject: string
   modules: ModelNode[]
   moduleCount: number
 }
 
-export interface AleSubjectNode {
+export interface LeaSubjectNode {
   label: string
   categories: CategoryNode[]
   totalModules: number
 }
 
 export interface RegistryTree {
-  subjects: AleSubjectNode[]
+  subjects: LeaSubjectNode[]
   totalModules: number
   totalCategories: number
 }
@@ -70,7 +70,7 @@ const CATEGORY_FOLDER_MAP: Record<CategoryKey, string> = {
 
 /**
  * Builds a fully hierarchical RegistryTree from the flat ALL_MODULES array,
- * grouped first by ALE subject then by category.
+ * grouped first by LEA subject then by category.
  */
 export function buildRegistryTree(): RegistryTree {
   // Group modules by categoryId
@@ -93,9 +93,9 @@ export function buildRegistryTree(): RegistryTree {
     })
   }
 
-  // Build AleSubjectNode array following ALE_SUBJECTS order
-  const subjects: AleSubjectNode[] = ALE_SUBJECTS.map((aleSubject) => {
-    const categories: CategoryNode[] = aleSubject.categories.map((catKey) => {
+  // Build LeaSubjectNode array following LEA_SUBJECTS order
+  const subjects: LeaSubjectNode[] = LEA_SUBJECTS.map((leaSubject) => {
+    const categories: CategoryNode[] = leaSubject.categories.map((catKey) => {
       const taxonomy = ASSET_TAXONOMY[catKey as CategoryKey]
       const modules = modulesByCategory.get(catKey) ?? []
 
@@ -106,7 +106,7 @@ export function buildRegistryTree(): RegistryTree {
         description: taxonomy.description,
         icon: taxonomy.icon,
         phase: taxonomy.phase,
-        aleSubject: taxonomy.aleSubject,
+        leaSubject: taxonomy.leaSubject,
         modules,
         moduleCount: modules.length,
       }
@@ -115,7 +115,7 @@ export function buildRegistryTree(): RegistryTree {
     const totalModules = categories.reduce((sum, cat) => sum + cat.moduleCount, 0)
 
     return {
-      label: aleSubject.label,
+      label: leaSubject.label,
       categories,
       totalModules,
     }

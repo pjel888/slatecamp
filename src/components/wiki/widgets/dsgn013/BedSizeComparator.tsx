@@ -21,7 +21,7 @@ const BEDS = [
     svgH: 127,
     rectW: 89,
     rectH: 125,
-    info: 'Double bed (1,370 × 1,900 mm) — Two occupants, budget. The most common ALE trap: students confuse this with queen. Needs 600 mm clearance on both sides for double occupancy.',
+    info: 'Double bed (1,370 × 1,900 mm) — Two occupants, budget. The most common LEA trap: students confuse this with queen. Needs 600 mm clearance on both sides for double occupancy.',
   },
   {
     name: 'Queen',
@@ -31,7 +31,7 @@ const BEDS = [
     svgH: 136,
     rectW: 99,
     rectH: 134,
-    info: 'Queen bed (1,520 × 2,030 mm) — Two occupants, standard. The most tested bed size on the ALE. Length is 2,030 mm (not 2,000). 150 mm wider than double, 130 mm longer.',
+    info: 'Queen bed (1,520 × 2,030 mm) — Two occupants, standard. The most tested bed size on the LEA. Length is 2,030 mm (not 2,000). 150 mm wider than double, 130 mm longer.',
   },
   {
     name: 'King',

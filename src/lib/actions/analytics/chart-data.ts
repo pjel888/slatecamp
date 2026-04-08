@@ -113,7 +113,7 @@ const fetchTaxonomyNodeMap = async (
     .eq('discipline_id', disciplineId)
     .eq('is_cross_ref_only', false)
     .is('deprecated_at', null)
-    .not('ale_id', 'is', null)
+    .not('lea_id', 'is', null)
   return new Map((data || []).map((n: TaxNode) => [n.node_id, n]))
 }
 
@@ -387,7 +387,7 @@ export const getStudyVelocityData = async (): Promise<StudyVelocityData> => {
       .eq('discipline_id', stats.current_discipline_id)
       .eq('is_cross_ref_only', false)
       .is('deprecated_at', null)
-      .not('ale_id', 'is', null)
+      .not('lea_id', 'is', null)
       .eq('level', 2)
 
     totalNodesInTaxonomy = count ?? 0
@@ -580,7 +580,7 @@ export const getExamCountdownData = async (): Promise<ExamCountdownData> => {
       .eq('discipline_id', disciplineRes.data.current_discipline_id)
       .eq('is_cross_ref_only', false)
       .is('deprecated_at', null)
-      .not('ale_id', 'is', null)
+      .not('lea_id', 'is', null)
       .eq('level', 2)
 
     totalTaxonomyNodes = count ?? 0

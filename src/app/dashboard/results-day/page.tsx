@@ -29,7 +29,7 @@ const ResultsDayPage = async () => {
         </div>
 
         <ResultsDayClient
-          aleResult={profile.aleResult}
+          leaResult={profile.leaResult}
           firstName={profile.firstName}
           readinessScore={profile.readinessScore}
           topSubjects={profile.topSubjects}

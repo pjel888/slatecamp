@@ -76,7 +76,7 @@ export const WikiSection = () => (
 
       <StaggerItem>
         <p className='mt-4 max-w-[440px] text-[14px] leading-relaxed text-black/60'>
-          No more hunting through PDFs. The SlateCamp Wiki maps every ALE
+          No more hunting through PDFs. The SlateCamp Wiki maps every LEA
           topic to its source — PD 1096, RA 9266, NBCP, and more — with
           your personal notes workspace alongside.
         </p>
@@ -85,7 +85,7 @@ export const WikiSection = () => (
       {/* Feature chips */}
       <StaggerItem>
         <div className='mt-5 flex flex-wrap gap-2'>
-          <FeaturePill variant='on-amber'>All ALE subjects covered</FeaturePill>
+          <FeaturePill variant='on-amber'>All LEA subjects covered</FeaturePill>
           <FeaturePill variant='on-amber'>Linked to questions</FeaturePill>
           <FeaturePill variant='on-amber'>Personal notes workspace</FeaturePill>
           <FeaturePill variant='on-amber'>PD 1096 · RA 9266 · NBCP</FeaturePill>

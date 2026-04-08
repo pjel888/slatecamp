@@ -50,7 +50,7 @@ export function SubjectRadarChart({ data }: SubjectRadarChartProps) {
           Subject Mastery
         </span>
         <h3 className="text-[15px] font-semibold text-text-primary mt-0.5">
-          Your ALE Coverage
+          Your LEA Coverage
         </h3>
       </div>
 

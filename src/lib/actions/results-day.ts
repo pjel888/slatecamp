@@ -6,7 +6,7 @@ import { trackServerEvent } from '@/lib/analytics-server'
 
 export interface ResultsDayProfile {
   firstName: string | null
-  aleResult: string | null
+  leaResult: string | null
   readinessScore: number | null
   topSubjects: Array<{ name: string; score: number }>
 }
@@ -18,7 +18,7 @@ export interface BannerEligibility {
 
 /**
  * Check if the Results Day banner should show on dashboard.
- * Condition: target_exam_date was 3–14 days ago AND ale_result IS NULL.
+ * Condition: target_exam_date was 3–14 days ago AND lea_result IS NULL.
  */
 export const getResultsDayBannerEligibility = async (): Promise<BannerEligibility> => {
   const { data: { user } } = await getUser()
@@ -28,11 +28,11 @@ export const getResultsDayBannerEligibility = async (): Promise<BannerEligibilit
 
   const { data: profile } = await supabase
     .from('profiles')
-    .select('target_exam_date, ale_result')
+    .select('target_exam_date, lea_result')
     .eq('id', user.id)
     .single()
 
-  if (!profile?.target_exam_date || profile.ale_result !== null) {
+  if (!profile?.target_exam_date || profile.lea_result !== null) {
     return { show: false, daysAgo: null }
   }
 
@@ -59,7 +59,7 @@ export const getResultsDayProfile = async (): Promise<ResultsDayProfile | null> 
 
   const { data: profile } = await supabase
     .from('profiles')
-    .select('full_name, display_name, ale_result')
+    .select('full_name, display_name, lea_result')
     .eq('id', user.id)
     .single()
 
@@ -85,7 +85,7 @@ export const getResultsDayProfile = async (): Promise<ResultsDayProfile | null> 
 
   return {
     firstName,
-    aleResult: profile.ale_result,
+    leaResult: profile.lea_result,
     readinessScore: stats?.global_readiness_score
       ? Math.round(stats.global_readiness_score)
       : null,
@@ -94,8 +94,8 @@ export const getResultsDayProfile = async (): Promise<ResultsDayProfile | null> 
 }
 
 /**
- * Record that the user passed the ALE.
- * Sets ale_result = 'passed', account_mode = 'alumni'.
+ * Record that the user passed the LEA.
+ * Sets lea_result = 'passed', account_mode = 'alumni'.
  */
 export const recordPasserResult = async (): Promise<{ success: boolean; error?: string }> => {
   const { data: { user } } = await getUser()
@@ -106,7 +106,7 @@ export const recordPasserResult = async (): Promise<{ success: boolean; error?: 
   const { error } = await supabase
     .from('profiles')
     .update({
-      ale_result: 'passed',
+      lea_result: 'passed',
       account_mode: 'professional_mode',
       updated_at: new Date().toISOString(),
     })
@@ -136,7 +136,7 @@ export const recordNonPasserResult = async (): Promise<{ success: boolean; error
   const { error: profileError } = await supabase
     .from('profiles')
     .update({
-      ale_result: 'failed',
+      lea_result: 'failed',
       reviewer_type: 'returning_reviewer',
       updated_at: new Date().toISOString(),
     })

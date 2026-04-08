@@ -12,7 +12,7 @@ export { classifyCoverage, type CoverageCellData, type CoverageLevel }
 interface TaxonomyNode {
   node_id: string
   name: string
-  ale_id: string | null
+  lea_id: string | null
   parent_id: string | null
   level: number
   exam_frequency: string | null
@@ -31,7 +31,7 @@ export const fetchCoverageData = async () => {
   // 1. Get taxonomy nodes at level 1 and 2
   const { data: nodes, error: nodesError } = await supabase
     .from('taxonomy_tree')
-    .select('node_id, name, ale_id, parent_id, level, exam_frequency')
+    .select('node_id, name, lea_id, parent_id, level, exam_frequency')
     .in('level', [1, 2])
     .is('deprecated_at', null)
     .eq('is_cross_ref_only', false)
@@ -82,7 +82,7 @@ export const fetchCoverageData = async () => {
     const cell: CoverageCellData = {
       node_id: n.node_id,
       name: n.name,
-      ale_id: n.ale_id,
+      lea_id: n.lea_id,
       questionCount: questionCounts.get(n.node_id) ?? 0,
       hasArticle: articleNodeSet.has(n.node_id),
       examFrequency: n.exam_frequency,
@@ -96,7 +96,7 @@ export const fetchCoverageData = async () => {
   const allCells = level2Nodes.map((n) => ({
     node_id: n.node_id,
     name: n.name,
-    ale_id: n.ale_id,
+    lea_id: n.lea_id,
     questionCount: questionCounts.get(n.node_id) ?? 0,
     hasArticle: articleNodeSet.has(n.node_id),
     examFrequency: n.exam_frequency,

@@ -12,7 +12,7 @@ export const getTaxonomyNodes = async () => {
 
   const { data, error } = await supabase
     .from('taxonomy_tree')
-    .select('node_id, name, level, subject_area, is_leaf, parent_id, discipline_id, sort_order, ale_id')
+    .select('node_id, name, level, subject_area, is_leaf, parent_id, discipline_id, sort_order, lea_id')
     .order('level', { ascending: true })
     .order('sort_order', { ascending: true, nullsFirst: false })
     .order('name', { ascending: true })
@@ -96,7 +96,7 @@ export const createTaxonomyNode = async (data: {
       is_leaf: parsed.data.level === 3,
       parent_id: parsed.data.parent_id,
       sort_order: sortOrder,
-      ale_id: parsed.data.level === 3 ? `USER-NEW-${Date.now()}` : null,
+      lea_id: parsed.data.level === 3 ? `USER-NEW-${Date.now()}` : null,
     })
     .select('node_id, name, level, subject_area, is_leaf, parent_id, discipline_id')
     .single()

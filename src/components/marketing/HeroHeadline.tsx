@@ -68,7 +68,7 @@ export const HeroHeadline = () => {
           ref={taglineRef}
           className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 motion-safe:delay-200 mt-6 max-w-lg text-sm leading-relaxed text-primary font-medium w-fit px-2'
         >
-          One readiness engine for the ALE — adaptive quizzing, syllabus-mapped
+          One readiness engine for the LEA — adaptive quizzing, syllabus-mapped
           content, and a score that never lies.
         </p>
       </div>

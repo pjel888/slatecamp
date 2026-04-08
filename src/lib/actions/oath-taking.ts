@@ -29,7 +29,7 @@ export const getUpcomingOathSchedules = async () => {
 /**
  * Check if a user is eligible for oath-taking emails.
  * User must have:
- * 1. ale_result = 'passed'
+ * 1. lea_result = 'passed'
  * 2. Matching region in their profile or matching a schedule region
  */
 export const getUserOathEligibility = async (
@@ -41,7 +41,7 @@ export const getUserOathEligibility = async (
   // Get user profile
   const { data: profileData, error: profileError } = await supabase
     .from('profiles')
-    .select('id, full_name, ale_result, enrolled_review_center')
+    .select('id, full_name, lea_result, enrolled_review_center')
     .eq('id', userId)
     .single()
 
@@ -53,11 +53,11 @@ export const getUserOathEligibility = async (
     }
   }
 
-  // Check if user passed the ALE
-  if (profileData.ale_result !== 'passed') {
+  // Check if user passed the LEA
+  if (profileData.lea_result !== 'passed') {
     return {
       eligible: false,
-      reason: `ALE result is "${profileData.ale_result}", not "passed"`,
+      reason: `LEA result is "${profileData.lea_result}", not "passed"`,
       userName: profileData.full_name,
     }
   }

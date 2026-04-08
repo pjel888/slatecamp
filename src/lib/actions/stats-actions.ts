@@ -57,7 +57,7 @@ export const buildHeroStats = (
       label: 'Topics studied',
       description: '',
       delta: lastWeek.topics > 0 ? thisWeek.topics - lastWeek.topics : null,
-      tooltip: 'Number of distinct ALE topics you\'ve studied this week',
+      tooltip: 'Number of distinct LEA topics you\'ve studied this week',
     },
     {
       value: thisWeek.days,
@@ -88,7 +88,7 @@ export const buildWeekStats = (
       label: 'Topics Touched',
       subLabel: 'this week',
       delta: lastWeek.topics > 0 ? thisWeek.topics - lastWeek.topics : null,
-      tooltip: 'Number of distinct ALE topics you\'ve studied this week',
+      tooltip: 'Number of distinct LEA topics you\'ve studied this week',
     },
     {
       value: thisWeek.days,

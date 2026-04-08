@@ -32,13 +32,13 @@ const REVIEWER_OPTIONS: {
 }[] = [
   {
     value: 'first_taker',
-    label: 'Preparing for the ALE',
+    label: 'Preparing for the LEA',
     subLabel: 'First time taking the Licensure Exam',
   },
   {
     value: 'returning_reviewer',
     label: 'Returning reviewer — refining my strategy',
-    subLabel: 'You know the ALE. You know what needs to change.',
+    subLabel: 'You know the LEA. You know what needs to change.',
   },
   {
     value: 'undergrad',
@@ -221,7 +221,7 @@ export const OnboardingForm = ({
       {reviewerType === 'returning_reviewer' && (
         <div className="rounded-md border border-border bg-muted px-4 py-3">
           <p className="text-[13px] text-muted-foreground leading-relaxed">
-            You know the ALE. You know what needs to change.{' '}
+            You know the LEA. You know what needs to change.{' '}
             <span className="font-medium text-foreground">
               SlateCamp gives you the data to change it.
             </span>

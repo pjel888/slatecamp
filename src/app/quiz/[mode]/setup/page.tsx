@@ -103,7 +103,7 @@ const QuizSetupPage = async ({ params, searchParams }: SetupPageProps) => {
   // Fetch all level=1 subject nodes (children of discipline root)
   const { data: subjectNodes } = await supabase
     .from('taxonomy_tree')
-    .select('node_id, name, ale_id, parent_id')
+    .select('node_id, name, lea_id, parent_id')
     .eq('level', 1)
     .order('name', { ascending: true })
 
@@ -116,7 +116,7 @@ const QuizSetupPage = async ({ params, searchParams }: SetupPageProps) => {
   // Fetch subtopics (level=2) for all subjects in one query
   const { data: subtopicNodes } = await supabase
     .from('taxonomy_tree')
-    .select('node_id, name, ale_id, parent_id, is_leaf')
+    .select('node_id, name, lea_id, parent_id, is_leaf')
     .eq('level', 2)
     .in('parent_id', subjectIds)
     .order('name', { ascending: true })
@@ -153,7 +153,7 @@ const QuizSetupPage = async ({ params, searchParams }: SetupPageProps) => {
     const subtopic: TaxonomySubtopic = {
       nodeId: sub.node_id,
       name: sub.name,
-      aleId: sub.ale_id ?? null,
+      leaId: sub.lea_id ?? null,
       isLeaf: sub.is_leaf ?? true,
       masteryWeight: mastery?.mastery_weight ?? null,
       interactionCount: mastery?.interaction_count ?? 0,
@@ -170,7 +170,7 @@ const QuizSetupPage = async ({ params, searchParams }: SetupPageProps) => {
     return {
       nodeId: node.node_id,
       name: node.name,
-      aleId: node.ale_id ?? null,
+      leaId: node.lea_id ?? null,
       masteryWeight: mastery?.mastery_weight ?? null,
       interactionCount: mastery?.interaction_count ?? 0,
       subtopics: subtopicsByParent[node.node_id] ?? [],

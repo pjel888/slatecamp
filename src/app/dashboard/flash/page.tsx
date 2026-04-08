@@ -4,7 +4,7 @@ import { FlashHub } from './_components/FlashHub'
 import { getFlashCategories } from '@/lib/actions/flash-cards'
 
 export const metadata: Metadata = {
-  title: 'ALE Numbers Flash',
+  title: 'LEA Numbers Flash',
 }
 
 const FlashPage = async () => {

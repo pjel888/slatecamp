@@ -68,7 +68,7 @@ export default async function SettingsPage() {
       {/* Notifications — per-topic preferences */}
       <NotificationPreferences initialPreferences={notifPrefs} />
 
-      {/* Account Mode — only shown when ale_result is set (exam completed) */}
+      {/* Account Mode — only shown when lea_result is set (exam completed) */}
       {professionalModeData && (
         <AccountModeCard currentMode={professionalModeData.accountMode} />
       )}

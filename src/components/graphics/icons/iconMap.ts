@@ -53,7 +53,7 @@ export const progress = {
   fullSimulation: Certificate,
 }
 
-// Subjects (ALE)
+// Subjects (LEA)
 export const subjects = {
   structural: Buildings,
   utilities: TreeStructure,

@@ -82,7 +82,7 @@ export const PricingContent = () => {
         <TabsContent value="individuals">
           <div className="mt-3 mb-8 text-center">
             <p className="text-[13px] text-muted-foreground">
-              For architecture students and active ALE reviewees.
+              For architecture students and active LEA reviewees.
             </p>
           </div>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-3">

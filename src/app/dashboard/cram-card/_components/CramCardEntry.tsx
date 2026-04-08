@@ -12,10 +12,10 @@ export const CramCardEntry = ({ entry, index }: Props) => {
 
   return (
     <div className="bg-card rounded-md border border-border p-4 flex flex-col gap-2">
-      {/* Header row: number + ALE ID + frequency badge */}
+      {/* Header row: number + LEA ID + frequency badge */}
       <div className="flex items-center gap-2">
         <span className="font-mono text-[9px] text-primary leading-none">{entryNumber}</span>
-        <span className="font-mono text-[9px] text-primary leading-none">{entry.aleId}</span>
+        <span className="font-mono text-[9px] text-primary leading-none">{entry.leaId}</span>
         <span className="ml-auto font-mono text-[9px] text-muted-foreground leading-none uppercase">
           {entry.examFrequency}
         </span>

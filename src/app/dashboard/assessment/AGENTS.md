@@ -4,7 +4,7 @@
 # Assessment
 
 ## Purpose
-Initial onboarding assessment quiz for new users. Determines baseline readiness across all ALE disciplines (via IRT 2-parameter model). Authenticated page with mandatory completion before dashboard access; redirects completed users to main dashboard.
+Initial onboarding assessment quiz for new users. Determines baseline readiness across all LEA disciplines (via IRT 2-parameter model). Authenticated page with mandatory completion before dashboard access; redirects completed users to main dashboard.
 
 ## Key Files
 | File | Description |

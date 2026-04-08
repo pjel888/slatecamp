@@ -7,11 +7,11 @@ import { WallPaintPageClient } from './WallPaintPageClient'
 export const metadata: Metadata = {
   title: `Wall Paint Calculator — Free Tool | ${siteConfig.name}`,
   description:
-    'Estimate paintable wall area, liters of paint needed, and account for doors and windows. Free tool for architecture students and ALE exam prep.',
+    'Estimate paintable wall area, liters of paint needed, and account for doors and windows. Free tool for architecture students and LEA exam prep.',
   keywords: [
     'paint calculator',
     'wall paint estimating',
-    'ALE exam',
+    'LEA exam',
     'architecture tools',
     'paint coverage calculator',
   ],

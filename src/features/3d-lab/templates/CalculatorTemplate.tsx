@@ -182,10 +182,10 @@ function CalculatorLayout({
               </div>
               <div className="mt-4 rounded-md border border-border border-l-4 border-l-camp-orange bg-background p-3">
                 <p className="font-mono text-[8px] font-medium uppercase tracking-widest text-camp-orange mb-1">
-                  ALE Connection
+                  LEA Connection
                 </p>
                 <p className="font-sans text-xs text-foreground">
-                  This calculation is tested in the ALE (Building Technology).
+                  This calculation is tested in the LEA (Building Technology).
                 </p>
                 <Link
                   href="/pricing"

@@ -38,22 +38,22 @@ export const recomputeAndSaveReadinessScore = async (userId: string): Promise<vo
       .eq('is_leaf', true)
       .eq('is_cross_ref_only', false)
       .is('deprecated_at', null)
-      .not('ale_id', 'is', null),
+      .not('lea_id', 'is', null),
     supabase
       .from('taxonomy_tree')
-      .select('node_id, ale_id, name, prc_area, area_weight_pct, subject_weight_within_area_pct')
+      .select('node_id, lea_id, name, prc_area, area_weight_pct, subject_weight_within_area_pct')
       .eq('discipline_id', disciplineId)
       .eq('level', 1)
       .eq('is_cross_ref_only', false)
       .is('deprecated_at', null)
-      .not('ale_id', 'is', null),
+      .not('lea_id', 'is', null),
     supabase
       .from('taxonomy_tree')
       .select('node_id, parent_id, level')
       .eq('discipline_id', disciplineId)
       .eq('is_cross_ref_only', false)
       .is('deprecated_at', null)
-      .not('ale_id', 'is', null),
+      .not('lea_id', 'is', null),
   ])
 
   const totalLeafCount = totalLeafCountRes.count
@@ -93,15 +93,15 @@ export const recomputeAndSaveReadinessScore = async (userId: string): Promise<vo
     }
   }
 
-  // Count leaf nodes per subject (using ale_id of the subject)
+  // Count leaf nodes per subject (using lea_id of the subject)
   const subjectNodeIdToAleId = new Map<string, string>()
   for (const s of subjects) {
-    if (s.ale_id) subjectNodeIdToAleId.set(s.node_id, s.ale_id)
+    if (s.lea_id) subjectNodeIdToAleId.set(s.node_id, s.lea_id)
   }
 
   const subjectLeafCounts: SubjectLeafCounts = {}
   for (const s of subjects) {
-    if (s.ale_id) subjectLeafCounts[s.ale_id] = 0
+    if (s.lea_id) subjectLeafCounts[s.lea_id] = 0
   }
 
   // Count leaves (is_leaf nodes) per subject
@@ -112,14 +112,14 @@ export const recomputeAndSaveReadinessScore = async (userId: string): Promise<vo
     .eq('is_leaf', true)
     .eq('is_cross_ref_only', false)
     .is('deprecated_at', null)
-    .not('ale_id', 'is', null)
+    .not('lea_id', 'is', null)
 
   for (const leaf of (leafNodes ?? [])) {
     const subjectId = nodeToSubject.get(leaf.node_id)
     if (subjectId) {
-      const aleId = subjectNodeIdToAleId.get(subjectId)
-      if (aleId && subjectLeafCounts[aleId] !== undefined) {
-        subjectLeafCounts[aleId]++
+      const leaId = subjectNodeIdToAleId.get(subjectId)
+      if (leaId && subjectLeafCounts[leaId] !== undefined) {
+        subjectLeafCounts[leaId]++
       }
     }
   }
@@ -158,11 +158,11 @@ export const recomputeAndSaveReadinessScore = async (userId: string): Promise<vo
   const touchedTopicIds = masteryRows.map(r => r.topic_id)
   const { data: taxonomyMeta } = await supabase
     .from('taxonomy_tree')
-    .select('node_id, ale_id, bloom_level, difficulty, node_type, exam_frequency, is_cross_ref_only, deprecated_at')
+    .select('node_id, lea_id, bloom_level, difficulty, node_type, exam_frequency, is_cross_ref_only, deprecated_at')
     .in('node_id', touchedTopicIds)
 
   const taxMap = new Map<string, {
-    ale_id: string | null
+    lea_id: string | null
     bloom_level: string | null
     difficulty: number | null
     node_type: string | null
@@ -187,8 +187,8 @@ export const recomputeAndSaveReadinessScore = async (userId: string): Promise<vo
 
       return {
         topic_id: row.topic_id,
-        ale_id: tt.ale_id,
-        subject_ale_id: subjectNode?.ale_id ?? 'UNKNOWN',
+        lea_id: tt.lea_id,
+        subject_lea_id: subjectNode?.lea_id ?? 'UNKNOWN',
         subject_name: subjectNode?.name ?? 'Unknown',
         prc_area: (subjectNode?.prc_area ?? 'A') as 'A' | 'B' | 'C',
         area_weight_pct: subjectNode?.area_weight_pct ?? 30,
@@ -214,7 +214,7 @@ export const recomputeAndSaveReadinessScore = async (userId: string): Promise<vo
     nodeInputs,
     totalLeafCount,
     subjects.map(s => ({
-      ale_id: s.ale_id!,
+      lea_id: s.lea_id!,
       name: s.name,
       prc_area: s.prc_area as 'A' | 'B' | 'C',
       subject_weight_within_area_pct: s.subject_weight_within_area_pct ?? 25,
@@ -224,7 +224,7 @@ export const recomputeAndSaveReadinessScore = async (userId: string): Promise<vo
 
   // 9. Build sub_scores JSONB for DB storage
   const subScoresForDB: Record<string, any> = {
-    ...Object.fromEntries(result.subScores.map(s => [s.ale_id, {
+    ...Object.fromEntries(result.subScores.map(s => [s.lea_id, {
       score: s.score,
       nodeCount: s.nodeCount,
       touchedCount: s.touchedCount,
@@ -274,7 +274,7 @@ export const recomputeAndSaveReadinessScore = async (userId: string): Promise<vo
         projectedScore = Math.round(((touchedSum / nodeCount) * 100) * 10) / 10
       }
 
-      subScoresForDB['ALE-LAWS'] = {
+      subScoresForDB['LEA-LAWS'] = {
         score: projectedScore,
         nodeCount,
         touchedCount,

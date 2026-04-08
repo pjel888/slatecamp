@@ -20,7 +20,7 @@ const SPP_DOCS_DIR = path.join(process.cwd(), 'SPP Docs')
 /** Pre-existing taxonomy node for SPP Documents */
 const SPP_NODE_ID = '1042b5a6-e01e-4e1c-b9e3-5c3b31042f64'
 
-const SUBJECT_LABEL = 'ALE-PPJ · Professional Practice & Jurisprudence'
+const SUBJECT_LABEL = 'LEA-PPJ · Professional Practice & Jurisprudence'
 
 /** Exact file sequence as mandated by the directive */
 const FILE_SEQUENCE = [
@@ -205,7 +205,7 @@ async function main() {
       existingSlugs.add(slug)
 
       const readTime = estimateReadTime(rawContent)
-      const aleTestsYou = extractAleTestsYou(rawContent)
+      const leaTestsYou = extractAleTestsYou(rawContent)
 
       // ── Build payload ──────────────────────────────────────────────────
       const payload = {
@@ -216,7 +216,7 @@ async function main() {
         subject_label: SUBJECT_LABEL,
         difficulty_label: 'Intermediate',
         read_time: readTime,
-        ale_tests_you: aleTestsYou,
+        lea_tests_you: leaTestsYou,
         updated_note: 'SPP IRR 2010 (RA 9266)',
       }
 

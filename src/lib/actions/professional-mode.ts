@@ -9,12 +9,12 @@ export type AccountMode = 'review_mode' | 'professional_mode'
 
 export interface ProfessionalModeData {
   accountMode: AccountMode
-  aleResult: string | null
+  leaResult: string | null
   examDate: string | null
   daysSinceExam: number | null
-  /** true when exam_date passed ≥3 days ago AND ale_result is set */
+  /** true when exam_date passed ≥3 days ago AND lea_result is set */
   showTransitionPrompt: boolean
-  /** true when ale_result = 'failed' AND ≥30 days since exam (opt-in path) */
+  /** true when lea_result = 'failed' AND ≥30 days since exam (opt-in path) */
   showOptInPrompt: boolean
 }
 
@@ -29,14 +29,14 @@ export const getProfessionalModeData = async (): Promise<ProfessionalModeData | 
 
   const { data: profile } = await supabase
     .from('profiles')
-    .select('account_mode, ale_result, target_exam_date')
+    .select('account_mode, lea_result, target_exam_date')
     .eq('id', user.id)
     .single()
 
   if (!profile) return null
 
   const accountMode = (profile.account_mode ?? 'review_mode') as AccountMode
-  const aleResult = profile.ale_result ?? null
+  const leaResult = profile.lea_result ?? null
   const examDateRaw = profile.target_exam_date ?? null
   const examDate = examDateRaw ? new Date(examDateRaw).toISOString() : null
 
@@ -47,16 +47,16 @@ export const getProfessionalModeData = async (): Promise<ProfessionalModeData | 
   }
 
   const examHasPassed = daysSinceExam !== null && daysSinceExam >= 3
-  const showTransitionPrompt = examHasPassed && aleResult === 'passed'
+  const showTransitionPrompt = examHasPassed && leaResult === 'passed'
   const showOptInPrompt =
     examHasPassed &&
     daysSinceExam !== null &&
     daysSinceExam >= 30 &&
-    aleResult === 'failed'
+    leaResult === 'failed'
 
   return {
     accountMode,
-    aleResult,
+    leaResult,
     examDate,
     daysSinceExam,
     showTransitionPrompt,

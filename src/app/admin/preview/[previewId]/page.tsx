@@ -150,12 +150,12 @@ export default async function PreviewPage(props: { params: Promise<{ previewId: 
               </div>
               
               <WikiArticleHero
-                subject={article.subject_label || (node?.ale_id ? `${node.ale_id} · ${getSubjectName(node.subject_area)}` : getSubjectName(node?.subject_area))}
+                subject={article.subject_label || (node?.lea_id ? `${node.lea_id} · ${getSubjectName(node.subject_area)}` : getSubjectName(node?.subject_area))}
                 difficulty={article.difficulty_label || mapDifficulty(node?.difficulty)}
                 readTime={`~${readingTime} min`}
                 title={article.title}
                 updatedNote={article.updated_note || `Updated ${new Date(article.updated_at).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}`}
-                aleTestsYou={article.ale_tests_you || node?.description || 'Identify key concepts and apply them to exam scenarios.'}
+                leaTestsYou={article.lea_tests_you || node?.description || 'Identify key concepts and apply them to exam scenarios.'}
               />
 
               <WikiArticle

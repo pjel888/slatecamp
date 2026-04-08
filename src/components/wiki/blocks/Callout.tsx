@@ -15,7 +15,7 @@ type CalloutVariant =
   | 'danger'
   | 'requirement'
   | 'most-tested'
-  | 'ale-watch'
+  | 'lea-watch'
   | 'version-alert'
   | 'exam-tip'
   | 'authority'
@@ -119,8 +119,8 @@ const VARIANTS: Record<CalloutVariant, VariantConfig> = {
     labelColor: 'text-[var(--primary)]',
     eyebrow: true,
   },
-  'ale-watch': {
-    label: 'ALE Watch',
+  'lea-watch': {
+    label: 'LEA Watch',
     border: 'border-[var(--color-signal-red)]',
     bg: 'bg-[var(--color-signal-red)]/5',
     iconColor: 'text-[var(--color-signal-red)]',
@@ -165,7 +165,7 @@ export interface CalloutProps {
  * Standard variants (note, warning, tip, example, info, danger, requirement,
  * exam-tip, authority): icon + label + body layout.
  *
- * Eyebrow variants (most-tested, ale-watch, version-alert): small mono
+ * Eyebrow variants (most-tested, lea-watch, version-alert): small mono
  * eyebrow label + body layout (no icon).
  */
 export const Callout = ({ variant = 'note', title, children, className, dismissible, onDismiss, bordered, action }: CalloutProps) => {
@@ -311,7 +311,7 @@ export const CalloutBox = ({
   dismissible,
   onDismiss,
 }: {
-  type: 'most-tested' | 'ale-watch' | 'version-alert'
+  type: 'most-tested' | 'lea-watch' | 'version-alert'
   children: React.ReactNode
   dismissible?: boolean
   onDismiss?: () => void

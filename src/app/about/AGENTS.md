@@ -4,7 +4,7 @@
 # About
 
 ## Purpose
-Marketing page introducing SlateCamp's mission, technology pillars, and value proposition. Targets new users and communicates the IRT-based adaptive testing, spaced repetition, and readiness scoring that differentiate the platform from traditional ALE reviewers.
+Marketing page introducing SlateCamp's mission, technology pillars, and value proposition. Targets new users and communicates the IRT-based adaptive testing, spaced repetition, and readiness scoring that differentiate the platform from traditional LEA reviewers.
 
 ## Key Files
 | File | Description |

@@ -13,7 +13,7 @@ import { PreAssessmentTeaser } from '@/components/assessment/PreAssessmentTeaser
 
 export const metadata: Metadata = {
   title: 'Try SlateCamp — Free Diagnostic Sample',
-  description: 'Answer 5 sample ALE questions to see how SlateCamp works. No account required to start.',
+  description: 'Answer 5 sample LEA questions to see how SlateCamp works. No account required to start.',
 }
 
 const TryPage = () => {

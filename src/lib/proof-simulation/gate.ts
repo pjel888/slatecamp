@@ -37,7 +37,7 @@ export const checkProofSimulationGate = async (
     .eq('is_leaf', true)
     .eq('is_cross_ref_only', false)
     .is('deprecated_at', null)
-    .not('ale_id', 'is', null)
+    .not('lea_id', 'is', null)
 
   const nodesRequired = Math.ceil((totalNodes ?? 0) * 0.7)
   const nodesCovered = amberPlus ?? 0

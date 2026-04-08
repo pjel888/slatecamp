@@ -29,7 +29,7 @@ const buildNestedTree = (flatNodes: TaxonomyNode[]): TaxonomyTreeNode[] => {
       slug: n.slug ?? null,
       level: n.level,
       parent_id: n.parent_id,
-      ale_id: n.ale_id ?? null,
+      lea_id: n.lea_id ?? null,
       sort_order: n.sort_order ?? null,
       is_leaf: n.is_leaf,
       article_count: n.articles?.length ?? 0,

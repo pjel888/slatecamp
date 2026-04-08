@@ -43,7 +43,7 @@ export const getContentEditorIndexData = async () => {
       .limit(500),
     supabase
       .from('taxonomy_tree')
-      .select('node_id, name, ale_id, level, parent_id, subject_area, is_leaf')
+      .select('node_id, name, lea_id, level, parent_id, subject_area, is_leaf')
       .order('level', { ascending: true })
       .order('name', { ascending: true }),
     supabase
@@ -111,7 +111,7 @@ export const getContentEditorIndexData = async () => {
         const treeNode = {
           node_id: n.node_id,
           name: n.name,
-          ale_id: n.ale_id,
+          lea_id: n.lea_id,
           level: n.level,
           parent_id: n.parent_id,
           is_leaf: n.is_leaf,
@@ -149,7 +149,7 @@ export const getContentEditorIndexData = async () => {
       question_count: qCount,
       prompt_count: promptCounts.get(a.article_id) || 0,
       node_ids: nodeIds,
-      primary_ale_id: primaryNode?.ale_id || null,
+      primary_lea_id: primaryNode?.lea_id || null,
       primary_node_name: primaryNode?.name || null,
     }
   })
@@ -180,7 +180,7 @@ export const getArticleFull = async (id: string) => {
   const { data, error } = await supabase
     .from('wiki_articles')
     .select(
-      'article_id, title, slug, content, status, ale_tests_you, updated_note, subject_label, difficulty_label, reviewed_by, reviewer_comments, created_at, updated_at'
+      'article_id, title, slug, content, status, lea_tests_you, updated_note, subject_label, difficulty_label, reviewed_by, reviewer_comments, created_at, updated_at'
     )
     .eq('article_id', id)
     .single()
@@ -351,7 +351,7 @@ export const getTaxonomyNodeInfo = async (nodeId: string) => {
   const supabase = await createClient()
   const { data, error } = await supabase
     .from('taxonomy_tree')
-    .select('node_id, name, ale_id, level, parent_id, subject_area')
+    .select('node_id, name, lea_id, level, parent_id, subject_area')
     .eq('node_id', nodeId)
     .single()
 
@@ -366,7 +366,7 @@ export const getTaxonomyNodesInfo = async (nodeIds: string[]) => {
   const supabase = await createClient()
   const { data, error } = await supabase
     .from('taxonomy_tree')
-    .select('node_id, name, ale_id, level, parent_id, subject_area')
+    .select('node_id, name, lea_id, level, parent_id, subject_area')
     .in('node_id', nodeIds)
 
   if (error) {
@@ -406,7 +406,7 @@ export const updateArticleFull = async (
     status?: string
     node_id?: string | null
     difficulty_label?: string
-    ale_tests_you?: string
+    lea_tests_you?: string
     updated_note?: string
     subject_label?: string
     reviewer_comments?: string

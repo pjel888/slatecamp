@@ -1,4 +1,4 @@
-export type WikiCalloutType = 'most-tested' | 'ale-watch' | 'version-alert'
+export type WikiCalloutType = 'most-tested' | 'lea-watch' | 'version-alert'
 
 export interface WikiCalloutBoxProps {
   type: WikiCalloutType
@@ -34,7 +34,7 @@ export interface WikiArticleHeroProps {
   readTime: string
   title: string
   updatedNote: string
-  aleTestsYou: string
+  leaTestsYou: string
   isMinimal?: boolean
 }
 

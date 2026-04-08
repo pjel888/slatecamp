@@ -30,13 +30,13 @@ const FOLDER_TO_NODE: Record<string, string | 'MULTI'> = {
 }
 
 const FOLDER_TO_SUBJECT_LABEL: Record<string, string> = {
-  'Accessibility Standards (BP 344 - RA 9442)': 'ALE-DSGN · Architectural Design and Site Planning',
-  'Anthropometrics & Human Dimensions': 'ALE-DSGN · Architectural Design and Site Planning',
-  'Architecture of Africa, Australia & the Americas': 'ALE-HIST · History of Architecture',
-  'Global Modernism & Contemporary': 'ALE-HIST · History of Architecture',
-  'National Building Code Application (PD 1096)': 'ALE-DSGN · Architectural Design and Site Planning',
-  'Philippine Architecture': 'ALE-HIST · History of Architecture',
-  'Site Planning Considerations and Environmental Factors': 'ALE-PLAN · Planning, Housing & Urban Design',
+  'Accessibility Standards (BP 344 - RA 9442)': 'LEA-DSGN · Architectural Design and Site Planning',
+  'Anthropometrics & Human Dimensions': 'LEA-DSGN · Architectural Design and Site Planning',
+  'Architecture of Africa, Australia & the Americas': 'LEA-HIST · History of Architecture',
+  'Global Modernism & Contemporary': 'LEA-HIST · History of Architecture',
+  'National Building Code Application (PD 1096)': 'LEA-DSGN · Architectural Design and Site Planning',
+  'Philippine Architecture': 'LEA-HIST · History of Architecture',
+  'Site Planning Considerations and Environmental Factors': 'LEA-PLAN · Planning, Housing & Urban Design',
 }
 
 // ─── Multi-Node Routing ───────────────────────────────────────────────────────
@@ -95,7 +95,7 @@ function classifyFirstLine(line: string): CalloutComponent | null {
   const upper = line.toUpperCase()
 
   if (upper.includes('TRAP ALERT')) {
-    return { type: 'Callout', variant: 'ale-watch', title: extractTitleFromLine(line) || 'Trap Alert' }
+    return { type: 'Callout', variant: 'lea-watch', title: extractTitleFromLine(line) || 'Trap Alert' }
   }
   if (upper.includes('EXAM TIP')) {
     return { type: 'ExamTip', title: extractTitleFromLine(line) }
@@ -260,7 +260,7 @@ interface ArticleMetadata {
   title: string
   slug: string
   difficulty_label: 'Foundational' | 'Intermediate' | 'Advanced'
-  ale_tests_you: string | null
+  lea_tests_you: string | null
   updated_note: string | null
   subject_label: string
   read_time: string
@@ -290,8 +290,8 @@ function extractMetadata(rawContent: string, fileName: string, folderName: strin
   }
   // ★★★ with no 4th star → Intermediate (default already set)
 
-  // ale_tests_you: first paragraph after the H1
-  let ale_tests_you: string | null = null
+  // lea_tests_you: first paragraph after the H1
+  let lea_tests_you: string | null = null
   const contentAfterH1 = rawContent.replace(/^#[^\n]+\n+/, '')
   // Find first non-empty line that's not a heading, HR, or tag
   const firstParaLines: string[] = []
@@ -305,7 +305,7 @@ function extractMetadata(rawContent: string, fileName: string, folderName: strin
   }
   if (firstParaLines.length > 0) {
     const raw = firstParaLines.join(' ').replace(/\*+/g, '').replace(/_+/g, '').trim()
-    ale_tests_you = raw.length > 200 ? raw.substring(0, 197) + '...' : raw || null
+    lea_tests_you = raw.length > 200 ? raw.substring(0, 197) + '...' : raw || null
   }
 
   // updated_note: law + year reference
@@ -328,7 +328,7 @@ function extractMetadata(rawContent: string, fileName: string, folderName: strin
   const minutes = Math.max(1, Math.round(wordCount / 200))
   const read_time = `~${minutes} min`
 
-  return { title, slug, difficulty_label, ale_tests_you, updated_note, subject_label, read_time }
+  return { title, slug, difficulty_label, lea_tests_you, updated_note, subject_label, read_time }
 }
 
 // ─── Slug Deduplication ───────────────────────────────────────────────────────
@@ -475,7 +475,7 @@ async function main() {
           difficulty_label: meta.difficulty_label,
           read_time: meta.read_time,
         }
-        if (meta.ale_tests_you) payload.ale_tests_you = meta.ale_tests_you
+        if (meta.lea_tests_you) payload.lea_tests_you = meta.lea_tests_you
         if (meta.updated_note) payload.updated_note = meta.updated_note
 
         // Insert article

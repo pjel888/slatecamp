@@ -1,6 +1,6 @@
 // src/data/sample-lots.ts
 // ─── Pre-defined surveyor lot descriptions for the "Sample Lots" dropdown ──
-// Based on common Philippine TCT/OCT patterns used in ALE Area C exams.
+// Based on common Philippine TCT/OCT patterns used in LEA Area C exams.
 
 import type { LotSegment } from '@/types/lot'
 
@@ -13,7 +13,7 @@ export interface SampleLot {
 export const SAMPLE_LOTS: SampleLot[] = [
   {
     label: 'Rectangular 300 sqm',
-    description: 'Standard ALE exam lot — 20m × 15m rectangle',
+    description: 'Standard LEA exam lot — 20m × 15m rectangle',
     segments: [
       { id: 'r300-1', bearing: { base: 'N', degrees: 90, minutes: 0, seconds: 0, turn: 'E' }, distance: 20, boundaryTag: 'front' },
       { id: 'r300-2', bearing: { base: 'S', degrees: 0, minutes: 0, seconds: 0, turn: 'E' }, distance: 15, boundaryTag: 'right_side' },

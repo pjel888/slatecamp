@@ -38,7 +38,7 @@ const dbClusters = [
     variant: 'primary' as const,
     tables: [
       { name: 'disciplines',           desc: 'name, acronym, passing_threshold_pct',            access: 'Public read' },
-      { name: 'taxonomy_tree',         desc: 'level, name, ale_id, node_type, bloom_level',     access: 'Public read' },
+      { name: 'taxonomy_tree',         desc: 'level, name, lea_id, node_type, bloom_level',     access: 'Public read' },
       { name: 'questions',             desc: 'text, options (JSONB), correct_option_id, topic_id', access: 'Public read' },
       { name: 'wiki_articles',         desc: 'title, slug, content (MDX), status',              access: 'Public read' },
       { name: 'wiki_article_taxonomy', desc: 'junction, is_primary',                            access: 'Public read' },

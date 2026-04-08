@@ -84,7 +84,7 @@ export const DASHBOARD_ROUTES: RouteConfig[] = [
   },
   {
     path: '/dashboard/flash',
-    title: 'ALE Numbers Flash',
+    title: 'LEA Numbers Flash',
     sidebarLabel: 'Flash Cards',
     icon: Cards,
     group: 'learn',
@@ -151,7 +151,7 @@ const DYNAMIC_TITLE_PREFIXES: { prefix: string; title: string }[] = [
   { prefix: '/dashboard/testing/', title: 'Drills' },
   { prefix: '/dashboard/library/', title: 'Question Bank' },
   { prefix: '/dashboard/wiki/', title: 'Knowledge Wiki' },
-  { prefix: '/dashboard/flash/', title: 'ALE Numbers Flash' },
+  { prefix: '/dashboard/flash/', title: 'LEA Numbers Flash' },
   { prefix: '/dashboard/pods/', title: 'Study Pods' },
 ]
 

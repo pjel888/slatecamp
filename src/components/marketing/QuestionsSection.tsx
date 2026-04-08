@@ -94,14 +94,14 @@ export const QuestionsSection = () => (
         <h2 className='font-[family-name:var(--font-syne)] text-[28px] font-extrabold leading-[1.15] text-camp-black sm:text-[34px]'>
           2,400+ questions built for
           <br />
-          the ALE. Every single one.
+          the LEA. Every single one.
         </h2>
       </StaggerItem>
 
       <StaggerItem>
         <p className='mt-4 max-w-[440px] text-[14px] leading-relaxed text-text-2'>
           Not recycled PDFs. Not scraped notes. Every question is written
-          to the ALE syllabus, verified by licensed architects, and tagged
+          to the LEA syllabus, verified by licensed architects, and tagged
           to its exact PD 1096 provision.
         </p>
       </StaggerItem>
@@ -111,7 +111,7 @@ export const QuestionsSection = () => (
         <div className='mt-5 flex flex-wrap gap-2'>
           <FeaturePill variant='cobalt'>Image + diagram questions</FeaturePill>
           <FeaturePill variant='cobalt'>Code-cited explanations</FeaturePill>
-          <FeaturePill variant='cobalt'>All 7 ALE subjects</FeaturePill>
+          <FeaturePill variant='cobalt'>All 7 LEA subjects</FeaturePill>
           <FeaturePill variant='cobalt'>Difficulty calibrated by IRT</FeaturePill>
         </div>
       </StaggerItem>

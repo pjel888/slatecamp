@@ -39,7 +39,7 @@ interface ReadinessMeta {
 const CEILING_COPY: Record<string, string> = {
   no_level3_correct: 'Answer some Advanced (Level 3) questions to unlock higher scores.',
   no_level4_correct: 'Expert (Level 4) questions are now your ceiling. Answer some to raise it.',
-  no_apply_level_correct: 'Try Apply-level questions — the ALE tests application, not just recall.',
+  no_apply_level_correct: 'Try Apply-level questions — the LEA tests application, not just recall.',
   no_analyze_level_correct: 'Analysis-level questions unlock the top score band.',
 }
 
@@ -134,7 +134,7 @@ export function HeroCommandBar({
           </TooltipTrigger>
           <TooltipContent side='bottom'>
             Your Readiness Score is a real-time calculation of how prepared you
-            are for the Licensure Exam, based on your quiz accuracy across all ALE
+            are for the Licensure Exam, based on your quiz accuracy across all LEA
             topics.
           </TooltipContent>
         </Tooltip>
@@ -217,7 +217,7 @@ export function HeroCommandBar({
           <TooltipTrigger asChild>
             <div className='flex items-center gap-3 px-6 py-2.5 cursor-default'>
               <span className='font-dm-mono text-white/40 text-[11px] font-medium uppercase tracking-wider shrink-0'>
-                Architecture Licensure Exam (ALE) Syllabus
+                Architecture Licensure Exam (LEA) Syllabus
               </span>
               <div className='h-1.5 flex-1 rounded-full overflow-hidden bg-white/10'>
                 <div
@@ -234,7 +234,7 @@ export function HeroCommandBar({
             </div>
           </TooltipTrigger>
           <TooltipContent side='bottom'>
-            Percentage of the 102 ALE topic areas you&apos;ve attempted at least
+            Percentage of the 102 LEA topic areas you&apos;ve attempted at least
             one question in.
           </TooltipContent>
         </Tooltip>

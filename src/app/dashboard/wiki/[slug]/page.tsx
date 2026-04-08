@@ -116,7 +116,7 @@ export default async function WikiArticlePage(props: WikiArticlePageProps) {
                 difficulty={mapDifficulty(node?.level)}
                 readTime={`${readingTime} min`}
                 updatedNote={article.updated_at ? `Updated ${new Date(article.updated_at).toLocaleDateString()}` : undefined}
-                aleTestsYou="demonstrate comprehensive understanding of this architectural principle and apply it correctly in professional practice."
+                leaTestsYou="demonstrate comprehensive understanding of this architectural principle and apply it correctly in professional practice."
               />
 
               <WikiArticle

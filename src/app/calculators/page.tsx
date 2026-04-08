@@ -90,10 +90,10 @@ export default function CalculatorsIndexPage() {
         ))}
       </div>
 
-      {/* ALE CTA */}
+      {/* LEA CTA */}
       <div className="mt-8 rounded-md border border-border border-l-4 border-l-camp-orange bg-card p-4">
         <p className="font-sans text-sm text-foreground">
-          These calculations are tested in the ALE.
+          These calculations are tested in the LEA.
         </p>
         <p className="mt-0.5 font-sans text-xs text-muted-foreground">
           SlateCamp helps you master material estimation for the Architecture

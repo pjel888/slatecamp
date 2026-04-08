@@ -76,7 +76,7 @@ export const WithSurroundingContent: Story = {
       <h2>Fire Safety Requirements</h2>
       <p>
         The following table summarizes key fire safety provisions under PD 1096
-        (National Building Code of the Philippines) that are commonly tested in the ALE.
+        (National Building Code of the Philippines) that are commonly tested in the LEA.
       </p>
       <SampleTable />
       <h3>Key Takeaways</h3>
@@ -127,7 +127,7 @@ export const DarkMode: Story = {
   name: 'Dark Mode Grid',
   render: () => (
     <div className="prose-wiki max-w-3xl space-y-6">
-      <h2>ALE Subject Coverage</h2>
+      <h2>LEA Subject Coverage</h2>
       <SampleTable />
     </div>
   ),

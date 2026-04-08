@@ -20,8 +20,8 @@ export const CodeUpdateCard = ({ update }: CodeUpdateCardProps) => {
     previous_value,
     new_value,
     effective_date,
-    is_ale_testable,
-    ale_id,
+    is_lea_testable,
+    lea_id,
   } = update
 
   return (
@@ -31,9 +31,9 @@ export const CodeUpdateCard = ({ update }: CodeUpdateCardProps) => {
         <span className="font-mono text-[9px] bg-primary-50 text-primary px-1.5 py-0.5 rounded-sm shrink-0 leading-tight tracking-wide uppercase">
           {code_name}
         </span>
-        {is_ale_testable && (
+        {is_lea_testable && (
           <span className="font-mono text-[9px] bg-success-50 text-success px-1.5 py-0.5 rounded-sm shrink-0 leading-tight tracking-wide uppercase">
-            ALE-testable
+            LEA-testable
           </span>
         )}
       </div>
@@ -62,9 +62,9 @@ export const CodeUpdateCard = ({ update }: CodeUpdateCardProps) => {
             </span>
           )}
         </div>
-        {ale_id && (
+        {lea_id && (
           <Link
-            href={`${ROUTES.WIKI_PAGE(ale_id.toLowerCase().replace(/\s+/g, '-'))}`}
+            href={`${ROUTES.WIKI_PAGE(lea_id.toLowerCase().replace(/\s+/g, '-'))}`}
             className="text-xs text-primary hover:underline"
           >
             View wiki article →

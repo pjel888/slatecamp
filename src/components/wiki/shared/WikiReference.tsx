@@ -19,7 +19,7 @@ interface WikiReferenceProps {
 
 /**
  * WikiReference: The "Peek-View" component for wiki-to-wiki links.
- * Hover = Tooltip with a brief summary (ale_tests_you).
+ * Hover = Tooltip with a brief summary (lea_tests_you).
  * Click = Slide-out drawer with the full article (via Sheet).
  */
 export function WikiReference({ slug, children, className }: WikiReferenceProps) {
@@ -35,7 +35,7 @@ export function WikiReference({ slug, children, className }: WikiReferenceProps)
     try {
       const article = await getWikiArticleBySlug(slug)
       if (article) {
-        setSummary(article.ale_tests_you || 'No summary available.')
+        setSummary(article.lea_tests_you || 'No summary available.')
         setTitle(article.title)
       } else {
         setSummary('Article not found.')

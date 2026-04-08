@@ -42,7 +42,7 @@ export const MODE_DEFINITIONS: Record<string, ModeDefinition> = {
     label: 'Subject Mode',
     character: 'Focused',
     description:
-      'Deep-dive into one ALE subject. Questions matched to your current mastery level.',
+      'Deep-dive into one LEA subject. Questions matched to your current mastery level.',
     zone: 2,
     icon: 'target',
     isPro: true,
@@ -127,7 +127,7 @@ export const MODE_DEFINITIONS: Record<string, ModeDefinition> = {
     label: 'Design Endurance Training',
     character: 'Design Endurance Training',
     description:
-      'Design is 40% of the ALE — and it\'s 3+ hours under pressure. Build your cognitive stamina window to handle the full exam.',
+      'Design is 40% of the LEA — and it\'s 3+ hours under pressure. Build your cognitive stamina window to handle the full exam.',
     zone: 3,
     icon: 'dumbbell',
     isPro: true,

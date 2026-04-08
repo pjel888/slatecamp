@@ -42,7 +42,7 @@ export interface DevControlsPreset {
 export const PRESETS: DevControlsPreset[] = [
   {
     label: 'R-1 Subdivision (300 sqm)',
-    description: 'Canonical R-1 low-density lot — ALE standard exam case',
+    description: 'Canonical R-1 low-density lot — LEA standard exam case',
     lot: { width: 20, depth: 15 },
     zoning: { zoneClass: 'R-1', firewallActive: false, firewallSides: [] },
     building: { proposedFootprintWidth: 12, proposedFootprintDepth: 6, proposedStoreys: 2, floorHeight: 3.0 },

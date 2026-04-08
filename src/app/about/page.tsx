@@ -25,7 +25,7 @@ const TECH_PILLARS = [
   {
     icon: Buildings,
     title: "Anti-Inflation Readiness Score",
-    body: "Most reviewers inflate your confidence with easy questions. SlateCamp's score is calibrated against actual ALE difficulty. A 75% here means you're genuinely ready for exam day.",
+    body: "Most reviewers inflate your confidence with easy questions. SlateCamp's score is calibrated against actual LEA difficulty. A 75% here means you're genuinely ready for exam day.",
   },
 ] as const;
 
@@ -48,7 +48,7 @@ export default function AboutPage() {
             </h1>
             <p className="mt-6 max-w-[560px] text-[17px] leading-relaxed text-text-secondary">
               SlateCamp is a solo project. I&apos;m Philip — a licensed
-              architect who took the ALE and lived through the frustration of
+              architect who took the LEA and lived through the frustration of
               reviewers that couldn&apos;t tell me where I actually stood. So I
               built the tool I wished had existed.
             </p>
@@ -61,7 +61,7 @@ export default function AboutPage() {
             <div className="grid gap-12 sm:grid-cols-2 sm:gap-20">
               <div>
                 <h2 className="text-[22px] font-semibold text-foreground">
-                  The ALE struggle is real
+                  The LEA struggle is real
                 </h2>
                 <p className="mt-4 text-[15px] leading-relaxed text-text-secondary">
                   The Architecture Licensure Examination covers a wide taxonomy
@@ -139,7 +139,7 @@ export default function AboutPage() {
             </h2>
             <p className="mx-auto mt-4 max-w-[440px] text-[15px] leading-relaxed text-white/70">
               Take the free diagnostic. No account required. See your Readiness
-              Score across every ALE taxonomy in under 20 minutes.
+              Score across every LEA taxonomy in under 20 minutes.
             </p>
             <Link
               href="/try"

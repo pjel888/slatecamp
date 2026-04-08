@@ -12,7 +12,7 @@ export const wikiArticleHeroFixture: WikiArticleHeroProps = {
   readTime: '11 min',
   title: 'Fire Separation, Occupancy, and Exit Strategy',
   updatedNote: 'Updated March 21, 2026',
-  aleTestsYou:
+  leaTestsYou:
     'identify how occupancy, fire separation, and exit requirements interact when one code variable changes at a time.',
 }
 
@@ -50,7 +50,7 @@ export const wikiHeadingsFixture: TocHeading[] = [
   { id: 'travel-distance', text: 'Travel distance shifts by use group', level: 2 },
   { id: 'sprinkler-exception', text: 'Sprinkler exceptions matter', level: 3 },
   { id: 'separation-rating', text: 'Fire separation rating changes assembly choices', level: 2 },
-  { id: 'exam-trap', text: 'Typical ALE trap', level: 3 },
+  { id: 'exam-trap', text: 'Typical LEA trap', level: 3 },
 ]
 
 export const wikiSourcesFixture: WikiArticleSource[] = [
@@ -345,7 +345,7 @@ export const wikiReferenceArticleFixture = {
   article_id: 'storybook-reference-article',
   slug: 'means-of-egress-basics',
   title: 'Means of Egress Basics',
-  ale_tests_you:
+  lea_tests_you:
     'separate exit count, exit width, and travel distance questions before combining them into one code-compliance answer.',
 }
 
@@ -355,7 +355,7 @@ export const wikiSearchResultsFixture = [
     title: wikiArticleHeroFixture.title,
     slug: wikiHeaderFixture.articleSlug,
     content_snippet:
-      'Occupancy, fire separation, and exit strategy overview for ALE review.',
+      'Occupancy, fire separation, and exit strategy overview for LEA review.',
   },
   {
     id: 'storybook-search-2',

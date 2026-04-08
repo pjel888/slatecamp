@@ -4,13 +4,13 @@ import { createClient } from '@/lib/supabase/server'
 
 export interface CodeUpdate {
   update_id: string
-  ale_id: string | null
+  lea_id: string | null
   code_name: string
   summary: string
   previous_value: string | null
   new_value: string | null
   effective_date: string | null
-  is_ale_testable: boolean
+  is_lea_testable: boolean
   published_at: string
 }
 
@@ -29,7 +29,7 @@ export const getCodeUpdates = async (
   let query = supabase
     .from('code_updates')
     .select(
-      'update_id, ale_id, code_name, summary, previous_value, new_value, effective_date, is_ale_testable, published_at',
+      'update_id, lea_id, code_name, summary, previous_value, new_value, effective_date, is_lea_testable, published_at',
     )
     .order('published_at', { ascending: false })
     .limit(limit + 1)

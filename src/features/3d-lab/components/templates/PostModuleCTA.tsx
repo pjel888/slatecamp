@@ -6,7 +6,7 @@ interface PostModuleCTAProps {
   topicName: string
   questionsAnswered: number
   questionsCorrect: number
-  aleQuestionCount?: number
+  leaQuestionCount?: number
 }
 
 export const PostModuleCTA = ({
@@ -14,7 +14,7 @@ export const PostModuleCTA = ({
   topicName,
   questionsAnswered,
   questionsCorrect,
-  aleQuestionCount,
+  leaQuestionCount,
 }: PostModuleCTAProps) => {
   const accuracy = questionsAnswered > 0
     ? Math.round((questionsCorrect / questionsAnswered) * 100)
@@ -30,7 +30,7 @@ export const PostModuleCTA = ({
           ? `${questionsCorrect}/${questionsAnswered} in-canvas questions correct (${accuracy}%).`
           : 'Exploration complete.'
         }
-        {aleQuestionCount != null && ` This topic typically appears as ~${aleQuestionCount} ALE questions per sitting.`}
+        {leaQuestionCount != null && ` This topic typically appears as ~${leaQuestionCount} LEA questions per sitting.`}
       </p>
       {topicSlug && (
         <Link

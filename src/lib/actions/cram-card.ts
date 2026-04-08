@@ -3,7 +3,7 @@
 import { createClient, getUser } from '@/lib/supabase/server'
 
 export type CramCardEntry = {
-  aleId: string
+  leaId: string
   subtopicName: string
   examFrequency: 'high' | 'medium'
   theValue: string
@@ -75,7 +75,7 @@ export const getCramCardData = async (): Promise<CramCardData> => {
         topic_id,
         taxonomy_tree!inner(
           node_id,
-          ale_id,
+          lea_id,
           name,
           exam_frequency,
           wiki_items,
@@ -95,7 +95,7 @@ export const getCramCardData = async (): Promise<CramCardData> => {
 
   // Aggregate by topic node_id in JS
   type NodeAccum = {
-    aleId: string
+    leaId: string
     subtopicName: string
     examFrequency: 'high' | 'medium'
     wikiItems: WikiItem[]
@@ -110,7 +110,7 @@ export const getCramCardData = async (): Promise<CramCardData> => {
       topic_id: string
       taxonomy_tree: {
         node_id: string
-        ale_id: string | null
+        lea_id: string | null
         name: string
         exam_frequency: string
         wiki_items: WikiItem[]
@@ -134,7 +134,7 @@ export const getCramCardData = async (): Promise<CramCardData> => {
       if (row.is_correct) existing.correctCount++
     } else {
       nodeMap.set(tt.node_id, {
-        aleId: tt.ale_id ?? '',
+        leaId: tt.lea_id ?? '',
         subtopicName: tt.name,
         examFrequency: (tt.exam_frequency as 'high' | 'medium') ?? 'medium',
         wikiItems: Array.isArray(tt.wiki_items) ? tt.wiki_items : [],
@@ -151,7 +151,7 @@ export const getCramCardData = async (): Promise<CramCardData> => {
       const accuracyPct = Math.round((n.correctCount / n.totalAttempts) * 100)
       const { theValue, codeReference, memoryHook } = extractWikiFields(n.wikiItems)
       return {
-        aleId: n.aleId,
+        leaId: n.leaId,
         subtopicName: n.subtopicName,
         examFrequency: n.examFrequency,
         theValue,

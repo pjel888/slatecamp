@@ -31,49 +31,49 @@ const supabase = createClient(
 //
 // Basis for each title:
 //
-//  ale-plan-003-01  Content covers: PD 957, BP 220, UDHA (RA 7279), Maceda Law
+//  lea-plan-003-01  Content covers: PD 957, BP 220, UDHA (RA 7279), Maceda Law
 //                   (RA 6552), RA 10884 — the five core housing statutes.
 //
-//  ale-plan-003-02  Content covers: the four housing affordability tiers
+//  lea-plan-003-02  Content covers: the four housing affordability tiers
 //                   (socialized, economic, low-cost, open-market) under BP 220.
 //
-//  ale-plan-007-01  Content covers: NHA (builder), SHFC (community finance),
+//  lea-plan-007-01  Content covers: NHA (builder), SHFC (community finance),
 //                   Pag-IBIG (individual loans) — government housing agencies.
 //
-//  ale-plan-007-03  Content covers: Pag-IBIG/HDMF, SSS, GSIS, NHMFC —
+//  lea-plan-007-03  Content covers: Pag-IBIG/HDMF, SSS, GSIS, NHMFC —
 //                   employment-based housing finance institutions.
 //
-//  ale-theo-003-03  Content covers: kinesthetics — the architectural experience
+//  lea-theo-003-03  Content covers: kinesthetics — the architectural experience
 //                   of bodily movement through stairs, ramps, corridors.
 
 const REPAIRS: Array<{ article_id: string; oldTitle: string; newTitle: string; slug: string }> = [
   {
     article_id: '0d2e80df-4f76-484e-9b1f-5502da9e35be',
-    slug: 'ale-plan-003-01-what-you-need-to-know-for-the-ale',
+    slug: 'lea-plan-003-01-what-you-need-to-know-for-the-lea',
     oldTitle: 'Philippine',
     newTitle: 'Philippine Housing Law Framework',
   },
   {
     article_id: '7c0e2fa5-7f3d-419a-b592-50346ac7ab2f',
-    slug: 'ale-plan-003-02-what-you-need-to-know-for-the-ale',
+    slug: 'lea-plan-003-02-what-you-need-to-know-for-the-lea',
     oldTitle: 'Philippine',
     newTitle: 'Philippine Housing Classifications',
   },
   {
     article_id: '8a8a6153-844c-4671-aae6-b42b5a9435dd',
-    slug: 'ale-plan-007-01-core-concept',
+    slug: 'lea-plan-007-01-core-concept',
     oldTitle: 'Philippine',
     newTitle: 'Philippine Government Housing Agencies',
   },
   {
     article_id: '973b8e3d-c930-437d-b01d-eb33f4a047d8',
-    slug: 'ale-plan-007-03-core-concept',
+    slug: 'lea-plan-007-03-core-concept',
     oldTitle: 'Philippine',
     newTitle: 'Philippine Housing Finance Institutions',
   },
   {
     article_id: '1aaa804a-23f1-44da-bdcb-412fa04c848d',
-    slug: 'ale-theo-003-03-core-concept',
+    slug: 'lea-theo-003-03-core-concept',
     oldTitle: 'Architecture',
     newTitle: 'Architectural Kinesthetics: Movement Through Space',
   },

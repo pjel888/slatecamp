@@ -109,7 +109,7 @@ export function ImprovedActivityFeed({ sessions }: ImprovedActivityFeedProps) {
                   </TooltipTrigger>
                   <TooltipContent side='top'>
                     Your score for this session. 70% is the passing threshold
-                    for the ALE.
+                    for the LEA.
                   </TooltipContent>
                 </Tooltip>
               )}

@@ -25,7 +25,7 @@ interface SaveAllBarProps {
     content: string
     status: string
     difficulty_label?: string
-    ale_tests_you?: string
+    lea_tests_you?: string
     updated_note?: string
     subject_label?: string
     reviewer_comments?: string
@@ -78,7 +78,7 @@ export const SaveAllBar = ({
               content: articleState.content,
               status: articleState.status,
               difficulty_label: articleState.difficulty_label,
-              ale_tests_you: articleState.ale_tests_you,
+              lea_tests_you: articleState.lea_tests_you,
               updated_note: articleState.updated_note,
               subject_label: articleState.subject_label,
               reviewer_comments: articleState.reviewer_comments,

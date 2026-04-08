@@ -13,7 +13,7 @@ interface SnapshotItem {
  * - The item marked `hero: true` (or the first item containing "%" or with
  *   a label matching "weight") is displayed large on the left
  * - Remaining items render in a compact grid to the right
- * - Top border accent in Camp Cobalt (differentiates from left-bordered ALE callout)
+ * - Top border accent in Camp Cobalt (differentiates from left-bordered LEA callout)
  */
 export const SubjectSnapshot = ({ items }: { items: SnapshotItem[] | string }) => {
   const parsed = parseMdxProp<SnapshotItem[]>(items, [])

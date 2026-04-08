@@ -17,7 +17,7 @@ import { HeroCards } from './hero/HeroCards'
 /* ── Constants ── */
 
 const STATS = [
-  'Syllabus-mapped to the ALE',
+  'Syllabus-mapped to the LEA',
   'Real-time Readiness Score',
   'AI answers cite their sources',
 ] as const
@@ -56,12 +56,12 @@ export const HeroSection = ({
             <div className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 flex items-center gap-3'>
               <div
                 className='flex flex-col gap-1 text-primary'
-                aria-label='Professional ALE review platform.'
+                aria-label='Professional LEA review platform.'
               >
                 <div className='flex flex-row items-center gap-2 '>
                   <Starburst className='h-3 w-3' />
                   <span className='font-[family-name:var(--font-dm-mono)] text-[11px] tracking-[0.22em] uppercase text-camp-cobalt'>
-                    Professional ALE review platform.
+                    Professional LEA review platform.
                   </span>
                 </div>
               </div>

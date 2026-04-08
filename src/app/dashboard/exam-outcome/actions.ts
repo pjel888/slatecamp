@@ -48,11 +48,11 @@ export const submitExamOutcome = async (
     .select('*', { count: 'exact', head: true })
     .eq('user_id', user.id)
 
-  // Get ALE discipline
+  // Get LEA discipline
   const { data: discipline } = await supabase
     .from('disciplines')
     .select('discipline_id')
-    .eq('acronym', 'ALE')
+    .eq('acronym', 'LEA')
     .maybeSingle()
 
   const { error } = await supabase
@@ -78,13 +78,13 @@ export const submitExamOutcome = async (
     return { success: false, error: 'Failed to save outcome' }
   }
 
-  // Write ale_result to profiles for Results Day flows
+  // Write lea_result to profiles for Results Day flows
   if (payload.result !== 'did_not_take') {
-    const aleResult = payload.result === 'passed' ? 'passed' : 'failed'
+    const leaResult = payload.result === 'passed' ? 'passed' : 'failed'
     await supabase
       .from('profiles')
       .update({
-        ale_result: aleResult,
+        lea_result: leaResult,
         // For passers: transition to professional mode
         ...(payload.result === 'passed' ? { account_mode: 'professional_mode' } : {}),
         updated_at: new Date().toISOString(),

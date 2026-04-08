@@ -40,7 +40,7 @@ The article page is the primary learning surface. It:
 
 ### Working In This Directory
 
-- **Taxonomy-driven navigation:** The wiki sidebar (from `WikiLayoutContent`) renders a hierarchical taxonomy tree. Articles are organized under the 8 ALE (Architecture Licensure Exam) root categories.
+- **Taxonomy-driven navigation:** The wiki sidebar (from `WikiLayoutContent`) renders a hierarchical taxonomy tree. Articles are organized under the 8 LEA (Architecture Licensure Exam) root categories.
 - **Article sourcing:** Every article MUST have verified sources. Use `getArticleSources()` and render source citations via `WikiSourcesPopover`.
 - **Active learning features:** Articles include elaborative interrogation (EI) prompts that challenge the reader to explain concepts, and teach-back prompts that assess comprehension. These are pedagogically grounded -- not generic quizzes.
 - **Content block styling:** Each of the 10 content item types has specific visual treatment defined in `ITEM_STYLES` (border-left color, background tint, label text color). Follow these exactly.

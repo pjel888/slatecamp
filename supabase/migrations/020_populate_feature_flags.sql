@@ -50,7 +50,7 @@ VALUES
   -- ── Camp Trails ───────────────────────────────────────────
   (
     'camp_trails_full_library',
-    'Access to the full trail library (all intensities). Free users get the ALE Starter trail only.',
+    'Access to the full trail library (all intensities). Free users get the LEA Starter trail only.',
     true,
     '{camp,insurance,institutional}'
   ),
@@ -70,7 +70,7 @@ VALUES
   ),
   (
     'proof_simulation',
-    'Full Exam Simulation: 150 questions, 4 hours, ALE conditions. Gated by Endurance + node coverage.',
+    'Full Exam Simulation: 150 questions, 4 hours, LEA conditions. Gated by Endurance + node coverage.',
     true,
     '{camp,insurance,institutional}'
   ),

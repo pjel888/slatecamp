@@ -14,7 +14,7 @@ export async function getWikiTaxonomyTree(disciplineId: string) {
     .eq("discipline_id", disciplineId)
     .eq("is_cross_ref_only", false)
     .is("deprecated_at", null)
-    .not("ale_id", "is", null)
+    .not("lea_id", "is", null)
     .order("level", { ascending: true })
     .order("name", { ascending: true });
 

@@ -157,7 +157,7 @@ const fetchDashboardData = async (user: any): Promise<DashboardPageData> => {
     .then((result) => result)
   const profilePromise = supabase
     .from('profiles')
-    .select('ale_result, enrolled_review_center')
+    .select('lea_result, enrolled_review_center')
     .eq('id', user.id)
     .maybeSingle()
     .then((result) => result)
@@ -174,8 +174,8 @@ const fetchDashboardData = async (user: any): Promise<DashboardPageData> => {
     .then((result) => result)
   const projectedLawsPromise = supabase
     .from('taxonomy_tree')
-    .select('node_id, name, ale_id')
-    .eq('ale_id', 'ALE-LAWS')
+    .select('node_id, name, lea_id')
+    .eq('lea_id', 'LEA-LAWS')
     .single()
     .then(async ({ data: lawsSubject }) => {
     if (!lawsSubject) return null
@@ -341,10 +341,10 @@ const fetchDashboardData = async (user: any): Promise<DashboardPageData> => {
     if (diff > 0) daysUntilExam = Math.ceil(diff / (24 * 60 * 60 * 1000))
   }
 
-  const aleResult = profileResult.data?.ale_result ?? null
+  const leaResult = profileResult.data?.lea_result ?? null
   const enrolledReviewCenter = profileResult.data?.enrolled_review_center ?? null
   let showResultsDayBanner = false
-  if (examDateRaw && !aleResult) {
+  if (examDateRaw && !leaResult) {
     const daysSinceExam = Math.floor((Date.now() - new Date(examDateRaw).getTime()) / (24 * 60 * 60 * 1000))
     showResultsDayBanner = daysSinceExam >= 3 && daysSinceExam <= 14
   }
@@ -393,7 +393,7 @@ const fetchDashboardData = async (user: any): Promise<DashboardPageData> => {
     sessionsCompleted,
     greenTopics,
     totalTopics,
-    aleResult,
+    leaResult,
     enrolledReviewCenter,
     showResultsDayBanner,
   }
@@ -443,7 +443,7 @@ const emptyDashboard = (userName: string): DashboardPageData => ({
   sessionsCompleted: 0,
   greenTopics: 0,
   totalTopics: 0,
-  aleResult: null,
+  leaResult: null,
   enrolledReviewCenter: null,
   showResultsDayBanner: false,
 })

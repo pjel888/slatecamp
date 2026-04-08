@@ -77,7 +77,7 @@ const fetchTaxonomyNodeMap = async (
     .eq('discipline_id', disciplineId)
     .eq('is_cross_ref_only', false)
     .is('deprecated_at', null)
-    .not('ale_id', 'is', null)
+    .not('lea_id', 'is', null)
   return new Map((data || []).map((n: TaxNode) => [n.node_id, n]))
 }
 

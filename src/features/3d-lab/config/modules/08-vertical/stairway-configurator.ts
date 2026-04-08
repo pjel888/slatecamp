@@ -887,8 +887,8 @@ export const stairwayConfigurator: ParametricSceneConfig = {
   },
   contextScenario:
     "You're designing stairs for a mixed-use development in Quezon City. The project must satisfy multiple overlapping codes. Explore how PD 1096, BP 220, BP 344, and RA 9514 affect the same stair geometry.",
-  aleQuestionCount: 12,
-  aleQuestionType: 'code compliance',
+  leaQuestionCount: 12,
+  leaQuestionType: 'code compliance',
   supportedPhases: ['guided', 'faded', 'sandbox', 'challenge'],
   hasChallengeMode: true,
 }

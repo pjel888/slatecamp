@@ -4,7 +4,7 @@
 # Try
 
 ## Purpose
-Free pre-assessment teaser page implementing UX strategy Section 4 (Step 2). Public, no-auth-required experience where users answer 5 sample ALE questions before hitting "create account" gate. Delays sign-up to maximize engagement ("skin in the game" before commitment, per Duolingo insight).
+Free pre-assessment teaser page implementing UX strategy Section 4 (Step 2). Public, no-auth-required experience where users answer 5 sample LEA questions before hitting "create account" gate. Delays sign-up to maximize engagement ("skin in the game" before commitment, per Duolingo insight).
 
 ## Key Files
 | File | Description |

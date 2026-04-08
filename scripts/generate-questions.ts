@@ -3,7 +3,7 @@
  * generate-questions.ts
  *
  * Batch question generation script: reads markdown articles from "Missing Articles/",
- * generates 10 ALE-style MCQ questions per article based on content analysis,
+ * generates 10 LEA-style MCQ questions per article based on content analysis,
  * and saves as JSON files in the same folder as each article.
  *
  * Run with: bun run scripts/generate-questions.ts
@@ -30,15 +30,15 @@ const FOLDER_TO_NODE: Record<string, string | 'MULTI'> = {
   'Site Planning Considerations and Environmental Factors': 'Site Planning and Environmental Analysis',
 }
 
-/** Subject labels per folder for ALE context */
+/** Subject labels per folder for LEA context */
 const FOLDER_TO_SUBJECT_LABEL: Record<string, string> = {
-  'Accessibility Standards (BP 344 - RA 9442)': 'ALE-DSGN · Architectural Design and Site Planning',
-  'Anthropometrics & Human Dimensions': 'ALE-DSGN · Architectural Design and Site Planning',
-  'Architecture of Africa, Australia & the Americas': 'ALE-HIST · History of Architecture',
-  'Global Modernism & Contemporary': 'ALE-HIST · History of Architecture',
-  'National Building Code Application (PD 1096)': 'ALE-DSGN · Architectural Design and Site Planning',
-  'Philippine Architecture': 'ALE-HIST · History of Architecture',
-  'Site Planning Considerations and Environmental Factors': 'ALE-PLAN · Planning, Housing & Urban Design',
+  'Accessibility Standards (BP 344 - RA 9442)': 'LEA-DSGN · Architectural Design and Site Planning',
+  'Anthropometrics & Human Dimensions': 'LEA-DSGN · Architectural Design and Site Planning',
+  'Architecture of Africa, Australia & the Americas': 'LEA-HIST · History of Architecture',
+  'Global Modernism & Contemporary': 'LEA-HIST · History of Architecture',
+  'National Building Code Application (PD 1096)': 'LEA-DSGN · Architectural Design and Site Planning',
+  'Philippine Architecture': 'LEA-HIST · History of Architecture',
+  'Site Planning Considerations and Environmental Factors': 'LEA-PLAN · Planning, Housing & Urban Design',
 }
 
 /** Difficulty distribution for generated questions */
@@ -106,7 +106,7 @@ interface ArticleQuestionsOutput {
 // ─── Question Generation Engine ────────────────────────────────────────────────
 
 /**
- * Generates 10 ALE-style questions based on article content.
+ * Generates 10 LEA-style questions based on article content.
  * Analyzes content for: key facts, tables, mnemonics, traps, computations
  */
 function generateQuestionsFromContent(
@@ -575,7 +575,7 @@ function generateMnemonicQuestion(
       { id: 'A', text: mn.meaning.substring(0, 150) },
       { id: 'B', text: `A different concept from another subject area` },
       { id: 'C', text: `An outdated standard no longer in use` },
-      { id: 'D', text: `A trap commonly tested on the ALE` }
+      { id: 'D', text: `A trap commonly tested on the LEA` }
     ]).map((o, i, arr) => {
       if (o.text === mn.meaning.substring(0, 150)) {
         return { ...o, id: 'A' }
@@ -612,7 +612,7 @@ function generateTrapAlertQuestion(
     return {
       topic_id: null,
       topic_name: FOLDER_TO_SUBJECT_LABEL[folderName] || folderName,
-      text: `Which of the following is a common trap or misconception tested on the ALE regarding ${folderName}?`,
+      text: `Which of the following is a common trap or misconception tested on the LEA regarding ${folderName}?`,
       options: [
         { id: 'A', text: `Confusing similar-sounding terms or standards` },
         { id: 'B', text: `Using outdated imperial measurements instead of metric` },
@@ -622,7 +622,7 @@ function generateTrapAlertQuestion(
       correct_option_id: 'D',
       rationale: {
         summary: 'Common trap recognition',
-        explanation: `All of these are documented traps in ${folderName} that appear frequently on the ALE.`
+        explanation: `All of these are documented traps in ${folderName} that appear frequently on the LEA.`
       },
       difficulty: 0.8, // Harder question
       bloom_level: 'Analyze',
@@ -740,7 +740,7 @@ function generateComputationQuestion(
       correct_option_id: 'D',
       rationale: {
         summary: 'Computation skills',
-        explanation: `ALE questions involving ${title} may require any or all of these calculation approaches.`
+        explanation: `LEA questions involving ${title} may require any or all of these calculation approaches.`
       },
       difficulty,
       bloom_level: 'Apply',

@@ -118,7 +118,7 @@ const PanelContent = ({
       <div className="flex flex-col gap-1">
         {isExamCritical && (
           <span className="font-mono text-[9px] font-black uppercase tracking-[0.15em] text-destructive">
-            ALE Watch · High Priority
+            LEA Watch · High Priority
           </span>
         )}
         <h2 className="text-[15px] font-semibold text-foreground leading-tight tracking-tight">

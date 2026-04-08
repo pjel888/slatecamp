@@ -1,12 +1,12 @@
 CREATE TABLE IF NOT EXISTS public.code_updates (
   update_id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  ale_id TEXT,  -- affected taxonomy node
+  lea_id TEXT,  -- affected taxonomy node
   code_name TEXT NOT NULL,  -- e.g., "BP 344 IRR 2024"
   summary TEXT NOT NULL,
   previous_value TEXT,
   new_value TEXT,
   effective_date DATE,
-  is_ale_testable BOOLEAN DEFAULT true,
+  is_lea_testable BOOLEAN DEFAULT true,
   published_at TIMESTAMPTZ DEFAULT now()
 );
 
@@ -15,4 +15,4 @@ CREATE POLICY "Anyone can read code updates" ON public.code_updates FOR SELECT U
 CREATE POLICY "Service role manages updates" ON public.code_updates FOR ALL USING (auth.role() = 'service_role');
 
 CREATE INDEX idx_code_updates_published ON public.code_updates(published_at DESC);
-CREATE INDEX idx_code_updates_ale_id ON public.code_updates(ale_id);
+CREATE INDEX idx_code_updates_lea_id ON public.code_updates(lea_id);

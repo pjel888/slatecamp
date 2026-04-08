@@ -126,7 +126,7 @@ const WikiScene = () => (
                       id="exam-trap"
                       className="text-lg font-semibold text-foreground"
                     >
-                      Typical ALE trap
+                      Typical LEA trap
                     </h3>
                     <p className="text-sm leading-7 text-text-secondary">
                       The exam often changes one variable and expects you to carry that change through the entire exit decision tree.

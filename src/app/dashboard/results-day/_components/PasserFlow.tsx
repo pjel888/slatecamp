@@ -23,7 +23,7 @@ const SocialCard = ({ firstName }: { firstName: string | null }) => {
         {displayName}
       </p>
       <p className="mt-1 text-base font-semibold text-white/80">
-        ALE Passer
+        LEA Passer
       </p>
       <div
         className="mt-5 h-px w-16 bg-success"

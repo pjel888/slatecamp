@@ -7,11 +7,11 @@ import { FloorTilesPageClient } from './FloorTilesPageClient'
 export const metadata: Metadata = {
   title: `Floor Tiles Calculator — Free Tool | ${siteConfig.name}`,
   description:
-    'Calculate tile quantities, cut tiles, and waste percentage for any room. Free browser-based tool for architecture students and ALE exam prep.',
+    'Calculate tile quantities, cut tiles, and waste percentage for any room. Free browser-based tool for architecture students and LEA exam prep.',
   keywords: [
     'tile calculator',
     'floor tiles estimating',
-    'ALE exam',
+    'LEA exam',
     'architecture tools',
     'tile quantity takeoff',
   ],

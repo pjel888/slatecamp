@@ -1,6 +1,6 @@
 -- ============================================================
 -- Migration 033: design_problems + design_problem_sessions
--- Area C preparation system (40% of ALE)
+-- Area C preparation system (40% of LEA)
 -- ============================================================
 
 CREATE TABLE IF NOT EXISTS public.design_problems (

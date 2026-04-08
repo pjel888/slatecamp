@@ -9,7 +9,7 @@
  *   4. MDX safety escaping (<digit → &lt;digit)
  *   5. Blockquote → <Callout> transform (re-applied from source)
  *   6. Inject <Callout variant="authority"> after "Legal and Regulatory Basis" headings
- *   7. Inject <Callout variant="ale-watch"> for key exam traps (per-doc, curated)
+ *   7. Inject <Callout variant="lea-watch"> for key exam traps (per-doc, curated)
  *
  * Run with: bun run scripts/enrich-spp-docs.ts
  */
@@ -70,55 +70,55 @@ const ARTICLES = [
   },
 ]
 
-// ─── Per-doc ALE Watch callouts ─────────────────────────────────────────────
+// ─── Per-doc LEA Watch callouts ─────────────────────────────────────────────
 // Injected immediately after the specified heading (case-insensitive match)
 
-const ALE_WATCH: Record<string, Array<{ afterHeading: string; content: string }>> = {
+const LEA_WATCH: Record<string, Array<{ afterHeading: string; content: string }>> = {
   'SPP Doc 201 - Pre-Design Services.md': [
     {
       afterHeading: 'Method of Compensation',
       content:
-        'Pre-Design Services use **cost-based methods** (MDPE, Lump Sum, Per Diem) — NOT percentage of Project Construction Cost (PCC). PCC doesn\'t exist yet at this stage. The ALE frequently tests whether candidates know which documents use PCC vs. cost-based fees.',
+        'Pre-Design Services use **cost-based methods** (MDPE, Lump Sum, Per Diem) — NOT percentage of Project Construction Cost (PCC). PCC doesn\'t exist yet at this stage. The LEA frequently tests whether candidates know which documents use PCC vs. cost-based fees.',
     },
     {
       afterHeading: 'Complete List of SPP 201 Services at a Glance',
       content:
-        'The ALE tests the **12 specific service categories** under SPP 201 (2.1 Consultation through 2.12 Promotional Services). Know the mnemonic from the 1979 UAP Doc. 201: **EPASSSSP** — Economic Feasibility, Project Financing, Architectural Programming, Site Selection, Site Utilization, Space Planning, Space Management, Promotional Services.',
+        'The LEA tests the **12 specific service categories** under SPP 201 (2.1 Consultation through 2.12 Promotional Services). Know the mnemonic from the 1979 UAP Doc. 201: **EPASSSSP** — Economic Feasibility, Project Financing, Architectural Programming, Site Selection, Site Utilization, Space Planning, Space Management, Promotional Services.',
     },
   ],
   'SPP Doc 202 - Regular Design Services.md': [
     {
       afterHeading: 'Method of Compensation',
       content:
-        'SPP 202 uses **percentage of Project Construction Cost (PCC)** — this is the only major SPP document that ties fees directly to PCC. The ALE tests the exact percentage ranges and which project types (private vs. government) command different rates.',
+        'SPP 202 uses **percentage of Project Construction Cost (PCC)** — this is the only major SPP document that ties fees directly to PCC. The LEA tests the exact percentage ranges and which project types (private vs. government) command different rates.',
     },
   ],
   'SPP Doc 204-A  - Fulltime Supervision Services.md': [
     {
       afterHeading: 'Scope of Services',
       content:
-        '**SPP 204-A (Fulltime Supervision)** vs. **SPP 204-B (Construction Management)** is a classic ALE trap. 204-A means the architect is physically on-site full-time and is personally liable for construction quality. 204-B is a management/coordination role — the architect does not directly supervise tradesmen.',
+        '**SPP 204-A (Fulltime Supervision)** vs. **SPP 204-B (Construction Management)** is a classic LEA trap. 204-A means the architect is physically on-site full-time and is personally liable for construction quality. 204-B is a management/coordination role — the architect does not directly supervise tradesmen.',
     },
   ],
   'SPP Doc 204-B  - Construction Management Services.md': [
     {
       afterHeading: 'Scope of Services',
       content:
-        '**Construction Management (204-B)** is NOT the same as Fulltime Supervision (204-A). In CM, the architect coordinates contractors and manages the project schedule, budget, and quality — but is NOT personally directing workers on-site. The ALE tests the liability differences between these two modes.',
+        '**Construction Management (204-B)** is NOT the same as Fulltime Supervision (204-A). In CM, the architect coordinates contractors and manages the project schedule, budget, and quality — but is NOT personally directing workers on-site. The LEA tests the liability differences between these two modes.',
     },
   ],
   'SPP Doc 206  - Comprehensive Architectural Services.md': [
     {
       afterHeading: 'Scope of Comprehensive Services',
       content:
-        'SPP 206 **bundles all SPP documents (201–205 + 207–209)** into a single contract. When a client engages an architect for Comprehensive Services, there is NO need for separate contracts for each SPP document. The ALE tests what is and isn\'t included in the comprehensive package.',
+        'SPP 206 **bundles all SPP documents (201–205 + 207–209)** into a single contract. When a client engages an architect for Comprehensive Services, there is NO need for separate contracts for each SPP document. The LEA tests what is and isn\'t included in the comprehensive package.',
     },
   ],
   'SPP Doc 208  - Architectural Design Competition (ADC).md': [
     {
       afterHeading: 'Competition Requirements',
       content:
-        'An **Architectural Design Competition (ADC)** under SPP 208 requires a **Board of Jurors** that includes at least one Registered and Licensed Architect. The ALE tests the composition of the jury, the anonymity requirement for entries, and the legal ownership of winning designs.',
+        'An **Architectural Design Competition (ADC)** under SPP 208 requires a **Board of Jurors** that includes at least one Registered and Licensed Architect. The LEA tests the composition of the jury, the anonymity requirement for entries, and the legal ownership of winning designs.',
     },
   ],
 }
@@ -267,7 +267,7 @@ This SPP document is promulgated as part of the Supplemental Implementing Rules 
   return content
 }
 
-// ─── Inject ALE Watch Callouts ─────────────────────────────────────────────
+// ─── Inject LEA Watch Callouts ─────────────────────────────────────────────
 
 function injectAleWatchCallouts(
   content: string,
@@ -277,7 +277,7 @@ function injectAleWatchCallouts(
 
   for (const watch of watches) {
     const callout = `
-<Callout variant="ale-watch">
+<Callout variant="lea-watch">
 
 ${watch.content}
 
@@ -318,8 +318,8 @@ function enrichContent(rawContent: string, fileName: string): string {
   // 6. Authority callout for RA 9266
   c = injectAuthorityCallout(c)
 
-  // 7. Per-doc ALE Watch callouts
-  const watches = ALE_WATCH[fileName] ?? []
+  // 7. Per-doc LEA Watch callouts
+  const watches = LEA_WATCH[fileName] ?? []
   c = injectAleWatchCallouts(c, watches)
 
   return c

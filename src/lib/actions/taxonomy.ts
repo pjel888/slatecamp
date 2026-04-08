@@ -13,7 +13,7 @@ export interface TaxonomyNode {
   slug?: string
   sort_order?: number | null
   // Taxonomy v5.0 fields (from DB, used by wiki hero)
-  ale_id?: string | null
+  lea_id?: string | null
   description?: string | null
   exam_frequency?: string | null
   bloom_level?: string | null
@@ -33,7 +33,7 @@ export async function getTaxonomyTree(disciplineId: string): Promise<TaxonomyNod
   // 1. Fetch nodes for the discipline
   const { data: nodes, error } = await supabase
     .from('taxonomy_tree')
-    .select('node_id, discipline_id, parent_id, level, name, subject_area, is_leaf, slug, sort_order, ale_id, description, exam_frequency, bloom_level, difficulty, prc_area')
+    .select('node_id, discipline_id, parent_id, level, name, subject_area, is_leaf, slug, sort_order, lea_id, description, exam_frequency, bloom_level, difficulty, prc_area')
     .eq('discipline_id', disciplineId)
     .lte('level', 3)
     .eq('is_cross_ref_only', false)

@@ -19,8 +19,8 @@ export interface ImpersonationPreset {
 
 export const IMPERSONATION_PRESETS: ImpersonationPreset[] = [
   {
-    id: 'ale_reviewer',
-    label: 'ALE Reviewer',
+    id: 'lea_reviewer',
+    label: 'LEA Reviewer',
     description: 'Primary target: Board exam candidate using Pro tier',
     role: 'user',
     tier: 'pro',

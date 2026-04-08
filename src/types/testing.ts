@@ -217,7 +217,7 @@ export const getScoreBand = (percentage: number): ScoreBand => {
 export interface NodeMasteryDelta {
   nodeId: string
   nodeName: string
-  aleId: string
+  leaId: string
   previousMastery: number
   currentMastery: number
   pointDelta: number
@@ -288,25 +288,25 @@ export interface SessionDebriefData {
   wrongQuestionIds: string[]
 }
 
-// ─── ALE Subjects ─────────────────────────────────────────────────────────────
+// ─── LEA Subjects ─────────────────────────────────────────────────────────────
 
-export const ALE_SUBJECTS = [
-  { id: 'ALE-HIST', name: 'History of Architecture', short: 'History' },
-  { id: 'ALE-THEO', name: 'Theory of Architecture', short: 'Theory' },
-  { id: 'ALE-PLAN', name: 'Planning & Site Development', short: 'Planning' },
-  { id: 'ALE-PRAC', name: 'Architecture Practice', short: 'Practice' },
-  { id: 'ALE-STRC', name: 'Structural Design', short: 'Structures' },
-  { id: 'ALE-MATL', name: 'Building Materials', short: 'Materials' },
-  { id: 'ALE-UTIL', name: 'Utilities & Building Systems', short: 'Utilities' },
-  { id: 'ALE-DSGN', name: 'Building Laws & Codes', short: 'Building Laws' },
+export const LEA_SUBJECTS = [
+  { id: 'LEA-HIST', name: 'History of Architecture', short: 'History' },
+  { id: 'LEA-THEO', name: 'Theory of Architecture', short: 'Theory' },
+  { id: 'LEA-PLAN', name: 'Planning & Site Development', short: 'Planning' },
+  { id: 'LEA-PRAC', name: 'Architecture Practice', short: 'Practice' },
+  { id: 'LEA-STRC', name: 'Structural Design', short: 'Structures' },
+  { id: 'LEA-MATL', name: 'Building Materials', short: 'Materials' },
+  { id: 'LEA-UTIL', name: 'Utilities & Building Systems', short: 'Utilities' },
+  { id: 'LEA-DSGN', name: 'Building Laws & Codes', short: 'Building Laws' },
 ] as const
 
-export type ALESubjectId = typeof ALE_SUBJECTS[number]['id']
+export type ALESubjectId = typeof LEA_SUBJECTS[number]['id']
 
-const ALE_SUBJECT_MAP = new Map(ALE_SUBJECTS.map((s) => [s.id, s]))
+const LEA_SUBJECT_MAP = new Map(LEA_SUBJECTS.map((s) => [s.id, s]))
 
-export const getSubjectName = (aleId: string | undefined | null): string =>
-  ALE_SUBJECT_MAP.get(aleId as ALESubjectId)?.name ?? aleId ?? 'Unknown'
+export const getSubjectName = (leaId: string | undefined | null): string =>
+  LEA_SUBJECT_MAP.get(leaId as ALESubjectId)?.name ?? leaId ?? 'Unknown'
 
-export const getSubjectShortName = (aleId: string | undefined | null): string =>
-  ALE_SUBJECT_MAP.get(aleId as ALESubjectId)?.short ?? aleId ?? 'Unknown'
+export const getSubjectShortName = (leaId: string | undefined | null): string =>
+  LEA_SUBJECT_MAP.get(leaId as ALESubjectId)?.short ?? leaId ?? 'Unknown'

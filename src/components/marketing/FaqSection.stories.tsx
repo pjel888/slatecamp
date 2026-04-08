@@ -21,9 +21,9 @@ type Story = StoryObj<typeof meta>
 
 const sixQuestions = [
   {
-    question: 'What is the ALE and who needs to take it?',
+    question: 'What is the LEA and who needs to take it?',
     answer:
-      'The Architect Licensure Examination (ALE) is the Philippine board exam required for all architecture graduates who wish to practice as licensed architects. It covers seven subjects spanning design, history, utilities, and the National Building Code.',
+      'The Architect Licensure Examination (LEA) is the Philippine board exam required for all architecture graduates who wish to practice as licensed architects. It covers seven subjects spanning design, history, utilities, and the National Building Code.',
   },
   {
     question: 'How does SlateCamp differ from traditional review centers?',
@@ -33,7 +33,7 @@ const sixQuestions = [
   {
     question: 'How many questions are in the question bank?',
     answer:
-      'The bank contains over 2,400 questions, each written to the ALE syllabus and verified by licensed architects. Every question is tagged to its exact code provision — no recycled PDFs or scraped notes.',
+      'The bank contains over 2,400 questions, each written to the LEA syllabus and verified by licensed architects. Every question is tagged to its exact code provision — no recycled PDFs or scraped notes.',
   },
   {
     question: 'What is the Readiness Score?',

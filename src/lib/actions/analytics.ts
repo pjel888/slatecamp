@@ -79,7 +79,7 @@ async function fetchTaxonomyNodeMap(
     .eq('discipline_id', disciplineId)
     .eq('is_cross_ref_only', false)
     .is('deprecated_at', null)
-    .not('ale_id', 'is', null)
+    .not('lea_id', 'is', null)
   return new Map((data || []).map((n: TaxNode) => [n.node_id, n]))
 }
 
@@ -108,7 +108,7 @@ export async function getTaxonomyHeatmap(disciplineId: string): Promise<HeatmapC
     .eq('discipline_id', disciplineId)
     .eq('is_cross_ref_only', false)
     .is('deprecated_at', null)
-    .not('ale_id', 'is', null)
+    .not('lea_id', 'is', null)
     .order('level', { ascending: true })
 
   if (treeError || !nodesData) {
@@ -228,8 +228,8 @@ export async function getAnalyticsSummary() {
     readinessScore: stats?.global_readiness_score || 0,
     readinessTrend: snapshots || [],
     averageSecondsPerItem: Math.round(avgMs / 1000),
-    targetSecondsPerItem: 120, // ALE Standard
-    enduranceMinutes: 240, // ALE Standard
+    targetSecondsPerItem: 120, // LEA Standard
+    enduranceMinutes: 240, // LEA Standard
     trend: 'stable' as const
   }
 }

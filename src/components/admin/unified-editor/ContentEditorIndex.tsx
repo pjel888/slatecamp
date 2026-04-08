@@ -27,7 +27,7 @@ interface EnrichedArticle {
   question_count: number
   prompt_count: number
   node_ids: string[]
-  primary_ale_id: string | null
+  primary_lea_id: string | null
   primary_node_name: string | null
 }
 
@@ -183,7 +183,7 @@ export const ContentEditorIndex = ({
         (a) =>
           a.title.toLowerCase().includes(q) ||
           a.slug.toLowerCase().includes(q) ||
-          (a.primary_ale_id && a.primary_ale_id.toLowerCase().includes(q)) ||
+          (a.primary_lea_id && a.primary_lea_id.toLowerCase().includes(q)) ||
           (a.primary_node_name && a.primary_node_name.toLowerCase().includes(q))
       )
     }
@@ -519,9 +519,9 @@ export const ContentEditorIndex = ({
                           )}
                         </div>
                         <div className="flex items-center gap-3 text-[11px] text-text-tertiary">
-                          {article.primary_ale_id && (
+                          {article.primary_lea_id && (
                             <span className="font-mono text-text-secondary">
-                              {article.primary_ale_id}
+                              {article.primary_lea_id}
                             </span>
                           )}
                           {article.primary_node_name && (

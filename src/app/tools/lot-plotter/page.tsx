@@ -7,12 +7,12 @@ import { LotPlotterClient } from './LotPlotterClient'
 export const metadata: Metadata = {
   title: `Lot Plotter — TCT Technical Description Tool | ${siteConfig.name}`,
   description:
-    'Plot lot boundaries from Transfer Certificate of Title (TCT) metes-and-bounds technical descriptions. Free tool for architecture students and ALE exam prep.',
+    'Plot lot boundaries from Transfer Certificate of Title (TCT) metes-and-bounds technical descriptions. Free tool for architecture students and LEA exam prep.',
   keywords: [
     'lot plotter',
     'TCT technical description',
     'metes and bounds',
-    'ALE exam',
+    'LEA exam',
     'site planning',
     'survey plotter',
   ],

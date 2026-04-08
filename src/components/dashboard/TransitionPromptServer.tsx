@@ -9,7 +9,7 @@ export const TransitionPromptServer = async () => {
   const [ { data: profile }, { data: globalStats } ] = await Promise.all([
     supabase
       .from('profiles')
-      .select('ale_result')
+      .select('lea_result')
       .eq('id', user.id)
       .maybeSingle(),
     supabase
@@ -19,7 +19,7 @@ export const TransitionPromptServer = async () => {
       .maybeSingle(),
   ]);
 
-  const aleResult = profile?.ale_result ?? null;
+  const leaResult = profile?.lea_result ?? null;
   const examDateRaw = globalStats?.target_exam_date ?? null;
 
   let daysUntilExam: number | null = null;
@@ -28,8 +28,8 @@ export const TransitionPromptServer = async () => {
     daysUntilExam = Math.ceil(diff / (24 * 60 * 60 * 1000));
   }
 
-  const showPasserTransition = aleResult === 'passed' && daysUntilExam !== null && daysUntilExam < -3;
-  const showOptInTransition = aleResult === 'failed' && daysUntilExam !== null && daysUntilExam < -30;
+  const showPasserTransition = leaResult === 'passed' && daysUntilExam !== null && daysUntilExam < -3;
+  const showOptInTransition = leaResult === 'failed' && daysUntilExam !== null && daysUntilExam < -30;
 
   if (showPasserTransition) return <TransitionPrompt variant="passed" />;
   if (showOptInTransition) return <TransitionPrompt variant="opt-in" />;

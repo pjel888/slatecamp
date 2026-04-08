@@ -24,7 +24,7 @@ interface ArticlePanelProps {
   nodeId: string | null
   onNodeIdChange: (v: string | null) => void
   taxonomyNodes: any[]
-  aleTestsYou: string
+  leaTestsYou: string
   onAleTestsYouChange: (v: string) => void
   updatedNote: string
   onUpdatedNoteChange: (v: string) => void
@@ -276,7 +276,7 @@ export const ArticlePanel = ({
   nodeId,
   onNodeIdChange,
   taxonomyNodes = [],
-  aleTestsYou,
+  leaTestsYou,
   onAleTestsYouChange,
   updatedNote,
   onUpdatedNoteChange,
@@ -629,14 +629,14 @@ export const ArticlePanel = ({
               )}
             </div>
 
-            {/* ale_tests_you */}
+            {/* lea_tests_you */}
             <div className="flex flex-col gap-1">
               <label className="font-mono text-[11px] font-medium uppercase tracking-widest text-text-tertiary">
                 What this tests you on
               </label>
               <input
                 type="text"
-                value={aleTestsYou}
+                value={leaTestsYou}
                 onChange={(e) => onAleTestsYouChange(e.target.value)}
                 className="rounded-sm border border-border bg-card px-2.5 py-1.5 text-xs text-text-primary placeholder:text-text-tertiary transition-colors duration-150 ease-out focus:border-camp-cobalt focus:outline-none"
                 placeholder="Key topics tested..."

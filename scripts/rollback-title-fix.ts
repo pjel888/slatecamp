@@ -3,7 +3,7 @@
  * rollback-title-fix.ts
  *
  * EMERGENCY ROLLBACK — restores the 80 titles incorrectly overwritten with
- * "What You Need to Know for the ALE" by fix-anomalous-titles.ts (bad run).
+ * "What You Need to Know for the LEA" by fix-anomalous-titles.ts (bad run).
  * Also restores the 1 title set to "The Real-World Scenario (The Hook)".
  *
  * Run with: bun run scripts/rollback-title-fix.ts

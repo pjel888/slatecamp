@@ -35,7 +35,7 @@ export const CramCardPage = ({ data }: Props) => {
       {entries.length > 0 && (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2">
           {entries.map((entry, index) => (
-            <CramCardEntry key={entry.aleId || index} entry={entry} index={index} />
+            <CramCardEntry key={entry.leaId || index} entry={entry} index={index} />
           ))}
         </div>
       )}

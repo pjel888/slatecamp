@@ -7,13 +7,13 @@ import { siteConfig } from '@/lib/constants/site'
 export const metadata = {
   title: `Free Architecture Tools — ${siteConfig.name}`,
   description:
-    'Browser-based calculators for architecture students and professionals. Floor tiles, wall paint, and lot plotter tools built for ALE exam prep.',
+    'Browser-based calculators for architecture students and professionals. Floor tiles, wall paint, and lot plotter tools built for LEA exam prep.',
   keywords: [
     'architecture tools',
     'floor tile calculator',
     'wall paint calculator',
     'lot plotter',
-    'ALE exam prep',
+    'LEA exam prep',
     'architecture licensure exam',
   ],
 }
@@ -58,7 +58,7 @@ export default function ToolsHubPage() {
             </h1>
             <p className='mt-4 text-[17px] text-muted-foreground leading-relaxed'>
               Browser-based calculators for architecture students and professionals.
-              Built for ALE exam prep.
+              Built for LEA exam prep.
             </p>
           </div>
 

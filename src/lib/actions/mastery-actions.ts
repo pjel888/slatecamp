@@ -19,7 +19,7 @@ export const buildSubjectMastery = (
   subjectMasteryData: any[] | null,
 ): SubjectMastery[] => {
   const taxonomyRows = (subjectAreasData ?? []) as Array<{
-    node_id: string; parent_id: string | null; level: number; name: string; subject_area: string; ale_id: string | null
+    node_id: string; parent_id: string | null; level: number; name: string; subject_area: string; lea_id: string | null
   }>
   const masteryRows = (subjectMasteryData ?? []) as Array<{
     topic_id: string; current_mastery_weight: number; total_attempts: number
@@ -76,7 +76,7 @@ export const buildSubjectMastery = (
     return {
       subject: subject.name,
       shortLabel: shortLabel(subject.name),
-      aleId: subject.ale_id,
+      leaId: subject.lea_id,
       mastery: avgMastery,
       questionsAnswered: allAttempts,
       nodesEncountered: totalNodesEncountered,
@@ -134,7 +134,7 @@ export const getSubjectMasteryData = async () => {
 }
 
 // ── Subject floor alerts (Task 0.3) ───────────────────────────────────────
-// ALE requires minimum 50% per subject. Alert when any subject is below.
+// LEA requires minimum 50% per subject. Alert when any subject is below.
 
 export const buildSubjectFloorAlerts = (subjectMastery: SubjectMastery[]): SubjectFloorAlert[] => {
   const SUBJECT_FLOOR_PCT = 50 // from disciplines.subject_floor_pct default
@@ -142,7 +142,7 @@ export const buildSubjectFloorAlerts = (subjectMastery: SubjectMastery[]): Subje
     .filter(s => s.questionsAnswered > 0 && s.mastery < SUBJECT_FLOOR_PCT)
     .map(s => ({
       subject: s.subject,
-      aleId: s.aleId,
+      leaId: s.leaId,
       mastery: s.mastery,
       floorPct: SUBJECT_FLOOR_PCT,
       gap: SUBJECT_FLOOR_PCT - s.mastery,
@@ -187,7 +187,7 @@ export const buildSyllabusCoverage = async (
       .eq('is_leaf', true)
       .eq('is_cross_ref_only', false)
       .is('deprecated_at', null)
-      .not('ale_id', 'is', null)
+      .not('lea_id', 'is', null)
     totalLeaves = count ?? 0
   }
   return transformSyllabusCoverage(totalLeaves, masteryCountData)
@@ -212,8 +212,8 @@ export const buildProjectedLawsMastery = async (
   // 1. Get Laws & Codes subject node
   const { data: lawsSubject } = await supabase
     .from('taxonomy_tree')
-    .select('node_id, name, ale_id')
-    .eq('ale_id', 'ALE-LAWS')
+    .select('node_id, name, lea_id')
+    .eq('lea_id', 'LEA-LAWS')
     .single()
 
   if (!lawsSubject) return null
@@ -262,7 +262,7 @@ export const buildProjectedLawsMastery = async (
 }
 
 export const transformProjectedLawsMastery = (
-  lawsSubject: { node_id: string; name: string; ale_id: string | null } | null,
+  lawsSubject: { node_id: string; name: string; lea_id: string | null } | null,
   lawsSubtopics: Array<{ node_id: string; name: string }> | null,
   crossRefs: Array<{ source_node_id: string; target_node_id: string }> | null,
   targetLeaves: Array<{ node_id: string; parent_id: string }> | null,
@@ -327,7 +327,7 @@ export const transformProjectedLawsMastery = (
   return {
     subject: lawsSubject.name,
     shortLabel: shortLabel(lawsSubject.name),
-    aleId: lawsSubject.ale_id ?? null,
+    leaId: lawsSubject.lea_id ?? null,
     mastery: avgMastery,
     questionsAnswered: allAttempts,
     nodesEncountered: totalNodesEncountered,

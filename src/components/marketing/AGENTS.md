@@ -12,7 +12,7 @@ Marketing and landing page components for SlateCamp. Contains hero sections, pri
 | File | Description |
 |------|-------------|
 | `HeroHeadline.tsx` | Hero headline "Know you'll win." with rough-notation animations (circle, underline, highlight) |
-| `HeroSection.tsx` | Main hero section with headline, CTA, mock question card, ALE coverage card, readiness snapshot |
+| `HeroSection.tsx` | Main hero section with headline, CTA, mock question card, LEA coverage card, readiness snapshot |
 | `PricingCard.tsx` | Pricing tier card component with features, limits, CTA button |
 | `TestimonialShowcase.tsx` | 3-column testimonial cards with star ratings (5-star), quotes, names, titles |
 | `FloatingTestimonialMarquee.tsx` | Marquee component with floating testimonials (currently unused in HeroSection) |

@@ -5,22 +5,22 @@ import type { NodeMasteryInput, SubjectLeafCounts } from '../readiness-score'
 // ─── Fixtures ────────────────────────────────────────────────────────────────
 
 const SUBJECTS = [
-  { ale_id: 'ALE-HIST', name: 'History', prc_area: 'A' as const, subject_weight_within_area_pct: 50 },
-  { ale_id: 'ALE-STRUCT', name: 'Structures', prc_area: 'B' as const, subject_weight_within_area_pct: 50 },
-  { ale_id: 'ALE-UTIL', name: 'Utilities', prc_area: 'C' as const, subject_weight_within_area_pct: 50 },
+  { lea_id: 'LEA-HIST', name: 'History', prc_area: 'A' as const, subject_weight_within_area_pct: 50 },
+  { lea_id: 'LEA-STRUCT', name: 'Structures', prc_area: 'B' as const, subject_weight_within_area_pct: 50 },
+  { lea_id: 'LEA-UTIL', name: 'Utilities', prc_area: 'C' as const, subject_weight_within_area_pct: 50 },
 ]
 
 const LEAF_COUNTS: SubjectLeafCounts = {
-  'ALE-HIST': 10,
-  'ALE-STRUCT': 10,
-  'ALE-UTIL': 10,
+  'LEA-HIST': 10,
+  'LEA-STRUCT': 10,
+  'LEA-UTIL': 10,
 }
 
 /** Build a node with safe defaults — override only what the test cares about. */
 const makeNode = (overrides: Partial<NodeMasteryInput> = {}): NodeMasteryInput => ({
   topic_id: 'node-1',
-  ale_id: 'node-1',
-  subject_ale_id: 'ALE-HIST',
+  lea_id: 'node-1',
+  subject_lea_id: 'LEA-HIST',
   subject_name: 'History',
   prc_area: 'A',
   area_weight_pct: 30,
@@ -70,7 +70,7 @@ describe('zero mastery state', () => {
 
 describe('zone boundary: score = 0', () => {
   test('result is exactly 0 with empty state', () => {
-    const result = computeReadinessScore([], 1, SUBJECTS, { 'ALE-HIST': 1, 'ALE-STRUCT': 1, 'ALE-UTIL': 1 })
+    const result = computeReadinessScore([], 1, SUBJECTS, { 'LEA-HIST': 1, 'LEA-STRUCT': 1, 'LEA-UTIL': 1 })
     expect(result.overallScore).toBe(0)
   })
 })
@@ -80,15 +80,15 @@ describe('zone boundary: difficulty ceiling at 70 (no level 3 correct)', () => {
     const nodes = Array.from({ length: 10 }, (_, i) =>
       makeNode({
         topic_id: `node-${i}`,
-        ale_id: `node-${i}`,
-        subject_ale_id: 'ALE-HIST',
+        lea_id: `node-${i}`,
+        subject_lea_id: 'LEA-HIST',
         highest_difficulty_correct: 2,   // < 3 → triggers 70 ceiling
         distinct_questions_seen: 15,
         consecutive_correct_streak: 1,
         current_mastery_weight: 1.0,
       })
     )
-    const result = computeReadinessScore(nodes, 10, SUBJECTS, { 'ALE-HIST': 10, 'ALE-STRUCT': 0, 'ALE-UTIL': 0 })
+    const result = computeReadinessScore(nodes, 10, SUBJECTS, { 'LEA-HIST': 10, 'LEA-STRUCT': 0, 'LEA-UTIL': 0 })
     expect(result.overallScore).toBeLessThan(70.1) // <= 70
     expect(result.ceilingValue).toBe(70)
     expect(result.ceilingReason).toBe('no_level3_correct')
@@ -100,15 +100,15 @@ describe('zone boundary: difficulty ceiling at 82 (level 3 correct, not 4)', () 
     const nodes = Array.from({ length: 10 }, (_, i) =>
       makeNode({
         topic_id: `node-${i}`,
-        ale_id: `node-${i}`,
-        subject_ale_id: 'ALE-HIST',
+        lea_id: `node-${i}`,
+        subject_lea_id: 'LEA-HIST',
         highest_difficulty_correct: 3,   // satisfies level3, not level4 → 82 ceiling
         distinct_questions_seen: 15,
         consecutive_correct_streak: 1,
         current_mastery_weight: 1.0,
       })
     )
-    const result = computeReadinessScore(nodes, 10, SUBJECTS, { 'ALE-HIST': 10, 'ALE-STRUCT': 0, 'ALE-UTIL': 0 })
+    const result = computeReadinessScore(nodes, 10, SUBJECTS, { 'LEA-HIST': 10, 'LEA-STRUCT': 0, 'LEA-UTIL': 0 })
     expect(result.overallScore).toBeLessThan(82.1) // <= 82
     expect(result.ceilingValue).toBe(82)
     expect(result.ceilingReason).toBe('no_level4_correct')
@@ -120,8 +120,8 @@ describe('zone boundary: bloom ceiling at 75 (no apply-level correct)', () => {
     const nodes = Array.from({ length: 10 }, (_, i) =>
       makeNode({
         topic_id: `node-${i}`,
-        ale_id: `node-${i}`,
-        subject_ale_id: 'ALE-HIST',
+        lea_id: `node-${i}`,
+        subject_lea_id: 'LEA-HIST',
         highest_difficulty_correct: 4,
         has_bloom_apply_correct: false,
         has_bloom_analyze_correct: false,
@@ -130,7 +130,7 @@ describe('zone boundary: bloom ceiling at 75 (no apply-level correct)', () => {
         current_mastery_weight: 1.0,
       })
     )
-    const result = computeReadinessScore(nodes, 10, SUBJECTS, { 'ALE-HIST': 10, 'ALE-STRUCT': 0, 'ALE-UTIL': 0 })
+    const result = computeReadinessScore(nodes, 10, SUBJECTS, { 'LEA-HIST': 10, 'LEA-STRUCT': 0, 'LEA-UTIL': 0 })
     expect(result.ceilingValue).toBe(75)
     expect(result.ceilingReason).toBe('no_apply_level_correct')
     expect(result.overallScore).toBeLessThan(75.1) // <= 75
@@ -142,8 +142,8 @@ describe('zone boundary: bloom ceiling at 87 (apply correct, not analyze)', () =
     const nodes = Array.from({ length: 10 }, (_, i) =>
       makeNode({
         topic_id: `node-${i}`,
-        ale_id: `node-${i}`,
-        subject_ale_id: 'ALE-HIST',
+        lea_id: `node-${i}`,
+        subject_lea_id: 'LEA-HIST',
         highest_difficulty_correct: 4,
         has_bloom_apply_correct: true,
         has_bloom_analyze_correct: false,
@@ -152,7 +152,7 @@ describe('zone boundary: bloom ceiling at 87 (apply correct, not analyze)', () =
         current_mastery_weight: 1.0,
       })
     )
-    const result = computeReadinessScore(nodes, 10, SUBJECTS, { 'ALE-HIST': 10, 'ALE-STRUCT': 0, 'ALE-UTIL': 0 })
+    const result = computeReadinessScore(nodes, 10, SUBJECTS, { 'LEA-HIST': 10, 'LEA-STRUCT': 0, 'LEA-UTIL': 0 })
     expect(result.ceilingValue).toBe(87)
     expect(result.ceilingReason).toBe('no_analyze_level_correct')
     expect(result.overallScore).toBeLessThan(87.1) // <= 87
@@ -164,8 +164,8 @@ describe('zone boundary: no ceiling when all requirements met', () => {
     const nodes = Array.from({ length: 10 }, (_, i) =>
       makeNode({
         topic_id: `node-${i}`,
-        ale_id: `node-${i}`,
-        subject_ale_id: 'ALE-HIST',
+        lea_id: `node-${i}`,
+        subject_lea_id: 'LEA-HIST',
         highest_difficulty_correct: 4,
         has_bloom_apply_correct: true,
         has_bloom_analyze_correct: true,
@@ -174,7 +174,7 @@ describe('zone boundary: no ceiling when all requirements met', () => {
         current_mastery_weight: 1.0,
       })
     )
-    const result = computeReadinessScore(nodes, 10, SUBJECTS, { 'ALE-HIST': 10, 'ALE-STRUCT': 0, 'ALE-UTIL': 0 })
+    const result = computeReadinessScore(nodes, 10, SUBJECTS, { 'LEA-HIST': 10, 'LEA-STRUCT': 0, 'LEA-UTIL': 0 })
     expect(result.ceilingValue).toBeNull()
     expect(result.ceilingActive).toBe(false)
   })
@@ -187,7 +187,7 @@ describe('anti-inflation: diminishing returns (Vector 1)', () => {
     const withStreak = makeNode({ consecutive_correct_streak: 10, current_mastery_weight: 1.0 })
     const noStreak = makeNode({ consecutive_correct_streak: 1, current_mastery_weight: 1.0 })
 
-    const leafCounts = { 'ALE-HIST': 1, 'ALE-STRUCT': 0, 'ALE-UTIL': 0 }
+    const leafCounts = { 'LEA-HIST': 1, 'LEA-STRUCT': 0, 'LEA-UTIL': 0 }
     const subjects = [SUBJECTS[0]]
 
     const resultWithStreak = computeReadinessScore([withStreak], 1, subjects, leafCounts)
@@ -208,7 +208,7 @@ describe('anti-inflation: recency decay (Vector 6)', () => {
       current_mastery_weight: 1.0,
     })
 
-    const leafCounts = { 'ALE-HIST': 1, 'ALE-STRUCT': 0, 'ALE-UTIL': 0 }
+    const leafCounts = { 'LEA-HIST': 1, 'LEA-STRUCT': 0, 'LEA-UTIL': 0 }
     const subjects = [SUBJECTS[0]]
 
     const resultStale = computeReadinessScore([stale], 1, subjects, leafCounts)
@@ -221,12 +221,12 @@ describe('anti-inflation: recency decay (Vector 6)', () => {
 describe('anti-inflation: depth weight (Vector 5)', () => {
   test('thin coverage (< 5 distinct questions) reduces subject score vs deep', () => {
     // Use 2 leaf nodes so the denominator includes a grey node, making depthWeight visible
-    const thin = makeNode({ topic_id: 'thin', ale_id: 'thin', subject_ale_id: 'ALE-HIST', distinct_questions_seen: 3 })   // depthWeight=0.40
-    const deep = makeNode({ topic_id: 'deep', ale_id: 'deep', subject_ale_id: 'ALE-HIST', distinct_questions_seen: 15 })  // depthWeight=1.00
+    const thin = makeNode({ topic_id: 'thin', lea_id: 'thin', subject_lea_id: 'LEA-HIST', distinct_questions_seen: 3 })   // depthWeight=0.40
+    const deep = makeNode({ topic_id: 'deep', lea_id: 'deep', subject_lea_id: 'LEA-HIST', distinct_questions_seen: 15 })  // depthWeight=1.00
 
     const subjects = [SUBJECTS[0]]
     // 2 total leaves each case, so grey node in denominator exposes weight difference
-    const leafCounts = { 'ALE-HIST': 2 }
+    const leafCounts = { 'LEA-HIST': 2 }
 
     const resultThin = computeReadinessScore([thin], 2, subjects, leafCounts)
     const resultDeep = computeReadinessScore([deep], 2, subjects, leafCounts)
@@ -238,11 +238,11 @@ describe('anti-inflation: depth weight (Vector 5)', () => {
   })
 
   test('medium coverage (5–9 distinct questions) scores lower than deep coverage', () => {
-    const medium = makeNode({ topic_id: 'med', ale_id: 'med', subject_ale_id: 'ALE-HIST', distinct_questions_seen: 7 })
-    const deep = makeNode({ topic_id: 'deep', ale_id: 'deep', subject_ale_id: 'ALE-HIST', distinct_questions_seen: 15 })
+    const medium = makeNode({ topic_id: 'med', lea_id: 'med', subject_lea_id: 'LEA-HIST', distinct_questions_seen: 7 })
+    const deep = makeNode({ topic_id: 'deep', lea_id: 'deep', subject_lea_id: 'LEA-HIST', distinct_questions_seen: 15 })
 
     const subjects = [SUBJECTS[0]]
-    const leafCounts = { 'ALE-HIST': 2 }
+    const leafCounts = { 'LEA-HIST': 2 }
 
     const resultMedium = computeReadinessScore([medium], 2, subjects, leafCounts)
     const resultDeep = computeReadinessScore([deep], 2, subjects, leafCounts)
@@ -254,8 +254,8 @@ describe('anti-inflation: depth weight (Vector 5)', () => {
 
 describe('anti-inflation: grey node penalty (Vector 3)', () => {
   test('grey nodes drag down score proportionally', () => {
-    const node = makeNode({ subject_ale_id: 'ALE-HIST' })
-    const leafCounts = { 'ALE-HIST': 1, 'ALE-STRUCT': 0, 'ALE-UTIL': 0 }
+    const node = makeNode({ subject_lea_id: 'LEA-HIST' })
+    const leafCounts = { 'LEA-HIST': 1, 'LEA-STRUCT': 0, 'LEA-UTIL': 0 }
     const subjects = [SUBJECTS[0]]
 
     // 1 touched out of 1 total → no grey penalty
@@ -272,27 +272,27 @@ describe('anti-inflation: grey node penalty (Vector 3)', () => {
 // ─── Single node edge cases ──────────────────────────────────────────────────
 
 describe('single node', () => {
-  test('activeCoverageGaps includes node ale_id when distinct_questions_seen < 5', () => {
-    const node = makeNode({ ale_id: 'node-thin', distinct_questions_seen: 2 })
-    const result = computeReadinessScore([node], 1, [SUBJECTS[0]], { 'ALE-HIST': 1 })
+  test('activeCoverageGaps includes node lea_id when distinct_questions_seen < 5', () => {
+    const node = makeNode({ lea_id: 'node-thin', distinct_questions_seen: 2 })
+    const result = computeReadinessScore([node], 1, [SUBJECTS[0]], { 'LEA-HIST': 1 })
     expect(result.activeCoverageGaps).toContain('node-thin')
   })
 
   test('activeCoverageGaps is empty when distinct_questions_seen >= 5', () => {
-    const node = makeNode({ ale_id: 'node-full', distinct_questions_seen: 10 })
-    const result = computeReadinessScore([node], 1, [SUBJECTS[0]], { 'ALE-HIST': 1 })
+    const node = makeNode({ lea_id: 'node-full', distinct_questions_seen: 10 })
+    const result = computeReadinessScore([node], 1, [SUBJECTS[0]], { 'LEA-HIST': 1 })
     expect(result.activeCoverageGaps.length).toBe(0)
   })
 
   test('belowFloorSubjects includes subject when score < 50', () => {
     const node = makeNode({ current_mastery_weight: 0.3 })
-    const result = computeReadinessScore([node], 1, [SUBJECTS[0]], { 'ALE-HIST': 1 })
+    const result = computeReadinessScore([node], 1, [SUBJECTS[0]], { 'LEA-HIST': 1 })
     expect(result.belowFloorSubjects).toContain('History')
   })
 
   test('belowFloorSubjects is empty when score >= 50', () => {
     const node = makeNode({ current_mastery_weight: 1.0, distinct_questions_seen: 15, consecutive_correct_streak: 1 })
-    const result = computeReadinessScore([node], 1, [SUBJECTS[0]], { 'ALE-HIST': 1 })
+    const result = computeReadinessScore([node], 1, [SUBJECTS[0]], { 'LEA-HIST': 1 })
     expect(result.belowFloorSubjects.length).toBe(0)
   })
 })
@@ -301,21 +301,21 @@ describe('single node', () => {
 
 describe('day 1 / day 2 split', () => {
   test('dayOneScore uses only Area A subjects', () => {
-    const nodeA = makeNode({ subject_ale_id: 'ALE-HIST', current_mastery_weight: 1.0, distinct_questions_seen: 15 })
+    const nodeA = makeNode({ subject_lea_id: 'LEA-HIST', current_mastery_weight: 1.0, distinct_questions_seen: 15 })
     const result = computeReadinessScore([nodeA], 10, SUBJECTS, LEAF_COUNTS)
     expect(typeof result.dayOneScore).toBe('number')
     expect(result.dayOneScore).toBeGreaterThan(-1) // >= 0
   })
 
   test('dayTwoScore uses Areas B and C', () => {
-    const nodeB = makeNode({ subject_ale_id: 'ALE-STRUCT', prc_area: 'B', current_mastery_weight: 1.0, distinct_questions_seen: 15 })
+    const nodeB = makeNode({ subject_lea_id: 'LEA-STRUCT', prc_area: 'B', current_mastery_weight: 1.0, distinct_questions_seen: 15 })
     const result = computeReadinessScore([nodeB], 10, SUBJECTS, LEAF_COUNTS)
     expect(typeof result.dayTwoScore).toBe('number')
     expect(result.dayTwoScore).toBeGreaterThan(-1) // >= 0
   })
 
   test('dayOneScore is 0 when all touched nodes are in B/C', () => {
-    const nodeB = makeNode({ subject_ale_id: 'ALE-STRUCT', prc_area: 'B', current_mastery_weight: 1.0, distinct_questions_seen: 15 })
+    const nodeB = makeNode({ subject_lea_id: 'LEA-STRUCT', prc_area: 'B', current_mastery_weight: 1.0, distinct_questions_seen: 15 })
     const result = computeReadinessScore([nodeB], 10, SUBJECTS, LEAF_COUNTS)
     expect(result.dayOneScore).toBe(0)
   })
@@ -343,7 +343,7 @@ describe('6-vector computation', () => {
       consecutive_correct_streak: 1,
       distinct_questions_seen: 15,
     })
-    const result = computeReadinessScore([node], 1, [SUBJECTS[0]], { 'ALE-HIST': 1 })
+    const result = computeReadinessScore([node], 1, [SUBJECTS[0]], { 'LEA-HIST': 1 })
     const tenthsStr = result.overallScore.toString()
     const decimals = tenthsStr.includes('.') ? tenthsStr.split('.')[1].length : 0
     expect(decimals).toBeLessThan(2) // at most 1 decimal place
@@ -351,9 +351,9 @@ describe('6-vector computation', () => {
 
   test('overallScore does not exceed ceilingValue when ceiling is active', () => {
     const nodes = Array.from({ length: 10 }, (_, i) =>
-      makeNode({ topic_id: `n${i}`, ale_id: `n${i}`, subject_ale_id: 'ALE-HIST', highest_difficulty_correct: 2 })
+      makeNode({ topic_id: `n${i}`, lea_id: `n${i}`, subject_lea_id: 'LEA-HIST', highest_difficulty_correct: 2 })
     )
-    const result = computeReadinessScore(nodes, 10, [SUBJECTS[0]], { 'ALE-HIST': 10 })
+    const result = computeReadinessScore(nodes, 10, [SUBJECTS[0]], { 'LEA-HIST': 10 })
     if (result.ceilingActive && result.ceilingValue !== null) {
       expect(result.overallScore).toBeLessThan(result.ceilingValue + 0.1) // <= ceilingValue
     }
@@ -361,7 +361,7 @@ describe('6-vector computation', () => {
 
   test('greyPenalty is between 0 and 0.6 inclusive', () => {
     const nodeAll = makeNode()
-    const resultFull = computeReadinessScore([nodeAll], 1, [SUBJECTS[0]], { 'ALE-HIST': 1 })
+    const resultFull = computeReadinessScore([nodeAll], 1, [SUBJECTS[0]], { 'LEA-HIST': 1 })
     const resultEmpty = computeReadinessScore([], 10, SUBJECTS, LEAF_COUNTS)
     expect(resultFull.greyPenalty).toBeGreaterThan(-0.001) // >= 0
     expect(resultFull.greyPenalty).toBeLessThan(0.601)     // <= 0.6
@@ -376,8 +376,8 @@ describe('all nodes mastered', () => {
     const nodes = Array.from({ length: 10 }, (_, i) =>
       makeNode({
         topic_id: `n${i}`,
-        ale_id: `n${i}`,
-        subject_ale_id: 'ALE-HIST',
+        lea_id: `n${i}`,
+        subject_lea_id: 'LEA-HIST',
         current_mastery_weight: 1.0,
         highest_difficulty_correct: 4,
         has_bloom_apply_correct: true,
@@ -386,7 +386,7 @@ describe('all nodes mastered', () => {
         consecutive_correct_streak: 1,
       })
     )
-    const result = computeReadinessScore(nodes, 10, [SUBJECTS[0]], { 'ALE-HIST': 10 })
+    const result = computeReadinessScore(nodes, 10, [SUBJECTS[0]], { 'LEA-HIST': 10 })
     expect(result.overallScore).toBeGreaterThan(0)
     expect(result.ceilingActive).toBe(false)
     expect(result.greyPenalty).toBe(0)
@@ -403,8 +403,8 @@ describe('regression guard', () => {
     const nodes: NodeMasteryInput[] = [
       {
         topic_id: 'node-A1',
-        ale_id: 'node-A1',
-        subject_ale_id: 'ALE-HIST',
+        lea_id: 'node-A1',
+        subject_lea_id: 'LEA-HIST',
         subject_name: 'History',
         prc_area: 'A',
         area_weight_pct: 30,
@@ -426,9 +426,9 @@ describe('regression guard', () => {
     ]
 
     const subjects = [
-      { ale_id: 'ALE-HIST', name: 'History', prc_area: 'A' as const, subject_weight_within_area_pct: 100 },
+      { lea_id: 'LEA-HIST', name: 'History', prc_area: 'A' as const, subject_weight_within_area_pct: 100 },
     ]
-    const leafCounts: SubjectLeafCounts = { 'ALE-HIST': 2 }
+    const leafCounts: SubjectLeafCounts = { 'LEA-HIST': 2 }
 
     const result = computeReadinessScore(nodes, 2, subjects, leafCounts)
 
@@ -439,7 +439,7 @@ describe('regression guard', () => {
     expect(result.greyPenalty).toBeGreaterThan(0) // 1 of 2 nodes is grey
     expect(result.greyPenalty).toBeLessThan(0.601)
     expect(result.subScores.length).toBe(1)
-    expect(result.subScores[0].ale_id).toBe('ALE-HIST')
+    expect(result.subScores[0].lea_id).toBe('LEA-HIST')
     expect(result.subScores[0].greyCount).toBe(1)
 
     // Numeric range guard:

@@ -8,7 +8,7 @@ const difficultyStyle = {
 } as const
 
 export const WikiArticleHero = ({
-  subject, difficulty, readTime, title, updatedNote, aleTestsYou, isMinimal
+  subject, difficulty, readTime, title, updatedNote, leaTestsYou, isMinimal
 }: WikiArticleHeroProps) => {
   return (
     <header className={cn("not-prose flex flex-col gap-3 mb-0", isMinimal && "gap-2 mb-4")}>
@@ -48,14 +48,14 @@ export const WikiArticleHero = ({
       {/* Hero divider — separates hero from article content */}
       <div className={cn("border-t border-wiki-border mt-7 dark:border-wiki-invert-divider", isMinimal && "mt-2")} />
 
-      {/* ALE orientation banner — NOT a callout */}
+      {/* LEA orientation banner — NOT a callout */}
       {!isMinimal && (
         <div className="border border-camp-cobalt/20 bg-cobalt-light rounded-md px-4 py-3 dark:bg-primary/10">
           <p className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-widest text-camp-cobalt mb-1">
-            The ALE tests you to
+            The LEA tests you to
           </p>
           <p className="text-sm text-wiki-body leading-relaxed dark:text-wiki-invert-body">
-            {aleTestsYou}
+            {leaTestsYou}
           </p>
         </div>
       )}

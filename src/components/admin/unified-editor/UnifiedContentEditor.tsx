@@ -49,8 +49,8 @@ const EditorInner = ({
   const [difficultyLabel, setDifficultyLabel] = useState(
     initialArticle.difficulty_label || ''
   )
-  const [aleTestsYou, setAleTestsYou] = useState(
-    initialArticle.ale_tests_you || ''
+  const [leaTestsYou, setAleTestsYou] = useState(
+    initialArticle.lea_tests_you || ''
   )
   const [updatedNote, setUpdatedNote] = useState(
     initialArticle.updated_note || ''
@@ -188,7 +188,7 @@ const EditorInner = ({
     status,
     node_id: nodeId,
     difficulty_label: difficultyLabel || undefined,
-    ale_tests_you: aleTestsYou || undefined,
+    lea_tests_you: leaTestsYou || undefined,
     updated_note: updatedNote || undefined,
     subject_label: subjectLabel || undefined,
     reviewer_comments: reviewerComments || undefined,
@@ -202,7 +202,7 @@ const EditorInner = ({
       <ContentBar
         title={title}
         onTitleChange={handleTitleChange}
-        aleId={primaryNode?.ale_id || null}
+        leaId={primaryNode?.lea_id || null}
         status={status}
         onStatusChange={handleStatusChange}
         difficultyLabel={difficultyLabel}
@@ -254,7 +254,7 @@ const EditorInner = ({
               nodeId={nodeId}
               onNodeIdChange={handleNodeIdChange}
               taxonomyNodes={taxonomyNodes}
-              aleTestsYou={aleTestsYou}
+              leaTestsYou={leaTestsYou}
               onAleTestsYouChange={(v) => {
                 setAleTestsYou(v)
                 dirty.markArticleDirty()

@@ -46,7 +46,7 @@ export interface AdminDashboardData {
 export interface SubjectContentCount {
   node_id: string
   name: string
-  ale_id: string | null
+  lea_id: string | null
   questionCount: number
   articleCount: number
 }
@@ -54,7 +54,7 @@ export interface SubjectContentCount {
 export interface CoverageGap {
   node_id: string
   name: string
-  ale_id: string | null
+  lea_id: string | null
   exam_frequency: string
 }
 
@@ -100,7 +100,7 @@ const fetchContentBySubject = unstable_cache(
     // 1. Fetch all non-deprecated taxonomy nodes to build the hierarchy map
     const { data: allNodes, error: nodesError } = await supabase
       .from('taxonomy_tree')
-      .select('node_id, parent_id, level, name, ale_id')
+      .select('node_id, parent_id, level, name, lea_id')
       .is('deprecated_at', null)
 
     if (nodesError || !allNodes) return []
@@ -162,7 +162,7 @@ const fetchContentBySubject = unstable_cache(
       return {
         node_id: s.node_id,
         name: s.name,
-        ale_id: s.ale_id,
+        lea_id: s.lea_id,
         questionCount: c.q,
         articleCount: c.a.size,
       }
@@ -222,7 +222,7 @@ const fetchCriticalCoverageGap = unstable_cache(
     // Fetch high-frequency leaf nodes, fall back to medium if none found
     const { data: highFreqLeaves } = await supabase
       .from('taxonomy_tree')
-      .select('node_id, name, ale_id, exam_frequency')
+      .select('node_id, name, lea_id, exam_frequency')
       .eq('is_leaf', true)
       .eq('exam_frequency', 'high')
       .is('deprecated_at', null)
@@ -233,7 +233,7 @@ const fetchCriticalCoverageGap = unstable_cache(
     if (!candidates) {
       const { data: medFreqLeaves } = await supabase
         .from('taxonomy_tree')
-        .select('node_id, name, ale_id, exam_frequency')
+        .select('node_id, name, lea_id, exam_frequency')
         .eq('is_leaf', true)
         .eq('exam_frequency', 'medium')
         .is('deprecated_at', null)
@@ -255,7 +255,7 @@ const fetchCriticalCoverageGap = unstable_cache(
     // Return the first candidate with zero questions
     const gap = candidates.find((n) => !coveredSet.has(n.node_id))
     return gap
-      ? { node_id: gap.node_id, name: gap.name, ale_id: gap.ale_id, exam_frequency: gap.exam_frequency }
+      ? { node_id: gap.node_id, name: gap.name, lea_id: gap.lea_id, exam_frequency: gap.exam_frequency }
       : null
   },
   ['admin-coverage-gap'],

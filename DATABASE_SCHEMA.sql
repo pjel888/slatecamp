@@ -26,7 +26,7 @@ CREATE TABLE profiles (
   enrolled_review_center                   TEXT,
   comp_exam_scores                         JSONB,
   comp_exam_date                           DATE,
-  ale_result                               TEXT,
+  lea_result                               TEXT,
   oath_taking_date                         DATE,
   account_mode                             TEXT DEFAULT 'review_mode',
   role                                     TEXT DEFAULT 'member',
@@ -187,7 +187,7 @@ CREATE TABLE taxonomy_tree (
   is_leaf                                  BOOLEAN NOT NULL DEFAULT FALSE,
   created_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
   updated_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
-  ale_id                                   TEXT,
+  lea_id                                   TEXT,
   node_type                                TAXONOMY_NODE_TYPE,
   exam_frequency                           EXAM_FREQUENCY_LEVEL,
   prc_area                                 TEXT,
@@ -248,7 +248,7 @@ CREATE TABLE wiki_articles (
   reviewed_by                              UUID,
   reviewed_at                              TIMESTAMPTZ,
   reviewer_comments                        TEXT,
-  ale_tests_you                            TEXT,
+  lea_tests_you                            TEXT,
   updated_note                             TEXT,
   subject_label                            TEXT,
   difficulty_label                         TEXT,
@@ -754,8 +754,8 @@ CREATE TABLE models_3d (
   reviewed_by                              UUID,
   reviewed_at                              TIMESTAMPTZ,
   context_scenario                         TEXT,
-  ale_question_count                       INTEGER,
-  ale_question_type                        TEXT,
+  lea_question_count                       INTEGER,
+  lea_question_type                        TEXT,
   supported_phases                         TEXT[] DEFAULT '{guided}',
   has_challenge_mode                       BOOLEAN DEFAULT FALSE
 );
@@ -1139,12 +1139,12 @@ CREATE TABLE feature_flags (
 -- ─── Table: code_updates ────────────────────────────────────────────────
 CREATE TABLE code_updates (
   update_id                                UUID NOT NULL DEFAULT gen_random_uuid(),
-  ale_id                                   TEXT,
+  lea_id                                   TEXT,
   summary                                  TEXT NOT NULL,
   previous_value                           TEXT,
   new_value                                TEXT,
   effective_date                           DATE,
-  is_ale_testable                          BOOLEAN NOT NULL DEFAULT TRUE,
+  is_lea_testable                          BOOLEAN NOT NULL DEFAULT TRUE,
   published_at                             TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 
@@ -1283,7 +1283,7 @@ BEGIN
   SELECT jsonb_build_object(
     'article_id', wa.article_id, 'slug', wa.slug, 'title', wa.title,
     'content', wa.content, 'created_at', wa.created_at, 'updated_at', wa.updated_at,
-    'ale_tests_you', wa.ale_tests_you, 'updated_note', wa.updated_note,
+    'lea_tests_you', wa.lea_tests_you, 'updated_note', wa.updated_note,
     'subject_label', wa.subject_label, 'difficulty_label', wa.difficulty_label,
     'status', wa.status
   ), wa.article_id INTO v_article, v_article_id
@@ -1301,7 +1301,7 @@ BEGIN
         'node_id', tt.node_id, 'discipline_id', tt.discipline_id,
         'parent_id', tt.parent_id, 'level', tt.level, 'name', tt.name,
         'subject_area', tt.subject_area, 'is_leaf', tt.is_leaf, 'slug', tt.slug,
-        'sort_order', tt.sort_order, 'ale_id', tt.ale_id, 'description', tt.description,
+        'sort_order', tt.sort_order, 'lea_id', tt.lea_id, 'description', tt.description,
         'exam_frequency', tt.exam_frequency, 'bloom_level', tt.bloom_level,
         'difficulty', tt.difficulty, 'prc_area', tt.prc_area
       ) INTO v_node FROM taxonomy_tree tt WHERE tt.node_id = v_node_id;
@@ -1313,7 +1313,7 @@ BEGIN
     'node_id', tt.node_id, 'discipline_id', tt.discipline_id,
     'parent_id', tt.parent_id, 'level', tt.level, 'name', tt.name,
     'subject_area', tt.subject_area, 'is_leaf', tt.is_leaf, 'slug', tt.slug,
-    'sort_order', tt.sort_order, 'ale_id', tt.ale_id, 'description', tt.description,
+    'sort_order', tt.sort_order, 'lea_id', tt.lea_id, 'description', tt.description,
     'exam_frequency', tt.exam_frequency, 'bloom_level', tt.bloom_level,
     'difficulty', tt.difficulty, 'prc_area', tt.prc_area
   ), tt.node_id INTO v_node, v_node_id
@@ -1334,7 +1334,7 @@ BEGIN
     SELECT jsonb_build_object(
       'article_id', wa.article_id, 'slug', wa.slug, 'title', wa.title,
       'content', wa.content, 'created_at', wa.created_at, 'updated_at', wa.updated_at,
-      'ale_tests_you', wa.ale_tests_you, 'updated_note', wa.updated_note,
+      'lea_tests_you', wa.lea_tests_you, 'updated_note', wa.updated_note,
       'subject_label', wa.subject_label, 'difficulty_label', wa.difficulty_label,
       'status', wa.status
     ) INTO v_article FROM wiki_articles wa

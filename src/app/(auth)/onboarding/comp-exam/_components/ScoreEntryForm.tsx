@@ -1,18 +1,18 @@
 'use client'
 
 import { useState } from 'react'
-import type { AleSubjectKey, CompExamScores } from '@/lib/actions/comp-exam-onboarding'
+import type { LeaSubjectKey, CompExamScores } from '@/lib/actions/comp-exam-onboarding'
 
 // ── Subject list — flat, no Area A/B/C grouping ───────────────────────────────
 
-const ALE_SUBJECTS: { key: AleSubjectKey; label: string }[] = [
-  { key: 'ALE-HIST', label: 'History of Architecture' },
-  { key: 'ALE-THEO', label: 'Theory of Architecture' },
-  { key: 'ALE-PLAN', label: 'Theory & Principles of Planning' },
-  { key: 'ALE-PRAC', label: 'Professional Practice' },
-  { key: 'ALE-STRU', label: 'Structural Design' },
-  { key: 'ALE-MATL', label: 'Building Materials & Construction' },
-  { key: 'ALE-UTIL', label: 'Building Utilities (MEPF)' },
+const LEA_SUBJECTS: { key: LeaSubjectKey; label: string }[] = [
+  { key: 'LEA-HIST', label: 'History of Architecture' },
+  { key: 'LEA-THEO', label: 'Theory of Architecture' },
+  { key: 'LEA-PLAN', label: 'Theory & Principles of Planning' },
+  { key: 'LEA-PRAC', label: 'Professional Practice' },
+  { key: 'LEA-STRU', label: 'Structural Design' },
+  { key: 'LEA-MATL', label: 'Building Materials & Construction' },
+  { key: 'LEA-UTIL', label: 'Building Utilities (MEPF)' },
 ]
 
 // ── Tier indicator ─────────────────────────────────────────────────────────────
@@ -43,13 +43,13 @@ interface ScoreEntryFormProps {
 // ── Component ──────────────────────────────────────────────────────────────────
 
 export const ScoreEntryForm = ({ onSubmit, isLoading }: ScoreEntryFormProps) => {
-  const [scores, setScores] = useState<Partial<Record<AleSubjectKey, string>>>(
-    Object.fromEntries(ALE_SUBJECTS.map(s => [s.key, ''])) as Partial<Record<AleSubjectKey, string>>
+  const [scores, setScores] = useState<Partial<Record<LeaSubjectKey, string>>>(
+    Object.fromEntries(LEA_SUBJECTS.map(s => [s.key, ''])) as Partial<Record<LeaSubjectKey, string>>
   )
   const [examDate, setExamDate] = useState<string>('')
   const [error, setError] = useState<string | null>(null)
 
-  const handleChange = (key: AleSubjectKey, value: string) => {
+  const handleChange = (key: LeaSubjectKey, value: string) => {
     // Allow empty or numeric 0-100
     if (value === '' || (Number(value) >= 0 && Number(value) <= 100 && /^\d{0,3}$/.test(value))) {
       setScores(prev => ({ ...prev, [key]: value }))
@@ -61,26 +61,26 @@ export const ScoreEntryForm = ({ onSubmit, isLoading }: ScoreEntryFormProps) => 
     setError(null)
 
     // Validate all fields are filled
-    const missing = ALE_SUBJECTS.filter(s => scores[s.key] === '' || scores[s.key] === undefined)
+    const missing = LEA_SUBJECTS.filter(s => scores[s.key] === '' || scores[s.key] === undefined)
     if (missing.length > 0) {
       setError('Please enter a score for every subject.')
       return
     }
 
     const parsed = Object.fromEntries(
-      ALE_SUBJECTS.map(s => [s.key, Number(scores[s.key])])
+      LEA_SUBJECTS.map(s => [s.key, Number(scores[s.key])])
     ) as CompExamScores
 
     onSubmit(parsed, examDate || null)
   }
 
-  const filledCount = ALE_SUBJECTS.filter(s => scores[s.key] !== '' && scores[s.key] !== undefined).length
+  const filledCount = LEA_SUBJECTS.filter(s => scores[s.key] !== '' && scores[s.key] !== undefined).length
 
   return (
     <form onSubmit={handleSubmit} className="space-y-5">
       {/* Subjects */}
       <div className="space-y-3">
-        {ALE_SUBJECTS.map(({ key, label }) => {
+        {LEA_SUBJECTS.map(({ key, label }) => {
           const val = scores[key] ?? ''
           const tierColor = getTierColor(val)
           const tierLabel = getTierLabel(val)
@@ -133,9 +133,9 @@ export const ScoreEntryForm = ({ onSubmit, isLoading }: ScoreEntryFormProps) => 
       </div>
 
       {/* Progress note */}
-      {filledCount > 0 && filledCount < ALE_SUBJECTS.length && (
+      {filledCount > 0 && filledCount < LEA_SUBJECTS.length && (
         <p className="text-xs text-muted-foreground">
-          {filledCount} of {ALE_SUBJECTS.length} subjects entered
+          {filledCount} of {LEA_SUBJECTS.length} subjects entered
         </p>
       )}
 

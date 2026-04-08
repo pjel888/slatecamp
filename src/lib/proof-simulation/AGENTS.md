@@ -22,7 +22,7 @@ The `proof-simulation` directory implements the competence gate for Full Exam Si
 **Competence Gate Rules:**
 1. **Taxonomy Coverage:** ≥70% of leaf taxonomy nodes at Amber or above (mastery ≥ 0.4).
    - Count nodes with `current_mastery_weight ≥ 0.4`.
-   - Count total leaf nodes (non-deprecated, non-cross-ref, with ALE mapping).
+   - Count total leaf nodes (non-deprecated, non-cross-ref, with LEA mapping).
    - Required: ceil(total × 0.70).
    - Pass if: covered ≥ required.
 

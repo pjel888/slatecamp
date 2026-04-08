@@ -88,7 +88,7 @@ export const Striped: Story = {
 export const WithCaption: Story = {
   render: () => (
     <Table>
-      <TableCaption>ALE Subject Performance Summary</TableCaption>
+      <TableCaption>LEA Subject Performance Summary</TableCaption>
       <TableHeader>
         <TableRow>
           <TableHead>Subject</TableHead>

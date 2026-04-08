@@ -110,7 +110,7 @@ SELECT * FROM user_mastery WHERE user_id = auth.uid();
 ```sql
 -- auth.uid() is accessible in INSERT triggers and policies
 INSERT INTO user_mastery (user_id, subject_id, theta, a, b)
-VALUES (auth.uid(), 'ALE001', 0.5, 1.2, -0.3);
+VALUES (auth.uid(), 'LEA001', 0.5, 1.2, -0.3);
 ```
 
 **Creating indexes for performance:**

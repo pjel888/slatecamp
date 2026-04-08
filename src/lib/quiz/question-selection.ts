@@ -70,8 +70,8 @@ const getDifficultyDistribution = (
   }
 }
 
-/** ALE area distribution for exam modes (Doc 4 §2.4) */
-export const ALE_AREA_DISTRIBUTION = {
+/** LEA area distribution for exam modes (Doc 4 §2.4) */
+export const LEA_AREA_DISTRIBUTION = {
   'area-a': 0.30, // History, Theory, Practice
   'area-b': 0.30, // Structural, Materials, Utilities
   'area-c': 0.40, // Architectural Design

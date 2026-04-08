@@ -169,7 +169,7 @@ export async function GET(request: Request) {
     .eq('is_leaf', true)
     .eq('is_cross_ref_only', false)
     .is('deprecated_at', null)
-    .not('ale_id', 'is', null)
+    .not('lea_id', 'is', null)
 
   // BATCH 6: Get touched nodes for ALL eligible users at once
   const { data: allTouchedNodes } = await supabase

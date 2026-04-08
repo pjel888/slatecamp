@@ -23,7 +23,7 @@ interface AssetMetadata {
 
 const systemOptions = ['structural', 'mep', 'architectural', 'civil']
 const layerOptions = ['foundation', 'frame', 'envelope', 'core', 'roof']
-const disciplineOptions = ['ALE', 'PNLE', 'BAR']
+const disciplineOptions = ['LEA', 'PNLE', 'BAR']
 
 export const AssetUploader = () => {
   const [file, setFile] = useState<File | null>(null)

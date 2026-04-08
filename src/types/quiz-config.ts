@@ -44,7 +44,7 @@ export type BloomLevel =
 
 export type PressureLevel = 0 | 1 | 2 | 3
 
-export type AleFrequency =
+export type LeaFrequency =
   | 'very-high'
   | 'high'
   | 'moderate'
@@ -348,7 +348,7 @@ export interface ReviewDataResult {
 export interface TaxonomySubject {
   nodeId: string
   name: string
-  aleId: string | null
+  leaId: string | null
   masteryWeight: number | null
   interactionCount: number
   subtopics: TaxonomySubtopic[]
@@ -357,7 +357,7 @@ export interface TaxonomySubject {
 export interface TaxonomySubtopic {
   nodeId: string
   name: string
-  aleId: string | null
+  leaId: string | null
   isLeaf: boolean
   masteryWeight: number | null
   interactionCount: number

@@ -24,7 +24,7 @@ Hub page for standalone browser-based utility tools (floor tiles, wall paint, lo
 - **Hub + sub-tools pattern:** Index page displays grid of tool cards; each tool has its own sub-directory
 - **No 3D visualization** (unlike calculators) — these are simpler, focused utility tools
 - **Tool card structure:** Icon, title, description, href link, tag (category: "Estimating" or "Site Planning")
-- **Metadata:** SEO-friendly (keywords: architecture tools, ALE exam prep)
+- **Metadata:** SEO-friendly (keywords: architecture tools, LEA exam prep)
 - **Public pages** — no auth required
 - **Client wrappers:** Each tool page has a Client component wrapper for interactivity
 - When adding new tools: create sub-directory, add Page component, add Client wrapper, list in TOOLS array on hub

@@ -16,7 +16,7 @@ export const metadata = { title: `Contact — ${siteConfig.name}` };
 const FAQS = [
   {
     q: "Is SlateCamp only for the Philippine Architecture Licensure Exam?",
-    a: "Yes — for now. The platform is purpose-built for the ALE. The question bank, taxonomy, and Readiness Score are all calibrated to the official syllabus. Support for other disciplines may follow.",
+    a: "Yes — for now. The platform is purpose-built for the LEA. The question bank, taxonomy, and Readiness Score are all calibrated to the official syllabus. Support for other disciplines may follow.",
   },
   {
     q: "How is the Readiness Score calculated?",

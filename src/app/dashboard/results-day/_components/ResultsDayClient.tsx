@@ -9,23 +9,23 @@ interface TopSubject {
 }
 
 interface ResultsDayClientProps {
-  aleResult: string | null
+  leaResult: string | null
   firstName: string | null
   readinessScore: number | null
   topSubjects: TopSubject[]
 }
 
 const ResultsDayClient = ({
-  aleResult,
+  leaResult,
   firstName,
   readinessScore,
   topSubjects,
 }: ResultsDayClientProps) => {
-  if (aleResult === 'passed') {
+  if (leaResult === 'passed') {
     return <PasserFlow firstName={firstName} />
   }
 
-  if (aleResult === 'failed') {
+  if (leaResult === 'failed') {
     return (
       <NonPasserFlow
         readinessScore={readinessScore}

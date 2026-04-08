@@ -4,16 +4,16 @@ import { createClient, getUser } from '@/lib/supabase/server'
 
 // ── Types ─────────────────────────────────────────────────────────────────────
 
-export type AleSubjectKey =
-  | 'ALE-HIST'
-  | 'ALE-THEO'
-  | 'ALE-PLAN'
-  | 'ALE-PRAC'
-  | 'ALE-STRU'
-  | 'ALE-MATL'
-  | 'ALE-UTIL'
+export type LeaSubjectKey =
+  | 'LEA-HIST'
+  | 'LEA-THEO'
+  | 'LEA-PLAN'
+  | 'LEA-PRAC'
+  | 'LEA-STRU'
+  | 'LEA-MATL'
+  | 'LEA-UTIL'
 
-export type CompExamScores = Record<AleSubjectKey, number>
+export type CompExamScores = Record<LeaSubjectKey, number>
 
 export interface SaveCompExamResult {
   success: boolean
@@ -22,7 +22,7 @@ export interface SaveCompExamResult {
 }
 
 export interface HeatmapSeed {
-  subjectKey: AleSubjectKey
+  subjectKey: LeaSubjectKey
   subjectName: string
   score: number
   tier: 'red' | 'amber' | 'green'
@@ -49,13 +49,13 @@ export const saveCompExamScores = async (
 
   if (!user) return { success: false, error: 'Not authenticated' }
 
-  // 1. Fetch ALE subject nodes for this discipline — match by ale_id
-  const aleIds = Object.keys(scores) as AleSubjectKey[]
+  // 1. Fetch LEA subject nodes for this discipline — match by lea_id
+  const leaIds = Object.keys(scores) as LeaSubjectKey[]
 
   const { data: subjectNodes, error: subjectErr } = await supabase
     .from('taxonomy_tree')
-    .select('node_id, name, ale_id')
-    .in('ale_id', aleIds)
+    .select('node_id, name, lea_id')
+    .in('lea_id', leaIds)
     .eq('level', 1)
     .is('deprecated_at', null)
 
@@ -66,13 +66,13 @@ export const saveCompExamScores = async (
   // 2. Fetch all leaf nodes for those subjects (level 3, is_leaf = true)
   //    We go through level 2 (topics) then get their children, OR we can filter
   //    by discipline + is_leaf + parent walking. Simplest: get all leaf nodes
-  //    whose subject_area matches each subject's ale_id prefix.
+  //    whose subject_area matches each subject's lea_id prefix.
   const subjectNodeIds = subjectNodes.map(n => n.node_id)
 
   // Get level-2 topic nodes under each subject
   const { data: topicNodes, error: topicErr } = await supabase
     .from('taxonomy_tree')
-    .select('node_id, parent_id, ale_id')
+    .select('node_id, parent_id, lea_id')
     .in('parent_id', subjectNodeIds)
     .eq('level', 2)
     .is('deprecated_at', null)
@@ -124,15 +124,15 @@ export const saveCompExamScores = async (
   const now = new Date().toISOString()
 
   for (const subjectNode of subjectNodes) {
-    const aleKey = subjectNode.ale_id as AleSubjectKey
-    const score = scores[aleKey]
+    const leaKey = subjectNode.lea_id as LeaSubjectKey
+    const score = scores[leaKey]
     if (score === undefined) continue
 
     const { tier, masteryWeight } = SCORE_TO_TIER(score)
     const leafIds = leafsBySubject.get(subjectNode.node_id) ?? []
 
     heatmapSeeds.push({
-      subjectKey: aleKey,
+      subjectKey: leaKey,
       subjectName: subjectNode.name,
       score,
       tier,

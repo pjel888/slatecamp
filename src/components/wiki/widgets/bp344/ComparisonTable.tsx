@@ -24,7 +24,7 @@ export const AccessibilityChangesTable = ({ rows }: AccessibilityChangesTablePro
   return (
     <div className="not-prose my-5 rounded-md border border-border bg-card px-6 py-5">
       <div className="font-dm-mono text-[11px] uppercase tracking-[0.08em] text-camp-cobalt mb-2">Interactive — 2024 vs 2013 Comparison</div>
-      <p className="text-[13px] text-[var(--widget-text)] mb-3.5">Click any row to see what changed and why it matters for the ALE.</p>
+      <p className="text-[13px] text-[var(--widget-text)] mb-3.5">Click any row to see what changed and why it matters for the LEA.</p>
       <div className="overflow-x-auto">
         <table className="w-full border-collapse text-[12px]">
           <thead>

@@ -3,7 +3,7 @@
 -- Date: 2026-03-25
 -- Purpose: Populate camp_trails, trail_days, and trail_steps
 --          with 22 trails including full day/step structure for
---          the 8-Week Standard (flagship) and ALE Starter trails.
+--          the 8-Week Standard (flagship) and LEA Starter trails.
 -- ============================================================
 
 BEGIN;
@@ -55,7 +55,7 @@ INSERT INTO public.camp_trails (
   'a0000000-0000-0000-0000-000000000001',
   '8-Week Standard Trail',
   '8-week-standard',
-  'The foundation-to-mastery path. Balanced coverage across all 8 ALE subjects with progressive difficulty.',
+  'The foundation-to-mastery path. Balanced coverage across all 8 LEA subjects with progressive difficulty.',
   'time_gated', 'standard',
   56, 90, true, true,
   false,
@@ -97,15 +97,15 @@ INSERT INTO public.camp_trails (
   0.0, 40.0
 ) ON CONFLICT (slug) DO NOTHING;
 
--- 1f. ALE Starter Trail (FREE, fully seeded below)
+-- 1f. LEA Starter Trail (FREE, fully seeded below)
 INSERT INTO public.camp_trails (
   discipline_id, name, slug, description, trail_type, intensity,
   duration_days, daily_time_estimate_minutes, is_published, is_featured,
   is_free, subjects_covered, recommended_min_score, recommended_max_score
 ) VALUES (
   'a0000000-0000-0000-0000-000000000001',
-  'ALE Starter Trail',
-  'ale-starter',
+  'LEA Starter Trail',
+  'lea-starter',
   'Free 28-day program covering highest-frequency content across all 8 subjects. Genuine improvement, no paywall.',
   'time_gated', 'standard',
   28, 60, true, true,
@@ -132,7 +132,7 @@ INSERT INTO public.camp_trails (
 
   ('a0000000-0000-0000-0000-000000000001',
    'Theory of Architecture', 'subject-theory',
-   'Principles of design, form, space, and order. Theoretical foundations for the ALE exam.',
+   'Principles of design, form, space, and order. Theoretical foundations for the LEA exam.',
    'subject_mastery', NULL, 14, 60, true, false, false,
    ARRAY['History & Theory']),
 
@@ -1054,7 +1054,7 @@ BEGIN
       VALUES (v_day_id, 1, 'review', 'Week 7-8 Comprehensive Review', 'Final mixed review covering all integration topics and weak areas.', 15, 30)
       ON CONFLICT (day_id, step_order) DO NOTHING;
     INSERT INTO public.trail_steps (day_id, step_order, step_type, title, description, question_count, estimated_minutes)
-      VALUES (v_day_id, 2, 'quiz', 'Mixed-Subject Practice', 'Final interleaved quiz across all 8 ALE subjects.', 10, 20)
+      VALUES (v_day_id, 2, 'quiz', 'Mixed-Subject Practice', 'Final interleaved quiz across all 8 LEA subjects.', 10, 20)
       ON CONFLICT (day_id, step_order) DO NOTHING;
   END IF;
 
@@ -1068,7 +1068,7 @@ BEGIN
       VALUES (v_day_id, 1, 'review', 'Final Readiness Assessment', 'Comprehensive assessment to measure your growth across all subjects.', 15, 30)
       ON CONFLICT (day_id, step_order) DO NOTHING;
     INSERT INTO public.trail_steps (day_id, step_order, step_type, title, description, question_count, estimated_minutes, difficulty_min, difficulty_max)
-      VALUES (v_day_id, 2, 'quiz', 'Final Exam Simulation', 'Full-weight exam simulation with ALE-proportioned subject distribution.', 10, 20, 0.3, 1.0)
+      VALUES (v_day_id, 2, 'quiz', 'Final Exam Simulation', 'Full-weight exam simulation with LEA-proportioned subject distribution.', 10, 20, 0.3, 1.0)
       ON CONFLICT (day_id, step_order) DO NOTHING;
   END IF;
 
@@ -1076,7 +1076,7 @@ END $$;
 
 
 -- ============================================================
--- SECTION 5: ALE STARTER TRAIL -- 28 DAYS FULLY SEEDED
+-- SECTION 5: LEA STARTER TRAIL -- 28 DAYS FULLY SEEDED
 -- ============================================================
 
 DO $$
@@ -1086,10 +1086,10 @@ DECLARE
 BEGIN
 
   SELECT trail_id INTO v_trail_id
-    FROM public.camp_trails WHERE slug = 'ale-starter';
+    FROM public.camp_trails WHERE slug = 'lea-starter';
 
   IF v_trail_id IS NULL THEN
-    RAISE EXCEPTION 'ale-starter trail not found';
+    RAISE EXCEPTION 'lea-starter trail not found';
   END IF;
 
   -- --------------------------------------------------------
@@ -1447,7 +1447,7 @@ BEGIN
 
   -- Day 27: Mixed Review -- All Subjects
   INSERT INTO public.trail_days (trail_id, day_number, title, description, estimated_minutes, subject_focus, subject_color, is_rest_day)
-    VALUES (v_trail_id, 27, 'ALE Starter: Final Review', 'Mixed review across all 8 subjects covered in the starter trail.', 60, 'Building Laws', '#1B3FC4', false)
+    VALUES (v_trail_id, 27, 'LEA Starter: Final Review', 'Mixed review across all 8 subjects covered in the starter trail.', 60, 'Building Laws', '#1B3FC4', false)
     ON CONFLICT (trail_id, day_number) DO NOTHING
     RETURNING day_id INTO v_day_id;
   IF v_day_id IS NOT NULL THEN
@@ -1455,13 +1455,13 @@ BEGIN
       VALUES (v_day_id, 1, 'wiki', 'All Subjects: High-Frequency Topics Review', 'Quick summary of the most-tested topics across all subjects.', 20, 'evening')
       ON CONFLICT (day_id, step_order) DO NOTHING;
     INSERT INTO public.trail_steps (day_id, step_order, step_type, title, description, question_count, estimated_minutes, preferred_time)
-      VALUES (v_day_id, 2, 'quiz', 'ALE Starter -- Final Mixed Quiz', 'Mixed questions spanning all 8 ALE subjects.', 10, 25, 'morning')
+      VALUES (v_day_id, 2, 'quiz', 'LEA Starter -- Final Mixed Quiz', 'Mixed questions spanning all 8 LEA subjects.', 10, 25, 'morning')
       ON CONFLICT (day_id, step_order) DO NOTHING;
   END IF;
 
   -- Day 28: Trail Complete
   INSERT INTO public.trail_days (trail_id, day_number, title, description, estimated_minutes, subject_focus, subject_color, is_rest_day)
-    VALUES (v_trail_id, 28, 'ALE Starter: Complete', 'You have completed the ALE Starter Trail. Consider enrolling in a full study program.', 60, 'Professional Practice', '#4A7B9D', false)
+    VALUES (v_trail_id, 28, 'LEA Starter: Complete', 'You have completed the LEA Starter Trail. Consider enrolling in a full study program.', 60, 'Professional Practice', '#4A7B9D', false)
     ON CONFLICT (trail_id, day_number) DO NOTHING
     RETURNING day_id INTO v_day_id;
   IF v_day_id IS NOT NULL THEN
@@ -1469,7 +1469,7 @@ BEGIN
       VALUES (v_day_id, 1, 'review', 'Starter Trail Final Assessment', 'Comprehensive assessment across all subjects.', 15, 30)
       ON CONFLICT (day_id, step_order) DO NOTHING;
     INSERT INTO public.trail_steps (day_id, step_order, step_type, title, description, question_count, estimated_minutes)
-      VALUES (v_day_id, 2, 'quiz', 'ALE Starter -- Graduation Quiz', 'Celebrate completion with a final mixed-subject quiz.', 10, 20)
+      VALUES (v_day_id, 2, 'quiz', 'LEA Starter -- Graduation Quiz', 'Celebrate completion with a final mixed-subject quiz.', 10, 20)
       ON CONFLICT (day_id, step_order) DO NOTHING;
   END IF;
 
@@ -1489,7 +1489,7 @@ SET total_steps = (
 )
 WHERE ct.slug IN (
   '8-week-standard',
-  'ale-starter'
+  'lea-starter'
 );
 
 -- For trails without seeded steps, set a reasonable estimate
@@ -1520,8 +1520,8 @@ UPDATE public.camp_trails SET total_steps = 42 WHERE trail_type = 'code_deep_div
 -- Verify 8-week-standard steps:
 -- SELECT COUNT(*) FROM trail_steps ts JOIN trail_days td ON td.day_id = ts.day_id JOIN camp_trails ct ON ct.trail_id = td.trail_id WHERE ct.slug = '8-week-standard';
 
--- Verify ale-starter days:
--- SELECT COUNT(*) FROM trail_days td JOIN camp_trails ct ON ct.trail_id = td.trail_id WHERE ct.slug = 'ale-starter';
+-- Verify lea-starter days:
+-- SELECT COUNT(*) FROM trail_days td JOIN camp_trails ct ON ct.trail_id = td.trail_id WHERE ct.slug = 'lea-starter';
 -- Expected: 28
 
 -- Verify all trails published:

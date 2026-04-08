@@ -107,7 +107,7 @@ export interface AdminTaxonomyNode {
   level: number
   name: string
   slug: string | null
-  ale_id: string | null
+  lea_id: string | null
   sort_order: number | null
   is_leaf: boolean
   children?: AdminTaxonomyNode[]
@@ -142,7 +142,7 @@ export const getAdminTaxonomyTree = async (): Promise<AdminTaxonomyResult> => {
   // 2. Fetch all taxonomy nodes (across all disciplines)
   const { data: nodes } = await supabase
     .from('taxonomy_tree')
-    .select('node_id, discipline_id, parent_id, level, name, slug, ale_id, sort_order, is_leaf')
+    .select('node_id, discipline_id, parent_id, level, name, slug, lea_id, sort_order, is_leaf')
     .is('deprecated_at', null)
     .lte('level', 3)
     .order('level', { ascending: true })
@@ -233,7 +233,7 @@ export const getAdminTaxonomyTree = async (): Promise<AdminTaxonomyResult> => {
         level: n.level,
         name: n.name,
         slug: n.slug,
-        ale_id: n.ale_id,
+        lea_id: n.lea_id,
         sort_order: n.sort_order,
         is_leaf: n.is_leaf,
         children: [],
