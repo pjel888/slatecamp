@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-08T13:18:59.474Z",
+  "updatedAt": "2026-04-08T13:21:51.439Z",
   "missions": [
     {
       "id": "session:b1ba2001-649e-42c9-8fc3-6c847db44975:none",
@@ -2783,15 +2783,15 @@
       "name": "none",
       "objective": "Session mission",
       "createdAt": "2026-04-08T13:07:38.818Z",
-      "updatedAt": "2026-04-08T13:18:59.474Z",
-      "status": "running",
+      "updatedAt": "2026-04-08T13:21:51.439Z",
+      "status": "done",
       "workerCount": 2,
       "taskCounts": {
         "total": 2,
         "pending": 0,
         "blocked": 0,
-        "inProgress": 1,
-        "completed": 1,
+        "inProgress": 0,
+        "completed": 2,
         "failed": 0
       },
       "agents": [
@@ -2809,11 +2809,11 @@
           "name": "Explore:aca72d2",
           "role": "Explore",
           "ownership": "aca72d208886287f6",
-          "status": "running",
+          "status": "done",
           "currentStep": null,
-          "latestUpdate": null,
+          "latestUpdate": "completed",
           "completedSummary": null,
-          "updatedAt": "2026-04-08T13:18:59.474Z"
+          "updatedAt": "2026-04-08T13:21:51.439Z"
         }
       ],
       "timeline": [
@@ -2840,6 +2840,14 @@
           "agent": "Explore:aca72d2",
           "detail": "started Explore:aca72d2",
           "sourceKey": "session-start:aca72d208886287f6"
+        },
+        {
+          "id": "session-stop:aca72d208886287f6:2026-04-08T13:21:51.439Z",
+          "at": "2026-04-08T13:21:51.439Z",
+          "kind": "completion",
+          "agent": "Explore:aca72d2",
+          "detail": "completed",
+          "sourceKey": "session-stop:aca72d208886287f6"
         }
       ]
     }
