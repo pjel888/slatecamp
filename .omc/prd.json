@@ -1,36 +1,40 @@
 {
-  "title": "Drills Route E2E Verification",
+  "title": "Wave 1: Foundation Module Rollout (13 modules)",
   "stories": [
     {
       "id": "US-001",
-      "title": "Drills page loads with all sections",
-      "passes": true
+      "title": "Verify existing modules have valid configs and registry entries",
+      "priority": 1,
+      "passes": false,
+      "acceptanceCriteria": [
+        "bun run type-check passes with no new errors",
+        "All 10 existing module configs export valid objects with id, title, description, subject fields",
+        "All 10 configs have matching registry entries in cat-*.ts files",
+        "No import errors when dynamically loading any Wave 1 module config"
+      ]
     },
     {
       "id": "US-002",
-      "title": "Intelligent Configurator creates session and navigates to quiz",
-      "passes": true
+      "title": "Identify and build missing Wave 1 module configs",
+      "priority": 2,
+      "passes": false,
+      "acceptanceCriteria": [
+        "Missing modules identified: Solar Painter, Erosion Fence, FAR Massing, Doorway+Fenestration",
+        "Each missing config created following existing parametric/floorplan patterns",
+        "Each new config registered in appropriate cat-*.ts registry file",
+        "bun run type-check passes after adding new configs"
+      ]
     },
     {
       "id": "US-003",
-      "title": "Quiz session — select answer, submit, see feedback, navigate",
-      "passes": true
-    },
-    {
-      "id": "US-004",
-      "title": "Full Exam Simulation setup page loads",
-      "passes": true
-    },
-    {
-      "id": "US-005",
-      "title": "Design Endurance setup page loads",
-      "passes": true
-    },
-    {
-      "id": "US-006",
-      "title": "Resume session flow works",
-      "passes": true,
-      "note": "Verified via browser — resume link navigates to active session which loads at correct question"
+      "title": "Update tracker and commit Wave 1 completion",
+      "priority": 3,
+      "passes": false,
+      "acceptanceCriteria": [
+        "02_phase_tracker.md Wave 1 section updated with all 13 modules checked",
+        "current-task.md updated to reflect Wave 1 status",
+        "Git commit with conventional message"
+      ]
     }
   ]
 }
