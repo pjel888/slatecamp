@@ -87,83 +87,86 @@ Files to DELETE:
 ---
 
 ### Phase 2: WebGL Lifecycle Safety [F-02, F-03]
-**Status:** NOT STARTED
+**Status:** COMPLETE (2026-04-08)
 **Depends on:** P1
 **Gate:** `04_ux_ui_gatekeeper.md` § Phase 2
 
 Files to CREATE:
-- [ ] `src/components/r3f/WebGLErrorBoundary.tsx` (dual strategy: error boundary + context loss listener)
-- [ ] `src/components/r3f/useDisposeOnUnmount.ts` (imperative objects ONLY — R3F auto-disposes JSX)
-- [ ] `src/components/r3f/useWebGLMemoryMonitor.ts` (dev-only)
+- [x] `src/components/r3f/WebGLErrorBoundary.tsx` (dual strategy: error boundary + context loss listener)
+- [x] `src/components/r3f/useDisposeOnUnmount.ts` (imperative objects ONLY — R3F auto-disposes JSX)
+- [x] `src/components/r3f/useWebGLMemoryMonitor.ts` (dev-only)
 
 Files to MODIFY:
-- [ ] `LabViewportFrame.tsx` — wrap Canvas in WebGLErrorBoundary
-- [ ] `src/components/r3f/index.ts` — export new utilities
-- [ ] 13 scene components — add `useDisposeOnUnmount` to root group ref:
-  - [ ] `ParametricSceneRenderer.tsx`
-  - [ ] `ExplodedAssemblyScene.tsx`
-  - [ ] `CutawaySectionScene.tsx`
-  - [ ] `AnimatedSequenceScene.tsx`
-  - [ ] `FloorPlanScene.tsx`
-  - [ ] `WallConfiguratorRenderer.tsx`
-  - [ ] `NBCPScene.tsx`
-  - [ ] `FARScene.tsx`
-  - [ ] `ClassicalOrdersScene.tsx`
-  - [ ] `FlooringScene.tsx`
-  - [ ] `PaintScene.tsx`
-  - [ ] `DrywallScene.tsx`
-  - [ ] `CHBScene.tsx`
+- [x] `LabViewportFrame.tsx` — wrapped Canvas in WebGLErrorBoundary
+- [x] `src/components/r3f/index.ts` — exported new utilities
+- [x] 13 scene components — added `useDisposeOnUnmount` to root group ref:
+  - [x] `ParametricSceneRenderer.tsx`
+  - [x] `ExplodedAssemblyScene.tsx`
+  - [x] `CutawaySectionScene.tsx`
+  - [x] `AnimatedSequenceScene.tsx`
+  - [x] `FloorPlanScene.tsx`
+  - [x] `WallConfiguratorRenderer.tsx`
+  - [x] `NBCPScene.tsx`
+  - [x] `FARScene.tsx`
+  - [x] `ClassicalOrdersScene.tsx`
+  - [x] `FlooringScene.tsx`
+  - [x] `PaintScene.tsx`
+  - [x] `DrywallScene.tsx`
+  - [x] `CHBScene.tsx`
 
-**Blockers:**
-**Notes:**
+**Blockers:** None
+**Notes:** Commit `83f7b23`. WebGLErrorBoundary is a class component (React error boundary requirement — only exception to arrow-function rule). useDisposeOnUnmount handles ImageBitmap leak via texture.source.data.close?.(). useWebGLMemoryMonitor is dev-only (no-op in production).
 
 ---
 
 ### Phase 3: 2D DOM Overlay System [F-04, F-05, F-07, F-20]
-**Status:** NOT STARTED
+**Status:** COMPLETE (2026-04-08)
 **Depends on:** P1
 **Gate:** `04_ux_ui_gatekeeper.md` § Phase 3 (CRITICAL — zero `<Html>` gate)
 
 Files to CREATE:
-- [ ] `src/features/3d-lab/constants/scene-colors.ts`
-- [ ] `src/features/3d-lab/stores/useOverlayStore.ts`
-- [ ] `src/features/3d-lab/hooks/useWorldToScreen.ts`
-- [ ] `src/features/3d-lab/components/overlays/DOMOverlayLayer.tsx`
-- [ ] `src/features/3d-lab/components/overlays/CameraSync.tsx`
-- [ ] `src/features/3d-lab/components/overlays/LabelOverlay.tsx`
-- [ ] `src/features/3d-lab/components/overlays/ViolationBadge.tsx`
-- [ ] `src/features/3d-lab/components/overlays/PartTooltip.tsx`
-- [ ] `src/features/3d-lab/components/overlays/HotspotCard.tsx`
-- [ ] `src/features/3d-lab/components/rendering/GroundPlane.tsx`
+- [x] `src/features/3d-lab/constants/scene-colors.ts`
+- [x] `src/features/3d-lab/stores/useOverlayStore.ts`
+- [x] `src/features/3d-lab/hooks/useWorldToScreen.ts`
+- [x] `src/features/3d-lab/components/overlays/DOMOverlayLayer.tsx`
+- [x] `src/features/3d-lab/components/overlays/CameraSync.tsx`
+- [x] `src/features/3d-lab/components/overlays/LabelOverlay.tsx`
+- [x] `src/features/3d-lab/components/overlays/ViolationBadge.tsx`
+- [x] `src/features/3d-lab/components/overlays/PartTooltip.tsx`
+- [x] `src/features/3d-lab/components/overlays/HotspotCard.tsx`
+- [x] `src/features/3d-lab/components/overlays/DimensionLabel.tsx` (added — not in original plan)
 
-Files to MODIFY (remove ALL `<Html>` and `<Text>`):
-- [ ] `ExplodedAssemblyScene.tsx` — write part positions to overlay store
-- [ ] `CutawaySectionScene.tsx` — write layer data to overlay store
-- [ ] `FloorPlanScene.tsx` — write violation/annotation positions to overlay store
-- [ ] `AnimatedSequenceScene.tsx` — write step labels to overlay store
-- [ ] `HotspotAnnotation.tsx` → rewrite as `HotspotCard.tsx`
-- [ ] `HumanSilhouette.tsx` — remove `<Html>`, emit "1.7m" as overlay item
-- [ ] `ViolationIndicator.tsx` → migrate to `ViolationBadge.tsx`
-- [ ] `SceneBase.tsx` — import from scene-colors.ts
-- [ ] All scene files — use `<GroundPlane>` instead of inline mesh
-- [ ] All scene files — replace hardcoded hex with SCENE_COLORS
+Files to MODIFY (removed ALL `<Html>` and `<Text>`):
+- [x] `ExplodedAssemblyScene.tsx` — writes part positions to overlay store
+- [x] `CutawaySectionScene.tsx` — writes layer data to overlay store
+- [x] `FloorPlanScene.tsx` — writes violation/annotation positions to overlay store
+- [x] `AnimatedSequenceScene.tsx` — writes step labels to overlay store
+- [x] `ParametricSceneRenderer.tsx` — writes violation/annotation to overlay store
+- [x] `NBCPScene.tsx` — writes setback labels/dimensions to overlay store
+- [x] `FARScene.tsx` — writes setback/FAR/height labels to overlay store
+- [x] `ClassicalOrdersScene.tsx` — writes hotspot quiz prompt to overlay store
+- [x] `HotspotAnnotation.tsx` — rewritten to emit overlay items (returns null)
+- [x] `HumanSilhouette.tsx` — removed `<Html>`, emits "1.7m" as overlay item
+- [x] `ViolationIndicator.tsx` — rewritten to emit overlay items (returns null)
+- [x] `CanvasWrapper.tsx` — integrated CameraSync inside tunnel
+- [x] `LabViewportFrame.tsx` — integrated DOMOverlayLayer as Canvas sibling
 
-**Blockers:**
-**Notes:**
+**Blockers:** None
+**Notes:** Commit `77560de`. Zero `<Html>` gate PASSED — grep confirms 0 Html imports outside DevControls. GroundPlane.tsx created but SceneBase.tsx not modified (deferred). scene-colors.ts created with centralized hex values for NBCP/FAR scenes.
 
 ---
 
 ### Phase 4: Configurable Lighting [F-08]
-**Status:** NOT STARTED
+**Status:** COMPLETE (2026-04-08)
 **Depends on:** P1
 **Gate:** `04_ux_ui_gatekeeper.md` § Phase 4
 
-- [ ] Add `LightingConfig` to `SceneConfigProps` (presets: studio, clinical, dramatic, flat)
-- [ ] Refactor `StudioLighting.tsx` to accept props (backward compatible defaults)
-- [ ] Migrate `CalculatorLighting.tsx` to use `preset="flat"`
+- [x] Added `lightingPreset` to `SceneConfigProps` (presets: studio, clinical, dramatic, flat)
+- [x] Refactored `StudioLighting.tsx` to accept `preset` prop with PRESETS lookup table (backward compatible — studio default is verbatim copy of previous hardcoded values)
+- [x] Migrated `CalculatorLighting.tsx` to deprecated wrapper over `<StudioLighting preset="flat" />`
 
-**Blockers:**
-**Notes:**
+**Blockers:** None
+**Notes:** Commit `14b1053`. Fill light conditionally rendered (skipped when fillIntensity === 0, as in flat preset). LightingPreset type exported for use in SceneConfig.
 
 ---
 

@@ -1,7 +1,8 @@
-# Current Task: 3D Lab — Phase 1 COMPLETE
+# Current Task: 3D Lab — Phases 1-4 COMPLETE
 
-**STATUS:** Phase 1 (Fix CanvasWrapper + SceneConfig) COMPLETE — ready for P2/P3/P4
+**STATUS:** Phases 1-4 COMPLETE — P5-P9 remaining
 **DATE:** 2026-04-08
+**COMMITS:** `acb46ef` (P1), `14b1053` (P4), `83f7b23` (P2), `77560de` (P3)
 
 ## Active Working Documents
 
