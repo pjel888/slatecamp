@@ -159,11 +159,13 @@ export default function FloorPlanWalkthrough({
     <div className="relative h-full w-full">
       {/* 3D Canvas */}
       <CanvasWrapper
-        cameraPosition={cameraPos}
-        cameraFov={cameraFov}
-        showGround={false}
-        minDistance={5}
-        maxDistance={40}
+        sceneConfig={{
+          cameraPosition: cameraPos,
+          cameraFov: cameraFov,
+          showGround: false,
+          minDistance: 5,
+          maxDistance: 40,
+        }}
       >
         <FloorPlanScene
           config={config}

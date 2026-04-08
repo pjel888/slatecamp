@@ -27,7 +27,12 @@ export default function NBCPEnvelope() {
 
   return (
     <div className="relative h-full w-full">
-      <CanvasWrapper>
+      <CanvasWrapper
+        sceneConfig={{
+          disableLighting: true,
+          disableSceneBase: true,
+        }}
+      >
         <Suspense fallback={null}>
           <PerspectiveCamera makeDefault position={cameraPosition} fov={40} />
           <Environment preset="city" />

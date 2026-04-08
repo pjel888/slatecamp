@@ -168,6 +168,20 @@
   - `/dashboard/wiki/[slug]` remained present in the successful build output
   - `git diff --name-only -- src/app/dashboard/wiki src/components/wiki` returned only the four `*Practice` alias files listed above
 
+### 3D Lab Module Improvement — Phase 1 Complete (2026-04-08)
+- **Phase 1 (Fix CanvasWrapper + SceneConfig):** COMPLETE
+- Created `src/features/3d-lab/components/rendering/SceneConfig.tsx` — configures camera, controls, lighting, scene base per-module
+- Stripped 15 dead props from `CanvasWrapper.tsx`, replaced with single `sceneConfig` prop
+- `LabViewportFrame.tsx` no longer hardcodes camera/controls/lighting — delegates to SceneConfig via tunnel
+- Added `PerformanceMonitor` with `flipflops={3}` and dynamic DPR management (1.0–2.0)
+- Updated all 10 template consumers to use `sceneConfig={{ ... }}`
+- Deleted 2 dead re-export files (`components/templates/CanvasWrapper.tsx`, `components/templates/GlobalCanvasPortal.tsx`)
+- Calculator orthographic/flat modes now functional (previously dead props)
+- `bun run type-check` and `bun run build` both pass
+- All universal gates pass (DevControls, identity lock, module configs untouched)
+- Archived plan: `.ai/plans/archive/phase_1_canvas_refactor_plan.md`
+- **Next phases:** P2 (WebGL lifecycle), P3 (DOM overlays), P4 (configurable lighting) — all unblocked by P1
+
 ### Testing & Quizzing Suite Audit & Consolidation (Pivoted 2026-04-06)
 - **Architecture Pivot:** Moving from discrete static modes to a unified **"Hero Configurator"** on `/dashboard/testing`.
 - **UI Design:** Tactical configurator using drag-and-drop for subject selection, integrated sliders for question count/timer, and a high-intent **"Slide to Start"** CTA.

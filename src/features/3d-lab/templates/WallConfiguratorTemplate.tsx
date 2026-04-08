@@ -28,11 +28,13 @@ export default function WallConfiguratorTemplate({ config }: Props) {
       rightWidth={340}
     >
       <CanvasWrapper
-        cameraPosition={cameraPos}
-        cameraFov={cameraFov}
-        minDistance={1}
-        maxDistance={25}
-        showGround={false}
+        sceneConfig={{
+          cameraPosition: cameraPos,
+          cameraFov: cameraFov,
+          minDistance: 1,
+          maxDistance: 25,
+          showGround: false,
+        }}
       >
         <WallConfiguratorRenderer config={config} />
       </CanvasWrapper>

@@ -113,13 +113,15 @@ export default function ClassicalOrders() {
     <div className="relative h-full w-full">
       {/* 3D Canvas */}
       <CanvasWrapper
-        cameraPosition={[3.5, 1.5, 3.5]}
-        cameraFov={42}
-        minPolarAngle={Math.PI / 6}
-        maxPolarAngle={Math.PI / 2}
-        minDistance={1.5}
-        maxDistance={8}
-        showGround={false}
+        sceneConfig={{
+          cameraPosition: [3.5, 1.5, 3.5],
+          cameraFov: 42,
+          minPolarAngle: Math.PI / 6,
+          maxPolarAngle: Math.PI / 2,
+          minDistance: 1.5,
+          maxDistance: 8,
+          showGround: false,
+        }}
       >
         <ClassicalOrdersScene onPartClick={handlePartClick} />
       </CanvasWrapper>

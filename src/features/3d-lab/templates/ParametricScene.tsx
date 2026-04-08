@@ -69,11 +69,13 @@ export default function ParametricScene({ config }: ParametricSceneProps) {
       rightWidth={280}
     >
       <CanvasWrapper
-        cameraPosition={cameraPos}
-        cameraFov={cameraFov}
-        minDistance={1}
-        maxDistance={25}
-        showGround={false}
+        sceneConfig={{
+          cameraPosition: cameraPos,
+          cameraFov: cameraFov,
+          minDistance: 1,
+          maxDistance: 25,
+          showGround: false,
+        }}
       >
         <ParametricSceneRenderer
           config={config}

@@ -53,11 +53,13 @@ export default function ExplodedAssembly({ config }: ExplodedAssemblyProps) {
     <div className="relative h-full w-full">
       {/* 3D Canvas */}
       <CanvasWrapper
-        cameraPosition={cam?.position ?? [6, 6, 6]}
-        cameraFov={cam?.fov ?? 35}
-        showGround={false}
-        minDistance={3}
-        maxDistance={20}
+        sceneConfig={{
+          cameraPosition: cam?.position ?? [6, 6, 6],
+          cameraFov: cam?.fov ?? 35,
+          showGround: false,
+          minDistance: 3,
+          maxDistance: 20,
+        }}
       >
         <ExplodedAssemblyScene config={config} useStore={useStore} />
       </CanvasWrapper>

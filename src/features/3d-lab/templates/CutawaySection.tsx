@@ -187,10 +187,12 @@ export default function CutawaySection({ config }: CutawaySectionProps) {
     <div className="relative h-full w-full">
       {/* 3D Canvas */}
       <CanvasWrapper
-        cameraPosition={cameraPos}
-        cameraFov={cameraFov}
-        minDistance={1}
-        maxDistance={20}
+        sceneConfig={{
+          cameraPosition: cameraPos,
+          cameraFov: cameraFov,
+          minDistance: 1,
+          maxDistance: 20,
+        }}
       >
         <CutawaySectionScene config={config} useStore={useStore} />
       </CanvasWrapper>

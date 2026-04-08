@@ -4,24 +4,14 @@ import { memo, type ReactNode, Suspense, useState, useEffect } from 'react'
 import { CanvasLoadingOverlay } from '@/components/r3f/CanvasLoadingOverlay'
 import { useInvalidateOnChange } from '@/features/3d-lab/hooks/useInvalidateOnChange'
 import { SceneTunnel } from './GlobalCanvasPortal'
+import { SceneConfig, type SceneConfigProps } from './rendering/SceneConfig'
 
 interface CanvasWrapperProps {
   children: ReactNode
-  minPolarAngle?: number
-  maxPolarAngle?: number
-  cameraPosition?: [number, number, number]
-  cameraFov?: number
-  showGround?: boolean
-  minDistance?: number
-  maxDistance?: number
-  orthographic?: boolean
-  cameraZoom?: number
-  flat?: boolean
-  disableLighting?: boolean
-  disableSceneBase?: boolean
-  disableShadows?: boolean
-  clearColor?: string
-  glConfig?: Record<string, unknown>
+  /** Scene configuration (camera, controls, lighting, environment).
+   *  Defaults to {} — all SceneConfig defaults apply.
+   *  Omit only if the consumer manages everything internally (e.g. own makeDefault camera). */
+  sceneConfig?: SceneConfigProps
 }
 
 const InvalidateRegistrar = () => {
@@ -31,6 +21,7 @@ const InvalidateRegistrar = () => {
 
 export const CanvasWrapper = memo(function CanvasWrapper({
   children,
+  sceneConfig = {},
 }: CanvasWrapperProps) {
   const [ready, setReady] = useState(false)
 
@@ -44,6 +35,7 @@ export const CanvasWrapper = memo(function CanvasWrapper({
       <CanvasLoadingOverlay visible={!ready} />
       <SceneTunnel.In>
         <InvalidateRegistrar />
+        <SceneConfig {...sceneConfig} />
         <Suspense fallback={null}>{children}</Suspense>
       </SceneTunnel.In>
     </div>

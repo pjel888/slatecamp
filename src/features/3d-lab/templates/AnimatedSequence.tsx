@@ -89,11 +89,13 @@ export default function AnimatedSequence({ config }: AnimatedSequenceProps) {
     <div className="relative h-full w-full">
       {/* 3D Canvas */}
       <CanvasWrapper
-        cameraPosition={cam?.position ?? [5, 5, 5]}
-        cameraFov={cam?.fov ?? 40}
-        showGround={false}
-        minDistance={2}
-        maxDistance={25}
+        sceneConfig={{
+          cameraPosition: cam?.position ?? [5, 5, 5],
+          cameraFov: cam?.fov ?? 40,
+          showGround: false,
+          minDistance: 2,
+          maxDistance: 25,
+        }}
       >
         <AnimatedSequenceScene config={config} useStore={useStore} />
       </CanvasWrapper>

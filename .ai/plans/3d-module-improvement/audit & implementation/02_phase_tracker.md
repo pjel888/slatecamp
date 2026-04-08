@@ -58,24 +58,31 @@ Parallel: Regulatory track (non-blocking but mandatory before ship)
 ---
 
 ### Phase 1: Fix CanvasWrapper + SceneConfig [F-01, F-06, F-13, F-15]
-**Status:** NOT STARTED
+**Status:** ✅ COMPLETE (2026-04-08)
 **Depends on:** P0
 **Gate:** `04_ux_ui_gatekeeper.md` § Phase 1
 
 Files to CREATE:
-- [ ] `src/features/3d-lab/components/rendering/SceneConfig.tsx`
+- [x] `src/features/3d-lab/components/rendering/SceneConfig.tsx`
 
 Files to MODIFY:
-- [ ] `components/CanvasWrapper.tsx` — strip dead props, add `sceneConfig`
-- [ ] `components/shell/LabViewportFrame.tsx` — remove hardcoded camera/controls/lighting, add PerformanceMonitor
-- [ ] All 10 template consumers — replace dead props with `sceneConfig={{}}`
+- [x] `components/CanvasWrapper.tsx` — stripped 15 dead props, added `sceneConfig` prop
+- [x] `components/shell/LabViewportFrame.tsx` — removed hardcoded camera/controls/lighting, added PerformanceMonitor with flipflops={3} + DPR management
+- [x] All 10 template consumers — replaced dead props with `sceneConfig={{ ... }}`
 
 Files to DELETE:
-- [ ] `components/templates/CanvasWrapper.tsx` (re-export)
-- [ ] `components/templates/GlobalCanvasPortal.tsx` (re-export)
+- [x] `components/templates/CanvasWrapper.tsx` (re-export) — DELETED
+- [x] `components/templates/GlobalCanvasPortal.tsx` (re-export) — DELETED
 
-**Blockers:**
+**Blockers:** None
 **Notes:**
+- SceneConfig uses imperative CameraSetup (useEffect) for perspective camera to avoid fighting with OrbitControls on re-renders
+- OrthographicCamera uses drei declarative component (only for Calculator orthographic mode)
+- PerformanceMonitor adjusts DPR between 1.0-2.0 in 0.5 steps
+- Canvas `camera` prop kept as fallback matching SceneConfig defaults ([6,6,6], fov:35)
+- NBCP passes `disableLighting: true, disableSceneBase: true` — manages own camera/controls/lighting internally
+- `disableShadows` and `glConfig` (Canvas-level props) deferred to Phase 4
+- Calculator orthographic/flat modes now actually WORK via SceneConfig (previously dead props)
 
 ---
 

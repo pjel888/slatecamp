@@ -115,22 +115,18 @@ function CalculatorLayout({
           {tool.hasDimensions ? (
             <>
               <CanvasWrapper
-                orthographic={cam.isOrtho}
-                flat={cam.isOrtho}
-                disableLighting
-                disableSceneBase
-                disableShadows={cam.isOrtho}
-                cameraPosition={cam.position}
-                cameraFov={cam.fov}
-                cameraZoom={cam.zoom}
-                clearColor="#F2F0EB"
-                glConfig={{
-                  antialias: true,
-                  alpha: false,
-                  powerPreference: 'high-performance',
+                sceneConfig={{
+                  orthographic: cam.isOrtho,
+                  flat: cam.isOrtho,
+                  disableLighting: true,
+                  disableSceneBase: true,
+                  cameraPosition: cam.position,
+                  cameraFov: cam.fov,
+                  cameraZoom: cam.zoom,
+                  clearColor: '#F2F0EB',
+                  minPolarAngle: Math.PI * 0.05,
+                  maxPolarAngle: Math.PI * 0.48,
                 }}
-                minPolarAngle={Math.PI * 0.05}
-                maxPolarAngle={Math.PI * 0.48}
               >
                 <CalculatorLighting />
                 <SceneInvalidator inputVersion={tool.inputVersion} />

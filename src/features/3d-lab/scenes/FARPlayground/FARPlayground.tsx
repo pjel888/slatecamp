@@ -187,12 +187,14 @@ export default function FARPlayground() {
   return (
     <div className="relative h-full w-full">
       <CanvasWrapper
-        cameraPosition={[7, 7, 7]}
-        cameraFov={40}
-        maxPolarAngle={Math.PI / 2.1}
-        minDistance={2}
-        maxDistance={25}
-        showGround={false}
+        sceneConfig={{
+          cameraPosition: [7, 7, 7],
+          cameraFov: 40,
+          maxPolarAngle: Math.PI / 2.1,
+          minDistance: 2,
+          maxDistance: 25,
+          showGround: false,
+        }}
       >
         <FARScene />
       </CanvasWrapper>
