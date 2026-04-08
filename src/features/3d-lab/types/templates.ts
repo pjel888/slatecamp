@@ -5,6 +5,20 @@
 import type { Vector3Tuple } from 'three'
 import type { CategoryKey, LaunchPhase } from '../config/taxonomy'
 
+// ─── Regulatory Citation Types ───────────────────────────────────────────────
+
+export type ValueClassification = 'code-mandated' | 'code-derived' | 'pedagogical' | 'ux-arbitrary'
+
+export interface LegalCitation {
+  law: string
+  section: string
+  article?: string
+  description: string
+  value?: string
+  classification: ValueClassification
+  verified?: string
+}
+
 // ─── Template Types ──────────────────────────────────────────────────────────
 
 export type TemplateType =
