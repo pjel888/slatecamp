@@ -317,21 +317,21 @@ Files to MODIFY (removed ALL `<Html>` and `<Text>`):
 ---
 
 ### Wave 4: Advanced (8 modules — NEW templates)
-**Status:** 6/8 COMPLETE (2026-04-08) — 2 deferred (need new template types)
+**Status:** ✅ COMPLETE (2026-04-08)
 **Depends on:** Wave 3
 
 | # | Module | Config ID | Template | Status |
 |---|--------|-----------|----------|--------|
-| 1 | MOD-301 Egress Sim | — | `simulation` | [ ] DEFERRED — needs new `simulation` template type |
+| 1 | MOD-301 Egress Sim | `egress-simulation` | animated | [x] BUILT (new — 5-step evacuation sequence using AnimatedSequence template) |
 | 2 | MOD-503 Ventilation | `natural-ventilation-rules` + `cross-ventilation-analysis` + `garage-ventilation` | parametric | [x] Verified (3 existing configs cover ventilation) |
 | 3 | MOD-402 Lot Sizer | `lot-area-calculator` | parametric | [x] BUILT (new — interactive lot/building footprint) |
 | 4 | MOD-404 Road Hierarchy | `road-hierarchy-standards` | parametric | [x] BUILT (new — cross-section by road type) |
-| 5 | MOD-406 Batch Verifier | — | `floorplan` | [ ] DEFERRED — needs batch processing UI beyond current templates |
+| 5 | MOD-406 Batch Verifier | `batch-compliance-verifier` | parametric | [x] BUILT (new — multi-code PD 1096/RA 9514/BP 344 dashboard) |
 | 6 | MOD-501 USA Botanist | `usa-botanist-calculator` | parametric | [x] BUILT (new) |
 | 7 | Shading Device | `shading-device-design` | parametric | [x] BUILT (new) |
 | 8 | Daylighting Room Depth | `daylighting-room-depth` | parametric | [x] BUILT (new — room cross-section with 2.5x rule) |
 
-**Deferred items:** MOD-301 Egress Sim requires animated agent simulation (new `simulation` template). MOD-406 Batch Verifier requires multi-module verification workflow (new UI pattern). Both are architectural additions beyond config-level work.
+**Implementation notes:** Egress Sim uses existing `animated` template (AnimatedSequenceConfig) with 5 evacuation steps instead of requiring a new `simulation` template. Batch Verifier uses `parametric` template with real-time multi-code check logic and color-coded compliance bars instead of a separate batch UI.
 
 ---
 

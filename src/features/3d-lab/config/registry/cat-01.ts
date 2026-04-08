@@ -31,6 +31,7 @@ import { usaBotanistCalculatorConfig } from '@/features/3d-lab/config/modules/01
 import { shadingDeviceDesignConfig } from '@/features/3d-lab/config/modules/01-building-code/shading-device-design'
 import { daylightingRoomDepthConfig } from '@/features/3d-lab/config/modules/01-building-code/daylighting-room-depth'
 import { lotAreaCalculatorConfig } from '@/features/3d-lab/config/modules/01-building-code/lot-area-calculator'
+import { batchComplianceVerifierConfig } from '@/features/3d-lab/config/modules/01-building-code/batch-compliance-verifier'
 
 export const cat01Modules: ModuleRegistryEntry[] = [
   {
@@ -322,6 +323,16 @@ export const cat01Modules: ModuleRegistryEntry[] = [
     launchPhase: 3,
     status: 'ready' as const,
     description: lotAreaCalculatorConfig.description,
+  },
+  {
+    id: batchComplianceVerifierConfig.id,
+    title: batchComplianceVerifierConfig.title,
+    templateType: 'parametric' as const,
+    subject: batchComplianceVerifierConfig.subject,
+    categoryId: 'BUILDING_CODE',
+    launchPhase: 3,
+    status: 'ready' as const,
+    description: batchComplianceVerifierConfig.description,
   },
 ]
 

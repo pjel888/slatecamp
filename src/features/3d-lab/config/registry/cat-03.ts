@@ -23,6 +23,7 @@ import { stairwellEnclosureConfig } from '@/features/3d-lab/config/modules/03-fi
 import { standpipeClassesConfig } from '@/features/3d-lab/config/modules/03-fire-code/standpipe-classes'
 import { numberOfExitsConfig } from '@/features/3d-lab/config/modules/03-fire-code/number-of-exits'
 import { fireRatedBarrierConfig } from '@/features/3d-lab/config/modules/03-fire-code/fire-rated-barrier'
+import { egressSimulationConfig } from '@/features/3d-lab/config/modules/03-fire-code/egress-simulation'
 
 export const cat03Modules: ModuleRegistryEntry[] = [
   {
@@ -234,6 +235,16 @@ export const cat03Modules: ModuleRegistryEntry[] = [
     launchPhase: 2,
     status: 'ready' as const,
     description: fireRatedBarrierConfig.description,
+  },
+  {
+    id: egressSimulationConfig.id,
+    title: egressSimulationConfig.title,
+    templateType: 'animated' as const,
+    subject: egressSimulationConfig.subject,
+    categoryId: 'FIRE_CODE',
+    launchPhase: 3,
+    status: 'ready' as const,
+    description: egressSimulationConfig.description,
   },
 ]
 
