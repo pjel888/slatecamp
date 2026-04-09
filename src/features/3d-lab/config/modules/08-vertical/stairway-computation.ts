@@ -61,6 +61,7 @@ import {
   IRC_MIN_HEADROOM_MM,
   IRC_MIN_WIDTH_MM,
   IRC_MAX_VERTICAL_RISE_MM,
+  IRC_HANDRAIL_MAX_HEIGHT_MM,
 } from './stairway-constants-international'
 
 // ── Value Coercion Helpers ───────────────────────────────────────────────────
@@ -598,7 +599,7 @@ const computeInternationalDeltas = (
       phValue: PD1096_HANDRAIL_MAX_HEIGHT_MM,
       ibcValue: IBC_HANDRAIL_MAX_HEIGHT_MM,
       adaValue: ADA_HANDRAIL_MAX_HEIGHT_MM,
-      ircValue: IRC_MAX_VERTICAL_RISE_MM, // Note: IRC handrail uses same range
+      ircValue: IRC_HANDRAIL_MAX_HEIGHT_MM,
       phLaw: 'PD 1096',
     },
     {
