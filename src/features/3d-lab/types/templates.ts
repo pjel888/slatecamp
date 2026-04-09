@@ -2,6 +2,7 @@
 // ─── Template Type System ────────────────────────────────────────────────────
 // All type definitions for the 3D Lab module system. No runtime code.
 
+import type React from 'react'
 import type { Vector3Tuple } from 'three'
 import type { CategoryKey, LaunchPhase } from '../config/taxonomy'
 
@@ -366,6 +367,122 @@ export interface CalculatorConfig {
   contextScenario?: string
   leaQuestionCount?: number
   leaQuestionType?: string
+}
+
+// ─── Viewport Shell Config ──────────────────────────────────────────────────
+// Slot-based layout configuration: declares which shell containers a module uses.
+
+export interface SidebarConfig {
+  /** Start collapsed on load */
+  defaultCollapsed?: boolean
+  /** Panel width in px */
+  width?: number
+  /** Panel header title */
+  title?: string
+  /** Tab label in mobile bottom sheet */
+  mobileTabLabel?: string
+}
+
+export interface ViewportShellConfig {
+  /** Left sidebar slot — false/undefined = hidden */
+  leftSidebar?: boolean | SidebarConfig
+  /** Right sidebar slot — false/undefined = hidden */
+  rightSidebar?: boolean | SidebarConfig
+  /** Status bar below canvas */
+  statusBar?: boolean
+  /** Override mobile bottom sheet tab labels (auto-derived from sidebars if omitted) */
+  mobileBottomSheetTabs?: string[]
+}
+
+// ─── Viewport Capabilities ──────────────────────────────────────────────────
+// Config-driven toolbar controls: declares which viewport tools a module supports.
+
+export type ViewMode = 'perspective' | 'orthographic' | 'isometric' | 'top-down'
+
+export interface CrossSectionConfig {
+  axis: 'x' | 'y' | 'z'
+  range: [number, number]
+}
+
+export interface ViewportCapabilities {
+  /** Camera presets — true = default 5 presets, or provide custom array */
+  cameraPresets?: boolean | CameraPreset[]
+  /** Available view modes */
+  viewModes?: ViewMode[]
+  /** Cross-section clipping plane */
+  crossSection?: boolean | CrossSectionConfig
+  /** Exploded view toggle */
+  explodedView?: boolean
+  /** Human scale silhouette toggle */
+  humanScale?: boolean
+  /** Focus mode toggle */
+  focusMode?: boolean
+  /** Reset camera button (default: true) */
+  resetCamera?: boolean
+}
+
+export interface CameraPreset {
+  id: string
+  label: string
+  position: Vector3Tuple
+  target?: Vector3Tuple
+  fov?: number
+  zoom?: number
+}
+
+// ─── Viewport Shell Content ─────────────────────────────────────────────────
+// What templates return to inject into shell slots.
+
+export interface ViewportShellContent {
+  /** Left sidebar slot content */
+  leftSidebarContent?: React.ReactNode
+  /** Right sidebar slot content */
+  rightSidebarContent?: React.ReactNode
+  /** R3F scene content — always required */
+  canvasContent: React.ReactNode
+  /** Status bar content */
+  statusBarContent?: React.ReactNode
+  /** Template-specific toolbar additions */
+  toolbarExtras?: React.ReactNode
+}
+
+// ─── Template Default Configs ───────────────────────────────────────────────
+
+export const TEMPLATE_SHELL_DEFAULTS: Record<TemplateType, { shell: ViewportShellConfig; capabilities: ViewportCapabilities }> = {
+  parametric: {
+    shell: { rightSidebar: { width: 280, title: 'Controls', mobileTabLabel: 'Controls' } },
+    capabilities: { cameraPresets: true, viewModes: ['perspective', 'isometric'], resetCamera: true },
+  },
+  exploded: {
+    shell: { rightSidebar: { width: 280, title: 'Parts', mobileTabLabel: 'Parts' } },
+    capabilities: { cameraPresets: true, viewModes: ['perspective', 'isometric'], explodedView: true, resetCamera: true },
+  },
+  cutaway: {
+    shell: { rightSidebar: { width: 280, title: 'Layers', mobileTabLabel: 'Layers' } },
+    capabilities: { cameraPresets: true, viewModes: ['perspective', 'isometric'], crossSection: true, resetCamera: true },
+  },
+  floorplan: {
+    shell: { rightSidebar: { width: 280, title: 'Legend', mobileTabLabel: 'Legend' } },
+    capabilities: { cameraPresets: true, viewModes: ['top-down', 'perspective'], resetCamera: true },
+  },
+  animated: {
+    shell: { rightSidebar: { width: 280, title: 'Steps', mobileTabLabel: 'Steps' } },
+    capabilities: { cameraPresets: true, viewModes: ['perspective', 'isometric'], resetCamera: true },
+  },
+  calculator: {
+    shell: {
+      leftSidebar: { width: 320, title: 'Inputs', mobileTabLabel: 'Inputs' },
+      rightSidebar: { width: 340, title: 'Results', mobileTabLabel: 'Results' },
+    },
+    capabilities: { viewModes: ['orthographic', 'perspective'], resetCamera: true },
+  },
+  'wall-configurator': {
+    shell: {
+      leftSidebar: { width: 320, title: 'Configure', mobileTabLabel: 'Configure' },
+      rightSidebar: { width: 340, title: 'Materials', mobileTabLabel: 'Materials' },
+    },
+    capabilities: { cameraPresets: true, viewModes: ['perspective', 'isometric'], resetCamera: true },
+  },
 }
 
 // ─── Discriminated Union ─────────────────────────────────────────────────────

@@ -1,4 +1,33 @@
-# Current Task: Analytics Unified Overhaul — ALL 16 PHASES COMPLETE
+# Current Task: Unified Viewport Shell — Plan Complete, Ready for Implementation
+
+**STATUS:** IN PROGRESS
+**DATE:** 2026-04-09
+
+## In Progress
+- Unified Viewport Shell — Section 12A spec + implementation plan written to `.ai/plans/2026-04-09_unified-viewport-shell.md`
+- Codebase audit complete: all 7 templates + DevControlsModule + WallConfigurator layout divergence documented
+- LabViewportFrame overlay fix applied (relative → absolute inset-0 for panel visibility)
+
+## Backlog
+- Build ViewportShell component (Phase 1)
+- Build ViewportSidebar + PanelCollapseButton (Phase 1)
+- Build ViewportToolbar (Phase 1)
+- Build ViewportBottomSheet (Phase 1)
+- Build useViewportShellStore (Phase 1)
+- Migrate ParametricScene to shell slots (Phase 2)
+- Migrate ExplodedAssembly to shell slots (Phase 2)
+- Migrate CutawaySection to shell slots (Phase 2)
+- Extract CameraPresetBar from DevControlsModule (Phase 2)
+- Wire crossSectionEnabled to THREE.Plane clipping (Phase 2)
+- Wire explodedViewEnabled to toggle UI (Phase 3)
+- Migrate FloorPlan, AnimatedSequence, Calculator (Phase 3)
+- Migrate WallConfigurator ConfigPanel/BOMPanel to slots (Phase 4)
+- Migrate DevControlsModule to ViewportShell (Phase 5)
+- Write Section 12A spec into 008-3d-lab-feature-specification.md
+
+---
+
+# Previous Task: Analytics Unified Overhaul — ALL 16 PHASES COMPLETE
 
 **STATUS:** COMPLETE
 **DATE:** 2026-04-09

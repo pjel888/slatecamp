@@ -81,7 +81,7 @@ export const LabViewportFrame = ({ children }: LabViewportFrameProps) => {
       <DOMOverlayLayer />
 
       {/* Overlay UI elements (hotspots, panels, etc.) */}
-      <div className="relative z-10 pointer-events-none h-full w-full">
+      <div className="absolute inset-0 z-10 pointer-events-none">
         {children}
       </div>
     </div>

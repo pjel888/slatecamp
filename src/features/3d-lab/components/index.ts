@@ -18,6 +18,15 @@ export * from './shell/LabOverlayLayer'
 export * from './shell/LabMetaPanel'
 export * from './shell/LabEmptyState'
 
+// Unified Viewport Shell
+export * from './shell/ViewportShell'
+export * from './shell/ViewportHeader'
+export * from './shell/ViewportSidebar'
+export * from './shell/ViewportToolbar'
+export * from './shell/ViewportStatusBar'
+export * from './shell/ViewportBottomSheet'
+export * from './shell/PanelCollapseButton'
+
 // Rendering components
 export * from './rendering/StudioLighting'
 export * from './rendering/SceneBase'

@@ -1,7 +1,33 @@
 # State: Memory
 
-**Last Updated:** 2026-04-06  
+**Last Updated:** 2026-04-09  
 **Purpose:** Accumulated verified facts across sessions - survives session resets
+
+---
+
+## Decisions
+
+- [2026-04-09] Unified Viewport Shell replaces per-template layout assembly. Slot-based composition — shell provides containers, templates provide content only.
+- [2026-04-09] ONE ViewportSidebar component, ONE PanelCollapseButton — replaces 7+ divergent panel implementations (LabPanelLayout, GenericControlPanel, ControlPanel, InfoPanel, ComplianceReportPanel, DevControls dashboard panels, WallConfigurator ConfigPanel/BOMPanel).
+- [2026-04-09] Shell is 100% DOM-rendered. Zero Three.js scene cost. CSS Grid layout (DevControls pattern: left + handle + 1fr + handle + right).
+- [2026-04-09] ViewportShellConfig + ViewportCapabilities added to ModuleConfig. Convention-over-configuration defaults per template type.
+- [2026-04-09] crossSectionEnabled and explodedViewEnabled (already in useLabViewStore) wired to shell toolbar toggles.
+- [2026-04-09] New store: useViewportShellStore (Store 11) for sidebar collapse, view mode, camera preset, mobile tab state.
+- [2026-04-09] Panel collapse animation: grid-template-columns CSS transition (200ms cubic-bezier) — proven by DevControlsModule.
+
+## Architecture Notes
+
+- [2026-04-09] LabViewportFrame.tsx:84 fix: changed overlay div from `relative` to `absolute inset-0` — panels were being pushed below Canvas and clipped by overflow-hidden.
+- [2026-04-09] New shell components planned: ViewportShell, ViewportSidebar, ViewportToolbar, ViewportBottomSheet, ViewportStatusBar, ViewportHeader, PanelCollapseButton — all in src/features/3d-lab/components/shell/.
+- [2026-04-09] LabModuleShell deprecated after Phase 2. LabPanelLayout deprecated after Phase 2.
+- [2026-04-09] 5-phase migration: Shell Foundation → Standard Templates (Parametric/Exploded/Cutaway) → Remaining Templates (FloorPlan/Animated/Calculator) → WallConfigurator → DevControlsModule.
+- [2026-04-09] Legacy bespoke scenes (FARPlayground, ClassicalOrders, NBCPEnvelope) excluded from migration.
+
+## Open Questions
+
+- [2026-04-09] Bottom sheet drag gesture: native-feel (iOS-style) or simple toggle? Needs product input.
+- [2026-04-09] Cross-section cut surface fill color: needs product input.
+- [2026-04-09] WallConfigurator BOM panel: left sidebar or status bar? Needs product input.
 
 ---
 
