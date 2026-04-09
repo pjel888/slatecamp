@@ -39,3 +39,15 @@ export type { ComparisonToggleProps } from './ComparisonToggle'
 
 export { HandrailDetailPanel } from './HandrailDetailPanel'
 export type { HandrailDetailPanelProps } from './HandrailDetailPanel'
+
+export { EgressCalculatorPanel } from './EgressCalculatorPanel'
+export type { EgressCalculatorPanelProps } from './EgressCalculatorPanel'
+
+export { EvacuationControls } from './EvacuationControls'
+export type { EvacuationControlsProps } from './EvacuationControls'
+
+export { ChildSafetyPanel } from './ChildSafetyPanel'
+export type { ChildSafetyPanelProps } from './ChildSafetyPanel'
+
+export { MaterialSelectorPanel } from './MaterialSelectorPanel'
+export type { MaterialSelectorPanelProps } from './MaterialSelectorPanel'

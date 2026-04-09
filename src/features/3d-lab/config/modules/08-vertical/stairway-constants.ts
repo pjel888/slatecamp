@@ -99,3 +99,69 @@ export const NEUTRAL_COLORS = {
   LANDING:  '#a1a1aa',
   HANDRAIL: '#71717a',
 } as const
+
+// ──────────────────────────────────────────────────────────────────────────────
+// Egress Requirements
+// Source: RA 9514 IRR Rule 10 + PD 1096 Rule X
+// ──────────────────────────────────────────────────────────────────────────────
+
+/** Occupant Load Factors (sqm per person) — RA 9514 IRR Rule 10 §1004 */
+export const OCCUPANT_LOAD_FACTORS: Record<string, number> = {
+  assembly: 0.65,       // RA 9514 IRR Rule 10 §1004
+  business: 9.3,        // RA 9514 IRR Rule 10 §1004
+  educational: 1.85,    // RA 9514 IRR Rule 10 §1004
+  residential: 18.6,    // RA 9514 IRR Rule 10 §1004
+  mercantile: 2.8,      // RA 9514 IRR Rule 10 §1004
+  industrial: 9.3,      // RA 9514 IRR Rule 10 §1004
+}
+
+/** Required Exits by Occupant Load — RA 9514 IRR Rule 10 §1005 */
+export const RA9514_EXIT_THRESHOLDS = [
+  { maxOccupants: 10, minExits: 1 },      // RA 9514 IRR Rule 10 §1005
+  { maxOccupants: 100, minExits: 2 },      // RA 9514 IRR Rule 10 §1005
+  { maxOccupants: 500, minExits: 3 },      // RA 9514 IRR Rule 10 §1005
+  { maxOccupants: Infinity, minExits: 4 }, // RA 9514 IRR Rule 10 §1005
+] as const
+
+/** PD 1096 Floor Area Threshold for Minimum 2 Exits */
+export const PD1096_LARGE_FLOOR_AREA_SQM = 500    // PD 1096 Rule X §1004
+
+/** Exit Width Capacity — RA 9514 IRR Rule 10 §10.2.5 */
+export const RA9514_WIDTH_PER_PERSON_MM = 5.1      // RA 9514 IRR Rule 10 §10.2.5
+export const RA9514_MIN_EXIT_WIDTH_MM = 710         // RA 9514 IRR Rule 10 §1008
+
+/** Travel Distance Limits (meters, unsprinklered) — RA 9514 IRR Rule 10 §1016 */
+export const TRAVEL_DISTANCE_UNSPRINKLERED: Record<string, number> = {
+  assembly: 46,     // RA 9514 IRR Rule 10 §1016
+  business: 46,     // RA 9514 IRR Rule 10 §1016
+  educational: 46,  // RA 9514 IRR Rule 10 §1016
+  residential: 46,  // RA 9514 IRR Rule 10 §1016
+  mercantile: 30,   // RA 9514 IRR Rule 10 §1016
+  industrial: 31,   // RA 9514 IRR Rule 10 §1016
+}
+
+/** Travel Distance Limits (meters, sprinklered) — RA 9514 IRR Rule 10 §1016 */
+export const TRAVEL_DISTANCE_SPRINKLERED: Record<string, number> = {
+  assembly: 61,     // RA 9514 IRR Rule 10 §1016
+  business: 61,     // RA 9514 IRR Rule 10 §1016
+  educational: 61,  // RA 9514 IRR Rule 10 §1016
+  residential: 61,  // RA 9514 IRR Rule 10 §1016
+  mercantile: 46,   // RA 9514 IRR Rule 10 §1016
+  industrial: 46,   // RA 9514 IRR Rule 10 §1016
+}
+
+// ──────────────────────────────────────────────────────────────────────────────
+// Children's Safety — ADA §504 Advisory + IBC §1013.2
+// ──────────────────────────────────────────────────────────────────────────────
+export const ADA_CHILDREN_HANDRAIL_MAX_HEIGHT_MM = 711  // ADA §504 Advisory (28") ⚠️ UNVERIFIED
+export const ADA_CHILDREN_MIN_CLEARANCE_MM = 229        // ADA §504 min clearance (9") ⚠️ UNVERIFIED
+export const IBC_GUARD_MAX_SPACING_MM = 102             // IBC §1013.2 (4" sphere rule) ⚠️ UNVERIFIED
+export const IBC_RISER_MAX_OPENING_MM = 13              // IBC §1011.3 (½" sphere) ⚠️ UNVERIFIED
+
+// ──────────────────────────────────────────────────────────────────────────────
+// Landing Requirements
+// Source: IBC 2024 §1011.6 (Philippine practice follows IBC)
+// ──────────────────────────────────────────────────────────────────────────────
+export const LANDING_MIN_DEPTH_MM = 1219                // IBC 2024 §1011.6 (48") ⚠️ UNVERIFIED
+export const COMPARISON_GHOST_COLOR = '#94a3b8'         // Ghost geometry for comparison/overlay
+export const COMPARISON_GHOST_OPACITY = 0.2

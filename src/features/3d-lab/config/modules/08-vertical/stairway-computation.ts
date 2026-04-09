@@ -7,6 +7,7 @@
 import type {
   StairParams,
   ComputedStairState,
+  StairTypeConfig,
   ComfortZoneStatus,
   PitchStatus,
   ComplianceResult,
@@ -638,6 +639,14 @@ export const computeStairState = (params: StairParams): ComputedStairState => {
   const toleranceMode = bool(params.toleranceMode ?? false)
   const toleranceRange = num(params.toleranceRange ?? 5)
 
+  // Stair type parsing
+  const stairTypeStr = str(params.stairType ?? 'straight')
+  const stairType: StairTypeConfig = stairTypeStr === 'l-shape'
+    ? { type: 'l-shape', turnDirection: str(params.turnDirection ?? 'right') as 'left' | 'right', risersBeforeTurn: num(params.risersBeforeTurn ?? 6) }
+    : stairTypeStr === 'u-shape'
+      ? { type: 'u-shape', risersBeforeTurn: num(params.risersBeforeTurn ?? 6) }
+      : { type: 'straight' }
+
   // Classification flags
   const isBP220 = computeIsBP220(projectType)
   const isResidential = computeIsResidential(projectType)
@@ -691,7 +700,7 @@ export const computeStairState = (params: StairParams): ComputedStairState => {
     headroom,
     handrailHeight,
     numRisers,
-    stairType: { type: 'straight' },
+    stairType,
     twoRPlusT,
     rPlusT,
     comfortStatus,

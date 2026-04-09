@@ -70,6 +70,9 @@ import {
 } from './stairway-constants'
 
 import { ALL_PRESETS } from './stairway-presets'
+import { buildLShapeGeometry } from './stairway-geometry-l-shape'
+import { buildUShapeGeometry } from './stairway-geometry-u-shape'
+import { getMaterialById } from './stairway-materials'
 
 // ─── Helpers (kept for violation rule position functions) ────────────────────
 
@@ -139,6 +142,39 @@ const parameters: ParameterDef[] = [
   },
 
   // ── Stair Geometry ────────────────────────────────────────────────────────
+  {
+    key: 'stairType',
+    label: 'Stair Type',
+    type: 'dropdown',
+    default: 'straight',
+    options: [
+      { value: 'straight', label: 'Straight Run' },
+      { value: 'l-shape', label: 'L-Shape (Quarter Turn)' },
+      { value: 'u-shape', label: 'U-Shape (Switchback)' },
+    ],
+    group: 'Stair Geometry',
+  },
+  {
+    key: 'turnDirection',
+    label: 'Turn Direction',
+    type: 'dropdown',
+    default: 'right',
+    options: [
+      { value: 'left', label: 'Left' },
+      { value: 'right', label: 'Right' },
+    ],
+    group: 'Stair Geometry',
+  },
+  {
+    key: 'risersBeforeTurn',
+    label: 'Risers Before Turn',
+    type: 'slider',
+    min: 2,
+    max: 12,
+    step: 1,
+    default: 6,
+    group: 'Stair Geometry',
+  },
   {
     key: 'stairWidth',
     label: 'Clear Width',
@@ -334,6 +370,90 @@ const parameters: ParameterDef[] = [
     default: false,
     group: 'Handrail Detail',
   },
+
+  // ── User Safety ───────────────────────────────────────────────────────────
+  {
+    key: 'primaryUsers',
+    label: 'Primary Users',
+    type: 'dropdown',
+    default: 'general',
+    options: [
+      { value: 'general', label: 'General' },
+      { value: 'children', label: 'Children (Schools, Daycare)' },
+      { value: 'elderly', label: 'Elderly (Healthcare, Senior)' },
+      { value: 'mixed', label: 'Mixed (All Age Groups)' },
+    ],
+    group: 'User Safety',
+  },
+
+  // ── Material ──────────────────────────────────────────────────────────────
+  {
+    key: 'treadMaterial',
+    label: 'Tread Material',
+    type: 'dropdown',
+    default: 'concrete',
+    options: [
+      { value: 'polished-marble', label: 'Polished Marble' },
+      { value: 'honed-granite', label: 'Honed Granite' },
+      { value: 'ceramic-tile', label: 'Ceramic Tile (Matte)' },
+      { value: 'concrete', label: 'Concrete (Textured)' },
+      { value: 'wood', label: 'Wood (Sealed)' },
+      { value: 'steel', label: 'Steel (Diamond Plate)' },
+    ],
+    group: 'Material',
+  },
+
+  // ── Egress Calculator ─────────────────────────────────────────────────────
+  {
+    key: 'floorArea',
+    label: 'Floor Area',
+    type: 'slider',
+    min: 50,
+    max: 2000,
+    step: 10,
+    default: 300,
+    unit: 'sqm',
+    group: 'Egress Calculator',
+  },
+  {
+    key: 'occupancyType',
+    label: 'Occupancy Type',
+    type: 'dropdown',
+    default: 'business',
+    options: [
+      { value: 'assembly', label: 'Assembly (0.65 sqm/person)' },
+      { value: 'business', label: 'Business (9.3 sqm/person)' },
+      { value: 'educational', label: 'Educational (1.85 sqm/person)' },
+      { value: 'residential', label: 'Residential (18.6 sqm/person)' },
+      { value: 'mercantile', label: 'Mercantile (2.8 sqm/person)' },
+      { value: 'industrial', label: 'Industrial (9.3 sqm/person)' },
+    ],
+    group: 'Egress Calculator',
+  },
+  {
+    key: 'providedExits',
+    label: 'Exits Provided',
+    type: 'slider',
+    min: 1,
+    max: 6,
+    step: 1,
+    default: 2,
+    group: 'Egress Calculator',
+  },
+  {
+    key: 'isSprinklered',
+    label: 'Sprinkler System?',
+    type: 'toggle',
+    default: false,
+    group: 'Egress Calculator',
+  },
+  {
+    key: 'evacuationActive',
+    label: 'Evacuation Simulation',
+    type: 'toggle',
+    default: false,
+    group: 'Egress Calculator',
+  },
 ]
 
 // ─── Geometry Builder (Adapter Pattern) ────────────────────────────────────
@@ -341,7 +461,7 @@ const parameters: ParameterDef[] = [
 // Internally we compute state via the pure computation engine, then
 // pass it to the geometry sub-builder.
 
-const buildGeometryFromState = (state: ComputedStairState, rawParams: StairParams): GeometryInstruction[] => {
+const buildStraightGeometry = (state: ComputedStairState, rawParams: StairParams): GeometryInstruction[] => {
   // Convert mm to scene units (meters)
   const rH = state.riserHeight / 1000
   const tD = state.treadDepth / 1000
@@ -579,7 +699,21 @@ const buildGeometryFromState = (state: ComputedStairState, rawParams: StairParam
   return g
 }
 
-// Adapter: ParametricSceneConfig.geometry signature → computation engine → sub-builder
+// ── Geometry Routing by Stair Type ─────────────────────────────────────────
+
+const buildGeometryFromState = (state: ComputedStairState, rawParams: StairParams): GeometryInstruction[] => {
+  switch (state.stairType.type) {
+    case 'l-shape':
+      return buildLShapeGeometry(state, rawParams)
+    case 'u-shape':
+      return buildUShapeGeometry(state, rawParams)
+    case 'straight':
+    default:
+      return buildStraightGeometry(state, rawParams)
+  }
+}
+
+// Adapter: ParametricSceneConfig.geometry signature → computation engine → router
 
 const geometry = (p: StairParams): GeometryInstruction[] => {
   const state = computeStairState(p)
