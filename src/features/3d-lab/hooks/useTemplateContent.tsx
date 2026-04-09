@@ -9,6 +9,8 @@ import { ExplodedPartsSidebar } from '@/features/3d-lab/components/templates/Exp
 import { ExplodeSliderControl } from '@/features/3d-lab/components/templates/ExplodeSliderControl'
 import { CutawayLayersSidebar } from '@/features/3d-lab/components/templates/CutawayLayersSidebar'
 import { CutDepthSliderControl } from '@/features/3d-lab/components/templates/CutDepthSliderControl'
+import { FloorPlanLegendSidebar } from '@/features/3d-lab/components/templates/FloorPlanLegendSidebar'
+import { AnimatedStepsSidebar } from '@/features/3d-lab/components/templates/AnimatedStepsSidebar'
 import { createModuleStore } from '@/features/3d-lab/stores/createModuleStore'
 import { getModuleById } from '@/features/3d-lab/config/registry'
 import {
@@ -16,6 +18,8 @@ import {
   type ParametricSceneConfig,
   type ExplodedAssemblyConfig,
   type CutawaySectionConfig,
+  type FloorPlanConfig,
+  type AnimatedSequenceConfig,
   type ViewportShellConfig,
   type ViewportCapabilities,
   type ViewportShellContent,
@@ -38,6 +42,16 @@ const ExplodedAssemblyScene = dynamic(
 
 const CutawaySectionScene = dynamic(
   () => import('@/features/3d-lab/templates/CutawaySectionScene').then((m) => m.CutawaySectionScene),
+  { ssr: false },
+)
+
+const FloorPlanScene = dynamic(
+  () => import('@/features/3d-lab/templates/FloorPlanScene').then((m) => m.FloorPlanScene),
+  { ssr: false },
+)
+
+const AnimatedSequenceScene = dynamic(
+  () => import('@/features/3d-lab/templates/AnimatedSequenceScene').then((m) => m.AnimatedSequenceScene),
   { ssr: false },
 )
 
@@ -75,6 +89,10 @@ export const useTemplateContent = (
     // Template-specific defaults
     if (templateType === 'exploded') {
       d.explode = 0
+    }
+    if (templateType === 'animated') {
+      d.currentStep = 0
+      d.isPlaying = false
     }
     if (templateType === 'cutaway' && config?.layers) {
       const cutMax = Math.max(...config.layers.map((l: any) => l.depth + (l.geometry?.args?.[1] ?? 0.1)))
@@ -204,7 +222,53 @@ export const useTemplateContent = (
         }
       }
 
-      // Non-migrated templates fall back to null (use legacy rendering)
+      case 'floorplan': {
+        const cfg = config as FloorPlanConfig
+        return {
+          shellConfig: {
+            ...shellConfig,
+            leftSidebar: { width: 240, title: cfg.title, mobileTabLabel: 'Controls' },
+          },
+          capabilities,
+          content: {
+            canvasContent: canvasWrapper(
+              <FloorPlanScene config={cfg} useStore={useStore} />,
+            ),
+            leftSidebarContent: cfg.parameters ? (
+              <GenericControlPanel
+                embedded
+                title={cfg.title}
+                parameters={cfg.parameters}
+                presets={cfg.presets}
+                useStore={useStore}
+                contextScenario={cfg.contextScenario}
+                violations={cfg.violations}
+              />
+            ) : undefined,
+            rightSidebarContent: (
+              <FloorPlanLegendSidebar config={cfg} useStore={useStore} />
+            ),
+          },
+        }
+      }
+
+      case 'animated': {
+        const cfg = config as AnimatedSequenceConfig
+        return {
+          shellConfig: { ...shellConfig },
+          capabilities,
+          content: {
+            canvasContent: canvasWrapper(
+              <AnimatedSequenceScene config={cfg} useStore={useStore} />,
+            ),
+            rightSidebarContent: (
+              <AnimatedStepsSidebar config={cfg} useStore={useStore} />
+            ),
+          },
+        }
+      }
+
+      // Calculator and wall-configurator have complex layouts — migrated in later phases
       default:
         return null
     }
