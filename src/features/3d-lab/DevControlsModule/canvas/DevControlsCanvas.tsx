@@ -18,6 +18,7 @@ import { CAMERA_PRESETS, SCENE } from './constants'
 import { resetCursor } from './cursor'
 
 // Scene layers
+import { SceneGround } from '@/features/3d-lab/components/shell/SceneGround'
 import { LotGround } from './layers/LotGround'
 import { DevControlsLayers } from './layers/DevControlsLayers'
 import { RROWIndicator } from './layers/RROWIndicator'
@@ -185,6 +186,9 @@ function SceneContent() {
       <CameraControls target={preset.target} />
 
       {/* Context meshes removed — road rendered via RROWIndicator below */}
+
+      {/* Scene ground — grid + axis gizmo */}
+      <SceneGround />
 
       {/* Lot ground — handles both modes internally */}
       <LotGround />

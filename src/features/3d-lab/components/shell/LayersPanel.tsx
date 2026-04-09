@@ -8,7 +8,8 @@
 // Each module provides its own layer toggles as children — this keeps the
 // LayersPanel in a CONSISTENT position while content differs per module.
 
-import { useEffect, useRef, type ReactNode } from 'react'
+import { useEffect, useRef, useState, type ReactNode } from 'react'
+import { Pin, PinOff } from 'lucide-react'
 import { useViewportShellStore } from '@/features/3d-lab/stores/useViewportShellStore'
 
 // Generic layer options — shown in ALL modules
@@ -24,6 +25,7 @@ interface LayersPanelProps {
 }
 
 export const LayersPanel = ({ children }: LayersPanelProps) => {
+  const [pinned, setPinned] = useState(false)
   const isOpen = useViewportShellStore((s) => s.layersPanelOpen)
   const toggleLayersPanel = useViewportShellStore((s) => s.toggleLayersPanel)
   const gridVisible = useViewportShellStore((s) => s.gridVisible)
@@ -44,6 +46,7 @@ export const LayersPanel = ({ children }: LayersPanelProps) => {
   // Close on click outside
   useEffect(() => {
     if (!isOpen) return
+    if (pinned) return
     const handler = (e: MouseEvent) => {
       if (ref.current && !ref.current.contains(e.target as Node)) {
         const target = e.target as HTMLElement
@@ -56,7 +59,7 @@ export const LayersPanel = ({ children }: LayersPanelProps) => {
       clearTimeout(timer)
       document.removeEventListener('click', handler)
     }
-  }, [isOpen, toggleLayersPanel])
+  }, [isOpen, toggleLayersPanel, pinned])
 
   if (!isOpen) return null
 
@@ -65,9 +68,24 @@ export const LayersPanel = ({ children }: LayersPanelProps) => {
       ref={ref}
       className="absolute top-16 left-4 z-30 w-60 rounded-md border border-border bg-card p-3 shadow-lg pointer-events-auto"
     >
-      <h3 className="mb-2 text-[10px] font-bold uppercase tracking-widest text-muted-foreground px-1">
-        Layers
-      </h3>
+      <div className="mb-2 flex items-center justify-between">
+        <h3 className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground px-1">
+          Layers
+        </h3>
+        <button
+          type="button"
+          onClick={() => setPinned(!pinned)}
+          aria-label={pinned ? 'Unpin layers panel' : 'Pin layers panel open'}
+          title={pinned ? 'Unpin (click outside to close)' : 'Pin open'}
+          className={`flex h-6 w-6 items-center justify-center rounded-sm transition-colors duration-150 ${
+            pinned
+              ? 'bg-primary/10 text-primary'
+              : 'text-muted-foreground hover:bg-muted hover:text-foreground'
+          }`}
+        >
+          {pinned ? <Pin size={12} /> : <PinOff size={12} />}
+        </button>
+      </div>
 
       {/* ── Generic layers — always present in every module ── */}
       <div className="mb-1 text-[8px] font-bold uppercase tracking-widest text-muted-foreground/60 px-1">
