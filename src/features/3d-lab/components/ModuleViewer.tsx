@@ -177,6 +177,13 @@ export const ModuleViewer = ({ modelId, basePath }: ModuleViewerProps) => {
     presetViews: config?.presetViews ?? {},
   }), [modelId, title, codeRef, description, subject, config])
 
+  // ── Unified Viewport Shell content ──────────────────────────────────────
+  // MUST be called before any early returns to satisfy React rules of hooks.
+  // When loading/error, config is null → useTemplateContent returns null safely.
+  const templateContent = useTemplateContent(modelId, config)
+
+  const isBespoke = modelId === 'site-development-controls'
+
   if (loading) {
     return (
       <div className="flex h-full w-full items-center justify-center bg-[#F8F7F5]">
@@ -198,12 +205,6 @@ export const ModuleViewer = ({ modelId, basePath }: ModuleViewerProps) => {
       </div>
     )
   }
-
-  const isBespoke = modelId === 'site-development-controls'
-
-  // ── Unified Viewport Shell path ───────────────────────────────────────────
-  // eslint-disable-next-line react-hooks/rules-of-hooks
-  const templateContent = useTemplateContent(modelId, config)
 
   // ── Unified Viewport Shell path ───────────────────────────────────────────
   // Template-driven modules: ViewportShell with slot content from useTemplateContent
