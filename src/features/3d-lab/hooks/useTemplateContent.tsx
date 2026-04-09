@@ -5,11 +5,17 @@ import { CanvasWrapper } from '@/features/3d-lab/components/CanvasWrapper'
 import { SceneErrorBoundary } from '@/features/3d-lab/components/templates/SceneErrorBoundary'
 import { GenericControlPanel } from '@/features/3d-lab/components/templates/GenericControlPanel'
 import { ComplianceReportPanel } from '@/features/3d-lab/components/templates/ComplianceReportPanel'
+import { ExplodedPartsSidebar } from '@/features/3d-lab/components/templates/ExplodedPartsSidebar'
+import { ExplodeSliderControl } from '@/features/3d-lab/components/templates/ExplodeSliderControl'
+import { CutawayLayersSidebar } from '@/features/3d-lab/components/templates/CutawayLayersSidebar'
+import { CutDepthSliderControl } from '@/features/3d-lab/components/templates/CutDepthSliderControl'
 import { createModuleStore } from '@/features/3d-lab/stores/createModuleStore'
 import { getModuleById } from '@/features/3d-lab/config/registry'
 import {
   TEMPLATE_SHELL_DEFAULTS,
   type ParametricSceneConfig,
+  type ExplodedAssemblyConfig,
+  type CutawaySectionConfig,
   type ViewportShellConfig,
   type ViewportCapabilities,
   type ViewportShellContent,
@@ -22,6 +28,16 @@ import dynamic from 'next/dynamic'
 
 const ParametricSceneRenderer = dynamic(
   () => import('@/features/3d-lab/templates/ParametricSceneRenderer').then((m) => m.ParametricSceneRenderer),
+  { ssr: false },
+)
+
+const ExplodedAssemblyScene = dynamic(
+  () => import('@/features/3d-lab/templates/ExplodedAssemblyScene').then((m) => m.ExplodedAssemblyScene),
+  { ssr: false },
+)
+
+const CutawaySectionScene = dynamic(
+  () => import('@/features/3d-lab/templates/CutawaySectionScene').then((m) => m.CutawaySectionScene),
   { ssr: false },
 )
 
@@ -47,15 +63,25 @@ export const useTemplateContent = (
   const entry = getModuleById(moduleId)
   const templateType = entry?.templateType
 
-  // Create a stable module store for parametric-style templates
+  // Create a stable module store with template-appropriate defaults
   const defaults = useMemo(() => {
-    if (!config?.parameters) return {}
     const d: Record<string, number | boolean | string> = {}
-    for (const p of config.parameters) {
-      d[p.key] = p.default
+    // Merge parameter defaults
+    if (config?.parameters) {
+      for (const p of config.parameters) {
+        d[p.key] = p.default
+      }
+    }
+    // Template-specific defaults
+    if (templateType === 'exploded') {
+      d.explode = 0
+    }
+    if (templateType === 'cutaway' && config?.layers) {
+      const cutMax = Math.max(...config.layers.map((l: any) => l.depth + (l.geometry?.args?.[1] ?? 0.1)))
+      d.cutPosition = cutMax
     }
     return d
-  }, [config?.parameters])
+  }, [config?.parameters, config?.layers, templateType])
 
   const useStore = useMemo(
     () => createModuleStore(defaults),
@@ -139,7 +165,46 @@ export const useTemplateContent = (
         }
       }
 
-      // For now, non-parametric templates fall back to null (use legacy rendering)
+      case 'exploded': {
+        const cfg = config as ExplodedAssemblyConfig
+        return {
+          shellConfig: { ...shellConfig },
+          capabilities,
+          content: {
+            canvasContent: canvasWrapper(
+              <ExplodedAssemblyScene config={cfg} useStore={useStore} />,
+            ),
+            rightSidebarContent: (
+              <ExplodedPartsSidebar config={cfg} useStore={useStore} />
+            ),
+            toolbarExtras: (
+              <ExplodeSliderControl useStore={useStore} />
+            ),
+          },
+        }
+      }
+
+      case 'cutaway': {
+        const cfg = config as CutawaySectionConfig
+        const cutMax = Math.max(...cfg.layers.map((l) => l.depth + (l.geometry.args?.[1] ?? 0.1)))
+        return {
+          shellConfig: { ...shellConfig },
+          capabilities,
+          content: {
+            canvasContent: canvasWrapper(
+              <CutawaySectionScene config={cfg} useStore={useStore} />,
+            ),
+            rightSidebarContent: (
+              <CutawayLayersSidebar config={cfg} useStore={useStore} />
+            ),
+            toolbarExtras: (
+              <CutDepthSliderControl config={cfg} useStore={useStore} cutMax={cutMax} />
+            ),
+          },
+        }
+      }
+
+      // Non-migrated templates fall back to null (use legacy rendering)
       default:
         return null
     }
