@@ -27,3 +27,15 @@ export type { ViewportComfortGaugeProps } from './ViewportComfortGauge'
 
 export { ClickInspectPopover } from './ClickInspectPopover'
 export type { ClickInspectPopoverProps } from './ClickInspectPopover'
+
+export { NosingDetailPanel } from './NosingDetailPanel'
+export type { NosingDetailPanelProps } from './NosingDetailPanel'
+
+export { ComparisonPanel } from './ComparisonPanel'
+export type { ComparisonPanelProps } from './ComparisonPanel'
+
+export { ComparisonToggle } from './ComparisonToggle'
+export type { ComparisonToggleProps } from './ComparisonToggle'
+
+export { HandrailDetailPanel } from './HandrailDetailPanel'
+export type { HandrailDetailPanelProps } from './HandrailDetailPanel'

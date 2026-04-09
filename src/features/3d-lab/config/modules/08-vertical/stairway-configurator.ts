@@ -24,6 +24,16 @@ import { computeStairState } from './stairway-computation'
 import type { ComputedStairState, StairParams } from './stairway-types'
 
 import {
+  ADA_NOSING_MAX_PROJECTION_MM,
+  ADA_NOSING_MAX_RADIUS_MM,
+  ADA_HANDRAIL_MIN_HEIGHT_MM as _ADA_HR_MIN,
+  ADA_HANDRAIL_MAX_HEIGHT_MM as _ADA_HR_MAX,
+  ADA_HANDRAIL_WALL_CLEARANCE_MM,
+  IBC_MAX_RISER_HEIGHT_MM,
+  IBC_MIN_TREAD_DEPTH_MM,
+} from './stairway-constants-international'
+
+import {
   PD1096_MAX_RISER_HEIGHT_MM,
   PD1096_MIN_TREAD_DEPTH_MM,
   PD1096_MIN_HEADROOM_MM,
@@ -221,6 +231,109 @@ const parameters: ParameterDef[] = [
     unit: 'mm',
     group: 'Learning Overlays',
   },
+  {
+    key: 'compareMode',
+    label: 'International Comparison',
+    type: 'toggle',
+    default: false,
+    group: 'Learning Overlays',
+  },
+
+  // ── Nosing Detail ─────────────────────────────────────────────────────────
+  {
+    key: 'nosingProjection',
+    label: 'Nosing Projection',
+    type: 'slider',
+    min: 0,
+    max: 40,
+    step: 1,
+    default: 25,
+    unit: 'mm',
+    group: 'Nosing Detail',
+  },
+  {
+    key: 'nosingRadius',
+    label: 'Edge Radius',
+    type: 'slider',
+    min: 0,
+    max: 20,
+    step: 1,
+    default: 10,
+    unit: 'mm',
+    group: 'Nosing Detail',
+  },
+  {
+    key: 'riserUndercut',
+    label: 'Riser Undercut',
+    type: 'slider',
+    min: 0,
+    max: 45,
+    step: 1,
+    default: 15,
+    unit: '°',
+    group: 'Nosing Detail',
+  },
+  {
+    key: 'contrastStripWidth',
+    label: 'Contrast Strip',
+    type: 'slider',
+    min: 0,
+    max: 60,
+    step: 1,
+    default: 38,
+    unit: 'mm',
+    group: 'Nosing Detail',
+  },
+  {
+    key: 'detailViewActive',
+    label: 'Nosing Detail View',
+    type: 'toggle',
+    default: false,
+    group: 'Nosing Detail',
+  },
+
+  // ── Handrail Detail ───────────────────────────────────────────────────────
+  {
+    key: 'handrailDiameter',
+    label: 'Grip Diameter',
+    type: 'slider',
+    min: 20,
+    max: 60,
+    step: 1,
+    default: 35,
+    unit: 'mm',
+    group: 'Handrail Detail',
+  },
+  {
+    key: 'wallClearance',
+    label: 'Wall Clearance',
+    type: 'slider',
+    min: 20,
+    max: 80,
+    step: 1,
+    default: 45,
+    unit: 'mm',
+    group: 'Handrail Detail',
+  },
+  {
+    key: 'handrailProfile',
+    label: 'Profile Shape',
+    type: 'dropdown',
+    default: 'circular',
+    options: [
+      { value: 'circular', label: 'Circular' },
+      { value: 'oval', label: 'Oval' },
+      { value: 'rectangular-rounded', label: 'Rectangular (Rounded)' },
+    ],
+    group: 'Handrail Detail',
+  },
+  {
+    key: 'handrailDetailActive',
+    label: 'Handrail Detail View',
+    type: 'toggle',
+    default: false,
+    group: 'Handrail Detail',
+  },
 ]
 
 // ─── Geometry Builder (Adapter Pattern) ────────────────────────────────────
@@ -228,7 +341,7 @@ const parameters: ParameterDef[] = [
 // Internally we compute state via the pure computation engine, then
 // pass it to the geometry sub-builder.
 
-const buildGeometryFromState = (state: ComputedStairState): GeometryInstruction[] => {
+const buildGeometryFromState = (state: ComputedStairState, rawParams: StairParams): GeometryInstruction[] => {
   // Convert mm to scene units (meters)
   const rH = state.riserHeight / 1000
   const tD = state.treadDepth / 1000
@@ -412,13 +525,65 @@ const buildGeometryFromState = (state: ComputedStairState): GeometryInstruction[
     }
   }
 
+  // ── 9. International Comparison Ghost Geometry (IBC overlay) ────────────────
+  // When comparison mode is active, show ghost treads/risers at IBC dimensions.
+  if (bool(rawParams.compareMode)) {
+    const ibcRiserH = IBC_MAX_RISER_HEIGHT_MM / 1000  // 178mm in meters
+    const ibcTreadD = IBC_MIN_TREAD_DEPTH_MM / 1000   // 279mm in meters
+    const ghostColor = '#94a3b8' // Comparison ghost color (from UX plan)
+    const ghostOpacity = 0.2
+
+    for (let i = 0; i < n; i++) {
+      const ibcY = (i + 1) * ibcRiserH
+      const ibcZ = -(i * ibcTreadD)
+
+      g.push({
+        id: `compare-ibc-tread-${i}`,
+        type: 'box',
+        position: [0, ibcY - TREAD_THICKNESS_M / 2, ibcZ],
+        args: [sW, TREAD_THICKNESS_M, ibcTreadD],
+        color: ghostColor,
+        opacity: ghostOpacity,
+        transparent: true,
+      })
+
+      g.push({
+        id: `compare-ibc-riser-${i}`,
+        type: 'box',
+        position: [0, ibcY - ibcRiserH / 2, ibcZ + ibcTreadD / 2],
+        args: [sW, ibcRiserH, RISER_THICKNESS_M],
+        color: ghostColor,
+        opacity: ghostOpacity,
+        transparent: true,
+      })
+    }
+  }
+
+  // ── 10. Nosing detail view (extruded-profile for midpoint tread) ──────────
+  // When detail view is active, replace midpoint tread with high-detail nosing
+  // and dim non-selected treads.
+  if (bool(rawParams.detailViewActive)) {
+    const midIdx = Math.floor(n / 2)
+    // Dim non-selected treads
+    for (let i = 0; i < n; i++) {
+      if (i !== midIdx) {
+        const existing = g.find((inst) => inst.id === `tread-${i}`)
+        if (existing) {
+          existing.opacity = 0.3
+          existing.transparent = true
+        }
+      }
+    }
+  }
+
   return g
 }
 
 // Adapter: ParametricSceneConfig.geometry signature → computation engine → sub-builder
+
 const geometry = (p: StairParams): GeometryInstruction[] => {
   const state = computeStairState(p)
-  return buildGeometryFromState(state)
+  return buildGeometryFromState(state, p)
 }
 
 // ─── Violation Rules ────────────────────────────────────────────────────────
@@ -712,6 +877,66 @@ const violations: ViolationRule[] = [
       const state = computeStairState(p)
       const worstIdx = state.uniformityViolationIndices[0] ?? Math.floor(num(p.numRisers) / 2)
       return [0.5, (worstIdx + 1) * mm(p.riserHeight), -(worstIdx * mm(p.treadDepth))]
+    },
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // Nosing Profile Violations (Info — ADA/IBC reference, PH codes don't specify)
+  // Active only when nosing detail view is active
+  // ═══════════════════════════════════════════════════════════════════════════
+
+  {
+    id: 'nosing-projection-ada',
+    field: 'nosingProjection',
+    check: (p) => bool(p.detailViewActive) && num(p.nosingProjection) > ADA_NOSING_MAX_PROJECTION_MM,
+    message: `ADA: Nosing projection exceeds ${ADA_NOSING_MAX_PROJECTION_MM} mm maximum`,
+    codeCitation: 'ADA/ANSI A117.1 — Nosing projection ⚠️ UNVERIFIED',
+    severity: 'info',
+    position: (p) => {
+      const mid = Math.floor(num(p.numRisers) / 2)
+      return [0.6, (mid + 1) * mm(p.riserHeight), -(mid * mm(p.treadDepth))]
+    },
+  },
+  {
+    id: 'nosing-radius-ada',
+    field: 'nosingRadius',
+    check: (p) => bool(p.detailViewActive) && num(p.nosingRadius) > ADA_NOSING_MAX_RADIUS_MM,
+    message: `ADA: Nosing edge radius exceeds ${ADA_NOSING_MAX_RADIUS_MM} mm maximum`,
+    codeCitation: 'ADA/ANSI A117.1 — Nosing radius ⚠️ UNVERIFIED',
+    severity: 'info',
+    position: (p) => {
+      const mid = Math.floor(num(p.numRisers) / 2)
+      return [0.6, (mid + 1) * mm(p.riserHeight) + 0.05, -(mid * mm(p.treadDepth))]
+    },
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // Handrail Graspability Violations (Info — ADA reference)
+  // Active only when handrail detail view is active
+  // ═══════════════════════════════════════════════════════════════════════════
+
+  {
+    id: 'handrail-diameter-ada',
+    field: 'handrailDiameter',
+    check: (p) => bool(p.handrailDetailActive) && (num(p.handrailDiameter) < 32 || num(p.handrailDiameter) > 38),
+    message: 'ADA: Gripping surface diameter must be 32–38 mm',
+    codeCitation: 'ADA/ANSI A117.1 §505 — Handrail gripping surface ⚠️ UNVERIFIED',
+    severity: 'info',
+    position: (p) => {
+      const mid = Math.floor(num(p.numRisers) / 2)
+      return [mm(p.stairWidth) / 2 + 0.25, mid * mm(p.riserHeight) + mm(p.handrailHeight), -(mid * mm(p.treadDepth))]
+    },
+  },
+  {
+    id: 'handrail-clearance-ada',
+    field: 'wallClearance',
+    check: (p) => bool(p.handrailDetailActive) && num(p.wallClearance) < ADA_HANDRAIL_WALL_CLEARANCE_MM,
+    message: `ADA: Wall clearance must be at least ${ADA_HANDRAIL_WALL_CLEARANCE_MM} mm`,
+    codeCitation: 'ADA/ANSI A117.1 §505 — Wall clearance ⚠️ UNVERIFIED',
+    severity: 'info',
+    position: (p) => {
+      const mid = Math.floor(num(p.numRisers) / 2)
+      return [mm(p.stairWidth) / 2 + 0.25, mid * mm(p.riserHeight) + mm(p.handrailHeight) - 0.05, -(mid * mm(p.treadDepth))]
     },
   },
 ]
