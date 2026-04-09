@@ -62,6 +62,7 @@ export interface DevControlsInput {
   rrow: RROWParams
   flarOverride?: number   // Optional user-adjusted FLAR within zone's allowed range
   bhlOverrideStoreys?: number  // Optional custom BHL (local ordinance override)
+  setbackOverrides?: Partial<PerSideSetbacks>  // Optional per-side custom setbacks (meters)
 }
 
 // ─── OUTPUT TYPES ───────────────────────────────────────────────────────────

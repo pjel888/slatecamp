@@ -1,7 +1,7 @@
 'use client'
 
-import { useCallback } from 'react'
 import type { createModuleStore } from '@/features/3d-lab/stores/createModuleStore'
+import { LabSlider } from '@/features/3d-lab/components/controls/LabSlider'
 
 interface ExplodeSliderControlProps {
   useStore: ReturnType<typeof createModuleStore>
@@ -15,30 +15,17 @@ export const ExplodeSliderControl = ({ useStore }: ExplodeSliderControlProps) =>
   const explode = useStore((s) => (s.params.explode as number) ?? 0)
   const setParam = useStore((s) => s.setParam)
 
-  const handleChange = useCallback(
-    (e: React.ChangeEvent<HTMLInputElement>) => {
-      setParam('explode', parseFloat(e.target.value))
-    },
-    [setParam],
-  )
-
   return (
-    <div className="flex items-center gap-1.5 px-1">
-      <span className="text-[9px] font-bold uppercase tracking-widest text-muted-foreground">
-        Explode
-      </span>
-      <input
-        type="range"
-        min={0}
-        max={1}
-        step={0.01}
-        value={explode}
-        onChange={handleChange}
-        className="w-16 h-1 bg-muted rounded-full appearance-none cursor-pointer accent-camp-cobalt"
-      />
-      <span className="text-[9px] font-bold text-foreground tabular-nums w-6 text-right">
-        {Math.round(explode * 100)}%
-      </span>
-    </div>
+    <LabSlider
+      label="Explode"
+      value={explode}
+      min={0}
+      max={1}
+      step={0.01}
+      onChange={(v) => setParam('explode', v)}
+      formatValue={(v) => `${Math.round(v * 100)}%`}
+      compact
+      className="px-1"
+    />
   )
 }

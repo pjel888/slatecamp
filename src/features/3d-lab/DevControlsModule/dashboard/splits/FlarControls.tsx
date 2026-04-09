@@ -4,6 +4,7 @@ import { useDevControlsStore } from '../../stores/useDevControlsStore'
 import { lookupFLAR } from '@/lib/pd1096/zoningTables'
 import { Info } from 'lucide-react'
 import { Popover, PopoverTrigger, PopoverContent, PopoverHeader, PopoverTitle, PopoverDescription } from '@/components/ui/popover'
+import { LabSlider } from '@/features/3d-lab/components/controls/LabSlider'
 
 // ─── FLAR Controls (Left Column) ───────────────────────────────────────────
 // Slider + zone range indicator + reset button. Metrics grid is in FlarInfo.
@@ -22,6 +23,7 @@ export function FlarControls() {
   const isOutOfRange = flarOverride !== undefined && (
     flarOverride < flarRange.min - 0.01 || flarOverride > flarRange.max + 0.01
   )
+  const effectiveMax = Math.max(EXPERIMENT_MAX, flarRange.max)
 
   return (
     <div>
@@ -46,26 +48,21 @@ export function FlarControls() {
           </PopoverContent>
         </Popover>
       </div>
-      <div className="mb-1 flex items-baseline justify-between">
-        <label className="text-[10px] font-medium uppercase tracking-wider text-muted-foreground">FLAR</label>
-        <span className={`font-mono text-xs font-medium ${isOutOfRange ? 'text-amber-600' : 'text-foreground'}`}>
-          {currentFlar.toFixed(2)}
-        </span>
-      </div>
-      <input
-        type="range" min={EXPERIMENT_MIN} max={Math.max(EXPERIMENT_MAX, flarRange.max)}
-        step={0.05} value={sliderValue}
-        onChange={(e) => setFlarOverride(Number(e.target.value))}
-        className="h-1.5 w-full cursor-pointer appearance-none rounded-full bg-muted accent-primary"
-        aria-label="FLAR"
+      <LabSlider
+        label="FLAR"
+        value={sliderValue}
+        min={EXPERIMENT_MIN}
+        max={effectiveMax}
+        step={0.05}
+        onChange={(v) => setFlarOverride(v)}
+        isViolating={isOutOfRange}
+        formatValue={(v) => v.toFixed(2)}
+        showRangeLabels={false}
+        contextLine={
+          `Zone: ${flarRange.min.toFixed(2)}${flarRange.min !== flarRange.max ? `–${flarRange.max.toFixed(2)}` : ''}`
+        }
+        contextLineType={isOutOfRange ? 'warning' : 'info'}
       />
-      <div className="mt-0.5 flex justify-between text-[8px] text-muted-foreground">
-        <span>{EXPERIMENT_MIN}</span>
-        <span className="font-medium text-primary">
-          Zone: {flarRange.min.toFixed(2)}{flarRange.min !== flarRange.max ? `–${flarRange.max.toFixed(2)}` : ''}
-        </span>
-        <span>{Math.max(EXPERIMENT_MAX, flarRange.max)}</span>
-      </div>
       {isOutOfRange && (
         <p className="mt-0.5 text-[9px] text-amber-600">Outside zone range — experimentation mode</p>
       )}

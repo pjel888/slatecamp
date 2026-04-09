@@ -18,11 +18,12 @@ import { FlarControls } from './splits/FlarControls'
 import { FlarInfo } from './splits/FlarInfo'
 import { BhlControls } from './splits/BhlControls'
 import { BhlInfo } from './splits/BhlInfo'
+import { SetbackControls } from './splits/SetbackControls'
+import { SetbackInfo } from './splits/SetbackInfo'
 
 // Full-width components (not split)
 import { PresetSelector } from './PresetSelector'
 import { ProposedBuildingPanel } from './ProposedBuildingPanel'
-import { SetbackInfoPanel } from './SetbackInfoPanel'
 import { FirewallPanel } from './FirewallPanel'
 import { SettingsTab } from './tabs/SettingsTab'
 import type { InputTab } from '../hooks/usePanelState'
@@ -95,14 +96,15 @@ export function InputPanel({ activeTab, onTabChange }: InputPanelProps) {
 
         <hr className="my-3 border-border" />
 
-        {/* Building dimensions + setbacks — dual column */}
+        {/* Setbacks — dual column: controls left, info right */}
         <div className="grid grid-cols-2 gap-4">
           <div className="space-y-4">
-            <ProposedBuildingPanel />
+            <SetbackControls />
             <FirewallPanel />
           </div>
-          <div>
-            <SetbackInfoPanel />
+          <div className="space-y-4">
+            <SetbackInfo />
+            <ProposedBuildingPanel />
           </div>
         </div>
       </TabsContent>

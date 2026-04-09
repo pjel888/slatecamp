@@ -31,31 +31,31 @@ export default async function DashboardPage() {
       
       <div className='flex flex-col gap-2 w-full h-full min-h-0 border-0'>
         {/* ── Professional Mode Transition (passer or opt-in) ── */}
-        <Suspense fallback={null}>
+        <Suspense key="transition-prompt" fallback={null}>
           <TransitionPromptServer />
         </Suspense>
 
         {/* ── Results Day Banner (exam_date 3-14 days ago, no result yet) ── */}
-        <Suspense fallback={null}>
+        <Suspense key="results-banner" fallback={null}>
           <ResultsDayBannerServer />
         </Suspense>
 
         {/* ── Streak Ribbon + Locked Score ────────────────── */}
-        <Suspense fallback={<StreakRibbonSkeleton />}>
+        <Suspense key="streak-ribbon" fallback={<StreakRibbonSkeleton />}>
           <StreakRibbonServer />
         </Suspense>
 
         {/* ── 1. Hero: Score + Greeting + Heatmap ────────── */}
-        <Suspense fallback={<HeroCommandBarSkeleton />}>
+        <Suspense key="hero" fallback={<HeroCommandBarSkeleton />}>
           <HeroCommandBarServer>
-            <Suspense fallback={<HeatmapSectionSkeleton />}>
+            <Suspense key="heatmap" fallback={<HeatmapSectionSkeleton />}>
               <HeatmapSection />
             </Suspense>
           </HeroCommandBarServer>
         </Suspense>
 
         {/* ── Daily Dose — adaptive study plan ─────────── */}
-        <Suspense fallback={null}>
+        <Suspense key="daily-dose" fallback={null}>
           <DailyDoseCard />
         </Suspense>
 
@@ -64,37 +64,37 @@ export default async function DashboardPage() {
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 w-full'>
             {/* ── Review Calendar (7-day forward view) ── */}
             <div className='lg:col-span-3'>
-              <Suspense fallback={<ReviewCalendarSkeleton />}>
+              <Suspense key="review-calendar" fallback={<ReviewCalendarSkeleton />}>
                 <ReviewCalendarServer />
               </Suspense>
             </div>
 
             <div className='h-full lg:row-span-2'>
-              <Suspense fallback={<ImprovedActivityFeedSkeleton />}>
+              <Suspense key="activity-feed" fallback={<ImprovedActivityFeedSkeleton />}>
                 <ActivityFeedServer />
               </Suspense>
             </div>
 
             <div className='h-full'>
-              <Suspense fallback={<FeatureDiscoverySkeleton />}>
+              <Suspense key="daily-wiki" fallback={<FeatureDiscoverySkeleton />}>
                 <DailyWikiServer />
               </Suspense>
             </div>
 
             <div className='h-full'>
-              <Suspense fallback={<SubjectMasterySkeleton />}>
+              <Suspense key="subject-mastery" fallback={<SubjectMasterySkeleton />}>
                 <SubjectMasteryServer />
               </Suspense>
             </div>
 
             {/* ── Review Center Sync (visible when enrolled) ── */}
-            <Suspense fallback={null}>
+            <Suspense key="review-sync" fallback={null}>
               <ReviewCenterSyncServer />
             </Suspense>
 
             {/* ── Bloom Cognitive Tracker (after 10+ sessions) ── */}
             <div className="lg:col-span-2">
-              <Suspense fallback={<BloomTrackerSkeleton />}>
+              <Suspense key="bloom-tracker" fallback={<BloomTrackerSkeleton />}>
                 <BloomTrackerServer />
               </Suspense>
             </div>

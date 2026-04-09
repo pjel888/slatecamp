@@ -58,7 +58,7 @@ export default async function ThreeDLabPage({
 
   return (
     <LabBrowserShell>
-      <Suspense>
+      <Suspense key="lab-browser-suspense" fallback={null}>
         <LabBrowser basePath={ROUTES.THREE_D_LAB} />
       </Suspense>
     </LabBrowserShell>

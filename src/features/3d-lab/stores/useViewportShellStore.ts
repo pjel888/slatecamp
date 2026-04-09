@@ -18,6 +18,9 @@ export interface ViewportShellState {
   // Navigation mode
   navMode: 'orbit' | 'pan' | 'look'
 
+  // Active interaction — tracks which mouse interaction is in progress (for visual feedback)
+  activeInteraction: 'idle' | 'orbiting' | 'panning'
+
   // Mobile
   mobileActiveTab: string
   bottomSheetOpen: boolean
@@ -30,6 +33,11 @@ export interface ViewportShellState {
   dimensionsVisible: boolean
   xrayMode: boolean
   layersPanelOpen: boolean
+  layersPanelPinned: boolean
+
+  // Camera projection + orbit state
+  projectionMode: 'perspective' | 'orthographic'
+  manualOrbit: boolean  // true when user has orbited away from a preset view
 
   // Selection state
   selectedIds: Set<string>
@@ -41,6 +49,9 @@ export interface ViewportShellState {
   setMobileTab: (tab: string) => void
   setBottomSheetOpen: (open: boolean) => void
   toggleLayersPanel: () => void
+  setLayersPanelPinned: (pinned: boolean) => void
+  setProjectionMode: (mode: 'perspective' | 'orthographic') => void
+  setManualOrbit: (v: boolean) => void
 
   // Actions — scene-affecting toolbar toggles (calls invalidate)
   toggleGrid: () => void
@@ -56,6 +67,9 @@ export interface ViewportShellState {
 
   // Navigation mode action
   setNavMode: (mode: 'orbit' | 'pan' | 'look') => void
+
+  // Active interaction action
+  setActiveInteraction: (interaction: 'idle' | 'orbiting' | 'panning') => void
 
   // Actions — scene-affecting (calls invalidate)
   setViewMode: (mode: ViewMode) => void
@@ -82,7 +96,11 @@ const DEFAULTS: Pick<
   | 'dimensionsVisible'
   | 'xrayMode'
   | 'layersPanelOpen'
+  | 'layersPanelPinned'
+  | 'projectionMode'
+  | 'manualOrbit'
   | 'navMode'
+  | 'activeInteraction'
   | 'selectedIds'
   | 'hoveredId'
 > = {
@@ -91,6 +109,7 @@ const DEFAULTS: Pick<
   activeViewMode: 'perspective',
   activeCameraPreset: null,
   navMode: 'orbit' as const,
+  activeInteraction: 'idle' as const,
   mobileActiveTab: '',
   bottomSheetOpen: true,
   invalidateFn: null,
@@ -98,6 +117,9 @@ const DEFAULTS: Pick<
   dimensionsVisible: false,
   xrayMode: false,
   layersPanelOpen: false,
+  layersPanelPinned: false,
+  projectionMode: 'perspective' as const,
+  manualOrbit: false,
   selectedIds: new Set<string>(),
   hoveredId: null,
 }
@@ -130,7 +152,19 @@ export const useViewportShellStore = create<ViewportShellState>()((set, get) => 
     get().invalidateFn?.()
   },
   // Layers panel is UI-only — no invalidate needed
-  toggleLayersPanel: () => set((s) => ({ layersPanelOpen: !s.layersPanelOpen })),
+  toggleLayersPanel: () => set((s) => {
+    const willClose = s.layersPanelOpen
+    // When closing, also unpin
+    return willClose
+      ? { layersPanelOpen: false, layersPanelPinned: false }
+      : { layersPanelOpen: true }
+  }),
+  setLayersPanelPinned: (pinned) => set({ layersPanelPinned: pinned }),
+  setProjectionMode: (mode) => {
+    set({ projectionMode: mode })
+    get().invalidateFn?.()
+  },
+  setManualOrbit: (v) => set({ manualOrbit: v }),
 
   // Selection actions — UI only, no invalidate
   selectElement: (id) => set({ selectedIds: new Set([id]) }),
@@ -148,6 +182,11 @@ export const useViewportShellStore = create<ViewportShellState>()((set, get) => 
   setNavMode: (mode) => {
     set({ navMode: mode })
     get().invalidateFn?.()
+  },
+
+  // Active interaction
+  setActiveInteraction: (interaction) => {
+    set({ activeInteraction: interaction })
   },
 
   // Scene-affecting — calls invalidate

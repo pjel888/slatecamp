@@ -14,6 +14,8 @@ import {
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
+import { Switch } from '@/components/ui/switch'
+import { LabSlider } from '@/features/3d-lab/components/controls/LabSlider'
 import type { ParameterDef, Preset } from '@/features/3d-lab/types/templates'
 import type { ModuleStoreState } from '@/features/3d-lab/stores/createModuleStore'
 import type { StoreApi, UseBoundStore } from 'zustand'
@@ -55,91 +57,7 @@ const Section = ({
   )
 }
 
-// ─── Slider (Campfire cobalt/gold/red compliance colors) ─────────────────────
-
-const SliderControl = ({
-  param,
-  value,
-  onChange,
-}: {
-  param: ParameterDef
-  value: number
-  onChange: (v: number) => void
-}) => {
-  const displayVal =
-    param.decimals !== undefined ? value.toFixed(param.decimals) : Math.round(value)
-
-  const min = param.min ?? 0
-  const max = param.max ?? 100
-  const pct = Math.max(0, Math.min(100, ((value - min) / (max - min)) * 100))
-
-  return (
-    <div className="space-y-1.5">
-      <div className="flex items-center justify-between">
-        <label className="text-[11px] font-medium text-foreground">
-          {param.label}
-        </label>
-        <span
-          className="text-foreground font-medium tabular-nums"
-          style={{ fontFamily: MONO_FONT, fontSize: 12 }}
-        >
-          {displayVal}
-          {param.unit && (
-            <span className="text-muted-foreground ml-0.5" style={{ fontSize: 11 }}>
-              {param.unit}
-            </span>
-          )}
-        </span>
-      </div>
-
-      {/* Custom slider track matching spec: 4px track, cobalt fill */}
-      <div className="relative h-5 flex items-center">
-        <div className="absolute inset-x-0 h-[4px] rounded-full bg-border" />
-        <div
-          className="absolute left-0 h-[4px] rounded-full transition-all duration-75"
-          style={{
-            width: `${pct}%`,
-            backgroundColor: 'var(--primary)',
-          }}
-        />
-        <input
-          type="range"
-          min={min}
-          max={max}
-          step={param.step ?? 1}
-          value={value}
-          onChange={(e) => onChange(Number(e.target.value))}
-          className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
-          aria-label={param.label}
-          aria-valuemin={min}
-          aria-valuemax={max}
-          aria-valuenow={value}
-        />
-        {/* Visual thumb */}
-        <div
-          className="absolute w-[14px] h-[14px] rounded-full bg-white border-2 border-primary pointer-events-none shadow-sm transition-transform duration-75 hover:scale-110"
-          style={{ left: `calc(${pct}% - 7px)` }}
-        />
-      </div>
-
-      {/* Range labels */}
-      <div className="flex justify-between">
-        <span
-          className="text-muted-foreground"
-          style={{ fontFamily: MONO_FONT, fontSize: 11 }}
-        >
-          {min}
-        </span>
-        <span
-          className="text-muted-foreground"
-          style={{ fontFamily: MONO_FONT, fontSize: 11 }}
-        >
-          {max}
-        </span>
-      </div>
-    </div>
-  )
-}
+// ─── Slider — delegates to shared LabSlider ─────────────────────────────────
 
 // ─── Toggle ──────────────────────────────────────────────────────────────────
 
@@ -153,26 +71,15 @@ const ToggleControl = ({
   onChange: (v: boolean) => void
 }) => (
   <div className="flex items-center justify-between">
-    <label className="text-[11px] font-medium text-foreground">
+    <label htmlFor={`toggle-${param.key}`} className="text-[11px] font-medium text-foreground">
       {param.label}
     </label>
-    <button
-      onClick={() => onChange(!value)}
-      className={cn(
-        'w-9 h-5 rounded-full transition-colors duration-150 relative cursor-pointer',
-        value ? 'bg-primary' : 'bg-border'
-      )}
-      role="switch"
-      aria-checked={value}
+    <Switch
+      id={`toggle-${param.key}`}
+      checked={value}
+      onCheckedChange={onChange}
       aria-label={param.label}
-    >
-      <span
-        className={cn(
-          'absolute top-0.5 w-4 h-4 rounded-full bg-white shadow-sm transition-transform duration-150',
-          value ? 'translate-x-[18px]' : 'translate-x-0.5'
-        )}
-      />
-    </button>
+    />
   </div>
 )
 
@@ -325,15 +232,22 @@ export const GenericControlPanel = memo(function GenericControlPanel({
     const value = params[param.key] ?? param.default
 
     switch (param.type) {
-      case 'slider':
+      case 'slider': {
+        const numValue = typeof value === 'number' ? value : Number(value)
         return (
-          <SliderControl
+          <LabSlider
             key={param.key}
-            param={param}
-            value={typeof value === 'number' ? value : Number(value)}
+            label={param.label}
+            value={numValue}
+            min={param.min ?? 0}
+            max={param.max ?? 100}
+            step={param.step ?? 1}
+            unit={param.unit}
+            formatValue={param.decimals !== undefined ? (v) => v.toFixed(param.decimals!) : undefined}
             onChange={(v) => setParam(param.key, v)}
           />
         )
+      }
       case 'toggle':
         return (
           <ToggleControl

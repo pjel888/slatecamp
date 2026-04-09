@@ -8,6 +8,7 @@
 import { Line, Edges } from '@react-three/drei'
 import * as THREE from 'three'
 import { useDevControlsStore } from '../../stores/useDevControlsStore'
+import { useViewportShellStore } from '@/features/3d-lab/stores/useViewportShellStore'
 import { GEOMETRY_Y, COLOR, OPACITY } from '../constants'
 
 export function DevControlsLayers() {
@@ -27,7 +28,7 @@ export function DevControlsLayers() {
   const floorH = useDevControlsStore((s) => s.building.floorHeight)
   const maxFloors = useDevControlsStore((s) => s.result.maxCompliantFloors)
   const layers = useDevControlsStore((s) => s.visibleLayers)
-  const xray = useDevControlsStore((s) => s.xrayMode)
+  const xray = useViewportShellStore((s) => s.xrayMode)
 
   // X-ray: when OFF, floor slabs are fully opaque (solid building).
   // When ON, floor slabs become transparent and edges are drawn for wireframe effect.

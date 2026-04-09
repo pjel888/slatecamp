@@ -9,6 +9,7 @@ import { SceneErrorBoundary } from '@/features/3d-lab/components/templates/Scene
 import { createModuleStore } from '@/features/3d-lab/stores/createModuleStore'
 import { AnimatedSequenceScene } from './AnimatedSequenceScene'
 import type { AnimatedSequenceConfig } from '@/features/3d-lab/types/templates'
+import { LabSlider } from '@/features/3d-lab/components/controls/LabSlider'
 
 // ─── Props ──────────────────────────────────────────────────────────────────
 
@@ -117,15 +118,19 @@ export default function AnimatedSequence({ config }: AnimatedSequenceProps) {
               )}
             </div>
 
-            {/* Slider */}
-            <input
-              type="range"
+            <LabSlider
+              label={`Step ${currentStep + 1}`}
+              value={currentStep}
               min={0}
               max={maxStep}
               step={1}
-              value={currentStep}
-              onChange={handleSliderChange}
-              className="w-full h-1 bg-muted rounded-full appearance-none cursor-pointer accent-camp-cobalt mb-2"
+              onChange={(v) => {
+                setParam('currentStep', Math.round(v))
+                setParam('isPlaying', false)
+              }}
+              formatValue={(v) => `/ ${config.steps.length}`}
+              compact
+              className="mb-2"
             />
 
             {/* Controls */}

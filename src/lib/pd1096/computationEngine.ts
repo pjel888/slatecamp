@@ -35,8 +35,8 @@ export function computeDevControls(input: DevControlsInput): DevControlsResult {
   // Use explicit area if provided (polygon lots), otherwise width × depth
   const tla = lot.area ?? (lot.width * lot.depth)
 
-  // ── STEP 1–2: Setbacks (base + incremental §804.6 + firewall) ─────
-  const setbacks = computeSetbacks(zoning, building, rrow)
+  // ── STEP 1–2: Setbacks (base + incremental §804.6 + firewall + user overrides) ─
+  const setbacks = computeSetbacks(zoning, building, rrow, input.setbackOverrides)
 
   // ── STEP 3: Buildable envelope after setbacks ─────────────────────
   // For polygon lots: compute inset polygon area via per-edge offset.
@@ -309,6 +309,32 @@ export function computeDevControls(input: DevControlsInput): DevControlsResult {
       codeReference: CITATIONS.closure,
     },
   ]
+
+  // ── Setback compliance — per-side violation checks ────────────────
+  // Only flagged when user override is below code-required AND side is not firewalled
+  const setbackSides = [
+    { key: 'front' as const, label: 'Front Setback' },
+    { key: 'rear'  as const, label: 'Rear Setback' },
+    { key: 'left'  as const, label: 'Left Side Setback' },
+    { key: 'right' as const, label: 'Right Side Setback' },
+  ]
+  for (const { key, label } of setbackSides) {
+    const required = setbacks.base[key]
+    const actual = setbacks.effective[key]
+    const isFirewallSide = zoning.firewallActive && zoning.firewallSides.includes(key as never)
+    if (!isFirewallSide && actual < required - FLOAT_TOLERANCE) {
+      checks.push({
+        id: `setback-${key}`,
+        label,
+        required,
+        actual,
+        unit: 'm',
+        compliant: false,
+        codeReference: `PD 1096 IRR Rule VIII, Sec. 804 — Minimum ${label.toLowerCase()}`,
+        shortfall: required - actual,
+      })
+    }
+  }
 
   return {
     tla,

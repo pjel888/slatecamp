@@ -4,6 +4,7 @@ import { useCallback } from 'react'
 import { Play, Pause, SkipBack, SkipForward } from 'lucide-react'
 import type { AnimatedSequenceConfig } from '@/features/3d-lab/types/templates'
 import type { createModuleStore } from '@/features/3d-lab/stores/createModuleStore'
+import { LabSlider } from '@/features/3d-lab/components/controls/LabSlider'
 
 interface AnimatedStepsSidebarProps {
   config: AnimatedSequenceConfig
@@ -71,14 +72,16 @@ export const AnimatedStepsSidebar = ({ config, useStore }: AnimatedStepsSidebarP
           </button>
         </div>
         {/* Step slider */}
-        <input
-          type="range"
+        <LabSlider
+          label="Step"
+          value={currentStep}
           min={0}
           max={totalSteps - 1}
           step={1}
-          value={currentStep}
-          onChange={(e) => setParam('currentStep', parseInt(e.target.value, 10))}
-          className="w-full h-1 mt-2 bg-muted rounded-full appearance-none cursor-pointer accent-camp-cobalt"
+          onChange={(v) => setParam('currentStep', Math.round(v))}
+          formatValue={(v) => `${Math.round(v) + 1} / ${totalSteps}`}
+          compact
+          className="mt-2"
         />
       </div>
 

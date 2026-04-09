@@ -25,7 +25,7 @@ export const ViewportSidebar = ({
   className,
 }: ViewportSidebarProps) => {
   return (
-    <div className="flex h-full flex-col overflow-hidden bg-card">
+    <div className="flex h-full flex-col overflow-hidden bg-card cursor-default">
       {title && (
         <div className="flex-none border-b border-border px-3 py-2">
           <h3 className="text-[11px] font-bold uppercase tracking-widest text-muted-foreground">

@@ -10,6 +10,7 @@ import { SceneErrorBoundary } from '@/features/3d-lab/components/templates/Scene
 import { createModuleStore } from '@/features/3d-lab/stores/createModuleStore'
 import { ExplodedAssemblyScene } from './ExplodedAssemblyScene'
 import type { ExplodedAssemblyConfig } from '@/features/3d-lab/types/templates'
+import { LabSlider } from '@/features/3d-lab/components/controls/LabSlider'
 
 // ─── Props ──────────────────────────────────────────────────────────────────
 
@@ -69,22 +70,15 @@ export default function ExplodedAssembly({ config }: ExplodedAssemblyProps) {
         {/* Explode Slider — bottom center */}
         <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-10 w-full max-w-xs px-4">
           <div className="bg-card/95 backdrop-blur-sm border border-border rounded-md shadow-lg px-3 py-2">
-            <div className="flex items-center justify-between mb-1">
-              <span className="text-[11px] font-black uppercase tracking-widest text-muted-foreground">
-                Explode
-              </span>
-              <span className="text-[11px] font-bold text-foreground tabular-nums">
-                {Math.round(explode * 100)}%
-              </span>
-            </div>
-            <input
-              type="range"
+            <LabSlider
+              label="Explode"
+              value={explode}
               min={0}
               max={1}
               step={0.01}
-              value={explode}
-              onChange={handleSliderChange}
-              className="w-full h-1 bg-muted rounded-full appearance-none cursor-pointer accent-camp-cobalt"
+              onChange={(v) => setParam('explode', v)}
+              formatValue={(v) => `${Math.round(v * 100)}%`}
+              compact
             />
           </div>
         </div>

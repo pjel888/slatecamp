@@ -94,7 +94,7 @@ export const SceneToolbar = () => {
 
   return (
     <div
-      className="absolute top-4 left-4 z-20 flex items-center gap-0.5 rounded-lg p-1 pointer-events-auto"
+      className="absolute top-4 left-4 z-20 flex items-center gap-0.5 rounded-lg p-1 pointer-events-auto cursor-default"
       style={{ backgroundColor: 'var(--viewport-overlay-bg)', backdropFilter: 'blur(8px)' }}
     >
       {TOOLBAR_BUTTONS.map((btn, i) => {

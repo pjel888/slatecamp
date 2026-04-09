@@ -2,6 +2,7 @@
 
 import { useEffect, useCallback } from 'react'
 import { useDevControlsStore } from '../stores/useDevControlsStore'
+import { useViewportShellStore } from '@/features/3d-lab/stores/useViewportShellStore'
 import type { CameraPreset } from '@/lib/pd1096/types'
 
 const ISO_CYCLE: CameraPreset[] = ['iso-ne', 'iso-nw', 'iso-se', 'iso-sw']
@@ -23,8 +24,7 @@ export function useKeyboardShortcuts(actions: KeyboardShortcutActions) {
   const toggleLayer = useDevControlsStore((s) => s.toggleLayer)
   const showDimensions = useDevControlsStore((s) => s.showDimensions)
   const setShowDimensions = useDevControlsStore((s) => s.setShowDimensions)
-  const xrayMode = useDevControlsStore((s) => s.xrayMode)
-  const setXrayMode = useDevControlsStore((s) => s.setXrayMode)
+  const toggleXray = useViewportShellStore((s) => s.toggleXray)
 
   const cycleIso = useCallback(() => {
     const idx = ISO_CYCLE.indexOf(cameraPreset)
@@ -86,7 +86,7 @@ export function useKeyboardShortcuts(actions: KeyboardShortcutActions) {
         case 'x':
         case 'X':
           e.preventDefault()
-          setXrayMode(!xrayMode)
+          toggleXray()
           break
         case 'l':
         case 'L':
@@ -108,7 +108,7 @@ export function useKeyboardShortcuts(actions: KeyboardShortcutActions) {
 
     window.addEventListener('keydown', handler)
     return () => window.removeEventListener('keydown', handler)
-  }, [actions, setCameraPreset, toggleLayer, showDimensions, setShowDimensions])
+  }, [actions, setCameraPreset, toggleLayer, showDimensions, setShowDimensions, toggleXray])
 }
 
 function handleFullscreen() {

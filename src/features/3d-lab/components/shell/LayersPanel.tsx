@@ -8,7 +8,7 @@
 // Each module provides its own layer toggles as children — this keeps the
 // LayersPanel in a CONSISTENT position while content differs per module.
 
-import { useEffect, useRef, useState, type ReactNode } from 'react'
+import { useEffect, useRef, type ReactNode } from 'react'
 import { Pin, PinOff } from 'lucide-react'
 import { useViewportShellStore } from '@/features/3d-lab/stores/useViewportShellStore'
 
@@ -25,9 +25,10 @@ interface LayersPanelProps {
 }
 
 export const LayersPanel = ({ children }: LayersPanelProps) => {
-  const [pinned, setPinned] = useState(false)
   const isOpen = useViewportShellStore((s) => s.layersPanelOpen)
+  const pinned = useViewportShellStore((s) => s.layersPanelPinned)
   const toggleLayersPanel = useViewportShellStore((s) => s.toggleLayersPanel)
+  const setPinned = useViewportShellStore((s) => s.setLayersPanelPinned)
   const gridVisible = useViewportShellStore((s) => s.gridVisible)
   const dimensionsVisible = useViewportShellStore((s) => s.dimensionsVisible)
   const xrayMode = useViewportShellStore((s) => s.xrayMode)
@@ -43,21 +44,20 @@ export const LayersPanel = ({ children }: LayersPanelProps) => {
     xrayMode: toggleXray,
   }
 
-  // Close on click outside
+  // Close on click outside (only when interacting with 3d viewport, and not pinned)
   useEffect(() => {
-    if (!isOpen) return
-    if (pinned) return
-    const handler = (e: MouseEvent) => {
-      if (ref.current && !ref.current.contains(e.target as Node)) {
-        const target = e.target as HTMLElement
-        if (target.closest('[aria-label*="Layers"]')) return
+    if (!isOpen || pinned) return
+    const handler = (e: PointerEvent | MouseEvent) => {
+      const target = e.target as HTMLElement
+      // Only close if interacting with the 3d viewport canvas
+      if (target?.tagName?.toLowerCase() === 'canvas') {
         toggleLayersPanel()
       }
     }
-    const timer = setTimeout(() => document.addEventListener('click', handler), 100)
+    const timer = setTimeout(() => document.addEventListener('pointerdown', handler), 100)
     return () => {
       clearTimeout(timer)
-      document.removeEventListener('click', handler)
+      document.removeEventListener('pointerdown', handler)
     }
   }, [isOpen, toggleLayersPanel, pinned])
 
@@ -66,7 +66,7 @@ export const LayersPanel = ({ children }: LayersPanelProps) => {
   return (
     <div
       ref={ref}
-      className="absolute top-16 left-4 z-30 w-60 rounded-md border border-border bg-card p-3 shadow-lg pointer-events-auto"
+      className="absolute top-16 left-4 z-30 w-60 rounded-md border border-border bg-card p-3 shadow-lg pointer-events-auto cursor-default"
     >
       <div className="mb-2 flex items-center justify-between">
         <h3 className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground px-1">

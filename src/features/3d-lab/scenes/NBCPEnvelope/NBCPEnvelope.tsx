@@ -45,9 +45,10 @@ export default function NBCPEnvelope() {
           />
           <OrbitControls
             makeDefault
-            maxPolarAngle={Math.PI / 1.75}
-            minDistance={2}
+            maxPolarAngle={Math.PI - 0.05}
+            minDistance={0.5}
             maxDistance={80}
+            zoomToCursor={true}
           />
           <NBCPScene />
         </Suspense>

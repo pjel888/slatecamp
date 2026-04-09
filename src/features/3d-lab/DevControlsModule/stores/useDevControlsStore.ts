@@ -8,6 +8,7 @@ import type {
   ZoningParams,
   BuildingParams,
   RROWParams,
+  PerSideSetbacks,
   DevControlsResult,
   LabMode,
   CameraPreset,
@@ -133,6 +134,7 @@ interface DevControlsStore {
   rrow: RROWParams
   flarOverride: number | undefined
   bhlOverride: number | undefined  // custom BHL storeys (local ordinance)
+  setbackOverrides: Partial<PerSideSetbacks> | undefined  // per-side custom setbacks
 
   // ─ Computed Output (recomputed atomically on every input mutation)
   result: DevControlsResult
@@ -168,6 +170,8 @@ interface DevControlsStore {
   setRrowWidth: (w: number) => void
   setFlarOverride: (flar: number | undefined) => void
   setBhlOverride: (storeys: number | undefined) => void
+  setSetbackOverride: (side: keyof PerSideSetbacks, value: number | undefined) => void
+  resetAllSetbackOverrides: () => void
   applyPreset: (preset: DevControlsPreset) => void
   reset: () => void
 
@@ -192,14 +196,34 @@ interface DevControlsStore {
 
 // ─── Initial computation ────────────────────────────────────────────────────
 
-function computeResult(lot: LotParams, zoning: ZoningParams, building: BuildingParams, rrow: RROWParams, flarOverride?: number, bhlOverride?: number): DevControlsResult {
-  return computeDevControls({ lot, zoning, building, rrow, flarOverride, bhlOverrideStoreys: bhlOverride })
+function computeResult(lot: LotParams, zoning: ZoningParams, building: BuildingParams, rrow: RROWParams, flarOverride?: number, bhlOverride?: number, setbackOverrides?: Partial<PerSideSetbacks>): DevControlsResult {
+  return computeDevControls({ lot, zoning, building, rrow, flarOverride, bhlOverrideStoreys: bhlOverride, setbackOverrides })
 }
 
 const initialResult = computeResult(DEFAULT_LOT, DEFAULT_ZONING, DEFAULT_BUILDING, DEFAULT_RROW, DEFAULT_FLAR_OVERRIDE)
 
-// Default visible layers — ISA/USA removed (purely computational now), context off
-const ALL_LAYERS: LayerKey[] = ['setbacks', 'ambf', 'pso', 'bhl', 'flar', 'floors', 'tosl']
+// All layers visible by default so the user sees the full site context on load
+const ALL_LAYERS: LayerKey[] = ['setbacks', 'ambf', 'pso', 'bhl', 'flar', 'floors', 'tosl', 'isa', 'usa', 'building', 'rrow', 'firewall']
+
+// ─── Helpers ────────────────────────────────────────────────────────────────
+
+/** Check if the user has previously dismissed the tour */
+const getInitialTourStep = (): number | null => {
+  if (typeof window === 'undefined') return 0
+  return localStorage.getItem('devcontrols-tour-dismissed') === '1' ? null : 0
+}
+
+/** Ensure a layer is visible when its related control is interacted with */
+const ensureLayerVisible = (layers: Set<LayerKey>, ...keys: LayerKey[]): Set<LayerKey> => {
+  let changed = false
+  for (const key of keys) {
+    if (!layers.has(key)) { changed = true; break }
+  }
+  if (!changed) return layers
+  const next = new Set(layers)
+  for (const key of keys) next.add(key)
+  return next
+}
 
 // ─── Store ──────────────────────────────────────────────────────────────────
 
@@ -211,6 +235,7 @@ export const useDevControlsStore = create<DevControlsStore>()((set, get) => ({
   rrow: DEFAULT_RROW,
   flarOverride: DEFAULT_FLAR_OVERRIDE,
   bhlOverride: undefined,
+  setbackOverrides: undefined,
 
   // ─ Computed
   result: initialResult,
@@ -235,15 +260,15 @@ export const useDevControlsStore = create<DevControlsStore>()((set, get) => ({
   // ─ R3F bridge
   invalidateFn: null,
 
-  // ─ Tour
-  tourStep: 0,
+  // ─ Tour (persisted dismissal in localStorage)
+  tourStep: getInitialTourStep(),
 
   // ─ Actions (every mutation atomically recomputes result + invalidates)
 
   setLot: (patch) => {
     const s = get()
     const lot = { ...s.lot, ...patch }
-    const result = computeResult(lot, s.zoning, s.building, s.rrow, s.flarOverride, s.bhlOverride)
+    const result = computeResult(lot, s.zoning, s.building, s.rrow, s.flarOverride, s.bhlOverride, s.setbackOverrides)
     // Auto-reposition ISA/USA to fit within new lot dimensions
     const isaW = Math.min(Math.sqrt(result.isa) * 1.5, lot.width)
     const isaD = result.isa / Math.max(isaW, 0.1)
@@ -260,47 +285,69 @@ export const useDevControlsStore = create<DevControlsStore>()((set, get) => ({
   setZoneClass: (zc) => {
     const s = get()
     const zoning = { ...s.zoning, zoneClass: zc }
-    // Reset overrides when zone changes
-    const result = computeResult(s.lot, zoning, s.building, s.rrow, undefined, undefined)
-    set({ zoning, result, flarOverride: undefined, bhlOverride: undefined })
+    // Reset all overrides when zone changes
+    const result = computeResult(s.lot, zoning, s.building, s.rrow, undefined, undefined, undefined)
+    set({ zoning, result, flarOverride: undefined, bhlOverride: undefined, setbackOverrides: undefined })
     s.invalidateFn?.()
   },
 
   setFirewall: (active, sides) => {
     const s = get()
     const zoning = { ...s.zoning, firewallActive: active, firewallSides: sides }
-    const result = computeResult(s.lot, zoning, s.building, s.rrow, s.flarOverride, s.bhlOverride)
-    set({ zoning, result })
+    const result = computeResult(s.lot, zoning, s.building, s.rrow, s.flarOverride, s.bhlOverride, s.setbackOverrides)
+    set({ zoning, result, visibleLayers: ensureLayerVisible(s.visibleLayers, 'setbacks') })
     s.invalidateFn?.()
   },
 
   setBuilding: (patch) => {
     const s = get()
     const building = { ...s.building, ...patch }
-    const result = computeResult(s.lot, s.zoning, building, s.rrow, s.flarOverride, s.bhlOverride)
-    set({ building, result })
+    const result = computeResult(s.lot, s.zoning, building, s.rrow, s.flarOverride, s.bhlOverride, s.setbackOverrides)
+    set({ building, result, visibleLayers: ensureLayerVisible(s.visibleLayers, 'floors') })
     s.invalidateFn?.()
   },
 
   setRrowWidth: (w) => {
     const s = get()
     const rrow = { width: w }
-    const result = computeResult(s.lot, s.zoning, s.building, rrow, s.flarOverride, s.bhlOverride)
-    set({ rrow, result })
+    const result = computeResult(s.lot, s.zoning, s.building, rrow, s.flarOverride, s.bhlOverride, s.setbackOverrides)
+    set({ rrow, result, visibleLayers: ensureLayerVisible(s.visibleLayers, 'rrow') })
     s.invalidateFn?.()
   },
 
   setFlarOverride: (flar) => {
     const s = get()
-    const result = computeResult(s.lot, s.zoning, s.building, s.rrow, flar, s.bhlOverride)
-    set({ flarOverride: flar, result })
+    const result = computeResult(s.lot, s.zoning, s.building, s.rrow, flar, s.bhlOverride, s.setbackOverrides)
+    set({ flarOverride: flar, result, visibleLayers: ensureLayerVisible(s.visibleLayers, 'flar') })
     s.invalidateFn?.()
   },
 
   setBhlOverride: (storeys) => {
     const s = get()
-    const result = computeResult(s.lot, s.zoning, s.building, s.rrow, s.flarOverride, storeys)
-    set({ bhlOverride: storeys, result })
+    const result = computeResult(s.lot, s.zoning, s.building, s.rrow, s.flarOverride, storeys, s.setbackOverrides)
+    set({ bhlOverride: storeys, result, visibleLayers: ensureLayerVisible(s.visibleLayers, 'bhl') })
+    s.invalidateFn?.()
+  },
+
+  setSetbackOverride: (side, value) => {
+    const s = get()
+    const current = s.setbackOverrides ?? {}
+    let next: Partial<PerSideSetbacks> | undefined
+    if (value === undefined) {
+      const { [side]: _, ...rest } = current
+      next = Object.keys(rest).length > 0 ? rest : undefined
+    } else {
+      next = { ...current, [side]: value }
+    }
+    const result = computeResult(s.lot, s.zoning, s.building, s.rrow, s.flarOverride, s.bhlOverride, next)
+    set({ setbackOverrides: next, result, visibleLayers: ensureLayerVisible(s.visibleLayers, 'setbacks') })
+    s.invalidateFn?.()
+  },
+
+  resetAllSetbackOverrides: () => {
+    const s = get()
+    const result = computeResult(s.lot, s.zoning, s.building, s.rrow, s.flarOverride, s.bhlOverride, undefined)
+    set({ setbackOverrides: undefined, result })
     s.invalidateFn?.()
   },
 
@@ -311,7 +358,7 @@ export const useDevControlsStore = create<DevControlsStore>()((set, get) => ({
     const building = { ...DEFAULT_BUILDING, ...preset.building }
     const rrow = { ...DEFAULT_RROW, ...preset.rrow }
     const result = computeResult(lot, zoning, building, rrow, undefined, undefined)
-    set({ lot, zoning, building, rrow, flarOverride: undefined, bhlOverride: undefined, result, activeHotspot: null, highlightedMetric: null })
+    set({ lot, zoning, building, rrow, flarOverride: undefined, bhlOverride: undefined, setbackOverrides: undefined, result, activeHotspot: null, highlightedMetric: null })
     s.invalidateFn?.()
   },
 
@@ -320,7 +367,7 @@ export const useDevControlsStore = create<DevControlsStore>()((set, get) => ({
     const result = computeResult(DEFAULT_LOT, DEFAULT_ZONING, DEFAULT_BUILDING, DEFAULT_RROW, DEFAULT_FLAR_OVERRIDE, undefined)
     set({
       lot: DEFAULT_LOT, zoning: DEFAULT_ZONING, building: DEFAULT_BUILDING, rrow: DEFAULT_RROW,
-      flarOverride: DEFAULT_FLAR_OVERRIDE, bhlOverride: undefined, result, activeHotspot: null, highlightedMetric: null, tourStep: 0,
+      flarOverride: DEFAULT_FLAR_OVERRIDE, bhlOverride: undefined, setbackOverrides: undefined, result, activeHotspot: null, highlightedMetric: null, tourStep: getInitialTourStep(),
     })
     s.invalidateFn?.()
   },
@@ -405,6 +452,10 @@ export const useDevControlsStore = create<DevControlsStore>()((set, get) => ({
 
   setTourStep: (step) => {
     set({ tourStep: step })
+    // Persist dismissal so the tour doesn't reappear on reload
+    if (step === null && typeof window !== 'undefined') {
+      localStorage.setItem('devcontrols-tour-dismissed', '1')
+    }
     get().invalidateFn?.()
   },
 

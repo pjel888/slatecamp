@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect } from 'react'
+import { useEffect, useCallback, useRef } from 'react'
 import { useThree } from '@react-three/fiber'
 import { OrbitControls, OrthographicCamera } from '@react-three/drei'
 import * as THREE from 'three'
@@ -20,11 +20,11 @@ export interface SceneConfigProps {
   orthographic?: boolean
   /** Orthographic camera zoom factor. Default: 1 */
   cameraZoom?: number
-  /** Minimum polar angle for OrbitControls (radians). Default: 0.1 (prevents directly overhead) */
+  /** Minimum polar angle for OrbitControls (radians). Default: 0 (allows directly overhead) */
   minPolarAngle?: number
-  /** Maximum polar angle for OrbitControls (radians). Default: Math.PI / 2 - 0.05 (prevents below ground) */
+  /** Maximum polar angle for OrbitControls (radians). Default: Math.PI - 0.05 (allows orbit below ground plane) */
   maxPolarAngle?: number
-  /** Minimum zoom distance for OrbitControls. Default: 3 */
+  /** Minimum zoom distance for OrbitControls. Default: 0.5 (allows close inspection) */
   minDistance?: number
   /** Maximum zoom distance for OrbitControls. Default: Infinity */
   maxDistance?: number
@@ -116,9 +116,9 @@ export const SceneConfig = ({
   cameraFov = 35,
   orthographic = false,
   cameraZoom = 1,
-  minPolarAngle = 0.1,
-  maxPolarAngle = Math.PI / 2 - 0.05,
-  minDistance = 3,
+  minPolarAngle = 0,
+  maxPolarAngle = Math.PI - 0.05,
+  minDistance = 0.5,
   maxDistance = Infinity,
   showGround = true,
   disableLighting = false,
@@ -128,6 +128,38 @@ export const SceneConfig = ({
   flat = false,
 }: SceneConfigProps) => {
   const navMode = useViewportShellStore((s) => s.navMode)
+  const setActiveInteraction = useViewportShellStore((s) => s.setActiveInteraction)
+
+  // Track which mouse button started the interaction to distinguish orbit vs pan
+  const mouseButtonRef = useRef<number>(-1)
+
+  // Capture mouse button on pointerdown so we know which button started the control interaction
+  const gl = useThree((s) => s.gl)
+  useEffect(() => {
+    const canvas = gl.domElement
+    const handleDown = (e: PointerEvent) => { mouseButtonRef.current = e.button }
+    const handleUp = () => { mouseButtonRef.current = -1 }
+    canvas.addEventListener('pointerdown', handleDown)
+    canvas.addEventListener('pointerup', handleUp)
+    return () => {
+      canvas.removeEventListener('pointerdown', handleDown)
+      canvas.removeEventListener('pointerup', handleUp)
+    }
+  }, [gl])
+
+  const handleControlStart = useCallback(() => {
+    const button = mouseButtonRef.current
+    // Middle mouse (1) = always pan; Left mouse (0) = depends on navMode
+    if (button === 1 || navMode === 'pan') {
+      setActiveInteraction('panning')
+    } else {
+      setActiveInteraction('orbiting')
+    }
+  }, [navMode, setActiveInteraction])
+
+  const handleControlEnd = useCallback(() => {
+    setActiveInteraction('idle')
+  }, [setActiveInteraction])
 
   return (
     <>
@@ -142,7 +174,7 @@ export const SceneConfig = ({
         <CameraSetup position={cameraPosition} fov={cameraFov} />
       )}
 
-      {/* Controls — navigation mode drives orbit/pan/look behavior */}
+      {/* Controls — orbit/pan behavior */}
       <OrbitControls
         makeDefault
         minPolarAngle={minPolarAngle}
@@ -151,14 +183,17 @@ export const SceneConfig = ({
         maxDistance={maxDistance}
         enableDamping={true}
         dampingFactor={0.08}
-        enableRotate={navMode === 'orbit' || navMode === 'look'}
-        enablePan={navMode === 'pan'}
-        rotateSpeed={navMode === 'look' ? 0.3 : 1}
+        enableRotate={navMode === 'orbit'}
+        enablePan={true}
+        zoomToCursor={true}
+        panSpeed={1}
         mouseButtons={{
           LEFT: navMode === 'pan' ? THREE.MOUSE.PAN : THREE.MOUSE.ROTATE,
           MIDDLE: THREE.MOUSE.PAN,
           RIGHT: -1 as unknown as THREE.MOUSE, // DISABLED — right-click reserved for context menu
         }}
+        onStart={handleControlStart}
+        onEnd={handleControlEnd}
       />
 
       {/* Lighting */}

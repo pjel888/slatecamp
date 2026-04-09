@@ -93,6 +93,24 @@ export const ViewportShell = ({
   const toggleLeft = useViewportShellStore((s) => s.toggleLeftSidebar)
   const toggleRight = useViewportShellStore((s) => s.toggleRightSidebar)
   const reset = useViewportShellStore((s) => s.reset)
+  const navMode = useViewportShellStore((s) => s.navMode)
+  const activeInteraction = useViewportShellStore((s) => s.activeInteraction)
+
+  // ─── Dynamic cursor based on nav mode + active interaction ─────────────────
+  // 16×16 SVG data-URI cursors matching the CameraNavigationBar icons
+  // Orbit: Lucide Rotate3d icon | Pan: native grab/grabbing
+  const ORBIT_CURSOR = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23555' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M16.466 7.5C15.643 4.237 13.952 2 12 2 9.239 2 7 6.477 7 12s2.239 10 5 10c.342 0 .677-.069 1-.2'/%3E%3Cpath d='m15.194 13.707 3.814 1.86-1.86 3.814'/%3E%3Cpath d='M19 15.57c-1.804.885-4.274 1.43-7 1.43-5.523 0-10-2.239-10-5s4.477-5 10-5c4.838 0 8.873 1.718 9.8 4'/%3E%3C/svg%3E") 8 8, all-scroll`
+  const ORBITING_CURSOR = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%231B3FC4' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M16.466 7.5C15.643 4.237 13.952 2 12 2 9.239 2 7 6.477 7 12s2.239 10 5 10c.342 0 .677-.069 1-.2'/%3E%3Cpath d='m15.194 13.707 3.814 1.86-1.86 3.814'/%3E%3Cpath d='M19 15.57c-1.804.885-4.274 1.43-7 1.43-5.523 0-10-2.239-10-5s4.477-5 10-5c4.838 0 8.873 1.718 9.8 4'/%3E%3C/svg%3E") 8 8, all-scroll`
+
+  const viewportCursor = useMemo(() => {
+    // During active interaction, show the engaged cursor
+    if (activeInteraction === 'panning') return 'grabbing'
+    if (activeInteraction === 'orbiting') return ORBITING_CURSOR
+    // Idle cursors per mode
+    if (navMode === 'pan') return 'grab'
+    return ORBIT_CURSOR
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [navMode, activeInteraction])
 
   // Reset shell state on unmount
   useEffect(() => {
@@ -191,7 +209,7 @@ export const ViewportShell = ({
         )}
 
         {/* Viewport (1fr) */}
-        <div className="relative overflow-hidden min-h-0 min-w-0 cursor-grab active:cursor-grabbing">
+        <div className="relative overflow-hidden min-h-0 min-w-0" style={{ cursor: viewportCursor }}>
           {/* Canvas content from template */}
           {content.canvasContent}
 
@@ -253,7 +271,7 @@ export const ViewportShell = ({
       {/* ── Mobile: Flex Column + Bottom Sheet ─────────────────────── */}
       <div className="flex flex-1 flex-col min-h-0 md:hidden">
         {/* Canvas fills available space */}
-        <div className="relative flex-1 overflow-hidden min-h-0 cursor-grab active:cursor-grabbing">
+        <div className="relative flex-1 overflow-hidden min-h-0" style={{ cursor: viewportCursor }}>
           {content.canvasContent}
 
           {/* Viewport controls — only when shell manages sidebars (see desktop comment) */}

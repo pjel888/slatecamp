@@ -14,7 +14,7 @@ export default async function Test3DPage({
   if (!modelId) {
     return (
       <div className="h-screen">
-        <Suspense>
+        <Suspense key="lab-browser" fallback={null}>
           <LabBrowser basePath="/test-3d" />
         </Suspense>
       </div>

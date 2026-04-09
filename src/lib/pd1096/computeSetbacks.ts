@@ -9,8 +9,7 @@
 // the base computation. It may be reintroduced as a dedicated stepped-massing
 // feature in a future module.
 
-import type { ZoneClass, ZoningParams, BuildingParams, PerSideSetbacks, SetbackResult } from './types'
-import type { RROWParams } from './types'
+import type { ZoneClass, ZoningParams, BuildingParams, RROWParams, PerSideSetbacks, SetbackResult } from './types'
 import { RESIDENTIAL_SETBACKS, lookupCommercialSetbacks } from './zoningTables'
 
 // ─── Zone classification helpers ────────────────────────────────────────────
@@ -52,18 +51,19 @@ export function computeSetbacks(
   zoning: ZoningParams,
   _building: BuildingParams, // retained for signature compatibility; not used
   rrow: RROWParams,
+  setbackOverrides?: Partial<PerSideSetbacks>,
 ): SetbackResult {
   const { zoneClass, firewallActive, firewallSides } = zoning
 
   // Step 1: Base setbacks from table lookup — static per zone/RROW
   const base = getBaseSetbacks(zoneClass, rrow.width)
 
-  // Step 2: Effective = base (no incremental adjustment)
+  // Step 2: Effective = base, then apply user overrides (if any)
   const effective: PerSideSetbacks = {
-    front: base.front,
-    rear: base.rear,
-    left: base.side,
-    right: base.side,
+    front: setbackOverrides?.front ?? base.front,
+    rear:  setbackOverrides?.rear  ?? base.rear,
+    left:  setbackOverrides?.left  ?? base.side,
+    right: setbackOverrides?.right ?? base.side,
   }
 
   // Step 3: Firewall adjacency — zero setback on firewalled sides (§704.4c)

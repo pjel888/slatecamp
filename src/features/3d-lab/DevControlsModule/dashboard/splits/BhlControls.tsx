@@ -4,6 +4,7 @@ import { useDevControlsStore } from '../../stores/useDevControlsStore'
 import { getZoningEntry, lookupRrowBhl } from '@/lib/pd1096/zoningTables'
 import { Info } from 'lucide-react'
 import { Popover, PopoverTrigger, PopoverContent, PopoverHeader, PopoverTitle, PopoverDescription } from '@/components/ui/popover'
+import { LabSlider } from '@/features/3d-lab/components/controls/LabSlider'
 
 // ─── BHL Controls (Left Column) ────────────────────────────────────────────
 // Slider + computed label + reset button. Metrics grid is in BhlInfo.
@@ -44,28 +45,18 @@ export function BhlControls() {
           </PopoverContent>
         </Popover>
       </div>
-      <div className="mb-1 flex items-baseline justify-between">
-        <label className="text-[10px] font-medium uppercase tracking-wider text-muted-foreground">
-          BHL {isCustom ? '' : '(Computed)'}
-        </label>
-        <span className={`font-mono text-xs font-medium ${isCustom ? 'text-amber-600' : 'text-foreground'}`}>
-          {r.bhlStoreys}F / {r.bhlMeters.toFixed(1)}m
-        </span>
-      </div>
-      <input
-        type="range" min={1} max={50} step={1}
+      <LabSlider
+        label={`BHL ${isCustom ? '' : '(Computed)'}`}
         value={bhlOverride ?? computedBhl}
-        onChange={(e) => setBhlOverride(Number(e.target.value))}
-        className="h-1.5 w-full cursor-pointer appearance-none rounded-full bg-muted accent-primary"
-        aria-label="BHL Storeys"
+        min={1}
+        max={50}
+        step={1}
+        onChange={(v) => setBhlOverride(v)}
+        isViolating={isCustom}
+        formatValue={(v) => `${Math.round(v)}F / ${(Math.round(v) * 3).toFixed(1)}m`}
+        showRangeLabels={false}
+        contextLine={`Computed: ${computedBhl}F (zone: ${zoningBhl}F, RROW: ${rrowBhl}F)`}
       />
-      <div className="mt-0.5 flex justify-between text-[8px] text-muted-foreground">
-        <span>1F</span>
-        <span className="font-medium text-primary">
-          Computed: {computedBhl}F (zone: {zoningBhl}F, RROW: {rrowBhl}F)
-        </span>
-        <span>50F</span>
-      </div>
       {isCustom && (
         <p className="mt-0.5 text-[9px] text-amber-600">Custom BHL — local ordinance mode</p>
       )}

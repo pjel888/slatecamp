@@ -71,7 +71,7 @@ export function LoginFormInner() {
 
 export function LoginForm() {
   return (
-    <Suspense fallback={null}>
+    <Suspense key="login-form-suspense" fallback={null}>
       <LoginFormInner />
     </Suspense>
   );
