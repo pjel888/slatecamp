@@ -1,12 +1,12 @@
 # 3D Lab Feature Specification
 
-**Last Updated:** 2026-04-09
+**Last Updated:** 2026-04-10
 **Status:** Active — Codebase Source of Truth  
-**Version:** 3.0 (Comprehensive Codebase-Derived Specification)
+**Version:** 4.0 (Comprehensive Codebase-Derived Specification)
 **Audit Source:** `.ai/plans/3d-lab-feature-specification-plan-2026-04-08.md`
 
 > This document is the authoritative specification for SlateCamp's 3D Lab feature.
-> Every claim is derived from and verified against the live codebase as of 2026-04-08.
+> Every claim is derived from and verified against the live codebase as of 2026-04-10.
 > No fabricated paths, types, or interfaces. If something is unknown, it is marked NEEDS VERIFICATION.
 
 ---
@@ -19,13 +19,15 @@
 4. [Template System (7 Templates)](#4-template-system-7-templates)
 5. [Module Complete Catalogue (209 Modules)](#5-module-complete-catalogue-209-modules)
 6. [Component Architecture](#6-component-architecture)
-7. [State Management (11 Stores)](#7-state-management-11-stores)
+7. [State Management (12 Stores)](#7-state-management-12-stores)
 8. [Data Flow & API Contract](#8-data-flow--api-contract)
 9. [Database Schema](#9-database-schema)
 10. [Rendering & Performance Architecture](#10-rendering--performance-architecture)
 11. [Asset Pipeline](#11-asset-pipeline)
 12. [Interaction & UX Patterns](#12-interaction--ux-patterns)
 12A. [Unified Viewport Shell](#12a-unified-viewport-shell)
+12B. [Stairway Configurator](#12b-stairway-configurator)
+12C. [Wall Configurator v2](#12c-wall-configurator-v2)
 13. [Regulatory Compliance Engine](#13-regulatory-compliance-engine)
 14. [Pedagogical Integration](#14-pedagogical-integration)
 15. [Hook & Utility Inventory](#15-hook--utility-inventory)
@@ -84,7 +86,7 @@ The LEA (Licensure Examination for Architects) covers 7 subject areas. The 3D La
 | React 3D Bridge | @react-three/fiber | ^9.5.0 | React reconciler for Three.js |
 | 3D Helpers | @react-three/drei | ^10.7.7 | OrbitControls, OrthographicCamera, PerformanceMonitor, useGLTF |
 | Portal System | tunnel-rat | ^0.1.2 | Scene content portaling (SceneTunnel) |
-| State Management | Zustand | ^5.0.12 | 10 stores for lab state |
+| State Management | Zustand | ^5.0.12 | 12 stores for lab state |
 | Framework | Next.js | 16.1.6 | App Router, dynamic imports, SSR |
 | UI | React | ^19.2.4 | Component rendering |
 | Type Definitions | @types/three | ^0.183.1 | TypeScript types for Three.js |
@@ -161,12 +163,25 @@ src/features/3d-lab/
       SceneConfig.tsx              # Camera, controls, lighting config
       StudioLighting.tsx           # 4-preset lighting rig
     shell/
+      CameraNavigationBar.tsx      # 17-button grouped camera nav (modes, views, zoom)
+      CommandPalette.tsx           # Ctrl+K command search overlay
+      CompassRose.tsx              # Site planning compass widget
+      FirstTimeTooltip.tsx         # New user onboarding hints
+      GuidedTour.tsx               # Multi-stop walkthrough system
+      KpiBar.tsx                   # Simplified metrics display
       LabBrowserShell.tsx          # Browser page shell/layout
       LabEmptyState.tsx            # Empty state component
       LabMetaPanel.tsx             # Metadata side panel
-      LabModuleShell.tsx           # Module detail shell/layout
+      LabModuleShell.tsx           # Module detail shell/layout (legacy, replaced by ViewportShell)
       LabOverlayLayer.tsx          # Overlay container
       LabViewportFrame.tsx         # R3F Canvas host with WebGLErrorBoundary
+      LayersPanel.tsx              # Layer toggles with pin/unpin
+      SceneGround.tsx              # GridHelper + GizmoHelper (XZ grid + axis indicator)
+      SceneToolbar.tsx             # Top-left 6-button toolbar (Grid/Dims/X-ray/Layers/Screenshot/Fullscreen)
+      ViewportContextMenu.tsx      # Right-click context menu
+      ViewportSkeleton.tsx         # Loading state placeholder
+      ViewportToast.tsx            # Non-blocking warning notifications
+      WebGLRecovery.tsx            # GPU crash recovery UI
     templates/
       ArchMass.tsx                 # Architectural massing helper
       CalculatorLighting.tsx       # (deprecated) Calculator lighting
@@ -191,6 +206,26 @@ src/features/3d-lab/
         LabBrowser.tsx             # Template library browser
         ModuleCard.tsx             # Template library module card
         ModuleList.tsx             # Template library module list
+    stairway/                        # Stairway configurator UI components (19 files)
+      index.ts                     # Barrel exports
+      ChildSafetyPanel.tsx         # Children's safety assessment panel
+      ClickInspectPopover.tsx      # Click-to-inspect detail popover
+      ComparisonPanel.tsx          # International code comparison panel
+      ComparisonToggle.tsx         # Comparison mode toggle
+      ComplianceLawCard.tsx        # Per-law compliance status card
+      ComplianceSummaryBadge.tsx   # Compliance summary badge
+      DimensionSlider.tsx          # Dimension parameter slider
+      EgressCalculatorPanel.tsx    # Evacuation calculator panel
+      EvacuationControls.tsx       # Evacuation simulation controls
+      FixButton.tsx                # Auto-fix violation button
+      HandrailDetailPanel.tsx      # Handrail detail panel
+      LawActivationDot.tsx         # Law compliance indicator dot
+      MaterialSelectorPanel.tsx    # Material selection panel
+      NosingDetailPanel.tsx        # Nosing detail panel
+      PresetChip.tsx               # Preset selection chip
+      PresetChipStrip.tsx          # Horizontal preset strip
+      ViewportComfortGauge.tsx     # Blondel comfort gauge overlay
+      ViolationRow.tsx             # Single violation display row
       WallConfigurator/
         AreaSummaryBar.tsx         # Wall area summary
         BOMPanel.tsx               # Bill of materials panel
@@ -220,9 +255,41 @@ src/features/3d-lab/
       05-plumbing/                 # 14 module configs
       06-electrical/               # 10 module configs
       07-mechanical/               #  6 module configs
-      08-vertical/                 #  4 module configs
+      08-vertical/                 #  4 module configs + 12 stairway support files
+        stairway-configurator.ts   # Main stairway module config (geometry builder)
+        stairway-computation.ts    # Pure computation engine (compliance, comfort)
+        stairway-computation.test.ts # Unit tests (Blondel, pitch, egress)
+        stairway-types.ts          # StairParams, ComputedStairState, ComplianceResult
+        stairway-constants.ts      # PD 1096, BP 220/344, RA 9514 thresholds
+        stairway-constants-international.ts # IBC 2024, ADA, IRC (UNVERIFIED)
+        stairway-geometry-l-shape.ts # L-stair geometry with turnDirection
+        stairway-geometry-u-shape.ts # U-stair geometry
+        stairway-nosing.ts         # Extruded-profile nosing at tread midpoint
+        stairway-materials.ts      # Material colors per core type
+        stairway-egress.ts         # Evacuation calculator, occupancy-based width
+        stairway-click-targets.ts  # Click-to-inspect geometry regions
+        stairway-presets.ts        # Violation presets (residential, commercial, etc.)
       09-construction/             # 14 module configs
-      10-materials/                # 14 module configs
+      10-materials/                # 14 module configs + 19 wall v2 support files
+        wall-types.ts              # CoreType, StructuralSystem, WallViewMode
+        wall-types-comparison.ts   # Comparison mode types
+        wall-core-registry.ts      # 7 wall types with structural metadata + performance
+        wall-constants.ts          # NSCP, PD 1096 thresholds
+        wall-constants-performance.ts # Fire/STC/cost/R-value data (UNVERIFIED)
+        wall-constants-international.ts # IBC, ASTM, EN standards (UNVERIFIED)
+        wall-geometry.ts           # Main geometry orchestrator
+        wall-geometry-chb.ts       # CHB representative section + instanced blocks
+        wall-geometry-drywall.ts   # Studs, tracks, gypsum layers
+        wall-geometry-brick.ts     # Brick unit + mortar pattern
+        wall-geometry-generic.ts   # Fallback for unknown core types
+        wall-geometry-layers.ts    # Shared finish layer stacking
+        wall-geometry-mep.ts       # Electrical/mechanical conduit runs
+        wall-geometry-connections.ts # Corner/edge assembly details
+        wall-computation.ts        # Pure function producing ComputedWallState
+        wall-build-steps.ts        # Build sequence animation frames
+        wall-section-assembly.ts   # Assembly instructions
+        wall-violations.ts         # 12 expanded violation rules
+        wall-presets.ts            # 12 presets (residential, commercial, etc.)
       11-arch-history/             # 22 module configs
       12-ph-heritage/              # 10 module configs
       13-planning/                 # 18 module configs
@@ -244,10 +311,18 @@ src/features/3d-lab/
     stores/                        # Module-specific stores
   hooks/
     useAnimationComplete.ts        # useFrame with completion detection
+    useCameraSnap.ts               # Camera animation to presets + zoom-to-fit
+    useCameraTransition.ts         # Smooth camera transitions between positions
+    useCollaborationPresence.ts    # User presence indicators (cursors, selections)
+    useDragDrop.ts                 # File upload + object dragging
     useInvalidateOnChange.ts       # Store invalidate bridge
     useModuleInvalidate.ts         # Module-specific invalidation
     useModuleLifecycle.ts          # Store reset on unmount
     useNBCPInvalidateOnChange.ts   # NBCP-specific invalidation
+    useSelectionModel.ts           # Multi-select state management
+    useTemplateContent.tsx         # Builds ViewportShellContent per template type
+    useUndoRedo.ts                 # History state + revert functionality
+    useViewportShortcuts.ts        # Keyboard shortcuts (G/D/X/L/P/F, Ctrl+Z, Ctrl+K)
     useWorldToScreen.ts            # World -> screen projection
   scenes/
     ClassicalOrders/               # Legacy bespoke scene
@@ -511,6 +586,11 @@ interface ParameterDef {
   options?: Array<{ value: string; label: string }>
   group?: string
   decimals?: number
+  /** Progressive disclosure level — controls sidebar grouping visibility */
+  disclosureLevel?: 'essential' | 'advanced' | 'expert'
+  /** Optional visibility predicate — parameter hidden when this returns false.
+   *  Receives current param values. Used for core-type-dependent parameter panels. */
+  visibleWhen?: (params: Record<string, number | boolean | string>) => boolean
 }
 
 interface ViolationRule {
@@ -532,7 +612,10 @@ interface AnnotationDef {
   visibleWhen?: (params: Record<string, number | boolean | string>) => boolean
 }
 
-type GeometryType = 'box' | 'cylinder' | 'plane' | 'line' | 'ring' | 'sphere' | 'cone'
+type GeometryType =
+  | 'box' | 'cylinder' | 'plane' | 'line' | 'ring' | 'sphere' | 'cone'
+  | 'extruded-profile'   // 2D cross-section extruded along axis (nosing, handrails)
+  | 'instanced'           // InstancedMesh rendering (CHB blocks, brick patterns)
 
 interface GeometryInstruction {
   id: string
@@ -545,6 +628,15 @@ interface GeometryInstruction {
   opacity?: number
   transparent?: boolean
   label?: string
+  // ── Extruded-profile fields (type === 'extruded-profile') ──
+  profilePoints?: [number, number][]  // 2D cross-section points
+  extrudeDepth?: number               // Extrusion depth in scene units
+  // ── Instanced geometry fields (type === 'instanced') ──
+  instancedShape?: 'box' | 'cylinder' | 'sphere'
+  instancedShapeArgs?: number[]
+  instancedPositions?: Vector3Tuple[]
+  instancedRotations?: Vector3Tuple[]
+  instancedColors?: string[]
 }
 
 interface CameraConfig {
@@ -565,6 +657,64 @@ interface LegalCitation {
   value?: string
   classification: ValueClassification
   verified?: string
+}
+```
+
+#### Viewport Shell Config Types <!-- added: 2026-04-10 -->
+
+```typescript
+interface SidebarConfig {
+  defaultCollapsed?: boolean
+  width?: number           // Panel width in px
+  title?: string           // Panel header title
+  mobileTabLabel?: string  // Tab label in mobile bottom sheet
+}
+
+interface ViewportShellConfig {
+  leftSidebar?: boolean | SidebarConfig
+  rightSidebar?: boolean | SidebarConfig
+  statusBar?: boolean
+  mobileBottomSheetTabs?: string[]
+}
+
+type ViewMode = 'perspective' | 'orthographic' | 'isometric' | 'top-down'
+
+interface ViewportCapabilities {
+  cameraPresets?: boolean | CameraPreset[]
+  viewModes?: ViewMode[]
+  crossSection?: boolean | CrossSectionConfig
+  explodedView?: boolean
+  humanScale?: boolean
+  focusMode?: boolean
+  resetCamera?: boolean
+  defaultCamera?: { position: Vector3Tuple; target?: Vector3Tuple; fov?: number }
+  floatingToolbar?: FloatingToolbarConfig
+  kpiMetrics?: boolean
+  cameraPresetBar?: boolean
+  compassRose?: boolean
+  tourStops?: Array<{ id: string; title: string; description: string; cameraPosition?: Vector3Tuple; spotlightElement?: string }>
+}
+
+interface FloatingToolbarConfig {
+  position: 'top-left' | 'top-right'
+  items: FloatingToolbarItem[]
+}
+
+interface FloatingToolbarItem {
+  id: string
+  icon: string           // Lucide icon name
+  label: string
+  shortcut?: string
+  type: 'toggle' | 'action'
+  storeBinding?: string  // Store field this toggles (validated at runtime in dev)
+}
+
+interface ViewportShellContent {
+  leftSidebarContent?: React.ReactNode
+  rightSidebarContent?: React.ReactNode
+  canvasContent: React.ReactNode
+  statusBarContent?: React.ReactNode
+  toolbarExtras?: React.ReactNode
 }
 ```
 
@@ -595,8 +745,8 @@ export const DASHBOARD_VISIBLE_IDS: ReadonlySet<string> = new Set([
 
 | Status | Count | Meaning |
 |--------|-------|---------|
-| `built` | 4 | Fully functional with bespoke logic (the 4 calculator modules) |
-| `ready` | 205 | Config complete, template-driven, ready for dashboard activation |
+| `built` | 6 | Fully functional with bespoke logic (4 calculator modules + stairway-configurator + unified-wall-configurator) |
+| `ready` | 203 | Config complete, template-driven, ready for dashboard activation |
 | `planned` | 0 | None currently |
 
 ### Module Registry Entry Type
@@ -816,7 +966,7 @@ interface ModuleRegistryEntry {
 | 1 | `elevator-hoistway` | cutaway | ready | 2 |
 | 2 | `escalator-section` | cutaway | ready | 2 |
 | 3 | `handrail-requirements` | parametric | ready | 2 |
-| 4 | `stairway-configurator` | parametric | ready | 2 | **DASHBOARD ACTIVE** |
+| 4 | `stairway-configurator` | parametric | built | 2 | **DASHBOARD ACTIVE** — bespoke multi-file module (16 config files, 19 UI components) |
 
 #### Category 09: Construction Methods & Sequences (14 modules)
 
@@ -851,7 +1001,7 @@ interface ModuleRegistryEntry {
 | 8 | `rebar-catalog` | exploded | ready | 2 |
 | 9 | `standard-material-sheets` | exploded | ready | 2 |
 | 10 | `steel-sections-catalog` | exploded | ready | 2 |
-| 11 | `unified-wall-configurator` | wall-configurator | ready | 2 | **DASHBOARD ACTIVE** |
+| 11 | `unified-wall-configurator` | wall-configurator | built | 2 | **DASHBOARD ACTIVE** — v2 multi-file architecture (19 config files) |
 | 12 | `wall-section-assembly` | exploded | ready | 2 |
 | 13 | `wall-types-comparison` | cutaway | ready | 2 |
 | 14 | `waterproofing-systems` | cutaway | ready | 2 |
@@ -952,7 +1102,7 @@ interface ModuleRegistryEntry {
 
 ---
 
-## 6. Component Architecture <!-- updated: 2026-04-09 -->
+## 6. Component Architecture <!-- updated: 2026-04-10 -->
 
 ### Component Tree
 
@@ -1042,19 +1192,39 @@ flowchart TD
 | `ViewportBottomSheet` | `components/shell/ViewportBottomSheet.tsx` | Client | Mobile tab-based sidebar replacement |
 | `ViewportStatusBar` | `components/shell/ViewportStatusBar.tsx` | Client | Optional compliance/dimension strip |
 | `PanelCollapseButton` | `components/shell/PanelCollapseButton.tsx` | Client | Single collapse handle for all sidebars |
+| `CameraNavigationBar` | `components/shell/CameraNavigationBar.tsx` | Client | 17-button grouped camera nav (modes, views, zoom) |
+| `CommandPalette` | `components/shell/CommandPalette.tsx` | Client | Ctrl+K command search overlay |
+| `CompassRose` | `components/shell/CompassRose.tsx` | Client | Site planning compass widget |
+| `FirstTimeTooltip` | `components/shell/FirstTimeTooltip.tsx` | Client | New user onboarding hints |
+| `GuidedTour` | `components/shell/GuidedTour.tsx` | Client | Multi-stop walkthrough system |
+| `KpiBar` | `components/shell/KpiBar.tsx` | Client | Simplified metrics display |
+| `LayersPanel` | `components/shell/LayersPanel.tsx` | Client | Layer toggles with pin/unpin |
+| `SceneGround` | `components/shell/SceneGround.tsx` | Client | GridHelper + GizmoHelper (XZ grid + axis indicator) |
+| `SceneToolbar` | `components/shell/SceneToolbar.tsx` | Client | Top-left 6-button toolbar (Grid/Dims/X-ray/Layers/Screenshot/Fullscreen) |
+| `ViewportContextMenu` | `components/shell/ViewportContextMenu.tsx` | Client | Right-click context menu |
+| `ViewportSkeleton` | `components/shell/ViewportSkeleton.tsx` | Client | Loading state placeholder |
+| `ViewportToast` | `components/shell/ViewportToast.tsx` | Client | Non-blocking warning notifications |
+| `WebGLRecovery` | `components/shell/WebGLRecovery.tsx` | Client | GPU crash recovery UI |
+| `ViewportComfortGauge` | `components/stairway/ViewportComfortGauge.tsx` | Client | Blondel comfort gauge overlay for stairway |
+| `EgressCalculatorPanel` | `components/stairway/EgressCalculatorPanel.tsx` | Client | Evacuation calculator panel |
+| `ComplianceLawCard` | `components/stairway/ComplianceLawCard.tsx` | Client | Per-law compliance status card |
+| `MaterialSelectorPanel` | `components/stairway/MaterialSelectorPanel.tsx` | Client | Stairway material selection panel |
+| `ClickInspectPopover` | `components/stairway/ClickInspectPopover.tsx` | Client | Click-to-inspect detail popover |
 
-### Bespoke Scenes (Legacy)
+### Bespoke & Complex Modules
 
-| Scene | File Path | Description |
-|-------|-----------|-------------|
-| `FARPlayground` | `src/features/3d-lab/scenes/FARPlayground/` | FAR calculator playground |
-| `ClassicalOrders` | `src/features/3d-lab/scenes/ClassicalOrders/` | Classical orders comparison |
-| `NBCPEnvelope` | `src/features/3d-lab/scenes/NBCPEnvelope/` | NBCP building envelope |
-| `DevControlsModule` | `src/features/3d-lab/DevControlsModule/` | Site development controls (55+ files, most complex module) |
+| Module | File Path | Description |
+|--------|-----------|-------------|
+| `DevControlsModule` | `src/features/3d-lab/DevControlsModule/` | Site development controls (55+ files, most complex module) — uses ViewportShell header + own internal CSS grid |
+| `stairway-configurator` | `src/features/3d-lab/config/modules/08-vertical/stairway-*.ts` + `components/stairway/` | Stairway configurator (16 config files, 19 UI components) — 4-law compliance, L/U-shape, egress calculator |
+| `unified-wall-configurator` | `src/features/3d-lab/config/modules/10-materials/wall-*.ts` | Wall configurator v2 (19 config files) — 7 core types, instanced geometry, performance dashboard |
+| `FARPlayground` | `src/features/3d-lab/scenes/FARPlayground/` | FAR calculator playground (legacy bespoke scene) |
+| `ClassicalOrders` | `src/features/3d-lab/scenes/ClassicalOrders/` | Classical orders comparison (legacy bespoke scene) |
+| `NBCPEnvelope` | `src/features/3d-lab/scenes/NBCPEnvelope/` | NBCP building envelope (legacy bespoke scene) |
 
 ---
 
-## 7. State Management (11 Stores) <!-- updated: 2026-04-09 -->
+## 7. State Management (12 Stores) <!-- updated: 2026-04-10 -->
 
 ### Store 1: `useLabNavigationStore`
 
@@ -1259,30 +1429,77 @@ Selection state for DevControls module -- tracks which lot zones, layers, and bu
 
 ```typescript
 interface ViewportShellState {
+  // Sidebar state
   leftSidebarCollapsed: boolean
   rightSidebarCollapsed: boolean
+
+  // View mode
   activeViewMode: ViewMode  // 'perspective' | 'orthographic' | 'isometric' | 'top-down'
+
+  // Camera
   activeCameraPreset: string | null
+
+  // Navigation mode
+  navMode: 'orbit' | 'pan' | 'look'
+
+  // Mobile
   mobileActiveTab: string
   bottomSheetOpen: boolean
+
+  // Scene toolbar state
+  gridVisible: boolean            // Default: true
+  dimensionsVisible: boolean      // Default: false
+  xrayMode: boolean               // Default: false
+  layersPanelOpen: boolean        // Default: false
+
+  // Selection state
+  selectedIds: Set<string>
+  hoveredId: string | null
+
+  // Invalidation bridge
   invalidateFn: (() => void) | null
 
-  // UI-only actions (no invalidate)
+  // Actions — UI only (no invalidate)
   toggleLeftSidebar: () => void
   toggleRightSidebar: () => void
   setMobileTab: (tab: string) => void
   setBottomSheetOpen: (open: boolean) => void
+  toggleLayersPanel: () => void
 
-  // Scene-affecting actions (calls invalidate)
+  // Actions — scene-affecting toolbar toggles (calls invalidate)
+  toggleGrid: () => void
+  toggleDimensions: () => void
+  toggleXray: () => void
+
+  // Selection actions — UI only, no invalidate
+  selectElement: (id: string) => void
+  toggleSelect: (id: string) => void
+  clearSelection: () => void
+  boxSelect: (ids: string[]) => void
+  setHoveredId: (id: string | null) => void
+
+  // Navigation mode action
+  setNavMode: (mode: 'orbit' | 'pan' | 'look') => void
+
+  // Actions — scene-affecting (calls invalidate)
   setViewMode: (mode: ViewMode) => void
   setCameraPreset: (presetId: string | null) => void
+  snapToPreset: (preset: 'front' | 'top' | 'left' | 'right' | 'rear' | 'iso' |
+    'iso-ne' | 'iso-nw' | 'iso-se' | 'iso-sw' | 'zoom-to-fit' | 'zoom-in' |
+    'zoom-out' | 'reset' | 'perspective') => void
 
   setInvalidateFn: (fn: (() => void) | null) => void
   reset: () => void
 }
 ```
 
-Shell-specific state for sidebar collapse, view mode, camera preset, and mobile tab. UI-only actions do NOT call invalidate(). Scene-affecting actions (view mode, camera preset) MUST call invalidate().
+Shell-specific state for sidebar collapse, view mode, camera preset, scene toolbar toggles, element selection, and mobile tab. UI-only actions (sidebar, layers panel, selection) do NOT call invalidate(). Scene-affecting actions (view mode, camera preset, grid/dimensions/xray toggles, nav mode) MUST call invalidate().
+
+### Store 12: `nbcpStore`
+
+**File:** `src/features/3d-lab/stores/nbcpStore.ts`
+
+NBCP-specific Zustand store for the NBCP Envelope module. Contains lot parameters, setback values, and zoning data specific to the NBCP envelope visualization.
 
 ---
 
@@ -1550,7 +1767,7 @@ The `Workspace` component (`src/components/3d/Workspace.tsx`, ~500 lines) suppor
 
 ---
 
-## 12. Interaction & UX Patterns <!-- updated: 2026-04-09 -->
+## 12. Interaction & UX Patterns <!-- updated: 2026-04-10 -->
 
 ### Implemented Interactions
 
@@ -1579,6 +1796,28 @@ The `Workspace` component (`src/components/3d/Workspace.tsx`, ~500 lines) suppor
 | **Dimension labels** | via overlays | `DimensionLabel` DOM overlay with violation state |
 | **Post-module CTA** | all | `PostModuleCTA` shown after module completion |
 | **Viewport Chrome** | all | `ViewportShell` + `ViewportToolbar` -- config-driven toolbar, unified sidebars, mobile bottom sheet |
+| **Scene Toolbar** | all | `SceneToolbar` -- 6-button floating toolbar (Grid/Dims/X-ray/Layers/Screenshot/Fullscreen) |
+| **Camera Navigation Bar** | all | `CameraNavigationBar` -- 17-button grouped nav (modes, standard views, isometric, zoom) |
+| **Grid + Axis Gizmo** | all | `SceneGround` -- XZ plane GridHelper (20x20, 0.6 opacity) + GizmoHelper (RGB xyz, bottom-right) |
+| **Command Palette** | all | `CommandPalette` -- Ctrl+K search overlay for modules, presets, actions |
+| **Right-click Context Menu** | all | `ViewportContextMenu` -- context menu on right-click (OrbitControls right-click disabled) |
+| **Keyboard Shortcuts** | all | `useViewportShortcuts` -- G/D/X/L/P/F for toolbar, Ctrl+Z for undo, Ctrl+K for command palette |
+| **Layers Panel Pin/Unpin** | all | `LayersPanel` -- persistent layer panel toggled via SceneToolbar L button |
+| **Camera Snap** | all | `useCameraSnap` -- animated transitions to 15 named camera presets |
+| **Navigation Modes** | all | `navMode` in ViewportShellStore -- orbit/pan/look (3 modes) |
+| **Element Selection** | all | `selectedIds` + `hoveredId` in ViewportShellStore -- click/shift-click/box-select |
+| **Undo/Redo** | all | `useUndoRedo` -- history state + revert functionality |
+| **GPU Crash Recovery** | all | `WebGLRecovery` -- graceful GPU crash handling with retry UI |
+| **Loading Skeleton** | all | `ViewportSkeleton` -- placeholder during module loading |
+| **Toast Notifications** | all | `ViewportToast` -- non-blocking warning/info messages |
+| **Guided Tour** | per-module | `GuidedTour` -- multi-stop walkthrough with `tourStops` in ViewportCapabilities |
+| **First-Time Tooltip** | all | `FirstTimeTooltip` -- new user onboarding hints |
+| **Compass Rose** | site planning | `CompassRose` -- orientation widget for site planning modules |
+| **Stairway Comfort Gauge** | stairway | `ViewportComfortGauge` -- Blondel comfort gauge overlay |
+| **Stairway Click-to-Inspect** | stairway | `ClickInspectPopover` -- click geometry regions for detail |
+| **Stairway Egress Calculator** | stairway | `EgressCalculatorPanel` -- occupancy-based evacuation width |
+| **Wall View Modes** | wall-configurator | Overview/section-cut/exploded/build-sequence/compare |
+| **Wall Performance Dashboard** | wall-configurator | Fire/STC/cost/R-value metric badges |
 
 ### Not Yet Implemented (Scaffolded in Types)
 
@@ -1586,24 +1825,27 @@ The `Workspace` component (`src/components/3d/Workspace.tsx`, ~500 lines) suppor
 |---------|----------|
 | Challenge mode (find violations) | `hasChallengeMode` in config types, no UI implementation |
 | Learning phases (guided/faded/sandbox/challenge) | `supportedPhases` in config types, no progression system |
-| Camera tours | `presetViews` in ModuleConfig (plan/section/elevation), no tour UI |
 | Asset preloading | `assets.models[]` and `assets.textures[]` in registry, no consumers |
+| Collaboration presence | `useCollaborationPresence` hook exists, no server-side backing |
+| Drag-drop file upload | `useDragDrop` hook exists, no upload endpoint |
 
-**Note:** Camera presets are now available in all modules via ViewportToolbar (no longer DevControls-only).
+**Note:** Camera presets and tours are now available in all modules via `CameraNavigationBar` (15 named presets) and `GuidedTour` (per-module `tourStops`). Camera presets are no longer DevControls-only.
 
 ### Mobile Touch
 
-No explicit mobile touch handling in the core lab -- OrbitControls handles touch natively via `touch-action: none` on the canvas container. The DevControlsModule has a `BottomSheet` and `MobileSheetContent` for mobile layouts.
+OrbitControls handles touch natively via `touch-action: none` on the canvas container. All modules now use `ViewportBottomSheet` for mobile layouts (replacing the DevControls-only `BottomSheet`). Sidebar content is delivered as tabs in the bottom sheet on screens below `md` breakpoint.
 
 ---
 
-## 12A. Unified Viewport Shell <!-- updated: 2026-04-09 -->
+## 12A. Unified Viewport Shell <!-- updated: 2026-04-10 -->
 
 ### Overview
 
-The Unified Viewport Shell is a slot-based layout system implemented in April 2026. The shell owns ALL viewport containers (header, sidebars, toolbar, bottom sheet). Templates inject CONTENT into named slots -- they never create their own containers. 213 modules (209 template + 4 calculator) now route through ViewportShell.
+The Unified Viewport Shell is a slot-based layout system implemented in April 2026. The shell owns ALL viewport containers (header, sidebars, toolbar, bottom sheet, scene toolbar, camera navigation). Templates inject CONTENT into named slots -- they never create their own containers. 213 modules (209 template + 4 calculator) now route through ViewportShell.
 
-### New Components (7 files in `src/features/3d-lab/components/shell/`)
+### Shell Components (26 files in `src/features/3d-lab/components/shell/`)
+
+#### Core Shell (7 files — layout structure)
 
 | Component | File | Replaces |
 |-----------|------|----------|
@@ -1614,6 +1856,35 @@ The Unified Viewport Shell is a slot-based layout system implemented in April 20
 | `ViewportBottomSheet` | `shell/ViewportBottomSheet.tsx` | DevControls' BottomSheet |
 | `ViewportStatusBar` | `shell/ViewportStatusBar.tsx` | New |
 | `PanelCollapseButton` | `shell/PanelCollapseButton.tsx` | All divergent collapse buttons |
+
+#### Viewport UX (13 files — toolbar, camera, overlays) <!-- added: 2026-04-10 -->
+
+| Component | File | Purpose |
+|-----------|------|---------|
+| `CameraNavigationBar` | `shell/CameraNavigationBar.tsx` | 17-button grouped camera nav: 3 modes (orbit/pan/look) + 5 standard views + 5 isometric + 3 zoom + reset |
+| `CommandPalette` | `shell/CommandPalette.tsx` | Ctrl+K command search overlay for modules, presets, actions |
+| `CompassRose` | `shell/CompassRose.tsx` | Site planning compass widget |
+| `FirstTimeTooltip` | `shell/FirstTimeTooltip.tsx` | New user onboarding hints |
+| `GuidedTour` | `shell/GuidedTour.tsx` | Multi-stop walkthrough system driven by `tourStops` in ViewportCapabilities |
+| `KpiBar` | `shell/KpiBar.tsx` | Simplified metrics display for compliance scores |
+| `LayersPanel` | `shell/LayersPanel.tsx` | Layer toggles with pin/unpin (persistent via SceneToolbar L button) |
+| `SceneGround` | `shell/SceneGround.tsx` | R3F component: GridHelper (XZ plane, 20x20, 0.6 opacity) + GizmoHelper (axis indicator, bottom-right, RGB labels) |
+| `SceneToolbar` | `shell/SceneToolbar.tsx` | Top-left 6-button floating toolbar: **G**rid / **D**imensions / **X**-ray / **L**ayers / **P**hotograph / **F**ullscreen |
+| `ViewportContextMenu` | `shell/ViewportContextMenu.tsx` | Right-click context menu (right-click disabled on OrbitControls) |
+| `ViewportSkeleton` | `shell/ViewportSkeleton.tsx` | Loading state placeholder during module load |
+| `ViewportToast` | `shell/ViewportToast.tsx` | Non-blocking warning/info notifications |
+| `WebGLRecovery` | `shell/WebGLRecovery.tsx` | GPU crash recovery UI with retry |
+
+#### Legacy Shell (6 files — pre-ViewportShell, still referenced)
+
+| Component | File | Status |
+|-----------|------|--------|
+| `LabBrowserShell` | `shell/LabBrowserShell.tsx` | Active — browser page layout |
+| `LabEmptyState` | `shell/LabEmptyState.tsx` | Active — empty state |
+| `LabMetaPanel` | `shell/LabMetaPanel.tsx` | Active — metadata side panel |
+| `LabModuleShell` | `shell/LabModuleShell.tsx` | **Deprecated** — replaced by ViewportShell |
+| `LabOverlayLayer` | `shell/LabOverlayLayer.tsx` | Active — overlay container |
+| `LabViewportFrame` | `shell/LabViewportFrame.tsx` | Active — R3F Canvas host |
 
 ### New Types (`src/features/3d-lab/types/templates.ts`)
 
@@ -1658,17 +1929,19 @@ Panel collapse: `grid-template-columns` CSS transition (200ms cubic-bezier).
 
 Mobile (< md): Flex column with ViewportBottomSheet replacing sidebars as tabs.
 
-### Default Layout Matrix
+### Default Layout Matrix (from `TEMPLATE_SHELL_DEFAULTS`)
 
-| Template | Left Sidebar | Right Sidebar | View Modes | Status Bar |
-|----------|-------------|---------------|------------|------------|
-| parametric | Yes (240px, Controls) | Conditional (280px, Compliance) | perspective, isometric | violations |
-| exploded | No | Yes (280px, Parts) | perspective, isometric | No |
-| cutaway | No | Yes (280px, Layers) | perspective, isometric | No |
-| floorplan | Yes (240px, Controls) | Yes (280px, Legend) | top-down, perspective | No |
-| animated | No | Yes (280px, Steps) | perspective, isometric | No |
-| calculator | Internal layout | Internal layout | orthographic, perspective | Internal |
-| wall-configurator | Yes (320px, Configure) | Yes (340px, Materials) | perspective, isometric | area |
+| Template | Left Sidebar | Right Sidebar | View Modes | Camera Presets |
+|----------|-------------|---------------|------------|----------------|
+| parametric | Yes (320px, Controls) | Yes (300px, Controls) | perspective, isometric | Yes |
+| exploded | No | Yes (300px, Parts) | perspective, isometric | Yes |
+| cutaway | No | Yes (300px, Layers) | perspective, isometric | Yes |
+| floorplan | No | Yes (300px, Legend) | top-down, perspective | Yes |
+| animated | No | Yes (300px, Steps) | perspective, isometric | Yes |
+| calculator | Yes (340px, Inputs) | Yes (340px, Results) | orthographic, perspective | Yes |
+| wall-configurator | Yes (340px, Configure) | Yes (320px, Materials) | perspective, isometric | Yes |
+
+All templates share a common `DEFAULT_FLOATING_TOOLBAR` with 4 items: Grid (G), Dimensions (D), Screenshot (P), Fullscreen (F).
 
 ### Migration Status
 
@@ -1679,10 +1952,240 @@ All 213 modules route through ViewportShell:
 
 ### Performance Contract
 
-- Shell is 100% DOM-rendered -- zero Three.js scene objects
+- Shell is 100% DOM-rendered -- zero Three.js scene objects (except `SceneGround` which renders inside the R3F Canvas)
 - Sidebar collapse: 200ms CSS transition, 0 JS frames
 - Controls that don't affect 3D scene MUST NOT call invalidate()
-- Camera transitions: self-terminating via useAnimationComplete
+- Camera transitions: self-terminating via `useAnimationComplete` and `useCameraSnap`
+- OrbitControls constraints: `minPolarAngle: 0.1`, `maxPolarAngle: π/2 - 0.05`, `minDistance: 1`, `maxDistance: 500`
+- Right-click disabled on OrbitControls (reserved for `ViewportContextMenu`)
+
+---
+
+## 12B. Stairway Configurator <!-- added: 2026-04-10 -->
+
+### Overview
+
+The Stairway Configurator is a bespoke parametric module (`stairway-configurator`) that provides comprehensive stairway design and compliance checking against 4 Philippine building codes simultaneously. It supports straight, L-shape, and U-shape stair types with real-time Blondel comfort analysis, egress calculation, and international code comparison.
+
+**Dashboard Status:** ACTIVE (one of 4 visible modules)
+
+### Architecture
+
+The stairway configurator is implemented as a multi-file extension within `src/features/3d-lab/config/modules/08-vertical/`:
+
+| File | Purpose | Lines |
+|------|---------|-------|
+| `stairway-configurator.ts` | Main module config with full geometry builder | ~1400 |
+| `stairway-computation.ts` | Pure computation engine (compliance, comfort, pitch) | ~700 |
+| `stairway-computation.test.ts` | Unit tests (Blondel, pitch, egress, state) | ~200 |
+| `stairway-types.ts` | Type definitions | ~170 |
+| `stairway-constants.ts` | PD 1096, BP 220/344, RA 9514 code thresholds | ~380 |
+| `stairway-constants-international.ts` | IBC 2024, ADA, IRC constants (**UNVERIFIED**) | ~140 |
+| `stairway-geometry-l-shape.ts` | L-stair geometry with `turnDirection` | ~190 |
+| `stairway-geometry-u-shape.ts` | U-stair geometry | ~220 |
+| `stairway-nosing.ts` | Extruded-profile nosing at tread midpoint | ~100 |
+| `stairway-materials.ts` | Material colors per core type | ~70 |
+| `stairway-egress.ts` | Evacuation calculator, occupancy-based width | ~90 |
+| `stairway-click-targets.ts` | Click-to-inspect geometry regions | ~90 |
+| `stairway-presets.ts` | Violation presets (residential, commercial, etc.) | ~180 |
+
+### Key Types
+
+```typescript
+type StairTypeConfig =
+  | { type: 'straight' }
+  | { type: 'l-shape'; turnDirection: 'left' | 'right'; risersBeforeTurn: number }
+  | { type: 'u-shape'; risersBeforeTurn: number }
+
+interface ComputedStairState {
+  // Raw parameters
+  projectType: string
+  isAccessibleRoute: boolean
+  isExitStair: boolean
+  stairWidth: number
+  riserHeight: number
+  treadDepth: number
+  headroom: number
+  handrailHeight: number
+  numRisers: number
+
+  // Stair type + derived metrics
+  stairType: StairTypeConfig
+  twoRPlusT: number          // Blondel comfort (2R + T)
+  rPlusT: number             // R + T sum
+  comfortStatus: ComfortZoneStatus
+  pitchAngle: number
+  pitchStatus: PitchStatus
+
+  // Per-law compliance (4 laws simultaneously)
+  riserCompliance: ComplianceResult   // PD 1096, BP 220, BP 344, RA 9514
+  treadCompliance: ComplianceResult
+  widthCompliance: ComplianceResult
+  headroomCompliance: ComplianceResult
+  handrailCompliance: ComplianceResult
+
+  // Resolved violation colors
+  riserColor: string | null
+  treadColor: string | null
+  widthColor: string | null
+
+  // International comparison (IBC, ADA, IRC)
+  internationalDeltas: InternationalComparisonDelta[]
+}
+```
+
+### UI Components (19 files in `src/features/3d-lab/components/stairway/`)
+
+| Component | Purpose |
+|-----------|---------|
+| `ViewportComfortGauge` | Blondel comfort gauge overlay (2R+T) |
+| `EgressCalculatorPanel` | Evacuation width calculator by occupancy |
+| `ComplianceLawCard` | Per-law compliance status card |
+| `ComplianceSummaryBadge` | Aggregate compliance badge |
+| `ClickInspectPopover` | Click-to-inspect detail popover |
+| `ComparisonPanel` | International code comparison panel |
+| `ComparisonToggle` | Toggle for comparison mode |
+| `ChildSafetyPanel` | Children's safety assessment |
+| `HandrailDetailPanel` | Handrail graspability and height |
+| `NosingDetailPanel` | Nosing profile detail |
+| `MaterialSelectorPanel` | Material selection (concrete, steel, wood) |
+| `DimensionSlider` | Parametric dimension slider |
+| `EvacuationControls` | Evacuation simulation controls |
+| `FixButton` | Auto-fix violation to nearest compliant value |
+| `LawActivationDot` | Law compliance indicator dot |
+| `PresetChip` / `PresetChipStrip` | Preset selection chips |
+| `ViolationRow` | Single violation display row |
+
+### Unit Tests
+
+**File:** `stairway-computation.test.ts`
+
+- `computeBlondelComfort`: 5 test cases (comfortable, stretched, cramped, boundaries)
+- `computePitch`: 4 test cases (ramp-like, comfortable, steep, ladder-like)
+- `computeStairState`: 4 preset validation tests + stair type parsing
+- `computeEgressRequirements`: 9 test cases (occupancy types, PD 1096 override, width qualification)
+
+### Geometry
+
+Uses `extruded-profile` GeometryType for nosing detail. L-shape and U-shape geometries have separate builder files that produce `GeometryInstruction[]` arrays with landing platforms and turn geometry.
+
+### Data Verification
+
+- PD 1096, BP 220, BP 344, RA 9514 constants: **Verified**
+- IBC 2024, ADA, IRC international constants: **UNVERIFIED** — marked in source comments
+
+---
+
+## 12C. Wall Configurator v2 <!-- added: 2026-04-10 -->
+
+### Overview
+
+The Wall Configurator v2 is a complete multi-file rewrite of the original wall configurator module (`unified-wall-configurator`). It introduces structural fidelity with per-core-type geometry builders, instanced mesh rendering for masonry patterns, performance metrics (fire rating, STC, cost, R-value), and 5 view modes.
+
+**Dashboard Status:** ACTIVE (one of 4 visible modules)
+
+### Architecture
+
+The wall v2 is implemented as 19 support files within `src/features/3d-lab/config/modules/10-materials/`:
+
+#### Type System & Registry
+
+| File | Purpose |
+|------|---------|
+| `wall-types.ts` | `CoreType`, `StructuralSystem`, `WallViewMode`, `CoreTypeRegistryEntry` |
+| `wall-types-comparison.ts` | Comparison mode types |
+| `wall-core-registry.ts` | 7 wall types with structural metadata + performance baselines |
+
+#### Constants & Data
+
+| File | Purpose |
+|------|---------|
+| `wall-constants.ts` | NSCP, PD 1096 thresholds |
+| `wall-constants-performance.ts` | Fire/STC/cost/R-value data (**UNVERIFIED**) |
+| `wall-constants-international.ts` | IBC, ASTM, EN standards (**UNVERIFIED**) |
+
+#### Geometry Builders (Sub-specialized)
+
+| File | Purpose |
+|------|---------|
+| `wall-geometry.ts` | Main geometry orchestrator — dispatches to per-core-type builders |
+| `wall-geometry-chb.ts` | CHB representative section + instanced blocks |
+| `wall-geometry-drywall.ts` | Studs, tracks, gypsum layers |
+| `wall-geometry-brick.ts` | Brick unit + mortar pattern |
+| `wall-geometry-generic.ts` | Fallback for unknown core types |
+| `wall-geometry-layers.ts` | Shared finish layer stacking |
+| `wall-geometry-mep.ts` | Electrical/mechanical conduit runs |
+| `wall-geometry-connections.ts` | Corner/edge assembly details |
+
+#### Computation & Features
+
+| File | Purpose |
+|------|---------|
+| `wall-computation.ts` | Pure function producing `ComputedWallState` (~600 lines) |
+| `wall-build-steps.ts` | Build sequence animation frames |
+| `wall-section-assembly.ts` | Assembly instructions |
+| `wall-violations.ts` | 12 expanded violation rules (fire rating, STC, thickness, etc.) |
+| `wall-presets.ts` | 12 presets (residential, commercial, PHI standard, etc.) |
+
+### Key Types
+
+```typescript
+type CoreType = 'chb' | 'drywall' | 'plywood' | 'cement-board' | 'brick' | 'solid-concrete' | 'existing-wall'
+type StructuralSystem = 'unit-masonry' | 'framed' | 'panel' | 'monolithic' | 'generic'
+type WallViewMode = 'overview' | 'section-cut' | 'exploded' | 'build-sequence' | 'compare'
+
+interface CoreTypeRegistryEntry {
+  // Identification
+  thickness: number
+  color: string
+  label: string
+  hasMortarPattern: boolean
+
+  // Structural metadata
+  structuralSystem: StructuralSystem
+  isLoadBearing: boolean | 'configurable'
+  supportsInsulation: boolean
+  supportsWaterproofing: boolean
+  supportsMEP: boolean
+
+  // Performance data (UNVERIFIED)
+  baseFireRatingMinutes: number
+  baseSTC: number
+  baseRValue: number
+  baseCostPerSqm: number    // Philippine Peso
+
+  // Quantity data
+  unitsPerSqm: number | null    // 12.5 for CHB, ~50 for brick
+  mortarVolumePerSqm: number | null
+}
+```
+
+### View Modes
+
+| Mode | Description |
+|------|-------------|
+| `overview` | Standard 3D wall assembly view |
+| `section-cut` | Cross-section revealing internal layers |
+| `exploded` | Layers separated for inspection |
+| `build-sequence` | Step-by-step construction animation |
+| `compare` | Side-by-side comparison of two core types |
+
+### Instanced Geometry
+
+The wall configurator uses the `instanced` GeometryType for CHB block patterns and brick layouts. `wall-geometry-chb.ts` generates `instancedPositions`, `instancedRotations`, and `instancedColors` arrays for efficient rendering of repetitive masonry units via `InstancedMesh`.
+
+### Backward Compatibility
+
+- `ParametricSceneConfig` interface is UNCHANGED
+- All 209 existing modules are unaffected
+- The `visibleWhen` field on `ParameterDef` enables adaptive parameter visibility per core type
+- The wall configurator still uses template type `'wall-configurator'` and routes through `WallConfiguratorTemplate`
+
+### Data Verification
+
+- NSCP, PD 1096 structural constants: **Verified**
+- Fire rating, STC, cost, R-value performance data: **UNVERIFIED** — marked in source
+- IBC, ASTM, EN international constants: **UNVERIFIED** — marked in source
 
 ---
 
@@ -1792,15 +2295,23 @@ The 3D Lab is not currently a vector in the readiness score computation (`src/li
 
 ## 15. Hook & Utility Inventory
 
-### Hooks (`src/features/3d-lab/hooks/`)
+### Hooks (`src/features/3d-lab/hooks/`) — 14 hooks
 
 | Hook | File | Signature | Description |
 |------|------|-----------|-------------|
 | `useAnimationComplete` | `hooks/useAnimationComplete.ts` | `(callback, isComplete) => { reset }` | Wraps useFrame with completion detection for demand frameloop |
+| `useCameraSnap` | `hooks/useCameraSnap.ts` | `() => void` | Camera animation to 15 named presets + zoom-to-fit |
+| `useCameraTransition` | `hooks/useCameraTransition.ts` | `(target, duration?) => void` | Smooth camera transitions between positions |
+| `useCollaborationPresence` | `hooks/useCollaborationPresence.ts` | `() => PresenceState` | User presence indicators (cursors, selections) — **scaffolded, no server** |
+| `useDragDrop` | `hooks/useDragDrop.ts` | `() => DragState` | File upload + object dragging — **scaffolded, no endpoint** |
 | `useInvalidateOnChange` | `hooks/useInvalidateOnChange.ts` | `() => void` | Registers R3F invalidate callback into store |
 | `useModuleInvalidate` | `hooks/useModuleInvalidate.ts` | `() => void` | Module-specific invalidation bridge |
 | `useModuleLifecycle` | `hooks/useModuleLifecycle.ts` | `(useStore, resetOnUnmount?) => void` | Calls store.reset() on unmount when resetOnUnmount is true |
 | `useNBCPInvalidateOnChange` | `hooks/useNBCPInvalidateOnChange.ts` | `() => void` | NBCP-specific invalidation bridge |
+| `useSelectionModel` | `hooks/useSelectionModel.ts` | `() => SelectionState` | Multi-select state management (click, shift-click, box-select) |
+| `useTemplateContent` | `hooks/useTemplateContent.tsx` | `(config, entry) => ViewportShellContent` | Builds ViewportShellContent per template type with stable module stores |
+| `useUndoRedo` | `hooks/useUndoRedo.ts` | `() => { undo, redo, canUndo, canRedo }` | History state + revert functionality |
+| `useViewportShortcuts` | `hooks/useViewportShortcuts.ts` | `() => void` | Keyboard shortcuts: G/D/X/L/P/F for toolbar, Ctrl+Z undo, Ctrl+K command palette |
 | `useWorldToScreen` | `hooks/useWorldToScreen.ts` | `() => (worldPos, w, h) => ScreenPosition` | Projects THREE.Vector3 to screen coordinates with margin check |
 
 ### Hooks (`src/components/r3f/`)
@@ -1908,7 +2419,7 @@ However, the following 3D Lab components should be treated as **migration-sensit
 
 ---
 
-## 19. Known Open Decisions & Technical Debt <!-- updated: 2026-04-09 -->
+## 19. Known Open Decisions & Technical Debt <!-- updated: 2026-04-10 -->
 
 | Location | Description | Tag |
 |----------|-------------|-----|
@@ -1925,11 +2436,17 @@ However, the following 3D Lab components should be treated as **migration-sensit
 | `LabModuleShell` | No longer used by any active rendering path -- all modules route through ViewportShell | TECH DEBT: Remove after confirming no external imports |
 | `LabPanelLayout` | Competing layout system -- ViewportShell + ViewportSidebar is the replacement | TECH DEBT: Remove after confirming no external imports |
 | Calculator template | Uses ViewportShell header but keeps own internal 3-column layout | DECISION: Full migration deferred -- complex per-toolType input panels |
-| DevControlsModule panels | Uses ViewportShell header but keeps own 55+ file internal layout | DECISION: Full sidebar migration deferred -- high risk |
+| DevControlsModule panels | Uses ViewportShell header but keeps own 55+ file internal layout; now has `SharedToolbarBridge` + `CameraSnapBridge` for integration | DECISION: Full sidebar migration deferred -- high risk |
 | Human scale toggle | Button in ViewportToolbar is a no-op placeholder | TODO: Wire to HumanSilhouette visibility |
 | Bottom sheet gesture | Simple expand/collapse toggle implemented | NEEDS PRODUCT INPUT: Native iOS-style drag or keep toggle? |
 | `crossSectionEnabled` | Previously not wired to template renderer | RESOLVED: Wired to ViewportToolbar toggle (2026-04-09) |
 | `explodedViewEnabled` | Previously not wired to template renderer | RESOLVED: Wired to ViewportToolbar toggle (2026-04-09) |
+| `stairway-constants-international.ts` | IBC 2024, ADA, IRC stairway constants | **UNVERIFIED**: Needs expert review before production use |
+| `wall-constants-performance.ts` | Fire rating, STC, cost/sqm, R-value data | **UNVERIFIED**: Needs expert review before production use |
+| `wall-constants-international.ts` | IBC, ASTM, EN wall standards | **UNVERIFIED**: Needs expert review before production use |
+| `useCollaborationPresence` | Hook scaffolded but no server-side backing | SCAFFOLDED: Needs WebSocket or real-time backend |
+| `useDragDrop` | Hook scaffolded but no upload endpoint | SCAFFOLDED: Needs API route for file uploads |
+| `DevControlsModule/dashboard/ViewportToolbar.tsx` | Deleted — merged into shared `SceneToolbar` | RESOLVED: Removed (2026-04-10) |
 
 ### Coverage Gaps (Content, not Code)
 
@@ -1953,6 +2470,26 @@ However, the following 3D Lab components should be treated as **migration-sensit
 
 | Date | Commit | Description |
 |------|--------|-------------|
+| 2026-04-10 | `cef69d3` | fix(3d-lab): add grid + axis gizmo to DevControls, add pin/unpin to LayersPanel |
+| 2026-04-10 | `5d5499f` | feat(3d-lab): implement unified viewport UX — toolbars, camera nav, header, overlays |
+| 2026-04-10 | `3a674ef` | feat(wall-configurator): implement v2 multi-file architecture with structural fidelity |
+| 2026-04-09 | `3abdcb3` | feat(stairway-configurator): Phase 4 — wire 3D rendering + unit tests |
+| 2026-04-09 | `9c4f8af` | feat(stairway-configurator): Phase 3 — L/U-shape geometry, egress calculator, children's safety, materials |
+| 2026-04-09 | `9366fb2` | fix(3d-lab): move useTemplateContent before early returns in ModuleViewer |
+| 2026-04-09 | `e671c28` | feat(stairway-configurator): Phase 2 features — nosing detail, comparison mode, handrail graspability |
+| 2026-04-09 | `05ac37d` | feat(stairway-configurator): Phase 2 foundation — GeometryType unification, extruded-profile, camera hook, click-to-inspect |
+| 2026-04-09 | `8236ff1` | fix(stairway-configurator): correct IRC handrail constant in international deltas |
+| 2026-04-09 | `aaed8ad` | feat(stairway-configurator): add UI component shells + comfort gauge overlay |
+| 2026-04-09 | `629c8ea` | feat(stairway-configurator): add Blondel comfort, historical annotations, uniformity sim |
+| 2026-04-09 | `6b41d77` | feat(stairway-configurator): refactor geometry builder + add violation presets |
+| 2026-04-09 | `9239d4e` | feat(stairway-configurator): add types, constants, and computation engine |
+| 2026-04-09 | `69166909` | fix(3d-lab): resolve architect review — hooks ordering + full shell coverage |
+| 2026-04-09 | `56ab427` | feat(3d-lab): migrate DevControlsModule to ViewportShell header (Phase 5) |
+| 2026-04-09 | `087a096` | feat(3d-lab): migrate WallConfigurator to ViewportShell (Phase 4) |
+| 2026-04-09 | `b815d39` | feat(3d-lab): migrate FloorPlan and AnimatedSequence to ViewportShell (Phase 3) |
+| 2026-04-09 | `786b6d0` | feat(3d-lab): migrate Exploded and Cutaway templates to ViewportShell (Phase 2B) |
+| 2026-04-09 | `8139ef7` | feat(3d-lab): migrate ParametricScene to ViewportShell (Phase 2) |
+| 2026-04-09 | `0895408` | feat(3d-lab): add Unified Viewport Shell foundation (Phase 1) |
 | 2026-04-08 | `31ac84f` | refactor: global ALE -> LEA terminology migration |
 | 2026-04-08 | `33b420b` | feat: complete Wave 4 -- egress sim + batch verifier |
 | 2026-04-07 | `15b488e` | refactor: migrate Cat 01 + Cat 03 to shared constants |
@@ -1997,8 +2534,36 @@ However, the following 3D Lab components should be treated as **migration-sensit
 
 5. **Terminology Migration:** ALE -> LEA naming standardization across entire codebase (2026-04-08)
 
-6. **Current State:** 209 modules defined across 16 categories, 4 visible on dashboard, 7 template types, 10 Zustand stores, procedural geometry pipeline, config-driven architecture fully operational.
+6. **Unified Viewport Shell (Phase 1-5):** Slot-based layout system replacing per-template containers:
+   - Phase 1: Shell foundation (ViewportShell, ViewportSidebar, ViewportHeader, ViewportToolbar)
+   - Phase 2: ParametricScene migration
+   - Phase 2B: Exploded + Cutaway migration
+   - Phase 3: FloorPlan + AnimatedSequence migration
+   - Phase 4: WallConfigurator migration
+   - Phase 5: DevControlsModule header migration (internal layout kept)
+
+7. **Stairway Configurator (Phases 1-4):** Complete multi-phase build:
+   - Phase 1: Types, constants, computation engine (2026-04-09)
+   - Phase 2: GeometryType unification (`extruded-profile`), nosing, comparison mode, handrail graspability
+   - Phase 3: L/U-shape geometry, egress calculator, children's safety, materials
+   - Phase 4: Wire 3D rendering + unit tests — DASHBOARD ACTIVE
+
+8. **Wall Configurator v2:** Complete multi-file architecture rewrite (2026-04-10):
+   - 19 wall-*.ts support files with per-core-type geometry builders
+   - Instanced geometry for masonry patterns
+   - Performance dashboard (fire/STC/cost/R-value)
+   - 5 view modes (overview, section-cut, exploded, build-sequence, compare)
+
+9. **Viewport UX Expansion (2026-04-10):** 13 new shell components:
+   - SceneToolbar (6-button floating toolbar with keyboard shortcuts)
+   - CameraNavigationBar (17-button grouped nav with 15 presets)
+   - CommandPalette (Ctrl+K search), ViewportContextMenu (right-click)
+   - SceneGround (GridHelper + GizmoHelper), LayersPanel (pin/unpin)
+   - GuidedTour, FirstTimeTooltip, CompassRose, KpiBar
+   - WebGLRecovery, ViewportToast, ViewportSkeleton
+
+10. **Current State:** 209 modules defined across 16 categories, 4 visible on dashboard, 7 template types, 12 Zustand stores, 14 hooks, 26 shell components, procedural geometry pipeline with `extruded-profile` and `instanced` geometry types, config-driven architecture fully operational.
 
 ---
 
-*End of specification. This document was generated from exhaustive codebase traversal. All file paths, type definitions, and counts are verified against source code as of 2026-04-08.*
+*End of specification. This document was generated from exhaustive codebase traversal. All file paths, type definitions, and counts are verified against source code as of 2026-04-10.*
