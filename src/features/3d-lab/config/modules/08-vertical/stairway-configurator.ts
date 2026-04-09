@@ -42,6 +42,9 @@ import {
   RA9514_MIN_TREAD_DEPTH_MM,
   RA9514_MIN_WIDTH_MM,
   RA9514_MAX_VERTICAL_RISE_MM,
+  BLONDEL_COMFORT_MIN_MM,
+  BLONDEL_COMFORT_MAX_MM,
+  UNIFORMITY_TOLERANCE_MM,
   TREAD_THICKNESS_M,
   RISER_THICKNESS_M,
   STRINGER_THICKNESS_M,
@@ -191,6 +194,33 @@ const parameters: ParameterDef[] = [
     default: 12,
     group: 'Stair Geometry',
   },
+
+  // ── Learning Overlays ─────────────────────────────────────────────────────
+  {
+    key: 'showHistory',
+    label: 'Show Historical Context',
+    type: 'toggle',
+    default: false,
+    group: 'Learning Overlays',
+  },
+  {
+    key: 'toleranceMode',
+    label: 'Construction Tolerance Mode',
+    type: 'toggle',
+    default: false,
+    group: 'Learning Overlays',
+  },
+  {
+    key: 'toleranceRange',
+    label: 'Tolerance Range',
+    type: 'slider',
+    min: 0,
+    max: 20,
+    step: 1,
+    default: 5,
+    unit: 'mm',
+    group: 'Learning Overlays',
+  },
 ]
 
 // ─── Geometry Builder (Adapter Pattern) ────────────────────────────────────
@@ -234,14 +264,27 @@ const buildGeometryFromState = (state: ComputedStairState): GeometryInstruction[
   })
 
   // ── 2. Treads & risers ────────────────────────────────────────────────────
+  // When tolerance mode is active, each riser has a per-step height deviation.
+  let cumulativeY = 0
   for (let i = 0; i < n; i++) {
-    const y = (i + 1) * rH
+    const riserDeviation = state.toleranceMode
+      ? state.perStepRiserVariations[i] / 1000 // mm to meters
+      : 0
+    const thisRiserHeight = rH + riserDeviation
+    cumulativeY += thisRiserHeight
     const z = -(i * tD)
+
+    // Determine riser color: if this step violates uniformity, use PD 1096 color
+    const isUniformityViolation = state.toleranceMode &&
+      state.uniformityViolationIndices.includes(i)
+    const thisRiserColor = isUniformityViolation
+      ? LAW_COLORS.PD_1096
+      : rColor
 
     g.push({
       id: `tread-${i}`,
       type: 'box',
-      position: [0, y - TREAD_THICKNESS_M / 2, z],
+      position: [0, cumulativeY - TREAD_THICKNESS_M / 2, z],
       args: [sW, TREAD_THICKNESS_M, tD],
       color: tColor,
     })
@@ -249,9 +292,9 @@ const buildGeometryFromState = (state: ComputedStairState): GeometryInstruction[
     g.push({
       id: `riser-${i}`,
       type: 'box',
-      position: [0, y - rH / 2, z + tD / 2],
-      args: [sW, rH, RISER_THICKNESS_M],
-      color: rColor,
+      position: [0, cumulativeY - thisRiserHeight / 2, z + tD / 2],
+      args: [sW, thisRiserHeight, RISER_THICKNESS_M],
+      color: thisRiserColor,
     })
   }
 
@@ -627,6 +670,50 @@ const violations: ViolationRule[] = [
       0,
     ],
   },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // Blondel Comfort Formula (Info — does NOT override element colors)
+  // ═══════════════════════════════════════════════════════════════════════════
+
+  {
+    id: 'blondel-comfort',
+    field: 'riserHeight',
+    check: (p) => {
+      const twoRPlusT = 2 * num(p.riserHeight) + num(p.treadDepth)
+      return twoRPlusT < BLONDEL_COMFORT_MIN_MM || twoRPlusT > BLONDEL_COMFORT_MAX_MM
+    },
+    message: `Blondel comfort formula: 2R+T should be ${BLONDEL_COMFORT_MIN_MM}–${BLONDEL_COMFORT_MAX_MM} mm`,
+    codeCitation: "Blondel, Cours d'Architecture (1675) — 2R+T ergonomic formula",
+    severity: 'info',
+    position: (p) => {
+      const n = num(p.numRisers)
+      const rH = mm(p.riserHeight)
+      const tD = mm(p.treadDepth)
+      return [0.8, n * rH + 0.3, -(n * tD / 2)]
+    },
+  },
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // Dimensional Uniformity (Warning — tolerance mode only)
+  // ═══════════════════════════════════════════════════════════════════════════
+
+  {
+    id: 'uniformity-tolerance',
+    field: 'toleranceRange',
+    check: (p) => {
+      if (!bool(p.toleranceMode)) return false
+      const state = computeStairState(p)
+      return state.uniformityViolationIndices.length > 0
+    },
+    message: `Per-step riser deviation exceeds ${UNIFORMITY_TOLERANCE_MM} mm tolerance`,
+    codeCitation: 'IBC 2024 §1011.5.4 — Dimensional uniformity',
+    severity: 'warning',
+    position: (p) => {
+      const state = computeStairState(p)
+      const worstIdx = state.uniformityViolationIndices[0] ?? Math.floor(num(p.numRisers) / 2)
+      return [0.5, (worstIdx + 1) * mm(p.riserHeight), -(worstIdx * mm(p.treadDepth))]
+    },
+  },
 ]
 
 // ─── Annotations ────────────────────────────────────────────────────────────
@@ -721,6 +808,89 @@ const annotations: AnnotationDef[] = [
       mm(p.treadDepth) / 2 + 0.15,
     ],
     visibleWhen: (p) => isAccessible(p),
+  },
+
+  // ── Blondel Comfort Annotation ────────────────────────────────────────────
+  {
+    id: 'blondel-formula',
+    label: '2R+T Comfort',
+    description:
+      'Blondel ergonomic formula: 2R+T = 600–650 mm is the comfortable range. Current value computed from riser height and tread depth.',
+    codeCitation: "Blondel, Cours d'Architecture (1675)",
+    position: (p) => {
+      const n = num(p.numRisers)
+      const rH = mm(p.riserHeight)
+      const tD = mm(p.treadDepth)
+      return [0.8, n * rH + 0.3, -(n * tD / 2)]
+    },
+  },
+
+  // ── Historical Context Annotations (visible when showHistory is ON) ───────
+  {
+    id: 'history-blondel',
+    label: 'Blondel (1672)',
+    description:
+      "François Blondel, Royal Academy of Architecture, Paris. Discovered that 2R+T ≈ 630 mm matches human stride length. When R=0 (flat), stride ≈ 630 mm. When T=0 (ladder), rung spacing ≈ 315 mm (half stride).",
+    codeCitation: 'Blondel, Cours d\'Architecture, 1675–1683',
+    position: (p) => {
+      const rH = mm(p.riserHeight)
+      return [1.2, rH * 3, 0.2]
+    },
+    visibleWhen: (p) => bool(p.showHistory),
+  },
+  {
+    id: 'history-templer',
+    label: 'Templer (1976)',
+    description:
+      "John Templer's research on stair safety: 279 mm tread depth minimizes missteps. Basis for IBC's 11-inch (279 mm) minimum tread requirement.",
+    codeCitation: 'Templer, J. "Stair Shape and Human Movement", 1976',
+    position: (p) => {
+      const rH = mm(p.riserHeight)
+      const tD = mm(p.treadDepth)
+      return [0, rH + 0.06, -tD]
+    },
+    visibleWhen: (p) => bool(p.showHistory),
+  },
+  {
+    id: 'history-cocoanut-grove',
+    label: 'Cocoanut Grove (1942)',
+    description:
+      'The Cocoanut Grove nightclub fire in Boston killed 492 people. Narrow, locked, and inward-opening exit doors caused fatal bottlenecks. This disaster drove modern exit stair width and vertical rise limits in fire codes worldwide, including RA 9514.',
+    codeCitation: 'Cocoanut Grove fire, Boston, November 28, 1942',
+    position: (p) => {
+      const n = num(p.numRisers)
+      const rH = mm(p.riserHeight)
+      const tD = mm(p.treadDepth)
+      return [-0.6, n * rH * 0.5, -(n * tD * 0.5)]
+    },
+    visibleWhen: (p) => bool(p.showHistory),
+  },
+  {
+    id: 'history-uniformity',
+    label: 'Uniformity Litigation (1970s–80s)',
+    description:
+      'Slip-and-fall litigation in the 1970s–80s established that inconsistent riser heights within a stair flight are a primary cause of missteps. This drove the 9.5 mm (⅜") maximum deviation tolerance in IBC §1011.5.4.',
+    codeCitation: 'IBC Commentary, slip-and-fall case law precedent',
+    position: (p) => {
+      const rH = mm(p.riserHeight)
+      return [0.6, rH * 5, -0.3]
+    },
+    visibleWhen: (p) => bool(p.showHistory),
+  },
+  {
+    id: 'history-handrail-height',
+    label: 'Handrail Height Origin',
+    description:
+      'Handrail height range (800–900 mm) derives from the 5th–95th percentile wrist height of standing adults. The dual-height requirement in BP 344 (700 mm + 900 mm) accommodates wheelchair users and children.',
+    codeCitation: 'Ergonomic anthropometric data, human factors research',
+    position: (p) => {
+      const n = num(p.numRisers)
+      const mid = Math.floor(n / 2)
+      const rH = mm(p.riserHeight)
+      const tD = mm(p.treadDepth)
+      return [0.8, mid * rH + mm(p.handrailHeight), -(mid * tD)]
+    },
+    visibleWhen: (p) => bool(p.showHistory),
   },
 ]
 
