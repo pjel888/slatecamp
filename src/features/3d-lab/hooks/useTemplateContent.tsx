@@ -12,7 +12,9 @@ import { CutDepthSliderControl } from '@/features/3d-lab/components/templates/Cu
 import { FloorPlanLegendSidebar } from '@/features/3d-lab/components/templates/FloorPlanLegendSidebar'
 import { AnimatedStepsSidebar } from '@/features/3d-lab/components/templates/AnimatedStepsSidebar'
 import { ConfigPanel } from '@/features/3d-lab/components/templates/WallConfigurator/ConfigPanel'
-import { BOMPanel } from '@/features/3d-lab/components/templates/WallConfigurator/BOMPanel'
+import { BOMPanel as WallConfiguratorV1BOMPanel } from '@/features/3d-lab/components/templates/WallConfigurator/BOMPanel'
+import { WallConfiguratorLeftPanel } from '@/features/3d-lab/components/templates/WallConfiguratorLeftPanel'
+import { WallConfiguratorRightPanel } from '@/features/3d-lab/components/templates/WallConfiguratorRightPanel'
 import { createModuleStore } from '@/features/3d-lab/stores/createModuleStore'
 import { getModuleById } from '@/features/3d-lab/config/registry'
 import {
@@ -144,6 +146,37 @@ export const useTemplateContent = (
     switch (templateType as TemplateType) {
       case 'parametric': {
         const cfg = config as ParametricSceneConfig
+
+        // ── Wall Configurator v2 special path ──
+        // The unified wall configurator needs custom sidebar panels
+        // (PerformanceDashboard, BOMPanel, CoreTypeCardStrip, ViewModeButtonStrip)
+        if (cfg.id === 'unified-wall-configurator') {
+          return {
+            shellConfig: {
+              ...shellConfig,
+              rightSidebar: { width: 320, title: 'Performance', mobileTabLabel: 'Performance' },
+              leftSidebar: { width: 340, title: cfg.title, mobileTabLabel: 'Controls' },
+            },
+            capabilities,
+            content: {
+              canvasContent: canvasWrapper(
+                <ParametricSceneRenderer
+                  config={cfg}
+                  useStore={useStore}
+                  hideOverlays
+                />,
+              ),
+              leftSidebarContent: (
+                <WallConfiguratorLeftPanel config={cfg} useStore={useStore} />
+              ),
+              rightSidebarContent: (
+                <WallConfiguratorRightPanel config={cfg} useStore={useStore} />
+              ),
+            },
+          }
+        }
+
+        // ── Standard parametric path ──
         const hasCompliancePanel = (() => {
           if (!cfg.violations || cfg.violations.length === 0) return false
           const prefixes = new Set(cfg.violations.map((v) => v.id.split('-')[0]))
@@ -155,9 +188,9 @@ export const useTemplateContent = (
           shellConfig: {
             ...shellConfig,
             rightSidebar: hasCompliancePanel
-              ? { width: 280, title: 'Compliance', mobileTabLabel: 'Compliance' }
+              ? { width: 300, title: 'Compliance', mobileTabLabel: 'Compliance' }
               : shellConfig.rightSidebar,
-            leftSidebar: { width: 240, title: cfg.title, mobileTabLabel: 'Controls' },
+            leftSidebar: { width: 320, title: cfg.title, mobileTabLabel: 'Controls' },
           },
           capabilities,
           content: {
@@ -234,7 +267,7 @@ export const useTemplateContent = (
         return {
           shellConfig: {
             ...shellConfig,
-            leftSidebar: { width: 240, title: cfg.title, mobileTabLabel: 'Controls' },
+            leftSidebar: { width: 320, title: cfg.title, mobileTabLabel: 'Controls' },
           },
           capabilities,
           content: {
@@ -284,7 +317,7 @@ export const useTemplateContent = (
               <WallConfiguratorRenderer config={config as ParametricSceneConfig} />,
             ),
             leftSidebarContent: <ConfigPanel />,
-            rightSidebarContent: <BOMPanel />,
+            rightSidebarContent: <WallConfiguratorV1BOMPanel />,
           },
         }
       }

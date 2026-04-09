@@ -151,7 +151,7 @@ export const cat10Modules: ModuleRegistryEntry[] = [
   {
     id: unifiedWallConfiguratorConfig.id,
     title: unifiedWallConfiguratorConfig.title,
-    templateType: 'wall-configurator' as const,
+    templateType: 'parametric' as const,
     subject: unifiedWallConfiguratorConfig.subject,
     categoryId: 'MATERIALS',
     launchPhase: 1,

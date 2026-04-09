@@ -298,17 +298,22 @@ export const GenericControlPanel = memo(function GenericControlPanel({
   const setParams = useStore((s) => s.setParams)
   const reset = useStore((s) => s.reset)
 
-  // Group parameters
+  // Filter out parameters hidden by visibleWhen predicate, then group
+  const visibleParams = useMemo(
+    () => parameters.filter((p) => !p.visibleWhen || p.visibleWhen(params)),
+    [parameters, params]
+  )
+
   const grouped = useMemo(() => {
     const groups = new Map<string, ParameterDef[]>()
-    for (const p of parameters) {
+    for (const p of visibleParams) {
       const group = p.group ?? '_ungrouped'
       const existing = groups.get(group)
       if (existing) existing.push(p)
       else groups.set(group, [p])
     }
     return groups
-  }, [parameters])
+  }, [visibleParams])
 
   // Active violations
   const activeViolations = useMemo(

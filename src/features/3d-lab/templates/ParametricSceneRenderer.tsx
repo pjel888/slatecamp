@@ -6,10 +6,14 @@ import * as THREE from 'three'
 import type { Group } from 'three'
 import { useDisposeOnUnmount } from '@/components/r3f/useDisposeOnUnmount'
 import { useModuleInvalidate } from '@/features/3d-lab/hooks/useModuleInvalidate'
+// useCameraSnap is called in CanvasWrapper (shared across all templates)
 import { InstructionMesh } from '@/features/3d-lab/components/templates/GeometryMesh'
+import { InstancedMesh } from '@/features/3d-lab/components/templates/InstancedMesh'
 import { HumanSilhouette } from '@/features/3d-lab/components/templates/HumanSilhouette'
 import { useOverlayStore } from '@/features/3d-lab/stores/useOverlayStore'
+import { useViewportShellStore } from '@/features/3d-lab/stores/useViewportShellStore'
 import type { ParametricSceneConfig } from '@/features/3d-lab/types/templates'
+// SceneGround is now rendered in CanvasWrapper (shared across all templates)
 import type { ModuleStoreState } from '@/features/3d-lab/stores/createModuleStore'
 import type { StoreApi, UseBoundStore } from 'zustand'
 
@@ -33,6 +37,10 @@ export function ParametricSceneRenderer({
 
   // Register invalidate bridge
   useModuleInvalidate(useStore)
+
+  // Scene toolbar state
+  const xrayMode = useViewportShellStore((s) => s.xrayMode)
+  const dimensionsVisible = useViewportShellStore((s) => s.dimensionsVisible)
 
   // Subscribe to params
   const params = useStore((s) => s.params)
@@ -82,7 +90,7 @@ export function ParametricSceneRenderer({
       })
     })
 
-    // Upsert annotation overlays
+    // Upsert annotation overlays — respect dimensionsVisible toggle
     visibleAnnotations.forEach((a) => {
       const pos = a.position(params)
       upsertItem({
@@ -93,7 +101,7 @@ export function ParametricSceneRenderer({
           text: a.label,
           codeRef: a.codeCitation,
         },
-        visible: true,
+        visible: dimensionsVisible,
       })
     })
 
@@ -101,19 +109,33 @@ export function ParametricSceneRenderer({
       activeViolations.forEach((v) => removeItem(`parametric-violation-${v.id}`))
       visibleAnnotations.forEach((a) => removeItem(`parametric-annotation-${a.id}`))
     }
-  }, [activeViolations, visibleAnnotations, params, hideOverlays, upsertItem, removeItem])
+  }, [activeViolations, visibleAnnotations, params, hideOverlays, dimensionsVisible, upsertItem, removeItem])
 
   return (
-    <group ref={groupRef} scale={config.scale ?? 1}>
-      {/* Human scale reference — 1.7m silhouette (research: scale calibration) */}
-      {config.showHumanScale && (
-        <HumanSilhouette position={[-1.2, 0, 0]} opacity={0.4} />
-      )}
+    <>
+      <group ref={groupRef} scale={config.scale ?? 1}>
+        {/* Human scale reference — 1.7m silhouette (research: scale calibration) */}
+        {config.showHumanScale && (
+          <HumanSilhouette position={[-1.2, 0, 0]} opacity={0.4} />
+        )}
 
-      {/* Geometry meshes */}
-      {geometryInstructions.map((inst) => (
-        <InstructionMesh key={inst.id} inst={inst} />
-      ))}
-    </group>
+        {/* Geometry meshes — xray mode caps opacity at 0.3 */}
+        {geometryInstructions.map((inst) => {
+          const effectiveInst = xrayMode
+            ? {
+                ...inst,
+                opacity: Math.min(inst.opacity ?? 1, 0.3),
+                transparent: true,
+              }
+            : inst
+
+          return inst.type === 'instanced' ? (
+            <InstancedMesh key={inst.id} inst={effectiveInst} />
+          ) : (
+            <InstructionMesh key={inst.id} inst={effectiveInst} />
+          )
+        })}
+      </group>
+    </>
   )
 }
