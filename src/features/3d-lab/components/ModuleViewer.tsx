@@ -8,10 +8,12 @@ import {
   ModuleContextCard,
   LabViewport,
   LabModuleShell,
-  LabViewportFrame
+  LabViewportFrame,
+  ViewportShell,
 } from '@/features/3d-lab/components'
 import { useLabStore } from '@/features/3d-lab/stores/useLabStore'
 import { useLabTelemetry } from '@/hooks/useLabTelemetry'
+import { useTemplateContent } from '@/features/3d-lab/hooks/useTemplateContent'
 import type { ModuleConfig } from '@/types/3d-lab'
 import { getModuleById, ALL_MODULES } from '@/features/3d-lab/config/registry'
 import { ASSET_TAXONOMY } from '@/features/3d-lab/config/taxonomy'
@@ -199,6 +201,46 @@ export const ModuleViewer = ({ modelId, basePath }: ModuleViewerProps) => {
 
   const isBespoke = modelId === 'site-development-controls'
 
+  // ── Unified Viewport Shell path ───────────────────────────────────────────
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const templateContent = useTemplateContent(modelId, config)
+
+  // If useTemplateContent returns content, render via ViewportShell.
+  // Otherwise fall back to the legacy LabModuleShell path.
+  if (templateContent && !isBespoke) {
+    return (
+      <ViewportShell
+        title={title}
+        codeReference={codeRef}
+        visitedCount={0}
+        totalCount={totalALEQuestions}
+        onBack={handleBack}
+        shellConfig={templateContent.shellConfig}
+        capabilities={templateContent.capabilities}
+        content={{
+          ...templateContent.content,
+          canvasContent: (
+            <LabViewportFrame>
+              {templateContent.content.canvasContent}
+            </LabViewportFrame>
+          ),
+        }}
+      >
+        {showContextCard && !showOnboarding && (
+          <div className="z-30 pointer-events-auto">
+            <ModuleContextCard config={moduleMetadata} onDismiss={handleContextDismiss} />
+          </div>
+        )}
+        {showOnboarding && (
+          <div className="z-50 pointer-events-auto">
+            <OnboardingFlow onComplete={handleOnboardingComplete} />
+          </div>
+        )}
+      </ViewportShell>
+    )
+  }
+
+  // ── Legacy path (bespoke + non-migrated templates) ────────────────────────
   return (
     <LabModuleShell
       topBar={
