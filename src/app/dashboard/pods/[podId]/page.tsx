@@ -1,6 +1,6 @@
 import { redirect, notFound } from 'next/navigation'
 import { getUser } from '@/lib/supabase/server'
-import { ROUTES } from '@/lib/constants/routes'
+import { ROUTES } from '@/lib/routes'
 import { getPodData } from '@/lib/actions/pods'
 import { PodView } from '../_components/PodView'
 

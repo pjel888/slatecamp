@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { useMemo } from 'react'
 import { Lock } from '@phosphor-icons/react'
-import { ROUTES } from '@/lib/constants/routes'
+import { ROUTES } from '@/lib/routes'
 import { ReadinessScoreRing } from '@/components/score/ReadinessScoreRing'
 import { SectionHeader } from '@/components/shared/section-header'
 import { HeroConfigurator } from './HeroConfigurator'
@@ -471,7 +471,7 @@ const ReviewHub = ({
                         <span>Pro Subscription Required</span>
                       </div>
                       <Link
-                        href={ROUTES.PRICING}
+                        href={ROUTES.pricing}
                         className="text-xs font-bold text-primary hover:underline"
                       >
                         Upgrade
@@ -507,7 +507,7 @@ const ReviewHub = ({
                         <span>Pro Subscription Required</span>
                       </div>
                       <Link
-                        href={ROUTES.PRICING}
+                        href={ROUTES.pricing}
                         className="text-xs font-bold text-primary hover:underline"
                       >
                         Upgrade
@@ -515,7 +515,7 @@ const ReviewHub = ({
                     </div>
                   ) : (
                     <Link
-                      href="/quiz/extended/setup"
+                      href={ROUTES.quiz.setup('extended')}
                       className="inline-flex w-full items-center justify-center rounded-sm border border-border bg-card px-4 py-2.5 text-sm font-medium text-foreground transition-colors duration-150 hover:bg-background"
                     >
                       Start Endurance Training

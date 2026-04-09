@@ -1,6 +1,6 @@
 import { createClient, getUser } from '@/lib/supabase/server'
 import { redirect, notFound } from 'next/navigation'
-import { ROUTES } from '@/lib/constants/routes'
+import { ROUTES } from '@/lib/routes'
 
 interface DebriefPageProps {
   params: Promise<{ sessionId: string }>

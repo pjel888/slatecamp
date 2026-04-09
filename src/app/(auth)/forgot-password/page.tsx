@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Warning } from "@phosphor-icons/react";
 import { SCIcon } from "@/components/graphics/icons/Icon";
 import { createClient } from "@/lib/supabase/client";
-import { ROUTES } from "@/lib/constants/routes";
+import { ROUTES } from "@/lib/routes";
 import { siteConfig } from "@/lib/constants/site";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: 'Internal documentation, API reference, architecture guides, and dev tools for SlateCamp.',
 }
 import { getUserRole } from '@/lib/admin/roles'
-import { ROUTES } from '@/lib/constants/routes'
+import { ROUTES } from '@/lib/routes'
 import { DevPortalShell } from './_components/DevPortalShell'
 
 export default async function DeveloperPortalLayout({

@@ -1,6 +1,6 @@
 import { redirect } from 'next/navigation'
 import { getUser } from '@/lib/supabase/server'
-import { ROUTES } from '@/lib/constants/routes'
+import { ROUTES } from '@/lib/routes'
 import { CompExamFlow } from './_components/CompExamFlow'
 
 export const metadata = {

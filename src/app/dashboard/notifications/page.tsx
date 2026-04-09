@@ -2,7 +2,7 @@ import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import { fetchNotifications } from '@/lib/queries/notifications'
 import { NotificationList } from '@/components/notifications/NotificationList'
-import { ROUTES } from '@/lib/constants/routes'
+import { ROUTES } from '@/lib/routes'
 
 export const metadata = { title: 'Notifications — SlateCamp' }
 

@@ -1,5 +1,5 @@
 import { redirect } from 'next/navigation'
-import { ROUTES } from '@/lib/constants/routes'
+import { ROUTES } from '@/lib/routes'
 import { getAdminAwareProfile } from '@/lib/admin/get-admin-profile'
 import { getProfileData } from '@/lib/actions/profile'
 import { getUserEmailPreferences } from '@/lib/actions/email-preferences'

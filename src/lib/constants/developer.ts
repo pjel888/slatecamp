@@ -5,7 +5,7 @@ import {
   TestTube,
   Scroll,
 } from '@phosphor-icons/react/dist/ssr'
-import { ROUTES } from '@/lib/constants/routes'
+import { ROUTES } from '@/lib/routes'
 
 export const DEV_NAV_ITEMS = [
   { href: ROUTES.DEVELOPER_CONSOLE, label: 'Console', icon: Terminal },

@@ -1,7 +1,7 @@
 import { Monitor, Database, FileText, Flask } from '@phosphor-icons/react/dist/ssr'
 import { ActionCard } from '@/components/shared/action-card'
 import { SectionHeader } from '@/components/shared/section-header'
-import { ROUTES } from '@/lib/constants/routes'
+import { ROUTES } from '@/lib/routes'
 
 export const metadata = {
   title: 'Dev Tools — SlateCamp Developer Portal',

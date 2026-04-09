@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import type { CodeUpdate } from '@/lib/actions/code-updates'
-import { ROUTES } from '@/lib/constants/routes'
+import { ROUTES } from '@/lib/routes'
 
 interface CodeUpdateCardProps {
   update: CodeUpdate

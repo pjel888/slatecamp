@@ -1,6 +1,6 @@
 import { redirect } from 'next/navigation'
 import { createClient, getUser } from '@/lib/supabase/server'
-import { ROUTES } from '@/lib/constants/routes'
+import { ROUTES } from '@/lib/routes'
 import { getUserPods } from '@/lib/actions/pods'
 import { PodHub } from './_components/PodHub'
 

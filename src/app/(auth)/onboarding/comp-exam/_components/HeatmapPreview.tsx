@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { ROUTES } from '@/lib/constants/routes'
+import { ROUTES } from '@/lib/routes'
 import type { HeatmapSeed } from '@/lib/actions/comp-exam-onboarding'
 
 // ── Tier config ───────────────────────────────────────────────────────────────

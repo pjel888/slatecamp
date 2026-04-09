@@ -34,7 +34,7 @@ export const ROUTES = {
   // ── Auth ──────────────────────────────────────
   auth: {
     login: '/login',
-    signup: '/register', // Existing code uses REGISTER
+    signup: '/register',
     register: '/register',
     callback: '/auth/callback',
     forgotPassword: '/forgot-password',
@@ -48,8 +48,8 @@ export const ROUTES = {
     analyticsAdvanced: '/dashboard/analytics/advanced',
     areaC: '/dashboard/area-c',
     assessment: '/dashboard/assessment',
-    camptrails: '/dashboard/camptrails',
     campfire: '/dashboard/campfire',
+    camptrails: '/dashboard/camptrails',
     codeUpdates: '/dashboard/code-updates',
     cramCard: '/dashboard/cram-card',
     daeMode: '/dashboard/dae-mode',
@@ -82,7 +82,7 @@ export const ROUTES = {
     session: (mode: string, sessionId: string) => `/quiz/${mode}/session/${sessionId}` as const,
     results: (mode: string, sessionId: string) => `/quiz/${mode}/session/${sessionId}/results` as const,
     review: (mode: string, sessionId: string) => `/quiz/${mode}/session/${sessionId}/review` as const,
-    // Legacy mapping (kept for backward compatibility during migration)
+    // Legacy mapping
     legacy: {
       setup: (mode: string) => `/quiz/${mode}/setup` as const,
       session: (sessionId: string, mode: string = 'camp') => `/quiz/${mode}/session/${sessionId}` as const,
@@ -170,7 +170,6 @@ export const ROUTES = {
     auth: {
       callback: '/auth/callback',
     },
-    // ... extend as discovered
   },
 
   // ── External ─────────────────────────────────
@@ -178,10 +177,62 @@ export const ROUTES = {
     supabase: 'https://app.supabase.com',
     docs: 'https://slatecamp.com/docs',
   },
+
+  // ── Legacy Aliases (DO NOT USE FOR NEW CODE) ──
+  HOME: '/',
+  PRICING: '/pricing',
+  ABOUT: '/about',
+  CONTACT: '/contact',
+  LOGIN: '/login',
+  REGISTER: '/register',
+  FORGOT_PASSWORD: '/forgot-password',
+  DASHBOARD: '/dashboard',
+  SETTINGS: '/dashboard/settings',
+  SETTINGS_BILLING: '/dashboard/settings/billing',
+  SETTINGS_DEVELOPER: '/dashboard/settings/developer',
+  QUIZ: '/dashboard/drills',
+  SESSIONS: '/dashboard/drills/sessions',
+  REVIEW: '/dashboard/drills',
+  TESTING: '/dashboard/drills',
+  DRILLS: '/dashboard/drills',
+  DRILLS_SESSIONS: '/dashboard/drills/sessions',
+  TESTING_SETUP: (mode: string) => `/quiz/${mode}/setup` as const,
+  TESTING_SESSION: (sessionId: string, mode: string = 'camp') => `/quiz/${mode}/session/${sessionId}` as const,
+  TESTING_DEBRIEF: (sessionId: string, mode: string = 'camp') => `/quiz/${mode}/session/${sessionId}/results` as const,
+  TESTING_SIM_BRIEFING: "/quiz/fullexam/setup" as const,
+  TESTING_SIM_RESULTS: (sessionId: string) => `/quiz/fullexam/session/${sessionId}/results` as const,
+  QUIZ_V2_SETUP: (mode: string) => `/quiz/${mode}/setup` as const,
+  QUIZ_V2_SESSION: (mode: string, sessionId: string) => `/quiz/${mode}/session/${sessionId}` as const,
+  QUIZ_V2_RESULTS: (mode: string, sessionId: string) => `/quiz/${mode}/session/${sessionId}/results` as const,
+  QUIZ_V2_REVIEW: (mode: string, sessionId: string) => `/quiz/${mode}/session/${sessionId}/review` as const,
+  DAE_MODE: "/dashboard/dae-mode",
+  ANALYTICS: "/dashboard/analytics",
+  CAMPTRAILS: "/dashboard/camptrails",
+  WIKI: "/dashboard/wiki",
+  WIKI_PAGE: (slug: string) => `/dashboard/wiki/${slug}` as const,
+  NOTES: "/dashboard/notes",
+  LIBRARY: "/dashboard/library",
+  THREE_D_LAB: "/dashboard/3d-lab",
+  THREE_D_LAB_MODULE: (moduleId: string) => `/dashboard/3d-lab/${moduleId}` as const,
+  TOOLS: "/tools",
+  TOOLS_FLOOR_TILES: "/tools/floor-tiles-calculator",
+  TOOLS_WALL_PAINT: "/tools/wall-paint-calculator",
+  TOOLS_LOT_PLOTTER: "/tools/lot-plotter",
+  DEVELOPER: "/developer",
+  DEVELOPER_CONSOLE: "/developer/tools/console",
+  DEVELOPER_TEST_DATA: "/developer/tools/test-data",
+  DEVELOPER_DOCS: "/developer/architecture",
+  DEVELOPER_DB: "/developer/tools/db",
+  DEVELOPER_LOGS: "/developer/tools/logs",
+  DEVELOPER_API_REFERENCE: "/developer/api-reference",
+  DEVELOPER_TOOLS: "/developer/tools",
+  CODE_UPDATES: "/dashboard/code-updates",
+  PODS: "/dashboard/pods",
+  POD: (podId: string) => `/dashboard/pods/${podId}` as const,
 } as const;
 
 // ── Type Utilities ─────────────────────────────
-export type StaticRoute = string; // Simplified for now
+export type StaticRoute = string;
 export type AppRoute = StaticRoute;
 
 // ── Middleware Matchers ────────────────────────
@@ -204,7 +255,7 @@ export const PUBLIC_ROUTES: string[] = [
 
 export const PROTECTED_ROUTE_PREFIX = ROUTES.dashboard.root;
 
-// ── Legacy Compatibility / Sidebar Config ──────
+// ── Sidebar Config ──────
 
 export type NavGroup = 'learn' | 'practice' | 'data'
 
@@ -290,7 +341,7 @@ export const DASHBOARD_ROUTES: RouteConfig[] = [
     group: 'learn',
   },
   {
-    path: ROUTES.dashboard.root, // Fallback for 3d-lab modules if needed
+    path: ROUTES.dashboard.root,
     title: '3D Lab',
     icon: Cube,
     group: 'learn',

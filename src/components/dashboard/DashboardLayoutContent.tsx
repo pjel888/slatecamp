@@ -1,7 +1,7 @@
 import { Suspense } from 'react'
 import { redirect } from 'next/navigation'
 import { createClient, getUser } from '@/lib/supabase/server'
-import { ROUTES } from '@/lib/constants/routes'
+import { ROUTES } from '@/lib/routes'
 import { bootstrapUser } from '@/lib/supabase/bootstrap'
 import { getFeatureFlags, getEffectiveTier } from '@/lib/admin/feature-flags'
 import { SidebarProvider } from '@/components/sidebar/SidebarProvider'

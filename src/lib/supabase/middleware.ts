@@ -1,6 +1,6 @@
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
-import { ROUTES, PUBLIC_PATHS } from "@/lib/constants/routes";
+import { ROUTES, PUBLIC_ROUTES } from "@/lib/routes";
 import { isDemoMode } from "@/lib/demo/config";
 
 export const updateSession = async (request: NextRequest) => {
@@ -8,7 +8,7 @@ export const updateSession = async (request: NextRequest) => {
   const pathname = request.nextUrl.pathname;
 
   // 1. STATIC & API BYPASS
-  if (pathname.includes('.') || pathname.startsWith('/_next') || pathname.startsWith('/api') || pathname.startsWith('/auth/callback')) {
+  if (pathname.includes('.') || pathname.startsWith('/_next') || pathname.startsWith('/api') || pathname.startsWith(ROUTES.auth.callback)) {
     return response;
   }
 
@@ -20,19 +20,19 @@ export const updateSession = async (request: NextRequest) => {
 
   if (isDev && hasForceUser) {
     // If user tries to go to login while forced, send them to dashboard
-    if (pathname === ROUTES.LOGIN || pathname === ROUTES.REGISTER || pathname === '/admin/login') {
-      return NextResponse.redirect(new URL(ROUTES.DASHBOARD, request.url));
+    if (pathname === ROUTES.auth.login || pathname === ROUTES.auth.register || pathname === ROUTES.admin.login) {
+      return NextResponse.redirect(new URL(ROUTES.dashboard.root, request.url));
     }
     return response;
   }
 
   // 2. PUBLIC PATHS
-  const isPublicPath = PUBLIC_PATHS.some((path) => pathname === path) || pathname === '/admin/login';
+  const isPublicPath = PUBLIC_ROUTES.some((path) => pathname === path) || pathname === ROUTES.admin.login;
 
   // 3. DEMO MODE
   if (isDemoMode()) {
-    if (pathname === ROUTES.LOGIN || pathname === ROUTES.REGISTER || pathname === '/admin/login') {
-      return NextResponse.redirect(new URL(ROUTES.DASHBOARD, request.url));
+    if (pathname === ROUTES.auth.login || pathname === ROUTES.auth.register || pathname === ROUTES.admin.login) {
+      return NextResponse.redirect(new URL(ROUTES.dashboard.root, request.url));
     }
     return response;
   }
@@ -64,19 +64,19 @@ export const updateSession = async (request: NextRequest) => {
   // 5. PROTECTION LOGIC
   if (!user) {
     if (isPublicPath) return response;
-    const target = pathname.startsWith('/admin/') ? '/admin/login' : ROUTES.LOGIN;
+    const target = pathname.startsWith('/admin/') ? ROUTES.admin.login : ROUTES.auth.login;
     const url = new URL(target, request.url);
     if (pathname !== target) url.searchParams.set('next', pathname);
     return redirectWithCookies(url.pathname + url.search);
   }
 
   // Logged-in user on public login pages
-  if (pathname === ROUTES.LOGIN || pathname === ROUTES.REGISTER) {
-    return redirectWithCookies(ROUTES.DASHBOARD);
+  if (pathname === ROUTES.auth.login || pathname === ROUTES.auth.register) {
+    return redirectWithCookies(ROUTES.dashboard.root);
   }
 
   // 6. ADMIN ROLE GATING (defense-in-depth — layout.tsx also checks)
-  if (pathname.startsWith('/admin/') && pathname !== '/admin/login') {
+  if (pathname.startsWith('/admin/') && pathname !== ROUTES.admin.login) {
     const { data: roleData } = await supabase
       .from('user_roles')
       .select('role')
@@ -86,7 +86,7 @@ export const updateSession = async (request: NextRequest) => {
       .maybeSingle()
 
     if (!roleData) {
-      return redirectWithCookies(ROUTES.DASHBOARD);
+      return redirectWithCookies(ROUTES.dashboard.root);
     }
   }
 

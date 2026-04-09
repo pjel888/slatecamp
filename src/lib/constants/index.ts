@@ -4,7 +4,7 @@
  */
 export const FALLBACK_SUBJECT_COLOR = "#8896A7";
 
-export { ROUTES, PUBLIC_PATHS } from "./routes";
+export { ROUTES, PUBLIC_ROUTES as PUBLIC_PATHS } from "@/lib/routes";
 export { siteConfig } from "./site";
 export {
   getReadinessLabel,

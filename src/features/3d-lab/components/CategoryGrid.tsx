@@ -9,7 +9,7 @@ import {
 } from '@phosphor-icons/react/dist/ssr'
 import type { Icon as PhosphorIcon } from '@phosphor-icons/react/lib'
 import { cn } from '@/lib/utils'
-import { ROUTES } from '@/lib/constants/routes'
+import { ROUTES } from '@/lib/routes'
 import { ASSET_TAXONOMY, LEA_SUBJECTS, PHASE_LABELS, type CategoryKey } from '../config/taxonomy'
 
 // ─── Icon Map ─────────────────────────────────────────────────────────────────

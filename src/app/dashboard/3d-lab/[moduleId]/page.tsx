@@ -1,6 +1,6 @@
 import { Suspense } from "react";
 import { redirect, notFound } from "next/navigation";
-import { ROUTES } from "@/lib/constants/routes";
+import { ROUTES } from "@/lib/routes";
 import { getAdminAwareProfile } from "@/lib/admin/get-admin-profile";
 import { getFeatureFlags, hasTierAccess } from "@/lib/admin/feature-flags";
 import { ModuleViewer } from "@/features/3d-lab/components";

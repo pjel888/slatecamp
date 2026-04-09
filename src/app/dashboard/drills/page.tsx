@@ -1,7 +1,7 @@
 import { Suspense } from 'react'
 import { createClient, getUser } from '@/lib/supabase/server'
 import { redirect } from 'next/navigation'
-import { ROUTES } from '@/lib/constants/routes'
+import { ROUTES } from '@/lib/routes'
 import { ReviewHub } from '@/components/testing/hub/ReviewHub'
 import { Skeleton } from '@/components/ui/skeleton'
 import {

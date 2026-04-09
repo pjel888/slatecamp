@@ -1,7 +1,7 @@
 import { Suspense } from 'react'
 import { redirect } from 'next/navigation'
 import { getUser } from '@/lib/supabase/server'
-import { ROUTES } from '@/lib/constants/routes'
+import { ROUTES } from '@/lib/routes'
 import { getDAEState } from '@/lib/actions/dae-mode'
 import { DAEModeClient } from './_components/DAEModeClient'
 import { Skeleton } from '@/components/ui/skeleton'

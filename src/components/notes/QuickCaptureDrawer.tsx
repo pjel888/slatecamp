@@ -15,7 +15,7 @@ import {
   getNotesList,
   getNote,
 } from '@/lib/actions/notes-actions'
-import { ROUTES } from '@/lib/constants/routes'
+import { ROUTES } from '@/lib/routes'
 import { useNoteContext } from '@/lib/context/note-context'
 import { ContextBadge } from '@/components/notes/ContextBadge'
 import { TemplatePicker } from '@/components/notes/TemplatePicker'

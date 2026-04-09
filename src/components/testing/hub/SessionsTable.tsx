@@ -17,6 +17,7 @@ import {
   AlertDialogTrigger,
 } from '@/components/ui/alert-dialog'
 import { abandonSession as abandonSessionAction } from '@/lib/actions/quiz-v2'
+import { ROUTES } from '@/lib/routes'
 
 interface SessionConfig {
   mode?: string

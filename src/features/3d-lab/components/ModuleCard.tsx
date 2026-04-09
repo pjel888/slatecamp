@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { ROUTES } from '@/lib/constants/routes'
+import { ROUTES } from '@/lib/routes'
 import { Cube, Stack, MapTrifold, Scissors, Play, Calculator, Wall } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
