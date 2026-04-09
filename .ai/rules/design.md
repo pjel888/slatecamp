@@ -1,7 +1,7 @@
 # Design System Rules
 
-**Source:** `src/app/globals.css`, `CLAUDE.md`, `package.json`  
-**Last Verified:** 2026-04-06  
+**Source:** `src/app/globals.css`, `CLAUDE.md`, `package.json`, `.ai/state/memory.md`  
+**Last Verified:** 2026-04-10  
 **Applies To:** All agents writing UI code
 
 ---
@@ -63,12 +63,13 @@ Never hardcode hex values. Always use the token → Tailwind class mapping:
 
 ### Font Families
 
-| Font | Purpose | Tailwind Class |
-|------|---------|---------------|
-| Atkinson Hyperlegible | Body text | `font-sans` (default) |
-| Plus Jakarta Sans | Display headings | `font-display` |
-| Syne | Accent headings | `font-syne` |
-| DM Mono | Code/data values | `font-mono` |
+| Font | Purpose | Tailwind Class | Variable |
+|------|---------|---------------|----------|
+| Atkinson Hyperlegible | Body text (primary) | `font-sans` | `--font-atkinson` |
+| Boldonse | Headings, bold accents | — | `--font-boldonse` |
+| Syne | Display headings | `font-syne` | `--font-syne` |
+| Sora | Alternative headings | — | `--font-sora` |
+| DM Mono | Code/data values | `font-mono` | `--font-dm-mono` |
 
 ### Font Loading
 

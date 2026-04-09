@@ -1,7 +1,7 @@
 # Pedagogical Engine Rules
 
-**Source:** `src/lib/srs/`, `src/lib/readiness-score.ts`, `src/lib/actions/testing.ts`  
-**Last Verified:** 2026-04-06  
+**Source:** `src/lib/srs/`, `src/lib/readiness-score.ts`, `src/lib/actions/testing.ts`, `.ai/docs/01-product/`  
+**Last Verified:** 2026-04-10  
 **Applies To:** All agents working on quiz, testing, mastery, or analytics features
 
 ---
@@ -99,21 +99,37 @@ if (readiness < 0.7) {
 
 ---
 
-## Testing Modes
+## Drills Modes (9 Modes, 3 Zones)
 
-SlateCamp has **7 testing modes**. All mode-specific logic lives in `src/lib/actions/quiz-v2/`.
+SlateCamp has **9 drill modes** organized into 3 progressive zones. Route: `/dashboard/drills` (migrated from `/dashboard/testing`).
 
-| Mode | Purpose | SRS Update |
-|------|---------|-----------|
-| Practice | Learning without pressure | Standard SM-2 |
-| Timed | Exam simulation | SM-2 + time penalty |
-| Blindspot | Focus on weak areas | Priority queue |
-| Review | Re-study mastered items | No SRS update |
-| Assessment | Benchmarking | Separate tracking |
-| Adaptive | AI-driven question selection | IRT-weighted |
-| Marathon | Endurance training | Light SRS |
+### Zone 1: Foundations (Low-stakes Learning)
 
-**Source:** `src/lib/actions/testing.ts`, `src/lib/actions/quiz-v2/`
+| Mode | UI Key | Purpose | SRS Update |
+|------|--------|---------|-----------|
+| Camp | `camp` | Adaptive practice with personalized question selection | Standard SM-2 |
+| Chill | `chill` | Relaxed, untimed review | Standard SM-2 |
+| Article Review | `article-review` | In-article quiz with lighter mastery (alpha 0.15) | Light SRS |
+
+### Zone 2: Deliberate Practice (Targeted Mastery)
+
+| Mode | UI Key | Purpose | SRS Update |
+|------|--------|---------|-----------|
+| Subject | `subject` | Focus on specific taxonomy subject | Standard SM-2 |
+| Focus Review | `focus-review` | Target 3 weakest nodes + unexplored grey nodes | Priority queue |
+| Custom | `custom` | User-defined: question count, timer, difficulty | Full control |
+
+### Zone 3: Exam Readiness (Pressure + Stamina)
+
+| Mode | UI Key | Purpose | SRS Update |
+|------|--------|---------|-----------|
+| Storm | `storm` | Rapid-fire timed with timer bar | Deferred feedback |
+| Simulation | `simulation` | Full exam simulation (200Q, 4h, cold results) | Separate tracking |
+| Endurance | `endurance` | Extended practice (100Q, breaks) | Light SRS |
+
+**Source:** `.ai/docs/01-product/002-drill-feature-specification.md`, `src/lib/constants/testing-modes.ts`
+
+**Intelligent Routing:** 60% unseen, 30% remediation (incorrect), 10% spaced repetition (mastered, 14+ days)
 
 ---
 

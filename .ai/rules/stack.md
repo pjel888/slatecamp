@@ -1,7 +1,7 @@
 # Stack Implementation Rules
 
-**Source:** `CLAUDE.md`, `AGENTS.md`, `package.json`  
-**Last Verified:** 2026-04-06  
+**Source:** `CLAUDE.md`, `AGENTS.md`, `package.json`, `.ai/state/memory.md`, `.ai/docs/01-product/`  
+**Last Verified:** 2026-04-10  
 **Applies To:** All agents building or modifying SlateCamp code
 
 ---
@@ -81,6 +81,27 @@
 ---
 
 ## Allowed Patterns
+
+### Portal Architecture (4 Portals)
+
+| Portal | Route | Pages | Purpose |
+|--------|-------|-------|---------|
+| **Dashboard** | `/dashboard` | 33 | Student-facing: wiki, drills, notes, 3D lab, analytics, trails |
+| **Admin** | `/admin` | 27 | Content management: articles, questions, taxonomy, reviews |
+| **CEO** | `/ceo` (via `(protected)/ceo`) | 4 | Business intelligence: MRR/ARR, financials, team |
+| **Developer** | `/developer` | 21 | Internal docs, API reference, design system, dev tools |
+
+**Source:** `.ai/state/memory.md` (verified 2026-04-09)
+
+### Drills/Quiz Modes (9 Modes, 3 Zones)
+
+| Zone | Modes | Character |
+|------|-------|-----------|
+| **01 Foundations** | camp, chill, article-review | Low-stakes learning |
+| **02 Deliberate Practice** | subject, focus-review, custom | Targeted mastery |
+| **03 Exam Readiness** | storm, simulation, endurance | Pressure + stamina |
+
+**Source:** `.ai/docs/01-product/002-drill-feature-specification.md`
 
 ### Client State
 - Zustand stores: `src/stores/{name}.ts`
