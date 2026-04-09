@@ -4,6 +4,7 @@ import { useEffect } from 'react'
 import { Warning } from '@phosphor-icons/react/dist/ssr'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
+import { ROUTES } from '@/lib/routes'
 
 interface ErrorProps {
   error: Error & { digest?: string }
@@ -41,7 +42,7 @@ const AdminError = ({ error, reset }: ErrorProps) => {
         >
           Try again
         </Button>
-        <Link href="/admin/dashboard">
+        <Link href={ROUTES.admin.root}>
           <Button variant="outline" size="sm">
             Back to Dashboard
           </Button>

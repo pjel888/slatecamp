@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { ROUTES } from '@/lib/routes'
 
 export default function NotFound() {
   return (
@@ -13,7 +14,7 @@ export default function NotFound() {
         This developer portal page doesn&#39;t exist. Check the sidebar for available pages.
       </p>
       <Link
-        href="/developer"
+        href={ROUTES.developer.root}
         className="inline-flex items-center px-4 py-2 text-xs font-medium text-white bg-primary rounded-sm hover:bg-primary/90 transition-colors"
       >
         Back to Developer Portal

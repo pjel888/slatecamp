@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import { ROUTES } from '@/lib/routes'
 
 /**
  * Pre-Assessment Teaser — UX Strategy Section 4 (Step 2)
@@ -123,14 +124,14 @@ export const PreAssessmentTeaser = () => {
             and gives you a complete Readiness Score.
           </p>
           <Link
-            href="/register"
+            href={ROUTES.auth.register}
             className="mt-8 inline-flex w-full max-w-sm items-center justify-center rounded-sm px-6 py-3.5 text-sm font-semibold text-white transition-colors duration-150 ease-out hover:bg-primary-700"
             style={{ backgroundColor: '#1B3FC4' }}
           >
             Create a free account to see your full score
           </Link>
           <Link
-            href="/"
+            href={ROUTES.home}
             className="mt-3 block text-sm text-text-secondary hover:text-text-primary transition-colors duration-150"
           >
             Back to home

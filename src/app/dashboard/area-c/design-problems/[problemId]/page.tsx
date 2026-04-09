@@ -23,7 +23,7 @@ type PageProps = {
 
 const ProblemDetailContent = async ({ problemId }: { problemId: string }) => {
   const { data: { user } } = await getUser()
-  if (!user) redirect("/login")
+  if (!user) redirect(ROUTES.auth.login)
 
   const { problem, activeSession, isLocked, error } = await getDesignProblem(problemId)
 
@@ -110,7 +110,7 @@ const ProblemDetailContent = async ({ problemId }: { problemId: string }) => {
 
 const BackLink = () => (
   <Link
-    href="/dashboard/area-c/design-problems"
+    href={ROUTES.dashboard.designProblems}
     className="flex items-center gap-1.5 text-xs text-muted-foreground hover:text-foreground transition-colors duration-150 ease-out w-fit"
   >
     <ArrowLeft size={14} />

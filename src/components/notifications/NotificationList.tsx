@@ -47,7 +47,7 @@ export const NotificationList = ({ initialNotifications }: NotificationListProps
             Mark all read
           </button>
           <Link
-            href="/dashboard/settings"
+            href={ROUTES.dashboard.settings}
             className="text-xs px-3 py-1.5 rounded-sm border border-border hover:bg-muted text-muted-foreground transition-colors"
           >
             Settings

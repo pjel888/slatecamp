@@ -34,7 +34,7 @@ const ProfessionalHub = ({ accountMode }: ProfessionalHubProps) => {
 
         {/* Wiki */}
         <Link
-          href="/dashboard/wiki"
+          href={ROUTES.wiki.root}
           className="rounded-md border border-border bg-card p-4 flex flex-col gap-2 shadow-none hover:shadow-sm transition-shadow duration-150 ease-out"
         >
           <div className="flex items-center gap-2">

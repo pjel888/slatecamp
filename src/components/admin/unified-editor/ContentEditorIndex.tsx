@@ -3,6 +3,7 @@
 import { useState, useMemo, useCallback } from 'react'
 import Link from 'next/link'
 import { useRouter, useSearchParams } from 'next/navigation'
+import { ROUTES } from '@/lib/routes'
 import { MagnifyingGlass, Plus, FileText, ArrowRight, TreeStructure, Question, Stack } from '@phosphor-icons/react/dist/ssr'
 import { TaxonomyTree, type TaxonomyTreeNode } from '@/components/shared/taxonomy-tree'
 import { Badge, StatusBadge } from '@/components/ui/badge'
@@ -400,7 +401,7 @@ export const ContentEditorIndex = ({
                 New Question
               </Button>
             </Link>
-            <Link href="/admin/knowledge/new">
+            <Link href={ROUTES.admin.knowledge + "/new"}>
               <Button variant="primary" size="sm">
                 <Plus className="w-3.5 h-3.5" weight="bold" />
                 New Article
@@ -459,7 +460,7 @@ export const ContentEditorIndex = ({
                       description="Create your first article to start building content and questions together."
                       action={
                         <Button asChild variant="primary">
-                          <Link href="/admin/knowledge/new">+ Create Article</Link>
+                          <Link href={ROUTES.admin.knowledge + "/new"}>+ Create Article</Link>
                         </Button>
                       }
                     />

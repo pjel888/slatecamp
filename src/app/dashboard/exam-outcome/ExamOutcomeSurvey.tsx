@@ -1,3 +1,4 @@
+import { ROUTES } from '@/lib/routes';
 'use client'
 
 import { useState } from 'react'
@@ -67,7 +68,7 @@ const ExamOutcomeSurvey = ({ examBatch }: { examBatch: string }) => {
             What&apos;s next
           </p>
           <a
-            href="/dashboard"
+            href={ROUTES.dashboard.root}
             className="flex items-center justify-between rounded-sm border border-border px-4 py-3 text-sm font-medium text-foreground transition-colors duration-150 hover:border-primary hover:bg-primary/10/50"
           >
             Enter Professional Mode
@@ -107,7 +108,7 @@ const ExamOutcomeSurvey = ({ examBatch }: { examBatch: string }) => {
             Your data is ready
           </p>
           <a
-            href="/dashboard"
+            href={ROUTES.dashboard.root}
             className="flex items-center justify-between rounded-sm border border-border px-4 py-3 text-sm font-medium text-foreground transition-colors duration-150 hover:border-primary hover:bg-primary/10/50"
           >
             See your updated heatmap

@@ -1,3 +1,4 @@
+import { ROUTES } from '@/lib/routes';
 'use client'
 
 import { useEffect, useCallback } from 'react'
@@ -59,7 +60,7 @@ export function DevOverlay({ systemInfo, dbFlags }: DevOverlayProps) {
           </div>
           <div className="flex items-center gap-2">
             <a
-              href="/developer"
+              href={ROUTES.developer.root}
               className="rounded-md bg-muted px-3 py-1.5 text-[11px] font-medium text-foreground transition-colors hover:bg-muted/80"
             >
               Full Console

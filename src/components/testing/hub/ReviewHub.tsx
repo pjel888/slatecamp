@@ -479,7 +479,7 @@ const ReviewHub = ({
                     </div>
                   ) : simulationGateStatus.isUnlocked ? (
                     <Link
-                      href="/quiz/fullexam/setup"
+                      href={ROUTES.quiz.legacy.simSetup}
                       className="inline-flex w-full items-center justify-center rounded-sm bg-primary px-4 py-2.5 text-sm font-medium text-white transition-opacity duration-150 hover:opacity-90"
                     >
                       Start Simulation

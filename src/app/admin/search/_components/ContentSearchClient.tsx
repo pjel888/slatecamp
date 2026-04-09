@@ -2,6 +2,7 @@
 
 import * as React from 'react'
 import Link from 'next/link'
+import { ROUTES } from '@/lib/routes'
 import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
 import { createClient } from '@/lib/supabase/client'
 import { SectionHeader } from '@/components/shared/section-header'
@@ -132,7 +133,7 @@ export const ContentSearchClient = () => {
     taxonomy.map((t) => (
       <Link
         key={t.node_id}
-        href="/admin/taxonomy"
+        href={ROUTES.admin.taxonomy}
         className="flex items-start gap-3 rounded-md border border-border p-3 transition-colors duration-150 hover:border-primary/30 hover:bg-muted/50"
       >
         <Badge variant="info" size="xs" className="mt-0.5 shrink-0">

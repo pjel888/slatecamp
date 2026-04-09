@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { ROUTES } from '@/lib/routes'
 import { ArrowRight } from '@phosphor-icons/react/dist/ssr'
 import { Card } from '@/components/ui/card'
 import { Eyebrow } from '@/components/ui/eyebrow'
@@ -29,7 +30,7 @@ const NeedsAttentionCard = ({ pendingReviews, missingRationale }: NeedsAttention
               </span>
               <span className="text-xs text-muted-foreground flex-1">articles pending review</span>
               <Link
-                href="/admin/reviews"
+                href={ROUTES.admin.reviews}
                 className="inline-flex items-center gap-0.5 text-[11px] font-medium text-amber-700 hover:text-amber-900 transition-colors duration-150 shrink-0"
               >
                 View

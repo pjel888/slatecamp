@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import { ROUTES } from '@/lib/routes'
 
 interface TopSubject {
   name: string
@@ -72,7 +73,7 @@ const NonPasserFlow = ({ readinessScore, topSubjects }: NonPasserFlowProps) => {
       {/* CTA */}
       <div className="rounded-md border border-border bg-card p-5">
         <Link
-          href="/dashboard"
+          href={ROUTES.dashboard.root}
           className="flex w-full items-center justify-between rounded-sm bg-primary px-4 py-3 text-sm font-semibold text-white transition-colors duration-150 ease-out hover:bg-primary-700"
         >
           Start Planning for Next Cycle

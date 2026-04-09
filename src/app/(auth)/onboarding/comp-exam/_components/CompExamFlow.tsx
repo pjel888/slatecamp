@@ -1,3 +1,4 @@
+import { ROUTES } from '@/lib/routes';
 'use client'
 
 import { useState } from 'react'
@@ -83,7 +84,7 @@ export const CompExamFlow = () => {
             Enter my comp exam scores →
           </button>
           <a
-            href="/dashboard"
+            href={ROUTES.dashboard.root}
             className="block w-full rounded-sm border border-border bg-card px-4 py-2.5 text-center text-sm text-muted-foreground transition-colors duration-150 hover:border-primary hover:text-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
           >
             Skip for now

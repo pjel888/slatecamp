@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { ROUTES } from '@/lib/routes'
 import { Plus, FileText, UploadSimple, ArrowRight, Warning, ClipboardText, GitBranch, SquaresFour } from '@phosphor-icons/react/dist/ssr'
 import { getAdminDashboardData, getContentBySubject, getCriticalCoverageGap, getNeedsAttentionData } from '@/lib/actions/admin/dashboard'
 import { cn } from '@/lib/utils'
@@ -125,18 +126,18 @@ const AdminDashboardPage = async () => {
           eyebrow="Total Questions"
           value={data.questions.toLocaleString()}
           color="text-primary"
-          href="/admin/knowledge/questions"
+          href={ROUTES.admin.knowledgeQuestions}
         />
         <StatCard
           eyebrow="Total Articles"
           value={data.wikiTotal.toLocaleString()}
-          href="/admin/knowledge"
+          href={ROUTES.admin.knowledge}
         />
         <StatCard
           eyebrow="Published"
           value={data.publishedArticles.toLocaleString()}
           color="text-emerald-600"
-          href="/admin/knowledge"
+          href={ROUTES.admin.knowledge}
         />
         <StatCard
           eyebrow="Draft"
@@ -246,7 +247,7 @@ const AdminDashboardPage = async () => {
           <div className="flex items-center justify-between mb-4">
             <Eyebrow>Recent Activity</Eyebrow>
             <Link
-              href="/admin/activity"
+              href={ROUTES.admin.activity}
               aria-label="View all recent activity"
               className="inline-flex items-center gap-1 text-xs text-primary hover:text-primary/80 transition-colors duration-150"
             >

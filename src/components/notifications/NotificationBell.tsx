@@ -126,7 +126,7 @@ export const NotificationBell = ({ userId }: NotificationBellProps) => {
         {recentNotifications.length > 0 && (
           <div className="border-t border-border px-4 py-3 text-center">
             <Link
-              href="/dashboard/notifications"
+              href={ROUTES.dashboard.notifications}
               onClick={() => setPopoverOpen(false)}
               className="text-xs text-primary hover:underline"
             >

@@ -1,3 +1,4 @@
+import { ROUTES } from '@/lib/routes';
 import type { Meta, StoryObj } from '@storybook/react'
 import { ArrowRight, Database, Wrench } from '@phosphor-icons/react/dist/ssr'
 import { Badge } from '@/components/ui/badge'
@@ -55,7 +56,7 @@ export const Grid: Story = {
         title="Developer tools"
         subtitle="Internal workflows"
         description="Keep the developer portal aligned on shared primitives and curated stories."
-        href="/developer/tools"
+        href={ROUTES.developer.tools}
         footer={
           <span className="inline-flex items-center gap-1 text-xs font-medium text-primary">
             Open destination

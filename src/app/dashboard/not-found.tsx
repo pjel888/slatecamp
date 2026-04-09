@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { ROUTES } from '@/lib/routes'
 import { Button } from '@/components/ui/button'
 
 export default function DashboardNotFound() {
@@ -13,7 +14,7 @@ export default function DashboardNotFound() {
       <p className="text-sm text-muted-foreground">
         The section you&apos;re looking for isn&apos;t here.
       </p>
-      <Link href="/dashboard">
+      <Link href={ROUTES.dashboard.root}>
         <Button>Back to Dashboard</Button>
       </Link>
     </div>

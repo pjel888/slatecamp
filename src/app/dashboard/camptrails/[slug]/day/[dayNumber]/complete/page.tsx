@@ -1,4 +1,5 @@
 import { notFound, redirect } from 'next/navigation'
+import { ROUTES } from '@/lib/routes'
 import Link from 'next/link'
 import SharedPageLayout from '@/components/layouts/SharedPageLayout'
 import { Card } from '@/components/ui/card'
@@ -60,7 +61,7 @@ const DayCompletePage = async ({
               <Link href={`/dashboard/camptrails/${slug}`} className="px-5 py-2.5 rounded-sm bg-camp-cobalt text-white text-sm font-semibold transition-colors duration-150 ease-out hover:bg-primary-700">
                 View Trail Summary
               </Link>
-              <Link href="/dashboard" className="text-sm text-text-secondary hover:text-text-primary transition-colors duration-150">
+              <Link href={ROUTES.dashboard.root} className="text-sm text-text-secondary hover:text-text-primary transition-colors duration-150">
                 Back to Dashboard
               </Link>
             </div>
@@ -79,7 +80,7 @@ const DayCompletePage = async ({
                 <Link href={`/dashboard/camptrails/${slug}/today`} className="px-4 py-2 rounded-sm bg-camp-cobalt text-white text-sm font-medium transition-colors duration-150 ease-out hover:bg-primary-700">
                   Start Day {completionData.next_day.day_number} →
                 </Link>
-                <Link href="/dashboard" className="px-4 py-2 rounded-sm text-sm text-text-secondary hover:text-text-primary transition-colors duration-150">
+                <Link href={ROUTES.dashboard.root} className="px-4 py-2 rounded-sm text-sm text-text-secondary hover:text-text-primary transition-colors duration-150">
                   Back to Dashboard
                 </Link>
               </div>
@@ -90,7 +91,7 @@ const DayCompletePage = async ({
             <Link href={`/dashboard/camptrails/${slug}/today`} className="px-4 py-2 rounded-sm bg-camp-cobalt text-white text-sm font-medium transition-colors duration-150 ease-out hover:bg-primary-700">
               Continue Trail →
             </Link>
-            <Link href="/dashboard" className="text-sm text-text-secondary hover:text-text-primary transition-colors duration-150">
+            <Link href={ROUTES.dashboard.root} className="text-sm text-text-secondary hover:text-text-primary transition-colors duration-150">
               Back to Dashboard
             </Link>
           </div>

@@ -8,6 +8,7 @@ import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { ArrowLeft } from '@phosphor-icons/react/dist/ssr'
 import Link from 'next/link'
+import { ROUTES } from '@/lib/routes'
 
 /* ------------------------------------------------------------------ */
 /*  Helpers                                                            */
@@ -73,7 +74,7 @@ const QuestionsAnalyticsPage = async () => {
     <div className="space-y-6">
       {/* Back link */}
       <Link
-        href="/admin/knowledge/questions"
+        href={ROUTES.admin.knowledgeQuestions}
         className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground transition-colors"
       >
         <ArrowLeft className="w-3.5 h-3.5" weight="bold" />
@@ -91,7 +92,7 @@ const QuestionsAnalyticsPage = async () => {
         <StatCard
           eyebrow="Total Questions"
           value={stats.total.toLocaleString()}
-          href="/admin/knowledge/questions"
+          href={ROUTES.admin.knowledgeQuestions}
         />
         <StatCard
           eyebrow="Missing Rationale"

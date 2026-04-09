@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
+import { ROUTES } from '@/lib/routes'
 import Link from 'next/link'
 import { Cube, ArrowLeft, Trash } from '@phosphor-icons/react/dist/ssr'
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
@@ -169,7 +170,7 @@ export const AssetDetailView = ({ asset }: AssetDetailViewProps) => {
           {/* Actions */}
           <div className="flex gap-3">
             <Link
-              href="/admin/assets"
+              href={ROUTES.admin.assets}
               className={cn(
                 'inline-flex items-center justify-center rounded-sm border border-input bg-background px-4 py-2 text-sm font-medium hover:bg-muted transition-colors duration-150',
               )}

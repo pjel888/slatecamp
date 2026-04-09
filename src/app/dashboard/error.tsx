@@ -3,6 +3,7 @@
 import { useEffect } from 'react'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
+import { ROUTES } from '@/lib/routes'
 
 interface ErrorProps {
   error: Error & { digest?: string }
@@ -26,7 +27,7 @@ export default function DashboardError({ error, reset }: ErrorProps) {
         <Button onClick={reset} variant="outline" size="sm">
           Retry
         </Button>
-        <Link href="/dashboard">
+        <Link href={ROUTES.dashboard.root}>
           <Button size="sm">Back to Dashboard</Button>
         </Link>
       </div>
