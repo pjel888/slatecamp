@@ -73,6 +73,7 @@ import { ALL_PRESETS } from './stairway-presets'
 import { buildLShapeGeometry } from './stairway-geometry-l-shape'
 import { buildUShapeGeometry } from './stairway-geometry-u-shape'
 import { getMaterialById } from './stairway-materials'
+import { buildNosingProfile } from './stairway-nosing'
 
 // ─── Helpers (kept for violation rule position functions) ────────────────────
 
@@ -470,9 +471,13 @@ const buildStraightGeometry = (state: ComputedStairState, rawParams: StairParams
   const headroomM = state.headroom / 1000
   const hrH = state.handrailHeight / 1000
 
-  // Resolved colors from computation engine
+  // Material color resolution (Task 5: material PBR → tread color)
+  const selectedMaterial = getMaterialById(str(rawParams.treadMaterial ?? 'concrete'))
+  const materialColor = selectedMaterial?.baseColor ?? NEUTRAL_COLORS.TREAD
+
+  // Resolved colors from computation engine (violation colors override material)
   const rColor = state.riserColor ?? NEUTRAL_COLORS.RISER
-  const tColor = state.treadColor ?? NEUTRAL_COLORS.TREAD
+  const tColor = state.treadColor ? state.treadColor : materialColor
   const wColor = state.widthColor
   const headViol = state.headroomViolation
   const hrColor = state.handrailColor ?? NEUTRAL_COLORS.HANDRAIL
@@ -679,9 +684,7 @@ const buildStraightGeometry = (state: ComputedStairState, rawParams: StairParams
     }
   }
 
-  // ── 10. Nosing detail view (extruded-profile for midpoint tread) ──────────
-  // When detail view is active, replace midpoint tread with high-detail nosing
-  // and dim non-selected treads.
+  // ── 10. Nosing detail view (Task 2: wire extruded-profile) ──────────────────
   if (bool(rawParams.detailViewActive)) {
     const midIdx = Math.floor(n / 2)
     // Dim non-selected treads
@@ -693,6 +696,90 @@ const buildStraightGeometry = (state: ComputedStairState, rawParams: StairParams
           existing.transparent = true
         }
       }
+    }
+    // Add nosing extruded-profile at midpoint
+    const nosingInst = buildNosingProfile(
+      num(rawParams.nosingProjection ?? 25),
+      num(rawParams.nosingRadius ?? 10),
+      num(rawParams.riserUndercut ?? 15),
+      num(rawParams.contrastStripWidth ?? 38),
+      state.stairWidth,
+      state.treadDepth,
+      state.riserHeight,
+    )
+    const midY = (midIdx + 1) * rH
+    const midZ = -(midIdx * tD)
+    nosingInst.position = [-sW / 2, midY - rH, midZ + tD / 2]
+    nosingInst.id = `nosing-detail-${midIdx}`
+    g.push(nosingInst)
+  }
+
+  // ── 11. Handrail cross-section (Task 3: wire extruded-profile disc) ────────
+  if (bool(rawParams.handrailDetailActive)) {
+    const segments = 16
+    const radius = (num(rawParams.handrailDiameter ?? 35) / 1000) / 2
+    const profilePoints: [number, number][] = Array.from({ length: segments }, (_, i) => {
+      const angle = (i / segments) * Math.PI * 2
+      return [Math.cos(angle) * radius, Math.sin(angle) * radius] as [number, number]
+    })
+    const midN = Math.floor(n / 2)
+    g.push({
+      id: 'handrail-cross-section',
+      type: 'extruded-profile',
+      position: [sW / 2 + STRINGER_THICKNESS_M / 2, midN * rH + hrH, -(midN * tD)],
+      args: [],
+      color: hrColor,
+      profilePoints,
+      extrudeDepth: 0.05,
+    })
+  }
+
+  // ── 12. Children's ghost handrail at 711mm (Task 4) ────────────────────────
+  const isChildMode = str(rawParams.primaryUsers ?? 'general') === 'children' ||
+    str(rawParams.primaryUsers ?? 'general') === 'mixed'
+  if (isChildMode) {
+    const childHeight = 0.711 // 711mm in meters
+    for (const s of [-1, 1] as const) {
+      g.push({
+        id: `children-rail-711-${s < 0 ? 'L' : 'R'}`,
+        type: 'cylinder',
+        position: [
+          s * (sW / 2 + STRINGER_THICKNESS_M / 2),
+          strCY + childHeight * Math.cos(strAngle),
+          strCZ + childHeight * Math.sin(strAngle),
+        ],
+        rotation: [Math.PI / 2 + strAngle, 0, 0],
+        args: [HANDRAIL_RADIUS_M * 0.8, HANDRAIL_RADIUS_M * 0.8, strLen, 8],
+        color: '#94a3b8',
+        opacity: 0.4,
+        transparent: true,
+      })
+    }
+  }
+
+  // ── 13. Evacuation dots (Task 6: sphere instructions along stair) ──────────
+  if (bool(rawParams.evacuationActive)) {
+    const loadFactor = ({ assembly: 0.65, business: 9.3, educational: 1.85, residential: 18.6, mercantile: 2.8, industrial: 9.3 } as Record<string, number>)[str(rawParams.occupancyType ?? 'business')] ?? 9.3
+    const floorArea = num(rawParams.floorArea ?? 300)
+    const occupantLoad = Math.ceil(floorArea / loadFactor)
+    const dotCount = Math.min(Math.floor(occupantLoad / 2), 200)
+    const isBottleneck = sW < 0.9
+
+    for (let i = 0; i < dotCount; i++) {
+      const t = i / Math.max(dotCount - 1, 1)
+      const dotY = totalRise * (1 - t) + rH
+      const dotZ = -(totalRun * (1 - t))
+      const dotX = (Math.random() - 0.5) * sW * 0.6 // spread across width
+
+      g.push({
+        id: `evac-dot-${i}`,
+        type: 'sphere',
+        position: [dotX, dotY, dotZ],
+        args: [0.08, 4, 4],
+        color: isBottleneck ? '#E74C3C' : '#3B82F6',
+        opacity: 0.7,
+        transparent: true,
+      })
     }
   }
 
