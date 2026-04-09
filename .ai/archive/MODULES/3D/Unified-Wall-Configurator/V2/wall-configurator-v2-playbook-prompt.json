@@ -1,0 +1,327 @@
+{
+  "template_name": "SlateCamp Prompt Engineering Template v2",
+  "version": "2.0",
+
+  "section_A": {
+    "title": "YOUR RAW INSTRUCTION",
+    "instruction": "Generate a complete Implementation Playbook for the Unified Wall Configurator 2.0 upgrade covering ALL phases (Phase 1: Structural Fidelity, Phase 2: Assembly Understanding, Phase 3: Advanced Features). This is a sequenced, task-by-task markdown document that tells a developer exactly what to do, in what order, file by file. Each task must be small enough to complete, test, and commit independently. The playbook must solve the module's core technical challenge: 7 completely different wall core types each requiring polymorphic geometry sub-builders while sharing a unified computation engine, violation system, and finish layer pipeline. The playbook must introduce the instanced geometry instruction type (backward-compatible extension to GeometryInstruction), the representative section strategy for unit masonry (CHB/brick), the CoreTypeGeometryBuilder dispatch pattern, the ComputedWallState central data object, the performance estimation engine (fire resistance, STC, R-value, cost), the BOM computation, and the adaptive parameter visibility system. Do NOT write implementation code — write precise task instructions, file paths, type definitions, acceptance criteria, and dependency chains. Ground every task in the ACTUAL codebase architecture — use real file paths, real type names, real store names, real component names. Read the existing unified-wall-configurator.ts, the 3D Lab feature specification, the template system types, the store architecture, and the existing component library before generating any task. Three reference documents are provided as research, technical plan, and UX plan — use them as the WHAT and WHY but derive the HOW from the codebase. The playbook output file is: .ai/docs/01-product/wall-configurator-v2-implementation-playbook.md"
+  },
+
+  "section_B": {
+    "title": "CONTEXT PAYLOAD",
+    "fields": {
+      "product": "SlateCamp — Interactive Learning Experience Platform (ILXP) for Philippine Architecture Licensure Examination (ALE) prep. The 3D Lab is a config-driven, template-based interactive 3D learning tool with 209 modules across 7 templates.",
+      "tech_stack": "Next.js 16 App Router, React 19, TypeScript, Tailwind CSS, Shadcn UI, Supabase (auth + DB + storage), Zustand 5, React Three Fiber 9.5, drei 10.7, Three.js 0.183, tunnel-rat (SceneTunnel portal system)",
+      "target_user": "Filipino architecture students and practicing architects preparing for the ALE board exam. Primary device: mid-range 6\" Android phone on Philippine 4G (10-15 Mbps). Performance target: 30fps sustained on Realme C55 / Samsung Galaxy A14.",
+      "doc_root": ".ai/docs",
+      "doc_tree": {
+        "00-meta": "Template definitions, naming conventions, glossary",
+        "01-product": "Feature specifications — one file per major feature",
+        "02-architecture": "System architecture, portal breakdown, DB schema, API reference",
+        "03-design": "Design system, UX patterns, component library docs",
+        "04-development": "Development guides, setup, conventions, CI/CD",
+        "05-reference": "External references, code citations, research"
+      },
+      "state_root": ".ai/state",
+      "state_files": [
+        ".ai/state/current-task.md",
+        ".ai/state/memory.md"
+      ],
+      "feature_spec_pattern": ".ai/docs/01-product/###-{feature-name}-feature-specification.md",
+      "target_output_file": ".ai/docs/01-product/wall-configurator-v2-implementation-playbook.md",
+      "existing_documents": [
+        ".ai/docs/01-product/008-3d-lab-feature-specification.md — The authoritative 3D Lab feature spec. MUST READ FIRST. Contains: all type definitions (ParametricSceneConfig, GeometryInstruction, ViolationRule, AnnotationDef, ParameterDef, Preset, GeometryType), the template system architecture, the store architecture (11 stores), the component inventory, the file tree, and the rendering pipeline. CRITICAL: GeometryType is currently 'box' | 'cylinder' | 'plane' | 'line' | 'ring' | 'sphere' | 'cone'. The playbook must extend this to include 'instanced' WITHOUT breaking existing modules.",
+        ".ai/docs/05-reference/unified-wall-configurator-innovation-research.md — Research document covering 12 planned innovations: drywall framing, CHB reinforcement, fire resistance ratings, STC acoustic ratings, MEP integration, progressive build animation, exploded layer view, waterproofing, wall-to-structure connections, enhanced BOM, international comparison, and performance dashboard. Includes Philippine construction data (CHB 12.5 pcs/sqm, mortar mixes, rebar spacing, stiffener column intervals) and international standards (ASTM E119, ASTM E90/E413). USE AS: the WHAT and WHY for features.",
+        ".ai/docs/05-reference/wall-configurator-technical-implementation-plan.md — Technical architecture plan covering the Multi-Core System design, CoreTypeGeometryBuilder polymorphic dispatch, instanced geometry instruction type, representative section strategy, ComputedWallState central data object, performance estimation formulas (fire, STC, R-value, cost), LOD gating (overview vs section cut vs detail view), performance budgets, file structure, and hard do's/don'ts. USE AS: the architectural CONSTRAINTS and PRINCIPLES.",
+        ".ai/docs/05-reference/wall-configurator-ux-implementation-plan.md — UX plan covering the Viewport Sanctity Rule, three-panel layout with Performance Dashboard + BOM Panel, core type card selector, adaptive parameter panel (show/hide params by core type), view mode system (overview/section cut/exploded/build/compare), comparison mode with decision matrix dashboard, mobile responsive strategy, and 11 new components. USE AS: the UX REQUIREMENTS."
+      ],
+      "critical_source_files": [
+        "src/app/dashboard/3d-lab/_config/modules/10-materials/unified-wall-configurator.ts — The existing wall configurator module config. ~605 lines. Contains: 9 parameter definitions, CORE_CONFIGS record (7 core types with thickness/color/mortar/plaster data), geometry builder function producing boxes + mortar face lines + finish layers, 3 violation rules, 4 annotations, 7 presets, and the CoreType/CoreConfig types. READ THIS FILE IN FULL.",
+        "src/features/3d-lab/types/templates.ts — Core type definitions. Contains ParametricSceneConfig, GeometryInstruction (with GeometryType union), ViolationRule, AnnotationDef, ParameterDef, Preset, CameraConfig, and ModuleConfig discriminated union. The GeometryType union MUST be extended to include 'instanced' for the wall configurator's repeated elements.",
+        "src/features/3d-lab/templates/ParametricScene.tsx — The parametric template that renders ParametricSceneConfig modules.",
+        "src/features/3d-lab/templates/ParametricSceneRenderer.tsx — The R3F renderer that interprets GeometryInstruction[] arrays into Three.js meshes. MUST be extended to handle the new 'instanced' geometry type using drei <Instances>.",
+        "src/features/3d-lab/components/templates/GeometryMesh.tsx — The declarative geometry renderer component that maps GeometryInstruction to R3F primitives.",
+        "src/features/3d-lab/stores/useLabStore.ts — The combined Zustand store facade.",
+        "src/features/3d-lab/stores/createModuleStore.ts — Per-module Zustand store factory.",
+        "src/features/3d-lab/components/templates/ComplianceReportPanel.tsx — Existing compliance report UI.",
+        "src/features/3d-lab/components/templates/ControlPanel.tsx — Existing parametric control panel.",
+        "src/features/3d-lab/config/constants/ — Existing code constant files: pd-1096.ts, bp-344.ts, ra-9514.ts, nscp.ts, index.ts.",
+        "src/features/3d-lab/config/modules/10-materials/ — Directory containing material module configs.",
+        "src/features/3d-lab/components/templates/WallConfigurator/ — Existing wall configurator step-based wizard components (ConfigPanel, BOMPanel, AreaSummaryBar, SponsorPalette, steps/). These are for the SEPARATE wall-configurator template, NOT the unified wall configurator — but they contain patterns and components that may be reusable."
+      ],
+      "hard_constraints": [
+        "DO NOT break the existing 209 modules. The GeometryInstruction type extension (adding 'instanced') must be backward-compatible. The ParametricSceneRenderer must handle both old and new instruction types.",
+        "DO NOT modify ParametricSceneConfig interface. All work is backward-compatible. New types are additive only.",
+        "DO NOT break the existing unified-wall-configurator.ts export. The module must remain functional throughout all tasks. Each task produces a working state.",
+        "DO NOT use drei <Html> components inside the 3D viewport for text larger than 60px wide. Viewport Sanctity Rule: performance badges, BOM data, violation messages go in side panels, not floating viewport overlays.",
+        "DO NOT render every individual CHB block or brick in a full-width wall. Use the representative section strategy: ~20% detailed, ~80% simplified solid. Max 45 instanced blocks for CHB, 100 for brick.",
+        "DO NOT create separate GeometryInstruction entries per stud or per block. Use the instanced geometry pattern: one instruction with a positions array = one draw call.",
+        "DO NOT duplicate finish layer logic per core type. The shared layer builder handles plaster/skim/primer/paint for ALL core types that support it.",
+        "DO NOT hard-code fire/STC/R-value/cost as static lookup tables. Compute them dynamically from assembly configuration.",
+        "DO NOT show all parameters for all core types. Parameters must be visibility-gated by core type (stud params hidden when CHB selected, rebar params hidden when drywall selected).",
+        "DO NOT introduce new npm dependencies without explicit justification.",
+        "DO NOT allocate new THREE.Vector3() or any Three.js objects inside useFrame or geometry builder functions.",
+        "Every new constant must include a code citation comment.",
+        "Performance budget: <100 GeometryInstructions for overview, <200 for section cut, <30 draw calls overview, <50 section cut, <20K triangles overview, <35K section cut.",
+        "All Philippine material prices are approximate and must be stored in an updateable constants file, not embedded in computation logic.",
+        "All international code values (ASTM, IBC) must be marked UNVERIFIED."
+      ],
+      "known_open_decisions": [
+        "The instanced geometry instruction type requires extending GeometryType union in templates.ts AND updating ParametricSceneRenderer.tsx and GeometryMesh.tsx. The exact approach (extending the existing type vs creating a parallel type) is an open decision — the playbook should evaluate both and recommend one.",
+        "The representative section strategy (how to visually delineate the detailed strip from the simplified body) has multiple implementation options: clipping plane, separate geometry groups, or alpha masking. The playbook should flag this as an implementation decision for the developer.",
+        "The BOM Panel may reuse patterns from the existing WallConfigurator/BOMPanel.tsx component or create a new one. The playbook should instruct the developer to read the existing BOMPanel first and decide.",
+        "The adaptive parameter visibility (hiding/showing params by core type) may use the existing ParameterDef type's potential visibleWhen field (check if it exists) or require a new mechanism. The playbook should instruct the developer to check the current type system first.",
+        "Fire resistance and STC estimation formulas are approximations for educational purposes, not engineering calculations. They must carry a disclaimer. The exact formula coefficients need SME verification — mark all as UNVERIFIED.",
+        "The comparison mode (split viewport vs ghost overlay) requires a UX decision based on viewport component capabilities. The playbook should flag this.",
+        "The Viewport Sanctity Rule enforcement component design (React wrapper vs ESLint rule) is shared with the stairway configurator — check if it already exists before creating a new one."
+      ]
+    }
+  },
+
+  "section_C": {
+    "title": "THE META-PROMPT",
+    "description": "AI instructions to produce the complete Implementation Playbook.",
+    "role": "Senior prompt engineer, technical architect, and 3D Lab systems expert.",
+    "objective": "Generate the complete (all phases) Implementation Playbook as a sequenced, task-by-task markdown document. Every task must reference real codebase file paths, real type names, and real component names. The playbook translates three reference documents (research, technical plan, UX plan) into executable developer instructions grounded in the actual codebase.",
+
+    "blocks": {
+      "block_0_doc_lifecycle_protocol": {
+        "title": "DOC LIFECYCLE PROTOCOL",
+        "protocol": {
+          "PHASE_0_DISCOVER": {
+            "label": "DISCOVER",
+            "timing": "Before anything else",
+            "actions": [
+              "Scan .ai/docs/01-product/ for 008-3d-lab-feature-specification.md.",
+              "Scan .ai/docs/05-reference/ for the three wall configurator reference documents.",
+              "Scan .ai/docs/01-product/ for stairway-configurator-v2-phase1-playbook.md — if it exists, check for shared infrastructure tasks (instanced geometry type, Viewport Sanctity component) that the wall playbook can depend on instead of duplicating.",
+              "Scan src/features/3d-lab/types/templates.ts for current type definitions — specifically GeometryType union and GeometryInstruction interface.",
+              "Scan src/app/dashboard/3d-lab/_config/modules/10-materials/unified-wall-configurator.ts for the existing module config.",
+              "Scan src/features/3d-lab/config/constants/ for existing code constant files and naming patterns.",
+              "Scan src/features/3d-lab/stores/ for current store architecture.",
+              "Scan src/features/3d-lab/components/templates/ for existing template components, especially WallConfigurator/ directory.",
+              "Scan src/features/3d-lab/components/templates/GeometryMesh.tsx for how GeometryInstruction is currently rendered — this is where the instanced type must be handled.",
+              "Produce a <doc_discovery> block."
+            ],
+            "output_format": "<doc_discovery>\n  spec_file: .ai/docs/01-product/008-3d-lab-feature-specification.md\n  reference_docs: [list]\n  stairway_playbook_found: [YES path | NO — wall playbook must handle shared infra]\n  source_files_read: [list]\n  type_definitions_found: [list — especially GeometryType values]\n  stores_found: [list]\n  constants_found: [list]\n  existing_wall_components: [list from WallConfigurator/ dir]\n</doc_discovery>"
+          },
+          "PHASE_1_READ_AND_BASELINE": {
+            "label": "READ & BASELINE",
+            "timing": "After discovery, before any generation",
+            "actions": [
+              "Read .ai/state/current-task.md and .ai/state/memory.md.",
+              "Read the 3D Lab feature specification IN FULL — extract: GeometryType union (exact values), GeometryInstruction interface (exact fields), ParameterDef interface (check for visibleWhen field), the template routing system, the ParametricSceneRenderer rendering pipeline, and the GeometryMesh component logic.",
+              "Read unified-wall-configurator.ts IN FULL — extract: all 9 parameters with defaults/ranges, the CoreType type and CORE_CONFIGS record (all 7 entries with all fields), the PAINT_COLORS map, the complete geometry() function logic (ground plane, core body, mortar pattern, addLayer helper, frontOffset/backOffset accumulator, layer building, thickness edge indicator), all 3 violation rules, all 4 annotations, all 7 presets.",
+              "Read the three reference documents — extract: the Phase 1/2/3 feature lists, the CoreTypeGeometryBuilder dispatch pattern, the instanced geometry instruction type definition, the ComputedWallState interface, the representative section strategy, the performance estimation formulas, the BOM computation data, the adaptive parameter visibility matrix, the new component list (11 components), and the performance budgets.",
+              "Read existing WallConfigurator/ components (BOMPanel.tsx, ConfigPanel.tsx, AreaSummaryBar.tsx) to identify reusable patterns.",
+              "Read existing constants files (pd-1096.ts, nscp.ts, ra-9514.ts) to understand naming patterns.",
+              "Determine: does the stairway configurator playbook already define shared infrastructure (instanced geometry type extension, Viewport Sanctity wrapper) that this playbook can depend on? If yes, reference those tasks. If no, this playbook must define them.",
+              "Produce <spec_baseline>."
+            ]
+          },
+          "PHASE_2_EXECUTE": {
+            "label": "EXECUTE",
+            "timing": "Main playbook generation",
+            "rules": [
+              "Generate the playbook as a single markdown file at .ai/docs/01-product/wall-configurator-v2-implementation-playbook.md.",
+              "Organize into THREE PHASES with numbered tasks per phase. Phase 1: Structural Fidelity (foundation + CHB + drywall sub-builders + performance badges). Phase 2: Assembly Understanding (exploded view + section cut + BOM + build animation + adaptive params). Phase 3: Advanced Features (MEP + waterproofing + connections + comparison + international).",
+              "Each task has: title, objective, dependencies, input files, output files, detailed instructions, type definitions (TypeScript code blocks), acceptance criteria, complexity estimate, and risks.",
+              "Task ordering respects dependencies. The instanced geometry type MUST come before any sub-builder that uses it. The computation engine MUST come before any component that reads ComputedWallState.",
+              "Every file path must be real or follow existing conventions.",
+              "Every type definition must be compatible with existing types.",
+              "Include a Mermaid dependency graph per phase and one overall graph.",
+              "Include a risk registry aggregating all per-task risks.",
+              "Mark all tasks requiring SME verification with ⚠️ NEEDS VERIFICATION.",
+              "If shared infrastructure tasks overlap with the stairway configurator playbook, create them as 'shared infrastructure' tasks at the start of Phase 1 with a note that they benefit both modules."
+            ]
+          },
+          "PHASE_3_POST_UPDATE": {
+            "label": "POST-UPDATE",
+            "timing": "After playbook generation",
+            "actions": [
+              "Update .ai/state/current-task.md with all Phase 1/2/3 tasks.",
+              "Update .ai/state/memory.md with decisions made.",
+              "Produce <session_delta>."
+            ]
+          }
+        }
+      },
+
+      "block_1_system_context": {
+        "title": "SYSTEM CONTEXT",
+        "directives": [
+          "You are a Senior 3D Lab Systems Engineer at SlateCamp with full codebase access.",
+          "The 3D Lab uses a template system where module configs are consumed by template renderers. The wall configurator is a ParametricSceneConfig consumed by ParametricScene.tsx → ParametricSceneRenderer.tsx → GeometryMesh.tsx.",
+          "The wall configurator's unique challenge: 7 core types with completely different internal structures sharing a common interface. This is a polymorphic geometry problem requiring a dispatch pattern.",
+          "The .ai/docs folder is the single source of truth.",
+          "No roleplay, filler, or meta-commentary. Output the playbook document only."
+        ]
+      },
+
+      "block_3_objective": {
+        "title": "OBJECTIVE",
+        "directive": "CREATE a new document at .ai/docs/01-product/wall-configurator-v2-implementation-playbook.md. This is a complete Implementation Playbook covering all 3 phases of the wall configurator upgrade: Phase 1 (structural fidelity — computation engine, instanced geometry, CHB + drywall sub-builders, fire/STC badges), Phase 2 (assembly understanding — exploded view, section cut, BOM panel, build animation, adaptive parameters), Phase 3 (advanced — MEP, waterproofing, connections, comparison mode, international). Every task must be independently committable and must not break the existing module or any of the other 208 modules."
+      },
+
+      "block_4_required_document_structure": {
+        "title": "REQUIRED DOCUMENT STRUCTURE",
+        "sections": {
+          "00_header": {
+            "title": "Header",
+            "content": "Title, date, version, status, links to the three reference documents and the 3D Lab feature spec."
+          },
+          "01_scope": {
+            "title": "## Scope — All Phases",
+            "content": "What each phase delivers, explicit boundaries between phases, and the dependency chain between phases."
+          },
+          "02_current_state": {
+            "title": "## Current State Snapshot",
+            "content": "Precise inventory of existing unified-wall-configurator.ts: line count, parameter count, core type count with all CoreConfig fields, violation count, annotation count, preset count, GeometryInstruction count at default params, helper function list. Derived from reading the actual file."
+          },
+          "03_shared_infrastructure": {
+            "title": "## Shared Infrastructure Tasks",
+            "content": "Tasks that benefit multiple modules (instanced geometry type extension, Viewport Sanctity wrapper, performance badge components). If the stairway playbook already defines these, reference them. If not, define them here. These tasks come BEFORE any phase-specific tasks."
+          },
+          "04_target_file_structure": {
+            "title": "## Target File Structure (All Phases)",
+            "content": "The complete directory tree after ALL phases are complete. Mark which files are created in which phase."
+          },
+          "05_type_definitions": {
+            "title": "## New Type Definitions",
+            "content": "Every new TypeScript interface and type across all phases. Includes: InstancedGeometryInstruction (extending GeometryInstruction), ComputedWallState, CoreTypeRegistryEntry (extending CoreConfig), CHBStructural, DrywallStructural, GenericStructural, PerformanceMetrics, BOMEntry, LayerStackEntry, CutPlaneConfig, ViewMode. Must be compatible with existing types."
+          },
+          "06_dependency_graph": {
+            "title": "## Task Dependency Graphs",
+            "content": "One Mermaid diagram per phase showing task dependencies, plus one overall diagram showing inter-phase dependencies. Critical path highlighted."
+          },
+          "07_phase1_tasks": {
+            "title": "## Phase 1 — Structural Fidelity",
+            "content": "Numbered tasks. This phase establishes the multi-file architecture, computation engine, instanced geometry, and the two most important sub-builders (CHB with reinforcement, drywall with framing)."
+          },
+          "08_phase2_tasks": {
+            "title": "## Phase 2 — Assembly Understanding",
+            "content": "Numbered tasks. This phase adds view modes (exploded, section cut, build sequence), the BOM panel, and the adaptive parameter visibility system."
+          },
+          "09_phase3_tasks": {
+            "title": "## Phase 3 — Advanced Features",
+            "content": "Numbered tasks. This phase adds MEP integration, waterproofing, wall-to-structure connections, comparison mode, and international references."
+          },
+          "10_per_task_template": {
+            "title": "### Task N.M: [Title]",
+            "fields": [
+              "**Phase:** 1 | 2 | 3",
+              "**Objective:** One sentence.",
+              "**Dependencies:** Prior tasks that must be complete.",
+              "**Input Files (Read):** Real file paths.",
+              "**Output Files (Create/Modify):** Real file paths.",
+              "**Detailed Instructions:** Step-by-step. Reference specific functions, types, constants, patterns from the codebase. If extracting from existing file, specify which functions/data to extract.",
+              "**Type Definitions:** TypeScript code blocks for new interfaces this task introduces.",
+              "**Acceptance Criteria:** Testable checkboxes. Includes: TypeScript compiles, existing module works, specific values correct, performance budget met.",
+              "**Estimated Complexity:** Low / Medium / High.",
+              "**Risks:** What could go wrong, mitigation."
+            ]
+          },
+          "11_integration_test_plan": {
+            "title": "## Integration Test Plan (Per Phase)",
+            "content": "Checklists per phase. Phase 1: all 7 presets work, all 3 existing violations fire, CHB shows rebar in section cut, drywall shows studs, performance badges show values. Phase 2: exploded view animates, section cut reveals internals, BOM totals are correct, params hide/show per core type. Phase 3: MEP visible in drywall, comparison mode shows two types."
+          },
+          "12_risk_registry": {
+            "title": "## Risk Registry",
+            "content": "Aggregated table across all phases: risk, likelihood, impact, mitigation."
+          },
+          "13_changelog": {
+            "title": "## Changelog",
+            "content": "Initial entry."
+          }
+        }
+      },
+
+      "block_5_execution_pipeline": {
+        "title": "EXECUTION PIPELINE",
+        "stages": {
+          "STAGE_0": "DISCOVER: Scan .ai/docs/ and src/features/3d-lab/ for all relevant files. Check for stairway playbook shared infra. Output <doc_discovery>.",
+          "STAGE_1": "BASELINE: Read ALL source files listed in critical_source_files. Read ALL reference documents. Read the 3D Lab feature spec. Extract the current wall configurator architecture in detail. Output <spec_baseline>.",
+          "STAGE_2": "EXECUTE: Generate the playbook. Every task references real paths and types. Every type definition is TypeScript. Every acceptance criterion is testable. All three phases are complete.",
+          "STAGE_3": "POST-UPDATE: Update state files. Output <session_delta>.",
+          "STAGE_4": "VERIFY: Run verification checklist. Output <verification_result>.",
+          "STAGE_5": "CLOSE: Git commit: docs(wall-configurator): create complete implementation playbook — phases 1-3"
+        }
+      },
+
+      "block_6_verification_checklist": {
+        "title": "VERIFICATION CHECKLIST",
+        "items": [
+          "Every section from block_4 exists in the output.",
+          "Every file path exists in the codebase or follows existing naming conventions.",
+          "Every type definition is valid TypeScript compatible with existing types.",
+          "Every task has all required fields from the per-task template.",
+          "Dependency graphs are valid Mermaid.",
+          "No task references artifacts from an incomplete prior task.",
+          "The existing unified-wall-configurator.ts remains functional after every task.",
+          "All 7 existing presets are preserved.",
+          "All 3 existing violation rules are preserved.",
+          "The existing CORE_CONFIGS data is preserved and extended, not replaced.",
+          "The instanced geometry type extension is backward-compatible with all 209 existing modules.",
+          "The Viewport Sanctity Rule is enforced — no floating text > 60px in viewport.",
+          "Performance budgets are referenced in acceptance criteria for tasks adding geometry.",
+          "All fire/STC/R-value/cost formulas are marked UNVERIFIED.",
+          "All international code values are marked UNVERIFIED.",
+          "Material prices are in an updateable constants file, not in computation logic.",
+          "Shared infrastructure tasks are either referenced from stairway playbook or defined as shared.",
+          "State files updated. Changelog has entry."
+        ]
+      },
+
+      "block_7_hard_constraints": {
+        "title": "HARD CONSTRAINTS",
+        "items": [
+          "DO NOT begin STAGE_2 without completing STAGE_0 and STAGE_1.",
+          "DO NOT fabricate file paths, type names, store names, or component names.",
+          "DO NOT modify ParametricSceneConfig interface.",
+          "DO NOT break the existing 209 modules when extending GeometryType/GeometryInstruction.",
+          "DO NOT skip reading unified-wall-configurator.ts in full — the playbook must account for every CoreConfig field, every helper function, every parameter.",
+          "DO NOT skip reading GeometryMesh.tsx and ParametricSceneRenderer.tsx — the instanced geometry type MUST integrate with the existing rendering pipeline.",
+          "DO NOT duplicate shared infrastructure that may already be defined in the stairway configurator playbook.",
+          "DO NOT create Phase 2 tasks that depend on Phase 3 infrastructure, or Phase 1 tasks that depend on Phase 2.",
+          "DO NOT output conversational filler.",
+          "DO NOT close without <session_delta> and state file updates."
+        ]
+      },
+
+      "block_8_state_update_format": {
+        "title": "STATE UPDATE FORMAT",
+        "current_task_format": {
+          "file": ".ai/state/current-task.md",
+          "update_rules": [
+            "Add all Phase 1/2/3 tasks to ## Backlog grouped by phase.",
+            "Add 'Wall Configurator v2 Full Implementation' as a project in ## In Progress.",
+            "If stairway configurator Phase 1 is in progress, note the shared infrastructure dependency."
+          ]
+        },
+        "memory_format": {
+          "file": ".ai/state/memory.md",
+          "update_rules": [
+            "Append under ## Decisions: polymorphic dispatch pattern, instanced geometry approach, representative section dimensions, LOD gating strategy.",
+            "Append under ## Constraints: all hard constraints from the three reference documents, performance budgets per view mode.",
+            "Append under ## Architecture Notes: the ComputedWallState data flow, the CoreTypeGeometryBuilder pattern, the shared finish layer builder, the GeometryType extension approach.",
+            "Format: - [2026-04-09] [category]: [description]"
+          ]
+        }
+      }
+    },
+
+    "quality_criteria": [
+      "Codebase Fidelity: Every file path, type name, and component name exists in the codebase or follows its conventions.",
+      "Task Independence: Each task can be completed, tested, and committed independently.",
+      "Backward Compatibility: The existing wall configurator and all 208 other modules work after every task.",
+      "Type Safety: All TypeScript types are code blocks compatible with existing types.",
+      "Dependency Correctness: No task references artifacts from an incomplete task.",
+      "Polymorphic Correctness: The dispatch pattern handles all 7 core types with an exhaustive switch.",
+      "Performance Compliance: Tasks adding geometry include performance budget checks.",
+      "Research Grounding: Features traceable to the research document.",
+      "Architecture Compliance: All tasks follow the technical plan principles.",
+      "UX Compliance: All tasks follow the UX plan (Viewport Sanctity, adaptive params, performance dashboard).",
+      "Shared Infrastructure Awareness: Tasks that benefit multiple modules are identified and not duplicated."
+    ]
+  }
+}

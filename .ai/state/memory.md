@@ -23,11 +23,23 @@
 - [2026-04-09] 5-phase migration: Shell Foundation → Standard Templates (Parametric/Exploded/Cutaway) → Remaining Templates (FloorPlan/Animated/Calculator) → WallConfigurator → DevControlsModule.
 - [2026-04-09] Legacy bespoke scenes (FARPlayground, ClassicalOrders, NBCPEnvelope) excluded from migration.
 
+## Wall Configurator v2 Decisions
+
+- [2026-04-09] Instanced geometry: extend GeometryInstruction with optional fields (instancedShape, instancedShapeArgs, instancedPositions, instancedRotations, instancedColors) + add 'instanced' to GeometryType union. Follows extruded-profile precedent. Rejected: separate InstancedGeometryInstruction type — would break ParametricSceneConfig.geometry return type.
+- [2026-04-09] Parameter visibility: add optional visibleWhen predicate to ParameterDef (mirrors AnnotationDef pattern). Target: GenericControlPanel.tsx (NOT ControlPanel.tsx which is legacy). Rejected: UI-level gating — not config-driven, not reusable.
+- [2026-04-09] ComputedWallState data channel: React context provider (wall-computed-context.tsx) wraps both 3D canvas and sidebar panels. Accepted double-computation tradeoff (< 1ms pure function) to preserve ParametricSceneConfig interface. Rejected: extending ModuleStoreState — couples generic store to wall-specific types.
+- [2026-04-09] WallViewMode (NOT ViewMode — collision with templates.ts:405 ViewMode which is camera projection mode). Values: overview, section-cut, exploded, build-sequence, compare.
+- [2026-04-09] Representative section strategy: ~20% detailed (3 blocks wide ≈ 1200mm), ~80% simplified solid. Max instances: CHB 45, brick 100, studs 16.
+- [2026-04-09] Performance budgets: overview < 100 instructions / < 20K tris / < 30 draw calls. Section cut < 200 / < 35K / < 50.
+- [2026-04-09] All fire/STC/R-value/cost formulas marked UNVERIFIED — educational approximations only.
+- [2026-04-09] Material costs in updateable constants file (wall-constants-performance.ts), not in computation logic. Metro Manila rates, disclaimered.
+
 ## Open Questions
 
 - [2026-04-09] Bottom sheet drag gesture: native-feel (iOS-style) or simple toggle? Needs product input.
 - [2026-04-09] Cross-section cut surface fill color: needs product input.
-- [2026-04-09] WallConfigurator BOM panel: left sidebar or status bar? Needs product input.
+- [2026-04-09] WallConfigurator BOM panel: right sidebar collapsible panel (per UX plan v2). Resolved.
+- [2026-04-09] Comparison mode: ghost overlay (mobile) or split viewport (desktop)? Split viewport complexity is high — may fall back to ghost-only. Needs implementation spike.
 
 ---
 

@@ -1,40 +1,62 @@
-# Current Task: Stairway Configurator v2 Phase 3 — ALL 9 TASKS COMPLETE
+# Current Task: Wall Configurator v2 Implementation Planning — COMPLETE
 
-**STATUS:** COMPLETE
+**STATUS:** PLANNING COMPLETE — READY FOR EXECUTION
 **DATE:** 2026-04-09
 
-## Completed: All 9 Phase 3 Tasks
+## Active Project: Wall Configurator v2 Full Implementation
 
-- **Task 1:** Stair type selector (straight/L-shape/U-shape) + computation extensions (stairType parsing, landing compliance)
-- **Task 2:** L-shape geometry sub-builder (stairway-geometry-l-shape.ts) — 2 flights at 90°, intermediate landing, corner handrails
-- **Task 3:** U-shape geometry sub-builder (stairway-geometry-u-shape.ts) — 2 parallel flights, continuous interior handrail
-- **Task 4:** Egress calculator engine (stairway-egress.ts) — occupant load, required exits, exit width, travel distance
-- **Task 5:** Egress calculator UI (EgressCalculatorPanel.tsx) — 4 params, PD 1096 override display
-- **Task 6:** Evacuation flow simulation (EvacuationControls.tsx) — dot visualization, bottleneck detection
-- **Task 7:** Children's handrail + guard spacing (ChildSafetyPanel.tsx) — 711mm secondary rail, 102mm sphere rule
-- **Task 8:** Material + slip resistance (stairway-materials.ts + MaterialSelectorPanel.tsx) — 6 materials, PBR, CoF badges
-- **Task 9:** Performance audit — all budgets pass for default/typical, evacuation mode opt-in exceeds draw calls
+**Playbook:** `.ai/docs/01-product/wall-configurator-v2-implementation-playbook.md` (v1.2)
+**Consensus:** Architect ITERATE → fixed → Critic APPROVE (8/9)
 
-## Phase 3 Commit
-- `9c4f8af0` — Phase 3: L/U-shape geometry, egress calculator, children's safety, materials (Tasks 1-8)
+### Shared Infrastructure (Unblocked — Can Start Now)
+- [ ] S.1: Extend GeometryType with 'instanced' variant
+- [ ] S.2: ComputedWallState data channel (React context)
+- [ ] S.3: Add visibleWhen to ParameterDef (target: GenericControlPanel.tsx)
 
-## All Phases Summary
+### Phase 1 — Structural Fidelity (Blocked by S.1–S.3)
+- [ ] 1.1: Constants extraction (wall-constants.ts, wall-constants-performance.ts)
+- [ ] 1.2: Type definitions (wall-types.ts)
+- [ ] 1.3: Extended CoreTypeRegistry (wall-core-registry.ts)
+- [ ] 1.4: Computation engine — ComputedWallState (wall-computation.ts)
+- [ ] 1.5: Shared finish layer builder (wall-geometry-layers.ts)
+- [ ] 1.6: Drywall framing sub-builder (wall-geometry-drywall.ts)
+- [ ] 1.7: CHB reinforcement sub-builder (wall-geometry-chb.ts)
+- [ ] 1.8: Generic sub-builder (wall-geometry-generic.ts)
+- [ ] 1.9: Main geometry dispatcher (wall-geometry.ts)
+- [ ] 1.10: Wire up main config — replace geometry function
+- [ ] 1.11: Expanded violation rules (wall-violations.ts)
+- [ ] 1.12: Expanded presets (wall-presets.ts)
+- [ ] 1.13: Performance dashboard — fire + STC badges
 
-### Phase 1 (11/11 COMPLETE) — Foundation
-Types, constants, computation engine, geometry refactor, presets, comfort formula, historical annotations, tolerance mode, UI shells, comfort gauge
+### Phase 2 — Assembly Understanding (Blocked by Phase 1)
+- [ ] 2.1: Adaptive parameter visibility
+- [ ] 2.2: Core type card selector
+- [ ] 2.3: View mode system
+- [ ] 2.4: Section cut view mode
+- [ ] 2.5: Exploded layer view mode
+- [ ] 2.6: Build sequence animation mode
+- [ ] 2.7: BOM panel component
+- [ ] 2.8: Brick sub-builder
 
-### Phase 2 (8/8 COMPLETE) — Depth Features
-GeometryType unification, click-to-inspect, extruded-profile, camera hook, nosing detail, comparison mode, handrail graspability
+### Phase 3 — Advanced Features (Blocked by Phase 2)
+- [ ] 3.1: MEP integration layer
+- [ ] 3.2: Waterproofing layers
+- [ ] 3.3: Wall-to-structure connection details
+- [ ] 3.4: Comparison mode + ComparisonDashboard
+- [ ] 3.5: International wall type comparison
 
-### Phase 3 (9/9 COMPLETE) — Flagship Features
-L-shape/U-shape geometry, egress calculator, evacuation sim, children's safety, materials
+## Previous Project: Stairway Configurator v2 — ALL PHASES COMPLETE
 
-### Bug Fixes
-- `e0f56b77` — GeometrySwitch useMemo extracted to sub-component
-- `9366fb25` — ModuleViewer useTemplateContent moved before early returns
+### Phases 1-3 Complete (28/28 tasks)
+- Phase 1 (11/11): Foundation — types, constants, computation, geometry refactor
+- Phase 2 (8/8): Depth — GeometryType unification, extruded-profile, comparison mode
+- Phase 3 (9/9): Flagship — L/U-shape geometry, egress calculator, materials
+- Phase 4 (8/8): 3D rendering + unit tests
 
-## Backlog (Phase 4+)
-- Winder stairs (complex tread geometry)
-- Spiral stairs (requires different geometry model)
-- Guided tour system
-- drei Instances for evacuation particles (performance optimization)
+### Key Commits
+- `3abdcb38` — Phase 4: wire 3D rendering + unit tests
+- `9c4f8af0` — Phase 3: L/U-shape geometry, egress calculator, children's safety, materials
+- `9366fb25` — fix: ModuleViewer useTemplateContent moved before early returns
+
+## Stairway Backlog (Phase 5+)
+- Winder stairs, spiral stairs, guided tour system, drei Instances for evacuation
