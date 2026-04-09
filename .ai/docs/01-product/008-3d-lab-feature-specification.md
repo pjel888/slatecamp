@@ -1,6 +1,6 @@
 # 3D Lab Feature Specification
 
-**Last Updated:** 2026-04-08
+**Last Updated:** 2026-04-09
 **Status:** Active — Codebase Source of Truth  
 **Version:** 3.0 (Comprehensive Codebase-Derived Specification)
 **Audit Source:** `.ai/plans/3d-lab-feature-specification-plan-2026-04-08.md`
@@ -19,12 +19,13 @@
 4. [Template System (7 Templates)](#4-template-system-7-templates)
 5. [Module Complete Catalogue (209 Modules)](#5-module-complete-catalogue-209-modules)
 6. [Component Architecture](#6-component-architecture)
-7. [State Management (10 Stores)](#7-state-management-10-stores)
+7. [State Management (11 Stores)](#7-state-management-11-stores)
 8. [Data Flow & API Contract](#8-data-flow--api-contract)
 9. [Database Schema](#9-database-schema)
 10. [Rendering & Performance Architecture](#10-rendering--performance-architecture)
 11. [Asset Pipeline](#11-asset-pipeline)
 12. [Interaction & UX Patterns](#12-interaction--ux-patterns)
+12A. [Unified Viewport Shell](#12a-unified-viewport-shell)
 13. [Regulatory Compliance Engine](#13-regulatory-compliance-engine)
 14. [Pedagogical Integration](#14-pedagogical-integration)
 15. [Hook & Utility Inventory](#15-hook--utility-inventory)
@@ -951,7 +952,7 @@ interface ModuleRegistryEntry {
 
 ---
 
-## 6. Component Architecture
+## 6. Component Architecture <!-- updated: 2026-04-09 -->
 
 ### Component Tree
 
@@ -1034,6 +1035,13 @@ flowchart TD
 | `OnboardingFlow` | `components/OnboardingFlow.tsx` | Client | First-time user tutorial overlay |
 | `ModuleContextCard` | `components/ModuleContextCard.tsx` | Client | Professional scenario context card |
 | `Workspace` | `src/components/3d/Workspace.tsx` | Client | Legacy GLTF viewer (fallback) |
+| `ViewportShell` | `components/shell/ViewportShell.tsx` | Client | Unified layout shell -- CSS grid with collapsible sidebars |
+| `ViewportSidebar` | `components/shell/ViewportSidebar.tsx` | Client | Single sidebar container for all modules |
+| `ViewportHeader` | `components/shell/ViewportHeader.tsx` | Client | Unified top bar (absorbs LabTopBar) |
+| `ViewportToolbar` | `components/shell/ViewportToolbar.tsx` | Client | Config-driven floating toolbar |
+| `ViewportBottomSheet` | `components/shell/ViewportBottomSheet.tsx` | Client | Mobile tab-based sidebar replacement |
+| `ViewportStatusBar` | `components/shell/ViewportStatusBar.tsx` | Client | Optional compliance/dimension strip |
+| `PanelCollapseButton` | `components/shell/PanelCollapseButton.tsx` | Client | Single collapse handle for all sidebars |
 
 ### Bespoke Scenes (Legacy)
 
@@ -1046,7 +1054,7 @@ flowchart TD
 
 ---
 
-## 7. State Management (10 Stores)
+## 7. State Management (11 Stores) <!-- updated: 2026-04-09 -->
 
 ### Store 1: `useLabNavigationStore`
 
@@ -1244,6 +1252,37 @@ Used by the bespoke Site Development Controls module. Contains lot parameters, z
 **File:** `src/features/3d-lab/DevControlsModule/stores/useSelectionStore.ts`
 
 Selection state for DevControls module -- tracks which lot zones, layers, and building elements are currently selected/highlighted.
+
+### Store 11: `useViewportShellStore`
+
+**File:** `src/features/3d-lab/stores/useViewportShellStore.ts`
+
+```typescript
+interface ViewportShellState {
+  leftSidebarCollapsed: boolean
+  rightSidebarCollapsed: boolean
+  activeViewMode: ViewMode  // 'perspective' | 'orthographic' | 'isometric' | 'top-down'
+  activeCameraPreset: string | null
+  mobileActiveTab: string
+  bottomSheetOpen: boolean
+  invalidateFn: (() => void) | null
+
+  // UI-only actions (no invalidate)
+  toggleLeftSidebar: () => void
+  toggleRightSidebar: () => void
+  setMobileTab: (tab: string) => void
+  setBottomSheetOpen: (open: boolean) => void
+
+  // Scene-affecting actions (calls invalidate)
+  setViewMode: (mode: ViewMode) => void
+  setCameraPreset: (presetId: string | null) => void
+
+  setInvalidateFn: (fn: (() => void) | null) => void
+  reset: () => void
+}
+```
+
+Shell-specific state for sidebar collapse, view mode, camera preset, and mobile tab. UI-only actions do NOT call invalidate(). Scene-affecting actions (view mode, camera preset) MUST call invalidate().
 
 ---
 
@@ -1511,7 +1550,7 @@ The `Workspace` component (`src/components/3d/Workspace.tsx`, ~500 lines) suppor
 
 ---
 
-## 12. Interaction & UX Patterns
+## 12. Interaction & UX Patterns <!-- updated: 2026-04-09 -->
 
 ### Implemented Interactions
 
@@ -1539,21 +1578,111 @@ The `Workspace` component (`src/components/3d/Workspace.tsx`, ~500 lines) suppor
 | **Guided sequence** | via stores | `advanceSequence()` / `setExploreMode('guided' | 'free')` |
 | **Dimension labels** | via overlays | `DimensionLabel` DOM overlay with violation state |
 | **Post-module CTA** | all | `PostModuleCTA` shown after module completion |
+| **Viewport Chrome** | all | `ViewportShell` + `ViewportToolbar` -- config-driven toolbar, unified sidebars, mobile bottom sheet |
 
 ### Not Yet Implemented (Scaffolded in Types)
 
 | Feature | Evidence |
 |---------|----------|
-| Cross-section toggle | `crossSectionEnabled` in store, not wired to template renderer |
-| Exploded view toggle | `explodedViewEnabled` in store, not wired to template renderer |
 | Challenge mode (find violations) | `hasChallengeMode` in config types, no UI implementation |
 | Learning phases (guided/faded/sandbox/challenge) | `supportedPhases` in config types, no progression system |
 | Camera tours | `presetViews` in ModuleConfig (plan/section/elevation), no tour UI |
 | Asset preloading | `assets.models[]` and `assets.textures[]` in registry, no consumers |
 
+**Note:** Camera presets are now available in all modules via ViewportToolbar (no longer DevControls-only).
+
 ### Mobile Touch
 
 No explicit mobile touch handling in the core lab -- OrbitControls handles touch natively via `touch-action: none` on the canvas container. The DevControlsModule has a `BottomSheet` and `MobileSheetContent` for mobile layouts.
+
+---
+
+## 12A. Unified Viewport Shell <!-- updated: 2026-04-09 -->
+
+### Overview
+
+The Unified Viewport Shell is a slot-based layout system implemented in April 2026. The shell owns ALL viewport containers (header, sidebars, toolbar, bottom sheet). Templates inject CONTENT into named slots -- they never create their own containers. 213 modules (209 template + 4 calculator) now route through ViewportShell.
+
+### New Components (7 files in `src/features/3d-lab/components/shell/`)
+
+| Component | File | Replaces |
+|-----------|------|----------|
+| `ViewportShell` | `shell/ViewportShell.tsx` | `LabModuleShell` |
+| `ViewportSidebar` | `shell/ViewportSidebar.tsx` | `LabPanelLayout` panels |
+| `ViewportHeader` | `shell/ViewportHeader.tsx` | `LabTopBar` (absorbs) |
+| `ViewportToolbar` | `shell/ViewportToolbar.tsx` | DevControls' ViewportToolbar, Calculator's FloatingCameraBar |
+| `ViewportBottomSheet` | `shell/ViewportBottomSheet.tsx` | DevControls' BottomSheet |
+| `ViewportStatusBar` | `shell/ViewportStatusBar.tsx` | New |
+| `PanelCollapseButton` | `shell/PanelCollapseButton.tsx` | All divergent collapse buttons |
+
+### New Types (`src/features/3d-lab/types/templates.ts`)
+
+- `ViewportShellConfig` -- declares which layout slots a module uses (leftSidebar, rightSidebar, statusBar, mobileBottomSheetTabs)
+- `ViewportCapabilities` -- declares which toolbar controls a module supports (cameraPresets, viewModes, crossSection, explodedView, humanScale, resetCamera)
+- `ViewportShellContent` -- what templates return: leftSidebarContent, rightSidebarContent, canvasContent, statusBarContent, toolbarExtras
+- `TEMPLATE_SHELL_DEFAULTS` -- convention-over-configuration defaults per template type
+
+### New Store: `useViewportShellStore` (Store 11)
+
+**File:** `src/features/3d-lab/stores/useViewportShellStore.ts`
+
+State: leftSidebarCollapsed, rightSidebarCollapsed, activeViewMode, activeCameraPreset, mobileActiveTab, bottomSheetOpen, invalidateFn
+
+UI-only actions (no invalidate): toggleLeftSidebar, toggleRightSidebar, setMobileTab, setBottomSheetOpen
+Scene-affecting actions (calls invalidate): setViewMode, setCameraPreset
+
+### Content Builder Hook: `useTemplateContent`
+
+**File:** `src/features/3d-lab/hooks/useTemplateContent.tsx`
+
+Builds ViewportShellContent per template type. Creates stable module stores, resolves template defaults, and returns sidebar + canvas + toolbar content for each template type.
+
+### Extracted Sidebar Components
+
+| Component | Template | Purpose |
+|-----------|----------|---------|
+| `ExplodedPartsSidebar` | exploded | Parts list with active part detail |
+| `ExplodeSliderControl` | exploded | Compact explode slider for toolbar |
+| `CutawayLayersSidebar` | cutaway | Layer list with visibility tied to cut depth |
+| `CutDepthSliderControl` | cutaway | Compact cut depth slider for toolbar |
+| `FloorPlanLegendSidebar` | floorplan | Room legend + violation summary |
+| `AnimatedStepsSidebar` | animated | Step list with playback controls |
+
+### Layout Architecture
+
+Desktop: CSS Grid (DevControls-proven pattern)
+```
+[left-sidebar] [left-handle 20px] [viewport 1fr] [right-handle 20px] [right-sidebar]
+```
+Panel collapse: `grid-template-columns` CSS transition (200ms cubic-bezier).
+
+Mobile (< md): Flex column with ViewportBottomSheet replacing sidebars as tabs.
+
+### Default Layout Matrix
+
+| Template | Left Sidebar | Right Sidebar | View Modes | Status Bar |
+|----------|-------------|---------------|------------|------------|
+| parametric | Yes (240px, Controls) | Conditional (280px, Compliance) | perspective, isometric | violations |
+| exploded | No | Yes (280px, Parts) | perspective, isometric | No |
+| cutaway | No | Yes (280px, Layers) | perspective, isometric | No |
+| floorplan | Yes (240px, Controls) | Yes (280px, Legend) | top-down, perspective | No |
+| animated | No | Yes (280px, Steps) | perspective, isometric | No |
+| calculator | Internal layout | Internal layout | orthographic, perspective | Internal |
+| wall-configurator | Yes (320px, Configure) | Yes (340px, Materials) | perspective, isometric | area |
+
+### Migration Status
+
+All 213 modules route through ViewportShell:
+- 6/7 templates: full shell with sidebars + toolbar
+- Calculator (4 modules): ViewportShell header, own internal 3-column layout
+- DevControls (1 module): ViewportShell header, own internal CSS grid
+
+### Performance Contract
+
+- Shell is 100% DOM-rendered -- zero Three.js scene objects
+- Sidebar collapse: 200ms CSS transition, 0 JS frames
+- Controls that don't affect 3D scene MUST NOT call invalidate()
+- Camera transitions: self-terminating via useAnimationComplete
 
 ---
 
@@ -1779,7 +1908,7 @@ However, the following 3D Lab components should be treated as **migration-sensit
 
 ---
 
-## 19. Known Open Decisions & Technical Debt
+## 19. Known Open Decisions & Technical Debt <!-- updated: 2026-04-09 -->
 
 | Location | Description | Tag |
 |----------|-------------|-----|
@@ -1793,6 +1922,14 @@ However, the following 3D Lab components should be treated as **migration-sensit
 | `useLabStore.ts` | Combined facade re-subscribes to all 3 stores on every render | PERF: Consider memoization or selector optimization |
 | `DASHBOARD_VISIBLE_IDS` | Only 4 of 209 modules visible | DECISION: Rollout strategy for remaining modules |
 | `_stores/`, `_types/`, `_config/` | Shadow directories with re-exports -- duplicate navigation paths | TECH DEBT: Consolidate to single path |
+| `LabModuleShell` | No longer used by any active rendering path -- all modules route through ViewportShell | TECH DEBT: Remove after confirming no external imports |
+| `LabPanelLayout` | Competing layout system -- ViewportShell + ViewportSidebar is the replacement | TECH DEBT: Remove after confirming no external imports |
+| Calculator template | Uses ViewportShell header but keeps own internal 3-column layout | DECISION: Full migration deferred -- complex per-toolType input panels |
+| DevControlsModule panels | Uses ViewportShell header but keeps own 55+ file internal layout | DECISION: Full sidebar migration deferred -- high risk |
+| Human scale toggle | Button in ViewportToolbar is a no-op placeholder | TODO: Wire to HumanSilhouette visibility |
+| Bottom sheet gesture | Simple expand/collapse toggle implemented | NEEDS PRODUCT INPUT: Native iOS-style drag or keep toggle? |
+| `crossSectionEnabled` | Previously not wired to template renderer | RESOLVED: Wired to ViewportToolbar toggle (2026-04-09) |
+| `explodedViewEnabled` | Previously not wired to template renderer | RESOLVED: Wired to ViewportToolbar toggle (2026-04-09) |
 
 ### Coverage Gaps (Content, not Code)
 
