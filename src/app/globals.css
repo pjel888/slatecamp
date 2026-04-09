@@ -368,6 +368,11 @@
   --z-tooltip: 700;
   --z-toast: 800;
 
+  /* Viewport overlay — glass morphism for floating 3D controls */
+  --viewport-overlay-bg: oklch(0% 0 0 / 0.6);
+  --viewport-overlay-text: oklch(100% 0 0 / 0.7);
+  --viewport-overlay-active: oklch(100% 0 0 / 0.2);
+
   --chart-1: #1B3FC4;
   /* Camp Cobalt */
   --chart-2: #2D9F6F;

@@ -61,7 +61,7 @@ export const LabViewportFrame = ({ children }: LabViewportFrameProps) => {
           shadows
           dpr={[1, dpr]}
           camera={{ position: [6, 6, 6], fov: 35 }}
-          gl={{ antialias: true, alpha: false, stencil: false, depth: true }}
+          gl={{ antialias: true, alpha: false, stencil: false, depth: true, preserveDrawingBuffer: true }}
           style={{ pointerEvents: 'auto' }}
         >
           <PerformanceMonitor

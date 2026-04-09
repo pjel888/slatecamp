@@ -4,10 +4,20 @@ import { useCallback, useEffect, useMemo, type ReactNode } from 'react'
 import { useViewportShellStore } from '@/features/3d-lab/stores/useViewportShellStore'
 import { ViewportHeader } from './ViewportHeader'
 import { ViewportSidebar } from './ViewportSidebar'
-import { ViewportToolbar } from './ViewportToolbar'
+// ViewportToolbar import removed — DEPRECATED in Phase 5. SceneToolbar + CameraNavigationBar replace it.
+// File kept at ./ViewportToolbar.tsx for reference during toolbarExtras migration.
+import { SceneToolbar } from './SceneToolbar'
+import { CameraNavigationBar } from './CameraNavigationBar'
+import { LayersPanel } from './LayersPanel'
 import { ViewportStatusBar } from './ViewportStatusBar'
 import { ViewportBottomSheet } from './ViewportBottomSheet'
 import { PanelCollapseButton } from './PanelCollapseButton'
+import { useViewportShortcuts } from '@/features/3d-lab/hooks/useViewportShortcuts'
+import { WebGLRecovery } from './WebGLRecovery'
+import { ViewportToast } from './ViewportToast'
+import { ViewportContextMenu } from './ViewportContextMenu'
+import { CommandPalette } from './CommandPalette'
+import { FirstTimeTooltip } from './FirstTimeTooltip'
 import type {
   SidebarConfig,
   ViewportShellConfig,
@@ -72,10 +82,12 @@ export const ViewportShell = ({
   totalCount,
   onBack,
   shellConfig,
-  capabilities,
+  capabilities: _capabilities,
   content,
   children,
 }: ViewportShellProps) => {
+  useViewportShortcuts()
+
   const leftCollapsed = useViewportShellStore((s) => s.leftSidebarCollapsed)
   const rightCollapsed = useViewportShellStore((s) => s.rightSidebarCollapsed)
   const toggleLeft = useViewportShellStore((s) => s.toggleLeftSidebar)
@@ -146,7 +158,7 @@ export const ViewportShell = ({
   }, [])
 
   return (
-    <div className="flex h-full w-full flex-col overflow-hidden bg-surface-light">
+    <div className="flex h-full w-full flex-col overflow-hidden bg-surface-light" data-viewport-shell>
       {/* ── Header ──────────────────────────────────────────────────── */}
       <ViewportHeader
         title={title}
@@ -179,15 +191,39 @@ export const ViewportShell = ({
         )}
 
         {/* Viewport (1fr) */}
-        <div className="relative overflow-hidden min-h-0 min-w-0">
+        <div className="relative overflow-hidden min-h-0 min-w-0 cursor-grab active:cursor-grabbing">
           {/* Canvas content from template */}
           {content.canvasContent}
 
-          {/* Floating toolbar */}
-          <ViewportToolbar
-            capabilities={capabilities}
-            extras={content.toolbarExtras}
-          />
+          {/* Viewport controls — rendered here ONLY when ViewportShell manages sidebars.
+              For bespoke modules (DevControls) that manage their own internal layout,
+              these controls are positioned in their own ViewportWrapper instead,
+              so they align with the actual 3D canvas area, not the full shell width. */}
+          {(leftCfg || rightCfg) && (
+            <>
+              <SceneToolbar />
+              <LayersPanel />
+              <CameraNavigationBar />
+            </>
+          )}
+
+          {/* WebGL context loss recovery overlay */}
+          <WebGLRecovery />
+
+          {/* Non-blocking viewport toasts (warnings, errors) */}
+          <ViewportToast />
+
+          {/* First-time onboarding tooltip — auto-dismisses after 8s, stored in localStorage */}
+          <FirstTimeTooltip />
+
+          {/* DEPRECATED: Old ViewportToolbar replaced by SceneToolbar (top-left) + CameraNavigationBar (bottom-center) in Phase 0A.
+              Template-specific extras (explode slider, cut depth) need migration to SceneToolbar popover — tracked as Phase 3 follow-up.
+              Keeping import but not rendering to avoid breaking toolbarExtras consumers during transition. */}
+          {content.toolbarExtras && (
+            <div className="absolute bottom-12 left-1/2 z-10 -translate-x-1/2 pointer-events-auto">
+              {content.toolbarExtras}
+            </div>
+          )}
 
           {/* Status bar */}
           {shellConfig.statusBar && content.statusBarContent && (
@@ -217,13 +253,30 @@ export const ViewportShell = ({
       {/* ── Mobile: Flex Column + Bottom Sheet ─────────────────────── */}
       <div className="flex flex-1 flex-col min-h-0 md:hidden">
         {/* Canvas fills available space */}
-        <div className="relative flex-1 overflow-hidden min-h-0">
+        <div className="relative flex-1 overflow-hidden min-h-0 cursor-grab active:cursor-grabbing">
           {content.canvasContent}
 
-          <ViewportToolbar
-            capabilities={capabilities}
-            extras={content.toolbarExtras}
-          />
+          {/* Viewport controls — only when shell manages sidebars (see desktop comment) */}
+          {(leftCfg || rightCfg) && (
+            <>
+              <SceneToolbar />
+              <LayersPanel />
+              <CameraNavigationBar />
+            </>
+          )}
+
+          {/* WebGL context loss recovery overlay */}
+          <WebGLRecovery />
+
+          {/* Non-blocking viewport toasts (warnings, errors) */}
+          <ViewportToast />
+
+          {/* DEPRECATED: See desktop viewport comment above */}
+          {content.toolbarExtras && (
+            <div className="absolute bottom-12 left-1/2 z-10 -translate-x-1/2 pointer-events-auto">
+              {content.toolbarExtras}
+            </div>
+          )}
         </div>
 
         {/* Bottom sheet replaces sidebars */}
@@ -232,6 +285,12 @@ export const ViewportShell = ({
 
       {/* Overlay children (onboarding, context card, etc.) */}
       {children}
+
+      {/* Right-click context menu */}
+      <ViewportContextMenu />
+
+      {/* Command palette — Ctrl+K or F3 */}
+      <CommandPalette />
     </div>
   )
 }

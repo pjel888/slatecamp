@@ -3,9 +3,13 @@
 import { memo, type ReactNode, Suspense, useState, useEffect } from 'react'
 import { CanvasLoadingOverlay } from '@/components/r3f/CanvasLoadingOverlay'
 import { useInvalidateOnChange } from '@/features/3d-lab/hooks/useInvalidateOnChange'
+import { useRegisterInvalidate } from '@/components/r3f/useRegisterInvalidate'
+import { useViewportShellStore } from '@/features/3d-lab/stores/useViewportShellStore'
+import { useCameraSnap } from '@/features/3d-lab/hooks/useCameraSnap'
 import { SceneTunnel } from './GlobalCanvasPortal'
 import { SceneConfig, type SceneConfigProps } from './rendering/SceneConfig'
 import { CameraSync } from './overlays/CameraSync'
+import { SceneGround } from './shell/SceneGround'
 
 interface CanvasWrapperProps {
   children: ReactNode
@@ -17,6 +21,11 @@ interface CanvasWrapperProps {
 
 const InvalidateRegistrar = () => {
   useInvalidateOnChange()
+  // Register R3F invalidate into the viewport shell store so toolbar toggles
+  // (grid, xray, dimensions) and camera presets can trigger scene re-renders.
+  const setViewportInvalidateFn = useViewportShellStore((s) => s.setInvalidateFn)
+  useRegisterInvalidate(setViewportInvalidateFn)
+  useCameraSnap()
   return null
 }
 
@@ -38,6 +47,7 @@ export const CanvasWrapper = memo(function CanvasWrapper({
         <InvalidateRegistrar />
         <SceneConfig {...sceneConfig} />
         <CameraSync />
+        <SceneGround />
         <Suspense fallback={null}>{children}</Suspense>
       </SceneTunnel.In>
     </div>

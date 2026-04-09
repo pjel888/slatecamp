@@ -7,6 +7,7 @@ import * as THREE from 'three'
 import { StudioLighting } from './StudioLighting'
 import type { LightingPreset } from './StudioLighting'
 import { SceneBase } from './SceneBase'
+import { useViewportShellStore } from '@/features/3d-lab/stores/useViewportShellStore'
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -19,9 +20,9 @@ export interface SceneConfigProps {
   orthographic?: boolean
   /** Orthographic camera zoom factor. Default: 1 */
   cameraZoom?: number
-  /** Minimum polar angle for OrbitControls (radians). Default: 0 */
+  /** Minimum polar angle for OrbitControls (radians). Default: 0.1 (prevents directly overhead) */
   minPolarAngle?: number
-  /** Maximum polar angle for OrbitControls (radians). Default: Math.PI / 1.75 */
+  /** Maximum polar angle for OrbitControls (radians). Default: Math.PI / 2 - 0.05 (prevents below ground) */
   maxPolarAngle?: number
   /** Minimum zoom distance for OrbitControls. Default: 3 */
   minDistance?: number
@@ -115,8 +116,8 @@ export const SceneConfig = ({
   cameraFov = 35,
   orthographic = false,
   cameraZoom = 1,
-  minPolarAngle = 0,
-  maxPolarAngle = Math.PI / 1.75,
+  minPolarAngle = 0.1,
+  maxPolarAngle = Math.PI / 2 - 0.05,
   minDistance = 3,
   maxDistance = Infinity,
   showGround = true,
@@ -126,6 +127,8 @@ export const SceneConfig = ({
   clearColor,
   flat = false,
 }: SceneConfigProps) => {
+  const navMode = useViewportShellStore((s) => s.navMode)
+
   return (
     <>
       {/* Camera — orthographic uses drei component; perspective uses imperative setup */}
@@ -139,13 +142,23 @@ export const SceneConfig = ({
         <CameraSetup position={cameraPosition} fov={cameraFov} />
       )}
 
-      {/* Controls */}
+      {/* Controls — navigation mode drives orbit/pan/look behavior */}
       <OrbitControls
         makeDefault
         minPolarAngle={minPolarAngle}
         maxPolarAngle={maxPolarAngle}
         minDistance={minDistance}
         maxDistance={maxDistance}
+        enableDamping={true}
+        dampingFactor={0.08}
+        enableRotate={navMode === 'orbit' || navMode === 'look'}
+        enablePan={navMode === 'pan'}
+        rotateSpeed={navMode === 'look' ? 0.3 : 1}
+        mouseButtons={{
+          LEFT: navMode === 'pan' ? THREE.MOUSE.PAN : THREE.MOUSE.ROTATE,
+          MIDDLE: THREE.MOUSE.PAN,
+          RIGHT: -1 as unknown as THREE.MOUSE, // DISABLED — right-click reserved for context menu
+        }}
       />
 
       {/* Lighting */}

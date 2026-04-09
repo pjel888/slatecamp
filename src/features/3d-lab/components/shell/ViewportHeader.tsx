@@ -1,5 +1,6 @@
 'use client'
 
+import { ArrowLeft, Settings } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 interface ViewportHeaderProps {
@@ -26,49 +27,56 @@ export const ViewportHeader = ({
   return (
     <div
       className={cn(
-        'flex items-center justify-between px-4 shrink-0 h-9 bg-camp-black text-white/60 border-b border-white/5',
+        'flex items-center justify-between px-4 shrink-0 h-10 bg-card text-muted-foreground border-b border-border',
         className,
       )}
     >
       {/* Left: Back link */}
       <button
         onClick={onBack}
-        className="flex items-center gap-1.5 transition-colors duration-150 ease-out cursor-pointer bg-transparent border-0 p-0 font-mono text-[10px] uppercase tracking-wider text-white/40 hover:text-white/80"
+        className="flex items-center gap-1.5 transition-colors duration-150 ease-out cursor-pointer bg-transparent border-0 p-0 font-mono text-[10px] uppercase tracking-wider text-muted-foreground hover:text-foreground"
       >
-        <span>←</span>
+        <ArrowLeft className="h-3.5 w-3.5" />
         <span>Back to Browser</span>
       </button>
 
       {/* Center: Module title + code reference */}
       <div className="flex items-center gap-2.5">
-        <span className="font-sans text-[12px] font-semibold text-white/90 tracking-tight">
+        <span className="font-sans text-[12px] font-semibold text-foreground tracking-tight">
           {title}
         </span>
         {codeReference && (
           <>
-            <div className="h-3 w-px bg-white/10" />
-            <span className="font-mono text-[10px] font-bold text-white/30 uppercase tracking-widest">
+            <div className="h-3 w-px bg-border" />
+            <span className="font-mono text-[10px] font-bold text-muted-foreground/60 uppercase tracking-widest">
               {codeReference}
             </span>
           </>
         )}
       </div>
 
-      {/* Right: Progress */}
+      {/* Right: Progress + Settings */}
       <div className="flex items-center gap-2">
         {totalCount > 0 && (
           <>
-            <div className="h-1 w-16 bg-white/10 rounded-full overflow-hidden hidden sm:block">
+            <div className="h-1 w-16 bg-muted rounded-full overflow-hidden hidden sm:block">
               <div
                 className="h-full bg-primary transition-all duration-500"
                 style={{ width: `${(visitedCount / totalCount) * 100}%` }}
               />
             </div>
-            <span className="font-mono text-[10px] text-white/30 uppercase tracking-tighter">
+            <span className="font-mono text-[10px] text-muted-foreground/60 uppercase tracking-tighter">
               {visitedCount} / {totalCount} hotspots
             </span>
           </>
         )}
+        <button
+          type="button"
+          aria-label="Settings"
+          className="flex h-7 w-7 items-center justify-center rounded-sm text-muted-foreground transition-colors duration-150 ease-out hover:text-foreground hover:bg-muted"
+        >
+          <Settings className="h-3.5 w-3.5" />
+        </button>
       </div>
     </div>
   )

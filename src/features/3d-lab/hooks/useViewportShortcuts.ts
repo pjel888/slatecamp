@@ -1,0 +1,121 @@
+'use client'
+
+// useViewportShortcuts — global keyboard shortcuts for 3D Lab viewport
+// Mounted by ViewportShell. Active when viewport is focused or no input is focused.
+
+import { useEffect } from 'react'
+import { useViewportShellStore } from '@/features/3d-lab/stores/useViewportShellStore'
+
+export const useViewportShortcuts = () => {
+  useEffect(() => {
+    const handler = (e: KeyboardEvent) => {
+      // Don't capture shortcuts when user is typing in an input/textarea
+      const target = e.target as HTMLElement
+      if (target.tagName === 'INPUT' || target.tagName === 'TEXTAREA' || target.isContentEditable) {
+        return
+      }
+
+      const store = useViewportShellStore.getState()
+
+      switch (e.key.toLowerCase()) {
+        // Scene toolbar shortcuts
+        case 'g':
+          e.preventDefault()
+          store.toggleGrid()
+          break
+        case 'd':
+          e.preventDefault()
+          store.toggleDimensions()
+          break
+        case 'x':
+          e.preventDefault()
+          store.toggleXray()
+          break
+        case 'l':
+          e.preventDefault()
+          store.toggleLayersPanel()
+          break
+        case 'p':
+          if (!e.ctrlKey && !e.metaKey) {
+            e.preventDefault()
+            // Trigger screenshot — find canvas and download
+            const canvas = document.querySelector('canvas')
+            if (canvas) {
+              try {
+                const link = document.createElement('a')
+                link.download = `slatecamp-screenshot-${Date.now()}.png`
+                link.href = canvas.toDataURL('image/png')
+                link.click()
+              } catch { /* silent — SceneToolbar handles error display */ }
+            }
+          }
+          break
+        case 'f':
+          if (!e.ctrlKey && !e.metaKey) {
+            e.preventDefault()
+            const viewport = document.querySelector('[data-viewport-shell]')
+            if (viewport) {
+              try {
+                if (document.fullscreenElement) {
+                  document.exitFullscreen()
+                } else {
+                  viewport.requestFullscreen()
+                }
+              } catch { /* silent */ }
+            }
+          }
+          break
+
+        // Camera navigation shortcuts
+        case '1':
+          e.preventDefault()
+          store.snapToPreset('front')
+          break
+        case '2':
+          e.preventDefault()
+          store.snapToPreset('top')
+          break
+        case '3':
+          e.preventDefault()
+          store.snapToPreset('iso')
+          break
+        case 'z':
+          if (!e.ctrlKey && !e.metaKey) {
+            e.preventDefault()
+            store.snapToPreset('zoom-to-fit')
+          }
+          break
+        case 'home':
+          e.preventDefault()
+          store.snapToPreset('zoom-to-fit')
+          break
+        case 'r':
+          if (!e.ctrlKey && !e.metaKey) {
+            e.preventDefault()
+            store.snapToPreset('reset')
+          }
+          break
+
+        // Panel shortcuts
+        case '[':
+          e.preventDefault()
+          store.toggleLeftSidebar()
+          break
+        case ']':
+          e.preventDefault()
+          store.toggleRightSidebar()
+          break
+      }
+
+      // Ctrl+M — toggle both panels (minimize UI)
+      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'm') {
+        e.preventDefault()
+        store.toggleLeftSidebar()
+        store.toggleRightSidebar()
+      }
+    }
+
+    window.addEventListener('keydown', handler)
+    return () => window.removeEventListener('keydown', handler)
+  }, [])
+}

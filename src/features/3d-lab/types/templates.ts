@@ -53,6 +53,11 @@ export interface ParameterDef {
   group?: string
   /** Decimal places for slider display */
   decimals?: number
+  /** Progressive disclosure level — controls sidebar grouping visibility */
+  disclosureLevel?: 'essential' | 'advanced' | 'expert'
+  /** Optional visibility predicate — parameter hidden when this returns false.
+   *  Receives current param values. Used for core-type-dependent parameter panels. */
+  visibleWhen?: (params: Record<string, number | boolean | string>) => boolean
 }
 
 // ─── Violation Rules ─────────────────────────────────────────────────────────
@@ -106,6 +111,7 @@ export type GeometryType =
   | 'sphere'
   | 'cone'
   | 'extruded-profile'
+  | 'instanced'
 
 export interface GeometryInstruction {
   id: string
@@ -124,6 +130,17 @@ export interface GeometryInstruction {
   profilePoints?: [number, number][]
   /** Extrusion depth in scene units for extruded-profile type */
   extrudeDepth?: number
+  // ── Instanced geometry fields (used when type === 'instanced') ──
+  /** Base shape for instanced geometry */
+  instancedShape?: 'box' | 'cylinder' | 'sphere'
+  /** Constructor args for the base shape */
+  instancedShapeArgs?: number[]
+  /** World-space positions for each instance */
+  instancedPositions?: Vector3Tuple[]
+  /** Per-instance rotations (optional — defaults to [0,0,0]) */
+  instancedRotations?: Vector3Tuple[]
+  /** Per-instance colors (optional — uses `color` for all if omitted) */
+  instancedColors?: string[]
 }
 
 // ─── Camera Config ───────────────────────────────────────────────────────────
@@ -424,6 +441,46 @@ export interface ViewportCapabilities {
   focusMode?: boolean
   /** Reset camera button (default: true) */
   resetCamera?: boolean
+  /** Module's default camera position — used by Reset button in CameraNavigationBar */
+  defaultCamera?: {
+    position: [number, number, number]
+    target?: [number, number, number]
+    fov?: number
+  }
+  /** Floating toolbar configuration — declares module-specific toolbar items */
+  floatingToolbar?: FloatingToolbarConfig
+  /** Enable KPI metrics bar */
+  kpiMetrics?: boolean
+  /** Enable camera preset bar */
+  cameraPresetBar?: boolean
+  /** Show compass rose for site planning modules */
+  compassRose?: boolean
+  /** Guided tour stops for this module */
+  tourStops?: Array<{
+    id: string
+    title: string
+    description: string
+    cameraPosition?: [number, number, number]
+    spotlightElement?: string
+  }>
+}
+
+export interface FloatingToolbarConfig {
+  position: 'top-left' | 'top-right'
+  items: FloatingToolbarItem[]
+}
+
+export interface FloatingToolbarItem {
+  id: string
+  /** Lucide icon name */
+  icon: string
+  label: string
+  shortcut?: string
+  type: 'toggle' | 'action'
+  /** Store field this toggles. Validated at runtime in dev mode — not compile-time typed.
+   *  ADR: Untyped string key was chosen over generic type parameter to keep config declaration
+   *  ergonomics simple. The FloatingToolbar component validates at runtime in dev. */
+  storeBinding?: string
 }
 
 export interface CameraPreset {
@@ -453,40 +510,74 @@ export interface ViewportShellContent {
 
 // ─── Template Default Configs ───────────────────────────────────────────────
 
+const DEFAULT_FLOATING_TOOLBAR: FloatingToolbarConfig = {
+  position: 'top-left' as const,
+  items: [
+    { id: 'grid', icon: 'Grid3x3', label: 'Grid', shortcut: 'G', type: 'toggle' as const, storeBinding: 'gridVisible' },
+    { id: 'dimensions', icon: 'Ruler', label: 'Dimensions', shortcut: 'D', type: 'toggle' as const, storeBinding: 'dimensionsVisible' },
+    { id: 'screenshot', icon: 'Camera', label: 'Screenshot', shortcut: 'P', type: 'action' as const },
+    { id: 'fullscreen', icon: 'Maximize2', label: 'Fullscreen', shortcut: 'F', type: 'action' as const },
+  ],
+}
+
 export const TEMPLATE_SHELL_DEFAULTS: Record<TemplateType, { shell: ViewportShellConfig; capabilities: ViewportCapabilities }> = {
   parametric: {
-    shell: { rightSidebar: { width: 280, title: 'Controls', mobileTabLabel: 'Controls' } },
-    capabilities: { cameraPresets: true, viewModes: ['perspective', 'isometric'], resetCamera: true },
+    shell: {
+      leftSidebar: { width: 320, title: 'Controls', mobileTabLabel: 'Controls' },
+      rightSidebar: { width: 300, title: 'Controls', mobileTabLabel: 'Controls' },
+    },
+    capabilities: {
+      cameraPresets: true, viewModes: ['perspective', 'isometric'], resetCamera: true,
+      cameraPresetBar: true, floatingToolbar: DEFAULT_FLOATING_TOOLBAR,
+    },
   },
   exploded: {
-    shell: { rightSidebar: { width: 280, title: 'Parts', mobileTabLabel: 'Parts' } },
-    capabilities: { cameraPresets: true, viewModes: ['perspective', 'isometric'], explodedView: true, resetCamera: true },
+    shell: { rightSidebar: { width: 300, title: 'Parts', mobileTabLabel: 'Parts' } },
+    capabilities: {
+      cameraPresets: true, viewModes: ['perspective', 'isometric'], explodedView: true, resetCamera: true,
+      cameraPresetBar: true, floatingToolbar: DEFAULT_FLOATING_TOOLBAR,
+    },
   },
   cutaway: {
-    shell: { rightSidebar: { width: 280, title: 'Layers', mobileTabLabel: 'Layers' } },
-    capabilities: { cameraPresets: true, viewModes: ['perspective', 'isometric'], crossSection: true, resetCamera: true },
+    shell: { rightSidebar: { width: 300, title: 'Layers', mobileTabLabel: 'Layers' } },
+    capabilities: {
+      cameraPresets: true, viewModes: ['perspective', 'isometric'], crossSection: true, resetCamera: true,
+      cameraPresetBar: true, floatingToolbar: DEFAULT_FLOATING_TOOLBAR,
+    },
   },
   floorplan: {
-    shell: { rightSidebar: { width: 280, title: 'Legend', mobileTabLabel: 'Legend' } },
-    capabilities: { cameraPresets: true, viewModes: ['top-down', 'perspective'], resetCamera: true },
+    shell: { rightSidebar: { width: 300, title: 'Legend', mobileTabLabel: 'Legend' } },
+    capabilities: {
+      cameraPresets: true, viewModes: ['top-down', 'perspective'], resetCamera: true,
+      cameraPresetBar: true, floatingToolbar: DEFAULT_FLOATING_TOOLBAR,
+    },
   },
   animated: {
-    shell: { rightSidebar: { width: 280, title: 'Steps', mobileTabLabel: 'Steps' } },
-    capabilities: { cameraPresets: true, viewModes: ['perspective', 'isometric'], resetCamera: true },
+    shell: { rightSidebar: { width: 300, title: 'Steps', mobileTabLabel: 'Steps' } },
+    capabilities: {
+      cameraPresets: true, viewModes: ['perspective', 'isometric'], resetCamera: true,
+      cameraPresetBar: true, floatingToolbar: DEFAULT_FLOATING_TOOLBAR,
+    },
   },
   calculator: {
     shell: {
-      leftSidebar: { width: 320, title: 'Inputs', mobileTabLabel: 'Inputs' },
+      leftSidebar: { width: 340, title: 'Inputs', mobileTabLabel: 'Inputs' },
       rightSidebar: { width: 340, title: 'Results', mobileTabLabel: 'Results' },
     },
-    capabilities: { viewModes: ['orthographic', 'perspective'], resetCamera: true },
+    capabilities: {
+      viewModes: ['orthographic', 'perspective'], resetCamera: true,
+      cameraPresetBar: true, floatingToolbar: DEFAULT_FLOATING_TOOLBAR,
+    },
   },
   'wall-configurator': {
     shell: {
-      leftSidebar: { width: 320, title: 'Configure', mobileTabLabel: 'Configure' },
-      rightSidebar: { width: 340, title: 'Materials', mobileTabLabel: 'Materials' },
+      leftSidebar: { width: 340, title: 'Configure', mobileTabLabel: 'Configure' },
+      rightSidebar: { width: 320, title: 'Materials', mobileTabLabel: 'Materials' },
     },
-    capabilities: { cameraPresets: true, viewModes: ['perspective', 'isometric'], resetCamera: true },
+    capabilities: {
+      cameraPresets: true, viewModes: ['perspective', 'isometric'], resetCamera: true,
+      cameraPresetBar: true, floatingToolbar: DEFAULT_FLOATING_TOOLBAR,
+    },
   },
 }
 
