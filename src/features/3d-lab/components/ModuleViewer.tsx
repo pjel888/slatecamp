@@ -205,8 +205,8 @@ export const ModuleViewer = ({ modelId, basePath }: ModuleViewerProps) => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const templateContent = useTemplateContent(modelId, config)
 
-  // If useTemplateContent returns content, render via ViewportShell.
-  // Otherwise fall back to the legacy LabModuleShell path.
+  // ── Unified Viewport Shell path ───────────────────────────────────────────
+  // Template-driven modules: ViewportShell with slot content from useTemplateContent
   if (templateContent && !isBespoke) {
     return (
       <ViewportShell
@@ -240,7 +240,45 @@ export const ModuleViewer = ({ modelId, basePath }: ModuleViewerProps) => {
     )
   }
 
-  // ── Legacy path (bespoke + non-migrated templates) ────────────────────────
+  // ── Bespoke modules (DevControls): ViewportShell header + own internal layout
+  if (isBespoke) {
+    return (
+      <ViewportShell
+        title={title}
+        codeReference={codeRef}
+        visitedCount={0}
+        totalCount={totalALEQuestions}
+        onBack={handleBack}
+        shellConfig={{}}
+        capabilities={{ resetCamera: true }}
+        content={{
+          canvasContent: (
+            <LabViewport
+              modelId={modelId}
+              model={{ model_id: modelId, name: title, slug: modelId, url: '' }}
+              parameters={[]}
+              hotspots={[]}
+              userTier="free"
+              preLoadedConfig={config}
+            />
+          ),
+        }}
+      >
+        {showContextCard && !showOnboarding && (
+          <div className="z-30 pointer-events-auto">
+            <ModuleContextCard config={moduleMetadata} onDismiss={handleContextDismiss} />
+          </div>
+        )}
+        {showOnboarding && (
+          <div className="z-50 pointer-events-auto">
+            <OnboardingFlow onComplete={handleOnboardingComplete} />
+          </div>
+        )}
+      </ViewportShell>
+    )
+  }
+
+  // ── Legacy fallback (calculator, non-migrated templates) ──────────────────
   return (
     <LabModuleShell
       topBar={
@@ -253,39 +291,21 @@ export const ModuleViewer = ({ modelId, basePath }: ModuleViewerProps) => {
         />
       }
     >
-      {isBespoke ? (
-        <div className="h-full w-full relative">
-          <LabViewport
-            modelId={modelId}
-            model={{ model_id: modelId, name: title, slug: modelId, url: '' }}
-            parameters={[]}
-            hotspots={[]}
-            userTier="free"
-            preLoadedConfig={config}
-          />
-          {showContextCard && !showOnboarding && (
-            <div className="z-30 pointer-events-auto">
-              <ModuleContextCard config={moduleMetadata} onDismiss={handleContextDismiss} />
-            </div>
-          )}
-        </div>
-      ) : (
-        <LabViewportFrame>
-          <LabViewport
-            modelId={modelId}
-            model={{ model_id: modelId, name: title, slug: modelId, url: '' }}
-            parameters={[]}
-            hotspots={[]}
-            userTier="free"
-            preLoadedConfig={config}
-          />
-          {showContextCard && !showOnboarding && (
-            <div className="z-30 pointer-events-auto">
-              <ModuleContextCard config={moduleMetadata} onDismiss={handleContextDismiss} />
-            </div>
-          )}
-        </LabViewportFrame>
-      )}
+      <LabViewportFrame>
+        <LabViewport
+          modelId={modelId}
+          model={{ model_id: modelId, name: title, slug: modelId, url: '' }}
+          parameters={[]}
+          hotspots={[]}
+          userTier="free"
+          preLoadedConfig={config}
+        />
+        {showContextCard && !showOnboarding && (
+          <div className="z-30 pointer-events-auto">
+            <ModuleContextCard config={moduleMetadata} onDismiss={handleContextDismiss} />
+          </div>
+        )}
+      </LabViewportFrame>
 
       {showOnboarding && (
         <div className="z-50 pointer-events-auto">
