@@ -133,6 +133,7 @@ export const ROUTES = {
     settings: '/admin/settings',
     taxonomy: '/admin/taxonomy',
     threeDModels: '/admin/3d-models',
+    wiki: '/admin/wiki',
     // Dynamic helpers
     article: (id: string) => `/admin/knowledge/${id}` as const,
     question: (id: string) => `/admin/knowledge/questions/${id}` as const,
@@ -143,6 +144,7 @@ export const ROUTES = {
   ceo: {
     root: '/ceo',
     team: '/ceo/team',
+    financials: '/ceo/financials',
   },
 
   // ── Developer ────────────────────────────────

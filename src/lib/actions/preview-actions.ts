@@ -5,6 +5,7 @@ import { cookies } from 'next/headers'
 import { revalidatePath } from 'next/cache'
 
 import { canReviewContent } from '@/lib/admin/roles'
+import { ROUTES } from '@/lib/routes'
 
 export async function generateDraftPreview(articleId: string, content: string) {
   // Check authorization using the shared roles utility
@@ -78,5 +79,5 @@ export async function updateDraftPreview(previewId: string, content: string) {
     throw new Error('Failed to update preview')
   }
 
-  revalidatePath(`/admin/preview/${previewId}`)
+  revalidatePath(ROUTES.admin.preview(previewId))
 }

@@ -3,6 +3,7 @@
 import { revalidatePath } from 'next/cache'
 import { canManageContent } from '@/lib/admin/roles'
 import { createAdminClient } from '@/lib/supabase/admin'
+import { ROUTES } from '@/lib/routes'
 
 export const bulkDeleteQuestions = async (ids: string[]) => {
   const authorized = await canManageContent()
@@ -16,8 +17,8 @@ export const bulkDeleteQuestions = async (ids: string[]) => {
 
   if (error) return { error: error.message }
 
-  revalidatePath('/admin/questions')
-  revalidatePath('/admin/content')
+  revalidatePath(ROUTES.admin.questions)
+  revalidatePath(ROUTES.admin.content)
   return { error: null, deleted: ids.length }
 }
 
@@ -33,7 +34,7 @@ export const bulkDeleteArticles = async (ids: string[]) => {
 
   if (error) return { error: error.message }
 
-  revalidatePath('/admin/knowledge')
-  revalidatePath('/admin/wiki')
+  revalidatePath(ROUTES.admin.knowledge)
+  revalidatePath(ROUTES.admin.wiki)
   return { error: null, deleted: ids.length }
 }

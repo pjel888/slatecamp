@@ -1,5 +1,6 @@
 import { redirect } from 'next/navigation'
+import { ROUTES } from '@/lib/routes'
 
 export default function Page() {
-  redirect('/admin/knowledge/questions')
+  redirect(ROUTES.admin.knowledgeQuestions)
 }

@@ -19,6 +19,7 @@ import type {
 } from '@/types/app'
 import { revalidatePath } from 'next/cache'
 import { trackServerEvent } from '@/lib/analytics-server'
+import { ROUTES } from '@/lib/routes'
 
 // ============================================================
 // Trail Library
@@ -174,8 +175,8 @@ export const enrollInTrail = async (trailId: string): Promise<TrailEnrollment> =
   const trailName = (data as any)?.camp_trails?.name ?? 'Unknown Trail'
   void trackServerEvent('trail_enrolled', { trailId, trailName })
 
-  revalidatePath('/dashboard/camptrails')
-  revalidatePath('/dashboard')
+  revalidatePath(ROUTES.dashboard.camptrails)
+  revalidatePath(ROUTES.dashboard.root)
   return data as TrailEnrollment
 }
 
@@ -291,8 +292,8 @@ export const completeStep = async (params: {
     }
   }
 
-  revalidatePath('/dashboard/camptrails')
-  revalidatePath('/dashboard')
+  revalidatePath(ROUTES.dashboard.camptrails)
+  revalidatePath(ROUTES.dashboard.root)
 }
 
 export const getDayCompletions = async (enrollmentId: string): Promise<string[]> => {
@@ -416,8 +417,8 @@ export const pauseTrail = async (enrollmentId: string): Promise<void> => {
     .eq('enrollment_id', enrollmentId)
     .eq('user_id', user.id)
 
-  revalidatePath('/dashboard/camptrails')
-  revalidatePath('/dashboard')
+  revalidatePath(ROUTES.dashboard.camptrails)
+  revalidatePath(ROUTES.dashboard.root)
 }
 
 export const resumeTrail = async (enrollmentId: string): Promise<void> => {
@@ -431,8 +432,8 @@ export const resumeTrail = async (enrollmentId: string): Promise<void> => {
     .eq('enrollment_id', enrollmentId)
     .eq('user_id', user.id)
 
-  revalidatePath('/dashboard/camptrails')
-  revalidatePath('/dashboard')
+  revalidatePath(ROUTES.dashboard.camptrails)
+  revalidatePath(ROUTES.dashboard.root)
 }
 
 export const abandonTrail = async (enrollmentId: string): Promise<void> => {
@@ -458,8 +459,8 @@ export const abandonTrail = async (enrollmentId: string): Promise<void> => {
     .eq('enrollment_id', enrollmentId)
     .eq('user_id', user.id)
 
-  revalidatePath('/dashboard/camptrails')
-  revalidatePath('/dashboard')
+  revalidatePath(ROUTES.dashboard.camptrails)
+  revalidatePath(ROUTES.dashboard.root)
 }
 
 // ============================================================
@@ -581,4 +582,3 @@ export const getTodayNodeStates = async (nodeIds: string[]): Promise<NodeMastery
     }
   })
 }
-

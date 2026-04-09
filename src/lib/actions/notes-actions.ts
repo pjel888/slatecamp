@@ -3,6 +3,7 @@
 import { revalidatePath } from 'next/cache'
 import { createClient, getUser } from '@/lib/supabase/server'
 import { revalidateDashboardCacheTags } from './cache-tags'
+import { ROUTES } from '@/lib/routes'
 import type { Note, NoteStub } from '@/types/app'
 
 function snippetFromContent(content: Record<string, unknown>, maxLen = 80): string {
@@ -124,7 +125,7 @@ export async function createNote(
 
   if (error) return { error: error.message }
   revalidateDashboardCacheTags(user.id)
-  revalidatePath('/dashboard/notes')
+  revalidatePath(ROUTES.dashboard.notes)
   return { id: data.note_id }
 }
 
@@ -140,7 +141,7 @@ export async function createNoteFolder(name: string) {
     .single()
 
   if (error) return { error: error.message }
-  revalidatePath('/dashboard/notes')
+  revalidatePath(ROUTES.dashboard.notes)
   return data
 }
 
@@ -169,7 +170,7 @@ export async function updateNote(
 
   if (error) return { error: error.message }
   revalidateDashboardCacheTags(user.id)
-  revalidatePath('/dashboard/notes')
+  revalidatePath(ROUTES.dashboard.notes)
   return {}
 }
 
@@ -186,7 +187,6 @@ export async function deleteNote(id: string): Promise<{ error?: string }> {
 
   if (error) return { error: error.message }
   revalidateDashboardCacheTags(user.id)
-  revalidatePath('/dashboard/notes')
+  revalidatePath(ROUTES.dashboard.notes)
   return {}
 }
-

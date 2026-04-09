@@ -44,7 +44,7 @@ const ProblemDetailContent = async ({ problemId }: { problemId: string }) => {
             </p>
           </div>
           <Link
-            href="/dashboard/area-c/design-problems"
+            href={ROUTES.dashboard.designProblems}
             className="rounded-sm bg-primary px-4 py-2 text-xs font-medium text-white hover:bg-primary-700 transition-colors duration-150 ease-out"
           >
             Back to Problem Library

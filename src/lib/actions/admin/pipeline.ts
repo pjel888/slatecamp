@@ -4,21 +4,19 @@ import { createClient } from '@/lib/supabase/server'
 import { createAdminClient } from '@/lib/supabase/admin'
 import { canManageContent } from '@/lib/admin/roles'
 import { revalidatePath } from 'next/cache'
+import { ROUTES } from '@/lib/routes'
 
 export const getPipelineArticles = async () => {
   const supabase = await createClient()
   const { data } = await supabase
     .from('wiki_articles')
-    .select('article_id, title, slug, status, updated_at, created_at, reviewed_by, subject_label')
+    .select('article_id, title, status, updated_at, profiles(display_name)')
     .order('updated_at', { ascending: false })
-    .limit(500)
+
   return data || []
 }
 
-export const updateArticleStatus = async (
-  articleId: string,
-  newStatus: 'draft' | 'review' | 'published',
-) => {
+export const updateArticleStatus = async (articleId: string, newStatus: string) => {
   const authorized = await canManageContent()
   if (!authorized) throw new Error('Unauthorized')
 
@@ -30,7 +28,7 @@ export const updateArticleStatus = async (
 
   if (error) throw new Error(`Failed to update status: ${error.message}`)
 
-  revalidatePath('/admin/pipeline')
-  revalidatePath('/admin/knowledge')
-  revalidatePath('/admin/reviews')
+  revalidatePath(ROUTES.admin.pipeline)
+  revalidatePath(ROUTES.admin.knowledge)
+  revalidatePath(ROUTES.admin.reviews)
 }

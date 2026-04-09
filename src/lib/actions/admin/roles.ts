@@ -4,6 +4,7 @@ import { revalidatePath } from 'next/cache'
 import { createClient } from '@/lib/supabase/server'
 import { createAdminClient } from '@/lib/supabase/admin'
 import { canManageUsers } from '@/lib/admin/roles'
+import { ROUTES } from '@/lib/routes'
 
 /**
  * List all users with admin roles, ordered by most recently added.
@@ -49,7 +50,7 @@ export const assignRole = async (formData: FormData) => {
     throw new Error(`Failed to assign role: ${error.message}`)
   }
 
-  revalidatePath('/admin/settings')
+  revalidatePath(ROUTES.admin.settings)
 }
 
 /**
@@ -78,5 +79,5 @@ export const revokeRole = async (formData: FormData) => {
     throw new Error(`Failed to revoke role: ${error.message}`)
   }
 
-  revalidatePath('/admin/settings')
+  revalidatePath(ROUTES.admin.settings)
 }

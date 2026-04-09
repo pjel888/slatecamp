@@ -3,6 +3,7 @@
 import { createServiceClient, getUser } from '@/lib/supabase/server'
 import { revalidatePath } from 'next/cache'
 import { revalidateDashboardCacheTags } from '@/lib/actions/cache-tags'
+import { ROUTES } from '@/lib/routes'
 
 /**
  * Marks a quiz session as abandoned.
@@ -28,8 +29,8 @@ export const abandonSession = async (sessionId: string) => {
   }
 
   revalidateDashboardCacheTags(user.id)
-  revalidatePath('/dashboard')
-  revalidatePath('/dashboard/drills')
+  revalidatePath(ROUTES.dashboard.root)
+  revalidatePath(ROUTES.dashboard.drills)
 
   return { success: true }
 }

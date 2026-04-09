@@ -3,6 +3,7 @@
 import { redirect } from 'next/navigation'
 import { createClient, getUser } from '@/lib/supabase/server'
 import { trackServerEvent } from '@/lib/analytics-server'
+import { ROUTES } from '@/lib/routes'
 
 export interface ResultsDayProfile {
   firstName: string | null
@@ -175,10 +176,10 @@ export const recordNonPasserResult = async (): Promise<{ success: boolean; error
  */
 export const bannerConfirmPasser = async (): Promise<void> => {
   await recordPasserResult()
-  redirect('/dashboard/results-day')
+  redirect(ROUTES.dashboard.resultsDay)
 }
 
 export const bannerConfirmNonPasser = async (): Promise<void> => {
   await recordNonPasserResult()
-  redirect('/dashboard/results-day')
+  redirect(ROUTES.dashboard.resultsDay)
 }

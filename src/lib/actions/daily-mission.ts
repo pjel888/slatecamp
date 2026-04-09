@@ -2,6 +2,7 @@
 
 import { createClient, getUser } from '@/lib/supabase/server';
 import type { TestMode } from '@/types/app';
+import { ROUTES } from '@/lib/routes';
 
 export interface DailyMission {
   id: string;
@@ -52,7 +53,7 @@ export async function getDailyMissions(): Promise<DailyMission[]> {
       rewardType: 'readiness',
       rewardValue: 2,
       actionLabel: 'Start Practice',
-      actionHref: '/quiz/camp/setup',
+      actionHref: ROUTES.quiz.setup('camp'),
     },
     {
       id: 'wiki-explorer',
@@ -62,7 +63,7 @@ export async function getDailyMissions(): Promise<DailyMission[]> {
       rewardType: 'tokens',
       rewardValue: 50,
       actionLabel: 'Go to Wiki',
-      actionHref: '/dashboard/wiki',
+      actionHref: ROUTES.wiki.root,
     }
   ];
 

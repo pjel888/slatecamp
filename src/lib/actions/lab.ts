@@ -3,6 +3,7 @@
 import { createClient, getUser } from '@/lib/supabase/server'
 import { revalidatePath } from 'next/cache'
 import { revalidateDashboardCacheTags } from '@/lib/actions/cache-tags'
+import { ROUTES } from '@/lib/routes'
 
 // ─── Record 3D Lab Interaction ──────────────────────────────────────────────
 // When a student answers an in-canvas hotspot question, write to
@@ -38,7 +39,7 @@ export const record3DLabInteraction = async (params: LabInteractionParams) => {
 
   // Revalidate dashboard pages so Heatmap reflects the new interaction
   revalidateDashboardCacheTags(user.id)
-  revalidatePath('/dashboard')
+  revalidatePath(ROUTES.dashboard.root)
 }
 
 // ─── Create 3D Lab Session ──────────────────────────────────────────────────

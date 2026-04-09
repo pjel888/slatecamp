@@ -1,34 +1,20 @@
 import { redirect } from 'next/navigation'
 import { revalidatePath } from 'next/cache'
 import { createClient, getUser } from '@/lib/supabase/server'
-import { ROUTES } from '@/lib/constants/routes'
+import { ROUTES } from '@/lib/routes'
 import { bootstrapUser } from '@/lib/supabase/bootstrap'
 import { OnboardingForm } from './_components/OnboardingForm'
 import type { Discipline } from '@/types/app'
 
 /**
  * Onboarding Page — Task 0.4: Retaker Onboarding Flow
- *
- * Post-signup. Collects:
- * 1. Discipline selection
- * 2. Reviewer type (4-way: first_taker | returning_reviewer | undergrad | dae)
- * 3. Conditional fields per reviewer type:
- *    - first_taker:         exam date + study window
- *    - returning_reviewer:  struggled subjects + exam date + study window
- *    - undergrad:           school/institution + study window
- *    - dae:                 study window only
- *
- * Writes: profiles.reviewer_type, profiles.account_mode,
- *         profiles.previous_exam_subjects_struggled (returning_reviewer),
- *         profiles.school_or_institution (undergrad),
- *         user_global_stats.is_retaker, exam_attempt_number, previous_exam_result
  */
 
 export default async function OnboardingPage() {
   const supabase = await createClient()
   const { data: { user } } = await getUser()
 
-  if (!user) redirect(ROUTES.LOGIN)
+  if (!user) redirect(ROUTES.auth.login)
 
   await bootstrapUser(user.id)
 
@@ -150,8 +136,8 @@ export default async function OnboardingPage() {
       struggled_subjects_count: struggledSubjectNames.length,
     })
 
-    revalidatePath('/dashboard', 'layout')
-    redirect(ROUTES.DASHBOARD)
+    revalidatePath(ROUTES.dashboard.root, 'layout')
+    redirect(ROUTES.dashboard.root)
   }
 
   return (

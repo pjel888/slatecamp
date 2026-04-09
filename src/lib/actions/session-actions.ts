@@ -9,6 +9,7 @@ import type {
   FocusAreaItem,
 } from '@/types/dashboard'
 import { formatModeName, MODE_BADGES, MODE_TOOLTIPS } from './dashboard-helpers'
+import { ROUTES } from '@/lib/routes'
 
 // ── In-progress session ─────────────────────────────────────────────────────
 
@@ -99,7 +100,7 @@ export const buildAction = (
       title: `Continue ${formatModeName(mode)}`,
       subtitle: `Question ${inProgress.currentIndex + 1} of ${inProgress.totalQuestions} — pick up where you left off`,
       ctaLabel: 'Continue',
-      href: `/dashboard/drills`,
+      href: ROUTES.dashboard.drills,
       estimatedMinutes: Math.max(1, Math.ceil(remaining * 1.2)),
       modeTooltip: MODE_TOOLTIPS[mode] ?? '',
       progress: { current: inProgress.currentIndex + 1, total: inProgress.totalQuestions },
@@ -113,7 +114,7 @@ export const buildAction = (
       title: `Practice: ${weakest.topicName}`,
       subtitle: `This topic needs attention — 10 focused questions to strengthen your understanding`,
       ctaLabel: 'Start session',
-      href: '/quiz/camp/setup',
+      href: ROUTES.quiz.setup('camp'),
       estimatedMinutes: 8,
       modeTooltip: MODE_TOOLTIPS['camp'] ?? '',
     }
@@ -124,7 +125,7 @@ export const buildAction = (
     title: 'Start a Camp session',
     subtitle: '10 questions across your core subjects — about 8 minutes',
     ctaLabel: 'Begin',
-    href: '/quiz/camp/setup',
+    href: ROUTES.quiz.setup('camp'),
     estimatedMinutes: 8,
     modeTooltip: MODE_TOOLTIPS['camp'] ?? '',
   }

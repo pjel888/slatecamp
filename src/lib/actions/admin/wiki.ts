@@ -6,130 +6,87 @@ import { createClient } from "@/lib/supabase/server";
 import { revalidatePath, revalidateTag } from "next/cache";
 import { canManageContent } from "@/lib/admin/roles";
 import { CACHE_TAGS } from '../cache-tags'
+import { ROUTES } from '@/lib/routes'
 
 const UpdateWikiArticleSchema = z.object({
   title: z.string().min(1, 'Title is required').max(500),
   content: z.string().min(1, 'Content is required'),
   slug: z.string().optional(),
-  status: z.string().optional(),
-  node_id: z.string().uuid('Invalid taxonomy node ID').optional().nullable(),
+  author_id: z.string().uuid().optional(),
+  discipline_id: z.string().uuid().optional(),
+  status: z.enum(['draft', 'pending_review', 'changes_requested', 'approved', 'published', 'archived']).optional(),
+  metadata: z.record(z.string(), z.any()).optional(),
+  tags: z.array(z.string()).optional(),
 })
 
-const CreateWikiArticleSchema = z.object({
-  title: z.string().min(1, 'Title is required').max(500),
-  content: z.string().min(1, 'Content is required'),
-  slug: z.string().optional(),
-  status: z.string().optional(),
-  node_id: z.string().uuid('Invalid taxonomy node ID').optional().nullable(),
-})
-
-export async function updateWikiArticle(id: string, data: { 
-  title: string, 
-  content: string, 
-  slug?: string, 
-  status?: string,
-  node_id?: string | null
-}) {
+export const updateWikiArticle = async (id: string, data: z.infer<typeof UpdateWikiArticleSchema>) => {
   const authorized = await canManageContent()
   if (!authorized) throw new Error('Unauthorized: insufficient permissions')
 
   const parsed = UpdateWikiArticleSchema.safeParse(data)
-  if (!parsed.success) {
-    throw new Error(parsed.error.issues.map(e => e.message).join(', '))
-  }
+  if (!parsed.success) throw new Error(parsed.error.issues[0].message)
 
-  const authClient = await createClient()
-  const { data: { user } } = await authClient.auth.getUser()
+  const supabase = createAdminClient()
 
-  const supabase = createAdminClient();
-
+  // Use raw data for update to avoid Zod object differences if needed, 
+  // but parsed data is safer.
   const { error } = await supabase
     .from('wiki_articles')
     .update({
-      title: data.title,
-      content: data.content,
-      slug: data.slug || data.title.toLowerCase().trim().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, ''),
-      status: data.status,
-      updated_at: new Date().toISOString(),
-      updated_by: user?.id ?? null,
+      ...parsed.data,
+      updated_at: new Date().toISOString()
     })
-    .eq('article_id', id);
-
-  if (!error && data.node_id !== undefined) {
-    // Update or insert mapping
-    if (data.node_id) {
-      // We use upsert-like logic: delete old mappings and insert new one
-      // OR just update the primary one if it exists
-      await supabase.from('wiki_article_taxonomy').delete().eq('article_id', id)
-      await supabase.from('wiki_article_taxonomy').insert({
-        article_id: id,
-        node_id: data.node_id,
-        is_primary: true
-      })
-    } else {
-      await supabase.from('wiki_article_taxonomy').delete().eq('article_id', id)
-    }
-  }
+    .eq('article_id', id)
 
   if (!error) {
     revalidateTag(CACHE_TAGS.wiki, 'max')
-    revalidatePath('/admin/wiki');
-    revalidatePath(`/admin/wiki/${id}`);
-    revalidatePath('/admin/knowledge');
-    revalidatePath('/dashboard/wiki');
+    revalidatePath(ROUTES.admin.wiki);
+    revalidatePath(ROUTES.admin.article(id));
+    revalidatePath(ROUTES.admin.knowledge);
+    revalidatePath(ROUTES.wiki.root);
   }
 
   return { error };
 }
 
-export async function createWikiArticle(data: { 
-  title: string, 
-  content: string, 
-  slug?: string, 
-  status?: string,
-  node_id?: string | null
-}) {
+export const createWikiArticle = async (data: z.infer<typeof UpdateWikiArticleSchema>) => {
   const authorized = await canManageContent()
   if (!authorized) throw new Error('Unauthorized: insufficient permissions')
 
-  const parsed = CreateWikiArticleSchema.safeParse(data)
-  if (!parsed.success) {
-    throw new Error(parsed.error.issues.map(e => e.message).join(', '))
-  }
+  const parsed = UpdateWikiArticleSchema.safeParse(data)
+  if (!parsed.success) throw new Error(parsed.error.issues[0].message)
 
   const authClient = await createClient()
   const { data: { user } } = await authClient.auth.getUser()
 
-  const supabase = createAdminClient();
+  const supabase = createAdminClient()
 
-  const slug = data.slug || data.title.toLowerCase().trim().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
-
-  const { data: newArticle, error: articleError } = await supabase
+  const { data: newArticle, error } = await supabase
     .from('wiki_articles')
     .insert([{
-      title: data.title,
-      content: data.content,
-      slug,
-      status: data.status || 'draft',
-      created_by: user?.id ?? null,
+      ...parsed.data,
+      author_id: parsed.data.author_id || user?.id,
+      status: parsed.data.status || 'draft',
+      created_at: new Date().toISOString(),
+      updated_at: new Date().toISOString()
     }])
-    .select('article_id')
-    .single();
+    .select()
+    .single()
 
-  if (articleError) return { error: articleError };
-
-  if (data.node_id) {
+  if (!error && newArticle) {
+    // Auto-link to default discipline if not provided
+    const disciplineId = parsed.data.discipline_id || 'architect-ale'
     await supabase.from('wiki_article_taxonomy').insert({
       article_id: newArticle.article_id,
-      node_id: data.node_id,
+      node_id: disciplineId,
       is_primary: true
     })
   }
 
   revalidateTag(CACHE_TAGS.wiki, 'max')
-  revalidatePath('/admin/wiki');
-  revalidatePath('/admin/articles');
-  revalidatePath('/dashboard/wiki');
+  revalidatePath(ROUTES.admin.wiki);
+  revalidatePath(ROUTES.admin.articles);
+  revalidatePath(ROUTES.wiki.root);
 
   return { data: newArticle, error: null };
 }
@@ -140,17 +97,6 @@ export async function deleteWikiArticle(id: string) {
 
   const supabase = createAdminClient()
 
-  // Delete article-taxonomy mappings first (foreign key constraint)
-  const { error: linkError } = await supabase
-    .from('wiki_article_taxonomy')
-    .delete()
-    .eq('article_id', id)
-
-  if (linkError) {
-    throw new Error(`Failed to delete article mappings: ${linkError.message}`)
-  }
-
-  // Delete the article
   const { error } = await supabase
     .from('wiki_articles')
     .delete()
@@ -161,9 +107,9 @@ export async function deleteWikiArticle(id: string) {
   }
 
   revalidateTag(CACHE_TAGS.wiki, 'max')
-  revalidatePath('/admin/wiki')
-  revalidatePath('/admin/articles')
-  revalidatePath('/dashboard/wiki')
+  revalidatePath(ROUTES.admin.wiki);
+  revalidatePath(ROUTES.admin.articles);
+  revalidatePath(ROUTES.wiki.root);
 
   return { error: null }
 }

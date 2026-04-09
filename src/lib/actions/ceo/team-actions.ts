@@ -5,6 +5,7 @@ import { z } from 'zod'
 import { assertCeoRole } from '@/lib/queries/ceo/auth'
 import { createClient } from '@/lib/supabase/server'
 import type { SystemRole } from '@/types/ceo'
+import { ROUTES } from '@/lib/routes'
 
 const SYSTEM_ROLES: SystemRole[] = ['ceo', 'super_admin', 'admin', 'lead', 'member', 'consultant', 'viewer']
 const DEPARTMENTS = ['engineering', 'content', 'design', 'marketing', 'operations', 'consulting'] as const

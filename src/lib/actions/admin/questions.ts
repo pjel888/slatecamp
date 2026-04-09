@@ -4,6 +4,7 @@ import { createAdminClient } from "@/lib/supabase/admin";
 import { createClient } from "@/lib/supabase/server";
 import { revalidatePath } from "next/cache";
 import { canManageContent } from "@/lib/admin/roles";
+import { ROUTES } from "@/lib/routes";
 
 interface CreateQuestionInput {
   text: string
@@ -29,8 +30,8 @@ export async function deleteQuestions(ids: string[]) {
     .in('question_id', ids);
 
   if (!error) {
-    revalidatePath('/admin/knowledge/questions');
-    revalidatePath('/admin/knowledge');
+    revalidatePath(ROUTES.admin.knowledgeQuestions);
+    revalidatePath(ROUTES.admin.knowledge);
   }
 
   return { error };
@@ -60,8 +61,8 @@ export async function createQuestion(data: CreateQuestionInput) {
     .insert([{ ...data, created_by: user?.id ?? null }]);
 
   if (!error) {
-    revalidatePath('/admin/knowledge/questions');
-    revalidatePath('/admin/knowledge');
+    revalidatePath(ROUTES.admin.knowledgeQuestions);
+    revalidatePath(ROUTES.admin.knowledge);
   }
 
   return { error };
@@ -92,8 +93,8 @@ export const updateQuestion = async (id: string, data: CreateQuestionInput) => {
     .eq('question_id', id);
 
   if (!error) {
-    revalidatePath('/admin/knowledge/questions');
-    revalidatePath('/admin/knowledge');
+    revalidatePath(ROUTES.admin.knowledgeQuestions);
+    revalidatePath(ROUTES.admin.knowledge);
   }
 
   return { error };
@@ -111,8 +112,8 @@ export const deleteQuestion = async (id: string) => {
     .eq('question_id', id);
 
   if (!error) {
-    revalidatePath('/admin/knowledge/questions');
-    revalidatePath('/admin/knowledge');
+    revalidatePath(ROUTES.admin.knowledgeQuestions);
+    revalidatePath(ROUTES.admin.knowledge);
   }
 
   return { error };

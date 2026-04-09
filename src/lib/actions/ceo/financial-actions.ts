@@ -4,6 +4,7 @@ import { revalidatePath } from 'next/cache'
 import { z } from 'zod'
 import { assertCeoRole } from '@/lib/queries/ceo/auth'
 import { createClient } from '@/lib/supabase/server'
+import { ROUTES } from '@/lib/routes'
 
 const financialEntrySchema = z.object({
   entry_date: z.string().date(),
@@ -42,8 +43,8 @@ export const addFinancialEntry = async (
 
     if (error) return { success: false, error: error.message }
 
-    revalidatePath('/ceo/financials')
-    revalidatePath('/ceo')
+    revalidatePath(ROUTES.ceo.financials)
+    revalidatePath(ROUTES.ceo.root)
     return { success: true, id: data?.id as string }
   } catch (err) {
     return { success: false, error: err instanceof Error ? err.message : 'Unexpected error' }
@@ -80,8 +81,8 @@ export const updateFinancialEntry = async (
 
     if (error) return { success: false, error: error.message }
 
-    revalidatePath('/ceo/financials')
-    revalidatePath('/ceo')
+    revalidatePath(ROUTES.ceo.financials)
+    revalidatePath(ROUTES.ceo.root)
     return { success: true }
   } catch (err) {
     return { success: false, error: err instanceof Error ? err.message : 'Unexpected error' }
@@ -104,8 +105,8 @@ export const deleteFinancialEntry = async (
 
     if (error) return { success: false, error: error.message }
 
-    revalidatePath('/ceo/financials')
-    revalidatePath('/ceo')
+    revalidatePath(ROUTES.ceo.financials)
+    revalidatePath(ROUTES.ceo.root)
     return { success: true }
   } catch (err) {
     return { success: false, error: err instanceof Error ? err.message : 'Unexpected error' }
@@ -141,8 +142,8 @@ export const addCashBalance = async (
 
     if (error) return { success: false, error: error.message }
 
-    revalidatePath('/ceo/financials')
-    revalidatePath('/ceo')
+    revalidatePath(ROUTES.ceo.financials)
+    revalidatePath(ROUTES.ceo.root)
     return { success: true }
   } catch (err) {
     return { success: false, error: err instanceof Error ? err.message : 'Unexpected error' }

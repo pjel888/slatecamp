@@ -1,4 +1,5 @@
 import { redirect, notFound } from 'next/navigation'
+import { ROUTES } from '@/lib/routes'
 import { canManageContent } from '@/lib/admin/roles'
 import { createClient } from '@/lib/supabase/server'
 import { QuestionEditor } from '@/components/admin/QuestionEditor'
@@ -80,7 +81,7 @@ const ArticlePreview = async ({ content }: { content: string }) => {
 
 const QuestionDetailPage = async ({ params }: PageProps) => {
   const authorized = await canManageContent()
-  if (!authorized) redirect('/admin')
+  if (!authorized) redirect(ROUTES.admin.root)
 
   const { id } = await params
   

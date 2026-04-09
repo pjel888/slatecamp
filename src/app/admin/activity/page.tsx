@@ -3,6 +3,7 @@ import { createClient } from '@/lib/supabase/server'
 import { isAdmin } from '@/lib/admin/roles'
 import { formatRelativeTime } from '@/lib/utils/format-time'
 import { redirect } from 'next/navigation'
+import { ROUTES } from '@/lib/routes'
 import { Card } from '@/components/ui/card'
 import { EventBadge } from '@/components/shared/event-badge'
 import { SectionHeader } from '@/components/shared/section-header'
@@ -69,7 +70,7 @@ const formatTableName = (tableName: string): string => {
 const AdminActivityPage = async () => {
   const authorized = await isAdmin()
   if (!authorized) {
-    redirect('/admin')
+    redirect(ROUTES.admin.root)
   }
 
   const supabase = await createClient()

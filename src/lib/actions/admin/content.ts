@@ -4,6 +4,7 @@ import { createAdminClient } from '@/lib/supabase/admin'
 import { canManageContent } from '@/lib/admin/roles'
 import { revalidatePath } from 'next/cache'
 import { sanitizeMDX } from '@/lib/wiki-markdown'
+import { ROUTES } from '@/lib/routes'
 
 // ─── MDX Preview Compilation ─────────────────────────────────
 
@@ -444,9 +445,9 @@ export const updateArticleFull = async (
     }
   }
 
-  revalidatePath('/admin/knowledge')
-  revalidatePath(`/admin/knowledge/${id}`)
-  revalidatePath('/admin/knowledge/questions')
+  revalidatePath(ROUTES.admin.knowledge)
+  revalidatePath(ROUTES.admin.article(id))
+  revalidatePath(ROUTES.admin.knowledgeQuestions)
 
   return { error: null }
 }

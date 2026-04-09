@@ -1,4 +1,5 @@
 import { redirect, notFound } from 'next/navigation'
+import { ROUTES } from '@/lib/routes'
 import { canManageContent } from '@/lib/admin/roles'
 import {
   getArticleFull,
@@ -19,7 +20,7 @@ interface PageProps {
 
 const UnifiedEditorPage = async ({ params }: PageProps) => {
   const authorized = await canManageContent()
-  if (!authorized) redirect('/admin')
+  if (!authorized) redirect(ROUTES.admin.root)
 
   const { id } = await params
   const article = await getArticleFull(id)

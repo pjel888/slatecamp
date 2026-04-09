@@ -2,9 +2,10 @@
 
 import { createClient } from '@/lib/supabase/server'
 import { revalidatePath } from 'next/cache'
+import { ROUTES } from '@/lib/routes'
 import type { Notification, NotificationPreferences } from '@/types/notifications'
 
-const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i
+const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i
 
 export const markNotificationAsRead = async (notificationId: string) => {
   if (!UUID_RE.test(notificationId)) return { error: 'Invalid notification ID.' }
@@ -25,7 +26,7 @@ export const markNotificationAsRead = async (notificationId: string) => {
     return { error: 'Failed to mark notification as read.' }
   }
 
-  revalidatePath('/dashboard/notifications')
+  revalidatePath(ROUTES.dashboard.notifications)
   return { success: true }
 }
 
@@ -45,7 +46,7 @@ export const markAllNotificationsAsRead = async () => {
     return { error: 'Failed to mark notifications as read.' }
   }
 
-  revalidatePath('/dashboard/notifications')
+  revalidatePath(ROUTES.dashboard.notifications)
   return { success: true }
 }
 
@@ -68,7 +69,7 @@ export const updateNotificationPreferences = async (
     return { error: 'Failed to update preferences.' }
   }
 
-  revalidatePath('/dashboard/notifications')
+  revalidatePath(ROUTES.dashboard.notifications)
   return { success: true }
 }
 

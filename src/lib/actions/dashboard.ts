@@ -2,6 +2,7 @@
 
 import { createClient, getUser } from '@/lib/supabase/server'
 import { formatRelativeTime } from '@/lib/utils/format-time'
+import { ROUTES } from '@/lib/routes'
 
 const SUBJECT_AREAS = [
   'Architectural Design and Site Planning',
@@ -229,7 +230,7 @@ export async function getDashboardData(): Promise<DashboardData> {
       subtitle: `You were on question ${current + 1} of ${total} — pick up right where you left off`,
       progress: { current: current + 1, total },
       estimatedMinutes: Math.max(1, Math.ceil((total - current) * 1.2)),
-      href: `/dashboard/drills`,
+      href: ROUTES.dashboard.drills,
     }
   } else if (weak) {
     const topicName =
@@ -240,7 +241,7 @@ export async function getDashboardData(): Promise<DashboardData> {
       title: `Practice: ${topicName}`,
       subtitle: `This topic needs a little attention — 5 focused questions to sharpen your understanding`,
       estimatedMinutes: 4,
-      href: `/quiz/camp/setup`,
+      href: ROUTES.quiz.setup('camp'),
     }
   } else {
     catalyst = {
@@ -248,7 +249,7 @@ export async function getDashboardData(): Promise<DashboardData> {
       title: 'Daily Warmup',
       subtitle: 'A quick 5-question session from your core subjects — the perfect way to start',
       estimatedMinutes: 3,
-      href: '/quiz/camp/setup',
+      href: ROUTES.quiz.setup('camp'),
     }
   }
 

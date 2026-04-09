@@ -3,6 +3,7 @@
 import { createClient } from '@/lib/supabase/server'
 import { revalidatePath } from 'next/cache'
 import { canReviewContent, getUserRole } from '@/lib/admin/roles'
+import { ROUTES } from '@/lib/routes'
 
 export interface WikiArticle {
   id: string
@@ -61,7 +62,7 @@ export async function createArticle(input: CreateArticleInput): Promise<{ succes
     return { success: false, error: error.message }
   }
 
-  revalidatePath('/admin/wiki')
+  revalidatePath(ROUTES.admin.wiki)
   return { success: true, id: data.id }
 }
 

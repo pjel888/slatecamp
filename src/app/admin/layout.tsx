@@ -1,6 +1,6 @@
 import { redirect } from 'next/navigation'
 import { getUser } from '@/lib/supabase/server'
-import { ROUTES } from '@/lib/constants/routes'
+import { ROUTES } from '@/lib/routes'
 import { canReviewContent, getUserRole } from '@/lib/admin/roles'
 import { AdminShell } from './_components/AdminShell'
 import { getNeedsAttentionData } from '@/lib/actions/admin/dashboard'
@@ -15,27 +15,27 @@ export default async function AdminLayout({
   const pathname = headerList.get('x-pathname') || ''
 
   // CRITICAL: Public Landing Bypass — login page renders without portal chrome
-  if (pathname === '/admin/login') {
+  if (pathname === ROUTES.admin.login) {
     return <>{children}</>
   }
 
   const { data: { user } } = await getUser()
-  if (!user) redirect('/admin/login')
+  if (!user) redirect(ROUTES.admin.login)
 
   const isAdmin = await canReviewContent()
-  if (!isAdmin && pathname !== '/admin/login') {
-    redirect(ROUTES.DASHBOARD)
+  if (!isAdmin && pathname !== ROUTES.admin.login) {
+    redirect(ROUTES.dashboard.root)
   }
 
   const role = await getUserRole()
   if (!role) {
-    redirect(ROUTES.DASHBOARD)
+    redirect(ROUTES.dashboard.root)
   }
 
   const attentionData = await getNeedsAttentionData()
 
   // If it's the iframe preview route, render without AdminShell
-  if (pathname.startsWith('/admin/preview/')) {
+  if (pathname.startsWith(ROUTES.admin.preview(''))) {
     return <>{children}</>
   }
 

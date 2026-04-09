@@ -3,6 +3,7 @@
 import { createClient, getUser } from '@/lib/supabase/server'
 import { revalidatePath } from 'next/cache'
 import { revalidateDashboardCacheTags } from './cache-tags'
+import { ROUTES } from '@/lib/routes'
 
 export type StudyWindow = 'morning' | 'evening' | 'both' | 'any'
 
@@ -70,7 +71,7 @@ export const updateProfile = async (formData: FormData) => {
       .eq('id', user.id)
 
     if (error) throw error
-    revalidatePath('/dashboard/settings')
+    revalidatePath(ROUTES.dashboard.settings)
     return { success: true }
   } catch (err) {
     console.error('[PROFILE: updateProfile]', err)
@@ -91,7 +92,7 @@ export const updateExamDate = async (formData: FormData) => {
       .eq('id', user.id)
 
     if (error) throw error
-    revalidatePath('/dashboard/settings')
+    revalidatePath(ROUTES.dashboard.settings)
     return { success: true }
   } catch (err) {
     console.error('[PROFILE: updateExamDate]', err)
@@ -129,11 +130,10 @@ export const uploadAvatar = async (formData: FormData) => {
     if (updateError) throw updateError
 
     revalidateDashboardCacheTags(user.id)
-    revalidatePath('/dashboard/settings')
+    revalidatePath(ROUTES.dashboard.settings)
     return { success: true, avatarUrl: publicUrl }
   } catch (err) {
     console.error('[PROFILE: uploadAvatar]', err)
     return { error: 'Failed to upload avatar.' }
   }
 }
-

@@ -5,13 +5,10 @@ import { trackServerEvent } from '@/lib/analytics-server'
 import SharedPageLayout from '@/components/layouts/SharedPageLayout'
 import { UpgradeButtons } from '@/components/dashboard/upgrade/UpgradeButtons'
 import { FEATURE_PAYMENTS_ENABLED } from '@/lib/constants/feature-flags'
+import { ROUTES } from '@/lib/routes'
 
 /**
  * Paywall Full-Screen — UX Strategy Section 15
- *
- * "Know you'll win."
- * GCash FIRST. "Not yet — continue free" always visible.
- * No dark patterns. No countdown timers. No "limited offer."
  */
 
 const FEATURE_COMPARISON = [
@@ -26,7 +23,7 @@ const FEATURE_COMPARISON = [
 
 const UpgradePage = async () => {
   if (!FEATURE_PAYMENTS_ENABLED) {
-    redirect('/dashboard')
+    redirect(ROUTES.dashboard.root)
   }
 
   const { data: { user } } = await getUser()
@@ -112,7 +109,7 @@ const UpgradePage = async () => {
         {/* "Not yet — continue free" — ALWAYS visible, never buried */}
         <div className="mt-4 text-center">
           <Link
-            href="/dashboard"
+            href={ROUTES.dashboard.root}
             className="text-sm text-muted-foreground transition-colors duration-150 ease-out hover:text-foreground"
           >
             Not yet — continue free

@@ -1,7 +1,8 @@
 import { redirect } from 'next/navigation'
+import { ROUTES } from '@/lib/routes'
 
 const TestingPage = () => {
-  redirect('/dashboard/drills')
+  redirect(ROUTES.dashboard.drills)
 }
 
 export default TestingPage

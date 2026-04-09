@@ -2,6 +2,7 @@
 
 import { createClient } from '@/lib/supabase/server'
 import type { Recommendation } from '@/types/quiz-config'
+import { ROUTES } from '@/lib/routes'
 
 // ─── Helper: Topic accuracy for a session ────────────────────────────────────
 
@@ -185,7 +186,7 @@ export const generateRecommendations = async (
         description: `You answered ${Math.round(weakestTopic.accuracy * 100)}% correctly on this topic. A focused session can strengthen your understanding.`,
         action: {
           type: 'start_session',
-          href: `/quiz/focused/setup?topics=${weakestTopic.topicId}`,
+          href: `${ROUTES.quiz.setup('focused')}?topics=${weakestTopic.topicId}`,
         },
       })
     }

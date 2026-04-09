@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { redirect } from 'next/navigation'
+import { ROUTES } from '@/lib/routes'
 import { isSuperAdmin } from '@/lib/admin/roles'
 import { formatRelativeTime } from '@/lib/utils/format-time'
 
@@ -35,7 +36,7 @@ const truncateUuid = (uuid: string) =>
 
 const AdminSettingsPage = async () => {
   const isSuper = await isSuperAdmin()
-  if (!isSuper) redirect('/admin/dashboard')
+  if (!isSuper) redirect(ROUTES.admin.root)
 
   const adminUsers = await getAdminUsers()
 

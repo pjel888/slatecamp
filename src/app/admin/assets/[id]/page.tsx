@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { redirect, notFound } from 'next/navigation'
+import { ROUTES } from '@/lib/routes'
 import { canManageContent } from '@/lib/admin/roles'
 import { getAsset } from '@/lib/actions/admin/assets'
 import { AssetDetailView } from '@/components/admin/AssetDetailView'
@@ -12,7 +13,7 @@ interface PageProps {
 
 export default async function AssetDetailPage({ params }: PageProps) {
   const authorized = await canManageContent()
-  if (!authorized) redirect('/admin')
+  if (!authorized) redirect(ROUTES.admin.root)
 
   const { id } = await params
   const asset = await getAsset(id)

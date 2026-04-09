@@ -4,6 +4,7 @@ import { redirect } from 'next/navigation'
 import { revalidatePath } from 'next/cache'
 import { createClient, getUser } from '@/lib/supabase/server'
 import { trackServerEvent } from '@/lib/analytics-server'
+import { ROUTES } from '@/lib/routes'
 
 export type AccountMode = 'review_mode' | 'professional_mode'
 
@@ -88,9 +89,9 @@ export const switchAccountMode = async (
 
   void trackServerEvent('account_mode_switched', { mode, user_id: user.id })
 
-  revalidatePath('/dashboard')
-  revalidatePath('/dashboard/professional')
-  revalidatePath('/dashboard/settings')
+  revalidatePath(ROUTES.dashboard.root)
+  revalidatePath(ROUTES.dashboard.professional)
+  revalidatePath(ROUTES.dashboard.settings)
 
   return { success: true }
 }
@@ -101,7 +102,7 @@ export const switchAccountMode = async (
  */
 export const activateProfessionalMode = async (): Promise<void> => {
   await switchAccountMode('professional_mode')
-  redirect('/dashboard/professional')
+  redirect(ROUTES.dashboard.professional)
 }
 
 /**
@@ -109,6 +110,6 @@ export const activateProfessionalMode = async (): Promise<void> => {
  * Revalidates dashboard so the prompt is dismissed.
  */
 export const stayInReviewMode = async (): Promise<{ success: boolean }> => {
-  revalidatePath('/dashboard')
+  revalidatePath(ROUTES.dashboard.root)
   return { success: true }
 }

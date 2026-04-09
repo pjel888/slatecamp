@@ -2,6 +2,7 @@
 
 import { createClient, getUser } from '@/lib/supabase/server'
 import { revalidatePath } from 'next/cache'
+import { ROUTES } from '@/lib/routes'
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -90,7 +91,7 @@ export const createPod = async (
     return { ok: false, error: 'Pod created but failed to join. Please try again.' }
   }
 
-  revalidatePath('/dashboard/pods')
+  revalidatePath(ROUTES.dashboard.pods)
   return { ok: true, data: { pod_id: pod.pod_id, invite_code: pod.invite_code } }
 }
 
@@ -150,7 +151,7 @@ export const joinPod = async (
     return { ok: false, error: 'Failed to join pod. Please try again.' }
   }
 
-  revalidatePath('/dashboard/pods')
+  revalidatePath(ROUTES.dashboard.pods)
   return { ok: true, data: { pod_id: pod.pod_id } }
 }
 
@@ -173,7 +174,7 @@ export const leavePod = async (
     return { ok: false, error: 'Failed to leave pod. Please try again.' }
   }
 
-  revalidatePath('/dashboard/pods')
+  revalidatePath(ROUTES.dashboard.pods)
   return { ok: true, data: undefined }
 }
 

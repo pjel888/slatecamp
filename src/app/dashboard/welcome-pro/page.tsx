@@ -19,7 +19,7 @@ const WelcomeProPage = async () => {
   if (!user) redirect(ROUTES.auth.login)
 
   const paid = await isPaidUser()
-  if (!paid) redirect('/dashboard')
+  if (!paid) redirect(ROUTES.dashboard.root)
 
   const supabase = await createClient()
 

@@ -5,6 +5,7 @@ import { createAdminClient } from '@/lib/supabase/admin'
 import { revalidatePath } from 'next/cache'
 import { canManageContent } from '@/lib/admin/roles'
 import { z } from 'zod'
+import { ROUTES } from '@/lib/routes'
 
 export const getAssets = async () => {
   const supabase = await createClient()

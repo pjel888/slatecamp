@@ -2,6 +2,7 @@ import { redirect } from 'next/navigation'
 import { createClient, getUser } from '@/lib/supabase/server'
 import { hasCompletedAssessment, getAssessmentQuestions } from '@/lib/actions/assessment'
 import { AssessmentQuiz } from '@/components/assessment/AssessmentQuiz'
+import { ROUTES } from '@/lib/routes'
 
 const AssessmentPage = async () => {
   const {
@@ -9,12 +10,12 @@ const AssessmentPage = async () => {
   } = await getUser()
 
   if (!user) {
-    redirect('/auth/login')
+    redirect(ROUTES.auth.login)
   }
 
   const completed = await hasCompletedAssessment()
   if (completed) {
-    redirect('/dashboard')
+    redirect(ROUTES.dashboard.root)
   }
 
   const supabase = await createClient()
@@ -26,12 +27,12 @@ const AssessmentPage = async () => {
 
   const disciplineId = stats?.current_discipline_id
   if (!disciplineId) {
-    redirect('/dashboard')
+    redirect(ROUTES.dashboard.root)
   }
 
   const questionIds = await getAssessmentQuestions(disciplineId)
   if (questionIds.length === 0) {
-    redirect('/dashboard')
+    redirect(ROUTES.dashboard.root)
   }
 
   return <AssessmentQuiz questionIds={questionIds} disciplineId={disciplineId} />
