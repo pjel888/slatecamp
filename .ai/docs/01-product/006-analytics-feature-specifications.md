@@ -705,6 +705,11 @@ flowchart LR
 |---------|-------|-------|
 | `PACING_TARGET_MS` | `120_000` (2 min) | LEA exam pacing standard |
 | `PASSING_ACCURACY` | `75` (percent) | Readiness trajectory target line |
+| `MASTERY_THRESHOLD` | `0.75` | Minimum mastery weight to count as "mastered" |
+| `REVIEW_THRESHOLD` | `70` (percent) | Retention level before review is recommended |
+| `RETENTION_HALF_LIFE_DAYS` | `30` | Days until retention decays to ~50% |
+| `WEAKEST_TOPICS_MIN_ATTEMPTS` | `3` | Minimum attempts before a topic qualifies as "weak" |
+| `WEAKEST_TOPICS_LIMIT` | `5` | Maximum weak topics to surface |
 | `SUBJECT_COLORS` | 16 entries (LEA-* IDs + full names) | Subject color coding across charts |
 | `SUBJECT_COLOR_FALLBACK` | `#71717a` | Fallback for unknown subjects |
 | `getSubjectColor(subject)` | function | Looks up color from `SUBJECT_COLORS` |
@@ -1008,7 +1013,7 @@ These tables contain analytics-relevant data but are NOT currently queried by th
 - `ReadinessTrajectory.tsx:76-81`: Hardcoded hex `#1B3FC4`, `#D4DAE3`, `#2D9F6F`, `#4A5568` in Recharts config
 - `QuadrantOverlay.tsx:29-32`: Hardcoded fallback color `#4A5568`
 - `analytics.ts:231`: `targetSecondsPerItem: 120` and `enduranceMinutes: 240` hardcoded instead of using constants
-- `chart-data.ts:123`: `REVIEW_THRESHOLD = 70` hardcoded inside function
+- ~~`chart-data.ts:123`: `REVIEW_THRESHOLD = 70` hardcoded inside function~~ — **Fixed 2026-04-09:** extracted to `REVIEW_THRESHOLD` constant in `analytics.ts`
 - `chart-data.ts:191-192`: Forgetting curve color interpolation uses hardcoded hex
 
 ### Performance

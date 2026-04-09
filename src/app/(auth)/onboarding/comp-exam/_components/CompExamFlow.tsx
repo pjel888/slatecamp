@@ -1,6 +1,6 @@
-import { ROUTES } from '@/lib/routes';
 'use client'
 
+import { ROUTES } from '@/lib/routes'
 import { useState } from 'react'
 import { ScoreEntryForm } from './ScoreEntryForm'
 import { HeatmapPreview } from './HeatmapPreview'

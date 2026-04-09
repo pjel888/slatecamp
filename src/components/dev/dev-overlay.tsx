@@ -1,6 +1,6 @@
-import { ROUTES } from '@/lib/routes';
 'use client'
 
+import { ROUTES } from '@/lib/routes'
 import { useEffect, useCallback } from 'react'
 import { X } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'

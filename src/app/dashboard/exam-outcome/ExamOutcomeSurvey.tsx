@@ -1,6 +1,6 @@
-import { ROUTES } from '@/lib/routes';
 'use client'
 
+import { ROUTES } from '@/lib/routes'
 import { useState } from 'react'
 import { submitExamOutcome } from './actions'
 import { Card } from '@/components/ui/card'

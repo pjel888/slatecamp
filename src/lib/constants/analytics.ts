@@ -2,6 +2,16 @@ export const PACING_TARGET_MS = 120_000 // 2 min = LEA exam standard
 
 export const PASSING_ACCURACY = 75 // percent
 
+export const MASTERY_THRESHOLD = 0.75 // minimum mastery weight to count as "mastered"
+
+export const REVIEW_THRESHOLD = 70 // percent retention before review is recommended
+
+export const RETENTION_HALF_LIFE_DAYS = 30 // days until retention decays to ~50%
+
+export const WEAKEST_TOPICS_MIN_ATTEMPTS = 3 // minimum attempts before a topic qualifies as "weak"
+
+export const WEAKEST_TOPICS_LIMIT = 5 // max weak topics to surface
+
 export const SUBJECT_COLORS: Record<string, string> = {
   // LEA-* IDs (canonical — matches taxonomy_tree.subject_area)
   'LEA-DSGN': '#1B3FC4',
