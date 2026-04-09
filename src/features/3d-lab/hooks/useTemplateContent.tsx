@@ -11,6 +11,8 @@ import { CutawayLayersSidebar } from '@/features/3d-lab/components/templates/Cut
 import { CutDepthSliderControl } from '@/features/3d-lab/components/templates/CutDepthSliderControl'
 import { FloorPlanLegendSidebar } from '@/features/3d-lab/components/templates/FloorPlanLegendSidebar'
 import { AnimatedStepsSidebar } from '@/features/3d-lab/components/templates/AnimatedStepsSidebar'
+import { ConfigPanel } from '@/features/3d-lab/components/templates/WallConfigurator/ConfigPanel'
+import { BOMPanel } from '@/features/3d-lab/components/templates/WallConfigurator/BOMPanel'
 import { createModuleStore } from '@/features/3d-lab/stores/createModuleStore'
 import { getModuleById } from '@/features/3d-lab/config/registry'
 import {
@@ -52,6 +54,11 @@ const FloorPlanScene = dynamic(
 
 const AnimatedSequenceScene = dynamic(
   () => import('@/features/3d-lab/templates/AnimatedSequenceScene').then((m) => m.AnimatedSequenceScene),
+  { ssr: false },
+)
+
+const WallConfiguratorRenderer = dynamic(
+  () => import('@/features/3d-lab/templates/WallConfiguratorRenderer').then((m) => m.WallConfiguratorRenderer),
   { ssr: false },
 )
 
@@ -268,7 +275,21 @@ export const useTemplateContent = (
         }
       }
 
-      // Calculator and wall-configurator have complex layouts — migrated in later phases
+      case 'wall-configurator': {
+        return {
+          shellConfig: { ...shellConfig },
+          capabilities,
+          content: {
+            canvasContent: canvasWrapper(
+              <WallConfiguratorRenderer config={config as ParametricSceneConfig} />,
+            ),
+            leftSidebarContent: <ConfigPanel />,
+            rightSidebarContent: <BOMPanel />,
+          },
+        }
+      }
+
+      // Calculator has complex per-toolType layout — stays on legacy path
       default:
         return null
     }
