@@ -8,7 +8,14 @@ import type { GeometryInstruction } from '@/features/3d-lab/types/templates'
  * Delegates to the shared GeometrySwitch primitive.
  */
 export function GeometryElement({ inst }: { inst: GeometryInstruction }) {
-  return <GeometrySwitch type={inst.type} args={inst.args} />
+  return (
+    <GeometrySwitch
+      type={inst.type}
+      args={inst.args}
+      profilePoints={inst.profilePoints}
+      extrudeDepth={inst.extrudeDepth}
+    />
+  )
 }
 
 /**

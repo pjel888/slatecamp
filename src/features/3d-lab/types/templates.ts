@@ -105,6 +105,7 @@ export type GeometryType =
   | 'ring'
   | 'sphere'
   | 'cone'
+  | 'extruded-profile'
 
 export interface GeometryInstruction {
   id: string
@@ -119,6 +120,10 @@ export interface GeometryInstruction {
   transparent?: boolean
   /** Optional label displayed via Html overlay */
   label?: string
+  /** 2D cross-section points for extruded-profile type */
+  profilePoints?: [number, number][]
+  /** Extrusion depth in scene units for extruded-profile type */
+  extrudeDepth?: number
 }
 
 // ─── Camera Config ───────────────────────────────────────────────────────────

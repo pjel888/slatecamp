@@ -24,3 +24,6 @@ export type { LawActivationDotProps } from './LawActivationDot'
 
 export { ViewportComfortGauge } from './ViewportComfortGauge'
 export type { ViewportComfortGaugeProps } from './ViewportComfortGauge'
+
+export { ClickInspectPopover } from './ClickInspectPopover'
+export type { ClickInspectPopoverProps } from './ClickInspectPopover'
