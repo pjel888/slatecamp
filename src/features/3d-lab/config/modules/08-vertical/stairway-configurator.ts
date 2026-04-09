@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/08-vertical/stairway-configurator.ts
+// src/features/3d-lab/config/modules/08-vertical/stairway-configurator.ts
 // ─────────────────────────────────────────────────────────────────────────────
 // StairCode PH — Multi-Law Parallel Compliance Explorer
 // PD 1096 (NBCP) · BP 220 (Housing) · BP 344 (Accessibility) · RA 9514 (Fire)
@@ -6,6 +6,10 @@
 // Architecture: Each law evaluates geometry independently via the parallel
 // rule-set pattern. Conflicts are flagged — never averaged or merged.
 // Color severity: RA 9514 > BP 344 > PD 1096 > BP 220
+//
+// v2 Refactor: Computation/geometry separation via ComputedStairState.
+// The geometry function calls computeStairState() internally (adapter pattern)
+// to preserve the ParametricSceneConfig.geometry signature.
 // ─────────────────────────────────────────────────────────────────────────────
 
 import type {
@@ -14,134 +18,71 @@ import type {
   GeometryInstruction,
   ViolationRule,
   AnnotationDef,
-  Preset,
 } from '@/features/3d-lab/types/templates'
 
-// ─── Helpers ────────────────────────────────────────────────────────────────
+import { computeStairState } from './stairway-computation'
+import type { ComputedStairState, StairParams } from './stairway-types'
+
+import {
+  PD1096_MAX_RISER_HEIGHT_MM,
+  PD1096_MIN_TREAD_DEPTH_MM,
+  PD1096_MIN_HEADROOM_MM,
+  PD1096_MAX_VERTICAL_RISE_MM,
+  PD1096_MIN_WIDTH_HIGH_OCC_MM,
+  PD1096_MIN_WIDTH_COMMERCIAL_MM,
+  PD1096_MIN_WIDTH_RESIDENTIAL_MM,
+  PD1096_HANDRAIL_MIN_HEIGHT_MM,
+  PD1096_HANDRAIL_MAX_HEIGHT_MM,
+  BP220_MAX_RISER_HEIGHT_MM,
+  BP220_MIN_TREAD_DEPTH_MM,
+  BP220_MIN_WIDTH_MM,
+  BP344_MIN_ACCESSIBLE_WIDTH_MM,
+  BP344_HANDRAIL_UPPER_HEIGHT_MM,
+  RA9514_MAX_RISER_HEIGHT_MM,
+  RA9514_MIN_TREAD_DEPTH_MM,
+  RA9514_MIN_WIDTH_MM,
+  RA9514_MAX_VERTICAL_RISE_MM,
+  TREAD_THICKNESS_M,
+  RISER_THICKNESS_M,
+  STRINGER_THICKNESS_M,
+  HANDRAIL_RADIUS_M,
+  BP344_GHOST_RAIL_RADIUS_M,
+  BP344_GHOST_OPACITY,
+  BP344_GHOST_OFFSET_M,
+  WIDTH_DEFICIT_OPACITY,
+  HEADROOM_PLANE_OPACITY,
+  HEADROOM_PASS_COLOR,
+  LAW_COLORS,
+  NEUTRAL_COLORS,
+} from './stairway-constants'
+
+import { ALL_PRESETS } from './stairway-presets'
+
+// ─── Helpers (kept for violation rule position functions) ────────────────────
 
 /** Convert mm parameter value to scene units (1 unit = 1 m) */
-function mm(v: number | string | boolean): number {
-  return (typeof v === 'number' ? v : Number(v)) / 1000
-}
+const mm = (v: number | string | boolean): number =>
+  (typeof v === 'number' ? v : Number(v)) / 1000
 
-function num(v: number | string | boolean): number {
-  return typeof v === 'number' ? v : Number(v)
-}
+const num = (v: number | string | boolean): number =>
+  typeof v === 'number' ? v : Number(v)
 
-function str(v: number | string | boolean): string {
-  return String(v)
-}
+const bool = (v: number | string | boolean): boolean =>
+  v === true || v === 'true'
 
-function bool(v: number | string | boolean): boolean {
-  return v === true || v === 'true'
-}
+const str = (v: number | string | boolean): string =>
+  String(v)
 
-// ─── Law Color Palette (Ordered by Severity) ────────────────────────────────
-// Each law has a permanent color identity. These are never reused elsewhere.
-
-const LAW = {
-  RA_9514: '#E74C3C', // Evacuation Red — CRITICAL (life-safety)
-  BP_344: '#3498DB',  // Access Blue — HIGH (civil rights overlay)
-  PD_1096: '#4A7FAD', // Code Slate — STANDARD (baseline)
-  BP_220: '#F5A623',  // Housing Amber — CONTEXTUAL (relaxes baseline)
-  PASS: '#2ECC71',    // Clearance Green
-} as const
-
-const NEUTRAL = {
-  TREAD: '#a1a1aa',
-  RISER: '#a1a1aa',
-  LANDING: '#a1a1aa',
-  HANDRAIL: '#71717a',
-} as const
-
-// ─── Project Classification Predicates ──────────────────────────────────────
-
-type P = Record<string, number | boolean | string>
-
-/** Is the project a BP 220 socialized or economic housing project? */
-function isBP220(p: P): boolean {
+// Classification predicates (thin wrappers for violation rule checks)
+const isBP220 = (p: StairParams): boolean => {
   const pt = str(p.projectType)
   return pt === 'bp220_socialized' || pt === 'bp220_economic'
 }
 
-/** Is the stair part of an accessible route (BP 344 overlay)? */
-function isAccessible(p: P): boolean {
-  return bool(p.isAccessibleRoute)
-}
-
-/** Is the stair a required exit stair (RA 9514 overlay)? */
-function isExit(p: P): boolean {
-  return bool(p.isExitStair)
-}
-
-/** Is the occupant load > 50 (PD 1096 width escalation)? */
-function isHighOcc(p: P): boolean {
-  return bool(p.isHighOccupancy)
-}
-
-/** Is project type general residential? */
-function isResidential(p: P): boolean {
-  return str(p.projectType) === 'general_residential'
-}
-
-// ─── Violation Color Resolution ─────────────────────────────────────────────
-// Each element displays ONE law's color — the most severe active violation.
-
-function riserViolColor(p: P): string | null {
-  const r = num(p.riserHeight)
-  // Severity order: RA 9514 > PD 1096 > BP 220
-  if (isExit(p) && r > 180) return LAW.RA_9514
-  if (!isBP220(p) && r > 200) return LAW.PD_1096
-  if (isBP220(p) && r > 250) return LAW.BP_220
-  return null
-}
-
-function treadViolColor(p: P): string | null {
-  const t = num(p.treadDepth)
-  // All laws agree on 200 mm minimum
-  if (t < 200) {
-    if (isExit(p)) return LAW.RA_9514
-    if (!isBP220(p)) return LAW.PD_1096
-    return LAW.BP_220
-  }
-  return null
-}
-
-function widthViolColor(p: P): string | null {
-  const w = num(p.stairWidth)
-  // Severity order: BP 344 > RA 9514 > PD 1096 > BP 220
-  if (isAccessible(p) && w < 1200) return LAW.BP_344
-  if (isExit(p) && w < 900) return LAW.RA_9514
-  if (!isBP220(p)) {
-    if (isHighOcc(p) && w < 1100) return LAW.PD_1096
-    if (!isResidential(p) && w < 900) return LAW.PD_1096
-    if (isResidential(p) && w < 750) return LAW.PD_1096
-  }
-  if (isBP220(p) && w < 600) return LAW.BP_220
-  return null
-}
-
-/** Returns the strictest applicable minimum width (for gap-plane geometry) */
-function strictestMinWidth(p: P): number {
-  const candidates: number[] = []
-
-  // Base regime
-  if (isBP220(p)) {
-    candidates.push(600)
-  } else if (isHighOcc(p)) {
-    candidates.push(1100)
-  } else if (!isResidential(p)) {
-    candidates.push(900)
-  } else {
-    candidates.push(750)
-  }
-
-  // Overlays
-  if (isAccessible(p)) candidates.push(1200)
-  if (isExit(p)) candidates.push(900)
-
-  return Math.max(...candidates)
-}
+const isAccessible = (p: StairParams): boolean => bool(p.isAccessibleRoute)
+const isExit = (p: StairParams): boolean => bool(p.isExitStair)
+const isHighOcc = (p: StairParams): boolean => bool(p.isHighOccupancy)
+const isResidential = (p: StairParams): boolean => str(p.projectType) === 'general_residential'
 
 // ─── Parameters ─────────────────────────────────────────────────────────────
 
@@ -252,31 +193,28 @@ const parameters: ParameterDef[] = [
   },
 ]
 
-// ─── Geometry Builder ───────────────────────────────────────────────────────
+// ─── Geometry Builder (Adapter Pattern) ────────────────────────────────────
+// The ParametricSceneConfig.geometry signature takes raw params.
+// Internally we compute state via the pure computation engine, then
+// pass it to the geometry sub-builder.
 
-function geometry(p: P): GeometryInstruction[] {
-  const rH = mm(p.riserHeight)
-  const tD = mm(p.treadDepth)
-  const sW = mm(p.stairWidth)
-  const n = num(p.numRisers)
-  const headroomM = mm(p.headroom)
-  const hrH = mm(p.handrailHeight)
+const buildGeometryFromState = (state: ComputedStairState): GeometryInstruction[] => {
+  // Convert mm to scene units (meters)
+  const rH = state.riserHeight / 1000
+  const tD = state.treadDepth / 1000
+  const sW = state.stairWidth / 1000
+  const n = state.numRisers
+  const headroomM = state.headroom / 1000
+  const hrH = state.handrailHeight / 1000
 
-  // Resolve per-element violation colors (most severe active law wins)
-  const rColor = riserViolColor(p) ?? NEUTRAL.RISER
-  const tColor = treadViolColor(p) ?? NEUTRAL.TREAD
-  const wColor = widthViolColor(p)
-  const headViol = num(p.headroom) < 2000
-  const hrViol =
-    !isBP220(p) &&
-    (num(p.handrailHeight) < 800 || num(p.handrailHeight) > 900)
-  const hrColor = hrViol ? LAW.PD_1096 : NEUTRAL.HANDRAIL
+  // Resolved colors from computation engine
+  const rColor = state.riserColor ?? NEUTRAL_COLORS.RISER
+  const tColor = state.treadColor ?? NEUTRAL_COLORS.TREAD
+  const wColor = state.widthColor
+  const headViol = state.headroomViolation
+  const hrColor = state.handrailColor ?? NEUTRAL_COLORS.HANDRAIL
 
   // Geometry constants
-  const treadThk = 0.03
-  const riserThk = 0.015
-  const strThk = 0.04
-  const hrRadius = 0.02
   const totalRise = n * rH
   const totalRun = (n - 1) * tD
   const strLen = Math.sqrt(totalRise ** 2 + totalRun ** 2)
@@ -290,9 +228,9 @@ function geometry(p: P): GeometryInstruction[] {
   g.push({
     id: 'base-platform',
     type: 'box',
-    position: [0, -treadThk / 2, tD / 2],
-    args: [sW, treadThk, tD],
-    color: NEUTRAL.LANDING,
+    position: [0, -TREAD_THICKNESS_M / 2, tD / 2],
+    args: [sW, TREAD_THICKNESS_M, tD],
+    color: NEUTRAL_COLORS.LANDING,
   })
 
   // ── 2. Treads & risers ────────────────────────────────────────────────────
@@ -303,8 +241,8 @@ function geometry(p: P): GeometryInstruction[] {
     g.push({
       id: `tread-${i}`,
       type: 'box',
-      position: [0, y - treadThk / 2, z],
-      args: [sW, treadThk, tD],
+      position: [0, y - TREAD_THICKNESS_M / 2, z],
+      args: [sW, TREAD_THICKNESS_M, tD],
       color: tColor,
     })
 
@@ -312,7 +250,7 @@ function geometry(p: P): GeometryInstruction[] {
       id: `riser-${i}`,
       type: 'box',
       position: [0, y - rH / 2, z + tD / 2],
-      args: [sW, rH, riserThk],
+      args: [sW, rH, RISER_THICKNESS_M],
       color: rColor,
     })
   }
@@ -323,12 +261,12 @@ function geometry(p: P): GeometryInstruction[] {
       id: `handrail-${s < 0 ? 'L' : 'R'}`,
       type: 'cylinder',
       position: [
-        s * (sW / 2 + strThk / 2),
+        s * (sW / 2 + STRINGER_THICKNESS_M / 2),
         strCY + hrH * Math.cos(strAngle),
         strCZ + hrH * Math.sin(strAngle),
       ],
       rotation: [Math.PI / 2 + strAngle, 0, 0],
-      args: [hrRadius, hrRadius, strLen, 8],
+      args: [HANDRAIL_RADIUS_M, HANDRAIL_RADIUS_M, strLen, 8],
       color: hrColor,
     })
   }
@@ -340,9 +278,9 @@ function geometry(p: P): GeometryInstruction[] {
   g.push({
     id: 'top-landing',
     type: 'box',
-    position: [0, topY - treadThk / 2, topZ],
-    args: [sW, treadThk, tD],
-    color: NEUTRAL.LANDING,
+    position: [0, topY - TREAD_THICKNESS_M / 2, topZ],
+    args: [sW, TREAD_THICKNESS_M, tD],
+    color: NEUTRAL_COLORS.LANDING,
   })
 
   // ── 6. Headroom clearance plane ───────────────────────────────────────────
@@ -355,19 +293,13 @@ function geometry(p: P): GeometryInstruction[] {
     type: 'box',
     position: [0, headY, headZ],
     args: [sW * 1.05, 0.005, totalRun + tD],
-    color: headViol ? LAW.PD_1096 : '#dbeafe',
-    opacity: 0.3,
+    color: headViol ? LAW_COLORS.PD_1096 : HEADROOM_PASS_COLOR,
+    opacity: HEADROOM_PLANE_OPACITY,
     transparent: true,
   })
 
   // ── 7. BP 344 Ghost Handrails (Accessible Route Overlay) ──────────────────
-  // When accessible route is active, show translucent rails at the BP 344
-  // required heights (700 mm and 900 mm) with 300 mm extensions.
-  if (isAccessible(p)) {
-    const gR = 0.015 // ghost rail radius
-    const gO = 0.4   // ghost opacity
-    const gOff = 0.03 // outward offset from primary rail
-
+  if (state.isAccessibleRoute) {
     // Dual-height rails along the stair slope
     for (const hMm of [0.9, 0.7] as const) {
       for (const s of [-1, 1] as const) {
@@ -375,14 +307,14 @@ function geometry(p: P): GeometryInstruction[] {
           id: `bp344-rail-${hMm * 1000}-${s < 0 ? 'L' : 'R'}`,
           type: 'cylinder',
           position: [
-            s * (sW / 2 + strThk / 2 + gOff),
+            s * (sW / 2 + STRINGER_THICKNESS_M / 2 + BP344_GHOST_OFFSET_M),
             strCY + hMm * Math.cos(strAngle),
             strCZ + hMm * Math.sin(strAngle),
           ],
           rotation: [Math.PI / 2 + strAngle, 0, 0],
-          args: [gR, gR, strLen, 8],
-          color: LAW.BP_344,
-          opacity: gO,
+          args: [BP344_GHOST_RAIL_RADIUS_M, BP344_GHOST_RAIL_RADIUS_M, strLen, 8],
+          color: LAW_COLORS.BP_344,
+          opacity: BP344_GHOST_OPACITY,
           transparent: true,
         })
       }
@@ -391,40 +323,37 @@ function geometry(p: P): GeometryInstruction[] {
     // 300 mm horizontal extensions at bottom and top of stair
     const extLen = 0.3
     for (const s of [-1, 1] as const) {
-      const xPos = s * (sW / 2 + strThk / 2 + gOff)
+      const xPos = s * (sW / 2 + STRINGER_THICKNESS_M / 2 + BP344_GHOST_OFFSET_M)
 
-      // Bottom extension (extends forward from base)
+      // Bottom extension
       g.push({
         id: `bp344-ext-bot-${s < 0 ? 'L' : 'R'}`,
         type: 'cylinder',
         position: [xPos, 0.9, tD / 2 + extLen / 2],
         rotation: [Math.PI / 2, 0, 0],
-        args: [gR, gR, extLen, 8],
-        color: LAW.BP_344,
-        opacity: gO,
+        args: [BP344_GHOST_RAIL_RADIUS_M, BP344_GHOST_RAIL_RADIUS_M, extLen, 8],
+        color: LAW_COLORS.BP_344,
+        opacity: BP344_GHOST_OPACITY,
         transparent: true,
       })
 
-      // Top extension (extends beyond top landing)
+      // Top extension
       g.push({
         id: `bp344-ext-top-${s < 0 ? 'L' : 'R'}`,
         type: 'cylinder',
         position: [xPos, topY + 0.9, topZ - extLen / 2],
         rotation: [Math.PI / 2, 0, 0],
-        args: [gR, gR, extLen, 8],
-        color: LAW.BP_344,
-        opacity: gO,
+        args: [BP344_GHOST_RAIL_RADIUS_M, BP344_GHOST_RAIL_RADIUS_M, extLen, 8],
+        color: LAW_COLORS.BP_344,
+        opacity: BP344_GHOST_OPACITY,
         transparent: true,
       })
     }
   }
 
   // ── 8. Width deficit indicator planes ─────────────────────────────────────
-  // When clear width is below the strictest applicable minimum, translucent
-  // planes fill the gap on each side showing how much wider the stair must be.
   if (wColor) {
-    const reqW = strictestMinWidth(p)
-    const deficit = mm(reqW) - sW
+    const deficit = state.widthDeficit / 1000 // mm to meters
     if (deficit > 0) {
       for (const s of [-1, 1] as const) {
         g.push({
@@ -433,7 +362,7 @@ function geometry(p: P): GeometryInstruction[] {
           position: [s * (sW / 2 + deficit / 4), totalRise / 2, strCZ],
           args: [deficit / 2, totalRise, totalRun + tD],
           color: wColor,
-          opacity: 0.15,
+          opacity: WIDTH_DEFICIT_OPACITY,
           transparent: true,
         })
       }
@@ -443,24 +372,26 @@ function geometry(p: P): GeometryInstruction[] {
   return g
 }
 
+// Adapter: ParametricSceneConfig.geometry signature → computation engine → sub-builder
+const geometry = (p: StairParams): GeometryInstruction[] => {
+  const state = computeStairState(p)
+  return buildGeometryFromState(state)
+}
+
 // ─── Violation Rules ────────────────────────────────────────────────────────
 // Organized by law. Each law evaluates independently.
-// PD 1096 fires when it is the base regime (non-BP 220 projects).
-// BP 220 fires only for qualifying housing projects.
-// BP 344 / RA 9514 fire as overlays when their toggles are active.
-// Conflict warnings fire when two laws disagree on the same dimension.
+// All threshold checks now use named constants from stairway-constants.ts.
 
 const violations: ViolationRule[] = [
   // ═══════════════════════════════════════════════════════════════════════════
   // PD 1096 — National Building Code (Base Regime)
-  // Active when project is NOT a BP 220 housing project
   // ═══════════════════════════════════════════════════════════════════════════
 
   {
     id: 'pd1096-max-riser',
     field: 'riserHeight',
-    check: (p) => !isBP220(p) && num(p.riserHeight) > 200,
-    message: 'PD 1096: Maximum riser height is 200 mm',
+    check: (p) => !isBP220(p) && num(p.riserHeight) > PD1096_MAX_RISER_HEIGHT_MM,
+    message: `PD 1096: Maximum riser height is ${PD1096_MAX_RISER_HEIGHT_MM} mm`,
     codeCitation: 'PD 1096 IRR Rule VIII §804',
     severity: 'error',
     position: (p) => [0, mm(p.riserHeight) / 2, 0],
@@ -468,8 +399,8 @@ const violations: ViolationRule[] = [
   {
     id: 'pd1096-min-tread',
     field: 'treadDepth',
-    check: (p) => !isBP220(p) && num(p.treadDepth) < 200,
-    message: 'PD 1096: Minimum tread depth is 200 mm',
+    check: (p) => !isBP220(p) && num(p.treadDepth) < PD1096_MIN_TREAD_DEPTH_MM,
+    message: `PD 1096: Minimum tread depth is ${PD1096_MIN_TREAD_DEPTH_MM} mm`,
     codeCitation: 'PD 1096 IRR Rule VIII §804',
     severity: 'error',
     position: (p) => [0, mm(p.riserHeight) + 0.06, 0],
@@ -477,8 +408,8 @@ const violations: ViolationRule[] = [
   {
     id: 'pd1096-min-headroom',
     field: 'headroom',
-    check: (p) => num(p.headroom) < 2000,
-    message: 'Minimum headroom clearance is 2,000 mm',
+    check: (p) => num(p.headroom) < PD1096_MIN_HEADROOM_MM,
+    message: `Minimum headroom clearance is ${PD1096_MIN_HEADROOM_MM} mm`,
     codeCitation: 'PD 1096 IRR Rule VIII §804',
     severity: 'error',
     position: (p) => {
@@ -489,8 +420,8 @@ const violations: ViolationRule[] = [
   {
     id: 'pd1096-max-vertical',
     field: 'numRisers',
-    check: (p) => num(p.numRisers) * num(p.riserHeight) > 3600,
-    message: 'PD 1096: Max 3,600 mm vertical rise between landings',
+    check: (p) => num(p.numRisers) * num(p.riserHeight) > PD1096_MAX_VERTICAL_RISE_MM,
+    message: `PD 1096: Max ${PD1096_MAX_VERTICAL_RISE_MM} mm vertical rise between landings`,
     codeCitation: 'PD 1096 IRR Rule VIII §804',
     severity: 'error',
     position: (p) => {
@@ -501,8 +432,8 @@ const violations: ViolationRule[] = [
   {
     id: 'pd1096-min-width-high-occ',
     field: 'stairWidth',
-    check: (p) => !isBP220(p) && isHighOcc(p) && num(p.stairWidth) < 1100,
-    message: 'PD 1096: Min width 1,100 mm for occupant load > 50',
+    check: (p) => !isBP220(p) && isHighOcc(p) && num(p.stairWidth) < PD1096_MIN_WIDTH_HIGH_OCC_MM,
+    message: `PD 1096: Min width ${PD1096_MIN_WIDTH_HIGH_OCC_MM} mm for occupant load > 50`,
     codeCitation: 'PD 1096 IRR Rule VIII §804',
     severity: 'error',
     position: (p) => [0, -0.1, mm(p.treadDepth) / 2],
@@ -511,8 +442,8 @@ const violations: ViolationRule[] = [
     id: 'pd1096-min-width-commercial',
     field: 'stairWidth',
     check: (p) =>
-      !isBP220(p) && !isHighOcc(p) && !isResidential(p) && num(p.stairWidth) < 900,
-    message: 'PD 1096: Min width 900 mm for 10–50 occupants',
+      !isBP220(p) && !isHighOcc(p) && !isResidential(p) && num(p.stairWidth) < PD1096_MIN_WIDTH_COMMERCIAL_MM,
+    message: `PD 1096: Min width ${PD1096_MIN_WIDTH_COMMERCIAL_MM} mm for 10–50 occupants`,
     codeCitation: 'PD 1096 IRR Rule VIII §804',
     severity: 'error',
     position: (p) => [0, -0.1, mm(p.treadDepth) / 2],
@@ -521,8 +452,8 @@ const violations: ViolationRule[] = [
     id: 'pd1096-min-width-residential',
     field: 'stairWidth',
     check: (p) =>
-      !isBP220(p) && !isHighOcc(p) && isResidential(p) && num(p.stairWidth) < 750,
-    message: 'PD 1096: Min width 750 mm for private stairs (≤10 persons)',
+      !isBP220(p) && !isHighOcc(p) && isResidential(p) && num(p.stairWidth) < PD1096_MIN_WIDTH_RESIDENTIAL_MM,
+    message: `PD 1096: Min width ${PD1096_MIN_WIDTH_RESIDENTIAL_MM} mm for private stairs (≤10 persons)`,
     codeCitation: 'PD 1096 IRR Rule VIII §804',
     severity: 'error',
     position: (p) => [0, -0.1, mm(p.treadDepth) / 2],
@@ -532,8 +463,8 @@ const violations: ViolationRule[] = [
     field: 'handrailHeight',
     check: (p) =>
       !isBP220(p) &&
-      (num(p.handrailHeight) < 800 || num(p.handrailHeight) > 900),
-    message: 'PD 1096: Handrails must be 800–900 mm above nosing',
+      (num(p.handrailHeight) < PD1096_HANDRAIL_MIN_HEIGHT_MM || num(p.handrailHeight) > PD1096_HANDRAIL_MAX_HEIGHT_MM),
+    message: `PD 1096: Handrails must be ${PD1096_HANDRAIL_MIN_HEIGHT_MM}–${PD1096_HANDRAIL_MAX_HEIGHT_MM} mm above nosing`,
     codeCitation: 'PD 1096 IRR Rule VIII §804',
     severity: 'error',
     position: (p) => {
@@ -547,15 +478,14 @@ const violations: ViolationRule[] = [
   },
 
   // ═══════════════════════════════════════════════════════════════════════════
-  // BP 220 — Socialized / Economic Housing (Replaces PD 1096 as Base)
-  // Active only when project is BP 220 socialized or economic housing
+  // BP 220 — Socialized / Economic Housing
   // ═══════════════════════════════════════════════════════════════════════════
 
   {
     id: 'bp220-max-riser',
     field: 'riserHeight',
-    check: (p) => isBP220(p) && num(p.riserHeight) > 250,
-    message: 'BP 220: Maximum riser height is 250 mm for housing',
+    check: (p) => isBP220(p) && num(p.riserHeight) > BP220_MAX_RISER_HEIGHT_MM,
+    message: `BP 220: Maximum riser height is ${BP220_MAX_RISER_HEIGHT_MM} mm for housing`,
     codeCitation: 'BP 220 IRR · DHSUD',
     severity: 'error',
     position: (p) => [0, mm(p.riserHeight) / 2, 0],
@@ -563,8 +493,8 @@ const violations: ViolationRule[] = [
   {
     id: 'bp220-min-tread',
     field: 'treadDepth',
-    check: (p) => isBP220(p) && num(p.treadDepth) < 200,
-    message: 'BP 220: Minimum tread depth is 200 mm',
+    check: (p) => isBP220(p) && num(p.treadDepth) < BP220_MIN_TREAD_DEPTH_MM,
+    message: `BP 220: Minimum tread depth is ${BP220_MIN_TREAD_DEPTH_MM} mm`,
     codeCitation: 'BP 220 IRR · DHSUD',
     severity: 'error',
     position: (p) => [0, mm(p.riserHeight) + 0.06, 0],
@@ -572,23 +502,22 @@ const violations: ViolationRule[] = [
   {
     id: 'bp220-min-width',
     field: 'stairWidth',
-    check: (p) => isBP220(p) && num(p.stairWidth) < 600,
-    message: 'BP 220: Min interior stair width is 600 mm',
+    check: (p) => isBP220(p) && num(p.stairWidth) < BP220_MIN_WIDTH_MM,
+    message: `BP 220: Min interior stair width is ${BP220_MIN_WIDTH_MM} mm`,
     codeCitation: 'BP 220 IRR · DHSUD',
     severity: 'error',
     position: (p) => [0, -0.1, mm(p.treadDepth) / 2],
   },
 
   // ═══════════════════════════════════════════════════════════════════════════
-  // BP 344 — Accessibility Law (Overlay — Additive to Base Regime)
-  // Active when "Part of Accessible Route?" is toggled ON
+  // BP 344 — Accessibility Law (Overlay)
   // ═══════════════════════════════════════════════════════════════════════════
 
   {
     id: 'bp344-min-width',
     field: 'stairWidth',
-    check: (p) => isAccessible(p) && num(p.stairWidth) < 1200,
-    message: 'BP 344: Min accessible stair width is 1,200 mm',
+    check: (p) => isAccessible(p) && num(p.stairWidth) < BP344_MIN_ACCESSIBLE_WIDTH_MM,
+    message: `BP 344: Min accessible stair width is ${BP344_MIN_ACCESSIBLE_WIDTH_MM} mm`,
     codeCitation: 'BP 344 IRR · DPWH',
     severity: 'error',
     position: (p) => [0, -0.12, mm(p.treadDepth) / 2],
@@ -596,8 +525,8 @@ const violations: ViolationRule[] = [
   {
     id: 'bp344-handrail-upper',
     field: 'handrailHeight',
-    check: (p) => isAccessible(p) && num(p.handrailHeight) !== 900,
-    message: 'BP 344: Primary handrail must be at 900 mm (lower rail at 700 mm shown in 3D)',
+    check: (p) => isAccessible(p) && num(p.handrailHeight) !== BP344_HANDRAIL_UPPER_HEIGHT_MM,
+    message: `BP 344: Primary handrail must be at ${BP344_HANDRAIL_UPPER_HEIGHT_MM} mm (lower rail at 700 mm shown in 3D)`,
     codeCitation: 'BP 344 IRR · DPWH',
     severity: 'error',
     position: (p) => {
@@ -611,15 +540,14 @@ const violations: ViolationRule[] = [
   },
 
   // ═══════════════════════════════════════════════════════════════════════════
-  // RA 9514 — Fire Code (Overlay — Life-Safety Egress)
-  // Active when "Required Exit Stair?" is toggled ON
+  // RA 9514 — Fire Code (Overlay)
   // ═══════════════════════════════════════════════════════════════════════════
 
   {
     id: 'ra9514-max-riser',
     field: 'riserHeight',
-    check: (p) => isExit(p) && num(p.riserHeight) > 180,
-    message: 'RA 9514: Max exit stair riser is 180 mm',
+    check: (p) => isExit(p) && num(p.riserHeight) > RA9514_MAX_RISER_HEIGHT_MM,
+    message: `RA 9514: Max exit stair riser is ${RA9514_MAX_RISER_HEIGHT_MM} mm`,
     codeCitation: 'RA 9514 IRR · BFP',
     severity: 'error',
     position: (p) => [-(mm(p.stairWidth) / 2) - 0.12, mm(p.riserHeight) / 2, 0],
@@ -627,8 +555,8 @@ const violations: ViolationRule[] = [
   {
     id: 'ra9514-min-width',
     field: 'stairWidth',
-    check: (p) => isExit(p) && num(p.stairWidth) < 900,
-    message: 'RA 9514: Min exit stair width is 900 mm',
+    check: (p) => isExit(p) && num(p.stairWidth) < RA9514_MIN_WIDTH_MM,
+    message: `RA 9514: Min exit stair width is ${RA9514_MIN_WIDTH_MM} mm`,
     codeCitation: 'RA 9514 IRR · BFP',
     severity: 'error',
     position: (p) => [0, -0.14, mm(p.treadDepth) / 2],
@@ -636,8 +564,8 @@ const violations: ViolationRule[] = [
   {
     id: 'ra9514-min-tread',
     field: 'treadDepth',
-    check: (p) => isExit(p) && num(p.treadDepth) < 200,
-    message: 'RA 9514: Min exit stair tread is 200 mm',
+    check: (p) => isExit(p) && num(p.treadDepth) < RA9514_MIN_TREAD_DEPTH_MM,
+    message: `RA 9514: Min exit stair tread is ${RA9514_MIN_TREAD_DEPTH_MM} mm`,
     codeCitation: 'RA 9514 IRR · BFP',
     severity: 'error',
     position: (p) => [0, mm(p.riserHeight) + 0.08, mm(p.treadDepth) / 2],
@@ -645,8 +573,8 @@ const violations: ViolationRule[] = [
   {
     id: 'ra9514-max-vertical',
     field: 'numRisers',
-    check: (p) => isExit(p) && num(p.numRisers) * num(p.riserHeight) > 3000,
-    message: 'RA 9514: Max 3,000 mm vertical rise between landings for exit stairs',
+    check: (p) => isExit(p) && num(p.numRisers) * num(p.riserHeight) > RA9514_MAX_VERTICAL_RISE_MM,
+    message: `RA 9514: Max ${RA9514_MAX_VERTICAL_RISE_MM} mm vertical rise between landings for exit stairs`,
     codeCitation: 'RA 9514 IRR · BFP',
     severity: 'error',
     position: (p) => {
@@ -657,18 +585,15 @@ const violations: ViolationRule[] = [
 
   // ═══════════════════════════════════════════════════════════════════════════
   // Cross-Law Conflict Warnings
-  // These fire when a stair passes one law but violates another on the same
-  // dimension. A conflict is not noncompliance — it reflects different legal
-  // regimes that apply to different project types.
   // ═══════════════════════════════════════════════════════════════════════════
 
   {
     id: 'conflict-riser-bp220-vs-pd1096',
     field: 'riserHeight',
     check: (p) =>
-      isBP220(p) && num(p.riserHeight) > 200 && num(p.riserHeight) <= 250,
+      isBP220(p) && num(p.riserHeight) > PD1096_MAX_RISER_HEIGHT_MM && num(p.riserHeight) <= BP220_MAX_RISER_HEIGHT_MM,
     message:
-      'Conflict: Passes BP 220 (≤ 250 mm) but exceeds PD 1096 baseline (≤ 200 mm). Confirm project is registered as housing with DHSUD.',
+      `Conflict: Passes BP 220 (≤ ${BP220_MAX_RISER_HEIGHT_MM} mm) but exceeds PD 1096 baseline (≤ ${PD1096_MAX_RISER_HEIGHT_MM} mm). Confirm project is registered as housing with DHSUD.`,
     codeCitation: 'BP 220 vs PD 1096',
     severity: 'warning',
     position: (p) => [mm(p.stairWidth) / 2 + 0.2, mm(p.riserHeight), 0],
@@ -677,9 +602,9 @@ const violations: ViolationRule[] = [
     id: 'conflict-width-bp220-vs-pd1096',
     field: 'stairWidth',
     check: (p) =>
-      isBP220(p) && num(p.stairWidth) >= 600 && num(p.stairWidth) < 750,
+      isBP220(p) && num(p.stairWidth) >= BP220_MIN_WIDTH_MM && num(p.stairWidth) < PD1096_MIN_WIDTH_RESIDENTIAL_MM,
     message:
-      'Conflict: Passes BP 220 (≥ 600 mm) but below PD 1096 baseline (≥ 750 mm). Valid only for qualifying housing projects.',
+      `Conflict: Passes BP 220 (≥ ${BP220_MIN_WIDTH_MM} mm) but below PD 1096 baseline (≥ ${PD1096_MIN_WIDTH_RESIDENTIAL_MM} mm). Valid only for qualifying housing projects.`,
     codeCitation: 'BP 220 vs PD 1096',
     severity: 'warning',
     position: (p) => [0, -0.16, mm(p.treadDepth) / 2],
@@ -690,10 +615,10 @@ const violations: ViolationRule[] = [
     check: (p) =>
       isExit(p) &&
       !isBP220(p) &&
-      num(p.riserHeight) > 180 &&
-      num(p.riserHeight) <= 200,
+      num(p.riserHeight) > RA9514_MAX_RISER_HEIGHT_MM &&
+      num(p.riserHeight) <= PD1096_MAX_RISER_HEIGHT_MM,
     message:
-      'Stricter: Passes PD 1096 (≤ 200 mm) but exceeds RA 9514 exit maximum (≤ 180 mm). Redesign or declassify as exit stair.',
+      `Stricter: Passes PD 1096 (≤ ${PD1096_MAX_RISER_HEIGHT_MM} mm) but exceeds RA 9514 exit maximum (≤ ${RA9514_MAX_RISER_HEIGHT_MM} mm). Redesign or declassify as exit stair.`,
     codeCitation: 'RA 9514 vs PD 1096',
     severity: 'warning',
     position: (p) => [
@@ -705,8 +630,6 @@ const violations: ViolationRule[] = [
 ]
 
 // ─── Annotations ────────────────────────────────────────────────────────────
-// Labeled hotspots in the 3D viewport. BP 344 annotations are conditionally
-// visible when the accessible route overlay is active.
 
 const annotations: AnnotationDef[] = [
   {
@@ -801,73 +724,6 @@ const annotations: AnnotationDef[] = [
   },
 ]
 
-// ─── Scenario Presets ───────────────────────────────────────────────────────
-// Each preset encodes a complete project classification + geometry state.
-// They are designed to demonstrate different compliance scenarios.
-
-const presets: Preset[] = [
-  {
-    label: 'Standard House',
-    values: {
-      projectType: 'general_residential',
-      isAccessibleRoute: false,
-      isExitStair: false,
-      isHighOccupancy: false,
-      stairWidth: 900,
-      riserHeight: 185,
-      treadDepth: 250,
-      headroom: 2100,
-      handrailHeight: 860,
-      numRisers: 12,
-    },
-  },
-  {
-    label: 'BP 220 Housing',
-    values: {
-      projectType: 'bp220_socialized',
-      isAccessibleRoute: false,
-      isExitStair: false,
-      isHighOccupancy: false,
-      stairWidth: 620,
-      riserHeight: 240,
-      treadDepth: 210,
-      headroom: 2100,
-      handrailHeight: 850,
-      numRisers: 14,
-    },
-  },
-  {
-    label: 'Public Hall',
-    values: {
-      projectType: 'commercial',
-      isAccessibleRoute: true,
-      isExitStair: false,
-      isHighOccupancy: true,
-      stairWidth: 1250,
-      riserHeight: 175,
-      treadDepth: 280,
-      headroom: 2200,
-      handrailHeight: 900,
-      numRisers: 12,
-    },
-  },
-  {
-    label: 'Exit Stair',
-    values: {
-      projectType: 'commercial',
-      isAccessibleRoute: false,
-      isExitStair: true,
-      isHighOccupancy: true,
-      stairWidth: 950,
-      riserHeight: 190,
-      treadDepth: 260,
-      headroom: 2100,
-      handrailHeight: 900,
-      numRisers: 14,
-    },
-  },
-]
-
 // ─── Export ──────────────────────────────────────────────────────────────────
 
 export const stairwayConfigurator: ParametricSceneConfig = {
@@ -880,7 +736,7 @@ export const stairwayConfigurator: ParametricSceneConfig = {
   geometry,
   violations,
   annotations,
-  presets,
+  presets: ALL_PRESETS,
   camera: {
     position: [3, 3, 3],
     fov: 45,
@@ -892,4 +748,3 @@ export const stairwayConfigurator: ParametricSceneConfig = {
   supportedPhases: ['guided', 'faded', 'sandbox', 'challenge'],
   hasChallengeMode: true,
 }
-
