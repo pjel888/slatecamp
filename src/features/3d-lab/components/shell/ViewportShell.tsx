@@ -106,23 +106,7 @@ export const ViewportShell = ({
     return parts.join(' ')
   }, [leftCfg, rightCfg, leftCollapsed, rightCollapsed, leftWidth, rightWidth])
 
-  // Apply default collapsed state on mount
-  useEffect(() => {
-    if (leftCfg?.defaultCollapsed) useViewportShellStore.getState().toggleLeftSidebar()
-    if (rightCfg?.defaultCollapsed) useViewportShellStore.getState().toggleRightSidebar()
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
-
-  // Set initial mobile tab
-  useEffect(() => {
-    const tabs = buildMobileTabs()
-    if (tabs.length > 0) {
-      useViewportShellStore.getState().setMobileTab(tabs[0].id)
-    }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
-
-  // Build mobile bottom sheet tabs
+  // Build mobile bottom sheet tabs — defined before useEffects that reference it
   const buildMobileTabs = useCallback(() => {
     const tabs: Array<{ id: string; label: string; content: ReactNode }> = []
 
@@ -144,6 +128,22 @@ export const ViewportShell = ({
   }, [leftCfg, rightCfg, content.leftSidebarContent, content.rightSidebarContent])
 
   const mobileTabs = buildMobileTabs()
+
+  // Apply default collapsed state on mount
+  useEffect(() => {
+    if (leftCfg?.defaultCollapsed) useViewportShellStore.getState().toggleLeftSidebar()
+    if (rightCfg?.defaultCollapsed) useViewportShellStore.getState().toggleRightSidebar()
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
+  // Set initial mobile tab
+  useEffect(() => {
+    const tabs = buildMobileTabs()
+    if (tabs.length > 0) {
+      useViewportShellStore.getState().setMobileTab(tabs[0].id)
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   return (
     <div className="flex h-full w-full flex-col overflow-hidden bg-surface-light">

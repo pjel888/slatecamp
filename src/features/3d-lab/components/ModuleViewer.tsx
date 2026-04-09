@@ -278,40 +278,41 @@ export const ModuleViewer = ({ modelId, basePath }: ModuleViewerProps) => {
     )
   }
 
-  // ── Legacy fallback (calculator, non-migrated templates) ──────────────────
+  // ── Fallback: ViewportShell header + own internal layout (calculator, etc.) ─
   return (
-    <LabModuleShell
-      topBar={
-        <LabTopBar
-          title={title}
-          codeReference={codeRef}
-          visitedCount={0}
-          totalCount={totalALEQuestions}
-          onBack={handleBack}
-        />
-      }
+    <ViewportShell
+      title={title}
+      codeReference={codeRef}
+      visitedCount={0}
+      totalCount={totalALEQuestions}
+      onBack={handleBack}
+      shellConfig={{}}
+      capabilities={{ resetCamera: true }}
+      content={{
+        canvasContent: (
+          <LabViewportFrame>
+            <LabViewport
+              modelId={modelId}
+              model={{ model_id: modelId, name: title, slug: modelId, url: '' }}
+              parameters={[]}
+              hotspots={[]}
+              userTier="free"
+              preLoadedConfig={config}
+            />
+          </LabViewportFrame>
+        ),
+      }}
     >
-      <LabViewportFrame>
-        <LabViewport
-          modelId={modelId}
-          model={{ model_id: modelId, name: title, slug: modelId, url: '' }}
-          parameters={[]}
-          hotspots={[]}
-          userTier="free"
-          preLoadedConfig={config}
-        />
-        {showContextCard && !showOnboarding && (
-          <div className="z-30 pointer-events-auto">
-            <ModuleContextCard config={moduleMetadata} onDismiss={handleContextDismiss} />
-          </div>
-        )}
-      </LabViewportFrame>
-
+      {showContextCard && !showOnboarding && (
+        <div className="z-30 pointer-events-auto">
+          <ModuleContextCard config={moduleMetadata} onDismiss={handleContextDismiss} />
+        </div>
+      )}
       {showOnboarding && (
         <div className="z-50 pointer-events-auto">
           <OnboardingFlow onComplete={handleOnboardingComplete} />
         </div>
       )}
-    </LabModuleShell>
+    </ViewportShell>
   )
 }

@@ -289,7 +289,12 @@ export const useTemplateContent = (
         }
       }
 
-      // Calculator has complex per-toolType layout — stays on legacy path
+      // Calculator has complex per-toolType layout with its own 3-column grid,
+      // breadcrumb, FloatingCameraBar, and per-tool stores. Route through shell
+      // for header consistency but let it handle its own internal layout.
+      case 'calculator':
+        return null
+
       default:
         return null
     }
