@@ -1,29 +1,51 @@
-# Current Task: Unified Viewport Shell — Plan Complete, Ready for Implementation
+# Current Task: Stairway Configurator v2 Phase 1 — ALL 11 TASKS COMPLETE
+
+**STATUS:** COMPLETE
+**DATE:** 2026-04-09
+
+## Completed: All 11 Phase 1 Tasks
+
+- **Task 1:** stairway-types.ts — ComputedStairState, StairTypeConfig, compliance types (10 type exports)
+- **Task 2:** stairway-constants.ts — PH code thresholds (PD 1096, BP 220, BP 344, RA 9514) + Blondel + rendering constants
+- **Task 3:** stairway-constants-international.ts — IBC 2024, ADA/ANSI A117.1, IRC (all UNVERIFIED)
+- **Task 4:** stairway-computation.ts — Pure computation engine, zero Three.js/React imports
+- **Task 5:** stairway-configurator.ts refactored — adapter pattern (geometry → computeStairState → buildGeometryFromState)
+- **Task 6:** stairway-presets.ts — 4 scenario + 11 violation = 15 total presets
+- **Task 7:** Blondel comfort formula — info severity violation + annotation
+- **Task 8:** 5 historical annotations — Blondel, Templer, Cocoanut Grove, Uniformity, Handrail (toggle-gated)
+- **Task 9:** Dimensional uniformity — toleranceMode + toleranceRange params, per-step riser variations
+- **Task 10:** 8 UI component shells — PresetChip, ComplianceLawCard, DimensionSlider, etc.
+- **Task 11:** ViewportComfortGauge — corner-anchored DOM overlay (120x60px, monospace, semi-transparent)
+
+## Commits
+
+1. `9239d4ed` — feat(stairway-configurator): add types, constants, and computation engine (Tasks 1-4)
+2. `6b41d779` — feat(stairway-configurator): refactor geometry builder + add violation presets (Tasks 5-6)
+3. `629c8ead` — feat(stairway-configurator): add Blondel comfort, historical annotations, uniformity sim (Tasks 7-9)
+4. `aaed8ad9` — feat(stairway-configurator): add UI component shells + comfort gauge overlay (Tasks 10-11)
+
+## Backlog (Phase 2+)
+
+- Nosing profile cross-section view (Phase 2)
+- International code comparison mode with ghost geometry (Phase 2)
+- Handrail graspability detail (Phase 2)
+- L-shape / U-shape stair geometry (Phase 3)
+- Evacuation flow simulation (Phase 3)
+- Material and slip resistance layer (Phase 3)
+- Guided tour system (Phase 2+)
+
+---
+
+# Previous Task: Unified Viewport Shell — Plan Complete, Ready for Implementation
 
 **STATUS:** IN PROGRESS
 **DATE:** 2026-04-09
 
 ## In Progress
 - Unified Viewport Shell — Section 12A spec + implementation plan written to `.ai/plans/2026-04-09_unified-viewport-shell.md`
-- Codebase audit complete: all 7 templates + DevControlsModule + WallConfigurator layout divergence documented
-- LabViewportFrame overlay fix applied (relative → absolute inset-0 for panel visibility)
-
-## Backlog
-- Build ViewportShell component (Phase 1)
-- Build ViewportSidebar + PanelCollapseButton (Phase 1)
-- Build ViewportToolbar (Phase 1)
-- Build ViewportBottomSheet (Phase 1)
-- Build useViewportShellStore (Phase 1)
-- Migrate ParametricScene to shell slots (Phase 2)
-- Migrate ExplodedAssembly to shell slots (Phase 2)
-- Migrate CutawaySection to shell slots (Phase 2)
-- Extract CameraPresetBar from DevControlsModule (Phase 2)
-- Wire crossSectionEnabled to THREE.Plane clipping (Phase 2)
-- Wire explodedViewEnabled to toggle UI (Phase 3)
-- Migrate FloorPlan, AnimatedSequence, Calculator (Phase 3)
-- Migrate WallConfigurator ConfigPanel/BOMPanel to slots (Phase 4)
-- Migrate DevControlsModule to ViewportShell (Phase 5)
-- Write Section 12A spec into 008-3d-lab-feature-specification.md
+- ViewportShell, ViewportSidebar, ViewportHeader, ViewportToolbar, ViewportBottomSheet, ViewportStatusBar, PanelCollapseButton — all built
+- useViewportShellStore (Store 11) created
+- ParametricScene migrated to ViewportShell (Phase 2 of shell migration)
 
 ---
 
@@ -31,37 +53,3 @@
 
 **STATUS:** COMPLETE
 **DATE:** 2026-04-09
-
-## Completed: All Remediation Phases (58 gaps closed)
-- **Phase 0:** Foundations — ChartEmptyState, shared-helpers, chart-colors, AnalyticsErrorBoundary, useChartColors
-- **Phase 1A:** Error boundaries — error.tsx + 23 sections wrapped
-- **Phase 1B:** Result types — 22 server actions migrated to AnalyticsResult<T>
-- **Phase 2:** Design tokens — 15 Recharts components, 7 magic numbers extracted
-- **Phase 3:** Consistency — shadcn migration, dynamic imports, ReadinessSection refactor
-- **Phase 4:** Performance — pagination, unstable_cache, React.cache dedup
-- **Phase 5:** Orphan resolution — ErrorPatterns wired, 4 orphans deleted, CalibrationCurve wired
-- **Phase 6:** Accessibility — 14 aria-labels, 3 heatmap text overlays
-- **Phase 7:** Empty states — 22+ section-specific ChartEmptyState messages
-
-## Completed: All Expansion Phases (18 new sections)
-- **EX-Phase 0:** Data pipeline — user_theta write, trackEvent, cross-feature-data helpers
-- **EX-Phase 0.5:** Tab infrastructure — /dashboard/analytics/advanced route + AnalyticsTabNav
-- **EX-Phase 1:** Student Drill Intelligence — 5 sections (IRT, Mastery, ModeFunnel, Metacognition, Relearning)
-- **EX-Phase 2:** Student Reading Intelligence — 2 sections (ReadingCorrelation, ReadingDepth)
-- **EX-Phase 3:** CEO Core Analytics — 4 sections + /ceo/analytics page + nav link
-- **EX-Phase 4:** CEO Advanced — 4 sections (PassRate, CAGEQuality, StudyCohort, QuestionHealth)
-- **EX-Phase 5:** Cross-Feature Intelligence — 3 sections (MultimodalStudy, TopicIntelligence, LearningVelocity)
-
-## Product Decisions — ALL RESOLVED (2026-04-09)
-- Orphaned fetchers: Wire error patterns + memory strength, delete review calendar
-- CalibrationCurve: Card + curve in same section
-- Empty states: Section-specific messages
-- Caching: 5min unstable_cache for slow sections, force-dynamic for readiness + streak
-- Tab placement: "Advanced Insights" tab via /dashboard/analytics/advanced route
-- Analytics events: 5 key funnel events via trackEvent()
-- CEO access: CEO role only, /ceo/analytics page
-- Engagement weights: Fixed weights (highlights 0.15, bookmarks 0.1, teach-backs 0.25, EI 0.2, session 0.3)
-
-## Previous: Analytics Feature Spec — COMPLETE (2026-04-08)
-
-## Previous: Route & Path Constants Consolidation — Phase 1 COMPLETE
