@@ -1,41 +1,40 @@
-# Current Task: Stairway Configurator v2 Phase 2 — ALL 8 TASKS COMPLETE
+# Current Task: Stairway Configurator v2 Phase 3 — ALL 9 TASKS COMPLETE
 
 **STATUS:** COMPLETE
 **DATE:** 2026-04-09
 
-## Completed: All 8 Phase 2 Tasks
+## Completed: All 9 Phase 3 Tasks
 
-- **Task 1:** Unified GeometryType — single definition in templates.ts imported by GeometrySwitch.tsx (silent fallback bug fixed)
-- **Task 2:** Click-to-Inspect — stairway-click-targets.ts registry + ClickInspectPopover.tsx with per-law compliance display
-- **Task 3:** extruded-profile GeometryInstruction type — profilePoints + extrudeDepth fields, memoized THREE.Shape in GeometrySwitch
-- **Task 4:** useCameraTransition hook — animated camera lerp with demand-frameloop invalidate() wiring
-- **Task 5:** Nosing profile detail view — 5 params, stairway-nosing.ts geometry builder, NosingDetailPanel, ADA violation rules
-- **Task 6:** Performance audit — all metrics pass (<99 instructions, <1.5K triangles at max scenario)
-- **Task 7:** International comparison mode — compareMode toggle, IBC ghost geometry at 20% opacity, ComparisonPanel + ComparisonToggle (all UNVERIFIED)
-- **Task 8:** Handrail graspability — 4 params, HandrailDetailPanel, ADA diameter/clearance violations
+- **Task 1:** Stair type selector (straight/L-shape/U-shape) + computation extensions (stairType parsing, landing compliance)
+- **Task 2:** L-shape geometry sub-builder (stairway-geometry-l-shape.ts) — 2 flights at 90°, intermediate landing, corner handrails
+- **Task 3:** U-shape geometry sub-builder (stairway-geometry-u-shape.ts) — 2 parallel flights, continuous interior handrail
+- **Task 4:** Egress calculator engine (stairway-egress.ts) — occupant load, required exits, exit width, travel distance
+- **Task 5:** Egress calculator UI (EgressCalculatorPanel.tsx) — 4 params, PD 1096 override display
+- **Task 6:** Evacuation flow simulation (EvacuationControls.tsx) — dot visualization, bottleneck detection
+- **Task 7:** Children's handrail + guard spacing (ChildSafetyPanel.tsx) — 711mm secondary rail, 102mm sphere rule
+- **Task 8:** Material + slip resistance (stairway-materials.ts + MaterialSelectorPanel.tsx) — 6 materials, PBR, CoF badges
+- **Task 9:** Performance audit — all budgets pass for default/typical, evacuation mode opt-in exceeds draw calls
 
-## Commits
+## Phase 3 Commit
+- `9c4f8af0` — Phase 3: L/U-shape geometry, egress calculator, children's safety, materials (Tasks 1-8)
 
-1. `05ac37d6` — Phase 2 foundation: GeometryType unification, extruded-profile, camera hook, click-to-inspect (Tasks 1-4)
-2. `e671c28a` — Phase 2 features: nosing detail, comparison mode, handrail graspability (Tasks 5-8)
+## All Phases Summary
 
-## Phase 1 (Previously Complete — 11/11 Tasks)
+### Phase 1 (11/11 COMPLETE) — Foundation
+Types, constants, computation engine, geometry refactor, presets, comfort formula, historical annotations, tolerance mode, UI shells, comfort gauge
 
-1. `9239d4ed` — Types, constants, computation engine (Tasks 1-4)
-2. `6b41d779` — Geometry builder refactor + violation presets (Tasks 5-6)
-3. `629c8ead` — Blondel comfort, historical annotations, uniformity sim (Tasks 7-9)
-4. `aaed8ad9` — UI component shells + comfort gauge overlay (Tasks 10-11)
-5. `8236ff12` — IRC handrail constant fix (architect review)
+### Phase 2 (8/8 COMPLETE) — Depth Features
+GeometryType unification, click-to-inspect, extruded-profile, camera hook, nosing detail, comparison mode, handrail graspability
 
-## Backlog (Phase 3+)
+### Phase 3 (9/9 COMPLETE) — Flagship Features
+L-shape/U-shape geometry, egress calculator, evacuation sim, children's safety, materials
 
-- L-shape / U-shape stair geometry
-- Evacuation flow simulation
-- Material and slip resistance layer
-- Children's handrail and guard spacing
+### Bug Fixes
+- `e0f56b77` — GeometrySwitch useMemo extracted to sub-component
+- `9366fb25` — ModuleViewer useTemplateContent moved before early returns
+
+## Backlog (Phase 4+)
+- Winder stairs (complex tread geometry)
+- Spiral stairs (requires different geometry model)
 - Guided tour system
-
----
-
-# Previous: Unified Viewport Shell — IN PROGRESS
-# Previous: Analytics Unified Overhaul — COMPLETE
+- drei Instances for evacuation particles (performance optimization)
