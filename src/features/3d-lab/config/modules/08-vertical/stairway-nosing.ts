@@ -27,8 +27,8 @@ import type { GeometryInstruction } from '@/features/3d-lab/types/templates'
 export const buildNosingProfile = (
   nosingProjectionMm: number,
   nosingRadiusMm: number,
-  _riserUndercutDeg: number,
-  _contrastStripWidthMm: number,
+  riserUndercutDeg: number,
+  contrastStripWidthMm: number,
   stairWidthMm: number,
   treadDepthMm: number,
   riserHeightMm: number,
@@ -40,6 +40,11 @@ export const buildNosingProfile = (
   const rH = riserHeightMm / 1000
   const sW = stairWidthMm / 1000
   const treadThk = 0.03 // 30mm tread thickness
+  const undercutDepth = Math.min(
+    Math.max(Math.tan((riserUndercutDeg * Math.PI) / 180) * treadThk, 0),
+    tD * 0.25,
+  )
+  const stripDepth = Math.min(Math.max(contrastStripWidthMm / 1000, 0), tD + proj)
 
   // Build 2D profile points (in local XY space)
   // Origin at top-right corner of the riser face below
@@ -54,6 +59,11 @@ export const buildNosingProfile = (
 
   // Forward along tread top surface (past the riser face to include nosing projection)
   points.push([tD + proj, rH])
+  if (stripDepth > 0) {
+    points.push([Math.max(tD + proj - stripDepth, 0), rH])
+    points.push([Math.max(tD + proj - stripDepth, 0), Math.max(rH - 0.004, 0)])
+    points.push([tD + proj, Math.max(rH - 0.004, 0)])
+  }
 
   // Down the nosing front face (with radius approximation via 3 points)
   if (radius > 0.001) {
@@ -67,7 +77,8 @@ export const buildNosingProfile = (
 
   // Back along the underside of the tread (to the riser face)
   const undersideY = radius > 0.001 ? rH - radius : rH - treadThk
-  points.push([0 + 0.001, undersideY]) // slight offset to avoid zero-width
+  points.push([Math.max(undercutDepth, 0.001), undersideY])
+  points.push([0.001, Math.max(rH - treadThk, undersideY - treadThk)])
 
   // Close back to origin
   // (Shape auto-closes)

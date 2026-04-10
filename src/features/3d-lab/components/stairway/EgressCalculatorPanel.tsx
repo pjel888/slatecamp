@@ -54,10 +54,19 @@ const EgressCalculatorPanel = ({ useStore }: EgressCalculatorPanelProps) => {
         {/* Stair Qualification */}
         <div className="flex items-center justify-between">
           <span className="text-xs text-muted-foreground">This Stair</span>
-          <span className={cn('text-xs font-medium', egress.stairCountsAsExit ? 'text-success' : 'text-destructive')}>
-            {egress.stairCountsAsExit
-              ? `✓ Width ${stairWidth}mm — counts as exit`
-              : `✗ Width ${stairWidth}mm < 710mm minimum`}
+          <span className={cn('text-xs font-medium', egress.meetsMinimumExitElementWidth ? 'text-success' : 'text-destructive')}>
+            {egress.meetsMinimumExitElementWidth
+              ? `✓ Width ${stairWidth}mm — meets 710mm exit-element minimum`
+              : `✗ Width ${stairWidth}mm < 710mm exit-element minimum`}
+          </span>
+        </div>
+
+        <div className="flex items-center justify-between">
+          <span className="text-xs text-muted-foreground">Exit Stair Width Rule</span>
+          <span className={cn('text-xs font-medium', egress.passesExitStairWidth ? 'text-success' : 'text-destructive')}>
+            {egress.passesExitStairWidth
+              ? `✓ Meets ${stairWidth}mm exit-stair width check`
+              : `✗ Below ${Math.round(egress.requiredWidthPerExit)}mm required width`}
           </span>
         </div>
 
@@ -66,6 +75,13 @@ const EgressCalculatorPanel = ({ useStore }: EgressCalculatorPanelProps) => {
           <span className="text-xs text-muted-foreground">Width Per Exit</span>
           <span className="text-xs font-mono text-foreground">
             {Math.round(egress.requiredWidthPerExit)} mm
+          </span>
+        </div>
+
+        <div className="flex items-center justify-between">
+          <span className="text-xs text-muted-foreground">Current Provided Exit Basis</span>
+          <span className="text-xs font-mono text-foreground">
+            {Math.round(egress.requiredWidthPerProvidedExit)} mm
           </span>
         </div>
 

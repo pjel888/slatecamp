@@ -14,6 +14,11 @@ import type {
   PerLawEvaluation,
   ConflictFlag,
   InternationalComparisonDelta,
+  StairDimensionDirection,
+  StairDimensionKey,
+  StairDimensionStatus,
+  StairLawKey,
+  StairLawStatus,
 } from './stairway-types'
 
 import {
@@ -48,13 +53,11 @@ import {
   IBC_MAX_RISER_HEIGHT_MM,
   IBC_MIN_TREAD_DEPTH_MM,
   IBC_MIN_HEADROOM_MM,
-  IBC_HANDRAIL_MIN_HEIGHT_MM,
   IBC_HANDRAIL_MAX_HEIGHT_MM,
   IBC_MIN_WIDTH_MM,
   IBC_MAX_VERTICAL_RISE_MM,
   ADA_MAX_RISER_HEIGHT_MM,
   ADA_MIN_TREAD_DEPTH_MM,
-  ADA_HANDRAIL_MIN_HEIGHT_MM,
   ADA_HANDRAIL_MAX_HEIGHT_MM,
   ADA_MIN_ACCESSIBLE_WIDTH_MM,
   IRC_MAX_RISER_HEIGHT_MM,
@@ -64,6 +67,7 @@ import {
   IRC_MAX_VERTICAL_RISE_MM,
   IRC_HANDRAIL_MAX_HEIGHT_MM,
 } from './stairway-constants-international'
+import { getNormalizedTurningFlightSplit } from './stairway-geometry-contracts'
 
 // ── Value Coercion Helpers ───────────────────────────────────────────────────
 
@@ -75,6 +79,22 @@ const bool = (v: number | boolean | string): boolean =>
 
 const str = (v: number | boolean | string): string =>
   String(v)
+
+const LAW_PRIORITY: StairLawKey[] = ['ra9514', 'bp344', 'pd1096', 'bp220']
+
+const LAW_LABELS: Record<StairLawKey, string> = {
+  pd1096: 'PD 1096',
+  bp220: 'BP 220',
+  bp344: 'BP 344',
+  ra9514: 'RA 9514',
+}
+
+const LAW_STATUS_COLORS: Record<StairLawKey, string> = {
+  pd1096: LAW_COLORS.PD_1096,
+  bp220: LAW_COLORS.BP_220,
+  bp344: LAW_COLORS.BP_344,
+  ra9514: LAW_COLORS.RA_9514,
+}
 
 // ── Classification Predicates ────────────────────────────────────────────────
 
@@ -229,6 +249,45 @@ const passEval = (citation: string): PerLawEvaluation => ({
   message: 'Not applicable',
   citation,
 })
+
+const toLawStatuses = (compliance: ComplianceResult): StairLawStatus[] =>
+  LAW_PRIORITY.map((lawKey) => {
+    const lawEvaluation = compliance[lawKey]
+
+    return {
+      lawKey,
+      lawLabel: LAW_LABELS[lawKey],
+      color: LAW_STATUS_COLORS[lawKey],
+      applies: lawEvaluation.applies,
+      passes: lawEvaluation.passes,
+      limit: lawEvaluation.limit,
+      actual: lawEvaluation.actual,
+      message: lawEvaluation.message,
+      citation: lawEvaluation.citation,
+    }
+  })
+
+const computeDimensionStatus = (
+  dimension: StairDimensionKey,
+  direction: StairDimensionDirection,
+  actual: number,
+  compliance: ComplianceResult,
+): StairDimensionStatus => {
+  const laws = toLawStatuses(compliance)
+  const activeLaw = laws.find((law) => law.applies) ?? null
+  const failingLaw = laws.find((law) => law.applies && !law.passes) ?? null
+
+  return {
+    dimension,
+    direction,
+    actual,
+    activeLawKey: activeLaw?.lawKey ?? null,
+    failingLawKey: failingLaw?.lawKey ?? null,
+    color: failingLaw?.color ?? null,
+    laws,
+    conflicts: compliance.conflicts,
+  }
+}
 
 export const computeRiserCompliance = (
   riserHeight: number,
@@ -508,67 +567,50 @@ export const computeVerticalRiseCompliance = (
   }
 }
 
-// ── Color Resolution ─────────────────────────────────────────────────────────
-// Returns the most severe active violation color, or null if passing.
+// ── UI / Scene Status Resolution ─────────────────────────────────────────────
 
-export const resolveRiserColor = (riserHeight: number, isBP220: boolean, isExit: boolean): string | null => {
-  if (isExit && riserHeight > RA9514_MAX_RISER_HEIGHT_MM) return LAW_COLORS.RA_9514
-  if (!isBP220 && riserHeight > PD1096_MAX_RISER_HEIGHT_MM) return LAW_COLORS.PD_1096
-  if (isBP220 && riserHeight > BP220_MAX_RISER_HEIGHT_MM) return LAW_COLORS.BP_220
-  return null
-}
-
-export const resolveTreadColor = (treadDepth: number, isBP220: boolean, isExit: boolean): string | null => {
-  if (treadDepth < PD1096_MIN_TREAD_DEPTH_MM) {
-    if (isExit) return LAW_COLORS.RA_9514
-    if (!isBP220) return LAW_COLORS.PD_1096
-    return LAW_COLORS.BP_220
-  }
-  return null
-}
-
-export const resolveWidthColor = (
-  width: number,
-  isBP220: boolean,
-  isAccessible: boolean,
-  isExit: boolean,
-  isHighOcc: boolean,
-  isResidential: boolean,
-): string | null => {
-  if (isAccessible && width < BP344_MIN_ACCESSIBLE_WIDTH_MM) return LAW_COLORS.BP_344
-  if (isExit && width < RA9514_MIN_WIDTH_MM) return LAW_COLORS.RA_9514
-  if (!isBP220) {
-    if (isHighOcc && width < PD1096_MIN_WIDTH_HIGH_OCC_MM) return LAW_COLORS.PD_1096
-    if (!isResidential && width < PD1096_MIN_WIDTH_COMMERCIAL_MM) return LAW_COLORS.PD_1096
-    if (isResidential && width < PD1096_MIN_WIDTH_RESIDENTIAL_MM) return LAW_COLORS.PD_1096
-  }
-  if (isBP220 && width < BP220_MIN_WIDTH_MM) return LAW_COLORS.BP_220
-  return null
-}
-
-export const resolveHandrailColor = (
-  handrailHeight: number,
-  isBP220: boolean,
-): string | null => {
-  if (!isBP220 && (handrailHeight < PD1096_HANDRAIL_MIN_HEIGHT_MM || handrailHeight > PD1096_HANDRAIL_MAX_HEIGHT_MM)) {
-    return LAW_COLORS.PD_1096
-  }
-  return null
-}
+export const resolveDimensionColor = (
+  status: StairDimensionStatus,
+): string | null => status.color
 
 // ── International Comparison Deltas ──────────────────────────────────────────
 
 const computeInternationalDeltas = (
-  riserHeight: number,
-  treadDepth: number,
-  headroom: number,
-  handrailHeight: number,
-  stairWidth: number,
-  totalRise: number,
+  strictestMinWidth: number,
   isBP220: boolean,
+  isAccessible: boolean,
+  isExit: boolean,
+  riserStatus: StairDimensionStatus,
+  treadStatus: StairDimensionStatus,
+  handrailStatus: StairDimensionStatus,
+  verticalRiseStatus: StairDimensionStatus,
 ): InternationalComparisonDelta[] => {
-  const phRiserLimit = isBP220 ? BP220_MAX_RISER_HEIGHT_MM : PD1096_MAX_RISER_HEIGHT_MM
-  const phTreadLimit = isBP220 ? BP220_MIN_TREAD_DEPTH_MM : PD1096_MIN_TREAD_DEPTH_MM
+  const phRiserLimit = riserStatus.activeLawKey === 'bp220'
+    ? BP220_MAX_RISER_HEIGHT_MM
+    : riserStatus.activeLawKey === 'ra9514'
+      ? RA9514_MAX_RISER_HEIGHT_MM
+      : PD1096_MAX_RISER_HEIGHT_MM
+  const phTreadLimit = treadStatus.activeLawKey === 'bp220'
+    ? BP220_MIN_TREAD_DEPTH_MM
+    : treadStatus.activeLawKey === 'ra9514'
+      ? RA9514_MIN_TREAD_DEPTH_MM
+      : PD1096_MIN_TREAD_DEPTH_MM
+  const phHandrailLimit = isAccessible
+    ? BP344_HANDRAIL_UPPER_HEIGHT_MM
+    : PD1096_HANDRAIL_MAX_HEIGHT_MM
+  const phWidthLaw = isAccessible
+    ? 'BP 344'
+    : isExit
+      ? 'RA 9514'
+      : isBP220
+        ? 'BP 220'
+        : 'PD 1096'
+  const phVerticalRiseLimit = verticalRiseStatus.activeLawKey === 'ra9514'
+    ? RA9514_MAX_VERTICAL_RISE_MM
+    : PD1096_MAX_VERTICAL_RISE_MM
+  const phVerticalRiseLaw = verticalRiseStatus.activeLawKey === 'ra9514'
+    ? 'RA 9514'
+    : 'PD 1096'
 
   return [
     {
@@ -577,7 +619,7 @@ const computeInternationalDeltas = (
       ibcValue: IBC_MAX_RISER_HEIGHT_MM,
       adaValue: ADA_MAX_RISER_HEIGHT_MM,
       ircValue: IRC_MAX_RISER_HEIGHT_MM,
-      phLaw: isBP220 ? 'BP 220' : 'PD 1096',
+      phLaw: riserStatus.activeLawKey ? LAW_LABELS[riserStatus.activeLawKey] : 'PD 1096',
     },
     {
       dimension: 'treadDepth',
@@ -585,7 +627,7 @@ const computeInternationalDeltas = (
       ibcValue: IBC_MIN_TREAD_DEPTH_MM,
       adaValue: ADA_MIN_TREAD_DEPTH_MM,
       ircValue: IRC_MIN_TREAD_DEPTH_MM,
-      phLaw: isBP220 ? 'BP 220' : 'PD 1096',
+      phLaw: treadStatus.activeLawKey ? LAW_LABELS[treadStatus.activeLawKey] : 'PD 1096',
     },
     {
       dimension: 'headroom',
@@ -597,27 +639,27 @@ const computeInternationalDeltas = (
     },
     {
       dimension: 'handrailHeight',
-      phValue: PD1096_HANDRAIL_MAX_HEIGHT_MM,
+      phValue: phHandrailLimit,
       ibcValue: IBC_HANDRAIL_MAX_HEIGHT_MM,
       adaValue: ADA_HANDRAIL_MAX_HEIGHT_MM,
       ircValue: IRC_HANDRAIL_MAX_HEIGHT_MM,
-      phLaw: 'PD 1096',
+      phLaw: handrailStatus.activeLawKey ? LAW_LABELS[handrailStatus.activeLawKey] : 'PD 1096',
     },
     {
       dimension: 'stairWidth',
-      phValue: isBP220 ? BP220_MIN_WIDTH_MM : PD1096_MIN_WIDTH_RESIDENTIAL_MM,
+      phValue: strictestMinWidth,
       ibcValue: IBC_MIN_WIDTH_MM,
       adaValue: ADA_MIN_ACCESSIBLE_WIDTH_MM,
       ircValue: IRC_MIN_WIDTH_MM,
-      phLaw: isBP220 ? 'BP 220' : 'PD 1096',
+      phLaw: phWidthLaw,
     },
     {
       dimension: 'verticalRise',
-      phValue: PD1096_MAX_VERTICAL_RISE_MM,
+      phValue: phVerticalRiseLimit,
       ibcValue: IBC_MAX_VERTICAL_RISE_MM,
       adaValue: 0,
       ircValue: IRC_MAX_VERTICAL_RISE_MM,
-      phLaw: 'PD 1096',
+      phLaw: phVerticalRiseLaw,
     },
   ]
 }
@@ -641,11 +683,27 @@ export const computeStairState = (params: StairParams): ComputedStairState => {
 
   // Stair type parsing
   const stairTypeStr = str(params.stairType ?? 'straight')
-  const stairType: StairTypeConfig = stairTypeStr === 'l-shape'
-    ? { type: 'l-shape', turnDirection: str(params.turnDirection ?? 'right') as 'left' | 'right', risersBeforeTurn: num(params.risersBeforeTurn ?? 6) }
+  const parsedStairType: StairTypeConfig = stairTypeStr === 'l-shape'
+    ? {
+        type: 'l-shape',
+        turnDirection: str(params.turnDirection ?? 'right') as 'left' | 'right',
+        risersBeforeTurn: num(params.risersBeforeTurn ?? 6),
+      }
     : stairTypeStr === 'u-shape'
       ? { type: 'u-shape', risersBeforeTurn: num(params.risersBeforeTurn ?? 6) }
       : { type: 'straight' }
+  const normalizedTurnSplit = getNormalizedTurningFlightSplit(parsedStairType, numRisers)
+  const stairType: StairTypeConfig = parsedStairType.type === 'l-shape'
+    ? {
+        ...parsedStairType,
+        risersBeforeTurn: normalizedTurnSplit?.before ?? parsedStairType.risersBeforeTurn,
+      }
+    : parsedStairType.type === 'u-shape'
+      ? {
+          ...parsedStairType,
+          risersBeforeTurn: normalizedTurnSplit?.before ?? parsedStairType.risersBeforeTurn,
+        }
+      : parsedStairType
 
   // Classification flags
   const isBP220 = computeIsBP220(projectType)
@@ -656,13 +714,28 @@ export const computeStairState = (params: StairParams): ComputedStairState => {
   const { pitchAngle, pitchStatus } = computePitch(riserHeight, treadDepth)
   const { totalRise, totalRun, stringerLength } = computeGeometryMetrics(numRisers, riserHeight, treadDepth)
 
+  // Tolerance mode
+  const { perStepRiserVariations, uniformityViolationIndices } = toleranceMode
+    ? computeToleranceVariations(numRisers, toleranceRange)
+    : { perStepRiserVariations: Array.from({ length: numRisers }, () => 0), uniformityViolationIndices: [] as number[] }
+
+  const actualRiserHeights = Array.from({ length: numRisers }, (_, index) =>
+    riserHeight + (perStepRiserVariations[index] ?? 0),
+  )
+  let cumulativeElevation = 0
+  const actualTreadElevations = actualRiserHeights.map((height) => {
+    cumulativeElevation += height
+    return cumulativeElevation
+  })
+  const actualTotalRise = actualTreadElevations.at(-1) ?? 0
+
   // Width analysis
   const strictestMinWidth = computeStrictestMinWidth(isBP220, isHighOccupancy, isResidential, isAccessibleRoute, isExitStair)
   const widthDeficit = Math.max(0, strictestMinWidth - stairWidth)
 
   // Landing requirement
   const maxVerticalRise = isExitStair ? RA9514_MAX_VERTICAL_RISE_MM : PD1096_MAX_VERTICAL_RISE_MM
-  const landingRequired = totalRise > maxVerticalRise
+  const landingRequired = actualTotalRise > maxVerticalRise
 
   // Compliance evaluations
   const riserCompliance = computeRiserCompliance(riserHeight, isBP220, isExitStair)
@@ -670,23 +743,39 @@ export const computeStairState = (params: StairParams): ComputedStairState => {
   const widthCompliance = computeWidthCompliance(stairWidth, isBP220, isAccessibleRoute, isExitStair, isHighOccupancy, isResidential)
   const headroomCompliance = computeHeadroomCompliance(headroom)
   const handrailCompliance = computeHandrailCompliance(handrailHeight, isBP220, isAccessibleRoute)
-  const verticalRiseCompliance = computeVerticalRiseCompliance(totalRise, isExitStair)
+  const verticalRiseCompliance = computeVerticalRiseCompliance(actualTotalRise, isExitStair)
+
+  const dimensionStatuses: Record<StairDimensionKey, StairDimensionStatus> = {
+    riserHeight: computeDimensionStatus('riserHeight', 'max', riserHeight, riserCompliance),
+    treadDepth: computeDimensionStatus('treadDepth', 'min', treadDepth, treadCompliance),
+    stairWidth: computeDimensionStatus('stairWidth', 'min', stairWidth, widthCompliance),
+    headroom: computeDimensionStatus('headroom', 'min', headroom, headroomCompliance),
+    handrailHeight: computeDimensionStatus(
+      'handrailHeight',
+      isAccessibleRoute ? 'exact' : 'max',
+      handrailHeight,
+      handrailCompliance,
+    ),
+    verticalRise: computeDimensionStatus('verticalRise', 'max', actualTotalRise, verticalRiseCompliance),
+  }
 
   // Resolved violation colors
-  const riserColor = resolveRiserColor(riserHeight, isBP220, isExitStair)
-  const treadColor = resolveTreadColor(treadDepth, isBP220, isExitStair)
-  const widthColor = resolveWidthColor(stairWidth, isBP220, isAccessibleRoute, isExitStair, isHighOccupancy, isResidential)
-  const headroomViolation = headroom < PD1096_MIN_HEADROOM_MM
-  const handrailColor = resolveHandrailColor(handrailHeight, isBP220)
-
-  // Tolerance mode
-  const { perStepRiserVariations, uniformityViolationIndices } = toleranceMode
-    ? computeToleranceVariations(numRisers, toleranceRange)
-    : { perStepRiserVariations: Array.from({ length: numRisers }, () => 0), uniformityViolationIndices: [] as number[] }
+  const riserColor = resolveDimensionColor(dimensionStatuses.riserHeight)
+  const treadColor = resolveDimensionColor(dimensionStatuses.treadDepth)
+  const widthColor = resolveDimensionColor(dimensionStatuses.stairWidth)
+  const headroomViolation = dimensionStatuses.headroom.failingLawKey !== null
+  const handrailColor = resolveDimensionColor(dimensionStatuses.handrailHeight)
 
   // International deltas
   const internationalDeltas = computeInternationalDeltas(
-    riserHeight, treadDepth, headroom, handrailHeight, stairWidth, totalRise, isBP220,
+    strictestMinWidth,
+    isBP220,
+    isAccessibleRoute,
+    isExitStair,
+    dimensionStatuses.riserHeight,
+    dimensionStatuses.treadDepth,
+    dimensionStatuses.handrailHeight,
+    dimensionStatuses.verticalRise,
   )
 
   return {
@@ -707,9 +796,13 @@ export const computeStairState = (params: StairParams): ComputedStairState => {
     pitchAngle,
     pitchStatus,
     totalRise,
+    actualTotalRise,
     totalRun,
     stringerLength,
     landingRequired,
+    actualRiserHeights,
+    actualTreadElevations,
+    normalizedTurningFlightSplit: normalizedTurnSplit,
     isBP220,
     isResidential,
     strictestMinWidth,
@@ -720,6 +813,7 @@ export const computeStairState = (params: StairParams): ComputedStairState => {
     headroomCompliance,
     handrailCompliance,
     verticalRiseCompliance,
+    dimensionStatuses,
     riserColor,
     treadColor,
     widthColor,

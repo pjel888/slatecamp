@@ -8,21 +8,13 @@ import { computeStairState } from '../../config/modules/08-vertical/stairway-com
 import { LAW_COLORS } from '../../config/modules/08-vertical/stairway-constants'
 import type { UseBoundStore, StoreApi } from 'zustand'
 import type { ModuleStoreState } from '../../stores/createModuleStore'
-import type { ComplianceResult } from '../../config/modules/08-vertical/stairway-types'
+import type { StairDimensionKey } from '../../config/modules/08-vertical/stairway-types'
 
 interface ClickInspectPopoverProps {
   elementId: string
   screenPosition: { x: number; y: number }
   useStore: UseBoundStore<StoreApi<ModuleStoreState>>
   onClose: () => void
-}
-
-const DIMENSION_TO_COMPLIANCE: Record<string, string> = {
-  riserHeight: 'riserCompliance',
-  treadDepth: 'treadCompliance',
-  stairWidth: 'widthCompliance',
-  headroom: 'headroomCompliance',
-  handrailHeight: 'handrailCompliance',
 }
 
 const LAW_LABELS: Record<string, { name: string; color: string }> = {
@@ -32,6 +24,31 @@ const LAW_LABELS: Record<string, { name: string; color: string }> = {
   ra9514: { name: 'RA 9514', color: LAW_COLORS.RA_9514 },
 }
 
+const getCurrentValue = (
+  dimensionKey: string,
+  state: ReturnType<typeof computeStairState>,
+  params: ModuleStoreState['params'],
+): number => {
+  if (dimensionKey === 'verticalRise') {
+    return state.actualTotalRise
+  }
+
+  const computedValue = state[dimensionKey as keyof typeof state]
+  if (typeof computedValue === 'number') {
+    return computedValue
+  }
+
+  const rawValue = params[dimensionKey]
+  if (typeof rawValue === 'number') {
+    return rawValue
+  }
+  if (typeof rawValue === 'string') {
+    return Number(rawValue)
+  }
+
+  return 0
+}
+
 const ClickInspectPopover = ({ elementId, screenPosition, useStore, onClose }: ClickInspectPopoverProps) => {
   const params = useStore((s) => s.params)
   const target = matchClickTarget(elementId)
@@ -39,10 +56,9 @@ const ClickInspectPopover = ({ elementId, screenPosition, useStore, onClose }: C
   if (!target) return null
 
   const state = computeStairState(params)
-  const currentValue = state[target.dimensionKey as keyof typeof state] as number
-  const complianceKey = DIMENSION_TO_COMPLIANCE[target.dimensionKey]
-  const compliance = complianceKey
-    ? (state[complianceKey as keyof typeof state] as ComplianceResult | undefined)
+  const currentValue = getCurrentValue(target.dimensionKey, state, params)
+  const dimensionStatus = target.dimensionKey in state.dimensionStatuses
+    ? state.dimensionStatuses[target.dimensionKey as StairDimensionKey]
     : undefined
 
   // Clamp position to viewport
@@ -68,13 +84,11 @@ const ClickInspectPopover = ({ elementId, screenPosition, useStore, onClose }: C
           <p className="text-xs text-muted-foreground">{target.description}</p>
         </CardHeader>
 
-        {compliance && (
+        {dimensionStatus && (
           <CardContent className="px-3 pb-2 pt-0 space-y-1">
             {Object.entries(LAW_LABELS).map(([key, law]) => {
-              const eval_ = compliance[key as keyof ComplianceResult]
-              if (!eval_ || typeof eval_ !== 'object' || !('applies' in eval_)) return null
-              const lawEval = eval_ as { applies: boolean; passes: boolean; limit: number; message: string }
-              if (!lawEval.applies) return null
+              const lawEval = dimensionStatus.laws.find((entry) => entry.lawKey === key)
+              if (!lawEval || !lawEval.applies) return null
 
               return (
                 <div

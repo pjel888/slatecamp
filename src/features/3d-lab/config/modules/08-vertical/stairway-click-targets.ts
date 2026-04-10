@@ -55,6 +55,13 @@ export const STAIRWAY_CLICK_TARGETS: ClickTarget[] = [
     description: 'Landing platform at the top of the stair flight',
   },
   {
+    idPattern: 'landing-intermediate',
+    elementName: 'Intermediate Landing',
+    dimensionKey: 'stairWidth',
+    unit: 'mm',
+    description: 'Turning landing between stair flights',
+  },
+  {
     idPattern: 'bp344-rail-*',
     elementName: 'BP 344 Accessible Rail',
     dimensionKey: 'handrailHeight',
@@ -82,7 +89,32 @@ export const STAIRWAY_CLICK_TARGETS: ClickTarget[] = [
     unit: 'mm',
     description: 'Ghost geometry showing IBC 2024 required dimensions (⚠️ UNVERIFIED)',
   },
+  {
+    idPattern: 'nosing-detail-*',
+    elementName: 'Nosing Detail',
+    dimensionKey: 'nosingProjection',
+    unit: 'mm',
+    description: 'Detailed nosing profile showing projection, radius, undercut, and contrast strip.',
+  },
+  {
+    idPattern: 'handrail-cross-section',
+    elementName: 'Handrail Cross-Section',
+    dimensionKey: 'handrailDiameter',
+    unit: 'mm',
+    description: 'Handrail grip profile detail showing diameter, profile, and wall clearance.',
+  },
+  {
+    idPattern: 'children-rail-711-*',
+    elementName: 'Children’s Rail Reference',
+    dimensionKey: 'handrailHeight',
+    unit: 'mm',
+    description: '711 mm educational reference rail for child-oriented stair safety comparisons.',
+  },
 ]
+
+export const STAIRWAY_NON_INTERACTIVE_ID_PATTERNS = [
+  'evac-dot-*',
+] as const
 
 /** Match a geometry instruction ID to a click target */
 export const matchClickTarget = (id: string): ClickTarget | null =>
@@ -92,3 +124,10 @@ export const matchClickTarget = (id: string): ClickTarget | null =>
     }
     return id === t.idPattern
   }) ?? null
+
+export const isExplicitlyNonInteractiveStairwayId = (id: string): boolean =>
+  STAIRWAY_NON_INTERACTIVE_ID_PATTERNS.some((pattern) => (
+    pattern.endsWith('*')
+      ? id.startsWith(pattern.slice(0, -1))
+      : id === pattern
+  ))

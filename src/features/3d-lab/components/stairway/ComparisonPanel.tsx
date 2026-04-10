@@ -15,6 +15,8 @@ const ComparisonPanel = ({ useStore }: ComparisonPanelProps) => {
   const params = useStore((s) => s.params)
   const state = computeStairState(params)
   const deltas = state.internationalDeltas
+  const activeWidthLaw = state.dimensionStatuses.stairWidth.activeLawKey
+  const activeVerticalRiseLaw = state.dimensionStatuses.verticalRise.activeLawKey
 
   return (
     <Card>
@@ -26,7 +28,7 @@ const ComparisonPanel = ({ useStore }: ComparisonPanelProps) => {
           </Badge>
         </div>
         <p className="text-xs text-muted-foreground">
-          How current geometry compares to international codes
+          Active PH baseline: {formatLaw(activeWidthLaw)} width · {formatLaw(activeVerticalRiseLaw)} vertical rise
         </p>
       </CardHeader>
       <CardContent className="px-3 pb-3 pt-0">
@@ -41,14 +43,13 @@ const ComparisonPanel = ({ useStore }: ComparisonPanelProps) => {
           </div>
           {/* Data rows */}
           {deltas.map((delta) => {
-            const current = state[delta.dimension as keyof typeof state] as number | undefined
             return (
               <div key={delta.dimension} className="grid grid-cols-5 gap-1 text-[10px] py-0.5">
                 <span className="text-muted-foreground truncate">{formatDimName(delta.dimension)}</span>
-                <ComparisonCell value={delta.phValue} current={current} verified />
-                <ComparisonCell value={delta.ibcValue} current={current} />
-                <ComparisonCell value={delta.adaValue} current={current} />
-                <ComparisonCell value={delta.ircValue} current={current} />
+                <ComparisonCell value={delta.phValue} verified />
+                <ComparisonCell value={delta.ibcValue} />
+                <ComparisonCell value={delta.adaValue} />
+                <ComparisonCell value={delta.ircValue} />
               </div>
             )
           })}
@@ -63,20 +64,24 @@ const ComparisonPanel = ({ useStore }: ComparisonPanelProps) => {
 
 const ComparisonCell = ({
   value,
-  current,
   verified = false,
 }: {
   value: number
-  current?: number
   verified?: boolean
 }) => {
   if (value === 0) return <span className="text-center text-muted-foreground">—</span>
-  const passes = current !== undefined ? current <= value || current >= value : true // simplified
   return (
     <span className={cn('text-center font-mono', verified ? 'text-foreground' : 'text-muted-foreground')}>
       {value}
     </span>
   )
+}
+
+const formatLaw = (lawKey: string | null): string => {
+  if (lawKey === 'ra9514') return 'RA 9514'
+  if (lawKey === 'bp344') return 'BP 344'
+  if (lawKey === 'bp220') return 'BP 220'
+  return 'PD 1096'
 }
 
 const formatDimName = (key: string): string => {

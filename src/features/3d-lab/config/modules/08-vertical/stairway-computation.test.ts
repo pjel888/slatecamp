@@ -132,6 +132,81 @@ describe('computeStairState — preset validation', () => {
       expect(state.stairType.risersBeforeTurn).toBe(8)
     }
   })
+
+  test('turn split is clamped so both flights remain valid', () => {
+    const state = computeStairState({
+      stairType: 'u-shape',
+      risersBeforeTurn: 12,
+      numRisers: 5,
+      riserHeight: 185,
+      treadDepth: 250,
+    })
+
+    expect(state.normalizedTurningFlightSplit).toEqual({
+      before: 3,
+      after: 2,
+      minPerFlight: 2,
+    })
+    expect(state.stairType.type).toBe('u-shape')
+    if (state.stairType.type === 'u-shape') {
+      expect(state.stairType.risersBeforeTurn).toBe(3)
+    }
+  })
+
+  test('BP 344 handrail failures drive the canonical handrail color', () => {
+    const state = computeStairState({
+      projectType: 'commercial',
+      isAccessibleRoute: true,
+      handrailHeight: 860,
+      stairWidth: 1200,
+      riserHeight: 170,
+      treadDepth: 300,
+      numRisers: 12,
+    })
+
+    expect(state.handrailCompliance.bp344.applies).toBe(true)
+    expect(state.handrailCompliance.bp344.passes).toBe(false)
+    expect(state.dimensionStatuses.handrailHeight.failingLawKey).toBe('bp344')
+    expect(state.handrailColor).toBe('#3498DB')
+  })
+
+  test('international comparison uses the active Philippine baseline', () => {
+    const state = computeStairState({
+      projectType: 'commercial',
+      isAccessibleRoute: true,
+      isExitStair: true,
+      stairWidth: 1050,
+      riserHeight: 190,
+      treadDepth: 260,
+      numRisers: 14,
+      handrailHeight: 860,
+    })
+
+    const riserDelta = state.internationalDeltas.find((delta) => delta.dimension === 'riserHeight')
+    const widthDelta = state.internationalDeltas.find((delta) => delta.dimension === 'stairWidth')
+    const handrailDelta = state.internationalDeltas.find((delta) => delta.dimension === 'handrailHeight')
+    const verticalRiseDelta = state.internationalDeltas.find((delta) => delta.dimension === 'verticalRise')
+
+    expect(riserDelta?.phLaw).toBe('RA 9514')
+    expect(widthDelta?.phLaw).toBe('BP 344')
+    expect(handrailDelta?.phLaw).toBe('BP 344')
+    expect(verticalRiseDelta?.phLaw).toBe('RA 9514')
+  })
+
+  test('tolerance mode propagates actual total rise into compliance state', () => {
+    const state = computeStairState({
+      riserHeight: 185,
+      treadDepth: 250,
+      numRisers: 8,
+      toleranceMode: true,
+      toleranceRange: 5,
+    })
+
+    expect(state.actualRiserHeights).toHaveLength(8)
+    expect(state.actualTreadElevations).toHaveLength(8)
+    expect(state.actualTreadElevations.at(-1)).toBeCloseTo(state.actualTotalRise, 5)
+    expect(state.verticalRiseCompliance.pd1096.actual).toBeCloseTo(state.actualTotalRise, 5)
+  })
 })
 
 describe('computeEgressRequirements', () => {
@@ -179,6 +254,15 @@ describe('computeEgressRequirements', () => {
   test('Stair qualification: width 900mm ≥ 710mm → counts', () => {
     const result = computeEgressRequirements(100, 'business', 2, 900, false)
     expect(result.stairCountsAsExit).toBe(true)
+  })
+
+  test('egress exposes both provided-exit and required-exit width bases', () => {
+    const result = computeEgressRequirements(300, 'assembly', 2, 900, false)
+
+    expect(result.requiredWidthPerProvidedExit).toBeGreaterThan(result.requiredWidthPerRequiredExit)
+    expect(result.requiredWidthPerExit).toBe(result.requiredWidthPerRequiredExit)
+    expect(result.meetsMinimumExitElementWidth).toBe(true)
+    expect(result.passesExitStairWidth).toBe(true)
   })
 
   test('Travel distance: mercantile unsprinklered = 30m', () => {

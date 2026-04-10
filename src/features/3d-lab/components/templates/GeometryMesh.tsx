@@ -1,5 +1,4 @@
-// src/app/dashboard/3d-lab/_components/GeometryMesh.tsx
-// Shared geometry renderer — uses GeometrySwitch from shared r3f primitives.
+import { ThreeEvent } from '@react-three/fiber'
 import { GeometrySwitch } from '@/components/r3f/GeometrySwitch'
 import type { GeometryInstruction } from '@/features/3d-lab/types/templates'
 
@@ -21,12 +20,19 @@ export function GeometryElement({ inst }: { inst: GeometryInstruction }) {
 /**
  * Full mesh with standard material — used by ParametricScene and CutawaySection.
  */
-export function InstructionMesh({ inst }: { inst: GeometryInstruction }) {
+export function InstructionMesh({ 
+  inst,
+  onClick
+}: { 
+  inst: GeometryInstruction
+  onClick?: (e: ThreeEvent<MouseEvent>) => void
+}) {
   return (
     <mesh
       position={inst.position}
       rotation={inst.rotation ?? [0, 0, 0]}
       scale={inst.scale ?? [1, 1, 1]}
+      onClick={onClick}
     >
       <GeometryElement inst={inst} />
       <meshStandardMaterial

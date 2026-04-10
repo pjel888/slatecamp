@@ -1,5 +1,5 @@
 // ──────────────────────────────────────────────────────────────────────────────
-// stairway-types.ts — Phase 1 Type Definitions
+// stairway-types.ts — Stairway Configurator Type Definitions
 // Stairway Configurator v2 module-specific types.
 // These EXTEND (never replace) existing types from types/templates.ts.
 // ──────────────────────────────────────────────────────────────────────────────
@@ -32,6 +32,41 @@ export interface ComplianceResult {
   conflicts: ConflictFlag[]
 }
 
+export type StairLawKey = 'pd1096' | 'bp220' | 'bp344' | 'ra9514'
+
+export type StairDimensionKey =
+  | 'riserHeight'
+  | 'treadDepth'
+  | 'stairWidth'
+  | 'headroom'
+  | 'handrailHeight'
+  | 'verticalRise'
+
+export type StairDimensionDirection = 'min' | 'max' | 'exact'
+
+export interface StairLawStatus {
+  lawKey: StairLawKey
+  lawLabel: string
+  color: string
+  applies: boolean
+  passes: boolean
+  limit: number
+  actual: number
+  message: string
+  citation: string
+}
+
+export interface StairDimensionStatus {
+  dimension: StairDimensionKey
+  direction: StairDimensionDirection
+  actual: number
+  activeLawKey: StairLawKey | null
+  failingLawKey: StairLawKey | null
+  color: string | null
+  laws: StairLawStatus[]
+  conflicts: ConflictFlag[]
+}
+
 export interface ConflictFlag {
   id: string            // e.g., "conflict-riser-bp220-vs-pd1096"
   laws: [string, string] // e.g., ["BP 220", "PD 1096"]
@@ -58,6 +93,12 @@ export type StairTypeConfig =
   | { type: 'l-shape'; turnDirection: 'left' | 'right'; risersBeforeTurn: number }
   | { type: 'u-shape'; risersBeforeTurn: number }
 
+export interface NormalizedTurningFlightSplit {
+  before: number
+  after: number
+  minPerFlight: number
+}
+
 // ── Computed State (Single Source of Truth) ──────────────────────────────────
 
 export interface ComputedStairState {
@@ -73,7 +114,7 @@ export interface ComputedStairState {
   handrailHeight: number   // mm
   numRisers: number
 
-  // ── Stair type (Phase 1: always straight) ──
+  // ── Stair type ──
   stairType: StairTypeConfig
 
   // ── Derived metrics ──
@@ -83,9 +124,13 @@ export interface ComputedStairState {
   pitchAngle: number               // degrees (atan2(riserHeight, treadDepth))
   pitchStatus: PitchStatus         // classification by angle range
   totalRise: number                // numRisers × riserHeight (mm)
+  actualTotalRise: number          // Built rise including tolerance deviations (mm)
   totalRun: number                 // (numRisers - 1) × treadDepth (mm)
   stringerLength: number           // √(totalRise² + totalRun²) (mm)
   landingRequired: boolean         // totalRise > applicable maxVerticalRise
+  actualRiserHeights: number[]     // Per-step riser heights after tolerance (mm)
+  actualTreadElevations: number[]  // Cumulative tread elevations after each riser (mm)
+  normalizedTurningFlightSplit: NormalizedTurningFlightSplit | null
 
   // ── Regime flags ──
   isBP220: boolean
@@ -100,6 +145,7 @@ export interface ComputedStairState {
   headroomCompliance: ComplianceResult
   handrailCompliance: ComplianceResult
   verticalRiseCompliance: ComplianceResult
+  dimensionStatuses: Record<StairDimensionKey, StairDimensionStatus>
 
   // ── Resolved violation colors (for geometry builder) ──
   riserColor: string | null       // Most severe active violation color, or null (pass)
@@ -124,4 +170,16 @@ export interface ViolationPresetMeta {
   primaryViolation: string   // Violation rule ID that this preset triggers
   primaryLaw: string         // Law code (e.g., "PD 1096")
   teachingGoal: string       // One-sentence pedagogical objective
+}
+
+export interface GeometryValidationFinding {
+  code: string
+  severity: 'error' | 'warning' | 'info'
+  message: string
+  ids: string[]
+}
+
+export interface GeometryValidationReport {
+  findings: GeometryValidationFinding[]
+  hasErrors: boolean
 }

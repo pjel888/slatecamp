@@ -11,6 +11,7 @@ import {
   PD1096_LARGE_FLOOR_AREA_SQM,
   RA9514_WIDTH_PER_PERSON_MM,
   RA9514_MIN_EXIT_WIDTH_MM,
+  RA9514_MIN_WIDTH_MM,
   TRAVEL_DISTANCE_UNSPRINKLERED,
   TRAVEL_DISTANCE_SPRINKLERED,
 } from './stairway-constants'
@@ -25,9 +26,13 @@ export interface EgressCalculation {
   effectiveRequiredExits: number
   providedExits: number
   exitsCompliant: boolean
-  requiredWidthPerExit: number    // mm
+  requiredWidthPerExit: number    // mm (normative width using effective required exits)
+  requiredWidthPerProvidedExit: number // mm (pedagogical width using the exits currently provided)
+  requiredWidthPerRequiredExit: number // mm (normative width using effective required exits)
   totalRequiredWidth: number      // mm
   stairWidth: number              // mm
+  meetsMinimumExitElementWidth: boolean
+  passesExitStairWidth: boolean
   stairCountsAsExit: boolean
   travelDistanceLimit: number     // meters
   isSprinklered: boolean
@@ -63,13 +68,21 @@ export const computeEgressRequirements = (
   // Exit compliance
   const exitsCompliant = providedExits >= effectiveRequiredExits
 
-  // Width calculation: 5.1mm per person, 710mm minimum per exit
-  const rawWidthPerExit = (occupantLoad * RA9514_WIDTH_PER_PERSON_MM) / Math.max(providedExits, 1)
-  const requiredWidthPerExit = Math.max(rawWidthPerExit, RA9514_MIN_EXIT_WIDTH_MM)
-  const totalRequiredWidth = requiredWidthPerExit * Math.max(providedExits, 1)
+  // Width calculation: expose both the current provided-exit denominator and
+  // the normative required-exit denominator so the UI can teach the difference.
+  const safeProvidedExits = Math.max(providedExits, 1)
+  const safeRequiredExits = Math.max(effectiveRequiredExits, 1)
+  const rawWidthPerProvidedExit = (occupantLoad * RA9514_WIDTH_PER_PERSON_MM) / safeProvidedExits
+  const rawWidthPerRequiredExit = (occupantLoad * RA9514_WIDTH_PER_PERSON_MM) / safeRequiredExits
+  const requiredWidthPerProvidedExit = Math.max(rawWidthPerProvidedExit, RA9514_MIN_EXIT_WIDTH_MM)
+  const requiredWidthPerRequiredExit = Math.max(rawWidthPerRequiredExit, RA9514_MIN_EXIT_WIDTH_MM)
+  const requiredWidthPerExit = requiredWidthPerRequiredExit
+  const totalRequiredWidth = requiredWidthPerRequiredExit * safeRequiredExits
 
   // Stair qualification
-  const stairCountsAsExit = stairWidth >= RA9514_MIN_EXIT_WIDTH_MM
+  const meetsMinimumExitElementWidth = stairWidth >= RA9514_MIN_EXIT_WIDTH_MM
+  const passesExitStairWidth = stairWidth >= RA9514_MIN_WIDTH_MM
+  const stairCountsAsExit = meetsMinimumExitElementWidth
 
   // Travel distance
   const distanceTable = isSprinklered ? TRAVEL_DISTANCE_SPRINKLERED : TRAVEL_DISTANCE_UNSPRINKLERED
@@ -86,8 +99,12 @@ export const computeEgressRequirements = (
     providedExits,
     exitsCompliant,
     requiredWidthPerExit,
+    requiredWidthPerProvidedExit,
+    requiredWidthPerRequiredExit,
     totalRequiredWidth,
     stairWidth,
+    meetsMinimumExitElementWidth,
+    passesExitStairWidth,
     stairCountsAsExit,
     travelDistanceLimit,
     isSprinklered,

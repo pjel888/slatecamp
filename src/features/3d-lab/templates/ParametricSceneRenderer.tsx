@@ -1,21 +1,20 @@
 'use client'
 
 // src/app/dashboard/3d-lab/_templates/ParametricSceneRenderer.tsx
-import { useEffect, useMemo, useRef } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import * as THREE from 'three'
 import type { Group } from 'three'
 import { useDisposeOnUnmount } from '@/components/r3f/useDisposeOnUnmount'
 import { useModuleInvalidate } from '@/features/3d-lab/hooks/useModuleInvalidate'
-// useCameraSnap is called in CanvasWrapper (shared across all templates)
 import { InstructionMesh } from '@/features/3d-lab/components/templates/GeometryMesh'
 import { InstancedMesh } from '@/features/3d-lab/components/templates/InstancedMesh'
 import { HumanSilhouette } from '@/features/3d-lab/components/templates/HumanSilhouette'
 import { useOverlayStore } from '@/features/3d-lab/stores/useOverlayStore'
 import { useViewportShellStore } from '@/features/3d-lab/stores/useViewportShellStore'
 import type { ParametricSceneConfig } from '@/features/3d-lab/types/templates'
-// SceneGround is now rendered in CanvasWrapper (shared across all templates)
 import type { ModuleStoreState } from '@/features/3d-lab/stores/createModuleStore'
 import type { StoreApi, UseBoundStore } from 'zustand'
+import { ClickInspectPopover } from '@/features/3d-lab/components/stairway/ClickInspectPopover'
 
 // ─── Main Renderer ──────────────────────────────────────────────────────────
 
@@ -41,6 +40,12 @@ export function ParametricSceneRenderer({
   // Scene toolbar state
   const xrayMode = useViewportShellStore((s) => s.xrayMode)
   const dimensionsVisible = useViewportShellStore((s) => s.dimensionsVisible)
+  const selectElement = useViewportShellStore((s) => s.selectElement)
+  const clearSelection = useViewportShellStore((s) => s.clearSelection)
+
+  // Local state for click inspection popover
+  const [inspectTarget, setInspectTarget] = useState<string | null>(null)
+  const [inspectPos, setInspectPos] = useState<{ x: number; y: number } | null>(null)
 
   // Subscribe to params
   const params = useStore((s) => s.params)
@@ -132,10 +137,33 @@ export function ParametricSceneRenderer({
           return inst.type === 'instanced' ? (
             <InstancedMesh key={inst.id} inst={effectiveInst} />
           ) : (
-            <InstructionMesh key={inst.id} inst={effectiveInst} />
+            <InstructionMesh 
+              key={inst.id} 
+              inst={effectiveInst} 
+              onClick={(e) => {
+                e.stopPropagation()
+                selectElement(inst.id)
+                setInspectTarget(inst.id)
+                setInspectPos({ x: e.nativeEvent.clientX, y: e.nativeEvent.clientY })
+              }}
+            />
           )
         })}
       </group>
+
+      {/* Stairway-specific click inspection popover */}
+      {config.id === 'stairway-configurator' && inspectTarget && inspectPos && (
+        <ClickInspectPopover
+          elementId={inspectTarget}
+          screenPosition={inspectPos}
+          useStore={useStore}
+          onClose={() => {
+            setInspectTarget(null)
+            setInspectPos(null)
+            clearSelection()
+          }}
+        />
+      )}
     </>
   )
 }
