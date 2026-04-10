@@ -54,7 +54,25 @@ export const SaveAllBar = ({
   const dirty = useDirtyState()
   const [results, setResults] = useState<SaveItemResult[]>([])
   const [conflictWarning, setConflictWarning] = useState(false)
+  const [isOffline, setIsOffline] = useState(false)
   const pendingSaveRef = useRef(false)
+
+  // ── Offline Detection ──────────────────────────────────────
+
+  useEffect(() => {
+    const handleOnline = () => setIsOffline(false)
+    const handleOffline = () => setIsOffline(true)
+
+    setIsOffline(!navigator.onLine)
+
+    window.addEventListener('online', handleOnline)
+    window.addEventListener('offline', handleOffline)
+
+    return () => {
+      window.removeEventListener('online', handleOnline)
+      window.removeEventListener('offline', handleOffline)
+    }
+  }, [])
 
   const failedResults = results.filter((r) => !r.success)
   const successResults = results.filter((r) => r.success)
@@ -423,7 +441,29 @@ export const SaveAllBar = ({
     setSaveError(null)
   }, [setSaveError])
 
-  // ── Conflict warning dialog ─────────────────────────────────
+  // ── Render ─────────────────────────────────────────────────
+
+  if (isOffline) {
+    return (
+      <div className="border-b border-border bg-red-50 px-4 py-3">
+        <div className="flex items-start gap-3">
+          <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-red-100 border border-red-200">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M1 1l14 14M4.5 4.5a5 5 0 017.5 7.5M12.5 12.5a5 5 0 01-7.5-7.5" stroke="#DC2626" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </div>
+          <div className="min-w-0 flex-1">
+            <p className="text-xs font-semibold text-red-900">
+              You are offline
+            </p>
+            <p className="mt-0.5 text-xs text-red-700">
+              Changes cannot be saved while offline. Please check your internet connection.
+            </p>
+          </div>
+        </div>
+      </div>
+    )
+  }
 
   if (conflictWarning) {
     return (

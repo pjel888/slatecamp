@@ -3,7 +3,8 @@
 import { createClient } from '@/lib/supabase/server'
 import { createAdminClient } from '@/lib/supabase/admin'
 import { canManageContent } from '@/lib/admin/roles'
-import { revalidatePath } from 'next/cache'
+import { revalidatePath, revalidateTag } from 'next/cache'
+import { CACHE_TAGS } from '../cache-tags'
 import { ROUTES } from '@/lib/routes'
 
 export const getPipelineArticles = async () => {
@@ -28,6 +29,7 @@ export const updateArticleStatus = async (articleId: string, newStatus: string) 
 
   if (error) throw new Error(`Failed to update status: ${error.message}`)
 
+  revalidateTag(CACHE_TAGS.wiki, 'max')
   revalidatePath(ROUTES.admin.pipeline)
   revalidatePath(ROUTES.admin.knowledge)
   revalidatePath(ROUTES.admin.reviews)

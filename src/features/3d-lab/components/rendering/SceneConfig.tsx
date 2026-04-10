@@ -154,6 +154,7 @@ export const SceneConfig = ({
       setActiveInteraction('panning')
     } else {
       setActiveInteraction('orbiting')
+      useViewportShellStore.getState().markManualOrbit()
     }
   }, [navMode, setActiveInteraction])
 

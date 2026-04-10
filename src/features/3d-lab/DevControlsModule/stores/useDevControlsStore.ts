@@ -148,6 +148,8 @@ interface DevControlsStore {
 
   // ─ 3D Scene UI State
   cameraPreset: CameraPreset
+  cameraCommandId: number
+  cameraCommandPreset: CameraPreset | null
   visibleLayers: Set<LayerKey>
   activeHotspot: string | null
   highlightedMetric: string | null
@@ -249,6 +251,8 @@ export const useDevControlsStore = create<DevControlsStore>()((set, get) => ({
 
   // ─ UI
   cameraPreset: 'orbit',
+  cameraCommandId: 0,
+  cameraCommandPreset: null,
   visibleLayers: new Set<LayerKey>(ALL_LAYERS),
   activeHotspot: null,
   highlightedMetric: null,
@@ -375,7 +379,12 @@ export const useDevControlsStore = create<DevControlsStore>()((set, get) => ({
   setLabMode: (mode) => set({ labMode: mode }),
 
   setCameraPreset: (p) => {
-    set({ cameraPreset: p })
+    const s = get()
+    set({
+      cameraPreset: p,
+      cameraCommandId: s.cameraCommandId + 1,
+      cameraCommandPreset: p,
+    })
     get().invalidateFn?.()
   },
 

@@ -1,6 +1,7 @@
 'use server'
 
-import { revalidatePath } from 'next/cache'
+import { revalidatePath, revalidateTag } from 'next/cache'
+import { CACHE_TAGS } from '../cache-tags'
 import { canManageContent } from '@/lib/admin/roles'
 import { createAdminClient } from '@/lib/supabase/admin'
 import { ROUTES } from '@/lib/routes'
@@ -34,6 +35,7 @@ export const bulkDeleteArticles = async (ids: string[]) => {
 
   if (error) return { error: error.message }
 
+  revalidateTag(CACHE_TAGS.wiki, 'max')
   revalidatePath(ROUTES.admin.knowledge)
   revalidatePath(ROUTES.admin.wiki)
   return { error: null, deleted: ids.length }

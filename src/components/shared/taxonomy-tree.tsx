@@ -515,6 +515,7 @@ const TaxonomyTree = ({
   className,
 }: TaxonomyTreeProps) => {
   const [expanded, setExpanded] = React.useState<Set<string>>(() => {
+    if (typeof window === 'undefined') return new Set()
     if (!activeSlug && !activeNodeId) return new Set()
     try {
       const stored = localStorage.getItem(STORAGE_KEY)

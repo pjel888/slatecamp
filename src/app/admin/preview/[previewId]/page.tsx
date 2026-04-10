@@ -30,6 +30,13 @@ async function getRelatedTopics(node: TaxonomyNode | null, supabase: any): Promi
   return siblings?.map((s: any) => ({ slug: s.slug, title: s.name })) ?? []
 }
 
+/** 
+ * Admin Preview Page
+ * 
+ * Note: loading.tsx is intentionally omitted for this route to replicate the 
+ * student-view experience and leverage parent loading states or inline 
+ * fallbacks where appropriate.
+ */
 export default async function PreviewPage(props: { params: Promise<{ previewId: string }> }) {
   const params = await props.params
   const previewId = params.previewId
@@ -64,7 +71,7 @@ export default async function PreviewPage(props: { params: Promise<{ previewId: 
   // 2. Fetch the corresponding article metadata
   const { data: articleData, error: articleError } = await supabase
     .from('wiki_articles')
-    .select('*')
+    .select('article_id, title, slug, lea_tests_you, updated_note, subject_label, difficulty_label, updated_at, created_at')
     .eq('article_id', draft.article_id)
     .single()
 
@@ -89,7 +96,7 @@ export default async function PreviewPage(props: { params: Promise<{ previewId: 
   if (primaryMapping) {
     const { data: nodeData } = await supabase
       .from('taxonomy_tree')
-      .select('*')
+      .select('node_id, name, lea_id, subject_area, difficulty, description')
       .eq('node_id', primaryMapping.node_id)
       .single()
     node = nodeData

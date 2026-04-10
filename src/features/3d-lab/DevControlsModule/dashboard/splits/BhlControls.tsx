@@ -5,6 +5,7 @@ import { getZoningEntry, lookupRrowBhl } from '@/lib/pd1096/zoningTables'
 import { Info } from 'lucide-react'
 import { Popover, PopoverTrigger, PopoverContent, PopoverHeader, PopoverTitle, PopoverDescription } from '@/components/ui/popover'
 import { LabSlider } from '@/features/3d-lab/components/controls/LabSlider'
+import { buildBhlControlDisplay } from './bhl-display'
 
 // ─── BHL Controls (Left Column) ────────────────────────────────────────────
 // Slider + computed label + reset button. Metrics grid is in BhlInfo.
@@ -12,6 +13,7 @@ import { LabSlider } from '@/features/3d-lab/components/controls/LabSlider'
 export function BhlControls() {
   const zoneClass = useDevControlsStore((s) => s.zoning.zoneClass)
   const rrowWidth = useDevControlsStore((s) => s.rrow.width)
+  const floorHeight = useDevControlsStore((s) => s.building.floorHeight)
   const bhlOverride = useDevControlsStore((s) => s.bhlOverride)
   const setBhlOverride = useDevControlsStore((s) => s.setBhlOverride)
   const r = useDevControlsStore((s) => s.result)
@@ -20,7 +22,14 @@ export function BhlControls() {
   const zoningBhl = entry.bhlStoreys
   const rrowBhl = lookupRrowBhl(rrowWidth)
   const computedBhl = Math.min(zoningBhl, rrowBhl)
+  const currentBhlStoreys = r.bhlStoreys
   const isCustom = bhlOverride !== undefined
+  const display = buildBhlControlDisplay({
+    currentBhlStoreys,
+    computedBhlStoreys: computedBhl,
+    floorHeight,
+    isCustom,
+  })
 
   return (
     <div>
@@ -46,16 +55,16 @@ export function BhlControls() {
         </Popover>
       </div>
       <LabSlider
-        label={`BHL ${isCustom ? '' : '(Computed)'}`}
-        value={bhlOverride ?? computedBhl}
+        label={display.label}
+        value={display.value}
         min={1}
         max={50}
         step={1}
         onChange={(v) => setBhlOverride(v)}
-        isViolating={isCustom}
-        formatValue={(v) => `${Math.round(v)}F / ${(Math.round(v) * 3).toFixed(1)}m`}
+        isViolating={display.isViolating}
+        formatValue={() => display.formattedValue}
         showRangeLabels={false}
-        contextLine={`Computed: ${computedBhl}F (zone: ${zoningBhl}F, RROW: ${rrowBhl}F)`}
+        contextLine={`${display.contextLine} (zone: ${zoningBhl}F, RROW: ${rrowBhl}F)`}
       />
       {isCustom && (
         <p className="mt-0.5 text-[9px] text-amber-600">Custom BHL — local ordinance mode</p>
@@ -65,7 +74,7 @@ export function BhlControls() {
           onClick={() => setBhlOverride(undefined)}
           className="mt-1.5 text-[9px] text-primary hover:text-primary/80 transition-colors duration-150"
         >
-          Reset to computed ({computedBhl}F)
+          {display.resetLabel}
         </button>
       )}
     </div>

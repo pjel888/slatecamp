@@ -109,6 +109,21 @@ export const CAMERA_PRESETS: Record<string, CameraPresetConfig> = {
     fov: 42,
     isOrtho: true,
   },
+  left: {
+    position: [-20, 8, 7.5],
+    target: [10, 4, 7.5],
+    fov: 42,
+  },
+  right: {
+    position: [40, 8, 7.5],
+    target: [10, 4, 7.5],
+    fov: 42,
+  },
+  rear: {
+    position: [10, 8, -25],
+    target: [10, 4, 7.5],
+    fov: 42,
+  },
   // 4-corner isometric views (orthographic, 45° azimuth from each corner)
   'iso-ne': {
     position: [35, 25, 30],

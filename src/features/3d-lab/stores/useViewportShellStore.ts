@@ -3,6 +3,14 @@
 // UI-only actions (sidebar collapse, tab switch) must NOT call invalidate().
 import { create } from 'zustand'
 import type { ViewMode } from '@/features/3d-lab/types/templates'
+import type { CameraPreset } from '@/lib/pd1096/types'
+import {
+  getProjectionModeForSelectedPreset,
+  getSelectedCameraPresetAfterCommand,
+  normalizeCameraCommandPreset,
+  shouldClearManualOrbitForCommand,
+  type CameraCommandPreset,
+} from '@/features/3d-lab/utils/camera-presets'
 
 export interface ViewportShellState {
   // Sidebar state
@@ -13,7 +21,9 @@ export interface ViewportShellState {
   activeViewMode: ViewMode
 
   // Camera
-  activeCameraPreset: string | null
+  selectedCameraPreset: CameraPreset | null
+  cameraCommandId: number
+  cameraCommandPreset: CameraCommandPreset | null
 
   // Navigation mode
   navMode: 'orbit' | 'pan' | 'look'
@@ -37,7 +47,7 @@ export interface ViewportShellState {
 
   // Camera projection + orbit state
   projectionMode: 'perspective' | 'orthographic'
-  manualOrbit: boolean  // true when user has orbited away from a preset view
+  manualOrbit: boolean
 
   // Selection state
   selectedIds: Set<string>
@@ -52,6 +62,7 @@ export interface ViewportShellState {
   setLayersPanelPinned: (pinned: boolean) => void
   setProjectionMode: (mode: 'perspective' | 'orthographic') => void
   setManualOrbit: (v: boolean) => void
+  markManualOrbit: () => void
 
   // Actions — scene-affecting toolbar toggles (calls invalidate)
   toggleGrid: () => void
@@ -73,8 +84,8 @@ export interface ViewportShellState {
 
   // Actions — scene-affecting (calls invalidate)
   setViewMode: (mode: ViewMode) => void
-  setCameraPreset: (presetId: string | null) => void
-  snapToPreset: (preset: 'front' | 'top' | 'left' | 'right' | 'rear' | 'iso' | 'iso-ne' | 'iso-nw' | 'iso-se' | 'iso-sw' | 'zoom-to-fit' | 'zoom-in' | 'zoom-out' | 'reset' | 'perspective') => void
+  setCameraPreset: (presetId: CameraPreset | null) => void
+  snapToPreset: (preset: CameraCommandPreset, source?: 'toolbar' | 'shortcut' | 'context-menu' | 'system') => void
 
   // Invalidation
   setInvalidateFn: (fn: (() => void) | null) => void
@@ -88,7 +99,9 @@ const DEFAULTS: Pick<
   | 'leftSidebarCollapsed'
   | 'rightSidebarCollapsed'
   | 'activeViewMode'
-  | 'activeCameraPreset'
+  | 'selectedCameraPreset'
+  | 'cameraCommandId'
+  | 'cameraCommandPreset'
   | 'mobileActiveTab'
   | 'bottomSheetOpen'
   | 'invalidateFn'
@@ -107,7 +120,9 @@ const DEFAULTS: Pick<
   leftSidebarCollapsed: false,
   rightSidebarCollapsed: false,
   activeViewMode: 'perspective',
-  activeCameraPreset: null,
+  selectedCameraPreset: 'perspective',
+  cameraCommandId: 0,
+  cameraCommandPreset: null,
   navMode: 'orbit' as const,
   activeInteraction: 'idle' as const,
   mobileActiveTab: '',
@@ -154,7 +169,6 @@ export const useViewportShellStore = create<ViewportShellState>()((set, get) => 
   // Layers panel is UI-only — no invalidate needed
   toggleLayersPanel: () => set((s) => {
     const willClose = s.layersPanelOpen
-    // When closing, also unpin
     return willClose
       ? { layersPanelOpen: false, layersPanelPinned: false }
       : { layersPanelOpen: true }
@@ -165,6 +179,7 @@ export const useViewportShellStore = create<ViewportShellState>()((set, get) => 
     get().invalidateFn?.()
   },
   setManualOrbit: (v) => set({ manualOrbit: v }),
+  markManualOrbit: () => set({ manualOrbit: true, selectedCameraPreset: null, cameraCommandPreset: null }),
 
   // Selection actions — UI only, no invalidate
   selectElement: (id) => set({ selectedIds: new Set([id]) }),
@@ -196,12 +211,26 @@ export const useViewportShellStore = create<ViewportShellState>()((set, get) => 
   },
 
   setCameraPreset: (presetId) => {
-    set({ activeCameraPreset: presetId })
+    set({
+      selectedCameraPreset: presetId,
+      projectionMode: getProjectionModeForSelectedPreset(presetId),
+      manualOrbit: false,
+    })
     get().invalidateFn?.()
   },
 
   snapToPreset: (preset) => {
-    set({ activeCameraPreset: preset })
+    const s = get()
+    const normalized = normalizeCameraCommandPreset(preset)
+    const selectedCameraPreset = getSelectedCameraPresetAfterCommand(s.selectedCameraPreset, preset)
+
+    set({
+      selectedCameraPreset,
+      cameraCommandId: s.cameraCommandId + 1,
+      cameraCommandPreset: normalized,
+      projectionMode: getProjectionModeForSelectedPreset(selectedCameraPreset),
+      manualOrbit: shouldClearManualOrbitForCommand(preset) ? false : s.manualOrbit,
+    })
     get().invalidateFn?.()
   },
 

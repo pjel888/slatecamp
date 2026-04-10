@@ -19,8 +19,8 @@ interface MenuAction {
 }
 
 const EMPTY_SPACE_ACTIONS: MenuAction[] = [
-  { id: 'reset-camera', label: 'Reset Camera', shortcut: 'R', onClick: () => useViewportShellStore.getState().snapToPreset('reset') },
-  { id: 'zoom-to-fit', label: 'Zoom to Fit', shortcut: 'Z', onClick: () => useViewportShellStore.getState().snapToPreset('zoom-to-fit') },
+  { id: 'reset-camera', label: 'Reset Camera', shortcut: 'R', onClick: () => useViewportShellStore.getState().snapToPreset('reset', 'context-menu') },
+  { id: 'zoom-to-fit', label: 'Zoom to Fit', shortcut: 'Z', onClick: () => useViewportShellStore.getState().snapToPreset('zoom-to-fit', 'context-menu') },
   { id: 'toggle-grid', label: 'Toggle Grid', shortcut: 'G', onClick: () => useViewportShellStore.getState().toggleGrid(), dividerBefore: true },
   { id: 'screenshot', label: 'Screenshot', shortcut: 'P', onClick: () => {
     const canvas = document.querySelector('canvas')

@@ -1,6 +1,7 @@
 import { describe, test, expect } from 'bun:test'
 import { computeStairState, computeBlondelComfort, computePitch } from './stairway-computation'
 import { computeEgressRequirements } from './stairway-egress'
+import { normalizeTurningFlightSplit } from './stairway-geometry-contracts'
 
 describe('computeBlondelComfort', () => {
   test('riser=185, tread=250 → comfortable (2R+T=620)', () => {
@@ -151,6 +152,14 @@ describe('computeStairState — preset validation', () => {
     if (state.stairType.type === 'u-shape') {
       expect(state.stairType.risersBeforeTurn).toBe(3)
     }
+  })
+
+  test('turn split normalization never overshoots the available risers', () => {
+    expect(normalizeTurningFlightSplit(1, 12)).toEqual({
+      before: 1,
+      after: 0,
+      minPerFlight: 1,
+    })
   })
 
   test('BP 344 handrail failures drive the canonical handrail color', () => {

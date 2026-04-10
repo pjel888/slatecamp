@@ -2,7 +2,8 @@
 import { createClient } from '@/lib/supabase/server'
 import { createAdminClient } from '@/lib/supabase/admin'
 import { canManageContent } from '@/lib/admin/roles'
-import { revalidatePath } from 'next/cache'
+import { revalidatePath, revalidateTag } from 'next/cache'
+import { CACHE_TAGS } from '../cache-tags'
 import { sanitizeMDX } from '@/lib/wiki-markdown'
 import { ROUTES } from '@/lib/routes'
 
@@ -445,6 +446,7 @@ export const updateArticleFull = async (
     }
   }
 
+  revalidateTag(CACHE_TAGS.wiki, 'max')
   revalidatePath(ROUTES.admin.knowledge)
   revalidatePath(ROUTES.admin.article(id))
   revalidatePath(ROUTES.admin.knowledgeQuestions)
@@ -452,41 +454,11 @@ export const updateArticleFull = async (
   return { error: null }
 }
 
-/** Update a single question with all editable fields */
-export const updateQuestion = async (
-  questionId: string,
-  data: {
-    text?: string
-    options?: { id: string; text: string }[]
-    correct_option_id?: string
-    rationale?: string
-    explanation?: string
-    code_citation?: string
-    difficulty?: number
-    is_assessment?: boolean
-    application_context?: string
-    practice_context?: string[]
-    prompt_image_url?: string
-  }
-) => {
-  const authorized = await canManageContent()
-  if (!authorized) throw new Error('Unauthorized: insufficient permissions')
+import { updateQuestion as updateQuestionAction } from './questions'
 
-  const supabase = createAdminClient()
-  const { error } = await supabase
-    .from('questions')
-    .update({
-      ...data,
-      updated_at: new Date().toISOString(),
-    })
-    .eq('question_id', questionId)
-
-  if (!error) {
-    revalidatePath('/admin/knowledge/questions')
-    revalidatePath('/admin/knowledge')
-  }
-
-  return { error }
+/** Proxy to the consolidated updateQuestion action */
+export const updateQuestion = async (id: string, data: any) => {
+  return await updateQuestionAction(id, data)
 }
 
 /** Create an EI prompt */

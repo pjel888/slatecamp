@@ -33,7 +33,7 @@ export const normalizeTurningFlightSplit = (
 
   return {
     before,
-    after: Math.max(numRisers - before, minPerFlight),
+    after: Math.max(numRisers - before, 0),
     minPerFlight,
   }
 }

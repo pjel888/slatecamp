@@ -1,3 +1,4 @@
+import { Suspense } from 'react'
 import { redirect } from 'next/navigation'
 import { ROUTES } from '@/lib/routes'
 import { canManageContent } from '@/lib/admin/roles'
@@ -15,13 +16,15 @@ const QuestionBankPage = async () => {
   const { articles, searchableQuestions, taxonomyTree, stats } = await getContentEditorIndexData()
 
   return (
-    <ContentEditorIndex
-      articles={articles}
-      searchableQuestions={searchableQuestions}
-      taxonomyTree={taxonomyTree}
-      stats={stats}
-      defaultViewMode="questions"
-    />
+    <Suspense fallback={<div>Loading question bank...</div>}>
+      <ContentEditorIndex
+        articles={articles}
+        searchableQuestions={searchableQuestions}
+        taxonomyTree={taxonomyTree}
+        stats={stats}
+        defaultViewMode="questions"
+      />
+    </Suspense>
   )
 }
 

@@ -94,19 +94,17 @@ const StatCard = ({
 
   if (href) {
     return (
-      <Link href={href} passHref legacyBehavior>
-        <Card
-          asChild
-          variant="interactive"
-          size={size}
-          className={className}
-          {...props}
-        >
-          <a data-slot="stat-card">
-            {content}
-          </a>
-        </Card>
-      </Link>
+      <Card
+        asChild
+        variant="interactive"
+        size={size}
+        className={className}
+        {...props}
+      >
+        <Link href={href} data-slot="stat-card">
+          {content}
+        </Link>
+      </Card>
     )
   }
 

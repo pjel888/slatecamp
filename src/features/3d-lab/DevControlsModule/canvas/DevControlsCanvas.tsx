@@ -1,8 +1,8 @@
 'use client'
 
 // canvas/DevControlsCanvas.tsx
-// ─── Self-contained R3F Canvas for the Development Controls module ─────────
-// frameloop="demand" — GPU renders ONLY on invalidate().
+// - Self-contained R3F Canvas for the Development Controls module
+// frameloop="demand" - GPU renders ONLY on invalidate().
 // Does NOT use shared CanvasWrapper or SceneBase.
 
 import { Suspense, useCallback, useEffect, useRef } from 'react'
@@ -27,16 +27,11 @@ import { FirewallMarkers } from './layers/FirewallMarkers'
 // Annotations
 import { DimensionLines } from './annotations/DimensionLines'
 
-// Context meshes removed — road-only context via RROWIndicator
-
-// ─── Camera Controls (disabled during ISA/USA drag) ─────────────────────────
-
 function CameraControls({ target }: { target: [number, number, number] }) {
   const isDragging = useDevControlsStore((s) => s.isDraggingZone)
   const navMode = useViewportShellStore((s) => s.navMode)
   const setActiveInteraction = useViewportShellStore((s) => s.setActiveInteraction)
 
-  // Track which mouse button started the interaction
   const mouseButtonRef = useRef<number>(-1)
   const gl = useThree((s) => s.gl)
   useEffect(() => {
@@ -57,9 +52,7 @@ function CameraControls({ target }: { target: [number, number, number] }) {
       setActiveInteraction('panning')
     } else {
       setActiveInteraction('orbiting')
-      // Mark that user has manually orbited — deactivates view preset buttons
-      // but does NOT change camera position or projection mode
-      useViewportShellStore.getState().setManualOrbit(true)
+      useViewportShellStore.getState().markManualOrbit()
     }
   }, [navMode, setActiveInteraction])
 
@@ -78,7 +71,7 @@ function CameraControls({ target }: { target: [number, number, number] }) {
       mouseButtons={{
         LEFT: navMode === 'pan' ? THREE.MOUSE.PAN : THREE.MOUSE.ROTATE,
         MIDDLE: THREE.MOUSE.PAN,
-        RIGHT: -1 as unknown as THREE.MOUSE, // DISABLED — right-click reserved for context menu
+        RIGHT: -1 as unknown as THREE.MOUSE,
       }}
       minPolarAngle={0}
       maxPolarAngle={Math.PI - 0.05}
@@ -91,55 +84,33 @@ function CameraControls({ target }: { target: [number, number, number] }) {
   )
 }
 
-
-// ─── Scene Background + Initial Invalidate ──────────────────────────────────
-
 function SceneSetup() {
   const { invalidate } = useThree()
   useEffect(() => {
     invalidate()
-    return () => resetCursor() // clean up cursor on unmount
+    return () => resetCursor()
   }, [invalidate])
   return <color attach="background" args={[SCENE.SKY_COLOR]} />
 }
-
-// ─── Camera Snap Bridge (shared toolbar -> DevControls camera) ──────────────
 
 function CameraSnapBridge() {
   const { camera, controls, invalidate } = useThree()
 
   useEffect(() => {
-    let prevPreset: string | null = useViewportShellStore.getState().activeCameraPreset
+    let prevCommandId = useViewportShellStore.getState().cameraCommandId
     const unsubscribe = useViewportShellStore.subscribe((state) => {
-      const preset = state.activeCameraPreset
-      if (!preset || preset === prevPreset) {
-        prevPreset = preset
-        return
-      }
-      prevPreset = preset
+      const preset = state.cameraCommandPreset
+      if (!preset || state.cameraCommandId === prevCommandId) return
+      prevCommandId = state.cameraCommandId
 
-      // Map shared preset names to DevControls camera presets.
-      // DevControls supports: perspective, orbit, top, front, iso-ne, iso-nw, iso-se, iso-sw.
-      // For left/right/rear (not native to DevControls), we animate directly.
-      const PRESET_MAP: Record<string, string> = {
-        'front': 'front',
-        'top': 'top',
-        'iso': 'iso-ne',
-        'iso-ne': 'iso-ne',
-        'iso-nw': 'iso-nw',
-        'iso-se': 'iso-se',
-        'iso-sw': 'iso-sw',
-        'perspective': 'perspective',
-      }
-
-      // Presets that require direct camera manipulation (not just store update)
-      const DIRECT_PRESETS: Record<string, { position: [number, number, number]; target: [number, number, number] }> = {
-        'left': { position: [-20, 8, 7.5], target: [10, 4, 7.5] },
-        'right': { position: [40, 8, 7.5], target: [10, 4, 7.5] },
-        'rear': { position: [10, 8, -25], target: [10, 4, 7.5] },
-      }
-
-      // Helper to directly set camera + orbit controls
+      const { lot } = useDevControlsStore.getState()
+      const cx = lot.width / 2
+      const cz = lot.depth / 2
+      const maxDim = Math.max(lot.width, lot.depth)
+      const dist = maxDim * 1.5
+      const fitDist = maxDim * 1.8
+      const lotTarget: [number, number, number] = [cx, 0, cz]
+      const selectedPreset = state.selectedCameraPreset ?? 'perspective'
       const setCamera = (pos: [number, number, number], tgt: [number, number, number]) => {
         camera.position.set(...pos)
         if (controls && 'target' in controls) {
@@ -150,71 +121,19 @@ function CameraSnapBridge() {
         invalidate()
       }
 
-      // Lot-anchored camera positions: all views center on the current lot
-      const { lot } = useDevControlsStore.getState()
-      const cx = lot.width / 2
-      const cz = lot.depth / 2
-      const maxDim = Math.max(lot.width, lot.depth)
-      const dist = maxDim * 1.5
-      const lotTarget: [number, number, number] = [cx, 0, cz]
-
-      // Lot-relative camera positions keyed by preset name
       const LOT_CAMERAS: Record<string, [number, number, number]> = {
-        'perspective': [cx + dist * 0.5, dist * 0.7, cz + dist * 0.6],
-        'front':       [cx, dist * 0.4, cz + dist],
-        'top':         [cx, dist * 1.5, cz],
-        'left':        [cx - dist, dist * 0.4, cz],
-        'right':       [cx + dist, dist * 0.4, cz],
-        'rear':        [cx, dist * 0.4, cz - dist],
-        'iso-ne':      [cx + dist * 0.8, dist * 0.8, cz + dist * 0.8],
-        'iso-nw':      [cx - dist * 0.8, dist * 0.8, cz + dist * 0.8],
-        'iso-se':      [cx + dist * 0.8, dist * 0.8, cz - dist * 0.8],
-        'iso-sw':      [cx - dist * 0.8, dist * 0.8, cz - dist * 0.8],
+        perspective: [cx + dist * 0.5, dist * 0.7, cz + dist * 0.6],
+        front: [cx, dist * 0.4, cz + dist],
+        top: [cx, dist * 1.5, cz],
+        left: [cx - dist, dist * 0.4, cz],
+        right: [cx + dist, dist * 0.4, cz],
+        rear: [cx, dist * 0.4, cz - dist],
+        'iso-ne': [cx + dist * 0.8, dist * 0.8, cz + dist * 0.8],
+        'iso-nw': [cx - dist * 0.8, dist * 0.8, cz + dist * 0.8],
+        'iso-se': [cx + dist * 0.8, dist * 0.8, cz - dist * 0.8],
+        'iso-sw': [cx - dist * 0.8, dist * 0.8, cz - dist * 0.8],
       }
 
-      // Ortho presets — these views use orthographic projection
-      const ORTHO_PRESETS = new Set(['top', 'front', 'iso-ne', 'iso-nw', 'iso-se', 'iso-sw'])
-
-      // Clear manual orbit flag + set projection mode on any snap
-      const clearOrbitAndSetProjection = (presetName: string) => {
-        useViewportShellStore.getState().setManualOrbit(false)
-        const isOrtho = ORTHO_PRESETS.has(presetName)
-        useViewportShellStore.getState().setProjectionMode(isOrtho ? 'orthographic' : 'perspective')
-      }
-
-      // Reset — return camera to default perspective position anchored to lot
-      if (preset === 'reset') {
-        useDevControlsStore.getState().setCameraPreset('perspective')
-        clearOrbitAndSetProjection('perspective')
-        setCamera(LOT_CAMERAS['perspective'], lotTarget)
-        useViewportShellStore.setState({ activeCameraPreset: null })
-        return
-      }
-
-      // Zoom-to-fit — frame the lot with padding (keep current projection mode)
-      if (preset === 'zoom-to-fit') {
-        const fitDist = maxDim * 1.8
-        useViewportShellStore.getState().setManualOrbit(false)
-        setCamera([cx, fitDist * 0.7, cz + fitDist * 0.6], lotTarget)
-        useViewportShellStore.setState({ activeCameraPreset: null })
-        return
-      }
-
-      const devPreset = PRESET_MAP[preset]
-      if (devPreset || DIRECT_PRESETS[preset]) {
-        const key = devPreset || preset
-        if (devPreset) {
-          useDevControlsStore.getState().setCameraPreset(devPreset as 'perspective' | 'top' | 'front' | 'iso-ne' | 'iso-nw' | 'iso-se' | 'iso-sw' | 'orbit')
-        }
-        clearOrbitAndSetProjection(key)
-        // Use lot-anchored position if available, otherwise fall back to hardcoded
-        const pos = LOT_CAMERAS[key] ?? DIRECT_PRESETS[preset]?.position ?? CAMERA_PRESETS[key]?.position
-        if (pos) {
-          setCamera(pos as [number, number, number], lotTarget)
-        }
-      }
-
-      // Handle zoom-in/zoom-out by moving camera along look direction
       if (preset === 'zoom-in' || preset === 'zoom-out') {
         const direction = new THREE.Vector3()
         camera.getWorldDirection(direction)
@@ -224,18 +143,54 @@ function CameraSnapBridge() {
           (controls as { update: () => void }).update()
         }
         invalidate()
+        return
       }
 
-      // Reset shared preset so it can be triggered again
-      useViewportShellStore.setState({ activeCameraPreset: null })
+      if (preset === 'zoom-to-fit') {
+        const anchorPosition = LOT_CAMERAS[selectedPreset] ?? LOT_CAMERAS.perspective
+        const targetVector = new THREE.Vector3(...lotTarget)
+        const fitOffset = new THREE.Vector3(...anchorPosition).sub(targetVector)
+
+        if (fitOffset.lengthSq() === 0) {
+          fitOffset.set(0, fitDist, 0)
+        } else {
+          fitOffset.setLength(fitDist)
+        }
+
+        setCamera(
+          [lotTarget[0] + fitOffset.x, lotTarget[1] + fitOffset.y, lotTarget[2] + fitOffset.z],
+          lotTarget,
+        )
+        return
+      }
+
+      if (preset === 'reset') {
+        useViewportShellStore.getState().setManualOrbit(false)
+        useDevControlsStore.getState().setCameraPreset('perspective')
+        setCamera(LOT_CAMERAS.perspective, lotTarget)
+        return
+      }
+
+      if (preset === 'iso') {
+        useViewportShellStore.getState().setManualOrbit(false)
+        useDevControlsStore.getState().setCameraPreset('iso-ne')
+        setCamera(LOT_CAMERAS['iso-ne'], lotTarget)
+        return
+      }
+
+      useViewportShellStore.getState().setManualOrbit(false)
+      useDevControlsStore.getState().setCameraPreset(selectedPreset)
+      const pos = LOT_CAMERAS[selectedPreset] ?? CAMERA_PRESETS[selectedPreset]?.position
+      if (pos) {
+        setCamera(pos, lotTarget)
+      }
     })
+
     return unsubscribe
   }, [camera, controls, invalidate])
 
   return null
 }
-
-// ─── Scene Content ──────────────────────────────────────────────────────────
 
 function SceneContent() {
   const visibleLayers = useDevControlsStore((s) => s.visibleLayers)
@@ -247,7 +202,6 @@ function SceneContent() {
   const projectionMode = useViewportShellStore((s) => s.projectionMode)
   const isOrtho = projectionMode === 'orthographic'
 
-  // Lot-anchored camera: position + target computed from current lot dimensions
   const cx = lotW / 2
   const cz = lotD / 2
   const maxDim = Math.max(lotW, lotD)
@@ -255,19 +209,20 @@ function SceneContent() {
   const lotTarget: [number, number, number] = [cx, 0, cz]
 
   const LOT_CAMERAS: Record<string, [number, number, number]> = {
-    'perspective': [cx + dist * 0.5, dist * 0.7, cz + dist * 0.6],
-    'orbit':       [cx + dist * 0.5, dist * 0.7, cz + dist * 0.6],
-    'front':       [cx, dist * 0.4, cz + dist],
-    'top':         [cx, dist * 1.5, cz],
-    'iso-ne':      [cx + dist * 0.8, dist * 0.8, cz + dist * 0.8],
-    'iso-nw':      [cx - dist * 0.8, dist * 0.8, cz + dist * 0.8],
-    'iso-se':      [cx + dist * 0.8, dist * 0.8, cz - dist * 0.8],
-    'iso-sw':      [cx - dist * 0.8, dist * 0.8, cz - dist * 0.8],
+    perspective: [cx + dist * 0.5, dist * 0.7, cz + dist * 0.6],
+    orbit: [cx + dist * 0.5, dist * 0.7, cz + dist * 0.6],
+    front: [cx, dist * 0.4, cz + dist],
+    top: [cx, dist * 1.5, cz],
+    left: [cx - dist, dist * 0.4, cz],
+    right: [cx + dist, dist * 0.4, cz],
+    rear: [cx, dist * 0.4, cz - dist],
+    'iso-ne': [cx + dist * 0.8, dist * 0.8, cz + dist * 0.8],
+    'iso-nw': [cx - dist * 0.8, dist * 0.8, cz + dist * 0.8],
+    'iso-se': [cx + dist * 0.8, dist * 0.8, cz - dist * 0.8],
+    'iso-sw': [cx - dist * 0.8, dist * 0.8, cz - dist * 0.8],
   }
 
-  const camPos = LOT_CAMERAS[cameraPreset] ?? LOT_CAMERAS['perspective']
-
-  // Auto-frame orthographic zoom: fit the lot bounding box with padding
+  const camPos = LOT_CAMERAS[cameraPreset] ?? LOT_CAMERAS.perspective
   const orthoZoom = Math.max(lotW, lotD, 10) * 1.4
 
   return (
@@ -277,7 +232,6 @@ function SceneContent() {
       <CameraSnapBridge />
       <SceneLighting />
 
-      {/* Perspective camera — default for free orbit */}
       {!isOrtho && (
         <PerspectiveCamera
           makeDefault
@@ -288,7 +242,6 @@ function SceneContent() {
         />
       )}
 
-      {/* Orthographic camera — for isometric/plan views, auto-framed to lot */}
       {isOrtho && (
         <OrthographicCamera
           makeDefault
@@ -300,29 +253,15 @@ function SceneContent() {
       )}
 
       <CameraControls target={lotTarget} />
-
-      {/* Context meshes removed — road rendered via RROWIndicator below */}
-
-      {/* Scene ground — grid + axis gizmo */}
       <SceneGround />
-
-      {/* Lot ground — handles both modes internally */}
       <LotGround />
-
-      {/* Development control layers — rectangular lot */}
       <DevControlsLayers />
-
-      {/* Context overlays — shared by both modes */}
       {visibleLayers.has('rrow') && <RROWIndicator />}
       {visibleLayers.has('firewall') && <FirewallMarkers />}
-
-      {/* Annotations */}
       {showDimensions && <DimensionLines />}
     </>
   )
 }
-
-// ─── Canvas Shell ───────────────────────────────────────────────────────────
 
 export function DevControlsCanvas() {
   const setDpr = useDevControlsStore((s) => s.setDpr)

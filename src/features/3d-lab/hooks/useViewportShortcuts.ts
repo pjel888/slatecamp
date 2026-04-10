@@ -69,30 +69,30 @@ export const useViewportShortcuts = () => {
         // Camera navigation shortcuts
         case '1':
           e.preventDefault()
-          store.snapToPreset('front')
+          store.snapToPreset('front', 'shortcut')
           break
         case '2':
           e.preventDefault()
-          store.snapToPreset('top')
+          store.snapToPreset('top', 'shortcut')
           break
         case '3':
           e.preventDefault()
-          store.snapToPreset('iso')
+          store.snapToPreset('iso', 'shortcut')
           break
         case 'z':
           if (!e.ctrlKey && !e.metaKey) {
             e.preventDefault()
-            store.snapToPreset('zoom-to-fit')
+            store.snapToPreset('zoom-to-fit', 'shortcut')
           }
           break
         case 'home':
           e.preventDefault()
-          store.snapToPreset('zoom-to-fit')
+          store.snapToPreset('zoom-to-fit', 'shortcut')
           break
         case 'r':
           if (!e.ctrlKey && !e.metaKey) {
             e.preventDefault()
-            store.snapToPreset('reset')
+            store.snapToPreset('reset', 'shortcut')
           }
           break
 
