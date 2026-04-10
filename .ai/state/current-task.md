@@ -45,6 +45,17 @@
 - [ ] 3.4: Comparison mode + ComparisonDashboard
 - [ ] 3.5: International wall type comparison
 
+## Previous Project: Admin CMS Audit Implementation — ALL PHASES COMPLETE
+
+### Tasks Complete
+- Role Matrix Verification (Unit tested)
+- Editor Save Flow Hardening (Unit tested)
+- Publish Revalidation + Cache Invalidation (Fixed missing revalidateTag)
+- Offline Save Detection (Implemented in SaveAllBar)
+- Consolidate updateQuestion exports (Consolidated in questions.ts)
+- Preview select(*) replacement (Explicit columns added)
+- Link cleanup (Removed legacyBehavior)
+
 ## Previous Project: Stairway Configurator v2 — ALL PHASES COMPLETE
 
 ### Phases 1-3 Complete (28/28 tasks)

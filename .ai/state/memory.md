@@ -7,6 +7,9 @@
 
 ## Decisions
 
+- [2026-04-10] Admin CMS revalidation MUST include revalidateTag(CACHE_TAGS.wiki, 'max') for all wiki article mutations to ensure student-view consistency. Implemented in content.ts, pipeline.ts, and bulk.ts.
+- [2026-04-10] updateQuestion server action is consolidated in src/lib/actions/admin/questions.ts and supports both standalone and unified editor data shapes (including options normalization).
+- [2026-04-10] Offline detection in SaveAllBar uses navigator.onLine to prevent data loss during connectivity issues.
 - [2026-04-09] Unified Viewport Shell replaces per-template layout assembly. Slot-based composition — shell provides containers, templates provide content only.
 - [2026-04-09] ONE ViewportSidebar component, ONE PanelCollapseButton — replaces 7+ divergent panel implementations (LabPanelLayout, GenericControlPanel, ControlPanel, InfoPanel, ComplianceReportPanel, DevControls dashboard panels, WallConfigurator ConfigPanel/BOMPanel).
 - [2026-04-09] Shell is 100% DOM-rendered. Zero Three.js scene cost. CSS Grid layout (DevControls pattern: left + handle + 1fr + handle + right).
