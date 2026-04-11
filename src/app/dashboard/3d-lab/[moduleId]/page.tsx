@@ -1,4 +1,3 @@
-import { Suspense } from "react";
 import { redirect, notFound } from "next/navigation";
 import { ROUTES } from "@/lib/routes";
 import { getAdminAwareProfile } from "@/lib/admin/get-admin-profile";
@@ -36,7 +35,7 @@ export default async function LabModulePage({
   
   const hasAccess =
     flags.bypass3dGate ||
-    hasTierAccess("pro", profile.tier, profile.isAdmin, flags);
+    hasTierAccess("pro", profile.tier, profile.hasInternalTierBypass, flags);
 
   if (!hasAccess) {
     redirect(ROUTES.THREE_D_LAB);

@@ -1,10 +1,11 @@
-import { Suspense } from 'react'
 import { headers } from 'next/headers'
 import { redirect } from 'next/navigation'
 import { createClient, getUser } from '@/lib/supabase/server'
 import { ROUTES } from '@/lib/routes'
 import { bootstrapUser } from '@/lib/supabase/bootstrap'
 import { getFeatureFlags, getEffectiveTier } from '@/lib/admin/feature-flags'
+import { getUserRole } from '@/lib/admin/roles'
+import { canSeeDevToolbar, canUseInternalTierBypass } from '@/lib/admin/access-policy'
 import { SidebarProvider } from '@/components/sidebar/SidebarProvider'
 import { Sidebar } from '@/components/sidebar/Sidebar'
 import { SidebarContent } from '@/components/sidebar/SidebarContent'
@@ -37,7 +38,12 @@ const DashboardLayoutContent = async ({ children }: DashboardLayoutContentProps)
   if (!user) redirect(ROUTES.LOGIN)
 
   if (!isDemo) {
-    await bootstrapUser(user.id)
+    try {
+      await bootstrapUser(user.id)
+    } catch (err) {
+      console.error('[DashboardLayoutContent] Bootstrap failed:', err)
+      // We continue anyway, as the user might still have enough data to render something
+    }
   }
 
   const [{ data: subscription }, { data: stats }, allDisciplines] = await Promise.all([
@@ -58,7 +64,7 @@ const DashboardLayoutContent = async ({ children }: DashboardLayoutContentProps)
   const onboardingCompletedAt = (stats as { onboarding_completed_at?: string | null } | null)?.onboarding_completed_at ?? null
   const currentTier = (subscription?.tier ?? 'free') as UserTier
   const pathname = (await headers()).get('x-pathname') ?? ''
-  const isSettingsPath = pathname.startsWith(ROUTES.dashboard.settings)
+  const isSettingsPath = pathname === ROUTES.dashboard.settings || pathname.startsWith(ROUTES.dashboard.settings + '/')
 
   // ── Onboarding Guard ──────────────────────────────────────────────────────
   // If user is not in demo mode and has not completed onboarding, redirect them
@@ -66,14 +72,14 @@ const DashboardLayoutContent = async ({ children }: DashboardLayoutContentProps)
     redirect(ROUTES.auth.onboarding)
   }
 
-  // Uses roles.ts which respects the dev bypass
-  const { isAdmin } = await import('@/lib/admin/roles');
-  const userIsAdmin = await isAdmin();
-  const showDevTools = isDemo || userIsAdmin
+  const userRole = await getUserRole()
+  const userCanSeeDevToolbar = canSeeDevToolbar(userRole)
+  const userHasInternalTierBypass = canUseInternalTierBypass(userRole)
+  const showDevTools = isDemo || userCanSeeDevToolbar
 
   const flags = showDevTools ? await getFeatureFlags() : null
   const effectiveTier = flags
-    ? getEffectiveTier(currentTier, userIsAdmin, flags)
+    ? getEffectiveTier(currentTier, userHasInternalTierBypass, flags)
     : currentTier
 
   return (
@@ -91,17 +97,17 @@ const DashboardLayoutContent = async ({ children }: DashboardLayoutContentProps)
           <SidebarProvider>
             <div className='flex flex-col h-screen overflow-hidden text-foreground font-sans selection:bg-muted bg-page-bg lg:flex-row'>
               {/* Mobile top bar */}
-              <MobileSidebarShell
-                userDisplay={{
-                  name: user.user_metadata?.full_name ?? user.email ?? 'User',
-                  avatarUrl: user.user_metadata?.avatar_url ?? user.user_metadata?.picture ?? null,
-                }}
-                tier={effectiveTier}
-              />
+                <MobileSidebarShell
+                  userDisplay={{
+                    name: user.user_metadata?.full_name ?? user.email ?? 'User',
+                    avatarUrl: user.user_metadata?.avatar_url ?? user.user_metadata?.picture ?? null,
+                  }}
+                  tier={effectiveTier}
+                />
               {/* Desktop layout: sidebar + content in flex row */}
               <div className='flex flex-1 min-h-0'>
                 <Sidebar
-                  isAdmin={userIsAdmin}
+                  isAdmin={userCanSeeDevToolbar}
                   isDevMode={showDevTools}
                   userDisplay={{
                     name: user.user_metadata?.full_name ?? user.email ?? 'User',
@@ -111,25 +117,12 @@ const DashboardLayoutContent = async ({ children }: DashboardLayoutContentProps)
                 />
                 <SidebarContent>
                 <BreadcrumbProvider>
-                  <Navbar isAdmin={userIsAdmin} />
+                  <Navbar isAdmin={userCanSeeDevToolbar} />
                   <div>
                     <DashboardHeader userId={user.id} />
                   </div>
                   <main className='flex-1 min-h-0 min-w-0 overflow-y-auto bg-page-bg'>
-                    <Suspense fallback={
-                      <div className="flex flex-col gap-3 p-2 animate-in fade-in-0 duration-100">
-                        <div className="h-7 w-48 rounded bg-border-default/40 animate-pulse" />
-                        <div className="h-4 w-72 rounded bg-border-default/30 animate-pulse" />
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-2">
-                          <div className="h-32 rounded-md bg-border-default/20 animate-pulse" />
-                          <div className="h-32 rounded-md bg-border-default/20 animate-pulse" />
-                          <div className="h-32 rounded-md bg-border-default/20 animate-pulse" />
-                          <div className="h-32 rounded-md bg-border-default/20 animate-pulse" />
-                        </div>
-                      </div>
-                    }>
-                      {children}
-                    </Suspense>
+                    {children}
                   </main>
                 </BreadcrumbProvider>
               </SidebarContent>

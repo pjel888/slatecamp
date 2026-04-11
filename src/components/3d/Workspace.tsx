@@ -1,19 +1,18 @@
 'use client'
 
-import { useCallback, useEffect, useMemo, useState, Suspense, Component, type ReactNode } from 'react'
-import dynamic from 'next/dynamic'
+import { useEffect, useState, Suspense, Component, type ReactNode } from 'react'
 import { OrbitControls, Html, Float, ContactShadows, Environment, PerspectiveCamera, useGLTF } from '@react-three/drei'
-import type { Group } from 'three'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Slider } from '@/components/ui/slider'
-import { X, Info, Stack, Lock, CircleNotch, CaretRight, Cube } from '@phosphor-icons/react/dist/ssr'
+import { X, Stack, Lock, CircleNotch, CaretRight, Cube } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 import { motion, AnimatePresence } from 'framer-motion'
 import Link from 'next/link'
 import { CanvasWrapper } from '@/features/3d-lab/components/CanvasWrapper'
 import { LabViewport } from '@/features/3d-lab/components/LabViewport'
+import { THREE_D_LAB_GATE_COPY } from '@/features/3d-lab/gate-copy'
 
 
 /* ── Types ── */
@@ -161,7 +160,7 @@ interface WorkspaceProps {
   userTier: string
 }
 
-export function Workspace({ model, parameters, hotspots, userTier }: WorkspaceProps) {
+export function Workspace({ model, parameters: _parameters, hotspots, userTier }: WorkspaceProps) {
   const [xRayOpacity, setXRayOpacity] = useState(1.0)
   const [activeHotspot, setActiveHotspot] = useState<SpatialHotspot | null>(null)
   const isLocked = userTier === 'free'
@@ -173,13 +172,13 @@ export function Workspace({ model, parameters, hotspots, userTier }: WorkspacePr
           <SCIcon icon={Lock} size="xl" className="text-border" />
         </div>
         <div className="max-w-xs space-y-2">
-          <h3 className="text-xl font-bold text-foreground">3D Lab is Gated</h3>
+          <h3 className="text-xl font-bold text-foreground">{THREE_D_LAB_GATE_COPY.lockedTitle}</h3>
           <p className="text-sm text-muted-foreground leading-relaxed">
-            Parametric spatial learning and X-Ray visualization are available exclusively for **Camp** and **Institutional** tiers.
+            {THREE_D_LAB_GATE_COPY.lockedDescription}
           </p>
         </div>
         <Button className="bg-foreground text-white hover:bg-foreground/90 rounded-sm px-8 font-bold">
-          Upgrade to Experience Spatial
+          {THREE_D_LAB_GATE_COPY.lockedCtaLabel}
         </Button>
       </div>
     )

@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Lock } from "@phosphor-icons/react/dist/ssr";
 import { LabBrowser, LabBrowserShell } from "@/features/3d-lab/components";
+import { THREE_D_LAB_GATE_COPY } from "@/features/3d-lab/gate-copy";
 
 export const metadata = { title: "3D Lab" };
 
@@ -34,7 +35,7 @@ export default async function ThreeDLabPage({
   
   const hasAccess =
     flags.bypass3dGate ||
-    hasTierAccess("pro", profile.tier, profile.isAdmin, flags);
+    hasTierAccess("pro", profile.tier, profile.hasInternalTierBypass, flags);
 
   if (!hasAccess) {
     return (
@@ -42,14 +43,13 @@ export default async function ThreeDLabPage({
         <div className="flex flex-col items-center justify-center py-24 text-center">
           <Lock size={48} className="text-muted-foreground" />
           <h1 className="mt-4 text-xl font-semibold text-foreground">
-            3D Interactive Lab
+            {THREE_D_LAB_GATE_COPY.title}
           </h1>
           <p className="mt-2 max-w-md text-sm text-muted-foreground">
-            Explore building components, structural systems, and design concepts
-            in three dimensions. Available for Camp, Insurance, and Institutional subscribers.
+            {THREE_D_LAB_GATE_COPY.description}
           </p>
           <Link href={ROUTES.SETTINGS_BILLING} className="mt-6">
-            <Button>Upgrade to Camp</Button>
+            <Button>{THREE_D_LAB_GATE_COPY.ctaLabel}</Button>
           </Link>
         </div>
       </LabBrowserShell>

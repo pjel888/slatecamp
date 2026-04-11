@@ -4,6 +4,7 @@ import { redirect } from 'next/navigation'
 import { ROUTES } from '@/lib/routes'
 import { ReviewHub } from '@/components/testing/hub/ReviewHub'
 import { Skeleton } from '@/components/ui/skeleton'
+import { getAdminAwareProfile } from '@/lib/admin/get-admin-profile'
 import {
   getActiveSRCycles,
   getDueSRCycles,
@@ -21,6 +22,7 @@ const DrillsContent = async () => {
   const supabase = await createClient()
   const { data: { user } } = await getUser()
   if (!user) redirect(ROUTES.LOGIN)
+  const accessProfile = await getAdminAwareProfile()
 
   // Fetch discipline ID first for subject query
   const { data: disciplineStats } = await supabase
@@ -91,6 +93,8 @@ const DrillsContent = async () => {
   ])
 
   const userTier = subscription?.tier ?? 'free'
+  const effectiveTier = accessProfile?.effectiveTier ?? userTier
+  const hasInternalTierBypass = accessProfile?.hasInternalTierBypass ?? false
   const coreSubjects: CoreSubject[] = (coreSubjectsRaw ?? []).map((s: any) => ({
     node_id: s.node_id,
     name: s.name,
@@ -107,12 +111,12 @@ const DrillsContent = async () => {
 
   return (
     <ReviewHub
-      userTier={userTier}
+      effectiveTier={effectiveTier}
+      hasInternalTierBypass={hasInternalTierBypass}
       readinessScore={stats?.global_readiness_score ?? 0}
       lastStudyDate={stats?.last_study_date ?? null}
       completedSessions={completedSessions ?? []}
       inProgressSession={inProgressSession ?? null}
-      allSessions={sessions ?? []}
       blindspotQueues={blindspotQueues ?? []}
       targetExamDate={profile?.target_exam_date ?? null}
       weakNodes={weakNodes ?? []}
