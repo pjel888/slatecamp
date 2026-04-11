@@ -1,6 +1,7 @@
 import React, { Suspense } from 'react'
 import { compileMDX } from 'next-mdx-remote/rsc'
 import remarkGfm from 'remark-gfm'
+import { Skeleton } from '@/components/ui/skeleton'
 import { extractHeadings, sanitizeMDX } from '@/lib/wiki-markdown'
 import type { WikiArticle as WikiArticleType } from '@/types/app'
 import type { TocHeading } from '@/lib/wiki-markdown'
@@ -283,5 +284,20 @@ export const WikiArticle = async ({
         {mdxContent}
       </div>
     </>
+  )
+}
+
+export const WikiArticleSkeleton = () => {
+  return (
+    <div className="space-y-8 mt-8">
+      {[1, 2, 3].map((p) => (
+        <div key={p} className="space-y-3">
+          <Skeleton className="h-4 w-full opacity-40" />
+          <Skeleton className="h-4 w-[95%] opacity-30" />
+          <Skeleton className="h-4 w-[98%] opacity-40" />
+          <Skeleton className="h-4 w-[40%] opacity-20" />
+        </div>
+      ))}
+    </div>
   )
 }

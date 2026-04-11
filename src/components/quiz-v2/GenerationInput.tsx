@@ -22,6 +22,7 @@ interface GenerationInputProps {
   confidenceLevel: 1 | 2 | 3 | null
   feedback: FeedbackData | null
   config: QuizSessionConfig
+  isSubmitting?: boolean
   onSubmit: (signalTrace?: GestureSignalEvent[]) => void
   onConfidenceChange: (level: 1 | 2 | 3) => void
   onNext: () => void

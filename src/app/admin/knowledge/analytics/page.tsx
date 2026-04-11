@@ -1,14 +1,14 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
+import { ArrowLeft } from '@phosphor-icons/react/dist/ssr'
+import { ROUTES } from '@/lib/routes'
 import { getQuestionsForAnalytics } from '@/lib/actions/admin/question-queries'
-
-export const metadata: Metadata = { title: 'Quality Analytics — SlateCamp Admin' }
 import { SectionHeader } from '@/components/shared/section-header'
 import { StatCard } from '@/components/shared/stat-card'
 import { Card, CardContent } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
-import { ArrowLeft } from '@phosphor-icons/react/dist/ssr'
-import Link from 'next/link'
-import { ROUTES } from '@/lib/routes'
+import { Breadcrumb } from '@/components/ui/breadcrumb'
+
+export const metadata: Metadata = { title: 'Quality Analytics â€” SlateCamp Admin' }
 
 /* ------------------------------------------------------------------ */
 /*  Helpers                                                            */
@@ -40,7 +40,6 @@ const computeStats = (
       ? difficulties.reduce((sum, d) => sum + d, 0) / difficulties.length
       : 0
 
-  // Build difficulty distribution buckets (0.0-0.1, 0.1-0.2, ..., 0.9-1.0)
   const buckets = new Map<number, number>()
   for (let i = 0; i <= 0.9; i = Math.round((i + 0.1) * 10) / 10) {
     buckets.set(i, 0)
@@ -72,12 +71,19 @@ const QuestionsAnalyticsPage = async () => {
 
   return (
     <div className="space-y-6">
+      <Breadcrumb
+        items={[
+          { label: 'Knowledge Base', href: ROUTES.admin.knowledge },
+          { label: 'Quality Analytics' },
+        ]}
+      />
+
       {/* Back link */}
       <Link
         href={ROUTES.admin.knowledgeQuestions}
-        className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-foreground transition-colors"
+        className="inline-flex items-center gap-1 text-xs text-muted-foreground transition-colors hover:text-foreground"
       >
-        <ArrowLeft className="w-3.5 h-3.5" weight="bold" />
+        <ArrowLeft className="h-3.5 w-3.5" weight="bold" />
         Back to Questions
       </Link>
 
@@ -87,8 +93,7 @@ const QuestionsAnalyticsPage = async () => {
         subtitle="Audit coverage and difficulty distribution across the question bank"
       />
 
-      {/* Stat cards */}
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
         <StatCard
           eyebrow="Total Questions"
           value={stats.total.toLocaleString()}
@@ -127,7 +132,6 @@ const QuestionsAnalyticsPage = async () => {
         />
       </div>
 
-      {/* Difficulty distribution */}
       <Card>
         <CardContent className="pt-4">
           <SectionHeader
@@ -141,11 +145,11 @@ const QuestionsAnalyticsPage = async () => {
             {[...stats.buckets.entries()]
               .sort(([a], [b]) => a - b)
               .map(([bucket, count]) => {
-                const widthPct = stats.maxBucketCount > 0
-                  ? Math.max((count / stats.maxBucketCount) * 100, count > 0 ? 2 : 0)
-                  : 0
+                const widthPct =
+                  stats.maxBucketCount > 0
+                    ? Math.max((count / stats.maxBucketCount) * 100, count > 0 ? 2 : 0)
+                    : 0
 
-                // Color gradient: emerald for easy, amber for mid, red for hard
                 const barColor =
                   bucket < 0.3
                     ? 'bg-emerald-500'
@@ -155,16 +159,16 @@ const QuestionsAnalyticsPage = async () => {
 
                 return (
                   <div key={bucket} className="flex items-center gap-3">
-                    <span className="w-16 text-right text-[11px] font-[family-name:var(--font-dm-mono)] text-muted-foreground shrink-0">
+                    <span className="w-16 shrink-0 text-right text-[11px] font-[family-name:var(--font-dm-mono)] text-muted-foreground">
                       {bucketLabel(bucket)}
                     </span>
-                    <div className="flex-1 h-5 bg-muted/50 rounded overflow-hidden">
+                    <div className="h-5 flex-1 overflow-hidden rounded bg-muted/50">
                       <div
                         className={`h-full rounded transition-all duration-150 ${barColor}`}
                         style={{ width: `${widthPct}%` }}
                       />
                     </div>
-                    <span className="w-10 text-right text-[11px] font-[family-name:var(--font-dm-mono)] text-foreground tabular-nums shrink-0">
+                    <span className="w-10 shrink-0 text-right text-[11px] font-[family-name:var(--font-dm-mono)] text-foreground tabular-nums">
                       {count}
                     </span>
                   </div>
@@ -174,7 +178,6 @@ const QuestionsAnalyticsPage = async () => {
         </CardContent>
       </Card>
 
-      {/* Coverage summary */}
       <Card>
         <CardContent className="pt-4">
           <SectionHeader
@@ -194,7 +197,7 @@ const QuestionsAnalyticsPage = async () => {
               label="Has citation"
               filled={stats.total - stats.missingCitation}
               total={stats.total}
-              color="bg-camp-cobalt"
+              color="bg-primary"
             />
           </div>
         </CardContent>
@@ -202,10 +205,6 @@ const QuestionsAnalyticsPage = async () => {
     </div>
   )
 }
-
-/* ------------------------------------------------------------------ */
-/*  Coverage bar row                                                   */
-/* ------------------------------------------------------------------ */
 
 const CoverageRow = ({
   label,
@@ -222,14 +221,14 @@ const CoverageRow = ({
 
   return (
     <div className="flex items-center gap-3">
-      <span className="w-24 text-xs text-muted-foreground shrink-0">{label}</span>
-      <div className="flex-1 h-3 bg-muted/50 rounded-full overflow-hidden">
+      <span className="w-24 shrink-0 text-xs text-muted-foreground">{label}</span>
+      <div className="h-3 flex-1 overflow-hidden rounded-full bg-muted/50">
         <div
           className={`h-full rounded-full transition-all duration-150 ${color}`}
           style={{ width: `${pct}%` }}
         />
       </div>
-      <span className="w-20 text-right text-[11px] font-[family-name:var(--font-dm-mono)] text-foreground tabular-nums shrink-0">
+      <span className="w-20 shrink-0 text-right text-[11px] font-[family-name:var(--font-dm-mono)] text-foreground tabular-nums">
         {filled}/{total} ({pct}%)
       </span>
     </div>

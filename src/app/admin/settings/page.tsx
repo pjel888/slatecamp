@@ -3,8 +3,6 @@ import { redirect } from 'next/navigation'
 import { ROUTES } from '@/lib/routes'
 import { isSuperAdmin } from '@/lib/admin/roles'
 import { formatRelativeTime } from '@/lib/utils/format-time'
-
-export const metadata: Metadata = { title: 'Settings — SlateCamp Admin' }
 import { getAdminUsers, assignRole, revokeRole } from '@/lib/actions/admin/roles'
 import { SectionHeader } from '@/components/shared/section-header'
 import { Card } from '@/components/ui/card'
@@ -14,6 +12,8 @@ import { Input } from '@/components/ui/input'
 import { EmptyState } from '@/components/shared/empty-state'
 import { Shield, UserMinus, Users } from '@phosphor-icons/react/dist/ssr'
 import { RoleSelect } from '@/components/admin/settings/RoleSelect'
+
+export const metadata: Metadata = { title: 'Settings â€” SlateCamp Admin' }
 
 /* ------------------------------------------------------------------ */
 /*  Helpers                                                            */
@@ -136,7 +136,7 @@ const AdminSettingsPage = async () => {
           </div>
 
           <form action={assignRole} className="flex flex-wrap items-end gap-3">
-            <div className="flex flex-col gap-1.5 min-w-[240px] flex-1">
+            <div className="flex min-w-[240px] flex-1 flex-col gap-1.5">
               <label
                 htmlFor="userId"
                 className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-wider text-muted-foreground"
@@ -154,7 +154,7 @@ const AdminSettingsPage = async () => {
               />
             </div>
 
-            <div className="flex flex-col gap-1.5 min-w-[180px]">
+            <div className="flex min-w-[180px] flex-col gap-1.5">
               <label
                 htmlFor="role"
                 className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-wider text-muted-foreground"

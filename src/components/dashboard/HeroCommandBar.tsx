@@ -78,6 +78,7 @@ export function HeroCommandBar({
 
   const label = getReadinessLabel(readinessScore)
   const delta = previousScore != null ? readinessScore - previousScore : null
+  const isNewUser = readinessScore === 0
 
   return (
     <div className='w-full rounded-md bg-camp-cobalt overflow-hidden flex flex-col'>
@@ -103,7 +104,7 @@ export function HeroCommandBar({
                 out of 100
               </span>
               <span className='text-white/70 text-[11px] font-medium'>
-                {label}
+                {isNewUser ? 'Uncalibrated' : label}
               </span>
               {readinessScore > 0 && delta != null && Math.abs(delta) >= 1 ? (
                 <span
@@ -116,7 +117,7 @@ export function HeroCommandBar({
                 </span>
               ) : (
                 <span className='text-white/50 text-[11px] font-medium'>
-                  Start practicing to build your score
+                  {isNewUser ? 'Awaiting first session' : 'Start practicing to build your score'}
                 </span>
               )}
               {readinessMeta?.ceilingActive && readinessMeta.ceilingReason && (
@@ -160,51 +161,62 @@ export function HeroCommandBar({
               </p>
             )}
           </div>
-          <div className='h-px bg-white/15 self-stretch my-4' />
-          <div className='flex items-start justify-start flex-col gap-3  '>
-            <p className='font-dm-mono text-white/40 text-[12px] font-bold uppercase tracking-wider'>
-              Weekly Stats
-            </p>
-            {heroStats.map((stat) => (
-              <Tooltip key={stat.label}>
-                <TooltipTrigger asChild>
-                  <div className='flex flex-col cursor-default'>
-                    <div className='flex items-baseline gap-1.5'>
-                      <span className='text-white text-base font-bold tabular-nums'>
-                        {stat.value}
-                      </span>
-                      <span className='font-dm-mono text-white/40 text-[11px] font-medium uppercase tracking-wider'>
-                        {stat.label}
-                      </span>
-                      {stat.delta != null && stat.delta !== 0 && (
-                        <span
-                          className={[
-                            'text-[11px] font-semibold',
-                            stat.delta > 0 ? 'text-warning' : 'text-white/40',
-                          ].join(' ')}
-                        >
-                          {stat.delta > 0 ? `+${stat.delta}` : stat.delta}
-                        </span>
-                      )}
-                    </div>
-                    {stat.description ? (
-                      <span className='text-white/30 text-[11px]'>
-                        {stat.description}
-                      </span>
-                    ) : null}
-                  </div>
-                </TooltipTrigger>
-                <TooltipContent side='bottom'>{stat.tooltip}</TooltipContent>
-              </Tooltip>
-            ))}
-          </div>
+          {!isNewUser && (
+            <>
+              <div className='h-px bg-white/15 self-stretch my-4' />
+              <div className='flex items-start justify-start flex-col gap-3  '>
+                <p className='font-dm-mono text-white/40 text-[12px] font-bold uppercase tracking-wider'>
+                  Weekly Stats
+                </p>
+                {heroStats.map((stat) => (
+                  <Tooltip key={stat.label}>
+                    <TooltipTrigger asChild>
+                      <div className='flex flex-col cursor-default'>
+                        <div className='flex items-baseline gap-1.5'>
+                          <span className='text-white text-base font-bold tabular-nums'>
+                            {stat.value}
+                          </span>
+                          <span className='font-dm-mono text-white/40 text-[11px] font-medium uppercase tracking-wider'>
+                            {stat.label}
+                          </span>
+                          {stat.delta != null && stat.delta !== 0 && (
+                            <span
+                              className={[
+                                'text-[11px] font-semibold',
+                                stat.delta > 0 ? 'text-warning' : 'text-white/40',
+                              ].join(' ')}
+                            >
+                              {stat.delta > 0 ? `+${stat.delta}` : stat.delta}
+                            </span>
+                          )}
+                        </div>
+                        {stat.description ? (
+                          <span className='text-white/30 text-[11px]'>
+                            {stat.description}
+                          </span>
+                        ) : null}
+                      </div>
+                    </TooltipTrigger>
+                    <TooltipContent side='bottom'>{stat.tooltip}</TooltipContent>
+                  </Tooltip>
+                ))}
+              </div>
+            </>
+          )}
+          {isNewUser && (
+            <div className="mt-4 p-3 rounded-md bg-white/5 border border-white/10">
+              <p className="text-[11px] text-white/60 leading-relaxed">
+                Welcome to SlateCamp. Your weekly stats and insights will appear here once you begin your study sessions.
+              </p>
+            </div>
+          )}
         </div>
 
         {/* Divider 2 */}
-        {children && <div className='w-px bg-white/15 self-stretch my-4' />}
+        {children && !isNewUser && <div className='w-px bg-white/15 self-stretch my-4' />}
 
         {/* SECTION 3: Study Activity Heatmap */}
-        {children && (
+        {children && !isNewUser && (
           <div className='flex-1 min-w-0 py-3 px-4 overflow-hidden'>
             {children}
           </div>

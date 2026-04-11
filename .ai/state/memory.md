@@ -18,6 +18,12 @@
 - [2026-04-09] New store: useViewportShellStore (Store 11) for sidebar collapse, view mode, camera preset, mobile tab state.
 - [2026-04-09] Panel collapse animation: grid-template-columns CSS transition (200ms cubic-bezier) — proven by DevControlsModule.
 
+## UX Findings
+
+- [2026-04-10] FTUX Gap: New users are currently not forced through the onboarding flow after registration due to a missing `next=/onboarding` parameter in the `RegisterForm.tsx` OAuth redirect.
+- [2026-04-10] FTUX Gap: The `/dashboard` route lacks a profile guard that checks for `onboarding_completed_at`. This allows users with 0 data to see empty skeletons on the dashboard without being oriented.
+- [2026-04-10] FTUX Constraint: The "Get Your Free Readiness Score" CTA on the landing page creates a high expectation that must be met by the onboarding flow and the dashboard's initial state.
+
 ## Architecture Notes
 
 - [2026-04-09] LabViewportFrame.tsx:84 fix: changed overlay div from `relative` to `absolute inset-0` — panels were being pushed below Canvas and clipped by overflow-hidden.

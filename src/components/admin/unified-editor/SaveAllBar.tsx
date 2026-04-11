@@ -363,12 +363,22 @@ export const SaveAllBar = ({
 
       for (const item of succeeded) {
         if (item.type === 'article') {
-          // Article succeeded but we only have resetAllDirty — skip granular reset
-          // The article dirty flag will remain; user retries will no-op safely
+          dirty.resetArticleDirty()
         } else if (item.type === 'question') {
-          dirty.resetQuestionDirty(item.id)
+          // Check if it was a new question or update or delete
+          const isNew = dirty.newQuestions.some(q => q._tempId === item.id)
+          const isDeleted = dirty.deletedQuestions.has(item.id)
+          
+          if (isNew) dirty.resetNewQuestion(item.id)
+          else if (isDeleted) dirty.resetDeletedQuestion(item.id)
+          else dirty.resetQuestionDirty(item.id)
         } else if (item.type === 'ei_prompt') {
-          dirty.resetEIPromptDirty(item.id)
+          const isNew = dirty.newEIPrompts.some(p => p._tempId === item.id)
+          const isDeleted = dirty.deletedEIPrompts.has(item.id)
+
+          if (isNew) dirty.resetNewEIPrompt(item.id)
+          else if (isDeleted) dirty.resetDeletedEIPrompt(item.id)
+          else dirty.resetEIPromptDirty(item.id)
         }
       }
     }

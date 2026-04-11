@@ -4,6 +4,7 @@
 import { create, StateCreator } from 'zustand'
 import { persist, createJSONStorage, subscribeWithSelector } from 'zustand/middleware'
 import { submitAnswer as submitAnswerAction } from '@/lib/actions/quiz-v2'
+import { withMinimumDuration } from '@/lib/utils/promise'
 import type {
   QuizMode,
   QuizSessionConfig,
@@ -411,7 +412,7 @@ const createSessionSlice: StateCreator<QuizStore, [["zustand/subscribeWithSelect
     set({ status: 'submitting', ...nextCageState, ui: { ...get().ui, saveStatus: 'saving' } })
 
     try {
-      const result = await submitAnswerAction(input)
+      const result = await withMinimumDuration(submitAnswerAction(input), 400)
       set({ ui: { ...get().ui, saveStatus: 'saved' } })
 
       const prevStreak = get().streakCount

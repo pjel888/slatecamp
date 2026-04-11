@@ -17,6 +17,7 @@ const NotesEditor = dynamic(
 )
 import { ContextBadge } from '@/components/notes/ContextBadge'
 import { useNotesPanels, useNotesList, useNoteEditor } from '@/hooks/notes'
+import { useToast } from '@/lib/hooks/use-toast'
 import type { NoteStub, Note } from '@/types/app'
 
 interface NotesShellProps {
@@ -46,6 +47,7 @@ export const NotesShell = ({ initialNotes, initialFolders, initialOpenNoteId, us
   const [folders, setFolders] = useState(initialFolders)
   const [filter, setFilter] = useState<NavFilter>({ type: 'all' })
   const [searchQuery, setSearchQuery] = useState('')
+  const [saveError, setSaveError] = useState<string | null>(null)
   const titleInputRef = useRef<HTMLInputElement>(null)
   const [showDeleteConfirm, setShowDeleteConfirm] = useState(false)
   const [pendingDeleteId, setPendingDeleteId] = useState<string | null>(null)
@@ -91,6 +93,25 @@ export const NotesShell = ({ initialNotes, initialFolders, initialOpenNoteId, us
     initialOpenNoteId, 
     setStubs: setAllStubs as any // Hook expects real stubs setter, we give it our mixed setter
   })
+
+  const { toast } = useToast()
+  const lastSavedRef = useRef<string | null>(currentNote?.updated_at ?? null)
+
+  // ── Sync Save Feedback ─────────────────────────────────────
+  useEffect(() => {
+    if (isSaving) {
+      setSaveError(null)
+    } else if (currentNote?.updated_at && lastSavedRef.current && currentNote.updated_at !== lastSavedRef.current) {
+      // Note was saved (updated_at changed and we were previously tracking a different time)
+      toast({
+        title: "Note saved",
+        description: "Your changes have been synced to the cloud.",
+      })
+    }
+    if (currentNote?.updated_at) {
+      lastSavedRef.current = currentNote.updated_at
+    }
+  }, [isSaving, currentNote?.updated_at, toast])
 
   // Override selectNote to handle virtual notes
   const handleSelect = useCallback(async (id: string) => {
@@ -254,6 +275,43 @@ export const NotesShell = ({ initialNotes, initialFolders, initialOpenNoteId, us
                     toolbarWrapperClassName="sticky top-0 z-10"
                   />
                 )}
+              </div>
+            </div>
+
+            {/* Editor Footer — Save Status */}
+            <div className="shrink-0 border-t border-border/40 px-8 py-2 bg-surface-light/50">
+              <div className="mx-auto max-w-3xl flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  {isSaving ? (
+                    <div className="flex items-center gap-1.5 text-[10px] font-medium text-primary animate-pulse">
+                      <div className="w-1 h-1 rounded-full bg-primary" />
+                      Syncing...
+                    </div>
+                  ) : saveError ? (
+                    <div className="flex items-center gap-1.5 text-[10px] font-medium text-destructive">
+                      <div className="w-1 h-1 rounded-full bg-destructive" />
+                      Save failed
+                      <button 
+                        onClick={() => {
+                          if (pendingTitle === null && pendingContent === null) {
+                            setPendingTitle(currentNote.title)
+                          }
+                        }}
+                        className="ml-1 underline hover:no-underline"
+                      >
+                        Retry
+                      </button>
+                    </div>
+                  ) : (
+                    <div className="text-[10px] text-text-tertiary">
+                      Saved at {new Date(currentNote.updated_at).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
+                    </div>
+                  )}
+                </div>
+                
+                <div className="text-[10px] text-text-tertiary tabular-nums">
+                  {JSON.stringify(currentNote.content).length} chars
+                </div>
               </div>
             </div>
           </div>

@@ -41,6 +41,7 @@ interface SidebarProviderProps {
 
 export const SidebarProvider = ({ children }: SidebarProviderProps) => {
   const [expanded, setExpandedState] = useState(false)
+  const [isLocked, setIsLocked] = useState(false)
   const [prefersReducedMotion, setPrefersReducedMotion] = useState(false)
 
   const sidebarRef = useRef<HTMLElement | null>(null)
@@ -113,6 +114,8 @@ export const SidebarProvider = ({ children }: SidebarProviderProps) => {
 
   useEffect(() => {
     const onKeyDown = (e: KeyboardEvent) => {
+      if (isLocked) return
+
       const isModifier = e.metaKey || e.ctrlKey
 
       // Cmd/Ctrl+B: toggle sidebar
@@ -140,7 +143,7 @@ export const SidebarProvider = ({ children }: SidebarProviderProps) => {
 
     window.addEventListener('keydown', onKeyDown)
     return () => window.removeEventListener('keydown', onKeyDown)
-  }, [expanded, toggle, setExpanded, router])
+  }, [expanded, toggle, setExpanded, router, isLocked])
 
   // ---- Render ----
 
@@ -152,6 +155,8 @@ export const SidebarProvider = ({ children }: SidebarProviderProps) => {
         toggle,
         expand,
         collapse,
+        isLocked,
+        setIsLocked,
         prefersReducedMotion,
         sidebarRef,
         toggleRef,

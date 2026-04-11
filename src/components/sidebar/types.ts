@@ -81,6 +81,8 @@ export interface SidebarContextValue {
   toggle: () => void
   expand: () => void
   collapse: () => void
+  isLocked: boolean
+  setIsLocked: (v: boolean) => void
   prefersReducedMotion: boolean
   sidebarRef: React.RefObject<HTMLElement | null>
   toggleRef: React.RefObject<HTMLButtonElement | null>

@@ -22,7 +22,7 @@ import { ConfirmDialog } from '@/components/ui/dialog'
 // ---------------------------------------------------------------------------
 
 export const Sidebar = ({ userDisplay, tier, isAdmin, isDevMode }: SidebarProps) => {
-  const { expanded, collapse, expand, toggle, sidebarRef, toggleRef, prefersReducedMotion } = useSidebar()
+  const { expanded, collapse, expand, toggle, sidebarRef, toggleRef, prefersReducedMotion, isLocked } = useSidebar()
   const pathname = usePathname()
   const router = useRouter()
   const collapsingTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
@@ -149,6 +149,12 @@ export const Sidebar = ({ userDisplay, tier, isAdmin, isDevMode }: SidebarProps)
         }}
         className="hidden bg-white lg:flex lg:flex-col"
       >
+        {isLocked && (
+          <div 
+            className="absolute inset-0 z-[60] bg-white/40 backdrop-blur-[1px] cursor-not-allowed animate-in fade-in duration-200"
+            aria-hidden="true"
+          />
+        )}
         <SidebarHeader expanded={expanded} />
 
         {/* Scrollable body */}

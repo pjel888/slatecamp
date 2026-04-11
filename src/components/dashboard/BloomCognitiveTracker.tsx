@@ -184,11 +184,20 @@ const LockedState = ({ sessionsCompleted }: { sessionsCompleted: number }) => (
 // ── Empty state ───────────────────────────────────────────────────────────────
 
 const EmptyBloomState = () => (
-  <div className="flex flex-col items-center justify-center py-6 text-center">
-    <p className="text-sm font-medium text-foreground">No data yet</p>
-    <p className="text-[11px] text-muted-foreground mt-0.5">
-      Complete a session with bloom-tagged questions to see your cognitive profile.
-    </p>
+  <div className="flex flex-col items-center justify-center py-8 px-4 text-center space-y-3 bg-muted/30 rounded-md border border-dashed border-border">
+    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/5 text-primary/40">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M2 17L12 22L22 17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M2 12L12 17L22 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      </svg>
+    </div>
+    <div className="space-y-1">
+      <p className="text-sm font-bold text-foreground">Mapping your cognitive depth</p>
+      <p className="text-[11px] text-muted-foreground leading-relaxed max-w-[200px]">
+        Once you start answering questions, we&apos;ll track if you struggle with simple recall or complex multi-step reasoning.
+      </p>
+    </div>
   </div>
 )
 

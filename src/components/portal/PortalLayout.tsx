@@ -34,6 +34,12 @@ const PortalLayout = ({
   children,
 }: PortalLayoutProps) => (
   <div className="flex flex-col min-h-screen">
+    <a
+      href="#portal-main"
+      className="sr-only focus:not-sr-only fixed left-4 top-4 z-50 rounded-sm border border-border bg-card px-3 py-2 text-sm font-medium text-foreground shadow-md focus:outline-none focus:ring-2 focus:ring-primary/40"
+    >
+      Skip to main content
+    </a>
     <PortalTopbar
       portalLabel={portalLabel}
       topbarBg={topbarBg}
@@ -58,6 +64,7 @@ const PortalLayout = ({
       />
       <div className="flex flex-1 min-w-0">
         <main
+          id="portal-main"
           className={cn(
             'flex-1 min-w-0',
             noPadding
@@ -79,4 +86,3 @@ const PortalLayout = ({
 
 export { PortalLayout }
 export type { PortalLayoutProps }
-

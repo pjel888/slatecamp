@@ -7,6 +7,7 @@ import { useQuizTimerStore } from '@/stores/useQuizTimerStore'
 import { 
   endSession as endSessionAction,
 } from '@/lib/actions/quiz-v2'
+import { withMinimumDuration } from '@/lib/utils/promise'
 import type { GestureSignalEvent } from '@/types/patent'
 
 interface UseQuizShellHandlersProps {
@@ -88,7 +89,10 @@ export const useQuizShellHandlers = ({ sessionId, mode }: UseQuizShellHandlersPr
 
   const handleExit = async () => {
     try {
-      const result = await endSessionAction({ sessionId, endReason: 'user_exit' })
+      const result = await withMinimumDuration(
+        endSessionAction({ sessionId, endReason: 'user_exit' }),
+        800,
+      )
       stopTimer()
       endSession(result)
     } catch {
@@ -99,9 +103,12 @@ export const useQuizShellHandlers = ({ sessionId, mode }: UseQuizShellHandlersPr
   }
 
   const handleSubmitAll = async () => {
-    useQuizStore.setState(s => ({ ui: { ...s.ui, calculatingResults: true } }))
+    useQuizStore.setState((s) => ({ ui: { ...s.ui, calculatingResults: true } }))
     try {
-      const result = await endSessionAction({ sessionId, endReason: 'completed' })
+      const result = await withMinimumDuration(
+        endSessionAction({ sessionId, endReason: 'completed' }),
+        800,
+      )
       endSession(result)
     } catch {
       router.push(`/quiz/${mode}/session/${sessionId}/results`)

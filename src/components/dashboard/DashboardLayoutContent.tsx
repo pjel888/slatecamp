@@ -54,7 +54,14 @@ const DashboardLayoutContent = async ({ children }: DashboardLayoutContentProps)
   ])
 
   const userStats = stats as (UserGlobalStats & { disciplines: Discipline | null }) | null
+  const onboardingCompletedAt = (stats as { onboarding_completed_at?: string | null } | null)?.onboarding_completed_at ?? null
   const currentTier = (subscription?.tier ?? 'free') as UserTier
+
+  // ── Onboarding Guard ──────────────────────────────────────────────────────
+  // If user is not in demo mode and has not completed onboarding, redirect them
+  if (!isDemo && !onboardingCompletedAt) {
+    redirect('/onboarding')
+  }
 
   // Uses roles.ts which respects the dev bypass
   const { isAdmin } = await import('@/lib/admin/roles');

@@ -14,10 +14,13 @@ export function RegisterForm() {
   async function handleGoogleSignUp() {
     setError(null);
     setGoogleLoading(true);
+    const callbackUrl = new URL(`${window.location.origin}/auth/callback`);
+    callbackUrl.searchParams.set("next", "/onboarding");
+
     const { data, error: oauthError } = await supabase.auth.signInWithOAuth({
       provider: "google",
       options: {
-        redirectTo: `${window.location.origin}/auth/callback`,
+        redirectTo: callbackUrl.toString(),
       },
     });
     if (oauthError) {

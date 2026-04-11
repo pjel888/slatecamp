@@ -141,25 +141,9 @@ export default async function OnboardingPage() {
   }
 
   return (
-    <div
-      className="flex min-h-screen flex-col items-center justify-center px-6 bg-muted"
-    >
-      <div className="w-full max-w-md space-y-6">
-        {/* Progress indicator */}
-        <p className="text-center text-[11px] uppercase tracking-[1.5px] text-muted-foreground">
-          Step 1 of 3 before your score is ready
-        </p>
-
-        <div className="rounded-md border border-border bg-card p-6 space-y-6">
-          <div className="text-center">
-            <h1 className="text-xl font-bold text-foreground">
-              Let&apos;s set up your study path
-            </h1>
-            <p className="mt-1.5 text-sm text-muted-foreground">
-              A few quick questions, then we&apos;ll build your diagnostic.
-            </p>
-          </div>
-
+    <div className="flex min-h-screen flex-col items-center justify-center px-6 bg-muted">
+      <div className="w-full max-w-md">
+        <div className="rounded-md border border-border bg-card p-6 shadow-sm">
           <OnboardingForm
             disciplines={(disciplines ?? []) as Discipline[]}
             subjectsByDiscipline={subjectsByDiscipline}

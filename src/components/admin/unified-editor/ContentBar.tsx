@@ -3,8 +3,9 @@
 import { useEffect, useCallback } from 'react'
 import Link from 'next/link'
 import { ROUTES } from '@/lib/routes'
-import { ArrowLeft, PencilSimple, CircleDashed, Clock, CheckCircle } from '@phosphor-icons/react/dist/ssr'
+import { ArrowLeft, PencilSimple, CircleDashed, Clock, CheckCircle, CloudSlash } from '@phosphor-icons/react/dist/ssr'
 import { useDirtyState } from './DirtyStateProvider'
+import { useOnlineStatus } from '@/hooks/useOnlineStatus'
 import {
   Select,
   SelectContent,
@@ -71,6 +72,7 @@ export const ContentBar = ({
   saveError,
 }: ContentBarProps) => {
   const dirty = useDirtyState()
+  const isOnline = useOnlineStatus()
 
   // ── Cmd+S / Ctrl+S global shortcut ─────────────────────────
   const handleKeyDown = useCallback((e: KeyboardEvent) => {
@@ -133,7 +135,13 @@ export const ContentBar = ({
       <Divider />
 
       {/* 7. Status dropdown */}
-      <Select value={status} onValueChange={onStatusChange}>
+      <Select 
+        value={status} 
+        onValueChange={(val) => {
+          if (val === 'published' && !isOnline) return
+          onStatusChange(val)
+        }}
+      >
         <SelectTrigger
           className={cn(
             'h-8 space-x-2 px-3 text-xs font-semibold focus:ring-0 rounded-full shadow-none',
@@ -146,14 +154,22 @@ export const ContentBar = ({
           </div>
         </SelectTrigger>
         <SelectContent align="end" sideOffset={4} alignItemWithTrigger={false}>
-          {Object.entries(STATUS_CONFIG).map(([key, config]) => (
-            <SelectItem key={key} value={key}>
-              <div className="flex items-center gap-2">
-                {config.icon}
-                <span>{config.label}</span>
-              </div>
-            </SelectItem>
-          ))}
+          {Object.entries(STATUS_CONFIG).map(([key, config]) => {
+            const isDisabled = key === 'published' && !isOnline
+            return (
+              <SelectItem 
+                key={key} 
+                value={key} 
+                disabled={isDisabled}
+              >
+                <div className="flex items-center gap-2">
+                  {config.icon}
+                  <span>{config.label}</span>
+                  {isDisabled && <CloudSlash className="ml-auto w-3 h-3 text-destructive" />}
+                </div>
+              </SelectItem>
+            )
+          })}
         </SelectContent>
       </Select>
 

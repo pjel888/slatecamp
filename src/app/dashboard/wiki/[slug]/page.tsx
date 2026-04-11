@@ -1,11 +1,19 @@
-import { WikiArticle, getArticleHeadings, WikiItemRenderer, WikiArticleHero, WikiHeader, WikiRightSidebar, TeachBackPrompt, WrongAnswerBanner, WikiReadTracker } from '@/components/wiki'
+import {
+  WikiArticle,
+  WikiArticleSkeleton,
+  getArticleHeadings,
+  WikiArticleHero,
+  WikiHeader,
+  WikiRightSidebar,
+  TeachBackPrompt,
+  WrongAnswerBanner,
+  WikiReadTracker,
+} from '@/components/wiki'
 import { notFound } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import Link from 'next/link'
 import { cn } from '@/lib/utils'
-import type { TaxonomyNode } from '@/lib/actions/taxonomy'
 import { getSubjectName } from '@/types/testing'
-import { Button } from '@/components/ui/button'
 import { Suspense } from 'react'
 import { estimateReadingTime } from '@/lib/wiki-markdown'
 import { getTeachBackCriteria } from '@/lib/actions/teach-back'
@@ -119,13 +127,15 @@ export default async function WikiArticlePage(props: WikiArticlePageProps) {
                 leaTestsYou="demonstrate comprehensive understanding of this architectural principle and apply it correctly in professional practice."
               />
 
-              <WikiArticle
-                article={article}
-                nodeId={wikiNodeId}
-                nodeName={wikiNodeName}
-                eiPrompts={eiPrompts}
-                eiResponses={eiResponses}
-              />
+              <Suspense fallback={<WikiArticleSkeleton />}>
+                <WikiArticle
+                  article={article}
+                  nodeId={wikiNodeId}
+                  nodeName={wikiNodeName}
+                  eiPrompts={eiPrompts}
+                  eiResponses={eiResponses}
+                />
+              </Suspense>
 
               {teachBackCriteria && (
                 <div className="mt-16 pt-16 border-t border-wiki-border">

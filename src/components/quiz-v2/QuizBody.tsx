@@ -14,6 +14,7 @@ interface QuizBodyProps {
   confidenceLevel: 1 | 2 | 3 | null
   feedback: FeedbackData | null
   config: QuizSessionConfig
+  isSubmitting?: boolean
   onSelectOption: (optionId: string) => void
   onConfidenceChange: (level: 1 | 2 | 3) => void
   onSubmit: (signalTrace?: GestureSignalEvent[]) => void

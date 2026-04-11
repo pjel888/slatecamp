@@ -1,14 +1,14 @@
 import type { Metadata } from 'next'
-import { isSuperAdmin } from '@/lib/admin/roles'
-
-export const metadata: Metadata = { title: 'Audit Log — SlateCamp Admin' }
 import { redirect } from 'next/navigation'
+import { isSuperAdmin } from '@/lib/admin/roles'
 import { ROUTES } from '@/lib/routes'
 import { AuditLogViewer } from '@/components/admin/AuditLogViewer'
 
+export const metadata: Metadata = { title: 'Audit Log â€” SlateCamp Admin' }
+
 export default async function AdminAuditPage() {
   const admin = await isSuperAdmin()
-  
+
   if (!admin) {
     redirect(ROUTES.admin.root)
   }

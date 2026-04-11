@@ -4,6 +4,7 @@ import { useEffect, useRef, useMemo } from 'react'
 import { useRouter } from 'next/navigation'
 import { useQuizStore } from '@/stores/useQuizStore'
 import { useQuizTimerStore } from '@/stores/useQuizTimerStore'
+import { SlatecampLoader } from '@/components/shared/SlatecampLoader'
 import { BaseQuizShell } from './BaseQuizShell'
 import { QuizBody } from './QuizBody'
 import { PacingNudge } from './PacingNudge'
@@ -203,36 +204,44 @@ export const StandardQuizShell = ({
   if (!currentQuestion) return null
 
   return (
-    <BaseQuizShell
-      config={config}
-      direction={direction}
-      onExit={handleExit}
-      onSubmitAll={handleSubmitAll}
-      onNext={handleNext}
-      onPrevious={handlePrevious}
-      showPacingNudge={(config.pressure_level ?? 0) >= 2}
-      pacingNudgeSlot={
-        currentQuestion && (
-          <PacingNudge
-            pressureLevel={config.pressure_level ?? 0}
-            difficultyLabel={currentQuestion.difficulty_label}
-            questionId={currentQuestion.question_id}
-            onAutoAdvance={config.pressure_level === 3 ? handlePacingAutoAdvance : undefined}
-          />
-        )
-      }
-    >
-      <QuizBody
-        question={currentQuestion}
-        selectedOptionId={currentAnswer?.selectedOptionId ?? null}
-        confidenceLevel={(currentAnswer?.confidenceLevel as 1 | 2 | 3) ?? null}
-        feedback={feedbackData!}
+    <>
+      {calculatingResults && (
+        <SlatecampLoader 
+          isOverlay 
+          staticMessage="Analyzing your performance..." 
+        />
+      )}
+      <BaseQuizShell
         config={config}
-        onSelectOption={(optId) => handleSelectOption(currentQuestion.question_id, optId)}
-        onConfidenceChange={(lvl) => handleConfidenceChange(currentQuestion.question_id, lvl)}
-        onSubmit={handleSubmit}
+        direction={direction}
+        onExit={handleExit}
+        onSubmitAll={handleSubmitAll}
         onNext={handleNext}
-      />
-    </BaseQuizShell>
+        onPrevious={handlePrevious}
+        showPacingNudge={(config.pressure_level ?? 0) >= 2}
+        pacingNudgeSlot={
+          currentQuestion && (
+            <PacingNudge
+              pressureLevel={config.pressure_level ?? 0}
+              difficultyLabel={currentQuestion.difficulty_label}
+              questionId={currentQuestion.question_id}
+              onAutoAdvance={config.pressure_level === 3 ? handlePacingAutoAdvance : undefined}
+            />
+          )
+        }
+      >
+        <QuizBody
+          question={currentQuestion}
+          selectedOptionId={currentAnswer?.selectedOptionId ?? null}
+          confidenceLevel={(currentAnswer?.confidenceLevel as 1 | 2 | 3) ?? null}
+          feedback={feedbackData!}
+          config={config}
+          isSubmitting={status === 'submitting'}
+          onSelectOption={(optId) => handleSelectOption(currentQuestion.question_id, optId)}
+          onConfidenceChange={(lvl) => handleConfidenceChange(currentQuestion.question_id, lvl)}
+          onSubmit={handleSubmit}
+          onNext={handleNext}
+        />      </BaseQuizShell>
+    </>
   )
 }

@@ -4,6 +4,7 @@ import { Question, FileText, MagnifyingGlass, Clock, SquaresFour, GitBranch, Cub
 import { PortalLayout, CommandPalette } from '@/components/portal'
 import { AdminRoleBadge } from './AdminRoleBadge'
 import { PORTALS } from '@/config/portals'
+import { Toaster } from '@/components/ui/toaster'
 import type { NavGroup } from '@/components/portal'
 import type { UserRole } from '@/lib/admin/roles'
 
@@ -166,6 +167,7 @@ const AdminShell = ({ role, badgeCounts, noPadding = false, children }: AdminShe
     >
       <CommandPalette pages={adminPages} />
       {children}
+      <Toaster />
     </PortalLayout>
   )
 }

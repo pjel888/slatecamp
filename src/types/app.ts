@@ -115,6 +115,9 @@ export interface UserGlobalStats {
   current_streak_days: number;
   longest_streak_days: number;
   last_study_date: string | null;
+  onboarding_completed_at: string | null;
+  is_retaker: boolean;
+  target_exam_date: string | null;
   updated_at: string;
 }
 

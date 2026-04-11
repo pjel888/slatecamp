@@ -11,6 +11,7 @@ import { ActionCard } from '@/components/shared/action-card'
 import { Card } from '@/components/ui/card'
 import { EventBadge } from '@/components/shared/event-badge'
 import { Eyebrow } from '@/components/ui/eyebrow'
+import { Breadcrumb } from '@/components/ui/breadcrumb'
 import { NeedsAttentionCard } from '@/components/admin/NeedsAttentionCard'
 
 export const metadata: Metadata = { title: 'Dashboard — SlateCamp Admin' }
@@ -83,6 +84,12 @@ const AdminDashboardPage = async () => {
 
   return (
     <div className="space-y-6">
+      <Breadcrumb
+        items={[
+          { label: 'Admin', href: ROUTES.admin.root },
+          { label: 'Dashboard' },
+        ]}
+      />
 
       {/* Section 1: Page Header */}
       <SectionHeader
@@ -169,8 +176,6 @@ const AdminDashboardPage = async () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
             {subjectCounts.map((subject) => {
               const qPct = Math.round((subject.questionCount / maxQuestions) * 100)
-              const aPct = Math.min(100, Math.round((subject.articleCount / 20) * 100)) // Arbitrary 20 as "full" for articles for scale
-              
               // Color mapping based on subject code
               const colorClass = 
                 subject.lea_id?.includes('PRAC') ? 'bg-emerald-500' :

@@ -3,6 +3,7 @@ import { ROUTES } from '@/lib/routes'
 import { canManageContent } from '@/lib/admin/roles'
 import { createClient } from '@/lib/supabase/server'
 import { QuestionEditor } from '@/components/admin/QuestionEditor'
+import { Breadcrumb } from '@/components/ui/breadcrumb'
 import {
   getArticleFull,
 } from '@/lib/actions/admin/content'
@@ -107,48 +108,58 @@ const QuestionDetailPage = async ({ params }: PageProps) => {
   }
 
   return (
-    <div className="flex h-[calc(100vh-4rem)] overflow-hidden">
-      {/* Left: Question Editor (60%) */}
-      <div className="w-[60%] overflow-y-auto p-6 bg-card">
-        <div className="mb-6">
-          <Eyebrow>Question Moderation</Eyebrow>
-          <h1 className="text-2xl font-bold text-foreground mt-1">Edit Question</h1>
-          <p className="text-sm text-muted-foreground mt-1 font-mono">{question.id}</p>
-        </div>
-        <QuestionEditor question={question as any} />
+    <div className="flex h-[calc(100vh-4rem)] flex-col overflow-hidden">
+      <div className="shrink-0 border-b border-border bg-card px-6 py-4">
+        <Breadcrumb
+          items={[
+            { label: 'Question Bank', href: ROUTES.admin.knowledgeQuestions },
+            { label: 'Question Editor' },
+          ]}
+        />
       </div>
-
-      {/* Right: Article Context (40%) - Sticky Reference Pane */}
-      <div className="w-[40%] overflow-y-auto bg-surface-light p-6">
-        <div className="mb-4">
-          <Eyebrow>Article Reference</Eyebrow>
+      <div className="flex flex-1 overflow-hidden">
+        {/* Left: Question Editor (60%) */}
+        <div className="w-[60%] overflow-y-auto bg-card p-6">
+          <div className="mb-6">
+            <Eyebrow>Question Moderation</Eyebrow>
+            <h1 className="text-2xl font-bold text-foreground mt-1">Edit Question</h1>
+            <p className="text-sm text-muted-foreground mt-1 font-mono">{question.id}</p>
+          </div>
+          <QuestionEditor question={question as any} />
         </div>
-        {article ? (
-          <div className="space-y-4">
-            <Card className="p-4">
-              <h2 className="text-lg font-bold text-foreground mb-4">{article.title}</h2>
-              <ArticlePreview content={article.content.slice(0, 5000) + (article.content.length > 5000 ? '...' : '')} />
-            </Card>
-            <div className="flex justify-end">
+
+        {/* Right: Article Context (40%) - Sticky Reference Pane */}
+        <div className="w-[40%] overflow-y-auto bg-surface-light p-6">
+          <div className="mb-4">
+            <Eyebrow>Article Reference</Eyebrow>
+          </div>
+          {article ? (
+            <div className="space-y-4">
+              <Card className="p-4">
+                <h2 className="mb-4 text-lg font-bold text-foreground">{article.title}</h2>
+                <ArticlePreview content={article.content.slice(0, 5000) + (article.content.length > 5000 ? '...' : '')} />
+              </Card>
+              <div className="flex justify-end">
               <a 
                 href={`/admin/knowledge/${article.article_id}`}
                 target="_blank"
-                className="text-xs text-camp-cobalt hover:underline font-medium"
+                className="text-xs font-medium text-primary hover:underline"
               >
                 Open Full Article &rarr;
               </a>
+              </div>
             </div>
-          </div>
-        ) : (
-          <div className="h-full flex flex-col items-center justify-center text-center p-8 border-2 border-dashed border-border rounded-lg">
-            <p className="text-sm text-muted-foreground">
-              This question is not currently linked to a primary article.
-            </p>
-            <p className="text-[11px] text-text-tertiary mt-2">
-              Assign a topic linked to an article to enable context-aware moderation.
-            </p>
-          </div>
-        )}
+          ) : (
+            <div className="h-full flex flex-col items-center justify-center rounded-lg border-2 border-dashed border-border bg-card/50 p-8 text-center">
+              <p className="text-sm text-muted-foreground">
+                This question is not currently linked to a primary article.
+              </p>
+              <p className="mt-2 text-[11px] text-text-tertiary">
+                Assign a topic linked to an article to enable context-aware moderation.
+              </p>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   )

@@ -1,49 +1,27 @@
-# Current Task: Wall Configurator v2 Implementation Planning — COMPLETE
+# Current Task: First-Time User Experience (FTUX) Audit & Hardening <!-- updated: 2026-04-10 -->
 
-**STATUS:** PLANNING COMPLETE — READY FOR EXECUTION
-**DATE:** 2026-04-09
+**STATUS:** AUDIT COMPLETE — EXECUTION STARTING
+**DATE:** 2026-04-10
 
-## Active Project: Wall Configurator v2 Full Implementation
+## Active Project: First-Time User Experience (FTUX) Improvements
 
-**Playbook:** `.ai/docs/01-product/wall-configurator-v2-implementation-playbook.md` (v1.2)
-**Consensus:** Architect ITERATE → fixed → Critic APPROVE (8/9)
+**Audit Plan:** `.ai/plans/2026-04-10-First-Time-User-UXUI-Audit.md` (v1.0)
 
-### Shared Infrastructure (Unblocked — Can Start Now)
-- [ ] S.1: Extend GeometryType with 'instanced' variant
-- [ ] S.2: ComputedWallState data channel (React context)
-- [ ] S.3: Add visibleWhen to ParameterDef (target: GenericControlPanel.tsx)
+### Phase 1 — Redirection & Guards (High Priority) — COMPLETE
+- [x] 1.1: Fix Register Redirect — Update `RegisterForm.tsx` to pass `next=/onboarding` <!-- completed: 2026-04-10 -->
+- [x] 1.2: Add Dashboard Onboarding Guard — Update `DashboardLayoutContent.tsx` to check `onboarding_completed_at` <!-- completed: 2026-04-10 -->
+- [x] 1.3: Update Register Page Copy — Align "Continue to see your score" with new user context <!-- completed: 2026-04-10 -->
 
-### Phase 1 — Structural Fidelity (Blocked by S.1–S.3)
-- [ ] 1.1: Constants extraction (wall-constants.ts, wall-constants-performance.ts)
-- [ ] 1.2: Type definitions (wall-types.ts)
-- [ ] 1.3: Extended CoreTypeRegistry (wall-core-registry.ts)
-- [ ] 1.4: Computation engine — ComputedWallState (wall-computation.ts)
-- [ ] 1.5: Shared finish layer builder (wall-geometry-layers.ts)
-- [ ] 1.6: Drywall framing sub-builder (wall-geometry-drywall.ts)
-- [ ] 1.7: CHB reinforcement sub-builder (wall-geometry-chb.ts)
-- [ ] 1.8: Generic sub-builder (wall-geometry-generic.ts)
-- [ ] 1.9: Main geometry dispatcher (wall-geometry.ts)
-- [ ] 1.10: Wire up main config — replace geometry function
-- [ ] 1.11: Expanded violation rules (wall-violations.ts)
-- [ ] 1.12: Expanded presets (wall-presets.ts)
-- [ ] 1.13: Performance dashboard — fire + STC badges
+### Phase 2 — Dashboard Arrival & Empty States — COMPLETE
+- [x] 2.1: Onboarding Calibration UI — Visual feedback during the 3-step setup <!-- completed: 2026-04-10 -->
+- [x] 2.2: Dashboard Welcome State — Conditional "First Step" cards for 0-score users <!-- completed: 2026-04-10 -->
+- [x] 2.3: Skeleton to Helpful State Transition — Replace empty graphs with educational placeholders <!-- completed: 2026-04-10 -->
 
-### Phase 2 — Assembly Understanding (Blocked by Phase 1)
-- [ ] 2.1: Adaptive parameter visibility
-- [ ] 2.2: Core type card selector
-- [ ] 2.3: View mode system
-- [ ] 2.4: Section cut view mode
-- [ ] 2.5: Exploded layer view mode
-- [ ] 2.6: Build sequence animation mode
-- [ ] 2.7: BOM panel component
-- [ ] 2.8: Brick sub-builder
+### Phase 3 — Verification & Analytics — COMPLETE
+- [x] 3.1: Verify end-to-end signup-to-onboarding-to-dashboard path <!-- completed: 2026-04-10 -->
+- [x] 3.2: Add analytics events for onboarding drop-off points <!-- completed: 2026-04-10 -->
 
-### Phase 3 — Advanced Features (Blocked by Phase 2)
-- [ ] 3.1: MEP integration layer
-- [ ] 3.2: Waterproofing layers
-- [ ] 3.3: Wall-to-structure connection details
-- [ ] 3.4: Comparison mode + ComparisonDashboard
-- [ ] 3.5: International wall type comparison
+## Previous Project: First-Time User Experience (FTUX) Audit & Hardening — COMPLETE
 
 ## Previous Project: Admin CMS Audit Implementation — ALL PHASES COMPLETE
 

@@ -3,6 +3,7 @@ import { ROUTES } from '@/lib/routes'
 import { canManageContent } from '@/lib/admin/roles'
 import { UnifiedContentEditor } from '@/components/admin/unified-editor'
 import { createClient } from '@/lib/supabase/server'
+import { Breadcrumb } from '@/components/ui/breadcrumb'
 
 export const metadata = {
   title: 'New Article | SlateCamp Admin',
@@ -39,13 +40,25 @@ const NewContentPage = async () => {
   }
 
   return (
-    <UnifiedContentEditor
-      article={blankArticle as any}
-      questions={[]}
-      eiPrompts={[]}
-      taxonomyNodes={nodes || []}
-      taxonomyLinks={[]}
-    />
+    <div className="flex h-[calc(100vh-4rem)] flex-col overflow-hidden">
+      <div className="shrink-0 border-b border-border bg-card px-6 py-4">
+        <Breadcrumb
+          items={[
+            { label: 'Knowledge Browser', href: ROUTES.admin.knowledge },
+            { label: 'Create Article' },
+          ]}
+        />
+      </div>
+      <div className="flex-1 overflow-hidden">
+        <UnifiedContentEditor
+          article={blankArticle as any}
+          questions={[]}
+          eiPrompts={[]}
+          taxonomyNodes={nodes || []}
+          taxonomyLinks={[]}
+        />
+      </div>
+    </div>
   )
 }
 

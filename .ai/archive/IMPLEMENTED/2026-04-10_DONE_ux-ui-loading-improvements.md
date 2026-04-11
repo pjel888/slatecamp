@@ -131,19 +131,23 @@ These rules are non-negotiable and must be enforced by the codebase AI:
 ## 7. Prioritized Execution Plan (Updated)
 
 ### P0: Trust-Critical (Safety and Data Integrity)
-- [ ] **Admin Save Lock**: Disable sidebar/nav in `UnifiedContentEditor.tsx` during save.
-- [ ] **Auth Form Widths**: Ensure login/register buttons have fixed widths to prevent jump on "Redirecting...".
-- [ ] **MVD Enforcer**: Add a utility for minimum promise duration and apply to `submitAnswer`.
+- [x] **Admin Save Lock**: Disable sidebar/nav in `UnifiedContentEditor.tsx` during save.
+- [x] **Auth Form Widths**: Ensure login/register buttons have fixed widths to prevent jump on "Redirecting...".
+- [x] **MVD Enforcer**: Add a utility for minimum promise duration and apply to `submitAnswer`.
 
 ### P1: Perceived Performance
-- [ ] **Polymorphic Chart Skeletons**: Update `ChartSkeleton.tsx` with specific layouts.
-- [ ] **Wiki Paragraph Skeletons**: Implement varied-width skeletons for article content.
+- [x] **Polymorphic Chart Skeletons**: Update `ChartSkeleton.tsx` with specific layouts.
+- [x] **Wiki Paragraph Skeletons**: Implement varied-width skeletons for article content.
 
 ### P2: Polish
-- [ ] **Step-based Importer**: Update `ArticleQuestionImporter.tsx` with stage feedback.
-- [ ] **Global Save Toast**: Centralize success feedback via a custom hook.
+- [x] **Step-based Importer**: Update `ArticleQuestionImporter.tsx` with stage feedback.
+- [x] **Global Save Toast**: Centralize success feedback via a custom hook.
+
+### P3: Offline Resilience (Final Polish)
+- [x] **Drill Header Sync**: Added dynamic "Syncing / Saved / Offline" indicators to `QuizHeader.tsx`.
+- [x] **Admin Online Guard**: Explicitly disable "Published" status in `ContentBar.tsx` when `isOnline` is false.
 
 ---
 
-*Last Updated: 2026-04-10 (Audit-driven refinement)*
+*Last Updated: 2026-04-10 (Full Implementation Verified)*
 *Author: Gemini CLI*

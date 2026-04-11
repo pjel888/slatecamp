@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
-
-export const metadata: Metadata = { title: 'Reviews — SlateCamp Admin' }
 import { SMEReviewQueue } from '@/components/admin/SMEReviewQueue'
+
+export const metadata: Metadata = { title: 'Reviews â€” SlateCamp Admin' }
 
 export default async function AdminReviewsPage() {
   return (

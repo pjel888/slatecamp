@@ -18,6 +18,7 @@ interface OptionsColumnProps {
   confidenceLevel: 1 | 2 | 3 | null
   feedback: FeedbackData | null
   config: QuizSessionConfig
+  isSubmitting?: boolean
   onSelectOption: (optionId: string) => void
   onConfidenceChange: (level: number) => void
   onSubmit: (signalTrace?: GestureSignalEvent[]) => void

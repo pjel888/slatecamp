@@ -42,8 +42,13 @@ interface DirtyState {
   queueDeleteEIPrompt: (promptId: string) => void
   undoDeleteEIPrompt: (promptId: string) => void
   resetAllDirty: () => void
+  resetArticleDirty: () => void
   resetQuestionDirty: (questionId: string) => void
   resetEIPromptDirty: (promptId: string) => void
+  resetNewQuestion: (tempId: string) => void
+  resetNewEIPrompt: (tempId: string) => void
+  resetDeletedQuestion: (questionId: string) => void
+  resetDeletedEIPrompt: (promptId: string) => void
 }
 
 const DirtyStateContext = createContext<DirtyState | null>(null)
@@ -164,6 +169,8 @@ export const DirtyStateProvider = ({ children }: { children: ReactNode }) => {
     setDeletedEIPrompts(new Set())
   }, [])
 
+  const resetArticleDirty = useCallback(() => setArticleDirty(false), [])
+
   const resetQuestionDirty = useCallback((questionId: string) => {
     setQuestionsDirty((prev) => {
       const next = new Map(prev)
@@ -176,6 +183,30 @@ export const DirtyStateProvider = ({ children }: { children: ReactNode }) => {
     setEIPromptsDirty((prev) => {
       const next = new Map(prev)
       next.delete(promptId)
+      return next
+    })
+  }, [])
+
+  const resetNewQuestion = useCallback((tempId: string) => {
+    setNewQuestions((prev) => prev.filter((q) => q._tempId !== tempId))
+  }, [])
+
+  const resetNewEIPrompt = useCallback((tempId: string) => {
+    setNewEIPrompts((prev) => prev.filter((p) => p._tempId !== tempId))
+  }, [])
+
+  const resetDeletedQuestion = useCallback((id: string) => {
+    setDeletedQuestions((prev) => {
+      const next = new Set(prev)
+      next.delete(id)
+      return next
+    })
+  }, [])
+
+  const resetDeletedEIPrompt = useCallback((id: string) => {
+    setDeletedEIPrompts((prev) => {
+      const next = new Set(prev)
+      next.delete(id)
       return next
     })
   }, [])
@@ -256,8 +287,13 @@ export const DirtyStateProvider = ({ children }: { children: ReactNode }) => {
       queueDeleteEIPrompt,
       undoDeleteEIPrompt,
       resetAllDirty,
+      resetArticleDirty,
       resetQuestionDirty,
       resetEIPromptDirty,
+      resetNewQuestion,
+      resetNewEIPrompt,
+      resetDeletedQuestion,
+      resetDeletedEIPrompt,
     }),
     [
       articleDirty,
@@ -283,8 +319,13 @@ export const DirtyStateProvider = ({ children }: { children: ReactNode }) => {
       queueDeleteEIPrompt,
       undoDeleteEIPrompt,
       resetAllDirty,
+      resetArticleDirty,
       resetQuestionDirty,
       resetEIPromptDirty,
+      resetNewQuestion,
+      resetNewEIPrompt,
+      resetDeletedQuestion,
+      resetDeletedEIPrompt,
     ]
   )
 

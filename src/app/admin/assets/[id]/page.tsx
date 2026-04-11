@@ -4,6 +4,7 @@ import { ROUTES } from '@/lib/routes'
 import { canManageContent } from '@/lib/admin/roles'
 import { getAsset } from '@/lib/actions/admin/assets'
 import { AssetDetailView } from '@/components/admin/AssetDetailView'
+import { Breadcrumb } from '@/components/ui/breadcrumb'
 
 export const metadata: Metadata = { title: 'Asset Detail | SlateCamp Admin' }
 
@@ -19,5 +20,15 @@ export default async function AssetDetailPage({ params }: PageProps) {
   const asset = await getAsset(id)
   if (!asset) notFound()
 
-  return <AssetDetailView asset={asset} />
+  return (
+    <div className="space-y-6">
+      <Breadcrumb
+        items={[
+          { label: 'Structure', href: ROUTES.admin.assets },
+          { label: 'Asset Detail' },
+        ]}
+      />
+      <AssetDetailView asset={asset} />
+    </div>
+  )
 }

@@ -2,6 +2,7 @@
 
 import { useState, useCallback, useRef, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
+import { useSidebar } from '@/components/sidebar/SidebarProvider'
 import { DirtyStateProvider, useDirtyState } from './DirtyStateProvider'
 import { ContentBar } from './ContentBar'
 import { OutlinePanel } from './OutlinePanel'
@@ -41,6 +42,7 @@ const EditorInner = ({
 }: UnifiedContentEditorProps) => {
   const router = useRouter()
   const dirty = useDirtyState()
+  const { setIsLocked } = useSidebar()
 
   // ── Article state ────────────────────────────────────────
   const [title, setTitle] = useState(initialArticle.title)
@@ -78,6 +80,12 @@ const EditorInner = ({
   // ── Save state ───────────────────────────────────────────
   const [isSaving, setIsSaving] = useState(false)
   const [saveError, setSaveError] = useState<string | null>(null)
+
+  // ── Sync Save Lock ───────────────────────────────────────
+  useEffect(() => {
+    setIsLocked(isSaving)
+    return () => setIsLocked(false)
+  }, [isSaving, setIsLocked])
 
   // ── Refs ─────────────────────────────────────────────────
   const editorViewRef = useRef<any>(null)

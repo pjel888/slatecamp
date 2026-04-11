@@ -311,20 +311,23 @@ export const SubjectMasteryCard = ({ data }: SubjectMasteryCardProps) => {
         </p>
 
         {!hasData ? (
-          <EmptyState
-            icon={<Crosshair size={20} />}
-            title="Your mastery shape appears here"
-            description="Complete a quiz session to see how your skills map across subjects."
-            action={
-              <Link
-                href={ROUTES.dashboard.drills}
-                className="inline-flex h-8 items-center justify-center rounded-sm bg-primary px-4 text-xs font-medium text-primary-foreground transition-colors hover:bg-primary/90"
-              >
-                Start a quiz
-              </Link>
-            }
-            className="flex-1"
-          />
+          <div className="flex flex-col items-center justify-center py-8 px-4 text-center space-y-3 flex-1">
+            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/5 text-primary/40">
+              <Crosshair size={20} weight="duotone" />
+            </div>
+            <div className="space-y-1">
+              <p className="text-sm font-bold text-foreground">Your skills map</p>
+              <p className="text-[11px] text-muted-foreground leading-relaxed max-w-[180px]">
+                Finish your first session to see how your knowledge is distributed across the LEA syllabus.
+              </p>
+            </div>
+            <Link
+              href="/quiz?mode=diagnostic"
+              className="mt-2 inline-flex h-8 items-center justify-center rounded-sm bg-primary px-4 text-[11px] font-bold text-white transition-colors hover:bg-primary-700"
+            >
+              Start Diagnostic
+            </Link>
+          </div>
         ) : (
           <div className='w-full max-w-[200px] mx-auto shrink-0'>
             <RadialHeatmap data={data} animated={animated} />
@@ -342,40 +345,54 @@ export const SubjectMasteryCard = ({ data }: SubjectMasteryCardProps) => {
         </p>
 
         <div className='flex flex-col flex-1 min-h-0 justify-evenly'>
-          {data.map((item, i) => {
-            const clamped = Math.max(0, Math.min(100, Math.round(item.mastery)))
-            const barColor = getMasteryColor(clamped, item.questionsAnswered)
-            const label = getMasteryLabel(clamped, item.questionsAnswered)
+          {!hasData ? (
+            <div className="space-y-4 opacity-50">
+              {[1, 2, 3, 4, 5].map((i) => (
+                <div key={i} className="space-y-1.5">
+                  <div className="h-2 w-24 bg-border rounded-full animate-pulse" />
+                  <div className="h-1 w-full bg-border rounded-full" />
+                </div>
+              ))}
+              <p className="text-center text-[10px] text-muted-foreground italic pt-2">
+                Waiting for your first results...
+              </p>
+            </div>
+          ) : (
+            data.map((item, i) => {
+              const clamped = Math.max(0, Math.min(100, Math.round(item.mastery)))
+              const barColor = getMasteryColor(clamped, item.questionsAnswered)
+              const label = getMasteryLabel(clamped, item.questionsAnswered)
 
-            return (
-              <div key={item.subject}>
-                <div className='flex items-center justify-between'>
-                  <span className='text-xs font-medium text-text-primary truncate pr-2'>
-                    {item.subject}
-                  </span>
-                  <span className='text-xs font-semibold text-text-primary tabular-nums shrink-0'>
-                    {clamped}%
+              return (
+                <div key={item.subject}>
+                  <div className='flex items-center justify-between'>
+                    <span className='text-xs font-medium text-text-primary truncate pr-2'>
+                      {item.subject}
+                    </span>
+                    <span className='text-xs font-semibold text-text-primary tabular-nums shrink-0'>
+                      {clamped}%
+                    </span>
+                  </div>
+                  <div className='h-1 w-full bg-card rounded-full overflow-hidden border border-border-design'>
+                    <div
+                      className='h-full rounded-full'
+                      style={{
+                        width: animated ? `${Math.max(clamped, 1)}%` : '0%',
+                        backgroundColor: barColor,
+                        transition: `width 300ms ease-out ${i * 60}ms`,
+                      }}
+                    />
+                  </div>
+                  <span
+                    className='text-[11px] font-medium block leading-tight'
+                    style={{ color: barColor === MASTERY_COLORS.unexplored ? 'var(--muted-foreground)' : barColor }}
+                  >
+                    {label}
                   </span>
                 </div>
-                <div className='h-1 w-full bg-card rounded-full overflow-hidden border border-border-design'>
-                  <div
-                    className='h-full rounded-full'
-                    style={{
-                      width: animated ? `${Math.max(clamped, 1)}%` : '0%',
-                      backgroundColor: barColor,
-                      transition: `width 300ms ease-out ${i * 60}ms`,
-                    }}
-                  />
-                </div>
-                <span
-                  className='text-[11px] font-medium block leading-tight'
-                  style={{ color: barColor === MASTERY_COLORS.unexplored ? 'var(--muted-foreground)' : barColor }}
-                >
-                  {label}
-                </span>
-              </div>
-            )
-          })}
+              )
+            })
+          )}
         </div>
 
         {/* Footer */}

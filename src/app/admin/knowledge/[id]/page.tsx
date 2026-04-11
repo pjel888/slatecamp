@@ -1,6 +1,7 @@
 import { redirect, notFound } from 'next/navigation'
 import { ROUTES } from '@/lib/routes'
 import { canManageContent } from '@/lib/admin/roles'
+import { Breadcrumb } from '@/components/ui/breadcrumb'
 import {
   getArticleFull,
   getArticleTaxonomyNodes,
@@ -39,13 +40,25 @@ const UnifiedEditorPage = async ({ params }: PageProps) => {
   ])
 
   return (
-    <ArticleDetailClient
-      article={article}
-      questions={questions}
-      eiPrompts={eiPrompts}
-      taxonomyNodes={taxonomyNodes}
-      taxonomyLinks={taxonomyLinks}
-    />
+    <div className="flex h-[calc(100vh-4rem)] flex-col overflow-hidden">
+      <div className="shrink-0 border-b border-border bg-card px-6 py-4">
+        <Breadcrumb
+          items={[
+            { label: 'Knowledge Browser', href: ROUTES.admin.knowledge },
+            { label: 'Article Editor' },
+          ]}
+        />
+      </div>
+      <div className="flex-1 overflow-hidden">
+        <ArticleDetailClient
+          article={article}
+          questions={questions}
+          eiPrompts={eiPrompts}
+          taxonomyNodes={taxonomyNodes}
+          taxonomyLinks={taxonomyLinks}
+        />
+      </div>
+    </div>
   )
 }
 

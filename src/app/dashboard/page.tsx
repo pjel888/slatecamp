@@ -24,12 +24,19 @@ import { TransitionPromptServer } from '@/components/dashboard/TransitionPromptS
 import SharedPageLayout from '@/components/layouts/SharedPageLayout'
 import { DashboardAnalyticsSync } from '@/components/dashboard/DashboardAnalyticsSync'
 
+import { WelcomeGuideServer } from '@/components/dashboard/WelcomeGuideServer'
+
 export default async function DashboardPage() {
   return (
     <SharedPageLayout>
       <DashboardAnalyticsSync />
       
       <div className='flex flex-col gap-2 w-full h-full min-h-0 border-0'>
+        {/* ── First-time User Orientation ── */}
+        <Suspense key="welcome-guide" fallback={null}>
+          <WelcomeGuideServer />
+        </Suspense>
+
         {/* ── Professional Mode Transition (passer or opt-in) ── */}
         <Suspense key="transition-prompt" fallback={null}>
           <TransitionPromptServer />

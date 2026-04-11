@@ -18,7 +18,7 @@ const AdminError = ({ error, reset }: ErrorProps) => {
 
   return (
     <div className="flex min-h-[60vh] flex-col items-center justify-center gap-4 p-8">
-      <div className="flex h-12 w-12 items-center justify-center rounded-full bg-destructive-50">
+      <div className="flex h-12 w-12 items-center justify-center rounded-full bg-destructive/10">
         <Warning size={24} className="text-destructive" />
       </div>
       <div className="text-center">
@@ -35,16 +35,12 @@ const AdminError = ({ error, reset }: ErrorProps) => {
         )}
       </div>
       <div className="flex gap-3">
-        <Button
-          onClick={reset}
-          size="sm"
-          className="bg-camp-cobalt text-white hover:bg-primary-700"
-        >
+        <Button onClick={reset} size="sm">
           Try again
         </Button>
         <Link href={ROUTES.admin.root}>
           <Button variant="outline" size="sm">
-            Back to Dashboard
+            Back to Admin
           </Button>
         </Link>
       </div>

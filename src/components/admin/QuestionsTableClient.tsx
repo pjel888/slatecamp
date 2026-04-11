@@ -10,6 +10,7 @@ import { QuestionQualityBadges } from '@/components/admin/QuestionQualityBadges'
 import { QuestionQuickPreview } from '@/components/admin/QuestionQuickPreview'
 import { BulkActionBar } from '@/components/admin/BulkActionBar'
 import { bulkDeleteQuestions } from '@/lib/actions/admin/bulk'
+import { toast } from '@/lib/hooks/use-toast'
 import { cn } from '@/lib/utils'
 import { TaxonomyTree, type TaxonomyTreeNode } from '@/components/shared/taxonomy-tree'
 
@@ -116,7 +117,7 @@ const QuestionRow = ({
           {question.topic_id && (
             <Link
               href={`/admin/knowledge?topic=${question.topic_id}&view=articles`}
-              className="whitespace-nowrap text-xs text-camp-cobalt hover:text-primary-700 transition-colors duration-150"
+              className="whitespace-nowrap text-xs text-primary transition-colors duration-150 hover:text-primary-700"
               onClick={(e) => e.stopPropagation()}
               title="Open content editor to view this question in article context"
             >
@@ -391,11 +392,27 @@ export const QuestionsTableClient = ({
 
   const handleBulkDelete = async () => {
     const idsToDelete = [...selectedKeys]
+    if (idsToDelete.length === 0) {
+      return
+    }
+
     const result = await bulkDeleteQuestions(idsToDelete)
     if (result.error) {
+      toast({
+        title: 'Delete failed',
+        description: result.error,
+        variant: 'error',
+      })
       throw new Error(result.error)
     }
+
     setSelectedKeys(new Set())
+    router.refresh()
+    toast({
+      title: 'Questions deleted',
+      description: `${idsToDelete.length} ${idsToDelete.length === 1 ? 'question was' : 'questions were'} removed.`,
+      variant: 'success',
+    })
   }
 
   const handleNodeSelect = useCallback(async (nodeId: string | null) => {
@@ -456,12 +473,12 @@ export const QuestionsTableClient = ({
 
       {/* Two-panel layout */}
       <div className={cn(
-        "flex border border-border rounded-md overflow-hidden bg-white flex-1",
-        externalSelectedNodeId !== undefined ? "border-none" : ""
+        'flex flex-1 overflow-hidden rounded-md border border-border bg-card',
+        externalSelectedNodeId !== undefined ? 'border-none' : '',
       )}>
         {/* Left panel: unified taxonomy tree (only if not external) */}
         {externalSelectedNodeId === undefined && (
-          <div className="w-[300px] shrink-0 border-r border-border overflow-hidden flex flex-col">
+          <div className="flex w-[300px] shrink-0 flex-col overflow-hidden border-r border-border">
             <TaxonomyTree
               nodes={taxonomyTree}
               onSelect={(id) => handleNodeSelect(id)}
@@ -482,20 +499,20 @@ export const QuestionsTableClient = ({
           {showEmptyPrompt ? (
             <div className="flex h-full items-center justify-center p-8">
               <div className="text-center">
-                <CaretRight size={32} weight="duotone" className="mx-auto mb-3 text-[#D4DAE3]" />
-                <p className="text-sm font-medium text-[#1A2332]">Select a subject or article</p>
-                <p className="mt-1 text-[11px] text-[#8896A7]">
+                <CaretRight size={32} weight="duotone" className="mx-auto mb-3 text-border" />
+                <p className="text-sm font-medium text-foreground">Select a subject or article</p>
+                <p className="mt-1 text-[11px] text-muted-foreground">
                   Browse the taxonomy tree on the left to view questions by topic
                 </p>
               </div>
             </div>
           ) : nodeLoading ? (
             <div className="flex h-full items-center justify-center p-8">
-              <p className="text-sm text-[#8896A7]">Loading questions...</p>
+              <p className="text-sm text-muted-foreground">Loading questions...</p>
             </div>
           ) : displayGroups.length === 0 ? (
             <div className="flex h-full items-center justify-center p-8">
-              <p className="text-sm text-[#8896A7]">No questions found for the selected topic</p>
+              <p className="text-sm text-muted-foreground">No questions found for the selected topic</p>
             </div>
           ) : (
             <div className="space-y-2 p-3">
@@ -522,21 +539,21 @@ export const QuestionsTableClient = ({
       {/* Pagination */}
       {externalSelectedNodeId === undefined && totalPages > 1 && (
         <div className="flex items-center justify-between px-1 shrink-0 py-2">
-          <p className="text-sm text-[#8896A7]">
+          <p className="text-sm text-muted-foreground">
             Page {page} of {totalPages.toLocaleString()} &mdash; {totalCount.toLocaleString()} total questions
           </p>
           <div className="flex items-center gap-2">
             <button
               onClick={() => navigateTo(page - 1)}
               disabled={page <= 1}
-              className="rounded-sm border border-[#D4DAE3] px-3 py-1.5 text-sm text-[#4A5568] transition-colors duration-150 hover:bg-[#F8F7F5] disabled:cursor-not-allowed disabled:opacity-40"
+              className="rounded-sm border border-border px-3 py-1.5 text-sm text-text-secondary transition-colors duration-150 hover:bg-background disabled:cursor-not-allowed disabled:opacity-40"
             >
               Previous
             </button>
             <button
               onClick={() => navigateTo(page + 1)}
               disabled={page >= totalPages}
-              className="rounded-sm border border-[#D4DAE3] px-3 py-1.5 text-sm text-[#4A5568] transition-colors duration-150 hover:bg-[#F8F7F5] disabled:cursor-not-allowed disabled:opacity-40"
+              className="rounded-sm border border-border px-3 py-1.5 text-sm text-text-secondary transition-colors duration-150 hover:bg-background disabled:cursor-not-allowed disabled:opacity-40"
             >
               Next
             </button>

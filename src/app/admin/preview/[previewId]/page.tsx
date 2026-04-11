@@ -1,4 +1,4 @@
-import { notFound } from 'next/navigation'
+import { notFound, redirect } from 'next/navigation'
 import { Suspense } from 'react'
 import { createServerClient } from '@supabase/ssr'
 import { cookies } from 'next/headers'
@@ -10,6 +10,8 @@ import { getSubjectName } from '@/types/testing'
 import { estimateReadingTime } from '@/lib/wiki-markdown'
 import { getTeachBackCriteria } from '@/lib/actions/teach-back'
 import type { TaxonomyNode } from '@/lib/actions/taxonomy'
+import { ROUTES } from '@/lib/routes'
+import { getUserRole } from '@/lib/admin/roles'
 
 const mapDifficulty = (level?: number | null): 'Foundational' | 'Intermediate' | 'Advanced' => {
   if (!level || level <= 1) return 'Foundational'
@@ -38,6 +40,15 @@ async function getRelatedTopics(node: TaxonomyNode | null, supabase: any): Promi
  * fallbacks where appropriate.
  */
 export default async function PreviewPage(props: { params: Promise<{ previewId: string }> }) {
+  const role = await getUserRole()
+  if (!role) {
+    redirect(ROUTES.admin.login)
+  }
+
+  if (role !== 'super_admin' && role !== 'content_admin') {
+    redirect(ROUTES.dashboard.root)
+  }
+
   const params = await props.params
   const previewId = params.previewId
 
@@ -62,8 +73,10 @@ export default async function PreviewPage(props: { params: Promise<{ previewId: 
   if (draftError || !draft) {
     return (
       <div className="flex flex-col items-center justify-center p-12 text-center h-full">
-        <h2 className="text-xl font-bold text-slate-800">Preview Not Found or Expired</h2>
-        <p className="text-slate-600 mt-2">Please close this window and generate a new preview from the editor.</p>
+        <h2 className="text-xl font-bold text-foreground">Preview Not Found or Expired</h2>
+        <p className="mt-2 text-muted-foreground">
+          Please close this window and generate a new preview from the editor.
+        </p>
       </div>
     )
   }
@@ -152,8 +165,8 @@ export default async function PreviewPage(props: { params: Promise<{ previewId: 
         <main className="flex-1 min-w-0 flex flex-col h-full relative">
           <div id="wiki-center-pane" className="flex-1 overflow-y-auto">
             <div className="max-w-4xl mx-auto px-8 py-8">
-              <div className="mb-4 bg-amber-50 rounded-sm border border-amber-200 px-4 py-2 text-[11px] text-amber-800 flex items-center shadow-sm">
-                <span className="font-semibold mr-1">Draft Preview Mode:</span> This is a live preview of your unsaved editor content. Read tracking and analytics are disabled.
+              <div className="mb-4 flex items-center rounded-sm border border-warning/30 bg-warning/10 px-4 py-2 text-[11px] text-warning shadow-sm">
+                <span className="mr-1 font-semibold">Draft Preview Mode:</span> This is a live preview of your unsaved editor content. Read tracking and analytics are disabled.
               </div>
               
               <WikiArticleHero

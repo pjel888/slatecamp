@@ -17,11 +17,10 @@ export default function RegisterPage() {
             {siteConfig.name}
           </Link>
           <h1 className='mt-6 text-xl font-semibold leading-tight text-foreground'>
-            Continue to see your score
+            Let&apos;s build your study trail
           </h1>
           <p className='mt-2 text-sm leading-relaxed text-muted-foreground'>
-            Create a free account to save your Readiness Score and start
-            your study trail.
+            Create your account to start your personalized LEA plan and track your readiness progress.
           </p>
         </div>
 
