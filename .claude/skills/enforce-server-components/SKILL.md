@@ -1,6 +1,9 @@
 ---
 name: enforce-server-components
-description: Enforces Next.js 16 and React 19 patterns in Cerebro: Server Components by default, client at leaf nodes, no useEffect for data fetching. Use when adding or refactoring pages, layouts, or data-dependent UI.
+description: >
+  Enforces Next.js 16 and React 19 patterns in Cerebro: Server Components by default,
+  client at leaf nodes, and no useEffect for initial data fetching. Use when adding or
+  refactoring pages, layouts, or data-dependent UI.
 ---
 
 # Enforce Server Components
@@ -18,7 +21,7 @@ description: Enforces Next.js 16 and React 19 patterns in Cerebro: Server Compon
 - Do not add `'use client'` unless the component needs client-only behavior.
 - Fetch data in RSC with async/await; pass data as props to children.
 
-### 2. When to add 'use client'
+### 2. When to add `'use client'`
 
 Only when the component (or a child) needs:
 
