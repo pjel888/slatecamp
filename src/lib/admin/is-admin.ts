@@ -1,6 +1,7 @@
 // Re-export from roles.ts for backward compatibility
 // The old email-based logic is now handled internally by roles.ts
 export { isAdmin, isSuperAdmin, canManageContent, canReviewContent, getUserRole, type UserRole } from './roles';
+export { canSeeDevToolbar, canUseInternalTierBypass } from './access-policy';
 
 /**
  * Check if the current user is an admin by checking auth metadata or email domain.

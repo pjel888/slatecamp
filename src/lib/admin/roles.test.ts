@@ -2,12 +2,29 @@ import { beforeEach, describe, expect, mock, test } from 'bun:test'
 
 // Mock Supabase client
 const mockGetUser = mock(() => Promise.resolve({ data: { user: null }, error: null }))
-const mockFrom = mock(() => ({
-  select: () => mockFrom(),
-  eq: () => mockFrom(),
-  order: () => mockFrom(),
-  limit: () => mockFrom(),
-  single: () => Promise.resolve({ data: null, error: null }),
+
+let mockProfileRole: string | null = null
+let mockDbRole: string | null = null
+
+const makeQueryResult = (table: string) => {
+  const role = table === 'profiles' ? mockProfileRole : table === 'user_roles' ? mockDbRole : null
+  return {
+    data: role ? { role } : null,
+    error: null,
+  }
+}
+
+const mockFrom = mock((table: string) => ({
+  select: () => ({
+    eq: () => ({
+      order: () => ({
+        limit: () => ({
+          maybeSingle: () => Promise.resolve(makeQueryResult(table)),
+        }),
+      }),
+      maybeSingle: () => Promise.resolve(makeQueryResult(table)),
+    }),
+  }),
 }))
 
 mock.module('@/lib/supabase/server', () => ({
@@ -24,13 +41,15 @@ const {
   isSuperAdmin, 
   canManageContent, 
   canReviewContent, 
-  canManageUsers 
+  canManageUsers,
 } = await import('./roles')
 
 describe('Admin Roles', () => {
   beforeEach(() => {
     mockGetUser.mockClear()
     mockFrom.mockClear()
+    mockProfileRole = null
+    mockDbRole = null
     // Reset env vars
     process.env.ADMIN_EMAILS = ''
     // process.env.NODE_ENV = 'test' (Read-only)
@@ -46,35 +65,48 @@ describe('Admin Roles', () => {
 
     test('returns role from database when present', async () => {
       mockGetUser.mockResolvedValue({ data: { user: { id: 'user-1', email: 'test@example.com' } }, error: null })
-      mockFrom.mockReturnValue({
-        select: () => ({
-          eq: () => ({
-            order: () => ({
-              limit: () => ({
-                single: () => Promise.resolve({ data: { role: 'content_admin' }, error: null })
-              })
-            })
-          })
-        })
-      } as any)
+      mockDbRole = 'content_admin'
 
       const role = await getUserRole()
       expect(role).toBe('content_admin')
     })
 
+    test('returns role from auth metadata before database fallbacks', async () => {
+      mockGetUser.mockResolvedValue({
+        data: {
+          user: {
+            id: 'user-1',
+            email: 'dev@example.com',
+            app_metadata: { role: 'developer' },
+          },
+        },
+        error: null,
+      })
+
+      const role = await getUserRole()
+      expect(role).toBe('developer')
+    })
+
+    test('returns role from profile when auth metadata is empty', async () => {
+      mockGetUser.mockResolvedValue({
+        data: {
+          user: {
+            id: 'user-1',
+            email: 'dev@example.com',
+            app_metadata: {},
+            user_metadata: {},
+          },
+        },
+        error: null,
+      })
+      mockProfileRole = 'ceo'
+
+      const role = await getUserRole()
+      expect(role).toBe('ceo')
+    })
+
     test('falls back to legacy ADMIN_EMAILS when no DB role exists', async () => {
       mockGetUser.mockResolvedValue({ data: { user: { id: 'user-1', email: 'admin@slatecamp.com' } }, error: null })
-      mockFrom.mockReturnValue({
-        select: () => ({
-          eq: () => ({
-            order: () => ({
-              limit: () => ({
-                single: () => Promise.resolve({ data: null, error: { message: 'No rows' } })
-              })
-            })
-          })
-        })
-      } as any)
 
       process.env.ADMIN_EMAILS = 'admin@slatecamp.com, other@test.com'
       const role = await getUserRole()
@@ -82,18 +114,17 @@ describe('Admin Roles', () => {
     })
 
     test('returns null when neither DB role nor legacy email matches', async () => {
-      mockGetUser.mockResolvedValue({ data: { user: { id: 'user-1', email: 'user@example.com' } }, error: null })
-      mockFrom.mockReturnValue({
-        select: () => ({
-          eq: () => ({
-            order: () => ({
-              limit: () => ({
-                single: () => Promise.resolve({ data: null, error: { message: 'No rows' } })
-              })
-            })
-          })
-        })
-      } as any)
+      mockGetUser.mockResolvedValue({
+        data: {
+          user: {
+            id: 'user-1',
+            email: 'user@example.com',
+            app_metadata: {},
+            user_metadata: {},
+          },
+        },
+        error: null,
+      })
 
       process.env.ADMIN_EMAILS = 'admin@slatecamp.com'
       const role = await getUserRole()
@@ -113,17 +144,7 @@ describe('Admin Roles', () => {
   describe('Permission Helpers', () => {
     const mockRole = (role: string | null) => {
       mockGetUser.mockResolvedValue({ data: { user: { id: 'user-1' } }, error: null })
-      mockFrom.mockReturnValue({
-        select: () => ({
-          eq: () => ({
-            order: () => ({
-              limit: () => ({
-                single: () => Promise.resolve({ data: role ? { role } : null, error: role ? null : { message: 'No rows' } })
-              })
-            })
-          })
-        })
-      } as any)
+      mockDbRole = role
     }
 
     test('isAdmin returns true for super_admin and content_admin', async () => {
