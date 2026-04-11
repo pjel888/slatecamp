@@ -1,12 +1,18 @@
 # State: Memory
 
-**Last Updated:** 2026-04-09  
+**Last Updated:** 2026-04-11  
 **Purpose:** Accumulated verified facts across sessions - survives session resets
 
 ---
 
 ## Decisions
 
+- [2026-04-11] Enterprise verdict on the current entitlement and developer-mode platform: **not enterprise-grade**. The architecture is transitional, with multiple active entitlement models and no single canonical entitlement resolver in universal use.
+- [2026-04-11] The feature-gate and developer-mode source-of-truth product spec now exists at `.ai/docs/01-product/010-Feature-Gate-And-Developer-Feature-Specification.md`.
+- [2026-04-11] Feature-gate and developer-mode documentation should live in a single combined product spec at `.ai/docs/01-product/010-Feature-Gate-And-Developer-Feature-Specification.md`, not split docs. Reason: identity resolution, policy helpers, effective tier, dev flags, and enforcement behavior are coupled in code.
+- [2026-04-11] `src/lib/admin/access-policy.ts` is the explicit surface-policy layer for internal tooling visibility and internal tier bypass. `src/lib/admin/roles.ts` remains the identity-resolution layer.
+- [2026-04-11] `sme_reviewer` is intentionally excluded from `canSeeDevToolbar()` and `canUseInternalTierBypass()` by default. Reason: content review is not equivalent to platform-debug access.
+- [2026-04-11] The current entitlement architecture is mixed-state: some surfaces use effective tier + policy helpers, while residual surfaces still use raw subscription checks. Product documentation must state that explicitly.
 - [2026-04-10] Admin CMS revalidation MUST include revalidateTag(CACHE_TAGS.wiki, 'max') for all wiki article mutations to ensure student-view consistency. Implemented in content.ts, pipeline.ts, and bulk.ts.
 - [2026-04-10] updateQuestion server action is consolidated in src/lib/actions/admin/questions.ts and supports both standalone and unified editor data shapes (including options normalization).
 - [2026-04-10] Offline detection in SaveAllBar uses navigator.onLine to prevent data loss during connectivity issues.
@@ -799,4 +805,3 @@
 - **Forensic Integrity Verified:** Confirmed absence of credibility-weakening typos (SAMLED, SAMOLED).
 - **Claim Status Sync:** All `PROVEN` claims in the Ledger now match the exact grep-derived evidence.
 - **File-Occurrence Distinction:** All proof tables now explicitly separate unique file counts from total statement occurrences.
-

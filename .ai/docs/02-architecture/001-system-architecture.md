@@ -188,3 +188,26 @@ Session refresh handled in `middleware.ts` at root.
 - `02-architecture/004-api-reference.md` — Server actions and API routes
 - `03-design/001-design-system.md` — Design tokens from globals.css
 
+---
+
+## Entitlement Architecture (2026-04-11 execution update)
+
+Canonical entitlement flow:
+
+`request/session -> resolveRole -> applyPolicy -> resolveEntitlements -> enforce route/action -> emit audit event`
+
+Canonical boundary:
+- `src/lib/entitlements/resolve-role.ts`
+- `src/lib/entitlements/policy.ts`
+- `src/lib/entitlements/resolve-entitlements.ts`
+- `src/lib/entitlements/get-viewer-entitlements.ts`
+- `src/lib/entitlements/audit.ts`
+
+Compatibility wrappers remain in `src/lib/admin/*`, `src/lib/paywall/check-access.ts`, and `src/lib/subscription/get-tier.ts` during migration.
+
+Governance:
+- `scripts/check-entitlement-legacy-usage.ts`
+- `bun run check:entitlements`
+
+The detector currently exists to prevent new raw-tier, raw-role, and raw `target_tier` logic from being introduced outside the canonical entitlement boundary.
+
