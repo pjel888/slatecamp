@@ -6,6 +6,7 @@ import { revalidatePath, revalidateTag } from 'next/cache'
 import { CACHE_TAGS } from '../cache-tags'
 import { sanitizeMDX } from '@/lib/wiki-markdown'
 import { ROUTES } from '@/lib/routes'
+import { logServerError } from '@/lib/logging/server'
 
 // ─── MDX Preview Compilation ─────────────────────────────────
 
@@ -313,7 +314,21 @@ export const importQuestionsForArticle = async (
   questionsJson: string
 ) => {
   const authorized = await canManageContent()
-  if (!authorized) throw new Error('Unauthorized: insufficient permissions')
+  if (!authorized) {
+    await logServerError({
+      family: 'admin',
+      eventName: 'content_import_questions_unauthorized',
+      message: 'Unauthorized attempt to import article questions.',
+      context: {
+        routeOrAction: 'admin:content.importQuestions',
+        metadata: {
+          articleId,
+          topicId,
+        },
+      },
+    })
+    throw new Error('Unauthorized: insufficient permissions')
+  }
 
   let parsedQuestions: ImportedQuestion[]
   try {
@@ -337,7 +352,20 @@ export const importQuestionsForArticle = async (
     .select('question_id')
 
   if (error) {
-    console.error('Error importing questions:', error)
+    await logServerError({
+      family: 'admin',
+      eventName: 'content_import_questions_failed',
+      message: 'Failed to import article questions.',
+      context: {
+        routeOrAction: 'admin:content.importQuestions',
+        metadata: {
+          articleId,
+          topicId,
+          importCount: transformedQuestions.length,
+        },
+      },
+      error,
+    })
     return { error, importedCount: 0 }
   }
 
@@ -415,7 +443,20 @@ export const updateArticleFull = async (
   }
 ) => {
   const authorized = await canManageContent()
-  if (!authorized) throw new Error('Unauthorized: insufficient permissions')
+  if (!authorized) {
+    await logServerError({
+      family: 'admin',
+      eventName: 'content_update_article_unauthorized',
+      message: 'Unauthorized attempt to update full article content.',
+      context: {
+        routeOrAction: 'admin:content.updateArticleFull',
+        metadata: {
+          articleId: id,
+        },
+      },
+    })
+    throw new Error('Unauthorized: insufficient permissions')
+  }
 
   const supabase = createAdminClient()
   
@@ -429,20 +470,90 @@ export const updateArticleFull = async (
     })
     .eq('article_id', id)
 
-  if (articleError) return { error: articleError }
+  if (articleError) {
+    await logServerError({
+      family: 'admin',
+      eventName: 'content_update_article_failed',
+      message: 'Failed to update article content.',
+      context: {
+        routeOrAction: 'admin:content.updateArticleFull',
+        metadata: {
+          articleId: id,
+        },
+      },
+      error: articleError,
+    })
+    return { error: articleError }
+  }
 
   // 2. Update taxonomy mapping if node_id provided
   if (node_id !== undefined) {
     if (node_id) {
       // Delete old mapping and insert new primary mapping
-      await supabase.from('wiki_article_taxonomy').delete().eq('article_id', id)
-      await supabase.from('wiki_article_taxonomy').insert({
+      const { error: deleteMappingError } = await supabase
+        .from('wiki_article_taxonomy')
+        .delete()
+        .eq('article_id', id)
+
+      if (deleteMappingError) {
+        await logServerError({
+          family: 'admin',
+          eventName: 'content_update_article_taxonomy_delete_failed',
+          message: 'Failed to remove existing taxonomy mapping for article update.',
+          context: {
+            routeOrAction: 'admin:content.updateArticleFull',
+            metadata: {
+              articleId: id,
+            },
+          },
+          error: deleteMappingError,
+        })
+        return { error: deleteMappingError }
+      }
+
+      const { error: insertMappingError } = await supabase.from('wiki_article_taxonomy').insert({
         article_id: id,
         node_id: node_id,
         is_primary: true
       })
+
+      if (insertMappingError) {
+        await logServerError({
+          family: 'admin',
+          eventName: 'content_update_article_taxonomy_insert_failed',
+          message: 'Failed to create taxonomy mapping for article update.',
+          context: {
+            routeOrAction: 'admin:content.updateArticleFull',
+            metadata: {
+              articleId: id,
+              nodeId: node_id,
+            },
+          },
+          error: insertMappingError,
+        })
+        return { error: insertMappingError }
+      }
     } else {
-      await supabase.from('wiki_article_taxonomy').delete().eq('article_id', id)
+      const { error: deleteMappingError } = await supabase
+        .from('wiki_article_taxonomy')
+        .delete()
+        .eq('article_id', id)
+
+      if (deleteMappingError) {
+        await logServerError({
+          family: 'admin',
+          eventName: 'content_update_article_taxonomy_delete_failed',
+          message: 'Failed to clear taxonomy mapping for article update.',
+          context: {
+            routeOrAction: 'admin:content.updateArticleFull',
+            metadata: {
+              articleId: id,
+            },
+          },
+          error: deleteMappingError,
+        })
+        return { error: deleteMappingError }
+      }
     }
   }
 
@@ -473,7 +584,20 @@ export const createEIPrompt = async (data: {
   status?: string
 }) => {
   const authorized = await canManageContent()
-  if (!authorized) throw new Error('Unauthorized: insufficient permissions')
+  if (!authorized) {
+    await logServerError({
+      family: 'admin',
+      eventName: 'content_create_ei_prompt_unauthorized',
+      message: 'Unauthorized attempt to create an EI prompt.',
+      context: {
+        routeOrAction: 'admin:content.createEIPrompt',
+        metadata: {
+          articleId: data.article_id,
+        },
+      },
+    })
+    throw new Error('Unauthorized: insufficient permissions')
+  }
 
   const supabase = createAdminClient()
   const { data: newPrompt, error } = await supabase
@@ -493,6 +617,21 @@ export const createEIPrompt = async (data: {
     .select('prompt_id')
     .single()
 
+  if (error) {
+    await logServerError({
+      family: 'admin',
+      eventName: 'content_create_ei_prompt_failed',
+      message: 'Failed to create an EI prompt.',
+      context: {
+        routeOrAction: 'admin:content.createEIPrompt',
+        metadata: {
+          articleId: data.article_id,
+        },
+      },
+      error,
+    })
+  }
+
   return { data: newPrompt, error }
 }
 
@@ -510,7 +649,20 @@ export const updateEIPrompt = async (
   }
 ) => {
   const authorized = await canManageContent()
-  if (!authorized) throw new Error('Unauthorized: insufficient permissions')
+  if (!authorized) {
+    await logServerError({
+      family: 'admin',
+      eventName: 'content_update_ei_prompt_unauthorized',
+      message: 'Unauthorized attempt to update an EI prompt.',
+      context: {
+        routeOrAction: 'admin:content.updateEIPrompt',
+        metadata: {
+          promptId,
+        },
+      },
+    })
+    throw new Error('Unauthorized: insufficient permissions')
+  }
 
   const supabase = createAdminClient()
   const { error } = await supabase
@@ -521,19 +673,62 @@ export const updateEIPrompt = async (
     })
     .eq('prompt_id', promptId)
 
+  if (error) {
+    await logServerError({
+      family: 'admin',
+      eventName: 'content_update_ei_prompt_failed',
+      message: 'Failed to update an EI prompt.',
+      context: {
+        routeOrAction: 'admin:content.updateEIPrompt',
+        metadata: {
+          promptId,
+        },
+      },
+      error,
+    })
+  }
+
   return { error }
 }
 
 /** Delete an EI prompt */
 export const deleteEIPrompt = async (promptId: string) => {
   const authorized = await canManageContent()
-  if (!authorized) throw new Error('Unauthorized: insufficient permissions')
+  if (!authorized) {
+    await logServerError({
+      family: 'admin',
+      eventName: 'content_delete_ei_prompt_unauthorized',
+      message: 'Unauthorized attempt to delete an EI prompt.',
+      context: {
+        routeOrAction: 'admin:content.deleteEIPrompt',
+        metadata: {
+          promptId,
+        },
+      },
+    })
+    throw new Error('Unauthorized: insufficient permissions')
+  }
 
   const supabase = createAdminClient()
   const { error } = await supabase
     .from('wiki_ei_prompts')
     .delete()
     .eq('prompt_id', promptId)
+
+  if (error) {
+    await logServerError({
+      family: 'admin',
+      eventName: 'content_delete_ei_prompt_failed',
+      message: 'Failed to delete an EI prompt.',
+      context: {
+        routeOrAction: 'admin:content.deleteEIPrompt',
+        metadata: {
+          promptId,
+        },
+      },
+      error,
+    })
+  }
 
   return { error }
 }

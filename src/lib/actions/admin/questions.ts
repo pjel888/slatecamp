@@ -5,6 +5,7 @@ import { createClient } from "@/lib/supabase/server";
 import { revalidatePath } from "next/cache";
 import { canManageContent } from "@/lib/admin/roles";
 import { ROUTES } from "@/lib/routes";
+import { logServerError } from "@/lib/logging/server";
 
 interface CreateQuestionInput {
   text: string
@@ -24,7 +25,20 @@ interface CreateQuestionInput {
 
 export async function deleteQuestions(ids: string[]) {
   const authorized = await canManageContent()
-  if (!authorized) throw new Error('Unauthorized: insufficient permissions')
+  if (!authorized) {
+    await logServerError({
+      family: 'admin',
+      eventName: 'questions_delete_many_unauthorized',
+      message: 'Unauthorized attempt to bulk delete questions.',
+      context: {
+        routeOrAction: 'admin:questions.deleteMany',
+        metadata: {
+          questionCount: ids.length,
+        },
+      },
+    })
+    throw new Error('Unauthorized: insufficient permissions')
+  }
 
   const supabase = createAdminClient();
 
@@ -38,20 +52,75 @@ export async function deleteQuestions(ids: string[]) {
     revalidatePath(ROUTES.admin.knowledge);
   }
 
+  if (error) {
+    await logServerError({
+      family: 'admin',
+      eventName: 'questions_delete_many_failed',
+      message: 'Failed to bulk delete questions.',
+      context: {
+        routeOrAction: 'admin:questions.deleteMany',
+        metadata: {
+          questionCount: ids.length,
+        },
+      },
+      error,
+    })
+  }
+
   return { error };
 }
 
 export async function createQuestion(data: CreateQuestionInput) {
   const authorized = await canManageContent()
-  if (!authorized) throw new Error('Unauthorized: insufficient permissions')
+  if (!authorized) {
+    await logServerError({
+      family: 'admin',
+      eventName: 'questions_create_unauthorized',
+      message: 'Unauthorized attempt to create a question.',
+      context: {
+        routeOrAction: 'admin:questions.create',
+      },
+    })
+    throw new Error('Unauthorized: insufficient permissions')
+  }
 
   if (!data.text || typeof data.text !== 'string' || data.text.trim().length === 0) {
+    await logServerError({
+      family: 'admin',
+      eventName: 'questions_create_validation_failed',
+      message: 'Question creation validation failed for text.',
+      context: {
+        routeOrAction: 'admin:questions.create',
+      },
+      error: new Error('Validation error: text is required and must be a non-empty string'),
+      persist: false,
+    })
     throw new Error('Validation error: text is required and must be a non-empty string')
   }
   if (!Array.isArray(data.options) || data.options.length !== 4) {
+    await logServerError({
+      family: 'admin',
+      eventName: 'questions_create_validation_failed',
+      message: 'Question creation validation failed for options.',
+      context: {
+        routeOrAction: 'admin:questions.create',
+      },
+      error: new Error('Validation error: options must be an array with exactly 4 items'),
+      persist: false,
+    })
     throw new Error('Validation error: options must be an array with exactly 4 items')
   }
   if (!data.topic_id || typeof data.topic_id !== 'string' || data.topic_id.trim().length === 0) {
+    await logServerError({
+      family: 'admin',
+      eventName: 'questions_create_validation_failed',
+      message: 'Question creation validation failed for topic_id.',
+      context: {
+        routeOrAction: 'admin:questions.create',
+      },
+      error: new Error('Validation error: topic_id is required'),
+      persist: false,
+    })
     throw new Error('Validation error: topic_id is required')
   }
 
@@ -66,11 +135,6 @@ export async function createQuestion(data: CreateQuestionInput) {
     const correctOpt = data.options.find(o => o.is_correct)
     if (correctOpt) {
       finalCorrectOptionId = correctOpt.id || 'A'
-    } else {
-      const correctIdx = data.options.findIndex(o => o.is_correct)
-      if (correctIdx >= 0) {
-        finalCorrectOptionId = ['A', 'B', 'C', 'D'][correctIdx]
-      }
     }
   }
 
@@ -81,7 +145,7 @@ export async function createQuestion(data: CreateQuestionInput) {
   }))
 
   // Create clean object for DB insert
-  const { options, correct_option_id, ...rest } = data
+  const { options: _options, correct_option_id: _correctOptionId, ...rest } = data
   
   const { error } = await supabase
     .from('questions')
@@ -97,12 +161,41 @@ export async function createQuestion(data: CreateQuestionInput) {
     revalidatePath(ROUTES.admin.knowledge);
   }
 
+  if (error) {
+    await logServerError({
+      family: 'admin',
+      eventName: 'questions_create_failed',
+      message: 'Failed to create question.',
+      context: {
+        routeOrAction: 'admin:questions.create',
+        userId: user?.id ?? null,
+        metadata: {
+          topicId: data.topic_id,
+        },
+      },
+      error,
+    })
+  }
+
   return { error };
 }
 
 export const updateQuestion = async (id: string, data: Partial<CreateQuestionInput>) => {
   const authorized = await canManageContent()
-  if (!authorized) throw new Error('Unauthorized: insufficient permissions')
+  if (!authorized) {
+    await logServerError({
+      family: 'admin',
+      eventName: 'questions_update_unauthorized',
+      message: 'Unauthorized attempt to update a question.',
+      context: {
+        routeOrAction: 'admin:questions.update',
+        metadata: {
+          questionId: id,
+        },
+      },
+    })
+    throw new Error('Unauthorized: insufficient permissions')
+  }
 
   const authClient = await createClient()
   const { data: { user } } = await authClient.auth.getUser()
@@ -118,11 +211,6 @@ export const updateQuestion = async (id: string, data: Partial<CreateQuestionInp
       const correctOpt = data.options.find(o => o.is_correct)
       if (correctOpt) {
         finalCorrectOptionId = correctOpt.id || 'A'
-      } else {
-        const correctIdx = data.options.findIndex(o => o.is_correct)
-        if (correctIdx >= 0) {
-          finalCorrectOptionId = ['A', 'B', 'C', 'D'][correctIdx]
-        }
       }
     }
 
@@ -134,10 +222,6 @@ export const updateQuestion = async (id: string, data: Partial<CreateQuestionInp
       id: o.id || ['A', 'B', 'C', 'D'][i],
       text: o.text
     }))
-    
-    // Remove correct_option_id from data if it was used to avoid duplicate in spread if it's already in updateData
-    delete updateData.correct_option_id_input // Wait, I didn't use that. 
-    // Just ensure we don't have conflicting keys.
   }
 
   const { error } = await supabase
@@ -150,12 +234,41 @@ export const updateQuestion = async (id: string, data: Partial<CreateQuestionInp
     revalidatePath(ROUTES.admin.knowledge);
   }
 
+  if (error) {
+    await logServerError({
+      family: 'admin',
+      eventName: 'questions_update_failed',
+      message: 'Failed to update question.',
+      context: {
+        routeOrAction: 'admin:questions.update',
+        userId: user?.id ?? null,
+        metadata: {
+          questionId: id,
+        },
+      },
+      error,
+    })
+  }
+
   return { error };
 }
 
 export const deleteQuestion = async (id: string) => {
   const authorized = await canManageContent()
-  if (!authorized) throw new Error('Unauthorized: insufficient permissions')
+  if (!authorized) {
+    await logServerError({
+      family: 'admin',
+      eventName: 'questions_delete_unauthorized',
+      message: 'Unauthorized attempt to delete a question.',
+      context: {
+        routeOrAction: 'admin:questions.deleteOne',
+        metadata: {
+          questionId: id,
+        },
+      },
+    })
+    throw new Error('Unauthorized: insufficient permissions')
+  }
 
   const supabase = createAdminClient();
 
@@ -167,6 +280,21 @@ export const deleteQuestion = async (id: string) => {
   if (!error) {
     revalidatePath(ROUTES.admin.knowledgeQuestions);
     revalidatePath(ROUTES.admin.knowledge);
+  }
+
+  if (error) {
+    await logServerError({
+      family: 'admin',
+      eventName: 'questions_delete_failed',
+      message: 'Failed to delete question.',
+      context: {
+        routeOrAction: 'admin:questions.deleteOne',
+        metadata: {
+          questionId: id,
+        },
+      },
+      error,
+    })
   }
 
   return { error };

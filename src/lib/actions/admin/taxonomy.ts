@@ -6,7 +6,7 @@ import { revalidatePath, revalidateTag } from 'next/cache'
 import { canManageContent } from '@/lib/admin/roles'
 import { z } from 'zod'
 import { CACHE_TAGS } from '../cache-tags'
-import { ROUTES } from '@/lib/routes'
+import { logServerError } from '@/lib/logging/server'
 
 export const getTaxonomyNodes = async () => {
   const supabase = await createClient()
@@ -32,10 +32,38 @@ const updateNodeSchema = z.object({
 
 export const updateTaxonomyNode = async (id: string, data: { name: string }) => {
   const authorized = await canManageContent()
-  if (!authorized) throw new Error('Unauthorized: insufficient permissions')
+  if (!authorized) {
+    await logServerError({
+      family: 'admin',
+      eventName: 'taxonomy_update_unauthorized',
+      message: 'Unauthorized attempt to update taxonomy node.',
+      context: {
+        routeOrAction: 'admin:taxonomy.update',
+        metadata: {
+          nodeId: id,
+        },
+      },
+    })
+    throw new Error('Unauthorized: insufficient permissions')
+  }
 
   const parsed = updateNodeSchema.safeParse(data)
-  if (!parsed.success) throw new Error(parsed.error.issues[0].message)
+  if (!parsed.success) {
+    await logServerError({
+      family: 'admin',
+      eventName: 'taxonomy_update_validation_failed',
+      message: 'Taxonomy update validation failed.',
+      context: {
+        routeOrAction: 'admin:taxonomy.update',
+        metadata: {
+          nodeId: id,
+        },
+      },
+      error: new Error(parsed.error.issues[0].message),
+      persist: false,
+    })
+    throw new Error(parsed.error.issues[0].message)
+  }
 
   const supabase = createAdminClient()
 
@@ -47,6 +75,21 @@ export const updateTaxonomyNode = async (id: string, data: { name: string }) => 
   if (!error) {
     revalidateTag(CACHE_TAGS.taxonomy, 'max')
     revalidatePath('/admin/taxonomy')
+  }
+
+  if (error) {
+    await logServerError({
+      family: 'admin',
+      eventName: 'taxonomy_update_failed',
+      message: 'Failed to update taxonomy node.',
+      context: {
+        routeOrAction: 'admin:taxonomy.update',
+        metadata: {
+          nodeId: id,
+        },
+      },
+      error,
+    })
   }
 
   return { error }
@@ -68,10 +111,32 @@ export const createTaxonomyNode = async (data: {
   sort_order?: number
 }) => {
   const authorized = await canManageContent()
-  if (!authorized) throw new Error('Unauthorized: insufficient permissions')
+  if (!authorized) {
+    await logServerError({
+      family: 'admin',
+      eventName: 'taxonomy_create_unauthorized',
+      message: 'Unauthorized attempt to create taxonomy node.',
+      context: {
+        routeOrAction: 'admin:taxonomy.create',
+      },
+    })
+    throw new Error('Unauthorized: insufficient permissions')
+  }
 
   const parsed = createNodeSchema.safeParse(data)
-  if (!parsed.success) throw new Error(parsed.error.issues[0].message)
+  if (!parsed.success) {
+    await logServerError({
+      family: 'admin',
+      eventName: 'taxonomy_create_validation_failed',
+      message: 'Taxonomy creation validation failed.',
+      context: {
+        routeOrAction: 'admin:taxonomy.create',
+      },
+      error: new Error(parsed.error.issues[0].message),
+      persist: false,
+    })
+    throw new Error(parsed.error.issues[0].message)
+  }
 
   const supabase = createAdminClient()
 
@@ -107,12 +172,41 @@ export const createTaxonomyNode = async (data: {
     revalidatePath('/admin/taxonomy')
   }
 
+  if (error) {
+    await logServerError({
+      family: 'admin',
+      eventName: 'taxonomy_create_failed',
+      message: 'Failed to create taxonomy node.',
+      context: {
+        routeOrAction: 'admin:taxonomy.create',
+        metadata: {
+          disciplineId: parsed.data.discipline_id,
+          level: parsed.data.level,
+        },
+      },
+      error,
+    })
+  }
+
   return { data: newNode, error }
 }
 
 export const deleteTaxonomyNode = async (id: string) => {
   const authorized = await canManageContent()
-  if (!authorized) throw new Error('Unauthorized: insufficient permissions')
+  if (!authorized) {
+    await logServerError({
+      family: 'admin',
+      eventName: 'taxonomy_delete_unauthorized',
+      message: 'Unauthorized attempt to delete taxonomy node.',
+      context: {
+        routeOrAction: 'admin:taxonomy.delete',
+        metadata: {
+          nodeId: id,
+        },
+      },
+    })
+    throw new Error('Unauthorized: insufficient permissions')
+  }
 
   const supabase = createAdminClient()
 
@@ -124,6 +218,21 @@ export const deleteTaxonomyNode = async (id: string) => {
   if (!error) {
     revalidateTag(CACHE_TAGS.taxonomy, 'max')
     revalidatePath('/admin/taxonomy')
+  }
+
+  if (error) {
+    await logServerError({
+      family: 'admin',
+      eventName: 'taxonomy_delete_failed',
+      message: 'Failed to delete taxonomy node.',
+      context: {
+        routeOrAction: 'admin:taxonomy.delete',
+        metadata: {
+          nodeId: id,
+        },
+      },
+      error,
+    })
   }
 
   return { error }

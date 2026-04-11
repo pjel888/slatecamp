@@ -805,3 +805,22 @@
 - **Forensic Integrity Verified:** Confirmed absence of credibility-weakening typos (SAMLED, SAMOLED).
 - **Claim Status Sync:** All `PROVEN` claims in the Ledger now match the exact grep-derived evidence.
 - **File-Occurrence Distinction:** All proof tables now explicitly separate unique file counts from total statement occurrences.
+## 2026-04-12 01:30 Error Logging Rollout Checkpoint
+
+- Implemented phase-1 error logging rollout from `.ai/plans/2026-04-12-Error-Logging-Implementation-Plan.md`.
+- Added shared logging layer under `src/lib/logging/` with edge-safe and server-side paths.
+- Backfilled official spec at `.ai/docs/01-product/011-Error-Logging-Feature-Specification.md`.
+- Integrated first-wave logging into:
+  - `src/lib/supabase/middleware.ts`
+  - `src/lib/actions/quiz-v2/start-session.ts`
+  - `src/lib/actions/quiz-v2/submit-answer.ts`
+  - admin mutation cluster
+  - payment webhooks
+  - Developer logs page
+- Added focused regression tests including combined changed-suite coverage.
+- Fresh evidence before follow-up work:
+  - combined changed-suite Bun test pass
+  - `bun run type-check` pass
+  - `bun run build` pass
+  - targeted ESLint pass on changed files
+- Remaining repo-wide lint failures are outside rollout scope and live in pre-existing external/generated areas.

@@ -9,6 +9,7 @@ import {
   canAccessDeveloperPortalForRole,
 } from "@/lib/entitlements/policy";
 import { logEntitlementAuditEvent } from "@/lib/entitlements/audit";
+import { logEdgeError } from "@/lib/logging/edge";
 
 export const updateSession = async (request: NextRequest) => {
   const response = NextResponse.next({ request });
@@ -60,7 +61,29 @@ export const updateSession = async (request: NextRequest) => {
     }
   );
 
-  const { data: { user } } = await supabase.auth.getUser();
+  let user = null;
+
+  try {
+    const {
+      data: { user: resolvedUser },
+    } = await supabase.auth.getUser();
+    user = resolvedUser;
+  } catch (error) {
+    logEdgeError({
+      family: 'auth',
+      eventName: 'middleware_get_user_failed',
+      message: 'Failed to refresh auth session in middleware.',
+      context: {
+        traceId: globalThis.crypto.randomUUID(),
+        routeOrAction: `middleware:${pathname}`,
+        metadata: {
+          method: request.method,
+          hostname: request.nextUrl.hostname,
+        },
+      },
+      error,
+    });
+  }
 
   const redirectWithCookies = (path: string) => {
     const res = NextResponse.redirect(new URL(path, request.url));

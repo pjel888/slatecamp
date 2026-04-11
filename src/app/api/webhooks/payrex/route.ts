@@ -4,6 +4,7 @@ import { createAdminClient } from "@/lib/supabase/admin";
 import { getPayRex } from "@/lib/payrex/config";
 import { tierFromAmount } from "@/lib/payments/provider";
 import { FEATURE_PAYMENTS_ENABLED } from "@/lib/constants/feature-flags";
+import { logServerError, logServerEvent } from "@/lib/logging/server";
 
 export async function POST(request: Request) {
   if (!FEATURE_PAYMENTS_ENABLED) {
@@ -19,6 +20,16 @@ export async function POST(request: Request) {
   const signature = headersList.get("payrex-signature");
 
   if (!signature) {
+    await logServerEvent({
+      severity: 'warn',
+      family: 'billing',
+      eventName: 'payrex_missing_signature',
+      message: 'PayRex webhook request missing signature header.',
+      context: {
+        routeOrAction: 'api:webhooks.payrex',
+        provider: 'payrex',
+      },
+    });
     return NextResponse.json({ error: "No signature" }, { status: 400 });
   }
 
@@ -35,6 +46,16 @@ export async function POST(request: Request) {
       process.env.PAYREX_WEBHOOK_SECRET!
     );
   } catch {
+    await logServerEvent({
+      severity: 'warn',
+      family: 'billing',
+      eventName: 'payrex_invalid_signature',
+      message: 'PayRex webhook signature validation failed.',
+      context: {
+        routeOrAction: 'api:webhooks.payrex',
+        provider: 'payrex',
+      },
+    });
     return NextResponse.json({ error: "Invalid signature" }, { status: 400 });
   }
 
@@ -50,6 +71,20 @@ export async function POST(request: Request) {
     .maybeSingle();
 
   if (alreadyProcessed) {
+    await logServerEvent({
+      severity: 'info',
+      family: 'billing',
+      eventName: 'payrex_event_replayed',
+      message: 'PayRex webhook replay detected.',
+      context: {
+        routeOrAction: 'api:webhooks.payrex',
+        provider: 'payrex',
+        eventId,
+        metadata: {
+          eventType: event.type,
+        },
+      },
+    });
     return NextResponse.json({ received: true, idempotent: true });
   }
 
@@ -64,7 +99,7 @@ export async function POST(request: Request) {
     const tier = VALID_TIERS.includes(rawTier as any) ? rawTier : 'pro';
 
     if (userId) {
-      await supabase
+      const { error: updateError } = await supabase
         .from("user_subscriptions")
         .update({
           tier,
@@ -72,15 +107,52 @@ export async function POST(request: Request) {
           updated_at: new Date().toISOString(),
         })
         .eq("user_id", userId);
+
+      if (updateError) {
+        await logServerError({
+          family: 'billing',
+          eventName: 'payrex_subscription_update_failed',
+          message: 'Failed to update user subscription from PayRex webhook.',
+          context: {
+            routeOrAction: 'api:webhooks.payrex',
+            provider: 'payrex',
+            eventId,
+            userId,
+            metadata: {
+              eventType: event.type,
+              tier,
+              amountCents,
+            },
+          },
+          error: updateError,
+        });
+      }
     }
   }
 
   // Mark event as processed
-  await supabase.from('processed_webhook_events').insert({
+  const { error: processedError } = await supabase.from('processed_webhook_events').insert({
     provider: 'payrex',
     event_id: eventId,
     event_type: event.type,
   });
+
+  if (processedError) {
+    await logServerError({
+      family: 'billing',
+      eventName: 'payrex_processed_event_insert_failed',
+      message: 'Failed to mark PayRex webhook event as processed.',
+      context: {
+        routeOrAction: 'api:webhooks.payrex',
+        provider: 'payrex',
+        eventId,
+        metadata: {
+          eventType: event.type,
+        },
+      },
+      error: processedError,
+    });
+  }
 
   return NextResponse.json({ received: true });
 }

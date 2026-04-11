@@ -21,6 +21,7 @@ import {
   logEntitlementAuditEvent,
   serializeOverrideState,
 } from '@/lib/entitlements/audit'
+import { logServerError } from '@/lib/logging/server'
 
 const DB_TEST_MODE_BY_APP_MODE: Record<StartSessionInput['mode'], string> = {
   camp: 'camp',
@@ -59,12 +60,15 @@ const issueSessionNonces = async (
 export const startSession = async (
   input: StartSessionInput,
 ): Promise<StartSessionResult> => {
+  let userId: string | null = null
+
   try {
     const parsedInput = startSessionInputSchema.parse(input)
     const dbTestMode = DB_TEST_MODE_BY_APP_MODE[parsedInput.mode]
     const {
       data: { user },
     } = await getUser()
+    userId = user?.id ?? null
 
     if (!user) {
       return {
@@ -292,7 +296,21 @@ export const startSession = async (
       sessionKey,
     }
   } catch (error) {
-    console.error('[quiz-v2/start-session] Failed:', error)
+    await logServerError({
+      family: 'quiz',
+      eventName: 'start_session_failed',
+      message: 'Failed to start quiz session.',
+      context: {
+        routeOrAction: 'quiz-v2:start-session',
+        userId,
+        metadata: {
+          mode: input.mode,
+          trailDayId: input.trailDayId ?? null,
+        },
+      },
+      error,
+    })
+
     return {
       success: false as const,
       error: 'UNKNOWN' as const,

@@ -73,3 +73,42 @@ Produce a hard-nosed principal/staff-level review of:
 
 - `bun run type-check`
 - `bun run build`
+
+---
+
+## Current Checkpoint: Error Logging Rollout
+
+### Status
+
+- Phase-1 error logging rollout is implemented and architect-approved.
+- Official feature spec is now populated at `.ai/docs/01-product/011-Error-Logging-Feature-Specification.md`.
+- Shared logging layer added under `src/lib/logging/`.
+- First-wave integrations landed in middleware, quiz-v2, admin mutations, payment webhooks, and Developer logs.
+
+### Verified Evidence
+
+- Combined changed-suite Bun run passes:
+  - `src/lib/logging/server.test.ts`
+  - `src/lib/supabase/middleware.test.ts`
+  - `src/lib/actions/quiz-v2/start-session.test.ts`
+  - `src/lib/actions/quiz-v2/submit-answer.test.ts`
+  - `src/lib/actions/admin/content.test.ts`
+  - `src/lib/actions/admin/questions.test.ts`
+  - `src/lib/actions/admin/wiki.test.ts`
+  - `src/app/api/webhooks/lemonsqueezy/route.test.ts`
+  - `src/app/api/webhooks/payrex/route.test.ts`
+- `bun run type-check`
+- `bun run build`
+- Targeted ESLint on changed implementation and test files
+
+### Known Residuals
+
+- Full repo `bun run lint` still fails in pre-existing external/generated areas outside the error-logging rollout scope.
+- User requested broader follow-up after the rollout:
+  - checkpoint commit(s)
+  - keep `.ai/state` updated
+  - address remaining repo-wide cleanup and related follow-up work
+
+### Next Step
+
+- Create checkpoint commit for the finished phase-1 rollout, then inspect and reduce the unrelated repo-wide lint failures without regressing the newly added logging work.

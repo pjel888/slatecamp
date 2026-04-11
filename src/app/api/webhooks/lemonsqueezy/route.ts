@@ -4,6 +4,7 @@ import { createAdminClient } from "@/lib/supabase/admin";
 import { getLemonSqueezy } from "@/lib/lemonsqueezy/config";
 import { FEATURE_PAYMENTS_ENABLED } from "@/lib/constants/feature-flags";
 import type { UserTier } from "@/types/app";
+import { logServerError, logServerEvent } from "@/lib/logging/server";
 
 export async function POST(request: Request) {
   if (!FEATURE_PAYMENTS_ENABLED) {
@@ -19,13 +20,21 @@ export async function POST(request: Request) {
   const sig = headersList.get("x-signature");
 
   if (!sig) {
+    await logServerEvent({
+      severity: 'warn',
+      family: 'billing',
+      eventName: 'lemonsqueezy_missing_signature',
+      message: 'LemonSqueezy webhook request missing signature header.',
+      context: {
+        routeOrAction: 'api:webhooks.lemonsqueezy',
+        provider: 'lemonsqueezy',
+      },
+    });
     return NextResponse.json({ error: "No signature" }, { status: 400 });
   }
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   let event: any;
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const ls = getLemonSqueezy() as any;
   if (!ls) {
     return NextResponse.json({ error: "LemonSqueezy not configured" }, { status: 503 });
@@ -38,6 +47,16 @@ export async function POST(request: Request) {
       process.env.LEMONSQUEEZY_WEBHOOK_SECRET!
     );
   } catch {
+    await logServerEvent({
+      severity: 'warn',
+      family: 'billing',
+      eventName: 'lemonsqueezy_invalid_signature',
+      message: 'LemonSqueezy webhook signature validation failed.',
+      context: {
+        routeOrAction: 'api:webhooks.lemonsqueezy',
+        provider: 'lemonsqueezy',
+      },
+    });
     return NextResponse.json(
       { error: "Invalid signature" },
       { status: 400 }
@@ -56,6 +75,20 @@ export async function POST(request: Request) {
     .maybeSingle();
 
   if (alreadyProcessed) {
+    await logServerEvent({
+      severity: 'info',
+      family: 'billing',
+      eventName: 'lemonsqueezy_event_replayed',
+      message: 'LemonSqueezy webhook replay detected.',
+      context: {
+        routeOrAction: 'api:webhooks.lemonsqueezy',
+        provider: 'lemonsqueezy',
+        eventId,
+        metadata: {
+          eventType: event.type,
+        },
+      },
+    });
     return NextResponse.json({ received: true, idempotent: true });
   }
 
@@ -84,7 +117,26 @@ export async function POST(request: Request) {
         })
         .eq("user_id", userId);
 
-      if (error) console.error("Subscription update error:", error);
+      if (error) {
+        await logServerError({
+          family: 'billing',
+          eventName: 'lemonsqueezy_subscription_update_failed',
+          message: 'Failed to update user subscription from LemonSqueezy webhook.',
+          context: {
+            routeOrAction: 'api:webhooks.lemonsqueezy',
+            provider: 'lemonsqueezy',
+            eventId,
+            userId: userId || null,
+            metadata: {
+              eventType: event.type,
+              subscriptionId,
+              customerId,
+              tier,
+            },
+          },
+          error,
+        });
+      }
 
       // Funnel event: pro_subscribed
       if (userId) {
@@ -113,12 +165,28 @@ export async function POST(request: Request) {
   }
 
   // Mark event as processed
-  await supabase.from('processed_webhook_events').insert({
+  const { error: processedError } = await supabase.from('processed_webhook_events').insert({
     provider: 'lemonsqueezy',
     event_id: eventId,
     event_type: event.type,
   });
 
+  if (processedError) {
+    await logServerError({
+      family: 'billing',
+      eventName: 'lemonsqueezy_processed_event_insert_failed',
+      message: 'Failed to mark LemonSqueezy webhook event as processed.',
+      context: {
+        routeOrAction: 'api:webhooks.lemonsqueezy',
+        provider: 'lemonsqueezy',
+        eventId,
+        metadata: {
+          eventType: event.type,
+        },
+      },
+      error: processedError,
+    });
+  }
+
   return NextResponse.json({ received: true });
 }
-

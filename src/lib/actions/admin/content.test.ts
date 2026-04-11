@@ -29,6 +29,11 @@ mock.module('next/cache', () => ({
   revalidatePath: mockRevalidatePath,
 }))
 
+const logServerErrorMock = mock(() => Promise.resolve())
+mock.module('@/lib/logging/server', () => ({
+  logServerError: logServerErrorMock,
+}))
+
 // Re-import to use mocked modules
 const { updateArticleFull } = await import('./content')
 
@@ -40,6 +45,7 @@ describe('Admin Content Actions', () => {
     mockCanManageContent.mockClear()
     mockRevalidateTag.mockClear()
     mockRevalidatePath.mockClear()
+    logServerErrorMock.mockClear()
   })
 
   describe('updateArticleFull', () => {
@@ -82,7 +88,7 @@ describe('Admin Content Actions', () => {
     test('throws error if not authorized', async () => {
       mockCanManageContent.mockResolvedValue(false)
       
-      expect(updateArticleFull('art-1', {})).rejects.toThrow('Unauthorized')
+      await expect(updateArticleFull('art-1', {})).rejects.toThrow('Unauthorized')
     })
   })
 })

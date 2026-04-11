@@ -15,8 +15,8 @@ const createServiceClientMock = mock(() => {
     in: () => mockQuery,
   }
   return Promise.resolve({ 
-    rpc: (name: string) => mockQuery,
-    from: (table: string) => mockQuery,
+    rpc: (_name: string) => mockQuery,
+    from: (_table: string) => mockQuery,
   })
 })
 const getUserMock = mock(() =>
@@ -31,6 +31,8 @@ const classifyErrorDiagnosticMock = mock()
 const classifyAndStoreErrorMock = mock()
 const runPostInteractionHooksMock = mock()
 const endSessionActionMock = mock()
+const logServerErrorMock = mock(() => Promise.resolve())
+const logServerEventMock = mock(() => Promise.resolve())
 
 mock.module('@/lib/supabase/server', () => ({
   createServiceClient: createServiceClientMock,
@@ -48,6 +50,11 @@ mock.module('./classify-and-store-error', () => ({
 
 mock.module('@/lib/actions/mastery/post-interaction-hooks', () => ({
   runPostInteractionHooks: runPostInteractionHooksMock,
+}))
+
+mock.module('@/lib/logging/server', () => ({
+  logServerError: logServerErrorMock,
+  logServerEvent: logServerEventMock,
 }))
 
 mock.module('./end-session', () => ({
@@ -102,6 +109,8 @@ describe('submitAnswer', () => {
     classifyAndStoreErrorMock.mockReset()
     runPostInteractionHooksMock.mockReset()
     endSessionActionMock.mockReset()
+    logServerErrorMock.mockClear()
+    logServerEventMock.mockClear()
   })
 
   test('returns immediate feedback and triggers background hooks on success', async () => {
@@ -190,13 +199,6 @@ describe('submitAnswer', () => {
   test('falls back gracefully when RPC fails', async () => {
     getOwnedSessionOrThrowMock.mockResolvedValue(baseSession)
     
-    const rpcMock = mock(() => ({
-      single: () => Promise.resolve({
-        data: null,
-        error: { message: 'Method not found', code: 'P0001' }
-      })
-    }))
-
     const upsertMock = mock(() => ({
       select: () => ({
         single: () => Promise.resolve({ data: { interaction_id: 'int-fallback' }, error: null })
@@ -238,5 +240,31 @@ describe('submitAnswer', () => {
     expect(result.answeredCount).toBe(1)
     expect(upsertMock).toHaveBeenCalled()
     expect(updateMock).toHaveBeenCalled()
+  })
+
+  test('logs and rethrows fatal failures at the action boundary', async () => {
+    getUserMock.mockResolvedValue({
+      data: {
+        user: { id: 'user-1' },
+      },
+    })
+
+    getOwnedSessionOrThrowMock.mockRejectedValue(new Error('session missing'))
+
+    createServiceClientMock.mockReturnValue(Promise.resolve({
+      rpc: () => ({
+        single: () => Promise.resolve({ data: null, error: null }),
+      }),
+      from: () => ({
+        select: () => ({
+          eq: () => ({
+            single: () => Promise.resolve({ data: baseQuestion, error: null }),
+          }),
+        }),
+      }),
+    }))
+
+    await expect(submitAnswer(baseInput)).rejects.toThrow('session missing')
+    expect(logServerErrorMock).toHaveBeenCalledTimes(1)
   })
 })

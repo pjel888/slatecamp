@@ -26,6 +26,7 @@ import type {
 } from '@/types/quiz-config'
 import type { QuestionMatchData } from '@/lib/quiz/answer-matching'
 import type { CAGEBindingToken } from '@/types/patent'
+import { logServerError, logServerEvent } from '@/lib/logging/server'
 
 interface SessionRow {
   session_id: string
@@ -83,6 +84,8 @@ const loadWikiSlug = async (supabase: any, topicId: string | null) => {
 export const submitAnswer = async (
   input: SubmitAnswerInput,
 ): Promise<SubmitAnswerResult> => {
+  let userId: string | null = null
+
   try {
     const parsedInput = submitAnswerInputSchema.parse(input)
 
@@ -91,6 +94,8 @@ export const submitAnswer = async (
       getUser(),
       createServiceClient(),
     ])
+
+    userId = user?.id ?? null
 
     if (!user) throw new Error('Unauthorized')
 
@@ -356,7 +361,21 @@ export const submitAnswer = async (
             })
 
             if (error) {
-              console.error('[submitAnswer] Failed to store signal trace:', error)
+              await logServerError({
+                family: 'quiz',
+                eventName: 'signal_trace_store_failed',
+                message: 'Failed to store quiz signal trace.',
+                context: {
+                  routeOrAction: 'quiz-v2:submit-answer',
+                  userId,
+                  sessionId: parsedInput.sessionId,
+                  metadata: {
+                    questionId: parsedInput.questionId,
+                    interactionId,
+                  },
+                },
+                error,
+              })
             }
           })(),
         )
@@ -380,7 +399,21 @@ export const submitAnswer = async (
                   token,
                   trustLevel: 'unavailable',
                 })
-                console.warn('[CAGE] Session key unavailable, skipping verification')
+                await logServerEvent({
+                  severity: 'warn',
+                  family: 'quiz',
+                  eventName: 'cage_session_key_unavailable',
+                  message: 'CAGE session key unavailable; verification skipped.',
+                  context: {
+                    routeOrAction: 'quiz-v2:submit-answer',
+                    userId,
+                    sessionId: parsedInput.sessionId,
+                    metadata: {
+                      questionId: parsedInput.questionId,
+                      interactionId,
+                    },
+                  },
+                })
                 return
               }
 
@@ -399,10 +432,22 @@ export const submitAnswer = async (
                 trustLevel: result.trustLevel as 'verified' | 'failed',
                 failureReasons: result.failureReasons.length > 0 ? result.failureReasons : undefined,
               })
-
-              console.log(`[CAGE] session=${parsedInput.sessionId} status=${result.trustLevel} reasons=${result.failureReasons.join(',')}`)
             } catch (err) {
-              console.error('[CAGE] Verification pipeline failed:', err)
+              await logServerError({
+                family: 'quiz',
+                eventName: 'cage_verification_failed',
+                message: 'CAGE verification pipeline failed.',
+                context: {
+                  routeOrAction: 'quiz-v2:submit-answer',
+                  userId,
+                  sessionId: parsedInput.sessionId,
+                  metadata: {
+                    questionId: parsedInput.questionId,
+                    interactionId,
+                  },
+                },
+                error: err,
+              })
             }
           })(),
         )
@@ -444,7 +489,20 @@ export const submitAnswer = async (
       try {
         await runPostSubmitWork()
       } catch (error) {
-        console.error('[submitAnswer] Background hooks failed:', error)
+        await logServerError({
+          family: 'quiz',
+          eventName: 'submit_answer_background_hooks_failed',
+          message: 'Quiz background hooks failed after answer submission.',
+          context: {
+            routeOrAction: 'quiz-v2:submit-answer',
+            userId,
+            sessionId: parsedInput.sessionId,
+            metadata: {
+              questionId: parsedInput.questionId,
+            },
+          },
+          error,
+        })
       }
     })
 
@@ -464,7 +522,21 @@ export const submitAnswer = async (
       }),
     }
   } catch (error) {
-    console.error('[quiz-v2/submit-answer] Failed:', error)
+    await logServerError({
+      family: 'quiz',
+      eventName: 'submit_answer_failed',
+      message: 'Failed to submit quiz answer.',
+      context: {
+        routeOrAction: 'quiz-v2:submit-answer',
+        userId,
+        sessionId: input.sessionId,
+        metadata: {
+          questionId: input.questionId,
+        },
+      },
+      error,
+    })
+
     throw error
   }
 }
