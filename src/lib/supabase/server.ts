@@ -39,7 +39,9 @@ export const createClient = cache(async () => {
 
   const cookieStore = await cookies()
   const isDevBypass = process.env.NODE_ENV === 'development' && !!process.env.DEV_FORCE_USER_ID
-  const key = isDevBypass ? (process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!) : process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+  const key = isDevBypass 
+    ? (process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!) 
+    : process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
 
   return createServerClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,

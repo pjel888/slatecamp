@@ -1,4 +1,6 @@
 import { createClient } from '@/lib/supabase/server'
+import { createAdminClient } from '@/lib/supabase/admin'
+import { formatSupabaseError } from '@/lib/supabase/format-error'
 import { FILTER_TYPE_MAP } from '@/types/notifications'
 import type {
   Notification,
@@ -39,7 +41,7 @@ export const fetchNotifications = async (
     if (error) throw error
     return { data: data as Notification[], error: null }
   } catch (err) {
-    console.error('[NOTIFICATIONS] fetchNotifications:', err)
+    console.error('[NOTIFICATIONS] fetchNotifications:', formatSupabaseError(err))
     return { data: null, error: 'Failed to load notifications.' }
   }
 }
@@ -48,10 +50,11 @@ export const fetchNotificationPreferences = async (
   userId: string
 ): Promise<QueryResult<NotificationPreferences>> => {
   try {
-    const supabase = await createClient()
+    // Force admin client for debugging
+    const supabase = createAdminClient()
+
     const { data, error } = await supabase
-      .from('notification_preferences')
-      .select(
+      .from('notification_preferences')      .select(
         'score_changes, trail_ready, blindspot, milestones, campfire, ' +
         'content_updates, weekly_digest, coaching_tips, billing, ' +
         'daily_digest, quiet_hours_start, quiet_hours_end'
@@ -73,9 +76,9 @@ export const fetchNotificationPreferences = async (
       }
     }
 
-    return { data: data as NotificationPreferences, error: null }
+    return { data: data as unknown as NotificationPreferences, error: null }
   } catch (err) {
-    console.error('[NOTIFICATIONS] fetchPreferences:', err)
+    console.error('[NOTIFICATIONS] fetchPreferences:', formatSupabaseError(err))
     return { data: null, error: 'Failed to load notification preferences.' }
   }
 }

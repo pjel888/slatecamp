@@ -2,6 +2,7 @@
 
 import { createAdminClient } from "@/lib/supabase/admin";
 import { isDemoMode } from "@/lib/demo/config";
+import { formatSupabaseError } from "@/lib/supabase/format-error";
 
 /**
  * Bootstraps a user by ensuring they have necessary records in the new schema.
@@ -34,7 +35,7 @@ export const bootstrapUser = async (
 
   const disciplineId = discipline?.discipline_id ?? ARCHITECTURE_ID;
   if (!discipline?.discipline_id) {
-    console.warn("Default discipline 'Architecture' not found via query, using fallback ID.", discError || "No data");
+    console.warn("Default discipline 'Architecture' not found via query, using fallback ID.", discError ? formatSupabaseError(discError) : "No data");
   }
 
   // All three upserts are independent — run in parallel
@@ -65,15 +66,15 @@ export const bootstrapUser = async (
   ]);
 
   if (subError) {
-    console.error("Error upserting subscription:", JSON.stringify(subError, null, 2));
+    console.error("Error upserting subscription:", formatSupabaseError(subError));
     throw new Error(`Bootstrap failed: could not create user subscription — ${subError.message}`);
   }
   if (statsError) {
-    console.error("Error upserting stats:", JSON.stringify(statsError, null, 2));
+    console.error("Error upserting stats:", formatSupabaseError(statsError));
     throw new Error(`Bootstrap failed: could not create user global stats — ${statsError.message}`);
   }
   if (profileError) {
-    console.error("Error upserting profile:", JSON.stringify(profileError, null, 2));
+    console.error("Error upserting profile:", formatSupabaseError(profileError));
     throw new Error(`Bootstrap failed: could not create user profile — ${profileError.message}`);
   }
 };
