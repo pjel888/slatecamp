@@ -5,7 +5,7 @@ import { createAdminClient } from '@/lib/supabase/admin'
 import { revalidatePath } from 'next/cache'
 import { canManageContent } from '@/lib/admin/roles'
 import { z } from 'zod'
-import { ROUTES } from '@/lib/routes'
+import { logServerError } from '@/lib/logging/server'
 
 export const getAssets = async () => {
   const supabase = await createClient()
@@ -57,10 +57,32 @@ export const createAsset = async (data: {
   metadata: object
 }) => {
   const authorized = await canManageContent()
-  if (!authorized) throw new Error('Unauthorized: insufficient permissions')
+  if (!authorized) {
+    await logServerError({
+      family: 'admin',
+      eventName: 'assets_create_unauthorized',
+      message: 'Unauthorized attempt to create a 3D asset.',
+      context: {
+        routeOrAction: 'admin:assets.create',
+      },
+    })
+    throw new Error('Unauthorized: insufficient permissions')
+  }
 
   const parsed = createAssetSchema.safeParse(data)
-  if (!parsed.success) throw new Error(parsed.error.issues[0].message)
+  if (!parsed.success) {
+    await logServerError({
+      family: 'admin',
+      eventName: 'assets_create_validation_failed',
+      message: 'Asset creation validation failed.',
+      context: {
+        routeOrAction: 'admin:assets.create',
+      },
+      error: new Error(parsed.error.issues[0].message),
+      persist: false,
+    })
+    throw new Error(parsed.error.issues[0].message)
+  }
 
   const authClient = await createClient()
   const { data: { user } } = await authClient.auth.getUser()
@@ -85,12 +107,38 @@ export const createAsset = async (data: {
     revalidatePath('/admin/assets')
   }
 
+  if (error) {
+    await logServerError({
+      family: 'admin',
+      eventName: 'assets_create_failed',
+      message: 'Failed to create a 3D asset.',
+      context: {
+        routeOrAction: 'admin:assets.create',
+        userId: user?.id ?? null,
+        metadata: {
+          slug: parsed.data.slug,
+        },
+      },
+      error,
+    })
+  }
+
   return { data: newAsset, error }
 }
 
 export const uploadAssetFile = async (formData: FormData): Promise<{ url: string | null; error: string | null }> => {
   const authorized = await canManageContent()
-  if (!authorized) throw new Error('Unauthorized: insufficient permissions')
+  if (!authorized) {
+    await logServerError({
+      family: 'admin',
+      eventName: 'assets_upload_unauthorized',
+      message: 'Unauthorized attempt to upload a 3D asset file.',
+      context: {
+        routeOrAction: 'admin:assets.uploadFile',
+      },
+    })
+    throw new Error('Unauthorized: insufficient permissions')
+  }
 
   const file = formData.get('file') as File | null
   if (!file) return { url: null, error: 'No file provided' }
@@ -105,7 +153,22 @@ export const uploadAssetFile = async (formData: FormData): Promise<{ url: string
     .from('3d-models')
     .upload(filePath, file)
 
-  if (uploadError) return { url: null, error: uploadError.message }
+  if (uploadError) {
+    await logServerError({
+      family: 'admin',
+      eventName: 'assets_upload_failed',
+      message: 'Failed to upload a 3D asset file.',
+      context: {
+        routeOrAction: 'admin:assets.uploadFile',
+        metadata: {
+          filePath,
+          fileName: file.name,
+        },
+      },
+      error: uploadError,
+    })
+    return { url: null, error: uploadError.message }
+  }
 
   const { data: { publicUrl } } = supabase.storage
     .from('3d-models')

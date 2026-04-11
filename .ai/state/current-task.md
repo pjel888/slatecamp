@@ -112,3 +112,24 @@ Produce a hard-nosed principal/staff-level review of:
 ### Next Step
 
 - Create checkpoint commit for the finished phase-1 rollout, then inspect and reduce the unrelated repo-wide lint failures without regressing the newly added logging work.
+
+### Follow-Up Progress
+
+- Created checkpoint commit for the phase-1 rollout.
+- Repo-wide `bun run lint` now succeeds after excluding generated/vendor directories from ESLint scope; remaining results are warnings only.
+- Extended the same logging boundary into additional admin mutation outliers:
+  - `src/lib/actions/admin/assets.ts`
+  - `src/lib/actions/admin/pipeline.ts`
+- Added focused regression coverage for those admin follow-up changes:
+  - `src/lib/actions/admin/assets.test.ts`
+  - `src/lib/actions/admin/pipeline.test.ts`
+
+### Current Verification
+
+- `bun run lint` completes with warnings only
+- `bun run type-check`
+- `bun run build`
+- Combined changed-suite Bun pass for the phase-1 rollout
+- Additional admin follow-up tests:
+  - `bun test src/lib/actions/admin/assets.test.ts`
+  - `bun test src/lib/actions/admin/pipeline.test.ts`

@@ -824,3 +824,17 @@
   - `bun run build` pass
   - targeted ESLint pass on changed files
 - Remaining repo-wide lint failures are outside rollout scope and live in pre-existing external/generated areas.
+
+## 2026-04-12 02:05 Follow-Up Checkpoint
+
+- Created checkpoint commit for the phase-1 rollout.
+- Fixed repo-wide lint usability by excluding generated/vendor directories from ESLint scope:
+  - `storybook-static/**`
+  - `flowbite/**`
+- Verified `bun run lint` now completes with warnings only instead of failing on generated/vendor files.
+- Widened admin-cluster adoption to additional mutation outliers:
+  - `src/lib/actions/admin/assets.ts`
+  - `src/lib/actions/admin/pipeline.ts`
+- Added regression coverage for those follow-up admin paths:
+  - `src/lib/actions/admin/assets.test.ts`
+  - `src/lib/actions/admin/pipeline.test.ts`
