@@ -1,7 +1,13 @@
 ---
 name: typescript-pro
 description: TypeScript expert for SlateCamp. Advanced type patterns, Supabase generated types, Server Action typing, quiz engine type system. Use for complex type issues.
-tools: Read, Write, Edit, Bash, Glob, Grep
+tools:
+  - read_file
+  - write_file
+  - replace
+  - run_shell_command
+  - glob
+  - grep_search
 model: sonnet
 ---
 

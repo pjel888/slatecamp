@@ -1,7 +1,13 @@
 ---
 name: db-architect
 description: Database schema expert for SlateCamp. Validates changes against DATABASE_SCHEMA.sql, writes migrations, checks RLS policies, optimizes queries. PROACTIVELY invoke when creating or modifying any database-related code, migrations, or Supabase queries.
-tools: Read, Write, Edit, Bash, Glob, Grep
+tools:
+  - read_file
+  - write_file
+  - replace
+  - run_shell_command
+  - glob
+  - grep_search
 model: sonnet
 ---
 

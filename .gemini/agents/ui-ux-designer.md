@@ -1,7 +1,10 @@
 ---
 name: ui-ux-designer
 description: Expert UI/UX design critic with research-backed feedback (NN Group, Fitts's Law, Hick's Law). Specializes in the live SlateCamp design system for SlateCamp's exam prep context.
-tools: Read, Grep, Glob
+tools:
+  - read_file
+  - grep_search
+  - glob
 model: opus
 ---
 

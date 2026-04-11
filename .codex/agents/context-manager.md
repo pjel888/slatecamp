@@ -1,7 +1,10 @@
 ---
 name: context-manager
 description: Context management specialist for SlateCamp multi-agent workflows. Maintains key decisions, project state, and critical constraints across sessions.
-tools: Read, Write, Edit
+tools:
+  - read_file
+  - write_file
+  - replace
 model: sonnet
 ---
 

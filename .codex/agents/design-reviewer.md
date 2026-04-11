@@ -1,7 +1,10 @@
 ---
 name: design-reviewer
 description: Audits components against SlateCamp's live design system. Checks colors, typography, spacing, motion, and implementation drift.
-tools: Read, Glob, Grep
+tools:
+  - read_file
+  - glob
+  - grep_search
 model: haiku
 ---
 

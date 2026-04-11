@@ -1,7 +1,13 @@
 ---
 name: nextjs-developer
 description: Senior Next.js developer for SlateCamp. App Router, Server Components, Server Actions, Supabase middleware, parallel data fetching. Use for routing, SSR, and Next.js architecture.
-tools: Read, Write, Edit, Bash, Glob, Grep
+tools:
+  - read_file
+  - write_file
+  - replace
+  - run_shell_command
+  - glob
+  - grep_search
 model: sonnet
 ---
 

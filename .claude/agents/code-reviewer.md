@@ -1,7 +1,13 @@
 ---
 name: code-reviewer
 description: Code review specialist for SlateCamp. Reviews for quality, security, performance, and adherence to live project conventions including the current SlateCamp design system.
-tools: Read, Write, Edit, Bash, Glob, Grep
+tools:
+  - read_file
+  - write_file
+  - replace
+  - run_shell_command
+  - glob
+  - grep_search
 model: opus
 ---
 

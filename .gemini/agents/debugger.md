@@ -1,7 +1,13 @@
 ---
 name: debugger
 description: Debugging specialist for SlateCamp. Covers Supabase RLS failures, quiz state issues, Server Action errors, and performance debugging.
-tools: Read, Write, Edit, Bash, Glob, Grep
+tools:
+  - read_file
+  - write_file
+  - replace
+  - run_shell_command
+  - glob
+  - grep_search
 model: sonnet
 ---
 

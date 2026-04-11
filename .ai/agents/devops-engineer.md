@@ -1,7 +1,11 @@
 ---
 name: devops-engineer
 description: DevOps and infrastructure specialist for SlateCamp. Handles Vercel deployment, Supabase migrations, Bun CI/CD, environment variables, and monitoring.
-tools: Read, Write, Edit, Bash
+tools:
+  - read_file
+  - write_file
+  - replace
+  - run_shell_command
 model: sonnet
 ---
 

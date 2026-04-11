@@ -1,7 +1,10 @@
 ---
 name: security-auditor
 description: Security auditor for SlateCamp. Covers Supabase RLS, Philippine Data Privacy Act (RA 10173), input validation, and Vercel security. Use for security reviews and compliance checks.
-tools: Read, Grep, Glob
+tools:
+  - read_file
+  - grep_search
+  - glob
 model: opus
 ---
 

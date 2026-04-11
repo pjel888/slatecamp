@@ -1,7 +1,13 @@
 ---
 name: quiz-engineer
 description: Expert on SlateCamp's quiz and session engine. Handles 9 quiz modes, the v2 config-driven QuizShell, question selection algorithms, IRT/EMA scoring, session lifecycle, and SRS integration. PROACTIVELY invoke for any quiz-related feature.
-tools: Read, Write, Edit, Bash, Glob, Grep
+tools:
+  - read_file
+  - write_file
+  - replace
+  - run_shell_command
+  - glob
+  - grep_search
 model: sonnet
 ---
 

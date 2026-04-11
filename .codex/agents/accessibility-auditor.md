@@ -1,7 +1,10 @@
 ---
 name: accessibility-auditor
 description: Audits UI for the live SlateCamp design system and WCAG 2.1 AA accessibility. Checks colors, focus, semantics, keyboard operability, and touch targets.
-tools: Read, Glob, Grep
+tools:
+  - read_file
+  - glob
+  - grep_search
 model: haiku
 ---
 

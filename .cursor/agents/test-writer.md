@@ -1,7 +1,13 @@
 ---
 name: test-writer
 description: Writes unit tests (Bun test runner) and E2E tests (Playwright) for SlateCamp features. Invoke after implementing a feature to ensure test coverage.
-tools: Read, Write, Edit, Bash, Glob, Grep
+tools:
+  - read_file
+  - write_file
+  - replace
+  - run_shell_command
+  - glob
+  - grep_search
 model: sonnet
 ---
 

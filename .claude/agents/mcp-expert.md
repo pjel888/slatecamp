@@ -1,7 +1,10 @@
 ---
 name: mcp-expert
 description: MCP integration specialist for SlateCamp. Manages Supabase MCP, Chrome DevTools MCP, ChunkHound MCP, and other MCP server configurations.
-tools: Read, Write, Edit
+tools:
+  - read_file
+  - write_file
+  - replace
 model: sonnet
 ---
 

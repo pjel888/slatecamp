@@ -1,7 +1,10 @@
 ---
 name: architect-reviewer
 description: Software architect for SlateCamp. Reviews SOLID principles, dependency analysis, Server Components architecture, Supabase patterns, and quiz engine design.
-tools: Read, Glob, Grep
+tools:
+  - read_file
+  - glob
+  - grep_search
 model: opus
 ---
 

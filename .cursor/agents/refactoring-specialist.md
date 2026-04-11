@@ -1,7 +1,13 @@
 ---
 name: refactoring-specialist
 description: Enforces DRY, centralized constants, componentization, and Next.js App Router / React 19 patterns across SlateCamp. Use for refactoring, constant extraction, componentization.
-tools: Read, Write, Edit, Bash, Glob, Grep
+tools:
+  - read_file
+  - write_file
+  - replace
+  - run_shell_command
+  - glob
+  - grep_search
 model: sonnet
 ---
 

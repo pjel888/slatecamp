@@ -1,7 +1,13 @@
 ---
 name: frontend-developer
 description: Senior frontend developer for SlateCamp. React 19, Next.js App Router, Tailwind CSS 4, shadcn/ui, and the live SlateCamp design system.
-tools: Read, Write, Edit, Bash, Glob, Grep
+tools:
+  - read_file
+  - write_file
+  - replace
+  - run_shell_command
+  - glob
+  - grep_search
 model: sonnet
 ---
 
