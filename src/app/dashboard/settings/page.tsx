@@ -46,34 +46,40 @@ export default async function SettingsPage() {
 
   return (
     <div className='max-w-2xl mx-auto space-y-8'>
-      {/* Profile — name, avatar, exam date */}
+      {!profile.onboarding_completed && (
+        <div className='rounded-md border border-primary/20 bg-primary/5 px-4 py-4'>
+          <p className='text-sm font-semibold text-foreground'>Your setup is not complete yet.</p>
+          <p className='mt-1 text-sm text-muted-foreground'>
+            Finish the required items below to unlock the full dashboard. Until then, settings remains your safe place to resume.
+          </p>
+        </div>
+      )}
+
       <ProfileCard
         initialDisplayName={profileData?.display_name ?? null}
         initialAvatarUrl={profileData?.avatar_url ?? null}
         initialExamDate={profileData?.target_exam_date ?? null}
+        initialEnrolledReviewCenter={profileData?.enrolled_review_center ?? null}
+        initialOnboardingCompleted={profile.onboarding_completed}
+        initialReviewerType={profileData?.reviewer_type ?? null}
+        initialStudyWindow={profileData?.preferred_study_window ?? null}
       />
 
-      {/* License / Discipline */}
       <DisciplineCard />
 
-      {/* Appearance / Theme */}
       <ThemeCard />
 
-      {/* Notifications — email on/off toggles */}
       <NotificationsCard
         initialEmailNotifications={emailPrefs.email_notifications_enabled}
         initialMarketingEmails={emailPrefs.marketing_emails_enabled}
       />
 
-      {/* Notifications — per-topic preferences */}
       <NotificationPreferences initialPreferences={notifPrefs} />
 
-      {/* Account Mode — only shown when lea_result is set (exam completed) */}
       {professionalModeData && (
         <AccountModeCard currentMode={professionalModeData.accountMode} />
       )}
 
-      {/* Account / Log out */}
       <LogoutCard />
     </div>
   )

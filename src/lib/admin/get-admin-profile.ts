@@ -82,10 +82,10 @@ export async function getAdminAwareProfile(): Promise<AdminAwareProfile | null> 
     isTierSimulated,
     profession: (stats?.disciplines as any)?.name ?? "Architecture",
     exam_target: null,
-    target_exam_date: null,
+    target_exam_date: (stats as any)?.target_exam_date ?? null,
     daily_streak: (stats as any)?.current_streak_days ?? 0,
     longest_streak: (stats as any)?.longest_streak_days ?? 0,
-    onboarding_completed: !!stats?.current_discipline_id,
+    onboarding_completed: !!(stats as any)?.onboarding_completed_at,
     preferred_theme: "system",
     ai_tokens_used: 0,
     ai_tokens_limit: 1000, // Default limit

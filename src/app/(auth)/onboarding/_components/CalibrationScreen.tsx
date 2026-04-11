@@ -1,51 +1,64 @@
 'use client'
 
-import { useEffect, useState } from 'react'
-import { CheckCircle } from '@phosphor-icons/react'
+import { CheckCircle, WarningCircle } from '@phosphor-icons/react'
 import { cn } from '@/lib/utils'
 
 interface CalibrationScreenProps {
-  onComplete: () => void
+  status: 'pending' | 'error'
+  errorMessage?: string | null
+  onRetry: () => void
+  onBack: () => void
 }
 
-const CALIBRATION_STEPS = [
-  { id: 'path', label: 'Calculating study path...', duration: 1200 },
-  { id: 'lea', label: 'Analyzing LEA subjects...', duration: 1500 },
-  { id: 'score', label: 'Initializing readiness score...', duration: 1000 },
-  { id: 'final', label: 'Preparing your dashboard...', duration: 800 },
+const PENDING_STEPS = [
+  'Saving your setup...',
+  'Syncing your LEA profile...',
+  'Preparing your dashboard...',
 ]
 
-export const CalibrationScreen = ({ onComplete }: CalibrationScreenProps) => {
-  const [currentStepIndex, setCurrentStepIndex] = useState(0)
-  const [completedSteps, setCompletedSteps] = useState<string[]>([])
-
-  useEffect(() => {
-    if (currentStepIndex >= CALIBRATION_STEPS.length) {
-      const timer = setTimeout(() => {
-        onComplete()
-      }, 500)
-      return () => clearTimeout(timer)
-    }
-
-    const step = CALIBRATION_STEPS[currentStepIndex]
-    const timer = setTimeout(() => {
-      setCompletedSteps((prev) => [...prev, step.id])
-      setCurrentStepIndex((prev) => prev + 1)
-    }, step.duration)
-
-    return () => clearTimeout(timer)
-  }, [currentStepIndex, onComplete])
+export const CalibrationScreen = ({
+  status,
+  errorMessage,
+  onRetry,
+  onBack,
+}: CalibrationScreenProps) => {
+  if (status === 'error') {
+    return (
+      <div className="flex flex-col items-center justify-center space-y-6 py-10 text-center">
+        <div className="flex h-16 w-16 items-center justify-center rounded-full bg-destructive/10 text-destructive">
+          <WarningCircle className="h-8 w-8" weight="fill" />
+        </div>
+        <div className="space-y-2">
+          <h2 className="text-lg font-semibold text-foreground">We could not finish setup</h2>
+          <p className="max-w-sm text-sm text-muted-foreground">
+            {errorMessage ?? 'Your answers are still here. Check your connection and try again.'}
+          </p>
+        </div>
+        <div className="flex w-full max-w-sm gap-3">
+          <button
+            type="button"
+            onClick={onBack}
+            className="flex-1 rounded-sm border border-border bg-card px-4 py-2.5 text-sm font-semibold text-foreground transition-colors duration-150 hover:bg-muted"
+          >
+            Back
+          </button>
+          <button
+            type="button"
+            onClick={onRetry}
+            className="flex-1 rounded-sm bg-primary px-4 py-2.5 text-sm font-semibold text-white transition-colors duration-150 hover:bg-primary-700"
+          >
+            Try again
+          </button>
+        </div>
+      </div>
+    )
+  }
 
   return (
     <div className="flex flex-col items-center justify-center space-y-8 py-10">
       <div className="relative flex h-24 w-24 items-center justify-center">
-        {/* Pulsing Outer Ring */}
         <div className="absolute inset-0 animate-ping rounded-full bg-primary/20 opacity-75" />
-        
-        {/* Scanning Ring */}
-        <div className="absolute inset-0 rounded-full border-4 border-primary/10 border-t-primary animate-spin" />
-        
-        {/* Center Icon */}
+        <div className="absolute inset-0 animate-spin rounded-full border-4 border-primary/10 border-t-primary" />
         <div className="relative z-10 flex h-16 w-16 items-center justify-center rounded-full bg-primary text-white shadow-lg shadow-primary/20">
           <svg
             width="32"
@@ -81,43 +94,30 @@ export const CalibrationScreen = ({ onComplete }: CalibrationScreenProps) => {
       </div>
 
       <div className="w-full max-w-[280px] space-y-4">
-        {CALIBRATION_STEPS.map((step, index) => {
-          const isCompleted = completedSteps.includes(step.id)
-          const isCurrent = index === currentStepIndex
-          const isPending = index > currentStepIndex
-
-          return (
-            <div
-              key={step.id}
-              className={cn(
-                "flex items-center gap-3 transition-all duration-300",
-                isPending && "opacity-30 blur-[0.5px]",
-                isCompleted && "text-foreground",
-                isCurrent && "text-primary scale-[1.02]"
+        {PENDING_STEPS.map((label, index) => (
+          <div
+            key={label}
+            className={cn(
+              'flex items-center gap-3 text-foreground transition-all duration-300',
+              index > 0 && 'opacity-80',
+            )}
+          >
+            <div className="flex h-5 w-5 items-center justify-center">
+              {index === 0 ? (
+                <div className="h-2 w-2 animate-bounce rounded-full bg-primary" />
+              ) : (
+                <CheckCircle className="h-5 w-5 text-primary/40" weight="fill" />
               )}
-            >
-              <div className="flex h-5 w-5 items-center justify-center">
-                {isCompleted ? (
-                  <CheckCircle weight="fill" className="h-5 w-5 text-success" />
-                ) : isCurrent ? (
-                  <div className="h-2 w-2 animate-bounce rounded-full bg-primary" />
-                ) : (
-                  <div className="h-1.5 w-1.5 rounded-full bg-muted-foreground" />
-                )}
-              </div>
-              <span className={cn(
-                "text-[13px] font-medium tracking-wide",
-                isCurrent && "animate-pulse"
-              )}>
-                {step.label}
-              </span>
             </div>
-          )
-        })}
+            <span className={cn('text-[13px] font-medium tracking-wide', index === 0 && 'animate-pulse')}>
+              {label}
+            </span>
+          </div>
+        ))}
       </div>
 
-      <p className="text-center text-[10px] uppercase tracking-widest text-muted-foreground animate-pulse">
-        Mastery Calibration in Progress
+      <p className="text-center text-[10px] uppercase tracking-widest text-muted-foreground">
+        Saving your profile
       </p>
     </div>
   )

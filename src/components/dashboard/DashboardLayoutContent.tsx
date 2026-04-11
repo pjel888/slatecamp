@@ -1,4 +1,5 @@
 import { Suspense } from 'react'
+import { headers } from 'next/headers'
 import { redirect } from 'next/navigation'
 import { createClient, getUser } from '@/lib/supabase/server'
 import { ROUTES } from '@/lib/routes'
@@ -56,11 +57,13 @@ const DashboardLayoutContent = async ({ children }: DashboardLayoutContentProps)
   const userStats = stats as (UserGlobalStats & { disciplines: Discipline | null }) | null
   const onboardingCompletedAt = (stats as { onboarding_completed_at?: string | null } | null)?.onboarding_completed_at ?? null
   const currentTier = (subscription?.tier ?? 'free') as UserTier
+  const pathname = (await headers()).get('x-pathname') ?? ''
+  const isSettingsPath = pathname.startsWith(ROUTES.dashboard.settings)
 
   // ── Onboarding Guard ──────────────────────────────────────────────────────
   // If user is not in demo mode and has not completed onboarding, redirect them
-  if (!isDemo && !onboardingCompletedAt) {
-    redirect('/onboarding')
+  if (!isDemo && !onboardingCompletedAt && !isSettingsPath) {
+    redirect(ROUTES.auth.onboarding)
   }
 
   // Uses roles.ts which respects the dev bypass

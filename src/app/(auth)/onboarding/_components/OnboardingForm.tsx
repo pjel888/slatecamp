@@ -1,31 +1,39 @@
 'use client'
 
-import { useState, useMemo, useCallback, useEffect } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
+import { useRouter } from 'next/navigation'
 import { Input } from '@/components/ui/input'
 import { SubmitButton } from '@/components/ui/button'
-import { StudyWindowSelector } from '@/components/settings/StudyWindowSelector'
+import { StudyWindowSelector, type StudyWindow } from '@/components/settings/StudyWindowSelector'
 import { ReviewCenterStep } from './ReviewCenterStep'
 import { CoexistenceScreen } from './CoexistenceScreen'
 import { CalibrationScreen } from './CalibrationScreen'
+import { ROUTES } from '@/lib/routes'
 import { cn } from '@/lib/utils'
 import { trackEvent } from '@/lib/analytics'
 import type { Discipline } from '@/types/app'
 
-type ReviewerType = 'first_taker' | 'returning_reviewer' | 'undergrad' | 'dae'
+type ReviewerType = 'first_taker' | 'returning_reviewer'
 type ReviewCenterValue = 'jpt' | 'atlas_cdc' | 'other' | 'none'
-
-// Steps: 'main' → 'review_center' → 'coexistence' (only if not 'none') → 'calibrating'
 type Step = 'main' | 'review_center' | 'coexistence' | 'calibrating'
+type SubmitStatus = 'idle' | 'pending' | 'error'
 
 interface Subject {
   node_id: string
   name: string
 }
 
+interface OnboardingSubmitResult {
+  success: boolean
+  redirectTo?: string
+  formError?: string
+  fieldErrors?: Partial<Record<'disciplineId' | 'reviewerType' | 'studyWindow', string>>
+}
+
 interface OnboardingFormProps {
   disciplines: Discipline[]
   subjectsByDiscipline: Record<string, Subject[]>
-  onSubmit: (formData: FormData) => Promise<void>
+  onSubmit: (formData: FormData) => Promise<OnboardingSubmitResult>
 }
 
 const REVIEWER_OPTIONS: {
@@ -33,64 +41,46 @@ const REVIEWER_OPTIONS: {
   label: string
   subLabel: string
 }[] = [
-    {
-      value: 'first_taker',
-      label: 'Preparing for the LEA',
-      subLabel: 'First time taking the Licensure Exam',
-    },
-    {
-      value: 'returning_reviewer',
-      label: 'Returning reviewer — refining my strategy',
-      subLabel: 'You know the LEA. You know what needs to change.',
-    },
-    {
-      value: 'undergrad',
-      label: 'Architecture student — studio reference',
-      subLabel: 'No pressure. Just the best building code reference.',
-    },
-    {
-      value: 'dae',
-      label: 'Licensed architect — staying current',
-      subLabel: 'Keep your knowledge current between renewals.',
-    },
-  ]
+  {
+    value: 'first_taker',
+    label: 'Preparing for the LEA',
+    subLabel: 'First time taking the Licensure Exam',
+  },
+  {
+    value: 'returning_reviewer',
+    label: 'Returning reviewer - refining my strategy',
+    subLabel: 'You know the LEA. You know what needs to change.',
+  },
+]
 
 export const OnboardingForm = ({
   disciplines,
   subjectsByDiscipline,
   onSubmit,
 }: OnboardingFormProps) => {
+  const router = useRouter()
   const [step, setStep] = useState<Step>('main')
-  const [selectedDisciplineId, setSelectedDisciplineId] = useState<string>('')
+  const [selectedDisciplineId, setSelectedDisciplineId] = useState('')
   const [reviewerType, setReviewerType] = useState<ReviewerType>('first_taker')
+  const [studyWindow, setStudyWindow] = useState<StudyWindow>('any')
+  const [examDate, setExamDate] = useState('')
   const [struggledSubjects, setStruggledSubjects] = useState<string[]>([])
   const [reviewCenter, setReviewCenter] = useState<ReviewCenterValue>('none')
-  const [reviewCenterOther, setReviewCenterOther] = useState<string>('')
-
-  // Captured form data from the main step — held so we can submit after extra steps
+  const [reviewCenterOther, setReviewCenterOther] = useState('')
   const [pendingFormData, setPendingFormData] = useState<FormData | null>(null)
+  const [submitStatus, setSubmitStatus] = useState<SubmitStatus>('idle')
+  const [submitError, setSubmitError] = useState<string | null>(null)
+  const [mainStepError, setMainStepError] = useState<string | null>(null)
+  const [calibrationReturnStep, setCalibrationReturnStep] = useState<'review_center' | 'coexistence'>('review_center')
 
-  // Track initial entry
   useEffect(() => {
     trackEvent({ event_name: 'onboarding_started' })
   }, [])
 
-  const subjects = selectedDisciplineId
-    ? (subjectsByDiscipline[selectedDisciplineId] ?? [])
-    : []
-
+  const subjects = selectedDisciplineId ? (subjectsByDiscipline[selectedDisciplineId] ?? []) : []
   const showExamDate = reviewerType === 'first_taker' || reviewerType === 'returning_reviewer'
-  const showStudyWindow = true
   const showStruggledSubjects = reviewerType === 'returning_reviewer'
-  const showSchoolField = reviewerType === 'undergrad'
 
-  const toggleSubject = (nodeId: string) => {
-    setStruggledSubjects(prev =>
-      prev.includes(nodeId) ? prev.filter(id => id !== nodeId) : [...prev, nodeId]
-    )
-  }
-
-  // ── Step Tracking ──────────────────────────────────────────────────────────
   const totalSteps = reviewCenter !== 'none' ? 3 : 2
   const currentStepNumber = useMemo(() => {
     if (step === 'main') return 1
@@ -99,18 +89,25 @@ export const OnboardingForm = ({
     return totalSteps
   }, [step, totalSteps])
 
-  // Track step changes
   useEffect(() => {
     if (step !== 'main' && step !== 'calibrating') {
       trackEvent({
         event_name: 'onboarding_step_viewed',
-        event_properties: { step, step_number: currentStepNumber }
+        event_properties: { step, step_number: currentStepNumber },
       })
     }
   }, [step, currentStepNumber])
 
-  // Called when the main form's native action fires — intercept to add extra steps
+  const toggleSubject = (nodeId: string) => {
+    setStruggledSubjects((previous) =>
+      previous.includes(nodeId) ? previous.filter((id) => id !== nodeId) : [...previous, nodeId],
+    )
+  }
+
   const handleMainSubmit = (formData: FormData) => {
+    setMainStepError(null)
+    setSubmitError(null)
+    setSubmitStatus('idle')
     setPendingFormData(formData)
     setStep('review_center')
     trackEvent({
@@ -118,75 +115,140 @@ export const OnboardingForm = ({
       event_properties: {
         discipline_id: selectedDisciplineId,
         reviewer_type: reviewerType,
-        struggled_subjects_count: struggledSubjects.length
-      }
+        struggled_subjects_count: struggledSubjects.length,
+      },
     })
   }
 
   const handleReviewCenterContinue = () => {
+    setSubmitError(null)
+    setSubmitStatus('idle')
     trackEvent({
       event_name: 'onboarding_review_center_selected',
-      event_properties: { reviewCenter }
+      event_properties: { reviewCenter },
     })
 
     if (reviewCenter !== 'none') {
       setStep('coexistence')
-    } else {
-      setStep('calibrating')
+      return
     }
+
+    setCalibrationReturnStep('review_center')
+    setStep('calibrating')
   }
 
   const doFinalSubmit = useCallback(async () => {
-    if (!pendingFormData) return
-    // Append the review center value before submitting
-    pendingFormData.set('enrolledReviewCenter', reviewCenter)
+    if (!pendingFormData || submitStatus === 'pending') return
+
+    const finalFormData = new FormData()
+    pendingFormData.forEach((value, key) => {
+      finalFormData.append(key, value)
+    })
+
+    finalFormData.set('studyWindow', studyWindow)
+    finalFormData.set('enrolledReviewCenter', reviewCenter)
     if (reviewCenter === 'other' && reviewCenterOther.trim()) {
-      pendingFormData.set('enrolledReviewCenterOther', reviewCenterOther.trim())
+      finalFormData.set('enrolledReviewCenterOther', reviewCenterOther.trim())
     }
 
-    trackEvent({ event_name: 'onboarding_calibration_started' })
-    await onSubmit(pendingFormData)
-  }, [pendingFormData, reviewCenter, reviewCenterOther, onSubmit])
+    setSubmitStatus('pending')
+    setSubmitError(null)
+    setMainStepError(null)
 
-  const handleCalibrationComplete = useCallback(async () => {
-    await doFinalSubmit()
-  }, [doFinalSubmit])
+    trackEvent({ event_name: 'onboarding_submit_started' })
 
-  // ── Calibration screen ─────────────────────────────────────────────────────
+    const result = await onSubmit(finalFormData)
+
+    if (result.success && result.redirectTo) {
+      router.push(result.redirectTo)
+      return
+    }
+
+    trackEvent({
+      event_name: 'onboarding_submit_failed',
+      event_properties: {
+        has_field_errors: !!result.fieldErrors && Object.keys(result.fieldErrors).length > 0,
+      },
+    })
+
+    if (result.fieldErrors && Object.keys(result.fieldErrors).length > 0) {
+      setMainStepError(result.formError ?? 'We could not validate your setup. Review your answers and try again.')
+      setStep('main')
+      setSubmitStatus('idle')
+      setSubmitError(null)
+      return
+    }
+
+    setSubmitStatus('error')
+    setSubmitError(result.formError ?? 'We could not finish setup right now. Your answers are still here. Try again.')
+  }, [onSubmit, pendingFormData, reviewCenter, reviewCenterOther, router, studyWindow, submitStatus])
+
+  useEffect(() => {
+    if (step === 'calibrating' && submitStatus === 'idle') {
+      void doFinalSubmit()
+    }
+  }, [doFinalSubmit, step, submitStatus])
+
+  const handleCalibrationRetry = useCallback(() => {
+    setSubmitStatus('idle')
+    setSubmitError(null)
+  }, [])
+
+  const handleCalibrationBack = useCallback(() => {
+    setSubmitStatus('idle')
+    setSubmitError(null)
+    setStep(calibrationReturnStep)
+  }, [calibrationReturnStep])
+
   if (step === 'calibrating') {
-    return <CalibrationScreen onComplete={handleCalibrationComplete} />
+    return (
+      <CalibrationScreen
+        status={submitStatus === 'error' ? 'error' : 'pending'}
+        errorMessage={submitError}
+        onRetry={handleCalibrationRetry}
+        onBack={handleCalibrationBack}
+      />
+    )
   }
 
-  // ── Coexistence screen ────────────────────────────────────────────────────
   if (step === 'coexistence') {
     return (
       <div className="space-y-6">
-        <div className="text-center mb-2">
-          <p className="text-[10px] uppercase tracking-[1.5px] text-primary font-bold">
+        <div className="mb-2 text-center">
+          <p className="text-[10px] font-bold uppercase tracking-[1.5px] text-primary">
             Step {currentStepNumber} of {totalSteps}
           </p>
         </div>
-        <CoexistenceScreen onContinue={() => { setStep('calibrating') }} />
+        <CoexistenceScreen
+          onContinue={() => {
+            setCalibrationReturnStep('coexistence')
+            setSubmitError(null)
+            setSubmitStatus('idle')
+            setStep('calibrating')
+          }}
+        />
+        <button
+          type="button"
+          onClick={() => router.replace(ROUTES.dashboard.settings)}
+          className="w-full rounded-sm border border-border bg-card px-4 py-2.5 text-sm font-semibold text-foreground transition-colors duration-150 hover:bg-muted"
+        >
+          Skip for now
+        </button>
       </div>
     )
   }
 
-  // ── Review center step ────────────────────────────────────────────────────
   if (step === 'review_center') {
     return (
       <div className="space-y-5">
-        <div className="text-center mb-2">
-          <p className="text-[10px] uppercase tracking-[1.5px] text-primary font-bold">
+        <div className="mb-2 text-center">
+          <p className="text-[10px] font-bold uppercase tracking-[1.5px] text-primary">
             Step {currentStepNumber} of {totalSteps}
           </p>
         </div>
-        <div className="text-center mb-6">
-          <h1 className="text-xl font-bold text-foreground">
-            Study Harmony
-          </h1>
-          <p className="mt-1.5 text-sm text-muted-foreground">
-            Are you enrolled in a review center?
-          </p>
+        <div className="mb-6 text-center">
+          <h1 className="text-xl font-bold text-foreground">Study Harmony</h1>
+          <p className="mt-1.5 text-sm text-muted-foreground">Are you enrolled in a review center?</p>
         </div>
         <ReviewCenterStep
           value={reviewCenter}
@@ -197,55 +259,61 @@ export const OnboardingForm = ({
         <button
           type="button"
           onClick={handleReviewCenterContinue}
-          className="w-full rounded-sm bg-primary px-4 py-2.5 text-sm font-semibold text-white transition-colors duration-150 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+          disabled={reviewCenter === 'other' && !reviewCenterOther.trim()}
+          className="w-full rounded-sm bg-primary px-4 py-2.5 text-sm font-semibold text-white transition-colors duration-150 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-60"
         >
           Continue &rarr;
+        </button>
+        <button
+          type="button"
+          onClick={() => router.replace(ROUTES.dashboard.settings)}
+          className="w-full rounded-sm border border-border bg-card px-4 py-2.5 text-sm font-semibold text-foreground transition-colors duration-150 hover:bg-muted"
+        >
+          Skip for now
         </button>
       </div>
     )
   }
 
-  // ── Main step (original form) ─────────────────────────────────────────────
   return (
     <div className="space-y-6">
-      <div className="text-center mb-2">
-        <p className="text-[10px] uppercase tracking-[1.5px] text-primary font-bold">
+      <div className="mb-2 text-center">
+        <p className="text-[10px] font-bold uppercase tracking-[1.5px] text-primary">
           Step {currentStepNumber} of {totalSteps}
         </p>
       </div>
-      <div className="text-center mb-6">
-        <h1 className="text-xl font-bold text-foreground">
-          Let&apos;s set up your study path
-        </h1>
+      <div className="mb-6 text-center">
+        <h1 className="text-xl font-bold text-foreground">Let&apos;s set up your study path</h1>
         <p className="mt-1.5 text-sm text-muted-foreground">
           A few quick questions, then we&apos;ll build your diagnostic.
         </p>
       </div>
 
       <form action={handleMainSubmit} className="space-y-5">
-        {/* Hidden field: struggled subjects serialised as JSON */}
         <input
           type="hidden"
           name="struggledSubjects"
           value={JSON.stringify(
-            subjects
-              .filter(s => struggledSubjects.includes(s.node_id))
-              .map(s => s.name)
+            subjects.filter((subject) => struggledSubjects.includes(subject.node_id)).map((subject) => subject.name),
           )}
         />
+        <input type="hidden" name="studyWindow" value={studyWindow} />
 
-        {/* Discipline Selection */}
+        {mainStepError && (
+          <div className="rounded-sm border border-destructive bg-destructive/10 px-3 py-2 text-sm text-destructive">
+            {mainStepError}
+          </div>
+        )}
+
         <div>
-          <label className="block text-sm font-medium text-foreground mb-2">
-            Choose your discipline
-          </label>
+          <label className="mb-2 block text-sm font-medium text-foreground">Choose your discipline</label>
           <div className="space-y-2">
-            {disciplines.map((discipline: Discipline) => (
+            {disciplines.map((discipline) => (
               <label
                 key={discipline.discipline_id}
                 className={cn(
-                  "flex items-center justify-between rounded-md border p-3 transition-colors duration-150 hover:border-primary hover:bg-primary/5 cursor-pointer",
-                  selectedDisciplineId === discipline.discipline_id ? "border-primary bg-primary/5" : "border-border"
+                  'flex cursor-pointer items-center justify-between rounded-md border p-3 transition-colors duration-150 hover:border-primary hover:bg-primary/5',
+                  selectedDisciplineId === discipline.discipline_id ? 'border-primary bg-primary/5' : 'border-border',
                 )}
               >
                 <div className="flex items-center gap-3">
@@ -267,11 +335,8 @@ export const OnboardingForm = ({
           </div>
         </div>
 
-        {/* Reviewer Type — 4-way selector */}
         <div>
-          <p className="text-sm font-medium text-foreground mb-2">
-            What brings you to SlateCamp?
-          </p>
+          <p className="mb-2 text-sm font-medium text-foreground">What brings you to SlateCamp?</p>
           <div className="space-y-2">
             {REVIEWER_OPTIONS.map(({ value, label, subLabel }) => (
               <label key={value} className="block cursor-pointer">
@@ -288,14 +353,10 @@ export const OnboardingForm = ({
                     <div
                       className={[
                         'mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center rounded-full border-2 transition-colors duration-150',
-                        reviewerType === value
-                          ? 'border-primary'
-                          : 'border-border',
+                        reviewerType === value ? 'border-primary' : 'border-border',
                       ].join(' ')}
                     >
-                      {reviewerType === value && (
-                        <div className="h-2 w-2 rounded-full bg-primary" />
-                      )}
+                      {reviewerType === value && <div className="h-2 w-2 rounded-full bg-primary" />}
                     </div>
                     <div>
                       <span className="text-sm font-medium text-foreground">{label}</span>
@@ -308,58 +369,33 @@ export const OnboardingForm = ({
           </div>
         </div>
 
-        {/* Returning reviewer — context copy */}
         {reviewerType === 'returning_reviewer' && (
           <div className="rounded-md border border-border bg-muted px-4 py-3">
-            <p className="text-[13px] text-muted-foreground leading-relaxed">
+            <p className="text-[13px] leading-relaxed text-muted-foreground">
               You know the LEA. You know what needs to change.{' '}
-              <span className="font-medium text-foreground">
-                SlateCamp gives you the data to change it.
-              </span>
+              <span className="font-medium text-foreground">SlateCamp gives you the data to change it.</span>
             </p>
           </div>
         )}
 
-        {/* Undergrad — context copy */}
-        {reviewerType === 'undergrad' && (
-          <div className="rounded-md border border-border bg-muted px-4 py-3">
-            <p className="text-[13px] text-muted-foreground leading-relaxed">
-              No pressure. Just the best building code reference in the Philippines.
-            </p>
-          </div>
-        )}
-
-        {/* DAE — context copy */}
-        {reviewerType === 'dae' && (
-          <div className="rounded-md border border-border bg-muted px-4 py-3">
-            <p className="text-[13px] text-muted-foreground leading-relaxed">
-              Keep your knowledge current between renewals.
-            </p>
-          </div>
-        )}
-
-        {/* Struggled subjects — returning_reviewer only */}
         {showStruggledSubjects && subjects.length > 0 && (
           <div>
-            <p className="text-sm font-medium text-foreground mb-1">
-              What subject felt hardest?
-            </p>
-            <p className="text-xs text-muted-foreground mb-2">
-              Select all that apply — we&apos;ll prioritise these areas for you.
+            <p className="mb-1 text-sm font-medium text-foreground">What subject felt hardest?</p>
+            <p className="mb-2 text-xs text-muted-foreground">
+              Select all that apply - we&apos;ll prioritise these areas for you.
             </p>
             <div className="space-y-1.5">
-              {subjects.map(subject => {
+              {subjects.map((subject) => {
                 const isChecked = struggledSubjects.includes(subject.node_id)
+
                 return (
                   <button
                     key={subject.node_id}
                     type="button"
                     onClick={() => toggleSubject(subject.node_id)}
                     className={[
-                      'w-full flex items-center gap-3 rounded-md border px-3 py-2.5 text-left transition-colors duration-150',
-                      isChecked
-                        ? 'border-primary bg-primary/10'
-                        : 'border-border hover:border-primary/50 hover:bg-primary/5',
+                      'flex w-full items-center gap-3 rounded-md border px-3 py-2.5 text-left transition-colors duration-150',
+                      isChecked ? 'border-primary bg-primary/10' : 'border-border hover:border-primary/50 hover:bg-primary/5',
                     ].join(' ')}
                   >
                     <div
@@ -395,31 +431,17 @@ export const OnboardingForm = ({
           </div>
         )}
 
-        {/* School / Institution — undergrad only */}
-        {showSchoolField && (
-          <div>
-            <label htmlFor="schoolOrInstitution" className="block text-sm font-medium text-foreground mb-1.5">
-              School or institution
-            </label>
-            <Input
-              type="text"
-              id="schoolOrInstitution"
-              name="schoolOrInstitution"
-              placeholder="e.g. University of Santo Tomas"
-            />
-          </div>
-        )}
-
-        {/* Exam Date — first_taker + returning_reviewer only */}
         {showExamDate && (
           <div>
-            <label htmlFor="examDate" className="block text-sm font-medium text-foreground mb-1.5">
+            <label htmlFor="examDate" className="mb-1.5 block text-sm font-medium text-foreground">
               When is your target exam date?
             </label>
             <Input
               type="date"
               id="examDate"
               name="examDate"
+              value={examDate}
+              onChange={(event) => setExamDate(event.target.value)}
             />
             <p className="mt-1 text-xs text-muted-foreground">
               Helps us recommend the right study trail for your timeline.
@@ -427,22 +449,24 @@ export const OnboardingForm = ({
           </div>
         )}
 
-        {/* Study Window — all types */}
-        {showStudyWindow && (
-          <div className="pt-2 border-t border-border">
-            <p className="text-sm font-medium text-foreground mb-1">
-              When do you usually study?
-            </p>
-            <p className="text-xs text-muted-foreground mb-2">
-              Optional — helps order trail activities for better retention.
-            </p>
-            <StudyWindowSelector compact />
-          </div>
-        )}
+        <div className="border-t border-border pt-2">
+          <p className="mb-1 text-sm font-medium text-foreground">When do you usually study?</p>
+          <p className="mb-2 text-xs text-muted-foreground">
+            Optional - helps order trail activities for better retention.
+          </p>
+          <StudyWindowSelector compact mode="controlled" value={studyWindow} onChange={setStudyWindow} />
+        </div>
 
-        <SubmitButton variant="primary" size="lg" fullWidth pendingLabel="Setting up your account...">
+        <SubmitButton variant="primary" size="lg" fullWidth pendingLabel="Continuing...">
           Continue &rarr;
         </SubmitButton>
+        <button
+          type="button"
+          onClick={() => router.replace(ROUTES.dashboard.settings)}
+          className="w-full rounded-sm border border-border bg-card px-4 py-2.5 text-sm font-semibold text-foreground transition-colors duration-150 hover:bg-muted"
+        >
+          Skip for now
+        </button>
       </form>
     </div>
   )

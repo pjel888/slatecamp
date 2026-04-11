@@ -6,6 +6,24 @@ import { revalidateDashboardCacheTags } from './cache-tags'
 import { ROUTES } from '@/lib/routes'
 
 export type StudyWindow = 'morning' | 'evening' | 'both' | 'any'
+export type ReviewerType = 'first_taker' | 'returning_reviewer'
+
+interface ProfileData {
+  avatar_url: string | null
+  display_name: string | null
+  discipline_id: string | null
+  enrolled_review_center: string | null
+  onboarding_completed_at: string | null
+  preferred_study_window: StudyWindow | null
+  reviewer_type: string | null
+  target_exam_date: string | null
+}
+
+export interface CompleteOnboardingResult {
+  success: boolean
+  fieldErrors?: Partial<Record<'disciplineId' | 'reviewerType', string>>
+  formError?: string
+}
 
 export const saveStudyWindow = async (window: StudyWindow) => {
   const supabase = await createClient()
@@ -47,14 +65,129 @@ export const getProfileData = async () => {
 
     const { data } = await supabase
       .from('profiles')
-      .select('display_name, avatar_url, target_exam_date')
+      .select('display_name, avatar_url, target_exam_date, discipline_id, reviewer_type, preferred_study_window, enrolled_review_center, onboarding_completed_at')
       .eq('id', user.id)
       .single()
 
-    return data ?? null
+    return (data as ProfileData | null) ?? null
   } catch (err) {
     console.error('[PROFILE: getProfileData]', err)
     return null
+  }
+}
+
+const isReviewerType = (value: string | null): value is ReviewerType => {
+  return value === 'first_taker' || value === 'returning_reviewer'
+}
+
+export const completeOnboardingSetup = async (
+  formData: FormData,
+): Promise<CompleteOnboardingResult> => {
+  try {
+    const supabase = await createClient()
+    const { data: { user } } = await getUser()
+    if (!user) return { success: false, formError: 'Not authenticated.' }
+
+    const disciplineId = formData.get('disciplineId') as string | null
+    const reviewerTypeRaw = formData.get('reviewerType') as string | null
+    const examDate = (formData.get('examDate') as string | null) || null
+    const studyWindowRaw = (formData.get('studyWindow') as string | null) || 'any'
+    const reviewCenter = (formData.get('enrolledReviewCenter') as string | null) || 'none'
+    const reviewCenterOther = (formData.get('enrolledReviewCenterOther') as string | null)?.trim() || ''
+    const rawStruggled = formData.get('struggledSubjects') as string | null
+
+    const fieldErrors: CompleteOnboardingResult['fieldErrors'] = {}
+    if (!disciplineId) {
+      fieldErrors.disciplineId = 'Select a discipline before finishing setup.'
+    }
+
+    if (!isReviewerType(reviewerTypeRaw)) {
+      fieldErrors.reviewerType = 'Choose the LEA path that fits you.'
+    }
+
+    if (fieldErrors && Object.keys(fieldErrors).length > 0) {
+      return { success: false, fieldErrors }
+    }
+
+    const reviewerType = reviewerTypeRaw as ReviewerType
+    const preferredStudyWindow: StudyWindow =
+      studyWindowRaw === 'morning' ||
+      studyWindowRaw === 'evening' ||
+      studyWindowRaw === 'both' ||
+      studyWindowRaw === 'any'
+        ? studyWindowRaw
+        : 'any'
+
+    const enrolledReviewCenter =
+      reviewCenter === 'other' && reviewCenterOther ? reviewCenterOther : reviewCenter
+
+    const timestamp = new Date().toISOString()
+
+    const profileUpdates: Record<string, unknown> = {
+      discipline_id: disciplineId,
+      reviewer_type: reviewerType,
+      preferred_study_window: preferredStudyWindow,
+      target_exam_date: examDate,
+      enrolled_review_center: enrolledReviewCenter,
+      onboarding_completed_at: timestamp,
+    }
+
+    if (rawStruggled) {
+      try {
+        const parsed = JSON.parse(rawStruggled)
+        if (Array.isArray(parsed)) {
+          const struggledSubjects = parsed.filter((value): value is string => typeof value === 'string')
+          if (struggledSubjects.length > 0) {
+            profileUpdates.previous_exam_subjects_struggled = struggledSubjects
+          }
+        }
+      } catch {
+        // Optional payload only.
+      }
+    }
+
+    const statsUpdates: Record<string, unknown> = {
+      current_discipline_id: disciplineId,
+      target_exam_date: examDate,
+      exam_attempt_number: reviewerType === 'returning_reviewer' ? 2 : 1,
+      previous_exam_result: reviewerType === 'returning_reviewer' ? 'failed' : null,
+      onboarding_completed_at: timestamp,
+    }
+
+    const [
+      { error: profileError },
+      { error: statsError },
+    ] = await Promise.all([
+      supabase
+        .from('profiles')
+        .upsert({ id: user.id, ...profileUpdates }, { onConflict: 'id' }),
+      supabase
+        .from('user_global_stats')
+        .upsert({ user_id: user.id, ...statsUpdates }, { onConflict: 'user_id' }),
+    ])
+
+    if (profileError || statsError) {
+      console.error('[PROFILE: completeOnboardingSetup]', {
+        profileError,
+        statsError,
+      })
+      return {
+        success: false,
+        formError: 'We could not finish setup right now. Your existing settings are still intact. Try again.',
+      }
+    }
+
+    revalidateDashboardCacheTags(user.id)
+    revalidatePath(ROUTES.dashboard.root, 'layout')
+    revalidatePath(ROUTES.dashboard.settings)
+
+    return { success: true }
+  } catch (err) {
+    console.error('[PROFILE: completeOnboardingSetup]', err)
+    return {
+      success: false,
+      formError: 'We could not finish setup right now. Try again.',
+    }
   }
 }
 
@@ -86,12 +219,23 @@ export const updateExamDate = async (formData: FormData) => {
     if (!user) return { error: 'Not authenticated' }
 
     const examDate = formData.get('examDate') as string | null
-    const { error } = await supabase
-      .from('profiles')
-      .update({ target_exam_date: examDate || null })
-      .eq('id', user.id)
+    const [
+      { error: profileError },
+      { error: statsError },
+    ] = await Promise.all([
+      supabase
+        .from('profiles')
+        .update({ target_exam_date: examDate || null })
+        .eq('id', user.id),
+      supabase
+        .from('user_global_stats')
+        .update({ target_exam_date: examDate || null })
+        .eq('user_id', user.id),
+    ])
 
-    if (error) throw error
+    if (profileError || statsError) throw profileError ?? statsError
+    revalidateDashboardCacheTags(user.id)
+    revalidatePath(ROUTES.dashboard.root, 'layout')
     revalidatePath(ROUTES.dashboard.settings)
     return { success: true }
   } catch (err) {
