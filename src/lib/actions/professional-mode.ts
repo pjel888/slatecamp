@@ -32,7 +32,7 @@ export const getProfessionalModeData = async (): Promise<ProfessionalModeData | 
     .from('profiles')
     .select('account_mode, lea_result, target_exam_date')
     .eq('id', user.id)
-    .single()
+    .maybeSingle()
 
   if (!profile) return null
 

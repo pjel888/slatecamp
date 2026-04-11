@@ -11,6 +11,7 @@ import { CalibrationScreen } from './CalibrationScreen'
 import { ROUTES } from '@/lib/routes'
 import { cn } from '@/lib/utils'
 import { trackEvent } from '@/lib/analytics'
+import { skipOnboarding } from '@/lib/actions/profile'
 import type { Discipline } from '@/types/app'
 
 type ReviewerType = 'first_taker' | 'returning_reviewer'
@@ -72,6 +73,17 @@ export const OnboardingForm = ({
   const [submitError, setSubmitError] = useState<string | null>(null)
   const [mainStepError, setMainStepError] = useState<string | null>(null)
   const [calibrationReturnStep, setCalibrationReturnStep] = useState<'review_center' | 'coexistence'>('review_center')
+
+  const handleSkip = useCallback(async () => {
+    trackEvent({ event_name: 'onboarding_skipped' })
+    const result = await skipOnboarding()
+    if (result.success) {
+      router.push(ROUTES.dashboard.root)
+    } else {
+      // Fallback if mark failed — still try to navigate to settings
+      router.replace(ROUTES.dashboard.settings)
+    }
+  }, [router])
 
   useEffect(() => {
     trackEvent({ event_name: 'onboarding_started' })
@@ -229,7 +241,7 @@ export const OnboardingForm = ({
         />
         <button
           type="button"
-          onClick={() => router.replace(ROUTES.dashboard.settings)}
+          onClick={handleSkip}
           className="w-full rounded-sm border border-border bg-card px-4 py-2.5 text-sm font-semibold text-foreground transition-colors duration-150 hover:bg-muted"
         >
           Skip for now
@@ -266,7 +278,7 @@ export const OnboardingForm = ({
         </button>
         <button
           type="button"
-          onClick={() => router.replace(ROUTES.dashboard.settings)}
+          onClick={handleSkip}
           className="w-full rounded-sm border border-border bg-card px-4 py-2.5 text-sm font-semibold text-foreground transition-colors duration-150 hover:bg-muted"
         >
           Skip for now
@@ -462,7 +474,7 @@ export const OnboardingForm = ({
         </SubmitButton>
         <button
           type="button"
-          onClick={() => router.replace(ROUTES.dashboard.settings)}
+          onClick={handleSkip}
           className="w-full rounded-sm border border-border bg-card px-4 py-2.5 text-sm font-semibold text-foreground transition-colors duration-150 hover:bg-muted"
         >
           Skip for now

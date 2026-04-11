@@ -1,6 +1,7 @@
 'use server'
 
 import { createClient, getUser } from '@/lib/supabase/server'
+import { createAdminClient } from '@/lib/supabase/admin'
 import { revalidatePath } from 'next/cache'
 import { revalidateDashboardCacheTags } from './cache-tags'
 import { ROUTES } from '@/lib/routes'
@@ -279,5 +280,50 @@ export const uploadAvatar = async (formData: FormData) => {
   } catch (err) {
     console.error('[PROFILE: uploadAvatar]', err)
     return { error: 'Failed to upload avatar.' }
+  }
+}
+
+/**
+ * Marks onboarding as "skipped" by setting the timestamp.
+ * Allows user to access the dashboard without completing the full form.
+ */
+export const skipOnboarding = async (): Promise<{ success: boolean; error?: string }> => {
+  try {
+    const { data: { user } } = await getUser()
+    if (!user) return { success: false, error: 'Not authenticated.' }
+
+    const supabase = createAdminClient()
+    const timestamp = new Date().toISOString()
+
+    const [
+      { error: profileError },
+      { error: statsError },
+    ] = await Promise.all([
+      supabase
+        .from('profiles')
+        .update({ onboarding_completed_at: timestamp })
+        .eq('id', user.id),
+      supabase
+        .from('user_global_stats')
+        .upsert({ 
+          user_id: user.id, 
+          onboarding_completed_at: timestamp,
+          updated_at: timestamp
+        }, { onConflict: 'user_id' }),
+    ])
+
+    if (profileError || statsError) {
+      console.error('[PROFILE: skipOnboarding]', { profileError, statsError })
+      return { success: false, error: 'Failed to skip onboarding.' }
+    }
+
+    revalidateDashboardCacheTags(user.id)
+    revalidatePath(ROUTES.dashboard.root, 'layout')
+    revalidatePath(ROUTES.dashboard.settings)
+
+    return { success: true }
+  } catch (err) {
+    console.error('[PROFILE: skipOnboarding]', err)
+    return { success: false, error: 'An unexpected error occurred.' }
   }
 }
