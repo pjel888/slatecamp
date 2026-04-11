@@ -1,5 +1,7 @@
 import { createClient } from '@/lib/supabase/server'
 import { redirect } from 'next/navigation'
+import { resolveCurrentUserRole } from '@/lib/entitlements/resolve-role'
+import { canAccessCeoPortalForRole } from '@/lib/entitlements/policy'
 
 /**
  * Verify CEO access in Server Components. Redirects on failure.
@@ -10,20 +12,21 @@ export const verifyCeoAccess = async () => {
   const { data: { user } } = await supabase.auth.getUser()
 
   if (!user) redirect('/login')
+  const roleResolution = await resolveCurrentUserRole()
 
   const { data: profile } = await supabase
     .from('profiles')
-    .select('role, display_name')
+    .select('display_name')
     .eq('id', user.id)
     .single()
 
-  if (!profile || !['ceo', 'super_admin'].includes(profile.role ?? '')) {
+  if (!canAccessCeoPortalForRole(roleResolution.normalizedRole)) {
     redirect('/dashboard')
   }
 
   return {
     user,
-    profile: profile as { role: string; display_name: string | null },
+    profile: { role: roleResolution.normalizedRole, display_name: profile?.display_name ?? null },
     supabase,
   }
 }
@@ -37,14 +40,9 @@ export const assertCeoRole = async () => {
   const { data: { user } } = await supabase.auth.getUser()
 
   if (!user) throw new Error('Unauthorized: not authenticated')
+  const roleResolution = await resolveCurrentUserRole()
 
-  const { data: profile } = await supabase
-    .from('profiles')
-    .select('role')
-    .eq('id', user.id)
-    .single()
-
-  if (!profile || !['ceo', 'super_admin'].includes(profile.role ?? '')) {
+  if (!canAccessCeoPortalForRole(roleResolution.normalizedRole)) {
     throw new Error('Forbidden: CEO access required')
   }
 

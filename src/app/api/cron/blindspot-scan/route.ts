@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server'
 import { createAdminClient } from '@/lib/supabase/admin'
 import { headers } from 'next/headers'
+import { normalizeTierValue, isPaidSubscription } from '@/lib/entitlements/normalize-tier'
+import { logEntitlementAuditEvent } from '@/lib/entitlements/audit'
 
 /**
  * Blindspot Protocol — Nightly Scan Cron Job
@@ -49,7 +51,7 @@ const getPriorityScore = (
   return (1 - mastery) * frequencyWeight * typeWeight
 }
 
-export async function GET(request: Request) {
+export async function GET(_request: Request) {
   // Verify cron secret
   const headersList = await headers()
   const authHeader = headersList.get('authorization')
@@ -95,7 +97,17 @@ export async function GET(request: Request) {
 
   const paidUsers = new Set(
     (subscriptions ?? [])
-      .filter(s => (s.status === 'active' || s.status === 'trialing') && s.tier !== 'free')
+      .filter((s) => {
+        try {
+          const normalizedTier = normalizeTierValue(
+            s.tier,
+            'blindspot-scan:user_subscriptions.tier',
+          ).tier
+          return isPaidSubscription(normalizedTier, s.status)
+        } catch {
+          return false
+        }
+      })
       .map(s => s.user_id)
   )
 
@@ -250,6 +262,38 @@ export async function GET(request: Request) {
     .update({ status: 'expired' })
     .eq('status', 'pending')
     .lt('created_at', sevenDaysAgo)
+
+  logEntitlementAuditEvent({
+    eventName: 'entitlement.decision',
+    timestamp: new Date().toISOString(),
+    traceId: globalThis.crypto.randomUUID(),
+    userId: null,
+    routeOrAction: 'cron:blindspot-scan',
+    featureKey: 'blindspot_protocol',
+    normalizedRole: 'anonymous',
+    roleSource: 'none',
+    rawTier: 'free',
+    subscriptionStatus: 'unknown',
+    effectiveTier: 'free',
+    overrideState: {
+      simulatedTier: null,
+      legacySpoofedTier: null,
+      forcedTier: null,
+      forcedUserIdActive: false,
+      localDevBypassActive: false,
+      allowDevPortalBypass: false,
+      featureOverrides: {},
+      sourceTrace: [`eligibleUsers:${eligibleUserIds.length}`],
+    },
+    decision: true,
+    decisionSource: 'blindspot-scan',
+    trace: [
+      `processed:${userIds.length}`,
+      `queuesCreated:${queuesCreated}`,
+      `skipped:${userIds.length - eligibleUserIds.length}`,
+      `expired:${expired ?? 0}`,
+    ],
+  })
 
   return NextResponse.json({
     processed: userIds.length,

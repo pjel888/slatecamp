@@ -1,11 +1,11 @@
 import { redirect } from 'next/navigation'
 import { ROUTES } from '@/lib/routes'
-import { getAdminAwareProfile } from '@/lib/admin/get-admin-profile'
 import { getProfileData } from '@/lib/actions/profile'
 import { getUserEmailPreferences } from '@/lib/actions/email-preferences'
 import { fetchNotificationPreferences } from '@/lib/queries/notifications'
 import { getProfessionalModeData } from '@/lib/actions/professional-mode'
 import { NotificationPreferences } from '@/components/notifications/NotificationPreferences'
+import { getViewerEntitlements } from '@/lib/entitlements/get-viewer-entitlements'
 
 import { LogoutCard } from './logout-card'
 import { DisciplineCard } from './discipline-card'
@@ -32,13 +32,13 @@ const DEFAULT_NOTIFICATION_PREFS = {
 } as const
 
 export default async function SettingsPage() {
-  const profile = await getAdminAwareProfile()
-  if (!profile) redirect(ROUTES.LOGIN)
+  const entitlements = await getViewerEntitlements()
+  if (!entitlements.userId) redirect(ROUTES.LOGIN)
 
   const [profileData, emailPrefs, notifPrefsResult, professionalModeData] = await Promise.all([
     getProfileData(),
     getUserEmailPreferences(),
-    fetchNotificationPreferences(profile.id),
+    fetchNotificationPreferences(entitlements.userId),
     getProfessionalModeData(),
   ])
 
@@ -46,7 +46,7 @@ export default async function SettingsPage() {
 
   return (
     <div className='max-w-2xl mx-auto space-y-8'>
-      {!profile.onboarding_completed && (
+      {!profileData?.onboarding_completed_at && (
         <div className='rounded-md border border-primary/20 bg-primary/5 px-4 py-4'>
           <p className='text-sm font-semibold text-foreground'>Your setup is not complete yet.</p>
           <p className='mt-1 text-sm text-muted-foreground'>
@@ -60,7 +60,7 @@ export default async function SettingsPage() {
         initialAvatarUrl={profileData?.avatar_url ?? null}
         initialExamDate={profileData?.target_exam_date ?? null}
         initialEnrolledReviewCenter={profileData?.enrolled_review_center ?? null}
-        initialOnboardingCompleted={profile.onboarding_completed}
+        initialOnboardingCompleted={Boolean(profileData?.onboarding_completed_at)}
         initialReviewerType={profileData?.reviewer_type ?? null}
         initialStudyWindow={profileData?.preferred_study_window ?? null}
       />

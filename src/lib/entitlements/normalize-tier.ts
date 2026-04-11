@@ -73,6 +73,16 @@ export const tierMeetsMinimum = (tier: UserTier, minimumTier: UserTier): boolean
   return rank[tier] >= rank[minimumTier]
 }
 
+export const isActiveSubscriptionStatus = (status: string | null | undefined): boolean =>
+  status === 'active' || status === 'trialing'
+
+export const isPaidTier = (tier: UserTier): boolean => tier !== 'free'
+
+export const isPaidSubscription = (
+  tier: UserTier,
+  status: string | null | undefined,
+): boolean => isActiveSubscriptionStatus(status) && isPaidTier(tier)
+
 export const toConfigMismatchEvent = (
   traceId: string,
   userId: string | null,

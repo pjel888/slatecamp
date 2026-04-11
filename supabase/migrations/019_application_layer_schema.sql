@@ -49,6 +49,9 @@ CREATE INDEX IF NOT EXISTS idx_interactions_session_order
   ON public.user_interactions(session_id, question_order);
 
 -- ── High #3: Populate feature_flags with all paywall rules ──
+-- Canonical target_tier values:
+--   free | pro | prime | institutional | enterprise
+-- Legacy values such as camp / insurance are deprecated.
 -- Only insert if the table is empty (avoid duplicates on re-run)
 INSERT INTO public.feature_flags (key, description, enabled, target_tier)
 SELECT * FROM (VALUES

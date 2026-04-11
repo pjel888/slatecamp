@@ -8,7 +8,10 @@ import {
   DEV_OVERRIDE_COOKIE_NAME,
   serializeDevOverrides,
 } from "@/lib/entitlements/dev-overrides";
-import { logEntitlementAuditEvent } from "@/lib/entitlements/audit";
+import {
+  logEntitlementAuditEvent,
+  serializeOverrideState,
+} from "@/lib/entitlements/audit";
 
 export async function POST(request: Request) {
   try {
@@ -44,12 +47,7 @@ export async function POST(request: Request) {
         rawTier: entitlements.rawTier,
         subscriptionStatus: entitlements.subscriptionStatus,
         effectiveTier: entitlements.effectiveTier,
-        overrideState: {
-          ...entitlements.overrides,
-          featureOverrides: Object.fromEntries(
-            Object.entries(entitlements.overrides.featureOverrides),
-          ),
-        },
+        overrideState: serializeOverrideState(entitlements.overrides),
         decision: true,
         decisionSource: 'api.admin.flags',
         trace: ['override:write'],
@@ -103,12 +101,7 @@ export async function DELETE() {
       rawTier: entitlements.rawTier,
       subscriptionStatus: entitlements.subscriptionStatus,
       effectiveTier: entitlements.effectiveTier,
-      overrideState: {
-        ...entitlements.overrides,
-        featureOverrides: Object.fromEntries(
-          Object.entries(entitlements.overrides.featureOverrides),
-        ),
-      },
+      overrideState: serializeOverrideState(entitlements.overrides),
       decision: true,
       decisionSource: 'api.admin.flags',
       trace: ['override:delete'],

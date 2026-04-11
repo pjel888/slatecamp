@@ -1,6 +1,12 @@
 "use server";
 
 import { createClient, getUser } from "@/lib/supabase/server";
+import { getViewerEntitlements } from "@/lib/entitlements/get-viewer-entitlements";
+import { ENTITLEMENT_FEATURE_KEYS } from "@/lib/entitlements/feature-keys";
+import {
+  logEntitlementAuditEvent,
+  serializeOverrideState,
+} from "@/lib/entitlements/audit";
 
 export type FinalStretchPhase = "final_approach" | "countdown" | "final_week" | "exam_eve";
 
@@ -22,12 +28,13 @@ function getPhase(daysLeft: number): FinalStretchPhase {
 /**
  * Calculates Final Stretch state from user_global_stats.
  */
-export async function getFinalStretchState(
-  tier: string
-): Promise<FinalStretchState> {
+export async function getFinalStretchState(): Promise<FinalStretchState> {
   const supabase = await createClient();
   const { data: { user } } = await getUser();
   if (!user) return { active: false, daysLeft: null, phase: null, showUpsellModal: false };
+  const entitlements = await getViewerEntitlements([
+    ENTITLEMENT_FEATURE_KEYS.questionsUnlimited,
+  ])
 
   const { data: stats } = await supabase
     .from('user_global_stats')
@@ -52,7 +59,28 @@ export async function getFinalStretchState(
   }
 
   const phase = getPhase(daysLeft);
-  const showUpsellModal = tier === "free" && !stats.final_stretch_upsell_shown;
+  const isPaid =
+    entitlements.decisions[ENTITLEMENT_FEATURE_KEYS.questionsUnlimited]?.allowed ?? false
+  const showUpsellModal = !isPaid && !stats.final_stretch_upsell_shown;
+
+  logEntitlementAuditEvent({
+    eventName: showUpsellModal ? 'entitlement.denied' : 'entitlement.decision',
+    timestamp: new Date().toISOString(),
+    traceId: entitlements.traceId,
+    userId: entitlements.userId,
+    routeOrAction: 'final-stretch:getFinalStretchState',
+    featureKey: ENTITLEMENT_FEATURE_KEYS.questionsUnlimited,
+    normalizedRole: entitlements.normalizedRole,
+    roleSource: entitlements.roleResolution.resolvedFrom,
+    rawTier: entitlements.rawTier,
+    subscriptionStatus: entitlements.subscriptionStatus,
+    effectiveTier: entitlements.effectiveTier,
+    overrideState: serializeOverrideState(entitlements.overrides),
+    decision: !showUpsellModal,
+    denialReason: showUpsellModal ? 'insufficient_tier' : undefined,
+    decisionSource: 'final-stretch',
+    trace: ['final-stretch', `showUpsellModal=${showUpsellModal}`],
+  })
 
   return { active: true, daysLeft, phase, showUpsellModal };
 }

@@ -15,11 +15,7 @@ const BANNED_PATTERNS = [
       'src/lib/entitlements/resolve-entitlements.ts',
       'src/lib/entitlements/__tests__/',
       'scripts/check-entitlement-legacy-usage.ts',
-      'src/app/api/cron/blindspot-scan/route.ts',
-      'src/app/api/payments/checkout/route.ts',
-      'src/components/sidebar/MobileDrawer.tsx',
       'src/components/testing/hub/ReviewHub.tsx',
-      'src/lib/actions/final-stretch.ts',
     ],
   },
   {
@@ -43,6 +39,7 @@ const BANNED_PATTERNS = [
     message: 'Direct entitlement-affecting env usage is banned outside the canonical boundary.',
     allowlist: [
       'src/lib/entitlements/dev-overrides.ts',
+      'src/lib/entitlements/dev-overrides.test.ts',
       'src/lib/entitlements/get-viewer-entitlements.ts',
       'src/lib/entitlements/resolve-role.ts',
       'src/lib/demo/config.ts',

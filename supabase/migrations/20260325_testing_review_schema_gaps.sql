@@ -167,7 +167,7 @@ CREATE INDEX IF NOT EXISTS idx_endurance_profiles_user_id
 --
 -- 10 flags required for paywall gating and mode availability.
 -- feature_flags schema: id (UUID), key (TEXT UNIQUE), description (TEXT),
---   enabled (BOOLEAN), target_tier (TEXT[]), target_roles (TEXT[]),
+--   enabled (BOOLEAN), target_tier (TEXT[] canonical tiers only), target_roles (TEXT[] deprecated),
 --   created_by (UUID), created_at (TIMESTAMPTZ), updated_at (TIMESTAMPTZ)
 --
 -- All rows use ON CONFLICT (key) DO NOTHING — safe to re-run.

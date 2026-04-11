@@ -5,6 +5,10 @@ import { normalizeOptions, resolveRationaleText } from '@/lib/utils/question'
 import type { QuestionHistoryStats, ReviewDataResult, ReviewQuestionData } from '@/types/quiz-config'
 import { getViewerEntitlements } from '@/lib/entitlements/get-viewer-entitlements'
 import { ENTITLEMENT_FEATURE_KEYS } from '@/lib/entitlements/feature-keys'
+import {
+  logEntitlementAuditEvent,
+  serializeOverrideState,
+} from '@/lib/entitlements/audit'
 
 export const getReviewData = async (
   sessionId: string,
@@ -199,6 +203,25 @@ export const getReviewData = async (
   ])
   const isPro =
     entitlements.decisions[ENTITLEMENT_FEATURE_KEYS.questionsUnlimited]?.allowed ?? false
+
+  logEntitlementAuditEvent({
+    eventName: isPro ? 'entitlement.decision' : 'entitlement.denied',
+    timestamp: new Date().toISOString(),
+    traceId: entitlements.traceId,
+    userId: entitlements.userId,
+    routeOrAction: 'quiz-v2:get-review-data',
+    featureKey: ENTITLEMENT_FEATURE_KEYS.questionsUnlimited,
+    normalizedRole: entitlements.normalizedRole,
+    roleSource: entitlements.roleResolution.resolvedFrom,
+    rawTier: entitlements.rawTier,
+    subscriptionStatus: entitlements.subscriptionStatus,
+    effectiveTier: entitlements.effectiveTier,
+    overrideState: serializeOverrideState(entitlements.overrides),
+    decision: isPro,
+    denialReason: isPro ? undefined : 'insufficient_tier',
+    decisionSource: 'quiz-v2.get-review-data',
+    trace: ['question-history'],
+  })
 
   // 9. Fetch per-question history for Pro users
   // Batch in chunks of 80 to avoid Supabase header overflow on fullexam (200 questions)

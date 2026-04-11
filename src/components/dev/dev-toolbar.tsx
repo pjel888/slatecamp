@@ -21,8 +21,8 @@ import type { Icon as PhosphorIcon } from '@phosphor-icons/react/lib'
 import { useDraggableFloatingPosition } from '@/lib/hooks/useDraggableFloatingPosition'
 import { useDevStore } from '@/stores/dev-store'
 import type { UserTier } from '@/types/app'
-import type { FeatureFlags } from '@/lib/admin/feature-flags'
 import type { DevConnectionState } from '@/lib/dev/dev-mode'
+import type { FeatureFlags } from '@/lib/entitlements/dev-overrides'
 
 const DEFAULT_RIGHT = 16
 const DEFAULT_BOTTOM = 16

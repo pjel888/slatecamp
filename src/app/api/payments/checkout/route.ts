@@ -2,6 +2,17 @@ import { NextResponse } from "next/server";
 import { createClient } from "@/lib/supabase/server";
 import { createCheckout, isPaymentEnabled } from "@/lib/payments/provider";
 import { isDemoMode } from "@/lib/demo/config";
+import {
+  logEntitlementAuditEvent,
+  serializeOverrideState,
+} from "@/lib/entitlements/audit";
+import { getViewerEntitlements } from "@/lib/entitlements/get-viewer-entitlements";
+import { ENTITLEMENT_FEATURE_KEYS } from "@/lib/entitlements/feature-keys";
+
+const CHECKOUT_TIERS = ["pro", "prime", "institutional"] as const;
+type CheckoutTier = (typeof CHECKOUT_TIERS)[number]
+const isCheckoutTier = (value: unknown): value is CheckoutTier =>
+  typeof value === "string" && CHECKOUT_TIERS.includes(value as CheckoutTier)
 
 export async function POST(request: Request) {
   if (!isPaymentEnabled()) {
@@ -31,9 +42,16 @@ export async function POST(request: Request) {
 
   const { tier } = await request.json();
 
-  if (tier === "free") {
-    return NextResponse.json({ error: "Cannot checkout for free tier" }, { status: 400 });
+  if (!isCheckoutTier(tier)) {
+    return NextResponse.json(
+      { error: "Unsupported checkout tier" },
+      { status: 400 },
+    );
   }
+
+  const entitlements = await getViewerEntitlements([
+    ENTITLEMENT_FEATURE_KEYS.questionsUnlimited,
+  ])
 
   const origin = request.headers.get("origin") ?? process.env.NEXT_PUBLIC_APP_URL ?? "";
 
@@ -44,6 +62,24 @@ export async function POST(request: Request) {
       tier,
       successUrl: `${origin}/dashboard/settings/billing?success=true`,
       cancelUrl: `${origin}/dashboard/settings/billing?cancelled=true`,
+    });
+
+    logEntitlementAuditEvent({
+      eventName: 'entitlement.decision',
+      timestamp: new Date().toISOString(),
+      traceId: entitlements.traceId,
+      userId: entitlements.userId,
+      routeOrAction: 'api/payments/checkout',
+      featureKey: ENTITLEMENT_FEATURE_KEYS.questionsUnlimited,
+      normalizedRole: entitlements.normalizedRole,
+      roleSource: entitlements.roleResolution.resolvedFrom,
+      rawTier: entitlements.rawTier,
+      subscriptionStatus: entitlements.subscriptionStatus,
+      effectiveTier: entitlements.effectiveTier,
+      overrideState: serializeOverrideState(entitlements.overrides),
+      decision: true,
+      decisionSource: `checkout:${tier}`,
+      trace: [`checkout-tier:${tier}`],
     });
 
     return NextResponse.json(result);

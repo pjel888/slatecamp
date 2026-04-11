@@ -204,6 +204,7 @@ Canonical boundary:
 - `src/lib/entitlements/audit.ts`
 
 Compatibility wrappers remain in `src/lib/admin/*`, `src/lib/paywall/check-access.ts`, and `src/lib/subscription/get-tier.ts` during migration.
+After the finalization pass, the low-fanout wrappers `src/lib/admin/feature-flags.ts`, `src/lib/admin/get-admin-profile.ts`, `src/lib/paywall/check-access.ts`, `src/lib/subscription/get-tier.ts`, and `src/lib/actions/feature-flags.ts` were removed. The remaining compatibility surface is limited to admin-facing role/policy facades.
 
 Governance:
 - `scripts/check-entitlement-legacy-usage.ts`

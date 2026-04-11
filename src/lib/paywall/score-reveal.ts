@@ -4,6 +4,10 @@ import { createClient } from '@/lib/supabase/server'
 import { FEATURE_PAYMENTS_ENABLED } from '@/lib/constants/feature-flags'
 import { getViewerEntitlements } from '@/lib/entitlements/get-viewer-entitlements'
 import { ENTITLEMENT_FEATURE_KEYS } from '@/lib/entitlements/feature-keys'
+import {
+  logEntitlementAuditEvent,
+  serializeOverrideState,
+} from '@/lib/entitlements/audit'
 
 /**
  * Check if the free user has already seen the score reveal.
@@ -24,7 +28,26 @@ export const checkScoreRevealAccess = async (userId: string): Promise<{
   const paidAccess =
     entitlements.decisions[ENTITLEMENT_FEATURE_KEYS.readinessScoreLive]?.allowed ?? false
 
-  if (paidAccess) return { canView: true, shownAt: null }
+  if (paidAccess) {
+    logEntitlementAuditEvent({
+      eventName: 'entitlement.decision',
+      timestamp: new Date().toISOString(),
+      traceId: entitlements.traceId,
+      userId: entitlements.userId,
+      routeOrAction: 'paywall:score-reveal',
+      featureKey: ENTITLEMENT_FEATURE_KEYS.readinessScoreLive,
+      normalizedRole: entitlements.normalizedRole,
+      roleSource: entitlements.roleResolution.resolvedFrom,
+      rawTier: entitlements.rawTier,
+      subscriptionStatus: entitlements.subscriptionStatus,
+      effectiveTier: entitlements.effectiveTier,
+      overrideState: serializeOverrideState(entitlements.overrides),
+      decision: true,
+      decisionSource: 'score-reveal',
+      trace: ['paid-score-reveal'],
+    })
+    return { canView: true, shownAt: null }
+  }
 
   const supabase = await createClient()
 
@@ -36,6 +59,24 @@ export const checkScoreRevealAccess = async (userId: string): Promise<{
     .single()
 
   if (stats?.score_reveal_shown_at) {
+    logEntitlementAuditEvent({
+      eventName: 'entitlement.denied',
+      timestamp: new Date().toISOString(),
+      traceId: entitlements.traceId,
+      userId: entitlements.userId,
+      routeOrAction: 'paywall:score-reveal',
+      featureKey: ENTITLEMENT_FEATURE_KEYS.readinessScoreLive,
+      normalizedRole: entitlements.normalizedRole,
+      roleSource: entitlements.roleResolution.resolvedFrom,
+      rawTier: entitlements.rawTier,
+      subscriptionStatus: entitlements.subscriptionStatus,
+      effectiveTier: entitlements.effectiveTier,
+      overrideState: serializeOverrideState(entitlements.overrides),
+      decision: false,
+      denialReason: 'insufficient_tier',
+      decisionSource: 'score-reveal',
+      trace: ['score-already-revealed'],
+    })
     return { canView: false, shownAt: new Date(stats.score_reveal_shown_at) }
   }
 

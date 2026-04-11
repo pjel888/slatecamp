@@ -2,7 +2,7 @@ import crypto from 'node:crypto'
 import { createClient, getUser } from '@/lib/supabase/server'
 import type { UserTier } from '@/types/app'
 import { logEntitlementAuditEvent } from './audit'
-import type { EntitlementFeatureKey } from './feature-keys'
+import { type EntitlementFeatureKey, ENTITLEMENT_FEATURE_KEYS } from './feature-keys'
 import { normalizeFeatureFlagRecord } from './normalize-feature-flag'
 import { normalizeTierValue, toConfigMismatchEvent } from './normalize-tier'
 import { resolveDevOverrides } from './dev-overrides'
@@ -112,6 +112,41 @@ export const getViewerEntitlements = async (
   const normalizedFeatureFlags = Object.fromEntries(
     (featureFlagsResult.data ?? []).map((record) => {
       const normalized = normalizeFeatureFlagRecord(record)
+
+      if (!Object.values(ENTITLEMENT_FEATURE_KEYS).includes(normalized.key as EntitlementFeatureKey)) {
+        logEntitlementAuditEvent(
+          toConfigMismatchEvent(
+            traceId,
+            user.id,
+            normalized.key,
+            'feature_flags.key',
+          ),
+        )
+      }
+
+      if ((record.target_roles ?? []).length > 0) {
+        logEntitlementAuditEvent({
+          eventName: 'entitlement.config.mismatch',
+          timestamp: new Date().toISOString(),
+          traceId,
+          userId: user.id,
+          routeOrAction: 'feature_flags.target_roles',
+          featureKey: normalized.key,
+          normalizedRole: roleResolution.normalizedRole,
+          roleSource: roleResolution.resolvedFrom,
+          rawTier,
+          subscriptionStatus: normalizeSubscriptionStatus(subscription?.status ?? null),
+          effectiveTier: rawTier,
+          overrideState: {
+            ...overrides,
+            featureOverrides: Object.fromEntries(
+              Object.entries(overrides.featureOverrides),
+            ),
+          },
+          trace: ['target_roles_present_but_runtime_ignored'],
+        })
+      }
+
       return [normalized.key, normalized]
     }),
   ) as ViewerEntitlements['featureFlags']

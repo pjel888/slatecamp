@@ -4,6 +4,10 @@ import { createClient } from '@/lib/supabase/server'
 import { FEATURE_PAYMENTS_ENABLED } from '@/lib/constants/feature-flags'
 import { getViewerEntitlements } from '@/lib/entitlements/get-viewer-entitlements'
 import { ENTITLEMENT_FEATURE_KEYS } from '@/lib/entitlements/feature-keys'
+import {
+  logEntitlementAuditEvent,
+  serializeOverrideState,
+} from '@/lib/entitlements/audit'
 
 const FREE_DAILY_CAP = 20
 
@@ -31,6 +35,23 @@ export const checkDailyCap = async (userId: string): Promise<DailyCapResult> => 
     entitlements.decisions[ENTITLEMENT_FEATURE_KEYS.questionsUnlimited]?.allowed ?? false
 
   if (hasUnlimitedAccess) {
+    logEntitlementAuditEvent({
+      eventName: 'entitlement.decision',
+      timestamp: new Date().toISOString(),
+      traceId: entitlements.traceId,
+      userId: entitlements.userId,
+      routeOrAction: 'paywall:daily-cap',
+      featureKey: ENTITLEMENT_FEATURE_KEYS.questionsUnlimited,
+      normalizedRole: entitlements.normalizedRole,
+      roleSource: entitlements.roleResolution.resolvedFrom,
+      rawTier: entitlements.rawTier,
+      subscriptionStatus: entitlements.subscriptionStatus,
+      effectiveTier: entitlements.effectiveTier,
+      overrideState: serializeOverrideState(entitlements.overrides),
+      decision: true,
+      decisionSource: 'daily-cap',
+      trace: ['unlimited-questions'],
+    })
     return { allowed: true, remaining: Infinity, cap: Infinity, resetsAt: '' }
   }
 
@@ -59,12 +80,35 @@ export const checkDailyCap = async (userId: string): Promise<DailyCapResult> => 
   const remaining = Math.max(0, FREE_DAILY_CAP - questionsToday)
   const tomorrow = new Date(new Date(today).getTime() + 24 * 60 * 60 * 1000)
 
-  return {
+  const result = {
     allowed: remaining > 0,
     remaining,
     cap: FREE_DAILY_CAP,
     resetsAt: tomorrow.toISOString(),
   }
+
+  if (!result.allowed) {
+    logEntitlementAuditEvent({
+      eventName: 'entitlement.denied',
+      timestamp: new Date().toISOString(),
+      traceId: entitlements.traceId,
+      userId: entitlements.userId,
+      routeOrAction: 'paywall:daily-cap',
+      featureKey: ENTITLEMENT_FEATURE_KEYS.questionsUnlimited,
+      normalizedRole: entitlements.normalizedRole,
+      roleSource: entitlements.roleResolution.resolvedFrom,
+      rawTier: entitlements.rawTier,
+      subscriptionStatus: entitlements.subscriptionStatus,
+      effectiveTier: entitlements.effectiveTier,
+      overrideState: serializeOverrideState(entitlements.overrides),
+      decision: false,
+      denialReason: 'insufficient_tier',
+      decisionSource: 'daily-cap',
+      trace: [`remaining:${remaining}`],
+    })
+  }
+
+  return result
 }
 
 /**

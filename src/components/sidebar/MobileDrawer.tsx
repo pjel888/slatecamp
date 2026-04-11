@@ -21,7 +21,8 @@ interface MobileDrawerProps {
   isOpen: boolean
   onClose: () => void
   userDisplay: { name: string; avatarUrl: string | null }
-  tier: string
+  tierLabel: string
+  showTierBadge: boolean
 }
 
 // ---------------------------------------------------------------------------
@@ -100,7 +101,13 @@ const MobileNavItem = ({ item, isActive, onNavigate }: MobileNavItemProps) => {
 // MobileDrawer
 // ---------------------------------------------------------------------------
 
-export const MobileDrawer = ({ isOpen, onClose, userDisplay, tier }: MobileDrawerProps) => {
+export const MobileDrawer = ({
+  isOpen,
+  onClose,
+  userDisplay,
+  tierLabel,
+  showTierBadge,
+}: MobileDrawerProps) => {
   const pathname = usePathname()
   const router = useRouter()
   const closeButtonRef = useRef<HTMLButtonElement>(null)
@@ -111,7 +118,6 @@ export const MobileDrawer = ({ isOpen, onClose, userDisplay, tier }: MobileDrawe
   // Close on route change
   useEffect(() => {
     onClose()
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pathname])
 
   // Escape key closes drawer
@@ -337,9 +343,9 @@ export const MobileDrawer = ({ isOpen, onClose, userDisplay, tier }: MobileDrawe
                 <p className="truncate text-[13px] font-medium text-text-primary dark:text-gray-100">
                   {userDisplay.name}
                 </p>
-                {tier && tier !== 'free' && (
+                {showTierBadge && tierLabel && (
                   <span className="shrink-0 rounded-[3px] bg-primary-50 px-1 py-px font-mono text-[11px] font-medium uppercase text-camp-cobalt">
-                    {tier}
+                    {tierLabel}
                   </span>
                 )}
               </div>

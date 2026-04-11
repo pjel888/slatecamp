@@ -6,10 +6,15 @@ import { MobileDrawer } from './MobileDrawer'
 
 interface MobileSidebarShellProps {
   userDisplay: { name: string; avatarUrl: string | null }
-  tier: string
+  tierLabel: string
+  showTierBadge: boolean
 }
 
-export const MobileSidebarShell = ({ userDisplay, tier }: MobileSidebarShellProps) => {
+export const MobileSidebarShell = ({
+  userDisplay,
+  tierLabel,
+  showTierBadge,
+}: MobileSidebarShellProps) => {
   const [drawerOpen, setDrawerOpen] = useState(false)
 
   return (
@@ -19,7 +24,8 @@ export const MobileSidebarShell = ({ userDisplay, tier }: MobileSidebarShellProp
         isOpen={drawerOpen}
         onClose={() => setDrawerOpen(false)}
         userDisplay={userDisplay}
-        tier={tier}
+        tierLabel={tierLabel}
+        showTierBadge={showTierBadge}
       />
     </>
   )

@@ -110,7 +110,11 @@ const DashboardLayoutContent = async ({ children }: DashboardLayoutContentProps)
                     name: user.user_metadata?.full_name ?? user.email ?? 'User',
                     avatarUrl: user.user_metadata?.avatar_url ?? user.user_metadata?.picture ?? null,
                   }}
-                  tier={effectiveTier}
+                  tierLabel={effectiveTier}
+                  showTierBadge={
+                    entitlements.decisions[ENTITLEMENT_FEATURE_KEYS.questionsUnlimited]?.allowed ??
+                    false
+                  }
                 />
               {/* Desktop layout: sidebar + content in flex row */}
               <div className='flex flex-1 min-h-0'>

@@ -2,6 +2,8 @@ import { redirect } from 'next/navigation'
 import { ROUTES } from '@/lib/routes'
 import { createClient } from '@/lib/supabase/server'
 import { CeoShell } from './_components/CeoShell'
+import { resolveCurrentUserRole } from '@/lib/entitlements/resolve-role'
+import { canAccessCeoPortalForRole } from '@/lib/entitlements/policy'
 
 export const metadata = {
   title: 'CEO Dashboard — SlateCamp',
@@ -16,19 +18,20 @@ export default async function CeoLayout({
   const { data: { user } } = await supabase.auth.getUser()
 
   if (!user) redirect(ROUTES.auth.login)
+  const roleResolution = await resolveCurrentUserRole()
 
   const { data: profile } = await supabase
     .from('profiles')
-    .select('role, display_name')
+    .select('display_name')
     .eq('id', user.id)
     .single()
 
-  if (!profile || !['ceo', 'super_admin'].includes(profile.role ?? '')) {
+  if (!canAccessCeoPortalForRole(roleResolution.normalizedRole)) {
     redirect(ROUTES.dashboard.root)
   }
 
   return (
-    <CeoShell displayName={profile.display_name || 'CEO'}>
+    <CeoShell displayName={profile?.display_name || 'CEO'}>
       {children}
     </CeoShell>
   )

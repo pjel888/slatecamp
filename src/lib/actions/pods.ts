@@ -5,6 +5,10 @@ import { revalidatePath } from 'next/cache'
 import { ROUTES } from '@/lib/routes'
 import { getViewerEntitlements } from '@/lib/entitlements/get-viewer-entitlements'
 import { ENTITLEMENT_FEATURE_KEYS } from '@/lib/entitlements/feature-keys'
+import {
+  logEntitlementAuditEvent,
+  serializeOverrideState,
+} from '@/lib/entitlements/audit'
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -62,11 +66,47 @@ export const createPod = async (
     entitlements.decisions[ENTITLEMENT_FEATURE_KEYS.questionsUnlimited]?.allowed ?? false
 
   if (!hasPodAccess) {
+    logEntitlementAuditEvent({
+      eventName: 'entitlement.denied',
+      timestamp: new Date().toISOString(),
+      traceId: entitlements.traceId,
+      userId: entitlements.userId,
+      routeOrAction: 'pods:createPod',
+      featureKey: ENTITLEMENT_FEATURE_KEYS.questionsUnlimited,
+      normalizedRole: entitlements.normalizedRole,
+      roleSource: entitlements.roleResolution.resolvedFrom,
+      rawTier: entitlements.rawTier,
+      subscriptionStatus: entitlements.subscriptionStatus,
+      effectiveTier: entitlements.effectiveTier,
+      overrideState: serializeOverrideState(entitlements.overrides),
+      decision: false,
+      denialReason: 'insufficient_tier',
+      decisionSource: 'pods.createPod',
+      trace: ['study-pods'],
+    })
     return {
       ok: false,
       error: 'Study Pods are available to Pro subscribers only.',
     }
   }
+
+  logEntitlementAuditEvent({
+    eventName: 'entitlement.decision',
+    timestamp: new Date().toISOString(),
+    traceId: entitlements.traceId,
+    userId: entitlements.userId,
+    routeOrAction: 'pods:createPod',
+    featureKey: ENTITLEMENT_FEATURE_KEYS.questionsUnlimited,
+    normalizedRole: entitlements.normalizedRole,
+    roleSource: entitlements.roleResolution.resolvedFrom,
+    rawTier: entitlements.rawTier,
+    subscriptionStatus: entitlements.subscriptionStatus,
+    effectiveTier: entitlements.effectiveTier,
+    overrideState: serializeOverrideState(entitlements.overrides),
+    decision: true,
+    decisionSource: 'pods.createPod',
+    trace: ['study-pods'],
+  })
 
   const trimmed = name.trim()
   if (!trimmed) return { ok: false, error: 'Pod name is required.' }

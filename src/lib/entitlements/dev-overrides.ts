@@ -17,6 +17,8 @@ export interface DevOverrideCookiePayload {
   bypassSrsGate?: boolean
 }
 
+export type FeatureFlags = DevOverrideCookiePayload
+
 const EMPTY_OVERRIDES: DevOverrideState = {
   simulatedTier: null,
   legacySpoofedTier: null,

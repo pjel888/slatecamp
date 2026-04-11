@@ -17,6 +17,10 @@ import type {
 } from '@/types/quiz-config'
 import { getViewerEntitlements } from '@/lib/entitlements/get-viewer-entitlements'
 import { ENTITLEMENT_FEATURE_KEYS } from '@/lib/entitlements/feature-keys'
+import {
+  logEntitlementAuditEvent,
+  serializeOverrideState,
+} from '@/lib/entitlements/audit'
 
 const DB_TEST_MODE_BY_APP_MODE: Record<StartSessionInput['mode'], string> = {
   camp: 'camp',
@@ -81,6 +85,24 @@ export const startSession = async (
         entitlements.decisions[ENTITLEMENT_FEATURE_KEYS.questionsUnlimited]?.allowed ?? false
 
       if (!hasProAccess) {
+        logEntitlementAuditEvent({
+          eventName: 'entitlement.denied',
+          timestamp: new Date().toISOString(),
+          traceId: entitlements.traceId,
+          userId: entitlements.userId,
+          routeOrAction: `quiz-v2:start-session:${parsedInput.mode}`,
+          featureKey: ENTITLEMENT_FEATURE_KEYS.questionsUnlimited,
+          normalizedRole: entitlements.normalizedRole,
+          roleSource: entitlements.roleResolution.resolvedFrom,
+            rawTier: entitlements.rawTier,
+            subscriptionStatus: entitlements.subscriptionStatus,
+            effectiveTier: entitlements.effectiveTier,
+            overrideState: serializeOverrideState(entitlements.overrides),
+          decision: false,
+          denialReason: 'insufficient_tier',
+          decisionSource: 'quiz-v2.start-session',
+          trace: [`mode:${parsedInput.mode}`],
+        })
         return {
           success: false,
           error: 'TIER_INSUFFICIENT',
@@ -91,6 +113,24 @@ export const startSession = async (
           requiredTier: 'pro',
         }
       }
+
+      logEntitlementAuditEvent({
+        eventName: 'entitlement.decision',
+        timestamp: new Date().toISOString(),
+        traceId: entitlements.traceId,
+        userId: entitlements.userId,
+        routeOrAction: `quiz-v2:start-session:${parsedInput.mode}`,
+        featureKey: ENTITLEMENT_FEATURE_KEYS.questionsUnlimited,
+        normalizedRole: entitlements.normalizedRole,
+        roleSource: entitlements.roleResolution.resolvedFrom,
+        rawTier: entitlements.rawTier,
+        subscriptionStatus: entitlements.subscriptionStatus,
+        effectiveTier: entitlements.effectiveTier,
+        overrideState: serializeOverrideState(entitlements.overrides),
+        decision: true,
+        decisionSource: 'quiz-v2.start-session',
+        trace: [`mode:${parsedInput.mode}`],
+      })
     }
 
     const mergedConfig = mergeWithPreset(

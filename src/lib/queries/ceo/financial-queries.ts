@@ -5,6 +5,8 @@ import type {
   UnitEconomics,
   EngagementSnapshot,
 } from '@/types/ceo'
+import type { UserTier } from '@/types/app'
+import { TIER_PRICES } from '@/lib/utils/constants'
 
 // ============================================================================
 // getFinancialSummary
@@ -68,6 +70,12 @@ export const getFinancialSummary = async (): Promise<FinancialSummary> => {
 
 export const getRevenueBreakdown = async (): Promise<RevenueBreakdown[]> => {
   const supabase = await createClient()
+  const defaultAmountByTier: Partial<Record<UserTier, number>> = {
+    pro: TIER_PRICES.pro.amount,
+    prime: TIER_PRICES.prime.amount,
+    institutional: TIER_PRICES.institutional.amount,
+    enterprise: TIER_PRICES.institutional.amount,
+  }
 
   // Last 6 months
   const sixMonthsAgo = new Date()
@@ -101,11 +109,11 @@ export const getRevenueBreakdown = async (): Promise<RevenueBreakdown[]> => {
     const key = getMonthKey(row.created_at ?? '')
     if (!key) return
     if (!monthMap[key]) monthMap[key] = { proMonthly: 0, proExamPass: 0, institutional: 0 }
-    const tier = (row.tier ?? '') as string
-    const amt = row.amount ?? (tier === 'pro' ? 399 : tier === 'enterprise' ? 2499 : 0)
-    if (tier === 'enterprise') {
+    const tier = (row.tier ?? '') as UserTier
+    const amt = row.amount ?? defaultAmountByTier[tier] ?? 0
+    if (tier === 'institutional' || tier === 'enterprise') {
       monthMap[key].institutional += amt
-    } else if (tier === 'pro') {
+    } else if (tier === 'pro' || tier === 'prime') {
       monthMap[key].proMonthly += amt
     }
   })
@@ -165,7 +173,6 @@ export const getUnitEconomics = async (): Promise<UnitEconomics> => {
   const now = new Date()
   const monthStart = new Date(now.getFullYear(), now.getMonth(), 1).toISOString()
   const monthEnd = new Date(now.getFullYear(), now.getMonth() + 1, 0, 23, 59, 59).toISOString()
-  const prevMonthStart = new Date(now.getFullYear(), now.getMonth() - 1, 1).toISOString()
 
   // Total profiles (free users)
   const { count: totalUsers } = await supabase

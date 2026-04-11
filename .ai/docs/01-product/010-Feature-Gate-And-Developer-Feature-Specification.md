@@ -1,295 +1,104 @@
 # Feature Gate And Developer Feature Specification
 
-**Last Updated:** 2026-04-11  
-**Status:** Active - Codebase Source of Truth  
-**Version:** 1.0 (Comprehensive Codebase-Derived Specification)  
-**Audit Source:** `.ai/plans/2026-04-11_Dev-Mode-Audit.md`  
-**Cross-References:**  
-- [3D Lab Feature Specification](008-3d-lab-feature-specification.md)  
-- [Admin CMS Feature Specification](009-admin-feature-specification.md)
+**Last Updated:** 2026-04-12  
+**Status:** Active - Post-Finalization Codebase Source of Truth  
+**Version:** 2.0  
+**Primary Evidence:**  
+- [2026-04-11_Enterprise-Grade-Feature-Gate-Execution-Report.md](</C:/Users/Philip Lewis/Desktop/slatecamp/.ai/plans/2026-04-11_Enterprise-Grade-Feature-Gate-Execution-Report.md>)  
+- [2026-04-11_Entitlement-Migration-Ledger.md](</C:/Users/Philip Lewis/Desktop/slatecamp/.ai/plans/2026-04-11_Entitlement-Migration-Ledger.md>)  
+- [2026-04-11_Enterprise-Grade-Feature-Gate-Finalization-Plan.md](</C:/Users/Philip Lewis/Desktop/slatecamp/.ai/plans/2026-04-11_Enterprise-Grade-Feature-Gate-Finalization-Plan.md>)
 
-> This document is the authoritative specification for SlateCamp's live feature-gate and developer-mode architecture.
-> Every claim is derived from and verified against the current codebase as of 2026-04-11.
-> This document is intentionally scoped to entitlement behavior, internal developer-mode behavior, and their enforcement layers.
-> It is not a pricing catalog, webhook specification, or billing system overview.
+> This document is the authoritative product/engineering specification for SlateCamp's live entitlement, feature-gate, pricing-tier, and developer-tooling architecture after the enterprise-grade finalization pass.
+> Every claim here is derived from the current codebase and the execution records above.
 
 ---
 
-## 1. Overview and Principles
+## 1. Overview
 
-### Purpose
+SlateCamp now uses one canonical entitlement platform for:
 
-SlateCamp uses a layered entitlement model that combines:
-
-- subscription tier
 - role resolution
-- explicit access-policy helpers
-- dev-mode cookie overrides
-- environment-based local/demo behavior
-- feature-specific enforcement in routes, layouts, and server actions
+- privileged policy
+- tier normalization
+- feature-key vocabulary
+- dev override parsing
+- server-derived viewer entitlement payloads
+- structured allow/deny and override auditability
 
-This document defines how those layers work together today.
+The canonical runtime boundary is `src/lib/entitlements/`.
 
-### Governing Principles
+This document covers:
 
-1. **Code-derived only**  
-   The system is documented from live code, not intended future policy.
+- current storage and vocabulary
+- canonical runtime modules
+- policy and override behavior
+- paid/internal gate enforcement
+- developer tooling access rules
+- audit and governance behavior
+- removed legacy engines
+- remaining compatibility facades and caveats
 
-2. **Identity is not policy**  
-   Role discovery and entitlement decisions are separate layers.
+This document does not cover:
 
-3. **Internal tooling is not a paid feature**  
-   Developer-mode and internal bypass behavior are explicit policy decisions, not accidents of `NODE_ENV`.
-
-4. **Effective tier is the key runtime abstraction**  
-   Product gates should prefer effective tier over raw DB tier when internal or simulated overrides are intended.
-
-5. **Residual inconsistency must be documented**  
-   Not every entitlement surface is fully unified yet. Remaining raw subscription checks are called out explicitly.
-
----
-
-## 2. Purpose and Audience
-
-### Primary Audiences
-
-| Audience | Why this doc exists |
-|---|---|
-| Product / founder | Understand what is actually gated and how internal access works |
-| Engineering | Use one reference for entitlement and developer-mode behavior |
-| Admin / developer tooling maintainers | Avoid reintroducing raw role and raw tier logic |
-| Future auditors | Compare intended architecture to live implementation |
-
-### What this doc covers
-
-- role precedence
-- internal access policy
-- effective tier resolution
-- dev-mode cookie behavior
-- DB-backed feature flags
-- route/component/server-action gate enforcement
-- current developer tooling visibility rules
-
-### What this doc does not cover
-
-- payment provider webhook payloads
-- full pricing/checkout UX
-- general business plan packaging
-- speculative future access systems
+- payment webhook payload schemas
+- detailed pricing page copy
+- general marketing packaging
+- speculative future entitlement models
 
 ---
 
-## 3. Terminology
+## 2. Governing Principles
 
-| Term | Meaning in code |
-|---|---|
-| **Raw tier** | The user's tier as read from `user_subscriptions` |
-| **Effective tier** | The runtime tier after internal bypass, local mode, or dev cookie simulation |
-| **Role resolution** | The process of determining the strongest recognized internal role from multiple sources |
-| **Internal tier bypass** | Policy that grants elevated effective tier to specific internal roles |
-| **Dev flags** | Cookie-backed developer overrides stored in `cerebro_dev_flags` |
-| **Feature flags** | DB-backed rows in `feature_flags` used for product gating |
-| **Local mode** | `NEXT_PUBLIC_SUPABASE_URL` absent -> `getConnectionState()` returns `local` |
-| **Connected mode** | Live Supabase-backed environment |
-| **Developer mode** | Internal tooling/visibility system, not the same thing as a paid entitlement |
+1. **Canonical path first**  
+   Paid and privileged decisions are expected to flow through `src/lib/entitlements/*`.
 
-### Current role vocabulary
+2. **Identity, policy, and entitlements are distinct**  
+   Role discovery is not the same as policy, and policy is not the same as feature access.
 
-The live normalized role union in [`src/lib/admin/roles.ts`](C:/Users/Philip%20Lewis/Desktop/slatecamp/src/lib/admin/roles.ts) is:
+3. **Developer tooling is separate from admin CMS access**  
+   Internal tooling visibility and override write access are explicit policy decisions.
 
-- `super_admin`
-- `content_admin`
-- `sme_reviewer`
-- `developer`
-- `admin`
-- `ceo`
+4. **Storage normalization happens at the boundary**  
+   Legacy tier vocabulary is normalized once and not reinterpreted ad hoc across product code.
 
-`developer`, `admin`, and `ceo` are recognized by runtime role normalization even though not all are represented in `user_roles`.
+5. **Auditability is part of enforcement**  
+   Denies, allows, overrides, and config mismatches are structured events, not just booleans.
+
+6. **Governance prevents drift**  
+   New raw-tier and raw-role product gating patterns are blocked by a repo check.
 
 ---
 
-## 4. Storage and Persistence Model
+## 3. Canonical Module Boundary
 
-### Identity / entitlement sources
+Canonical modules under `src/lib/entitlements/`:
 
-| Source | Type | Purpose |
-|---|---|---|
-| `auth.users.app_metadata.role` | Supabase auth metadata | Role signal |
-| `auth.users.user_metadata.role` | Supabase auth metadata | Secondary role signal |
-| `profiles.role` | DB column | Role signal used by some portal logic |
-| `user_roles.role` | DB rows | Legacy/admin role rows |
-| `user_subscriptions.tier` | DB column | Raw subscription tier |
-| `user_subscriptions.status` | DB column | Active/trialing gating status |
-| `feature_flags` table | DB table | Product-level feature-flag rules |
-| `cerebro_dev_flags` | httpOnly cookie | Simulated tier and bypass flags |
+| Module | Responsibility |
+| --- | --- |
+| `feature-keys.ts` | Canonical feature-key vocabulary |
+| `types.ts` | Viewer entitlements, decision, role, policy, and audit event contracts |
+| `normalize-tier.ts` | Canonical tier normalization and paid-tier helpers |
+| `normalize-feature-flag.ts` | DB feature-flag normalization, including legacy paid-shape handling |
+| `dev-overrides.ts` | Cookie/env override parsing and serialization |
+| `policy.ts` | Canonical privileged policy helpers |
+| `resolve-role.ts` | Canonical role resolution |
+| `resolve-entitlements.ts` | Effective tier, capabilities, and feature-decision evaluation |
+| `get-viewer-entitlements.ts` | Canonical server payload for current viewer |
+| `audit.ts` | Structured entitlement event logging and persistence |
 
-### Current DB tables
+Client-side provider:
 
-From [`DATABASE_SCHEMA.sql`](C:/Users/Philip%20Lewis/Desktop/slatecamp/DATABASE_SCHEMA.sql):
+- [entitlement-context.tsx](/C:/Users/Philip Lewis/Desktop/slatecamp/src/lib/context/entitlement-context.tsx)
 
-#### `profiles`
-
-Relevant columns:
-- `id`
-- `role`
-- `full_name`
-- `display_name`
-- `onboarding_completed_at`
-
-#### `user_roles`
-
-Relevant columns:
-- `id`
-- `user_id`
-- `role`
-- `created_at`
-- `created_by`
-
-#### `user_subscriptions`
-
-Relevant columns:
-- `user_id`
-- `tier`
-- `status`
-- `amount`
-- `cancelled_at`
-
-#### `feature_flags`
-
-Relevant columns:
-- `key`
-- `description`
-- `enabled`
-- `target_tier`
-- `target_roles`
-
-### Cookie-backed dev-mode storage
-
-`src/lib/admin/feature-flags.ts` reads a cookie named:
-
-- `cerebro_dev_flags`
-
-The cookie shape maps to `DevModeConfig`:
-
-- `simulatedTier`
-- `bypass3dGate`
-- `bypassAiGate`
-- `bypassSrsGate`
-
-Legacy alias:
-
-- `spoofedTier`
-
-### Persistence boundaries
-
-| Mechanism | Persistence | Scope |
-|---|---|---|
-| `cerebro_dev_flags` cookie | 7 days | server-readable dev override state |
-| Zustand dev store | sessionStorage | client-only overlay/impersonation UI state |
-| Supabase role/tier tables | database | persistent identity and entitlement data |
+The old mixed entitlement center in `src/lib/admin/feature-flags.ts`, `src/lib/admin/get-admin-profile.ts`, `src/lib/paywall/check-access.ts`, and `src/lib/subscription/get-tier.ts` no longer exists.
 
 ---
 
-## 5. Identity Sources and Role Resolution
+## 4. Current Vocabulary
 
-### Canonical role resolver
+### Canonical tier vocabulary
 
-The canonical resolver is [`getUserRole()`](C:/Users/Philip%20Lewis/Desktop/slatecamp/src/lib/admin/roles.ts).
-
-It reads the current authenticated user and resolves the strongest recognized role across:
-
-1. `app_metadata.role`
-2. `user_metadata.role`
-3. `profiles.role`
-4. latest `user_roles.role`
-5. legacy `ADMIN_EMAILS` fallback
-
-### Recognized role precedence
-
-From `ROLE_PRIORITY` in [`roles.ts`](C:/Users/Philip%20Lewis/Desktop/slatecamp/src/lib/admin/roles.ts):
-
-| Role | Priority |
-|---|---:|
-| `super_admin` | 5 |
-| `content_admin` | 4 |
-| `developer` | 3 |
-| `admin` | 3 |
-| `ceo` | 3 |
-| `sme_reviewer` | 2 |
-
-### Development impersonation shortcut
-
-If both are true:
-
-- `NODE_ENV === 'development'`
-- `DEV_FORCE_USER_ID` is set
-
-then `getUserRole()` returns:
-
-- `super_admin`
-
-This is a local-only founder/developer bypass.
-
-### Why this matters
-
-The previous bug class came from treating `user_roles` as the only meaningful internal-role source. The current runtime model explicitly does not do that anymore.
-
----
-
-## 6. Policy Layer and Access Helpers
-
-### Canonical policy helpers
-
-The explicit policy layer lives in [`src/lib/admin/access-policy.ts`](C:/Users/Philip%20Lewis/Desktop/slatecamp/src/lib/admin/access-policy.ts).
-
-Current helpers:
-
-- `canSeeDevToolbar(role)`
-- `canUseInternalTierBypass(role)`
-
-### Current role sets
-
-Both helpers currently allow:
-
-- `super_admin`
-- `content_admin`
-- `developer`
-- `admin`
-- `ceo`
-
-Both helpers currently exclude:
-
-- `sme_reviewer`
-- `null`
-
-### Important policy note
-
-Even though the two helpers currently use identical role sets, they are intentionally separate APIs because:
-
-- dev-toolbar visibility is a tooling-surface policy
-- internal tier bypass is an entitlement-surface policy
-
-Keeping them separate prevents future drift from collapsing back into one informal "internal access" concept.
-
-### Legacy admin/content helpers
-
-`roles.ts` still exports older admin-focused helpers:
-
-- `isAdmin()`
-- `isSuperAdmin()`
-- `canManageContent()`
-- `canReviewContent()`
-- `canManageUsers()`
-
-These remain active for admin/CMS authorization and should not be conflated with developer-mode tooling policy.
-
----
-
-## 7. Tier Model and Effective Tier Resolution
-
-### Canonical runtime tier model
-
-The current `UserTier` union in [`src/types/app.ts`](C:/Users/Philip%20Lewis/Desktop/slatecamp/src/types/app.ts) is:
+The live `UserTier` union is:
 
 - `free`
 - `pro`
@@ -297,104 +106,24 @@ The current `UserTier` union in [`src/types/app.ts`](C:/Users/Philip%20Lewis/Des
 - `institutional`
 - `enterprise`
 
-### Effective tier runtime logic
+### Legacy tier vocabulary still recognized only for normalization
 
-`src/lib/admin/feature-flags.ts` exposes:
+These values are legacy inputs, not canonical runtime vocabulary:
 
-- `getEffectiveTier(actualTier, isAdmin, flags)`
-- `hasTierAccess(requiredTier, actualTier, isAdmin, flags)`
+- `camp` -> normalized to `pro`
+- `insurance` -> normalized to `institutional`
 
-These delegate to [`src/lib/dev/dev-mode.ts`](C:/Users/Philip%20Lewis/Desktop/slatecamp/src/lib/dev/dev-mode.ts).
+Special case:
 
-### Effective tier precedence
+- a legacy `feature_flags.target_tier` shape of `['camp','insurance','institutional']` is treated as the historical "all paid" set and normalized to:
+  - `pro`
+  - `prime`
+  - `institutional`
+  - `enterprise`
 
-From `resolveEffectiveTier()` in `dev-mode.ts`:
+### Canonical feature-key vocabulary
 
-1. `DEV_FORCE_TIER` in development
-2. `simulatedTier` from cookie
-3. internal bypass (`isAdmin === true` in the helper signature, now effectively internal-tier-bypass role)
-4. local mode default
-5. raw DB tier
-
-### Tier rank
-
-Current rank order:
-
-| Tier | Rank |
-|---|---:|
-| `free` | 0 |
-| `pro` | 1 |
-| `prime` | 2 |
-| `institutional` | 3 |
-| `enterprise` | 4 |
-
-### Capability matrix
-
-From `TIER_CAPABILITIES` in `dev-mode.ts`:
-
-| Tier | 3D Lab | SRS | AI tutor | Custom banks |
-|---|---|---|---|---|
-| `free` | No | No | No | No |
-| `pro` | Yes | Yes | No | Yes |
-| `prime` | Yes | Yes | Yes | Yes |
-| `institutional` | Yes | Yes | Yes | Yes |
-| `enterprise` | Yes | Yes | Yes | Yes |
-
-### Tier context
-
-[`src/lib/context/tier-context.tsx`](C:/Users/Philip%20Lewis/Desktop/slatecamp/src/lib/context/tier-context.tsx) exposes:
-
-- raw `tier`
-- `effectiveTier`
-- `isDevMode`
-- `capabilities`
-- `hasAccess(requiredTier)`
-
-This is the preferred client-side entitlement shape when the server has already computed effective tier.
-
----
-
-## 8. Feature Flag and Dev Flag Architecture
-
-### Two different flag systems exist
-
-#### A. DB-backed product feature flags
-
-Defined by the `feature_flags` table and read via [`src/lib/paywall/check-access.ts`](C:/Users/Philip%20Lewis/Desktop/slatecamp/src/lib/paywall/check-access.ts).
-
-These flags are product-facing and usually check:
-
-- `feature_flags.enabled`
-- `feature_flags.target_tier`
-- current subscription tier/status
-
-#### B. Cookie-backed internal dev flags
-
-Defined in [`src/lib/dev/dev-mode.ts`](C:/Users/Philip%20Lewis/Desktop/slatecamp/src/lib/dev/dev-mode.ts) and read via [`src/lib/admin/feature-flags.ts`](C:/Users/Philip%20Lewis/Desktop/slatecamp/src/lib/admin/feature-flags.ts).
-
-These control:
-
-- simulated tier
-- 3D Lab gate bypass
-- AI gate bypass
-- SRS gate bypass
-
-### Static payment master switch
-
-[`src/lib/constants/feature-flags.ts`](C:/Users/Philip%20Lewis/Desktop/slatecamp/src/lib/constants/feature-flags.ts) defines:
-
-- `FEATURE_PAYMENTS_ENABLED`
-
-If false, paywall logic in `check-access.ts` short-circuits open or free behavior depending on the helper.
-
-### Seeded DB feature keys
-
-From historical migrations, especially:
-
-- `supabase/migrations/020_populate_feature_flags.sql`
-- `supabase/migrations/20260325_testing_review_schema_gaps.sql`
-
-Observed keys include:
+Representative canonical keys include:
 
 - `readiness_score_live`
 - `analytics_dashboard_full`
@@ -407,528 +136,454 @@ Observed keys include:
 - `proof_simulation`
 - `3d_lab_full`
 - `ai_assistant_unlimited`
+- `developer_portal`
+- `dev_toolbar`
+- `dev_override_write`
+- `admin_cms`
+- `srs_review`
 
-Also older/system keys:
+### Deprecated storage field
 
-- `paywall_enabled`
-- `storm_mode_enabled`
-- `proof_simulation_enabled`
-- `endurance_mode_enabled`
-- `custom_session_enabled`
-- `subject_mode_enabled`
-- `focus_review_enabled`
-- `chill_mode_enabled`
-- `ai_tutor_enabled`
-- `calibration_enabled`
-
-### Important inconsistency
-
-The DB `feature_flags` seeds in old migrations still use legacy tier names like:
-
-- `camp`
-- `insurance`
-- `institutional`
-
-The live TypeScript tier model no longer uses `camp` or `insurance`.
-
-This is part of the historical residual debt and should be documented, not normalized away in prose.
+`feature_flags.target_roles` still exists in storage, but runtime entitlement logic treats it as deprecated metadata rather than an authoritative gate source.
 
 ---
 
-## 9. Gate Decision Flows
+## 5. Storage Model
 
-### Canonical internal/dev flow
+### Identity and entitlement sources
 
-```text
-Supabase session
--> getUserRole()
--> policy helper (canSeeDevToolbar / canUseInternalTierBypass)
--> getFeatureFlags() from cookie
--> getEffectiveTier()
--> route/page/action enforcement
-```
+| Source | Purpose |
+| --- | --- |
+| `auth.users.app_metadata.role` | role signal |
+| `auth.users.user_metadata.role` | secondary role signal |
+| `profiles.role` | role signal and compatibility source |
+| `user_roles.role` | explicit DB role rows |
+| `user_subscriptions.tier` | raw subscription tier |
+| `user_subscriptions.status` | active/trialing/inactive semantics |
+| `feature_flags` | feature metadata and allowed tier storage |
+| `cerebro_dev_flags` | httpOnly developer override cookie |
 
-### Canonical DB-backed paywall flow
+### Current persistence rules
 
-```text
-Supabase session
--> user_subscriptions.tier + status
--> feature_flags row by key
--> target_tier.includes(userTier)
--> allow or deny
-```
+1. `feature_flags.target_tier` is expected to store canonical values only after the finalization migration.
+2. Runtime still normalizes defensively in case a stale environment still contains legacy rows.
+3. `target_roles` is not consulted for runtime entitlement allow/deny decisions.
+4. Developer overrides are read from an `httpOnly` cookie and never from client-local state alone.
 
-### Current reality
+### Migration added during finalization
 
-The codebase uses both flows today:
+The finalization migration:
 
-- internal/dev surfaces increasingly use the explicit policy + effective-tier path
-- older product paywall helpers still use raw subscription status/tier checks
+- [20260411_entitlement_finalization.sql](/C:/Users/Philip Lewis/Desktop/slatecamp/supabase/migrations/20260411_entitlement_finalization.sql)
 
-This is intentional to document as mixed-state architecture, not complete unification.
+does two things:
 
----
+1. normalizes stored `feature_flags.target_tier` values to canonical vocabulary
+2. documents `target_roles` as deprecated runtime metadata
 
-## 10. Product Feature Gates by Surface
-
-### A. 3D Lab
-
-Primary enforcement:
-
-- [`src/app/dashboard/3d-lab/page.tsx`](C:/Users/Philip%20Lewis/Desktop/slatecamp/src/app/dashboard/3d-lab/page.tsx)
-- [`src/app/dashboard/3d-lab/[moduleId]/page.tsx`](C:/Users/Philip%20Lewis/Desktop/slatecamp/src/app/dashboard/3d-lab/%5BmoduleId%5D/page.tsx)
-
-Gate model:
-
-- `hasTierAccess('pro', profile.tier, profile.hasInternalTierBypass, flags)`
-- `flags.bypass3dGate` short-circuit
-
-Restricted-state copy source:
-
-- [`src/features/3d-lab/gate-copy.ts`](C:/Users/Philip%20Lewis/Desktop/slatecamp/src/features/3d-lab/gate-copy.ts)
-
-### B. Drills hub / testing hub
-
-Primary entry:
-
-- [`src/app/dashboard/drills/page.tsx`](C:/Users/Philip%20Lewis/Desktop/slatecamp/src/app/dashboard/drills/page.tsx)
-- [`src/components/testing/hub/ReviewHub.tsx`](C:/Users/Philip%20Lewis/Desktop/slatecamp/src/components/testing/hub/ReviewHub.tsx)
-
-Current model:
-
-- server passes `effectiveTier`
-- server passes `hasInternalTierBypass`
-- client no longer invents dev-mode paid access from `NODE_ENV`
-
-### C. Quiz session creation
-
-Primary enforcement:
-
-- [`src/lib/actions/quiz-v2/start-session.ts`](C:/Users/Philip%20Lewis/Desktop/slatecamp/src/lib/actions/quiz-v2/start-session.ts)
-
-For Pro-only modes:
-
-- raw subscription tier/status is read
-- converted to `actualTier`
-- `hasTierAccess('pro', actualTier, canUseInternalTierBypass(role), flags)` determines access
-
-### D. Quiz review enrichments
-
-Primary enforcement:
-
-- [`src/lib/actions/quiz-v2/get-review-data.ts`](C:/Users/Philip%20Lewis/Desktop/slatecamp/src/lib/actions/quiz-v2/get-review-data.ts)
-
-Pro-only extras are now gated through the same `hasTierAccess('pro', ...)` path, not raw `NODE_ENV` or raw `tier !== 'free'` logic.
-
-### E. Generic DB-backed paywall features
-
-Primary helper:
-
-- [`src/lib/paywall/check-access.ts`](C:/Users/Philip%20Lewis/Desktop/slatecamp/src/lib/paywall/check-access.ts)
-
-This is used for product-level feature gates where `feature_flags.target_tier` is the deciding source.
-
-### F. Score reveal / daily cap
-
-Related helpers still use raw subscription checks:
-
-- `src/lib/paywall/score-reveal.ts`
-- `src/lib/paywall/daily-cap.ts`
-
-These are valid live behaviors but are not yet migrated to the new internal-bypass/effective-tier pattern.
-
-### G. Residual raw-tier surfaces
-
-Observed examples still using direct subscription checks include:
-
-- `src/lib/actions/pods.ts`
-- `src/lib/actions/dashboard-page.ts`
-- `src/lib/actions/streak.ts`
-- parts of `src/lib/subscription/get-tier.ts`
-
-These are residual debt surfaces, not part of the fully unified path.
+Seed migrations were also updated to stop describing or storing the old `camp` / `insurance` feature-tier shape.
 
 ---
 
-## 11. Developer Mode and Internal Tooling
+## 6. Role Resolution
 
-### Root dashboard tooling surfaces
+### Canonical role resolver
 
-Primary shell:
+Current authoritative runtime resolver:
 
-- [`src/components/dashboard/DashboardLayoutContent.tsx`](C:/Users/Philip%20Lewis/Desktop/slatecamp/src/components/dashboard/DashboardLayoutContent.tsx)
+- [resolve-role.ts](/C:/Users/Philip Lewis/Desktop/slatecamp/src/lib/entitlements/resolve-role.ts)
 
-Mounted when:
+It resolves the current viewer by considering:
 
-- `isDemoMode()` is true, or
-- `canSeeDevToolbar(getUserRole())` is true
+1. development forced-user bypass
+2. `app_metadata.role`
+3. `user_metadata.role`
+4. `profiles.role`
+5. `user_roles.role`
+6. `ADMIN_EMAILS` fallback
+7. fallback to `member` or `anonymous`
 
-Current mounted tooling:
+### Canonical role vocabulary
 
-- `DevToolbar`
-- `DevKeyboardProvider`
-
-### Root-app dev overlays
-
-From [`src/app/layout.tsx`](C:/Users/Philip%20Lewis/Desktop/slatecamp/src/app/layout.tsx):
-
-- `DevModeOverlay` only renders when `NODE_ENV === 'development'`
-- `DemoShell` only renders when `isDemo` is true
-
-These are separate from entitlement policy. They are environment/UI overlays.
-
-### Developer portal
-
-Primary layout:
-
-- [`src/app/developer/layout.tsx`](C:/Users/Philip%20Lewis/Desktop/slatecamp/src/app/developer/layout.tsx)
-
-Current behavior:
-
-- if `ALLOW_DEV_PORTAL_BYPASS === 'true'`, bypass allowed
-- otherwise requires `getUserRole()` truthiness
-
-This is broader than dev-toolbar access because it keys off any recognized internal role, not specifically `canSeeDevToolbar()`.
-This is a current policy divergence, not an accidental mismatch in the implementation.
-
-### DevToolbar behavior
-
-Primary file:
-
-- `src/components/dev/dev-toolbar.tsx`
-
-Capabilities:
-
-- view connection state
-- simulate tier
-- toggle bypass flags
-- reset overrides
-- link into developer tools
-
-The toolbar itself is client UI. The ability to mount it is a server-side shell policy.
-
-### API surface for dev flags
-
-Route:
-
-- [`src/app/api/admin/flags/route.ts`](C:/Users/Philip%20Lewis/Desktop/slatecamp/src/app/api/admin/flags/route.ts)
-
-Behavior:
-
-- reads/writes `cerebro_dev_flags`
-- requires admin authorization outside demo mode
-- stores flags as an `httpOnly` cookie
-
----
-
-## 12. Route and Component Enforcement Map
-
-| Surface | File | Gate type | Source of truth |
-|---|---|---|---|
-| Dashboard dev toolbar | `src/components/dashboard/DashboardLayoutContent.tsx` | internal tooling visibility | `getUserRole()` + `canSeeDevToolbar()` |
-| Developer portal | `src/app/developer/layout.tsx` | internal route gate | `getUserRole()` or `ALLOW_DEV_PORTAL_BYPASS` |
-| Admin portal | `src/app/admin/layout.tsx` | role-based content/admin gate | `canReviewContent()` + `getUserRole()` |
-| 3D Lab gallery | `src/app/dashboard/3d-lab/page.tsx` | effective-tier gate | `getAdminAwareProfile()` + `hasTierAccess()` |
-| 3D Lab module page | `src/app/dashboard/3d-lab/[moduleId]/page.tsx` | effective-tier gate | same as above |
-| Drills hub simulations | `src/components/testing/hub/ReviewHub.tsx` | effective-tier + readiness | server-derived props |
-| Quiz mode creation | `src/lib/actions/quiz-v2/start-session.ts` | server-action gate | `hasTierAccess()` |
-| Quiz review enhancements | `src/lib/actions/quiz-v2/get-review-data.ts` | server-action gate | `hasTierAccess()` |
-| Paywall feature keys | `src/lib/paywall/check-access.ts` | DB-backed feature gate | `feature_flags` + `user_subscriptions` |
-
----
-
-## 13. Server vs Client Enforcement Patterns
-
-### Server-side enforcement
-
-Most critical gates are enforced server-side in:
-
-- routes/pages
-- layouts
-- server actions
-- middleware
-
-Examples:
-
-- auth redirects in middleware
-- 3D Lab route gate before render
-- Pro-only mode rejection in `startSession`
-
-### Client-side usage
-
-Client components consume already-derived values:
-
-- `effectiveTier`
-- `hasInternalTierBypass`
-- `capabilities`
-- tool visibility booleans
-
-### Historical bug pattern
-
-The major regression class was:
-
-- server and client deriving privilege from different sources
-- raw `NODE_ENV` shortcuts in product entitlement code
-- raw role/tier interpretation in leaf components
-
-The current architecture is moving away from that, but not every surface is there yet.
-
----
-
-## 14. Testing and Quiz Entitlement Flows
-
-### Testing mode definitions
-
-From [`src/lib/constants/testing-modes.ts`](C:/Users/Philip%20Lewis/Desktop/slatecamp/src/lib/constants/testing-modes.ts):
-
-Modes with `isPro: true` include:
-
-- `subject`
-- `focus-review`
-- `custom`
-- `storm`
-- `simulation`
-- `endurance`
-
-Modes with `isPro: false` include:
-
-- `camp`
-- `chill`
-- `article-review`
-
-### Start-session behavior
-
-`startSession()`:
-
-1. parses input
-2. checks mode definition
-3. if the mode is Pro-only:
-   - loads subscription row
-   - loads internal role
-   - loads dev flags
-   - resolves `hasTierAccess('pro', ...)`
-4. returns a structured tier error if blocked
-
-### Review enrichment behavior
-
-`getReviewData()` conditionally fetches per-question history only when the current user resolves to effective Pro access.
-
-### Drills hub behavior
-
-`drills/page.tsx` now passes:
-
-- `effectiveTier`
-- `hasInternalTierBypass`
-
-into `ReviewHub`, which prevents the client from making its own environment-based paid-mode assumptions.
-
----
-
-## 15. 3D Lab Gate and Copy Model
-
-### Gate source
-
-3D Lab routes rely on:
-
-- `getAdminAwareProfile()`
-- `getFeatureFlags()`
-- `hasTierAccess('pro', ...)`
-
-### Copy source
-
-The current restricted-state copy is centralized in:
-
-- [`src/features/3d-lab/gate-copy.ts`](C:/Users/Philip%20Lewis/Desktop/slatecamp/src/features/3d-lab/gate-copy.ts)
-
-Current strings:
-
-- title: `3D Interactive Lab`
-- description: available on `Pro, Prime, Institutional, and Enterprise plans`
-- CTA: `Upgrade to Pro`
-
-Locked-state workspace copy is also sourced from the same file.
-
-### Historical note
-
-The previous 3D Lab gate copy used legacy plan terms:
-
-- `Camp`
-- `Insurance`
-- `Institutional`
-
-That wording drift has been removed from the active 3D Lab restricted states.
-
----
-
-## 16. Environment and Config Dependencies
-
-| Variable / config | Role |
-|---|---|
-| `NEXT_PUBLIC_SUPABASE_URL` | Determines connected vs local mode |
-| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Regular SSR auth client |
-| `SUPABASE_SERVICE_ROLE_KEY` | Admin/service access |
-| `NEXT_PUBLIC_PAYMENTS_ENABLED` | Enables DB-backed paywall behavior |
-| `DEV_FORCE_USER_ID` | Development founder bypass for auth/role |
-| `DEV_FORCE_TIER` | Development forced effective tier |
-| `ADMIN_EMAILS` | Legacy super-admin fallback |
-| `ALLOW_DEV_PORTAL_BYPASS` | Developer portal bypass |
-| `cerebro_dev_flags` | dev-mode cookie override state |
-| `NEXT_PUBLIC_APP_URL` | affects environment labeling and metadata |
-
-### Middleware behavior
-
-`middleware.ts` adds `x-pathname` to the request for downstream layout logic.
-
-`src/lib/supabase/middleware.ts` handles:
-
-- public route bypass
-- demo mode bypass
-- `DEV_FORCE_USER_ID` local bypass
-- authenticated redirects
-- admin route role check against `user_roles`
-
-### Important note
-
-The admin route middleware still checks only `user_roles` for:
-
+- `anonymous`
+- `member`
 - `super_admin`
 - `content_admin`
 - `sme_reviewer`
+- `developer`
+- `admin`
+- `ceo`
 
-This is valid for admin CMS protection, but it is narrower than the broader normalized internal-role model now used for developer-mode and internal tier bypass.
+### Compatibility role surface
 
----
+The remaining admin compatibility facade:
 
-## 17. Known Risks, Gaps, and Open Questions
+- [roles.ts](/C:/Users/Philip Lewis/Desktop/slatecamp/src/lib/admin/roles.ts)
 
-### Confirmed residual debt
+delegates to canonical role resolution and remains only to support broad existing imports.
 
-1. **Mixed gating models still exist**  
-   Some surfaces use:
-   - effective tier + policy helpers
-   while others still use:
-   - raw subscription checks
+### Important completion note
 
-2. **Legacy migration residue in DB feature flags**  
-   Historical seeds still reference old tier labels like `camp` and `insurance`.
-
-3. **Developer portal vs toolbar policy boundary differs**  
-   `/developer` currently checks `getUserRole()` truthiness or env bypass, not `canSeeDevToolbar()`.
-
-4. **`getAdminAwareProfile` is broader than the name implies**  
-   It now carries a general internal-access payload, not just admin semantics.
-
-### Open questions
-
-- Should `sme_reviewer` ever gain dev-toolbar access?
-- Should remaining raw-tier surfaces like pods and dashboard summary paths be migrated to the same effective-tier model?
-- Should DB-backed `feature_flags.target_tier` be normalized to the current TypeScript tier vocabulary everywhere?
-
-### NEEDS VERIFICATION
-
-- Whether every historical `feature_flags` row in live environments has already been migrated off legacy tier labels.
-- Whether any unscanned feature surfaces outside the audited entitlement paths still contain raw `NODE_ENV` paid-access shortcuts.
+CEO auth/layout paths no longer depend on `profiles.role` alone. They now route through the canonical role resolver plus CEO policy helper, closing one of the final remaining compatibility drifts.
 
 ---
 
-## 18. Verification Notes and Source Inventory
+## 7. Policy Layer
 
-### Primary code sources used for this document
+### Canonical policy helper surface
+
+Authoritative privileged policy lives in:
+
+- [policy.ts](/C:/Users/Philip Lewis/Desktop/slatecamp/src/lib/entitlements/policy.ts)
+
+Current policy decisions include:
+
+- developer portal access
+- dev toolbar visibility
+- dev override write access
+- internal tier bypass eligibility
+- admin CMS access
+- review-content access
+- manage-users access
+- CEO portal access
+
+### Current effective policy boundaries
+
+| Surface | Canonical policy source |
+| --- | --- |
+| `/developer` | `canAccessDeveloperPortalForRole()` |
+| Dev toolbar | `canSeeDevToolbarForRole()` |
+| Dev override write/delete | `canWriteDevOverridesForRole()` |
+| Internal tier uplift | `canUseInternalTierBypassForRole()` |
+| Admin CMS | `canAccessAdminCmsForRole()` |
+| CEO portal | `canAccessCeoPortalForRole()` |
+
+### Remaining compatibility facades
+
+- [access-policy.ts](/C:/Users/Philip Lewis/Desktop/slatecamp/src/lib/admin/access-policy.ts)
+- [is-admin.ts](/C:/Users/Philip Lewis/Desktop/slatecamp/src/lib/admin/is-admin.ts)
+
+These are non-canonical exports retained for compatibility, not independent policy engines.
+
+---
+
+## 8. Effective Tier and Capabilities
+
+### Effective tier precedence
+
+Current runtime order:
+
+1. `DEV_FORCE_TIER`
+2. cookie `simulatedTier`
+3. internal-tier-bypass policy
+4. local-dev bypass mode
+5. raw DB tier
+
+### Capability model
+
+Capability resolution still uses the tier capability matrix in:
+
+- [dev-mode.ts](/C:/Users/Philip Lewis/Desktop/slatecamp/src/lib/dev/dev-mode.ts)
+
+Key capability outputs include:
+
+- `questionsPerDay`
+- `aiTokens`
+- `savedConfigs`
+- `srsAccess`
+- `threeDLabAccess`
+- `aiTutorAccess`
+- `customBanksAccess`
+
+The `DEV_FORCE_TIER` shortcut is now resolved only through the canonical override boundary, not directly inside the capability engine itself.
+
+---
+
+## 9. Developer Overrides
+
+### Canonical override source
+
+Overrides are parsed in:
+
+- [dev-overrides.ts](/C:/Users/Philip Lewis/Desktop/slatecamp/src/lib/entitlements/dev-overrides.ts)
+
+Current cookie-backed fields:
+
+- `simulatedTier`
+- `spoofedTier` (legacy alias retained for migration compatibility)
+- `bypass3dGate`
+- `bypassAiGate`
+- `bypassSrsGate`
+
+### Canonical override state includes
+
+- simulated tier
+- legacy spoofed tier
+- forced env tier
+- forced-user-active flag
+- local-dev-bypass flag
+- developer-portal-bypass flag
+- feature override map
+- source trace
+
+### Override mutation path
+
+Authoritative write/delete route:
+
+- [src/app/api/admin/flags/route.ts](/C:/Users/Philip Lewis/Desktop/slatecamp/src/app/api/admin/flags/route.ts)
+
+Current properties:
+
+- server-authorized
+- `httpOnly` cookie write
+- structured override audit events
+- canonical entitlement policy for write authorization
+
+---
+
+## 10. Canonical Viewer Payload
+
+### Canonical server payload
+
+The canonical viewer payload is returned by:
+
+- [get-viewer-entitlements.ts](/C:/Users/Philip Lewis/Desktop/slatecamp/src/lib/entitlements/get-viewer-entitlements.ts)
+
+It includes:
+
+- trace id
+- user id / email
+- normalized role
+- compatibility role
+- role resolution trace
+- raw tier
+- subscription status
+- effective tier
+- capabilities
+- tooling policy snapshot
+- override state
+- normalized feature flags
+- evaluated feature decisions
+
+### Client consumption
+
+Client code can consume the payload through:
+
+- [entitlement-context.tsx](/C:/Users/Philip Lewis/Desktop/slatecamp/src/lib/context/entitlement-context.tsx)
+
+Dashboard shell still also feeds `TierProvider` for legacy client ergonomics, but the authoritative server-derived entitlement payload exists and is available.
+
+---
+
+## 11. Enforcement Map
+
+### Paid and feature-gated product surfaces now on canonical entitlements
+
+| Surface | Current enforcement path |
+| --- | --- |
+| 3D Lab gallery | `getViewerEntitlements()` + canonical feature decision |
+| 3D Lab module page | same |
+| Drills hub | canonical viewer entitlements passed into `ReviewHub` |
+| Quiz V2 start session | canonical Pro decision |
+| Quiz V2 review history enrichment | canonical Pro decision |
+| Study Pods create/list | canonical Pro decision |
+| Score reveal | canonical readiness-score decision |
+| Daily cap | canonical unlimited-questions decision |
+| Dashboard summary state | canonical live-score / unlimited-questions decisions |
+| Study streak grace-day logic | canonical unlimited-questions decision |
+| Final stretch upsell gating | canonical unlimited-questions decision |
+| Welcome Pro | canonical unlimited-questions decision |
+| DAE mode state and session limits | canonical unlimited-questions decision |
+
+### Privileged/internal surfaces now on canonical policy
+
+| Surface | Current enforcement path |
+| --- | --- |
+| `/developer` | canonical developer-portal policy |
+| middleware protected routes | canonical role resolution + policy |
+| override API | canonical dev-override-write policy |
+| CEO layout/auth helpers | canonical role resolution + CEO policy |
+
+### Remaining high-fanout compatibility surfaces
+
+These still exist but are no longer authoritative:
 
 - `src/lib/admin/roles.ts`
 - `src/lib/admin/access-policy.ts`
-- `src/lib/admin/get-admin-profile.ts`
-- `src/lib/admin/feature-flags.ts`
-- `src/lib/dev/dev-mode.ts`
-- `src/lib/paywall/check-access.ts`
-- `src/lib/subscription/get-tier.ts`
-- `src/lib/context/tier-context.tsx`
-- `src/components/dashboard/DashboardLayoutContent.tsx`
-- `src/app/dashboard/3d-lab/page.tsx`
-- `src/app/dashboard/3d-lab/[moduleId]/page.tsx`
-- `src/features/3d-lab/gate-copy.ts`
-- `src/app/dashboard/drills/page.tsx`
-- `src/components/testing/hub/ReviewHub.tsx`
-- `src/lib/actions/quiz-v2/start-session.ts`
-- `src/lib/actions/quiz-v2/get-review-data.ts`
-- `src/app/quiz/[mode]/setup/client.tsx`
-- `middleware.ts`
-- `src/lib/supabase/middleware.ts`
-- `DATABASE_SCHEMA.sql`
-- `supabase/migrations/020_populate_feature_flags.sql`
-- `supabase/migrations/20260325_testing_review_schema_gaps.sql`
-- `.ai/plans/2026-04-11_Dev-Mode-Audit.md`
-
-### Verification standard
-
-For every named item in this doc:
-
-- helper names were matched to code
-- file paths were verified to exist
-- cookie and env var names were verified
-- current restricted-copy source was verified
-- mixed-state debt was left explicit rather than normalized away
+- `src/lib/admin/is-admin.ts`
 
 ---
 
-## 19. Change History and Cross-References
+## 12. Observability and Auditability
 
-### Recent relevant change window
+### Canonical entitlement event shape
 
-Key recent work established the current architecture:
+Entitlement audit events are defined in:
 
-- entitlement/developer-mode audit and fix in `.ai/plans/2026-04-11_Dev-Mode-Audit.md`
-- new explicit access-policy layer in `src/lib/admin/access-policy.ts`
-- effective-tier alignment across:
-  - 3D Lab
-  - drills hub
-  - quiz mode start
-  - quiz review enrichments
-- 3D Lab restricted copy centralization in `src/features/3d-lab/gate-copy.ts`
+- [types.ts](/C:/Users/Philip Lewis/Desktop/slatecamp/src/lib/entitlements/types.ts)
+
+Event families include:
+
+- `entitlement.decision`
+- `entitlement.denied`
+- `entitlement.override.applied`
+- `entitlement.override.cleared`
+- `tooling.access`
+- `tooling.override.write`
+- `tooling.override.delete`
+- `entitlement.config.mismatch`
+
+### Audit sink
+
+Current logging module:
+
+- [audit.ts](/C:/Users/Philip Lewis/Desktop/slatecamp/src/lib/entitlements/audit.ts)
+
+Behavior:
+
+1. emits structured console events for immediate runtime visibility
+2. persists non-middleware entitlement events through `analytics_events` using the service-role client
+
+### Important live coverage
+
+Structured entitlement events now emit from:
+
+- middleware privileged-route decisions
+- override write/delete route
+- quiz-v2 Pro gating
+- paywall daily cap
+- paywall score reveal
+- pods Pro gate
+- final stretch gate
+- checkout gate
+- blindspot cron summary decision
+- feature-flag config mismatch handling in viewer entitlement resolution
+
+---
+
+## 13. Governance
+
+### Banned-pattern detector
+
+Repository guard:
+
+- [check-entitlement-legacy-usage.ts](/C:/Users/Philip Lewis/Desktop/slatecamp/scripts/check-entitlement-legacy-usage.ts)
+
+Command:
+
+- `bun run check:entitlements`
+
+### Guarded patterns
+
+The detector blocks new:
+
+- raw `tier === 'free'` / `tier !== 'free'` product/runtime gating
+- direct runtime `target_tier` interpretation outside canonical normalization
+- direct entitlement-affecting env usage outside the canonical override/identity boundary
+- privileged gating by `getUserRole()` truthiness
+
+This guard is now part of the live completion path for entitlement work.
+
+---
+
+## 14. Removed Legacy Engines
+
+Removed during finalization:
+
+- `src/lib/admin/feature-flags.ts`
+- `src/lib/admin/get-admin-profile.ts`
+- `src/lib/paywall/check-access.ts`
+- `src/lib/subscription/get-tier.ts`
+- `src/lib/actions/feature-flags.ts`
+
+These are no longer available as runtime alternatives.
+
+---
+
+## 15. Compatibility Facades Still Present
+
+Still present by design:
+
+- `src/lib/admin/roles.ts`
+- `src/lib/admin/access-policy.ts`
+- `src/lib/admin/is-admin.ts`
+
+Current role:
+
+- compatibility import surface
+- thin delegation to canonical role/policy logic
+- not an alternative entitlement engine
+
+Open question:
+
+- whether these should remain permanently as compatibility facades or be removed in a later broad import cleanup
+
+---
+
+## 16. Verification Evidence
+
+Validated in the execution reports:
+
+- targeted entitlement/admin regression suite passes
+- `bun run check:entitlements` passes
+- `bun run type-check` passes
+- `bun run build` passes
+- targeted `eslint` on changed entitlement files passes
+
+Current caveat:
+
+- repo-wide `bun run lint` is still red because of unrelated pre-existing vendor/static issues outside the entitlement work
+
+---
+
+## 17. Current Known Caveats
+
+1. `feature_flags.target_roles` still exists in storage as deprecated metadata.
+2. The remaining admin compatibility facades still exist for import stability.
+3. Route-level tests for some handlers such as checkout and blindspot cron are still lighter than the core contract tests.
+4. External architect/verifier subagent sign-off was blocked by usage/time limits during execution, so the completion evidence is repo-grounded and test/build-backed rather than tool-signed.
+
+---
+
+## 18. Source Inventory
+
+Primary code sources for this document:
+
+- `src/lib/entitlements/*`
+- `src/lib/context/entitlement-context.tsx`
+- `src/lib/admin/{roles,access-policy,is-admin}.ts`
+- `src/lib/actions/{quiz-v2/start-session,quiz-v2/get-review-data,pods,streak,dashboard-page,final-stretch,dae-mode}.ts`
+- `src/lib/paywall/{daily-cap,score-reveal,index}.ts`
+- `src/lib/queries/ceo/{auth,financial-queries}.ts`
+- `src/app/api/{admin/flags,cron/blindspot-scan,payments/checkout}/route.ts`
+- `src/app/dashboard/{3d-lab,drills,pods,settings,welcome-pro,dae-mode}/`
+- `src/components/{dashboard,dev,sidebar,testing}/`
+- `supabase/migrations/20260411_entitlement_finalization.sql`
+- `.ai/plans/2026-04-11_Enterprise-Grade-Feature-Gate-Execution-Report.md`
+- `.ai/plans/2026-04-11_Entitlement-Migration-Ledger.md`
+
+---
+
+## 19. Change History
+
+### 2026-04-12 update
+
+This version updates the document from the earlier mixed-state migration snapshot to the post-finalization state:
+
+- canonical entitlement boundary fully documented
+- legacy runtime engines marked removed
+- remaining compatibility facades explicitly narrowed
+- storage normalization and audit persistence documented
+- CEO and DAE entitlement drift fixes incorporated
+- governance and verification evidence updated
 
 ### Related docs
 
 - [008-3d-lab-feature-specification.md](008-3d-lab-feature-specification.md)
 - [009-admin-feature-specification.md](009-admin-feature-specification.md)
-- [2026-04-11_Dev-Mode-Audit.md](</C:/Users/Philip Lewis/Desktop/slatecamp/.ai/plans/2026-04-11_Dev-Mode-Audit.md>)
+- [2026-04-11_Enterprise-Grade-Feature-Gate-Execution-Report.md](</C:/Users/Philip Lewis/Desktop/slatecamp/.ai/plans/2026-04-11_Enterprise-Grade-Feature-Gate-Execution-Report.md>)
+- [2026-04-11_Entitlement-Migration-Ledger.md](</C:/Users/Philip Lewis/Desktop/slatecamp/.ai/plans/2026-04-11_Entitlement-Migration-Ledger.md>)
 
 ---
 
-*End of specification. This document is intentionally bounded to the live entitlement and developer-mode architecture as verified on 2026-04-11.*
-
----
-
-## 20. Canonical Entitlement Contract (2026-04-11 execution update)
-
-The canonical runtime entitlement boundary is now `src/lib/entitlements/`.
-
-Canonical modules:
-- `feature-keys.ts` for feature vocabulary
-- `resolve-role.ts` for role resolution
-- `policy.ts` for privileged policy
-- `normalize-tier.ts` and `normalize-feature-flag.ts` for vocabulary normalization
-- `dev-overrides.ts` for cookie and env-backed developer overrides
-- `resolve-entitlements.ts` for effective tier, capabilities, and feature decisions
-- `get-viewer-entitlements.ts` for the canonical server payload
-- `audit.ts` for structured allow/deny and override event logging
-
-Compatibility wrappers still exist in:
-- `src/lib/admin/roles.ts`
-- `src/lib/admin/access-policy.ts`
-- `src/lib/admin/feature-flags.ts`
-- `src/lib/admin/get-admin-profile.ts`
-- `src/lib/paywall/check-access.ts`
-- `src/lib/subscription/get-tier.ts`
-
-These wrappers are temporary migration boundaries, not first-class engines.
-
-### Banned patterns
-
-Do not add new:
-- raw `subscription.tier === 'free'` or `!== 'free'` checks in product/runtime surfaces
-- direct `feature_flags.target_tier` interpretation outside `src/lib/entitlements/normalize-feature-flag.ts`
-- privileged route gating by `getUserRole()` truthiness
-- direct `DEV_FORCE_*` or `ALLOW_DEV_PORTAL_BYPASS` usage outside the canonical override/identity boundary
-
-Governance check:
-- `bun run check:entitlements`
+*End of specification. This document reflects the live post-finalization entitlement and developer-tooling architecture as verified on 2026-04-12.*

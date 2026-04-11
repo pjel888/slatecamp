@@ -2,6 +2,9 @@
 
 import { createClient, getUser } from '@/lib/supabase/server'
 import { normalizeOptions } from '@/lib/utils/question'
+import type { UserTier } from '@/types/app'
+import { getViewerEntitlements } from '@/lib/entitlements/get-viewer-entitlements'
+import { ENTITLEMENT_FEATURE_KEYS } from '@/lib/entitlements/feature-keys'
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -36,7 +39,7 @@ export interface SaveContextsResult {
 
 export interface GetDAEStateResult {
   savedContexts: WorkContext[]
-  userTier: 'free' | 'pro' | 'enterprise'
+  userTier: UserTier
   dailyUsedCount: number
 }
 
@@ -85,24 +88,21 @@ export const getDAEState = async (): Promise<GetDAEStateResult> => {
   if (!user) {
     return { savedContexts: [], userTier: 'free', dailyUsedCount: 0 }
   }
+  const entitlements = await getViewerEntitlements([
+    ENTITLEMENT_FEATURE_KEYS.questionsUnlimited,
+  ])
 
   const todayStart = new Date()
   todayStart.setHours(0, 0, 0, 0)
 
   const [
     { data: profile },
-    { data: subscription },
     { data: todaySessions },
   ] = await Promise.all([
     supabase
       .from('profiles')
       .select('dae_work_contexts')
       .eq('id', user.id)
-      .maybeSingle(),
-    supabase
-      .from('user_subscriptions')
-      .select('tier')
-      .eq('user_id', user.id)
       .maybeSingle(),
     // Count DAE-specific sessions today by checking config->>'dae_mode' flag
     supabase
@@ -126,7 +126,6 @@ export const getDAEState = async (): Promise<GetDAEStateResult> => {
   const savedContexts: WorkContext[] =
     (profile as { dae_work_contexts?: WorkContext[] } | null)?.dae_work_contexts ?? []
 
-  const tier = (subscription?.tier ?? 'free') as 'free' | 'pro' | 'enterprise'
   // Use question count as the daily usage metric for free tier
   const dailyUsedCount = daeSessionsToday.reduce(
     (sum: number, s: { question_ids: string[] | null }) =>
@@ -134,7 +133,7 @@ export const getDAEState = async (): Promise<GetDAEStateResult> => {
     0,
   )
 
-  return { savedContexts, userTier: tier, dailyUsedCount }
+  return { savedContexts, userTier: entitlements.effectiveTier, dailyUsedCount }
 }
 
 // ─── Start DAE session ────────────────────────────────────────────────────────
@@ -151,15 +150,12 @@ export const startDAESession = async (
     data: { user },
   } = await getUser()
   if (!user) return { error: 'Unauthorized' }
+  const entitlements = await getViewerEntitlements([
+    ENTITLEMENT_FEATURE_KEYS.questionsUnlimited,
+  ])
 
   // Check free tier daily limit (5 questions/day across all DAE sessions)
-  const { data: subscription } = await supabase
-    .from('user_subscriptions')
-    .select('tier')
-    .eq('user_id', user.id)
-    .maybeSingle()
-
-  const userTier = subscription?.tier ?? 'free'
+  const userTier = entitlements.effectiveTier
 
   if (userTier === 'free') {
     const todayStart = new Date()

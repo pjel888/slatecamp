@@ -2,9 +2,10 @@ import { redirect } from 'next/navigation'
 import { ROUTES } from '@/lib/routes'
 import Link from 'next/link'
 import { createClient, getUser } from '@/lib/supabase/server'
-import { isPaidUser } from '@/lib/paywall/check-access'
 import { trackServerEvent } from '@/lib/analytics-server'
 import { getSubjectName } from '@/types/testing'
+import { getViewerEntitlements } from '@/lib/entitlements/get-viewer-entitlements'
+import { ENTITLEMENT_FEATURE_KEYS } from '@/lib/entitlements/feature-keys'
 
 /**
  * Pro Confirmation Screen — UX Strategy Section 15 (Step 3)
@@ -18,7 +19,11 @@ const WelcomeProPage = async () => {
   const { data: { user } } = await getUser()
   if (!user) redirect(ROUTES.auth.login)
 
-  const paid = await isPaidUser()
+  const entitlements = await getViewerEntitlements([
+    ENTITLEMENT_FEATURE_KEYS.questionsUnlimited,
+  ])
+  const paid =
+    entitlements.decisions[ENTITLEMENT_FEATURE_KEYS.questionsUnlimited]?.allowed ?? false
   if (!paid) redirect(ROUTES.dashboard.root)
 
   const supabase = await createClient()

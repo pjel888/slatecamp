@@ -5,12 +5,13 @@ import { WorkContextSelector } from './WorkContextSelector'
 import { DAEQuizSession } from './DAEQuizSession'
 import { saveDAEContexts, startDAESession } from '@/lib/actions/dae-mode'
 import type { WorkContext, DAEQuestion } from '@/lib/actions/dae-mode'
+import type { UserTier } from '@/types/app'
 
 // ─── Props ────────────────────────────────────────────────────────────────────
 
 interface DAEModeClientProps {
   savedContexts: WorkContext[]
-  userTier: 'free' | 'pro' | 'enterprise'
+  userTier: UserTier
   dailyUsedCount: number
 }
 
