@@ -1,6 +1,9 @@
 'use server'
 
 import { createClient, createServiceClient, getUser } from '@/lib/supabase/server'
+import { getFeatureFlags, hasTierAccess } from '@/lib/admin/feature-flags'
+import { canUseInternalTierBypass } from '@/lib/admin/access-policy'
+import { getUserRole } from '@/lib/admin/roles'
 import { normalizeOptions, resolveRationaleText } from '@/lib/utils/question'
 import type { QuestionHistoryStats, ReviewDataResult, ReviewQuestionData } from '@/types/quiz-config'
 
@@ -192,13 +195,27 @@ export const getReviewData = async (
   const config = session.config as { mode?: string } | null
 
   // 8. Check if user is Pro (Audit §13.4)
-  const { data: sub } = await supabase
-    .from('user_subscriptions')
-    .select('tier, status')
-    .eq('user_id', user.id)
-    .maybeSingle()
+  const [subscriptionResult, role, flags] = await Promise.all([
+    supabase
+      .from('user_subscriptions')
+      .select('tier, status')
+      .eq('user_id', user.id)
+      .maybeSingle(),
+    getUserRole(),
+    getFeatureFlags(),
+  ])
 
-  const isPro = sub?.tier !== 'free' && sub?.status === 'active'
+  const subscription = subscriptionResult.data
+  const actualTier =
+    subscription?.status === 'active' || subscription?.status === 'trialing'
+      ? subscription.tier
+      : 'free'
+  const isPro = hasTierAccess(
+    'pro',
+    actualTier,
+    canUseInternalTierBypass(role),
+    flags,
+  )
 
   // 9. Fetch per-question history for Pro users
   // Batch in chunks of 80 to avoid Supabase header overflow on fullexam (200 questions)

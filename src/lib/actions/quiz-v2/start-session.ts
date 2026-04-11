@@ -9,7 +9,9 @@ import { mergeWithPreset } from '@/lib/quiz/mode-presets'
 import { buildTaxonomyBreadcrumbMap, toClientQuestion } from '@/lib/quiz/to-client-question'
 import { resolveTaxonomyDescendants } from '@/lib/actions/cached-queries'
 import { createServiceClient, getUser } from '@/lib/supabase/server'
-import { ROUTES } from '@/lib/routes'
+import { getFeatureFlags, hasTierAccess } from '@/lib/admin/feature-flags'
+import { canUseInternalTierBypass } from '@/lib/admin/access-policy'
+import { getUserRole } from '@/lib/admin/roles'
 import type {
   QuestionForClient,
   QuizSessionConfig,
@@ -73,24 +75,37 @@ export const startSession = async (
     const modeDef = MODE_DEFINITIONS[parsedInput.mode]
 
     if (modeDef?.isPro) {
-      const { data: subscription } = await supabase
-        .from('user_subscriptions')
-        .select('tier, status')
-        .eq('user_id', user.id)
-        .maybeSingle()
+      const [subscriptionResult, role, flags] = await Promise.all([
+        supabase
+          .from('user_subscriptions')
+          .select('tier, status')
+          .eq('user_id', user.id)
+          .maybeSingle(),
+        getUserRole(),
+        getFeatureFlags(),
+      ])
 
-      const isPro = subscription?.tier !== 'free' && subscription?.status === 'active'
-      const isDevBypass = process.env.NODE_ENV === 'development'
+      const subscription = subscriptionResult.data
+      const actualTier =
+        subscription?.status === 'active' || subscription?.status === 'trialing'
+          ? subscription.tier
+          : 'free'
+      const hasProAccess = hasTierAccess(
+        'pro',
+        actualTier,
+        canUseInternalTierBypass(role),
+        flags,
+      )
 
-      if (!isPro && !isDevBypass) {
+      if (!hasProAccess) {
         return {
           success: false,
           error: 'TIER_INSUFFICIENT',
           errorCode: 'PRO_MODE_REQUIRED',
           message: `The ${modeDef.label} mode requires a Pro subscription.`,
           upgradeUrl: '/pricing',
-          currentTier: subscription?.tier || 'free',
-          requiredTier: 'camp',
+          currentTier: actualTier,
+          requiredTier: 'pro',
         }
       }
     }
