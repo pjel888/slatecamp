@@ -160,9 +160,6 @@ export function resolveEffectiveTier(
   connectionState: DevConnectionState,
   devConfig: DevModeConfig
 ): UserTier {
-  if (process.env.NODE_ENV === 'development' && process.env.DEV_FORCE_TIER) {
-    return process.env.DEV_FORCE_TIER as UserTier;
-  }
   if (devConfig.simulatedTier) return devConfig.simulatedTier;
   if (isAdmin) return "institutional";
   if (connectionState === "local") return "institutional";

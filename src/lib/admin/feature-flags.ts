@@ -1,13 +1,15 @@
 import type { UserTier } from "@/types/app";
-import { cookies } from "next/headers";
 import {
   type DevModeConfig,
   type DevConnectionState,
-  DEFAULT_DEV_CONFIG,
   getConnectionState,
   resolveEffectiveTier,
   checkTierAccess,
 } from "@/lib/dev/dev-mode";
+import {
+  readDevOverrideCookie,
+  type DevOverrideCookiePayload,
+} from "@/lib/entitlements/dev-overrides";
 
 // ---------------------------------------------------------------------------
 // Feature Flags — stored in a session cookie
@@ -21,36 +23,30 @@ export interface FeatureFlags extends DevModeConfig {
   spoofedTier?: UserTier | null;
 }
 
-const COOKIE_NAME = "cerebro_dev_flags";
-
 /**
  * Read dev flags from cookie, with fallback defaults.
  * In local mode, all gates are bypassed by default.
+ *
+ * @deprecated Prefer `resolveDevOverrides()` from `@/lib/entitlements/dev-overrides`.
  */
 export async function getFeatureFlags(): Promise<FeatureFlags> {
   const connectionState = getConnectionState();
   const isLocal = connectionState === "local";
 
   const baseFlags: FeatureFlags = isLocal
-    ? { ...DEFAULT_DEV_CONFIG, bypass3dGate: true, bypassAiGate: true, bypassSrsGate: true }
-    : { ...DEFAULT_DEV_CONFIG };
+    ? { simulatedTier: null, bypass3dGate: true, bypassAiGate: true, bypassSrsGate: true }
+    : { simulatedTier: null, bypass3dGate: false, bypassAiGate: false, bypassSrsGate: false };
 
-  try {
-    const cookieStore = await cookies();
-    const raw = cookieStore.get(COOKIE_NAME)?.value;
-    if (!raw) return baseFlags;
+  const parsed = (await readDevOverrideCookie()) as DevOverrideCookiePayload;
 
-    const parsed = JSON.parse(raw) as Partial<FeatureFlags>;
-
-    // Migrate legacy spoofedTier → simulatedTier
-    if (parsed.spoofedTier && !parsed.simulatedTier) {
-      parsed.simulatedTier = parsed.spoofedTier;
-    }
-
-    return { ...baseFlags, ...parsed };
-  } catch {
-    return baseFlags;
-  }
+  return {
+    ...baseFlags,
+    simulatedTier: parsed.simulatedTier ?? parsed.spoofedTier ?? null,
+    spoofedTier: parsed.spoofedTier ?? null,
+    bypass3dGate: parsed.bypass3dGate ?? baseFlags.bypass3dGate,
+    bypassAiGate: parsed.bypassAiGate ?? baseFlags.bypassAiGate,
+    bypassSrsGate: parsed.bypassSrsGate ?? baseFlags.bypassSrsGate,
+  };
 }
 
 /**
@@ -72,6 +68,8 @@ export function toDevConfig(flags: FeatureFlags): DevModeConfig {
 /**
  * Returns the effective tier for the user.
  * Priority: simulatedTier > admin default (institutional) > local default (institutional) > DB tier
+ *
+ * @deprecated Prefer `getViewerEntitlements()` from `@/lib/entitlements/get-viewer-entitlements`.
  */
 export function getEffectiveTier(
   actualTier: UserTier,
@@ -86,6 +84,8 @@ export function getEffectiveTier(
 /**
  * Check if a feature requiring a minimum tier is accessible.
  * Accounts for individual gate bypasses.
+ *
+ * @deprecated Prefer `evaluateFeatureAccess()` from `@/lib/entitlements/resolve-entitlements`.
  */
 export function hasTierAccess(
   requiredTier: UserTier,

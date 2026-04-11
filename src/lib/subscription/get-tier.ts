@@ -4,6 +4,7 @@ import { cache } from 'react'
 import { createClient } from '@/lib/supabase/server'
 import { FEATURE_PAYMENTS_ENABLED } from '@/lib/constants/feature-flags'
 import type { UserTier } from '@/types/app'
+import { getViewerEntitlements } from '@/lib/entitlements/get-viewer-entitlements'
 
 /**
  * Get the current user's subscription tier from the database.
@@ -11,30 +12,16 @@ import type { UserTier } from '@/types/app'
  *
  * Returns 'free' if no user or no subscription record found.
  *
+ * @deprecated Use `getViewerEntitlements()` for entitlement-aware access decisions.
+ *
  * Usage:
  *   const tier = await getUserTier()
  *   if (tier === 'pro') { ... }
  */
 export const getUserTier = cache(async (): Promise<UserTier> => {
   if (!FEATURE_PAYMENTS_ENABLED) return 'free'
-
-  const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
-
-  if (!user) return 'free'
-
-  // Dev Mode Bypass: grant highest tier locally for testing
-  if (process.env.NODE_ENV === 'development' && !!process.env.DEV_FORCE_USER_ID) {
-    return 'institutional'
-  }
-
-  const { data } = await supabase
-    .from('user_subscriptions')
-    .select('tier')
-    .eq('user_id', user.id)
-    .maybeSingle()
-
-  return (data?.tier as UserTier) ?? 'free'
+  const entitlements = await getViewerEntitlements()
+  return entitlements.rawTier
 })
 
 /**
@@ -68,6 +55,6 @@ const TIER_RANK: Record<UserTier, number> = {
 }
 
 export const hasMinTier = async (requiredTier: UserTier): Promise<boolean> => {
-  const tier = await getUserTier()
-  return TIER_RANK[tier] >= TIER_RANK[requiredTier]
+  const entitlements = await getViewerEntitlements()
+  return TIER_RANK[entitlements.effectiveTier] >= TIER_RANK[requiredTier]
 }

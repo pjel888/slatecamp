@@ -1,10 +1,10 @@
 import { createClient, getUser } from "@/lib/supabase/server";
-import { getFeatureFlags, getEffectiveTier, getConnectionState } from "./feature-flags";
-import { getUserRole, type UserRole } from "@/lib/admin/roles";
-import { canSeeDevToolbar, canUseInternalTierBypass } from "@/lib/admin/access-policy";
 import { formatSupabaseError } from "@/lib/supabase/format-error";
 import type { UserTier } from "@/types/app";
 import type { DevConnectionState } from "@/lib/dev/dev-mode";
+import { getViewerEntitlements } from "@/lib/entitlements/get-viewer-entitlements";
+import { ENTITLEMENT_FEATURE_KEYS } from "@/lib/entitlements/feature-keys";
+import type { UserRole } from "@/lib/admin/roles";
 
 export interface AdminAwareProfile {
   id: string;
@@ -32,6 +32,8 @@ export interface AdminAwareProfile {
 /**
  * Fetches profile with admin-aware effective tier and connection state.
  * Use this instead of raw profile queries wherever tier gating is needed.
+ *
+ * @deprecated Prefer `getViewerEntitlements()` from `@/lib/entitlements/get-viewer-entitlements`.
  */
 export async function getAdminAwareProfile(): Promise<AdminAwareProfile | null> {
   const {
@@ -64,21 +66,20 @@ export async function getAdminAwareProfile(): Promise<AdminAwareProfile | null> 
     const stats = statsResult.data;
 
     // Even if stats/sub are missing, we can provide a base profile if user exists
+    const entitlements = await getViewerEntitlements([
+      ENTITLEMENT_FEATURE_KEYS.devToolbar,
+    ]);
     const currentTier = (subscription?.tier ?? "free") as UserTier;
-    const role = await getUserRole();
-    const canShowDevToolbar = canSeeDevToolbar(role);
-    const hasInternalTierBypass = canUseInternalTierBypass(role);
-    
-    const flags = await getFeatureFlags();
-    const connectionState = getConnectionState();
-    const effectiveTier = getEffectiveTier(
-      currentTier,
-      hasInternalTierBypass,
-      flags
-    );
-
+    const role = entitlements.compatibilityRole as UserRole | null;
+    const canShowDevToolbar = entitlements.tooling.devToolbar;
+    const hasInternalTierBypass = entitlements.tooling.internalTierBypass;
+    const connectionState = entitlements.overrides.localDevBypassActive
+      ? "local"
+      : "connected";
+    const effectiveTier = entitlements.effectiveTier;
     const isTierSimulated =
-      (flags.simulatedTier ?? flags.spoofedTier ?? null) !== null;
+      entitlements.overrides.simulatedTier !== null ||
+      entitlements.overrides.legacySpoofedTier !== null;
 
     return {
       id: user.id,

@@ -1,23 +1,17 @@
 import type { UserRole } from './roles'
+import {
+  canSeeDevToolbarForRole,
+  canUseInternalTierBypassForRole,
+} from '@/lib/entitlements/policy'
 
-const DEV_TOOLBAR_ROLES: ReadonlySet<UserRole> = new Set([
-  'super_admin',
-  'content_admin',
-  'developer',
-  'admin',
-  'ceo',
-])
-
-const INTERNAL_TIER_BYPASS_ROLES: ReadonlySet<UserRole> = new Set([
-  'super_admin',
-  'content_admin',
-  'developer',
-  'admin',
-  'ceo',
-])
-
+/**
+ * @deprecated Prefer `canSeeDevToolbarForRole()` from `@/lib/entitlements/policy`.
+ */
 export const canSeeDevToolbar = (role: UserRole | null): boolean =>
-  role !== null && DEV_TOOLBAR_ROLES.has(role)
+  role !== null && canSeeDevToolbarForRole(role)
 
+/**
+ * @deprecated Prefer `canUseInternalTierBypassForRole()` from `@/lib/entitlements/policy`.
+ */
 export const canUseInternalTierBypass = (role: UserRole | null): boolean =>
-  role !== null && INTERNAL_TIER_BYPASS_ROLES.has(role)
+  role !== null && canUseInternalTierBypassForRole(role)

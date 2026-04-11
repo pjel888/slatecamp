@@ -1,6 +1,8 @@
 'use server'
 
-import { createClient, getUser } from '@/lib/supabase/server'
+import { getViewerEntitlements } from '@/lib/entitlements/get-viewer-entitlements'
+import { evaluateFeatureAccess } from '@/lib/entitlements/resolve-entitlements'
+import type { EntitlementFeatureKey } from '@/lib/entitlements/feature-keys'
 import { FEATURE_PAYMENTS_ENABLED } from '@/lib/constants/feature-flags'
 import type { UserTier } from '@/types/app'
 
@@ -46,44 +48,25 @@ export const checkFeatureAccess = async (featureKey: FeatureKey): Promise<Access
     return { allowed: true, userTier: 'free', requiredTier: [] }
   }
 
-  const supabase = await createClient()
-  const { data: { user } } = await getUser()
+  const entitlements = await getViewerEntitlements([
+    featureKey as EntitlementFeatureKey,
+  ])
 
-  if (!user) {
+  if (!entitlements.userId) {
     return { allowed: false, reason: 'Not authenticated', userTier: 'free', requiredTier: [] }
   }
 
-  // Get user's subscription tier
-  const { data: sub } = await supabase
-    .from('user_subscriptions')
-    .select('tier, status')
-    .eq('user_id', user.id)
-    .maybeSingle()
-
-  const isActive = sub?.status === 'active' || sub?.status === 'trialing'
-  const userTier: UserTier = (isActive ? (sub?.tier as UserTier) : null) ?? 'free'
-
-  // Get the feature flag from DB
-  const { data: flag } = await supabase
-    .from('feature_flags')
-    .select('enabled, target_tier')
-    .eq('key', featureKey)
-    .maybeSingle()
-
-  // If flag doesn't exist or is disabled, feature is open to all
-  if (!flag || !flag.enabled) {
-    return { allowed: true, userTier, requiredTier: [] }
-  }
-
-  // Check if user's tier is in the target_tier array
-  const requiredTier = (flag.target_tier as string[]) || []
-  const allowed = requiredTier.includes(userTier)
+  const decision = evaluateFeatureAccess(
+    entitlements,
+    featureKey as EntitlementFeatureKey,
+  )
+  const normalizedFlag = entitlements.featureFlags[featureKey as EntitlementFeatureKey]
 
   return {
-    allowed,
-    reason: allowed ? undefined : 'Upgrade to Pro to unlock this feature',
-    userTier,
-    requiredTier,
+    allowed: decision.allowed,
+    reason: decision.allowed ? undefined : 'Upgrade to Pro to unlock this feature',
+    userTier: entitlements.effectiveTier,
+    requiredTier: normalizedFlag?.allowedTiers ?? [],
   }
 }
 
@@ -100,19 +83,8 @@ export const canAccess = async (featureKey: FeatureKey): Promise<boolean> => {
  */
 export const getUserTier = async (): Promise<UserTier> => {
   if (!FEATURE_PAYMENTS_ENABLED) return 'free'
-
-  const supabase = await createClient()
-  const { data: { user } } = await getUser()
-  if (!user) return 'free'
-
-  const { data: sub } = await supabase
-    .from('user_subscriptions')
-    .select('tier, status')
-    .eq('user_id', user.id)
-    .maybeSingle()
-
-  const isActive = sub?.status === 'active' || sub?.status === 'trialing'
-  return (isActive ? (sub?.tier as UserTier) : null) ?? 'free'
+  const entitlements = await getViewerEntitlements()
+  return entitlements.effectiveTier
 }
 
 /**

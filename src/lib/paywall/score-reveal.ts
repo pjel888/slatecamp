@@ -2,6 +2,8 @@
 
 import { createClient } from '@/lib/supabase/server'
 import { FEATURE_PAYMENTS_ENABLED } from '@/lib/constants/feature-flags'
+import { getViewerEntitlements } from '@/lib/entitlements/get-viewer-entitlements'
+import { ENTITLEMENT_FEATURE_KEYS } from '@/lib/entitlements/feature-keys'
 
 /**
  * Check if the free user has already seen the score reveal.
@@ -16,20 +18,15 @@ export const checkScoreRevealAccess = async (userId: string): Promise<{
     return { canView: true, shownAt: null }
   }
 
+  const entitlements = await getViewerEntitlements([
+    ENTITLEMENT_FEATURE_KEYS.readinessScoreLive,
+  ])
+  const paidAccess =
+    entitlements.decisions[ENTITLEMENT_FEATURE_KEYS.readinessScoreLive]?.allowed ?? false
+
+  if (paidAccess) return { canView: true, shownAt: null }
+
   const supabase = await createClient()
-
-  // Check subscription
-  const { data: sub } = await supabase
-    .from('user_subscriptions')
-    .select('tier, status')
-    .eq('user_id', userId)
-    .maybeSingle()
-
-  const isPaid =
-    (sub?.status === 'active' || sub?.status === 'trialing') &&
-    sub?.tier !== 'free'
-
-  if (isPaid) return { canView: true, shownAt: null }
 
   // Check if already shown
   const { data: stats } = await supabase

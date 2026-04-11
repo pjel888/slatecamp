@@ -2,7 +2,8 @@
 
 import { createClient } from '@/lib/supabase/server'
 import { FEATURE_PAYMENTS_ENABLED } from '@/lib/constants/feature-flags'
-import type { UserTier } from '@/types/app'
+import { getViewerEntitlements } from '@/lib/entitlements/get-viewer-entitlements'
+import { ENTITLEMENT_FEATURE_KEYS } from '@/lib/entitlements/feature-keys'
 
 const FREE_DAILY_CAP = 20
 
@@ -23,22 +24,17 @@ export const checkDailyCap = async (userId: string): Promise<DailyCapResult> => 
     return { allowed: true, remaining: 999999, cap: 999999, resetsAt: '' }
   }
 
-  const supabase = await createClient()
+  const entitlements = await getViewerEntitlements([
+    ENTITLEMENT_FEATURE_KEYS.questionsUnlimited,
+  ])
+  const hasUnlimitedAccess =
+    entitlements.decisions[ENTITLEMENT_FEATURE_KEYS.questionsUnlimited]?.allowed ?? false
 
-  // Check if user is on a paid tier
-  const { data: sub } = await supabase
-    .from('user_subscriptions')
-    .select('tier, status')
-    .eq('user_id', userId)
-    .maybeSingle()
-
-  const isPaid =
-    (sub?.status === 'active' || sub?.status === 'trialing') &&
-    sub?.tier !== 'free'
-
-  if (isPaid) {
+  if (hasUnlimitedAccess) {
     return { allowed: true, remaining: Infinity, cap: Infinity, resetsAt: '' }
   }
+
+  const supabase = await createClient()
 
   // Get current count from user_global_stats
   const { data: stats } = await supabase

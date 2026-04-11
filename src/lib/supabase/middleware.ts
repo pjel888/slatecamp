@@ -2,6 +2,13 @@ import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 import { ROUTES, PUBLIC_ROUTES } from "@/lib/routes";
 import { isDemoMode } from "@/lib/demo/config";
+import { resolveRoleFromInputs } from "@/lib/entitlements/resolve-role";
+import {
+  canAccessAdminCmsForRole,
+  canAccessCeoPortalForRole,
+  canAccessDeveloperPortalForRole,
+} from "@/lib/entitlements/policy";
+import { logEntitlementAuditEvent } from "@/lib/entitlements/audit";
 
 export const updateSession = async (request: NextRequest) => {
   const response = NextResponse.next({ request });
@@ -75,18 +82,71 @@ export const updateSession = async (request: NextRequest) => {
     return redirectWithCookies(ROUTES.dashboard.root);
   }
 
-  // 6. ADMIN ROLE GATING (defense-in-depth — layout.tsx also checks)
-  if (pathname.startsWith('/admin/') && pathname !== ROUTES.admin.login) {
-    const { data: roleData } = await supabase
-      .from('user_roles')
-      .select('role')
-      .eq('user_id', user.id)
-      .in('role', ['super_admin', 'content_admin', 'sme_reviewer'])
-      .limit(1)
-      .maybeSingle()
+  // 6. PRIVILEGED ROUTE GATING (defense-in-depth — app layouts also check)
+  if (
+    pathname.startsWith('/admin/') && pathname !== ROUTES.admin.login ||
+    pathname.startsWith('/developer') ||
+    pathname.startsWith('/ceo')
+  ) {
+    const [profileResult, roleRowsResult] = await Promise.all([
+      supabase.from('profiles').select('role').eq('id', user.id).maybeSingle(),
+      supabase
+        .from('user_roles')
+        .select('role')
+        .eq('user_id', user.id)
+        .order('created_at', { ascending: false }),
+    ])
 
-    if (!roleData) {
-      return redirectWithCookies(ROUTES.dashboard.root);
+    const roleResolution = resolveRoleFromInputs({
+      email: user.email,
+      appMetadataRole: user.app_metadata?.role,
+      userMetadataRole: user.user_metadata?.role,
+      profileRole: profileResult.data?.role,
+      userRoleRows: roleRowsResult.data ?? [],
+      forcedUserIdActive: isDev && hasForceUser,
+    })
+
+    const allowDeveloperBypass = process.env.ALLOW_DEV_PORTAL_BYPASS === 'true'
+
+    const canAccess =
+      pathname.startsWith('/admin/')
+        ? canAccessAdminCmsForRole(roleResolution.normalizedRole)
+        : pathname.startsWith('/developer')
+          ? canAccessDeveloperPortalForRole(
+              roleResolution.normalizedRole,
+              allowDeveloperBypass,
+            )
+          : canAccessCeoPortalForRole(roleResolution.normalizedRole)
+
+    logEntitlementAuditEvent({
+      eventName: canAccess ? 'tooling.access' : 'entitlement.denied',
+      timestamp: new Date().toISOString(),
+      traceId: globalThis.crypto.randomUUID(),
+      userId: user.id,
+      routeOrAction: `middleware:${pathname}`,
+      normalizedRole: roleResolution.normalizedRole,
+      roleSource: roleResolution.resolvedFrom,
+      rawTier: 'free',
+      subscriptionStatus: 'unknown',
+      effectiveTier: 'free',
+      overrideState: {
+        simulatedTier: null,
+        legacySpoofedTier: null,
+        forcedTier: null,
+        forcedUserIdActive: isDev && hasForceUser,
+        localDevBypassActive: false,
+        allowDevPortalBypass: allowDeveloperBypass,
+        featureOverrides: {},
+        sourceTrace: roleResolution.precedenceTrace,
+      },
+      decision: canAccess,
+      denialReason: canAccess ? undefined : 'tooling_policy_denied',
+      decisionSource: 'middleware',
+      trace: roleResolution.precedenceTrace,
+    })
+
+    if (!canAccess) {
+      return redirectWithCookies(ROUTES.dashboard.root)
     }
   }
 

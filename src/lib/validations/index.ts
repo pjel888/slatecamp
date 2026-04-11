@@ -81,7 +81,19 @@ export const checkoutSchema = z.object({
 });
 
 // Feature flags validation
-export const featureFlagsSchema = z.record(z.string(), z.boolean());
+export const featureFlagsSchema = z.object({
+  simulatedTier: z
+    .enum(['free', 'pro', 'prime', 'institutional', 'enterprise'])
+    .nullable()
+    .optional(),
+  spoofedTier: z
+    .enum(['free', 'pro', 'prime', 'institutional', 'enterprise'])
+    .nullable()
+    .optional(),
+  bypass3dGate: z.boolean().optional(),
+  bypassAiGate: z.boolean().optional(),
+  bypassSrsGate: z.boolean().optional(),
+});
 
 // Type exports
 export type CreateNoteInput = z.infer<typeof createNoteSchema>;

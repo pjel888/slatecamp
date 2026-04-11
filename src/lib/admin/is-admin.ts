@@ -14,6 +14,7 @@ export async function isAdminLegacy(): Promise<boolean> {
 
 /**
  * Check if a specific email belongs to an admin.
+ * @deprecated Use canonical role resolution and policy checks.
  */
 export async function isAdminByEmail(email: string | undefined): Promise<boolean> {
   if (!email) return false;
