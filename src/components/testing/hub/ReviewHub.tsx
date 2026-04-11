@@ -4,11 +4,11 @@ import Link from 'next/link'
 import { useMemo } from 'react'
 import { Lock } from '@phosphor-icons/react'
 import { ROUTES } from '@/lib/routes'
+import type { UserTier } from '@/types/app'
 import { ReadinessScoreRing } from '@/components/score/ReadinessScoreRing'
 import { SectionHeader } from '@/components/shared/section-header'
 import { HeroConfigurator } from './HeroConfigurator'
 import type {
-  ModeStats,
   ModeSource,
   SimulationGateStatus,
 } from '@/types/testing'
@@ -56,12 +56,12 @@ interface RawWeakNode {
 }
 
 interface ReviewHubProps {
-  userTier: string
+  effectiveTier: UserTier
+  hasInternalTierBypass: boolean
   readinessScore: number
   lastStudyDate: string | null
   completedSessions: RawSession[]
   inProgressSession: RawSession | null
-  allSessions: RawSession[]
   blindspotQueues: RawBlindspotQueue[]
   targetExamDate: string | null
   weakNodes: RawWeakNode[]
@@ -146,41 +146,13 @@ const getSessionHref = (session: RawSession): string => {
     : `/quiz/${routeMode}/session/${session.session_id}`
 }
 
-const buildModeStatsMap = (
-  sessions: RawSession[],
-): Record<string, ModeStats> => {
-  const map: Record<string, { count: number; accuracies: number[]; qCounts: number[] }> = {}
-
-  for (const session of sessions) {
-    const key = getModeKey(session)
-    if (!map[key]) map[key] = { count: 0, accuracies: [], qCounts: [] }
-    map[key].count += 1
-    if (session.accuracy != null) map[key].accuracies.push(session.accuracy)
-    const qCount = session.question_ids?.length ?? 0
-    if (qCount > 0) map[key].qCounts.push(qCount)
-  }
-
-  const result: Record<string, ModeStats> = {}
-  for (const [key, data] of Object.entries(map)) {
-    result[key] = {
-      sessionCount: data.count,
-      lastAccuracy: data.accuracies.length > 0 ? data.accuracies[0] : null,
-      avgQuestionsPerSession:
-        data.qCounts.length > 0
-          ? data.qCounts.reduce((a, b) => a + b, 0) / data.qCounts.length
-          : null,
-      fatigueThreshold: null,
-    }
-  }
-  return result
-}
-
-const isDevEnvironment = process.env.NODE_ENV === 'development'
-
-const computeSimulationGate = (readinessScore: number): SimulationGateStatus => {
+const computeSimulationGate = (
+  readinessScore: number,
+  hasInternalTierBypass: boolean,
+): SimulationGateStatus => {
   const required = 65
   return {
-    isUnlocked: isDevEnvironment || readinessScore >= required,
+    isUnlocked: hasInternalTierBypass || readinessScore >= required,
     currentReadiness: readinessScore,
     requiredReadiness: required,
     hasEnduranceCalibration: false,
@@ -213,12 +185,12 @@ const getDaysUntilExam = (date: string | null): number | null => {
 }
 
 const ReviewHub = ({
-  userTier,
+  effectiveTier,
+  hasInternalTierBypass,
   readinessScore,
   lastStudyDate,
   completedSessions,
   inProgressSession,
-  allSessions,
   blindspotQueues,
   targetExamDate,
   weakNodes,
@@ -227,20 +199,14 @@ const ReviewHub = ({
   srDueCycles = [],
   srProgress = { active: 0, spacing: 0, durable: 0, reset: 0, total: 0 },
 }: ReviewHubProps) => {
-  const modeStats = useMemo(
-    () => buildModeStatsMap(completedSessions),
-    [completedSessions],
-  )
   const simulationGateStatus = useMemo(
-    () => computeSimulationGate(readinessScore),
-    [readinessScore],
+    () => computeSimulationGate(readinessScore, hasInternalTierBypass),
+    [hasInternalTierBypass, readinessScore],
   )
   const readinessZone = useMemo(
     () => getReadinessZone(readinessScore),
     [readinessScore],
   )
-  const effectiveTier = (isDevEnvironment || userTier !== 'free') ? 'pro' : 'free'
-  const normalizedTier = (userTier === 'free' ? 'free' : 'pro') as 'free' | 'pro'
   const daysUntilExam = useMemo(
     () => getDaysUntilExam(targetExamDate),
     [targetExamDate],

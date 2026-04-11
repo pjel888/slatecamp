@@ -35,7 +35,8 @@ export const SetupPageClient = ({ mode, subjects }: SetupPageClientProps) => {
     try {
       const result = await startSession({ mode, config })
       if ('error' in result) {
-        setError(String((result as { error: unknown }).error))
+        const actionError = result as { error: unknown; message?: string }
+        setError(actionError.message ?? String(actionError.error))
         setPhase('setup')
         return
       }
@@ -86,7 +87,7 @@ export const SetupPageClient = ({ mode, subjects }: SetupPageClientProps) => {
     <>
       {error && (
         <div className="mx-auto max-w-[560px] px-4 pt-4">
-          <div className="rounded-md border border-[#D64545]/20 bg-[#FDF0F0] px-4 py-3 text-sm text-[#D64545]">
+          <div className="rounded-md border border-destructive/20 bg-destructive/5 px-4 py-3 text-sm text-destructive">
             {error}
           </div>
         </div>

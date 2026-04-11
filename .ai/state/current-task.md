@@ -1,25 +1,63 @@
-# Current Task: First-Time User Experience (FTUX) Audit & Hardening <!-- updated: 2026-04-10 -->
+# Current Task: Error Logging Audit — v4 FOURTH-PASS PRECISION CLEANUP COMPLETE <!-- updated: 2026-04-11 -->
 
-**STATUS:** AUDIT COMPLETE — EXECUTION STARTING
-**DATE:** 2026-04-10
+**STATUS:** AUDIT COMPLETE — FOURTH-PASS PRECISION CLEANUP DELIVERED (v4)
+**DATE:** 2026-04-11
 
-## Active Project: First-Time User Experience (FTUX) Improvements
+## Active Project: Error Logging Audit — Fourth-Pass Precision Cleanup v4
 
-**Audit Plan:** `.ai/plans/2026-04-10-First-Time-User-UXUI-Audit.md` (v1.0)
+**Audit Deliverable:** `.ai/plans/2026-04-11-Error-Logging-Audit.md` (v4, 24 sections + 5 appendices)
 
-### Phase 1 — Redirection & Guards (High Priority) — COMPLETE
-- [x] 1.1: Fix Register Redirect — Update `RegisterForm.tsx` to pass `next=/onboarding` <!-- completed: 2026-04-10 -->
-- [x] 1.2: Add Dashboard Onboarding Guard — Update `DashboardLayoutContent.tsx` to check `onboarding_completed_at` <!-- completed: 2026-04-10 -->
-- [x] 1.3: Update Register Page Copy — Align "Continue to see your score" with new user context <!-- completed: 2026-04-10 -->
+### Fourth-Pass Precision Cleanup Changes (v4)
 
-### Phase 2 — Dashboard Arrival & Empty States — COMPLETE
-- [x] 2.1: Onboarding Calibration UI — Visual feedback during the 3-step setup <!-- completed: 2026-04-10 -->
-- [x] 2.2: Dashboard Welcome State — Conditional "First Step" cards for 0-score users <!-- completed: 2026-04-10 -->
-- [x] 2.3: Skeleton to Helpful State Transition — Replace empty graphs with educational placeholders <!-- completed: 2026-04-10 -->
+**PRECISION IMPROVEMENTS:**
+- **Exact count substitutions:** Replaced approximate `~20` (queries) with `17`, `~12` (supabase) with `6`, and `~11` (api) with `11`.
+- **Wording narrowed:** All exhaustive surface claims now cite exact file counts instead of approximations.
+- **File-count versus occurrence-count corrections:** Clearly distinguished between unique files containing a pattern and total occurrences of that pattern across all sections.
+- **Pattern Proof Table Audit:** Added "Occurrence count" attribute to all high-volume pattern tables for forensic exactness.
+- **Verified Ledger alignment:** Synchronized all summary counts with fresh grep-derived evidence.
+- **Typo verification:** Confirmed absence of forensic-weakening typos (SAMLED, SAMOLED).
 
-### Phase 3 — Verification & Analytics — COMPLETE
-- [x] 3.1: Verify end-to-end signup-to-onboarding-to-dashboard path <!-- completed: 2026-04-10 -->
-- [x] 3.2: Add analytics events for onboarding drop-off points <!-- completed: 2026-04-10 -->
+### Numeric Corrections from v4 Cleanup
+| Claim | v3.1 | v4 (Verified Fresh Grep) |
+|-------|------|---------------------------|
+| Files with throw new Error | 42 | 47 (128 occurrences) |
+| Files with if (error) | 40 | 71 (149 occurrences) |
+| Files with console.error | 50 | 87 (176 occurrences) |
+| Queries files | ~20 | 17 |
+| Supabase files | ~12 | 6 |
+| API Routes | ~11 | 11 |
+
+### Five Urgent Findings (Verified)
+1. Server Actions throw generic Error (47 files) — CRITICAL
+2. 137 server action files exist with inconsistent error handling — CRITICAL
+3. Middleware session refresh failures are silent (middleware.ts:56) — HIGH
+4. Admin content mutations lack audit trail beyond 3 tables — HIGH
+5. Payment webhook handlers have minimal error handling — HIGH
+
+### Three Next Moves (Unchanged)
+1. Standardize server action error responses (typed { success, error } returns)
+2. Add logging to top 10 high-value server actions (submit-answer, payments, admin)
+3. Create shared logger abstraction (Supabase audit + external monitoring)
+
+### Audit Findings Summary
+
+- **Current Maturity:** AD-HOC — reactive error handling exists but no systematic logging
+- **Architectural Readiness:** NOT READY — no shared logger interface, no correlation IDs
+- **Supabase Role:** INSUFFICIENT ALONE — needs hybrid architecture (Supabase for audit + external for engineering)
+
+### Five Urgent Findings
+1. Server Actions throw generic Error (crashes UI, no visibility) — CRITICAL
+2. 116 server action files with NO consistent error logging — CRITICAL
+3. Middleware session refresh failures are silent — HIGH
+4. Admin content mutations lack audit trail beyond 3 tables — HIGH
+5. Payment webhook handlers have minimal error handling — HIGH
+
+### Three Next Moves
+1. Standardize server action error responses (typed { success, error } returns)
+2. Add logging to top 10 high-value server actions (submit-answer, payments, admin)
+3. Create shared logger abstraction (Supabase audit + external monitoring)
+
+---
 
 ## Previous Project: First-Time User Experience (FTUX) Audit & Hardening — COMPLETE
 
