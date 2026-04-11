@@ -1,10 +1,9 @@
 'use server'
 
-import { cookies } from 'next/headers'
 import { isDemoMode } from '@/lib/demo/config'
-import { isAdmin } from '@/lib/admin/is-admin'
-
-const COOKIE_NAME = 'cerebro_dev_flags'
+import { getViewerEntitlements } from '@/lib/entitlements/get-viewer-entitlements'
+import { ENTITLEMENT_FEATURE_KEYS } from '@/lib/entitlements/feature-keys'
+import { readDevOverrideCookie } from '@/lib/entitlements/dev-overrides'
 
 /**
  * Get feature flags for the current user.
@@ -12,22 +11,23 @@ const COOKIE_NAME = 'cerebro_dev_flags'
  * Returns null for non-admin users or if no flags are set.
  */
 export async function getFeatureFlags(): Promise<Record<string, boolean> | null> {
-  const cookieStore = await cookies();
-
   // In demo mode, return demo flags if set
   if (isDemoMode()) {
-    const flags = cookieStore.get(COOKIE_NAME)?.value;
-    return flags ? JSON.parse(flags) : null;
+    const flags = await readDevOverrideCookie();
+    return flags as Record<string, boolean>;
   }
 
-  // Check if user is admin
-  const admin = await isAdmin();
-  if (!admin) {
+  const entitlements = await getViewerEntitlements([
+    ENTITLEMENT_FEATURE_KEYS.devOverrideWrite,
+  ])
+  const canRead =
+    entitlements.decisions[ENTITLEMENT_FEATURE_KEYS.devOverrideWrite]?.allowed ?? false
+  if (!canRead) {
     return null;
   }
 
-  const flags = cookieStore.get(COOKIE_NAME)?.value;
-  return flags ? JSON.parse(flags) : null;
+  const flags = await readDevOverrideCookie();
+  return flags as Record<string, boolean>;
 }
 
 /**

@@ -3,9 +3,6 @@ import { redirect } from 'next/navigation'
 import { createClient, getUser } from '@/lib/supabase/server'
 import { ROUTES } from '@/lib/routes'
 import { bootstrapUser } from '@/lib/supabase/bootstrap'
-import { getFeatureFlags, getEffectiveTier } from '@/lib/admin/feature-flags'
-import { getUserRole } from '@/lib/admin/roles'
-import { canSeeDevToolbar, canUseInternalTierBypass } from '@/lib/admin/access-policy'
 import { SidebarProvider } from '@/components/sidebar/SidebarProvider'
 import { Sidebar } from '@/components/sidebar/Sidebar'
 import { SidebarContent } from '@/components/sidebar/SidebarContent'
@@ -23,6 +20,9 @@ import { isDemoMode } from '@/lib/demo/config'
 import { getCachedDisciplines } from '@/lib/actions/cached-queries'
 import { Toaster } from '@/components/ui/toaster'
 import type { UserTier, UserGlobalStats, Discipline } from '@/types/app'
+import { EntitlementProvider } from '@/lib/context/entitlement-context'
+import { getViewerEntitlements } from '@/lib/entitlements/get-viewer-entitlements'
+import { ENTITLEMENT_FEATURE_KEYS } from '@/lib/entitlements/feature-keys'
 
 interface DashboardLayoutContentProps {
   children: React.ReactNode
@@ -46,7 +46,7 @@ const DashboardLayoutContent = async ({ children }: DashboardLayoutContentProps)
     }
   }
 
-  const [{ data: subscription }, { data: stats }, allDisciplines] = await Promise.all([
+  const [{ data: subscription }, { data: stats }, allDisciplines, entitlements] = await Promise.all([
     supabase
       .from('user_subscriptions')
       .select('tier')
@@ -58,6 +58,7 @@ const DashboardLayoutContent = async ({ children }: DashboardLayoutContentProps)
       .eq('user_id', user.id)
       .maybeSingle(),
     getCachedDisciplines(),
+    getViewerEntitlements([ENTITLEMENT_FEATURE_KEYS.devToolbar]),
   ])
 
   const userStats = stats as (UserGlobalStats & { disciplines: Discipline | null }) | null
@@ -72,22 +73,29 @@ const DashboardLayoutContent = async ({ children }: DashboardLayoutContentProps)
     redirect(ROUTES.auth.onboarding)
   }
 
-  const userRole = await getUserRole()
-  const userCanSeeDevToolbar = canSeeDevToolbar(userRole)
-  const userHasInternalTierBypass = canUseInternalTierBypass(userRole)
+  const userCanSeeDevToolbar = entitlements.tooling.devToolbar
   const showDevTools = isDemo || userCanSeeDevToolbar
-
-  const flags = showDevTools ? await getFeatureFlags() : null
-  const effectiveTier = flags
-    ? getEffectiveTier(currentTier, userHasInternalTierBypass, flags)
-    : currentTier
+  const effectiveTier = entitlements.effectiveTier
+  const devToolbarFlags = {
+    simulatedTier: entitlements.overrides.simulatedTier,
+    spoofedTier: entitlements.overrides.legacySpoofedTier,
+    bypass3dGate:
+      entitlements.overrides.featureOverrides[ENTITLEMENT_FEATURE_KEYS.threeDLabFull] === true,
+    bypassAiGate:
+      entitlements.overrides.featureOverrides[
+        ENTITLEMENT_FEATURE_KEYS.aiAssistantUnlimited
+      ] === true,
+    bypassSrsGate:
+      entitlements.overrides.featureOverrides[ENTITLEMENT_FEATURE_KEYS.srsReview] === true,
+  }
 
   return (
-    <TierProvider
-      tier={currentTier}
-      effectiveTier={effectiveTier}
-      isDevMode={showDevTools}
-    >
+    <EntitlementProvider entitlements={entitlements}>
+      <TierProvider
+        tier={currentTier}
+        effectiveTier={effectiveTier}
+        isDevMode={showDevTools}
+      >
       <DisciplineProvider
         initialDiscipline={userStats?.disciplines ?? null}
         initialDisciplines={allDisciplines as Discipline[] ?? []}
@@ -127,13 +135,15 @@ const DashboardLayoutContent = async ({ children }: DashboardLayoutContentProps)
                 </BreadcrumbProvider>
               </SidebarContent>
               </div>
-              {showDevTools && flags != null && (
+              {showDevTools && (
                 <>
                   <DevToolbar
-                    connectionState={isDemo ? 'local' : 'connected'}
+                    connectionState={
+                      entitlements.overrides.localDevBypassActive ? 'local' : 'connected'
+                    }
                     currentTier={currentTier}
                     effectiveTier={effectiveTier}
-                    flags={flags}
+                    flags={devToolbarFlags}
                   />
                   <DevKeyboardProvider
                     systemInfo={{
@@ -141,8 +151,8 @@ const DashboardLayoutContent = async ({ children }: DashboardLayoutContentProps)
                       nextVersion: '15',
                       userId: user.id,
                       userEmail: user.email ?? '',
-                      userRole: user.app_metadata?.role ?? 'user',
-                      connectionState: isDemo ? 'local' : 'connected',
+                      userRole: entitlements.normalizedRole,
+                      connectionState: entitlements.overrides.localDevBypassActive ? 'local' : 'connected',
                     }}
                   />
                 </>
@@ -153,7 +163,8 @@ const DashboardLayoutContent = async ({ children }: DashboardLayoutContentProps)
           </NoteContextProvider>
         </ActiveSessionProvider>
       </DisciplineProvider>
-    </TierProvider>
+      </TierProvider>
+    </EntitlementProvider>
   )
 }
 

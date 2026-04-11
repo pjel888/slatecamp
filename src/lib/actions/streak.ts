@@ -2,6 +2,8 @@
 
 import { createClient } from '@/lib/supabase/server'
 import { revalidateDashboardCacheTags } from './cache-tags'
+import { getViewerEntitlements } from '@/lib/entitlements/get-viewer-entitlements'
+import { ENTITLEMENT_FEATURE_KEYS } from '@/lib/entitlements/feature-keys'
 
 const toUtcDateString = (date: Date): string =>
   date.toISOString().slice(0, 10)
@@ -113,7 +115,6 @@ export const updateStreak = async (userId: string): Promise<void> => {
   }
 
   if (enrollment) {
-    const enrollmentCurrentStreak: number = enrollment.current_streak ?? 0
     const enrollmentLongestStreak: number = enrollment.longest_streak ?? 0
     const newEnrollmentStreak = newStreak
     const newEnrollmentLongest = Math.max(enrollmentLongestStreak, newEnrollmentStreak)
@@ -199,16 +200,11 @@ export interface GraceDayEligibility {
 
 export const checkGraceDayEligibility = async (userId: string): Promise<GraceDayEligibility> => {
   const supabase = await createClient()
-
-  const { data: subscription } = await supabase
-    .from('user_subscriptions')
-    .select('tier, status')
-    .eq('user_id', userId)
-    .maybeSingle()
-
+  const entitlements = await getViewerEntitlements([
+    ENTITLEMENT_FEATURE_KEYS.questionsUnlimited,
+  ])
   const isPaid =
-    subscription?.status === 'active' &&
-    (subscription?.tier === 'pro' || subscription?.tier === 'enterprise')
+    entitlements.decisions[ENTITLEMENT_FEATURE_KEYS.questionsUnlimited]?.allowed ?? false
 
   const maxGraceDays = isPaid ? 2 : 1
   const weekMonday = currentIsoWeekMonday()

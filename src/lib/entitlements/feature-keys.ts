@@ -1,0 +1,46 @@
+export const ENTITLEMENT_FEATURE_KEYS = {
+  readinessScoreLive: 'readiness_score_live',
+  analyticsDashboardFull: 'analytics_dashboard_full',
+  taxonomyHeatmapFull: 'taxonomy_heatmap_full',
+  questionsAllDifficulty: 'questions_all_difficulty',
+  questionsUnlimited: 'questions_unlimited',
+  campTrailsFullLibrary: 'camp_trails_full_library',
+  blindspotProtocol: 'blindspot_protocol',
+  enduranceCycle: 'endurance_cycle',
+  proofSimulation: 'proof_simulation',
+  threeDLabFull: '3d_lab_full',
+  aiAssistantUnlimited: 'ai_assistant_unlimited',
+  paywallEnabled: 'paywall_enabled',
+  stormModeEnabled: 'storm_mode_enabled',
+  proofSimulationEnabled: 'proof_simulation_enabled',
+  enduranceModeEnabled: 'endurance_mode_enabled',
+  customSessionEnabled: 'custom_session_enabled',
+  subjectModeEnabled: 'subject_mode_enabled',
+  focusReviewEnabled: 'focus_review_enabled',
+  chillModeEnabled: 'chill_mode_enabled',
+  aiTutorEnabled: 'ai_tutor_enabled',
+  calibrationEnabled: 'calibration_enabled',
+  developerPortal: 'developer_portal',
+  devToolbar: 'dev_toolbar',
+  devOverrideWrite: 'dev_override_write',
+  adminCms: 'admin_cms',
+  srsReview: 'srs_review',
+} as const
+
+export type EntitlementFeatureKey =
+  (typeof ENTITLEMENT_FEATURE_KEYS)[keyof typeof ENTITLEMENT_FEATURE_KEYS]
+
+export const PAID_ENTITLEMENT_FEATURE_KEYS: ReadonlySet<EntitlementFeatureKey> = new Set([
+  ENTITLEMENT_FEATURE_KEYS.readinessScoreLive,
+  ENTITLEMENT_FEATURE_KEYS.analyticsDashboardFull,
+  ENTITLEMENT_FEATURE_KEYS.taxonomyHeatmapFull,
+  ENTITLEMENT_FEATURE_KEYS.questionsAllDifficulty,
+  ENTITLEMENT_FEATURE_KEYS.questionsUnlimited,
+  ENTITLEMENT_FEATURE_KEYS.campTrailsFullLibrary,
+  ENTITLEMENT_FEATURE_KEYS.blindspotProtocol,
+  ENTITLEMENT_FEATURE_KEYS.enduranceCycle,
+  ENTITLEMENT_FEATURE_KEYS.proofSimulation,
+  ENTITLEMENT_FEATURE_KEYS.threeDLabFull,
+  ENTITLEMENT_FEATURE_KEYS.aiAssistantUnlimited,
+  ENTITLEMENT_FEATURE_KEYS.srsReview,
+])

@@ -4,7 +4,6 @@ import Link from 'next/link'
 import { useMemo } from 'react'
 import { Lock } from '@phosphor-icons/react'
 import { ROUTES } from '@/lib/routes'
-import type { UserTier } from '@/types/app'
 import { ReadinessScoreRing } from '@/components/score/ReadinessScoreRing'
 import { SectionHeader } from '@/components/shared/section-header'
 import { HeroConfigurator } from './HeroConfigurator'
@@ -17,6 +16,7 @@ import type {
   SRDueCycle,
   SRProgressSummary,
 } from '@/lib/actions/quiz-v2/successive-relearning'
+import type { ViewerEntitlements } from '@/lib/entitlements/types'
 
 interface RawSession {
   session_id: string
@@ -56,8 +56,10 @@ interface RawWeakNode {
 }
 
 interface ReviewHubProps {
-  effectiveTier: UserTier
-  hasInternalTierBypass: boolean
+  viewerEntitlements: Pick<
+    ViewerEntitlements,
+    'effectiveTier' | 'tooling' | 'traceId' | 'normalizedRole'
+  >
   readinessScore: number
   lastStudyDate: string | null
   completedSessions: RawSession[]
@@ -185,8 +187,7 @@ const getDaysUntilExam = (date: string | null): number | null => {
 }
 
 const ReviewHub = ({
-  effectiveTier,
-  hasInternalTierBypass,
+  viewerEntitlements,
   readinessScore,
   lastStudyDate,
   completedSessions,
@@ -199,9 +200,10 @@ const ReviewHub = ({
   srDueCycles = [],
   srProgress = { active: 0, spacing: 0, durable: 0, reset: 0, total: 0 },
 }: ReviewHubProps) => {
+  const { effectiveTier } = viewerEntitlements
   const simulationGateStatus = useMemo(
-    () => computeSimulationGate(readinessScore, hasInternalTierBypass),
-    [hasInternalTierBypass, readinessScore],
+    () => computeSimulationGate(readinessScore, viewerEntitlements.tooling.internalTierBypass),
+    [readinessScore, viewerEntitlements.tooling.internalTierBypass],
   )
   const readinessZone = useMemo(
     () => getReadinessZone(readinessScore),

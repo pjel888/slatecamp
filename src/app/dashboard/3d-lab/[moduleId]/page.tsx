@@ -1,9 +1,9 @@
 import { redirect, notFound } from "next/navigation";
 import { ROUTES } from "@/lib/routes";
-import { getAdminAwareProfile } from "@/lib/admin/get-admin-profile";
-import { getFeatureFlags, hasTierAccess } from "@/lib/admin/feature-flags";
 import { ModuleViewer } from "@/features/3d-lab/components";
 import { getModuleById } from "@/features/3d-lab/config/registry";
+import { getViewerEntitlements } from "@/lib/entitlements/get-viewer-entitlements";
+import { ENTITLEMENT_FEATURE_KEYS } from "@/lib/entitlements/feature-keys";
 
 export const metadata = { title: "3D Lab Module" };
 
@@ -26,16 +26,14 @@ export default async function LabModulePage({
     notFound();
   }
 
-  const [profile, flags] = await Promise.all([
-    getAdminAwareProfile(),
-    getFeatureFlags(),
+  const entitlements = await getViewerEntitlements([
+    ENTITLEMENT_FEATURE_KEYS.threeDLabFull,
   ]);
-  
-  if (!profile) redirect(ROUTES.LOGIN);
-  
+
+  if (!entitlements.userId) redirect(ROUTES.LOGIN);
+
   const hasAccess =
-    flags.bypass3dGate ||
-    hasTierAccess("pro", profile.tier, profile.hasInternalTierBypass, flags);
+    entitlements.decisions[ENTITLEMENT_FEATURE_KEYS.threeDLabFull]?.allowed ?? false;
 
   if (!hasAccess) {
     redirect(ROUTES.THREE_D_LAB);

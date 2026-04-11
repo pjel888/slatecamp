@@ -1,11 +1,10 @@
 'use server'
 
 import { createClient, createServiceClient, getUser } from '@/lib/supabase/server'
-import { getFeatureFlags, hasTierAccess } from '@/lib/admin/feature-flags'
-import { canUseInternalTierBypass } from '@/lib/admin/access-policy'
-import { getUserRole } from '@/lib/admin/roles'
 import { normalizeOptions, resolveRationaleText } from '@/lib/utils/question'
 import type { QuestionHistoryStats, ReviewDataResult, ReviewQuestionData } from '@/types/quiz-config'
+import { getViewerEntitlements } from '@/lib/entitlements/get-viewer-entitlements'
+import { ENTITLEMENT_FEATURE_KEYS } from '@/lib/entitlements/feature-keys'
 
 export const getReviewData = async (
   sessionId: string,
@@ -195,27 +194,11 @@ export const getReviewData = async (
   const config = session.config as { mode?: string } | null
 
   // 8. Check if user is Pro (Audit §13.4)
-  const [subscriptionResult, role, flags] = await Promise.all([
-    supabase
-      .from('user_subscriptions')
-      .select('tier, status')
-      .eq('user_id', user.id)
-      .maybeSingle(),
-    getUserRole(),
-    getFeatureFlags(),
+  const entitlements = await getViewerEntitlements([
+    ENTITLEMENT_FEATURE_KEYS.questionsUnlimited,
   ])
-
-  const subscription = subscriptionResult.data
-  const actualTier =
-    subscription?.status === 'active' || subscription?.status === 'trialing'
-      ? subscription.tier
-      : 'free'
-  const isPro = hasTierAccess(
-    'pro',
-    actualTier,
-    canUseInternalTierBypass(role),
-    flags,
-  )
+  const isPro =
+    entitlements.decisions[ENTITLEMENT_FEATURE_KEYS.questionsUnlimited]?.allowed ?? false
 
   // 9. Fetch per-question history for Pro users
   // Batch in chunks of 80 to avoid Supabase header overflow on fullexam (200 questions)

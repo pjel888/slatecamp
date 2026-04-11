@@ -3,6 +3,8 @@
 import { createClient, getUser } from '@/lib/supabase/server'
 import { revalidatePath } from 'next/cache'
 import { ROUTES } from '@/lib/routes'
+import { getViewerEntitlements } from '@/lib/entitlements/get-viewer-entitlements'
+import { ENTITLEMENT_FEATURE_KEYS } from '@/lib/entitlements/feature-keys'
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -53,14 +55,13 @@ export const createPod = async (
   } = await getUser()
   if (!user) return { ok: false, error: 'Unauthorized' }
 
-  // Pro-only: check subscription tier
-  const { data: sub } = await supabase
-    .from('user_subscriptions')
-    .select('tier')
-    .eq('user_id', user.id)
-    .maybeSingle()
+  const entitlements = await getViewerEntitlements([
+    ENTITLEMENT_FEATURE_KEYS.questionsUnlimited,
+  ])
+  const hasPodAccess =
+    entitlements.decisions[ENTITLEMENT_FEATURE_KEYS.questionsUnlimited]?.allowed ?? false
 
-  if (!sub || sub.tier === 'free') {
+  if (!hasPodAccess) {
     return {
       ok: false,
       error: 'Study Pods are available to Pro subscribers only.',

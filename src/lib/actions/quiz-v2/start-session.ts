@@ -9,15 +9,14 @@ import { mergeWithPreset } from '@/lib/quiz/mode-presets'
 import { buildTaxonomyBreadcrumbMap, toClientQuestion } from '@/lib/quiz/to-client-question'
 import { resolveTaxonomyDescendants } from '@/lib/actions/cached-queries'
 import { createServiceClient, getUser } from '@/lib/supabase/server'
-import { getFeatureFlags, hasTierAccess } from '@/lib/admin/feature-flags'
-import { canUseInternalTierBypass } from '@/lib/admin/access-policy'
-import { getUserRole } from '@/lib/admin/roles'
 import type {
   QuestionForClient,
   QuizSessionConfig,
   StartSessionInput,
   StartSessionResult,
 } from '@/types/quiz-config'
+import { getViewerEntitlements } from '@/lib/entitlements/get-viewer-entitlements'
+import { ENTITLEMENT_FEATURE_KEYS } from '@/lib/entitlements/feature-keys'
 
 const DB_TEST_MODE_BY_APP_MODE: Record<StartSessionInput['mode'], string> = {
   camp: 'camp',
@@ -75,27 +74,11 @@ export const startSession = async (
     const modeDef = MODE_DEFINITIONS[parsedInput.mode]
 
     if (modeDef?.isPro) {
-      const [subscriptionResult, role, flags] = await Promise.all([
-        supabase
-          .from('user_subscriptions')
-          .select('tier, status')
-          .eq('user_id', user.id)
-          .maybeSingle(),
-        getUserRole(),
-        getFeatureFlags(),
+      const entitlements = await getViewerEntitlements([
+        ENTITLEMENT_FEATURE_KEYS.questionsUnlimited,
       ])
-
-      const subscription = subscriptionResult.data
-      const actualTier =
-        subscription?.status === 'active' || subscription?.status === 'trialing'
-          ? subscription.tier
-          : 'free'
-      const hasProAccess = hasTierAccess(
-        'pro',
-        actualTier,
-        canUseInternalTierBypass(role),
-        flags,
-      )
+      const hasProAccess =
+        entitlements.decisions[ENTITLEMENT_FEATURE_KEYS.questionsUnlimited]?.allowed ?? false
 
       if (!hasProAccess) {
         return {
@@ -104,7 +87,7 @@ export const startSession = async (
           errorCode: 'PRO_MODE_REQUIRED',
           message: `The ${modeDef.label} mode requires a Pro subscription.`,
           upgradeUrl: '/pricing',
-          currentTier: actualTier,
+          currentTier: entitlements.effectiveTier,
           requiredTier: 'pro',
         }
       }

@@ -1,6 +1,6 @@
 'use server'
 
-import { createClient, getUser, createServiceClient } from '@/lib/supabase/server'
+import { getUser, createServiceClient } from '@/lib/supabase/server'
 import { unstable_cache } from 'next/cache'
 import type { DashboardPageData } from '@/types/dashboard'
 import { MODE_TOOLTIPS, getWeekBoundary } from './dashboard-helpers'
@@ -24,6 +24,8 @@ import {
 } from './stats-actions'
 import { getCachedTaxonomyTreeByDiscipline, getCachedWikiArticles } from './cached-queries'
 import { getDashboardCacheTags } from './cache-tags'
+import { getViewerEntitlements } from '@/lib/entitlements/get-viewer-entitlements'
+import { ENTITLEMENT_FEATURE_KEYS } from '@/lib/entitlements/feature-keys'
 
 interface ProjectedLawsMasteryRow {
   topic_id: string
@@ -53,6 +55,10 @@ export const getDashboardPageData = async (): Promise<DashboardPageData> => {
 
 const fetchDashboardData = async (user: any): Promise<DashboardPageData> => {
   const supabase = await createServiceClient()
+  const entitlements = await getViewerEntitlements([
+    ENTITLEMENT_FEATURE_KEYS.readinessScoreLive,
+    ENTITLEMENT_FEATURE_KEYS.questionsUnlimited,
+  ])
 
   const firstName =
     user?.user_metadata?.full_name?.split(' ')[0] ??
@@ -140,12 +146,6 @@ const fetchDashboardData = async (user: any): Promise<DashboardPageData> => {
     .eq('user_id', user.id)
     .eq('status', 'completed')
     .then((result) => result)
-  const userSubPromise = supabase
-    .from('user_subscriptions')
-    .select('tier, status')
-    .eq('user_id', user.id)
-    .maybeSingle()
-    .then((result) => result)
   const activeEnrollmentPromise = supabase
     .from('user_trail_enrollments')
     .select('enrollment_id, trail_id, current_day, status, camp_trails(slug, name, duration_days)')
@@ -228,7 +228,9 @@ const fetchDashboardData = async (user: any): Promise<DashboardPageData> => {
   })
   const scoreUpdatesPromise = globalStatsPromise.then(async ({ data: globalStats }) => {
     const scoreRevealShownAt = globalStats?.score_reveal_shown_at ?? null
-    if (!scoreRevealShownAt) return { count: 0 }
+    const canSeeLiveScore =
+      entitlements.decisions[ENTITLEMENT_FEATURE_KEYS.readinessScoreLive]?.allowed ?? false
+    if (!scoreRevealShownAt || canSeeLiveScore) return { count: 0 }
 
     return supabase
       .from('readiness_score_snapshots')
@@ -262,7 +264,6 @@ const fetchDashboardData = async (user: any): Promise<DashboardPageData> => {
     wikiArticlesResult,
     subjectMasteryResult,
     totalSessionsResult,
-    userSubResult,
     activeEnrollmentResult,
     profileResult,
     srsReviewResult,
@@ -284,7 +285,6 @@ const fetchDashboardData = async (user: any): Promise<DashboardPageData> => {
     wikiArticlesPromise,
     subjectMasteryPromise,
     totalSessionsPromise,
-    userSubPromise,
     activeEnrollmentPromise,
     profilePromise,
     srsReviewPromise,
@@ -369,19 +369,23 @@ const fetchDashboardData = async (user: any): Promise<DashboardPageData> => {
     recentNotes,
     labModuleCount,
     onboardingState: (() => {
-      const assessmentCompletedAt = globalStats?.assessment_completed_at ?? null
-      const scoreRevealShownAt = globalStats?.score_reveal_shown_at ?? null
-      const userSub = userSubResult.data
+    const assessmentCompletedAt = globalStats?.assessment_completed_at ?? null
+    const scoreRevealShownAt = globalStats?.score_reveal_shown_at ?? null
+      const hasUnlimitedQuestions =
+        entitlements.decisions[ENTITLEMENT_FEATURE_KEYS.questionsUnlimited]?.allowed ?? false
+      const canSeeLiveScore =
+        entitlements.decisions[ENTITLEMENT_FEATURE_KEYS.readinessScoreLive]?.allowed ?? false
       const activeEnrollment = activeEnrollmentResult.data
-      const isFreeUser = !userSub || userSub.tier === 'free' || userSub.status !== 'active'
+      const isFreeUser = !hasUnlimitedQuestions
       if (!assessmentCompletedAt) return 'needs_assessment'
-      if (!scoreRevealShownAt && isFreeUser) return 'needs_score_reveal'
+      if (!scoreRevealShownAt && !canSeeLiveScore && isFreeUser) return 'needs_score_reveal'
       if (!activeEnrollment) return 'needs_trail'
       if (activeEnrollment.status === 'active') return 'active_trail'
       return 'ready'
     })() as any,
     scoreUpdatesSinceReveal: (scoreUpdatesResult as any).count ?? 0,
-    isFreeUser: !userSubResult.data || userSubResult.data.tier === 'free' || userSubResult.data.status !== 'active',
+    isFreeUser:
+      !(entitlements.decisions[ENTITLEMENT_FEATURE_KEYS.questionsUnlimited]?.allowed ?? false),
     activeTrailDay: activeEnrollmentResult.data ? {
       dayNumber: activeEnrollmentResult.data.current_day,
       title: (trailDayResult as any).data?.title ?? `Day ${activeEnrollmentResult.data.current_day}`,

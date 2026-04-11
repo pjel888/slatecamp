@@ -4,12 +4,12 @@ import { redirect } from 'next/navigation'
 import { ROUTES } from '@/lib/routes'
 import { ReviewHub } from '@/components/testing/hub/ReviewHub'
 import { Skeleton } from '@/components/ui/skeleton'
-import { getAdminAwareProfile } from '@/lib/admin/get-admin-profile'
 import {
   getActiveSRCycles,
   getDueSRCycles,
   getUserSRProgress,
 } from '@/lib/actions/quiz-v2/successive-relearning'
+import { getViewerEntitlements } from '@/lib/entitlements/get-viewer-entitlements'
 
 interface CoreSubject {
   node_id: string
@@ -22,7 +22,7 @@ const DrillsContent = async () => {
   const supabase = await createClient()
   const { data: { user } } = await getUser()
   if (!user) redirect(ROUTES.LOGIN)
-  const accessProfile = await getAdminAwareProfile()
+  const entitlements = await getViewerEntitlements()
 
   // Fetch discipline ID first for subject query
   const { data: disciplineStats } = await supabase
@@ -32,7 +32,6 @@ const DrillsContent = async () => {
     .maybeSingle()
 
   const [
-    { data: subscription },
     { data: sessions },
     { data: stats },
     { data: blindspotQueues },
@@ -43,11 +42,6 @@ const DrillsContent = async () => {
     srDueCycles,
     srProgress,
   ] = await Promise.all([
-    supabase
-      .from('user_subscriptions')
-      .select('tier')
-      .eq('user_id', user.id)
-      .maybeSingle(),
     supabase
       .from('quiz_sessions')
       .select('session_id, test_mode, config, status, question_ids, started_at, completed_at, current_question_index, updated_at')
@@ -92,9 +86,6 @@ const DrillsContent = async () => {
     getUserSRProgress(user.id).catch(() => ({ active: 0, spacing: 0, durable: 0, reset: 0, total: 0 })),
   ])
 
-  const userTier = subscription?.tier ?? 'free'
-  const effectiveTier = accessProfile?.effectiveTier ?? userTier
-  const hasInternalTierBypass = accessProfile?.hasInternalTierBypass ?? false
   const coreSubjects: CoreSubject[] = (coreSubjectsRaw ?? []).map((s: any) => ({
     node_id: s.node_id,
     name: s.name,
@@ -111,8 +102,7 @@ const DrillsContent = async () => {
 
   return (
     <ReviewHub
-      effectiveTier={effectiveTier}
-      hasInternalTierBypass={hasInternalTierBypass}
+      viewerEntitlements={entitlements}
       readinessScore={stats?.global_readiness_score ?? 0}
       lastStudyDate={stats?.last_study_date ?? null}
       completedSessions={completedSessions ?? []}

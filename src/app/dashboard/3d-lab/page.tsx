@@ -1,13 +1,13 @@
 import { Suspense } from "react";
 import { redirect } from "next/navigation";
 import { ROUTES } from "@/lib/routes";
-import { getAdminAwareProfile } from "@/lib/admin/get-admin-profile";
-import { getFeatureFlags, hasTierAccess } from "@/lib/admin/feature-flags";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Lock } from "@phosphor-icons/react/dist/ssr";
 import { LabBrowser, LabBrowserShell } from "@/features/3d-lab/components";
 import { THREE_D_LAB_GATE_COPY } from "@/features/3d-lab/gate-copy";
+import { getViewerEntitlements } from "@/lib/entitlements/get-viewer-entitlements";
+import { ENTITLEMENT_FEATURE_KEYS } from "@/lib/entitlements/feature-keys";
 
 export const metadata = { title: "3D Lab" };
 
@@ -26,16 +26,14 @@ export default async function ThreeDLabPage({
     redirect(`${ROUTES.THREE_D_LAB}/${modelId}`);
   }
 
-  const [profile, flags] = await Promise.all([
-    getAdminAwareProfile(),
-    getFeatureFlags(),
+  const entitlements = await getViewerEntitlements([
+    ENTITLEMENT_FEATURE_KEYS.threeDLabFull,
   ]);
-  
-  if (!profile) redirect(ROUTES.LOGIN);
-  
+
+  if (!entitlements.userId) redirect(ROUTES.LOGIN);
+
   const hasAccess =
-    flags.bypass3dGate ||
-    hasTierAccess("pro", profile.tier, profile.hasInternalTierBypass, flags);
+    entitlements.decisions[ENTITLEMENT_FEATURE_KEYS.threeDLabFull]?.allowed ?? false;
 
   if (!hasAccess) {
     return (

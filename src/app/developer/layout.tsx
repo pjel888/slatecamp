@@ -8,23 +8,28 @@ export const metadata: Metadata = {
   },
   description: 'Internal documentation, API reference, architecture guides, and dev tools for SlateCamp.',
 }
-import { getUserRole } from '@/lib/admin/roles'
 import { ROUTES } from '@/lib/routes'
 import { DevPortalShell } from './_components/DevPortalShell'
+import { getViewerEntitlements } from '@/lib/entitlements/get-viewer-entitlements'
+import { ENTITLEMENT_FEATURE_KEYS } from '@/lib/entitlements/feature-keys'
 
 export default async function DeveloperPortalLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
-  const isBypass = process.env.ALLOW_DEV_PORTAL_BYPASS === 'true'
-  const role = await getUserRole()
+  const entitlements = await getViewerEntitlements([
+    ENTITLEMENT_FEATURE_KEYS.developerPortal,
+  ])
 
-  if (!isBypass && !role) {
+  const canAccess =
+    entitlements.decisions[ENTITLEMENT_FEATURE_KEYS.developerPortal]?.allowed ?? false
+
+  if (!canAccess) {
     redirect(ROUTES.DASHBOARD)
   }
 
-  const env: 'development' | 'staging' | 'production' = isBypass
+  const env: 'development' | 'staging' | 'production' = entitlements.overrides.allowDevPortalBypass
     ? 'development'
     : process.env.NEXT_PUBLIC_APP_URL?.includes('staging')
       ? 'staging'
