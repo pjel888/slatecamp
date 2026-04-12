@@ -1,10 +1,10 @@
 'use client'
 
-import { useState, useMemo, useCallback } from 'react'
+import { useState, useMemo, useCallback, useEffect } from 'react'
 import Link from 'next/link'
 import { useRouter, useSearchParams } from 'next/navigation'
 import { ROUTES } from '@/lib/routes'
-import { MagnifyingGlass, Plus, FileText, ArrowRight, TreeStructure, Question, Stack } from '@phosphor-icons/react/dist/ssr'
+import { MagnifyingGlass, Plus, FileText, ArrowRight, TreeStructure, Question, Stack, Trash } from '@phosphor-icons/react/dist/ssr'
 import { TaxonomyTree, type TaxonomyTreeNode } from '@/components/shared/taxonomy-tree'
 import { Badge, StatusBadge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
@@ -13,6 +13,11 @@ import { cn } from '@/lib/utils'
 import { Eyebrow } from '@/components/ui/eyebrow'
 import { QuestionsTableClient } from '@/components/admin/QuestionsTableClient'
 import { normalizeEditorStatus } from '@/lib/admin/editor-workflow'
+import { Checkbox } from '@/components/ui/checkbox'
+import { BulkActionBar } from '@/components/admin/BulkActionBar'
+import { DeleteArticleModal } from '@/components/admin/DeleteArticleModal'
+import { bulkDeleteArticles } from '@/lib/actions/admin/bulk'
+import { toast } from '@/lib/hooks/use-toast'
 
 // ─── Types ───────────────────────────────────────────────────
 
@@ -116,6 +121,8 @@ export const ContentEditorIndex = ({
 }: ContentEditorIndexProps) => {
   const router = useRouter()
   const searchParams = useSearchParams()
+  const topicParam = searchParams.get('topic')
+  const viewParam = searchParams.get('view')
 
   // Initialize from URL params
   const [viewMode, setViewMode] = useState<ViewMode>(() => {
@@ -130,6 +137,25 @@ export const ContentEditorIndex = ({
   const [searchQuery, setSearchQuery] = useState(defaultSearchQuery)
   const [statusFilter, setStatusFilter] = useState<StatusFilter>('all')
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false)
+
+  // Selection state for articles
+  const [selectedArticleIds, setSelectedArticleIds] = useState<Set<string>>(new Set())
+  const [articleToDelete, setArticleToDelete] = useState<{ id: string; title: string } | null>(null)
+  const [localArticles, setLocalArticles] = useState(articles)
+
+  useEffect(() => {
+    setSelectedNodeId(topicParam)
+  }, [topicParam])
+
+  useEffect(() => {
+    if (viewParam === 'articles' || viewParam === 'questions') {
+      setViewMode(viewParam)
+    }
+  }, [viewParam])
+
+  useEffect(() => {
+    setLocalArticles(articles)
+  }, [articles])
 
   // Sync state back to URL
   const updateUrl = useCallback((mode: ViewMode, topic: string | null) => {
@@ -167,7 +193,7 @@ export const ContentEditorIndex = ({
 
   // Filter articles
   const filteredArticles = useMemo(() => {
-    let result = articles
+    let result = localArticles
 
     // Topic filter
     if (selectedNodeId === 'unassigned') {
@@ -196,7 +222,7 @@ export const ContentEditorIndex = ({
     }
 
     return result
-  }, [articles, selectedNodeIds, selectedNodeId, statusFilter, searchQuery])
+  }, [localArticles, selectedNodeIds, selectedNodeId, statusFilter, searchQuery])
 
   // Filter questions for hybrid search
   const filteredQuestions = useMemo(() => {
@@ -217,6 +243,45 @@ export const ContentEditorIndex = ({
       words: wCount,
     }
   }, [filteredArticles])
+
+  const questionCreateTopicParam =
+    selectedNodeId && selectedNodeId !== 'unassigned' ? selectedNodeId : null
+
+  const toggleArticleSelect = (id: string) => {
+    setSelectedArticleIds((prev) => {
+      const next = new Set(prev)
+      if (next.has(id)) next.delete(id)
+      else next.add(id)
+      return next
+    })
+  }
+
+  const handleBulkDeleteArticles = async () => {
+    const ids = Array.from(selectedArticleIds)
+    const result = await bulkDeleteArticles(ids)
+    if (result.error) {
+      toast({ title: 'Delete failed', description: result.error, variant: 'error' })
+      throw new Error(result.error)
+    }
+    setLocalArticles((prev) =>
+      prev.map((article) =>
+        ids.includes(article.article_id)
+          ? {
+              ...article,
+              status: 'archived',
+              updated_at: new Date().toISOString(),
+            }
+          : article,
+      ),
+    )
+    toast({ 
+      title: 'Articles archived', 
+      description: `Successfully moved ${ids.length} article(s) to archived status.`,
+      variant: 'success' 
+    })
+    setSelectedArticleIds(new Set())
+    router.refresh()
+  }
 
   return (
     <div className="flex h-[calc(100vh-8rem)] overflow-hidden">
@@ -245,15 +310,15 @@ export const ContentEditorIndex = ({
             <TaxonomyTree
               nodes={taxonomyTree}
               basePath="/admin/knowledge"
+              activeNodeId={selectedNodeId}
               showCounts={true}
               showSearch={true}
-              onNavigate={(href) => {
-                // Intercept navigation to update local filter instead of hard redirect
-                const parts = href.split('/')
-                const _slug = parts[parts.length - 1]
-                // Note: TaxonomyTree implementation details might vary,
-                // but usually we'd find the node by slug here.
-                // We'll let users click to filter
+              onSelect={(id) => {
+                if (id.startsWith('article:')) {
+                  router.push(`/admin/knowledge/${id.replace('article:', '')}`)
+                  return
+                }
+                handleSetSelectedNodeId(id)
               }}
             />
             
@@ -383,6 +448,17 @@ export const ContentEditorIndex = ({
           {/* Spacer */}
           <div className="flex-1" />
 
+          {/* Bulk actions for articles */}
+          {viewMode === 'articles' && selectedArticleIds.size > 0 && (
+            <div className="mr-2">
+              <BulkActionBar
+                selectedCount={selectedArticleIds.size}
+                onDelete={handleBulkDeleteArticles}
+                entityName="articles"
+              />
+            </div>
+          )}
+
           {/* Active filter indicator */}
           {selectedNodeName && (
             <div className="flex items-center gap-1.5 mr-2">
@@ -401,7 +477,7 @@ export const ContentEditorIndex = ({
 
           {/* New Content Buttons */}
           <div className="flex items-center gap-2">
-            <Link href={`/admin/knowledge/questions/new${selectedNodeId ? `?topic=${selectedNodeId}` : ''}`}>
+            <Link href={`/admin/knowledge/questions/new${questionCreateTopicParam ? `?topic=${questionCreateTopicParam}` : ''}`}>
               <Button variant="secondary" size="sm">
                 <Plus className="w-3.5 h-3.5" weight="bold" />
                 New Question
@@ -494,31 +570,48 @@ export const ContentEditorIndex = ({
                 <div className="divide-y divide-border">
                   {/* Article Results */}
                   {filteredArticles.map((article) => (
-                    <Link
+                    <div
                       key={article.article_id}
-                      href={`/admin/knowledge/${article.article_id}`}
-                      className="group flex items-center gap-4 px-5 py-3.5 transition-colors duration-150 hover:bg-surface-light"
+                      className={cn(
+                        "group flex items-center gap-4 px-5 py-3.5 transition-colors duration-150 hover:bg-surface-light relative",
+                        selectedArticleIds.has(article.article_id) && "bg-primary-50/50 hover:bg-primary-50"
+                      )}
                     >
+                      {/* Checkbox */}
+                      <div className="shrink-0 flex items-center justify-center w-5">
+                        <Checkbox
+                          checked={selectedArticleIds.has(article.article_id)}
+                          onCheckedChange={() => toggleArticleSelect(article.article_id)}
+                        />
+                      </div>
+
                       {/* Icon */}
                       <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-primary-50">
                         <FileText size={16} className="text-camp-cobalt" />
                       </div>
 
                       {/* Content */}
-                      <div className="flex-1 min-w-0">
+                      <Link 
+                        href={`/admin/knowledge/${article.article_id}`}
+                        className="flex-1 min-w-0"
+                      >
                         <div className="flex items-center gap-2 mb-0.5">
                           <span className="text-sm font-medium text-text-primary truncate">
                             {article.title || 'Untitled'}
                           </span>
                           <StatusBadge
                             status={
-                              article.status === 'published'
+                              normalizeEditorStatus(article.status) === 'published'
                                 ? 'published'
                                 : normalizeEditorStatus(article.status) === 'approved'
-                                  ? 'published'
+                                  ? 'approved'
                                   : normalizeEditorStatus(article.status) === 'in_review'
                                     ? 'review'
-                                    : 'draft'
+                                    : normalizeEditorStatus(article.status) === 'changes_requested'
+                                      ? 'changes_requested'
+                                      : normalizeEditorStatus(article.status) === 'archived'
+                                        ? 'archived'
+                                        : 'draft'
                             }
                           />
                           {article.difficulty_label && (
@@ -551,16 +644,27 @@ export const ContentEditorIndex = ({
                             {article.prompt_count}p
                           </span>
                           <span>Updated {formatDate(article.updated_at)}</span>
-
                         </div>
-                      </div>
+                      </Link>
 
-                      {/* Hover action */}
-                      <div className="shrink-0 flex items-center gap-1 text-xs font-medium text-camp-cobalt opacity-0 group-hover:opacity-100 transition-opacity duration-150">
-                        Open Editor
-                        <ArrowRight size={12} />
+                      {/* Actions */}
+                      <div className="shrink-0 flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-150">
+                        <button
+                          onClick={() => setArticleToDelete({ id: article.article_id, title: article.title })}
+                          className="p-1.5 rounded-sm text-text-tertiary hover:text-destructive hover:bg-destructive-50 transition-colors"
+                          title="Archive Article"
+                        >
+                          <Trash size={14} />
+                        </button>
+                        <Link
+                          href={`/admin/knowledge/${article.article_id}`}
+                          className="flex items-center gap-1 text-xs font-medium text-camp-cobalt px-2 py-1 rounded-sm hover:bg-primary-50 transition-colors"
+                        >
+                          Edit
+                          <ArrowRight size={12} />
+                        </Link>
                       </div>
-                    </Link>
+                    </div>
                   ))}
 
                   {/* Question Matches (Hybrid Search) */}
@@ -614,6 +718,17 @@ export const ContentEditorIndex = ({
           </div>
         )}
       </div>
+
+      {/* Modals */}
+      {articleToDelete && (
+        <DeleteArticleModal
+          open={Boolean(articleToDelete)}
+          onOpenChange={(open) => !open && setArticleToDelete(null)}
+          articleId={articleToDelete.id}
+          articleTitle={articleToDelete.title}
+          onSuccess={() => router.refresh()}
+        />
+      )}
     </div>
   )
 }

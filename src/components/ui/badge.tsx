@@ -135,7 +135,14 @@ Badge.displayName = 'Badge'
 /*  Semantic Presets                                                    */
 /* ------------------------------------------------------------------ */
 
-export type BadgeStatus = 'published' | 'draft' | 'archived' | 'active' | 'review'
+export type BadgeStatus =
+  | 'published'
+  | 'draft'
+  | 'archived'
+  | 'active'
+  | 'review'
+  | 'approved'
+  | 'changes_requested'
 
 const StatusBadge = ({ status }: { status: BadgeStatus }) => {
   const config = {
@@ -144,6 +151,8 @@ const StatusBadge = ({ status }: { status: BadgeStatus }) => {
     archived: { variant: 'default' as const, label: 'Archived' },
     active: { variant: 'primary' as const, label: 'Active' },
     review: { variant: 'info' as const, label: 'Review' },
+    approved: { variant: 'primary' as const, label: 'Approved' },
+    changes_requested: { variant: 'warning' as const, label: 'Changes Requested' },
   }
   const { variant, label } = config[status]
   return (

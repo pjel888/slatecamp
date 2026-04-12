@@ -81,6 +81,15 @@ export const IMPERSONATION_PRESETS: ImpersonationPreset[] = [
     userType: 'regular',
     orgId: null,
   },
+  {
+    id: 'owner',
+    label: 'Owner',
+    description: 'Workspace owner / Founder access',
+    role: 'owner',
+    tier: 'institutional',
+    userType: 'regular',
+    orgId: null,
+  },
 ]
 
 // ---------------------------------------------------------------------------

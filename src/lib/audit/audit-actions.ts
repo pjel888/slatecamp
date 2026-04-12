@@ -1,7 +1,7 @@
 'use server'
 
-import { createClient } from '@/lib/supabase/server'
 import { isSuperAdmin } from '@/lib/admin/roles'
+import { getAuditFeed, type AuditFeed } from './audit-queries'
 
 export interface AuditLog {
   id: string
@@ -25,49 +25,12 @@ export interface AuditLogFilters {
   offset?: number
 }
 
-export async function getAuditLogsAction(filters: AuditLogFilters = {}): Promise<AuditLog[]> {
-  const supabase = await createClient()
-  
+export async function getAuditLogsAction(filters: AuditLogFilters = {}): Promise<AuditFeed> {
   // Check if user is super admin
   const admin = await isSuperAdmin()
   if (!admin) {
     throw new Error('Not authorized to view audit logs')
   }
 
-  let query = supabase
-    .from('audit_logs')
-    .select('id, actor_id, event_type, table_name, record_id, metadata, content_snapshot, created_at')
-    .order('created_at', { ascending: false })
-
-  if (filters.tableName) {
-    query = query.eq('table_name', filters.tableName)
-  }
-  if (filters.eventType) {
-    query = query.eq('event_type', filters.eventType)
-  }
-  if (filters.actorId) {
-    query = query.eq('actor_id', filters.actorId)
-  }
-  if (filters.recordId) {
-    query = query.eq('record_id', filters.recordId)
-  }
-  if (filters.startDate) {
-    query = query.gte('created_at', filters.startDate)
-  }
-  if (filters.endDate) {
-    query = query.lte('created_at', filters.endDate)
-  }
-
-  query = query.range(
-    filters.offset || 0,
-    (filters.limit || 50) + (filters.offset || 0) - 1
-  )
-
-  const { data, error } = await query
-
-  if (error) {
-    throw new Error(error.message)
-  }
-
-  return data || []
+  return getAuditFeed(filters)
 }

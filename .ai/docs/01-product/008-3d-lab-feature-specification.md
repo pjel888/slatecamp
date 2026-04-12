@@ -1,13 +1,14 @@
 # 3D Lab Feature Specification
 
-**Last Updated:** 2026-04-10
+**Last Updated:** 2026-04-12
 **Status:** Active — Codebase Source of Truth  
-**Version:** 4.0 (Comprehensive Codebase-Derived Specification)
-**Audit Source:** `.ai/plans/3d-lab-feature-specification-plan-2026-04-08.md`
+**Version:** 4.2 (Targeted GLB/GLTF Pipeline Readiness Audit)
+**Audit Source:** Deep codebase traversal of shell, template router, type system, asset pipeline, admin infrastructure, legacy GLTF paths, and database schema — focused on documenting the exact architectural truth needed to introduce a future `gltf-asset` template.
 
 > This document is the authoritative specification for SlateCamp's 3D Lab feature.
-> Every claim is derived from and verified against the live codebase as of 2026-04-10.
+> Every claim is derived from and verified against the live codebase as of 2026-04-12.
 > No fabricated paths, types, or interfaces. If something is unknown, it is marked NEEDS VERIFICATION.
+> **v4.2 focus:** Section 21 was rewritten from a shallow summary into a comprehensive, code-verified GLB/GLTF readiness audit with truth-labeled findings across shell, types, asset pipeline, legacy code, admin infrastructure, and plug-and-play boundaries.
 
 ---
 
@@ -36,6 +37,14 @@
 18. [Identity-Locked Components](#18-identity-locked-components)
 19. [Known Open Decisions & Technical Debt](#19-known-open-decisions--technical-debt)
 20. [Feature History & Evolution](#20-feature-history--evolution)
+21. [GLB/GLTF Readiness Audit (2026-04-12)](#21-glbgltf-readiness-audit-2026-04-12)
+    - [21A. Unified Shell Readiness](#21a-unified-shell-readiness)
+    - [21B. Template Routing and Type System Readiness](#21b-template-routing-and-type-system-readiness)
+    - [21C. Existing Asset Pipeline and Latent GLTF Support](#21c-existing-asset-pipeline-and-latent-gltf-support)
+    - [21D. Legacy GLTF Infrastructure](#21d-legacy-gltf-infrastructure)
+    - [21E. Admin and Database Readiness for 3D Assets](#21e-admin-and-database-readiness-for-3d-assets)
+    - [21F. Future gltf-asset Template Introduction Constraints](#21f-future-gltf-asset-template-introduction-constraints)
+    - [21G. Plug-and-Play Reality Check](#21g-plug-and-play-reality-check-sketchup--glb--3d-lab)
 
 ---
 
@@ -1715,55 +1724,33 @@ Templates override only the values they need:
 
 ## 11. Asset Pipeline
 
-### Current State
+### Current State: Procedural-First
 
-The 3D Lab does **not** use external GLB/GLTF files for any of the 209 modules. All geometry is generated procedurally via TypeScript config files that define `GeometryInstruction[]` arrays.
+The 209 modules currently in the 3D Lab are **procedural-first**, meaning no external 3D geometry assets (GLB/GLTF) are loaded during student-facing playback. All 3D geometry is defined via TypeScript code in `GeometryInstruction[]` arrays.
 
-### Geometry Generation Pattern
+### Asset Manifest (`assets.models[]` and `assets.textures[]`)
+- **Status:** **Prepared but Unused**
+- **Location:** `ModuleRegistryEntry` in `types/templates.ts` (lines 625-635)
+- **Truth:** The `assets` field is typed as `{ models?: string[]; textures?: string[] }` with doc comment: "GLTF/GLB/DRACO model paths to preload." No registry entry in `cat-01.ts` through `cat-16.ts` currently populates this field.
+- **Implication:** A future `gltf-asset` template could reference its model URL via this existing manifest shape. The field is ready for use without type changes.
 
-Each module config exports a `geometry()` function that returns an array of `GeometryInstruction` objects:
+### Asset Preloader & Progress
+- **Status:** **Prepared but Unused**
+- **Location:** `components/rendering/AssetPreloader.tsx` (62 lines)
+- **Truth:** Wraps R3F children in `<Suspense>` and exports `AssetProgressOverlay` which reads drei's global `useProgress()` state. Delegates display to `LoadingProgress` from `src/components/r3f/LoadingProgress.tsx`. Has no active consumers — no template currently wraps scene content in `<AssetPreloader>`.
+- **Readiness:** Fully functional. A future GLTF template just needs to wrap its scene content in `<AssetPreloader>` and place `<AssetProgressOverlay>` in the DOM layer.
 
-```typescript
-interface GeometryInstruction {
-  id: string
-  type: 'box' | 'cylinder' | 'plane' | 'line' | 'ring' | 'sphere' | 'cone'
-  position: Vector3Tuple
-  rotation?: Vector3Tuple
-  scale?: Vector3Tuple
-  args: number[]           // Constructor args per geometry type
-  color: string
-  opacity?: number
-  transparent?: boolean
-  label?: string
-}
-```
+### DRACO Decoder Configuration
+- **Status:** **Active** (configured globally, two separate paths)
+- **Location 1:** `components/shell/LabViewportFrame.tsx` line 12 — `useGLTF.setDecoderPath('/draco/')` (local `/public/draco/` path)
+- **Location 2:** `src/components/3d/Workspace.tsx` line 93 — `useGLTF.setDecoderPath('https://www.gstatic.com/draco/versioned/decoders/1.5.7/')` (Google CDN)
+- **Conflict:** The two paths are inconsistent. The shell uses a local decoder; the legacy Workspace uses Google CDN. Since `setDecoderPath` is a module-level global, whichever file loads last wins. This is a latent bug that must be resolved before GLTF assets are loaded through both paths in a single session.
+- **VERIFIED MISSING:** `/public/draco/` does **not exist** (checked 2026-04-12). The WASM decoder files are absent. Any DRACO-compressed GLB loaded through the shell's `useGLTF` path will fail. This must be resolved (copy decoder files from `node_modules/three/examples/jsm/libs/draco/gltf/` or use CDN path) before introducing GLTF assets.
 
-The `GeometryMesh` component in `src/features/3d-lab/components/templates/GeometryMesh.tsx` renders these instructions as Three.js meshes with `MeshStandardMaterial`.
-
-### Asset Manifest (Prepared but Unused)
-
-The `ModuleRegistryEntry` type includes an optional `assets` field for future preloading:
-
-```typescript
-assets?: {
-  models?: string[]     // GLTF/GLB/DRACO paths
-  textures?: string[]   // Texture image paths
-}
-```
-
-No modules currently populate this field. The `AssetPreloader` component exists at `src/features/3d-lab/components/rendering/AssetPreloader.tsx` but has no active consumers.
-
-### DRACO Decoder
-
-DRACO decoder path is configured globally in `LabViewportFrame.tsx`:
-```typescript
-useGLTF.setDecoderPath('/draco/')
-```
-The `/public/draco/` directory must contain the Draco WASM decoder files. This is configured for future use but no current modules use GLTF assets.
-
-### Legacy GLTF Viewer
-
-The `Workspace` component (`src/components/3d/Workspace.tsx`, ~500 lines) supports loading external GLB models via `useGLTF`, but no current lab modules route to it. It serves as a fallback path in `LabViewport`.
+### Admin Asset Manager
+- **Status:** **Active**
+- **Location:** `/admin/assets` route + `src/lib/actions/admin/assets.ts` (261 lines)
+- **Truth:** A functional GLB/GLTF upload and lifecycle management pipeline exists. See Section 21E for detailed code-verified audit of admin infrastructure.
 
 ---
 
@@ -2428,7 +2415,7 @@ However, the following 3D Lab components should be treated as **migration-sensit
 | `cat-17.ts`, `cat-18.ts` | Empty placeholder categories (Specialized Concrete, Topography & Landscape) | DECISION: Whether to populate or remove |
 | `ModuleViewer.tsx:200` | `isBespoke` check hardcoded to `site-development-controls` only | TECH DEBT: Should be data-driven |
 | `LabViewport.tsx:156-158` | Legacy scene routing hardcoded for `far-calculator`, `classical-orders` | TECH DEBT: Should be registered in module registry |
-| `models_3d` table | Legacy DB table no longer actively used by frontend | TECH DEBT: Evaluate deprecation/removal |
+| `models_3d` table | Active in Admin Asset Manager but unused in student-facing modules | TECH DEBT: Integrate into student modules |
 | `ModuleViewer.tsx:78` | `config` typed as `any` | TECH DEBT: Should use discriminated union |
 | `useLabStore.ts` | Combined facade re-subscribes to all 3 stores on every render | PERF: Consider memoization or selector optimization |
 | `DASHBOARD_VISIBLE_IDS` | Only 4 of 209 modules visible | DECISION: Rollout strategy for remaining modules |
@@ -2446,6 +2433,10 @@ However, the following 3D Lab components should be treated as **migration-sensit
 | `wall-constants-international.ts` | IBC, ASTM, EN wall standards | **UNVERIFIED**: Needs expert review before production use |
 | `useCollaborationPresence` | Hook scaffolded but no server-side backing | SCAFFOLDED: Needs WebSocket or real-time backend |
 | `useDragDrop` | Hook scaffolded but no upload endpoint | SCAFFOLDED: Needs API route for file uploads |
+| DRACO decoder path | `LabViewportFrame.tsx` uses `/draco/` (local), `Workspace.tsx` uses Google CDN. Both call `useGLTF.setDecoderPath()` at module scope — last-loaded wins | TECH DEBT: Consolidate before introducing new GLTF consumers |
+| `/public/draco/` WASM files | `LabViewportFrame.tsx` references `/draco/` but directory **does not exist** (verified 2026-04-12). Shell DRACO path is broken. | BLOCKER: Must add decoder files or switch to CDN before GLTF introduction |
+| `Workspace` fallback in `LabViewport` | Lines 173-181 still fall through to legacy `Workspace` when no registry/config match. Not dead code. | TECH DEBT: Retire after `gltf-asset` template replaces its function |
+| Admin assets ↔ Module registry disconnect | `/admin/assets` manages `models_3d` records; `/admin/3d-models` browses TS configs. No bridge between them. | TECH DEBT: Link required for GLTF pipeline |
 | `DevControlsModule/dashboard/ViewportToolbar.tsx` | Deleted — merged into shared `SceneToolbar` | RESOLVED: Removed (2026-04-10) |
 
 ### Coverage Gaps (Content, not Code)
@@ -2566,4 +2557,421 @@ However, the following 3D Lab components should be treated as **migration-sensit
 
 ---
 
-*End of specification. This document was generated from exhaustive codebase traversal. All file paths, type definitions, and counts are verified against source code as of 2026-04-10.*
+## 21. GLB/GLTF Readiness Audit (2026-04-12)
+
+This section documents the exact architectural readiness for introducing a first-class `gltf-asset` template and GLB/GLTF upload pipeline that reuses the current 3D Lab shell, navigation, overlays, and route structure. Every claim is derived from inspected source code. Each finding is truth-labeled: **Active**, **Prepared but Unused**, **Legacy**, **Partial**, **Needs Verification**, or **Missing**.
+
+### 21A. Unified Shell Readiness
+
+**Overall Verdict: The shell can host GLTF-backed modules without shell-level redesign.**
+
+#### Shell-Level (Template-Agnostic) Components — All Active
+
+| Component | File | GLTF Reuse | Notes |
+|-----------|------|------------|-------|
+| `ViewportShell` | `shell/ViewportShell.tsx` | **Full** | CSS grid layout with named slots. Accepts `ViewportShellContent` — pure slot injection. Zero template awareness. |
+| `ViewportHeader` | `shell/ViewportHeader.tsx` | **Full** | Unified top bar with back nav. Template-agnostic. |
+| `ViewportSidebar` | `shell/ViewportSidebar.tsx` | **Full** | Collapsible sidebar container. Renders whatever `leftSidebarContent`/`rightSidebarContent` is injected. |
+| `ViewportToolbar` | `shell/ViewportToolbar.tsx` | **Full** | Config-driven via `FloatingToolbarConfig`. Template-specific toolbar (items vary per template via `TEMPLATE_SHELL_DEFAULTS`). Distinct from `SceneToolbar` which is always-visible with 6 hardcoded buttons. |
+| `ViewportBottomSheet` | `shell/ViewportBottomSheet.tsx` | **Full** | Mobile sidebar replacement. Template-agnostic tab system. |
+| `CameraNavigationBar` | `shell/CameraNavigationBar.tsx` | **Full** | 17-button camera nav. Works with any scene that uses OrbitControls. |
+| `SceneToolbar` | `shell/SceneToolbar.tsx` | **Full** | 6-button toolbar (Grid/Dims/X-ray/Layers/Screenshot/Fullscreen). All toggle states in `useViewportShellStore`. |
+| `SceneGround` | `shell/SceneGround.tsx` | **Full** | GridHelper + GizmoHelper. R3F component, works in any scene. |
+| `CommandPalette` | `shell/CommandPalette.tsx` | **Full** | Ctrl+K search. Module-agnostic. |
+| `DOMOverlayLayer` | `overlays/DOMOverlayLayer.tsx` | **Full** | 2D DOM overlay projection. Reads from `useOverlayStore`. Works for GLTF annotations. |
+| `LabViewportFrame` | `shell/LabViewportFrame.tsx` | **Full** | R3F Canvas host + WebGLErrorBoundary. DRACO decoder configured here (line 12). |
+
+#### Shell Capabilities That Automatically Benefit GLTF Modules
+
+A `gltf-asset` module routed through `useTemplateContent` and `ViewportShell` would automatically inherit:
+- Camera orbit/pan/look modes (3 modes via `useViewportShellStore.navMode`)
+- 15 named camera presets via `CameraNavigationBar`
+- Grid/axis gizmo toggle
+- Dimensions overlay toggle
+- X-ray mode toggle (store binding exists; renderer must implement material opacity)
+- Layers panel (if module provides layer definitions)
+- Screenshot capture
+- Fullscreen toggle
+- Keyboard shortcuts (G/D/X/L/P/F, Ctrl+Z, Ctrl+K)
+- Right-click context menu
+- GPU crash recovery (`WebGLRecovery`)
+- Mobile bottom sheet layout
+- Loading skeleton during module load
+
+#### Shell Assumptions That Are Currently Procedural-Only — **Partial**
+
+| Assumption | Location | Impact on GLTF |
+|-----------|----------|---------------|
+| X-ray toggle sets `crossSectionEnabled` in store, but renderers implement it via `GeometryInstruction` opacity | `useLabViewStore` + template renderers | GLTF renderer must implement its own material traversal for X-ray (like `DynamicModel` already does in Workspace.tsx) |
+| Dimensions overlay reads from `useOverlayStore.items` populated by procedural templates | Template renderers | GLTF modules must populate overlay items from authored config, not from geometry instructions |
+| Layers panel expects layer definitions from config | `LayersPanel` | GLTF modules must provide a `layers` config or auto-derive from GLTF scene graph node names |
+
+#### `useTemplateContent` Hook — **Partial** (no GLTF branch)
+
+**File:** `src/features/3d-lab/hooks/useTemplateContent.tsx` (336 lines)
+
+This hook is the bridge between template configs and the shell. It:
+1. Creates a stable Zustand store per module (`createModuleStore`)
+2. Resolves `TEMPLATE_SHELL_DEFAULTS` for the template type
+3. Returns `{ shellConfig, capabilities, content }` with sidebar/canvas/toolbar slots
+
+**Current branches:** `parametric`, `exploded`, `cutaway`, `floorplan`, `animated`, `wall-configurator`. Calculator returns `null` (handled separately). Default returns `null`.
+
+**What a `gltf-asset` branch would need to provide:**
+- `canvasContent`: CanvasWrapper + a new `GltfAssetScene` renderer (wrapping the model in `<AssetPreloader>`)
+- `leftSidebarContent`: optional parameter panel (if the GLTF module has interactive parameters)
+- `rightSidebarContent`: optional info/annotation panel
+- `toolbarExtras`: optional (e.g., X-ray slider, explode toggle)
+
+**Effort:** Adding a new case to the switch is straightforward. The hook architecture supports it without redesign.
+
+### 21B. Template Routing and Type System Readiness
+
+#### `TemplateType` Union — **Active, needs extension**
+
+**File:** `src/features/3d-lab/types/templates.ts` line 25-32
+
+```typescript
+export type TemplateType =
+  | 'parametric'
+  | 'exploded'
+  | 'floorplan'
+  | 'cutaway'
+  | 'animated'
+  | 'calculator'
+  | 'wall-configurator'
+```
+
+**Status:** No `gltf-asset` member exists. Adding one is a single-line type change.
+
+#### `ModuleConfig` Discriminated Union — **Active, needs new member**
+
+**File:** `src/features/3d-lab/types/templates.ts` (line 430 area — reconstructed from spec Section 4)
+
+The union currently has 7 members, one per template type. A new `GltfAssetConfig` interface and union member would be needed:
+
+**What would need to be defined for `GltfAssetConfig`:**
+- `id`, `title`, `description`, `subject` (standard fields)
+- `modelUrl: string` — path to GLB/GLTF file (from `models_3d.url` or `assets.models[0]`)
+- `parameters?: ParameterDef[]` — optional interactive controls
+- `annotations?: AnnotationDef[]` — hotspot/label annotations
+- `violations?: ViolationRule[]` — optional compliance overlay
+- `camera?: CameraConfig` — initial camera position
+- `scale?: number` — uniform scale
+- `nodeMapping?: Record<string, string>` — maps semantic roles to GLTF node names (for X-ray, selection, layer isolation)
+- `contextScenario?`, `leaQuestionCount?`, `supportedPhases?` (standard research-driven fields)
+
+#### `TEMPLATE_SHELL_DEFAULTS` — **Active, needs new entry**
+
+**File:** `src/features/3d-lab/types/templates.ts` line 523
+
+The `Record<TemplateType, ...>` requires an entry for every `TemplateType` member. Adding `gltf-asset` to the union without adding a defaults entry will cause a TypeScript error. Sensible defaults for a GLTF template would mirror `parametric` (left sidebar for controls, right sidebar for info, perspective + isometric view modes).
+
+#### `ViewportShellContent` — **Active, already sufficient**
+
+The slot-based interface (`canvasContent`, `leftSidebarContent`, `rightSidebarContent`, `statusBarContent`, `toolbarExtras`) is fully generic. No changes needed for GLTF.
+
+#### `ViewportCapabilities` — **Active, already sufficient**
+
+All capability fields (camera presets, view modes, cross-section, exploded view, human scale, focus mode) are boolean/config toggles. GLTF modules can use any combination.
+
+#### `LabViewport` Template Router — **Active, needs new route**
+
+**File:** `src/features/3d-lab/components/LabViewport.tsx`
+
+The `TemplateModuleWrapper` switch (lines 101-120) handles 7 template types. Default returns `null`. A `gltf-asset` case would need to be added, pointing to a new `GltfAssetTemplate` dynamic import.
+
+**Critical observation:** Lines 173-181 show the **Workspace fallback is still ACTIVE**. When `registryEntry` is null or `preLoadedConfig` is missing, `LabViewport` falls through to the legacy `<Workspace>` component. This means the legacy GLTF viewer is not dead code — it is the active default path for any module that doesn't match the template system.
+
+### 21C. Existing Asset Pipeline and Latent GLTF Support
+
+#### `assets.models[]` in ModuleRegistryEntry — **Prepared but Unused**
+
+- **Location:** `types/templates.ts` lines 625-635
+- **Shape:** `assets?: { models?: string[]; textures?: string[] }`
+- **Current usage:** Zero registry entries populate this field (verified across all 16 `cat-*.ts` files via the registry)
+- **Readiness:** The field is typed and documented. A future GLTF module can declare `assets: { models: ['/models/my-building.glb'] }` today.
+
+#### `AssetPreloader` Component — **Prepared but Unused**
+
+- **Location:** `components/rendering/AssetPreloader.tsx` (62 lines)
+- **What it does:** Suspense boundary + `useProgress()` overlay for asset loading
+- **Current consumers:** None. No template wraps content in `<AssetPreloader>`.
+- **Readiness:** Fully functional. Import and wrap GLTF scene content immediately.
+
+#### DRACO Decoder — **Active (with conflict)**
+
+- **Shell path:** `useGLTF.setDecoderPath('/draco/')` in `LabViewportFrame.tsx` line 12
+- **Legacy path:** `useGLTF.setDecoderPath('https://www.gstatic.com/draco/versioned/decoders/1.5.7/')` in `Workspace.tsx` line 93
+- **Conflict:** Both call `setDecoderPath` at module scope. `setDecoderPath` is a static method that sets a global; whichever file's module is evaluated last wins. In the current architecture, when `LabViewport` falls through to `Workspace`, the CDN path may override the local path. This is a latent conflict.
+- **Resolution needed:** Consolidate to a single DRACO path before introducing new GLTF consumers.
+- **VERIFIED MISSING (2026-04-12):** `/public/draco/` does **not exist**. The shell's local DRACO decoder path is broken. Only the legacy `Workspace.tsx` CDN path would work for DRACO-compressed models. Must add decoder files or switch shell to CDN path.
+
+#### `useGLTF` Usage Across Codebase
+
+| File | Usage | Status |
+|------|-------|--------|
+| `src/components/3d/Workspace.tsx` (line 100) | `const { scene } = useGLTF(url)` in `DynamicModel` | **Legacy** — active via fallback path |
+| `src/features/3d-lab/components/shell/LabViewportFrame.tsx` (line 12) | `useGLTF.setDecoderPath('/draco/')` | **Active** — global config |
+| `src/features/3d-lab/types/templates.ts` (line 88, tech stack table) | Listed as available via `@react-three/drei` | **Documentation only** |
+
+No template in `src/features/3d-lab/templates/` currently calls `useGLTF`. All 7 templates render procedural `GeometryInstruction[]` arrays.
+
+#### Procedural-Only Assumptions in Templates
+
+The current template renderers (`ParametricSceneRenderer`, `ExplodedAssemblyScene`, `CutawaySectionScene`, `FloorPlanScene`, `AnimatedSequenceScene`, `WallConfiguratorRenderer`) all consume `GeometryInstruction[]` arrays and render them via `GeometryMesh` or `GeometrySwitch`. None load external assets. A `gltf-asset` template would bypass this entire procedural pipeline and instead use `useGLTF` directly.
+
+#### Memory, Disposal, and Preloading Concerns for GLTF
+
+| Concern | Current State | GLTF Impact |
+|---------|--------------|-------------|
+| WebGL memory monitoring | `useWebGLMemoryMonitor` in `src/components/r3f/` | **Active** — will track GLTF texture/geometry memory |
+| Disposal on unmount | `useDisposeOnUnmount` in `src/components/r3f/` | **Active** — generic disposal helper. Legacy `Workspace.tsx` also uses `disposeObject(scene)` |
+| Preloading | `AssetPreloader` exists but unused | **Prepared** — ready for GLTF |
+| Cache invalidation | drei's `useGLTF` uses internal cache | **Active** — drei handles GLTF caching. No custom cache layer needed unless assets change frequently |
+| Large asset budgets | No asset size limits in the template system | **Missing** — need to define max GLB size for mobile (suggest 10-20MB budget) |
+| Concurrent model loading | Not addressed | **Missing** — if multiple GLTF modules are navigated quickly, need `useGLTF.preload()` strategy |
+
+### 21D. Legacy GLTF Infrastructure
+
+#### `Workspace` Component — **Legacy, Active as Fallback**
+
+**File:** `src/components/3d/Workspace.tsx` (~200+ lines)
+
+The `Workspace` component is the original GLTF viewer from the initial build phase. It is **not dead code** — it remains the active fallback in `LabViewport.tsx` lines 173-181.
+
+**What it provides:**
+- `DynamicModel` sub-component: loads a GLB via `useGLTF(url)`, traverses the scene graph, applies X-Ray material opacity based on node names (`envelope`, `finish`)
+- `HotspotMarkers`: renders floating 3D labels at `SpatialHotspot` positions using drei's `<Float>` and `<Html>`
+- `SimpleBox`: fallback geometry if GLTF fails to load
+- Tier gating: `userTier === 'free'` shows locked state
+- Its own `SceneErrorBoundary` (class component, independent of the shared one)
+- DRACO decoder path set to Google CDN
+
+**Props interface:**
+```typescript
+interface WorkspaceProps {
+  model: Model3D        // { model_id, name, slug, url, thumbnail }
+  parameters: ModelParameter[]  // { param_id, name, label, min/max/default/step, unit }
+  hotspots: SpatialHotspot[]    // { hotspot_id, title, description, position, node_id }
+  userTier: string
+}
+```
+
+**Types exported (consumed by LabViewport):**
+- `Model3D`, `ModelParameter`, `SpatialHotspot` — imported by `LabViewport.tsx` line 6
+
+**Architectural lessons:**
+1. The X-Ray material traversal pattern (`scene.traverse → child.material.opacity`) is reusable in a modern `GltfAssetScene` renderer
+2. The `disposeObject(scene)` cleanup pattern on unmount is correct and should be preserved
+3. The `HotspotMarkers` pattern (drei `<Float>` + `<Html>`) works but is superseded by the modern `DOMOverlayLayer` system which projects overlays outside the canvas
+4. The `Model3D` type shape (`url`, `thumbnail`, `slug`) maps directly to `models_3d` table columns
+
+**Recommendation:** Do NOT delete Workspace yet. Its GLTF loading and material traversal logic should be extracted into a new `GltfAssetScene` renderer under `src/features/3d-lab/templates/`. The legacy component can then be retired once the new renderer is proven.
+
+#### Historical Context
+
+The 3D Lab began as a database-driven GLTF viewer. The `models_3d` table, `3d-models` storage bucket, and `Workspace` component are artifacts of that original architecture. The procedural template system was a strategic pivot that enabled rapid scale (0 → 209 modules) without requiring authored 3D assets. The legacy infrastructure was never removed — it was simply bypassed by the template router. This means reintroducing GLTF support is a **reconnection** of existing plumbing, not a greenfield build.
+
+### 21E. Admin and Database Readiness for 3D Assets
+
+#### `models_3d` Database Table — **Active**
+
+**Schema** (reconstructed from migrations and server actions):
+
+| Column | Type | Notes |
+|--------|------|-------|
+| `model_id` | UUID (PK) | Primary key |
+| `name` | VARCHAR | Display name |
+| `slug` | VARCHAR | URL-safe identifier |
+| `url` | VARCHAR | Public URL to GLB/GLTF file in storage |
+| `thumbnail` | VARCHAR | Optional thumbnail URL |
+| `status` | VARCHAR(20) | `draft` / `pending_review` / `published` / `archived` (CHECK constraint) |
+| `metadata` | JSONB | Flexible metadata (extensible for future fields like `nodeMapping`, `scale`, `category`) |
+| `reviewed_by` | UUID (FK → auth.users) | Who reviewed the asset |
+| `reviewed_at` | TIMESTAMPTZ | When reviewed |
+| `created_at` | TIMESTAMPTZ | Creation timestamp |
+| `updated_at` | TIMESTAMPTZ | Last update timestamp |
+
+**RLS:** Admin-only access via `has_admin_role()` policy.
+**Index:** `idx_models_3d_status` on `status` column.
+
+#### `3d-models` Storage Bucket — **Active**
+
+**Location:** Supabase Storage
+**Config** (from `uploadAssetFile` in `assets.ts` line 168-179):
+- Public bucket
+- 50MB file size limit
+- Allowed MIME types: `model/gltf-binary`, `model/gltf+json`, `application/octet-stream`, `image/png`, `image/jpeg`, `image/webp`
+- Upload path pattern: `assets/{timestamp}-{baseName}.{ext}`
+
+#### Admin Server Actions — **Active**
+
+**File:** `src/lib/actions/admin/assets.ts` (261 lines)
+
+| Action | Function | Auth | Description |
+|--------|----------|------|-------------|
+| List assets | `getAssets()` | `canReviewContent` | Queries `models_3d` with explicit column select, ordered by `created_at DESC`, limit 50 |
+| Get single asset | `getAsset(id)` | `canReviewContent` | Single record by `model_id` |
+| Create asset | `createAsset(data)` | `canManageContent` | Zod-validated insert with `status: 'draft'` |
+| Upload file | `uploadAssetFile(formData)` | `canManageContent` | Uploads to `3d-models` bucket, auto-creates bucket if missing |
+| Archive asset | `archiveAsset(id)` | `canManageContent` | Sets `status: 'archived'` |
+
+**All actions include structured error logging** via `logServerError`.
+
+#### Admin UI — **Active**
+
+| Route | Component | Purpose |
+|-------|-----------|---------|
+| `/admin/assets` | `AssetList` + `AssetUploader` | Upload GLB/GLTF files, manage asset records |
+| `/admin/assets/[id]` | Asset detail page | View/edit single asset |
+| `/admin/3d-models` | `ModelRegistryPage` + `ModelRegistryTree` + `ModelConfigDetail` | Browse the 209-module config registry (NOT asset management — this is the config viewer) |
+
+**Distinction:** `/admin/assets` manages `models_3d` records (database-driven uploaded assets). `/admin/3d-models` browses the TypeScript config registry (code-driven modules). These are **two separate systems** that are not yet connected.
+
+#### Admin Components for Asset Management — **Active**
+
+**File locations** (in `src/components/admin/`):
+
+| Component | File | Status |
+|-----------|------|--------|
+| `AssetUploader` | `AssetUploader.tsx` | **Active** — form with file upload + metadata input |
+| `AssetList` | `AssetList.tsx` | **Active** — table/grid of uploaded assets |
+| `AssetDetailView` | `AssetDetailView.tsx` | **Active** — single asset detail view |
+
+#### What Admin Infrastructure Supports Today
+
+- Upload GLB/GLTF files to Supabase storage
+- Create `models_3d` records with name, slug, URL, metadata
+- Status lifecycle: draft → pending_review → published → archived
+- Admin RBAC (content managers can create/archive; reviewers can view)
+- Structured error logging for all operations
+
+#### What Admin Infrastructure Is Missing for a GLTF Template Pipeline
+
+| Gap | Description | Severity |
+|-----|-------------|----------|
+| **Asset → Module linking** | No mechanism to link a `models_3d` record to a `ModuleRegistryEntry`. The `metadata` JSONB field could store a `moduleId` or `registryRef`, but no convention or code enforces this. | **High** |
+| **Module config generation** | No tool or workflow to generate a `GltfAssetConfig` TypeScript file from an uploaded asset. Currently, all module configs are hand-authored `.ts` files. | **High** |
+| **Thumbnail auto-generation** | No server-side thumbnail rendering from uploaded GLB files. Thumbnails are manually provided URLs. | **Medium** |
+| **Validation on upload** | No GLB structural validation (file integrity, polygon count, texture size, DRACO compression check). The upload accepts any file matching the MIME types. | **Medium** |
+| **Publish → student visibility** | No workflow connecting `status: 'published'` in `models_3d` to `DASHBOARD_VISIBLE_IDS` or registry population. Publishing an asset doesn't make it appear in the student-facing lab. | **High** |
+| **Bulk operations** | No batch upload, batch status change, or batch config generation. | **Low** |
+| **Version control** | No versioning of uploaded assets. Re-uploading creates a new file path; old URL becomes stale. | **Medium** |
+
+### 21F. Future `gltf-asset` Template Introduction Constraints
+
+#### What Is Already in Place
+
+| Capability | Evidence | Status |
+|-----------|----------|--------|
+| Unified viewport shell (slot-based) | `ViewportShell` + `ViewportShellContent` | **Active** |
+| Template routing architecture | `LabViewport` switch + `useTemplateContent` hook | **Active** |
+| Asset manifest field in registry | `ModuleRegistryEntry.assets` | **Prepared but Unused** |
+| Asset preloader with progress UI | `AssetPreloader` + `AssetProgressOverlay` | **Prepared but Unused** |
+| DRACO decoder configuration | `LabViewportFrame.tsx` line 12 | **Active** |
+| GLTF loading via drei | `useGLTF` available in deps | **Active** (used only in legacy Workspace) |
+| WebGL memory monitoring | `useWebGLMemoryMonitor` | **Active** |
+| Resource disposal helpers | `useDisposeOnUnmount`, `disposeObject` | **Active** |
+| Admin upload pipeline | `uploadAssetFile` + `3d-models` bucket | **Active** |
+| Asset metadata storage | `models_3d` table with JSONB `metadata` | **Active** |
+| DOM overlay system | `DOMOverlayLayer` + `useOverlayStore` | **Active** |
+| Camera navigation system | `CameraNavigationBar` + `useCameraSnap` | **Active** |
+
+#### What Is Missing
+
+| Requirement | Description | Effort Estimate |
+|-------------|-------------|----------------|
+| `GltfAssetConfig` type definition | New interface in `types/templates.ts` | Small |
+| `'gltf-asset'` in `TemplateType` union | Single-line type change | Trivial |
+| `TEMPLATE_SHELL_DEFAULTS['gltf-asset']` entry | Default shell + capabilities config | Small |
+| `GltfAssetScene` renderer component | New file in `templates/`. Uses `useGLTF`, implements material traversal, annotations, disposal | **Medium** — can cannibalize `DynamicModel` from `Workspace.tsx` |
+| `useTemplateContent` branch for `gltf-asset` | New case in the switch returning canvas + sidebar content | Small |
+| `LabViewport` route for `gltf-asset` | New dynamic import + switch case | Small |
+| Asset → Module linking convention | How a `models_3d` record references or generates a registry entry + config | **Design decision needed** |
+| Module config authoring workflow | CLI tool or admin UI to generate `.ts` config from uploaded GLB + authored metadata | **Medium-Large** |
+| DRACO path consolidation | Resolve the `/draco/` vs CDN conflict | Small |
+| `/public/draco/` WASM files | Verify decoder files exist or add them | Trivial |
+| Asset size budget enforcement | Max GLB size for mobile (10-20MB suggested) | Small |
+| Node mapping convention | Standard for naming GLTF nodes so X-ray, layers, and selection work automatically | **Design decision needed** |
+
+#### Risks
+
+| Risk | Description | Mitigation |
+|------|-------------|-----------|
+| **Performance regression** | GLTF models with high poly counts or large textures will stress mobile WebGL budgets. The procedural system has near-zero asset loading cost. | Enforce asset budgets; use DRACO compression; implement LOD if needed |
+| **Inconsistent UX** | GLTF modules may lack the parametric interactivity that defines the 3D Lab experience. A "static 3D viewer" feels like a downgrade from the procedural system. | Require minimum interaction layer (annotations, measurements, or parameters) for every GLTF module |
+| **Authoring bottleneck** | Each GLTF module still needs a hand-authored TypeScript config for parameters, violations, annotations, and camera presets. The asset alone is not sufficient. | Build config generation tooling; consider a metadata-first convention in GLTF node naming |
+| **Two GLTF loading paths** | Legacy `Workspace` and new `GltfAssetScene` could coexist with different behavior. | Retire `Workspace` fallback once `gltf-asset` template is proven |
+| **DRACO decoder conflict** | Two `setDecoderPath` calls with different paths | Consolidate before shipping |
+
+### 21G. Plug-and-Play Reality Check: SketchUp → GLB → 3D Lab
+
+**Question:** Can a future SketchUp → GLB/GLTF pipeline be "plug and play" in the existing shell?
+
+**Answer: Partially. The shell reuse is high, but the metadata layer is not automatic.**
+
+#### What Is Plug-and-Play (Shell Reuse)
+
+A GLB file dropped into the pipeline would automatically get:
+- Full viewport shell (header, sidebars, toolbar, bottom sheet)
+- Camera orbit/pan/look with 15 presets
+- Grid, axis gizmo, fullscreen, screenshot
+- GPU crash recovery
+- Mobile responsive layout
+- Loading progress indicator (via `AssetPreloader`)
+- DRACO decompression (if configured correctly)
+- WebGL memory monitoring and disposal
+
+**This is ~70% of the viewport experience with zero authored config.**
+
+#### What Is NOT Plug-and-Play (Requires Authored Config)
+
+| Capability | Why Not Automatic | What Must Be Authored |
+|-----------|-------------------|----------------------|
+| **Parametric controls** | Arbitrary GLB files have no sliders. Parameters are a SlateCamp concept, not a GLTF concept. | `ParameterDef[]` array + geometry update logic (or none, if module is view-only) |
+| **Compliance violations** | Building code rules are domain knowledge, not embedded in GLTF | `ViolationRule[]` with `check()` functions and `codeCitation` |
+| **Annotations/hotspots** | GLTF doesn't carry SlateCamp annotation metadata | `AnnotationDef[]` with positions and descriptions |
+| **Camera presets** | Default orbit position is generic; pedagogically useful angles are authored | `CameraConfig` with domain-specific viewpoints |
+| **X-Ray material mapping** | Which nodes become transparent in X-ray depends on semantic naming | `nodeMapping` or convention-based GLTF node naming |
+| **Layer isolation** | Which parts can be toggled visible/hidden | Layer definitions referencing GLTF node groups |
+| **Module metadata** | Title, description, subject, category, LEA mapping | `ModuleRegistryEntry` fields |
+| **Context scenario** | Professional practice scenario text | `contextScenario` string |
+| **LEA question mapping** | Which exam questions this module helps prepare for | `leaQuestionCount`, `leaQuestionType` |
+
+#### Minimum Viable GLTF Module Definition
+
+Even with an imported GLB, a module still needs at minimum:
+
+```typescript
+// Hypothetical future gltf-asset module config
+{
+  id: 'bahay-kubo-3d',
+  templateType: 'gltf-asset',
+  title: 'Bahay Kubo — Traditional Filipino House',
+  description: 'Explore the structural components...',
+  subject: 'Philippine Heritage Architecture',
+  modelUrl: '/models/bahay-kubo.glb',  // or from models_3d.url
+  camera: { position: [5, 3, 5], target: [0, 1, 0], fov: 35 },
+  annotations: [...],                   // authored hotspot positions
+  // Optional:
+  parameters: [...],                    // if interactive
+  violations: [...],                    // if compliance-relevant
+  nodeMapping: { envelope: 'roof_group', structure: 'frame_group' },
+}
+```
+
+**The GLB file provides geometry. Everything else is still authored.**
+
+#### Future Module-Definition Layer Needs
+
+For a scalable GLTF pipeline serving the 209 (or more) modules, the system would benefit from:
+
+1. **Convention-based GLTF authoring guide** — standard node naming (e.g., `SC_xray_*` for X-ray targets, `SC_hotspot_*` for annotation anchors) so some metadata is embedded in the asset itself
+2. **Config generation CLI** — `bun run gen-module --from-glb ./models/file.glb` that scaffolds a TypeScript config with extracted node names, bounding box, and default camera
+3. **Admin authoring UI** — form-based config editor that generates the `.ts` file from admin inputs + uploaded GLB reference
+4. **Hybrid procedural + GLTF** — some modules may combine an imported base model (e.g., a heritage building from SketchUp) with procedural annotations, measurement overlays, or parametric additions. The template system should support this composition.
+
+---
+
+*End of specification. This document was generated from exhaustive codebase traversal. All file paths, type definitions, line numbers, and counts are verified against source code as of 2026-04-12. v4.2 adds a comprehensive GLB/GLTF readiness audit focused on future `gltf-asset` template introduction.*

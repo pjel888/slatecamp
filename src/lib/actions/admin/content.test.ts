@@ -74,6 +74,31 @@ mock.module('@/lib/logging/server', () => ({
   logServerError: logServerErrorMock,
 }))
 
+mock.module('@/lib/supabase/server', () => ({
+  createClient: () =>
+    Promise.resolve({
+      auth: {
+        getUser: () =>
+          Promise.resolve({
+            data: {
+              user: { id: 'user-1' },
+            },
+          }),
+      },
+      from: mockSupabase.from,
+    }),
+  createStaticClient: () =>
+    Promise.resolve({
+      from: mockSupabase.from,
+    }),
+  getUser: () =>
+    Promise.resolve({
+      data: {
+        user: { id: 'user-1' },
+      },
+    }),
+}))
+
 const {
   updateArticleFull,
   saveArticleFull,

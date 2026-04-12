@@ -18,7 +18,9 @@ const mappingInMock = mock(() =>
     error: null,
   }),
 )
+let simulateLegacyReviewSchema = false
 const updateEqMock = mock(() => Promise.resolve({ error: null }))
+const legacyUpdateEqMock = mock(() => Promise.resolve({ error: null }))
 
 mock.module('@/lib/supabase/admin', () => ({
   createAdminClient: () => ({
@@ -30,8 +32,16 @@ mock.module('@/lib/supabase/admin', () => ({
               maybeSingle: articleMaybeSingleMock,
             })),
           })),
-          update: mock(() => ({
-            eq: updateEqMock,
+          update: mock((payload: { status?: string }) => ({
+            eq: mock(() => {
+              if (simulateLegacyReviewSchema && payload.status === 'in_review') {
+                return Promise.resolve({ error: { code: '23514', message: 'status constraint' } })
+              }
+              if (payload.status === 'pending_review') {
+                return legacyUpdateEqMock()
+              }
+              return updateEqMock()
+            }),
           })),
         }
       }
@@ -65,6 +75,26 @@ mock.module('@/lib/admin/roles', () => ({
   canReviewContent: mock(() => Promise.resolve(true)),
 }))
 
+mock.module('@/lib/supabase/server', () => ({
+  createClient: () =>
+    Promise.resolve({
+      auth: {
+        getUser: () =>
+          Promise.resolve({
+            data: {
+              user: { id: 'user-1' },
+            },
+          }),
+      },
+    }),
+  getUser: () =>
+    Promise.resolve({
+      data: {
+        user: { id: 'user-1' },
+      },
+    }),
+}))
+
 mock.module('next/cache', () => ({
   revalidatePath: mock(),
   revalidateTag: mock(),
@@ -87,10 +117,12 @@ const { updateArticleStatus } = await import('./pipeline')
 
 describe('admin/pipeline', () => {
   beforeEach(() => {
+    simulateLegacyReviewSchema = false
     articleMaybeSingleMock.mockClear()
     standardQuestionSelectEqMock.mockClear()
     mappingInMock.mockClear()
     updateEqMock.mockClear()
+    legacyUpdateEqMock.mockClear()
     logServerErrorMock.mockClear()
     compileMdxPreviewMock.mockClear()
   })
@@ -131,5 +163,11 @@ describe('admin/pipeline', () => {
     await expect(updateArticleStatus('article-1', 'published')).rejects.toThrow(
       'fewer than 10 directly linked standard questions',
     )
+  })
+
+  test('falls back to pending_review when canonical in_review is rejected by legacy schema', async () => {
+    simulateLegacyReviewSchema = true
+    await expect(updateArticleStatus('article-legacy', 'in_review')).resolves.toBeUndefined()
+    expect(legacyUpdateEqMock).toHaveBeenCalledTimes(1)
   })
 })

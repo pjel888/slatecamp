@@ -51,9 +51,9 @@ export const DeleteArticleModal = ({
     try {
       await deleteWikiArticle(articleId)
       toast({
-        title: 'Article deleted',
-        description: `"${articleTitle}" has been removed.`,
-        variant: 'default',
+        title: 'Article archived',
+        description: `"${articleTitle}" has been moved to archived status.`,
+        variant: 'success',
       })
       onOpenChange(false)
       if (onSuccess) {
@@ -62,9 +62,9 @@ export const DeleteArticleModal = ({
       setJustDeleted(true)
     } catch (error) {
       toast({
-        title: 'Delete failed',
-        description: error instanceof Error ? error.message : 'Failed to delete article',
-        variant: 'destructive',
+        title: 'Archive failed',
+        description: error instanceof Error ? error.message : 'Failed to archive article',
+        variant: 'error',
       })
     } finally {
       setLoading(false)
@@ -75,10 +75,10 @@ export const DeleteArticleModal = ({
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent showCloseButton={false}>
         <DialogHeader>
-          <DialogTitle>Delete Article</DialogTitle>
+          <DialogTitle>Archive Article</DialogTitle>
           <DialogDescription>
-            Are you sure you want to delete <span className="font-medium text-foreground">&ldquo;{articleTitle}&rdquo;</span>?
-            This action cannot be undone. The article will be permanently removed.
+            Are you sure you want to archive <span className="font-medium text-foreground">&ldquo;{articleTitle}&rdquo;</span>?
+            This will remove it from the student-facing wiki but preserve the record and its linked questions in the system.
           </DialogDescription>
         </DialogHeader>
         <DialogFooter>
@@ -86,7 +86,7 @@ export const DeleteArticleModal = ({
             Cancel
           </Button>
           <Button variant="destructive" onClick={handleDelete} loading={loading}>
-            Delete Article
+            Archive Article
           </Button>
         </DialogFooter>
       </DialogContent>

@@ -241,6 +241,7 @@ const SubmitButton = ({
   size = 'default',
   pendingLabel = 'Saving...',
   children,
+  type = 'submit',
   ...props
 }: Omit<PendingButtonProps, 'pending'>) => {
   const { pending } = useFormStatus()
@@ -251,6 +252,7 @@ const SubmitButton = ({
       className={className}
       pending={pending}
       pendingLabel={pendingLabel}
+      type={type}
       {...props}
     >
       {children}

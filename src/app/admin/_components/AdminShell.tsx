@@ -1,7 +1,9 @@
 'use client'
 
+import { usePathname } from 'next/navigation'
 import { Question, FileText, MagnifyingGlass, Clock, SquaresFour, GitBranch, Cube, CheckSquare, GitPullRequest, Pulse, GearSix, TreeStructure } from '@phosphor-icons/react/dist/ssr'
 import { PortalLayout, CommandPalette } from '@/components/portal'
+import { SidebarProvider } from '@/components/sidebar/SidebarProvider'
 import { AdminRoleBadge } from './AdminRoleBadge'
 import { PORTALS } from '@/config/portals'
 import { Toaster } from '@/components/ui/toaster'
@@ -149,7 +151,11 @@ interface AdminShellProps {
   children: React.ReactNode
 }
 
+export const shouldBypassAdminShellChrome = (pathname: string) =>
+  pathname.startsWith('/admin/preview/')
+
 const AdminShell = ({ role, badgeCounts, noPadding = false, children }: AdminShellProps) => {
+  const pathname = usePathname()
   const navItemsWithBadges = adminNavItems.map((group) => ({
     ...group,
     items: group.items.map((item) => ({
@@ -158,21 +164,32 @@ const AdminShell = ({ role, badgeCounts, noPadding = false, children }: AdminShe
     })),
   }))
 
+  if (shouldBypassAdminShellChrome(pathname)) {
+    return (
+      <>
+        {children}
+        <Toaster />
+      </>
+    )
+  }
+
   return (
-    <PortalLayout
-      portalLabel={PORTALS.admin.label}
-      topbarBg={PORTALS.admin.topbarBg}
-      accentColor={PORTALS.admin.accentColor}
-      accentLightColor={PORTALS.admin.accentLightColor}
-      navItems={navItemsWithBadges}
-      rightContent={<AdminRoleBadge role={role} />}
-      backLabel={PORTALS.admin.backLabel}
-      noPadding={noPadding}
-    >
-      <CommandPalette pages={adminPages} />
-      {children}
-      <Toaster />
-    </PortalLayout>
+    <SidebarProvider disableShortcuts={true}>
+      <PortalLayout
+        portalLabel={PORTALS.admin.label}
+        topbarBg={PORTALS.admin.topbarBg}
+        accentColor={PORTALS.admin.accentColor}
+        accentLightColor={PORTALS.admin.accentLightColor}
+        navItems={navItemsWithBadges}
+        rightContent={<AdminRoleBadge role={role} />}
+        backLabel={PORTALS.admin.backLabel}
+        noPadding={noPadding}
+      >
+        <CommandPalette pages={adminPages} />
+        {children}
+        <Toaster />
+      </PortalLayout>
+    </SidebarProvider>
   )
 }
 

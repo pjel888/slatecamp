@@ -56,11 +56,11 @@ export const resolveRoleFromInputs = (inputs: RoleInputs): RoleResolution => {
 
   if (inputs.forcedUserIdActive) {
     return {
-      normalizedRole: 'super_admin',
-      compatibilityRole: 'super_admin',
+      normalizedRole: 'owner',
+      compatibilityRole: 'owner',
       resolvedFrom: 'dev_force_user',
       roleSources: ['dev_force_user'],
-      precedenceTrace: ['dev_force_user=>super_admin'],
+      precedenceTrace: ['dev_force_user=>owner'],
     }
   }
 
@@ -91,20 +91,73 @@ export const resolveRoleFromInputs = (inputs: RoleInputs): RoleResolution => {
     precedenceTrace.push(`user_roles:${rowRoles.join(',')}`)
   }
 
-  const resolvedRole = pickStrongestRole([
-    ...[appMetadataRole, userMetadataRole, profileRole].filter(
-      (role): role is CompatibilityRole => role !== null,
-    ),
-    ...rowRoles,
-  ])
+  const canonicalRowRole = pickStrongestRole(rowRoles)
 
-  if (resolvedRole) {
+  if (canonicalRowRole) {
     return {
-      normalizedRole: resolvedRole,
-      compatibilityRole: resolvedRole,
-      resolvedFrom: roleSources[0] ?? 'none',
+      normalizedRole: canonicalRowRole,
+      compatibilityRole: canonicalRowRole,
+      resolvedFrom: 'user_roles',
       roleSources,
-      precedenceTrace,
+      precedenceTrace: [
+        `user_roles=>${canonicalRowRole}`,
+        ...precedenceTrace.filter((entry) => !entry.startsWith('user_roles:')),
+      ],
+    }
+  }
+
+  if (profileRole) {
+    return {
+      normalizedRole: profileRole,
+      compatibilityRole: profileRole,
+      resolvedFrom: 'profile',
+      roleSources,
+      precedenceTrace: [
+        `profile=>${profileRole}`,
+        ...precedenceTrace.filter((entry) => !entry.startsWith('profile:')),
+      ],
+    }
+  }
+
+  if (appMetadataRole) {
+    return {
+      normalizedRole: appMetadataRole,
+      compatibilityRole: appMetadataRole,
+      resolvedFrom: 'app_metadata',
+      roleSources,
+      precedenceTrace: [
+        `app_metadata=>${appMetadataRole}`,
+        ...precedenceTrace.filter((entry) => !entry.startsWith('app_metadata:')),
+      ],
+    }
+  }
+
+  if (userMetadataRole) {
+    return {
+      normalizedRole: userMetadataRole,
+      compatibilityRole: userMetadataRole,
+      resolvedFrom: 'user_metadata',
+      roleSources,
+      precedenceTrace: [
+        `user_metadata=>${userMetadataRole}`,
+        ...precedenceTrace.filter((entry) => !entry.startsWith('user_metadata:')),
+      ],
+    }
+  }
+
+  // Fallback mechanisms for initial setup/access
+  const ownerEmails = (process.env.OWNER_EMAILS || '')
+    .split(',')
+    .map((value) => value.trim())
+    .filter(Boolean)
+
+  if (inputs.email && ownerEmails.includes(inputs.email)) {
+    return {
+      normalizedRole: 'owner',
+      compatibilityRole: 'owner',
+      resolvedFrom: 'admin_email',
+      roleSources: ['admin_email'],
+      precedenceTrace: ['owner_email=>owner'],
     }
   }
 
@@ -133,14 +186,15 @@ export const resolveRoleFromInputs = (inputs: RoleInputs): RoleResolution => {
 }
 
 export const resolveCurrentUserRole = cache(async (): Promise<RoleResolution> => {
-  const supabase = await createClient()
   const {
     data: { user },
-  } = await supabase.auth.getUser()
+  } = await getUser()
 
   if (!user) {
     return resolveRoleFromInputs({})
   }
+
+  const supabase = await createClient()
 
   const [profileResult, roleRowsResult] = await Promise.all([
     supabase.from('profiles').select('role').eq('id', user.id).maybeSingle(),

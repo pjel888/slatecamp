@@ -37,9 +37,10 @@ export const useSidebar = (): SidebarContextValue => {
 
 interface SidebarProviderProps {
   children: React.ReactNode
+  disableShortcuts?: boolean
 }
 
-export const SidebarProvider = ({ children }: SidebarProviderProps) => {
+export const SidebarProvider = ({ children, disableShortcuts = false }: SidebarProviderProps) => {
   const [expanded, setExpandedState] = useState(false)
   const [isLocked, setIsLocked] = useState(false)
   const [prefersReducedMotion, setPrefersReducedMotion] = useState(false)
@@ -113,6 +114,8 @@ export const SidebarProvider = ({ children }: SidebarProviderProps) => {
   // ---- Keyboard shortcuts ----
 
   useEffect(() => {
+    if (disableShortcuts) return
+
     const onKeyDown = (e: KeyboardEvent) => {
       if (isLocked) return
 
@@ -143,7 +146,7 @@ export const SidebarProvider = ({ children }: SidebarProviderProps) => {
 
     window.addEventListener('keydown', onKeyDown)
     return () => window.removeEventListener('keydown', onKeyDown)
-  }, [expanded, toggle, setExpanded, router, isLocked])
+  }, [expanded, toggle, setExpanded, router, isLocked, disableShortcuts])
 
   // ---- Render ----
 

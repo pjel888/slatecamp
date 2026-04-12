@@ -5,6 +5,7 @@ const insertMock = mock(() => ({
     single: () => Promise.resolve({ data: null, error: { message: 'insert failed' } }),
   }),
 }))
+const archiveEqMock = mock(() => Promise.resolve({ error: null }))
 
 const uploadMock = mock(() => Promise.resolve({ error: { message: 'upload failed' } }))
 
@@ -14,6 +15,7 @@ mock.module('@/lib/supabase/admin', () => ({
       if (table === 'models_3d') {
         return {
           insert: insertMock,
+          update: mock(() => ({ eq: archiveEqMock })),
         }
       }
 
@@ -40,11 +42,19 @@ mock.module('@/lib/supabase/server', () => ({
           }),
       },
     }),
+  getUser: () =>
+    Promise.resolve({
+      data: {
+        user: { id: 'user-1' },
+      },
+    }),
 }))
 
 const canManageContentMock = mock(() => Promise.resolve(true))
+const canReviewContentMock = mock(() => Promise.resolve(true))
 mock.module('@/lib/admin/roles', () => ({
   canManageContent: canManageContentMock,
+  canReviewContent: canReviewContentMock,
 }))
 
 mock.module('next/cache', () => ({
@@ -56,11 +66,12 @@ mock.module('@/lib/logging/server', () => ({
   logServerError: logServerErrorMock,
 }))
 
-const { createAsset, uploadAssetFile } = await import('./assets')
+const { archiveAsset, createAsset, uploadAssetFile } = await import('./assets')
 
 describe('admin/assets', () => {
   beforeEach(() => {
     insertMock.mockClear()
+    archiveEqMock.mockClear()
     uploadMock.mockClear()
     logServerErrorMock.mockClear()
   })
@@ -85,5 +96,10 @@ describe('admin/assets', () => {
 
     expect(result.error).toBe('upload failed')
     expect(logServerErrorMock).toHaveBeenCalledTimes(1)
+  })
+
+  test('archives assets through a status update', async () => {
+    await expect(archiveAsset('asset-1')).resolves.toEqual({ error: null })
+    expect(archiveEqMock).toHaveBeenCalledTimes(1)
   })
 })

@@ -7,6 +7,7 @@ import { Breadcrumb } from '@/components/ui/breadcrumb'
 import {
   getArticleFull,
 } from '@/lib/actions/admin/content'
+import { resolveTopicArticleContext } from '@/lib/admin/topic-article-resolution'
 import { Card } from '@/components/ui/card'
 import { Eyebrow } from '@/components/ui/eyebrow'
 
@@ -21,19 +22,40 @@ const NewQuestionPage = async ({ searchParams }: PageProps) => {
   const { topic: topicId } = await searchParams
   const supabase = await createClient()
 
+  const [{ data: nodes }, { data: primaryMappings }] = await Promise.all([
+    supabase
+      .from('taxonomy_tree')
+      .select('node_id, name, lea_id, level, parent_id, subject_area, is_leaf')
+      .order('level', { ascending: true })
+      .order('name', { ascending: true }),
+    supabase
+      .from('wiki_article_taxonomy')
+      .select('node_id, article_id')
+      .eq('is_primary', true),
+  ])
+
+  const primaryArticleIds = [...new Set((primaryMappings || []).map((mapping) => mapping.article_id))]
+  const mappedArticlesResult: {
+    data: Array<{ article_id: string; title: string; status: string | null; updated_at: string }> | null
+  } = primaryArticleIds.length
+    ? await supabase
+        .from('wiki_articles')
+        .select('article_id, title, status, updated_at')
+        .in('article_id', primaryArticleIds)
+    : { data: [] }
+  const mappedArticles = mappedArticlesResult.data || []
+
+  const topicResolution = resolveTopicArticleContext({
+    topicId,
+    primaryMappings: primaryMappings || [],
+    articles: mappedArticles,
+  })
+  const { topicArticles, selectedTopicArticle, hasAmbiguousPrimaryMappings } = topicResolution
+
   // Find linked article via topic_id if provided
   let article = null
-  if (topicId) {
-    const { data: mapping } = await supabase
-      .from('wiki_article_taxonomy')
-      .select('article_id')
-      .eq('node_id', topicId)
-      .eq('is_primary', true)
-      .single()
-
-    if (mapping) {
-      article = await getArticleFull(mapping.article_id)
-    }
+  if (selectedTopicArticle) {
+    article = await getArticleFull(selectedTopicArticle.articleId)
   }
 
   return (
@@ -54,7 +76,14 @@ const NewQuestionPage = async ({ searchParams }: PageProps) => {
             <h1 className="mt-1 text-2xl font-bold text-foreground">Create New Question</h1>
             <p className="mt-1 text-sm text-muted-foreground">Draft a new assessment item</p>
           </div>
+          {hasAmbiguousPrimaryMappings ? (
+            <div className="mb-4 rounded-md border border-warning/30 bg-warning-50 px-4 py-3 text-sm text-warning-700">
+              Multiple primary article mappings exist for this topic. The editor is using the most recently updated article context until the mapping is cleaned up.
+            </div>
+          ) : null}
           <QuestionEditor 
+            taxonomyNodes={nodes || []}
+            topicArticles={topicArticles}
             question={topicId ? { topic_id: topicId, article_id: article?.article_id ?? null, correct_option_id: 'A' } as any : undefined} 
           />
         </div>

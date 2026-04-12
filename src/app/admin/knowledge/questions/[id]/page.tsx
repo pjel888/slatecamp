@@ -96,6 +96,13 @@ const QuestionDetailPage = async ({ params }: PageProps) => {
 
   const supabase = await createClient()
 
+  // Fetch all taxonomy nodes for the selector
+  const { data: nodes } = await supabase
+    .from('taxonomy_tree')
+    .select('node_id, name, lea_id, level, parent_id, subject_area, is_leaf')
+    .order('level', { ascending: true })
+    .order('name', { ascending: true })
+
   const normalizedQuestionType = normalizeQuestionType((question as any).question_type)
 
   // Find linked article via direct article ownership. Fallback topic mapping is reserved for
@@ -143,6 +150,7 @@ const QuestionDetailPage = async ({ params }: PageProps) => {
           ) : null}
           <QuestionEditor
             readOnly={!canManage}
+            taxonomyNodes={nodes || []}
             question={{
               ...(question as any),
               article_id: article?.article_id ?? (question as any).article_id ?? null,

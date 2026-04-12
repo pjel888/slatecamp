@@ -3,16 +3,24 @@
 import { createClient } from '@/lib/supabase/server'
 import { createAdminClient } from '@/lib/supabase/admin'
 import { revalidatePath } from 'next/cache'
-import { canManageContent } from '@/lib/admin/roles'
+import { canManageContent, canReviewContent } from '@/lib/admin/roles'
 import { z } from 'zod'
 import { logServerError } from '@/lib/logging/server'
+import { ROUTES } from '@/lib/routes'
+
+const ASSET_BUCKET = '3d-models'
 
 export const getAssets = async () => {
+  const authorized = await canReviewContent()
+  if (!authorized) {
+    throw new Error('Unauthorized')
+  }
+
   const supabase = await createClient()
 
   const { data, error } = await supabase
     .from('models_3d')
-    .select('id:model_id, name, slug, url, thumbnail, created_at')
+    .select('id:model_id, name, slug, url, thumbnail, status, metadata, created_at, updated_at')
     .order('created_at', { ascending: false })
     .limit(50)
 
@@ -25,11 +33,16 @@ export const getAssets = async () => {
 }
 
 export const getAsset = async (id: string) => {
+  const authorized = await canReviewContent()
+  if (!authorized) {
+    throw new Error('Unauthorized')
+  }
+
   const supabase = await createClient()
 
   const { data, error } = await supabase
     .from('models_3d')
-    .select('id:model_id, name, slug, url, thumbnail, status, metadata, created_at')
+    .select('id:model_id, name, slug, url, thumbnail, status, metadata, created_at, updated_at')
     .eq('model_id', id)
     .single()
 
@@ -84,9 +97,6 @@ export const createAsset = async (data: {
     throw new Error(parsed.error.issues[0].message)
   }
 
-  const authClient = await createClient()
-  const { data: { user } } = await authClient.auth.getUser()
-
   const supabase = createAdminClient()
 
   const { data: newAsset, error } = await supabase
@@ -98,7 +108,6 @@ export const createAsset = async (data: {
       thumbnail: parsed.data.thumbnail ?? null,
       metadata: parsed.data.metadata,
       status: 'draft',
-      created_by: user?.id ?? null,
     })
     .select('id:model_id, name, slug, url, thumbnail, created_at')
     .single()
@@ -114,7 +123,6 @@ export const createAsset = async (data: {
       message: 'Failed to create a 3D asset.',
       context: {
         routeOrAction: 'admin:assets.create',
-        userId: user?.id ?? null,
         metadata: {
           slug: parsed.data.slug,
         },
@@ -149,9 +157,35 @@ export const uploadAssetFile = async (formData: FormData): Promise<{ url: string
 
   const supabase = createAdminClient()
 
-  const { error: uploadError } = await supabase.storage
-    .from('3d-models')
+  let { error: uploadError } = await supabase.storage
+    .from(ASSET_BUCKET)
     .upload(filePath, file)
+
+  const shouldCreateBucket =
+    uploadError && /bucket not found/i.test(uploadError.message)
+
+  if (shouldCreateBucket) {
+    const { error: createBucketError } = await supabase.storage.createBucket(ASSET_BUCKET, {
+      public: true,
+      fileSizeLimit: 50 * 1024 * 1024,
+      allowedMimeTypes: [
+        'model/gltf-binary',
+        'model/gltf+json',
+        'application/octet-stream',
+        'image/png',
+        'image/jpeg',
+        'image/webp',
+      ],
+    })
+
+    if (!createBucketError || /already exists/i.test(createBucketError.message)) {
+      const retryResult = await supabase.storage
+        .from(ASSET_BUCKET)
+        .upload(filePath, file)
+
+      uploadError = retryResult.error
+    }
+  }
 
   if (uploadError) {
     await logServerError({
@@ -171,8 +205,56 @@ export const uploadAssetFile = async (formData: FormData): Promise<{ url: string
   }
 
   const { data: { publicUrl } } = supabase.storage
-    .from('3d-models')
+    .from(ASSET_BUCKET)
     .getPublicUrl(filePath)
 
   return { url: publicUrl, error: null }
+}
+
+export const archiveAsset = async (id: string) => {
+  const authorized = await canManageContent()
+  if (!authorized) {
+    await logServerError({
+      family: 'admin',
+      eventName: 'assets_archive_unauthorized',
+      message: 'Unauthorized attempt to archive a 3D asset.',
+      context: {
+        routeOrAction: 'admin:assets.archive',
+        metadata: {
+          assetId: id,
+        },
+      },
+    })
+    throw new Error('Unauthorized: insufficient permissions')
+  }
+
+  const supabase = createAdminClient()
+  const { error } = await supabase
+    .from('models_3d')
+    .update({
+      status: 'archived',
+      updated_at: new Date().toISOString(),
+    })
+    .eq('model_id', id)
+
+  if (error) {
+    await logServerError({
+      family: 'admin',
+      eventName: 'assets_archive_failed',
+      message: 'Failed to archive a 3D asset.',
+      context: {
+        routeOrAction: 'admin:assets.archive',
+        metadata: {
+          assetId: id,
+        },
+      },
+      error,
+    })
+    throw new Error(`Failed to archive asset: ${error.message}`)
+  }
+
+  revalidatePath(ROUTES.admin.assets)
+  revalidatePath(`${ROUTES.admin.assets}/${id}`)
+
+  return { error: null }
 }

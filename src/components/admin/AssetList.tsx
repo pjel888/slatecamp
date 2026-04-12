@@ -41,10 +41,11 @@ const statusColors: Record<string, string> = {
 }
 
 export function AssetList({ initialAssets }: AssetListProps) {
-  const [assets] = useState(initialAssets)
   const [searchQuery, setSearchQuery] = useState('')
   const [statusFilter, setStatusFilter] = useState<string | null>(null)
   const [systemFilter, setSystemFilter] = useState<string | null>(null)
+
+  const assets = initialAssets
 
   const filteredAssets = assets.filter(a => {
     const matchesSearch = a.name.toLowerCase().includes(searchQuery.toLowerCase())
@@ -86,6 +87,7 @@ export function AssetList({ initialAssets }: AssetListProps) {
           <option value="structural">Structural</option>
           <option value="mep">MEP</option>
           <option value="architectural">Architectural</option>
+          <option value="civil">Civil</option>
         </select>
         <a
           href="#asset-uploader"
@@ -141,7 +143,7 @@ export function AssetList({ initialAssets }: AssetListProps) {
                     className="flex-1 flex items-center justify-center gap-1 px-3 py-1.5 text-sm rounded-md border border-input hover:bg-muted"
                   >
                     <SCIcon icon={PencilSimple} size="xs" />
-                    Edit
+                    Manage
                   </Link>
                 </div>
               </div>

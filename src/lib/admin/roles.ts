@@ -43,10 +43,11 @@ export async function isAdmin(): Promise<boolean> {
 }
 
 /**
- * Check if user is a super_admin
+ * Check if user is a super_admin or owner
  */
 export async function isSuperAdmin(): Promise<boolean> {
-  return (await getUserRole()) === 'super_admin'
+  const role = await getUserRole()
+  return role === 'super_admin' || role === 'owner'
 }
 
 /**

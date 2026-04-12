@@ -19,6 +19,7 @@ import {
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
 import { normalizeEditorStatus } from '@/lib/admin/editor-workflow'
+import { archiveAsset } from '@/lib/actions/admin/assets'
 
 interface Asset {
   id: string
@@ -75,13 +76,14 @@ export const AssetDetailView = ({ asset }: AssetDetailViewProps) => {
     setDeleting(true)
     setDeleteError(null)
     try {
-      // Placeholder: wire up a deleteAsset server action when available
-      await new Promise<void>((resolve) => setTimeout(resolve, 500))
+      await archiveAsset(asset.id)
       setDeleteOpen(false)
-      router.push('/admin/assets')
+      router.push(ROUTES.admin.assets)
       router.refresh()
-    } catch {
-      setDeleteError('An unexpected error occurred. Please try again.')
+    } catch (error) {
+      setDeleteError(
+        error instanceof Error ? error.message : 'An unexpected error occurred. Please try again.',
+      )
     } finally {
       setDeleting(false)
     }
@@ -189,7 +191,7 @@ export const AssetDetailView = ({ asset }: AssetDetailViewProps) => {
               onClick={() => setDeleteOpen(true)}
             >
               <SCIcon icon={Trash} size="sm" className="mr-1.5" />
-              Delete
+              Archive
             </Button>
           </div>
         </div>
@@ -199,11 +201,11 @@ export const AssetDetailView = ({ asset }: AssetDetailViewProps) => {
       <Dialog open={deleteOpen} onOpenChange={setDeleteOpen}>
         <DialogContent showCloseButton={false}>
           <DialogHeader>
-            <DialogTitle>Delete Asset</DialogTitle>
+            <DialogTitle>Archive Asset</DialogTitle>
             <DialogDescription>
-              Are you sure you want to delete{' '}
+              Are you sure you want to archive{' '}
               <span className="font-medium text-foreground">&ldquo;{asset.name}&rdquo;</span>?
-              This action cannot be undone.
+              This removes it from active operational use while preserving the record.
             </DialogDescription>
           </DialogHeader>
 
@@ -225,7 +227,7 @@ export const AssetDetailView = ({ asset }: AssetDetailViewProps) => {
               Cancel
             </Button>
             <Button variant="destructive" onClick={handleDelete} disabled={deleting}>
-              {deleting ? 'Deleting…' : 'Delete Asset'}
+              {deleting ? 'Archiving…' : 'Archive Asset'}
             </Button>
           </DialogFooter>
         </DialogContent>

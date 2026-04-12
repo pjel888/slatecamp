@@ -8,7 +8,11 @@ import { canManageContent, canReviewContent } from "@/lib/admin/roles";
 import { CACHE_TAGS } from '../cache-tags'
 import { ROUTES } from '@/lib/routes'
 import { logServerError } from '@/lib/logging/server'
-import { normalizeEditorStatus } from '@/lib/admin/editor-workflow'
+import {
+  getStatusWriteCandidates,
+  isLegacyStatusConstraintError,
+  normalizeEditorStatus,
+} from '@/lib/admin/editor-workflow'
 import { compileMdxPreview } from './content'
 
 const UpdateWikiArticleSchema = z.object({
@@ -61,14 +65,32 @@ export const updateWikiArticle = async (id: string, data: z.infer<typeof UpdateW
 
   // Use raw data for update to avoid Zod object differences if needed, 
   // but parsed data is safer.
-  const { error } = await supabase
-    .from('wiki_articles')
-    .update({
-      ...parsed.data,
-      status: parsed.data.status ? normalizeEditorStatus(parsed.data.status) : undefined,
-      updated_at: new Date().toISOString()
-    })
-    .eq('article_id', id)
+  const writeCandidates = getStatusWriteCandidates(parsed.data.status)
+  let error: { code?: string; message?: string } | null = null
+
+  for (const candidate of writeCandidates) {
+    const result = await supabase
+      .from('wiki_articles')
+      .update({
+        ...parsed.data,
+        status: candidate,
+        updated_at: new Date().toISOString(),
+      })
+      .eq('article_id', id)
+
+    error = result.error
+    if (!error) {
+      break
+    }
+
+    const shouldRetryCompatibilityWrite =
+      candidate !== writeCandidates[writeCandidates.length - 1] &&
+      isLegacyStatusConstraintError(error)
+
+    if (!shouldRetryCompatibilityWrite) {
+      break
+    }
+  }
 
   if (!error) {
     revalidateTag(CACHE_TAGS.wiki, 'max')
@@ -130,17 +152,38 @@ export const createWikiArticle = async (data: z.infer<typeof UpdateWikiArticleSc
 
   const supabase = createAdminClient()
 
-  const { data: newArticle, error } = await supabase
-    .from('wiki_articles')
-    .insert([{
-      ...parsed.data,
-      author_id: parsed.data.author_id || user?.id,
-      status: normalizeEditorStatus(parsed.data.status),
-      created_at: new Date().toISOString(),
-      updated_at: new Date().toISOString()
-    }])
-    .select()
-    .single()
+  const writeCandidates = getStatusWriteCandidates(parsed.data.status)
+  let newArticle = null
+  let error: { code?: string; message?: string } | null = null
+
+  for (const candidate of writeCandidates) {
+    const result = await supabase
+      .from('wiki_articles')
+      .insert([{
+        ...parsed.data,
+        author_id: parsed.data.author_id || user?.id,
+        status: candidate,
+        created_at: new Date().toISOString(),
+        updated_at: new Date().toISOString()
+      }])
+      .select()
+      .single()
+
+    newArticle = result.data
+    error = result.error
+
+    if (!error) {
+      break
+    }
+
+    const shouldRetryCompatibilityWrite =
+      candidate !== writeCandidates[writeCandidates.length - 1] &&
+      isLegacyStatusConstraintError(error)
+
+    if (!shouldRetryCompatibilityWrite) {
+      break
+    }
+  }
 
   let mappingError = null
 
@@ -210,16 +253,20 @@ export async function deleteWikiArticle(id: string) {
 
   const supabase = createAdminClient()
 
+  // Soft delete by updating status to 'archived'
   const { error } = await supabase
     .from('wiki_articles')
-    .delete()
+    .update({ 
+      status: 'archived',
+      updated_at: new Date().toISOString()
+    })
     .eq('article_id', id)
 
   if (error) {
     await logServerError({
       family: 'admin',
       eventName: 'wiki_delete_failed',
-      message: 'Failed to delete wiki article.',
+      message: 'Failed to archive wiki article.',
       context: {
         routeOrAction: 'admin:wiki.delete',
         metadata: {
@@ -228,12 +275,13 @@ export async function deleteWikiArticle(id: string) {
       },
       error,
     })
-    throw new Error(`Failed to delete article: ${error.message}`)
+    throw new Error(`Failed to archive article: ${error.message}`)
   }
 
   revalidateTag(CACHE_TAGS.wiki, 'max')
   revalidatePath(ROUTES.admin.wiki);
   revalidatePath(ROUTES.admin.articles);
+  revalidatePath(ROUTES.admin.knowledge);
   revalidatePath(ROUTES.wiki.root);
 
   return { error: null }

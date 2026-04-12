@@ -2,6 +2,7 @@
 
 import { useEffect, useCallback, useState, useRef } from 'react'
 import { useDirtyState } from './DirtyStateProvider'
+import { toast } from '@/lib/hooks/use-toast'
 import type { QuestionData, EIPromptData, SaveItemResult } from './types'
 import {
   saveArticleFull,
@@ -47,6 +48,33 @@ interface SaveAllBarProps {
     articleId: string
     created: boolean
   }) => void
+}
+
+const formatSaveSummary = (results: SaveItemResult[]) => {
+  const articleCount = results.filter((result) => result.type === 'article').length
+  const questionCount = results.filter((result) => result.type === 'question').length
+  const promptCount = results.filter((result) => result.type === 'ei_prompt').length
+  const parts: string[] = []
+
+  if (articleCount > 0) {
+    parts.push(articleCount === 1 ? 'article' : `${articleCount} articles`)
+  }
+  if (questionCount > 0) {
+    parts.push(`${questionCount} question${questionCount === 1 ? '' : 's'}`)
+  }
+  if (promptCount > 0) {
+    parts.push(`${promptCount} EI prompt${promptCount === 1 ? '' : 's'}`)
+  }
+
+  if (parts.length === 0) {
+    return 'Changes saved.'
+  }
+
+  if (parts.length === 1) {
+    return `Saved ${parts[0]}.`
+  }
+
+  return `Saved ${parts.slice(0, -1).join(', ')} and ${parts.at(-1)}.`
 }
 
 // ─── Component ───────────────────────────────────────────────
@@ -385,6 +413,13 @@ export const SaveAllBar = ({
       // All succeeded
       dirty.resetAllDirty()
       setSaveError(null)
+      
+      toast({
+        title: 'All changes saved',
+        description: formatSaveSummary(succeeded),
+        variant: 'success'
+      })
+
       onSaveComplete({
         articleId: persistedArticleId,
         created: createdArticle,

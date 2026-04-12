@@ -119,7 +119,7 @@ export const ContentSearchClient = () => {
     articles.map((a) => (
       <Link
         key={a.article_id}
-        href={`/admin/articles/${a.article_id}`}
+        href={`/admin/knowledge/${a.article_id}`}
         className="flex items-start gap-3 rounded-md border border-border p-3 transition-colors duration-150 hover:border-primary/30 hover:bg-muted/50"
       >
         <Badge variant="success" size="xs" className="mt-0.5 shrink-0">

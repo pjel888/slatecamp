@@ -53,7 +53,7 @@ export const PipelineClient = ({ initialArticles }: { initialArticles: PipelineA
     if (!q) return true
     return (
       article.title.toLowerCase().includes(q) ||
-      article.slug.toLowerCase().includes(q) ||
+      (article.slug?.toLowerCase().includes(q) ?? false) ||
       (article.subject_label && article.subject_label.toLowerCase().includes(q)) ||
       (article.reviewed_by && article.reviewed_by.toLowerCase().includes(q))
     )
@@ -85,7 +85,7 @@ export const PipelineClient = ({ initialArticles }: { initialArticles: PipelineA
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
         <div className="w-full max-w-sm">
           <SearchInput
-            placeholder="Filter by title, discipline, or assignee..."
+            placeholder="Filter by title, slug, subject, or reviewer..."
             value={filter}
             onChange={(value) => setFilter(value)}
           />
@@ -95,7 +95,7 @@ export const PipelineClient = ({ initialArticles }: { initialArticles: PipelineA
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
         {COLUMNS.map((col) => {
           const items = grouped[col.key]
           return (

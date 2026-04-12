@@ -1,7 +1,6 @@
 import { notFound, redirect } from 'next/navigation'
 import { Suspense } from 'react'
 
-import { getArticleSources } from '@/lib/actions/wiki-actions'
 import { getEIPromptsForArticle, getUserEIResponsesForArticle } from '@/lib/actions/ei-prompts'
 import { getArticleHeadings, WikiArticle, WikiHeader, WikiArticleHero, WikiRightSidebar, TeachBackPrompt } from '@/components/wiki'
 import { getSubjectName } from '@/types/testing'
@@ -111,7 +110,12 @@ export default async function PreviewPage(props: { params: Promise<{ previewId: 
   const [eiPrompts, eiResponses, sources, teachBackCriteria, relatedTopics] = await Promise.all([
     getEIPromptsForArticle(article.article_id),
     getUserEIResponsesForArticle(article.article_id), // Wait, should we show responses in Admin preview? Actually `getUserEIResponsesForArticle` uses `auth.uid()`, which is fine since admin is authed.
-    getArticleSources(article.article_id),
+    supabase
+      .from('wiki_article_sources')
+      .select('source_id, label, description, url, source_type, sort_order')
+      .eq('article_id', article.article_id)
+      .order('sort_order', { ascending: true })
+      .then(({ data }) => data || []),
     node?.node_id ? getTeachBackCriteria(node.node_id) : Promise.resolve(null),
     getRelatedTopics(node, supabase),
   ])
@@ -132,6 +136,7 @@ export default async function PreviewPage(props: { params: Promise<{ previewId: 
             articleTitle={article.title}
             articleSlug={article.slug}
             scrollContainerId="wiki-center-pane"
+            disableUserActions={true}
             mobileActionsContent={
               <WikiRightSidebar
                 practiceHref={practiceHref}
@@ -143,6 +148,7 @@ export default async function PreviewPage(props: { params: Promise<{ previewId: 
                 articleSlug={article.slug}
                 scrollContainerId="wiki-center-pane"
                 sources={sources}
+                disableUserActions={true}
               />
             }
           />
@@ -198,6 +204,7 @@ export default async function PreviewPage(props: { params: Promise<{ previewId: 
               articleSlug={article.slug}
               scrollContainerId="wiki-center-pane"
               sources={sources}
+              disableUserActions={true}
             />
           </div>
         </aside>

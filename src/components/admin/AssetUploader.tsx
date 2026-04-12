@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useCallback, useEffect } from 'react'
+import { useRouter } from 'next/navigation'
 import { UploadSimple, File, XCircle, CheckCircle, Warning } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
@@ -26,6 +27,7 @@ const layerOptions = ['foundation', 'frame', 'envelope', 'core', 'roof']
 const disciplineOptions = ['LEA', 'PNLE', 'BAR']
 
 export const AssetUploader = () => {
+  const router = useRouter()
   const [file, setFile] = useState<File | null>(null)
   const [metadata, setMetadata] = useState<AssetMetadata>({
     system: '',
@@ -108,6 +110,7 @@ export const AssetUploader = () => {
         setName('')
         setMetadata({ system: '', layer: '', discipline: '', tags: [] })
         setUploadProgress(0)
+        router.refresh()
       }, 1000)
 
     } catch (err) {

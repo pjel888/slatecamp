@@ -27,6 +27,10 @@ export const QuestionQuickPreview = ({
       : options.findIndex((o) => typeof o !== 'string' && o.is_correct)
 
   const safeCorrectIndex = correctIndex < 0 ? correctAnswer : correctIndex
+  const hasKnownCorrectAnswer =
+    Number.isInteger(safeCorrectIndex) &&
+    safeCorrectIndex >= 0 &&
+    safeCorrectIndex < normalizedOptions.length
 
   return (
     <Popover open={open} onOpenChange={setOpen}>
@@ -56,7 +60,46 @@ export const QuestionQuickPreview = ({
           </button>
         </div>
         <div className="p-3">
-          <div className="text-sm text-text-tertiary">Preview unavailable (Pass 1 cleanup)</div>
+          <div className="space-y-3">
+            <p className="text-sm font-medium text-text-primary">{stem}</p>
+
+            <div className="space-y-2">
+              {normalizedOptions.map((option, index) => {
+                const isCorrect = hasKnownCorrectAnswer && index === safeCorrectIndex
+
+                return (
+                  <div
+                    key={`${option}-${index}`}
+                    className={`rounded-sm border px-2.5 py-2 text-xs ${
+                      isCorrect
+                        ? 'border-emerald/30 bg-success-50 text-emerald-800'
+                        : 'border-border bg-surface-light text-text-secondary'
+                    }`}
+                  >
+                    <span className="mr-2 font-mono font-semibold text-text-tertiary">
+                      {String.fromCharCode(65 + index)}.
+                    </span>
+                    {option}
+                  </div>
+                )
+              })}
+            </div>
+
+            {rationale ? (
+              <div className="rounded-sm border border-border bg-surface-light px-2.5 py-2">
+                <p className="text-[11px] font-semibold uppercase tracking-wider text-text-tertiary">
+                  Rationale
+                </p>
+                <p className="mt-1 text-xs text-text-secondary">{rationale}</p>
+              </div>
+            ) : null}
+
+            {codeCitation ? (
+              <p className="text-[11px] font-mono text-text-tertiary">
+                {codeCitation}
+              </p>
+            ) : null}
+          </div>
         </div>
       </PopoverContent>
     </Popover>

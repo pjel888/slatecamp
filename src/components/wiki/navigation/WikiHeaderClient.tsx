@@ -18,6 +18,7 @@ interface WikiHeaderClientProps {
   articleTitle?: string
   articleSlug?: string
   scrollContainerId?: string
+  disableUserActions?: boolean
   mobileActionsContent?: React.ReactNode
 }
 
@@ -27,6 +28,7 @@ export function WikiHeaderClient({
   articleTitle,
   articleSlug,
   scrollContainerId,
+  disableUserActions = false,
   mobileActionsContent,
 }: WikiHeaderClientProps) {
   const { disciplineId, disciplineName } = useWikiDiscipline()
@@ -87,11 +89,13 @@ export function WikiHeaderClient({
 
         {/* Right: Bookmarks → Mobile actions trigger */}
         <div className="flex items-center gap-1 shrink-0">
-          <WikiBookmarks
-            currentArticleId={articleId}
-            currentSlug={articleSlug}
-            currentTitle={articleTitle}
-          />
+          {!disableUserActions ? (
+            <WikiBookmarks
+              currentArticleId={articleId}
+              currentSlug={articleSlug}
+              currentTitle={articleTitle}
+            />
+          ) : null}
 
           {/* Mobile actions drawer trigger — visible below lg */}
           {mobileActionsContent && (

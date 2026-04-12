@@ -12,7 +12,10 @@ export default async function AdminLayout({
   children: React.ReactNode
 }) {
   const headerList = await headers()
-  const pathname = headerList.get('x-pathname') || ''
+  const pathname =
+    headerList.get('x-pathname') ||
+    headerList.get('next-url') ||
+    ''
 
   // CRITICAL: Public Landing Bypass — login page renders without portal chrome
   if (pathname === ROUTES.admin.login) {
@@ -33,11 +36,6 @@ export default async function AdminLayout({
   }
 
   const attentionData = await getNeedsAttentionData()
-
-  // If it's the iframe preview route, render without AdminShell
-  if (pathname.startsWith(ROUTES.admin.preview(''))) {
-    return <>{children}</>
-  }
 
   // Full-bleed editor routes get no padding — the editor manages its own layout
   const isFullBleedEditor = /^\/admin\/knowledge(\/questions)?\/[^/]+$/.test(pathname)

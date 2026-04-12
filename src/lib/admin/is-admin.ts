@@ -19,5 +19,6 @@ export async function isAdminLegacy(): Promise<boolean> {
 export async function isAdminByEmail(email: string | undefined): Promise<boolean> {
   if (!email) return false;
   const adminEmails = (process.env.ADMIN_EMAILS || '').split(',').map(e => e.trim()).filter(Boolean)
-  return email.endsWith('@slatecamp.com') || adminEmails.includes(email);
+  const ownerEmails = (process.env.OWNER_EMAILS || '').split(',').map(e => e.trim()).filter(Boolean)
+  return email.endsWith('@slatecamp.com') || adminEmails.includes(email) || ownerEmails.includes(email);
 }

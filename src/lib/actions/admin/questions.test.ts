@@ -80,6 +80,12 @@ mock.module('@/lib/supabase/server', () => ({
           }),
       },
     }),
+  getUser: () =>
+    Promise.resolve({
+      data: {
+        user: { id: 'user-1' },
+      },
+    }),
 }))
 
 const canManageContentMock = mock(() => Promise.resolve(true))

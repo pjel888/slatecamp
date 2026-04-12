@@ -968,7 +968,51 @@ const QuestionCard = ({
       {/* ── Camp Mode Preview (inline toggle) ─────────────── */}
       {showCampPreview && (
         <div className="border-t border-border px-3 pb-3 pt-3">
-          <div className="text-sm text-text-tertiary">Preview unavailable (Pass 1 cleanup)</div>
+          <div className="space-y-3 rounded-md border border-border bg-surface-light p-3">
+            <div>
+              <p className="text-[11px] font-semibold uppercase tracking-wider text-text-tertiary">
+                Operator Preview
+              </p>
+              <p className="mt-1 text-sm font-medium text-text-primary">{question.text}</p>
+            </div>
+
+            <div className="space-y-2">
+              {question.options.map((option) => {
+                const isCorrect = option.id === question.correct_option_id
+
+                return (
+                  <div
+                    key={`${question.question_id}-${option.id}`}
+                    className={`rounded-sm border px-2.5 py-2 text-xs ${
+                      isCorrect
+                        ? 'border-emerald/30 bg-success-50 text-emerald-800'
+                        : 'border-border bg-card text-text-secondary'
+                    }`}
+                  >
+                    <span className="mr-2 font-mono font-semibold text-text-tertiary">
+                      {option.id}.
+                    </span>
+                    {option.text}
+                  </div>
+                )
+              })}
+            </div>
+
+            {question.rationale ? (
+              <div className="rounded-sm border border-border bg-card px-2.5 py-2">
+                <p className="text-[11px] font-semibold uppercase tracking-wider text-text-tertiary">
+                  Rationale
+                </p>
+                <p className="mt-1 text-xs text-text-secondary">{question.rationale}</p>
+              </div>
+            ) : null}
+
+            {question.code_citation ? (
+              <p className="text-[11px] font-mono text-text-tertiary">
+                {question.code_citation}
+              </p>
+            ) : null}
+          </div>
         </div>
       )}
     </div>

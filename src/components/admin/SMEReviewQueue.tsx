@@ -3,26 +3,19 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { createClient } from '@/lib/supabase/client'
-import { CheckCircle, ArrowSquareOut, Question, FileText, Cube } from '@phosphor-icons/react/dist/ssr'
+import { CheckCircle, ArrowSquareOut, FileText } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { formatRelativeTime } from '@/lib/utils/format-time'
 import { REVIEW_QUEUE_STATUSES } from '@/lib/admin/editor-workflow'
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from '@/components/ui/select'
 import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from '@/components/ui/dialog'
 import { Textarea } from '@/components/ui/textarea'
 import { approveWikiArticleReview, requestWikiArticleChanges } from '@/lib/actions/admin/wiki'
 
 interface PendingItem {
   id: string
-  type: 'question' | 'wiki' | 'asset'
+  type: 'wiki'
   title: string
   slug: string | null
   updated_at: string
@@ -37,7 +30,6 @@ interface DialogState {
 export const SMEReviewQueue = () => {
   const [items, setItems] = useState<PendingItem[]>([])
   const [loading, setLoading] = useState(true)
-  const [typeFilter, setTypeFilter] = useState<string>('')
   const [error, setError] = useState<string | null>(null)
   const [dialog, setDialog] = useState<DialogState>({ type: null, item: null })
   const [reviewerComments, setReviewerComments] = useState('')
@@ -113,16 +105,6 @@ export const SMEReviewQueue = () => {
     }
   }
 
-  const filteredItems = items.filter((item) =>
-    typeFilter ? item.type === typeFilter : true,
-  )
-
-  const typeIcons = {
-    question: Question,
-    wiki: FileText,
-    asset: Cube,
-  }
-
   if (loading) {
     return <div className="p-8 text-center text-muted-foreground">Loading review queue...</div>
   }
@@ -144,43 +126,28 @@ export const SMEReviewQueue = () => {
             </button>
           </div>
         )}
-
-        {/* Filter */}
         <div className="flex gap-4">
-          <Select value={typeFilter} onValueChange={setTypeFilter}>
-            <SelectTrigger aria-label="Filter by content type">
-              <SelectValue placeholder="All Types" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="">All Types</SelectItem>
-              <SelectItem value="wiki">Wiki Articles</SelectItem>
-              <SelectItem value="question">Questions</SelectItem>
-              <SelectItem value="asset">3D Assets</SelectItem>
-            </SelectContent>
-          </Select>
           <Badge variant="default" size="sm">
-            {filteredItems.length} pending
+            {items.length} wiki article{items.length === 1 ? '' : 's'} pending
           </Badge>
         </div>
 
         {/* Items List */}
-        {filteredItems.length === 0 ? (
+        {items.length === 0 ? (
           <div className="p-8 text-center text-muted-foreground">
-            No pending reviews
+            No wiki articles are currently waiting for SME review.
           </div>
         ) : (
           <div className="space-y-3">
-            {filteredItems.map((item) => {
-              const Icon = typeIcons[item.type]
-
+            {items.map((item) => {
               return (
                 <div
-                  key={`${item.type}-${item.id}`}
+                  key={item.id}
                   className="rounded-md border border-border bg-card p-4"
                 >
                   <div className="flex items-start gap-4">
                     <div className="p-2 rounded-md bg-muted">
-                      <SCIcon icon={Icon} size="md" />
+                      <SCIcon icon={FileText} size="md" />
                     </div>
 
                     <div className="flex-1 min-w-0">
@@ -200,7 +167,7 @@ export const SMEReviewQueue = () => {
                         )}
                       </div>
                       <p className="text-[11px] text-muted-foreground mt-1">
-                        {item.type.charAt(0).toUpperCase() + item.type.slice(1)} · Updated {formatRelativeTime(item.updated_at)}
+                        Wiki article · Updated {formatRelativeTime(item.updated_at)}
                       </p>
                     </div>
 

@@ -5,7 +5,6 @@ import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { ConfirmDialog } from '@/components/ui/dialog'
 import { updateArticleStatus } from '@/lib/actions/admin/pipeline'
-import { formatRelativeTime } from '@/lib/utils/format-time'
 import { normalizeEditorStatus } from '@/lib/admin/editor-workflow'
 
 /* ------------------------------------------------------------------ */
@@ -100,6 +99,11 @@ export const PipelineCard = ({ article, columnKey }: PipelineCardProps) => {
   const [confirmAction, setConfirmAction] = useState<StatusAction | null>(null)
   const normalizedStatus = normalizeEditorStatus(article.status) as PipelineStatus
 
+  const updatedAtLabel = new Intl.DateTimeFormat('en-US', {
+    month: 'short',
+    day: 'numeric',
+  }).format(new Date(article.updated_at))
+
   const handleAction = (action: StatusAction) => {
     if (action.requiresConfirm) {
       setConfirmAction(action)
@@ -138,7 +142,7 @@ export const PipelineCard = ({ article, columnKey }: PipelineCardProps) => {
             {article.slug}
           </p>
           <p className="text-[11px] text-muted-foreground mt-1">
-            {formatRelativeTime(article.updated_at)}
+            Updated {updatedAtLabel}
           </p>
         </Link>
 

@@ -12,6 +12,7 @@ import {
   ChartBar,
 } from '@phosphor-icons/react/dist/ssr'
 import { PortalLayout } from '@/components/portal'
+import { SidebarProvider } from '@/components/sidebar/SidebarProvider'
 import { PORTALS } from '@/config/portals'
 import type { NavGroup } from '@/components/portal'
 
@@ -58,15 +59,17 @@ interface CeoShellProps {
 }
 
 export const CeoShell = ({ displayName, children }: CeoShellProps) => (
-  <PortalLayout
-    portalLabel={PORTALS.ceo.label}
-    topbarBg={PORTALS.ceo.topbarBg}
-    accentColor={PORTALS.ceo.accentColor}
-    accentLightColor={PORTALS.ceo.accentLightColor}
-    navItems={ceoNavItems}
-    backLabel={PORTALS.ceo.backLabel}
-    backHref={PORTALS.ceo.backHref}
-  >
-    {children}
-  </PortalLayout>
+  <SidebarProvider disableShortcuts={true}>
+    <PortalLayout
+      portalLabel={PORTALS.ceo.label}
+      topbarBg={PORTALS.ceo.topbarBg}
+      accentColor={PORTALS.ceo.accentColor}
+      accentLightColor={PORTALS.ceo.accentLightColor}
+      navItems={ceoNavItems}
+      backLabel={PORTALS.ceo.backLabel}
+      backHref={PORTALS.ceo.backHref}
+    >
+      {children}
+    </PortalLayout>
+  </SidebarProvider>
 )

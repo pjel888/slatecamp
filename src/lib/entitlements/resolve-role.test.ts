@@ -11,20 +11,32 @@ describe('resolveRoleFromInputs', () => {
       forcedUserIdActive: true,
     })
 
-    expect(resolution.normalizedRole).toBe('super_admin')
+    expect(resolution.normalizedRole).toBe('owner')
     expect(resolution.resolvedFrom).toBe('dev_force_user')
   })
 
-  test('chooses the strongest recognized role across sources', () => {
+  test('prefers user_roles as the canonical source over other role surfaces', () => {
     const resolution = resolveRoleFromInputs({
       email: 'user@example.com',
-      appMetadataRole: 'sme_reviewer',
+      appMetadataRole: 'owner',
       profileRole: 'developer',
       userRoleRows: [{ role: 'content_admin' }],
     })
 
     expect(resolution.normalizedRole).toBe('content_admin')
     expect(resolution.compatibilityRole).toBe('content_admin')
+    expect(resolution.resolvedFrom).toBe('user_roles')
+  })
+
+  test('falls back to profiles.role when user_roles are absent', () => {
+    const resolution = resolveRoleFromInputs({
+      email: 'user@example.com',
+      appMetadataRole: 'developer',
+      profileRole: 'ceo',
+    })
+
+    expect(resolution.normalizedRole).toBe('ceo')
+    expect(resolution.resolvedFrom).toBe('profile')
   })
 
   test('falls back to admin email when no structured role exists', () => {

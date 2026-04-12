@@ -6,7 +6,11 @@ import { revalidatePath, revalidateTag } from 'next/cache'
 import { CACHE_TAGS } from '../cache-tags'
 import { ROUTES } from '@/lib/routes'
 import { logServerError } from '@/lib/logging/server'
-import { normalizeEditorStatus } from '@/lib/admin/editor-workflow'
+import {
+  getStatusWriteCandidates,
+  isLegacyStatusConstraintError,
+  normalizeEditorStatus,
+} from '@/lib/admin/editor-workflow'
 import {
   isStandardQuestionType,
   normalizeQuestionOptionArray,
@@ -50,6 +54,83 @@ const ensureUniqueArticleSlug = async (
     candidate = `${baseSlug}-${suffix}`
     suffix += 1
   }
+}
+
+const updateWikiArticleWithCompatibleStatus = async ({
+  supabase,
+  articleId,
+  payload,
+}: {
+  supabase: ReturnType<typeof createAdminClient>
+  articleId: string
+  payload: Record<string, unknown>
+}) => {
+  const writeCandidates = getStatusWriteCandidates(payload.status as string | null | undefined)
+  let error: { code?: string; message?: string } | null = null
+
+  for (const candidate of writeCandidates) {
+    const result = await supabase
+      .from('wiki_articles')
+      .update({
+        ...payload,
+        status: candidate,
+      })
+      .eq('article_id', articleId)
+
+    error = result.error
+
+    if (!error) {
+      break
+    }
+
+    const shouldRetryCompatibilityWrite =
+      candidate !== writeCandidates[writeCandidates.length - 1] &&
+      isLegacyStatusConstraintError(error)
+
+    if (!shouldRetryCompatibilityWrite) {
+      break
+    }
+  }
+
+  return { error }
+}
+
+const insertWikiArticleWithCompatibleStatus = async ({
+  supabase,
+  payload,
+}: {
+  supabase: ReturnType<typeof createAdminClient>
+  payload: Record<string, unknown>
+}) => {
+  const writeCandidates = getStatusWriteCandidates(payload.status as string | null | undefined)
+  let lastResult: { data: any; error: any } | null = null
+
+  for (const candidate of writeCandidates) {
+    const result = await supabase
+      .from('wiki_articles')
+      .insert({
+        ...payload,
+        status: candidate,
+      })
+      .select('article_id, slug')
+      .single()
+
+    lastResult = result
+
+    if (!result.error) {
+      break
+    }
+
+    const shouldRetryCompatibilityWrite =
+      candidate !== writeCandidates[writeCandidates.length - 1] &&
+      isLegacyStatusConstraintError(result.error)
+
+    if (!shouldRetryCompatibilityWrite) {
+      break
+    }
+  }
+
+  return lastResult ?? { data: null, error: new Error('Failed to insert wiki article') }
 }
 
 export interface SaveArticleFullInput {
@@ -552,14 +633,15 @@ export const updateArticleFull = async (
   const normalizedStatus = articleFields.status
     ? normalizeEditorStatus(articleFields.status)
     : undefined
-  const { error: articleError } = await supabase
-    .from('wiki_articles')
-    .update({
+  const { error: articleError } = await updateWikiArticleWithCompatibleStatus({
+    supabase,
+    articleId: id,
+    payload: {
       ...articleFields,
       status: normalizedStatus,
       updated_at: new Date().toISOString(),
-    })
-    .eq('article_id', id)
+    },
+  })
 
   if (articleError) {
     await logServerError({
@@ -725,9 +807,9 @@ export const saveArticleFull = async (
     const slug = await ensureUniqueArticleSlug(supabase, title)
     const now = new Date().toISOString()
 
-    const { data: insertedArticle, error: insertError } = await supabase
-      .from('wiki_articles')
-      .insert({
+    const { data: insertedArticle, error: insertError } = await insertWikiArticleWithCompatibleStatus({
+      supabase,
+      payload: {
         title,
         slug,
         content,
@@ -739,9 +821,8 @@ export const saveArticleFull = async (
         reviewer_comments: data.reviewer_comments ?? null,
         created_at: now,
         updated_at: now,
-      })
-      .select('article_id, slug')
-      .single()
+      },
+    })
 
     if (insertError || !insertedArticle) {
       if (insertError) {

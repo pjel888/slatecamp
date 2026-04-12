@@ -2,7 +2,7 @@
 
 import { createClient } from '@/lib/supabase/server'
 import { createAdminClient } from '@/lib/supabase/admin'
-import { canManageContent } from '@/lib/admin/roles'
+import { canManageContent, canReviewContent } from '@/lib/admin/roles'
 import { revalidatePath, revalidateTag } from 'next/cache'
 import { CACHE_TAGS } from '../cache-tags'
 import { ROUTES } from '@/lib/routes'
@@ -12,10 +12,15 @@ import { compileMdxPreview } from './content'
 import { countStandardQuestionsForArticle } from '@/lib/admin/editor-integrity/standard-question'
 
 export const getPipelineArticles = async () => {
+  const authorized = await canReviewContent()
+  if (!authorized) {
+    throw new Error('Unauthorized')
+  }
+
   const supabase = await createClient()
   const { data } = await supabase
     .from('wiki_articles')
-    .select('article_id, title, status, updated_at, profiles(display_name)')
+    .select('article_id, title, slug, status, updated_at, created_at, reviewed_by, subject_label')
     .order('updated_at', { ascending: false })
 
   return data || []
@@ -74,10 +79,24 @@ export const updateArticleStatus = async (articleId: string, newStatus: string) 
     }
   }
 
-  const { error } = await supabase
+  let { error } = await supabase
     .from('wiki_articles')
     .update({ status: canonicalStatus, updated_at: new Date().toISOString() })
     .eq('article_id', articleId)
+
+  const shouldRetryLegacyReviewStatus =
+    canonicalStatus === 'in_review' &&
+    error &&
+    (error.code === '23514' || error.message.includes('status'))
+
+  if (shouldRetryLegacyReviewStatus) {
+    const legacyResult = await supabase
+      .from('wiki_articles')
+      .update({ status: 'pending_review', updated_at: new Date().toISOString() })
+      .eq('article_id', articleId)
+
+    error = legacyResult.error
+  }
 
   if (error) {
     await logServerError({
@@ -100,4 +119,5 @@ export const updateArticleStatus = async (articleId: string, newStatus: string) 
   revalidatePath(ROUTES.admin.pipeline)
   revalidatePath(ROUTES.admin.knowledge)
   revalidatePath(ROUTES.admin.reviews)
+  revalidatePath(ROUTES.admin.article(articleId))
 }

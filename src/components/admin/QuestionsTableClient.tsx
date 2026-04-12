@@ -111,7 +111,7 @@ const QuestionRow = ({
           <QuestionQuickPreview
             stem={question.text}
             options={opts && opts.length > 0 ? opts : ['', '', '', '']}
-            correctAnswer={0}
+            correctAnswer={-1}
             rationale={question.rationale}
             codeCitation={question.code_citation}
           />

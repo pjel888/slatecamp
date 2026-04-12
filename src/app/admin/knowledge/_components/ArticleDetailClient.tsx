@@ -67,7 +67,7 @@ export const ArticleDetailClient = ({
             onClick={() => setDeleteModalOpen(true)}
           >
             <Trash className="w-4 h-4 mr-1.5" />
-            Delete Article
+            Archive Article
           </Button>
         </div>
       </div>

@@ -30,6 +30,7 @@ mock.module('@/lib/supabase/server', () => ({
       auth: { getUser: mockGetUser },
       from: mockFrom,
     }),
+  getUser: mockGetUser,
 }))
 
 const {
@@ -125,8 +126,11 @@ describe('Admin Roles', () => {
       mockProfileRole = null
     }
 
-    test('isAdmin returns true for super_admin', async () => {
+    test('isAdmin returns true for super_admin and owner', async () => {
       mockRole('super_admin')
+      expect(await isAdmin()).toBe(true)
+      
+      mockRole('owner')
       expect(await isAdmin()).toBe(true)
     })
 
@@ -135,25 +139,29 @@ describe('Admin Roles', () => {
       expect(await isAdmin()).toBe(true)
     })
 
-    test('isSuperAdmin returns true only for super_admin', async () => {
+    test('isSuperAdmin returns true for super_admin and owner', async () => {
       mockRole('super_admin')
+      expect(await isSuperAdmin()).toBe(true)
+
+      mockRole('owner')
       expect(await isSuperAdmin()).toBe(true)
 
       mockRole('content_admin')
       expect(await isSuperAdmin()).toBe(false)
     })
 
-    test('canManageContent allows super_admin', async () => {
+    test('canManageContent allows super_admin and owner', async () => {
       mockRole('super_admin')
       expect(await canManageContent()).toBe(true)
-    })
 
-    test('canManageContent allows content_admin', async () => {
-      mockRole('content_admin')
+      mockRole('owner')
       expect(await canManageContent()).toBe(true)
     })
 
-    test('canReviewContent matches all 3 roles', async () => {
+    test('canReviewContent matches multiple staff roles', async () => {
+      mockRole('owner')
+      expect(await canReviewContent()).toBe(true)
+
       mockRole('super_admin')
       expect(await canReviewContent()).toBe(true)
 
@@ -162,10 +170,16 @@ describe('Admin Roles', () => {
 
       mockRole('sme_reviewer')
       expect(await canReviewContent()).toBe(true)
+      
+      mockRole('developer')
+      expect(await canReviewContent()).toBe(true)
     })
 
-    test('canManageUsers returns true only for super_admin', async () => {
+    test('canManageUsers returns true for super_admin and owner', async () => {
       mockRole('super_admin')
+      expect(await canManageUsers()).toBe(true)
+
+      mockRole('owner')
       expect(await canManageUsers()).toBe(true)
 
       mockRole('content_admin')

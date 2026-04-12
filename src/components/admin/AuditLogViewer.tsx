@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react'
 import { MagnifyingGlass, DownloadSimple, CaretDown, CaretRight } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { getAuditLogsAction, type AuditLog } from '@/lib/audit/audit-actions'
+import type { AuditFeedMode } from '@/lib/audit/audit-queries'
 import { EventBadge } from '@/components/shared/event-badge'
 import {
   Select,
@@ -15,6 +16,7 @@ import {
 
 export function AuditLogViewer() {
   const [logs, setLogs] = useState<AuditLog[]>([])
+  const [mode, setMode] = useState<AuditFeedMode>('real')
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
   const [searchQuery, setSearchQuery] = useState('')
@@ -29,12 +31,13 @@ export function AuditLogViewer() {
   const loadLogs = async () => {
     setLoading(true)
     try {
-      const data = await getAuditLogsAction({
+      const result = await getAuditLogsAction({
         tableName: tableFilter || undefined,
         eventType: eventFilter || undefined,
         limit: 100,
       })
-      setLogs(data)
+      setLogs(result.logs)
+      setMode(result.mode)
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to load audit logs')
     } finally {
@@ -52,6 +55,11 @@ export function AuditLogViewer() {
   return (
     <div className="space-y-4">
       {/* Filters */}
+      {mode === 'fallback' ? (
+        <div className="rounded-md border border-warning/30 bg-warning-50 px-4 py-3 text-sm text-warning-700">
+          Real `audit_logs` are unavailable in this environment. Showing a synthesized operational history feed from admin-managed tables instead.
+        </div>
+      ) : null}
       <div className="flex gap-4">
         <div className="flex-1 relative">
           <SCIcon icon={MagnifyingGlass} size="sm" className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />
