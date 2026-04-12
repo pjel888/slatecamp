@@ -8,6 +8,7 @@ import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { formatRelativeTime } from '@/lib/utils/format-time'
+import { REVIEW_QUEUE_STATUSES } from '@/lib/admin/editor-workflow'
 import {
   Select,
   SelectContent,
@@ -15,6 +16,9 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select'
+import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from '@/components/ui/dialog'
+import { Textarea } from '@/components/ui/textarea'
+import { approveWikiArticleReview, requestWikiArticleChanges } from '@/lib/actions/admin/wiki'
 
 interface PendingItem {
   id: string
@@ -22,6 +26,7 @@ interface PendingItem {
   title: string
   slug: string | null
   updated_at: string
+  status?: string | null
 }
 
 interface DialogState {
@@ -35,6 +40,8 @@ export const SMEReviewQueue = () => {
   const [typeFilter, setTypeFilter] = useState<string>('')
   const [error, setError] = useState<string | null>(null)
   const [dialog, setDialog] = useState<DialogState>({ type: null, item: null })
+  const [reviewerComments, setReviewerComments] = useState('')
+  const [isSubmitting, setIsSubmitting] = useState(false)
 
   useEffect(() => {
     loadPendingItems()
@@ -46,7 +53,7 @@ export const SMEReviewQueue = () => {
     const { data: wikiData } = await supabase
       .from('wiki_articles')
       .select('article_id, title, slug, status, updated_at')
-      .eq('status', 'review')
+      .in('status', [...REVIEW_QUEUE_STATUSES])
       .order('updated_at', { ascending: false })
       .limit(20)
 
@@ -56,6 +63,7 @@ export const SMEReviewQueue = () => {
       title: a.title || 'Untitled',
       slug: a.slug ?? null,
       updated_at: a.updated_at,
+      status: a.status,
     }))
 
     setItems(wikiItems)
@@ -68,15 +76,42 @@ export const SMEReviewQueue = () => {
 
   const openApprove = (item: PendingItem) => {
     setError(null)
+    setReviewerComments('')
     setDialog({ type: 'approve', item })
   }
 
   const openChanges = (item: PendingItem) => {
     setError(null)
+    setReviewerComments('')
     setDialog({ type: 'changes', item })
   }
 
-  const closeDialog = () => setDialog({ type: null, item: null })
+  const closeDialog = () => {
+    if (isSubmitting) return
+    setDialog({ type: null, item: null })
+    setReviewerComments('')
+  }
+
+  const handleDialogSubmit = async () => {
+    if (!dialog.item || dialog.item.type !== 'wiki') return
+
+    setIsSubmitting(true)
+    setError(null)
+    try {
+      if (dialog.type === 'approve') {
+        await approveWikiArticleReview(dialog.item.id, reviewerComments)
+      } else if (dialog.type === 'changes') {
+        await requestWikiArticleChanges(dialog.item.id, reviewerComments)
+      }
+
+      handleItemRemoved(dialog.item.id)
+      closeDialog()
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Review action failed')
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
 
   const filteredItems = items.filter((item) =>
     typeFilter ? item.type === typeFilter : true,
@@ -205,6 +240,54 @@ export const SMEReviewQueue = () => {
           </div>
         )}
       </div>
+
+      <Dialog open={!!dialog.type} onOpenChange={closeDialog}>
+        <DialogContent>
+          <DialogHeader>
+            <DialogTitle>
+              {dialog.type === 'approve' ? 'Approve article' : 'Request changes'}
+            </DialogTitle>
+            <DialogDescription>
+              {dialog.item
+                ? `Review action for "${dialog.item.title}".`
+                : 'Review action'}
+            </DialogDescription>
+          </DialogHeader>
+
+          <div className="space-y-2">
+            <label className="text-sm font-medium text-foreground">
+              Reviewer comments
+            </label>
+            <Textarea
+              value={reviewerComments}
+              onChange={(e) => setReviewerComments(e.target.value)}
+              placeholder={
+                dialog.type === 'approve'
+                  ? 'Optional approval notes'
+                  : 'Describe the required changes'
+              }
+              rows={4}
+            />
+          </div>
+
+          <DialogFooter>
+            <Button variant="outline" onClick={closeDialog} disabled={isSubmitting}>
+              Cancel
+            </Button>
+            <Button
+              variant={dialog.type === 'approve' ? 'success' : 'secondary'}
+              onClick={handleDialogSubmit}
+              disabled={isSubmitting || (dialog.type === 'changes' && !reviewerComments.trim())}
+            >
+              {isSubmitting
+                ? 'Saving...'
+                : dialog.type === 'approve'
+                  ? 'Approve'
+                  : 'Request Changes'}
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
     </>
   )
 }

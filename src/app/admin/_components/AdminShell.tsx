@@ -12,6 +12,8 @@ const adminPages = [
   { title: 'Dashboard', href: '/admin/dashboard', group: 'Overview' },
   { title: 'Knowledge Browser', href: '/admin/knowledge', group: 'Knowledge Base' },
   { title: 'Question Bank', href: '/admin/knowledge/questions', group: 'Knowledge Base' },
+  { title: 'Design Problem Questions', href: '/admin/knowledge/questions/design-problems', group: 'Knowledge Base' },
+  { title: 'Scenario Questions', href: '/admin/knowledge/questions/scenarios', group: 'Knowledge Base' },
   { title: 'Create Question', href: '/admin/knowledge/questions/new', group: 'Knowledge Base' },
   { title: 'Import Content', href: '/admin/knowledge/import', group: 'Knowledge Base' },
   { title: 'Quality Analytics', href: '/admin/knowledge/analytics', group: 'Knowledge Base' },
@@ -57,6 +59,8 @@ const adminNavItems: NavGroup[] = [
         icon: <Question className="w-3.5 h-3.5" />,
         children: [
           { label: 'All Questions', href: '/admin/knowledge/questions' },
+          { label: 'Design Problem Questions', href: '/admin/knowledge/questions/design-problems' },
+          { label: 'Scenario Questions', href: '/admin/knowledge/questions/scenarios' },
           { label: 'Create New', href: '/admin/knowledge/questions/new' },
           { label: 'Import', href: '/admin/knowledge/import' },
           { label: 'Quality Analytics', href: '/admin/knowledge/analytics' },

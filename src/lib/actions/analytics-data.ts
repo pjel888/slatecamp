@@ -1,7 +1,7 @@
 'use server'
 
 import { unstable_cache } from 'next/cache'
-import { createClient, getUser } from '@/lib/supabase/server'
+import { createClient, getUser, createServiceClient } from '@/lib/supabase/server'
 import { WEAKEST_TOPICS_MIN_ATTEMPTS, WEAKEST_TOPICS_LIMIT } from '@/lib/constants/analytics'
 import { fetchTaxonomyNodeMap, buildLevel1Resolver, type TaxNode, wrapResult, wrapError, type AnalyticsResult } from '@/lib/actions/analytics/shared-helpers'
 
@@ -61,7 +61,7 @@ export interface StudyActivityDay {
 
 const getAccuracyBySubjectInternal = async (userId: string): Promise<AnalyticsResult<AccuracyBySubjectItem[]>> => {
   try {
-    const supabase = await createClient()
+    const supabase = await createServiceClient()
 
     const ninetyDaysAgo = new Date(Date.now() - 90 * 24 * 60 * 60 * 1000).toISOString()
 

@@ -1,11 +1,14 @@
 'use server'
 
 import { createClient } from '@/lib/supabase/server'
+import { isExceptionQuestionType } from '@/lib/admin/editor-integrity/standard-question'
 
 export interface Question {
   question_id: string
   text: string
   topic_id: string
+  article_id?: string | null
+  question_type?: string | null
   difficulty: number | null
   rationale: string | null
   options: unknown[] | null
@@ -25,7 +28,7 @@ export const getQuestions = async (
 
   const { data, error, count } = await supabase
     .from('questions')
-    .select('question_id, text, topic_id, difficulty, rationale, options, code_citation, created_at, updated_at', {
+    .select('question_id, text, topic_id, article_id, question_type, difficulty, rationale, options, code_citation, created_at, updated_at', {
       count: 'exact',
       head: false,
     })
@@ -68,7 +71,7 @@ export const getQuestionsGroupedByArticle = async (
   // Step 1: Fetch paginated questions
   const { data: questions, error: qError, count } = await supabase
     .from('questions')
-    .select('question_id, text, topic_id, difficulty, rationale, options, code_citation, created_at, updated_at', {
+    .select('question_id, text, topic_id, article_id, question_type, difficulty, rationale, options, code_citation, created_at, updated_at', {
       count: 'exact',
       head: false,
     })
@@ -81,14 +84,28 @@ export const getQuestionsGroupedByArticle = async (
     return { data: [], totalCount: 0 }
   }
 
-  // Step 2: Collect unique topic_ids and resolve them to articles
+  // Step 2: Resolve direct article ownership first, fall back to topic mappings when needed
+  const directArticleIds = [...new Set(questions.map((q) => q.article_id).filter(Boolean))]
   const topicIds = [...new Set(questions.map((q) => q.topic_id).filter(Boolean))]
 
-  // Map: topic_id -> { article_id, title, status }
-  const topicToArticle = new Map<string, { articleId: string; articleTitle: string; articleStatus: string }>()
+  const articleMap = new Map<string, { articleId: string; articleTitle: string; articleStatus: string }>()
+  if (directArticleIds.length > 0) {
+    const { data: directArticles } = await supabase
+      .from('wiki_articles')
+      .select('article_id, title, status')
+      .in('article_id', directArticleIds)
 
+    for (const article of directArticles ?? []) {
+      articleMap.set(article.article_id, {
+        articleId: article.article_id,
+        articleTitle: article.title,
+        articleStatus: article.status ?? 'draft',
+      })
+    }
+  }
+
+  const topicToArticle = new Map<string, { articleId: string; articleTitle: string; articleStatus: string }>()
   if (topicIds.length > 0) {
-    // Join taxonomy_tree -> wiki_article_taxonomy -> wiki_articles
     const { data: mappings, error: mError } = await supabase
       .from('wiki_article_taxonomy')
       .select('node_id, article_id, wiki_articles!inner(article_id, title, status)')
@@ -113,8 +130,12 @@ export const getQuestionsGroupedByArticle = async (
   const unassignedKey = '__unassigned__'
 
   for (const q of questions) {
-    const mapping = q.topic_id ? topicToArticle.get(q.topic_id) : undefined
-
+    const directArticle = q.article_id ? articleMap.get(q.article_id) : undefined
+    const mapping =
+      directArticle ||
+      (isExceptionQuestionType(q.question_type) && q.topic_id
+        ? topicToArticle.get(q.topic_id)
+        : undefined)
     const key = mapping ? mapping.articleId : unassignedKey
     const existing = groupMap.get(key)
 
@@ -156,7 +177,7 @@ export const getQuestionsByTopicIds = async (
   // Build query
   let query = supabase
     .from('questions')
-    .select('question_id, text, topic_id, difficulty, rationale, options, code_citation, created_at, updated_at')
+    .select('question_id, text, topic_id, article_id, question_type, difficulty, rationale, options, code_citation, created_at, updated_at')
 
   if (topicIds.length > 0) {
     query = query.in('topic_id', topicIds)
@@ -179,7 +200,26 @@ export const getQuestionsByTopicIds = async (
       : q.rationale || ''
   }))
 
-  // Resolve articles for these topics
+  // Resolve direct article ownership first
+  const directArticleIds = [...new Set(normalizedQuestions.map(q => q.article_id).filter(Boolean))]
+  const articleMap = new Map<string, { articleId: string; articleTitle: string; articleStatus: string }>()
+
+  if (directArticleIds.length > 0) {
+    const { data: directArticles } = await supabase
+      .from('wiki_articles')
+      .select('article_id, title, status')
+      .in('article_id', directArticleIds)
+
+    for (const article of directArticles ?? []) {
+      articleMap.set(article.article_id, {
+        articleId: article.article_id,
+        articleTitle: article.title,
+        articleStatus: article.status ?? 'draft',
+      })
+    }
+  }
+
+  // Resolve articles for these topics when direct ownership is absent
   const uniqueTopics = [...new Set(normalizedQuestions.map(q => q.topic_id).filter(Boolean))]
   const topicToArticle = new Map<string, { articleId: string; articleTitle: string; articleStatus: string }>()
 
@@ -206,7 +246,12 @@ export const getQuestionsByTopicIds = async (
   // Group by article
   const groupMap = new Map<string, ArticleGroup>()
   for (const q of normalizedQuestions) {
-    const mapping = q.topic_id ? topicToArticle.get(q.topic_id) : undefined
+    const directArticle = q.article_id ? articleMap.get(q.article_id) : undefined
+    const mapping =
+      directArticle ||
+      (isExceptionQuestionType(q.question_type) && q.topic_id
+        ? topicToArticle.get(q.topic_id)
+        : undefined)
     const key = mapping ? mapping.articleId : '__unassigned__'
     const existing = groupMap.get(key)
     if (existing) {
@@ -364,7 +409,7 @@ export const getQuestion = async (id: string) => {
 
   const { data, error } = await supabase
     .from('questions')
-    .select('id:question_id, text, topic_id, options, correct_option_id, rationale, difficulty')
+    .select('id:question_id, text, topic_id, article_id, question_type, options, correct_option_id, rationale, difficulty')
     .eq('question_id', id)
     .single()
 
@@ -375,7 +420,7 @@ export const getQuestion = async (id: string) => {
   // Parse correct_option_id back to number for editor
   return {
     ...data,
-    correct_option_id: parseInt(data.correct_option_id as string) || 0,
+    correct_option_id: data.correct_option_id,
     rationale: typeof data.rationale === 'object' && data.rationale !== null 
       ? (data.rationale as any).text || JSON.stringify(data.rationale)
       : data.rationale || ''

@@ -1,8 +1,10 @@
 import { normalizeOptions } from '@/lib/utils/question'
 import type { QuestionForClient } from '@/types/quiz-config'
+import { filterQuestionsReadableForStage } from '@/lib/admin/editor-integrity/standard-question'
 
 export interface QuestionForClientRow {
   question_id: string
+  article_id?: string | null
   topic_id: string | null
   text: string
   options: unknown
@@ -96,7 +98,7 @@ export const fetchQuestionsForClient = async ({
   const { data: questions, error } = await supabase
     .from('questions')
     .select(
-      'question_id, topic_id, text, options, difficulty, prompt_image_url, question_type, hint_text',
+      'question_id, article_id, topic_id, text, options, difficulty, prompt_image_url, question_type, hint_text',
     )
     .in('question_id', questionIds)
 
@@ -105,13 +107,24 @@ export const fetchQuestionsForClient = async ({
     return []
   }
 
+  const { questions: readableQuestions, error: readableQuestionsError } =
+    await filterQuestionsReadableForStage<QuestionForClientRow>(supabase, questions, 'delivery')
+
+  if (readableQuestionsError) {
+    console.error('[fetchQuestionsForClient] DELIVERY FILTER FAILED:', {
+      error: readableQuestionsError,
+      idCount: questionIds.length,
+    })
+    return []
+  }
+
   const breadcrumbs = await buildTaxonomyBreadcrumbMap(
     supabase,
-    (questions as Array<{ topic_id: string | null }>).map((question) => question.topic_id ?? ''),
+    readableQuestions.map((question) => question.topic_id ?? ''),
   )
 
   const questionMap = new Map(
-    (questions as QuestionForClientRow[]).map((question) => [question.question_id, question]),
+    readableQuestions.map((question) => [question.question_id, question]),
   )
 
   return questionIds

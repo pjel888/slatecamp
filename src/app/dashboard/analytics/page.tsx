@@ -1,8 +1,6 @@
 // Analytics Page — Server Component
 // layout.tsx provides SharedPageLayout — do NOT re-wrap here.
-import { Suspense } from 'react'
-import { ChartSkeleton } from '@/components/analytics/ChartSkeleton'
-import { AnalyticsErrorBoundary } from '@/components/analytics/AnalyticsErrorBoundary'
+import { AnalyticsChartContainer } from '@/components/shared/analytics-chart-container'
 import { ReadinessSection } from '@/components/analytics/ReadinessSection'
 import { ExamCountdownSection } from '@/components/analytics/ExamCountdownSection'
 import { PacingQuadrantSection } from '@/components/analytics/PacingQuadrantSection'
@@ -34,194 +32,124 @@ export default function AnalyticsPage() {
   return (
     <div className="flex flex-col gap-2">
       {/* Top Row: Readiness Score + Exam Countdown */}
-      <Suspense fallback={
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-          <ChartSkeleton height="h-[220px]" type="bar" />
-          <ChartSkeleton height="h-[220px]" />
-        </div>
-      }>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-          <AnalyticsErrorBoundary fallbackHeight="h-[220px]">
-            <ReadinessSection />
-          </AnalyticsErrorBoundary>
-          <AnalyticsErrorBoundary fallbackHeight="h-[220px]">
-            <ExamCountdownSection />
-          </AnalyticsErrorBoundary>
-        </div>
-      </Suspense>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+        <AnalyticsChartContainer fallbackHeight="h-[220px]" skeletonType="bar">
+          <ReadinessSection />
+        </AnalyticsChartContainer>
+        <AnalyticsChartContainer fallbackHeight="h-[220px]">
+          <ExamCountdownSection />
+        </AnalyticsChartContainer>
+      </div>
 
       {/* Study Timeline Heatmap */}
-      <Suspense key="timeline" fallback={<ChartSkeleton height="h-[140px]" />}>
-        <AnalyticsErrorBoundary fallbackHeight="h-[140px]">
-          <TimelineHeatmapSection />
-        </AnalyticsErrorBoundary>
-      </Suspense>
+      <AnalyticsChartContainer suspenseKey="timeline" fallbackHeight="h-[140px]">
+        <TimelineHeatmapSection />
+      </AnalyticsChartContainer>
 
       {/* Session Performance Over Time */}
-      <Suspense key="session-history" fallback={<ChartSkeleton height="h-[260px]" type="line" />}>
-        <AnalyticsErrorBoundary fallbackHeight="h-[260px]">
-          <SessionHistorySection />
-        </AnalyticsErrorBoundary>
-      </Suspense>
+      <AnalyticsChartContainer suspenseKey="session-history" fallbackHeight="h-[260px]" skeletonType="line">
+        <SessionHistorySection />
+      </AnalyticsChartContainer>
 
       {/* Monthly Progress Card + Simulation Trajectory */}
-      <Suspense fallback={
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-          <ChartSkeleton height="h-[280px]" />
-          <ChartSkeleton height="h-[280px]" type="line" />
-        </div>
-      }>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-          <AnalyticsErrorBoundary fallbackHeight="h-[280px]">
-            <ProgressCardSection />
-          </AnalyticsErrorBoundary>
-          <AnalyticsErrorBoundary fallbackHeight="h-[280px]">
-            <SimulationTrajectorySection />
-          </AnalyticsErrorBoundary>
-        </div>
-      </Suspense>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+        <AnalyticsChartContainer fallbackHeight="h-[280px]">
+          <ProgressCardSection />
+        </AnalyticsChartContainer>
+        <AnalyticsChartContainer fallbackHeight="h-[280px]" skeletonType="line">
+          <SimulationTrajectorySection />
+        </AnalyticsChartContainer>
+      </div>
 
       {/* Performance: Pacing Quadrant + Stamina Curve */}
-      <Suspense fallback={
-        <div className="grid grid-cols-1 xl:grid-cols-12 gap-2">
-          <div className="xl:col-span-7"><ChartSkeleton height="h-[360px]" /></div>
-          <div className="xl:col-span-5"><ChartSkeleton height="h-[360px]" type="line" /></div>
+      <div className="grid grid-cols-1 xl:grid-cols-12 gap-2">
+        <div className="xl:col-span-7">
+          <AnalyticsChartContainer fallbackHeight="h-[360px]">
+            <PacingQuadrantSection />
+          </AnalyticsChartContainer>
         </div>
-      }>
-        <div className="grid grid-cols-1 xl:grid-cols-12 gap-2">
-          <div className="xl:col-span-7">
-            <AnalyticsErrorBoundary fallbackHeight="h-[360px]">
-              <PacingQuadrantSection />
-            </AnalyticsErrorBoundary>
-          </div>
-          <div className="xl:col-span-5">
-            <AnalyticsErrorBoundary fallbackHeight="h-[360px]">
-              <StaminaSection />
-            </AnalyticsErrorBoundary>
-          </div>
+        <div className="xl:col-span-5">
+          <AnalyticsChartContainer fallbackHeight="h-[360px]" skeletonType="line">
+            <StaminaSection />
+          </AnalyticsChartContainer>
         </div>
-      </Suspense>
+      </div>
 
       {/* Performance: Stamina Heatmap + Difficulty vs Mastery */}
-      <Suspense fallback={
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-          <ChartSkeleton height="h-[340px]" />
-          <ChartSkeleton height="h-[340px]" />
-        </div>
-      }>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-          <AnalyticsErrorBoundary fallbackHeight="h-[340px]">
-            <StaminaHeatmapSection />
-          </AnalyticsErrorBoundary>
-          <AnalyticsErrorBoundary fallbackHeight="h-[340px]">
-            <DifficultyMasterySection />
-          </AnalyticsErrorBoundary>
-        </div>
-      </Suspense>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+        <AnalyticsChartContainer fallbackHeight="h-[340px]">
+          <StaminaHeatmapSection />
+        </AnalyticsChartContainer>
+        <AnalyticsChartContainer fallbackHeight="h-[340px]">
+          <DifficultyMasterySection />
+        </AnalyticsChartContainer>
+      </div>
 
       {/* Accuracy by Subject + Response Time Distribution */}
-      <Suspense fallback={
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-          <ChartSkeleton height="h-[280px]" type="bar" />
-          <ChartSkeleton height="h-[280px]" />
-        </div>
-      }>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-          <AnalyticsErrorBoundary fallbackHeight="h-[280px]">
-            <AccuracyBySubjectSection />
-          </AnalyticsErrorBoundary>
-          <AnalyticsErrorBoundary fallbackHeight="h-[280px]">
-            <TimeSpentDistributionSection />
-          </AnalyticsErrorBoundary>
-        </div>
-      </Suspense>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+        <AnalyticsChartContainer fallbackHeight="h-[280px]" skeletonType="bar">
+          <AccuracyBySubjectSection />
+        </AnalyticsChartContainer>
+        <AnalyticsChartContainer fallbackHeight="h-[280px]">
+          <TimeSpentDistributionSection />
+        </AnalyticsChartContainer>
+      </div>
 
       {/* Learning: Forgetting Curves + Study Velocity */}
-      <Suspense fallback={
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-          <ChartSkeleton height="h-[320px]" type="line" />
-          <ChartSkeleton height="h-[320px]" />
-        </div>
-      }>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-          <AnalyticsErrorBoundary fallbackHeight="h-[320px]">
-            <ForgettingCurvesSection />
-          </AnalyticsErrorBoundary>
-          <AnalyticsErrorBoundary fallbackHeight="h-[320px]">
-            <StudyVelocitySection />
-          </AnalyticsErrorBoundary>
-        </div>
-      </Suspense>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+        <AnalyticsChartContainer fallbackHeight="h-[320px]" skeletonType="line">
+          <ForgettingCurvesSection />
+        </AnalyticsChartContainer>
+        <AnalyticsChartContainer fallbackHeight="h-[320px]">
+          <StudyVelocitySection />
+        </AnalyticsChartContainer>
+      </div>
 
       {/* Subject Radar + Memory Health + Pacing Insights */}
-      <Suspense fallback={
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
-          <ChartSkeleton height="h-[320px]" />
-          <ChartSkeleton height="h-[320px]" />
-          <ChartSkeleton height="h-[320px]" />
-        </div>
-      }>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
-          <AnalyticsErrorBoundary fallbackHeight="h-[320px]">
-            <RadarSection />
-          </AnalyticsErrorBoundary>
-          <AnalyticsErrorBoundary fallbackHeight="h-[320px]">
-            <MemorySection />
-          </AnalyticsErrorBoundary>
-          <AnalyticsErrorBoundary fallbackHeight="h-[320px]">
-            <PacingInsightsSection />
-          </AnalyticsErrorBoundary>
-        </div>
-      </Suspense>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
+        <AnalyticsChartContainer fallbackHeight="h-[320px]">
+          <RadarSection />
+        </AnalyticsChartContainer>
+        <AnalyticsChartContainer fallbackHeight="h-[320px]">
+          <MemorySection />
+        </AnalyticsChartContainer>
+        <AnalyticsChartContainer fallbackHeight="h-[320px]">
+          <PacingInsightsSection />
+        </AnalyticsChartContainer>
+      </div>
 
       {/* Behavioral: Session Pacing vs Accuracy */}
-      <Suspense key="pacing-accuracy" fallback={<ChartSkeleton height="h-[340px]" />}>
-        <AnalyticsErrorBoundary fallbackHeight="h-[340px]">
-          <PacingAccuracySection />
-        </AnalyticsErrorBoundary>
-      </Suspense>
+      <AnalyticsChartContainer suspenseKey="pacing-accuracy" fallbackHeight="h-[340px]">
+        <PacingAccuracySection />
+      </AnalyticsChartContainer>
 
       {/* Calibration Score (Brier) + Confidence Calibration + Study Activity Calendar */}
-      <Suspense fallback={
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
-          <ChartSkeleton height="h-[280px]" />
-          <ChartSkeleton height="h-[280px]" />
-          <ChartSkeleton height="h-[280px]" />
-        </div>
-      }>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
-          <AnalyticsErrorBoundary fallbackHeight="h-[280px]">
-            <CalibrationScoreSection />
-          </AnalyticsErrorBoundary>
-          <AnalyticsErrorBoundary fallbackHeight="h-[280px]">
-            <ConfidenceCalibrationSection />
-          </AnalyticsErrorBoundary>
-          <AnalyticsErrorBoundary fallbackHeight="h-[280px]">
-            <StudyStreakCalendarSection />
-          </AnalyticsErrorBoundary>
-        </div>
-      </Suspense>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
+        <AnalyticsChartContainer fallbackHeight="h-[280px]">
+          <CalibrationScoreSection />
+        </AnalyticsChartContainer>
+        <AnalyticsChartContainer fallbackHeight="h-[280px]">
+          <ConfidenceCalibrationSection />
+        </AnalyticsChartContainer>
+        <AnalyticsChartContainer fallbackHeight="h-[280px]">
+          <StudyStreakCalendarSection />
+        </AnalyticsChartContainer>
+      </div>
 
       {/* Topics to Focus On */}
-      <Suspense key="weakest-topics" fallback={<ChartSkeleton height="h-[320px]" type="bar" />}>
-        <AnalyticsErrorBoundary fallbackHeight="h-[320px]">
-          <WeakestTopicsSection />
-        </AnalyticsErrorBoundary>
-      </Suspense>
+      <AnalyticsChartContainer suspenseKey="weakest-topics" fallbackHeight="h-[320px]" skeletonType="bar">
+        <WeakestTopicsSection />
+      </AnalyticsChartContainer>
 
       {/* Error Pattern Distribution */}
-      <Suspense key="error-patterns" fallback={<ChartSkeleton height="h-[320px]" />}>
-        <AnalyticsErrorBoundary fallbackHeight="h-[320px]">
-          <ErrorPatternsSection />
-        </AnalyticsErrorBoundary>
-      </Suspense>
+      <AnalyticsChartContainer suspenseKey="error-patterns" fallbackHeight="h-[320px]">
+        <ErrorPatternsSection />
+      </AnalyticsChartContainer>
 
       {/* Exam Outcome Self-Report */}
-      <Suspense key="exam-outcome" fallback={<ChartSkeleton height="h-[280px]" />}>
-        <AnalyticsErrorBoundary fallbackHeight="h-[280px]">
-          <ExamOutcomeSection />
-        </AnalyticsErrorBoundary>
-      </Suspense>
+      <AnalyticsChartContainer suspenseKey="exam-outcome" fallbackHeight="h-[280px]">
+        <ExamOutcomeSection />
+      </AnalyticsChartContainer>
     </div>
   )
 }

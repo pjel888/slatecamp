@@ -2,9 +2,11 @@
 
 import { useState, useTransition } from 'react'
 import { useRouter } from 'next/navigation'
-import { Copy, Check, ArrowLeft, SignOut, Crown, TrendUp, TrendDown, Minus } from '@phosphor-icons/react'
+import { Copy, Check, ArrowLeft, SignOut, Crown } from '@phosphor-icons/react'
 import { cn } from '@/lib/utils'
 import { Button } from '@/components/ui/button'
+import { DeltaBadge } from '@/components/shared/delta-badge'
+import { UserAvatar } from '@/components/shared/user-avatar'
 import { leavePod } from '@/lib/actions/pods'
 import type { PodData } from '@/lib/actions/pods'
 
@@ -13,69 +15,6 @@ import type { PodData } from '@/lib/actions/pods'
 interface PodViewProps {
   pod: PodData
   currentUserId: string
-}
-
-// ─── Score Delta Badge ────────────────────────────────────────────────────────
-
-const DeltaBadge = ({ delta }: { delta: number }) => {
-  if (delta > 0) {
-    return (
-      <span className="inline-flex items-center gap-0.5 rounded-sm bg-success-50 px-1.5 py-0.5 text-xs font-medium text-success">
-        <TrendUp size={12} aria-hidden="true" />
-        +{delta}%
-      </span>
-    )
-  }
-  if (delta < 0) {
-    return (
-      <span className="inline-flex items-center gap-0.5 rounded-sm bg-destructive-50 px-1.5 py-0.5 text-xs font-medium text-destructive">
-        <TrendDown size={12} aria-hidden="true" />
-        {delta}%
-      </span>
-    )
-  }
-  return (
-    <span className="inline-flex items-center gap-0.5 rounded-sm bg-background px-1.5 py-0.5 text-xs font-medium text-muted-foreground">
-      <Minus size={12} aria-hidden="true" />
-      0%
-    </span>
-  )
-}
-
-// ─── Avatar ───────────────────────────────────────────────────────────────────
-
-const MemberAvatar = ({
-  displayName,
-  avatarUrl,
-}: {
-  displayName: string | null
-  avatarUrl: string | null
-}) => {
-  const initials = displayName
-    ? displayName
-        .split(' ')
-        .map((w) => w[0])
-        .slice(0, 2)
-        .join('')
-        .toUpperCase()
-    : '?'
-
-  if (avatarUrl) {
-    return (
-      // eslint-disable-next-line @next/next/no-img-element
-      <img
-        src={avatarUrl}
-        alt={displayName ?? 'Member'}
-        className="h-8 w-8 rounded-full object-cover"
-      />
-    )
-  }
-
-  return (
-    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary-50 text-xs font-semibold text-primary">
-      {initials}
-    </div>
-  )
 }
 
 // ─── Component ───────────────────────────────────────────────────────────────
@@ -177,7 +116,7 @@ export const PodView = ({ pod, currentUserId }: PodViewProps) => {
                 )}
               >
                 <div className="flex items-center gap-3 min-w-0">
-                  <MemberAvatar
+                  <UserAvatar
                     displayName={member.display_name}
                     avatarUrl={member.avatar_url}
                   />

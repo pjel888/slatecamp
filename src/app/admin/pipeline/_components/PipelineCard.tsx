@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button'
 import { ConfirmDialog } from '@/components/ui/dialog'
 import { updateArticleStatus } from '@/lib/actions/admin/pipeline'
 import { formatRelativeTime } from '@/lib/utils/format-time'
+import { normalizeEditorStatus } from '@/lib/admin/editor-workflow'
 
 /* ------------------------------------------------------------------ */
 /*  Types                                                              */
@@ -20,7 +21,7 @@ interface PipelineArticle {
   created_at: string
 }
 
-type PipelineStatus = 'draft' | 'review' | 'published'
+type PipelineStatus = 'draft' | 'in_review' | 'approved' | 'published'
 
 interface PipelineCardProps {
   article: PipelineArticle
@@ -44,12 +45,26 @@ const STATUS_ACTIONS: Record<PipelineStatus, StatusAction[]> = {
   draft: [
     {
       label: 'Move to Review →',
-      targetStatus: 'review',
+      targetStatus: 'in_review',
       variant: 'default',
       requiresConfirm: false,
     },
   ],
-  review: [
+  in_review: [
+    {
+      label: 'Approve →',
+      targetStatus: 'approved',
+      variant: 'default',
+      requiresConfirm: false,
+    },
+    {
+      label: '← Back to Draft',
+      targetStatus: 'draft',
+      variant: 'ghost',
+      requiresConfirm: false,
+    },
+  ],
+  approved: [
     {
       label: 'Publish →',
       targetStatus: 'published',
@@ -83,6 +98,7 @@ const STATUS_ACTIONS: Record<PipelineStatus, StatusAction[]> = {
 export const PipelineCard = ({ article, columnKey }: PipelineCardProps) => {
   const [isPending, startTransition] = useTransition()
   const [confirmAction, setConfirmAction] = useState<StatusAction | null>(null)
+  const normalizedStatus = normalizeEditorStatus(article.status) as PipelineStatus
 
   const handleAction = (action: StatusAction) => {
     if (action.requiresConfirm) {
@@ -108,7 +124,7 @@ export const PipelineCard = ({ article, columnKey }: PipelineCardProps) => {
     <>
       <div
         className="rounded-md border border-border bg-card p-2.5 transition-colors duration-150 hover:border-primary/30 hover:bg-muted/50"
-        aria-label={`${article.title} — ${columnKey}`}
+        aria-label={`${article.title} — ${normalizedStatus}`}
       >
         <Link
           href={`/admin/knowledge/${article.article_id}`}

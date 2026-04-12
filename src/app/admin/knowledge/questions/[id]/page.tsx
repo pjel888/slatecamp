@@ -1,6 +1,6 @@
 import { redirect, notFound } from 'next/navigation'
 import { ROUTES } from '@/lib/routes'
-import { canManageContent } from '@/lib/admin/roles'
+import { canManageContent, canReviewContent } from '@/lib/admin/roles'
 import { createClient } from '@/lib/supabase/server'
 import { QuestionEditor } from '@/components/admin/QuestionEditor'
 import { Breadcrumb } from '@/components/ui/breadcrumb'
@@ -13,6 +13,7 @@ import { Eyebrow } from '@/components/ui/eyebrow'
 import { compileMDX } from 'next-mdx-remote/rsc'
 import remarkGfm from 'remark-gfm'
 import { sanitizeMDX } from '@/lib/wiki-markdown'
+import { isExceptionQuestionType, normalizeQuestionType } from '@/lib/admin/editor-integrity/standard-question'
 import { Note, Warn, Tip, Example, Callout, AlertBox, CalloutBox, AuthorityContent, GenericBlock, SPP206RefServices, SPP207RefServices } from '@/components/wiki'
 
 interface PageProps {
@@ -81,8 +82,11 @@ const ArticlePreview = async ({ content }: { content: string }) => {
 }
 
 const QuestionDetailPage = async ({ params }: PageProps) => {
-  const authorized = await canManageContent()
-  if (!authorized) redirect(ROUTES.admin.root)
+  const [canManage, canReview] = await Promise.all([
+    canManageContent(),
+    canReviewContent(),
+  ])
+  if (!canManage && !canReview) redirect(ROUTES.admin.root)
 
   const { id } = await params
   
@@ -92,9 +96,16 @@ const QuestionDetailPage = async ({ params }: PageProps) => {
 
   const supabase = await createClient()
 
-  // Find linked article via topic_id
+  const normalizedQuestionType = normalizeQuestionType((question as any).question_type)
+
+  // Find linked article via direct article ownership. Fallback topic mapping is reserved for
+  // exception-class questions that are not directly article-owned.
   let article = null
-  if (question.topic_id) {
+  if ((question as any).article_id) {
+    article = await getArticleFull((question as any).article_id)
+  }
+
+  if (!article && question.topic_id && isExceptionQuestionType(normalizedQuestionType)) {
     const { data: mapping } = await supabase
       .from('wiki_article_taxonomy')
       .select('article_id')
@@ -125,7 +136,19 @@ const QuestionDetailPage = async ({ params }: PageProps) => {
             <h1 className="text-2xl font-bold text-foreground mt-1">Edit Question</h1>
             <p className="text-sm text-muted-foreground mt-1 font-mono">{question.id}</p>
           </div>
-          <QuestionEditor question={question as any} />
+          {!canManage ? (
+            <div className="mb-4 rounded-md border border-primary/20 bg-primary-50 px-4 py-3 text-sm text-primary-700">
+              Reviewer mode is read-only here. Inspect the question and linked article context, then use the review queue to approve or request changes.
+            </div>
+          ) : null}
+          <QuestionEditor
+            readOnly={!canManage}
+            question={{
+              ...(question as any),
+              article_id: article?.article_id ?? (question as any).article_id ?? null,
+              question_type: (question as any).question_type ?? 'mcq',
+            }}
+          />
         </div>
 
         {/* Right: Article Context (40%) - Sticky Reference Pane */}
@@ -152,10 +175,10 @@ const QuestionDetailPage = async ({ params }: PageProps) => {
           ) : (
             <div className="h-full flex flex-col items-center justify-center rounded-lg border-2 border-dashed border-border bg-card/50 p-8 text-center">
               <p className="text-sm text-muted-foreground">
-                This question is not currently linked to a primary article.
+                This question is not currently linked to a direct article owner.
               </p>
               <p className="mt-2 text-[11px] text-text-tertiary">
-                Assign a topic linked to an article to enable context-aware moderation.
+                Standard questions must carry `article_id`. Exception-class questions may use topic context only when supported by their dedicated workflow.
               </p>
             </div>
           )}

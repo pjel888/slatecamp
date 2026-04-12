@@ -41,24 +41,34 @@ export const getDashboardPageData = async (): Promise<DashboardPageData> => {
     return emptyDashboard('there')
   }
 
+  const entitlements = await getViewerEntitlements([
+    ENTITLEMENT_FEATURE_KEYS.readinessScoreLive,
+    ENTITLEMENT_FEATURE_KEYS.questionsUnlimited,
+  ])
+
+  const hasUnlimitedQuestions =
+    entitlements.decisions[ENTITLEMENT_FEATURE_KEYS.questionsUnlimited]?.allowed ?? false
+  const canSeeLiveScore =
+    entitlements.decisions[ENTITLEMENT_FEATURE_KEYS.readinessScoreLive]?.allowed ?? false
+
   // Wrapped in unstable_cache for sub-second performance on study navigation
   // Invalidated via semantic dashboard tags in quiz actions
   return unstable_cache(
-    async () => fetchDashboardData(user),
+    async (u: any, h: boolean, c: boolean) => fetchDashboardData(u, h, c),
     [`dashboard-${user.id}`],
     {
       revalidate: 3600, // 1 hour fallback
       tags: getDashboardCacheTags(user.id),
     }
-  )()
+  )(user, hasUnlimitedQuestions, canSeeLiveScore)
 }
 
-const fetchDashboardData = async (user: any): Promise<DashboardPageData> => {
+const fetchDashboardData = async (
+  user: any,
+  hasUnlimitedQuestions: boolean,
+  canSeeLiveScore: boolean
+): Promise<DashboardPageData> => {
   const supabase = await createServiceClient()
-  const entitlements = await getViewerEntitlements([
-    ENTITLEMENT_FEATURE_KEYS.readinessScoreLive,
-    ENTITLEMENT_FEATURE_KEYS.questionsUnlimited,
-  ])
 
   const firstName =
     user?.user_metadata?.full_name?.split(' ')[0] ??
@@ -228,8 +238,6 @@ const fetchDashboardData = async (user: any): Promise<DashboardPageData> => {
   })
   const scoreUpdatesPromise = globalStatsPromise.then(async ({ data: globalStats }) => {
     const scoreRevealShownAt = globalStats?.score_reveal_shown_at ?? null
-    const canSeeLiveScore =
-      entitlements.decisions[ENTITLEMENT_FEATURE_KEYS.readinessScoreLive]?.allowed ?? false
     if (!scoreRevealShownAt || canSeeLiveScore) return { count: 0 }
 
     return supabase
@@ -371,10 +379,6 @@ const fetchDashboardData = async (user: any): Promise<DashboardPageData> => {
     onboardingState: (() => {
     const assessmentCompletedAt = globalStats?.assessment_completed_at ?? null
     const scoreRevealShownAt = globalStats?.score_reveal_shown_at ?? null
-      const hasUnlimitedQuestions =
-        entitlements.decisions[ENTITLEMENT_FEATURE_KEYS.questionsUnlimited]?.allowed ?? false
-      const canSeeLiveScore =
-        entitlements.decisions[ENTITLEMENT_FEATURE_KEYS.readinessScoreLive]?.allowed ?? false
       const activeEnrollment = activeEnrollmentResult.data
       const isFreeUser = !hasUnlimitedQuestions
       if (!assessmentCompletedAt) return 'needs_assessment'
@@ -384,8 +388,7 @@ const fetchDashboardData = async (user: any): Promise<DashboardPageData> => {
       return 'ready'
     })() as any,
     scoreUpdatesSinceReveal: (scoreUpdatesResult as any).count ?? 0,
-    isFreeUser:
-      !(entitlements.decisions[ENTITLEMENT_FEATURE_KEYS.questionsUnlimited]?.allowed ?? false),
+    isFreeUser: !hasUnlimitedQuestions,
     activeTrailDay: activeEnrollmentResult.data ? {
       dayNumber: activeEnrollmentResult.data.current_day,
       title: (trailDayResult as any).data?.title ?? `Day ${activeEnrollmentResult.data.current_day}`,

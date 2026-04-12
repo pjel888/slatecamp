@@ -4,7 +4,7 @@ import { useEffect, useCallback, useState, useRef } from 'react'
 import { useDirtyState } from './DirtyStateProvider'
 import type { QuestionData, EIPromptData, SaveItemResult } from './types'
 import {
-  updateArticleFull,
+  saveArticleFull,
   updateQuestion,
   createEIPrompt,
   updateEIPrompt,
@@ -29,6 +29,7 @@ interface SaveAllBarProps {
     updated_note?: string
     subject_label?: string
     reviewer_comments?: string
+    node_id?: string | null
     /** The updated_at timestamp when the page first loaded (for conflict detection) */
     initial_updated_at?: string
   }
@@ -37,7 +38,15 @@ interface SaveAllBarProps {
   isSaving: boolean
   setIsSaving: (v: boolean) => void
   setSaveError: (v: string | null) => void
-  onSaveComplete: () => void
+  onArticlePersisted: (payload: {
+    articleId: string
+    slug: string | null
+    created: boolean
+  }) => void
+  onSaveComplete: (payload: {
+    articleId: string
+    created: boolean
+  }) => void
 }
 
 // ─── Component ───────────────────────────────────────────────
@@ -49,6 +58,7 @@ export const SaveAllBar = ({
   isSaving,
   setIsSaving,
   setSaveError,
+  onArticlePersisted,
   onSaveComplete,
 }: SaveAllBarProps) => {
   const dirty = useDirtyState()
@@ -85,39 +95,58 @@ export const SaveAllBar = ({
     setResults([])
 
     const promises: Promise<SaveItemResult>[] = []
+    let persistedArticleId = articleState.article_id
+    let createdArticle = false
+    const needsArticlePersistence =
+      dirty.articleDirty ||
+      (!articleState.article_id &&
+        (dirty.newQuestions.length > 0 || dirty.newEIPrompts.length > 0))
 
     // ── Article ──────────────────────────────────────────────
-    if (dirty.articleDirty) {
+    if (needsArticlePersistence) {
+      const { error, article } = await saveArticleFull({
+        article_id: articleState.article_id || null,
+        title: articleState.title,
+        content: articleState.content,
+        status: articleState.status,
+        node_id: articleState.node_id,
+        difficulty_label: articleState.difficulty_label,
+        lea_tests_you: articleState.lea_tests_you,
+        updated_note: articleState.updated_note,
+        subject_label: articleState.subject_label,
+        reviewer_comments: articleState.reviewer_comments,
+      })
+
+      if (error || !article) {
+        const saveResult: SaveItemResult = {
+          type: 'article',
+          id: articleState.article_id || 'new-article',
+          label: 'Article',
+          success: false,
+          error: error instanceof Error ? error.message : error?.message || 'Unknown error',
+        }
+
+        setResults([saveResult])
+        setSaveError('Article failed to save')
+        setIsSaving(false)
+        return
+      }
+
+      persistedArticleId = article.article_id
+      createdArticle = article.created
+      onArticlePersisted({
+        articleId: article.article_id,
+        slug: article.slug,
+        created: article.created,
+      })
+
       promises.push(
-        (async (): Promise<SaveItemResult> => {
-          try {
-            const { error } = await updateArticleFull(articleState.article_id, {
-              title: articleState.title,
-              content: articleState.content,
-              status: articleState.status,
-              difficulty_label: articleState.difficulty_label,
-              lea_tests_you: articleState.lea_tests_you,
-              updated_note: articleState.updated_note,
-              subject_label: articleState.subject_label,
-              reviewer_comments: articleState.reviewer_comments,
-            })
-            if (error) throw new Error(error.message)
-            return {
-              type: 'article',
-              id: articleState.article_id,
-              label: 'Article',
-              success: true,
-            }
-          } catch (err) {
-            return {
-              type: 'article',
-              id: articleState.article_id,
-              label: 'Article',
-              success: false,
-              error: err instanceof Error ? err.message : 'Unknown error',
-            }
-          }
-        })()
+        Promise.resolve({
+          type: 'article',
+          id: article.article_id,
+          label: article.created ? 'Article (created)' : 'Article',
+          success: true,
+        } satisfies SaveItemResult),
       )
     }
 
@@ -175,7 +204,7 @@ export const SaveAllBar = ({
                 is_correct: o.id === draft.correct_option_id,
               })),
               topic_id: draft.topic_id,
-              article_id: draft.article_id,
+              article_id: draft.article_id || persistedArticleId,
               difficulty: draft.difficulty,
               rationale: draft.rationale || undefined,
               code_citation: draft.code_citation || undefined,
@@ -275,7 +304,7 @@ export const SaveAllBar = ({
         (async (): Promise<SaveItemResult> => {
           try {
             const { error } = await createEIPrompt({
-              article_id: draft.article_id,
+              article_id: persistedArticleId,
               node_id: draft.node_id ?? undefined,
               insert_after_heading: draft.insert_after_heading,
               prompt_text: draft.prompt_text,
@@ -356,7 +385,10 @@ export const SaveAllBar = ({
       // All succeeded
       dirty.resetAllDirty()
       setSaveError(null)
-      onSaveComplete()
+      onSaveComplete({
+        articleId: persistedArticleId,
+        created: createdArticle,
+      })
     } else {
       // Partial failure — clear dirty state only for successful items
       setSaveError(`${failed.length} item${failed.length !== 1 ? 's' : ''} failed to save`)
@@ -388,6 +420,7 @@ export const SaveAllBar = ({
     setIsSaving,
     setSaveError,
     onSaveComplete,
+    onArticlePersisted,
     dirty,
     articleState,
     questions,
@@ -400,7 +433,7 @@ export const SaveAllBar = ({
     if (isSaving) return
 
     // Only run conflict check when article is dirty and we have an initial timestamp
-    if (dirty.articleDirty && articleState.initial_updated_at) {
+    if (dirty.articleDirty && articleState.initial_updated_at && articleState.article_id) {
       try {
         const serverTs = await getArticleUpdatedAt(articleState.article_id)
         if (serverTs && serverTs !== articleState.initial_updated_at) {

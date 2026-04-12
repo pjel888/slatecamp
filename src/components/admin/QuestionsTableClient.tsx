@@ -32,6 +32,7 @@ interface QuestionsTableClientProps {
   externalSelectedNodeId?: string | null
   /** If provided, the table will filter by this search query */
   externalSearchQuery?: string
+  externalFilter?: string
 }
 
 /* ------------------------------------------------------------------ */
@@ -114,9 +115,9 @@ const QuestionRow = ({
             rationale={question.rationale}
             codeCitation={question.code_citation}
           />
-          {question.topic_id && (
+          {(question.article_id || question.topic_id) && (
             <Link
-              href={`/admin/knowledge?topic=${question.topic_id}&view=articles`}
+              href={question.article_id ? `/admin/knowledge/${question.article_id}` : `/admin/knowledge?topic=${question.topic_id}&view=articles`}
               className="whitespace-nowrap text-xs text-primary transition-colors duration-150 hover:text-primary-700"
               onClick={(e) => e.stopPropagation()}
               title="Open content editor to view this question in article context"
@@ -308,6 +309,7 @@ export const QuestionsTableClient = ({
   taxonomyTree,
   externalSelectedNodeId,
   externalSearchQuery,
+  externalFilter,
 }: QuestionsTableClientProps) => {
   const router = useRouter()
   const searchParams = useSearchParams()
@@ -457,7 +459,18 @@ export const QuestionsTableClient = ({
     handleNodeSelect(activeNodeId)
   }, [activeNodeId, debouncedSearchQuery, handleNodeSelect])
 
-  const displayGroups = nodeGroups !== null ? nodeGroups : (questions.length > 0 ? articleGroups : [])
+  const displayGroups = useMemo(() => {
+    const groups = nodeGroups !== null ? nodeGroups : (questions.length > 0 ? articleGroups : [])
+    if (externalFilter !== 'missing_rationale') return groups
+
+    return groups
+      .map((group) => ({
+        ...group,
+        questions: group.questions.filter((question) => !question.rationale || question.rationale.trim() === ''),
+        questionCount: group.questions.filter((question) => !question.rationale || question.rationale.trim() === '').length,
+      }))
+      .filter((group) => group.questionCount > 0)
+  }, [nodeGroups, questions, articleGroups, externalFilter])
   const showEmptyPrompt = activeNodeId === null && nodeGroups === null && questions.length === 0 && !debouncedSearchQuery
 
   return (

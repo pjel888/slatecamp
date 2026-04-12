@@ -1,7 +1,7 @@
 'use server'
 
 import { unstable_cache } from 'next/cache'
-import { createClient, getUser } from '@/lib/supabase/server'
+import { createClient, getUser, createServiceClient } from '@/lib/supabase/server'
 import { wrapResult, wrapError, type AnalyticsResult } from '@/lib/actions/analytics/shared-helpers'
 
 export interface SubjectMastery {
@@ -12,7 +12,7 @@ export interface SubjectMastery {
 
 const getSubjectMasteryDataInternal = async (userId: string): Promise<AnalyticsResult<SubjectMastery[]>> => {
   try {
-    const supabase = await createClient()
+    const supabase = await createServiceClient()
 
     // 1. Get current discipline
     const { data: stats } = await supabase

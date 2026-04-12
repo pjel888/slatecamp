@@ -3,16 +3,16 @@ import Link from 'next/link'
 import { ROUTES } from '@/lib/routes'
 import { Plus, FileText, UploadSimple, ArrowRight, Warning, ClipboardText, GitBranch, SquaresFour } from '@phosphor-icons/react/dist/ssr'
 import { getAdminDashboardData, getContentBySubject, getCriticalCoverageGap, getNeedsAttentionData } from '@/lib/actions/admin/dashboard'
-import { cn } from '@/lib/utils'
 import { formatRelativeTime } from '@/lib/utils/format-time'
 import { SectionHeader } from '@/components/shared/section-header'
 import { StatCard } from '@/components/shared/stat-card'
 import { ActionCard } from '@/components/shared/action-card'
-import { Card } from '@/components/ui/card'
 import { EventBadge } from '@/components/shared/event-badge'
 import { Eyebrow } from '@/components/ui/eyebrow'
 import { Breadcrumb } from '@/components/ui/breadcrumb'
 import { NeedsAttentionCard } from '@/components/admin/NeedsAttentionCard'
+import { DashboardMetricCard } from '@/components/shared/dashboard-metric-card'
+import { SubjectDistributionBar } from '@/components/shared/subject-distribution-bar'
 
 export const metadata: Metadata = { title: 'Dashboard — SlateCamp Admin' }
 
@@ -155,77 +155,36 @@ const AdminDashboardPage = async () => {
 
       {/* Section 4: Content by Subject */}
       {subjectCounts.length > 0 && (
-        <Card size="md">
-          <div className="flex items-center justify-between mb-6">
-            <div>
-              <Eyebrow>Content by Subject</Eyebrow>
-              <p className="text-xs text-muted-foreground mt-1">Resource distribution across the syllabus</p>
-            </div>
-            <div className="flex items-center gap-4 text-[10px] uppercase tracking-wider font-bold text-text-tertiary">
-              <div className="flex items-center gap-1.5">
-                <div className="w-2 h-2 rounded-full bg-primary/60" />
-                <span>Questions</span>
-              </div>
-              <div className="flex items-center gap-1.5">
-                <div className="w-2 h-2 rounded-full bg-muted-foreground/30" />
-                <span>Articles</span>
-              </div>
-            </div>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
-            {subjectCounts.map((subject) => {
-              const qPct = Math.round((subject.questionCount / maxQuestions) * 100)
-              // Color mapping based on subject code
-              const colorClass = 
-                subject.lea_id?.includes('PRAC') ? 'bg-emerald-500' :
-                subject.lea_id?.includes('HIST') ? 'bg-amber-500' :
-                subject.lea_id?.includes('THEO') ? 'bg-sky-500' :
-                subject.lea_id?.includes('PLAN') ? 'bg-indigo-500' :
-                subject.lea_id?.includes('STRC') ? 'bg-rose-500' :
-                subject.lea_id?.includes('MATL') ? 'bg-violet-500' :
-                subject.lea_id?.includes('DSGN') ? 'bg-cyan-500' :
-                subject.lea_id?.includes('UTIL') ? 'bg-orange-500' :
-                'bg-primary'
-
-              return (
-                <div key={subject.node_id} className="space-y-2">
-                  <div className="flex items-end justify-between gap-2">
-                    <div className="min-w-0">
-                      <p className="text-[11px] font-bold text-text-tertiary uppercase truncate">
-                        {subject.lea_id || 'Subject'}
-                      </p>
-                      <p className="text-xs font-semibold text-foreground truncate" title={subject.name}>
-                        {subject.name}
-                      </p>
-                    </div>
-                    <div className="flex items-center gap-3 shrink-0">
-                      <div className="text-right">
-                        <span className="block text-xs font-bold text-foreground tabular-nums">
-                          {subject.questionCount}
-                        </span>
-                        <span className="block text-[9px] text-muted-foreground uppercase font-bold">Items</span>
-                      </div>
-                      <div className="text-right">
-                        <span className="block text-xs font-bold text-text-secondary tabular-nums">
-                          {subject.articleCount}
-                        </span>
-                        <span className="block text-[9px] text-muted-foreground uppercase font-bold">Wiki</span>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div className="relative h-1.5 w-full bg-muted rounded-full overflow-hidden">
-                    <div
-                      className={cn("absolute inset-y-0 left-0 rounded-full transition-all duration-500 ease-out", colorClass)}
-                      style={{ width: `${qPct}%`, opacity: 0.7 }}
-                    />
-                  </div>
+        <DashboardMetricCard
+          headerProps={{
+            eyebrow: "Content by Subject",
+            title: "Resource Distribution",
+            subtitle: "Resource distribution across the syllabus",
+            action: (
+              <div className="flex items-center gap-4 text-[10px] uppercase tracking-wider font-bold text-text-tertiary">
+                <div className="flex items-center gap-1.5">
+                  <div className="w-2 h-2 rounded-full bg-primary/60" />
+                  <span>Questions</span>
                 </div>
-              )
-            })}
-          </div>
-        </Card>
+                <div className="flex items-center gap-1.5">
+                  <div className="w-2 h-2 rounded-full bg-muted-foreground/30" />
+                  <span>Articles</span>
+                </div>
+              </div>
+            )
+          }}
+        >
+          <SubjectDistributionBar 
+            items={subjectCounts.map(s => ({
+              id: s.node_id,
+              leaId: s.lea_id,
+              name: s.name,
+              primaryCount: s.questionCount,
+              secondaryCount: s.articleCount
+            }))}
+            maxPrimaryCount={maxQuestions}
+          />
+        </DashboardMetricCard>
       )}
 
       {/* Section 5: Two-column grid — Quick Actions + Recent Activity */}
@@ -248,19 +207,22 @@ const AdminDashboardPage = async () => {
         </div>
 
         {/* RIGHT: Recent Activity */}
-        <Card size="md">
-          <div className="flex items-center justify-between mb-4">
-            <Eyebrow>Recent Activity</Eyebrow>
-            <Link
-              href={ROUTES.admin.activity}
-              aria-label="View all recent activity"
-              className="inline-flex items-center gap-1 text-xs text-primary hover:text-primary/80 transition-colors duration-150"
-            >
-              View all
-              <ArrowRight size={12} />
-            </Link>
-          </div>
-
+        <DashboardMetricCard
+          headerProps={{
+            eyebrow: "Recent Activity",
+            title: "System Logs",
+            action: (
+              <Link
+                href={ROUTES.admin.activity}
+                aria-label="View all recent activity"
+                className="inline-flex items-center gap-1 text-xs text-primary hover:text-primary/80 transition-colors duration-150"
+              >
+                View all
+                <ArrowRight size={12} />
+              </Link>
+            )
+          }}
+        >
           {recentLogs.length === 0 ? (
             <p className="text-sm text-muted-foreground py-6 text-center">
               No recent activity recorded.
@@ -297,7 +259,7 @@ const AdminDashboardPage = async () => {
               ))}
             </div>
           )}
-        </Card>
+        </DashboardMetricCard>
       </div>
     </div>
   )

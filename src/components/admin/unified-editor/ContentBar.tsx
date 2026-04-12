@@ -15,6 +15,7 @@ import {
 } from '@/components/ui/select'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
+import { type CanonicalEditorStatus, normalizeEditorStatus } from '@/lib/admin/editor-workflow'
 
 // ─── Props ───────────────────────────────────────────────────
 
@@ -23,7 +24,7 @@ interface ContentBarProps {
   onTitleChange: (val: string) => void
   leaId: string | null
   status: string
-  onStatusChange: (val: string) => void
+  onStatusChange: (val: CanonicalEditorStatus) => void
   difficultyLabel: string
   onDifficultyLabelChange: (val: string) => void
   questionsCount: number
@@ -39,15 +40,30 @@ const STATUS_CONFIG: Record<string, { label: string; icon: React.ReactNode; colo
     icon: <CircleDashed className="w-3.5 h-3.5" />, 
     colorClass: 'bg-muted text-text-secondary border border-border' 
   },
-  review: { 
+  in_review: { 
     label: 'In Review', 
     icon: <Clock className="w-3.5 h-3.5" />, 
     colorClass: 'bg-warning-50 text-warning border border-warning/30' 
+  },
+  changes_requested: {
+    label: 'Changes Requested',
+    icon: <Clock className="w-3.5 h-3.5" />,
+    colorClass: 'bg-warning-50 text-warning border border-warning/30',
+  },
+  approved: {
+    label: 'Approved',
+    icon: <CheckCircle className="w-3.5 h-3.5" />,
+    colorClass: 'bg-primary-50 text-camp-cobalt border border-primary/30',
   },
   published: { 
     label: 'Published', 
     icon: <CheckCircle className="w-3.5 h-3.5" weight="fill" />, 
     colorClass: 'bg-success-50 text-emerald border border-emerald/30' 
+  },
+  archived: {
+    label: 'Archived',
+    icon: <CircleDashed className="w-3.5 h-3.5" />,
+    colorClass: 'bg-muted text-text-tertiary border border-border',
   },
 }
 
@@ -69,7 +85,7 @@ export const ContentBar = ({
   onDifficultyLabelChange,
   questionsCount,
   isSaving,
-  saveError,
+  saveError: _saveError,
 }: ContentBarProps) => {
   const dirty = useDirtyState()
   const isOnline = useOnlineStatus()
@@ -87,7 +103,8 @@ export const ContentBar = ({
     return () => window.removeEventListener('keydown', handleKeyDown)
   }, [handleKeyDown])
 
-  const currentStatus = STATUS_CONFIG[status] || STATUS_CONFIG.draft
+  const normalizedStatus = normalizeEditorStatus(status)
+  const currentStatus = STATUS_CONFIG[normalizedStatus] || STATUS_CONFIG.draft
 
   return (
     <div className="sticky top-0 z-30 flex h-16 w-full shrink-0 items-center gap-3 border-b border-border bg-card px-4">
@@ -136,7 +153,7 @@ export const ContentBar = ({
 
       {/* 7. Status dropdown */}
       <Select 
-        value={status} 
+        value={normalizedStatus} 
         onValueChange={(val) => {
           if (val === 'published' && !isOnline) return
           onStatusChange(val)

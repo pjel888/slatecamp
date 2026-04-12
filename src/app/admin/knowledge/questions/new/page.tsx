@@ -55,7 +55,7 @@ const NewQuestionPage = async ({ searchParams }: PageProps) => {
             <p className="mt-1 text-sm text-muted-foreground">Draft a new assessment item</p>
           </div>
           <QuestionEditor 
-            question={topicId ? { topic_id: topicId } as any : undefined} 
+            question={topicId ? { topic_id: topicId, article_id: article?.article_id ?? null, correct_option_id: 'A' } as any : undefined} 
           />
         </div>
 

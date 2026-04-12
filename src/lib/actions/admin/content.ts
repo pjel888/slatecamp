@@ -4,25 +4,90 @@ import { createAdminClient } from '@/lib/supabase/admin'
 import { canManageContent } from '@/lib/admin/roles'
 import { revalidatePath, revalidateTag } from 'next/cache'
 import { CACHE_TAGS } from '../cache-tags'
-import { sanitizeMDX } from '@/lib/wiki-markdown'
 import { ROUTES } from '@/lib/routes'
 import { logServerError } from '@/lib/logging/server'
+import { normalizeEditorStatus } from '@/lib/admin/editor-workflow'
+import {
+  isStandardQuestionType,
+  normalizeQuestionOptionArray,
+  resolveCorrectOptionLetter,
+  validateStandardQuestionLinkage,
+} from '@/lib/admin/editor-integrity/standard-question'
+import { compileWikiArticleWithRenderer } from '@/components/wiki/article/WikiArticle'
+
+const slugifyTitle = (title: string) =>
+  title
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+    .slice(0, 80) || 'untitled-article'
+
+const ensureUniqueArticleSlug = async (
+  supabase: ReturnType<typeof createAdminClient>,
+  title: string,
+) => {
+  const baseSlug = slugifyTitle(title)
+  let candidate = baseSlug
+  let suffix = 2
+
+  while (true) {
+    const { data, error } = await supabase
+      .from('wiki_articles')
+      .select('article_id')
+      .eq('slug', candidate)
+      .limit(1)
+      .maybeSingle()
+
+    if (error) {
+      throw error
+    }
+
+    if (!data) {
+      return candidate
+    }
+
+    candidate = `${baseSlug}-${suffix}`
+    suffix += 1
+  }
+}
+
+export interface SaveArticleFullInput {
+  article_id?: string | null
+  title: string
+  content: string
+  status?: string
+  node_id?: string | null
+  difficulty_label?: string
+  lea_tests_you?: string
+  updated_note?: string
+  subject_label?: string
+  reviewer_comments?: string
+}
+
+export interface SaveArticleFullResult {
+  error: Error | { message: string } | null
+  article:
+    | {
+        article_id: string
+        slug: string
+        created: boolean
+      }
+    | null
+}
 
 // ─── MDX Preview Compilation ─────────────────────────────────
 
 /** Server-side MDX compilation for the admin preview tab */
 export const compileMdxPreview = async (source: string) => {
   try {
-    const { serialize } = await import('next-mdx-remote/serialize')
-    const remarkGfm = (await import('remark-gfm')).default
-    const sanitized = sanitizeMDX(source)
-    const mdxSource = await serialize(sanitized, {
-      mdxOptions: {
-        remarkPlugins: [remarkGfm],
-        development: false,
+    const compiled = await compileWikiArticleWithRenderer({
+      article: {
+        article_id: 'admin-preview-validation',
+        content: source,
       },
     })
-    return { source: mdxSource, error: null }
+    return { source: compiled, error: null }
   } catch (err: unknown) {
     return {
       source: null,
@@ -69,10 +134,25 @@ export const getContentEditorIndexData = async () => {
     text: q.text
   }))
 
-  // Build question counts per node
+  // Build question counts per node for taxonomy summaries
   const questionCounts = new Map<string, number>()
   for (const q of questions) {
     questionCounts.set(q.topic_id, (questionCounts.get(q.topic_id) || 0) + 1)
+  }
+
+  // Build direct article-owned standard question counts
+  const articleQuestionCounts = new Map<string, number>()
+  const questionsWithArticleIds = await supabase
+    .from('questions')
+    .select('article_id, question_type')
+    .not('article_id', 'is', null)
+
+  for (const question of questionsWithArticleIds.data || []) {
+    if (!question.article_id || !isStandardQuestionType(question.question_type)) continue
+    articleQuestionCounts.set(
+      question.article_id,
+      (articleQuestionCounts.get(question.article_id) || 0) + 1,
+    )
   }
 
   // Build article-to-nodes and node-to-articles maps
@@ -140,16 +220,10 @@ export const getContentEditorIndexData = async () => {
     const primaryNodeId = primaryLink?.node_id || nodeIds[0] || null
     const primaryNode = primaryNodeId ? nodeMap.get(primaryNodeId) as typeof nodes[number] | undefined : null
 
-    // Count questions for this article's nodes
-    let qCount = 0
-    for (const nid of nodeIds) {
-      qCount += questionCounts.get(nid) || 0
-    }
-
     return {
       ...a,
       word_count: a.content ? a.content.split(/\s+/).filter(Boolean).length : 0,
-      question_count: qCount,
+      question_count: articleQuestionCounts.get(a.article_id) || 0,
       prompt_count: promptCounts.get(a.article_id) || 0,
       node_ids: nodeIds,
       primary_lea_id: primaryNode?.lea_id || null,
@@ -249,7 +323,7 @@ export const getQuestionsByArticleId = async (articleId: string) => {
   const { data, error } = await supabase
     .from('questions')
     .select(
-      'question_id, topic_id, article_id, text, options, correct_option_id, rationale, explanation, code_citation, difficulty, difficulty_rating, discrimination_rating, prompt_image_url, model_id, is_assessment, application_context, practice_context, created_at, updated_at'
+      'question_id, topic_id, article_id, question_type, text, options, correct_option_id, rationale, explanation, code_citation, difficulty, difficulty_rating, discrimination_rating, prompt_image_url, model_id, is_assessment, application_context, practice_context, created_at, updated_at'
     )
     .eq('article_id', articleId)
     .order('created_at', { ascending: false })
@@ -258,10 +332,12 @@ export const getQuestionsByArticleId = async (articleId: string) => {
     console.error('Error fetching questions by article ID:', error)
     return []
   }
-  return (data || []).map((q) => ({
-    ...q,
-    options: Array.isArray(q.options) ? q.options : [],
-  }))
+  return (data || [])
+    .filter((question) => isStandardQuestionType((question as any).question_type))
+    .map((q) => ({
+      ...q,
+      options: Array.isArray(q.options) ? q.options : [],
+    }))
 }
 
 interface ImportedQuestion {
@@ -284,21 +360,18 @@ const transformQuestion = (
   articleId: string,
   topicId: string
 ) => {
-  const optionIds = ['A', 'B', 'C', 'D']
-  const options = json.answerOptions.map((text, idx) => ({
-    id: optionIds[idx],
-    text,
-  }))
+  const options = normalizeQuestionOptionArray(json.answerOptions)
 
   return {
     text: json.questionStem,
     options,
-    correct_option_id: json.correctOption,
+    correct_option_id: resolveCorrectOptionLetter(json.correctOption),
     rationale: json.rationale,
     explanation: json.extendedExplanation || null,
     code_citation: json.codeCitation || null,
     difficulty: json.difficulty,
     is_assessment: json.diagnosticOnly !== true,
+    question_type: 'mcq',
     application_context: json.realWorldScenario || null,
     practice_context: json.practiceContext ? json.practiceContext.split(',').map(s => s.trim()) : [],
     prompt_image_url: json.promptImageUrl || null,
@@ -346,6 +419,20 @@ export const importQuestionsForArticle = async (
   )
 
   const supabase = createAdminClient()
+  const linkageValidation = await validateStandardQuestionLinkage(supabase as any, {
+    articleId,
+    topicId,
+    questionType: 'mcq',
+    stage: 'authoring',
+  })
+
+  if (linkageValidation.blockingIssues.length > 0) {
+    return {
+      error: new Error(linkageValidation.blockingIssues[0]),
+      importedCount: 0,
+    }
+  }
+
   const { data, error } = await supabase
     .from('questions')
     .insert(transformedQuestions)
@@ -462,10 +549,14 @@ export const updateArticleFull = async (
   
   // 1. Update wiki_articles
   const { node_id, ...articleFields } = data
+  const normalizedStatus = articleFields.status
+    ? normalizeEditorStatus(articleFields.status)
+    : undefined
   const { error: articleError } = await supabase
     .from('wiki_articles')
     .update({
       ...articleFields,
+      status: normalizedStatus,
       updated_at: new Date().toISOString(),
     })
     .eq('article_id', id)
@@ -565,6 +656,177 @@ export const updateArticleFull = async (
   return { error: null }
 }
 
+export const saveArticleFull = async (
+  data: SaveArticleFullInput,
+): Promise<SaveArticleFullResult> => {
+  const authorized = await canManageContent()
+  if (!authorized) {
+    await logServerError({
+      family: 'admin',
+      eventName: 'content_save_article_unauthorized',
+      message: 'Unauthorized attempt to save article content.',
+      context: {
+        routeOrAction: 'admin:content.saveArticleFull',
+        metadata: {
+          articleId: data.article_id ?? null,
+        },
+      },
+    })
+    throw new Error('Unauthorized: insufficient permissions')
+  }
+
+  const title = data.title.trim()
+  const content = data.content.trim()
+
+  if (!title) {
+    return { error: new Error('Title is required'), article: null }
+  }
+
+  if (!content) {
+    return { error: new Error('Content is required'), article: null }
+  }
+
+  const previewValidation = await compileMdxPreview(content)
+  if (previewValidation.error) {
+    return {
+      error: new Error(`MDX compile validation failed: ${previewValidation.error}`),
+      article: null,
+    }
+  }
+
+  if (data.article_id) {
+    const { error } = await updateArticleFull(data.article_id, {
+      title,
+      content,
+      status: data.status,
+      node_id: data.node_id,
+      difficulty_label: data.difficulty_label,
+      lea_tests_you: data.lea_tests_you,
+      updated_note: data.updated_note,
+      subject_label: data.subject_label,
+      reviewer_comments: data.reviewer_comments,
+    })
+
+    return {
+      error: error ? new Error(error.message) : null,
+      article: error
+        ? null
+        : {
+            article_id: data.article_id,
+            slug: '',
+            created: false,
+          },
+    }
+  }
+
+  const supabase = createAdminClient()
+
+  try {
+    const slug = await ensureUniqueArticleSlug(supabase, title)
+    const now = new Date().toISOString()
+
+    const { data: insertedArticle, error: insertError } = await supabase
+      .from('wiki_articles')
+      .insert({
+        title,
+        slug,
+        content,
+        status: normalizeEditorStatus(data.status),
+        difficulty_label: data.difficulty_label ?? null,
+        lea_tests_you: data.lea_tests_you ?? null,
+        updated_note: data.updated_note ?? null,
+        subject_label: data.subject_label ?? null,
+        reviewer_comments: data.reviewer_comments ?? null,
+        created_at: now,
+        updated_at: now,
+      })
+      .select('article_id, slug')
+      .single()
+
+    if (insertError || !insertedArticle) {
+      if (insertError) {
+        await logServerError({
+          family: 'admin',
+          eventName: 'content_create_article_failed',
+          message: 'Failed to create article content.',
+          context: {
+            routeOrAction: 'admin:content.saveArticleFull',
+          },
+          error: insertError,
+        })
+      }
+
+      return {
+        error: insertError ? new Error(insertError.message) : new Error('Failed to create article'),
+        article: null,
+      }
+    }
+
+    if (data.node_id) {
+      const { error: mappingError } = await supabase
+        .from('wiki_article_taxonomy')
+        .insert({
+          article_id: insertedArticle.article_id,
+          node_id: data.node_id,
+          is_primary: true,
+        })
+
+      if (mappingError) {
+        await supabase
+          .from('wiki_articles')
+          .delete()
+          .eq('article_id', insertedArticle.article_id)
+
+        await logServerError({
+          family: 'admin',
+          eventName: 'content_create_article_taxonomy_failed',
+          message: 'Failed to create taxonomy mapping for new article.',
+          context: {
+            routeOrAction: 'admin:content.saveArticleFull',
+            metadata: {
+              nodeId: data.node_id,
+            },
+          },
+          error: mappingError,
+        })
+
+        return {
+          error: new Error(mappingError.message),
+          article: null,
+        }
+      }
+    }
+
+    revalidateTag(CACHE_TAGS.wiki, 'max')
+    revalidatePath(ROUTES.admin.knowledge)
+    revalidatePath(ROUTES.admin.knowledgeQuestions)
+
+    return {
+      error: null,
+      article: {
+        article_id: insertedArticle.article_id,
+        slug: insertedArticle.slug,
+        created: true,
+      },
+    }
+  } catch (error) {
+    await logServerError({
+      family: 'admin',
+      eventName: 'content_create_article_unexpected_failed',
+      message: 'Unexpected error while creating article content.',
+      context: {
+        routeOrAction: 'admin:content.saveArticleFull',
+      },
+      error,
+    })
+
+    return {
+      error: error instanceof Error ? error : new Error('Unexpected error'),
+      article: null,
+    }
+  }
+}
+
 import { updateQuestion as updateQuestionAction } from './questions'
 
 /** Proxy to the consolidated updateQuestion action */
@@ -611,7 +873,7 @@ export const createEIPrompt = async (data: {
         reveal_text: data.reveal_text,
         options: data.options || [],
         sort_order: data.sort_order ?? 0,
-        status: data.status || 'draft',
+        status: normalizeEditorStatus(data.status),
       },
     ])
     .select('prompt_id')
@@ -669,6 +931,7 @@ export const updateEIPrompt = async (
     .from('wiki_ei_prompts')
     .update({
       ...data,
+      status: data.status ? normalizeEditorStatus(data.status) : undefined,
       updated_at: new Date().toISOString(),
     })
     .eq('prompt_id', promptId)

@@ -5,6 +5,7 @@ import { trackServerEvent } from '@/lib/analytics-server'
 import { revalidateDashboardCacheTags } from './cache-tags'
 import { updateMasteryStats } from './mastery/update-mastery-stats'
 import type { AssessmentSubjectScore } from '@/types/app'
+import { filterQuestionsReadableForStage } from '@/lib/admin/editor-integrity/standard-question'
 
 import { getAssessmentClientQuestions as getQuestions } from './assessment/get-questions'
 
@@ -230,14 +231,19 @@ export const getAssessmentQuestions = async (disciplineId: string): Promise<stri
     // Get up to 5 questions for this subject, preferring is_assessment and high discrimination
     const { data: questions } = await supabase
       .from('questions')
-      .select('question_id, is_assessment, discrimination_rating')
+      .select('question_id, article_id, topic_id, question_type, is_assessment, discrimination_rating')
       .in('topic_id', nodeIds)
       .order('is_assessment', { ascending: false })
       .order('discrimination_rating', { ascending: false, nullsFirst: false })
       .limit(5)
 
     if (questions) {
-      allQuestionIds.push(...questions.map((q: any) => q.question_id))
+      const { questions: deliverableQuestions } = await filterQuestionsReadableForStage(
+        supabase as any,
+        questions,
+        'delivery',
+      )
+      allQuestionIds.push(...deliverableQuestions.map((q: any) => q.question_id))
     }
   }
 

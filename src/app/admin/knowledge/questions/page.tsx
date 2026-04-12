@@ -8,9 +8,14 @@ export const metadata = {
   title: 'Question Bank | SlateCamp Admin',
 }
 
-const QuestionBankPage = async () => {
+interface QuestionBankPageProps {
+  searchParams: Promise<{ search?: string; filter?: string }>
+}
+
+const QuestionBankPage = async ({ searchParams }: QuestionBankPageProps) => {
   const authorized = await canManageContent()
   if (!authorized) redirect(ROUTES.admin.root)
+  const { search, filter } = await searchParams
 
   const { articles, searchableQuestions, taxonomyTree, stats } = await getContentEditorIndexData()
 
@@ -21,6 +26,8 @@ const QuestionBankPage = async () => {
       taxonomyTree={taxonomyTree}
       stats={stats}
       defaultViewMode="questions"
+      defaultSearchQuery={search || ''}
+      defaultQuestionFilter={filter || ''}
     />
   )
 }

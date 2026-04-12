@@ -5,10 +5,11 @@ import { ROUTES } from '@/lib/routes'
 import { getQuestionsForAnalytics } from '@/lib/actions/admin/question-queries'
 import { SectionHeader } from '@/components/shared/section-header'
 import { StatCard } from '@/components/shared/stat-card'
-import { Card, CardContent } from '@/components/ui/card'
 import { Breadcrumb } from '@/components/ui/breadcrumb'
+import { DashboardMetricCard } from '@/components/shared/dashboard-metric-card'
+import { CoverageProgress } from '@/components/shared/coverage-progress'
 
-export const metadata: Metadata = { title: 'Quality Analytics â€” SlateCamp Admin' }
+export const metadata: Metadata = { title: 'Quality Analytics — SlateCamp Admin' }
 
 /* ------------------------------------------------------------------ */
 /*  Helpers                                                            */
@@ -132,105 +133,70 @@ const QuestionsAnalyticsPage = async () => {
         />
       </div>
 
-      <Card>
-        <CardContent className="pt-4">
-          <SectionHeader
-            eyebrow="Distribution"
-            title="Difficulty Spread"
-            subtitle="Question count by difficulty bucket (0.0 = easiest, 1.0 = hardest)"
-            level="card"
-          />
+      <DashboardMetricCard
+        headerProps={{
+          eyebrow: "Distribution",
+          title: "Difficulty Spread",
+          subtitle: "Question count by difficulty bucket (0.0 = easiest, 1.0 = hardest)"
+        }}
+      >
+        <div className="space-y-2">
+          {[...stats.buckets.entries()]
+            .sort(([a], [b]) => a - b)
+            .map(([bucket, count]) => {
+              const widthPct =
+                stats.maxBucketCount > 0
+                  ? Math.max((count / stats.maxBucketCount) * 100, count > 0 ? 2 : 0)
+                  : 0
 
-          <div className="mt-4 space-y-2">
-            {[...stats.buckets.entries()]
-              .sort(([a], [b]) => a - b)
-              .map(([bucket, count]) => {
-                const widthPct =
-                  stats.maxBucketCount > 0
-                    ? Math.max((count / stats.maxBucketCount) * 100, count > 0 ? 2 : 0)
-                    : 0
+              const barColor =
+                bucket < 0.3
+                  ? 'bg-emerald-500'
+                  : bucket < 0.6
+                    ? 'bg-amber-500'
+                    : 'bg-red-500'
 
-                const barColor =
-                  bucket < 0.3
-                    ? 'bg-emerald-500'
-                    : bucket < 0.6
-                      ? 'bg-amber-500'
-                      : 'bg-red-500'
-
-                return (
-                  <div key={bucket} className="flex items-center gap-3">
-                    <span className="w-16 shrink-0 text-right text-[11px] font-[family-name:var(--font-dm-mono)] text-muted-foreground">
-                      {bucketLabel(bucket)}
-                    </span>
-                    <div className="h-5 flex-1 overflow-hidden rounded bg-muted/50">
-                      <div
-                        className={`h-full rounded transition-all duration-150 ${barColor}`}
-                        style={{ width: `${widthPct}%` }}
-                      />
-                    </div>
-                    <span className="w-10 shrink-0 text-right text-[11px] font-[family-name:var(--font-dm-mono)] text-foreground tabular-nums">
-                      {count}
-                    </span>
+              return (
+                <div key={bucket} className="flex items-center gap-3">
+                  <span className="w-16 shrink-0 text-right text-[11px] font-mono text-muted-foreground">
+                    {bucketLabel(bucket)}
+                  </span>
+                  <div className="h-5 flex-1 overflow-hidden rounded bg-muted/50">
+                    <div
+                      className={`h-full rounded transition-all duration-150 ${barColor}`}
+                      style={{ width: `${widthPct}%` }}
+                    />
                   </div>
-                )
-              })}
-          </div>
-        </CardContent>
-      </Card>
+                  <span className="w-10 shrink-0 text-right text-[11px] font-mono text-foreground tabular-nums">
+                    {count}
+                  </span>
+                </div>
+              )
+            })}
+        </div>
+      </DashboardMetricCard>
 
-      <Card>
-        <CardContent className="pt-4">
-          <SectionHeader
-            eyebrow="Coverage"
-            title="Content Completeness"
-            level="card"
+      <DashboardMetricCard
+        headerProps={{
+          eyebrow: "Coverage",
+          title: "Content Completeness"
+        }}
+      >
+        <div className="space-y-3">
+          <CoverageProgress
+            label="Has rationale"
+            filled={stats.total - stats.missingRationale}
+            total={stats.total}
+            color="bg-emerald-500"
           />
-
-          <div className="mt-4 space-y-3">
-            <CoverageRow
-              label="Has rationale"
-              filled={stats.total - stats.missingRationale}
-              total={stats.total}
-              color="bg-emerald-500"
-            />
-            <CoverageRow
-              label="Has citation"
-              filled={stats.total - stats.missingCitation}
-              total={stats.total}
-              color="bg-primary"
-            />
-          </div>
-        </CardContent>
-      </Card>
-    </div>
-  )
-}
-
-const CoverageRow = ({
-  label,
-  filled,
-  total,
-  color,
-}: {
-  label: string
-  filled: number
-  total: number
-  color: string
-}) => {
-  const pct = total > 0 ? Math.round((filled / total) * 100) : 0
-
-  return (
-    <div className="flex items-center gap-3">
-      <span className="w-24 shrink-0 text-xs text-muted-foreground">{label}</span>
-      <div className="h-3 flex-1 overflow-hidden rounded-full bg-muted/50">
-        <div
-          className={`h-full rounded-full transition-all duration-150 ${color}`}
-          style={{ width: `${pct}%` }}
-        />
-      </div>
-      <span className="w-20 shrink-0 text-right text-[11px] font-[family-name:var(--font-dm-mono)] text-foreground tabular-nums">
-        {filled}/{total} ({pct}%)
-      </span>
+          <CoverageProgress
+            label="Has citation"
+            filled={stats.total - stats.missingCitation}
+            total={stats.total}
+            color="bg-primary"
+          />
+        </div>
+      </DashboardMetricCard>
     </div>
   )
 }

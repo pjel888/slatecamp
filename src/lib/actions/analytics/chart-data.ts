@@ -1,7 +1,7 @@
 'use server'
 
 import { unstable_cache } from 'next/cache'
-import { createClient, getUser } from '@/lib/supabase/server'
+import { createClient, getUser, createServiceClient } from '@/lib/supabase/server'
 import { PACING_TARGET_MS, PASSING_ACCURACY, REVIEW_THRESHOLD, MASTERY_THRESHOLD, getSubjectColor } from '@/lib/constants/analytics'
 import { fetchTaxonomyNodeMap, type TaxNode, wrapResult, wrapError, type AnalyticsResult } from '@/lib/actions/analytics/shared-helpers'
 import { MODE_COLORS, getModeColor, getForgettingCurveColor } from '@/lib/constants/chart-colors'
@@ -92,7 +92,7 @@ export interface ExamCountdownData {
 
 const getForgettingCurveDataInternal = async (userId: string): Promise<AnalyticsResult<ForgettingCurveData>> => {
   try {
-    const supabase = await createClient()
+    const supabase = await createServiceClient()
     const user = { id: userId }
 
     const { data: mastery } = await supabase

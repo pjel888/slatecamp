@@ -4,10 +4,12 @@ import { z } from 'zod'
 import { createAdminClient } from "@/lib/supabase/admin";
 import { createClient } from "@/lib/supabase/server";
 import { revalidatePath, revalidateTag } from "next/cache";
-import { canManageContent } from "@/lib/admin/roles";
+import { canManageContent, canReviewContent } from "@/lib/admin/roles";
 import { CACHE_TAGS } from '../cache-tags'
 import { ROUTES } from '@/lib/routes'
 import { logServerError } from '@/lib/logging/server'
+import { normalizeEditorStatus } from '@/lib/admin/editor-workflow'
+import { compileMdxPreview } from './content'
 
 const UpdateWikiArticleSchema = z.object({
   title: z.string().min(1, 'Title is required').max(500),
@@ -15,7 +17,7 @@ const UpdateWikiArticleSchema = z.object({
   slug: z.string().optional(),
   author_id: z.string().uuid().optional(),
   discipline_id: z.string().uuid().optional(),
-  status: z.enum(['draft', 'pending_review', 'changes_requested', 'approved', 'published', 'archived']).optional(),
+  status: z.string().optional(),
   metadata: z.record(z.string(), z.any()).optional(),
   tags: z.array(z.string()).optional(),
 })
@@ -63,6 +65,7 @@ export const updateWikiArticle = async (id: string, data: z.infer<typeof UpdateW
     .from('wiki_articles')
     .update({
       ...parsed.data,
+      status: parsed.data.status ? normalizeEditorStatus(parsed.data.status) : undefined,
       updated_at: new Date().toISOString()
     })
     .eq('article_id', id)
@@ -132,7 +135,7 @@ export const createWikiArticle = async (data: z.infer<typeof UpdateWikiArticleSc
     .insert([{
       ...parsed.data,
       author_id: parsed.data.author_id || user?.id,
-      status: parsed.data.status || 'draft',
+      status: normalizeEditorStatus(parsed.data.status),
       created_at: new Date().toISOString(),
       updated_at: new Date().toISOString()
     }])
@@ -232,6 +235,123 @@ export async function deleteWikiArticle(id: string) {
   revalidatePath(ROUTES.admin.wiki);
   revalidatePath(ROUTES.admin.articles);
   revalidatePath(ROUTES.wiki.root);
+
+  return { error: null }
+}
+
+export const approveWikiArticleReview = async (
+  articleId: string,
+  reviewerComments?: string,
+) => {
+  const authorized = await canReviewContent()
+  if (!authorized) {
+    throw new Error('Unauthorized: insufficient permissions')
+  }
+
+  const authClient = await createClient()
+  const { data: { user } } = await authClient.auth.getUser()
+  const supabase = createAdminClient()
+
+  const { data: article, error: articleError } = await supabase
+    .from('wiki_articles')
+    .select('article_id, content')
+    .eq('article_id', articleId)
+    .maybeSingle()
+
+  if (articleError || !article) {
+    throw new Error('Article not found for review approval')
+  }
+
+  const previewValidation = await compileMdxPreview(article.content)
+  if (previewValidation.error) {
+    throw new Error(`Cannot approve article with invalid MDX: ${previewValidation.error}`)
+  }
+
+  const { error } = await supabase
+    .from('wiki_articles')
+    .update({
+      status: 'approved',
+      reviewed_by: user?.id ?? null,
+      reviewed_at: new Date().toISOString(),
+      reviewer_comments: reviewerComments?.trim() || null,
+      updated_at: new Date().toISOString(),
+    })
+    .eq('article_id', articleId)
+
+  if (error) {
+    await logServerError({
+      family: 'admin',
+      eventName: 'wiki_review_approve_failed',
+      message: 'Failed to approve wiki article from review queue.',
+      context: {
+        routeOrAction: 'admin:wiki.approveReview',
+        userId: user?.id ?? null,
+        metadata: {
+          articleId,
+        },
+      },
+      error,
+    })
+    throw new Error(error.message)
+  }
+
+  revalidateTag(CACHE_TAGS.wiki, 'max')
+  revalidatePath(ROUTES.admin.reviews)
+  revalidatePath(ROUTES.admin.pipeline)
+  revalidatePath(ROUTES.admin.article(articleId))
+
+  return { error: null }
+}
+
+export const requestWikiArticleChanges = async (
+  articleId: string,
+  reviewerComments: string,
+) => {
+  const authorized = await canReviewContent()
+  if (!authorized) {
+    throw new Error('Unauthorized: insufficient permissions')
+  }
+
+  if (!reviewerComments.trim()) {
+    throw new Error('Reviewer comments are required when requesting changes.')
+  }
+
+  const authClient = await createClient()
+  const { data: { user } } = await authClient.auth.getUser()
+  const supabase = createAdminClient()
+
+  const { error } = await supabase
+    .from('wiki_articles')
+    .update({
+      status: 'changes_requested',
+      reviewed_by: user?.id ?? null,
+      reviewed_at: new Date().toISOString(),
+      reviewer_comments: reviewerComments.trim(),
+      updated_at: new Date().toISOString(),
+    })
+    .eq('article_id', articleId)
+
+  if (error) {
+    await logServerError({
+      family: 'admin',
+      eventName: 'wiki_review_request_changes_failed',
+      message: 'Failed to request changes for wiki article from review queue.',
+      context: {
+        routeOrAction: 'admin:wiki.requestChanges',
+        userId: user?.id ?? null,
+        metadata: {
+          articleId,
+        },
+      },
+      error,
+    })
+    throw new Error(error.message)
+  }
+
+  revalidateTag(CACHE_TAGS.wiki, 'max')
+  revalidatePath(ROUTES.admin.reviews)
+  revalidatePath(ROUTES.admin.pipeline)
+  revalidatePath(ROUTES.admin.article(articleId))
 
   return { error: null }
 }

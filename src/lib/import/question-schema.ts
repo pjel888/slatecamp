@@ -57,16 +57,16 @@ export function validateJSONQuestion(data: unknown): QuestionJSON {
 
 // Convert CSV question to database format
 export function csvToDbFormat(csv: QuestionCSV) {
-  const options = [csv.option_a, csv.option_b, csv.option_c, csv.option_d]
-  if (csv.option_e) options.push(csv.option_e)
-  
-  const correctIndex = ['a', 'b', 'c', 'd', 'e'].indexOf(csv.correct_answer)
+  const optionValues = [csv.option_a, csv.option_b, csv.option_c, csv.option_d]
   
   return {
     topic_id: csv.taxonomy_node_id,
     text: csv.question_text,
-    options,
-    correct_option_id: String(correctIndex),
+    options: optionValues.map((text, index) => ({
+      id: ['A', 'B', 'C', 'D'][index],
+      text,
+    })),
+    correct_option_id: csv.correct_answer.toUpperCase(),
     rationale: csv.rationale || null,
     difficulty: csv.difficulty,
   }
@@ -74,19 +74,22 @@ export function csvToDbFormat(csv: QuestionCSV) {
 
 // Convert JSON question to database format
 export function jsonToDbFormat(json: QuestionJSON) {
-  let correctIndex: number
-  
+  let correctLetter: string
+
   if (typeof json.correct_answer === 'string') {
-    correctIndex = ['a', 'b', 'c', 'd', 'e'].indexOf(json.correct_answer.toLowerCase())
+    correctLetter = json.correct_answer.toUpperCase()
   } else {
-    correctIndex = json.correct_answer
+    correctLetter = ['A', 'B', 'C', 'D'][json.correct_answer] || 'A'
   }
   
   return {
     topic_id: json.taxonomy_node_id,
     text: json.question_text,
-    options: json.options,
-    correct_option_id: String(correctIndex),
+    options: json.options.slice(0, 4).map((text, index) => ({
+      id: ['A', 'B', 'C', 'D'][index],
+      text,
+    })),
+    correct_option_id: correctLetter,
     rationale: json.rationale || null,
     difficulty: json.difficulty,
   }

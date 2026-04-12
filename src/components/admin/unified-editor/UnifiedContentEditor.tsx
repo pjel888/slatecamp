@@ -10,6 +10,7 @@ import { ArticlePanel } from './ArticlePanel'
 import { QuestionsPanel } from './QuestionsPanel'
 import { SaveAllBar } from './SaveAllBar'
 import { PanelErrorBoundary } from './PanelErrorBoundary'
+import { type CanonicalEditorStatus, normalizeEditorStatus } from '@/lib/admin/editor-workflow'
 import type {
   ArticleData,
   QuestionData,
@@ -35,7 +36,7 @@ interface UnifiedContentEditorProps {
 const EditorInner = ({
   article: initialArticle,
   questions: initialQuestions,
-  articleQuestions: initialArticleQuestions = [],
+  articleQuestions: _initialArticleQuestions = [],
   eiPrompts: initialEIPrompts,
   taxonomyNodes,
   taxonomyLinks,
@@ -45,9 +46,13 @@ const EditorInner = ({
   const { setIsLocked } = useSidebar()
 
   // ── Article state ────────────────────────────────────────
+  const [currentArticleId, setCurrentArticleId] = useState(initialArticle.article_id)
+  const [currentArticleSlug, setCurrentArticleSlug] = useState(initialArticle.slug)
   const [title, setTitle] = useState(initialArticle.title)
   const [content, setContent] = useState(initialArticle.content)
-  const [status, setStatus] = useState(initialArticle.status || 'draft')
+  const [status, setStatus] = useState<CanonicalEditorStatus>(
+    normalizeEditorStatus(initialArticle.status),
+  )
   const [difficultyLabel, setDifficultyLabel] = useState(
     initialArticle.difficulty_label || ''
   )
@@ -87,6 +92,22 @@ const EditorInner = ({
     return () => setIsLocked(false)
   }, [isSaving, setIsLocked])
 
+  useEffect(() => {
+    if (!currentArticleId) return
+
+    for (const draft of dirty.newQuestions) {
+      if (!draft.article_id) {
+        dirty.updateNewQuestion(draft._tempId, { article_id: currentArticleId })
+      }
+    }
+
+    for (const draft of dirty.newEIPrompts) {
+      if (draft.article_id !== currentArticleId) {
+        dirty.updateNewEIPrompt(draft._tempId, { article_id: currentArticleId })
+      }
+    }
+  }, [currentArticleId, dirty])
+
   // ── Refs ─────────────────────────────────────────────────
   const editorViewRef = useRef<any>(null)
 
@@ -108,7 +129,7 @@ const EditorInner = ({
   )
 
   const handleStatusChange = useCallback(
-    (val: string) => {
+    (val: CanonicalEditorStatus) => {
       setStatus(val)
       dirty.markArticleDirty()
     },
@@ -190,7 +211,7 @@ const EditorInner = ({
 
   // ── Article data for save ────────────────────────────────
   const articleState = {
-    article_id: initialArticle.article_id,
+    article_id: currentArticleId,
     title,
     content,
     status,
@@ -228,7 +249,18 @@ const EditorInner = ({
         isSaving={isSaving}
         setIsSaving={setIsSaving}
         setSaveError={setSaveError}
-        onSaveComplete={() => {
+        onArticlePersisted={({ articleId, slug }) => {
+          setCurrentArticleId(articleId)
+          if (slug) {
+            setCurrentArticleSlug(slug)
+          }
+        }}
+        onSaveComplete={({ articleId, created }) => {
+          if (created) {
+            router.replace(`/admin/knowledge/${articleId}`)
+            return
+          }
+
           router.refresh()
         }}
       />
@@ -257,8 +289,8 @@ const EditorInner = ({
               savedContent={initialArticle.content}
               editorViewRef={editorViewRef}
               onHeadingsChange={setHeadings}
-              articleSlug={initialArticle.slug}
-              articleId={initialArticle.article_id}
+              articleSlug={currentArticleSlug}
+              articleId={currentArticleId}
               nodeId={nodeId}
               onNodeIdChange={handleNodeIdChange}
               taxonomyNodes={taxonomyNodes}
@@ -296,7 +328,7 @@ const EditorInner = ({
               taxonomyNodes={taxonomyNodes}
               taxonomyLinks={taxonomyLinks}
               headings={headings}
-              articleId={initialArticle.article_id}
+              articleId={currentArticleId}
               primaryNodeId={primaryNode?.node_id || nodeId || null}
               onQuestionUpdate={handleQuestionUpdate}
               onEIPromptUpdate={handleEIPromptUpdate}

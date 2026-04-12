@@ -6,6 +6,13 @@ import { revalidatePath } from "next/cache";
 import { canManageContent } from "@/lib/admin/roles";
 import { ROUTES } from "@/lib/routes";
 import { logServerError } from "@/lib/logging/server";
+import {
+  isExceptionQuestionType,
+  normalizeQuestionType,
+  normalizeQuestionOptionArray,
+  resolveCorrectOptionLetter,
+  validateStandardQuestionLinkage,
+} from '@/lib/admin/editor-integrity/standard-question'
 
 interface CreateQuestionInput {
   text: string
@@ -21,6 +28,7 @@ interface CreateQuestionInput {
   practice_context?: string[]
   prompt_image_url?: string
   is_assessment?: boolean
+  question_type?: string
 }
 
 export async function deleteQuestions(ids: string[]) {
@@ -123,11 +131,41 @@ export async function createQuestion(data: CreateQuestionInput) {
     })
     throw new Error('Validation error: topic_id is required')
   }
+  const normalizedQuestionType = normalizeQuestionType(data.question_type)
+  if (isExceptionQuestionType(normalizedQuestionType)) {
+    throw new Error(
+      'Scenario-based question types must use a dedicated authoring flow and cannot be created through the standard question editor.',
+    )
+  }
 
+  if (!data.article_id || typeof data.article_id !== 'string' || data.article_id.trim().length === 0) {
+    await logServerError({
+      family: 'admin',
+      eventName: 'questions_create_validation_failed',
+      message: 'Question creation validation failed for article_id.',
+      context: {
+        routeOrAction: 'admin:questions.create',
+      },
+      error: new Error('Validation error: article_id is required for standard questions'),
+      persist: false,
+    })
+    throw new Error('Validation error: article_id is required for standard questions')
+  }
   const authClient = await createClient()
   const { data: { user } } = await authClient.auth.getUser()
 
   const supabase = createAdminClient();
+
+  const linkageValidation = await validateStandardQuestionLinkage(supabase as any, {
+    articleId: data.article_id,
+    topicId: data.topic_id,
+    questionType: normalizedQuestionType,
+    stage: 'authoring',
+  })
+
+  if (linkageValidation.blockingIssues.length > 0) {
+    throw new Error(linkageValidation.blockingIssues[0])
+  }
 
   // Extract correct_option_id from options if not provided
   let finalCorrectOptionId = data.correct_option_id
@@ -137,12 +175,10 @@ export async function createQuestion(data: CreateQuestionInput) {
       finalCorrectOptionId = correctOpt.id || 'A'
     }
   }
+  finalCorrectOptionId = resolveCorrectOptionLetter(finalCorrectOptionId ?? 'A')
 
   // Normalize options for storage: remove is_correct if we store it in a separate column
-  const storageOptions = data.options.map((o, i) => ({
-    id: o.id || ['A', 'B', 'C', 'D'][i],
-    text: o.text
-  }))
+  const storageOptions = normalizeQuestionOptionArray(data.options)
 
   // Create clean object for DB insert
   const { options: _options, correct_option_id: _correctOptionId, ...rest } = data
@@ -153,6 +189,7 @@ export async function createQuestion(data: CreateQuestionInput) {
       ...rest, 
       options: storageOptions,
       correct_option_id: finalCorrectOptionId || 'A',
+      question_type: normalizedQuestionType,
       created_by: user?.id ?? null 
     }]);
 
@@ -201,9 +238,45 @@ export const updateQuestion = async (id: string, data: Partial<CreateQuestionInp
   const { data: { user } } = await authClient.auth.getUser()
 
   const supabase = createAdminClient();
+  const { data: existingQuestion, error: existingQuestionError } = await supabase
+    .from('questions')
+    .select('article_id, topic_id')
+    .eq('question_id', id)
+    .maybeSingle()
+
+  if (existingQuestionError || !existingQuestion) {
+    throw new Error('Question not found')
+  }
+
+  const articleId = data.article_id ?? existingQuestion.article_id
+  const topicId = data.topic_id ?? existingQuestion.topic_id
+  const questionType = normalizeQuestionType(data.question_type ?? 'mcq')
+  if (isExceptionQuestionType(questionType)) {
+    throw new Error(
+      'Scenario-based question types must use a dedicated authoring flow and cannot be updated through the standard question editor.',
+    )
+  }
+
+  const linkageValidation = await validateStandardQuestionLinkage(supabase as any, {
+    articleId,
+    topicId,
+    questionType,
+    stage: 'authoring',
+  })
+
+  if (linkageValidation.blockingIssues.length > 0) {
+    throw new Error(linkageValidation.blockingIssues[0])
+  }
 
   // Handle options and correct_option_id normalization if provided
-  let updateData: any = { ...data, updated_by: user?.id ?? null, updated_at: new Date().toISOString() }
+  let updateData: any = {
+    ...data,
+    article_id: articleId,
+    topic_id: topicId,
+    question_type: questionType,
+    updated_by: user?.id ?? null,
+    updated_at: new Date().toISOString(),
+  }
   
   if (data.options) {
     let finalCorrectOptionId = data.correct_option_id
@@ -215,13 +288,10 @@ export const updateQuestion = async (id: string, data: Partial<CreateQuestionInp
     }
 
     if (finalCorrectOptionId) {
-      updateData.correct_option_id = finalCorrectOptionId
+      updateData.correct_option_id = resolveCorrectOptionLetter(finalCorrectOptionId)
     }
 
-    updateData.options = data.options.map((o, i) => ({
-      id: o.id || ['A', 'B', 'C', 'D'][i],
-      text: o.text
-    }))
+    updateData.options = normalizeQuestionOptionArray(data.options)
   }
 
   const { error } = await supabase

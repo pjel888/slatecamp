@@ -11,23 +11,28 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, Di
 import { Button } from '@/components/ui/button'
 
 interface QuestionEditorProps {
+  readOnly?: boolean
   question?: {
     id: string
     text: string
     topic_id: string
+    article_id?: string | null
+    question_type?: string | null
     options: string[] | { text: string; is_correct?: boolean }[]
-    correct_option_id: number | string
+    correct_option_id: string
     rationale: string | null
     difficulty: number
     code_citation?: string | null
   }
 }
 
-export const QuestionEditor = ({ question }: QuestionEditorProps) => {
+export const QuestionEditor = ({ question, readOnly = false }: QuestionEditorProps) => {
   const router = useRouter()
 
   const [text, setText] = useState(question?.text || '')
   const [topicId, setTopicId] = useState(question?.topic_id || '')
+  const [articleId] = useState(question?.article_id || '')
+  const questionType = question?.question_type || 'mcq'
   
   // Normalize options to string[]
   const [options, setOptions] = useState<string[]>(() => {
@@ -35,14 +40,7 @@ export const QuestionEditor = ({ question }: QuestionEditorProps) => {
     return question.options.map(opt => typeof opt === 'string' ? opt : opt.text)
   })
 
-  // Normalize correct_option_id to number
-  const [correctAnswer, setCorrectAnswer] = useState(() => {
-    if (typeof question?.correct_option_id === 'string') {
-      const idx = ['A', 'B', 'C', 'D'].indexOf(question.correct_option_id)
-      return idx >= 0 ? idx : 0
-    }
-    return question?.correct_option_id ?? 0
-  })
+  const [correctAnswer, setCorrectAnswer] = useState(question?.correct_option_id || 'A')
 
   const [rationale, setRationale] = useState(() => {
     if (typeof question?.rationale === 'object' && question.rationale !== null) {
@@ -50,7 +48,6 @@ export const QuestionEditor = ({ question }: QuestionEditorProps) => {
     }
     return question?.rationale || ''
   })
-  const codeCitation = question?.code_citation ?? undefined
   const [difficulty, setDifficulty] = useState(question?.difficulty || 3)
   const [isSaving, setIsSaving] = useState(false)
   const [isDeleting, setIsDeleting] = useState(false)
@@ -67,15 +64,23 @@ export const QuestionEditor = ({ question }: QuestionEditorProps) => {
       return
     }
 
+    if (!articleId.trim()) {
+      setErrorMessage('Standard questions must remain directly linked to an article before they can be saved.')
+      return
+    }
+
     setIsSaving(true)
     try {
       const data = {
         text: text.trim(),
         topic_id: topicId.trim(),
+        article_id: articleId.trim(),
         options: options.slice(0, 4).map((optText, i) => ({
+          id: optionLabels[i],
           text: optText.trim(),
-          is_correct: i === correctAnswer,
+          is_correct: optionLabels[i] === correctAnswer,
         })),
+        correct_option_id: correctAnswer,
         rationale: rationale.trim() || undefined,
         difficulty,
       }
@@ -88,7 +93,7 @@ export const QuestionEditor = ({ question }: QuestionEditorProps) => {
         if (error) throw error
       }
 
-      router.push('/admin/questions')
+      router.push(ROUTES.admin.knowledgeQuestions)
       router.refresh()
     } catch (err) {
       console.error('Error saving question:', err)
@@ -107,7 +112,7 @@ export const QuestionEditor = ({ question }: QuestionEditorProps) => {
       const { error } = await deleteQuestion(question.id)
       if (error) throw error
 
-      router.push('/admin/questions')
+      router.push(ROUTES.admin.knowledgeQuestions)
       router.refresh()
     } catch (err) {
       console.error('Error deleting question:', err)
@@ -130,7 +135,7 @@ export const QuestionEditor = ({ question }: QuestionEditorProps) => {
             <SCIcon icon={ArrowLeft} size="sm" />
             Back to Questions
           </Link>
-          {question?.id && (
+          {question?.id && !readOnly && (
             <button
               onClick={() => setShowDeleteDialog(true)}
               disabled={isDeleting}
@@ -149,6 +154,12 @@ export const QuestionEditor = ({ question }: QuestionEditorProps) => {
           </div>
         )}
 
+        {questionType !== 'mcq' && (
+          <div className="px-4 py-3 rounded-md bg-warning-50 border border-warning text-warning text-sm">
+            This question uses the `{questionType}` type and must be handled in a dedicated exception workflow. The standard question editor is read-only for this type.
+          </div>
+        )}
+
         {/* Form */}
         <div className="space-y-6">
           {/* Question Text */}
@@ -157,6 +168,7 @@ export const QuestionEditor = ({ question }: QuestionEditorProps) => {
             <textarea
               value={text}
               onChange={(e) => setText(e.target.value)}
+              readOnly={readOnly || questionType !== 'mcq'}
               placeholder="Enter your question here..."
               rows={4}
               className="w-full px-3 py-2 rounded-md border border-input bg-background resize-none"
@@ -170,11 +182,25 @@ export const QuestionEditor = ({ question }: QuestionEditorProps) => {
               type="text"
               value={topicId}
               onChange={(e) => setTopicId(e.target.value)}
+              readOnly={readOnly || questionType !== 'mcq'}
               placeholder="Enter taxonomy node UUID..."
               className="w-full px-3 py-2 rounded-md border border-input bg-background"
             />
             <p className="text-xs text-muted-foreground mt-1">
               The UUID of the taxonomy node this question belongs to
+            </p>
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium mb-2">Linked Article</label>
+            <input
+              type="text"
+              value={articleId}
+              readOnly
+              className="w-full px-3 py-2 rounded-md border border-input bg-muted text-muted-foreground"
+            />
+            <p className="text-xs text-muted-foreground mt-1">
+              Standard questions must remain directly linked to their owning article. Publication checks apply at delivery time.
             </p>
           </div>
 
@@ -187,8 +213,9 @@ export const QuestionEditor = ({ question }: QuestionEditorProps) => {
                   <input
                     type="radio"
                     name="correct-answer"
-                    checked={correctAnswer === index}
-                    onChange={() => setCorrectAnswer(index)}
+                    checked={correctAnswer === optionLabels[index]}
+                    onChange={() => setCorrectAnswer(optionLabels[index])}
+                    disabled={readOnly || questionType !== 'mcq'}
                     className="h-4 w-4"
                   />
                   <span className="w-8 font-medium">{optionLabels[index]}</span>
@@ -196,10 +223,12 @@ export const QuestionEditor = ({ question }: QuestionEditorProps) => {
                     type="text"
                     value={option}
                     onChange={(e) => {
+                      if (readOnly || questionType !== 'mcq') return
                       const newOptions = [...options]
                       newOptions[index] = e.target.value
                       setOptions(newOptions)
                     }}
+                    readOnly={readOnly || questionType !== 'mcq'}
                     placeholder={`Option ${optionLabels[index]}...`}
                     className="flex-1 px-3 py-2 rounded-md border border-input bg-background"
                   />
@@ -214,6 +243,7 @@ export const QuestionEditor = ({ question }: QuestionEditorProps) => {
             <textarea
               value={rationale}
               onChange={(e) => setRationale(e.target.value)}
+              readOnly={readOnly || questionType !== 'mcq'}
               placeholder="Explain why the correct answer is correct..."
               rows={3}
               className="w-full px-3 py-2 rounded-md border border-input bg-background resize-none"
@@ -229,6 +259,7 @@ export const QuestionEditor = ({ question }: QuestionEditorProps) => {
               max="5"
               value={difficulty}
               onChange={(e) => setDifficulty(Number(e.target.value))}
+              disabled={readOnly || questionType !== 'mcq'}
               className="w-full"
             />
             <div className="flex justify-between text-xs text-muted-foreground mt-1">
@@ -247,14 +278,16 @@ export const QuestionEditor = ({ question }: QuestionEditorProps) => {
             <SCIcon icon={XCircle} size="sm" />
             Cancel
           </Link>
-          <button
-            onClick={handleSave}
-            disabled={isSaving}
-            className="flex-1 flex items-center justify-center gap-2 px-4 py-2 rounded-md bg-primary text-primary-foreground hover:bg-primary/90 disabled:opacity-50"
-          >
-            <SCIcon icon={FloppyDisk} size="sm" />
-            {isSaving ? 'Saving...' : question?.id ? 'Update Question' : 'Create Question'}
-          </button>
+          {!readOnly ? (
+            <button
+              onClick={handleSave}
+              disabled={isSaving || questionType !== 'mcq'}
+              className="flex-1 flex items-center justify-center gap-2 px-4 py-2 rounded-md bg-primary text-primary-foreground hover:bg-primary/90 disabled:opacity-50"
+            >
+              <SCIcon icon={FloppyDisk} size="sm" />
+              {isSaving ? 'Saving...' : question?.id ? 'Update Question' : 'Create Question'}
+            </button>
+          ) : null}
         </div>
 
         {/* Delete Confirmation Dialog */}

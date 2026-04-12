@@ -1,7 +1,5 @@
 import { notFound, redirect } from 'next/navigation'
 import { Suspense } from 'react'
-import { createServerClient } from '@supabase/ssr'
-import { cookies } from 'next/headers'
 
 import { getArticleSources } from '@/lib/actions/wiki-actions'
 import { getEIPromptsForArticle, getUserEIResponsesForArticle } from '@/lib/actions/ei-prompts'
@@ -11,7 +9,8 @@ import { estimateReadingTime } from '@/lib/wiki-markdown'
 import { getTeachBackCriteria } from '@/lib/actions/teach-back'
 import type { TaxonomyNode } from '@/lib/actions/taxonomy'
 import { ROUTES } from '@/lib/routes'
-import { getUserRole } from '@/lib/admin/roles'
+import { canManageContent, canReviewContent } from '@/lib/admin/roles'
+import { createAdminClient } from '@/lib/supabase/admin'
 
 const mapDifficulty = (level?: number | null): 'Foundational' | 'Intermediate' | 'Advanced' => {
   if (!level || level <= 1) return 'Foundational'
@@ -40,28 +39,18 @@ async function getRelatedTopics(node: TaxonomyNode | null, supabase: any): Promi
  * fallbacks where appropriate.
  */
 export default async function PreviewPage(props: { params: Promise<{ previewId: string }> }) {
-  const role = await getUserRole()
-  if (!role) {
+  const [canManage, canReview] = await Promise.all([
+    canManageContent(),
+    canReviewContent(),
+  ])
+  if (!canManage && !canReview) {
     redirect(ROUTES.admin.login)
-  }
-
-  if (role !== 'super_admin' && role !== 'content_admin') {
-    redirect(ROUTES.dashboard.root)
   }
 
   const params = await props.params
   const previewId = params.previewId
 
-  const cookieStore = await cookies()
-  const supabase = createServerClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
-    {
-      cookies: {
-        getAll() { return cookieStore.getAll() }
-      }
-    }
-  )
+  const supabase = createAdminClient()
 
   // 1. Fetch draft from DB
   const { data: draft, error: draftError } = await supabase

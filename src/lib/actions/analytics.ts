@@ -1,7 +1,7 @@
 'use server'
 
 import { unstable_cache } from 'next/cache'
-import { createClient, getUser } from '@/lib/supabase/server'
+import { createClient, getUser, createServiceClient } from '@/lib/supabase/server'
 import type { HeatmapCluster, HeatmapNode, NodeState } from '@/components/dashboard/TaxonomyHeatmap'
 import { PACING_TARGET_MS, PASSING_ACCURACY, RETENTION_HALF_LIFE_DAYS, getSubjectColor } from '@/lib/constants/analytics'
 import { fetchTaxonomyNodeMap, buildLevel1Resolver, type TaxNode, wrapResult, wrapError, type AnalyticsResult } from '@/lib/actions/analytics/shared-helpers'
@@ -305,7 +305,7 @@ export const getStaminaCurveData = async (): Promise<AnalyticsResult<StaminaBuck
 
 const getPacingInsightsInternal = async (userId: string): Promise<AnalyticsResult<PacingInsightItem[]>> => {
   try {
-    const supabase = await createClient()
+    const supabase = await createServiceClient()
 
     const [interactionsRes, statsRes] = await Promise.all([
       supabase

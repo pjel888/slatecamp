@@ -3,12 +3,13 @@
 // discrimination through contextual interleaving (Hwang 2025).
 
 import { createServiceClient } from '@/lib/supabase/server'
-import { normalizeOptions } from '@/lib/utils/question'
+import { filterQuestionsReadableForStage } from '@/lib/admin/editor-integrity/standard-question'
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
 interface RawQuestion {
   question_id: string
+  article_id?: string | null
   topic_id: string
   text: string
   options: unknown
@@ -189,7 +190,7 @@ const fetchQuestions = async (
     let query = supabase
       .from('questions')
       .select(
-        'question_id, topic_id, text, options, difficulty, prompt_image_url, question_type',
+        'question_id, article_id, topic_id, text, options, difficulty, prompt_image_url, question_type',
       )
       .in('topic_id', batch)
       .limit(limit)
@@ -204,7 +205,18 @@ const fetchQuestions = async (
     if (data) allQuestions.push(...(data as RawQuestion[]))
   }
 
-  return allQuestions
+  const { questions: readableQuestions, error } = await filterQuestionsReadableForStage<RawQuestion>(
+    supabase as any,
+    allQuestions,
+    'delivery',
+  )
+
+  if (error) {
+    console.warn('[interleaved-selection] delivery filter failed:', error)
+    return []
+  }
+
+  return readableQuestions
 }
 
 /**

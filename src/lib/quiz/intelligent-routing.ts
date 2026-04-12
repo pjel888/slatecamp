@@ -8,9 +8,11 @@
 // ─────────────────────────────────────────────────────────────────────────────
 
 import { SupabaseClient } from '@supabase/supabase-js'
+import { filterQuestionsReadableForStage } from '@/lib/admin/editor-integrity/standard-question'
 
 interface QuestionPoolRow {
   question_id: string
+  article_id?: string | null
   topic_id: string
   text: string
   options: unknown
@@ -77,7 +79,19 @@ const queryQuestionsChunked = async (
 
   // No internal shuffle needed — perChunkLimit distributes fairly across chunks.
   // Final pool shuffle in selectQuestionsWithRouting handles randomization.
-  return chunkResults.flat().slice(0, limit)
+  const combinedResults = chunkResults.flat()
+  const { questions: readableQuestions, error } = await filterQuestionsReadableForStage<QuestionPoolRow>(
+    supabase,
+    combinedResults,
+    'delivery',
+  )
+
+  if (error) {
+    console.warn('[intelligent-routing] delivery filter failed:', error)
+    return []
+  }
+
+  return readableQuestions.slice(0, limit)
 }
 
 /**
@@ -92,7 +106,8 @@ export const selectQuestionsWithRouting = async ({
   difficultyRange,
   excludeQuestionIds = [],
 }: RoutingOptions): Promise<QuestionPoolRow[]> => {
-  const QUESTION_COLS = 'question_id, topic_id, text, options, difficulty, prompt_image_url, question_type, rationale, explanation'
+  const QUESTION_COLS =
+    'question_id, article_id, topic_id, text, options, difficulty, prompt_image_url, question_type, rationale, explanation'
 
   // 1. Calculate Quotas
   const unseenQuota = Math.floor(questionCount * 0.6)

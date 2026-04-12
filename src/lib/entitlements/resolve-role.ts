@@ -1,5 +1,5 @@
 import { cache } from 'react'
-import { createClient } from '@/lib/supabase/server'
+import { createClient, getUser } from '@/lib/supabase/server'
 import type { CanonicalRole, RoleResolution, RoleSource } from './types'
 export type { RoleResolution } from './types'
 

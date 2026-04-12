@@ -7,6 +7,9 @@ import { revalidatePath, revalidateTag } from 'next/cache'
 import { CACHE_TAGS } from '../cache-tags'
 import { ROUTES } from '@/lib/routes'
 import { logServerError } from '@/lib/logging/server'
+import { normalizeEditorStatus } from '@/lib/admin/editor-workflow'
+import { compileMdxPreview } from './content'
+import { countStandardQuestionsForArticle } from '@/lib/admin/editor-integrity/standard-question'
 
 export const getPipelineArticles = async () => {
   const supabase = await createClient()
@@ -37,9 +40,43 @@ export const updateArticleStatus = async (articleId: string, newStatus: string) 
   }
 
   const supabase = createAdminClient()
+  const canonicalStatus = normalizeEditorStatus(newStatus)
+
+  if (canonicalStatus === 'published') {
+    const { data: article, error: articleError } = await supabase
+      .from('wiki_articles')
+      .select('article_id, content, status')
+      .eq('article_id', articleId)
+      .maybeSingle()
+
+    if (articleError || !article) {
+      throw new Error('Article not found for publish validation')
+    }
+
+    const previewValidation = await compileMdxPreview(article.content)
+    if (previewValidation.error) {
+      throw new Error(`Cannot publish article with invalid MDX: ${previewValidation.error}`)
+    }
+
+    if (normalizeEditorStatus(article.status) !== 'approved') {
+      throw new Error('Cannot publish article until it has been approved in review')
+    }
+
+    const { count: questionCount, error: questionCountError } =
+      await countStandardQuestionsForArticle(supabase as any, articleId)
+
+    if (questionCountError) {
+      throw new Error(`Failed to validate article question coverage: ${questionCountError.message}`)
+    }
+
+    if ((questionCount || 0) < 10) {
+      throw new Error('Cannot publish article with fewer than 10 directly linked standard questions')
+    }
+  }
+
   const { error } = await supabase
     .from('wiki_articles')
-    .update({ status: newStatus, updated_at: new Date().toISOString() })
+    .update({ status: canonicalStatus, updated_at: new Date().toISOString() })
     .eq('article_id', articleId)
 
   if (error) {
@@ -51,7 +88,7 @@ export const updateArticleStatus = async (articleId: string, newStatus: string) 
         routeOrAction: 'admin:pipeline.updateArticleStatus',
         metadata: {
           articleId,
-          newStatus,
+          newStatus: canonicalStatus,
         },
       },
       error,

@@ -138,7 +138,7 @@ const CoverageCell = ({ cell }: { cell: CoverageCellData }) => {
 
   return (
     <Link
-      href={`/admin/content?node=${cell.node_id}`}
+      href={`/admin/knowledge?topic=${cell.node_id}&view=articles`}
       className={`
         relative flex flex-col items-center justify-center
         rounded-sm border p-1 min-h-[40px]

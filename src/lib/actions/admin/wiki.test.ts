@@ -15,6 +15,16 @@ const insertTaxonomyMock = mock(() =>
     error: { message: 'mapping failed' },
   }),
 )
+const updateEqMock = mock(() => Promise.resolve({ error: null }))
+const articleMaybeSingleMock = mock(() =>
+  Promise.resolve({
+    data: { article_id: 'article-1', content: '## Heading\n\nBody' },
+    error: null,
+  }),
+)
+const compileMdxPreviewMock = mock(() =>
+  Promise.resolve({ source: {}, error: null }),
+)
 
 mock.module('@/lib/supabase/admin', () => ({
   createAdminClient: () => ({
@@ -22,6 +32,14 @@ mock.module('@/lib/supabase/admin', () => ({
       if (table === 'wiki_articles') {
         return {
           insert: insertArticleMock,
+          select: mock(() => ({
+            eq: mock(() => ({
+              maybeSingle: articleMaybeSingleMock,
+            })),
+          })),
+          update: mock(() => ({
+            eq: updateEqMock,
+          })),
         }
       }
 
@@ -51,13 +69,16 @@ mock.module('@/lib/supabase/server', () => ({
 }))
 
 const canManageContentMock = mock(() => Promise.resolve(true))
+const canReviewContentMock = mock(() => Promise.resolve(true))
 mock.module('@/lib/admin/roles', () => ({
   canManageContent: canManageContentMock,
+  canReviewContent: canReviewContentMock,
 }))
 
 mock.module('next/cache', () => ({
   revalidateTag: mock(),
   revalidatePath: mock(),
+  unstable_cache: (fn: (...args: any[]) => any) => fn,
 }))
 
 const logServerErrorMock = mock(() => Promise.resolve())
@@ -65,12 +86,23 @@ mock.module('@/lib/logging/server', () => ({
   logServerError: logServerErrorMock,
 }))
 
-const { createWikiArticle } = await import('./wiki')
+mock.module('./content', () => ({
+  compileMdxPreview: compileMdxPreviewMock,
+}))
+
+const {
+  createWikiArticle,
+  approveWikiArticleReview,
+  requestWikiArticleChanges,
+} = await import('./wiki')
 
 describe('admin/wiki', () => {
   beforeEach(() => {
     insertArticleMock.mockClear()
     insertTaxonomyMock.mockClear()
+    updateEqMock.mockClear()
+    articleMaybeSingleMock.mockClear()
+    compileMdxPreviewMock.mockClear()
     logServerErrorMock.mockClear()
   })
 
@@ -83,5 +115,18 @@ describe('admin/wiki', () => {
 
     expect((result.error as any)?.message).toBe('mapping failed')
     expect(logServerErrorMock).toHaveBeenCalledTimes(1)
+  })
+
+  test('approves review items through the canonical review action', async () => {
+    const result = await approveWikiArticleReview('article-1', 'Looks good')
+
+    expect(result.error).toBeNull()
+    expect(updateEqMock).toHaveBeenCalledTimes(1)
+  })
+
+  test('requires comments when requesting changes', async () => {
+    await expect(requestWikiArticleChanges('article-1', '   ')).rejects.toThrow(
+      'Reviewer comments are required',
+    )
   })
 })

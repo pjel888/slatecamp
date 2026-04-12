@@ -18,6 +18,7 @@ import {
 } from '@/components/ui/dialog'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
+import { normalizeEditorStatus } from '@/lib/admin/editor-workflow'
 
 interface Asset {
   id: string
@@ -36,14 +37,18 @@ interface AssetDetailViewProps {
 
 const statusVariant: Record<string, 'default' | 'secondary' | 'destructive' | 'outline'> = {
   draft: 'secondary',
-  pending_review: 'outline',
+  in_review: 'outline',
+  changes_requested: 'outline',
+  approved: 'secondary',
   published: 'default',
   archived: 'destructive',
 }
 
 const statusLabels: Record<string, string> = {
   draft: 'Draft',
-  pending_review: 'Pending Review',
+  in_review: 'In Review',
+  changes_requested: 'Changes Requested',
+  approved: 'Approved',
   published: 'Published',
   archived: 'Archived',
 }
@@ -125,8 +130,8 @@ export const AssetDetailView = ({ asset }: AssetDetailViewProps) => {
             </CardHeader>
             <CardContent className="p-4 pt-0 space-y-3">
               <DetailRow label="Status">
-                <Badge variant={statusVariant[asset.status] ?? 'secondary'}>
-                  {statusLabels[asset.status] ?? asset.status}
+                <Badge variant={statusVariant[normalizeEditorStatus(asset.status)] ?? 'secondary'}>
+                  {statusLabels[normalizeEditorStatus(asset.status)] ?? asset.status}
                 </Badge>
               </DetailRow>
 

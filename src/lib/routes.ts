@@ -127,6 +127,8 @@ export const ROUTES = {
     content: '/admin/content',
     knowledge: '/admin/knowledge',
     knowledgeQuestions: '/admin/knowledge/questions',
+    knowledgeQuestionDesignProblems: '/admin/knowledge/questions/design-problems',
+    knowledgeQuestionScenarios: '/admin/knowledge/questions/scenarios',
     pipeline: '/admin/pipeline',
     questions: '/admin/questions',
     reviews: '/admin/reviews',
@@ -138,6 +140,8 @@ export const ROUTES = {
     // Dynamic helpers
     article: (id: string) => `/admin/knowledge/${id}` as const,
     question: (id: string) => `/admin/knowledge/questions/${id}` as const,
+    questionDesignProblem: (id: string) => `/admin/knowledge/questions/design-problems/${id}` as const,
+    questionScenario: (id: string) => `/admin/knowledge/questions/scenarios/${id}` as const,
     preview: (id: string) => `/admin/preview/${id}` as const,
   },
 

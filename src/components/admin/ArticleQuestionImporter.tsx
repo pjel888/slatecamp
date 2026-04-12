@@ -8,6 +8,7 @@ import { Textarea } from '@/components/ui/textarea'
 import { Label } from '@/components/ui/label'
 import { importQuestionsForArticle } from '@/lib/actions/admin/content'
 import { cn } from '@/lib/utils'
+import { validateArticleOwnedQuestionArray } from '@/lib/import/question-import-contract'
 
 interface ArticleQuestionImporterProps {
   articleId: string
@@ -39,7 +40,7 @@ export function ArticleQuestionImporter({ articleId, topicId, onImportComplete }
       let parsed
       try {
         parsed = JSON.parse(jsonInput)
-      } catch (e) {
+      } catch {
         throw new Error('Invalid JSON format')
       }
 
@@ -48,6 +49,8 @@ export function ArticleQuestionImporter({ articleId, topicId, onImportComplete }
       if (!Array.isArray(parsed)) {
         throw new Error('Data must be a JSON array')
       }
+
+      validateArticleOwnedQuestionArray(parsed, topicId)
 
       setStage('importing')
       const importResult = await importQuestionsForArticle(articleId, topicId, jsonInput)
@@ -99,7 +102,7 @@ export function ArticleQuestionImporter({ articleId, topicId, onImportComplete }
           <DialogHeader>
             <DialogTitle>Import Questions for Article</DialogTitle>
             <DialogDescription>
-              Paste JSON array of questions. Each question should have: questionStem, answerOptions, correctOption, rationale.
+              Paste a JSON array of standard article-owned questions. Each question should have: questionStem, answerOptions, correctOption, rationale, and optional difficulty.
             </DialogDescription>
           </DialogHeader>
 

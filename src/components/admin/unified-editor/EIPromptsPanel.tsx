@@ -3,6 +3,7 @@
 import { useState, useCallback, useMemo } from 'react'
 import { useDirtyState } from './DirtyStateProvider'
 import type { EIPromptData, ParsedHeading, EIPromptDraft } from './types'
+import { normalizeEditorStatus } from '@/lib/admin/editor-workflow'
 
 // ─── Props ───────────────────────────────────────────────────
 
@@ -17,14 +18,18 @@ interface EIPromptsPanelProps {
 
 const STATUS_STYLES: Record<string, string> = {
   draft: 'bg-warning-50 text-warning',
-  review: 'bg-warning-50 text-warning',
+  in_review: 'bg-warning-50 text-warning',
+  changes_requested: 'bg-warning-50 text-warning',
+  approved: 'bg-primary-50 text-camp-cobalt',
   published: 'bg-success-50 text-emerald',
   archived: 'bg-surface-light text-text-tertiary',
 }
 
 const STATUS_LABELS: Record<string, string> = {
   draft: 'Draft',
-  review: 'Review',
+  in_review: 'In Review',
+  changes_requested: 'Changes Requested',
+  approved: 'Approved',
   published: 'Published',
   archived: 'Archived',
 }
@@ -75,6 +80,7 @@ const PromptCard = ({
     suggestion: string | null
   }>({ status: 'none', suggestion: null })
   const [showOptions, setShowOptions] = useState(prompt.options.length > 0)
+  const normalizedStatus = normalizeEditorStatus(prompt.status)
 
   const validateHeading = useCallback(
     (value: string) => {
@@ -179,9 +185,9 @@ const PromptCard = ({
 
           {/* Status badge */}
           <span
-            className={`shrink-0 rounded-sm px-1.5 py-0.5 text-[11px] font-medium ${STATUS_STYLES[prompt.status] ?? STATUS_STYLES.draft}`}
+            className={`shrink-0 rounded-sm px-1.5 py-0.5 text-[11px] font-medium ${STATUS_STYLES[normalizedStatus] ?? STATUS_STYLES.draft}`}
           >
-            {STATUS_LABELS[prompt.status] ?? 'Draft'}
+            {STATUS_LABELS[normalizedStatus] ?? 'Draft'}
           </span>
 
           {/* Active indicator */}
@@ -379,14 +385,16 @@ const PromptCard = ({
                 Status
               </label>
               <select
-                value={prompt.status}
+                value={normalizedStatus}
                 onChange={(e) =>
                   onUpdate(prompt.prompt_id, { status: e.target.value })
                 }
                 className="cursor-pointer rounded-sm border border-border bg-card px-2.5 py-1.5 text-xs text-text-primary outline-none transition-colors duration-150 ease-out focus:border-camp-cobalt focus:ring-1 focus:ring-camp-cobalt/30"
               >
                 <option value="draft">Draft</option>
-                <option value="review">Review</option>
+                <option value="in_review">In Review</option>
+                <option value="changes_requested">Changes Requested</option>
+                <option value="approved">Approved</option>
                 <option value="published">Published</option>
                 <option value="archived">Archived</option>
               </select>
@@ -670,18 +678,20 @@ const DraftCard = ({ draft, headings, onUpdate, onRemove }: DraftCardProps) => {
             <label className="mb-1 block text-[11px] font-medium uppercase tracking-wide text-text-tertiary">
               Status
             </label>
-            <select
-              value={draft.status}
-              onChange={(e) =>
-                onUpdate(draft._tempId, { status: e.target.value })
-              }
+              <select
+                value={normalizeEditorStatus(draft.status)}
+                onChange={(e) =>
+                  onUpdate(draft._tempId, { status: e.target.value })
+                }
               className="cursor-pointer rounded-sm border border-border bg-card px-2.5 py-1.5 text-xs text-text-primary outline-none transition-colors duration-150 ease-out focus:border-camp-cobalt focus:ring-1 focus:ring-camp-cobalt/30"
-            >
-              <option value="draft">Draft</option>
-              <option value="review">Review</option>
-              <option value="published">Published</option>
-              <option value="archived">Archived</option>
-            </select>
+              >
+                <option value="draft">Draft</option>
+                <option value="in_review">In Review</option>
+                <option value="changes_requested">Changes Requested</option>
+                <option value="approved">Approved</option>
+                <option value="published">Published</option>
+                <option value="archived">Archived</option>
+              </select>
           </div>
 
           <div>

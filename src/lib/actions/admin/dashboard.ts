@@ -5,6 +5,7 @@ import { createAdminClient } from '@/lib/supabase/admin'
 import { canReviewContent } from '@/lib/admin/roles'
 import type { AuditLog } from '@/lib/audit/audit-queries'
 import { unstable_cache } from 'next/cache'
+import { REVIEW_QUEUE_STATUSES } from '@/lib/admin/editor-workflow'
 
 const fetchAdminStats = unstable_cache(
   async () => {
@@ -192,7 +193,7 @@ const fetchNeedsAttentionData = unstable_cache(
       supabase
         .from('wiki_articles')
         .select('article_id', { count: 'exact', head: true })
-        .eq('status', 'review'),
+        .in('status', [...REVIEW_QUEUE_STATUSES]),
       supabase
         .from('questions')
         .select('question_id', { count: 'exact', head: true })

@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { cn } from '@/lib/utils'
+import { Card, CardContent } from '@/components/ui/card'
 
 interface EmptyStateProps {
   icon?: React.ReactNode
@@ -8,6 +9,8 @@ interface EmptyStateProps {
   /** Slot for actions (buttons, links, etc) */
   action?: React.ReactNode
   className?: string
+  /** If true, wraps the empty state in a dashed Card (common for charts) */
+  variant?: 'default' | 'card'
 }
 
 /**
@@ -23,19 +26,25 @@ const EmptyState = ({
   description,
   action,
   className,
+  variant = 'default',
 }: EmptyStateProps) => {
-  return (
+  const content = (
     <div
       data-slot="empty-state"
       className={cn(
-        'flex flex-col items-center justify-center py-12 text-center animate-in fade-in duration-300',
+        'flex flex-col items-center justify-center text-center animate-in fade-in duration-300',
+        variant === 'default' && 'py-12',
+        variant === 'card' && 'h-full p-4',
         className,
       )}
     >
       {icon && (
         <div 
           data-slot="empty-state-icon"
-          className="flex h-12 w-12 items-center justify-center rounded-full bg-muted text-muted-foreground transition-transform duration-300 hover:scale-105"
+          className={cn(
+            "flex items-center justify-center rounded-full bg-muted text-muted-foreground transition-transform duration-300 hover:scale-105",
+            variant === 'default' ? "h-12 w-12" : "h-10 w-10 mb-2"
+          )}
         >
           {icon}
         </div>
@@ -44,7 +53,10 @@ const EmptyState = ({
       {title && (
         <h3 
           data-slot="empty-state-title"
-          className={cn('text-sm font-medium text-foreground', icon && 'mt-4')}
+          className={cn(
+            'text-sm font-medium text-foreground', 
+            icon && variant === 'default' && 'mt-4'
+          )}
         >
           {title}
         </h3>
@@ -53,7 +65,10 @@ const EmptyState = ({
       {description && (
         <p 
           data-slot="empty-state-description"
-          className="mt-1 max-w-sm text-xs text-muted-foreground leading-relaxed"
+          className={cn(
+            "max-w-sm text-xs text-muted-foreground leading-relaxed",
+            variant === 'default' ? "mt-1" : "mt-0.5"
+          )}
         >
           {description}
         </p>
@@ -62,13 +77,25 @@ const EmptyState = ({
       {action && (
         <div 
           data-slot="empty-state-action"
-          className="mt-6"
+          className={variant === 'default' ? "mt-6" : "mt-3"}
         >
           {action}
         </div>
       )}
     </div>
   )
+
+  if (variant === 'card') {
+    return (
+      <Card className="border-dashed border-border/50 h-full flex flex-col justify-center">
+        <CardContent className="p-0">
+          {content}
+        </CardContent>
+      </Card>
+    )
+  }
+
+  return content
 }
 
 /**

@@ -12,6 +12,7 @@ import { EmptyState } from '@/components/shared/empty-state'
 import { cn } from '@/lib/utils'
 import { Eyebrow } from '@/components/ui/eyebrow'
 import { QuestionsTableClient } from '@/components/admin/QuestionsTableClient'
+import { normalizeEditorStatus } from '@/lib/admin/editor-workflow'
 
 // ─── Types ───────────────────────────────────────────────────
 
@@ -51,6 +52,8 @@ interface ContentEditorIndexProps {
   taxonomyTree: TaxonomyTreeNode[]
   stats: Stats
   defaultViewMode?: ViewMode
+  defaultSearchQuery?: string
+  defaultQuestionFilter?: string
 }
 
 // ─── View Mode ───────────────────────────────────────────────
@@ -59,12 +62,13 @@ type ViewMode = 'articles' | 'questions'
 
 // ─── Status Filter ───────────────────────────────────────────
 
-type StatusFilter = 'all' | 'draft' | 'review' | 'published'
+type StatusFilter = 'all' | 'draft' | 'in_review' | 'approved' | 'published'
 
 const STATUS_OPTIONS: { value: StatusFilter; label: string }[] = [
   { value: 'all', label: 'All' },
   { value: 'draft', label: 'Draft' },
-  { value: 'review', label: 'Review' },
+  { value: 'in_review', label: 'Review' },
+  { value: 'approved', label: 'Approved' },
   { value: 'published', label: 'Published' },
 ]
 
@@ -107,6 +111,8 @@ export const ContentEditorIndex = ({
   taxonomyTree,
   stats,
   defaultViewMode = 'articles',
+  defaultSearchQuery = '',
+  defaultQuestionFilter = '',
 }: ContentEditorIndexProps) => {
   const router = useRouter()
   const searchParams = useSearchParams()
@@ -121,7 +127,7 @@ export const ContentEditorIndex = ({
     return searchParams.get('topic')
   })
 
-  const [searchQuery, setSearchQuery] = useState('')
+  const [searchQuery, setSearchQuery] = useState(defaultSearchQuery)
   const [statusFilter, setStatusFilter] = useState<StatusFilter>('all')
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false)
 
@@ -174,7 +180,7 @@ export const ContentEditorIndex = ({
 
     // Status filter
     if (statusFilter !== 'all') {
-      result = result.filter((a) => a.status === statusFilter)
+      result = result.filter((a) => normalizeEditorStatus(a.status) === statusFilter)
     }
 
     // Search filter
@@ -244,7 +250,7 @@ export const ContentEditorIndex = ({
               onNavigate={(href) => {
                 // Intercept navigation to update local filter instead of hard redirect
                 const parts = href.split('/')
-                const slug = parts[parts.length - 1]
+                const _slug = parts[parts.length - 1]
                 // Note: TaxonomyTree implementation details might vary,
                 // but usually we'd find the node by slug here.
                 // We'll let users click to filter
@@ -508,9 +514,11 @@ export const ContentEditorIndex = ({
                             status={
                               article.status === 'published'
                                 ? 'published'
-                                : article.status === 'review'
-                                  ? 'review'
-                                  : 'draft'
+                                : normalizeEditorStatus(article.status) === 'approved'
+                                  ? 'published'
+                                  : normalizeEditorStatus(article.status) === 'in_review'
+                                    ? 'review'
+                                    : 'draft'
                             }
                           />
                           {article.difficulty_label && (
@@ -601,6 +609,7 @@ export const ContentEditorIndex = ({
               taxonomyTree={taxonomyTree as any}
               externalSelectedNodeId={selectedNodeId}
               externalSearchQuery={searchQuery}
+              externalFilter={defaultQuestionFilter}
             />
           </div>
         )}

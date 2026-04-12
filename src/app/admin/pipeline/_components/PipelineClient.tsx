@@ -5,6 +5,7 @@ import { SearchInput } from '@/components/ui/input'
 import { PipelineCard } from './PipelineCard'
 import { Card } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
+import { normalizeEditorStatus } from '@/lib/admin/editor-workflow'
 
 interface PipelineArticle {
   article_id: string
@@ -25,10 +26,16 @@ const COLUMNS = [
     emptyText: 'No drafts',
   },
   {
-    key: 'review',
+    key: 'in_review',
     label: 'In Review',
     badgeVariant: 'info' as const,
     emptyText: 'No articles in review',
+  },
+  {
+    key: 'approved',
+    label: 'Approved',
+    badgeVariant: 'secondary' as const,
+    emptyText: 'No approved articles',
   },
   {
     key: 'published',
@@ -54,12 +61,18 @@ export const PipelineClient = ({ initialArticles }: { initialArticles: PipelineA
 
   const grouped: Record<string, PipelineArticle[]> = {
     draft: [],
-    review: [],
+    in_review: [],
+    approved: [],
     published: [],
   }
 
   for (const article of filtered) {
-    const bucket = grouped[article.status]
+    const normalizedStatus = normalizeEditorStatus(article.status)
+    const bucketKey =
+      normalizedStatus === 'changes_requested'
+        ? 'draft'
+        : normalizedStatus
+    const bucket = grouped[bucketKey]
     if (bucket) {
       bucket.push(article)
     } else {

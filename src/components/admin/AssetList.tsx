@@ -2,9 +2,10 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { Cube, Plus, MagnifyingGlass, PencilSimple, Trash } from '@phosphor-icons/react/dist/ssr'
+import { Cube, Plus, MagnifyingGlass, PencilSimple } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
+import { normalizeEditorStatus } from '@/lib/admin/editor-workflow'
 
 interface Asset {
   id: string
@@ -23,14 +24,18 @@ interface AssetListProps {
 
 const statusLabels: Record<string, string> = {
   draft: 'Draft',
-  pending_review: 'Pending Review',
+  in_review: 'In Review',
+  changes_requested: 'Changes Requested',
+  approved: 'Approved',
   published: 'Published',
   archived: 'Archived',
 }
 
 const statusColors: Record<string, string> = {
   draft: 'bg-muted text-text-secondary',
-  pending_review: 'bg-warning-50 text-warning',
+  in_review: 'bg-warning-50 text-warning',
+  changes_requested: 'bg-warning-50 text-warning',
+  approved: 'bg-primary-50 text-camp-cobalt',
   published: 'bg-success-50 text-emerald',
   archived: 'bg-destructive-50 text-destructive',
 }
@@ -43,7 +48,7 @@ export function AssetList({ initialAssets }: AssetListProps) {
 
   const filteredAssets = assets.filter(a => {
     const matchesSearch = a.name.toLowerCase().includes(searchQuery.toLowerCase())
-    const matchesStatus = statusFilter === null || a.status === statusFilter
+    const matchesStatus = statusFilter === null || normalizeEditorStatus(a.status) === statusFilter
     const matchesSystem = systemFilter === null || (a.metadata as any)?.system === systemFilter
     return matchesSearch && matchesStatus && matchesSystem
   })
@@ -122,9 +127,9 @@ export function AssetList({ initialAssets }: AssetListProps) {
                   <h3 className="font-medium truncate">{asset.name}</h3>
                   <span className={cn(
                     "inline-flex px-2 py-0.5 rounded-full text-xs font-medium",
-                    statusColors[asset.status]
+                    statusColors[normalizeEditorStatus(asset.status)]
                   )}>
-                    {statusLabels[asset.status]}
+                    {statusLabels[normalizeEditorStatus(asset.status)]}
                   </span>
                 </div>
                 <p className="text-xs text-muted-foreground mb-3">
