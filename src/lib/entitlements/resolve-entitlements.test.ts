@@ -88,7 +88,7 @@ describe('resolve entitlements', () => {
     ).toBe(true)
     expect(
       evaluateFeatureAccess(entitlements, ENTITLEMENT_FEATURE_KEYS.adminCms).allowed,
-    ).toBe(false)
+    ).toBe(true)
   })
 
   test('honors explicit feature overrides for 3d lab', () => {

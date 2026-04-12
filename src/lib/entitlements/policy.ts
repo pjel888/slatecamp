@@ -20,6 +20,9 @@ const ADMIN_CMS_ROLES: ReadonlySet<CanonicalRole> = new Set([
   'super_admin',
   'content_admin',
   'sme_reviewer',
+  'admin',
+  'developer',
+  'ceo',
 ])
 
 const OVERRIDE_WRITE_ROLES: ReadonlySet<CanonicalRole> = new Set([
@@ -53,7 +56,12 @@ export const canAccessCeoPortalForRole = (role: CanonicalRole): boolean =>
   CEO_PORTAL_ROLES.has(role)
 
 export const canReviewContentForRole = (role: CanonicalRole): boolean =>
-  role === 'super_admin' || role === 'content_admin' || role === 'sme_reviewer'
+  role === 'super_admin' ||
+  role === 'content_admin' ||
+  role === 'sme_reviewer' ||
+  role === 'admin' ||
+  role === 'developer' ||
+  role === 'ceo'
 
 export const canManageUsersForRole = (role: CanonicalRole): boolean =>
   MANAGE_USERS_ROLES.has(role)

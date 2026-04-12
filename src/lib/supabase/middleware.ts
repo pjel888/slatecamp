@@ -105,12 +105,12 @@ export const updateSession = async (request: NextRequest) => {
     return redirectWithCookies(ROUTES.dashboard.root);
   }
 
+  const isAdminPath = (pathname === ROUTES.admin.root || pathname.startsWith(ROUTES.admin.root + '/')) && pathname !== ROUTES.admin.login;
+  const isDeveloperPath = pathname === ROUTES.developer.root || pathname.startsWith(ROUTES.developer.root + '/');
+  const isCeoPath = pathname === ROUTES.ceo.root || pathname.startsWith(ROUTES.ceo.root + '/');
+
   // 6. PRIVILEGED ROUTE GATING (defense-in-depth — app layouts also check)
-  if (
-    pathname.startsWith('/admin/') && pathname !== ROUTES.admin.login ||
-    pathname.startsWith('/developer') ||
-    pathname.startsWith('/ceo')
-  ) {
+  if (isAdminPath || isDeveloperPath || isCeoPath) {
     const [profileResult, roleRowsResult] = await Promise.all([
       supabase.from('profiles').select('role').eq('id', user.id).maybeSingle(),
       supabase
@@ -132,9 +132,9 @@ export const updateSession = async (request: NextRequest) => {
     const allowDeveloperBypass = process.env.ALLOW_DEV_PORTAL_BYPASS === 'true'
 
     const canAccess =
-      pathname.startsWith('/admin/')
+      isAdminPath
         ? canAccessAdminCmsForRole(roleResolution.normalizedRole)
-        : pathname.startsWith('/developer')
+        : isDeveloperPath
           ? canAccessDeveloperPortalForRole(
               roleResolution.normalizedRole,
               allowDeveloperBypass,

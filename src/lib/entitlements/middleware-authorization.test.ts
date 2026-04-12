@@ -8,7 +8,7 @@ import {
 } from './policy'
 
 describe('middleware authorization matrix', () => {
-  test('allows admin cms only for content/admin review roles', () => {
+  test('allows admin cms for content/admin review roles', () => {
     expect(
       canAccessAdminCmsForRole(
         resolveRoleFromInputs({ appMetadataRole: 'content_admin', email: 'a@b.com' }).normalizedRole,
@@ -16,9 +16,14 @@ describe('middleware authorization matrix', () => {
     ).toBe(true)
     expect(
       canAccessAdminCmsForRole(
+        resolveRoleFromInputs({ appMetadataRole: 'admin', email: 'admin@example.com' }).normalizedRole,
+      ),
+    ).toBe(true)
+    expect(
+      canAccessAdminCmsForRole(
         resolveRoleFromInputs({ appMetadataRole: 'developer', email: 'a@b.com' }).normalizedRole,
       ),
-    ).toBe(false)
+    ).toBe(true)
   })
 
   test('allows developer portal only through tooling roles or explicit bypass', () => {

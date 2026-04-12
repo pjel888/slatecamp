@@ -11,7 +11,7 @@ import {
 describe('entitlement policy', () => {
   test('keeps developer tooling separate from admin cms access', () => {
     expect(canSeeDevToolbarForRole('developer')).toBe(true)
-    expect(canAccessAdminCmsForRole('developer')).toBe(false)
+    expect(canAccessAdminCmsForRole('developer')).toBe(true)
   })
 
   test('allows reviewer content access without developer tooling', () => {
@@ -27,6 +27,10 @@ describe('entitlement policy', () => {
   test('limits override writes to internal engineering roles', () => {
     expect(canWriteDevOverridesForRole('developer')).toBe(true)
     expect(canWriteDevOverridesForRole('ceo')).toBe(false)
+  })
+
+  test('allows admin cms access for general admin role', () => {
+    expect(canAccessAdminCmsForRole('admin')).toBe(true)
   })
 
   test('keeps ceo portal restricted to ceo and super admin', () => {
