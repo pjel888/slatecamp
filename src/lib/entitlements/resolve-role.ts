@@ -12,9 +12,11 @@ const RECOGNIZED_INTERNAL_ROLES: ReadonlySet<CompatibilityRole> = new Set([
   'developer',
   'admin',
   'ceo',
+  'owner',
 ])
 
 const ROLE_PRIORITY: Record<CompatibilityRole, number> = {
+  owner: 10,
   super_admin: 6,
   content_admin: 5,
   developer: 4,

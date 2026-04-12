@@ -16,6 +16,7 @@ export type UserRole =
   | 'developer'
   | 'admin'
   | 'ceo'
+  | 'owner'
 
 const getResolution = async (): Promise<RoleResolution> => resolveCurrentUserRole()
 

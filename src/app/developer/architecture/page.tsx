@@ -98,11 +98,11 @@ const dbFunctions = [
 ]
 
 const roleMatrix = [
-  { permission: 'Manage Questions', super_admin: true,  content_admin: true,  sme_reviewer: false },
-  { permission: 'Manage Wiki',      super_admin: true,  content_admin: true,  sme_reviewer: false },
-  { permission: 'Review Content',   super_admin: true,  content_admin: true,  sme_reviewer: true  },
-  { permission: 'Manage Users',     super_admin: true,  content_admin: false, sme_reviewer: false },
-  { permission: 'View Audit Log',   super_admin: true,  content_admin: false, sme_reviewer: false },
+  { permission: 'Manage Questions', owner: true, super_admin: true,  content_admin: true,  sme_reviewer: false },
+  { permission: 'Manage Wiki',      owner: true, super_admin: true,  content_admin: true,  sme_reviewer: false },
+  { permission: 'Review Content',   owner: true, super_admin: true,  content_admin: true,  sme_reviewer: true  },
+  { permission: 'Manage Users',     owner: true, super_admin: true,  content_admin: false, sme_reviewer: false },
+  { permission: 'View Audit Log',   owner: true, super_admin: true,  content_admin: false, sme_reviewer: false },
 ]
 
 const authGuards = [
@@ -389,7 +389,7 @@ export default function ArchitecturePage() {
                       <th className="px-3 py-2 text-left font-[family-name:var(--font-dm-mono)] text-[11px] font-medium text-muted-foreground uppercase tracking-[0.1em]">
                         Permission
                       </th>
-                      {['super_admin', 'content_admin', 'sme_reviewer'].map((role) => (
+                      {['owner', 'super_admin', 'content_admin', 'sme_reviewer'].map((role) => (
                         <th
                           key={role}
                           className="px-3 py-2 text-center font-[family-name:var(--font-dm-mono)] text-[11px] font-medium text-muted-foreground uppercase tracking-[0.1em]"
@@ -408,7 +408,7 @@ export default function ArchitecturePage() {
                         <td className="px-3 py-2 text-[11px] text-foreground">
                           {row.permission}
                         </td>
-                        {[row.super_admin, row.content_admin, row.sme_reviewer].map((allowed, j) => (
+                        {[row.owner, row.super_admin, row.content_admin, row.sme_reviewer].map((allowed, j) => (
                           <td key={j} className="px-3 py-2 text-center text-[13px]">
                             {allowed ? (
                               <span className="text-emerald-600">●</span>

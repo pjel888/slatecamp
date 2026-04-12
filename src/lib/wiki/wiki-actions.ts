@@ -135,8 +135,8 @@ export async function approveArticle(id: string, comments?: string): Promise<{ s
     return { success: false, error: 'Not authenticated' }
   }
 
-  const role = await getUserRole()
-  if (role !== 'super_admin' && role !== 'content_admin' && role !== 'sme_reviewer') {
+  const authorized = await canReviewContent()
+  if (!authorized) {
     return { success: false, error: 'Not authorized to approve' }
   }
 
@@ -168,8 +168,8 @@ export async function requestChanges(id: string, comments: string): Promise<{ su
     return { success: false, error: 'Not authenticated' }
   }
 
-  const role = await getUserRole()
-  if (role !== 'super_admin' && role !== 'content_admin' && role !== 'sme_reviewer') {
+  const authorized = await canReviewContent()
+  if (!authorized) {
     return { success: false, error: 'Not authorized to request changes' }
   }
 
