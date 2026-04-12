@@ -2,6 +2,7 @@
 
 import { createClient } from '@/lib/supabase/server'
 import { revalidateDashboardCacheTags } from './cache-tags'
+import type { WikiActionResult } from '@/types/wiki'
 
 export interface WikiBookmarkRow {
   article_id: string
@@ -42,10 +43,10 @@ export async function getWikiBookmarks(): Promise<WikiBookmarkRow[]> {
  * Add a bookmark for the current user.
  * Uses upsert so duplicate calls are safe.
  */
-export async function addWikiBookmark(articleId: string): Promise<boolean> {
+export async function addWikiBookmark(articleId: string): Promise<WikiActionResult> {
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
-  if (!user) return false
+  if (!user) return { success: false, error: 'Unauthorized' }
 
   const { error } = await supabase
     .from('wiki_bookmarks')
@@ -56,19 +57,19 @@ export async function addWikiBookmark(articleId: string): Promise<boolean> {
 
   if (error) {
     console.error('[Wiki] addWikiBookmark failed:', error.message)
-    return false
+    return { success: false, error: error.message }
   }
   revalidateDashboardCacheTags(user.id)
-  return true
+  return { success: true }
 }
 
 /**
  * Remove a bookmark for the current user by article_id.
  */
-export async function removeWikiBookmark(articleId: string): Promise<boolean> {
+export async function removeWikiBookmark(articleId: string): Promise<WikiActionResult> {
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
-  if (!user) return false
+  if (!user) return { success: false, error: 'Unauthorized' }
 
   const { error } = await supabase
     .from('wiki_bookmarks')
@@ -78,9 +79,9 @@ export async function removeWikiBookmark(articleId: string): Promise<boolean> {
 
   if (error) {
     console.error('[Wiki] removeWikiBookmark failed:', error.message)
-    return false
+    return { success: false, error: error.message }
   }
   revalidateDashboardCacheTags(user.id)
-  return true
+  return { success: true }
 }
 

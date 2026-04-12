@@ -5,6 +5,7 @@ import {
   WikiArticleHero,
   WikiHeader,
   WikiRightSidebar,
+  WikiRightSidebarSkeleton,
   TeachBackPrompt,
   WrongAnswerBanner,
   WikiReadTracker,
@@ -183,7 +184,7 @@ export default async function WikiArticlePage(props: WikiArticlePageProps) {
 
         {!isMinimal && (
           <aside className="hidden xl:block w-[280px] shrink-0 border-l border-border bg-background overflow-y-auto">
-            <Suspense fallback={<div className="p-6 space-y-3 animate-pulse"><div className="h-8 bg-muted rounded" /><div className="h-4 bg-muted rounded w-3/4" /><div className="h-4 bg-muted rounded w-1/2" /></div>}>
+            <Suspense fallback={<div className="p-6"><WikiRightSidebarSkeleton /></div>}>
               <div className="p-6 sticky top-0">
                 {sidebarContent}
               </div>

@@ -3,6 +3,10 @@
 import { createClient, getUser } from '@/lib/supabase/server'
 import { normalizeOptions, resolveRationaleText } from '@/lib/utils/question'
 import type { QuestionForClient } from '@/types/quiz-config'
+import {
+  filterQuestionsWithValidArticleTopicMapping,
+  isStandardQuestionType,
+} from '@/lib/admin/editor-integrity/standard-question'
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
@@ -10,6 +14,17 @@ const toDifficultyLabel = (d: number): 'Easy' | 'Medium' | 'Hard' => {
   if (d < 0.4) return 'Easy'
   if (d < 0.7) return 'Medium'
   return 'Hard'
+}
+
+interface WikiQuizQuestionRow {
+  question_id: string
+  topic_id: string
+  article_id?: string | null
+  question_type?: string | null
+  text: string
+  options: unknown
+  difficulty: number
+  prompt_image_url: string | null
 }
 
 const toClientQuestion = (
@@ -20,6 +35,7 @@ const toClientQuestion = (
     prompt_image_url: string | null
     difficulty: number
     topic_id: string
+    article_id?: string | null
   },
   position: number,
 ): QuestionForClient => ({
@@ -91,15 +107,36 @@ export const getWikiQuizQuestions = async (
   // 3. Fetch candidate questions
   const { data: rawQuestions, error: qError } = await supabase
     .from('questions')
-    .select('question_id, topic_id, text, options, difficulty, prompt_image_url')
+    .select('question_id, topic_id, article_id, question_type, text, options, difficulty, prompt_image_url')
     .in('topic_id', topicIds)
     .limit(30)
 
   if (qError) throw qError
 
-  const pool = (rawQuestions ?? []).filter(
-    (q: { question_id: string }) => !recentSet.has(q.question_id),
+  const articleIds = [...new Set((rawQuestions ?? []).map((q: any) => q.article_id).filter(Boolean))]
+  const { data: publishedArticles } = articleIds.length > 0
+    ? await supabase
+        .from('wiki_articles')
+        .select('article_id')
+        .in('article_id', articleIds)
+        .eq('status', 'published')
+    : { data: [] as Array<{ article_id: string }> }
+
+  const publishedArticleIds = new Set((publishedArticles ?? []).map((article) => article.article_id))
+  const publishedStandardQuestions = ((rawQuestions ?? []) as WikiQuizQuestionRow[]).filter(
+    (question) =>
+      Boolean(question.article_id) &&
+      isStandardQuestionType(question.question_type) &&
+      publishedArticleIds.has(question.article_id!),
   )
+  const { questions: validQuestions, error: validQuestionError } =
+    await filterQuestionsWithValidArticleTopicMapping(supabase as any, publishedStandardQuestions)
+
+  if (validQuestionError) {
+    throw validQuestionError
+  }
+
+  const pool = validQuestions.filter((question) => !recentSet.has(question.question_id))
 
   // Backfill from recently-seen if not enough fresh questions
   const finalPool =
@@ -107,9 +144,7 @@ export const getWikiQuizQuestions = async (
       ? pool
       : [
           ...pool,
-          ...(rawQuestions ?? [])
-            .filter((q: { question_id: string }) => recentSet.has(q.question_id))
-            .slice(0, 5 - pool.length),
+          ...validQuestions.filter((question) => recentSet.has(question.question_id)).slice(0, 5 - pool.length),
         ]
 
   // Fisher-Yates shuffle
@@ -119,7 +154,7 @@ export const getWikiQuizQuestions = async (
   }
 
   const selected = finalPool.slice(0, 5)
-  const questionIds = selected.map((q: { question_id: string }) => q.question_id)
+  const questionIds = selected.map((question) => question.question_id)
 
   // 4. Create mini quiz session
   const { data: session, error: sessionError } = await supabase
@@ -149,6 +184,7 @@ export const getWikiQuizQuestions = async (
       prompt_image_url: string | null
       difficulty: number
       topic_id: string
+      article_id?: string | null
     }, idx: number) => toClientQuestion(q, idx + 1),
   )
 

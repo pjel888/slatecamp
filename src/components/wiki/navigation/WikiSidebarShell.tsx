@@ -98,7 +98,7 @@ export function WikiSidebarShell({ children }: { children: React.ReactNode }) {
         onClick={() => setIsCollapsed(p => !p)}
         aria-expanded={!isCollapsed}
         aria-label={isCollapsed ? 'Expand sidebar' : 'Collapse sidebar'}
-        className="shrink-0 border-r border-border bg-muted/50 px-1.5 text-text-secondary hover:bg-muted hover:text-foreground transition-colors z-10"
+        className="shrink-0 border-r border-border bg-surface-muted/50 px-1.5 text-text-secondary hover:bg-surface-muted hover:text-text-primary transition-colors z-10 cursor-pointer"
       >
         <SCIcon icon={SidebarSimple} size="sm" />
       </button>

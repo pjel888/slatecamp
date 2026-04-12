@@ -69,6 +69,40 @@ export function sanitizeMDX(content: string): string {
     .replace(/<([0-9=])/g, '&lt;$1')
 }
 
+/**
+ * Inject elaborative interrogation (EI) prompts after specified headings.
+ */
+export function injectEIPrompts(content: string, prompts: any[]): string {
+  if (!prompts || prompts.length === 0) return content
+  const promptsByHeading = new Map<string, number[]>()
+  prompts.forEach((prompt, idx) => {
+    const key = prompt.insert_after_heading?.toLowerCase().trim()
+    if (key) {
+      if (!promptsByHeading.has(key)) promptsByHeading.set(key, [])
+      promptsByHeading.get(key)!.push(idx)
+    }
+  })
+
+  const lines = content.split('\n')
+  const result: string[] = []
+  for (const line of lines) {
+    result.push(line)
+    const headingMatch = line.match(/^(#{2,4})\s+(.+)$/)
+    if (headingMatch) {
+      const headingText = headingMatch[2].trim().toLowerCase()
+      const indices = promptsByHeading.get(headingText)
+      if (indices) {
+        for (const idx of indices) {
+          result.push('')
+          result.push(`<EIPrompt idx={${idx}} prompts={__mdx_prompts} responses={__mdx_responses} articleId={__mdx_article_id} />`)
+          result.push('')
+        }
+      }
+    }
+  }
+  return result.join('\n')
+}
+
 // --- Markdown ↔ HTML (Tiptap) ---
 
 /** Convert markdown to HTML for Tiptap. */

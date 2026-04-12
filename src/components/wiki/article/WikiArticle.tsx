@@ -2,7 +2,7 @@ import React, { Suspense } from 'react'
 import { compileMDX } from 'next-mdx-remote/rsc'
 import remarkGfm from 'remark-gfm'
 import { Skeleton } from '@/components/ui/skeleton'
-import { extractHeadings, sanitizeMDX } from '@/lib/wiki-markdown'
+import { extractHeadings, sanitizeMDX, injectEIPrompts } from '@/lib/wiki-markdown'
 import type { WikiArticle as WikiArticleType } from '@/types/app'
 import type { TocHeading } from '@/lib/wiki-markdown'
 import type { EIPrompt as EIPromptType, EIResponseMap } from '@/lib/actions/ei-prompts'
@@ -10,6 +10,7 @@ import { WikiHighlighter } from '../shared/WikiHighlighter'
 import { WikiNoteAnchor } from '../shared/WikiNoteAnchor'
 import { WikiTextSelection } from '../shared/WikiTextSelection'
 import { resolveWidgets } from '../widgets/registry'
+import { WikiArticleError } from './WikiArticleError'
 
 // --- COMPONENTS FOR MDX ---
 import { Note, Warn, Tip, Example, Callout, AlertBox, CalloutBox, AuthorityContent } from '../blocks/Callout'
@@ -188,39 +189,45 @@ const WIKI_COMPONENTS = {
   SPP207RefServices,
 }
 
-const injectEIPrompts = (content: string, prompts: EIPromptType[]): string => {
-  if (prompts.length === 0) return content
-  const promptsByHeading = new Map<string, number[]>()
-  prompts.forEach((prompt, idx) => {
-    const key = prompt.insert_after_heading.toLowerCase().trim()
-    if (!promptsByHeading.has(key)) promptsByHeading.set(key, [])
-    promptsByHeading.get(key)!.push(idx)
-  })
-
-  const lines = content.split('\n')
-  const result: string[] = []
-  for (const line of lines) {
-    result.push(line)
-    const headingMatch = line.match(/^(#{2,4})\s+(.+)$/)
-    if (headingMatch) {
-      const headingText = headingMatch[2].trim().toLowerCase()
-      const indices = promptsByHeading.get(headingText)
-      if (indices) {
-        for (const idx of indices) {
-          result.push('')
-          result.push(`<EIPrompt idx={${idx}} prompts={__mdx_prompts} responses={__mdx_responses} articleId={__mdx_article_id} />`)
-          result.push('')
-        }
-      }
-    }
-  }
-  return result.join('\n')
-}
-
 export const getArticleHeadings = (article: WikiArticleType): TocHeading[] => {
   const content = article.content || ''
   const processedContent = content.replace(/\\n/g, '\n')
   return extractHeadings(processedContent)
+}
+
+export const compileWikiArticleWithRenderer = async ({
+  article,
+  eiPrompts = [],
+  eiResponses = {},
+}: {
+  article: Pick<WikiArticleType, 'article_id' | 'content'>
+  eiPrompts?: EIPromptType[]
+  eiResponses?: EIResponseMap
+}) => {
+  const content = article.content || ''
+  const rawContent = content.replace(/\\n/g, '\n')
+  const cleaned = rawContent
+    .replace(/\[EI\][\s\S]*?\[\/EI\]/g, '')
+    .replace(/<!--[\s\S]*?-->/g, '')
+
+  const processedContent = injectEIPrompts(cleaned, eiPrompts)
+  const sanitizedContent = sanitizeMDX(processedContent)
+  const widgets = await resolveWidgets(sanitizedContent)
+  const components = { ...WIKI_COMPONENTS, ...widgets }
+  const scope = {
+    __mdx_prompts: eiPrompts,
+    __mdx_responses: eiResponses,
+    __mdx_article_id: article.article_id,
+  }
+
+  return await compileMDX({
+    source: sanitizedContent,
+    components,
+    options: {
+      mdxOptions: { remarkPlugins: [remarkGfm] },
+      scope,
+    },
+  })
 }
 
 export const WikiArticle = async ({
@@ -239,32 +246,22 @@ export const WikiArticle = async ({
     .replace(/<!--[\s\S]*?-->/g, '')
   
   const processedContent = injectEIPrompts(cleaned, eiPrompts)
-  const sanitizedContent = sanitizeMDX(processedContent)
-
-  // Resolve dynamic widgets
-  const widgets = await resolveWidgets(sanitizedContent)
-
-  const components = { ...WIKI_COMPONENTS, ...widgets }
-  const scope = {
-    __mdx_prompts: eiPrompts,
-    __mdx_responses: eiResponses,
-    __mdx_article_id: article.article_id,
-  }
+  sanitizeMDX(processedContent)
 
   let mdxContent = null
   try {
-    const { content: compiled } = await compileMDX({
-      source: sanitizedContent,
-      components,
-      options: { 
-        mdxOptions: { remarkPlugins: [remarkGfm] },
-        scope 
+    const { content: compiled } = await compileWikiArticleWithRenderer({
+      article: {
+        article_id: article.article_id,
+        content: article.content || '',
       },
+      eiPrompts,
+      eiResponses,
     })
     mdxContent = compiled
   } catch (err: any) {
     console.error('[MDX ERROR]', err.message)
-    mdxContent = <pre className="p-4 bg-amber-50 text-amber-800 rounded-md overflow-auto">{sanitizedContent}</pre>
+    mdxContent = <WikiArticleError />
   }
 
   return (
@@ -289,7 +286,18 @@ export const WikiArticle = async ({
 
 export const WikiArticleSkeleton = () => {
   return (
-    <div className="space-y-8 mt-8">
+    <div className="space-y-10 mt-8">
+      {/* Article Hero Skeleton */}
+      <div className="space-y-4">
+        <Skeleton className="h-8 w-[60%] rounded-md opacity-40" />
+        <div className="flex gap-3">
+          <Skeleton className="h-4 w-24 rounded-full opacity-30" />
+          <Skeleton className="h-4 w-20 rounded-full opacity-30" />
+          <Skeleton className="h-4 w-16 rounded-full opacity-30" />
+        </div>
+      </div>
+
+      {/* Paragraph blocks */}
       {[1, 2, 3].map((p) => (
         <div key={p} className="space-y-3">
           <Skeleton className="h-4 w-full opacity-40" />
@@ -298,6 +306,13 @@ export const WikiArticleSkeleton = () => {
           <Skeleton className="h-4 w-[40%] opacity-20" />
         </div>
       ))}
+
+      {/* Block placeholder */}
+      <div className="p-6 border border-border rounded-lg bg-muted/20 space-y-3">
+        <Skeleton className="h-3 w-20 opacity-30" />
+        <Skeleton className="h-4 w-full opacity-20" />
+        <Skeleton className="h-4 w-2/3 opacity-20" />
+      </div>
     </div>
   )
 }

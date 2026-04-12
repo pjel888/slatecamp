@@ -196,7 +196,7 @@ export async function getWikiArticleByTaxonomySlug(taxonomySlug: string): Promis
 export async function getTaxonomyTree(
   disciplineId: string,
 ): Promise<TaxonomyNode[]> {
-  const supabase = await createClient();
+  const supabase = await createStaticClient();
 
   // Fetch all taxonomy nodes for the discipline
   const { data: nodes, error } = await supabase
@@ -549,5 +549,62 @@ export async function getArticleSiblings(nodeId: string): Promise<{ prev: Taxono
     prev: (siblings[currentIndex - 1] as unknown as TaxonomyNode) ?? null,
     next: (siblings[currentIndex + 1] as unknown as TaxonomyNode) ?? null,
   }
+}
+
+/**
+ * Fetch articles for a given taxonomy node.
+ */
+export async function getWikiArticlesByNode(
+  nodeId: string
+): Promise<WikiArticle[]> {
+  const supabase = await createClient();
+  const { data, error } = await supabase
+    .from("wiki_article_taxonomy")
+    .select(`
+      wiki_articles (
+        article_id, slug, title, content, created_at, updated_at,
+        lea_tests_you, updated_note, subject_label, difficulty_label, status
+      )
+    `)
+    .eq("node_id", nodeId);
+
+  if (error || !data) {
+    if (error) console.error('[getWikiArticlesByNode] failed:', error.message)
+    return [];
+  }
+  return data.map(d => d.wiki_articles).filter(Boolean) as unknown as WikiArticle[];
+}
+
+/**
+ * Paginated search fallback using ilike.
+ */
+export async function searchWikiPaginated(
+  searchTerm: string,
+  page = 1,
+  perPage = 10
+): Promise<{ results: any[]; totalCount: number }> {
+  const supabase = await createClient();
+  const offset = (page - 1) * perPage;
+
+  const { data, error, count } = await supabase
+    .from("wiki_articles")
+    .select("article_id, title, slug, content", { count: 'exact' })
+    .or(`title.ilike.%${searchTerm}%,content.ilike.%${searchTerm}%`)
+    .eq('status', 'published')
+    .range(offset, offset + perPage - 1);
+
+  if (error || !data) {
+    if (error) console.error('[searchWikiPaginated] failed:', error.message)
+    return { results: [], totalCount: 0 };
+  }
+
+  const results = data.map(d => ({
+    id: d.article_id,
+    title: d.title,
+    slug: d.slug,
+    content_snippet: (d.content || '').slice(0, 160).replace(/[#*]/g, '') + '...'
+  }));
+
+  return { results, totalCount: count ?? 0 };
 }
 

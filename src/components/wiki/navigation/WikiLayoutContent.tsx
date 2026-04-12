@@ -42,6 +42,12 @@ export const WikiLayoutContent = async ({ children }: { children: React.ReactNod
   return (
     <WikiDisciplineProvider disciplineId={disciplineId} disciplineName={disciplineName}>
       <WikiNavigationProvider>
+        <a 
+          href="#wiki-center-pane" 
+          className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-primary focus:text-primary-foreground focus:rounded-md focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
+        >
+          Skip to article content
+        </a>
         <div className="flex flex-col h-full w-full overflow-hidden bg-background">
           <div className="flex flex-1 min-h-0">
             <WikiSidebarShell>

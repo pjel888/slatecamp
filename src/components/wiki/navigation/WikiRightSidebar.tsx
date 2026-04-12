@@ -70,13 +70,21 @@ export function WikiRightSidebar({
 
   const handleStudyInNotes = async () => {
     if (articleId) {
-      await addWikiBookmark(articleId)
+      const res = await addWikiBookmark(articleId)
+      if (res.success) {
+        toast({
+          variant: 'primary' as any,
+          title: 'Saved this article in notes',
+          description: 'You can now access it from your Notes workspace.',
+        })
+      } else {
+        toast({
+          variant: 'destructive',
+          title: 'Failed to save bookmark',
+          description: res.error || 'Please try again later.',
+        })
+      }
     }
-    toast({
-      variant: 'primary' as any,
-      title: 'Saved this article in notes',
-      description: 'You can now access it from your Notes workspace.',
-    })
   }
 
   const handleFeedback = async (isHelpful: boolean) => {
@@ -87,12 +95,18 @@ export function WikiRightSidebar({
     }
 
     if (articleId) {
-      const success = await submitArticleFeedback(articleId, isHelpful)
-      if (success) {
+      const res = await submitArticleFeedback(articleId, isHelpful)
+      if (res.success) {
         setFeedbackGiven(type)
         toast({
           title: 'Feedback received',
           description: 'Thank you for helping us improve SlateCamp.',
+        })
+      } else {
+        toast({
+          variant: 'destructive',
+          title: 'Failed to submit feedback',
+          description: res.error || 'Please try again later.',
         })
       }
     }
@@ -130,41 +144,47 @@ export function WikiRightSidebar({
           Feedback
         </p>
         <div className="flex items-center gap-1">
-          <button
+          <Button
+            variant="ghost"
+            size="sm"
             onClick={() => handleFeedback(true)}
             className={cn(
-              'p-1.5 rounded-sm transition-colors cursor-pointer',
+              'h-8 w-8 p-0 rounded-sm transition-colors cursor-pointer hover:bg-muted',
               feedbackGiven === 'up'
-                ? 'bg-emerald-50 text-emerald-600'
-                : 'text-muted-foreground hover:text-text-secondary hover:bg-muted',
+                ? 'bg-emerald-50 text-emerald-600 hover:bg-emerald-100 hover:text-emerald-700'
+                : 'text-muted-foreground hover:text-text-secondary',
             )}
             aria-label="Helpful"
           >
             <SCIcon icon={ThumbsUp} size="sm" weight={feedbackGiven === 'up' ? 'fill' : 'regular'} />
-          </button>
-          <button
+          </Button>
+          <Button
+            variant="ghost"
+            size="sm"
             onClick={() => handleFeedback(false)}
             className={cn(
-              'p-1.5 rounded-sm transition-colors cursor-pointer',
+              'h-8 w-8 p-0 rounded-sm transition-colors cursor-pointer hover:bg-muted',
               feedbackGiven === 'down'
-                ? 'bg-red-50 text-red-500'
-                : 'text-muted-foreground hover:text-text-secondary hover:bg-muted',
+                ? 'bg-red-50 text-red-500 hover:bg-red-100 hover:text-red-600'
+                : 'text-muted-foreground hover:text-text-secondary',
             )}
             aria-label="Not helpful"
           >
             <SCIcon icon={ThumbsDown} size="sm" weight={feedbackGiven === 'down' ? 'fill' : 'regular'} />
-          </button>
+          </Button>
 
           <Separator orientation="vertical" className="h-4 mx-1" />
 
-          <button
+          <Button
+            variant="ghost"
+            size="sm"
             onClick={handleCopyLink}
-            className="flex items-center gap-1 px-2 py-1.5 rounded-sm text-xs text-muted-foreground hover:text-text-secondary hover:bg-muted transition-colors"
+            className="flex items-center gap-1 h-8 px-2 py-1.5 rounded-sm text-xs text-muted-foreground hover:text-text-secondary hover:bg-muted transition-colors"
             aria-label="Copy link to this article"
           >
             <SCIcon icon={LinkSimple} size="xs" />
             <span>{linkCopied ? 'Copied' : 'Share'}</span>
-          </button>
+          </Button>
         </div>
       </div>
 

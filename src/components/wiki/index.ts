@@ -25,6 +25,7 @@ export { ComparisonTable } from './blocks/ComparisonTable'
 
 export { WikiHeader } from './navigation/WikiHeader'
 export { WikiRightSidebar } from './navigation/WikiRightSidebar'
+export { WikiRightSidebarSkeleton } from './navigation/WikiRightSidebarSkeleton'
 
 export { WikiReadTracker } from './shared/WikiReadTracker'
 

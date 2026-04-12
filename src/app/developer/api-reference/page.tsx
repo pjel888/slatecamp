@@ -373,7 +373,7 @@ const actionGroups: ActionGroup[] = [
     domain: 'Wiki',
     actions: [
       {
-        fn: 'getWikiTaxonomyTree(disciplineId)',
+        fn: 'getTaxonomyTree(disciplineId)',
         description: 'Fetch full taxonomy tree with articles for the wiki sidebar.',
         reads: 'taxonomy_tree, wiki_articles',
         writes: '—',
@@ -387,15 +387,15 @@ const actionGroups: ActionGroup[] = [
         auth: 'User',
       },
       {
-        fn: 'searchWiki(query)',
-        description: 'Full-text search across published wiki articles.',
+        fn: 'searchWikiArticles(query)',
+        description: 'Full-text search across published wiki articles using Postgres RPC.',
         reads: 'wiki_articles',
         writes: '—',
         auth: 'User',
       },
       {
         fn: 'searchWikiPaginated(query, page)',
-        description: 'Paginated full-text wiki search.',
+        description: 'Paginated keyword wiki search fallback.',
         reads: 'wiki_articles',
         writes: '—',
         auth: 'User',

@@ -2,6 +2,10 @@
 
 import { createClient, getUser } from '@/lib/supabase/server'
 import { normalizeOptions } from '@/lib/utils/question'
+import {
+  filterQuestionsWithValidArticleTopicMapping,
+  isStandardQuestionType,
+} from '@/lib/admin/editor-integrity/standard-question'
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -21,6 +25,15 @@ export interface PrequestionForClient {
 export interface PrequestionPayload {
   questions: PrequestionForClient[]
   sessionId: string
+}
+
+interface PrequestionQuestionRow {
+  question_id: string
+  text: string
+  topic_id: string
+  article_id?: string | null
+  question_type?: string | null
+  options: unknown
 }
 
 // ─── Action ──────────────────────────────────────────────────────────────────
@@ -60,9 +73,33 @@ export const getPrequestions = async (
     return null
   }
 
-  const questionIds = rawQuestions.map(
-    (q: { question_id: string }) => q.question_id,
+  const articleIds = [...new Set(rawQuestions.map((q: any) => q.article_id).filter(Boolean))]
+  const { data: publishedArticles } = articleIds.length > 0
+    ? await supabase
+        .from('wiki_articles')
+        .select('article_id')
+        .in('article_id', articleIds)
+        .eq('status', 'published')
+    : { data: [] as Array<{ article_id: string }> }
+
+  const publishedArticleIds = new Set((publishedArticles ?? []).map((article) => article.article_id))
+  const publishedStandardQuestions = (rawQuestions as PrequestionQuestionRow[]).filter((question) =>
+    Boolean(question.article_id) &&
+    isStandardQuestionType(question.question_type) &&
+    publishedArticleIds.has(question.article_id!),
   )
+  const { questions: filteredQuestions, error: filteredQuestionsError } =
+    await filterQuestionsWithValidArticleTopicMapping(supabase as any, publishedStandardQuestions)
+
+  if (filteredQuestionsError) {
+    return null
+  }
+
+  if (filteredQuestions.length < count) {
+    return null
+  }
+
+  const questionIds = filteredQuestions.map((question) => question.question_id)
 
   // Create a lightweight session so user_interactions FK is satisfied.
   // Uses 'practice' test_mode (the closest match until 'prequestion' enum is added)
@@ -87,7 +124,7 @@ export const getPrequestions = async (
   if (sessionError || !session) return null
 
   // Strip sensitive fields (correct_option_id, rationale) for client
-  const questions: PrequestionForClient[] = rawQuestions.map(
+  const questions: PrequestionForClient[] = filteredQuestions.map(
     (q: {
       question_id: string
       text: string

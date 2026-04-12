@@ -2,14 +2,15 @@
 
 import { createClient } from "@/lib/supabase/server"
 import { revalidatePath } from "next/cache"
+import type { WikiActionResult } from "@/types/wiki"
 
 /**
  * Submit feedback for a wiki article.
  */
-export async function submitArticleFeedback(articleId: string, isHelpful: boolean): Promise<boolean> {
+export async function submitArticleFeedback(articleId: string, isHelpful: boolean): Promise<WikiActionResult> {
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
-  if (!user) return false
+  if (!user) return { success: false, error: 'Unauthorized' }
 
   const { error } = await supabase
     .from('wiki_article_feedback')
@@ -24,10 +25,10 @@ export async function submitArticleFeedback(articleId: string, isHelpful: boolea
 
   if (error) {
     console.error('[submitArticleFeedback] Error:', error.message)
-    return false
+    return { success: false, error: error.message }
   }
 
-  return true
+  return { success: true }
 }
 
 /**
@@ -52,10 +53,10 @@ export async function getUserArticleFeedback(articleId: string): Promise<'up' | 
 /**
  * Save a text highlight for a wiki article.
  */
-export async function addWikiHighlight(articleId: string, text: string, color = 'yellow'): Promise<boolean> {
+export async function addWikiHighlight(articleId: string, text: string, color = 'yellow'): Promise<WikiActionResult> {
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
-  if (!user) return false
+  if (!user) return { success: false, error: 'Unauthorized' }
 
   const { error } = await supabase
     .from('wiki_highlights')
@@ -68,10 +69,10 @@ export async function addWikiHighlight(articleId: string, text: string, color = 
 
   if (error) {
     console.error('[addWikiHighlight] Error:', error.message)
-    return false
+    return { success: false, error: error.message }
   }
 
-  return true
+  return { success: true }
 }
 
 /**
@@ -100,10 +101,10 @@ export async function getWikiHighlights(articleId: string): Promise<any[]> {
 /**
  * Remove a highlight by ID.
  */
-export async function removeWikiHighlight(highlightId: string): Promise<boolean> {
+export async function removeWikiHighlight(highlightId: string): Promise<WikiActionResult> {
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
-  if (!user) return false
+  if (!user) return { success: false, error: 'Unauthorized' }
 
   const { error } = await supabase
     .from('wiki_highlights')
@@ -113,8 +114,8 @@ export async function removeWikiHighlight(highlightId: string): Promise<boolean>
 
   if (error) {
     console.error('[removeWikiHighlight] Error:', error.message)
-    return false
+    return { success: false, error: error.message }
   }
 
-  return true
+  return { success: true }
 }

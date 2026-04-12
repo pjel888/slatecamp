@@ -1,3 +1,8 @@
+export interface WikiActionResult {
+  success: boolean
+  error?: string
+}
+
 export type WikiCalloutType = 'most-tested' | 'lea-watch' | 'version-alert'
 
 export interface WikiCalloutBoxProps {

@@ -329,6 +329,27 @@ CREATE TABLE wiki_ei_responses (
   updated_at                               TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 
+-- ─── Table: wiki_highlights ─────────────────────────────────────────────
+CREATE TABLE wiki_highlights (
+  id                                       UUID NOT NULL DEFAULT gen_random_uuid(),
+  user_id                                  UUID NOT NULL,
+  article_id                               UUID NOT NULL,
+  highlight_text                           TEXT NOT NULL,
+  color                                    TEXT DEFAULT 'yellow',
+  created_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  updated_at                               TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
+-- ─── Table: wiki_article_feedback ───────────────────────────────────────
+CREATE TABLE wiki_article_feedback (
+  id                                       UUID NOT NULL DEFAULT gen_random_uuid(),
+  article_id                               UUID NOT NULL,
+  user_id                                  UUID NOT NULL,
+  is_helpful                               BOOLEAN NOT NULL,
+  created_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
+  updated_at                               TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+
 -- ============================================================================
 -- 3. Quiz Engine
 -- ============================================================================

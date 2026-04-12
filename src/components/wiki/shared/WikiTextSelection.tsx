@@ -71,11 +71,17 @@ export function WikiTextSelection({ articleId }: { articleId?: string }) {
 
   const handleHighlight = async () => {
     if (articleId && selectedText) {
-      const success = await addWikiHighlight(articleId, selectedText)
-      if (success) {
+      const res = await addWikiHighlight(articleId, selectedText)
+      if (res.success) {
         toast({
           title: 'Text highlighted',
           description: 'This highlight has been saved to your profile.',
+        })
+      } else {
+        toast({
+          variant: 'destructive',
+          title: 'Failed to highlight text',
+          description: res.error || 'Please try again later.',
         })
       }
     }
