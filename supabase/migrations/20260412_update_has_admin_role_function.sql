@@ -9,7 +9,7 @@ RETURNS BOOLEAN AS $$
     IF EXISTS(
         SELECT 1 FROM public.user_roles
         WHERE user_id = auth.uid()
-        AND role IN ('super_admin', 'content_admin', 'admin')
+        AND role IN ('super_admin', 'content_admin', 'admin', 'owner')
     ) THEN
         RETURN TRUE;
     END IF;
@@ -18,13 +18,44 @@ RETURNS BOOLEAN AS $$
     IF EXISTS(
         SELECT 1 FROM public.profiles
         WHERE id = auth.uid()
-        AND role IN ('super_admin', 'content_admin', 'admin', 'developer', 'ceo')
+        AND role IN ('super_admin', 'content_admin', 'admin', 'developer', 'ceo', 'owner')
     ) THEN
         RETURN TRUE;
     END IF;
 
     -- 3. Check auth.jwt() metadata (for app_metadata based roles)
-    IF (auth.jwt() -> 'app_metadata' ->> 'role' IN ('admin', 'super_admin', 'content_admin', 'developer', 'ceo')) THEN
+    IF (auth.jwt() -> 'app_metadata' ->> 'role' IN ('admin', 'super_admin', 'content_admin', 'developer', 'ceo', 'owner')) THEN
+        RETURN TRUE;
+    END IF;
+
+    RETURN FALSE;
+  END;
+$$ LANGUAGE plpgsql SECURITY DEFINER;
+
+-- Update is_super_admin to be robust (The "Owner" role)
+CREATE OR REPLACE FUNCTION public.is_super_admin()
+RETURNS BOOLEAN AS $$
+  BEGIN
+    -- 1. Check user_roles table
+    IF EXISTS(
+        SELECT 1 FROM public.user_roles
+        WHERE user_id = auth.uid()
+        AND role IN ('super_admin', 'owner')
+    ) THEN
+        RETURN TRUE;
+    END IF;
+
+    -- 2. Check profiles table
+    IF EXISTS(
+        SELECT 1 FROM public.profiles
+        WHERE id = auth.uid()
+        AND role IN ('super_admin', 'owner')
+    ) THEN
+        RETURN TRUE;
+    END IF;
+
+    -- 3. Check auth.jwt() metadata
+    IF (auth.jwt() -> 'app_metadata' ->> 'role' IN ('super_admin', 'owner')) THEN
         RETURN TRUE;
     END IF;
 
@@ -40,7 +71,7 @@ RETURNS BOOLEAN AS $$
     IF EXISTS(
         SELECT 1 FROM public.user_roles
         WHERE user_id = auth.uid()
-        AND role IN ('super_admin', 'content_admin', 'sme_reviewer', 'admin')
+        AND role IN ('super_admin', 'content_admin', 'sme_reviewer', 'admin', 'owner')
     ) THEN
         RETURN TRUE;
     END IF;
@@ -49,13 +80,13 @@ RETURNS BOOLEAN AS $$
     IF EXISTS(
         SELECT 1 FROM public.profiles
         WHERE id = auth.uid()
-        AND role IN ('super_admin', 'content_admin', 'sme_reviewer', 'admin', 'developer', 'ceo')
+        AND role IN ('super_admin', 'content_admin', 'sme_reviewer', 'admin', 'developer', 'ceo', 'owner')
     ) THEN
         RETURN TRUE;
     END IF;
 
     -- 3. Check auth.jwt() metadata
-    IF (auth.jwt() -> 'app_metadata' ->> 'role' IN ('admin', 'super_admin', 'content_admin', 'sme_reviewer', 'developer', 'ceo')) THEN
+    IF (auth.jwt() -> 'app_metadata' ->> 'role' IN ('admin', 'super_admin', 'content_admin', 'sme_reviewer', 'developer', 'ceo', 'owner')) THEN
         RETURN TRUE;
     END IF;
 

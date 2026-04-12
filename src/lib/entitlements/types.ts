@@ -11,6 +11,7 @@ export type CanonicalRole =
   | 'developer'
   | 'admin'
   | 'ceo'
+  | 'owner'
 
 export type RoleSource =
   | 'app_metadata'
