@@ -8,14 +8,14 @@
     ]
   },
   "hooks": {
-    "PostToolUse": [
+    "AfterTool": [
       {
         "matcher": "Edit|Write|Bash",
         "hooks": [
           {
             "type": "command",
             "command": "code-review-graph update --skip-flows",
-            "timeout": 30
+            "timeout": 30000
           }
         ]
       }
@@ -27,7 +27,7 @@
           {
             "type": "command",
             "command": "code-review-graph status",
-            "timeout": 10
+            "timeout": 10000
           }
         ]
       }
