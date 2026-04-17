@@ -215,7 +215,6 @@ export const createWikiArticle = async (data: z.infer<typeof UpdateWikiArticleSc
 
   revalidateTag(CACHE_TAGS.wiki, 'max')
   revalidatePath(ROUTES.admin.wiki);
-  revalidatePath(ROUTES.admin.articles);
   revalidatePath(ROUTES.wiki.root);
 
   if (error) {
@@ -280,7 +279,6 @@ export async function deleteWikiArticle(id: string) {
 
   revalidateTag(CACHE_TAGS.wiki, 'max')
   revalidatePath(ROUTES.admin.wiki);
-  revalidatePath(ROUTES.admin.articles);
   revalidatePath(ROUTES.admin.knowledge);
   revalidatePath(ROUTES.wiki.root);
 
