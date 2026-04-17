@@ -1,3 +1,12 @@
+#   _____ _       _        ____
+#  / ____| |     | |      / __ \
+# | (___ | | __ _| |_ ___| |  | |_ __ ___  _ __
+#  \___ \| |/ _` | __/ _ \ |  | | '_ ` _ \| '_ \
+#  ____) | | (_| | ||  __/ |__| | | | | | | |_) |
+# |_____/|_|\__,_|\__\___|\____/|_| |_| |_| .__/
+#                                         | |
+#                                         |_|
+#
 # SlateCamp
 
 SlateCamp is a large Next.js App Router codebase for the **Philippine Architecture Licensure Exam**.
@@ -17,6 +26,14 @@ Current audit/planning entrypoints:
 - `.ai/00_system/repo-map.md`
 - `.ai/00_system/ai-folder-canonical-map.md`
 - `.ai/03_plans/executive-remediation-roadmap.md`
+
+Current repository snapshot:
+- `124` App Router pages
+- `12` route handlers
+- `716` component files
+- `551` feature-module files
+- `156` action files
+- `89` migration files
 
 ---
 
