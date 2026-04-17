@@ -5,7 +5,7 @@ import { Slider } from '@/components/ui/slider'
 import { Button } from '@/components/ui/button'
 import { ArrowCounterClockwise } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
-import { useLabStore } from '../_stores/labStore'
+import { useLabStore } from '@/features/3d-lab/stores/legacyLabStore'
 import { cn } from '@/lib/utils'
 
 export interface ControlDef {

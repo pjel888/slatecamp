@@ -53,6 +53,10 @@ The naming and route-constant contract is inconsistent enough to be a cleanup co
 - duplicate re-export store paths
 - stale route-level architecture docs
 
+Implementation note (2026-04-18):
+- redundant `_stores/labStore.ts` and `components/_stores/labStore.ts` re-export wrappers have been retired
+- remaining consumers now import `stores/legacyLabStore` directly
+
 ## Duplicate business-logic families
 
 - duplicate/stale wiki action namespace: `src/lib/wiki/wiki-actions.ts` vs `src/lib/actions/wiki-actions.ts`

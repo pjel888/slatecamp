@@ -371,6 +371,16 @@
   - `bun run type-check` passed
   - `bun run build` passed
 
+### Follow-up: 3D-lab store-wrapper convergence
+
+- implemented:
+  - moved the remaining consumers off `_stores/labStore.ts` and `components/_stores/labStore.ts`
+  - retired both redundant re-export wrapper files
+- validation:
+  - no live source imports remain for those wrapper paths
+  - `bun run type-check` passed
+  - `bun run build` passed
+
 ### Follow-up: dashboard developer compatibility-page retirement
 
 - implemented:
