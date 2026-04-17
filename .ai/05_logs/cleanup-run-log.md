@@ -573,6 +573,15 @@
   - `bun run type-check` passed
   - `bun run build` passed
 
+### Follow-up: developer auth-provider data extraction
+
+- implemented:
+  - moved the auth/provider property rows out of `src/app/developer/architecture/page.tsx`
+  - the architecture route now reads those rows from `src/lib/developer/architecture-data.ts` instead of carrying one more inline array
+- validation:
+  - `bun run type-check` passed
+  - `bun run build` passed
+
 ### Follow-up: developer connection-state/helper cleanup
 
 - implemented:

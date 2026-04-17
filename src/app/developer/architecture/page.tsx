@@ -4,7 +4,7 @@ import { SectionHeader } from '@/components/shared/section-header'
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs'
 import { CodeBlock } from '@/components/shared/CodeBlock'
 import { developerArchitectureTechStack } from '@/lib/developer/tech-stack'
-import { authGuards, cronCode, dbClusters, dbFunctions, envVars, masteryLoopCode, middlewareCode, migrations, roleMatrix, sessionLifecycleCode } from '@/lib/developer/architecture-data'
+import { authGuards, authProviderRows, cronCode, dbClusters, dbFunctions, envVars, masteryLoopCode, middlewareCode, migrations, roleMatrix, sessionLifecycleCode } from '@/lib/developer/architecture-data'
 
 export const metadata = {
   title: 'Architecture — SlateCamp Developer Portal',
@@ -181,12 +181,7 @@ export default function ArchitecturePage() {
               <table className="w-full text-sm">
                 <TableHeader cols={['Property', 'Value']} />
                 <tbody>
-                  {[
-                    { k: 'Provider',  v: 'Supabase Auth' },
-                    { k: 'OAuth',     v: 'Google OAuth 2.0' },
-                    { k: 'Session',   v: 'Cookie-based via @supabase/ssr' },
-                    { k: 'JWT',       v: 'RS256, rotated on refresh' },
-                  ].map((row, i) => (
+                  {authProviderRows.map((row, i) => (
                     <tr key={row.k} className={i % 2 === 0 ? 'bg-transparent' : 'bg-muted/30'}>
                       <td className="px-3 py-2 font-medium text-[11px] text-foreground whitespace-nowrap">
                         {row.k}

@@ -84,6 +84,13 @@ export const authGuards = [
   'canManageUsers()',
 ]
 
+export const authProviderRows = [
+  { k: 'Provider', v: 'Supabase Auth' },
+  { k: 'OAuth', v: 'Google OAuth 2.0' },
+  { k: 'Session', v: 'Cookie-based via @supabase/ssr' },
+  { k: 'JWT', v: 'RS256, rotated on refresh' },
+]
+
 export const masteryLoopCode = `Student Interaction (quiz answer, wiki read, 3D Lab)
   → user_interactions (immutable event log)
   → user_node_mastery (EMA weight, updated via trigger)
