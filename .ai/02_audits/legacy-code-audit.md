@@ -19,7 +19,7 @@ Implementation note (2026-04-17):
 - internal navigation and login redirect targets now point at canonical `knowledge*` / `/admin` surfaces
 - admin bulk/wiki actions now revalidate canonical `knowledge*` / `wiki` surfaces instead of the legacy alias pages
 - unused legacy admin route constants have been removed from `ROUTES.admin`
-- legacy redirect routes are intentionally still present for compatibility and should be retired only after a later explicit route-removal pass
+- legacy admin alias route files have now been retired after the internal consumer migration completed and the build remained green
 
 ### `L2-QUIZ-002` — testing/quiz/drills route matrix
 The same engine is exposed through:

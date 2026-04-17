@@ -235,8 +235,23 @@
   - removed unused legacy admin route constants from `ROUTES.admin`
 - intentionally preserved:
   - alias route files under `/admin/dashboard`, `/admin/questions`, `/admin/content`, and `/admin/articles`
-  - old route constants and revalidation targets that still support compatibility surfaces
 - validation:
+  - `bun run type-check` passed
+  - `bun run check:storybook` passed
+  - `bun run build` passed
+
+### Follow-up: admin alias route-file retirement
+
+- implemented:
+  - removed redirect-only route files under:
+    - `/admin/dashboard`
+    - `/admin/content`
+    - `/admin/articles`
+    - `/admin/questions`
+- prerequisite already satisfied:
+  - internal consumers, redirect targets, constants, and revalidation paths had already been migrated away from those aliases
+- validation:
+  - no live source references remain to the retired alias routes/constants
   - `bun run type-check` passed
   - `bun run check:storybook` passed
   - `bun run build` passed
