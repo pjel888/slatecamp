@@ -203,6 +203,17 @@
   - `bun run check:storybook` passed
   - `bun run build` passed
 
+### Follow-up: detached signal helper cleanup
+
+- implemented:
+  - removed `src/lib/readiness/churn.ts`
+  - removed `src/lib/signals/compute.ts`
+- validation:
+  - runtime/reference grep showed no live imports; the active signal/churn logic remains in the cron route and readiness-update paths
+  - `bun run type-check` passed
+  - `bun run check:storybook` passed
+  - `bun run build` passed
+
 ### Completion check
 
 - baseline/control docs created first
