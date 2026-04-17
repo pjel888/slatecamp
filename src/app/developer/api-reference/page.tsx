@@ -1,7 +1,7 @@
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs'
 import { SectionHeader } from '@/components/shared/section-header'
 import { EndpointCard } from '../_components/EndpointCard'
-import { actionGroups, adminEndpoints, aiEndpoints, cronEndpoints, debugEndpoints, paymentEndpoints, webhookEndpoints } from '@/lib/developer/api-reference-data'
+import { actionGroups, adminEndpoints, aiEndpoints, cronEndpoints, debugEndpoints, lemonsqueezyWebhookEvents, paymentEndpoints, payrexWebhookEvents, sharedWebhookConventions, webhookEndpoints, webhookSignatureNotes } from '@/lib/developer/api-reference-data'
 
 export const metadata = {
   title: 'API Reference — SlateCamp Developer Portal',
@@ -210,36 +210,28 @@ export default function ApiReferencePage() {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr className="border-b border-border hover:bg-muted/30 transition-colors duration-150">
-                    <td className="px-4 py-3 align-top">
-                      <span className="font-[family-name:var(--font-dm-mono)] text-[11px] text-foreground">
-                        checkout.session.completed
-                      </span>
-                    </td>
-                    <td className="px-4 py-3 align-top">
-                      <p className="text-[11px] text-muted-foreground leading-relaxed">
-                        UPDATE <span className="font-[family-name:var(--font-dm-mono)]">user_subscriptions</span>{' '}
-                        SET tier, lemon_squeezy_customer_id, lemon_squeezy_subscription_id, status=&apos;active&apos; WHERE user_id = metadata.userId
-                      </p>
-                      <p className="text-[11px] text-muted-foreground leading-relaxed mt-1">
-                        INSERT <span className="font-[family-name:var(--font-dm-mono)]">analytics_events</span>{' '}
-                        &#123; event_name: &apos;pro_subscribed&apos;, event_properties: &#123; plan, lemon_squeezy_subscription_id &#125; &#125;
-                      </p>
-                    </td>
-                  </tr>
-                  <tr className="hover:bg-muted/30 transition-colors duration-150">
-                    <td className="px-4 py-3 align-top">
-                      <span className="font-[family-name:var(--font-dm-mono)] text-[11px] text-foreground">
-                        customer.subscription.deleted
-                      </span>
-                    </td>
-                    <td className="px-4 py-3 align-top">
-                      <p className="text-[11px] text-muted-foreground leading-relaxed">
-                        UPDATE <span className="font-[family-name:var(--font-dm-mono)]">user_subscriptions</span>{' '}
-                        SET tier=&apos;free&apos;, lemon_squeezy_subscription_id=null, status=&apos;canceled&apos; WHERE lemon_squeezy_subscription_id = subscription.id
-                      </p>
-                    </td>
-                  </tr>
+                  {lemonsqueezyWebhookEvents.map((row, index) => (
+                    <tr
+                      key={row.event}
+                      className={index < lemonsqueezyWebhookEvents.length - 1 ? 'border-b border-border hover:bg-muted/30 transition-colors duration-150' : 'hover:bg-muted/30 transition-colors duration-150'}
+                    >
+                      <td className="px-4 py-3 align-top">
+                        <span className="font-[family-name:var(--font-dm-mono)] text-[11px] text-foreground">
+                          {row.event}
+                        </span>
+                      </td>
+                      <td className="px-4 py-3 align-top">
+                        {row.mutations.map((mutation, mutationIndex) => (
+                          <p
+                            key={`${row.event}-${mutationIndex}`}
+                            className={`text-[11px] text-muted-foreground leading-relaxed${mutationIndex > 0 ? ' mt-1' : ''}`}
+                          >
+                            {mutation}
+                          </p>
+                        ))}
+                      </td>
+                    </tr>
+                  ))}
                 </tbody>
               </table>
             </div>
@@ -249,15 +241,7 @@ export default function ApiReferencePage() {
                 Signature Verification
               </p>
               <p className="text-[11px] text-muted-foreground leading-relaxed">
-                Reads raw body text (not parsed JSON) and verifies against{' '}
-                <span className="font-[family-name:var(--font-dm-mono)] text-foreground">x-signature</span>{' '}
-                header using{' '}
-                <span className="font-[family-name:var(--font-dm-mono)] text-foreground">
-                  lemonsqueezy.webhooks.constructEvent(body, sig, LEMONSQUEEZY_WEBHOOK_SECRET)
-                </span>.
-                Returns 400 if signature is missing or invalid. Requires{' '}
-                <span className="font-[family-name:var(--font-dm-mono)] text-foreground">LEMONSQUEEZY_WEBHOOK_SECRET</span>{' '}
-                env var.
+                {webhookSignatureNotes.lemonsqueezy}
               </p>
             </div>
           </section>
@@ -280,19 +264,25 @@ export default function ApiReferencePage() {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr className="hover:bg-muted/30 transition-colors duration-150">
-                    <td className="px-4 py-3 align-top">
-                      <span className="font-[family-name:var(--font-dm-mono)] text-[11px] text-foreground">
-                        payment_intent.succeeded
-                      </span>
-                    </td>
-                    <td className="px-4 py-3 align-top">
-                      <p className="text-[11px] text-muted-foreground leading-relaxed">
-                        UPDATE <span className="font-[family-name:var(--font-dm-mono)]">user_subscriptions</span>{' '}
-                        SET tier (from metadata.tier or derived from amount_cents), status=&apos;active&apos; WHERE user_id = metadata.user_id
-                      </p>
-                    </td>
-                  </tr>
+                  {payrexWebhookEvents.map((row) => (
+                    <tr key={row.event} className="hover:bg-muted/30 transition-colors duration-150">
+                      <td className="px-4 py-3 align-top">
+                        <span className="font-[family-name:var(--font-dm-mono)] text-[11px] text-foreground">
+                          {row.event}
+                        </span>
+                      </td>
+                      <td className="px-4 py-3 align-top">
+                        {row.mutations.map((mutation, mutationIndex) => (
+                          <p
+                            key={`${row.event}-${mutationIndex}`}
+                            className={`text-[11px] text-muted-foreground leading-relaxed${mutationIndex > 0 ? ' mt-1' : ''}`}
+                          >
+                            {mutation}
+                          </p>
+                        ))}
+                      </td>
+                    </tr>
+                  ))}
                 </tbody>
               </table>
             </div>
@@ -302,15 +292,7 @@ export default function ApiReferencePage() {
                 Signature Verification
               </p>
               <p className="text-[11px] text-muted-foreground leading-relaxed">
-                Reads raw body text and verifies against{' '}
-                <span className="font-[family-name:var(--font-dm-mono)] text-foreground">payrex-signature</span>{' '}
-                header using{' '}
-                <span className="font-[family-name:var(--font-dm-mono)] text-foreground">
-                  payrex.webhooks.parseEvent(body, signature, PAYREX_WEBHOOK_SECRET)
-                </span>.
-                Returns 400 if signature is missing or invalid. Requires{' '}
-                <span className="font-[family-name:var(--font-dm-mono)] text-foreground">PAYREX_WEBHOOK_SECRET</span>{' '}
-                env var.
+                {webhookSignatureNotes.payrex}
               </p>
             </div>
           </section>
@@ -321,24 +303,9 @@ export default function ApiReferencePage() {
               Shared Conventions
             </p>
             <div className="space-y-2 text-[11px] text-muted-foreground leading-relaxed">
-              <p>
-                Both handlers use the{' '}
-                <span className="font-[family-name:var(--font-dm-mono)] text-foreground">createAdminClient()</span>{' '}
-                Supabase client (service role key) to bypass RLS for subscription mutations.
-              </p>
-              <p>
-                All successful responses return{' '}
-                <span className="font-[family-name:var(--font-dm-mono)] text-foreground">
-                  {'{ "received": true }'}
-                </span>{' '}
-                with HTTP 200. LemonSqueezy and PayRex retry on non-2xx responses.
-              </p>
-              <p>
-                Register webhook endpoints in the LemonSqueezy and PayRex dashboards pointing to the
-                production URL. Use{' '}
-                <span className="font-[family-name:var(--font-dm-mono)] text-foreground">lemonsqueezy listen --forward-to localhost:3000/api/webhooks/lemonsqueezy</span>{' '}
-                for local development.
-              </p>
+              {sharedWebhookConventions.map((note) => (
+                <p key={note}>{note}</p>
+              ))}
             </div>
           </section>
         </TabsContent>
@@ -346,4 +313,3 @@ export default function ApiReferencePage() {
     </div>
   )
 }
-

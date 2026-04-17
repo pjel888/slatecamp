@@ -537,3 +537,40 @@ export const actionGroups: ActionGroup[] = [
   },
 ]
 
+export const lemonsqueezyWebhookEvents = [
+  {
+    event: 'checkout.session.completed',
+    mutations: [
+      "UPDATE user_subscriptions SET tier, lemon_squeezy_customer_id, lemon_squeezy_subscription_id, status='active' WHERE user_id = metadata.userId",
+      "INSERT analytics_events { event_name: 'pro_subscribed', event_properties: { plan, lemon_squeezy_subscription_id } }",
+    ],
+  },
+  {
+    event: 'customer.subscription.deleted',
+    mutations: [
+      "UPDATE user_subscriptions SET tier='free', lemon_squeezy_subscription_id=null, status='canceled' WHERE lemon_squeezy_subscription_id = subscription.id",
+    ],
+  },
+]
+
+export const payrexWebhookEvents = [
+  {
+    event: 'payment_intent.succeeded',
+    mutations: [
+      "UPDATE user_subscriptions SET tier (from metadata.tier or derived from amount_cents), status='active' WHERE user_id = metadata.user_id",
+    ],
+  },
+]
+
+export const webhookSignatureNotes = {
+  lemonsqueezy:
+    'Reads raw body text (not parsed JSON) and verifies against x-signature using lemonsqueezy.webhooks.constructEvent(body, sig, LEMONSQUEEZY_WEBHOOK_SECRET). Returns 400 if signature is missing or invalid. Requires LEMONSQUEEZY_WEBHOOK_SECRET.',
+  payrex:
+    'Reads raw body text and verifies against payrex-signature using payrex.webhooks.parseEvent(body, signature, PAYREX_WEBHOOK_SECRET). Returns 400 if signature is missing or invalid. Requires PAYREX_WEBHOOK_SECRET.',
+} as const
+
+export const sharedWebhookConventions = [
+  'Both handlers use createAdminClient() (service role) to bypass RLS for subscription mutations.',
+  'All successful responses return { \"received\": true } with HTTP 200. LemonSqueezy and PayRex retry on non-2xx responses.',
+  'Register webhook endpoints in the provider dashboards against the production URL. Use lemonsqueezy listen --forward-to localhost:3000/api/webhooks/lemonsqueezy for local development.',
+]

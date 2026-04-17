@@ -600,6 +600,15 @@
   - `bun run type-check` passed
   - `bun run build` passed
 
+### Follow-up: developer API reference webhook extraction
+
+- implemented:
+  - moved the webhook event rows, signature-verification notes, and shared webhook conventions out of `src/app/developer/api-reference/page.tsx`
+  - the API reference route now reads those webhook details from `src/lib/developer/api-reference-data.ts` instead of keeping more inline content
+- validation:
+  - `bun run type-check` passed
+  - `bun run build` passed
+
 ### Follow-up: developer connection-state/helper cleanup
 
 - implemented:
