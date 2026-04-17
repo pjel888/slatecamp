@@ -193,6 +193,16 @@
   - `bun run check:storybook` passed
   - `bun run build` passed
 
+### Follow-up: mock question fixture cleanup
+
+- implemented:
+  - removed `src/data/mock-questions.json`
+- validation:
+  - runtime/reference grep showed no live consumers beyond cleanup docs and the local `src/data/AGENTS.md` inventory note
+  - `bun run type-check` passed
+  - `bun run check:storybook` passed
+  - `bun run build` passed
+
 ### Completion check
 
 - baseline/control docs created first

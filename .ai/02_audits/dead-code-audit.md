@@ -39,6 +39,7 @@ Implementation note (2026-04-17):
   - `L1-L007`
   - part of `L1-L010` (`src/data/patch.json`)
   - part of `L1-L010` (`src/data/sample-lots.ts`)
+  - part of `L1-L010` (`src/data/mock-questions.json`)
 
 - `L1-L003` — superseded quiz review files:
   - `src/components/quiz-v2/review/ReviewMode.tsx`
