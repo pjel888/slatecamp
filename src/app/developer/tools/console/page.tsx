@@ -1,4 +1,5 @@
 import { createClient, getUser } from '@/lib/supabase/server'
+import { getConnectionState } from '@/lib/dev/dev-mode'
 import { developerNextVersion } from '@/lib/developer/tech-stack'
 import { ConsoleClient } from './console-client'
 
@@ -26,7 +27,7 @@ export default async function DeveloperConsolePage() {
         userId: user?.id ?? '',
         userEmail: user?.email ?? '',
         userRole: user?.app_metadata?.role ?? 'user',
-        connectionState: process.env.NEXT_PUBLIC_SUPABASE_URL ? 'connected' : 'local',
+        connectionState: getConnectionState(),
       }}
       dbFlags={dbFlags}
     />

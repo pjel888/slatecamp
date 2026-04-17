@@ -488,6 +488,15 @@
   - `bun run type-check` passed
   - `bun run build` passed
 
+### Follow-up: developer connection-state/helper cleanup
+
+- implemented:
+  - updated `/developer/tools/console` to use the shared `getConnectionState()` helper instead of duplicating the env check inline
+  - removed the unused `THREE_WITH_DREI_VERSION` constant from `src/lib/developer/tech-stack.ts`
+- validation:
+  - `bun run type-check` passed
+  - `bun run build` passed
+
 ### Follow-up: wiki mobile hydration convergence
 
 - implemented:

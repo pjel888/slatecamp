@@ -18,7 +18,6 @@ export interface DeveloperTechStackRow {
 const PAYMENTS_VERSION = `${version('@lemonsqueezy/lemonsqueezy.js')} / ${version('payrex-node')}`
 const UI_VERSION = `${version('@base-ui/react')} / ${version('shadcn')}`
 const THREE_VERSION = `${version('three')} / ${version('@react-three/fiber')}`
-const THREE_WITH_DREI_VERSION = `${version('three')} / ${version('@react-three/fiber')} / ${version('@react-three/drei')}`
 const CONTENT_VERSION = `${version('next-mdx-remote')} / 3.1.1`
 
 export const developerNextVersion = version('next')
