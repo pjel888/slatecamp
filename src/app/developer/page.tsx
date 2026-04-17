@@ -9,6 +9,7 @@ import { developerPortalTechStack } from '@/lib/developer/tech-stack'
 import { getDeveloperRepoMetrics } from '@/lib/developer/repo-metrics'
 import { Card } from '@/components/ui/card'
 import { developerOverviewCards, developerQuickActions, developerToolCount } from '@/lib/developer/surface-registry'
+import { getDeveloperServiceStatusSnapshot } from '@/lib/developer/status-snapshot'
 
 import { createClient } from '@/lib/supabase/server'
 
@@ -16,13 +17,6 @@ export const metadata = {
   title: 'Developer Portal — SlateCamp',
   description: 'Internal documentation, API reference, architecture guides, and dev tools for the SlateCamp engineering team.',
 }
-
-const healthServices = [
-  { name: 'Database', status: 'operational' as const },
-  { name: 'API', status: 'operational' as const },
-  { name: 'Auth', status: 'operational' as const },
-  { name: 'Cache', status: 'degraded' as const },
-]
 
 const overviewCardIconMap = {
   apiReference: BookOpen,
@@ -36,16 +30,24 @@ const quickActionIconMap = {
   testData: Flask,
 } as const
 
-const StatusDot = ({ status, name }: { status: 'operational' | 'degraded'; name: string }) => {
-  const isOperational = status === 'operational'
+const StatusDot = ({
+  status,
+  name,
+}: {
+  status: 'operational' | 'degraded' | 'outage'
+  name: string
+}) => {
+  const tone =
+    status === 'operational'
+      ? { dot: 'bg-emerald-500', text: 'text-emerald-600' }
+      : status === 'outage'
+        ? { dot: 'bg-red-500', text: 'text-red-600' }
+        : { dot: 'bg-amber-500', text: 'text-amber-600' }
+
   return (
     <span className="inline-flex items-center gap-1.5 text-[11px] font-medium">
-      <span
-        className={`w-1.5 h-1.5 rounded-full ${isOperational ? 'bg-emerald-500' : 'bg-amber-500'}`}
-      />
-      <span className={isOperational ? 'text-emerald-600' : 'text-amber-600'}>
-        {name}
-      </span>
+      <span className={`w-1.5 h-1.5 rounded-full ${tone.dot}`} />
+      <span className={tone.text}>{name}</span>
     </span>
   )
 }
@@ -59,18 +61,27 @@ const DeveloperPortalPage = async () => {
     { count: questionsCount },
     { count: sessionsCount },
     repoMetrics,
+    serviceStatuses,
   ] = await Promise.all([
     supabase.from('profiles').select('id', { count: 'exact', head: true }),
     supabase.from('wiki_articles').select('id', { count: 'exact', head: true }),
     supabase.from('questions').select('id', { count: 'exact', head: true }),
     supabase.from('quiz_sessions').select('id', { count: 'exact', head: true }),
     getDeveloperRepoMetrics(),
+    getDeveloperServiceStatusSnapshot(),
   ])
 
   const checkedAtLabel = new Date().toLocaleTimeString('en-US', {
     hour: 'numeric',
     minute: '2-digit',
   })
+
+  const healthServices = [
+    { name: 'Database', status: serviceStatuses.database },
+    { name: 'API', status: serviceStatuses.api },
+    { name: 'Auth', status: serviceStatuses.auth },
+    { name: 'Edge', status: serviceStatuses.edge },
+  ] as const
 
   const stats = [
     { eyebrow: 'Users', value: usersCount ?? 0 },

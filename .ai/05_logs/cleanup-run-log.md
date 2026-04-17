@@ -411,6 +411,17 @@
   - `bun run type-check` passed
   - `bun run build` passed
 
+### Follow-up: developer shared status snapshot
+
+- implemented:
+  - added `src/lib/developer/status-snapshot.ts` for the shared live service-status fetch/normalization path
+  - updated `/developer/status` to consume the shared snapshot helper instead of owning its own Supabase status parsing logic
+  - updated the `/developer` overview health chips to use the same live service set, removing the old static cache placeholder drift
+  - refreshed `src/lib/developer/AGENTS.md` to match the new helper file
+- validation:
+  - `bun run type-check` passed
+  - `bun run build` passed
+
 ### Follow-up: wiki mobile hydration convergence
 
 - implemented:

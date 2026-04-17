@@ -8,11 +8,11 @@
 
 **Scope:** `src/lib/developer/` subtree
 
-**Current snapshot:** 0 directories and 6 files beneath this scope (excluding this `AGENTS.md`).
+**Current snapshot:** 0 directories and 7 files beneath this scope (excluding this `AGENTS.md`).
 
 **Top local directories:** none
 
-**Top local files:** `api-reference-data.ts`, `architecture-data.ts`, `changelog.ts`, `repo-metrics.ts`, `surface-registry.ts`, `tech-stack.ts`
+**Top local files:** `api-reference-data.ts`, `architecture-data.ts`, `changelog.ts`, `repo-metrics.ts`, `status-snapshot.ts`, `surface-registry.ts`, `tech-stack.ts`
 
 ### What agents must do here
 - Inspect live call sites, tests, schema/config dependencies, and adjacent helpers before editing this logic layer.

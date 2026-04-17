@@ -9,6 +9,7 @@ import { Card } from '@/components/ui/card'
 import type { ServiceStatus } from '@/types/developer'
 import { createClient } from '@/lib/supabase/server'
 import { developerStatusServices, developerSurfaceTruthNotes } from '@/lib/developer/surface-registry'
+import { getDeveloperServiceStatusSnapshot } from '@/lib/developer/status-snapshot'
 
 /* ------------------------------------------------------------------ */
 /*  Helpers                                                            */
@@ -35,22 +36,8 @@ const buildAvailabilitySnapshot = (
 /* ------------------------------------------------------------------ */
 
 const StatusOverviewPage = async () => {
-  // Fetch real status from Supabase
-  const supabaseStatusRes = await fetch('https://status.supabase.com/api/v2/summary.json', { next: { revalidate: 60 } }).catch(() => null)
-  const supabaseStatus = supabaseStatusRes?.ok ? await supabaseStatusRes.json() : null
-
-  const getComponentStatus = (name: string): ServiceStatus => {
-    const comp = supabaseStatus?.components?.find((c: any) => c.name === name)
-    if (!comp) return 'operational'
-    if (comp.status === 'operational') return 'operational'
-    if (comp.status === 'major_outage' || comp.status === 'partial_outage') return 'outage'
-    return 'degraded'
-  }
-
-  const dbStatus = getComponentStatus('Database')
-  const apiStatus = getComponentStatus('API Gateway')
-  const authStatus = getComponentStatus('Auth')
-  const edgeStatus = getComponentStatus('Edge Functions')
+  const serviceStatuses = await getDeveloperServiceStatusSnapshot()
+  const { database: dbStatus, api: apiStatus, auth: authStatus, edge: edgeStatus } = serviceStatuses
 
   // Ping API for real latency
   const startPing = performance.now()
