@@ -41,7 +41,7 @@ export const developerPortalTechStack: DeveloperTechStackRow[] = [
     label: 'Payments',
     pkg: '@lemonsqueezy/lemonsqueezy.js + payrex-node',
     version: PAYMENTS_VERSION,
-    notes: 'SDK currently stubbed in app code',
+    notes: 'PayRex active path; LemonSqueezy config currently stubbed',
   },
   { label: 'Validation', pkg: 'zod', version: version('zod') },
   {

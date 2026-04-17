@@ -564,6 +564,15 @@
   - `bun run type-check` passed
   - `bun run build` passed
 
+### Follow-up: developer payments-note truth cleanup
+
+- implemented:
+  - updated the payments note in `src/lib/developer/tech-stack.ts`
+  - the developer portal now describes the current runtime reality more precisely: PayRex is the active path, while the LemonSqueezy config remains stubbed
+- validation:
+  - `bun run type-check` passed
+  - `bun run build` passed
+
 ### Follow-up: developer connection-state/helper cleanup
 
 - implemented:
