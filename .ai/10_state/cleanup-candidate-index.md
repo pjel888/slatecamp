@@ -15,6 +15,7 @@ Implementation note (2026-04-17):
   - `DEP-03` — `@storybook/test`
   - `DEP-04` — `@radix-ui/react-visually-hidden`
   - removed `@types/dompurify` with the same low-risk slice
+- `SCRIPT-01` implemented
 - still deferred:
   - `DEP-01` — `dompurify`
   - `DEP-05` — `@tiptap/pm` and `@tiptap/suggestion`

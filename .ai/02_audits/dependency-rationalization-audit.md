@@ -6,6 +6,7 @@ Implementation note (2026-04-17):
   - `DEP-03` — `@storybook/test`
   - `DEP-04` — `@radix-ui/react-visually-hidden`
   - `@types/dompurify`
+  - `SCRIPT-01` — `check:storybook-placeholders`
 - still deferred:
   - `DEP-01` — `dompurify`
   - `DEP-05` — `@tiptap/pm` and `@tiptap/suggestion`

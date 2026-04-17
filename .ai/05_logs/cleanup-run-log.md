@@ -96,6 +96,7 @@
   - removed `@storybook/test`
   - removed `@radix-ui/react-visually-hidden`
   - removed `@types/dompurify`
+  - removed the redundant `check:storybook-placeholders` alias script
 - intentionally deferred:
   - `dompurify`
   - `@tiptap/pm`

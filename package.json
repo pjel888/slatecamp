@@ -9,7 +9,6 @@
     "build": "next build",
     "start": "next start",
     "check:storybook": "bun scripts/check-storybook.ts",
-    "check:storybook-placeholders": "bun run check:storybook",
     "storybook": "bun run check:storybook && storybook dev -p 6006",
     "build-storybook": "bun run check:storybook && storybook build",
     "lint": "bun run check:storybook && eslint .",
