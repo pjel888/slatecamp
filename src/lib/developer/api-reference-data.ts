@@ -256,6 +256,15 @@ export const debugEndpoints = [
   },
 ]
 
+export const routeHandlerSections = [
+  { label: 'Payments', endpoints: paymentEndpoints },
+  { label: 'Webhooks', endpoints: webhookEndpoints },
+  { label: 'Cron Jobs', endpoints: cronEndpoints },
+  { label: 'AI', endpoints: aiEndpoints },
+  { label: 'Admin', endpoints: adminEndpoints },
+  { label: 'Debug', endpoints: debugEndpoints },
+]
+
 // ─── Server Actions data ──────────────────────────────────────────────────────
 
 type ActionRow = {

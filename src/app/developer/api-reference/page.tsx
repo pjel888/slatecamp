@@ -1,7 +1,7 @@
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs'
 import { SectionHeader } from '@/components/shared/section-header'
 import { EndpointCard } from '../_components/EndpointCard'
-import { actionGroups, adminEndpoints, aiEndpoints, cronEndpoints, debugEndpoints, lemonsqueezyWebhookEvents, paymentEndpoints, payrexWebhookEvents, sharedWebhookConventions, webhookEndpoints, webhookSignatureNotes } from '@/lib/developer/api-reference-data'
+import { actionGroups, lemonsqueezyWebhookEvents, payrexWebhookEvents, routeHandlerSections, sharedWebhookConventions, webhookSignatureNotes } from '@/lib/developer/api-reference-data'
 
 export const metadata = {
   title: 'API Reference — SlateCamp Developer Portal',
@@ -37,78 +37,18 @@ export default function ApiReferencePage() {
 
         {/* ── Tab 1: Route Handlers ─────────────────────────────── */}
         <TabsContent value="routes" className="pt-6 space-y-8">
-
-          {/* Payments */}
-          <section>
-            <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-3">
-              Payments
-            </p>
-            <div className="space-y-2">
-              {paymentEndpoints.map((ep) => (
-                <EndpointCard key={`${ep.method}-${ep.path}`} {...ep} />
-              ))}
-            </div>
-          </section>
-
-          {/* Webhooks */}
-          <section>
-            <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-3">
-              Webhooks
-            </p>
-            <div className="space-y-2">
-              {webhookEndpoints.map((ep) => (
-                <EndpointCard key={`${ep.method}-${ep.path}`} {...ep} />
-              ))}
-            </div>
-          </section>
-
-          {/* Cron Jobs */}
-          <section>
-            <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-3">
-              Cron Jobs
-            </p>
-            <div className="space-y-2">
-              {cronEndpoints.map((ep) => (
-                <EndpointCard key={`${ep.method}-${ep.path}`} {...ep} />
-              ))}
-            </div>
-          </section>
-
-          {/* AI */}
-          <section>
-            <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-3">
-              AI
-            </p>
-            <div className="space-y-2">
-              {aiEndpoints.map((ep) => (
-                <EndpointCard key={`${ep.method}-${ep.path}`} {...ep} />
-              ))}
-            </div>
-          </section>
-
-          {/* Admin */}
-          <section>
-            <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-3">
-              Admin
-            </p>
-            <div className="space-y-2">
-              {adminEndpoints.map((ep) => (
-                <EndpointCard key={`${ep.method}-${ep.path}`} {...ep} />
-              ))}
-            </div>
-          </section>
-
-          {/* Debug */}
-          <section>
-            <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-3">
-              Debug
-            </p>
-            <div className="space-y-2">
-              {debugEndpoints.map((ep) => (
-                <EndpointCard key={`${ep.method}-${ep.path}`} {...ep} />
-              ))}
-            </div>
-          </section>
+          {routeHandlerSections.map((section) => (
+            <section key={section.label}>
+              <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-3">
+                {section.label}
+              </p>
+              <div className="space-y-2">
+                {section.endpoints.map((ep) => (
+                  <EndpointCard key={`${ep.method}-${ep.path}`} {...ep} />
+                ))}
+              </div>
+            </section>
+          ))}
         </TabsContent>
 
         {/* ── Tab 2: Server Actions ─────────────────────────────── */}

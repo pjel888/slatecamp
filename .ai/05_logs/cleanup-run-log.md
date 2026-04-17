@@ -609,6 +609,15 @@
   - `bun run type-check` passed
   - `bun run build` passed
 
+### Follow-up: developer route-handler section extraction
+
+- implemented:
+  - moved the route-handler section list out of `src/app/developer/api-reference/page.tsx`
+  - the API reference route now maps over `routeHandlerSections` from `src/lib/developer/api-reference-data.ts` instead of carrying six repeated inline section blocks
+- validation:
+  - `bun run type-check` passed
+  - `bun run build` passed
+
 ### Follow-up: developer connection-state/helper cleanup
 
 - implemented:
