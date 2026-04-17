@@ -165,7 +165,7 @@ src/
 
 ### 1. Scene Initialization
 
-Every template-driven and legacy scene is wrapped by `CanvasWrapper` (`_components/CanvasWrapper.tsx`). This component owns the WebGL context lifecycle and establishes the baseline rendering configuration:
+Every template-driven and legacy scene is wrapped by `CanvasWrapper` (`src/features/3d-lab/components/CanvasWrapper.tsx`). This component owns the WebGL context lifecycle and establishes the baseline rendering configuration:
 
 ```
 Canvas (R3F)
@@ -224,7 +224,7 @@ WebGL frame rendered → GPU output
 
 ### 3. Module Routing (`LabViewport`)
 
-`LabViewport` (`_components/LabViewport.tsx`) is the central dispatch point that maps a `modelId` string to its rendering path:
+`LabViewport` (`src/features/3d-lab/components/LabViewport.tsx`) is the central dispatch point that maps a `modelId` string to its rendering path:
 
 ```
 modelId
@@ -237,7 +237,7 @@ modelId
   │     → <TemplateModuleWrapper moduleId templateType>
   │         │
   │         └── loadModuleConfig(moduleId)
-  │               import('../_config/modules/${moduleId}')  ← webpack chunk per file
+  │               import('@/features/3d-lab/config/modules/${moduleId}')  ← webpack chunk per file
   │               Object.values(mod)[0]                     ← extracts the config export
   │               │
   │               ├── templateType 'parametric'  → <ParametricScene config />
@@ -365,9 +365,9 @@ The outer `Html` wrapper uses `pointerEvents='none'`; interactive content inside
 
 | Component | File | Responsibility |
 |-----------|------|----------------|
-| `CanvasWrapper` | `_components/CanvasWrapper.tsx` | R3F Canvas host. Establishes WebGL context, lighting, OrbitControls, ContactShadows, demand rendering via `InvalidateRegistrar`. |
+| `CanvasWrapper` | `src/features/3d-lab/components/CanvasWrapper.tsx` | R3F Canvas host. Establishes WebGL context, lighting, OrbitControls, ContactShadows, demand rendering via `InvalidateRegistrar`. |
 | `InvalidateRegistrar` | Inside `CanvasWrapper.tsx` | Internal R3F component. Calls `useInvalidateOnChange()` to register the R3F `invalidate` function into Zustand on mount. |
-| `LabViewport` | `_components/LabViewport.tsx` | Module router. Dispatches `modelId` to legacy scene, template wrapper, or GLTF Workspace. |
+| `LabViewport` | `src/features/3d-lab/components/LabViewport.tsx` | Module router. Dispatches `modelId` to legacy scene, template wrapper, or GLTF Workspace. |
 | `TemplateModuleWrapper` | Inside `LabViewport.tsx` | Async loader. Fetches module config via webpack dynamic import, then renders the appropriate template component. |
 
 ### Scene Templates
@@ -384,39 +384,39 @@ The outer `Html` wrapper uses `pointerEvents='none'`; interactive content inside
 
 | Scene | Files | Description |
 |-------|-------|-------------|
-| `NBCPEnvelope` | `_scenes/NBCPEnvelope/` | National Building Code envelope compliance. 1 unit = 20m (scale 0.05). Renders lot plate, setback zones, neighboring lots, floor plates, BHL reference, building envelope mesh. Building color reflects `ViolationRule[]` state. |
-| `FARPlayground` | `_scenes/FARPlayground/` | Floor-to-Area Ratio parametric calculator. 1 unit = 12.5m (scale 0.08). Computes floors from `maxFloorAreaM2 / footprintAreaM2`. |
-| `ClassicalOrders` | `_scenes/ClassicalOrders/` | Static exploded comparison of Doric, Ionic, and Corinthian column orders. |
+| `NBCPEnvelope` | `src/features/3d-lab/scenes/NBCPEnvelope/` | National Building Code envelope compliance. 1 unit = 20m (scale 0.05). Renders lot plate, setback zones, neighboring lots, floor plates, BHL reference, building envelope mesh. Building color reflects `ViolationRule[]` state. |
+| `FARPlayground` | `src/features/3d-lab/scenes/FARPlayground/` | Floor-to-Area Ratio parametric calculator. 1 unit = 12.5m (scale 0.08). Computes floors from `maxFloorAreaM2 / footprintAreaM2`. |
+| `ClassicalOrders` | `src/features/3d-lab/scenes/ClassicalOrders/` | Static exploded comparison of Doric, Ionic, and Corinthian column orders. |
 
 ### Geometry & Annotation Primitives
 
 | Component | File | Responsibility |
 |-----------|------|----------------|
-| `GeometryMesh` | `_components/GeometryMesh.tsx` | Renders a `GeometryInstruction` as a Three.js mesh. `GeometryElement` maps type string to JSX geometry intrinsic; `InstructionMesh` wraps it with `meshStandardMaterial`. |
-| `HotspotAnnotation` | `_components/HotspotAnnotation.tsx` | 3D-anchored interactive annotation. Uses `<Html distanceFactor={8}>`. Inactive: 4px dot. Active: 224px card with description and wiki link. Quiz mode: amber variant. |
-| `HumanSilhouette` | `_components/HumanSilhouette.tsx` | Scale reference figure (1.7m human silhouette) for spatial context in compliance scenes. |
-| `ViolationIndicator` | `_components/ViolationIndicator.tsx` | Visual marker rendered at violation positions in the 3D scene. |
+| `GeometryMesh` | `src/features/3d-lab/components/GeometryMesh.tsx` | Renders a `GeometryInstruction` as a Three.js mesh. `GeometryElement` maps type string to JSX geometry intrinsic; `InstructionMesh` wraps it with `meshStandardMaterial`. |
+| `HotspotAnnotation` | `src/features/3d-lab/components/HotspotAnnotation.tsx` | 3D-anchored interactive annotation. Uses `<Html distanceFactor={8}>`. Inactive: 4px dot. Active: 224px card with description and wiki link. Quiz mode: amber variant. |
+| `HumanSilhouette` | `src/features/3d-lab/components/HumanSilhouette.tsx` | Scale reference figure (1.7m human silhouette) for spatial context in compliance scenes. |
+| `ViolationIndicator` | `src/features/3d-lab/components/ViolationIndicator.tsx` | Visual marker rendered at violation positions in the 3D scene. |
 
 ### State Management
 
 | Store | File | State |
 |-------|------|-------|
-| `useLabStore` | `_stores/labStore.ts` | `lotArea` (500), `far` (2.5), `bhl` (15), `setbackFront` (3), `setbackSide` (2), `activeHotspotId`, `isQuizMode`, `quizTargetPartId`, `invalidateFn`. All mutating actions call `invalidateFn()` immediately after `set()`. |
-| `useNBCPStore` | `_stores/nbcpStore.ts` | NBCP-specific computed values: buildable envelope dimensions, lot type, violation array. |
-| `createModuleStore` | `_stores/createModuleStore.ts` | Factory function returning a Zustand store instance scoped to a single module's parameter definitions. |
+| `useLabStore` | `src/features/3d-lab/stores/legacyLabStore.ts` | Legacy parametric + hotspot store for the remaining FAR Playground / Classical Orders compatibility surfaces. Tracks `lotArea`, `far`, `bhl`, `setbackFront`, `setbackSide`, `activeHotspotId`, `isQuizMode`, `quizTargetPartId`, and `invalidateFn`. All mutating actions call `invalidateFn()` immediately after `set()`. |
+| `useNBCPStore` | `src/features/3d-lab/stores/nbcpStore.ts` | NBCP-specific computed values: buildable envelope dimensions, lot type, violation array. |
+| `createModuleStore` | `src/features/3d-lab/stores/createModuleStore.ts` | Factory function returning a Zustand store instance scoped to a single module's parameter definitions. |
 
 ### Hooks
 
 | Hook | File | Responsibility |
 |------|------|----------------|
-| `useInvalidateOnChange` | `_hooks/useInvalidateOnChange.ts` | Reads `useThree().invalidate` and writes it to `useLabStore.setInvalidateFn`. Called once inside `InvalidateRegistrar` (inside Canvas). Bridges R3F's render API to Zustand. |
+| `useInvalidateOnChange` | `src/features/3d-lab/hooks/useInvalidateOnChange.ts` | Reads `useThree().invalidate` and writes it to `useLabStore.setInvalidateFn`. Called once inside `InvalidateRegistrar` (inside Canvas). Bridges R3F's render API to Zustand. |
 
 ### Module Configuration System
 
 | File | Role |
 |------|------|
-| `_config/moduleRegistry.ts` | Exports `MODULE_REGISTRY: ModuleRegistryEntry[]` and `SUBJECT_AREAS`. Registry entries contain: `id`, `title`, `templateType`, `subject`, `codeRef`, `priority`, `status`, `supportedPhases`. `getModuleById(id)` is the lookup function used by `LabViewport`. |
-| `_config/modules/*.ts` (×187) | One file per module. Exports a single `ModuleConfig` object matching the `templateType` discriminated union. Fetched as individual webpack chunks on demand. |
+| `src/features/3d-lab/config/registry/index.ts` | Exports the module registry and subject areas. Registry entries contain `id`, `title`, `templateType`, `subject`, `codeRef`, `priority`, `status`, and `supportedPhases`. `getModuleById(id)` is the lookup function used by `LabViewport`. |
+| `src/features/3d-lab/config/modules/*.ts` (×187) | One file per module. Exports a single `ModuleConfig` object matching the `templateType` discriminated union. Fetched as individual chunks on demand. |
 
 ### Module Configuration Schema
 

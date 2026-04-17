@@ -657,6 +657,15 @@
   - `bun run type-check` passed
   - `bun run build` passed
 
+### Follow-up: 3D-lab route-doc path alignment
+
+- implemented:
+  - updated `src/app/dashboard/3d-lab/3D_LAB_ARCHITECTURE.md` to point at the current feature-layer component, store, hook, scene, and registry paths
+  - updated `src/app/dashboard/3d-lab/3D_LAB_MODULE_CATALOG.md` so its source note no longer points at the stale route-local registry path
+- validation:
+  - `bun run type-check` passed
+  - `bun run build` passed
+
 ### Follow-up: dashboard developer compatibility-page retirement
 
 - implemented:

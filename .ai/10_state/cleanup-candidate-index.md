@@ -67,6 +67,7 @@ Implementation note (2026-04-17):
 - `TOOL-01` implemented (`package-lock.json` retired after confirming Bun-only workflows and updating active docs)
 - `L3-C02` implemented in part (mobile wiki navigation now receives the same cached server-loaded taxonomy as the desktop sidebar)
 - `L2-3DLAB-004` implemented in part (redundant `_stores/labStore.ts` re-export wrappers retired; remaining consumers now import `stores/legacyLabStore` directly)
+- `L2-3DLAB-004` implemented in part (`src/app/dashboard/3d-lab/3D_LAB_ARCHITECTURE.md` and `3D_LAB_MODULE_CATALOG.md` now point at the current feature-layer paths instead of stale route-local aliases)
 - Bun package-resolution blocker repaired by pinning `@lemonsqueezy/lemonsqueezy.js` to the nearest valid version (`1.2.5`)
 - implemented dependency removals:
   - `DEP-01` — `dompurify`

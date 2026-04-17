@@ -1,6 +1,6 @@
 # 3D Lab — Module Catalog
 
-_Generated: 2026-03-31 | Source: `_config/moduleRegistry.ts` · 187 modules across 15 subject areas_
+_Generated: 2026-03-31 | Source: `src/features/3d-lab/config/registry/` · 187 modules across 15 subject areas_
 
 ---
 
