@@ -298,6 +298,19 @@
   - `bun run check:storybook` passed
   - `bun run build` passed
 
+### Follow-up: testing compatibility subtree retirement
+
+- implemented:
+  - removed the remaining support files under `src/app/dashboard/testing/**`
+- result:
+  - the old `/dashboard/testing` compatibility route layer is now fully retired
+  - canonical drill/test routing now lives under `/dashboard/drills` and `/quiz/**`
+- validation:
+  - no live source references remain to the retired testing subtree
+  - `bun run type-check` passed
+  - `bun run check:storybook` passed
+  - `bun run build` passed
+
 ### Completion check
 
 - baseline/control docs created first
