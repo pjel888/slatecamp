@@ -535,6 +535,17 @@
   - `bun run type-check` passed
   - `bun run build` passed
 
+### Follow-up: developer detached preview cleanup
+
+- implemented:
+  - removed `src/app/developer/_components/DevBadge.tsx` after confirming it had no live imports
+  - removed `src/app/developer/_components/SlideToSubmitPreview.tsx` after confirming it had no live imports
+  - updated the active identity-lock legacy rule note so it no longer points at the retired preview file
+  - refreshed `src/app/developer/AGENTS.md` counts for the smaller subtree
+- validation:
+  - `bun run type-check` passed
+  - `bun run build` passed
+
 ### Follow-up: developer content-version truth cleanup
 
 - implemented:

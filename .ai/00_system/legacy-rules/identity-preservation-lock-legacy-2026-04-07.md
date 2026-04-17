@@ -45,7 +45,7 @@ The following components are **sacrosanct** — they must not be modified during
 | `src/app/dashboard/area-c/design-quiz/_components/QuestionCard.tsx` | Design quiz card |
 | `src/components/quiz-v2/index.ts` | Barrel re-export |
 
-Developer preview: `src/app/developer/_components/SlideToSubmitPreview.tsx`
+Developer preview: retired during cleanup; the lock still applies to the live SlideToSubmit component and its runtime usage sites above.
 
 ---
 

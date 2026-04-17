@@ -55,6 +55,7 @@ Implementation note (2026-04-17):
 - `L2-DEV-006` implemented in part (developer architecture tech-stack notes now derive the TypeScript strict-mode note from `tsconfig.json` instead of hardcoding `strict: false`)
 - `L2-DEV-006` implemented in part (developer tech-stack content row no longer hardcodes an unowned MDX version and now reports the package-backed `next-mdx-remote` contract directly)
 - `L2-DEV-006` implemented in part (developer console now uses the shared `getConnectionState()` helper and the unused `THREE_WITH_DREI_VERSION` constant has been removed)
+- `L1-L005` implemented in part (`src/app/developer/_components/DevBadge.tsx` and `src/app/developer/_components/SlideToSubmitPreview.tsx` removed after confirming they had no live consumers)
 - `TOOL-01` implemented (`package-lock.json` retired after confirming Bun-only workflows and updating active docs)
 - `L3-C02` implemented in part (mobile wiki navigation now receives the same cached server-loaded taxonomy as the desktop sidebar)
 - `L2-3DLAB-004` implemented in part (redundant `_stores/labStore.ts` re-export wrappers retired; remaining consumers now import `stores/legacyLabStore` directly)
