@@ -6,6 +6,15 @@ import type { UserTier } from "@/types/app";
 
 export type DevConnectionState = "local" | "connected";
 
+export interface DevSystemInfo {
+  env: string;
+  nextVersion: string;
+  userId: string;
+  userEmail: string;
+  userRole: string;
+  connectionState: DevConnectionState;
+}
+
 // ---------------------------------------------------------------------------
 // Permission Capabilities — what each tier grants
 // ---------------------------------------------------------------------------

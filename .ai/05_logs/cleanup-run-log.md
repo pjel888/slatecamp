@@ -497,6 +497,15 @@
   - `bun run type-check` passed
   - `bun run build` passed
 
+### Follow-up: developer system-info contract convergence
+
+- implemented:
+  - added `DevSystemInfo` to `src/lib/dev/dev-mode.ts`
+  - updated the developer console client, dev keyboard provider, dev overlay, and system-info component to reuse that shared contract instead of repeating the same object shape
+- validation:
+  - `bun run type-check` passed
+  - `bun run build` passed
+
 ### Follow-up: developer content-version truth cleanup
 
 - implemented:

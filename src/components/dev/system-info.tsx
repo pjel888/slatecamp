@@ -5,16 +5,7 @@ import { useDevStore } from '@/stores/dev-store'
 import { Monitor, Globe, User, ShieldCheck } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import type { Icon as PhosphorIcon } from '@phosphor-icons/react/lib'
-import type { DevConnectionState } from '@/lib/dev/dev-mode'
-
-interface SystemInfoProps {
-  env: string
-  nextVersion: string
-  userId: string
-  userEmail: string
-  userRole: string
-  connectionState: DevConnectionState
-}
+import type { DevSystemInfo } from '@/lib/dev/dev-mode'
 
 export function SystemInfo({
   env,
@@ -23,7 +14,7 @@ export function SystemInfo({
   userEmail,
   userRole,
   connectionState,
-}: SystemInfoProps) {
+}: DevSystemInfo) {
   const pathname = usePathname()
   const isImpersonating = useDevStore((s) => s.isImpersonating)
   const impersonatedRole = useDevStore((s) => s.impersonatedRole)
