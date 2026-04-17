@@ -73,6 +73,7 @@ Many of these are not delete-first candidates. The safe first move is to invento
 ### `L2-DEV-006` implementation note
 
 - the duplicated hardcoded tech-stack/version tables in `/developer` and `/developer/architecture` now derive from one manifest-backed helper in `src/lib/developer/tech-stack.ts`
+- `/developer/status` no longer generates random pseudo-uptime bars on every request and now presents a deterministic current availability snapshot instead
 
 ## Linked findings and plans
 

@@ -341,6 +341,15 @@
   - `bun run type-check` passed
   - `bun run build` passed
 
+### Follow-up: developer status truth-surface hardening
+
+- implemented:
+  - removed random pseudo-uptime generation from `/developer/status`
+  - replaced it with a deterministic current availability snapshot derived from the current live service state
+- validation:
+  - `bun run type-check` passed
+  - `bun run build` passed
+
 ### Follow-up: dashboard developer compatibility-page retirement
 
 - implemented:

@@ -33,6 +33,7 @@ Implementation note (2026-04-17):
 - broader uppercase/general route helper migration implemented across dashboard, wiki, notes, 3D, marketing, portal, and developer surfaces
 - dashboard developer compatibility pages retired after internal consumers were already moved to `/developer/**`
 - `L2-DEV-006` implemented in part (developer tech-stack tables now derive from one manifest-backed helper instead of duplicated hardcoded version lists)
+- `L2-DEV-006` implemented in part (developer status page no longer generates random pseudo-uptime history)
 - Bun package-resolution blocker repaired by pinning `@lemonsqueezy/lemonsqueezy.js` to the nearest valid version (`1.2.5`)
 - implemented dependency removals:
   - `DEP-01` — `dompurify`

@@ -12,16 +12,21 @@ import { createClient } from '@/lib/supabase/server'
 /*  Helpers                                                            */
 /* ------------------------------------------------------------------ */
 
-const generateUptimeData = (days: number = 30) =>
+const buildAvailabilitySnapshot = (
+  status: ServiceStatus,
+  days: number = 30,
+) =>
   Array.from({ length: days }, (_, i) => ({
-    date: new Date(Date.now() - (days - 1 - i) * 86400000).toISOString().split('T')[0],
-    status: Math.random() > 0.95 ? ('degraded' as const) : ('ok' as const),
+    date: new Date(Date.now() - (days - 1 - i) * 86400000)
+      .toISOString()
+      .split('T')[0],
+    status:
+      status === 'operational'
+        ? ('ok' as const)
+        : status === 'outage'
+          ? ('outage' as const)
+          : ('degraded' as const),
   }))
-
-const computeUptimePercentage = (days: Array<{ status: string }>) => {
-  const ok = days.filter((d) => d.status === 'ok').length
-  return `${((ok / days.length) * 100).toFixed(1)}%`
-}
 
 /* ------------------------------------------------------------------ */
 /*  Service definitions                                                */
@@ -69,11 +74,19 @@ const StatusOverviewPage = async () => {
     { service: 'Edge Functions', status: edgeStatus },
   ]
 
-  /* Generate uptime bars per service */
+  /* Deterministic availability snapshot per service */
   const uptimeData = Object.fromEntries(
-    services.map((s) => {
-      const days = generateUptimeData()
-      return [s.key, { days, percentage: computeUptimePercentage(days) }]
+    services.map((service) => {
+      const status =
+        service.key === 'database'
+          ? dbStatus
+          : service.key === 'api'
+            ? apiStatus
+            : service.key === 'auth'
+              ? authStatus
+              : edgeStatus
+
+      return [service.key, { days: buildAvailabilitySnapshot(status), percentage: 'live' }]
     }),
   )
 
@@ -117,10 +130,13 @@ const StatusOverviewPage = async () => {
         />
       </div>
 
-      {/* Service Uptime Rows */}
+      {/* Service availability snapshot */}
       <div>
         <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-3">
-          30-Day Uptime
+          Current Availability Snapshot
+        </p>
+        <p className="mb-3 text-xs text-muted-foreground">
+          Historical uptime bars are not wired to a persisted status history yet. These bars repeat the current service state so the page stays deterministic instead of showing random synthetic history.
         </p>
         <Card size="sm" className="divide-y divide-border">
           {services.map((service) => {
