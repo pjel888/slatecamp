@@ -307,7 +307,7 @@ function emptyDashboard(userName: string): DashboardData {
       title: 'Start Your First Session',
       subtitle: 'Jump in with a 5-question warmup — no setup needed',
       estimatedMinutes: 3,
-      href: '/quiz/camp/setup',
+      href: ROUTES.quiz.setup('camp'),
     },
     recentActivities: [],
     totalAnswered: 0,
@@ -332,4 +332,3 @@ function formatModeName(mode: string): string {
   }
   return map[mode] ?? 'Quiz'
 }
-
