@@ -35,6 +35,7 @@ Implementation note (2026-04-17):
   - `L1-L004`
   - `L1-L005`
   - `L1-L006`
+  - `L1-L008`
   - part of `L1-L007` (`src/lib/constants/developer.ts`)
 
 - `L1-L003` — superseded quiz review files:

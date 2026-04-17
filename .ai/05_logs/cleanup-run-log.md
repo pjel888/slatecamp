@@ -149,6 +149,16 @@
   - `bun run check:storybook` passed
   - `bun run build` passed
 
+### Follow-up: stale parallel wiki action namespace cleanup
+
+- implemented:
+  - removed `src/lib/wiki/wiki-actions.ts`
+- validation:
+  - runtime/reference grep showed no live source imports, only cleanup docs and deep reference docs
+  - `bun run type-check` passed
+  - `bun run check:storybook` passed
+  - `bun run build` passed
+
 ### Completion check
 
 - baseline/control docs created first
