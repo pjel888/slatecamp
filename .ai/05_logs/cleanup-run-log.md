@@ -666,6 +666,15 @@
   - `bun run type-check` passed
   - `bun run build` passed
 
+### Follow-up: 3D-lab generated-artifact cleanup
+
+- implemented:
+  - removed the tracked generated binary artifact `src/app/dashboard/3d-lab/.chunkhound/db`
+  - refreshed `src/app/dashboard/3d-lab/AGENTS.md` so the scoped file count matches the cleaned subtree
+- validation:
+  - `bun run type-check` passed
+  - `bun run build` passed
+
 ### Follow-up: dashboard developer compatibility-page retirement
 
 - implemented:

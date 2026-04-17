@@ -8,7 +8,7 @@
 
 **Scope:** `src/app/dashboard/3d-lab/` subtree
 
-**Current snapshot:** 1 directories and 8 files beneath this scope (excluding this `AGENTS.md`).
+**Current snapshot:** 1 directories and 7 files beneath this scope (excluding this `AGENTS.md`).
 
 **Top local directories:** `[moduleId]/`
 
