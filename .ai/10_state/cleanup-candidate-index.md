@@ -8,6 +8,7 @@ Status note:
 Implementation note (2026-04-17):
 - `L1-C001` implemented
 - `L1-C002` implemented
+- `L3-C01` implemented
 - Bun package-resolution blocker repaired by pinning `@lemonsqueezy/lemonsqueezy.js` to the nearest valid version (`1.2.5`)
 - implemented dependency removals:
   - `DEP-02` — `nextjs-toploader`

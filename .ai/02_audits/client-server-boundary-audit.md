@@ -1,5 +1,9 @@
 # Client-Server Boundary Audit
 
+Implementation note (2026-04-17):
+- implemented:
+  - `L3-C01` — `src/app/dashboard/wiki/page.tsx` serverified by removing the unnecessary client boundary
+
 ## Boundary misuse and cleanup opportunities
 
 ### `L3-C01` — static wiki landing page is client-marked
@@ -34,4 +38,3 @@ These are not low-risk cleanup candidates yet. They are boundary cleanup blocker
 
 - findings: `CLN-008`, `CLN-009`, `CLN-010`, `CLN-014`
 - plans: `../03_plans/component-optimization-plan.md`, `../03_plans/cleanup-safety-validation-plan.md`
-

@@ -1,7 +1,4 @@
-'use client'
-
-import React from 'react'
-import { BookOpen, MagnifyingGlass, Sparkle, Lightning } from '@phosphor-icons/react/dist/ssr'
+import { BookOpen, MagnifyingGlass, Sparkle } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 
 export default function WikiPage() {
