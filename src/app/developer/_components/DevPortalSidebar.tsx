@@ -3,29 +3,30 @@
 import { usePathname } from 'next/navigation'
 import { Stack, Monitor, Database, FileText, Flask, SquaresFour, Code, Wrench } from '@phosphor-icons/react/dist/ssr'
 import { SidebarNavGroup, SidebarNavItem } from '@/components/shared/sidebar-nav'
+import { ROUTES } from '@/lib/routes'
 
 const navSections = [
   {
     label: 'Portal',
     items: [
-      { href: '/developer', label: 'Overview', icon: <SquaresFour className="w-4 h-4" /> },
+      { href: ROUTES.developer.root, label: 'Overview', icon: <SquaresFour className="w-4 h-4" /> },
     ],
   },
   {
     label: 'Documentation',
     items: [
-      { href: '/developer/api-reference', label: 'API Reference', icon: <Code className="w-4 h-4" /> },
-      { href: '/developer/architecture', label: 'Architecture', icon: <Stack className="w-4 h-4" /> },
+      { href: ROUTES.developer.apiReference, label: 'API Reference', icon: <Code className="w-4 h-4" /> },
+      { href: ROUTES.developer.architecture, label: 'Architecture', icon: <Stack className="w-4 h-4" /> },
     ],
   },
   {
     label: 'Tools',
     items: [
-      { href: '/developer/tools', label: 'Dev Tools', icon: <Wrench className="w-4 h-4" /> },
-      { href: '/developer/tools/console', label: 'Console', icon: <Monitor className="w-4 h-4" /> },
-      { href: '/developer/tools/db', label: 'Database Browser', icon: <Database className="w-4 h-4" /> },
-      { href: '/developer/tools/logs', label: 'Audit Logs', icon: <FileText className="w-4 h-4" /> },
-      { href: '/developer/tools/test-data', label: 'Test Data', icon: <Flask className="w-4 h-4" /> },
+      { href: ROUTES.developer.tools, label: 'Dev Tools', icon: <Wrench className="w-4 h-4" /> },
+      { href: ROUTES.developer.console, label: 'Console', icon: <Monitor className="w-4 h-4" /> },
+      { href: ROUTES.developer.db, label: 'Database Browser', icon: <Database className="w-4 h-4" /> },
+      { href: ROUTES.developer.logs, label: 'Audit Logs', icon: <FileText className="w-4 h-4" /> },
+      { href: ROUTES.developer.testData, label: 'Test Data', icon: <Flask className="w-4 h-4" /> },
     ],
   },
 ]
@@ -45,9 +46,9 @@ export const DevPortalSidebar = () => {
               icon={item.icon}
               className="text-xs py-1.5"
               active={
-                item.href === '/developer'
-                  ? pathname === '/developer'
-                  : pathname === item.href || (item.href !== '/developer/tools' && pathname.startsWith(item.href + '/'))
+                item.href === ROUTES.developer.root
+                  ? pathname === ROUTES.developer.root
+                  : pathname === item.href || (item.href !== ROUTES.developer.tools && pathname.startsWith(item.href + '/'))
               }
             />
           ))}

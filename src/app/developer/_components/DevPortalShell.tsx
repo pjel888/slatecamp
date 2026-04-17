@@ -7,37 +7,38 @@ import { Badge } from '@/components/ui/badge'
 import { DevPortalSearch } from './DevPortalSearch'
 import { PORTALS } from '@/config/portals'
 import type { NavGroup } from '@/components/portal'
+import { ROUTES } from '@/lib/routes'
 
 const devNavItems: NavGroup[] = [
   {
     label: 'Portal',
     items: [
-      { href: '/developer', label: 'Overview', icon: <SquaresFour className="w-3.5 h-3.5" /> },
+      { href: ROUTES.developer.root, label: 'Overview', icon: <SquaresFour className="w-3.5 h-3.5" /> },
     ],
   },
   {
     label: 'Documentation',
     items: [
-      { href: '/developer/api-reference', label: 'API Reference', icon: <BookOpen className="w-3.5 h-3.5" weight="regular" /> },
-      { href: '/developer/architecture', label: 'Architecture', icon: <Stack className="w-3.5 h-3.5" /> },
+      { href: ROUTES.developer.apiReference, label: 'API Reference', icon: <BookOpen className="w-3.5 h-3.5" weight="regular" /> },
+      { href: ROUTES.developer.architecture, label: 'Architecture', icon: <Stack className="w-3.5 h-3.5" /> },
     ],
   },
   {
     label: 'Status',
     items: [
-      { href: '/developer/status', label: 'Overview', icon: <Pulse className="w-3.5 h-3.5" /> },
-      { href: '/developer/status/database', label: 'Database', icon: <Database className="w-3.5 h-3.5" /> },
-      { href: '/developer/status/infrastructure', label: 'Infrastructure', icon: <HardDrives className="w-3.5 h-3.5" /> },
+      { href: ROUTES.developer.status, label: 'Overview', icon: <Pulse className="w-3.5 h-3.5" /> },
+      { href: ROUTES.developer.statusDatabase, label: 'Database', icon: <Database className="w-3.5 h-3.5" /> },
+      { href: ROUTES.developer.statusInfrastructure, label: 'Infrastructure', icon: <HardDrives className="w-3.5 h-3.5" /> },
     ],
   },
   {
     label: 'Tools',
     items: [
-      { href: '/developer/tools', label: 'Dev Tools', icon: <Wrench className="w-3.5 h-3.5" /> },
-      { href: '/developer/tools/console', label: 'Console', icon: <Monitor className="w-3.5 h-3.5" /> },
-      { href: '/developer/tools/db', label: 'Database Browser', icon: <Database className="w-3.5 h-3.5" /> },
-      { href: '/developer/tools/logs', label: 'Audit Logs', icon: <Scroll className="w-3.5 h-3.5" /> },
-      { href: '/developer/tools/test-data', label: 'Test Data', icon: <Flask className="w-3.5 h-3.5" /> },
+      { href: ROUTES.developer.tools, label: 'Dev Tools', icon: <Wrench className="w-3.5 h-3.5" /> },
+      { href: ROUTES.developer.console, label: 'Console', icon: <Monitor className="w-3.5 h-3.5" /> },
+      { href: ROUTES.developer.db, label: 'Database Browser', icon: <Database className="w-3.5 h-3.5" /> },
+      { href: ROUTES.developer.logs, label: 'Audit Logs', icon: <Scroll className="w-3.5 h-3.5" /> },
+      { href: ROUTES.developer.testData, label: 'Test Data', icon: <Flask className="w-3.5 h-3.5" /> },
     ],
   },
 ]

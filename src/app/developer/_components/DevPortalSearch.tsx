@@ -3,19 +3,20 @@
 import { useMemo } from 'react'
 import { MagnifyingGlass } from '@phosphor-icons/react/dist/ssr'
 import { CommandPalette } from '@/components/portal'
+import { ROUTES } from '@/lib/routes'
 
 const STATIC_PAGES: { title: string; href: string; group: string; keywords: string }[] = [
-  { title: 'Overview', href: '/developer', group: 'Portal', keywords: 'home portal dashboard' },
-  { title: 'API Reference', href: '/developer/api-reference', group: 'Portal', keywords: 'endpoints routes actions webhooks' },
-  { title: 'Architecture', href: '/developer/architecture', group: 'Portal', keywords: 'schema database auth deployment' },
-  { title: 'Status Overview', href: '/developer/status', group: 'Status', keywords: 'health uptime services operational' },
-  { title: 'Database Status', href: '/developer/status/database', group: 'Status', keywords: 'postgres connections migrations rls' },
-  { title: 'Infrastructure Status', href: '/developer/status/infrastructure', group: 'Status', keywords: 'latency edge deployment api' },
-  { title: 'Dev Tools', href: '/developer/tools', group: 'Tools', keywords: 'console database logs test utilities' },
-  { title: 'Console', href: '/developer/tools/console', group: 'Tools', keywords: 'flags impersonation system' },
-  { title: 'Database Browser', href: '/developer/tools/db', group: 'Tools', keywords: 'tables rls rows browse' },
-  { title: 'Audit Logs', href: '/developer/tools/logs', group: 'Tools', keywords: 'events actions history' },
-  { title: 'Test Data', href: '/developer/tools/test-data', group: 'Tools', keywords: 'mock generator sessions seed' },
+  { title: 'Overview', href: ROUTES.developer.root, group: 'Portal', keywords: 'home portal dashboard' },
+  { title: 'API Reference', href: ROUTES.developer.apiReference, group: 'Portal', keywords: 'endpoints routes actions webhooks' },
+  { title: 'Architecture', href: ROUTES.developer.architecture, group: 'Portal', keywords: 'schema database auth deployment' },
+  { title: 'Status Overview', href: ROUTES.developer.status, group: 'Status', keywords: 'health uptime services operational' },
+  { title: 'Database Status', href: ROUTES.developer.statusDatabase, group: 'Status', keywords: 'postgres connections migrations rls' },
+  { title: 'Infrastructure Status', href: ROUTES.developer.statusInfrastructure, group: 'Status', keywords: 'latency edge deployment api' },
+  { title: 'Dev Tools', href: ROUTES.developer.tools, group: 'Tools', keywords: 'console database logs test utilities' },
+  { title: 'Console', href: ROUTES.developer.console, group: 'Tools', keywords: 'flags impersonation system' },
+  { title: 'Database Browser', href: ROUTES.developer.db, group: 'Tools', keywords: 'tables rls rows browse' },
+  { title: 'Audit Logs', href: ROUTES.developer.logs, group: 'Tools', keywords: 'events actions history' },
+  { title: 'Test Data', href: ROUTES.developer.testData, group: 'Tools', keywords: 'mock generator sessions seed' },
 ]
 
 export const DevPortalSearch = () => {

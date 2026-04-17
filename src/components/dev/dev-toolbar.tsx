@@ -23,6 +23,7 @@ import { useDevStore } from '@/stores/dev-store'
 import type { UserTier } from '@/types/app'
 import type { DevConnectionState } from '@/lib/dev/dev-mode'
 import type { FeatureFlags } from '@/lib/entitlements/dev-overrides'
+import { ROUTES } from '@/lib/routes'
 
 const DEFAULT_RIGHT = 16
 const DEFAULT_BOTTOM = 16
@@ -310,7 +311,7 @@ export function DevToolbar({
               Reset
             </button>
             <a
-              href='/developer'
+              href={ROUTES.developer.root}
               className='flex items-center gap-1 text-[11px] text-muted-foreground transition-colors hover:text-foreground'
             >
               <SCIcon icon={Terminal} size="xs" />

@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { House, Folder, File } from '@phosphor-icons/react/dist/ssr'
 import { Breadcrumb } from './breadcrumb'
+import { ROUTES } from '@/lib/routes'
 
 const meta = {
   title: 'UI/Breadcrumb',
@@ -52,8 +53,8 @@ export const SlashSeparator: Story = {
     <Breadcrumb
       separator="slash"
       items={[
-        { label: 'Developer', href: '/developer' },
-        { label: 'Status', href: '/developer/status' },
+        { label: 'Developer', href: ROUTES.developer.root },
+        { label: 'Status', href: ROUTES.developer.status },
         { label: 'Database' },
       ]}
     />

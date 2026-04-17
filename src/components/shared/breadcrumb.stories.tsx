@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { Breadcrumb } from '@/components/ui/breadcrumb'
+import { ROUTES } from '@/lib/routes'
 
 const meta = {
   title: 'Shared/Breadcrumb',
@@ -26,8 +27,8 @@ export const Overview: Story = {
   render: () => (
     <Breadcrumb
       items={[
-        { label: 'Developer', href: '/developer' },
-        { label: 'Status', href: '/developer/status' },
+        { label: 'Developer', href: ROUTES.developer.root },
+        { label: 'Status', href: ROUTES.developer.status },
         { label: 'Database' },
       ]}
     />
