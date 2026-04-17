@@ -159,6 +159,20 @@
   - `bun run check:storybook` passed
   - `bun run build` passed
 
+### Follow-up: low-blast-radius helper cleanup batch
+
+- implemented:
+  - removed `src/lib/audio/feedbackSounds.ts`
+  - removed `src/lib/hooks/useExperiment.ts`
+  - removed `src/lib/hooks/useUserRole.ts`
+  - removed `src/lib/quiz/offline/sync.ts`
+  - removed `src/lib/quiz/should-interleave.ts`
+- validation:
+  - runtime/reference grep showed no live code consumers beyond cleanup docs and local AGENTS inventories
+  - `bun run type-check` passed
+  - `bun run check:storybook` passed
+  - `bun run build` passed
+
 ### Completion check
 
 - baseline/control docs created first
