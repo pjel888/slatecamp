@@ -36,6 +36,7 @@ Implementation note (2026-04-17):
 - `L2-DEV-006` implemented in part (developer status page no longer generates random pseudo-uptime history)
 - `L2-DEV-006` implemented in part (developer landing metrics now use repo-backed counts instead of placeholder “Stories 71+ / LOC 26K” values)
 - `L2-DEV-006` implemented in part (remaining hardcoded internal `/developer/**` links now use the canonical route helpers)
+- `L2-DEV-006` implemented in part (the giant API reference route now imports its static endpoint/action datasets from `src/lib/developer/api-reference-data.ts` instead of embedding them inline)
 - `L3-C02` implemented in part (mobile wiki navigation now receives the same cached server-loaded taxonomy as the desktop sidebar)
 - `L2-3DLAB-004` implemented in part (redundant `_stores/labStore.ts` re-export wrappers retired; remaining consumers now import `stores/legacyLabStore` directly)
 - Bun package-resolution blocker repaired by pinning `@lemonsqueezy/lemonsqueezy.js` to the nearest valid version (`1.2.5`)

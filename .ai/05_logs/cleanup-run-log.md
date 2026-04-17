@@ -368,6 +368,16 @@
   - `bun run type-check` passed
   - `bun run build` passed
 
+### Follow-up: developer API reference data extraction
+
+- implemented:
+  - moved the static endpoint/action datasets out of `src/app/developer/api-reference/page.tsx`
+  - added `src/lib/developer/api-reference-data.ts` so the route file focuses on rendering instead of carrying the full documentation payload inline
+  - refreshed `src/lib/developer/AGENTS.md` to match the live subtree contents
+- validation:
+  - `bun run type-check` passed
+  - `bun run build` passed
+
 ### Follow-up: wiki mobile hydration convergence
 
 - implemented:
