@@ -48,6 +48,7 @@ Implementation note (2026-04-17):
 - `L2-DEV-006` implemented in part (`StatusBanner` now renders the page's real snapshot time instead of a hardcoded “3s ago” placeholder)
 - `L2-DEV-006` implemented in part (developer mock database status now uses current schema table names like `profiles`, `taxonomy_tree`, and `user_trail_enrollments`)
 - `L2-DEV-006` implemented in part (developer console and dashboard dev keyboard overlay now derive the Next.js version from one shared helper instead of hardcoding `15`)
+- `L2-DEV-006` implemented in part (developer tech-stack content row no longer hardcodes an unowned MDX version and now reports the package-backed `next-mdx-remote` contract directly)
 - `L2-DEV-006` implemented in part (developer console now uses the shared `getConnectionState()` helper and the unused `THREE_WITH_DREI_VERSION` constant has been removed)
 - `TOOL-01` implemented (`package-lock.json` retired after confirming Bun-only workflows and updating active docs)
 - `L3-C02` implemented in part (mobile wiki navigation now receives the same cached server-loaded taxonomy as the desktop sidebar)

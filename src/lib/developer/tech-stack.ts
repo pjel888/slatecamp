@@ -18,7 +18,7 @@ export interface DeveloperTechStackRow {
 const PAYMENTS_VERSION = `${version('@lemonsqueezy/lemonsqueezy.js')} / ${version('payrex-node')}`
 const UI_VERSION = `${version('@base-ui/react')} / ${version('shadcn')}`
 const THREE_VERSION = `${version('three')} / ${version('@react-three/fiber')}`
-const CONTENT_VERSION = `${version('next-mdx-remote')} / 3.1.1`
+const CONTENT_VERSION = version('next-mdx-remote')
 
 export const developerNextVersion = version('next')
 
@@ -42,7 +42,12 @@ export const developerPortalTechStack: DeveloperTechStackRow[] = [
     notes: 'SDK currently stubbed in app code',
   },
   { label: 'Validation', pkg: 'zod', version: version('zod') },
-  { label: 'Content', pkg: 'next-mdx-remote + @mdx-js/mdx', version: CONTENT_VERSION },
+  {
+    label: 'Content',
+    pkg: 'next-mdx-remote',
+    version: CONTENT_VERSION,
+    notes: 'MDX runtime via next-mdx-remote/rsc',
+  },
 ]
 
 export const developerArchitectureTechStack: DeveloperTechStackRow[] = developerPortalTechStack.map((row) => ({

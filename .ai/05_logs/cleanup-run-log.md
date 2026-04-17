@@ -488,6 +488,15 @@
   - `bun run type-check` passed
   - `bun run build` passed
 
+### Follow-up: developer content-version truth cleanup
+
+- implemented:
+  - removed the hardcoded secondary MDX version string from `src/lib/developer/tech-stack.ts`
+  - the developer tech-stack content row now reports the package-backed `next-mdx-remote` version directly and notes the `rsc` runtime usage instead of implying ownership of an untracked `@mdx-js/mdx` version
+- validation:
+  - `bun run type-check` passed
+  - `bun run build` passed
+
 ### Follow-up: developer connection-state/helper cleanup
 
 - implemented:
