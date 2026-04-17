@@ -65,7 +65,7 @@ export default async function WikiArticlePage(props: WikiArticlePageProps) {
     node?.node_id ? getArticleSiblings(node.node_id) : Promise.resolve({ prev: null, next: null }),
   ])
 
-  const practiceHref = '/quiz/camp/setup'
+  const practiceHref = ROUTES.quiz.setup('camp')
   const practiceLabel = 'Practice this Article'
   const wikiNodeId = node?.node_id ?? undefined
   const wikiNodeName = node?.name ?? undefined

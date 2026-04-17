@@ -3,6 +3,7 @@
 import { createClient } from '@/lib/supabase/server'
 import type { DashboardPageData } from '@/types/dashboard'
 import type { NotificationType } from '@/types/notifications'
+import { ROUTES } from '@/lib/routes'
 
 /**
  * Syncs dashboard signals into the notification system.
@@ -67,7 +68,7 @@ export const syncDashboardNotifications = async (
       title: `${data.srsReview.itemsDue} items ready for review`,
       body: `${subjectList} — ~${data.srsReview.estimatedMinutes} min`,
       metadata: {
-        deep_link: '/quiz/camp/setup',
+        deep_link: ROUTES.quiz.setup('camp'),
         content_type: 'srs_review' as const,
         sessions_completed: data.srsReview.itemsDue,
       },
@@ -86,7 +87,7 @@ export const syncDashboardNotifications = async (
         otherCount > 0 ? ` ${otherCount} other ${otherCount === 1 ? 'subject' : 'subjects'} also below floor.` : ''
       }`,
       metadata: {
-        deep_link: '/quiz/camp/setup',
+        deep_link: ROUTES.quiz.setup('camp'),
         discipline_name: worst.subject,
       },
     })

@@ -32,7 +32,7 @@ const NAV_ITEMS = [
   { href: ROUTES.DASHBOARD, label: 'Dashboard', icon: SquaresFour },
   { href: ROUTES.WIKI, label: 'Wiki', icon: Globe },
   { href: ROUTES.dashboard.drills, label: 'Quiz', icon: Brain },
-  { href: ROUTES.SESSIONS, label: 'Sessions', icon: ClipboardText },
+  { href: ROUTES.dashboard.drillsSessions, label: 'Sessions', icon: ClipboardText },
   { href: ROUTES.CAMPTRAILS, label: 'CampTrails', icon: Path },
   { href: ROUTES.dashboard.drills, label: 'Review', icon: BookOpen },
   { href: ROUTES.ANALYTICS, label: 'Analytics', icon: ChartBar },

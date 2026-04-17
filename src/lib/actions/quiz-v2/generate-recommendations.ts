@@ -261,7 +261,7 @@ export const generateRecommendations = async (
           'Strong session. Keep building momentum with another round of practice.',
         action: {
           type: 'start_session',
-          href: '/quiz/camp/setup',
+          href: ROUTES.quiz.setup('camp'),
         },
       })
     }

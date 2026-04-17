@@ -6,6 +6,7 @@ import {
   TooltipContent,
 } from '@/components/ui/tooltip'
 import { Skeleton } from '@/components/ui/skeleton'
+import { ROUTES } from '@/lib/routes'
 import type { ActivityFeedItem } from '@/types/dashboard'
 
 function formatRelative(iso: string): string {
@@ -55,7 +56,7 @@ export function ImprovedActivityFeed({ sessions }: ImprovedActivityFeedProps) {
             your first quiz.
           </p>
           <Link
-            href='/quiz/camp/setup'
+            href={ROUTES.quiz.setup('camp')}
             className='text-[11px] font-medium underline underline-offset-2 text-primary'
           >
             Start a session →

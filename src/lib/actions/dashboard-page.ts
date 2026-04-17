@@ -26,6 +26,7 @@ import { getCachedTaxonomyTreeByDiscipline, getCachedWikiArticles } from './cach
 import { getDashboardCacheTags } from './cache-tags'
 import { getViewerEntitlements } from '@/lib/entitlements/get-viewer-entitlements'
 import { ENTITLEMENT_FEATURE_KEYS } from '@/lib/entitlements/feature-keys'
+import { ROUTES } from '@/lib/routes'
 
 interface ProjectedLawsMasteryRow {
   topic_id: string
@@ -424,7 +425,7 @@ const emptyDashboard = (userName: string): DashboardPageData => ({
     title: 'Start Your First Session',
     subtitle: 'Jump in with a quick warmup — no setup needed',
     ctaLabel: 'Begin',
-    href: '/quiz/camp/setup',
+    href: ROUTES.quiz.setup('camp'),
     estimatedMinutes: 3,
     modeTooltip: MODE_TOOLTIPS['camp'] ?? '',
   },

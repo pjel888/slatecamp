@@ -247,6 +247,8 @@
   - migrated internal consumers away from `ROUTES.TESTING`, `ROUTES.REVIEW`, `ROUTES.QUIZ_V2_SETUP`, and `ROUTES.quiz.legacy.simSetup`
   - aligned those consumers with canonical `ROUTES.dashboard.drills` and `ROUTES.quiz.setup(...)` helpers
   - removed stale `/dashboard/testing*` title-prefix aliases from `src/lib/routes.ts`
+  - migrated remaining hardcoded `/quiz/camp/setup` links in dashboard and notification surfaces to canonical route helpers
+  - migrated the navbar `Sessions` link from `ROUTES.SESSIONS` to `ROUTES.dashboard.drillsSessions`
 - intentionally preserved:
   - route files under `/dashboard/testing/**`
   - legacy uppercase helper aliases in `src/lib/routes.ts`

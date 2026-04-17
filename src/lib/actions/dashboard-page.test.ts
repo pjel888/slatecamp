@@ -33,6 +33,7 @@ mock.module("@/lib/supabase/server", () => ({
 // Import AFTER mock.module registration
 import { getDashboardPageData } from "./dashboard-page"
 import type { DashboardPageData } from "@/types/dashboard"
+import { ROUTES } from "@/lib/routes"
 
 // ── emptyDashboard shape contract ─────────────────────────────────────────────
 
@@ -266,7 +267,7 @@ describe("emptyDashboard — action shape", () => {
 
   test("action.href points to camp mode", async () => {
     const data = await getDashboardPageData()
-    expect(data.action.href).toContain("/quiz/camp/setup")
+    expect(data.action.href).toContain(ROUTES.quiz.setup("camp"))
   })
 
   test("action.estimatedMinutes is a positive number", async () => {
