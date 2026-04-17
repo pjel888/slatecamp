@@ -9,6 +9,7 @@ import { ImpersonationPanel } from './impersonation-panel'
 import { FeatureFlagBoard } from './feature-flag-board'
 import { SystemInfo } from './system-info'
 import type { FeatureFlagKey } from '@/config/feature-flags'
+import type { DevConnectionState } from '@/lib/dev/dev-mode'
 
 interface DevOverlayProps {
   systemInfo: {
@@ -17,7 +18,7 @@ interface DevOverlayProps {
     userId: string
     userEmail: string
     userRole: string
-    connectionState: 'local' | 'connected'
+    connectionState: DevConnectionState
   }
   dbFlags?: Partial<Record<FeatureFlagKey, boolean>>
 }

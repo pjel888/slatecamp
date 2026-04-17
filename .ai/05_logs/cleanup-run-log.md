@@ -488,6 +488,15 @@
   - `bun run type-check` passed
   - `bun run build` passed
 
+### Follow-up: developer connection-state type convergence
+
+- implemented:
+  - updated the developer console client, dev keyboard provider, dev overlay, and system-info component to use the shared `DevConnectionState` type
+  - removed the repeated `'local' | 'connected'` unions from those dev-facing surfaces
+- validation:
+  - `bun run type-check` passed
+  - `bun run build` passed
+
 ### Follow-up: developer content-version truth cleanup
 
 - implemented:

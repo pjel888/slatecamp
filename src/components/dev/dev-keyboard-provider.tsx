@@ -5,6 +5,7 @@ import { useDevStore } from '@/stores/dev-store'
 import { DevOverlay } from './dev-overlay'
 import { DevBadge } from './dev-badge'
 import type { FeatureFlagKey } from '@/config/feature-flags'
+import type { DevConnectionState } from '@/lib/dev/dev-mode'
 
 interface DevKeyboardProviderProps {
   systemInfo: {
@@ -13,7 +14,7 @@ interface DevKeyboardProviderProps {
     userId: string
     userEmail: string
     userRole: string
-    connectionState: 'local' | 'connected'
+    connectionState: DevConnectionState
   }
   dbFlags?: Partial<Record<FeatureFlagKey, boolean>>
 }

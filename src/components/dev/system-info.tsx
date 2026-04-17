@@ -5,6 +5,7 @@ import { useDevStore } from '@/stores/dev-store'
 import { Monitor, Globe, User, ShieldCheck } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import type { Icon as PhosphorIcon } from '@phosphor-icons/react/lib'
+import type { DevConnectionState } from '@/lib/dev/dev-mode'
 
 interface SystemInfoProps {
   env: string
@@ -12,7 +13,7 @@ interface SystemInfoProps {
   userId: string
   userEmail: string
   userRole: string
-  connectionState: 'local' | 'connected'
+  connectionState: DevConnectionState
 }
 
 export function SystemInfo({

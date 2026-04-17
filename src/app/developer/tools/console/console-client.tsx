@@ -4,6 +4,7 @@ import { ImpersonationPanel } from '@/components/dev/impersonation-panel'
 import { FeatureFlagBoard } from '@/components/dev/feature-flag-board'
 import { SystemInfo } from '@/components/dev/system-info'
 import type { FeatureFlagKey } from '@/config/feature-flags'
+import type { DevConnectionState } from '@/lib/dev/dev-mode'
 
 interface ConsoleClientProps {
   systemInfo: {
@@ -12,7 +13,7 @@ interface ConsoleClientProps {
     userId: string
     userEmail: string
     userRole: string
-    connectionState: 'local' | 'connected'
+    connectionState: DevConnectionState
   }
   dbFlags: Partial<Record<FeatureFlagKey, boolean>>
 }
