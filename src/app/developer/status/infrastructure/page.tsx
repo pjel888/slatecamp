@@ -1,8 +1,10 @@
 import { Breadcrumbs } from '@/components/developer/Breadcrumbs'
+import { SurfaceTruthNotice } from '@/components/developer/SurfaceTruthNotice'
 import { StatusBadge } from '@/components/developer/StatusBadge'
 import { Card } from '@/components/ui/card'
 import { SectionHeader } from '@/components/shared/section-header'
 import { formatRelativeTime } from '@/lib/utils/format-time'
+import { developerSurfaceTruthNotes } from '@/lib/developer/surface-registry'
 import { getInfrastructureStatus } from '@/lib/mocks/status'
 
 /* ------------------------------------------------------------------ */
@@ -28,6 +30,12 @@ const InfrastructureStatusPage = async () => {
         subtitle="API latency, edge-function health, and recent deployment telemetry for platform operations."
         level="page"
         className="max-w-xl"
+      />
+
+      <SurfaceTruthNotice
+        badge={developerSurfaceTruthNotes['status-infrastructure']!.badge}
+        variant={developerSurfaceTruthNotes['status-infrastructure']!.variant}
+        description={developerSurfaceTruthNotes['status-infrastructure']!.description}
       />
 
       {/* API Latency */}

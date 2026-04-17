@@ -399,6 +399,18 @@
   - `bun run type-check` passed
   - `bun run build` passed
 
+### Follow-up: developer truth-label pass
+
+- implemented:
+  - added `src/components/developer/SurfaceTruthNotice.tsx` for small source-of-truth notices
+  - labeled `/developer/status` as a mixed live + deterministic surface
+  - labeled `/developer/status/database` and `/developer/status/infrastructure` as fallback/mock-backed detail pages
+  - labeled `/developer/tools/logs` as a runtime-backed inspection surface
+  - refreshed scoped AGENTS counts where the new component and labels changed subtree structure
+- validation:
+  - `bun run type-check` passed
+  - `bun run build` passed
+
 ### Follow-up: wiki mobile hydration convergence
 
 - implemented:

@@ -1,8 +1,10 @@
 import { Breadcrumbs } from '@/components/developer/Breadcrumbs'
+import { SurfaceTruthNotice } from '@/components/developer/SurfaceTruthNotice'
 import { StatusBadge } from '@/components/developer/StatusBadge'
 import { Card } from '@/components/ui/card'
 import { SectionHeader } from '@/components/shared/section-header'
 import { formatRelativeTime } from '@/lib/utils/format-time'
+import { developerSurfaceTruthNotes } from '@/lib/developer/surface-registry'
 import { getDatabaseStatus } from '@/lib/mocks/status'
 
 const migrationStatusMap = {
@@ -33,6 +35,12 @@ const DatabaseStatusPage = async () => {
         subtitle="Connection pool usage, table growth, and migration health for the shared datastore."
         level="page"
         className="max-w-xl"
+      />
+
+      <SurfaceTruthNotice
+        badge={developerSurfaceTruthNotes['status-database']!.badge}
+        variant={developerSurfaceTruthNotes['status-database']!.variant}
+        description={developerSurfaceTruthNotes['status-database']!.description}
       />
 
       {/* Connection Pool */}

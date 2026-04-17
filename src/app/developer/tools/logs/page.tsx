@@ -1,9 +1,11 @@
 import { Scroll } from '@phosphor-icons/react/dist/ssr'
 
+import { SurfaceTruthNotice } from '@/components/developer/SurfaceTruthNotice'
 import { DataTable, type Column } from '@/components/shared/data-table'
 import { EmptyState } from '@/components/shared/empty-state'
 import { SectionHeader } from '@/components/shared/section-header'
 import { getAuditLogs } from '@/lib/audit/audit-queries'
+import { developerSurfaceTruthNotes } from '@/lib/developer/surface-registry'
 import { getApplicationErrorEvents } from '@/lib/logging/server'
 
 interface AuditLogRow extends Record<string, unknown> {
@@ -149,6 +151,12 @@ export default async function LogsPage() {
         subtitle="Separate immutable audit history from operational application errors."
         level="page"
         className="max-w-xl"
+      />
+
+      <SurfaceTruthNotice
+        badge={developerSurfaceTruthNotes['tools-logs']!.badge}
+        variant={developerSurfaceTruthNotes['tools-logs']!.variant}
+        description={developerSurfaceTruthNotes['tools-logs']!.description}
       />
 
       <section className="space-y-3">

@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { Breadcrumbs } from '@/components/developer/Breadcrumbs'
+import { SurfaceTruthNotice } from '@/components/developer/SurfaceTruthNotice'
 import { StatusBanner } from '@/components/developer/StatusBanner'
 import { StatusKPICard } from '@/components/developer/StatusKPICard'
 import { UptimeBar } from '@/components/developer/UptimeBar'
@@ -7,7 +8,7 @@ import { SectionHeader } from '@/components/shared/section-header'
 import { Card } from '@/components/ui/card'
 import type { ServiceStatus } from '@/types/developer'
 import { createClient } from '@/lib/supabase/server'
-import { developerStatusServices } from '@/lib/developer/surface-registry'
+import { developerStatusServices, developerSurfaceTruthNotes } from '@/lib/developer/surface-registry'
 
 /* ------------------------------------------------------------------ */
 /*  Helpers                                                            */
@@ -90,6 +91,12 @@ const StatusOverviewPage = async () => {
         subtitle="Real-time health metrics for the SlateCamp infrastructure."
         level="page"
         className="max-w-xl"
+      />
+
+      <SurfaceTruthNotice
+        badge={developerSurfaceTruthNotes['status-overview']!.badge}
+        variant={developerSurfaceTruthNotes['status-overview']!.variant}
+        description={developerSurfaceTruthNotes['status-overview']!.description}
       />
 
       {/* Banner */}

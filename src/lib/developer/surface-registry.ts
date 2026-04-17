@@ -38,6 +38,12 @@ interface DeveloperSurfaceDefinition {
   actionLabel?: string
 }
 
+interface DeveloperSurfaceTruthNote {
+  badge: string
+  variant: 'default' | 'success' | 'warning' | 'info'
+  description: string
+}
+
 const GROUP_ORDER: DeveloperSurfaceGroup[] = ['Portal', 'Documentation', 'Status', 'Tools']
 
 const DEVELOPER_SURFACES: DeveloperSurfaceDefinition[] = [
@@ -212,3 +218,30 @@ export const developerStatusServices = [
 ] as const
 
 export const developerToolCount = developerToolSurfaces.length
+
+export const developerSurfaceTruthNotes = {
+  'status-overview': {
+    badge: 'Mixed sources',
+    variant: 'info',
+    description:
+      'This page combines live Supabase status checks with deterministic availability bars until persisted status history exists.',
+  },
+  'status-database': {
+    badge: 'Fallback data',
+    variant: 'warning',
+    description:
+      'Database detail cards currently come from the mock status provider and should be treated as representative rather than live operational telemetry.',
+  },
+  'status-infrastructure': {
+    badge: 'Fallback data',
+    variant: 'warning',
+    description:
+      'Infrastructure detail cards currently use the mock status provider, so latency and deployment values are illustrative rather than runtime-backed.',
+  },
+  'tools-logs': {
+    badge: 'Runtime-backed',
+    variant: 'success',
+    description:
+      'This page reads live audit and application-error records from the current environment; empty states reflect missing events or unavailable backends.',
+  },
+} satisfies Partial<Record<DeveloperSurfaceId, DeveloperSurfaceTruthNote>>
