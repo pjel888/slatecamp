@@ -12,14 +12,14 @@ export const getDatabaseStatus = async (): Promise<DatabaseStatus> => {
   return {
     connections: { active: 12, idle: 8, max: 20 },
     tables: [
-      { name: 'users',              rowCount: 2847,   size: '14.2 MB' },
+      { name: 'profiles',           rowCount: 2847,   size: '14.2 MB' },
       { name: 'user_interactions',   rowCount: 184302, size: '892.1 MB' },
       { name: 'quiz_sessions',      rowCount: 12453,  size: '67.8 MB' },
       { name: 'user_node_mastery',   rowCount: 89234,  size: '234.5 MB' },
       { name: 'wiki_articles',      rowCount: 412,    size: '28.9 MB' },
-      { name: 'taxonomy_nodes',     rowCount: 1847,   size: '8.3 MB' },
+      { name: 'taxonomy_tree',      rowCount: 1847,   size: '8.3 MB' },
       { name: 'questions',          rowCount: 6723,   size: '156.2 MB' },
-      { name: 'trail_enrollments',  rowCount: 934,    size: '4.1 MB' },
+      { name: 'user_trail_enrollments', rowCount: 934, size: '4.1 MB' },
       { name: 'feature_flags',      rowCount: 23,     size: '0.1 MB' },
       { name: 'audit_logs',         rowCount: 45678,  size: '112.4 MB' },
     ],

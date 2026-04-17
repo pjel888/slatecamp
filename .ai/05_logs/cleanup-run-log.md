@@ -469,6 +469,15 @@
   - `bun run type-check` passed
   - `bun run build` passed
 
+### Follow-up: developer mock schema-name alignment
+
+- implemented:
+  - updated `src/lib/mocks/status.ts` so the fallback database status page uses current schema-facing table names
+  - replaced stale mock labels like `users`, `taxonomy_nodes`, and `trail_enrollments` with `profiles`, `taxonomy_tree`, and `user_trail_enrollments`
+- validation:
+  - `bun run type-check` passed
+  - `bun run build` passed
+
 ### Follow-up: wiki mobile hydration convergence
 
 - implemented:
