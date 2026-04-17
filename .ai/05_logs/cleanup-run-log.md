@@ -422,6 +422,16 @@
   - `bun run type-check` passed
   - `bun run build` passed
 
+### Follow-up: developer breadcrumb-label convergence
+
+- implemented:
+  - moved developer breadcrumb label resolution onto the shared surface registry
+  - removed the separate hardcoded label map from `src/components/developer/Breadcrumbs.tsx`
+  - developer route labels now stay aligned with the same canonical definitions used by shell/search/overview/tools/status surfaces
+- validation:
+  - `bun run type-check` passed
+  - `bun run build` passed
+
 ### Follow-up: wiki mobile hydration convergence
 
 - implemented:

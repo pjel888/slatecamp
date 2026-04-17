@@ -245,3 +245,23 @@ export const developerSurfaceTruthNotes = {
       'This page reads live audit and application-error records from the current environment; empty states reflect missing events or unavailable backends.',
   },
 } satisfies Partial<Record<DeveloperSurfaceId, DeveloperSurfaceTruthNote>>
+
+const breadcrumbLabelByHref = Object.fromEntries(
+  DEVELOPER_SURFACES.map((surface) => [surface.href, surface.title]),
+) as Record<string, string>
+
+const breadcrumbLabelBySegment: Record<string, string> = {
+  developer: 'Developer Portal',
+  status: 'Status',
+  tools: 'Dev Tools',
+  database: 'Database',
+  infrastructure: 'Infrastructure',
+  console: 'Console',
+  logs: 'Audit Logs',
+  'test-data': 'Test Data',
+  architecture: 'Architecture',
+  'api-reference': 'API Reference',
+}
+
+export const getDeveloperBreadcrumbLabel = (href: string, segment: string) =>
+  breadcrumbLabelByHref[href] ?? breadcrumbLabelBySegment[segment]
