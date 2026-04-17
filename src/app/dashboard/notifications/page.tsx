@@ -9,7 +9,7 @@ export const metadata = { title: 'Notifications — SlateCamp' }
 const NotificationsPage = async () => {
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
-  if (!user) redirect(ROUTES.LOGIN)
+  if (!user) redirect(ROUTES.auth.login)
 
   const { data: notifications } = await fetchNotifications(user.id, { limit: 20 })
 

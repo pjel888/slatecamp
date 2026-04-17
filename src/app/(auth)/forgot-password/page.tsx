@@ -43,7 +43,7 @@ export default function ForgotPasswordPage() {
       <div className="w-full max-w-sm space-y-8">
         <div className="text-center">
           <Link
-            href={ROUTES.HOME}
+            href={ROUTES.home}
             className="text-lg font-semibold text-foreground"
           >
             {siteConfig.name}
@@ -91,7 +91,7 @@ export default function ForgotPasswordPage() {
 
         <p className="text-center text-sm text-muted-foreground">
           <Link
-            href={ROUTES.LOGIN}
+            href={ROUTES.auth.login}
             className="font-medium text-foreground underline underline-offset-4 hover:text-primary"
           >
             Back to login

@@ -33,7 +33,7 @@ const DEFAULT_NOTIFICATION_PREFS = {
 
 export default async function SettingsPage() {
   const entitlements = await getViewerEntitlements()
-  if (!entitlements.userId) redirect(ROUTES.LOGIN)
+  if (!entitlements.userId) redirect(ROUTES.auth.login)
 
   const [profileData, emailPrefs, notifPrefsResult, professionalModeData] = await Promise.all([
     getProfileData(),

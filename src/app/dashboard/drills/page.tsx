@@ -21,7 +21,7 @@ interface CoreSubject {
 const DrillsContent = async () => {
   const supabase = await createClient()
   const { data: { user } } = await getUser()
-  if (!user) redirect(ROUTES.LOGIN)
+  if (!user) redirect(ROUTES.auth.login)
   const entitlements = await getViewerEntitlements()
 
   // Fetch discipline ID first for subject query

@@ -10,7 +10,7 @@ const DAEContent = async () => {
   const {
     data: { user },
   } = await getUser()
-  if (!user) redirect(ROUTES.LOGIN)
+  if (!user) redirect(ROUTES.auth.login)
 
   const { savedContexts, userTier, dailyUsedCount } = await getDAEState()
 

@@ -2,5 +2,5 @@ import { redirect } from 'next/navigation'
 import { ROUTES } from '@/lib/routes'
 
 export default async function DatabaseViewerPage() {
-  redirect(ROUTES.DEVELOPER_DB)
+  redirect(ROUTES.developer.db)
 }

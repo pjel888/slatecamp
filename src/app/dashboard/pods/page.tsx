@@ -12,7 +12,7 @@ const PodsPage = async () => {
   const {
     data: { user },
   } = await getUser()
-  if (!user) redirect(ROUTES.LOGIN)
+  if (!user) redirect(ROUTES.auth.login)
 
   const [podsResult, entitlements] = await Promise.all([
     getUserPods(),

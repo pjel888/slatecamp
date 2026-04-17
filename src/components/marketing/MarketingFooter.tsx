@@ -12,9 +12,9 @@ const serif = Instrument_Serif({
 
 const FOOTER_LINKS = [
   { href: ROUTES.calculators.root, label: 'Tools' },
-  { href: ROUTES.PRICING, label: 'Pricing' },
-  { href: ROUTES.ABOUT, label: 'About' },
-  { href: ROUTES.CONTACT, label: 'Contact' },
+  { href: ROUTES.pricing, label: 'Pricing' },
+  { href: ROUTES.about, label: 'About' },
+  { href: ROUTES.contact, label: 'Contact' },
 ] as const
 
 export const MarketingFooter = ({

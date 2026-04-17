@@ -30,7 +30,7 @@ export default async function ThreeDLabPage({
     ENTITLEMENT_FEATURE_KEYS.threeDLabFull,
   ]);
 
-  if (!entitlements.userId) redirect(ROUTES.LOGIN);
+  if (!entitlements.userId) redirect(ROUTES.auth.login);
 
   const hasAccess =
     entitlements.decisions[ENTITLEMENT_FEATURE_KEYS.threeDLabFull]?.allowed ?? false;

@@ -35,7 +35,7 @@ const DashboardLayoutContent = async ({ children }: DashboardLayoutContentProps)
     data: { user },
   } = await getUser()
 
-  if (!user) redirect(ROUTES.LOGIN)
+  if (!user) redirect(ROUTES.auth.login)
 
   if (!isDemo) {
     try {

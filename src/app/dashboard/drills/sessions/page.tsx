@@ -6,7 +6,7 @@ import { SessionsTable } from '@/components/testing/hub/SessionsTable'
 const SessionsPage = async () => {
   const supabase = await createClient()
   const { data: { user } } = await getUser()
-  if (!user) redirect(ROUTES.LOGIN)
+  if (!user) redirect(ROUTES.auth.login)
 
   const { data: sessions } = await supabase
     .from('quiz_sessions')

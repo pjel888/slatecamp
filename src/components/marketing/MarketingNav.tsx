@@ -6,9 +6,9 @@ import { getUserIfPresent } from '@/lib/supabase/server'
 
 const NAV_LINKS = [
   { href: ROUTES.calculators.root, label: 'Tools' },
-  { href: ROUTES.PRICING, label: 'Pricing' },
-  { href: ROUTES.ABOUT, label: 'About' },
-  { href: ROUTES.CONTACT, label: 'Contact' },
+  { href: ROUTES.pricing, label: 'Pricing' },
+  { href: ROUTES.about, label: 'About' },
+  { href: ROUTES.contact, label: 'Contact' },
 ] as const
 
 export async function MarketingNav({
@@ -112,7 +112,7 @@ export async function MarketingNav({
           ) : (
             <>
               <Link
-                href={ROUTES.LOGIN}
+                href={ROUTES.auth.login}
                 className={cn(
                   'rounded-sm px-4 py-3 text-[13px] transition-colors duration-150',
                   isDark
@@ -123,7 +123,7 @@ export async function MarketingNav({
                 Log in
               </Link>
               <Link
-                href={ROUTES.REGISTER}
+                href={ROUTES.auth.register}
                 className={cn(
                   'rounded-sm px-5 py-3 text-[13px] font-medium text-white transition-colors duration-150',
                   isDark

@@ -17,7 +17,7 @@ export function LandingPageFallback() {
       <MarketingNav activeRoute='/' logoScrollsToTop />
       <main>
         <HeroSection
-          ctaHref={ROUTES.REGISTER}
+          ctaHref={ROUTES.auth.register}
           ctaLabel='Join the Camp — Free'
           isLoggedIn={false}
         />
@@ -46,7 +46,7 @@ export function LandingPageFallback() {
           </div>
         </section>
         <FinalCtaSection
-          ctaHref={ROUTES.REGISTER}
+          ctaHref={ROUTES.auth.register}
           ctaLabel='Join the Camp — Free'
           isLoggedIn={false}
         />

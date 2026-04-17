@@ -20,7 +20,7 @@ const PodPage = async ({ params }: PodPageProps) => {
   const {
     data: { user },
   } = await getUser()
-  if (!user) redirect(ROUTES.LOGIN)
+  if (!user) redirect(ROUTES.auth.login)
 
   const result = await getPodData(podId)
 
@@ -28,7 +28,7 @@ const PodPage = async ({ params }: PodPageProps) => {
     if (result.error === 'You are not a member of this pod.' || result.error === 'Pod not found.') {
       notFound()
     }
-    redirect(ROUTES.PODS)
+    redirect(ROUTES.dashboard.pods)
   }
 
   return (

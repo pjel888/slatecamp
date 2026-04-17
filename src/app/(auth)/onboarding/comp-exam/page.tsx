@@ -10,7 +10,7 @@ export const metadata = {
 
 export default async function CompExamOnboardingPage() {
   const { data: { user } } = await getUser()
-  if (!user) redirect(ROUTES.LOGIN)
+  if (!user) redirect(ROUTES.auth.login)
 
   return (
     <div className="flex min-h-screen flex-col items-center justify-center px-6 bg-background">

@@ -13,25 +13,25 @@ const tools = [
     title: 'Developer Console',
     description: 'Feature flags, impersonation, system info.',
     icon: Monitor,
-    href: ROUTES.DEVELOPER_CONSOLE,
+    href: ROUTES.developer.console,
   },
   {
     title: 'Database Browser',
     description: 'Table explorer with row counts and RLS status.',
     icon: Database,
-    href: ROUTES.DEVELOPER_DB,
+    href: ROUTES.developer.db,
   },
   {
     title: 'Audit Logs',
     description: 'Recent CREATE/UPDATE/DELETE events with actor info.',
     icon: FileText,
-    href: ROUTES.DEVELOPER_LOGS,
+    href: ROUTES.developer.logs,
   },
   {
     title: 'Test Data Generator',
     description: 'Generate mock sessions and organizations.',
     icon: Flask,
-    href: ROUTES.DEVELOPER_TEST_DATA,
+    href: ROUTES.developer.testData,
   },
 ]
 
