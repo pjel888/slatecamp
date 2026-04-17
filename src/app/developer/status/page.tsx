@@ -51,6 +51,10 @@ const StatusOverviewPage = async () => {
     { service: 'Auth', status: authStatus },
     { service: 'Edge Functions', status: edgeStatus },
   ]
+  const checkedAtLabel = new Date().toLocaleTimeString('en-US', {
+    hour: 'numeric',
+    minute: '2-digit',
+  })
 
   /* Deterministic availability snapshot per service */
   const uptimeData = Object.fromEntries(
@@ -87,7 +91,7 @@ const StatusOverviewPage = async () => {
       />
 
       {/* Banner */}
-      <StatusBanner statuses={bannerStatuses} />
+      <StatusBanner statuses={bannerStatuses} checkedAtLabel={checkedAtLabel} />
 
       {/* KPI Grid */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">

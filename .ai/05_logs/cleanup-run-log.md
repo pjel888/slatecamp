@@ -450,6 +450,16 @@
   - `bun run type-check` passed
   - `bun run build` passed
 
+### Follow-up: developer status-banner timestamp cleanup
+
+- implemented:
+  - updated `src/components/developer/StatusBanner.tsx` to accept a real `checkedAtLabel`
+  - updated `/developer/status` to pass the page's live snapshot time instead of rendering a hardcoded “Last checked: 3s ago” placeholder
+  - updated the Storybook story to show the explicit timestamp prop
+- validation:
+  - `bun run type-check` passed
+  - `bun run build` passed
+
 ### Follow-up: Bun-only lockfile convergence
 
 - implemented:

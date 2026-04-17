@@ -28,6 +28,7 @@ type Story = StoryObj<typeof meta>
 
 export const MixedStatus: Story = {
   args: {
+    checkedAtLabel: '10:42 AM',
     statuses: [
       { service: 'Database', status: 'operational' },
       { service: 'Search', status: 'degraded' },

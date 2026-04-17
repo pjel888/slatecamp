@@ -9,6 +9,7 @@ import type { ServiceStatus } from '@/types/developer'
 
 interface StatusBannerProps {
   statuses: Array<{ service: string; status: ServiceStatus }>
+  checkedAtLabel?: string
 }
 
 const bannerConfig = {
@@ -41,7 +42,7 @@ const computeWorstStatus = (statuses: Array<{ status: ServiceStatus }>): Service
   return 'operational'
 }
 
-export const StatusBanner = ({ statuses }: StatusBannerProps) => {
+export const StatusBanner = ({ statuses, checkedAtLabel = 'just now' }: StatusBannerProps) => {
   const worstStatus = computeWorstStatus(statuses)
   const { bg, border, text, icon: Icon, message } = bannerConfig[worstStatus]
 
@@ -54,7 +55,7 @@ export const StatusBanner = ({ statuses }: StatusBannerProps) => {
         <span className="text-[13px] font-semibold">{message}</span>
       </div>
       <span className="font-[family-name:var(--font-dm-mono)] text-[11px] text-muted-foreground">
-        Last checked: 3s ago
+        Last checked: {checkedAtLabel}
       </span>
     </div>
   )
