@@ -6,6 +6,7 @@ import { Badge } from '@/components/ui/badge'
 import { BookOpen, Database, Flask, Pulse, Wrench, ToggleRight, UserGear } from '@phosphor-icons/react/dist/ssr'
 import { CHANGELOG } from '@/lib/developer/changelog'
 import { developerPortalTechStack } from '@/lib/developer/tech-stack'
+import { getDeveloperRepoMetrics } from '@/lib/developer/repo-metrics'
 import { Card } from '@/components/ui/card'
 
 import { createClient } from '@/lib/supabase/server'
@@ -78,20 +79,27 @@ const DeveloperPortalPage = async () => {
     { count: articlesCount },
     { count: questionsCount },
     { count: sessionsCount },
+    repoMetrics,
   ] = await Promise.all([
     supabase.from('profiles').select('id', { count: 'exact', head: true }),
     supabase.from('wiki_articles').select('id', { count: 'exact', head: true }),
     supabase.from('questions').select('id', { count: 'exact', head: true }),
     supabase.from('quiz_sessions').select('id', { count: 'exact', head: true }),
+    getDeveloperRepoMetrics(),
   ])
+
+  const checkedAtLabel = new Date().toLocaleTimeString('en-US', {
+    hour: 'numeric',
+    minute: '2-digit',
+  })
 
   const stats = [
     { eyebrow: 'Users', value: usersCount ?? 0 },
     { eyebrow: 'Articles', value: articlesCount ?? 0 },
     { eyebrow: 'Questions', value: questionsCount ?? 0 },
     { eyebrow: 'Sessions', value: sessionsCount ?? 0 },
-    { eyebrow: 'Stories', value: '71+' },
-    { eyebrow: 'LOC', value: '26K' },
+    { eyebrow: 'Stories', value: repoMetrics.storyCount },
+    { eyebrow: 'Source Files', value: repoMetrics.sourceFileCount },
   ]
 
   return (
@@ -133,7 +141,7 @@ const DeveloperPortalPage = async () => {
           </div>
           <span className="h-3 w-px bg-border" />
           <span className="text-[11px] text-muted-foreground font-[family-name:var(--font-dm-mono)]">
-            Last checked: 3s ago
+            Snapshot: {checkedAtLabel}
           </span>
         </div>
       </Card>

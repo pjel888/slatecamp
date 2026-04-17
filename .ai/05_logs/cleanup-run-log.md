@@ -350,6 +350,16 @@
   - `bun run type-check` passed
   - `bun run build` passed
 
+### Follow-up: developer landing metrics truth-surface hardening
+
+- implemented:
+  - added `src/lib/developer/repo-metrics.ts`
+  - replaced placeholder “Stories 71+ / LOC 26K” values on `/developer` with repo-backed counts
+  - replaced the fake “Last checked: 3s ago” label with a real snapshot timestamp
+- validation:
+  - `bun run type-check` passed
+  - `bun run build` passed
+
 ### Follow-up: wiki mobile hydration convergence
 
 - implemented:

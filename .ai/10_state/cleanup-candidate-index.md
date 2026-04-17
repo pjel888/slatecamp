@@ -34,6 +34,7 @@ Implementation note (2026-04-17):
 - dashboard developer compatibility pages retired after internal consumers were already moved to `/developer/**`
 - `L2-DEV-006` implemented in part (developer tech-stack tables now derive from one manifest-backed helper instead of duplicated hardcoded version lists)
 - `L2-DEV-006` implemented in part (developer status page no longer generates random pseudo-uptime history)
+- `L2-DEV-006` implemented in part (developer landing metrics now use repo-backed counts instead of placeholder “Stories 71+ / LOC 26K” values)
 - `L3-C02` implemented in part (mobile wiki navigation now receives the same cached server-loaded taxonomy as the desktop sidebar)
 - Bun package-resolution blocker repaired by pinning `@lemonsqueezy/lemonsqueezy.js` to the nearest valid version (`1.2.5`)
 - implemented dependency removals:
