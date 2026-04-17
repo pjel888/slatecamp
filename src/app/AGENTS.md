@@ -30,6 +30,8 @@ Main route groups and surfaces include:
 
 ## What agents must inspect before editing
 - the local route group's `page.tsx`, `layout.tsx`, `loading.tsx`, `error.tsx`, and any `route.ts`
+- `.ai/00_system/ROUTE_SURFACE_MAP.md`
+- `.ai/00_system/VALIDATION_MATRIX.md`
 - the matching components under `src/components/`
 - the matching server actions/queries/helpers under `src/lib/`
 - middleware or auth/role boundaries when access is relevant

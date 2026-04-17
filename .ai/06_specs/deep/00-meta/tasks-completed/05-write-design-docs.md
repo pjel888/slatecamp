@@ -1,3 +1,6 @@
+> Historical completed-task artifact from the 2026-04-06 deep-doc migration.
+> Preserved for lineage only; not current task or workflow authority.
+
 # Task 05: Write Design Documentation
 
 **Status:** pending  
@@ -58,4 +61,3 @@ Content:
 
 - Design tokens are the single source of truth — extract directly from `globals.css`
 - Do NOT use values from legacy `SlateCamp Design System.md` — that file is archived
-

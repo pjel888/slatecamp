@@ -1,6 +1,6 @@
 > Historical summary
-> This file describes the first 2026-04-16 `.ai` overlay pass before the numbered-only normalization.
-> Use `current-state.md`, `findings-register.md`, and `../00_system/ai-folder-canonical-map.md` for current authority.
+> This file describes the first 2026-04-16 `.ai` overlay pass before the numbered-only normalization and later stale-doc refresh.
+> Use `current-state.md`, `findings-register.md`, `CODEX_ENABLEMENT_FINDINGS.md`, and `../00_system/ai-folder-canonical-map.md` for current authority.
 
 # Organizational Upgrade Summary
 
@@ -33,7 +33,7 @@
 - Existing `agents`, `skills`, `rules`, `plans`, `prompts`, `state`, and `ralph` structures at the time
 - Existing config files `mcp.json` and `settings.json`
 
-## What still needs manual review
+## What still needed follow-up after the first overlay
 
 - Whether roadmap materials should be consolidated into a canonical `01_roadmap/` set
 - Whether `.ai/archive/` and `.ai/docs/archive/` should remain separate long-term
@@ -42,4 +42,4 @@
 
 ## Explicit statement
 
-This summary is historical. Subsequent normalization removed the unnumbered top-level roots and rehomed their contents under numbered parents.
+This summary is historical. Subsequent normalization removed the unnumbered top-level roots, refreshed the active bridge docs, and demoted the deep `00-meta` scaffolding into preserved lineage rather than current authority.

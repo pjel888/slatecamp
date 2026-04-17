@@ -27,6 +27,13 @@ Current audit/planning entrypoints:
 - `.ai/00_system/ai-folder-canonical-map.md`
 - `.ai/03_plans/executive-remediation-roadmap.md`
 
+Codex enablement entrypoints:
+- `.ai/00_system/CODEX_ENABLEMENT_GUIDE.md`
+- `.ai/00_system/ENVIRONMENT_CONTRACT.md`
+- `.ai/00_system/VALIDATION_MATRIX.md`
+- `.ai/00_system/DOCS_SOURCE_OF_TRUTH.md`
+- `.agents/README.md`
+
 Current repository snapshot:
 - `124` App Router pages
 - `12` route handlers
@@ -163,6 +170,7 @@ Recommended starting points:
 - prioritized findings and readiness assessment
 - `.ai` rationalization decisions
 - implementation sequencing for a later approved remediation run
+- Codex enablement and future session setup
 
 Recommended starting points:
 - `.ai/06_specs/deep/00-meta/001-index.md`
@@ -183,6 +191,10 @@ Always use the nearest in-scope `AGENTS.md` plus the repo root `AGENTS.md`.
 - validation and documentation-maintenance policy
 - repo-wide change-safety expectations
 
+### Use `.agents/skills/` for
+- repo-shared Codex workflows
+- repeatable route, readiness, docs-sync, admin, developer, and Supabase review tasks
+
 ---
 
 ## 5. Local development
@@ -193,6 +205,8 @@ Always use the nearest in-scope `AGENTS.md` plus the repo root `AGENTS.md`.
 - A working `.env.local` with the credentials required by the surfaces you want to run
 
 > There is currently **no committed `.env.example`** in the repo root. Treat environment setup as a manual step derived from the codebase, local practice, and deployment configuration.
+>
+> See `.ai/00_system/ENVIRONMENT_CONTRACT.md` for the current inferred env contract.
 
 ### Install dependencies
 
@@ -262,6 +276,8 @@ These commands are grounded in `package.json` as of **2026-04-16**.
 There is **no top-level `test` script** in `package.json` right now.
 
 The repository does contain many test files, but there is no single root `bun test` command in the current script surface. Any documentation or CI guidance should account for that explicitly instead of assuming a root test script exists.
+
+See `.ai/00_system/VALIDATION_MATRIX.md` for the current surface-by-surface validation contract.
 
 ---
 

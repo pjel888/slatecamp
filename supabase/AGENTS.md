@@ -20,6 +20,8 @@ This file governs `supabase/` and its contents.
 ## What agents must inspect before editing
 - `DATABASE_SCHEMA.sql`
 - the relevant migration files
+- `.ai/00_system/DATA_BOUNDARY_MAP.md`
+- `.ai/00_system/ENVIRONMENT_CONTRACT.md`
 - any related application code that depends on the schema or policies
 
 ## Safety rules

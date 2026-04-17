@@ -1,7 +1,8 @@
 > Historical reference
 > This PRD is preserved for lineage only.
 > Do not treat it as current authority.
-> Use `../../../10_state/current-state.md`, `../../../02_audits/master-audit.md`, and `../../../00_system/ai-folder-canonical-map.md` for current operational truth.
+> Do not use the commands, counts, or route assumptions below as current workflow guidance.
+> Use `../../../10_state/current-state.md`, `../../../10_state/CODEX_ENABLEMENT_FINDINGS.md`, `../../../02_audits/master-audit.md`, and `../../../00_system/ai-folder-canonical-map.md` for current operational truth.
 
 # SlateCamp PRD
 

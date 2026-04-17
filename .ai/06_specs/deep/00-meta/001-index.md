@@ -12,18 +12,19 @@
 
 ## 00-meta
 
+- `00-meta/README.md` — Active entrypoint for lineage context
 - `00-meta/000-implementation-plan.md` — Historical reference
-- `00-meta/001-index.md` — Active
+- `00-meta/001-index.md` — Active deep-corpus inventory
 - `00-meta/002-changelog.md` — Historical reference
 - `00-meta/prd-legacy.md` — Historical reference
-- `00-meta/tasks-completed/01-setup-structure.md` — Active
-- `00-meta/tasks-completed/02-archive-legacy.md` — Active
-- `00-meta/tasks-completed/03-write-meta-docs.md` — Active
-- `00-meta/tasks-completed/04-write-architecture-docs.md` — Active
-- `00-meta/tasks-completed/05-write-design-docs.md` — Active
-- `00-meta/tasks-completed/06-write-development-docs.md` — Active
-- `00-meta/tasks-completed/07-write-product-docs.md` — Active
-- `00-meta/tasks-completed/08-write-portal-docs.md` — Active
+- `00-meta/tasks-completed/01-setup-structure.md` — Historical completed-task artifact
+- `00-meta/tasks-completed/02-archive-legacy.md` — Historical completed-task artifact
+- `00-meta/tasks-completed/03-write-meta-docs.md` — Historical completed-task artifact
+- `00-meta/tasks-completed/04-write-architecture-docs.md` — Historical completed-task artifact
+- `00-meta/tasks-completed/05-write-design-docs.md` — Historical completed-task artifact
+- `00-meta/tasks-completed/06-write-development-docs.md` — Historical completed-task artifact
+- `00-meta/tasks-completed/07-write-product-docs.md` — Historical completed-task artifact
+- `00-meta/tasks-completed/08-write-portal-docs.md` — Historical completed-task artifact
 
 ## 01-product
 

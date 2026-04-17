@@ -1,3 +1,6 @@
+> Historical completed-task artifact from the 2026-04-06 deep-doc migration.
+> Preserved for lineage only; not current task or workflow authority.
+
 # Task 04: Write Architecture Documentation
 
 **Status:** pending  

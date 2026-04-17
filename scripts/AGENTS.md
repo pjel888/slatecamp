@@ -21,6 +21,8 @@ Live script areas include:
 ## What agents must inspect before editing or documenting
 - the actual script source file
 - the corresponding `package.json` command, if one exists
+- `.ai/00_system/VALIDATION_MATRIX.md`
+- `.ai/00_system/ENVIRONMENT_CONTRACT.md`
 - any referenced external systems or input/output files
 
 ## Safety rules

@@ -49,7 +49,61 @@ Moved into:
 Reason:
 - completed task campaign from the prior repo-intelligence pass
 
-## Still active but stale and should be revised, not archived
+## Refreshed in the 2026-04-17 stale-doc follow-up
+
+The main active bridge docs that were stale at the start of the follow-up pass have now been refreshed in place:
+
+### `00_system`
+
+- `architecture-map.md`
+- `audit-standards.md`
+- `documentation-governance.md`
+- `principles.md`
+- `system-boundaries.md`
+- `workflow.md`
+
+### `06_specs`
+
+- `client-server-boundary-rules.md`
+- `data-flow-map.md`
+- `frontend-execution-model.md`
+- `performance-standards.md`
+
+### `10_state`
+
+- `active-risks.md`
+- `architecture-state-summary.md`
+- `backend-state-summary.md`
+- `blockers.md`
+- `current-state.md`
+- `feature-state-summary.md`
+- `frontend-state-summary.md`
+- `organizational-upgrade-summary.md`
+- `performance-state-summary.md`
+- `repo-intelligence-summary.md`
+
+### `12_agents`
+
+- `agent-governance-audit.md`
+- `agent-hierarchy-map.md`
+- `agent-system-map.md`
+- `agent-update-plan.md`
+
+## Preserved historical docs now explicitly demoted
+
+The deep `00-meta` lineage set remains preserved, but it is now clearly marked as historical:
+
+- `06_specs/deep/00-meta/000-implementation-plan.md`
+- `06_specs/deep/00-meta/002-changelog.md`
+- `06_specs/deep/00-meta/prd-legacy.md`
+- `06_specs/deep/00-meta/tasks-completed/*`
+
+The active entrypoint for that lineage area is now:
+- `06_specs/deep/00-meta/README.md`
+
+## Previously identified stale groups at T0
+
+These were the files identified at T0 and refreshed in the follow-up pass above.
 
 ### `00_system`
 
@@ -91,7 +145,7 @@ Reason:
 - `agent-update-plan.md`
 - `repo-agent-model.md`
 
-These files are structurally relevant, but their freshness markers still read 2026-04-16 and they need a review/update pass rather than immediate archiving.
+These files were structurally relevant and stale at T0; they have now been refreshed in place.
 
 ## Current active set
 

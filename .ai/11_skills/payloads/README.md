@@ -3,8 +3,8 @@
 This folder remains the live project-local skill payload store for now.
 
 Canonical governance docs live in:
-- `../11_skills/`
-- `../00_system/AI_FOLDER_CANONICAL_MAP.md`
+- `../README.md`
+- `../../00_system/ai-folder-canonical-map.md`
 
 Rule:
 - do not treat this folder as the policy layer

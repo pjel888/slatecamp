@@ -9,13 +9,13 @@ This file governs the whole repository unless a deeper `AGENTS.md` overrides it.
 SlateCamp is a large Next.js App Router codebase for ALE preparation. It is broad, mature, and operationally heavy.
 
 Live evidence from the repo on 2026-04-17:
-- `src/app/` contains 124 `page.tsx` routes, 16 layouts, 95 loading files, 9 error boundaries, and 12 route handlers
+- `src/app/` contains 125 `page.tsx` routes, 16 layouts, 96 loading files, 9 error boundaries, and 12 route handlers
 - `src/lib/actions/` contains 156 files across root and feature subdirectories
 - `src/components/` contains 716 files
 - `src/features/` contains 551 files
 - `supabase/migrations/` contains 89 migration files
 - `src/` contains 64 test files
-- the repo tracks 114 `AGENTS.md` files
+- the repo tracks 122 `AGENTS.md` files
 
 This is not a greenfield app or a toy demo. Treat it like a multi-surface product with significant documentation and governance needs.
 
@@ -28,6 +28,9 @@ This is not a greenfield app or a toy demo. Treat it like a multi-surface produc
 - Repo entrypoint: `README.md`
 - Policy-heavy repo contract: `CLAUDE.md`
 - `.ai` canonical map: `.ai/00_system/ai-folder-canonical-map.md`
+- Codex startup guide: `.ai/00_system/CODEX_ENABLEMENT_GUIDE.md`
+- Validation contract: `.ai/00_system/VALIDATION_MATRIX.md`
+- Environment contract: `.ai/00_system/ENVIRONMENT_CONTRACT.md`
 
 ## What agents must do before editing
 1. Read the nearest in-scope `AGENTS.md` files from root down to the target subtree.
@@ -57,6 +60,7 @@ This is not a greenfield app or a toy demo. Treat it like a multi-surface produc
 - `.ai/` = operational intelligence layer
 - `.ai/06_specs/deep/` = deep reference/specification corpus
 - `.ai/00_system/ai-folder-canonical-map.md` = current `.ai` canonical routing map
+- `.agents/skills/` = repo-shared Codex skill surface
 
 Use these roles intentionally. Do not let them drift into contradictory copies.
 

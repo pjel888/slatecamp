@@ -3,11 +3,14 @@
 **Last Updated:** 2026-04-17
 
 ## Operational blockers
-- Missing centralized environment example/contract
-- Documentation governance previously under-specified across root README vs `.ai` vs `.ai/06_specs/deep`
-- Some legacy/historical planning docs still look active unless index/governance docs are consulted first
+
+- No committed root `.env.example`; setup still depends on the documented environment contract.
+- No root `test` script; validation must be chosen deliberately from the real script surface.
+- `docs/shared/agent-tiers.md` is still missing, so the installed `ultrawork` skill cannot fully rely on a repo-local routing reference.
+- `/developer` still mixes runtime-backed and mock-backed truth, so it is not yet a fully trusted inspection surface.
 
 ## Not blocked
-- Core implementation breadth
-- Ability to audit architecture from live code
-- Ability to update operational docs and AGENTS hierarchy
+
+- Auditing architecture from live code
+- Refreshing `.ai` governance and state docs
+- Updating scoped `AGENTS.md` files

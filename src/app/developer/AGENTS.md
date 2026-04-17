@@ -16,6 +16,7 @@
 
 ### What agents must do here
 - Inspect route groups, `page.tsx`, `layout.tsx`, `loading.tsx`, `error.tsx`, and any `route.ts` handlers in this subtree before editing.
+- Read `.ai/02_audits/DEVELOPER_SURFACE_AUDIT.md` and `.ai/03_plans/DEVELOPER_SURFACE_PLAN.md` before broad `/developer` work.
 - Preserve server-component defaults, auth/portal boundaries, and route-level loading/error behavior.
 - Cross-check UI/route changes against the matching components, server actions, and nearest portal docs in `.ai`.
 

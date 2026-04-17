@@ -1,6 +1,10 @@
 # Docs Implementation Plan v5.0 — Model Workspace Protocol
 
-> **Reality note (2026-04-17):** This document captures the 2026-04-06 deep-docs implementation plan. Use `../../../03_plans/implementation-plan.md`, `../../../03_plans/documentation-repair-plan.md`, and `../../../10_state/current-state.md` for current operational truth.
+> **Historical lineage note (2026-04-17):** This document captures the 2026-04-06 deep-docs implementation plan and old workspace protocol assumptions. It is preserved for provenance only.
+>
+> **Do not treat this file as current authority for commands, folder layout, tasks, or runtime workflow.**
+>
+> Use `../../../00_system/ai-folder-canonical-map.md`, `../../../03_plans/implementation-plan.md`, `../../../03_plans/documentation-repair-plan.md`, and `../../../10_state/current-state.md` for current authority.
 
 **Status:** Historical planning reference
 **Originally Updated:** 2026-04-06

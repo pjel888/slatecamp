@@ -11,12 +11,12 @@ SlateCamp is a large Next.js App Router codebase with broad product and operatio
 - quiz, wiki, notes, analytics, 3D Lab, calculators, entitlements, payments, and data pipelines
 
 ## Verified current reality
-- `src/app/`: 124 pages, 16 layouts, 95 loading files, 9 error boundaries, 12 route handlers
+- `src/app/`: 125 pages, 16 layouts, 96 loading files, 9 error boundaries, 12 route handlers
 - `src/lib/actions/`: 156 files
 - `src/components/`: 716 files
 - `src/features/`: 551 files
 - `supabase/migrations/`: 89 files
-- tracked `AGENTS.md`: 114
+- tracked `AGENTS.md`: 122
 - client components: 677 files with `use client` declarations across `src/`
 
 ## Current strengths
@@ -33,7 +33,7 @@ SlateCamp is a large Next.js App Router codebase with broad product and operatio
 - many governance/docs changes are already in flight, so verification discipline matters
 
 ## Current recommended next steps
-1. Use `.ai/02_audits/master-audit.md` as the active findings entrypoint.
-2. Use `.ai/00_system/ai-folder-canonical-map.md` as the active `.ai` routing map.
-3. Resolve install/CI/security blockers before broad refactors.
-4. Treat `.ai/10_state/` as the human-readable state layer and `.omx/` as runtime-only.
+1. Use `.ai/00_system/codex-enablement-guide.md` first for future Codex sessions.
+2. Use `.ai/10_state/findings-register.md` for repo-wide findings and `CODEX_ENABLEMENT_FINDINGS.md` for Codex-friction findings.
+3. Use `.ai/00_system/route-surface-map.md` and `.ai/00_system/data-boundary-map.md` before broad admin, developer, or backend changes.
+4. Treat `.ai/10_state/` as the human-readable current state layer and `.omx/` as runtime-only state.

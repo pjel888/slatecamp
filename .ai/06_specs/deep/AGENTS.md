@@ -19,7 +19,7 @@ It may contain active reference docs and preserved historical material, but it i
 
 ## Dependencies and adjacent systems
 
-- `.ai/00_system/AI_FOLDER_CANONICAL_MAP.md`
+- `.ai/00_system/ai-folder-canonical-map.md`
 - `.ai/06_specs/`
 - root `docs/`
 - live code in `src/`, `scripts/`, and `supabase/`

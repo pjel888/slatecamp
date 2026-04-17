@@ -18,6 +18,8 @@ Current snapshot: 394 directories and 2140+ files under `src/`.
 
 ## What agents must inspect before editing
 - the local subtree's nearest `AGENTS.md`
+- `.ai/00_system/CODEX_ENABLEMENT_GUIDE.md`
+- `.ai/00_system/VALIDATION_MATRIX.md`
 - the calling route or consuming component
 - the matching shared logic or action/query layer
 - related tests when behavior is non-trivial

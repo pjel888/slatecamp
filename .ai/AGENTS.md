@@ -21,6 +21,9 @@ It currently contains:
 - `.ai/10_state/` = current operational assessment
 - `.ai/12_agents/` = repo agent-model docs
 - `.ai/00_system/ai-folder-canonical-map.md` = canonical routing map for numbered vs unnumbered `.ai` surfaces
+- `.ai/00_system/CODEX_ENABLEMENT_GUIDE.md` = Codex-facing startup and interpretation guide
+- `.ai/00_system/CODEX_SKILLS_MAP.md` = relationship between `.ai` and `.agents/skills`
+- `.agents/skills/` = Codex-discoverable shared skill surface that should point back into `.ai`
 
 ## What agents must do here
 1. Audit before editing; do not update state, roadmap, or audit docs from assumption.

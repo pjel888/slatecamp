@@ -15,6 +15,7 @@ Exceptions:
 - `README.md`
 - `AGENTS.md`
 - tool-required payload files such as `SKILL.md`
+- explicit run-contract document families when the filename itself is part of the required deliverable set (current exception: `CODEX_ENABLEMENT_*`)
 
 ## When to use date prefixes
 

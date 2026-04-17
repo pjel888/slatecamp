@@ -8,12 +8,12 @@ This file is the stable landing page for current repo-intelligence work.
 
 ## Live evidence snapshot
 
-- `src/app/`: `124` pages, `16` layouts, `95` loading files, `9` error boundaries, `12` route handlers
+- `src/app/`: `125` pages, `16` layouts, `96` loading files, `9` error boundaries, `12` route handlers
 - `src/components/`: `716` files
 - `src/features/`: `551` files
 - `src/lib/actions/`: `156` files
 - `supabase/migrations/`: `89` files
-- tracked `AGENTS.md`: `114`
+- tracked `AGENTS.md`: `122`
 - `src/` contains `677` files with `use client` declarations
 
 ## Current repo-intelligence coverage
@@ -29,6 +29,7 @@ This file is the stable landing page for current repo-intelligence work.
 
 - `../02_audits/master-audit.md`
 - `../00_system/repo-map.md`
+- `../00_system/codex-enablement-guide.md`
 - `../06_specs/route-inventory.md`
 - `../06_specs/feature-inventory.md`
 - `../06_specs/backend-system-map.md`
@@ -39,6 +40,6 @@ This file is the stable landing page for current repo-intelligence work.
 
 1. SlateCamp is already a large multi-portal product, not a scaffold.
 2. The main risk is operational drift, not feature absence.
-3. `.ai` now has a numbered-only top-level structure, but stale active docs still need routine review.
+3. `.ai` now has a numbered-only top-level structure and the main active bridge docs have been refreshed, but volatile counts still need routine remeasurement.
 4. Client/server boundary drift remains visible in the current codebase.
 5. Documentation and governance need continuous maintenance because the implementation surface is broad and fast-moving.

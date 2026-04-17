@@ -101,7 +101,7 @@ These figures are time-sensitive and must be revalidated if reused later.
 - `src/components/`: **716** files
 - `src/features/`: **551** files
 - `supabase/migrations/`: **89** files
-- tracked `AGENTS.md` files: **114**
+- tracked `AGENTS.md` files: **122**
 
 ## Major active surfaces
 

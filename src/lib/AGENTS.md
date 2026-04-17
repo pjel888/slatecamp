@@ -26,6 +26,8 @@ High-value areas include:
 - actual call sites
 - adjacent tests
 - schema/config dependencies
+- `.ai/00_system/DATA_BOUNDARY_MAP.md`
+- `.ai/00_system/ENVIRONMENT_CONTRACT.md`
 - route/components consumers
 - auth/entitlement implications where relevant
 
