@@ -331,6 +331,18 @@
   - `bun run check:storybook` passed
   - `bun run build` passed
 
+### Follow-up: dashboard developer compatibility-page retirement
+
+- implemented:
+  - removed the redirect-only pages under `src/app/dashboard/developer/**`
+- result:
+  - the canonical developer surface is now only `/developer/**`
+- validation:
+  - no live source references remain to the retired dashboard developer pages
+  - `bun run type-check` passed
+  - `bun run check:storybook` passed
+  - `bun run build` passed
+
 ### Completion check
 
 - baseline/control docs created first
