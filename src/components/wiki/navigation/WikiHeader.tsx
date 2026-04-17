@@ -1,6 +1,8 @@
 import { getBreadcrumbTrail } from '@/lib/actions/wiki-actions'
+import { getCachedTaxonomyTreeFull } from '@/lib/actions/cached-queries'
 import { WikiHeaderClient } from './WikiHeaderClient'
 import type { BreadcrumbItem } from '@/lib/actions/wiki-actions'
+import type { TaxonomyNode } from '@/lib/actions/taxonomy'
 
 interface WikiHeaderProps {
   nodeId?: string
@@ -25,9 +27,14 @@ export async function WikiHeader({
   mobileActionsContent,
 }: WikiHeaderProps) {
   let breadcrumbs: BreadcrumbItem[] = []
+  let mobileSidebarNodes: TaxonomyNode[] | undefined
 
   if (nodeId) {
     breadcrumbs = await getBreadcrumbTrail(nodeId, disciplineId)
+  }
+
+  if (disciplineId) {
+    mobileSidebarNodes = await getCachedTaxonomyTreeFull(disciplineId)
   }
 
   return (
@@ -39,6 +46,7 @@ export async function WikiHeader({
       scrollContainerId={scrollContainerId}
       disableUserActions={disableUserActions}
       mobileActionsContent={mobileActionsContent}
+      mobileSidebarNodes={mobileSidebarNodes}
     />
   )
 }

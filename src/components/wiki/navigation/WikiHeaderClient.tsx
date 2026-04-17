@@ -11,6 +11,7 @@ import { WikiSidebar } from './WikiSidebar'
 import { useWikiDiscipline } from './WikiDisciplineContext'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import type { BreadcrumbItem } from '@/lib/actions/wiki-actions'
+import type { TaxonomyNode } from '@/lib/actions/taxonomy'
 
 interface WikiHeaderClientProps {
   breadcrumbs: BreadcrumbItem[]
@@ -20,6 +21,7 @@ interface WikiHeaderClientProps {
   scrollContainerId?: string
   disableUserActions?: boolean
   mobileActionsContent?: React.ReactNode
+  mobileSidebarNodes?: TaxonomyNode[]
 }
 
 export function WikiHeaderClient({
@@ -30,6 +32,7 @@ export function WikiHeaderClient({
   scrollContainerId,
   disableUserActions = false,
   mobileActionsContent,
+  mobileSidebarNodes,
 }: WikiHeaderClientProps) {
   const { disciplineId, disciplineName } = useWikiDiscipline()
   return (
@@ -49,6 +52,7 @@ export function WikiHeaderClient({
                   <WikiSidebar
                     disciplineId={disciplineId}
                     disciplineName={disciplineName || 'Syllabus'}
+                    initialNodes={mobileSidebarNodes}
                   />
                 </SheetContent>
               </Sheet>

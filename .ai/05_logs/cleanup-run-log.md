@@ -350,6 +350,17 @@
   - `bun run type-check` passed
   - `bun run build` passed
 
+### Follow-up: wiki mobile hydration convergence
+
+- implemented:
+  - `src/components/wiki/navigation/WikiHeader.tsx` now fetches the cached taxonomy tree server-side
+  - `src/components/wiki/navigation/WikiHeaderClient.tsx` passes that server-loaded tree into the mobile `WikiSidebar`
+- result:
+  - mobile wiki navigation now follows the same server-loaded taxonomy path as the desktop sidebar instead of triggering a separate client fetch path
+- validation:
+  - `bun run type-check` passed
+  - `bun run build` passed
+
 ### Follow-up: dashboard developer compatibility-page retirement
 
 - implemented:
