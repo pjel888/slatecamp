@@ -4,7 +4,7 @@ import { SectionHeader } from '@/components/shared/section-header'
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs'
 import { CodeBlock } from '@/components/shared/CodeBlock'
 import { developerArchitectureTechStack } from '@/lib/developer/tech-stack'
-import { authGuards, authProviderRows, cronCode, databaseStats, dbClusters, dbFunctions, deploymentRows, envVars, masteryLoopCode, middlewareCode, migrations, roleMatrix, sessionLifecycleCode } from '@/lib/developer/architecture-data'
+import { authGuards, authProviderRows, cronCode, databaseStats, dbClusters, dbFunctions, deploymentRows, envVars, masteryLoopCode, middlewareCode, migrations, roleColumns, roleMatrix, routeProtectionSteps, sessionLifecycleCode } from '@/lib/developer/architecture-data'
 
 export const metadata = {
   title: 'Architecture — SlateCamp Developer Portal',
@@ -202,7 +202,7 @@ export default function ArchitecturePage() {
                       <th className="px-3 py-2 text-left font-[family-name:var(--font-dm-mono)] text-[11px] font-medium text-muted-foreground uppercase tracking-[0.1em]">
                         Permission
                       </th>
-                      {['owner', 'super_admin', 'content_admin', 'sme_reviewer'].map((role) => (
+                      {roleColumns.map((role) => (
                         <th
                           key={role}
                           className="px-3 py-2 text-center font-[family-name:var(--font-dm-mono)] text-[11px] font-medium text-muted-foreground uppercase tracking-[0.1em]"
@@ -261,7 +261,7 @@ export default function ArchitecturePage() {
             <Card variant="default" size="sm">
               <CardContent className="py-3">
                 <div className="flex items-center gap-2 flex-wrap text-[11px]">
-                  {['middleware', 'layout', 'page-level'].map((step, i) => (
+                  {routeProtectionSteps.map((step, i) => (
                     <span key={step} className="flex items-center gap-2">
                       <code className="font-[family-name:var(--font-dm-mono)] px-2 py-1 rounded bg-muted text-foreground border border-border">
                         {step}

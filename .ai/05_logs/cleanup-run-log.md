@@ -591,6 +591,15 @@
   - `bun run type-check` passed
   - `bun run build` passed
 
+### Follow-up: developer architecture role/flow extraction
+
+- implemented:
+  - moved the role-column labels and route-protection step list out of `src/app/developer/architecture/page.tsx`
+  - the architecture route now reads those arrays from `src/lib/developer/architecture-data.ts` instead of keeping more inline static lists
+- validation:
+  - `bun run type-check` passed
+  - `bun run build` passed
+
 ### Follow-up: developer connection-state/helper cleanup
 
 - implemented:

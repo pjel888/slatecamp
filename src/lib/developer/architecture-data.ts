@@ -83,6 +83,8 @@ export const roleMatrix = [
   { permission: 'View Audit Log',   owner: true, super_admin: true,  content_admin: false, sme_reviewer: false },
 ]
 
+export const roleColumns = ['owner', 'super_admin', 'content_admin', 'sme_reviewer']
+
 export const authGuards = [
   'isAdmin()',
   'isSuperAdmin()',
@@ -90,6 +92,8 @@ export const authGuards = [
   'canReviewContent()',
   'canManageUsers()',
 ]
+
+export const routeProtectionSteps = ['middleware', 'layout', 'page-level']
 
 export const authProviderRows = [
   { k: 'Provider', v: 'Supabase Auth' },
