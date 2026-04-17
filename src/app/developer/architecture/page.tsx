@@ -4,7 +4,7 @@ import { SectionHeader } from '@/components/shared/section-header'
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs'
 import { CodeBlock } from '@/components/shared/CodeBlock'
 import { developerArchitectureTechStack } from '@/lib/developer/tech-stack'
-import { authGuards, authProviderRows, cronCode, dbClusters, dbFunctions, envVars, masteryLoopCode, middlewareCode, migrations, roleMatrix, sessionLifecycleCode } from '@/lib/developer/architecture-data'
+import { authGuards, authProviderRows, cronCode, databaseStats, dbClusters, dbFunctions, deploymentRows, envVars, masteryLoopCode, middlewareCode, migrations, roleMatrix, sessionLifecycleCode } from '@/lib/developer/architecture-data'
 
 export const metadata = {
   title: 'Architecture — SlateCamp Developer Portal',
@@ -96,12 +96,7 @@ export default function ArchitecturePage() {
         <TabsContent value="database" className="pt-5 space-y-4">
           {/* Stats row */}
           <div className="flex gap-4 flex-wrap">
-            {[
-              { label: 'Tables', value: '50' },
-              { label: 'RLS Policies', value: '89' },
-              { label: 'Triggers', value: '31' },
-              { label: 'Enums', value: '13' },
-            ].map((stat) => (
+            {databaseStats.map((stat) => (
               <div key={stat.label} className="flex items-baseline gap-2">
                 <span className="font-[family-name:var(--font-dm-mono)] text-lg font-bold text-foreground">
                   {stat.value}
@@ -317,12 +312,7 @@ export default function ArchitecturePage() {
               <table className="w-full text-sm">
                 <TableHeader cols={['Property', 'Value']} />
                 <tbody>
-                  {[
-                    { k: 'Platform', v: 'Vercel (serverless)' },
-                    { k: 'Build',    v: 'next build with Turbopack' },
-                    { k: 'Runtime',  v: 'Node.js (default)' },
-                    { k: 'Region',   v: 'iad1 (US East)' },
-                  ].map((row, i) => (
+                  {deploymentRows.map((row, i) => (
                     <tr key={row.k} className={i % 2 === 0 ? 'bg-transparent' : 'bg-muted/30'}>
                       <td className="px-3 py-2 font-medium text-[11px] text-foreground whitespace-nowrap">
                         {row.k}

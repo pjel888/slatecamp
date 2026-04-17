@@ -68,6 +68,13 @@ export const dbFunctions = [
   { name: 'check_question_topic_not_cross_ref()',      desc: 'Prevent cross-ref questions' },
 ]
 
+export const databaseStats = [
+  { label: 'Tables', value: '50' },
+  { label: 'RLS Policies', value: '89' },
+  { label: 'Triggers', value: '31' },
+  { label: 'Enums', value: '13' },
+]
+
 export const roleMatrix = [
   { permission: 'Manage Questions', owner: true, super_admin: true,  content_admin: true,  sme_reviewer: false },
   { permission: 'Manage Wiki',      owner: true, super_admin: true,  content_admin: true,  sme_reviewer: false },
@@ -89,6 +96,13 @@ export const authProviderRows = [
   { k: 'OAuth', v: 'Google OAuth 2.0' },
   { k: 'Session', v: 'Cookie-based via @supabase/ssr' },
   { k: 'JWT', v: 'RS256, rotated on refresh' },
+]
+
+export const deploymentRows = [
+  { k: 'Platform', v: 'Vercel (serverless)' },
+  { k: 'Build', v: 'next build with Turbopack' },
+  { k: 'Runtime', v: 'Node.js (default)' },
+  { k: 'Region', v: 'iad1 (US East)' },
 ]
 
 export const masteryLoopCode = `Student Interaction (quiz answer, wiki read, 3D Lab)

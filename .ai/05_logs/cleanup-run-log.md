@@ -582,6 +582,15 @@
   - `bun run type-check` passed
   - `bun run build` passed
 
+### Follow-up: developer architecture stats/deployment extraction
+
+- implemented:
+  - moved the database stats row and deployment property rows out of `src/app/developer/architecture/page.tsx`
+  - the architecture route now reads those arrays from `src/lib/developer/architecture-data.ts` instead of carrying more inline static data
+- validation:
+  - `bun run type-check` passed
+  - `bun run build` passed
+
 ### Follow-up: developer connection-state/helper cleanup
 
 - implemented:

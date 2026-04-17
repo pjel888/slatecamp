@@ -55,6 +55,7 @@ Implementation note (2026-04-17):
 - `L2-DEV-006` implemented in part (developer architecture tech-stack notes now derive the TypeScript strict-mode note from `tsconfig.json` instead of hardcoding `strict: false`)
 - `L2-DEV-006` implemented in part (developer tech-stack content row no longer hardcodes an unowned MDX version and now reports the package-backed `next-mdx-remote` contract directly)
 - `L2-DEV-006` implemented in part (developer console now uses the shared `getConnectionState()` helper and the unused `THREE_WITH_DREI_VERSION` constant has been removed)
+- `L2-DEV-006` implemented in part (developer architecture database stats and deployment property rows now come from `src/lib/developer/architecture-data.ts` instead of inline route arrays)
 - `L2-DEV-006` implemented in part (developer architecture auth/provider rows now come from `src/lib/developer/architecture-data.ts` instead of an inline array in the route file)
 - `L2-DEV-006` implemented in part (developer payments tech-stack note now reflects the real PayRex-active / LemonSqueezy-stubbed runtime state instead of a vague SDK-stub note)
 - `L1-L005` implemented in part (`src/app/developer/_components/TableOfContents.tsx` removed after confirming it had no live consumers)
