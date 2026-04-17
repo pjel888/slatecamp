@@ -20,6 +20,7 @@ Implementation note (2026-04-17):
 - `L1-L010` implemented in part (`src/data/sample-lots.ts`)
 - `L1-L010` implemented in part (`src/data/mock-questions.json`)
 - `L1-L009` implemented in part (`src/lib/readiness/churn.ts`, `src/lib/signals/compute.ts`)
+- `L1-L009` implemented in part (`src/lib/outcomes/prepopulate.ts`, `src/lib/proof-simulation/gate.ts`)
 - Bun package-resolution blocker repaired by pinning `@lemonsqueezy/lemonsqueezy.js` to the nearest valid version (`1.2.5`)
 - implemented dependency removals:
   - `DEP-01` — `dompurify`

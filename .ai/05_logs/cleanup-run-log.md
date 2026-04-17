@@ -214,6 +214,17 @@
   - `bun run check:storybook` passed
   - `bun run build` passed
 
+### Follow-up: detached domain-helper cleanup
+
+- implemented:
+  - removed `src/lib/outcomes/prepopulate.ts`
+  - removed `src/lib/proof-simulation/gate.ts`
+- validation:
+  - runtime/reference grep showed no live source consumers beyond cleanup docs and local AGENTS inventories
+  - `bun run type-check` passed
+  - `bun run check:storybook` passed
+  - `bun run build` passed
+
 ### Completion check
 
 - baseline/control docs created first

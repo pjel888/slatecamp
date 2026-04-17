@@ -41,6 +41,7 @@ Implementation note (2026-04-17):
   - part of `L1-L010` (`src/data/sample-lots.ts`)
   - part of `L1-L010` (`src/data/mock-questions.json`)
   - part of `L1-L009` (`src/lib/readiness/churn.ts`, `src/lib/signals/compute.ts`)
+  - part of `L1-L009` (`src/lib/outcomes/prepopulate.ts`, `src/lib/proof-simulation/gate.ts`)
 
 - `L1-L003` — superseded quiz review files:
   - `src/components/quiz-v2/review/ReviewMode.tsx`
