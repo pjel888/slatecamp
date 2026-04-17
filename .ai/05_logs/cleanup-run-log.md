@@ -122,11 +122,11 @@
 
 - implemented:
   - `L3-C01` — removed the unnecessary `'use client'` boundary from `src/app/dashboard/wiki/page.tsx`
-  - also removed the now-unused `Lightning` import introduced by that serverification
+  - replaced client `SCIcon` usage with direct SSR icon rendering so the route can stay server-side
 - validation:
   - targeted ESLint on `src/app/dashboard/wiki/page.tsx` passed
   - `bun run type-check` passed
-  - `bun run build` still fails only on restricted-network Google Fonts fetches, not on the wiki route change
+  - `bun run build` passed after the server-side icon handoff was fixed
 
 ### Completion check
 

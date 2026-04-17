@@ -1,5 +1,4 @@
 import { BookOpen, MagnifyingGlass, Sparkle } from '@phosphor-icons/react/dist/ssr'
-import { SCIcon } from '@/components/graphics/icons/Icon'
 
 export default function WikiPage() {
   return (
@@ -7,7 +6,7 @@ export default function WikiPage() {
       <div className='max-w-2xl w-full text-center space-y-8'>
         {/* Hero Icon */}
         <div className='mx-auto w-20 h-20 bg-primary-50 rounded-md flex items-center justify-center border border-primary/20 shadow-sm'>
-          <SCIcon icon={BookOpen} size="2xl" className='text-primary' />
+          <BookOpen size={48} className='text-primary' />
         </div>
 
         {/* Text Content */}
@@ -25,7 +24,7 @@ export default function WikiPage() {
         <div className='grid grid-cols-1 md:grid-cols-2 gap-4 text-left'>
           <div className='p-4 bg-card rounded-md border border-border shadow-sm space-y-2'>
             <div className='w-8 h-8 bg-warning-50 rounded-md flex items-center justify-center'>
-              <SCIcon icon={MagnifyingGlass} size="sm" className='text-warning' />
+              <MagnifyingGlass size={18} className='text-warning' />
             </div>
             <h3 className='font-dm-mono text-[11px] font-medium uppercase tracking-[0.15em] text-text-2'>Syllabus Mapped</h3>
             <p className='text-xs text-muted-foreground leading-relaxed'>Every article is aligned strictly with the 8 LEA root categories.</p>
@@ -33,7 +32,7 @@ export default function WikiPage() {
 
           <div className='p-4 bg-card rounded-md border border-border shadow-sm space-y-2'>
             <div className='w-8 h-8 bg-primary-50 rounded-md flex items-center justify-center'>
-              <SCIcon icon={Sparkle} size="sm" className='text-primary' />
+              <Sparkle size={18} className='text-primary' />
             </div>
             <h3 className='font-dm-mono text-[11px] font-medium uppercase tracking-[0.15em] text-text-2'>Interactive Content</h3>
             <p className='text-xs text-muted-foreground leading-relaxed'>Complex codes come alive with 2D illustrations and 3D spatial lab models.</p>
