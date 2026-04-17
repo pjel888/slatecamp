@@ -42,7 +42,6 @@ docs
 eslint.config.mjs
 middleware.ts
 next.config.ts
-package-lock.json
 package.json
 postcss.config.mjs
 public
@@ -56,7 +55,7 @@ vercel.json
 
 ## In-scope baseline areas
 
-- Root governance and runtime files: `AGENTS.md`, `README.md`, `CLAUDE.md`, `GEMINI.md`, `package.json`, `bun.lock`, `package-lock.json`, `next.config.ts`, `middleware.ts`, `tsconfig.json`, `eslint.config.mjs`, `vercel.json`, `.mcp.json`, `.opencode.json`, `.cursorrules`, `.windsurfrules`, `.gitignore`, `.gitattributes`, `DATABASE_SCHEMA.sql`, `schema.sql`, `components.json`, `db-spec.json`
+- Root governance and runtime files: `AGENTS.md`, `README.md`, `CLAUDE.md`, `GEMINI.md`, `package.json`, `bun.lock`, `next.config.ts`, `middleware.ts`, `tsconfig.json`, `eslint.config.mjs`, `vercel.json`, `.mcp.json`, `.opencode.json`, `.cursorrules`, `.windsurfrules`, `.gitignore`, `.gitattributes`, `DATABASE_SCHEMA.sql`, `schema.sql`, `components.json`, `db-spec.json`
 - Top-level directories audited as baseline system areas:
 - `.ai`
 - `.claude`

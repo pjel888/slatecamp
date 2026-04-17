@@ -49,7 +49,7 @@ Reduce package and tooling surface area where overlap or inactivity is strongly 
 2. verify/remove sanitizer overlap `DEP-01`
 3. verify/remove Tiptap internals `DEP-05`
 4. retire `SCRIPT-01` alias once no compatibility caller remains
-5. decide on `TOOL-01` and remove `package-lock.json` only after human approval
+5. retire `package-lock.json` once Bun-only workflows are confirmed and docs are updated
 6. inventory/quarantine `L5-C07` scripts rather than hard-delete them first
 
 ## Validation strategy
@@ -71,4 +71,3 @@ Reduce package and tooling surface area where overlap or inactivity is strongly 
 ## Approval points needing human decision
 - whether to fully retire npm lockfile support
 - whether to quarantine or delete manual DB helper scripts
-

@@ -48,7 +48,6 @@ docs
 eslint.config.mjs
 middleware.ts
 next.config.ts
-package-lock.json
 package.json
 postcss.config.mjs
 public

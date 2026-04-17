@@ -450,6 +450,15 @@
   - `bun run type-check` passed
   - `bun run build` passed
 
+### Follow-up: Bun-only lockfile convergence
+
+- implemented:
+  - removed `package-lock.json` after confirming active CI/workflow paths install with Bun only
+  - updated active baseline/plan/state docs that still listed the npm lockfile as part of the live root contract
+- validation:
+  - `bun run type-check` passed
+  - `bun run build` passed
+
 ### Follow-up: wiki mobile hydration convergence
 
 - implemented:
