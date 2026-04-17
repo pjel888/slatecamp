@@ -58,6 +58,7 @@ Implementation note (2026-04-17):
 - `L2-DEV-006` implemented in part (developer architecture database stats and deployment property rows now come from `src/lib/developer/architecture-data.ts` instead of inline route arrays)
 - `L2-DEV-006` implemented in part (developer architecture auth/provider rows now come from `src/lib/developer/architecture-data.ts` instead of an inline array in the route file)
 - `L2-DEV-006` implemented in part (developer architecture role-column labels and route-protection steps now come from `src/lib/developer/architecture-data.ts` instead of inline route arrays)
+- `L2-DEV-006` implemented in part (developer architecture role permissions now use one keyed `access` map in `architecture-data.ts` instead of parallel inline boolean arrays in the route)
 - `L2-DEV-006` implemented in part (developer API reference route-handler sections now come from `src/lib/developer/api-reference-data.ts` instead of six repeated inline section blocks)
 - `L2-DEV-006` implemented in part (developer API reference webhook event rows, signature notes, and shared conventions now come from `src/lib/developer/api-reference-data.ts` instead of inline route content)
 - `L2-DEV-006` implemented in part (developer payments tech-stack note now reflects the real PayRex-active / LemonSqueezy-stubbed runtime state instead of a vague SDK-stub note)

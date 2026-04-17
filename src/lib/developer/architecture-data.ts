@@ -75,15 +75,35 @@ export const databaseStats = [
   { label: 'Enums', value: '13' },
 ]
 
-export const roleMatrix = [
-  { permission: 'Manage Questions', owner: true, super_admin: true,  content_admin: true,  sme_reviewer: false },
-  { permission: 'Manage Wiki',      owner: true, super_admin: true,  content_admin: true,  sme_reviewer: false },
-  { permission: 'Review Content',   owner: true, super_admin: true,  content_admin: true,  sme_reviewer: true  },
-  { permission: 'Manage Users',     owner: true, super_admin: true,  content_admin: false, sme_reviewer: false },
-  { permission: 'View Audit Log',   owner: true, super_admin: true,  content_admin: false, sme_reviewer: false },
-]
+export const roleColumns = ['owner', 'super_admin', 'content_admin', 'sme_reviewer'] as const
 
-export const roleColumns = ['owner', 'super_admin', 'content_admin', 'sme_reviewer']
+type RoleColumn = (typeof roleColumns)[number]
+
+export const roleMatrix: Array<{
+  permission: string
+  access: Record<RoleColumn, boolean>
+}> = [
+  {
+    permission: 'Manage Questions',
+    access: { owner: true, super_admin: true, content_admin: true, sme_reviewer: false },
+  },
+  {
+    permission: 'Manage Wiki',
+    access: { owner: true, super_admin: true, content_admin: true, sme_reviewer: false },
+  },
+  {
+    permission: 'Review Content',
+    access: { owner: true, super_admin: true, content_admin: true, sme_reviewer: true },
+  },
+  {
+    permission: 'Manage Users',
+    access: { owner: true, super_admin: true, content_admin: false, sme_reviewer: false },
+  },
+  {
+    permission: 'View Audit Log',
+    access: { owner: true, super_admin: true, content_admin: false, sme_reviewer: false },
+  },
+]
 
 export const authGuards = [
   'isAdmin()',

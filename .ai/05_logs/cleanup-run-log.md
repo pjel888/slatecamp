@@ -600,6 +600,15 @@
   - `bun run type-check` passed
   - `bun run build` passed
 
+### Follow-up: developer role-matrix shape cleanup
+
+- implemented:
+  - reshaped the developer architecture role matrix in `src/lib/developer/architecture-data.ts` to use one keyed `access` map per permission row
+  - the architecture route now renders role access from `roleColumns.map(...)` instead of duplicating a parallel inline boolean array
+- validation:
+  - `bun run type-check` passed
+  - `bun run build` passed
+
 ### Follow-up: developer API reference webhook extraction
 
 - implemented:

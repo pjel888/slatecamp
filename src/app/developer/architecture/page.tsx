@@ -221,9 +221,9 @@ export default function ArchitecturePage() {
                         <td className="px-3 py-2 text-[11px] text-foreground">
                           {row.permission}
                         </td>
-                        {[row.owner, row.super_admin, row.content_admin, row.sme_reviewer].map((allowed, j) => (
-                          <td key={j} className="px-3 py-2 text-center text-[13px]">
-                            {allowed ? (
+                        {roleColumns.map((role) => (
+                          <td key={role} className="px-3 py-2 text-center text-[13px]">
+                            {row.access[role] ? (
                               <span className="text-emerald-600">●</span>
                             ) : (
                               <span className="text-muted-foreground/40">—</span>
