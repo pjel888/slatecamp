@@ -1,10 +1,14 @@
+> Historical summary
+> This file describes the first 2026-04-16 `.ai` overlay pass before the numbered-only normalization.
+> Use `current-state.md`, `findings-register.md`, and `../00_system/ai-folder-canonical-map.md` for current authority.
+
 # Organizational Upgrade Summary
 
 **Date:** 2026-04-16
 
 ## What was found
 
-- The original `.ai` workspace already contained substantial operational value across `docs`, `archive`, `skills`, `plans`, `agents`, `rules`, and `state`.
+- The original `.ai` workspace already contained substantial operational value across legacy roots such as `docs`, `archive`, `skills`, `plans`, `agents`, `rules`, and `state`.
 - Several target operating categories were missing as explicit top-level folders.
 - Audit, plan, research, prompt, and archive materials were distributed across multiple legacy locations.
 - Naming conventions varied across historical assets.
@@ -24,9 +28,9 @@
 ## What was preserved
 
 - All pre-existing `.ai` folders and files
-- Existing docs corpus under `.ai/docs/`
-- Existing archive systems under `.ai/archive/` and `.ai/docs/archive/`
-- Existing `agents`, `skills`, `rules`, `plans`, `prompts`, `state`, and `ralph` structures
+- Existing docs corpus under the former `.ai/docs/`
+- Existing archive systems under the former `.ai/archive/` and `.ai/docs/archive/`
+- Existing `agents`, `skills`, `rules`, `plans`, `prompts`, `state`, and `ralph` structures at the time
 - Existing config files `mcp.json` and `settings.json`
 
 ## What still needs manual review
@@ -38,4 +42,4 @@
 
 ## Explicit statement
 
-This was an organizational change only. No existing files were deleted.
+This summary is historical. Subsequent normalization removed the unnumbered top-level roots and rehomed their contents under numbered parents.

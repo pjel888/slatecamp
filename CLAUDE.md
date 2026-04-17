@@ -1,9 +1,9 @@
 # CLAUDE.md
 
 Code, config, schema, scripts, and the live repository tree are the source of truth in this repository.
-If `README.md`, `.ai/`, `.ai/docs/`, `AGENTS.md`, or older plans disagree with the live codebase, follow the live codebase.
+If `README.md`, `.ai/`, `.ai/06_specs/deep/`, `AGENTS.md`, or older plans disagree with the live codebase, follow the live codebase.
 
-**Reality refresh:** 2026-04-16
+**Reality refresh:** 2026-04-17
 **Intent:** This file is the high-signal, policy-heavy repository contract for AI-assisted work in SlateCamp.
 
 ---
@@ -36,14 +36,17 @@ Use documentation surfaces intentionally. They do different jobs.
 | `README.md` | Comprehensive repository entrypoint for onboarding, setup, navigation, and high-level system orientation |
 | `docs/` | Root-level bridge / pointer surface |
 | `.ai/` | Operational intelligence layer: audits, plans, tasks, roadmap, logs, state, and agent governance |
-| `.ai/docs/` | Deep reference / specification corpus |
+| `.ai/06_specs/deep/` | Deep reference / specification corpus |
 | `AGENTS.md` hierarchy | Scope-specific operating instructions for humans and AI agents |
+
+Current `.ai` routing source of truth:
+- `.ai/00_system/ai-folder-canonical-map.md`
 
 ## Policies
 1. Do not let these surfaces silently diverge.
 2. `README.md` should be comprehensive, but it must not become a mirror of all deep docs.
 3. `.ai/` is where operational truth, sequencing, and agent governance belong.
-4. `.ai/docs/` holds deeper reference and specification material.
+4. `.ai/06_specs/deep/` holds deeper reference and specification material.
 5. `AGENTS.md` files define scope-local working rules and must stay aligned with the live subtree they govern.
 6. If a topic appears in multiple surfaces, duplication must be intentional and role-based.
 7. If a doc becomes stale but historically useful, preserve it and mark it historical, transitional, or superseded.
@@ -81,7 +84,7 @@ Use documentation surfaces intentionally. They do different jobs.
 - `.ai/05_logs/`
 
 ## Deep reference truth
-- `.ai/docs/`
+- `.ai/06_specs/deep/`
 
 ## Scope-local working rules
 - root `AGENTS.md`
@@ -89,16 +92,16 @@ Use documentation surfaces intentionally. They do different jobs.
 
 ---
 
-# 4. Live architecture snapshot (audited 2026-04-16)
+# 4. Live architecture snapshot (audited 2026-04-17)
 
 These figures are time-sensitive and must be revalidated if reused later.
 
-- `src/app/`: **125** `page.tsx` files, **16** layouts, **96** loading files, **9** error files, **12** route handlers
-- `src/lib/actions/`: **146** files
+- `src/app/`: **124** `page.tsx` files, **16** layouts, **95** loading files, **9** error files, **12** route handlers
+- `src/lib/actions/`: **156** files
 - `src/components/`: **716** files
 - `src/features/`: **551** files
 - `supabase/migrations/`: **89** files
-- tracked `AGENTS.md` files: **113**
+- tracked `AGENTS.md` files: **114**
 
 ## Major active surfaces
 
@@ -255,7 +258,7 @@ If you change any of the following, update the relevant docs in the same change:
 - audit findings change
 - plans/tasks/logs/state need to reflect new reality
 
-### Update `.ai/docs/` when
+### Update `.ai/06_specs/deep/` when
 - deep architecture/product/spec/reference content changes
 
 ### Update `AGENTS.md` when
@@ -395,7 +398,7 @@ Every file there should do at least one of the following clearly:
 - `.ai/10_state/current-state.md`
 - `.ai/10_state/active-risks.md`
 - `.ai/10_state/blockers.md`
-- `.ai/02_audits/2026-04-16-full-codebase-intelligence-audit.md`
+- `.ai/02_audits/master-audit.md`
 - `.ai/01_roadmap/current-phase.md`
 - `.ai/12_agents/repo-agent-model.md`
 
@@ -414,7 +417,7 @@ over deletion of historical material.
 # 17. Current repo-level risks
 
 As of the 2026-04-16 repo intelligence refresh, major risks are:
-1. documentation drift across `README.md`, `.ai`, `.ai/docs`, and `AGENTS.md`
+1. documentation drift across `README.md`, `.ai`, `.ai/06_specs/deep`, and `AGENTS.md`
 2. large surface area making shallow audits misleading
 3. no single canonical top-level `test` script
 4. missing centralized environment contract / `.env.example`

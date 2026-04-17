@@ -10,3 +10,8 @@ This folder explains the repo-wide agent system.
 - `agent-update-plan.md`
 
 Scoped `AGENTS.md` files remain the enforcement layer.
+
+Live payload files now sit in:
+- `payloads/`
+
+This folder owns the contract and hierarchy, not every executable payload file.

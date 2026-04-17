@@ -4,9 +4,9 @@ Use this folder for implementation plans, rollout strategies, remediation plans,
 
 ## Current mapped sources
 
-- `.ai/plans/` remains the preserved source for existing plan folders.
-- `.ai/docs/00-meta/000-implementation-plan.md` is a major legacy planning document for the docs workspace.
-- `.ai/archive/IMPLEMENTED/` and `.ai/archive/SUPERSEDED/` contain preserved historical plan outputs.
+- `preserved/` remains the preserved source for older plan folders and superseded plan sets.
+- `.ai/06_specs/deep/00-meta/000-implementation-plan.md` is a major legacy planning document for the deep docs workspace.
+- `.ai/09_archive/store/IMPLEMENTED/` and `.ai/09_archive/store/SUPERSEDED/` contain preserved historical plan outputs.
 
 ## Intent
 

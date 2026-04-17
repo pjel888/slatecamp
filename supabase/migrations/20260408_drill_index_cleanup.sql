@@ -1,5 +1,5 @@
 -- Drill feature: index cleanup and additions
--- See: .ai/plans/drill-optimization-implementation-plan-2026-04-08.md Section 03
+-- See: .ai/09_archive/store/IMPLEMENTED/2026-04-08_DONE_drill-optimization-implementation.md Section 03
 
 -- DB-02: Remove duplicate unique indexes on user_interactions
 -- Keep idx_user_interactions_unique as the canonical index

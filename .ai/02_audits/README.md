@@ -6,11 +6,12 @@ Use this folder for full-repository audits, subsystem audits, architecture audit
 
 Audits already exist across the preserved workspace, especially in:
 
-- `.ai/plans/`
-- `.ai/archive/IMPLEMENTED/`
-- `.ai/archive/RESEARCH/`
-- `.ai/docs/archive/legacy/`
-- `.ai/docs/archive/agent-archives/sisyphus/implemented-audits/`
+- `.ai/03_plans/preserved/`
+- `.ai/09_archive/store/IMPLEMENTED/`
+- `.ai/09_archive/store/RESEARCH/`
+- `.ai/06_specs/deep/archive/legacy/`
+- `.ai/06_specs/deep/archive/agent-archives/sisyphus/implemented-audits/`
+- `.ai/09_archive/store/2026-04-16-repo-intelligence-pass/audits/`
 
 ## Intent
 

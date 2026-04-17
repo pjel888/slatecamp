@@ -10,7 +10,13 @@ It is not a thin landing page or quiz demo. The repository includes:
 - wiki, notes, analytics, testing modes, calculators, and 3D learning modules
 - Supabase-backed schema, migrations, and operational scripts
 
-This README is the **repository entrypoint**. Keep it aligned with `CLAUDE.md` (policy-heavy repo contract), root `AGENTS.md` (repo-wide operating instructions), `.ai/` (operational intelligence), and `.ai/docs/` (deep reference docs).
+This README is the **repository entrypoint**. Keep it aligned with `CLAUDE.md` (policy-heavy repo contract), root `AGENTS.md` (repo-wide operating instructions), `.ai/` (operational intelligence), and `.ai/06_specs/deep/` (deep reference docs).
+
+Current audit/planning entrypoints:
+- `.ai/02_audits/master-audit.md`
+- `.ai/00_system/repo-map.md`
+- `.ai/00_system/ai-folder-canonical-map.md`
+- `.ai/03_plans/executive-remediation-roadmap.md`
 
 ---
 
@@ -123,20 +129,28 @@ This README is the **repository entrypoint**. Keep it aligned with `CLAUDE.md` (
 
 Recommended starting points:
 - `.ai/10_state/current-state.md`
-- `.ai/02_audits/2026-04-16-full-codebase-intelligence-audit.md`
+- `.ai/02_audits/master-audit.md`
+- `.ai/00_system/repo-map.md`
+- `.ai/00_system/ai-folder-canonical-map.md`
 - `.ai/01_roadmap/current-phase.md`
 - `.ai/12_agents/repo-agent-model.md`
 
-### Use `.ai/docs/` for
+### Use `.ai/06_specs/deep/` for
 - deep reference and specification material
 - architecture docs
 - portal docs
 - product and docs history
 
+### Use current audit/planning artifacts for
+- the 2026-04-17 repository audit trail
+- prioritized findings and readiness assessment
+- `.ai` rationalization decisions
+- implementation sequencing for a later approved remediation run
+
 Recommended starting points:
-- `.ai/docs/00-meta/001-index.md`
-- `.ai/docs/02-architecture/001-system-architecture.md`
-- `.ai/docs/portal/000-portal-guide.md`
+- `.ai/06_specs/deep/00-meta/001-index.md`
+- `.ai/06_specs/deep/02-architecture/001-system-architecture.md`
+- `.ai/06_specs/deep/portal/000-portal-guide.md`
 
 ### Use `AGENTS.md` files for
 - scope-specific instructions when editing a subtree
@@ -365,31 +379,32 @@ This repository uses a deep `AGENTS.md` hierarchy.
 ### If you need the current repo state
 - `.ai/10_state/current-state.md`
 - `.ai/10_state/active-risks.md`
-- `.ai/02_audits/2026-04-16-full-codebase-intelligence-audit.md`
+- `.ai/02_audits/master-audit.md`
 
 ### If you need deep architecture docs
-- `.ai/docs/02-architecture/001-system-architecture.md`
-- `.ai/docs/02-architecture/002-portal-breakdown.md`
-- `.ai/docs/02-architecture/003-database-schema.md`
+- `.ai/06_specs/deep/02-architecture/001-system-architecture.md`
+- `.ai/06_specs/deep/02-architecture/002-portal-breakdown.md`
+- `.ai/06_specs/deep/02-architecture/003-database-schema.md`
 
 ### If you need portal docs
-- `.ai/docs/portal/000-portal-guide.md`
-- `.ai/docs/portal/dashboard/001-overview.md`
-- `.ai/docs/portal/admin/001-knowledge-hub.md`
-- `.ai/docs/portal/developer/001-design-system.md`
+- `.ai/06_specs/deep/portal/000-portal-guide.md`
+- `.ai/06_specs/deep/portal/dashboard/001-overview.md`
+- `.ai/06_specs/deep/portal/admin/001-knowledge-hub.md`
+- `.ai/06_specs/deep/portal/developer/001-design-system.md`
 
 ### If you need operational plans/tasks
-- `.ai/03_plans/2026-04-16-repo-intelligence-refresh-plan.md`
-- `.ai/04_tasks/2026-04-16-repo-intelligence-follow-ups.md`
+- `.ai/03_plans/implementation-plan.md`
+- `.ai/03_plans/readiness-plan.md`
+- `.ai/02_audits/2026-04-17-ai-file-lifecycle-audit.md`
 
 ---
 
 ## 13. Known documentation boundaries
 
 To avoid future drift:
-- keep `README.md` comprehensive but not a full mirror of `.ai/docs`
+- keep `README.md` comprehensive but not a full mirror of `.ai/06_specs/deep`
 - keep `.ai` focused on operational truth, planning, logs, and audit outputs
-- keep `.ai/docs` as the deeper reference/spec surface
+- keep `.ai/06_specs/deep` as the deeper reference/spec surface
 - keep historical material preserved unless explicitly superseded
 
 ---
@@ -400,6 +415,6 @@ When you change the repo structure or a major subsystem, update the relevant sur
 - `README.md` if onboarding or structure changes
 - `.ai/` state/roadmap/audits if operational truth changes
 - nearest `AGENTS.md` files for subtree instructions
-- `.ai/docs/` only when deeper reference/spec content also needs to change
+- `.ai/06_specs/deep/` only when deeper reference/spec content also needs to change
 
 This repository is large enough that **stale instructions are an engineering risk**. Treat documentation maintenance as part of the implementation work, not cleanup for later.

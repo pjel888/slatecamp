@@ -1,21 +1,22 @@
 # 08_prompts
 
-This folder now has **two layers**:
+This folder now has **three layers**:
 
 1. **Original prompt pack** — numbered/specialist prompts used for the 2026-04-16 repo-intelligence initiative
 2. **Normalized prompt library** — stable filenames for recurring audit, validation, roadmap, state, architecture, UX, performance, and AGENTS-governance work
+3. **Legacy prompt artifacts** — preserved materials migrated out of the old `.ai/prompts/` entrypoint
 
 ## Original prompt pack
-- `01. Master Orchestrator Prompt.md`
-- `02. Specialist Agent Prompt: Architecture and System Boundaries.md`
-- `03. Specialist Agent Prompt: Route, Feature, and Product Surface Inventory.md`
-- `05. Specialist Agent Prompt: Performance, Loading, and Responsiveness.md`
-- `06. Specialist Agent Prompt: Data Layer, Backend, Schema, and Flow Integrity.md`
-- `07. Specialist Agent Prompt: State Management, Client.md`
-- `08. Specialist Agent Prompt: Documentation, Roadmap, and .ai Reconciliation.md`
-- `09. Specialist Agent Prompt: AGENTS.md Governance and Hierarchy.md`
-- `10. Specialist Agent Prompt: Repo-Wide Prompt System Upgrade.md`
-- `UX Consistency and Design System Audit.md`
+- `master-orchestrator-prompt.md`
+- `architecture-and-system-boundaries-prompt.md`
+- `route-feature-and-product-surface-inventory-prompt.md`
+- `performance-loading-and-responsiveness-prompt.md`
+- `data-layer-backend-schema-and-flow-integrity-prompt.md`
+- `state-management-client-prompt.md`
+- `documentation-roadmap-and-ai-reconciliation-prompt.md`
+- `agents-governance-and-hierarchy-prompt.md`
+- `repo-wide-prompt-system-upgrade-prompt.md`
+- `ux-consistency-and-design-system-audit.md`
 
 ## Stable prompt-library files
 - `master-audit-prompt.md`
@@ -28,3 +29,10 @@ This folder now has **two layers**:
 - `performance-audit-prompt.md`
 - `roadmap-refresh-prompt.md`
 - `prompt-system-guide.md`
+
+## Legacy prompt artifacts
+- `legacy/`
+
+Rule:
+- active prompts belong in `08_prompts/`
+- `.ai/prompts/` is now a shim only

@@ -1,6 +1,8 @@
 # 06_specs
 
-Use this folder for stable operational specs that summarize live code reality.
+Use this folder for:
+- stable operational specs that summarize live code reality
+- the deep reference corpus under `deep/`
 
 ## Current stable specs
 - `documentation-surface-map.md`
@@ -12,4 +14,4 @@ Use this folder for stable operational specs that summarize live code reality.
 - `frontend-execution-model.md`
 - `client-server-boundary-rules.md`
 
-Deep product/reference docs still live under `.ai/docs/`.
+Deep product/reference docs now live under `deep/`.

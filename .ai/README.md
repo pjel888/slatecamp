@@ -14,17 +14,20 @@ It is where the repository keeps:
 
 ## Current role in the repository
 
-As of **2026-04-16**, the repo uses four documentation surfaces with different jobs:
+As of **2026-04-17**, the repo uses four documentation surfaces with different jobs:
 
 | Surface | Job |
 | --- | --- |
 | `README.md` | Comprehensive repo entrypoint for onboarding, setup, repo structure, and navigation |
 | `docs/` | Root-level bridge/pointer surface |
 | `.ai/` | Operational brain: audits, plans, state, tasks, governance, agent guidance |
-| `.ai/docs/` | Deep reference/specification corpus |
+| `.ai/06_specs/deep/` | Deep reference/specification corpus |
 
 Do not treat these as duplicates.
 They have different responsibilities.
+
+Current `.ai` routing source of truth:
+- `.ai/00_system/ai-folder-canonical-map.md`
 
 ## How to use `.ai`
 
@@ -35,8 +38,9 @@ They have different responsibilities.
 - `.ai/01_roadmap/milestone-tracker.md`
 
 ### Start here when you need repo-wide findings
-- `.ai/02_audits/2026-04-16-full-codebase-intelligence-audit.md`
-- `.ai/02_audits/2026-04-16-agents-layer-audit.md`
+- `.ai/02_audits/master-audit.md`
+- `.ai/00_system/repo-map.md`
+- `.ai/00_system/ai-folder-canonical-map.md`
 
 ### Start here when you need governance
 - `.ai/00_system/principles.md`
@@ -45,9 +49,9 @@ They have different responsibilities.
 - `.ai/00_system/audit-standards.md`
 
 ### Start here when you need deep product/reference docs
-- `.ai/docs/00-meta/001-index.md`
-- `.ai/docs/02-architecture/001-system-architecture.md`
-- `.ai/docs/portal/000-portal-guide.md`
+- `.ai/06_specs/deep/00-meta/001-index.md`
+- `.ai/06_specs/deep/02-architecture/001-system-architecture.md`
+- `.ai/06_specs/deep/portal/000-portal-guide.md`
 
 ## Numbered operational taxonomy
 
@@ -60,7 +64,7 @@ They have different responsibilities.
 | `03_plans/` | Execution plans, remediation plans, documentation architecture decisions |
 | `04_tasks/` | Actionable follow-ups and work packets |
 | `05_logs/` | Update logs, validation logs, decision/change logs |
-| `06_specs/` | Specification bridge area when operational specs are needed outside `.ai/docs` |
+| `06_specs/` | Specification bridge area when operational specs are needed outside `.ai/06_specs/deep` |
 | `07_experiments/` | Experimental findings and prototype notes |
 | `08_prompts/` | Reusable prompts for audits, planning, validation, and agent work |
 | `09_archive/` | Archive policy and preserved historical references |
@@ -71,29 +75,31 @@ They have different responsibilities.
 
 ## Preserved legacy/source surfaces
 
-The repo still preserves older or parallel `.ai` surfaces where they remain useful:
-- `agents/`
-- `archive/`
-- `docs/`
-- `logs/`
-- `plans/`
-- `prompts/`
-- `ralph/`
-- `rules/`
-- `skills/`
-- `state/`
+The top-level `.ai` tree is now numbered-only.
 
-These are not junk by default.
-Preserve them unless there is an explicit, traceable supersession path.
+Preserved legacy material still exists, but under numbered parents:
+- `03_plans/preserved/`
+- `05_logs/legacy-*`
+- `06_specs/deep/`
+- `08_prompts/legacy/`
+- `09_archive/store/`
+- `10_state/legacy-*`
+- `11_skills/payloads/`
+- `12_agents/payloads/`
+
+Use the canonical map before deciding where new docs belong:
+- `.ai/00_system/ai-folder-canonical-map.md`
 
 ## Rules for humans and coding agents
 
 1. **Audit before edit** — do not update state, roadmap, or AGENTS files from assumption.
 2. **Prefer additive updates** — create bridge notes, audits, plans, and supersession logs instead of destructive cleanup.
-3. **Keep canonical ownership clear** — README is the entrypoint; `.ai` is operations; `.ai/docs` is deep reference.
+3. **Keep canonical ownership clear** — README is the entrypoint; `.ai` is operations; `.ai/06_specs/deep` is deep reference.
 4. **Date time-sensitive claims** — counts, validation results, and status notes must be dated or omitted.
 5. **Preserve history** — when something becomes outdated, mark it historical, transitional, or superseded rather than silently erasing it.
 6. **Update `AGENTS.md` with structure changes** — local subtree guidance is part of the operational brain.
+7. **Do not recurse on generated audit artifacts** — audits, plans, logs, and indexes created in one run do not become new audit baseline by default.
+8. **Remediation is a separate lane** — audit/planning runs document and plan; implementation requires a later approved run.
 
 ## Relationship to `AGENTS.md`
 

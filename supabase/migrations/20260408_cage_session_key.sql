@@ -1,5 +1,5 @@
 -- CAGE: Store session key server-side for HMAC verification
--- See: .ai/plans/cage-session-key-storage-proposal-2026-04-08.md
+-- See: .ai/09_archive/store/RESEARCH/2026-04-08_RESEARCH_cage-session-key-storage-proposal.md
 
 ALTER TABLE quiz_sessions
 ADD COLUMN IF NOT EXISTS cage_session_key TEXT;

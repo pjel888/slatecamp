@@ -1,0 +1,358 @@
+# Documentation Index
+
+**Status:** Current file inventory, historical-meta-sensitive
+**Last Updated:** 2026-04-17
+**Scope:** Current file inventory for `.ai/06_specs/deep/`
+**Note:** Use this index for current file reality. Historical planning intent in `00-meta/000-implementation-plan.md` should be treated as reference, not sole truth.
+
+## Canonical role of `06_specs/deep`
+- Deep reference/specification corpus for architecture, product, design, development, reference, and portal documentation
+- Not a replacement for root `README.md` (entrypoint) or `.ai/` operational state/roadmap/audit layers
+- Archive material under `archive/` remains preserved historical context
+
+## 00-meta
+
+- `00-meta/000-implementation-plan.md` — Historical reference
+- `00-meta/001-index.md` — Active
+- `00-meta/002-changelog.md` — Historical reference
+- `00-meta/prd-legacy.md` — Historical reference
+- `00-meta/tasks-completed/01-setup-structure.md` — Active
+- `00-meta/tasks-completed/02-archive-legacy.md` — Active
+- `00-meta/tasks-completed/03-write-meta-docs.md` — Active
+- `00-meta/tasks-completed/04-write-architecture-docs.md` — Active
+- `00-meta/tasks-completed/05-write-design-docs.md` — Active
+- `00-meta/tasks-completed/06-write-development-docs.md` — Active
+- `00-meta/tasks-completed/07-write-product-docs.md` — Active
+- `00-meta/tasks-completed/08-write-portal-docs.md` — Active
+
+## 01-product
+
+- `01-product/001-features.md` — Active
+- `01-product/002-drill-feature-specification.md` — Active
+- `01-product/003-readiness-score.md` — Active
+- `01-product/004-wiki-feature-specification.md` — Active
+- `01-product/005-notes.md` — Active
+- `01-product/006-analytics-feature-specifications.md` — Active
+- `01-product/007-camp-trails.md` — Active
+- `01-product/008-3d-lab-feature-specification.md` — Active
+- `01-product/009-admin-feature-specification.md` — Active
+- `01-product/010-Feature-Gate-And-Developer-Feature-Specification.md` — Active
+- `01-product/011-Error-Logging-Feature-Specification.md` — Active
+
+## 02-architecture
+
+- `02-architecture/001-system-architecture.md` — Active
+- `02-architecture/002-portal-breakdown.md` — Active
+- `02-architecture/003-database-schema.md` — Active
+- `02-architecture/004-api-reference.md` — Active
+
+## 03-design
+
+- `03-design/001-design-system.md` — Active
+- `03-design/002-copy-guide.md` — Active
+- `03-design/003-component-library.md` — Active
+
+## 04-development
+
+- `04-development/001-getting-started.md` — Active
+- `04-development/002-tech-stack.md` — Active
+- `04-development/003-scripts-reference.md` — Active
+- `04-development/004-coding-standards.md` — Active
+- `04-development/005-testing-guide.md` — Active
+- `04-development/006-deployment.md` — Active
+
+## 05-reference
+
+- `05-reference/001-rls-patterns.md` — Active
+- `05-reference/002-glossary.md` — Active
+- `05-reference/003-environment-vars.md` — Active
+
+## archive
+
+- `archive/agent-archives/design-system-legacy/README.md` — Archive
+- `archive/agent-archives/sisyphus/architecture-reference.md` — Archive
+- `archive/agent-archives/sisyphus/component_organization_plan.md` — Archive
+- `archive/agent-archives/sisyphus/implementation-status.md` — Archive
+- `archive/agent-archives/sisyphus/implemented-audits/admin-developer-audit.md` — Archive
+- `archive/agent-archives/sisyphus/implemented-audits/data_caching_audit.md` — Archive
+- `archive/agent-archives/sisyphus/implemented-audits/frontend_architecture_audit.md` — Archive
+- `archive/agent-archives/sisyphus/implemented-audits/global_state_audit.md` — Archive
+- `archive/agent-archives/sisyphus/implemented-audits/quiz-testing-audit.md` — Archive
+- `archive/agent-archives/sisyphus/implemented-audits/tailwind_styling_audit.md` — Archive
+- `archive/agent-archives/sisyphus/implemented-audits/testing-wiki-audit.md` — Archive
+- `archive/agent-archives/sisyphus/implemented-audits/ui_consolidation_audit.md` — Archive
+- `archive/agent-archives/sisyphus/implemented-audits/webgl_3d_audit.md` — Archive
+- `archive/agent-archives/sisyphus/implemented-audits/wiki-audit.md` — Archive
+- `archive/agent-archives/sisyphus/implemented-plans/design-system-cleanup-plan.md` — Archive
+- `archive/agent-archives/sisyphus/implemented-plans/performance-audit-plan.md` — Archive
+- `archive/agent-archives/sisyphus/implemented-plans/system-architecture-plan.md` — Archive
+- `archive/agent-archives/sisyphus/notepads/performance-audit/decisions.md` — Archive
+- `archive/agent-archives/sisyphus/notepads/performance-audit/learnings.md` — Archive
+- `archive/agent-archives/sisyphus/notepads/performance-audit/problems.md` — Archive
+- `archive/agent-archives/sisyphus/notepads/system-architecture/data-model.md` — Archive
+- `archive/agent-archives/sisyphus/notepads/system-architecture/pending-features.md` — Archive
+- `archive/agent-archives/sisyphus/notepads/system-architecture/routing-portals.md` — Archive
+- `archive/agent-archives/sisyphus/notepads/system-architecture/state-management.md` — Archive
+- `archive/agent-archives/sisyphus/notepads/system-architecture/system-overview.md` — Archive
+- `archive/agent-archives/sisyphus/plan-reconciliation-checklist.md` — Archive
+- `archive/agent-archives/sisyphus/project-status.md` — Archive
+- `archive/agent-archives/sisyphus/proposals/dev-mode-crawler-auth-strategy.md` — Archive
+- `archive/legacy/01-Discovery/01 — Discovery.md` — Archive
+- `archive/legacy/02-Frameworks/02 — Frameworks.md` — Archive
+- `archive/legacy/03-PRDs/03 — PRDs-Testing & Specification Document.md` — Archive
+- `archive/legacy/03-PRDs/03 — PRDs.md` — Archive
+- `archive/legacy/04-Architecture/04 — Architecture.md` — Archive
+- `archive/legacy/06-Development/06 — Development.md` — Archive
+- `archive/legacy/07-Tests/07 — Tests.md` — Archive
+- `archive/legacy/08-Feedback/08 — Feedback.md` — Archive
+- `archive/legacy/09-Analytics/09 — Analytics.md` — Archive
+- `archive/legacy/10-Marketing/10 — Marketing.md` — Archive
+- `archive/legacy/GLOBAL-CODEBASE-AUDIT-REPORT.md` — Archive
+- `archive/legacy/design-system.md` — Archive
+- `archive/legacy/ip-execution-plan/IP_EXECUTION_PLAN.md` — Archive
+- `archive/legacy/platform-overview.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/00-global-audits/2026-03-24_full-codebase-audit-prompt.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/00-global-audits/2026-03-25_slatecamp-ui-modularization-implementation-plan.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/00-global-audits/2026-03-25_ui-audit-consolidation-strategy.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/00-global-audits/2026-03-25_ui-consolidation-implementation-plan.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/00-global-audits/2026-03-25_ui-implementation-plan.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/00-global-audits/2026-03-25_ultimate-codebase-audit-prompt.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/00-global-audits/2026-03-25_v002_slatecamp-global-ui-audit-prompt.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/01-3d-lab/2026-03-17_v1_ale-concepts-for-3d-lab.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/01-3d-lab/2026-03-17_v2_3d-lab-library-build.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/01-3d-lab/2026-03-19_v4_3d-integration-analysis.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/01-3d-lab/2026-03-19_v5_3d-lab-implementation.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/01-3d-lab/2026-03-31_pd1096-rules-7-8-implementation-plan.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/01-3d-lab/2026-03-31_pd1096-ux-implementation-plan.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/01-3d-lab/2026-03-31_slatecamp-3d-lab-ux-implementation-plan.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/01-3d-lab/calculator-suite/3d-calculator-business-strategy.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/01-3d-lab/calculator-suite/3d-calculator-suite-final.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/01-3d-lab/calculator-suite/UX Implementation Plan with Content Mapping.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/01-3d-lab/calculator-suite/formulas.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/01-3d-lab/calculator-suite/phase1-3d-canvas-spec.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/01-3d-lab/calculator-suite/phase1-audit-and-componentization-plan.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/01-3d-lab/calculator-suite/phase1-ux-ui-implementation-plan.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/01-3d-lab/pd1096-rule7-8/3D Development Controls Lab — Missing Information & Required Documents Dossier.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/01-3d-lab/pd1096-rule7-8/FLAR FAR and BHL Interconnectivity in Philippine Building Law.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/01-3d-lab/pd1096-rule7-8/PD 1096 Rules VII & VIII — 3D Development Controls Lab.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/01-3d-lab/pd1096-rule7-8/PD 1096 Rules VII & VIII — 3D_DevControls_Lab_FIP.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/01-3d-lab/pd1096-rule7-8/PD 1096 Rules VII & VIII — Complete Technical Reference.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/01-3d-lab/pd1096-rule7-8/PD 1096 Rules VII & VIII — UX Implementation Plan.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/01-3d-lab/pd1096-rule7-8/SlateCamp 3D Dev Controls Lab — Procurement Dossier.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/01-3d-lab/pd1096-rule7-8/SlateCamp_3D_DevControls_Lab_Master_Implementation_Plan.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/01-3d-lab/pd1096-rule7-8/SlateCamp_3D_Lab_Implementation_Prompt.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/01-3d-lab/pd1096-rule7-8/SlateCamp_3D_Lab_UX_UI_Research_and_Implementation_Plan.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/01-3d-lab/pd1096-rule7-8/SlateCamp_DevControls_Master_Unification_Plan.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/01-3d-lab/pd1096-rule7-8/custom-polygon-lot-plotting-implementation-plan.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/01-3d-lab/pd1096-rule7-8/lot-plotting-ux-ui-guide.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/01-3d-lab/stairs-improvement/Stairs (1).md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/01-3d-lab/stairs-improvement/Stairs (2).md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/01-3d-lab/stairs-improvement/Stairs (3).md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/01-3d-lab/stairs-improvement/Stairs (4).md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/01-3d-lab/stairs-improvement/Stairs (5).md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/01-3d-lab/stairs-improvement/staircode-ph-ux-report.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/01-3d-lab/tools-hub/3d-tools-hub-prompt.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/01-3d-lab/ux-ui-spec/The 3D Learning Path From First Pixel to Lasting Spatial Memory.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/01-3d-lab/ux-ui-spec/slatecamp-3dlab-implementation-plan-v2.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/02-brand-design/2026-03-17_v1_design-system-final.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/02-brand-design/2026-03-17_v2_design-system-app-implementation.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/02-brand-design/2026-03-17_v3_dashboard-audit-and-fix.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/02-brand-design/2026-03-17_v4_fix-numbers-font.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/02-brand-design/2026-03-18_v5_landing-motion-pass.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/03-database-schema/2026-03-19_v10_sync-database-schema-file.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/03-database-schema/2026-03-19_v1_schema-gap-analysis.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/03-database-schema/2026-03-19_v2_schema-gap-implementation.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/03-database-schema/2026-03-19_v3_d2-d3-d4-schema-phases.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/03-database-schema/2026-03-19_v4_schema-marketing-analytics-migration.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/03-database-schema/2026-03-19_v5_database-hardening-audit-fixes.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/03-database-schema/2026-03-19_v6_open-schema-issues-implementation.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/03-database-schema/2026-03-19_v7_schema-security-hotfix.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/03-database-schema/2026-03-19_v8_schema-verification-and-regeneration.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/03-database-schema/2026-03-19_v9_db-audit-v3.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/03-database-schema/2026-03-30_article-submission-architecture.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/03-database-schema/2026-04-02_supabase-schema.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/04-frontend-ux/2026-03-18_v1_viewport-locked-layout-refactor.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/04-frontend-ux/2026-03-19_v2_dashboard-mastery-section.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/04-frontend-ux/2026-03-19_v3_testing-ux-overhaul.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/04-frontend-ux/2026-03-19_v5_ux-strategy-implementation.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/04-frontend-ux/2026-03-19_v6_nextjs-refactor.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/04-frontend-ux/2026-03-25_slatecamp-unified-shell-prompt.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/04-frontend-ux/2026-03-30_dashboard-sidebar.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/04-frontend-ux/2026-04-01_ux-research-sidebar-controls.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/04-frontend-ux/ceo-dashboard/CEO-DASHBOARD-UX-RESEARCH.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/04-frontend-ux/ceo-dashboard/ceo-dashboard-master-prompt.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/04-frontend-ux/ceo-dashboard/slatecamp-business-profitability-implementation-plan.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/04-frontend-ux/ceo-dashboard/slatecamp-ceo-dashboard-db-implementation-plan.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/04-frontend-ux/component-library/COMPONENT-LIBRARY-BUILD.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/04-frontend-ux/component-library/COMPONENT-LIBRARY-SPEC.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/04-frontend-ux/sidebar/SLATECAMP-SIDEBAR-UX-RESEARCH.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/04-frontend-ux/sidebar/sidebar-overhaul-plan.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/04-frontend-ux/wall-configurator/Unified Wall Configurator Logic.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/04-frontend-ux/wall-configurator/unified-wall-configurator-implementation-plan.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/04-frontend-ux/wall-configurator/unified-wall-configurator.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/04-frontend-ux/wall-configurator/ux-ui-strategy-wall-configurator.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/04-frontend-ux/web-components/slatecamp-bp344-web-components.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/04-frontend-ux/web-components/slatecamp-web-components-implementation.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/05-feature-implementation/2026-03-19_v2_feature-plan-reconciliation.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/05-feature-implementation/2026-03-19_v3_master-implementation-plan.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/05-feature-implementation/2026-03-19_v4_product-architecture-v2.1.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/05-feature-implementation/2026-03-19_v5_application-layer-implementation.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/05-feature-implementation/2026-03-19_v6_readiness-score-db-brief.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/05-feature-implementation/2026-03-19_v7_readiness-score-implementation-plan.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/05-feature-implementation/2026-03-19_v8_wiki-embedded-interactives-plan.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/05-feature-implementation/2026-03-31_delete-article.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/05-feature-implementation/critical-features/FOUR-FEATURES-UX-RESEARCH.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/05-feature-implementation/critical-features/slatecamp-implementation-plan.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/05-feature-implementation/notifications/notifications-header-implementation-plan.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/05-feature-implementation/notifications/notifications-ux-design.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/05-feature-implementation/pre-sprint-roadmap/01-DATABASE-SCHEMA-REFERENCE.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/05-feature-implementation/pre-sprint-roadmap/02-SERVER-ACTIONS-QUERY-INVENTORY.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/05-feature-implementation/pre-sprint-roadmap/03-ENVIRONMENT-SERVICES-MAP.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/05-feature-implementation/pre-sprint-roadmap/04-RLS-POLICY-PATTERNS.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/05-feature-implementation/pre-sprint-roadmap/05-FEATURE-FLAG-ROLLOUT-STRATEGY.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/05-feature-implementation/pre-sprint-roadmap/06-MIGRATION-RUNBOOK.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/05-feature-implementation/pre-sprint-roadmap/07-TESTING-STRATEGY.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/05-feature-implementation/pre-sprint-roadmap/08-COPY-CONTENT-SOURCE-OF-TRUTH.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/05-feature-implementation/pre-sprint-roadmap/09-COMPONENT-ARCHITECTURE-MAP.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/05-feature-implementation/pre-sprint-roadmap/README.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/05-feature-implementation/pre-sprint-roadmap/SLATECAMP-PRODUCT-ROADMAP.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/05-feature-implementation/pre-sprint-roadmap/SLATECAMP-UNIMPLEMENTED-FEATURES-ANALYSIS.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/05-feature-implementation/pre-sprint-roadmap/slatecamp-five-critical-features.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/05-feature-implementation/unified-implementation/000-SLATECAMP-UNIFIED-MASTER-IMPLEMENTATION-PLAN.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/05-feature-implementation/unified-implementation/LEAN-TECH-CLEANUP-ROADMAP.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/05-feature-implementation/unified-implementation/MASTER-UX-UI-IMPLEMENTATION-PLAN.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/05-feature-implementation/unified-implementation/PERFORMANCE-IMPLEMENTATION-ROADMAP.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/05-feature-implementation/unified-implementation/PRODUCT-ARCHITECTURE-IMPLEMENTATION-PLAN.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/05-feature-implementation/unified-implementation/SLATECAMP-PRE-LAUNCH-STRATEGY.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/05-feature-implementation/unified-implementation/prompts/IMPROVED-PRODUCT-ARCHITECTURE-PROMPT.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/05-feature-implementation/unified-implementation/prompts/MASTER-UX-IMPLEMENTATION-PROMPT-v2.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/05-feature-implementation/unified-implementation/prompts/SLATECAMP-LEAN-CLEANUP-PROMPT.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/05-feature-implementation/unified-implementation/prompts/SLATECAMP-PERFORMANCE-PROMPT-V2.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/05-feature-implementation/unified-implementation/prompts/SLATECAMP-PRE-LAUNCH-STRATEGY-PROMPT.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/06-taxonomy/2026-03-19_v2_taxonomy-dedup-fix.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/06-taxonomy/2026-03-19_v3_taxonomy-v50-implementation-plan.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/06-taxonomy/2026-03-20_taxonomy-expansion/RUN_TAXONOMY_MIGRATIONS.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/06-taxonomy/2026-03-30_taxonomy-tree.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/07-devex-infrastructure/2026-03-17_v1_developer-experience.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/07-devex-infrastructure/2026-03-19_v2_data-infrastructure-implementation.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/07-devex-infrastructure/cleanup/SLATECAMP_CLEANUP_PLAN.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/07-devex-infrastructure/cleanup/slatecamp-codebase-health-audit-prompt.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/07-devex-infrastructure/developer-portal/CODEBASE-AUDIT-2026-03-24.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/07-devex-infrastructure/developer-portal/DEVELOPER-HUB-IMPLEMENTATION-PLAN.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/07-devex-infrastructure/developer-portal/DEVELOPER-PORTAL-BUILD.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/07-devex-infrastructure/developer-portal/DEVELOPER-PORTAL-PROMPT.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/07-devex-infrastructure/developer-portal/DeveloperHub UX.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/07-devex-infrastructure/developer-portal/developer-hub-master-prompt.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/07-devex-infrastructure/modularization/Modular React Design Systems & Reusable Component Libraries.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/07-devex-infrastructure/modularization/design-system-research.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/07-devex-infrastructure/modularization/nextjs-modular-react-design-system-research.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/07-devex-infrastructure/production-ready/EXTENDED-PRODUCTION-DOCUMENTS.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/07-devex-infrastructure/production-ready/PRODUCTION-DOCUMENT-CHECKLIST.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/07-devex-infrastructure/production-ready/ZERO-TO-PRODUCTION-PROMPT.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/07-devex-infrastructure/testing-system/TESTING-REVIEW-UX-IMPLEMENTATION-PLAN.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/07-devex-infrastructure/testing-system/slatecamp-review-testing-system.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/08-content-learning/2026-03-19_v1_learning-science-integrations.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/08-content-learning/2026-03-30_article-question-connection.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/08-content-learning/2026-03-31_article-review-sessions.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/08-content-learning/2026-03-31_overview-add-questions.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/08-content-learning/2026-03-31_quiz-session-history.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/08-content-learning/2026-04-02_distractor-expansion-prompt.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/08-content-learning/content-updates/bp344/doors-corridors-washrooms-bp344-v5.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/08-content-learning/content-updates/bp344/doors-corridors-washrooms-bp344-v6.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/08-content-learning/metacognitive-calibration/IMPL_01_PREDICTION_PROMPTS.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/08-content-learning/metacognitive-calibration/IMPL_02_CONFIDENCE_SCORING.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/08-content-learning/metacognitive-calibration/IMPL_03_CALIBRATION_SCORE.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/08-content-learning/metacognitive-calibration/IMPL_04_PREQUESTIONS_WIKI.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/08-content-learning/metacognitive-calibration/IMPL_05_SUCCESSIVE_RELEARNING.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/08-content-learning/metacognitive-calibration/IMPL_06_INTERLEAVED_MIXING.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/08-content-learning/metacognitive-calibration/IMPL_07_GENERATION_QUESTIONS.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/08-content-learning/metacognitive-calibration/IMPL_08_PROGRESSIVE_PRESSURE.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/08-content-learning/metacognitive-calibration/IMPL_09_WRONG_ANSWER_TAXONOMY.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/08-content-learning/metacognitive-calibration/IMPL_10_FEED_FORWARD_ENGINE.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/08-content-learning/metacognitive-calibration/IMPL_11_PERSONALIZED_FORGETTING.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/08-content-learning/metacognitive-calibration/IMPL_12_MEMORY_STRENGTH_MODEL.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/08-content-learning/metacognitive-calibration/IMPL_13_ADAPTIVE_DAILY_DOSE.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/08-content-learning/metacognitive-calibration/IMPL_14_PROGRESS_PROOF_SYSTEM.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/08-content-learning/metacognitive-calibration/IMPL_15_SOCRATIC_ERROR_EXPLORATION.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/08-content-learning/metacognitive-calibration/IMPL_16_3D_LAB_LEARNING_LOOP.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/08-content-learning/metacognitive-calibration/IMPL_17_STUDENT_VISUALIZATIONS.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/08-content-learning/metacognitive-calibration/IMPL_18_COMMERCIAL_VISUALIZATIONS.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/08-content-learning/metacognitive-calibration/IMPL_19_SCHEMA_MIGRATIONS.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/08-content-learning/metacognitive-calibration/IMPL_20_IMPLEMENTATION_SEQUENCE.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/08-content-learning/metacognitive-calibration/SLATECAMP_WIN_FEATURES.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/08-content-learning/quizzing/03-data-schema-api-contract.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/08-content-learning/quizzing/04-question-content-taxonomy.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/08-content-learning/quizzing/05-mastery-engine-scoring.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/08-content-learning/quizzing/06-component-architecture-state.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/08-content-learning/quizzing/07-accessibility-testing.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/08-content-learning/quizzing/08-frame-by-frame-storyboard.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/08-content-learning/quizzing/08b-storyboard-addendum.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/08-content-learning/quizzing/Designing a Unified Quiz Engine for Exam Prep A UX Architecture Guide.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/08-content-learning/quizzing/EdTech Quiz Interface Design.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/08-content-learning/quizzing/QUIZ-ENGINE-UNIFICATION-PLAN.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/08-content-learning/quizzing/QUIZ-TESTING-AUDIT.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/08-content-learning/quizzing/README.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/08-content-learning/quizzing/quiz-ui-design-blueprint.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/08-content-learning/quizzing/quiz-ui-ux-research-blueprint.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/08-content-learning/quizzing/quiz-ux-user-flow-blueprint.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/08-content-learning/quizzing/quiz-ux-user-paths.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/08-content-learning/wiki-ui/ale-dsgn-014-01.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/08-content-learning/wiki-ui/slatecamp-wiki-components-implementation.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/08-content-learning/wiki-ui/wiki-article-mdx-template.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/08-content-learning/wiki-ui/wiki-ui-v2-implementation-plan.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/09-camp-trails/2026-03-19_v1_product-architecture.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/09-camp-trails/2026-03-19_v2_camp-trail-assessment-implementation.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/09-camp-trails/2026-03-24_camp-trail-implementation-prompt.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/09-camp-trails/2026-03-24_camp-trail-ux-implementation-plan.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/09-camp-trails/2026-03-24_slatecamp-camp-trail-product-intent.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/10-legal-patents/2026-04-01_slatecamp-ip-implementation-plan.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/10-legal-patents/2026-04-01_slatecamp-patent-framework.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/10-legal-patents/2026-04-01_slatecamp-patent-ux-ui-implementation-plan.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/11-admin-console/2026-03-24_v2_admin-console-audit.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/11-admin-console/2026-03-25_admin-console-ux-improvement-plan.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/11-admin-console/2026-03-25_admin-master-roadmap.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/11-admin-console/2026-03-25_v003_admin-routes-implementation-plan.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/11-admin-console/2026-03-25_v003_admin-ux-research-improvement-plan.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/11-admin-console/2026-03-25_v003_slatecamp-admin-audit-prompt.md` — Archive
+- `archive/legacy/prompts-archived/archives-organized/INDEX.md` — Archive
+
+## portal
+
+- `portal/000-portal-guide.md` — Active
+- `portal/001-dashboard.md` — Active
+- `portal/002-admin.md` — Active
+- `portal/003-ceo.md` — Active
+- `portal/004-developer.md` — Active
+- `portal/AGENTS.md` — Active
+- `portal/admin/001-knowledge-hub.md` — Active
+- `portal/admin/002-taxonomy.md` — Active
+- `portal/admin/003-review-queue.md` — Active
+- `portal/admin/004-content-workflow.md` — Active
+- `portal/architecture/001-architecture.md` — Active
+- `portal/ceo/001-command-center.md` — Active
+- `portal/ceo/002-financials.md` — Active
+- `portal/dashboard/001-overview.md` — Active
+- `portal/dashboard/002-testing-hub.md` — Active
+- `portal/dashboard/003-analytics.md` — Active
+- `portal/developer/001-design-system.md` — Active
+- `portal/developer/002-api-reference.md` — Active
+- `portal/developer/003-dev-tools.md` — Active
+- `portal/observations/Philip-lewis-observations.md` — Active
+- `portal/wiki-articles/mastery-architectural-design.md` — Active
+- `portal/wiki-articles/mastery-building-materials.md` — Active
+- `portal/wiki-articles/mastery-building-utilities-mepf.md` — Active
+- `portal/wiki-articles/mastery-history-of-architecture.md` — Active
+- `portal/wiki-articles/mastery-philippine-laws.md` — Active
+- `portal/wiki-articles/mastery-planning-housing-urban-design.md` — Active
+- `portal/wiki-articles/mastery-professional-practice.md` — Active
+- `portal/wiki-articles/mastery-structural-conceptualization.md` — Active
+- `portal/wiki-articles/mastery-theory-of-architecture.md` — Active
+- `portal/wiki-articles/overview-architectural-design.md` — Active
+- `portal/wiki-articles/overview-building-materials.md` — Active
+- `portal/wiki-articles/overview-building-utilities-mepf.md` — Active
+- `portal/wiki-articles/overview-history-of-architecture.md` — Active
+- `portal/wiki-articles/overview-philippine-laws.md` — Active
+- `portal/wiki-articles/overview-planning-housing-urban-design.md` — Active
+- `portal/wiki-articles/overview-professional-practice.md` — Active
+- `portal/wiki-articles/overview-structural-conceptualization.md` — Active
+- `portal/wiki-articles/overview-theory-of-architecture.md` — Active

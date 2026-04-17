@@ -4,8 +4,8 @@ Use this folder to explain archive policy and index preserved historical materia
 
 ## Current mapped sources
 
-- `.ai/archive/`
-- `.ai/docs/archive/`
+- `.ai/09_archive/store/`
+- `.ai/06_specs/deep/archive/`
 
 ## Important rule
 

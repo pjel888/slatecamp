@@ -1,47 +1,81 @@
-# .ai Naming Conventions
+# `.ai` Naming Conventions
 
-**Last Updated:** 2026-04-16
+**Last Updated:** 2026-04-17
 
-## Date format
+## Active naming strategy
 
-Use ISO-style dates in filenames whenever the document is time-bound:
+For active `.ai` management docs:
+- use lowercase kebab-case
+- use `.md`
+- do not use spaces
+- do not use underscores
+- do not use all-caps
 
-- `YYYY-MM-DD_subject-purpose.md`
-- Example: `2026-04-16_ai-workspace-audit.md`
+Exceptions:
+- `README.md`
+- `AGENTS.md`
+- tool-required payload files such as `SKILL.md`
 
-## Preferred filename patterns by document type
+## When to use date prefixes
 
-| Type | Preferred Pattern | Example |
-| --- | --- | --- |
-| Audit | `YYYY-MM-DD_<scope>-audit.md` | `2026-04-16_ai-workspace-audit.md` |
-| Plan | `YYYY-MM-DD_<scope>-plan.md` | `2026-04-16_ai-workspace-upgrade-plan.md` |
-| Task list | `YYYY-MM-DD_<scope>-tasks.md` | `2026-04-16_ai-workspace-tasks.md` |
-| Log | `YYYY-MM-DD_<scope>-log.md` or stable rolling log name | `organizational-upgrade-log.md` |
-| Spec | `YYYY-MM-DD_<scope>-spec.md` or numbered spec series | `2026-04-16_state-system-spec.md` |
-| Research | `YYYY-MM-DD_<topic>-research.md` | `2026-04-16_doc-taxonomy-research.md` |
-| Prompt | `YYYY-MM-DD_<scope>-prompt.md` | `2026-04-16_audit-prompt.md` |
+Use `YYYY-MM-DD-` only when the document is intentionally time-bound and still active.
 
-## Version suffixes
+Pattern:
+- `YYYY-MM-DD-topic-purpose.md`
 
-Use version suffixes only when a document evolves materially:
+Example:
+- `2026-04-17-ai-file-lifecycle-audit.md`
 
-- `-v2`, `-v3`
-- `-draft`, `-candidate`, `-superseded`, `-implemented`
+## Stable active docs
+
+If the document is the current canonical surface, omit the date and use lowercase kebab-case.
 
 Examples:
+- `master-audit.md`
+- `ai-meta-system-audit.md`
+- `implementation-plan.md`
+- `repo-map.md`
+- `coverage-matrix.md`
 
-- `2026-04-16_admin-editor-plan-v2.md`
-- `feature-gate-spec-draft.md`
-- `stairway-configurator-fix-superseded.md`
+## Preserved historical docs
 
-## Folder naming rules
+Historical files may retain legacy naming when the filename itself is part of the provenance:
+- old date prefixes
+- underscores
+- uppercase status markers such as `DONE`, `ABANDONED`, `SUPERSEDED`
+- imported spaces or mixed-case names
 
-- Use numbered top-level folders for operational taxonomy: `00_*` through `13_*`
-- Use lowercase kebab-case for new subordinate folders unless an existing legacy folder is being preserved as-is
-- Preserve inherited legacy names when they already carry historical meaning or external references
+Those files belong under preserved locations such as:
+- `03_plans/preserved/`
+- `06_specs/deep/`
+- `08_prompts/legacy/`
+- `09_archive/store/`
+- `10_state/legacy-*`
+- `11_skills/payloads/`
+- `12_agents/payloads/`
 
-## Readability rules
+## Folder naming strategy
 
-- Prefer concise, explicit nouns over vague names like `misc`, `stuff`, or `notes2`
-- Encode status in content or metadata when possible, not just in filename
-- Do not rename historical files solely to enforce this standard unless a migration plan is documented first
+- Top-level `.ai` folders remain numbered: `00_*` through `13_*`
+- New active subfolders use lowercase kebab-case
+- Preserved imported folders may keep inherited names when renaming would erase historical meaning
+
+## Status strategy
+
+Prefer placement over filename shouting:
+- active -> active numbered folder
+- preserved -> `preserved/`, `store/`, `legacy/`, or `legacy-*`
+- archived -> routed through `09_archive/`
+
+## What was applied in this run
+
+- active management docs were renamed from all-caps/underscore style to lowercase kebab-case
+- stale 2026-04-16 audits, plans, and task packs were moved out of active numbered folders
+- top-level `.ai` roots are now numbered-only
+
+## Rename rule
+
+Do not rename historical files solely for visual consistency.
+Rename only when:
+1. the file is an active canonical management doc, or
+2. the current name creates ambiguity or collision

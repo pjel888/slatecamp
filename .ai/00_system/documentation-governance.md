@@ -12,23 +12,24 @@
 ### `docs/`
 - Human-facing pointer surface at the repo root
 - In current reality this directory is a bridge, not the full canonical doc corpus
-- Any statements here must stay aligned with `.ai/docs/` and `README.md`
+- Any statements here must stay aligned with `.ai/06_specs/deep/` and `README.md`
 
 ### `.ai/`
 - Operational intelligence layer for audits, plans, tasks, state, logs, agent governance, and documentation architecture decisions
 - May contain active operational docs plus preserved historical material
 - Should favor additive updates and explicit supersession over destructive cleanup
+- See `ai-folder-canonical-map.md` for current routing of numbered vs unnumbered surfaces
 
-### `.ai/docs/`
+### `.ai/06_specs/deep/`
 - Preserved reference/specification corpus with architecture, product, design, development, and portal documentation
 - Still valuable and actively referenced, but some index/ownership material has drifted and must be treated carefully
-- When `.ai/docs` and `README.md` overlap, `README.md` should summarize while `.ai/docs` holds deeper reference detail
+- When `.ai/06_specs/deep` and `README.md` overlap, `README.md` should summarize while `.ai/06_specs/deep` holds deeper reference detail
 
 ## Duplication policy
 
 Intentional duplication is allowed only when roles differ:
 - `README.md` = entrypoint
-- `.ai/docs/` = deep reference/spec corpus
+- `.ai/06_specs/deep/` = deep reference/spec corpus
 - `.ai/` state/roadmap/audit docs = operational truth and sequencing
 
 If the same subject exists in multiple places:

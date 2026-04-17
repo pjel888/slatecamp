@@ -4,8 +4,8 @@ Use this folder to document specialized operational playbooks, tool usage guides
 
 ## Current mapped sources
 
-- `.ai/skills/` remains the preserved home of project skills and reference packs.
+- `payloads/` is the live project skill payload store.
 
 ## Intent
 
-This overlay folder explains skill usage at the workspace level. The existing skill library stays in place and should not be disturbed by organizational cleanup.
+This folder explains skill ownership and workspace-level usage. The payload library now lives in `payloads/` under numbered ownership.
