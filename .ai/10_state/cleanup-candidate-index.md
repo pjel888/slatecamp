@@ -17,6 +17,7 @@ Implementation note (2026-04-17):
 - `L1-L008` implemented
 - `L1-L007` fully implemented
 - `L1-L010` implemented in part (`src/data/patch.json`)
+- `L1-L010` implemented in part (`src/data/sample-lots.ts`)
 - Bun package-resolution blocker repaired by pinning `@lemonsqueezy/lemonsqueezy.js` to the nearest valid version (`1.2.5`)
 - implemented dependency removals:
   - `DEP-01` — `dompurify`
