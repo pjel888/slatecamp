@@ -4,7 +4,6 @@
 
 - `package.json`
 - `bun.lock`
-- `package-lock.json`
 - `.github/`
 - root configs and MCP wiring
 - `scripts/`
@@ -20,8 +19,8 @@
 
 ## Observed
 
-- Bun is the documented package manager, but npm lock state is still present
-- Bun bootstrap fails on the live manifest during this audit
+- Bun is the documented package manager and the stray npm lockfile has now been retired
+- Bun bootstrap was previously broken but the live manifest has since been repaired
 - CI only builds Storybook
 - MCP server definitions are split between root and `.ai`
 
@@ -42,16 +41,16 @@ Observed:
 - `bun install --frozen-lockfile` failed on `@lemonsqueezy/lemonsqueezy.js@^1.3.0`
 
 Impact:
-- documented bootstrap path is currently not dependable
+- documented bootstrap path was not dependable until the LemonSqueezy version pin was repaired
 
 ### `TOOL-003` Lockfile drift
 
 Observed:
-- both `bun.lock` and `package-lock.json` are present
-- subagent review found divergent dependency graphs relative to `package.json`
+- the repo previously carried both `bun.lock` and `package-lock.json`
+- the npm lockfile has since been retired so `bun.lock` is now the sole active root lockfile
 
 Impact:
-- install reproducibility and automation parity are unstable
+- install reproducibility and automation parity improve once the Bun-only contract is explicit
 
 ### `TOOL-004` Storybook-only CI
 

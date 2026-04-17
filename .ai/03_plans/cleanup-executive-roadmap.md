@@ -20,7 +20,7 @@ Summarize the repository-wide cleanup strategy for decision-making and later imp
 3. converge quiz/testing/drills route families
 4. decompose admin editor + knowledge data flow
 5. reduce wiki client work and duplicated sidebar hydration
-6. rationalize likely dead leaf dependencies and Bun/npm lockfile drift
+6. rationalize likely dead leaf dependencies and finish the remaining tooling drift after the Bun-only lockfile cleanup
 7. harden validation enough to make deeper cleanup safer
 
 ## Top risks
@@ -52,7 +52,6 @@ Summarize the repository-wide cleanup strategy for decision-making and later imp
 
 ## What requires explicit human approval
 
-- Bun-only vs dual-package-manager contract (`TOOL-01`)
 - calculators/tools namespace strategy (`L2-CALC-003`)
 - long-term admin alias retention policy (`L2-ADM-001`)
 - archive vs delete policy for ad hoc DB helper scripts (`L5-C07`)
@@ -65,4 +64,3 @@ Summarize the repository-wide cleanup strategy for decision-making and later imp
 - `DEP-03`
 - `DEP-04`
 - supporting validation with `bun run type-check`, `bun run lint`, and `bun run check:storybook`
-

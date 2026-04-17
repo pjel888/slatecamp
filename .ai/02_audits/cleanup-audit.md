@@ -16,7 +16,7 @@ SlateCamp’s cleanup opportunity is real, but it is not a “delete unused file
 4. decompose admin unified editor/controller surfaces (`L3-C03`, `L3-C04`)
 5. reduce wiki client work and duplicated sidebar hydration (`L3-C01`, `L3-C02`)
 6. reduce 3D-lab migration/shim debt and split 3D hotspot files (`L2-3DLAB-004`, `L2-3DLAB-005`, `L3-C06`)
-7. remove likely dead leaf dependencies and retire the dual lockfile split (`DEP-01` through `DEP-05`, `TOOL-01`)
+7. remove likely dead leaf dependencies and continue tooling cleanup after the dual lockfile split retirement (`DEP-01` through `DEP-05`, `TOOL-01`)
 
 ## Highest-risk false-positive areas
 
@@ -49,4 +49,3 @@ SlateCamp’s cleanup opportunity is real, but it is not a “delete unused file
 - `../10_state/cleanup-candidate-index.md`
 - `../10_state/cleanup-findings-register.md`
 - `../10_state/cleanup-coverage-matrix.md`
-

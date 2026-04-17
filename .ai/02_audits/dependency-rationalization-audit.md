@@ -8,6 +8,7 @@ Implementation note (2026-04-17):
   - `DEP-04` — `@radix-ui/react-visually-hidden`
   - `DEP-05` — `@tiptap/pm`, `@tiptap/suggestion`
   - `@types/dompurify`
+  - `TOOL-01` — `package-lock.json`
   - `SCRIPT-01` — `check:storybook-placeholders`
 
 ## Likely dependency cleanup candidates
@@ -32,7 +33,7 @@ Implementation note (2026-04-17):
 
 ## Tooling cleanup candidates
 
-- `TOOL-01` — retire `package-lock.json` if Bun remains the only supported package manager
+- `TOOL-01` — implemented: retired `package-lock.json` after confirming Bun-only workflows
 - `SCRIPT-01` — collapse `check:storybook-placeholders` into `check:storybook` once compatibility callers are gone
 
 ## Validation surface findings

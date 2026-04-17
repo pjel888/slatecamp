@@ -69,5 +69,4 @@ Reduce package and tooling surface area where overlap or inactivity is strongly 
 - are the ad hoc `supabase/check_db*.ts` files still used outside package scripts?
 
 ## Approval points needing human decision
-- whether to fully retire npm lockfile support
 - whether to quarantine or delete manual DB helper scripts
