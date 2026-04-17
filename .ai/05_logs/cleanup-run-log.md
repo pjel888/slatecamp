@@ -331,6 +331,16 @@
   - `bun run check:storybook` passed
   - `bun run build` passed
 
+### Follow-up: developer tech-stack truth-surface hardening
+
+- implemented:
+  - added `src/lib/developer/tech-stack.ts`
+  - removed duplicated hardcoded version tables from `/developer` and `/developer/architecture`
+  - both pages now read from one manifest-backed tech-stack source
+- validation:
+  - `bun run type-check` passed
+  - `bun run build` passed
+
 ### Follow-up: dashboard developer compatibility-page retirement
 
 - implemented:

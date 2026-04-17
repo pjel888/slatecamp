@@ -3,6 +3,7 @@ import { Badge } from '@/components/ui/badge'
 import { SectionHeader } from '@/components/shared/section-header'
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs'
 import { CodeBlock } from '@/components/shared/CodeBlock'
+import { developerArchitectureTechStack } from '@/lib/developer/tech-stack'
 
 export const metadata = {
   title: 'Architecture — SlateCamp Developer Portal',
@@ -13,24 +14,6 @@ export const metadata = {
 /* ------------------------------------------------------------------ */
 /*  Data                                                               */
 /* ------------------------------------------------------------------ */
-
-const techStack = [
-  { component: 'Framework',  pkg: 'next',                            version: '16.1.6',             notes: 'App Router, Server Components' },
-  { component: 'Runtime',    pkg: 'react / react-dom',               version: '19.2.4',             notes: '' },
-  { component: 'Language',   pkg: 'typescript',                      version: '5.9.3',              notes: 'strict: false' },
-  { component: 'Styling',    pkg: 'tailwindcss',                     version: '4.2.2',              notes: 'CSS-first config' },
-  { component: 'UI',         pkg: '@base-ui/react + shadcn',         version: '1.3.0 / 4.1.0',     notes: 'Radix-based' },
-  { component: 'Database',   pkg: '@supabase/supabase-js',           version: '2.101.1',            notes: 'PostgreSQL' },
-  { component: 'SSR Auth',   pkg: '@supabase/ssr',                   version: '0.9.0',              notes: 'Cookie-based' },
-  { component: '3D',         pkg: 'three / @react-three/fiber / drei', version: '0.183.2 / 9.5.0 / 10.7.7', notes: '' },
-  { component: 'Animation',  pkg: 'framer-motion',                   version: '12.38.0',            notes: '' },
-  { component: 'State',      pkg: 'zustand',                         version: '5.0.12',             notes: '2 stores' },
-  { component: 'Charts',     pkg: 'recharts',                        version: '3.8.0',              notes: '' },
-  { component: 'AI',         pkg: '@anthropic-ai/sdk',               version: '0.78.0',             notes: 'Claude, temp=0' },
-  { component: 'Payments',   pkg: '@lemonsqueezy/lemonsqueezy.js + payrex-node', version: '1.2.5 / 1.7.3', notes: 'SDK currently stubbed in app code' },
-  { component: 'Validation', pkg: 'zod',                             version: '4.3.6',              notes: '' },
-  { component: 'Content',    pkg: 'next-mdx-remote + @mdx-js/mdx',  version: '6.0.0 / 3.1.1',     notes: '' },
-]
 
 const dbClusters = [
   {
@@ -244,13 +227,13 @@ export default function ArchitecturePage() {
               <table className="w-full text-sm">
                 <TableHeader cols={['Component', 'Package', 'Version', 'Notes']} />
                 <tbody>
-                  {techStack.map((row, i) => (
+                  {developerArchitectureTechStack.map((row, i) => (
                     <tr
                       key={row.pkg}
                       className={i % 2 === 0 ? 'bg-transparent' : 'bg-muted/30'}
                     >
                       <td className="px-3 py-2 font-medium text-foreground text-[11px] whitespace-nowrap">
-                        {row.component}
+                        {row.label}
                       </td>
                       <td className="px-3 py-2 font-[family-name:var(--font-dm-mono)] text-[11px] text-primary">
                         {row.pkg}

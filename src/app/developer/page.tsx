@@ -5,6 +5,7 @@ import { StatCard } from '@/components/shared/stat-card'
 import { Badge } from '@/components/ui/badge'
 import { BookOpen, Database, Flask, Pulse, Wrench, ToggleRight, UserGear } from '@phosphor-icons/react/dist/ssr'
 import { CHANGELOG } from '@/lib/developer/changelog'
+import { developerPortalTechStack } from '@/lib/developer/tech-stack'
 import { Card } from '@/components/ui/card'
 
 import { createClient } from '@/lib/supabase/server'
@@ -53,19 +54,6 @@ const quickActions = [
   { label: 'Toggle Feature Flag', href: '/developer/tools', icon: ToggleRight },
   { label: 'Impersonate User', href: '/developer/tools', icon: UserGear },
   { label: 'Generate Test Data', href: '/developer/tools/test-data', icon: Flask },
-]
-
-const techStack = [
-  { layer: 'Framework', pkg: 'next', version: '16.1.6' },
-  { layer: 'Runtime', pkg: 'react / react-dom', version: '19.2.4' },
-  { layer: 'Language', pkg: 'typescript', version: '5.9.3' },
-  { layer: 'Styling', pkg: 'tailwindcss', version: '4.2.2' },
-  { layer: 'UI', pkg: '@base-ui/react + shadcn', version: '1.3.0 / 4.1.0' },
-  { layer: 'Database', pkg: '@supabase/supabase-js', version: '2.101.1' },
-  { layer: 'State', pkg: 'zustand', version: '5.0.12' },
-  { layer: 'AI', pkg: '@anthropic-ai/sdk', version: '0.78.0' },
-  { layer: '3D', pkg: 'three / @react-three/fiber', version: '0.183.2 / 9.5.0' },
-  { layer: 'Payments', pkg: '@lemonsqueezy/lemonsqueezy.js + payrex-node', version: '1.2.5 / 1.7.3' },
 ]
 
 const StatusDot = ({ status, name }: { status: 'operational' | 'degraded'; name: string }) => {
@@ -201,9 +189,9 @@ const DeveloperPortalPage = async () => {
               </tr>
             </thead>
             <tbody>
-              {techStack.map((row) => (
-                <tr key={row.layer} className="border-b border-border last:border-0 hover:bg-muted/50 transition-colors">
-                  <td className="px-4 py-2 text-xs text-foreground">{row.layer}</td>
+              {developerPortalTechStack.map((row) => (
+                <tr key={row.label} className="border-b border-border last:border-0 hover:bg-muted/50 transition-colors">
+                  <td className="px-4 py-2 text-xs text-foreground">{row.label}</td>
                   <td className="px-4 py-2 text-xs font-mono text-foreground">{row.pkg}</td>
                   <td className="px-4 py-2 text-xs font-mono text-muted-foreground">{row.version}</td>
                 </tr>

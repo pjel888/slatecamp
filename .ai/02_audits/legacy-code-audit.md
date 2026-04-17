@@ -70,6 +70,10 @@ The naming and route-constant contract is inconsistent enough to be a cleanup co
 
 Many of these are not delete-first candidates. The safe first move is to inventory canonical vs compatibility surfaces, then retire aliases and shims in a planned sequence.
 
+### `L2-DEV-006` implementation note
+
+- the duplicated hardcoded tech-stack/version tables in `/developer` and `/developer/architecture` now derive from one manifest-backed helper in `src/lib/developer/tech-stack.ts`
+
 ## Linked findings and plans
 
 - findings: `CLN-003`, `CLN-004`, `CLN-005`, `CLN-006`, `CLN-007`
