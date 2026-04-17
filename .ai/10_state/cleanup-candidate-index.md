@@ -51,6 +51,7 @@ Implementation note (2026-04-17):
 - `L2-DEV-006` implemented in part (dev-facing console/overlay components now reuse the shared `DevConnectionState` type instead of repeating `'local' | 'connected'` unions)
 - `L2-DEV-006` implemented in part (dev-facing console/overlay components now reuse one shared `DevSystemInfo` contract instead of repeating the same object shape)
 - `L2-DEV-006` implemented in part (dashboard dev tools now reuse `getConnectionState()` instead of hardcoding `'connected'` whenever local bypass is off)
+- `L2-DEV-006` implemented in part (developer architecture tech-stack notes now derive the TypeScript strict-mode note from `tsconfig.json` instead of hardcoding `strict: false`)
 - `L2-DEV-006` implemented in part (developer tech-stack content row no longer hardcodes an unowned MDX version and now reports the package-backed `next-mdx-remote` contract directly)
 - `L2-DEV-006` implemented in part (developer console now uses the shared `getConnectionState()` helper and the unused `THREE_WITH_DREI_VERSION` constant has been removed)
 - `TOOL-01` implemented (`package-lock.json` retired after confirming Bun-only workflows and updating active docs)

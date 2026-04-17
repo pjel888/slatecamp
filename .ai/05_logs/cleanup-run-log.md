@@ -516,6 +516,15 @@
   - `bun run type-check` passed
   - `bun run build` passed
 
+### Follow-up: developer strict-mode note alignment
+
+- implemented:
+  - imported `tsconfig.json` into `src/lib/developer/tech-stack.ts`
+  - the developer architecture tech-stack table now derives its TypeScript strict-mode note from the real config instead of hardcoding `strict: false`
+- validation:
+  - `bun run type-check` passed
+  - `bun run build` passed
+
 ### Follow-up: developer content-version truth cleanup
 
 - implemented:

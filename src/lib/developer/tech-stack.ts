@@ -1,4 +1,5 @@
 import packageJson from '../../../package.json'
+import tsconfig from '../../../tsconfig.json'
 
 const stripRange = (value?: string) => value?.replace(/^[\^~]/, '') ?? 'unknown'
 
@@ -21,6 +22,7 @@ const THREE_VERSION = `${version('three')} / ${version('@react-three/fiber')}`
 const CONTENT_VERSION = version('next-mdx-remote')
 
 export const developerNextVersion = version('next')
+const developerTypeScriptStrictMode = String(tsconfig.compilerOptions.strict)
 
 export const developerPortalTechStack: DeveloperTechStackRow[] = [
   { label: 'Framework', pkg: 'next', version: developerNextVersion },
@@ -56,7 +58,7 @@ export const developerArchitectureTechStack: DeveloperTechStackRow[] = developer
     row.label === 'Framework'
       ? 'App Router, Server Components'
       : row.label === 'Language'
-        ? 'strict: false'
+        ? `strict: ${developerTypeScriptStrictMode}`
         : row.label === 'Styling'
           ? 'CSS-first config'
           : row.label === 'UI'
