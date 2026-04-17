@@ -1,10 +1,13 @@
 # Docs Implementation Plan v5.0 — Model Workspace Protocol
 
-> **Status:** Active  
-> **Last Updated:** 2026-04-06  
-> **Version:** 5.0 (Model Workspace Protocol)  
-> **Approach:** State-driven, version-controlled documentation system  
-> **Source of Truth:** `src/`, `DATABASE_SCHEMA.sql`, `package.json`, `src/app/*/AGENTS.md`  
+> **Reality note (2026-04-16):** This document captures the 2026-04-06 `.ai/docs` implementation plan. Use `.ai/03_plans/2026-04-16-documentation-architecture-decision.md`, `.ai/03_plans/2026-04-16-repo-intelligence-refresh-plan.md`, and `.ai/10_state/current-state.md` for current operational truth.
+
+**Status:** Historical planning reference
+**Originally Updated:** 2026-04-06
+**Version:** 5.0 (Model Workspace Protocol)
+**Source of Truth for current operations:** `.ai/`, `.ai/10_state/`, `.ai/03_plans/`, and the live codebase
+**Supersedes:** v4.0 (`docs-implementation-plan.md`)
+
 > **Supersedes:** v4.0 (`docs-implementation-plan.md`)
 
 ---
@@ -42,8 +45,8 @@ Each task is a standalone `.md` file:
 ```markdown
 # Task N: [Short Title]
 
-**Status:** pending | in_progress | completed | blocked  
-**Created:** 2026-04-06  
+**Status:** pending | in_progress | completed | blocked
+**Created:** 2026-04-06
 **Objective:** [One-sentence goal]
 
 ## Steps
@@ -204,7 +207,7 @@ Each task is a standalone `.md` file:
 
 ### Task 01: Setup Folder Structure
 
-**Status:** pending  
+**Status:** pending
 **Objective:** Create all directories and core protocol files
 
 **Steps:**
@@ -227,7 +230,7 @@ Each task is a standalone `.md` file:
 
 ### Task 02: Archive Legacy Content
 
-**Status:** pending  
+**Status:** pending
 **Objective:** Move deprecated content to `archive/legacy/`
 
 **Steps:**
@@ -248,7 +251,7 @@ Each task is a standalone `.md` file:
 
 ### Task 03: Write Meta Documentation
 
-**Status:** pending  
+**Status:** pending
 **Source:** `docs-implementation-plan.md`, `README.md`
 
 **Deliverables:**
@@ -263,7 +266,7 @@ Each task is a standalone `.md` file:
 
 ### Task 04: Write Architecture Docs
 
-**Status:** pending  
+**Status:** pending
 **Source:** `src/app/AGENTS.md`, `src/AGENTS.md`, `package.json`
 
 **Deliverables:**
@@ -281,7 +284,7 @@ Each task is a standalone `.md` file:
 
 ### Task 05: Write Design Docs
 
-**Status:** pending  
+**Status:** pending
 **Source:** `src/app/globals.css`, `package.json`
 
 **Deliverables:**
@@ -298,7 +301,7 @@ Each task is a standalone `.md` file:
 
 ### Task 06: Write Development Docs
 
-**Status:** pending  
+**Status:** pending
 **Source:** `package.json`, `CLAUDE.md`, `AGENTS.md`
 
 **Deliverables:**
@@ -318,7 +321,7 @@ Each task is a standalone `.md` file:
 
 ### Task 07: Write Product Docs
 
-**Status:** pending  
+**Status:** pending
 **Source:** `src/app/dashboard/AGENTS.md`, `src/app/dashboard/*/`
 
 **Deliverables:**
@@ -340,7 +343,7 @@ Each task is a standalone `.md` file:
 
 ### Task 08: Write Portal Docs
 
-**Status:** pending  
+**Status:** pending
 **Source:** `src/app/*/AGENTS.md` for each portal
 
 **Deliverables:**
@@ -420,13 +423,13 @@ jobs:
 ```markdown
 # SlateCamp PRD
 
-**Last Updated:** 2026-04-06  
+**Last Updated:** 2026-04-06
 **Source:** `README.md`, `src/app/*/AGENTS.md`
 
 ## What is SlateCamp?
 
-SlateCamp is an ALE prep platform built for the Philippine Architecture Licensure Exam. 
-The product combines adaptive quiz flows, an expert-linked wiki, analytics, admin tooling, 
+SlateCamp is an ALE prep platform built for the Philippine Architecture Licensure Exam.
+The product combines adaptive quiz flows, an expert-linked wiki, analytics, admin tooling,
 and interactive 3D learning modules under a shared Next.js codebase.
 
 ## Portals
