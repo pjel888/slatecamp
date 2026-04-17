@@ -8,6 +8,7 @@ import { CHANGELOG } from '@/lib/developer/changelog'
 import { developerPortalTechStack } from '@/lib/developer/tech-stack'
 import { getDeveloperRepoMetrics } from '@/lib/developer/repo-metrics'
 import { Card } from '@/components/ui/card'
+import { ROUTES } from '@/lib/routes'
 
 import { createClient } from '@/lib/supabase/server'
 
@@ -21,7 +22,7 @@ const sectionCards = [
     title: 'API Reference',
     description: 'Server actions, internal endpoints, payload contracts, and integration notes.',
     icon: BookOpen,
-    href: '/developer/api-reference',
+    href: ROUTES.developer.apiReference,
     badge: 'Reference',
     badgeVariant: 'default' as const,
   },
@@ -29,7 +30,7 @@ const sectionCards = [
     title: 'System Status',
     description: 'Database health, API latency, edge functions, and deployment status.',
     icon: Pulse,
-    href: '/developer/status',
+    href: ROUTES.developer.status,
     badge: 'Operational',
     badgeVariant: 'success' as const,
   },
@@ -37,7 +38,7 @@ const sectionCards = [
     title: 'Dev Tools',
     description: 'Feature flags, user impersonation, and test data generation.',
     icon: Wrench,
-    href: '/developer/tools',
+    href: ROUTES.developer.tools,
     badge: '3 Tools',
     badgeVariant: 'default' as const,
   },
@@ -51,10 +52,10 @@ const healthServices = [
 ]
 
 const quickActions = [
-  { label: 'Check DB Status', href: '/developer/status/database', icon: Database },
-  { label: 'Toggle Feature Flag', href: '/developer/tools', icon: ToggleRight },
-  { label: 'Impersonate User', href: '/developer/tools', icon: UserGear },
-  { label: 'Generate Test Data', href: '/developer/tools/test-data', icon: Flask },
+  { label: 'Check DB Status', href: ROUTES.developer.statusDatabase, icon: Database },
+  { label: 'Toggle Feature Flag', href: ROUTES.developer.tools, icon: ToggleRight },
+  { label: 'Impersonate User', href: ROUTES.developer.tools, icon: UserGear },
+  { label: 'Generate Test Data', href: ROUTES.developer.testData, icon: Flask },
 ]
 
 const StatusDot = ({ status, name }: { status: 'operational' | 'degraded'; name: string }) => {

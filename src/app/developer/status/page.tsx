@@ -7,6 +7,7 @@ import { SectionHeader } from '@/components/shared/section-header'
 import { Card } from '@/components/ui/card'
 import type { ServiceStatus } from '@/types/developer'
 import { createClient } from '@/lib/supabase/server'
+import { ROUTES } from '@/lib/routes'
 
 /* ------------------------------------------------------------------ */
 /*  Helpers                                                            */
@@ -33,10 +34,10 @@ const buildAvailabilitySnapshot = (
 /* ------------------------------------------------------------------ */
 
 const services: Array<{ key: string; label: string; href: string }> = [
-  { key: 'database', label: 'Database', href: '/developer/status/database' },
-  { key: 'api', label: 'API', href: '/developer/status/infrastructure' },
-  { key: 'auth', label: 'Auth', href: '/developer/status/infrastructure' },
-  { key: 'edge', label: 'Edge Functions', href: '/developer/status/infrastructure' },
+  { key: 'database', label: 'Database', href: ROUTES.developer.statusDatabase },
+  { key: 'api', label: 'API', href: ROUTES.developer.statusInfrastructure },
+  { key: 'auth', label: 'Auth', href: ROUTES.developer.statusInfrastructure },
+  { key: 'edge', label: 'Edge Functions', href: ROUTES.developer.statusInfrastructure },
 ]
 
 /* ------------------------------------------------------------------ */

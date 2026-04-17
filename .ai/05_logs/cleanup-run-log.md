@@ -360,6 +360,14 @@
   - `bun run type-check` passed
   - `bun run build` passed
 
+### Follow-up: developer internal route-helper convergence
+
+- implemented:
+  - migrated the remaining hardcoded `/developer/**` links inside the developer portal to `ROUTES.developer.*`
+- validation:
+  - `bun run type-check` passed
+  - `bun run build` passed
+
 ### Follow-up: wiki mobile hydration convergence
 
 - implemented:
