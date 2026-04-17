@@ -23,6 +23,7 @@ import type { UserTier, UserGlobalStats, Discipline } from '@/types/app'
 import { EntitlementProvider } from '@/lib/context/entitlement-context'
 import { getViewerEntitlements } from '@/lib/entitlements/get-viewer-entitlements'
 import { ENTITLEMENT_FEATURE_KEYS } from '@/lib/entitlements/feature-keys'
+import { developerNextVersion } from '@/lib/developer/tech-stack'
 
 interface DashboardLayoutContentProps {
   children: React.ReactNode
@@ -152,7 +153,7 @@ const DashboardLayoutContent = async ({ children }: DashboardLayoutContentProps)
                   <DevKeyboardProvider
                     systemInfo={{
                       env: process.env.NODE_ENV ?? 'development',
-                      nextVersion: '15',
+                      nextVersion: developerNextVersion,
                       userId: user.id,
                       userEmail: user.email ?? '',
                       userRole: entitlements.normalizedRole,

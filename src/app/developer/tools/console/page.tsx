@@ -1,4 +1,5 @@
 import { createClient, getUser } from '@/lib/supabase/server'
+import { developerNextVersion } from '@/lib/developer/tech-stack'
 import { ConsoleClient } from './console-client'
 
 export default async function DeveloperConsolePage() {
@@ -21,7 +22,7 @@ export default async function DeveloperConsolePage() {
     <ConsoleClient
       systemInfo={{
         env: process.env.NODE_ENV ?? 'development',
-        nextVersion: '15',
+        nextVersion: developerNextVersion,
         userId: user?.id ?? '',
         userEmail: user?.email ?? '',
         userRole: user?.app_metadata?.role ?? 'user',

@@ -478,6 +478,16 @@
   - `bun run type-check` passed
   - `bun run build` passed
 
+### Follow-up: developer Next.js version alignment
+
+- implemented:
+  - exported `developerNextVersion` from `src/lib/developer/tech-stack.ts`
+  - updated the `/developer/tools/console` system-info payload and the dashboard dev keyboard overlay to use the shared helper
+  - removed the stale hardcoded `nextVersion: '15'` strings from both entry points
+- validation:
+  - `bun run type-check` passed
+  - `bun run build` passed
+
 ### Follow-up: wiki mobile hydration convergence
 
 - implemented:

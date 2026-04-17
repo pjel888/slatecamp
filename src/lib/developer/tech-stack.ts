@@ -21,8 +21,10 @@ const THREE_VERSION = `${version('three')} / ${version('@react-three/fiber')}`
 const THREE_WITH_DREI_VERSION = `${version('three')} / ${version('@react-three/fiber')} / ${version('@react-three/drei')}`
 const CONTENT_VERSION = `${version('next-mdx-remote')} / 3.1.1`
 
+export const developerNextVersion = version('next')
+
 export const developerPortalTechStack: DeveloperTechStackRow[] = [
-  { label: 'Framework', pkg: 'next', version: version('next') },
+  { label: 'Framework', pkg: 'next', version: developerNextVersion },
   { label: 'Runtime', pkg: 'react / react-dom', version: `${version('react')} / ${version('react-dom')}` },
   { label: 'Language', pkg: 'typescript', version: version('typescript') },
   { label: 'Styling', pkg: 'tailwindcss', version: version('tailwindcss') },

@@ -47,6 +47,7 @@ Implementation note (2026-04-17):
 - `L2-DEV-006` implemented in part (`src/components/developer/index.ts` removed after confirming the barrel had no live imports)
 - `L2-DEV-006` implemented in part (`StatusBanner` now renders the page's real snapshot time instead of a hardcoded “3s ago” placeholder)
 - `L2-DEV-006` implemented in part (developer mock database status now uses current schema table names like `profiles`, `taxonomy_tree`, and `user_trail_enrollments`)
+- `L2-DEV-006` implemented in part (developer console and dashboard dev keyboard overlay now derive the Next.js version from one shared helper instead of hardcoding `15`)
 - `TOOL-01` implemented (`package-lock.json` retired after confirming Bun-only workflows and updating active docs)
 - `L3-C02` implemented in part (mobile wiki navigation now receives the same cached server-loaded taxonomy as the desktop sidebar)
 - `L2-3DLAB-004` implemented in part (redundant `_stores/labStore.ts` re-export wrappers retired; remaining consumers now import `stores/legacyLabStore` directly)
