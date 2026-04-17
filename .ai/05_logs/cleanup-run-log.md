@@ -73,6 +73,22 @@
 - `bun run type-check` failed in the current workspace because install/runtime deps are not available (`node_modules` missing) and the repo already has a broken Bun dependency-resolution path
 - `bun run lint` failed for the same environment reason; ESLint fell back to a global installation and could not resolve the repo config from local dependencies
 
+### Follow-up: package-resolution blocker repair
+
+- root cause confirmed:
+  - `package.json` referenced `@lemonsqueezy/lemonsqueezy.js` at `^1.3.0`
+  - npm registry shows no `1.3.0` release exists; valid versions include `1.2.5`, then `2.x`, `3.x`, and `4.x`
+- selected fix:
+  - changed the manifest to `@lemonsqueezy/lemonsqueezy.js: 1.2.5`
+  - chose the nearest valid version because the SDK is currently stubbed in `src/lib/lemonsqueezy/config.ts` and not actively imported
+- verification:
+  - `bun install --ignore-scripts` now succeeds in the real repo
+  - `bun install --frozen-lockfile --ignore-scripts` now succeeds
+  - `bun run type-check` now succeeds
+  - `npm install --package-lock-only --ignore-scripts --legacy-peer-deps` succeeded for `package-lock.json` sync after exposing a preexisting Storybook peer-version mismatch in the npm path
+- remaining note:
+  - `bun run lint` is now running under the repaired install state instead of failing immediately on missing local dependencies/config
+
 ### Completion check
 
 - baseline/control docs created first

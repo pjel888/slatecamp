@@ -8,7 +8,7 @@ Status note:
 Implementation note (2026-04-17):
 - `L1-C001` implemented
 - `L1-C002` implemented
-- dependency-removal subset (`DEP-01` to `DEP-05`) remains deferred because Bun package resolution still fails on `@lemonsqueezy/lemonsqueezy.js@^1.3.0`
+- dependency-removal subset (`DEP-01` to `DEP-05`) remains deferred, but the Bun package-resolution blocker has now been repaired by pinning `@lemonsqueezy/lemonsqueezy.js` to the nearest valid version (`1.2.5`)
 
 | Candidate ID | Category | Confidence | Path(s) | Short title | Why it is a candidate | Evidence summary | Likely payoff | Removal / refactor risk | Validation difficulty | Recommended plan reference |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
