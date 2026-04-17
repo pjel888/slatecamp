@@ -24,6 +24,7 @@ import { EntitlementProvider } from '@/lib/context/entitlement-context'
 import { getViewerEntitlements } from '@/lib/entitlements/get-viewer-entitlements'
 import { ENTITLEMENT_FEATURE_KEYS } from '@/lib/entitlements/feature-keys'
 import { developerNextVersion } from '@/lib/developer/tech-stack'
+import { getConnectionState } from '@/lib/dev/dev-mode'
 
 interface DashboardLayoutContentProps {
   children: React.ReactNode
@@ -89,6 +90,9 @@ const DashboardLayoutContent = async ({ children }: DashboardLayoutContentProps)
     bypassSrsGate:
       entitlements.overrides.featureOverrides[ENTITLEMENT_FEATURE_KEYS.srsReview] === true,
   }
+  const devConnectionState = entitlements.overrides.localDevBypassActive
+    ? 'local'
+    : getConnectionState()
 
   return (
     <EntitlementProvider entitlements={entitlements}>
@@ -143,9 +147,7 @@ const DashboardLayoutContent = async ({ children }: DashboardLayoutContentProps)
               {showDevTools && (
                 <>
                   <DevToolbar
-                    connectionState={
-                      entitlements.overrides.localDevBypassActive ? 'local' : 'connected'
-                    }
+                    connectionState={devConnectionState}
                     currentTier={currentTier}
                     effectiveTier={effectiveTier}
                     flags={devToolbarFlags}
@@ -157,7 +159,7 @@ const DashboardLayoutContent = async ({ children }: DashboardLayoutContentProps)
                       userId: user.id,
                       userEmail: user.email ?? '',
                       userRole: entitlements.normalizedRole,
-                      connectionState: entitlements.overrides.localDevBypassActive ? 'local' : 'connected',
+                      connectionState: devConnectionState,
                     }}
                   />
                 </>

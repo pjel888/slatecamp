@@ -506,6 +506,16 @@
   - `bun run type-check` passed
   - `bun run build` passed
 
+### Follow-up: dashboard connection-state alignment
+
+- implemented:
+  - updated `src/components/dashboard/DashboardLayoutContent.tsx` to reuse `getConnectionState()`
+  - removed the hardcoded fallback to `'connected'` when the local dev bypass is off
+  - both the dev toolbar and dev keyboard overlay now consume one computed `devConnectionState`
+- validation:
+  - `bun run type-check` passed
+  - `bun run build` passed
+
 ### Follow-up: developer content-version truth cleanup
 
 - implemented:
