@@ -74,7 +74,7 @@ export function ModuleCard({ module, basePath }: { module: ModuleRegistryEntry; 
 
   if (isBuilt) {
     return (
-      <Link href={ROUTES.THREE_D_LAB_MODULE(module.id)} className="block h-full">
+      <Link href={ROUTES.lab.module(module.id)} className="block h-full">
         {card}
       </Link>
     )

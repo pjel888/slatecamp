@@ -102,7 +102,7 @@ export function WikiReference({ slug, children, className }: WikiReferenceProps)
               {title || 'Loading Article...'}
             </SheetTitle>
             <Link 
-              href={ROUTES.WIKI_PAGE(slug)}
+              href={ROUTES.wiki.article(slug)}
               className="text-[11px] font-medium text-camp-cobalt hover:underline"
               onClick={() => setIsOpen(false)}
             >
@@ -118,7 +118,7 @@ export function WikiReference({ slug, children, className }: WikiReferenceProps)
               or re-use the WikiArticle component with limited features.
           */}
           <iframe 
-            src={`${ROUTES.WIKI_PAGE(slug)}?minimal=true`}
+            src={`${ROUTES.wiki.article(slug)}?minimal=true`}
             className="w-full h-full border-none"
             title={`Peek: ${title}`}
           />

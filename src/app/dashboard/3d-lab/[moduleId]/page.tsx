@@ -21,7 +21,7 @@ export default async function LabModulePage({
   if (!module) {
     // Special case for legacy wall-configurator route
     if (moduleId === 'wall-configurator') {
-      redirect(`${ROUTES.THREE_D_LAB}/unified-wall-configurator`);
+      redirect(`${ROUTES.lab.root}/unified-wall-configurator`);
     }
     notFound();
   }
@@ -36,12 +36,12 @@ export default async function LabModulePage({
     entitlements.decisions[ENTITLEMENT_FEATURE_KEYS.threeDLabFull]?.allowed ?? false;
 
   if (!hasAccess) {
-    redirect(ROUTES.THREE_D_LAB);
+    redirect(ROUTES.lab.root);
   }
 
   return (
     <div className="h-full w-full">
-      <ModuleViewer modelId={moduleId} basePath={ROUTES.THREE_D_LAB} />
+      <ModuleViewer modelId={moduleId} basePath={ROUTES.lab.root} />
     </div>
   );
 }

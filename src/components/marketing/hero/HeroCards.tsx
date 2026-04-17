@@ -239,7 +239,7 @@ const ConversionHookCard = ({ isLoggedIn }: { isLoggedIn: boolean }) => {
 
       <div className='mt-3 flex items-center justify-between text-[11px] text-text-2'>
         <Link
-          href={isLoggedIn ? ROUTES.ANALYTICS : ROUTES.REGISTER}
+          href={isLoggedIn ? ROUTES.dashboard.analytics : ROUTES.auth.register}
           className='ml-auto inline-flex items-center gap-1 rounded-sm border border-border-design bg-white/80 px-3 py-1 font-medium text-primary transition-colors hover:bg-primary-50 hover:text-primary-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 text-2xs'
           aria-label='Open your readiness dashboard'
         >

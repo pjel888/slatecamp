@@ -139,7 +139,7 @@ export const HeatmapPreview = ({ seeds }: HeatmapPreviewProps) => {
           Run the diagnostic quiz →
         </Link>
         <Link
-          href={ROUTES.DASHBOARD}
+          href={ROUTES.dashboard.root}
           className="block w-full rounded-sm border border-border bg-card px-4 py-2.5 text-center text-sm font-medium text-muted-foreground transition-colors duration-150 hover:border-primary hover:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
         >
           Start studying now

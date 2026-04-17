@@ -123,7 +123,7 @@ function CategoryCard({ categoryKey, category, moduleCount, onSelect }: Category
 // ─── Featured Module Banner ───────────────────────────────────────────────────
 
 export function FeaturedModuleBanner({ basePath }: { basePath?: string }) {
-  const href = ROUTES.THREE_D_LAB_MODULE('site-development-controls')
+  const href = ROUTES.lab.module('site-development-controls')
 
   return (
     <Link href={href} className="group block mb-8">

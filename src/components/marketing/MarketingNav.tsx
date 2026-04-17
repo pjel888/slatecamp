@@ -5,7 +5,7 @@ import { cn } from '@/lib/utils'
 import { getUserIfPresent } from '@/lib/supabase/server'
 
 const NAV_LINKS = [
-  { href: ROUTES.TOOLS, label: 'Tools' },
+  { href: ROUTES.calculators.root, label: 'Tools' },
   { href: ROUTES.PRICING, label: 'Pricing' },
   { href: ROUTES.ABOUT, label: 'About' },
   { href: ROUTES.CONTACT, label: 'Contact' },
@@ -99,7 +99,7 @@ export async function MarketingNav({
         <div className='flex items-center gap-2'>
           {isLoggedIn ? (
             <Link
-              href={ROUTES.DASHBOARD}
+              href={ROUTES.dashboard.root}
               className={cn(
                 'rounded-sm px-5 py-3 text-[13px] font-medium text-white transition-colors duration-150',
                 isDark

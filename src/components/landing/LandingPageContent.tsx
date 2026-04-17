@@ -20,7 +20,7 @@ export async function LandingPageContent() {
   const { data: { user } } = await getUserIfPresent()
   const isLoggedIn = !!user
 
-  const ctaHref = isLoggedIn ? ROUTES.DASHBOARD : ROUTES.REGISTER
+  const ctaHref = isLoggedIn ? ROUTES.dashboard.root : ROUTES.auth.register
   const ctaLabel = isLoggedIn ? 'Go to Dashboard' : 'Get Your Free Readiness Score'
 
   return (

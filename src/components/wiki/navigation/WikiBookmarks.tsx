@@ -138,7 +138,7 @@ export function WikiBookmarks({ currentArticleId, currentSlug, currentTitle }: W
             {bookmarks.map(b => (
               <li key={b.articleId} className="group flex items-center gap-2 px-3 py-1.5 hover:bg-muted">
                 <Link
-                  href={ROUTES.WIKI_PAGE(b.slug)}
+                  href={ROUTES.wiki.article(b.slug)}
                   className="flex-1 text-xs text-foreground hover:text-foreground truncate"
                 >
                   {b.title}

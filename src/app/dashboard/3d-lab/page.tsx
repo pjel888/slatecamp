@@ -23,7 +23,7 @@ export default async function ThreeDLabPage({
 
   // Legacy Redirect: ?model= → /[moduleId]
   if (modelId) {
-    redirect(`${ROUTES.THREE_D_LAB}/${modelId}`);
+    redirect(`${ROUTES.lab.root}/${modelId}`);
   }
 
   const entitlements = await getViewerEntitlements([
@@ -46,7 +46,7 @@ export default async function ThreeDLabPage({
           <p className="mt-2 max-w-md text-sm text-muted-foreground">
             {THREE_D_LAB_GATE_COPY.description}
           </p>
-          <Link href={ROUTES.SETTINGS_BILLING} className="mt-6">
+          <Link href={ROUTES.dashboard.settingsBilling} className="mt-6">
             <Button>{THREE_D_LAB_GATE_COPY.ctaLabel}</Button>
           </Link>
         </div>
@@ -57,7 +57,7 @@ export default async function ThreeDLabPage({
   return (
     <LabBrowserShell>
       <Suspense key="lab-browser-suspense" fallback={null}>
-        <LabBrowser basePath={ROUTES.THREE_D_LAB} />
+        <LabBrowser basePath={ROUTES.lab.root} />
       </Suspense>
     </LabBrowserShell>
   );

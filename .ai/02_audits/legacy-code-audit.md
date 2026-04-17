@@ -35,6 +35,7 @@ Implementation note (2026-04-17):
 - the top-level `/dashboard/testing` redirect page has now been retired
 - the deeper redirect pages under `/dashboard/testing/session/**` and `/dashboard/testing/simulation/**` have now also been retired
 - the `/dashboard/testing` compatibility route layer has now been retired
+- broad internal usage of uppercase/general route aliases has now been migrated to structured route helpers across dashboard, wiki, marketing, notes, portal, and developer surfaces
 - legacy uppercase helper aliases in `src/lib/routes.ts` still remain and should be retired in a later pass
 
 ### `L2-CALC-003` — `/tools` vs `/calculators`

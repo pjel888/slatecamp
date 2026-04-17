@@ -311,6 +311,26 @@
   - `bun run check:storybook` passed
   - `bun run build` passed
 
+### Follow-up: broader route-helper convergence
+
+- implemented:
+  - migrated broad internal usage off uppercase/general route aliases such as:
+    - `ROUTES.DASHBOARD`
+    - `ROUTES.WIKI`
+    - `ROUTES.WIKI_PAGE`
+    - `ROUTES.CAMPTRAILS`
+    - `ROUTES.ANALYTICS`
+    - `ROUTES.NOTES`
+    - `ROUTES.THREE_D_LAB`
+    - `ROUTES.TOOLS`
+    - related settings and helper aliases
+- result:
+  - no remaining uppercase/general route alias usage is left in `src/`
+- validation:
+  - `bun run type-check` passed
+  - `bun run check:storybook` passed
+  - `bun run build` passed
+
 ### Completion check
 
 - baseline/control docs created first

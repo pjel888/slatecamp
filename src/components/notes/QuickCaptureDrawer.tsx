@@ -323,7 +323,7 @@ export const QuickCaptureDrawer = ({ userId }: QuickCaptureDrawerProps) => {
         </span>
         {noteId && (
           <a
-            href={`${ROUTES.NOTES}?open=${encodeURIComponent(noteId)}`}
+            href={`${ROUTES.dashboard.notes}?open=${encodeURIComponent(noteId)}`}
             className="inline-flex items-center gap-1 text-[11px] font-medium text-primary hover:underline"
           >
             Open in Notes

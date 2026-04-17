@@ -29,16 +29,16 @@ import { SCIcon } from '@/components/graphics/icons/Icon'
 import { ROUTES } from '@/lib/routes'
 
 const NAV_ITEMS = [
-  { href: ROUTES.DASHBOARD, label: 'Dashboard', icon: SquaresFour },
-  { href: ROUTES.WIKI, label: 'Wiki', icon: Globe },
+  { href: ROUTES.dashboard.root, label: 'Dashboard', icon: SquaresFour },
+  { href: ROUTES.wiki.root, label: 'Wiki', icon: Globe },
   { href: ROUTES.dashboard.drills, label: 'Quiz', icon: Brain },
   { href: ROUTES.dashboard.drillsSessions, label: 'Sessions', icon: ClipboardText },
-  { href: ROUTES.CAMPTRAILS, label: 'CampTrails', icon: Path },
+  { href: ROUTES.dashboard.camptrails, label: 'CampTrails', icon: Path },
   { href: ROUTES.dashboard.drills, label: 'Review', icon: BookOpen },
-  { href: ROUTES.ANALYTICS, label: 'Analytics', icon: ChartBar },
-  { href: ROUTES.LIBRARY, label: 'Library', icon: Books },
-  { href: ROUTES.THREE_D_LAB, label: '3D Lab', icon: Cube },
-  { href: ROUTES.SETTINGS, label: 'Settings', icon: GearSix },
+  { href: ROUTES.dashboard.analytics, label: 'Analytics', icon: ChartBar },
+  { href: ROUTES.dashboard.library, label: 'Library', icon: Books },
+  { href: ROUTES.lab.root, label: '3D Lab', icon: Cube },
+  { href: ROUTES.dashboard.settings, label: 'Settings', icon: GearSix },
 ]
 
 interface NavbarProps {
@@ -51,7 +51,7 @@ export function Navbar({ isAdmin }: NavbarProps) {
   return (
     <header className='flex h-12 items-center justify-between border-b border-border/40 bg-background/80 px-4 backdrop-blur-xl lg:hidden'>
       <Link
-        href={ROUTES.DASHBOARD}
+        href={ROUTES.dashboard.root}
         className='transition-colors duration-150 hover:opacity-80'
       >
         <SlateCampLogo size="md" />
@@ -71,7 +71,7 @@ export function Navbar({ isAdmin }: NavbarProps) {
               {NAV_ITEMS.map(({ href, label, icon: Icon }) => {
                 const isActive =
                   pathname === href ||
-                  (href !== ROUTES.DASHBOARD && pathname.startsWith(href))
+                  (href !== ROUTES.dashboard.root && pathname.startsWith(href))
                 return (
                   <Link
                     key={href}
@@ -91,8 +91,8 @@ export function Navbar({ isAdmin }: NavbarProps) {
                 <>
                   <div className='my-2 border-t border-border' />
                   <Link
-                    href={ROUTES.SETTINGS_DEVELOPER}
-                    className={`flex items-center gap-3 rounded-md px-3 py-2 text-[13px] transition-all outline-none focus-visible:ring-2 focus-visible:ring-primary/20 ${pathname === ROUTES.SETTINGS_DEVELOPER
+                    href={ROUTES.dashboard.settingsDeveloper}
+                    className={`flex items-center gap-3 rounded-md px-3 py-2 text-[13px] transition-all outline-none focus-visible:ring-2 focus-visible:ring-primary/20 ${pathname === ROUTES.dashboard.settingsDeveloper
                         ? 'bg-warning/10 font-medium text-warning'
                         : 'text-muted-foreground hover:bg-secondary/60 hover:text-foreground'
                       }`}

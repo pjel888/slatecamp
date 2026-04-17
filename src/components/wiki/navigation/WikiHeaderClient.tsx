@@ -56,7 +56,7 @@ export function WikiHeaderClient({
           )}
 
           <Link
-            href={ROUTES.WIKI}
+            href={ROUTES.wiki.root}
             className="flex items-center gap-1 text-xs text-muted-foreground hover:text-text-secondary transition-colors shrink-0"
             aria-label="Back to syllabus"
           >

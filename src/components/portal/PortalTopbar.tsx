@@ -22,7 +22,7 @@ const PortalTopbar = ({
   rightContent,
   searchComponent,
   mobileNav,
-  backHref = ROUTES.DASHBOARD,
+  backHref = ROUTES.dashboard.root,
   backLabel = 'Dashboard',
   className,
 }: PortalTopbarProps) => (

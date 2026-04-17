@@ -26,7 +26,7 @@ export default async function DeveloperPortalLayout({
     entitlements.decisions[ENTITLEMENT_FEATURE_KEYS.developerPortal]?.allowed ?? false
 
   if (!canAccess) {
-    redirect(ROUTES.DASHBOARD)
+    redirect(ROUTES.dashboard.root)
   }
 
   const env: 'development' | 'staging' | 'production' = entitlements.overrides.allowDevPortalBypass

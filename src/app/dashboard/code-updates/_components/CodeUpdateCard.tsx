@@ -64,7 +64,7 @@ export const CodeUpdateCard = ({ update }: CodeUpdateCardProps) => {
         </div>
         {lea_id && (
           <Link
-            href={`${ROUTES.WIKI_PAGE(lea_id.toLowerCase().replace(/\s+/g, '-'))}`}
+            href={`${ROUTES.wiki.article(lea_id.toLowerCase().replace(/\s+/g, '-'))}`}
             className="text-xs text-primary hover:underline"
           >
             View wiki article →

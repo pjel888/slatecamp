@@ -162,7 +162,7 @@ export default async function WikiArticlePage(props: WikiArticlePageProps) {
               <div className="max-w-4xl mx-auto px-8 py-3 flex items-center justify-between text-xs text-muted-foreground">
                 {siblings.prev ? (
                   <Link 
-                    href={ROUTES.WIKI_PAGE(siblings.prev.slug || '')} 
+                    href={ROUTES.wiki.article(siblings.prev.slug || '')}
                     className="flex items-center gap-1 hover:text-primary transition-colors"
                   >
                     &larr; {siblings.prev.name}
@@ -171,7 +171,7 @@ export default async function WikiArticlePage(props: WikiArticlePageProps) {
                 
                 {siblings.next ? (
                   <Link 
-                    href={ROUTES.WIKI_PAGE(siblings.next.slug || '')} 
+                    href={ROUTES.wiki.article(siblings.next.slug || '')}
                     className="flex items-center gap-1 hover:text-primary transition-colors text-right"
                   >
                     {siblings.next.name} &rarr;

@@ -11,7 +11,7 @@ const serif = Instrument_Serif({
 })
 
 const FOOTER_LINKS = [
-  { href: ROUTES.TOOLS, label: 'Tools' },
+  { href: ROUTES.calculators.root, label: 'Tools' },
   { href: ROUTES.PRICING, label: 'Pricing' },
   { href: ROUTES.ABOUT, label: 'About' },
   { href: ROUTES.CONTACT, label: 'Contact' },
@@ -54,4 +54,3 @@ export const MarketingFooter = ({
     </footer>
   )
 }
-

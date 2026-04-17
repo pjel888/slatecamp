@@ -63,7 +63,7 @@ export function WikiRightSidebar({
   }, [articleId, disableUserActions])
 
   const handleCopyLink = () => {
-    const url = `${window.location.origin}${ROUTES.WIKI_PAGE(articleSlug)}`
+    const url = `${window.location.origin}${ROUTES.wiki.article(articleSlug)}`
     navigator.clipboard.writeText(url).then(() => {
       setLinkCopied(true)
       setTimeout(() => setLinkCopied(false), 2000)
