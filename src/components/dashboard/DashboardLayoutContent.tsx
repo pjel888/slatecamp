@@ -24,7 +24,7 @@ import { EntitlementProvider } from '@/lib/context/entitlement-context'
 import { getViewerEntitlements } from '@/lib/entitlements/get-viewer-entitlements'
 import { ENTITLEMENT_FEATURE_KEYS } from '@/lib/entitlements/feature-keys'
 import { developerNextVersion } from '@/lib/developer/tech-stack'
-import { getConnectionState } from '@/lib/dev/dev-mode'
+import { buildDevSystemInfo, getConnectionState } from '@/lib/dev/dev-mode'
 
 interface DashboardLayoutContentProps {
   children: React.ReactNode
@@ -153,14 +153,14 @@ const DashboardLayoutContent = async ({ children }: DashboardLayoutContentProps)
                     flags={devToolbarFlags}
                   />
                   <DevKeyboardProvider
-                    systemInfo={{
+                    systemInfo={buildDevSystemInfo({
                       env: process.env.NODE_ENV ?? 'development',
                       nextVersion: developerNextVersion,
                       userId: user.id,
                       userEmail: user.email ?? '',
                       userRole: entitlements.normalizedRole,
                       connectionState: devConnectionState,
-                    }}
+                    })}
                   />
                 </>
               )}

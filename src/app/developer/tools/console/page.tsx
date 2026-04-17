@@ -1,5 +1,5 @@
 import { createClient, getUser } from '@/lib/supabase/server'
-import { getConnectionState } from '@/lib/dev/dev-mode'
+import { buildDevSystemInfo, getConnectionState } from '@/lib/dev/dev-mode'
 import { developerNextVersion } from '@/lib/developer/tech-stack'
 import { ConsoleClient } from './console-client'
 
@@ -21,14 +21,14 @@ export default async function DeveloperConsolePage() {
 
   return (
     <ConsoleClient
-      systemInfo={{
+      systemInfo={buildDevSystemInfo({
         env: process.env.NODE_ENV ?? 'development',
         nextVersion: developerNextVersion,
         userId: user?.id ?? '',
         userEmail: user?.email ?? '',
         userRole: user?.app_metadata?.role ?? 'user',
         connectionState: getConnectionState(),
-      }}
+      })}
       dbFlags={dbFlags}
     />
   )
