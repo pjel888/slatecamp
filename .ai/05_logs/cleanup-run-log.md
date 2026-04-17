@@ -388,6 +388,17 @@
   - `bun run type-check` passed
   - `bun run build` passed
 
+### Follow-up: developer surface registry convergence
+
+- implemented:
+  - added `src/lib/developer/surface-registry.ts` as the canonical source for developer portal surface metadata
+  - migrated the developer shell, search palette, overview cards/quick actions, tools page, and status services to the shared registry
+  - removed the unused `src/app/developer/_components/DevPortalSidebar.tsx` after confirming it had no live imports
+  - refreshed `src/app/developer/AGENTS.md` and `src/lib/developer/AGENTS.md` to match the live subtree contents
+- validation:
+  - `bun run type-check` passed
+  - `bun run build` passed
+
 ### Follow-up: wiki mobile hydration convergence
 
 - implemented:

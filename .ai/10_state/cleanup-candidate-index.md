@@ -38,6 +38,8 @@ Implementation note (2026-04-17):
 - `L2-DEV-006` implemented in part (remaining hardcoded internal `/developer/**` links now use the canonical route helpers)
 - `L2-DEV-006` implemented in part (the giant API reference route now imports its static endpoint/action datasets from `src/lib/developer/api-reference-data.ts` instead of embedding them inline)
 - `L2-DEV-006` implemented in part (the giant architecture route now imports its static schema/role/deployment datasets from `src/lib/developer/architecture-data.ts` instead of embedding them inline)
+- `L2-DEV-006` implemented in part (shell/search/overview/tools/status now consume one shared developer surface registry instead of duplicating route metadata)
+- `L2-DEV-006` implemented in part (`src/app/developer/_components/DevPortalSidebar.tsx` removed after confirming no live imports)
 - `L3-C02` implemented in part (mobile wiki navigation now receives the same cached server-loaded taxonomy as the desktop sidebar)
 - `L2-3DLAB-004` implemented in part (redundant `_stores/labStore.ts` re-export wrappers retired; remaining consumers now import `stores/legacyLabStore` directly)
 - Bun package-resolution blocker repaired by pinning `@lemonsqueezy/lemonsqueezy.js` to the nearest valid version (`1.2.5`)

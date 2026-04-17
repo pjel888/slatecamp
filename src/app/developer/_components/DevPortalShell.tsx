@@ -7,41 +7,29 @@ import { Badge } from '@/components/ui/badge'
 import { DevPortalSearch } from './DevPortalSearch'
 import { PORTALS } from '@/config/portals'
 import type { NavGroup } from '@/components/portal'
-import { ROUTES } from '@/lib/routes'
+import { developerSurfaceGroups } from '@/lib/developer/surface-registry'
 
-const devNavItems: NavGroup[] = [
-  {
-    label: 'Portal',
-    items: [
-      { href: ROUTES.developer.root, label: 'Overview', icon: <SquaresFour className="w-3.5 h-3.5" /> },
-    ],
-  },
-  {
-    label: 'Documentation',
-    items: [
-      { href: ROUTES.developer.apiReference, label: 'API Reference', icon: <BookOpen className="w-3.5 h-3.5" weight="regular" /> },
-      { href: ROUTES.developer.architecture, label: 'Architecture', icon: <Stack className="w-3.5 h-3.5" /> },
-    ],
-  },
-  {
-    label: 'Status',
-    items: [
-      { href: ROUTES.developer.status, label: 'Overview', icon: <Pulse className="w-3.5 h-3.5" /> },
-      { href: ROUTES.developer.statusDatabase, label: 'Database', icon: <Database className="w-3.5 h-3.5" /> },
-      { href: ROUTES.developer.statusInfrastructure, label: 'Infrastructure', icon: <HardDrives className="w-3.5 h-3.5" /> },
-    ],
-  },
-  {
-    label: 'Tools',
-    items: [
-      { href: ROUTES.developer.tools, label: 'Dev Tools', icon: <Wrench className="w-3.5 h-3.5" /> },
-      { href: ROUTES.developer.console, label: 'Console', icon: <Monitor className="w-3.5 h-3.5" /> },
-      { href: ROUTES.developer.db, label: 'Database Browser', icon: <Database className="w-3.5 h-3.5" /> },
-      { href: ROUTES.developer.logs, label: 'Audit Logs', icon: <Scroll className="w-3.5 h-3.5" /> },
-      { href: ROUTES.developer.testData, label: 'Test Data', icon: <Flask className="w-3.5 h-3.5" /> },
-    ],
-  },
-]
+const navIconMap = {
+  overview: <SquaresFour className="w-3.5 h-3.5" />,
+  apiReference: <BookOpen className="w-3.5 h-3.5" weight="regular" />,
+  architecture: <Stack className="w-3.5 h-3.5" />,
+  status: <Pulse className="w-3.5 h-3.5" />,
+  database: <Database className="w-3.5 h-3.5" />,
+  infrastructure: <HardDrives className="w-3.5 h-3.5" />,
+  tools: <Wrench className="w-3.5 h-3.5" />,
+  console: <Monitor className="w-3.5 h-3.5" />,
+  logs: <Scroll className="w-3.5 h-3.5" />,
+  testData: <Flask className="w-3.5 h-3.5" />,
+} as const
+
+const devNavItems: NavGroup[] = developerSurfaceGroups.map((group) => ({
+  label: group.label,
+  items: group.items.map((item) => ({
+    href: item.href,
+    label: item.label,
+    icon: navIconMap[item.iconKey],
+  })),
+}))
 
 interface DevPortalShellProps {
   env: 'development' | 'staging' | 'production'

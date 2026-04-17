@@ -3,12 +3,12 @@ import { ActionCard } from '@/components/shared/action-card'
 import { SectionHeader } from '@/components/shared/section-header'
 import { StatCard } from '@/components/shared/stat-card'
 import { Badge } from '@/components/ui/badge'
-import { BookOpen, Database, Flask, Pulse, Wrench, ToggleRight, UserGear } from '@phosphor-icons/react/dist/ssr'
+import { BookOpen, Database, Flask, Pulse, Wrench, ToggleRight } from '@phosphor-icons/react/dist/ssr'
 import { CHANGELOG } from '@/lib/developer/changelog'
 import { developerPortalTechStack } from '@/lib/developer/tech-stack'
 import { getDeveloperRepoMetrics } from '@/lib/developer/repo-metrics'
 import { Card } from '@/components/ui/card'
-import { ROUTES } from '@/lib/routes'
+import { developerOverviewCards, developerQuickActions, developerToolCount } from '@/lib/developer/surface-registry'
 
 import { createClient } from '@/lib/supabase/server'
 
@@ -17,33 +17,6 @@ export const metadata = {
   description: 'Internal documentation, API reference, architecture guides, and dev tools for the SlateCamp engineering team.',
 }
 
-const sectionCards = [
-  {
-    title: 'API Reference',
-    description: 'Server actions, internal endpoints, payload contracts, and integration notes.',
-    icon: BookOpen,
-    href: ROUTES.developer.apiReference,
-    badge: 'Reference',
-    badgeVariant: 'default' as const,
-  },
-  {
-    title: 'System Status',
-    description: 'Database health, API latency, edge functions, and deployment status.',
-    icon: Pulse,
-    href: ROUTES.developer.status,
-    badge: 'Operational',
-    badgeVariant: 'success' as const,
-  },
-  {
-    title: 'Dev Tools',
-    description: 'Feature flags, user impersonation, and test data generation.',
-    icon: Wrench,
-    href: ROUTES.developer.tools,
-    badge: '3 Tools',
-    badgeVariant: 'default' as const,
-  },
-]
-
 const healthServices = [
   { name: 'Database', status: 'operational' as const },
   { name: 'API', status: 'operational' as const },
@@ -51,12 +24,17 @@ const healthServices = [
   { name: 'Cache', status: 'degraded' as const },
 ]
 
-const quickActions = [
-  { label: 'Check DB Status', href: ROUTES.developer.statusDatabase, icon: Database },
-  { label: 'Toggle Feature Flag', href: ROUTES.developer.tools, icon: ToggleRight },
-  { label: 'Impersonate User', href: ROUTES.developer.tools, icon: UserGear },
-  { label: 'Generate Test Data', href: ROUTES.developer.testData, icon: Flask },
-]
+const overviewCardIconMap = {
+  apiReference: BookOpen,
+  status: Pulse,
+  tools: Wrench,
+} as const
+
+const quickActionIconMap = {
+  database: Database,
+  console: ToggleRight,
+  testData: Flask,
+} as const
 
 const StatusDot = ({ status, name }: { status: 'operational' | 'degraded'; name: string }) => {
   const isOperational = status === 'operational'
@@ -115,20 +93,32 @@ const DeveloperPortalPage = async () => {
 
       {/* Section Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-        {sectionCards.map((card) => (
-          <ActionCard
-            key={card.href}
-            href={card.href}
-            title={card.title}
-            description={card.description}
-            icon={<card.icon className="h-4 w-4 text-primary" />}
-            badge={
-              <Badge variant={card.badgeVariant} size="xs" shape="pill">
-                {card.badge}
-              </Badge>
-            }
-          />
-        ))}
+        {developerOverviewCards.map((card) => {
+          const Icon = overviewCardIconMap[card.iconKey]
+          const badge =
+            card.id === 'api-reference'
+              ? 'Reference'
+              : card.id === 'status-overview'
+                ? 'Operational'
+                : `${developerToolCount} Tools`
+          const badgeVariant =
+            card.id === 'status-overview' ? ('success' as const) : ('default' as const)
+
+          return (
+            <ActionCard
+              key={card.href}
+              href={card.href}
+              title={card.title}
+              description={card.description}
+              icon={<Icon className="h-4 w-4 text-primary" />}
+              badge={
+                <Badge variant={badgeVariant} size="xs" shape="pill">
+                  {badge}
+                </Badge>
+              }
+            />
+          )
+        })}
       </div>
 
       {/* System Health Summary */}
@@ -153,16 +143,19 @@ const DeveloperPortalPage = async () => {
           Quick Actions
         </p>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-          {quickActions.map((action) => (
-            <Link key={action.label} href={action.href}>
-              <Card variant="interactive" size="sm" className="h-full">
-                <div className="flex items-center gap-2">
-                  <action.icon className="w-3.5 h-3.5 text-primary" />
-                  <span className="text-[11px] font-medium text-foreground">{action.label}</span>
-                </div>
-              </Card>
-            </Link>
-          ))}
+          {developerQuickActions.map((action) => {
+            const Icon = quickActionIconMap[action.iconKey]
+            return (
+              <Link key={action.label} href={action.href}>
+                <Card variant="interactive" size="sm" className="h-full">
+                  <div className="flex items-center gap-2">
+                    <Icon className="w-3.5 h-3.5 text-primary" />
+                    <span className="text-[11px] font-medium text-foreground">{action.label}</span>
+                  </div>
+                </Card>
+              </Link>
+            )
+          })}
         </div>
       </div>
 

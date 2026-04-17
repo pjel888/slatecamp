@@ -8,7 +8,7 @@
 
 **Scope:** `src/app/developer/` subtree
 
-**Current snapshot:** 11 directories and 34 files beneath this scope (excluding this `AGENTS.md`).
+**Current snapshot:** 12 directories and 33 files beneath this scope (excluding this `AGENTS.md`).
 
 **Top local directories:** `_components/`, `api-reference/`, `architecture/`, `status/`, `tools/`
 

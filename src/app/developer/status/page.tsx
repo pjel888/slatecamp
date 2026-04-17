@@ -7,7 +7,7 @@ import { SectionHeader } from '@/components/shared/section-header'
 import { Card } from '@/components/ui/card'
 import type { ServiceStatus } from '@/types/developer'
 import { createClient } from '@/lib/supabase/server'
-import { ROUTES } from '@/lib/routes'
+import { developerStatusServices } from '@/lib/developer/surface-registry'
 
 /* ------------------------------------------------------------------ */
 /*  Helpers                                                            */
@@ -28,17 +28,6 @@ const buildAvailabilitySnapshot = (
           ? ('outage' as const)
           : ('degraded' as const),
   }))
-
-/* ------------------------------------------------------------------ */
-/*  Service definitions                                                */
-/* ------------------------------------------------------------------ */
-
-const services: Array<{ key: string; label: string; href: string }> = [
-  { key: 'database', label: 'Database', href: ROUTES.developer.statusDatabase },
-  { key: 'api', label: 'API', href: ROUTES.developer.statusInfrastructure },
-  { key: 'auth', label: 'Auth', href: ROUTES.developer.statusInfrastructure },
-  { key: 'edge', label: 'Edge Functions', href: ROUTES.developer.statusInfrastructure },
-]
 
 /* ------------------------------------------------------------------ */
 /*  Page                                                               */
@@ -77,7 +66,7 @@ const StatusOverviewPage = async () => {
 
   /* Deterministic availability snapshot per service */
   const uptimeData = Object.fromEntries(
-    services.map((service) => {
+    developerStatusServices.map((service) => {
       const status =
         service.key === 'database'
           ? dbStatus
@@ -140,7 +129,7 @@ const StatusOverviewPage = async () => {
           Historical uptime bars are not wired to a persisted status history yet. These bars repeat the current service state so the page stays deterministic instead of showing random synthetic history.
         </p>
         <Card size="sm" className="divide-y divide-border">
-          {services.map((service) => {
+          {developerStatusServices.map((service) => {
             const data = uptimeData[service.key]
             return (
               <div
