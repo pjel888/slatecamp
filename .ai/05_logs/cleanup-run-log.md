@@ -232,6 +232,7 @@
   - updated admin login redirect target from `ROUTES.admin.dashboard` to `ROUTES.admin.root`
   - updated the admin dashboard coverage-gap CTA from `/admin/questions/new` to the canonical knowledge-question creation path
   - updated admin bulk/wiki action revalidation to target canonical `knowledge*` / `wiki` surfaces instead of legacy alias pages
+  - removed unused legacy admin route constants from `ROUTES.admin`
 - intentionally preserved:
   - alias route files under `/admin/dashboard`, `/admin/questions`, `/admin/content`, and `/admin/articles`
   - old route constants and revalidation targets that still support compatibility surfaces
