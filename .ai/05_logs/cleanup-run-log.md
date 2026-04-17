@@ -225,6 +225,20 @@
   - `bun run check:storybook` passed
   - `bun run build` passed
 
+### Follow-up: internal admin alias-route convergence
+
+- implemented:
+  - updated internal admin dashboard navigation from `/admin/dashboard` to `/admin`
+  - updated admin login redirect target from `ROUTES.admin.dashboard` to `ROUTES.admin.root`
+  - updated the admin dashboard coverage-gap CTA from `/admin/questions/new` to the canonical knowledge-question creation path
+- intentionally preserved:
+  - alias route files under `/admin/dashboard`, `/admin/questions`, `/admin/content`, and `/admin/articles`
+  - old route constants and revalidation targets that still support compatibility surfaces
+- validation:
+  - `bun run type-check` passed
+  - `bun run check:storybook` passed
+  - `bun run build` passed
+
 ### Completion check
 
 - baseline/control docs created first

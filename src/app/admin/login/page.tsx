@@ -19,7 +19,7 @@ export default function AdminLandingPage() {
     const { data, error: oauthError } = await supabase.auth.signInWithOAuth({
       provider: "google",
       options: {
-        redirectTo: `${window.location.origin}${ROUTES.auth.callback}?next=${ROUTES.admin.dashboard}`,
+        redirectTo: `${window.location.origin}${ROUTES.auth.callback}?next=${ROUTES.admin.root}`,
       },
     });
 

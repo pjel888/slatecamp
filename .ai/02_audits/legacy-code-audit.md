@@ -15,6 +15,10 @@ Canonical surfaces already exist under:
 
 The current state is compatibility-heavy, not cleanly retired.
 
+Implementation note (2026-04-17):
+- internal navigation and login redirect targets now point at canonical `knowledge*` / `/admin` surfaces
+- legacy redirect routes are intentionally still present for compatibility and should be retired only after a later explicit route-removal pass
+
 ### `L2-QUIZ-002` — testing/quiz/drills route matrix
 The same engine is exposed through:
 - `src/app/quiz/**`
@@ -58,4 +62,3 @@ Many of these are not delete-first candidates. The safe first move is to invento
 
 - findings: `CLN-003`, `CLN-004`, `CLN-005`, `CLN-006`, `CLN-007`
 - plans: `../03_plans/legacy-removal-plan.md`, `../03_plans/cleanup-implementation-plan.md`
-

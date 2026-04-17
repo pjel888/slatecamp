@@ -115,7 +115,7 @@ const AdminDashboardPage = async () => {
             </p>
           </div>
           <Link
-            href="/admin/questions/new"
+            href={`${ROUTES.admin.knowledgeQuestions}/new`}
             className="shrink-0 inline-flex items-center gap-1 text-xs font-medium text-amber-800 hover:text-amber-900 transition-colors duration-150"
           >
             Create content

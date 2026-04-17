@@ -11,7 +11,7 @@ import type { NavGroup } from '@/components/portal'
 import type { UserRole } from '@/lib/admin/roles'
 
 const adminPages = [
-  { title: 'Dashboard', href: '/admin/dashboard', group: 'Overview' },
+  { title: 'Dashboard', href: '/admin', group: 'Overview' },
   { title: 'Knowledge Browser', href: '/admin/knowledge', group: 'Knowledge Base' },
   { title: 'Question Bank', href: '/admin/knowledge/questions', group: 'Knowledge Base' },
   { title: 'Design Problem Questions', href: '/admin/knowledge/questions/design-problems', group: 'Knowledge Base' },
@@ -38,7 +38,7 @@ const adminNavItems: NavGroup[] = [
     items: [
       {
         label: 'Dashboard',
-        href: '/admin/dashboard',
+        href: '/admin',
         icon: <SquaresFour className="w-3.5 h-3.5" />,
       },
     ],
