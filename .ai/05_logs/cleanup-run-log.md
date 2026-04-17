@@ -119,6 +119,23 @@
   - `bun run type-check` passed
   - `bun run build` passed after the server-side icon handoff was fixed
 
+### Follow-up: likely-dead leaf UI/helper cleanup batch
+
+- implemented:
+  - removed `src/components/quiz-v2/review/ReviewMode.tsx`
+  - removed `src/components/quiz-v2/review/QuestionHistory.tsx`
+  - removed `src/components/quiz-v2/setup/ModeSelector.tsx`
+  - removed `src/lib/constants/developer.ts`
+  - removed `src/components/score/skeletons/ScoreRingSkeleton.tsx`
+  - removed `src/components/shared/content-sidebar.tsx`
+  - removed `src/components/trail/TrailDayCard.tsx`
+  - removed `src/components/trail/skeletons/TrailDayCardSkeleton.tsx`
+- validation:
+  - runtime/reference grep showed no live code consumers beyond cleanup/docs references
+  - `bun run type-check` passed
+  - `bun run check:storybook` passed
+  - `bun run build` passed
+
 ### Completion check
 
 - baseline/control docs created first

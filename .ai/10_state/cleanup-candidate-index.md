@@ -9,6 +9,10 @@ Implementation note (2026-04-17):
 - `L1-C001` implemented
 - `L1-C002` implemented
 - `L3-C01` implemented
+- `L1-L003` implemented
+- `L1-L004` implemented
+- `L1-L005` implemented
+- `L1-L007` implemented in part (`src/lib/constants/developer.ts`)
 - Bun package-resolution blocker repaired by pinning `@lemonsqueezy/lemonsqueezy.js` to the nearest valid version (`1.2.5`)
 - implemented dependency removals:
   - `DEP-01` — `dompurify`
