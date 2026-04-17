@@ -1,98 +1,31 @@
-<!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-03-24 | Updated: 2026-03-25 -->
+<!-- Parent: ../../../AGENTS.md -->
+<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
 
 # constants
 
-## Purpose
+<!-- REALITY-REFRESH:START -->
+## 2026-04-16 Reality Refresh
 
-Centralized configuration and constants. Single source of truth for site metadata, route paths, design tokens, enum values, error messages, and thresholds. Eliminates magic strings and ensures consistency across the application.
+**Scope:** `src/lib/constants/` subtree
 
-## Key Files
+**Current snapshot:** 0 directories and 11 files beneath this scope (excluding this `AGENTS.md`).
 
-| File | Description |
-|------|-------------|
-| **index.ts** | Main export barrel; re-exports all constants |
-| **site.ts** | Site metadata: name, description, branding |
-| **routes.ts** | Centralized route paths (ROUTES object); route builders with params |
-| **readiness.ts** | Readiness score thresholds, labels, color tokens (70/40 for success/warning) |
-| **mastery.ts** | Mastery scoring thresholds, progression levels |
-| **analytics.ts** | Analytics event names, event property keys |
-| **ads.ts** | Ad placement configuration, frequency caps |
-| **pricing.ts** | Pricing plans, feature matrix, billing periods |
-| **developer.ts** | Developer/API constants, feature flags, debug settings |
+**Top local directories:** none
 
-## For AI Agents
+**Top local files:** `analytics.ts`, `chart-colors.ts`, `developer.ts`, `feature-flags.ts`, `index.ts`, `mastery.ts`, `pricing.ts`, `readiness.ts`, `site.ts`, `subject-colors.ts`
 
-### Working In This Directory
+### What agents must do here
+- Inspect live call sites, tests, schema/config dependencies, and adjacent helpers before editing this logic layer.
+- Preserve boundaries between pure logic, query helpers, server actions, provider integrations, and validation schemas.
+- Avoid assumption-driven changes to IRT/SRS, entitlements, analytics, or payment logic without tracing actual usage.
 
-1. **Import from the barrel** — use `import { ROUTES, siteConfig } from '@/lib/constants'`.
-2. **No magic strings** — always reach for the constant instead of hardcoding.
-3. **Route builders** — use functions like `ROUTES.QUIZ_SESSION(sessionId)` for dynamic routes.
-4. **Design tokens** — readiness/mastery colors are CSS variables (e.g., `var(--success)`), not hex codes.
-5. **Thresholds are immutable** — use `as const` for strict typing.
+### Validation expectations
+- `bun run type-check` for repo-wide TypeScript sanity when changes touch source or instructions about source behavior.
+- `bun run lint` when wording implies code style/workflow claims that should match current tooling.
+- Targeted path/file existence checks for every doc or route reference you add.
 
-### Common Patterns
-
-**Using route constants:**
-```typescript
-import { ROUTES } from '@/lib/constants'
-
-// Static routes
-const dashboardUrl = ROUTES.DASHBOARD // "/dashboard"
-const wikiUrl = ROUTES.WIKI // "/dashboard/wiki"
-
-// Dynamic routes
-const sessionUrl = ROUTES.QUIZ_SESSION(sessionId) // "/dashboard/quiz/{sessionId}"
-const noteUrl = ROUTES.NOTE(noteId) // "/dashboard/notes/{noteId}"
-
-// Redirect or href
-<a href={ROUTES.QUIZ_SESSION(id)}>Continue Quiz</a>
-redirect(ROUTES.DASHBOARD)
-```
-
-**Readiness score labels and colors:**
-```typescript
-import { getReadinessLabel, getReadinessColor, READINESS_THRESHOLDS } from '@/lib/constants'
-
-const score = 75
-const label = getReadinessLabel(score) // "Strong"
-const color = getReadinessColor(score) // "var(--success)"
-
-// Check threshold
-if (score >= READINESS_THRESHOLDS.EXAM_READY) {
-  // User is exam-ready (≥90)
-}
-```
-
-**Site config in metadata:**
-```typescript
-import { siteConfig } from '@/lib/constants'
-
-// In layout metadata
-export const metadata = {
-  title: siteConfig.name,
-  description: siteConfig.description,
-}
-```
-
-**Analytics event names:**
-```typescript
-import { ANALYTICS_EVENTS } from '@/lib/constants'
-
-trackServerEvent(ANALYTICS_EVENTS.QUIZ_STARTED, {
-  sessionId,
-  testMode: 'camp',
-})
-```
-
-## Dependencies
-
-### Internal
-
-None — constants are leaf nodes with no internal imports.
-
-### External
-
-None — pure TypeScript/JavaScript objects.
-
-<!-- MANUAL: -->
+### Anti-laziness rule
+- Do not stop at this directory listing. Open the live files that implement the behavior you are describing or changing.
+- If older notes, counts, or examples elsewhere in this file drift from the live tree, prefer current code and this reality-refresh block.
+- When you change structure, ownership, workflow, or key file references in this scope, update this `AGENTS.md` in the same change.
+<!-- REALITY-REFRESH:END -->

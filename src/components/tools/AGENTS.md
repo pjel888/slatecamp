@@ -1,42 +1,31 @@
-<!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-03-24 | Updated: 2026-03-24 -->
+<!-- Parent: ../../../AGENTS.md -->
+<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
 
 # tools
 
-## Purpose
+<!-- REALITY-REFRESH:START -->
+## 2026-04-16 Reality Refresh
 
-Standalone calculator tools for architecture professionals. Three specialized tools: Floor Tiles (tile layout calculator), Wall Paint (paint coverage estimator), and Lot Plotter (land area calculator). Each tool provides form input, validation, and result display.
+**Scope:** `src/components/tools/` subtree
 
-## Key Files
+**Current snapshot:** 3 directories and 7 files beneath this scope (excluding this `AGENTS.md`).
 
-| File | Description |
-|------|-------------|
-| `ToolCard.tsx` | Reusable card component for tool discovery (icon, title, description, CTA) |
-| `ToolPageLayout.tsx` | Page layout wrapper for individual tool pages |
-| `ThreeDCanvasPlaceholder.tsx` | Placeholder for 3D visualization (React Three Fiber ready) |
-| `floor-tiles/FloorTilesForm.tsx` | Form for floor tile calculator (room dimensions, tile size, grout width, waste calculation) |
-| `wall-paint/WallPaintForm.tsx` | Form for wall paint calculator (surface area, paint coverage) |
-| `lot-plotter/LotPlotterForm.tsx` | Form for lot area calculator (land dimensions, area calculation) |
+**Top local directories:** `floor-tiles/`, `lot-plotter/`, `wall-paint/`
 
-## For AI Agents
+**Top local files:** `index.ts`, `ThreeDCanvasPlaceholder.tsx`, `ToolCard.tsx`, `ToolPageLayout.tsx`
 
-### Working In This Directory
+### What agents must do here
+- Inspect the consuming routes/features before changing shared UI behavior in this subtree.
+- Preserve SlateCamp design-token usage, client/server boundaries, and current composition patterns.
+- When components are reused across portals, note any downstream impact in docs or higher-scope `AGENTS.md` updates.
 
-- **Validation**: Client-side validation with error state display; prevents invalid submissions
-- **Calculations**: All math done client-side; results returned to parent via `onCalculate()` callback
-- **Presets**: Common values offered as buttons (e.g., tile sizes 300/400/600mm); custom override available
-- **Units**: Floor Tiles (mm input, m output), Wall Paint (varies), Lot Plotter (varies)
-- **Type Safety**: Dedicated result types (`FloorTilesResult`, etc.) imported from `@/types/tools`
-- **Styling**: Use `Card`, `CardHeader`, `CardTitle`, `CardContent` from `@/components/ui/card`
-- **Error Display**: Red text, `text-destructive` class; messages appear below failing input
-- **Accessibility**: Input `id` + `Label htmlFor`, `aria-invalid` on errors
+### Validation expectations
+- `bun run type-check` for repo-wide TypeScript sanity when changes touch source or instructions about source behavior.
+- `bun run lint` when wording implies code style/workflow claims that should match current tooling.
+- Targeted path/file existence checks for every doc or route reference you add.
 
-### Dependencies
-### Internal
-
-- `@/components/ui/` - Button, Input, Label, Card
-- `@/types/tools` - Result types (FloorTilesResult, WallPaintResult, LotPlotterResult)
-- `@/lib/utils` - `cn()` utility
-- React hooks - `useState`
-
-<!-- MANUAL: Test all calculator formulas against known reference values before launch. Add unit tests for edge cases (zero values, max limits). Ensure result accuracy for professional use. -->
+### Anti-laziness rule
+- Do not stop at this directory listing. Open the live files that implement the behavior you are describing or changing.
+- If older notes, counts, or examples elsewhere in this file drift from the live tree, prefer current code and this reality-refresh block.
+- When you change structure, ownership, workflow, or key file references in this scope, update this `AGENTS.md` in the same change.
+<!-- REALITY-REFRESH:END -->

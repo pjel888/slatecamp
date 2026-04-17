@@ -1,52 +1,31 @@
-<!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-03-25 | Updated: 2026-03-25 -->
+<!-- Parent: ../../../AGENTS.md -->
+<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
 
 # payments
 
-## Purpose
+<!-- REALITY-REFRESH:START -->
+## 2026-04-16 Reality Refresh
 
-Payment provider abstraction layer. Routes checkout creation to either LemonSqueezy or PayRex based on the `PAYMENT_PROVIDER` environment variable. Defines the `PaymentProvider` type, `CreateCheckoutParams`, and `CheckoutResult` interfaces used across the billing system.
+**Scope:** `src/lib/payments/` subtree
 
-## Key Files
+**Current snapshot:** 0 directories and 1 files beneath this scope (excluding this `AGENTS.md`).
 
-| File | Description |
-|------|-------------|
-| **provider.ts** | `getPaymentProvider()` -- resolves active provider (`"lemonsqueezy"` or `"payrex"`, defaults to `"payrex"`). `createCheckout(params)` -- creates a checkout session via the active provider. Dynamically imports `@/lib/lemonsqueezy/config` or `@/lib/payrex/config`. |
+**Top local directories:** none
 
-## For AI Agents
+**Top local files:** `provider.ts`
 
-### Working In This Directory
+### What agents must do here
+- Inspect live call sites, tests, schema/config dependencies, and adjacent helpers before editing this logic layer.
+- Preserve boundaries between pure logic, query helpers, server actions, provider integrations, and validation schemas.
+- Avoid assumption-driven changes to IRT/SRS, entitlements, analytics, or payment logic without tracing actual usage.
 
-1. **Provider resolution.** `getPaymentProvider()` checks `PAYMENT_PROVIDER` env var. Falls back to `"payrex"` if LemonSqueezy key is missing.
-2. **Dynamic imports.** Provider configs are dynamically imported to avoid loading both SDKs.
-3. **Tiers.** Three subscription tiers: `"camp"`, `"insurance"`, `"institutional"`.
-4. **Adding a new provider:** Implement the same checkout interface (`CreateCheckoutParams` -> `CheckoutResult`), add a branch in `createCheckout()`, create config in `@/lib/{provider}/config.ts`.
+### Validation expectations
+- `bun run type-check` for repo-wide TypeScript sanity when changes touch source or instructions about source behavior.
+- `bun run lint` when wording implies code style/workflow claims that should match current tooling.
+- Targeted path/file existence checks for every doc or route reference you add.
 
-### Common Patterns
-
-**Creating a checkout:**
-```typescript
-import { createCheckout } from '@/lib/payments/provider'
-
-const result = await createCheckout({
-  userId: user.id,
-  email: user.email,
-  tier: 'camp',
-  successUrl: `${baseUrl}/success`,
-  cancelUrl: `${baseUrl}/pricing`,
-})
-// result.url -> redirect URL, result.provider -> 'lemonsqueezy' | 'payrex'
-```
-
-## Dependencies
-
-### Internal
-
-- `@/lib/lemonsqueezy/config` -- `getLemonSqueezy()`, `LEMONSQUEEZY_PLANS` (dynamic import)
-- `@/lib/payrex/config` -- `getPayRex()`, `PAYREX_PLANS` (dynamic import)
-- `@/types/app` -- `UserTier`
-
-### External
-
-- Environment: `PAYMENT_PROVIDER`, `LEMONSQUEEZY_API_KEY`
-
+### Anti-laziness rule
+- Do not stop at this directory listing. Open the live files that implement the behavior you are describing or changing.
+- If older notes, counts, or examples elsewhere in this file drift from the live tree, prefer current code and this reality-refresh block.
+- When you change structure, ownership, workflow, or key file references in this scope, update this `AGENTS.md` in the same change.
+<!-- REALITY-REFRESH:END -->

@@ -1,58 +1,31 @@
-<!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-03-24 | Updated: 2026-03-25 -->
+<!-- Parent: ../../AGENTS.md -->
+<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
 
 # hooks
 
-## Purpose
+<!-- REALITY-REFRESH:START -->
+## 2026-04-16 Reality Refresh
 
-Custom React hooks organized by feature domain. Provides reusable stateful logic for quiz sessions, note-taking, compliance checks, guided sequences, and 3D Lab telemetry.
+**Scope:** `src/hooks/` subtree
 
-## Key Files
+**Current snapshot:** 1 directories and 15 files beneath this scope (excluding this `AGENTS.md`).
 
-| File | Description |
-|------|-------------|
-| `useComplianceCheck.ts` | Building code compliance validation -- evaluates parametric values against code thresholds using LabStore, returns ComplianceState |
-| `useGuidedSequence.ts` | Step-by-step guided learning sequence controller -- manages hotspot sequencing during guided exploration mode in the 3D Lab |
-| `useLabTelemetry.ts` | 3D Lab behavioral event tracking -- tracks disorientation, idle, linger, erratic rotation, and zoom cycle signals for adaptive scaffolding |
+**Top local directories:** `notes/`
 
-## Subdirectories
+**Top local files:** `useChartColors.ts`, `useComplianceCheck.ts`, `useDeviceSensors.ts`, `useGestureSignalCapture.ts`, `useGuidedSequence.ts`, `useKeyboardShortcuts.ts`, `useLabTelemetry.ts`, `useOnlineStatus.ts`, `useQuizFocusManager.ts`, `useQuizShellHandlers.ts`
 
-| Directory | Purpose |
-|-----------|---------|
-| `notes/` | Note-taking hooks (3 hooks + barrel index) -- `useNoteEditor` (CRUD, autosave), `useNotesList` (stubs state, filter-driven refetching), `useNotesPanels` (panel collapse states, keyboard shortcuts, localStorage persistence) |
-| `quiz/` | Quiz session hooks (4 hooks + barrel index) -- `useQuizState` (answer tracking, option states, navigation), `useQuizPersistence` (localStorage + Supabase autosave), `useQuizTimer` (strict/flexible timer with per-question and total modes), `useQuizTelemetry` (interaction logging, confidence tracking) |
+### What agents must do here
+- Trace usages of shared hooks/stores/types/config/data before editing; blast radius is usually wider than the local file count suggests.
+- Keep naming and data contracts synchronized with consuming app/components/lib code.
+- Update docs or parent AGENTS guidance when shared primitives change meaning or scope.
 
-## For AI Agents
+### Validation expectations
+- `bun run type-check` for repo-wide TypeScript sanity when changes touch source or instructions about source behavior.
+- `bun run lint` when wording implies code style/workflow claims that should match current tooling.
+- Targeted path/file existence checks for every doc or route reference you add.
 
-### Working In This Directory
-
-- Hooks must follow React rules (call order, dependency arrays)
-- Use arrow function syntax for all hook definitions
-- Prefix all hooks with `use`
-- Keep hooks focused on a single concern -- split if a hook exceeds ~100 lines
-- Additional shared hooks live in `src/lib/hooks/` -- check there before creating duplicates
-- All hooks in `notes/` and `quiz/` are `'use client'` components
-
-### Common Patterns
-
-- Feature-specific hooks are grouped in subdirectories (`notes/`, `quiz/`)
-- Barrel exports via `index.ts` in each subdirectory
-- General-purpose hooks go in `src/lib/hooks/` instead
-- Hooks that need Supabase access use Server Actions from `@/lib/actions/`
-- 3D Lab hooks consume state from `@/stores/useLabStore`
-
-## Dependencies
-
-### Internal
-
-- `src/lib/supabase/` -- Database access (via Server Actions)
-- `src/lib/actions/` -- `notes-actions`, `quiz` Server Actions
-- `src/types/` -- Shared type definitions (`app.ts`, `3d-lab.ts`)
-- `src/stores/useLabStore` -- 3D Lab global state (used by useComplianceCheck, useGuidedSequence)
-- `src/lib/lab-analytics` -- Event tracking (used by useLabTelemetry)
-
-### External
-
-- `react` -- useState, useEffect, useCallback, useMemo, useRef
-
-<!-- MANUAL: -->
+### Anti-laziness rule
+- Do not stop at this directory listing. Open the live files that implement the behavior you are describing or changing.
+- If older notes, counts, or examples elsewhere in this file drift from the live tree, prefer current code and this reality-refresh block.
+- When you change structure, ownership, workflow, or key file references in this scope, update this `AGENTS.md` in the same change.
+<!-- REALITY-REFRESH:END -->

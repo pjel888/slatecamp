@@ -1,54 +1,31 @@
-<!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-03-24 | Updated: 2026-03-25 -->
+<!-- Parent: ../../../AGENTS.md -->
+<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
 
 # audit
 
-Audit trail logging for admin actions and data changes. Server-side only (use server).
+<!-- REALITY-REFRESH:START -->
+## 2026-04-16 Reality Refresh
 
-## Purpose
+**Scope:** `src/lib/audit/` subtree
 
-Immutable log of admin/system actions (create, update, delete) for compliance and debugging. Requires super-admin role to query. Supports filtering by table, event type, actor, date range, record ID.
+**Current snapshot:** 0 directories and 3 files beneath this scope (excluding this `AGENTS.md`).
 
-## Key Files
+**Top local directories:** none
 
-| File | Description |
-|------|-------------|
-| `audit-actions.ts` | `getAuditLogsAction(filters)` — server action to fetch audit logs. Super-admin gated. Returns `AuditLog[]` ordered by created_at DESC. |
-| `audit-queries.ts` | `getAuditLogs(filters)`, `getAuditLogsByTable(tableName, recordId?)`, `getAuditLogsByActor(actorId)`, `getAuditLogCount(filters)`. All super-admin gated. |
+**Top local files:** `audit-actions.ts`, `audit-queries.test.ts`, `audit-queries.ts`
 
-## For AI Agents
+### What agents must do here
+- Inspect live call sites, tests, schema/config dependencies, and adjacent helpers before editing this logic layer.
+- Preserve boundaries between pure logic, query helpers, server actions, provider integrations, and validation schemas.
+- Avoid assumption-driven changes to IRT/SRS, entitlements, analytics, or payment logic without tracing actual usage.
 
-### Working In This Directory
+### Validation expectations
+- `bun run type-check` for repo-wide TypeScript sanity when changes touch source or instructions about source behavior.
+- `bun run lint` when wording implies code style/workflow claims that should match current tooling.
+- Targeted path/file existence checks for every doc or route reference you add.
 
-- All functions are `'use server'` (server actions/utilities).
-- Every function checks `isSuperAdmin()` before querying; throws if not authorized.
-- `AuditLog` schema: `id`, `actor_id`, `event_type`, `table_name`, `record_id`, `metadata`, `content_snapshot`, `created_at`.
-- Supports filtering: `tableName`, `eventType`, `actorId`, `recordId`, date range, pagination (offset/limit).
-
-### Adding New Audit Query
-
-1. Create function in `audit-queries.ts`.
-2. Call `isSuperAdmin()` first; throw if not authorized.
-3. Build query from base: `supabase.from('audit_logs').select('*')`.
-4. Apply filters using `.eq()`, `.gte()`, `.lte()` as needed.
-5. Return `AuditLog[]` or count; handle errors with throw.
-
-### Common Patterns
-
-- **Filtering**: Each filter param is optional; only add `.eq()` if provided.
-- **Pagination**: Use `.range(offset, offset + limit - 1)` for slice behavior.
-- **Authorization**: All queries check super-admin; no partial/role-based data filtering.
-- **Error handling**: Throw on Supabase error; client/caller handles try/catch.
-
-## Dependencies
-
-### Internal
-
-- `@/lib/supabase/server` — Create server Supabase client.
-- `@/lib/admin/roles` — `isSuperAdmin()` authorization check.
-
-### External
-
-- Supabase (server client).
-
-<!-- MANUAL: -->
+### Anti-laziness rule
+- Do not stop at this directory listing. Open the live files that implement the behavior you are describing or changing.
+- If older notes, counts, or examples elsewhere in this file drift from the live tree, prefer current code and this reality-refresh block.
+- When you change structure, ownership, workflow, or key file references in this scope, update this `AGENTS.md` in the same change.
+<!-- REALITY-REFRESH:END -->

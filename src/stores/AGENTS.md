@@ -1,49 +1,31 @@
-<!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-03-24 | Updated: 2026-03-25 -->
+<!-- Parent: ../../AGENTS.md -->
+<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
 
 # stores
 
-## Purpose
+<!-- REALITY-REFRESH:START -->
+## 2026-04-16 Reality Refresh
 
-Zustand state stores for client-side global state management. Used when state needs to be shared across multiple components without prop drilling.
+**Scope:** `src/stores/` subtree
 
-## Key Files
+**Current snapshot:** 0 directories and 4 files beneath this scope (excluding this `AGENTS.md`).
 
-| File | Description |
-|------|-------------|
-| `dev-store.ts` | Developer tools state -- dev panel visibility, feature flag overrides, debug mode, impersonation presets (architecture student, pro subscriber, org admin, etc.), persisted to localStorage via zustand/persist |
-| `useLabStore.ts` | 3D Lab workspace state -- active hotspot, panel mode, visited/answered/correct tracking sets, explore mode (guided/free), parametric values, compliance state, camera position, quiz results |
+**Top local directories:** none
 
-## For AI Agents
+**Top local files:** `dev-store.ts`, `useNotificationStore.ts`, `useQuizStore.ts`, `useQuizTimerStore.ts`
 
-### Working In This Directory
+### What agents must do here
+- Trace usages of shared hooks/stores/types/config/data before editing; blast radius is usually wider than the local file count suggests.
+- Keep naming and data contracts synchronized with consuming app/components/lib code.
+- Update docs or parent AGENTS guidance when shared primitives change meaning or scope.
 
-- Use Zustand `create()` with arrow functions
-- Keep stores focused -- one store per major feature area
-- Prefer Server Components + props over client stores when possible
-- Only use stores for truly client-side interactive state (camera position, UI toggles, etc.)
-- Never store server-fetched data in Zustand -- use Server Components or React Context instead
-- `dev-store.ts` uses `zustand/persist` with `createJSONStorage` for localStorage persistence
+### Validation expectations
+- `bun run type-check` for repo-wide TypeScript sanity when changes touch source or instructions about source behavior.
+- `bun run lint` when wording implies code style/workflow claims that should match current tooling.
+- Targeted path/file existence checks for every doc or route reference you add.
 
-### Common Patterns
-
-- `create<StoreType>()((set, get) => ({ ... }))` pattern
-- Selectors for performance: `useLabStore((s) => s.activeScene)`
-- Actions defined inline in the store creator
-- `Set<string>` for tracking collections (visited, answered, correct IDs)
-- Impersonation presets in dev-store define role/tier/userType combos for testing
-
-## Dependencies
-
-### Internal
-
-- `src/types/3d-lab.ts` -- PanelMode, ExploreMode, ComplianceState, QuizResult types
-- `src/types/app.ts` -- UserTier, UserType, OrgMemberRole types
-- `src/config/feature-flags.ts` -- FeatureFlagKey type for dev overrides
-
-### External
-
-- `zustand` -- State management library
-- `zustand/middleware` -- persist, createJSONStorage
-
-<!-- MANUAL: -->
+### Anti-laziness rule
+- Do not stop at this directory listing. Open the live files that implement the behavior you are describing or changing.
+- If older notes, counts, or examples elsewhere in this file drift from the live tree, prefer current code and this reality-refresh block.
+- When you change structure, ownership, workflow, or key file references in this scope, update this `AGENTS.md` in the same change.
+<!-- REALITY-REFRESH:END -->

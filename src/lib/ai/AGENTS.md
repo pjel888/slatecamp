@@ -1,54 +1,31 @@
-<!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-03-24 | Updated: 2026-03-25 -->
+<!-- Parent: ../../../AGENTS.md -->
+<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
 
 # ai
 
-AI provider abstraction and prompt templates. Supports Anthropic Claude and OpenAI.
+<!-- REALITY-REFRESH:START -->
+## 2026-04-16 Reality Refresh
 
-## Purpose
+**Scope:** `src/lib/ai/` subtree
 
-Centralized AI integration. Provider pattern allows swapping between Anthropic (primary, Temperature 0.0 for tutoring) and OpenAI. Prompt templates for question generation and Socratic tutoring.
+**Current snapshot:** 0 directories and 2 files beneath this scope (excluding this `AGENTS.md`).
 
-## Key Files
+**Top local directories:** none
 
-| File | Description |
-|------|-------------|
-| `prompts.ts` | `questionGenerationPrompt()` — exam question writer with 4-choice format, difficulty, tags. `socraticTutorSystemPrompt()` — Temperature 0.0 Socratic tutor (Anthropic only) with RAG context + weak domain hints. |
-| `provider.ts` | `AIProvider` interface (generateCompletion, generateEmbedding, streamCompletion). `OpenAIProvider` + `AnthropicProvider` implementations. `getAIProvider()` resolves from `AI_PROVIDER` env var. |
+**Top local files:** `prompts.ts`, `provider.ts`
 
-## For AI Agents
+### What agents must do here
+- Inspect live call sites, tests, schema/config dependencies, and adjacent helpers before editing this logic layer.
+- Preserve boundaries between pure logic, query helpers, server actions, provider integrations, and validation schemas.
+- Avoid assumption-driven changes to IRT/SRS, entitlements, analytics, or payment logic without tracing actual usage.
 
-### Working In This Directory
+### Validation expectations
+- `bun run type-check` for repo-wide TypeScript sanity when changes touch source or instructions about source behavior.
+- `bun run lint` when wording implies code style/workflow claims that should match current tooling.
+- Targeted path/file existence checks for every doc or route reference you add.
 
-- Provider pattern: Implement `AIProvider` interface for new providers.
-- Prompts are functions returning prompt strings; kept separate from provider.
-- Temperature: Question generation 0.7 (creative), tutoring 0.0 (deterministic).
-- Anthropic: Primary for tutoring (mandated Temperature 0.0, citation badges in response).
-
-### Adding a New Prompt
-
-1. Create function in `prompts.ts`: `export function myPrompt(...): string`.
-2. Accept context params (profession, discipline, content, etc.).
-3. Return template string with injected values.
-4. Include system prompt instruction if tutoring/guardrails needed.
-
-### Common Patterns
-
-- **System prompts**: Only in tutoring (0.0 temperature). Used in `generateCompletion(..., { systemPrompt })`.
-- **RAG context**: Injected into socratic prompts via `ragContext` param.
-- **JSON responses**: Question generator expects JSON array; client parses.
-- **Streaming**: Used for chat/tutor responses; client handles token arrival.
-
-## Dependencies
-
-### Internal
-
-- None (prompts are static template generators).
-
-### External
-
-- Anthropic API (claude-sonnet-4-20250514).
-- OpenAI API (gpt-4o, text-embedding-3-small).
-- Environment: `AI_PROVIDER`, `ANTHROPIC_API_KEY`, `OPENAI_API_KEY`.
-
-<!-- MANUAL: -->
+### Anti-laziness rule
+- Do not stop at this directory listing. Open the live files that implement the behavior you are describing or changing.
+- If older notes, counts, or examples elsewhere in this file drift from the live tree, prefer current code and this reality-refresh block.
+- When you change structure, ownership, workflow, or key file references in this scope, update this `AGENTS.md` in the same change.
+<!-- REALITY-REFRESH:END -->

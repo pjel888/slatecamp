@@ -1,41 +1,31 @@
-<!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-04-02 | Updated: 2026-04-02 -->
+<!-- Parent: ../../../../AGENTS.md -->
+<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
 
-# Camp Trails
+# camptrails
 
-## Purpose
-Structured study paths (Camp Trails) implementation. Multi-day, topic-paced learning prescriptions calibrated to user's exam date and knowledge gaps. Hub displays active enrollments, recommendations, and trail library. Authenticated dashboard area.
+<!-- REALITY-REFRESH:START -->
+## 2026-04-16 Reality Refresh
 
-## Key Files
-| File | Description |
-|------|-------------|
-| `page.tsx` | Hub page listing active trails, recommendations, and full trail library |
-| `[slug]/page.tsx` | Trail detail/overview page |
-| `[slug]/today/page.tsx` | Today's lesson/daily study prescription page |
-| `[slug]/day/[dayNumber]/complete/page.tsx` | Completion confirmation page after daily session |
-| `loading.tsx`, `[slug]/loading.tsx`, etc. | Skeleton loaders |
+**Scope:** `src/app/dashboard/camptrails/` subtree
 
-## For AI Agents
-### Working In This Directory
-- **Auth required** — user must be logged in (check parent dashboard auth)
-- **Hub pattern:** Index page orchestrates three zones: (1) active trail banner, (2) recommendation card, (3) trail library grid
-- **Data flow on hub (page.tsx):** Promise.all fetches [trails, enrollments, recommendation] in parallel; filters active enrollments; maps trails to enrollment data
-- **Single focus above fold:** Only ONE active trail or recommendation shown; prevents cognitive overload
-- **Empty state:** Welcoming message when no trails available (no panic, suggests Camp Mode or Wiki as alternatives)
-- **Daily experience:** `[slug]/today/page.tsx` shows "daily prescription"; completion flows to `/day/[dayNumber]/complete`
-- **Enrollment states:** Track `status === 'active'` vs. completed/paused
-- **URL structure:** `/dashboard/camptrails/[slug]` (slug is trail identifier), `/[slug]/today`, `/[slug]/day/[dayNumber]/complete`
+**Current snapshot:** 5 directories and 8 files beneath this scope (excluding this `AGENTS.md`).
 
-## Dynamic Routes
-- `[slug]` — Trail identifier/slug (friendly URL segment)
-- `[dayNumber]` — Day number (integer or date-based identifier)
+**Top local directories:** `[slug]/`
 
-## Dependencies
-### Internal
-- `@/components/layouts/SharedPageLayout` — Dashboard layout wrapper
-- `@/lib/queries/trails` — `getPublishedTrails()`, `getUserEnrollments()`, `recommendTrail()` server functions
-- `@/types/app` — `CampTrail`, `TrailEnrollment` types
-- `@/components/trails/{RecommendedTrailCard,ActiveTrailBanner,TrailLibrary}` — UI components
-- `@phosphor-icons/react/dist/ssr` — Icons (MapTrifold, Compass)
+**Top local files:** `loading.tsx`, `page.tsx`
 
-<!-- MANUAL: -->
+### What agents must do here
+- Inspect route groups, `page.tsx`, `layout.tsx`, `loading.tsx`, `error.tsx`, and any `route.ts` handlers in this subtree before editing.
+- Preserve server-component defaults, auth/portal boundaries, and route-level loading/error behavior.
+- Cross-check UI/route changes against the matching components, server actions, and nearest portal docs in `.ai`.
+
+### Validation expectations
+- `bun run type-check` for repo-wide TypeScript sanity when changes touch source or instructions about source behavior.
+- `bun run lint` when wording implies code style/workflow claims that should match current tooling.
+- Targeted path/file existence checks for every doc or route reference you add.
+
+### Anti-laziness rule
+- Do not stop at this directory listing. Open the live files that implement the behavior you are describing or changing.
+- If older notes, counts, or examples elsewhere in this file drift from the live tree, prefer current code and this reality-refresh block.
+- When you change structure, ownership, workflow, or key file references in this scope, update this `AGENTS.md` in the same change.
+<!-- REALITY-REFRESH:END -->

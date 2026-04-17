@@ -1,35 +1,31 @@
-<!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-03-25 | Updated: 2026-03-25 -->
+<!-- Parent: ../../../AGENTS.md -->
+<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
 
 # lemonsqueezy
 
-## Purpose
+<!-- REALITY-REFRESH:START -->
+## 2026-04-16 Reality Refresh
 
-LemonSqueezy payment gateway configuration. Provides a singleton LemonSqueezy client and plan/pricing constants. Used by `@/lib/payments/provider.ts` when the active payment provider is LemonSqueezy.
+**Scope:** `src/lib/lemonsqueezy/` subtree
 
-## Key Files
+**Current snapshot:** 0 directories and 1 files beneath this scope (excluding this `AGENTS.md`).
 
-| File | Description |
-|------|-------------|
-| **config.ts** | `getLemonSqueezy()` -- singleton LemonSqueezy client factory (API version `2026-02-25.clover`). `LEMONSQUEEZY_PLANS` -- plan definitions for `camp` (499 PHP), `insurance` (1499 PHP), `institutional` (4999 PHP) with price IDs from env vars. |
+**Top local directories:** none
 
-## For AI Agents
+**Top local files:** `config.ts`
 
-### Working In This Directory
+### What agents must do here
+- Inspect live call sites, tests, schema/config dependencies, and adjacent helpers before editing this logic layer.
+- Preserve boundaries between pure logic, query helpers, server actions, provider integrations, and validation schemas.
+- Avoid assumption-driven changes to IRT/SRS, entitlements, analytics, or payment logic without tracing actual usage.
 
-1. **Singleton pattern.** `getLemonSqueezy()` creates one LemonSqueezy instance per process. Do not create clients directly.
-2. **Price IDs from env.** Each plan's `priceId` comes from `LEMONSQUEEZY_CAMP_PRICE_ID`, `LEMONSQUEEZY_INSURANCE_PRICE_ID`, `LEMONSQUEEZY_INSTITUTIONAL_PRICE_ID`.
-3. **Currency is PHP.** All amounts are in Philippine Peso.
-4. **Do not import directly from components.** Access LemonSqueezy through `@/lib/payments/provider.ts`.
+### Validation expectations
+- `bun run type-check` for repo-wide TypeScript sanity when changes touch source or instructions about source behavior.
+- `bun run lint` when wording implies code style/workflow claims that should match current tooling.
+- Targeted path/file existence checks for every doc or route reference you add.
 
-## Dependencies
-
-### Internal
-
-- None (leaf module)
-
-### External
-
-- `lemonsqueezy` -- LemonSqueezy Node.js SDK
-- Environment: `LEMONSQUEEZY_API_KEY`, `LEMONSQUEEZY_CAMP_PRICE_ID`, `LEMONSQUEEZY_INSURANCE_PRICE_ID`, `LEMONSQUEEZY_INSTITUTIONAL_PRICE_ID`
-
+### Anti-laziness rule
+- Do not stop at this directory listing. Open the live files that implement the behavior you are describing or changing.
+- If older notes, counts, or examples elsewhere in this file drift from the live tree, prefer current code and this reality-refresh block.
+- When you change structure, ownership, workflow, or key file references in this scope, update this `AGENTS.md` in the same change.
+<!-- REALITY-REFRESH:END -->

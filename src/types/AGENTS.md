@@ -1,54 +1,31 @@
-<!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-03-24 | Updated: 2026-03-25 -->
+<!-- Parent: ../../AGENTS.md -->
+<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
 
 # types
 
-## Purpose
+<!-- REALITY-REFRESH:START -->
+## 2026-04-16 Reality Refresh
 
-Centralized TypeScript type definitions shared across the entire application. Defines domain models (disciplines, taxonomy nodes, questions, sessions), UI types, Supabase database types, portal-specific contracts, and module declarations.
+**Scope:** `src/types/` subtree
 
-## Key Files
+**Current snapshot:** 0 directories and 16 files beneath this scope (excluding this `AGENTS.md`).
 
-| File | Description |
-|------|-------------|
-| `app.ts` | Core domain types -- UserTier, QuestionType, DifficultyLevel, TestMode, SessionStatus, Profession, TaxonomyNode, Choice, Discipline, and all major entity interfaces |
-| `supabase.ts` | Auto-generated Supabase database types -- maps to DATABASE_SCHEMA.sql (51 tables) |
-| `testing.ts` | Testing session types -- ModeSource, UIMode, mode metadata, session config, and debrief result interfaces |
-| `dashboard.ts` | Dashboard-specific UI types -- HeroMicroStat, HeatmapDay, RecommendedAction, and component props |
-| `wiki.ts` | Wiki content types -- WikiCalloutType, WikiTableRow, article and section interfaces |
-| `ceo.ts` | CEO Dashboard type contracts -- FinancialSummary, RevenueBreakdown, UnitEconomics, and all CEO panel interfaces |
-| `developer.ts` | Developer Hub types -- PropsTableEntry, ComponentMeta, ComponentPageData for component documentation |
-| `3d-lab.ts` | 3D Lab types -- HotspotType, PanelMode, ComplianceState, ExploreMode, scene and module interfaces |
-| `tools.ts` | Calculator tool types -- FloorTilesInput/Result, LotPlotter, WallPaint interfaces |
-| `bun-test.d.ts` | Bun test runner type declarations |
-| `payrex-node.d.ts` | PayRex payment SDK type declarations |
+**Top local directories:** none
 
-## For AI Agents
+**Top local files:** `3d-lab.ts`, `app.ts`, `bun-test.d.ts`, `ceo.ts`, `dashboard.ts`, `developer.ts`, `lot.ts`, `module-blueprint.ts`, `notifications.ts`, `patent.ts`
 
-### Working In This Directory
+### What agents must do here
+- Trace usages of shared hooks/stores/types/config/data before editing; blast radius is usually wider than the local file count suggests.
+- Keep naming and data contracts synchronized with consuming app/components/lib code.
+- Update docs or parent AGENTS guidance when shared primitives change meaning or scope.
 
-- **`app.ts` is the master type file** -- check here first for any domain type
-- **`supabase.ts` is auto-generated** -- do not edit manually; regenerate from DATABASE_SCHEMA.sql
-- **`testing.ts` owns all quiz/session mode types** -- ModeSource maps DB sources to UIMode for routing
-- **`ceo.ts` owns all CEO Dashboard contracts** -- components and Server Actions must use these types, no `any`
-- When adding new types, place them in the most specific file (e.g., wiki types in `wiki.ts`, developer hub types in `developer.ts`)
-- If a type is used across 3+ feature areas, put it in `app.ts`
-- Always export types with `export type` or `export interface`
+### Validation expectations
+- `bun run type-check` for repo-wide TypeScript sanity when changes touch source or instructions about source behavior.
+- `bun run lint` when wording implies code style/workflow claims that should match current tooling.
+- Targeted path/file existence checks for every doc or route reference you add.
 
-### Common Patterns
-
-- Union types for enums: `type TestMode = "camp" | "storm" | "chill" | ...`
-- Interfaces match database table structures (consult DATABASE_SCHEMA.sql)
-- Optional fields use `?` suffix, nullable fields use `| null`
-- `.d.ts` files for third-party module declarations only
-- `testing.ts` imports from `app.ts` -- never the reverse
-
-## Dependencies
-
-### Internal
-
-- `DATABASE_SCHEMA.sql` (root) -- authoritative schema for `supabase.ts`
-- `src/config/portals.ts` -- portal types reference PortalKey
-- `src/components/quiz/` -- quiz components consume `testing.ts` types
-
-<!-- MANUAL: -->
+### Anti-laziness rule
+- Do not stop at this directory listing. Open the live files that implement the behavior you are describing or changing.
+- If older notes, counts, or examples elsewhere in this file drift from the live tree, prefer current code and this reality-refresh block.
+- When you change structure, ownership, workflow, or key file references in this scope, update this `AGENTS.md` in the same change.
+<!-- REALITY-REFRESH:END -->

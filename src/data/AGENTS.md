@@ -1,46 +1,31 @@
-<!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-03-24 | Updated: 2026-03-25 -->
+<!-- Parent: ../../AGENTS.md -->
+<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
 
 # data
 
-## Purpose
+<!-- REALITY-REFRESH:START -->
+## 2026-04-16 Reality Refresh
 
-Static data files and seed scripts for populating the database during development. Contains reference data for taxonomy, questions, 3D models, and mock content.
+**Scope:** `src/data/` subtree
 
-## Key Files
+**Current snapshot:** 1 directories and 6 files beneath this scope (excluding this `AGENTS.md`).
 
-| File | Description |
-|------|-------------|
-| `mock-questions.json` | Mock question data for development and testing -- used by demo mode and UI prototyping |
+**Top local directories:** `seed/`
 
-## Subdirectories
+**Top local files:** `mock-questions.json`, `patch.json`, `sample-lots.ts`
 
-| Directory | Purpose |
-|-----------|---------|
-| `seed/` | Database seed data files -- `taxonomy.json` (taxonomy tree nodes and hierarchies), `questions.json` (sample questions with IRT parameters), `models_3d.json` (3D model metadata for Lab modules) |
+### What agents must do here
+- Trace usages of shared hooks/stores/types/config/data before editing; blast radius is usually wider than the local file count suggests.
+- Keep naming and data contracts synchronized with consuming app/components/lib code.
+- Update docs or parent AGENTS guidance when shared primitives change meaning or scope.
 
-## For AI Agents
+### Validation expectations
+- `bun run type-check` for repo-wide TypeScript sanity when changes touch source or instructions about source behavior.
+- `bun run lint` when wording implies code style/workflow claims that should match current tooling.
+- Targeted path/file existence checks for every doc or route reference you add.
 
-### Working In This Directory
-
-- Seed data must match DATABASE_SCHEMA.sql column names and foreign key relationships
-- Use `bun run db:seed` to execute seed scripts
-- Keep seed data realistic -- use domain-appropriate content for architecture/engineering exams
-- `mock-questions.json` is for client-side demo mode; seed JSON files are for database population
-- IRT parameters in `questions.json` must include discrimination (a) and difficulty (b) values
-
-### Common Patterns
-
-- Seed files are plain JSON arrays matching table row structures
-- `taxonomy.json` defines the full tree: discipline > subject > topic > subtopic
-- `models_3d.json` entries reference asset URLs and module slugs used by the 3D Lab
-
-## Dependencies
-
-### Internal
-
-- `DATABASE_SCHEMA.sql` (root) -- authoritative schema reference
-- `src/types/supabase.ts` -- Database type definitions
-- `supabase/02_RUN_ALL_SEEDS.sql` -- master seed script references this data
-
-<!-- MANUAL: -->
+### Anti-laziness rule
+- Do not stop at this directory listing. Open the live files that implement the behavior you are describing or changing.
+- If older notes, counts, or examples elsewhere in this file drift from the live tree, prefer current code and this reality-refresh block.
+- When you change structure, ownership, workflow, or key file references in this scope, update this `AGENTS.md` in the same change.
+<!-- REALITY-REFRESH:END -->

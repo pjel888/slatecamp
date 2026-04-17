@@ -1,55 +1,31 @@
-<!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-03-24 | Updated: 2026-03-25 -->
+<!-- Parent: ../../../AGENTS.md -->
+<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
 
 # utils
 
-Stateless utility functions: formatting, date math, string manipulation, wiki navigation, and question helpers.
+<!-- REALITY-REFRESH:START -->
+## 2026-04-16 Reality Refresh
 
-## Purpose
+**Scope:** `src/lib/utils/` subtree
 
-Reusable pure functions for common operations across the app. No side effects, no state, no dependencies on Context or stores. Safe to call from components, server actions, and middleware.
+**Current snapshot:** 0 directories and 8 files beneath this scope (excluding this `AGENTS.md`).
 
-## Key Files
+**Top local directories:** none
 
-| File | Description |
-|------|-------------|
-| `constants.ts` | `PROFESSIONS` (discipline/exam list), `TIER_LIMITS` (questions/day, AI tokens, configs), `TIER_PRICES`. |
-| `helpers.ts` | `formatDuration(ms)`, `formatPercentage(val)`, `daysUntil(date)`, `getGreeting()`, `pluralize(count, singular, plural?)`. |
-| `wiki.ts` | `findAdjacentPages(pages, currentId)` — returns `{ prev, next }` for wiki navigation. Sorts by `order_index`. |
-| `text.ts` | `snippet(content, maxLen=80)` — extracts plain text from TipTap/ProseMirror JSON; truncates to maxLen. |
-| `question.ts` | `getCorrectOptionId(question)` — resolves `correct_option_id` with fallback to legacy `correct_answer` field. |
+**Top local files:** `audit.ts`, `constants.ts`, `coverage.ts`, `format-time.ts`, `notifications.ts`, `promise.ts`, `question.ts`, `text.ts`
 
-## For AI Agents
+### What agents must do here
+- Inspect live call sites, tests, schema/config dependencies, and adjacent helpers before editing this logic layer.
+- Preserve boundaries between pure logic, query helpers, server actions, provider integrations, and validation schemas.
+- Avoid assumption-driven changes to IRT/SRS, entitlements, analytics, or payment logic without tracing actual usage.
 
-### Working In This Directory
+### Validation expectations
+- `bun run type-check` for repo-wide TypeScript sanity when changes touch source or instructions about source behavior.
+- `bun run lint` when wording implies code style/workflow claims that should match current tooling.
+- Targeted path/file existence checks for every doc or route reference you add.
 
-- All functions are **pure** (no side effects, deterministic).
-- Functions accept typed params, return typed values.
-- No imports of Context, stores, or client-side hooks.
-- Safe to use in server actions, middleware, and server components.
-
-### Adding a New Utility
-
-1. Create or update file based on category (formatting, date, string, etc.).
-2. Write pure function with clear JSDoc if complex.
-3. Export named function (no default exports).
-4. Test edge cases (null, empty, boundary values).
-
-### Naming Conventions
-
-- **format***: Return formatted strings (`formatDuration`, `formatPercentage`).
-- **compute***: Return computed values from calculations.
-- **get***: Retrieve/derive values (`getGreeting`, `getCorrectOptionId`).
-- **find***: Return search results (`findAdjacentPages`).
-
-## Dependencies
-
-### Internal
-
-- `@/types/app` — `Profession`, `WikiPage`, `UserTier`.
-
-### External
-
-- None (no third-party libraries).
-
-<!-- MANUAL: -->
+### Anti-laziness rule
+- Do not stop at this directory listing. Open the live files that implement the behavior you are describing or changing.
+- If older notes, counts, or examples elsewhere in this file drift from the live tree, prefer current code and this reality-refresh block.
+- When you change structure, ownership, workflow, or key file references in this scope, update this `AGENTS.md` in the same change.
+<!-- REALITY-REFRESH:END -->

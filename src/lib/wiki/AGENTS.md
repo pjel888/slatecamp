@@ -1,47 +1,31 @@
-<!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-03-25 | Updated: 2026-03-25 -->
+<!-- Parent: ../../../AGENTS.md -->
+<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
 
 # wiki
 
-## Purpose
+<!-- REALITY-REFRESH:START -->
+## 2026-04-16 Reality Refresh
 
-Wiki article lifecycle management with role-based review workflow. Handles article creation, status transitions (draft -> pending_review -> approved -> published), reviewer assignment, and content updates. Supports SME (Subject Matter Expert) review queue.
+**Scope:** `src/lib/wiki/` subtree
 
-## Key Files
+**Current snapshot:** 0 directories and 1 files beneath this scope (excluding this `AGENTS.md`).
 
-| File | Description |
-|------|-------------|
-| **wiki-actions.ts** | Server actions for wiki CRUD with review workflow: `createArticle()`, `updateArticle()`, `deleteArticle()`, `submitForReview()`, `approveArticle()`, `requestChanges()`, `publishArticle()`. Role-gated via `canReviewContent()` and `getUserRole()`. |
+**Top local directories:** none
 
-## For AI Agents
+**Top local files:** `wiki-actions.ts`
 
-### Working In This Directory
+### What agents must do here
+- Inspect live call sites, tests, schema/config dependencies, and adjacent helpers before editing this logic layer.
+- Preserve boundaries between pure logic, query helpers, server actions, provider integrations, and validation schemas.
+- Avoid assumption-driven changes to IRT/SRS, entitlements, analytics, or payment logic without tracing actual usage.
 
-1. **Review workflow.** Articles follow: `draft` -> `pending_review` -> `changes_requested` or `approved` -> `published` -> `archived`.
-2. **Role gates.** Creating requires auth. Reviewing requires `canReviewContent()`. Status fields track `reviewed_by`, `reviewed_at`, `reviewer_comments`.
-3. **Separate from admin wiki actions.** `@/lib/actions/admin/wiki.ts` handles admin-panel CRUD. This module handles the review workflow and SME queue.
-4. **Article interface.** `WikiArticle` type includes `id`, `title`, `content`, `discipline_id`, `author_id`, `status`, review metadata, timestamps.
+### Validation expectations
+- `bun run type-check` for repo-wide TypeScript sanity when changes touch source or instructions about source behavior.
+- `bun run lint` when wording implies code style/workflow claims that should match current tooling.
+- Targeted path/file existence checks for every doc or route reference you add.
 
-### Common Patterns
-
-**Creating an article:**
-```typescript
-import { createArticle } from '@/lib/wiki/wiki-actions'
-
-const result = await createArticle({
-  title: 'Article Title',
-  content: 'MDX content...',
-  discipline_id: disciplineId,
-})
-```
-
-## Dependencies
-
-### Internal
-
-- `@/lib/supabase/server` -- `createClient()` for DB access
-- `@/lib/admin/roles` -- `canReviewContent()`, `getUserRole()` for authorization
-
-### External
-
-- `next/cache` -- `revalidatePath`
+### Anti-laziness rule
+- Do not stop at this directory listing. Open the live files that implement the behavior you are describing or changing.
+- If older notes, counts, or examples elsewhere in this file drift from the live tree, prefer current code and this reality-refresh block.
+- When you change structure, ownership, workflow, or key file references in this scope, update this `AGENTS.md` in the same change.
+<!-- REALITY-REFRESH:END -->

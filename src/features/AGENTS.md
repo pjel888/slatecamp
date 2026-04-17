@@ -1,24 +1,31 @@
-<!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-04-02 | Updated: 2026-04-02 -->
+<!-- Parent: ../../AGENTS.md -->
+<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
 
 # features
 
-## Purpose
+<!-- REALITY-REFRESH:START -->
+## 2026-04-16 Reality Refresh
 
-Feature-scoped modules organized by domain. Each feature is self-contained with its own components, engine logic, hooks, store, types, and tests. This directory follows a vertical slice architecture — everything related to a feature lives together.
+**Scope:** `src/features/` subtree
 
-## Subdirectories
+**Current snapshot:** 63 directories and 548 files beneath this scope (excluding this `AGENTS.md`).
 
-| Directory | Purpose |
-|-----------|---------|
-| `wall-configurator/` | 3D wall construction configurator with CHB, drywall, plaster, paint, and tile calculation engines (see `wall-configurator/AGENTS.md`) |
+**Top local directories:** `3d-lab/`, `wall-configurator/`
 
-## For AI Agents
+**Top local files:** none
 
-### Working In This Directory
-- Each feature is a self-contained module — keep all related code within its directory
-- Follow the vertical slice pattern: components/, engine/, hooks/, store/, types/, __tests__/
-- Import from the feature's own subdirectories first; use `@/` imports only for shared utilities
-- New features should follow the same directory structure as `wall-configurator/`
+### What agents must do here
+- Inspect feature config, stores, components, and tests together; this subtree often spans multiple files per workflow.
+- Preserve performance-sensitive patterns, especially for 3D and geometry-heavy code.
+- Document feature-surface drift in `.ai` when major modules or capabilities change.
 
-<!-- MANUAL: -->
+### Validation expectations
+- `bun run type-check` for repo-wide TypeScript sanity when changes touch source or instructions about source behavior.
+- `bun run lint` when wording implies code style/workflow claims that should match current tooling.
+- Targeted path/file existence checks for every doc or route reference you add.
+
+### Anti-laziness rule
+- Do not stop at this directory listing. Open the live files that implement the behavior you are describing or changing.
+- If older notes, counts, or examples elsewhere in this file drift from the live tree, prefer current code and this reality-refresh block.
+- When you change structure, ownership, workflow, or key file references in this scope, update this `AGENTS.md` in the same change.
+<!-- REALITY-REFRESH:END -->

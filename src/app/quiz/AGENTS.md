@@ -1,40 +1,31 @@
-<!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-04-02 | Updated: 2026-04-02 -->
+<!-- Parent: ../../../AGENTS.md -->
+<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
 
-# Quiz
+# quiz
 
-## Purpose
-Quiz/testing mode router and container. Redirects quiz index to testing hub; hosts nested routes for quiz setup, active sessions, results, and review across multiple testing modes (Camp, Storm, Chill, Blindspot). Full-screen focused experience with no dashboard sidebar.
+<!-- REALITY-REFRESH:START -->
+## 2026-04-16 Reality Refresh
 
-## Key Files
-| File | Description |
-|------|-------------|
-| `page.tsx` | Server component redirecting `/quiz` to `/testing` |
-| `layout.tsx` | Minimal container (no sidebar, full focus) with surface-light background |
-| `[mode]/setup/page.tsx` | Server component for quiz mode selection and configuration |
-| `[mode]/setup/client.tsx` | Client component handling setup form interactivity |
-| `[mode]/session/[sessionId]/page.tsx` | Live quiz session page (question, timer, answer tracking) |
-| `[mode]/session/[sessionId]/results/page.tsx` | Results page showing session performance metrics |
-| `[mode]/session/[sessionId]/review/page.tsx` | Question review page with explanations and misconceptions |
-| `loading.tsx`, `[mode]/setup/loading.tsx`, etc. | Skeleton loaders for each page |
+**Scope:** `src/app/quiz/` subtree
 
-## For AI Agents
-### Working In This Directory
-- **Naming:** `[mode]` is the testing mode (camp, storm, chill, blindspot) — NOT user-selected tabs but pedagogically distinct test modes
-- **Session flow:** Setup → Live Session → Results → Review (each has its own page + loading state)
-- **Server-first:** All pages are Server Components; setup/client.tsx is the interactivity layer
-- **No auth check here** — auth is enforced at the layout/parent level (check `src/app/(dashboard)` for context)
-- **Redirect pattern:** Index redirects to `/testing` (testing hub lives elsewhere in app structure)
-- **Loading states:** Must provide loading.tsx at each segment to prevent layout shift
+**Current snapshot:** 6 directories and 12 files beneath this scope (excluding this `AGENTS.md`).
 
-## Dynamic Routes
-- `[mode]` — Testing mode ID (camp, storm, chill, blindspot)
-- `[sessionId]` — Unique session identifier (UUID format)
+**Top local directories:** `[mode]/`
 
-## Dependencies
-### Internal
-- `@/lib/constants/routes` — `ROUTES.TESTING` for redirect target
-- `next/navigation` — `redirect()` function
-- Testing/quiz state likely managed at parent level or via Zustand store (check components)
+**Top local files:** `layout.tsx`, `loading.tsx`, `page.tsx`
 
-<!-- MANUAL: -->
+### What agents must do here
+- Inspect route groups, `page.tsx`, `layout.tsx`, `loading.tsx`, `error.tsx`, and any `route.ts` handlers in this subtree before editing.
+- Preserve server-component defaults, auth/portal boundaries, and route-level loading/error behavior.
+- Cross-check UI/route changes against the matching components, server actions, and nearest portal docs in `.ai`.
+
+### Validation expectations
+- `bun run type-check` for repo-wide TypeScript sanity when changes touch source or instructions about source behavior.
+- `bun run lint` when wording implies code style/workflow claims that should match current tooling.
+- Targeted path/file existence checks for every doc or route reference you add.
+
+### Anti-laziness rule
+- Do not stop at this directory listing. Open the live files that implement the behavior you are describing or changing.
+- If older notes, counts, or examples elsewhere in this file drift from the live tree, prefer current code and this reality-refresh block.
+- When you change structure, ownership, workflow, or key file references in this scope, update this `AGENTS.md` in the same change.
+<!-- REALITY-REFRESH:END -->

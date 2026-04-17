@@ -1,90 +1,31 @@
-<!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-04-02 | Updated: 2026-04-02 -->
+<!-- Parent: ../../../AGENTS.md -->
+<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
 
 # email-templates
 
-## Purpose
+<!-- REALITY-REFRESH:START -->
+## 2026-04-16 Reality Refresh
 
-The `email-templates` directory contains email template generators for lifecycle milestones: pre-oath and post-oath emails for Filipino architects taking the Panunumpa ng Propesyonal (Professional Oath). Generates both plain-text and HTML versions with Slatecamp design system styling.
+**Scope:** `src/lib/email-templates/` subtree
 
-## Key Files
+**Current snapshot:** 0 directories and 1 files beneath this scope (excluding this `AGENTS.md`).
 
-| File | Description |
-|------|-------------|
-| `oath-taking.ts` | Email template generators: `generatePreOathEmail()` (day before), `generatePostOathEmail()` (day after) |
+**Top local directories:** none
 
-## For AI Agents
+**Top local files:** `oath-taking.ts`
 
-### Working In This Directory
+### What agents must do here
+- Inspect live call sites, tests, schema/config dependencies, and adjacent helpers before editing this logic layer.
+- Preserve boundaries between pure logic, query helpers, server actions, provider integrations, and validation schemas.
+- Avoid assumption-driven changes to IRT/SRS, entitlements, analytics, or payment logic without tracing actual usage.
 
-**Email Strategy:**
-- Pre-oath (day before): Motivational message encouraging the student to share their story after taking the oath.
-- Post-oath (day after): Celebratory message welcoming the new architect into the professional community.
-- Growth-framed, warm tone (Slatecamp voice): no pressuring language, genuine celebration of achievement.
-- Design: Slatecamp brand colors (Camp Cobalt primary, Surface Light background), Inter font, responsive mobile layout.
+### Validation expectations
+- `bun run type-check` for repo-wide TypeScript sanity when changes touch source or instructions about source behavior.
+- `bun run lint` when wording implies code style/workflow claims that should match current tooling.
+- Targeted path/file existence checks for every doc or route reference you add.
 
-**Template Outputs:**
-- Plain text body: concise, readable, platform-agnostic.
-- HTML body: styled with inline CSS, responsive breakpoints, accessible button links.
-- Subject lines: short, memorable, action-oriented.
-
-**Personalization:**
-- Input: userName (full name, e.g., "Maria Santos").
-- Extract: firstName from first token (e.g., "Maria").
-- Output: "Architect Maria, RLA" or "Architect Maria" in greeting.
-
-### Common Patterns
-
-**Generating Pre-Oath Email:**
-```typescript
-import { generatePreOathEmail } from '@/lib/email-templates'
-
-const email = generatePreOathEmail('Maria Santos')
-// {
-//   subject: 'Tomorrow: your oath.',
-//   body: 'Tomorrow you take the Panunumpa ng Propesyonal...',
-//   html: '<html>...'
-// }
-
-// Send via email service (Resend, SendGrid, etc.)
-await emailClient.send({
-  to: user.email,
-  subject: email.subject,
-  html: email.html,
-  text: email.body,
-})
-```
-
-**Generating Post-Oath Email:**
-```typescript
-import { generatePostOathEmail } from '@/lib/email-templates'
-
-const email = generatePostOathEmail('Maria Santos')
-// {
-//   subject: 'You are now Architect Maria, RLA.',
-//   body: 'The Campfire is waiting for your story.',
-//   html: '<html>...'
-// }
-```
-
-## Dependencies
-
-### Internal
-
-- **Slatecamp Design System:** Colors, typography (defined inline in HTML).
-  - Camp Cobalt: `#1B3FC4` (primary action).
-  - Camp Cobalt 700: `#1535A8` (hover state).
-  - Surface Light: `#f8f7f5` (background).
-  - Ink Primary: `#1a2332` (text).
-  - Ink Secondary: `#4a5568` (secondary text).
-
-### External
-
-- **Email client library:** Resend, SendGrid, AWS SES (caller's responsibility).
-- **No npm dependencies** in this directory.
-
----
-
-**Last Updated:** 2026-04-02
-
-**For email strategy, consult `.claude/docs/slatecamp-voice.md` in the repository root.**
+### Anti-laziness rule
+- Do not stop at this directory listing. Open the live files that implement the behavior you are describing or changing.
+- If older notes, counts, or examples elsewhere in this file drift from the live tree, prefer current code and this reality-refresh block.
+- When you change structure, ownership, workflow, or key file references in this scope, update this `AGENTS.md` in the same change.
+<!-- REALITY-REFRESH:END -->

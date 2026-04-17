@@ -1,71 +1,31 @@
-<!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-04-02 | Updated: 2026-04-02 -->
+<!-- Parent: ../../../../AGENTS.md -->
+<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
 
 # dev
 
-## Purpose
+<!-- REALITY-REFRESH:START -->
+## 2026-04-16 Reality Refresh
 
-Development and debugging utilities. Database inspection tools, test data generation, and introspection helpers for development environments only.
+**Scope:** `src/lib/actions/dev/` subtree
 
-## Key Files
+**Current snapshot:** 0 directories and 2 files beneath this scope (excluding this `AGENTS.md`).
 
-| File | Description |
-|------|-------------|
-| **db-viewer.ts** | Query table info: table names, approximate row counts, RLS status for all public tables |
-| **test-data.ts** | Generate test data: seed users, quiz sessions, interactions, mastery snapshots for testing |
+**Top local directories:** none
 
-## For AI Agents
+**Top local files:** `db-viewer.ts`, `test-data.ts`
 
-### Working In This Directory
+### What agents must do here
+- Treat this subtree as mutation and orchestration code: verify callers, data contracts, and schema dependencies before editing.
+- Keep `"use server"`, explicit error handling, and auth/permission checks intact.
+- Check adjacent tests and related query/helpers before changing behavior or signatures.
 
-1. **Use `'use server'`** on all action files.
-2. **Development only** — these actions should be wrapped with environment checks (dev mode only, not production).
-3. **RPC fallback** — db-viewer attempts RPC first (`get_table_info_for_dev`), falls back to direct table queries if RPC unavailable.
-4. **No auth required** — dev actions may bypass authentication if explicitly intended for developer tooling.
-5. **Non-destructive** — prefer read-only queries; if write operations are needed, guard with explicit dev mode checks.
-6. **Error handling** — be graceful with RPC failures and missing tables; return sensible defaults.
+### Validation expectations
+- `bun run type-check` for repo-wide TypeScript sanity when changes touch source or instructions about source behavior.
+- `bun run lint` when wording implies code style/workflow claims that should match current tooling.
+- Targeted path/file existence checks for every doc or route reference you add.
 
-### Common Patterns
-
-**RPC with fallback:**
-```typescript
-'use server'
-
-export async function getTableInfo(): Promise<TableInfo[]> {
-  const supabase = await createClient()
-
-  const { data, error } = await supabase.rpc('get_table_info_for_dev')
-
-  if (error) {
-    // Fallback: iterate known tables manually
-    const knownTables = ['profiles', 'quiz_sessions', ...]
-    const results: TableInfo[] = []
-
-    for (const table of knownTables) {
-      const { count } = await supabase
-        .from(table)
-        .select('*', { count: 'exact', head: true })
-
-      results.push({
-        table_name: table,
-        row_count: count ?? 0,
-        rls_enabled: true,
-      })
-    }
-
-    return results
-  }
-
-  return (data as TableInfo[]) ?? []
-}
-```
-
-## Dependencies
-
-### Internal
-
-- `@/lib/supabase/server` — createClient
-
-### External
-
-- `@supabase/supabase-js` — Supabase client
+### Anti-laziness rule
+- Do not stop at this directory listing. Open the live files that implement the behavior you are describing or changing.
+- If older notes, counts, or examples elsewhere in this file drift from the live tree, prefer current code and this reality-refresh block.
+- When you change structure, ownership, workflow, or key file references in this scope, update this `AGENTS.md` in the same change.
+<!-- REALITY-REFRESH:END -->

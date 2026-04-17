@@ -1,37 +1,31 @@
-<!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-03-25 | Updated: 2026-03-25 -->
+<!-- Parent: ../../../AGENTS.md -->
+<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
 
 # demo
 
-## Purpose
+<!-- REALITY-REFRESH:START -->
+## 2026-04-16 Reality Refresh
 
-Demo mode configuration and mock data layer. Activated via `NEXT_PUBLIC_ENABLE_DEMO_MODE=true` environment variable. Provides a complete mock Supabase client and fake data for the `/try` landing experience, allowing the app to run without a real Supabase backend.
+**Scope:** `src/lib/demo/` subtree
 
-## Key Files
+**Current snapshot:** 0 directories and 3 files beneath this scope (excluding this `AGENTS.md`).
 
-| File | Description |
-|------|-------------|
-| **config.ts** | `isDemoMode()` -- checks `NEXT_PUBLIC_ENABLE_DEMO_MODE` env var. `DEMO_USER` -- constant demo user identity with fixed UUID and email. |
-| **data.ts** | `getDemoProfile(tier)` -- builds a demo user profile for any tier. `getDemoDataForTable(table)` -- returns mock rows for any Supabase table. Provides quiz sessions, questions, wiki articles, taxonomy nodes, mastery data. |
-| **mock-supabase.ts** | `createMockSupabaseClient()` -- in-memory Supabase client replacement. Supports `.from().select()`, `.insert()`, `.update()`, `.delete()` with filter chaining. Uses `globalThis` for HMR-safe persistence. |
+**Top local directories:** none
 
-## For AI Agents
+**Top local files:** `config.ts`, `data.ts`, `mock-supabase.ts`
 
-### Working In This Directory
+### What agents must do here
+- Inspect live call sites, tests, schema/config dependencies, and adjacent helpers before editing this logic layer.
+- Preserve boundaries between pure logic, query helpers, server actions, provider integrations, and validation schemas.
+- Avoid assumption-driven changes to IRT/SRS, entitlements, analytics, or payment logic without tracing actual usage.
 
-1. **Environment-gated.** Demo mode activates only when `NEXT_PUBLIC_ENABLE_DEMO_MODE=true`. Production builds with valid Supabase keys always use real clients.
-2. **Do not delete.** This module is env-gated, not import-gated. Other modules dynamically check `isDemoMode()`.
-3. **Mock client mimics Supabase API.** The mock client implements chainable query builders (`.from().select().eq().order()` etc.) returning demo data.
-4. **Data freshness.** `getRows()` always returns fresh copies from `data.ts` (not cached), so edits to mock data take effect immediately.
-5. **Used by `@/lib/supabase/client.ts`** -- browser client returns mock client when demo mode is active.
+### Validation expectations
+- `bun run type-check` for repo-wide TypeScript sanity when changes touch source or instructions about source behavior.
+- `bun run lint` when wording implies code style/workflow claims that should match current tooling.
+- Targeted path/file existence checks for every doc or route reference you add.
 
-## Dependencies
-
-### Internal
-
-- `@/types/app` -- `UserTier`
-- `@/lib/dev/dev-mode` -- `TIER_CAPABILITIES`
-
-### External
-
-- None (self-contained mock layer)
+### Anti-laziness rule
+- Do not stop at this directory listing. Open the live files that implement the behavior you are describing or changing.
+- If older notes, counts, or examples elsewhere in this file drift from the live tree, prefer current code and this reality-refresh block.
+- When you change structure, ownership, workflow, or key file references in this scope, update this `AGENTS.md` in the same change.
+<!-- REALITY-REFRESH:END -->

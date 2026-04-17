@@ -1,41 +1,31 @@
-<!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-03-25 | Updated: 2026-03-25 -->
+<!-- Parent: ../../../AGENTS.md -->
+<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
 
 # validations
 
-## Purpose
+<!-- REALITY-REFRESH:START -->
+## 2026-04-16 Reality Refresh
 
-Centralized Zod validation schemas for all user-facing inputs: notes, sessions, answers, wiki search, AI tutor messages, checkout, and feature flags. Schemas are consumed by server actions for runtime type checking. Exports both schemas and inferred TypeScript types.
+**Scope:** `src/lib/validations/` subtree
 
-## Key Files
+**Current snapshot:** 0 directories and 1 files beneath this scope (excluding this `AGENTS.md`).
 
-| File | Description |
-|------|-------------|
-| **index.ts** | All validation schemas and type exports. Key schemas: `createNoteSchema`, `updateNoteSchema`, `deleteNoteSchema`, `sessionIdSchema`, `createSessionSchema`, `submitAnswerSchema`, `wikiSearchSchema`, `aiTutorSchema`, `studyAgentSchema`, `checkoutSchema`, `featureFlagsSchema`, `UUIDSchema`. |
+**Top local directories:** none
 
-## For AI Agents
+**Top local files:** `index.ts`
 
-### Working In This Directory
+### What agents must do here
+- Inspect live call sites, tests, schema/config dependencies, and adjacent helpers before editing this logic layer.
+- Preserve boundaries between pure logic, query helpers, server actions, provider integrations, and validation schemas.
+- Avoid assumption-driven changes to IRT/SRS, entitlements, analytics, or payment logic without tracing actual usage.
 
-1. **Single barrel file.** All schemas live in `index.ts`. Import via `import { schemaName } from '@/lib/validations'`.
-2. **UUID helper.** Use `UUIDSchema` (`z.string().uuid()`) for any ID field. Also available as `uuidSchema` (internal).
-3. **Session types.** `createSessionSchema` supports types: `subject_quick`, `custom_compiled`, `srs_review`, `ai_adaptive`, `retake`, `topic_drill`, `weak_areas`.
-4. **Checkout tiers.** `checkoutSchema` validates `tier` as `"camp" | "insurance" | "institutional"` with URL validation for success/cancel URLs.
-5. **Type exports.** Every schema has a corresponding `z.infer<>` type export (e.g., `CreateNoteInput`, `SubmitAnswerInput`).
+### Validation expectations
+- `bun run type-check` for repo-wide TypeScript sanity when changes touch source or instructions about source behavior.
+- `bun run lint` when wording implies code style/workflow claims that should match current tooling.
+- Targeted path/file existence checks for every doc or route reference you add.
 
-### Adding a New Schema
-
-1. Define the Zod schema with descriptive error messages.
-2. Export the schema as a named constant.
-3. Export the inferred type: `export type MyInput = z.infer<typeof mySchema>`.
-4. Use in server actions: `const parsed = mySchema.safeParse(input)`.
-
-## Dependencies
-
-### Internal
-
-- None (leaf module, pure schema definitions)
-
-### External
-
-- `zod` -- schema validation library
+### Anti-laziness rule
+- Do not stop at this directory listing. Open the live files that implement the behavior you are describing or changing.
+- If older notes, counts, or examples elsewhere in this file drift from the live tree, prefer current code and this reality-refresh block.
+- When you change structure, ownership, workflow, or key file references in this scope, update this `AGENTS.md` in the same change.
+<!-- REALITY-REFRESH:END -->

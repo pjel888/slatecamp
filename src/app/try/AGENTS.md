@@ -1,29 +1,31 @@
-<!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-04-02 | Updated: 2026-04-02 -->
+<!-- Parent: ../../../AGENTS.md -->
+<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
 
-# Try
+# try
 
-## Purpose
-Free pre-assessment teaser page implementing UX strategy Section 4 (Step 2). Public, no-auth-required experience where users answer 5 sample LEA questions before hitting "create account" gate. Delays sign-up to maximize engagement ("skin in the game" before commitment, per Duolingo insight).
+<!-- REALITY-REFRESH:START -->
+## 2026-04-16 Reality Refresh
 
-## Key Files
-| File | Description |
-|------|-------------|
-| `page.tsx` | Server component rendering PreAssessmentTeaser component |
-| `loading.tsx` | Loading skeleton |
+**Scope:** `src/app/try/` subtree
 
-## For AI Agents
-### Working In This Directory
-- **No auth required** — public free preview
-- **Pre-Assessment Teaser component** lives in `@/components/assessment/PreAssessmentTeaser`; handles 5-question flow and "create account" upsell gate
-- **UX strategy:** Delayed sign-up. User gets invested in answers before account requirement
-- **After 5 questions:** Modal/upsell saying "Create a free account to see your Readiness Score"
-- **Metadata:** Title "Try SlateCamp — Free Diagnostic Sample", description explains 5-question no-account preview
-- This is a funnel conversion page — track event in analytics (likely handled by PreAssessmentTeaser component)
+**Current snapshot:** 0 directories and 2 files beneath this scope (excluding this `AGENTS.md`).
 
-## Dependencies
-### Internal
-- `@/components/assessment/PreAssessmentTeaser` — Quiz component handling 5-question flow and account gate
-- `next/font` — Possible metadata/typography imports (implicit)
+**Top local directories:** none
 
-<!-- MANUAL: -->
+**Top local files:** `loading.tsx`, `page.tsx`
+
+### What agents must do here
+- Inspect route groups, `page.tsx`, `layout.tsx`, `loading.tsx`, `error.tsx`, and any `route.ts` handlers in this subtree before editing.
+- Preserve server-component defaults, auth/portal boundaries, and route-level loading/error behavior.
+- Cross-check UI/route changes against the matching components, server actions, and nearest portal docs in `.ai`.
+
+### Validation expectations
+- `bun run type-check` for repo-wide TypeScript sanity when changes touch source or instructions about source behavior.
+- `bun run lint` when wording implies code style/workflow claims that should match current tooling.
+- Targeted path/file existence checks for every doc or route reference you add.
+
+### Anti-laziness rule
+- Do not stop at this directory listing. Open the live files that implement the behavior you are describing or changing.
+- If older notes, counts, or examples elsewhere in this file drift from the live tree, prefer current code and this reality-refresh block.
+- When you change structure, ownership, workflow, or key file references in this scope, update this `AGENTS.md` in the same change.
+<!-- REALITY-REFRESH:END -->

@@ -1,66 +1,31 @@
-<!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-03-25 -->
+<!-- Parent: ../../../AGENTS.md -->
+<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
 
 # graphics
 
-## Purpose
+<!-- REALITY-REFRESH:START -->
+## 2026-04-16 Reality Refresh
 
-Slatecamp Graphic System v2 -- design tokens, icon system, CSS patterns, and SVG utility components for SlateCamp. Provides the canonical color palette for SVG/Canvas contexts, the SCIcon wrapper for Phosphor icons with standardized sizing, and CSS files for gradients and noise patterns.
+**Scope:** `src/components/graphics/` subtree
 
-## Key Files
+**Current snapshot:** 3 directories and 9 files beneath this scope (excluding this `AGENTS.md`).
 
-| File | Description |
-|------|-------------|
-| `tokens.ts` | Campfire design tokens for graphic contexts. Exports `palette` (static hex values for SVG/Canvas), `cssVars` (CSS custom property references for JSX style props), and re-exports `getScoreColor` from shared score-display. |
-| `gradients.css` | CSS gradient definitions for graphic compositions and backgrounds. |
-| `patterns.css` | CSS noise and pattern definitions for textures and overlays. |
-| `icons/Icon.tsx` | SCIcon component: standardized Phosphor icon wrapper. Maps size names (xs/sm/md/lg/xl/2xl) to pixel values (14/18/20/24/32/48). Supports weight, color, className, and ariaLabel. `'use client'` |
-| `icons/iconMap.ts` | Registry mapping string icon names to Phosphor icon components. Used for dynamic icon resolution. |
-| `icons/index.ts` | Barrel exports for icon system. |
-| `logos/SlateCampLogo.tsx` | SlateCamp logo SVG. Sized via className. |
-| `ui/NoiseFilter.tsx` | SVG noise filter component for textured backgrounds. Reusable in any SVG context. |
+**Top local directories:** `icons/`, `logos/`, `ui/`
 
-## Subdirectories
+**Top local files:** `gradients.css`, `patterns.css`, `tokens.ts`
 
-| Directory | Purpose | File Count |
-|-----------|---------|------------|
-| `icons/` | SCIcon wrapper and icon name-to-component mapping | 3 files |
-| `logos/` | Logo SVG components (SlateCampLogo, SlateCampLogomark) | 2 files |
-| `ui/` | SVG utility components (NoiseFilter) | 1 file |
+### What agents must do here
+- Inspect the consuming routes/features before changing shared UI behavior in this subtree.
+- Preserve SlateCamp design-token usage, client/server boundaries, and current composition patterns.
+- When components are reused across portals, note any downstream impact in docs or higher-scope `AGENTS.md` updates.
 
-## For AI Agents
+### Validation expectations
+- `bun run type-check` for repo-wide TypeScript sanity when changes touch source or instructions about source behavior.
+- `bun run lint` when wording implies code style/workflow claims that should match current tooling.
+- Targeted path/file existence checks for every doc or route reference you add.
 
-### Working In This Directory
-
-1. **tokens.ts is the source of truth for graphic colors.** For app-wide theming, use `globals.css` CSS custom properties instead. `tokens.ts` is specifically for SVG, Canvas, and graphic composition contexts where CSS variables are not available.
-
-2. **SCIcon usage.** Always use `SCIcon` (imported as `SCIcon` from `@/components/graphics/icons/Icon`) for Phosphor icons throughout the app. Do NOT render Phosphor icons directly. The size tiers are:
-   - `xs`: 14px
-   - `sm`: 18px
-   - `md`: 20px (default)
-   - `lg`: 24px
-   - `xl`: 32px
-   - `2xl`: 48px
-
-3. **Icon map for dynamic resolution.** When an icon name is provided as a string (e.g., from a config file or database), use `iconMap.ts` to resolve it to the actual Phosphor component.
-
-4. **Palette consistency.** The `palette` object in `tokens.ts` must stay synchronized with the Campfire design tokens defined in CLAUDE.md. If a color changes in the design system, update both `tokens.ts` and `globals.css`.
-
-5. **Score color re-export.** `tokens.ts` re-exports `getScoreColorHex` from `@/components/shared/score-display` as `getScoreColor`. This ensures a single canonical source for readiness score color thresholds across both graphic and UI contexts.
-
-## Dependencies
-
-### Internal
-
-| Module | Purpose |
-|--------|---------|
-| `@/components/shared/score-display` | getScoreColorHex re-exported as getScoreColor |
-| `@/lib/utils` | cn() for className merging in SCIcon |
-
-### External
-
-| Package | Usage | Version |
-|---------|-------|---------|
-| **@phosphor-icons/react** | Icon components, IconWeight type, Icon type | ^1.4.14 |
-
-<!-- MANUAL: -->
+### Anti-laziness rule
+- Do not stop at this directory listing. Open the live files that implement the behavior you are describing or changing.
+- If older notes, counts, or examples elsewhere in this file drift from the live tree, prefer current code and this reality-refresh block.
+- When you change structure, ownership, workflow, or key file references in this scope, update this `AGENTS.md` in the same change.
+<!-- REALITY-REFRESH:END -->

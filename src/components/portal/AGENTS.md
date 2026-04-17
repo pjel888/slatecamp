@@ -1,58 +1,31 @@
-<!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-03-25 | Updated: 2026-04-06 -->
+<!-- Parent: ../../../AGENTS.md -->
+<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
 
 # portal
 
-## Purpose
+<!-- REALITY-REFRESH:START -->
+## 2026-04-16 Reality Refresh
 
-Shared portal shell components used by the admin, CEO, and developer portals. Provides a consistent layout pattern (topbar + sidebar + content area) with configurable accent colors, nav groups, and optional right rail.
+**Scope:** `src/components/portal/` subtree
 
-## Key Files
+**Current snapshot:** 0 directories and 9 files beneath this scope (excluding this `AGENTS.md`).
 
-| File | Description |
-|------|-------------|
-| `PortalLayout.tsx` | Main layout shell: composes PortalTopbar, PortalSidebar, MobileNav, and content area with optional right rail |
-| `PortalSidebar.tsx` | Left sidebar with grouped nav items, collapsible sections, search filter, pathname-based active state, and badge counts |
-| `PortalTopbar.tsx` | Top navigation bar with portal label, accent background, optional right content slot, optional search component, and back navigation link |
-| `MobileNav.tsx` | Mobile-responsive navigation drawer for small viewports |
-| `CommandPalette.tsx` | Cmd+K command palette for portal-wide search. Uses Fuse.js for fuzzy matching plus recent pages from localStorage |
-| `CodeBlock.tsx` | Syntax-highlighted code block with copy button |
-| `CopyButton.tsx` | Clipboard copy button with visual feedback |
-| `StickyTOC.tsx` | Sticky table of contents sidebar. Tracks scroll position and highlights the active heading |
-| `index.ts` | Barrel exports for all components and their prop types |
+**Top local directories:** none
 
-## Subdirectories
+**Top local files:** `CommandPalette.tsx`, `CopyButton.stories.tsx`, `CopyButton.tsx`, `index.ts`, `MobileNav.tsx`, `PortalLayout.tsx`, `PortalSidebar.tsx`, `PortalTopbar.tsx`, `StickyTOC.tsx`
 
-None. All portal components are flat in `src/components/portal/`.
+### What agents must do here
+- Inspect the consuming routes/features before changing shared UI behavior in this subtree.
+- Preserve SlateCamp design-token usage, client/server boundaries, and current composition patterns.
+- When components are reused across portals, note any downstream impact in docs or higher-scope `AGENTS.md` updates.
 
-## For AI Agents
+### Validation expectations
+- `bun run type-check` for repo-wide TypeScript sanity when changes touch source or instructions about source behavior.
+- `bun run lint` when wording implies code style/workflow claims that should match current tooling.
+- Targeted path/file existence checks for every doc or route reference you add.
 
-### Working In This Directory
-
-1. **Portal pattern.** Each portal uses `PortalLayout` as its shell. Portal-specific config stays in the consuming portal.
-2. **Accent color props.** `accentColor` and `accentLightColor` are CSS color strings passed from the portal layer.
-3. **NavGroup structure.** Navigation is defined as `NavGroup[]` with grouped `NavItem[]` entries.
-4. **Lucide icons.** The portal shell uses `lucide-react` rather than the dashboard’s Phosphor set.
-5. **Type exports.** Prefer importing portal components and their prop types from `@/components/portal`.
-
-## Dependencies
-
-### Internal
-
-| Module | Purpose |
-|--------|---------|
-| `@/lib/utils` | `cn()` for class merging |
-| `@/components/ui/command` | Command primitives for `CommandPalette` |
-| `@/components/ui/badge` | Badge for nav item counts |
-
-### External
-
-| Package | Usage | Version |
-|---------|-------|---------|
-| **react** | Hooks used across the shell | ^19.2.4 |
-| **next/link** | Client-side navigation | 16.1.6 |
-| **next/navigation** | `usePathname`, `useRouter` | 16.1.6 |
-| **lucide-react** | Icons used by the shell | ^0.577.0 |
-| **fuse.js** | Fuzzy search in `CommandPalette` | latest |
-
-<!-- MANUAL: -->
+### Anti-laziness rule
+- Do not stop at this directory listing. Open the live files that implement the behavior you are describing or changing.
+- If older notes, counts, or examples elsewhere in this file drift from the live tree, prefer current code and this reality-refresh block.
+- When you change structure, ownership, workflow, or key file references in this scope, update this `AGENTS.md` in the same change.
+<!-- REALITY-REFRESH:END -->

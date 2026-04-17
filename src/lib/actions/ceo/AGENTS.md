@@ -1,62 +1,31 @@
-<!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-03-25 | Updated: 2026-03-25 -->
+<!-- Parent: ../../../../AGENTS.md -->
+<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
 
-# actions/ceo
+# ceo
 
-## Purpose
+<!-- REALITY-REFRESH:START -->
+## 2026-04-16 Reality Refresh
 
-CEO portal server actions for financial management, team administration, and investor report generation. All actions require CEO or super_admin role, verified via `assertCeoRole()` from `@/lib/queries/ceo/auth`. Financial data uses Philippine Peso (PHP) as the base currency.
+**Scope:** `src/lib/actions/ceo/` subtree
 
-## Key Files
+**Current snapshot:** 0 directories and 3 files beneath this scope (excluding this `AGENTS.md`).
 
-| File | Description |
-|------|-------------|
-| **export-actions.ts** | `generateInvestorExport()` -- builds a markdown investor report combining financial summary, team data, paying/total user counts, and churn metrics. |
-| **financial-actions.ts** | `addFinancialEntry()` -- creates revenue/expense/investment entries. Zod-validated with `entry_date`, `entry_type`, `category`, `amount_php`, `description`, `is_recurring`. |
-| **team-actions.ts** | `addTeamMember()`, `updateTeamMember()`, `removeTeamMember()` -- CRUD for `ceo_team_members` table. Validates department, system role, monthly cost. |
+**Top local directories:** none
 
-## For AI Agents
+**Top local files:** `export-actions.ts`, `financial-actions.ts`, `team-actions.ts`
 
-### Working In This Directory
+### What agents must do here
+- Treat this subtree as mutation and orchestration code: verify callers, data contracts, and schema dependencies before editing.
+- Keep `"use server"`, explicit error handling, and auth/permission checks intact.
+- Check adjacent tests and related query/helpers before changing behavior or signatures.
 
-1. **CEO role gate.** Every action calls `assertCeoRole()` which throws on unauthorized access. Do not add redundant auth checks.
-2. **Currency is PHP.** All financial amounts are in Philippine Peso. Field names use `_php` suffix (e.g., `amount_php`, `monthly_cost_php`).
-3. **FormData input.** Actions accept `FormData` for form submissions, parsed through Zod schemas.
-4. **Revalidate `/ceo/*` paths** after mutations using `revalidatePath()`.
-5. **Read queries live in `@/lib/queries/ceo/`**, not here. This directory is mutations only.
+### Validation expectations
+- `bun run type-check` for repo-wide TypeScript sanity when changes touch source or instructions about source behavior.
+- `bun run lint` when wording implies code style/workflow claims that should match current tooling.
+- Targeted path/file existence checks for every doc or route reference you add.
 
-### Common Patterns
-
-**CEO-gated mutation:**
-```typescript
-'use server'
-
-import { assertCeoRole } from '@/lib/queries/ceo/auth'
-import { createClient } from '@/lib/supabase/server'
-import { revalidatePath } from 'next/cache'
-
-export const myCeoAction = async (formData: FormData) => {
-  const { user } = await assertCeoRole() // throws if not CEO
-  const supabase = await createClient()
-
-  // mutation logic...
-
-  revalidatePath('/ceo')
-  return { success: true }
-}
-```
-
-## Dependencies
-
-### Internal
-
-- `@/lib/queries/ceo/auth` -- `assertCeoRole()` authorization
-- `@/lib/queries/ceo/financial-queries` -- `getFinancialSummary()` for export
-- `@/lib/queries/ceo/team-queries` -- `getTeamMembers()` for export
-- `@/lib/supabase/server` -- `createClient()` for DB access
-- `@/types/ceo` -- `SystemRole`, `formatPeso`, `formatPercent`
-
-### External
-
-- `next/cache` -- `revalidatePath`
-- `zod` -- input validation
+### Anti-laziness rule
+- Do not stop at this directory listing. Open the live files that implement the behavior you are describing or changing.
+- If older notes, counts, or examples elsewhere in this file drift from the live tree, prefer current code and this reality-refresh block.
+- When you change structure, ownership, workflow, or key file references in this scope, update this `AGENTS.md` in the same change.
+<!-- REALITY-REFRESH:END -->

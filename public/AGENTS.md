@@ -1,47 +1,30 @@
 <!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-03-24 | Updated: 2026-03-25 -->
+<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
 
 # public
 
-## Purpose
+## Scope
+This file governs `public/` and all static assets in it.
 
-Static assets served at the root URL path by Next.js. Contains SVG icons, branding assets, textures, and the widget modules directory for distributed learning components. All files here are publicly accessible and should contain no sensitive information.
+## Current subtree reality
+`public/` currently contains 9 tracked files and no tracked nested directories.
 
-## Key Files
+Live assets include:
+- `SlateCampLogoMark.svg`
+- `SlateCamp_Logo.png`
+- `noise.png`
+- `file.svg`, `globe.svg`, `window.svg`
+- `next.svg`, `vercel.svg`
 
-| File | Description |
-|------|-------------|
-| `SlateCampLogoMark.svg` | Primary SlateCamp logo mark -- used in branding and navigation |
-| `noise.png` | Subtle noise texture overlay for Campfire aesthetic |
-| `file.svg` | Document/file icon -- used in file pickers and content lists |
-| `globe.svg` | Global/world icon -- used in internationalization and search contexts |
-| `window.svg` | Window icon -- used in layout and dialog UI elements |
-| `next.svg` | Next.js logo -- legacy, may be removed |
-| `vercel.svg` | Vercel logo -- legacy, may be removed |
+## Rules
+- Everything here is public and URL-addressable.
+- Never place secrets, internal-only data, or misleading “temporary” private artifacts here.
+- Verify actual filenames and consuming references before documenting asset usage.
 
-## Subdirectories
+## Validation expectations
+- confirm asset paths exist
+- confirm any documented consuming path/import matches the live source
+- no build/test requirement unless source code using the asset also changes
 
-| Directory | Purpose |
-|-----------|---------|
-| `widgets/` | Widget assets directory |
-| `widgets/modules/` | Reserved for future widget module files (currently empty) |
-
-## For AI Agents
-
-### Working In This Directory
-
-- **Static only** -- this directory is served directly; no server-side processing occurs
-- **SVG preferred** -- use SVG for icons and logos for scalability and small file size
-- **Optimize images** -- compress PNGs and minimize SVG files before committing
-- **No sensitive data** -- all files are publicly accessible; do not add environment variables, API keys, or user data
-- **Naming convention** -- use PascalCase for component-related assets (e.g., `SlateCampLogoMark.svg`), kebab-case for utility assets (e.g., `noise.png`)
-- **URL paths** -- files serve at root; e.g., `/SlateCampLogoMark.svg` or `/widgets/modules/...`
-
-### Adding Assets
-
-1. Place new files in this directory or a subdirectory
-2. Reference in Next.js via static imports or absolute `/` paths
-3. Verify the file is served correctly in dev (`bun run dev`) and production (`bun run build && bun run start`)
-4. Update this AGENTS.md with the new asset
-
-<!-- MANUAL: -->
+## Anti-laziness rule
+Do not assume old asset inventories are still accurate. Check the actual filenames in `public/`.

@@ -1,34 +1,31 @@
-<!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-03-25 | Updated: 2026-03-25 -->
+<!-- Parent: ../../../AGENTS.md -->
+<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
 
 # signals
 
-## Purpose
+<!-- REALITY-REFRESH:START -->
+## 2026-04-16 Reality Refresh
 
-User learning signal computation. Derives engagement and mastery metrics from raw session data and upserts them into `user_learning_signals`. Called after session completion to maintain up-to-date signal values for dashboard display and churn detection.
+**Scope:** `src/lib/signals/` subtree
 
-## Key Files
+**Current snapshot:** 0 directories and 3 files beneath this scope (excluding this `AGENTS.md`).
 
-| File | Description |
-|------|-------------|
-| **compute.ts** | `computeUserSignals(userId)` -- server action that computes and upserts: `score_velocity_7d` (readiness score change in pts/day over 7 days), `churn_risk_score` (0.0-1.0 composite risk), `days_since_last_session`, `sessions_last_7d`. Silent on failure (catches and logs errors). |
+**Top local directories:** none
 
-## For AI Agents
+**Top local files:** `compute.ts`, `extractFeatures.ts`, `server-only-guard.ts`
 
-### Working In This Directory
+### What agents must do here
+- Inspect live call sites, tests, schema/config dependencies, and adjacent helpers before editing this logic layer.
+- Preserve boundaries between pure logic, query helpers, server actions, provider integrations, and validation schemas.
+- Avoid assumption-driven changes to IRT/SRS, entitlements, analytics, or payment logic without tracing actual usage.
 
-1. **Server action.** Uses `'use server'` directive. Called from quiz completion flow.
-2. **Silent failures.** `computeUserSignals()` wraps all logic in try/catch. Must never throw or block the quiz session.
-3. **Reads multiple tables.** Queries `user_global_stats`, `readiness_score_snapshots`, `quiz_sessions` to derive signals.
-4. **Upserts to `user_learning_signals`.** Uses `.upsert()` with `user_id` as conflict key.
-5. **Velocity formula.** `(currentScore - baselineScore) / daysDelta` where baseline is the oldest snapshot within the last 7 days.
+### Validation expectations
+- `bun run type-check` for repo-wide TypeScript sanity when changes touch source or instructions about source behavior.
+- `bun run lint` when wording implies code style/workflow claims that should match current tooling.
+- Targeted path/file existence checks for every doc or route reference you add.
 
-## Dependencies
-
-### Internal
-
-- `@/lib/supabase/server` -- `createClient()` for DB access
-
-### External
-
-- None (pure DB reads and upserts)
+### Anti-laziness rule
+- Do not stop at this directory listing. Open the live files that implement the behavior you are describing or changing.
+- If older notes, counts, or examples elsewhere in this file drift from the live tree, prefer current code and this reality-refresh block.
+- When you change structure, ownership, workflow, or key file references in this scope, update this `AGENTS.md` in the same change.
+<!-- REALITY-REFRESH:END -->

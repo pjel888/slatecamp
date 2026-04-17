@@ -1,52 +1,31 @@
-<!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-04-02 | Updated: 2026-04-06 -->
+<!-- Parent: ../../../AGENTS.md -->
+<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
 
 # developer
 
-## Purpose
+<!-- REALITY-REFRESH:START -->
+## 2026-04-16 Reality Refresh
 
-The `developer` directory contains lightweight utilities for the developer portal. At the moment that primarily means changelog data used by the internal portal.
+**Scope:** `src/lib/developer/` subtree
 
-## Key Files
+**Current snapshot:** 0 directories and 1 files beneath this scope (excluding this `AGENTS.md`).
 
-| File | Description |
-|------|-------------|
-| `changelog.ts` | Changelog parser and version tracker: reads deployment history and formats release notes |
+**Top local directories:** none
 
-## For AI Agents
+**Top local files:** `changelog.ts`
 
-### Working In This Directory
+### What agents must do here
+- Inspect live call sites, tests, schema/config dependencies, and adjacent helpers before editing this logic layer.
+- Preserve boundaries between pure logic, query helpers, server actions, provider integrations, and validation schemas.
+- Avoid assumption-driven changes to IRT/SRS, entitlements, analytics, or payment logic without tracing actual usage.
 
-**Changelog:**
-- Source: `CHANGELOG.md` or git commit history.
-- Exports: `getChangelog()`, `getVersions()`, `getReleaseNotes(version)`.
-- Format: semantic versioning (major.minor.patch).
-- Categories: Features, Fixes, Breaking Changes, Deprecated.
-- Used in developer portal: recent changes, version history, rollback info.
+### Validation expectations
+- `bun run type-check` for repo-wide TypeScript sanity when changes touch source or instructions about source behavior.
+- `bun run lint` when wording implies code style/workflow claims that should match current tooling.
+- Targeted path/file existence checks for every doc or route reference you add.
 
-## Common Patterns
-
-**Getting changelog data:**
-```typescript
-import { getChangelog, getVersions } from '@/lib/developer'
-
-const versions = getVersions()
-const latest = versions[0]
-const notes = getChangelog(latest)
-```
-
-## Dependencies
-
-### Internal
-
-- **File system:** Read `CHANGELOG.md` when regenerating release data.
-
-### External
-
-- **None.** Pure utility functions for developer-facing metadata.
-
----
-
-**Last Updated:** 2026-04-06
-
-**For questions about the developer portal, consult `.claude/agents/` in the repository root.**
+### Anti-laziness rule
+- Do not stop at this directory listing. Open the live files that implement the behavior you are describing or changing.
+- If older notes, counts, or examples elsewhere in this file drift from the live tree, prefer current code and this reality-refresh block.
+- When you change structure, ownership, workflow, or key file references in this scope, update this `AGENTS.md` in the same change.
+<!-- REALITY-REFRESH:END -->

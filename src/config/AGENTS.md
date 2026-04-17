@@ -1,42 +1,31 @@
-<!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-03-24 | Updated: 2026-03-25 -->
+<!-- Parent: ../../AGENTS.md -->
+<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
 
 # config
 
-## Purpose
+<!-- REALITY-REFRESH:START -->
+## 2026-04-16 Reality Refresh
 
-Application configuration and feature flag definitions. Provides portal configuration for admin/developer/CEO shells and zero-latency, config-only feature gating with a resolution order of: dev override > DB value > config default.
+**Scope:** `src/config/` subtree
 
-## Key Files
+**Current snapshot:** 0 directories and 2 files beneath this scope (excluding this `AGENTS.md`).
 
-| File | Description |
-|------|-------------|
-| `portals.ts` | Portal configuration -- defines label, basePath, topbarBg, accentColor, accentLightColor, backLabel/backHref for admin, developer, and ceo portals. Exports `PORTALS` const and `PortalKey` type. |
-| `feature-flags.ts` | Feature flag definitions -- 3d_lab_access, ai_tutor_access, srs_review_access, org_dashboard, seat_management, dev_badges, dev_console. Categories: access, org, dev. Exports `FEATURE_FLAGS`, `FeatureFlagKey`, `FeatureFlagDefinition`. |
+**Top local directories:** none
 
-## For AI Agents
+**Top local files:** `feature-flags.ts`, `portals.ts`
 
-### Working In This Directory
+### What agents must do here
+- Trace usages of shared hooks/stores/types/config/data before editing; blast radius is usually wider than the local file count suggests.
+- Keep naming and data contracts synchronized with consuming app/components/lib code.
+- Update docs or parent AGENTS guidance when shared primitives change meaning or scope.
 
-- **Portals:** Add new portal shells by adding an entry to the `PORTALS` object in `portals.ts` with all required `PortalConfig` fields
-- **Feature flags:** Add to the `FEATURE_FLAGS` object with key, defaultValue, description, and category
-- Flag categories: `access` (user-tier gating), `org` (organization features), `dev` (developer tools)
-- Resolution order: dev override > database value > config default
-- Use `getConfigDefault(key)` to read defaults, `getAllFlags(category?)` to list flags
+### Validation expectations
+- `bun run type-check` for repo-wide TypeScript sanity when changes touch source or instructions about source behavior.
+- `bun run lint` when wording implies code style/workflow claims that should match current tooling.
+- Targeted path/file existence checks for every doc or route reference you add.
 
-### Common Patterns
-
-- `as const satisfies Record<string, ...>` for type-safe keys on both portals and flags
-- `PortalKey` and `FeatureFlagKey` types derived from `keyof typeof` their respective const objects
-- Portal colors use hex values matching the Slatecamp design system
-
-## Dependencies
-
-### Internal
-
-- Used by `src/components/portal/` -- PortalLayout consumes portal config
-- Used by `src/lib/context/` -- flag provider context
-- Used by `src/lib/actions/admin/` -- admin flag management
-- Used by `src/app/api/admin/flags/` -- API route for dev flag overrides
-
-<!-- MANUAL: -->
+### Anti-laziness rule
+- Do not stop at this directory listing. Open the live files that implement the behavior you are describing or changing.
+- If older notes, counts, or examples elsewhere in this file drift from the live tree, prefer current code and this reality-refresh block.
+- When you change structure, ownership, workflow, or key file references in this scope, update this `AGENTS.md` in the same change.
+<!-- REALITY-REFRESH:END -->

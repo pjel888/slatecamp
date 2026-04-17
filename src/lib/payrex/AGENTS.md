@@ -1,35 +1,31 @@
-<!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-03-25 | Updated: 2026-03-25 -->
+<!-- Parent: ../../../AGENTS.md -->
+<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
 
 # payrex
 
-## Purpose
+<!-- REALITY-REFRESH:START -->
+## 2026-04-16 Reality Refresh
 
-PayRex payment gateway configuration for Philippine payment methods. Provides a singleton PayRex client, supported payment method types, and plan/pricing constants. Default payment provider for SlateCamp (Philippine market).
+**Scope:** `src/lib/payrex/` subtree
 
-## Key Files
+**Current snapshot:** 0 directories and 1 files beneath this scope (excluding this `AGENTS.md`).
 
-| File | Description |
-|------|-------------|
-| **config.ts** | `getPayRex()` -- singleton PayRex client factory (uses `require` for CommonJS compatibility). `PAYREX_PAYMENT_METHODS` -- supported methods: `card`, `gcash`, `maya`, `qrph`. `PAYREX_PLANS` -- plan definitions with amounts in centavos (camp: 49900, insurance: 149900, institutional: 499900). |
+**Top local directories:** none
 
-## For AI Agents
+**Top local files:** `config.ts`
 
-### Working In This Directory
+### What agents must do here
+- Inspect live call sites, tests, schema/config dependencies, and adjacent helpers before editing this logic layer.
+- Preserve boundaries between pure logic, query helpers, server actions, provider integrations, and validation schemas.
+- Avoid assumption-driven changes to IRT/SRS, entitlements, analytics, or payment logic without tracing actual usage.
 
-1. **Singleton pattern.** `getPayRex()` creates one client per process. Do not create clients directly.
-2. **Amounts in centavos.** PayRex uses centavo amounts (49900 = 499.00 PHP). LemonSqueezy uses peso amounts.
-3. **CommonJS import.** PayRex SDK uses `require()` due to ESM/CJS compatibility. The eslint disable comment is intentional.
-4. **Payment methods.** Philippine-specific: GCash, Maya, QRPH (QR-based), plus card.
-5. **Do not import directly from components.** Access PayRex through `@/lib/payments/provider.ts`.
+### Validation expectations
+- `bun run type-check` for repo-wide TypeScript sanity when changes touch source or instructions about source behavior.
+- `bun run lint` when wording implies code style/workflow claims that should match current tooling.
+- Targeted path/file existence checks for every doc or route reference you add.
 
-## Dependencies
-
-### Internal
-
-- `@/lib/constants/site` -- `siteConfig` for plan descriptions
-
-### External
-
-- `payrex-node` -- PayRex Node.js SDK
-- Environment: `PAYREX_SECRET_KEY`
+### Anti-laziness rule
+- Do not stop at this directory listing. Open the live files that implement the behavior you are describing or changing.
+- If older notes, counts, or examples elsewhere in this file drift from the live tree, prefer current code and this reality-refresh block.
+- When you change structure, ownership, workflow, or key file references in this scope, update this `AGENTS.md` in the same change.
+<!-- REALITY-REFRESH:END -->

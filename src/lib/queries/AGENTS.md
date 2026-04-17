@@ -1,50 +1,31 @@
-<!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-03-25 | Updated: 2026-03-25 -->
+<!-- Parent: ../../../AGENTS.md -->
+<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
 
 # queries
 
-## Purpose
+<!-- REALITY-REFRESH:START -->
+## 2026-04-16 Reality Refresh
 
-Read-only query functions for server components. These are plain async functions (NOT server actions) that can be called directly from server components without the `'use server'` serialization boundary. Mutations for the same domains live in `@/lib/actions/`.
+**Scope:** `src/lib/queries/` subtree
 
-## Key Files
+**Current snapshot:** 2 directories and 17 files beneath this scope (excluding this `AGENTS.md`).
 
-| File | Description |
-|------|-------------|
-| **trails.ts** | Trail read queries: `getPublishedTrails()`, `getUserTrailEnrollment()`, `getTrailProgress()`, `getTrailRecommendations()`. Fetches from `camp_trails`, `trail_days`, `trail_steps`, `trail_enrollments` tables. |
+**Top local directories:** `ceo/`
 
-## Subdirectories
+**Top local files:** `adaptive-quiz.ts`, `notifications.ts`, `srs.ts`, `trails.ts`
 
-| Directory | Purpose |
-|-----------|---------|
-| **ceo/** | CEO portal queries: auth verification, financial summaries, team data, user engagement metrics. See `ceo/AGENTS.md`. |
+### What agents must do here
+- Inspect live call sites, tests, schema/config dependencies, and adjacent helpers before editing this logic layer.
+- Preserve boundaries between pure logic, query helpers, server actions, provider integrations, and validation schemas.
+- Avoid assumption-driven changes to IRT/SRS, entitlements, analytics, or payment logic without tracing actual usage.
 
-## For AI Agents
+### Validation expectations
+- `bun run type-check` for repo-wide TypeScript sanity when changes touch source or instructions about source behavior.
+- `bun run lint` when wording implies code style/workflow claims that should match current tooling.
+- Targeted path/file existence checks for every doc or route reference you add.
 
-### Working In This Directory
-
-1. **Not server actions.** Files here do NOT use `'use server'`. They are plain async functions safe for direct import in server components.
-2. **Read-only.** No mutations in this directory. All writes go through `@/lib/actions/`.
-3. **Supabase reads.** Use `createClient()` from `@/lib/supabase/server` for authenticated queries.
-4. **Type imports.** Import domain types from `@/types/app` or `@/types/ceo`.
-
-### Common Patterns
-
-**Server component query:**
-```typescript
-import { getPublishedTrails } from '@/lib/queries/trails'
-
-// In a server component:
-const trails = await getPublishedTrails()
-```
-
-## Dependencies
-
-### Internal
-
-- `@/lib/supabase/server` -- `createClient()`, `getUser()`
-- `@/types/app` -- `CampTrail`, `TrailDay`, `TrailStep`, etc.
-
-### External
-
-- `@supabase/supabase-js` -- Supabase client
+### Anti-laziness rule
+- Do not stop at this directory listing. Open the live files that implement the behavior you are describing or changing.
+- If older notes, counts, or examples elsewhere in this file drift from the live tree, prefer current code and this reality-refresh block.
+- When you change structure, ownership, workflow, or key file references in this scope, update this `AGENTS.md` in the same change.
+<!-- REALITY-REFRESH:END -->

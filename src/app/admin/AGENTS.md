@@ -1,63 +1,31 @@
-<!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-03-24 | Updated: 2026-03-31 -->
+<!-- Parent: ../../../AGENTS.md -->
+<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
 
 # admin
 
-## Purpose
+<!-- REALITY-REFRESH:START -->
+## 2026-04-16 Reality Refresh
 
-Admin control room for content and system management. Gated by role check (`canReviewContent()`). Admins manage the entire knowledge lifecycle: creating/editing/deleting wiki articles and questions, managing taxonomy, reviewing content submissions, and auditing system activity.
+**Scope:** `src/app/admin/` subtree
 
-## Key Files
+**Current snapshot:** 45 directories and 75 files beneath this scope (excluding this `AGENTS.md`).
 
-| File | Description |
-|------|-------------|
-| `page.tsx` | Admin landing page. Public, unauthenticated. Google OAuth sign-in button. |
-| `layout.tsx` | Admin layout wrapper. Protects all routes except `/admin` root. Checks `canReviewContent()`. Renders the `AdminShell` with sidebar nav. |
-| `_components/AdminShell.tsx` | Centralized sidebar navigation and layout shell for all admin portals. |
+**Top local directories:** `3d-models/`, `_components/`, `activity/`, `articles/`, `assets/`, `audit/`, `content/`, `dashboard/`, `knowledge/`, `login/`
 
-## Subdirectories (Knowledge Hub)
+**Top local files:** `error.tsx`, `layout.tsx`, `loading.tsx`, `page.tsx`
 
-| Directory | Purpose |
-|-----------|---------|
-| `knowledge/` | **The Unified Knowledge Base.** Central hub for all content management. Consolidates legacy "Articles" and "Questions" silos. |
-| `knowledge/[id]/` | **Unified Content Editor.** Integrated split-pane MDX editor for wiki articles, showing linked questions and metadata side-by-side. |
-| `knowledge/questions/` | **Question Bank.** Unified view of the assessment bank, utilizing the same taxonomy-driven browser as the main knowledge hub. |
-| `knowledge/questions/[id]/` | **Context-Aware Question Editor.** Moderation interface for questions that automatically loads the linked source article in a reference pane. |
-| `knowledge/new/` | Creation flow for new wiki articles. |
-| `knowledge/questions/new/` | Creation flow for new questions, pre-loading article context if a topic is provided. |
+### What agents must do here
+- Inspect route groups, `page.tsx`, `layout.tsx`, `loading.tsx`, `error.tsx`, and any `route.ts` handlers in this subtree before editing.
+- Preserve server-component defaults, auth/portal boundaries, and route-level loading/error behavior.
+- Cross-check UI/route changes against the matching components, server actions, and nearest portal docs in `.ai`.
 
-## Subdirectories (Management)
+### Validation expectations
+- `bun run type-check` for repo-wide TypeScript sanity when changes touch source or instructions about source behavior.
+- `bun run lint` when wording implies code style/workflow claims that should match current tooling.
+- Targeted path/file existence checks for every doc or route reference you add.
 
-| Directory | Purpose |
-|-----------|---------|
-| `dashboard/` | High-level overview. Stats (questions, wiki, coverage gaps), quick actions, and recent activity feed. |
-| `taxonomy/` | Global taxonomy management. View/edit the discipline tree structure and LEA IDs. |
-| `reviews/` | SME Review Queue. Content submitted for approval, deep-linked to unified editors. |
-| `audit/` | Audit Log. Deep-linked history of every change made to the knowledge base. |
-| `assets/` | 3D Asset Management. Catalog and preview models used in the 3D Lab scenes. |
-
-## For AI Agents
-
-### Working In This Directory
-
-- **Unified Architecture**: Do NOT use legacy `/admin/articles` or `/admin/questions` for new features. Use `/admin/knowledge`.
-- **Taxonomy First**: All content (articles and questions) is filtered via the global taxonomy tree.
-- **Context-Awareness**: When editing a question, always provide the source article context. When editing an article, show the linked questions.
-- **Data Revalidation**: Always call `revalidatePath('/admin/knowledge')` after any mutation to ensure cache consistency.
-
-### Common Patterns
-
-- **Deep Linking**: Audit logs and Review items must link to `/admin/knowledge/[id]` or `/admin/knowledge/questions/[id]`.
-- **Hybrid Search**: The Knowledge Browser search filters both articles and questions simultaneously.
-- **Safety Net**: Use the "Unassigned" filter in the knowledge hub to find content not yet mapped to the taxonomy.
-
-## Dependencies
-
-### Internal
-
-- `@/lib/admin/roles` — `canReviewContent()` for authorization.
-- `@/lib/actions/admin/content` — Primary server actions for the unified Knowledge Base.
-- `@/components/admin/unified-editor/` — The core component library for the split-pane editing experience.
-- `@/app/admin/knowledge/questions/_components/QuestionsTableClient` — The unified question listing component.
-
-<!-- MANUAL: All legacy routes (/admin/articles, /admin/content, /admin/questions) now redirect to /admin/knowledge. -->
+### Anti-laziness rule
+- Do not stop at this directory listing. Open the live files that implement the behavior you are describing or changing.
+- If older notes, counts, or examples elsewhere in this file drift from the live tree, prefer current code and this reality-refresh block.
+- When you change structure, ownership, workflow, or key file references in this scope, update this `AGENTS.md` in the same change.
+<!-- REALITY-REFRESH:END -->

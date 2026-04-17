@@ -1,58 +1,31 @@
-<!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-03-24 | Updated: 2026-03-25 -->
+<!-- Parent: ../../../AGENTS.md -->
+<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
 
 # context
 
-React Context providers for global app state. Client-side only.
+<!-- REALITY-REFRESH:START -->
+## 2026-04-16 Reality Refresh
 
-## Purpose
+**Scope:** `src/lib/context/` subtree
 
-Provides isolated Context + Provider pairs for global state that multiple features need. Each context handles a single concern: session state, UI breadcrumbs, discipline selection, note anchoring, and subscription tier gating.
+**Current snapshot:** 0 directories and 6 files beneath this scope (excluding this `AGENTS.md`).
 
-## Key Files
+**Top local directories:** none
 
-| File | Description |
-|------|-------------|
-| `active-session-context.tsx` | Tracks if user is in "review" or "quiz" mode (or null). Used to prevent nav escapes mid-session. |
-| `breadcrumb-context.tsx` | Stores breadcrumb trail `{ href, label }[]` for wiki/article navigation. Null = no breadcrumbs. |
-| `discipline-context.tsx` | Current active discipline, all available disciplines, switch/refresh handlers. Queries `user_global_stats` on discipline change. |
-| `note-context.tsx` | Note drawer state + anchor metadata (topic/question/article). Supports opening drawer with pre-filled context. |
-| `tier-context.tsx` | User's DB tier, effective tier (after dev overrides), dev mode flag, capabilities, hasAccess() method. |
+**Top local files:** `active-session-context.tsx`, `breadcrumb-context.tsx`, `discipline-context.tsx`, `entitlement-context.tsx`, `note-context.tsx`, `tier-context.tsx`
 
-## For AI Agents
+### What agents must do here
+- Inspect live call sites, tests, schema/config dependencies, and adjacent helpers before editing this logic layer.
+- Preserve boundaries between pure logic, query helpers, server actions, provider integrations, and validation schemas.
+- Avoid assumption-driven changes to IRT/SRS, entitlements, analytics, or payment logic without tracing actual usage.
 
-### Working In This Directory
+### Validation expectations
+- `bun run type-check` for repo-wide TypeScript sanity when changes touch source or instructions about source behavior.
+- `bun run lint` when wording implies code style/workflow claims that should match current tooling.
+- Targeted path/file existence checks for every doc or route reference you add.
 
-- All files are client components (`'use client'`).
-- Each context exports: a hook (`useContextName()`) + a provider component (`ContextNameProvider`).
-- Providers must wrap relevant components in `layout.tsx` or `page.tsx`.
-- Use TypeScript generics (`<T>`) sparingly; most contexts have fixed shapes.
-
-### Adding a New Context
-
-1. Create file `new-context.tsx` with `'use client'` at top.
-2. Define interface `NewContextValue { ... }`.
-3. Create context with `createContext<NewContextValue>({...})`.
-4. Export hook `export function useNewContext() { return useContext(...) }`.
-5. Export provider `export function NewContextProvider({ children, ...props })`.
-6. Provider wraps with `<Context.Provider value={{ ... }}>`.
-
-### Common Patterns
-
-- **useCallback**: Used in providers for stable dispatch functions (`switchDiscipline`, `setAnchor`).
-- **useState**: Minimal local state, usually derived from props on mount.
-- **useRouter** + **createClient**: In discipline context for Supabase interaction.
-
-## Dependencies
-
-### Internal
-
-- `@/types/app` — `Discipline`, `UserTier`, `NoteAnchor`.
-- `@/lib/supabase/client` — Create Supabase client (used in discipline context).
-- `@/lib/dev/dev-mode` — `TIER_CAPABILITIES` for tier context.
-
-### External
-
-- React 19 (Context API, hooks).
-
-<!-- MANUAL: -->
+### Anti-laziness rule
+- Do not stop at this directory listing. Open the live files that implement the behavior you are describing or changing.
+- If older notes, counts, or examples elsewhere in this file drift from the live tree, prefer current code and this reality-refresh block.
+- When you change structure, ownership, workflow, or key file references in this scope, update this `AGENTS.md` in the same change.
+<!-- REALITY-REFRESH:END -->

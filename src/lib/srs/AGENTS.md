@@ -1,114 +1,31 @@
-<!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-03-24 | Updated: 2026-03-25 -->
+<!-- Parent: ../../../AGENTS.md -->
+<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
 
 # srs
 
-## Purpose
+<!-- REALITY-REFRESH:START -->
+## 2026-04-16 Reality Refresh
 
-Spaced Repetition System (SRS) and Item Response Theory (IRT) algorithms. Implements adaptive question selection, mastery scoring, and review scheduling for exam preparation. Combines SM-2 (SuperMemo 2) intervals with IRT 2-parameter logistic model for theta-driven difficulty matching.
+**Scope:** `src/lib/srs/` subtree
 
-## Key Files
+**Current snapshot:** 0 directories and 7 files beneath this scope (excluding this `AGENTS.md`).
 
-| File | Description |
-|------|-------------|
-| **sm2.ts** | SM-2 algorithm: interval calculation, ease factor, next review scheduling |
-| **sm2.test.ts** | Unit tests for SM-2 calculation |
-| **update.ts** | Server action: derives quality rating from user interaction, updates SRS schedule in DB |
-| **update.test.ts** | Unit tests for update logic |
-| **irt.ts** | 2-parameter logistic IRT model: theta estimation, question selection, discrimination/difficulty |
-| **irt.test.ts** | Unit tests for IRT calculations |
-| **retention.ts** | Ebbinghaus-style retention curve: estimates knowledge decay over time |
+**Top local directories:** none
 
-## For AI Agents
+**Top local files:** `irt.test.ts`, `irt.ts`, `retention.ts`, `sm2.test.ts`, `sm2.ts`, `update.test.ts`, `update.ts`
 
-### Working In This Directory
+### What agents must do here
+- Inspect live call sites, tests, schema/config dependencies, and adjacent helpers before editing this logic layer.
+- Preserve boundaries between pure logic, query helpers, server actions, provider integrations, and validation schemas.
+- Avoid assumption-driven changes to IRT/SRS, entitlements, analytics, or payment logic without tracing actual usage.
 
-1. **SM-2 is the interval engine** — calculates next review date based on quality (0–5) and repetition count.
-2. **Quality rating** (0–5) is derived from: correctness, time spent, confidence, lucky guess detection.
-3. **IRT theta** is the user's ability estimate; difficulty/discrimination come from question metadata.
-4. **Next question selection** uses IRT to target questions at ~0.75 probability of correct (adaptive difficulty).
-5. **Retention decay** uses exponential model: R(t) = e^(-t / S), where S = stability (interval).
-6. **Silent failures** — SRS updates must catch errors and log without throwing.
+### Validation expectations
+- `bun run type-check` for repo-wide TypeScript sanity when changes touch source or instructions about source behavior.
+- `bun run lint` when wording implies code style/workflow claims that should match current tooling.
+- Targeted path/file existence checks for every doc or route reference you add.
 
-### Common Patterns
-
-**SM-2 interval calculation:**
-```typescript
-import { calculateNextReview, getNextReviewDate } from '@/lib/srs/sm2'
-
-const quality = 4 // 0–5, derived from user answer
-const currentInterval = mastery?.review_interval_days ?? 1
-const currentEF = mastery?.ease_factor ?? 2.5
-const reps = mastery?.repetitions ?? 0
-
-const { interval, easeFactor, repetitions } = calculateNextReview(
-  quality,
-  reps,
-  currentEF,
-  currentInterval
-)
-
-const nextReviewDate = getNextReviewDate(interval) // Date object
-```
-
-**Quality rating derivation:**
-```typescript
-import { deriveQualityRating } from '@/lib/srs/update'
-
-const quality = await deriveQualityRating({
-  isCorrect: true,
-  timeSpentMs: 12000,
-  avgTimeMs: 15000,
-  confidence: 'sure',
-  isSuspectedLuckyGuess: false,
-})
-// Returns 0–5 based on correctness, speed, confidence
-```
-
-**IRT question selection (adaptive difficulty):**
-```typescript
-import { selectNextQuestion, probabilityCorrect } from '@/lib/srs/irt'
-
-const userTheta = 0.5 // Estimated ability
-const availableQuestions = [...] // Question[]
-const answeredIds = new Set([...]) // Already answered
-
-const nextQ = selectNextQuestion(userTheta, availableQuestions, answeredIds)
-// Returns question closest to difficulty = theta - ln(3)/discrimination
-// Targets ~75% success probability
-```
-
-**Retention estimation:**
-```typescript
-import { retentionAfterDays, formatRetentionPercent } from '@/lib/srs/retention'
-
-const daysSince = 10
-const stability = 21 // SM-2 interval
-const retention = retentionAfterDays(daysSince, stability)
-// retention ≈ 0.62 (62% remembered)
-
-console.log(formatRetentionPercent(retention)) // "62%"
-```
-
-**Theta update (adaptive estimation):**
-```typescript
-import { updateTheta } from '@/lib/srs/irt'
-
-const currentTheta = 0.3
-const question = { difficulty_rating: 0.5, discrimination_rating: 1.2 }
-const isCorrect = true
-
-const newTheta = updateTheta(currentTheta, question, isCorrect)
-// newTheta increases slightly (user proved ability on this difficulty)
-```
-
-## Dependencies
-
-### Internal
-
-- `@/lib/supabase/server` — createClient for DB updates
-- `@/types/app` — Question interface
-
-### External
-
-- Built-in Math (no external libraries)
+### Anti-laziness rule
+- Do not stop at this directory listing. Open the live files that implement the behavior you are describing or changing.
+- If older notes, counts, or examples elsewhere in this file drift from the live tree, prefer current code and this reality-refresh block.
+- When you change structure, ownership, workflow, or key file references in this scope, update this `AGENTS.md` in the same change.
+<!-- REALITY-REFRESH:END -->

@@ -1,61 +1,31 @@
-<!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-03-24 | Updated: 2026-03-24 -->
+<!-- Parent: ../../../AGENTS.md -->
+<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
 
 # marketing
 
-## Purpose
+<!-- REALITY-REFRESH:START -->
+## 2026-04-16 Reality Refresh
 
-Marketing and landing page components for SlateCamp. Contains hero sections, pricing tiers, testimonials, feature grids, and promotional sections. All components follow the Slatecamp design system with warm, inviting aesthetics and growth-framed messaging.
+**Scope:** `src/components/marketing/` subtree
 
-## Key Files
+**Current snapshot:** 1 directories and 25 files beneath this scope (excluding this `AGENTS.md`).
 
-| File | Description |
-|------|-------------|
-| `HeroHeadline.tsx` | Hero headline "Know you'll win." with rough-notation animations (circle, underline, highlight) |
-| `HeroSection.tsx` | Main hero section with headline, CTA, mock question card, LEA coverage card, readiness snapshot |
-| `PricingCard.tsx` | Pricing tier card component with features, limits, CTA button |
-| `TestimonialShowcase.tsx` | 3-column testimonial cards with star ratings (5-star), quotes, names, titles |
-| `FloatingTestimonialMarquee.tsx` | Marquee component with floating testimonials (currently unused in HeroSection) |
-| `BentoFeatureGrid.tsx` | 3D bento grid showcasing core features (Questions, 3D Lab, Analytics, Wiki) |
-| `FeatureSectionLayout.tsx` | Reusable layout for feature sections with left/right image + text combinations |
-| `HowItWorksSection.tsx` | Step-by-step flow explaining how SlateCamp works |
-| `ComparisonSection.tsx` | Feature comparison table (SlateCamp vs traditional study methods) |
-| `QuestionsSection.tsx` | Section showcasing AI-powered question features |
-| `ThreeDLabSection.tsx` | Section highlighting 3D Lab spatial computing features (React Three Fiber) |
-| `AnalyticsSection.tsx` | Section on Readiness Score and mastery tracking |
-| `WikiSection.tsx` | Section on AI Wiki with citation badges |
-| `FinalCtaSection.tsx` | Bottom CTA section before footer |
-| `MarketingNav.tsx` | Navigation bar with logo, menu items, auth buttons |
-| `MarketingFooter.tsx` | Footer with links, social, legal |
-| `LogoMarquee.tsx` | Scrolling marquee of supporting institution logos |
-| `SocialProofBar.tsx` | Social proof stats (e.g., "1000+ students passed") |
-| `LandingPrimitives.tsx` | Reusable SVG/visual primitives (Starburst, NoiseOverlay, DottedGridOverlay, ReadinessDial) |
-| `GoogleIcon.tsx` | Google logo icon component |
+**Top local directories:** `hero/`
 
-## For AI Agents
+**Top local files:** `AnalyticsSection.tsx`, `BentoFeatureGrid.tsx`, `ComparisonSection.tsx`, `ContactForm.stories.tsx`, `ContactForm.tsx`, `FaqSection.stories.tsx`, `FaqSection.tsx`, `FeatureSectionLayout.tsx`, `FinalCtaSection.tsx`, `HeroHeadline.tsx`
 
-### Working In This Directory
+### What agents must do here
+- Inspect the consuming routes/features before changing shared UI behavior in this subtree.
+- Preserve SlateCamp design-token usage, client/server boundaries, and current composition patterns.
+- When components are reused across portals, note any downstream impact in docs or higher-scope `AGENTS.md` updates.
 
-- **Design System**: All colors from Slatecamp palette (Camp Cobalt #1B3FC4, Camp Orange #E8853A, Emerald #2D9F6F, Warm Red #D64545, Amber #D4951A)
-- **Typography**: Inter font, minimum 11px text size, never below
-- **Animations**: Use Framer Motion with max 300ms duration, default ease-out
-- **Voice**: Growth-framed messaging (not fear-based), specific CTAs, warm and supportive tone
-- **Responsive**: Mobile-first, use `md:` and `lg:` breakpoints
-- **Cards**: No shadow at rest, `shadow-sm` on hover, `rounded-md` (8px)
-- **Testimonials**: Real data only; placeholder marked with "PLACEHOLDER" comment at top of component
-- **Pricing**: Features use green check (Emerald), limits use gray X
-- **Colors in code**: Use hex values or Tailwind classes from design system, not arbitrary colors
+### Validation expectations
+- `bun run type-check` for repo-wide TypeScript sanity when changes touch source or instructions about source behavior.
+- `bun run lint` when wording implies code style/workflow claims that should match current tooling.
+- Targeted path/file existence checks for every doc or route reference you add.
 
-### Dependencies
-### Internal
-
-- `LandingPrimitives.tsx` - Shared SVG components and visual utilities
-- `@/components/graphics/icons/Icon.tsx` - Icon wrapper (SCIcon)
-- `@/lib/constants/pricing` - Pricing tier definitions (PricingTier type)
-- `@/lib/utils` - `cn()` utility for class merging
-- Framer Motion (`framer-motion`) - Animations on hero cards
-- Rough Notation (`rough-notation`) - Hand-drawn annotation effects on headline
-- Next.js (`next/font/google`) - Font loading (Instrument Serif for quotes, Geist Sans for headings)
-- Phosphor Icons (`@phosphor-icons/react`) - Icon set
-
-<!-- MANUAL: Keep testimonials section updated with real user feedback before launch. Replace placeholder quotes with verified student stories. -->
+### Anti-laziness rule
+- Do not stop at this directory listing. Open the live files that implement the behavior you are describing or changing.
+- If older notes, counts, or examples elsewhere in this file drift from the live tree, prefer current code and this reality-refresh block.
+- When you change structure, ownership, workflow, or key file references in this scope, update this `AGENTS.md` in the same change.
+<!-- REALITY-REFRESH:END -->

@@ -1,102 +1,31 @@
-<!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-04-02 | Updated: 2026-04-02 -->
+<!-- Parent: ../../../AGENTS.md -->
+<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
 
 # audio
 
-## Purpose
+<!-- REALITY-REFRESH:START -->
+## 2026-04-16 Reality Refresh
 
-The `audio` directory provides simple audio feedback utilities using the Web Audio API: synthesized tones for correct answer confirmation and session completion. Zero bundle size (runtime synthesis), respects `prefers-reduced-motion` for accessibility.
+**Scope:** `src/lib/audio/` subtree
 
-## Key Files
+**Current snapshot:** 0 directories and 1 files beneath this scope (excluding this `AGENTS.md`).
 
-| File | Description |
-|------|-------------|
-| `feedbackSounds.ts` | Web Audio API synthesis: `playCorrectSound()` (A5 sine, 880 Hz, 300ms), `playCompletionSound()` (two-note chime) |
+**Top local directories:** none
 
-## For AI Agents
+**Top local files:** `feedbackSounds.ts`
 
-### Working In This Directory
+### What agents must do here
+- Inspect live call sites, tests, schema/config dependencies, and adjacent helpers before editing this logic layer.
+- Preserve boundaries between pure logic, query helpers, server actions, provider integrations, and validation schemas.
+- Avoid assumption-driven changes to IRT/SRS, entitlements, analytics, or payment logic without tracing actual usage.
 
-**Audio Feedback Philosophy:**
-- NO incorrect answer sound (silence IS the feedback).
-- Correct answer: single ascending tone (A5, 880 Hz, 300ms) → positive reinforcement.
-- Session completion: two-note chime (C5 523Hz + E5 659Hz, staggered start) → celebratory.
-- Zero incorrect/error sound: negative audio feedback can increase anxiety and reduce retention.
+### Validation expectations
+- `bun run type-check` for repo-wide TypeScript sanity when changes touch source or instructions about source behavior.
+- `bun run lint` when wording implies code style/workflow claims that should match current tooling.
+- Targeted path/file existence checks for every doc or route reference you add.
 
-**Web Audio API:**
-- No npm dependencies; uses browser's native AudioContext.
-- Sine wave oscillator (smooth tone).
-- Gain envelope with exponential ramp (natural fade-out).
-- Safe for client-side: checks `typeof window` to avoid SSR errors.
-
-**Accessibility (CRITICAL):**
-- Always respect `prefers-reduced-motion: reduce` media query.
-- Users with motion sensitivity or vestibular disorders will have this set.
-- Check before playing any audio.
-- No auto-play; only trigger on user interaction (answer submission).
-
-### Common Patterns
-
-**Playing Correct Sound:**
-```typescript
-'use client'
-
-import { playCorrectSound } from '@/lib/audio'
-
-const handleCorrectAnswer = () => {
-  playCorrectSound() // Safe to call; checks window and prefers-reduced-motion
-}
-```
-
-**Playing Completion Sound:**
-```typescript
-'use client'
-
-import { playCompletionSound } from '@/lib/audio'
-
-const handleSessionComplete = () => {
-  playCompletionSound() // Two-note chime
-}
-```
-
-**In a Quiz Component:**
-```typescript
-'use client'
-
-import { playCorrectSound } from '@/lib/audio'
-import { trackEvent } from '@/lib/analytics'
-
-const QuestionCard = ({ question, onAnswer }) => {
-  const handleSubmit = async (selectedOption) => {
-    const isCorrect = selectedOption === question.correctAnswer
-    
-    if (isCorrect) {
-      playCorrectSound()
-      trackEvent('correct_answer', { questionId: question.id })
-    } else {
-      trackEvent('incorrect_answer', { questionId: question.id })
-    }
-    
-    onAnswer(isCorrect)
-  }
-  
-  return (...)
-}
-```
-
-## Dependencies
-
-### Internal
-
-- **Analytics:** `trackEvent()` optional for logging audio playback (can be fire-and-forget).
-
-### External
-
-- **Web Audio API:** Native browser API (no npm dependencies).
-- **AudioContext:** Available in all modern browsers.
-
----
-
-**Last Updated:** 2026-04-02
-
-**For accessibility guidelines, consult WCAG 2.1 and `.claude/agents/` in the repository root.**
+### Anti-laziness rule
+- Do not stop at this directory listing. Open the live files that implement the behavior you are describing or changing.
+- If older notes, counts, or examples elsewhere in this file drift from the live tree, prefer current code and this reality-refresh block.
+- When you change structure, ownership, workflow, or key file references in this scope, update this `AGENTS.md` in the same change.
+<!-- REALITY-REFRESH:END -->

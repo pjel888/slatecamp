@@ -1,39 +1,31 @@
-<!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-03-24 | Updated: 2026-03-24 -->
+<!-- Parent: ../../../AGENTS.md -->
+<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
 
 # auth
 
-## Purpose
+<!-- REALITY-REFRESH:START -->
+## 2026-04-16 Reality Refresh
 
-Authentication UI components for Supabase Auth integration. Handles user sign-in with Google OAuth, sign-out, and authentication state management.
+**Scope:** `src/components/auth/` subtree
 
-## Key Files
+**Current snapshot:** 0 directories and 3 files beneath this scope (excluding this `AGENTS.md`).
 
-| File | Description |
-|------|-------------|
-| `SignInWithGoogleButton.tsx` | Google OAuth sign-in button with loading state and customizable label |
-| `SignOutButton.tsx` | Sign-out button that clears session and redirects to home |
-| `GoogleIcon.tsx` | Google logo SVG icon component |
+**Top local directories:** none
 
-## For AI Agents
+**Top local files:** `GoogleIcon.tsx`, `index.ts`, `SignInWithGoogleButton.tsx`
 
-### Working In This Directory
+### What agents must do here
+- Inspect the consuming routes/features before changing shared UI behavior in this subtree.
+- Preserve SlateCamp design-token usage, client/server boundaries, and current composition patterns.
+- When components are reused across portals, note any downstream impact in docs or higher-scope `AGENTS.md` updates.
 
-- **OAuth Provider**: Google via Supabase Auth (OAuth 2.0)
-- **Session Management**: Supabase client-side auth via `createClient()` from `@/lib/supabase/client`
-- **Sign-in Flow**: `onClick` handler calls auth service (parent page manages routing post-login)
-- **Sign-out Flow**: Clears session cookie and redirects to home (`/`)
-- **Loading States**: Supports `isLoading` prop with custom label for UX feedback
-- **Accessibility**: Uses `aria-busy` for loading state, proper button semantics
-- **Styling**: Campfire design (Camp Cobalt primary, 44px min-height buttons)
+### Validation expectations
+- `bun run type-check` for repo-wide TypeScript sanity when changes touch source or instructions about source behavior.
+- `bun run lint` when wording implies code style/workflow claims that should match current tooling.
+- Targeted path/file existence checks for every doc or route reference you add.
 
-### Dependencies
-### Internal
-
-- `@/lib/supabase/client` - Supabase client instantiation
-- `@/components/graphics/icons/Icon.tsx` - Icon wrapper (SCIcon)
-- `@/lib/utils` - `cn()` utility
-- `@phosphor-icons/react` - Icons (SignOut)
-- Supabase (`@supabase/supabase-js`) - Auth API
-
-<!-- MANUAL: Verify Google OAuth credentials are configured in Supabase project settings. Test sign-in/sign-out flow in staging before production release. -->
+### Anti-laziness rule
+- Do not stop at this directory listing. Open the live files that implement the behavior you are describing or changing.
+- If older notes, counts, or examples elsewhere in this file drift from the live tree, prefer current code and this reality-refresh block.
+- When you change structure, ownership, workflow, or key file references in this scope, update this `AGENTS.md` in the same change.
+<!-- REALITY-REFRESH:END -->

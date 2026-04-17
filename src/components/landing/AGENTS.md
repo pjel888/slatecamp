@@ -1,35 +1,31 @@
-<!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-03-24 | Updated: 2026-03-24 -->
+<!-- Parent: ../../../AGENTS.md -->
+<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
 
 # landing
 
-## Purpose
+<!-- REALITY-REFRESH:START -->
+## 2026-04-16 Reality Refresh
 
-Landing page layout components that orchestrate marketing sections. Manages navigation, auth state, and composition of all major sections (hero, features, testimonials, CTA, footer).
+**Scope:** `src/components/landing/` subtree
 
-## Key Files
+**Current snapshot:** 0 directories and 3 files beneath this scope (excluding this `AGENTS.md`).
 
-| File | Description |
-|------|-------------|
-| `LandingPageContent.tsx` | Main landing page orchestrator; server component that checks auth state and composes all sections |
-| `LandingPageFallback.tsx` | Fallback/loading skeleton while page is being generated |
+**Top local directories:** none
 
-## For AI Agents
+**Top local files:** `index.ts`, `LandingPageContent.tsx`, `LandingPageFallback.tsx`
 
-### Working In This Directory
+### What agents must do here
+- Inspect the consuming routes/features before changing shared UI behavior in this subtree.
+- Preserve SlateCamp design-token usage, client/server boundaries, and current composition patterns.
+- When components are reused across portals, note any downstream impact in docs or higher-scope `AGENTS.md` updates.
 
-- **Server Component**: `LandingPageContent` is async server component; checks `hasAuthCookie()` for personalization
-- **Auth-Aware CTA**: Button text and href change based on login status (Dashboard vs Register)
-- **Composition**: Renders marketing nav, hero, features, testimonials, CTA, footer in sequence
-- **CSS**: Uses `bg-page-bg` and `min-h-screen` for full-viewport layout
-- **Imports**: Centralized imports from `@/components/marketing/` for all section components
-- **Constants**: Uses `ROUTES` object for navigation links
+### Validation expectations
+- `bun run type-check` for repo-wide TypeScript sanity when changes touch source or instructions about source behavior.
+- `bun run lint` when wording implies code style/workflow claims that should match current tooling.
+- Targeted path/file existence checks for every doc or route reference you add.
 
-### Dependencies
-### Internal
-
-- `@/lib/supabase/server` - `hasAuthCookie()` for server-side auth check
-- `@/components/marketing/` - All section components (HeroSection, BentoFeatureGrid, etc.)
-- `@/lib/constants` - ROUTES for navigation links
-
-<!-- MANUAL: Update CTA logic if auth detection method changes. Test both authenticated and anonymous landing page views before deployment. -->
+### Anti-laziness rule
+- Do not stop at this directory listing. Open the live files that implement the behavior you are describing or changing.
+- If older notes, counts, or examples elsewhere in this file drift from the live tree, prefer current code and this reality-refresh block.
+- When you change structure, ownership, workflow, or key file references in this scope, update this `AGENTS.md` in the same change.
+<!-- REALITY-REFRESH:END -->

@@ -1,57 +1,31 @@
-<!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-03-24 | Updated: 2026-03-25 -->
+<!-- Parent: ../../../AGENTS.md -->
+<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
 
 # hooks
 
-Shared React hooks for client components. Used across multiple features.
+<!-- REALITY-REFRESH:START -->
+## 2026-04-16 Reality Refresh
 
-## Purpose
+**Scope:** `src/lib/hooks/` subtree
 
-Custom hooks that encapsulate repeated logic: toast notifications, draggable floating elements, feature flags, and user role resolution. Separate from feature-specific hooks in `src/hooks/`.
+**Current snapshot:** 0 directories and 5 files beneath this scope (excluding this `AGENTS.md`).
 
-## Key Files
+**Top local directories:** none
 
-| File | Description |
-|------|-------------|
-| `use-toast.ts` | Toast state machine (ADD, UPDATE, DISMISS, REMOVE actions). Single toast at a time. Returns `{ toasts, toast(), dismiss() }`. |
-| `useDraggableFloatingPosition.ts` | Draggable dev pill with localStorage persistence. Supports centered positioning. Returns `{ style, onPointerDown, didDragRef, resetPosition }`. |
-| `useFeatureFlag.ts` | 3-layer resolution: dev override > DB value > config default. Returns `{ enabled, source }`. Also `useAllFeatureFlags()` for flag board UI. |
-| `useUserRole.ts` | Returns effective user role accounting for dev impersonation. In production, always returns real role. In dev, returns impersonated role if active. |
+**Top local files:** `use-toast.ts`, `useDraggableFloatingPosition.ts`, `useExperiment.ts`, `useFeatureFlag.ts`, `useUserRole.ts`
 
-## For AI Agents
+### What agents must do here
+- Inspect live call sites, tests, schema/config dependencies, and adjacent helpers before editing this logic layer.
+- Preserve boundaries between pure logic, query helpers, server actions, provider integrations, and validation schemas.
+- Avoid assumption-driven changes to IRT/SRS, entitlements, analytics, or payment logic without tracing actual usage.
 
-### Working In This Directory
+### Validation expectations
+- `bun run type-check` for repo-wide TypeScript sanity when changes touch source or instructions about source behavior.
+- `bun run lint` when wording implies code style/workflow claims that should match current tooling.
+- Targeted path/file existence checks for every doc or route reference you add.
 
-- All hooks use `'use client'` at the top.
-- Hooks must follow React hooks rules (dependency arrays, call order).
-- Return types should be minimal and specific.
-- Use Zustand stores when accessing global dev state.
-
-### Adding a New Hook
-
-1. Create file `use{HookName}.ts` with `'use client'` at top.
-2. Use React hooks (useState, useCallback, useEffect, useContext).
-3. Export single named function `export function use{HookName}() { ... }`.
-4. Return minimal object/value needed by consumers.
-
-### Common Patterns
-
-- **Feature flag resolution**: 3-layer (override > DB > config), return source for UI feedback.
-- **localStorage**: Persist UI state (position, preferences); wrap in try/catch.
-- **Zustand integration**: Access dev store for impersonation, feature overrides.
-- **Event listeners**: Cleanup in useEffect return; use useRef for refs like `didDragRef`.
-
-## Dependencies
-
-### Internal
-
-- `@/stores/dev-store` — Feature flag overrides, impersonation state.
-- `@/config/feature-flags` — Feature flag config defaults.
-- `@/components/ui/toast` — Toast type definitions.
-- `@/lib/supabase/server` — For server-side role checks.
-
-### External
-
-- React 19 (hooks).
-
-<!-- MANUAL: -->
+### Anti-laziness rule
+- Do not stop at this directory listing. Open the live files that implement the behavior you are describing or changing.
+- If older notes, counts, or examples elsewhere in this file drift from the live tree, prefer current code and this reality-refresh block.
+- When you change structure, ownership, workflow, or key file references in this scope, update this `AGENTS.md` in the same change.
+<!-- REALITY-REFRESH:END -->

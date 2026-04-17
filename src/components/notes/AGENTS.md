@@ -1,55 +1,31 @@
-<!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-03-24 | Updated: 2026-03-25 -->
+<!-- Parent: ../../../AGENTS.md -->
+<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
 
 # notes
 
-## Purpose
+<!-- REALITY-REFRESH:START -->
+## 2026-04-16 Reality Refresh
 
-Note-taking system using TipTap rich text editor. Provides markdown-like editing with formatting toolbar, note organization via folders, search, and auto-save. Notes capture insights from quizzes and Wiki content for spaced repetition review.
+**Scope:** `src/components/notes/` subtree
 
-## Key Files
+**Current snapshot:** 0 directories and 9 files beneath this scope (excluding this `AGENTS.md`).
 
-| File | Description |
-|------|-------------|
-| `NotesEditor.tsx` | TipTap editor with formatting toolbar (bold, italic, strikethrough, lists), bubble menu, highlights, images, task lists, headings, font sizes. `'use client'` |
-| `NoteEditor.tsx` | Wrapper showing single note with auto-save indicator and edit controls. `'use client'` |
-| `NotesShell.tsx` | Main shell/layout for notes workspace (sidebar + editor). `'use client'` |
-| `NotesList.tsx` | Renderable list of notes (for sidebar or standalone). `'use client'` |
-| `NotesNavigator.tsx` | Navigation component for moving between notes. `'use client'` |
-| `QuickCaptureDrawer.tsx` | Drawer for quick note capture (side-panel). `'use client'` |
-| `TemplatePicker.tsx` | Template selection modal for new notes. `'use client'` |
-| `ContextBadge.tsx` | Badge showing note context source (Quiz, Wiki, etc.). |
+**Top local directories:** none
 
-## Subdirectories
+**Top local files:** `ContextBadge.tsx`, `index.ts`, `NoteEditor.tsx`, `NotesEditor.tsx`, `NotesList.tsx`, `NotesNavigator.tsx`, `NotesShell.tsx`, `QuickCaptureDrawer.tsx`, `TemplatePicker.tsx`
 
-None. All notes components are flat in `src/components/notes/`.
+### What agents must do here
+- Inspect the consuming routes/features before changing shared UI behavior in this subtree.
+- Preserve SlateCamp design-token usage, client/server boundaries, and current composition patterns.
+- When components are reused across portals, note any downstream impact in docs or higher-scope `AGENTS.md` updates.
 
-## For AI Agents
+### Validation expectations
+- `bun run type-check` for repo-wide TypeScript sanity when changes touch source or instructions about source behavior.
+- `bun run lint` when wording implies code style/workflow claims that should match current tooling.
+- Targeted path/file existence checks for every doc or route reference you add.
 
-### Working In This Directory
-
-- **Editor**: Uses TipTap v3 with StarterKit, Placeholder, Typography, Image, TaskList, Highlight extensions
-- **Bubble Menu**: Shows on text selection with bold, italic, underline, highlight color picker
-- **Fixed Toolbar**: Optional, can be hidden with `hideToolbar` prop; includes formatting + image upload
-- **Auto-save**: Debounced with 10-second persistence target (see project rules)
-- **Title Extraction**: Automatically extracted from first paragraph on first edit (max 80 chars)
-- **Image Upload**: Supports local base64 or Supabase Storage integration (needs userId)
-- **Search**: Server-side via `getNotesList()` action with client-side filtering
-- **Folders**: Optional folder organization; loaded async on sidebar open
-- **Highlight Colors**: Yellow #FEF08A, Green #BBF7D0, Blue #BAE6FD, Pink #FBCFE8
-- **Styling**: Prose classes for typography (prose-sm on compact, full prose-base on desktop)
-
-### Dependencies
-### Internal
-
-- `@tiptap/react` - Editor core
-- `@tiptap/starter-kit` - Basic formatting (bold, italic, strike, headings, lists, blockquote, code, hr)
-- `@tiptap/extension-*` - Underline, Highlight, Placeholder, Image, TaskList, TextStyle, FontSize, HorizontalRule
-- `@/lib/actions/notes-actions` - Server actions: `getNotesList`, `getNoteFolders`, `createNote`, `createNoteFolder`
-- `@/lib/notes/uploadImage` - Image upload to Supabase Storage
-- `@/lib/utils` - `cn()` utility
-- `@phosphor-icons/react` - Icons (Plus, Folder, Note, Search, etc.)
-- `date-fns` - Date formatting
-- UI components from `@/components/ui/` - Sheet, Button, Input
-
-<!-- MANUAL: Update image upload domain/bucket when Supabase Storage is configured. Ensure fallback to base64 works if upload fails. Monitor auto-save debounce -- adjust if latency issues arise. -->
+### Anti-laziness rule
+- Do not stop at this directory listing. Open the live files that implement the behavior you are describing or changing.
+- If older notes, counts, or examples elsewhere in this file drift from the live tree, prefer current code and this reality-refresh block.
+- When you change structure, ownership, workflow, or key file references in this scope, update this `AGENTS.md` in the same change.
+<!-- REALITY-REFRESH:END -->

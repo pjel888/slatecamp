@@ -1,55 +1,31 @@
-<!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-03-24 | Updated: 2026-03-25 -->
+<!-- Parent: ../../../AGENTS.md -->
+<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
 
 # paywall
 
-Access control and tier-gated feature logic. Server-side only (use server).
+<!-- REALITY-REFRESH:START -->
+## 2026-04-16 Reality Refresh
 
-## Purpose
+**Scope:** `src/lib/paywall/` subtree
 
-Enforces paywall rules for free vs paid tiers. Tracks free user daily question cap, score reveal (once-per-free-user), and feature-level gating. All functions are server actions.
+**Current snapshot:** 0 directories and 3 files beneath this scope (excluding this `AGENTS.md`).
 
-## Key Files
+**Top local directories:** none
 
-| File | Description |
-|------|-------------|
-| `check-access.ts` | `checkFeatureAccess(featureKey)`, `canAccess(featureKey)`, `getUserTier()`, `isPaidUser()`. Queries `feature_flags` + `user_subscriptions`. |
-| `daily-cap.ts` | `checkDailyCap(userId)` (free users: 20 Q/day), `incrementDailyCount(userId, count)`. Resets daily at UTC midnight. Returns remaining count. |
-| `score-reveal.ts` | `checkScoreRevealAccess(userId)` (free users see once), `markScoreRevealed(userId)`. Paid users always see score. |
-| `index.ts` | Barrel exports: `checkFeatureAccess`, `canAccess`, `getUserTier`, `isPaidUser`, types. |
+**Top local files:** `daily-cap.ts`, `index.ts`, `score-reveal.ts`
 
-## For AI Agents
+### What agents must do here
+- Inspect live call sites, tests, schema/config dependencies, and adjacent helpers before editing this logic layer.
+- Preserve boundaries between pure logic, query helpers, server actions, provider integrations, and validation schemas.
+- Avoid assumption-driven changes to IRT/SRS, entitlements, analytics, or payment logic without tracing actual usage.
 
-### Working In This Directory
+### Validation expectations
+- `bun run type-check` for repo-wide TypeScript sanity when changes touch source or instructions about source behavior.
+- `bun run lint` when wording implies code style/workflow claims that should match current tooling.
+- Targeted path/file existence checks for every doc or route reference you add.
 
-- All functions are `'use server'` only (server actions, no client calls).
-- Read from `user_subscriptions` and `user_global_stats` tables.
-- Return structured results: `{ allowed, reason?, ... }` for diagnostics.
-- Silent failures on edge cases (e.g., increment cap failure won't break quiz).
-
-### Adding New Paywall Rule
-
-1. Create new function in appropriate file (e.g., `feature-limits.ts` for feature-level gating).
-2. Accept `userId` as param; query `user_subscriptions` to resolve tier.
-3. Return structured result with `allowed` boolean + context (remaining, cap, etc.).
-4. Export from `index.ts` barrel.
-
-### Common Patterns
-
-- **Tier checking**: Query `user_subscriptions` with status = 'active' or 'trialing'; default to 'free'.
-- **Daily reset**: Split date on 'T', compare to `free_questions_reset_date`, reset if new day.
-- **Error handling**: Use `try/catch` for increment/update; never throw on paywall failure.
-- **Reason strings**: Provide user-facing message in result (e.g., "Upgrade to Camp to unlock").
-
-## Dependencies
-
-### Internal
-
-- `@/lib/supabase/server` — Create server Supabase client.
-- `@/types/app` — `UserTier` type.
-
-### External
-
-- Supabase (server client).
-
-<!-- MANUAL: -->
+### Anti-laziness rule
+- Do not stop at this directory listing. Open the live files that implement the behavior you are describing or changing.
+- If older notes, counts, or examples elsewhere in this file drift from the live tree, prefer current code and this reality-refresh block.
+- When you change structure, ownership, workflow, or key file references in this scope, update this `AGENTS.md` in the same change.
+<!-- REALITY-REFRESH:END -->

@@ -1,46 +1,31 @@
-<!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-04-02 | Updated: 2026-04-02 -->
+<!-- Parent: ../../../AGENTS.md -->
+<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
 
-# Tools
+# tools
 
-## Purpose
-Hub page for standalone browser-based utility tools (floor tiles, wall paint, lot plotter). Light, focused SEO landing pages separate from the main calculator suite. Entry point for specific tool discovery.
+<!-- REALITY-REFRESH:START -->
+## 2026-04-16 Reality Refresh
 
-## Key Files
-| File | Description |
-|------|-------------|
-| `page.tsx` | Server component listing available tools with icons and descriptions |
-| `floor-tiles-calculator/page.tsx` | Floor tiles calculation tool page |
-| `floor-tiles-calculator/FloorTilesPageClient.tsx` | Client wrapper component |
-| `wall-paint-calculator/page.tsx` | Wall paint calculation tool page |
-| `wall-paint-calculator/WallPaintPageClient.tsx` | Client wrapper component |
-| `lot-plotter/page.tsx` | Lot plotter tool page |
-| `lot-plotter/LotPlotterClient.tsx` | Client wrapper component |
-| `loading.tsx` | Hub page loading skeleton |
-| `{tool}/loading.tsx` | Tool-specific loading skeletons |
+**Scope:** `src/app/tools/` subtree
 
-## For AI Agents
-### Working In This Directory
-- **Hub + sub-tools pattern:** Index page displays grid of tool cards; each tool has its own sub-directory
-- **No 3D visualization** (unlike calculators) — these are simpler, focused utility tools
-- **Tool card structure:** Icon, title, description, href link, tag (category: "Estimating" or "Site Planning")
-- **Metadata:** SEO-friendly (keywords: architecture tools, LEA exam prep)
-- **Public pages** — no auth required
-- **Client wrappers:** Each tool page has a Client component wrapper for interactivity
-- When adding new tools: create sub-directory, add Page component, add Client wrapper, list in TOOLS array on hub
+**Current snapshot:** 3 directories and 11 files beneath this scope (excluding this `AGENTS.md`).
 
-## Tool Sub-Directories
-Each tool follows:
-1. `page.tsx` — Server component entry
-2. `{ToolName}PageClient.tsx` — Client component with tool logic
-3. `loading.tsx` — Skeleton loader
+**Top local directories:** `floor-tiles-calculator/`, `lot-plotter/`, `wall-paint-calculator/`
 
-## Dependencies
-### Internal
-- `@/components/marketing/MarketingNav` — Navigation
-- `@/components/marketing/MarketingFooter` — Footer
-- `@/components/tools/ToolCard` — Reusable tool card component
-- `@/lib/constants/site` — `siteConfig`
-- `@phosphor-icons/react/dist/ssr` — Icons (GridFour, PaintBucket, MapTrifold)
+**Top local files:** `loading.tsx`, `page.tsx`
 
-<!-- MANUAL: -->
+### What agents must do here
+- Inspect route groups, `page.tsx`, `layout.tsx`, `loading.tsx`, `error.tsx`, and any `route.ts` handlers in this subtree before editing.
+- Preserve server-component defaults, auth/portal boundaries, and route-level loading/error behavior.
+- Cross-check UI/route changes against the matching components, server actions, and nearest portal docs in `.ai`.
+
+### Validation expectations
+- `bun run type-check` for repo-wide TypeScript sanity when changes touch source or instructions about source behavior.
+- `bun run lint` when wording implies code style/workflow claims that should match current tooling.
+- Targeted path/file existence checks for every doc or route reference you add.
+
+### Anti-laziness rule
+- Do not stop at this directory listing. Open the live files that implement the behavior you are describing or changing.
+- If older notes, counts, or examples elsewhere in this file drift from the live tree, prefer current code and this reality-refresh block.
+- When you change structure, ownership, workflow, or key file references in this scope, update this `AGENTS.md` in the same change.
+<!-- REALITY-REFRESH:END -->

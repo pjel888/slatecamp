@@ -1,23 +1,31 @@
-<!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-04-02 | Updated: 2026-04-02 -->
+<!-- Parent: ../../../AGENTS.md -->
+<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
 
 # score
 
-## Purpose
+<!-- REALITY-REFRESH:START -->
+## 2026-04-16 Reality Refresh
 
-Readiness Score display. Animated SVG ring (0-100), zone badges, delta display, loading skeleton.
+**Scope:** `src/components/score/` subtree
 
-## For AI Agents
+**Current snapshot:** 1 directories and 6 files beneath this scope (excluding this `AGENTS.md`).
 
-1. **Zones fixed:** Strong 85-100, On Track 70-84, Developing 40-69, Needs Review <40
-2. **Color strict:** Use getReadinessColorClass()
-3. **Motion respected:** Check prefers-reduced-motion
-4. **Sizes predefined:** sm (80px), md (160px), lg (240px)
+**Top local directories:** `skeletons/`
 
-## Dependencies
+**Top local files:** `index.ts`, `ReadinessScoreRing.stories.tsx`, `ReadinessScoreRing.tsx`, `ZoneContextCard.stories.tsx`, `ZoneContextCard.tsx`
 
-Internal: @/components/shared/score-display, @/lib/utils
+### What agents must do here
+- Inspect the consuming routes/features before changing shared UI behavior in this subtree.
+- Preserve SlateCamp design-token usage, client/server boundaries, and current composition patterns.
+- When components are reused across portals, note any downstream impact in docs or higher-scope `AGENTS.md` updates.
 
-External: react, tailwindcss
+### Validation expectations
+- `bun run type-check` for repo-wide TypeScript sanity when changes touch source or instructions about source behavior.
+- `bun run lint` when wording implies code style/workflow claims that should match current tooling.
+- Targeted path/file existence checks for every doc or route reference you add.
 
-<!-- MANUAL: -->
+### Anti-laziness rule
+- Do not stop at this directory listing. Open the live files that implement the behavior you are describing or changing.
+- If older notes, counts, or examples elsewhere in this file drift from the live tree, prefer current code and this reality-refresh block.
+- When you change structure, ownership, workflow, or key file references in this scope, update this `AGENTS.md` in the same change.
+<!-- REALITY-REFRESH:END -->

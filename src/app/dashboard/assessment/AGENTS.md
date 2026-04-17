@@ -1,33 +1,31 @@
-<!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-04-02 | Updated: 2026-04-02 -->
+<!-- Parent: ../../../../AGENTS.md -->
+<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
 
-# Assessment
+# assessment
 
-## Purpose
-Initial onboarding assessment quiz for new users. Determines baseline readiness across all LEA disciplines (via IRT 2-parameter model). Authenticated page with mandatory completion before dashboard access; redirects completed users to main dashboard.
+<!-- REALITY-REFRESH:START -->
+## 2026-04-16 Reality Refresh
 
-## Key Files
-| File | Description |
-|------|-------------|
-| `page.tsx` | Server component handling auth check, completion check, and quiz initialization |
-| `loading.tsx` | Loading skeleton |
+**Scope:** `src/app/dashboard/assessment/` subtree
 
-## For AI Agents
-### Working In This Directory
-- **Auth required** — redirects to `/auth/login` if user not authenticated
-- **Mandatory onboarding:** Redirects to `/dashboard` if already completed (prevents re-taking)
-- **Discipline selection:** Reads `current_discipline_id` from `user_global_stats` table; redirects to `/dashboard` if not set
-- **Question fetching:** Calls `getAssessmentQuestions(disciplineId)` to fetch assessment questions; redirects if empty pool
-- **Rendering:** Passes `questionIds` and `disciplineId` to `AssessmentQuiz` client component
-- **Flow:** User → Check auth → Check completion → Check discipline → Load questions → Render AssessmentQuiz
-- This is a **blocking page** — no skip; completion is required before accessing main study features
-- After completion, update `user_global_stats.assessment_completed = true` (likely in AssessmentQuiz)
+**Current snapshot:** 0 directories and 2 files beneath this scope (excluding this `AGENTS.md`).
 
-## Dependencies
-### Internal
-- `@/lib/supabase/server` — `createClient()`, `getUser()` for auth
-- `@/lib/actions/assessment` — `hasCompletedAssessment()`, `getAssessmentQuestions(disciplineId)` server actions
-- `@/components/assessment/AssessmentQuiz` — Quiz UI component
-- `next/navigation` — `redirect()` function
+**Top local directories:** none
 
-<!-- MANUAL: -->
+**Top local files:** `loading.tsx`, `page.tsx`
+
+### What agents must do here
+- Inspect route groups, `page.tsx`, `layout.tsx`, `loading.tsx`, `error.tsx`, and any `route.ts` handlers in this subtree before editing.
+- Preserve server-component defaults, auth/portal boundaries, and route-level loading/error behavior.
+- Cross-check UI/route changes against the matching components, server actions, and nearest portal docs in `.ai`.
+
+### Validation expectations
+- `bun run type-check` for repo-wide TypeScript sanity when changes touch source or instructions about source behavior.
+- `bun run lint` when wording implies code style/workflow claims that should match current tooling.
+- Targeted path/file existence checks for every doc or route reference you add.
+
+### Anti-laziness rule
+- Do not stop at this directory listing. Open the live files that implement the behavior you are describing or changing.
+- If older notes, counts, or examples elsewhere in this file drift from the live tree, prefer current code and this reality-refresh block.
+- When you change structure, ownership, workflow, or key file references in this scope, update this `AGENTS.md` in the same change.
+<!-- REALITY-REFRESH:END -->

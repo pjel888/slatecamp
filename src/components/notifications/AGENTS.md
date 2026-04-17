@@ -1,22 +1,31 @@
-<!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-04-02 | Updated: 2026-04-02 -->
+<!-- Parent: ../../../AGENTS.md -->
+<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
 
 # notifications
 
-## Purpose
+<!-- REALITY-REFRESH:START -->
+## 2026-04-16 Reality Refresh
 
-Real-time notification system UI. Popover bell icon with badge, notification list, filtering, item rendering, preferences. Integrates Supabase Realtime.
+**Scope:** `src/components/notifications/` subtree
 
-## For AI Agents
+**Current snapshot:** 0 directories and 7 files beneath this scope (excluding this `AGENTS.md`).
 
-1. **Realtime via Supabase:** NotificationBell calls startRealtime() on mount
-2. **State in useNotificationStore:** No local useState for notification data
-3. **Filtering client-side:** NotificationFilters drives store filter state
+**Top local directories:** none
 
-## Dependencies
+**Top local files:** `index.ts`, `NotificationBell.tsx`, `NotificationFilters.tsx`, `NotificationIcon.tsx`, `NotificationItem.tsx`, `NotificationList.tsx`, `NotificationPreferences.tsx`
 
-Internal: @/stores/useNotificationStore, @/lib/utils
+### What agents must do here
+- Inspect the consuming routes/features before changing shared UI behavior in this subtree.
+- Preserve SlateCamp design-token usage, client/server boundaries, and current composition patterns.
+- When components are reused across portals, note any downstream impact in docs or higher-scope `AGENTS.md` updates.
 
-External: react, @supabase/supabase-js, @phosphor-icons/react, date-fns, tailwindcss
+### Validation expectations
+- `bun run type-check` for repo-wide TypeScript sanity when changes touch source or instructions about source behavior.
+- `bun run lint` when wording implies code style/workflow claims that should match current tooling.
+- Targeted path/file existence checks for every doc or route reference you add.
 
-<!-- MANUAL: -->
+### Anti-laziness rule
+- Do not stop at this directory listing. Open the live files that implement the behavior you are describing or changing.
+- If older notes, counts, or examples elsewhere in this file drift from the live tree, prefer current code and this reality-refresh block.
+- When you change structure, ownership, workflow, or key file references in this scope, update this `AGENTS.md` in the same change.
+<!-- REALITY-REFRESH:END -->

@@ -1,310 +1,62 @@
-<!-- Generated: 2026-03-24 | Updated: 2026-04-02 -->
-
-# SlateCamp
-
-## Purpose
-
-SlateCamp is a high-performance ALE prep platform for the Philippine Architecture Licensure Exam. Built with Next.js 16.1.6 (App Router), React 19, Supabase (PostgreSQL), and Three.js for 3D spatial learning. The "Campfire" design system provides a warm, research-backed aesthetic. All mastery calculations use the IRT 2-parameter logistic model. The platform serves 4 portals: Dashboard (student-facing), Admin (content management), CEO (business analytics), and Developer (internal docs and tooling).
-
-For a comprehensive architecture overview, see `.ai/docs/00-meta/001-index.md` (lists all 42 docs) and `.ai/docs/02-architecture/001-system-architecture.md`.
-
-## Key Files
-
-| File | Description |
-|------|-------------|
-| `CLAUDE.md` | Core system prompt -- design system tokens, voice guide, absolute constraints, tech stack |
-| `.ai/GLOBAL-CODEBASE-AUDIT-REPORT.md` | Full codebase audit report with architecture, route map, component inventory |
-| `DATABASE_SCHEMA.sql` | Authoritative relational schema -- consult before any DB work |
-| `package.json` | Dependencies and scripts (bun as package manager) |
-| `next.config.ts` | Next.js config -- Turbopack, server actions (4MB limit), image remotes |
-| `middleware.ts` | Supabase auth session refresh + pathname header injection |
-| `src/app/globals.css` | Tailwind v4 CSS-first theme, tokens, and plugin loading entrypoint |
-| `vercel.json` | Cron jobs: blindspot-scan (daily 4pm UTC), compute-signals (daily 4:30pm UTC) |
-| `components.json` | shadcn/ui configuration |
-| `tsconfig.json` | TypeScript config with `@/` path alias to `src/` |
-| `eslint.config.mjs` | ESLint flat config |
-| `globals.css` | Tailwind v4 CSS-first theme with Campfire design tokens |
-| `bun.lock` | Bun lockfile -- never edit manually |
-| `docs/architecture/SLATECAMP-ARCHITECTURE.md` | Architecture snapshot and supporting technical reference |
-
-## Subdirectories
-
-| Directory | Purpose |
-|-----------|---------|
-| `src/` | All application source code (see `src/AGENTS.md`) |
-| `supabase/` | Database migrations (60) and seed SQL scripts (see `supabase/AGENTS.md`) |
-| `scripts/` | Dev tooling -- custom dev server, DB inspection, seeding (see `scripts/AGENTS.md`) |
-| `public/` | Static assets -- icons, OG images, widget modules (see `public/AGENTS.md`) |
-| `prompts/` | Archived — moved to `.ai/docs/archive/legacy/prompts-archived/` |
-| `docs/` | Canonical human-readable documentation, architecture notes, and content-support assets |
-| `.ai/` | Agent-only docs, generated audits, archives, and workflow residue (see `.ai/docs/00-meta/001-index.md`) |
-| `.claude/` | Agent definitions, skills, and documentation for AI-assisted development |
-
-## Codebase Stats
-
-| Metric | Value |
-|--------|-------|
-| Total .tsx files | ~1044 |
-| Pages (App Router) | 137 across 4 portals |
-| Server action files | 116 (in `src/lib/actions/`) |
-| Zustand stores | 5 (in `src/stores/`) |
-| React Contexts | 10 |
-| Database tables | 51 (50 with RLS) |
-| RLS policies | 89+ |
-| Database migrations | 60 |
-| Production dependencies | 56 |
-| Dev dependencies | 8 |
-| Env variables | 19 (6 `NEXT_PUBLIC_*`, 11 server-only, 2 config) |
-
-## For AI Agents
-
-### Working In This Directory
-
-- **Read `CLAUDE.md` first** -- it defines the Slatecamp design system, voice guide, and absolute constraints
-- **Read `DATABASE_SCHEMA.sql`** before any database-related work -- never hallucinate tables or foreign keys
-- **Use `bun`** as the package manager (not npm/yarn/pnpm)
-- **Arrow functions only** -- never use `function` declarations
-- **Font:** Inter only (loaded via `next/font/google`) -- Syne for display headings, DM Mono for code/data values
-- **Minimum text size:** 8px
-- **No generic gamification** -- no confetti, badges, virtual currency, or empty streaks
-- **4 portals:** Dashboard (`/dashboard`), Admin (`/admin`), CEO (`/ceo`), Developer (`/developer`)
-- **Server Components by default** -- only add `'use client'` when interactivity is needed (target <40% client ratio)
-- **Always use design tokens** -- never hardcode hex colors in Tailwind classes or inline styles
-- **Use `Promise.all()`** for independent queries -- never sequential `await` chains in page.tsx files
-- **Use explicit column selects** -- never `select('*')` in Supabase queries
-- **All server action files must include `"use server"` directive** at the top
-- **Wrap server actions in try/catch** -- never let raw Supabase errors propagate to client
-
-### Slatecamp Design System (Quick Reference)
-
-| Token | Hex | Tailwind Class | Usage |
-|-------|-----|---------------|-------|
-| Camp Cobalt | `#1B3FC4` | `text-primary` / `bg-primary` | Primary actions, nav, links, active states |
-| Camp Orange | `#E8853A` | — | Progress celebration, warm CTAs (sparingly) |
-| Emerald | `#2D9F6F` | `text-success` | Success, mastery, correct answers |
-| Warm Red | `#D64545` | `text-destructive` | Error, critical -- always with context |
-| Amber | `#D4951A` | `text-warning` | Warning, developing skill |
-| Surface Light | `#F8F7F5` | `bg-background` | Page background (warm white) |
-| Ink Primary | `#1A2332` | `text-foreground` | Main text |
-| Border | `#D4DAE3` | `border-border` | Default borders |
-| Ink Secondary | `#4A5568` | `text-text-secondary` | Secondary text |
-| Ink Tertiary | `#8896A7` | `text-muted-foreground` | Muted text, placeholders |
-| Cobalt Light | `#EEF2FC` | `bg-primary-50` | Light primary backgrounds |
-| Cobalt Dark | `#1535A8` | `text-primary-700` | Dark primary text/accents |
-
-- **Border radius:** `rounded-sm` (buttons/inputs), `rounded-md` (cards), `rounded-lg` (modals) -- never `rounded-xl`+
-- **Shadows:** `shadow-sm` on hover, `shadow-md` dropdowns, `shadow-lg` modals -- never `shadow-xl`+ on non-modal
-- **Transitions:** max 300ms, default `duration-150 ease-out` -- never `bounce`/`spring` easing
-- **Use `<Card>` component** from `@/components/ui/card` -- never ad-hoc card divs
-- **Sanitize HTML** -- always use `DOMPurify.sanitize()` before `dangerouslySetInnerHTML`
-
-### Portal Architecture
-
-| Portal | Pages | Key Features |
-|--------|-------|-------------|
-| Dashboard | 33 | Wiki, Testing Hub (7 modes), Analytics (8 visualizations), Notes, 3D Lab, Camp Trails, Assessment |
-| Admin | 27 | Articles CRUD, Questions CRUD + Import, Taxonomy Editor, Coverage Map, Publishing Pipeline, SME Review |
-| CEO | 4 | Command Center (MRR/ARR), Financials (P&L), Behavioral Insights, Team Management |
-| Developer | 21 | Design System Catalog, API Reference, Architecture Docs, Dev Tools, Status Dashboard |
-
-### Data Fetching Patterns
-
-- **Server Components** fetch data directly via server actions or Supabase queries
-- **Query modules** live in `src/lib/queries/` -- prefer these over inline queries in page.tsx
-- **Server Actions** in `src/lib/actions/` handle all mutations (create, update, delete)
-- Use **Suspense boundaries** for independent data sections (see analytics page for gold standard)
-- **Loading skeletons** via `loading.tsx` -- 87/105 pages have loading states
-
-### Pedagogical Engine
-
-| Component | Location | Notes |
-|-----------|----------|-------|
-| IRT 2PL Model | `src/lib/srs/irt.ts` | `P(θ) = 1 / (1 + exp(-a * (θ - b)))` |
-| SM-2 SRS | `src/lib/srs/sm2.ts` | Standard SM-2 with ease floor at 1.3 |
-| SRS Updates | `src/lib/srs/update.ts` | Quality derivation + schedule updates |
-| Readiness Score | `src/lib/readiness-score.ts` | 330-line anti-inflation 6-vector computation |
-| Blindspot Queue | `src/lib/srs/blindspot.ts` | 3 weakest nodes + unexplored grey nodes |
-| Testing Actions | `src/lib/actions/testing.ts` | Session creation, interaction saving, 7 modes |
-| Quiz Actions | `src/lib/actions/quiz.ts` | Legacy quiz flow with SRS integration |
-
-### Testing Requirements
-
-- `bun run lint` -- ESLint checks
-- `bun run type-check` -- TypeScript strict mode
-- `bun run build` -- Full production build
-
-### Common Patterns
-
-- Server Components by default; `'use client'` only when interactivity is needed
-- Supabase auth via middleware session refresh
-- Server Actions in `src/lib/actions/` for all mutations
-- Zustand stores in `src/stores/` for client state
-- shadcn/ui + Tailwind v4 CSS variables for theming
-- IRT 2-parameter logistic model for all mastery/readiness calculations
-- Portal shell pattern: each portal uses `PortalLayout` from `@/components/portal`
-- 3D scenes use `frameloop="demand"` and `dpr={[1,1.5]}` for performance
-- Wiki widgets lazy-loaded via content-aware widget registry
-- Quiz sessions auto-save every 10 seconds with localStorage + server sync
-
-## Dependencies
-
-### External (Key)
-
-- `next` 16.1.6 -- App Router, Server Components, Server Actions
-- `react` 19.2.4 -- Latest React with RSC support
-- `typescript` 5.9.3 -- Strict mode
-- `tailwindcss` 4.2.2 -- CSS-first config with Campfire design tokens
-- `@supabase/supabase-js` 2.100.0 + `@supabase/ssr` 0.9.0 -- Database and auth
-- `@react-three/fiber` 9.5.0 + `three` 0.183.2 -- 3D spatial learning (60 FPS target)
-- `zustand` 5.0.12 -- Client state management
-- `@base-ui/react` 0.9.5 + `shadcn` 4.1.0 -- UI primitives
-- `@anthropic-ai/sdk` 0.78.0 -- AI contextual tutor (Temperature 0.0, citation-required)
-- `lemonsqueezy` 20.4.1 + `payrex-node` 1.7.3 -- Payment processing
-- `framer-motion` 12.38.0 -- Structural animations (max 300ms transitions)
-- `recharts` 3.8.0 -- Analytics charts
-- `@tiptap/*` 3.20.4 (13 extensions) -- Rich text editor for notes
-- `zod` -- Schema validation
-- `lucide-react` 0.577.0 + `@phosphor-icons/react` 2.1.10 -- Icon libraries
-
-<!-- MANUAL: -->
-
-<!-- gitnexus:start -->
-# GitNexus — Code Intelligence
-
-This project is indexed by GitNexus as **slatecamp** (9666 symbols, 22111 relationships, 300 execution flows). Use the GitNexus MCP tools to understand code, assess impact, and navigate safely.
-
-> If any GitNexus tool warns the index is stale, run `npx gitnexus analyze` in terminal first.
-
-## Always Do
-
-- **MUST run impact analysis before editing any symbol.** Before modifying a function, class, or method, run `gitnexus_impact({target: "symbolName", direction: "upstream"})` and report the blast radius (direct callers, affected processes, risk level) to the user.
-- **MUST run `gitnexus_detect_changes()` before committing** to verify your changes only affect expected symbols and execution flows.
-- **MUST warn the user** if impact analysis returns HIGH or CRITICAL risk before proceeding with edits.
-- When exploring unfamiliar code, use `gitnexus_query({query: "concept"})` to find execution flows instead of grepping. It returns process-grouped results ranked by relevance.
-- When you need full context on a specific symbol — callers, callees, which execution flows it participates in — use `gitnexus_context({name: "symbolName"})`.
-
-## When Debugging
-
-1. `gitnexus_query({query: "<error or symptom>"})` — find execution flows related to the issue
-2. `gitnexus_context({name: "<suspect function>"})` — see all callers, callees, and process participation
-3. `READ gitnexus://repo/slatecamp/process/{processName}` — trace the full execution flow step by step
-4. For regressions: `gitnexus_detect_changes({scope: "compare", base_ref: "main"})` — see what your branch changed
-
-## When Refactoring
-
-- **Renaming**: MUST use `gitnexus_rename({symbol_name: "old", new_name: "new", dry_run: true})` first. Review the preview — graph edits are safe, text_search edits need manual review. Then run with `dry_run: false`.
-- **Extracting/Splitting**: MUST run `gitnexus_context({name: "target"})` to see all incoming/outgoing refs, then `gitnexus_impact({target: "target", direction: "upstream"})` to find all external callers before moving code.
-- After any refactor: run `gitnexus_detect_changes({scope: "all"})` to verify only expected files changed.
-
-## Never Do
-
-- NEVER edit a function, class, or method without first running `gitnexus_impact` on it.
-- NEVER ignore HIGH or CRITICAL risk warnings from impact analysis.
-- NEVER rename symbols with find-and-replace — use `gitnexus_rename` which understands the call graph.
-- NEVER commit changes without running `gitnexus_detect_changes()` to check affected scope.
-
-## Tools Quick Reference
-
-| Tool | When to use | Command |
-|------|-------------|---------|
-| `query` | Find code by concept | `gitnexus_query({query: "auth validation"})` |
-| `context` | 360-degree view of one symbol | `gitnexus_context({name: "validateUser"})` |
-| `impact` | Blast radius before editing | `gitnexus_impact({target: "X", direction: "upstream"})` |
-| `detect_changes` | Pre-commit scope check | `gitnexus_detect_changes({scope: "staged"})` |
-| `rename` | Safe multi-file rename | `gitnexus_rename({symbol_name: "old", new_name: "new", dry_run: true})` |
-| `cypher` | Custom graph queries | `gitnexus_cypher({query: "MATCH ..."})` |
-
-## Impact Risk Levels
-
-| Depth | Meaning | Action |
-|-------|---------|--------|
-| d=1 | WILL BREAK — direct callers/importers | MUST update these |
-| d=2 | LIKELY AFFECTED — indirect deps | Should test |
-| d=3 | MAY NEED TESTING — transitive | Test if critical path |
-
-## Resources
-
-| Resource | Use for |
-|----------|---------|
-| `gitnexus://repo/slatecamp/context` | Codebase overview, check index freshness |
-| `gitnexus://repo/slatecamp/clusters` | All functional areas |
-| `gitnexus://repo/slatecamp/processes` | All execution flows |
-| `gitnexus://repo/slatecamp/process/{name}` | Step-by-step execution trace |
-
-## Self-Check Before Finishing
-
-Before completing any code modification task, verify:
-1. `gitnexus_impact` was run for all modified symbols
-2. No HIGH/CRITICAL risk warnings were ignored
-3. `gitnexus_detect_changes()` confirms changes match expected scope
-4. All d=1 (WILL BREAK) dependents were updated
-
-## Keeping the Index Fresh
-
-After committing code changes, the GitNexus index becomes stale. Re-run analyze to update it:
-
-```bash
-npx gitnexus analyze
-```
-
-If the index previously included embeddings, preserve them by adding `--embeddings`:
-
-```bash
-npx gitnexus analyze --embeddings
-```
-
-To check whether embeddings exist, inspect `.gitnexus/meta.json` — the `stats.embeddings` field shows the count (0 means no embeddings). **Running analyze without `--embeddings` will delete any previously generated embeddings.**
-
-> Claude Code users: A PostToolUse hook handles this automatically after `git commit` and `git merge`.
-
-## CLI
-
-| Task | Read this skill file |
-|------|---------------------|
-| Understand architecture / "How does X work?" | `.claude/skills/gitnexus/gitnexus-exploring/SKILL.md` |
-| Blast radius / "What breaks if I change X?" | `.claude/skills/gitnexus/gitnexus-impact-analysis/SKILL.md` |
-| Trace bugs / "Why is X failing?" | `.claude/skills/gitnexus/gitnexus-debugging/SKILL.md` |
-| Rename / extract / split / refactor | `.claude/skills/gitnexus/gitnexus-refactoring/SKILL.md` |
-| Tools, resources, schema reference | `.claude/skills/gitnexus/gitnexus-guide/SKILL.md` |
-| Index, status, clean, wiki CLI commands | `.claude/skills/gitnexus/gitnexus-cli/SKILL.md` |
-
-<!-- gitnexus:end -->
-
-<!-- code-review-graph MCP tools -->
-## MCP Tools: code-review-graph
-
-**IMPORTANT: This project has a knowledge graph. ALWAYS use the
-code-review-graph MCP tools BEFORE using Grep/Glob/Read to explore
-the codebase.** The graph is faster, cheaper (fewer tokens), and gives
-you structural context (callers, dependents, test coverage) that file
-scanning cannot.
-
-### When to use graph tools FIRST
-
-- **Exploring code**: `semantic_search_nodes` or `query_graph` instead of Grep
-- **Understanding impact**: `get_impact_radius` instead of manually tracing imports
-- **Code review**: `detect_changes` + `get_review_context` instead of reading entire files
-- **Finding relationships**: `query_graph` with callers_of/callees_of/imports_of/tests_for
-- **Architecture questions**: `get_architecture_overview` + `list_communities`
-
-Fall back to Grep/Glob/Read **only** when the graph doesn't cover what you need.
-
-### Key Tools
-
-| Tool | Use when |
-|------|----------|
-| `detect_changes` | Reviewing code changes — gives risk-scored analysis |
-| `get_review_context` | Need source snippets for review — token-efficient |
-| `get_impact_radius` | Understanding blast radius of a change |
-| `get_affected_flows` | Finding which execution paths are impacted |
-| `query_graph` | Tracing callers, callees, imports, tests, dependencies |
-| `semantic_search_nodes` | Finding functions/classes by name or keyword |
-| `get_architecture_overview` | Understanding high-level codebase structure |
-| `refactor_tool` | Planning renames, finding dead code |
-
-### Workflow
-
-1. The graph auto-updates on file changes (via hooks).
-2. Use `detect_changes` for code review.
-3. Use `get_affected_flows` to understand impact.
-4. Use `query_graph` pattern="tests_for" to check coverage.
+<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
+
+# SlateCamp Repository
+
+## Scope
+This file governs the whole repository unless a deeper `AGENTS.md` overrides it.
+
+## Current repository reality
+SlateCamp is a large Next.js App Router codebase for ALE preparation. It is broad, mature, and operationally heavy.
+
+Live evidence from the repo on 2026-04-16:
+- `src/app/` contains 125 `page.tsx` routes, 16 layouts, 96 loading files, 9 error boundaries, and 12 route handlers
+- `src/lib/actions/` contains 146 files across root and feature subdirectories
+- `src/components/` contains 716 files
+- `src/features/` contains 551 files
+- `supabase/migrations/` contains 89 migration files
+- `src/` contains 64 test files
+- the repo tracks 113 `AGENTS.md` files
+
+This is not a greenfield app or a toy demo. Treat it like a multi-surface product with significant documentation and governance needs.
+
+## Canonical sources by topic
+- Commands and tooling: `package.json`
+- Database truth: `DATABASE_SCHEMA.sql` and `supabase/migrations/`
+- Next.js/runtime truth: `next.config.ts`, `middleware.ts`, `src/app/`
+- Operational truth: `.ai/`
+- Deep reference/spec docs: `.ai/docs/`
+- Repo entrypoint: `README.md`
+- Policy-heavy repo contract: `CLAUDE.md`
+
+## What agents must do before editing
+1. Read the nearest in-scope `AGENTS.md` files from root down to the target subtree.
+2. Inspect the live code, config, schema, and scripts in scope before making claims or edits.
+3. Update documentation and agent guidance in the same change when structure, workflow, ownership, or key file references drift.
+4. Keep `.ai`, `README.md`, and the `AGENTS.md` hierarchy aligned.
+
+## Global rules
+- Use Bun for package and script execution.
+- Read `DATABASE_SCHEMA.sql` before any database-related work.
+- Verify commands against `package.json`; do not assume a top-level `test` script exists.
+- Prefer non-destructive documentation updates: annotate, supersede, or index rather than silently delete history.
+- Avoid shallow scanning. Folder names are not enough in this repository.
+
+## Validation expectations
+- Run `bun run type-check` when source-behavior or architectural claims change.
+- Run `bun run lint` when workflow, tooling, or style claims change.
+- Check every referenced route, script, schema file, and doc link by path.
+- Run `git diff --check` before completion for documentation-heavy changes.
+
+## Documentation topology
+- `README.md` = comprehensive repository entrypoint
+- `CLAUDE.md` = policy-heavy repository contract
+- `docs/` = root-level bridge surface
+- `.ai/` = operational intelligence layer
+- `.ai/docs/` = deep reference/specification corpus
+
+Use these roles intentionally. Do not let them drift into contradictory copies.
+
+## Anti-laziness rule
+- Do not stop at the directory tree.
+- Open the implementation files that define the behavior you are documenting or changing.
+- If a deeper `AGENTS.md` or live code contradicts an older note, follow the narrower scope and current code reality.

@@ -1,35 +1,31 @@
-<!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-03-24 | Updated: 2026-03-24 -->
+<!-- Parent: ../../../AGENTS.md -->
+<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
 
 # motion
 
-## Purpose
+<!-- REALITY-REFRESH:START -->
+## 2026-04-16 Reality Refresh
 
-Framer Motion animation components for scroll-triggered reveals and staggered animations. Provides reusable animation patterns respecting user `prefers-reduced-motion` settings.
+**Scope:** `src/components/motion/` subtree
 
-## Key Files
+**Current snapshot:** 0 directories and 3 files beneath this scope (excluding this `AGENTS.md`).
 
-| File | Description |
-|------|-------------|
-| `ScrollReveal.tsx` | Scroll-triggered reveal with fade-in, slide-up, optional scale animation |
-| `StaggerChildren.tsx` | Stagger animation wrapper for animating list items sequentially |
+**Top local directories:** none
 
-## For AI Agents
+**Top local files:** `index.ts`, `ScrollReveal.tsx`, `StaggerChildren.tsx`
 
-### Working In This Directory
+### What agents must do here
+- Inspect the consuming routes/features before changing shared UI behavior in this subtree.
+- Preserve SlateCamp design-token usage, client/server boundaries, and current composition patterns.
+- When components are reused across portals, note any downstream impact in docs or higher-scope `AGENTS.md` updates.
 
-- **Duration Constraint**: Max 300ms for motion durations (never 500ms, 700ms, 1000ms)
-- **Default Duration**: 150ms with ease-out (`[0.16, 1, 0.3, 1]` cubic-bezier)
-- **ScrollReveal**: `initial={{ opacity: 0, y }}` → `whileInView={{ opacity: 1, y: 0 }}`
-- **Viewport**: `once: true` (animate once on scroll), `margin: '-80px'` (trigger before visible)
-- **Scale**: Optional prop to scale from 0.98 on reveal
-- **Accessibility**: All animations are suppressible via CSS media query `prefers-reduced-motion: reduce`
-- **No Bounce/Spring**: Use standard easing, never bounce or spring easing (except structured framer layouts)
+### Validation expectations
+- `bun run type-check` for repo-wide TypeScript sanity when changes touch source or instructions about source behavior.
+- `bun run lint` when wording implies code style/workflow claims that should match current tooling.
+- Targeted path/file existence checks for every doc or route reference you add.
 
-### Dependencies
-### Internal
-
-- `framer-motion` - Animation library
-- React - `ReactNode` type
-
-<!-- MANUAL: Test scroll reveal timing on various viewport speeds. Verify prefers-reduced-motion is respected in accessibility tests. Never add bounce/spring easing without explicit design request. -->
+### Anti-laziness rule
+- Do not stop at this directory listing. Open the live files that implement the behavior you are describing or changing.
+- If older notes, counts, or examples elsewhere in this file drift from the live tree, prefer current code and this reality-refresh block.
+- When you change structure, ownership, workflow, or key file references in this scope, update this `AGENTS.md` in the same change.
+<!-- REALITY-REFRESH:END -->

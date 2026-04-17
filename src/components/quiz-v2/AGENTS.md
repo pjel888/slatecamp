@@ -1,43 +1,31 @@
-<!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-04-02 | Updated: 2026-04-06 -->
+<!-- Parent: ../../../AGENTS.md -->
+<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
 
 # quiz-v2
 
-## Purpose
+<!-- REALITY-REFRESH:START -->
+## 2026-04-16 Reality Refresh
 
-Next-generation quiz engine components implementing pedagogically-sound testing modes via a dynamic **Hero Configurator** and specialized shells (**Standard**, **Simulation**, **Endurance**). Replaces simple randomization with a **60/30/10 Intelligent Routing** algorithm.
+**Scope:** `src/components/quiz-v2/` subtree
 
-All components use 'use client' with state via useQuizStore (Zustand). Server actions handle session init, submission, IRT computation, and feedback.
+**Current snapshot:** 3 directories and 66 files beneath this scope (excluding this `AGENTS.md`).
 
-## Subdirectories
+**Top local directories:** `results/`, `review/`, `setup/`
 
-| Directory | Purpose |
-|-----------|---------|
-| setup/ | Config flow: intro slides, mode selector, pressure level, checklist |
-| results/ | Analytics: score reveal, breakdown, matrix, debrief, review cards |
-| review/ | Full-screen review: filters, rationales, misconceptions, citations |
+**Top local files:** `BaseQuizShell.tsx`, `CalculatingResultsOverlay.tsx`, `ConfidenceInput.tsx`, `CrammingNudge.tsx`, `DoseProgressStepper.tsx`, `EnduranceShell.tsx`, `ExitConfirmModal.tsx`, `FeedbackPanel.stories.tsx`, `FeedbackPanel.tsx`, `GenerationInput.tsx`
 
-## For AI Agents
+### What agents must do here
+- Inspect the consuming routes/features before changing shared UI behavior in this subtree.
+- Preserve SlateCamp design-token usage, client/server boundaries, and current composition patterns.
+- When components are reused across portals, note any downstream impact in docs or higher-scope `AGENTS.md` updates.
 
-1. **Quiz lifecycle:** HeroConfigurator -> Standard/Simulation/EnduranceShell -> quiz loop -> ResultsDashboard -> ReviewMode
-2. **Specialized Shells:**
-   - `StandardQuizShell`: Generalized modes (Camp, Chill, Subject, Storm, etc.)
-   - `SimulationShell`: High-stakes proctored UI, 24h delay logic.
-   - `EnduranceShell`: Stamina tracking, fatigue nudges, design-centric layout.
-3. **Config immutable after setup:** Do not modify QuizSessionConfig mid-session
-4. **Prediction/postdiction optional:** Check MODE_PRESETS
-5. **Feedback AI-driven (Temp 0.0):** Mandatory Wiki citations required
-6. **IRT server-side:** No client calculations
-7. **Review separate:** Full-screen overlay with read-only data
-8. **Gesture capture:** GestureCaptureZone only place for invalidate()
-9. **Micro-breaks enforced:** 30s after N questions in Storm/Extended
-10. **Pacing contextual:** Warm advisory tone
-11. **Zone colors strict:** Use getReadinessColorClass()
+### Validation expectations
+- `bun run type-check` for repo-wide TypeScript sanity when changes touch source or instructions about source behavior.
+- `bun run lint` when wording implies code style/workflow claims that should match current tooling.
+- Targeted path/file existence checks for every doc or route reference you add.
 
-## Dependencies
-
-Internal: @/stores/useQuizStore, @/types/quiz-config, @/lib/quiz/mode-presets, @/lib/actions/quiz-v2, @/components/shared/score-display
-
-External: react, framer-motion, recharts, zustand, @react-three/fiber, tailwindcss
-
-<!-- MANUAL: -->
+### Anti-laziness rule
+- Do not stop at this directory listing. Open the live files that implement the behavior you are describing or changing.
+- If older notes, counts, or examples elsewhere in this file drift from the live tree, prefer current code and this reality-refresh block.
+- When you change structure, ownership, workflow, or key file references in this scope, update this `AGENTS.md` in the same change.
+<!-- REALITY-REFRESH:END -->

@@ -1,52 +1,31 @@
-<!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-03-24 | Updated: 2026-03-25 -->
+<!-- Parent: ../../../AGENTS.md -->
+<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
 
 # blindspot
 
-Blindspot queue generation and tracking. Server-side only (use server).
+<!-- REALITY-REFRESH:START -->
+## 2026-04-16 Reality Refresh
 
-## Purpose
+**Scope:** `src/lib/blindspot/` subtree
 
-Implements Blindspot (Focus Review) protocol: identifies user's 3 weakest taxonomy nodes (Red zone < 0.4 mastery + Grey zone untouched) and creates 12-question quiz queue. Nightly job + on-demand via dashboard. Tracks pre/post mastery and improvement.
+**Current snapshot:** 0 directories and 2 files beneath this scope (excluding this `AGENTS.md`).
 
-## Key Files
+**Top local directories:** none
 
-| File | Description |
-|------|-------------|
-| `generate-queue.ts` | `generateBlindspotQueue(userId)` — finds 3 weakest + untouched nodes, creates queue, snapshots pre-mastery. `completeBlindspotQueue(queueId, userId)` — snapshots post-mastery, counts improved nodes. `deferBlindspotQueue(queueId, userId)` — defer 48h. `getActiveBlindspotQueue(userId)` — returns current queue for dashboard. |
-| `generate-queue.test.ts` | Bun tests: active queue guard, no weak nodes, queue creation, 3-node cap, grey node discovery. Uses mocked Supabase client. |
+**Top local files:** `generate-queue.test.ts`, `generate-queue.ts`
 
-## For AI Agents
+### What agents must do here
+- Inspect live call sites, tests, schema/config dependencies, and adjacent helpers before editing this logic layer.
+- Preserve boundaries between pure logic, query helpers, server actions, provider integrations, and validation schemas.
+- Avoid assumption-driven changes to IRT/SRS, entitlements, analytics, or payment logic without tracing actual usage.
 
-### Working In This Directory
+### Validation expectations
+- `bun run type-check` for repo-wide TypeScript sanity when changes touch source or instructions about source behavior.
+- `bun run lint` when wording implies code style/workflow claims that should match current tooling.
+- Targeted path/file existence checks for every doc or route reference you add.
 
-- All functions are `'use server'` (server actions/cron jobs).
-- Red nodes: `current_mastery_weight < 0.4`. Grey nodes: no row in `user_node_mastery` (untouched).
-- Capped at 3 target nodes per queue (top 1-3 weak + fill with grey if needed).
-- Snapshots pre/post mastery; tracks `nodes_improved` count for completion stats.
-
-### Adding New Queue Logic
-
-1. Follow existing query pattern: find weak nodes → find grey nodes → create queue.
-2. Always snapshot pre-state before modification.
-3. Return `{ queueId, nodeIds }` or null for guard conditions.
-4. Log errors with timestamp + context (console.error as fallback).
-
-### Common Patterns
-
-- **Queue guards**: Check `blindspot_queues` for pending/in_progress before creating new.
-- **Mastery filtering**: `.lt('current_mastery_weight', 0.4)` for red, check touched set for grey.
-- **Snapshot logic**: Before queue (pre), after completion (post). Compare for improvement.
-- **Error handling**: Return null on insert failure; never throw on paywall/queue logic.
-
-## Dependencies
-
-### Internal
-
-- `@/lib/supabase/server` — Create server Supabase client.
-
-### External
-
-- Supabase (server client).
-
-<!-- MANUAL: -->
+### Anti-laziness rule
+- Do not stop at this directory listing. Open the live files that implement the behavior you are describing or changing.
+- If older notes, counts, or examples elsewhere in this file drift from the live tree, prefer current code and this reality-refresh block.
+- When you change structure, ownership, workflow, or key file references in this scope, update this `AGENTS.md` in the same change.
+<!-- REALITY-REFRESH:END -->

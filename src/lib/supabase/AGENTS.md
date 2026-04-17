@@ -1,114 +1,31 @@
-<!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-03-24 | Updated: 2026-03-25 -->
+<!-- Parent: ../../../AGENTS.md -->
+<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
 
 # supabase
 
-## Purpose
+<!-- REALITY-REFRESH:START -->
+## 2026-04-16 Reality Refresh
 
-Supabase client factory and utilities. Handles creation of authenticated browser/server clients, admin (service-role) clients, middleware clients, and error formatting. Abstracts away environment variable loading and client configuration.
+**Scope:** `src/lib/supabase/` subtree
 
-## Key Files
+**Current snapshot:** 0 directories and 8 files beneath this scope (excluding this `AGENTS.md`).
 
-| File | Description |
-|------|-------------|
-| **client.ts** | Browser client factory (`createClient()`); handles demo mode mock |
-| **server.ts** | Server client factory (`createClient()`, `getUser()`, `hasAuthCookie()`); uses cookies for auth |
-| **admin.ts** | Admin client factory (`createAdminClient()`); uses service role key, no refresh |
-| **middleware.ts** | Middleware client for auth state refresh in `middleware.ts` |
-| **bootstrap.ts** | Initial client setup, environment validation |
-| **format-error.ts** | Supabase error formatter; converts DB errors to readable messages |
+**Top local directories:** none
 
-## For AI Agents
+**Top local files:** `admin.ts`, `bootstrap.ts`, `client.ts`, `format-error.ts`, `middleware.test.ts`, `middleware.ts`, `seed.sql`, `server.ts`
 
-### Working In This Directory
+### What agents must do here
+- Inspect live call sites, tests, schema/config dependencies, and adjacent helpers before editing this logic layer.
+- Preserve boundaries between pure logic, query helpers, server actions, provider integrations, and validation schemas.
+- Avoid assumption-driven changes to IRT/SRS, entitlements, analytics, or payment logic without tracing actual usage.
 
-1. **Client creation is lazy** — clients are created on-demand, not globally.
-2. **Browser vs Server** — use `client.ts` in React components, `server.ts` in Server Actions.
-3. **Admin client** — only use in admin actions; has full database access.
-4. **Demo mode** — all clients return mock clients if `isDemoMode()` is true.
-5. **No auth cookie management** — cookies are handled by Next.js + Supabase SSR adapter.
-6. **Error formatting** — use `formatSupabaseError()` to convert database errors to user-facing messages.
+### Validation expectations
+- `bun run type-check` for repo-wide TypeScript sanity when changes touch source or instructions about source behavior.
+- `bun run lint` when wording implies code style/workflow claims that should match current tooling.
+- Targeted path/file existence checks for every doc or route reference you add.
 
-### Common Patterns
-
-**In a Server Action:**
-```typescript
-'use server'
-
-import { createClient, getUser } from '@/lib/supabase/server'
-
-export async function fetchUserData() {
-  const supabase = await createClient()
-  const { data: { user } } = await getUser()
-
-  if (!user) throw new Error('Unauthorized')
-
-  const { data, error } = await supabase
-    .from('table_name')
-    .select('*')
-    .eq('user_id', user.id)
-
-  return { data, error }
-}
-```
-
-**In a Client Component:**
-```typescript
-'use client'
-
-import { createClient } from '@/lib/supabase/client'
-
-export function MyComponent() {
-  const supabase = createClient()
-
-  useEffect(() => {
-    supabase
-      .from('table_name')
-      .on('*', payload => console.log(payload))
-      .subscribe()
-  }, [supabase])
-}
-```
-
-**Admin mutation:**
-```typescript
-'use server'
-
-import { createAdminClient } from '@/lib/supabase/admin'
-
-export async function deleteRecord(id: string) {
-  const supabase = createAdminClient()
-
-  const { error } = await supabase
-    .from('table_name')
-    .delete()
-    .eq('id', id)
-
-  return { error }
-}
-```
-
-**Error formatting:**
-```typescript
-import { formatSupabaseError } from '@/lib/supabase/format-error'
-
-const { error } = await supabase.from('table').insert([data])
-if (error) {
-  const message = formatSupabaseError(error)
-  // message is now user-friendly ("Email already exists" instead of "duplicate key value")
-}
-```
-
-## Dependencies
-
-### Internal
-
-- `@/lib/demo/config` — isDemoMode check
-- `@/lib/demo/mock-supabase` — createMockSupabaseClient
-
-### External
-
-- `@supabase/ssr` — createBrowserClient, createServerClient
-- `@supabase/supabase-js` — createClient (admin)
-- `next/headers` — cookies
-- `react` — cache, useCallback
+### Anti-laziness rule
+- Do not stop at this directory listing. Open the live files that implement the behavior you are describing or changing.
+- If older notes, counts, or examples elsewhere in this file drift from the live tree, prefer current code and this reality-refresh block.
+- When you change structure, ownership, workflow, or key file references in this scope, update this `AGENTS.md` in the same change.
+<!-- REALITY-REFRESH:END -->

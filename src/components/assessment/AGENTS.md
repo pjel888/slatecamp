@@ -1,44 +1,31 @@
-<!-- Parent: ../AGENTS.md -->
-<!-- Generated: 2026-03-24 | Updated: 2026-03-24 -->
+<!-- Parent: ../../../AGENTS.md -->
+<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
 
 # assessment
 
-## Purpose
+<!-- REALITY-REFRESH:START -->
+## 2026-04-16 Reality Refresh
 
-Assessment/pre-assessment components for the diagnostic quiz that generates the initial Readiness Score. Guides users through questions without feedback, calculates score, and transitions to score reveal screen with a ceremonial "calculating" pause.
+**Scope:** `src/components/assessment/` subtree
 
-## Key Files
+**Current snapshot:** 0 directories and 5 files beneath this scope (excluding this `AGENTS.md`).
 
-| File | Description |
-|------|-------------|
-| `AssessmentQuiz.tsx` | Main assessment quiz component with question navigation, option selection, answer tracking, completion flow |
-| `AnimatedScore.tsx` | Animated number counter for Readiness Score display |
-| `PreAssessmentTeaser.tsx` | Teaser/preview shown before starting assessment |
-| `ScoreReveal.tsx` | Full-page score reveal with breakdown by topic and mastery indicators |
+**Top local directories:** none
 
-## For AI Agents
+**Top local files:** `AnimatedScore.tsx`, `AssessmentQuiz.tsx`, `index.ts`, `PreAssessmentTeaser.tsx`, `ScoreReveal.tsx`
 
-### Working In This Directory
+### What agents must do here
+- Inspect the consuming routes/features before changing shared UI behavior in this subtree.
+- Preserve SlateCamp design-token usage, client/server boundaries, and current composition patterns.
+- When components are reused across portals, note any downstream impact in docs or higher-scope `AGENTS.md` updates.
 
-- **Session Management**: Creates quiz session on mount; tracks sessionId throughout flow
-- **Answer Tracking**: Uses Map<questionId, optionId> to store answers; enables prev/next navigation
-- **Time Tracking**: Records per-question time via `Date.now()` at question start
-- **IRT Integration**: Calls `completeAssessment()` server action which runs IRT 2-parameter model
-- **Ceremonial UX**: 2.5-second "Calculating your Readiness Score..." pause intentionally adds weight
-- **Progress**: Visual progress bar showing (currentIndex + 1) / totalQuestions
-- **Navigation**: Previous/Next buttons; Previous disabled on first question, Next disabled until option selected
-- **Loading States**: Shows spinner on init; error state with retry CTA; calculating state on completion
-- **Accessibility**: `role="radiogroup"`, individual `role="radio"` on options, `aria-checked`
+### Validation expectations
+- `bun run type-check` for repo-wide TypeScript sanity when changes touch source or instructions about source behavior.
+- `bun run lint` when wording implies code style/workflow claims that should match current tooling.
+- Targeted path/file existence checks for every doc or route reference you add.
 
-### Dependencies
-### Internal
-
-- `@/lib/actions/quiz` - Server actions: `getSessionQuestions()`, `createQuizSession()`, `saveInteraction()`, `updateQuizSession()`
-- `@/lib/actions/assessment` - `completeAssessment()` (runs IRT scoring)
-- `@/lib/utils/question` - `getCorrectOptionId()` helper
-- `@/types/app` - Types: `Question`, `Choice`, `QuizSession`
-- `@/lib/utils` - `cn()` utility
-- Next.js (`next/navigation`) - Router for post-completion redirect
-- React hooks - `useState`, `useEffect`, `useCallback`, `useTransition`, `useRef`
-
-<!-- MANUAL: Verify IRT calculation accuracy with sample data before launch. Test the 2.5s pause timing for ceremonial weight — adjust if UX research suggests different value. Ensure all answers persist if user navigates away mid-assessment. -->
+### Anti-laziness rule
+- Do not stop at this directory listing. Open the live files that implement the behavior you are describing or changing.
+- If older notes, counts, or examples elsewhere in this file drift from the live tree, prefer current code and this reality-refresh block.
+- When you change structure, ownership, workflow, or key file references in this scope, update this `AGENTS.md` in the same change.
+<!-- REALITY-REFRESH:END -->
