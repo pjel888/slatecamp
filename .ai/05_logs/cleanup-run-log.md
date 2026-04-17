@@ -546,6 +546,15 @@
   - `bun run type-check` passed
   - `bun run build` passed
 
+### Follow-up: developer detached table-of-contents cleanup
+
+- implemented:
+  - removed `src/app/developer/_components/TableOfContents.tsx` after confirming it had no live consumers
+  - refreshed `src/app/developer/AGENTS.md` counts for the smaller subtree
+- validation:
+  - `bun run type-check` passed
+  - `bun run build` passed
+
 ### Follow-up: developer content-version truth cleanup
 
 - implemented:
