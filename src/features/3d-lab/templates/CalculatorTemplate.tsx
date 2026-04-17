@@ -78,7 +78,7 @@ function CalculatorLayout({
       {/* Breadcrumb */}
       <nav className="border-b border-border bg-card px-4 py-2">
         <p className="font-sans text-xs text-muted-foreground">
-          <Link href="/calculators" className="hover:text-primary">
+          <Link href={ROUTES.calculators.suiteRoot} className="hover:text-primary">
             Calculators
           </Link>
           <span className="mx-1">&gt;</span>

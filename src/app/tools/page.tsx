@@ -3,6 +3,7 @@ import { MarketingNav } from '@/components/marketing/MarketingNav'
 import { MarketingFooter } from '@/components/marketing/MarketingFooter'
 import { ToolCard } from '@/components/tools/ToolCard'
 import { siteConfig } from '@/lib/constants/site'
+import { ROUTES } from '@/lib/routes'
 
 export const metadata = {
   title: `Free Architecture Tools — ${siteConfig.name}`,
@@ -24,7 +25,7 @@ const TOOLS = [
     title: 'Floor Tiles Calculator',
     description:
       'Calculate tile quantities, cut tiles, and waste percentage for any room.',
-    href: '/tools/floor-tiles-calculator',
+    href: ROUTES.calculators.floorTiles,
     tag: 'Estimating',
   },
   {
@@ -32,7 +33,7 @@ const TOOLS = [
     title: 'Wall Paint Calculator',
     description:
       'Estimate paintable area, liters needed, and costs for wall surfaces.',
-    href: '/tools/wall-paint-calculator',
+    href: ROUTES.calculators.wallPaint,
     tag: 'Estimating',
   },
   {
@@ -40,7 +41,7 @@ const TOOLS = [
     title: 'Lot Plotter',
     description:
       'Plot lot boundaries from TCT technical descriptions with bearings and distances.',
-    href: '/tools/lot-plotter',
+    href: ROUTES.calculators.lotPlotter,
     tag: 'Site Planning',
   },
 ]
@@ -48,7 +49,7 @@ const TOOLS = [
 export default function ToolsHubPage() {
   return (
     <div className='min-h-screen bg-muted'>
-      <MarketingNav activeRoute='/tools' />
+      <MarketingNav activeRoute={ROUTES.calculators.root} />
       <main className='px-6 pt-32 pb-24 sm:pt-40'>
         <div className='mx-auto max-w-[1200px]'>
           {/* Hero */}

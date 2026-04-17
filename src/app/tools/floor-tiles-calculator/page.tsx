@@ -3,6 +3,7 @@ import { MarketingNav } from '@/components/marketing/MarketingNav'
 import { MarketingFooter } from '@/components/marketing/MarketingFooter'
 import { siteConfig } from '@/lib/constants/site'
 import { FloorTilesPageClient } from './FloorTilesPageClient'
+import { ROUTES } from '@/lib/routes'
 
 export const metadata: Metadata = {
   title: `Floor Tiles Calculator — Free Tool | ${siteConfig.name}`,
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
 const FloorTilesCalculatorPage = async () => {
   return (
     <div className='min-h-screen bg-background flex flex-col'>
-      <MarketingNav activeRoute='/tools' />
+      <MarketingNav activeRoute={ROUTES.calculators.root} />
       <main className='flex-1 pt-20 pb-16 px-6'>
         <FloorTilesPageClient />
       </main>

@@ -3,6 +3,7 @@ import { MarketingNav } from '@/components/marketing/MarketingNav'
 import { MarketingFooter } from '@/components/marketing/MarketingFooter'
 import { siteConfig } from '@/lib/constants/site'
 import { WallPaintPageClient } from './WallPaintPageClient'
+import { ROUTES } from '@/lib/routes'
 
 export const metadata: Metadata = {
   title: `Wall Paint Calculator — Free Tool | ${siteConfig.name}`,
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
 const WallPaintCalculatorPage = async () => {
   return (
     <div className='min-h-screen bg-background'>
-      <MarketingNav activeRoute='/tools' />
+      <MarketingNav activeRoute={ROUTES.calculators.root} />
       <main className='mx-auto max-w-[1200px] px-6 pt-24 pb-16'>
         <WallPaintPageClient />
       </main>

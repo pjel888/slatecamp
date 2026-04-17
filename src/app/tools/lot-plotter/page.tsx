@@ -3,6 +3,7 @@ import { MarketingNav } from '@/components/marketing/MarketingNav'
 import { MarketingFooter } from '@/components/marketing/MarketingFooter'
 import { siteConfig } from '@/lib/constants/site'
 import { LotPlotterClient } from './LotPlotterClient'
+import { ROUTES } from '@/lib/routes'
 
 export const metadata: Metadata = {
   title: `Lot Plotter — TCT Technical Description Tool | ${siteConfig.name}`,
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
 export default async function LotPlotterPage() {
   return (
     <div className='min-h-screen bg-background'>
-      <MarketingNav activeRoute='/tools' />
+      <MarketingNav activeRoute={ROUTES.calculators.root} />
       <main className='px-6 pt-32 pb-24 sm:pt-40'>
         <LotPlotterClient />
       </main>

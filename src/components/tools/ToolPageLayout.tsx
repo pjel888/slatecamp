@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { CaretRight } from '@phosphor-icons/react/dist/ssr'
 import { cn } from '@/lib/utils'
+import { ROUTES } from '@/lib/routes'
 
 interface ToolPageLayoutProps {
   toolName: string
@@ -19,7 +20,7 @@ export const ToolPageLayout = ({ toolName, form, canvas }: ToolPageLayoutProps) 
         aria-label='Breadcrumb'
       >
         <Link
-          href='/tools'
+          href={ROUTES.calculators.root}
           className='hover:text-foreground transition-colors duration-150'
         >
           Tools

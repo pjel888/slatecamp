@@ -112,6 +112,7 @@ export const ROUTES = {
     floorTiles: '/tools/floor-tiles-calculator',
     wallPaint: '/tools/wall-paint-calculator',
     lotPlotter: '/tools/lot-plotter',
+    suiteRoot: '/calculators',
     tool: (slug: string) => `/calculators/${slug}` as const,
   },
 
