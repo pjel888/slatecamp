@@ -12,7 +12,7 @@
 
 **Top local directories:** none
 
-**Top local files:** `Breadcrumbs.tsx`, `index.ts`, `StatusBadge.stories.tsx`, `StatusBadge.tsx`, `StatusBanner.stories.tsx`, `StatusBanner.tsx`, `StatusKPICard.stories.tsx`, `StatusKPICard.tsx`, `UptimeBar.stories.tsx`, `UptimeBar.tsx`
+**Top local files:** `Breadcrumbs.tsx`, `StatusBadge.stories.tsx`, `StatusBadge.tsx`, `StatusBanner.stories.tsx`, `StatusBanner.tsx`, `StatusKPICard.stories.tsx`, `StatusKPICard.tsx`, `SurfaceTruthNotice.tsx`, `UptimeBar.stories.tsx`, `UptimeBar.tsx`
 
 ### What agents must do here
 - Inspect the consuming routes/features before changing shared UI behavior in this subtree.

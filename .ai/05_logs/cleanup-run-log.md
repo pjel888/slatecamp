@@ -441,6 +441,15 @@
   - `bun run type-check` passed
   - `bun run build` passed
 
+### Follow-up: developer barrel trim
+
+- implemented:
+  - removed `src/components/developer/index.ts` after confirming the barrel had no live imports
+  - refreshed `src/components/developer/AGENTS.md` so the scoped snapshot reflects the current file set, including `SurfaceTruthNotice.tsx`
+- validation:
+  - `bun run type-check` passed
+  - `bun run build` passed
+
 ### Follow-up: wiki mobile hydration convergence
 
 - implemented:
