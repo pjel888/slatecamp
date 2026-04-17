@@ -24,6 +24,7 @@ Implementation note (2026-04-17):
 - `L2-ADM-001` implemented in part (internal admin navigation and redirect targets moved to canonical `knowledge*` surfaces while alias routes remain)
 - `L2-ADM-001` implemented in part (canonical admin revalidation targets now replace internal alias revalidation in bulk/wiki actions)
 - `L2-ADM-001` implemented in part (unused legacy admin route constants removed from `ROUTES.admin` while compatibility route files remain)
+- `L2-QUIZ-002` implemented in part (internal consumers migrated off legacy quiz/testing helper aliases while route files remain)
 - Bun package-resolution blocker repaired by pinning `@lemonsqueezy/lemonsqueezy.js` to the nearest valid version (`1.2.5`)
 - implemented dependency removals:
   - `DEP-01` — `dompurify`

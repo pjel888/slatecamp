@@ -133,7 +133,7 @@ export const HeatmapPreview = ({ seeds }: HeatmapPreviewProps) => {
       {/* CTAs */}
       <div className="space-y-2.5">
         <Link
-          href={`${ROUTES.QUIZ_V2_SETUP('diagnostic')}?source=comp_exam`}
+          href={`${ROUTES.quiz.setup('diagnostic')}?source=comp_exam`}
           className="block w-full rounded-sm bg-primary px-4 py-2.5 text-center text-sm font-semibold text-white transition-colors duration-150 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
         >
           Run the diagnostic quiz →

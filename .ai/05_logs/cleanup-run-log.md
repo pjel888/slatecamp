@@ -241,6 +241,20 @@
   - `bun run check:storybook` passed
   - `bun run build` passed
 
+### Follow-up: internal quiz/testing helper convergence
+
+- implemented:
+  - migrated internal consumers away from `ROUTES.TESTING`, `ROUTES.REVIEW`, `ROUTES.QUIZ_V2_SETUP`, and `ROUTES.quiz.legacy.simSetup`
+  - aligned those consumers with canonical `ROUTES.dashboard.drills` and `ROUTES.quiz.setup(...)` helpers
+  - removed stale `/dashboard/testing*` title-prefix aliases from `src/lib/routes.ts`
+- intentionally preserved:
+  - route files under `/dashboard/testing/**`
+  - legacy uppercase helper aliases in `src/lib/routes.ts`
+- validation:
+  - `bun run type-check` passed
+  - `bun run check:storybook` passed
+  - `bun run build` passed
+
 ### Completion check
 
 - baseline/control docs created first

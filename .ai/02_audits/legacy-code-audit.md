@@ -29,6 +29,10 @@ The same engine is exposed through:
 
 There are also duplicate layout/loading shells in testing vs drills.
 
+Implementation note (2026-04-17):
+- internal consumers now prefer canonical `ROUTES.quiz.*` and `ROUTES.dashboard.drills`
+- legacy uppercase helpers and alias route files still remain and should be retired in later compatibility-focused passes
+
 ### `L2-CALC-003` — `/tools` vs `/calculators`
 Current behavior suggests a deliberate split between:
 - public/simple calculators under `/tools`

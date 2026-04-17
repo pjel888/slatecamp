@@ -29,7 +29,7 @@ const DebriefError = ({
           </button>
           <button
             type="button"
-            onClick={() => router.push(ROUTES.TESTING)}
+            onClick={() => router.push(ROUTES.dashboard.drills)}
             className="h-9 px-5 rounded-sm bg-primary text-white text-[11px] font-black uppercase tracking-widest hover:bg-primary-700 transition-colors"
           >
             Back to Testing

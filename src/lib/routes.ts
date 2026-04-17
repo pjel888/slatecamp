@@ -392,9 +392,7 @@ const DEFAULT_TITLE = 'Overview'
 
 const DYNAMIC_TITLE_PREFIXES: { prefix: string; title: string }[] = [
   { prefix: '/dashboard/quiz/', title: 'Active Session' },
-  { prefix: '/dashboard/testing/session/', title: 'Active Session' },
   { prefix: '/dashboard/drills/', title: 'Drills' },
-  { prefix: '/dashboard/testing/', title: 'Drills' },
   { prefix: '/dashboard/library/', title: 'Question Bank' },
   { prefix: '/dashboard/wiki/', title: 'Knowledge Wiki' },
   { prefix: '/dashboard/flash/', title: 'LEA Numbers Flash' },
