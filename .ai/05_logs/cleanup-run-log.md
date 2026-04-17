@@ -92,31 +92,22 @@
 ### Follow-up: low-risk dependency cleanup slice
 
 - implemented:
+  - removed `dompurify`
   - removed `nextjs-toploader`
   - removed `@storybook/test`
   - removed `@radix-ui/react-visually-hidden`
   - removed `@types/dompurify`
   - removed the redundant `check:storybook-placeholders` alias script
-- intentionally deferred:
-  - `dompurify`
-  - `@tiptap/pm`
-  - `@tiptap/suggestion`
-- reason for deferral:
-  - keep the slice narrow and avoid mixing the low-risk removals with the medium-risk sanitizer/editor dependency decisions in the same commit
+- later extension:
+  - removed `@tiptap/pm`
+  - removed `@tiptap/suggestion`
 - validation:
   - `bun install --ignore-scripts` passed
   - `bun install --frozen-lockfile --ignore-scripts` passed
   - `bun run type-check` passed
   - `bun run check:storybook` passed
   - `bun run lint` completes with warnings only and no errors under the repaired install state
-  - `bun run build` fails in the current environment because `next/font` cannot fetch Google Fonts over the restricted network
-    - `Atkinson Hyperlegible`
-    - `DM Mono`
-    - `Instrument Serif`
-    - `Inter`
-    - `Sora`
-    - `Syne`
-  - build failure signal in this run is environmental/network-bound, not a code-level regression from the cleanup slice
+  - `bun run build` now passes under the repaired install state
 
 ### Follow-up: wiki server/client boundary quick win
 

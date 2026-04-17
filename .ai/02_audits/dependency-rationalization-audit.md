@@ -2,14 +2,13 @@
 
 Implementation note (2026-04-17):
 - implemented:
+  - `DEP-01` — `dompurify`
   - `DEP-02` — `nextjs-toploader`
   - `DEP-03` — `@storybook/test`
   - `DEP-04` — `@radix-ui/react-visually-hidden`
+  - `DEP-05` — `@tiptap/pm`, `@tiptap/suggestion`
   - `@types/dompurify`
   - `SCRIPT-01` — `check:storybook-placeholders`
-- still deferred:
-  - `DEP-01` — `dompurify`
-  - `DEP-05` — `@tiptap/pm` and `@tiptap/suggestion`
 
 ## Likely dependency cleanup candidates
 

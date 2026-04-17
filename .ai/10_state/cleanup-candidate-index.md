@@ -11,14 +11,13 @@ Implementation note (2026-04-17):
 - `L3-C01` implemented
 - Bun package-resolution blocker repaired by pinning `@lemonsqueezy/lemonsqueezy.js` to the nearest valid version (`1.2.5`)
 - implemented dependency removals:
+  - `DEP-01` — `dompurify`
   - `DEP-02` — `nextjs-toploader`
   - `DEP-03` — `@storybook/test`
   - `DEP-04` — `@radix-ui/react-visually-hidden`
+  - `DEP-05` — `@tiptap/pm`, `@tiptap/suggestion`
   - removed `@types/dompurify` with the same low-risk slice
 - `SCRIPT-01` implemented
-- still deferred:
-  - `DEP-01` — `dompurify`
-  - `DEP-05` — `@tiptap/pm` and `@tiptap/suggestion`
 
 | Candidate ID | Category | Confidence | Path(s) | Short title | Why it is a candidate | Evidence summary | Likely payoff | Removal / refactor risk | Validation difficulty | Recommended plan reference |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
