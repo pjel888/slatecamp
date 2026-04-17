@@ -1,5 +1,15 @@
 # Dependency Rationalization Audit
 
+Implementation note (2026-04-17):
+- implemented:
+  - `DEP-02` — `nextjs-toploader`
+  - `DEP-03` — `@storybook/test`
+  - `DEP-04` — `@radix-ui/react-visually-hidden`
+  - `@types/dompurify`
+- still deferred:
+  - `DEP-01` — `dompurify`
+  - `DEP-05` — `@tiptap/pm` and `@tiptap/suggestion`
+
 ## Likely dependency cleanup candidates
 
 - `DEP-01` — `dompurify` and `@types/dompurify`
@@ -39,4 +49,3 @@ Do not remove packages only because repo search missed them once. Reconfirm via 
 
 - findings: `CLN-012`, `CLN-013`, `CLN-015`
 - plans: `../03_plans/dependency-rationalization-plan.md`, `../03_plans/cleanup-safety-validation-plan.md`
-

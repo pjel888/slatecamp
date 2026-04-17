@@ -8,7 +8,15 @@ Status note:
 Implementation note (2026-04-17):
 - `L1-C001` implemented
 - `L1-C002` implemented
-- dependency-removal subset (`DEP-01` to `DEP-05`) remains deferred, but the Bun package-resolution blocker has now been repaired by pinning `@lemonsqueezy/lemonsqueezy.js` to the nearest valid version (`1.2.5`)
+- Bun package-resolution blocker repaired by pinning `@lemonsqueezy/lemonsqueezy.js` to the nearest valid version (`1.2.5`)
+- implemented dependency removals:
+  - `DEP-02` — `nextjs-toploader`
+  - `DEP-03` — `@storybook/test`
+  - `DEP-04` — `@radix-ui/react-visually-hidden`
+  - removed `@types/dompurify` with the same low-risk slice
+- still deferred:
+  - `DEP-01` — `dompurify`
+  - `DEP-05` — `@tiptap/pm` and `@tiptap/suggestion`
 
 | Candidate ID | Category | Confidence | Path(s) | Short title | Why it is a candidate | Evidence summary | Likely payoff | Removal / refactor risk | Validation difficulty | Recommended plan reference |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
