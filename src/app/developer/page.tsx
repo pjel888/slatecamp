@@ -61,11 +61,11 @@ const techStack = [
   { layer: 'Language', pkg: 'typescript', version: '5.9.3' },
   { layer: 'Styling', pkg: 'tailwindcss', version: '4.2.2' },
   { layer: 'UI', pkg: '@base-ui/react + shadcn', version: '1.3.0 / 4.1.0' },
-  { layer: 'Database', pkg: '@supabase/supabase-js', version: '2.100.0' },
+  { layer: 'Database', pkg: '@supabase/supabase-js', version: '2.101.1' },
   { layer: 'State', pkg: 'zustand', version: '5.0.12' },
   { layer: 'AI', pkg: '@anthropic-ai/sdk', version: '0.78.0' },
   { layer: '3D', pkg: 'three / @react-three/fiber', version: '0.183.2 / 9.5.0' },
-  { layer: 'Payments', pkg: 'lemonsqueezy + payrex-node', version: '20.4.1 / 1.7.3' },
+  { layer: 'Payments', pkg: '@lemonsqueezy/lemonsqueezy.js + payrex-node', version: '1.2.5 / 1.7.3' },
 ]
 
 const StatusDot = ({ status, name }: { status: 'operational' | 'degraded'; name: string }) => {

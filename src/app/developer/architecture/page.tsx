@@ -20,14 +20,14 @@ const techStack = [
   { component: 'Language',   pkg: 'typescript',                      version: '5.9.3',              notes: 'strict: false' },
   { component: 'Styling',    pkg: 'tailwindcss',                     version: '4.2.2',              notes: 'CSS-first config' },
   { component: 'UI',         pkg: '@base-ui/react + shadcn',         version: '1.3.0 / 4.1.0',     notes: 'Radix-based' },
-  { component: 'Database',   pkg: '@supabase/supabase-js',           version: '2.100.0',            notes: 'PostgreSQL' },
+  { component: 'Database',   pkg: '@supabase/supabase-js',           version: '2.101.1',            notes: 'PostgreSQL' },
   { component: 'SSR Auth',   pkg: '@supabase/ssr',                   version: '0.9.0',              notes: 'Cookie-based' },
   { component: '3D',         pkg: 'three / @react-three/fiber / drei', version: '0.183.2 / 9.5.0 / 10.7.7', notes: '' },
   { component: 'Animation',  pkg: 'framer-motion',                   version: '12.38.0',            notes: '' },
   { component: 'State',      pkg: 'zustand',                         version: '5.0.12',             notes: '2 stores' },
   { component: 'Charts',     pkg: 'recharts',                        version: '3.8.0',              notes: '' },
   { component: 'AI',         pkg: '@anthropic-ai/sdk',               version: '0.78.0',             notes: 'Claude, temp=0' },
-  { component: 'Payments',   pkg: 'lemonsqueezy + payrex-node',            version: '20.4.1 / 1.7.3',    notes: '' },
+  { component: 'Payments',   pkg: '@lemonsqueezy/lemonsqueezy.js + payrex-node', version: '1.2.5 / 1.7.3', notes: 'SDK currently stubbed in app code' },
   { component: 'Validation', pkg: 'zod',                             version: '4.3.6',              notes: '' },
   { component: 'Content',    pkg: 'next-mdx-remote + @mdx-js/mdx',  version: '6.0.0 / 3.1.1',     notes: '' },
 ]
@@ -586,4 +586,3 @@ export default function ArchitecturePage() {
     </div>
   )
 }
-
