@@ -34,7 +34,7 @@ Implementation note (2026-04-17):
 ## Tooling cleanup candidates
 
 - `TOOL-01` — implemented: retired `package-lock.json` after confirming Bun-only workflows
-- `SCRIPT-01` — collapse `check:storybook-placeholders` into `check:storybook` once compatibility callers are gone
+- `SCRIPT-01` — implemented: retired `check:storybook-placeholders` after confirming no active compatibility callers remained
 
 ## Validation surface findings
 

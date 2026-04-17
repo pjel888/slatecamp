@@ -29,7 +29,6 @@
 | Script | Command | Purpose |
 |--------|---------|---------|
 | `check:storybook` | `bun scripts/check-storybook.ts` | Reject placeholder scaffolds and story files without a real component import |
-| `check:storybook-placeholders` | `bun run check:storybook` | Backward-compatible alias for the full Storybook guard |
 | `lint` | `bun run check:storybook && eslint .` | Run ESLint after the Storybook guard passes |
 | `lint:fix` | `eslint . --fix` | Auto-fix ESLint issues where possible |
 | `type-check` | `tsc --noEmit` | Run TypeScript in no-emit mode |
