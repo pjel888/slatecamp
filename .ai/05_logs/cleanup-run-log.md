@@ -378,6 +378,16 @@
   - `bun run type-check` passed
   - `bun run build` passed
 
+### Follow-up: developer architecture data extraction
+
+- implemented:
+  - moved the static schema/role/deployment datasets out of `src/app/developer/architecture/page.tsx`
+  - added `src/lib/developer/architecture-data.ts` so the route file focuses on rendering and local subcomponents instead of carrying the full documentation payload inline
+  - refreshed `src/lib/developer/AGENTS.md` to match the live subtree contents
+- validation:
+  - `bun run type-check` passed
+  - `bun run build` passed
+
 ### Follow-up: wiki mobile hydration convergence
 
 - implemented:
