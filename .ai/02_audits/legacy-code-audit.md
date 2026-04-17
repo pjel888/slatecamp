@@ -33,6 +33,7 @@ Implementation note (2026-04-17):
 - internal consumers now prefer canonical `ROUTES.quiz.*` and `ROUTES.dashboard.drills`
 - remaining hardcoded internal quiz/drill links now also prefer canonical route helpers
 - the top-level `/dashboard/testing` redirect page has now been retired
+- the deeper redirect pages under `/dashboard/testing/session/**` and `/dashboard/testing/simulation/**` have now also been retired
 - legacy uppercase helpers and alias route files still remain and should be retired in later compatibility-focused passes
 
 ### `L2-CALC-003` — `/tools` vs `/calculators`

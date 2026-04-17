@@ -284,6 +284,20 @@
   - `bun run check:storybook` passed
   - `bun run build` passed
 
+### Follow-up: deeper testing compatibility page retirement
+
+- implemented:
+  - removed `src/app/dashboard/testing/session/[sessionId]/page.tsx`
+  - removed `src/app/dashboard/testing/session/[sessionId]/debrief/page.tsx`
+  - removed `src/app/dashboard/testing/simulation/[sessionId]/results/page.tsx`
+- intentionally preserved:
+  - supporting loading/error shells still under `src/app/dashboard/testing/**`
+- validation:
+  - no live source references remain to the retired compatibility pages
+  - `bun run type-check` passed
+  - `bun run check:storybook` passed
+  - `bun run build` passed
+
 ### Completion check
 
 - baseline/control docs created first
