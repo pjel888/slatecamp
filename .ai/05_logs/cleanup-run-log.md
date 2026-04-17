@@ -136,6 +136,19 @@
   - `bun run check:storybook` passed
   - `bun run build` passed
 
+### Follow-up: likely-dead shared hook cleanup batch
+
+- implemented:
+  - removed `src/hooks/useComplianceCheck.ts`
+  - removed `src/hooks/useGuidedSequence.ts`
+  - removed `src/hooks/useKeyboardShortcuts.ts`
+  - removed `src/hooks/useQuizFocusManager.ts`
+- validation:
+  - runtime/reference grep showed no live code consumers beyond docs/comments and the distinct DevControls hook
+  - `bun run type-check` passed
+  - `bun run check:storybook` passed
+  - `bun run build` passed
+
 ### Completion check
 
 - baseline/control docs created first
