@@ -432,6 +432,15 @@
   - `bun run type-check` passed
   - `bun run build` passed
 
+### Follow-up: developer type-surface trim
+
+- implemented:
+  - removed unused documentation/search helper type exports from `src/types/developer.ts`
+  - retained only the active status-surface contracts still used by `src/lib/mocks/status.ts` and the `/developer/status/**` pages
+- validation:
+  - `bun run type-check` passed
+  - `bun run build` passed
+
 ### Follow-up: wiki mobile hydration convergence
 
 - implemented:

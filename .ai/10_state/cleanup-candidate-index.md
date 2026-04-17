@@ -43,6 +43,7 @@ Implementation note (2026-04-17):
 - `L2-DEV-006` implemented in part (developer status detail pages and logs page now explicitly label runtime-backed versus fallback/mock-backed data sources)
 - `L2-DEV-006` implemented in part (developer overview and status dashboard now share one live service-status snapshot helper instead of drifting between static and live health chips)
 - `L2-DEV-006` implemented in part (developer breadcrumbs now derive route labels from the shared surface registry instead of a separate hardcoded segment map)
+- `L2-DEV-006` implemented in part (`src/types/developer.ts` now keeps only the active status-surface contracts after removing unused documentation/search type exports)
 - `L3-C02` implemented in part (mobile wiki navigation now receives the same cached server-loaded taxonomy as the desktop sidebar)
 - `L2-3DLAB-004` implemented in part (redundant `_stores/labStore.ts` re-export wrappers retired; remaining consumers now import `stores/legacyLabStore` directly)
 - Bun package-resolution blocker repaired by pinning `@lemonsqueezy/lemonsqueezy.js` to the nearest valid version (`1.2.5`)
