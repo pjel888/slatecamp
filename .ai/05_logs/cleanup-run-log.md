@@ -516,6 +516,16 @@
   - `bun run type-check` passed
   - `bun run build` passed
 
+### Follow-up: developer system-info builder cleanup
+
+- implemented:
+  - added `buildDevSystemInfo()` to `src/lib/dev/dev-mode.ts`
+  - updated the developer console and dashboard dev keyboard overlay to construct their system-info payloads through the shared helper
+  - removed another small duplicated object-construction pattern from dev-facing surfaces
+- validation:
+  - `bun run type-check` passed
+  - `bun run build` passed
+
 ### Follow-up: developer strict-mode note alignment
 
 - implemented:

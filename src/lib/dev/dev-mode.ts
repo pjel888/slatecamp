@@ -15,6 +15,10 @@ export interface DevSystemInfo {
   connectionState: DevConnectionState;
 }
 
+export function buildDevSystemInfo(input: DevSystemInfo): DevSystemInfo {
+  return input;
+}
+
 // ---------------------------------------------------------------------------
 // Permission Capabilities — what each tier grants
 // ---------------------------------------------------------------------------
