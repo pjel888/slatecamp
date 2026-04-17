@@ -272,6 +272,18 @@
   - `bun run check:storybook` passed
   - `bun run build` passed
 
+### Follow-up: top-level testing alias page retirement
+
+- implemented:
+  - removed `src/app/dashboard/testing/page.tsx`
+- intentionally preserved:
+  - deeper compatibility routes under `/dashboard/testing/session/**` and `/dashboard/testing/simulation/**`
+- validation:
+  - no live source references remain to the retired top-level alias page
+  - `bun run type-check` passed
+  - `bun run check:storybook` passed
+  - `bun run build` passed
+
 ### Completion check
 
 - baseline/control docs created first

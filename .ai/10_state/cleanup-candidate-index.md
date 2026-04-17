@@ -27,6 +27,7 @@ Implementation note (2026-04-17):
 - `L2-ADM-001` implemented (legacy admin alias route files removed after internal consumers were migrated)
 - `L2-QUIZ-002` implemented in part (internal consumers migrated off legacy quiz/testing helper aliases while route files remain)
 - `L2-QUIZ-002` implemented in part (remaining hardcoded internal drill/quiz links moved to canonical helpers and stale `/dashboard/testing*` title aliases removed)
+- `L2-QUIZ-002` implemented in part (top-level `/dashboard/testing` alias page removed after internal consumers were migrated)
 - Bun package-resolution blocker repaired by pinning `@lemonsqueezy/lemonsqueezy.js` to the nearest valid version (`1.2.5`)
 - implemented dependency removals:
   - `DEP-01` — `dompurify`
