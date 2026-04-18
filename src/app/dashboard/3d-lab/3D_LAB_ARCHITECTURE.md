@@ -85,35 +85,33 @@ src/
 │   ├── loading.tsx                    # Route-level loading state
 │   ├── AGENTS.md                      # Agent orchestration documentation
 │   │
-│   ├── _components/                   # (19 files) Shared UI + rendering components
-│   │   ├── CanvasWrapper.tsx          # R3F Canvas setup — lighting, controls, demand render
-│   │   ├── LabViewport.tsx            # Module router — dispatches to legacy/template/GLTF
-│   │   ├── ModuleViewer.tsx           # Shell: wraps scene with LabTopBar + OnboardingFlow
-│   │   ├── ModuleGallery.tsx          # Module browsing / selection UI
-│   │   ├── GenericControlPanel.tsx    # Auto-generated parameter slider UI
-│   │   ├── GeometryMesh.tsx           # Geometry factory: GeometryElement + InstructionMesh
-│   │   ├── HotspotAnnotation.tsx      # 3D-anchored HTML annotation with quiz integration
-│   │   ├── ViolationIndicator.tsx     # Code-compliance visual indicator
-│   │   ├── HumanSilhouette.tsx        # Scale reference figure
-│   │   ├── FocusModeToggle.tsx        # Camera focus control
-│   │   └── ParametricSceneRenderer.tsx # Geometry rendering engine for ParametricScene
+│   ├── src/features/3d-lab/components/ # Shared UI + rendering components
+│   │   ├── CanvasWrapper.tsx           # R3F Canvas setup — lighting, controls, demand render
+│   │   ├── LabViewport.tsx             # Module router — dispatches to legacy/template/GLTF
+│   │   ├── ModuleViewer.tsx            # Shell: wraps scene with LabTopBar + OnboardingFlow
+│   │   ├── ModuleGallery.tsx           # Module browsing / selection UI
+│   │   ├── GeometryMesh.tsx            # Geometry factory: GeometryElement + InstructionMesh
+│   │   ├── HotspotAnnotation.tsx       # 3D-anchored HTML annotation with quiz integration
+│   │   ├── ViolationIndicator.tsx      # Code-compliance visual indicator
+│   │   ├── HumanSilhouette.tsx         # Scale reference figure
+│   │   └── templates/ParametricSceneRenderer.tsx # Geometry rendering engine for ParametricScene
 │   │
-│   ├── _config/                       # Module configuration layer
-│   │   ├── moduleRegistry.ts          # Central registry: MODULE_REGISTRY + SUBJECT_AREAS
-│   │   └── modules/                   # (187 files) One .ts config file per module
+│   ├── src/features/3d-lab/config/     # Module configuration layer
+│   │   ├── registry/                   # Central registry + subject-area slices
+│   │   └── modules/                    # (187 files) One .ts config file per module
 │   │       ├── stairway-configurator.ts
 │   │       ├── fire-travel-distance.ts
 │   │       ├── ramp-accessible-toilet.ts
 │   │       └── ...                    # ~184 more module configs
 │   │
-│   ├── _constants/                    # Shared constants
-│   │   └── nbcpCodes.ts               # NBCP building code numeric constants
+│   ├── src/features/3d-lab/constants/  # Shared constants
+│   │   └── nbcpCodes.ts                # NBCP building code numeric constants
 │   │
-│   ├── _hooks/                        # Custom React hooks
-│   │   ├── useInvalidateOnChange.ts   # Registers R3F invalidate fn into Zustand
+│   ├── src/features/3d-lab/hooks/      # Custom React hooks
+│   │   ├── useInvalidateOnChange.ts    # Registers R3F invalidate fn into Zustand
 │   │   └── ...                        # 2 additional invalidation variants
 │   │
-│   ├── _scenes/                       # Bespoke legacy scene implementations
+│   ├── src/features/3d-lab/scenes/     # Bespoke legacy scene implementations
 │   │   ├── ClassicalOrders/
 │   │   │   ├── ClassicalOrders.tsx    # UI wrapper
 │   │   │   └── ClassicalOrdersScene.tsx # R3F scene
@@ -127,25 +125,24 @@ src/
 │   │       ├── NBCPControlPanel.tsx   # Parameter sliders
 │   │       └── NBCPTelemetry.tsx      # Analytics tracking
 │   │
-│   ├── _stores/                       # Zustand store definitions
-│   │   ├── labStore.ts                # Primary store: parametric values + invalidation bridge
+│   ├── src/features/3d-lab/stores/     # Zustand store definitions
+│   │   ├── legacyLabStore.ts          # Legacy store for FAR/ClassicalOrders compatibility
 │   │   ├── nbcpStore.ts               # NBCP-specific computed envelope state
 │   │   └── createModuleStore.ts       # Factory for per-module parameter stores
 │   │
-│   ├── _templates/                    # Reusable scene templates (5 types)
-│   │   ├── ParametricScene.tsx        # Slider-driven procedural geometry
-│   │   ├── ParametricSceneRenderer.tsx # Geometry rendering engine
-│   │   ├── ExplodedAssembly.tsx       # Animated part explosion
-│   │   ├── CutawaySection.tsx         # Cross-section with layer fading
-│   │   ├── AnimatedSequence.tsx       # Step-by-step fade-in sequence
-│   │   └── FloorPlanWalkthrough.tsx   # 2D-to-3D spatial navigation
+│   ├── src/features/3d-lab/templates/  # Reusable scene templates (5 types)
+│   │   ├── ParametricScene.tsx         # Slider-driven procedural geometry
+│   │   ├── ExplodedAssembly.tsx        # Animated part explosion
+│   │   ├── CutawaySectionScene.tsx     # Cross-section with layer fading
+│   │   ├── AnimatedSequenceScene.tsx   # Step-by-step fade-in sequence
+│   │   └── FloorPlanWalkthrough.tsx    # 2D-to-3D spatial navigation
 │   │
-│   ├── _types/                        # TypeScript type definitions
-│   │   └── templates.ts               # TemplateType, ModuleConfig, GeometryInstruction, ViolationRule, etc.
+│   ├── src/features/3d-lab/types/      # TypeScript type definitions
+│   │   └── templates.ts                # TemplateType, ModuleConfig, GeometryInstruction, ViolationRule, etc.
 │   │
-│   └── _utils/                        # Utility functions
-│       ├── nbcpCalculator.ts          # NBCP envelope geometry calculations
-│       └── nbcpCalculator.test.ts     # Unit tests
+│   └── src/features/3d-lab/utils/      # Utility functions
+│       ├── nbcpCalculator.ts           # NBCP envelope geometry calculations
+│       └── nbcpCalculator.test.ts      # Unit tests
 │
 ├── components/3d/
 │   └── Workspace.tsx                  # Standalone GLTF model viewer (legacy / cloud-model path)
@@ -374,11 +371,11 @@ The outer `Html` wrapper uses `pointerEvents='none'`; interactive content inside
 
 | Template | File | Mechanism |
 |----------|------|-----------|
-| `ParametricScene` | `_templates/ParametricScene.tsx` | Wraps `CanvasWrapper` + `ParametricSceneRenderer`. Slider values drive `geometry(params)` → `GeometryInstruction[]` re-evaluation on each render. |
-| `ExplodedAssembly` | `_templates/ExplodedAssembly.tsx` | Parts lerp position from `basePos` to `basePos + explodeOffset * explodeValue`. Supports comparison mode (side-by-side groups). Hover/select emissive highlights. |
-| `CutawaySection` | `_templates/CutawaySectionScene.tsx` | Layer meshes fade opacity as `cutPosition` crosses their depth. Uses `useFrame` lerp + `material.needsUpdate = true`. |
-| `AnimatedSequence` | `_templates/AnimatedSequenceScene.tsx` | Geometries within each step fade in together when `currentStep` index is reached. Delta-time-based fade speed. |
-| `FloorPlanWalkthrough` | `_templates/FloorPlanWalkthrough.tsx` | 2D floor plan rendered in 3D space with navigable egress path overlays. |
+| `ParametricScene` | `src/features/3d-lab/templates/ParametricScene.tsx` | Wraps `CanvasWrapper` + `ParametricSceneRenderer`. Slider values drive `geometry(params)` → `GeometryInstruction[]` re-evaluation on each render. |
+| `ExplodedAssembly` | `src/features/3d-lab/templates/ExplodedAssembly.tsx` | Parts lerp position from `basePos` to `basePos + explodeOffset * explodeValue`. Supports comparison mode (side-by-side groups). Hover/select emissive highlights. |
+| `CutawaySection` | `src/features/3d-lab/templates/CutawaySectionScene.tsx` | Layer meshes fade opacity as `cutPosition` crosses their depth. Uses `useFrame` lerp + `material.needsUpdate = true`. |
+| `AnimatedSequence` | `src/features/3d-lab/templates/AnimatedSequenceScene.tsx` | Geometries within each step fade in together when `currentStep` index is reached. Delta-time-based fade speed. |
+| `FloorPlanWalkthrough` | `src/features/3d-lab/templates/FloorPlanWalkthrough.tsx` | 2D floor plan rendered in 3D space with navigable egress path overlays. |
 
 ### Bespoke Scenes
 
