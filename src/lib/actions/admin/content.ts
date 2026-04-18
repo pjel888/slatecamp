@@ -1,8 +1,8 @@
 'use server'
 import { createClient } from '@/lib/supabase/server'
 import { createAdminClient } from '@/lib/supabase/admin'
-import { canManageContent } from '@/lib/admin/roles'
-import { revalidatePath, revalidateTag } from 'next/cache'
+import { canManageContent, canReviewContent } from '@/lib/admin/roles'
+import { revalidatePath, revalidateTag } from '@/lib/cache/revalidate'
 import { CACHE_TAGS } from '../cache-tags'
 import { ROUTES } from '@/lib/routes'
 import { logServerError } from '@/lib/logging/server'
@@ -12,6 +12,7 @@ import {
   normalizeEditorStatus,
 } from '@/lib/admin/editor-workflow'
 import {
+  countStandardQuestionsForArticle,
   isStandardQuestionType,
   normalizeQuestionOptionArray,
   resolveCorrectOptionLetter,
@@ -133,6 +134,68 @@ const insertWikiArticleWithCompatibleStatus = async ({
   return lastResult ?? { data: null, error: new Error('Failed to insert wiki article') }
 }
 
+const ensureArticlePublishableForStatus = async ({
+  supabase,
+  articleId,
+  currentStatus,
+  nextStatus,
+  nextPrimaryNodeId,
+}: {
+  supabase: ReturnType<typeof createAdminClient>
+  articleId: string | null
+  currentStatus?: string | null
+  nextStatus?: string | null
+  nextPrimaryNodeId?: string | null
+}) => {
+  const normalizedNextStatus = normalizeEditorStatus(nextStatus)
+  if (normalizedNextStatus !== 'published') {
+    return null
+  }
+
+  if (!articleId) {
+    return new Error('Cannot create an article directly in published status')
+  }
+
+  const normalizedCurrentStatus = normalizeEditorStatus(currentStatus)
+  if (!['approved', 'published'].includes(normalizedCurrentStatus)) {
+    return new Error('Cannot publish article until it has been approved in review')
+  }
+
+  if (nextPrimaryNodeId) {
+    const { data, error } = await supabase
+      .from('questions')
+      .select('question_id, topic_id, question_type')
+      .eq('article_id', articleId)
+
+    if (error) {
+      return new Error(`Failed to validate article question coverage: ${error.message}`)
+    }
+
+    const validCount = (data ?? []).filter(
+      (question) =>
+        isStandardQuestionType(question.question_type) &&
+        question.topic_id === nextPrimaryNodeId,
+    ).length
+
+    if (validCount < 10) {
+      return new Error('Cannot publish article with fewer than 10 directly linked standard questions')
+    }
+
+    return null
+  }
+
+  const { count, error } = await countStandardQuestionsForArticle(supabase as any, articleId)
+  if (error) {
+    return new Error(`Failed to validate article question coverage: ${error.message}`)
+  }
+
+  if ((count || 0) < 10) {
+    return new Error('Cannot publish article with fewer than 10 directly linked standard questions')
+  }
+
+  return null
+}
+
 export interface SaveArticleFullInput {
   article_id?: string | null
   title: string
@@ -155,6 +218,13 @@ export interface SaveArticleFullResult {
         created: boolean
       }
     | null
+}
+
+const assertCanReadAdminContent = async () => {
+  const authorized = await canReviewContent()
+  if (!authorized) {
+    throw new Error('Unauthorized: insufficient permissions')
+  }
 }
 
 // ─── MDX Preview Compilation ─────────────────────────────────
@@ -181,6 +251,7 @@ export const compileMdxPreview = async (source: string) => {
 
 /** Fetch all data needed for the content editor index page */
 export const getContentEditorIndexData = async () => {
+  await assertCanReadAdminContent()
   const supabase = await createClient()
 
   // Parallel: articles, taxonomy nodes, article-taxonomy links, questions for search
@@ -334,6 +405,7 @@ export const getContentEditorIndexData = async () => {
 
 /** Fetch full article with all editable fields */
 export const getArticleFull = async (id: string) => {
+  await assertCanReadAdminContent()
   const supabase = await createClient()
   const { data, error } = await supabase
     .from('wiki_articles')
@@ -349,6 +421,7 @@ export const getArticleFull = async (id: string) => {
 
 /** Get only the updated_at timestamp for conflict detection */
 export const getArticleUpdatedAt = async (id: string): Promise<string | null> => {
+  await assertCanReadAdminContent()
   const supabase = await createClient()
   const { data, error } = await supabase
     .from('wiki_articles')
@@ -362,6 +435,7 @@ export const getArticleUpdatedAt = async (id: string): Promise<string | null> =>
 
 /** Get taxonomy node links for an article */
 export const getArticleTaxonomyNodes = async (articleId: string) => {
+  await assertCanReadAdminContent()
   const supabase = await createClient()
   const { data, error } = await supabase
     .from('wiki_article_taxonomy')
@@ -377,6 +451,7 @@ export const getArticleTaxonomyNodes = async (articleId: string) => {
 
 /** Get questions by multiple taxonomy node IDs (the article→questions join) */
 export const getQuestionsByNodeIds = async (nodeIds: string[]) => {
+  await assertCanReadAdminContent()
   if (nodeIds.length === 0) return []
 
   const supabase = await createClient()
@@ -400,6 +475,7 @@ export const getQuestionsByNodeIds = async (nodeIds: string[]) => {
 
 /** Get questions directly linked to an article via article_id */
 export const getQuestionsByArticleId = async (articleId: string) => {
+  await assertCanReadAdminContent()
   const supabase = await createClient()
   const { data, error } = await supabase
     .from('questions')
@@ -546,6 +622,7 @@ export const importQuestionsForArticle = async (
 
 /** Get info for a single taxonomy node */
 export const getTaxonomyNodeInfo = async (nodeId: string) => {
+  await assertCanReadAdminContent()
   const supabase = await createClient()
   const { data, error } = await supabase
     .from('taxonomy_tree')
@@ -559,6 +636,7 @@ export const getTaxonomyNodeInfo = async (nodeId: string) => {
 
 /** Get info for multiple taxonomy nodes */
 export const getTaxonomyNodesInfo = async (nodeIds: string[]) => {
+  await assertCanReadAdminContent()
   if (nodeIds.length === 0) return []
 
   const supabase = await createClient()
@@ -576,6 +654,7 @@ export const getTaxonomyNodesInfo = async (nodeIds: string[]) => {
 
 /** Get ALL EI prompts for an article (admin view — all statuses, not just published) */
 export const getAllEIPromptsForArticle = async (articleId: string) => {
+  await assertCanReadAdminContent()
   // Use admin client to bypass RLS — student-facing RLS only allows published+active
   const supabase = createAdminClient()
   const { data, error } = await supabase
@@ -627,6 +706,27 @@ export const updateArticleFull = async (
   }
 
   const supabase = createAdminClient()
+  const { data: existingArticle, error: existingArticleError } = await supabase
+    .from('wiki_articles')
+    .select('status')
+    .eq('article_id', id)
+    .maybeSingle()
+
+  if (existingArticleError || !existingArticle) {
+    return { error: existingArticleError ?? new Error('Article not found') }
+  }
+
+  const publishabilityError = await ensureArticlePublishableForStatus({
+    supabase,
+    articleId: id,
+    currentStatus: existingArticle.status,
+    nextStatus: data.status,
+    nextPrimaryNodeId: data.node_id ?? undefined,
+  })
+
+  if (publishabilityError) {
+    return { error: publishabilityError }
+  }
   
   // 1. Update wiki_articles
   const { node_id, ...articleFields } = data
@@ -661,6 +761,15 @@ export const updateArticleFull = async (
 
   // 2. Update taxonomy mapping if node_id provided
   if (node_id !== undefined) {
+    const { data: existingMappings, error: existingMappingsError } = await supabase
+      .from('wiki_article_taxonomy')
+      .select('article_id, node_id, is_primary, sort_order')
+      .eq('article_id', id)
+
+    if (existingMappingsError) {
+      return { error: existingMappingsError }
+    }
+
     if (node_id) {
       // Delete old mapping and insert new primary mapping
       const { error: deleteMappingError } = await supabase
@@ -691,6 +800,9 @@ export const updateArticleFull = async (
       })
 
       if (insertMappingError) {
+        if (existingMappings && existingMappings.length > 0) {
+          await supabase.from('wiki_article_taxonomy').insert(existingMappings)
+        }
         await logServerError({
           family: 'admin',
           eventName: 'content_update_article_taxonomy_insert_failed',
@@ -802,6 +914,20 @@ export const saveArticleFull = async (
   }
 
   const supabase = createAdminClient()
+  const publishabilityError = await ensureArticlePublishableForStatus({
+    supabase,
+    articleId: null,
+    currentStatus: 'draft',
+    nextStatus: data.status,
+    nextPrimaryNodeId: data.node_id ?? undefined,
+  })
+
+  if (publishabilityError) {
+    return {
+      error: publishabilityError,
+      article: null,
+    }
+  }
 
   try {
     const slug = await ensureUniqueArticleSlug(supabase, title)
@@ -881,6 +1007,7 @@ export const saveArticleFull = async (
     revalidateTag(CACHE_TAGS.wiki, 'max')
     revalidatePath(ROUTES.admin.knowledge)
     revalidatePath(ROUTES.admin.knowledgeQuestions)
+    revalidatePath(ROUTES.admin.article(insertedArticle.article_id))
 
     return {
       error: null,

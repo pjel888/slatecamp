@@ -3,7 +3,7 @@
 import { createClient } from '@/lib/supabase/server'
 import { createAdminClient } from '@/lib/supabase/admin'
 import { canManageContent, canReviewContent } from '@/lib/admin/roles'
-import { revalidatePath, revalidateTag } from 'next/cache'
+import { revalidatePath, revalidateTag } from '@/lib/cache/revalidate'
 import { CACHE_TAGS } from '../cache-tags'
 import { ROUTES } from '@/lib/routes'
 import { logServerError } from '@/lib/logging/server'

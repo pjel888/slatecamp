@@ -19,6 +19,7 @@ import { DeleteArticleModal } from '@/components/admin/DeleteArticleModal'
 import { bulkDeleteArticles } from '@/lib/actions/admin/bulk'
 import { toast } from '@/lib/hooks/use-toast'
 import { buildContentEditorIndexHref } from './content-editor-index-routing'
+import type { ArticleGroup, Question as AdminQuestion } from '@/lib/actions/admin/question-queries'
 
 // ─── Types ───────────────────────────────────────────────────
 
@@ -57,6 +58,11 @@ interface ContentEditorIndexProps {
   searchableQuestions?: SearchableQuestion[]
   taxonomyTree: TaxonomyTreeNode[]
   stats: Stats
+  questionRows?: AdminQuestion[]
+  questionGroups?: ArticleGroup[]
+  questionTotalCount?: number
+  questionPage?: number
+  questionPageSize?: number
   defaultViewMode?: ViewMode
   defaultSearchQuery?: string
   defaultQuestionFilter?: string
@@ -117,6 +123,11 @@ export const ContentEditorIndex = ({
   searchableQuestions = [],
   taxonomyTree,
   stats,
+  questionRows = [],
+  questionGroups = [],
+  questionTotalCount = 0,
+  questionPage = 1,
+  questionPageSize = 50,
   defaultViewMode = 'articles',
   defaultSearchQuery = '',
   defaultQuestionFilter = '',
@@ -712,13 +723,13 @@ export const ContentEditorIndex = ({
         ) : (
           <div className="flex-1 overflow-hidden p-4 bg-surface-light">
             <QuestionsTableClient
-              questions={[]} // Fetched dynamically by selectedNodeId prop
-              articleGroups={[]}
-              totalCount={0}
-              page={1}
-              pageSize={50}
+              questions={questionRows}
+              articleGroups={questionGroups}
+              totalCount={questionTotalCount}
+              page={questionPage}
+              pageSize={questionPageSize}
               taxonomyTree={taxonomyTree as any}
-              externalSelectedNodeId={selectedNodeId}
+              externalSelectedNodeId={selectedNodeId ?? undefined}
               externalSearchQuery={searchQuery}
               externalFilter={defaultQuestionFilter}
             />

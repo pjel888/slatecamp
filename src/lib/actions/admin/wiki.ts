@@ -3,7 +3,7 @@
 import { z } from 'zod'
 import { createAdminClient } from "@/lib/supabase/admin";
 import { createClient } from "@/lib/supabase/server";
-import { revalidatePath, revalidateTag } from "next/cache";
+import { revalidatePath, revalidateTag } from "@/lib/cache/revalidate";
 import { canManageContent, canReviewContent } from "@/lib/admin/roles";
 import { CACHE_TAGS } from '../cache-tags'
 import { ROUTES } from '@/lib/routes'
@@ -11,7 +11,6 @@ import { logServerError } from '@/lib/logging/server'
 import {
   getStatusWriteCandidates,
   isLegacyStatusConstraintError,
-  normalizeEditorStatus,
 } from '@/lib/admin/editor-workflow'
 import { compileMdxPreview } from './content'
 
@@ -280,6 +279,7 @@ export async function deleteWikiArticle(id: string) {
   revalidateTag(CACHE_TAGS.wiki, 'max')
   revalidatePath(ROUTES.admin.wiki);
   revalidatePath(ROUTES.admin.knowledge);
+  revalidatePath(ROUTES.admin.knowledgeQuestions);
   revalidatePath(ROUTES.wiki.root);
 
   return { error: null }

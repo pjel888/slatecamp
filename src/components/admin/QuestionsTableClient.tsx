@@ -460,7 +460,7 @@ export const QuestionsTableClient = ({
   }, [activeNodeId, debouncedSearchQuery, handleNodeSelect])
 
   const displayGroups = useMemo(() => {
-    const groups = nodeGroups !== null ? nodeGroups : (questions.length > 0 ? articleGroups : [])
+    const groups = nodeGroups !== null ? nodeGroups : articleGroups
     if (externalFilter !== 'missing_rationale') return groups
 
     return groups
@@ -471,7 +471,11 @@ export const QuestionsTableClient = ({
       }))
       .filter((group) => group.questionCount > 0)
   }, [nodeGroups, questions, articleGroups, externalFilter])
-  const showEmptyPrompt = activeNodeId === null && nodeGroups === null && questions.length === 0 && !debouncedSearchQuery
+  const showEmptyPrompt =
+    activeNodeId === null &&
+    nodeGroups === null &&
+    articleGroups.length === 0 &&
+    !debouncedSearchQuery
 
   return (
     <div className="space-y-4 h-full flex flex-col">

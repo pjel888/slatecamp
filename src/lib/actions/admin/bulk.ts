@@ -1,6 +1,6 @@
 'use server'
 
-import { revalidatePath, revalidateTag } from 'next/cache'
+import { revalidatePath, revalidateTag } from '@/lib/cache/revalidate'
 import { CACHE_TAGS } from '../cache-tags'
 import { canManageContent } from '@/lib/admin/roles'
 import { createAdminClient } from '@/lib/supabase/admin'
@@ -11,6 +11,13 @@ export const bulkDeleteQuestions = async (ids: string[]) => {
   if (!authorized) return { error: 'Unauthorized' }
 
   const supabase = createAdminClient()
+  const { data: rows, error: rowsError } = await supabase
+    .from('questions')
+    .select('article_id')
+    .in('question_id', ids)
+
+  if (rowsError) return { error: rowsError.message }
+
   const { error } = await supabase
     .from('questions')
     .delete()
@@ -20,6 +27,10 @@ export const bulkDeleteQuestions = async (ids: string[]) => {
 
   revalidatePath(ROUTES.admin.knowledgeQuestions)
   revalidatePath(ROUTES.admin.knowledge)
+  const articleIds = [...new Set((rows ?? []).map((row) => row.article_id).filter(Boolean))]
+  for (const articleId of articleIds) {
+    revalidatePath(ROUTES.admin.article(articleId))
+  }
   return { error: null, deleted: ids.length }
 }
 
@@ -40,6 +51,7 @@ export const bulkDeleteArticles = async (ids: string[]) => {
 
   revalidateTag(CACHE_TAGS.wiki, 'max')
   revalidatePath(ROUTES.admin.knowledge)
+  revalidatePath(ROUTES.admin.knowledgeQuestions)
   revalidatePath(ROUTES.admin.wiki)
   return { error: null, deleted: ids.length }
 }

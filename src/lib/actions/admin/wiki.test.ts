@@ -66,6 +66,10 @@ mock.module('@/lib/supabase/server', () => ({
           }),
       },
     }),
+  createStaticClient: () =>
+    Promise.resolve({
+      from: () => ({ select: () => ({}) }),
+    }),
 }))
 
 const canManageContentMock = mock(() => Promise.resolve(true))
@@ -75,15 +79,24 @@ mock.module('@/lib/admin/roles', () => ({
   canReviewContent: canReviewContentMock,
 }))
 
-mock.module('next/cache', () => ({
+const nextCacheMock = () => ({
   revalidateTag: mock(),
   revalidatePath: mock(),
-  unstable_cache: (fn: (...args: any[]) => any) => fn,
-}))
+})
+mock.module('@/lib/cache/revalidate', nextCacheMock)
 
 const logServerErrorMock = mock(() => Promise.resolve())
 mock.module('@/lib/logging/server', () => ({
   logServerError: logServerErrorMock,
+}))
+
+mock.module('@/components/wiki/article/WikiArticle', () => ({
+  compileWikiArticleWithRenderer: mock(() =>
+    Promise.resolve({
+      source: '<h2>Heading</h2><p>Body</p>',
+      error: null,
+    }),
+  ),
 }))
 
 mock.module('./content', () => ({

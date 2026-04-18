@@ -6,7 +6,18 @@ const deleteEqMock = mock(() => Promise.resolve({ error: null }))
 const deleteInMock = mock(() => Promise.resolve({ error: null }))
 const existingQuestionMaybeSingleMock = mock(() =>
   Promise.resolve({
-    data: { article_id: 'article-1', topic_id: 'topic-1' },
+    data: {
+      article_id: 'article-1',
+      topic_id: 'topic-1',
+      text: 'Existing question text',
+      options: [
+        { id: 'A', text: 'A' },
+        { id: 'B', text: 'B' },
+        { id: 'C', text: 'C' },
+        { id: 'D', text: 'D' },
+      ],
+      difficulty: 0.5,
+    },
     error: null,
   }),
 )

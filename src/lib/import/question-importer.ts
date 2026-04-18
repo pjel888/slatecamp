@@ -4,8 +4,6 @@ import {
   QuestionJSONSchema, 
   validateCSVQuestion, 
   validateJSONQuestion,
-  csvToDbFormat,
-  jsonToDbFormat,
   type QuestionCSV,
   type QuestionJSON
 } from './question-schema'
@@ -45,9 +43,9 @@ export async function parseCSV(file: File): Promise<ImportResult> {
               option_c: String(typedRow.option_c || ''),
               option_d: String(typedRow.option_d || ''),
               option_e: typedRow.option_e ? String(typedRow.option_e) : undefined,
-              correct_answer: String(typedRow.correct_answer || '').toLowerCase() as 'a' | 'b' | 'c' | 'd' | 'e',
+              correct_answer: String(typedRow.correct_answer || '').toLowerCase() as 'a' | 'b' | 'c' | 'd',
               rationale: typedRow.rationale ? String(typedRow.rationale) : undefined,
-              difficulty: Number(typedRow.difficulty) || 1,
+              difficulty: Number(typedRow.difficulty) || 0.5,
             }
             
             validateCSVQuestion(processedRow)
@@ -188,9 +186,9 @@ export function getQuestionsFromCSV(file: File): Promise<QuestionCSV[]> {
               option_c: String(typedRow.option_c || ''),
               option_d: String(typedRow.option_d || ''),
               option_e: typedRow.option_e ? String(typedRow.option_e) : undefined,
-              correct_answer: String(typedRow.correct_answer || '').toLowerCase() as 'a' | 'b' | 'c' | 'd' | 'e',
+              correct_answer: String(typedRow.correct_answer || '').toLowerCase() as 'a' | 'b' | 'c' | 'd',
               rationale: typedRow.rationale ? String(typedRow.rationale) : undefined,
-              difficulty: Number(typedRow.difficulty) || 1,
+              difficulty: Number(typedRow.difficulty) || 0.5,
             }
             
             questions.push(QuestionCSVSchema.parse(processedRow))

@@ -1,6 +1,7 @@
 'use server'
 
 import { createClient } from '@/lib/supabase/server'
+import { canReviewContent } from '@/lib/admin/roles'
 import { isExceptionQuestionType } from '@/lib/admin/editor-integrity/standard-question'
 
 export interface Question {
@@ -17,10 +18,18 @@ export interface Question {
   updated_at: string
 }
 
+const assertCanReadAdminQuestions = async () => {
+  const authorized = await canReviewContent()
+  if (!authorized) {
+    throw new Error('Unauthorized: insufficient permissions')
+  }
+}
+
 export const getQuestions = async (
   page = 1,
   pageSize = 50,
 ): Promise<{ data: Question[]; totalCount: number }> => {
+  await assertCanReadAdminQuestions()
   const supabase = await createClient()
 
   const from = (page - 1) * pageSize
@@ -63,6 +72,7 @@ export const getQuestionsGroupedByArticle = async (
   page = 1,
   pageSize = 50,
 ): Promise<{ data: ArticleGroup[]; totalCount: number }> => {
+  await assertCanReadAdminQuestions()
   const supabase = await createClient()
 
   const from = (page - 1) * pageSize
@@ -171,6 +181,7 @@ export const getQuestionsByTopicIds = async (
   topicIds: string[],
   searchQuery?: string
 ): Promise<{ data: ArticleGroup[] }> => {
+  await assertCanReadAdminQuestions()
   if (topicIds.length === 0 && !searchQuery) return { data: [] }
   const supabase = await createClient()
 
@@ -299,6 +310,7 @@ export interface QuestionTreeNode {
 }
 
 export const getQuestionsTaxonomyTree = async (): Promise<QuestionTreeNode[]> => {
+  await assertCanReadAdminQuestions()
   const supabase = await createClient()
 
   // 1. Fetch all taxonomy nodes
@@ -390,6 +402,7 @@ export const getQuestionsTaxonomyTree = async (): Promise<QuestionTreeNode[]> =>
 }
 
 export const getQuestionsForAnalytics = async () => {
+  await assertCanReadAdminQuestions()
   const supabase = await createClient()
 
   const { data, error } = await supabase
@@ -405,6 +418,7 @@ export const getQuestionsForAnalytics = async () => {
 }
 
 export const getQuestion = async (id: string) => {
+  await assertCanReadAdminQuestions()
   const supabase = await createClient()
 
   const { data, error } = await supabase

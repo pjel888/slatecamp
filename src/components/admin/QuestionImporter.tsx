@@ -110,7 +110,7 @@ export function QuestionImporter() {
   }
 
   const downloadCSVTemplate = () => {
-    const template = 'taxonomy_node_id,question_text,option_a,option_b,option_c,option_d,option_e,correct_answer,rationale,difficulty\n00000000-0000-0000-0000-000000000001,"What is the primary function of a column in a structure?","To resist compressive loads","To provide aesthetic appeal","To hold drywall","To create openings","","a","Columns transfer loads from beams to foundations",3'
+    const template = 'taxonomy_node_id,question_text,option_a,option_b,option_c,option_d,correct_answer,rationale,difficulty\n00000000-0000-0000-0000-000000000001,"What is the primary function of a column in a structure?","To resist compressive loads","To provide aesthetic appeal","To hold drywall","To create openings","a","Columns transfer loads from beams to foundations",0.5'
     const blob = new Blob([template], { type: 'text/csv' })
     const url = URL.createObjectURL(blob)
     const a = document.createElement('a')
@@ -129,7 +129,7 @@ export function QuestionImporter() {
           options: ["To resist compressive loads", "To provide aesthetic appeal", "To hold drywall", "To create openings"],
           correct_answer: "a",
           rationale: "Columns transfer loads from beams to foundations",
-          difficulty: 3
+          difficulty: 0.5
         }
       ]
     }

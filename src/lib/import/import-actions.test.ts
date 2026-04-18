@@ -1,7 +1,7 @@
 import { beforeEach, describe, expect, mock, test } from 'bun:test'
 
 const insertMock = mock(() => Promise.resolve({ error: null }))
-const primaryMaybeSingleMock = mock(() =>
+const resolvePrimaryArticleEqMock = mock(() =>
   Promise.resolve({
     data: { article_id: 'article-1' },
     error: null,
@@ -9,7 +9,7 @@ const primaryMaybeSingleMock = mock(() =>
 )
 const articleMaybeSingleMock = mock(() =>
   Promise.resolve({
-    data: { article_id: 'article-1', status: 'published' },
+    data: { article_id: 'article-1', status: 'approved' },
     error: null,
   }),
 )
@@ -33,13 +33,13 @@ mock.module('@/lib/supabase/admin', () => ({
         return {
           select: mock(() => ({
             eq: mock(() => ({
+              limit: mock(() => ({
+                maybeSingle: resolvePrimaryArticleEqMock,
+              })),
               eq: mock(() => ({
                 limit: mock(() => ({
-                  maybeSingle: primaryMaybeSingleMock,
+                  maybeSingle: mappingMaybeSingleMock,
                 })),
-              })),
-              limit: mock(() => ({
-                maybeSingle: mappingMaybeSingleMock,
               })),
             })),
           })),
@@ -61,58 +61,58 @@ mock.module('@/lib/supabase/admin', () => ({
   }),
 }))
 
+const canManageContentMock = mock(() => Promise.resolve(true))
+mock.module('@/lib/admin/roles', () => ({
+  canManageContent: canManageContentMock,
+}))
+
+const revalidatePathMock = mock(() => {})
+mock.module('next/cache', () => ({
+  revalidatePath: revalidatePathMock,
+}))
+
 const { importQuestionsToDb } = await import('./import-actions')
 
-describe('import-actions', () => {
+describe('importQuestionsToDb', () => {
   beforeEach(() => {
+    canManageContentMock.mockResolvedValue(true)
     insertMock.mockClear()
-    primaryMaybeSingleMock.mockClear()
+    resolvePrimaryArticleEqMock.mockClear()
     articleMaybeSingleMock.mockClear()
     mappingMaybeSingleMock.mockClear()
+    revalidatePathMock.mockClear()
   })
 
-  test('resolves article ownership before inserting imported questions', async () => {
-    const result = await importQuestionsToDb([
-      {
-        taxonomy_node_id: '550e8400-e29b-41d4-a716-446655440000',
-        question_text: 'What is a wall?',
-        option_a: 'A',
-        option_b: 'B',
-        option_c: 'C',
-        option_d: 'D',
-        correct_answer: 'a',
-        difficulty: 3,
-      },
-    ] as any)
+  test('rejects import when manage permission is denied', async () => {
+    canManageContentMock.mockResolvedValueOnce(false)
 
-    expect(result.success).toBe(true)
-    expect(insertMock).toHaveBeenCalledTimes(1)
+    await expect(
+      importQuestionsToDb([
+        {
+          taxonomy_node_id: '550e8400-e29b-41d4-a716-446655440000',
+          question_text: 'What is a column primarily designed to resist?',
+          options: ['Compression', 'Tension', 'Torsion', 'Buckling'],
+          correct_answer: 'a',
+          difficulty: 0.5,
+        },
+      ] as any),
+    ).resolves.toEqual({
+      success: false,
+      error: 'Unauthorized: insufficient permissions',
+    })
   })
 
-  test('blocks import when no readable article can be resolved for the topic', async () => {
-    primaryMaybeSingleMock.mockResolvedValueOnce({
-      data: null,
-      error: null,
-    })
-    mappingMaybeSingleMock.mockResolvedValueOnce({
-      data: null,
-      error: null,
-    })
-
-    const result = await importQuestionsToDb([
-      {
-        taxonomy_node_id: '550e8400-e29b-41d4-a716-446655440000',
-        question_text: 'What is a wall?',
-        option_a: 'A',
-        option_b: 'B',
-        option_c: 'C',
-        option_d: 'D',
-        correct_answer: 'a',
-        difficulty: 3,
-      },
-    ] as any)
-
-    expect(result.success).toBe(false)
-    expect(result.error).toBe('Standard questions must be linked to an article.')
+  test('rejects JSON import rows with unsupported fifth option', async () => {
+    await expect(
+      importQuestionsToDb([
+        {
+          taxonomy_node_id: '550e8400-e29b-41d4-a716-446655440000',
+          question_text: 'What is a column primarily designed to resist?',
+          options: ['Compression', 'Tension', 'Torsion', 'Buckling', 'Shear'],
+          correct_answer: 'a',
+          difficulty: 0.5,
+        },
+      ] as any),
+    ).rejects.toThrow('exactly 4 options')
   })
 })

@@ -14,9 +14,26 @@ const wikiArticlesMaybeSingleMock = mock(() =>
     error: null,
   }),
 )
+const questionsSelectEqMock = mock(() =>
+  Promise.resolve({
+    data: new Array(10).fill({
+      question_id: 'q-1',
+      topic_id: 'node-1',
+      question_type: 'mcq',
+      article_id: 'article-existing',
+    }),
+    error: null,
+  }),
+)
 
 const wikiArticleTaxonomyDeleteEqMock = mock(() => Promise.resolve({ error: null }))
 const wikiArticleTaxonomyInsertMock = mock(() => Promise.resolve({ error: null }))
+const wikiArticleTaxonomySelectEqMock = mock(() =>
+  Promise.resolve({
+    data: [],
+    error: null,
+  }),
+)
 
 const mockSupabase = {
   from: (table: string) => {
@@ -30,11 +47,16 @@ const mockSupabase = {
           }),
         })),
         select: mock(() => ({
-          eq: mock(() => ({
-            limit: mock(() => ({
+          eq: mock(() => {
+            const query = {
               maybeSingle: wikiArticlesMaybeSingleMock,
-            })),
-          })),
+              limit: mock(() => ({
+                maybeSingle: wikiArticlesMaybeSingleMock,
+              })),
+            }
+
+            return query
+          }),
         })),
       }
     }
@@ -43,6 +65,17 @@ const mockSupabase = {
       return {
         delete: mock(() => ({ eq: wikiArticleTaxonomyDeleteEqMock })),
         insert: wikiArticleTaxonomyInsertMock,
+        select: mock(() => ({
+          eq: wikiArticleTaxonomySelectEqMock,
+        })),
+      }
+    }
+
+    if (table === 'questions') {
+      return {
+        select: mock(() => ({
+          eq: questionsSelectEqMock,
+        })),
       }
     }
 
@@ -63,15 +96,28 @@ mock.module('@/lib/admin/roles', () => ({
 
 const mockRevalidateTag = mock(() => {})
 const mockRevalidatePath = mock(() => {})
-mock.module('next/cache', () => ({
+const nextCacheMock = () => ({
   revalidateTag: mockRevalidateTag,
   revalidatePath: mockRevalidatePath,
-  unstable_cache: (fn: (...args: any[]) => any) => fn,
-}))
+})
+mock.module('@/lib/cache/revalidate', nextCacheMock)
 
 const logServerErrorMock = mock(() => Promise.resolve())
 mock.module('@/lib/logging/server', () => ({
   logServerError: logServerErrorMock,
+}))
+
+mock.module('@/components/wiki/article/WikiArticle', () => ({
+  compileWikiArticleWithRenderer: mock(({ article }: { article: { content: string } }) => {
+    if (article.content.includes('<Note broken')) {
+      return Promise.reject(new Error('Invalid MDX'))
+    }
+
+    return Promise.resolve({
+      source: '<h2>Heading</h2><p>Body</p>',
+      error: null,
+    })
+  }),
 }))
 
 mock.module('@/lib/supabase/server', () => ({
@@ -111,8 +157,10 @@ describe('admin/content', () => {
     wikiArticlesDeleteEqMock.mockClear()
     wikiArticlesInsertSingleMock.mockClear()
     wikiArticlesMaybeSingleMock.mockClear()
+    questionsSelectEqMock.mockClear()
     wikiArticleTaxonomyDeleteEqMock.mockClear()
     wikiArticleTaxonomyInsertMock.mockClear()
+    wikiArticleTaxonomySelectEqMock.mockClear()
     mockCanManageContent.mockResolvedValue(true)
     mockRevalidateTag.mockClear()
     mockRevalidatePath.mockClear()
@@ -121,6 +169,10 @@ describe('admin/content', () => {
 
   describe('updateArticleFull', () => {
     test('updates taxonomy mapping when node_id is provided', async () => {
+      wikiArticlesMaybeSingleMock.mockResolvedValueOnce({
+        data: { status: 'approved' },
+        error: null,
+      })
       const result = await updateArticleFull('art-1', {
         title: 'New Title',
         content: 'New Content',
@@ -162,6 +214,10 @@ describe('admin/content', () => {
     })
 
     test('updates an existing article through the update path when article_id exists', async () => {
+      wikiArticlesMaybeSingleMock.mockResolvedValueOnce({
+        data: { status: 'approved' },
+        error: null,
+      })
       const result = await saveArticleFull({
         article_id: 'article-existing',
         title: 'Existing Article',
@@ -192,6 +248,20 @@ describe('admin/content', () => {
 
       expect(result.error).toBeInstanceOf(Error)
       expect((result.error as Error).message).toBe('Title is required')
+      expect(wikiArticlesInsertSingleMock).not.toHaveBeenCalled()
+    })
+
+    test('rejects creating an article directly in published status', async () => {
+      const result = await saveArticleFull({
+        article_id: '',
+        title: 'Published Article',
+        content: '# Published body',
+        status: 'published',
+        node_id: 'node-1',
+      })
+
+      expect(result.error).toBeInstanceOf(Error)
+      expect((result.error as Error).message).toContain('Cannot create an article directly in published status')
       expect(wikiArticlesInsertSingleMock).not.toHaveBeenCalled()
     })
   })

@@ -20,7 +20,7 @@ export const validateArticleOwnedQuestionArray = (
       options: typedItem.answerOptions,
       correct_answer: typedItem.correctOption,
       rationale: typedItem.rationale,
-      difficulty: typedItem.difficulty ?? 3,
+      difficulty: typedItem.difficulty ?? 0.5,
     }
 
     try {

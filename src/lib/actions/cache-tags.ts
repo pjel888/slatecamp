@@ -1,4 +1,4 @@
-import { revalidateTag } from 'next/cache'
+import { revalidateTag } from '@/lib/cache/revalidate'
 
 export const CACHE_TAGS = {
   dashboard: 'dashboard',

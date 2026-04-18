@@ -87,6 +87,10 @@ mock.module('@/lib/supabase/server', () => ({
           }),
       },
     }),
+  createStaticClient: () =>
+    Promise.resolve({
+      from: () => ({ select: () => ({}) }),
+    }),
   getUser: () =>
     Promise.resolve({
       data: {
@@ -95,15 +99,24 @@ mock.module('@/lib/supabase/server', () => ({
     }),
 }))
 
-mock.module('next/cache', () => ({
+const nextCacheMock = () => ({
   revalidatePath: mock(),
   revalidateTag: mock(),
-  unstable_cache: (fn: (...args: any[]) => any) => fn,
-}))
+})
+mock.module('@/lib/cache/revalidate', nextCacheMock)
 
 const logServerErrorMock = mock(() => Promise.resolve())
 mock.module('@/lib/logging/server', () => ({
   logServerError: logServerErrorMock,
+}))
+
+mock.module('@/components/wiki/article/WikiArticle', () => ({
+  compileWikiArticleWithRenderer: mock(() =>
+    Promise.resolve({
+      source: '<h2>Heading</h2><p>Body</p>',
+      error: null,
+    }),
+  ),
 }))
 
 const compileMdxPreviewMock = mock(() =>

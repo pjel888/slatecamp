@@ -31,6 +31,44 @@ interface CreateQuestionInput {
   question_type?: string
 }
 
+const validateStandardQuestionMutationInput = ({
+  text,
+  options,
+  topicId,
+  articleId,
+  difficulty,
+}: {
+  text?: string
+  options?: { id?: string; text: string; is_correct?: boolean }[]
+  topicId?: string
+  articleId?: string
+  difficulty?: number
+}) => {
+  if (!text || typeof text !== 'string' || text.trim().length === 0) {
+    throw new Error('Validation error: text is required and must be a non-empty string')
+  }
+
+  if (!Array.isArray(options) || options.length !== 4) {
+    throw new Error('Validation error: options must be an array with exactly 4 items')
+  }
+
+  if (options.some((option) => !option.text || option.text.trim().length === 0)) {
+    throw new Error('Validation error: all options must have non-empty text')
+  }
+
+  if (!topicId || typeof topicId !== 'string' || topicId.trim().length === 0) {
+    throw new Error('Validation error: topic_id is required')
+  }
+
+  if (!articleId || typeof articleId !== 'string' || articleId.trim().length === 0) {
+    throw new Error('Validation error: article_id is required for standard questions')
+  }
+
+  if (difficulty !== undefined && (Number.isNaN(difficulty) || difficulty < 0 || difficulty > 1)) {
+    throw new Error('Validation error: difficulty must be between 0 and 1')
+  }
+}
+
 export async function deleteQuestions(ids: string[]) {
   const authorized = await canManageContent()
   if (!authorized) {
@@ -49,6 +87,14 @@ export async function deleteQuestions(ids: string[]) {
   }
 
   const supabase = createAdminClient();
+  const { data: rows, error: rowsError } = await supabase
+    .from('questions')
+    .select('article_id')
+    .in('question_id', ids)
+
+  if (rowsError) {
+    throw new Error(rowsError.message)
+  }
 
   const { error } = await supabase
     .from('questions')
@@ -58,6 +104,10 @@ export async function deleteQuestions(ids: string[]) {
   if (!error) {
     revalidatePath(ROUTES.admin.knowledgeQuestions);
     revalidatePath(ROUTES.admin.knowledge);
+    const articleIds = [...new Set((rows ?? []).map((row) => row.article_id).filter(Boolean))]
+    for (const articleId of articleIds) {
+      revalidatePath(ROUTES.admin.article(articleId));
+    }
   }
 
   if (error) {
@@ -92,64 +142,32 @@ export async function createQuestion(data: CreateQuestionInput) {
     throw new Error('Unauthorized: insufficient permissions')
   }
 
-  if (!data.text || typeof data.text !== 'string' || data.text.trim().length === 0) {
+  try {
+    validateStandardQuestionMutationInput({
+      text: data.text,
+      options: data.options,
+      topicId: data.topic_id,
+      articleId: data.article_id,
+      difficulty: data.difficulty,
+    })
+  } catch (error) {
     await logServerError({
       family: 'admin',
       eventName: 'questions_create_validation_failed',
-      message: 'Question creation validation failed for text.',
+      message: 'Question creation validation failed.',
       context: {
         routeOrAction: 'admin:questions.create',
       },
-      error: new Error('Validation error: text is required and must be a non-empty string'),
+      error: error instanceof Error ? error : new Error('Validation error'),
       persist: false,
     })
-    throw new Error('Validation error: text is required and must be a non-empty string')
-  }
-  if (!Array.isArray(data.options) || data.options.length !== 4) {
-    await logServerError({
-      family: 'admin',
-      eventName: 'questions_create_validation_failed',
-      message: 'Question creation validation failed for options.',
-      context: {
-        routeOrAction: 'admin:questions.create',
-      },
-      error: new Error('Validation error: options must be an array with exactly 4 items'),
-      persist: false,
-    })
-    throw new Error('Validation error: options must be an array with exactly 4 items')
-  }
-  if (!data.topic_id || typeof data.topic_id !== 'string' || data.topic_id.trim().length === 0) {
-    await logServerError({
-      family: 'admin',
-      eventName: 'questions_create_validation_failed',
-      message: 'Question creation validation failed for topic_id.',
-      context: {
-        routeOrAction: 'admin:questions.create',
-      },
-      error: new Error('Validation error: topic_id is required'),
-      persist: false,
-    })
-    throw new Error('Validation error: topic_id is required')
+    throw error
   }
   const normalizedQuestionType = normalizeQuestionType(data.question_type)
   if (isExceptionQuestionType(normalizedQuestionType)) {
     throw new Error(
       'Scenario-based question types must use a dedicated authoring flow and cannot be created through the standard question editor.',
     )
-  }
-
-  if (!data.article_id || typeof data.article_id !== 'string' || data.article_id.trim().length === 0) {
-    await logServerError({
-      family: 'admin',
-      eventName: 'questions_create_validation_failed',
-      message: 'Question creation validation failed for article_id.',
-      context: {
-        routeOrAction: 'admin:questions.create',
-      },
-      error: new Error('Validation error: article_id is required for standard questions'),
-      persist: false,
-    })
-    throw new Error('Validation error: article_id is required for standard questions')
   }
   const authClient = await createClient()
   const { data: { user } } = await authClient.auth.getUser()
@@ -196,6 +214,7 @@ export async function createQuestion(data: CreateQuestionInput) {
   if (!error) {
     revalidatePath(ROUTES.admin.knowledgeQuestions);
     revalidatePath(ROUTES.admin.knowledge);
+    revalidatePath(ROUTES.admin.article(data.article_id));
   }
 
   if (error) {
@@ -240,7 +259,7 @@ export const updateQuestion = async (id: string, data: Partial<CreateQuestionInp
   const supabase = createAdminClient();
   const { data: existingQuestion, error: existingQuestionError } = await supabase
     .from('questions')
-    .select('article_id, topic_id')
+    .select('article_id, topic_id, text, options, difficulty')
     .eq('question_id', id)
     .maybeSingle()
 
@@ -266,6 +285,22 @@ export const updateQuestion = async (id: string, data: Partial<CreateQuestionInp
 
   if (linkageValidation.blockingIssues.length > 0) {
     throw new Error(linkageValidation.blockingIssues[0])
+  }
+
+  if (
+    data.text !== undefined ||
+    data.options !== undefined ||
+    data.difficulty !== undefined ||
+    data.topic_id !== undefined ||
+    data.article_id !== undefined
+  ) {
+    validateStandardQuestionMutationInput({
+      text: data.text ?? existingQuestion.text,
+      options: data.options ?? existingQuestion.options ?? [],
+      topicId,
+      articleId,
+      difficulty: data.difficulty ?? existingQuestion.difficulty ?? undefined,
+    })
   }
 
   // Handle options and correct_option_id normalization if provided
@@ -302,6 +337,7 @@ export const updateQuestion = async (id: string, data: Partial<CreateQuestionInp
   if (!error) {
     revalidatePath(ROUTES.admin.knowledgeQuestions);
     revalidatePath(ROUTES.admin.knowledge);
+    revalidatePath(ROUTES.admin.article(articleId));
   }
 
   if (error) {
@@ -341,6 +377,15 @@ export const deleteQuestion = async (id: string) => {
   }
 
   const supabase = createAdminClient();
+  const { data: existingQuestion, error: existingQuestionError } = await supabase
+    .from('questions')
+    .select('article_id')
+    .eq('question_id', id)
+    .maybeSingle()
+
+  if (existingQuestionError) {
+    throw new Error(existingQuestionError.message)
+  }
 
   const { error } = await supabase
     .from('questions')
@@ -350,6 +395,9 @@ export const deleteQuestion = async (id: string) => {
   if (!error) {
     revalidatePath(ROUTES.admin.knowledgeQuestions);
     revalidatePath(ROUTES.admin.knowledge);
+    if (existingQuestion?.article_id) {
+      revalidatePath(ROUTES.admin.article(existingQuestion.article_id));
+    }
   }
 
   if (error) {
