@@ -80,7 +80,7 @@
 - `src/lib/ai/AGENTS.md`
 - `src/lib/audio/AGENTS.md`
 - `src/lib/audit/AGENTS.md`
-- `src/lib/blindspot/AGENTS.md`
+- `src/lib/focus-review/AGENTS.md`
 - `src/lib/cage/AGENTS.md`
 - `src/lib/constants/AGENTS.md`
 - `src/lib/context/AGENTS.md`
@@ -100,7 +100,7 @@
 - `src/lib/payrex/AGENTS.md`
 - `src/lib/paywall/AGENTS.md`
 - `src/lib/pd1096/AGENTS.md`
-- `src/lib/proof-simulation/AGENTS.md`
+- `src/lib/full-exam/AGENTS.md`
 - `src/lib/queries/AGENTS.md`
 - `src/lib/queries/ceo/AGENTS.md`
 - `src/lib/quiz/AGENTS.md`

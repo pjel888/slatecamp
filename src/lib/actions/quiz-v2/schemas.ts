@@ -18,6 +18,19 @@ export const startSessionInputSchema = z.object({
   trailDayId: uuidSchema.optional(),
 })
 
+export const gestureSignalEventSchema = z.object({
+  t: z.number().int().min(0),
+  x: z.number().min(0).max(4000),
+  y: z.number().min(0).max(4000),
+  p: z.number().min(0).max(1).optional(),
+})
+
+export const cageBindingTokenSchema = z.object({
+  nonce: z.string().min(8),
+  signature: z.string().min(16),
+  version: z.number().int().min(1),
+})
+
 export const submitAnswerInputSchema = z.object({
   sessionId: uuidSchema,
   questionId: uuidSchema,
@@ -26,9 +39,9 @@ export const submitAnswerInputSchema = z.object({
   difficulty: z.number().min(0).max(1).optional(),
   confidenceLevel: z.number().min(0).max(1).optional(),
   timeSpentMs: z.number().int().min(0).max(3_600_000),
-  cageToken: z.unknown().optional().nullable(),
-  cageTrustLevel: z.unknown().optional(),
-  signalTrace: z.array(z.unknown()).optional(),
+  cageToken: cageBindingTokenSchema.optional().nullable(),
+  cageTrustLevel: z.number().min(0).max(1).optional(),
+  signalTrace: z.array(gestureSignalEventSchema).optional(),
   gestureDurationMs: z.number().int().min(0).optional(),
   sensorsAvailable: z.boolean().optional(),
 })

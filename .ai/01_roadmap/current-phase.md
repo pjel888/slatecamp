@@ -16,3 +16,6 @@ The absolute priority is to build the best possible MVP for launch. **This is no
 
 ## Current phase objective
 Deliver a high-quality, accurate, and effective MVP for launch by focusing on core functionality and correctness, while disregarding the burden of legacy code or past architectural decisions that do not serve the launch goal.
+
+### Active Objectives
+- [x] **Drill System Unification & Hardening**: Unified all layers (Frontend, Logic, Database) to canonical underscored keys. Resolved perceived latency via progress messaging. Enforced database-level numeric integrity. (COMPLETED 2026-04-18)

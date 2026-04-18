@@ -16,7 +16,7 @@ export const ResultsCTAs = ({ sessionId, missedCount }: ResultsCTAsProps) => {
   const router = useRouter()
 
   const handlePracticeMissed = () => {
-    router.push(`/quiz/focused/setup?source=missed&sessionId=${sessionId}`)
+    router.push(`/quiz/focus_review/setup?source=missed&sessionId=${sessionId}`)
   }
 
   const handleDashboard = () => {

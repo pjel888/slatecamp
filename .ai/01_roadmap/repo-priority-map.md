@@ -13,7 +13,7 @@
 | Area | Priority | Why |
 | --- | --- | --- |
 | `.ai` / docs / prompts | Immediate | User task is repo-intelligence implementation |
-| `src/app/dashboard` + `src/lib/actions/quiz-v2` | High | Core learning flow, large route surface |
+| `src/app/dashboard` + `src/lib/actions/quiz-v2` | High | Hardened & Unified. Architecture is pro-grade. |
 | `src/features/3d-lab` + `src/hooks` | High | Performance-sensitive, client-heavy |
 | `src/app/admin` + `src/lib/actions/admin` | High | Broad CRUD surface, workflow integrity risk |
 | `src/lib/supabase` + migrations + auth | High | Central runtime/data contract |

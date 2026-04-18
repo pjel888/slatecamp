@@ -797,6 +797,43 @@ export const useQuizStore = create<QuizStore>()(
       {
         name: 'slatecamp-quiz-session',
         storage: createJSONStorage(() => localStorage),
+        version: 1,
+        migrate: (persistedState: any, version: number) => {
+          if (version === 0) {
+            // Unification pass: hyphenated/camelCase to underscored
+            const oldModeMap: Record<string, string> = {
+              'focus-review': 'focus_review',
+              'article-review': 'article_review',
+              'fullexam': 'full_exam',
+              'simulation': 'full_exam',
+              'extended': 'endurance',
+              'focused': 'focus_review',
+            }
+            
+            if (persistedState && typeof persistedState === 'object') {
+              // 1. Migrate root mode
+              if (persistedState.mode && oldModeMap[persistedState.mode]) {
+                persistedState.mode = oldModeMap[persistedState.mode]
+              }
+              
+              // 2. Migrate nested config mode
+              if (persistedState.config?.mode && oldModeMap[persistedState.config.mode]) {
+                persistedState.config.mode = oldModeMap[persistedState.config.mode]
+              }
+
+              // 3. Migrate pendingSubmissions (if any)
+              if (Array.isArray(persistedState.pendingSubmissions)) {
+                persistedState.pendingSubmissions = persistedState.pendingSubmissions.map((sub: any) => {
+                  if (sub.mode && oldModeMap[sub.mode]) {
+                    return { ...sub, mode: oldModeMap[sub.mode] }
+                  }
+                  return sub
+                })
+              }
+            }
+          }
+          return persistedState
+        },
         partialize: (state) => ({
           sessionId: state.sessionId,
           config: state.config,

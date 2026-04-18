@@ -40,8 +40,8 @@ export const MODE_COLORS: Record<string, string> = {
   storm: CHART_COLORS.destructive,
   chill: '#7c3aed',
   custom: '#0891b2',
-  blindspot: '#9333ea',
-  proof_sim: '#0284c7',
+  focus_review: '#9333ea',
+  full_exam: '#0284c7',
   endurance: '#059669',
 }
 

@@ -2,7 +2,7 @@
 
 import * as React from 'react'
 import { cva, type VariantProps } from 'class-variance-authority'
-import { CheckCircle, Warning, Question, Fire, Lightning, Eye, Trophy } from '@phosphor-icons/react/dist/ssr'
+import { CheckCircle, Warning, Question, Fire, Lightning, Eye, Trophy, Book, Shield } from '@phosphor-icons/react/dist/ssr'
 import { cn } from '@/lib/utils'
 
 /* ------------------------------------------------------------------ */
@@ -182,14 +182,15 @@ const DifficultyBadge = ({ level }: { level: 'foundational' | 'intermediate' | '
   return <Badge variant={variant} size="sm">{label}</Badge>
 }
 
-const SessionModeBadge = ({ mode }: { mode: 'camp' | 'storm' | 'blindspot' | 'proof' }) => {
-  const config = {
-    camp: { variant: 'primary' as const, label: 'CAMP', icon: <Fire /> },
-    storm: { variant: 'warning' as const, label: 'STORM', icon: <Lightning /> },
-    blindspot: { variant: 'purple' as const, label: 'BLINDSPOT', icon: <Eye /> },
-    proof: { variant: 'orange' as const, label: 'PROOF', icon: <Trophy /> },
+const SessionModeBadge = ({ mode }: { mode: 'camp' | 'storm' | 'focus_review' | 'full_exam' }) => {
+  const configs = {
+    camp: { variant: 'default' as const, label: 'CAMP', icon: <Book size={10} /> },
+    storm: { variant: 'orange' as const, label: 'STORM', icon: <Lightning size={10} /> },
+    focus_review: { variant: 'purple' as const, label: 'FOCUS', icon: <Eye size={10} /> },
+    full_exam: { variant: 'primary' as const, label: 'SIM', icon: <Shield size={10} /> },
   }
-  const { variant, label, icon } = config[mode]
+
+  const { variant, label, icon } = configs[mode]
   return <Badge variant={variant} size="xs" icon={icon} shape="pill">{label}</Badge>
 }
 

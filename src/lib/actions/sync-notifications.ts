@@ -13,7 +13,7 @@ import { ROUTES } from '@/lib/routes'
  * Signals mapped:
  *  - Active trail day  → trail_ready
  *  - SRS items due     → content_update
- *  - Subject floor     → blindspot
+ *  - Subject floor     → focus_review
  */
 export const syncDashboardNotifications = async (
   data: Pick<DashboardPageData, 'activeTrailDay' | 'srsReview' | 'subjectFloorAlerts'>
@@ -31,7 +31,7 @@ export const syncDashboardNotifications = async (
     .from('notifications')
     .select('type')
     .eq('user_id', userId)
-    .in('type', ['trail_ready', 'content_update', 'blindspot'])
+    .in('type', ['trail_ready', 'content_update', 'focus_review'])
     .gte('created_at', todayISO)
   const existingTypes = new Set(existingRows?.map((r) => r.type) ?? [])
 
@@ -76,12 +76,12 @@ export const syncDashboardNotifications = async (
   }
 
   // 3. Subject below passing floor
-  if (data.subjectFloorAlerts.length > 0 && !existingTypes.has('blindspot')) {
+  if (data.subjectFloorAlerts.length > 0 && !existingTypes.has('focus_review')) {
     const worst = data.subjectFloorAlerts[0]
     const otherCount = data.subjectFloorAlerts.length - 1
     inserts.push({
       user_id: userId,
-      type: 'blindspot',
+      type: 'focus_review',
       title: `Subject below passing: ${worst.subject}`,
       body: `${worst.subject} is at ${worst.mastery}% — minimum ${worst.floorPct}% required.${
         otherCount > 0 ? ` ${otherCount} other ${otherCount === 1 ? 'subject' : 'subjects'} also below floor.` : ''

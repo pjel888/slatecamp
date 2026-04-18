@@ -28,7 +28,7 @@ export const buildQuestionSelectionQuery = ({
     recencyExclusionDays: 7,
 
     // Step 3: Priority for recently-wrong questions (14 days)
-    prioritizeWrongDays: config.mode === 'focused' ? 30 : 14,
+    prioritizeWrongDays: config.mode === 'focus_review' ? 30 : 14,
 
     // Step 4: Difficulty distribution
     difficultyDistribution: getDifficultyDistribution(difficultyMode, initialDifficulty, userMasteryLevel),

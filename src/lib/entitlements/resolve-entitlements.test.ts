@@ -127,8 +127,8 @@ describe('resolve entitlements', () => {
       roleResolution: baseRoleResolution,
       overrides: baseOverrides,
       featureFlags: {
-        [ENTITLEMENT_FEATURE_KEYS.proofSimulationEnabled]: {
-          key: ENTITLEMENT_FEATURE_KEYS.proofSimulationEnabled,
+        [ENTITLEMENT_FEATURE_KEYS.fullExamEnabled]: {
+          key: ENTITLEMENT_FEATURE_KEYS.fullExamEnabled,
           enabled: false,
           allowedTiers: [],
           rawTargetTier: [],
@@ -140,7 +140,7 @@ describe('resolve entitlements', () => {
 
     const decision = evaluateFeatureAccess(
       entitlements,
-      ENTITLEMENT_FEATURE_KEYS.proofSimulationEnabled,
+      ENTITLEMENT_FEATURE_KEYS.fullExamEnabled,
     )
 
     expect(decision.allowed).toBe(false)

@@ -21,7 +21,7 @@ const ICON_MAP: Record<NotificationType, {
 }> = {
   score_change:    { icon: TrendUp,     unreadBg: 'bg-primary-50',      unreadStroke: 'text-primary' },
   trail_ready:     { icon: BookOpen,    unreadBg: 'bg-success-50',      unreadStroke: 'text-success-700' },
-  blindspot:       { icon: Warning,     unreadBg: 'bg-warning-50',      unreadStroke: 'text-camp-orange' },
+  focus_review:       { icon: Warning,     unreadBg: 'bg-warning-50',      unreadStroke: 'text-camp-orange' },
   zone_transition: { icon: Star,        unreadBg: 'bg-primary-50',      unreadStroke: 'text-primary' },
   proof_unlocked:  { icon: Shield,      unreadBg: 'bg-primary-50',      unreadStroke: 'text-primary' },
   campfire_story:  { icon: ChatCircle,  unreadBg: 'bg-trail-accent/10', unreadStroke: 'text-trail-accent' },

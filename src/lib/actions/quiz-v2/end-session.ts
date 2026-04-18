@@ -368,8 +368,35 @@ export const endSession = async (
       .single()
 
     const readinessScoreBefore = preStats?.global_readiness_score ?? 0
-    await recomputeAndSaveReadinessScore(user.id)
+    const nowIso = new Date().toISOString()
 
+    // ─── Parallel Finalization Batch ─────────────────────────────────────────
+    // Recompute score, update session status, and fetch background metadata simultaneously.
+    const [_, { error: updateError }, trailProgress, subjectBreakdown] = await Promise.all([
+      recomputeAndSaveReadinessScore(user.id),
+      supabase
+        .from('quiz_sessions')
+        .update({
+          status: finalStatus,
+          completed_at: nowIso,
+          updated_at: nowIso,
+          session_discovery: {
+            ...(session.session_discovery ?? {}),
+            _finalization: {
+              readinessScoreBefore,
+              // We'll fetch the 'after' score in the next tick
+            },
+          },
+        })
+        .eq('session_id', parsedInput.sessionId)
+        .eq('user_id', user.id),
+      buildTrailProgress(supabase, session, finalStatus),
+      buildSubjectBreakdown(supabase, allInteractions),
+    ])
+
+    if (updateError) throw updateError
+
+    // Re-fetch only the final score (now confirmed saved by recomputeAndSaveReadinessScore)
     const { data: updatedStats } = await supabase
       .from('user_global_stats')
       .select('global_readiness_score')
@@ -379,10 +406,9 @@ export const endSession = async (
     const readinessScoreAfter =
       updatedStats?.global_readiness_score ?? readinessScoreBefore
 
-    const nowIso = new Date().toISOString()
-
-    // Fire notifications in background — topic fetch + triggers are not needed for results
+    // ─── Post-Session background hooks ───────────────────────────────────────
     if (shouldRunCompletionHooks(finalStatus)) {
+      // Fire-and-forget: notifications, recommendations, theta, behavioral summary
       void (async () => {
         try {
           const firstTopicId = allInteractions[0]?.topic_id ?? null
@@ -394,73 +420,46 @@ export const endSession = async (
               .select('name')
               .eq('node_id', firstTopicId)
               .maybeSingle()
-
             if (topicNode?.name) sessionTopicName = topicNode.name
           }
 
-          void triggerScoreChangeNotification(
-            user.id,
-            readinessScoreBefore,
-            readinessScoreAfter,
-            sessionTopicName,
-          )
-          void triggerZoneTransitionNotification(
-            user.id,
-            readinessScoreBefore,
-            readinessScoreAfter,
-          )
+          void triggerScoreChangeNotification(user.id, readinessScoreBefore, readinessScoreAfter, sessionTopicName)
+          void triggerZoneTransitionNotification(user.id, readinessScoreBefore, readinessScoreAfter)
           void runPostSessionHooks(user.id)
-        } catch {
-          // Never block results on notification delivery
+          void generateRecommendations(user.id, session.session_id, 3)
+          void writeUserTheta(user.id, parsedInput.sessionId)
+          void writeBehavioralSummary(session.session_id, user.id, allInteractions)
+        } catch (e) {
+          console.error('[quiz-v2/end-session] Background hooks failed:', e)
         }
       })()
-    }
-
-    // Fire-and-forget theta write — never blocks results
-    if (shouldRunCompletionHooks(finalStatus)) {
-      void writeUserTheta(user.id, parsedInput.sessionId)
-    }
-
-    const sessionDiscovery = {
-      ...(session.session_discovery ?? {}),
-      _finalization: {
-        readinessScoreBefore,
-        readinessScoreAfter,
-      },
-    }
-
-    const { error: updateError } = await supabase
-      .from('quiz_sessions')
-      .update({
-        status: finalStatus,
-        completed_at: nowIso,
-        updated_at: nowIso,
-        session_discovery: sessionDiscovery,
-      })
-      .eq('session_id', parsedInput.sessionId)
-      .eq('user_id', user.id)
-
-    if (updateError) throw updateError
-
-    const updatedSession: SessionRow = {
-      ...session,
-      status: finalStatus,
-      completed_at: nowIso,
-      session_discovery: sessionDiscovery,
     }
 
     revalidateDashboardCacheTags(user.id)
     revalidatePath('/dashboard')
 
-    return await buildEndSessionResult({
-      supabase,
-      session: updatedSession,
-      userId: user.id,
-      interactions: allInteractions,
+    // ─── Build Final Result ──────────────────────────────────────────────────
+    const totalAnswered = allInteractions.length
+    const totalCorrect = allInteractions.filter((i) => i.is_correct).length
+    const scorePercent = totalAnswered > 0 ? Math.round((totalCorrect / totalAnswered) * 100) : 0
+
+    return {
+      score: {
+        correct: totalCorrect,
+        total: totalAnswered,
+        percent: scorePercent,
+      },
+      subjectBreakdown,
       readinessScoreBefore,
       readinessScoreAfter,
-      finalStatus,
-    })
+      readinessScoreDelta: readinessScoreAfter - readinessScoreBefore,
+      growthVsPrevious: null,
+      resultsAvailableAt: buildResultsAvailableAt(session, new Date(nowIso)),
+      trailDayCompleted: trailProgress.trailDayCompleted,
+      nextTrailDay: trailProgress.nextTrailDay,
+      missedQuestionCount: (session.question_ids ?? []).length - totalAnswered,
+      recommendations: [], // Will be updated on next page load or via background sync
+    }
   } catch (error) {
     console.error('[quiz-v2/end-session] Failed:', error)
     throw error

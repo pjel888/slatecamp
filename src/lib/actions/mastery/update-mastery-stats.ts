@@ -50,10 +50,10 @@ export const updateMasteryStats = async (params: {
 
     // 3. EMA smoothing factor by mode
     let alpha = 0.2
-    if (testMode === 'fullexam' || testMode === 'proof_sim') alpha = 0.6
+    if (testMode === 'full_exam') alpha = 0.6
     else if (testMode === 'storm') alpha = 0.4
     else if (testMode === 'chill') alpha = 0.1
-    else if (testMode === 'focused' || testMode === 'blindspot') alpha = 0.3
+    else if (testMode === 'focus_review') alpha = 0.3
 
     // 4. Contribution weighting
     const baseWeight = isSuspectedLuckyGuess ? 0.5 : 1.0

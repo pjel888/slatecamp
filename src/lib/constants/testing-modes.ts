@@ -105,7 +105,7 @@ export const MODE_DEFINITIONS: Record<string, ModeDefinition> = {
   },
   full_exam: {
     key: 'full_exam',
-    source: 'proof_simulation',
+    source: 'full_exam',
     dbTestMode: 'storm',
     label: 'Full Exam Simulation',
     character: 'Exam Day',
@@ -122,7 +122,7 @@ export const MODE_DEFINITIONS: Record<string, ModeDefinition> = {
   },
   endurance: {
     key: 'endurance',
-    source: 'extended_practice',
+    source: 'endurance',
     dbTestMode: 'camp',
     label: 'Design Endurance Training',
     character: 'Design Endurance Training',

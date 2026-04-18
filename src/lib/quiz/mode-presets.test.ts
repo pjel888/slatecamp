@@ -3,7 +3,7 @@ import { describe, test, expect } from 'bun:test'
 import { MODE_PRESETS, mergeWithPreset, getScoreBand, getNextDifficulty, MODE_LABELS } from './mode-presets'
 import type { QuizMode } from '@/types/quiz-config'
 
-const ALL_MODES: QuizMode[] = ['camp', 'chill', 'subject', 'focused', 'custom', 'storm', 'fullexam', 'extended']
+const ALL_MODES: QuizMode[] = ['camp', 'chill', 'subject', 'focus_review', 'custom', 'storm', 'full_exam', 'endurance']
 
 describe('MODE_PRESETS', () => {
   test('every mode has a preset', () => {
@@ -52,26 +52,26 @@ describe('MODE_PRESETS', () => {
     expect(storm.navigation.bookmarkEnabled).toBe(true)
   })
 
-  test('fullexam has 200 questions, countdown timer, 24h delayed results', () => {
-    const fullexam = MODE_PRESETS.fullexam
-    expect(fullexam.setup.questionCount).toBe(200)
-    expect(fullexam.timer.mode).toBe('countdown')
-    expect(fullexam.timer.totalSeconds).toBe(14400)
-    expect(fullexam.results.showImmediately).toBe(false)
-    expect(fullexam.results.delayHours).toBe(24)
-    expect(fullexam.feedback.timing).toBe('none')
+  test('full_exam has 200 questions, countdown timer, 24h delayed results', () => {
+    const full_exam = MODE_PRESETS.full_exam
+    expect(full_exam.setup.questionCount).toBe(200)
+    expect(full_exam.timer.mode).toBe('countdown')
+    expect(full_exam.timer.totalSeconds).toBe(14400)
+    expect(full_exam.results.showImmediately).toBe(false)
+    expect(full_exam.results.delayHours).toBe(24)
+    expect(full_exam.feedback.timing).toBe('none')
   })
 
-  test('extended has 100 questions, countup timer, stamina chart', () => {
-    const ext = MODE_PRESETS.extended
+  test('endurance has 100 questions, countup timer, stamina chart', () => {
+    const ext = MODE_PRESETS.endurance
     expect(ext.setup.questionCount).toBe(100)
     expect(ext.timer.mode).toBe('countup')
     expect(ext.results.showStaminaChart).toBe(true)
   })
 
-  test('focused starts with easy difficulty', () => {
-    expect(MODE_PRESETS.focused.setup.initialDifficulty).toBe('easy')
-    expect(MODE_PRESETS.focused.feedback.gatedProgressionDelayMs).toBe(4000)
+  test('focus_review starts with easy difficulty', () => {
+    expect(MODE_PRESETS.focus_review.setup.initialDifficulty).toBe('easy')
+    expect(MODE_PRESETS.focus_review.feedback.gatedProgressionDelayMs).toBe(4000)
   })
 
   test('subject has 25 questions, adaptive difficulty', () => {

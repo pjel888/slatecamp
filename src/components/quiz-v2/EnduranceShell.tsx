@@ -96,7 +96,7 @@ export const EnduranceShell = ({
     handlePrevious,
     handleExit,
     handleSubmitAll,
-  } = useQuizShellHandlers({ sessionId, mode: 'extended' })
+  } = useQuizShellHandlers({ sessionId, mode: 'endurance' })
 
   // Actions
   const initSession = useQuizStore((s) => s.initSession)
@@ -172,7 +172,7 @@ export const EnduranceShell = ({
   useEffect(() => {
     if (status === 'results' && results) {
       stopTimer()
-      router.push(`/quiz/extended/session/${sessionId}/results`)
+      router.push(`/quiz/endurance/session/${sessionId}/results`)
     }
   }, [status, results, sessionId, router, stopTimer])
 

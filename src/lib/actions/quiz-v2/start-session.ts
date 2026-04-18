@@ -23,18 +23,6 @@ import {
 } from '@/lib/entitlements/audit'
 import { logServerError } from '@/lib/logging/server'
 
-const DB_TEST_MODE_BY_APP_MODE: Record<StartSessionInput['mode'], string> = {
-  camp: 'camp',
-  chill: 'chill',
-  subject: 'practice',
-  focus_review: 'blindspot',
-  custom: 'custom',
-  storm: 'storm',
-  full_exam: 'proof_sim',
-  endurance: 'endurance',
-  article_review: 'practice',
-}
-
 const generateCageSessionKey = (): string | null => {
   try {
     return randomBytes(32).toString('hex')
@@ -64,7 +52,6 @@ export const startSession = async (
 
   try {
     const parsedInput = startSessionInputSchema.parse(input)
-    const dbTestMode = DB_TEST_MODE_BY_APP_MODE[parsedInput.mode]
     const {
       data: { user },
     } = await getUser()
@@ -250,7 +237,7 @@ export const startSession = async (
         .insert({
           user_id: user.id,
           discipline_id: disciplineId,
-          test_mode: dbTestMode,
+          test_mode: parsedInput.mode,
           status: 'in_progress',
           config: mergedConfig,
           question_ids: questionIds,
@@ -258,6 +245,8 @@ export const startSession = async (
           current_question_index: 0,
           started_at: new Date().toISOString(),
           cage_session_key: sessionKey,
+          is_full_exam: parsedInput.mode === 'full_exam',
+          is_endurance: parsedInput.mode === 'endurance',
         })
         .select('session_id')
         .single(),

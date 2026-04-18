@@ -91,7 +91,7 @@ const SyncStatus = () => {
   return (
     <div className="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-wider text-muted-foreground tabular-nums">
       {icons[status as keyof typeof icons]}
-      <span className="hidden lg:inline">{labels[status as keyof typeof labels]}</span>
+      <span className="hidden sm:inline">{labels[status as keyof typeof labels]}</span>
     </div>
   )
 }
@@ -118,7 +118,7 @@ export const QuizHeader = memo(({
   const showTimer =
     config.timer.visible &&
     config.timer.enabled &&
-    (config.mode === 'storm' || config.mode === 'fullexam' || config.mode === 'extended')
+    (config.mode === 'storm' || config.mode === 'full_exam' || config.mode === 'endurance')
 
   return (
     <header
@@ -161,7 +161,7 @@ export const QuizHeader = memo(({
       </div>
 
       {/* Sync Status (Middle) */}
-      <div className="hidden md:flex justify-center flex-1">
+      <div className="flex justify-center flex-1 min-w-[32px]">
         <SyncStatus />
       </div>
 

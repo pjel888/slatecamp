@@ -84,12 +84,12 @@ const QuizSessionPage = async ({ params }: SessionPageProps) => {
     restoredAnswers,
   }
 
-  if (mode === 'fullexam') {
+  if (mode === 'full_exam') {
     const { SimulationShell } = await import('@/components/quiz-v2/SimulationShell')
     return <SimulationShell {...shellProps} />
   }
 
-  if (mode === 'extended') {
+  if (mode === 'endurance') {
     const { EnduranceShell } = await import('@/components/quiz-v2/EnduranceShell')
     return <EnduranceShell {...shellProps} />
   }

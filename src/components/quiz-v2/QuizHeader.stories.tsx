@@ -34,7 +34,7 @@ export const ExamMode: Story = {
     ...Standard.args,
     config: {
       ...mockConfig,
-      mode: 'fullexam',
+      mode: 'full_exam',
       timer: { visible: true, enabled: true, mode: 'countdown' },
     } as any,
     currentPosition: 12,

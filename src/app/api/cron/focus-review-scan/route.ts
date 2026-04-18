@@ -5,13 +5,13 @@ import { normalizeTierValue, isPaidSubscription } from '@/lib/entitlements/norma
 import { logEntitlementAuditEvent } from '@/lib/entitlements/audit'
 
 /**
- * Blindspot Protocol — Nightly Scan Cron Job
+ * Focus Review Protocol — Nightly Scan Cron Job
  *
  * Architecture spec: "At midnight, system scans the Taxonomy Heatmap.
  * Identifies red or grey nodes. Compiles a 10–15 item quiz queue."
  *
  * Configure in vercel.json:
- *   { "crons": [{ "path": "/api/cron/blindspot-scan", "schedule": "0 16 * * *" }] }
+ *   { "crons": [{ "path": "/api/cron/focus-review-scan", "schedule": "0 16 * * *" }] }
  *   (16:00 UTC = midnight PHT)
  *
  * Protected by CRON_SECRET header verification.
@@ -71,7 +71,7 @@ export async function GET(_request: Request) {
     .gte('started_at', thirtyDaysAgo)
 
   if (usersError || !sessionUsers) {
-    console.error('[CRON:BLINDSPOT] Failed to fetch active users:', usersError)
+    console.error('[CRON:FOCUS_REVIEW] Failed to fetch active users:', usersError)
     return NextResponse.json({ error: 'Failed to fetch active users' }, { status: 500 })
   }
 
@@ -82,7 +82,7 @@ export async function GET(_request: Request) {
 
   // BATCH 2: Get existing active queues for ALL users at once
   const { data: existingQueues } = await supabase
-    .from('blindspot_queues')
+    .from('focus_review_queues')
     .select('user_id')
     .in('user_id', userIds)
     .in('status', ['pending', 'in_progress'])
@@ -101,7 +101,7 @@ export async function GET(_request: Request) {
         try {
           const normalizedTier = normalizeTierValue(
             s.tier,
-            'blindspot-scan:user_subscriptions.tier',
+            'focus_review-scan:user_subscriptions.tier',
           ).tier
           return isPaidSubscription(normalizedTier, s.status)
         } catch {
@@ -118,7 +118,7 @@ export async function GET(_request: Request) {
     // Still expire stale queues
     const sevenDaysAgo = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString()
     const { count: expired } = await supabase
-      .from('blindspot_queues')
+      .from('focus_review_queues')
       .update({ status: 'expired' })
       .eq('status', 'pending')
       .lt('created_at', sevenDaysAgo)
@@ -245,11 +245,11 @@ export async function GET(_request: Request) {
   let queuesCreated = 0
   if (newQueues.length > 0) {
     const { error: insertError } = await supabase
-      .from('blindspot_queues')
+      .from('focus_review_queues')
       .insert(newQueues)
 
     if (insertError) {
-      console.error('[CRON:BLINDSPOT] Batch insert failed:', insertError)
+      console.error('[CRON:FOCUS_REVIEW] Batch insert failed:', insertError)
     } else {
       queuesCreated = newQueues.length
     }
@@ -258,7 +258,7 @@ export async function GET(_request: Request) {
   // CLEANUP: Expire stale queues (pending for more than 7 days)
   const sevenDaysAgo = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString()
   const { count: expired } = await supabase
-    .from('blindspot_queues')
+    .from('focus_review_queues')
     .update({ status: 'expired' })
     .eq('status', 'pending')
     .lt('created_at', sevenDaysAgo)
@@ -268,8 +268,8 @@ export async function GET(_request: Request) {
     timestamp: new Date().toISOString(),
     traceId: globalThis.crypto.randomUUID(),
     userId: null,
-    routeOrAction: 'cron:blindspot-scan',
-    featureKey: 'blindspot_protocol',
+    routeOrAction: 'cron:focus-review-scan',
+    featureKey: 'focus_review_protocol',
     normalizedRole: 'anonymous',
     roleSource: 'none',
     rawTier: 'free',
@@ -286,7 +286,7 @@ export async function GET(_request: Request) {
       sourceTrace: [`eligibleUsers:${eligibleUserIds.length}`],
     },
     decision: true,
-    decisionSource: 'blindspot-scan',
+    decisionSource: 'focus-review-scan',
     trace: [
       `processed:${userIds.length}`,
       `queuesCreated:${queuesCreated}`,

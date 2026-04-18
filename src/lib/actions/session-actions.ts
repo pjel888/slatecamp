@@ -110,7 +110,7 @@ export const buildAction = (
   if (focusAreas.length > 0) {
     const weakest = focusAreas[0]
     return {
-      type: 'blindspot',
+      type: 'focus_review',
       title: `Practice: ${weakest.topicName}`,
       subtitle: `This topic needs attention — 10 focused questions to strengthen your understanding`,
       ctaLabel: 'Start session',

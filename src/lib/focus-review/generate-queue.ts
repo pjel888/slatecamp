@@ -3,20 +3,20 @@
 import { createClient } from '@/lib/supabase/server'
 
 /**
- * Generate a Blindspot queue for a user.
+ * Generate a Focus Review queue for a user.
  * Identifies the 3 weakest taxonomy nodes and creates a 12-item quiz queue.
  *
  * Architecture spec: Nightly scan → identify Red/Grey nodes → generate queue.
  * Can also be called on-demand from the dashboard.
  */
-export const generateBlindspotQueue = async (
+export const generateFocusReviewQueue = async (
   userId: string,
 ): Promise<{ queueId: string; nodeIds: string[] } | null> => {
   const supabase = await createClient()
 
   // Check for existing pending/in_progress queue
   const { data: existing } = await supabase
-    .from('blindspot_queues')
+    .from('focus_review_queues')
     .select('queue_id')
     .eq('user_id', userId)
     .in('status', ['pending', 'in_progress'])
@@ -68,7 +68,7 @@ export const generateBlindspotQueue = async (
 
   // Create the queue
   const { data: queue, error } = await supabase
-    .from('blindspot_queues')
+    .from('focus_review_queues')
     .insert({
       user_id: userId,
       node_ids: targetNodeIds,
@@ -80,7 +80,7 @@ export const generateBlindspotQueue = async (
     .single()
 
   if (error || !queue) {
-    if (error) console.error('[BLINDSPOT] generateBlindspotQueue insert failed:', { error: error.message, timestamp: new Date().toISOString() })
+    if (error) console.error('[FOCUS_REVIEW] generateFocusReviewQueue insert failed:', { error: error.message, timestamp: new Date().toISOString() })
     return null
   }
 
@@ -88,9 +88,9 @@ export const generateBlindspotQueue = async (
 }
 
 /**
- * Complete a Blindspot queue: snapshot post-queue mastery and compute improvement.
+ * Complete a Focus Review queue: snapshot post-queue mastery and compute improvement.
  */
-export const completeBlindspotQueue = async (
+export const completeFocusReviewQueue = async (
   queueId: string,
   userId: string,
 ): Promise<void> => {
@@ -98,7 +98,7 @@ export const completeBlindspotQueue = async (
 
   // Get the queue to find target nodes
   const { data: queue } = await supabase
-    .from('blindspot_queues')
+    .from('focus_review_queues')
     .select('node_ids, pre_queue_mastery')
     .eq('queue_id', queueId)
     .eq('user_id', userId)
@@ -126,7 +126,7 @@ export const completeBlindspotQueue = async (
   }
 
   await supabase
-    .from('blindspot_queues')
+    .from('focus_review_queues')
     .update({
       status: 'completed',
       completed_at: new Date().toISOString(),
@@ -137,9 +137,9 @@ export const completeBlindspotQueue = async (
 }
 
 /**
- * Defer a Blindspot queue for 48 hours.
+ * Defer a Focus Review queue for 48 hours.
  */
-export const deferBlindspotQueue = async (
+export const deferFocusReviewQueue = async (
   queueId: string,
   userId: string,
 ): Promise<void> => {
@@ -147,7 +147,7 @@ export const deferBlindspotQueue = async (
   const deferredUntil = new Date(Date.now() + 48 * 60 * 60 * 1000)
 
   await supabase
-    .from('blindspot_queues')
+    .from('focus_review_queues')
     .update({
       status: 'deferred',
       deferred_until: deferredUntil.toISOString(),
@@ -157,13 +157,13 @@ export const deferBlindspotQueue = async (
 }
 
 /**
- * Get the current active/pending Blindspot queue for a user (dashboard display).
+ * Get the current active/pending Focus Review queue for a user (dashboard display).
  */
-export const getActiveBlindspotQueue = async (userId: string) => {
+export const getActiveFocusReviewQueue = async (userId: string) => {
   const supabase = await createClient()
 
   const { data } = await supabase
-    .from('blindspot_queues')
+    .from('focus_review_queues')
     .select('queue_id, user_id, node_ids, question_count, status, session_id, pre_queue_mastery, post_queue_mastery, nodes_improved, generated_at, completed_at, deferred_until')
     .eq('user_id', userId)
     .in('status', ['pending', 'in_progress', 'deferred'])

@@ -139,7 +139,7 @@ const WikiScene = () => (
 
             <aside className="hidden border-l border-border bg-background/60 p-6 lg:block">
               <WikiRightSidebar
-                practiceHref="/dashboard/drills?mode=focused"
+                practiceHref="/dashboard/drills?mode=focus_review"
                 practiceLabel="Review this topic"
                 nodeId="storybook-topic"
                 articleId={wikiHeaderFixture.articleId}

@@ -46,7 +46,7 @@ export const getReviewData = async (
   )
 
   // 3. Fetch all questions (full detail for review — includes correct_option_id and rationale)
-  // Batch in chunks of 80 to avoid Supabase header overflow on fullexam (200 questions)
+  // Batch in chunks of 80 to avoid Supabase header overflow on full_exam (200 questions)
   const questionIds: string[] = session.question_ids ?? []
   const BATCH_SIZE = 80
 
@@ -84,7 +84,7 @@ export const getReviewData = async (
     if (data) allQuestions.push(...(data as any[]))
   }
 
-  // 4. Fetch taxonomy breadcrumbs — batch to avoid header overflow on fullexam
+  // 4. Fetch taxonomy breadcrumbs — batch to avoid header overflow on full_exam
   const topicIds = [...new Set(allQuestions.map((q: any) => q.topic_id))]
 
   const taxonomyMap = new Map<string, string>()
@@ -224,7 +224,7 @@ export const getReviewData = async (
   })
 
   // 9. Fetch per-question history for Pro users
-  // Batch in chunks of 80 to avoid Supabase header overflow on fullexam (200 questions)
+  // Batch in chunks of 80 to avoid Supabase header overflow on full_exam (200 questions)
   let questionHistory: Record<string, QuestionHistoryStats> | undefined
 
   if (isPro && questionIds.length > 0) {

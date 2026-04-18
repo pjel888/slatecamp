@@ -326,8 +326,8 @@ function formatModeName(mode: string): string {
     timed: 'Timed Quiz',
     practice: 'Practice Quiz',
     custom: 'Custom Quiz',
-    blindspot: 'Blindspot Quiz',
-    proof_sim: 'Full Exam Simulation',
+    focus_review: 'Focus Review',
+    full_exam: 'Full Exam Simulation',
     endurance: 'Endurance Quiz',
   }
   return map[mode] ?? 'Quiz'

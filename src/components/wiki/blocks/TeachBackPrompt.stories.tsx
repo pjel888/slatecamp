@@ -28,6 +28,6 @@ export const Default: Story = {}
 
 export const BlindspotEntry: Story = {
   args: {
-    entryPoint: 'blindspot',
+    entryPoint: 'focus_review',
   },
 }

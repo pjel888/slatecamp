@@ -6,7 +6,7 @@ import { analyzeStamina } from '@/lib/quiz/stamina-analysis'
 import { getReviewData, getConfidenceMatrix } from '@/lib/actions/quiz-v2'
 import { generateRecommendations } from '@/lib/actions/quiz-v2/generate-recommendations'
 import ResultsDashboard from '@/components/quiz-v2/results/ResultsDashboard'
-const PREDICTION_MODES = ['storm', 'fullexam', 'extended']
+const PREDICTION_MODES = ['storm', 'full_exam', 'endurance']
 const shouldShowPrediction = (mode: string) => PREDICTION_MODES.includes(mode)
 import type { QuizMode } from '@/types/quiz-config'
 
@@ -34,7 +34,7 @@ const QuizResultsPage = async ({ params }: ResultsPageProps) => {
   const config: QuizSessionConfig = (session.config as QuizSessionConfig) ??
     MODE_PRESETS[mode as keyof typeof MODE_PRESETS] ?? MODE_PRESETS.camp
 
-  // Check 24h delay for fullexam — compute from completed_at + config delay
+  // Check 24h delay for full_exam — compute from completed_at + config delay
   const delayHours = config.results.delayHours ?? 0
   if (delayHours > 0 && session.completed_at) {
     const resultsAvailableAt = new Date(

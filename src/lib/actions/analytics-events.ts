@@ -11,7 +11,7 @@ import { createClient, getUser } from '@/lib/supabase/server'
  * 2. first_drill     — src/lib/actions/quiz-v2/end-session.ts (on first completed session)
  * 3. first_wiki_read — src/lib/actions/wiki-reads.ts (on first article read)
  * 4. zone_2_reached  — src/lib/actions/readiness-score-update.ts (when zone transitions to 2)
- * 5. first_simulation — src/lib/actions/quiz-v2/end-session.ts (on first fullexam completion)
+ * 5. first_simulation — src/lib/actions/quiz-v2/end-session.ts (on first full_exam completion)
  */
 export const trackEvent = async (
   eventName: string,

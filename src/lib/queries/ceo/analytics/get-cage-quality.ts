@@ -45,7 +45,7 @@ export const getCAGEQualityData = async (): Promise<AnalyticsResult<CAGEMetric[]
     const { data: sessionData, error: sessionErr } = await supabase
       .from('quiz_sessions')
       .select('mode, score, created_at')
-      .in('mode', ['cage', 'proof_sim', 'assessment'])
+      .in('mode', ['cage', 'full_exam', 'assessment'])
 
     if (sessionErr) throw new Error(sessionErr.message)
 

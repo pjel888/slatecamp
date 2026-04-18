@@ -14,7 +14,7 @@ import { SCIcon } from '@/components/graphics/icons/Icon'
 interface TeachBackPromptProps {
   topicId: string
   topicName: string
-  entryPoint: 'wiki' | 'blindspot' | 'trail'
+  entryPoint: 'wiki' | 'focus_review' | 'trail'
   trailDayId?: string
 }
 

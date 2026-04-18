@@ -311,7 +311,7 @@ export const submitAnswer = async (
       let generationMultiplier = isGeneration && isCorrect ? 1.2 : 1.0
       if (isSuspectedLuckyGuess) generationMultiplier = 0.5
 
-      if (topicId && (config?.mode === 'camp' || config?.mode === 'focused')) {
+      if (topicId && (config?.mode === 'camp' || config?.mode === 'focus_review')) {
         const quality = await deriveQualityRating({
           isCorrect,
           timeSpentMs: parsedInput.timeSpentMs,

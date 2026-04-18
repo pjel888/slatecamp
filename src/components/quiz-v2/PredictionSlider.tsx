@@ -7,7 +7,7 @@ import type { QuizMode } from '@/types/quiz-config'
 
 // ─── Modes that show the prediction prompt ──────────────────────────────────
 
-const PREDICTION_MODES: Set<QuizMode> = new Set(['storm', 'fullexam', 'extended'])
+const PREDICTION_MODES: Set<QuizMode> = new Set(['storm', 'full_exam', 'endurance'])
 
 export const shouldShowPrediction = (mode: QuizMode): boolean =>
   PREDICTION_MODES.has(mode)

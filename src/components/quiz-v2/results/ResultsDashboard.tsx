@@ -188,8 +188,8 @@ const ResultsDashboard = ({
           </section>
         )}
 
-        {/* ── Section 5: Simulation Debrief (fullexam only) ──────────────────── */}
-        {config.mode === 'fullexam' && (
+        {/* ── Section 5: Simulation Debrief (full_exam only) ─────────────────── */}
+        {config.mode === 'full_exam' && (
           <section aria-label="Simulation debrief">
             <Suspense fallback={<ChartSkeleton />}>
               <SimulationDebrief

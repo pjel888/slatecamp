@@ -24,7 +24,7 @@ DO $$ BEGIN
         CREATE TYPE public.subscription_tier AS ENUM ('free', 'pro', 'enterprise');
     END IF;
     IF NOT EXISTS (SELECT 1 FROM pg_type WHERE typname = 'test_mode') THEN
-        CREATE TYPE public.test_mode AS ENUM ('camp', 'timed', 'practice', 'storm', 'chill', 'custom', 'blindspot', 'proof_sim', 'endurance');
+        CREATE TYPE public.test_mode AS ENUM ('camp', 'timed', 'subject', 'storm', 'chill', 'custom', 'focus_review', 'full_exam', 'endurance', 'article_review');
     END IF;
 END $$;
 

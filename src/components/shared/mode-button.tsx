@@ -17,7 +17,7 @@ const modeColors = {
     ghost: 'text-foreground hover:bg-foreground/10',
     ring: 'ring-foreground',
   },
-  blindspot: {
+  focus_review: {
     solid: 'bg-purple-600 text-white hover:bg-purple-600/90',
     outline: 'border-purple-600 text-purple-600 hover:bg-purple-600/10',
     ghost: 'text-purple-600 hover:bg-purple-600/10',

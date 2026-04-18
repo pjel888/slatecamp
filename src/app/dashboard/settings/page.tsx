@@ -19,7 +19,7 @@ export const metadata = { title: 'Settings' }
 const DEFAULT_NOTIFICATION_PREFS = {
   score_changes: true,
   trail_ready: true,
-  blindspot: true,
+  focus_review: true,
   milestones: true,
   campfire: true,
   content_updates: true,

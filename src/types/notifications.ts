@@ -1,7 +1,7 @@
 export type NotificationType =
   | 'score_change'
   | 'trail_ready'
-  | 'blindspot'
+  | 'focus_review'
   | 'zone_transition'
   | 'proof_unlocked'
   | 'campfire_story'
@@ -50,7 +50,7 @@ export interface NotificationMetadata {
 export interface NotificationPreferences {
   score_changes: boolean
   trail_ready: boolean
-  blindspot: boolean
+  focus_review: boolean
   milestones: boolean
   campfire: boolean
   content_updates: boolean
@@ -76,7 +76,7 @@ export interface GroupedNotifications {
 export const NOTIFICATION_PRIORITY: Record<NotificationType, NotificationPriority> = {
   score_change: 'high',
   trail_ready: 'high',
-  blindspot: 'high',
+  focus_review: 'high',
   zone_transition: 'high',
   proof_unlocked: 'high',
   campfire_story: 'medium',
@@ -91,7 +91,7 @@ export const NOTIFICATION_PRIORITY: Record<NotificationType, NotificationPriorit
 export const DEFAULT_DEEP_LINKS: Record<NotificationType, string> = {
   score_change: '/dashboard',
   trail_ready: '/dashboard/trail',
-  blindspot: '/dashboard/heatmap',
+  focus_review: '/dashboard/heatmap',
   zone_transition: '/dashboard',
   proof_unlocked: '/dashboard/trail',
   campfire_story: '/dashboard/campfire',
@@ -105,7 +105,7 @@ export const DEFAULT_DEEP_LINKS: Record<NotificationType, string> = {
 
 export const FILTER_TYPE_MAP: Record<NotificationFilter, NotificationType[] | null> = {
   all: null,
-  progress: ['score_change', 'zone_transition', 'blindspot', 'weekly_digest'],
+  progress: ['score_change', 'zone_transition', 'focus_review', 'weekly_digest'],
   trail: ['trail_ready', 'proof_unlocked'],
   campfire: ['campfire_story', 'campfire_reply'],
   system: ['content_update', 'coaching_tip', 'billing', 'system'],

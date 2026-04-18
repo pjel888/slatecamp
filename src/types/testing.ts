@@ -9,11 +9,10 @@ export type ModeSource =
   | 'focus_review'
   | 'custom_session'
   | 'storm_mode'
-  | 'proof_simulation'
-  | 'extended_practice'
+  | 'full_exam'
+  | 'endurance'
   | 'assessment_quiz'
   | 'trail_quiz'
-  | 'blindspot_queue'
   | 'article_review'
 
 /** User-facing mode key used in routes and UI logic */
@@ -21,12 +20,12 @@ export type UIMode =
   | 'camp'
   | 'chill'
   | 'subject'
-  | 'focus-review'
+  | 'focus_review'
   | 'custom'
   | 'storm'
-  | 'simulation'
+  | 'full_exam'
   | 'endurance'
-  | 'article-review'
+  | 'article_review'
 
 // ─── Mode Metadata ────────────────────────────────────────────────────────────
 
@@ -58,7 +57,7 @@ export interface ModeStats {
 }
 
 export type SuggestionVariant =
-  | 'blindspot'
+  | 'focus_review'
   | 'exam-countdown'
   | 'weak-subject'
   | 'return'
@@ -69,7 +68,7 @@ export interface SmartSuggestion {
   description: string
   ctaLabel: string
   ctaHref: string
-  /** Blindspot: node names. Weak subject: subject name. Exam countdown: days. */
+  /** Focus Review: node names. Weak subject: subject name. Exam countdown: days. */
   metadata?: {
     nodeNames?: string[]
     subjectName?: string
@@ -124,10 +123,10 @@ export interface SessionConfig {
   timerSeconds: number | null
   focusOption: FocusOption
   preSessionConfidence: SubjectConfidence[]
-  isBlindspotSession: boolean
-  blindspotQueueId: string | null
-  isProofSimulation: boolean
-  isEnduranceSession: boolean
+  isFocusReviewSession: boolean
+  focusReviewQueueId: string | null
+  isFullExam: boolean
+  isEndurance: boolean
   strippedUi: boolean
   masteryWeightMultiplier: number
 }

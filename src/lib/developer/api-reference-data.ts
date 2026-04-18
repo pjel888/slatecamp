@@ -64,7 +64,7 @@ export const webhookEndpoints = [
 export const cronEndpoints = [
   {
     method: 'GET',
-    path: '/api/cron/blindspot-scan',
+    path: '/api/cron/focus-review-scan',
     description:
       'Generate Focus Review queues for paid users. Scans taxonomy heatmap for red/grey nodes and compiles 12-question queues. Expires pending queues older than 7 days.',
     auth: 'CRON_SECRET (Authorization: Bearer)',
@@ -74,13 +74,13 @@ export const cronEndpoints = [
 
 // Tables read:
 //   quiz_sessions       — active users (completed, last 30 days)
-//   blindspot_queues    — skip users with pending/in_progress queues
+//   focus_review_queues    — skip users with pending/in_progress queues
 //   user_subscriptions  — paid users only (active/trialing, tier != free)
 //   user_node_mastery   — weak nodes (mastery < 0.4)
 //   taxonomy_tree       — grey leaf nodes (is_leaf, not deprecated, has lea_id)
 
 // Tables written:
-//   blindspot_queues    — INSERT { user_id, node_ids[3], question_count:12,
+//   focus_review_queues    — INSERT { user_id, node_ids[3], question_count:12,
 //                                  pre_queue_mastery, status:'pending' }
 //                       — UPDATE expired status for stale pending queues`,
     responseExample: `{
@@ -94,7 +94,7 @@ export const cronEndpoints = [
     method: 'GET',
     path: '/api/cron/compute-signals',
     description:
-      'Calculate score velocity, churn risk, and session stats for all active users. Runs after blindspot-scan.',
+      'Calculate score velocity, churn risk, and session stats for all active users. Runs after focus-review-scan.',
     auth: 'CRON_SECRET (Authorization: Bearer)',
     badges: ['Daily', '16:30 UTC'],
     requestSchema: `// No body. Schedule: "30 16 * * *" (16:30 UTC = 00:30 PHT)

@@ -11,6 +11,7 @@ import {
   Barbell,
   Warning,
   Info,
+  BookOpen,
 } from '@phosphor-icons/react/dist/ssr'
 import { Button } from '@/components/ui/button'
 import { QuestionCountPills } from './QuestionCountPills'
@@ -25,13 +26,14 @@ const MODE_ICONS: Record<QuizMode, IconComponent> = {
   camp: ({ className, ...p }) => <Book className={className} {...p} />,
   chill: ({ className, ...p }) => <Leaf className={className} {...p} />,
   subject: ({ className, ...p }) => <MagnifyingGlass className={className} {...p} />,
-  focused: ({ className, ...p }) => <Crosshair className={className} {...p} />,
+  focus_review: ({ className, ...p }) => <Crosshair className={className} {...p} />,
   custom: ({ className, ...p }) => <GearSix className={className} {...p} />,
   storm: ({ className, ...p }) => <Lightning className={className} {...p} />,
-  fullexam: ({ className, ...p }) => <Shield className={className} {...p} />,
-  extended: ({ className, ...p }) => <Barbell className={className} {...p} />,
-  article_review: ({ className, ...p }) => <Book className={className} {...p} />,
+  full_exam: ({ className, ...p }) => <Shield className={className} {...p} />,
+  endurance: ({ className, ...p }) => <Barbell className={className} {...p} />,
+  article_review: ({ className, ...p }) => <BookOpen className={className} {...p} />,
 }
+
 
 // ─── Session summaries ────────────────────────────────────────────────────────
 
@@ -39,16 +41,16 @@ const MODE_SUMMARY: Record<QuizMode, string> = {
   camp: 'Adaptive difficulty · Instant feedback',
   chill: 'No timer · Skip freely · Instant feedback',
   subject: 'Deep-dive into a subject · Adaptive difficulty',
-  focused: 'Target your developing skills · Adaptive difficulty',
+  focus_review: 'Target your developing skills · Adaptive difficulty',
   custom: 'Fully configurable session',
   storm: 'Exam conditions · No feedback during session',
-  fullexam: '200 questions · 4 hours · Results in 24 hours',
-  extended: 'Build stamina · Count-up timer · Brief feedback',
+  full_exam: '200 questions · 4 hours · Results in 24 hours',
+  endurance: 'Build stamina · Count-up timer · Brief feedback',
   article_review: 'Quick review from wiki article',
 }
 
 // Zone 3 modes use Camp Orange accent
-const isZone3 = (mode: QuizMode) => mode === 'fullexam' || mode === 'extended'
+const isZone3 = (mode: QuizMode) => mode === 'full_exam' || mode === 'endurance'
 
 // ─── Props ────────────────────────────────────────────────────────────────────
 
@@ -66,8 +68,8 @@ interface IntroSlide1Props {
 
 const COUNT_OPTIONS: Partial<Record<QuizMode, number[]>> = {
   storm: [50, 100],
-  fullexam: [200],
-  extended: [30, 50, 100],
+  full_exam: [200],
+  endurance: [30, 50, 100],
 }
 
 const getCountOptions = (mode: QuizMode): number[] =>
@@ -90,7 +92,7 @@ const IntroSlide1 = ({
   const countOptions = getCountOptions(mode)
 
   // Only hide count stepper for Full Exam (fixed at 200)
-  const hideCountStepper = mode === 'fullexam'
+  const hideCountStepper = mode === 'full_exam'
 
   return (
     <div className="space-y-6">
@@ -131,7 +133,7 @@ const IntroSlide1 = ({
       )}
 
       {/* Full Exam briefing */}
-      {mode === 'fullexam' && (
+      {mode === 'full_exam' && (
         <div className="flex gap-2.5 rounded-md bg-primary-50 border border-primary/20 px-4 py-3">
           <Info
             className="h-4 w-4 shrink-0 mt-0.5 text-primary"
@@ -218,9 +220,9 @@ const IntroSlide1 = ({
       >
         {mode === 'storm'
           ? `Start ${questionCount}-question Storm`
-          : mode === 'fullexam'
+          : mode === 'full_exam'
             ? 'Begin Full Exam'
-            : mode === 'subject' || mode === 'focused'
+            : mode === 'subject' || mode === 'focus_review'
               ? 'Begin Session'
               : `Begin ${questionCount}-question Session`}
       </Button>

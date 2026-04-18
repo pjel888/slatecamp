@@ -56,49 +56,26 @@ const MODE_LABELS: Record<string, string> = {
   camp: 'Camp',
   chill: 'Chill',
   subject: 'Subject',
-  focused: 'Focus Review',
   focus_review: 'Focus Review',
   custom: 'Custom',
   storm: 'Storm',
-  fullexam: 'Full Exam',
   full_exam: 'Full Exam',
-  extended: 'Extended',
-  extended_practice: 'Extended',
+  endurance: 'Extended',
   article_review: 'Article Review',
-  wiki_review: 'Article Review',
-  camp_mode: 'Camp',
-  chill_mode: 'Chill',
-  subject_mode: 'Subject',
-  custom_session: 'Custom',
-  storm_mode: 'Storm',
-  proof_simulation: 'Full Exam',
-  assessment_quiz: 'Camp',
-  trail_quiz: 'Camp',
-  blindspot_queue: 'Focus Review',
 }
 
 const LEARNING_MODES = new Set([
   'camp',
-  'camp_mode',
   'chill',
-  'chill_mode',
   'subject',
-  'subject_mode',
-  'focused',
   'focus_review',
-  'assessment_quiz',
-  'trail_quiz',
-  'blindspot_queue',
+  'article_review',
 ])
 
 const EXAM_MODES = new Set([
   'storm',
-  'storm_mode',
-  'fullexam',
   'full_exam',
-  'proof_simulation',
-  'extended',
-  'extended_practice',
+  'endurance',
 ])
 
 const READING_MODES = new Set(['article_review', 'prequestion'])
@@ -152,28 +129,8 @@ const getModeBadgeStyle = (modeKey: string): CSSProperties => {
 const getSessionUrl = (session: SessionRecord): string => {
   const modeKey = getModeKey(session)
 
-  const modeKeyToV2: Record<string, string> = {
-    'focus-review': 'focused',
-    focus_review: 'focused',
-    blindspot_queue: 'focused',
-    simulation: 'fullexam',
-    full_exam: 'fullexam',
-    proof_simulation: 'fullexam',
-    endurance: 'extended',
-    extended_practice: 'extended',
-    assessment_quiz: 'camp',
-    trail_quiz: 'camp',
-    camp_mode: 'camp',
-    chill_mode: 'chill',
-    subject_mode: 'subject',
-    custom_session: 'custom',
-    storm_mode: 'storm',
-  }
-
-  const v2Mode = modeKeyToV2[modeKey] ?? modeKey.replace(/_/g, '-')
-
   if (session.status === 'in_progress') {
-    return `/quiz/${v2Mode}/session/${session.session_id}`
+    return `/quiz/${modeKey}/session/${session.session_id}`
   }
 
   if (READING_MODES.has(modeKey)) {
@@ -183,7 +140,7 @@ const getSessionUrl = (session: SessionRecord): string => {
     }
   }
 
-  return `/quiz/${v2Mode}/session/${session.session_id}/results`
+  return `/quiz/${modeKey}/session/${session.session_id}/results`
 }
 
 const getScoreDisplay = (session: SessionRecord): {

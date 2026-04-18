@@ -101,7 +101,7 @@ const QuadrantCell = ({
       {/* Focused review link for Confident+Wrong quadrant — pinned to bottom */}
       {config.linkable && count > 0 && (
         <Link
-          href={`/quiz/focused/setup?source=confidence&session=${sessionId}&mode=${mode}&filter=confident-wrong`}
+          href={`/quiz/focus_review/setup?source=confidence&session=${sessionId}&mode=${mode}&filter=confident-wrong`}
           className={cn(
             'inline-flex items-center gap-1 mt-3 text-xs font-medium shrink-0',
             'text-primary hover:text-primary-700',

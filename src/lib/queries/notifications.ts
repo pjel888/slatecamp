@@ -55,7 +55,7 @@ export const fetchNotificationPreferences = async (
 
     const { data, error } = await supabase
       .from('notification_preferences')      .select(
-        'score_changes, trail_ready, blindspot, milestones, campfire, ' +
+        'score_changes, trail_ready, focus_review, milestones, campfire, ' +
         'content_updates, weekly_digest, coaching_tips, billing, ' +
         'daily_digest, quiet_hours_start, quiet_hours_end'
       )
@@ -67,7 +67,7 @@ export const fetchNotificationPreferences = async (
     if (!data) {
       return {
         data: {
-          score_changes: true, trail_ready: true, blindspot: true,
+          score_changes: true, trail_ready: true, focus_review: true,
           milestones: true, campfire: true, content_updates: true,
           weekly_digest: true, coaching_tips: false, billing: true,
           daily_digest: false, quiet_hours_start: null, quiet_hours_end: null,

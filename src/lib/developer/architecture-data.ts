@@ -34,7 +34,7 @@ export const dbClusters = [
       { name: 'user_mastery_history',       desc: 'snapshots with reason',                              access: 'Own-user' },
       { name: 'user_global_stats',          desc: 'global_readiness_score, sub_scores, streaks',        access: 'Own-user' },
       { name: 'readiness_score_snapshots',  desc: 'score, sub_scores [Append-only]',                    access: 'Own-user' },
-      { name: 'blindspot_queues',           desc: 'node_ids[], status',                                 access: 'Own-user' },
+      { name: 'focus_review_queues',        desc: 'node_ids[], status',                                 access: 'Own-user' },
     ],
   },
   {
@@ -133,7 +133,7 @@ export const masteryLoopCode = `Student Interaction (quiz answer, wiki read, 3D 
   → user_interactions (immutable event log)
   → user_node_mastery (EMA weight, updated via trigger)
   → Readiness Score + Taxonomy Heatmap
-  → Progression (Blindspot, Endurance, Proof, Trail)
+  → Progression (Focus Review, Endurance, Full Exam, Trail)
   → Student returns tomorrow`
 
 export const sessionLifecycleCode = `createQuizSession
@@ -142,7 +142,7 @@ export const sessionLifecycleCode = `createQuizSession
   → updateQuizSession
   → snapshot readiness`
 
-export const cronCode = `blindspot-scan   → 16:00 UTC  — queue focus-review topics per user
+export const cronCode = `focus-review-scan  → 16:00 UTC  — queue focus-review topics per user
 compute-signals  → 16:30 UTC  — aggregate mastery signals + update readiness`
 
 export const middlewareCode = `// middleware.ts
@@ -181,7 +181,7 @@ export const migrations = [
   '015_learning_science_sprint2.sql',
   '016_learning_science_sprint3.sql',
   '017_fix_rls_and_fk.sql',
-  '018_proof_simulation_and_signals.sql',
+  '20260418120000_absolute_unification.sql',
   '019_application_layer_schema.sql',
   '020_populate_feature_flags.sql',
   '021_study_streak_and_sprint2.sql',

@@ -83,7 +83,7 @@ It combines student study flows, admin content tooling, internal developer and b
 
 - Supabase/PostgreSQL: primary data store, auth, RLS, and admin/service-role operations
 - LemonSqueezy and PayRex: payment and webhook providers
-- Vercel cron paths: `/api/cron/blindspot-scan`, `/api/cron/compute-signals`
+- Vercel cron paths: `/api/cron/focus-review-scan`, `/api/cron/compute-signals`
 - Storybook: component/dev validation surface
 - Anthropic/OpenAI-related SDKs are present in dependencies, but the main audited external systems with live route evidence are Supabase and payments
 

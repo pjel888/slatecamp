@@ -177,7 +177,7 @@ export type Database = {
           },
         ]
       }
-      blindspot_queues: {
+      focus_review_queues: {
         Row: {
           completed_at: string | null
           deferred_until: string | null
@@ -1371,7 +1371,7 @@ export type Database = {
       notification_preferences: {
         Row: {
           billing: boolean
-          blindspot: boolean
+          focus_review: boolean
           campfire: boolean
           coaching_tips: boolean
           content_updates: boolean
@@ -1389,7 +1389,7 @@ export type Database = {
         }
         Insert: {
           billing?: boolean
-          blindspot?: boolean
+          focus_review?: boolean
           campfire?: boolean
           coaching_tips?: boolean
           content_updates?: boolean
@@ -1407,7 +1407,7 @@ export type Database = {
         }
         Update: {
           billing?: boolean
-          blindspot?: boolean
+          focus_review?: boolean
           campfire?: boolean
           coaching_tips?: boolean
           content_updates?: boolean
@@ -1808,8 +1808,8 @@ export type Database = {
           config: Json
           current_question_index: number
           discipline_id: string | null
-          is_endurance_session: boolean | null
-          is_proof_simulation: boolean | null
+          is_endurance: boolean | null
+          is_full_exam: boolean | null
           mastery_snapshot_at_start: Json | null
           pre_session_confidence_ratings: Json | null
           question_ids: string[]
@@ -1828,8 +1828,8 @@ export type Database = {
           config?: Json
           current_question_index?: number
           discipline_id?: string | null
-          is_endurance_session?: boolean | null
-          is_proof_simulation?: boolean | null
+          is_endurance?: boolean | null
+          is_full_exam?: boolean | null
           mastery_snapshot_at_start?: Json | null
           pre_session_confidence_ratings?: Json | null
           question_ids?: string[]
@@ -1848,8 +1848,8 @@ export type Database = {
           config?: Json
           current_question_index?: number
           discipline_id?: string | null
-          is_endurance_session?: boolean | null
-          is_proof_simulation?: boolean | null
+          is_endurance?: boolean | null
+          is_full_exam?: boolean | null
           mastery_snapshot_at_start?: Json | null
           pre_session_confidence_ratings?: Json | null
           question_ids?: string[]
@@ -1876,7 +1876,7 @@ export type Database = {
         Row: {
           analysis_available_at: string | null
           computed_at: string
-          is_proof_simulation: boolean
+          is_full_exam: boolean
           score: number
           session_id: string | null
           snapshot_id: string
@@ -1886,7 +1886,7 @@ export type Database = {
         Insert: {
           analysis_available_at?: string | null
           computed_at?: string
-          is_proof_simulation?: boolean
+          is_full_exam?: boolean
           score: number
           session_id?: string | null
           snapshot_id?: string
@@ -1896,7 +1896,7 @@ export type Database = {
         Update: {
           analysis_available_at?: string | null
           computed_at?: string
-          is_proof_simulation?: boolean
+          is_full_exam?: boolean
           score?: number
           session_id?: string | null
           snapshot_id?: string
@@ -2808,7 +2808,7 @@ export type Database = {
           onboarding_completed_at: string | null
           onboarding_retaker_framing_shown: boolean
           previous_exam_result: string | null
-          proof_simulation_unlocked_at: string | null
+          full_exam_unlocked_at: string | null
           readiness_sub_scores: Json
           referral_code: string | null
           score_reveal_shown_at: string | null
@@ -2852,7 +2852,7 @@ export type Database = {
           onboarding_completed_at?: string | null
           onboarding_retaker_framing_shown?: boolean
           previous_exam_result?: string | null
-          proof_simulation_unlocked_at?: string | null
+          full_exam_unlocked_at?: string | null
           readiness_sub_scores?: Json
           referral_code?: string | null
           score_reveal_shown_at?: string | null
@@ -2896,7 +2896,7 @@ export type Database = {
           onboarding_completed_at?: string | null
           onboarding_retaker_framing_shown?: boolean
           previous_exam_result?: string | null
-          proof_simulation_unlocked_at?: string | null
+          full_exam_unlocked_at?: string | null
           readiness_sub_scores?: Json
           referral_code?: string | null
           score_reveal_shown_at?: string | null
@@ -4351,7 +4351,7 @@ export type Database = {
       notification_type:
         | "score_change"
         | "trail_ready"
-        | "blindspot"
+        | "focus_review"
         | "zone_transition"
         | "proof_unlocked"
         | "campfire_story"
@@ -4408,8 +4408,8 @@ export type Database = {
         | "storm"
         | "chill"
         | "custom"
-        | "blindspot"
-        | "proof_sim"
+        | "focus_review"
+        | "full_exam"
         | "endurance"
       trail_enrollment_status: "active" | "paused" | "completed" | "abandoned"
       trail_intensity:
@@ -4578,7 +4578,7 @@ export const Constants = {
       notification_type: [
         "score_change",
         "trail_ready",
-        "blindspot",
+        "focus_review",
         "zone_transition",
         "proof_unlocked",
         "campfire_story",
@@ -4641,8 +4641,8 @@ export const Constants = {
         "storm",
         "chill",
         "custom",
-        "blindspot",
-        "proof_sim",
+        "focus_review",
+        "full_exam",
         "endurance",
       ],
       trail_enrollment_status: ["active", "paused", "completed", "abandoned"],

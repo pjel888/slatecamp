@@ -196,7 +196,7 @@ const IntroSlide2 = ({ mode, subjects, initialSelected, onContinue }: IntroSlide
 
   const defaultSelected = useMemo<Set<string>>(() => {
     if (initialSelected) return new Set(initialSelected)
-    if (mode === 'focused') return new Set(focusedIds)
+    if (mode === 'focus_review') return new Set(focusedIds)
     return new Set(allLeafIds)
   }, [mode, allLeafIds, focusedIds, initialSelected])
 
@@ -258,7 +258,7 @@ const IntroSlide2 = ({ mode, subjects, initialSelected, onContinue }: IntroSlide
           Step 2 — Topics
         </p>
         <h2 className="text-[17px] font-semibold text-foreground">Choose your topics</h2>
-        {mode === 'focused' && (
+        {mode === 'focus_review' && (
           <p className="text-[13px] text-warning mt-1">
             Developing skills pre-selected based on your history.
           </p>
@@ -311,7 +311,7 @@ const IntroSlide2 = ({ mode, subjects, initialSelected, onContinue }: IntroSlide
               selected={selected}
               onToggleTopic={toggleTopic}
               onToggleSubject={toggleSubject}
-              defaultExpanded={mode === 'focused'}
+              defaultExpanded={mode === 'focus_review'}
             />
           ))}
           {filteredSubjects.length === 0 && (

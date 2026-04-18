@@ -1,18 +1,18 @@
 /**
- * BlindspotPriorityFlag — Server Component
+ * FocusReviewPriorityFlag — Server Component
  *
- * Displays a priority callout when Focus Review (Blindspot Protocol)
+ * Displays a priority callout when Focus Review (formerly Blindspot Protocol)
  * has flagged taxonomy nodes within a trail step as critical gaps.
  * Renders null when no nodes are flagged.
  */
 
 import { WarningCircle } from '@phosphor-icons/react/dist/ssr'
 
-interface BlindspotPriorityFlagProps {
+interface FocusReviewPriorityFlagProps {
   flaggedNodeCount?: number
 }
 
-const BlindspotPriorityFlag = ({ flaggedNodeCount }: BlindspotPriorityFlagProps) => {
+const FocusReviewPriorityFlag = ({ flaggedNodeCount }: FocusReviewPriorityFlagProps) => {
   if (!flaggedNodeCount || flaggedNodeCount <= 0) {
     return null
   }
@@ -32,5 +32,5 @@ const BlindspotPriorityFlag = ({ flaggedNodeCount }: BlindspotPriorityFlagProps)
   )
 }
 
-export { BlindspotPriorityFlag }
-export type { BlindspotPriorityFlagProps }
+export { FocusReviewPriorityFlag }
+export type { FocusReviewPriorityFlagProps }

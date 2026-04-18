@@ -49,7 +49,7 @@ export const progress = {
   streak: Fire,
   heartbeat: Heartbeat,
   focusReview: Brain,
-  extendedPractice: Lightning,
+  endurance: Lightning,
   fullSimulation: Certificate,
 }
 

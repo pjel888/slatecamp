@@ -10,7 +10,7 @@ import { headers } from 'next/headers'
  *
  * Configure in vercel.json:
  *   { "crons": [{ "path": "/api/cron/compute-signals", "schedule": "30 16 * * *" }] }
- *   (16:30 UTC = 00:30 PHT, after blindspot scan)
+ *   (16:30 UTC = 00:30 PHT, after focus-review scan)
  */
 export async function GET(request: Request) {
   const headersList = await headers()

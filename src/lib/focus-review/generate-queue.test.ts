@@ -52,7 +52,7 @@ const makeChain = (resolver: () => Promise<unknown>): Record<string, unknown> =>
 
 const mockSupabaseClient = {
   from: mock((table: string) => {
-    if (table === 'blindspot_queues') {
+    if (table === 'focus_review_queues') {
       return {
         select: mock(() =>
           makeChain(() => Promise.resolve({ data: state.existingQueue, error: null })),
@@ -99,7 +99,7 @@ mock.module('@/lib/supabase/server', () => ({
   createClient: mock(() => Promise.resolve(mockSupabaseClient)),
 }))
 
-import { generateBlindspotQueue } from './generate-queue'
+import { generateFocusReviewQueue } from './generate-queue'
 
 // ---------------------------------------------------------------------------
 
@@ -115,18 +115,18 @@ const resetState = () => {
 // ---------------------------------------------------------------------------
 // Active queue guard
 // ---------------------------------------------------------------------------
-describe('generateBlindspotQueue — active queue guard', () => {
+describe('generateFocusReviewQueue — active queue guard', () => {
   beforeEach(resetState)
 
   test('returns null when user already has a pending queue', async () => {
     state.existingQueue = { queue_id: 'existing-queue-id' }
-    const result = await generateBlindspotQueue('user-1')
+    const result = await generateFocusReviewQueue('user-1')
     expect(result).toBeNull()
   })
 
   test('returns null when user already has an in_progress queue', async () => {
     state.existingQueue = { queue_id: 'in-progress-queue-id' }
-    const result = await generateBlindspotQueue('user-1')
+    const result = await generateFocusReviewQueue('user-1')
     expect(result).toBeNull()
   })
 
@@ -134,7 +134,7 @@ describe('generateBlindspotQueue — active queue guard', () => {
     state.existingQueue = null
     state.weakNodes = [{ topic_id: 'node-weak-1', current_mastery_weight: 0.1 }]
     state.insertResult = { data: { queue_id: 'new-queue-id' }, error: null }
-    const result = await generateBlindspotQueue('user-1')
+    const result = await generateFocusReviewQueue('user-1')
     expect(result).not.toBeNull()
   })
 })
@@ -142,14 +142,14 @@ describe('generateBlindspotQueue — active queue guard', () => {
 // ---------------------------------------------------------------------------
 // No weak nodes (perfect mastery)
 // ---------------------------------------------------------------------------
-describe('generateBlindspotQueue — no weak nodes', () => {
+describe('generateFocusReviewQueue — no weak nodes', () => {
   beforeEach(resetState)
 
   test('returns null when user has no weak nodes and no grey (untouched) nodes', async () => {
     state.weakNodes = []
     state.allLeafNodes = [{ node_id: 'leaf-1' }, { node_id: 'leaf-2' }]
     state.touchedNodes = [{ topic_id: 'leaf-1' }, { topic_id: 'leaf-2' }]
-    const result = await generateBlindspotQueue('user-1')
+    const result = await generateFocusReviewQueue('user-1')
     expect(result).toBeNull()
   })
 
@@ -157,7 +157,7 @@ describe('generateBlindspotQueue — no weak nodes', () => {
     state.weakNodes = []
     state.allLeafNodes = []
     state.touchedNodes = []
-    const result = await generateBlindspotQueue('user-1')
+    const result = await generateFocusReviewQueue('user-1')
     expect(result).toBeNull()
   })
 })
@@ -165,7 +165,7 @@ describe('generateBlindspotQueue — no weak nodes', () => {
 // ---------------------------------------------------------------------------
 // Queue creation
 // ---------------------------------------------------------------------------
-describe('generateBlindspotQueue — queue creation', () => {
+describe('generateFocusReviewQueue — queue creation', () => {
   beforeEach(resetState)
 
   test('returns queueId and nodeIds on successful insert', async () => {
@@ -175,7 +175,7 @@ describe('generateBlindspotQueue — queue creation', () => {
     ]
     state.insertResult = { data: { queue_id: 'queue-xyz' }, error: null }
 
-    const result = await generateBlindspotQueue('user-1')
+    const result = await generateFocusReviewQueue('user-1')
     expect(result).not.toBeNull()
     expect(result?.queueId).toBe('queue-xyz')
     expect(result?.nodeIds).toContain('node-1')
@@ -191,7 +191,7 @@ describe('generateBlindspotQueue — queue creation', () => {
     state.touchedNodes = [{ topic_id: 'weak-a' }, { topic_id: 'weak-b' }]
     state.insertResult = { data: { queue_id: 'queue-weak-only' }, error: null }
 
-    const result = await generateBlindspotQueue('user-1')
+    const result = await generateFocusReviewQueue('user-1')
     expect(result).not.toBeNull()
     expect(result!.nodeIds).toEqual(['weak-a', 'weak-b'])
   })
@@ -206,7 +206,7 @@ describe('generateBlindspotQueue — queue creation', () => {
     state.touchedNodes = [{ topic_id: 'weak-1' }]
     state.insertResult = { data: { queue_id: 'queue-mixed' }, error: null }
 
-    const result = await generateBlindspotQueue('user-1')
+    const result = await generateFocusReviewQueue('user-1')
     expect(result).not.toBeNull()
     expect(result!.nodeIds).toContain('weak-1')
     expect(result!.nodeIds).toContain('grey-1')
@@ -216,14 +216,14 @@ describe('generateBlindspotQueue — queue creation', () => {
   test('returns null when the insert call returns an error', async () => {
     state.weakNodes = [{ topic_id: 'node-err', current_mastery_weight: 0.2 }]
     state.insertResult = { data: null, error: { message: 'insert constraint violation' } }
-    const result = await generateBlindspotQueue('user-1')
+    const result = await generateFocusReviewQueue('user-1')
     expect(result).toBeNull()
   })
 
   test('returns null when insert data is null', async () => {
     state.weakNodes = [{ topic_id: 'node-null', current_mastery_weight: 0.3 }]
     state.insertResult = { data: null, error: null }
-    const result = await generateBlindspotQueue('user-1')
+    const result = await generateFocusReviewQueue('user-1')
     expect(result).toBeNull()
   })
 })
@@ -231,7 +231,7 @@ describe('generateBlindspotQueue — queue creation', () => {
 // ---------------------------------------------------------------------------
 // 3-node cap
 // ---------------------------------------------------------------------------
-describe('generateBlindspotQueue — caps at 3 target nodes', () => {
+describe('generateFocusReviewQueue — caps at 3 target nodes', () => {
   beforeEach(resetState)
 
   test('nodeIds length is at most 3 when 3 weak nodes provided', async () => {
@@ -242,7 +242,7 @@ describe('generateBlindspotQueue — caps at 3 target nodes', () => {
     ]
     state.insertResult = { data: { queue_id: 'queue-capped' }, error: null }
 
-    const result = await generateBlindspotQueue('user-1')
+    const result = await generateFocusReviewQueue('user-1')
     expect(result).not.toBeNull()
     expect(result!.nodeIds.length).toBeLessThanOrEqual(3)
   })
@@ -263,7 +263,7 @@ describe('generateBlindspotQueue — caps at 3 target nodes', () => {
     state.touchedNodes = [{ topic_id: 'weak-x' }, { topic_id: 'weak-y' }]
     state.insertResult = { data: { queue_id: 'queue-cap-mixed' }, error: null }
 
-    const result = await generateBlindspotQueue('user-1')
+    const result = await generateFocusReviewQueue('user-1')
     expect(result).not.toBeNull()
     expect(result!.nodeIds.length).toBeLessThanOrEqual(3)
   })
@@ -274,7 +274,7 @@ describe('generateBlindspotQueue — caps at 3 target nodes', () => {
     state.touchedNodes = [{ topic_id: 'solo-node' }]
     state.insertResult = { data: { queue_id: 'queue-solo' }, error: null }
 
-    const result = await generateBlindspotQueue('user-1')
+    const result = await generateFocusReviewQueue('user-1')
     expect(result).not.toBeNull()
     expect(result!.nodeIds.length).toBe(1)
     expect(result!.nodeIds[0]).toBe('solo-node')
@@ -293,7 +293,7 @@ describe('generateBlindspotQueue — caps at 3 target nodes', () => {
     state.touchedNodes = [{ topic_id: 'w1' }, { topic_id: 'w2' }]
     state.insertResult = { data: { queue_id: 'queue-full' }, error: null }
 
-    const result = await generateBlindspotQueue('user-1')
+    const result = await generateFocusReviewQueue('user-1')
     expect(result).not.toBeNull()
     expect(result!.nodeIds.length).toBe(3)
     expect(result!.nodeIds).toContain('w1')
@@ -305,7 +305,7 @@ describe('generateBlindspotQueue — caps at 3 target nodes', () => {
 // ---------------------------------------------------------------------------
 // Grey node discovery
 // ---------------------------------------------------------------------------
-describe('generateBlindspotQueue — grey node discovery', () => {
+describe('generateFocusReviewQueue — grey node discovery', () => {
   beforeEach(resetState)
 
   test('only includes untouched leaf nodes as grey nodes', async () => {
@@ -319,7 +319,7 @@ describe('generateBlindspotQueue — grey node discovery', () => {
     state.touchedNodes = [{ topic_id: 'touched-1' }, { topic_id: 'touched-2' }]
     state.insertResult = { data: { queue_id: 'queue-grey' }, error: null }
 
-    const result = await generateBlindspotQueue('user-1')
+    const result = await generateFocusReviewQueue('user-1')
     expect(result).not.toBeNull()
     expect(result!.nodeIds).not.toContain('touched-1')
     expect(result!.nodeIds).not.toContain('touched-2')
@@ -332,7 +332,7 @@ describe('generateBlindspotQueue — grey node discovery', () => {
     state.allLeafNodes = [{ node_id: 'leaf-covered' }]
     state.touchedNodes = [{ topic_id: 'leaf-covered' }]
 
-    const result = await generateBlindspotQueue('user-1')
+    const result = await generateFocusReviewQueue('user-1')
     expect(result).toBeNull()
   })
 })

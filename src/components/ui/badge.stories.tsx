@@ -70,8 +70,8 @@ export const SemanticPresets: Story = {
       <div className="flex flex-wrap gap-2">
         <SessionModeBadge mode="camp" />
         <SessionModeBadge mode="storm" />
-        <SessionModeBadge mode="blindspot" />
-        <SessionModeBadge mode="proof" />
+        <SessionModeBadge mode="focus_review" />
+        <SessionModeBadge mode="full_exam" />
       </div>
       <div className="flex flex-wrap gap-2">
         <MasteryBadge tier="building" />

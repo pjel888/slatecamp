@@ -24,7 +24,7 @@ export interface HeatmapDay {
 
 // ── NextMissionCard ─────────────────────────────────────────────────────────
 
-export type ActionType = 'resume' | 'blindspot' | 'wiki_read' | 'warmup'
+export type ActionType = 'resume' | 'focus_review' | 'wiki_read' | 'warmup'
 
 export interface RecommendedAction {
   type: ActionType

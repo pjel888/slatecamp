@@ -80,8 +80,7 @@ export const SimulationShell = ({
     handlePrevious,
     handleExit,
     handleSubmitAll,
-  } = useQuizShellHandlers({ sessionId, mode: 'fullexam' })
-
+  } = useQuizShellHandlers({ sessionId, mode: 'full_exam' })
   // Actions
   const initSession = useQuizStore((s) => s.initSession)
   const addQuestions = useQuizStore((s) => s.addQuestions)
@@ -159,7 +158,7 @@ export const SimulationShell = ({
   useEffect(() => {
     if (status === 'results' && results) {
       stopTimer()
-      router.push(`/quiz/fullexam/session/${sessionId}/results`)
+      router.push(`/quiz/full_exam/session/${sessionId}/results`)
     }
   }, [status, results, sessionId, router, stopTimer])
 

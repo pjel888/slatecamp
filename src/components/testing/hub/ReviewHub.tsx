@@ -38,7 +38,7 @@ interface RawSession {
   accuracy?: number | null
 }
 
-interface RawBlindspotQueue {
+interface RawFocusReviewQueue {
   queue_id: string
   node_ids: string[]
   question_count: number
@@ -64,7 +64,7 @@ interface ReviewHubProps {
   lastStudyDate: string | null
   completedSessions: RawSession[]
   inProgressSession: RawSession | null
-  blindspotQueues: RawBlindspotQueue[]
+  focusReviewQueues: RawFocusReviewQueue[]
   targetExamDate: string | null
   weakNodes: RawWeakNode[]
   coreSubjects?: { node_id: string; name: string; subject_area: string }[]
@@ -81,71 +81,14 @@ interface HubSignal {
 }
 
 const getModeKey = (session: RawSession): string => {
-  const mode = session.config?.mode
-  if (mode) {
-    const modeMap: Record<string, string> = {
-      focused: 'focus-review',
-      fullexam: 'simulation',
-      extended: 'endurance',
-    }
-    return modeMap[mode] ?? mode
-  }
-
-  const src = session.config?.source
-  if (src) {
-    const map: Record<ModeSource, string> = {
-      camp_mode: 'camp',
-      chill_mode: 'chill',
-      subject_mode: 'subject',
-      focus_review: 'focus-review',
-      custom_session: 'custom',
-      storm_mode: 'storm',
-      proof_simulation: 'simulation',
-      extended_practice: 'endurance',
-      assessment_quiz: 'camp',
-      trail_quiz: 'camp',
-      blindspot_queue: 'focus-review',
-      article_review: 'article-review',
-    }
-    return map[src] ?? 'camp'
-  }
-
-  const testModeMap: Record<string, string> = {
-    camp: 'camp',
-    chill: 'chill',
-    custom: 'custom',
-    storm: 'storm',
-    practice: 'subject',
-    blindspot: 'focus-review',
-    proof_sim: 'simulation',
-    endurance: 'endurance',
-  }
-  return testModeMap[session.test_mode] ?? 'camp'
+  return session.config?.mode ?? session.config?.source ?? session.test_mode ?? 'camp'
 }
 
 const getSessionHref = (session: RawSession): string => {
   const modeKey = getModeKey(session)
-  const modeToRoute: Record<string, string> = {
-    'focus-review': 'focused',
-    focus_review: 'focused',
-    blindspot_queue: 'focused',
-    simulation: 'fullexam',
-    full_exam: 'fullexam',
-    proof_simulation: 'fullexam',
-    endurance: 'extended',
-    extended_practice: 'extended',
-    assessment_quiz: 'camp',
-    trail_quiz: 'camp',
-    camp_mode: 'camp',
-    chill_mode: 'chill',
-    subject_mode: 'subject',
-    custom_session: 'custom',
-    storm_mode: 'storm',
-  }
-  const routeMode = modeToRoute[modeKey] ?? modeKey.replace(/_/g, '-')
   return session.status === 'completed'
-    ? `/quiz/${routeMode}/session/${session.session_id}/results`
-    : `/quiz/${routeMode}/session/${session.session_id}`
+    ? `/quiz/${modeKey}/session/${session.session_id}/results`
+    : `/quiz/${modeKey}/session/${session.session_id}`
 }
 
 const computeSimulationGate = (
@@ -192,7 +135,7 @@ const ReviewHub = ({
   lastStudyDate,
   completedSessions,
   inProgressSession,
-  blindspotQueues,
+  focusReviewQueues,
   targetExamDate,
   weakNodes,
   coreSubjects,
@@ -217,7 +160,7 @@ const ReviewHub = ({
     () => (inProgressSession ? getSessionHref(inProgressSession) : null),
     [inProgressSession],
   )
-  const focusQueue = blindspotQueues[0] ?? null
+  const focusQueue = focusReviewQueues[0] ?? null
   const weakTopicsPreview = useMemo(
     () =>
       weakNodes

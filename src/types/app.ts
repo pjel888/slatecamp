@@ -8,7 +8,7 @@ export type SessionStatus = "in_progress" | "completed" | "abandoned";
 export type ReferenceType = "book" | "code" | "standard" | "article" | "video" | "website";
 export type DifficultyMode = "easy" | "medium" | "hard" | "expert" | "mixed" | "adaptive";
 export type Theme = "light" | "dark" | "system";
-export type TestMode = "camp" | "storm" | "chill" | "custom" | "blindspot" | "proof_sim" | "endurance";
+export type TestMode = "camp" | "storm" | "chill" | "custom" | "focus_review" | "full_exam" | "endurance" | "article_review" | "subject";
 
 // New Core Types (v1.0 Master Schema)
 export interface Discipline {

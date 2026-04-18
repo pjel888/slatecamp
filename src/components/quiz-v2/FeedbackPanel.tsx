@@ -18,7 +18,7 @@ const SocraticExplorer = lazy(() =>
   import('./SocraticExplorer').then((m) => ({ default: m.SocraticExplorer })),
 )
 
-const SOCRATIC_MODES: QuizMode[] = ['camp', 'focused', 'subject', 'chill']
+const SOCRATIC_MODES: QuizMode[] = ['camp', 'focus_review', 'subject', 'chill']
 
 const ERROR_HEADING_MAP: Record<Exclude<ErrorCategory, 'lucky_guess'>, string> = {
   knowledge_gap: "Here's what to know",
@@ -254,11 +254,11 @@ export const FeedbackPanel = ({
             onClick={onNext}
             aria-disabled={!nextReady}
             className={cn(
-              'transition-all duration-200',
-              !nextReady && 'cursor-not-allowed opacity-50',
+              'transition-all duration-300 min-w-[80px]',
+              !nextReady && 'cursor-not-allowed opacity-50 grayscale animate-pulse',
             )}
           >
-            {nextActionLabel}
+            {nextReady ? nextActionLabel : `Wait (${countdownSeconds}s)`}
           </Button>
 
           {showSocraticButton && (

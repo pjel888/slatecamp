@@ -186,7 +186,7 @@ export const generateRecommendations = async (
         description: `You answered ${Math.round(weakestTopic.accuracy * 100)}% correctly on this topic. A focused session can strengthen your understanding.`,
         action: {
           type: 'start_session',
-          href: `${ROUTES.quiz.setup('focused')}?topics=${weakestTopic.topicId}`,
+          href: `${ROUTES.quiz.setup('focus_review')}?topics=${weakestTopic.topicId}`,
         },
       })
     }

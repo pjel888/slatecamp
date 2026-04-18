@@ -24,7 +24,7 @@ Current route-handler families:
 - `auth/callback`
 
 Risk:
-- route handlers cross env/auth/payment/external boundaries and need explicit validation and docs
+- route handlers cross env/auth/payment/external boundaries and need explicit validation and docs. **CAGE behavioral traces now use strict Zod schemas to ensure data integrity at the API boundary.**
 
 ## Server actions
 

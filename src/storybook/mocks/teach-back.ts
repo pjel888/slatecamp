@@ -21,7 +21,7 @@ export interface TeachBackSubmission {
   submission_id: string
   user_id: string
   topic_id: string
-  entry_point: 'wiki' | 'blindspot' | 'trail'
+  entry_point: 'wiki' | 'focus_review' | 'trail'
   prompt_text: string
   student_response: string
   evaluation_result: TeachBackEvaluation | Record<string, never>
@@ -45,7 +45,7 @@ export const getTeachBackCriteria = async (
 export const submitTeachBack = async (params: {
   topicId: string
   topicName: string
-  entryPoint: 'wiki' | 'blindspot' | 'trail'
+  entryPoint: 'wiki' | 'focus_review' | 'trail'
   promptText: string
   studentResponse: string
   trailDayId?: string

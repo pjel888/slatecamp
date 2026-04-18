@@ -34,7 +34,7 @@ const DrillsContent = async () => {
   const [
     { data: sessions },
     { data: stats },
-    { data: blindspotQueues },
+    { data: focusReviewQueues },
     { data: profile },
     { data: weakNodes },
     { data: coreSubjectsRaw },
@@ -54,7 +54,7 @@ const DrillsContent = async () => {
       .eq('user_id', user.id)
       .maybeSingle(),
     supabase
-      .from('blindspot_queues')
+      .from('focus_review_queues')
       .select('queue_id, node_ids, question_count, status, pre_queue_mastery')
       .eq('user_id', user.id)
       .eq('status', 'pending')
@@ -107,7 +107,7 @@ const DrillsContent = async () => {
       lastStudyDate={stats?.last_study_date ?? null}
       completedSessions={completedSessions ?? []}
       inProgressSession={inProgressSession ?? null}
-      blindspotQueues={blindspotQueues ?? []}
+      focusReviewQueues={focusReviewQueues ?? []}
       targetExamDate={profile?.target_exam_date ?? null}
       weakNodes={weakNodes ?? []}
       coreSubjects={coreSubjects}

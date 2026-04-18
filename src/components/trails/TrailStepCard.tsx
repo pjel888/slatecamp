@@ -5,7 +5,7 @@
  *
  * The atomic unit of the Camp Trail day view. Renders a single step
  * with its type badge, title, time estimate, sleep-aware label,
- * blindspot priority flag, taxonomy coverage, and CTA button.
+ * focus review priority flag, taxonomy coverage, and CTA button.
  *
  * Supports three visual states: pending, complete, and optional+pending.
  */
@@ -13,7 +13,7 @@
 import { useRouter } from 'next/navigation'
 import { Check, Clock, Timer } from '@phosphor-icons/react/dist/ssr'
 import { SleepAwareLabel } from '@/components/trails/SleepAwareLabel'
-import { BlindspotPriorityFlag } from '@/components/trails/BlindspotPriorityFlag'
+import { FocusReviewPriorityFlag } from '@/components/trails/FocusReviewPriorityFlag'
 import { STEP_TYPE_CONFIG } from '@/types/app'
 import type { TrailStep, TrailStepType } from '@/types/app'
 
@@ -23,7 +23,7 @@ interface TrailStepCardProps {
   trailSlug: string
   onComplete: (stepId: string) => void
   isPending?: boolean
-  blindspotFlagged?: boolean
+  focusReviewFlagged?: boolean
   userStudyWindow?: 'morning' | 'evening' | 'both' | 'any'
 }
 
@@ -40,7 +40,7 @@ const TrailStepCard = ({
   trailSlug,
   onComplete,
   isPending = false,
-  blindspotFlagged = false,
+  focusReviewFlagged = false,
   userStudyWindow = 'any',
 }: TrailStepCardProps) => {
   const router = useRouter()
@@ -107,10 +107,10 @@ const TrailStepCard = ({
         />
       </div>
 
-      {/* 4. BlindspotPriorityFlag */}
-      {blindspotFlagged && (
+      {/* 4. FocusReviewPriorityFlag */}
+      {focusReviewFlagged && (
         <div className="mt-3">
-          <BlindspotPriorityFlag flaggedNodeCount={step.target_node_ids.length} />
+          <FocusReviewPriorityFlag flaggedNodeCount={step.target_node_ids.length} />
         </div>
       )}
 

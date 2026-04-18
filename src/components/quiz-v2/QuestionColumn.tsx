@@ -4,7 +4,7 @@ import { memo } from 'react'
 import type { QuestionForClient, QuizMode } from '@/types/quiz-config'
 import { HintButton } from './HintButton'
 
-const FORMATIVE_MODES = new Set<QuizMode>(['camp', 'chill', 'subject', 'focused'])
+const FORMATIVE_MODES = new Set<QuizMode>(['camp', 'chill', 'subject', 'focus_review'])
 
 interface QuestionColumnProps {
   question: QuestionForClient

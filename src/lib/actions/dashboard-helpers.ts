@@ -30,8 +30,8 @@ export const MODE_NAMES: Record<string, string> = {
   timed: 'Timed Quiz',
   practice: 'Practice Quiz',
   custom: 'Custom Quiz',
-  blindspot: 'Focus Review',
-  proof_sim: 'Full Exam Simulation',
+  focus_review: 'Focus Review',
+  full_exam: 'Full Exam Simulation',
   endurance: 'Design Endurance Training',
 }
 
@@ -42,7 +42,7 @@ export const MODE_BADGES: Record<string, string> = {
   practice: 'PRACTICE',
   chill: 'CHILL',
   custom: 'CUSTOM',
-  blindspot: 'FOCUS',
+  focus_review: 'FOCUS',
 }
 
 export const MODE_TOOLTIPS: Record<string, string> = {

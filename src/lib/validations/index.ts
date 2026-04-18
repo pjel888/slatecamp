@@ -112,7 +112,7 @@ export const UUIDSchema = z.string().uuid('Must be a valid UUID')
 
 export const QuizSessionIdSchema = UUIDSchema
 
-export const TestModeSchema = z.enum(['camp', 'storm', 'blindspot', 'proof_sim', 'chill', 'timed', 'practice', 'custom', 'endurance'])
+export const TestModeSchema = z.enum(['camp', 'storm', 'focus_review', 'full_exam', 'chill', 'subject', 'custom', 'endurance', 'article_review'])
 
 export const SessionStatusSchema = z.enum(['in_progress', 'completed', 'abandoned'])
 

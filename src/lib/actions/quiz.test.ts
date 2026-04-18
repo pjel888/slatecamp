@@ -15,13 +15,13 @@ describe("Pedagogical Algorithms", () => {
 
   test("Mode-aware EMA alpha weighting", () => {
     const getAlpha = (mode: string) => {
-      if (mode === 'proof_sim') return 0.6;
+      if (mode === 'full_exam') return 0.6;
       if (mode === 'storm') return 0.4;
       if (mode === 'chill') return 0.1;
       return 0.2;
     };
 
-    expect(getAlpha('proof_sim')).toBe(0.6); // 3x Camp
+    expect(getAlpha('full_exam')).toBe(0.6); // 3x Camp
     expect(getAlpha('chill')).toBe(0.1);     // 0.5x Camp
     expect(getAlpha('storm')).toBe(0.4);     // 2x Camp
   });

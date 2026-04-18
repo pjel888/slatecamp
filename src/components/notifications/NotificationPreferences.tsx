@@ -27,7 +27,8 @@ const PREFERENCE_GROUPS: PreferenceGroup[] = [
     items: [
       { key: 'score_changes', title: 'Score changes', description: 'When your Readiness Score moves' },
       { key: 'trail_ready', title: 'Trail day ready', description: 'When your next Camp Trail day unlocks' },
-      { key: 'blindspot', title: 'Focus Review alerts', description: 'When neglected topics are detected' },
+      { key: 'focus_review', title: 'Focus Review alerts', description: 'When neglected topics are detected' },
+
       { key: 'milestones', title: 'Milestones', description: 'Zone transitions and Full Exam Simulation' },
     ],
   },

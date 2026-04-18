@@ -1,18 +1,18 @@
 <!-- Parent: ../../../AGENTS.md -->
 <!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
 
-# blindspot
+# full-exam
 
 <!-- REALITY-REFRESH:START -->
 ## 2026-04-16 Reality Refresh
 
-**Scope:** `src/lib/blindspot/` subtree
+**Scope:** `src/lib/full-exam/` subtree
 
-**Current snapshot:** 0 directories and 2 files beneath this scope (excluding this `AGENTS.md`).
+**Current snapshot:** 0 directories and 1 files beneath this scope (excluding this `AGENTS.md`).
 
 **Top local directories:** none
 
-**Top local files:** `generate-queue.test.ts`, `generate-queue.ts`
+**Top local files:** `gate.ts`
 
 ### What agents must do here
 - Inspect live call sites, tests, schema/config dependencies, and adjacent helpers before editing this logic layer.

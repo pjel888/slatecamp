@@ -14,11 +14,11 @@ export const TEMPORAL_BOUNDS: Record<QuizMode, TemporalBounds> = {
   camp:           { minMs: 200, maxMs: 10000 },
   chill:          { minMs: 200, maxMs: 15000 },  // most relaxed
   subject:        { minMs: 200, maxMs: 10000 },
-  focused:        { minMs: 200, maxMs: 10000 },
+  focus_review:   { minMs: 200, maxMs: 10000 },
   custom:         { minMs: 200, maxMs: 10000 },
   storm:          { minMs: 150, maxMs: 5000 },   // tighter for exam mode
-  fullexam:       { minMs: 150, maxMs: 5000 },
-  extended:       { minMs: 150, maxMs: 8000 },
+  full_exam:      { minMs: 150, maxMs: 5000 },
+  endurance:      { minMs: 150, maxMs: 8000 },
   article_review: { minMs: 200, maxMs: 10000 },
 }
 

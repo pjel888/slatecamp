@@ -18,19 +18,45 @@ import { computeScoreVelocity } from '@/lib/readiness/velocity'
 export const recomputeAndSaveReadinessScore = async (userId: string): Promise<void> => {
   const supabase = await createClient()
 
-  // 1. Get the discipline for this user
-  const { data: statsData } = await supabase
-    .from('user_global_stats')
-    .select('current_discipline_id')
-    .eq('user_id', userId)
-    .single()
+  // 1. Get the discipline and mastery data in parallel
+  const [{ data: statsData }, { data: masteryRows }] = await Promise.all([
+    supabase
+      .from('user_global_stats')
+      .select('current_discipline_id')
+      .eq('user_id', userId)
+      .single(),
+    supabase
+      .from('user_node_mastery')
+      .select(`
+        topic_id,
+        current_mastery_weight,
+        total_attempts,
+        total_correct,
+        last_encountered,
+        consecutive_correct_streak,
+        highest_difficulty_correct,
+        has_bloom_apply_correct,
+        has_bloom_analyze_correct,
+        distinct_questions_seen
+      `)
+      .eq('user_id', userId)
+  ])
 
   if (!statsData?.current_discipline_id) return
 
   const disciplineId = statsData.current_discipline_id
 
-  // 2, 3, 4. Fetch tree data in parallel
-  const [totalLeafCountRes, subjectsRes, treeNodesRes] = await Promise.all([
+  // 2-6. Fetch tree structure, counts, and touched node metadata in one massive parallel block
+  const touchedTopicIds = masteryRows?.map(r => r.topic_id) ?? []
+  
+  const [
+    totalLeafCountRes, 
+    subjectsRes, 
+    treeNodesRes, 
+    leafNodesRes, 
+    taxonomyMetaRes,
+    crossRefsRes
+  ] = await Promise.all([
     supabase
       .from('taxonomy_tree')
       .select('node_id', { count: 'exact', head: true })
@@ -54,6 +80,22 @@ export const recomputeAndSaveReadinessScore = async (userId: string): Promise<vo
       .eq('is_cross_ref_only', false)
       .is('deprecated_at', null)
       .not('lea_id', 'is', null),
+    supabase
+      .from('taxonomy_tree')
+      .select('node_id')
+      .eq('discipline_id', disciplineId)
+      .eq('is_leaf', true)
+      .eq('is_cross_ref_only', false)
+      .is('deprecated_at', null)
+      .not('lea_id', 'is', null),
+    supabase
+      .from('taxonomy_tree')
+      .select('node_id, lea_id, bloom_level, difficulty, node_type, exam_frequency, is_cross_ref_only, deprecated_at')
+      .in('node_id', touchedTopicIds),
+    supabase
+      .from('taxonomy_cross_references')
+      .select('target_node_id')
+      .eq('relationship_type', 'law_applies_to')
   ])
 
   const totalLeafCount = totalLeafCountRes.count
@@ -61,6 +103,9 @@ export const recomputeAndSaveReadinessScore = async (userId: string): Promise<vo
   const allTreeNodes = (treeNodesRes.data ?? []) as Array<{
     node_id: string; parent_id: string | null; level: number
   }>
+  const leafNodes = leafNodesRes.data
+  const taxonomyMeta = taxonomyMetaRes.data
+  const crossRefs = crossRefsRes.data
 
   if (!totalLeafCount || !subjects?.length) return
 
@@ -93,7 +138,7 @@ export const recomputeAndSaveReadinessScore = async (userId: string): Promise<vo
     }
   }
 
-  // Count leaf nodes per subject (using lea_id of the subject)
+  // Count leaf nodes per subject
   const subjectNodeIdToAleId = new Map<string, string>()
   for (const s of subjects) {
     if (s.lea_id) subjectNodeIdToAleId.set(s.node_id, s.lea_id)
@@ -103,16 +148,6 @@ export const recomputeAndSaveReadinessScore = async (userId: string): Promise<vo
   for (const s of subjects) {
     if (s.lea_id) subjectLeafCounts[s.lea_id] = 0
   }
-
-  // Count leaves (is_leaf nodes) per subject
-  const { data: leafNodes } = await supabase
-    .from('taxonomy_tree')
-    .select('node_id')
-    .eq('discipline_id', disciplineId)
-    .eq('is_leaf', true)
-    .eq('is_cross_ref_only', false)
-    .is('deprecated_at', null)
-    .not('lea_id', 'is', null)
 
   for (const leaf of (leafNodes ?? [])) {
     const subjectId = nodeToSubject.get(leaf.node_id)
@@ -124,25 +159,7 @@ export const recomputeAndSaveReadinessScore = async (userId: string): Promise<vo
     }
   }
 
-  // 5. Get all touched nodes with mastery data
-  const { data: masteryRows } = await supabase
-    .from('user_node_mastery')
-    .select(`
-      topic_id,
-      current_mastery_weight,
-      total_attempts,
-      total_correct,
-      last_encountered,
-      consecutive_correct_streak,
-      highest_difficulty_correct,
-      has_bloom_apply_correct,
-      has_bloom_analyze_correct,
-      distinct_questions_seen
-    `)
-    .eq('user_id', userId)
-
   if (!masteryRows?.length) {
-    // No mastery yet — score stays at 0
     await supabase
       .from('user_global_stats')
       .update({
@@ -153,13 +170,6 @@ export const recomputeAndSaveReadinessScore = async (userId: string): Promise<vo
       .eq('user_id', userId)
     return
   }
-
-  // 6. Fetch taxonomy metadata for all touched nodes in one query
-  const touchedTopicIds = masteryRows.map(r => r.topic_id)
-  const { data: taxonomyMeta } = await supabase
-    .from('taxonomy_tree')
-    .select('node_id, lea_id, bloom_level, difficulty, node_type, exam_frequency, is_cross_ref_only, deprecated_at')
-    .in('node_id', touchedTopicIds)
 
   const taxMap = new Map<string, {
     lea_id: string | null
@@ -222,7 +232,7 @@ export const recomputeAndSaveReadinessScore = async (userId: string): Promise<vo
     subjectLeafCounts,
   )
 
-  // 9. Build sub_scores JSONB for DB storage
+  // 9. Build sub_scores
   const subScoresForDB: Record<string, any> = {
     ...Object.fromEntries(result.subScores.map(s => [s.lea_id, {
       score: s.score,
@@ -243,14 +253,7 @@ export const recomputeAndSaveReadinessScore = async (userId: string): Promise<vo
     },
   }
 
-  // 9b. Project Laws & Codes sub-score from cross-referenced nodes.
-  // Laws has is_cross_ref_only=true so it's excluded from the global score,
-  // but we include it in sub_scores for display purposes.
-  const { data: crossRefs } = await supabase
-    .from('taxonomy_cross_references')
-    .select('target_node_id')
-    .eq('relationship_type', 'law_applies_to')
-
+  // 9b. Laws & Codes sub-score projection
   if (crossRefs && crossRefs.length > 0) {
     const targetSubtopicIds = [...new Set(crossRefs.map(cr => cr.target_node_id))]
     const { data: targetLeaves } = await supabase
@@ -263,7 +266,6 @@ export const recomputeAndSaveReadinessScore = async (userId: string): Promise<vo
 
     if (targetLeaves && targetLeaves.length > 0) {
       const targetLeafIds = new Set(targetLeaves.map(l => l.node_id))
-      // Filter mastery nodes that belong to cross-ref targets
       const lawsNodes = nodeInputs.filter(n => targetLeafIds.has(n.topic_id))
       const touchedCount = lawsNodes.length
       const nodeCount = targetLeafIds.size
@@ -281,13 +283,13 @@ export const recomputeAndSaveReadinessScore = async (userId: string): Promise<vo
         greyCount: nodeCount - touchedCount,
         thinCoverageCount: lawsNodes.filter(n => n.distinct_questions_seen < 5).length,
         belowFloor: projectedScore < 50,
-        projected: true, // flag indicating this is a cross-ref projection
+        projected: true,
       }
     }
   }
 
-  // 10. Write back to user_global_stats
-  await supabase
+  // 10-11. Grouped updates
+  const updateStats = supabase
     .from('user_global_stats')
     .update({
       global_readiness_score: result.overallScore,
@@ -296,28 +298,31 @@ export const recomputeAndSaveReadinessScore = async (userId: string): Promise<vo
     })
     .eq('user_id', userId)
 
-  // 11. Score Velocity (non-critical — fire-and-forget)
-  try {
-    const { data: recentSnapshots } = await supabase
-      .from('readiness_score_snapshots')
-      .select('score, computed_at')
-      .eq('user_id', userId)
-      .order('computed_at', { ascending: false })
-      .limit(30)
-
-    if (recentSnapshots && recentSnapshots.length >= 2) {
-      const { velocity } = computeScoreVelocity(
-        recentSnapshots as Array<{ score: number; computed_at: string }>,
-      )
-      await supabase
-        .from('user_global_stats')
-        .update({
-          score_velocity_7d: velocity,
-          score_velocity_updated_at: new Date().toISOString(),
-        })
+  const updateVelocity = (async () => {
+    try {
+      const { data: recentSnapshots } = await supabase
+        .from('readiness_score_snapshots')
+        .select('score, computed_at')
         .eq('user_id', userId)
+        .order('computed_at', { ascending: false })
+        .limit(30)
+
+      if (recentSnapshots && recentSnapshots.length >= 2) {
+        const { velocity } = computeScoreVelocity(
+          recentSnapshots as Array<{ score: number; computed_at: string }>,
+        )
+        await supabase
+          .from('user_global_stats')
+          .update({
+            score_velocity_7d: velocity,
+            score_velocity_updated_at: new Date().toISOString(),
+          })
+          .eq('user_id', userId)
+      }
+    } catch {
+      // Velocity non-critical
     }
-  } catch {
-    // Velocity is non-critical — never block score computation
-  }
+  })()
+
+  await Promise.all([updateStats, updateVelocity])
 }

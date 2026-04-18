@@ -18,10 +18,10 @@ const SLIDE_COUNT: Record<QuizMode, number> = {
   camp: 2,
   chill: 2,
   storm: 2,
-  fullexam: 1,
-  extended: 2,
+  full_exam: 1,
+  endurance: 2,
   subject: 2,
-  focused: 2,
+  focus_review: 2,
   custom: 3,
   article_review: 1,
 }
@@ -51,15 +51,15 @@ const SetupFlow = ({ mode, subjects, readinessScore = 0, onBegin, onBack }: Setu
   const [advancedConfig, setAdvancedConfig] = useState<AdvancedConfig | null>(null)
   const [interleaveEnabled, setInterleaveEnabled] = useState(false)
 
-  // Pressure level state (storm/fullexam modes)
-  const hasPressureSelector = mode === 'storm' || mode === 'fullexam'
+  // Pressure level state (storm/full_exam modes)
+  const hasPressureSelector = mode === 'storm' || mode === 'full_exam'
   const maxUnlocked = getUnlockedPressureLevel(readinessScore)
   const [pressureLevel, setPressureLevel] = useState<PressureLevel>(
-    hasPressureSelector ? Math.min(maxUnlocked, (mode === 'fullexam' ? 3 : 2)) as PressureLevel : 0,
+    hasPressureSelector ? Math.min(maxUnlocked, (mode === 'full_exam' ? 3 : 2)) as PressureLevel : 0,
   )
 
-  // Simulation checklist gate (fullexam at pressure level 3)
-  const needsChecklist = mode === 'fullexam' && pressureLevel === 3
+  // Simulation checklist gate (full_exam at pressure level 3)
+  const needsChecklist = mode === 'full_exam' && pressureLevel === 3
   const [checklistPassed, setChecklistPassed] = useState(false)
 
   // Interleaving only makes sense when specific topics are selected (otherwise there's nothing to interleave against)
@@ -79,7 +79,7 @@ const SetupFlow = ({ mode, subjects, readinessScore = 0, onBegin, onBack }: Setu
   /** Called from slide 1 "Begin" — either finishes or advances */
   const handleSlide1Begin = () => {
     if (slideCount === 1) {
-      // For fullexam at pressure 3, require checklist before finalizing
+      // For full_exam at pressure 3, require checklist before finalizing
       if (needsChecklist && !checklistPassed) {
         setChecklistPassed(false)
         transitionTo(1) // Show checklist as "slide 1"
@@ -154,7 +154,7 @@ const SetupFlow = ({ mode, subjects, readinessScore = 0, onBegin, onBack }: Setu
       overrides.interleave_ratio = 0.3
     }
 
-    // Pressure level — storm/fullexam modes
+    // Pressure level — storm/full_exam modes
     if (hasPressureSelector) {
       overrides.pressure_level = pressureLevel
     }
@@ -228,7 +228,7 @@ const SetupFlow = ({ mode, subjects, readinessScore = 0, onBegin, onBack }: Setu
               onInterleaveChange={setInterleaveEnabled}
             />
 
-            {/* Pressure level selector for storm/fullexam */}
+            {/* Pressure level selector for storm/full_exam */}
             {hasPressureSelector && (
               <PressureLevelSelector
                 currentRS={readinessScore}
@@ -239,12 +239,12 @@ const SetupFlow = ({ mode, subjects, readinessScore = 0, onBegin, onBack }: Setu
           </div>
         )}
 
-        {/* Simulation checklist (fullexam + pressure 3) replaces slide 1 */}
+        {/* Simulation checklist (full_exam + pressure 3) replaces slide 1 */}
         {slideIndex === 1 && needsChecklist && !checklistPassed && (
           <SimulationChecklist onReady={handleChecklistReady} />
         )}
 
-        {/* Normal slide 1 for multi-slide modes (subject/focused/custom) */}
+        {/* Normal slide 1 for multi-slide modes (subject/focus_review/custom) */}
         {slideIndex === 1 && !(needsChecklist && !checklistPassed) && (
           <IntroSlide2
             mode={mode}

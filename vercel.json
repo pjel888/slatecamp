@@ -1,7 +1,7 @@
 {
   "crons": [
     {
-      "path": "/api/cron/blindspot-scan",
+      "path": "/api/cron/focus-review-scan",
       "schedule": "0 16 * * *"
     },
     {

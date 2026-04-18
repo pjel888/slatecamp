@@ -79,13 +79,13 @@ export const getSimulationTrajectory = async (): Promise<AnalyticsResult<Simulat
 const fetchSimulationTrajectory = async (userId: string): Promise<SimulationPoint[]> => {
   const supabase = await createServiceClient()
 
-  // Fetch completed storm / proof_sim sessions with 50+ questions
+  // Fetch completed storm / full_exam sessions with 50+ questions
   const { data: sessions } = await supabase
     .from('quiz_sessions')
     .select('session_id, completed_at, test_mode, question_ids')
     .eq('user_id', userId)
     .eq('status', 'completed')
-    .in('test_mode', ['storm', 'proof_sim'])
+    .in('test_mode', ['storm', 'full_exam'])
     .order('completed_at', { ascending: true })
 
   if (!sessions?.length) return []

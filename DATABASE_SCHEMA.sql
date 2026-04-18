@@ -369,8 +369,8 @@ CREATE TABLE quiz_sessions (
   updated_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
   completed_at                             TIMESTAMPTZ,
   pre_session_confidence_ratings           JSONB DEFAULT '{}'::JSONB,
-  is_proof_simulation                      BOOLEAN DEFAULT FALSE,
-  is_endurance_session                     BOOLEAN DEFAULT FALSE,
+  is_full_exam                             BOOLEAN DEFAULT FALSE,
+  is_endurance                             BOOLEAN DEFAULT FALSE,
   accuracy_by_block                        JSONB DEFAULT '[]'::JSONB,
   session_discovery                        JSONB,
   mastery_snapshot_at_start                JSONB
@@ -539,12 +539,12 @@ CREATE TABLE user_global_stats (
   is_retaker                               BOOLEAN NOT NULL DEFAULT FALSE,
   onboarding_retaker_framing_shown         BOOLEAN NOT NULL DEFAULT FALSE,
   assessment_started_at                    TIMESTAMPTZ,
-  proof_simulation_unlocked_at             TIMESTAMPTZ,
+  full_exam_unlocked_at                    TIMESTAMPTZ,
   last_active_date                         DATE,
   readiness_sub_scores                     JSONB NOT NULL DEFAULT '{}'::JSONB,
-  simulation_count                         INTEGER DEFAULT 0,
-  last_simulation_score                    NUMERIC(5,2),
-  best_simulation_score                    NUMERIC(5,2)
+  full_exam_count                          INTEGER DEFAULT 0,
+  last_full_exam_score                     NUMERIC(5,2),
+  best_full_exam_score                     NUMERIC(5,2)
 );
 
 -- ─── Table: user_endurance_profiles ─────────────────────────────────────
@@ -567,8 +567,8 @@ CREATE TABLE user_endurance_profiles (
   updated_at                               TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 
--- ─── Table: blindspot_queues ────────────────────────────────────────────
-CREATE TABLE blindspot_queues (
+-- ─── Table: focus_review_queues ──────────────────────────────────────────
+CREATE TABLE focus_review_queues (
   queue_id                                 UUID NOT NULL DEFAULT gen_random_uuid(),
   user_id                                  UUID NOT NULL,
   session_id                               UUID,
@@ -753,7 +753,7 @@ CREATE TABLE readiness_score_snapshots (
   sub_scores                               JSONB NOT NULL DEFAULT '{}'::JSONB,
   computed_at                              TIMESTAMPTZ NOT NULL DEFAULT now(),
   session_id                               UUID,
-  is_proof_simulation                      BOOLEAN NOT NULL DEFAULT FALSE,
+  is_full_exam                             BOOLEAN NOT NULL DEFAULT FALSE,
   analysis_available_at                    TIMESTAMPTZ
 );
 
@@ -958,7 +958,7 @@ CREATE TABLE notification_preferences (
   user_id                                  UUID NOT NULL,
   score_changes                            BOOLEAN NOT NULL DEFAULT TRUE,
   trail_ready                              BOOLEAN NOT NULL DEFAULT TRUE,
-  blindspot                                BOOLEAN NOT NULL DEFAULT TRUE,
+  focus_review                             BOOLEAN NOT NULL DEFAULT TRUE,
   milestones                               BOOLEAN NOT NULL DEFAULT TRUE,
   campfire                                 BOOLEAN NOT NULL DEFAULT TRUE,
   content_updates                          BOOLEAN NOT NULL DEFAULT TRUE,

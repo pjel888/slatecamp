@@ -31,7 +31,7 @@ const meta = {
     },
   },
   args: {
-    practiceHref: '/dashboard/drills?mode=focused',
+    practiceHref: '/dashboard/drills?mode=focus_review',
     practiceLabel: 'Review this topic',
     nodeId: 'storybook-topic',
     articleId: wikiHeaderFixture.articleId,

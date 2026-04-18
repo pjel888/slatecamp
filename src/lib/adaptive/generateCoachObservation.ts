@@ -14,9 +14,9 @@ import type {
 //
 //                     Correct         Incorrect
 // High Confidence    ✅ Mastery      ⚠️ Overconfidence
-// Low Confidence     🔍 Fragile     📌 Blindspot
+// Low Confidence     🔍 Fragile     📌 Focus Review
 
-type QuadrantLabel = 'mastery' | 'overconfidence' | 'fragile' | 'blindspot'
+type QuadrantLabel = 'mastery' | 'overconfidence' | 'fragile' | 'focus_review'
 
 function classifyQuadrant(
   confidence: ConfidenceClassification,
@@ -26,7 +26,7 @@ function classifyQuadrant(
   if (isHighConf && isCorrect) return 'mastery'
   if (isHighConf && !isCorrect) return 'overconfidence'
   if (!isHighConf && isCorrect) return 'fragile'
-  return 'blindspot'
+  return 'focus_review'
 }
 
 // ─── Coach Observation Generator ─────────────────────────────────────────────
@@ -64,18 +64,19 @@ export function generateCoachObservation(
   const mastery = quadrants.filter((q) => q.quadrant === 'mastery')
   const overconfident = quadrants.filter((q) => q.quadrant === 'overconfidence')
   const fragile = quadrants.filter((q) => q.quadrant === 'fragile')
-  const blindspots = quadrants.filter((q) => q.quadrant === 'blindspot')
+  const focus_reviews = quadrants.filter((q) => q.quadrant === 'focus_review')
 
   // Determine signal strength
   const totalClassified = items.length
   const strongSignalThreshold = 0.6 // At least 60% of items have clear classification
-  const classifiedCount = mastery.length + overconfident.length + fragile.length + blindspots.length
+  const classifiedCount = mastery.length + overconfident.length + fragile.length + focus_reviews.length
   const signalStrength: CoachObservation['signalStrength'] =
     classifiedCount / totalClassified >= strongSignalThreshold
       ? 'strong'
       : classifiedCount / totalClassified >= 0.3
         ? 'moderate'
         : 'insufficient'
+
 
   if (signalStrength === 'insufficient') return null
 
@@ -110,11 +111,11 @@ export function generateCoachObservation(
     topics.forEach((t) => recommendations.push({ topicName: t, action: 'reinforce' }))
   }
 
-  // Blindspots
-  if (blindspots.length >= 2) {
-    const topics = [...new Set(blindspots.map((b) => b.topicName))].slice(0, 2)
+  // Focus Reviews
+  if (focus_reviews.length >= 2) {
+    const topics = [...new Set(focus_reviews.map((b) => b.topicName))].slice(0, 2)
     lines.push(
-      `There are ${blindspots.length} items where you were unsure and got them wrong — these are your growth areas.`,
+      `There are ${focus_reviews.length} items where you were unsure and got them wrong — these are your growth areas.`,
     )
     topics.forEach((t) => recommendations.push({ topicName: t, action: 'revisit' }))
   }
