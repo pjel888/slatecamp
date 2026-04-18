@@ -5,6 +5,7 @@ import {
 } from '@/lib/entitlements/resolve-role'
 import {
   canAccessAdminCmsForRole,
+  canManageContentForRole,
   canManageUsersForRole,
   canReviewContentForRole,
 } from '@/lib/entitlements/policy'
@@ -54,7 +55,8 @@ export async function isSuperAdmin(): Promise<boolean> {
  * Check if user can manage content (create/edit/delete questions, wiki, assets)
  */
 export async function canManageContent(): Promise<boolean> {
-  return isAdmin()
+  const resolution = await getResolution()
+  return canManageContentForRole(resolution.normalizedRole)
 }
 
 /**

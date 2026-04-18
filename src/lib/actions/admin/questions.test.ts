@@ -135,6 +135,24 @@ describe('admin/questions', () => {
     ).rejects.toThrow('article_id is required')
   })
 
+  test('rejects question mutations when manage permission is denied', async () => {
+    canManageContentMock.mockResolvedValueOnce(false)
+
+    await expect(
+      createQuestion({
+        text: 'Question',
+        options: [
+          { text: 'A' },
+          { text: 'B' },
+          { text: 'C' },
+          { text: 'D' },
+        ],
+        topic_id: 'topic-1',
+        article_id: 'article-1',
+      } as any),
+    ).rejects.toThrow('Unauthorized: insufficient permissions')
+  })
+
   test('creates a standard question with canonical option shape and article ownership', async () => {
     const result = await createQuestion({
       text: 'Question',

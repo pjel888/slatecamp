@@ -37,6 +37,15 @@ const OVERRIDE_WRITE_ROLES: ReadonlySet<CanonicalRole> = new Set([
 
 const CEO_PORTAL_ROLES: ReadonlySet<CanonicalRole> = new Set(['owner', 'super_admin', 'ceo'])
 
+const MANAGE_CONTENT_ROLES: ReadonlySet<CanonicalRole> = new Set([
+  'owner',
+  'super_admin',
+  'content_admin',
+  'admin',
+  'developer',
+  'ceo',
+])
+
 const MANAGE_USERS_ROLES: ReadonlySet<CanonicalRole> = new Set(['owner', 'super_admin'])
 
 export const canSeeDevToolbarForRole = (role: CanonicalRole): boolean =>
@@ -67,6 +76,9 @@ export const canReviewContentForRole = (role: CanonicalRole): boolean =>
   role === 'admin' ||
   role === 'developer' ||
   role === 'ceo'
+
+export const canManageContentForRole = (role: CanonicalRole): boolean =>
+  MANAGE_CONTENT_ROLES.has(role)
 
 export const canManageUsersForRole = (role: CanonicalRole): boolean =>
   MANAGE_USERS_ROLES.has(role)
