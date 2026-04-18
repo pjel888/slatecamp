@@ -28,6 +28,7 @@ const QuestionBankPage = async ({ searchParams }: QuestionBankPageProps) => {
       defaultViewMode="questions"
       defaultSearchQuery={search || ''}
       defaultQuestionFilter={filter || ''}
+      indexBasePath={ROUTES.admin.knowledgeQuestions}
     />
   )
 }

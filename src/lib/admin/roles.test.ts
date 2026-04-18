@@ -150,7 +150,10 @@ describe('Admin Roles', () => {
       expect(await isSuperAdmin()).toBe(false)
     })
 
-    test('canManageContent allows super_admin and owner', async () => {
+    test('canManageContent excludes reviewer-only roles', async () => {
+      mockRole('sme_reviewer')
+      expect(await canManageContent()).toBe(false)
+
       mockRole('super_admin')
       expect(await canManageContent()).toBe(true)
 

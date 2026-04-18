@@ -18,6 +18,7 @@ import { BulkActionBar } from '@/components/admin/BulkActionBar'
 import { DeleteArticleModal } from '@/components/admin/DeleteArticleModal'
 import { bulkDeleteArticles } from '@/lib/actions/admin/bulk'
 import { toast } from '@/lib/hooks/use-toast'
+import { buildContentEditorIndexHref } from './content-editor-index-routing'
 
 // ─── Types ───────────────────────────────────────────────────
 
@@ -59,6 +60,7 @@ interface ContentEditorIndexProps {
   defaultViewMode?: ViewMode
   defaultSearchQuery?: string
   defaultQuestionFilter?: string
+  indexBasePath?: string
 }
 
 // ─── View Mode ───────────────────────────────────────────────
@@ -118,6 +120,7 @@ export const ContentEditorIndex = ({
   defaultViewMode = 'articles',
   defaultSearchQuery = '',
   defaultQuestionFilter = '',
+  indexBasePath = ROUTES.admin.knowledge,
 }: ContentEditorIndexProps) => {
   const router = useRouter()
   const searchParams = useSearchParams()
@@ -159,12 +162,16 @@ export const ContentEditorIndex = ({
 
   // Sync state back to URL
   const updateUrl = useCallback((mode: ViewMode, topic: string | null) => {
-    const params = new URLSearchParams(searchParams.toString())
-    params.set('view', mode)
-    if (topic) params.set('topic', topic)
-    else params.delete('topic')
-    router.replace(`/admin/knowledge?${params.toString()}`, { scroll: false })
-  }, [router, searchParams])
+    router.replace(
+      buildContentEditorIndexHref({
+        basePath: indexBasePath,
+        currentSearch: searchParams.toString(),
+        mode,
+        topic,
+      }),
+      { scroll: false },
+    )
+  }, [indexBasePath, router, searchParams])
 
   const handleSetViewMode = (mode: ViewMode) => {
     setViewMode(mode)
@@ -309,7 +316,7 @@ export const ContentEditorIndex = ({
           <div className="flex-1 overflow-y-auto">
             <TaxonomyTree
               nodes={taxonomyTree}
-              basePath="/admin/knowledge"
+              basePath={indexBasePath}
               activeNodeId={selectedNodeId}
               showCounts={true}
               showSearch={true}
