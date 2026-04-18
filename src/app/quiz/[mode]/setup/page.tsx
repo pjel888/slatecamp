@@ -5,11 +5,11 @@ import type { QuizMode, TaxonomySubject, TaxonomySubtopic } from '@/types/quiz-c
 import { SetupPageClient } from './client'
 
 const VALID_MODES: QuizMode[] = [
-  'camp', 'chill', 'subject', 'focused', 'custom', 'storm', 'fullexam', 'extended',
+  'camp', 'chill', 'subject', 'focus_review', 'custom', 'storm', 'full_exam', 'endurance', 'article_review'
 ]
 
 // Modes that need the topic picker (slide 2)
-const TOPIC_PICKER_MODES: QuizMode[] = ['camp', 'chill', 'subject', 'focused', 'custom', 'storm', 'extended']
+const TOPIC_PICKER_MODES: QuizMode[] = ['camp', 'chill', 'subject', 'focus_review', 'custom', 'storm', 'endurance']
 
 interface SetupPageProps {
   params: Promise<{ mode: string }>
@@ -65,7 +65,7 @@ const QuizSetupPage = async ({ params, searchParams }: SetupPageProps) => {
         if (missedIds.length > 0) {
           try {
             const result = await startSession({
-              mode: 'focused',
+              mode: 'focus_review',
               config: {
                 setup: {
                   questionCount: missedIds.length,
@@ -80,7 +80,7 @@ const QuizSetupPage = async ({ params, searchParams }: SetupPageProps) => {
             })
 
             if (!('error' in result)) {
-              redirect(`/quiz/focused/session/${result.sessionId}`)
+              redirect(`/quiz/focus_review/session/${result.sessionId}`)
             }
           } catch (e) {
             // If redirect throws (expected in Next.js), let it propagate

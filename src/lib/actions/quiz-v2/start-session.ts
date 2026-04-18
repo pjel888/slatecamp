@@ -27,11 +27,11 @@ const DB_TEST_MODE_BY_APP_MODE: Record<StartSessionInput['mode'], string> = {
   camp: 'camp',
   chill: 'chill',
   subject: 'practice',
-  focused: 'blindspot',
+  focus_review: 'blindspot',
   custom: 'custom',
   storm: 'storm',
-  fullexam: 'proof_sim',
-  extended: 'endurance',
+  full_exam: 'proof_sim',
+  endurance: 'endurance',
   article_review: 'practice',
 }
 

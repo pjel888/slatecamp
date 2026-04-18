@@ -88,8 +88,8 @@ export const ROUTES = {
       setup: (mode: string) => `/quiz/${mode}/setup` as const,
       session: (sessionId: string, mode: string = 'camp') => `/quiz/${mode}/session/${sessionId}` as const,
       results: (sessionId: string, mode: string = 'camp') => `/quiz/${mode}/session/${sessionId}/results` as const,
-      simSetup: '/quiz/fullexam/setup',
-      simResults: (sessionId: string) => `/quiz/fullexam/session/${sessionId}/results` as const,
+      simSetup: '/quiz/full_exam/setup',
+      simResults: (sessionId: string) => `/quiz/full_exam/session/${sessionId}/results` as const,
     }
   },
 

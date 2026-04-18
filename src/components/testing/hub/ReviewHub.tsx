@@ -447,7 +447,7 @@ const ReviewHub = ({
                     </div>
                   ) : simulationGateStatus.isUnlocked ? (
                     <Link
-                      href={ROUTES.quiz.setup('fullexam')}
+                      href={ROUTES.quiz.setup('full_exam')}
                       className="inline-flex w-full items-center justify-center rounded-sm bg-primary px-4 py-2.5 text-sm font-medium text-white transition-opacity duration-150 hover:opacity-90"
                     >
                       Start Simulation
@@ -483,7 +483,7 @@ const ReviewHub = ({
                     </div>
                   ) : (
                     <Link
-                      href={ROUTES.quiz.setup('extended')}
+                      href={ROUTES.quiz.setup('endurance')}
                       className="inline-flex w-full items-center justify-center rounded-sm border border-border bg-card px-4 py-2.5 text-sm font-medium text-foreground transition-colors duration-150 hover:bg-background"
                     >
                       Start Endurance Training

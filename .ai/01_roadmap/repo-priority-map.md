@@ -1,13 +1,13 @@
 # Repo Priority Map
 
-**Last Updated:** 2026-04-16
+**Last Updated:** 2026-04-18
 
 ## Priority order
-1. **Operational truth first** — keep `.ai`, `README.md`, `CLAUDE.md`, and `AGENTS.md` aligned with live code.
-2. **Boundary hardening** — reduce client-heavy drift, action inconsistencies, and stale route assumptions.
-3. **Performance-sensitive surfaces** — 3D Lab, analytics, admin tables/editors, and quiz session shells.
-4. **Data-flow reliability** — server actions, RPC dependencies, admin CRUD, entitlements, and webhook/cron paths.
-5. **Prompt + agent infrastructure** — normalize reusable prompts and keep governance docs current.
+1. **MVP Core Effectiveness** — absolute priority on building the best, most accurate product for launch; zero legacy accommodation.
+2. **Operational truth first** — keep `.ai`, `README.md`, `CLAUDE.md`, and `AGENTS.md` aligned with the launch MVP goal.
+3. **Boundary hardening** — ensure clean data boundaries and state management for MVP stability.
+4. **Performance-sensitive surfaces** — ensure the 3D Lab and quiz shells meet launch performance standards.
+5. **Data-flow reliability** — prioritize the reliability of core MVP flows (auth, payments, quiz sessions).
 
 ## Current priority zones by area
 | Area | Priority | Why |

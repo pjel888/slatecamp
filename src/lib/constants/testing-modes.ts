@@ -52,8 +52,8 @@ export const MODE_DEFINITIONS: Record<string, ModeDefinition> = {
     ctaLabel: 'Start Subject Mode',
     ctaVariant: 'cobalt',
   },
-  'focus-review': {
-    key: 'focus-review',
+  focus_review: {
+    key: 'focus_review',
     source: 'focus_review',
     dbTestMode: 'camp',
     label: 'Focus Review',
@@ -103,8 +103,8 @@ export const MODE_DEFINITIONS: Record<string, ModeDefinition> = {
     ctaLabel: 'Start Storm Mode',
     ctaVariant: 'orange',
   },
-  simulation: {
-    key: 'simulation',
+  full_exam: {
+    key: 'full_exam',
     source: 'proof_simulation',
     dbTestMode: 'storm',
     label: 'Full Exam Simulation',
@@ -137,8 +137,8 @@ export const MODE_DEFINITIONS: Record<string, ModeDefinition> = {
     ctaLabel: 'Start Design Training',
     ctaVariant: 'orange',
   },
-  'article-review': {
-    key: 'article-review',
+  article_review: {
+    key: 'article_review',
     source: 'article_review',
     dbTestMode: 'camp',
     label: 'Article Review',
@@ -163,9 +163,9 @@ export const ZONE_LABELS = {
 } as const
 
 export const MODES_BY_ZONE = {
-  1: ['camp', 'chill', 'article-review'] as const,
-  2: ['subject', 'focus-review', 'custom'] as const,
-  3: ['storm', 'simulation', 'endurance'] as const,
+  1: ['camp', 'chill', 'article_review'] as const,
+  2: ['subject', 'focus_review', 'custom'] as const,
+  3: ['storm', 'full_exam', 'endurance'] as const,
 } as const
 
 /** Seconds per question for timed modes */

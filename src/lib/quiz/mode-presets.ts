@@ -161,8 +161,8 @@ export const MODE_PRESETS: Record<QuizMode, QuizSessionConfig> = {
     },
   },
 
-  focused: {
-    mode: 'focused',
+  focus_review: {
+    mode: 'focus_review',
     setup: {
       questionCount: 15,
       topics: [],
@@ -317,8 +317,8 @@ export const MODE_PRESETS: Record<QuizMode, QuizSessionConfig> = {
     },
   },
 
-  fullexam: {
-    mode: 'fullexam',
+  full_exam: {
+    mode: 'full_exam',
     setup: {
       questionCount: 200,
       topics: [],
@@ -369,8 +369,8 @@ export const MODE_PRESETS: Record<QuizMode, QuizSessionConfig> = {
     },
   },
 
-  extended: {
-    mode: 'extended',
+  endurance: {
+    mode: 'endurance',
     setup: {
       questionCount: 100,
       topics: [],
@@ -503,11 +503,11 @@ export const MODE_LABELS: Record<QuizMode, string> = {
   camp: 'Camp Mode',
   chill: 'Chill Mode',
   subject: 'Subject Focus',
-  focused: 'Focus Review',
+  focus_review: 'Focus Review',
   custom: 'Custom Session',
   storm: 'Storm Mode',
-  fullexam: 'Full Exam Simulation',
-  extended: 'Extended Practice',
+  full_exam: 'Full Exam Simulation',
+  endurance: 'Extended Practice',
   article_review: 'Article Review',
 }
 

@@ -386,7 +386,7 @@ When editing docs, README, or AGENTS:
 - doc ownership can become blurry without explicit governance
 
 ### Current phase
-The repository is in a **post-foundation expansion + hardening** phase rather than a greenfield build. See `.ai/01_roadmap/current-phase.md` for the current repo-intelligence view.
+The repository is in a **Pre-launch MVP** phase. The primary objective is to build the most effective, accurate, and true product for launch. **This is not a backwards-compatibility environment.** The aim is high-quality MVP execution, not the accommodation of legacy code or past mental load.
 
 ---
 
@@ -435,6 +435,8 @@ This repository uses a deep `AGENTS.md` hierarchy.
 ## 13. Known documentation boundaries
 
 To avoid future drift:
+- **MVP Focus**: All documentation and implementation work must prioritize the launch MVP.
+- **No Legacy Burden**: Do not prioritize backwards compatibility or legacy code accommodation over the effectiveness of the MVP.
 - keep `README.md` comprehensive but not a full mirror of `.ai/06_specs/deep`
 - keep `.ai` focused on operational truth, planning, logs, and audit outputs
 - keep `.ai/06_specs/deep` as the deeper reference/spec surface

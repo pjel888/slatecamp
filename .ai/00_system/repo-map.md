@@ -2,7 +2,8 @@
 
 ## Repository purpose
 
-SlateCamp is a multi-surface Next.js App Router codebase for Philippine Architecture Licensure Exam preparation.
+SlateCamp is a **Pre-launch MVP** for Philippine Architecture Licensure Exam preparation.
+The primary goal is to build the most effective, accurate, and true product for launch. **This is not a backwards-compatibility environment.** Work must focus on MVP quality and correctness, not on accommodating legacy code or past mental load.
 It combines student study flows, admin content tooling, internal developer and business portals, wiki/content systems, analytics, testing modes, calculators, and interactive 3D learning modules.
 
 ## High-level architecture

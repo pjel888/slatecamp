@@ -5,11 +5,11 @@ export type QuizMode =
   | 'camp'
   | 'chill'
   | 'subject'
-  | 'focused'
+  | 'focus_review'
   | 'custom'
   | 'storm'
-  | 'fullexam'
-  | 'extended'
+  | 'full_exam'
+  | 'endurance'
   | 'article_review'
 
 export type SessionStatus =

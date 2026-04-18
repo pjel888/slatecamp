@@ -52,8 +52,34 @@ const nextConfig: NextConfig = {
         destination: '/lea-starter',
         permanent: true,
       },
+      {
+        source: '/quiz/focus-review/:path*',
+        destination: '/quiz/focus_review/:path*',
+        permanent: true,
+      },
+      {
+        source: '/quiz/article-review/:path*',
+        destination: '/quiz/article_review/:path*',
+        permanent: true,
+      },
+      {
+        source: '/quiz/fullexam/:path*',
+        destination: '/quiz/full_exam/:path*',
+        permanent: true,
+      },
+      {
+        source: '/quiz/extended/:path*',
+        destination: '/quiz/endurance/:path*',
+        permanent: true,
+      },
+      {
+        source: '/quiz/focused/:path*',
+        destination: '/quiz/focus_review/:path*',
+        permanent: true,
+      },
     ]
   },
+
   experimental: {
     serverActions: {
       bodySizeLimit: '4mb',

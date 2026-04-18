@@ -146,7 +146,7 @@ export const HeroConfigurator = ({ initialSubjects }: HeroConfiguratorProps) => 
 
   const handleEnterSession = useCallback(() => {
     if (readySessionId) {
-      router.push(`/quiz/custom/session/${readySessionId}`)
+      router.push(ROUTES.quiz.session('custom', readySessionId))
     }
   }, [readySessionId, router])
 
