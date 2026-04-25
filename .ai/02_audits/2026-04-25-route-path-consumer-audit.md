@@ -10,6 +10,19 @@
 2. Inspect live route trees under `src/app/**` instead of trusting archived docs.
 3. Cross-check each target against its route constant, live route implementation, and current consumers.
 
+## Implementation update - 2026-04-25
+
+This audit's launch-facing route fixes have been implemented.
+
+- Added a real `/auth/reset-password` route and changed forgot-password email callbacks to land on it.
+- Added canonical HTTP redirects in `next.config.ts` plus route-level fallback shims for `/settings`, `/dashboard/settings/billing`, `/dashboard/settings/developer`, `/dashboard/trail`, `/dashboard/trails`, `/dashboard/heatmap`, and `/admin/wiki`.
+- Removed stale public route constants for dashboard Campfire, Library, Trails, nested Billing, nested Developer Settings, and admin Wiki. Legacy paths now live under `ROUTES.legacy` only where callback normalization needs them.
+- Replaced live callers with current routes: `/dashboard/camptrails`, `/dashboard/settings`, `/developer`, `/dashboard/analytics`, and `/admin/knowledge`.
+- Hid Library from mobile navigation and removed Campfire notification filter/preferences/dead deep-link defaults.
+- Regenerated route audit evidence in `.ai/02_audits/evidence/route-manifest.json`, `.ai/02_audits/evidence/public-route-smoke.json`, and `.ai/02_audits/evidence/auth-route-browser.json`. Current manifest summary: 112 total page routes, 6 auth routes, 90 protected routes, 19 dynamic routes.
+
+The inventory below is retained as the original finding record; use this implementation update as the current status.
+
 ## Requested target inventory
 
 | Target | Current state | Live consumers / evidence | Recommended disposition | Notes |

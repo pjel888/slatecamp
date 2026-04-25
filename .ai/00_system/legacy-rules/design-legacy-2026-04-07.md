@@ -1,6 +1,8 @@
 > Legacy rule document
 > Preserved from the old `.ai/rules/` entrypoint.
 > Active governance docs now live in `../`.
+> Superseded by `DESIGN.md`, `src/app/globals.css`, and `.ai/06_specs/deep/03-design/001-design-system.md`.
+> Do not use this file as the current design-system authority.
 
 # Design System Rules
 
@@ -10,7 +12,7 @@
 
 ---
 
-## Slatecamp design system — Absolute Rules
+## Legacy SlateCamp Design System — Preserved Rules
 
 ### Color Tokens (Use Only These)
 

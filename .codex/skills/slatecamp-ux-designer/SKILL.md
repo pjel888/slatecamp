@@ -31,26 +31,31 @@ SlateCamp's product voice is a coach — not a cheerleader, not a drill sergeant
 
 ## SlateCamp Design System Foundation
 
+The visual authority is `DESIGN.md`, `src/app/globals.css`, and `.codex/skills/slatecamp-design-system-engineer/SKILL.md`. This skill owns UX judgment and flow quality; it does not override the token contract.
+
 ### Color System
 
-**Primary palette (the camp palette):**
+**Canonical palette:**
 ```
-Slate Blue     → #1E3A5F  (primary action, brand anchor)
-Camp Amber     → #F5A623  (warning, amber nodes, in-progress state)
-Trail Green    → #2ECC71  (success, mastery achieved, green nodes)
-Alert Red      → #E74C3C  (danger, red nodes, critical gaps)
-Grey Fog       → #9B9B9B  (unexplored nodes, disabled states)
-Off-White Base → #F8F9FA  (backgrounds, card surfaces)
-Deep Charcoal  → #1A1A2E  (body text, headings)
+Camp Cobalt       → #1B3FC4  (primary action, brand anchor, active states)
+Light Cobalt      → #EEF2FC  (selected surfaces, quiet primary backgrounds)
+Emerald           → #2D9F6F  (success, mastery, correct answers)
+Amber             → #D4951A  (warning, developing skill, incomplete setup)
+Warm Red          → #D64545  (errors, critical alerts, destructive actions)
+Camp Orange       → #E8853A  (rare warm CTA accent)
+Trail Accent      → #534AB7  (CampTrails progression context)
+Ink               → #1A2332  (body text, headings)
+Muted Foreground  → #8896A7  (metadata, helper text)
+Border            → #D4DAE3  (structure and separators)
 ```
 
 **Semantic color rules:**
-- Readiness Score zones → Red (#E74C3C) | Amber (#F5A623) | Green (#2ECC71) | Strong (#1E3A5F)
-- Heatmap nodes → Exact same four colors, never invented alternatives
-- Interactive elements → Slate Blue (#1E3A5F) always. Never mix action colors.
-- Never use Camp Amber for success — it is always amber (in-progress). Green is success.
+- Readiness and mastery should use neutral guidance for low performance, Amber for developing or incomplete, and Emerald for mastery.
+- Heatmap nodes use semantic state colors from `globals.css`; do not invent new gradients.
+- Interactive elements use Camp Cobalt by default. Camp Orange is reserved for one high-value next action.
+- Warm Red is never used for low scores, shame, or motivational pressure. It is for real errors and destructive actions only.
 
-**Dark mode consideration:** SlateCamp users study late at night. Dark mode is not optional. Design all core screens in both modes from day one.
+**Dark mode consideration:** SlateCamp users study late at night. Design core screens with semantic tokens so light/dark modes can swap without component rewrites.
 
 ---
 
@@ -67,12 +72,11 @@ Label       → 12px / 500 weight → Tags, metadata, timestamps
 Micro       → 11px / 400 weight → Legal, footnotes (use sparingly)
 ```
 
-**Font stack:** System font stack for performance (SF Pro on iOS, Roboto on Android, Inter on web).
-Philippine users are on mid-range devices. No custom fonts that add load time without clear purpose.
+**Font stack:** Atkinson Hyperlegible for body and UI text, Plus Jakarta Sans for display headings, DM Mono for code/data/numerics, Sora for logo only. Syne and Boldonse are legacy/accent display faces only where already established.
 
 **Readiness Score typography:**
 - The score number itself: always Display size, always 700 weight
-- The score label (e.g., "Amber Zone"): always H3, color-coded to zone
+- The score label: always H3, state-colored through semantic tokens
 - Never display the score smaller than H2 — it is the most important number in the product
 
 ---
@@ -98,14 +102,14 @@ Philippine users are on mid-range devices. No custom fonts that add load time wi
 **Card component rules:**
 - One primary action per card maximum
 - Card title ≤ 3 lines. If it's longer, the content architecture is wrong.
-- Shadow: subtle (box-shadow: 0 2px 8px rgba(0,0,0,0.08)) — cards should feel elevated, not heavy
-- Border radius: 12px for content cards, 8px for compact components, 4px for inline chips
+- Shadow: quiet; borders and tonal surfaces carry most structure
+- Border radius: 4px for controls, 6px for cards, 8px for dialogs and larger framed tools
 
 **Button hierarchy:**
-- Primary: Slate Blue fill, white text → One per screen maximum
-- Secondary: Slate Blue outline, Slate Blue text → Complementary action
-- Tertiary: No border, Slate Blue text → Low-commitment actions (Cancel, Skip, Maybe later)
-- Destructive: Alert Red fill, white text → Always pair with confirmation modal
+- Primary: Camp Cobalt fill, primary foreground text → one per screen maximum
+- Secondary: border or muted surface → complementary action
+- Tertiary: ghost/link treatment → low-commitment actions
+- Destructive: Warm Red fill, white text → always pair with confirmation for irreversible actions
 
 **Input fields:**
 - Height: 48px minimum (touch target compliance)
@@ -137,7 +141,7 @@ Philippine users are on mid-range devices. No custom fonts that add load time wi
    disciplines. Your Trail will
    focus on the 6 that matter."   ← Context sentence / Body / charcoal
    
-  [Primary CTA: "See Your Trail"] ← Slate Blue button, full-width
+  [Primary CTA: "See Your Trail"] ← Camp Cobalt button, full-width
   [Secondary: "View Full Map"]    ← Tertiary text link
 ─────────────────────
 ```
@@ -215,7 +219,7 @@ Philippine users are on mid-range devices. No custom fonts that add load time wi
   
   Topics: Beam Design, Columns, Connections
   
-  [Primary: "Start Day 14"]       ← Slate Blue, full-width
+  [Primary: "Start Day 14"]       ← Camp Cobalt, full-width
   [Secondary: "Preview topics"]   ← Tertiary text link
 
 [Completed days — collapsible list below]
@@ -394,7 +398,7 @@ Bottom tab bar (4 items max):
 - Quiz sessions launch from Trail or Map — they are not a top-level tab
 - Campfire (community) lives in Home as a card, not a tab — it's secondary to study
 - Settings/Profile is always last — it's not a study action
-- Active tab: Slate Blue icon + label. Inactive: Grey icon, no label.
+- Active tab: Camp Cobalt icon + label. Inactive: muted icon, no label.
 
 ### Deep Link Architecture
 Every screen must be deep-linkable for re-engagement notifications:

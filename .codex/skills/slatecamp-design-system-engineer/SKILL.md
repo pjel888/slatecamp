@@ -3,28 +3,49 @@ name: slatecamp-design-system-engineer
 description: >
   You ARE SlateCamp's Design System Engineer — the authority on every visual token in
   SlateCamp: colors, typography, spacing, components, motion, dark mode, Tailwind config,
-  and the Rams Standard UX constraint. Activate for ALL design-system work: applying brand
+  and the SlateCamp Design Standard. Activate for ALL design-system work: applying brand
   colors, choosing typography, building UI components, customizing Shadcn, writing Tailwind
   config, enforcing visual consistency, designing empty/error/loading states, designing
   cards, buttons, badges, tooltips, or any UI element. Trigger on: "brand colors", "design
-  system", "which color", "typography", "font", "Syne", "DM Mono", "Inter", "component
+  system", "which color", "typography", "font", "Atkinson Hyperlegible", "Plus Jakarta Sans", "DM Mono", "component
   styling", "card design", "button", "badge", "Tailwind config", "Shadcn", "dark mode",
   "spacing", "visual consistency", "does this match our brand", "how should this look",
   "design token", or any request about how something should look or feel visually. Every
-  pixel in SlateCamp must earn its place — activate before any visual decision.
+  pixel in SlateCamp must serve study clarity, state clarity, or action clarity — activate
+  before any visual decision.
 ---
 
 # SlateCamp — Design System Engineering Guide
 
-## The Rams Standard
+## Canonical Source Order
 
-SlateCamp's UI is governed by Dieter Rams' ten principles of good design, specifically:
+Read these before making visual decisions:
 
-> **Good design is as little design as possible.** Less, but better — because it concentrates
-> on the essential aspects and the products are not burdened with non-essentials.
+1. `DESIGN.md` - agent-readable visual identity, token contract, and component guardrails.
+2. `src/app/globals.css` - implemented Tailwind CSS 4 and CSS custom property tokens.
+3. `.ai/06_specs/deep/03-design/001-design-system.md` - deeper design-system reference.
+4. `/developer/design-system` - live component catalog when the app is running.
 
-Every element must earn its place. If removing an element doesn't break the communication,
-remove it. Decoration is not design.
+If this skill conflicts with those files, the files above win. Run `bun run design:lint` after changing `DESIGN.md`.
+
+## The SlateCamp Design Standard
+
+SlateCamp's UI is governed by SlateCamp's own study-first design system. Historical
+external design-language references and generic SaaS patterns are not the governing style.
+They may be useful research contrast, but `DESIGN.md` and the live token implementation decide.
+
+Non-negotiables:
+
+- Study-first: UI should reduce exam-prep friction and keep candidates moving.
+- Signal-first: color, motion, badges, and visual weight must communicate status, priority,
+  or next action.
+- Legible by default: Atkinson Hyperlegible body text, visible focus states, clear labels,
+  and stable reading layouts are product requirements.
+- Dense but breathable: dashboards and study tools should be compact enough for repeated use,
+  without marketing-page hero spacing.
+- Calm under pressure: no shame, hype, artificial urgency, social comparison, confetti,
+  or dopamine-loop gamification.
+- Token-owned: new UI uses semantic tokens and shared components before one-off styling.
 
 ---
 
@@ -34,34 +55,41 @@ remove it. Decoration is not design.
 
 | Token | Color | Hex | Usage |
 |---|---|---|---|
-| `primary` | Cobalt Blue | `#1B3FC4` | Primary actions, key metrics, active states |
-| `signal-gold` | Signal Gold | `#F5A623` | Positive deltas, CTA accents, progress highlights |
-| `signal-red` | Signal Red | `#E63329` | Functional only — errors, critical alerts |
-| `signal-green` | Signal Green | `#1B7A3C` | Success states, passing scores, positive trends |
-| `camp-orange` | Camp Orange | `#E8853A` | "Next Mission" card accent, CampTrails active CTA |
-| `trail-purple` | Trail Purple | `#534AB7` | CampTrails system, progression mechanics |
+| `primary` | Camp Cobalt | `#1B3FC4` | Primary actions, active navigation, links, selected states, progress, key metrics |
+| `primary-50` | Light Cobalt | `#EEF2FC` | Selected-state surfaces and quiet primary backgrounds |
+| `primary-700` | Deep Cobalt | `#1535A8` | Hover states and primary text on light cobalt surfaces |
+| `success` | Emerald | `#2D9F6F` | Correct answers, mastery, completion, verified healthy states |
+| `warning` | Amber | `#D4951A` | Developing skill, incomplete setup, non-blocking caution |
+| `destructive` | Warm Red | `#D64545` | Validation errors, critical alerts, irreversible destructive actions |
+| `camp-orange` | Camp Orange | `#E8853A` | Sparing warm CTA accent when one next action deserves special emphasis |
+| `trail-accent` | Trail Accent | `#534AB7` | CampTrails progression context only |
 
 ### Neutral Palette
 
 | Token | Hex | Usage |
 |---|---|---|
-| `cream` | `#F2F0EB` | Page backgrounds, neutral card fills |
-| `warm-white` | `#F8F7F5` | Card backgrounds, content areas |
-| Dark navy | `#0F1F5C` | Wiki article card background |
-| Notes cream | `#F2F0EB` | Notes card background |
+| `background` | `#FFFFFF` | Page background |
+| `foreground` | `#1A2332` | Main reading text and high-emphasis labels |
+| `card` | `#FFFFFF` | Card and panel surface |
+| `secondary` | `#F5F5F5` | Secondary backgrounds |
+| `muted` | `#F5F5F5` | Quiet fills and inactive controls |
+| `muted-foreground` | `#8896A7` | Placeholder, metadata, helper text |
+| `border` | `#D4DAE3` | Separators, cards, forms, tables |
 
 ### Signal Color Rules
-- **Never use Signal Red for anxiety or failure messaging.** Red is a functional signal
-  only: form validation errors, critical system alerts. Never: "You failed", "Low score",
-  "Danger zone"
-- **Signal Gold for positive deltas only.** Never used as a background on text-heavy areas
-- **Cobalt Blue is the product color.** Progress bars, active states, primary CTAs
-- **Camp Orange for the one main CTA.** When there's one most-important action, Orange
-  signals it. Never use Orange for secondary or tertiary actions
+- **Never use destructive red for anxiety or failure messaging.** Red is a functional signal
+  only: form validation errors, critical system alerts, and irreversible destructive actions.
+  Never: "You failed", "Low score", "Danger zone".
+- **Warning amber means incomplete or needs attention.** Never use it as a default decorative
+  background on text-heavy areas.
+- **Camp Cobalt is the product color.** Use it for progress bars, active states, links,
+  selected states, and primary CTAs.
+- **Camp Orange is rare.** Use it only when one next action deserves warm emphasis. Never use
+  orange for secondary or tertiary actions.
 
 ### Score/Mastery Color Logic
 ```
-≥ 70% (passing) → Signal Green #1B7A3C
+≥ 70% (passing) → Success #2D9F6F
 40–69%           → Neutral (black/gray text, no color signal)
 < 40%            → Never red — use neutral with "Needs review" label
 ```
@@ -75,11 +103,10 @@ remove it. Decoration is not design.
 ```css
 /* Tailwind config additions */
 fontFamily: {
-  display: ['Syne', 'sans-serif'],      /* Section headings, card titles */
-  hero: ['GeistSans', 'sans-serif'],    /* Hero names, large numerics */
-  sans: ['Inter', 'sans-serif'],        /* Body, UI text, everywhere else */
-  mono: ['DM Mono', 'monospace'],       /* Labels, eyebrows, numbers, codes */
-  serif: ['Instrument Serif', 'serif'], /* Editorial quotes only, very rare */
+  display: ['Plus Jakarta Sans', 'sans-serif'], /* Display headings, strong section titles */
+  sans: ['Atkinson Hyperlegible', 'sans-serif'], /* Body, UI text */
+  mono: ['DM Mono', 'monospace'],       /* Code, data values, score numerics */
+  logo: ['Sora', 'sans-serif'],         /* Logo treatment only */
 }
 ```
 
@@ -87,29 +114,31 @@ fontFamily: {
 
 | Element | Font | Weight | Size | Class |
 |---|---|---|---|---|
-| Hero name (Philip.) | GeistSans | 700 | 28–36px | `font-hero font-bold text-4xl` |
-| Section heading | Syne | 800 | 20–24px | `font-display font-extrabold text-xl` |
-| Card title | Inter | 500 | 14–16px | `font-sans font-medium text-sm` |
-| Body paragraph | Inter | 400 | 14–15px | `font-sans text-sm` |
-| Eyebrow / label | DM Mono | 500 | 9–11px | `font-mono font-medium text-xs uppercase tracking-widest` |
+| Section heading | Plus Jakarta Sans | 700 | 20–24px | `font-display font-bold text-xl` |
+| Card title | Atkinson Hyperlegible | 700 | 14–16px | `font-sans font-bold text-sm` |
+| Body paragraph | Atkinson Hyperlegible | 400 | 14–15px | `font-sans text-sm` |
+| Label | Atkinson Hyperlegible | 700 | 11–13px | `font-sans font-bold text-xs` |
 | Stat number | DM Mono | 500 | 20–32px | `font-mono font-medium tabular-nums` |
 | Score badge | DM Mono | 500 | 10–11px | `font-mono font-medium text-xs` |
 | Code reference | DM Mono | 400 | 11px | `font-mono text-xs text-muted-foreground` |
 
+Syne and Boldonse are legacy/accent display faces only where already established. Do not use
+them as the default display system for new UI.
+
 ### Eyebrow Pattern (Most Important Typography Pattern)
 Every card has a two-level header:
 ```tsx
-{/* Eyebrow — DM Mono, uppercase, muted */}
-<p className="font-mono text-[9px] font-medium uppercase tracking-widest text-muted-foreground mb-0.5">
+{/* Eyebrow — Atkinson, uppercase, muted */}
+<p className="font-sans text-[11px] font-bold uppercase text-muted-foreground mb-0.5">
   Subject mastery
 </p>
 
-{/* Card title — Inter medium */}
-<h3 className="font-sans font-medium text-sm text-foreground mb-1">
+{/* Card title — Atkinson bold */}
+<h3 className="font-sans font-bold text-sm text-foreground mb-1">
   Your progress by subject area
 </h3>
 
-{/* Subheading — Inter regular, muted */}
+{/* Subheading — Atkinson regular, muted */}
 <p className="font-sans text-xs text-muted-foreground">
   Hover a bar to start a targeted session
 </p>
@@ -121,47 +150,50 @@ Every card has a two-level header:
 
 ### Card Anatomy
 ```
-[EYEBROW — DM Mono uppercase]
-Card Title (Inter medium, 14px)
-Subtitle (Inter regular, 12px, muted)
+[EYEBROW — Atkinson uppercase]
+Card Title (Atkinson bold, 14px)
+Subtitle (Atkinson regular, 12px, muted)
 ─────────────────────────────────────
 [Content area]
 ─────────────────────────────────────
-Footer link or CTA (Inter 11px, primary color)
+Footer link or CTA (Atkinson 11px, primary color)
 ```
 
 ### Card Variants
 
 **Default white card:**
 ```tsx
-<div className="bg-card border border-border rounded-xl p-4">
+<div className="bg-card border border-border rounded-md p-4">
 ```
 
 **Left-border accent card (action cards):**
 ```tsx
-<div className="bg-card border border-border border-l-[3px] border-l-primary rounded-r-xl p-4">
-// camp-orange: border-l-[#E8853A]
-// trail-purple: border-l-[#534AB7]
-// cobalt-blue: border-l-primary
+<div className="bg-card border border-border border-l-[3px] border-l-primary rounded-r-md p-4">
+// camp-orange: border-l-camp-orange
+// trail-accent: border-l-trail-accent
+// cobalt: border-l-primary
 ```
 
 **Colored feature cards (discovery row):**
 ```tsx
-// Wiki card — dark navy
-<div className="bg-[#0F1F5C] rounded-xl p-4">
+// Default feature card
+<div className="bg-card border border-border rounded-md p-4">
 
-// Notes card — cream
-<div className="bg-[#F2F0EB] rounded-xl p-4">
+// Highlighted primary feature card
+<div className="bg-primary text-primary-foreground rounded-md p-4">
 
-// 3D Lab card — cobalt blue
-<div className="bg-primary rounded-xl p-4">
+// CampTrails feature card
+<div className="bg-trail-accent text-white rounded-md p-4">
 ```
+
+Only use raw hex values when no token exists and the change is paired with a token
+proposal in `DESIGN.md` and `src/app/globals.css`.
 
 ### Button Hierarchy
 
 | Level | Style | When |
 |---|---|---|
-| Primary | `bg-primary text-white` | One per view — the most important action |
+| Primary | `bg-primary text-primary-foreground` | One per view — the most important action |
 | Secondary | `bg-transparent border border-border hover:bg-muted` | Supporting actions |
 | Ghost | `bg-transparent hover:bg-muted` | Tertiary, inline |
 | Link | `text-primary underline-offset-4 hover:underline` | Navigation, "View all" |
@@ -170,23 +202,41 @@ Footer link or CTA (Inter 11px, primary color)
 ### Badge / Pill Patterns
 ```tsx
 {/* Session mode badges */}
-<span className="font-mono text-[8px] font-medium px-1.5 py-0.5 rounded-sm
-  bg-blue-50 text-blue-900">CAMP</span>
+<span className="font-sans text-[11px] font-bold px-1.5 py-0.5 rounded-sm
+  bg-primary-50 text-primary-700">CAMP</span>
 
-<span className="font-mono text-[8px] font-medium px-1.5 py-0.5 rounded-sm
-  bg-amber-50 text-amber-900">STORM</span>
+<span className="font-sans text-[11px] font-bold px-1.5 py-0.5 rounded-sm
+  bg-warning-50 text-warning-800">STORM</span>
 
 {/* Score pill — passing */}
 <span className="font-mono text-xs px-2 py-0.5 rounded-full
-  bg-green-50 text-green-900">78%</span>
+  bg-success-50 text-success-800">78%</span>
 
 {/* Score pill — not passing */}
 <span className="font-mono text-xs px-2 py-0.5 rounded-full
   bg-muted text-muted-foreground">55%</span>
 
 {/* Mastery label */}
-<span className="font-mono text-[9px] font-medium text-amber-700">Building</span>
+<span className="font-sans text-[11px] font-bold text-warning-700">Building</span>
 ```
+
+---
+
+## Accessibility & Interaction Requirements
+
+Accessibility is part of the design system contract.
+
+- Interactive targets should be at least 40px in SlateCamp components; use 44px for
+  primary mobile actions when space allows.
+- Focus rings must remain visible and must not be hidden behind sticky headers, drawers,
+  or overlays.
+- Icon-only buttons need accessible names and visible tooltips unless the icon is universally
+  obvious in context.
+- Forms need persistent labels, inline validation, helper/error text, and non-color-only states.
+- Toasts, save states, loading states, failed states, empty states, and unauthorized states
+  must be recoverable and clear without relying on color alone.
+- Respect `prefers-reduced-motion`; animated study flows and 3D Lab interactions need
+  static or reduced-motion alternatives.
 
 ---
 
@@ -269,36 +319,35 @@ Rules for dark mode:
 
 ---
 
-## Tailwind Config Additions Required
+## Tailwind CSS Token Source
 
-```javascript
-// tailwind.config.ts
-module.exports = {
-  theme: {
-    extend: {
-      fontFamily: {
-        display: ['Syne', 'sans-serif'],
-        hero: ['GeistSans', 'sans-serif'],
-        sans: ['Inter', 'sans-serif'],
-        mono: ['DM Mono', 'monospace'],
-        serif: ['Instrument Serif', 'serif'],
-      },
-      colors: {
-        primary: { DEFAULT: '#1B3FC4', foreground: '#FFFFFF' },
-        'signal-gold': '#F5A623',
-        'signal-green': '#1B7A3C',
-        'signal-red': '#E63329',
-        'camp-orange': '#E8853A',
-        'trail-purple': '#534AB7',
-        cream: '#F2F0EB',
-      },
-      gridTemplateColumns: {
-        16: 'repeat(16, minmax(0, 1fr))',
-      },
-    },
-  },
-}
-```
+SlateCamp uses Tailwind CSS 4 with CSS-first tokens in `src/app/globals.css`; do not add a legacy `tailwind.config.ts` token layer for routine styling. When visual tokens change, update `DESIGN.md`, `src/app/globals.css`, and `.ai/06_specs/deep/03-design/001-design-system.md` together.
+
+## Research Inputs
+
+Use external design research as validation, not as the SlateCamp style authority:
+
+- W3C Design Tokens Format Module: tokens are named design decisions with values,
+  metadata, grouping, and aliases.
+- WCAG 2.2: focus visibility, focus not obscured, contrast, labels, input assistance,
+  and target sizing are baseline constraints.
+- Figma variables/collections/modes: map SlateCamp tokens into reusable values, semantic
+  aliases, and future light/dark/accessibility contexts.
+- Storybook UI testing: document and test component states in a browser when shared
+  components become system primitives.
+
+## Governance
+
+When visual guidance changes, update the full chain:
+
+1. `DESIGN.md`
+2. `src/app/globals.css`
+3. `.ai/06_specs/deep/03-design/001-design-system.md`
+4. `.codex/skills/slatecamp-design-system-engineer/SKILL.md`
+5. `/developer/design-system` or Storybook examples when component states change
+
+Run `bun run design:lint` after changing `DESIGN.md`. Pre-launch work should remove or
+rename stale visual patterns instead of preserving legacy variants.
 
 ---
 

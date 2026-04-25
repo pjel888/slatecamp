@@ -1,0 +1,1478 @@
+{
+  "generatedAt": "2026-04-25T12:58:06.754Z",
+  "routeManifestShape": {
+    "version": "2026-04-25",
+    "entryFields": [
+      "path",
+      "relativePageFile",
+      "sourceSegments",
+      "access",
+      "requiresFixture",
+      "auditTargets",
+      "probeByDefault"
+    ],
+    "inferredAccessRules": [
+      "/admin/login is treated as public login entry",
+      "/login, /register, /forgot-password, /onboarding* are treated as auth pages",
+      "/dashboard*, /admin* (except /admin/login), /developer*, /ceo*, /quiz*, and /settings* are treated as protected",
+      "All remaining page routes are treated as public for smoke coverage until a narrower guard is encoded"
+    ]
+  },
+  "routes": [
+    {
+      "access": "public",
+      "path": "/",
+      "relativePageFile": "src/app/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        ""
+      ],
+      "auditTargets": [
+        "public-smoke"
+      ],
+      "probeByDefault": false
+    },
+    {
+      "access": "public",
+      "path": "/about",
+      "relativePageFile": "src/app/about/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "about"
+      ],
+      "auditTargets": [
+        "public-smoke"
+      ],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/admin",
+      "relativePageFile": "src/app/admin/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "admin"
+      ],
+      "auditTargets": [
+        "protected-browser-probe"
+      ],
+      "probeByDefault": true
+    },
+    {
+      "access": "protected",
+      "path": "/admin/3d-models",
+      "relativePageFile": "src/app/admin/3d-models/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "admin",
+        "3d-models"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/admin/activity",
+      "relativePageFile": "src/app/admin/activity/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "admin",
+        "activity"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/admin/assets",
+      "relativePageFile": "src/app/admin/assets/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "admin",
+        "assets"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/admin/assets/[id]",
+      "relativePageFile": "src/app/admin/assets/[id]/page.tsx",
+      "requiresFixture": true,
+      "sourceSegments": [
+        "admin",
+        "assets",
+        "[id]"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/admin/audit",
+      "relativePageFile": "src/app/admin/audit/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "admin",
+        "audit"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/admin/knowledge",
+      "relativePageFile": "src/app/admin/knowledge/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "admin",
+        "knowledge"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/admin/knowledge/[id]",
+      "relativePageFile": "src/app/admin/knowledge/[id]/page.tsx",
+      "requiresFixture": true,
+      "sourceSegments": [
+        "admin",
+        "knowledge",
+        "[id]"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/admin/knowledge/analytics",
+      "relativePageFile": "src/app/admin/knowledge/analytics/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "admin",
+        "knowledge",
+        "analytics"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/admin/knowledge/import",
+      "relativePageFile": "src/app/admin/knowledge/import/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "admin",
+        "knowledge",
+        "import"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/admin/knowledge/new",
+      "relativePageFile": "src/app/admin/knowledge/new/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "admin",
+        "knowledge",
+        "new"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/admin/knowledge/questions",
+      "relativePageFile": "src/app/admin/knowledge/questions/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "admin",
+        "knowledge",
+        "questions"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/admin/knowledge/questions/[id]",
+      "relativePageFile": "src/app/admin/knowledge/questions/[id]/page.tsx",
+      "requiresFixture": true,
+      "sourceSegments": [
+        "admin",
+        "knowledge",
+        "questions",
+        "[id]"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/admin/knowledge/questions/design-problems",
+      "relativePageFile": "src/app/admin/knowledge/questions/design-problems/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "admin",
+        "knowledge",
+        "questions",
+        "design-problems"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/admin/knowledge/questions/design-problems/[id]",
+      "relativePageFile": "src/app/admin/knowledge/questions/design-problems/[id]/page.tsx",
+      "requiresFixture": true,
+      "sourceSegments": [
+        "admin",
+        "knowledge",
+        "questions",
+        "design-problems",
+        "[id]"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/admin/knowledge/questions/new",
+      "relativePageFile": "src/app/admin/knowledge/questions/new/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "admin",
+        "knowledge",
+        "questions",
+        "new"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/admin/knowledge/questions/scenarios",
+      "relativePageFile": "src/app/admin/knowledge/questions/scenarios/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "admin",
+        "knowledge",
+        "questions",
+        "scenarios"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/admin/knowledge/questions/scenarios/[id]",
+      "relativePageFile": "src/app/admin/knowledge/questions/scenarios/[id]/page.tsx",
+      "requiresFixture": true,
+      "sourceSegments": [
+        "admin",
+        "knowledge",
+        "questions",
+        "scenarios",
+        "[id]"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "admin_login",
+      "path": "/admin/login",
+      "relativePageFile": "src/app/admin/login/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "admin",
+        "login"
+      ],
+      "auditTargets": [
+        "auth-browser"
+      ],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/admin/pipeline",
+      "relativePageFile": "src/app/admin/pipeline/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "admin",
+        "pipeline"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/admin/preview/[previewId]",
+      "relativePageFile": "src/app/admin/preview/[previewId]/page.tsx",
+      "requiresFixture": true,
+      "sourceSegments": [
+        "admin",
+        "preview",
+        "[previewId]"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/admin/reviews",
+      "relativePageFile": "src/app/admin/reviews/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "admin",
+        "reviews"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/admin/search",
+      "relativePageFile": "src/app/admin/search/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "admin",
+        "search"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/admin/settings",
+      "relativePageFile": "src/app/admin/settings/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "admin",
+        "settings"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/admin/taxonomy",
+      "relativePageFile": "src/app/admin/taxonomy/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "admin",
+        "taxonomy"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/admin/taxonomy/coverage",
+      "relativePageFile": "src/app/admin/taxonomy/coverage/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "admin",
+        "taxonomy",
+        "coverage"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/admin/wiki",
+      "relativePageFile": "src/app/admin/wiki/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "admin",
+        "wiki"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "auth",
+      "path": "/auth/reset-password",
+      "relativePageFile": "src/app/auth/reset-password/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "auth",
+        "reset-password"
+      ],
+      "auditTargets": [
+        "auth-browser"
+      ],
+      "probeByDefault": false
+    },
+    {
+      "access": "public",
+      "path": "/calculators",
+      "relativePageFile": "src/app/calculators/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "calculators"
+      ],
+      "auditTargets": [
+        "public-smoke"
+      ],
+      "probeByDefault": false
+    },
+    {
+      "access": "public",
+      "path": "/calculators/chb",
+      "relativePageFile": "src/app/calculators/chb/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "calculators",
+        "chb"
+      ],
+      "auditTargets": [
+        "public-smoke"
+      ],
+      "probeByDefault": false
+    },
+    {
+      "access": "public",
+      "path": "/calculators/drywall",
+      "relativePageFile": "src/app/calculators/drywall/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "calculators",
+        "drywall"
+      ],
+      "auditTargets": [
+        "public-smoke"
+      ],
+      "probeByDefault": false
+    },
+    {
+      "access": "public",
+      "path": "/calculators/flooring",
+      "relativePageFile": "src/app/calculators/flooring/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "calculators",
+        "flooring"
+      ],
+      "auditTargets": [
+        "public-smoke"
+      ],
+      "probeByDefault": false
+    },
+    {
+      "access": "public",
+      "path": "/calculators/paint",
+      "relativePageFile": "src/app/calculators/paint/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "calculators",
+        "paint"
+      ],
+      "auditTargets": [
+        "public-smoke"
+      ],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/ceo",
+      "relativePageFile": "src/app/(protected)/ceo/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "(protected)",
+        "ceo"
+      ],
+      "auditTargets": [
+        "protected-browser-probe"
+      ],
+      "probeByDefault": true
+    },
+    {
+      "access": "protected",
+      "path": "/ceo/analytics",
+      "relativePageFile": "src/app/(protected)/ceo/analytics/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "(protected)",
+        "ceo",
+        "analytics"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/ceo/financials",
+      "relativePageFile": "src/app/(protected)/ceo/financials/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "(protected)",
+        "ceo",
+        "financials"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/ceo/insights",
+      "relativePageFile": "src/app/(protected)/ceo/insights/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "(protected)",
+        "ceo",
+        "insights"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/ceo/team",
+      "relativePageFile": "src/app/(protected)/ceo/team/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "(protected)",
+        "ceo",
+        "team"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "public",
+      "path": "/contact",
+      "relativePageFile": "src/app/contact/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "contact"
+      ],
+      "auditTargets": [
+        "public-smoke"
+      ],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/dashboard",
+      "relativePageFile": "src/app/dashboard/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "dashboard"
+      ],
+      "auditTargets": [
+        "protected-browser-probe"
+      ],
+      "probeByDefault": true
+    },
+    {
+      "access": "protected",
+      "path": "/dashboard/3d-lab",
+      "relativePageFile": "src/app/dashboard/3d-lab/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "dashboard",
+        "3d-lab"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/dashboard/3d-lab/[moduleId]",
+      "relativePageFile": "src/app/dashboard/3d-lab/[moduleId]/page.tsx",
+      "requiresFixture": true,
+      "sourceSegments": [
+        "dashboard",
+        "3d-lab",
+        "[moduleId]"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/dashboard/analytics",
+      "relativePageFile": "src/app/dashboard/analytics/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "dashboard",
+        "analytics"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/dashboard/analytics/advanced",
+      "relativePageFile": "src/app/dashboard/analytics/advanced/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "dashboard",
+        "analytics",
+        "advanced"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/dashboard/area-c",
+      "relativePageFile": "src/app/dashboard/area-c/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "dashboard",
+        "area-c"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/dashboard/area-c/calculator",
+      "relativePageFile": "src/app/dashboard/area-c/calculator/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "dashboard",
+        "area-c",
+        "calculator"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/dashboard/area-c/design-problems",
+      "relativePageFile": "src/app/dashboard/area-c/design-problems/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "dashboard",
+        "area-c",
+        "design-problems"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/dashboard/area-c/design-problems/[problemId]",
+      "relativePageFile": "src/app/dashboard/area-c/design-problems/[problemId]/page.tsx",
+      "requiresFixture": true,
+      "sourceSegments": [
+        "dashboard",
+        "area-c",
+        "design-problems",
+        "[problemId]"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/dashboard/area-c/design-quiz",
+      "relativePageFile": "src/app/dashboard/area-c/design-quiz/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "dashboard",
+        "area-c",
+        "design-quiz"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/dashboard/area-c/design-quiz/[scenarioId]",
+      "relativePageFile": "src/app/dashboard/area-c/design-quiz/[scenarioId]/page.tsx",
+      "requiresFixture": true,
+      "sourceSegments": [
+        "dashboard",
+        "area-c",
+        "design-quiz",
+        "[scenarioId]"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/dashboard/assessment",
+      "relativePageFile": "src/app/dashboard/assessment/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "dashboard",
+        "assessment"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/dashboard/camptrails",
+      "relativePageFile": "src/app/dashboard/camptrails/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "dashboard",
+        "camptrails"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/dashboard/camptrails/[slug]",
+      "relativePageFile": "src/app/dashboard/camptrails/[slug]/page.tsx",
+      "requiresFixture": true,
+      "sourceSegments": [
+        "dashboard",
+        "camptrails",
+        "[slug]"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/dashboard/camptrails/[slug]/day/[dayNumber]/complete",
+      "relativePageFile": "src/app/dashboard/camptrails/[slug]/day/[dayNumber]/complete/page.tsx",
+      "requiresFixture": true,
+      "sourceSegments": [
+        "dashboard",
+        "camptrails",
+        "[slug]",
+        "day",
+        "[dayNumber]",
+        "complete"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/dashboard/camptrails/[slug]/today",
+      "relativePageFile": "src/app/dashboard/camptrails/[slug]/today/page.tsx",
+      "requiresFixture": true,
+      "sourceSegments": [
+        "dashboard",
+        "camptrails",
+        "[slug]",
+        "today"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/dashboard/code-updates",
+      "relativePageFile": "src/app/dashboard/code-updates/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "dashboard",
+        "code-updates"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/dashboard/cram-card",
+      "relativePageFile": "src/app/dashboard/cram-card/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "dashboard",
+        "cram-card"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/dashboard/dae-mode",
+      "relativePageFile": "src/app/dashboard/dae-mode/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "dashboard",
+        "dae-mode"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/dashboard/drills",
+      "relativePageFile": "src/app/dashboard/drills/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "dashboard",
+        "drills"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/dashboard/drills/sessions",
+      "relativePageFile": "src/app/dashboard/drills/sessions/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "dashboard",
+        "drills",
+        "sessions"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/dashboard/exam-outcome",
+      "relativePageFile": "src/app/dashboard/exam-outcome/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "dashboard",
+        "exam-outcome"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/dashboard/flash",
+      "relativePageFile": "src/app/dashboard/flash/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "dashboard",
+        "flash"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/dashboard/flash/[category]",
+      "relativePageFile": "src/app/dashboard/flash/[category]/page.tsx",
+      "requiresFixture": true,
+      "sourceSegments": [
+        "dashboard",
+        "flash",
+        "[category]"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/dashboard/heatmap",
+      "relativePageFile": "src/app/dashboard/heatmap/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "dashboard",
+        "heatmap"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/dashboard/notes",
+      "relativePageFile": "src/app/dashboard/notes/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "dashboard",
+        "notes"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/dashboard/notifications",
+      "relativePageFile": "src/app/dashboard/notifications/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "dashboard",
+        "notifications"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/dashboard/pods",
+      "relativePageFile": "src/app/dashboard/pods/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "dashboard",
+        "pods"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/dashboard/pods/[podId]",
+      "relativePageFile": "src/app/dashboard/pods/[podId]/page.tsx",
+      "requiresFixture": true,
+      "sourceSegments": [
+        "dashboard",
+        "pods",
+        "[podId]"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/dashboard/professional",
+      "relativePageFile": "src/app/dashboard/professional/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "dashboard",
+        "professional"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/dashboard/results-day",
+      "relativePageFile": "src/app/dashboard/results-day/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "dashboard",
+        "results-day"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/dashboard/score-reveal",
+      "relativePageFile": "src/app/dashboard/score-reveal/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "dashboard",
+        "score-reveal"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/dashboard/settings",
+      "relativePageFile": "src/app/dashboard/settings/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "dashboard",
+        "settings"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/dashboard/settings/billing",
+      "relativePageFile": "src/app/dashboard/settings/billing/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "dashboard",
+        "settings",
+        "billing"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/dashboard/settings/developer",
+      "relativePageFile": "src/app/dashboard/settings/developer/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "dashboard",
+        "settings",
+        "developer"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/dashboard/studio",
+      "relativePageFile": "src/app/dashboard/studio/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "dashboard",
+        "studio"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/dashboard/trail",
+      "relativePageFile": "src/app/dashboard/trail/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "dashboard",
+        "trail"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/dashboard/trails",
+      "relativePageFile": "src/app/dashboard/trails/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "dashboard",
+        "trails"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/dashboard/upgrade",
+      "relativePageFile": "src/app/dashboard/upgrade/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "dashboard",
+        "upgrade"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/dashboard/welcome-pro",
+      "relativePageFile": "src/app/dashboard/welcome-pro/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "dashboard",
+        "welcome-pro"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/dashboard/wiki",
+      "relativePageFile": "src/app/dashboard/wiki/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "dashboard",
+        "wiki"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/dashboard/wiki/[slug]",
+      "relativePageFile": "src/app/dashboard/wiki/[slug]/page.tsx",
+      "requiresFixture": true,
+      "sourceSegments": [
+        "dashboard",
+        "wiki",
+        "[slug]"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/developer",
+      "relativePageFile": "src/app/developer/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "developer"
+      ],
+      "auditTargets": [
+        "protected-browser-probe"
+      ],
+      "probeByDefault": true
+    },
+    {
+      "access": "protected",
+      "path": "/developer/api-reference",
+      "relativePageFile": "src/app/developer/api-reference/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "developer",
+        "api-reference"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/developer/architecture",
+      "relativePageFile": "src/app/developer/architecture/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "developer",
+        "architecture"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/developer/status",
+      "relativePageFile": "src/app/developer/status/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "developer",
+        "status"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/developer/status/database",
+      "relativePageFile": "src/app/developer/status/database/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "developer",
+        "status",
+        "database"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/developer/status/infrastructure",
+      "relativePageFile": "src/app/developer/status/infrastructure/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "developer",
+        "status",
+        "infrastructure"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/developer/tools",
+      "relativePageFile": "src/app/developer/tools/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "developer",
+        "tools"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/developer/tools/console",
+      "relativePageFile": "src/app/developer/tools/console/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "developer",
+        "tools",
+        "console"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/developer/tools/db",
+      "relativePageFile": "src/app/developer/tools/db/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "developer",
+        "tools",
+        "db"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/developer/tools/logs",
+      "relativePageFile": "src/app/developer/tools/logs/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "developer",
+        "tools",
+        "logs"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/developer/tools/test-data",
+      "relativePageFile": "src/app/developer/tools/test-data/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "developer",
+        "tools",
+        "test-data"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "auth",
+      "path": "/forgot-password",
+      "relativePageFile": "src/app/(auth)/forgot-password/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "(auth)",
+        "forgot-password"
+      ],
+      "auditTargets": [
+        "auth-browser"
+      ],
+      "probeByDefault": false
+    },
+    {
+      "access": "auth",
+      "path": "/login",
+      "relativePageFile": "src/app/(auth)/login/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "(auth)",
+        "login"
+      ],
+      "auditTargets": [
+        "auth-browser"
+      ],
+      "probeByDefault": false
+    },
+    {
+      "access": "auth",
+      "path": "/onboarding",
+      "relativePageFile": "src/app/(auth)/onboarding/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "(auth)",
+        "onboarding"
+      ],
+      "auditTargets": [
+        "auth-browser"
+      ],
+      "probeByDefault": false
+    },
+    {
+      "access": "auth",
+      "path": "/onboarding/comp-exam",
+      "relativePageFile": "src/app/(auth)/onboarding/comp-exam/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "(auth)",
+        "onboarding",
+        "comp-exam"
+      ],
+      "auditTargets": [
+        "auth-browser"
+      ],
+      "probeByDefault": false
+    },
+    {
+      "access": "public",
+      "path": "/pricing",
+      "relativePageFile": "src/app/pricing/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "pricing"
+      ],
+      "auditTargets": [
+        "public-smoke"
+      ],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/quiz",
+      "relativePageFile": "src/app/quiz/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "quiz"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/quiz/[mode]/session/[sessionId]",
+      "relativePageFile": "src/app/quiz/[mode]/session/[sessionId]/page.tsx",
+      "requiresFixture": true,
+      "sourceSegments": [
+        "quiz",
+        "[mode]",
+        "session",
+        "[sessionId]"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/quiz/[mode]/session/[sessionId]/results",
+      "relativePageFile": "src/app/quiz/[mode]/session/[sessionId]/results/page.tsx",
+      "requiresFixture": true,
+      "sourceSegments": [
+        "quiz",
+        "[mode]",
+        "session",
+        "[sessionId]",
+        "results"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/quiz/[mode]/session/[sessionId]/review",
+      "relativePageFile": "src/app/quiz/[mode]/session/[sessionId]/review/page.tsx",
+      "requiresFixture": true,
+      "sourceSegments": [
+        "quiz",
+        "[mode]",
+        "session",
+        "[sessionId]",
+        "review"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/quiz/[mode]/setup",
+      "relativePageFile": "src/app/quiz/[mode]/setup/page.tsx",
+      "requiresFixture": true,
+      "sourceSegments": [
+        "quiz",
+        "[mode]",
+        "setup"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "auth",
+      "path": "/register",
+      "relativePageFile": "src/app/(auth)/register/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "(auth)",
+        "register"
+      ],
+      "auditTargets": [
+        "auth-browser"
+      ],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/settings",
+      "relativePageFile": "src/app/settings/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "settings"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "protected",
+      "path": "/test-3d",
+      "relativePageFile": "src/app/test-3d/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "test-3d"
+      ],
+      "auditTargets": [],
+      "probeByDefault": false
+    },
+    {
+      "access": "public",
+      "path": "/tools",
+      "relativePageFile": "src/app/tools/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "tools"
+      ],
+      "auditTargets": [
+        "public-smoke"
+      ],
+      "probeByDefault": false
+    },
+    {
+      "access": "public",
+      "path": "/tools/floor-tiles-calculator",
+      "relativePageFile": "src/app/tools/floor-tiles-calculator/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "tools",
+        "floor-tiles-calculator"
+      ],
+      "auditTargets": [
+        "public-smoke"
+      ],
+      "probeByDefault": false
+    },
+    {
+      "access": "public",
+      "path": "/tools/lot-plotter",
+      "relativePageFile": "src/app/tools/lot-plotter/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "tools",
+        "lot-plotter"
+      ],
+      "auditTargets": [
+        "public-smoke"
+      ],
+      "probeByDefault": false
+    },
+    {
+      "access": "public",
+      "path": "/tools/wall-paint-calculator",
+      "relativePageFile": "src/app/tools/wall-paint-calculator/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "tools",
+        "wall-paint-calculator"
+      ],
+      "auditTargets": [
+        "public-smoke"
+      ],
+      "probeByDefault": false
+    },
+    {
+      "access": "public",
+      "path": "/try",
+      "relativePageFile": "src/app/try/page.tsx",
+      "requiresFixture": false,
+      "sourceSegments": [
+        "try"
+      ],
+      "auditTargets": [
+        "public-smoke"
+      ],
+      "probeByDefault": false
+    }
+  ],
+  "summary": {
+    "byAccess": {
+      "public": 14,
+      "auth": 6,
+      "admin_login": 1,
+      "protected": 91
+    },
+    "dynamicRoutes": 19,
+    "totalRoutes": 112
+  }
+}

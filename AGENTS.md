@@ -28,6 +28,7 @@ This is not a greenfield app or a toy demo. Treat it like a multi-surface produc
 - Commands and tooling: `package.json`
 - Database truth: `DATABASE_SCHEMA.sql` and `supabase/migrations/`
 - Next.js/runtime truth: `next.config.ts`, `middleware.ts`, `src/app/`
+- Design-system contract: `DESIGN.md` for agent-readable visual identity, `src/app/globals.css` for implemented CSS/Tailwind tokens
 - Operational truth: `.ai/`
 - Deep reference/spec docs: `.ai/06_specs/deep/`
 - Repo entrypoint: `README.md`
@@ -55,6 +56,7 @@ This is not a greenfield app or a toy demo. Treat it like a multi-surface produc
 ## Validation expectations
 - Run `bun run type-check` when source-behavior or architectural claims change.
 - Run `bun run lint` when workflow, tooling, or style claims change.
+- Run `bun run design:lint` when design-system tokens, visual identity guidance, or `DESIGN.md` changes.
 - Check every referenced route, script, schema file, and doc link by path.
 - Run `git diff --check` before completion for documentation-heavy changes.
 

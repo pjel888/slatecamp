@@ -1,0 +1,668 @@
+{
+  "generatedAt": "2026-04-25T12:58:06.759Z",
+  "baseUrl": "http://localhost:3000",
+  "environment": {
+    "launchError": null,
+    "playwrightBrowserAvailable": true
+  },
+  "manifestOnly": true,
+  "manifestPath": ".ai/02_audits/evidence/route-manifest.json",
+  "routeManifestShape": {
+    "version": "2026-04-25",
+    "entryFields": [
+      "path",
+      "relativePageFile",
+      "sourceSegments",
+      "access",
+      "requiresFixture",
+      "auditTargets",
+      "probeByDefault"
+    ],
+    "inferredAccessRules": [
+      "/admin/login is treated as public login entry",
+      "/login, /register, /forgot-password, /onboarding* are treated as auth pages",
+      "/dashboard*, /admin* (except /admin/login), /developer*, /ceo*, /quiz*, and /settings* are treated as protected",
+      "All remaining page routes are treated as public for smoke coverage until a narrower guard is encoded"
+    ]
+  },
+  "summary": {
+    "blockedByEnvironment": false,
+    "failedRoutes": 0,
+    "fixtureMissing": 19,
+    "gatedRoutes": 0,
+    "passedRoutes": 0,
+    "redirectLoops": 0,
+    "totalTargets": 11
+  },
+  "accounting": {
+    "byReason": {
+      "dynamicFixtureMissing": 19,
+      "nonPublicRoute": 14,
+      "protectedNotProbedByDefault": 68
+    },
+    "entries": [
+      {
+        "path": "/",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/page.tsx"
+      },
+      {
+        "path": "/about",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/about/page.tsx"
+      },
+      {
+        "path": "/admin/3d-models",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/admin/3d-models/page.tsx"
+      },
+      {
+        "path": "/admin/activity",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/admin/activity/page.tsx"
+      },
+      {
+        "path": "/admin/assets",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/admin/assets/page.tsx"
+      },
+      {
+        "path": "/admin/assets/[id]",
+        "reason": "dynamic-fixture-missing",
+        "relativePageFile": "src/app/admin/assets/[id]/page.tsx"
+      },
+      {
+        "path": "/admin/audit",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/admin/audit/page.tsx"
+      },
+      {
+        "path": "/admin/knowledge",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/admin/knowledge/page.tsx"
+      },
+      {
+        "path": "/admin/knowledge/[id]",
+        "reason": "dynamic-fixture-missing",
+        "relativePageFile": "src/app/admin/knowledge/[id]/page.tsx"
+      },
+      {
+        "path": "/admin/knowledge/analytics",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/admin/knowledge/analytics/page.tsx"
+      },
+      {
+        "path": "/admin/knowledge/import",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/admin/knowledge/import/page.tsx"
+      },
+      {
+        "path": "/admin/knowledge/new",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/admin/knowledge/new/page.tsx"
+      },
+      {
+        "path": "/admin/knowledge/questions",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/admin/knowledge/questions/page.tsx"
+      },
+      {
+        "path": "/admin/knowledge/questions/[id]",
+        "reason": "dynamic-fixture-missing",
+        "relativePageFile": "src/app/admin/knowledge/questions/[id]/page.tsx"
+      },
+      {
+        "path": "/admin/knowledge/questions/design-problems",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/admin/knowledge/questions/design-problems/page.tsx"
+      },
+      {
+        "path": "/admin/knowledge/questions/design-problems/[id]",
+        "reason": "dynamic-fixture-missing",
+        "relativePageFile": "src/app/admin/knowledge/questions/design-problems/[id]/page.tsx"
+      },
+      {
+        "path": "/admin/knowledge/questions/new",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/admin/knowledge/questions/new/page.tsx"
+      },
+      {
+        "path": "/admin/knowledge/questions/scenarios",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/admin/knowledge/questions/scenarios/page.tsx"
+      },
+      {
+        "path": "/admin/knowledge/questions/scenarios/[id]",
+        "reason": "dynamic-fixture-missing",
+        "relativePageFile": "src/app/admin/knowledge/questions/scenarios/[id]/page.tsx"
+      },
+      {
+        "path": "/admin/pipeline",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/admin/pipeline/page.tsx"
+      },
+      {
+        "path": "/admin/preview/[previewId]",
+        "reason": "dynamic-fixture-missing",
+        "relativePageFile": "src/app/admin/preview/[previewId]/page.tsx"
+      },
+      {
+        "path": "/admin/reviews",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/admin/reviews/page.tsx"
+      },
+      {
+        "path": "/admin/search",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/admin/search/page.tsx"
+      },
+      {
+        "path": "/admin/settings",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/admin/settings/page.tsx"
+      },
+      {
+        "path": "/admin/taxonomy",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/admin/taxonomy/page.tsx"
+      },
+      {
+        "path": "/admin/taxonomy/coverage",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/admin/taxonomy/coverage/page.tsx"
+      },
+      {
+        "path": "/admin/wiki",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/admin/wiki/page.tsx"
+      },
+      {
+        "path": "/calculators",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/calculators/page.tsx"
+      },
+      {
+        "path": "/calculators/chb",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/calculators/chb/page.tsx"
+      },
+      {
+        "path": "/calculators/drywall",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/calculators/drywall/page.tsx"
+      },
+      {
+        "path": "/calculators/flooring",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/calculators/flooring/page.tsx"
+      },
+      {
+        "path": "/calculators/paint",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/calculators/paint/page.tsx"
+      },
+      {
+        "path": "/ceo/analytics",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/(protected)/ceo/analytics/page.tsx"
+      },
+      {
+        "path": "/ceo/financials",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/(protected)/ceo/financials/page.tsx"
+      },
+      {
+        "path": "/ceo/insights",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/(protected)/ceo/insights/page.tsx"
+      },
+      {
+        "path": "/ceo/team",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/(protected)/ceo/team/page.tsx"
+      },
+      {
+        "path": "/contact",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/contact/page.tsx"
+      },
+      {
+        "path": "/dashboard/3d-lab",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/dashboard/3d-lab/page.tsx"
+      },
+      {
+        "path": "/dashboard/3d-lab/[moduleId]",
+        "reason": "dynamic-fixture-missing",
+        "relativePageFile": "src/app/dashboard/3d-lab/[moduleId]/page.tsx"
+      },
+      {
+        "path": "/dashboard/analytics",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/dashboard/analytics/page.tsx"
+      },
+      {
+        "path": "/dashboard/analytics/advanced",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/dashboard/analytics/advanced/page.tsx"
+      },
+      {
+        "path": "/dashboard/area-c",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/dashboard/area-c/page.tsx"
+      },
+      {
+        "path": "/dashboard/area-c/calculator",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/dashboard/area-c/calculator/page.tsx"
+      },
+      {
+        "path": "/dashboard/area-c/design-problems",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/dashboard/area-c/design-problems/page.tsx"
+      },
+      {
+        "path": "/dashboard/area-c/design-problems/[problemId]",
+        "reason": "dynamic-fixture-missing",
+        "relativePageFile": "src/app/dashboard/area-c/design-problems/[problemId]/page.tsx"
+      },
+      {
+        "path": "/dashboard/area-c/design-quiz",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/dashboard/area-c/design-quiz/page.tsx"
+      },
+      {
+        "path": "/dashboard/area-c/design-quiz/[scenarioId]",
+        "reason": "dynamic-fixture-missing",
+        "relativePageFile": "src/app/dashboard/area-c/design-quiz/[scenarioId]/page.tsx"
+      },
+      {
+        "path": "/dashboard/assessment",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/dashboard/assessment/page.tsx"
+      },
+      {
+        "path": "/dashboard/camptrails",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/dashboard/camptrails/page.tsx"
+      },
+      {
+        "path": "/dashboard/camptrails/[slug]",
+        "reason": "dynamic-fixture-missing",
+        "relativePageFile": "src/app/dashboard/camptrails/[slug]/page.tsx"
+      },
+      {
+        "path": "/dashboard/camptrails/[slug]/day/[dayNumber]/complete",
+        "reason": "dynamic-fixture-missing",
+        "relativePageFile": "src/app/dashboard/camptrails/[slug]/day/[dayNumber]/complete/page.tsx"
+      },
+      {
+        "path": "/dashboard/camptrails/[slug]/today",
+        "reason": "dynamic-fixture-missing",
+        "relativePageFile": "src/app/dashboard/camptrails/[slug]/today/page.tsx"
+      },
+      {
+        "path": "/dashboard/code-updates",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/dashboard/code-updates/page.tsx"
+      },
+      {
+        "path": "/dashboard/cram-card",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/dashboard/cram-card/page.tsx"
+      },
+      {
+        "path": "/dashboard/dae-mode",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/dashboard/dae-mode/page.tsx"
+      },
+      {
+        "path": "/dashboard/drills",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/dashboard/drills/page.tsx"
+      },
+      {
+        "path": "/dashboard/drills/sessions",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/dashboard/drills/sessions/page.tsx"
+      },
+      {
+        "path": "/dashboard/exam-outcome",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/dashboard/exam-outcome/page.tsx"
+      },
+      {
+        "path": "/dashboard/flash",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/dashboard/flash/page.tsx"
+      },
+      {
+        "path": "/dashboard/flash/[category]",
+        "reason": "dynamic-fixture-missing",
+        "relativePageFile": "src/app/dashboard/flash/[category]/page.tsx"
+      },
+      {
+        "path": "/dashboard/heatmap",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/dashboard/heatmap/page.tsx"
+      },
+      {
+        "path": "/dashboard/notes",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/dashboard/notes/page.tsx"
+      },
+      {
+        "path": "/dashboard/notifications",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/dashboard/notifications/page.tsx"
+      },
+      {
+        "path": "/dashboard/pods",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/dashboard/pods/page.tsx"
+      },
+      {
+        "path": "/dashboard/pods/[podId]",
+        "reason": "dynamic-fixture-missing",
+        "relativePageFile": "src/app/dashboard/pods/[podId]/page.tsx"
+      },
+      {
+        "path": "/dashboard/professional",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/dashboard/professional/page.tsx"
+      },
+      {
+        "path": "/dashboard/results-day",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/dashboard/results-day/page.tsx"
+      },
+      {
+        "path": "/dashboard/score-reveal",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/dashboard/score-reveal/page.tsx"
+      },
+      {
+        "path": "/dashboard/settings",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/dashboard/settings/page.tsx"
+      },
+      {
+        "path": "/dashboard/settings/billing",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/dashboard/settings/billing/page.tsx"
+      },
+      {
+        "path": "/dashboard/settings/developer",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/dashboard/settings/developer/page.tsx"
+      },
+      {
+        "path": "/dashboard/studio",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/dashboard/studio/page.tsx"
+      },
+      {
+        "path": "/dashboard/trail",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/dashboard/trail/page.tsx"
+      },
+      {
+        "path": "/dashboard/trails",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/dashboard/trails/page.tsx"
+      },
+      {
+        "path": "/dashboard/upgrade",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/dashboard/upgrade/page.tsx"
+      },
+      {
+        "path": "/dashboard/welcome-pro",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/dashboard/welcome-pro/page.tsx"
+      },
+      {
+        "path": "/dashboard/wiki",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/dashboard/wiki/page.tsx"
+      },
+      {
+        "path": "/dashboard/wiki/[slug]",
+        "reason": "dynamic-fixture-missing",
+        "relativePageFile": "src/app/dashboard/wiki/[slug]/page.tsx"
+      },
+      {
+        "path": "/developer/api-reference",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/developer/api-reference/page.tsx"
+      },
+      {
+        "path": "/developer/architecture",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/developer/architecture/page.tsx"
+      },
+      {
+        "path": "/developer/status",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/developer/status/page.tsx"
+      },
+      {
+        "path": "/developer/status/database",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/developer/status/database/page.tsx"
+      },
+      {
+        "path": "/developer/status/infrastructure",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/developer/status/infrastructure/page.tsx"
+      },
+      {
+        "path": "/developer/tools",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/developer/tools/page.tsx"
+      },
+      {
+        "path": "/developer/tools/console",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/developer/tools/console/page.tsx"
+      },
+      {
+        "path": "/developer/tools/db",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/developer/tools/db/page.tsx"
+      },
+      {
+        "path": "/developer/tools/logs",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/developer/tools/logs/page.tsx"
+      },
+      {
+        "path": "/developer/tools/test-data",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/developer/tools/test-data/page.tsx"
+      },
+      {
+        "path": "/pricing",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/pricing/page.tsx"
+      },
+      {
+        "path": "/quiz",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/quiz/page.tsx"
+      },
+      {
+        "path": "/quiz/[mode]/session/[sessionId]",
+        "reason": "dynamic-fixture-missing",
+        "relativePageFile": "src/app/quiz/[mode]/session/[sessionId]/page.tsx"
+      },
+      {
+        "path": "/quiz/[mode]/session/[sessionId]/results",
+        "reason": "dynamic-fixture-missing",
+        "relativePageFile": "src/app/quiz/[mode]/session/[sessionId]/results/page.tsx"
+      },
+      {
+        "path": "/quiz/[mode]/session/[sessionId]/review",
+        "reason": "dynamic-fixture-missing",
+        "relativePageFile": "src/app/quiz/[mode]/session/[sessionId]/review/page.tsx"
+      },
+      {
+        "path": "/quiz/[mode]/setup",
+        "reason": "dynamic-fixture-missing",
+        "relativePageFile": "src/app/quiz/[mode]/setup/page.tsx"
+      },
+      {
+        "path": "/settings",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/settings/page.tsx"
+      },
+      {
+        "path": "/test-3d",
+        "reason": "protected-not-probed-by-default",
+        "relativePageFile": "src/app/test-3d/page.tsx"
+      },
+      {
+        "path": "/tools",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/tools/page.tsx"
+      },
+      {
+        "path": "/tools/floor-tiles-calculator",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/tools/floor-tiles-calculator/page.tsx"
+      },
+      {
+        "path": "/tools/lot-plotter",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/tools/lot-plotter/page.tsx"
+      },
+      {
+        "path": "/tools/wall-paint-calculator",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/tools/wall-paint-calculator/page.tsx"
+      },
+      {
+        "path": "/try",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/try/page.tsx"
+      }
+    ],
+    "fixtureMissing": [
+      {
+        "path": "/admin/assets/[id]",
+        "relativePageFile": "src/app/admin/assets/[id]/page.tsx",
+        "status": "fixture_missing",
+        "targetKind": "protected-probe"
+      },
+      {
+        "path": "/admin/knowledge/[id]",
+        "relativePageFile": "src/app/admin/knowledge/[id]/page.tsx",
+        "status": "fixture_missing",
+        "targetKind": "protected-probe"
+      },
+      {
+        "path": "/admin/knowledge/questions/[id]",
+        "relativePageFile": "src/app/admin/knowledge/questions/[id]/page.tsx",
+        "status": "fixture_missing",
+        "targetKind": "protected-probe"
+      },
+      {
+        "path": "/admin/knowledge/questions/design-problems/[id]",
+        "relativePageFile": "src/app/admin/knowledge/questions/design-problems/[id]/page.tsx",
+        "status": "fixture_missing",
+        "targetKind": "protected-probe"
+      },
+      {
+        "path": "/admin/knowledge/questions/scenarios/[id]",
+        "relativePageFile": "src/app/admin/knowledge/questions/scenarios/[id]/page.tsx",
+        "status": "fixture_missing",
+        "targetKind": "protected-probe"
+      },
+      {
+        "path": "/admin/preview/[previewId]",
+        "relativePageFile": "src/app/admin/preview/[previewId]/page.tsx",
+        "status": "fixture_missing",
+        "targetKind": "protected-probe"
+      },
+      {
+        "path": "/dashboard/3d-lab/[moduleId]",
+        "relativePageFile": "src/app/dashboard/3d-lab/[moduleId]/page.tsx",
+        "status": "fixture_missing",
+        "targetKind": "protected-probe"
+      },
+      {
+        "path": "/dashboard/area-c/design-problems/[problemId]",
+        "relativePageFile": "src/app/dashboard/area-c/design-problems/[problemId]/page.tsx",
+        "status": "fixture_missing",
+        "targetKind": "protected-probe"
+      },
+      {
+        "path": "/dashboard/area-c/design-quiz/[scenarioId]",
+        "relativePageFile": "src/app/dashboard/area-c/design-quiz/[scenarioId]/page.tsx",
+        "status": "fixture_missing",
+        "targetKind": "protected-probe"
+      },
+      {
+        "path": "/dashboard/camptrails/[slug]",
+        "relativePageFile": "src/app/dashboard/camptrails/[slug]/page.tsx",
+        "status": "fixture_missing",
+        "targetKind": "protected-probe"
+      },
+      {
+        "path": "/dashboard/camptrails/[slug]/day/[dayNumber]/complete",
+        "relativePageFile": "src/app/dashboard/camptrails/[slug]/day/[dayNumber]/complete/page.tsx",
+        "status": "fixture_missing",
+        "targetKind": "protected-probe"
+      },
+      {
+        "path": "/dashboard/camptrails/[slug]/today",
+        "relativePageFile": "src/app/dashboard/camptrails/[slug]/today/page.tsx",
+        "status": "fixture_missing",
+        "targetKind": "protected-probe"
+      },
+      {
+        "path": "/dashboard/flash/[category]",
+        "relativePageFile": "src/app/dashboard/flash/[category]/page.tsx",
+        "status": "fixture_missing",
+        "targetKind": "protected-probe"
+      },
+      {
+        "path": "/dashboard/pods/[podId]",
+        "relativePageFile": "src/app/dashboard/pods/[podId]/page.tsx",
+        "status": "fixture_missing",
+        "targetKind": "protected-probe"
+      },
+      {
+        "path": "/dashboard/wiki/[slug]",
+        "relativePageFile": "src/app/dashboard/wiki/[slug]/page.tsx",
+        "status": "fixture_missing",
+        "targetKind": "protected-probe"
+      },
+      {
+        "path": "/quiz/[mode]/session/[sessionId]",
+        "relativePageFile": "src/app/quiz/[mode]/session/[sessionId]/page.tsx",
+        "status": "fixture_missing",
+        "targetKind": "protected-probe"
+      },
+      {
+        "path": "/quiz/[mode]/session/[sessionId]/results",
+        "relativePageFile": "src/app/quiz/[mode]/session/[sessionId]/results/page.tsx",
+        "status": "fixture_missing",
+        "targetKind": "protected-probe"
+      },
+      {
+        "path": "/quiz/[mode]/session/[sessionId]/review",
+        "relativePageFile": "src/app/quiz/[mode]/session/[sessionId]/review/page.tsx",
+        "status": "fixture_missing",
+        "targetKind": "protected-probe"
+      },
+      {
+        "path": "/quiz/[mode]/setup",
+        "relativePageFile": "src/app/quiz/[mode]/setup/page.tsx",
+        "status": "fixture_missing",
+        "targetKind": "protected-probe"
+      }
+    ]
+  },
+  "results": []
+}

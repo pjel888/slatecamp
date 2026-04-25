@@ -14,6 +14,7 @@ This guide is the fastest way for future Codex sessions to orient in SlateCamp a
 6. `.ai/00_system/DOCS_SOURCE_OF_TRUTH.md`
 7. `.ai/00_system/VALIDATION_MATRIX.md`
 8. `.ai/00_system/ENVIRONMENT_CONTRACT.md`
+9. `DESIGN.md` for visual/design-system work
 
 ## Read next by task type
 
@@ -52,10 +53,41 @@ This guide is the fastest way for future Codex sessions to orient in SlateCamp a
 - `.ai/02_audits/AGENTS_AND_DOCS_AUDIT.md`
 - `.ai/03_plans/DOCS_AND_AGENTS_HARDENING_PLAN.md`
 
+### Design-system or UI styling work
+
+- `DESIGN.md`
+- `src/app/globals.css`
+- `.ai/06_specs/deep/03-design/001-design-system.md`
+- `/developer/design-system` when the app is running
+- run `bun run design:lint` when `DESIGN.md` changes
+
 ### Skill-assisted Codex work
 
 - `.agents/README.md`
 - `.ai/00_system/CODEX_SKILLS_MAP.md`
+
+### Companion AI CLI work
+
+- Kimi Code CLI is available locally and should be used opportunistically when it can improve quality, speed, or independent verification.
+- Verified on 2026-04-25:
+  - binary: `/Users/philiplewis/.local/bin/kimi`
+  - `kimi info`: `kimi-cli version: 1.37.0`
+  - health check: `kimi --quiet -p 'Health check only. Reply exactly: KIMI_CODE_OK'`
+- Good uses:
+  - independent review of broad plans, audits, and risky implementation strategies
+  - second-pass code review on bounded diffs
+  - UX copy alternatives and product-claim tightening
+  - test strategy, edge-case brainstorming, and migration pre-mortems
+  - summarizing large read-only context when Codex needs a parallel perspective
+- Guardrails:
+  - Codex remains responsible for final edits, verification, and claims.
+  - Do not send secrets, credentials, private env values, production data, or service-role keys to Kimi.
+  - Prefer read-only prompts unless explicitly delegating a contained draft or review task.
+  - Use Kimi when it materially helps; do not block simple local work on Kimi.
+- Typical non-interactive commands:
+  - `kimi --quiet -p 'Health check only. Reply exactly: KIMI_CODE_OK'`
+  - `kimi --work-dir /Users/philiplewis/slatecamp --quiet -p 'Read-only review: ...'`
+  - `kimi --work-dir /Users/philiplewis/slatecamp --plan --quiet -p 'Plan review only: ...'`
 
 ## What the major surfaces own
 
@@ -73,6 +105,7 @@ This guide is the fastest way for future Codex sessions to orient in SlateCamp a
 - Bun bootstrap currently fails on one manifest dependency in this environment
 - `/developer` mixes true inspection surfaces with mock/static displays
 - many active `.ai` docs are still stale from the 2026-04-16 pass and need staged refresh
+- Kimi Code is available as a companion CLI, but it is not a substitute for local inspection, tests, or Codex-owned verification
 
 ## Anti-loop rule
 

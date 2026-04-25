@@ -45,7 +45,7 @@ Every product decision, every team decision, every resource allocation question 
 - Hires who don't care about education don't join the team
 
 ### 3. Craft Without Decoration
-The Rams Standard — every element earns its place. We build things that are good, not things that look good. We ship when something is ready, not when it's impressive.
+The SlateCamp Design Standard — every element serves study clarity, state clarity, or action clarity. We build things that are good, not things that look good. We ship when something is ready, not when it's impressive.
 
 **In practice:**
 - Code is clean and documented

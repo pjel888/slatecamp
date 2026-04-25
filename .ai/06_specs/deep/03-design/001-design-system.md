@@ -2,14 +2,47 @@
 
 **Status:** Active  
 **Version:** 1.0  
-**Last Updated:** 2026-04-06  
-**Source-of-Truth:** `src/app/globals.css` (lines 1-1026)
+**Last Updated:** 2026-04-25
+**Source-of-Truth:** `DESIGN.md` for agent-readable visual identity, `src/app/globals.css` for implemented CSS/Tailwind tokens
 
 ---
 
-## Slatecamp design system
+## SlateCamp Design System
 
-SlateCamp uses the **Slatecamp design system** — a warm, research-backed aesthetic built on Tailwind CSS 4 with CSS-first configuration. All design tokens are defined as CSS custom properties in `globals.css`.
+SlateCamp uses the **SlateCamp design system**: a calm, study-first product language for Philippine Architecture Licensure Exam candidates. The system is not a borrowed external design-language derivative. External references are research inputs only; the current authority is SlateCamp's own candidate-centered doctrine in `DESIGN.md`.
+
+`DESIGN.md` is the root-level agent-readable contract for the same design system. Keep it aligned with this document and `src/app/globals.css` whenever color, typography, spacing, shape, component, or visual identity rules change. Validate it with `bun run design:lint`.
+
+All design tokens are defined as CSS custom properties in `globals.css`. New work should use semantic Tailwind utilities and shared components instead of raw hex values, ad-hoc radii, or borrowed visual-system terminology.
+
+### Design Doctrine
+
+SlateCamp's design standard is:
+
+- **Study-first:** layouts reduce exam-prep friction and keep candidates oriented.
+- **Signal-first:** visual emphasis communicates state, priority, or the next useful action.
+- **Legible by default:** Atkinson Hyperlegible body text, clear contrast, persistent labels, and visible focus states are product requirements.
+- **Dense but breathable:** dashboards and study tools should support repeated daily use without marketing-page spacing.
+- **Calm under pressure:** no shame language, hype, confetti, leaderboards, or artificial urgency.
+- **Token-owned:** color, typography, spacing, radius, elevation, and motion come from the current SlateCamp token set.
+
+### System Layers
+
+| Layer | Owner | Current Source |
+|-------|-------|----------------|
+| Foundations | Design system | `DESIGN.md`, `src/app/globals.css`, this file |
+| Components | Frontend/design system | `src/components/ui/`, shared app components, `/developer/design-system` |
+| Patterns | Product/frontend | onboarding, quiz, dashboard, settings, admin, empty/error/loading states |
+| Governance | Docs/agents | `.ai/00_system/DOCS_SOURCE_OF_TRUTH.md`, `.codex/skills/slatecamp-design-system-engineer/SKILL.md`, `bun run design:lint` |
+
+### Research Inputs
+
+Research validates constraints; it does not become the brand.
+
+- [W3C Design Tokens Format Module 2025.10](https://www.w3.org/community/reports/design-tokens/CG-FINAL-format-20251028/) supports token names, values, metadata, grouping, and aliases as a cross-tool design-system contract.
+- [WCAG 2.2](https://www.w3.org/TR/WCAG22/) governs focus visibility, focus not obscured, labels, contrast, input assistance, and minimum pointer targets.
+- [Figma variables, collections, and modes](https://help.figma.com/hc/en-us/articles/14506821864087-Overview-of-variables-collections-and-modes) map well to SlateCamp's semantic tokens, aliases, and future light/dark/accessibility modes.
+- [Storybook UI testing](https://storybook.js.org/docs/writing-tests) is the reference model for documenting and testing shared component states when the component catalog is expanded.
 
 ---
 
@@ -121,15 +154,17 @@ SlateCamp uses the **Slatecamp design system** — a warm, research-backed aesth
 | `--quiz-selected-bg` | — | Selected option background |
 | `--quiz-selected-border` | — | Selected option border |
 
-### Wiki-Specific Colors
+### Legacy / Wiki-Specific Alias Colors
+
+These aliases exist in `globals.css` for current Wiki and preserved component compatibility. New UI should prefer the semantic tokens above (`--primary`, `--warning`, `--destructive`, `--success`, `--background`, `--foreground`, `--border`) unless a Wiki component explicitly depends on the alias.
 
 | Token | Hex | Usage |
 |-------|-----|-------|
 | `--cobalt-light` | — | Wiki highlights |
-| `--signal-gold` | — | Warning indicators |
-| `--signal-red` | — | Error indicators |
-| `--signal-green` | — | Success indicators |
-| `--cream` | — | Wiki prose backgrounds |
+| `--signal-gold` | — | Legacy warning alias |
+| `--signal-red` | — | Legacy error alias |
+| `--signal-green` | — | Legacy success alias |
+| `--cream` | — | Legacy/wiki prose backgrounds |
 | `--wiki-body` | — | Wiki prose body text |
 | `--wiki-border` | — | Wiki borders |
 
@@ -146,8 +181,8 @@ Loaded via `next/font/google` in `src/app/layout.tsx`:
 | Atkinson Hyperlegible | `--font-atkinson` | Primary body text (accessibility-optimized) | `font-sans` (default) |
 | DM Mono | `--font-dm-mono` | Code, data values, Readiness Score number | `font-mono` |
 | Plus Jakarta Sans | `--font-display` | Display headings | — |
-| Syne | `--font-syne` | Alternative display | `.font-syne` |
-| Boldonse | `--font-boldonse` | Bold accents in headings | `.font-boldonse` |
+| Syne | `--font-syne` | Legacy/accent display only | `.font-syne` |
+| Boldonse | `--font-boldonse` | Legacy/accent display only | `.font-boldonse` |
 | Sora | `--font-sora` | Logo | `.logo-sora` |
 | Geist | fallback only | Sans-serif fallback | — |
 
@@ -155,7 +190,8 @@ Loaded via `next/font/google` in `src/app/layout.tsx`:
 
 - **Atkinson Hyperlegible** — Primary body text. Accessibility-optimized for legibility.
 - **DM Mono** — Code snippets, data values, Readiness Score number display only. Never for labels/categories/metadata.
-- **Plus Jakarta Sans / Syne** — Display headings and bold accents.
+- **Plus Jakarta Sans** — Default display headings and bold section titles.
+- **Syne / Boldonse** — Legacy/accent display use only where already established.
 - **Never** use monospace for labels, categories, or metadata.
 
 ### Type Scale
@@ -301,4 +337,3 @@ return <div dangerouslySetInnerHTML={{ __html: sanitized }} />
 ---
 
 *All token values extracted directly from `src/app/globals.css`. Do not use values from archived `design-system.md`.*
-

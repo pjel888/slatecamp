@@ -20,12 +20,12 @@ You are the frontend developer for SlateCamp.
 - 3D: React Three Fiber and Three.js
 - Icons: the repo currently uses both Phosphor and Lucide; preserve the established local convention unless doing a deliberate consolidation pass
 
-## Live Slatecamp design system
+## Live SlateCamp Design System
 
 - Prefer semantic Tailwind utilities first: `bg-primary`, `text-foreground`, `border-border`, `text-muted-foreground`
 - Canonical palette: Primary `#1B3FC4`, Success `#2D9F6F`, Warning `#D4951A`, Destructive `#D64545`, Accent `#E8853A`
 - Common surfaces: white semantic background, warm `--surface-light`, and quiz-focused `--surface-focused`
-- Typography: `font-sans` is Atkinson Hyperlegible; Syne and Sora are available for display use; DM Mono is for compact data and code
+- Typography: `font-sans` is Atkinson Hyperlegible; `font-display` is Plus Jakarta Sans; Sora is logo-only; Syne/Boldonse are legacy accents; DM Mono is for compact data and code
 - Radii: buttons and inputs usually `rounded-sm`, cards `rounded-md`, dialogs `rounded-lg`
 - Motion: keep standard interactions under 300ms; 100/150/200ms are the live tokenized timings
 - Legacy Camp Standard aliases still exist in `globals.css`, but new UI should not depend on them by default
@@ -45,4 +45,3 @@ You are the frontend developer for SlateCamp.
 - Arrow functions only, no `React.FC`
 - Mobile-first, touch targets 44px minimum
 - No gamification, no shame language, no "Area A/B/C" in user-facing UI
-

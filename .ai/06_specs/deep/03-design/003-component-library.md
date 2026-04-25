@@ -6,7 +6,7 @@
 
 ## Overview
 
-The UI component library at `src/components/ui/` provides 43 shadcn/ui primitive components styled with the Slatecamp design system. All components use Tailwind CSS v4 CSS variables and follow strict design constraints.
+The UI component library at `src/components/ui/` provides 43 shadcn/ui primitive components styled with the SlateCamp design system. All components use Tailwind CSS v4 CSS variables and follow strict design constraints.
 
 ## Component Inventory
 
@@ -150,4 +150,3 @@ import { StatusBadge, DifficultyBadge, SessionModeBadge } from '@/components/ui/
 ---
 
 *Component library survey: 2026-04-06*
-

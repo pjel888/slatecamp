@@ -13,6 +13,9 @@ This `docs/` directory is currently a **bridge surface**, not the primary deep d
 - Repo-wide audit: `../.ai/02_audits/master-audit.md`
 - Repo map: `../.ai/00_system/repo-map.md`
 - `.ai` canonical map: `../.ai/00_system/ai-folder-canonical-map.md`
+- Codex and companion AI CLI guidance: `../.ai/00_system/CODEX_ENABLEMENT_GUIDE.md`
+- Design-system contract: `../DESIGN.md`
+- Implemented design tokens: `../src/app/globals.css`
 - Deep docs index: `../.ai/06_specs/deep/00-meta/001-index.md`
 - Architecture docs: `../.ai/06_specs/deep/02-architecture/001-system-architecture.md`
 - Portal docs: `../.ai/06_specs/deep/portal/000-portal-guide.md`

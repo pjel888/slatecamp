@@ -1,0 +1,531 @@
+{
+  "generatedAt": "2026-04-25T12:58:06.299Z",
+  "baseUrl": "http://localhost:3000",
+  "manifestOnly": true,
+  "manifestPath": ".ai/02_audits/evidence/route-manifest.json",
+  "routeManifestShape": {
+    "version": "2026-04-25",
+    "entryFields": [
+      "path",
+      "relativePageFile",
+      "sourceSegments",
+      "access",
+      "requiresFixture",
+      "auditTargets",
+      "probeByDefault"
+    ],
+    "inferredAccessRules": [
+      "/admin/login is treated as public login entry",
+      "/login, /register, /forgot-password, /onboarding* are treated as auth pages",
+      "/dashboard*, /admin* (except /admin/login), /developer*, /ceo*, /quiz*, and /settings* are treated as protected",
+      "All remaining page routes are treated as public for smoke coverage until a narrower guard is encoded"
+    ]
+  },
+  "summary": {
+    "failedRoutes": 0,
+    "gatedRoutes": 0,
+    "passedRoutes": 0,
+    "redirectLoops": 0,
+    "totalTargets": 14
+  },
+  "accounting": {
+    "byReason": {
+      "dynamicFixtureMissing": 19,
+      "nonPublicRoute": 79,
+      "protectedNotProbedByDefault": 0
+    },
+    "entries": [
+      {
+        "path": "/admin",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/admin/page.tsx"
+      },
+      {
+        "path": "/admin/3d-models",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/admin/3d-models/page.tsx"
+      },
+      {
+        "path": "/admin/activity",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/admin/activity/page.tsx"
+      },
+      {
+        "path": "/admin/assets",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/admin/assets/page.tsx"
+      },
+      {
+        "path": "/admin/assets/[id]",
+        "reason": "dynamic-fixture-missing",
+        "relativePageFile": "src/app/admin/assets/[id]/page.tsx"
+      },
+      {
+        "path": "/admin/audit",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/admin/audit/page.tsx"
+      },
+      {
+        "path": "/admin/knowledge",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/admin/knowledge/page.tsx"
+      },
+      {
+        "path": "/admin/knowledge/[id]",
+        "reason": "dynamic-fixture-missing",
+        "relativePageFile": "src/app/admin/knowledge/[id]/page.tsx"
+      },
+      {
+        "path": "/admin/knowledge/analytics",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/admin/knowledge/analytics/page.tsx"
+      },
+      {
+        "path": "/admin/knowledge/import",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/admin/knowledge/import/page.tsx"
+      },
+      {
+        "path": "/admin/knowledge/new",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/admin/knowledge/new/page.tsx"
+      },
+      {
+        "path": "/admin/knowledge/questions",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/admin/knowledge/questions/page.tsx"
+      },
+      {
+        "path": "/admin/knowledge/questions/[id]",
+        "reason": "dynamic-fixture-missing",
+        "relativePageFile": "src/app/admin/knowledge/questions/[id]/page.tsx"
+      },
+      {
+        "path": "/admin/knowledge/questions/design-problems",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/admin/knowledge/questions/design-problems/page.tsx"
+      },
+      {
+        "path": "/admin/knowledge/questions/design-problems/[id]",
+        "reason": "dynamic-fixture-missing",
+        "relativePageFile": "src/app/admin/knowledge/questions/design-problems/[id]/page.tsx"
+      },
+      {
+        "path": "/admin/knowledge/questions/new",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/admin/knowledge/questions/new/page.tsx"
+      },
+      {
+        "path": "/admin/knowledge/questions/scenarios",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/admin/knowledge/questions/scenarios/page.tsx"
+      },
+      {
+        "path": "/admin/knowledge/questions/scenarios/[id]",
+        "reason": "dynamic-fixture-missing",
+        "relativePageFile": "src/app/admin/knowledge/questions/scenarios/[id]/page.tsx"
+      },
+      {
+        "path": "/admin/login",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/admin/login/page.tsx"
+      },
+      {
+        "path": "/admin/pipeline",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/admin/pipeline/page.tsx"
+      },
+      {
+        "path": "/admin/preview/[previewId]",
+        "reason": "dynamic-fixture-missing",
+        "relativePageFile": "src/app/admin/preview/[previewId]/page.tsx"
+      },
+      {
+        "path": "/admin/reviews",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/admin/reviews/page.tsx"
+      },
+      {
+        "path": "/admin/search",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/admin/search/page.tsx"
+      },
+      {
+        "path": "/admin/settings",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/admin/settings/page.tsx"
+      },
+      {
+        "path": "/admin/taxonomy",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/admin/taxonomy/page.tsx"
+      },
+      {
+        "path": "/admin/taxonomy/coverage",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/admin/taxonomy/coverage/page.tsx"
+      },
+      {
+        "path": "/admin/wiki",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/admin/wiki/page.tsx"
+      },
+      {
+        "path": "/auth/reset-password",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/auth/reset-password/page.tsx"
+      },
+      {
+        "path": "/ceo",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/(protected)/ceo/page.tsx"
+      },
+      {
+        "path": "/ceo/analytics",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/(protected)/ceo/analytics/page.tsx"
+      },
+      {
+        "path": "/ceo/financials",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/(protected)/ceo/financials/page.tsx"
+      },
+      {
+        "path": "/ceo/insights",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/(protected)/ceo/insights/page.tsx"
+      },
+      {
+        "path": "/ceo/team",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/(protected)/ceo/team/page.tsx"
+      },
+      {
+        "path": "/dashboard",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/dashboard/page.tsx"
+      },
+      {
+        "path": "/dashboard/3d-lab",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/dashboard/3d-lab/page.tsx"
+      },
+      {
+        "path": "/dashboard/3d-lab/[moduleId]",
+        "reason": "dynamic-fixture-missing",
+        "relativePageFile": "src/app/dashboard/3d-lab/[moduleId]/page.tsx"
+      },
+      {
+        "path": "/dashboard/analytics",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/dashboard/analytics/page.tsx"
+      },
+      {
+        "path": "/dashboard/analytics/advanced",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/dashboard/analytics/advanced/page.tsx"
+      },
+      {
+        "path": "/dashboard/area-c",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/dashboard/area-c/page.tsx"
+      },
+      {
+        "path": "/dashboard/area-c/calculator",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/dashboard/area-c/calculator/page.tsx"
+      },
+      {
+        "path": "/dashboard/area-c/design-problems",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/dashboard/area-c/design-problems/page.tsx"
+      },
+      {
+        "path": "/dashboard/area-c/design-problems/[problemId]",
+        "reason": "dynamic-fixture-missing",
+        "relativePageFile": "src/app/dashboard/area-c/design-problems/[problemId]/page.tsx"
+      },
+      {
+        "path": "/dashboard/area-c/design-quiz",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/dashboard/area-c/design-quiz/page.tsx"
+      },
+      {
+        "path": "/dashboard/area-c/design-quiz/[scenarioId]",
+        "reason": "dynamic-fixture-missing",
+        "relativePageFile": "src/app/dashboard/area-c/design-quiz/[scenarioId]/page.tsx"
+      },
+      {
+        "path": "/dashboard/assessment",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/dashboard/assessment/page.tsx"
+      },
+      {
+        "path": "/dashboard/camptrails",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/dashboard/camptrails/page.tsx"
+      },
+      {
+        "path": "/dashboard/camptrails/[slug]",
+        "reason": "dynamic-fixture-missing",
+        "relativePageFile": "src/app/dashboard/camptrails/[slug]/page.tsx"
+      },
+      {
+        "path": "/dashboard/camptrails/[slug]/day/[dayNumber]/complete",
+        "reason": "dynamic-fixture-missing",
+        "relativePageFile": "src/app/dashboard/camptrails/[slug]/day/[dayNumber]/complete/page.tsx"
+      },
+      {
+        "path": "/dashboard/camptrails/[slug]/today",
+        "reason": "dynamic-fixture-missing",
+        "relativePageFile": "src/app/dashboard/camptrails/[slug]/today/page.tsx"
+      },
+      {
+        "path": "/dashboard/code-updates",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/dashboard/code-updates/page.tsx"
+      },
+      {
+        "path": "/dashboard/cram-card",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/dashboard/cram-card/page.tsx"
+      },
+      {
+        "path": "/dashboard/dae-mode",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/dashboard/dae-mode/page.tsx"
+      },
+      {
+        "path": "/dashboard/drills",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/dashboard/drills/page.tsx"
+      },
+      {
+        "path": "/dashboard/drills/sessions",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/dashboard/drills/sessions/page.tsx"
+      },
+      {
+        "path": "/dashboard/exam-outcome",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/dashboard/exam-outcome/page.tsx"
+      },
+      {
+        "path": "/dashboard/flash",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/dashboard/flash/page.tsx"
+      },
+      {
+        "path": "/dashboard/flash/[category]",
+        "reason": "dynamic-fixture-missing",
+        "relativePageFile": "src/app/dashboard/flash/[category]/page.tsx"
+      },
+      {
+        "path": "/dashboard/heatmap",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/dashboard/heatmap/page.tsx"
+      },
+      {
+        "path": "/dashboard/notes",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/dashboard/notes/page.tsx"
+      },
+      {
+        "path": "/dashboard/notifications",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/dashboard/notifications/page.tsx"
+      },
+      {
+        "path": "/dashboard/pods",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/dashboard/pods/page.tsx"
+      },
+      {
+        "path": "/dashboard/pods/[podId]",
+        "reason": "dynamic-fixture-missing",
+        "relativePageFile": "src/app/dashboard/pods/[podId]/page.tsx"
+      },
+      {
+        "path": "/dashboard/professional",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/dashboard/professional/page.tsx"
+      },
+      {
+        "path": "/dashboard/results-day",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/dashboard/results-day/page.tsx"
+      },
+      {
+        "path": "/dashboard/score-reveal",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/dashboard/score-reveal/page.tsx"
+      },
+      {
+        "path": "/dashboard/settings",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/dashboard/settings/page.tsx"
+      },
+      {
+        "path": "/dashboard/settings/billing",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/dashboard/settings/billing/page.tsx"
+      },
+      {
+        "path": "/dashboard/settings/developer",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/dashboard/settings/developer/page.tsx"
+      },
+      {
+        "path": "/dashboard/studio",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/dashboard/studio/page.tsx"
+      },
+      {
+        "path": "/dashboard/trail",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/dashboard/trail/page.tsx"
+      },
+      {
+        "path": "/dashboard/trails",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/dashboard/trails/page.tsx"
+      },
+      {
+        "path": "/dashboard/upgrade",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/dashboard/upgrade/page.tsx"
+      },
+      {
+        "path": "/dashboard/welcome-pro",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/dashboard/welcome-pro/page.tsx"
+      },
+      {
+        "path": "/dashboard/wiki",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/dashboard/wiki/page.tsx"
+      },
+      {
+        "path": "/dashboard/wiki/[slug]",
+        "reason": "dynamic-fixture-missing",
+        "relativePageFile": "src/app/dashboard/wiki/[slug]/page.tsx"
+      },
+      {
+        "path": "/developer",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/developer/page.tsx"
+      },
+      {
+        "path": "/developer/api-reference",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/developer/api-reference/page.tsx"
+      },
+      {
+        "path": "/developer/architecture",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/developer/architecture/page.tsx"
+      },
+      {
+        "path": "/developer/status",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/developer/status/page.tsx"
+      },
+      {
+        "path": "/developer/status/database",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/developer/status/database/page.tsx"
+      },
+      {
+        "path": "/developer/status/infrastructure",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/developer/status/infrastructure/page.tsx"
+      },
+      {
+        "path": "/developer/tools",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/developer/tools/page.tsx"
+      },
+      {
+        "path": "/developer/tools/console",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/developer/tools/console/page.tsx"
+      },
+      {
+        "path": "/developer/tools/db",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/developer/tools/db/page.tsx"
+      },
+      {
+        "path": "/developer/tools/logs",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/developer/tools/logs/page.tsx"
+      },
+      {
+        "path": "/developer/tools/test-data",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/developer/tools/test-data/page.tsx"
+      },
+      {
+        "path": "/forgot-password",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/(auth)/forgot-password/page.tsx"
+      },
+      {
+        "path": "/login",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/(auth)/login/page.tsx"
+      },
+      {
+        "path": "/onboarding",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/(auth)/onboarding/page.tsx"
+      },
+      {
+        "path": "/onboarding/comp-exam",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/(auth)/onboarding/comp-exam/page.tsx"
+      },
+      {
+        "path": "/quiz",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/quiz/page.tsx"
+      },
+      {
+        "path": "/quiz/[mode]/session/[sessionId]",
+        "reason": "dynamic-fixture-missing",
+        "relativePageFile": "src/app/quiz/[mode]/session/[sessionId]/page.tsx"
+      },
+      {
+        "path": "/quiz/[mode]/session/[sessionId]/results",
+        "reason": "dynamic-fixture-missing",
+        "relativePageFile": "src/app/quiz/[mode]/session/[sessionId]/results/page.tsx"
+      },
+      {
+        "path": "/quiz/[mode]/session/[sessionId]/review",
+        "reason": "dynamic-fixture-missing",
+        "relativePageFile": "src/app/quiz/[mode]/session/[sessionId]/review/page.tsx"
+      },
+      {
+        "path": "/quiz/[mode]/setup",
+        "reason": "dynamic-fixture-missing",
+        "relativePageFile": "src/app/quiz/[mode]/setup/page.tsx"
+      },
+      {
+        "path": "/register",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/(auth)/register/page.tsx"
+      },
+      {
+        "path": "/settings",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/settings/page.tsx"
+      },
+      {
+        "path": "/test-3d",
+        "reason": "non-public-route",
+        "relativePageFile": "src/app/test-3d/page.tsx"
+      }
+    ]
+  },
+  "results": []
+}

@@ -18,10 +18,13 @@ description: >
 
 ## The Frontend Philosophy
 
-SlateCamp's UI is built on the Rams Standard: **every element must earn its place.**
-No decorative components. No unnecessary interactivity. No animation for animation's sake.
-The interface is calm, purposeful, and honest — it serves the student's exam preparation,
-not the engineer's creative impulses.
+SlateCamp's UI is built on the SlateCamp Design Standard: every component must serve
+study clarity, state clarity, or action clarity. No decorative components. No unnecessary
+interactivity. No animation for animation's sake. The interface is calm, purposeful, and
+honest — it serves the student's exam preparation, not the engineer's creative impulses.
+
+Read `DESIGN.md` and `.codex/skills/slatecamp-design-system-engineer/SKILL.md` before
+making visual decisions.
 
 Read `slatecamp-tech-stack` first for the full architectural context.
 
@@ -320,12 +323,14 @@ export const useSessionStore = create<SessionState>((set) => ({
 
 | Use case | Font | Weight | Class |
 |---|---|---|---|
-| Section headings | Syne | 800 | `font-display font-extrabold` |
-| Hero name | GeistSans | 700 | `font-hero font-bold` |
-| Body text | Inter | 400 | `font-sans` |
-| Labels / eyebrows | DM Mono | 500 | `font-mono uppercase tracking-widest` |
+| Section headings | Plus Jakarta Sans | 700 | `font-display font-bold` |
+| Logo | Sora | 700 | `logo-sora` |
+| Body text | Atkinson Hyperlegible | 400 | `font-sans` |
+| Labels / eyebrows | Atkinson Hyperlegible | 700 | `font-sans font-bold uppercase` |
 | Numbers / stats | DM Mono | 500 | `font-mono tabular-nums` |
-| Editorial quotes | Instrument Serif | 400 | `font-serif` (rare) |
+| Code / technical references | DM Mono | 400 | `font-mono` |
+
+Syne and Boldonse are legacy/accent display faces only where already established.
 
 ---
 

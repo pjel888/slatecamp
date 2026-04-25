@@ -24,7 +24,7 @@ is: clean, precise, readable, trustworthy.
 **The rendering philosophy:**
 - **Clarity over beauty** — every visual choice serves readability
 - **Consistent over impressive** — all 186 modules share one visual language
-- **Restrained over flashy** — Rams Standard applies to 3D too
+- **Restrained over flashy** — the SlateCamp Design Standard applies to 3D too
 - **Performant over photorealistic** — 30fps mobile is non-negotiable
 
 ---
