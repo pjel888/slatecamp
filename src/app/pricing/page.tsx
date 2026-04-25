@@ -1,21 +1,59 @@
-import { MarketingNav } from "@/components/marketing/MarketingNav";
-import { MarketingFooter } from "@/components/marketing/MarketingFooter";
-import { FaqSection } from "@/components/marketing/FaqSection";
-import { FinalCtaSection } from "@/components/marketing/FinalCtaSection";
-import { PricingContent } from "./pricing-content";
-import { siteConfig } from "@/lib/constants/site";
-import { ROUTES } from "@/lib/routes";
+import { MarketingNav } from '@/components/marketing/MarketingNav'
+import { MarketingFooter } from '@/components/marketing/MarketingFooter'
+import { FaqSection } from '@/components/marketing/FaqSection'
+import { FinalCtaSection } from '@/components/marketing/FinalCtaSection'
+import { FEATURE_PAYMENTS_ENABLED } from '@/lib/constants/feature-flags'
+import { siteConfig } from '@/lib/constants/site'
+import { ROUTES } from '@/lib/routes'
+import { PricingContent } from './pricing-content'
 
-export const metadata = { title: `Pricing — ${siteConfig.name}` };
+export const metadata = { title: `Pricing — ${siteConfig.name}` }
 
-const PRICING_FAQS = [
-  { question: "Can I use SlateCamp for free?", answer: "Yes. The diagnostic and a core set of practice questions are free with no account required. A paid plan unlocks the full question bank, spaced repetition scheduling, and detailed analytics." },
-  { question: "What payment methods do you accept?", answer: "We accept major credit/debit cards, GCash, Maya, and bank transfers via our payment partners. All transactions are processed securely." },
-  { question: "Can I cancel anytime?", answer: "Yes. You can cancel your subscription at any time from your dashboard settings. Your access continues until the end of your billing period." },
-  { question: "Is there a student discount?", answer: "Yes. Architecture students can get discounted access through our Students & Teachers plan. Verify your student status during sign-up." },
-  { question: "What happens when my subscription ends?", answer: "You keep access to your study history and readiness scores. Practice questions revert to the free tier. You can resubscribe anytime to regain full access." },
-  { question: "Do you offer team or school pricing?", answer: "Yes. Our Organizations plan includes bulk licensing, admin dashboards, and progress tracking across your team. Contact us for custom pricing." },
-];
+const PRICING_FAQS = FEATURE_PAYMENTS_ENABLED
+  ? [
+      {
+        question: 'Can I use SlateCamp for free?',
+        answer:
+          'Yes. Free access stays available for the diagnostic and starter study surfaces, while paid checkout only appears on supported plans.',
+      },
+      {
+        question: 'Which paid plans are currently supported?',
+        answer:
+          'Only the plans shown in the live checkout flow are currently supported. If you need school, review-center, or partner access, contact SlateCamp first.',
+      },
+      {
+        question: 'How do I manage billing?',
+        answer:
+          'Billing controls only appear when payments are enabled for your build and plan. If you do not see billing controls, your account is currently on the free path.',
+      },
+      {
+        question: 'Do you offer school or team pricing?',
+        answer:
+          'Not as a public self-serve plan today. Institutional conversations are handled manually through contact.',
+      },
+    ]
+  : [
+      {
+        question: 'Can I use SlateCamp for free?',
+        answer:
+          'Yes. The currently available study surfaces are free while billing is disabled.',
+      },
+      {
+        question: 'Is paid checkout live right now?',
+        answer:
+          'Not in this build. Public payment checkout is disabled for now, so SlateCamp will not ask you for card or e-wallet details here.',
+      },
+      {
+        question: 'Can I cancel a plan today?',
+        answer:
+          'There is no active self-serve subscription flow in the current build, so there is nothing to cancel from the pricing page right now.',
+      },
+      {
+        question: 'Do you offer school or team pricing?',
+        answer:
+          'Not as a public self-serve plan today. If you are exploring review-center or school use, contact SlateCamp first.',
+      },
+    ]
 
 export default function PricingPage() {
   return (
@@ -39,5 +77,5 @@ export default function PricingPage() {
       </main>
       <MarketingFooter />
     </div>
-  );
+  )
 }

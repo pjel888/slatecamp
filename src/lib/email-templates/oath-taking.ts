@@ -26,9 +26,9 @@ and practice architecture with integrity. Your family will be there.
 Someone tonight is at 38% wondering if they'll make it.
 Your story is their map.
 
-When you get back: share your journey in Campfire.
-How you started. What worked. What you'd do differently.
-Your experience is someone else's preparation.
+When you get back: open your Professional Reference hub.
+Keep the code references and study trail that got you here close at hand.
+Your experience will still guide the people who come after you.
 
 Congratulations, Architect ${firstName}.
 Your SlateCamp account is now your professional reference library.`,
@@ -45,7 +45,7 @@ export const generatePostOathEmail = (userName: string): EmailTemplate => {
 
   return {
     subject: `You are now Architect ${firstName}, RLA.`,
-    body: `The Campfire is waiting for your story.`,
+    body: `Your Professional Reference hub is ready.`,
     html: generatePostOathHtml(firstName),
   }
 }
@@ -143,16 +143,16 @@ const generatePreOathHtml = (firstName: string): string => `
       <p>Someone tonight is at 38% wondering if they'll make it.<br>
       <span class="highlight">Your story is their map.</span></p>
 
-      <p>When you get back: share your journey in Campfire.<br>
-      How you started. What worked. What you'd do differently.<br>
-      Your experience is someone else's preparation.</p>
+      <p>When you get back: open your Professional Reference hub.<br>
+      Keep the code references and study trail that got you here close at hand.<br>
+      Your experience will still guide the people who come after you.</p>
 
       <p style="margin-top: 32px; font-size: 15px;">
         Congratulations, Architect ${firstName}.<br>
         Your SlateCamp account is now your professional reference library.
       </p>
 
-      <a href="https://www.slatecamp.com/dashboard" class="cta-button">Share My Story in Campfire →</a>
+      <a href="https://www.slatecamp.com/dashboard/professional" class="cta-button">Open My Professional Hub →</a>
 
       <div class="footer">
         <p>SlateCamp — Professional Study Engine</p>
@@ -253,12 +253,12 @@ const generatePostOathHtml = (firstName: string): string => `
       <h1>You are now Architect ${firstName}, RLA.</h1>
 
       <div class="message">
-        The Campfire is waiting for your story.
+        Your Professional Reference hub is ready.
       </div>
 
-      <p>You've taken the oath. Now it's time to show others what's possible.</p>
+      <p>You've taken the oath. Now keep the same references and study trail within reach as you move into practice.</p>
 
-      <a href="https://www.slatecamp.com/dashboard" class="cta-button">Visit Campfire →</a>
+      <a href="https://www.slatecamp.com/dashboard/professional" class="cta-button">Open SlateCamp →</a>
 
       <div class="footer">
         <p>SlateCamp — Professional Study Engine</p>

@@ -9,6 +9,7 @@ import {
 import { MarketingNav } from "@/components/marketing/MarketingNav";
 import { MarketingFooter } from "@/components/marketing/MarketingFooter";
 import { ContactForm } from "@/components/marketing/ContactForm";
+import { FEATURE_PAYMENTS_ENABLED } from "@/lib/constants/feature-flags";
 import { siteConfig } from "@/lib/constants/site";
 
 export const metadata = { title: `Contact — ${siteConfig.name}` };
@@ -24,11 +25,13 @@ const FAQS = [
   },
   {
     q: "Can I use SlateCamp for free?",
-    a: "Yes. The diagnostic and a core set of practice questions are free with no account required. A paid plan unlocks the full question bank, spaced repetition scheduling, and detailed analytics.",
+    a: FEATURE_PAYMENTS_ENABLED
+      ? "Yes. The free diagnostic and starter study surfaces remain available, while paid access only appears on supported plans."
+      : "Yes. The currently available study surfaces are free while public billing is disabled.",
   },
   {
     q: "How often is the question bank updated?",
-    a: "The bank is reviewed and updated continuously. Every question is expert-verified before it enters the live pool. If you spot an error, use the in-session flag tool and we review it within 48 hours.",
+    a: "The bank is reviewed and updated continuously. If you spot an error, use the in-session flag tool and we review it.",
   },
 ] as const;
 
@@ -48,8 +51,8 @@ export default function ContactPage() {
               We&apos;re here to help.
             </h1>
             <p className="mt-6 max-w-[480px] text-[17px] leading-relaxed text-text-secondary">
-              SlateCamp is a small team. When you reach out, you&apos;re talking
-              directly to the people who built the platform.
+              SlateCamp is currently founder-led. When you reach out, you&apos;re
+              talking directly to the builder.
             </p>
           </div>
         </section>
