@@ -3,7 +3,7 @@
 import { useMemo, useCallback } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
 import { ASSET_TAXONOMY, type CategoryKey } from '../config/taxonomy'
-import { ALL_MODULES } from '../config/registry'
+import { ALL_MODULES, getModuleById } from '../config/registry'
 import { DASHBOARD_VISIBLE_IDS } from '../config/dashboard-visibility'
 import { CategoryGrid } from './CategoryGrid'
 import { ModuleList } from './ModuleList'
@@ -32,7 +32,9 @@ export function LabBrowser({ basePath }: { basePath: string }) {
 
   const dashboardModules = useMemo(() => {
     if (DASHBOARD_VISIBLE_IDS.size === 0) return null
-    return ALL_MODULES.filter((m) => DASHBOARD_VISIBLE_IDS.has(m.id))
+    return Array.from(DASHBOARD_VISIBLE_IDS)
+      .map((moduleId) => getModuleById(moduleId))
+      .filter((module) => module != null)
   }, [])
 
   // ─── Full category drill-down mode ──────────────────────────────────────

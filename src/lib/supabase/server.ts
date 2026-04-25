@@ -5,12 +5,17 @@ import { cache } from 'react'
 import { isDemoMode } from '@/lib/demo/config'
 import { createMockSupabaseClient } from '@/lib/demo/mock-supabase'
 
+const hasDevForceUser = () =>
+  process.env.NODE_ENV === 'development' &&
+  process.env.DISABLE_DEV_FORCE_USER_ID !== 'true' &&
+  !!process.env.DEV_FORCE_USER_ID
+
 export const createStaticClient = cache(async () => {
   if (isDemoMode()) {
     return createMockSupabaseClient() as any
   }
 
-  const isDevBypass = process.env.NODE_ENV === 'development' && !!process.env.DEV_FORCE_USER_ID
+  const isDevBypass = hasDevForceUser()
   const key = isDevBypass ? process.env.SUPABASE_SERVICE_ROLE_KEY! : process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
 
   return createSupabaseClient(
@@ -38,7 +43,7 @@ export const createClient = cache(async () => {
   }
 
   const cookieStore = await cookies()
-  const isDevBypass = process.env.NODE_ENV === 'development' && !!process.env.DEV_FORCE_USER_ID
+  const isDevBypass = hasDevForceUser()
   const key = isDevBypass 
     ? (process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!) 
     : process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
@@ -88,7 +93,7 @@ export const getUserIfPresent = cache(async () => {
   }
 
   // Strategy A: Local ID Impersonation (Development Only)
-  if (process.env.NODE_ENV === 'development' && process.env.DEV_FORCE_USER_ID) {
+  if (hasDevForceUser()) {
     const rawId = process.env.DEV_FORCE_USER_ID.trim()
     const isUuid = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(rawId)
     

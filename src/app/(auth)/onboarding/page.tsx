@@ -2,7 +2,11 @@ import { redirect } from 'next/navigation'
 import { createClient, getUser } from '@/lib/supabase/server'
 import { ROUTES } from '@/lib/routes'
 import { bootstrapUser } from '@/lib/supabase/bootstrap'
-import { completeOnboardingSetup, type CompleteOnboardingResult } from '@/lib/actions/profile'
+import {
+  completeOnboardingSetup,
+  getOnboardingCompletionStatus,
+  type CompleteOnboardingResult,
+} from '@/lib/actions/profile'
 import { OnboardingForm } from './_components/OnboardingForm'
 import type { Discipline } from '@/types/app'
 
@@ -19,6 +23,9 @@ export default async function OnboardingPage() {
   if (!user) redirect(ROUTES.auth.login)
 
   await bootstrapUser(user.id)
+
+  const completionStatus = await getOnboardingCompletionStatus()
+  if (completionStatus.completed) redirect(ROUTES.dashboard.root)
 
   const [{ data: disciplines }, { data: subjectRows }] = await Promise.all([
     supabase

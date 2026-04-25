@@ -46,6 +46,8 @@ const BANNED_PATTERNS = [
       'src/lib/supabase/server.ts',
       'src/lib/supabase/client.ts',
       'src/lib/supabase/middleware.ts',
+      'src/lib/supabase/middleware.test.ts',
+      'scripts/playwright-web-server.ts',
       'scripts/check-entitlement-legacy-usage.ts',
       'src/lib/admin/roles.test.ts',
     ],

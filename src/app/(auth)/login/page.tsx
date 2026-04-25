@@ -1,16 +1,23 @@
+import { redirect } from 'next/navigation'
 import Link from 'next/link'
 import { LoginForm } from './login-form'
 import { SlateCampLogo } from '@/components/graphics/logos/SlateCampLogo'
+import { isDemoMode } from '@/lib/demo/config'
+import { ROUTES } from '@/lib/routes'
 
 export const metadata = { title: 'Log In' }
 
 export default function LoginPage() {
+  if (isDemoMode()) {
+    redirect(ROUTES.dashboard.root)
+  }
+
   return (
     <div className='flex min-h-screen flex-col items-center justify-center bg-background px-6 py-12'>
       <div className='w-full max-w-[380px] space-y-8'>
         <div className='flex flex-col items-center text-center'>
           <Link
-            href='/'
+            href={ROUTES.home}
             className='transition-colors duration-150 hover:opacity-80'
           >
             <SlateCampLogo size="lg" />
@@ -30,7 +37,7 @@ export default function LoginPage() {
         <p className='text-center text-sm text-muted-foreground'>
           Don&apos;t have an account?{' '}
           <Link
-            href='/register'
+            href={ROUTES.auth.register}
             className='font-medium text-foreground underline underline-offset-4 transition-colors duration-150 hover:text-primary'
           >
             Sign up

@@ -15,58 +15,14 @@ import { useLabStore } from '@/features/3d-lab/stores/useLabStore'
 import { useLabTelemetry } from '@/hooks/useLabTelemetry'
 import { useTemplateContent } from '@/features/3d-lab/hooks/useTemplateContent'
 import type { ModuleConfig } from '@/types/3d-lab'
-import { getModuleById, ALL_MODULES } from '@/features/3d-lab/config/registry'
-import { ASSET_TAXONOMY } from '@/features/3d-lab/config/taxonomy'
+import { getModuleById } from '@/features/3d-lab/config/registry'
+import { importModuleConfig } from '@/features/3d-lab/config/module-paths'
 import { CircleNotch } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 
 interface ModuleViewerProps {
   modelId: string
   basePath: string
-}
-
-// ─── Module Config Loader (shared with LabViewport logic) ──────────────────
-
-const CAT_ID_MAP: Record<string, string> = {}
-for (const [key, meta] of Object.entries(ASSET_TAXONOMY)) {
-  CAT_ID_MAP[key] = meta.id
-}
-
-const DIR_NAMES: Record<string, string> = {
-  '01': '01-building-code',
-  '02': '02-accessibility',
-  '03': '03-fire-code',
-  '04': '04-structural',
-  '05': '05-plumbing',
-  '06': '06-electrical',
-  '07': '07-mechanical',
-  '08': '08-vertical',
-  '09': '09-construction',
-  '10': '10-materials',
-  '11': '11-arch-history',
-  '12': '12-ph-heritage',
-  '13': '13-planning',
-  '14': '14-prof-practice',
-  '15': '15-estimating',
-  '16': '16-site-dev',
-}
-
-const MODULE_PATHS: Record<string, string> = {}
-for (const mod of ALL_MODULES) {
-  if (mod.categoryId) {
-    const catId = CAT_ID_MAP[mod.categoryId]
-    const dir = catId ? DIR_NAMES[catId] : undefined
-    if (dir) {
-      MODULE_PATHS[mod.id] = `${dir}/${mod.id}`
-    }
-  }
-}
-
-const loadModuleConfig = (moduleId: string): Promise<any> => {
-  const path = MODULE_PATHS[moduleId] ?? moduleId
-  return import(`@/features/3d-lab/config/modules/${path}` as any).then(
-    (mod: Record<string, unknown>) => Object.values(mod)[0],
-  )
 }
 
 /**
@@ -103,7 +59,7 @@ export const ModuleViewer = ({ modelId, basePath }: ModuleViewerProps) => {
 
     resetSession()
 
-    loadModuleConfig(modelId)
+    importModuleConfig(modelId)
       .then((cfg) => {
         // Guard 1: effect cleanup (component unmounted or dep changed)
         // Guard 2: ref check catches cases where the effect re-ran and set a

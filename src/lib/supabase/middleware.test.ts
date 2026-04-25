@@ -51,6 +51,12 @@ mock.module('@/lib/entitlements/policy', () => ({
 }))
 
 mock.module('@/lib/entitlements/resolve-role', () => ({
+  resolveCurrentUserRole: () =>
+    Promise.resolve({
+      normalizedRole: 'member',
+      resolvedFrom: 'none',
+      precedenceTrace: [],
+    }),
   resolveRoleFromInputs: () => ({
     normalizedRole: 'member',
     resolvedFrom: 'none',
@@ -95,5 +101,32 @@ describe('supabase/middleware', () => {
     expect(errorSpy).toHaveBeenCalledTimes(1)
     expect(response.status).toBe(307)
     expect(response.url).toContain('/login')
+  })
+
+  test('redirects unauthenticated admin root to the admin login surface', async () => {
+    const originalForceUser = process.env.DEV_FORCE_USER_ID
+    delete process.env.DEV_FORCE_USER_ID
+
+    const request = {
+      method: 'GET',
+      nextUrl: {
+        pathname: '/admin',
+        hostname: 'localhost',
+      },
+      url: 'http://localhost/admin',
+      cookies: {
+        getAll: () => [],
+      },
+    } as any
+
+    const response = await updateSession(request)
+
+    if (originalForceUser) {
+      process.env.DEV_FORCE_USER_ID = originalForceUser
+    }
+
+    expect(response.status).toBe(307)
+    expect(response.url).toContain('/admin/login')
+    expect(response.url).toContain('next=%2Fadmin')
   })
 })

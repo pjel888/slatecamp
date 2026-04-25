@@ -34,6 +34,12 @@ Codex enablement entrypoints:
 - `.ai/00_system/DOCS_SOURCE_OF_TRUTH.md`
 - `.agents/README.md`
 
+Design-system entrypoints:
+- `DESIGN.md`
+- `src/app/globals.css`
+- `.ai/06_specs/deep/03-design/001-design-system.md`
+- `/developer/design-system` when the app is running
+
 Current repository snapshot:
 - `124` App Router pages
 - `12` route handlers
@@ -254,7 +260,7 @@ bun run start
 
 ## 6. Important scripts
 
-These commands are grounded in `package.json` as of **2026-04-16**.
+These commands are grounded in `package.json` as of **2026-04-26**.
 
 | Command | Purpose |
 | --- | --- |
@@ -265,7 +271,17 @@ These commands are grounded in `package.json` as of **2026-04-16**.
 | `bun run start` | Start built app |
 | `bun run lint` | Run ESLint (includes storybook placeholder precheck) |
 | `bun run lint:fix` | Auto-fix lint issues where possible |
-| `bun run type-check` | Run `tsc --noEmit` |
+| `bun run test:e2e` | Run Playwright launch-smoke checks in desktop and mobile Chromium |
+| `bun run test:e2e:smoke` | Run the fast Chromium-only Playwright smoke suite |
+| `bun run test:e2e:prod` | Run launch-smoke checks against the built app with `next start` |
+| `bun run test:e2e:auth-demo` | Run demo-authenticated first-run and auth-entry browser checks |
+| `bun run test:e2e:auth-demo:portals` | Run demo-authenticated admin, developer, and CEO portal browser checks |
+| `bun run test:e2e:auth-demo:3d-lab` | Run demo-authenticated 3D Lab browser checks on a fresh server |
+| `bun run test:e2e:headed` | Run Playwright in headed browser mode |
+| `bun run test:e2e:ui` | Open Playwright's interactive test runner |
+| `bun run type-check` | Clear stale `.next/dev/types` and run `tsc --noEmit` |
+| `bun run validate:release` | Run the heavy release aggregate: type-check, lint, entitlements, audit, build, production Playwright smoke, demo-auth core, demo-auth portals, demo-auth 3D Lab |
+| `bun run design:lint` | Validate root `DESIGN.md` against the Google Labs DESIGN.md spec |
 | `bun run storybook` | Run Storybook locally |
 | `bun run build-storybook` | Build Storybook static output |
 | `bun run check:storybook` | Storybook placeholder validation |
@@ -275,7 +291,7 @@ These commands are grounded in `package.json` as of **2026-04-16**.
 ### Important note on tests
 There is **no top-level `test` script** in `package.json` right now.
 
-The repository does contain many test files, but there is no single root `bun test` command in the current script surface. Any documentation or CI guidance should account for that explicitly instead of assuming a root test script exists.
+The repository does contain many test files, and browser smoke plus demo-authenticated first-run, portal, and 3D Lab coverage is available through the explicit Playwright scripts above. `test:e2e:prod` is the built-app route smoke gate; `test:e2e:auth-demo` covers no-secret onboarding/auth-entry flows; `test:e2e:auth-demo:portals` covers authenticated admin, developer, and CEO surfaces on a fresh server; `test:e2e:auth-demo:3d-lab` isolates the slower 3D Lab browser route on its own fresh server. Any documentation or CI guidance should account for that explicitly instead of assuming a root test script exists.
 
 See `.ai/00_system/VALIDATION_MATRIX.md` for the current surface-by-surface validation contract.
 
@@ -289,6 +305,7 @@ See `.ai/00_system/VALIDATION_MATRIX.md` for the current surface-by-surface vali
 bun run type-check
 bun run lint
 bun run build
+bun run test:e2e:smoke
 ```
 
 ### Additional targeted checks
@@ -297,6 +314,7 @@ Use targeted route/library tests or subsystem-specific validation when changing:
 - server actions in `src/lib/actions/`
 - entitlements / access control logic in `src/lib/entitlements/`
 - 3D / geometry-heavy code in `src/features/3d-lab/`, `src/features/wall-configurator/`, and related helpers
+- design-system tokens or visual identity docs through `bun run design:lint`
 - schema/migration documentation in `supabase/` and `DATABASE_SCHEMA.sql`
 
 ### Documentation validation
@@ -424,6 +442,12 @@ This repository uses a deep `AGENTS.md` hierarchy.
 - `.ai/06_specs/deep/portal/dashboard/001-overview.md`
 - `.ai/06_specs/deep/portal/admin/001-knowledge-hub.md`
 - `.ai/06_specs/deep/portal/developer/001-design-system.md`
+
+### If you need design-system truth
+- `DESIGN.md`
+- `src/app/globals.css`
+- `.ai/06_specs/deep/03-design/001-design-system.md`
+- `/developer/design-system` when the app is running
 
 ### If you need operational plans/tasks
 - `.ai/03_plans/implementation-plan.md`

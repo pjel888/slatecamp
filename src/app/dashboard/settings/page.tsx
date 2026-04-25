@@ -1,6 +1,6 @@
 import { redirect } from 'next/navigation'
 import { ROUTES } from '@/lib/routes'
-import { getProfileData } from '@/lib/actions/profile'
+import { getOnboardingCompletionStatus, getProfileData } from '@/lib/actions/profile'
 import { getUserEmailPreferences } from '@/lib/actions/email-preferences'
 import { fetchNotificationPreferences } from '@/lib/queries/notifications'
 import { getProfessionalModeData } from '@/lib/actions/professional-mode'
@@ -13,6 +13,7 @@ import { ThemeCard } from './theme-card'
 import { ProfileCard } from './profile-card'
 import { NotificationsCard } from './notifications-card'
 import { AccountModeCard } from './account-mode-card'
+import { AccountCenterCard } from './account-center-card'
 
 export const metadata = { title: 'Settings' }
 
@@ -35,18 +36,26 @@ export default async function SettingsPage() {
   const entitlements = await getViewerEntitlements()
   if (!entitlements.userId) redirect(ROUTES.auth.login)
 
-  const [profileData, emailPrefs, notifPrefsResult, professionalModeData] = await Promise.all([
+  const [
+    profileData,
+    onboardingStatus,
+    emailPrefs,
+    notifPrefsResult,
+    professionalModeData,
+  ] = await Promise.all([
     getProfileData(),
+    getOnboardingCompletionStatus(),
     getUserEmailPreferences(),
     fetchNotificationPreferences(entitlements.userId),
     getProfessionalModeData(),
   ])
 
   const notifPrefs = notifPrefsResult.data ?? DEFAULT_NOTIFICATION_PREFS
+  const onboardingCompleted = onboardingStatus.completed
 
   return (
     <div className='max-w-2xl mx-auto space-y-8'>
-      {!profileData?.onboarding_completed_at && (
+      {!onboardingCompleted && (
         <div className='rounded-md border border-primary/20 bg-primary/5 px-4 py-4'>
           <p className='text-sm font-semibold text-foreground'>Your setup is not complete yet.</p>
           <p className='mt-1 text-sm text-muted-foreground'>
@@ -60,10 +69,12 @@ export default async function SettingsPage() {
         initialAvatarUrl={profileData?.avatar_url ?? null}
         initialExamDate={profileData?.target_exam_date ?? null}
         initialEnrolledReviewCenter={profileData?.enrolled_review_center ?? null}
-        initialOnboardingCompleted={Boolean(profileData?.onboarding_completed_at)}
+        initialOnboardingCompleted={onboardingCompleted}
         initialReviewerType={profileData?.reviewer_type ?? null}
         initialStudyWindow={profileData?.preferred_study_window ?? null}
       />
+
+      <AccountCenterCard effectiveTier={entitlements.effectiveTier} />
 
       <DisciplineCard />
 

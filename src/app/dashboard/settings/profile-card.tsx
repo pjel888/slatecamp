@@ -139,6 +139,13 @@ export const ProfileCard = ({
 
   const handleFinishSetup = async (e: React.FormEvent) => {
     e.preventDefault()
+    if (!activeDiscipline) {
+      const description = 'Select an active discipline before finishing setup.'
+      setCompletionError(description)
+      toast({ title: 'Setup not finished', description, variant: 'error' })
+      return
+    }
+
     setCompletionLoading(true)
     setCompletionError(null)
 
@@ -283,7 +290,12 @@ export const ProfileCard = ({
                 <p className='text-xs text-muted-foreground'>
                   The target exam date field below is included when you finish setup.
                 </p>
-                <Button type='submit' size='md' loading={completionLoading}>
+                <Button
+                  type='submit'
+                  size='md'
+                  loading={completionLoading}
+                  disabled={!activeDiscipline}
+                >
                   Finish setup
                 </Button>
               </div>

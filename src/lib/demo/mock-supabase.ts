@@ -245,8 +245,23 @@ class MockQueryBuilder {
     return { data: rows, error: null, count: rows.length };
   }
 
-  then(resolve: (val: { data: unknown; error: null; count?: number }) => void) {
-    resolve(this.resolve());
+  then<TResult1 = { data: unknown; error: null; count?: number }, TResult2 = never>(
+    onfulfilled?:
+      | ((value: { data: unknown; error: null; count?: number }) => TResult1 | PromiseLike<TResult1>)
+      | null,
+    onrejected?: ((reason: unknown) => TResult2 | PromiseLike<TResult2>) | null,
+  ) {
+    return Promise.resolve(this.resolve()).then(onfulfilled, onrejected);
+  }
+
+  catch<TResult = never>(
+    onrejected?: ((reason: unknown) => TResult | PromiseLike<TResult>) | null,
+  ) {
+    return Promise.resolve(this.resolve()).catch(onrejected);
+  }
+
+  finally(onfinally?: (() => void) | null) {
+    return Promise.resolve(this.resolve()).finally(onfinally ?? undefined);
   }
 }
 
@@ -263,6 +278,27 @@ class MockStorageBucket {
   }
   getPublicUrl(path: string) {
     return { data: { publicUrl: `/demo-storage/${path}` } };
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/*  Mock Realtime                                                     */
+/* ------------------------------------------------------------------ */
+
+class MockRealtimeChannel {
+  constructor(readonly topic: string) {}
+
+  on(_event: string, _filter: unknown, _callback: unknown) {
+    return this;
+  }
+
+  subscribe(callback?: (status: string) => void) {
+    callback?.("SUBSCRIBED");
+    return this;
+  }
+
+  unsubscribe() {
+    return Promise.resolve("ok");
   }
 }
 
@@ -292,6 +328,10 @@ export function createMockSupabaseClient() {
     },
     from: (table: string) => new MockQueryBuilder(table),
     rpc: (_fn: string, _params?: unknown) => Promise.resolve({ data: null, error: null }),
+    channel: (topic: string) => new MockRealtimeChannel(topic),
+    removeChannel: (_channel: MockRealtimeChannel) => Promise.resolve("ok"),
+    removeAllChannels: () => Promise.resolve("ok"),
+    getChannels: () => [] as MockRealtimeChannel[],
     storage: {
       from: (_bucket: string) => new MockStorageBucket(),
     },

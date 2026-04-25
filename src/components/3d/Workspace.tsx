@@ -8,6 +8,7 @@ import { Slider } from '@/components/ui/slider'
 import { X, Stack, Lock, CircleNotch, CaretRight, Cube } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
+import { ROUTES } from '@/lib/routes'
 import { motion, AnimatePresence } from 'framer-motion'
 import Link from 'next/link'
 import { CanvasWrapper } from '@/features/3d-lab/components/CanvasWrapper'
@@ -294,6 +295,8 @@ interface ThreeDLabClientProps {
 
 export function ThreeDLabClient({ tree, initialModelId, basePath }: ThreeDLabClientProps) {
   const [selectedModelId, setSelectedModelId] = useState<ModelId>(initialModelId)
+  const buildModelHref = (modelId: string) =>
+    basePath === ROUTES.lab.root ? ROUTES.lab.module(modelId) : `${basePath}?model=${modelId}`
   
   // Mock data for models - in real app this would come from props or fetch
   const modelData: Model3D = {
@@ -322,7 +325,7 @@ export function ThreeDLabClient({ tree, initialModelId, basePath }: ThreeDLabCli
                   <div key={item.id} className="space-y-1">
                     {item.modelId ? (
                       <Link
-                        href={`${basePath}?model=${item.modelId}`}
+                        href={buildModelHref(item.modelId)}
                         onClick={() => setSelectedModelId(item.modelId!)}
                         className={cn(
                           "w-full flex items-center justify-between px-3 py-2 rounded-md text-xs font-medium transition-all",
@@ -340,7 +343,7 @@ export function ThreeDLabClient({ tree, initialModelId, basePath }: ThreeDLabCli
                         {item.children?.map(leaf => (
                           <Link
                             key={leaf.id}
-                            href={`${basePath}?model=${leaf.modelId}`}
+                            href={buildModelHref(leaf.modelId)}
                             onClick={() => setSelectedModelId(leaf.modelId!)}
                             className={cn(
                               "w-full flex items-center justify-between px-3 py-2 rounded-md text-xs font-medium transition-all",

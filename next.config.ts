@@ -43,6 +43,46 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: '/settings',
+        destination: '/dashboard/settings',
+        permanent: false,
+      },
+      {
+        source: '/dashboard/settings/billing',
+        destination: '/dashboard/settings',
+        permanent: false,
+      },
+      {
+        source: '/dashboard/settings/developer',
+        destination: '/developer',
+        permanent: false,
+      },
+      {
+        source: '/dashboard/trail',
+        destination: '/dashboard/camptrails',
+        permanent: false,
+      },
+      {
+        source: '/dashboard/trails',
+        destination: '/dashboard/camptrails',
+        permanent: false,
+      },
+      {
+        source: '/dashboard/heatmap',
+        destination: '/dashboard/analytics',
+        permanent: false,
+      },
+      {
+        source: '/admin/wiki',
+        destination: '/admin/knowledge',
+        permanent: false,
+      },
+      {
+        source: '/test-3d',
+        destination: '/dashboard/3d-lab',
+        permanent: false,
+      },
+      {
         source: '/dashboard/wiki/ale-:slug',
         destination: '/dashboard/wiki/lea-:slug',
         permanent: true,

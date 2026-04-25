@@ -32,6 +32,11 @@ interface DashboardLayoutContentProps {
 
 const DashboardLayoutContent = async ({ children }: DashboardLayoutContentProps) => {
   const isDemo = isDemoMode()
+  const headerList = await headers()
+  const pathname =
+    headerList.get('x-pathname') ?? headerList.get('next-url') ?? ''
+  const isLabPath =
+    pathname === ROUTES.lab.root || pathname.startsWith(`${ROUTES.lab.root}/`)
   const supabase = await createClient()
   const {
     data: { user },
@@ -48,30 +53,53 @@ const DashboardLayoutContent = async ({ children }: DashboardLayoutContentProps)
     }
   }
 
-  const [{ data: subscription }, { data: stats }, allDisciplines, entitlements] = await Promise.all([
-    supabase
-      .from('user_subscriptions')
-      .select('tier')
-      .eq('user_id', user.id)
-      .maybeSingle(),
-    supabase
-      .from('user_global_stats')
-      .select('*, disciplines(*)')
-      .eq('user_id', user.id)
-      .maybeSingle(),
-    getCachedDisciplines(),
+  const [
+    { data: subscription },
+    { data: stats },
+    { data: profileCompletion },
+    allDisciplines,
+    entitlements,
+  ] = await Promise.all([
+    isLabPath
+      ? Promise.resolve({ data: null })
+      : supabase
+          .from('user_subscriptions')
+          .select('tier')
+          .eq('user_id', user.id)
+          .maybeSingle(),
+    isLabPath
+      ? Promise.resolve({ data: null })
+      : supabase
+          .from('user_global_stats')
+          .select('*, disciplines(*)')
+          .eq('user_id', user.id)
+          .maybeSingle(),
+    isLabPath
+      ? Promise.resolve({ data: null })
+      : supabase
+          .from('profiles')
+          .select('onboarding_completed_at')
+          .eq('id', user.id)
+          .maybeSingle(),
+    isLabPath ? Promise.resolve([]) : getCachedDisciplines(),
     getViewerEntitlements([ENTITLEMENT_FEATURE_KEYS.devToolbar]),
   ])
 
   const userStats = stats as (UserGlobalStats & { disciplines: Discipline | null }) | null
-  const onboardingCompletedAt = (stats as { onboarding_completed_at?: string | null } | null)?.onboarding_completed_at ?? null
-  const currentTier = (subscription?.tier ?? 'free') as UserTier
-  const pathname = (await headers()).get('x-pathname') ?? ''
-  const isSettingsPath = pathname === ROUTES.dashboard.settings || pathname.startsWith(ROUTES.dashboard.settings + '/')
+  const onboardingCompletedAt =
+    isLabPath
+      ? null
+      : (profileCompletion as { onboarding_completed_at?: string | null } | null)?.onboarding_completed_at ??
+        (userStats as { onboarding_completed_at?: string | null } | null)?.onboarding_completed_at ??
+        null
+  const currentTier = ((subscription?.tier ?? entitlements.rawTier ?? 'free') as UserTier)
+  const isSettingsPath =
+    pathname === ROUTES.dashboard.settings ||
+    pathname.startsWith(ROUTES.dashboard.settings + '/')
 
   // ── Onboarding Guard ──────────────────────────────────────────────────────
   // If user is not in demo mode and has not completed onboarding, redirect them
-  if (!isDemo && !onboardingCompletedAt && !isSettingsPath) {
+  if (!isDemo && !isLabPath && !onboardingCompletedAt && !isSettingsPath) {
     redirect(ROUTES.auth.onboarding)
   }
 
@@ -102,8 +130,8 @@ const DashboardLayoutContent = async ({ children }: DashboardLayoutContentProps)
         isDevMode={showDevTools}
       >
       <DisciplineProvider
-        initialDiscipline={userStats?.disciplines ?? null}
-        initialDisciplines={allDisciplines as Discipline[] ?? []}
+        initialDiscipline={isLabPath ? null : userStats?.disciplines ?? null}
+        initialDisciplines={isLabPath ? [] : (allDisciplines as Discipline[] ?? [])}
       >
         <ActiveSessionProvider>
           <NoteContextProvider>
@@ -135,10 +163,14 @@ const DashboardLayoutContent = async ({ children }: DashboardLayoutContentProps)
                 <SidebarContent>
                 <BreadcrumbProvider>
                   <Navbar isAdmin={userCanSeeDevToolbar} />
-                  <div>
-                    <DashboardHeader userId={user.id} />
-                  </div>
-                  <main className='flex-1 min-h-0 min-w-0 overflow-y-auto bg-page-bg'>
+                  {!isLabPath && (
+                    <div>
+                      <DashboardHeader userId={user.id} />
+                    </div>
+                  )}
+                  <main
+                    className={`flex-1 min-h-0 min-w-0 ${isLabPath ? 'overflow-hidden bg-page-bg' : 'overflow-y-auto bg-page-bg'}`}
+                  >
                     {children}
                   </main>
                 </BreadcrumbProvider>

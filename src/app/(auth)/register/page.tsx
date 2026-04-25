@@ -1,11 +1,17 @@
+import { redirect } from 'next/navigation'
 import Link from 'next/link'
 import { RegisterForm } from './register-form'
 import { siteConfig } from '@/lib/constants/site'
+import { isDemoMode } from '@/lib/demo/config'
 import { ROUTES } from '@/lib/routes'
 
 export const metadata = { title: 'Create Account' }
 
 export default function RegisterPage() {
+  if (isDemoMode()) {
+    redirect(ROUTES.dashboard.root)
+  }
+
   return (
     <div className='flex min-h-screen flex-col items-center justify-center bg-background px-6 py-12'>
       <div className='w-full max-w-[380px] space-y-8'>

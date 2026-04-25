@@ -49,7 +49,6 @@ export const ROUTES = {
     analyticsAdvanced: '/dashboard/analytics/advanced',
     areaC: '/dashboard/area-c',
     assessment: '/dashboard/assessment',
-    campfire: '/dashboard/campfire',
     camptrails: '/dashboard/camptrails',
     codeUpdates: '/dashboard/code-updates',
     cramCard: '/dashboard/cram-card',
@@ -58,17 +57,13 @@ export const ROUTES = {
     drills: '/dashboard/drills',
     drillsSessions: '/dashboard/drills/sessions',
     flash: '/dashboard/flash',
-    library: '/dashboard/library',
     notes: '/dashboard/notes',
     notifications: '/dashboard/notifications',
     pods: '/dashboard/pods',
     professional: '/dashboard/professional',
     resultsDay: '/dashboard/results-day',
     settings: '/dashboard/settings',
-    settingsBilling: '/dashboard/settings/billing',
-    settingsDeveloper: '/dashboard/settings/developer',
     studio: '/dashboard/studio',
-    trails: '/dashboard/trails',
     upgrade: '/dashboard/upgrade',
     wiki: '/dashboard/wiki',
     // Dynamic helpers
@@ -133,7 +128,6 @@ export const ROUTES = {
     settings: '/admin/settings',
     taxonomy: '/admin/taxonomy',
     threeDModels: '/admin/3d-models',
-    wiki: '/admin/wiki',
     // Dynamic helpers
     article: (id: string) => `/admin/knowledge/${id}` as const,
     question: (id: string) => `/admin/knowledge/questions/${id}` as const,
@@ -162,6 +156,17 @@ export const ROUTES = {
     status: '/developer/status',
     statusDatabase: '/developer/status/database',
     statusInfrastructure: '/developer/status/infrastructure',
+  },
+
+  // ── Legacy Redirects ─────────────────────────
+  legacy: {
+    adminWiki: '/admin/wiki',
+    dashboardHeatmap: '/dashboard/heatmap',
+    dashboardSettingsBilling: '/dashboard/settings/billing',
+    dashboardSettingsDeveloper: '/dashboard/settings/developer',
+    dashboardTrail: '/dashboard/trail',
+    dashboardTrails: '/dashboard/trails',
+    settings: '/settings',
   },
 
   // ── API Routes ───────────────────────────────
@@ -194,8 +199,8 @@ export const PUBLIC_ROUTES: string[] = [
   ROUTES.auth.login,
   ROUTES.auth.register,
   ROUTES.auth.forgotPassword,
+  ROUTES.auth.resetPassword,
   ROUTES.auth.callback,
-  ROUTES.lab.test,
   ROUTES.calculators.root,
   ROUTES.calculators.floorTiles,
   ROUTES.calculators.wallPaint,
@@ -291,7 +296,7 @@ export const DASHBOARD_ROUTES: RouteConfig[] = [
     group: 'learn',
   },
   {
-    path: ROUTES.dashboard.root,
+    path: ROUTES.lab.root,
     title: '3D Lab',
     icon: Cube,
     group: 'learn',
@@ -342,7 +347,6 @@ const DEFAULT_TITLE = 'Overview'
 const DYNAMIC_TITLE_PREFIXES: { prefix: string; title: string }[] = [
   { prefix: '/dashboard/quiz/', title: 'Active Session' },
   { prefix: '/dashboard/drills/', title: 'Drills' },
-  { prefix: '/dashboard/library/', title: 'Question Bank' },
   { prefix: '/dashboard/wiki/', title: 'Knowledge Wiki' },
   { prefix: '/dashboard/flash/', title: 'LEA Numbers Flash' },
   { prefix: '/dashboard/pods/', title: 'Study Pods' },

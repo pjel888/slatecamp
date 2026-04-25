@@ -1,29 +1,6 @@
-import { Suspense } from "react";
-import { LabBrowser, ModuleViewer } from "@/features/3d-lab/components";
+import { redirect } from "next/navigation";
+import { ROUTES } from "@/lib/routes";
 
-type PageSearchParams = { model?: string };
-
-export default async function Test3DPage({
-  searchParams,
-}: {
-  searchParams: Promise<PageSearchParams>;
-}) {
-  const params = await searchParams;
-  const modelId = params.model;
-
-  if (!modelId) {
-    return (
-      <div className="h-screen">
-        <Suspense key="lab-browser" fallback={null}>
-          <LabBrowser basePath="/test-3d" />
-        </Suspense>
-      </div>
-    );
-  }
-
-  return (
-    <div className="h-screen">
-      <ModuleViewer modelId={modelId} basePath="/test-3d" />
-    </div>
-  );
+export default async function Test3DPage() {
+  redirect(ROUTES.lab.root);
 }

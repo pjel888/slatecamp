@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { ROUTES } from '@/lib/routes'
 
 export interface WikiItem {
   text: string
@@ -28,7 +29,7 @@ export const WikiItemRenderer = ({ items, leaId, threeDLabLinked }: WikiItemRend
       {threeDLabLinked && leaId && (
         <div className="mb-5">
           <Link
-            href={`/dashboard/3d-lab?node=${leaId}`}
+            href={ROUTES.lab.module(leaId)}
             className="inline-flex items-center gap-2 bg-primary hover:bg-primary-700 text-white text-sm font-semibold px-4 py-2 rounded-sm transition-colors duration-150 ease-out"
           >
             See this in the 3D Lab

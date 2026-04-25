@@ -27,16 +27,15 @@ function TooltipTrigger({
   children,
   ...props
 }: TooltipPrimitive.Trigger.Props & { asChild?: boolean }) {
-  if (
-    asChild &&
-    React.Children.only(children) &&
-    React.isValidElement(children)
-  ) {
+  const childArray = React.Children.toArray(children)
+  const child = childArray.length === 1 ? childArray[0] : null
+
+  if (asChild && React.isValidElement(child)) {
     return (
       <TooltipPrimitive.Trigger
         data-slot="tooltip-trigger"
         {...props}
-        render={children}
+        render={child}
       />
     )
   }

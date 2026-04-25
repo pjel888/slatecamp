@@ -1,6 +1,6 @@
 'use client'
 
-import React, { Suspense, useState, useCallback, useMemo } from 'react'
+import React, { Suspense, useState, useCallback, useEffect } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { PerformanceMonitor, useGLTF } from '@react-three/drei'
 import { SceneTunnel } from '@/features/3d-lab/components/GlobalCanvasPortal'
@@ -32,23 +32,43 @@ interface LabViewportFrameProps {
  * browser from intercepting touch events during orbit/pinch gestures.
  */
 export const LabViewportFrame = ({ children }: LabViewportFrameProps) => {
-  // Mobile DPR cap: detect ≤768px viewport and limit max DPR to 1.25.
-  // Evaluated once on mount; typeof window guard ensures SSR safety.
-  const isMobile = useMemo(() => {
-    if (typeof window === 'undefined') return false
-    return window.matchMedia('(max-width: 768px)').matches
-  }, [])
-
+  const [isMobile, setIsMobile] = useState(false)
   const maxDpr = isMobile ? 1.25 : 2
-  const [dpr, setDpr] = useState(() => (isMobile ? 1.25 : 1.5))
+  const [dpr, setDpr] = useState(1.5)
 
-  const handleDecline = useCallback(() => {
-    setDpr((prev) => Math.max(1, prev - 0.5))
+  useEffect(() => {
+    if (typeof window === 'undefined') return undefined
+
+    const media = window.matchMedia('(max-width: 768px)')
+    const updateMobile = () => {
+      setIsMobile(media.matches)
+      setDpr((prev) => Math.min(prev, media.matches ? 1.25 : 2))
+    }
+
+    updateMobile()
+
+    if (typeof media.addEventListener === 'function') {
+      media.addEventListener('change', updateMobile)
+      return () => media.removeEventListener('change', updateMobile)
+    }
+
+    media.addListener(updateMobile)
+    return () => media.removeListener(updateMobile)
   }, [])
 
-  const handleIncline = useCallback(() => {
-    setDpr((prev) => Math.min(maxDpr, prev + 0.5))
-  }, [maxDpr])
+  const handlePerformanceChange = useCallback(
+    ({ factor }: { factor: number }) => {
+      const targetDpr = isMobile ? 1 + factor * 0.25 : 1 + factor
+      const rounded = Math.round(Math.min(maxDpr, Math.max(1, targetDpr)) * 100) / 100
+
+      setDpr((prev) => (Math.abs(prev - rounded) >= 0.05 ? rounded : prev))
+    },
+    [isMobile, maxDpr],
+  )
+
+  const handlePerformanceFallback = useCallback(() => {
+    setDpr(1)
+  }, [])
 
   return (
     <div
@@ -61,13 +81,22 @@ export const LabViewportFrame = ({ children }: LabViewportFrameProps) => {
           shadows
           dpr={[1, dpr]}
           camera={{ position: [6, 6, 6], fov: 35 }}
-          gl={{ antialias: true, alpha: false, stencil: false, depth: true, preserveDrawingBuffer: true }}
+          gl={{
+            antialias: true,
+            alpha: false,
+            stencil: false,
+            depth: true,
+            powerPreference: 'high-performance',
+            // Screenshot shortcuts call canvas.toDataURL(), which requires the
+            // drawing buffer to be preserved between frames.
+            preserveDrawingBuffer: true,
+          }}
           style={{ pointerEvents: 'auto' }}
         >
           <PerformanceMonitor
             flipflops={3}
-            onDecline={handleDecline}
-            onIncline={handleIncline}
+            onChange={handlePerformanceChange}
+            onFallback={handlePerformanceFallback}
           />
 
           {/* Scene content portaled from CanvasWrapper instances via SceneTunnel */}

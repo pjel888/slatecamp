@@ -7,6 +7,8 @@ import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { getModuleById } from '@/features/3d-lab/config/registry'
+import { importModuleConfig } from '@/features/3d-lab/config/module-paths'
+import { ROUTES } from '@/lib/routes'
 import type { 
   TemplateType, 
   ParametricSceneConfig, 
@@ -56,15 +58,6 @@ const AnimatedSequence = dynamic(
   { ssr: false, loading: () => <LoadingSpinner /> },
 )
 
-/** 
- * Shared dynamic loader that works with absolute aliases. 
- * Fetches the specific module configuration chunk on demand.
- */
-const loadModuleConfig = (moduleId: string): Promise<unknown> =>
-  import(`@/features/3d-lab/config/modules/${moduleId}`).then(
-    (mod: Record<string, unknown>) => Object.values(mod)[0],
-  )
-
 interface Lab3DWidgetProps {
   moduleId: string
   height?: number | string
@@ -90,7 +83,7 @@ export default function Lab3DWidget({ moduleId, height = 420, caption }: Lab3DWi
     }
 
     let cancelled = false
-    loadModuleConfig(moduleId)
+    importModuleConfig(moduleId)
       .then((cfg) => {
         if (!cancelled) setConfig(cfg)
       })
@@ -142,7 +135,7 @@ export default function Lab3DWidget({ moduleId, height = 420, caption }: Lab3DWi
               variant="outline"
               size="xs"
               className="bg-foreground/80 border-foreground/40 text-background/70 hover:text-background"
-              onClick={() => window.open(`/dashboard/3d-lab?node=${moduleId}`, '_blank')}
+              onClick={() => window.open(ROUTES.lab.module(moduleId), '_blank')}
             >
               <ArrowsOut size={12} className="mr-1.5" />
               Full Lab

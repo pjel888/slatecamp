@@ -1,13 +1,13 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { createClient } from "@/lib/supabase/client";
 import { SignInWithGoogleButton } from "@/components/auth/SignInWithGoogleButton";
 import { Eyebrow } from "@/components/ui/eyebrow";
-import Link from "next/link";
 import { ROUTES } from "@/lib/routes";
 
-export default function AdminLandingPage() {
+export function AdminLoginClient() {
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
 
@@ -28,6 +28,7 @@ export default function AdminLandingPage() {
       setLoading(false);
       return;
     }
+
     if (data?.url) {
       window.location.href = data.url;
     }

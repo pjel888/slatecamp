@@ -26,6 +26,7 @@ export function getDemoProfile(tier: UserTier = 'institutional') {
   return {
     id: uid,
     email: DEMO_USER.email,
+    display_name: 'Philip Lewis',
     full_name: 'Philip Lewis',
     avatar_url: null,
     tier,

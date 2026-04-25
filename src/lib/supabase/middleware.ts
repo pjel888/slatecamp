@@ -11,6 +11,16 @@ import {
 import { logEntitlementAuditEvent } from "@/lib/entitlements/audit";
 import { logEdgeError } from "@/lib/logging/edge";
 
+const LEGACY_ROUTE_REDIRECTS: Record<string, string> = {
+  [ROUTES.legacy.adminWiki]: ROUTES.admin.knowledge,
+  [ROUTES.legacy.dashboardHeatmap]: ROUTES.dashboard.analytics,
+  [ROUTES.legacy.dashboardSettingsBilling]: ROUTES.dashboard.settings,
+  [ROUTES.legacy.dashboardSettingsDeveloper]: ROUTES.developer.root,
+  [ROUTES.legacy.dashboardTrail]: ROUTES.dashboard.camptrails,
+  [ROUTES.legacy.dashboardTrails]: ROUTES.dashboard.camptrails,
+  [ROUTES.legacy.settings]: ROUTES.dashboard.settings,
+}
+
 export const updateSession = async (request: NextRequest) => {
   const response = NextResponse.next({ request });
   const pathname = request.nextUrl.pathname;
@@ -20,11 +30,20 @@ export const updateSession = async (request: NextRequest) => {
     return response;
   }
 
+  const legacyRedirectPath = LEGACY_ROUTE_REDIRECTS[pathname]
+  if (legacyRedirectPath) {
+    const redirectUrl = request.nextUrl.clone()
+    redirectUrl.pathname = legacyRedirectPath
+    return NextResponse.redirect(redirectUrl)
+  }
+
   // 1.5 LOCAL DEV ABSOLUTE BYPASS
   // If we are on localhost and have a force user ID, we allow everything.
   const isLocal = request.nextUrl.hostname === 'localhost' || request.nextUrl.hostname === '127.0.0.1';
   const isDev = process.env.NODE_ENV === 'development' && isLocal;
-  const hasForceUser = !!process.env.DEV_FORCE_USER_ID;
+  const hasForceUser =
+    process.env.DISABLE_DEV_FORCE_USER_ID !== 'true' &&
+    !!process.env.DEV_FORCE_USER_ID;
 
   if (isDev && hasForceUser) {
     // If user tries to go to login while forced, send them to dashboard
@@ -94,7 +113,10 @@ export const updateSession = async (request: NextRequest) => {
   // 5. PROTECTION LOGIC
   if (!user) {
     if (isPublicPath) return response;
-    const target = pathname.startsWith('/admin/') ? ROUTES.admin.login : ROUTES.auth.login;
+    const target =
+      pathname === ROUTES.admin.root || pathname.startsWith(`${ROUTES.admin.root}/`)
+        ? ROUTES.admin.login
+        : ROUTES.auth.login;
     const url = new URL(target, request.url);
     if (pathname !== target) url.searchParams.set('next', pathname);
     return redirectWithCookies(url.pathname + url.search);

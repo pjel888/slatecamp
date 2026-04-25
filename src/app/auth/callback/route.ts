@@ -2,11 +2,36 @@ import { NextResponse } from "next/server";
 import { createClient } from "@/lib/supabase/server";
 import { isDemoMode } from "@/lib/demo/config";
 import { trackServerEvent } from "@/lib/analytics-server";
+import { ROUTES } from "@/lib/routes";
+
+const LEGACY_NEXT_PATHS: Record<string, string> = {
+  [ROUTES.legacy.adminWiki]: ROUTES.admin.knowledge,
+  [ROUTES.legacy.dashboardHeatmap]: ROUTES.dashboard.analytics,
+  [ROUTES.legacy.dashboardSettingsBilling]: ROUTES.dashboard.settings,
+  [ROUTES.legacy.dashboardSettingsDeveloper]: ROUTES.developer.root,
+  [ROUTES.legacy.dashboardTrail]: ROUTES.dashboard.camptrails,
+  [ROUTES.legacy.dashboardTrails]: ROUTES.dashboard.camptrails,
+  [ROUTES.legacy.settings]: ROUTES.dashboard.settings,
+};
+
+const normalizeNextPath = (next: string | null): string => {
+  if (!next || !next.startsWith("/") || next.startsWith("//")) {
+    return ROUTES.dashboard.root;
+  }
+
+  const [pathWithMaybeHash, query = ""] = next.split("?", 2);
+  const [pathname, hash = ""] = pathWithMaybeHash.split("#", 2);
+  const normalizedPath = LEGACY_NEXT_PATHS[pathname] ?? pathname;
+  const normalizedQuery = query ? `?${query}` : "";
+  const normalizedHash = hash ? `#${hash}` : "";
+
+  return `${normalizedPath}${normalizedQuery}${normalizedHash}`;
+};
 
 export async function GET(request: Request) {
   const { searchParams, origin } = new URL(request.url);
   const code = searchParams.get("code");
-  const next = searchParams.get("next") ?? "/dashboard";
+  const next = normalizeNextPath(searchParams.get("next"));
 
   if (isDemoMode()) {
     return NextResponse.redirect(`${origin}${next}`);
@@ -49,12 +74,12 @@ export async function GET(request: Request) {
       if (isUserAdmin && next.startsWith('/admin')) {
         redirectPath = next;
       } else if (!isUserAdmin && redirectPath.startsWith('/admin')) {
-        redirectPath = "/dashboard";
+        redirectPath = ROUTES.dashboard.root;
       }
       
       return NextResponse.redirect(`${origin}${redirectPath}`);
     }
   }
 
-  return NextResponse.redirect(`${origin}/login?error=auth_callback_failed`);
+  return NextResponse.redirect(`${origin}${ROUTES.auth.login}?error=auth_callback_failed`);
 }

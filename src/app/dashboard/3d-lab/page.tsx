@@ -46,7 +46,7 @@ export default async function ThreeDLabPage({
           <p className="mt-2 max-w-md text-sm text-muted-foreground">
             {THREE_D_LAB_GATE_COPY.description}
           </p>
-          <Link href={ROUTES.dashboard.settingsBilling} className="mt-6">
+          <Link href={ROUTES.dashboard.settings} className="mt-6">
             <Button>{THREE_D_LAB_GATE_COPY.ctaLabel}</Button>
           </Link>
         </div>

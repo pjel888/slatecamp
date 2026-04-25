@@ -6,6 +6,7 @@
 import { ALL_MODULES } from '@/features/3d-lab/config/registry'
 import { ASSET_TAXONOMY, LEA_SUBJECTS } from '@/features/3d-lab/config/taxonomy'
 import type { CategoryKey } from '@/features/3d-lab/config/taxonomy'
+import { importModuleConfig } from '@/features/3d-lab/config/module-paths'
 import type { ModuleConfig } from '@/features/3d-lab/types/templates'
 
 // ─── Hierarchical Tree Types ─────────────────────────────────────────────────
@@ -43,27 +44,6 @@ export interface RegistryTree {
   subjects: LeaSubjectNode[]
   totalModules: number
   totalCategories: number
-}
-
-// ─── Category Key → Folder Name Mapping ─────────────────────────────────────
-
-const CATEGORY_FOLDER_MAP: Record<CategoryKey, string> = {
-  BUILDING_CODE:  '01-building-code',
-  ACCESSIBILITY:  '02-accessibility',
-  FIRE_CODE:      '03-fire-code',
-  STRUCTURAL:     '04-structural',
-  PLUMBING:       '05-plumbing',
-  ELECTRICAL:     '06-electrical',
-  MECHANICAL:     '07-mechanical',
-  VERTICAL:       '08-vertical',
-  CONSTRUCTION:   '09-construction',
-  MATERIALS:      '10-materials',
-  ARCH_HISTORY:   '11-arch-history',
-  PH_HERITAGE:    '12-ph-heritage',
-  PLANNING:       '13-planning',
-  PROF_PRACTICE:  '14-prof-practice',
-  ESTIMATING:     '15-estimating',
-  SITE_DEV:       '16-site-dev',
 }
 
 // ─── buildRegistryTree ───────────────────────────────────────────────────────
@@ -139,27 +119,8 @@ export function buildRegistryTree(): RegistryTree {
  */
 export async function getModelConfigDetail(moduleId: string): Promise<ModuleConfig | null> {
   try {
-    // Look up the registry entry to get categoryId
-    const entry = ALL_MODULES.find((m) => m.id === moduleId)
-    if (!entry || !entry.categoryId) return null
-
-    const folder = CATEGORY_FOLDER_MAP[entry.categoryId]
-    if (!folder) return null
-
-    // Dynamic import of the module config file
-    const mod = await import(
-      `@/features/3d-lab/config/modules/${folder}/${moduleId}`
-    ) as Record<string, unknown>
-
-    // The export name varies per file (e.g. occupancyClassificationConfig).
-    // Take the first exported value that is a non-null object.
-    const config = Object.values(mod).find(
-      (v) => v !== null && typeof v === 'object'
-    )
-
-    if (!config) return null
-
-    return config as ModuleConfig
+    const config = await importModuleConfig(moduleId)
+    return config as ModuleConfig | null
   } catch {
     return null
   }

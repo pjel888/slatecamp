@@ -12,6 +12,7 @@ import { ROUTES } from '@/lib/routes'
 import { cn } from '@/lib/utils'
 import { trackEvent } from '@/lib/analytics'
 import { skipOnboarding } from '@/lib/actions/profile'
+import { toast } from '@/lib/hooks/use-toast'
 import type { Discipline } from '@/types/app'
 
 type ReviewerType = 'first_taker' | 'returning_reviewer'
@@ -70,20 +71,35 @@ export const OnboardingForm = ({
   const [reviewCenterOther, setReviewCenterOther] = useState('')
   const [pendingFormData, setPendingFormData] = useState<FormData | null>(null)
   const [submitStatus, setSubmitStatus] = useState<SubmitStatus>('idle')
+  const [isSkipPending, setIsSkipPending] = useState(false)
   const [submitError, setSubmitError] = useState<string | null>(null)
   const [mainStepError, setMainStepError] = useState<string | null>(null)
   const [calibrationReturnStep, setCalibrationReturnStep] = useState<'review_center' | 'coexistence'>('review_center')
 
   const handleSkip = useCallback(async () => {
+    if (submitStatus === 'pending' || isSkipPending) return
+
+    setIsSkipPending(true)
+    setSubmitError(null)
     trackEvent({ event_name: 'onboarding_skipped' })
-    const result = await skipOnboarding()
-    if (result.success) {
-      router.push(ROUTES.dashboard.root)
-    } else {
-      // Fallback if mark failed — still try to navigate to settings
-      router.replace(ROUTES.dashboard.settings)
+    try {
+      const result = await skipOnboarding()
+      if (result.success) {
+        router.push(ROUTES.dashboard.root)
+        return
+      }
+
+      const description = result.error ?? 'We could not skip setup right now. Try again.'
+      setSubmitError(description)
+      toast({ title: 'Setup still required', description, variant: 'error' })
+    } catch {
+      const description = 'We could not skip setup right now. Try again.'
+      setSubmitError(description)
+      toast({ title: 'Setup still required', description, variant: 'error' })
+    } finally {
+      setIsSkipPending(false)
     }
-  }, [router])
+  }, [isSkipPending, router, submitStatus])
 
   useEffect(() => {
     trackEvent({ event_name: 'onboarding_started' })
@@ -233,18 +249,25 @@ export const OnboardingForm = ({
         </div>
         <CoexistenceScreen
           onContinue={() => {
+            if (isSkipPending || submitStatus === 'pending') return
             setCalibrationReturnStep('coexistence')
             setSubmitError(null)
             setSubmitStatus('idle')
             setStep('calibrating')
           }}
         />
+        {submitError && (
+          <p className="rounded-sm border border-destructive/30 bg-destructive/10 px-3 py-2 text-sm text-destructive">
+            {submitError}
+          </p>
+        )}
         <button
           type="button"
           onClick={handleSkip}
-          className="w-full rounded-sm border border-border bg-card px-4 py-2.5 text-sm font-semibold text-foreground transition-colors duration-150 hover:bg-muted"
+          disabled={isSkipPending || submitStatus === 'pending'}
+          className="w-full rounded-sm border border-border bg-card px-4 py-2.5 text-sm font-semibold text-foreground transition-colors duration-150 hover:bg-muted disabled:cursor-not-allowed disabled:opacity-60"
         >
-          Skip for now
+          {isSkipPending ? 'Skipping...' : 'Skip for now'}
         </button>
       </div>
     )
@@ -271,17 +294,27 @@ export const OnboardingForm = ({
         <button
           type="button"
           onClick={handleReviewCenterContinue}
-          disabled={reviewCenter === 'other' && !reviewCenterOther.trim()}
+          disabled={
+            isSkipPending ||
+            submitStatus === 'pending' ||
+            (reviewCenter === 'other' && !reviewCenterOther.trim())
+          }
           className="w-full rounded-sm bg-primary px-4 py-2.5 text-sm font-semibold text-white transition-colors duration-150 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-60"
         >
           Continue &rarr;
         </button>
+        {submitError && (
+          <p className="rounded-sm border border-destructive/30 bg-destructive/10 px-3 py-2 text-sm text-destructive">
+            {submitError}
+          </p>
+        )}
         <button
           type="button"
           onClick={handleSkip}
-          className="w-full rounded-sm border border-border bg-card px-4 py-2.5 text-sm font-semibold text-foreground transition-colors duration-150 hover:bg-muted"
+          disabled={isSkipPending || submitStatus === 'pending'}
+          className="w-full rounded-sm border border-border bg-card px-4 py-2.5 text-sm font-semibold text-foreground transition-colors duration-150 hover:bg-muted disabled:cursor-not-allowed disabled:opacity-60"
         >
-          Skip for now
+          {isSkipPending ? 'Skipping...' : 'Skip for now'}
         </button>
       </div>
     )

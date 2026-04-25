@@ -1,4 +1,5 @@
 import crypto from 'node:crypto'
+import { cache } from 'react'
 import { createClient, getUser } from '@/lib/supabase/server'
 import type { UserTier } from '@/types/app'
 import { logEntitlementAuditEvent } from './audit'
@@ -25,7 +26,7 @@ const normalizeSubscriptionStatus = (
     return value
   }
 
-  if (value === 'canceled') {
+  if (value === 'canceled' || value === 'cancelled') {
     return 'canceled'
   }
 
@@ -36,9 +37,7 @@ const normalizeSubscriptionStatus = (
   return 'unknown'
 }
 
-export const getViewerEntitlements = async (
-  featureKeys: EntitlementFeatureKey[] = [],
-): Promise<ViewerEntitlements> => {
+const loadViewerEntitlementSnapshot = cache(async (): Promise<ViewerEntitlements> => {
   const traceId = crypto.randomUUID()
   const supabase = await createClient()
   const {
@@ -57,10 +56,6 @@ export const getViewerEntitlements = async (
       overrides,
       featureFlags: {},
     })
-
-    for (const featureKey of featureKeys) {
-      anonymous.decisions[featureKey] = evaluateFeatureAccess(anonymous, featureKey)
-    }
 
     return anonymous
   }
@@ -162,8 +157,23 @@ export const getViewerEntitlements = async (
     featureFlags: normalizedFeatureFlags,
   })
 
+  return entitlements
+})
+
+export const getViewerEntitlements = async (
+  featureKeys: EntitlementFeatureKey[] = [],
+): Promise<ViewerEntitlements> => {
+  const snapshot = await loadViewerEntitlementSnapshot()
+  const entitlements: ViewerEntitlements = {
+    ...snapshot,
+    decisions: { ...snapshot.decisions },
+  }
+
   for (const featureKey of featureKeys) {
-    entitlements.decisions[featureKey] = evaluateFeatureAccess(entitlements, featureKey)
+    entitlements.decisions[featureKey] = evaluateFeatureAccess(
+      entitlements,
+      featureKey,
+    )
   }
 
   return entitlements
