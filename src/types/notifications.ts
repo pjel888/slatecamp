@@ -1,3 +1,5 @@
+import { ROUTES } from '@/lib/routes'
+
 export type NotificationType =
   | 'score_change'
   | 'trail_ready'
@@ -13,7 +15,7 @@ export type NotificationType =
   | 'system'
 
 export type NotificationPriority = 'high' | 'medium' | 'low'
-export type NotificationFilter = 'all' | 'progress' | 'trail' | 'campfire' | 'system'
+export type NotificationFilter = 'all' | 'progress' | 'trail' | 'system'
 export type TimeGroup = 'today' | 'yesterday' | 'this_week' | 'earlier'
 
 export interface Notification {
@@ -89,24 +91,23 @@ export const NOTIFICATION_PRIORITY: Record<NotificationType, NotificationPriorit
 }
 
 export const DEFAULT_DEEP_LINKS: Record<NotificationType, string> = {
-  score_change: '/dashboard',
-  trail_ready: '/dashboard/trail',
-  focus_review: '/dashboard/heatmap',
-  zone_transition: '/dashboard',
-  proof_unlocked: '/dashboard/trail',
-  campfire_story: '/dashboard/campfire',
-  campfire_reply: '/dashboard/campfire',
-  content_update: '/dashboard/wiki',
-  weekly_digest: '/dashboard/heatmap',
-  coaching_tip: '/dashboard',
-  billing: '/dashboard/settings',
-  system: '/dashboard',
+  score_change: ROUTES.dashboard.root,
+  trail_ready: ROUTES.dashboard.camptrails,
+  focus_review: ROUTES.dashboard.analytics,
+  zone_transition: ROUTES.dashboard.root,
+  proof_unlocked: ROUTES.dashboard.camptrails,
+  campfire_story: ROUTES.dashboard.professional,
+  campfire_reply: ROUTES.dashboard.professional,
+  content_update: ROUTES.wiki.root,
+  weekly_digest: ROUTES.dashboard.analytics,
+  coaching_tip: ROUTES.dashboard.root,
+  billing: ROUTES.dashboard.settings,
+  system: ROUTES.dashboard.root,
 }
 
 export const FILTER_TYPE_MAP: Record<NotificationFilter, NotificationType[] | null> = {
   all: null,
   progress: ['score_change', 'zone_transition', 'focus_review', 'weekly_digest'],
   trail: ['trail_ready', 'proof_unlocked'],
-  campfire: ['campfire_story', 'campfire_reply'],
   system: ['content_update', 'coaching_tip', 'billing', 'system'],
 }

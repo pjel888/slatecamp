@@ -20,6 +20,13 @@ interface ProfileData {
   target_exam_date: string | null
 }
 
+export interface OnboardingCompletionStatus {
+  completed: boolean
+  completedAt: string | null
+  profileCompletedAt: string | null
+  statsCompletedAt: string | null
+}
+
 export interface CompleteOnboardingResult {
   success: boolean
   fieldErrors?: Partial<Record<'disciplineId' | 'reviewerType', string>>
@@ -74,6 +81,53 @@ export const getProfileData = async () => {
   } catch (err) {
     console.error('[PROFILE: getProfileData]', err)
     return null
+  }
+}
+
+export const getOnboardingCompletionStatus = async (): Promise<OnboardingCompletionStatus> => {
+  try {
+    const supabase = await createClient()
+    const { data: { user } } = await getUser()
+    if (!user) {
+      return {
+        completed: false,
+        completedAt: null,
+        profileCompletedAt: null,
+        statsCompletedAt: null,
+      }
+    }
+
+    const [profileResult, statsResult] = await Promise.all([
+      supabase
+        .from('profiles')
+        .select('onboarding_completed_at')
+        .eq('id', user.id)
+        .maybeSingle(),
+      supabase
+        .from('user_global_stats')
+        .select('onboarding_completed_at')
+        .eq('user_id', user.id)
+        .maybeSingle(),
+    ])
+
+    const profileCompletedAt = profileResult.data?.onboarding_completed_at ?? null
+    const statsCompletedAt = statsResult.data?.onboarding_completed_at ?? null
+    const completedAt = profileCompletedAt ?? statsCompletedAt
+
+    return {
+      completed: Boolean(completedAt),
+      completedAt,
+      profileCompletedAt,
+      statsCompletedAt,
+    }
+  } catch (err) {
+    console.error('[PROFILE: getOnboardingCompletionStatus]', err)
+    return {
+      completed: false,
+      completedAt: null,
+      profileCompletedAt: null,
+      statsCompletedAt: null,
+    }
   }
 }
 

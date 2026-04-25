@@ -77,6 +77,50 @@ const formatSaveSummary = (results: SaveItemResult[]) => {
   return `Saved ${parts.slice(0, -1).join(', ')} and ${parts.at(-1)}.`
 }
 
+type QuestionSaveCandidate = {
+  text: string
+  options: { id: string; text: string }[]
+  correct_option_id: string
+  rationale?: string | null
+  explanation?: string | null
+}
+
+const getQuestionValidationError = (question: QuestionSaveCandidate) => {
+  if (!question.text.trim()) {
+    return 'Question stem is required.'
+  }
+
+  const nonEmptyOptions = question.options.filter((option) => option.text.trim())
+  if (nonEmptyOptions.length < 2) {
+    return 'At least two answer options are required.'
+  }
+
+  if (nonEmptyOptions.length !== question.options.length) {
+    return 'Answer options cannot be blank.'
+  }
+
+  const hasCorrectOption = question.options.some(
+    (option) => option.id === question.correct_option_id,
+  )
+  if (!hasCorrectOption) {
+    return 'Select a correct answer before saving.'
+  }
+
+  const hasRationale = Boolean(
+    question.rationale?.trim() || question.explanation?.trim(),
+  )
+  if (!hasRationale) {
+    return 'A rationale or explanation is required.'
+  }
+
+  return null
+}
+
+const formatQuestionLabel = (prefix: string, text: string) => {
+  const cleaned = text.trim()
+  return cleaned ? `${prefix}: ${cleaned.slice(0, 40)}...` : `${prefix}: Untitled question`
+}
+
 // ─── Component ───────────────────────────────────────────────
 
 export const SaveAllBar = ({
@@ -129,6 +173,71 @@ export const SaveAllBar = ({
       dirty.articleDirty ||
       (!articleState.article_id &&
         (dirty.newQuestions.length > 0 || dirty.newEIPrompts.length > 0))
+    const validationFailures: SaveItemResult[] = []
+
+    if (needsArticlePersistence) {
+      if (!articleState.title.trim()) {
+        validationFailures.push({
+          type: 'article',
+          id: articleState.article_id || 'new-article',
+          label: 'Article',
+          success: false,
+          error: 'Article title is required.',
+        })
+      }
+
+      if (!articleState.content.trim()) {
+        validationFailures.push({
+          type: 'article',
+          id: articleState.article_id || 'new-article',
+          label: 'Article',
+          success: false,
+          error: 'Article content is required.',
+        })
+      }
+    }
+
+    for (const [questionId, isDirty] of dirty.questionsDirty) {
+      if (!isDirty) continue
+      const question = questions.find((item) => item.question_id === questionId)
+      if (!question) continue
+
+      const error = getQuestionValidationError(question)
+      if (error) {
+        validationFailures.push({
+          type: 'question',
+          id: questionId,
+          label: formatQuestionLabel('Q', question.text),
+          success: false,
+          error,
+        })
+      }
+    }
+
+    for (const draft of dirty.newQuestions) {
+      const error = getQuestionValidationError(draft)
+      if (error) {
+        validationFailures.push({
+          type: 'question',
+          id: draft._tempId,
+          label: formatQuestionLabel('New Q', draft.text),
+          success: false,
+          error,
+        })
+      }
+    }
+
+    if (validationFailures.length > 0) {
+      setResults(validationFailures)
+      setSaveError('Fix validation issues before saving.')
+      setIsSaving(false)
+      toast({
+        title: 'Save blocked',
+        description: 'Fix the highlighted content issues before saving.',
+        variant: 'error',
+      })
+      return
+    }
 
     // ── Article ──────────────────────────────────────────────
     if (needsArticlePersistence) {

@@ -93,10 +93,9 @@ export const updateWikiArticle = async (id: string, data: z.infer<typeof UpdateW
 
   if (!error) {
     revalidateTag(CACHE_TAGS.wiki, 'max')
-    revalidatePath(ROUTES.admin.wiki);
-    revalidatePath(ROUTES.admin.article(id));
-    revalidatePath(ROUTES.admin.knowledge);
-    revalidatePath(ROUTES.wiki.root);
+    revalidatePath(ROUTES.admin.knowledge)
+    revalidatePath(ROUTES.admin.article(id))
+    revalidatePath(ROUTES.wiki.root)
   }
 
   if (error) {
@@ -213,8 +212,8 @@ export const createWikiArticle = async (data: z.infer<typeof UpdateWikiArticleSc
   }
 
   revalidateTag(CACHE_TAGS.wiki, 'max')
-  revalidatePath(ROUTES.admin.wiki);
-  revalidatePath(ROUTES.wiki.root);
+  revalidatePath(ROUTES.admin.knowledge)
+  revalidatePath(ROUTES.wiki.root)
 
   if (error) {
     await logServerError({
@@ -277,10 +276,9 @@ export async function deleteWikiArticle(id: string) {
   }
 
   revalidateTag(CACHE_TAGS.wiki, 'max')
-  revalidatePath(ROUTES.admin.wiki);
-  revalidatePath(ROUTES.admin.knowledge);
-  revalidatePath(ROUTES.admin.knowledgeQuestions);
-  revalidatePath(ROUTES.wiki.root);
+  revalidatePath(ROUTES.admin.knowledge)
+  revalidatePath(ROUTES.admin.knowledgeQuestions)
+  revalidatePath(ROUTES.wiki.root)
 
   return { error: null }
 }

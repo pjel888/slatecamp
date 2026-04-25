@@ -33,10 +33,10 @@ const PREFERENCE_GROUPS: PreferenceGroup[] = [
     ],
   },
   {
-    label: 'COMMUNITY & CONTENT',
+    label: 'CONTENT',
     items: [
-      { key: 'campfire', title: 'Campfire activity', description: 'Passer stories and replies to your posts' },
       { key: 'content_updates', title: 'Content updates', description: 'New wiki articles and 3D modules' },
+      { key: 'daily_digest', title: 'Daily digest', description: 'A compact daily study summary' },
       { key: 'weekly_digest', title: 'Weekly digest', description: 'Sunday summary of your progress' },
     ],
   },
@@ -64,7 +64,9 @@ export const NotificationPreferences = ({ initialPreferences }: NotificationPref
       if (result.error) {
         setPrefs((prev) => ({ ...prev, [key]: !value }))
         toast({ title: 'Error', description: result.error, variant: 'error' })
+        return
       }
+      toast({ title: 'Saved', description: 'Notification preferences updated.', variant: 'success' })
     })
   }
 
@@ -73,6 +75,9 @@ export const NotificationPreferences = ({ initialPreferences }: NotificationPref
       <div>
         <h2 className="text-base font-medium text-foreground">Notification Preferences</h2>
         <p className="text-[13px] text-muted-foreground mt-0.5">Choose what you want to hear about</p>
+        <p className="sr-only" aria-live="polite">
+          {isPending ? 'Saving notification preference.' : 'Notification preferences ready.'}
+        </p>
       </div>
 
       {PREFERENCE_GROUPS.map((group) => (

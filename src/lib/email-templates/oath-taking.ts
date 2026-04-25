@@ -38,7 +38,7 @@ Your SlateCamp account is now your professional reference library.`,
 
 /**
  * Generate the post-oath email (day after ceremony).
- * Invites the user to share their oath-taking experience in Campfire.
+ * Sends the user back to the Professional Reference hub.
  */
 export const generatePostOathEmail = (userName: string): EmailTemplate => {
   const firstName = userName.split(' ')[0] || 'Architect'

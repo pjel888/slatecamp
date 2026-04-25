@@ -98,12 +98,11 @@ export interface UserSubscription {
   subscription_id: string;
   user_id: string;
   tier: UserTier;
-  status: "active" | "canceled" | "past_due" | "trialing";
-  lemon_squeezy_customer_id: string | null;
-  lemon_squeezy_subscription_id: string | null;
+  status: "active" | "cancelled" | "expired" | "trialing";
+  lemonsqueezy_customer_id: string | null;
+  lemonsqueezy_subscription_id: string | null;
+  payrex_customer_id: string | null;
   payrex_reference: string | null;
-  current_period_end: string | null;
-  cancel_at_period_end: boolean;
   created_at: string;
   updated_at: string;
 }
@@ -151,8 +150,8 @@ export interface Profile {
   profession: Profession;
   exam_target: string | null;
   target_exam_date: string | null;
-  lemon_squeezy_customer_id: string | null;
-  lemon_squeezy_subscription_id: string | null;
+  lemonsqueezy_customer_id: string | null;
+  lemonsqueezy_subscription_id: string | null;
   ai_tokens_used: number;
   ai_tokens_limit: number;
   daily_streak: number;

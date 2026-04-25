@@ -1,6 +1,6 @@
 'use client'
 
-import { Rocket, BookOpen, Target, ArrowRight } from '@phosphor-icons/react'
+import { Rocket, BookOpen, Target, ArrowRight, Circle } from '@phosphor-icons/react'
 import Link from 'next/link'
 import { ROUTES } from '@/lib/routes'
 import { cn } from '@/lib/utils'
@@ -11,7 +11,7 @@ const WELCOME_STEPS = [
     title: 'Baseline Diagnostic',
     description: 'Answer 20 mixed subjects to calibrate your initial score.',
     icon: Rocket,
-    href: '/quiz?mode=diagnostic',
+    href: ROUTES.dashboard.assessment,
     cta: 'Start Diagnostic',
     color: 'bg-primary/10 text-primary',
   },
@@ -20,7 +20,7 @@ const WELCOME_STEPS = [
     title: 'Explore Syllabus',
     description: 'Browse the 102 LEA topics and building codes.',
     icon: BookOpen,
-    href: '/dashboard/wiki',
+    href: ROUTES.wiki.root,
     cta: 'Browse Wiki',
     color: 'bg-success/10 text-success',
   },
@@ -29,36 +29,54 @@ const WELCOME_STEPS = [
     title: 'Start a Trail',
     description: 'Follow a curated study schedule for your exam date.',
     icon: Target,
-    href: '/dashboard/trails',
+    href: ROUTES.dashboard.camptrails,
     cta: 'View Trails',
     color: 'bg-warning/10 text-warning',
   },
 ]
 
+const ACTIVATION_CHECKLIST = [
+  'Finish your baseline diagnostic',
+  'Review your first Readiness Score insight',
+  'Start the trail SlateCamp recommends next',
+] as const
+
 export const WelcomeGuide = ({ userName }: { userName: string }) => {
   return (
     <div className="w-full space-y-4 mb-2 animate-in fade-in slide-in-from-top-4 duration-1000">
-      <div className="flex flex-col md:flex-row items-center justify-between gap-4 p-6 rounded-md border border-border bg-card shadow-sm overflow-hidden relative">
-        {/* Background Flourish */}
-        <div className="absolute top-0 right-0 -mt-8 -mr-8 h-32 w-32 rounded-full bg-primary/5 blur-3xl pointer-events-none" />
-        
-        <div className="flex-1 space-y-1 relative z-10 text-center md:text-left">
-          <h2 className="text-xl font-bold text-foreground">
-            Welcome to SlateCamp, {userName}!
-          </h2>
-          <p className="text-sm text-muted-foreground max-w-md">
-            You haven&apos;t taken a session yet. Follow these steps to build your Readiness Score and start your study trail.
-          </p>
-        </div>
+      <div className="flex flex-col gap-4 p-6 rounded-md border border-border bg-card shadow-sm">
+        <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
+          <div className="flex-1 space-y-3 text-center md:text-left">
+            <div className="space-y-1">
+              <h2 className="text-xl font-bold text-foreground">
+                Welcome to SlateCamp, {userName}!
+              </h2>
+              <p className="text-sm text-muted-foreground max-w-md">
+                You haven&apos;t taken a session yet. Build your first Readiness Score, then start a focused trail.
+              </p>
+            </div>
 
-        <div className="flex gap-2 relative z-10 shrink-0">
-          <Link
-            href="/quiz?mode=diagnostic"
-            className="inline-flex items-center justify-center rounded-sm bg-primary px-4 py-2 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-primary-700"
-          >
-            Start Your First Session
-            <ArrowRight className="ml-2 h-4 w-4" weight="bold" />
-          </Link>
+            <ol className="grid gap-2 text-left sm:grid-cols-3">
+              {ACTIVATION_CHECKLIST.map((item, index) => (
+                <li key={item} className="flex items-start gap-2 text-xs text-muted-foreground">
+                  <Circle className="mt-0.5 h-4 w-4 shrink-0 text-primary" weight="bold" />
+                  <span>
+                    <span className="font-semibold text-foreground">{index + 1}.</span> {item}
+                  </span>
+                </li>
+              ))}
+            </ol>
+          </div>
+
+          <div className="flex gap-2 shrink-0 justify-center">
+            <Link
+              href={ROUTES.dashboard.assessment}
+              className="inline-flex items-center justify-center rounded-sm bg-primary px-4 py-2 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-primary-700"
+            >
+              Start First Session
+              <ArrowRight className="ml-2 h-4 w-4" weight="bold" />
+            </Link>
+          </div>
         </div>
       </div>
 

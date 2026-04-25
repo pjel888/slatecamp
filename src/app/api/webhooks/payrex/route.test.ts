@@ -17,7 +17,7 @@ const parseEventMock = mock(() =>
 )
 
 const maybeSingleMock = mock(() => Promise.resolve({ data: null }))
-const updateEqMock = mock(() => Promise.resolve({ error: null }))
+const upsertMock = mock(() => Promise.resolve({ error: null }))
 const insertMock = mock(() => Promise.resolve({ error: null }))
 
 mock.module('next/headers', () => ({
@@ -70,9 +70,7 @@ mock.module('@/lib/supabase/admin', () => ({
 
       if (table === 'user_subscriptions') {
         return {
-          update: () => ({
-            eq: updateEqMock,
-          }),
+          upsert: upsertMock,
         }
       }
 
@@ -94,10 +92,33 @@ describe('payrex webhook route', () => {
   beforeEach(() => {
     parseEventMock.mockClear()
     maybeSingleMock.mockResolvedValue({ data: null })
-    updateEqMock.mockResolvedValue({ error: null })
+    upsertMock.mockResolvedValue({ error: null })
     insertMock.mockResolvedValue({ error: null })
     logServerErrorMock.mockClear()
     logServerEventMock.mockClear()
+  })
+
+  test('upserts subscription before marking a successful payment event processed', async () => {
+    const response = await POST(new Request('http://localhost/api/webhooks/payrex', { method: 'POST', body: '{}' }))
+    const body = await response.json()
+
+    expect(body.received).toBe(true)
+    expect(upsertMock).toHaveBeenCalledWith(
+      expect.objectContaining({
+        user_id: 'user-1',
+        tier: 'pro',
+        status: 'active',
+        payrex_reference: 'evt-1',
+      }),
+      { onConflict: 'user_id' },
+    )
+    expect(insertMock).toHaveBeenCalledWith(
+      expect.objectContaining({
+        provider: 'payrex',
+        event_id: 'evt-1',
+        event_type: 'payment_intent.succeeded',
+      }),
+    )
   })
 
   test('logs replayed events and returns idempotent response', async () => {

@@ -27,12 +27,13 @@ type BrowserAuditResult = {
 
 const DEFAULT_TIMEOUT_MS = 15_000
 const REDIRECT_LOOP_NAVIGATION_THRESHOLD = 10
-const GATED_DESTINATIONS = ['/login', '/register', '/forgot-password', '/admin/login', '/dashboard']
+const GATED_DESTINATIONS = ['/login', '/register', '/forgot-password', '/auth/reset-password', '/admin/login', '/dashboard']
 
 const inferTargetKind = (routePath: string) =>
   routePath === '/login' ||
   routePath === '/register' ||
   routePath === '/forgot-password' ||
+  routePath === '/auth/reset-password' ||
   routePath === '/admin/login' ||
   routePath.startsWith('/onboarding')
     ? 'auth-page'
@@ -68,11 +69,16 @@ const main = async () => {
     }))
 
   const results: BrowserAuditResult[] = []
+  const environment = {
+    launchError: null as string | null,
+    playwrightBrowserAvailable: true,
+  }
 
   if (!manifestOnly) {
-    const browser = await chromium.launch({ headless: true })
+    let browser: Awaited<ReturnType<typeof chromium.launch>> | null = null
 
     try {
+      browser = await chromium.launch({ headless: true })
       const context = await browser.newContext({
         ignoreHTTPSErrors: true,
       })
@@ -169,8 +175,11 @@ const main = async () => {
       }
 
       await context.close()
+    } catch (error) {
+      environment.playwrightBrowserAvailable = false
+      environment.launchError = error instanceof Error ? error.message : String(error)
     } finally {
-      await browser.close()
+      await browser?.close()
     }
   }
 
@@ -179,10 +188,12 @@ const main = async () => {
   const evidence = {
     generatedAt: new Date().toISOString(),
     baseUrl,
+    environment,
     manifestOnly,
     manifestPath,
     routeManifestShape: manifest.routeManifestShape,
     summary: {
+      blockedByEnvironment: !environment.playwrightBrowserAvailable,
       failedRoutes: results.filter((result) => result.status === 'failed').length,
       fixtureMissing: fixtureMissing.length,
       gatedRoutes: results.filter((result) => result.status === 'gated').length,
@@ -205,6 +216,9 @@ const main = async () => {
   const evidencePath = await writeEvidence('auth-route-browser.json', evidence)
   console.log(`Route manifest: ${manifestPath}`)
   console.log(`Auth route browser evidence: ${evidencePath}`)
+  if (environment.launchError) {
+    console.log(`Playwright launch blocker: ${environment.launchError}`)
+  }
   console.log(
     `Targets: ${targetRoutes.length}; pass=${evidence.summary.passedRoutes}; gated=${evidence.summary.gatedRoutes}; failed=${evidence.summary.failedRoutes}; redirect_loop=${evidence.summary.redirectLoops}; fixture_missing=${evidence.summary.fixtureMissing}`
   )

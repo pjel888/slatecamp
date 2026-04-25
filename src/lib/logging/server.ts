@@ -56,12 +56,20 @@ export interface ApplicationErrorFilters {
 
 const assertCanViewOperationalLogs = async () => {
   const { resolveCurrentUserRole } = await import('@/lib/entitlements/resolve-role')
+  const { resolveDevOverrides } = await import('@/lib/entitlements/dev-overrides')
   const { canAccessDeveloperPortalForRole } = await import('@/lib/entitlements/policy')
 
-  const allowBypass = process.env.ALLOW_DEV_PORTAL_BYPASS === 'true'
-  const resolution = await resolveCurrentUserRole()
+  const [resolution, overrides] = await Promise.all([
+    resolveCurrentUserRole(),
+    resolveDevOverrides(),
+  ])
 
-  if (!canAccessDeveloperPortalForRole(resolution.normalizedRole, allowBypass)) {
+  if (
+    !canAccessDeveloperPortalForRole(
+      resolution.normalizedRole,
+      overrides.allowDevPortalBypass,
+    )
+  ) {
     throw new Error('Not authorized to view application errors')
   }
 }

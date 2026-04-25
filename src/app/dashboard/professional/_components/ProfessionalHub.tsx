@@ -104,7 +104,7 @@ const ProfessionalHub = ({ accountMode }: ProfessionalHubProps) => {
           <span className="text-xs text-muted-foreground mt-auto">Coming soon</span>
         </div>
 
-        {/* Campfire Community */}
+        {/* Professional Network */}
         <div className="rounded-md border border-border bg-card p-4 flex flex-col gap-2 shadow-none hover:shadow-sm transition-shadow duration-150 ease-out">
           <div className="flex items-center gap-2">
             <div className="h-8 w-8 rounded-md bg-primary-50 flex items-center justify-center shrink-0">
@@ -119,10 +119,10 @@ const ProfessionalHub = ({ accountMode }: ProfessionalHubProps) => {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
               </svg>
             </div>
-            <p className="text-sm font-semibold text-foreground">Campfire Community</p>
+            <p className="text-sm font-semibold text-foreground">Professional Network</p>
           </div>
           <p className="text-xs text-muted-foreground leading-relaxed">
-            Connect with fellow licensed professionals. Share practice insights, ask questions, and support the next cohort of reviewees.
+            Connect with fellow licensed professionals, share practice insights, and support the next cohort of reviewees.
           </p>
           <span className="text-xs text-muted-foreground mt-auto">Opening soon</span>
         </div>

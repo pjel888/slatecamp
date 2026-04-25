@@ -2,6 +2,22 @@ import type { UserTier } from "@/types/app";
 import { FEATURE_PAYMENTS_ENABLED } from '@/lib/constants/feature-flags';
 
 export type PaymentProvider = "lemonsqueezy" | "payrex";
+export type PaymentUnavailableCode =
+  | "PAYMENTS_DISABLED"
+  | "PAYMENT_PROVIDER_UNSUPPORTED"
+  | "PAYMENT_PROVIDER_UNAVAILABLE"
+  | "PAYMENT_PLAN_UNAVAILABLE"
+  | "PAYMENT_CHECKOUT_UNAVAILABLE";
+
+export class PaymentUnavailableError extends Error {
+  code: PaymentUnavailableCode;
+
+  constructor(message: string, code: PaymentUnavailableCode = "PAYMENT_PROVIDER_UNAVAILABLE") {
+    super(message);
+    this.name = "PaymentUnavailableError";
+    this.code = code;
+  }
+}
 
 export interface CreateCheckoutParams {
   userId: string;
@@ -17,10 +33,20 @@ export interface CheckoutResult {
   provider: PaymentProvider;
 }
 
+type LemonSqueezyCheckoutClient = {
+  createCheckout(args: unknown): Promise<{
+    url?: string | null;
+    id?: string | null;
+  }>;
+};
+
 export function getPaymentProvider(): PaymentProvider {
-  const provider = process.env.PAYMENT_PROVIDER ?? "payrex";
-  if (provider === "lemonsqueezy" && process.env.LEMONSQUEEZY_API_KEY) return "lemonsqueezy";
-  return "payrex";
+  const provider = (process.env.PAYMENT_PROVIDER ?? "payrex").toLowerCase();
+  if (provider === "lemonsqueezy" || provider === "payrex") return provider;
+  throw new PaymentUnavailableError(
+    `Unsupported payment provider "${provider}".`,
+    "PAYMENT_PROVIDER_UNSUPPORTED",
+  );
 }
 
 /**
@@ -35,7 +61,10 @@ export async function createCheckout(
 ): Promise<CheckoutResult> {
   if (!FEATURE_PAYMENTS_ENABLED) {
     console.log('[PAYMENTS] createCheckout called but payments are disabled');
-    return { url: null, id: 'payments-disabled', provider: 'payrex' };
+    throw new PaymentUnavailableError(
+      "Payments are currently disabled.",
+      "PAYMENTS_DISABLED",
+    );
   }
 
   const provider = getPaymentProvider();
@@ -50,13 +79,21 @@ async function createLemonSqueezyCheckout(
   params: CreateCheckoutParams
 ): Promise<CheckoutResult> {
   const { getLemonSqueezy, LEMONSQUEEZY_PLANS } = await import("@/lib/lemonsqueezy/config");
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const ls = getLemonSqueezy() as any;
+  const ls = getLemonSqueezy() as LemonSqueezyCheckoutClient | null;
   if (!ls) {
-    throw new Error('[PAYMENTS] LemonSqueezy SDK not available');
+    throw new PaymentUnavailableError(
+      "LemonSqueezy is not configured.",
+      "PAYMENT_PROVIDER_UNAVAILABLE",
+    );
   }
 
   const plan = LEMONSQUEEZY_PLANS[params.tier];
+  if (!plan.variantId) {
+    throw new PaymentUnavailableError(
+      `LemonSqueezy variant missing for ${params.tier}.`,
+      "PAYMENT_PLAN_UNAVAILABLE",
+    );
+  }
 
   // Note: LemonSqueezy checkout creation differs from LemonSqueezy
   // This is a placeholder for actual LS checkout implementation
@@ -71,6 +108,13 @@ async function createLemonSqueezyCheckout(
     },
   });
 
+  if (!checkout?.url || !checkout?.id) {
+    throw new PaymentUnavailableError(
+      "LemonSqueezy did not return a checkout URL.",
+      "PAYMENT_CHECKOUT_UNAVAILABLE",
+    );
+  }
+
   return { url: checkout.url, id: checkout.id, provider: "lemonsqueezy" };
 }
 
@@ -80,7 +124,10 @@ async function createPayRexCheckout(
   const { getPayRex, PAYREX_PLANS } = await import("@/lib/payrex/config");
   const payrex = getPayRex();
   if (!payrex) {
-    throw new Error('[PAYMENTS] PayRex SDK not available');
+    throw new PaymentUnavailableError(
+      "PayRex is not configured.",
+      "PAYMENT_PROVIDER_UNAVAILABLE",
+    );
   }
 
   const plan = PAYREX_PLANS[params.tier];
@@ -97,6 +144,12 @@ async function createPayRexCheckout(
   });
 
   const checkoutUrl = (paymentIntent.attributes?.checkout_url as string) ?? null;
+  if (!checkoutUrl) {
+    throw new PaymentUnavailableError(
+      "PayRex did not return a checkout URL.",
+      "PAYMENT_CHECKOUT_UNAVAILABLE",
+    );
+  }
 
   return {
     url: checkoutUrl,

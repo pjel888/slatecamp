@@ -7,7 +7,7 @@ import { getAdminUsers } from '@/lib/actions/admin/roles'
 import { SectionHeader } from '@/components/shared/section-header'
 import { AdminRoleManager } from '@/components/admin/settings/AdminRoleManager'
 
-export const metadata: Metadata = { title: 'Settings â€” SlateCamp Admin' }
+export const metadata: Metadata = { title: 'Settings - SlateCamp Admin' }
 
 const AdminSettingsPage = async () => {
   const isSuper = await isSuperAdmin()

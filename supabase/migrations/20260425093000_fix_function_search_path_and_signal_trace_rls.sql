@@ -8,34 +8,38 @@
 
 BEGIN;
 
-SET LOCAL search_path = public, extensions;
+SET LOCAL search_path = public, extensions, pg_temp;
 
-ALTER FUNCTION IF EXISTS public.get_fallback_questions(uuid[], uuid[], integer)
-  SET search_path = public, extensions;
-
-ALTER FUNCTION IF EXISTS public.search_wiki_articles_pure(text, integer)
-  SET search_path = public, extensions;
-
-ALTER FUNCTION IF EXISTS public.get_unseen_questions(uuid, uuid[], integer, numeric, numeric)
-  SET search_path = public, extensions;
-
-ALTER FUNCTION IF EXISTS public.update_user_question_state()
-  SET search_path = public, extensions;
-
-ALTER FUNCTION IF EXISTS public.fetch_normalization_batch(integer)
-  SET search_path = public, extensions;
-
-ALTER FUNCTION IF EXISTS public.search_wiki_articles_hybrid(text, vector, integer, double precision, double precision)
-  SET search_path = public, extensions;
-
-ALTER FUNCTION IF EXISTS public.get_article_with_node(text)
-  SET search_path = public, extensions;
-
-ALTER FUNCTION IF EXISTS public.submit_quiz_answer_v2(uuid, uuid, uuid, text, boolean, integer, text, numeric, boolean, integer)
-  SET search_path = public, extensions;
-
-ALTER FUNCTION IF EXISTS public.refresh_user_question_states()
-  SET search_path = public, extensions;
+DO $$
+DECLARE
+  function_record record;
+BEGIN
+  FOR function_record IN
+    SELECT p.oid::regprocedure AS function_signature
+    FROM pg_proc p
+    JOIN pg_namespace n ON n.oid = p.pronamespace
+    WHERE n.nspname = 'public'
+      AND p.proname = ANY (ARRAY[
+        'get_fallback_questions',
+        'search_wiki_articles_pure',
+        'get_unseen_questions',
+        'update_user_question_state',
+        -- These two live RPCs are surfaced in db-spec.json / generated types,
+        -- but their defining migrations are not committed in this worktree.
+        'fetch_normalization_batch',
+        'search_wiki_articles_hybrid',
+        'get_article_with_node',
+        'submit_quiz_answer_v2',
+        'refresh_user_question_states'
+      ])
+  LOOP
+    EXECUTE format(
+      'ALTER FUNCTION %s SET search_path = public, extensions, pg_temp',
+      function_record.function_signature
+    );
+  END LOOP;
+END
+$$;
 
 DO $$
 BEGIN
@@ -45,15 +49,14 @@ BEGIN
   END IF;
 
   EXECUTE 'DROP POLICY IF EXISTS "Users can insert signal traces via service role" ON public.interaction_signal_traces';
+  -- src/lib/actions/quiz-v2/submit-answer.ts stores traces with createAdminClient(),
+  -- so inserts should stay server-only and never open an authenticated client path.
   EXECUTE $policy$
     CREATE POLICY "Users can insert signal traces via service role"
       ON public.interaction_signal_traces
       FOR INSERT
-      TO authenticated, service_role
-      WITH CHECK (
-        (SELECT auth.role()) = 'service_role'
-        OR public.has_admin_role()
-      )
+      TO service_role
+      WITH CHECK ((SELECT auth.role()) = 'service_role')
   $policy$;
 END
 $$;

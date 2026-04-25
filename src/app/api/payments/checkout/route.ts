@@ -1,6 +1,10 @@
 import { NextResponse } from "next/server";
 import { createClient } from "@/lib/supabase/server";
-import { createCheckout, isPaymentEnabled } from "@/lib/payments/provider";
+import {
+  PaymentUnavailableError,
+  createCheckout,
+  isPaymentEnabled,
+} from "@/lib/payments/provider";
 import { isDemoMode } from "@/lib/demo/config";
 import {
   logEntitlementAuditEvent,
@@ -8,6 +12,7 @@ import {
 } from "@/lib/entitlements/audit";
 import { getViewerEntitlements } from "@/lib/entitlements/get-viewer-entitlements";
 import { ENTITLEMENT_FEATURE_KEYS } from "@/lib/entitlements/feature-keys";
+import { ROUTES } from "@/lib/routes";
 
 const CHECKOUT_TIERS = ["pro", "prime", "institutional"] as const;
 type CheckoutTier = (typeof CHECKOUT_TIERS)[number]
@@ -25,7 +30,7 @@ export async function POST(request: Request) {
   if (isDemoMode()) {
     const origin = request.headers.get("origin") ?? "http://localhost:3000";
     return NextResponse.json({
-      url: `${origin}/dashboard/settings/billing?success=true`,
+      url: `${origin}${ROUTES.dashboard.settings}?success=true`,
       id: "demo-checkout",
       provider: "demo",
     });
@@ -60,8 +65,8 @@ export async function POST(request: Request) {
       userId: user.id,
       email: user.email!,
       tier,
-      successUrl: `${origin}/dashboard/settings/billing?success=true`,
-      cancelUrl: `${origin}/dashboard/settings/billing?cancelled=true`,
+      successUrl: `${origin}${ROUTES.dashboard.settings}?success=true`,
+      cancelUrl: `${origin}${ROUTES.dashboard.settings}?cancelled=true`,
     });
 
     logEntitlementAuditEvent({
@@ -84,6 +89,16 @@ export async function POST(request: Request) {
 
     return NextResponse.json(result);
   } catch (error) {
+    if (error instanceof PaymentUnavailableError) {
+      return NextResponse.json(
+        {
+          error: "Payments are temporarily unavailable",
+          code: error.code,
+        },
+        { status: 503 },
+      );
+    }
+
     console.error("Checkout creation failed:", error);
     return NextResponse.json(
       { error: "Failed to create checkout" },

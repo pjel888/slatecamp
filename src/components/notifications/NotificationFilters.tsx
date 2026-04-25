@@ -7,7 +7,6 @@ const FILTERS: { value: NotificationFilter; label: string }[] = [
   { value: 'all', label: 'All' },
   { value: 'progress', label: 'Progress' },
   { value: 'trail', label: 'Trail' },
-  { value: 'campfire', label: 'Campfire' },
   { value: 'system', label: 'System' },
 ]
 

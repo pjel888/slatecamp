@@ -62,6 +62,13 @@ mock.module('@/lib/entitlements/resolve-role', () => ({
   }),
 }))
 
+mock.module('@/lib/entitlements/dev-overrides', () => ({
+  resolveDevOverrides: () =>
+    Promise.resolve({
+      allowDevPortalBypass: false,
+    }),
+}))
+
 mock.module('@/lib/entitlements/policy', () => ({
   canAccessAdminCmsForRole: () => false,
   canAccessCeoPortalForRole: () => false,

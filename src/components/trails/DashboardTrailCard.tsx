@@ -58,7 +58,7 @@ export const DashboardTrailCard = ({
 export const DashboardTrailPrompt = () => {
   return (
     <Link
-      href={ROUTES.dashboard.trails}
+      href={ROUTES.dashboard.camptrails}
       className="block rounded-md border border-dashed border-border bg-surface-light p-4 transition-shadow duration-150 ease-out hover:shadow-sm hover:border-camp-cobalt"
     >
       <div className="flex items-center gap-3">

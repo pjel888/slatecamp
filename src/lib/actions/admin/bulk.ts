@@ -52,6 +52,5 @@ export const bulkDeleteArticles = async (ids: string[]) => {
   revalidateTag(CACHE_TAGS.wiki, 'max')
   revalidatePath(ROUTES.admin.knowledge)
   revalidatePath(ROUTES.admin.knowledgeQuestions)
-  revalidatePath(ROUTES.admin.wiki)
   return { error: null, deleted: ids.length }
 }

@@ -3,10 +3,10 @@
 import { useState, useEffect } from 'react'
 import { cn } from '@/lib/utils'
 
-// ─── Branded loading messages — warm, campfire-themed ────────────────────────
+// ─── Branded loading messages ────────────────────────────────────────────────
 
 const SLATECAMP_MESSAGES = [
-  'Setting up the campfire...',
+  'Setting up your study camp...',
   'Gathering your study materials...',
   'Warming up the questions...',
   'Preparing your trail...',

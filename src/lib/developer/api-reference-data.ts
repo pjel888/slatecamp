@@ -22,7 +22,7 @@ export const paymentEndpoints = [
 
 // 200 OK — Demo mode
 {
-  "url": "/dashboard/settings/billing?success=true",
+  "url": "/dashboard/settings?success=true",
   "id": "demo-checkout",
   "provider": "demo"
 }`,
@@ -42,9 +42,9 @@ export const webhookEndpoints = [
     badges: ['LemonSqueezy'],
     requestSchema: `// LemonSqueezy Event — raw body required for signature verification
 // Handled events:
-//   checkout.session.completed  → upsert user_subscriptions (tier, lemon_squeezy_customer_id, lemon_squeezy_subscription_id, status='active')
+//   checkout.session.completed  → upsert user_subscriptions (tier, lemonsqueezy_customer_id, lemonsqueezy_subscription_id, status='active')
 //                                  + insert analytics_events { event_name: 'pro_subscribed' }
-//   customer.subscription.deleted → downgrade to tier='free', status='canceled'`,
+//   customer.subscription.deleted → downgrade to tier='free', status='cancelled'`,
     responseExample: `{ "received": true }`,
   },
   {
@@ -550,14 +550,14 @@ export const lemonsqueezyWebhookEvents = [
   {
     event: 'checkout.session.completed',
     mutations: [
-      "UPDATE user_subscriptions SET tier, lemon_squeezy_customer_id, lemon_squeezy_subscription_id, status='active' WHERE user_id = metadata.userId",
-      "INSERT analytics_events { event_name: 'pro_subscribed', event_properties: { plan, lemon_squeezy_subscription_id } }",
+      "UPSERT user_subscriptions SET tier, lemonsqueezy_customer_id, lemonsqueezy_subscription_id, status='active' ON user_id = metadata.userId",
+      "INSERT analytics_events { event_name: 'pro_subscribed', event_properties: { plan, lemonsqueezy_subscription_id } }",
     ],
   },
   {
     event: 'customer.subscription.deleted',
     mutations: [
-      "UPDATE user_subscriptions SET tier='free', lemon_squeezy_subscription_id=null, status='canceled' WHERE lemon_squeezy_subscription_id = subscription.id",
+      "UPDATE user_subscriptions SET tier='free', lemonsqueezy_subscription_id=null, status='cancelled' WHERE lemonsqueezy_subscription_id = subscription.id",
     ],
   },
 ]

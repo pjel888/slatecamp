@@ -15,7 +15,6 @@ import {
   SquaresFour,
   Brain,
   ChartBar,
-  Books,
   Cube,
   GearSix,
   List,
@@ -36,7 +35,6 @@ const NAV_ITEMS = [
   { href: ROUTES.dashboard.camptrails, label: 'CampTrails', icon: Path },
   { href: ROUTES.dashboard.drills, label: 'Review', icon: BookOpen },
   { href: ROUTES.dashboard.analytics, label: 'Analytics', icon: ChartBar },
-  { href: ROUTES.dashboard.library, label: 'Library', icon: Books },
   { href: ROUTES.lab.root, label: '3D Lab', icon: Cube },
   { href: ROUTES.dashboard.settings, label: 'Settings', icon: GearSix },
 ]
@@ -47,6 +45,9 @@ interface NavbarProps {
 
 export function Navbar({ isAdmin }: NavbarProps) {
   const pathname = usePathname()
+  const isDeveloperActive =
+    pathname === ROUTES.developer.root ||
+    pathname.startsWith(`${ROUTES.developer.root}/`)
 
   return (
     <header className='flex h-12 items-center justify-between border-b border-border/40 bg-background/80 px-4 backdrop-blur-xl lg:hidden'>
@@ -91,14 +92,14 @@ export function Navbar({ isAdmin }: NavbarProps) {
                 <>
                   <div className='my-2 border-t border-border' />
                   <Link
-                    href={ROUTES.dashboard.settingsDeveloper}
-                    className={`flex items-center gap-3 rounded-md px-3 py-2 text-[13px] transition-all outline-none focus-visible:ring-2 focus-visible:ring-primary/20 ${pathname === ROUTES.dashboard.settingsDeveloper
+                    href={ROUTES.developer.root}
+                    className={`flex items-center gap-3 rounded-md px-3 py-2 text-[13px] transition-all outline-none focus-visible:ring-2 focus-visible:ring-primary/20 ${isDeveloperActive
                         ? 'bg-warning/10 font-medium text-warning'
                         : 'text-muted-foreground hover:bg-secondary/60 hover:text-foreground'
                       }`}
                   >
                     <SCIcon icon={ShieldCheck} size='base' />
-                    Dev Settings
+                    Developer
                   </Link>
                 </>
               )}

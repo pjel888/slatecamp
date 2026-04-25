@@ -3,7 +3,7 @@ import { getAssets } from '@/lib/actions/admin/assets'
 import { AssetList } from '@/components/admin/AssetList'
 import { AssetUploader } from '@/components/admin/AssetUploader'
 
-export const metadata: Metadata = { title: '3D Assets â€” SlateCamp Admin' }
+export const metadata: Metadata = { title: '3D Assets - SlateCamp Admin' }
 
 export default async function AdminAssetsPage() {
   const assets = await getAssets()

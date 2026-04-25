@@ -5,7 +5,7 @@ import { canManageContent } from '@/lib/admin/roles'
 import { QuestionImporter } from '@/components/admin/QuestionImporter'
 import { Breadcrumb } from '@/components/ui/breadcrumb'
 
-export const metadata: Metadata = { title: 'Import Questions â€” SlateCamp Admin' }
+export const metadata: Metadata = { title: 'Import Questions - SlateCamp Admin' }
 
 export default async function ImportQuestionsPage() {
   const authorized = await canManageContent()

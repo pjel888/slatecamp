@@ -6,6 +6,37 @@ import { FEATURE_PAYMENTS_ENABLED } from "@/lib/constants/feature-flags";
 import type { UserTier } from "@/types/app";
 import { logServerError, logServerEvent } from "@/lib/logging/server";
 
+type LemonSqueezyCheckoutSession = {
+  customer?: string;
+  subscription?: string;
+  metadata?: {
+    tier?: string;
+    userId?: string;
+  };
+};
+
+type LemonSqueezySubscription = {
+  id: string;
+};
+
+type LemonSqueezyWebhookEvent = {
+  id?: string;
+  type: string;
+  data: {
+    object: LemonSqueezyCheckoutSession | LemonSqueezySubscription;
+  };
+};
+
+type LemonSqueezyWebhookClient = {
+  webhooks: {
+    constructEvent(body: string, signature: string, secret: string): LemonSqueezyWebhookEvent;
+  };
+};
+
+const BILLING_TIERS: readonly UserTier[] = ['free', 'pro', 'prime', 'institutional', 'enterprise'];
+const isUserTier = (value: unknown): value is UserTier =>
+  typeof value === 'string' && BILLING_TIERS.includes(value as UserTier);
+
 export async function POST(request: Request) {
   if (!FEATURE_PAYMENTS_ENABLED) {
     console.log('[WEBHOOK] LemonSqueezy webhook received but payments disabled');
@@ -33,9 +64,9 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "No signature" }, { status: 400 });
   }
 
-  let event: any;
+  let event: LemonSqueezyWebhookEvent;
 
-  const ls = getLemonSqueezy() as any;
+  const ls = getLemonSqueezy() as LemonSqueezyWebhookClient | null;
   if (!ls) {
     return NextResponse.json({ error: "LemonSqueezy not configured" }, { status: 503 });
   }
@@ -66,7 +97,7 @@ export async function POST(request: Request) {
   const supabase = createAdminClient();
 
   // Idempotency: skip already-processed events
-  const eventId = String((event as any).id ?? `${event.type}-${Date.now()}`);
+  const eventId = String(event.id ?? `${event.type}-${Date.now()}`);
   const { data: alreadyProcessed } = await supabase
     .from('processed_webhook_events')
     .select('id')
@@ -94,34 +125,55 @@ export async function POST(request: Request) {
 
   switch (event.type) {
     case "checkout.session.completed": {
-      const session = event.data.object as any;
-      const customerId = session.customer as string;
-      const subscriptionId = session.subscription as string;
+      const session = event.data.object as LemonSqueezyCheckoutSession;
+      const customerId = session.customer ?? "";
+      const subscriptionId = session.subscription ?? "";
 
-      const VALID_TIERS: UserTier[] = ['free', 'pro', 'prime', 'institutional', 'enterprise']
       const rawTier = session.metadata?.tier as string | undefined
-      const tier: UserTier = VALID_TIERS.includes(rawTier as UserTier)
-        ? (rawTier as UserTier)
-        : 'pro';
+      const tier: UserTier = isUserTier(rawTier) ? rawTier : 'pro';
 
       const userId = session.metadata?.userId || "";
+      const now = new Date().toISOString();
+
+      if (!userId) {
+        await logServerEvent({
+          severity: 'warn',
+          family: 'billing',
+          eventName: 'lemonsqueezy_missing_user_id',
+          message: 'LemonSqueezy checkout completed without userId metadata.',
+          context: {
+            routeOrAction: 'api:webhooks.lemonsqueezy',
+            provider: 'lemonsqueezy',
+            eventId,
+            metadata: {
+              eventType: event.type,
+              subscriptionId,
+              customerId,
+            },
+          },
+        });
+        return NextResponse.json({ error: "Missing user metadata" }, { status: 400 });
+      }
 
       const { error } = await supabase
         .from("user_subscriptions")
-        .update({
-          tier,
-          lemon_squeezy_customer_id: customerId,
-          lemon_squeezy_subscription_id: subscriptionId,
-          status: 'active',
-          updated_at: new Date().toISOString(),
-        })
-        .eq("user_id", userId);
+        .upsert(
+          {
+            user_id: userId,
+            tier,
+            lemonsqueezy_customer_id: customerId,
+            lemonsqueezy_subscription_id: subscriptionId,
+            status: 'active',
+            updated_at: now,
+          },
+          { onConflict: 'user_id' },
+        );
 
       if (error) {
         await logServerError({
           family: 'billing',
-          eventName: 'lemonsqueezy_subscription_update_failed',
-          message: 'Failed to update user subscription from LemonSqueezy webhook.',
+          eventName: 'lemonsqueezy_subscription_upsert_failed',
+          message: 'Failed to create or update user subscription from LemonSqueezy webhook.',
           context: {
             routeOrAction: 'api:webhooks.lemonsqueezy',
             provider: 'lemonsqueezy',
@@ -136,6 +188,7 @@ export async function POST(request: Request) {
           },
           error,
         });
+        return NextResponse.json({ error: "Subscription update failed" }, { status: 500 });
       }
 
       // Funnel event: pro_subscribed
@@ -143,23 +196,43 @@ export async function POST(request: Request) {
         await supabase.from("analytics_events").insert({
           user_id: userId,
           event_name: "pro_subscribed",
-          event_properties: { plan: tier, lemon_squeezy_subscription_id: subscriptionId },
+          event_properties: { plan: tier, lemonsqueezy_subscription_id: subscriptionId },
         }).then(() => {});
       }
       break;
     }
 
     case "customer.subscription.deleted": {
-      const subscription = event.data.object as any;
-      await supabase
+      const subscription = event.data.object as LemonSqueezySubscription;
+      const { error } = await supabase
         .from("user_subscriptions")
         .update({
           tier: "free" as UserTier,
-          lemon_squeezy_subscription_id: null,
-          status: 'canceled',
+          lemonsqueezy_subscription_id: null,
+          status: 'cancelled',
+          cancelled_at: new Date().toISOString(),
           updated_at: new Date().toISOString(),
         })
-        .eq("lemon_squeezy_subscription_id", subscription.id);
+        .eq("lemonsqueezy_subscription_id", subscription.id);
+
+      if (error) {
+        await logServerError({
+          family: 'billing',
+          eventName: 'lemonsqueezy_subscription_cancel_failed',
+          message: 'Failed to cancel user subscription from LemonSqueezy webhook.',
+          context: {
+            routeOrAction: 'api:webhooks.lemonsqueezy',
+            provider: 'lemonsqueezy',
+            eventId,
+            metadata: {
+              eventType: event.type,
+              subscriptionId: subscription.id,
+            },
+          },
+          error,
+        });
+        return NextResponse.json({ error: "Subscription cancellation failed" }, { status: 500 });
+      }
       break;
     }
   }

@@ -1294,6 +1294,7 @@ RETURNS jsonb
 LANGUAGE plpgsql
 STABLE
 SECURITY DEFINER
+SET search_path = public, extensions, pg_temp
 AS $$
 DECLARE
   v_article jsonb;

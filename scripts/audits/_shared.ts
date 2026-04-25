@@ -9,6 +9,12 @@ export type AuditAccountReason =
   | 'protected-not-probed-by-default'
   | 'non-public-route'
 
+export interface AuditAccountingEntry {
+  path: string
+  reason: AuditAccountReason
+  relativePageFile: string
+}
+
 export interface RouteManifestEntry {
   access: RouteAccess
   auditTargets: AuditTarget[]
@@ -42,9 +48,9 @@ export const APP_ROOT = join(REPO_ROOT, 'src', 'app')
 export const EVIDENCE_ROOT = join(REPO_ROOT, '.ai', '02_audits', 'evidence')
 const ROUTE_MANIFEST_FILENAME = 'route-manifest.json'
 
-const PUBLIC_PREFIXES = ['/', '/about', '/contact', '/pricing', '/try', '/tools', '/calculators', '/test-3d']
-const AUTH_PREFIXES = ['/login', '/register', '/forgot-password', '/onboarding']
-const PROTECTED_PREFIXES = ['/dashboard', '/admin', '/developer', '/ceo', '/quiz']
+const PUBLIC_PREFIXES = ['/', '/about', '/contact', '/pricing', '/try', '/tools', '/calculators']
+const AUTH_PREFIXES = ['/login', '/register', '/forgot-password', '/auth/reset-password', '/onboarding']
+const PROTECTED_PREFIXES = ['/dashboard', '/admin', '/developer', '/ceo', '/quiz', '/settings', '/test-3d']
 const DEFAULT_PROTECTED_PROBES = new Set(['/dashboard', '/admin', '/developer', '/ceo'])
 
 const normalizeSlashes = (value: string) => value.replaceAll('\\', '/')
@@ -177,7 +183,7 @@ export const buildRouteManifest = async (): Promise<RouteManifest> => {
       inferredAccessRules: [
         '/admin/login is treated as public login entry',
         '/login, /register, /forgot-password, /onboarding* are treated as auth pages',
-        '/dashboard*, /admin* (except /admin/login), /developer*, /ceo*, and /quiz* are treated as protected',
+        '/dashboard*, /admin* (except /admin/login), /developer*, /ceo*, /quiz*, and /settings* are treated as protected',
         'All remaining page routes are treated as public for smoke coverage until a narrower guard is encoded',
       ],
     },
@@ -249,18 +255,18 @@ export const summarizeAccounting = <T extends { reason: AuditAccountReason }>(en
     }
   )
 
-export const collectPublicAccounting = (manifest: RouteManifest) =>
+export const collectPublicAccounting = (manifest: RouteManifest): AuditAccountingEntry[] =>
   manifest.routes
     .filter((route) => !route.auditTargets.includes('public-smoke'))
     .map((route) => ({
       path: route.path,
       reason: route.requiresFixture
-        ? 'dynamic-fixture-missing'
-        : 'non-public-route',
+        ? ('dynamic-fixture-missing' as const)
+        : ('non-public-route' as const),
       relativePageFile: route.relativePageFile,
     }))
 
-export const collectBrowserAccounting = (manifest: RouteManifest) =>
+export const collectBrowserAccounting = (manifest: RouteManifest): AuditAccountingEntry[] =>
   manifest.routes
     .filter(
       (route) =>
@@ -270,9 +276,9 @@ export const collectBrowserAccounting = (manifest: RouteManifest) =>
     .map((route) => ({
       path: route.path,
       reason: route.requiresFixture
-        ? 'dynamic-fixture-missing'
+        ? ('dynamic-fixture-missing' as const)
         : route.access === 'protected'
-          ? 'protected-not-probed-by-default'
-          : 'non-public-route',
+          ? ('protected-not-probed-by-default' as const)
+          : ('non-public-route' as const),
       relativePageFile: route.relativePageFile,
     }))

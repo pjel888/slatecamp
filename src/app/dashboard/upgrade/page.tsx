@@ -81,10 +81,10 @@ const UpgradePage = async () => {
           ))}
         </div>
 
-        {/* Social Proof — Campfire (UX Strategy Section 15) */}
+        {/* Social Proof */}
         <div className="mt-8 rounded-md border border-border bg-white p-4">
           <p className="text-sm italic text-muted-foreground">
-            From the Campfire: &ldquo;Started at 44%, passed June 2025.&rdquo;
+            Passer note: &ldquo;Started at 44%, passed June 2025.&rdquo;
           </p>
           <p className="mt-1 text-xs text-muted-foreground">
             &mdash; Maria S., PUP Architecture
