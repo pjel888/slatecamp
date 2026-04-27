@@ -2,7 +2,6 @@
 
 import { memo, type ReactNode, Suspense, useState, useEffect } from 'react'
 import { CanvasLoadingOverlay } from '@/components/r3f/CanvasLoadingOverlay'
-import { useInvalidateOnChange } from '@/features/3d-lab/hooks/useInvalidateOnChange'
 import { useRegisterInvalidate } from '@/components/r3f/useRegisterInvalidate'
 import { useViewportShellStore } from '@/features/3d-lab/stores/useViewportShellStore'
 import { useCameraSnap } from '@/features/3d-lab/hooks/useCameraSnap'
@@ -20,7 +19,6 @@ interface CanvasWrapperProps {
 }
 
 const InvalidateRegistrar = () => {
-  useInvalidateOnChange()
   // Register R3F invalidate into the viewport shell store so toolbar toggles
   // (grid, xray, dimensions) and camera presets can trigger scene re-renders.
   const setViewportInvalidateFn = useViewportShellStore((s) => s.setInvalidateFn)

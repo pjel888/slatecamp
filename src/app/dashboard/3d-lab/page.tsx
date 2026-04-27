@@ -4,7 +4,11 @@ import { ROUTES } from "@/lib/routes";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Lock } from "@phosphor-icons/react/dist/ssr";
-import { LabBrowser, LabBrowserShell } from "@/features/3d-lab/components";
+import { LabBrowser } from "@/features/3d-lab/components/LabBrowser";
+import {
+  LabBrowserLoadingState,
+  LabBrowserShell,
+} from "@/features/3d-lab/components/shell/LabBrowserShell";
 import { THREE_D_LAB_GATE_COPY } from "@/features/3d-lab/gate-copy";
 import { getViewerEntitlements } from "@/lib/entitlements/get-viewer-entitlements";
 import { ENTITLEMENT_FEATURE_KEYS } from "@/lib/entitlements/feature-keys";
@@ -56,7 +60,15 @@ export default async function ThreeDLabPage({
 
   return (
     <LabBrowserShell>
-      <Suspense key="lab-browser-suspense" fallback={null}>
+      <Suspense
+        key="lab-browser-suspense"
+        fallback={
+          <LabBrowserLoadingState
+            title="Loading 3D Lab..."
+            detail="Preparing the module browser and route state."
+          />
+        }
+      >
         <LabBrowser basePath={ROUTES.lab.root} />
       </Suspense>
     </LabBrowserShell>

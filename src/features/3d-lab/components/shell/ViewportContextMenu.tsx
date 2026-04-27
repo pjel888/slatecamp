@@ -7,6 +7,7 @@
 
 import { useState, useEffect, useCallback, type ReactNode } from 'react'
 import { useViewportShellStore } from '@/features/3d-lab/stores/useViewportShellStore'
+import { showViewportToast } from './ViewportToast'
 
 interface MenuAction {
   id: string
@@ -22,17 +23,16 @@ const EMPTY_SPACE_ACTIONS: MenuAction[] = [
   { id: 'reset-camera', label: 'Reset Camera', shortcut: 'R', onClick: () => useViewportShellStore.getState().snapToPreset('reset', 'context-menu') },
   { id: 'zoom-to-fit', label: 'Zoom to Fit', shortcut: 'Z', onClick: () => useViewportShellStore.getState().snapToPreset('zoom-to-fit', 'context-menu') },
   { id: 'toggle-grid', label: 'Toggle Grid', shortcut: 'G', onClick: () => useViewportShellStore.getState().toggleGrid(), dividerBefore: true },
-  { id: 'screenshot', label: 'Screenshot', shortcut: 'P', onClick: () => {
-    const canvas = document.querySelector('canvas')
-    if (canvas) {
-      try {
-        const link = document.createElement('a')
-        link.download = `slatecamp-screenshot-${Date.now()}.png`
-        link.href = canvas.toDataURL('image/png')
-        link.click()
-      } catch { /* handled by SceneToolbar */ }
-    }
-  }},
+  {
+    id: 'screenshot',
+    label: 'Screenshot',
+    shortcut: 'P',
+    onClick: () =>
+      showViewportToast(
+        'Screenshot is unavailable in the shared 3D viewport.',
+        'info',
+      ),
+  },
 ]
 
 export const ViewportContextMenu = () => {

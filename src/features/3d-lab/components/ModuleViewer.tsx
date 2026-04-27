@@ -2,15 +2,13 @@
 
 import { useState, useEffect, useCallback, useMemo, useRef } from 'react'
 import { useRouter } from 'next/navigation'
-import {
-  LabTopBar,
-  OnboardingFlow,
-  ModuleContextCard,
-  LabViewport,
-  LabModuleShell,
-  LabViewportFrame,
-  ViewportShell,
-} from '@/features/3d-lab/components'
+import { LabTopBar } from '@/features/3d-lab/components/LabTopBar'
+import { OnboardingFlow } from '@/features/3d-lab/components/OnboardingFlow'
+import { ModuleContextCard } from '@/features/3d-lab/components/ModuleContextCard'
+import { LabViewport } from '@/features/3d-lab/components/LabViewport'
+import { LabModuleShell } from '@/features/3d-lab/components/shell/LabModuleShell'
+import { LabViewportFrame } from '@/features/3d-lab/components/shell/LabViewportFrame'
+import { ViewportShell } from '@/features/3d-lab/components/shell/ViewportShell'
 import { useLabStore } from '@/features/3d-lab/stores/useLabStore'
 import { useLabTelemetry } from '@/hooks/useLabTelemetry'
 import { useTemplateContent } from '@/features/3d-lab/hooks/useTemplateContent'

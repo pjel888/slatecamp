@@ -6,6 +6,7 @@
 import { useCallback } from 'react'
 import { Grid3x3, Ruler, Eye, Layers, Camera, Maximize2 } from 'lucide-react'
 import { useViewportShellStore } from '@/features/3d-lab/stores/useViewportShellStore'
+import { showViewportToast } from './ViewportToast'
 
 interface ToolbarButton {
   id: string
@@ -51,19 +52,10 @@ export const SceneToolbar = () => {
   }
 
   const handleScreenshot = useCallback(() => {
-    const canvas = document.querySelector('canvas')
-    if (!canvas) return
-    try {
-      const link = document.createElement('a')
-      link.download = `slatecamp-screenshot-${Date.now()}.png`
-      link.href = canvas.toDataURL('image/png')
-      link.click()
-    } catch {
-      // Toast would go here — for now, console.warn in dev
-      if (process.env.NODE_ENV === 'development') {
-        console.warn('Screenshot failed — canvas may not support toDataURL')
-      }
-    }
+    showViewportToast(
+      'Screenshot is unavailable in the shared 3D viewport.',
+      'info',
+    )
   }, [])
 
   const handleFullscreen = useCallback(() => {

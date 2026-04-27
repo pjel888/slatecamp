@@ -1,6 +1,6 @@
 import { redirect, notFound } from "next/navigation";
 import { ROUTES } from "@/lib/routes";
-import { ModuleViewer } from "@/features/3d-lab/components";
+import { ModuleViewer } from "@/features/3d-lab/components/ModuleViewer";
 import { getModuleById } from "@/features/3d-lab/config/registry";
 import { getViewerEntitlements } from "@/lib/entitlements/get-viewer-entitlements";
 import { ENTITLEMENT_FEATURE_KEYS } from "@/lib/entitlements/feature-keys";

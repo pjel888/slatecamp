@@ -5,6 +5,7 @@
 
 import { useEffect } from 'react'
 import { useViewportShellStore } from '@/features/3d-lab/stores/useViewportShellStore'
+import { showViewportToast } from '@/features/3d-lab/components/shell/ViewportToast'
 
 export const useViewportShortcuts = () => {
   useEffect(() => {
@@ -38,16 +39,10 @@ export const useViewportShortcuts = () => {
         case 'p':
           if (!e.ctrlKey && !e.metaKey) {
             e.preventDefault()
-            // Trigger screenshot — find canvas and download
-            const canvas = document.querySelector('canvas')
-            if (canvas) {
-              try {
-                const link = document.createElement('a')
-                link.download = `slatecamp-screenshot-${Date.now()}.png`
-                link.href = canvas.toDataURL('image/png')
-                link.click()
-              } catch { /* silent — SceneToolbar handles error display */ }
-            }
+            showViewportToast(
+              'Screenshot is unavailable in the shared 3D viewport.',
+              'info',
+            )
           }
           break
         case 'f':

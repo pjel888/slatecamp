@@ -1,6 +1,6 @@
 'use client'
 
-import { useMemo, useCallback } from 'react'
+import { useMemo, useCallback, useTransition } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
 import { ASSET_TAXONOMY, type CategoryKey } from '../config/taxonomy'
 import { ALL_MODULES, getModuleById } from '../config/registry'
@@ -8,6 +8,7 @@ import { DASHBOARD_VISIBLE_IDS } from '../config/dashboard-visibility'
 import { CategoryGrid } from './CategoryGrid'
 import { ModuleList } from './ModuleList'
 import { ModuleCard } from './ModuleCard'
+import { LabBrowserLoadingState } from './shell/LabBrowserShell'
 
 // ─── Component ──────────────────────────────────────────────────────────────
 
@@ -27,6 +28,7 @@ export function LabBrowser({ basePath }: { basePath: string }) {
   const router = useRouter()
   const searchParams = useSearchParams()
   const activeCategoryKey = searchParams.get('category') as CategoryKey | null
+  const [isPending, startTransition] = useTransition()
 
   // ─── Simplified dashboard mode ──────────────────────────────────────────
 
@@ -58,12 +60,29 @@ export function LabBrowser({ basePath }: { basePath: string }) {
   }, [activeCategoryKey])
 
   const handleCategorySelect = useCallback((categoryKey: string) => {
-    router.push(`${basePath}?category=${categoryKey}`)
+    startTransition(() => {
+      router.push(`${basePath}?category=${categoryKey}`)
+    })
   }, [router, basePath])
 
   const handleBack = useCallback(() => {
-    router.push(basePath)
+    startTransition(() => {
+      router.push(basePath)
+    })
   }, [router, basePath])
+
+  if (isPending) {
+    return (
+      <LabBrowserLoadingState
+        title="Switching 3D Lab view..."
+        detail={
+          activeCategoryKey
+            ? 'Loading the selected module category.'
+            : 'Refreshing the 3D module browser.'
+        }
+      />
+    )
+  }
 
   // ─── Simplified mode: flat grid of visible modules only ─────────────────
 

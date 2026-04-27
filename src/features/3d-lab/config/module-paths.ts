@@ -1,9 +1,5 @@
 import { ALL_MODULES } from '@/features/3d-lab/config/registry'
-import { ASSET_TAXONOMY, type CategoryKey } from '@/features/3d-lab/config/taxonomy'
-
-const CATEGORY_ID_TO_KEY = Object.fromEntries(
-  Object.entries(ASSET_TAXONOMY).map(([key, meta]) => [meta.id, key as CategoryKey]),
-)
+import type { CategoryKey } from '@/features/3d-lab/config/taxonomy'
 
 export const CATEGORY_FOLDER_MAP: Record<CategoryKey, string> = {
   BUILDING_CODE: '01-building-code',
@@ -30,8 +26,7 @@ export const MODULE_IMPORT_PATHS: Record<string, string> = Object.fromEntries(
       return []
     }
 
-    const categoryKey = CATEGORY_ID_TO_KEY[module.categoryId]
-    const folder = categoryKey ? CATEGORY_FOLDER_MAP[categoryKey] : null
+    const folder = CATEGORY_FOLDER_MAP[module.categoryId]
 
     if (!folder) {
       return []

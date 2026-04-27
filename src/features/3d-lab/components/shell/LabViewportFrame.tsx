@@ -2,7 +2,7 @@
 
 import React, { Suspense, useState, useCallback, useEffect } from 'react'
 import { Canvas } from '@react-three/fiber'
-import { PerformanceMonitor, useGLTF } from '@react-three/drei'
+import { Html, PerformanceMonitor, useGLTF } from '@react-three/drei'
 import { SceneTunnel } from '@/features/3d-lab/components/GlobalCanvasPortal'
 import { WebGLErrorBoundary } from '@/components/r3f/WebGLErrorBoundary'
 import { DOMOverlayLayer } from '@/features/3d-lab/components/overlays/DOMOverlayLayer'
@@ -87,9 +87,7 @@ export const LabViewportFrame = ({ children }: LabViewportFrameProps) => {
             stencil: false,
             depth: true,
             powerPreference: 'high-performance',
-            // Screenshot shortcuts call canvas.toDataURL(), which requires the
-            // drawing buffer to be preserved between frames.
-            preserveDrawingBuffer: true,
+            preserveDrawingBuffer: false,
           }}
           style={{ pointerEvents: 'auto' }}
         >
@@ -100,7 +98,15 @@ export const LabViewportFrame = ({ children }: LabViewportFrameProps) => {
           />
 
           {/* Scene content portaled from CanvasWrapper instances via SceneTunnel */}
-          <Suspense fallback={null}>
+          <Suspense
+            fallback={
+              <Html center>
+                <div className="rounded-sm border border-border bg-card/95 px-3 py-2 text-[11px] font-semibold uppercase tracking-wider text-muted-foreground shadow-sm">
+                  Loading 3D scene...
+                </div>
+              </Html>
+            }
+          >
             <SceneTunnel.Out />
           </Suspense>
         </Canvas>

@@ -1,8 +1,9 @@
 'use client'
 
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { useOverlayStore } from '../../stores/useOverlayStore'
 import { useWorldToScreen } from '../../hooks/useWorldToScreen'
+import { useViewportShellStore } from '../../stores/useViewportShellStore'
 import { LabelOverlay } from './LabelOverlay'
 import { HotspotCard } from './HotspotCard'
 import { ViolationBadge } from './ViolationBadge'
@@ -22,18 +23,60 @@ export const DOMOverlayLayer = ({ className }: DOMOverlayLayerProps) => {
   const containerRef = useRef<HTMLDivElement>(null)
   const items = useOverlayStore((s) => s.items)
   const worldToScreen = useWorldToScreen()
+  const activeInteraction = useViewportShellStore((s) => s.activeInteraction)
+  const cameraCommandId = useViewportShellStore((s) => s.cameraCommandId)
   const [, forceUpdate] = useState(0)
 
-  // Sync with render loop via rAF
+  const hasVisibleItems = useMemo(
+    () => Array.from(items.values()).some((item) => item.visible),
+    [items],
+  )
+
+  // Immediate refresh when overlay content changes.
   useEffect(() => {
-    let rafId: number
+    forceUpdate((n) => n + 1)
+  }, [items, worldToScreen, cameraCommandId])
+
+  // Only animate overlay projection while the camera is actively moving:
+  // user orbit/pan interactions or a short preset-transition window.
+  useEffect(() => {
+    if (!hasVisibleItems) {
+      return undefined
+    }
+
+    let rafId: number | null = null
+    let stopTimer: number | null = null
+
+    const stopLoop = () => {
+      if (rafId !== null) {
+        cancelAnimationFrame(rafId)
+        rafId = null
+      }
+
+      if (stopTimer !== null) {
+        window.clearTimeout(stopTimer)
+        stopTimer = null
+      }
+    }
+
     const loop = () => {
       forceUpdate((n) => n + 1)
       rafId = requestAnimationFrame(loop)
     }
-    rafId = requestAnimationFrame(loop)
-    return () => cancelAnimationFrame(rafId)
-  }, [])
+
+    if (activeInteraction !== 'idle') {
+      rafId = requestAnimationFrame(loop)
+      return stopLoop
+    }
+
+    if (cameraCommandId > 0) {
+      rafId = requestAnimationFrame(loop)
+      stopTimer = window.setTimeout(stopLoop, 900)
+      return stopLoop
+    }
+
+    return stopLoop
+  }, [activeInteraction, cameraCommandId, hasVisibleItems])
 
   const container = containerRef.current
   const w = container?.clientWidth ?? 0
