@@ -7,6 +7,9 @@ import type { WikiArticle } from "@/types/app";
 import type { TaxonomyNode } from "@/lib/actions/taxonomy";
 import { getCachedTaxonomyTreeByDiscipline } from "./cached-queries";
 
+const WIKI_ARTICLE_COLUMNS = 'article_id, slug, title, content, created_at, updated_at, lea_tests_you, updated_note, subject_label, difficulty_label'
+const TAXONOMY_NODE_COLUMNS = 'node_id, discipline_id, parent_id, level, name, subject_area, is_leaf, slug, sort_order, lea_id, description, exam_frequency, bloom_level, difficulty, prc_area'
+
 /**
  * Perform a pure Postgres Full-Text Search on wiki articles.
  * High performance, zero cost, supports stemming and relevance ranking.
@@ -112,7 +115,7 @@ export async function getWikiArticleBySlug(slug: string): Promise<WikiArticle | 
   const supabase = await createClient();
   const { data, error } = await supabase
     .from("wiki_articles")
-    .select("*")
+    .select(WIKI_ARTICLE_COLUMNS)
     .eq("slug", slug)
     .eq("status", "published")
     .limit(1)
@@ -177,7 +180,7 @@ export async function getWikiArticleByTaxonomySlug(taxonomySlug: string): Promis
   // 4. Fetch the actual article content (only published)
   const { data: article, error: articleError } = await supabase
     .from("wiki_articles")
-    .select("*")
+    .select(WIKI_ARTICLE_COLUMNS)
     .eq("article_id", articleId)
     .eq("status", "published")
     .maybeSingle();
@@ -201,7 +204,7 @@ export async function getTaxonomyTree(
   // Fetch all taxonomy nodes for the discipline
   const { data: nodes, error } = await supabase
     .from("taxonomy_tree")
-    .select("*")
+    .select(TAXONOMY_NODE_COLUMNS)
     .eq("discipline_id", disciplineId)
     .eq("is_cross_ref_only", false)
     .is("deprecated_at", null)
@@ -306,7 +309,7 @@ export async function getActiveTaxonomyNode(slug: string): Promise<TaxonomyNode 
       if (fallback) {
         const { data: node } = await supabase
           .from("taxonomy_tree")
-          .select("*")
+          .select(TAXONOMY_NODE_COLUMNS)
           .eq("node_id", fallback.node_id)
           .single();
         return node as TaxonomyNode;
@@ -314,7 +317,7 @@ export async function getActiveTaxonomyNode(slug: string): Promise<TaxonomyNode 
     } else {
       const { data: node } = await supabase
         .from("taxonomy_tree")
-        .select("*")
+        .select(TAXONOMY_NODE_COLUMNS)
         .eq("node_id", nodeId)
         .single();
       return node as TaxonomyNode;
@@ -324,7 +327,7 @@ export async function getActiveTaxonomyNode(slug: string): Promise<TaxonomyNode 
   // Path 2: slug is a taxonomy node slug → direct lookup
   const { data: directNode } = await supabase
     .from("taxonomy_tree")
-    .select("*")
+    .select(TAXONOMY_NODE_COLUMNS)
     .eq("slug", slug)
     .maybeSingle();
 
@@ -531,13 +534,14 @@ export async function getArticleSiblings(nodeId: string): Promise<{ prev: Taxono
   // 2. Fetch all siblings in the same discipline and level with the same parent
   const { data: siblings, error: siblingsError } = await supabase
     .from('taxonomy_tree')
-    .select('*')
+    .select(TAXONOMY_NODE_COLUMNS)
     .eq('parent_id', currentNode.parent_id)
     .eq('discipline_id', currentNode.discipline_id)
     .eq('level', currentNode.level)
     .is('deprecated_at', null)
     .order('sort_order', { ascending: true, nullsFirst: false })
     .order('name', { ascending: true })
+    .limit(100)
 
   if (siblingsError || !siblings || siblings.length <= 1) return { prev: null, next: null }
 
@@ -607,4 +611,3 @@ export async function searchWikiPaginated(
 
   return { results, totalCount: count ?? 0 };
 }
-

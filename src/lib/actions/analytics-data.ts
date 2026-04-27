@@ -165,21 +165,24 @@ export const getSessionHistory = async (): Promise<AnalyticsResult<SessionHistor
     const { data: { user } } = await getUser()
     if (!user) return wrapResult({ points: [], trend: 'stable' as const })
 
-    const [sessionsRes, interactionsRes] = await Promise.all([
-      supabase
-        .from('quiz_sessions')
-        .select('session_id, started_at')
-        .eq('user_id', user.id)
-        .eq('status', 'completed')
-        .order('started_at', { ascending: true })
-        .limit(30),
-      supabase
-        .from('user_interactions')
-        .select('session_id, is_correct')
-        .eq('user_id', user.id),
-    ])
+    const sessionsRes = await supabase
+      .from('quiz_sessions')
+      .select('session_id, started_at')
+      .eq('user_id', user.id)
+      .eq('status', 'completed')
+      .order('started_at', { ascending: true })
+      .limit(30)
 
     const sessions = (sessionsRes.data || []) as Array<{ session_id: string; started_at: string }>
+    if (!sessions.length) return wrapResult({ points: [], trend: 'stable' as const })
+
+    const sessionIds = sessions.map((session) => session.session_id)
+    const interactionsRes = await supabase
+      .from('user_interactions')
+      .select('session_id, is_correct')
+      .eq('user_id', user.id)
+      .in('session_id', sessionIds)
+
     const interactions = (interactionsRes.data || []) as Array<{ session_id: string; is_correct: boolean }>
 
     if (!sessions.length || !interactions.length) return wrapResult({ points: [], trend: 'stable' as const })

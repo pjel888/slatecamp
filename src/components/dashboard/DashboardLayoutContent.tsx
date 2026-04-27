@@ -122,6 +122,37 @@ const DashboardLayoutContent = async ({ children }: DashboardLayoutContentProps)
     ? 'local'
     : getConnectionState()
 
+  if (isLabPath) {
+    return (
+      <div className='flex h-screen w-full flex-col overflow-hidden text-foreground font-sans selection:bg-muted bg-page-bg'>
+        <main className='flex-1 min-h-0 min-w-0 overflow-hidden bg-page-bg'>
+          {children}
+        </main>
+        {showDevTools && (
+          <>
+            <DevToolbar
+              connectionState={devConnectionState}
+              currentTier={currentTier}
+              effectiveTier={effectiveTier}
+              flags={devToolbarFlags}
+            />
+            <DevKeyboardProvider
+              systemInfo={buildDevSystemInfo({
+                env: process.env.NODE_ENV ?? 'development',
+                nextVersion: developerNextVersion,
+                userId: user.id,
+                userEmail: user.email ?? '',
+                userRole: entitlements.normalizedRole,
+                connectionState: devConnectionState,
+              })}
+            />
+          </>
+        )}
+        <Toaster />
+      </div>
+    )
+  }
+
   return (
     <EntitlementProvider entitlements={entitlements}>
       <TierProvider
@@ -130,8 +161,8 @@ const DashboardLayoutContent = async ({ children }: DashboardLayoutContentProps)
         isDevMode={showDevTools}
       >
       <DisciplineProvider
-        initialDiscipline={isLabPath ? null : userStats?.disciplines ?? null}
-        initialDisciplines={isLabPath ? [] : (allDisciplines as Discipline[] ?? [])}
+        initialDiscipline={userStats?.disciplines ?? null}
+        initialDisciplines={allDisciplines as Discipline[] ?? []}
       >
         <ActiveSessionProvider>
           <NoteContextProvider>

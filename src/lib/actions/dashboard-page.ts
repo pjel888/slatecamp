@@ -6,6 +6,7 @@ import type { DashboardPageData } from '@/types/dashboard'
 import { MODE_TOOLTIPS, getWeekBoundary } from './dashboard-helpers'
 import { 
   buildSubjectMastery, 
+  getSubjectMasteryData,
   transformProjectedLawsMastery, 
   buildSubjectFloorAlerts, 
   buildFocusAreas, 
@@ -33,6 +34,19 @@ interface ProjectedLawsMasteryRow {
   current_mastery_weight: number | null
   total_attempts: number | null
 }
+
+export type DashboardSyncPayload = Pick<
+  DashboardPageData,
+  'readinessScore' | 'daysUntilExam' | 'activeTrailDay' | 'srsReview' | 'subjectFloorAlerts'
+>
+
+const emptyDashboardSyncPayload = (): DashboardSyncPayload => ({
+  readinessScore: 0,
+  daysUntilExam: null,
+  activeTrailDay: null,
+  srsReview: { itemsDue: 0, subjects: [], estimatedMinutes: 0 },
+  subjectFloorAlerts: [],
+})
 
 // ── Main fetcher ────────────────────────────────────────────────────────────
 
@@ -62,6 +76,90 @@ export const getDashboardPageData = async (): Promise<DashboardPageData> => {
       tags: getDashboardCacheTags(user.id),
     }
   )(user, hasUnlimitedQuestions, canSeeLiveScore)
+}
+
+/**
+ * Minimal dashboard side-effect payload.
+ *
+ * `DashboardAnalyticsSync` runs after hydration and should not pull the full
+ * dashboard aggregate payload. Keep this action restricted to the values needed
+ * for analytics metadata and notification sync.
+ */
+export const getDashboardSyncPayload = async (): Promise<DashboardSyncPayload> => {
+  const { data: { user } } = await getUser()
+  if (!user) return emptyDashboardSyncPayload()
+
+  const supabase = await createServiceClient()
+  const nowIso = new Date().toISOString()
+
+  const globalStatsPromise = supabase
+    .from('user_global_stats')
+    .select('global_readiness_score, target_exam_date')
+    .eq('user_id', user.id)
+    .maybeSingle()
+    .then((result) => result)
+
+  const activeEnrollmentPromise = supabase
+    .from('user_trail_enrollments')
+    .select('enrollment_id, trail_id, current_day, status, camp_trails(slug, name, duration_days)')
+    .eq('user_id', user.id)
+    .eq('status', 'active')
+    .order('started_at', { ascending: false })
+    .limit(1)
+    .maybeSingle()
+    .then((result) => result)
+
+  const srsReviewPromise = supabase
+    .from('user_node_mastery')
+    .select('taxonomy_tree(subject_area)')
+    .eq('user_id', user.id)
+    .lte('next_review_at', nowIso)
+    .gt('total_attempts', 0)
+    .then((result) => result)
+
+  const subjectMasteryPromise = getSubjectMasteryData()
+
+  const [
+    globalStatsResult,
+    activeEnrollmentResult,
+    srsReviewResult,
+    subjectMastery,
+  ] = await Promise.all([
+    globalStatsPromise,
+    activeEnrollmentPromise,
+    srsReviewPromise,
+    subjectMasteryPromise,
+  ])
+
+  const trailDayResult = activeEnrollmentResult.data
+    ? await supabase
+        .from('trail_days')
+        .select('title, trail_steps(estimated_minutes)')
+        .eq('trail_id', activeEnrollmentResult.data.trail_id)
+        .eq('day_number', activeEnrollmentResult.data.current_day)
+        .maybeSingle()
+    : { data: null }
+
+  const globalStats = globalStatsResult.data
+  const examDateRaw = globalStats?.target_exam_date ?? null
+  let daysUntilExam: number | null = null
+  if (examDateRaw) {
+    const diff = new Date(examDateRaw).getTime() - Date.now()
+    if (diff > 0) daysUntilExam = Math.ceil(diff / (24 * 60 * 60 * 1000))
+  }
+
+  return {
+    readinessScore: Math.round(globalStats?.global_readiness_score ?? 0),
+    daysUntilExam,
+    activeTrailDay: activeEnrollmentResult.data ? {
+      dayNumber: activeEnrollmentResult.data.current_day,
+      title: (trailDayResult as any).data?.title ?? `Day ${activeEnrollmentResult.data.current_day}`,
+      estimatedMinutes: ((trailDayResult as any).data?.trail_steps ?? []).reduce((sum: number, step: any) => sum + (step.estimated_minutes ?? 0), 0),
+      trailSlug: (activeEnrollmentResult.data.camp_trails as any)?.slug ?? '',
+    } : null,
+    srsReview: transformSrsReview(srsReviewResult.data),
+    subjectFloorAlerts: buildSubjectFloorAlerts(subjectMastery),
+  }
 }
 
 const fetchDashboardData = async (

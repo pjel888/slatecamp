@@ -1,19 +1,19 @@
 'use client'
 
 import { useEffect } from 'react'
-import { getDashboardPageData } from '@/lib/actions/dashboard-page'
+import { getDashboardSyncPayload } from '@/lib/actions/dashboard-page'
 import { syncDashboardNotifications } from '@/lib/actions/sync-notifications'
 import { trackEvent } from '@/lib/analytics'
 
 /**
  * Client component to handle fire-and-forget side effects for the dashboard.
- * Fetches data on client to sync notifications and track analytics.
+ * Fetches only the minimal sync payload instead of the full dashboard aggregate.
  */
 export function DashboardAnalyticsSync() {
   useEffect(() => {
     const sync = async () => {
       try {
-        const data = await getDashboardPageData()
+        const data = await getDashboardSyncPayload()
         
         // Track analytics
         trackEvent({

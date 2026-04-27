@@ -23,6 +23,30 @@ export interface AIProvider {
   ): AsyncIterable<string>;
 }
 
+const AI_COMPLETION_TIMEOUT_MS = Number(process.env.AI_COMPLETION_TIMEOUT_MS ?? 30_000);
+const AI_EMBEDDING_TIMEOUT_MS = Number(process.env.AI_EMBEDDING_TIMEOUT_MS ?? 10_000);
+const AI_STREAM_TIMEOUT_MS = Number(process.env.AI_STREAM_TIMEOUT_MS ?? 60_000);
+
+const timeoutSignal = (timeoutMs: number): AbortSignal => {
+  if (typeof AbortSignal.timeout === "function") {
+    return AbortSignal.timeout(timeoutMs);
+  }
+
+  const controller = new AbortController();
+  setTimeout(() => controller.abort(), timeoutMs).unref?.();
+  return controller.signal;
+};
+
+const readJsonResponse = async (res: Response, provider: string) => {
+  if (!res.ok) {
+    const body = await res.text().catch(() => "");
+    const excerpt = body.slice(0, 300);
+    throw new Error(`${provider} request failed with ${res.status}${excerpt ? `: ${excerpt}` : ""}`);
+  }
+
+  return res.json();
+};
+
 export function getAIProvider(): AIProvider {
   const provider = process.env.AI_PROVIDER ?? "openai";
   if (provider === "anthropic") {
@@ -47,6 +71,7 @@ class OpenAIProvider implements AIProvider {
     const res = await fetch(`${this.baseUrl}/chat/completions`, {
       method: "POST",
       headers: this.headers,
+      signal: timeoutSignal(AI_COMPLETION_TIMEOUT_MS),
       body: JSON.stringify({
         model: "gpt-4o",
         messages: [
@@ -59,7 +84,7 @@ class OpenAIProvider implements AIProvider {
         temperature: options?.temperature ?? 0.7,
       }),
     });
-    const data = await res.json();
+    const data = await readJsonResponse(res, "OpenAI completion");
     return data.choices[0].message.content;
   }
 
@@ -67,12 +92,13 @@ class OpenAIProvider implements AIProvider {
     const res = await fetch(`${this.baseUrl}/embeddings`, {
       method: "POST",
       headers: this.headers,
+      signal: timeoutSignal(AI_EMBEDDING_TIMEOUT_MS),
       body: JSON.stringify({
         model: "text-embedding-3-small",
         input: text,
       }),
     });
-    const data = await res.json();
+    const data = await readJsonResponse(res, "OpenAI embedding");
     return data.data[0].embedding;
   }
 
@@ -83,6 +109,7 @@ class OpenAIProvider implements AIProvider {
     const res = await fetch(`${this.baseUrl}/chat/completions`, {
       method: "POST",
       headers: this.headers,
+      signal: timeoutSignal(AI_STREAM_TIMEOUT_MS),
       body: JSON.stringify({
         model: "gpt-4o",
         messages: [
@@ -96,6 +123,10 @@ class OpenAIProvider implements AIProvider {
         stream: true,
       }),
     });
+
+    if (!res.ok) {
+      await readJsonResponse(res, "OpenAI stream");
+    }
 
     const reader = res.body?.getReader();
     if (!reader) return;
@@ -143,6 +174,7 @@ class AnthropicProvider implements AIProvider {
     const res = await fetch(`${this.baseUrl}/messages`, {
       method: "POST",
       headers: this.headers,
+      signal: timeoutSignal(AI_COMPLETION_TIMEOUT_MS),
       body: JSON.stringify({
         model: "claude-sonnet-4-20250514",
         max_tokens: options?.maxTokens ?? 2048,
@@ -150,7 +182,7 @@ class AnthropicProvider implements AIProvider {
         messages: [{ role: "user", content: prompt }],
       }),
     });
-    const data = await res.json();
+    const data = await readJsonResponse(res, "Anthropic completion");
     return data.content[0].text;
   }
 
@@ -167,6 +199,7 @@ class AnthropicProvider implements AIProvider {
     const res = await fetch(`${this.baseUrl}/messages`, {
       method: "POST",
       headers: this.headers,
+      signal: timeoutSignal(AI_STREAM_TIMEOUT_MS),
       body: JSON.stringify({
         model: "claude-sonnet-4-20250514",
         max_tokens: options?.maxTokens ?? 2048,
@@ -175,6 +208,10 @@ class AnthropicProvider implements AIProvider {
         stream: true,
       }),
     });
+
+    if (!res.ok) {
+      await readJsonResponse(res, "Anthropic stream");
+    }
 
     const reader = res.body?.getReader();
     if (!reader) return;

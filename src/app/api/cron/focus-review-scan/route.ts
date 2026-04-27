@@ -121,7 +121,7 @@ export async function GET(_request: Request) {
       .from('focus_review_queues')
       .update({ status: 'expired' })
       .eq('status', 'pending')
-      .lt('created_at', sevenDaysAgo)
+      .lt('generated_at', sevenDaysAgo)
 
     return NextResponse.json({
       processed: userIds.length,
@@ -261,7 +261,7 @@ export async function GET(_request: Request) {
     .from('focus_review_queues')
     .update({ status: 'expired' })
     .eq('status', 'pending')
-    .lt('created_at', sevenDaysAgo)
+    .lt('generated_at', sevenDaysAgo)
 
   logEntitlementAuditEvent({
     eventName: 'entitlement.decision',

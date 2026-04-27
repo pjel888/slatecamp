@@ -31,8 +31,7 @@ mock.module("@/lib/supabase/server", () => ({
 }))
 
 // Import AFTER mock.module registration
-import { getDashboardPageData } from "./dashboard-page"
-import type { DashboardPageData } from "@/types/dashboard"
+import { getDashboardPageData, getDashboardSyncPayload } from "./dashboard-page"
 import { ROUTES } from "@/lib/routes"
 
 // ── emptyDashboard shape contract ─────────────────────────────────────────────
@@ -141,6 +140,23 @@ describe("getDashboardPageData — unauthenticated path", () => {
   test("onboardingState defaults to needs_assessment", async () => {
     const data = await getDashboardPageData()
     expect(data.onboardingState).toBe("needs_assessment")
+  })
+})
+
+describe("getDashboardSyncPayload — unauthenticated path", () => {
+  beforeEach(() => {
+    mockUser = null
+  })
+
+  test("returns only the minimal sync payload defaults", async () => {
+    const data = await getDashboardSyncPayload()
+    expect(data).toEqual({
+      readinessScore: 0,
+      daysUntilExam: null,
+      activeTrailDay: null,
+      srsReview: { itemsDue: 0, subjects: [], estimatedMinutes: 0 },
+      subjectFloorAlerts: [],
+    })
   })
 })
 

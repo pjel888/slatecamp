@@ -6,6 +6,7 @@ import { createClient, getUser } from '@/lib/supabase/server'
 
 const SPACING_INTERVALS = [1, 3, 7, 14] as const
 const CRITERION_THRESHOLD = 3
+const SR_CYCLE_COLUMNS = 'id, user_id, topic_id, status, consecutive_correct, current_spacing_interval, spacing_level, next_retest_at, total_resets, created_at, updated_at'
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -65,7 +66,7 @@ export const processSuccessiveRelearning = async (
   // Fetch or create cycle for user+topic
   const { data: existing } = await supabase
     .from('successive_relearning_cycles')
-    .select('*')
+    .select(SR_CYCLE_COLUMNS)
     .eq('user_id', userId)
     .eq('topic_id', topicId)
     .maybeSingle()
@@ -83,7 +84,7 @@ export const processSuccessiveRelearning = async (
         spacing_level: 0,
         total_resets: 0,
       })
-      .select('*')
+      .select(SR_CYCLE_COLUMNS)
       .single()
 
     if (createError || !created) throw new Error('Failed to create SR cycle')
@@ -121,7 +122,7 @@ export const processSuccessiveRelearning = async (
             updated_at: now,
           })
           .eq('id', cycle.id)
-          .select('*')
+          .select(SR_CYCLE_COLUMNS)
           .single()
 
         if (error || !updated) throw new Error('Failed to update SR cycle')
@@ -135,7 +136,7 @@ export const processSuccessiveRelearning = async (
             updated_at: now,
           })
           .eq('id', cycle.id)
-          .select('*')
+          .select(SR_CYCLE_COLUMNS)
           .single()
 
         if (error || !updated) throw new Error('Failed to update SR cycle')
@@ -150,7 +151,7 @@ export const processSuccessiveRelearning = async (
           updated_at: now,
         })
         .eq('id', cycle.id)
-        .select('*')
+        .select(SR_CYCLE_COLUMNS)
         .single()
 
       if (error || !updated) throw new Error('Failed to update SR cycle')
@@ -173,7 +174,7 @@ export const processSuccessiveRelearning = async (
             updated_at: now,
           })
           .eq('id', cycle.id)
-          .select('*')
+          .select(SR_CYCLE_COLUMNS)
           .single()
 
         if (error || !updated) throw new Error('Failed to update SR cycle')
@@ -193,7 +194,7 @@ export const processSuccessiveRelearning = async (
             updated_at: now,
           })
           .eq('id', cycle.id)
-          .select('*')
+          .select(SR_CYCLE_COLUMNS)
           .single()
 
         if (error || !updated) throw new Error('Failed to update SR cycle')
@@ -213,7 +214,7 @@ export const processSuccessiveRelearning = async (
           updated_at: now,
         })
         .eq('id', cycle.id)
-        .select('*')
+        .select(SR_CYCLE_COLUMNS)
         .single()
 
       if (error || !updated) throw new Error('Failed to update SR cycle')
@@ -318,7 +319,7 @@ export const getTopicSRStatus = async (
 
   const { data, error } = await supabase
     .from('successive_relearning_cycles')
-    .select('*')
+    .select(SR_CYCLE_COLUMNS)
     .eq('user_id', userId)
     .eq('topic_id', topicId)
     .maybeSingle()
