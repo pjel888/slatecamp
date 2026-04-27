@@ -1,493 +1,324 @@
-#   _____ _       _        ____
-#  / ____| |     | |      / __ \
-# | (___ | | __ _| |_ ___| |  | |_ __ ___  _ __
-#  \___ \| |/ _` | __/ _ \ |  | | '_ ` _ \| '_ \
-#  ____) | | (_| | ||  __/ |__| | | | | | | |_) |
-# |_____/|_|\__,_|\__\___|\____/|_| |_| |_| .__/
-#                                         | |
-#                                         |_|
-#
 # SlateCamp
 
-SlateCamp is a large Next.js App Router codebase for the **Philippine Architecture Licensure Exam**.
+SlateCamp is a Next.js application for Philippine Architecture Licensure Exam (ALE) preparation. It combines adaptive quizzes, a taxonomy-linked wiki, interactive 3D learning modules, study trails, analytics, and admin content tooling into a single student-facing platform.
 
-It is not a thin landing page or quiz demo. The repository includes:
-- student-facing dashboard study flows
-- admin content, review, and publishing tooling
-- internal developer and documentation surfaces
-- protected business / CEO views
-- wiki, notes, analytics, testing modes, calculators, and 3D learning modules
-- Supabase-backed schema, migrations, and operational scripts
+## Current Status
 
-This README is the **repository entrypoint**. Keep it aligned with `CLAUDE.md` (policy-heavy repo contract), root `AGENTS.md` (repo-wide operating instructions), `.ai/` (operational intelligence), and `.ai/06_specs/deep/` (deep reference docs).
+**Pre-launch MVP.** The repository has broad feature coverage but is actively hardened before launch. Documentation, performance, and operational governance are in active remediation. This is not a backwards-compatibility environment: the priority is launch quality, not legacy accommodation.
 
-Current audit/planning entrypoints:
-- `.ai/02_audits/master-audit.md`
-- `.ai/00_system/repo-map.md`
-- `.ai/00_system/ai-folder-canonical-map.md`
-- `.ai/03_plans/executive-remediation-roadmap.md`
+## Features
 
-Codex enablement entrypoints:
-- `.ai/00_system/CODEX_ENABLEMENT_GUIDE.md`
-- `.ai/00_system/ENVIRONMENT_CONTRACT.md`
-- `.ai/00_system/VALIDATION_MATRIX.md`
-- `.ai/00_system/DOCS_SOURCE_OF_TRUTH.md`
-- `.agents/README.md`
+### Student-facing
+- **Dashboard** — study hub with progress overview, heatmap, and quick actions
+- **Adaptive Quiz Engine** — multiple test modes (Camp, Timed, Subject, Storm, Chill, Focus Review, Full Exam, Endurance), IRT-based difficulty, spaced-repetition integration, and session debrief
+- **Wiki** — taxonomy-linked articles with embedded quizzes, code-compliance widgets (BP 344, PD 1096), and bookmarking
+- **3D Lab** — interactive React Three Fiber modules for architectural concepts (classical orders, FAR playground, NBCP envelope, stairway geometry, and more)
+- **Camp Trails** — structured multi-day study paths with quiz, wiki, lab, and review steps
+- **Drills & Flashcards** — rapid-fire practice and SRS-driven card review
+- **Notes** — rich-text note-taking linked to topics, questions, and articles
+- **Analytics & Readiness Score** — performance dashboards, mastery tracking, and predicted readiness visualization
+- **Score Reveal** — exam outcome simulation and shareable results
+- **Calculators & Tools** — CHB, drywall, flooring, paint, floor tiles, and lot-plotter utilities
 
-Design-system entrypoints:
-- `DESIGN.md`
-- `src/app/globals.css`
-- `.ai/06_specs/deep/03-design/001-design-system.md`
-- `/developer/design-system` when the app is running
+### Admin & Operations
+- **Admin Portal** — content editor, question bank (design problems + scenarios), taxonomy management, pipeline, reviews, search, assets, 3D model management, and audit logs
+- **Developer Portal** — internal architecture docs, API reference, DB status, console, logs, and test-data tools
+- **CEO Portal** — financial entries, cash balance, gate milestones, team metrics, and analytics
 
-Current repository snapshot:
-- `124` App Router pages
-- `12` route handlers
-- `716` component files
-- `551` feature-module files
-- `156` action files
-- `89` migration files
+### Automation
+- **Daily Cron Jobs** — focus-review queue generation and user signal computation
+- **Payment Webhooks** — PayRex and LemonSqueezy subscription lifecycle handling
 
----
+## Tech Stack
 
-## 1. What SlateCamp contains
+| Layer | Technology |
+|-------|------------|
+| Framework | Next.js 16.2.3 (App Router) |
+| UI Library | React 19.2.5 |
+| Language | TypeScript 5.9.3 (strict mode off) |
+| Styling | Tailwind CSS 4.2.4 |
+| Components | shadcn/ui primitives, Radix UI, Framer Motion |
+| Database | PostgreSQL 17 via Supabase |
+| Auth | Supabase Auth (OAuth + email) with RLS |
+| State | Zustand (client), Server Actions (server) |
+| 3D / Viz | React Three Fiber 9.6.0, Three.js 0.183.2, Recharts |
+| Payments | PayRex (primary Philippines gateway), LemonSqueezy |
+| AI | OpenAI GPT-4o, Anthropic Claude (direct fetch) |
+| Testing | Playwright 1.59.1 (e2e), Bun test runner (unit) |
+| Storybook | 8.6.17 (Vite-based) |
+| Package Manager | Bun 1.3.11+ |
+| Deployment | Vercel (inferred from `vercel.json`, cron config, and `.gitignore`) |
 
-### Product surfaces
-- **Dashboard** — student study experience under `src/app/dashboard`
-- **Admin** — content, review, publishing, and management flows under `src/app/admin`
-- **Developer** — internal documentation and tooling under `src/app/developer`
-- **Protected / CEO-adjacent surfaces** — gated internal and business views under `src/app/(protected)` and related supporting code
-- **Quiz / testing routes** — quiz sessions, review, and results under `src/app/quiz`
-- **Calculators / tools** — construction calculators and utility tools under `src/app/calculators` and `src/app/tools`
-- **3D / geometry-heavy learning features** — implemented across `src/features/3d-lab`, `src/features/wall-configurator`, and supporting app/component/lib code
+## Repository Structure
 
-### Core technical themes
-- App Router with server-first rendering patterns
-- Supabase/PostgreSQL-backed data model
-- Item Response Theory + spaced repetition logic
-- Documentation and agent-governance layer (`.ai` + `AGENTS.md` hierarchy)
-- Large multi-surface repository with active operational hardening needs
-
----
-
-## 2. Tech stack
-
-### Application
-- **Next.js** 16.1.6
-- **React** 19.2.4
-- **TypeScript** 5.9.3
-- **Tailwind CSS** 4.x
-
-### Data and services
-- **Supabase** (`@supabase/supabase-js`, `@supabase/ssr`)
-- **PostgreSQL** via Supabase
-- **Anthropic SDK** present for AI features
-- **LemonSqueezy** and **PayRex** integrations present in the repo
-
-### UI / visualization
-- **shadcn/ui**-style component structure
-- **Framer Motion**
-- **Recharts**
-- **React Three Fiber / Three.js / drei**
-
-### Tooling
-- **Bun** package manager and script runner
-- **ESLint**
-- **TypeScript compiler (`tsc`)**
-- **Storybook**
-
----
-
-## 3. Repository structure
-
-```text
+```
 .
-├── README.md                     Repository entrypoint
-├── AGENTS.md                     Repo-wide agent instructions
-├── CLAUDE.md                     Core repo/system guidance and design constraints
-├── DATABASE_SCHEMA.sql           Authoritative database schema snapshot
-├── package.json                  Scripts and dependency truth source
-├── next.config.ts                Next.js config, security headers, redirects, server actions limit
-├── middleware.ts                 Supabase session update + pathname header propagation
-├── src/                          Application source code
-│   ├── app/                      App Router pages, layouts, route handlers, portal surfaces
-│   ├── components/               Shared UI and feature-facing components
-│   ├── features/                 Larger feature modules (notably 3D/geometry-heavy areas)
-│   ├── lib/                      Actions, queries, services, domain logic, integrations
-│   ├── hooks/                    Shared hooks
-│   ├── stores/                   Shared client stores
-│   ├── config/                   Runtime/site configuration
-│   ├── data/                     Data files and fixtures
-│   └── types/                    Shared types
-├── supabase/                     SQL migrations, seed/reset utilities, DB helpers
-├── scripts/                      Operational and maintenance scripts
-├── public/                       Public static assets
-├── docs/                         Root-level bridge/pointer docs surface
-├── .ai/                          Operational intelligence layer
-└── .omx/                         Runtime/session state for oh-my-codex workflows
+├── src/
+│   ├── app/              # App Router: pages, layouts, loading/error, route handlers
+│   ├── components/       # UI components (wiki, quiz-v2, admin, dashboard, analytics, shared/ui, ...)
+│   ├── features/         # Large feature modules: 3d-lab, wall-configurator
+│   ├── lib/              # Server actions, queries, entitlements, payments, AI, SRS, PD1096 helpers
+│   ├── hooks/            # Shared React hooks
+│   ├── stores/           # Zustand client stores
+│   ├── config/           # Runtime configuration
+│   ├── data/             # Fixtures and static data
+│   └── types/            # Shared TypeScript types
+├── supabase/             # Migrations (92 files), seed/reset SQL, DB inspection scripts
+├── scripts/              # Operational scripts (dev, type-check, Playwright runner, DB checks)
+├── e2e/                  # Playwright end-to-end tests
+├── .storybook/           # Storybook configuration
+├── .ai/                  # Operational intelligence: audits, plans, state, agent docs
+├── docs/                 # Root-level bridge docs
+└── public/               # Static assets
 ```
 
-### Key source areas
-
-| Path | What it holds |
-| --- | --- |
-| `src/app/` | Route groups, portal routes, page/layout/loading/error files, route handlers |
-| `src/components/` | UI systems for admin, dashboard, analytics, wiki, quiz-v2, dev, graphics, portal, shared UI, and more |
-| `src/features/` | Larger feature modules including 3D Lab and wall configurator systems |
-| `src/lib/` | Server actions, queries, entitlements, readiness, SRS, wiki, payments, logging, analytics, PD1096 helpers, geometry logic |
-| `supabase/migrations/` | 89 migration files at the time of this audit |
-| `scripts/` | Dev/database/content-maintenance scripts |
-| `.ai/` | Audits, roadmap, plans, tasks, logs, state, agent docs, deep reference docs |
-
----
-
-## 4. Documentation surfaces and how to use them
-
-### Use `README.md` for
-- repo orientation
-- setup and commands
-- high-level architecture and structure
-- the fastest path to the next relevant source of truth
-
-### Use `.ai/` for
-- audits
-- roadmap state
-- plans and tasks
-- change logs
-- agent/governance docs
-- operational truth reconciliation
-
-Recommended starting points:
-- `.ai/10_state/current-state.md`
-- `.ai/02_audits/master-audit.md`
-- `.ai/00_system/repo-map.md`
-- `.ai/00_system/ai-folder-canonical-map.md`
-- `.ai/01_roadmap/current-phase.md`
-- `.ai/12_agents/repo-agent-model.md`
-
-### Use `.ai/06_specs/deep/` for
-- deep reference and specification material
-- architecture docs
-- portal docs
-- product and docs history
-
-### Use current audit/planning artifacts for
-- the 2026-04-17 repository audit trail
-- prioritized findings and readiness assessment
-- `.ai` rationalization decisions
-- implementation sequencing for a later approved remediation run
-- Codex enablement and future session setup
-
-Recommended starting points:
-- `.ai/06_specs/deep/00-meta/001-index.md`
-- `.ai/06_specs/deep/02-architecture/001-system-architecture.md`
-- `.ai/06_specs/deep/portal/000-portal-guide.md`
-
-### Use `AGENTS.md` files for
-- scope-specific instructions when editing a subtree
-- local validation expectations
-- anti-laziness rules
-- handoff and update expectations
-
-Always use the nearest in-scope `AGENTS.md` plus the repo root `AGENTS.md`.
-
-### Use `CLAUDE.md` for
-- the policy-heavy repository contract
-- canonical truth-source rules
-- validation and documentation-maintenance policy
-- repo-wide change-safety expectations
-
-### Use `.agents/skills/` for
-- repo-shared Codex workflows
-- repeatable route, readiness, docs-sync, admin, developer, and Supabase review tasks
-
----
-
-## 5. Local development
+## Getting Started
 
 ### Prerequisites
-- **Bun** installed
-- Node-compatible local environment for Next.js and TypeScript tooling
-- A working `.env.local` with the credentials required by the surfaces you want to run
+- [Bun](https://bun.sh) 1.3.11 or newer
+- Node.js-compatible environment (Next.js 16 requires a modern runtime)
+- A `.env.local` with required variables (see below)
 
-> There is currently **no committed `.env.example`** in the repo root. Treat environment setup as a manual step derived from the codebase, local practice, and deployment configuration.
->
-> See `.ai/00_system/ENVIRONMENT_CONTRACT.md` for the current inferred env contract.
-
-### Install dependencies
+### Install
 
 ```bash
 bun install
 ```
 
-### Start the app
+> Note: There have been reports of manifest resolution failures during `bun install` in some environments. If you encounter this, try `bun install --no-cache` or verify your Bun version.
+
+### Environment Setup
+
+Copy the variables you need from the list below into `.env.local` in the repository root. There is no committed `.env.example`.
+
+### Start Development
 
 ```bash
 bun run dev
 ```
 
-`bun run dev` uses `scripts/dev.js`, which selects:
-- **Webpack on Windows**
-- **Turbopack on non-Windows platforms**
-
-You can also force either mode:
+This launches Next.js with Turbopack by default. To force Webpack:
 
 ```bash
-bun run dev:turbo
 bun run dev:webpack
 ```
 
-### Start Storybook
+The app runs at `http://localhost:3000` by default.
 
-```bash
-bun run storybook
-```
+### Demo Mode
 
-### Build Storybook
+If `NEXT_PUBLIC_SUPABASE_URL` is empty and `NEXT_PUBLIC_ENABLE_DEMO_MODE` is set, the app runs with mock data and no external services. This is useful for local UI development without a live Supabase project.
 
-```bash
-bun run build-storybook
-```
+## Environment Variables
 
-### Start a production build locally
+### Required for local development
 
-```bash
-bun run build
-bun run start
-```
+| Variable | Purpose |
+|----------|---------|
+| `NEXT_PUBLIC_SUPABASE_URL` | Supabase project URL |
+| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Supabase anonymous/client key |
+| `SUPABASE_SERVICE_ROLE_KEY` | Supabase service-role key (admin ops, scripts, webhooks) |
 
----
+### Required for specific surfaces
 
-## 6. Important scripts
+| Variable | Purpose | Surfaces |
+|----------|---------|----------|
+| `NEXT_PUBLIC_APP_URL` | App origin for redirects, checkout, metadata | `layout.tsx`, checkout, developer portal |
+| `NEXT_PUBLIC_PAYMENTS_ENABLED` | Feature flag for payments | `src/lib/constants/feature-flags.ts` |
+| `PAYMENT_PROVIDER` | `payrex` (default) or `lemonsqueezy` | `src/lib/payments/provider.ts` |
+| `PAYREX_SECRET_KEY` | PayRex API key | PayRex checkout |
+| `PAYREX_WEBHOOK_SECRET` | PayRex webhook verification | `api/webhooks/payrex` |
+| `LEMONSQUEEZY_API_KEY` | LemonSqueezy API key | LemonSqueezy checkout |
+| `LEMONSQUEEZY_WEBHOOK_SECRET` | LemonSqueezy webhook verification | `api/webhooks/lemonsqueezy` |
+| `LEMONSQUEEZY_PRO_VARIANT_ID` | Pro plan variant ID | LemonSqueezy config |
+| `LEMONSQUEEZY_PRIME_VARIANT_ID` | Prime plan variant ID | LemonSqueezy config |
+| `LEMONSQUEEZY_INSTITUTIONAL_VARIANT_ID` | Institutional plan variant ID | LemonSqueezy config |
+| `OPENAI_API_KEY` | OpenAI API access | AI provider, content scripts |
+| `ANTHROPIC_API_KEY` | Anthropic API access | AI provider, teach-back |
+| `AI_PROVIDER` | `openai` (default) or `anthropic` | `src/lib/ai/provider.ts` |
+| `CRON_SECRET` | Bearer token for cron route protection | `api/cron/*` |
+| `ADMIN_EMAILS` | Comma-separated fallback admin emails | Role resolution |
+| `OWNER_EMAILS` | Comma-separated fallback owner emails | Role resolution |
 
-These commands are grounded in `package.json` as of **2026-04-26**.
+### Optional / Dev-only
 
-| Command | Purpose |
-| --- | --- |
-| `bun run dev` | Start local development via `scripts/dev.js` |
-| `bun run dev:turbo` | Force Next.js Turbopack dev mode |
-| `bun run dev:webpack` | Force Next.js Webpack dev mode |
+| Variable | Purpose |
+|----------|---------|
+| `NEXT_PUBLIC_ENABLE_DEMO_MODE` | Enable mock-data demo mode |
+| `DEV_FORCE_USER_ID` | **Risky.** Local dev user impersonation bypass |
+| `DISABLE_DEV_FORCE_USER_ID` | Neutralize `DEV_FORCE_USER_ID` in test/CI environments |
+| `DEV_FORCE_TIER` | Override subscription tier locally |
+| `ALLOW_DEV_PORTAL_BYPASS` | Bypass developer portal entitlement checks locally |
+| `PLAYWRIGHT_DEMO_EMAIL` | Demo auth email for Playwright |
+| `PLAYWRIGHT_DEMO_ROLE` | Demo auth role for Playwright |
+| `PLAYWRIGHT_DEMO_TIER` | Demo auth tier for Playwright |
+
+### Present in `.env.local` but no code usage found
+
+The following variables exist in local environment files but no implementing code was found in `src/` or `scripts/` as of this audit:
+
+- `NEXT_PUBLIC_PAYREX_PUBLIC_KEY`
+- `NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY`
+- `STRIPE_PRO_PRICE_ID`
+- `STRIPE_MAX_PRICE_ID`
+- `RESEND_API_KEY`
+- `NEXT_PUBLIC_POSTHOG_KEY`
+- `NEXT_PUBLIC_POSTHOG_HOST`
+- `GOOGLE_CLOUD_PROJECT`
+- `GOOGLE_CLOUD_LOCATION`
+
+These may be planned, legacy, or used in external workflows not tracked in this repository.
+
+## Available Scripts
+
+| Script | What it runs |
+|--------|--------------|
+| `bun run dev` | Start dev server (Turbopack default) |
+| `bun run dev:turbo` | Force Turbopack dev mode |
+| `bun run dev:webpack` | Force Webpack dev mode |
 | `bun run build` | Production build |
 | `bun run start` | Start built app |
-| `bun run lint` | Run ESLint (includes storybook placeholder precheck) |
-| `bun run lint:fix` | Auto-fix lint issues where possible |
-| `bun run test:e2e` | Run Playwright launch-smoke checks in desktop and mobile Chromium |
-| `bun run test:e2e:smoke` | Run the fast Chromium-only Playwright smoke suite |
-| `bun run test:e2e:prod` | Run launch-smoke checks against the built app with `next start` |
-| `bun run test:e2e:auth-demo` | Run demo-authenticated first-run and auth-entry browser checks |
-| `bun run test:e2e:auth-demo:learning` | Run seeded demo-auth drills/wiki learning-flow browser checks |
-| `bun run test:e2e:auth-demo:restricted` | Run demo-authenticated restricted-role denial coverage for admin, developer, and CEO routes |
-| `bun run test:e2e:auth-demo:portals` | Run demo-authenticated admin, developer, and CEO portal browser checks |
-| `bun run test:e2e:auth-demo:3d-lab` | Run demo-authenticated 3D Lab browser checks on a fresh server |
-| `bun run test:e2e:headed` | Run Playwright in headed browser mode |
-| `bun run test:e2e:ui` | Open Playwright's interactive test runner |
-| `bun run type-check` | Clear stale `.next/dev/types` and run `tsc --noEmit` |
-| `bun run validate:release` | Run the heavy release aggregate: type-check, lint, entitlements, audit, build, production Playwright smoke, demo-auth core, demo-auth learning, demo-auth restricted-role, demo-auth portals, demo-auth 3D Lab |
-| `bun run design:lint` | Validate root `DESIGN.md` against the Google Labs DESIGN.md spec |
+| `bun run lint` | ESLint (includes Storybook precheck) |
+| `bun run lint:fix` | Auto-fix ESLint issues |
+| `bun run type-check` | Clear stale types and run `tsc --noEmit` |
+| `bun run test:e2e` | Playwright full suite (desktop + mobile Chromium) |
+| `bun run test:e2e:smoke` | Fast Chromium-only smoke suite |
+| `bun run test:e2e:prod` | Smoke tests against built app |
+| `bun run test:e2e:auth-demo` | Demo-authenticated first-run flows |
+| `bun run test:e2e:auth-demo:learning` | Seeded drills + wiki learning flows |
+| `bun run test:e2e:auth-demo:restricted` | Restricted-role denial coverage |
+| `bun run test:e2e:auth-demo:portals` | Admin, developer, CEO portal checks |
+| `bun run test:e2e:auth-demo:3d-lab` | 3D Lab isolated browser checks |
+| `bun run test:e2e:headed` | Playwright in headed mode |
+| `bun run test:e2e:ui` | Playwright interactive UI mode |
+| `bun run validate:release` | Full release gate: type-check → lint → entitlements → audit → build → all e2e suites |
 | `bun run storybook` | Run Storybook locally |
-| `bun run build-storybook` | Build Storybook static output |
+| `bun run build-storybook` | Build static Storybook |
 | `bun run check:storybook` | Storybook placeholder validation |
-| `bun run check:entitlements` | Entitlement legacy-usage check |
-| `bun run perf:inventory` | Generate the performance route/tooling/data-fetch inventory under `.ai/00_performance` |
-| `bun run perf:environment` | Capture local performance-audit environment metadata without env values |
-| `bun run perf:frontend` | Run Playwright route/user-flow performance measurements and write results/traces/screenshots under `.ai/00_performance` |
-| `bun run perf:api` | Benchmark safe static GET route handlers against `PERF_BASE_URL` |
-| `bun run perf:supabase` | Run the read-only Supabase query/static database performance inventory |
-| `bun run perf:build` | Measure build/typecheck timing and largest Next build artifacts |
-| `bun run perf:hotspots` | Run static component/function hotspot inventory |
-| `bun run perf:summary` | Synthesize `.ai/00_performance` reports from raw result JSON |
-| `bun run perf:compare` | Compare two frontend performance JSON baselines and write a machine-readable delta report |
-| `bun run perf:all` | Run the local performance audit sequence end to end |
+| `bun run check:entitlements` | Legacy entitlement usage audit |
+| `bun run design:lint` | Validate `DESIGN.md` against Google Labs spec |
 | `bun run db:seed` | Seed database via `scripts/seed.ts` |
 
-### Important note on tests
-There is **no top-level `test` script** in `package.json` right now.
+> There is **no top-level `test` script** in `package.json`. Use the Playwright and Bun test commands above.
 
-The repository does contain many test files, and browser smoke plus demo-authenticated first-run, seeded learning, restricted-role, portal, and 3D Lab coverage is available through the explicit Playwright scripts above. `test:e2e:prod` is the built-app route smoke gate; `test:e2e:auth-demo` covers no-secret onboarding/auth-entry flows; `test:e2e:auth-demo:learning` covers seeded drills and wiki learning flows on its own dedicated dev-server port; `test:e2e:auth-demo:restricted` covers authenticated-but-not-privileged denial behavior; `test:e2e:auth-demo:portals` covers authenticated admin, developer, and CEO surfaces on a fresh server; `test:e2e:auth-demo:3d-lab` isolates the slower 3D Lab browser route on its own fresh server. Any documentation or CI guidance should account for that explicitly instead of assuming a root test script exists.
+## Testing
 
-See `.ai/00_system/VALIDATION_MATRIX.md` for the current surface-by-surface validation contract.
+### End-to-End
+- **Framework:** Playwright 1.59.1
+- **Config:** `playwright.config.ts`
+- **Tests:** 9 spec files in `e2e/`
+- **Modes:** smoke, prod, auth-demo (with sub-modes for learning, restricted, portals, 3D Lab)
+- **Fixture:** `authenticatedDemoTest` in `e2e/support/authenticated-demo.ts` provides seeded demo-auth state
+- **Run:** `bun run test:e2e:smoke` for a fast check; `bun run test:e2e` for full coverage
 
-Performance audit outputs are centralized in `.ai/00_performance/`; start with `.ai/00_performance/README.md` before interpreting raw performance JSON, traces, or screenshots.
+### Unit / Integration
+- **Runner:** Bun native test runner (`bun:test`)
+- **Files:** 69 `*.test.ts` files across `src/lib/`, `src/features/`, `src/components/`, and `src/app/`
+- **Coverage areas:** readiness scoring, SRS algorithms, entitlements, quiz logic, admin actions, calculator math, 3D Lab store logic, wiki markdown, and webhook handlers
+- **Run:** `bun test src/lib/...` (no aggregated test script; run files or directories individually)
 
----
+### Storybook
+- 106+ story files covering UI primitives, shared components, wiki blocks, quiz UI, 3D Lab, and design-system reference scenes
+- `check:storybook` enforces that stories import real components and blocks placeholder scaffolds
 
-## 7. Validation workflow
+### Known Limitations
+- TypeScript strict mode is off (`strict: false` in `tsconfig.json`)
+- Many ESLint React Hooks rules are disabled to prioritize velocity
+- No top-level aggregated unit-test script exists
 
-### Common repo-wide checks
+## Architecture Overview
 
-```bash
-bun run type-check
-bun run lint
-bun run build
-bun run test:e2e:smoke
-```
+SlateCamp is a Next.js App Router application with a server-first rendering philosophy, though a large portion of the UI is client-heavy (especially 3D Lab, quiz, and admin editors).
 
-### Additional targeted checks
-Use targeted route/library tests or subsystem-specific validation when changing:
-- route handlers in `src/app/api/`
-- server actions in `src/lib/actions/`
-- entitlements / access control logic in `src/lib/entitlements/`
-- 3D / geometry-heavy code in `src/features/3d-lab/`, `src/features/wall-configurator/`, and related helpers
-- design-system tokens or visual identity docs through `bun run design:lint`
-- schema/migration documentation in `supabase/` and `DATABASE_SCHEMA.sql`
+### Request Flow
+1. `middleware.ts` injects `x-pathname` and calls Supabase session refresh
+2. `src/lib/supabase/middleware.ts` handles legacy redirects, demo mode, and role-based gating for `/admin`, `/developer`, `/ceo`
+3. Route/layout in `src/app/` composes Server and Client Components
+4. Data mutations flow through Next.js Server Actions in `src/lib/actions/`
+5. Data reads flow through Server Actions or `src/lib/queries/`
+6. Supabase clients: browser (`client.ts`), server (`server.ts`), admin (`admin.ts`)
 
-### Documentation validation
-When editing docs, README, or AGENTS:
-- verify every referenced file/path exists
-- verify every command exists in `package.json` or as a real script
-- date time-sensitive status claims or omit them
-- update the nearest `AGENTS.md` if subtree structure/workflows drift
+### Major Layers
+- **App layer** — `src/app/`: 112 pages, 15 layouts, 92 loading states, 7 error boundaries, 12 route handlers
+- **UI layer** — `src/components/`: 716 files across wiki, quiz-v2, admin, dashboard, analytics, shared/ui, r3f, etc.
+- **Feature layer** — `src/features/`: 3D Lab (~500 files) and wall-configurator (~40 files)
+- **Logic layer** — `src/lib/`: 156 server actions, 19 queries, entitlements, payments, AI, SRS, PD1096, lot-geometry, wiki logic
+- **State layer** — Zustand stores for quiz, timer, notifications, and dev state
 
----
+### Auth Flow
+- Supabase Auth (OAuth + email/password)
+- `profiles` table extends `auth.users` with `role`, `discipline_id`, `onboarding_completed_at`, etc.
+- `user_roles` table supports multi-role resolution
+- `user_subscriptions` table tracks tier (`free` / `pro` / `enterprise`) and status
+- `user_capabilities` view joins users, roles, and subscriptions for entitlement checks
+- Dev impersonation via `DEV_FORCE_USER_ID` (local only, neutralized by `DISABLE_DEV_FORCE_USER_ID` in CI)
 
-## 8. Database and Supabase workflow
+### API Boundaries
+- **Route handlers** (`src/app/api/*/route.ts`) for AI streaming, payments checkout, webhooks, cron jobs, and OG image generation
+- **Server Actions** (`src/lib/actions/`) for most data mutations (quiz, admin, wiki, analytics, etc.)
+- **Edge runtime** used in some route handlers; logging there is console-only (no Supabase persistence)
 
-### Authoritative sources
-- `DATABASE_SCHEMA.sql` is the strongest repository snapshot of schema truth
-- `supabase/migrations/` shows the migration history that produced the current state
+For deeper architecture detail, see [`.ai/architecture.md`](.ai/architecture.md).
 
-### What exists in the repo
-- migration-heavy Supabase setup
-- reset/seed SQL scripts in `supabase/`
-- DB inspection/testing scripts in `scripts/`
+## Documentation
 
-### Safety rules
-- do not assume table counts, policy counts, or migration counts from stale docs
-- validate schema claims against `DATABASE_SCHEMA.sql` and actual migrations
-- be careful with destructive reset/drop scripts in `supabase/`
+- [`.ai/README.md`](.ai/README.md) — Index of all operational intelligence documents
+- [`.ai/app-audit.md`](.ai/app-audit.md) — Current audit summary, stack, and feature inventory
+- [`.ai/architecture.md`](.ai/architecture.md) — System architecture, directory structure, data flow
+- [`.ai/features.md`](.ai/features.md) — Detailed feature catalogue with evidence
+- [`.ai/developer-workflow.md`](.ai/developer-workflow.md) — Setup, scripts, testing, debugging
+- [`.ai/environment.md`](.ai/environment.md) — Environment variable reference
+- [`.ai/data-model.md`](.ai/data-model.md) — Database schema overview
+- [`.ai/api-surface.md`](.ai/api-surface.md) — API routes, server actions, webhooks
+- [`.ai/integrations.md`](.ai/integrations.md) — External services and libraries
+- [`.ai/testing-and-quality.md`](.ai/testing-and-quality.md) — Test framework and coverage notes
+- [`.ai/known-gaps.md`](.ai/known-gaps.md) — Incomplete areas, risks, and open questions
 
----
+Legacy deep-reference docs live under `.ai/06_specs/deep/`.
 
-## 9. Architecture overview
+## Deployment
 
-### App layer
-`src/app/` holds route groups and portal surfaces. The repo currently contains:
-- 125 `page.tsx` files
-- 16 `layout.tsx` files
-- 96 `loading.tsx` files
-- 9 `error.tsx` files
-- 12 `route.ts` handlers
+Deployment target is **Vercel** (inferred from `vercel.json`, cron job definitions, and `.gitignore`). There is no Docker, Kubernetes, or other platform config in the repository.
 
-### UI layer
-`src/components/` is broad and portal-aware, with large areas for:
-- admin
-- analytics
-- dashboard
-- developer/dev
-- graphics
-- notes
-- quiz-v2
-- shared/ui
-- wiki
-- r3f / visualization support
+- **Build:** `next build` (not static export)
+- **Runtime:** Node.js serverless functions on Vercel
+- **Cron jobs:** Defined in `vercel.json` (`/api/cron/focus-review-scan` at 16:00 UTC, `/api/cron/compute-signals` at 16:30 UTC)
+- **CI:** GitHub Actions (`.github/workflows/storybook.yml`) runs `validate:release` on PR/push to `main`
+- **Preview deployments:** Vercel auto-creates preview deployments for pull requests
 
-### Feature layer
-`src/features/` contains larger modules, especially:
-- `3d-lab`
-- `wall-configurator`
-- other performance-sensitive, feature-grouped code
+There is no explicit production deploy script or release branch strategy documented in the repository.
 
-### Logic / services layer
-`src/lib/` contains the most important cross-cutting logic:
-- server actions
-- queries
-- entitlements
-- readiness / SRS / quiz logic
-- analytics and logging
-- payments / paywall
-- wiki logic
-- admin helpers
-- PD1096 and lot-geometry helpers
-- Supabase clients/helpers
+## Contributing & Development Notes
 
----
+### Code Style
+- Use Bun for all package and script execution
+- Follow the existing file organization: domain-grouped directories in `src/components/` and `src/lib/`
+- Prefer Server Components by default; mark Client Components with `"use client"` only when needed
+- Do not add `useEffect` for initial data fetching
 
-## 10. What is operationally true right now
+### Documentation Discipline
+- Update the nearest in-scope `AGENTS.md` when subtree structure or workflows change
+- Keep `README.md`, `.ai/`, and `AGENTS.md` hierarchy aligned
+- Date time-sensitive claims or omit them
+- Do not silently delete historical docs; mark them superseded and point to replacements
 
-### Strengths
-- broad implementation coverage across many product surfaces
-- strong subtree decomposition
-- many scoped `AGENTS.md` files to guide local changes
-- meaningful test presence across logic-heavy areas
-- clear schema authority in `DATABASE_SCHEMA.sql`
+### Validation Before Commit
+- Run `bun run type-check` when source-behavior claims change
+- Run `bun run lint` when workflow or style claims change
+- Run `bun run design:lint` when design-system tokens change
+- Verify every referenced file path and command against the live repo
 
-### Risks
-- documentation drift can reappear quickly because the surface area is large
-- many AGENTS files means instruction maintenance is a real ongoing task
-- root validation/testing guidance is easy to misstate if not tied directly to `package.json`
-- doc ownership can become blurry without explicit governance
+### GitNexus
+This repository is indexed by GitNexus. Before editing symbols, run impact analysis. Before committing, run change detection. See the root `AGENTS.md` for the full GitNexus contract.
 
-### Current phase
-The repository is in a **Pre-launch MVP** phase. The primary objective is to build the most effective, accurate, and true product for launch. **This is not a backwards-compatibility environment.** The aim is high-quality MVP execution, not the accommodation of legacy code or past mental load.
+## Known Gaps / Open Questions
 
----
+- **No committed `.env.example`** — environment setup is inferred from code and local practice
+- **Incomplete env contract** — some variables in `.env.local` have no implementing code (PostHog, Resend, Stripe, Google Cloud)
+- **Documentation drift risk** — large surface area makes stale instructions an engineering risk
+- **Client/server boundary drift** — 677 files use `"use client"`; some may be candidates for server migration
+- **Build stability** — historical reports of `ENOENT: .next/required-server-files.json` during build
+- **Bun install reliability** — manifest resolution failures have been reported in clean environments
+- **RLS completeness** — `DATABASE_SCHEMA.sql` is the strongest snapshot but may lag behind the latest migrations
 
-## 11. Working with `AGENTS.md`
-
-This repository uses a deep `AGENTS.md` hierarchy.
-
-### Rules
-1. Start with the root `AGENTS.md`
-2. Then read the nearest in-scope subtree `AGENTS.md`
-3. Prefer local scope instructions when they refine a narrower subtree
-4. Update the local `AGENTS.md` when structure, workflow, or key responsibilities drift
-
-### Practical examples
-- editing `src/app/admin/...` → read `AGENTS.md`, `src/AGENTS.md`, `src/app/AGENTS.md`, `src/app/admin/AGENTS.md`
-- editing `src/lib/actions/wiki/...` → read `AGENTS.md`, `src/AGENTS.md`, `src/lib/AGENTS.md`, `src/lib/actions/AGENTS.md`, `src/lib/actions/wiki/AGENTS.md`
-- editing `supabase/...` → read `AGENTS.md` and `supabase/AGENTS.md`
-
----
-
-## 12. Recommended entry points for auditors and contributors
-
-### If you need the current repo state
-- `.ai/10_state/current-state.md`
-- `.ai/10_state/active-risks.md`
-- `.ai/02_audits/master-audit.md`
-
-### If you need deep architecture docs
-- `.ai/06_specs/deep/02-architecture/001-system-architecture.md`
-- `.ai/06_specs/deep/02-architecture/002-portal-breakdown.md`
-- `.ai/06_specs/deep/02-architecture/003-database-schema.md`
-
-### If you need portal docs
-- `.ai/06_specs/deep/portal/000-portal-guide.md`
-- `.ai/06_specs/deep/portal/dashboard/001-overview.md`
-- `.ai/06_specs/deep/portal/admin/001-knowledge-hub.md`
-- `.ai/06_specs/deep/portal/developer/001-design-system.md`
-
-### If you need design-system truth
-- `DESIGN.md`
-- `src/app/globals.css`
-- `.ai/06_specs/deep/03-design/001-design-system.md`
-- `/developer/design-system` when the app is running
-
-### If you need operational plans/tasks
-- `.ai/03_plans/implementation-plan.md`
-- `.ai/03_plans/readiness-plan.md`
-- `.ai/02_audits/2026-04-17-ai-file-lifecycle-audit.md`
-
----
-
-## 13. Known documentation boundaries
-
-To avoid future drift:
-- **MVP Focus**: All documentation and implementation work must prioritize the launch MVP.
-- **No Legacy Burden**: Do not prioritize backwards compatibility or legacy code accommodation over the effectiveness of the MVP.
-- keep `README.md` comprehensive but not a full mirror of `.ai/06_specs/deep`
-- keep `.ai` focused on operational truth, planning, logs, and audit outputs
-- keep `.ai/06_specs/deep` as the deeper reference/spec surface
-- keep historical material preserved unless explicitly superseded
-
----
-
-## 14. If you are updating this repository
-
-When you change the repo structure or a major subsystem, update the relevant surfaces in the same change:
-- `README.md` if onboarding or structure changes
-- `.ai/` state/roadmap/audits if operational truth changes
-- nearest `AGENTS.md` files for subtree instructions
-- `.ai/06_specs/deep/` only when deeper reference/spec content also needs to change
-
-This repository is large enough that **stale instructions are an engineering risk**. Treat documentation maintenance as part of the implementation work, not cleanup for later.
+See [`.ai/known-gaps.md`](.ai/known-gaps.md) for the full register.
