@@ -29,6 +29,23 @@ They have different responsibilities.
 Current `.ai` routing source of truth:
 - `.ai/00_system/ai-folder-canonical-map.md`
 
+## Canonical documentation at `.ai/` root
+
+The following root-level documents are the **current truth** for the repository. Read these before diving into numbered folders or deep reference docs.
+
+| Document | Purpose |
+|----------|---------|
+| [`.ai/app-audit.md`](app-audit.md) | Current audit summary, stack, metrics, and risks |
+| [`.ai/architecture.md`](architecture.md) | System architecture, directory structure, data flow, client/server boundaries |
+| [`.ai/features.md`](features.md) | Detailed feature catalogue with implementation status and evidence |
+| [`.ai/developer-workflow.md`](developer-workflow.md) | Setup, scripts, local development, testing workflow |
+| [`.ai/environment.md`](environment.md) | Environment variables: required, optional, dev-only, unknown |
+| [`.ai/data-model.md`](data-model.md) | Database schema overview, entities, relationships |
+| [`.ai/api-surface.md`](api-surface.md) | API routes, server actions, webhooks, auth requirements |
+| [`.ai/integrations.md`](integrations.md) | External services and libraries that affect behavior |
+| [`.ai/testing-and-quality.md`](testing-and-quality.md) | Test frameworks, coverage, lint, CI gates |
+| [`.ai/known-gaps.md`](known-gaps.md) | Incomplete areas, inconsistencies, risks, open questions |
+
 ## How to use `.ai`
 
 ### Start here when you need operational truth
