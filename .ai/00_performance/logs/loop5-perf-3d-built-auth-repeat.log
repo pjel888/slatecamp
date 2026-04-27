@@ -1,0 +1,155 @@
+$ bun .ai/00_performance/scripts/3d-lab-built-auth-repeat.mjs
+{
+  "timestamp": "2026-04-27T11:44:34.946Z",
+  "mode": "built-auth-3d-repeat",
+  "passes": 3,
+  "commandLog": ".ai/00_performance/logs/3d-lab-built-auth-repeat.log",
+  "resultFile": ".ai/00_performance/results/3d_lab_built_auth_repeat_results.json",
+  "commands": [
+    {
+      "label": "demo auth production build",
+      "command": "bun run perf:build:demo-auth",
+      "start": "2026-04-27T11:42:56.855Z",
+      "end": "2026-04-27T11:43:57.491Z",
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 60636
+    },
+    {
+      "label": "built auth 3D pass 1",
+      "command": "bun run perf:frontend",
+      "start": "2026-04-27T11:43:57.491Z",
+      "end": "2026-04-27T11:44:10.513Z",
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 13022
+    },
+    {
+      "label": "built auth 3D pass 2",
+      "command": "bun run perf:frontend",
+      "start": "2026-04-27T11:44:10.514Z",
+      "end": "2026-04-27T11:44:22.741Z",
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 12227
+    },
+    {
+      "label": "built auth 3D pass 3",
+      "command": "bun run perf:frontend",
+      "start": "2026-04-27T11:44:22.742Z",
+      "end": "2026-04-27T11:44:34.945Z",
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 12203
+    }
+  ],
+  "passResults": [
+    {
+      "pass": 1,
+      "command": {
+        "label": "built auth 3D pass 1",
+        "command": "bun run perf:frontend",
+        "start": "2026-04-27T11:43:57.491Z",
+        "end": "2026-04-27T11:44:10.513Z",
+        "exitCode": 0,
+        "signal": null,
+        "durationMs": 13022
+      },
+      "resultFile": ".ai/00_performance/results/3d_lab_built_auth_pass_1.json",
+      "memoryProfileFile": ".ai/00_performance/results/dev_server_memory_profile_loop5-built-auth-3d-pass-1.json",
+      "routeSummary": {
+        "route": "/dashboard/3d-lab",
+        "coldP50Ms": 1396.8595000000005,
+        "coldP95Ms": 1510.5650500000002,
+        "warmP50Ms": 1322.7772499999992,
+        "warmP95Ms": 1348.7165253,
+        "requestP50": 51,
+        "transferP50Bytes": 360873.5,
+        "errorCount": 0,
+        "finalUrls": null,
+        "contentSignals": null
+      }
+    },
+    {
+      "pass": 2,
+      "command": {
+        "label": "built auth 3D pass 2",
+        "command": "bun run perf:frontend",
+        "start": "2026-04-27T11:44:10.514Z",
+        "end": "2026-04-27T11:44:22.741Z",
+        "exitCode": 0,
+        "signal": null,
+        "durationMs": 12227
+      },
+      "resultFile": ".ai/00_performance/results/3d_lab_built_auth_pass_2.json",
+      "memoryProfileFile": ".ai/00_performance/results/dev_server_memory_profile_loop5-built-auth-3d-pass-2.json",
+      "routeSummary": {
+        "route": "/dashboard/3d-lab",
+        "coldP50Ms": 1390.0407920000002,
+        "coldP95Ms": 1441.2729167,
+        "warmP50Ms": 1320.9331250000005,
+        "warmP95Ms": 1350.5377997000003,
+        "requestP50": 51,
+        "transferP50Bytes": 360874,
+        "errorCount": 0,
+        "finalUrls": null,
+        "contentSignals": null
+      }
+    },
+    {
+      "pass": 3,
+      "command": {
+        "label": "built auth 3D pass 3",
+        "command": "bun run perf:frontend",
+        "start": "2026-04-27T11:44:22.742Z",
+        "end": "2026-04-27T11:44:34.945Z",
+        "exitCode": 0,
+        "signal": null,
+        "durationMs": 12203
+      },
+      "resultFile": ".ai/00_performance/results/3d_lab_built_auth_pass_3.json",
+      "memoryProfileFile": ".ai/00_performance/results/dev_server_memory_profile_loop5-built-auth-3d-pass-3.json",
+      "routeSummary": {
+        "route": "/dashboard/3d-lab",
+        "coldP50Ms": 1378.7414170000002,
+        "coldP95Ms": 1434.8501539000001,
+        "warmP50Ms": 1317.4740000000002,
+        "warmP95Ms": 1362.3757875000001,
+        "requestP50": 51,
+        "transferP50Bytes": 360874.5,
+        "errorCount": 0,
+        "finalUrls": null,
+        "contentSignals": null
+      }
+    }
+  ],
+  "summary": {
+    "completedPasses": 3,
+    "coldP95Ms": {
+      "min": 1434.8501539000001,
+      "max": 1510.5650500000002,
+      "values": [
+        1510.5650500000002,
+        1441.2729167,
+        1434.8501539000001
+      ]
+    },
+    "warmP95Ms": {
+      "min": 1348.7165253,
+      "max": 1362.3757875000001,
+      "values": [
+        1348.7165253,
+        1350.5377997000003,
+        1362.3757875000001
+      ]
+    },
+    "coldRegressionPercent": 5.28,
+    "warmRegressionPercent": 1.01,
+    "regressionThresholdPercent": 20,
+    "warningOnlyRegression": false
+  },
+  "notes": [
+    "Three comparable passes are required before 3D built-auth can be promoted from warning gate to candidate hard gate.",
+    "This script stores only env-mode flags and never records credential values."
+  ]
+}

@@ -29,7 +29,11 @@ export function TourOverlay() {
   const isLast = tourStep === TOUR_STEPS.length - 1
 
   return (
-    <div className="absolute inset-x-0 bottom-0 z-20 p-4 md:bottom-4 md:left-4 md:right-auto md:max-w-sm">
+    <div
+      className="absolute inset-x-0 bottom-0 z-20 p-4 md:bottom-4 md:left-4 md:right-auto md:max-w-sm"
+      data-testid="3dlab-devcontrols-tour-overlay"
+      data-3dlab-onboarding-stage="devcontrols-tour"
+    >
       <div className="rounded-md border border-border bg-card p-4 shadow-md">
         {/* Step indicator */}
         <div className="mb-2 flex items-center gap-1.5">

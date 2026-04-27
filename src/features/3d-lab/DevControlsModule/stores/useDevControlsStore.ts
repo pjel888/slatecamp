@@ -2,6 +2,10 @@
 
 import { create } from 'zustand'
 import { computeDevControls } from '@/lib/pd1096/computationEngine'
+import {
+  hasCompletedGlobal3DLabOnboarding,
+  hasSeen3DLabModule,
+} from '@/features/3d-lab/components/onboarding/state'
 import type {
   ZoneClass,
   LotParams,
@@ -212,6 +216,8 @@ const ALL_LAYERS: LayerKey[] = ['setbacks', 'ambf', 'pso', 'bhl', 'flar', 'floor
 /** Check if the user has previously dismissed the tour */
 const getInitialTourStep = (): number | null => {
   if (typeof window === 'undefined') return 0
+  if (!hasCompletedGlobal3DLabOnboarding()) return null
+  if (!hasSeen3DLabModule('site-development-controls')) return null
   return localStorage.getItem('devcontrols-tour-dismissed') === '1' ? null : 0
 }
 

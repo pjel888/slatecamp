@@ -1,0 +1,12 @@
+bun test v1.3.10 (30e609e0)
+
+src/features/3d-lab/components/onboarding/state.test.ts:
+(pass) 3D Lab onboarding state > keeps global orientation as the first overlay
+(pass) 3D Lab onboarding state > shows module context only after global orientation is complete [0.20ms]
+(pass) 3D Lab onboarding state > returns none when both global and module onboarding are already complete [0.02ms]
+(pass) 3D Lab onboarding state > recognizes current and legacy localStorage keys [0.03ms]
+
+ 4 pass
+ 0 fail
+ 6 expect() calls
+Ran 4 tests across 1 file. [16.00ms]

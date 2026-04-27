@@ -1,0 +1,19 @@
+$ PLAYWRIGHT_DEMO_AUTH=true PLAYWRIGHT_USE_BUILT_APP=true THREED_MODE=onboarding bunx playwright test --config=.ai/00_performance/playwright/playwright.3d.config.ts --project=chromium --workers=1
+[2m[WebServer] [22m(node:41364) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 6 tests using 1 worker
+
+(node:41470) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:41470) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [chromium] › .ai/00_performance/playwright/3d-lab-production.spec.ts:340:7 › 3D Lab production hardening gates › first-run tutorial owns only one active overlay at a time (3.3s)
+  ✓  2 [chromium] › .ai/00_performance/playwright/3d-lab-production.spec.ts:368:7 › 3D Lab production hardening gates › return-visit DevControls tour waits until the module context card is dismissed (1.7s)
+  -  3 [chromium] › .ai/00_performance/playwright/3d-lab-production.spec.ts:394:7 › 3D Lab production hardening gates › built/demo auth timing reaches authenticated 3D hub content
+  -  4 [chromium] › .ai/00_performance/playwright/3d-lab-production.spec.ts:409:7 › 3D Lab production hardening gates › module smoke matrix loads every selected 3D module without critical runtime errors
+  -  5 [chromium] › .ai/00_performance/playwright/3d-lab-production.spec.ts:430:7 › 3D Lab production hardening gates › mobile mid-range WebGL pass covers hub and representative module routes
+  -  6 [chromium] › .ai/00_performance/playwright/3d-lab-production.spec.ts:457:7 › 3D Lab production hardening gates › WebGL unsupported, context-loss, and slow-scene fallbacks are measurable
+
+  4 skipped
+  2 passed (6.4s)

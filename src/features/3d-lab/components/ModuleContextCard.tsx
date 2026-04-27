@@ -1,9 +1,10 @@
 'use client'
 
-import { useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import type { ModuleConfig } from '@/types/3d-lab'
 import { LabMetaPanel } from './shell/LabMetaPanel'
 import { cn } from '@/lib/utils'
+import { mark3DLabModuleSeen } from './onboarding/state'
 
 interface ModuleContextCardProps {
   config: ModuleConfig
@@ -19,39 +20,30 @@ const AUTO_DISMISS_MS = 6000
  */
 export const ModuleContextCard = ({ config, onDismiss, className }: ModuleContextCardProps) => {
   const [visible, setVisible] = useState(false)
-  const [show, setShow] = useState(false)
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
 
   useEffect(() => {
-    const key = `module_${config.slug}_seen`
-    const alreadySeen = localStorage.getItem(key)
-    if (!alreadySeen) {
-      setShow(true)
-      requestAnimationFrame(() => setVisible(true))
-    }
-  }, [config.slug])
+    // Parent coordinates if this module card should mount. The card owns its
+    // reveal animation and writes both current + legacy completion keys.
+    requestAnimationFrame(() => setVisible(true))
+  }, [])
 
-  const handleDismiss = () => {
-    if (!show) return
-    const key = `module_${config.slug}_seen`
-    localStorage.setItem(key, 'true')
+  const handleDismiss = useCallback(() => {
+    mark3DLabModuleSeen(config.slug)
     setVisible(false)
     setTimeout(onDismiss, 150)
-  }
+  }, [config.slug, onDismiss])
 
   // Auto-dismiss after 6 seconds
   useEffect(() => {
-    if (!show) return
     timerRef.current = setTimeout(handleDismiss, AUTO_DISMISS_MS)
     return () => {
       if (timerRef.current) clearTimeout(timerRef.current)
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [show])
+  }, [handleDismiss])
 
   // Dismiss on any canvas interaction
   useEffect(() => {
-    if (!show) return
     const dismiss = () => handleDismiss()
     window.addEventListener('pointerdown', dismiss, { once: true })
     window.addEventListener('touchstart', dismiss, { once: true })
@@ -61,16 +53,15 @@ export const ModuleContextCard = ({ config, onDismiss, className }: ModuleContex
       window.removeEventListener('touchstart', dismiss)
       window.removeEventListener('wheel', dismiss)
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [show])
-
-  if (!show) return null
+  }, [handleDismiss])
 
   const hotspotCount = config.hotspots.length
   const estimatedMin = config.estimatedMinutes
 
   return (
     <div
+      data-testid="3dlab-module-context-card"
+      data-3dlab-onboarding-stage="module"
       className={cn(
         "fixed top-12 left-4 z-[250] w-[300px] transition-opacity duration-150",
         visible ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none",

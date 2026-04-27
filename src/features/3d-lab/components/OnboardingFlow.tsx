@@ -4,6 +4,7 @@ import { useState, useEffect, useCallback } from 'react'
 import { HandGrabbing, Crosshair, ClipboardText } from '@phosphor-icons/react/dist/ssr'
 import { cn } from '@/lib/utils'
 import { Button } from '@/components/ui/button'
+import { markGlobal3DLabOnboardingComplete } from './onboarding/state'
 
 interface OnboardingFlowProps {
   onComplete: () => void
@@ -31,19 +32,15 @@ const STEPS = [
 export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
   const [step, setStep] = useState(0)
   const [visible, setVisible] = useState(false)
-  const [show, setShow] = useState(false)
 
   useEffect(() => {
-    const alreadyOnboarded = localStorage.getItem('3dlab_onboarded')
-    if (!alreadyOnboarded) {
-      setShow(true)
-      // Trigger fade-in after mount
-      requestAnimationFrame(() => setVisible(true))
-    }
+    // Parent coordinates whether the global orientation should be mounted.
+    // This component only owns presentation and completion persistence.
+    requestAnimationFrame(() => setVisible(true))
   }, [])
 
   const handleComplete = useCallback(() => {
-    localStorage.setItem('3dlab_onboarded', 'true')
+    markGlobal3DLabOnboardingComplete()
     setVisible(false)
     setTimeout(onComplete, 200)
   }, [onComplete])
@@ -60,13 +57,15 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
     handleComplete()
   }, [handleComplete])
 
-  if (!show) return null
-
   const { Icon, instruction } = STEPS[step]
   const isLast = step === STEPS.length - 1
 
   return (
-    <div className="contents">
+    <div
+      className="contents"
+      data-testid="3dlab-onboarding-overlay"
+      data-3dlab-onboarding-stage="global"
+    >
       {/* Backdrop */}
       <div
         className={cn(
@@ -81,6 +80,7 @@ export const OnboardingFlow = ({ onComplete }: OnboardingFlowProps) => {
         role="dialog"
         aria-modal="true"
         aria-label="3D Lab orientation"
+        data-testid="3dlab-onboarding-dialog"
         className={cn(
           "fixed z-[301] bg-card p-6 flex flex-col gap-5 transition-opacity duration-200 shadow-2xl",
           "sm:top-1/2 sm:left-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2 sm:w-96 sm:rounded-xl",

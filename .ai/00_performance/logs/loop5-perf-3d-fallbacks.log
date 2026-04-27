@@ -1,0 +1,54 @@
+$ PLAYWRIGHT_DEMO_AUTH=true PLAYWRIGHT_USE_BUILT_APP=true THREED_MODE=fallbacks bunx playwright test --config=.ai/00_performance/playwright/playwright.3d.config.ts --project=chromium --workers=1
+[2m[WebServer] [22m(node:41682) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 6 tests using 1 worker
+
+(node:41782) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:41782) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  -  1 [chromium] › .ai/00_performance/playwright/3d-lab-production.spec.ts:340:7 › 3D Lab production hardening gates › first-run tutorial owns only one active overlay at a time
+  -  2 [chromium] › .ai/00_performance/playwright/3d-lab-production.spec.ts:368:7 › 3D Lab production hardening gates › return-visit DevControls tour waits until the module context card is dismissed
+  -  3 [chromium] › .ai/00_performance/playwright/3d-lab-production.spec.ts:394:7 › 3D Lab production hardening gates › built/demo auth timing reaches authenticated 3D hub content
+  -  4 [chromium] › .ai/00_performance/playwright/3d-lab-production.spec.ts:409:7 › 3D Lab production hardening gates › module smoke matrix loads every selected 3D module without critical runtime errors
+  -  5 [chromium] › .ai/00_performance/playwright/3d-lab-production.spec.ts:430:7 › 3D Lab production hardening gates › mobile mid-range WebGL pass covers hub and representative module routes
+  ✘  6 [chromium] › .ai/00_performance/playwright/3d-lab-production.spec.ts:457:7 › 3D Lab production hardening gates › WebGL unsupported, context-loss, and slow-scene fallbacks are measurable (414ms)
+
+
+  1) [chromium] › .ai/00_performance/playwright/3d-lab-production.spec.ts:457:7 › 3D Lab production hardening gates › WebGL unsupported, context-loss, and slow-scene fallbacks are measurable
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: getByTestId('3dlab-webgl-unavailable')
+    Expected: visible
+    Error: strict mode violation: getByTestId('3dlab-webgl-unavailable') resolved to 2 elements:
+        1) <div data-testid="3dlab-webgl-unavailable" class="absolute inset-0 z-0 flex items-center justify-center overflow-hidden bg-[#F8F7F5] p-6">…</div> aka getByTestId('3dlab-webgl-unavailable').first()
+        2) <div data-testid="3dlab-webgl-unavailable" class="absolute inset-0 z-0 flex items-center justify-center overflow-hidden bg-[#F8F7F5] p-6">…</div> aka getByTestId('3dlab-webgl-unavailable').nth(1)
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for getByTestId('3dlab-webgl-unavailable')[22m
+
+
+      476 |
+      477 |     await unsupportedPage.goto(absoluteUrl('/dashboard/3d-lab/stairway-configurator'), { waitUntil: 'domcontentloaded' })
+    > 478 |     await expect(unsupportedPage.getByTestId('3dlab-webgl-unavailable')).toBeVisible()
+          |                                                                          ^
+      479 |     const unsupportedRun = await measureRoute(
+      480 |       unsupportedPage,
+      481 |       'fallbacks',
+        at /Users/philiplewis/slatecamp/.ai/00_performance/playwright/3d-lab-production.spec.ts:478:74
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    .ai/00_performance/playwright/3d-test-output/3d-lab-production-3D-Lab-p-2bf4a-ne-fallbacks-are-measurable-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: .ai/00_performance/playwright/3d-test-output/3d-lab-production-3D-Lab-p-2bf4a-ne-fallbacks-are-measurable-chromium/error-context.md
+
+    Error Context: .ai/00_performance/playwright/3d-test-output/3d-lab-production-3D-Lab-p-2bf4a-ne-fallbacks-are-measurable-chromium/error-context.md
+
+  1 failed
+    [chromium] › .ai/00_performance/playwright/3d-lab-production.spec.ts:457:7 › 3D Lab production hardening gates › WebGL unsupported, context-loss, and slow-scene fallbacks are measurable
+  5 skipped
+error: script "perf:3d:fallbacks" exited with code 1

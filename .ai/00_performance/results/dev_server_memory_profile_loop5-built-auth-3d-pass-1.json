@@ -1,0 +1,227 @@
+{
+  "timestamp": "2026-04-27T12:06:42.805Z",
+  "final": false,
+  "mode": "built-app",
+  "command": "./node_modules/.bin/next start --port 3217",
+  "rootPid": 41005,
+  "label": "loop5-built-auth-3d-pass-1",
+  "sampleIntervalMs": 1000,
+  "summary": {
+    "sampleCount": 12,
+    "maxRssKiB": 232016,
+    "lastRssKiB": 232016,
+    "maxProcessCount": 1,
+    "lastProcessCount": 1
+  },
+  "warnings": [],
+  "samples": [
+    {
+      "timestamp": "2026-04-27T12:06:31.787Z",
+      "elapsedMs": 1024,
+      "rootPid": 41005,
+      "processCount": 1,
+      "rssKiB": 185808,
+      "vszKiB": 445986672,
+      "topProcesses": [
+        {
+          "pid": 41005,
+          "ppid": 41003,
+          "rssKiB": 185808,
+          "vszKiB": 445986672,
+          "command": "next-server (v16.2.3)"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-27T12:06:32.791Z",
+      "elapsedMs": 2027,
+      "rootPid": 41005,
+      "processCount": 1,
+      "rssKiB": 202416,
+      "vszKiB": 445994880,
+      "topProcesses": [
+        {
+          "pid": 41005,
+          "ppid": 41003,
+          "rssKiB": 202416,
+          "vszKiB": 445994880,
+          "command": "next-server (v16.2.3)"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-27T12:06:33.792Z",
+      "elapsedMs": 3028,
+      "rootPid": 41005,
+      "processCount": 1,
+      "rssKiB": 202416,
+      "vszKiB": 445994880,
+      "topProcesses": [
+        {
+          "pid": 41005,
+          "ppid": 41003,
+          "rssKiB": 202416,
+          "vszKiB": 445994880,
+          "command": "next-server (v16.2.3)"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-27T12:06:34.795Z",
+      "elapsedMs": 4032,
+      "rootPid": 41005,
+      "processCount": 1,
+      "rssKiB": 210256,
+      "vszKiB": 445999856,
+      "topProcesses": [
+        {
+          "pid": 41005,
+          "ppid": 41003,
+          "rssKiB": 210256,
+          "vszKiB": 445999856,
+          "command": "next-server (v16.2.3)"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-27T12:06:35.798Z",
+      "elapsedMs": 5035,
+      "rootPid": 41005,
+      "processCount": 1,
+      "rssKiB": 210256,
+      "vszKiB": 445999856,
+      "topProcesses": [
+        {
+          "pid": 41005,
+          "ppid": 41003,
+          "rssKiB": 210256,
+          "vszKiB": 445999856,
+          "command": "next-server (v16.2.3)"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-27T12:06:36.806Z",
+      "elapsedMs": 6043,
+      "rootPid": 41005,
+      "processCount": 1,
+      "rssKiB": 214320,
+      "vszKiB": 446002112,
+      "topProcesses": [
+        {
+          "pid": 41005,
+          "ppid": 41003,
+          "rssKiB": 214320,
+          "vszKiB": 446002112,
+          "command": "next-server (v16.2.3)"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-27T12:06:37.802Z",
+      "elapsedMs": 7039,
+      "rootPid": 41005,
+      "processCount": 1,
+      "rssKiB": 224320,
+      "vszKiB": 446010560,
+      "topProcesses": [
+        {
+          "pid": 41005,
+          "ppid": 41003,
+          "rssKiB": 224320,
+          "vszKiB": 446010560,
+          "command": "next-server (v16.2.3)"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-27T12:06:38.801Z",
+      "elapsedMs": 8038,
+      "rootPid": 41005,
+      "processCount": 1,
+      "rssKiB": 224416,
+      "vszKiB": 446010560,
+      "topProcesses": [
+        {
+          "pid": 41005,
+          "ppid": 41003,
+          "rssKiB": 224416,
+          "vszKiB": 446010560,
+          "command": "next-server (v16.2.3)"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-27T12:06:39.807Z",
+      "elapsedMs": 9044,
+      "rootPid": 41005,
+      "processCount": 1,
+      "rssKiB": 225040,
+      "vszKiB": 446011072,
+      "topProcesses": [
+        {
+          "pid": 41005,
+          "ppid": 41003,
+          "rssKiB": 225040,
+          "vszKiB": 446011072,
+          "command": "next-server (v16.2.3)"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-27T12:06:40.813Z",
+      "elapsedMs": 10050,
+      "rootPid": 41005,
+      "processCount": 1,
+      "rssKiB": 225040,
+      "vszKiB": 446011072,
+      "topProcesses": [
+        {
+          "pid": 41005,
+          "ppid": 41003,
+          "rssKiB": 225040,
+          "vszKiB": 446011072,
+          "command": "next-server (v16.2.3)"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-27T12:06:41.809Z",
+      "elapsedMs": 11046,
+      "rootPid": 41005,
+      "processCount": 1,
+      "rssKiB": 232016,
+      "vszKiB": 446017472,
+      "topProcesses": [
+        {
+          "pid": 41005,
+          "ppid": 41003,
+          "rssKiB": 232016,
+          "vszKiB": 446017472,
+          "command": "next-server (v16.2.3)"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-04-27T12:06:42.804Z",
+      "elapsedMs": 12041,
+      "rootPid": 41005,
+      "processCount": 1,
+      "rssKiB": 232016,
+      "vszKiB": 446017472,
+      "topProcesses": [
+        {
+          "pid": 41005,
+          "ppid": 41003,
+          "rssKiB": 232016,
+          "vszKiB": 446017472,
+          "command": "next-server (v16.2.3)"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "RSS/VSZ are sampled from the local process tree rooted at the Next server process.",
+    "Values are host/process proxies, not browser heap and not production RUM."
+  ]
+}

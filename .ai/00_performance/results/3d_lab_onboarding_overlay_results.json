@@ -1,0 +1,440 @@
+{
+  "timestamp": "2026-04-27T12:07:17.287Z",
+  "mode": "onboarding",
+  "baseURL": "http://localhost:3217",
+  "env": {
+    "PLAYWRIGHT_DEMO_AUTH": "enabled",
+    "PLAYWRIGHT_USE_BUILT_APP": "enabled",
+    "PLAYWRIGHT_TEST_EMAIL": "missing",
+    "PLAYWRIGHT_TEST_PASSWORD": "missing",
+    "PLAYWRIGHT_ADMIN_EMAIL": "missing",
+    "PLAYWRIGHT_ADMIN_PASSWORD": "missing"
+  },
+  "failOnCritical": false,
+  "moduleCount": 209,
+  "measurements": [
+    {
+      "kind": "onboarding",
+      "path": "/dashboard/3d-lab/site-development-controls",
+      "moduleId": "site-development-controls",
+      "startedAt": "2026-04-27T12:07:12.276Z",
+      "endedAt": "2026-04-27T12:07:14.126Z",
+      "durationMs": 1850.79,
+      "responseStatus": 200,
+      "ok": true,
+      "navigationError": null,
+      "consoleMessages": [
+        {
+          "type": "warning",
+          "text": "THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.",
+          "location": "http://localhost:3217/_next/static/chunks/17vc1bv91yc08.js:0:4791"
+        },
+        {
+          "type": "warning",
+          "text": "[.WebGL-0x11c001cf000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+          "location": "http://localhost:3217/dashboard/3d-lab/site-development-controls:0:0"
+        },
+        {
+          "type": "warning",
+          "text": "[.WebGL-0x11c001cf000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+          "location": "http://localhost:3217/dashboard/3d-lab/site-development-controls:0:0"
+        },
+        {
+          "type": "warning",
+          "text": "[.WebGL-0x11c001cf000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+          "location": "http://localhost:3217/dashboard/3d-lab/site-development-controls:0:0"
+        },
+        {
+          "type": "warning",
+          "text": "[.WebGL-0x11c001cf000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)",
+          "location": "http://localhost:3217/dashboard/3d-lab/site-development-controls:0:0"
+        }
+      ],
+      "pageErrors": [],
+      "criticalConsoleMessages": [],
+      "criticalErrors": [],
+      "browserMetrics": {
+        "finalUrl": "http://localhost:3217/dashboard/3d-lab/site-development-controls",
+        "title": "3D Lab Module | SlateCamp",
+        "bodyTextSample": "BACK TO BROWSER\nSite Development Controls\nLot\nBuild\nSettings\nZONING CLASSIFICATION\nR-1 Low-Density Residential\nR-2 Basic (Duplex/Rowhouse)\nR-2 Maximum (Apartment)\nR-3 Basic Medium-Density Residential\nR-3 Maximum High-Density Residential\nR-4 High-Rise Condominium\nR-5 Very High-Density Residential\nCom-1 Low-Intensity Commercial\nCom-2 Medium-Intensity Commercial\nCom-3 High-Intensity Commercial\nInd-1 Light Industrial\nInd-2 Medium Industrial\nInd-3 Heavy Industrial\nInstitutional\nCultural\n\nSets Table VIII.1 development controls\n\nLOT PARAMETERS\nLot Width\n20.0m\nLot Depth\n15.0m\nRROW Width\n10m\n\nTABLE VIII.1 REFERENCE\n\nPSO\nN/A (setback-only)\nISA\n30% of TLA\nUSA\n15% of TLA\nTOSL\n45% of TLA\nBHL\n3F / 10m\nFLAR\n1.5–1.5\n\nLOT SUMMARY\n\nTotal Lot Area\n300.0 sqm\nFrontage\n20.0 m\nLot Depth\n15.0 m\nRROW\n10 m\nPRESETS\nReset\nR-1 Subdivision (300 sqm)\nR-2 Rowhouse\nC-1 Commercial\nNarrow Lot (Violation)\nMax Height Test\nVIOLATION CASE STUDIES\n⚠\n\n⚠ Lot Encroachment\n\nBuilding footprint extends past the required setback line\n\n⚠ BHL Violation\n\nProposed height exceeds the max building height limit for this zone\n\n⚠ Setback Breach\n\nBuilding footprint violates the required front, side, or rear setback\n\n⚠ TGFA Overbuilt\n\nTot",
+        "navigation": {
+          "durationMs": 185.3,
+          "ttfbMs": 101.1,
+          "domContentLoadedMs": 134.9,
+          "loadEventMs": 185.3
+        },
+        "paints": {
+          "first-paint": 164,
+          "first-contentful-paint": 164
+        },
+        "resourceCount": 55,
+        "transferBytes": 1086712,
+        "slowestResources": [
+          {
+            "name": "http://localhost:3217/_next/static/chunks/17vc1bv91yc08.js",
+            "initiatorType": "script",
+            "durationMs": 72.1,
+            "transferSize": 228766
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0g5iq_v7_r7lm.js",
+            "initiatorType": "script",
+            "durationMs": 57.2,
+            "transferSize": 21002
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0ghh68budv2xd.js",
+            "initiatorType": "script",
+            "durationMs": 54.5,
+            "transferSize": 1305
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0w2n28gu90g_s.js",
+            "initiatorType": "script",
+            "durationMs": 53.6,
+            "transferSize": 23973
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/04jivwh510xcp.js",
+            "initiatorType": "script",
+            "durationMs": 53.4,
+            "transferSize": 18585
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/09_j5ip0enefy.js",
+            "initiatorType": "script",
+            "durationMs": 51.5,
+            "transferSize": 10998
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0c6gyypdoeyyg.js",
+            "initiatorType": "script",
+            "durationMs": 51.1,
+            "transferSize": 15813
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0i9xz83ohk.40.js",
+            "initiatorType": "script",
+            "durationMs": 50.4,
+            "transferSize": 6217
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0tjk.ooomo6ym.js",
+            "initiatorType": "script",
+            "durationMs": 47.1,
+            "transferSize": 11515
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0_smmzknl9ine.js",
+            "initiatorType": "script",
+            "durationMs": 46.1,
+            "transferSize": 54478
+          }
+        ],
+        "heap": {},
+        "supportsWebGL": true,
+        "canvasCount": 4,
+        "webglUnavailableVisible": 0,
+        "webglRecoveryVisible": 0,
+        "slowSceneNoticeVisible": 0,
+        "onboarding": {
+          "globalDialog": 1,
+          "globalOverlay": 1,
+          "moduleContext": 0,
+          "viewportTooltip": 0,
+          "devControlsTour": 0,
+          "activeTutorialSurfaces": 1,
+          "telemetry": {
+            "activeOverlay": "global",
+            "events": [
+              {
+                "event": "overlay-resolved",
+                "moduleId": "site-development-controls",
+                "overlay": "global",
+                "timestamp": "2026-04-27T12:07:12.511Z"
+              }
+            ],
+            "activeModuleId": "site-development-controls"
+          }
+        },
+        "contentSignals": {
+          "loginRedirect": false,
+          "threeLabHub": false,
+          "moduleView": true,
+          "unsupportedWebGL": false
+        }
+      },
+      "notes": []
+    },
+    {
+      "kind": "onboarding",
+      "path": "/dashboard/3d-lab/site-development-controls",
+      "moduleId": "site-development-controls",
+      "startedAt": "2026-04-27T12:07:14.957Z",
+      "endedAt": "2026-04-27T12:07:15.464Z",
+      "durationMs": 507.05,
+      "responseStatus": null,
+      "ok": true,
+      "navigationError": null,
+      "consoleMessages": [],
+      "pageErrors": [],
+      "criticalConsoleMessages": [],
+      "criticalErrors": [],
+      "browserMetrics": {
+        "finalUrl": "http://localhost:3217/dashboard/3d-lab/site-development-controls",
+        "title": "3D Lab Module | SlateCamp",
+        "bodyTextSample": "BACK TO BROWSER\nSite Development Controls\nLot\nBuild\nSettings\nZONING CLASSIFICATION\nR-1 Low-Density Residential\nR-2 Basic (Duplex/Rowhouse)\nR-2 Maximum (Apartment)\nR-3 Basic Medium-Density Residential\nR-3 Maximum High-Density Residential\nR-4 High-Rise Condominium\nR-5 Very High-Density Residential\nCom-1 Low-Intensity Commercial\nCom-2 Medium-Intensity Commercial\nCom-3 High-Intensity Commercial\nInd-1 Light Industrial\nInd-2 Medium Industrial\nInd-3 Heavy Industrial\nInstitutional\nCultural\n\nSets Table VIII.1 development controls\n\nLOT PARAMETERS\nLot Width\n20.0m\nLot Depth\n15.0m\nRROW Width\n10m\n\nTABLE VIII.1 REFERENCE\n\nPSO\nN/A (setback-only)\nISA\n30% of TLA\nUSA\n15% of TLA\nTOSL\n45% of TLA\nBHL\n3F / 10m\nFLAR\n1.5–1.5\n\nLOT SUMMARY\n\nTotal Lot Area\n300.0 sqm\nFrontage\n20.0 m\nLot Depth\n15.0 m\nRROW\n10 m\nPRESETS\nReset\nR-1 Subdivision (300 sqm)\nR-2 Rowhouse\nC-1 Commercial\nNarrow Lot (Violation)\nMax Height Test\nVIOLATION CASE STUDIES\n⚠\n\n⚠ Lot Encroachment\n\nBuilding footprint extends past the required setback line\n\n⚠ BHL Violation\n\nProposed height exceeds the max building height limit for this zone\n\n⚠ Setback Breach\n\nBuilding footprint violates the required front, side, or rear setback\n\n⚠ TGFA Overbuilt\n\nTot",
+        "navigation": {
+          "durationMs": 185.3,
+          "ttfbMs": 101.1,
+          "domContentLoadedMs": 134.9,
+          "loadEventMs": 185.3
+        },
+        "paints": {
+          "first-paint": 164,
+          "first-contentful-paint": 164
+        },
+        "resourceCount": 55,
+        "transferBytes": 1086712,
+        "slowestResources": [
+          {
+            "name": "http://localhost:3217/_next/static/chunks/17vc1bv91yc08.js",
+            "initiatorType": "script",
+            "durationMs": 72.1,
+            "transferSize": 228766
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0g5iq_v7_r7lm.js",
+            "initiatorType": "script",
+            "durationMs": 57.2,
+            "transferSize": 21002
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0ghh68budv2xd.js",
+            "initiatorType": "script",
+            "durationMs": 54.5,
+            "transferSize": 1305
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0w2n28gu90g_s.js",
+            "initiatorType": "script",
+            "durationMs": 53.6,
+            "transferSize": 23973
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/04jivwh510xcp.js",
+            "initiatorType": "script",
+            "durationMs": 53.4,
+            "transferSize": 18585
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/09_j5ip0enefy.js",
+            "initiatorType": "script",
+            "durationMs": 51.5,
+            "transferSize": 10998
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0c6gyypdoeyyg.js",
+            "initiatorType": "script",
+            "durationMs": 51.1,
+            "transferSize": 15813
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0i9xz83ohk.40.js",
+            "initiatorType": "script",
+            "durationMs": 50.4,
+            "transferSize": 6217
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0tjk.ooomo6ym.js",
+            "initiatorType": "script",
+            "durationMs": 47.1,
+            "transferSize": 11515
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0_smmzknl9ine.js",
+            "initiatorType": "script",
+            "durationMs": 46.1,
+            "transferSize": 54478
+          }
+        ],
+        "heap": {},
+        "supportsWebGL": true,
+        "canvasCount": 4,
+        "webglUnavailableVisible": 0,
+        "webglRecoveryVisible": 0,
+        "slowSceneNoticeVisible": 0,
+        "onboarding": {
+          "globalDialog": 0,
+          "globalOverlay": 0,
+          "moduleContext": 1,
+          "viewportTooltip": 0,
+          "devControlsTour": 0,
+          "activeTutorialSurfaces": 1,
+          "telemetry": {
+            "activeOverlay": "module",
+            "events": [
+              {
+                "event": "overlay-resolved",
+                "moduleId": "site-development-controls",
+                "overlay": "global",
+                "timestamp": "2026-04-27T12:07:12.511Z"
+              },
+              {
+                "event": "global-completed",
+                "timestamp": "2026-04-27T12:07:14.197Z"
+              },
+              {
+                "event": "overlay-resolved",
+                "moduleId": "site-development-controls",
+                "overlay": "module",
+                "timestamp": "2026-04-27T12:07:14.399Z"
+              }
+            ],
+            "activeModuleId": "site-development-controls"
+          }
+        },
+        "contentSignals": {
+          "loginRedirect": false,
+          "threeLabHub": false,
+          "moduleView": true,
+          "unsupportedWebGL": false
+        }
+      },
+      "notes": []
+    },
+    {
+      "kind": "onboarding",
+      "path": "/dashboard/3d-lab/site-development-controls",
+      "moduleId": "site-development-controls",
+      "startedAt": "2026-04-27T12:07:15.549Z",
+      "endedAt": "2026-04-27T12:07:17.172Z",
+      "durationMs": 1623.08,
+      "responseStatus": 200,
+      "ok": true,
+      "navigationError": null,
+      "consoleMessages": [
+        {
+          "type": "warning",
+          "text": "THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.",
+          "location": "http://localhost:3217/_next/static/chunks/17vc1bv91yc08.js:0:4791"
+        }
+      ],
+      "pageErrors": [],
+      "criticalConsoleMessages": [],
+      "criticalErrors": [],
+      "browserMetrics": {
+        "finalUrl": "http://localhost:3217/dashboard/3d-lab/site-development-controls",
+        "title": "3D Lab Module | SlateCamp",
+        "bodyTextSample": "BACK TO BROWSER\nSite Development Controls\nLot\nBuild\nSettings\nZONING CLASSIFICATION\nR-1 Low-Density Residential\nR-2 Basic (Duplex/Rowhouse)\nR-2 Maximum (Apartment)\nR-3 Basic Medium-Density Residential\nR-3 Maximum High-Density Residential\nR-4 High-Rise Condominium\nR-5 Very High-Density Residential\nCom-1 Low-Intensity Commercial\nCom-2 Medium-Intensity Commercial\nCom-3 High-Intensity Commercial\nInd-1 Light Industrial\nInd-2 Medium Industrial\nInd-3 Heavy Industrial\nInstitutional\nCultural\n\nSets Table VIII.1 development controls\n\nLOT PARAMETERS\nLot Width\n20.0m\nLot Depth\n15.0m\nRROW Width\n10m\n\nTABLE VIII.1 REFERENCE\n\nPSO\nN/A (setback-only)\nISA\n30% of TLA\nUSA\n15% of TLA\nTOSL\n45% of TLA\nBHL\n3F / 10m\nFLAR\n1.5–1.5\n\nLOT SUMMARY\n\nTotal Lot Area\n300.0 sqm\nFrontage\n20.0 m\nLot Depth\n15.0 m\nRROW\n10 m\nPRESETS\nReset\nR-1 Subdivision (300 sqm)\nR-2 Rowhouse\nC-1 Commercial\nNarrow Lot (Violation)\nMax Height Test\nVIOLATION CASE STUDIES\n⚠\n\n⚠ Lot Encroachment\n\nBuilding footprint extends past the required setback line\n\n⚠ BHL Violation\n\nProposed height exceeds the max building height limit for this zone\n\n⚠ Setback Breach\n\nBuilding footprint violates the required front, side, or rear setback\n\n⚠ TGFA Overbuilt\n\nTot",
+        "navigation": {
+          "durationMs": 87,
+          "ttfbMs": 10.9,
+          "domContentLoadedMs": 35.6,
+          "loadEventMs": 87
+        },
+        "paints": {
+          "first-paint": 68,
+          "first-contentful-paint": 68
+        },
+        "resourceCount": 55,
+        "transferBytes": 1086712,
+        "slowestResources": [
+          {
+            "name": "http://localhost:3217/_next/static/chunks/17vc1bv91yc08.js",
+            "initiatorType": "script",
+            "durationMs": 70.5,
+            "transferSize": 228766
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0g5iq_v7_r7lm.js",
+            "initiatorType": "script",
+            "durationMs": 45.9,
+            "transferSize": 21002
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0w2n28gu90g_s.js",
+            "initiatorType": "script",
+            "durationMs": 45.5,
+            "transferSize": 23973
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/04jivwh510xcp.js",
+            "initiatorType": "script",
+            "durationMs": 44.4,
+            "transferSize": 18585
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0ghh68budv2xd.js",
+            "initiatorType": "script",
+            "durationMs": 42.1,
+            "transferSize": 1305
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/09_j5ip0enefy.js",
+            "initiatorType": "script",
+            "durationMs": 41.3,
+            "transferSize": 10998
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0c6gyypdoeyyg.js",
+            "initiatorType": "script",
+            "durationMs": 39.8,
+            "transferSize": 15813
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0tjk.ooomo6ym.js",
+            "initiatorType": "script",
+            "durationMs": 38.8,
+            "transferSize": 11515
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0i9xz83ohk.40.js",
+            "initiatorType": "script",
+            "durationMs": 38.5,
+            "transferSize": 6217
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/08c0af_vu5ifc.js",
+            "initiatorType": "script",
+            "durationMs": 37.5,
+            "transferSize": 17535
+          }
+        ],
+        "heap": {},
+        "supportsWebGL": true,
+        "canvasCount": 4,
+        "webglUnavailableVisible": 0,
+        "webglRecoveryVisible": 0,
+        "slowSceneNoticeVisible": 0,
+        "onboarding": {
+          "globalDialog": 0,
+          "globalOverlay": 0,
+          "moduleContext": 1,
+          "viewportTooltip": 0,
+          "devControlsTour": 0,
+          "activeTutorialSurfaces": 1,
+          "telemetry": {
+            "activeOverlay": "module",
+            "events": [
+              {
+                "event": "overlay-resolved",
+                "moduleId": "site-development-controls",
+                "overlay": "module",
+                "timestamp": "2026-04-27T12:07:15.691Z"
+              }
+            ],
+            "activeModuleId": "site-development-controls"
+          }
+        },
+        "contentSignals": {
+          "loginRedirect": false,
+          "threeLabHub": false,
+          "moduleView": true,
+          "unsupportedWebGL": false
+        }
+      },
+      "notes": []
+    }
+  ]
+}

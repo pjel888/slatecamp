@@ -44,3 +44,27 @@ It should **not** become a hard gate yet because the full dev-server run still e
 - `.ai/00_performance/34_dev_server_memory_profile.md`
 - `.ai/00_performance/35_authenticated_built_app_3d_timing.md`
 - `.ai/00_performance/36_3d_hard_gate_decision.md`
+
+
+## 2026-04-27 production-hardening update
+
+New active warning-gate commands:
+
+```bash
+bun run perf:3d:built-auth-repeat
+bun run perf:3d:onboarding
+bun run perf:3d:mobile
+bun run perf:3d:smoke
+bun run perf:3d:gates
+```
+
+New local evidence:
+- Built-auth 3D repeat: 3/3 passes, cold p95 spread 4.16%, warm p95 spread 2.48%, no route errors.
+- Module smoke: 209/209 routes successful, 0 critical console/runtime errors.
+- Mobile WebGL emulation: 4/4 routes successful in Pixel 7 emulation, WebGL supported, 0 critical errors.
+- Onboarding: first-run global orientation and post-skip module card each measured as exactly one active tutorial surface.
+- Gate check: `bun run perf:3d:gates` returned success=true with no warnings/failures in warning mode.
+
+CI update:
+- `.github/workflows/3d-performance-warning.yml` now runs these lanes as a warning-only workflow on 3D/performance-harness changes and manual dispatch.
+- Hard gates remain disabled until at least three comparable CI-runner baselines exist and real device/staging auth gaps are resolved or accepted as separate launch blockers.

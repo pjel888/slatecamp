@@ -1,0 +1,16 @@
+$ PLAYWRIGHT_DEMO_AUTH=true PLAYWRIGHT_USE_BUILT_APP=true THREED_MODE=auth-timing bunx playwright test --config=.ai/00_performance/playwright/playwright.3d.config.ts --project=chromium --workers=1
+[2m[WebServer] [22m(node:42558) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m⨯ Failed to start server
+[2m[WebServer] [22mError: listen EADDRINUSE: address already in use :::3217
+[2m[WebServer] [22m    at <unknown> (Error: listen EADDRINUSE: address already in use :::3217)
+[2m[WebServer] [22m    at new Promise (<anonymous>) {
+[2m[WebServer] [22m  code: [32m'EADDRINUSE'[39m,
+[2m[WebServer] [22m  errno: [33m-48[39m,
+[2m[WebServer] [22m  syscall: [32m'listen'[39m,
+[2m[WebServer] [22m  address: [32m'::'[39m,
+[2m[WebServer] [22m  port: [33m3217[39m
+[2m[WebServer] [22m}
+Error: Process from config.webServer was not able to start. Exit code: 1
+
+error: script "perf:3d:auth-timing" exited with code 1

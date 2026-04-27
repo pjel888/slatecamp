@@ -4,35 +4,46 @@
 // Explains basic controls: Orbit, Pan, Zoom, toolbar
 
 import { useState, useEffect } from 'react'
+import {
+  hasSeen3DLabViewportTooltip,
+  mark3DLabViewportTooltipSeen,
+} from '../onboarding/state'
 
-const STORAGE_KEY = 'slatecamp-viewport-onboarding-seen'
+interface FirstTimeTooltipProps {
+  disabled?: boolean
+}
 
-export const FirstTimeTooltip = () => {
+export const FirstTimeTooltip = ({ disabled = false }: FirstTimeTooltipProps) => {
   const [visible, setVisible] = useState(false)
 
   useEffect(() => {
-    try {
-      if (localStorage.getItem(STORAGE_KEY) !== 'true') {
-        setVisible(true)
-        // Auto-dismiss after 8 seconds
-        const timer = setTimeout(() => {
-          setVisible(false)
-          localStorage.setItem(STORAGE_KEY, 'true')
-        }, 8000)
-        return () => clearTimeout(timer)
-      }
-    } catch { /* localStorage unavailable */ }
-  }, [])
+    if (disabled) {
+      setVisible(false)
+      return undefined
+    }
+
+    if (hasSeen3DLabViewportTooltip()) return undefined
+
+    setVisible(true)
+    // Auto-dismiss after 8 seconds
+    const timer = setTimeout(() => {
+      setVisible(false)
+      mark3DLabViewportTooltipSeen()
+    }, 8000)
+    return () => clearTimeout(timer)
+  }, [disabled])
 
   const handleDismiss = () => {
     setVisible(false)
-    try { localStorage.setItem(STORAGE_KEY, 'true') } catch {}
+    mark3DLabViewportTooltipSeen()
   }
 
   if (!visible) return null
 
   return (
     <div
+      data-testid="3dlab-first-time-tooltip"
+      data-3dlab-onboarding-stage="viewport"
       className="absolute top-16 left-1/2 z-30 -translate-x-1/2 rounded-md border border-border bg-card px-4 py-3 shadow-lg pointer-events-auto"
       onClick={handleDismiss}
       onKeyDown={(e) => { if (e.key === 'Escape') handleDismiss() }}

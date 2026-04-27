@@ -1,0 +1,132 @@
+{
+  "timestamp": "2026-04-27T12:08:05.811Z",
+  "mode": "auth-timing",
+  "baseURL": "http://localhost:3217",
+  "env": {
+    "PLAYWRIGHT_DEMO_AUTH": "enabled",
+    "PLAYWRIGHT_USE_BUILT_APP": "enabled",
+    "PLAYWRIGHT_TEST_EMAIL": "missing",
+    "PLAYWRIGHT_TEST_PASSWORD": "missing",
+    "PLAYWRIGHT_ADMIN_EMAIL": "missing",
+    "PLAYWRIGHT_ADMIN_PASSWORD": "missing"
+  },
+  "failOnCritical": false,
+  "moduleCount": 209,
+  "measurements": [
+    {
+      "kind": "auth-timing",
+      "path": "/dashboard/3d-lab",
+      "startedAt": "2026-04-27T12:08:04.546Z",
+      "endedAt": "2026-04-27T12:08:05.740Z",
+      "durationMs": 1193.26,
+      "responseStatus": 200,
+      "ok": true,
+      "navigationError": null,
+      "consoleMessages": [],
+      "pageErrors": [],
+      "criticalConsoleMessages": [],
+      "criticalErrors": [],
+      "browserMetrics": {
+        "finalUrl": "http://localhost:3217/dashboard/3d-lab",
+        "title": "3D Lab | SlateCamp",
+        "bodyTextSample": "3D Interactive Lab\n\n4 INTERACTIVE MODULES AVAILABLE\n\nPARAMETRIC\nAVAILABLE\nSite Development Controls\n\nInteractive 3D lot model for PD 1096 Rules VII & VIII. Visualizes TLA, AMBF, PSO, ISA, USA, TOSL, and MACA as parametric zones. Manipulate lot dimensions and zoning class to see how development controls constrain the building footprint and open-space obligations in real time.\n\n \n\nPARAMETRIC\nAVAILABLE\nStairway Configurator\n\nMulti-law 3D stair compliance explorer — PD 1096, BP 220, BP 344, and RA 9514 evaluated in parallel with conflict detection.\n\n \n\nCALCULATOR\nAVAILABLE\nFlooring / Tile Visualizer\n\nEstimate tiles with 3D pattern preview and waste calculation\n\n \n\nPARAMETRIC\nAVAILABLE\nUnified Wall Configurator\n\nArchitectural wall cross-section showing layered material build-up for all 7 Philippine construction wall types. Visualize core, plaster, skim coat, primer, and paint layers in correct sequence with code-compliance feedback.\n\n \n\nINSTITUTIONAL",
+        "navigation": {
+          "durationMs": 112.1,
+          "ttfbMs": 37.1,
+          "domContentLoadedMs": 69.8,
+          "loadEventMs": 112.1
+        },
+        "paints": {
+          "first-paint": 88,
+          "first-contentful-paint": 88
+        },
+        "resourceCount": 51,
+        "transferBytes": 710230,
+        "slowestResources": [
+          {
+            "name": "http://localhost:3217/_next/static/chunks/08c0af_vu5ifc.js",
+            "initiatorType": "script",
+            "durationMs": 47.2,
+            "transferSize": 17535
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0_smmzknl9ine.js",
+            "initiatorType": "script",
+            "durationMs": 47.1,
+            "transferSize": 54478
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0vxs-0q51i3q4.js",
+            "initiatorType": "script",
+            "durationMs": 46.5,
+            "transferSize": 53340
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0ghh68budv2xd.js",
+            "initiatorType": "script",
+            "durationMs": 44.4,
+            "transferSize": 1305
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0h9smxz0o9zlx.js",
+            "initiatorType": "script",
+            "durationMs": 44.3,
+            "transferSize": 1290
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/07~h62rbh_qn_.js",
+            "initiatorType": "script",
+            "durationMs": 43.1,
+            "transferSize": 15001
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0b-piy5eootl1.js",
+            "initiatorType": "script",
+            "durationMs": 40.3,
+            "transferSize": 44465
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0gmrmo.8_5ooj.js",
+            "initiatorType": "script",
+            "durationMs": 39.6,
+            "transferSize": 5241
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0.uiytixdyok3.js",
+            "initiatorType": "script",
+            "durationMs": 38.1,
+            "transferSize": 557
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/044x00wdbjq.d.js",
+            "initiatorType": "script",
+            "durationMs": 36.2,
+            "transferSize": 16696
+          }
+        ],
+        "heap": {},
+        "supportsWebGL": true,
+        "canvasCount": 0,
+        "webglUnavailableVisible": 0,
+        "webglRecoveryVisible": 0,
+        "slowSceneNoticeVisible": 0,
+        "onboarding": {
+          "globalDialog": 0,
+          "globalOverlay": 0,
+          "moduleContext": 0,
+          "viewportTooltip": 0,
+          "devControlsTour": 0,
+          "activeTutorialSurfaces": 0,
+          "telemetry": null
+        },
+        "contentSignals": {
+          "loginRedirect": false,
+          "threeLabHub": true,
+          "moduleView": true,
+          "unsupportedWebGL": false
+        }
+      },
+      "notes": []
+    }
+  ]
+}

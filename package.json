@@ -41,7 +41,14 @@
     "perf:summary": "bun .ai/00_performance/scripts/summarize.mjs",
     "perf:all": "bun run perf:inventory && bun run perf:environment && bun run perf:supabase && bun run perf:hotspots && bun run perf:api && bun run perf:frontend && bun run perf:build && bun run perf:summary",
     "perf:compare": "bun .ai/00_performance/scripts/compare-performance.mjs",
-    "perf:snapshot": "bun .ai/00_performance/scripts/snapshot-performance.mjs"
+    "perf:snapshot": "bun .ai/00_performance/scripts/snapshot-performance.mjs",
+    "perf:3d:built-auth-repeat": "bun .ai/00_performance/scripts/3d-lab-built-auth-repeat.mjs",
+    "perf:3d:auth-timing": "PLAYWRIGHT_DEMO_AUTH=true PLAYWRIGHT_USE_BUILT_APP=true THREED_MODE=auth-timing bunx playwright test --config=.ai/00_performance/playwright/playwright.3d.config.ts --project=chromium --workers=1",
+    "perf:3d:onboarding": "PLAYWRIGHT_DEMO_AUTH=true PLAYWRIGHT_USE_BUILT_APP=true THREED_MODE=onboarding bunx playwright test --config=.ai/00_performance/playwright/playwright.3d.config.ts --project=chromium --workers=1",
+    "perf:3d:smoke": "PLAYWRIGHT_DEMO_AUTH=true PLAYWRIGHT_USE_BUILT_APP=true THREED_MODE=module-smoke bunx playwright test --config=.ai/00_performance/playwright/playwright.3d.config.ts --project=chromium --workers=1",
+    "perf:3d:mobile": "PLAYWRIGHT_DEMO_AUTH=true PLAYWRIGHT_USE_BUILT_APP=true THREED_MODE=mobile-webgl bunx playwright test --config=.ai/00_performance/playwright/playwright.3d.config.ts --project=chromium --workers=1",
+    "perf:3d:gates": "bun .ai/00_performance/scripts/3d-lab-gate-check.mjs",
+    "perf:3d:fallbacks": "PLAYWRIGHT_DEMO_AUTH=true PLAYWRIGHT_USE_BUILT_APP=true THREED_MODE=fallbacks bunx playwright test --config=.ai/00_performance/playwright/playwright.3d.config.ts --project=chromium --workers=1"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.78.0",

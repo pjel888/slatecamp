@@ -1,0 +1,493 @@
+{
+  "config": {
+    "configFile": "/Users/philiplewis/slatecamp/.ai/00_performance/playwright/playwright.3d.config.ts",
+    "rootDir": "/Users/philiplewis/slatecamp/.ai/00_performance/playwright",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/philiplewis/slatecamp/.ai/00_performance/playwright/3d-test-output",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/philiplewis/slatecamp/.ai/00_performance/playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "3d-lab-production.spec.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "../results/playwright-3d-report.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "never",
+          "outputFolder": "../playwright/3d-html-report"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": {
+      "command": "bun scripts/playwright-web-server.ts",
+      "cwd": "/Users/philiplewis/slatecamp",
+      "url": "http://localhost:3217",
+      "reuseExistingServer": false,
+      "timeout": 120000,
+      "env": {
+        "PLAYWRIGHT_USE_BUILT_APP": "true",
+        "THREED_MODE": "module-smoke",
+        "PLAYWRIGHT_DEMO_AUTH": "true",
+        "NVM_INC": "/Users/philiplewis/.nvm/versions/node/v25.8.0/include/node",
+        "OMX_ENTRY_PATH": "/Users/philiplewis/.nvm/versions/node/v25.8.0/lib/node_modules/oh-my-codex/dist/cli/omx.js",
+        "TERM_PROGRAM": "vscode",
+        "NODE": "/Users/philiplewis/.nvm/versions/node/v25.8.0/bin/node",
+        "NVM_CD_FLAGS": "-q",
+        "TERM": "xterm-256color",
+        "SHELL": "/bin/zsh",
+        "TMPDIR": "/var/folders/bn/7b1mmzfj6j52jkpfny_33f840000gn/T/",
+        "HOMEBREW_REPOSITORY": "/opt/homebrew",
+        "VSCODE_PYTHON_AUTOACTIVATE_GUARD": "1",
+        "TERM_PROGRAM_VERSION": "1.117.0",
+        "FPATH": "/opt/homebrew/share/zsh/site-functions:/opt/homebrew/share/zsh/site-functions:/opt/homebrew/share/zsh/site-functions:/opt/homebrew/share/zsh/site-functions:/opt/homebrew/share/zsh/site-functions:/opt/homebrew/share/zsh/site-functions:/opt/homebrew/share/zsh/site-functions:/opt/homebrew/share/zsh/site-functions:/usr/local/share/zsh/site-functions:/usr/share/zsh/site-functions:/usr/share/zsh/5.9/functions",
+        "ZDOTDIR": "/Users/philiplewis",
+        "MallocNanoZone": "0",
+        "NO_COLOR": "1",
+        "npm_config_local_prefix": "/Users/philiplewis/slatecamp",
+        "PNPM_HOME": "/Users/philiplewis/Library/pnpm",
+        "LC_ALL": "C.UTF-8",
+        "USER": "philiplewis",
+        "NVM_DIR": "/Users/philiplewis/.nvm",
+        "COMMAND_MODE": "unix2003",
+        "SSH_AUTH_SOCK": "/private/tmp/com.apple.launchd.zOEyHjr63G/Listeners",
+        "__CF_USER_TEXT_ENCODING": "0x1F5:0x0:0x0",
+        "VSCODE_PROFILE_INITIALIZED": "1",
+        "npm_execpath": "/Users/philiplewis/.bun/bin/bun",
+        "PAGER": "cat",
+        "PYDEVD_DISABLE_FILE_VALIDATION": "1",
+        "PATH": "/var/folders/bn/7b1mmzfj6j52jkpfny_33f840000gn/T/bunx-501-playwright@latest/node_modules/.bin:/Users/philiplewis/slatecamp/node_modules/.bin:/Users/philiplewis/slatecamp/node_modules/.bin:/Users/philiplewis/node_modules/.bin:/Users/node_modules/.bin:/node_modules/.bin:/Users/philiplewis/slatecamp/node_modules/.bin:/Users/philiplewis/slatecamp/node_modules/.bin:/Users/philiplewis/node_modules/.bin:/Users/node_modules/.bin:/node_modules/.bin:/Users/philiplewis/.cargo/bin:/Users/philiplewis/.codex/tmp/arg0/codex-arg0qXHenJ:/Users/philiplewis/.opencode/bin:/Users/philiplewis/.local/bin:/Users/philiplewis/.antigravity/antigravity/bin:/Users/philiplewis/Library/pnpm:/Users/philiplewis/.bun/bin:/Users/philiplewis/Library/Android/sdk/platform-tools:/Users/philiplewis/.nvm/versions/node/v25.8.0/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin:/usr/local/go/bin:/Users/philiplewis/.nvm/versions/node/v18.11.0/bin:/Users/philiplewis/.nvm/versions/node/v18.11.0/bin:/opt/homebrew/Cellar/node/25.9.0_2/bin",
+        "npm_package_json": "/Users/philiplewis/slatecamp/package.json",
+        "_": "/Users/philiplewis/.bun/bin/bunx",
+        "__CFBundleIdentifier": "com.microsoft.VSCode",
+        "USER_ZDOTDIR": "/Users/philiplewis",
+        "CODEX_THREAD_ID": "019dcace-d9e7-7c73-ae00-48ba9fe907a9",
+        "npm_command": "exec",
+        "PWD": "/Users/philiplewis/slatecamp",
+        "JAVA_HOME": "/Users/philiplewis/jdk-15.0.2.jdk/Contents/Home",
+        "npm_lifecycle_event": "bunx",
+        "EDITOR": "code --wait",
+        "npm_package_name": "slatecamp",
+        "LANG": "C.UTF-8",
+        "PYTHONSTARTUP": "/Users/philiplewis/Library/Application Support/Code/User/workspaceStorage/77ce5c4c0bf18ffefa6d769c3caef0f0/ms-python.python/pythonrc.py",
+        "BUNDLED_DEBUGPY_PATH": "/Users/philiplewis/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/libs/debugpy",
+        "XPC_FLAGS": "0x0",
+        "VSCODE_GIT_ASKPASS_EXTRA_ARGS": "",
+        "OMX_SESSION_ID": "omx-1777224044957-wbk7n2",
+        "CODEX_CI": "1",
+        "npm_package_version": "0.1.0",
+        "XPC_SERVICE_NAME": "0",
+        "VSCODE_INJECTION": "1",
+        "VSCODE_DEBUGPY_ADAPTER_ENDPOINTS": "/Users/philiplewis/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/.noConfigDebugAdapterEndpoints/endpoint-4b392cc3272403fa.txt",
+        "SHLVL": "3",
+        "OMX_STARTUP_CWD": "/Users/philiplewis/slatecamp",
+        "HOME": "/Users/philiplewis",
+        "VSCODE_GIT_ASKPASS_MAIN": "/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/git/dist/askpass-main.js",
+        "PYTHON_BASIC_REPL": "1",
+        "HOMEBREW_PREFIX": "/opt/homebrew",
+        "GH_PAGER": "cat",
+        "PROMPT": "${COLOR_DIR}%d ${COLOR_GIT}$(parse_git_branch)${COLOR_DEF}${NEWLINE}%% ",
+        "LOGNAME": "philiplewis",
+        "npm_lifecycle_script": "playwright",
+        "VISUAL": "code --wait",
+        "VSCODE_GIT_IPC_HANDLE": "/var/folders/bn/7b1mmzfj6j52jkpfny_33f840000gn/T/vscode-git-12ef085c5b.sock",
+        "LC_CTYPE": "C.UTF-8",
+        "NVM_BIN": "/Users/philiplewis/.nvm/versions/node/v25.8.0/bin",
+        "BUN_INSTALL": "/Users/philiplewis/.bun",
+        "npm_config_user_agent": "bun/1.3.10 npm/? node/v24.3.0 darwin arm64",
+        "VSCODE_GIT_ASKPASS_NODE": "/Applications/Visual Studio Code.app/Contents/Frameworks/Code Helper (Plugin).app/Contents/MacOS/Code Helper (Plugin)",
+        "INFOPATH": "/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:",
+        "HOMEBREW_CELLAR": "/opt/homebrew/Cellar",
+        "GIT_ASKPASS": "/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/git/dist/askpass.sh",
+        "OSLogRateLimit": "64",
+        "GIT_PAGER": "cat",
+        "npm_node_execpath": "/Users/philiplewis/.nvm/versions/node/v25.8.0/bin/node",
+        "OMX_TEAM_WORKER_LAUNCH_ARGS": "--dangerously-bypass-approvals-and-sandbox -c model_reasoning_effort=\"high\"",
+        "COLORTERM": "truecolor",
+        "ALLOW_DEV_PORTAL_BYPASS": "false",
+        "DEV_FORCE_USER_ID": "",
+        "DISABLE_DEV_FORCE_USER_ID": "true",
+        "NEXT_PUBLIC_APP_URL": "http://localhost:3217",
+        "NEXT_PUBLIC_ENABLE_DEMO_MODE": "true",
+        "NEXT_PUBLIC_PAYMENTS_ENABLED": "false",
+        "NEXT_PUBLIC_SUPABASE_ANON_KEY": "ci-anon-key",
+        "NEXT_PUBLIC_SUPABASE_URL": "https://hrpdwqurngnyajuhbkdg.supabase.co"
+      }
+    }
+  },
+  "suites": [
+    {
+      "title": "3d-lab-production.spec.ts",
+      "file": "3d-lab-production.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "3D Lab production hardening gates",
+          "file": "3d-lab-production.spec.ts",
+          "line": 339,
+          "column": 15,
+          "specs": [
+            {
+              "title": "first-run tutorial owns only one active overlay at a time",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "THREED_MODE=module-smoke skips onboarding check",
+                      "location": {
+                        "file": "/Users/philiplewis/slatecamp/.ai/00_performance/playwright/3d-lab-production.spec.ts",
+                        "line": 341,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 1,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-27T12:08:12.366Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "THREED_MODE=module-smoke skips onboarding check",
+                          "location": {
+                            "file": "/Users/philiplewis/slatecamp/.ai/00_performance/playwright/3d-lab-production.spec.ts",
+                            "line": 341,
+                            "column": 10
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c0bd51aa3a908a05ff32-b3ab73b5ef28f85388f6",
+              "file": "3d-lab-production.spec.ts",
+              "line": 340,
+              "column": 7
+            },
+            {
+              "title": "return-visit DevControls tour waits until the module context card is dismissed",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "THREED_MODE=module-smoke skips onboarding check",
+                      "location": {
+                        "file": "/Users/philiplewis/slatecamp/.ai/00_performance/playwright/3d-lab-production.spec.ts",
+                        "line": 369,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-27T12:08:12.479Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "THREED_MODE=module-smoke skips onboarding check",
+                          "location": {
+                            "file": "/Users/philiplewis/slatecamp/.ai/00_performance/playwright/3d-lab-production.spec.ts",
+                            "line": 369,
+                            "column": 10
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c0bd51aa3a908a05ff32-b1d7ea0c6a09f9169247",
+              "file": "3d-lab-production.spec.ts",
+              "line": 368,
+              "column": 7
+            },
+            {
+              "title": "built/demo auth timing reaches authenticated 3D hub content",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "THREED_MODE=module-smoke skips auth timing check",
+                      "location": {
+                        "file": "/Users/philiplewis/slatecamp/.ai/00_performance/playwright/3d-lab-production.spec.ts",
+                        "line": 395,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-27T12:08:12.486Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "THREED_MODE=module-smoke skips auth timing check",
+                          "location": {
+                            "file": "/Users/philiplewis/slatecamp/.ai/00_performance/playwright/3d-lab-production.spec.ts",
+                            "line": 395,
+                            "column": 10
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c0bd51aa3a908a05ff32-19efd5bbcd75c5c167da",
+              "file": "3d-lab-production.spec.ts",
+              "line": 394,
+              "column": 7
+            },
+            {
+              "title": "module smoke matrix loads every selected 3D module without critical runtime errors",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 6330000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 273775,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-27T12:08:12.491Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c0bd51aa3a908a05ff32-0828614e65debdde1dc7",
+              "file": "3d-lab-production.spec.ts",
+              "line": 409,
+              "column": 7
+            },
+            {
+              "title": "mobile mid-range WebGL pass covers hub and representative module routes",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "THREED_MODE=module-smoke skips mobile WebGL",
+                      "location": {
+                        "file": "/Users/philiplewis/slatecamp/.ai/00_performance/playwright/3d-lab-production.spec.ts",
+                        "line": 431,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-27T12:12:46.271Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "THREED_MODE=module-smoke skips mobile WebGL",
+                          "location": {
+                            "file": "/Users/philiplewis/slatecamp/.ai/00_performance/playwright/3d-lab-production.spec.ts",
+                            "line": 431,
+                            "column": 10
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c0bd51aa3a908a05ff32-412151ee96cb27f3a73c",
+              "file": "3d-lab-production.spec.ts",
+              "line": 430,
+              "column": 7
+            },
+            {
+              "title": "WebGL unsupported, context-loss, and slow-scene fallbacks are measurable",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "THREED_MODE=module-smoke skips fallback checks",
+                      "location": {
+                        "file": "/Users/philiplewis/slatecamp/.ai/00_performance/playwright/3d-lab-production.spec.ts",
+                        "line": 458,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-27T12:12:46.276Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "THREED_MODE=module-smoke skips fallback checks",
+                          "location": {
+                            "file": "/Users/philiplewis/slatecamp/.ai/00_performance/playwright/3d-lab-production.spec.ts",
+                            "line": 458,
+                            "column": 10
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c0bd51aa3a908a05ff32-ffe1c3e496a9af83af74",
+              "file": "3d-lab-production.spec.ts",
+              "line": 457,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-04-27T12:08:11.179Z",
+    "duration": 275167.632,
+    "expected": 1,
+    "skipped": 5,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

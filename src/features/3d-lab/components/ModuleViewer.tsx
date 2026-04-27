@@ -15,6 +15,12 @@ import { useTemplateContent } from '@/features/3d-lab/hooks/useTemplateContent'
 import type { ModuleConfig } from '@/types/3d-lab'
 import { getModuleById } from '@/features/3d-lab/config/registry'
 import { importModuleConfig } from '@/features/3d-lab/config/module-paths'
+import {
+  hasSeen3DLabModule,
+  record3DLabOnboardingEvent,
+  resolve3DLabOnboardingOverlayForModule,
+  type ThreeDLabOnboardingOverlay,
+} from '@/features/3d-lab/components/onboarding/state'
 import { CircleNotch } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 
@@ -42,8 +48,8 @@ export const ModuleViewer = ({ modelId, basePath }: ModuleViewerProps) => {
   // checks this ref and discards the result rather than clobbering new state.
   const activeModuleIdRef = useRef<string | null>(null)
 
-  const [showOnboarding, setShowOnboarding] = useState(false)
-  const [showContextCard, setShowContextCard] = useState(false)
+  const [activeOnboardingOverlay, setActiveOnboardingOverlay] =
+    useState<ThreeDLabOnboardingOverlay>('none')
 
   // Telemetry
   useLabTelemetry({ moduleSlug: modelId })
@@ -54,6 +60,7 @@ export const ModuleViewer = ({ modelId, basePath }: ModuleViewerProps) => {
     activeModuleIdRef.current = modelId
     setLoading(true)
     setError(null)
+    setActiveOnboardingOverlay('none')
 
     resetSession()
 
@@ -67,14 +74,13 @@ export const ModuleViewer = ({ modelId, basePath }: ModuleViewerProps) => {
         setConfig(cfg)
         setLoading(false)
 
-        // Show onboarding/context card after load
-        if (typeof window !== 'undefined') {
-          if (!localStorage.getItem('3dlab_onboarded')) {
-            setShowOnboarding(true)
-          } else if (!localStorage.getItem(`module_${modelId}_seen`)) {
-            setShowContextCard(true)
-          }
-        }
+        const overlay = resolve3DLabOnboardingOverlayForModule(modelId)
+        setActiveOnboardingOverlay(overlay)
+        record3DLabOnboardingEvent({
+          event: 'overlay-resolved',
+          moduleId: modelId,
+          overlay,
+        })
       })
       .catch((err: unknown) => {
         if (cancelled || activeModuleIdRef.current !== modelId) return
@@ -92,15 +98,23 @@ export const ModuleViewer = ({ modelId, basePath }: ModuleViewerProps) => {
   const handleBack = useCallback(() => router.push(basePath), [router, basePath])
 
   const handleOnboardingComplete = useCallback(() => {
-    setShowOnboarding(false)
-    if (typeof window !== 'undefined' && !localStorage.getItem(`module_${modelId}_seen`)) {
-      setShowContextCard(true)
-    }
+    const nextOverlay = hasSeen3DLabModule(modelId) ? 'none' : 'module'
+    setActiveOnboardingOverlay(nextOverlay)
+    record3DLabOnboardingEvent({
+      event: 'overlay-resolved',
+      moduleId: modelId,
+      overlay: nextOverlay,
+    })
   }, [modelId])
 
   const handleContextDismiss = useCallback(() => {
-    setShowContextCard(false)
-  }, [])
+    setActiveOnboardingOverlay('none')
+    record3DLabOnboardingEvent({
+      event: 'overlay-resolved',
+      moduleId: modelId,
+      overlay: 'none',
+    })
+  }, [modelId])
 
   // Build metadata for the shell
   const title = config?.title ?? entry?.title ?? modelId.replace(/-/g, ' ')
@@ -137,6 +151,23 @@ export const ModuleViewer = ({ modelId, basePath }: ModuleViewerProps) => {
   const templateContent = useTemplateContent(modelId, config)
 
   const isBespoke = modelId === 'site-development-controls'
+  const showOnboarding = activeOnboardingOverlay === 'global'
+  const showContextCard = activeOnboardingOverlay === 'module'
+
+  const onboardingOverlays = (
+    <>
+      {showContextCard && (
+        <div className="z-30 pointer-events-auto">
+          <ModuleContextCard config={moduleMetadata} onDismiss={handleContextDismiss} />
+        </div>
+      )}
+      {showOnboarding && (
+        <div className="z-50 pointer-events-auto">
+          <OnboardingFlow onComplete={handleOnboardingComplete} />
+        </div>
+      )}
+    </>
+  )
 
   if (loading) {
     return (
@@ -172,6 +203,7 @@ export const ModuleViewer = ({ modelId, basePath }: ModuleViewerProps) => {
         onBack={handleBack}
         shellConfig={templateContent.shellConfig}
         capabilities={templateContent.capabilities}
+        suppressFirstTimeTooltip={activeOnboardingOverlay !== 'none'}
         content={{
           ...templateContent.content,
           canvasContent: (
@@ -181,16 +213,7 @@ export const ModuleViewer = ({ modelId, basePath }: ModuleViewerProps) => {
           ),
         }}
       >
-        {showContextCard && !showOnboarding && (
-          <div className="z-30 pointer-events-auto">
-            <ModuleContextCard config={moduleMetadata} onDismiss={handleContextDismiss} />
-          </div>
-        )}
-        {showOnboarding && (
-          <div className="z-50 pointer-events-auto">
-            <OnboardingFlow onComplete={handleOnboardingComplete} />
-          </div>
-        )}
+        {onboardingOverlays}
       </ViewportShell>
     )
   }
@@ -206,6 +229,7 @@ export const ModuleViewer = ({ modelId, basePath }: ModuleViewerProps) => {
         onBack={handleBack}
         shellConfig={{}}
         capabilities={{ resetCamera: true }}
+        suppressFirstTimeTooltip={activeOnboardingOverlay !== 'none'}
         content={{
           canvasContent: (
             <LabViewport
@@ -219,16 +243,7 @@ export const ModuleViewer = ({ modelId, basePath }: ModuleViewerProps) => {
           ),
         }}
       >
-        {showContextCard && !showOnboarding && (
-          <div className="z-30 pointer-events-auto">
-            <ModuleContextCard config={moduleMetadata} onDismiss={handleContextDismiss} />
-          </div>
-        )}
-        {showOnboarding && (
-          <div className="z-50 pointer-events-auto">
-            <OnboardingFlow onComplete={handleOnboardingComplete} />
-          </div>
-        )}
+        {onboardingOverlays}
       </ViewportShell>
     )
   }
@@ -243,6 +258,7 @@ export const ModuleViewer = ({ modelId, basePath }: ModuleViewerProps) => {
       onBack={handleBack}
       shellConfig={{}}
       capabilities={{ resetCamera: true }}
+      suppressFirstTimeTooltip={activeOnboardingOverlay !== 'none'}
       content={{
         canvasContent: (
           <LabViewportFrame>
@@ -258,16 +274,7 @@ export const ModuleViewer = ({ modelId, basePath }: ModuleViewerProps) => {
         ),
       }}
     >
-      {showContextCard && !showOnboarding && (
-        <div className="z-30 pointer-events-auto">
-          <ModuleContextCard config={moduleMetadata} onDismiss={handleContextDismiss} />
-        </div>
-      )}
-      {showOnboarding && (
-        <div className="z-50 pointer-events-auto">
-          <OnboardingFlow onComplete={handleOnboardingComplete} />
-        </div>
-      )}
+      {onboardingOverlays}
     </ViewportShell>
   )
 }

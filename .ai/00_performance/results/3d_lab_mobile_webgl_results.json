@@ -1,0 +1,566 @@
+{
+  "timestamp": "2026-04-27T12:07:57.548Z",
+  "mode": "mobile-webgl",
+  "baseURL": "http://localhost:3217",
+  "env": {
+    "PLAYWRIGHT_DEMO_AUTH": "enabled",
+    "PLAYWRIGHT_USE_BUILT_APP": "enabled",
+    "PLAYWRIGHT_TEST_EMAIL": "missing",
+    "PLAYWRIGHT_TEST_PASSWORD": "missing",
+    "PLAYWRIGHT_ADMIN_EMAIL": "missing",
+    "PLAYWRIGHT_ADMIN_PASSWORD": "missing"
+  },
+  "failOnCritical": false,
+  "moduleCount": 209,
+  "measurements": [
+    {
+      "kind": "mobile-webgl",
+      "path": "/dashboard/3d-lab",
+      "startedAt": "2026-04-27T12:07:51.895Z",
+      "endedAt": "2026-04-27T12:07:53.090Z",
+      "durationMs": 1195.49,
+      "responseStatus": 200,
+      "ok": true,
+      "navigationError": null,
+      "consoleMessages": [],
+      "pageErrors": [],
+      "criticalConsoleMessages": [],
+      "criticalErrors": [],
+      "browserMetrics": {
+        "finalUrl": "http://localhost:3217/dashboard/3d-lab",
+        "title": "3D Lab | SlateCamp",
+        "bodyTextSample": "3D Interactive Lab\n\n4 INTERACTIVE MODULES AVAILABLE\n\nPARAMETRIC\nAVAILABLE\nSite Development Controls\n\nInteractive 3D lot model for PD 1096 Rules VII & VIII. Visualizes TLA, AMBF, PSO, ISA, USA, TOSL, and MACA as parametric zones. Manipulate lot dimensions and zoning class to see how development controls constrain the building footprint and open-space obligations in real time.\n\n \n\nPARAMETRIC\nAVAILABLE\nStairway Configurator\n\nMulti-law 3D stair compliance explorer — PD 1096, BP 220, BP 344, and RA 9514 evaluated in parallel with conflict detection.\n\n \n\nCALCULATOR\nAVAILABLE\nFlooring / Tile Visualizer\n\nEstimate tiles with 3D pattern preview and waste calculation\n\n \n\nPARAMETRIC\nAVAILABLE\nUnified Wall Configurator\n\nArchitectural wall cross-section showing layered material build-up for all 7 Philippine construction wall types. Visualize core, plaster, skim coat, primer, and paint layers in correct sequence with code-compliance feedback.\n\n \n\nINSTITUTIONAL",
+        "navigation": {
+          "durationMs": 116.6,
+          "ttfbMs": 46.5,
+          "domContentLoadedMs": 75.6,
+          "loadEventMs": 116.6
+        },
+        "paints": {
+          "first-paint": 92,
+          "first-contentful-paint": 92
+        },
+        "resourceCount": 51,
+        "transferBytes": 710225,
+        "slowestResources": [
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0_smmzknl9ine.js",
+            "initiatorType": "script",
+            "durationMs": 39.9,
+            "transferSize": 54478
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0vxs-0q51i3q4.js",
+            "initiatorType": "script",
+            "durationMs": 39.3,
+            "transferSize": 53340
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/08c0af_vu5ifc.js",
+            "initiatorType": "script",
+            "durationMs": 38.5,
+            "transferSize": 17535
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0ghh68budv2xd.js",
+            "initiatorType": "script",
+            "durationMs": 38.5,
+            "transferSize": 1305
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/07~h62rbh_qn_.js",
+            "initiatorType": "script",
+            "durationMs": 37.3,
+            "transferSize": 15001
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0h9smxz0o9zlx.js",
+            "initiatorType": "script",
+            "durationMs": 36.7,
+            "transferSize": 1290
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0b-piy5eootl1.js",
+            "initiatorType": "script",
+            "durationMs": 34.5,
+            "transferSize": 44465
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0gmrmo.8_5ooj.js",
+            "initiatorType": "script",
+            "durationMs": 32.5,
+            "transferSize": 5241
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0t_60e8zs53nm.js",
+            "initiatorType": "script",
+            "durationMs": 31.2,
+            "transferSize": 13076
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0.uiytixdyok3.js",
+            "initiatorType": "script",
+            "durationMs": 30.3,
+            "transferSize": 557
+          }
+        ],
+        "heap": {},
+        "supportsWebGL": true,
+        "canvasCount": 0,
+        "webglUnavailableVisible": 0,
+        "webglRecoveryVisible": 0,
+        "slowSceneNoticeVisible": 0,
+        "onboarding": {
+          "globalDialog": 0,
+          "globalOverlay": 0,
+          "moduleContext": 0,
+          "viewportTooltip": 0,
+          "devControlsTour": 0,
+          "activeTutorialSurfaces": 0,
+          "telemetry": null
+        },
+        "contentSignals": {
+          "loginRedirect": false,
+          "threeLabHub": true,
+          "moduleView": true,
+          "unsupportedWebGL": false
+        }
+      },
+      "notes": []
+    },
+    {
+      "kind": "mobile-webgl",
+      "path": "/dashboard/3d-lab/accessible-bathing",
+      "moduleId": "accessible-bathing",
+      "startedAt": "2026-04-27T12:07:53.090Z",
+      "endedAt": "2026-04-27T12:07:54.427Z",
+      "durationMs": 1337.04,
+      "responseStatus": 200,
+      "ok": true,
+      "navigationError": null,
+      "consoleMessages": [
+        {
+          "type": "warning",
+          "text": "[.WebGL-0x104001cf000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+          "location": "http://localhost:3217/dashboard/3d-lab:0:0"
+        },
+        {
+          "type": "warning",
+          "text": "[.WebGL-0x104001cf600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+          "location": "http://localhost:3217/dashboard/3d-lab/accessible-bathing:0:0"
+        },
+        {
+          "type": "warning",
+          "text": "[.WebGL-0x104001c1e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)",
+          "location": "http://localhost:3217/dashboard/3d-lab/accessible-bathing:0:0"
+        },
+        {
+          "type": "warning",
+          "text": "THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.",
+          "location": "http://localhost:3217/_next/static/chunks/17vc1bv91yc08.js:0:4791"
+        },
+        {
+          "type": "warning",
+          "text": "THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.",
+          "location": "http://localhost:3217/_next/static/chunks/17vc1bv91yc08.js:0:4791"
+        },
+        {
+          "type": "warning",
+          "text": "THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.",
+          "location": "http://localhost:3217/_next/static/chunks/17vc1bv91yc08.js:0:4791"
+        }
+      ],
+      "pageErrors": [],
+      "criticalConsoleMessages": [],
+      "criticalErrors": [],
+      "browserMetrics": {
+        "finalUrl": "http://localhost:3217/dashboard/3d-lab/accessible-bathing",
+        "title": "3D Lab Module | SlateCamp",
+        "bodyTextSample": "BACK TO BROWSER\nAccessible Bathing\nShower Floor (Level Entry)\nNon-Slip Tile, Sloped to Drain\nBP 344 §707.1\nShower Walls (Waterproof)\nCeramic Tile on Waterproof Board\nFold-Down Shower Seat\nTeak / ABS Plastic Seat\nBP 344 §707.2 — seat 420-480mm AFF\nGrab Bar (Vertical) at Entry\nStainless Steel 38mm\nBP 344 §707.3\nHorizontal Grab Bar (Rear)\nStainless Steel 38mm\nBP 344 §707.3 — 800-850mm AFF\nHandheld Showerhead\nHandheld Shower on Slide Bar\nBP 344 §707.4\nFloor Drain (Centre)\nLinear Drain 100mm\nOrbit\nPan\nTop\nFront\nLeft\nRight\nRear\nNE\nNW\nSE\nSW\nPersp\nIso\nIn\nOut\nFit\nReset\nCUT\n2.4m\nLAYERS\n▼\nLAYERS\n7/7\nShower Floor (Level Entry)\nNon-Slip Tile, Sloped to Drain\nShower Walls (Waterproof)\nCeramic Tile on Waterproof Board\nFold-Down Shower Seat\nTeak / ABS Plastic Seat\nGrab Bar (Vertical) at Entry\nStainless Steel 38mm\nHorizontal Grab Bar (Rear)\nStainless Steel 38mm\nHandheld Showerhead\nHandheld Shower on Slide Bar\nFloor Drain (Centre)\nLinear Drain 100mm\nINSTITUTIONAL",
+        "navigation": {
+          "durationMs": 161.5,
+          "ttfbMs": 72,
+          "domContentLoadedMs": 93,
+          "loadEventMs": 161.5
+        },
+        "paints": {
+          "first-paint": 100,
+          "first-contentful-paint": 100
+        },
+        "resourceCount": 54,
+        "transferBytes": 372708,
+        "slowestResources": [
+          {
+            "name": "http://localhost:3217/_next/static/chunks/17vc1bv91yc08.js",
+            "initiatorType": "script",
+            "durationMs": 38.1,
+            "transferSize": 228766
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0g5iq_v7_r7lm.js",
+            "initiatorType": "script",
+            "durationMs": 11.2,
+            "transferSize": 21002
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/04jivwh510xcp.js",
+            "initiatorType": "script",
+            "durationMs": 10.6,
+            "transferSize": 18585
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0w2n28gu90g_s.js",
+            "initiatorType": "script",
+            "durationMs": 10.1,
+            "transferSize": 23973
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/09_j5ip0enefy.js",
+            "initiatorType": "script",
+            "durationMs": 9.9,
+            "transferSize": 10998
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0c6gyypdoeyyg.js",
+            "initiatorType": "script",
+            "durationMs": 7.4,
+            "transferSize": 15813
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0i9xz83ohk.40.js",
+            "initiatorType": "script",
+            "durationMs": 6.4,
+            "transferSize": 6217
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0tjk.ooomo6ym.js",
+            "initiatorType": "script",
+            "durationMs": 6.2,
+            "transferSize": 11515
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/10s4t53ss7fc7.js",
+            "initiatorType": "script",
+            "durationMs": 5.9,
+            "transferSize": 12338
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0xwtxbgje.~vm.js",
+            "initiatorType": "script",
+            "durationMs": 3.9,
+            "transferSize": 10132
+          }
+        ],
+        "heap": {},
+        "supportsWebGL": true,
+        "canvasCount": 2,
+        "webglUnavailableVisible": 0,
+        "webglRecoveryVisible": 0,
+        "slowSceneNoticeVisible": 0,
+        "onboarding": {
+          "globalDialog": 0,
+          "globalOverlay": 0,
+          "moduleContext": 0,
+          "viewportTooltip": 0,
+          "devControlsTour": 0,
+          "activeTutorialSurfaces": 0,
+          "telemetry": {
+            "activeOverlay": "none",
+            "events": [
+              {
+                "event": "overlay-resolved",
+                "moduleId": "accessible-bathing",
+                "overlay": "none",
+                "timestamp": "2026-04-27T12:07:53.259Z"
+              }
+            ],
+            "activeModuleId": "accessible-bathing"
+          }
+        },
+        "contentSignals": {
+          "loginRedirect": false,
+          "threeLabHub": false,
+          "moduleView": false,
+          "unsupportedWebGL": false
+        }
+      },
+      "notes": []
+    },
+    {
+      "kind": "mobile-webgl",
+      "path": "/dashboard/3d-lab/accessible-corridor-widths",
+      "moduleId": "accessible-corridor-widths",
+      "startedAt": "2026-04-27T12:07:54.427Z",
+      "endedAt": "2026-04-27T12:07:55.893Z",
+      "durationMs": 1465.3,
+      "responseStatus": 200,
+      "ok": true,
+      "navigationError": null,
+      "consoleMessages": [
+        {
+          "type": "warning",
+          "text": "THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.",
+          "location": "http://localhost:3217/_next/static/chunks/17vc1bv91yc08.js:0:4791"
+        },
+        {
+          "type": "warning",
+          "text": "THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.",
+          "location": "http://localhost:3217/_next/static/chunks/17vc1bv91yc08.js:0:4791"
+        }
+      ],
+      "pageErrors": [],
+      "criticalConsoleMessages": [],
+      "criticalErrors": [],
+      "browserMetrics": {
+        "finalUrl": "http://localhost:3217/dashboard/3d-lab/accessible-corridor-widths",
+        "title": "3D Lab Module | SlateCamp",
+        "bodyTextSample": "BACK TO BROWSER\nAccessible Corridor Widths\nOrbit\nPan\nTop\nFront\nLeft\nRight\nRear\nNE\nNW\nSE\nSW\nPersp\nIso\nIn\nOut\nFit\nReset\nCOMPLIANCE\nCONTROLS\n▼\nCOMPLIANCE REPORT\nALL PASS\nVisual design aid only. Final authority rests with your LGU Building Official and the Bureau of Fire Protection.\nINSTITUTIONAL",
+        "navigation": {
+          "durationMs": 33.5,
+          "ttfbMs": 8.9,
+          "domContentLoadedMs": 32.4,
+          "loadEventMs": 33.5
+        },
+        "paints": {
+          "first-paint": 36,
+          "first-contentful-paint": 36
+        },
+        "resourceCount": 54,
+        "transferBytes": 15762,
+        "slowestResources": [
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0.t4e69r~ptbr.js",
+            "initiatorType": "script",
+            "durationMs": 2.8,
+            "transferSize": 14003
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/13nu9.9_~uid0.js",
+            "initiatorType": "script",
+            "durationMs": 1.5,
+            "transferSize": 1759
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/0c795a286deabae8-s.p.14tvuu96~wkr0.woff2",
+            "initiatorType": "link",
+            "durationMs": 0,
+            "transferSize": 0
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/36363bfb06833f56-s.p.0-pny06~-x26a.woff2",
+            "initiatorType": "link",
+            "durationMs": 0,
+            "transferSize": 0
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/6bd983bd58a87a3d-s.p.0h108oidc_0fm.woff2",
+            "initiatorType": "link",
+            "durationMs": 0,
+            "transferSize": 0
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/89ea96820aa96980-s.p.05i4trv5wh9ym.woff2",
+            "initiatorType": "link",
+            "durationMs": 0,
+            "transferSize": 0
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/a73419dd2ba2d841-s.p.0x-0vqtj_fzf1.woff2",
+            "initiatorType": "link",
+            "durationMs": 0,
+            "transferSize": 0
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/bd61c44353c129b5-s.p.1558nfkaan-be.woff2",
+            "initiatorType": "link",
+            "durationMs": 0,
+            "transferSize": 0
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/bdef460321aa07a0-s.p.0ir8mx04_4scw.woff2",
+            "initiatorType": "link",
+            "durationMs": 0,
+            "transferSize": 0
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/ed5f1f9bced69653-s.p.0t~r0znp74~xb.woff2",
+            "initiatorType": "link",
+            "durationMs": 0,
+            "transferSize": 0
+          }
+        ],
+        "heap": {},
+        "supportsWebGL": true,
+        "canvasCount": 2,
+        "webglUnavailableVisible": 0,
+        "webglRecoveryVisible": 0,
+        "slowSceneNoticeVisible": 0,
+        "onboarding": {
+          "globalDialog": 0,
+          "globalOverlay": 0,
+          "moduleContext": 0,
+          "viewportTooltip": 0,
+          "devControlsTour": 0,
+          "activeTutorialSurfaces": 0,
+          "telemetry": {
+            "activeOverlay": "none",
+            "events": [
+              {
+                "event": "overlay-resolved",
+                "moduleId": "accessible-corridor-widths",
+                "overlay": "none",
+                "timestamp": "2026-04-27T12:07:54.477Z"
+              }
+            ],
+            "activeModuleId": "accessible-corridor-widths"
+          }
+        },
+        "contentSignals": {
+          "loginRedirect": false,
+          "threeLabHub": false,
+          "moduleView": false,
+          "unsupportedWebGL": false
+        }
+      },
+      "notes": []
+    },
+    {
+      "kind": "mobile-webgl",
+      "path": "/dashboard/3d-lab/accessible-counter-heights",
+      "moduleId": "accessible-counter-heights",
+      "startedAt": "2026-04-27T12:07:55.893Z",
+      "endedAt": "2026-04-27T12:07:57.410Z",
+      "durationMs": 1517.61,
+      "responseStatus": 200,
+      "ok": true,
+      "navigationError": null,
+      "consoleMessages": [
+        {
+          "type": "warning",
+          "text": "THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.",
+          "location": "http://localhost:3217/_next/static/chunks/17vc1bv91yc08.js:0:4791"
+        },
+        {
+          "type": "warning",
+          "text": "THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.",
+          "location": "http://localhost:3217/_next/static/chunks/17vc1bv91yc08.js:0:4791"
+        }
+      ],
+      "pageErrors": [],
+      "criticalConsoleMessages": [],
+      "criticalErrors": [],
+      "browserMetrics": {
+        "finalUrl": "http://localhost:3217/dashboard/3d-lab/accessible-counter-heights",
+        "title": "3D Lab Module | SlateCamp",
+        "bodyTextSample": "BACK TO BROWSER\nAccessible Counter Heights\nOrbit\nPan\nTop\nFront\nLeft\nRight\nRear\nNE\nNW\nSE\nSW\nPersp\nIso\nIn\nOut\nFit\nReset\nCOMPLIANCE\nCONTROLS\n▼\nCOMPLIANCE REPORT\nALL PASS\nVisual design aid only. Final authority rests with your LGU Building Official and the Bureau of Fire Protection.\nINSTITUTIONAL",
+        "navigation": {
+          "durationMs": 31.3,
+          "ttfbMs": 9.9,
+          "domContentLoadedMs": 29.8,
+          "loadEventMs": 31.3
+        },
+        "paints": {
+          "first-paint": 36,
+          "first-contentful-paint": 36
+        },
+        "resourceCount": 54,
+        "transferBytes": 1883,
+        "slowestResources": [
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0j25dv6~4311f.js",
+            "initiatorType": "script",
+            "durationMs": 2.9,
+            "transferSize": 1883
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/0c795a286deabae8-s.p.14tvuu96~wkr0.woff2",
+            "initiatorType": "link",
+            "durationMs": 0,
+            "transferSize": 0
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/36363bfb06833f56-s.p.0-pny06~-x26a.woff2",
+            "initiatorType": "link",
+            "durationMs": 0,
+            "transferSize": 0
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/6bd983bd58a87a3d-s.p.0h108oidc_0fm.woff2",
+            "initiatorType": "link",
+            "durationMs": 0,
+            "transferSize": 0
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/89ea96820aa96980-s.p.05i4trv5wh9ym.woff2",
+            "initiatorType": "link",
+            "durationMs": 0,
+            "transferSize": 0
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/a73419dd2ba2d841-s.p.0x-0vqtj_fzf1.woff2",
+            "initiatorType": "link",
+            "durationMs": 0,
+            "transferSize": 0
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/bd61c44353c129b5-s.p.1558nfkaan-be.woff2",
+            "initiatorType": "link",
+            "durationMs": 0,
+            "transferSize": 0
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/bdef460321aa07a0-s.p.0ir8mx04_4scw.woff2",
+            "initiatorType": "link",
+            "durationMs": 0,
+            "transferSize": 0
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/ed5f1f9bced69653-s.p.0t~r0znp74~xb.woff2",
+            "initiatorType": "link",
+            "durationMs": 0,
+            "transferSize": 0
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/f9fc8f485db6b190-s.p.0j4jdtf1aoyri.woff2",
+            "initiatorType": "link",
+            "durationMs": 0,
+            "transferSize": 0
+          }
+        ],
+        "heap": {},
+        "supportsWebGL": true,
+        "canvasCount": 2,
+        "webglUnavailableVisible": 0,
+        "webglRecoveryVisible": 0,
+        "slowSceneNoticeVisible": 0,
+        "onboarding": {
+          "globalDialog": 0,
+          "globalOverlay": 0,
+          "moduleContext": 0,
+          "viewportTooltip": 0,
+          "devControlsTour": 0,
+          "activeTutorialSurfaces": 0,
+          "telemetry": {
+            "activeOverlay": "none",
+            "events": [
+              {
+                "event": "overlay-resolved",
+                "moduleId": "accessible-counter-heights",
+                "overlay": "none",
+                "timestamp": "2026-04-27T12:07:55.942Z"
+              }
+            ],
+            "activeModuleId": "accessible-counter-heights"
+          }
+        },
+        "contentSignals": {
+          "loginRedirect": false,
+          "threeLabHub": false,
+          "moduleView": false,
+          "unsupportedWebGL": false
+        }
+      },
+      "notes": []
+    }
+  ]
+}

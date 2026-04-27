@@ -63,6 +63,9 @@ interface ViewportShellProps {
 
   /** Additional children (onboarding overlay, context card, etc.) */
   children?: ReactNode
+
+  /** Suppress first-run viewport tooltip while a higher-priority tutorial owns focus */
+  suppressFirstTimeTooltip?: boolean
 }
 
 /**
@@ -85,6 +88,7 @@ export const ViewportShell = ({
   capabilities: _capabilities,
   content,
   children,
+  suppressFirstTimeTooltip = false,
 }: ViewportShellProps) => {
   useViewportShortcuts()
 
@@ -232,7 +236,7 @@ export const ViewportShell = ({
           <ViewportToast />
 
           {/* First-time onboarding tooltip — auto-dismisses after 8s, stored in localStorage */}
-          <FirstTimeTooltip />
+          <FirstTimeTooltip disabled={suppressFirstTimeTooltip} />
 
           {/* DEPRECATED: Old ViewportToolbar replaced by SceneToolbar (top-left) + CameraNavigationBar (bottom-center) in Phase 0A.
               Template-specific extras (explode slider, cut depth) need migration to SceneToolbar popover — tracked as Phase 3 follow-up.

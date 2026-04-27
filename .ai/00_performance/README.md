@@ -12,6 +12,7 @@ This folder is the centralized performance ledger for SlateCamp. It contains rep
 - Supabase usage inventory and database risk scan.
 - Build/typecheck timing and largest Next build artifacts.
 - Static component/function hotspot patterns.
+- 3D Lab production-hardening loop: three built-auth route passes, full module smoke matrix, mobile-emulated WebGL pass, onboarding overlay coordination, and warning-gate CI harness.
 
 ## How to rerun
 ~~~bash
@@ -23,6 +24,16 @@ bun run perf:supabase
 bun run perf:build
 bun run perf:hotspots
 bun run perf:summary
+
+# 3D Lab production-hardening lanes
+bun run perf:3d:built-auth-repeat
+bun run perf:3d:auth-timing
+bun run perf:3d:onboarding
+bun run perf:3d:smoke
+bun run perf:3d:mobile
+bun run perf:3d:fallbacks
+bun run perf:3d:gates
+
 # or the whole local suite
 bun run perf:all
 ~~~
@@ -62,6 +73,7 @@ Comparison/history helpers:
 - Supabase query tightening: select-star candidates 19 -> 9; see `21_supabase_query_tightening.md`.
 - 3D Lab direct-import split: hub raw client-reference signal bytes 3419.7 KiB -> 2120.8 KiB; see `22_3d_lab_bundle_remediation.md`.
 - Latest exact `bun run perf:frontend`: passed all 15 Playwright perf tests; memory-threshold restart warning still observed; see `results/full_frontend_verification_after_metadata.json`.
+- 3D Lab production hardening: 3/3 built-auth passes stable (cold p95 spread 4.16%, warm p95 spread 2.48%), 209/209 module smoke routes green, Pixel 7 emulation pass green, onboarding overlay + fallback gates green, and `perf:3d:gates` reports 0 warnings/failures in warning mode; see reports 37–40.
 
 ## Top bottlenecks
 1. 3D Lab dev-server runtime/memory remains warning-only after full-suite recovery
@@ -82,7 +94,7 @@ Comparison/history helpers:
 - Live Supabase latency/EXPLAIN: No safe read-only DB/test credentialed execution path was used.
 - Real Supabase Auth provider latency: Demo auth can measure authenticated screens without secrets, but it does not measure real Supabase Auth provider latency or credential-submit timing.
 - OMX tmux team runtime: Current surface is Codex App/native outside tmux; tmux team panes cannot be launched here.
-- GitNexus detect_changes: Deferred GitNexus MCP tools were unavailable and npx gitnexus failed; see logs/gitnexus-help.log.
+- GitNexus detect_changes: Deferred GitNexus MCP tools were unavailable and npx gitnexus failed; see `logs/loop5-gitnexus-detect-changes.log`.
 
 ## Reports
 - `.ai/00_performance/00_inventory.md`
@@ -122,5 +134,9 @@ Comparison/history helpers:
 - `.ai/00_performance/34_dev_server_memory_profile.md`
 - `.ai/00_performance/35_authenticated_built_app_3d_timing.md`
 - `.ai/00_performance/36_3d_hard_gate_decision.md`
+- `.ai/00_performance/37_3d_lab_production_hardening.md`
+- `.ai/00_performance/38_3d_lab_onboarding_tutorial_system.md`
+- `.ai/00_performance/39_3d_lab_module_smoke_and_mobile.md`
+- `.ai/00_performance/40_3d_lab_ci_gate_status.md`
 - `.ai/00_performance/remediation_run_notes.md`
 - `.ai/00_performance/llm_crosschecks.md`
