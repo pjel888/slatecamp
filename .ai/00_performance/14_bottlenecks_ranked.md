@@ -1,11 +1,11 @@
 # 14 — Ranked Bottlenecks
 
-Generated: 2026-04-27T02:16:56.449Z
+Generated: 2026-04-27T02:40:07.876Z
 
 ## Ranking table
 | Rank | Bottleneck | User impact | Confidence | Ease of fix | Risk of fix |
 | ---: | --- | --- | --- | --- | --- |
-| 1 | 3D Lab dev-server runtime/memory remains a full-suite blocker | Blocks reliable full-suite frontend regression testing and indicates heavy route startup/memory pressure. | high | medium | medium |
+| 1 | 3D Lab dev-server runtime/memory remains warning-only after full-suite recovery | No longer blocks this exact full-suite run, but high dev cold variance and memory warnings still threaten reliable regression gating. | high | medium | medium |
 | 2 | Supabase broad-read and missing-limit candidates remain after first tightening pass | Can inflate payloads, RLS work, network bytes, and waterfall latency. | medium | varies | medium-high |
 | 3 | Admin content/editor surfaces overfetch and render large lists without virtualization | Affects internal content operations and editor responsiveness. | medium | medium-hard | medium |
 | 4 | AI/API routes need mocked latency/error budget benchmarks after timeout wrappers | Can create long tail waits and serverless duration risk. | medium | medium | medium |
@@ -13,16 +13,16 @@ Generated: 2026-04-27T02:16:56.449Z
 | 6 | Bundle-heavy route families need analyzer-backed budgets | Large JS chunks harm cold route load and interaction readiness. | medium | varies | low-medium |
 | 7 | Dashboard sync dedupe needs production-auth monitoring | Dashboard is the primary authenticated landing page; the local fix needs credentialed production-like confirmation. | medium | easy | low-medium |
 
-## 1. 3D Lab dev-server runtime/memory remains a full-suite blocker
+## 1. 3D Lab dev-server runtime/memory remains warning-only after full-suite recovery
 
 - Location: src/app/dashboard/3d-lab/page.tsx; src/features/3d-lab/components/*; src/features/3d-lab/config/registry/*
-- Evidence: Next dev server restarted near memory threshold during /dashboard/3d-lab; Playwright timed out at 180000 ms and the browser context closed.
-- Metric before: Last complete 3D Lab cold p95 1361 ms
-- Why it matters: Blocks reliable full-suite frontend regression testing and indicates heavy route startup/memory pressure.
-- Suspected cause: 3D Lab dev-server runtime/memory remains a full-suite blocker
+- Evidence: Latest full `bun run perf:frontend` completed all Playwright performance tests with exit 0; memory-threshold restart warning still observed.
+- Metric before: Latest 3D Lab cold p95 44219 ms; warm p95 3019 ms
+- Why it matters: No longer blocks this exact full-suite run, but high dev cold variance and memory warnings still threaten reliable regression gating.
+- Suspected cause: 3D Lab dev-server runtime/memory remains warning-only after full-suite recovery
 - Recommended fix: see `15_recommendations.md` and use measurement-backed reversible changes.
 - Expected impact: reduce p95 wait, payload, or operational timeout risk.
-- Verify fix: Run route-isolated built-app measurement plus heap profiling, then compare 3D Lab route chunks and p95.
+- Verify fix: Keep 3D in warning-only full-suite measurement, preserve route-isolated lane, and compare heap/chunk data before hard gating.
 - Timing: fix now or next performance sprint
 
 ## 2. Supabase broad-read and missing-limit candidates remain after first tightening pass
@@ -89,7 +89,7 @@ Generated: 2026-04-27T02:16:56.449Z
 
 - Location: src/components/dashboard/DashboardAnalyticsSync.tsx; src/lib/actions/dashboard-page.ts; src/app/dashboard/page.tsx
 - Evidence: Local comparison after sync-payload split shows cold p95 delta -8197 ms (-32.58%).
-- Metric before: Dashboard cold p95 1369 ms
+- Metric before: Dashboard cold p95 6897 ms
 - Why it matters: Dashboard is the primary authenticated landing page; the local fix needs credentialed production-like confirmation.
 - Suspected cause: Dashboard sync dedupe needs production-auth monitoring
 - Recommended fix: see `15_recommendations.md` and use measurement-backed reversible changes.

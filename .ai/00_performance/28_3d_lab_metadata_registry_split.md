@@ -55,3 +55,8 @@ Revert `cat-01.ts` through `cat-16.ts` to config-importing registry files and re
 - `.ai/00_performance/results/3d_lab_runtime_after_metadata_split.json`
 - `.ai/00_performance/results/3d_lab_runtime_after_metadata_split_dev.json`
 - `.ai/00_performance/results/3d_lab_runtime_after_metadata_split_built.json`
+
+## Loop 3 full-suite verification
+After the metadata registry split, the exact full local dev command `bun run perf:frontend` completed with 15 Playwright tests passing. The 3D hub can therefore rejoin the full frontend suite as a warning-only measured route.
+
+The pass is not a hard-gate approval yet because the same run still observed a Next dev-server memory-threshold restart warning and a noisy `/dashboard/3d-lab` cold p95 outlier. Continue using route-isolated `PERF_ROUTE_FILTER=/dashboard/3d-lab bun run perf:frontend` alongside the full suite until three comparable stable baselines exist.

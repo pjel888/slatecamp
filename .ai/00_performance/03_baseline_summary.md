@@ -1,6 +1,6 @@
 # 03 — Baseline Summary
 
-Generated: 2026-04-27T02:16:56.448Z
+Generated: 2026-04-27T02:40:07.875Z
 
 ## Evidence completeness
 All expected machine-readable result files were present at summary time.
@@ -18,26 +18,26 @@ All expected machine-readable result files were present at summary time.
 - Server-action-like files: 168
 
 ## Frontend baseline
-- Cold route duration p50/p95: 1354 ms / 1434 ms
-- Warm route duration p50/p95: 1320 ms / 1363 ms
-- FCP p50/p95: 48 ms / 83 ms
-- LCP proxy p50/p95: 52 ms / 92 ms
-- Request count p50/p95: 42 / 60
-- Transfer p50/p95: 231.2 KiB / 629.6 KiB
+- Cold route duration p50/p95: 2907 ms / 19796 ms
+- Warm route duration p50/p95: 2042 ms / 4759 ms
+- FCP p50/p95: 216 ms / 8522 ms
+- LCP proxy p50/p95: 496 ms / 8776 ms
+- Request count p50/p95: 26 / 33
+- Transfer p50/p95: 3652.2 KiB / 8510.4 KiB
 
 ### Slowest measured routes by cold p95
 | Route | Cold p50 | Cold p95 | Warm p50 | FCP p50 | LCP p50 | Requests p50 | Transfer p50 | Errors |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| `/` | 1447 ms | 1545 ms | 1378 ms | 82 ms | 82 ms | 60 | 325.4 KiB | 0 |
-| `/pricing` | 1396 ms | 1402 ms | 1343 ms | 58 ms | 58 ms | 61 | 326.8 KiB | 0 |
-| `/contact` | 1381 ms | 1382 ms | 1339 ms | 58 ms | 58 ms | 57 | 301.0 KiB | 0 |
-| `/about` | 1377 ms | 1380 ms | 1331 ms | 48 ms | 48 ms | 57 | 294.9 KiB | 0 |
-| `/dashboard/wiki` | 1349 ms | 1369 ms | 1320 ms | 42 ms | 76 ms | 42 | 265.0 KiB | 0 |
-| `/dashboard` | 1358 ms | 1369 ms | 1321 ms | 42 ms | 68 ms | 42 | 265.0 KiB | 0 |
-| `/auth/reset-password` | 1344 ms | 1363 ms | 1319 ms | 42 ms | 42 ms | 42 | 270.7 KiB | 0 |
-| `/dashboard/3d-lab` | 1355 ms | 1361 ms | 1326 ms | 40 ms | 66 ms | 42 | 265.0 KiB | 0 |
-| `/login` | 1354 ms | 1361 ms | 1316 ms | 42 ms | 62 ms | 42 | 265.0 KiB | 0 |
-| `/dashboard/settings` | 1351 ms | 1358 ms | 1315 ms | 44 ms | 64 ms | 42 | 265.0 KiB | 0 |
+| `/dashboard/analytics` | 4881 ms | 55430 ms | 4550 ms | 1142 ms | 1752 ms | 33 | 6476.1 KiB | 28 |
+| `/dashboard/3d-lab` | 3220 ms | 44219 ms | 2574 ms | 226 ms | 544 ms | 26 | 4859.7 KiB | 3 |
+| `/dashboard/wiki` | 4537 ms | 18602 ms | 3939 ms | 1188 ms | 1532 ms | 28 | 5474.0 KiB | 5 |
+| `/login` | 2735 ms | 11781 ms | 2799 ms | 228 ms | 840 ms | 30 | 2887.1 KiB | 1 |
+| `/pricing` | 1549 ms | 9524 ms | 1565 ms | 116 ms | 116 ms | 25 | 4055.2 KiB | 0 |
+| `/register` | 3494 ms | 8341 ms | 3080 ms | 220 ms | 978 ms | 30 | 6864.3 KiB | 1 |
+| `/dashboard/settings` | 3927 ms | 7531 ms | 2049 ms | 214 ms | 370 ms | 26 | 5698.2 KiB | 0 |
+| `/dashboard` | 3174 ms | 6897 ms | 4705 ms | 426 ms | 1864 ms | 31 | 5295.6 KiB | 7 |
+| `/contact` | 2028 ms | 5124 ms | 1565 ms | 116 ms | 116 ms | 24 | 3487.6 KiB | 0 |
+| `/auth/reset-password` | 2090 ms | 5062 ms | 1545 ms | 88 ms | 88 ms | 20 | 4053.9 KiB | 0 |
 
 ## API/backend baseline
 - Server reachable: yes

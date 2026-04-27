@@ -1,6 +1,6 @@
 # 13 — CI Performance Gates
 
-Generated: 2026-04-27T02:16:56.449Z
+Generated: 2026-04-27T02:40:07.876Z
 
 ## Gate philosophy
 Initial CI gates should be warning-first and based on current baseline plus tolerance. Hard failures should wait for at least 3 comparable CI baseline runs.
@@ -8,10 +8,10 @@ Initial CI gates should be warning-first and based on current baseline plus tole
 ## Proposed budgets
 | Metric | Current baseline | Warning threshold | Failure threshold | Notes |
 | --- | ---: | ---: | ---: | --- |
-| Frontend cold route p95 | 1434 ms | baseline + 20% | baseline + 35% | Use per-route budgets when stable. |
-| Frontend warm route p95 | 1363 ms | baseline + 20% | baseline + 35% | Warm regressions often indicate JS/render bloat. |
-| Route request count p95 | 60 | baseline + 10 requests | baseline + 20 requests | Gate by route family after history exists. |
-| Route transfer p95 | 629.6 KiB | baseline + 15% | baseline + 30% | Prefer built app for CI. |
+| Frontend cold route p95 | 19796 ms | baseline + 20% | baseline + 35% | Use per-route budgets when stable. |
+| Frontend warm route p95 | 4759 ms | baseline + 20% | baseline + 35% | Warm regressions often indicate JS/render bloat. |
+| Route request count p95 | 33 | baseline + 10 requests | baseline + 20 requests | Gate by route family after history exists. |
+| Route transfer p95 | 8510.4 KiB | baseline + 15% | baseline + 30% | Prefer built app for CI. |
 | API GET p95 | 1985 ms | baseline + 20% | baseline + 40% | Static GET endpoints only. |
 | Build time p95 | 42475 ms | baseline + 15% | baseline + 30% | Runner-specific. |
 | Typecheck duration | 4334 ms | baseline + 20% | baseline + 40% | Less noisy than Playwright. |

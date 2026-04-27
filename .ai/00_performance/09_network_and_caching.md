@@ -1,48 +1,48 @@
 # 09 — Network and Caching
 
-Generated: 2026-04-27T02:16:56.448Z
+Generated: 2026-04-27T02:40:07.876Z
 
 ## Network baseline from Playwright resource timing
-- Request count p50/p95: 42 / 60
-- Transfer p50/p95: 231.2 KiB / 629.6 KiB
+- Request count p50/p95: 26 / 33
+- Transfer p50/p95: 3652.2 KiB / 8510.4 KiB
 
 ## Largest measured route transfers
 | Route | Transfer p50 | Requests p50 | Cold p95 |
 | --- | ---: | ---: | ---: |
-| `/pricing` | 326.8 KiB | 61 | 1402 ms |
-| `/` | 325.4 KiB | 60 | 1545 ms |
-| `/contact` | 301.0 KiB | 57 | 1382 ms |
-| `/about` | 294.9 KiB | 57 | 1380 ms |
-| `/auth/reset-password` | 270.7 KiB | 42 | 1363 ms |
-| `/forgot-password` | 270.4 KiB | 42 | 1349 ms |
-| `/register` | 265.5 KiB | 42 | 1357 ms |
-| `/login` | 265.0 KiB | 42 | 1361 ms |
-| `/dashboard` | 265.0 KiB | 42 | 1369 ms |
-| `/dashboard/wiki` | 265.0 KiB | 42 | 1369 ms |
+| `/register` | 6864.3 KiB | 30 | 8341 ms |
+| `/dashboard/analytics` | 6476.1 KiB | 33 | 55430 ms |
+| `/dashboard/settings` | 5698.2 KiB | 26 | 7531 ms |
+| `/dashboard/wiki` | 5474.0 KiB | 28 | 18602 ms |
+| `/dashboard` | 5295.6 KiB | 31 | 6897 ms |
+| `/dashboard/3d-lab` | 4859.7 KiB | 26 | 44219 ms |
+| `/forgot-password` | 4101.9 KiB | 21 | 4751 ms |
+| `/pricing` | 4055.2 KiB | 25 | 9524 ms |
+| `/auth/reset-password` | 4053.9 KiB | 20 | 5062 ms |
+| `/try` | 3685.0 KiB | 21 | 3923 ms |
 
 ## Slowest individual resource timings
 | Route | Type | Duration | Transfer | Resource |
 | --- | --- | ---: | ---: | --- |
-| `/` | fetch | 46 ms | 0.8 KiB | `http://localhost:3217/register?_rsc=1r34m` |
-| `/` | fetch | 46 ms | 0.8 KiB | `http://localhost:3217/login?_rsc=1r34m` |
-| `/` | script | 36 ms | 43.4 KiB | `http://localhost:3217/_next/static/chunks/0b-piy5eootl1.js` |
-| `/register` | script | 35 ms | 53.2 KiB | `http://localhost:3217/_next/static/chunks/0_smmzknl9ine.js` |
-| `/` | script | 33 ms | 6.6 KiB | `http://localhost:3217/_next/static/chunks/0gyz64yr6t~f3.js` |
-| `/` | script | 33 ms | 22.8 KiB | `http://localhost:3217/_next/static/chunks/0zs448320-qgc.js` |
-| `/` | script | 32 ms | 10.7 KiB | `http://localhost:3217/_next/static/chunks/09ns97h9o7ncy.js` |
-| `/login` | script | 32 ms | 53.2 KiB | `http://localhost:3217/_next/static/chunks/0_smmzknl9ine.js` |
-| `/` | script | 32 ms | 5.5 KiB | `http://localhost:3217/_next/static/chunks/12tu~j1xlxcyc.js` |
-| `/dashboard` | script | 31 ms | 53.2 KiB | `http://localhost:3217/_next/static/chunks/0_smmzknl9ine.js` |
-| `/` | script | 31 ms | 4.7 KiB | `http://localhost:3217/_next/static/chunks/0wz0w08kgtzob.js` |
-| `/login` | script | 31 ms | 6.6 KiB | `http://localhost:3217/_next/static/chunks/0gyz64yr6t~f3.js` |
-| `/login` | script | 31 ms | 9.8 KiB | `http://localhost:3217/_next/static/chunks/0id79jb2t3gzf.js` |
-| `/register` | script | 31 ms | 9.8 KiB | `http://localhost:3217/_next/static/chunks/0id79jb2t3gzf.js` |
-| `/login` | script | 31 ms | 3.1 KiB | `http://localhost:3217/_next/static/chunks/0t_z3k4nu4~rs.js` |
-| `/register` | script | 30 ms | 3.1 KiB | `http://localhost:3217/_next/static/chunks/0t_z3k4nu4~rs.js` |
-| `/register` | script | 30 ms | 6.6 KiB | `http://localhost:3217/_next/static/chunks/0gyz64yr6t~f3.js` |
-| `/register` | script | 30 ms | 5.3 KiB | `http://localhost:3217/_next/static/chunks/0mqgzelv7i61s.js` |
-| `/register` | script | 30 ms | 22.8 KiB | `http://localhost:3217/_next/static/chunks/0zs448320-qgc.js` |
-| `/` | script | 29 ms | 11.3 KiB | `http://localhost:3217/_next/static/chunks/07a1a2kxrw2h~.js` |
+| `/dashboard` | script | 5226 ms | 2657.2 KiB | `http://localhost:3217/_next/static/chunks/main-app.js?v=1777257076379` |
+| `/dashboard` | script | 5056 ms | 1303.6 KiB | `http://localhost:3217/_next/static/chunks/app/dashboard/page.js` |
+| `/dashboard/analytics` | script | 4863 ms | 2657.2 KiB | `http://localhost:3217/_next/static/chunks/main-app.js?v=1777257237795` |
+| `/dashboard/analytics` | script | 4769 ms | 2356.8 KiB | `http://localhost:3217/_next/static/chunks/app/dashboard/analytics/page.js` |
+| `/dashboard/analytics` | script | 4532 ms | 1303.6 KiB | `http://localhost:3217/_next/static/chunks/app/dashboard/page.js` |
+| `/dashboard/analytics` | script | 4406 ms | 205.0 KiB | `http://localhost:3217/_next/static/chunks/app/dashboard/error.js` |
+| `/dashboard/analytics` | script | 4360 ms | 128.5 KiB | `http://localhost:3217/_next/static/chunks/app/dashboard/analytics/error.js` |
+| `/dashboard/analytics` | link | 4228 ms | 11.2 KiB | `http://localhost:3217/_next/static/media/bc08e10e1c60a660-s.p.woff2?v=1777257237795` |
+| `/dashboard/analytics` | link | 4160 ms | 8.8 KiB | `http://localhost:3217/_next/static/media/b7ea2ab4a8ad1f81-s.p.woff2?v=1777257237795` |
+| `/dashboard/analytics` | link | 4135 ms | 11.4 KiB | `http://localhost:3217/_next/static/media/9816a0e0ed309b6c-s.p.woff2?v=1777257237795` |
+| `/dashboard/analytics` | link | 4095 ms | 34.0 KiB | `http://localhost:3217/_next/static/media/8a1d8947e5852e30-s.p.woff2?v=1777257237795` |
+| `/dashboard/analytics` | link | 4055 ms | 9.6 KiB | `http://localhost:3217/_next/static/media/76fcc95954fbfc88-s.p.woff2?v=1777257237795` |
+| `/dashboard/analytics` | link | 3997 ms | 9.6 KiB | `http://localhost:3217/_next/static/media/5d259b4d93dec8ad-s.p.woff2?v=1777257237795` |
+| `/dashboard/analytics` | link | 3964 ms | 23.5 KiB | `http://localhost:3217/_next/static/media/56da557e531d1081-s.p.woff2?v=1777257237795` |
+| `/dashboard/analytics` | link | 3935 ms | 24.9 KiB | `http://localhost:3217/_next/static/media/3dc379dc9b5dec12-s.p.woff2?v=1777257237795` |
+| `/dashboard/analytics` | link | 3896 ms | 8.8 KiB | `http://localhost:3217/_next/static/media/0e96d314a90a6138-s.p.woff2?v=1777257237795` |
+| `/dashboard/analytics` | script | 3778 ms | 520.5 KiB | `http://localhost:3217/_next/static/chunks/app/layout.js` |
+| `/dashboard` | script | 3720 ms | 205.0 KiB | `http://localhost:3217/_next/static/chunks/app/dashboard/error.js` |
+| `/dashboard` | script | 3639 ms | 347.1 KiB | `http://localhost:3217/_next/static/chunks/app/layout.js` |
+| `/dashboard` | script | 3624 ms | 163.2 KiB | `http://localhost:3217/_next/static/chunks/app/dashboard/not-found.js` |
 
 ## Caching architecture evidence
 - Next config defines global security headers and image remote patterns.

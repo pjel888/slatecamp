@@ -1,0 +1,190 @@
+{
+  "timestamp": "2026-04-27T02:37:08.393Z",
+  "project": "chromium",
+  "demoAuthEnabled": true,
+  "repeat": 3,
+  "runs": [
+    {
+      "timestamp": "2026-04-27T02:36:19.576Z",
+      "project": "chromium",
+      "name": "open app to first visible UI",
+      "status": "measured",
+      "durationMs": 6562.20883399999,
+      "metrics": {
+        "runIndex": 1,
+        "status": 200,
+        "domContentVisibleMs": 6562.113624999998
+      }
+    },
+    {
+      "timestamp": "2026-04-27T02:36:19.849Z",
+      "project": "chromium",
+      "name": "open app to first visible UI",
+      "status": "measured",
+      "durationMs": 273.0017499999958,
+      "metrics": {
+        "runIndex": 2,
+        "status": 200,
+        "domContentVisibleMs": 272.9701670000213
+      }
+    },
+    {
+      "timestamp": "2026-04-27T02:36:20.145Z",
+      "project": "chromium",
+      "name": "open app to first visible UI",
+      "status": "measured",
+      "durationMs": 295.767375000054,
+      "metrics": {
+        "runIndex": 3,
+        "status": 200,
+        "domContentVisibleMs": 295.7475830000476
+      }
+    },
+    {
+      "timestamp": "2026-04-27T02:36:37.696Z",
+      "project": "chromium",
+      "name": "login entry to authenticated dashboard (demo auth)",
+      "status": "measured",
+      "durationMs": 17551.63812499994,
+      "metrics": {
+        "runIndex": 1,
+        "loginToDashboardMs": 17550.95991699997
+      }
+    },
+    {
+      "timestamp": "2026-04-27T02:36:38.169Z",
+      "project": "chromium",
+      "name": "dashboard primary data visible (demo auth)",
+      "status": "measured",
+      "durationMs": 472.9226669999771,
+      "metrics": {
+        "runIndex": 1,
+        "status": 200,
+        "primaryDataVisibleMs": 472.7695839999942
+      }
+    },
+    {
+      "timestamp": "2026-04-27T02:37:03.502Z",
+      "project": "chromium",
+      "name": "wiki search/filter proxy (demo auth)",
+      "status": "failed",
+      "durationMs": 25334.489834000007,
+      "metrics": {},
+      "error": "No textbox/search input found on /dashboard/wiki"
+    },
+    {
+      "timestamp": "2026-04-27T02:37:05.690Z",
+      "project": "chromium",
+      "name": "login entry to authenticated dashboard (demo auth)",
+      "status": "measured",
+      "durationMs": 2186.694375000079,
+      "metrics": {
+        "runIndex": 2,
+        "loginToDashboardMs": 2186.6747090000426
+      }
+    },
+    {
+      "timestamp": "2026-04-27T02:37:06.215Z",
+      "project": "chromium",
+      "name": "dashboard primary data visible (demo auth)",
+      "status": "measured",
+      "durationMs": 524.702042000019,
+      "metrics": {
+        "runIndex": 2,
+        "status": 200,
+        "primaryDataVisibleMs": 524.687666999991
+      }
+    },
+    {
+      "timestamp": "2026-04-27T02:37:06.513Z",
+      "project": "chromium",
+      "name": "wiki search/filter proxy (demo auth)",
+      "status": "failed",
+      "durationMs": 297.99675000004936,
+      "metrics": {},
+      "error": "No textbox/search input found on /dashboard/wiki"
+    },
+    {
+      "timestamp": "2026-04-27T02:37:07.776Z",
+      "project": "chromium",
+      "name": "login entry to authenticated dashboard (demo auth)",
+      "status": "measured",
+      "durationMs": 1262.5815840000287,
+      "metrics": {
+        "runIndex": 3,
+        "loginToDashboardMs": 1262.5661249998957
+      }
+    },
+    {
+      "timestamp": "2026-04-27T02:37:08.118Z",
+      "project": "chromium",
+      "name": "dashboard primary data visible (demo auth)",
+      "status": "measured",
+      "durationMs": 341.8478330000071,
+      "metrics": {
+        "runIndex": 3,
+        "status": 200,
+        "primaryDataVisibleMs": 341.825916999951
+      }
+    },
+    {
+      "timestamp": "2026-04-27T02:37:08.364Z",
+      "project": "chromium",
+      "name": "wiki search/filter proxy (demo auth)",
+      "status": "failed",
+      "durationMs": 246.3140419999836,
+      "metrics": {},
+      "error": "No textbox/search input found on /dashboard/wiki"
+    }
+  ],
+  "summaries": {
+    "open app to first visible UI": {
+      "count": 3,
+      "min": 273.0017499999958,
+      "max": 6562.20883399999,
+      "mean": 2376.9926530000134,
+      "median": 295.767375000054,
+      "p50": 295.767375000054,
+      "p75": 3428.988104500022,
+      "p95": 5935.564688099996,
+      "p99": 6436.880004819991,
+      "stddev": 2959.409336303269
+    },
+    "login entry to authenticated dashboard (demo auth)": {
+      "count": 3,
+      "min": 1262.5815840000287,
+      "max": 17551.63812499994,
+      "mean": 7000.304694666683,
+      "median": 2186.694375000079,
+      "p50": 2186.694375000079,
+      "p75": 9869.16625000001,
+      "p95": 16015.143749999952,
+      "p99": 17244.339249999943,
+      "stddev": 7470.451748106161
+    },
+    "dashboard primary data visible (demo auth)": {
+      "count": 3,
+      "min": 341.8478330000071,
+      "max": 524.702042000019,
+      "mean": 446.4908473333344,
+      "median": 472.9226669999771,
+      "p50": 472.9226669999771,
+      "p75": 498.81235449999804,
+      "p95": 519.5241045000148,
+      "p99": 523.6664545000182,
+      "stddev": 76.95408265289308
+    },
+    "wiki search/filter proxy (demo auth)": {
+      "count": 3,
+      "min": 246.3140419999836,
+      "max": 25334.489834000007,
+      "mean": 8626.266875333347,
+      "median": 297.99675000004936,
+      "p50": 297.99675000004936,
+      "p75": 12816.243292000028,
+      "p95": 22830.840525600008,
+      "p99": 24833.759972320007,
+      "stddev": 11814.516596203823
+    }
+  }
+}

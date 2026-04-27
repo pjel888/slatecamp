@@ -1,6 +1,6 @@
 # 12 — Regression Testing Plan
 
-Generated: 2026-04-27T02:16:56.449Z
+Generated: 2026-04-27T02:40:07.876Z
 
 ## Repeatable commands
 - `bun run perf:inventory`

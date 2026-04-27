@@ -1,11 +1,22 @@
 # 08 — Auth and Perceived User Wait
 
-Generated: 2026-04-27T02:16:56.448Z
+Generated: 2026-04-27T02:40:07.876Z
 
 ## User-flow timing results
 | Flow | Status | Duration | Blocker/error |
 | --- | --- | ---: | --- |
-| user flows | blocked | n/a | PERF_USER_FLOWS=false |
+| open app to first visible UI | measured | 6562 ms |  |
+| open app to first visible UI | measured | 273 ms |  |
+| open app to first visible UI | measured | 296 ms |  |
+| login entry to authenticated dashboard (demo auth) | measured | 17552 ms |  |
+| dashboard primary data visible (demo auth) | measured | 473 ms |  |
+| wiki search/filter proxy (demo auth) | failed | 25334 ms | No textbox/search input found on /dashboard/wiki |
+| login entry to authenticated dashboard (demo auth) | measured | 2187 ms |  |
+| dashboard primary data visible (demo auth) | measured | 525 ms |  |
+| wiki search/filter proxy (demo auth) | failed | 298 ms | No textbox/search input found on /dashboard/wiki |
+| login entry to authenticated dashboard (demo auth) | measured | 1263 ms |  |
+| dashboard primary data visible (demo auth) | measured | 342 ms |  |
+| wiki search/filter proxy (demo auth) | failed | 246 ms | No textbox/search input found on /dashboard/wiki |
 
 ## Wait classification
 | Wait surface | Classification | Evidence | Notes |

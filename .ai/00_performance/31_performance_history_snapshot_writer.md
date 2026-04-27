@@ -32,3 +32,12 @@ The snapshot writer copies result JSON only and writes safe metadata: commit, br
 
 ## CI note
 Do not hard-fail CI on snapshots yet. Use them to accumulate at least three comparable baselines before enforcing budgets.
+
+## Loop 3 snapshot
+After the full frontend suite passed, a history snapshot was written with:
+
+```bash
+bun run perf:snapshot -- --mode=local-dev --label=loop3-full-frontend-green
+```
+
+Evidence log: `.ai/00_performance/logs/loop3-perf-snapshot-after-full-frontend.log`.

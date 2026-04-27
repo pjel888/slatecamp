@@ -33,3 +33,12 @@ Not yet as a hard gate. Route-isolated dev and built runs now pass, but the prio
 - Full frontend suite passes repeatedly or excludes 3D behind a separately measured route lane.
 - 3D chunk budget is stable after metadata split.
 - CI runner variance is known.
+
+## Loop 3 update — full-suite rejoin
+The post-split full local dev `bun run perf:frontend` run completed successfully with 15 Playwright tests passing. `/dashboard/3d-lab` should rejoin the full frontend suite for warning-only measurement.
+
+Gate status remains conservative:
+- Full frontend suite: warning-only, not hard-required yet.
+- 3D route: included in full suite plus route-isolated lane.
+- Memory warning: still present; require three comparable full-suite passes without memory-threshold restarts before hard gating.
+- Built-app authenticated 3D route: still blocked by missing safe auth/demo fixture support.

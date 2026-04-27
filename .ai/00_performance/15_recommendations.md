@@ -1,6 +1,6 @@
 # 15 — Recommendations
 
-Generated: 2026-04-27T02:16:56.449Z
+Generated: 2026-04-27T02:40:07.876Z
 
 ## Immediate quick wins
 1. Keep the performance harness in CI as warning-only: perf:inventory, perf:supabase, perf:hotspots, perf:summary.

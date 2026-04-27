@@ -1,0 +1,186 @@
+{
+  "timestamp": "2026-04-27T02:37:09Z",
+  "command": "bun run perf:frontend",
+  "log": ".ai/00_performance/logs/loop3-full-perf-frontend-after-metadata.log",
+  "resultFile": ".ai/00_performance/results/frontend_navigation_results.json",
+  "status": "passed",
+  "exitCode": 0,
+  "playwrightSummary": "15 passed (9.6m)",
+  "routeFilter": null,
+  "targetRoutes": [
+    "/",
+    "/about",
+    "/auth/reset-password",
+    "/contact",
+    "/forgot-password",
+    "/login",
+    "/pricing",
+    "/register",
+    "/try",
+    "/dashboard",
+    "/dashboard/settings",
+    "/dashboard/wiki",
+    "/dashboard/analytics",
+    "/dashboard/3d-lab"
+  ],
+  "fullSuiteCanRunToCompletion": true,
+  "threeDLabRoute": {
+    "finalUrl": "http://localhost:3217/dashboard/3d-lab",
+    "summary": {
+      "route": "/dashboard/3d-lab",
+      "runs": 6,
+      "cold": {
+        "count": 3,
+        "min": 2118.8592499999795,
+        "max": 48774.10287499998,
+        "mean": 18037.57386099997,
+        "median": 3219.759457999957,
+        "p50": 3219.759457999957,
+        "p75": 25996.93116649997,
+        "p95": 44218.66853329998,
+        "p99": 47863.01600665998,
+        "stddev": 21738.654622405407
+      },
+      "warm": {
+        "count": 3,
+        "min": 1967.5865420000046,
+        "max": 3068.4250839999877,
+        "mean": 2536.670847666663,
+        "median": 2574.0009169999976,
+        "p50": 2574.0009169999976,
+        "p75": 2821.2130004999926,
+        "p95": 3018.982667299989,
+        "p99": 3058.536600659988,
+        "stddev": 450.189978005942
+      },
+      "ttfb": {
+        "count": 6,
+        "min": 70.69999999925494,
+        "max": 43803.10000000149,
+        "mean": 7428.96666666617,
+        "median": 94.25,
+        "p50": 94.25,
+        "p75": 341.6249999990687,
+        "p95": 32957.925000000745,
+        "p99": 41634.06500000135,
+        "stddev": 16267.469949736633
+      },
+      "domContentLoaded": {
+        "count": 6,
+        "min": 141.89999999850988,
+        "max": 44785.400000002235,
+        "mean": 7767.083333333333,
+        "median": 403.1500000022352,
+        "p50": 403.1500000022352,
+        "p75": 651.9999999981374,
+        "p95": 33767.75000000093,
+        "p99": 42581.87000000198,
+        "stddev": 16556.236195809175
+      },
+      "load": {
+        "count": 6,
+        "min": 577.3000000007451,
+        "max": 47512.300000000745,
+        "mean": 8993.083333332712,
+        "median": 1495.25,
+        "p50": 1495.25,
+        "p75": 2102.599999998696,
+        "p95": 36184.25,
+        "p99": 45246.690000000606,
+        "stddev": 17235.955522339824
+      },
+      "fcp": {
+        "count": 6,
+        "min": 180,
+        "max": 44624,
+        "mean": 7671.333333333333,
+        "median": 226,
+        "p50": 226,
+        "p75": 498,
+        "p95": 33614,
+        "p99": 42422.00000000001,
+        "stddev": 16526.325409949895
+      },
+      "lcp": {
+        "count": 6,
+        "min": 180,
+        "max": 44796,
+        "mean": 7874.666666666667,
+        "median": 544,
+        "p50": 544,
+        "p75": 887,
+        "p95": 33846,
+        "p99": 42606.00000000001,
+        "stddev": 16513.991589625515
+      },
+      "cls": {
+        "count": 6,
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "median": 0,
+        "p50": 0,
+        "p75": 0,
+        "p95": 0,
+        "p99": 0,
+        "stddev": 0
+      },
+      "longTaskTotal": {
+        "count": 6,
+        "min": 203,
+        "max": 289,
+        "mean": 234.5,
+        "median": 212,
+        "p50": 212,
+        "p75": 266.25,
+        "p95": 287.5,
+        "p99": 288.7,
+        "stddev": 36.65492236157831
+      },
+      "requests": {
+        "count": 6,
+        "min": 25,
+        "max": 26,
+        "mean": 25.666666666666668,
+        "median": 26,
+        "p50": 26,
+        "p75": 26,
+        "p95": 26,
+        "p99": 26,
+        "stddev": 0.4714045207910317
+      },
+      "transferredBytes": {
+        "count": 6,
+        "min": 2955164,
+        "max": 7815198,
+        "mean": 5083343,
+        "median": 4976338.5,
+        "p50": 4976338.5,
+        "p75": 6821854.75,
+        "p95": 7566862.25,
+        "p99": 7765530.850000001,
+        "stddev": 2096763.469205655
+      },
+      "errorCount": 3,
+      "screenshots": [
+        ".ai/00_performance/screenshots/chromium-dashboard-3d-lab-cold.png"
+      ],
+      "traces": [
+        ".ai/00_performance/traces/chromium-dashboard-3d-lab-cold.zip",
+        ".ai/00_performance/traces/chromium-dashboard-3d-lab-warm.zip"
+      ]
+    }
+  },
+  "memoryThresholdRestartObserved": true,
+  "fastRefreshReloadObserved": true,
+  "consoleWarnings": {
+    "duplicateKeyWarnings": 26,
+    "rechartsSizeWarnings": 46,
+    "routerActionBeforeInitWarnings": 9
+  },
+  "interpretation": [
+    "The previous timeout/blocker is resolved for this exact local dev full-suite run because Playwright completed all 15 tests with exit 0.",
+    "The route should rejoin warning-only full-suite regression measurement, not hard gates yet, because the dev server still emitted a memory-threshold restart warning and cold p95 remains noisy.",
+    "Authenticated built-app content timing remains blocked separately because protected built routes still need safe auth fixtures."
+  ]
+}

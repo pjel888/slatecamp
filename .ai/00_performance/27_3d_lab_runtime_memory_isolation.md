@@ -49,3 +49,8 @@ Built-app route still resolves to login redirect, not authenticated 3D Lab conte
 - `.ai/00_performance/results/3d_lab_chunk_profile_before_corrected.json`
 - `.ai/00_performance/logs/loop2-3d-route-dev-before.log`
 - `.ai/00_performance/logs/loop2-3d-route-built-before.log`
+
+## Loop 3 full-suite rejoin result
+A follow-up full local dev `bun run perf:frontend` run completed successfully after the metadata split: 15 Playwright performance tests passed with exit code 0. Evidence is preserved in `.ai/00_performance/logs/loop3-full-perf-frontend-after-metadata.log` and `.ai/00_performance/results/full_frontend_verification_after_metadata.json`.
+
+This resolves the previous timeout/browser-context-close blocker for this exact local dev full-suite run. It does **not** remove the memory-risk warning: the Next dev server still emitted `Server is approaching the used memory threshold, restarting...` during the dashboard/analytics/3D segment.

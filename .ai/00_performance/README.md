@@ -1,6 +1,6 @@
 # SlateCamp Performance Audit
 
-Generated: 2026-04-27T02:16:56.450Z
+Generated: 2026-04-27T02:40:07.877Z
 
 This folder is the centralized performance ledger for SlateCamp. It contains repeatable scripts, raw JSON, command logs, Playwright traces/screenshots, static inventories, and human-readable reports.
 
@@ -32,9 +32,11 @@ Useful knobs:
 - PERF_USER_FLOW_REPEAT=5 for more user-flow samples.
 - PERF_API_REPEAT=10 PERF_BASE_URL=http://localhost:3217 for API samples.
 - PLAYWRIGHT_USE_BUILT_APP=true for production-build Playwright measurement.
+- PERF_ROUTE_FILTER=/dashboard/3d-lab limits frontend measurement to selected comma-separated routes.
 
-Comparison helper:
-- `bun run perf:compare -- <baseline.json> <candidate.json> <output.json>`
+Comparison/history helpers:
+- `bun run perf:compare -- --before <before.json> --after <after.json>`
+- `bun run perf:snapshot -- --mode=<mode> --label=<label>`
 
 ## Where raw results live
 - JSON results: `results/`
@@ -47,7 +49,7 @@ Comparison helper:
 ## Current baseline summary
 - Commit: `936d6de57efcfb850a9774eedc4967da568520e9`
 - Pages / route handlers: 112 / 12
-- Frontend cold p50/p95: 1354 ms / 1434 ms
+- Frontend cold p50/p95: 2907 ms / 19796 ms
 - API GET p50/p95: 6 ms / 1985 ms
 - Build p50/p95: 42475 ms / 42475 ms
 - Supabase select-star / missing-limit candidates: 9 / 160
@@ -56,10 +58,10 @@ Comparison helper:
 - Dashboard duplicate-data remediation comparison: cold p95 delta -8197 ms (-32.58%); see `20_dashboard_remediation.md`.
 - Supabase query tightening: select-star candidates 19 -> 9; see `21_supabase_query_tightening.md`.
 - 3D Lab direct-import split: hub raw client-reference signal bytes 3419.7 KiB -> 2120.8 KiB; see `22_3d_lab_bundle_remediation.md`.
-- Latest exact `bun run perf:frontend`: blocked/failing at `/dashboard/3d-lab`; partial evidence preserved in `.ai/00_performance/results/final_frontend_failed_partial.json`.
+- Latest exact `bun run perf:frontend`: passed all 15 Playwright perf tests; memory-threshold restart warning still observed; see `results/full_frontend_verification_after_metadata.json`.
 
 ## Top bottlenecks
-1. 3D Lab dev-server runtime/memory remains a full-suite blocker
+1. 3D Lab dev-server runtime/memory remains warning-only after full-suite recovery
 2. Supabase broad-read and missing-limit candidates remain after first tightening pass
 3. Admin content/editor surfaces overfetch and render large lists without virtualization
 4. AI/API routes need mocked latency/error budget benchmarks after timeout wrappers
@@ -73,7 +75,7 @@ Comparison helper:
 5. Focus next remediation on 3D Lab memory/startup, remaining Supabase broad reads, admin large lists, and dashboard production-auth monitoring.
 
 ## Known gaps/blockers
-- Final full frontend verification: Next dev server restarted near memory threshold during /dashboard/3d-lab; Playwright timed out at 180000 ms and the browser context closed.
+- 3D Lab full-suite memory warning: Latest full perf:frontend passed, but Next dev server still emitted a memory-threshold restart warning near the dashboard/analytics/3D segment.
 - Live Supabase latency/EXPLAIN: No safe read-only DB/test credentialed execution path was used.
 - OMX tmux team runtime: Current surface is Codex App/native outside tmux; tmux team panes cannot be launched here.
 - GitNexus detect_changes: Deferred GitNexus MCP tools were unavailable and npx gitnexus failed; see logs/gitnexus-help.log.
@@ -106,5 +108,12 @@ Comparison helper:
 - `.ai/00_performance/24_api_provider_timeout_remediation.md`
 - `.ai/00_performance/25_cron_scaling_remediation.md`
 - `.ai/00_performance/26_ci_history_and_compare.md`
+- `.ai/00_performance/27_3d_lab_runtime_memory_isolation.md`
+- `.ai/00_performance/28_3d_lab_metadata_registry_split.md`
+- `.ai/00_performance/29_authenticated_built_app_fixture_attempt.md`
+- `.ai/00_performance/30_dashboard_metric_reconciliation.md`
+- `.ai/00_performance/31_performance_history_snapshot_writer.md`
+- `.ai/00_performance/32_next_regression_gates_update.md`
+- `.ai/00_performance/33_full_frontend_rejoin_verification.md`
 - `.ai/00_performance/remediation_run_notes.md`
 - `.ai/00_performance/llm_crosschecks.md`
