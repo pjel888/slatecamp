@@ -1,0 +1,107 @@
+command: PERF_MEMORY_PROFILE_LABEL=loop4-analytics-3d-sequence PERF_ROUTE_SEQUENCE=/dashboard/analytics,/dashboard/3d-lab PERF_USER_FLOWS=false bun run perf:frontend
+cwd: /Users/philiplewis/slatecamp
+start: 2026-04-27T11:26:41+08:00
+$ PLAYWRIGHT_DEMO_AUTH=true bunx playwright test --config=.ai/00_performance/playwright/playwright.perf.config.ts --project=chromium --workers=1
+[2m[WebServer] [22m(node:64457) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:64464) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 3 tests using 1 worker
+
+(node:64729) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:64729) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m⨯ SyntaxError: Unexpected end of JSON input
+[2m[WebServer] [22m    at JSON.parse (<anonymous>) {
+[2m[WebServer] [22m  page: [32m'/dashboard/analytics'[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[browser] Uncaught SyntaxError: Unexpected end of JSON input
+[2m[WebServer] [22m    at JSON.parse (<anonymous>)
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m⨯ SyntaxError: Unexpected end of JSON input
+[2m[WebServer] [22m    at JSON.parse (<anonymous>) {
+[2m[WebServer] [22m  page: [32m'/dashboard/analytics'[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[browser] Uncaught SyntaxError: Unexpected end of JSON input
+[2m[WebServer] [22m    at JSON.parse (<anonymous>)
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+  ✓  1 [chromium] › .ai/00_performance/playwright/perf.spec.ts:361:9 › SlateCamp performance navigation baselines › navigation metrics for /dashboard/analytics (1.9m)
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+  ✓  2 [chromium] › .ai/00_performance/playwright/perf.spec.ts:361:9 › SlateCamp performance navigation baselines › navigation metrics for /dashboard/3d-lab (58.0s)
+  ✓  3 [chromium] › .ai/00_performance/playwright/perf.spec.ts:373:7 › SlateCamp performance navigation baselines › user flow timing proxies (60ms)
+
+  3 passed (3.0m)
+end: 2026-04-27T11:29:40+08:00
+exit: 0

@@ -1,0 +1,111 @@
+command: PERF_MEMORY_PROFILE_LABEL=loop4-dashboard-wiki-analytics-3d-sequence PERF_ROUTE_SEQUENCE=/dashboard,/dashboard/wiki,/dashboard/analytics,/dashboard/3d-lab PERF_USER_FLOWS=false bun run perf:frontend
+cwd: /Users/philiplewis/slatecamp
+start: 2026-04-27T11:33:18+08:00
+$ PLAYWRIGHT_DEMO_AUTH=true bunx playwright test --config=.ai/00_performance/playwright/playwright.perf.config.ts --project=chromium --workers=1
+[2m[WebServer] [22m(node:77077) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:77079) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 5 tests using 1 worker
+
+(node:77151) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:77151) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+  ✓  1 [chromium] › .ai/00_performance/playwright/perf.spec.ts:379:9 › SlateCamp performance navigation baselines › navigation metrics for /dashboard (58.3s)
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+  ✓  2 [chromium] › .ai/00_performance/playwright/perf.spec.ts:379:9 › SlateCamp performance navigation baselines › navigation metrics for /dashboard/wiki (54.2s)
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+  ✓  3 [chromium] › .ai/00_performance/playwright/perf.spec.ts:379:9 › SlateCamp performance navigation baselines › navigation metrics for /dashboard/analytics (1.8m)
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+  ✓  4 [chromium] › .ai/00_performance/playwright/perf.spec.ts:379:9 › SlateCamp performance navigation baselines › navigation metrics for /dashboard/3d-lab (1.1m)
+  ✓  5 [chromium] › .ai/00_performance/playwright/perf.spec.ts:391:7 › SlateCamp performance navigation baselines › user flow timing proxies (60ms)
+
+  5 passed (5.0m)
+end: 2026-04-27T11:38:17+08:00
+exit: 0

@@ -1,6 +1,6 @@
 # 03 — Baseline Summary
 
-Generated: 2026-04-27T02:40:07.875Z
+Generated: 2026-04-27T04:04:04.250Z
 
 ## Evidence completeness
 All expected machine-readable result files were present at summary time.
@@ -18,26 +18,26 @@ All expected machine-readable result files were present at summary time.
 - Server-action-like files: 168
 
 ## Frontend baseline
-- Cold route duration p50/p95: 2907 ms / 19796 ms
-- Warm route duration p50/p95: 2042 ms / 4759 ms
-- FCP p50/p95: 216 ms / 8522 ms
-- LCP proxy p50/p95: 496 ms / 8776 ms
-- Request count p50/p95: 26 / 33
-- Transfer p50/p95: 3652.2 KiB / 8510.4 KiB
+- Cold route duration p50/p95: 6948 ms / 39615 ms
+- Warm route duration p50/p95: 3182 ms / 18455 ms
+- FCP p50/p95: 420 ms / 19348 ms
+- LCP proxy p50/p95: 744 ms / 22310 ms
+- Request count p50/p95: 30 / 46
+- Transfer p50/p95: 3702.0 KiB / 7608.6 KiB
 
 ### Slowest measured routes by cold p95
 | Route | Cold p50 | Cold p95 | Warm p50 | FCP p50 | LCP p50 | Requests p50 | Transfer p50 | Errors |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| `/dashboard/analytics` | 4881 ms | 55430 ms | 4550 ms | 1142 ms | 1752 ms | 33 | 6476.1 KiB | 28 |
-| `/dashboard/3d-lab` | 3220 ms | 44219 ms | 2574 ms | 226 ms | 544 ms | 26 | 4859.7 KiB | 3 |
-| `/dashboard/wiki` | 4537 ms | 18602 ms | 3939 ms | 1188 ms | 1532 ms | 28 | 5474.0 KiB | 5 |
-| `/login` | 2735 ms | 11781 ms | 2799 ms | 228 ms | 840 ms | 30 | 2887.1 KiB | 1 |
-| `/pricing` | 1549 ms | 9524 ms | 1565 ms | 116 ms | 116 ms | 25 | 4055.2 KiB | 0 |
-| `/register` | 3494 ms | 8341 ms | 3080 ms | 220 ms | 978 ms | 30 | 6864.3 KiB | 1 |
-| `/dashboard/settings` | 3927 ms | 7531 ms | 2049 ms | 214 ms | 370 ms | 26 | 5698.2 KiB | 0 |
-| `/dashboard` | 3174 ms | 6897 ms | 4705 ms | 426 ms | 1864 ms | 31 | 5295.6 KiB | 7 |
-| `/contact` | 2028 ms | 5124 ms | 1565 ms | 116 ms | 116 ms | 24 | 3487.6 KiB | 0 |
-| `/auth/reset-password` | 2090 ms | 5062 ms | 1545 ms | 88 ms | 88 ms | 20 | 4053.9 KiB | 0 |
+| `/pricing` | 9866 ms | 45727 ms | 2629 ms | 572 ms | 572 ms | 26 | 4137.6 KiB | 8 |
+| `/dashboard/analytics` | 12600 ms | 43768 ms | 12544 ms | 3434 ms | 5060 ms | 28 | 8186.2 KiB | 13 |
+| `/dashboard/3d-lab` | 18410 ms | 38129 ms | 5302 ms | 570 ms | 1102 ms | 29 | 5033.0 KiB | 7 |
+| `/dashboard` | 12153 ms | 24815 ms | 11634 ms | 1976 ms | 3856 ms | 26 | 5335.1 KiB | 7 |
+| `/register` | 7891 ms | 18549 ms | 6976 ms | 124 ms | 936 ms | 13 | 1191.4 KiB | 11 |
+| `/login` | 13608 ms | 18085 ms | 7851 ms | 0 ms | 2388 ms | 3 | 38.2 KiB | 15 |
+| `/dashboard/wiki` | 4699 ms | 17989 ms | 3530 ms | 490 ms | 1360 ms | 37 | 4941.8 KiB | 12 |
+| `/contact` | 5176 ms | 11295 ms | 2583 ms | 368 ms | 368 ms | 38 | 3618.8 KiB | 10 |
+| `/try` | 6195 ms | 8601 ms | 2834 ms | 534 ms | 534 ms | 30 | 3677.2 KiB | 14 |
+| `/auth/reset-password` | 2605 ms | 8537 ms | 1825 ms | 368 ms | 368 ms | 27 | 4131.2 KiB | 6 |
 
 ## API/backend baseline
 - Server reachable: yes

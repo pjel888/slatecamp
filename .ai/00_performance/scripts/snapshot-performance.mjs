@@ -23,6 +23,8 @@ fs.mkdirSync(snapshotDir, { recursive: true })
 const resultFiles = [
   'frontend_navigation_results.json',
   'frontend_user_flows_results.json',
+  'full_frontend_verification_after_metadata.json',
+  'demo_auth_build_result.json',
   'build_startup_results.json',
   'supabase_query_inventory.json',
   'component_hotspot_inventory.json',
@@ -30,6 +32,10 @@ const resultFiles = [
   'environment.json',
   'api_benchmark_results.json',
 ]
+
+for (const file of fs.readdirSync(resultsDir).filter((file) => /^dev_server_memory_profile.*\.json$/.test(file))) {
+  resultFiles.push(file)
+}
 
 const copiedFiles = []
 for (const file of resultFiles) {

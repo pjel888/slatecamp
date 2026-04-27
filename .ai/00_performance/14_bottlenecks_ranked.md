@@ -1,6 +1,6 @@
 # 14 — Ranked Bottlenecks
 
-Generated: 2026-04-27T02:40:07.876Z
+Generated: 2026-04-27T04:04:04.250Z
 
 ## Ranking table
 | Rank | Bottleneck | User impact | Confidence | Ease of fix | Risk of fix |
@@ -17,7 +17,7 @@ Generated: 2026-04-27T02:40:07.876Z
 
 - Location: src/app/dashboard/3d-lab/page.tsx; src/features/3d-lab/components/*; src/features/3d-lab/config/registry/*
 - Evidence: Latest full `bun run perf:frontend` completed all Playwright performance tests with exit 0; memory-threshold restart warning still observed.
-- Metric before: Latest 3D Lab cold p95 44219 ms; warm p95 3019 ms
+- Metric before: Latest 3D Lab cold p95 38129 ms; warm p95 8436 ms
 - Why it matters: No longer blocks this exact full-suite run, but high dev cold variance and memory warnings still threaten reliable regression gating.
 - Suspected cause: 3D Lab dev-server runtime/memory remains warning-only after full-suite recovery
 - Recommended fix: see `15_recommendations.md` and use measurement-backed reversible changes.
@@ -89,7 +89,7 @@ Generated: 2026-04-27T02:40:07.876Z
 
 - Location: src/components/dashboard/DashboardAnalyticsSync.tsx; src/lib/actions/dashboard-page.ts; src/app/dashboard/page.tsx
 - Evidence: Local comparison after sync-payload split shows cold p95 delta -8197 ms (-32.58%).
-- Metric before: Dashboard cold p95 6897 ms
+- Metric before: Dashboard cold p95 24815 ms
 - Why it matters: Dashboard is the primary authenticated landing page; the local fix needs credentialed production-like confirmation.
 - Suspected cause: Dashboard sync dedupe needs production-auth monitoring
 - Recommended fix: see `15_recommendations.md` and use measurement-backed reversible changes.

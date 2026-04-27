@@ -130,6 +130,7 @@
         "PROMPT": "${COLOR_DIR}%d ${COLOR_GIT}$(parse_git_branch)${COLOR_DEF}${NEWLINE}%% ",
         "LOGNAME": "philiplewis",
         "npm_lifecycle_script": "playwright",
+        "PERF_MEMORY_PROFILE_LABEL": "loop4-full-frontend",
         "VISUAL": "code --wait",
         "VSCODE_GIT_IPC_HANDLE": "/var/folders/bn/7b1mmzfj6j52jkpfny_33f840000gn/T/vscode-git-12ef085c5b.sock",
         "LC_CTYPE": "C.UTF-8",
@@ -168,7 +169,7 @@
         {
           "title": "SlateCamp performance navigation baselines",
           "file": "perf.spec.ts",
-          "line": 298,
+          "line": 377,
           "column": 15,
           "specs": [
             {
@@ -187,12 +188,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 20859,
+                      "duration": 36665,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-27T02:27:40.480Z",
+                      "startTime": "2026-04-27T03:38:43.004Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -202,7 +203,7 @@
               ],
               "id": "73ed389be8d3d6a89cdb-22100837fd2c0c5b73d2",
               "file": "perf.spec.ts",
-              "line": 300,
+              "line": 379,
               "column": 9
             },
             {
@@ -221,12 +222,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 14548,
+                      "duration": 16169,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-27T02:28:01.950Z",
+                      "startTime": "2026-04-27T03:39:19.966Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -236,7 +237,7 @@
               ],
               "id": "73ed389be8d3d6a89cdb-bd2f5b3b86f59a9503c8",
               "file": "perf.spec.ts",
-              "line": 300,
+              "line": 379,
               "column": 9
             },
             {
@@ -255,12 +256,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 16942,
+                      "duration": 23124,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-27T02:28:16.511Z",
+                      "startTime": "2026-04-27T03:39:36.146Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -270,7 +271,7 @@
               ],
               "id": "73ed389be8d3d6a89cdb-ba33064f6aeccc28d268",
               "file": "perf.spec.ts",
-              "line": 300,
+              "line": 379,
               "column": 9
             },
             {
@@ -289,12 +290,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 16703,
+                      "duration": 33158,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-27T02:28:33.460Z",
+                      "startTime": "2026-04-27T03:39:59.277Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -304,7 +305,7 @@
               ],
               "id": "73ed389be8d3d6a89cdb-616a4c29f4be37f05530",
               "file": "perf.spec.ts",
-              "line": 300,
+              "line": 379,
               "column": 9
             },
             {
@@ -323,12 +324,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 16610,
+                      "duration": 34905,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-27T02:28:50.174Z",
+                      "startTime": "2026-04-27T03:40:32.444Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -338,7 +339,7 @@
               ],
               "id": "73ed389be8d3d6a89cdb-190cbb5f526cd2a24a4c",
               "file": "perf.spec.ts",
-              "line": 300,
+              "line": 379,
               "column": 9
             },
             {
@@ -357,12 +358,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 57615,
+                      "duration": 109904,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-27T02:29:06.794Z",
+                      "startTime": "2026-04-27T03:41:07.361Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -372,7 +373,7 @@
               ],
               "id": "73ed389be8d3d6a89cdb-588e17852da10010ba4e",
               "file": "perf.spec.ts",
-              "line": 300,
+              "line": 379,
               "column": 9
             },
             {
@@ -391,12 +392,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 23553,
+                      "duration": 106956,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-27T02:30:04.442Z",
+                      "startTime": "2026-04-27T03:42:57.274Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -406,7 +407,7 @@
               ],
               "id": "73ed389be8d3d6a89cdb-79ef8993ed1dbb09c397",
               "file": "perf.spec.ts",
-              "line": 300,
+              "line": 379,
               "column": 9
             },
             {
@@ -425,12 +426,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 31661,
+                      "duration": 73811,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-27T02:30:28.222Z",
+                      "startTime": "2026-04-27T03:44:44.251Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -440,7 +441,7 @@
               ],
               "id": "73ed389be8d3d6a89cdb-b7868369bc2340cae696",
               "file": "perf.spec.ts",
-              "line": 300,
+              "line": 379,
               "column": 9
             },
             {
@@ -459,12 +460,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 16194,
+                      "duration": 44062,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-27T02:30:59.986Z",
+                      "startTime": "2026-04-27T03:45:58.097Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -474,7 +475,7 @@
               ],
               "id": "73ed389be8d3d6a89cdb-87eae15a4720b1a6ffdb",
               "file": "perf.spec.ts",
-              "line": 300,
+              "line": 379,
               "column": 9
             },
             {
@@ -493,12 +494,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 33279,
+                      "duration": 111435,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-27T02:31:16.190Z",
+                      "startTime": "2026-04-27T03:46:42.171Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -508,7 +509,7 @@
               ],
               "id": "73ed389be8d3d6a89cdb-94c5b67ae9b637479d4a",
               "file": "perf.spec.ts",
-              "line": 300,
+              "line": 379,
               "column": 9
             },
             {
@@ -527,12 +528,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 26149,
+                      "duration": 49933,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-27T02:31:49.487Z",
+                      "startTime": "2026-04-27T03:48:33.620Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -542,7 +543,7 @@
               ],
               "id": "73ed389be8d3d6a89cdb-ef34cd43384491e9dbbc",
               "file": "perf.spec.ts",
-              "line": 300,
+              "line": 379,
               "column": 9
             },
             {
@@ -561,12 +562,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 53311,
+                      "duration": 48290,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-27T02:32:15.656Z",
+                      "startTime": "2026-04-27T03:49:23.562Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -576,7 +577,7 @@
               ],
               "id": "73ed389be8d3d6a89cdb-cc4139ac3dbdc4275b9a",
               "file": "perf.spec.ts",
-              "line": 300,
+              "line": 379,
               "column": 9
             },
             {
@@ -595,12 +596,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 96644,
+                      "duration": 175212,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-27T02:33:08.979Z",
+                      "startTime": "2026-04-27T03:50:11.864Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -610,7 +611,7 @@
               ],
               "id": "73ed389be8d3d6a89cdb-446c1c3abd145f01f192",
               "file": "perf.spec.ts",
-              "line": 300,
+              "line": 379,
               "column": 9
             },
             {
@@ -629,12 +630,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 87296,
+                      "duration": 110731,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-27T02:34:45.642Z",
+                      "startTime": "2026-04-27T03:53:07.088Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -644,7 +645,7 @@
               ],
               "id": "73ed389be8d3d6a89cdb-2804e5cfe690a7b393ad",
               "file": "perf.spec.ts",
-              "line": 300,
+              "line": 379,
               "column": 9
             },
             {
@@ -663,12 +664,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 55424,
+                      "duration": 189008,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-27T02:36:12.947Z",
+                      "startTime": "2026-04-27T03:54:57.891Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -678,7 +679,7 @@
               ],
               "id": "73ed389be8d3d6a89cdb-e62604b9d8c947a01d73",
               "file": "perf.spec.ts",
-              "line": 312,
+              "line": 391,
               "column": 7
             }
           ]
@@ -688,8 +689,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-04-27T02:27:30.657Z",
-    "duration": 578355.791,
+    "startTime": "2026-04-27T03:38:34.545Z",
+    "duration": 1172908.358,
     "expected": 15,
     "skipped": 0,
     "unexpected": 0,

@@ -1,0 +1,261 @@
+{
+  "timestamp": "2026-04-27T04:04:04.249Z",
+  "missingInputs": [],
+  "environment": {
+    "gitCommit": "936d6de57efcfb850a9774eedc4967da568520e9",
+    "branch": "main",
+    "os": {
+      "platform": "darwin",
+      "release": "25.3.0",
+      "arch": "arm64",
+      "type": "Darwin"
+    },
+    "versions": {
+      "node": "v25.8.0",
+      "bun": "1.3.10",
+      "playwright": "Version 1.59.1"
+    }
+  },
+  "inventoryCounts": {
+    "pages": 112,
+    "layouts": 15,
+    "loading": 92,
+    "errors": 7,
+    "routeHandlers": 12,
+    "clientComponents": 654,
+    "serverActionLikeFiles": 168,
+    "sourceFiles": 1971
+  },
+  "frontendSummary": {
+    "coldDurationMs": {
+      "count": 42,
+      "min": 5.520167000009678,
+      "max": 49711.60250000001,
+      "mean": 10354.470298690474,
+      "median": 6947.879499500035,
+      "p50": 6947.879499500035,
+      "p75": 12108.26472924999,
+      "p95": 39615.23800449995,
+      "p99": 48694.63000971998,
+      "stddev": 11524.142716578825
+    },
+    "warmDurationMs": {
+      "count": 42,
+      "min": 16.20050000003539,
+      "max": 25481.108582999907,
+      "mean": 5798.501463309518,
+      "median": 3182.125416499999,
+      "p50": 3182.125416499999,
+      "p75": 7952.556073250038,
+      "p95": 18454.636511900007,
+      "p99": 22855.570724659923,
+      "stddev": 5440.960491025986
+    },
+    "fcpMs": {
+      "count": 84,
+      "min": 0,
+      "max": 42784,
+      "mean": 3222.5238095238096,
+      "median": 420,
+      "p50": 420,
+      "p75": 1047,
+      "p95": 19347.799999999985,
+      "p99": 41967.28,
+      "stddev": 8135.2465535795745
+    },
+    "lcpMs": {
+      "count": 75,
+      "min": 80,
+      "max": 42784,
+      "mean": 3989.3333333333335,
+      "median": 744,
+      "p50": 744,
+      "p75": 2332,
+      "p95": 22309.999999999996,
+      "p99": 42707.04,
+      "stddev": 8670.964374406241
+    },
+    "requestCount": {
+      "count": 84,
+      "min": 0,
+      "max": 90,
+      "mean": 29.547619047619047,
+      "median": 30,
+      "p50": 30,
+      "p75": 36,
+      "p95": 46,
+      "p99": 72.57000000000004,
+      "stddev": 14.059740532985495
+    },
+    "transferredBytes": {
+      "count": 84,
+      "min": 0,
+      "max": 8967226,
+      "mean": 4262250.928571428,
+      "median": 3790843,
+      "p50": 3790843,
+      "p75": 5360890,
+      "p95": 7791240.149999999,
+      "p99": 8943725.38,
+      "stddev": 2190624.825672959
+    },
+    "jsHeapUsedBytes": {
+      "count": 84,
+      "min": 607485,
+      "max": 364000000,
+      "mean": 157294381.26190478,
+      "median": 139000000,
+      "p50": 139000000,
+      "p75": 202250000,
+      "p95": 269000000,
+      "p99": 329140000.00000006,
+      "stddev": 68099635.03133266
+    }
+  },
+  "apiSummary": {
+    "count": 15,
+    "min": 3.2386249999999563,
+    "max": 3885.1015000000007,
+    "mean": 414.75383900000026,
+    "median": 5.95416699999987,
+    "p50": 5.95416699999987,
+    "p75": 65.2122500000005,
+    "p95": 1985.0922580999977,
+    "p99": 3505.099651619999,
+    "stddev": 995.6667592896719
+  },
+  "supabaseSummary": {
+    "tablesTouched": 77,
+    "selectStarCount": 9,
+    "unboundedReadCandidates": 160,
+    "clientSideQueryBlocks": 4,
+    "authCallSignals": 49,
+    "rpcCallSignals": 16,
+    "storageCallSignals": 8,
+    "realtimeCallSignals": 2
+  },
+  "buildSummary": {
+    "runs": [
+      {
+        "runIndex": 1,
+        "durationMs": 42475.317584000004,
+        "exitCode": 0
+      }
+    ],
+    "summary": {
+      "count": 1,
+      "min": 42475.317584000004,
+      "max": 42475.317584000004,
+      "mean": 42475.317584000004,
+      "median": 42475.317584000004,
+      "p50": 42475.317584000004,
+      "p75": 42475.317584000004,
+      "p95": 42475.317584000004,
+      "p99": 42475.317584000004,
+      "stddev": 0
+    }
+  },
+  "hotspotSummary": {
+    "clientComponent": 666,
+    "broadContext": 35,
+    "renderArrayWork": 656,
+    "clientSorting": 57,
+    "clientFiltering": 215,
+    "expensiveFormatting": 64,
+    "regexConstruction": 1774,
+    "dynamicImportCandidate": 99,
+    "useEffectFetch": 5,
+    "stateStormCandidate": 372,
+    "unboundedList": 39,
+    "r3fHeavy": 96,
+    "imageRisk": 10,
+    "sequentialAwait": 263,
+    "jsonSerialization": 44
+  },
+  "bottlenecks": [
+    {
+      "rank": 1,
+      "title": "3D Lab dev-server runtime/memory remains warning-only after full-suite recovery",
+      "location": "src/app/dashboard/3d-lab/page.tsx; src/features/3d-lab/components/*; src/features/3d-lab/config/registry/*",
+      "evidence": "Latest full `bun run perf:frontend` completed all Playwright performance tests with exit 0; memory-threshold restart warning still observed.",
+      "metricBefore": "Latest 3D Lab cold p95 38129 ms; warm p95 8436 ms",
+      "impact": "No longer blocks this exact full-suite run, but high dev cold variance and memory warnings still threaten reliable regression gating.",
+      "confidence": "high",
+      "ease": "medium",
+      "risk": "medium",
+      "verify": "Keep 3D in warning-only full-suite measurement, preserve route-isolated lane, and compare heap/chunk data before hard gating."
+    },
+    {
+      "rank": 2,
+      "title": "Supabase broad-read and missing-limit candidates remain after first tightening pass",
+      "location": "results/supabase_query_inventory.json and 07_supabase_database.md",
+      "evidence": "9 select-star candidate(s), 160 unbounded read candidate(s), 4 client query block(s).",
+      "metricBefore": "blocked-without-live-read-only-credentialed-query-plan",
+      "impact": "Can inflate payloads, RLS work, network bytes, and waterfall latency.",
+      "confidence": "medium",
+      "ease": "varies",
+      "risk": "medium-high",
+      "verify": "Continue explicit columns/limits on high-traffic paths, then run targeted EXPLAIN and route perf tests."
+    },
+    {
+      "rank": 3,
+      "title": "Admin content/editor surfaces overfetch and render large lists without virtualization",
+      "location": "src/lib/actions/admin/content.ts; src/components/admin/unified-editor/QuestionsPanel.tsx; taxonomy tree/picker components",
+      "evidence": "Static audit found broad admin content loads, a 1481-line QuestionsPanel, and unvirtualized list/grouping risks.",
+      "metricBefore": "Privileged admin runtime metric requires safe role fixture.",
+      "impact": "Affects internal content operations and editor responsiveness.",
+      "confidence": "medium",
+      "ease": "medium-hard",
+      "risk": "medium",
+      "verify": "Measure admin routes with privileged fixtures; add pagination/virtualization; remeasure."
+    },
+    {
+      "rank": 4,
+      "title": "AI/API routes need mocked latency/error budget benchmarks after timeout wrappers",
+      "location": "src/app/api/ai/*/route.ts; src/lib/ai/provider.ts; payment/webhook routes",
+      "evidence": "Provider fetch timeout wrappers were added, but mutation/AI/payment POST benchmarks remain blocked without safe mocked/staging fixtures.",
+      "metricBefore": "Mutation/AI POST endpoints were not called by safe benchmark harness.",
+      "impact": "Can create long tail waits and serverless duration risk.",
+      "confidence": "medium",
+      "ease": "medium",
+      "risk": "medium",
+      "verify": "Add mocked provider latency benchmarks; track p95/p99 and timeout rate."
+    },
+    {
+      "rank": 5,
+      "title": "Cron routes include N+1/per-user scaling patterns",
+      "location": "src/app/api/cron/compute-signals/route.ts; src/app/api/cron/focus-review-scan/route.ts",
+      "evidence": "API/backend audit found loops over active users with multiple DB calls per user; focus-review timestamp schema mismatch was fixed but scaling remains unmeasured.",
+      "metricBefore": "Cron endpoints require secret and were not automatically called.",
+      "impact": "Operational timeout risk grows with active users.",
+      "confidence": "medium-high",
+      "ease": "medium-hard",
+      "risk": "high",
+      "verify": "Measure on local seeded DB by user count and compare batch/RPC refactor."
+    },
+    {
+      "rank": 6,
+      "title": "Bundle-heavy route families need analyzer-backed budgets",
+      "location": "analytics, wiki, admin editor, notes, 3D Lab; Mermaid/CodeMirror/Tiptap/Recharts imports",
+      "evidence": "Build and hotspot scans show tracked heavy dependencies and large build artifacts; direct 3D imports reduced hub manifest bytes but registry metadata split remains open.",
+      "metricBefore": "Build p50 42475 ms; largest static 2290.6 KiB",
+      "impact": "Large JS chunks harm cold route load and interaction readiness.",
+      "confidence": "medium",
+      "ease": "varies",
+      "risk": "low-medium",
+      "verify": "Add route bundle budgets and rerun perf:build plus perf:frontend."
+    },
+    {
+      "rank": 7,
+      "title": "Dashboard sync dedupe needs production-auth monitoring",
+      "location": "src/components/dashboard/DashboardAnalyticsSync.tsx; src/lib/actions/dashboard-page.ts; src/app/dashboard/page.tsx",
+      "evidence": "Local comparison after sync-payload split shows cold p95 delta -8197 ms (-32.58%).",
+      "metricBefore": "Dashboard cold p95 24815 ms",
+      "impact": "Dashboard is the primary authenticated landing page; the local fix needs credentialed production-like confirmation.",
+      "confidence": "medium",
+      "ease": "easy",
+      "risk": "low-medium",
+      "verify": "Rerun dashboard route/user-flow p95 with safe auth fixture and compare request counts/server logs."
+    }
+  ]
+}

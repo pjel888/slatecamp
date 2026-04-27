@@ -1,6 +1,6 @@
 # SlateCamp Performance Audit
 
-Generated: 2026-04-27T02:40:07.877Z
+Generated: 2026-04-27T04:04:04.250Z
 
 This folder is the centralized performance ledger for SlateCamp. It contains repeatable scripts, raw JSON, command logs, Playwright traces/screenshots, static inventories, and human-readable reports.
 
@@ -33,6 +33,9 @@ Useful knobs:
 - PERF_API_REPEAT=10 PERF_BASE_URL=http://localhost:3217 for API samples.
 - PLAYWRIGHT_USE_BUILT_APP=true for production-build Playwright measurement.
 - PERF_ROUTE_FILTER=/dashboard/3d-lab limits frontend measurement to selected comma-separated routes.
+- PERF_ROUTE_SEQUENCE=/dashboard,/dashboard/wiki,/dashboard/analytics,/dashboard/3d-lab runs routes in that exact order for cumulative memory isolation.
+- PERF_MEMORY_PROFILE_LABEL=<label> names the server RSS profile JSON.
+- PERF_DEV_SERVER_MEMORY_PROFILE=false disables server memory sampling when needed.
 
 Comparison/history helpers:
 - `bun run perf:compare -- --before <before.json> --after <after.json>`
@@ -49,7 +52,7 @@ Comparison/history helpers:
 ## Current baseline summary
 - Commit: `936d6de57efcfb850a9774eedc4967da568520e9`
 - Pages / route handlers: 112 / 12
-- Frontend cold p50/p95: 2907 ms / 19796 ms
+- Frontend cold p50/p95: 6948 ms / 39615 ms
 - API GET p50/p95: 6 ms / 1985 ms
 - Build p50/p95: 42475 ms / 42475 ms
 - Supabase select-star / missing-limit candidates: 9 / 160
@@ -77,6 +80,7 @@ Comparison/history helpers:
 ## Known gaps/blockers
 - 3D Lab full-suite memory warning: Latest full perf:frontend passed, but Next dev server still emitted a memory-threshold restart warning near the dashboard/analytics/3D segment.
 - Live Supabase latency/EXPLAIN: No safe read-only DB/test credentialed execution path was used.
+- Real Supabase Auth provider latency: Demo auth can measure authenticated screens without secrets, but it does not measure real Supabase Auth provider latency or credential-submit timing.
 - OMX tmux team runtime: Current surface is Codex App/native outside tmux; tmux team panes cannot be launched here.
 - GitNexus detect_changes: Deferred GitNexus MCP tools were unavailable and npx gitnexus failed; see logs/gitnexus-help.log.
 
@@ -115,5 +119,8 @@ Comparison/history helpers:
 - `.ai/00_performance/31_performance_history_snapshot_writer.md`
 - `.ai/00_performance/32_next_regression_gates_update.md`
 - `.ai/00_performance/33_full_frontend_rejoin_verification.md`
+- `.ai/00_performance/34_dev_server_memory_profile.md`
+- `.ai/00_performance/35_authenticated_built_app_3d_timing.md`
+- `.ai/00_performance/36_3d_hard_gate_decision.md`
 - `.ai/00_performance/remediation_run_notes.md`
 - `.ai/00_performance/llm_crosschecks.md`

@@ -1,0 +1,258 @@
+{
+  "timestamp": "2026-04-27T04:03:39Z",
+  "command": "PERF_MEMORY_PROFILE_LABEL=loop4-full-frontend bun run perf:frontend",
+  "log": ".ai/00_performance/logs/loop4-full-frontend-memory.log",
+  "resultFile": ".ai/00_performance/results/loop4_full_frontend_memory_navigation.json",
+  "memoryProfile": ".ai/00_performance/results/dev_server_memory_profile_loop4-full-frontend.json",
+  "status": "passed",
+  "exitCode": 0,
+  "playwrightSummary": "15 passed (19.5m)",
+  "routeFilter": null,
+  "routeSequence": null,
+  "targetRoutes": [
+    "/",
+    "/about",
+    "/auth/reset-password",
+    "/contact",
+    "/forgot-password",
+    "/login",
+    "/pricing",
+    "/register",
+    "/try",
+    "/dashboard",
+    "/dashboard/settings",
+    "/dashboard/wiki",
+    "/dashboard/analytics",
+    "/dashboard/3d-lab"
+  ],
+  "fullSuiteCanRunToCompletion": true,
+  "threeDLabRoute": {
+    "finalUrls": [
+      "http://localhost:3217/dashboard/3d-lab"
+    ],
+    "contentSignalsSample": {
+      "finalPathIsLogin": false,
+      "threeDLabTitleVisible": true,
+      "threeDLabInteractiveModulesAvailable": true,
+      "threeDLabLockedOrUpgradeCopyVisible": false
+    },
+    "summary": {
+      "route": "/dashboard/3d-lab",
+      "runs": 6,
+      "cold": {
+        "count": 3,
+        "min": 7521.1767910000635,
+        "max": 40320.13666700001,
+        "mean": 22083.64691666669,
+        "median": 18409.62729199999,
+        "p50": 18409.62729199999,
+        "p75": 29364.8819795,
+        "p95": 38129.08572950001,
+        "p99": 39881.92647950001,
+        "stddev": 13639.813229138947
+      },
+      "warm": {
+        "count": 3,
+        "min": 4084.6254999999655,
+        "max": 8784.637875000015,
+        "mean": 6056.957833333329,
+        "median": 5301.6101250000065,
+        "p50": 5301.6101250000065,
+        "p75": 7043.124000000011,
+        "p95": 8436.335100000015,
+        "p99": 8714.977320000015,
+        "stddev": 1991.7231570764218
+      },
+      "ttfb": {
+        "count": 6,
+        "min": 113.59999999403954,
+        "max": 31791.39999999851,
+        "mean": 5603.5,
+        "median": 395.69999999925494,
+        "p50": 395.69999999925494,
+        "p75": 709.0250000022352,
+        "p95": 24040.375,
+        "p99": 30241.194999998814,
+        "stddev": 11713.773370694218
+      },
+      "domContentLoaded": {
+        "count": 6,
+        "min": 547.7999999970198,
+        "max": 33438.5,
+        "mean": 6351.116666665922,
+        "median": 1042.6999999955297,
+        "p50": 1042.6999999955297,
+        "p75": 1403.2500000037253,
+        "p95": 25441.60000000149,
+        "p99": 31839.120000000305,
+        "stddev": 12118.365534237613
+      },
+      "load": {
+        "count": 6,
+        "min": 2800.10000000149,
+        "max": 39452.69999999553,
+        "mean": 12701.049999998262,
+        "median": 5995.69999999553,
+        "p50": 5995.69999999553,
+        "p75": 14820.574999999255,
+        "p95": 33980.52499999665,
+        "p99": 38358.26499999576,
+        "stddev": 12889.901639105125
+      },
+      "fcp": {
+        "count": 6,
+        "min": 244,
+        "max": 33448,
+        "mean": 6015.333333333333,
+        "median": 570,
+        "p50": 570,
+        "p75": 876,
+        "p95": 25329,
+        "p99": 31824.200000000004,
+        "stddev": 12270.567803578702
+      },
+      "lcp": {
+        "count": 6,
+        "min": 600,
+        "max": 33784,
+        "mean": 6448,
+        "median": 1102,
+        "p50": 1102,
+        "p75": 1433,
+        "p95": 25708,
+        "p99": 32168.800000000007,
+        "stddev": 12229.29706347289
+      },
+      "cls": {
+        "count": 6,
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "median": 0,
+        "p50": 0,
+        "p75": 0,
+        "p95": 0,
+        "p99": 0,
+        "stddev": 0
+      },
+      "longTaskTotal": {
+        "count": 6,
+        "min": 248,
+        "max": 829,
+        "mean": 407.6666666666667,
+        "median": 334.5,
+        "p50": 334.5,
+        "p75": 408.75,
+        "p95": 726.25,
+        "p99": 808.45,
+        "stddev": 197.4611072816338
+      },
+      "requests": {
+        "count": 6,
+        "min": 25,
+        "max": 54,
+        "mean": 34.333333333333336,
+        "median": 29,
+        "p50": 29,
+        "p75": 39.25,
+        "p95": 51,
+        "p99": 53.400000000000006,
+        "stddev": 10.418999738725189
+      },
+      "transferredBytes": {
+        "count": 6,
+        "min": 3289167,
+        "max": 6850577,
+        "mean": 5103416.666666667,
+        "median": 5153800.5,
+        "p50": 5153800.5,
+        "p75": 6647990.25,
+        "p95": 6808463,
+        "p99": 6842154.2,
+        "stddev": 1597677.1650618976
+      },
+      "jsHeapUsed": {
+        "count": 6,
+        "min": 131000000,
+        "max": 322000000,
+        "mean": 175000000,
+        "median": 139000000,
+        "p50": 139000000,
+        "p75": 175750000,
+        "p95": 288500000,
+        "p99": 315300000,
+        "stddev": 68607579.75617562
+      },
+      "jsHeapTotal": {
+        "count": 6,
+        "min": 157000000,
+        "max": 364000000,
+        "mean": 225500000,
+        "median": 205500000,
+        "p50": 205500000,
+        "p75": 243500000,
+        "p95": 336500000,
+        "p99": 358500000,
+        "stddev": 69514387.00010236
+      },
+      "jsHeapLimit": {
+        "count": 6,
+        "min": 2330000000,
+        "max": 2330000000,
+        "mean": 2330000000,
+        "median": 2330000000,
+        "p50": 2330000000,
+        "p75": 2330000000,
+        "p95": 2330000000,
+        "p99": 2330000000,
+        "stddev": 0
+      },
+      "errorCount": 7,
+      "screenshots": [
+        ".ai/00_performance/screenshots/chromium-dashboard-3d-lab-cold.png"
+      ],
+      "traces": [
+        ".ai/00_performance/traces/chromium-dashboard-3d-lab-cold.zip",
+        ".ai/00_performance/traces/chromium-dashboard-3d-lab-warm.zip"
+      ]
+    }
+  },
+  "serverMemory": {
+    "enabled": true,
+    "profileFile": ".ai/00_performance/results/dev_server_memory_profile_loop4-full-frontend.json",
+    "summary": {
+      "sampleCount": 1169,
+      "maxRssKiB": 2535648,
+      "lastRssKiB": 814864,
+      "maxProcessCount": 2,
+      "lastProcessCount": 2,
+      "rssBytes": {
+        "count": 1169,
+        "min": 88621056,
+        "max": 2596503552,
+        "mean": 1081513642.3746793,
+        "median": 1038974976,
+        "p50": 1038974976,
+        "p75": 1258651648,
+        "p95": 1705430220.799999,
+        "p99": 2041624657.9199996,
+        "stddev": 326467971.2545736
+      },
+      "memoryThresholdRestartObserved": true
+    }
+  },
+  "memoryThresholdRestartObserved": true,
+  "consoleWarnings": {
+    "duplicateKeyWarnings": 4,
+    "rechartsSizeWarnings": 0,
+    "routerActionBeforeInitWarnings": 124,
+    "fastRefreshReloads": 6,
+    "memoryThresholdWarnings": 2
+  },
+  "interpretation": [
+    "The full local dev frontend suite completes with exit 0; /dashboard/3d-lab is measurable inside the suite.",
+    "The full dev suite is still not hard-gate ready because the Next dev server emitted memory-threshold restart warnings during cumulative route/user-flow execution.",
+    "Route-isolated and shorter route-sequence runs did not emit the memory-threshold warning, so the blocker is cumulative dev-server pressure rather than a deterministic isolated 3D route crash.",
+    "Authenticated built-app /dashboard/3d-lab timing is now possible through a safe build-time demo auth fixture."
+  ]
+}

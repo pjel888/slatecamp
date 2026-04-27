@@ -1,0 +1,9 @@
+command: command -v gitnexus; command -v npx; npx --no-install gitnexus --help
+cwd: /Users/philiplewis/slatecamp
+start: 2026-04-27T11:20:24+08:00
+/Users/philiplewis/.nvm/versions/node/v25.8.0/bin/npx
+npm warn Unknown user config "always-auth" (//skand-124087294415.d.codeartifact.ap-southeast-2.amazonaws.com/npm/core/:always-auth). This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm error npx canceled due to missing packages and no YES option: ["gitnexus@1.6.3"]
+npm error A complete log of this run can be found in: /Users/philiplewis/.npm/_logs/2026-04-27T03_20_24_708Z-debug-0.log
+end: 2026-04-27T11:20:25+08:00
+exit: 1

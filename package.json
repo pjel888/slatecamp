@@ -36,6 +36,7 @@
     "perf:api": "bun .ai/00_performance/scripts/api-benchmark.mjs",
     "perf:supabase": "bun .ai/00_performance/scripts/supabase-inventory.mjs",
     "perf:build": "bun .ai/00_performance/scripts/build-startup.mjs",
+    "perf:build:demo-auth": "bun .ai/00_performance/scripts/build-demo-auth-app.mjs",
     "perf:hotspots": "bun .ai/00_performance/scripts/hotspot-audit.mjs",
     "perf:summary": "bun .ai/00_performance/scripts/summarize.mjs",
     "perf:all": "bun run perf:inventory && bun run perf:environment && bun run perf:supabase && bun run perf:hotspots && bun run perf:api && bun run perf:frontend && bun run perf:build && bun run perf:summary",

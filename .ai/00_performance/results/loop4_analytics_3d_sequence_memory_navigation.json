@@ -1,0 +1,3087 @@
+{
+  "timestamp": "2026-04-27T03:29:40.180Z",
+  "project": "chromium",
+  "repeat": 3,
+  "routeFilter": null,
+  "routeSequence": "/dashboard/analytics,/dashboard/3d-lab",
+  "routeSelection": {
+    "routeFilter": null,
+    "routeSequence": "/dashboard/analytics,/dashboard/3d-lab",
+    "routeLimit": 18
+  },
+  "serverMemoryProfile": ".ai/00_performance/results/dev_server_memory_profile_loop4-analytics-3d-sequence.json",
+  "devServerMemory": {
+    "enabled": true,
+    "profileFile": ".ai/00_performance/results/dev_server_memory_profile_loop4-analytics-3d-sequence.json",
+    "summary": {
+      "sampleCount": 177,
+      "maxRssKiB": 2193632,
+      "lastRssKiB": 867280,
+      "maxProcessCount": 2,
+      "lastProcessCount": 2,
+      "rssBytes": {
+        "count": 177,
+        "min": 261718016,
+        "max": 2246279168,
+        "mean": 1119984877.19774,
+        "median": 1028505600,
+        "p50": 1028505600,
+        "p75": 1342111744,
+        "p95": 1753743359.9999995,
+        "p99": 2070164930.5600019,
+        "stddev": 366123384.83442795
+      },
+      "memoryThresholdRestartObserved": false
+    }
+  },
+  "targetRoutes": [
+    "/dashboard/analytics",
+    "/dashboard/3d-lab"
+  ],
+  "runs": [
+    {
+      "timestamp": "2026-04-27T03:27:27.332Z",
+      "project": "chromium",
+      "route": "/dashboard/analytics",
+      "scenario": "cold",
+      "runIndex": 1,
+      "status": 200,
+      "ok": true,
+      "finalUrl": "http://localhost:3217/dashboard/analytics",
+      "durationMs": 36087.498875,
+      "navigation": {
+        "name": "http://localhost:3217/dashboard/analytics",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 35301.10000000149,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentEncoding": "gzip",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 0.5,
+        "domainLookupStart": 7.600000001490116,
+        "domainLookupEnd": 8.300000004470348,
+        "connectStart": 8.300000004470348,
+        "secureConnectionStart": 0,
+        "connectEnd": 10.300000004470348,
+        "requestStart": 12.100000001490116,
+        "responseStart": 27650.5,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 27650.5,
+        "responseEnd": 30646.10000000149,
+        "transferSize": 55680,
+        "encodedBodySize": 55380,
+        "decodedBodySize": 396132,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 30687.10000000149,
+        "domContentLoadedEventStart": 30687.20000000298,
+        "domContentLoadedEventEnd": 30687.20000000298,
+        "domComplete": 35300,
+        "loadEventStart": 35301.10000000149,
+        "loadEventEnd": 35301.10000000149,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "high"
+        }
+      },
+      "paints": {
+        "fcp": 29544,
+        "fp": 29544
+      },
+      "webVitalsProxy": {
+        "lcp": 30744,
+        "cls": 0,
+        "longTaskCount": 6,
+        "longTaskTotalMs": 1457,
+        "maxLongTaskMs": 872,
+        "inpProxyMs": null
+      },
+      "resources": {
+        "count": 25,
+        "totalTransferSize": 8773837,
+        "totalEncodedBodySize": 8766637,
+        "byType": {
+          "link": {
+            "count": 12,
+            "transferSize": 231264,
+            "encodedBodySize": 227964
+          },
+          "script": {
+            "count": 9,
+            "transferSize": 8484837,
+            "encodedBodySize": 8482137
+          },
+          "css": {
+            "count": 4,
+            "transferSize": 57736,
+            "encodedBodySize": 56536
+          }
+        },
+        "slowest": [
+          {
+            "name": "http://localhost:3217/_next/static/chunks/main-app.js?v=1777260438101",
+            "initiatorType": "script",
+            "duration": 6020.30000000447,
+            "transferSize": 2720965,
+            "encodedBodySize": 2720665
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/analytics/page.js",
+            "initiatorType": "script",
+            "duration": 5549.60000000149,
+            "transferSize": 2413387,
+            "encodedBodySize": 2413087
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/layout.js",
+            "initiatorType": "script",
+            "duration": 3775.10000000149,
+            "transferSize": 2303273,
+            "encodedBodySize": 2302973
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/error.js",
+            "initiatorType": "script",
+            "duration": 2273.1999999955297,
+            "transferSize": 209879,
+            "encodedBodySize": 209579
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/layout.js",
+            "initiatorType": "script",
+            "duration": 1617.8999999985099,
+            "transferSize": 368905,
+            "encodedBodySize": 368605
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/analytics/error.js",
+            "initiatorType": "script",
+            "duration": 1614.1000000014901,
+            "transferSize": 131601,
+            "encodedBodySize": 131301
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/analytics/layout.js",
+            "initiatorType": "script",
+            "duration": 832.3999999985099,
+            "transferSize": 154127,
+            "encodedBodySize": 153827
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/error.js",
+            "initiatorType": "script",
+            "duration": 808.8999999985099,
+            "transferSize": 121317,
+            "encodedBodySize": 121017
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app-pages-internals.js",
+            "initiatorType": "script",
+            "duration": 778,
+            "transferSize": 61383,
+            "encodedBodySize": 61083
+          },
+          {
+            "name": "http://localhost:3217/_next/static/css/app/layout.css?v=1777260438101",
+            "initiatorType": "link",
+            "duration": 775.3999999985099,
+            "transferSize": 56853,
+            "encodedBodySize": 56553
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/webpack.js?v=1777260438101",
+            "initiatorType": "link",
+            "duration": 772.4000000059605,
+            "transferSize": 29051,
+            "encodedBodySize": 28751
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/9816a0e0ed309b6c-s.p.woff2",
+            "initiatorType": "css",
+            "duration": 638.6000000014901,
+            "transferSize": 11664,
+            "encodedBodySize": 11364
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/bc08e10e1c60a660-s.p.woff2?v=1777260438101",
+            "initiatorType": "link",
+            "duration": 616.1000000014901,
+            "transferSize": 11508,
+            "encodedBodySize": 11208
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/bc08e10e1c60a660-s.p.woff2",
+            "initiatorType": "css",
+            "duration": 483,
+            "transferSize": 11508,
+            "encodedBodySize": 11208
+          },
+          {
+            "name": "https://lh3.googleusercontent.com/a/ACg8ocL-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X=s96-c",
+            "initiatorType": "link",
+            "duration": 303.59999999403954,
+            "transferSize": 0,
+            "encodedBodySize": 0
+          }
+        ]
+      },
+      "heap": {
+        "jsHeapSizeLimit": 2330000000,
+        "totalJSHeapSize": 286000000,
+        "usedJSHeapSize": 239000000
+      },
+      "errors": [
+        "Invalid or unexpected token",
+        "Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead."
+      ],
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "timestamp": "2026-04-27T03:27:38.700Z",
+      "project": "chromium",
+      "route": "/dashboard/analytics",
+      "scenario": "warm",
+      "runIndex": 1,
+      "status": 200,
+      "ok": true,
+      "finalUrl": "http://localhost:3217/dashboard/analytics",
+      "durationMs": 3710.8362080000006,
+      "navigation": {
+        "name": "http://localhost:3217/dashboard/analytics",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 2700.10000000149,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentEncoding": "gzip",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 5.300000004470348,
+        "domainLookupStart": 5.300000004470348,
+        "domainLookupEnd": 5.300000004470348,
+        "connectStart": 5.300000004470348,
+        "secureConnectionStart": 0,
+        "connectEnd": 5.300000004470348,
+        "requestStart": 11.300000004470348,
+        "responseStart": 563.8999999985099,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 563.8999999985099,
+        "responseEnd": 1366.2000000029802,
+        "transferSize": 55048,
+        "encodedBodySize": 54748,
+        "decodedBodySize": 395024,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 573,
+        "unloadEventEnd": 573,
+        "domInteractive": 1367.1000000014901,
+        "domContentLoadedEventStart": 1367.1000000014901,
+        "domContentLoadedEventEnd": 1367.1000000014901,
+        "domComplete": 2699.8000000044703,
+        "loadEventStart": 2700.10000000149,
+        "loadEventEnd": 2700.10000000149,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "high"
+        }
+      },
+      "paints": {
+        "fcp": 748,
+        "fp": 748
+      },
+      "webVitalsProxy": {
+        "lcp": 1988,
+        "cls": 0,
+        "longTaskCount": 1,
+        "longTaskTotalMs": 262,
+        "maxLongTaskMs": 262,
+        "inpProxyMs": null
+      },
+      "resources": {
+        "count": 26,
+        "totalTransferSize": 3211434,
+        "totalEncodedBodySize": 8654537,
+        "byType": {
+          "link": {
+            "count": 12,
+            "transferSize": 231261,
+            "encodedBodySize": 227961
+          },
+          "script": {
+            "count": 9,
+            "transferSize": 2951517,
+            "encodedBodySize": 8341684
+          },
+          "css": {
+            "count": 5,
+            "transferSize": 28656,
+            "encodedBodySize": 84892
+          }
+        },
+        "slowest": [
+          {
+            "name": "http://localhost:3217/_next/static/chunks/main-app.js?v=1777260455125",
+            "initiatorType": "script",
+            "duration": 1775,
+            "transferSize": 2720965,
+            "encodedBodySize": 2720665
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/layout.js",
+            "initiatorType": "script",
+            "duration": 422.29999999701977,
+            "transferSize": 228452,
+            "encodedBodySize": 228152
+          },
+          {
+            "name": "http://localhost:3217/__nextjs_font/geist-latin.woff2",
+            "initiatorType": "css",
+            "duration": 235.5,
+            "transferSize": 28656,
+            "encodedBodySize": 28356
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/bc08e10e1c60a660-s.p.woff2?v=1777260455125",
+            "initiatorType": "link",
+            "duration": 95.89999999850988,
+            "transferSize": 11508,
+            "encodedBodySize": 11208
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/b7ea2ab4a8ad1f81-s.p.woff2?v=1777260455125",
+            "initiatorType": "link",
+            "duration": 94.89999999850988,
+            "transferSize": 9024,
+            "encodedBodySize": 8724
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/8a1d8947e5852e30-s.p.woff2?v=1777260455125",
+            "initiatorType": "link",
+            "duration": 94.79999999701977,
+            "transferSize": 34860,
+            "encodedBodySize": 34560
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/9816a0e0ed309b6c-s.p.woff2?v=1777260455125",
+            "initiatorType": "link",
+            "duration": 94.69999999552965,
+            "transferSize": 11664,
+            "encodedBodySize": 11364
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/analytics/page.js",
+            "initiatorType": "script",
+            "duration": 86.69999999552965,
+            "transferSize": 300,
+            "encodedBodySize": 2413087
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/76fcc95954fbfc88-s.p.woff2?v=1777260455125",
+            "initiatorType": "link",
+            "duration": 83,
+            "transferSize": 9856,
+            "encodedBodySize": 9556
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/5d259b4d93dec8ad-s.p.woff2?v=1777260455125",
+            "initiatorType": "link",
+            "duration": 81.5,
+            "transferSize": 9816,
+            "encodedBodySize": 9516
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/0e96d314a90a6138-s.p.woff2?v=1777260455125",
+            "initiatorType": "link",
+            "duration": 81.40000000596046,
+            "transferSize": 8988,
+            "encodedBodySize": 8688
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/3dc379dc9b5dec12-s.p.woff2?v=1777260455125",
+            "initiatorType": "link",
+            "duration": 81.39999999850988,
+            "transferSize": 25540,
+            "encodedBodySize": 25240
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/56da557e531d1081-s.p.woff2?v=1777260455125",
+            "initiatorType": "link",
+            "duration": 81,
+            "transferSize": 24104,
+            "encodedBodySize": 23804
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/error.js",
+            "initiatorType": "script",
+            "duration": 75.20000000298023,
+            "transferSize": 300,
+            "encodedBodySize": 209579
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/analytics/error.js",
+            "initiatorType": "script",
+            "duration": 62.80000000447035,
+            "transferSize": 300,
+            "encodedBodySize": 131301
+          }
+        ]
+      },
+      "heap": {
+        "jsHeapSizeLimit": 2330000000,
+        "totalJSHeapSize": 286000000,
+        "usedJSHeapSize": 225000000
+      },
+      "errors": [
+        "Invalid or unexpected token"
+      ],
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "timestamp": "2026-04-27T03:27:56.805Z",
+      "project": "chromium",
+      "route": "/dashboard/analytics",
+      "scenario": "cold",
+      "runIndex": 2,
+      "status": 500,
+      "ok": false,
+      "finalUrl": "http://localhost:3217/dashboard/analytics",
+      "durationMs": 17611.980708000003,
+      "navigation": {
+        "name": "http://localhost:3217/dashboard/analytics",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 15166.19999999553,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentEncoding": "gzip",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 0.29999999701976776,
+        "domainLookupStart": 1.0999999940395355,
+        "domainLookupEnd": 1.0999999940395355,
+        "connectStart": 1.0999999940395355,
+        "secureConnectionStart": 0,
+        "connectEnd": 1.2999999970197678,
+        "requestStart": 1.2999999970197678,
+        "responseStart": 8739.79999999702,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 8739.79999999702,
+        "responseEnd": 8790.39999999851,
+        "transferSize": 1617,
+        "encodedBodySize": 1317,
+        "decodedBodySize": 4332,
+        "responseStatus": 500,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 9104,
+        "domContentLoadedEventStart": 15165.59999999404,
+        "domContentLoadedEventEnd": 15165.59999999404,
+        "domComplete": 15166.19999999553,
+        "loadEventStart": 15166.19999999553,
+        "loadEventEnd": 15166.19999999553,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "high"
+        }
+      },
+      "paints": {
+        "fcp": 15848,
+        "fp": 15848
+      },
+      "webVitalsProxy": {
+        "lcp": 16320,
+        "cls": 0.008193330738279556,
+        "longTaskCount": 3,
+        "longTaskTotalMs": 668,
+        "maxLongTaskMs": 307,
+        "inpProxyMs": null
+      },
+      "resources": {
+        "count": 11,
+        "totalTransferSize": 1774082,
+        "totalEncodedBodySize": 1770782,
+        "byType": {
+          "script": {
+            "count": 7,
+            "transferSize": 1712308,
+            "encodedBodySize": 1710208
+          },
+          "fetch": {
+            "count": 2,
+            "transferSize": 1530,
+            "encodedBodySize": 930
+          },
+          "css": {
+            "count": 2,
+            "transferSize": 60244,
+            "encodedBodySize": 59644
+          }
+        },
+        "slowest": [
+          {
+            "name": "http://localhost:3217/_next/static/chunks/main.js",
+            "initiatorType": "script",
+            "duration": 5896.39999999851,
+            "transferSize": 1653249,
+            "encodedBodySize": 1652949
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/pages/_error.js",
+            "initiatorType": "script",
+            "duration": 2011,
+            "transferSize": 1744,
+            "encodedBodySize": 1444
+          },
+          {
+            "name": "http://localhost:3217/__nextjs_original-stack-frames",
+            "initiatorType": "fetch",
+            "duration": 741,
+            "transferSize": 1228,
+            "encodedBodySize": 928
+          },
+          {
+            "name": "http://localhost:3217/__nextjs_font/geist-mono-latin.woff2",
+            "initiatorType": "css",
+            "duration": 716.8000000044703,
+            "transferSize": 31588,
+            "encodedBodySize": 31288
+          },
+          {
+            "name": "http://localhost:3217/__nextjs_font/geist-latin.woff2",
+            "initiatorType": "css",
+            "duration": 705.7000000029802,
+            "transferSize": 28656,
+            "encodedBodySize": 28356
+          },
+          {
+            "name": "http://localhost:3217/_next/static/development/_ssgManifest.js",
+            "initiatorType": "script",
+            "duration": 172.10000000149012,
+            "transferSize": 376,
+            "encodedBodySize": 76
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/webpack.js",
+            "initiatorType": "script",
+            "duration": 166.20000000298023,
+            "transferSize": 29051,
+            "encodedBodySize": 28751
+          },
+          {
+            "name": "http://localhost:3217/_next/static/development/_buildManifest.js",
+            "initiatorType": "script",
+            "duration": 165.5,
+            "transferSize": 612,
+            "encodedBodySize": 312
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/react-refresh.js",
+            "initiatorType": "script",
+            "duration": 165.5,
+            "transferSize": 25508,
+            "encodedBodySize": 25208
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/pages/_app.js",
+            "initiatorType": "script",
+            "duration": 164.60000000149012,
+            "transferSize": 1768,
+            "encodedBodySize": 1468
+          },
+          {
+            "name": "http://localhost:3217/_next/static/development/_devMiddlewareManifest.json",
+            "initiatorType": "fetch",
+            "duration": 38.100000001490116,
+            "transferSize": 302,
+            "encodedBodySize": 2
+          }
+        ]
+      },
+      "heap": {
+        "jsHeapSizeLimit": 2330000000,
+        "totalJSHeapSize": 44700000,
+        "usedJSHeapSize": 42100000
+      },
+      "errors": [
+        "Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+        "Unexpected end of JSON input"
+      ],
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "timestamp": "2026-04-27T03:28:16.006Z",
+      "project": "chromium",
+      "route": "/dashboard/analytics",
+      "scenario": "warm",
+      "runIndex": 2,
+      "status": 200,
+      "ok": true,
+      "finalUrl": "http://localhost:3217/dashboard/analytics",
+      "durationMs": 5876.488499999992,
+      "navigation": {
+        "name": "http://localhost:3217/dashboard/analytics",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 4946.5,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentEncoding": "gzip",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 16.399999998509884,
+        "domainLookupStart": 16.399999998509884,
+        "domainLookupEnd": 16.399999998509884,
+        "connectStart": 16.399999998509884,
+        "secureConnectionStart": 0,
+        "connectEnd": 16.399999998509884,
+        "requestStart": 23.100000001490116,
+        "responseStart": 336.6000000014901,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 336.6000000014901,
+        "responseEnd": 2022.5,
+        "transferSize": 55053,
+        "encodedBodySize": 54753,
+        "decodedBodySize": 395024,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 347.8999999985099,
+        "unloadEventEnd": 347.8999999985099,
+        "domInteractive": 2025.6000000014901,
+        "domContentLoadedEventStart": 2025.7000000029802,
+        "domContentLoadedEventEnd": 2025.7000000029802,
+        "domComplete": 4945.5,
+        "loadEventStart": 4946.5,
+        "loadEventEnd": 4946.5,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "high"
+        }
+      },
+      "paints": {
+        "fcp": 500,
+        "fp": 500
+      },
+      "webVitalsProxy": {
+        "lcp": 2356,
+        "cls": 0,
+        "longTaskCount": 1,
+        "longTaskTotalMs": 334,
+        "maxLongTaskMs": 334,
+        "inpProxyMs": null
+      },
+      "resources": {
+        "count": 27,
+        "totalTransferSize": 3487759,
+        "totalEncodedBodySize": 8930862,
+        "byType": {
+          "link": {
+            "count": 12,
+            "transferSize": 231263,
+            "encodedBodySize": 227963
+          },
+          "script": {
+            "count": 9,
+            "transferSize": 3256097,
+            "encodedBodySize": 8646264
+          },
+          "css": {
+            "count": 4,
+            "transferSize": 0,
+            "encodedBodySize": 56536
+          },
+          "img": {
+            "count": 1,
+            "transferSize": 0,
+            "encodedBodySize": 0
+          },
+          "fetch": {
+            "count": 1,
+            "transferSize": 399,
+            "encodedBodySize": 99
+          }
+        },
+        "slowest": [
+          {
+            "name": "http://localhost:3217/_next/static/chunks/main-app.js?v=1777260490185",
+            "initiatorType": "script",
+            "duration": 4169.39999999851,
+            "transferSize": 2720965,
+            "encodedBodySize": 2720665
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/layout.js",
+            "initiatorType": "script",
+            "duration": 2852.5,
+            "transferSize": 533032,
+            "encodedBodySize": 532732
+          },
+          {
+            "name": "http://localhost:3217/dashboard/analytics",
+            "initiatorType": "fetch",
+            "duration": 361.69999999552965,
+            "transferSize": 399,
+            "encodedBodySize": 99
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/layout.js",
+            "initiatorType": "script",
+            "duration": 318.5,
+            "transferSize": 300,
+            "encodedBodySize": 2302973
+          },
+          {
+            "name": "https://lh3.googleusercontent.com/a/ACg8ocL-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X=s96-c",
+            "initiatorType": "link",
+            "duration": 145,
+            "transferSize": 0,
+            "encodedBodySize": 0
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/bc08e10e1c60a660-s.p.woff2?v=1777260490185",
+            "initiatorType": "link",
+            "duration": 64.19999999552965,
+            "transferSize": 11508,
+            "encodedBodySize": 11208
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/b7ea2ab4a8ad1f81-s.p.woff2?v=1777260490185",
+            "initiatorType": "link",
+            "duration": 63.399999998509884,
+            "transferSize": 9024,
+            "encodedBodySize": 8724
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/9816a0e0ed309b6c-s.p.woff2?v=1777260490185",
+            "initiatorType": "link",
+            "duration": 63.19999999552965,
+            "transferSize": 11664,
+            "encodedBodySize": 11364
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/analytics/page.js",
+            "initiatorType": "script",
+            "duration": 63.100000001490116,
+            "transferSize": 300,
+            "encodedBodySize": 2413087
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/8a1d8947e5852e30-s.p.woff2?v=1777260490185",
+            "initiatorType": "link",
+            "duration": 62.79999999701977,
+            "transferSize": 34860,
+            "encodedBodySize": 34560
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/5d259b4d93dec8ad-s.p.woff2?v=1777260490185",
+            "initiatorType": "link",
+            "duration": 60.5,
+            "transferSize": 9816,
+            "encodedBodySize": 9516
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/76fcc95954fbfc88-s.p.woff2?v=1777260490185",
+            "initiatorType": "link",
+            "duration": 60.399999998509884,
+            "transferSize": 9856,
+            "encodedBodySize": 9556
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/error.js",
+            "initiatorType": "script",
+            "duration": 59.70000000298023,
+            "transferSize": 300,
+            "encodedBodySize": 209579
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/56da557e531d1081-s.p.woff2?v=1777260490185",
+            "initiatorType": "link",
+            "duration": 56,
+            "transferSize": 24104,
+            "encodedBodySize": 23804
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/3dc379dc9b5dec12-s.p.woff2?v=1777260490185",
+            "initiatorType": "link",
+            "duration": 55.5,
+            "transferSize": 25540,
+            "encodedBodySize": 25240
+          }
+        ]
+      },
+      "heap": {
+        "jsHeapSizeLimit": 2330000000,
+        "totalJSHeapSize": 239000000,
+        "usedJSHeapSize": 177000000
+      },
+      "errors": [
+        "Invalid or unexpected token"
+      ],
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "timestamp": "2026-04-27T03:28:29.020Z",
+      "project": "chromium",
+      "route": "/dashboard/analytics",
+      "scenario": "cold",
+      "runIndex": 3,
+      "status": 500,
+      "ok": false,
+      "finalUrl": "http://localhost:3217/dashboard/analytics",
+      "durationMs": 12650.318167000005,
+      "navigation": {
+        "name": "http://localhost:3217/dashboard/analytics",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 4263,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentEncoding": "gzip",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 4.399999998509884,
+        "domainLookupStart": 4.399999998509884,
+        "domainLookupEnd": 4.399999998509884,
+        "connectStart": 4.399999998509884,
+        "secureConnectionStart": 0,
+        "connectEnd": 4.399999998509884,
+        "requestStart": 9.899999998509884,
+        "responseStart": 598.3999999985099,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 598.3999999985099,
+        "responseEnd": 1758.3999999985099,
+        "transferSize": 55196,
+        "encodedBodySize": 54896,
+        "decodedBodySize": 395684,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 605.2999999970198,
+        "unloadEventEnd": 605.2999999970198,
+        "domInteractive": 1796.2000000029802,
+        "domContentLoadedEventStart": 1796.2000000029802,
+        "domContentLoadedEventEnd": 1796.2999999970198,
+        "domComplete": 4262.60000000149,
+        "loadEventStart": 4263,
+        "loadEventEnd": 4263,
+        "type": "reload",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "low"
+        }
+      },
+      "paints": {
+        "fcp": 1440,
+        "fp": 1440
+      },
+      "webVitalsProxy": {
+        "lcp": 2160,
+        "cls": 0,
+        "longTaskCount": 1,
+        "longTaskTotalMs": 499,
+        "maxLongTaskMs": 499,
+        "inpProxyMs": null
+      },
+      "resources": {
+        "count": 30,
+        "totalTransferSize": 8763124,
+        "totalEncodedBodySize": 8814668,
+        "byType": {
+          "link": {
+            "count": 12,
+            "transferSize": 231266,
+            "encodedBodySize": 227966
+          },
+          "script": {
+            "count": 11,
+            "transferSize": 8473778,
+            "encodedBodySize": 8470478
+          },
+          "css": {
+            "count": 6,
+            "transferSize": 57736,
+            "encodedBodySize": 116180
+          },
+          "fetch": {
+            "count": 1,
+            "transferSize": 344,
+            "encodedBodySize": 44
+          }
+        },
+        "slowest": [
+          {
+            "name": "http://localhost:3217/_next/static/chunks/main-app.js?v=1777260504113",
+            "initiatorType": "script",
+            "duration": 2718.8000000044703,
+            "transferSize": 2720965,
+            "encodedBodySize": 2720665
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/analytics/page.js",
+            "initiatorType": "script",
+            "duration": 2647,
+            "transferSize": 2413387,
+            "encodedBodySize": 2413087
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/layout.js",
+            "initiatorType": "script",
+            "duration": 1949.7000000029802,
+            "transferSize": 2303273,
+            "encodedBodySize": 2302973
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/error.js",
+            "initiatorType": "script",
+            "duration": 1079.1000000014901,
+            "transferSize": 209879,
+            "encodedBodySize": 209579
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/analytics/error.js",
+            "initiatorType": "script",
+            "duration": 727.8999999985099,
+            "transferSize": 131601,
+            "encodedBodySize": 131301
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/layout.js",
+            "initiatorType": "script",
+            "duration": 671.6000000014901,
+            "transferSize": 355465,
+            "encodedBodySize": 355165
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/3dc379dc9b5dec12-s.p.woff2?v=1777260504113",
+            "initiatorType": "link",
+            "duration": 637,
+            "transferSize": 25540,
+            "encodedBodySize": 25240
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/56da557e531d1081-s.p.woff2?v=1777260504113",
+            "initiatorType": "link",
+            "duration": 450.5,
+            "transferSize": 24104,
+            "encodedBodySize": 23804
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/5d259b4d93dec8ad-s.p.woff2?v=1777260504113",
+            "initiatorType": "link",
+            "duration": 448.5,
+            "transferSize": 9816,
+            "encodedBodySize": 9516
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/bc08e10e1c60a660-s.p.woff2?v=1777260504113",
+            "initiatorType": "link",
+            "duration": 446.79999999701977,
+            "transferSize": 11508,
+            "encodedBodySize": 11208
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/b7ea2ab4a8ad1f81-s.p.woff2?v=1777260504113",
+            "initiatorType": "link",
+            "duration": 441.5,
+            "transferSize": 9024,
+            "encodedBodySize": 8724
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/9816a0e0ed309b6c-s.p.woff2?v=1777260504113",
+            "initiatorType": "link",
+            "duration": 435.79999999701977,
+            "transferSize": 11664,
+            "encodedBodySize": 11364
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/8a1d8947e5852e30-s.p.woff2?v=1777260504113",
+            "initiatorType": "link",
+            "duration": 429.1000000014901,
+            "transferSize": 34860,
+            "encodedBodySize": 34560
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/analytics/layout.js",
+            "initiatorType": "script",
+            "duration": 427.6000000014901,
+            "transferSize": 154127,
+            "encodedBodySize": 153827
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/76fcc95954fbfc88-s.p.woff2?v=1777260504113",
+            "initiatorType": "link",
+            "duration": 419.3999999985099,
+            "transferSize": 9856,
+            "encodedBodySize": 9556
+          }
+        ]
+      },
+      "heap": {
+        "jsHeapSizeLimit": 2330000000,
+        "totalJSHeapSize": 322000000,
+        "usedJSHeapSize": 286000000
+      },
+      "errors": [
+        "Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+        "Unexpected end of JSON input",
+        "Invalid or unexpected token",
+        "Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead."
+      ],
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "timestamp": "2026-04-27T03:28:42.094Z",
+      "project": "chromium",
+      "route": "/dashboard/analytics",
+      "scenario": "warm",
+      "runIndex": 3,
+      "status": 200,
+      "ok": true,
+      "finalUrl": "http://localhost:3217/dashboard/analytics",
+      "durationMs": 6054.294416999997,
+      "navigation": {
+        "name": "http://localhost:3217/dashboard/analytics",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 5090.70000000298,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentEncoding": "gzip",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 6.299999997019768,
+        "domainLookupStart": 6.299999997019768,
+        "domainLookupEnd": 6.299999997019768,
+        "connectStart": 6.299999997019768,
+        "secureConnectionStart": 0,
+        "connectEnd": 6.299999997019768,
+        "requestStart": 9.299999997019768,
+        "responseStart": 562.6000000014901,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 562.6000000014901,
+        "responseEnd": 1132.7000000029802,
+        "transferSize": 55054,
+        "encodedBodySize": 54754,
+        "decodedBodySize": 395024,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 573.3999999985099,
+        "unloadEventEnd": 573.3999999985099,
+        "domInteractive": 1133.2999999970198,
+        "domContentLoadedEventStart": 1133.2999999970198,
+        "domContentLoadedEventEnd": 1133.2999999970198,
+        "domComplete": 5089.89999999851,
+        "loadEventStart": 5090.70000000298,
+        "loadEventEnd": 5090.70000000298,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "high"
+        }
+      },
+      "paints": {
+        "fcp": 752,
+        "fp": 752
+      },
+      "webVitalsProxy": {
+        "lcp": 1760,
+        "cls": 0,
+        "longTaskCount": 1,
+        "longTaskTotalMs": 300,
+        "maxLongTaskMs": 300,
+        "inpProxyMs": null
+      },
+      "resources": {
+        "count": 28,
+        "totalTransferSize": 3185510,
+        "totalEncodedBodySize": 8628013,
+        "byType": {
+          "link": {
+            "count": 12,
+            "transferSize": 231266,
+            "encodedBodySize": 227966
+          },
+          "script": {
+            "count": 11,
+            "transferSize": 2953900,
+            "encodedBodySize": 8343467
+          },
+          "css": {
+            "count": 4,
+            "transferSize": 0,
+            "encodedBodySize": 56536
+          },
+          "fetch": {
+            "count": 1,
+            "transferSize": 344,
+            "encodedBodySize": 44
+          }
+        },
+        "slowest": [
+          {
+            "name": "http://localhost:3217/_next/static/chunks/main-app.js?v=1777260516246",
+            "initiatorType": "script",
+            "duration": 4101.5,
+            "transferSize": 2720965,
+            "encodedBodySize": 2720665
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/layout.js",
+            "initiatorType": "script",
+            "duration": 389.70000000298023,
+            "transferSize": 228452,
+            "encodedBodySize": 228152
+          },
+          {
+            "name": "http://localhost:3217/_next/static/webpack/82a6467fe284323b.webpack.hot-update.json",
+            "initiatorType": "fetch",
+            "duration": 211.89999999850988,
+            "transferSize": 344,
+            "encodedBodySize": 44
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/bc08e10e1c60a660-s.p.woff2?v=1777260516246",
+            "initiatorType": "link",
+            "duration": 104.80000000447035,
+            "transferSize": 11508,
+            "encodedBodySize": 11208
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/b7ea2ab4a8ad1f81-s.p.woff2?v=1777260516246",
+            "initiatorType": "link",
+            "duration": 103,
+            "transferSize": 9024,
+            "encodedBodySize": 8724
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/9816a0e0ed309b6c-s.p.woff2?v=1777260516246",
+            "initiatorType": "link",
+            "duration": 98.80000000447035,
+            "transferSize": 11664,
+            "encodedBodySize": 11364
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/8a1d8947e5852e30-s.p.woff2?v=1777260516246",
+            "initiatorType": "link",
+            "duration": 98.70000000298023,
+            "transferSize": 34860,
+            "encodedBodySize": 34560
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/analytics/page.js",
+            "initiatorType": "script",
+            "duration": 95.30000000447035,
+            "transferSize": 300,
+            "encodedBodySize": 2413087
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/76fcc95954fbfc88-s.p.woff2?v=1777260516246",
+            "initiatorType": "link",
+            "duration": 89.70000000298023,
+            "transferSize": 9856,
+            "encodedBodySize": 9556
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/5d259b4d93dec8ad-s.p.woff2?v=1777260516246",
+            "initiatorType": "link",
+            "duration": 88,
+            "transferSize": 9816,
+            "encodedBodySize": 9516
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/3dc379dc9b5dec12-s.p.woff2?v=1777260516246",
+            "initiatorType": "link",
+            "duration": 87.19999999552965,
+            "transferSize": 25540,
+            "encodedBodySize": 25240
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/56da557e531d1081-s.p.woff2?v=1777260516246",
+            "initiatorType": "link",
+            "duration": 86.79999999701977,
+            "transferSize": 24104,
+            "encodedBodySize": 23804
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/0e96d314a90a6138-s.p.woff2?v=1777260516246",
+            "initiatorType": "link",
+            "duration": 86.10000000149012,
+            "transferSize": 8988,
+            "encodedBodySize": 8688
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/error.js",
+            "initiatorType": "script",
+            "duration": 83.79999999701977,
+            "transferSize": 300,
+            "encodedBodySize": 209579
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/analytics/error.js",
+            "initiatorType": "script",
+            "duration": 67.5,
+            "transferSize": 300,
+            "encodedBodySize": 131301
+          }
+        ]
+      },
+      "heap": {
+        "jsHeapSizeLimit": 2330000000,
+        "totalJSHeapSize": 286000000,
+        "usedJSHeapSize": 239000000
+      },
+      "errors": [
+        "Invalid or unexpected token",
+        "Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead."
+      ],
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "timestamp": "2026-04-27T03:29:07.961Z",
+      "project": "chromium",
+      "route": "/dashboard/3d-lab",
+      "scenario": "cold",
+      "runIndex": 1,
+      "status": 200,
+      "ok": true,
+      "finalUrl": "http://localhost:3217/dashboard/3d-lab",
+      "durationMs": 24969.718749999985,
+      "navigation": {
+        "name": "http://localhost:3217/dashboard/3d-lab",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 24003.89999999851,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentEncoding": "gzip",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 0.3999999985098839,
+        "domainLookupStart": 1.7999999970197678,
+        "domainLookupEnd": 1.7999999970197678,
+        "connectStart": 1.7999999970197678,
+        "secureConnectionStart": 0,
+        "connectEnd": 2,
+        "requestStart": 2,
+        "responseStart": 19108.19999999553,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 19108.19999999553,
+        "responseEnd": 20361.10000000149,
+        "transferSize": 32406,
+        "encodedBodySize": 32106,
+        "decodedBodySize": 181608,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 20506.60000000149,
+        "domContentLoadedEventStart": 20506.60000000149,
+        "domContentLoadedEventEnd": 20506.60000000149,
+        "domComplete": 24003.69999999553,
+        "loadEventStart": 24003.89999999851,
+        "loadEventEnd": 24003.89999999851,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "high"
+        }
+      },
+      "paints": {
+        "fcp": 20508,
+        "fp": 20508
+      },
+      "webVitalsProxy": {
+        "lcp": 20740,
+        "cls": 0,
+        "longTaskCount": 3,
+        "longTaskTotalMs": 777,
+        "maxLongTaskMs": 592,
+        "inpProxyMs": null
+      },
+      "resources": {
+        "count": 37,
+        "totalTransferSize": 6710799,
+        "totalEncodedBodySize": 6699999,
+        "byType": {
+          "link": {
+            "count": 12,
+            "transferSize": 231264,
+            "encodedBodySize": 227964
+          },
+          "script": {
+            "count": 17,
+            "transferSize": 6400791,
+            "encodedBodySize": 6395691
+          },
+          "css": {
+            "count": 4,
+            "transferSize": 77368,
+            "encodedBodySize": 76168
+          },
+          "fetch": {
+            "count": 4,
+            "transferSize": 1376,
+            "encodedBodySize": 176
+          }
+        },
+        "slowest": [
+          {
+            "name": "http://localhost:3217/_next/static/chunks/main-app.js?v=1777260541063",
+            "initiatorType": "script",
+            "duration": 3392.10000000149,
+            "transferSize": 2720965,
+            "encodedBodySize": 2720665
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/layout.js",
+            "initiatorType": "script",
+            "duration": 1915.1999999955297,
+            "transferSize": 2303273,
+            "encodedBodySize": 2302973
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/3d-lab/page.js",
+            "initiatorType": "script",
+            "duration": 1152.2999999970198,
+            "transferSize": 367072,
+            "encodedBodySize": 366772
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/error.js",
+            "initiatorType": "script",
+            "duration": 1126,
+            "transferSize": 209879,
+            "encodedBodySize": 209579
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/layout.js",
+            "initiatorType": "script",
+            "duration": 1057.2999999970198,
+            "transferSize": 382953,
+            "encodedBodySize": 382653
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/3d-lab/error.js",
+            "initiatorType": "script",
+            "duration": 1052.1999999955297,
+            "transferSize": 209930,
+            "encodedBodySize": 209630
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/bc08e10e1c60a660-s.p.woff2?v=1777260541063",
+            "initiatorType": "link",
+            "duration": 611.2999999970198,
+            "transferSize": 11508,
+            "encodedBodySize": 11208
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/b7ea2ab4a8ad1f81-s.p.woff2?v=1777260541063",
+            "initiatorType": "link",
+            "duration": 608.7000000029802,
+            "transferSize": 9024,
+            "encodedBodySize": 8724
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/9816a0e0ed309b6c-s.p.woff2?v=1777260541063",
+            "initiatorType": "link",
+            "duration": 608.6000000014901,
+            "transferSize": 11664,
+            "encodedBodySize": 11364
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/error.js",
+            "initiatorType": "script",
+            "duration": 606.7999999970198,
+            "transferSize": 121317,
+            "encodedBodySize": 121017
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/3d-lab/layout.js",
+            "initiatorType": "script",
+            "duration": 587.2999999970198,
+            "transferSize": 14490,
+            "encodedBodySize": 14190
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app-pages-internals.js",
+            "initiatorType": "script",
+            "duration": 528.7000000029802,
+            "transferSize": 61383,
+            "encodedBodySize": 61083
+          },
+          {
+            "name": "http://localhost:3217/_next/static/css/app/layout.css?v=1777260541063",
+            "initiatorType": "link",
+            "duration": 522,
+            "transferSize": 56853,
+            "encodedBodySize": 56553
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/webpack.js?v=1777260541063",
+            "initiatorType": "link",
+            "duration": 513.5,
+            "transferSize": 29051,
+            "encodedBodySize": 28751
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/9816a0e0ed309b6c-s.p.woff2",
+            "initiatorType": "css",
+            "duration": 468.5,
+            "transferSize": 11664,
+            "encodedBodySize": 11364
+          }
+        ]
+      },
+      "heap": {
+        "jsHeapSizeLimit": 2330000000,
+        "totalJSHeapSize": 239000000,
+        "usedJSHeapSize": 177000000
+      },
+      "errors": [
+        "Invalid or unexpected token",
+        "Internal Next.js error: Router action dispatched before initialization.",
+        "Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead."
+      ],
+      "screenshot": ".ai/00_performance/screenshots/chromium-dashboard-3d-lab-cold.png",
+      "trace": ".ai/00_performance/traces/chromium-dashboard-3d-lab-cold.zip"
+    },
+    {
+      "timestamp": "2026-04-27T03:29:20.553Z",
+      "project": "chromium",
+      "route": "/dashboard/3d-lab",
+      "scenario": "warm",
+      "runIndex": 1,
+      "status": 200,
+      "ok": true,
+      "finalUrl": "http://localhost:3217/dashboard/3d-lab",
+      "durationMs": 4636.419667000009,
+      "navigation": {
+        "name": "http://localhost:3217/dashboard/3d-lab",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 3774.89999999851,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentEncoding": "gzip",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 3.1999999955296516,
+        "domainLookupStart": 3.1999999955296516,
+        "domainLookupEnd": 3.1999999955296516,
+        "connectStart": 3.1999999955296516,
+        "secureConnectionStart": 0,
+        "connectEnd": 3.1999999955296516,
+        "requestStart": 6.399999998509884,
+        "responseStart": 234.89999999850988,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 234.89999999850988,
+        "responseEnd": 836.7999999970198,
+        "transferSize": 32408,
+        "encodedBodySize": 32108,
+        "decodedBodySize": 181608,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 244.5,
+        "unloadEventEnd": 244.5,
+        "domInteractive": 837.1999999955297,
+        "domContentLoadedEventStart": 837.1999999955297,
+        "domContentLoadedEventEnd": 837.1999999955297,
+        "domComplete": 3774.7999999970198,
+        "loadEventStart": 3774.89999999851,
+        "loadEventEnd": 3774.89999999851,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "high"
+        }
+      },
+      "paints": {
+        "fcp": 648,
+        "fp": 648
+      },
+      "webVitalsProxy": {
+        "lcp": 1132,
+        "cls": 0,
+        "longTaskCount": 1,
+        "longTaskTotalMs": 240,
+        "maxLongTaskMs": 240,
+        "inpProxyMs": null
+      },
+      "resources": {
+        "count": 28,
+        "totalTransferSize": 3348323,
+        "totalEncodedBodySize": 6674179,
+        "byType": {
+          "link": {
+            "count": 12,
+            "transferSize": 231284,
+            "encodedBodySize": 227984
+          },
+          "script": {
+            "count": 11,
+            "transferSize": 3116351,
+            "encodedBodySize": 6398295
+          },
+          "css": {
+            "count": 3,
+            "transferSize": 0,
+            "encodedBodySize": 47812
+          },
+          "fetch": {
+            "count": 2,
+            "transferSize": 688,
+            "encodedBodySize": 88
+          }
+        },
+        "slowest": [
+          {
+            "name": "http://localhost:3217/_next/static/chunks/main-app.js?v=1777260555770",
+            "initiatorType": "script",
+            "duration": 2972.3000000044703,
+            "transferSize": 2720965,
+            "encodedBodySize": 2720665
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/layout.js",
+            "initiatorType": "script",
+            "duration": 875.5,
+            "transferSize": 390906,
+            "encodedBodySize": 390606
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/error.js",
+            "initiatorType": "script",
+            "duration": 448.80000000447035,
+            "transferSize": 300,
+            "encodedBodySize": 209579
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/3d-lab/error.js",
+            "initiatorType": "script",
+            "duration": 340.20000000298023,
+            "transferSize": 300,
+            "encodedBodySize": 209630
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/3d-lab/layout.js",
+            "initiatorType": "script",
+            "duration": 338.80000000447035,
+            "transferSize": 300,
+            "encodedBodySize": 14190
+          },
+          {
+            "name": "http://localhost:3217/_next/static/css/app/layout.css?v=1777260555770",
+            "initiatorType": "link",
+            "duration": 333.5,
+            "transferSize": 56871,
+            "encodedBodySize": 56571
+          },
+          {
+            "name": "http://localhost:3217/_next/static/webpack/8e78d3381b276269.webpack.hot-update.json",
+            "initiatorType": "fetch",
+            "duration": 163,
+            "transferSize": 344,
+            "encodedBodySize": 44
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/3d-lab/page.js",
+            "initiatorType": "script",
+            "duration": 118.5,
+            "transferSize": 300,
+            "encodedBodySize": 366772
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/bc08e10e1c60a660-s.p.woff2?v=1777260555770",
+            "initiatorType": "link",
+            "duration": 113.89999999850988,
+            "transferSize": 11508,
+            "encodedBodySize": 11208
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/webpack.js?v=1777260555770",
+            "initiatorType": "link",
+            "duration": 113.60000000149012,
+            "transferSize": 29053,
+            "encodedBodySize": 28753
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/b7ea2ab4a8ad1f81-s.p.woff2?v=1777260555770",
+            "initiatorType": "link",
+            "duration": 112.5,
+            "transferSize": 9024,
+            "encodedBodySize": 8724
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/8a1d8947e5852e30-s.p.woff2?v=1777260555770",
+            "initiatorType": "link",
+            "duration": 112.20000000298023,
+            "transferSize": 34860,
+            "encodedBodySize": 34560
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/9816a0e0ed309b6c-s.p.woff2?v=1777260555770",
+            "initiatorType": "link",
+            "duration": 111.20000000298023,
+            "transferSize": 11664,
+            "encodedBodySize": 11364
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/error.js",
+            "initiatorType": "script",
+            "duration": 98.70000000298023,
+            "transferSize": 300,
+            "encodedBodySize": 121017
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/76fcc95954fbfc88-s.p.woff2?v=1777260555770",
+            "initiatorType": "link",
+            "duration": 79.70000000298023,
+            "transferSize": 9856,
+            "encodedBodySize": 9556
+          }
+        ]
+      },
+      "heap": {
+        "jsHeapSizeLimit": 2330000000,
+        "totalJSHeapSize": 286000000,
+        "usedJSHeapSize": 254000000
+      },
+      "errors": [
+        "Invalid or unexpected token",
+        "Invalid or unexpected token",
+        "Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead."
+      ],
+      "screenshot": null,
+      "trace": ".ai/00_performance/traces/chromium-dashboard-3d-lab-warm.zip"
+    },
+    {
+      "timestamp": "2026-04-27T03:29:27.315Z",
+      "project": "chromium",
+      "route": "/dashboard/3d-lab",
+      "scenario": "cold",
+      "runIndex": 2,
+      "status": 200,
+      "ok": true,
+      "finalUrl": "http://localhost:3217/dashboard/3d-lab",
+      "durationMs": 6305.2124170000025,
+      "navigation": {
+        "name": "http://localhost:3217/dashboard/3d-lab",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 4005,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentEncoding": "gzip",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 2.6999999955296516,
+        "domainLookupStart": 3.7999999970197678,
+        "domainLookupEnd": 3.7999999970197678,
+        "connectStart": 3.7999999970197678,
+        "secureConnectionStart": 0,
+        "connectEnd": 4.0999999940395355,
+        "requestStart": 4.0999999940395355,
+        "responseStart": 285.8999999985099,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 285.8999999985099,
+        "responseEnd": 1594.2999999970198,
+        "transferSize": 32407,
+        "encodedBodySize": 32107,
+        "decodedBodySize": 181608,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 1594.8999999985099,
+        "domContentLoadedEventStart": 1594.8999999985099,
+        "domContentLoadedEventEnd": 1594.8999999985099,
+        "domComplete": 4004.89999999851,
+        "loadEventStart": 4005,
+        "loadEventEnd": 4005,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "high"
+        }
+      },
+      "paints": {
+        "fcp": 1100,
+        "fp": 1100
+      },
+      "webVitalsProxy": {
+        "lcp": 1512,
+        "cls": 0,
+        "longTaskCount": 2,
+        "longTaskTotalMs": 358,
+        "maxLongTaskMs": 291,
+        "inpProxyMs": null
+      },
+      "resources": {
+        "count": 43,
+        "totalTransferSize": 7011792,
+        "totalEncodedBodySize": 6999492,
+        "byType": {
+          "link": {
+            "count": 14,
+            "transferSize": 345023,
+            "encodedBodySize": 341123
+          },
+          "script": {
+            "count": 17,
+            "transferSize": 6550870,
+            "encodedBodySize": 6545770
+          },
+          "css": {
+            "count": 4,
+            "transferSize": 77368,
+            "encodedBodySize": 76168
+          },
+          "img": {
+            "count": 1,
+            "transferSize": 0,
+            "encodedBodySize": 0
+          },
+          "fetch": {
+            "count": 7,
+            "transferSize": 38531,
+            "encodedBodySize": 36431
+          }
+        },
+        "slowest": [
+          {
+            "name": "http://localhost:3217/_next/static/chunks/main-app.js?v=1777260561160",
+            "initiatorType": "script",
+            "duration": 3337.10000000149,
+            "transferSize": 2720965,
+            "encodedBodySize": 2720665
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/layout.js",
+            "initiatorType": "script",
+            "duration": 2656.5,
+            "transferSize": 533034,
+            "encodedBodySize": 532734
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/3d-lab/page.js",
+            "initiatorType": "script",
+            "duration": 2621.89999999851,
+            "transferSize": 367072,
+            "encodedBodySize": 366772
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/layout.js",
+            "initiatorType": "script",
+            "duration": 2200.2999999970198,
+            "transferSize": 2303273,
+            "encodedBodySize": 2302973
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/3d-lab/error.js",
+            "initiatorType": "script",
+            "duration": 2109.2999999970198,
+            "transferSize": 209930,
+            "encodedBodySize": 209630
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/error.js",
+            "initiatorType": "script",
+            "duration": 2108.60000000149,
+            "transferSize": 209879,
+            "encodedBodySize": 209579
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/3d-lab/layout.js",
+            "initiatorType": "script",
+            "duration": 845.5,
+            "transferSize": 14490,
+            "encodedBodySize": 14190
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/error.js",
+            "initiatorType": "script",
+            "duration": 843.1000000014901,
+            "transferSize": 121317,
+            "encodedBodySize": 121017
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app-pages-internals.js",
+            "initiatorType": "script",
+            "duration": 778.6000000014901,
+            "transferSize": 61383,
+            "encodedBodySize": 61083
+          },
+          {
+            "name": "http://localhost:3217/_next/static/css/app/layout.css?v=1777260561160",
+            "initiatorType": "link",
+            "duration": 635.6999999955297,
+            "transferSize": 56871,
+            "encodedBodySize": 56571
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/3dc379dc9b5dec12-s.p.woff2",
+            "initiatorType": "css",
+            "duration": 400.70000000298023,
+            "transferSize": 25540,
+            "encodedBodySize": 25240
+          },
+          {
+            "name": "http://localhost:3217/dashboard/3d-lab",
+            "initiatorType": "fetch",
+            "duration": 384.20000000298023,
+            "transferSize": 399,
+            "encodedBodySize": 99
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/8a1d8947e5852e30-s.p.woff2?v=1777260561160",
+            "initiatorType": "link",
+            "duration": 321.40000000596046,
+            "transferSize": 34860,
+            "encodedBodySize": 34560
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/b7ea2ab4a8ad1f81-s.p.woff2?v=1777260561160",
+            "initiatorType": "link",
+            "duration": 321.3999999985099,
+            "transferSize": 9024,
+            "encodedBodySize": 8724
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/bc08e10e1c60a660-s.p.woff2?v=1777260561160",
+            "initiatorType": "link",
+            "duration": 320.80000000447035,
+            "transferSize": 11508,
+            "encodedBodySize": 11208
+          }
+        ]
+      },
+      "heap": {
+        "jsHeapSizeLimit": 2330000000,
+        "totalJSHeapSize": 148000000,
+        "usedJSHeapSize": 123000000
+      },
+      "errors": [],
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "timestamp": "2026-04-27T03:29:32.032Z",
+      "project": "chromium",
+      "route": "/dashboard/3d-lab",
+      "scenario": "warm",
+      "runIndex": 2,
+      "status": 200,
+      "ok": true,
+      "finalUrl": "http://localhost:3217/dashboard/3d-lab",
+      "durationMs": 2912.4529589999875,
+      "navigation": {
+        "name": "http://localhost:3217/dashboard/3d-lab",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 1048.5999999940395,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentEncoding": "gzip",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 0.5,
+        "domainLookupStart": 0.5,
+        "domainLookupEnd": 0.5,
+        "connectStart": 0.5,
+        "secureConnectionStart": 0,
+        "connectEnd": 0.5,
+        "requestStart": 1.6999999955296516,
+        "responseStart": 259.09999999403954,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 259.09999999403954,
+        "responseEnd": 542,
+        "transferSize": 32412,
+        "encodedBodySize": 32112,
+        "decodedBodySize": 181608,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 261,
+        "unloadEventEnd": 261,
+        "domInteractive": 542.3999999985099,
+        "domContentLoadedEventStart": 542.3999999985099,
+        "domContentLoadedEventEnd": 542.3999999985099,
+        "domComplete": 1048.5999999940395,
+        "loadEventStart": 1048.5999999940395,
+        "loadEventEnd": 1048.5999999940395,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "high"
+        }
+      },
+      "paints": {
+        "fcp": 364,
+        "fp": 364
+      },
+      "webVitalsProxy": {
+        "lcp": 684,
+        "cls": 0,
+        "longTaskCount": 1,
+        "longTaskTotalMs": 249,
+        "maxLongTaskMs": 249,
+        "inpProxyMs": null
+      },
+      "resources": {
+        "count": 38,
+        "totalTransferSize": 3307441,
+        "totalEncodedBodySize": 6658953,
+        "byType": {
+          "link": {
+            "count": 14,
+            "transferSize": 345025,
+            "encodedBodySize": 341125
+          },
+          "script": {
+            "count": 15,
+            "transferSize": 2924623,
+            "encodedBodySize": 6205367
+          },
+          "css": {
+            "count": 4,
+            "transferSize": 0,
+            "encodedBodySize": 76168
+          },
+          "fetch": {
+            "count": 5,
+            "transferSize": 37793,
+            "encodedBodySize": 36293
+          }
+        },
+        "slowest": [
+          {
+            "name": "http://localhost:3217/_next/static/chunks/main-app.js?v=1777260569262",
+            "initiatorType": "script",
+            "duration": 481.1000000014901,
+            "transferSize": 2720965,
+            "encodedBodySize": 2720665
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/layout.js",
+            "initiatorType": "script",
+            "duration": 251.29999999701977,
+            "transferSize": 194412,
+            "encodedBodySize": 194112
+          },
+          {
+            "name": "http://localhost:3217/dashboard/3d-lab?_rsc=1tl93",
+            "initiatorType": "fetch",
+            "duration": 123.70000000298023,
+            "transferSize": 18379,
+            "encodedBodySize": 18079
+          },
+          {
+            "name": "http://localhost:3217/_next/static/webpack/bdd6d62bad8450dc.webpack.hot-update.json",
+            "initiatorType": "fetch",
+            "duration": 112.5,
+            "transferSize": 344,
+            "encodedBodySize": 44
+          },
+          {
+            "name": "http://localhost:3217/dashboard/3d-lab?_rsc=1tl93",
+            "initiatorType": "fetch",
+            "duration": 112.39999999850988,
+            "transferSize": 18382,
+            "encodedBodySize": 18082
+          },
+          {
+            "name": "http://localhost:3217/_next/static/webpack/2570b2c0c8f931fd.webpack.hot-update.json",
+            "initiatorType": "fetch",
+            "duration": 100.70000000298023,
+            "transferSize": 344,
+            "encodedBodySize": 44
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/bc08e10e1c60a660-s.p.woff2?v=1777260569262",
+            "initiatorType": "link",
+            "duration": 48.70000000298023,
+            "transferSize": 11508,
+            "encodedBodySize": 11208
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/b7ea2ab4a8ad1f81-s.p.woff2?v=1777260569262",
+            "initiatorType": "link",
+            "duration": 47.29999999701977,
+            "transferSize": 9024,
+            "encodedBodySize": 8724
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/9816a0e0ed309b6c-s.p.woff2?v=1777260569262",
+            "initiatorType": "link",
+            "duration": 46.899999998509884,
+            "transferSize": 11664,
+            "encodedBodySize": 11364
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/8a1d8947e5852e30-s.p.woff2?v=1777260569262",
+            "initiatorType": "link",
+            "duration": 46.79999999701977,
+            "transferSize": 34860,
+            "encodedBodySize": 34560
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/error.js",
+            "initiatorType": "script",
+            "duration": 43,
+            "transferSize": 300,
+            "encodedBodySize": 209579
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/3d-lab/error.js",
+            "initiatorType": "script",
+            "duration": 43,
+            "transferSize": 300,
+            "encodedBodySize": 209630
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/5d259b4d93dec8ad-s.p.woff2?v=1777260569262",
+            "initiatorType": "link",
+            "duration": 42.600000001490116,
+            "transferSize": 9816,
+            "encodedBodySize": 9516
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/76fcc95954fbfc88-s.p.woff2?v=1777260569262",
+            "initiatorType": "link",
+            "duration": 42.600000001490116,
+            "transferSize": 9856,
+            "encodedBodySize": 9556
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/56da557e531d1081-s.p.woff2?v=1777260569262",
+            "initiatorType": "link",
+            "duration": 42,
+            "transferSize": 24104,
+            "encodedBodySize": 23804
+          }
+        ]
+      },
+      "heap": {
+        "jsHeapSizeLimit": 2330000000,
+        "totalJSHeapSize": 435000000,
+        "usedJSHeapSize": 410000000
+      },
+      "errors": [
+        "Invalid or unexpected token",
+        "Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead."
+      ],
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "timestamp": "2026-04-27T03:29:35.995Z",
+      "project": "chromium",
+      "route": "/dashboard/3d-lab",
+      "scenario": "cold",
+      "runIndex": 3,
+      "status": 200,
+      "ok": true,
+      "finalUrl": "http://localhost:3217/dashboard/3d-lab",
+      "durationMs": 3881.182750000007,
+      "navigation": {
+        "name": "http://localhost:3217/dashboard/3d-lab",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 2922.0999999940395,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentEncoding": "gzip",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 0.09999999403953552,
+        "domainLookupStart": 0.3999999985098839,
+        "domainLookupEnd": 0.3999999985098839,
+        "connectStart": 0.3999999985098839,
+        "secureConnectionStart": 0,
+        "connectEnd": 0.5,
+        "requestStart": 0.5999999940395355,
+        "responseStart": 234.09999999403954,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 234.09999999403954,
+        "responseEnd": 1590.5,
+        "transferSize": 32410,
+        "encodedBodySize": 32110,
+        "decodedBodySize": 181608,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 1591.0999999940395,
+        "domContentLoadedEventStart": 1591.0999999940395,
+        "domContentLoadedEventEnd": 1591.0999999940395,
+        "domComplete": 2921.89999999851,
+        "loadEventStart": 2922.0999999940395,
+        "loadEventEnd": 2922.0999999940395,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "high"
+        }
+      },
+      "paints": {
+        "fcp": 328,
+        "fp": 328
+      },
+      "webVitalsProxy": {
+        "lcp": 1632,
+        "cls": 0,
+        "longTaskCount": 1,
+        "longTaskTotalMs": 297,
+        "maxLongTaskMs": 297,
+        "inpProxyMs": null
+      },
+      "resources": {
+        "count": 39,
+        "totalTransferSize": 6680552,
+        "totalEncodedBodySize": 6669152,
+        "byType": {
+          "link": {
+            "count": 13,
+            "transferSize": 288154,
+            "encodedBodySize": 284554
+          },
+          "script": {
+            "count": 17,
+            "transferSize": 6295274,
+            "encodedBodySize": 6290174
+          },
+          "css": {
+            "count": 4,
+            "transferSize": 77368,
+            "encodedBodySize": 76168
+          },
+          "fetch": {
+            "count": 5,
+            "transferSize": 19756,
+            "encodedBodySize": 18256
+          }
+        },
+        "slowest": [
+          {
+            "name": "http://localhost:3217/_next/static/chunks/main-app.js?v=1777260572267",
+            "initiatorType": "script",
+            "duration": 2341.2000000029802,
+            "transferSize": 2720965,
+            "encodedBodySize": 2720665
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/3d-lab/page.js",
+            "initiatorType": "script",
+            "duration": 1610.6000000014901,
+            "transferSize": 367072,
+            "encodedBodySize": 366772
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/error.js",
+            "initiatorType": "script",
+            "duration": 1583,
+            "transferSize": 209879,
+            "encodedBodySize": 209579
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/3d-lab/error.js",
+            "initiatorType": "script",
+            "duration": 1526.5,
+            "transferSize": 209930,
+            "encodedBodySize": 209630
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/layout.js",
+            "initiatorType": "script",
+            "duration": 1330.7999999970198,
+            "transferSize": 277435,
+            "encodedBodySize": 277135
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/error.js",
+            "initiatorType": "script",
+            "duration": 989.3999999985099,
+            "transferSize": 121317,
+            "encodedBodySize": 121017
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/layout.js",
+            "initiatorType": "script",
+            "duration": 985,
+            "transferSize": 2303273,
+            "encodedBodySize": 2302973
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/9816a0e0ed309b6c-s.p.woff2",
+            "initiatorType": "css",
+            "duration": 931.5,
+            "transferSize": 11664,
+            "encodedBodySize": 11364
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/bc08e10e1c60a660-s.p.woff2",
+            "initiatorType": "css",
+            "duration": 615.5,
+            "transferSize": 11508,
+            "encodedBodySize": 11208
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/3d-lab/layout.js",
+            "initiatorType": "script",
+            "duration": 388.6000000014901,
+            "transferSize": 14490,
+            "encodedBodySize": 14190
+          },
+          {
+            "name": "http://localhost:3217/__nextjs_font/geist-latin.woff2",
+            "initiatorType": "css",
+            "duration": 156.19999999552965,
+            "transferSize": 28656,
+            "encodedBodySize": 28356
+          },
+          {
+            "name": "https://lh3.googleusercontent.com/a/ACg8ocL-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X=s96-c",
+            "initiatorType": "link",
+            "duration": 131.60000000149012,
+            "transferSize": 0,
+            "encodedBodySize": 0
+          },
+          {
+            "name": "http://localhost:3217/dashboard/3d-lab?_rsc=1tl93",
+            "initiatorType": "fetch",
+            "duration": 128.39999999850988,
+            "transferSize": 18380,
+            "encodedBodySize": 18080
+          },
+          {
+            "name": "http://localhost:3217/_next/static/webpack/400492cc5049d29f.webpack.hot-update.json",
+            "initiatorType": "fetch",
+            "duration": 119.80000000447035,
+            "transferSize": 344,
+            "encodedBodySize": 44
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/bc08e10e1c60a660-s.p.woff2?v=1777260572267",
+            "initiatorType": "link",
+            "duration": 47.399999998509884,
+            "transferSize": 11508,
+            "encodedBodySize": 11208
+          }
+        ]
+      },
+      "heap": {
+        "jsHeapSizeLimit": 2330000000,
+        "totalJSHeapSize": 239000000,
+        "usedJSHeapSize": 131000000
+      },
+      "errors": [
+        "Invalid or unexpected token",
+        "Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead."
+      ],
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "timestamp": "2026-04-27T03:29:40.090Z",
+      "project": "chromium",
+      "route": "/dashboard/3d-lab",
+      "scenario": "warm",
+      "runIndex": 3,
+      "status": 200,
+      "ok": true,
+      "finalUrl": "http://localhost:3217/dashboard/3d-lab",
+      "durationMs": 2841.92637500001,
+      "navigation": {
+        "name": "http://localhost:3217/dashboard/3d-lab",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 1837.3000000044703,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentEncoding": "gzip",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 0.20000000298023224,
+        "domainLookupStart": 0.20000000298023224,
+        "domainLookupEnd": 0.20000000298023224,
+        "connectStart": 0.20000000298023224,
+        "secureConnectionStart": 0,
+        "connectEnd": 0.20000000298023224,
+        "requestStart": 0.8000000044703484,
+        "responseStart": 188.60000000149012,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 188.60000000149012,
+        "responseEnd": 566.1000000014901,
+        "transferSize": 32407,
+        "encodedBodySize": 32107,
+        "decodedBodySize": 181608,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 190.90000000596046,
+        "unloadEventEnd": 190.90000000596046,
+        "domInteractive": 566.4000000059605,
+        "domContentLoadedEventStart": 566.4000000059605,
+        "domContentLoadedEventEnd": 566.4000000059605,
+        "domComplete": 1837.1000000014901,
+        "loadEventStart": 1837.3000000044703,
+        "loadEventEnd": 1837.3000000044703,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "high"
+        }
+      },
+      "paints": {
+        "fcp": 332,
+        "fp": 332
+      },
+      "webVitalsProxy": {
+        "lcp": 692,
+        "cls": 0,
+        "longTaskCount": 1,
+        "longTaskTotalMs": 251,
+        "maxLongTaskMs": 251,
+        "inpProxyMs": null
+      },
+      "resources": {
+        "count": 35,
+        "totalTransferSize": 3300685,
+        "totalEncodedBodySize": 6624441,
+        "byType": {
+          "link": {
+            "count": 13,
+            "transferSize": 288154,
+            "encodedBodySize": 284554
+          },
+          "script": {
+            "count": 15,
+            "transferSize": 2993121,
+            "encodedBodySize": 6273865
+          },
+          "css": {
+            "count": 3,
+            "transferSize": 0,
+            "encodedBodySize": 47812
+          },
+          "fetch": {
+            "count": 4,
+            "transferSize": 19410,
+            "encodedBodySize": 18210
+          }
+        },
+        "slowest": [
+          {
+            "name": "http://localhost:3217/_next/static/chunks/main-app.js?v=1777260577306",
+            "initiatorType": "script",
+            "duration": 1317.3000000044703,
+            "transferSize": 2720965,
+            "encodedBodySize": 2720665
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/layout.js",
+            "initiatorType": "script",
+            "duration": 323,
+            "transferSize": 262912,
+            "encodedBodySize": 262612
+          },
+          {
+            "name": "https://lh3.googleusercontent.com/a/ACg8ocL-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X=s96-c",
+            "initiatorType": "link",
+            "duration": 123.60000000149012,
+            "transferSize": 0,
+            "encodedBodySize": 0
+          },
+          {
+            "name": "http://localhost:3217/dashboard/3d-lab?_rsc=1tl93",
+            "initiatorType": "fetch",
+            "duration": 109.59999999403954,
+            "transferSize": 18378,
+            "encodedBodySize": 18078
+          },
+          {
+            "name": "http://localhost:3217/_next/static/webpack/952c1570e1e524a5.webpack.hot-update.json",
+            "initiatorType": "fetch",
+            "duration": 95.79999999701977,
+            "transferSize": 344,
+            "encodedBodySize": 44
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/bc08e10e1c60a660-s.p.woff2?v=1777260577306",
+            "initiatorType": "link",
+            "duration": 89.5,
+            "transferSize": 11508,
+            "encodedBodySize": 11208
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/b7ea2ab4a8ad1f81-s.p.woff2?v=1777260577306",
+            "initiatorType": "link",
+            "duration": 89,
+            "transferSize": 9024,
+            "encodedBodySize": 8724
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/8a1d8947e5852e30-s.p.woff2?v=1777260577306",
+            "initiatorType": "link",
+            "duration": 88.69999999552965,
+            "transferSize": 34860,
+            "encodedBodySize": 34560
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/9816a0e0ed309b6c-s.p.woff2?v=1777260577306",
+            "initiatorType": "link",
+            "duration": 87.89999999850988,
+            "transferSize": 11664,
+            "encodedBodySize": 11364
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/76fcc95954fbfc88-s.p.woff2?v=1777260577306",
+            "initiatorType": "link",
+            "duration": 78.19999999552965,
+            "transferSize": 9856,
+            "encodedBodySize": 9556
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/5d259b4d93dec8ad-s.p.woff2?v=1777260577306",
+            "initiatorType": "link",
+            "duration": 77.60000000149012,
+            "transferSize": 9816,
+            "encodedBodySize": 9516
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/56da557e531d1081-s.p.woff2?v=1777260577306",
+            "initiatorType": "link",
+            "duration": 77.39999999850988,
+            "transferSize": 24104,
+            "encodedBodySize": 23804
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/3dc379dc9b5dec12-s.p.woff2?v=1777260577306",
+            "initiatorType": "link",
+            "duration": 77,
+            "transferSize": 25540,
+            "encodedBodySize": 25240
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/0e96d314a90a6138-s.p.woff2?v=1777260577306",
+            "initiatorType": "link",
+            "duration": 76.80000000447035,
+            "transferSize": 8988,
+            "encodedBodySize": 8688
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/error.js",
+            "initiatorType": "script",
+            "duration": 58,
+            "transferSize": 300,
+            "encodedBodySize": 209579
+          }
+        ]
+      },
+      "heap": {
+        "jsHeapSizeLimit": 2330000000,
+        "totalJSHeapSize": 254000000,
+        "usedJSHeapSize": 177000000
+      },
+      "errors": [
+        "Invalid or unexpected token",
+        "Invalid or unexpected token",
+        "Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead."
+      ],
+      "screenshot": null,
+      "trace": null
+    }
+  ],
+  "routeSummaries": [
+    {
+      "route": "/dashboard/analytics",
+      "runs": 6,
+      "cold": {
+        "count": 3,
+        "min": 12650.318167000005,
+        "max": 36087.498875,
+        "mean": 22116.59925,
+        "median": 17611.980708000003,
+        "p50": 17611.980708000003,
+        "p75": 26849.7397915,
+        "p95": 34239.94705829999,
+        "p99": 35717.98851166,
+        "stddev": 10084.44515219882
+      },
+      "warm": {
+        "count": 3,
+        "min": 3710.8362080000006,
+        "max": 6054.294416999997,
+        "mean": 5213.873041666663,
+        "median": 5876.488499999992,
+        "p50": 5876.488499999992,
+        "p75": 5965.391458499995,
+        "p95": 6036.513825299997,
+        "p99": 6050.738298659997,
+        "stddev": 1065.2835392667637
+      },
+      "ttfb": {
+        "count": 6,
+        "min": 336.6000000014901,
+        "max": 27650.5,
+        "mean": 6408.633333332837,
+        "median": 581.1499999985099,
+        "p50": 581.1499999985099,
+        "p75": 6704.449999997392,
+        "p95": 22922.824999999255,
+        "p99": 26704.964999999855,
+        "stddev": 9963.405133899743
+      },
+      "domContentLoaded": {
+        "count": 6,
+        "min": 1133.2999999970198,
+        "max": 30687.20000000298,
+        "mean": 8695.866666665921,
+        "median": 1911,
+        "p50": 1911,
+        "p75": 11880.624999996275,
+        "p95": 26806.800000000745,
+        "p99": 29911.120000002535,
+        "stddev": 11018.73079634108
+      },
+      "load": {
+        "count": 6,
+        "min": 2700.10000000149,
+        "max": 35301.10000000149,
+        "mean": 11244.600000000248,
+        "median": 5018.60000000149,
+        "p50": 5018.60000000149,
+        "p75": 12647.324999997392,
+        "p95": 30267.375,
+        "p99": 34294.3550000012,
+        "stddev": 11499.144217723151
+      },
+      "fcp": {
+        "count": 6,
+        "min": 500,
+        "max": 29544,
+        "mean": 8138.666666666667,
+        "median": 1096,
+        "p50": 1096,
+        "p75": 12246,
+        "p95": 26120,
+        "p99": 28859.200000000004,
+        "stddev": 11030.475037619892
+      },
+      "lcp": {
+        "count": 6,
+        "min": 1760,
+        "max": 30744,
+        "mean": 9221.333333333334,
+        "median": 2258,
+        "p50": 2258,
+        "p75": 12829,
+        "p95": 27138,
+        "p99": 30022.800000000003,
+        "stddev": 10943.826915460402
+      },
+      "cls": {
+        "count": 6,
+        "min": 0,
+        "max": 0.008193330738279556,
+        "mean": 0.0013655551230465927,
+        "median": 0,
+        "p50": 0,
+        "p75": 0,
+        "p95": 0.006144998053709667,
+        "p99": 0.00778366420136558,
+        "stddev": 0.003053474082155271
+      },
+      "longTaskTotal": {
+        "count": 6,
+        "min": 262,
+        "max": 1457,
+        "mean": 586.6666666666666,
+        "median": 416.5,
+        "p50": 416.5,
+        "p75": 625.75,
+        "p95": 1259.75,
+        "p99": 1417.5500000000002,
+        "stddev": 412.9582975986262
+      },
+      "requests": {
+        "count": 6,
+        "min": 11,
+        "max": 30,
+        "mean": 24.5,
+        "median": 26.5,
+        "p50": 26.5,
+        "p75": 27.75,
+        "p95": 29.5,
+        "p99": 29.9,
+        "stddev": 6.238322424070967
+      },
+      "transferredBytes": {
+        "count": 6,
+        "min": 1774082,
+        "max": 8773837,
+        "mean": 4865957.666666667,
+        "median": 3349596.5,
+        "p50": 3349596.5,
+        "p75": 7444282.75,
+        "p95": 8771158.75,
+        "p99": 8773301.35,
+        "stddev": 2813061.97172089
+      },
+      "jsHeapUsed": {
+        "count": 6,
+        "min": 42100000,
+        "max": 286000000,
+        "mean": 201350000,
+        "median": 232000000,
+        "p50": 232000000,
+        "p75": 239000000,
+        "p95": 274250000,
+        "p99": 283650000,
+        "stddev": 78010122.206459
+      },
+      "jsHeapTotal": {
+        "count": 6,
+        "min": 44700000,
+        "max": 322000000,
+        "mean": 243950000,
+        "median": 286000000,
+        "p50": 286000000,
+        "p75": 286000000,
+        "p95": 313000000,
+        "p99": 320200000,
+        "stddev": 92305177.71681789
+      },
+      "jsHeapLimit": {
+        "count": 6,
+        "min": 2330000000,
+        "max": 2330000000,
+        "mean": 2330000000,
+        "median": 2330000000,
+        "p50": 2330000000,
+        "p75": 2330000000,
+        "p95": 2330000000,
+        "p99": 2330000000,
+        "stddev": 0
+      },
+      "errorCount": 14,
+      "screenshots": [],
+      "traces": []
+    },
+    {
+      "route": "/dashboard/3d-lab",
+      "runs": 6,
+      "cold": {
+        "count": 3,
+        "min": 3881.182750000007,
+        "max": 24969.718749999985,
+        "mean": 11718.704638999998,
+        "median": 6305.2124170000025,
+        "p50": 6305.2124170000025,
+        "p75": 15637.465583499994,
+        "p95": 23103.268116699986,
+        "p99": 24596.428623339987,
+        "stddev": 9421.995938018816
+      },
+      "warm": {
+        "count": 3,
+        "min": 2841.92637500001,
+        "max": 4636.419667000009,
+        "mean": 3463.5996670000022,
+        "median": 2912.4529589999875,
+        "p50": 2912.4529589999875,
+        "p75": 3774.4363129999983,
+        "p95": 4464.022996200007,
+        "p99": 4601.9403328400085,
+        "stddev": 829.8086382062991
+      },
+      "ttfb": {
+        "count": 6,
+        "min": 188.60000000149012,
+        "max": 19108.19999999553,
+        "mean": 3385.1333333303533,
+        "median": 246.9999999962747,
+        "p50": 246.9999999962747,
+        "p75": 279.1999999973923,
+        "p95": 14402.624999996275,
+        "p99": 18167.08499999568,
+        "stddev": 7031.630483433136
+      },
+      "domContentLoaded": {
+        "count": 6,
+        "min": 542.3999999985099,
+        "max": 20506.60000000149,
+        "mean": 4273.099999999006,
+        "median": 1214.1499999947846,
+        "p50": 1214.1499999947846,
+        "p75": 1593.9499999973923,
+        "p95": 15778.675000000745,
+        "p99": 19561.015000001345,
+        "stddev": 7272.729401447644
+      },
+      "load": {
+        "count": 6,
+        "min": 1048.5999999940395,
+        "max": 24003.89999999851,
+        "mean": 6265.299999998261,
+        "median": 3348.4999999962747,
+        "p50": 3348.4999999962747,
+        "p75": 3947.4749999996275,
+        "p95": 19004.174999998882,
+        "p99": 23003.954999998587,
+        "stddev": 7999.657360787576
+      },
+      "fcp": {
+        "count": 6,
+        "min": 328,
+        "max": 20508,
+        "mean": 3880,
+        "median": 506,
+        "p50": 506,
+        "p75": 987,
+        "p95": 15656,
+        "p99": 19537.600000000002,
+        "stddev": 7441.23502294254
+      },
+      "lcp": {
+        "count": 6,
+        "min": 684,
+        "max": 20740,
+        "mean": 4398.666666666667,
+        "median": 1322,
+        "p50": 1322,
+        "p75": 1602,
+        "p95": 15963,
+        "p99": 19784.600000000002,
+        "stddev": 7317.054294971136
+      },
+      "cls": {
+        "count": 6,
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "median": 0,
+        "p50": 0,
+        "p75": 0,
+        "p95": 0,
+        "p99": 0,
+        "stddev": 0
+      },
+      "longTaskTotal": {
+        "count": 6,
+        "min": 240,
+        "max": 777,
+        "mean": 362,
+        "median": 274,
+        "p50": 274,
+        "p75": 342.75,
+        "p95": 672.25,
+        "p99": 756.0500000000001,
+        "stddev": 189.9298115971617
+      },
+      "requests": {
+        "count": 6,
+        "min": 28,
+        "max": 43,
+        "mean": 36.666666666666664,
+        "median": 37.5,
+        "p50": 37.5,
+        "p75": 38.75,
+        "p95": 42,
+        "p99": 42.8,
+        "stddev": 4.570436400267363
+      },
+      "transferredBytes": {
+        "count": 6,
+        "min": 3300685,
+        "max": 7011792,
+        "mean": 5059932,
+        "median": 5014437.5,
+        "p50": 5014437.5,
+        "p75": 6703237.25,
+        "p95": 6936543.75,
+        "p99": 6996742.35,
+        "stddev": 1744386.6437165432
+      },
+      "jsHeapUsed": {
+        "count": 6,
+        "min": 123000000,
+        "max": 410000000,
+        "mean": 212000000,
+        "median": 177000000,
+        "p50": 177000000,
+        "p75": 234750000,
+        "p95": 371000000,
+        "p99": 402200000,
+        "stddev": 98234413.5219425
+      },
+      "jsHeapTotal": {
+        "count": 6,
+        "min": 148000000,
+        "max": 435000000,
+        "mean": 266833333.33333334,
+        "median": 246500000,
+        "p50": 246500000,
+        "p75": 278000000,
+        "p95": 397750000,
+        "p99": 427550000,
+        "stddev": 86103458.44131672
+      },
+      "jsHeapLimit": {
+        "count": 6,
+        "min": 2330000000,
+        "max": 2330000000,
+        "mean": 2330000000,
+        "median": 2330000000,
+        "p50": 2330000000,
+        "p75": 2330000000,
+        "p95": 2330000000,
+        "p99": 2330000000,
+        "stddev": 0
+      },
+      "errorCount": 13,
+      "screenshots": [
+        ".ai/00_performance/screenshots/chromium-dashboard-3d-lab-cold.png"
+      ],
+      "traces": [
+        ".ai/00_performance/traces/chromium-dashboard-3d-lab-cold.zip",
+        ".ai/00_performance/traces/chromium-dashboard-3d-lab-warm.zip"
+      ]
+    }
+  ],
+  "summary": {
+    "coldDurationMs": {
+      "count": 6,
+      "min": 3881.182750000007,
+      "max": 36087.498875,
+      "mean": 16917.6519445,
+      "median": 15131.149437500004,
+      "p50": 15131.149437500004,
+      "p75": 23130.28423949999,
+      "p95": 33308.05384374999,
+      "p99": 35531.60986875,
+      "stddev": 11057.308615899277
+    },
+    "warmDurationMs": {
+      "count": 6,
+      "min": 2841.92637500001,
+      "max": 6054.294416999997,
+      "mean": 4338.736354333333,
+      "median": 4173.627937500005,
+      "p50": 4173.627937500005,
+      "p75": 5566.471291749996,
+      "p95": 6009.842937749996,
+      "p99": 6045.404121149997,
+      "stddev": 1295.2103763690334
+    },
+    "fcpMs": {
+      "count": 12,
+      "min": 328,
+      "max": 29544,
+      "mean": 6009.333333333333,
+      "median": 750,
+      "p50": 750,
+      "p75": 5042,
+      "p95": 24574.199999999993,
+      "p99": 28550.040000000005,
+      "stddev": 9646.540289427892
+    },
+    "lcpMs": {
+      "count": 12,
+      "min": 684,
+      "max": 30744,
+      "mean": 6810,
+      "median": 1874,
+      "p50": 1874,
+      "p75": 5847,
+      "p95": 25241.799999999992,
+      "p99": 29643.560000000005,
+      "stddev": 9616.020174687656
+    },
+    "requestCount": {
+      "count": 12,
+      "min": 11,
+      "max": 43,
+      "mean": 30.583333333333332,
+      "median": 29,
+      "p50": 29,
+      "p75": 37.25,
+      "p95": 40.8,
+      "p99": 42.56,
+      "stddev": 8.179836320014125
+    },
+    "transferredBytes": {
+      "count": 12,
+      "min": 1774082,
+      "max": 8773837,
+      "mean": 4962944.833333333,
+      "median": 3418041,
+      "p50": 3418041,
+      "p75": 6786047.25,
+      "p95": 8767944.85,
+      "p99": 8772658.57,
+      "stddev": 2342543.0028619478
+    },
+    "jsHeapUsedBytes": {
+      "count": 12,
+      "min": 42100000,
+      "max": 410000000,
+      "mean": 206675000,
+      "median": 201000000,
+      "p50": 201000000,
+      "p75": 242750000,
+      "p95": 341799999.9999999,
+      "p99": 396360000.00000006,
+      "stddev": 88860256.62990926
+    }
+  },
+  "notes": [
+    "Navigation duration is measured wall-clock around page.goto plus bounded network-idle/settling wait.",
+    "Web vital values are browser Performance API/observer proxies; validate production Core Web Vitals with RUM for final budgets.",
+    "Traced runs add overhead and are diagnostic, not pristine latency baselines.",
+    "Server memory profile is sampled from the local Next server process tree when scripts/playwright-web-server.ts owns the server process."
+  ]
+}

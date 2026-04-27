@@ -43,6 +43,7 @@ type Measurement = {
     slowest: Array<Record<string, number | string>>
   }
   heap: Record<string, number | null>
+  contentSignals: Record<string, boolean>
   errors: string[]
   screenshot: string | null
   trace: string | null
@@ -73,10 +74,18 @@ const userFlowActionTimeout = Number(process.env.PERF_USER_FLOW_ACTION_TIMEOUT_M
 const captureTraces = process.env.PERF_TRACE !== 'false'
 const captureScreenshots = process.env.PERF_SCREENSHOT !== 'false'
 const routeFilter = process.env.PERF_ROUTE_FILTER
+const routeSequence = process.env.PERF_ROUTE_SEQUENCE
 const runUserFlows =
   process.env.PERF_USER_FLOWS === 'true' ||
-  (!routeFilter && process.env.PERF_USER_FLOWS !== 'false')
+  (!routeFilter && !routeSequence && process.env.PERF_USER_FLOWS !== 'false')
 const demoAuthEnabled = process.env.PLAYWRIGHT_DEMO_AUTH === 'true'
+const memoryProfileLabel = slug(
+  process.env.PERF_MEMORY_PROFILE_LABEL ??
+    (process.env.PLAYWRIGHT_USE_BUILT_APP === 'true' ? 'built-app' : 'dev-server'),
+)
+const serverMemoryProfilePath =
+  process.env.PERF_MEMORY_PROFILE_FILE ??
+  path.join(resultsDir, `dev_server_memory_profile_${memoryProfileLabel}.json`)
 
 const defaultRoutes = ['/', '/login', '/register', '/forgot-password', '/pricing', '/about', '/contact', '/try', '/dashboard', '/dashboard/wiki', '/dashboard/analytics', '/dashboard/3d-lab', '/developer', '/admin/login']
 const targetFile = path.join(resultsDir, 'frontend_route_targets.json')
@@ -85,7 +94,25 @@ const navigationResults: Measurement[] = []
 const flowResults: FlowMeasurement[] = []
 
 function loadRoutes() {
+  const resolveSequence = (routes: string[]) => {
+    if (!routeSequence) return null
+    const tokens = routeSequence
+      .split(',')
+      .map((value) => value.trim())
+      .filter(Boolean)
+
+    if (!tokens.length) return null
+
+    return tokens.map((token) => {
+      const exact = routes.find((route) => route === token)
+      if (exact) return exact
+      return routes.find((route) => route.includes(token)) ?? token
+    })
+  }
+
   const applyFilter = (routes: string[]) => {
+    const sequenced = resolveSequence(routes)
+    if (sequenced) return sequenced
     if (!routeFilter) return routes
     const filters = routeFilter
       .split(',')
@@ -130,6 +157,41 @@ function summarize(values: Array<number | null | undefined>): NumericSummary {
   const mean = nums.reduce((sum, value) => sum + value, 0) / count
   const variance = nums.reduce((sum, value) => sum + (value - mean) ** 2, 0) / count
   return { count, min: nums[0], max: nums[count - 1], mean, median: percentile(nums, 0.5), p50: percentile(nums, 0.5), p75: percentile(nums, 0.75), p95: percentile(nums, 0.95), p99: percentile(nums, 0.99), stddev: Math.sqrt(variance) }
+}
+
+function readServerMemoryProfile() {
+  if (!fs.existsSync(serverMemoryProfilePath)) return null
+
+  try {
+    const profile = JSON.parse(fs.readFileSync(serverMemoryProfilePath, 'utf8')) as {
+      warnings?: Array<unknown>
+      summary?: Record<string, unknown>
+      samples?: Array<{ rssKiB?: number }>
+    }
+    const rssValues = (profile.samples ?? [])
+      .map((sample) => sample.rssKiB)
+      .filter((value): value is number => Number.isFinite(value))
+
+    return {
+      enabled: true,
+      profileFile: path.relative(process.cwd(), serverMemoryProfilePath),
+      summary: {
+        ...(profile.summary ?? {}),
+        rssBytes: summarize(rssValues.map((value) => value * 1024)),
+        memoryThresholdRestartObserved: Boolean(
+          profile.warnings?.some((warning) =>
+            JSON.stringify(warning).includes('memory threshold'),
+          ),
+        ),
+      },
+    }
+  } catch (error) {
+    return {
+      enabled: true,
+      profileFile: path.relative(process.cwd(), serverMemoryProfilePath),
+      error: String((error as Error).message ?? error),
+    }
+  }
 }
 
 async function addPerfObservers(page: Page) {
@@ -198,6 +260,22 @@ async function measureNavigation(browser: Browser, project: string, baseURL: str
     errors.push(String((error as Error).message ?? error))
   }
   const durationMs = performance.now() - started
+
+  const contentSignals = await page.evaluate(() => {
+    const bodyText = document.body?.innerText ?? ''
+
+    return {
+      finalPathIsLogin: window.location.pathname.startsWith('/login'),
+      threeDLabTitleVisible: /3D Interactive Lab/i.test(bodyText),
+      threeDLabInteractiveModulesAvailable: /interactive modules available/i.test(bodyText),
+      threeDLabLockedOrUpgradeCopyVisible: /unlock|upgrade|locked/i.test(bodyText),
+    }
+  }).catch(() => ({
+    finalPathIsLogin: false,
+    threeDLabTitleVisible: false,
+    threeDLabInteractiveModulesAvailable: false,
+    threeDLabLockedOrUpgradeCopyVisible: false,
+  }))
 
   const perf = await page.evaluate(() => {
     const nav = performance.getEntriesByType('navigation')[0] as PerformanceNavigationTiming | undefined
@@ -279,6 +357,7 @@ async function measureNavigation(browser: Browser, project: string, baseURL: str
     webVitalsProxy: perf.webVitalsProxy,
     resources: perf.resources,
     heap: perf.heap,
+    contentSignals,
     errors,
     screenshot: screenshot ? path.relative(process.cwd(), screenshot) : null,
     trace: tracePath ? path.relative(process.cwd(), tracePath) : null,
@@ -380,17 +459,31 @@ test.afterAll(async ({}, testInfo) => {
       longTaskTotal: summarize(byRoute.map((r) => r.webVitalsProxy.longTaskTotalMs)),
       requests: summarize(byRoute.map((r) => r.resources.count)),
       transferredBytes: summarize(byRoute.map((r) => r.resources.totalTransferSize)),
+      jsHeapUsed: summarize(byRoute.map((r) => r.heap.usedJSHeapSize)),
+      jsHeapTotal: summarize(byRoute.map((r) => r.heap.totalJSHeapSize)),
+      jsHeapLimit: summarize(byRoute.map((r) => r.heap.jsHeapSizeLimit)),
       errorCount: byRoute.reduce((sum, result) => sum + result.errors.length + (result.ok ? 0 : 1), 0),
       screenshots: byRoute.map((r) => r.screenshot).filter(Boolean),
       traces: byRoute.map((r) => r.trace).filter(Boolean),
     }
   })
+  const devServerMemory = readServerMemoryProfile()
 
   const navPayload = {
     timestamp: new Date().toISOString(),
     project,
     repeat,
     routeFilter: routeFilter ?? null,
+    routeSequence: routeSequence ?? null,
+    routeSelection: {
+      routeFilter: routeFilter ?? null,
+      routeSequence: routeSequence ?? null,
+      routeLimit: Number(process.env.PERF_ROUTE_LIMIT ?? 18),
+    },
+    serverMemoryProfile: fs.existsSync(serverMemoryProfilePath)
+      ? path.relative(process.cwd(), serverMemoryProfilePath)
+      : null,
+    devServerMemory,
     targetRoutes,
     runs: navForProject,
     routeSummaries,
@@ -401,11 +494,13 @@ test.afterAll(async ({}, testInfo) => {
       lcpMs: summarize(navForProject.map((r) => r.webVitalsProxy.lcp)),
       requestCount: summarize(navForProject.map((r) => r.resources.count)),
       transferredBytes: summarize(navForProject.map((r) => r.resources.totalTransferSize)),
+      jsHeapUsedBytes: summarize(navForProject.map((r) => r.heap.usedJSHeapSize)),
     },
     notes: [
       'Navigation duration is measured wall-clock around page.goto plus bounded network-idle/settling wait.',
       'Web vital values are browser Performance API/observer proxies; validate production Core Web Vitals with RUM for final budgets.',
       'Traced runs add overhead and are diagnostic, not pristine latency baselines.',
+      'Server memory profile is sampled from the local Next server process tree when scripts/playwright-web-server.ts owns the server process.',
     ],
   }
   const flowPayload = {
@@ -423,7 +518,7 @@ test.afterAll(async ({}, testInfo) => {
   const routeRows = routeSummaries.map((s) => `| \`${s.route}\` | ${s.runs} | ${s.cold.p50?.toFixed?.(0) ?? 'n/a'} | ${s.cold.p95?.toFixed?.(0) ?? 'n/a'} | ${s.warm.p50?.toFixed?.(0) ?? 'n/a'} | ${s.fcp.p50?.toFixed?.(0) ?? 'n/a'} | ${s.lcp.p50?.toFixed?.(0) ?? 'n/a'} | ${s.requests.p50?.toFixed?.(0) ?? 'n/a'} | ${s.transferredBytes.p50 ? (s.transferredBytes.p50 / 1024).toFixed(1) : 'n/a'} | ${s.errorCount} |`).join('\n')
   const flowRows = flowForProject.map((flow) => `| ${flow.name} | ${flow.status} | ${flow.durationMs?.toFixed?.(0) ?? 'n/a'} | ${flow.blocker ?? flow.error ?? ''} |`).join('\n')
 
-  fs.writeFileSync(path.join(perfDir, '04_frontend_runtime.md'), `# 04 — Frontend Runtime Performance\n\nGenerated: ${navPayload.timestamp}\n\n## Measurement method\nPlaywright Chromium navigation tests measured cold and warm route loads with ${repeat} repeat(s) per scenario. Metrics include wall-clock navigation proxy, Navigation Timing, paint timing, LCP/CLS observer proxies, long tasks, heap where Chromium exposes it, resource timings, request counts, transfer sizes, screenshots, and diagnostic traces.\n\n## Route summary\n| Route | Runs | Cold p50 ms | Cold p95 ms | Warm p50 ms | FCP p50 ms | LCP p50 ms | Requests p50 | Transfer p50 KiB | Errors |\n| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |\n${routeRows || '| no routes measured | | | | | | | | | |'}\n\n## Overall summary\n- Cold duration p50/p95: ${navPayload.summary.coldDurationMs.p50?.toFixed?.(0) ?? 'n/a'} / ${navPayload.summary.coldDurationMs.p95?.toFixed?.(0) ?? 'n/a'} ms\n- Warm duration p50/p95: ${navPayload.summary.warmDurationMs.p50?.toFixed?.(0) ?? 'n/a'} / ${navPayload.summary.warmDurationMs.p95?.toFixed?.(0) ?? 'n/a'} ms\n- FCP p50/p95: ${navPayload.summary.fcpMs.p50?.toFixed?.(0) ?? 'n/a'} / ${navPayload.summary.fcpMs.p95?.toFixed?.(0) ?? 'n/a'} ms\n- LCP p50/p95: ${navPayload.summary.lcpMs.p50?.toFixed?.(0) ?? 'n/a'} / ${navPayload.summary.lcpMs.p95?.toFixed?.(0) ?? 'n/a'} ms\n- Requests p50/p95: ${navPayload.summary.requestCount.p50?.toFixed?.(0) ?? 'n/a'} / ${navPayload.summary.requestCount.p95?.toFixed?.(0) ?? 'n/a'}\n- Transferred bytes p50/p95: ${navPayload.summary.transferredBytes.p50 ? (navPayload.summary.transferredBytes.p50 / 1024).toFixed(1) : 'n/a'} / ${navPayload.summary.transferredBytes.p95 ? (navPayload.summary.transferredBytes.p95 / 1024).toFixed(1) : 'n/a'} KiB\n\n## Evidence files\n- Raw navigation JSON: \`.ai/00_performance/results/frontend_navigation_results.json\`\n- Screenshots: \`.ai/00_performance/screenshots/\`\n- Diagnostic traces: \`.ai/00_performance/traces/\`\n\n## Limitations\n- Local development/server measurements are not production RUM.\n- Trace-enabled runs add overhead and should be used diagnostically.\n- Auth-gated pages may measure redirect or demo-auth behavior depending on \`PLAYWRIGHT_DEMO_AUTH\`.\n`)
+  fs.writeFileSync(path.join(perfDir, '04_frontend_runtime.md'), `# 04 — Frontend Runtime Performance\n\nGenerated: ${navPayload.timestamp}\n\n## Measurement method\nPlaywright Chromium navigation tests measured cold and warm route loads with ${repeat} repeat(s) per scenario. Metrics include wall-clock navigation proxy, Navigation Timing, paint timing, LCP/CLS observer proxies, long tasks, heap where Chromium exposes it, resource timings, request counts, transfer sizes, screenshots, and diagnostic traces.\n\n## Route summary\n| Route | Runs | Cold p50 ms | Cold p95 ms | Warm p50 ms | FCP p50 ms | LCP p50 ms | Requests p50 | Transfer p50 KiB | Errors |\n| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |\n${routeRows || '| no routes measured | | | | | | | | | |'}\n\n## Overall summary\n- Cold duration p50/p95: ${navPayload.summary.coldDurationMs.p50?.toFixed?.(0) ?? 'n/a'} / ${navPayload.summary.coldDurationMs.p95?.toFixed?.(0) ?? 'n/a'} ms\n- Warm duration p50/p95: ${navPayload.summary.warmDurationMs.p50?.toFixed?.(0) ?? 'n/a'} / ${navPayload.summary.warmDurationMs.p95?.toFixed?.(0) ?? 'n/a'} ms\n- FCP p50/p95: ${navPayload.summary.fcpMs.p50?.toFixed?.(0) ?? 'n/a'} / ${navPayload.summary.fcpMs.p95?.toFixed?.(0) ?? 'n/a'} ms\n- LCP p50/p95: ${navPayload.summary.lcpMs.p50?.toFixed?.(0) ?? 'n/a'} / ${navPayload.summary.lcpMs.p95?.toFixed?.(0) ?? 'n/a'} ms\n- Requests p50/p95: ${navPayload.summary.requestCount.p50?.toFixed?.(0) ?? 'n/a'} / ${navPayload.summary.requestCount.p95?.toFixed?.(0) ?? 'n/a'}\n- Transferred bytes p50/p95: ${navPayload.summary.transferredBytes.p50 ? (navPayload.summary.transferredBytes.p50 / 1024).toFixed(1) : 'n/a'} / ${navPayload.summary.transferredBytes.p95 ? (navPayload.summary.transferredBytes.p95 / 1024).toFixed(1) : 'n/a'} KiB\n\n## Evidence files\n- Raw navigation JSON: \`.ai/00_performance/results/frontend_navigation_results.json\`\n- Server memory profile: ${navPayload.serverMemoryProfile ? '`' + navPayload.serverMemoryProfile + '`' : 'not available for this run'}\n- Screenshots: \`.ai/00_performance/screenshots/\`\n- Diagnostic traces: \`.ai/00_performance/traces/\`\n\n## Limitations\n- Local development/server measurements are not production RUM.\n- Trace-enabled runs add overhead and should be used diagnostically.\n- Auth-gated pages may measure redirect or demo-auth behavior depending on \`PLAYWRIGHT_DEMO_AUTH\`.\n`)
 
   fs.writeFileSync(path.join(perfDir, '05_playwright_e2e.md'), `# 05 — Playwright E2E Performance\n\nGenerated: ${flowPayload.timestamp}\n\n## User-flow timing proxy results\n| Flow | Status | Duration ms | Blocker/error |\n| --- | --- | ---: | --- |\n${flowRows || '| no user flows recorded | | | |'}\n\n## Auth flow status\n- Demo auth enabled: ${demoAuthEnabled ? 'yes' : 'no'}\n- If demo auth is disabled and no test credentials are present, login/signup measurements are intentionally blocked to avoid storing secrets.\n\n## Raw evidence\n- Raw flow JSON: \`.ai/00_performance/results/frontend_user_flows_results.json\`\n- Playwright spec: \`.ai/00_performance/playwright/perf.spec.ts\`\n\n## Notes\n- This test suite is intended for repeatable local/CI trend measurement, not one-off visual correctness.\n- Existing functional E2E specs remain under \`e2e/\`; this performance spec stores its outputs under \`.ai/00_performance\`.\n`)
 })

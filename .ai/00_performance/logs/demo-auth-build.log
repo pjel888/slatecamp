@@ -1,0 +1,160 @@
+command: bun run build
+cwd: /Users/philiplewis/slatecamp
+start: 2026-04-27T03:31:04.473Z
+env: {"NEXT_PUBLIC_ENABLE_DEMO_MODE":"true","PLAYWRIGHT_DEMO_AUTH":"true","PLAYWRIGHT_DEMO_ROLE":"super_admin","PLAYWRIGHT_DEMO_TIER":"pro","NEXT_PUBLIC_PAYMENTS_ENABLED":"false","DISABLE_DEV_FORCE_USER_ID":"true","ALLOW_DEV_PORTAL_BYPASS":"false","NEXT_PUBLIC_SUPABASE_ANON_KEY":"[present-redacted]","NEXT_PUBLIC_SUPABASE_URL":"[present-redacted]"}
+▲ Next.js 16.2.3 (Turbopack)
+- Environments: .env.local
+- Experiments (use with caution):
+  · serverActions
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 19.7s
+  Running TypeScript ...
+  Finished TypeScript in 25.2s ...
+  Collecting page data using 7 workers ...
+  Generating static pages using 7 workers (0/106) ...
+  Generating static pages using 7 workers (26/106)
+  Generating static pages using 7 workers (52/106)
+  Generating static pages using 7 workers (79/106)
+✓ Generating static pages using 7 workers (106/106) in 1118ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ƒ /
+├ ○ /_not-found
+├ ○ /about
+├ ƒ /admin
+├ ƒ /admin/3d-models
+├ ƒ /admin/activity
+├ ƒ /admin/assets
+├ ƒ /admin/assets/[id]
+├ ƒ /admin/audit
+├ ƒ /admin/knowledge
+├ ƒ /admin/knowledge/[id]
+├ ƒ /admin/knowledge/analytics
+├ ƒ /admin/knowledge/import
+├ ƒ /admin/knowledge/new
+├ ƒ /admin/knowledge/questions
+├ ƒ /admin/knowledge/questions/[id]
+├ ƒ /admin/knowledge/questions/design-problems
+├ ƒ /admin/knowledge/questions/design-problems/[id]
+├ ƒ /admin/knowledge/questions/new
+├ ƒ /admin/knowledge/questions/scenarios
+├ ƒ /admin/knowledge/questions/scenarios/[id]
+├ ○ /admin/login
+├ ƒ /admin/pipeline
+├ ƒ /admin/preview/[previewId]
+├ ƒ /admin/reviews
+├ ƒ /admin/search
+├ ƒ /admin/settings
+├ ƒ /admin/taxonomy
+├ ƒ /admin/taxonomy/coverage
+├ ƒ /admin/wiki
+├ ƒ /api/admin/flags
+├ ƒ /api/ai/embed
+├ ƒ /api/ai/generate-questions
+├ ƒ /api/ai/socratic
+├ ƒ /api/ai/study-agent
+├ ƒ /api/ai/tutor
+├ ƒ /api/cron/compute-signals
+├ ƒ /api/cron/focus-review-scan
+├ ƒ /api/og/score
+├ ƒ /api/payments/checkout
+├ ƒ /api/webhooks/lemonsqueezy
+├ ƒ /api/webhooks/payrex
+├ ƒ /auth/callback
+├ ○ /auth/reset-password
+├ ○ /calculators
+├ ○ /calculators/chb
+├ ○ /calculators/drywall
+├ ○ /calculators/flooring
+├ ○ /calculators/paint
+├ ○ /ceo
+├ ƒ /ceo/analytics
+├ ○ /ceo/financials
+├ ○ /ceo/insights
+├ ○ /ceo/team
+├ ○ /contact
+├ ƒ /dashboard
+├ ƒ /dashboard/3d-lab
+├ ƒ /dashboard/3d-lab/[moduleId]
+├ ƒ /dashboard/analytics
+├ ƒ /dashboard/analytics/advanced
+├ ƒ /dashboard/area-c
+├ ƒ /dashboard/area-c/calculator
+├ ƒ /dashboard/area-c/design-problems
+├ ƒ /dashboard/area-c/design-problems/[problemId]
+├ ƒ /dashboard/area-c/design-quiz
+├ ƒ /dashboard/area-c/design-quiz/[scenarioId]
+├ ƒ /dashboard/assessment
+├ ƒ /dashboard/camptrails
+├ ƒ /dashboard/camptrails/[slug]
+├ ƒ /dashboard/camptrails/[slug]/day/[dayNumber]/complete
+├ ƒ /dashboard/camptrails/[slug]/today
+├ ƒ /dashboard/code-updates
+├ ƒ /dashboard/cram-card
+├ ƒ /dashboard/dae-mode
+├ ƒ /dashboard/drills
+├ ƒ /dashboard/drills/sessions
+├ ƒ /dashboard/exam-outcome
+├ ƒ /dashboard/flash
+├ ƒ /dashboard/flash/[category]
+├ ƒ /dashboard/heatmap
+├ ƒ /dashboard/notes
+├ ƒ /dashboard/notifications
+├ ƒ /dashboard/pods
+├ ƒ /dashboard/pods/[podId]
+├ ƒ /dashboard/professional
+├ ƒ /dashboard/results-day
+├ ƒ /dashboard/score-reveal
+├ ƒ /dashboard/settings
+├ ƒ /dashboard/settings/billing
+├ ƒ /dashboard/settings/developer
+├ ƒ /dashboard/studio
+├ ƒ /dashboard/trail
+├ ƒ /dashboard/trails
+├ ƒ /dashboard/upgrade
+├ ƒ /dashboard/welcome-pro
+├ ƒ /dashboard/wiki
+├ ƒ /dashboard/wiki/[slug]
+├ ƒ /developer
+├ ƒ /developer/api-reference
+├ ƒ /developer/architecture
+├ ƒ /developer/status
+├ ƒ /developer/status/database
+├ ƒ /developer/status/infrastructure
+├ ƒ /developer/tools
+├ ƒ /developer/tools/console
+├ ƒ /developer/tools/db
+├ ƒ /developer/tools/logs
+├ ƒ /developer/tools/test-data
+├ ○ /forgot-password
+├ ○ /icon.svg
+├ ○ /login
+├ ○ /onboarding
+├ ○ /onboarding/comp-exam
+├ ○ /pricing
+├ ○ /quiz
+├ ƒ /quiz/[mode]/session/[sessionId]
+├ ƒ /quiz/[mode]/session/[sessionId]/results
+├ ƒ /quiz/[mode]/session/[sessionId]/review
+├ ƒ /quiz/[mode]/setup
+├ ○ /register
+├ ○ /settings
+├ ○ /test-3d
+├ ○ /tools
+├ ○ /tools/floor-tiles-calculator
+├ ○ /tools/lot-plotter
+├ ○ /tools/wall-paint-calculator
+└ ○ /try
+
+
+ƒ Proxy (Middleware)
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
+$ next build
+
+end: 2026-04-27T03:31:53.260Z
+exit: 0

@@ -1,0 +1,186 @@
+{
+  "timestamp": "2026-04-27T03:58:06.954Z",
+  "project": "chromium",
+  "demoAuthEnabled": true,
+  "repeat": 3,
+  "runs": [
+    {
+      "timestamp": "2026-04-27T03:55:19.120Z",
+      "project": "chromium",
+      "name": "open app to first visible UI",
+      "status": "measured",
+      "durationMs": 21148.267165999976,
+      "metrics": {
+        "runIndex": 1,
+        "status": 200,
+        "domContentVisibleMs": 21148.16158299998
+      }
+    },
+    {
+      "timestamp": "2026-04-27T03:55:20.402Z",
+      "project": "chromium",
+      "name": "open app to first visible UI",
+      "status": "measured",
+      "durationMs": 1281.7461250000633,
+      "metrics": {
+        "runIndex": 2,
+        "status": 200,
+        "domContentVisibleMs": 1281.720417000004
+      }
+    },
+    {
+      "timestamp": "2026-04-27T03:55:21.942Z",
+      "project": "chromium",
+      "name": "open app to first visible UI",
+      "status": "measured",
+      "durationMs": 1540.4740829999791,
+      "metrics": {
+        "runIndex": 3,
+        "status": 200,
+        "domContentVisibleMs": 1540.4548330000835
+      }
+    },
+    {
+      "timestamp": "2026-04-27T03:55:53.161Z",
+      "project": "chromium",
+      "name": "login entry to authenticated dashboard (demo auth)",
+      "status": "failed",
+      "durationMs": 31218.18762500002,
+      "metrics": {},
+      "error": "page.waitForURL: Timeout 20000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation until \"load\"\n============================================================"
+    },
+    {
+      "timestamp": "2026-04-27T03:56:13.528Z",
+      "project": "chromium",
+      "name": "dashboard primary data visible (demo auth)",
+      "status": "measured",
+      "durationMs": 20367.53895899991,
+      "metrics": {
+        "runIndex": 1,
+        "status": 200,
+        "primaryDataVisibleMs": 20367.222916000057
+      }
+    },
+    {
+      "timestamp": "2026-04-27T03:56:52.980Z",
+      "project": "chromium",
+      "name": "wiki search/filter proxy (demo auth)",
+      "status": "failed",
+      "durationMs": 39451.29850000003,
+      "metrics": {},
+      "error": "No textbox/search input found on /dashboard/wiki"
+    },
+    {
+      "timestamp": "2026-04-27T03:57:06.350Z",
+      "project": "chromium",
+      "name": "login entry to authenticated dashboard (demo auth)",
+      "status": "measured",
+      "durationMs": 13370.539000000106,
+      "metrics": {
+        "runIndex": 2,
+        "loginToDashboardMs": 13370.490416000132
+      }
+    },
+    {
+      "timestamp": "2026-04-27T03:57:07.349Z",
+      "project": "chromium",
+      "name": "dashboard primary data visible (demo auth)",
+      "status": "measured",
+      "durationMs": 998.2846249998547,
+      "metrics": {
+        "runIndex": 2,
+        "status": 200,
+        "primaryDataVisibleMs": 998.2485419998411
+      }
+    },
+    {
+      "timestamp": "2026-04-27T03:57:13.539Z",
+      "project": "chromium",
+      "name": "wiki search/filter proxy (demo auth)",
+      "status": "failed",
+      "durationMs": 6189.771375000011,
+      "metrics": {},
+      "error": "No textbox/search input found on /dashboard/wiki"
+    },
+    {
+      "timestamp": "2026-04-27T03:57:33.694Z",
+      "project": "chromium",
+      "name": "login entry to authenticated dashboard (demo auth)",
+      "status": "failed",
+      "durationMs": 20158.514584000222,
+      "metrics": {},
+      "error": "page.waitForURL: Timeout 20000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation until \"load\"\n============================================================"
+    },
+    {
+      "timestamp": "2026-04-27T03:57:48.798Z",
+      "project": "chromium",
+      "name": "dashboard primary data visible (demo auth)",
+      "status": "measured",
+      "durationMs": 15100.686042000074,
+      "metrics": {
+        "runIndex": 3,
+        "status": 200,
+        "primaryDataVisibleMs": 15100.649874999886
+      }
+    },
+    {
+      "timestamp": "2026-04-27T03:58:06.742Z",
+      "project": "chromium",
+      "name": "wiki search/filter proxy (demo auth)",
+      "status": "failed",
+      "durationMs": 17944.333166999975,
+      "metrics": {},
+      "error": "No textbox/search input found on /dashboard/wiki"
+    }
+  ],
+  "summaries": {
+    "open app to first visible UI": {
+      "count": 3,
+      "min": 1281.7461250000633,
+      "max": 21148.267165999976,
+      "mean": 7990.162458000006,
+      "median": 1540.4740829999791,
+      "p50": 1540.4740829999791,
+      "p75": 11344.370624499978,
+      "p95": 19187.487857699976,
+      "p99": 20756.111304339975,
+      "stddev": 9304.784599659144
+    },
+    "login entry to authenticated dashboard (demo auth)": {
+      "count": 3,
+      "min": 13370.539000000106,
+      "max": 31218.18762500002,
+      "mean": 21582.41373633345,
+      "median": 20158.514584000222,
+      "p50": 20158.514584000222,
+      "p75": 25688.35110450012,
+      "p95": 30112.22032090004,
+      "p99": 30996.994164180025,
+      "stddev": 7355.508455453722
+    },
+    "dashboard primary data visible (demo auth)": {
+      "count": 3,
+      "min": 998.2846249998547,
+      "max": 20367.53895899991,
+      "mean": 12155.503208666612,
+      "median": 15100.686042000074,
+      "p50": 15100.686042000074,
+      "p75": 17734.112500499992,
+      "p95": 19840.853667299925,
+      "p99": 20262.201900659915,
+      "stddev": 8177.105429393157
+    },
+    "wiki search/filter proxy (demo auth)": {
+      "count": 3,
+      "min": 6189.771375000011,
+      "max": 39451.29850000003,
+      "mean": 21195.13434733334,
+      "median": 17944.333166999975,
+      "p50": 17944.333166999975,
+      "p75": 28697.815833500004,
+      "p95": 37300.60196670002,
+      "p99": 39021.159193340034,
+      "stddev": 13772.14768793211
+    }
+  }
+}

@@ -1,48 +1,48 @@
 # 09 — Network and Caching
 
-Generated: 2026-04-27T02:40:07.876Z
+Generated: 2026-04-27T04:04:04.250Z
 
 ## Network baseline from Playwright resource timing
-- Request count p50/p95: 26 / 33
-- Transfer p50/p95: 3652.2 KiB / 8510.4 KiB
+- Request count p50/p95: 30 / 46
+- Transfer p50/p95: 3702.0 KiB / 7608.6 KiB
 
 ## Largest measured route transfers
 | Route | Transfer p50 | Requests p50 | Cold p95 |
 | --- | ---: | ---: | ---: |
-| `/register` | 6864.3 KiB | 30 | 8341 ms |
-| `/dashboard/analytics` | 6476.1 KiB | 33 | 55430 ms |
-| `/dashboard/settings` | 5698.2 KiB | 26 | 7531 ms |
-| `/dashboard/wiki` | 5474.0 KiB | 28 | 18602 ms |
-| `/dashboard` | 5295.6 KiB | 31 | 6897 ms |
-| `/dashboard/3d-lab` | 4859.7 KiB | 26 | 44219 ms |
-| `/forgot-password` | 4101.9 KiB | 21 | 4751 ms |
-| `/pricing` | 4055.2 KiB | 25 | 9524 ms |
-| `/auth/reset-password` | 4053.9 KiB | 20 | 5062 ms |
-| `/try` | 3685.0 KiB | 21 | 3923 ms |
+| `/dashboard/analytics` | 8186.2 KiB | 28 | 43768 ms |
+| `/dashboard` | 5335.1 KiB | 26 | 24815 ms |
+| `/dashboard/settings` | 5085.8 KiB | 35 | 8190 ms |
+| `/dashboard/3d-lab` | 5033.0 KiB | 29 | 38129 ms |
+| `/dashboard/wiki` | 4941.8 KiB | 37 | 17989 ms |
+| `/forgot-password` | 4208.0 KiB | 31 | 8007 ms |
+| `/pricing` | 4137.6 KiB | 26 | 45727 ms |
+| `/auth/reset-password` | 4131.2 KiB | 27 | 8537 ms |
+| `/` | 4032.2 KiB | 36 | 3263 ms |
+| `/try` | 3677.2 KiB | 30 | 8601 ms |
 
 ## Slowest individual resource timings
 | Route | Type | Duration | Transfer | Resource |
 | --- | --- | ---: | ---: | --- |
-| `/dashboard` | script | 5226 ms | 2657.2 KiB | `http://localhost:3217/_next/static/chunks/main-app.js?v=1777257076379` |
-| `/dashboard` | script | 5056 ms | 1303.6 KiB | `http://localhost:3217/_next/static/chunks/app/dashboard/page.js` |
-| `/dashboard/analytics` | script | 4863 ms | 2657.2 KiB | `http://localhost:3217/_next/static/chunks/main-app.js?v=1777257237795` |
-| `/dashboard/analytics` | script | 4769 ms | 2356.8 KiB | `http://localhost:3217/_next/static/chunks/app/dashboard/analytics/page.js` |
-| `/dashboard/analytics` | script | 4532 ms | 1303.6 KiB | `http://localhost:3217/_next/static/chunks/app/dashboard/page.js` |
-| `/dashboard/analytics` | script | 4406 ms | 205.0 KiB | `http://localhost:3217/_next/static/chunks/app/dashboard/error.js` |
-| `/dashboard/analytics` | script | 4360 ms | 128.5 KiB | `http://localhost:3217/_next/static/chunks/app/dashboard/analytics/error.js` |
-| `/dashboard/analytics` | link | 4228 ms | 11.2 KiB | `http://localhost:3217/_next/static/media/bc08e10e1c60a660-s.p.woff2?v=1777257237795` |
-| `/dashboard/analytics` | link | 4160 ms | 8.8 KiB | `http://localhost:3217/_next/static/media/b7ea2ab4a8ad1f81-s.p.woff2?v=1777257237795` |
-| `/dashboard/analytics` | link | 4135 ms | 11.4 KiB | `http://localhost:3217/_next/static/media/9816a0e0ed309b6c-s.p.woff2?v=1777257237795` |
-| `/dashboard/analytics` | link | 4095 ms | 34.0 KiB | `http://localhost:3217/_next/static/media/8a1d8947e5852e30-s.p.woff2?v=1777257237795` |
-| `/dashboard/analytics` | link | 4055 ms | 9.6 KiB | `http://localhost:3217/_next/static/media/76fcc95954fbfc88-s.p.woff2?v=1777257237795` |
-| `/dashboard/analytics` | link | 3997 ms | 9.6 KiB | `http://localhost:3217/_next/static/media/5d259b4d93dec8ad-s.p.woff2?v=1777257237795` |
-| `/dashboard/analytics` | link | 3964 ms | 23.5 KiB | `http://localhost:3217/_next/static/media/56da557e531d1081-s.p.woff2?v=1777257237795` |
-| `/dashboard/analytics` | link | 3935 ms | 24.9 KiB | `http://localhost:3217/_next/static/media/3dc379dc9b5dec12-s.p.woff2?v=1777257237795` |
-| `/dashboard/analytics` | link | 3896 ms | 8.8 KiB | `http://localhost:3217/_next/static/media/0e96d314a90a6138-s.p.woff2?v=1777257237795` |
-| `/dashboard/analytics` | script | 3778 ms | 520.5 KiB | `http://localhost:3217/_next/static/chunks/app/layout.js` |
-| `/dashboard` | script | 3720 ms | 205.0 KiB | `http://localhost:3217/_next/static/chunks/app/dashboard/error.js` |
-| `/dashboard` | script | 3639 ms | 347.1 KiB | `http://localhost:3217/_next/static/chunks/app/layout.js` |
-| `/dashboard` | script | 3624 ms | 163.2 KiB | `http://localhost:3217/_next/static/chunks/app/dashboard/not-found.js` |
+| `/dashboard/3d-lab` | script | 16711 ms | 2657.2 KiB | `http://localhost:3217/_next/static/chunks/main-app.js?v=1777262067576` |
+| `/dashboard` | script | 15863 ms | 2657.2 KiB | `http://localhost:3217/_next/static/chunks/main-app.js?v=1777261619897` |
+| `/dashboard/3d-lab` | script | 15748 ms | 2249.3 KiB | `http://localhost:3217/_next/static/chunks/app/dashboard/layout.js` |
+| `/dashboard/analytics` | script | 11041 ms | 2657.2 KiB | `http://localhost:3217/_next/static/chunks/main-app.js?v=1777261892321` |
+| `/dashboard` | script | 10314 ms | 2657.2 KiB | `http://localhost:3217/_next/static/chunks/main-app.js?v=1777261639490` |
+| `/dashboard/analytics` | script | 9904 ms | 2356.8 KiB | `http://localhost:3217/_next/static/chunks/app/dashboard/analytics/page.js` |
+| `/dashboard/analytics` | script | 9668 ms | 2657.2 KiB | `http://localhost:3217/_next/static/chunks/main-app.js?v=1777261974604` |
+| `/dashboard` | script | 9246 ms | 2249.3 KiB | `http://localhost:3217/_next/static/chunks/app/dashboard/layout.js` |
+| `/dashboard/analytics` | script | 9212 ms | 2356.8 KiB | `http://localhost:3217/_next/static/chunks/app/dashboard/analytics/page.js` |
+| `/dashboard/analytics` | script | 8815 ms | 2657.2 KiB | `http://localhost:3217/_next/static/chunks/main-app.js?v=1777261873589` |
+| `/dashboard/analytics` | script | 8079 ms | 2249.3 KiB | `http://localhost:3217/_next/static/chunks/app/dashboard/layout.js` |
+| `/pricing` | script | 8004 ms | 2657.2 KiB | `http://localhost:3217/_next/static/chunks/main-app.js?v=1777261440892` |
+| `/dashboard` | script | 7999 ms | 2657.2 KiB | `http://localhost:3217/_next/static/chunks/main-app.js?v=1777261688322` |
+| `/dashboard` | script | 6921 ms | 1303.6 KiB | `http://localhost:3217/_next/static/chunks/app/dashboard/page.js` |
+| `/dashboard/analytics` | script | 6680 ms | 2657.2 KiB | `http://localhost:3217/_next/static/chunks/main-app.js?v=1777261929868` |
+| `/dashboard` | script | 6542 ms | 1303.6 KiB | `http://localhost:3217/_next/static/chunks/app/dashboard/page.js` |
+| `/pricing` | script | 6473 ms | 1319.7 KiB | `http://localhost:3217/_next/static/chunks/app/pricing/page.js` |
+| `/dashboard/analytics` | script | 6418 ms | 2657.2 KiB | `http://localhost:3217/_next/static/chunks/main-app.js?v=1777261938572` |
+| `/dashboard/3d-lab` | script | 6396 ms | 2657.2 KiB | `http://localhost:3217/_next/static/chunks/main-app.js?v=1777262019501` |
+| `/dashboard` | script | 6368 ms | 2657.2 KiB | `http://localhost:3217/_next/static/chunks/main-app.js?v=1777261602522` |
 
 ## Caching architecture evidence
 - Next config defines global security headers and image remote patterns.

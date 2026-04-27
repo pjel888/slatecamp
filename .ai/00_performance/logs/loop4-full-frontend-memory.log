@@ -1,0 +1,347 @@
+command: PERF_MEMORY_PROFILE_LABEL=loop4-full-frontend bun run perf:frontend
+cwd: /Users/philiplewis/slatecamp
+start: 2026-04-27T11:38:34+08:00
+$ PLAYWRIGHT_DEMO_AUTH=true bunx playwright test --config=.ai/00_performance/playwright/playwright.perf.config.ts --project=chromium --workers=1
+[2m[WebServer] [22m(node:87726) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:87729) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 15 tests using 1 worker
+
+(node:87987) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:87987) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m⨯ SyntaxError: Unexpected end of JSON input
+[2m[WebServer] [22m    at JSON.parse (<anonymous>) {
+[2m[WebServer] [22m  page: [32m'/'[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[browser] Uncaught SyntaxError: Unexpected end of JSON input
+[2m[WebServer] [22m    at JSON.parse (<anonymous>)
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+  ✓   1 [chromium] › .ai/00_performance/playwright/perf.spec.ts:379:9 › SlateCamp performance navigation baselines › navigation metrics for / (36.7s)
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+  ✓   2 [chromium] › .ai/00_performance/playwright/perf.spec.ts:379:9 › SlateCamp performance navigation baselines › navigation metrics for /about (16.2s)
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+  ✓   3 [chromium] › .ai/00_performance/playwright/perf.spec.ts:379:9 › SlateCamp performance navigation baselines › navigation metrics for /auth/reset-password (23.1s)
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+  ✓   4 [chromium] › .ai/00_performance/playwright/perf.spec.ts:379:9 › SlateCamp performance navigation baselines › navigation metrics for /contact (33.2s)
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+  ✓   5 [chromium] › .ai/00_performance/playwright/perf.spec.ts:379:9 › SlateCamp performance navigation baselines › navigation metrics for /forgot-password (34.9s)
+[2m[WebServer] [22m⨯ TypeError: controller[kState].transformAlgorithm is not a function
+[2m[WebServer] [22m    at ignore-listed frames {
+[2m[WebServer] [22m  digest: [32m'3817390593'[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+  ✓   6 [chromium] › .ai/00_performance/playwright/perf.spec.ts:379:9 › SlateCamp performance navigation baselines › navigation metrics for /login (1.8m)
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22m⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+  ✓   7 [chromium] › .ai/00_performance/playwright/perf.spec.ts:379:9 › SlateCamp performance navigation baselines › navigation metrics for /pricing (1.8m)
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+  ✓   8 [chromium] › .ai/00_performance/playwright/perf.spec.ts:379:9 › SlateCamp performance navigation baselines › navigation metrics for /register (1.2m)
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+  ✓   9 [chromium] › .ai/00_performance/playwright/perf.spec.ts:379:9 › SlateCamp performance navigation baselines › navigation metrics for /try (44.1s)
+[2m[WebServer] [22m⨯ SyntaxError: Unexpected end of JSON input
+[2m[WebServer] [22m    at JSON.parse (<anonymous>) {
+[2m[WebServer] [22m  page: [32m'/dashboard'[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m⨯ Error: aborted
+[2m[WebServer] [22m    at ignore-listed frames {
+[2m[WebServer] [22m  code: [32m'ECONNRESET'[39m,
+[2m[WebServer] [22m  digest: [32m'3443572037'[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m⨯ SyntaxError: Unexpected end of JSON input
+[2m[WebServer] [22m    at JSON.parse (<anonymous>) {
+[2m[WebServer] [22m  page: [32m'/dashboard'[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[browser] Uncaught SyntaxError: Unexpected end of JSON input
+[2m[WebServer] [22m    at JSON.parse (<anonymous>)
+[2m[WebServer] [22m⚠ Server is approaching the used memory threshold, restarting...
+  ✓  10 [chromium] › .ai/00_performance/playwright/perf.spec.ts:379:9 › SlateCamp performance navigation baselines › navigation metrics for /dashboard (1.9m)
+[2m[WebServer] [22m(node:2273) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22m⨯ SyntaxError: Unexpected end of JSON input
+[2m[WebServer] [22m    at JSON.parse (<anonymous>) {
+[2m[WebServer] [22m  page: [32m'/dashboard/settings'[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[browser] Uncaught SyntaxError: Unexpected end of JSON input
+[2m[WebServer] [22m    at JSON.parse (<anonymous>)
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+  ✓  11 [chromium] › .ai/00_performance/playwright/perf.spec.ts:379:9 › SlateCamp performance navigation baselines › navigation metrics for /dashboard/settings (49.9s)
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+  ✓  12 [chromium] › .ai/00_performance/playwright/perf.spec.ts:379:9 › SlateCamp performance navigation baselines › navigation metrics for /dashboard/wiki (48.3s)
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m[browser] The width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m[browser] Encountered two children with the same key, `00000000-0000-4000-8000-000000000104`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+[2m[WebServer] [22m[browser] Encountered two children with the same key, `00000000-0000-4000-8000-000000000105`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+[2m[WebServer] [22m[browser] The width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m[browser] Encountered two children with the same key, `00000000-0000-4000-8000-000000000104`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+[2m[WebServer] [22m[browser] Encountered two children with the same key, `00000000-0000-4000-8000-000000000105`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+[2m[WebServer] [22m[browser] The width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m[browser] The width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22m⨯ SyntaxError: Unexpected end of JSON input
+[2m[WebServer] [22m    at JSON.parse (<anonymous>) {
+[2m[WebServer] [22m  page: [32m'/dashboard/analytics'[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[browser] Uncaught SyntaxError: Unexpected end of JSON input
+[2m[WebServer] [22m    at JSON.parse (<anonymous>)
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+  ✓  13 [chromium] › .ai/00_performance/playwright/perf.spec.ts:379:9 › SlateCamp performance navigation baselines › navigation metrics for /dashboard/analytics (2.9m)
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+  ✓  14 [chromium] › .ai/00_performance/playwright/perf.spec.ts:379:9 › SlateCamp performance navigation baselines › navigation metrics for /dashboard/3d-lab (1.8m)
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22m⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22m⚠ Server is approaching the used memory threshold, restarting...
+[2m[WebServer] [22m(node:19639) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[2m[WebServer] [22m⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[2m[WebServer] [22m⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+  ✓  15 [chromium] › .ai/00_performance/playwright/perf.spec.ts:391:7 › SlateCamp performance navigation baselines › user flow timing proxies (3.2m)
+
+  Slow test file: [chromium] › .ai/00_performance/playwright/perf.spec.ts (19.4m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  15 passed (19.5m)
+end: 2026-04-27T11:58:07+08:00
+exit: 0

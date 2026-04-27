@@ -1,22 +1,28 @@
 # 05 — Playwright E2E Performance
 
-Generated: 2026-04-27T02:37:08.393Z
+Generated: 2026-04-27T03:58:06.954Z
 
 ## User-flow timing proxy results
 | Flow | Status | Duration ms | Blocker/error |
 | --- | --- | ---: | --- |
-| open app to first visible UI | measured | 6562 |  |
-| open app to first visible UI | measured | 273 |  |
-| open app to first visible UI | measured | 296 |  |
-| login entry to authenticated dashboard (demo auth) | measured | 17552 |  |
-| dashboard primary data visible (demo auth) | measured | 473 |  |
-| wiki search/filter proxy (demo auth) | failed | 25334 | No textbox/search input found on /dashboard/wiki |
-| login entry to authenticated dashboard (demo auth) | measured | 2187 |  |
-| dashboard primary data visible (demo auth) | measured | 525 |  |
-| wiki search/filter proxy (demo auth) | failed | 298 | No textbox/search input found on /dashboard/wiki |
-| login entry to authenticated dashboard (demo auth) | measured | 1263 |  |
-| dashboard primary data visible (demo auth) | measured | 342 |  |
-| wiki search/filter proxy (demo auth) | failed | 246 | No textbox/search input found on /dashboard/wiki |
+| open app to first visible UI | measured | 21148 |  |
+| open app to first visible UI | measured | 1282 |  |
+| open app to first visible UI | measured | 1540 |  |
+| login entry to authenticated dashboard (demo auth) | failed | 31218 | page.waitForURL: Timeout 20000ms exceeded.
+=========================== logs ===========================
+waiting for navigation until "load"
+============================================================ |
+| dashboard primary data visible (demo auth) | measured | 20368 |  |
+| wiki search/filter proxy (demo auth) | failed | 39451 | No textbox/search input found on /dashboard/wiki |
+| login entry to authenticated dashboard (demo auth) | measured | 13371 |  |
+| dashboard primary data visible (demo auth) | measured | 998 |  |
+| wiki search/filter proxy (demo auth) | failed | 6190 | No textbox/search input found on /dashboard/wiki |
+| login entry to authenticated dashboard (demo auth) | failed | 20159 | page.waitForURL: Timeout 20000ms exceeded.
+=========================== logs ===========================
+waiting for navigation until "load"
+============================================================ |
+| dashboard primary data visible (demo auth) | measured | 15101 |  |
+| wiki search/filter proxy (demo auth) | failed | 17944 | No textbox/search input found on /dashboard/wiki |
 
 ## Auth flow status
 - Demo auth enabled: yes

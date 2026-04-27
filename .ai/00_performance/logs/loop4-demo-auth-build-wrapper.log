@@ -1,0 +1,32 @@
+command: bun run perf:build:demo-auth
+cwd: /Users/philiplewis/slatecamp
+start: 2026-04-27T11:29:57+08:00
+$ bun .ai/00_performance/scripts/build-demo-auth-app.mjs
+{
+  "timestamp": "2026-04-27T03:30:35.785Z",
+  "command": "bun run build",
+  "mode": "demo-auth-built-app",
+  "exitCode": 1,
+  "signal": null,
+  "durationMs": 38142,
+  "logFile": ".ai/00_performance/logs/demo-auth-build.log",
+  "env": {
+    "NEXT_PUBLIC_ENABLE_DEMO_MODE": "true",
+    "PLAYWRIGHT_DEMO_AUTH": "true",
+    "PLAYWRIGHT_DEMO_ROLE": "super_admin",
+    "PLAYWRIGHT_DEMO_TIER": "pro",
+    "NEXT_PUBLIC_PAYMENTS_ENABLED": "false",
+    "DISABLE_DEV_FORCE_USER_ID": "true",
+    "ALLOW_DEV_PORTAL_BYPASS": "false",
+    "NEXT_PUBLIC_SUPABASE_ANON_KEY": "[present-redacted]",
+    "NEXT_PUBLIC_SUPABASE_URL": "[present-redacted]"
+  },
+  "success": false,
+  "notes": [
+    "Secret-like env values are redacted; this script records names/presence only.",
+    "The default demo role is super_admin so protected admin prerender does not fail during demo-mode builds."
+  ]
+}
+error: script "perf:build:demo-auth" exited with code 1
+end: 2026-04-27T11:30:35+08:00
+exit: 1
