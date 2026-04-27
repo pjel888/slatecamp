@@ -103,6 +103,8 @@ export const SceneToolbar = () => {
               type="button"
               onClick={() => handleClick(btn)}
               aria-label={`${btn.label} (${btn.shortcut})`}
+              aria-pressed={btn.type === 'toggle' ? isActive : undefined}
+              data-testid={`3dlab-toolbar-${btn.id}`}
               title={`${btn.label} (${btn.shortcut})`}
               className={`
                 flex h-8 w-8 items-center justify-center rounded-md transition-colors duration-150 ease-out

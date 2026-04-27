@@ -12,7 +12,7 @@ This folder is the centralized performance ledger for SlateCamp. It contains rep
 - Supabase usage inventory and database risk scan.
 - Build/typecheck timing and largest Next build artifacts.
 - Static component/function hotspot patterns.
-- 3D Lab production-hardening loop: three built-auth route passes, full module smoke matrix, mobile-emulated WebGL pass, onboarding overlay coordination, and warning-gate CI harness.
+- 3D Lab production-hardening loop: three built-auth route passes, full module smoke matrix, mobile-emulated WebGL pass, onboarding overlay coordination, warning-gate CI harness, and full layout/control unification gates across 209 module routes.
 
 ## How to rerun
 ~~~bash
@@ -33,6 +33,10 @@ bun run perf:3d:smoke
 bun run perf:3d:mobile
 bun run perf:3d:fallbacks
 bun run perf:3d:gates
+bun run perf:3d:layout-audit
+bun run perf:3d:controls-audit
+bun run perf:3d:layout-consistency
+bun run perf:3d:interaction-consistency
 
 # or the whole local suite
 bun run perf:all
@@ -74,13 +78,15 @@ Comparison/history helpers:
 - 3D Lab direct-import split: hub raw client-reference signal bytes 3419.7 KiB -> 2120.8 KiB; see `22_3d_lab_bundle_remediation.md`.
 - Latest exact `bun run perf:frontend`: passed all 15 Playwright perf tests; memory-threshold restart warning still observed; see `results/full_frontend_verification_after_metadata.json`.
 - 3D Lab production hardening: 3/3 built-auth passes stable (cold p95 spread 4.16%, warm p95 spread 2.48%), 209/209 module smoke routes green, Pixel 7 emulation pass green, onboarding overlay + fallback gates green, and `perf:3d:gates` reports 0 warnings/failures in warning mode; see reports 37–40.
+- 3D Lab layout/control unification: static registry audit covers 209 modules with 0 active failures, built-app layout consistency passes 209/209 routes, built-app interaction consistency passes 209/209 routes, and Site Development Control/Stairs now share one shell/status/control provider; see `41_3d_lab_layout_and_controls_unification.md`.
 
 ## Top bottlenecks
-1. 3D Lab dev-server runtime/memory remains warning-only after full-suite recovery
-2. Supabase broad-read and missing-limit candidates remain after first tightening pass
-3. Admin content/editor surfaces overfetch and render large lists without virtualization
-4. AI/API routes need mocked latency/error budget benchmarks after timeout wrappers
-5. Cron routes include N+1/per-user scaling patterns
+1. 3D Lab standalone/public calculator layout parity remains outside the authenticated `/dashboard/3d-lab` route-surface scope
+2. 3D Lab dev-server runtime/memory remains warning-only after full-suite recovery
+3. Supabase broad-read and missing-limit candidates remain after first tightening pass
+4. Admin content/editor surfaces overfetch and render large lists without virtualization
+5. AI/API routes need mocked latency/error budget benchmarks after timeout wrappers
+6. Cron routes include N+1/per-user scaling patterns
 
 ## Recommended next actions
 1. Add safe auth/API/database fixtures so blocked live flows can be measured without secrets.
@@ -138,5 +144,6 @@ Comparison/history helpers:
 - `.ai/00_performance/38_3d_lab_onboarding_tutorial_system.md`
 - `.ai/00_performance/39_3d_lab_module_smoke_and_mobile.md`
 - `.ai/00_performance/40_3d_lab_ci_gate_status.md`
+- `.ai/00_performance/41_3d_lab_layout_and_controls_unification.md`
 - `.ai/00_performance/remediation_run_notes.md`
 - `.ai/00_performance/llm_crosschecks.md`

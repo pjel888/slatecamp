@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-27T12:07:43.561Z",
+  "timestamp": "2026-04-27T14:48:24.602Z",
   "mode": "fallbacks",
   "baseURL": "http://localhost:3217",
   "env": {
@@ -10,16 +10,16 @@
     "PLAYWRIGHT_ADMIN_EMAIL": "missing",
     "PLAYWRIGHT_ADMIN_PASSWORD": "missing"
   },
-  "failOnCritical": false,
+  "failOnCritical": true,
   "moduleCount": 209,
   "measurements": [
     {
       "kind": "fallbacks",
       "path": "/dashboard/3d-lab/stairway-configurator",
       "moduleId": "stairway-configurator",
-      "startedAt": "2026-04-27T12:07:39.714Z",
-      "endedAt": "2026-04-27T12:07:40.659Z",
-      "durationMs": 945.05,
+      "startedAt": "2026-04-27T14:48:20.382Z",
+      "endedAt": "2026-04-27T14:48:21.419Z",
+      "durationMs": 1037.01,
       "responseStatus": null,
       "ok": true,
       "navigationError": null,
@@ -30,79 +30,79 @@
       "browserMetrics": {
         "finalUrl": "http://localhost:3217/dashboard/3d-lab/stairway-configurator",
         "title": "3D Lab Module | SlateCamp",
-        "bodyTextSample": "BACK TO BROWSER\nStairway Configurator\nSTAIRWAY CONFIGURATOR\nSTAIRWAY CONFIGURATOR\nParameters\n\nYou're designing stairs for a mixed-use development in Quezon City. The project must satisfy multiple overlapping codes. Explore how PD 1096, BP 220, BP 344, and RA 9514 affect the same stair geometry.\n\nStandard House\nBP 220 Housing\nPublic Hall\nExit Stair\n⚠ Riser Violation (PD 1096)\n⚠ Tread Too Shallow (PD 1096)\n⚠ Too Narrow for Public (PD 1096)\n⚠ Headroom Crush (PD 1096)\n⚠ Exit Riser Violation (RA 9514)\n⚠ No Landing (RA 9514)\n⚠ Too Narrow for Wheelchair (BP 344)\n⚠ BP 220 vs PD 1096 Conflict\n⚠ RA 9514 vs PD 1096 Conflict\n✓ All Laws Happy\n⚠ Everything Wrong\nPROJECT CLASSIFICATION\nProject Type\ngeneral_residential\nPart of Accessible Route?\nRequired Exit Stair?\nOccupant Load > 50?\nSTAIR GEOMETRY\nStair Type\nstraight\nTurn Direction\nright\nRisers Before Turn\n6\n2\n12\nClear Width\n900mm\n500\n1500\nRiser Height\n185mm\n100\n300\nTread Depth\n250mm\n150\n350\nHeadroom\n2100mm\n1800\n2500\nHandrail Height\n900mm\n600\n1200\nNumber of Risers\n12\n3\n20\nLEARNING OVERLAYS\nShow Historical Context\nConstruction Tolerance Mode\nTolerance Range\n5mm\n0\n20\nInternational Comparison\nNOSING DETAIL\nNosing Projection\n25mm\n0\n40\nEdge Radius\n10",
+        "bodyTextSample": "SlateCamp\nDashboard\nLEARN\nWiki\nNotes\nEXPLORE\n3D Lab\nPRACTICE\nDrills\nCamp Trail\nFlash Cards\nDATA\nAnalytics\nSettings\nPL\n\nPhilip Lewis\n\nSlateCamp\nDashboard\nWiki\nNotes\n3D Lab\nDrills\nCamp Trail\nFlash Cards\nAnalytics\nSettings\nPhilip Lewis\nCollapse\n⌘B\nOverview\nGlobal Search\nBACK TO BROWSER\nStairway Configurator\nSTAIRWAY CONFIGURATOR\nSTAIRWAY CONFIGURATOR\nParameters\n\nYou're designing stairs for a mixed-use development in Quezon City. The project must satisfy multiple overlapping codes. Explore how PD 1096, BP 220, BP 344, and RA 9514 affect the same stair geometry.\n\nStandard House\nBP 220 Housing\nPublic Hall\nExit Stair\n⚠ Riser Violation (PD 1096)\n⚠ Tread Too Shallow (PD 1096)\n⚠ Too Narrow for Public (PD 1096)\n⚠ Headroom Crush (PD 1096)\n⚠ Exit Riser Violation (RA 9514)\n⚠ No Landing (RA 9514)\n⚠ Too Narrow for Wheelchair (BP 344)\n⚠ BP 220 vs PD 1096 Conflict\n⚠ RA 9514 vs PD 1096 Conflict\n✓ All Laws Happy\n⚠ Everything Wrong\nPROJECT CLASSIFICATION\nProject Type\ngeneral_residential\nPart of Accessible Route?\nRequired Exit Stair?\nOccupant Load > 50?\nSTAIR GEOMETRY\nStair Type\nstraight\nTurn Direction\nright\nRisers Before Turn\n6\n2\n12\nClear Width\n900mm\n500\n1500\nRiser Height\n185mm\n100\n300\nTread Depth\n250m",
         "navigation": {
-          "durationMs": 201.6,
-          "ttfbMs": 114.1,
-          "domContentLoadedMs": 151.5,
-          "loadEventMs": 201.6
+          "durationMs": 317.2,
+          "ttfbMs": 21.4,
+          "domContentLoadedMs": 240.5,
+          "loadEventMs": 317.2
         },
         "paints": {
-          "first-paint": 188,
-          "first-contentful-paint": 188
+          "first-paint": 332,
+          "first-contentful-paint": 556
         },
-        "resourceCount": 54,
-        "transferBytes": 1062562,
+        "resourceCount": 96,
+        "transferBytes": 1202003,
         "slowestResources": [
           {
-            "name": "http://localhost:3217/_next/static/chunks/17vc1bv91yc08.js",
-            "initiatorType": "script",
-            "durationMs": 74.7,
-            "transferSize": 228766
+            "name": "https://lh3.googleusercontent.com/a/ACg8ocL-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X=s96-c",
+            "initiatorType": "link",
+            "durationMs": 141.9,
+            "transferSize": 0
           },
           {
-            "name": "http://localhost:3217/_next/static/chunks/0g5iq_v7_r7lm.js",
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/3d-lab/%5BmoduleId%5D/page-754096a74a12970d.js",
             "initiatorType": "script",
-            "durationMs": 57.7,
-            "transferSize": 21002
+            "durationMs": 129.5,
+            "transferSize": 66145
           },
           {
-            "name": "http://localhost:3217/_next/static/chunks/0ghh68budv2xd.js",
+            "name": "http://localhost:3217/_next/static/chunks/85394-7129c7078a7d2855.js",
             "initiatorType": "script",
-            "durationMs": 56.6,
-            "transferSize": 1305
+            "durationMs": 123.5,
+            "transferSize": 37114
           },
           {
-            "name": "http://localhost:3217/_next/static/chunks/04jivwh510xcp.js",
+            "name": "http://localhost:3217/_next/static/chunks/be53546c-f2431da0df6bfce8.js",
             "initiatorType": "script",
-            "durationMs": 56.3,
-            "transferSize": 18585
+            "durationMs": 121.6,
+            "transferSize": 99515
           },
           {
-            "name": "http://localhost:3217/_next/static/chunks/0w2n28gu90g_s.js",
+            "name": "http://localhost:3217/_next/static/chunks/7f4eb87f-e4453c05cd758d13.js",
             "initiatorType": "script",
-            "durationMs": 56,
-            "transferSize": 23973
+            "durationMs": 120.2,
+            "transferSize": 85701
           },
           {
-            "name": "http://localhost:3217/_next/static/chunks/09_j5ip0enefy.js",
+            "name": "http://localhost:3217/_next/static/chunks/85616-5fdb678c9b9272e6.js",
             "initiatorType": "script",
-            "durationMs": 53.9,
-            "transferSize": 10998
+            "durationMs": 120.1,
+            "transferSize": 6678
           },
           {
-            "name": "http://localhost:3217/_next/static/chunks/0c6gyypdoeyyg.js",
+            "name": "http://localhost:3217/_next/static/chunks/63652-cf01cf028cde9d6b.js",
             "initiatorType": "script",
-            "durationMs": 53.8,
-            "transferSize": 15813
+            "durationMs": 119.8,
+            "transferSize": 5532
           },
           {
-            "name": "http://localhost:3217/_next/static/chunks/0i9xz83ohk.40.js",
+            "name": "http://localhost:3217/_next/static/chunks/65433-cb38ff7317ecf1e7.js",
             "initiatorType": "script",
-            "durationMs": 53.3,
-            "transferSize": 6217
+            "durationMs": 118.8,
+            "transferSize": 39443
           },
           {
-            "name": "http://localhost:3217/_next/static/chunks/0tjk.ooomo6ym.js",
+            "name": "http://localhost:3217/_next/static/chunks/70919-be82513f2a904ecc.js",
             "initiatorType": "script",
-            "durationMs": 49.6,
-            "transferSize": 11515
+            "durationMs": 116.1,
+            "transferSize": 3602
           },
           {
-            "name": "http://localhost:3217/_next/static/chunks/10s4t53ss7fc7.js",
+            "name": "http://localhost:3217/_next/static/chunks/92064-e229b9a2a1ca1c41.js",
             "initiatorType": "script",
-            "durationMs": 49.2,
-            "transferSize": 12338
+            "durationMs": 115.9,
+            "transferSize": 6385
           }
         ],
         "heap": {},
@@ -125,7 +125,7 @@
                 "event": "overlay-resolved",
                 "moduleId": "stairway-configurator",
                 "overlay": "none",
-                "timestamp": "2026-04-27T12:07:39.648Z"
+                "timestamp": "2026-04-27T14:48:20.293Z"
               }
             ],
             "activeModuleId": "stairway-configurator"
@@ -144,27 +144,27 @@
       "kind": "fallbacks",
       "path": "/dashboard/3d-lab/stairway-configurator",
       "moduleId": "stairway-configurator",
-      "startedAt": "2026-04-27T12:07:40.984Z",
-      "endedAt": "2026-04-27T12:07:41.897Z",
-      "durationMs": 912.79,
+      "startedAt": "2026-04-27T14:48:21.826Z",
+      "endedAt": "2026-04-27T14:48:22.819Z",
+      "durationMs": 993.42,
       "responseStatus": null,
       "ok": true,
       "navigationError": null,
       "consoleMessages": [
         {
           "type": "warning",
-          "text": "[.WebGL-0x12c001c4e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+          "text": "[.WebGL-0x11c001d3200]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
           "location": "http://localhost:3217/dashboard/3d-lab/stairway-configurator:0:0"
         },
         {
           "type": "warning",
-          "text": "[.WebGL-0x12c001cf000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+          "text": "[.WebGL-0x11c001d2c00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
           "location": "http://localhost:3217/dashboard/3d-lab/stairway-configurator:0:0"
         },
         {
           "type": "warning",
           "text": "[WebGLErrorBoundary] WebGL context lost — GPU may have been reset",
-          "location": "http://localhost:3217/_next/static/chunks/04jivwh510xcp.js:0:8497"
+          "location": "http://localhost:3217/_next/static/chunks/app/dashboard/3d-lab/%5BmoduleId%5D/page-754096a74a12970d.js:1:33838"
         }
       ],
       "pageErrors": [],
@@ -173,79 +173,79 @@
       "browserMetrics": {
         "finalUrl": "http://localhost:3217/dashboard/3d-lab/stairway-configurator",
         "title": "3D Lab Module | SlateCamp",
-        "bodyTextSample": "BACK TO BROWSER\nStairway Configurator\nSTAIRWAY CONFIGURATOR\nSTAIRWAY CONFIGURATOR\nParameters\n\nYou're designing stairs for a mixed-use development in Quezon City. The project must satisfy multiple overlapping codes. Explore how PD 1096, BP 220, BP 344, and RA 9514 affect the same stair geometry.\n\nStandard House\nBP 220 Housing\nPublic Hall\nExit Stair\n⚠ Riser Violation (PD 1096)\n⚠ Tread Too Shallow (PD 1096)\n⚠ Too Narrow for Public (PD 1096)\n⚠ Headroom Crush (PD 1096)\n⚠ Exit Riser Violation (RA 9514)\n⚠ No Landing (RA 9514)\n⚠ Too Narrow for Wheelchair (BP 344)\n⚠ BP 220 vs PD 1096 Conflict\n⚠ RA 9514 vs PD 1096 Conflict\n✓ All Laws Happy\n⚠ Everything Wrong\nPROJECT CLASSIFICATION\nProject Type\ngeneral_residential\nPart of Accessible Route?\nRequired Exit Stair?\nOccupant Load > 50?\nSTAIR GEOMETRY\nStair Type\nstraight\nTurn Direction\nright\nRisers Before Turn\n6\n2\n12\nClear Width\n900mm\n500\n1500\nRiser Height\n185mm\n100\n300\nTread Depth\n250mm\n150\n350\nHeadroom\n2100mm\n1800\n2500\nHandrail Height\n900mm\n600\n1200\nNumber of Risers\n12\n3\n20\nLEARNING OVERLAYS\nShow Historical Context\nConstruction Tolerance Mode\nTolerance Range\n5mm\n0\n20\nInternational Comparison\nNOSING DETAIL\nNosing Projection\n25mm\n0\n40\nEdge Radius\n10",
+        "bodyTextSample": "SlateCamp\nDashboard\nLEARN\nWiki\nNotes\nEXPLORE\n3D Lab\nPRACTICE\nDrills\nCamp Trail\nFlash Cards\nDATA\nAnalytics\nSettings\nPL\n\nPhilip Lewis\n\nSlateCamp\nDashboard\nWiki\nNotes\n3D Lab\nDrills\nCamp Trail\nFlash Cards\nAnalytics\nSettings\nPhilip Lewis\nCollapse\n⌘B\nOverview\nGlobal Search\nBACK TO BROWSER\nStairway Configurator\nSTAIRWAY CONFIGURATOR\nSTAIRWAY CONFIGURATOR\nParameters\n\nYou're designing stairs for a mixed-use development in Quezon City. The project must satisfy multiple overlapping codes. Explore how PD 1096, BP 220, BP 344, and RA 9514 affect the same stair geometry.\n\nStandard House\nBP 220 Housing\nPublic Hall\nExit Stair\n⚠ Riser Violation (PD 1096)\n⚠ Tread Too Shallow (PD 1096)\n⚠ Too Narrow for Public (PD 1096)\n⚠ Headroom Crush (PD 1096)\n⚠ Exit Riser Violation (RA 9514)\n⚠ No Landing (RA 9514)\n⚠ Too Narrow for Wheelchair (BP 344)\n⚠ BP 220 vs PD 1096 Conflict\n⚠ RA 9514 vs PD 1096 Conflict\n✓ All Laws Happy\n⚠ Everything Wrong\nPROJECT CLASSIFICATION\nProject Type\ngeneral_residential\nPart of Accessible Route?\nRequired Exit Stair?\nOccupant Load > 50?\nSTAIR GEOMETRY\nStair Type\nstraight\nTurn Direction\nright\nRisers Before Turn\n6\n2\n12\nClear Width\n900mm\n500\n1500\nRiser Height\n185mm\n100\n300\nTread Depth\n250m",
         "navigation": {
-          "durationMs": 93.3,
-          "ttfbMs": 11.5,
-          "domContentLoadedMs": 34.5,
-          "loadEventMs": 93.3
+          "durationMs": 301.2,
+          "ttfbMs": 12.6,
+          "domContentLoadedMs": 39.7,
+          "loadEventMs": 301.2
         },
         "paints": {
-          "first-paint": 48,
-          "first-contentful-paint": 48
+          "first-paint": 60,
+          "first-contentful-paint": 60
         },
-        "resourceCount": 54,
-        "transferBytes": 1062562,
+        "resourceCount": 96,
+        "transferBytes": 1202005,
         "slowestResources": [
           {
-            "name": "http://localhost:3217/_next/static/chunks/17vc1bv91yc08.js",
-            "initiatorType": "script",
-            "durationMs": 72.8,
-            "transferSize": 228766
+            "name": "https://lh3.googleusercontent.com/a/ACg8ocL-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X=s96-c",
+            "initiatorType": "link",
+            "durationMs": 143.4,
+            "transferSize": 0
           },
           {
-            "name": "http://localhost:3217/_next/static/chunks/0g5iq_v7_r7lm.js",
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/layout-0346851612bbd524.js",
             "initiatorType": "script",
-            "durationMs": 46.4,
-            "transferSize": 21002
+            "durationMs": 58.8,
+            "transferSize": 36240
           },
           {
-            "name": "http://localhost:3217/_next/static/chunks/0ghh68budv2xd.js",
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/3d-lab/%5BmoduleId%5D/page-754096a74a12970d.js",
             "initiatorType": "script",
-            "durationMs": 44.3,
-            "transferSize": 1305
+            "durationMs": 58.1,
+            "transferSize": 66145
           },
           {
-            "name": "http://localhost:3217/_next/static/chunks/09_j5ip0enefy.js",
-            "initiatorType": "script",
-            "durationMs": 43.9,
-            "transferSize": 10998
+            "name": "https://lh3.googleusercontent.com/a/ACg8ocL-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X=s96-c",
+            "initiatorType": "img",
+            "durationMs": 56.3,
+            "transferSize": 0
           },
           {
-            "name": "http://localhost:3217/_next/static/chunks/04jivwh510xcp.js",
+            "name": "http://localhost:3217/_next/static/chunks/50202-f8322c18ac9833f4.js",
             "initiatorType": "script",
-            "durationMs": 42.4,
-            "transferSize": 18585
+            "durationMs": 56.2,
+            "transferSize": 13619
           },
           {
-            "name": "http://localhost:3217/_next/static/chunks/0w2n28gu90g_s.js",
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/error-1d00958df87736ac.js",
             "initiatorType": "script",
-            "durationMs": 42.3,
-            "transferSize": 23973
+            "durationMs": 55.6,
+            "transferSize": 4626
           },
           {
-            "name": "http://localhost:3217/_next/static/chunks/0i9xz83ohk.40.js",
+            "name": "http://localhost:3217/_next/static/chunks/253-a1850f9db8076d0f.js",
             "initiatorType": "script",
-            "durationMs": 40.5,
-            "transferSize": 6217
+            "durationMs": 55.5,
+            "transferSize": 9364
           },
           {
-            "name": "http://localhost:3217/_next/static/chunks/0c6gyypdoeyyg.js",
+            "name": "http://localhost:3217/_next/static/chunks/14584-bb20121109099742.js",
             "initiatorType": "script",
-            "durationMs": 40.2,
-            "transferSize": 15813
+            "durationMs": 54.7,
+            "transferSize": 7581
           },
           {
-            "name": "http://localhost:3217/_next/static/chunks/0tjk.ooomo6ym.js",
+            "name": "http://localhost:3217/_next/static/chunks/25417-9220892d2b8cd1ca.js",
             "initiatorType": "script",
-            "durationMs": 40,
-            "transferSize": 11515
+            "durationMs": 53.8,
+            "transferSize": 13532
           },
           {
-            "name": "http://localhost:3217/_next/static/chunks/08c0af_vu5ifc.js",
+            "name": "http://localhost:3217/_next/static/chunks/48920-91b3e45f51c77753.js",
             "initiatorType": "script",
-            "durationMs": 37.7,
-            "transferSize": 17535
+            "durationMs": 53.3,
+            "transferSize": 9682
           }
         ],
         "heap": {},
@@ -268,7 +268,7 @@
                 "event": "overlay-resolved",
                 "moduleId": "stairway-configurator",
                 "overlay": "none",
-                "timestamp": "2026-04-27T12:07:40.884Z"
+                "timestamp": "2026-04-27T14:48:21.718Z"
               }
             ],
             "activeModuleId": "stairway-configurator"
@@ -287,9 +287,9 @@
       "kind": "fallbacks",
       "path": "/dashboard/3d-lab/stairway-configurator",
       "moduleId": "stairway-configurator",
-      "startedAt": "2026-04-27T12:07:42.463Z",
-      "endedAt": "2026-04-27T12:07:43.509Z",
-      "durationMs": 1045.5,
+      "startedAt": "2026-04-27T14:48:23.508Z",
+      "endedAt": "2026-04-27T14:48:24.544Z",
+      "durationMs": 1036.05,
       "responseStatus": null,
       "ok": true,
       "navigationError": null,
@@ -297,17 +297,17 @@
         {
           "type": "warning",
           "text": "THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.",
-          "location": "http://localhost:3217/_next/static/chunks/17vc1bv91yc08.js:0:4791"
+          "location": "http://localhost:3217/_next/static/chunks/be53546c-f2431da0df6bfce8.js:0:7766"
         },
         {
           "type": "warning",
           "text": "THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.",
-          "location": "http://localhost:3217/_next/static/chunks/17vc1bv91yc08.js:0:4791"
+          "location": "http://localhost:3217/_next/static/chunks/be53546c-f2431da0df6bfce8.js:0:7766"
         },
         {
           "type": "warning",
           "text": "THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.",
-          "location": "http://localhost:3217/_next/static/chunks/17vc1bv91yc08.js:0:4791"
+          "location": "http://localhost:3217/_next/static/chunks/be53546c-f2431da0df6bfce8.js:0:7766"
         }
       ],
       "pageErrors": [],
@@ -316,79 +316,79 @@
       "browserMetrics": {
         "finalUrl": "http://localhost:3217/dashboard/3d-lab/stairway-configurator",
         "title": "3D Lab Module | SlateCamp",
-        "bodyTextSample": "BACK TO BROWSER\nStairway Configurator\nSTAIRWAY CONFIGURATOR\nSTAIRWAY CONFIGURATOR\nParameters\n\nYou're designing stairs for a mixed-use development in Quezon City. The project must satisfy multiple overlapping codes. Explore how PD 1096, BP 220, BP 344, and RA 9514 affect the same stair geometry.\n\nStandard House\nBP 220 Housing\nPublic Hall\nExit Stair\n⚠ Riser Violation (PD 1096)\n⚠ Tread Too Shallow (PD 1096)\n⚠ Too Narrow for Public (PD 1096)\n⚠ Headroom Crush (PD 1096)\n⚠ Exit Riser Violation (RA 9514)\n⚠ No Landing (RA 9514)\n⚠ Too Narrow for Wheelchair (BP 344)\n⚠ BP 220 vs PD 1096 Conflict\n⚠ RA 9514 vs PD 1096 Conflict\n✓ All Laws Happy\n⚠ Everything Wrong\nPROJECT CLASSIFICATION\nProject Type\ngeneral_residential\nPart of Accessible Route?\nRequired Exit Stair?\nOccupant Load > 50?\nSTAIR GEOMETRY\nStair Type\nstraight\nTurn Direction\nright\nRisers Before Turn\n6\n2\n12\nClear Width\n900mm\n500\n1500\nRiser Height\n185mm\n100\n300\nTread Depth\n250mm\n150\n350\nHeadroom\n2100mm\n1800\n2500\nHandrail Height\n900mm\n600\n1200\nNumber of Risers\n12\n3\n20\nLEARNING OVERLAYS\nShow Historical Context\nConstruction Tolerance Mode\nTolerance Range\n5mm\n0\n20\nInternational Comparison\nNOSING DETAIL\nNosing Projection\n25mm\n0\n40\nEdge Radius\n10",
+        "bodyTextSample": "SlateCamp\nDashboard\nLEARN\nWiki\nNotes\nEXPLORE\n3D Lab\nPRACTICE\nDrills\nCamp Trail\nFlash Cards\nDATA\nAnalytics\nSettings\nPL\n\nPhilip Lewis\n\nSlateCamp\nDashboard\nWiki\nNotes\n3D Lab\nDrills\nCamp Trail\nFlash Cards\nAnalytics\nSettings\nPhilip Lewis\nCollapse\n⌘B\nOverview\nGlobal Search\nBACK TO BROWSER\nStairway Configurator\nSTAIRWAY CONFIGURATOR\nSTAIRWAY CONFIGURATOR\nParameters\n\nYou're designing stairs for a mixed-use development in Quezon City. The project must satisfy multiple overlapping codes. Explore how PD 1096, BP 220, BP 344, and RA 9514 affect the same stair geometry.\n\nStandard House\nBP 220 Housing\nPublic Hall\nExit Stair\n⚠ Riser Violation (PD 1096)\n⚠ Tread Too Shallow (PD 1096)\n⚠ Too Narrow for Public (PD 1096)\n⚠ Headroom Crush (PD 1096)\n⚠ Exit Riser Violation (RA 9514)\n⚠ No Landing (RA 9514)\n⚠ Too Narrow for Wheelchair (BP 344)\n⚠ BP 220 vs PD 1096 Conflict\n⚠ RA 9514 vs PD 1096 Conflict\n✓ All Laws Happy\n⚠ Everything Wrong\nPROJECT CLASSIFICATION\nProject Type\ngeneral_residential\nPart of Accessible Route?\nRequired Exit Stair?\nOccupant Load > 50?\nSTAIR GEOMETRY\nStair Type\nstraight\nTurn Direction\nright\nRisers Before Turn\n6\n2\n12\nClear Width\n900mm\n500\n1500\nRiser Height\n185mm\n100\n300\nTread Depth\n250m",
         "navigation": {
-          "durationMs": 82.5,
-          "ttfbMs": 9.5,
-          "domContentLoadedMs": 35.7,
-          "loadEventMs": 82.5
+          "durationMs": 147.8,
+          "ttfbMs": 12.1,
+          "domContentLoadedMs": 39.7,
+          "loadEventMs": 147.8
         },
         "paints": {
-          "first-paint": 68,
-          "first-contentful-paint": 68
+          "first-paint": 84,
+          "first-contentful-paint": 84
         },
-        "resourceCount": 55,
-        "transferBytes": 1076565,
+        "resourceCount": 97,
+        "transferBytes": 1208664,
         "slowestResources": [
           {
-            "name": "http://localhost:3217/_next/static/chunks/17vc1bv91yc08.js",
-            "initiatorType": "script",
-            "durationMs": 60.9,
-            "transferSize": 228766
+            "name": "https://lh3.googleusercontent.com/a/ACg8ocL-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X=s96-c",
+            "initiatorType": "link",
+            "durationMs": 120.1,
+            "transferSize": 0
           },
           {
-            "name": "http://localhost:3217/_next/static/chunks/0g5iq_v7_r7lm.js",
-            "initiatorType": "script",
-            "durationMs": 44,
-            "transferSize": 21002
+            "name": "https://lh3.googleusercontent.com/a/ACg8ocL-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X=s96-c",
+            "initiatorType": "img",
+            "durationMs": 85.8,
+            "transferSize": 0
           },
           {
-            "name": "http://localhost:3217/_next/static/chunks/0w2n28gu90g_s.js",
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/layout-0346851612bbd524.js",
             "initiatorType": "script",
-            "durationMs": 43.7,
-            "transferSize": 23973
+            "durationMs": 71,
+            "transferSize": 36240
           },
           {
-            "name": "http://localhost:3217/_next/static/chunks/04jivwh510xcp.js",
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/3d-lab/%5BmoduleId%5D/page-754096a74a12970d.js",
             "initiatorType": "script",
-            "durationMs": 43.2,
-            "transferSize": 18585
+            "durationMs": 70.5,
+            "transferSize": 66145
           },
           {
-            "name": "http://localhost:3217/_next/static/chunks/09_j5ip0enefy.js",
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/error-1d00958df87736ac.js",
             "initiatorType": "script",
-            "durationMs": 41.7,
-            "transferSize": 10998
+            "durationMs": 69.1,
+            "transferSize": 4626
           },
           {
-            "name": "http://localhost:3217/_next/static/chunks/0ghh68budv2xd.js",
+            "name": "http://localhost:3217/_next/static/chunks/253-a1850f9db8076d0f.js",
             "initiatorType": "script",
-            "durationMs": 40.7,
-            "transferSize": 1305
+            "durationMs": 68.3,
+            "transferSize": 9364
           },
           {
-            "name": "http://localhost:3217/_next/static/chunks/0i9xz83ohk.40.js",
+            "name": "http://localhost:3217/_next/static/chunks/50202-f8322c18ac9833f4.js",
             "initiatorType": "script",
-            "durationMs": 39.7,
-            "transferSize": 6217
+            "durationMs": 68,
+            "transferSize": 13619
           },
           {
-            "name": "http://localhost:3217/_next/static/chunks/0c6gyypdoeyyg.js",
+            "name": "http://localhost:3217/_next/static/chunks/25417-9220892d2b8cd1ca.js",
             "initiatorType": "script",
-            "durationMs": 39.2,
-            "transferSize": 15813
+            "durationMs": 67.2,
+            "transferSize": 13532
           },
           {
-            "name": "http://localhost:3217/_next/static/chunks/0tjk.ooomo6ym.js",
+            "name": "http://localhost:3217/_next/static/chunks/14584-bb20121109099742.js",
             "initiatorType": "script",
-            "durationMs": 38.9,
-            "transferSize": 11515
+            "durationMs": 66.9,
+            "transferSize": 7581
           },
           {
-            "name": "http://localhost:3217/_next/static/chunks/08c0af_vu5ifc.js",
+            "name": "http://localhost:3217/_next/static/chunks/48920-91b3e45f51c77753.js",
             "initiatorType": "script",
-            "durationMs": 38.3,
-            "transferSize": 17535
+            "durationMs": 66.2,
+            "transferSize": 9682
           }
         ],
         "heap": {},
@@ -411,7 +411,7 @@
                 "event": "overlay-resolved",
                 "moduleId": "stairway-configurator",
                 "overlay": "none",
-                "timestamp": "2026-04-27T12:07:42.121Z"
+                "timestamp": "2026-04-27T14:48:23.115Z"
               }
             ],
             "activeModuleId": "stairway-configurator"

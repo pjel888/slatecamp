@@ -2,11 +2,9 @@
 
 import { useState, useEffect, useCallback, useMemo, useRef } from 'react'
 import { useRouter } from 'next/navigation'
-import { LabTopBar } from '@/features/3d-lab/components/LabTopBar'
 import { OnboardingFlow } from '@/features/3d-lab/components/OnboardingFlow'
 import { ModuleContextCard } from '@/features/3d-lab/components/ModuleContextCard'
 import { LabViewport } from '@/features/3d-lab/components/LabViewport'
-import { LabModuleShell } from '@/features/3d-lab/components/shell/LabModuleShell'
 import { LabViewportFrame } from '@/features/3d-lab/components/shell/LabViewportFrame'
 import { ViewportShell } from '@/features/3d-lab/components/shell/ViewportShell'
 import { useLabStore } from '@/features/3d-lab/stores/useLabStore'
@@ -150,7 +148,6 @@ export const ModuleViewer = ({ modelId, basePath }: ModuleViewerProps) => {
   // When loading/error, config is null → useTemplateContent returns null safely.
   const templateContent = useTemplateContent(modelId, config)
 
-  const isBespoke = modelId === 'site-development-controls'
   const showOnboarding = activeOnboardingOverlay === 'global'
   const showContextCard = activeOnboardingOverlay === 'module'
 
@@ -193,7 +190,7 @@ export const ModuleViewer = ({ modelId, basePath }: ModuleViewerProps) => {
 
   // ── Unified Viewport Shell path ───────────────────────────────────────────
   // Template-driven modules: ViewportShell with slot content from useTemplateContent
-  if (templateContent && !isBespoke) {
+  if (templateContent) {
     return (
       <ViewportShell
         title={title}
@@ -218,37 +215,7 @@ export const ModuleViewer = ({ modelId, basePath }: ModuleViewerProps) => {
     )
   }
 
-  // ── Bespoke modules (DevControls): ViewportShell header + own internal layout
-  if (isBespoke) {
-    return (
-      <ViewportShell
-        title={title}
-        codeReference={codeRef}
-        visitedCount={0}
-        totalCount={totalALEQuestions}
-        onBack={handleBack}
-        shellConfig={{}}
-        capabilities={{ resetCamera: true }}
-        suppressFirstTimeTooltip={activeOnboardingOverlay !== 'none'}
-        content={{
-          canvasContent: (
-            <LabViewport
-              modelId={modelId}
-              model={{ model_id: modelId, name: title, slug: modelId, url: '' }}
-              parameters={[]}
-              hotspots={[]}
-              userTier="free"
-              preLoadedConfig={config}
-            />
-          ),
-        }}
-      >
-        {onboardingOverlays}
-      </ViewportShell>
-    )
-  }
-
-  // ── Fallback: ViewportShell header + own internal layout (calculator, etc.) ─
+  // ── Legacy fallback: shell-owned chrome with legacy scene content ─
   return (
     <ViewportShell
       title={title}

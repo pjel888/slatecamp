@@ -67,6 +67,7 @@ export const LayersPanel = ({ children }: LayersPanelProps) => {
     <div
       ref={ref}
       className="absolute top-16 left-4 z-30 w-60 rounded-md border border-border bg-card p-3 shadow-lg pointer-events-auto cursor-default"
+      data-testid="3dlab-layers-panel"
     >
       <div className="mb-2 flex items-center justify-between">
         <h3 className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground px-1">

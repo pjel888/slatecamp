@@ -8,6 +8,11 @@ import { StudioLighting } from './StudioLighting'
 import type { LightingPreset } from './StudioLighting'
 import { SceneBase } from './SceneBase'
 import { useViewportShellStore } from '@/features/3d-lab/stores/useViewportShellStore'
+import {
+  THREE_D_LAB_CONTROL_MAPPING,
+  ThreeDLabControlsProvider,
+  type ThreeDLabCameraControlConfig,
+} from '@/features/3d-lab/components/controls/ThreeDLabControlsProvider'
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -16,6 +21,8 @@ export interface SceneConfigProps {
   cameraPosition?: [number, number, number]
   /** Perspective camera FOV in degrees. Default: 35 */
   cameraFov?: number
+  /** Orbit target [x, y, z]. Defaults to shared module center. */
+  cameraTarget?: [number, number, number]
   /** Use orthographic camera instead of perspective. Default: false */
   orthographic?: boolean
   /** Orthographic camera zoom factor. Default: 1 */
@@ -36,6 +43,8 @@ export interface SceneConfigProps {
   lightingPreset?: LightingPreset
   /** Disable SceneBase (ground, fog, tone mapping). Default: false */
   disableSceneBase?: boolean
+  /** Shared camera preset contract for reset/snap/fit commands. */
+  cameraControls?: ThreeDLabCameraControlConfig
   /** Override canvas clear color. Default: undefined (uses SceneBase) */
   clearColor?: string
   /** Flat shading mode (NoToneMapping). Default: false */
@@ -114,6 +123,7 @@ const SceneOverrides = ({
 export const SceneConfig = ({
   cameraPosition = [6, 6, 6],
   cameraFov = 35,
+  cameraTarget = [0, 1, 0],
   orthographic = false,
   cameraZoom = 1,
   minPolarAngle = 0,
@@ -124,6 +134,7 @@ export const SceneConfig = ({
   disableLighting = false,
   lightingPreset,
   disableSceneBase = false,
+  cameraControls,
   clearColor,
   flat = false,
 }: SceneConfigProps) => {
@@ -162,8 +173,27 @@ export const SceneConfig = ({
     setActiveInteraction('idle')
   }, [setActiveInteraction])
 
+  const controlConfig = cameraControls ?? {
+    presets: {
+      perspective: { position: cameraPosition, target: cameraTarget, fov: cameraFov },
+      orbit: { position: cameraPosition, target: cameraTarget, fov: cameraFov },
+    },
+    zoomToFit: { position: cameraPosition, target: cameraTarget, fov: cameraFov },
+    resetPreset: 'perspective' as const,
+    minDistance,
+    maxDistance,
+    minPolarAngle,
+    maxPolarAngle,
+  }
+
   return (
-    <>
+    <ThreeDLabControlsProvider config={controlConfig}>
+      <group
+        userData={{
+          slatecampControlMapping: THREE_D_LAB_CONTROL_MAPPING,
+          slatecampControlProvider: 'ThreeDLabControlsProvider',
+        }}
+      />
       {/* Camera — orthographic uses drei component; perspective uses imperative setup */}
       {orthographic ? (
         <OrthographicCamera
@@ -178,10 +208,11 @@ export const SceneConfig = ({
       {/* Controls — orbit/pan behavior */}
       <OrbitControls
         makeDefault
-        minPolarAngle={minPolarAngle}
-        maxPolarAngle={maxPolarAngle}
-        minDistance={minDistance}
-        maxDistance={maxDistance}
+        target={cameraTarget}
+        minDistance={controlConfig.minDistance ?? minDistance}
+        maxDistance={controlConfig.maxDistance ?? maxDistance}
+        minPolarAngle={controlConfig.minPolarAngle ?? minPolarAngle}
+        maxPolarAngle={controlConfig.maxPolarAngle ?? maxPolarAngle}
         enableDamping={true}
         dampingFactor={0.08}
         enableRotate={navMode === 'orbit'}
@@ -207,6 +238,6 @@ export const SceneConfig = ({
       {(clearColor != null || flat) && (
         <SceneOverrides clearColor={clearColor} flat={flat} />
       )}
-    </>
+    </ThreeDLabControlsProvider>
   )
 }

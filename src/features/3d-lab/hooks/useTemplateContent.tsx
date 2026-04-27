@@ -15,6 +15,10 @@ import { ConfigPanel } from '@/features/3d-lab/components/templates/WallConfigur
 import { BOMPanel as WallConfiguratorV1BOMPanel } from '@/features/3d-lab/components/templates/WallConfigurator/BOMPanel'
 import { WallConfiguratorLeftPanel } from '@/features/3d-lab/components/templates/WallConfiguratorLeftPanel'
 import { WallConfiguratorRightPanel } from '@/features/3d-lab/components/templates/WallConfiguratorRightPanel'
+import { DevControlsSceneContent } from '@/features/3d-lab/DevControlsModule/canvas/DevControlsCanvas'
+import { DevControlsLeftSidebar, DevControlsRightSidebar, DevControlsStatusContent } from '@/features/3d-lab/DevControlsModule/dashboard/DevControlsShellSlots'
+import { SharedToolbarBridge } from '@/features/3d-lab/DevControlsModule/dashboard/SharedToolbarBridge'
+import { CAMERA_PRESETS as SITE_DEV_CAMERA_PRESETS } from '@/features/3d-lab/DevControlsModule/canvas/constants'
 import { createModuleStore } from '@/features/3d-lab/stores/createModuleStore'
 import { getModuleById } from '@/features/3d-lab/config/registry'
 import {
@@ -24,6 +28,7 @@ import {
   type CutawaySectionConfig,
   type FloorPlanConfig,
   type AnimatedSequenceConfig,
+  type CalculatorConfig,
   type ViewportShellConfig,
   type ViewportCapabilities,
   type ViewportShellContent,
@@ -63,6 +68,32 @@ const WallConfiguratorRenderer = dynamic(
   () => import('@/features/3d-lab/templates/WallConfiguratorRenderer').then((m) => m.WallConfiguratorRenderer),
   { ssr: false },
 )
+
+const CalculatorTemplateSlot = dynamic(
+  () => import('@/features/3d-lab/templates/CalculatorTemplate').then((m) => m.CalculatorTemplateSlot),
+  { ssr: false },
+)
+
+
+const siteDevelopmentCameraControls = {
+  presets: {
+    perspective: SITE_DEV_CAMERA_PRESETS.perspective,
+    orbit: SITE_DEV_CAMERA_PRESETS.orbit,
+    top: SITE_DEV_CAMERA_PRESETS.top,
+    front: SITE_DEV_CAMERA_PRESETS.front,
+    left: SITE_DEV_CAMERA_PRESETS.left,
+    right: SITE_DEV_CAMERA_PRESETS.right,
+    rear: SITE_DEV_CAMERA_PRESETS.rear,
+    'iso-ne': SITE_DEV_CAMERA_PRESETS['iso-ne'],
+    'iso-nw': SITE_DEV_CAMERA_PRESETS['iso-nw'],
+    'iso-se': SITE_DEV_CAMERA_PRESETS['iso-se'],
+    'iso-sw': SITE_DEV_CAMERA_PRESETS['iso-sw'],
+  },
+  zoomToFit: SITE_DEV_CAMERA_PRESETS.perspective,
+  resetPreset: 'perspective' as const,
+  minDistance: 0.5,
+  maxDistance: 500,
+}
 
 // ─── Hook ───────────────────────────────────────────────────────────────────
 
@@ -112,7 +143,7 @@ export const useTemplateContent = (
 
   const useStore = useMemo(
     () => createModuleStore(defaults),
-    [config?.id], // eslint-disable-line react-hooks/exhaustive-deps
+    [config?.id],
   )
 
   // Get template defaults, merge with any module-level overrides
@@ -127,15 +158,20 @@ export const useTemplateContent = (
     const cameraPos = config.camera?.position ?? [3, 3, 3]
     const cameraFov = config.camera?.fov ?? 45
 
-    const canvasWrapper = (children: React.ReactNode) => (
+    const canvasWrapper = (
+      children: React.ReactNode,
+      sceneConfigOverrides: React.ComponentProps<typeof CanvasWrapper>['sceneConfig'] = {},
+    ) => (
       <SceneErrorBoundary>
         <CanvasWrapper
           sceneConfig={{
             cameraPosition: cameraPos,
+            cameraTarget: config.camera?.target ?? [0, 1, 0],
             cameraFov: cameraFov,
             minDistance: 1,
             maxDistance: 25,
             showGround: false,
+            ...sceneConfigOverrides,
           }}
         >
           {children}
@@ -146,6 +182,45 @@ export const useTemplateContent = (
     switch (templateType as TemplateType) {
       case 'parametric': {
         const cfg = config as ParametricSceneConfig
+
+        // ── Site Development Controls special path ──
+        // Bespoke content is now slotted into the shared shell instead of owning
+        // its own global grid, status bar, toolbar, canvas, or OrbitControls.
+        if (cfg.id === 'site-development-controls') {
+          return {
+            shellConfig: {
+              ...shellConfig,
+              leftSidebar: { width: 480, title: 'Site Controls', mobileTabLabel: 'Controls' },
+              rightSidebar: { width: 300, title: 'Compliance', mobileTabLabel: 'Compliance' },
+              statusBar: true,
+            },
+            capabilities,
+            content: {
+              canvasContent: (
+                <>
+                  <SharedToolbarBridge />
+                  {canvasWrapper(
+                    <DevControlsSceneContent />,
+                    {
+                      cameraPosition: SITE_DEV_CAMERA_PRESETS.perspective.position,
+                      cameraTarget: SITE_DEV_CAMERA_PRESETS.perspective.target,
+                      cameraFov: SITE_DEV_CAMERA_PRESETS.perspective.fov,
+                      maxDistance: 500,
+                      showGround: false,
+                      disableLighting: true,
+                      disableSceneBase: true,
+                      clearColor: '#F2F0EB',
+                      cameraControls: siteDevelopmentCameraControls,
+                    },
+                  )}
+                </>
+              ),
+              leftSidebarContent: <DevControlsLeftSidebar />,
+              rightSidebarContent: <DevControlsRightSidebar />,
+              statusBarContent: <DevControlsStatusContent />,
+            },
+          }
+        }
 
         // ── Wall Configurator v2 special path ──
         // The unified wall configurator needs custom sidebar panels
@@ -322,11 +397,24 @@ export const useTemplateContent = (
         }
       }
 
-      // Calculator has complex per-toolType layout with its own 3-column grid,
-      // breadcrumb, FloatingCameraBar, and per-tool stores. Route through shell
-      // for header consistency but let it handle its own internal layout.
-      case 'calculator':
-        return null
+      case 'calculator': {
+        const cfg = config as CalculatorConfig
+        return {
+          shellConfig: {
+            ...shellConfig,
+            leftSidebar: { width: 340, title: 'Inputs', mobileTabLabel: 'Inputs' },
+            rightSidebar: { width: 340, title: 'Results', mobileTabLabel: 'Results' },
+            statusBar: true,
+          },
+          capabilities,
+          content: {
+            canvasContent: <CalculatorTemplateSlot config={cfg} slot="scene" />,
+            leftSidebarContent: <CalculatorTemplateSlot config={cfg} slot="leftSidebar" />,
+            rightSidebarContent: <CalculatorTemplateSlot config={cfg} slot="rightSidebar" />,
+            statusBarContent: <CalculatorTemplateSlot config={cfg} slot="statusBar" />,
+          },
+        }
+      }
 
       default:
         return null

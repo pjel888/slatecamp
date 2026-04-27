@@ -86,7 +86,7 @@ const redactEnvPresence = () => ({
 async function createContext(browser: Browser, options: BrowserContextOptions = {}, suppressOnboarding = true) {
   const context = await browser.newContext({ baseURL, ...options })
 
-  await context.addInitScript(({ suppress }) => {
+  await context.addInitScript(({ suppress, moduleIds }) => {
     const mark = (key: string) => localStorage.setItem(key, 'true')
     const clear = (key: string) => localStorage.removeItem(key)
     const moduleMatch = location.pathname.match(/\/dashboard\/3d-lab\/([^/]+)/)
@@ -97,9 +97,10 @@ async function createContext(browser: Browser, options: BrowserContextOptions = 
       mark('slatecamp-3dlab:onboarding:v1:global-complete')
       mark('slatecamp-viewport-onboarding-seen')
       mark('slatecamp-3dlab:onboarding:v1:viewport-tooltip-seen')
-      if (moduleId) {
-        mark(`module_${moduleId}_seen`)
-        mark(`slatecamp-3dlab:onboarding:v1:module:${moduleId}:seen`)
+      const ids = new Set<string>([...moduleIds, ...(moduleId ? [moduleId] : [])])
+      for (const id of ids) {
+        mark(`module_${id}_seen`)
+        mark(`slatecamp-3dlab:onboarding:v1:module:${id}:seen`)
       }
     } else {
       clear('3dlab_onboarded')
@@ -117,7 +118,7 @@ async function createContext(browser: Browser, options: BrowserContextOptions = 
         }
       }
     }
-  }, { suppress: suppressOnboarding })
+  }, { suppress: suppressOnboarding, moduleIds: parseModuleIds() })
 
   return context
 }
@@ -334,6 +335,8 @@ test.afterAll(() => {
   if (byKind('auth-timing').length) writeJson('3d_lab_auth_timing_results.json', { ...payload, measurements: byKind('auth-timing') })
   if (byKind('onboarding').length) writeJson('3d_lab_onboarding_overlay_results.json', { ...payload, measurements: byKind('onboarding') })
   if (byKind('fallbacks').length) writeJson('3d_lab_fallback_results.json', { ...payload, measurements: byKind('fallbacks') })
+  if (byKind('layout-consistency').length) writeJson('3d_lab_layout_consistency_results.json', { ...payload, measurements: byKind('layout-consistency') })
+  if (byKind('interaction-consistency').length) writeJson('3d_lab_interaction_consistency_results.json', { ...payload, measurements: byKind('interaction-consistency') })
 })
 
 test.describe.serial('3D Lab production hardening gates', () => {
@@ -404,6 +407,110 @@ test.describe.serial('3D Lab production hardening gates', () => {
     expect(metrics?.finalUrl).toContain('/dashboard/3d-lab')
 
     await context.close()
+  })
+
+
+
+  test('layout consistency matrix uses one shared shell across every selected 3D module', async ({ browser }) => {
+    test.skip(!shouldRun('layout-consistency'), `THREED_MODE=${mode} skips layout consistency`)
+
+    const moduleIds = parseModuleIds()
+    test.setTimeout(Math.max(120_000, moduleIds.length * perRouteTimeoutMs + 60_000))
+
+    const failed: Measurement[] = []
+
+    for (const moduleId of moduleIds) {
+      const { context, page } = await newMeasuredPage(browser)
+      const run = await measureRoute(page, 'layout-consistency', `/dashboard/3d-lab/${moduleId}`, moduleId)
+      try {
+        await expect(page.locator('[data-testid="3dlab-shell"]')).toHaveCount(1)
+        await expect(page.locator('[data-testid="3dlab-shell-header"]')).toHaveCount(1)
+        await expect(page.locator('[data-testid="3dlab-shell-header"]')).toBeVisible()
+        await expect(page.locator('[data-testid="3dlab-shell-left-sidebar"]')).toHaveCount(1)
+        await expect(page.locator('[data-testid="3dlab-shell-left-sidebar"]')).toBeVisible()
+        await expect(page.locator('[data-testid="3dlab-shell-right-sidebar"]')).toHaveCount(1)
+        await expect(page.locator('[data-testid="3dlab-shell-right-sidebar"]')).toBeVisible()
+        await expect(page.locator('[data-testid="3dlab-shell-viewport"]')).toHaveCount(1)
+        await expect(page.locator('[data-testid="3dlab-shell-viewport"]')).toBeVisible()
+        await expect(page.locator('[data-testid="3dlab-shell-toolbar-overlay"]')).toHaveCount(1)
+        await expect(page.locator('[data-testid="3dlab-shell-toolbar-overlay"]')).toBeVisible()
+        await expect(page.locator('[data-testid="3dlab-shell-status"]')).toHaveCount(1)
+        await expect(page.locator('[data-testid="3dlab-shell-status"]')).toBeVisible()
+        await expect(page.locator('[data-viewport-wrapper]:visible')).toHaveCount(0)
+        await expect(page.locator('[data-testid="3dlab-webgl-checking"]')).toHaveCount(0)
+      } catch (error) {
+        run.ok = false
+        run.criticalErrors.push(String(error))
+        failed.push(run)
+      } finally {
+        await context.close()
+      }
+    }
+
+    if (failOnCritical) {
+      expect(failed.map((run) => ({ moduleId: run.moduleId, error: run.criticalErrors[0] ?? run.navigationError }))).toEqual([])
+    }
+  })
+
+  test('interaction consistency matrix uses the shared camera and toolbar contract', async ({ browser }) => {
+    test.skip(!shouldRun('interaction-consistency'), `THREED_MODE=${mode} skips interaction consistency`)
+
+    const moduleIds = parseModuleIds()
+    test.setTimeout(Math.max(120_000, moduleIds.length * perRouteTimeoutMs + 60_000))
+
+    const failed: Measurement[] = []
+
+    for (const moduleId of moduleIds) {
+      const { context, page } = await newMeasuredPage(browser)
+      const run = await measureRoute(page, 'interaction-consistency', `/dashboard/3d-lab/${moduleId}`, moduleId)
+      try {
+        const provider = await page.evaluate(() =>
+          (window as unknown as { __slatecamp3dLabControls?: { provider?: string } }).__slatecamp3dLabControls?.provider,
+        )
+        expect(provider).toBe('ThreeDLabControlsProvider')
+
+        const toolbarOverlay = page.getByTestId('3dlab-shell-toolbar-overlay')
+        for (const id of ['orbit', 'pan', 'top', 'front', 'left', 'right', 'rear', 'iso-ne', 'iso-nw', 'iso-se', 'iso-sw', 'persp', 'iso', 'zoom-in', 'zoom-out', 'zoom-fit', 'reset']) {
+          await expect(toolbarOverlay.getByTestId(`3dlab-control-${id}`)).toBeVisible()
+        }
+
+        const clickToolbarItem = async (testId: string) => {
+          await toolbarOverlay.getByTestId(testId).evaluate((element) => {
+            if (element instanceof HTMLElement) element.click()
+          })
+        }
+
+        await clickToolbarItem('3dlab-control-pan')
+        await expect(toolbarOverlay.getByTestId('3dlab-control-pan')).toHaveAttribute('aria-pressed', 'true')
+        await clickToolbarItem('3dlab-control-orbit')
+        await expect(toolbarOverlay.getByTestId('3dlab-control-orbit')).toHaveAttribute('aria-pressed', 'true')
+        await clickToolbarItem('3dlab-control-top')
+        await expect(toolbarOverlay.getByTestId('3dlab-control-top')).toHaveAttribute('aria-pressed', 'true')
+        await clickToolbarItem('3dlab-control-reset')
+        await expect(toolbarOverlay.getByTestId('3dlab-control-persp')).toHaveAttribute('aria-pressed', 'true')
+
+        for (const id of ['grid', 'dimensions', 'xray', 'layers', 'screenshot', 'fullscreen']) {
+          await expect(toolbarOverlay.getByTestId(`3dlab-toolbar-${id}`)).toBeVisible()
+        }
+
+        await clickToolbarItem('3dlab-toolbar-layers')
+        const layersPanel = toolbarOverlay.getByTestId('3dlab-layers-panel')
+        await expect(layersPanel).toBeVisible()
+        await expect(layersPanel.getByText('Ground Grid')).toBeVisible()
+        await expect(layersPanel.getByText('Dimensions')).toBeVisible()
+        await expect(layersPanel.getByText('X-ray Mode')).toBeVisible()
+      } catch (error) {
+        run.ok = false
+        run.criticalErrors.push(String(error))
+        failed.push(run)
+      } finally {
+        await context.close()
+      }
+    }
+
+    if (failOnCritical) {
+      expect(failed.map((run) => ({ moduleId: run.moduleId, error: run.criticalErrors[0] ?? run.navigationError }))).toEqual([])
+    }
   })
 
   test('module smoke matrix loads every selected 3D module without critical runtime errors', async ({ browser }) => {

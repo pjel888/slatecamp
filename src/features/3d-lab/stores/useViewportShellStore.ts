@@ -3,6 +3,7 @@
 // UI-only actions (sidebar collapse, tab switch) must NOT call invalidate().
 import { create } from 'zustand'
 import type { ViewMode } from '@/features/3d-lab/types/templates'
+import type { ThreeDLabCameraControlConfig } from '@/features/3d-lab/components/controls/ThreeDLabControlsProvider'
 import type { CameraPreset } from '@/lib/pd1096/types'
 import {
   getProjectionModeForSelectedPreset,
@@ -24,6 +25,7 @@ export interface ViewportShellState {
   selectedCameraPreset: CameraPreset | null
   cameraCommandId: number
   cameraCommandPreset: CameraCommandPreset | null
+  cameraControlConfig: ThreeDLabCameraControlConfig
 
   // Navigation mode
   navMode: 'orbit' | 'pan' | 'look'
@@ -86,6 +88,8 @@ export interface ViewportShellState {
   setViewMode: (mode: ViewMode) => void
   setCameraPreset: (presetId: CameraPreset | null) => void
   snapToPreset: (preset: CameraCommandPreset, source?: 'toolbar' | 'shortcut' | 'context-menu' | 'system') => void
+  setCameraControlConfig: (config: ThreeDLabCameraControlConfig) => void
+  resetCameraControlConfig: () => void
 
   // Invalidation
   setInvalidateFn: (fn: (() => void) | null) => void
@@ -102,6 +106,7 @@ const DEFAULTS: Pick<
   | 'selectedCameraPreset'
   | 'cameraCommandId'
   | 'cameraCommandPreset'
+  | 'cameraControlConfig'
   | 'mobileActiveTab'
   | 'bottomSheetOpen'
   | 'invalidateFn'
@@ -123,6 +128,7 @@ const DEFAULTS: Pick<
   selectedCameraPreset: 'perspective',
   cameraCommandId: 0,
   cameraCommandPreset: null,
+  cameraControlConfig: {},
   navMode: 'orbit' as const,
   activeInteraction: 'idle' as const,
   mobileActiveTab: '',
@@ -233,6 +239,9 @@ export const useViewportShellStore = create<ViewportShellState>()((set, get) => 
     })
     get().invalidateFn?.()
   },
+
+  setCameraControlConfig: (config) => set({ cameraControlConfig: config }),
+  resetCameraControlConfig: () => set({ cameraControlConfig: DEFAULTS.cameraControlConfig }),
 
   setInvalidateFn: (fn) => set({ invalidateFn: fn }),
 

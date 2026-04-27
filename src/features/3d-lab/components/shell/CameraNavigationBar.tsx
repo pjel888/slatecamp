@@ -125,6 +125,8 @@ export const CameraNavigationBar = () => {
                   type="button"
                   onClick={() => handleClick(btn)}
                   aria-label={btn.label}
+                  aria-pressed={active}
+                  data-testid={`3dlab-control-${btn.id}`}
                   title={btn.label}
                   className="flex flex-col items-center justify-center gap-0.5 rounded-md px-1.5 py-1 min-w-[36px] transition-colors duration-150 ease-out"
                   style={{

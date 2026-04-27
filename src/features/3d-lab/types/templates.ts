@@ -524,7 +524,8 @@ export const TEMPLATE_SHELL_DEFAULTS: Record<TemplateType, { shell: ViewportShel
   parametric: {
     shell: {
       leftSidebar: { width: 320, title: 'Controls', mobileTabLabel: 'Controls' },
-      rightSidebar: { width: 300, title: 'Controls', mobileTabLabel: 'Controls' },
+      rightSidebar: { width: 300, title: 'Details', mobileTabLabel: 'Details' },
+      statusBar: true,
     },
     capabilities: {
       cameraPresets: true, viewModes: ['perspective', 'isometric'], resetCamera: true,
@@ -532,28 +533,44 @@ export const TEMPLATE_SHELL_DEFAULTS: Record<TemplateType, { shell: ViewportShel
     },
   },
   exploded: {
-    shell: { rightSidebar: { width: 300, title: 'Parts', mobileTabLabel: 'Parts' } },
+    shell: {
+      leftSidebar: { width: 320, title: 'Module', mobileTabLabel: 'Module' },
+      rightSidebar: { width: 300, title: 'Parts', mobileTabLabel: 'Parts' },
+      statusBar: true,
+    },
     capabilities: {
       cameraPresets: true, viewModes: ['perspective', 'isometric'], explodedView: true, resetCamera: true,
       cameraPresetBar: true, floatingToolbar: DEFAULT_FLOATING_TOOLBAR,
     },
   },
   cutaway: {
-    shell: { rightSidebar: { width: 300, title: 'Layers', mobileTabLabel: 'Layers' } },
+    shell: {
+      leftSidebar: { width: 320, title: 'Module', mobileTabLabel: 'Module' },
+      rightSidebar: { width: 300, title: 'Layers', mobileTabLabel: 'Layers' },
+      statusBar: true,
+    },
     capabilities: {
       cameraPresets: true, viewModes: ['perspective', 'isometric'], crossSection: true, resetCamera: true,
       cameraPresetBar: true, floatingToolbar: DEFAULT_FLOATING_TOOLBAR,
     },
   },
   floorplan: {
-    shell: { rightSidebar: { width: 300, title: 'Legend', mobileTabLabel: 'Legend' } },
+    shell: {
+      leftSidebar: { width: 320, title: 'Controls', mobileTabLabel: 'Controls' },
+      rightSidebar: { width: 300, title: 'Legend', mobileTabLabel: 'Legend' },
+      statusBar: true,
+    },
     capabilities: {
       cameraPresets: true, viewModes: ['top-down', 'perspective'], resetCamera: true,
       cameraPresetBar: true, floatingToolbar: DEFAULT_FLOATING_TOOLBAR,
     },
   },
   animated: {
-    shell: { rightSidebar: { width: 300, title: 'Steps', mobileTabLabel: 'Steps' } },
+    shell: {
+      leftSidebar: { width: 320, title: 'Module', mobileTabLabel: 'Module' },
+      rightSidebar: { width: 300, title: 'Steps', mobileTabLabel: 'Steps' },
+      statusBar: true,
+    },
     capabilities: {
       cameraPresets: true, viewModes: ['perspective', 'isometric'], resetCamera: true,
       cameraPresetBar: true, floatingToolbar: DEFAULT_FLOATING_TOOLBAR,
@@ -563,6 +580,7 @@ export const TEMPLATE_SHELL_DEFAULTS: Record<TemplateType, { shell: ViewportShel
     shell: {
       leftSidebar: { width: 340, title: 'Inputs', mobileTabLabel: 'Inputs' },
       rightSidebar: { width: 340, title: 'Results', mobileTabLabel: 'Results' },
+      statusBar: true,
     },
     capabilities: {
       viewModes: ['orthographic', 'perspective'], resetCamera: true,
@@ -573,6 +591,7 @@ export const TEMPLATE_SHELL_DEFAULTS: Record<TemplateType, { shell: ViewportShel
     shell: {
       leftSidebar: { width: 340, title: 'Configure', mobileTabLabel: 'Configure' },
       rightSidebar: { width: 320, title: 'Materials', mobileTabLabel: 'Materials' },
+      statusBar: true,
     },
     capabilities: {
       cameraPresets: true, viewModes: ['perspective', 'isometric'], resetCamera: true,

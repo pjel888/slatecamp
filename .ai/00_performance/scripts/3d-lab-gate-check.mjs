@@ -17,6 +17,9 @@ const mobile = readJson(path.join(resultsDir, '3d_lab_mobile_webgl_results.json'
 const onboarding = readJson(path.join(resultsDir, '3d_lab_onboarding_overlay_results.json'))
 const consolePolicy = readJson(path.join(resultsDir, '3d_lab_console_policy_results.json'))
 const fallbacks = readJson(path.join(resultsDir, '3d_lab_fallback_results.json'))
+const layoutAudit = readJson(path.join(resultsDir, '3d_lab_layout_controls_audit_results.json'))
+const layoutConsistency = readJson(path.join(resultsDir, '3d_lab_layout_consistency_results.json'))
+const interactionConsistency = readJson(path.join(resultsDir, '3d_lab_interaction_consistency_results.json'))
 
 const warnings = []
 const failures = []
@@ -45,6 +48,16 @@ assertGate((fallbacks?.measurements ?? []).length >= 3, 'Fallback pass did not c
 assertGate((fallbacks?.measurements ?? []).some((run) => (run.browserMetrics?.webglUnavailableVisible ?? 0) > 0), 'Unsupported WebGL fallback was not observed')
 assertGate((fallbacks?.measurements ?? []).some((run) => (run.browserMetrics?.webglRecoveryVisible ?? 0) > 0), 'WebGL context-loss recovery fallback was not observed')
 assertGate((fallbacks?.measurements ?? []).some((run) => (run.browserMetrics?.slowSceneNoticeVisible ?? 0) > 0), 'Slow-scene fallback was not observed')
+assertGate(Boolean(layoutAudit), 'Missing 3d_lab_layout_controls_audit_results.json')
+assertGate(!(layoutAudit?.failures ?? []).length, 'Static layout/control audit has failures')
+assertGate(Boolean(layoutConsistency), 'Missing 3d_lab_layout_consistency_results.json')
+assertGate((layoutConsistency?.measurements ?? []).length > 0, 'Layout consistency did not measure any module routes')
+assertGate(!(layoutConsistency?.measurements ?? []).some((run) => run.ok === false), 'Layout consistency recorded failed route measurements')
+assertGate(!(layoutConsistency?.measurements ?? []).some((run) => run.criticalErrors?.length), 'Layout consistency recorded critical console/runtime errors')
+assertGate(Boolean(interactionConsistency), 'Missing 3d_lab_interaction_consistency_results.json')
+assertGate((interactionConsistency?.measurements ?? []).length > 0, 'Interaction consistency did not measure any module routes')
+assertGate(!(interactionConsistency?.measurements ?? []).some((run) => run.ok === false), 'Interaction consistency recorded failed route measurements')
+assertGate(!(interactionConsistency?.measurements ?? []).some((run) => run.criticalErrors?.length), 'Interaction consistency recorded critical console/runtime errors')
 
 const payload = {
   timestamp: new Date().toISOString(),
@@ -59,6 +72,9 @@ const payload = {
     onboarding: Boolean(onboarding),
     consolePolicy: Boolean(consolePolicy),
     fallbacks: Boolean(fallbacks),
+    layoutAudit: Boolean(layoutAudit),
+    layoutConsistency: Boolean(layoutConsistency),
+    interactionConsistency: Boolean(interactionConsistency),
   },
   notes: [
     'Default mode is warning-only. Set PERF_3D_GATE_MODE=hard only after at least three comparable stable CI baselines.',

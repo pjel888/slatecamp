@@ -1,0 +1,23 @@
+$ bun .ai/00_performance/scripts/3d-lab-gate-check.mjs
+{
+  "timestamp": "2026-04-27T14:48:56.490Z",
+  "mode": "warning",
+  "success": true,
+  "warnings": [],
+  "failures": [],
+  "inputs": {
+    "repeat": true,
+    "smoke": true,
+    "mobile": true,
+    "onboarding": true,
+    "consolePolicy": true,
+    "fallbacks": true,
+    "layoutAudit": true,
+    "layoutConsistency": true,
+    "interactionConsistency": true
+  },
+  "notes": [
+    "Default mode is warning-only. Set PERF_3D_GATE_MODE=hard only after at least three comparable stable CI baselines.",
+    "This check reads existing JSON artifacts and does not run browser tests by itself."
+  ]
+}

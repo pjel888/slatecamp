@@ -24,7 +24,7 @@ const ZONE_LABELS: Record<string, string> = {
 // Full-width bottom bar showing persistent context: zone, FLAR, BHL.
 // Format: "R-1 Low-Density Residential · FLAR 2.20 · BHL 3F/10m"
 
-export function StatusBar() {
+export function DevControlsStatusContent() {
   const zoneClass = useDevControlsStore((s) => s.zoning.zoneClass)
   const result = useDevControlsStore((s) => s.result)
 
@@ -34,14 +34,20 @@ export function StatusBar() {
   const bhlMeters = result.bhlMeters.toFixed(0)
 
   return (
+    <p className="truncate font-mono text-xs text-muted-foreground">
+      {zoneLabel}
+      <span className="mx-2 text-border">·</span>
+      FLAR {flar}
+      <span className="mx-2 text-border">·</span>
+      BHL {bhlStoreys}F/{bhlMeters}m
+    </p>
+  )
+}
+
+export function StatusBar() {
+  return (
     <div className="flex h-8 shrink-0 items-center border-t border-border bg-muted/50 px-4">
-      <p className="truncate font-mono text-xs text-muted-foreground">
-        {zoneLabel}
-        <span className="mx-2 text-border">·</span>
-        FLAR {flar}
-        <span className="mx-2 text-border">·</span>
-        BHL {bhlStoreys}F/{bhlMeters}m
-      </p>
+      <DevControlsStatusContent />
     </div>
   )
 }

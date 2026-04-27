@@ -1,0 +1,56 @@
+## Files
+- `/Users/philiplewis/slatecamp/src/app/dashboard/3d-lab/page.tsx` — entry route for `/dashboard/3d-lab`; handles auth gate, entitlement check, legacy `?model=` redirect, and renders `LabBrowserShell`.
+- `/Users/philiplewis/slatecamp/src/app/dashboard/3d-lab/[moduleId]/page.tsx` — dynamic module route; validates `moduleId` with `getModuleById`, handles legacy `wall-configurator` redirect, and mounts `ModuleViewer`.
+- `/Users/philiplewis/slatecamp/src/features/3d-lab/components/ModuleViewer.tsx` — module shell orchestrator; loads module config, resolves overlays, and chooses `ViewportShell` rendering path.
+- `/Users/philiplewis/slatecamp/src/features/3d-lab/config/registry/index.ts` — module registry aggregation (`ALL_MODULES` from `cat-01..cat-16`) and lookup helpers (`getModuleById`).
+- `/Users/philiplewis/slatecamp/src/features/3d-lab/config/module-paths.ts` — category-folder slug map and dynamic import resolver (`getModuleImportPath`, `importModuleConfig`).
+- `/Users/philiplewis/slatecamp/src/features/3d-lab/config/registry/cat-16.ts` (representative) — metadata entry example: `id`, `templateType`, `categoryId`, status, phase.
+- `/Users/philiplewis/slatecamp/src/features/3d-lab/components/LabViewport.tsx` — rendering dispatch hub for `modelId` (legacy, bespoke, template-driven, fallback Workspace).
+- `/Users/philiplewis/slatecamp/src/features/3d-lab/components/shell/ViewportShell.tsx` — unified shell (header/footer/control layout owner).
+- `/Users/philiplewis/slatecamp/src/features/3d-lab/components/shell/LabViewportFrame.tsx` — WebGL frame/Canvas container and overlay host (`children` injected canvas overlays).
+- `/Users/philiplewis/slatecamp/src/features/3d-lab/components/shell/ViewportHeader.tsx` — top bar ownership (back button, title, code ref, progress).
+- `/Users/philiplewis/slatecamp/src/features/3d-lab/components/shell/ViewportStatusBar.tsx` — footer-like status bar for selection/readout.
+- `/Users/philiplewis/slatecamp/src/features/3d-lab/components/shell/SceneToolbar.tsx` & `/Users/philiplewis/slatecamp/src/features/3d-lab/components/shell/CameraNavigationBar.tsx` — shell-owned controls (viewport-level controls).
+- `/Users/philiplewis/slatecamp/src/features/3d-lab/hooks/useTemplateContent.tsx` — maps template type + module config to shell content slots (`leftSidebarContent`, `rightSidebarContent`, `canvasContent`, `toolbarExtras`).
+- `/Users/philiplewis/slatecamp/src/features/3d-lab/config/module-paths.test.ts` — proves registry-to-path mapping assumptions in tests (e.g., `site-development-controls`, `unified-wall-configurator`).
+
+## Relationships
+- Route chain:
+  - `/dashboard/3d-lab` → `page.tsx` (browser) → category/card/list UI.
+  - `/dashboard/3d-lab/[moduleId]` → module page → `ModuleViewer`.
+- `ModuleViewer` responsibilities:
+  - Resolve registry metadata via `getModuleById` (`registry/index.ts`).
+  - Resolve/load actual module config via `importModuleConfig` (`module-paths.ts`).
+  - Build shell metadata (`title`, `codeRef`, counts) and pass through `useTemplateContent`.
+  - Compose `ViewportShell` with `LabViewportFrame`-wrapped canvas content and overlay children.
+- `LabViewport` is the scene renderer dispatch point:
+  - Hardcoded legacy/bespoke IDs (`far-calculator`, `classical-orders`, `site-development-controls`) have direct scene bindings.
+  - Registry-backed modules use `getModuleById` + preloaded config → template wrapper; unknown/non-registry modules fallback to `Workspace`.
+- `ViewportShell` owns outer module UI contract:
+  - Header = `ViewportHeader`.
+  - Canvas region = `content.canvasContent` (often `LabViewport` wrapped by `LabViewportFrame`).
+  - Sidebars = `ViewportSidebar` with template-provided sidebar slots.
+  - Mobile/alt controls = `ViewportBottomSheet`.
+- Shell control/footer ownership:
+  - Controls are shell-level: `SceneToolbar`, `CameraNavigationBar`, `LayersPanel`, `ViewportStatusBar` (conditional), `WebGLRecovery`, `ViewportToast`, `FirstTimeTooltip`, `ViewportContextMenu`, `CommandPalette`.
+  - Footer “status row” is only active when `content.statusBarContent` is supplied AND `shellConfig.statusBar` enabled.
+- Registry/module-path relationship:
+  - Registry entries (`id` + `templateType`) live in `/registry/cat-*.ts`, then aggregated in `registry/index.ts`.
+  - `module-paths.ts` maps `categoryId` via `CATEGORY_FOLDER_MAP` to `config/modules/{folder}/{moduleId}`; loader does dynamic import from `@/features/3d-lab/config/modules/${path}`.
+
+## Answer
+Active SlateLab 3D module routing is:
+- **Route-level**: `/dashboard/3d-lab` (list) and `/dashboard/3d-lab/[moduleId]` (detail).
+- **Model resolution**: browser page validates/redirects, module page validates `moduleId` and forwards to `ModuleViewer`.
+- **Config resolution**: `ModuleViewer` uses registry lookup + dynamic module-config import via `module-paths`.
+- **Scene routing**: `ModuleViewer` feeds prepared config into template shell flow; `LabViewport`/templates handle actual scene components for legacy/ bespoke/registry modules.
+- **Shell architecture** is centralized in `ViewportShell`: it owns header/footer/control chrome and injects template-provided slot content (sidebars/canvas/toolbar extras) into a unified layout.
+
+## Next steps
+- Wiki evidence in-repo is currently thin for this flow (no existing `/.omx/wiki/*` docs found).
+  **Recommend building initial project wiki at `.omx/wiki/3d-lab/`** with:
+  - module routing map
+  - shell ownership matrix
+  - registry/module-path contract
+  - legacy vs template module routing matrix
+- `Ready to proceed`

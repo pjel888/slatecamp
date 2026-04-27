@@ -60,22 +60,202 @@ interface ToolRenderProps {
   emptyMessage?: string
 }
 
-// ─── Three-Panel Layout ───────────────────────────────────────────────────────
+// ─── Shared Slot Layout ──────────────────────────────────────────────────────
 
-function CalculatorLayout({
+export type CalculatorTemplateSlot = 'full' | 'leftSidebar' | 'rightSidebar' | 'scene' | 'statusBar'
+
+const buildCalculatorCameraControls = (presets: Record<CalcCameraPreset, ReturnType<typeof getCalcCameraPresets>[CalcCameraPreset]>) => ({
+  presets: {
+    perspective: presets.perspective,
+    orbit: presets.perspective,
+    top: presets.top,
+    front: presets.front,
+    left: presets['iso-nw'],
+    right: presets['iso-ne'],
+    rear: presets['iso-sw'],
+    'iso-ne': presets['iso-ne'],
+    'iso-nw': presets['iso-nw'],
+    'iso-se': presets['iso-se'],
+    'iso-sw': presets['iso-sw'],
+  },
+  zoomToFit: presets.perspective,
+  resetPreset: 'perspective' as const,
+  minDistance: 0.5,
+  maxDistance: 80,
+  minPolarAngle: Math.PI * 0.05,
+  maxPolarAngle: Math.PI * 0.48,
+})
+
+function CalculatorInputContent({ config, tool }: { config: CalculatorConfig; tool: ToolRenderProps }) {
+  return (
+    <div className="h-full overflow-y-auto p-4">
+      <div className="lg:hidden">
+        <Accordion>
+          <AccordionItem title="Inputs" _index={0}>
+            {tool.inputPanel}
+          </AccordionItem>
+        </Accordion>
+      </div>
+      <div className="hidden lg:block">
+        {tool.inputPanel}
+      </div>
+      {config.sponsorData && (
+        <div className="mt-4 border-t border-border pt-4">
+          <SponsorCard
+            sponsorName={config.sponsorData.name}
+            logoUrl={config.sponsorData.logoUrl}
+          />
+        </div>
+      )}
+    </div>
+  )
+}
+
+function CalculatorSceneContent({
   config,
   tool,
+  cameraPreset,
+  onCameraPresetChange,
+  showLocalCameraBar,
 }: {
   config: CalculatorConfig
   tool: ToolRenderProps
+  cameraPreset: CalcCameraPreset
+  onCameraPresetChange: (preset: CalcCameraPreset) => void
+  showLocalCameraBar: boolean
 }) {
-  const [cameraPreset, setCameraPreset] = useState<CalcCameraPreset>('perspective')
   const presets = getCalcCameraPresets(config.toolType)
   const cam = presets[cameraPreset]
 
   return (
+    <div className="relative h-full min-h-[56vw] bg-card pointer-events-none lg:min-h-0">
+      <SceneErrorBoundary>
+        <CanvasWrapper
+          sceneConfig={{
+            orthographic: cam.isOrtho,
+            flat: cam.isOrtho,
+            disableLighting: true,
+            disableSceneBase: true,
+            cameraPosition: cam.position,
+            cameraTarget: cam.target,
+            cameraFov: cam.fov,
+            cameraZoom: cam.zoom,
+            clearColor: '#F2F0EB',
+            minPolarAngle: Math.PI * 0.05,
+            maxPolarAngle: Math.PI * 0.48,
+            cameraControls: buildCalculatorCameraControls(presets),
+          }}
+        >
+          <CalculatorLighting />
+          <SceneInvalidator inputVersion={tool.inputVersion} />
+          <Suspense fallback={null}>{tool.hasDimensions ? tool.scene : null}</Suspense>
+        </CanvasWrapper>
+      </SceneErrorBoundary>
+      {!tool.hasDimensions && <CanvasEmptyState message={tool.emptyMessage} />}
+      {showLocalCameraBar && tool.hasDimensions && (
+        <FloatingCameraBar current={cameraPreset} onChange={onCameraPresetChange} />
+      )}
+    </div>
+  )
+}
+
+function CalculatorResultContent({ tool }: { tool: ToolRenderProps }) {
+  return (
+    <div className="h-full overflow-y-auto p-4">
+      <div className="mb-3 flex rounded-sm border border-border">
+        <button
+          onClick={() => tool.onResultModeChange('net')}
+          className={`flex-1 py-1.5 font-mono text-[10px] uppercase tracking-widest transition-colors duration-150 ${
+            tool.resultMode === 'net'
+              ? 'bg-primary text-primary-foreground'
+              : 'text-muted-foreground hover:bg-muted'
+          }`}
+        >
+          Net quantity
+        </button>
+        <button
+          onClick={() => tool.onResultModeChange('buy')}
+          className={`flex-1 border-l border-border py-1.5 font-mono text-[10px] uppercase tracking-widest transition-colors duration-150 ${
+            tool.resultMode === 'buy'
+              ? 'bg-primary text-primary-foreground'
+              : 'text-muted-foreground hover:bg-muted'
+          }`}
+        >
+          Buy quantity
+        </button>
+      </div>
+
+      {tool.hasDimensions ? (
+        <div>
+          {tool.resultRows.map((row, i) => (
+            <ResultRow key={i} {...row} />
+          ))}
+          <div className="mt-3">
+            <AssumptionsAccordion assumptions={tool.assumptions} />
+          </div>
+          <div className="mt-4">
+            <ExportActions isPremium={false} />
+          </div>
+          <div className="mt-4 rounded-md border border-border border-l-4 border-l-camp-orange bg-background p-3">
+            <p className="font-mono text-[8px] font-medium uppercase tracking-widest text-camp-orange mb-1">
+              LEA Connection
+            </p>
+            <p className="font-sans text-xs text-foreground">
+              This calculation is tested in the LEA (Building Technology).
+            </p>
+            <Link
+              href={ROUTES.pricing}
+              className="mt-1 inline-block font-sans text-xs text-primary hover:underline"
+            >
+              Master it with SlateCamp &rarr;
+            </Link>
+          </div>
+        </div>
+      ) : (
+        <p className="text-xs text-muted-foreground">
+          Enter dimensions to see your estimate.
+        </p>
+      )}
+    </div>
+  )
+}
+
+function CalculatorStatusContent() {
+  return (
+    <span className="truncate font-mono text-[11px] text-muted-foreground">
+      Calculator estimate · verify quantities against project documents before procurement
+    </span>
+  )
+}
+
+function CalculatorLayout({
+  config,
+  tool,
+  slot = 'full',
+}: {
+  config: CalculatorConfig
+  tool: ToolRenderProps
+  slot?: CalculatorTemplateSlot
+}) {
+  const [cameraPreset, setCameraPreset] = useState<CalcCameraPreset>('perspective')
+
+  if (slot === 'leftSidebar') return <CalculatorInputContent config={config} tool={tool} />
+  if (slot === 'rightSidebar') return <CalculatorResultContent tool={tool} />
+  if (slot === 'statusBar') return <CalculatorStatusContent />
+  if (slot === 'scene') {
+    return (
+      <CalculatorSceneContent
+        config={config}
+        tool={tool}
+        cameraPreset="perspective"
+        onCameraPresetChange={() => {}}
+        showLocalCameraBar={false}
+      />
+    )
+  }
+
+  return (
     <div className="flex h-full w-full flex-col pointer-events-auto">
-      {/* Breadcrumb */}
       <nav className="border-b border-border bg-card px-4 py-2">
         <p className="font-sans text-xs text-muted-foreground">
           <Link href={ROUTES.calculators.suiteRoot} className="hover:text-primary">
@@ -86,121 +266,19 @@ function CalculatorLayout({
         </p>
       </nav>
 
-      {/* Three-panel grid */}
       <div className="grid flex-1 grid-cols-1 gap-0 lg:grid-cols-[320px_1fr_340px]">
-        {/* Input Panel */}
-        <div className="overflow-y-auto border-b border-border bg-card p-4 lg:border-b-0">
-          {/* Mobile: collapsible accordion */}
-          <div className="lg:hidden">
-            <Accordion>
-              <AccordionItem title="Inputs" _index={0}>
-                {tool.inputPanel}
-              </AccordionItem>
-            </Accordion>
-          </div>
-          {/* Desktop: always visible */}
-          <div className="hidden lg:block">
-            {tool.inputPanel}
-          </div>
-          {config.sponsorData && (
-            <div className="mt-4 border-t border-border pt-4">
-              <SponsorCard
-                sponsorName={config.sponsorData.name}
-                logoUrl={config.sponsorData.logoUrl}
-              />
-            </div>
-          )}
+        <div className="overflow-y-auto border-b border-border bg-card lg:border-b-0">
+          <CalculatorInputContent config={config} tool={tool} />
         </div>
-
-        {/* Canvas Panel — pointer-events-none lets orbit controls on Canvas below work */}
-        <div className="relative min-h-[56vw] bg-[#F2F0EB] lg:min-h-0 pointer-events-none">
-          {tool.hasDimensions ? (
-            <>
-              <SceneErrorBoundary>
-                <CanvasWrapper
-                  sceneConfig={{
-                    orthographic: cam.isOrtho,
-                    flat: cam.isOrtho,
-                    disableLighting: true,
-                    disableSceneBase: true,
-                    cameraPosition: cam.position,
-                    cameraFov: cam.fov,
-                    cameraZoom: cam.zoom,
-                    clearColor: '#F2F0EB',
-                    minPolarAngle: Math.PI * 0.05,
-                    maxPolarAngle: Math.PI * 0.48,
-                  }}
-                >
-                  <CalculatorLighting />
-                  <SceneInvalidator inputVersion={tool.inputVersion} />
-                  <Suspense fallback={null}>{tool.scene}</Suspense>
-                </CanvasWrapper>
-              </SceneErrorBoundary>
-              <FloatingCameraBar current={cameraPreset} onChange={setCameraPreset} />
-            </>
-          ) : (
-            <CanvasEmptyState message={tool.emptyMessage} />
-          )}
-        </div>
-
-        {/* Result Panel */}
-        <div className="overflow-y-auto border-t border-border bg-card p-4 lg:border-l lg:border-t-0">
-          {/* Net/Buy toggle */}
-          <div className="mb-3 flex rounded-sm border border-border">
-            <button
-              onClick={() => tool.onResultModeChange('net')}
-              className={`flex-1 py-1.5 font-mono text-[10px] uppercase tracking-widest transition-colors duration-150 ${
-                tool.resultMode === 'net'
-                  ? 'bg-primary text-primary-foreground'
-                  : 'text-muted-foreground hover:bg-muted'
-              }`}
-            >
-              Net quantity
-            </button>
-            <button
-              onClick={() => tool.onResultModeChange('buy')}
-              className={`flex-1 border-l border-border py-1.5 font-mono text-[10px] uppercase tracking-widest transition-colors duration-150 ${
-                tool.resultMode === 'buy'
-                  ? 'bg-primary text-primary-foreground'
-                  : 'text-muted-foreground hover:bg-muted'
-              }`}
-            >
-              Buy quantity
-            </button>
-          </div>
-
-          {/* Calculation trail */}
-          {tool.hasDimensions ? (
-            <div>
-              {tool.resultRows.map((row, i) => (
-                <ResultRow key={i} {...row} />
-              ))}
-              <div className="mt-3">
-                <AssumptionsAccordion assumptions={tool.assumptions} />
-              </div>
-              <div className="mt-4">
-                <ExportActions isPremium={false} />
-              </div>
-              <div className="mt-4 rounded-md border border-border border-l-4 border-l-camp-orange bg-background p-3">
-                <p className="font-mono text-[8px] font-medium uppercase tracking-widest text-camp-orange mb-1">
-                  LEA Connection
-                </p>
-                <p className="font-sans text-xs text-foreground">
-                  This calculation is tested in the LEA (Building Technology).
-                </p>
-                <Link
-                  href={ROUTES.pricing}
-                  className="mt-1 inline-block font-sans text-xs text-primary hover:underline"
-                >
-                  Master it with SlateCamp &rarr;
-                </Link>
-              </div>
-            </div>
-          ) : (
-            <p className="text-xs text-muted-foreground">
-              Enter dimensions to see your estimate.
-            </p>
-          )}
+        <CalculatorSceneContent
+          config={config}
+          tool={tool}
+          cameraPreset={cameraPreset}
+          onCameraPresetChange={setCameraPreset}
+          showLocalCameraBar
+        />
+        <div className="overflow-y-auto border-t border-border bg-card lg:border-l lg:border-t-0">
+          <CalculatorResultContent tool={tool} />
         </div>
       </div>
 
@@ -211,7 +289,7 @@ function CalculatorLayout({
 
 // ─── Flooring Tool ────────────────────────────────────────────────────────────
 
-function FlooringTool({ config }: { config: CalculatorConfig }) {
+function FlooringTool({ config, slot }: { config: CalculatorConfig; slot?: CalculatorTemplateSlot }) {
   const inputVersion = useFlooringStore((s) => s.inputVersion)
   const computed = useFlooringStore((s) => s.computed)
   const resultMode = useFlooringStore((s) => s.resultMode)
@@ -249,6 +327,7 @@ function FlooringTool({ config }: { config: CalculatorConfig }) {
   return (
     <CalculatorLayout
       config={config}
+      slot={slot}
       tool={{
         scene: <FlooringScene />,
         inputPanel: <FlooringInputPanel />,
@@ -266,7 +345,7 @@ function FlooringTool({ config }: { config: CalculatorConfig }) {
 
 // ─── Paint Tool ───────────────────────────────────────────────────────────────
 
-function PaintTool({ config }: { config: CalculatorConfig }) {
+function PaintTool({ config, slot }: { config: CalculatorConfig; slot?: CalculatorTemplateSlot }) {
   const inputVersion = usePaintStore((s) => s.inputVersion)
   const computed = usePaintStore((s) => s.computed)
   const resultMode = usePaintStore((s) => s.resultMode)
@@ -325,6 +404,7 @@ function PaintTool({ config }: { config: CalculatorConfig }) {
   return (
     <CalculatorLayout
       config={config}
+      slot={slot}
       tool={{
         scene: <PaintScene />,
         inputPanel: <PaintInputPanel />,
@@ -342,7 +422,7 @@ function PaintTool({ config }: { config: CalculatorConfig }) {
 
 // ─── Drywall Tool ─────────────────────────────────────────────────────────────
 
-function DrywallTool({ config }: { config: CalculatorConfig }) {
+function DrywallTool({ config, slot }: { config: CalculatorConfig; slot?: CalculatorTemplateSlot }) {
   const inputVersion = useDrywallStore((s) => s.inputVersion)
   const computed = useDrywallStore((s) => s.computed)
   const resultMode = useDrywallStore((s) => s.resultMode)
@@ -372,6 +452,7 @@ function DrywallTool({ config }: { config: CalculatorConfig }) {
   return (
     <CalculatorLayout
       config={config}
+      slot={slot}
       tool={{
         scene: <DrywallScene />,
         inputPanel: <DrywallInputPanel />,
@@ -390,7 +471,7 @@ function DrywallTool({ config }: { config: CalculatorConfig }) {
 
 // ─── CHB Tool ─────────────────────────────────────────────────────────────────
 
-function CHBTool({ config }: { config: CalculatorConfig }) {
+function CHBTool({ config, slot }: { config: CalculatorConfig; slot?: CalculatorTemplateSlot }) {
   const inputVersion = useCHBStore((s) => s.inputVersion)
   const computed = useCHBStore((s) => s.computed)
   const resultMode = useCHBStore((s) => s.resultMode)
@@ -437,6 +518,7 @@ function CHBTool({ config }: { config: CalculatorConfig }) {
   return (
     <CalculatorLayout
       config={config}
+      slot={slot}
       tool={{
         scene: <CHBScene />,
         inputPanel: <CHBInputPanel />,
@@ -454,16 +536,22 @@ function CHBTool({ config }: { config: CalculatorConfig }) {
 
 // ─── Main Export ──────────────────────────────────────────────────────────────
 
-export default function CalculatorTemplate({ config }: { config: CalculatorConfig }) {
+export function CalculatorTemplateSlot({
+  config,
+  slot,
+}: {
+  config: CalculatorConfig
+  slot: CalculatorTemplateSlot
+}) {
   switch (config.toolType) {
     case 'flooring':
-      return <FlooringTool config={config} />
+      return <FlooringTool config={config} slot={slot} />
     case 'paint':
-      return <PaintTool config={config} />
+      return <PaintTool config={config} slot={slot} />
     case 'drywall':
-      return <DrywallTool config={config} />
+      return <DrywallTool config={config} slot={slot} />
     case 'chb':
-      return <CHBTool config={config} />
+      return <CHBTool config={config} slot={slot} />
     default:
       return (
         <div className="flex h-full w-full items-center justify-center">
@@ -473,4 +561,8 @@ export default function CalculatorTemplate({ config }: { config: CalculatorConfi
         </div>
       )
   }
+}
+
+export default function CalculatorTemplate({ config }: { config: CalculatorConfig }) {
+  return <CalculatorTemplateSlot config={config} slot="full" />
 }

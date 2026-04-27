@@ -1,0 +1,80 @@
+timestamp=2026-04-27T13:29:26Z
+branch=main
+head=34d5a620
+head_is_34d5a620=yes
+--- status --short ---
+ M src/app/(protected)/ceo/_components/CeoShell.tsx
+ M src/app/(protected)/ceo/analytics/page.tsx
+ M src/app/(protected)/ceo/insights/page.tsx
+ M src/app/admin/3d-models/page.tsx
+ M src/app/admin/_components/AdminShell.tsx
+ M src/app/admin/activity/page.tsx
+ M src/app/admin/assets/[id]/page.tsx
+ M src/app/admin/assets/page.tsx
+ M src/app/admin/audit/page.tsx
+ M src/app/admin/knowledge/analytics/page.tsx
+ M src/app/admin/knowledge/import/page.tsx
+ M src/app/admin/knowledge/new/page.tsx
+ M src/app/admin/knowledge/questions/new/page.tsx
+ M src/app/admin/layout.tsx
+ M src/app/admin/pipeline/page.tsx
+ M src/app/admin/preview/[previewId]/page.tsx
+ M src/app/admin/reviews/page.tsx
+ M src/app/admin/search/page.tsx
+ M src/app/admin/settings/page.tsx
+ M src/app/admin/taxonomy/coverage/page.tsx
+ M src/app/admin/taxonomy/page.tsx
+ M src/components/admin/DeleteArticleModal.tsx
+ M src/components/ceo/RoleAssignmentModal.tsx
+ M src/lib/actions/admin/assets.test.ts
+ M src/lib/actions/admin/assets.ts
+ M src/lib/actions/admin/bulk.ts
+ M src/lib/actions/admin/content.test.ts
+ M src/lib/actions/admin/content.ts
+ M src/lib/actions/admin/coverage.ts
+ M src/lib/actions/admin/dashboard.ts
+ M src/lib/actions/admin/design-problems.test.ts
+ M src/lib/actions/admin/design-problems.ts
+ M src/lib/actions/admin/design-scenarios.test.ts
+ M src/lib/actions/admin/design-scenarios.ts
+ M src/lib/actions/admin/pipeline.test.ts
+ M src/lib/actions/admin/pipeline.ts
+ M src/lib/actions/admin/question-queries.ts
+ M src/lib/actions/admin/questions.test.ts
+ M src/lib/actions/admin/questions.ts
+ M src/lib/actions/admin/roles.test.ts
+ M src/lib/actions/admin/roles.ts
+ M src/lib/actions/admin/taxonomy.ts
+ M src/lib/actions/admin/wiki.test.ts
+ M src/lib/actions/admin/wiki.ts
+ M src/lib/actions/preview-actions.test.ts
+ M src/lib/admin/is-admin.ts
+ M src/lib/admin/roles.test.ts
+ M src/lib/admin/roles.ts
+ M src/lib/audit/audit-queries.test.ts
+ M src/lib/context/entitlement-context.tsx
+ M src/lib/entitlements/policy.test.ts
+ M src/lib/entitlements/policy.ts
+ M src/lib/entitlements/resolve-entitlements.ts
+ M src/lib/entitlements/types.ts
+ M src/lib/import/import-actions.test.ts
+?? .ai/00_performance/logs/loop6-team-preflight.log
+?? .ai/00_performance/logs/loop7-state-reconciliation.log
+?? .ai/02_audits/admin-route-audit/
+?? .ai/13_research/3D-Lab-Audit-And-UXUI-Improvement/
+?? src/app/(protected)/ceo/team/admin-roles/
+?? src/app/(protected)/ceo/team/permission-audit/
+?? src/components/ceo/CeoAdminRoleManager.tsx
+?? src/hooks/usePermission.ts
+?? src/lib/actions/ceo/admin-role-actions.ts
+?? src/lib/admin/audit.ts
+--- reports 37-40 git last changed ---
+.ai/00_performance/37_3d_lab_production_hardening.md	34d5a620 2026-04-27T20:18:44+08:00 Make 3D Lab readiness depend on measured gates
+.ai/00_performance/38_3d_lab_onboarding_tutorial_system.md	34d5a620 2026-04-27T20:18:44+08:00 Make 3D Lab readiness depend on measured gates
+.ai/00_performance/39_3d_lab_module_smoke_and_mobile.md	34d5a620 2026-04-27T20:18:44+08:00 Make 3D Lab readiness depend on measured gates
+.ai/00_performance/40_3d_lab_ci_gate_status.md	34d5a620 2026-04-27T20:18:44+08:00 Make 3D Lab readiness depend on measured gates
+--- active module route result count if present ---
+file=.ai/00_performance/results/3d_lab_module_smoke_results.json
+routeCount= 209
+successCount= 0
+timestamp= 2026-04-27T12:12:46.281Z

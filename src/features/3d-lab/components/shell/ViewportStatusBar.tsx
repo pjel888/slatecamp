@@ -5,6 +5,7 @@ import { useViewportShellStore } from '@/features/3d-lab/stores/useViewportShell
 
 interface ViewportStatusBarProps {
   children?: ReactNode
+  testId?: string
 }
 
 /**
@@ -13,12 +14,12 @@ interface ViewportStatusBarProps {
  * When no children are provided, shows default status: ready state + selection summary.
  * DOM-rendered, no WebGL cost.
  */
-export const ViewportStatusBar = ({ children }: ViewportStatusBarProps) => {
+export const ViewportStatusBar = ({ children, testId }: ViewportStatusBarProps) => {
   const selectedIds = useViewportShellStore((s) => s.selectedIds)
   const selectionCount = selectedIds.size
 
   return (
-    <div className="absolute bottom-0 left-0 right-0 z-10 pointer-events-auto border-t border-border bg-card/90 backdrop-blur-sm px-3 py-1.5">
+    <div data-testid={testId} className="absolute bottom-0 left-0 right-0 z-10 pointer-events-auto border-t border-border bg-card/90 backdrop-blur-sm px-3 py-1.5">
       <div className="flex items-center justify-between text-[11px] text-muted-foreground">
         {children ?? (
           <div className="flex items-center justify-between w-full">

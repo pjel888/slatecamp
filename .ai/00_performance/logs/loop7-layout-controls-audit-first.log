@@ -1,0 +1,11 @@
+{
+  "mode": "all",
+  "moduleCount": 209,
+  "failures": [
+    "DevControlsCanvas still owns forbidden control/canvas pattern: /OrbitControls/",
+    "Forbidden active 3D Lab control imports/usages: src/features/3d-lab/config/camera-presets.ts, src/features/3d-lab/DevControlsModule/canvas/DevControlsCanvas.tsx, src/features/3d-lab/hooks/useCameraSnap.ts, src/features/3d-lab/hooks/useTemplateContent.tsx, src/features/3d-lab/templates/CalculatorTemplate.tsx"
+  ],
+  "warnings": [
+    "Inactive legacy scene still has direct controls and should not become active without migration: src/features/3d-lab/scenes/NBCPEnvelope/NBCPEnvelope.tsx"
+  ]
+}

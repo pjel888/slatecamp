@@ -179,21 +179,30 @@ export const ViewportShell = ({
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
+  const showStatusBar = shellConfig.statusBar !== false
+
   return (
-    <div className="flex h-full w-full flex-col overflow-hidden bg-surface-light" data-viewport-shell>
+    <div
+      className="flex h-full w-full flex-col overflow-hidden bg-surface-light"
+      data-viewport-shell
+      data-testid="3dlab-shell"
+    >
       {/* ── Header ──────────────────────────────────────────────────── */}
-      <ViewportHeader
-        title={title}
-        codeReference={codeReference}
-        visitedCount={visitedCount}
-        totalCount={totalCount}
-        onBack={onBack}
-        className="flex-none z-20 shadow-md"
-      />
+      <div data-testid="3dlab-shell-header">
+        <ViewportHeader
+          title={title}
+          codeReference={codeReference}
+          visitedCount={visitedCount}
+          totalCount={totalCount}
+          onBack={onBack}
+          className="flex-none z-20 shadow-md"
+        />
+      </div>
 
       {/* ── Desktop: CSS Grid Layout ───────────────────────────────── */}
       <div
         className="hidden md:grid flex-1 min-h-0"
+        data-testid="3dlab-shell-desktop-grid"
         style={{ gridTemplateColumns, gridTemplateRows: '1fr', transition: GRID_TRANSITION }}
       >
         {/* Left Sidebar */}
@@ -203,9 +212,13 @@ export const ViewportShell = ({
               className="overflow-hidden"
               style={{ display: leftCollapsed ? 'none' : undefined }}
             >
-              <ViewportSidebar title={leftCfg.title}>
-                {content.leftSidebarContent}
-              </ViewportSidebar>
+              <div data-testid="3dlab-shell-left-sidebar" className="h-full">
+                <ViewportSidebar title={leftCfg.title}>
+                  {content.leftSidebarContent ?? (
+                    <div className="p-3 text-xs text-muted-foreground">No module controls configured.</div>
+                  )}
+                </ViewportSidebar>
+              </div>
             </div>
             {leftCollapsed && <div />}
             <PanelCollapseButton side="left" collapsed={leftCollapsed} onToggle={toggleLeft} />
@@ -213,21 +226,20 @@ export const ViewportShell = ({
         )}
 
         {/* Viewport (1fr) */}
-        <div className="relative overflow-hidden min-h-0 min-w-0" style={{ cursor: viewportCursor }}>
+        <div
+          className="relative overflow-hidden min-h-0 min-w-0"
+          style={{ cursor: viewportCursor }}
+          data-testid="3dlab-shell-viewport"
+        >
           {/* Canvas content from template */}
           {content.canvasContent}
 
-          {/* Viewport controls — rendered here ONLY when ViewportShell manages sidebars.
-              For bespoke modules (DevControls) that manage their own internal layout,
-              these controls are positioned in their own ViewportWrapper instead,
-              so they align with the actual 3D canvas area, not the full shell width. */}
-          {(leftCfg || rightCfg) && (
-            <>
-              <SceneToolbar />
-              <LayersPanel />
-              <CameraNavigationBar />
-            </>
-          )}
+          {/* Shared viewport controls — every module uses this shell-owned overlay. */}
+          <div data-testid="3dlab-shell-toolbar-overlay" className="pointer-events-none absolute inset-0 z-20">
+            <SceneToolbar />
+            <LayersPanel />
+            <CameraNavigationBar />
+          </div>
 
           {/* WebGL context loss recovery overlay */}
           <WebGLRecovery />
@@ -248,8 +260,8 @@ export const ViewportShell = ({
           )}
 
           {/* Status bar */}
-          {shellConfig.statusBar && content.statusBarContent && (
-            <ViewportStatusBar>
+          {showStatusBar && (
+            <ViewportStatusBar testId="3dlab-shell-status">
               {content.statusBarContent}
             </ViewportStatusBar>
           )}
@@ -263,9 +275,13 @@ export const ViewportShell = ({
               className="overflow-hidden"
               style={{ display: rightCollapsed ? 'none' : undefined }}
             >
-              <ViewportSidebar title={rightCfg.title}>
-                {content.rightSidebarContent}
-              </ViewportSidebar>
+              <div data-testid="3dlab-shell-right-sidebar" className="h-full">
+                <ViewportSidebar title={rightCfg.title}>
+                  {content.rightSidebarContent ?? (
+                    <div className="p-3 text-xs text-muted-foreground">No module details configured.</div>
+                  )}
+                </ViewportSidebar>
+              </div>
             </div>
             {rightCollapsed && <div />}
           </>
@@ -273,19 +289,21 @@ export const ViewportShell = ({
       </div>
 
       {/* ── Mobile: Flex Column + Bottom Sheet ─────────────────────── */}
-      <div className="flex flex-1 flex-col min-h-0 md:hidden">
+      <div className="flex flex-1 flex-col min-h-0 md:hidden" data-testid="3dlab-shell-mobile">
         {/* Canvas fills available space */}
-        <div className="relative flex-1 overflow-hidden min-h-0" style={{ cursor: viewportCursor }}>
+        <div
+          className="relative flex-1 overflow-hidden min-h-0"
+          style={{ cursor: viewportCursor }}
+          data-testid="3dlab-shell-viewport-mobile"
+        >
           {content.canvasContent}
 
-          {/* Viewport controls — only when shell manages sidebars (see desktop comment) */}
-          {(leftCfg || rightCfg) && (
-            <>
-              <SceneToolbar />
-              <LayersPanel />
-              <CameraNavigationBar />
-            </>
-          )}
+          {/* Shared viewport controls — every module uses this shell-owned overlay. */}
+          <div data-testid="3dlab-shell-toolbar-overlay-mobile" className="pointer-events-none absolute inset-0 z-20">
+            <SceneToolbar />
+            <LayersPanel />
+            <CameraNavigationBar />
+          </div>
 
           {/* WebGL context loss recovery overlay */}
           <WebGLRecovery />
@@ -298,6 +316,12 @@ export const ViewportShell = ({
             <div className="absolute bottom-12 left-1/2 z-10 -translate-x-1/2 pointer-events-auto">
               {content.toolbarExtras}
             </div>
+          )}
+
+          {showStatusBar && (
+            <ViewportStatusBar testId="3dlab-shell-status-mobile">
+              {content.statusBarContent}
+            </ViewportStatusBar>
           )}
         </div>
 

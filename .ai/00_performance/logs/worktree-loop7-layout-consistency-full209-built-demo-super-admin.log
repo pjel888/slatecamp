@@ -1,0 +1,23 @@
+$ PLAYWRIGHT_DEMO_AUTH=true PLAYWRIGHT_USE_BUILT_APP=true THREED_FAIL_ON_CRITICAL=true THREED_MODE=layout-consistency bunx playwright test --config=.ai/00_performance/playwright/playwright.3d.config.ts --project=chromium --workers=1
+[2m[WebServer] [22m(node:34854) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 8 tests using 1 worker
+
+(node:34856) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:34856) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  -  1 [chromium] › .ai/00_performance/playwright/3d-lab-production.spec.ts:343:7 › 3D Lab production hardening gates › first-run tutorial owns only one active overlay at a time
+  -  2 [chromium] › .ai/00_performance/playwright/3d-lab-production.spec.ts:371:7 › 3D Lab production hardening gates › return-visit DevControls tour waits until the module context card is dismissed
+  -  3 [chromium] › .ai/00_performance/playwright/3d-lab-production.spec.ts:397:7 › 3D Lab production hardening gates › built/demo auth timing reaches authenticated 3D hub content
+  ✓  4 [chromium] › .ai/00_performance/playwright/3d-lab-production.spec.ts:414:7 › 3D Lab production hardening gates › layout consistency matrix uses one shared shell across every selected 3D module (5.2m)
+  -  5 [chromium] › .ai/00_performance/playwright/3d-lab-production.spec.ts:455:7 › 3D Lab production hardening gates › interaction consistency matrix uses the shared camera and toolbar contract
+  -  6 [chromium] › .ai/00_performance/playwright/3d-lab-production.spec.ts:516:7 › 3D Lab production hardening gates › module smoke matrix loads every selected 3D module without critical runtime errors
+  -  7 [chromium] › .ai/00_performance/playwright/3d-lab-production.spec.ts:537:7 › 3D Lab production hardening gates › mobile mid-range WebGL pass covers hub and representative module routes
+  -  8 [chromium] › .ai/00_performance/playwright/3d-lab-production.spec.ts:564:7 › 3D Lab production hardening gates › WebGL unsupported, context-loss, and slow-scene fallbacks are measurable
+
+  Slow test file: [chromium] › .ai/00_performance/playwright/3d-lab-production.spec.ts (5.2m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  7 skipped
+  1 passed (5.3m)

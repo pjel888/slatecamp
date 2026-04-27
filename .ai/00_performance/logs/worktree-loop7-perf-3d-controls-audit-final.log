@@ -1,0 +1,9 @@
+$ bun .ai/00_performance/scripts/3d-lab-layout-controls-audit.mjs --mode=controls
+{
+  "mode": "controls",
+  "moduleCount": 209,
+  "failures": [],
+  "warnings": [
+    "Inactive legacy scene still has direct controls and should not become active without migration: src/features/3d-lab/scenes/NBCPEnvelope/NBCPEnvelope.tsx"
+  ]
+}

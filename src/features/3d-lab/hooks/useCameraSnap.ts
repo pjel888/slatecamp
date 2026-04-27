@@ -31,6 +31,14 @@ const PRESETS: Record<CameraSelectionPreset, { position: [number, number, number
 
 const ZOOM_TO_FIT_TARGET = { position: [4, 3, 4] as [number, number, number], target: [0, 1, 0] as [number, number, number] }
 
+const getActivePresets = () => {
+  const config = useViewportShellStore.getState().cameraControlConfig
+  return { ...PRESETS, ...(config.presets ?? {}) }
+}
+
+const getZoomToFitTarget = () =>
+  useViewportShellStore.getState().cameraControlConfig.zoomToFit ?? ZOOM_TO_FIT_TARGET
+
 interface AnimState {
   active: boolean
   commandId: number | null
@@ -122,7 +130,7 @@ export const useCameraSnap = () => {
       }
 
       if (isZoomToFitCommand(commandPreset)) {
-        const target = ZOOM_TO_FIT_TARGET
+        const target = getZoomToFitTarget()
         const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
 
         if (prefersReducedMotion) {
@@ -157,9 +165,11 @@ export const useCameraSnap = () => {
       }
 
       const presetKey = (normalizedPreset ?? DEFAULT_ISO_PRESET) as CameraSelectionPreset
+      const activePresets = getActivePresets()
+      const resetPreset = useViewportShellStore.getState().cameraControlConfig.resetPreset ?? 'perspective'
       const target = isResetCommand(commandPreset)
-        ? PRESETS.perspective
-        : PRESETS[presetKey]
+        ? activePresets[resetPreset] ?? PRESETS.perspective
+        : activePresets[presetKey] ?? PRESETS[presetKey]
 
       const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
 
