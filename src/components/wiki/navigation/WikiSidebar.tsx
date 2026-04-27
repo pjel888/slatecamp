@@ -74,6 +74,9 @@ interface WikiSidebarProps {
   initialNodes?: TaxonomyNode[]
 }
 
+export const shouldFetchClientTaxonomy = (initialNodes?: TaxonomyNode[]) =>
+  !initialNodes?.length
+
 export const WikiSidebar = ({
   disciplineId,
   disciplineName,
@@ -83,11 +86,11 @@ export const WikiSidebar = ({
   const pathname = usePathname()
   const { navigate } = useWikiNavigation()
   const [nodes, setNodes] = React.useState<TaxonomyNode[]>(initialNodes ?? [])
-  const [loading, setLoading] = React.useState(!initialNodes?.length)
+  const [loading, setLoading] = React.useState(shouldFetchClientTaxonomy(initialNodes))
 
   // Fetch taxonomy data ONLY when discipline changes
   React.useEffect(() => {
-    if (initialNodes?.length) {
+    if (!shouldFetchClientTaxonomy(initialNodes)) {
       setLoading(false)
       return
     }

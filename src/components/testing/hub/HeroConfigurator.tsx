@@ -7,7 +7,7 @@ import { Plus, Trash, Info, Layout, MagicWand, ArrowRight } from '@phosphor-icon
 import { cn } from '@/lib/utils'
 import { ROUTES } from '@/lib/routes'
 import { getCoreSubjects } from '@/lib/actions/taxonomy'
-import { startSession } from '@/lib/actions/quiz-v2'
+import { abandonSession, startSession } from '@/lib/actions/quiz-v2'
 import { SlideToSubmit } from '@/components/quiz-v2/SlideToSubmit'
 import { UnifiedSlider } from '@/components/ui/unified-slider'
 import {
@@ -49,6 +49,7 @@ export const HeroConfigurator = ({ initialSubjects }: HeroConfiguratorProps) => 
   const [modalPhase, setModalPhase] = useState<ModalPhase>(null)
   const [readySessionId, setReadySessionId] = useState<string | null>(null)
   const [readyQuestionCount, setReadyQuestionCount] = useState(0)
+  const [isCancellingSession, setIsCancellingSession] = useState(false)
 
   useEffect(() => {
     if (!initialSubjects) {
@@ -151,11 +152,22 @@ export const HeroConfigurator = ({ initialSubjects }: HeroConfiguratorProps) => 
     }
   }, [readySessionId, router])
 
-  const handleCancelSession = useCallback(() => {
-    setModalPhase(null)
-    setReadySessionId(null)
-    setReadyQuestionCount(0)
-  }, [])
+  const handleCancelSession = useCallback(async () => {
+    const sessionId = readySessionId
+    setIsCancellingSession(true)
+    try {
+      if (sessionId) {
+        await abandonSession(sessionId)
+      }
+    } catch (err) {
+      console.error('Failed to abandon provisional session:', err)
+    } finally {
+      setModalPhase(null)
+      setReadySessionId(null)
+      setReadyQuestionCount(0)
+      setIsCancellingSession(false)
+    }
+  }, [readySessionId])
 
   const isModalOpen = modalPhase !== null
 
@@ -318,7 +330,11 @@ export const HeroConfigurator = ({ initialSubjects }: HeroConfiguratorProps) => 
       {/* ── Session Preparation Modal (Dialog with focus trap, Escape, ARIA) ── */}
       <Dialog
         open={isModalOpen}
-        onOpenChange={(open) => { if (!open && modalPhase === 'ready') handleCancelSession() }}
+        onOpenChange={(open) => {
+          if (!open && modalPhase === 'ready') {
+            void handleCancelSession()
+          }
+        }}
       >
         <DialogContent showCloseButton={modalPhase === 'ready'} className="p-8">
           {modalPhase === 'preparing' && (
@@ -376,15 +392,20 @@ export const HeroConfigurator = ({ initialSubjects }: HeroConfiguratorProps) => 
                   onClick={handleEnterSession}
                   className="w-full bg-primary text-white hover:bg-primary/90"
                   size="lg"
+                  disabled={isCancellingSession}
                 >
                   <ArrowRight size={16} weight="bold" className="mr-2" />
                   Enter Session
                 </Button>
                 <Button
-                  onClick={handleCancelSession}
+                  onClick={() => void handleCancelSession()}
                   variant="ghost"
                   size="sm"
                   className="text-muted-foreground hover:text-foreground"
+                  disabled={isCancellingSession}
+                  loading={isCancellingSession}
+                  loadingText="Canceling..."
+                  aria-busy={isCancellingSession ? true : undefined}
                 >
                   Cancel
                 </Button>

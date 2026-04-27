@@ -31,6 +31,16 @@ export const cageBindingTokenSchema = z.object({
   version: z.number().int().min(1),
 })
 
+const cageTrustLevelSchema = z.enum([
+  'verified',
+  'absent',
+  'failed',
+  'timeout',
+  'nonce_expired',
+  'offline_nonce',
+  'dev_mode',
+])
+
 export const submitAnswerInputSchema = z.object({
   sessionId: uuidSchema,
   questionId: uuidSchema,
@@ -40,7 +50,7 @@ export const submitAnswerInputSchema = z.object({
   confidenceLevel: z.number().min(0).max(1).optional(),
   timeSpentMs: z.number().int().min(0).max(3_600_000),
   cageToken: cageBindingTokenSchema.optional().nullable(),
-  cageTrustLevel: z.number().min(0).max(1).optional(),
+  cageTrustLevel: cageTrustLevelSchema.optional(),
   signalTrace: z.array(gestureSignalEventSchema).optional(),
   gestureDurationMs: z.number().int().min(0).optional(),
   sensorsAvailable: z.boolean().optional(),

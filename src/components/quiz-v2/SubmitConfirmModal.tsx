@@ -28,6 +28,7 @@ interface SubmitConfirmModalProps {
   onReviewUnanswered: () => void
   onSubmit: () => void
   onClose: () => void
+  submitting?: boolean
 }
 
 type MiniCellState = 'answered' | 'flagged' | 'skipped' | 'unanswered'
@@ -75,6 +76,7 @@ export const SubmitConfirmModal = ({
   onReviewUnanswered,
   onSubmit,
   onClose,
+  submitting = false,
 }: SubmitConfirmModalProps) => {
   const answeredCount = questions.filter(
     (question) => answers[question.question_id]?.selectedOptionId,
@@ -234,6 +236,10 @@ export const SubmitConfirmModal = ({
             leftIcon={<PaperPlaneTilt size={16} aria-hidden="true" />}
             className="order-1 sm:order-2"
             autoFocus
+            disabled={submitting}
+            loading={submitting}
+            loadingText="Submitting..."
+            aria-busy={submitting ? true : undefined}
           >
             Submit exam
           </Button>

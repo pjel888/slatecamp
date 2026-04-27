@@ -180,11 +180,7 @@ const ResultsDashboard = ({
         {/* ── Section 4: Confidence Diagnostic Matrix ─────────────────────── */}
         {confidenceMatrix && (
           <section aria-label="Confidence diagnostic">
-            <ConfidenceMatrix
-              matrix={confidenceMatrix}
-              sessionId={sessionId}
-              mode={config.mode}
-            />
+            <ConfidenceMatrix matrix={confidenceMatrix} />
           </section>
         )}
 

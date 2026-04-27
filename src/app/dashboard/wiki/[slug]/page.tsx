@@ -11,7 +11,6 @@ import {
   WikiReadTracker,
 } from '@/components/wiki'
 import { notFound } from 'next/navigation'
-import { createClient } from '@/lib/supabase/server'
 import Link from 'next/link'
 import { cn } from '@/lib/utils'
 import { getSubjectName } from '@/types/testing'
@@ -20,8 +19,9 @@ import { estimateReadingTime } from '@/lib/wiki-markdown'
 import { getTeachBackCriteria } from '@/lib/actions/teach-back'
 import { ROUTES } from '@/lib/routes'
 import { getArticleSources, getArticleSiblings } from '@/lib/actions/wiki-actions'
-import { getCachedArticleAndNode } from '@/lib/actions/cached-queries'
+import { getCachedArticleAndNode, getCachedTaxonomyTreeByDiscipline } from '@/lib/actions/cached-queries'
 import { getEIPromptsForArticle, getUserEIResponsesForArticle } from '@/lib/actions/ei-prompts'
+import type { TaxonomyNode } from '@/lib/actions/taxonomy'
 
 const mapDifficulty = (level?: number | null): 'Foundational' | 'Intermediate' | 'Advanced' => {
   if (!level || level <= 1) return 'Foundational'
@@ -93,6 +93,7 @@ export default async function WikiArticlePage(props: WikiArticlePageProps) {
     <>
       <WikiHeader
         nodeId={wikiNodeId}
+        disciplineId={node?.discipline_id ?? undefined}
         articleId={article.article_id}
         articleTitle={article.title}
         articleSlug={article.slug}
@@ -197,16 +198,19 @@ export default async function WikiArticlePage(props: WikiArticlePageProps) {
 }
 
 /** Fetch siblings or related topics helper */
-async function getRelatedTopics(node: any) {
-  if (!node?.parent_id) return []
-  const supabase = await createClient()
-  const { data } = await supabase
-    .from('taxonomy_tree')
-    .select('name, slug')
-    .eq('parent_id', node.parent_id)
-    .neq('node_id', node.node_id)
-    .is('deprecated_at', null)
-    .limit(3)
+async function getRelatedTopics(node: TaxonomyNode | null) {
+  if (!node?.parent_id || !node.discipline_id) return []
 
-  return (data || []).map(d => ({ title: d.name, slug: d.slug || '' }))
+  const disciplineTree = await getCachedTaxonomyTreeByDiscipline(node.discipline_id)
+  return disciplineTree
+    .filter(
+      (candidate) =>
+        candidate.parent_id === node.parent_id &&
+        candidate.node_id !== node.node_id,
+    )
+    .slice(0, 3)
+    .map((candidate) => ({
+      title: candidate.name,
+      slug: candidate.slug || '',
+    }))
 }

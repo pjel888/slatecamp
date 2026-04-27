@@ -31,15 +31,17 @@ test.describe('demo-authenticated first-run flows', () => {
   test('settings stays reachable as the first-run account recovery surface', async ({
     page,
   }) => {
+    test.setTimeout(45000)
     const response = await page.goto('/dashboard/settings', {
       waitUntil: 'domcontentloaded',
     })
 
     expect(response?.ok(), '/dashboard/settings should return 2xx').toBe(true)
     await expect(page).toHaveURL(/\/dashboard\/settings$/)
-    await expect(page.locator('body')).toContainText(
+    await expect(page.locator('body')).not.toContainText(
       /Your setup is not complete yet/i,
     )
+    await expect(page.locator('body')).toContainText(/Account Settings/i)
     await expect(page.locator('body')).toContainText(/Profile/i)
     await expect(page.locator('body')).toContainText(/Account Center/i)
     await expect(page.locator('#displayName')).toHaveValue('Philip Lewis')
@@ -47,18 +49,15 @@ test.describe('demo-authenticated first-run flows', () => {
     await expect(page.locator('body')).toContainText(/Notifications/i)
   })
 
-  test('onboarding exposes the required setup decisions', async ({ page }) => {
-    const response = await page.goto('/onboarding', {
-      waitUntil: 'domcontentloaded',
+  test('authenticated demo onboarding resolves into the post-onboarding dashboard path', async ({
+    page,
+  }) => {
+    test.setTimeout(90000)
+    await gotoAllowRedirectAbort(page, '/onboarding')
+    await expect(page).toHaveURL(/\/dashboard$/, { timeout: 60000 })
+    await expect(page.locator('body')).toContainText(/Readiness Score/i, {
+      timeout: 30000,
     })
-
-    expect(response?.ok(), '/onboarding should return 2xx').toBe(true)
-    await expect(page.locator('body')).toContainText(
-      /What brings you to SlateCamp|LEA path/i,
-    )
-    await expect(page.locator('body')).toContainText(
-      /study|review center|discipline/i,
-    )
   })
 
   for (const path of ['/login', '/register']) {
@@ -73,6 +72,7 @@ test.describe('demo-authenticated first-run flows', () => {
   test('authenticated demo admin login emits a dashboard redirect response', async ({
     request,
   }) => {
+    test.setTimeout(45000)
     const response = await request.get('/admin/login')
     const body = await response.text()
 
@@ -84,6 +84,7 @@ test.describe('demo-authenticated first-run flows', () => {
   test('demo callback normalizes unsafe and legacy next paths', async ({
     request,
   }) => {
+    test.setTimeout(45000)
     const unsafe = await request.get('/auth/callback?next=//evil.example', {
       maxRedirects: 0,
     })

@@ -38,33 +38,14 @@ interface BaseQuizShellProps {
 // ─── Sub-components ──────────────────────────────────────────────────────────
 
 const useAnswersSnapshot = () => {
-  const answersVersion = useQuizStore((s) => s.answersVersion)
+  useQuizStore((s) => s.answersVersion)
   return useQuizStore.getState().answers
 }
 
-const WrappedQuestionPalette = ({ 
-  questions, currentIndex, onJumpTo, onClose 
-}: { 
-  questions: any[], currentIndex: number, onJumpTo: (idx: number) => void, onClose: () => void 
-}) => {
-  const answers = useAnswersSnapshot()
-  const flaggedSet = useQuizStore((s) => s.flaggedSet)
-  return (
-    <QuestionPalette
-      questions={questions}
-      answers={answers}
-      currentIndex={currentIndex}
-      flaggedSet={flaggedSet}
-      onJumpTo={onJumpTo}
-      onClose={onClose}
-    />
-  )
-}
-
 const WrappedSubmitModal = ({
-  questions, currentIndex, onReviewUnanswered, onSubmit, onClose
+  questions, currentIndex, onReviewUnanswered, onSubmit, onClose, submitting
 }: {
-  questions: any[], currentIndex: number, onReviewUnanswered: () => void, onSubmit: () => void, onClose: () => void
+  questions: any[], currentIndex: number, onReviewUnanswered: () => void, onSubmit: () => void, onClose: () => void, submitting: boolean
 }) => {
   const answers = useAnswersSnapshot()
   const flaggedSet = useQuizStore((s) => s.flaggedSet)
@@ -77,6 +58,7 @@ const WrappedSubmitModal = ({
       onReviewUnanswered={onReviewUnanswered}
       onSubmit={onSubmit}
       onClose={onClose}
+      submitting={submitting}
     />
   )
 }
@@ -106,7 +88,6 @@ export const BaseQuizShell = ({
   const _hasHydrated = useQuizStore((s) => s._hasHydrated)
 
   // UI state
-  const paletteOpen = useQuizStore((s) => s.ui.paletteOpen)
   const wikiPanelOpen = useQuizStore((s) => s.ui.wikiPanelOpen)
   const wikiPanelUrl = useQuizStore((s) => s.ui.wikiPanelUrl)
   const exitModalOpen = useQuizStore((s) => s.ui.exitModalOpen)
@@ -125,12 +106,9 @@ export const BaseQuizShell = ({
   const togglePalette = useQuizStore((s) => s.togglePalette)
   const showExitModal = useQuizStore((s) => s.showExitModal)
   const hideExitModal = useQuizStore((s) => s.hideExitModal)
-  const showSubmitModal = useQuizStore((s) => s.showSubmitModal)
   const hideSubmitModal = useQuizStore((s) => s.hideSubmitModal)
   const hideMicroBreak = useQuizStore((s) => s.hideMicroBreak)
   const goToQuestion = useQuizStore((s) => s.goToQuestion)
-  const goNext = useQuizStore((s) => s.goNext)
-  const goPrevious = useQuizStore((s) => s.goPrevious)
   const closeWikiPanel = useQuizStore((s) => s.closeWikiPanel)
   const getAnsweredCount = useQuizStore((s) => s.getAnsweredCount)
 
@@ -146,11 +124,6 @@ export const BaseQuizShell = ({
   // Handlers
   const handleToggleFlag = () => {
     if (currentQuestion) toggleFlag(currentQuestion.question_id)
-  }
-
-  const handlePaletteJump = (index: number) => {
-    togglePalette()
-    goToQuestion(index)
   }
 
   const handleReviewUnanswered = () => {
@@ -246,6 +219,7 @@ export const BaseQuizShell = ({
           onReviewUnanswered={handleReviewUnanswered}
           onSubmit={onSubmitAll}
           onClose={hideSubmitModal}
+          submitting={calculatingResults}
         />
       )}
 

@@ -16,6 +16,13 @@ const commandByMode: Record<string, string[]> = {
   smoke: ['test', '--project=chromium'],
   prod: ['test', 'e2e/launch-smoke.spec.ts', 'e2e/access-boundaries.spec.ts'],
   'auth-demo': ['test', 'e2e/authenticated-demo.spec.ts', '--project=chromium'],
+  'auth-demo-learning': [
+    'test',
+    'e2e/learning-flow.spec.ts',
+    'e2e/wiki-learning.spec.ts',
+    '--project=chromium',
+    '--workers=1',
+  ],
   'auth-demo-portals': [
     'test',
     'e2e/authenticated-demo-portals.spec.ts',
@@ -24,6 +31,11 @@ const commandByMode: Record<string, string[]> = {
   'auth-demo-3d-lab': [
     'test',
     'e2e/authenticated-demo-3d-lab.spec.ts',
+    '--project=chromium',
+  ],
+  'auth-demo-restricted': [
+    'test',
+    'e2e/authenticated-demo-restricted.spec.ts',
     '--project=chromium',
   ],
   headed: ['test', '--headed'],
@@ -45,10 +57,22 @@ if (mode === 'prod') {
 
 if (
   mode === 'auth-demo' ||
+  mode === 'auth-demo-learning' ||
   mode === 'auth-demo-portals' ||
-  mode === 'auth-demo-3d-lab'
+  mode === 'auth-demo-3d-lab' ||
+  mode === 'auth-demo-restricted'
 ) {
   env.PLAYWRIGHT_DEMO_AUTH = 'true'
+}
+
+if (mode === 'auth-demo-learning') {
+  env.PLAYWRIGHT_PORT = '3218'
+}
+
+if (mode === 'auth-demo-restricted') {
+  env.PLAYWRIGHT_DEMO_ROLE = 'member'
+  env.PLAYWRIGHT_DEMO_TIER = 'free'
+  env.PLAYWRIGHT_DEMO_EMAIL = 'student@example.com'
 }
 
 const testRun = Bun.spawn([playwrightBin, ...args], {

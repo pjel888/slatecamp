@@ -103,7 +103,15 @@ export const useQuizShellHandlers = ({ sessionId, mode }: UseQuizShellHandlersPr
   }
 
   const handleSubmitAll = async () => {
-    useQuizStore.setState((s) => ({ ui: { ...s.ui, calculatingResults: true } }))
+    const state = useQuizStore.getState()
+    if (state.ui.calculatingResults || state.status === 'finalizing') {
+      return
+    }
+
+    useQuizStore.setState((s) => ({
+      status: 'finalizing',
+      ui: { ...s.ui, calculatingResults: true },
+    }))
     try {
       const result = await withMinimumDuration(
         endSessionAction({ sessionId, endReason: 'completed' }),

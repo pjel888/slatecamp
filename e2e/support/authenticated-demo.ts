@@ -37,3 +37,22 @@ export async function gotoAllowRedirectAbort(page: Page, path: string) {
     throw error
   })
 }
+
+export async function slideControlByLabel(page: Page, label: RegExp | string) {
+  const slider = page.getByLabel(label)
+  const handle = slider.locator('[aria-hidden="true"]').last()
+  const box = await handle.boundingBox()
+
+  if (!box) {
+    throw new Error(`Unable to resolve slider bounds for ${String(label)}`)
+  }
+
+  const startX = box.x + box.width / 2
+  const endX = box.x + 220
+  const y = box.y + box.height / 2
+
+  await page.mouse.move(startX, y)
+  await page.mouse.down()
+  await page.mouse.move(endX, y, { steps: 12 })
+  await page.mouse.up()
+}

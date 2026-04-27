@@ -49,7 +49,6 @@ export const SlideToSubmit = ({
 
   const maxOffset = trackWidth
   const progress = maxOffset > 0 ? Math.min(1, offset / maxOffset) : 0
-  const thresholdReached = progress >= THRESHOLD_PERCENT
 
   const handleComplete = useCallback(() => {
     if (completed) return
@@ -57,6 +56,18 @@ export const SlideToSubmit = ({
     hapticSelect()
     setTimeout(onSubmit, 200)
   }, [completed, onSubmit])
+
+  const handleKeyDown = useCallback(
+    (event: React.KeyboardEvent<HTMLDivElement>) => {
+      if (disabled || completed) return
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault()
+        setOffset(maxOffset)
+        handleComplete()
+      }
+    },
+    [completed, disabled, handleComplete, maxOffset],
+  )
 
   const bind = useDrag(
     ({ movement: [mx], active, cancel }) => {
@@ -130,6 +141,9 @@ export const SlideToSubmit = ({
       aria-valuenow={Math.round(progress * 100)}
       aria-valuemin={0}
       aria-valuemax={100}
+      aria-disabled={disabled ? true : undefined}
+      tabIndex={disabled ? -1 : 0}
+      onKeyDown={handleKeyDown}
     >
       {/* Track fill — Cobalt gradient following the handle */}
       <div

@@ -55,10 +55,6 @@ const QuizSetupPage = async ({ params, searchParams }: SetupPageProps) => {
             .filter((i: { is_correct: boolean }) => i.is_correct)
             .map((i: { question_id: string }) => i.question_id),
         )
-        const answeredIds = new Set(
-          (interactions ?? []).map((i: { question_id: string }) => i.question_id),
-        )
-
         // Missed = wrong + unanswered
         const missedIds = allQuestionIds.filter((id) => !correctIds.has(id))
 
@@ -92,13 +88,21 @@ const QuizSetupPage = async ({ params, searchParams }: SetupPageProps) => {
     }
   }
 
-  // Only fetch taxonomy for modes that show the topic picker
-  if (!TOPIC_PICKER_MODES.includes(quizMode)) {
-    return <SetupPageClient mode={quizMode} />
-  }
-
   const supabase = await createClient()
   const { data: { user } } = await getUser()
+  const { data: readinessStats } = user
+    ? await supabase
+        .from('user_global_stats')
+        .select('global_readiness_score')
+        .eq('user_id', user.id)
+        .maybeSingle()
+    : { data: null }
+  const readinessScore = readinessStats?.global_readiness_score ?? 0
+
+  // Only fetch taxonomy for modes that show the topic picker
+  if (!TOPIC_PICKER_MODES.includes(quizMode)) {
+    return <SetupPageClient mode={quizMode} readinessScore={readinessScore} />
+  }
 
   // Fetch all level=1 subject nodes (children of discipline root)
   const { data: subjectNodes } = await supabase
@@ -108,7 +112,13 @@ const QuizSetupPage = async ({ params, searchParams }: SetupPageProps) => {
     .order('name', { ascending: true })
 
   if (!subjectNodes || subjectNodes.length === 0) {
-    return <SetupPageClient mode={quizMode} subjects={[]} />
+    return (
+      <SetupPageClient
+        mode={quizMode}
+        subjects={[]}
+        readinessScore={readinessScore}
+      />
+    )
   }
 
   const subjectIds = subjectNodes.map((n) => n.node_id)
@@ -177,7 +187,13 @@ const QuizSetupPage = async ({ params, searchParams }: SetupPageProps) => {
     }
   })
 
-  return <SetupPageClient mode={quizMode} subjects={subjects} />
+  return (
+    <SetupPageClient
+      mode={quizMode}
+      subjects={subjects}
+      readinessScore={readinessScore}
+    />
+  )
 }
 
 export default QuizSetupPage

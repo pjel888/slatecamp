@@ -1,8 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import Link from 'next/link'
-import { CaretDown, CaretUp, ArrowRight } from '@phosphor-icons/react'
+import { CaretDown, CaretUp } from '@phosphor-icons/react'
 import { cn } from '@/lib/utils'
 import type { ConfidenceMatrixResult, ConfidenceMatrixItem } from '@/lib/actions/quiz-v2/get-confidence-matrix'
 
@@ -10,8 +9,6 @@ import type { ConfidenceMatrixResult, ConfidenceMatrixItem } from '@/lib/actions
 
 interface ConfidenceMatrixProps {
   matrix: ConfidenceMatrixResult
-  sessionId: string
-  mode: string
 }
 
 // ─── Quadrant config ──────────────────────────────────────────────────────────
@@ -23,7 +20,6 @@ interface QuadrantConfig {
   bgColor: string
   textColor: string
   items: ConfidenceMatrixItem[]
-  linkable: boolean
 }
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
@@ -41,12 +37,8 @@ const getUniqueTopicNames = (items: ConfidenceMatrixItem[]): string[] => {
 
 const QuadrantCell = ({
   config,
-  sessionId,
-  mode,
 }: {
   config: QuadrantConfig
-  sessionId: string
-  mode: string
 }) => {
   const topicNames = getUniqueTopicNames(config.items)
   const count = config.items.length
@@ -98,20 +90,6 @@ const QuadrantCell = ({
         )}
       </div>
 
-      {/* Focused review link for Confident+Wrong quadrant — pinned to bottom */}
-      {config.linkable && count > 0 && (
-        <Link
-          href={`/quiz/focus_review/setup?source=confidence&session=${sessionId}&mode=${mode}&filter=confident-wrong`}
-          className={cn(
-            'inline-flex items-center gap-1 mt-3 text-xs font-medium shrink-0',
-            'text-primary hover:text-primary-700',
-            'transition-colors duration-150 ease-out',
-          )}
-        >
-          Review these topics
-          <ArrowRight size={12} weight="bold" />
-        </Link>
-      )}
     </div>
   )
 }
@@ -120,8 +98,6 @@ const QuadrantCell = ({
 
 export const ConfidenceMatrix = ({
   matrix,
-  sessionId,
-  mode,
 }: ConfidenceMatrixProps) => {
   const [expanded, setExpanded] = useState(false)
 
@@ -144,7 +120,6 @@ export const ConfidenceMatrix = ({
       bgColor: 'bg-success-50',
       textColor: 'text-success',
       items: matrix.confidentCorrect,
-      linkable: false,
     },
     {
       label: 'Overconfident',
@@ -153,7 +128,6 @@ export const ConfidenceMatrix = ({
       bgColor: 'bg-destructive-50',
       textColor: 'text-destructive',
       items: matrix.confidentWrong,
-      linkable: true,
     },
     {
       label: 'Underconfident',
@@ -162,7 +136,6 @@ export const ConfidenceMatrix = ({
       bgColor: 'bg-warning-50',
       textColor: 'text-warning',
       items: matrix.guessingCorrect,
-      linkable: false,
     },
     {
       label: 'Known Gap',
@@ -171,7 +144,6 @@ export const ConfidenceMatrix = ({
       bgColor: 'bg-surface-light',
       textColor: 'text-text-secondary',
       items: matrix.guessingWrong,
-      linkable: false,
     },
   ]
 
@@ -224,8 +196,6 @@ export const ConfidenceMatrix = ({
           <QuadrantCell
             key={q.label}
             config={q}
-            sessionId={sessionId}
-            mode={mode}
           />
         ))}
       </div>

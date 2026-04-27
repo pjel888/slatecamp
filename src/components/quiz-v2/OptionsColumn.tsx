@@ -1,8 +1,6 @@
 'use client'
 
 import { useEffect, useCallback, useRef, memo } from 'react'
-import { Backspace } from '@phosphor-icons/react'
-import { cn } from '@/lib/utils'
 import { useQuizStore } from '@/stores/useQuizStore'
 import { ConfidenceInput } from './ConfidenceInput'
 import { FeedbackPanel } from './FeedbackPanel'

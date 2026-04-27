@@ -8,6 +8,7 @@ import { selectQuestionsWithRouting } from '@/lib/quiz/intelligent-routing'
 import { mergeWithPreset } from '@/lib/quiz/mode-presets'
 import { buildTaxonomyBreadcrumbMap, toClientQuestion } from '@/lib/quiz/to-client-question'
 import { resolveTaxonomyDescendants } from '@/lib/actions/cached-queries'
+import { filterQuestionsReadableForStage } from '@/lib/admin/editor-integrity/standard-question'
 import { createServiceClient, getUser } from '@/lib/supabase/server'
 import type {
   QuestionForClient,
@@ -22,6 +23,9 @@ import {
   serializeOverrideState,
 } from '@/lib/entitlements/audit'
 import { logServerError } from '@/lib/logging/server'
+
+const DIRECT_QUESTION_COLS =
+  'question_id, article_id, topic_id, text, options, difficulty, prompt_image_url, question_type, rationale, explanation'
 
 const generateCageSessionKey = (): string | null => {
   try {
@@ -159,15 +163,43 @@ export const startSession = async (
 
     let topicIds: string[] = []
     let filterByDisciplineId: string | null = null
+    let selectedQuestions: any[] = []
 
     if (topics.length > 0) {
-      // Cached in-memory traversal — replaces 4-7 sequential DB queries with zero on cache hit
-      const resolved = await resolveTaxonomyDescendants(topics)
-      topicIds = resolved.length > 0 ? resolved : topics
-    } else if (disciplines.length > 0 && disciplines.length <= 3) {
-      filterByDisciplineId = disciplines[0]
-    } else if (disciplineId) {
-      filterByDisciplineId = disciplineId
+      const { data: directQuestionRows } = await supabase
+        .from('questions')
+        .select(DIRECT_QUESTION_COLS)
+        .in('question_id', topics)
+
+      const {
+        questions: readableDirectQuestions,
+        error: readableDirectQuestionsError,
+      } = await filterQuestionsReadableForStage<any>(
+        supabase,
+        (directQuestionRows ?? []) as any[],
+        'delivery',
+      )
+
+      if (!readableDirectQuestionsError && readableDirectQuestions.length === topics.length) {
+        const byId = new Map(
+          readableDirectQuestions.map((question) => [question.question_id, question]),
+        )
+        selectedQuestions = topics
+          .map((questionId) => byId.get(questionId))
+          .filter(Boolean)
+      }
+    }
+
+    if (selectedQuestions.length === 0) {
+      if (topics.length > 0) {
+        // Cached in-memory traversal — replaces 4-7 sequential DB queries with zero on cache hit
+        const resolved = await resolveTaxonomyDescendants(topics)
+        topicIds = resolved.length > 0 ? resolved : topics
+      } else if (disciplines.length > 0 && disciplines.length <= 3) {
+        filterByDisciplineId = disciplines[0]
+      } else if (disciplineId) {
+        filterByDisciplineId = disciplineId
+      }
     }
 
     let difficultyRange: { min: number; max: number } | null = null
@@ -188,14 +220,12 @@ export const startSession = async (
       topicIds = (leafNodes ?? []).map((node: { node_id: string }) => node.node_id)
     }
 
-    if (topicIds.length === 0) {
+    if (selectedQuestions.length === 0 && topicIds.length === 0) {
       throw new Error('No topics selected or found for the current discipline.')
     }
 
     // Question Selection (Intelligent Routing vs Interleaving) — chunked for large topic sets
-    let selectedQuestions: any[] = []
-
-    if (mergedConfig.interleave === true) {
+    if (selectedQuestions.length === 0 && mergedConfig.interleave === true) {
       selectedQuestions = await selectQuestionsWithInterleaving({
         primaryTopicIds: topicIds,
         totalCount: questionCount,
@@ -203,7 +233,7 @@ export const startSession = async (
         excludeQuestionIds: recentQuestionIds,
         difficultyRange,
       })
-    } else {
+    } else if (selectedQuestions.length === 0) {
       // DEFAULT: Intelligent Routing (60/30/10)
       selectedQuestions = await selectQuestionsWithRouting({
         supabase,

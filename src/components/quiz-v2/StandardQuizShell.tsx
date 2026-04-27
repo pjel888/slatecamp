@@ -200,9 +200,6 @@ export const StandardQuizShell = ({
     }
   }
 
-  // Guard: BaseQuizShell shows skeleton, but children must not receive null question
-  if (!currentQuestion) return null
-
   return (
     <>
       {calculatingResults && (
@@ -230,18 +227,21 @@ export const StandardQuizShell = ({
           )
         }
       >
-        <QuizBody
-          question={currentQuestion}
-          selectedOptionId={currentAnswer?.selectedOptionId ?? null}
-          confidenceLevel={(currentAnswer?.confidenceLevel as 1 | 2 | 3) ?? null}
-          feedback={feedbackData!}
-          config={config}
-          isSubmitting={status === 'submitting'}
-          onSelectOption={(optId) => handleSelectOption(currentQuestion.question_id, optId)}
-          onConfidenceChange={(lvl) => handleConfidenceChange(currentQuestion.question_id, lvl)}
-          onSubmit={handleSubmit}
-          onNext={handleNext}
-        />      </BaseQuizShell>
+        {currentQuestion ? (
+          <QuizBody
+            question={currentQuestion}
+            selectedOptionId={currentAnswer?.selectedOptionId ?? null}
+            confidenceLevel={(currentAnswer?.confidenceLevel as 1 | 2 | 3) ?? null}
+            feedback={feedbackData}
+            config={config}
+            isSubmitting={status === 'submitting'}
+            onSelectOption={(optId) => handleSelectOption(currentQuestion.question_id, optId)}
+            onConfidenceChange={(lvl) => handleConfidenceChange(currentQuestion.question_id, lvl)}
+            onSubmit={handleSubmit}
+            onNext={handleNext}
+          />
+        ) : null}
+      </BaseQuizShell>
     </>
   )
 }

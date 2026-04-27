@@ -13,11 +13,16 @@ import { useQuizTimerStore } from '@/stores/useQuizTimerStore'
 interface SetupPageClientProps {
   mode: QuizMode
   subjects?: TaxonomySubject[]
+  readinessScore?: number
 }
 
 type SetupPhase = 'setup' | 'creating' | 'prediction' | 'navigating'
 
-export const SetupPageClient = ({ mode, subjects }: SetupPageClientProps) => {
+export const SetupPageClient = ({
+  mode,
+  subjects,
+  readinessScore = 0,
+}: SetupPageClientProps) => {
   const router = useRouter()
   const [phase, setPhase] = useState<SetupPhase>('setup')
   const [error, setError] = useState<string | null>(null)
@@ -92,7 +97,13 @@ export const SetupPageClient = ({ mode, subjects }: SetupPageClientProps) => {
           </div>
         </div>
       )}
-      <SetupFlow mode={mode} subjects={subjects} onBegin={handleBegin} onBack={handleBack} />
+      <SetupFlow
+        mode={mode}
+        subjects={subjects}
+        readinessScore={readinessScore}
+        onBegin={handleBegin}
+        onBack={handleBack}
+      />
     </>
   )
 }

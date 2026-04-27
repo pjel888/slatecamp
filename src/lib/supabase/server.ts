@@ -85,9 +85,9 @@ export async function hasAuthCookie() {
 
 export const getUserIfPresent = cache(async () => {
   if (isDemoMode()) {
-    const { DEMO_USER } = await import('@/lib/demo/config')
+    const { getDemoUser } = await import('@/lib/demo/config')
     return {
-      data: { user: DEMO_USER as any },
+      data: { user: getDemoUser() as any },
       error: null,
     }
   }
