@@ -1,0 +1,28 @@
+Command: env NEXT_PUBLIC_ENABLE_DEMO_MODE=true bun run build
+Working directory: /Users/philiplewis/slatecamp
+Start: 2026-04-27T02:09:50Z
+
+$ next build
+▲ Next.js 16.2.3 (Turbopack)
+- Environments: .env.local
+- Experiments (use with caution):
+  · serverActions
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 15.9s
+  Running TypeScript ...
+  Finished TypeScript in 22.3s ...
+  Collecting page data using 7 workers ...
+  Generating static pages using 7 workers (0/106) ...
+Error occurred prerendering page "/admin". Read more: https://nextjs.org/docs/messages/prerender-error
+Error: Unauthorized
+    at k (.next/server/chunks/ssr/_0dbg1~e._.js:2:6901)
+    at async F (.next/server/chunks/ssr/src_app_admin_page_tsx_13_9ru1._.js:1:12455) {
+  digest: '1965193337'
+}
+Export encountered an error on /admin/page: /admin, exiting the build.
+⨯ Next.js build worker exited with code: 1 and signal: null
+error: script "build" exited with code 1
+
+End: 2026-04-27T02:10:31Z
+Exit code: 1

@@ -1,0 +1,27 @@
+▲ Next.js 16.2.3 (webpack)
+- Local:         http://localhost:3217
+- Network:       http://127.0.2.2:3217
+- Environments: .env.local
+✓ Ready in 288ms
+- Experiments (use with caution):
+  · serverActions
+
+○ Compiling / ...
+ GET / 200 in 137ms (next.js: 1975µs, application-code: 135ms)
+ GET / 200 in 281ms (next.js: 1556µs, application-code: 279ms)
+ GET /api/cron/compute-signals 401 in 3.0s (next.js: 3.0s, application-code: 22ms)
+ GET /api/cron/compute-signals 401 in 5ms (next.js: 1309µs, application-code: 4ms)
+ GET /api/cron/compute-signals 401 in 7ms (next.js: 750µs, application-code: 7ms)
+ GET /api/cron/compute-signals 401 in 4ms (next.js: 757µs, application-code: 3ms)
+ GET /api/cron/compute-signals 401 in 4ms (next.js: 632µs, application-code: 3ms)
+ GET /api/cron/focus-review-scan 401 in 1384ms (next.js: 1339ms, application-code: 45ms)
+ GET /api/cron/focus-review-scan 401 in 4ms (next.js: 1189µs, application-code: 3ms)
+ GET /api/cron/focus-review-scan 401 in 3ms (next.js: 551µs, application-code: 3ms)
+ GET /api/cron/focus-review-scan 401 in 3ms (next.js: 504µs, application-code: 3ms)
+ GET /api/cron/focus-review-scan 401 in 3ms (next.js: 638µs, application-code: 3ms)
+ GET /auth/callback 307 in 2.2s (next.js: 2.2s, application-code: 51ms)
+ GET /auth/callback 307 in 3ms (next.js: 1214µs, application-code: 1828µs)
+ GET /auth/callback 307 in 1997µs (next.js: 543µs, application-code: 1454µs)
+ GET /auth/callback 307 in 1989µs (next.js: 437µs, application-code: 1552µs)
+ GET /auth/callback 307 in 4ms (next.js: 1107µs, application-code: 3ms)
+[?25h

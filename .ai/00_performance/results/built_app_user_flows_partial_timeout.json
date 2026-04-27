@@ -1,0 +1,175 @@
+{
+  "timestamp": "2026-04-26T23:59:16.296Z",
+  "project": "chromium",
+  "demoAuthEnabled": true,
+  "repeat": 3,
+  "runs": [
+    {
+      "timestamp": "2026-04-26T23:56:16.488Z",
+      "project": "chromium",
+      "name": "open app to first visible UI",
+      "status": "measured",
+      "durationMs": 176.5904579999915,
+      "metrics": {
+        "runIndex": 1,
+        "status": 200,
+        "domContentVisibleMs": 176.55349999997998
+      }
+    },
+    {
+      "timestamp": "2026-04-26T23:56:16.572Z",
+      "project": "chromium",
+      "name": "open app to first visible UI",
+      "status": "measured",
+      "durationMs": 84.29837500001304,
+      "metrics": {
+        "runIndex": 2,
+        "status": 200,
+        "domContentVisibleMs": 84.28608399999212
+      }
+    },
+    {
+      "timestamp": "2026-04-26T23:56:16.649Z",
+      "project": "chromium",
+      "name": "open app to first visible UI",
+      "status": "measured",
+      "durationMs": 76.94566699999268,
+      "metrics": {
+        "runIndex": 3,
+        "status": 200,
+        "domContentVisibleMs": 76.92445900000166
+      }
+    },
+    {
+      "timestamp": "2026-04-26T23:57:01.662Z",
+      "project": "chromium",
+      "name": "login entry to authenticated dashboard (demo auth)",
+      "status": "failed",
+      "durationMs": 45013.161292000004,
+      "metrics": {},
+      "error": "page.waitForURL: Timeout 45000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation until \"load\"\n  navigated to \"http://localhost:3217/login\"\n============================================================"
+    },
+    {
+      "timestamp": "2026-04-26T23:57:31.693Z",
+      "project": "chromium",
+      "name": "dashboard primary data visible (demo auth)",
+      "status": "failed",
+      "durationMs": 30031.25654099998,
+      "metrics": {},
+      "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('body').getByText(/Readiness Score|Dashboard/i).first() to be visible\u001b[22m\n"
+    },
+    {
+      "timestamp": "2026-04-26T23:57:31.723Z",
+      "project": "chromium",
+      "name": "wiki search/filter proxy (demo auth)",
+      "status": "failed",
+      "durationMs": 29.13741699999082,
+      "metrics": {},
+      "error": "No textbox/search input found on /dashboard/wiki"
+    },
+    {
+      "timestamp": "2026-04-26T23:58:16.731Z",
+      "project": "chromium",
+      "name": "login entry to authenticated dashboard (demo auth)",
+      "status": "failed",
+      "durationMs": 45008.53008300002,
+      "metrics": {},
+      "error": "page.waitForURL: Timeout 45000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation until \"load\"\n  navigated to \"http://localhost:3217/login\"\n============================================================"
+    },
+    {
+      "timestamp": "2026-04-26T23:58:46.746Z",
+      "project": "chromium",
+      "name": "dashboard primary data visible (demo auth)",
+      "status": "failed",
+      "durationMs": 30015.245125000016,
+      "metrics": {},
+      "error": "locator.waitFor: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('body').getByText(/Readiness Score|Dashboard/i).first() to be visible\u001b[22m\n"
+    },
+    {
+      "timestamp": "2026-04-26T23:58:46.766Z",
+      "project": "chromium",
+      "name": "wiki search/filter proxy (demo auth)",
+      "status": "failed",
+      "durationMs": 20.075666999968234,
+      "metrics": {},
+      "error": "No textbox/search input found on /dashboard/wiki"
+    },
+    {
+      "timestamp": "2026-04-26T23:59:16.284Z",
+      "project": "chromium",
+      "name": "login entry to authenticated dashboard (demo auth)",
+      "status": "failed",
+      "durationMs": 29517.28237500001,
+      "metrics": {},
+      "error": "page.waitForURL: Test timeout of 180000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation until \"load\"\n  navigated to \"http://localhost:3217/login\"\n============================================================"
+    },
+    {
+      "timestamp": "2026-04-26T23:59:16.287Z",
+      "project": "chromium",
+      "name": "dashboard primary data visible (demo auth)",
+      "status": "failed",
+      "durationMs": 2.8986250000307336,
+      "metrics": {},
+      "error": "page.goto: Target page, context or browser has been closed"
+    },
+    {
+      "timestamp": "2026-04-26T23:59:16.288Z",
+      "project": "chromium",
+      "name": "wiki search/filter proxy (demo auth)",
+      "status": "failed",
+      "durationMs": 1.7964580000261776,
+      "metrics": {},
+      "error": "page.goto: Target page, context or browser has been closed"
+    }
+  ],
+  "summaries": {
+    "open app to first visible UI": {
+      "count": 3,
+      "min": 76.94566699999268,
+      "max": 176.5904579999915,
+      "mean": 112.61149999999907,
+      "median": 84.29837500001304,
+      "p50": 84.29837500001304,
+      "p75": 130.44441650000226,
+      "p95": 167.36124969999364,
+      "p99": 174.74461633999192,
+      "stddev": 45.3394300714583
+    },
+    "login entry to authenticated dashboard (demo auth)": {
+      "count": 3,
+      "min": 29517.28237500001,
+      "max": 45013.161292000004,
+      "mean": 39846.32458333334,
+      "median": 45008.53008300002,
+      "p50": 45008.53008300002,
+      "p75": 45010.84568750001,
+      "p95": 45012.698171100004,
+      "p99": 45013.06866782001,
+      "stddev": 7303.736033390622
+    },
+    "dashboard primary data visible (demo auth)": {
+      "count": 3,
+      "min": 2.8986250000307336,
+      "max": 30031.25654099998,
+      "mean": 20016.466763666675,
+      "median": 30015.245125000016,
+      "p50": 30015.245125000016,
+      "p75": 30023.250833,
+      "p95": 30029.655399399984,
+      "p99": 30030.93631267998,
+      "stddev": 14151.731256213852
+    },
+    "wiki search/filter proxy (demo auth)": {
+      "count": 3,
+      "min": 1.7964580000261776,
+      "max": 29.13741699999082,
+      "mean": 17.003180666661745,
+      "median": 20.075666999968234,
+      "p50": 20.075666999968234,
+      "p75": 24.606541999979527,
+      "p95": 28.231241999988562,
+      "p99": 28.956181999990367,
+      "stddev": 11.371371625290804
+    }
+  }
+}

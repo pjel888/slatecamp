@@ -1,0 +1,9 @@
+Running: node -c performance scripts
+node -c .ai/00_performance/scripts/api-benchmark.mjs
+node -c .ai/00_performance/scripts/build-startup.mjs
+node -c .ai/00_performance/scripts/environment.mjs
+node -c .ai/00_performance/scripts/hotspot-audit.mjs
+node -c .ai/00_performance/scripts/inventory.mjs
+node -c .ai/00_performance/scripts/perf-utils.mjs
+node -c .ai/00_performance/scripts/summarize.mjs
+node -c .ai/00_performance/scripts/supabase-inventory.mjs

@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-04-27T00:42:39.299Z",
+  "command": "bun run perf:frontend",
+  "log": ".ai/00_performance/logs/final-perf-frontend.log",
+  "exitCode": 1,
+  "status": "blocked",
+  "failedRoute": "/dashboard/3d-lab",
+  "failure": "Next dev server restarted near memory threshold during /dashboard/3d-lab; Playwright timed out at 180000 ms and the browser context closed.",
+  "partialResults": ".ai/00_performance/results/final_frontend_failed_partial.json",
+  "restoredCanonicalResults": ".ai/00_performance/results/dashboard_remediation_frontend_after.json",
+  "notes": [
+    "The canonical frontend_navigation_results.json was restored to the last complete successful local-dev route baseline so perf:summary does not silently omit /dashboard/3d-lab.",
+    "The failed final run is preserved separately and treated as a remaining bottleneck/blocker, not a passing result."
+  ]
+}

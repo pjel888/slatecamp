@@ -1,0 +1,144 @@
+{
+  "timestamp": "2026-04-26T17:49:07.761Z",
+  "project": "chromium",
+  "demoAuthEnabled": true,
+  "repeat": 2,
+  "runs": [
+    {
+      "timestamp": "2026-04-26T17:47:27.140Z",
+      "project": "chromium",
+      "name": "open app to first visible UI",
+      "status": "measured",
+      "durationMs": 10517.433874999988,
+      "metrics": {
+        "runIndex": 1,
+        "status": 200,
+        "domContentVisibleMs": 10517.384875000047
+      }
+    },
+    {
+      "timestamp": "2026-04-26T17:47:27.548Z",
+      "project": "chromium",
+      "name": "open app to first visible UI",
+      "status": "measured",
+      "durationMs": 407.70758300001035,
+      "metrics": {
+        "runIndex": 2,
+        "status": 200,
+        "domContentVisibleMs": 407.6968750000233
+      }
+    },
+    {
+      "timestamp": "2026-04-26T17:48:31.182Z",
+      "project": "chromium",
+      "name": "login entry to authenticated dashboard (demo auth)",
+      "status": "failed",
+      "durationMs": 63635.298332999984,
+      "metrics": {},
+      "error": "page.waitForURL: Timeout 45000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation until \"load\"\n  navigated to \"http://localhost:3217/login\"\n============================================================"
+    },
+    {
+      "timestamp": "2026-04-26T17:48:56.062Z",
+      "project": "chromium",
+      "name": "dashboard primary data visible (demo auth)",
+      "status": "measured",
+      "durationMs": 24876.322208999947,
+      "metrics": {
+        "runIndex": 1,
+        "status": 200,
+        "primaryDataVisibleMs": 24875.069458000013
+      }
+    },
+    {
+      "timestamp": "2026-04-26T17:49:05.996Z",
+      "project": "chromium",
+      "name": "wiki search/filter proxy (demo auth)",
+      "status": "failed",
+      "durationMs": 9934.358833000006,
+      "metrics": {},
+      "error": "No textbox/search input found on /dashboard/wiki"
+    },
+    {
+      "timestamp": "2026-04-26T17:49:07.295Z",
+      "project": "chromium",
+      "name": "login entry to authenticated dashboard (demo auth)",
+      "status": "measured",
+      "durationMs": 1298.6490840000333,
+      "metrics": {
+        "runIndex": 2,
+        "loginToDashboardMs": 1298.6091669999878
+      }
+    },
+    {
+      "timestamp": "2026-04-26T17:49:07.540Z",
+      "project": "chromium",
+      "name": "dashboard primary data visible (demo auth)",
+      "status": "measured",
+      "durationMs": 244.90387499995995,
+      "metrics": {
+        "runIndex": 2,
+        "status": 200,
+        "primaryDataVisibleMs": 244.87491700000828
+      }
+    },
+    {
+      "timestamp": "2026-04-26T17:49:07.730Z",
+      "project": "chromium",
+      "name": "wiki search/filter proxy (demo auth)",
+      "status": "failed",
+      "durationMs": 190.4294579999987,
+      "metrics": {},
+      "error": "No textbox/search input found on /dashboard/wiki"
+    }
+  ],
+  "summaries": {
+    "open app to first visible UI": {
+      "count": 2,
+      "min": 407.70758300001035,
+      "max": 10517.433874999988,
+      "mean": 5462.570728999999,
+      "median": 5462.570728999999,
+      "p50": 5462.570728999999,
+      "p75": 7990.0023019999935,
+      "p95": 10011.947560399989,
+      "p99": 10416.336612079987,
+      "stddev": 5054.863145999989
+    },
+    "login entry to authenticated dashboard (demo auth)": {
+      "count": 2,
+      "min": 1298.6490840000333,
+      "max": 63635.298332999984,
+      "mean": 32466.97370850001,
+      "median": 32466.97370850001,
+      "p50": 32466.97370850001,
+      "p75": 48051.13602075,
+      "p95": 60518.46587054998,
+      "p99": 63011.931840509984,
+      "stddev": 31168.324624499975
+    },
+    "dashboard primary data visible (demo auth)": {
+      "count": 2,
+      "min": 244.90387499995995,
+      "max": 24876.322208999947,
+      "mean": 12560.613041999954,
+      "median": 12560.613041999954,
+      "p50": 12560.613041999954,
+      "p75": 18718.46762549995,
+      "p95": 23644.751292299945,
+      "p99": 24630.008025659947,
+      "stddev": 12315.709166999994
+    },
+    "wiki search/filter proxy (demo auth)": {
+      "count": 2,
+      "min": 190.4294579999987,
+      "max": 9934.358833000006,
+      "mean": 5062.394145500002,
+      "median": 5062.394145500002,
+      "p50": 5062.394145500002,
+      "p75": 7498.376489250004,
+      "p95": 9447.162364250005,
+      "p99": 9836.919539250006,
+      "stddev": 4871.9646875000035
+    }
+  }
+}

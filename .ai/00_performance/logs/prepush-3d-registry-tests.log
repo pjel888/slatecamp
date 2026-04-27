@@ -1,0 +1,23 @@
+command: bun test src/features/3d-lab/config/registry/index.test.ts src/features/3d-lab/config/module-paths.test.ts
+cwd: /Users/philiplewis/slatecamp
+start: 2026-04-27T10:17:42+08:00
+bun test v1.3.10 (30e609e0)
+
+src/features/3d-lab/config/module-paths.test.ts:
+(pass) 3D Lab module import paths > resolves known modules to their category folder path [1.35ms]
+(pass) 3D Lab module import paths > falls back to the raw module id when no mapping exists [0.03ms]
+(pass) 3D Lab module import paths > imports a mapped module config from the shared resolver [5.89ms]
+(pass) 3D Lab module import paths > imports full configs for dashboard-visible modules without relying on registry configs [4.16ms]
+
+src/features/3d-lab/config/registry/index.test.ts:
+(pass) 3D Lab metadata registry > has unique module IDs [0.12ms]
+(pass) 3D Lab metadata registry > resolves every dashboard-visible module
+(pass) 3D Lab metadata registry > contains metadata-only entries [0.25ms]
+(pass) 3D Lab metadata registry > category registry files do not import full module configs [2.70ms]
+
+ 8 pass
+ 0 fail
+ 3412 expect() calls
+Ran 8 tests across 2 files. [124.00ms]
+end: 2026-04-27T10:17:42+08:00
+exit: 0

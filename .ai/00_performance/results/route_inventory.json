@@ -1,0 +1,1059 @@
+{
+  "pages": [
+    {
+      "path": "/",
+      "file": "src/app/page.tsx"
+    },
+    {
+      "path": "/about",
+      "file": "src/app/about/page.tsx"
+    },
+    {
+      "path": "/admin",
+      "file": "src/app/admin/page.tsx"
+    },
+    {
+      "path": "/admin/3d-models",
+      "file": "src/app/admin/3d-models/page.tsx"
+    },
+    {
+      "path": "/admin/activity",
+      "file": "src/app/admin/activity/page.tsx"
+    },
+    {
+      "path": "/admin/assets",
+      "file": "src/app/admin/assets/page.tsx"
+    },
+    {
+      "path": "/admin/assets/:id",
+      "file": "src/app/admin/assets/[id]/page.tsx"
+    },
+    {
+      "path": "/admin/audit",
+      "file": "src/app/admin/audit/page.tsx"
+    },
+    {
+      "path": "/admin/knowledge",
+      "file": "src/app/admin/knowledge/page.tsx"
+    },
+    {
+      "path": "/admin/knowledge/:id",
+      "file": "src/app/admin/knowledge/[id]/page.tsx"
+    },
+    {
+      "path": "/admin/knowledge/analytics",
+      "file": "src/app/admin/knowledge/analytics/page.tsx"
+    },
+    {
+      "path": "/admin/knowledge/import",
+      "file": "src/app/admin/knowledge/import/page.tsx"
+    },
+    {
+      "path": "/admin/knowledge/new",
+      "file": "src/app/admin/knowledge/new/page.tsx"
+    },
+    {
+      "path": "/admin/knowledge/questions",
+      "file": "src/app/admin/knowledge/questions/page.tsx"
+    },
+    {
+      "path": "/admin/knowledge/questions/:id",
+      "file": "src/app/admin/knowledge/questions/[id]/page.tsx"
+    },
+    {
+      "path": "/admin/knowledge/questions/design-problems",
+      "file": "src/app/admin/knowledge/questions/design-problems/page.tsx"
+    },
+    {
+      "path": "/admin/knowledge/questions/design-problems/:id",
+      "file": "src/app/admin/knowledge/questions/design-problems/[id]/page.tsx"
+    },
+    {
+      "path": "/admin/knowledge/questions/new",
+      "file": "src/app/admin/knowledge/questions/new/page.tsx"
+    },
+    {
+      "path": "/admin/knowledge/questions/scenarios",
+      "file": "src/app/admin/knowledge/questions/scenarios/page.tsx"
+    },
+    {
+      "path": "/admin/knowledge/questions/scenarios/:id",
+      "file": "src/app/admin/knowledge/questions/scenarios/[id]/page.tsx"
+    },
+    {
+      "path": "/admin/login",
+      "file": "src/app/(admin-public)/admin/login/page.tsx"
+    },
+    {
+      "path": "/admin/pipeline",
+      "file": "src/app/admin/pipeline/page.tsx"
+    },
+    {
+      "path": "/admin/preview/:previewId",
+      "file": "src/app/admin/preview/[previewId]/page.tsx"
+    },
+    {
+      "path": "/admin/reviews",
+      "file": "src/app/admin/reviews/page.tsx"
+    },
+    {
+      "path": "/admin/search",
+      "file": "src/app/admin/search/page.tsx"
+    },
+    {
+      "path": "/admin/settings",
+      "file": "src/app/admin/settings/page.tsx"
+    },
+    {
+      "path": "/admin/taxonomy",
+      "file": "src/app/admin/taxonomy/page.tsx"
+    },
+    {
+      "path": "/admin/taxonomy/coverage",
+      "file": "src/app/admin/taxonomy/coverage/page.tsx"
+    },
+    {
+      "path": "/admin/wiki",
+      "file": "src/app/admin/wiki/page.tsx"
+    },
+    {
+      "path": "/auth/reset-password",
+      "file": "src/app/auth/reset-password/page.tsx"
+    },
+    {
+      "path": "/calculators",
+      "file": "src/app/calculators/page.tsx"
+    },
+    {
+      "path": "/calculators/chb",
+      "file": "src/app/calculators/chb/page.tsx"
+    },
+    {
+      "path": "/calculators/drywall",
+      "file": "src/app/calculators/drywall/page.tsx"
+    },
+    {
+      "path": "/calculators/flooring",
+      "file": "src/app/calculators/flooring/page.tsx"
+    },
+    {
+      "path": "/calculators/paint",
+      "file": "src/app/calculators/paint/page.tsx"
+    },
+    {
+      "path": "/ceo",
+      "file": "src/app/(protected)/ceo/page.tsx"
+    },
+    {
+      "path": "/ceo/analytics",
+      "file": "src/app/(protected)/ceo/analytics/page.tsx"
+    },
+    {
+      "path": "/ceo/financials",
+      "file": "src/app/(protected)/ceo/financials/page.tsx"
+    },
+    {
+      "path": "/ceo/insights",
+      "file": "src/app/(protected)/ceo/insights/page.tsx"
+    },
+    {
+      "path": "/ceo/team",
+      "file": "src/app/(protected)/ceo/team/page.tsx"
+    },
+    {
+      "path": "/contact",
+      "file": "src/app/contact/page.tsx"
+    },
+    {
+      "path": "/dashboard",
+      "file": "src/app/dashboard/page.tsx"
+    },
+    {
+      "path": "/dashboard/3d-lab",
+      "file": "src/app/dashboard/3d-lab/page.tsx"
+    },
+    {
+      "path": "/dashboard/3d-lab/:moduleId",
+      "file": "src/app/dashboard/3d-lab/[moduleId]/page.tsx"
+    },
+    {
+      "path": "/dashboard/analytics",
+      "file": "src/app/dashboard/analytics/page.tsx"
+    },
+    {
+      "path": "/dashboard/analytics/advanced",
+      "file": "src/app/dashboard/analytics/advanced/page.tsx"
+    },
+    {
+      "path": "/dashboard/area-c",
+      "file": "src/app/dashboard/area-c/page.tsx"
+    },
+    {
+      "path": "/dashboard/area-c/calculator",
+      "file": "src/app/dashboard/area-c/calculator/page.tsx"
+    },
+    {
+      "path": "/dashboard/area-c/design-problems",
+      "file": "src/app/dashboard/area-c/design-problems/page.tsx"
+    },
+    {
+      "path": "/dashboard/area-c/design-problems/:problemId",
+      "file": "src/app/dashboard/area-c/design-problems/[problemId]/page.tsx"
+    },
+    {
+      "path": "/dashboard/area-c/design-quiz",
+      "file": "src/app/dashboard/area-c/design-quiz/page.tsx"
+    },
+    {
+      "path": "/dashboard/area-c/design-quiz/:scenarioId",
+      "file": "src/app/dashboard/area-c/design-quiz/[scenarioId]/page.tsx"
+    },
+    {
+      "path": "/dashboard/assessment",
+      "file": "src/app/dashboard/assessment/page.tsx"
+    },
+    {
+      "path": "/dashboard/camptrails",
+      "file": "src/app/dashboard/camptrails/page.tsx"
+    },
+    {
+      "path": "/dashboard/camptrails/:slug",
+      "file": "src/app/dashboard/camptrails/[slug]/page.tsx"
+    },
+    {
+      "path": "/dashboard/camptrails/:slug/day/:dayNumber/complete",
+      "file": "src/app/dashboard/camptrails/[slug]/day/[dayNumber]/complete/page.tsx"
+    },
+    {
+      "path": "/dashboard/camptrails/:slug/today",
+      "file": "src/app/dashboard/camptrails/[slug]/today/page.tsx"
+    },
+    {
+      "path": "/dashboard/code-updates",
+      "file": "src/app/dashboard/code-updates/page.tsx"
+    },
+    {
+      "path": "/dashboard/cram-card",
+      "file": "src/app/dashboard/cram-card/page.tsx"
+    },
+    {
+      "path": "/dashboard/dae-mode",
+      "file": "src/app/dashboard/dae-mode/page.tsx"
+    },
+    {
+      "path": "/dashboard/drills",
+      "file": "src/app/dashboard/drills/page.tsx"
+    },
+    {
+      "path": "/dashboard/drills/sessions",
+      "file": "src/app/dashboard/drills/sessions/page.tsx"
+    },
+    {
+      "path": "/dashboard/exam-outcome",
+      "file": "src/app/dashboard/exam-outcome/page.tsx"
+    },
+    {
+      "path": "/dashboard/flash",
+      "file": "src/app/dashboard/flash/page.tsx"
+    },
+    {
+      "path": "/dashboard/flash/:category",
+      "file": "src/app/dashboard/flash/[category]/page.tsx"
+    },
+    {
+      "path": "/dashboard/heatmap",
+      "file": "src/app/dashboard/heatmap/page.tsx"
+    },
+    {
+      "path": "/dashboard/notes",
+      "file": "src/app/dashboard/notes/page.tsx"
+    },
+    {
+      "path": "/dashboard/notifications",
+      "file": "src/app/dashboard/notifications/page.tsx"
+    },
+    {
+      "path": "/dashboard/pods",
+      "file": "src/app/dashboard/pods/page.tsx"
+    },
+    {
+      "path": "/dashboard/pods/:podId",
+      "file": "src/app/dashboard/pods/[podId]/page.tsx"
+    },
+    {
+      "path": "/dashboard/professional",
+      "file": "src/app/dashboard/professional/page.tsx"
+    },
+    {
+      "path": "/dashboard/results-day",
+      "file": "src/app/dashboard/results-day/page.tsx"
+    },
+    {
+      "path": "/dashboard/score-reveal",
+      "file": "src/app/dashboard/score-reveal/page.tsx"
+    },
+    {
+      "path": "/dashboard/settings",
+      "file": "src/app/dashboard/settings/page.tsx"
+    },
+    {
+      "path": "/dashboard/settings/billing",
+      "file": "src/app/dashboard/settings/billing/page.tsx"
+    },
+    {
+      "path": "/dashboard/settings/developer",
+      "file": "src/app/dashboard/settings/developer/page.tsx"
+    },
+    {
+      "path": "/dashboard/studio",
+      "file": "src/app/dashboard/studio/page.tsx"
+    },
+    {
+      "path": "/dashboard/trail",
+      "file": "src/app/dashboard/trail/page.tsx"
+    },
+    {
+      "path": "/dashboard/trails",
+      "file": "src/app/dashboard/trails/page.tsx"
+    },
+    {
+      "path": "/dashboard/upgrade",
+      "file": "src/app/dashboard/upgrade/page.tsx"
+    },
+    {
+      "path": "/dashboard/welcome-pro",
+      "file": "src/app/dashboard/welcome-pro/page.tsx"
+    },
+    {
+      "path": "/dashboard/wiki",
+      "file": "src/app/dashboard/wiki/page.tsx"
+    },
+    {
+      "path": "/dashboard/wiki/:slug",
+      "file": "src/app/dashboard/wiki/[slug]/page.tsx"
+    },
+    {
+      "path": "/developer",
+      "file": "src/app/developer/page.tsx"
+    },
+    {
+      "path": "/developer/api-reference",
+      "file": "src/app/developer/api-reference/page.tsx"
+    },
+    {
+      "path": "/developer/architecture",
+      "file": "src/app/developer/architecture/page.tsx"
+    },
+    {
+      "path": "/developer/status",
+      "file": "src/app/developer/status/page.tsx"
+    },
+    {
+      "path": "/developer/status/database",
+      "file": "src/app/developer/status/database/page.tsx"
+    },
+    {
+      "path": "/developer/status/infrastructure",
+      "file": "src/app/developer/status/infrastructure/page.tsx"
+    },
+    {
+      "path": "/developer/tools",
+      "file": "src/app/developer/tools/page.tsx"
+    },
+    {
+      "path": "/developer/tools/console",
+      "file": "src/app/developer/tools/console/page.tsx"
+    },
+    {
+      "path": "/developer/tools/db",
+      "file": "src/app/developer/tools/db/page.tsx"
+    },
+    {
+      "path": "/developer/tools/logs",
+      "file": "src/app/developer/tools/logs/page.tsx"
+    },
+    {
+      "path": "/developer/tools/test-data",
+      "file": "src/app/developer/tools/test-data/page.tsx"
+    },
+    {
+      "path": "/forgot-password",
+      "file": "src/app/(auth)/forgot-password/page.tsx"
+    },
+    {
+      "path": "/login",
+      "file": "src/app/(auth)/login/page.tsx"
+    },
+    {
+      "path": "/onboarding",
+      "file": "src/app/(auth)/onboarding/page.tsx"
+    },
+    {
+      "path": "/onboarding/comp-exam",
+      "file": "src/app/(auth)/onboarding/comp-exam/page.tsx"
+    },
+    {
+      "path": "/pricing",
+      "file": "src/app/pricing/page.tsx"
+    },
+    {
+      "path": "/quiz",
+      "file": "src/app/quiz/page.tsx"
+    },
+    {
+      "path": "/quiz/:mode/session/:sessionId",
+      "file": "src/app/quiz/[mode]/session/[sessionId]/page.tsx"
+    },
+    {
+      "path": "/quiz/:mode/session/:sessionId/results",
+      "file": "src/app/quiz/[mode]/session/[sessionId]/results/page.tsx"
+    },
+    {
+      "path": "/quiz/:mode/session/:sessionId/review",
+      "file": "src/app/quiz/[mode]/session/[sessionId]/review/page.tsx"
+    },
+    {
+      "path": "/quiz/:mode/setup",
+      "file": "src/app/quiz/[mode]/setup/page.tsx"
+    },
+    {
+      "path": "/register",
+      "file": "src/app/(auth)/register/page.tsx"
+    },
+    {
+      "path": "/settings",
+      "file": "src/app/settings/page.tsx"
+    },
+    {
+      "path": "/test-3d",
+      "file": "src/app/test-3d/page.tsx"
+    },
+    {
+      "path": "/tools",
+      "file": "src/app/tools/page.tsx"
+    },
+    {
+      "path": "/tools/floor-tiles-calculator",
+      "file": "src/app/tools/floor-tiles-calculator/page.tsx"
+    },
+    {
+      "path": "/tools/lot-plotter",
+      "file": "src/app/tools/lot-plotter/page.tsx"
+    },
+    {
+      "path": "/tools/wall-paint-calculator",
+      "file": "src/app/tools/wall-paint-calculator/page.tsx"
+    },
+    {
+      "path": "/try",
+      "file": "src/app/try/page.tsx"
+    }
+  ],
+  "layouts": [
+    {
+      "path": "/developer",
+      "file": "src/app/developer/layout.tsx"
+    },
+    {
+      "path": "/test-3d",
+      "file": "src/app/test-3d/layout.tsx"
+    },
+    {
+      "path": "/admin/search",
+      "file": "src/app/admin/search/layout.tsx"
+    },
+    {
+      "path": "/admin",
+      "file": "src/app/admin/layout.tsx"
+    },
+    {
+      "path": "/quiz",
+      "file": "src/app/quiz/layout.tsx"
+    },
+    {
+      "path": "/dashboard/score-reveal",
+      "file": "src/app/dashboard/score-reveal/layout.tsx"
+    },
+    {
+      "path": "/dashboard/3d-lab",
+      "file": "src/app/dashboard/3d-lab/layout.tsx"
+    },
+    {
+      "path": "/dashboard/wiki",
+      "file": "src/app/dashboard/wiki/layout.tsx"
+    },
+    {
+      "path": "/dashboard/notes",
+      "file": "src/app/dashboard/notes/layout.tsx"
+    },
+    {
+      "path": "/dashboard",
+      "file": "src/app/dashboard/layout.tsx"
+    },
+    {
+      "path": "/dashboard/drills",
+      "file": "src/app/dashboard/drills/layout.tsx"
+    },
+    {
+      "path": "/dashboard/analytics",
+      "file": "src/app/dashboard/analytics/layout.tsx"
+    },
+    {
+      "path": "/ceo",
+      "file": "src/app/(protected)/ceo/layout.tsx"
+    },
+    {
+      "path": "/",
+      "file": "src/app/layout.tsx"
+    },
+    {
+      "path": "/calculators",
+      "file": "src/app/calculators/layout.tsx"
+    }
+  ],
+  "loading": [
+    {
+      "path": "/developer/tools/test-data",
+      "file": "src/app/developer/tools/test-data/loading.tsx"
+    },
+    {
+      "path": "/developer/tools/logs",
+      "file": "src/app/developer/tools/logs/loading.tsx"
+    },
+    {
+      "path": "/developer/tools/db",
+      "file": "src/app/developer/tools/db/loading.tsx"
+    },
+    {
+      "path": "/developer/tools",
+      "file": "src/app/developer/tools/loading.tsx"
+    },
+    {
+      "path": "/developer/tools/console",
+      "file": "src/app/developer/tools/console/loading.tsx"
+    },
+    {
+      "path": "/developer/api-reference",
+      "file": "src/app/developer/api-reference/loading.tsx"
+    },
+    {
+      "path": "/developer/status/database",
+      "file": "src/app/developer/status/database/loading.tsx"
+    },
+    {
+      "path": "/developer/status",
+      "file": "src/app/developer/status/loading.tsx"
+    },
+    {
+      "path": "/developer/status/infrastructure",
+      "file": "src/app/developer/status/infrastructure/loading.tsx"
+    },
+    {
+      "path": "/developer/architecture",
+      "file": "src/app/developer/architecture/loading.tsx"
+    },
+    {
+      "path": "/developer",
+      "file": "src/app/developer/loading.tsx"
+    },
+    {
+      "path": "/contact",
+      "file": "src/app/contact/loading.tsx"
+    },
+    {
+      "path": "/tools/floor-tiles-calculator",
+      "file": "src/app/tools/floor-tiles-calculator/loading.tsx"
+    },
+    {
+      "path": "/tools/lot-plotter",
+      "file": "src/app/tools/lot-plotter/loading.tsx"
+    },
+    {
+      "path": "/tools/wall-paint-calculator",
+      "file": "src/app/tools/wall-paint-calculator/loading.tsx"
+    },
+    {
+      "path": "/tools",
+      "file": "src/app/tools/loading.tsx"
+    },
+    {
+      "path": "/admin/settings",
+      "file": "src/app/admin/settings/loading.tsx"
+    },
+    {
+      "path": "/admin/pipeline",
+      "file": "src/app/admin/pipeline/loading.tsx"
+    },
+    {
+      "path": "/admin/activity",
+      "file": "src/app/admin/activity/loading.tsx"
+    },
+    {
+      "path": "/admin/articles/:id",
+      "file": "src/app/admin/articles/[id]/loading.tsx"
+    },
+    {
+      "path": "/admin/search",
+      "file": "src/app/admin/search/loading.tsx"
+    },
+    {
+      "path": "/admin/dashboard",
+      "file": "src/app/admin/dashboard/loading.tsx"
+    },
+    {
+      "path": "/admin/audit",
+      "file": "src/app/admin/audit/loading.tsx"
+    },
+    {
+      "path": "/admin/knowledge/new",
+      "file": "src/app/admin/knowledge/new/loading.tsx"
+    },
+    {
+      "path": "/admin/knowledge",
+      "file": "src/app/admin/knowledge/loading.tsx"
+    },
+    {
+      "path": "/admin/knowledge/:id",
+      "file": "src/app/admin/knowledge/[id]/loading.tsx"
+    },
+    {
+      "path": "/admin/knowledge/import",
+      "file": "src/app/admin/knowledge/import/loading.tsx"
+    },
+    {
+      "path": "/admin/knowledge/analytics",
+      "file": "src/app/admin/knowledge/analytics/loading.tsx"
+    },
+    {
+      "path": "/admin/knowledge/questions/new",
+      "file": "src/app/admin/knowledge/questions/new/loading.tsx"
+    },
+    {
+      "path": "/admin/knowledge/questions",
+      "file": "src/app/admin/knowledge/questions/loading.tsx"
+    },
+    {
+      "path": "/admin/taxonomy",
+      "file": "src/app/admin/taxonomy/loading.tsx"
+    },
+    {
+      "path": "/admin/taxonomy/coverage",
+      "file": "src/app/admin/taxonomy/coverage/loading.tsx"
+    },
+    {
+      "path": "/admin/3d-models",
+      "file": "src/app/admin/3d-models/loading.tsx"
+    },
+    {
+      "path": "/admin",
+      "file": "src/app/admin/loading.tsx"
+    },
+    {
+      "path": "/admin/assets",
+      "file": "src/app/admin/assets/loading.tsx"
+    },
+    {
+      "path": "/admin/assets/:id",
+      "file": "src/app/admin/assets/[id]/loading.tsx"
+    },
+    {
+      "path": "/admin/login",
+      "file": "src/app/admin/login/loading.tsx"
+    },
+    {
+      "path": "/admin/reviews",
+      "file": "src/app/admin/reviews/loading.tsx"
+    },
+    {
+      "path": "/quiz/:mode/setup",
+      "file": "src/app/quiz/[mode]/setup/loading.tsx"
+    },
+    {
+      "path": "/quiz/:mode/session/:sessionId/results",
+      "file": "src/app/quiz/[mode]/session/[sessionId]/results/loading.tsx"
+    },
+    {
+      "path": "/quiz/:mode/session/:sessionId/review",
+      "file": "src/app/quiz/[mode]/session/[sessionId]/review/loading.tsx"
+    },
+    {
+      "path": "/quiz/:mode/session/:sessionId",
+      "file": "src/app/quiz/[mode]/session/[sessionId]/loading.tsx"
+    },
+    {
+      "path": "/quiz",
+      "file": "src/app/quiz/loading.tsx"
+    },
+    {
+      "path": "/about",
+      "file": "src/app/about/loading.tsx"
+    },
+    {
+      "path": "/dashboard/settings",
+      "file": "src/app/dashboard/settings/loading.tsx"
+    },
+    {
+      "path": "/dashboard/studio",
+      "file": "src/app/dashboard/studio/loading.tsx"
+    },
+    {
+      "path": "/dashboard/upgrade",
+      "file": "src/app/dashboard/upgrade/loading.tsx"
+    },
+    {
+      "path": "/dashboard/professional",
+      "file": "src/app/dashboard/professional/loading.tsx"
+    },
+    {
+      "path": "/dashboard/exam-outcome",
+      "file": "src/app/dashboard/exam-outcome/loading.tsx"
+    },
+    {
+      "path": "/dashboard/score-reveal",
+      "file": "src/app/dashboard/score-reveal/loading.tsx"
+    },
+    {
+      "path": "/dashboard/welcome-pro",
+      "file": "src/app/dashboard/welcome-pro/loading.tsx"
+    },
+    {
+      "path": "/dashboard/3d-lab/:moduleId",
+      "file": "src/app/dashboard/3d-lab/[moduleId]/loading.tsx"
+    },
+    {
+      "path": "/dashboard/3d-lab",
+      "file": "src/app/dashboard/3d-lab/loading.tsx"
+    },
+    {
+      "path": "/dashboard/wiki",
+      "file": "src/app/dashboard/wiki/loading.tsx"
+    },
+    {
+      "path": "/dashboard/wiki/:slug",
+      "file": "src/app/dashboard/wiki/[slug]/loading.tsx"
+    },
+    {
+      "path": "/dashboard/assessment",
+      "file": "src/app/dashboard/assessment/loading.tsx"
+    },
+    {
+      "path": "/dashboard/camptrails",
+      "file": "src/app/dashboard/camptrails/loading.tsx"
+    },
+    {
+      "path": "/dashboard/camptrails/:slug/today",
+      "file": "src/app/dashboard/camptrails/[slug]/today/loading.tsx"
+    },
+    {
+      "path": "/dashboard/camptrails/:slug",
+      "file": "src/app/dashboard/camptrails/[slug]/loading.tsx"
+    },
+    {
+      "path": "/dashboard/camptrails/:slug/day/:dayNumber/complete",
+      "file": "src/app/dashboard/camptrails/[slug]/day/[dayNumber]/complete/loading.tsx"
+    },
+    {
+      "path": "/dashboard/results-day",
+      "file": "src/app/dashboard/results-day/loading.tsx"
+    },
+    {
+      "path": "/dashboard/cram-card",
+      "file": "src/app/dashboard/cram-card/loading.tsx"
+    },
+    {
+      "path": "/dashboard/flash/:category",
+      "file": "src/app/dashboard/flash/[category]/loading.tsx"
+    },
+    {
+      "path": "/dashboard/flash",
+      "file": "src/app/dashboard/flash/loading.tsx"
+    },
+    {
+      "path": "/dashboard/code-updates",
+      "file": "src/app/dashboard/code-updates/loading.tsx"
+    },
+    {
+      "path": "/dashboard/notes",
+      "file": "src/app/dashboard/notes/loading.tsx"
+    },
+    {
+      "path": "/dashboard/pods",
+      "file": "src/app/dashboard/pods/loading.tsx"
+    },
+    {
+      "path": "/dashboard/pods/:podId",
+      "file": "src/app/dashboard/pods/[podId]/loading.tsx"
+    },
+    {
+      "path": "/dashboard/dae-mode",
+      "file": "src/app/dashboard/dae-mode/loading.tsx"
+    },
+    {
+      "path": "/dashboard",
+      "file": "src/app/dashboard/loading.tsx"
+    },
+    {
+      "path": "/dashboard/drills/sessions",
+      "file": "src/app/dashboard/drills/sessions/loading.tsx"
+    },
+    {
+      "path": "/dashboard/drills",
+      "file": "src/app/dashboard/drills/loading.tsx"
+    },
+    {
+      "path": "/dashboard/notifications",
+      "file": "src/app/dashboard/notifications/loading.tsx"
+    },
+    {
+      "path": "/dashboard/analytics/advanced",
+      "file": "src/app/dashboard/analytics/advanced/loading.tsx"
+    },
+    {
+      "path": "/dashboard/analytics",
+      "file": "src/app/dashboard/analytics/loading.tsx"
+    },
+    {
+      "path": "/dashboard/area-c/design-quiz/:scenarioId",
+      "file": "src/app/dashboard/area-c/design-quiz/[scenarioId]/loading.tsx"
+    },
+    {
+      "path": "/dashboard/area-c/design-quiz",
+      "file": "src/app/dashboard/area-c/design-quiz/loading.tsx"
+    },
+    {
+      "path": "/dashboard/area-c/design-problems/:problemId",
+      "file": "src/app/dashboard/area-c/design-problems/[problemId]/loading.tsx"
+    },
+    {
+      "path": "/dashboard/area-c/design-problems",
+      "file": "src/app/dashboard/area-c/design-problems/loading.tsx"
+    },
+    {
+      "path": "/dashboard/area-c/calculator",
+      "file": "src/app/dashboard/area-c/calculator/loading.tsx"
+    },
+    {
+      "path": "/dashboard/area-c",
+      "file": "src/app/dashboard/area-c/loading.tsx"
+    },
+    {
+      "path": "/ceo/insights",
+      "file": "src/app/(protected)/ceo/insights/loading.tsx"
+    },
+    {
+      "path": "/ceo/financials",
+      "file": "src/app/(protected)/ceo/financials/loading.tsx"
+    },
+    {
+      "path": "/ceo/team",
+      "file": "src/app/(protected)/ceo/team/loading.tsx"
+    },
+    {
+      "path": "/ceo",
+      "file": "src/app/(protected)/ceo/loading.tsx"
+    },
+    {
+      "path": "/try",
+      "file": "src/app/try/loading.tsx"
+    },
+    {
+      "path": "/",
+      "file": "src/app/loading.tsx"
+    },
+    {
+      "path": "/register",
+      "file": "src/app/(auth)/register/loading.tsx"
+    },
+    {
+      "path": "/forgot-password",
+      "file": "src/app/(auth)/forgot-password/loading.tsx"
+    },
+    {
+      "path": "/login",
+      "file": "src/app/(auth)/login/loading.tsx"
+    },
+    {
+      "path": "/onboarding",
+      "file": "src/app/(auth)/onboarding/loading.tsx"
+    },
+    {
+      "path": "/pricing",
+      "file": "src/app/pricing/loading.tsx"
+    }
+  ],
+  "errors": [
+    {
+      "path": "/developer",
+      "file": "src/app/developer/error.tsx"
+    },
+    {
+      "path": "/admin",
+      "file": "src/app/admin/error.tsx"
+    },
+    {
+      "path": "/dashboard/3d-lab",
+      "file": "src/app/dashboard/3d-lab/error.tsx"
+    },
+    {
+      "path": "/dashboard",
+      "file": "src/app/dashboard/error.tsx"
+    },
+    {
+      "path": "/dashboard/analytics",
+      "file": "src/app/dashboard/analytics/error.tsx"
+    },
+    {
+      "path": "/",
+      "file": "src/app/error.tsx"
+    },
+    {
+      "path": "/",
+      "file": "src/app/(auth)/error.tsx"
+    }
+  ],
+  "routeHandlers": [
+    {
+      "path": "/api/admin/flags",
+      "file": "src/app/api/admin/flags/route.ts",
+      "methods": [
+        "POST",
+        "DELETE"
+      ],
+      "runtime": null,
+      "dynamic": null,
+      "usesSupabase": false,
+      "usesAuth": false,
+      "usesExternalFetch": false
+    },
+    {
+      "path": "/api/ai/embed",
+      "file": "src/app/api/ai/embed/route.ts",
+      "methods": [
+        "POST"
+      ],
+      "runtime": null,
+      "dynamic": null,
+      "usesSupabase": true,
+      "usesAuth": true,
+      "usesExternalFetch": false
+    },
+    {
+      "path": "/api/ai/generate-questions",
+      "file": "src/app/api/ai/generate-questions/route.ts",
+      "methods": [
+        "POST"
+      ],
+      "runtime": null,
+      "dynamic": null,
+      "usesSupabase": true,
+      "usesAuth": true,
+      "usesExternalFetch": false
+    },
+    {
+      "path": "/api/ai/socratic",
+      "file": "src/app/api/ai/socratic/route.ts",
+      "methods": [],
+      "runtime": null,
+      "dynamic": null,
+      "usesSupabase": true,
+      "usesAuth": true,
+      "usesExternalFetch": false
+    },
+    {
+      "path": "/api/ai/study-agent",
+      "file": "src/app/api/ai/study-agent/route.ts",
+      "methods": [
+        "POST"
+      ],
+      "runtime": null,
+      "dynamic": null,
+      "usesSupabase": true,
+      "usesAuth": true,
+      "usesExternalFetch": false
+    },
+    {
+      "path": "/api/ai/tutor",
+      "file": "src/app/api/ai/tutor/route.ts",
+      "methods": [
+        "POST"
+      ],
+      "runtime": null,
+      "dynamic": null,
+      "usesSupabase": true,
+      "usesAuth": true,
+      "usesExternalFetch": false
+    },
+    {
+      "path": "/api/cron/compute-signals",
+      "file": "src/app/api/cron/compute-signals/route.ts",
+      "methods": [
+        "GET"
+      ],
+      "runtime": null,
+      "dynamic": null,
+      "usesSupabase": true,
+      "usesAuth": false,
+      "usesExternalFetch": false
+    },
+    {
+      "path": "/api/cron/focus-review-scan",
+      "file": "src/app/api/cron/focus-review-scan/route.ts",
+      "methods": [
+        "GET"
+      ],
+      "runtime": null,
+      "dynamic": null,
+      "usesSupabase": true,
+      "usesAuth": false,
+      "usesExternalFetch": false
+    },
+    {
+      "path": "/api/payments/checkout",
+      "file": "src/app/api/payments/checkout/route.ts",
+      "methods": [
+        "POST"
+      ],
+      "runtime": null,
+      "dynamic": null,
+      "usesSupabase": true,
+      "usesAuth": true,
+      "usesExternalFetch": false
+    },
+    {
+      "path": "/api/webhooks/lemonsqueezy",
+      "file": "src/app/api/webhooks/lemonsqueezy/route.ts",
+      "methods": [
+        "POST"
+      ],
+      "runtime": null,
+      "dynamic": null,
+      "usesSupabase": true,
+      "usesAuth": false,
+      "usesExternalFetch": false
+    },
+    {
+      "path": "/api/webhooks/payrex",
+      "file": "src/app/api/webhooks/payrex/route.ts",
+      "methods": [
+        "POST"
+      ],
+      "runtime": null,
+      "dynamic": null,
+      "usesSupabase": true,
+      "usesAuth": false,
+      "usesExternalFetch": false
+    },
+    {
+      "path": "/auth/callback",
+      "file": "src/app/auth/callback/route.ts",
+      "methods": [
+        "GET"
+      ],
+      "runtime": null,
+      "dynamic": null,
+      "usesSupabase": true,
+      "usesAuth": true,
+      "usesExternalFetch": false
+    }
+  ]
+}

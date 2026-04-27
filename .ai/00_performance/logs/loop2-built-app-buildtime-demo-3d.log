@@ -1,0 +1,20 @@
+Command: env PLAYWRIGHT_USE_BUILT_APP=true PERF_USER_FLOWS=false PERF_ROUTE_FILTER=/dashboard/3d-lab bun run perf:frontend
+Working directory: /Users/philiplewis/slatecamp
+Start: 2026-04-27T02:10:31Z
+
+$ PLAYWRIGHT_DEMO_AUTH=true bunx playwright test --config=.ai/00_performance/playwright/playwright.perf.config.ts --project=chromium --workers=1
+[2m[WebServer] [22m(node:96610) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22mError: ENOENT: no such file or directory, open '/Users/philiplewis/slatecamp/.next/prerender-manifest.json'
+[2m[WebServer] [22m    at ignore-listed frames {
+[2m[WebServer] [22m  errno: [33m-2[39m,
+[2m[WebServer] [22m  code: [32m'ENOENT'[39m,
+[2m[WebServer] [22m  syscall: [32m'open'[39m,
+[2m[WebServer] [22m  path: [32m'/Users/philiplewis/slatecamp/.next/prerender-manifest.json'[39m
+[2m[WebServer] [22m}
+Error: Process from config.webServer was not able to start. Exit code: 1
+
+error: script "perf:frontend" exited with code 1
+
+End: 2026-04-27T02:10:32Z
+Exit code: 1

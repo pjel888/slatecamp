@@ -1,0 +1,144 @@
+## git rev-parse HEAD
+- Working directory: `/Users/philiplewis/slatecamp`
+- Start time: 2026-04-26T18:00:55.102Z
+- End time: 2026-04-26T18:00:55.110Z
+- Exit code: 0
+- Duration: 8 ms
+
+```text
+936d6de57efcfb850a9774eedc4967da568520e9
+
+```
+
+## git branch --show-current
+- Working directory: `/Users/philiplewis/slatecamp`
+- Start time: 2026-04-26T18:00:55.110Z
+- End time: 2026-04-26T18:00:55.115Z
+- Exit code: 0
+- Duration: 5 ms
+
+```text
+main
+
+```
+
+## git status --short
+- Working directory: `/Users/philiplewis/slatecamp`
+- Start time: 2026-04-26T18:00:55.115Z
+- End time: 2026-04-26T18:00:55.178Z
+- Exit code: 0
+- Duration: 63 ms
+
+```text
+ M .ai/00_performance/README.md
+ M .ai/00_system/VALIDATION_MATRIX.md
+ M README.md
+ M e2e/authenticated-demo-3d-lab.spec.ts
+ M e2e/authenticated-demo-portals.spec.ts
+ M e2e/authenticated-demo.spec.ts
+ M e2e/support/authenticated-demo.ts
+ M package.json
+ M scripts/playwright-run.ts
+ M src/app/dashboard/3d-lab/AGENTS.md
+ M src/app/dashboard/3d-lab/page.tsx
+ M src/app/dashboard/wiki/[slug]/page.tsx
+ M src/app/quiz/[mode]/setup/client.tsx
+ M src/app/quiz/[mode]/setup/page.tsx
+ M src/components/dashboard/DailyDoseCard.tsx
+ M src/components/dashboard/DashboardLayoutContent.tsx
+ M src/components/quiz-v2/BaseQuizShell.tsx
+ M src/components/quiz-v2/OptionsColumn.tsx
+ M src/components/quiz-v2/SlideToSubmit.tsx
+ M src/components/quiz-v2/StandardQuizShell.tsx
+ M src/components/quiz-v2/SubmitConfirmModal.tsx
+ M src/components/quiz-v2/results/ConfidenceMatrix.tsx
+ M src/components/quiz-v2/results/ResultsDashboard.tsx
+ M src/components/testing/hub/HeroConfigurator.tsx
+ M src/components/wiki/navigation/WikiSidebar.tsx
+ M src/features/3d-lab/components/CanvasWrapper.tsx
+ M src/features/3d-lab/components/LabBrowser.tsx
+ M src/features/3d-lab/components/overlays/DOMOverlayLayer.tsx
+ M src/features/3d-lab/components/shell/LabBrowserShell.tsx
+ M src/features/3d-lab/components/shell/LabViewportFrame.tsx
+ M src/features/3d-lab/components/shell/SceneToolbar.tsx
+ M src/features/3d-lab/components/shell/ViewportContextMenu.tsx
+ M src/features/3d-lab/config/module-paths.ts
+ M src/features/3d-lab/hooks/useViewportShortcuts.ts
+ M src/hooks/useQuizShellHandlers.ts
+ M src/lib/actions/quiz-v2/schemas.ts
+ M src/lib/actions/quiz-v2/start-session.test.ts
+ M src/lib/actions/quiz-v2/start-session.ts
+ M src/lib/demo/config.ts
+ M src/lib/demo/data.ts
+ M src/lib/demo/mock-supabase.ts
+ M src/lib/supabase/server.ts
+?? .ai/00_performance/00_inventory.md
+?? .ai/00_performance/01_measurement_plan.md
+?? .ai/00_performance/02_environment.md
+?? .ai/00_performance/03_baseline_summary.md
+?? .ai/00_performance/04_frontend_runtime.md
+?? .ai/00_performance/05_playwright_e2e.md
+?? .ai/00_performance/06_api_backend.md
+?? .ai/00_performance/07_supabase_database.md
+?? .ai/00_performance/08_auth_and_user_wait.md
+?? .ai/00_performance/09_network_and_caching.md
+?? .ai/00_performance/10_bundle_build_startup.md
+?? .ai/00_performance/11_component_function_hotspots.md
+?? .ai/00_performance/12_regression_testing_plan.md
+?? .ai/00_performance/13_ci_perf_gates.md
+?? .ai/00_performance/14_bottlenecks_ranked.md
+?? .ai/00_performance/15_recommendations.md
+?? .ai/00_performance/16_open_questions_and_blockers.md
+?? .ai/00_performance/llm_crosschecks.md
+?? .ai/00_performance/logs/
+?? .ai/00_performance/playwright/
+?? .ai/00_performance/raw/
+?? .ai/00_performance/results/
+?? .ai/00_performance/screenshots/
+?? .ai/00_performance/scripts/
+?? .ai/00_performance/traces/
+?? .ai/05_logs/2026-04-26-core-learning-lane-log.md
+?? e2e/authenticated-demo-restricted.spec.ts
+?? e2e/learning-flow.spec.ts
+?? e2e/wiki-learning.spec.ts
+?? src/app/dashboard/3d-lab/[moduleId]/loading.tsx
+?? src/components/wiki/navigation/WikiSidebar.test.ts
+?? src/features/3d-lab/config/module-paths.test.ts
+
+```
+
+## node --version
+- Working directory: `/Users/philiplewis/slatecamp`
+- Start time: 2026-04-26T18:00:55.178Z
+- End time: 2026-04-26T18:00:55.198Z
+- Exit code: 0
+- Duration: 20 ms
+
+```text
+v25.8.0
+
+```
+
+## bun --version
+- Working directory: `/Users/philiplewis/slatecamp`
+- Start time: 2026-04-26T18:00:55.198Z
+- End time: 2026-04-26T18:00:55.202Z
+- Exit code: 0
+- Duration: 4 ms
+
+```text
+1.3.10
+
+```
+
+## ./node_modules/.bin/playwright --version
+- Working directory: `/Users/philiplewis/slatecamp`
+- Start time: 2026-04-26T18:00:55.202Z
+- End time: 2026-04-26T18:00:55.308Z
+- Exit code: 0
+- Duration: 107 ms
+
+```text
+Version 1.59.1
+
+```

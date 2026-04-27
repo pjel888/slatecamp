@@ -1,0 +1,25 @@
+{
+  "public": [
+    "/",
+    "/about",
+    "/auth/reset-password",
+    "/contact",
+    "/forgot-password",
+    "/login",
+    "/pricing",
+    "/register",
+    "/try"
+  ],
+  "authenticatedDemo": [
+    "/dashboard",
+    "/dashboard/settings",
+    "/dashboard/wiki",
+    "/dashboard/analytics",
+    "/dashboard/3d-lab"
+  ],
+  "apiGet": [
+    "/api/cron/compute-signals",
+    "/api/cron/focus-review-scan",
+    "/auth/callback"
+  ]
+}

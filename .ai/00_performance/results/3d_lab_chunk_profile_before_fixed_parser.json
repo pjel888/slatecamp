@@ -1,0 +1,623 @@
+{
+  "timestamp": "2026-04-27T02:03:35.099Z",
+  "source": ".next client reference manifests and src/features/3d-lab/config/registry source scan",
+  "routes": [
+    {
+      "route": "/dashboard/3d-lab",
+      "manifest": ".next/server/app/dashboard/3d-lab/page_client-reference-manifest.js",
+      "manifestExists": true,
+      "moduleCount": 70,
+      "signalCount": 4,
+      "uniqueChunks": 27,
+      "rawBytes": 2171682,
+      "gzipBytes": 606928,
+      "hasModuleViewer": false,
+      "hasLabViewportFrame": false,
+      "hasCanvasWrapper": false,
+      "hasR3F": false,
+      "hasDrei": false,
+      "hasFullConfigModuleSignal": false,
+      "signalModules": [
+        {
+          "moduleId": "[project]/src/features/3d-lab/components/LabBrowser.tsx <module evaluation>",
+          "chunks": [
+            "/_next/static/chunks/17t4g96du420q.js",
+            "/_next/static/chunks/0l1p7u6~77l-y.js",
+            "/_next/static/chunks/0r2vu57nynpop.js",
+            "/_next/static/chunks/05xc-y__0slj1.js",
+            "/_next/static/chunks/0ds35ano3cs-_.js",
+            "/_next/static/chunks/0_yssc5vgw9.i.js",
+            "/_next/static/chunks/07a1a2kxrw2h~.js",
+            "/_next/static/chunks/0zs448320-qgc.js",
+            "/_next/static/chunks/0jm52b.en7oy2.js",
+            "/_next/static/chunks/11qnd_7j3xy3v.js",
+            "/_next/static/chunks/0a3p8wxza8l4k.js",
+            "/_next/static/chunks/0xbfkrnlhe2g8.js",
+            "/_next/static/chunks/044x00wdbjq.d.js",
+            "/_next/static/chunks/0b-piy5eootl1.js",
+            "/_next/static/chunks/0id79jb2t3gzf.js",
+            "/_next/static/chunks/0_smmzknl9ine.js",
+            "/_next/static/chunks/0vxs-0q51i3q4.js",
+            "/_next/static/chunks/0.uiytixdyok3.js",
+            "/_next/static/chunks/0gmrmo.8_5ooj.js",
+            "/_next/static/chunks/06gmoj6cnh5~9.js",
+            "/_next/static/chunks/07~h62rbh_qn_.js",
+            "/_next/static/chunks/0yrot4wq6a92b.js",
+            "/_next/static/chunks/0wqtlyo~-dfux.js",
+            "/_next/static/chunks/0wan.i6_ykx~5.js"
+          ]
+        },
+        {
+          "moduleId": "[project]/src/features/3d-lab/components/LabBrowser.tsx",
+          "chunks": [
+            "/_next/static/chunks/17t4g96du420q.js",
+            "/_next/static/chunks/0l1p7u6~77l-y.js",
+            "/_next/static/chunks/0r2vu57nynpop.js",
+            "/_next/static/chunks/05xc-y__0slj1.js",
+            "/_next/static/chunks/0ds35ano3cs-_.js",
+            "/_next/static/chunks/0_yssc5vgw9.i.js",
+            "/_next/static/chunks/07a1a2kxrw2h~.js",
+            "/_next/static/chunks/0zs448320-qgc.js",
+            "/_next/static/chunks/0jm52b.en7oy2.js",
+            "/_next/static/chunks/11qnd_7j3xy3v.js",
+            "/_next/static/chunks/0a3p8wxza8l4k.js",
+            "/_next/static/chunks/0xbfkrnlhe2g8.js",
+            "/_next/static/chunks/044x00wdbjq.d.js",
+            "/_next/static/chunks/0b-piy5eootl1.js",
+            "/_next/static/chunks/0id79jb2t3gzf.js",
+            "/_next/static/chunks/0_smmzknl9ine.js",
+            "/_next/static/chunks/0vxs-0q51i3q4.js",
+            "/_next/static/chunks/0.uiytixdyok3.js",
+            "/_next/static/chunks/0gmrmo.8_5ooj.js",
+            "/_next/static/chunks/06gmoj6cnh5~9.js",
+            "/_next/static/chunks/07~h62rbh_qn_.js",
+            "/_next/static/chunks/0yrot4wq6a92b.js",
+            "/_next/static/chunks/0wqtlyo~-dfux.js",
+            "/_next/static/chunks/0wan.i6_ykx~5.js"
+          ]
+        },
+        {
+          "moduleId": "[project]/src/features/3d-lab/components/shell/LabBrowserShell.tsx <module evaluation>",
+          "chunks": [
+            "/_next/static/chunks/17t4g96du420q.js",
+            "/_next/static/chunks/0l1p7u6~77l-y.js",
+            "/_next/static/chunks/0r2vu57nynpop.js",
+            "/_next/static/chunks/05xc-y__0slj1.js",
+            "/_next/static/chunks/0ds35ano3cs-_.js",
+            "/_next/static/chunks/0_yssc5vgw9.i.js",
+            "/_next/static/chunks/07a1a2kxrw2h~.js",
+            "/_next/static/chunks/0zs448320-qgc.js",
+            "/_next/static/chunks/0jm52b.en7oy2.js",
+            "/_next/static/chunks/11qnd_7j3xy3v.js",
+            "/_next/static/chunks/0a3p8wxza8l4k.js",
+            "/_next/static/chunks/0xbfkrnlhe2g8.js",
+            "/_next/static/chunks/044x00wdbjq.d.js",
+            "/_next/static/chunks/0b-piy5eootl1.js",
+            "/_next/static/chunks/0id79jb2t3gzf.js",
+            "/_next/static/chunks/0_smmzknl9ine.js",
+            "/_next/static/chunks/0vxs-0q51i3q4.js",
+            "/_next/static/chunks/0.uiytixdyok3.js",
+            "/_next/static/chunks/0gmrmo.8_5ooj.js",
+            "/_next/static/chunks/06gmoj6cnh5~9.js",
+            "/_next/static/chunks/07~h62rbh_qn_.js",
+            "/_next/static/chunks/0yrot4wq6a92b.js",
+            "/_next/static/chunks/0wqtlyo~-dfux.js",
+            "/_next/static/chunks/0wan.i6_ykx~5.js"
+          ]
+        },
+        {
+          "moduleId": "[project]/src/features/3d-lab/components/shell/LabBrowserShell.tsx",
+          "chunks": [
+            "/_next/static/chunks/17t4g96du420q.js",
+            "/_next/static/chunks/0l1p7u6~77l-y.js",
+            "/_next/static/chunks/0r2vu57nynpop.js",
+            "/_next/static/chunks/05xc-y__0slj1.js",
+            "/_next/static/chunks/0ds35ano3cs-_.js",
+            "/_next/static/chunks/0_yssc5vgw9.i.js",
+            "/_next/static/chunks/07a1a2kxrw2h~.js",
+            "/_next/static/chunks/0zs448320-qgc.js",
+            "/_next/static/chunks/0jm52b.en7oy2.js",
+            "/_next/static/chunks/11qnd_7j3xy3v.js",
+            "/_next/static/chunks/0a3p8wxza8l4k.js",
+            "/_next/static/chunks/0xbfkrnlhe2g8.js",
+            "/_next/static/chunks/044x00wdbjq.d.js",
+            "/_next/static/chunks/0b-piy5eootl1.js",
+            "/_next/static/chunks/0id79jb2t3gzf.js",
+            "/_next/static/chunks/0_smmzknl9ine.js",
+            "/_next/static/chunks/0vxs-0q51i3q4.js",
+            "/_next/static/chunks/0.uiytixdyok3.js",
+            "/_next/static/chunks/0gmrmo.8_5ooj.js",
+            "/_next/static/chunks/06gmoj6cnh5~9.js",
+            "/_next/static/chunks/07~h62rbh_qn_.js",
+            "/_next/static/chunks/0yrot4wq6a92b.js",
+            "/_next/static/chunks/0wqtlyo~-dfux.js",
+            "/_next/static/chunks/0wan.i6_ykx~5.js"
+          ]
+        }
+      ],
+      "serverSignals": [],
+      "largestChunks": [
+        {
+          "chunk": "/_next/static/chunks/0wqtlyo~-dfux.js",
+          "file": ".next/static/chunks/0wqtlyo~-dfux.js",
+          "bytes": 903150,
+          "gzipBytes": 239493,
+          "exists": true
+        },
+        {
+          "chunk": "/_next/static/chunks/0_smmzknl9ine.js",
+          "file": ".next/static/chunks/0_smmzknl9ine.js",
+          "bytes": 207128,
+          "gzipBytes": 54178,
+          "exists": true
+        },
+        {
+          "chunk": "/_next/static/chunks/0vxs-0q51i3q4.js",
+          "file": ".next/static/chunks/0vxs-0q51i3q4.js",
+          "bytes": 179025,
+          "gzipBytes": 53038,
+          "exists": true
+        },
+        {
+          "chunk": "/_next/static/chunks/0b-piy5eootl1.js",
+          "file": ".next/static/chunks/0b-piy5eootl1.js",
+          "bytes": 134076,
+          "gzipBytes": 44165,
+          "exists": true
+        },
+        {
+          "chunk": "/_next/static/chunks/0zs448320-qgc.js",
+          "file": ".next/static/chunks/0zs448320-qgc.js",
+          "bytes": 73844,
+          "gzipBytes": 23067,
+          "exists": true
+        },
+        {
+          "chunk": "/_next/static/chunks/044x00wdbjq.d.js",
+          "file": ".next/static/chunks/044x00wdbjq.d.js",
+          "bytes": 59638,
+          "gzipBytes": 16397,
+          "exists": true
+        },
+        {
+          "chunk": "/_next/static/chunks/0wan.i6_ykx~5.js",
+          "file": ".next/static/chunks/0wan.i6_ykx~5.js",
+          "bytes": 57504,
+          "gzipBytes": 14489,
+          "exists": true
+        },
+        {
+          "chunk": "/_next/static/chunks/0yrot4wq6a92b.js",
+          "file": ".next/static/chunks/0yrot4wq6a92b.js",
+          "bytes": 56238,
+          "gzipBytes": 7732,
+          "exists": true
+        },
+        {
+          "chunk": "/_next/static/chunks/0_yssc5vgw9.i.js",
+          "file": ".next/static/chunks/0_yssc5vgw9.i.js",
+          "bytes": 54766,
+          "gzipBytes": 12940,
+          "exists": true
+        },
+        {
+          "chunk": "/_next/static/chunks/07~h62rbh_qn_.js",
+          "file": ".next/static/chunks/07~h62rbh_qn_.js",
+          "bytes": 53930,
+          "gzipBytes": 14701,
+          "exists": true
+        },
+        {
+          "chunk": "/_next/static/chunks/06gmoj6cnh5~9.js",
+          "file": ".next/static/chunks/06gmoj6cnh5~9.js",
+          "bytes": 48697,
+          "gzipBytes": 12613,
+          "exists": true
+        },
+        {
+          "chunk": "/_next/static/chunks/17t4g96du420q.js",
+          "file": ".next/static/chunks/17t4g96du420q.js",
+          "bytes": 42980,
+          "gzipBytes": 10796,
+          "exists": true
+        },
+        {
+          "chunk": "/_next/static/chunks/11qnd_7j3xy3v.js",
+          "file": ".next/static/chunks/11qnd_7j3xy3v.js",
+          "bytes": 34325,
+          "gzipBytes": 11997,
+          "exists": true
+        },
+        {
+          "chunk": "/_next/static/chunks/07a1a2kxrw2h~.js",
+          "file": ".next/static/chunks/07a1a2kxrw2h~.js",
+          "bytes": 34209,
+          "gzipBytes": 11281,
+          "exists": true
+        },
+        {
+          "chunk": "/_next/static/chunks/0xbfkrnlhe2g8.js",
+          "file": ".next/static/chunks/0xbfkrnlhe2g8.js",
+          "bytes": 33136,
+          "gzipBytes": 10946,
+          "exists": true
+        },
+        {
+          "chunk": "/_next/static/chunks/0id79jb2t3gzf.js",
+          "file": ".next/static/chunks/0id79jb2t3gzf.js",
+          "bytes": 29358,
+          "gzipBytes": 9718,
+          "exists": true
+        },
+        {
+          "chunk": "/_next/static/chunks/0l1p7u6~77l-y.js",
+          "file": ".next/static/chunks/0l1p7u6~77l-y.js",
+          "bytes": 28095,
+          "gzipBytes": 10359,
+          "exists": true
+        },
+        {
+          "chunk": "/_next/static/chunks/05xc-y__0slj1.js",
+          "file": ".next/static/chunks/05xc-y__0slj1.js",
+          "bytes": 26162,
+          "gzipBytes": 8232,
+          "exists": true
+        },
+        {
+          "chunk": "/_next/static/chunks/0r2vu57nynpop.js",
+          "file": ".next/static/chunks/0r2vu57nynpop.js",
+          "bytes": 24187,
+          "gzipBytes": 8347,
+          "exists": true
+        },
+        {
+          "chunk": "/_next/static/chunks/0ds35ano3cs-_.js",
+          "file": ".next/static/chunks/0ds35ano3cs-_.js",
+          "bytes": 23823,
+          "gzipBytes": 8352,
+          "exists": true
+        }
+      ]
+    },
+    {
+      "route": "/dashboard/3d-lab/[moduleId]",
+      "manifest": ".next/server/app/dashboard/3d-lab/[moduleId]/page_client-reference-manifest.js",
+      "manifestExists": true,
+      "moduleCount": 68,
+      "signalCount": 2,
+      "uniqueChunks": 36,
+      "rawBytes": 3440024,
+      "gzipBytes": 943643,
+      "hasModuleViewer": true,
+      "hasLabViewportFrame": false,
+      "hasCanvasWrapper": false,
+      "hasR3F": false,
+      "hasDrei": false,
+      "hasFullConfigModuleSignal": false,
+      "signalModules": [
+        {
+          "moduleId": "[project]/src/features/3d-lab/components/ModuleViewer.tsx <module evaluation>",
+          "chunks": [
+            "/_next/static/chunks/17t4g96du420q.js",
+            "/_next/static/chunks/0l1p7u6~77l-y.js",
+            "/_next/static/chunks/0r2vu57nynpop.js",
+            "/_next/static/chunks/05xc-y__0slj1.js",
+            "/_next/static/chunks/0ds35ano3cs-_.js",
+            "/_next/static/chunks/0_yssc5vgw9.i.js",
+            "/_next/static/chunks/07a1a2kxrw2h~.js",
+            "/_next/static/chunks/0zs448320-qgc.js",
+            "/_next/static/chunks/0jm52b.en7oy2.js",
+            "/_next/static/chunks/11qnd_7j3xy3v.js",
+            "/_next/static/chunks/0a3p8wxza8l4k.js",
+            "/_next/static/chunks/0xbfkrnlhe2g8.js",
+            "/_next/static/chunks/044x00wdbjq.d.js",
+            "/_next/static/chunks/0b-piy5eootl1.js",
+            "/_next/static/chunks/0id79jb2t3gzf.js",
+            "/_next/static/chunks/0_smmzknl9ine.js",
+            "/_next/static/chunks/0vxs-0q51i3q4.js",
+            "/_next/static/chunks/0.uiytixdyok3.js",
+            "/_next/static/chunks/0tt-hn0enb463.js",
+            "/_next/static/chunks/0i9xz83ohk.40.js",
+            "/_next/static/chunks/0xwtxbgje.~vm.js",
+            "/_next/static/chunks/09_j5ip0enefy.js",
+            "/_next/static/chunks/0zh6mqythghbd.js",
+            "/_next/static/chunks/0h8khn8qs5.~k.js",
+            "/_next/static/chunks/0tjk.ooomo6ym.js",
+            "/_next/static/chunks/0c6gyypdoeyyg.js",
+            "/_next/static/chunks/0yrot4wq6a92b.js",
+            "/_next/static/chunks/0wan.i6_ykx~5.js",
+            "/_next/static/chunks/0~aezhc~tpeom.js",
+            "/_next/static/chunks/0v~ol-kb5lunh.js",
+            "/_next/static/chunks/0w2n28gu90g_s.js",
+            "/_next/static/chunks/17vc1bv91yc08.js",
+            "/_next/static/chunks/03z-9c1sr-kxk.js"
+          ]
+        },
+        {
+          "moduleId": "[project]/src/features/3d-lab/components/ModuleViewer.tsx",
+          "chunks": [
+            "/_next/static/chunks/17t4g96du420q.js",
+            "/_next/static/chunks/0l1p7u6~77l-y.js",
+            "/_next/static/chunks/0r2vu57nynpop.js",
+            "/_next/static/chunks/05xc-y__0slj1.js",
+            "/_next/static/chunks/0ds35ano3cs-_.js",
+            "/_next/static/chunks/0_yssc5vgw9.i.js",
+            "/_next/static/chunks/07a1a2kxrw2h~.js",
+            "/_next/static/chunks/0zs448320-qgc.js",
+            "/_next/static/chunks/0jm52b.en7oy2.js",
+            "/_next/static/chunks/11qnd_7j3xy3v.js",
+            "/_next/static/chunks/0a3p8wxza8l4k.js",
+            "/_next/static/chunks/0xbfkrnlhe2g8.js",
+            "/_next/static/chunks/044x00wdbjq.d.js",
+            "/_next/static/chunks/0b-piy5eootl1.js",
+            "/_next/static/chunks/0id79jb2t3gzf.js",
+            "/_next/static/chunks/0_smmzknl9ine.js",
+            "/_next/static/chunks/0vxs-0q51i3q4.js",
+            "/_next/static/chunks/0.uiytixdyok3.js",
+            "/_next/static/chunks/0tt-hn0enb463.js",
+            "/_next/static/chunks/0i9xz83ohk.40.js",
+            "/_next/static/chunks/0xwtxbgje.~vm.js",
+            "/_next/static/chunks/09_j5ip0enefy.js",
+            "/_next/static/chunks/0zh6mqythghbd.js",
+            "/_next/static/chunks/0h8khn8qs5.~k.js",
+            "/_next/static/chunks/0tjk.ooomo6ym.js",
+            "/_next/static/chunks/0c6gyypdoeyyg.js",
+            "/_next/static/chunks/0yrot4wq6a92b.js",
+            "/_next/static/chunks/0wan.i6_ykx~5.js",
+            "/_next/static/chunks/0~aezhc~tpeom.js",
+            "/_next/static/chunks/0v~ol-kb5lunh.js",
+            "/_next/static/chunks/0w2n28gu90g_s.js",
+            "/_next/static/chunks/17vc1bv91yc08.js",
+            "/_next/static/chunks/03z-9c1sr-kxk.js"
+          ]
+        }
+      ],
+      "serverSignals": [],
+      "largestChunks": [
+        {
+          "chunk": "/_next/static/chunks/0v~ol-kb5lunh.js",
+          "file": ".next/static/chunks/0v~ol-kb5lunh.js",
+          "bytes": 903150,
+          "gzipBytes": 239620,
+          "exists": true
+        },
+        {
+          "chunk": "/_next/static/chunks/17vc1bv91yc08.js",
+          "file": ".next/static/chunks/17vc1bv91yc08.js",
+          "bytes": 868722,
+          "gzipBytes": 228472,
+          "exists": true
+        },
+        {
+          "chunk": "/_next/static/chunks/0_smmzknl9ine.js",
+          "file": ".next/static/chunks/0_smmzknl9ine.js",
+          "bytes": 207128,
+          "gzipBytes": 54178,
+          "exists": true
+        },
+        {
+          "chunk": "/_next/static/chunks/0vxs-0q51i3q4.js",
+          "file": ".next/static/chunks/0vxs-0q51i3q4.js",
+          "bytes": 179025,
+          "gzipBytes": 53038,
+          "exists": true
+        },
+        {
+          "chunk": "/_next/static/chunks/0b-piy5eootl1.js",
+          "file": ".next/static/chunks/0b-piy5eootl1.js",
+          "bytes": 134076,
+          "gzipBytes": 44165,
+          "exists": true
+        },
+        {
+          "chunk": "/_next/static/chunks/0w2n28gu90g_s.js",
+          "file": ".next/static/chunks/0w2n28gu90g_s.js",
+          "bytes": 81865,
+          "gzipBytes": 23673,
+          "exists": true
+        },
+        {
+          "chunk": "/_next/static/chunks/0zs448320-qgc.js",
+          "file": ".next/static/chunks/0zs448320-qgc.js",
+          "bytes": 73844,
+          "gzipBytes": 23067,
+          "exists": true
+        },
+        {
+          "chunk": "/_next/static/chunks/0h8khn8qs5.~k.js",
+          "file": ".next/static/chunks/0h8khn8qs5.~k.js",
+          "bytes": 66922,
+          "gzipBytes": 17361,
+          "exists": true
+        },
+        {
+          "chunk": "/_next/static/chunks/044x00wdbjq.d.js",
+          "file": ".next/static/chunks/044x00wdbjq.d.js",
+          "bytes": 59638,
+          "gzipBytes": 16397,
+          "exists": true
+        },
+        {
+          "chunk": "/_next/static/chunks/0wan.i6_ykx~5.js",
+          "file": ".next/static/chunks/0wan.i6_ykx~5.js",
+          "bytes": 57504,
+          "gzipBytes": 14489,
+          "exists": true
+        },
+        {
+          "chunk": "/_next/static/chunks/0yrot4wq6a92b.js",
+          "file": ".next/static/chunks/0yrot4wq6a92b.js",
+          "bytes": 56238,
+          "gzipBytes": 7732,
+          "exists": true
+        },
+        {
+          "chunk": "/_next/static/chunks/0i9xz83ohk.40.js",
+          "file": ".next/static/chunks/0i9xz83ohk.40.js",
+          "bytes": 54818,
+          "gzipBytes": 5917,
+          "exists": true
+        },
+        {
+          "chunk": "/_next/static/chunks/0_yssc5vgw9.i.js",
+          "file": ".next/static/chunks/0_yssc5vgw9.i.js",
+          "bytes": 54766,
+          "gzipBytes": 12940,
+          "exists": true
+        },
+        {
+          "chunk": "/_next/static/chunks/0zh6mqythghbd.js",
+          "file": ".next/static/chunks/0zh6mqythghbd.js",
+          "bytes": 48697,
+          "gzipBytes": 12616,
+          "exists": true
+        },
+        {
+          "chunk": "/_next/static/chunks/03z-9c1sr-kxk.js",
+          "file": ".next/static/chunks/03z-9c1sr-kxk.js",
+          "bytes": 48507,
+          "gzipBytes": 13646,
+          "exists": true
+        },
+        {
+          "chunk": "/_next/static/chunks/0c6gyypdoeyyg.js",
+          "file": ".next/static/chunks/0c6gyypdoeyyg.js",
+          "bytes": 46757,
+          "gzipBytes": 15513,
+          "exists": true
+        },
+        {
+          "chunk": "/_next/static/chunks/17t4g96du420q.js",
+          "file": ".next/static/chunks/17t4g96du420q.js",
+          "bytes": 42980,
+          "gzipBytes": 10796,
+          "exists": true
+        },
+        {
+          "chunk": "/_next/static/chunks/0xwtxbgje.~vm.js",
+          "file": ".next/static/chunks/0xwtxbgje.~vm.js",
+          "bytes": 41283,
+          "gzipBytes": 9832,
+          "exists": true
+        },
+        {
+          "chunk": "/_next/static/chunks/0~aezhc~tpeom.js",
+          "file": ".next/static/chunks/0~aezhc~tpeom.js",
+          "bytes": 39951,
+          "gzipBytes": 11449,
+          "exists": true
+        },
+        {
+          "chunk": "/_next/static/chunks/11qnd_7j3xy3v.js",
+          "file": ".next/static/chunks/11qnd_7j3xy3v.js",
+          "bytes": 34325,
+          "gzipBytes": 11997,
+          "exists": true
+        }
+      ]
+    }
+  ],
+  "sourceCounts": {
+    "registryDirectConfigImports": 0,
+    "registryCategorySourceBytes": 84666,
+    "categoryFiles": [
+      {
+        "file": "src/features/3d-lab/config/registry/cat-07.ts",
+        "count": 0,
+        "bytes": 2723
+      },
+      {
+        "file": "src/features/3d-lab/config/registry/cat-17.ts",
+        "count": 0,
+        "bytes": 445
+      },
+      {
+        "file": "src/features/3d-lab/config/registry/cat-03.ts",
+        "count": 0,
+        "bytes": 8309
+      },
+      {
+        "file": "src/features/3d-lab/config/registry/cat-13.ts",
+        "count": 0,
+        "bytes": 7056
+      },
+      {
+        "file": "src/features/3d-lab/config/registry/cat-02.ts",
+        "count": 0,
+        "bytes": 5377
+      },
+      {
+        "file": "src/features/3d-lab/config/registry/cat-12.ts",
+        "count": 0,
+        "bytes": 4358
+      },
+      {
+        "file": "src/features/3d-lab/config/registry/cat-06.ts",
+        "count": 0,
+        "bytes": 3779
+      },
+      {
+        "file": "src/features/3d-lab/config/registry/cat-16.ts",
+        "count": 0,
+        "bytes": 1732
+      },
+      {
+        "file": "src/features/3d-lab/config/registry/cat-09.ts",
+        "count": 0,
+        "bytes": 6349
+      },
+      {
+        "file": "src/features/3d-lab/config/registry/cat-08.ts",
+        "count": 0,
+        "bytes": 1697
+      },
+      {
+        "file": "src/features/3d-lab/config/registry/cat-18.ts",
+        "count": 0,
+        "bytes": 447
+      },
+      {
+        "file": "src/features/3d-lab/config/registry/cat-01.ts",
+        "count": 0,
+        "bytes": 11731
+      },
+      {
+        "file": "src/features/3d-lab/config/registry/cat-11.ts",
+        "count": 0,
+        "bytes": 8655
+      },
+      {
+        "file": "src/features/3d-lab/config/registry/cat-05.ts",
+        "count": 0,
+        "bytes": 5441
+      },
+      {
+        "file": "src/features/3d-lab/config/registry/cat-15.ts",
+        "count": 0,
+        "bytes": 2238
+      },
+      {
+        "file": "src/features/3d-lab/config/registry/cat-04.ts",
+        "count": 0,
+        "bytes": 6570
+      },
+      {
+        "file": "src/features/3d-lab/config/registry/cat-14.ts",
+        "count": 0,
+        "bytes": 1879
+      },
+      {
+        "file": "src/features/3d-lab/config/registry/cat-10.ts",
+        "count": 0,
+        "bytes": 5880
+      }
+    ],
+    "metadataFileExists": false,
+    "metadataSourceBytes": 0
+  },
+  "notes": [
+    "rawBytes/gzipBytes sum unique chunk files referenced by each route client-reference manifest.",
+    "signalModules count modules matching 3D Lab, config, viewer, canvas, R3F/drei, or three substrings.",
+    "serverSignals are substring checks in server route bundle, useful for import-shape drift but not byte totals."
+  ]
+}

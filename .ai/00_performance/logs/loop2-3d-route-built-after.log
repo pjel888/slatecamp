@@ -1,0 +1,21 @@
+Command: env PLAYWRIGHT_USE_BUILT_APP=true PERF_USER_FLOWS=false PERF_ROUTE_FILTER=/dashboard/3d-lab bun run perf:frontend
+Working directory: /Users/philiplewis/slatecamp
+Start: 2026-04-27T02:06:32Z
+
+$ PLAYWRIGHT_DEMO_AUTH=true bunx playwright test --config=.ai/00_performance/playwright/playwright.perf.config.ts --project=chromium --workers=1
+[2m[WebServer] [22m(node:93353) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 2 tests using 1 worker
+
+(node:93444) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:93444) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [chromium] › .ai/00_performance/playwright/perf.spec.ts:300:9 › SlateCamp performance navigation baselines › navigation metrics for /dashboard/3d-lab (10.3s)
+  ✓  2 [chromium] › .ai/00_performance/playwright/perf.spec.ts:312:7 › SlateCamp performance navigation baselines › user flow timing proxies (39ms)
+
+  2 passed (12.2s)
+
+End: 2026-04-27T02:06:45Z
+Exit code: 0

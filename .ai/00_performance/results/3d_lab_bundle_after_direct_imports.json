@@ -1,0 +1,55 @@
+{
+  "timestamp": "2026-04-27T00:25:26.056Z",
+  "routes": [
+    {
+      "route": "/dashboard/3d-lab",
+      "moduleCount": 70,
+      "signalCount": 8,
+      "uniqueChunks": 27,
+      "rawBytes": 2171682,
+      "gzipBytes": 606931,
+      "signals": [
+        "[project]/src/app/dashboard/3d-lab/layout.tsx <module evaluation>",
+        "[project]/src/app/dashboard/3d-lab/layout.tsx",
+        "[project]/src/app/dashboard/3d-lab/error.tsx <module evaluation>",
+        "[project]/src/app/dashboard/3d-lab/error.tsx",
+        "[project]/src/features/3d-lab/components/LabBrowser.tsx <module evaluation>",
+        "[project]/src/features/3d-lab/components/LabBrowser.tsx",
+        "[project]/src/features/3d-lab/components/shell/LabBrowserShell.tsx <module evaluation>",
+        "[project]/src/features/3d-lab/components/shell/LabBrowserShell.tsx"
+      ],
+      "hasModuleViewer": false,
+      "hasLabViewportFrame": false,
+      "hasR3F": false,
+      "hasDrei": false
+    },
+    {
+      "route": "/dashboard/3d-lab/[moduleId]",
+      "moduleCount": 68,
+      "signalCount": 6,
+      "uniqueChunks": 36,
+      "rawBytes": 3440024,
+      "gzipBytes": 943640,
+      "signals": [
+        "[project]/src/app/dashboard/3d-lab/layout.tsx <module evaluation>",
+        "[project]/src/app/dashboard/3d-lab/layout.tsx",
+        "[project]/src/app/dashboard/3d-lab/error.tsx <module evaluation>",
+        "[project]/src/app/dashboard/3d-lab/error.tsx",
+        "[project]/src/features/3d-lab/components/ModuleViewer.tsx <module evaluation>",
+        "[project]/src/features/3d-lab/components/ModuleViewer.tsx"
+      ],
+      "hasModuleViewer": true,
+      "hasLabViewportFrame": false,
+      "hasR3F": false,
+      "hasDrei": false
+    }
+  ],
+  "beforeFromStaticAudit": {
+    "signalCount": 52,
+    "uniqueChunks": 33,
+    "rawBytes": 3501767,
+    "gzipBytes": 952395,
+    "registryDirectConfigImports": 209,
+    "registryDirectConfigSourceBytes": 1431091
+  }
+}

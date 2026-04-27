@@ -275,25 +275,39 @@ These commands are grounded in `package.json` as of **2026-04-26**.
 | `bun run test:e2e:smoke` | Run the fast Chromium-only Playwright smoke suite |
 | `bun run test:e2e:prod` | Run launch-smoke checks against the built app with `next start` |
 | `bun run test:e2e:auth-demo` | Run demo-authenticated first-run and auth-entry browser checks |
+| `bun run test:e2e:auth-demo:learning` | Run seeded demo-auth drills/wiki learning-flow browser checks |
+| `bun run test:e2e:auth-demo:restricted` | Run demo-authenticated restricted-role denial coverage for admin, developer, and CEO routes |
 | `bun run test:e2e:auth-demo:portals` | Run demo-authenticated admin, developer, and CEO portal browser checks |
 | `bun run test:e2e:auth-demo:3d-lab` | Run demo-authenticated 3D Lab browser checks on a fresh server |
 | `bun run test:e2e:headed` | Run Playwright in headed browser mode |
 | `bun run test:e2e:ui` | Open Playwright's interactive test runner |
 | `bun run type-check` | Clear stale `.next/dev/types` and run `tsc --noEmit` |
-| `bun run validate:release` | Run the heavy release aggregate: type-check, lint, entitlements, audit, build, production Playwright smoke, demo-auth core, demo-auth portals, demo-auth 3D Lab |
+| `bun run validate:release` | Run the heavy release aggregate: type-check, lint, entitlements, audit, build, production Playwright smoke, demo-auth core, demo-auth learning, demo-auth restricted-role, demo-auth portals, demo-auth 3D Lab |
 | `bun run design:lint` | Validate root `DESIGN.md` against the Google Labs DESIGN.md spec |
 | `bun run storybook` | Run Storybook locally |
 | `bun run build-storybook` | Build Storybook static output |
 | `bun run check:storybook` | Storybook placeholder validation |
 | `bun run check:entitlements` | Entitlement legacy-usage check |
+| `bun run perf:inventory` | Generate the performance route/tooling/data-fetch inventory under `.ai/00_performance` |
+| `bun run perf:environment` | Capture local performance-audit environment metadata without env values |
+| `bun run perf:frontend` | Run Playwright route/user-flow performance measurements and write results/traces/screenshots under `.ai/00_performance` |
+| `bun run perf:api` | Benchmark safe static GET route handlers against `PERF_BASE_URL` |
+| `bun run perf:supabase` | Run the read-only Supabase query/static database performance inventory |
+| `bun run perf:build` | Measure build/typecheck timing and largest Next build artifacts |
+| `bun run perf:hotspots` | Run static component/function hotspot inventory |
+| `bun run perf:summary` | Synthesize `.ai/00_performance` reports from raw result JSON |
+| `bun run perf:compare` | Compare two frontend performance JSON baselines and write a machine-readable delta report |
+| `bun run perf:all` | Run the local performance audit sequence end to end |
 | `bun run db:seed` | Seed database via `scripts/seed.ts` |
 
 ### Important note on tests
 There is **no top-level `test` script** in `package.json` right now.
 
-The repository does contain many test files, and browser smoke plus demo-authenticated first-run, portal, and 3D Lab coverage is available through the explicit Playwright scripts above. `test:e2e:prod` is the built-app route smoke gate; `test:e2e:auth-demo` covers no-secret onboarding/auth-entry flows; `test:e2e:auth-demo:portals` covers authenticated admin, developer, and CEO surfaces on a fresh server; `test:e2e:auth-demo:3d-lab` isolates the slower 3D Lab browser route on its own fresh server. Any documentation or CI guidance should account for that explicitly instead of assuming a root test script exists.
+The repository does contain many test files, and browser smoke plus demo-authenticated first-run, seeded learning, restricted-role, portal, and 3D Lab coverage is available through the explicit Playwright scripts above. `test:e2e:prod` is the built-app route smoke gate; `test:e2e:auth-demo` covers no-secret onboarding/auth-entry flows; `test:e2e:auth-demo:learning` covers seeded drills and wiki learning flows on its own dedicated dev-server port; `test:e2e:auth-demo:restricted` covers authenticated-but-not-privileged denial behavior; `test:e2e:auth-demo:portals` covers authenticated admin, developer, and CEO surfaces on a fresh server; `test:e2e:auth-demo:3d-lab` isolates the slower 3D Lab browser route on its own fresh server. Any documentation or CI guidance should account for that explicitly instead of assuming a root test script exists.
 
 See `.ai/00_system/VALIDATION_MATRIX.md` for the current surface-by-surface validation contract.
+
+Performance audit outputs are centralized in `.ai/00_performance/`; start with `.ai/00_performance/README.md` before interpreting raw performance JSON, traces, or screenshots.
 
 ---
 

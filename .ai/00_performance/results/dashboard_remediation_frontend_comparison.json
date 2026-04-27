@@ -1,0 +1,870 @@
+{
+  "timestamp": "2026-04-27T00:20:31.498Z",
+  "baseFile": ".ai/00_performance/results/dev_server_frontend_baseline_before_built_app.json",
+  "candidateFile": ".ai/00_performance/results/dashboard_remediation_frontend_after.json",
+  "summary": {
+    "coldP50Ms": {
+      "base": 3469.43,
+      "candidate": 2367.51,
+      "delta": -1101.92,
+      "deltaPercent": -31.76
+    },
+    "coldP95Ms": {
+      "base": 25158.03,
+      "candidate": 16960.71,
+      "delta": -8197.32,
+      "deltaPercent": -32.58
+    },
+    "warmP50Ms": {
+      "base": 2150.45,
+      "candidate": 1629.76,
+      "delta": -520.7,
+      "deltaPercent": -24.21
+    },
+    "warmP95Ms": {
+      "base": 3964.51,
+      "candidate": 3526.06,
+      "delta": -438.45,
+      "deltaPercent": -11.06
+    },
+    "fcpP50Ms": {
+      "base": 262,
+      "candidate": 182,
+      "delta": -80,
+      "deltaPercent": -30.53
+    },
+    "fcpP95Ms": {
+      "base": 14184,
+      "candidate": 3551.2,
+      "delta": -10632.8,
+      "deltaPercent": -74.96
+    },
+    "lcpP50Ms": {
+      "base": 672,
+      "candidate": 236,
+      "delta": -436,
+      "deltaPercent": -64.88
+    },
+    "lcpP95Ms": {
+      "base": 15759.6,
+      "candidate": 4636.8,
+      "delta": -11122.8,
+      "deltaPercent": -70.58
+    },
+    "requestsP50": {
+      "base": 25,
+      "candidate": 25,
+      "delta": 0,
+      "deltaPercent": 0
+    },
+    "requestsP95": {
+      "base": 32.25,
+      "candidate": 33,
+      "delta": 0.75,
+      "deltaPercent": 2.33
+    },
+    "transferP50Bytes": {
+      "base": 3754537.5,
+      "candidate": 2986379,
+      "delta": -768158.5,
+      "deltaPercent": -20.46
+    },
+    "transferP95Bytes": {
+      "base": 8972953,
+      "candidate": 8714678,
+      "delta": -258275,
+      "deltaPercent": -2.88
+    }
+  },
+  "routes": {
+    "/": {
+      "coldP50Ms": {
+        "base": 3176.68,
+        "candidate": 2063.79,
+        "delta": -1112.88,
+        "deltaPercent": -35.03
+      },
+      "coldP95Ms": {
+        "base": 3314.62,
+        "candidate": 3226.28,
+        "delta": -88.35,
+        "deltaPercent": -2.67
+      },
+      "warmP50Ms": {
+        "base": 2841.26,
+        "candidate": 1635.16,
+        "delta": -1206.1,
+        "deltaPercent": -42.45
+      },
+      "warmP95Ms": {
+        "base": 3883.71,
+        "candidate": 2637.42,
+        "delta": -1246.29,
+        "deltaPercent": -32.09
+      },
+      "fcpP50Ms": {
+        "base": 1166,
+        "candidate": 342,
+        "delta": -824,
+        "deltaPercent": -70.67
+      },
+      "lcpP50Ms": {
+        "base": 1206,
+        "candidate": 342,
+        "delta": -864,
+        "deltaPercent": -71.64
+      },
+      "requestsP50": {
+        "base": 30,
+        "candidate": 28,
+        "delta": -2,
+        "deltaPercent": -6.67
+      },
+      "transferP50Bytes": {
+        "base": 3254318,
+        "candidate": 3734621,
+        "delta": 480303,
+        "deltaPercent": 14.76
+      },
+      "errorCount": {
+        "base": 8,
+        "candidate": 4,
+        "delta": -4,
+        "deltaPercent": -50
+      }
+    },
+    "/about": {
+      "coldP50Ms": {
+        "base": 2307.41,
+        "candidate": 1640.5,
+        "delta": -666.9,
+        "deltaPercent": -28.9
+      },
+      "coldP95Ms": {
+        "base": 2966.96,
+        "candidate": 3175.74,
+        "delta": 208.78,
+        "deltaPercent": 7.04
+      },
+      "warmP50Ms": {
+        "base": 1528.57,
+        "candidate": 1541.71,
+        "delta": 13.14,
+        "deltaPercent": 0.86
+      },
+      "warmP95Ms": {
+        "base": 1534.37,
+        "candidate": 1547.5,
+        "delta": 13.13,
+        "deltaPercent": 0.86
+      },
+      "fcpP50Ms": {
+        "base": 104,
+        "candidate": 102,
+        "delta": -2,
+        "deltaPercent": -1.92
+      },
+      "lcpP50Ms": {
+        "base": 104,
+        "candidate": 102,
+        "delta": -2,
+        "deltaPercent": -1.92
+      },
+      "requestsP50": {
+        "base": 24,
+        "candidate": 24,
+        "delta": 0,
+        "deltaPercent": 0
+      },
+      "transferP50Bytes": {
+        "base": 3486252.5,
+        "candidate": 3486186,
+        "delta": -66.5,
+        "deltaPercent": 0
+      },
+      "errorCount": {
+        "base": 0,
+        "candidate": 0,
+        "delta": 0,
+        "deltaPercent": null
+      }
+    },
+    "/auth/reset-password": {
+      "coldP50Ms": {
+        "base": 3582.08,
+        "candidate": 1771.95,
+        "delta": -1810.13,
+        "deltaPercent": -50.53
+      },
+      "coldP95Ms": {
+        "base": 5435.29,
+        "candidate": 4912.99,
+        "delta": -522.3,
+        "deltaPercent": -9.61
+      },
+      "warmP50Ms": {
+        "base": 1526.81,
+        "candidate": 1523.21,
+        "delta": -3.6,
+        "deltaPercent": -0.24
+      },
+      "warmP95Ms": {
+        "base": 1539.93,
+        "candidate": 1541.47,
+        "delta": 1.54,
+        "deltaPercent": 0.1
+      },
+      "fcpP50Ms": {
+        "base": 86,
+        "candidate": 86,
+        "delta": 0,
+        "deltaPercent": 0
+      },
+      "lcpP50Ms": {
+        "base": 86,
+        "candidate": 86,
+        "delta": 0,
+        "deltaPercent": 0
+      },
+      "requestsP50": {
+        "base": 20,
+        "candidate": 20,
+        "delta": 0,
+        "deltaPercent": 0
+      },
+      "transferP50Bytes": {
+        "base": 4151217.5,
+        "candidate": 4151146,
+        "delta": -71.5,
+        "deltaPercent": 0
+      },
+      "errorCount": {
+        "base": 0,
+        "candidate": 0,
+        "delta": 0,
+        "deltaPercent": null
+      }
+    },
+    "/contact": {
+      "coldP50Ms": {
+        "base": 3073.89,
+        "candidate": 1523.26,
+        "delta": -1550.63,
+        "deltaPercent": -50.45
+      },
+      "coldP95Ms": {
+        "base": 4411.44,
+        "candidate": 3375.4,
+        "delta": -1036.04,
+        "deltaPercent": -23.49
+      },
+      "warmP50Ms": {
+        "base": 1577.1,
+        "candidate": 1568.09,
+        "delta": -9.01,
+        "deltaPercent": -0.57
+      },
+      "warmP95Ms": {
+        "base": 1588.43,
+        "candidate": 1577.04,
+        "delta": -11.39,
+        "deltaPercent": -0.72
+      },
+      "fcpP50Ms": {
+        "base": 130,
+        "candidate": 118,
+        "delta": -12,
+        "deltaPercent": -9.23
+      },
+      "lcpP50Ms": {
+        "base": 130,
+        "candidate": 118,
+        "delta": -12,
+        "deltaPercent": -9.23
+      },
+      "requestsP50": {
+        "base": 24,
+        "candidate": 24,
+        "delta": 0,
+        "deltaPercent": 0
+      },
+      "transferP50Bytes": {
+        "base": 3571378,
+        "candidate": 3571310.5,
+        "delta": -67.5,
+        "deltaPercent": 0
+      },
+      "errorCount": {
+        "base": 0,
+        "candidate": 0,
+        "delta": 0,
+        "deltaPercent": null
+      }
+    },
+    "/dashboard": {
+      "coldP50Ms": {
+        "base": 10265.16,
+        "candidate": 3504.37,
+        "delta": -6760.79,
+        "deltaPercent": -65.86
+      },
+      "coldP95Ms": {
+        "base": 15045.66,
+        "candidate": 3924.63,
+        "delta": -11121.03,
+        "deltaPercent": -73.92
+      },
+      "warmP50Ms": {
+        "base": 2985.79,
+        "candidate": 2157.44,
+        "delta": -828.35,
+        "deltaPercent": -27.74
+      },
+      "warmP95Ms": {
+        "base": 3808.1,
+        "candidate": 3505.49,
+        "delta": -302.6,
+        "deltaPercent": -7.95
+      },
+      "fcpP50Ms": {
+        "base": 348,
+        "candidate": 296,
+        "delta": -52,
+        "deltaPercent": -14.94
+      },
+      "lcpP50Ms": {
+        "base": 1446,
+        "candidate": 706,
+        "delta": -740,
+        "deltaPercent": -51.18
+      },
+      "requestsP50": {
+        "base": 28,
+        "candidate": 30,
+        "delta": 2,
+        "deltaPercent": 7.14
+      },
+      "transferP50Bytes": {
+        "base": 5401370.5,
+        "candidate": 5509546.5,
+        "delta": 108176,
+        "deltaPercent": 2
+      },
+      "errorCount": {
+        "base": 4,
+        "candidate": 4,
+        "delta": 0,
+        "deltaPercent": 0
+      }
+    },
+    "/dashboard/3d-lab": {
+      "coldP50Ms": {
+        "base": 14662.12,
+        "candidate": 9.95,
+        "delta": -14652.17,
+        "deltaPercent": -99.93
+      },
+      "coldP95Ms": {
+        "base": 24417.21,
+        "candidate": 54146.15,
+        "delta": 29728.94,
+        "deltaPercent": 121.75
+      },
+      "warmP50Ms": {
+        "base": 2733.73,
+        "candidate": 10.38,
+        "delta": -2723.35,
+        "deltaPercent": -99.62
+      },
+      "warmP95Ms": {
+        "base": 3320.97,
+        "candidate": 13.89,
+        "delta": -3307.07,
+        "deltaPercent": -99.58
+      },
+      "fcpP50Ms": {
+        "base": 368,
+        "candidate": 0,
+        "delta": -368,
+        "deltaPercent": -100
+      },
+      "lcpP50Ms": {
+        "base": 722,
+        "candidate": null,
+        "delta": null,
+        "deltaPercent": null
+      },
+      "requestsP50": {
+        "base": 25,
+        "candidate": 0,
+        "delta": -25,
+        "deltaPercent": -100
+      },
+      "transferP50Bytes": {
+        "base": 7581793.5,
+        "candidate": 0,
+        "delta": -7581793.5,
+        "deltaPercent": -100
+      },
+      "errorCount": {
+        "base": 3,
+        "candidate": 15,
+        "delta": 12,
+        "deltaPercent": 400
+      }
+    },
+    "/dashboard/analytics": {
+      "coldP50Ms": {
+        "base": 13509.35,
+        "candidate": 5795.82,
+        "delta": -7713.53,
+        "deltaPercent": -57.1
+      },
+      "coldP95Ms": {
+        "base": 23419.72,
+        "candidate": 42493.3,
+        "delta": 19073.58,
+        "deltaPercent": 81.44
+      },
+      "warmP50Ms": {
+        "base": 2346.54,
+        "candidate": 2632.96,
+        "delta": 286.42,
+        "deltaPercent": 12.21
+      },
+      "warmP95Ms": {
+        "base": 2418.71,
+        "candidate": 3193.29,
+        "delta": 774.59,
+        "deltaPercent": 32.02
+      },
+      "fcpP50Ms": {
+        "base": 278,
+        "candidate": 580,
+        "delta": 302,
+        "deltaPercent": 108.63
+      },
+      "lcpP50Ms": {
+        "base": 1096,
+        "candidate": 1248,
+        "delta": 152,
+        "deltaPercent": 13.87
+      },
+      "requestsP50": {
+        "base": 32,
+        "candidate": 33,
+        "delta": 1,
+        "deltaPercent": 3.13
+      },
+      "transferP50Bytes": {
+        "base": 5967061.5,
+        "candidate": 6617219.5,
+        "delta": 650158,
+        "deltaPercent": 10.9
+      },
+      "errorCount": {
+        "base": 30,
+        "candidate": 32,
+        "delta": 2,
+        "deltaPercent": 6.67
+      }
+    },
+    "/dashboard/settings": {
+      "coldP50Ms": {
+        "base": 6640.06,
+        "candidate": 2111.98,
+        "delta": -4528.07,
+        "deltaPercent": -68.19
+      },
+      "coldP95Ms": {
+        "base": 9368.09,
+        "candidate": 13662.26,
+        "delta": 4294.18,
+        "deltaPercent": 45.84
+      },
+      "warmP50Ms": {
+        "base": 2111.46,
+        "candidate": 2052.5,
+        "delta": -58.96,
+        "deltaPercent": -2.79
+      },
+      "warmP95Ms": {
+        "base": 2208.84,
+        "candidate": 2066.19,
+        "delta": -142.65,
+        "deltaPercent": -6.46
+      },
+      "fcpP50Ms": {
+        "base": 266,
+        "candidate": 202,
+        "delta": -64,
+        "deltaPercent": -24.06
+      },
+      "lcpP50Ms": {
+        "base": 606,
+        "candidate": 724,
+        "delta": 118,
+        "deltaPercent": 19.47
+      },
+      "requestsP50": {
+        "base": 26,
+        "candidate": 26,
+        "delta": 0,
+        "deltaPercent": 0
+      },
+      "transferP50Bytes": {
+        "base": 5833381,
+        "candidate": 5834922,
+        "delta": 1541,
+        "deltaPercent": 0.03
+      },
+      "errorCount": {
+        "base": 0,
+        "candidate": 0,
+        "delta": 0,
+        "deltaPercent": null
+      }
+    },
+    "/dashboard/wiki": {
+      "coldP50Ms": {
+        "base": 9300.99,
+        "candidate": 2170.32,
+        "delta": -7130.66,
+        "deltaPercent": -76.67
+      },
+      "coldP95Ms": {
+        "base": 14908.57,
+        "candidate": 15577.12,
+        "delta": 668.55,
+        "deltaPercent": 4.48
+      },
+      "warmP50Ms": {
+        "base": 8969.73,
+        "candidate": 2159.62,
+        "delta": -6810.12,
+        "deltaPercent": -75.92
+      },
+      "warmP95Ms": {
+        "base": 15287.83,
+        "candidate": 4517.19,
+        "delta": -10770.63,
+        "deltaPercent": -70.45
+      },
+      "fcpP50Ms": {
+        "base": 4668,
+        "candidate": 242,
+        "delta": -4426,
+        "deltaPercent": -94.82
+      },
+      "lcpP50Ms": {
+        "base": 5258,
+        "candidate": 724,
+        "delta": -4534,
+        "deltaPercent": -86.23
+      },
+      "requestsP50": {
+        "base": 30,
+        "candidate": 28,
+        "delta": -2,
+        "deltaPercent": -6.67
+      },
+      "transferP50Bytes": {
+        "base": 6730378,
+        "candidate": 5386177,
+        "delta": -1344201,
+        "deltaPercent": -19.97
+      },
+      "errorCount": {
+        "base": 10,
+        "candidate": 6,
+        "delta": -4,
+        "deltaPercent": -40
+      }
+    },
+    "/forgot-password": {
+      "coldP50Ms": {
+        "base": 2654.63,
+        "candidate": 1594.03,
+        "delta": -1060.6,
+        "deltaPercent": -39.95
+      },
+      "coldP95Ms": {
+        "base": 3651.86,
+        "candidate": 2725.24,
+        "delta": -926.61,
+        "deltaPercent": -25.37
+      },
+      "warmP50Ms": {
+        "base": 1589.69,
+        "candidate": 1533.73,
+        "delta": -55.96,
+        "deltaPercent": -3.52
+      },
+      "warmP95Ms": {
+        "base": 1591.38,
+        "candidate": 1539.58,
+        "delta": -51.8,
+        "deltaPercent": -3.25
+      },
+      "fcpP50Ms": {
+        "base": 140,
+        "candidate": 84,
+        "delta": -56,
+        "deltaPercent": -40
+      },
+      "lcpP50Ms": {
+        "base": 140,
+        "candidate": 84,
+        "delta": -56,
+        "deltaPercent": -40
+      },
+      "requestsP50": {
+        "base": 21,
+        "candidate": 21,
+        "delta": 0,
+        "deltaPercent": 0
+      },
+      "transferP50Bytes": {
+        "base": 4200430.5,
+        "candidate": 4200365,
+        "delta": -65.5,
+        "deltaPercent": 0
+      },
+      "errorCount": {
+        "base": 0,
+        "candidate": 0,
+        "delta": 0,
+        "deltaPercent": null
+      }
+    },
+    "/login": {
+      "coldP50Ms": {
+        "base": 6227.78,
+        "candidate": 2602.71,
+        "delta": -3625.07,
+        "deltaPercent": -58.21
+      },
+      "coldP95Ms": {
+        "base": 8969.36,
+        "candidate": 8454.66,
+        "delta": -514.7,
+        "deltaPercent": -5.74
+      },
+      "warmP50Ms": {
+        "base": 3188.41,
+        "candidate": 2587.06,
+        "delta": -601.35,
+        "deltaPercent": -18.86
+      },
+      "warmP95Ms": {
+        "base": 3627.06,
+        "candidate": 2691.23,
+        "delta": -935.84,
+        "deltaPercent": -25.8
+      },
+      "fcpP50Ms": {
+        "base": 282,
+        "candidate": 200,
+        "delta": -82,
+        "deltaPercent": -29.08
+      },
+      "lcpP50Ms": {
+        "base": 712,
+        "candidate": 584,
+        "delta": -128,
+        "deltaPercent": -17.98
+      },
+      "requestsP50": {
+        "base": 30,
+        "candidate": 30,
+        "delta": 0,
+        "deltaPercent": 0
+      },
+      "transferP50Bytes": {
+        "base": 4992136.5,
+        "candidate": 2956373,
+        "delta": -2035763.5,
+        "deltaPercent": -40.78
+      },
+      "errorCount": {
+        "base": 2,
+        "candidate": 1,
+        "delta": -1,
+        "deltaPercent": -50
+      }
+    },
+    "/pricing": {
+      "coldP50Ms": {
+        "base": 14212.24,
+        "candidate": 1556.51,
+        "delta": -12655.72,
+        "deltaPercent": -89.05
+      },
+      "coldP95Ms": {
+        "base": 25584.03,
+        "candidate": 9433.31,
+        "delta": -16150.72,
+        "deltaPercent": -63.13
+      },
+      "warmP50Ms": {
+        "base": 2581.28,
+        "candidate": 1561.93,
+        "delta": -1019.35,
+        "deltaPercent": -39.49
+      },
+      "warmP95Ms": {
+        "base": 2763.76,
+        "candidate": 2521.68,
+        "delta": -242.08,
+        "deltaPercent": -8.76
+      },
+      "fcpP50Ms": {
+        "base": 724,
+        "candidate": 108,
+        "delta": -616,
+        "deltaPercent": -85.08
+      },
+      "lcpP50Ms": {
+        "base": 724,
+        "candidate": 108,
+        "delta": -616,
+        "deltaPercent": -85.08
+      },
+      "requestsP50": {
+        "base": 25,
+        "candidate": 25,
+        "delta": 0,
+        "deltaPercent": 0
+      },
+      "transferP50Bytes": {
+        "base": 4152599,
+        "candidate": 4152532,
+        "delta": -67,
+        "deltaPercent": 0
+      },
+      "errorCount": {
+        "base": 0,
+        "candidate": 0,
+        "delta": 0,
+        "deltaPercent": null
+      }
+    },
+    "/register": {
+      "coldP50Ms": {
+        "base": 7945.69,
+        "candidate": 2638.82,
+        "delta": -5306.87,
+        "deltaPercent": -66.79
+      },
+      "coldP95Ms": {
+        "base": 12660.62,
+        "candidate": 4596.03,
+        "delta": -8064.59,
+        "deltaPercent": -63.7
+      },
+      "warmP50Ms": {
+        "base": 2608.56,
+        "candidate": 2574.14,
+        "delta": -34.42,
+        "deltaPercent": -1.32
+      },
+      "warmP95Ms": {
+        "base": 2619.18,
+        "candidate": 3443.68,
+        "delta": 824.5,
+        "deltaPercent": 31.48
+      },
+      "fcpP50Ms": {
+        "base": 226,
+        "candidate": 208,
+        "delta": -18,
+        "deltaPercent": -7.96
+      },
+      "lcpP50Ms": {
+        "base": 674,
+        "candidate": 540,
+        "delta": -134,
+        "deltaPercent": -19.88
+      },
+      "requestsP50": {
+        "base": 30,
+        "candidate": 30,
+        "delta": 0,
+        "deltaPercent": 0
+      },
+      "transferP50Bytes": {
+        "base": 4992139.5,
+        "candidate": 4992726.5,
+        "delta": 587,
+        "deltaPercent": 0.01
+      },
+      "errorCount": {
+        "base": 0,
+        "candidate": 0,
+        "delta": 0,
+        "deltaPercent": null
+      }
+    },
+    "/try": {
+      "coldP50Ms": {
+        "base": 2352.18,
+        "candidate": 1508.85,
+        "delta": -843.33,
+        "deltaPercent": -35.85
+      },
+      "coldP95Ms": {
+        "base": 3104.12,
+        "candidate": 2634.26,
+        "delta": -469.86,
+        "deltaPercent": -15.14
+      },
+      "warmP50Ms": {
+        "base": 2157.14,
+        "candidate": 1562.85,
+        "delta": -594.29,
+        "deltaPercent": -27.55
+      },
+      "warmP95Ms": {
+        "base": 2694.91,
+        "candidate": 1592.28,
+        "delta": -1102.63,
+        "deltaPercent": -40.92
+      },
+      "fcpP50Ms": {
+        "base": 144,
+        "candidate": 98,
+        "delta": -46,
+        "deltaPercent": -31.94
+      },
+      "lcpP50Ms": {
+        "base": 144,
+        "candidate": 98,
+        "delta": -46,
+        "deltaPercent": -31.94
+      },
+      "requestsP50": {
+        "base": 21,
+        "candidate": 21,
+        "delta": 0,
+        "deltaPercent": 0
+      },
+      "transferP50Bytes": {
+        "base": 3773461,
+        "candidate": 3773396.5,
+        "delta": -64.5,
+        "deltaPercent": 0
+      },
+      "errorCount": {
+        "base": 0,
+        "candidate": 0,
+        "delta": 0,
+        "deltaPercent": null
+      }
+    }
+  },
+  "notes": [
+    "This script compares Playwright frontend_navigation_results-style JSON files.",
+    "A negative delta means the candidate was lower/faster/smaller than the base.",
+    "Interpret auth-gated routes carefully: finalUrl may redirect to login in built-app runs without build-time demo auth or safe credentials."
+  ]
+}

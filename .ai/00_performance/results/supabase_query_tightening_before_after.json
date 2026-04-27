@@ -1,0 +1,95 @@
+{
+  "timestamp": "2026-04-27T00:10:50.759Z",
+  "beforeFile": ".ai/00_performance/results/supabase_query_tightening_before.json",
+  "afterFile": ".ai/00_performance/results/supabase_query_tightening_after.json",
+  "summary": {
+    "selectStarBefore": 19,
+    "selectStarAfter": 9,
+    "selectStarDelta": -10,
+    "unboundedReadCandidatesBefore": 160,
+    "unboundedReadCandidatesAfter": 160,
+    "unboundedReadCandidatesDelta": 0,
+    "totalQueryBlocksBefore": 536,
+    "totalQueryBlocksAfter": 538
+  },
+  "changedQueries": [
+    {
+      "file": "src/lib/actions/analytics-data.ts",
+      "change": "Session-history interactions are now restricted to the 30 selected session IDs instead of all user interactions."
+    },
+    {
+      "file": "src/lib/actions/wiki-actions.ts",
+      "change": "Wiki article/taxonomy select-star calls now use explicit column lists; article sibling fetch is capped at 100 siblings."
+    },
+    {
+      "file": "src/lib/actions/quiz-v2/successive-relearning.ts",
+      "change": "successive_relearning_cycles select-star reads/update returns now use SR_CYCLE_COLUMNS."
+    }
+  ],
+  "removedSelectStarCandidates": [
+    {
+      "file": "src/lib/actions/quiz-v2/successive-relearning.ts",
+      "line": 67,
+      "table": "successive_relearning_cycles",
+      "snippet": ".from('successive_relearning_cycles') .select('*') .eq('user_id', userId) .eq('topic_id', topicId) .maybeSingle() let cycle: SRCycle if (!existing) { const { data: created, error: createError } = await supabase .from('successive_relearning_cycles') .insert({ user_id: userId, topic_id: topicId,"
+    },
+    {
+      "file": "src/lib/actions/quiz-v2/successive-relearning.ts",
+      "line": 114,
+      "table": "successive_relearning_cycles",
+      "snippet": ".from('successive_relearning_cycles') .update({ status: 'spacing', consecutive_correct: newCount, spacing_level: spacingLevel, current_spacing_interval: intervalDays, next_retest_at: nextRetest.toISOString(), updated_at: now, }) .eq('id', cycle.id) .select('*') .single()"
+    },
+    {
+      "file": "src/lib/actions/quiz-v2/successive-relearning.ts",
+      "line": 147,
+      "table": "successive_relearning_cycles",
+      "snippet": ".from('successive_relearning_cycles') .update({ consecutive_correct: 0, updated_at: now, }) .eq('id', cycle.id) .select('*') .single() if (error || !updated) throw new Error('Failed to update SR cycle') cycle = updated as SRCycle } } else if (cycle.status === 'spacing') {"
+    },
+    {
+      "file": "src/lib/actions/quiz-v2/successive-relearning.ts",
+      "line": 188,
+      "table": "successive_relearning_cycles",
+      "snippet": ".from('successive_relearning_cycles') .update({ spacing_level: nextLevel, current_spacing_interval: intervalDays, next_retest_at: nextRetest.toISOString(), updated_at: now, }) .eq('id', cycle.id) .select('*') .single() if (error || !updated) throw new Error('Failed to update SR cycle') cycle = updated as SRCycle"
+    },
+    {
+      "file": "src/lib/actions/quiz-v2/successive-relearning.ts",
+      "line": 289,
+      "table": "successive_relearning_cycles",
+      "snippet": ".from('successive_relearning_cycles') .select('status') .eq('user_id', userId) if (error) throw error const cycles = (data ?? []) as Array<{ status: string }> const counts = { active: 0, spacing: 0, durable: 0, reset: 0 } for (const c of cycles) { if (c.status === 'active') counts.active++ else if (c.status === 'spacing') counts.spacing++ else if (c.status === 'durable') counts.durable++ else if (c.status === 'reset') counts.reset++ }"
+    },
+    {
+      "file": "src/lib/actions/wiki-actions.ts",
+      "line": 96,
+      "table": "wiki_article_sources",
+      "snippet": ".from('wiki_article_sources') .select('source_id, label, description, url, source_type, sort_order') .eq('article_id', articleId) .order('sort_order', { ascending: true }) if (error) { console.error('[getArticleSources] Error:', error.message) return [] } return (data ?? []) as WikiArticleSource[] } /** * Fetch a single wiki article by slug."
+    },
+    {
+      "file": "src/lib/actions/wiki-actions.ts",
+      "line": 179,
+      "table": "wiki_articles",
+      "snippet": ".from(\"wiki_articles\") .select(\"*\") .eq(\"article_id\", articleId) .eq(\"status\", \"published\") .maybeSingle(); if (articleError) { console.error(`[getWikiArticleByTaxonomySlug] Error fetching article content for id \"${articleId}\":`, articleError.message) return null; } return article as WikiArticle; } /**"
+    },
+    {
+      "file": "src/lib/actions/wiki-actions.ts",
+      "line": 284,
+      "table": "wiki_articles",
+      "snippet": ".from(\"wiki_articles\") .select(\"article_id\") .eq(\"slug\", slug) .maybeSingle(); if (article) { const { data: junction } = await supabase .from(\"wiki_article_taxonomy\") .select(\"node_id\") .eq(\"article_id\", article.article_id) .eq(\"is_primary\", true) .maybeSingle(); const nodeId = junction?.node_id;"
+    },
+    {
+      "file": "src/lib/actions/wiki-actions.ts",
+      "line": 326,
+      "table": "taxonomy_tree",
+      "snippet": ".from(\"taxonomy_tree\") .select(\"*\") .eq(\"slug\", slug) .maybeSingle(); if (directNode) return directNode as TaxonomyNode; return null; } /** * Resolve both the wiki article and the taxonomy node for a given slug in a * single efficient query chain, reusing intermediate results. * * - If the slug matches a wiki_articles.slug, the article is fetched first,"
+    },
+    {
+      "file": "src/lib/actions/wiki-actions.ts",
+      "line": 524,
+      "table": "taxonomy_tree",
+      "snippet": ".from('taxonomy_tree') .select('parent_id, sort_order, discipline_id, level') .eq('node_id', nodeId) .single() if (currentError || !currentNode) return { prev: null, next: null } // 2. Fetch all siblings in the same discipline and level with the same parent const { data: siblings, error: siblingsError } = await supabase .from('taxonomy_tree') .select('*') .eq('parent_id', currentNode.parent_id) .eq('discipline_id', currentNode.discipline_id) .eq('level', currentNode.level)"
+    }
+  ],
+  "notes": [
+    "Static inventory does not prove live latency improvement; live Supabase timing remains blocked without a safe read-only credentialed plan.",
+    "Unbounded candidate count did not change because this pass prioritized select-star removal and one scoped interaction query whose scanner still classifies other broad reads separately."
+  ]
+}

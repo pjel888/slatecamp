@@ -1,0 +1,50 @@
+Command: bun test src/lib/actions/dashboard-page.test.ts
+Working directory: /Users/philiplewis/slatecamp
+Start: 2026-04-27T00:08:39Z
+
+bun test v1.3.10 (30e609e0)
+
+src/lib/actions/dashboard-page.test.ts:
+(pass) getDashboardPageData — unauthenticated path > returns emptyDashboard when user is null [1.07ms]
+(pass) getDashboardPageData — unauthenticated path > readinessScore defaults to 0
+(pass) getDashboardPageData — unauthenticated path > previousScore defaults to null
+(pass) getDashboardPageData — unauthenticated path > examDate defaults to null
+(pass) getDashboardPageData — unauthenticated path > daysUntilExam defaults to null
+(pass) getDashboardPageData — unauthenticated path > syllabusCoveragePercent defaults to 0
+(pass) getDashboardPageData — unauthenticated path > readinessMeta defaults to null
+(pass) getDashboardPageData — unauthenticated path > focusAreas defaults to empty array
+(pass) getDashboardPageData — unauthenticated path > subjectMastery defaults to empty array
+(pass) getDashboardPageData — unauthenticated path > subjectFloorAlerts defaults to empty array
+(pass) getDashboardPageData — unauthenticated path > recentSessions defaults to empty array
+(pass) getDashboardPageData — unauthenticated path > recentNotes defaults to empty array
+(pass) getDashboardPageData — unauthenticated path > inProgressSession defaults to null
+(pass) getDashboardPageData — unauthenticated path > dailyArticle defaults to null
+(pass) getDashboardPageData — unauthenticated path > labModuleCount defaults to 0
+(pass) getDashboardPageData — unauthenticated path > scoreUpdatesSinceReveal defaults to 0
+(pass) getDashboardPageData — unauthenticated path > isFreeUser defaults to true
+(pass) getDashboardPageData — unauthenticated path > activeTrailDay defaults to null
+(pass) getDashboardPageData — unauthenticated path > onboardingState defaults to needs_assessment
+(pass) getDashboardSyncPayload — unauthenticated path > returns only the minimal sync payload defaults [0.13ms]
+(pass) emptyDashboard — heroStats shape > heroStats contains exactly 3 entries
+(pass) emptyDashboard — heroStats shape > all heroStat values are 0
+(pass) emptyDashboard — heroStats shape > all heroStat deltas are null
+(pass) emptyDashboard — heroStats shape > heroStats labels match expected values
+(pass) emptyDashboard — weekStats shape > weekStats contains exactly 3 entries
+(pass) emptyDashboard — weekStats shape > all weekStat values are 0
+(pass) emptyDashboard — weekStats shape > all weekStat deltas are null [0.43ms]
+(pass) emptyDashboard — streak shape > streak.currentStreak defaults to 0 [0.03ms]
+(pass) emptyDashboard — streak shape > streak.longestStreak defaults to 0
+(pass) emptyDashboard — streak shape > streak.streakStatus defaults to broken
+(pass) emptyDashboard — srsReview shape > srsReview.itemsDue defaults to 0
+(pass) emptyDashboard — srsReview shape > srsReview.subjects defaults to empty array
+(pass) emptyDashboard — srsReview shape > srsReview.estimatedMinutes defaults to 0
+(pass) emptyDashboard — action shape > action.type is warmup when no data [0.16ms]
+(pass) emptyDashboard — action shape > action.href points to camp mode
+(pass) emptyDashboard — action shape > action.estimatedMinutes is a positive number
+(pass) emptyDashboard — action shape > action contains required string fields
+(pass) emptyDashboard — userName fallback > userName falls back to 'there' when user is null
+
+ 38 pass
+ 0 fail
+ 58 expect() calls
+Ran 38 tests across 1 file. [279.00ms]

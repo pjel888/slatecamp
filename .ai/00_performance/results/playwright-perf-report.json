@@ -1,0 +1,173 @@
+{
+  "config": {
+    "configFile": "/Users/philiplewis/slatecamp/.ai/00_performance/playwright/playwright.perf.config.ts",
+    "rootDir": "/Users/philiplewis/slatecamp/.ai/00_performance/playwright",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/philiplewis/slatecamp/.ai/00_performance/playwright/test-output",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/philiplewis/slatecamp/.ai/00_performance/playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "perf.spec.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "../results/playwright-perf-report.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "never",
+          "outputFolder": "../playwright/html-report"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 1,
+    "webServer": {
+      "command": "bun scripts/playwright-web-server.ts",
+      "cwd": "/Users/philiplewis/slatecamp",
+      "url": "http://localhost:3217",
+      "reuseExistingServer": false,
+      "timeout": 120000,
+      "env": {
+        "PLAYWRIGHT_DEMO_AUTH": "true",
+        "NVM_INC": "/Users/philiplewis/.nvm/versions/node/v25.8.0/include/node",
+        "OMX_ENTRY_PATH": "/Users/philiplewis/.nvm/versions/node/v25.8.0/lib/node_modules/oh-my-codex/dist/cli/omx.js",
+        "PERF_USER_FLOWS": "false",
+        "TERM_PROGRAM": "vscode",
+        "NODE": "/Users/philiplewis/.nvm/versions/node/v25.8.0/bin/node",
+        "NVM_CD_FLAGS": "-q",
+        "TERM": "xterm-256color",
+        "SHELL": "/bin/zsh",
+        "TMPDIR": "/var/folders/bn/7b1mmzfj6j52jkpfny_33f840000gn/T/",
+        "HOMEBREW_REPOSITORY": "/opt/homebrew",
+        "VSCODE_PYTHON_AUTOACTIVATE_GUARD": "1",
+        "TERM_PROGRAM_VERSION": "1.117.0",
+        "FPATH": "/opt/homebrew/share/zsh/site-functions:/opt/homebrew/share/zsh/site-functions:/opt/homebrew/share/zsh/site-functions:/opt/homebrew/share/zsh/site-functions:/opt/homebrew/share/zsh/site-functions:/opt/homebrew/share/zsh/site-functions:/opt/homebrew/share/zsh/site-functions:/opt/homebrew/share/zsh/site-functions:/usr/local/share/zsh/site-functions:/usr/share/zsh/site-functions:/usr/share/zsh/5.9/functions",
+        "ZDOTDIR": "/Users/philiplewis",
+        "MallocNanoZone": "0",
+        "NO_COLOR": "1",
+        "npm_config_local_prefix": "/Users/philiplewis/slatecamp",
+        "PNPM_HOME": "/Users/philiplewis/Library/pnpm",
+        "LC_ALL": "C.UTF-8",
+        "USER": "philiplewis",
+        "NVM_DIR": "/Users/philiplewis/.nvm",
+        "COMMAND_MODE": "unix2003",
+        "SSH_AUTH_SOCK": "/private/tmp/com.apple.launchd.zOEyHjr63G/Listeners",
+        "__CF_USER_TEXT_ENCODING": "0x1F5:0x0:0x0",
+        "VSCODE_PROFILE_INITIALIZED": "1",
+        "npm_execpath": "/Users/philiplewis/.bun/bin/bun",
+        "PAGER": "cat",
+        "PYDEVD_DISABLE_FILE_VALIDATION": "1",
+        "PATH": "/var/folders/bn/7b1mmzfj6j52jkpfny_33f840000gn/T/bunx-501-playwright@latest/node_modules/.bin:/Users/philiplewis/slatecamp/node_modules/.bin:/Users/philiplewis/slatecamp/node_modules/.bin:/Users/philiplewis/node_modules/.bin:/Users/node_modules/.bin:/node_modules/.bin:/Users/philiplewis/slatecamp/node_modules/.bin:/Users/philiplewis/slatecamp/node_modules/.bin:/Users/philiplewis/node_modules/.bin:/Users/node_modules/.bin:/node_modules/.bin:/Users/philiplewis/.cargo/bin:/Users/philiplewis/.codex/tmp/arg0/codex-arg0qXHenJ:/Users/philiplewis/.opencode/bin:/Users/philiplewis/.local/bin:/Users/philiplewis/.antigravity/antigravity/bin:/Users/philiplewis/Library/pnpm:/Users/philiplewis/.bun/bin:/Users/philiplewis/Library/Android/sdk/platform-tools:/Users/philiplewis/.nvm/versions/node/v25.8.0/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin:/usr/local/go/bin:/Users/philiplewis/.nvm/versions/node/v18.11.0/bin:/Users/philiplewis/.nvm/versions/node/v18.11.0/bin:/opt/homebrew/Cellar/node/25.9.0_2/bin",
+        "npm_package_json": "/Users/philiplewis/slatecamp/package.json",
+        "_": "/Users/philiplewis/.bun/bin/bunx",
+        "__CFBundleIdentifier": "com.microsoft.VSCode",
+        "USER_ZDOTDIR": "/Users/philiplewis",
+        "CODEX_THREAD_ID": "019dcace-d9e7-7c73-ae00-48ba9fe907a9",
+        "npm_command": "exec",
+        "PWD": "/Users/philiplewis/slatecamp",
+        "JAVA_HOME": "/Users/philiplewis/jdk-15.0.2.jdk/Contents/Home",
+        "npm_lifecycle_event": "bunx",
+        "EDITOR": "code --wait",
+        "npm_package_name": "slatecamp",
+        "LANG": "C.UTF-8",
+        "PYTHONSTARTUP": "/Users/philiplewis/Library/Application Support/Code/User/workspaceStorage/77ce5c4c0bf18ffefa6d769c3caef0f0/ms-python.python/pythonrc.py",
+        "BUNDLED_DEBUGPY_PATH": "/Users/philiplewis/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/bundled/libs/debugpy",
+        "XPC_FLAGS": "0x0",
+        "VSCODE_GIT_ASKPASS_EXTRA_ARGS": "",
+        "OMX_SESSION_ID": "omx-1777224044957-wbk7n2",
+        "CODEX_CI": "1",
+        "npm_package_version": "0.1.0",
+        "XPC_SERVICE_NAME": "0",
+        "VSCODE_INJECTION": "1",
+        "VSCODE_DEBUGPY_ADAPTER_ENDPOINTS": "/Users/philiplewis/.vscode/extensions/ms-python.debugpy-2025.18.0-darwin-arm64/.noConfigDebugAdapterEndpoints/endpoint-4b392cc3272403fa.txt",
+        "SHLVL": "3",
+        "OMX_STARTUP_CWD": "/Users/philiplewis/slatecamp",
+        "HOME": "/Users/philiplewis",
+        "VSCODE_GIT_ASKPASS_MAIN": "/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/git/dist/askpass-main.js",
+        "PYTHON_BASIC_REPL": "1",
+        "HOMEBREW_PREFIX": "/opt/homebrew",
+        "GH_PAGER": "cat",
+        "PROMPT": "${COLOR_DIR}%d ${COLOR_GIT}$(parse_git_branch)${COLOR_DEF}${NEWLINE}%% ",
+        "LOGNAME": "philiplewis",
+        "npm_lifecycle_script": "playwright",
+        "PERF_ROUTE_FILTER": "/dashboard/3d-lab",
+        "PLAYWRIGHT_USE_BUILT_APP": "true",
+        "VISUAL": "code --wait",
+        "VSCODE_GIT_IPC_HANDLE": "/var/folders/bn/7b1mmzfj6j52jkpfny_33f840000gn/T/vscode-git-12ef085c5b.sock",
+        "LC_CTYPE": "C.UTF-8",
+        "NVM_BIN": "/Users/philiplewis/.nvm/versions/node/v25.8.0/bin",
+        "BUN_INSTALL": "/Users/philiplewis/.bun",
+        "npm_config_user_agent": "bun/1.3.10 npm/? node/v24.3.0 darwin arm64",
+        "VSCODE_GIT_ASKPASS_NODE": "/Applications/Visual Studio Code.app/Contents/Frameworks/Code Helper (Plugin).app/Contents/MacOS/Code Helper (Plugin)",
+        "INFOPATH": "/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:/opt/homebrew/share/info:",
+        "HOMEBREW_CELLAR": "/opt/homebrew/Cellar",
+        "GIT_ASKPASS": "/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/git/dist/askpass.sh",
+        "OSLogRateLimit": "64",
+        "GIT_PAGER": "cat",
+        "npm_node_execpath": "/Users/philiplewis/.nvm/versions/node/v25.8.0/bin/node",
+        "OMX_TEAM_WORKER_LAUNCH_ARGS": "--dangerously-bypass-approvals-and-sandbox -c model_reasoning_effort=\"high\"",
+        "COLORTERM": "truecolor",
+        "ALLOW_DEV_PORTAL_BYPASS": "false",
+        "DEV_FORCE_USER_ID": "",
+        "DISABLE_DEV_FORCE_USER_ID": "true",
+        "NEXT_PUBLIC_APP_URL": "http://localhost:3217",
+        "NEXT_PUBLIC_ENABLE_DEMO_MODE": "true",
+        "NEXT_PUBLIC_PAYMENTS_ENABLED": "false",
+        "NEXT_PUBLIC_SUPABASE_ANON_KEY": "ci-anon-key",
+        "NEXT_PUBLIC_SUPABASE_URL": "https://hrpdwqurngnyajuhbkdg.supabase.co"
+      }
+    }
+  },
+  "suites": [],
+  "errors": [
+    {
+      "message": "Error: Process from config.webServer was not able to start. Exit code: 1",
+      "stack": "Error: Process from config.webServer was not able to start. Exit code: 1"
+    }
+  ],
+  "stats": {
+    "startTime": "2026-04-27T02:10:31.718Z",
+    "duration": 586.458,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

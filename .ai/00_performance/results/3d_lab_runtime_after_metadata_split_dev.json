@@ -1,0 +1,1547 @@
+{
+  "timestamp": "2026-04-27T02:06:31.967Z",
+  "project": "chromium",
+  "repeat": 3,
+  "routeFilter": "/dashboard/3d-lab",
+  "targetRoutes": [
+    "/dashboard/3d-lab"
+  ],
+  "runs": [
+    {
+      "timestamp": "2026-04-27T02:06:11.128Z",
+      "project": "chromium",
+      "route": "/dashboard/3d-lab",
+      "scenario": "cold",
+      "runIndex": 1,
+      "status": 200,
+      "ok": true,
+      "finalUrl": "http://localhost:3217/dashboard/3d-lab",
+      "durationMs": 28677.127167,
+      "navigation": {
+        "name": "http://localhost:3217/dashboard/3d-lab",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 27743.5,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentEncoding": "gzip",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 0.5,
+        "domainLookupStart": 9.599999997764826,
+        "domainLookupEnd": 9.800000000745058,
+        "connectStart": 9.800000000745058,
+        "secureConnectionStart": 0,
+        "connectEnd": 10.399999998509884,
+        "requestStart": 11.599999997764826,
+        "responseStart": 24987.599999997765,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 24987.599999997765,
+        "responseEnd": 25353,
+        "transferSize": 32488,
+        "encodedBodySize": 32188,
+        "decodedBodySize": 181638,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 25589.199999999255,
+        "domContentLoadedEventStart": 25589.199999999255,
+        "domContentLoadedEventEnd": 25589.199999999255,
+        "domComplete": 27743.199999999255,
+        "loadEventStart": 27743.5,
+        "loadEventEnd": 27743.5,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "high"
+        }
+      },
+      "paints": {
+        "fcp": 25620,
+        "fp": 25620
+      },
+      "webVitalsProxy": {
+        "lcp": 25848,
+        "cls": 0,
+        "longTaskCount": 3,
+        "longTaskTotalMs": 687,
+        "maxLongTaskMs": 445,
+        "inpProxyMs": null
+      },
+      "resources": {
+        "count": 38,
+        "totalTransferSize": 6933800,
+        "totalEncodedBodySize": 6923000,
+        "byType": {
+          "link": {
+            "count": 13,
+            "transferSize": 288136,
+            "encodedBodySize": 284536
+          },
+          "script": {
+            "count": 15,
+            "transferSize": 6548490,
+            "encodedBodySize": 6543990
+          },
+          "css": {
+            "count": 4,
+            "transferSize": 77368,
+            "encodedBodySize": 76168
+          },
+          "img": {
+            "count": 1,
+            "transferSize": 0,
+            "encodedBodySize": 0
+          },
+          "fetch": {
+            "count": 5,
+            "transferSize": 19806,
+            "encodedBodySize": 18306
+          }
+        },
+        "slowest": [
+          {
+            "name": "http://localhost:3217/_next/static/chunks/main-app.js?v=1777255565373",
+            "initiatorType": "script",
+            "duration": 1614.199999999255,
+            "transferSize": 2720965,
+            "encodedBodySize": 2720665
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/layout.js",
+            "initiatorType": "script",
+            "duration": 1407.300000000745,
+            "transferSize": 2303273,
+            "encodedBodySize": 2302973
+          },
+          {
+            "name": "http://localhost:3217/dashboard/3d-lab?_rsc=1tl93",
+            "initiatorType": "fetch",
+            "duration": 490,
+            "transferSize": 18375,
+            "encodedBodySize": 18075
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/9816a0e0ed309b6c-s.p.woff2",
+            "initiatorType": "css",
+            "duration": 420.19999999925494,
+            "transferSize": 11664,
+            "encodedBodySize": 11364
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/bc08e10e1c60a660-s.p.woff2",
+            "initiatorType": "css",
+            "duration": 304.5,
+            "transferSize": 11508,
+            "encodedBodySize": 11208
+          },
+          {
+            "name": "http://localhost:3217/_next/static/css/app/layout.css?v=1777255568858",
+            "initiatorType": "link",
+            "duration": 296.6000000014901,
+            "transferSize": 56871,
+            "encodedBodySize": 56571
+          },
+          {
+            "name": "https://lh3.googleusercontent.com/a/ACg8ocL-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X=s96-c",
+            "initiatorType": "link",
+            "duration": 295.30000000074506,
+            "transferSize": 0,
+            "encodedBodySize": 0
+          },
+          {
+            "name": "http://localhost:3217/_next/static/webpack/4c3f18a832e586be.webpack.hot-update.json",
+            "initiatorType": "fetch",
+            "duration": 256.19999999925494,
+            "transferSize": 344,
+            "encodedBodySize": 44
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/layout.js",
+            "initiatorType": "script",
+            "duration": 190.10000000149012,
+            "transferSize": 533032,
+            "encodedBodySize": 532732
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/3d-lab/page.js",
+            "initiatorType": "script",
+            "duration": 178.30000000074506,
+            "transferSize": 367072,
+            "encodedBodySize": 366772
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/error.js",
+            "initiatorType": "script",
+            "duration": 172.70000000298023,
+            "transferSize": 209879,
+            "encodedBodySize": 209579
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/3d-lab/error.js",
+            "initiatorType": "script",
+            "duration": 165.40000000223517,
+            "transferSize": 209930,
+            "encodedBodySize": 209630
+          },
+          {
+            "name": "http://localhost:3217/dashboard/3d-lab",
+            "initiatorType": "fetch",
+            "duration": 154.59999999776483,
+            "transferSize": 399,
+            "encodedBodySize": 99
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/error.js",
+            "initiatorType": "script",
+            "duration": 143,
+            "transferSize": 121317,
+            "encodedBodySize": 121017
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/3dc379dc9b5dec12-s.p.woff2",
+            "initiatorType": "css",
+            "duration": 142.30000000074506,
+            "transferSize": 25540,
+            "encodedBodySize": 25240
+          }
+        ]
+      },
+      "heap": {
+        "jsHeapSizeLimit": 2330000000,
+        "totalJSHeapSize": 148000000,
+        "usedJSHeapSize": 123000000
+      },
+      "errors": [],
+      "screenshot": ".ai/00_performance/screenshots/chromium-dashboard-3d-lab-cold.png",
+      "trace": ".ai/00_performance/traces/chromium-dashboard-3d-lab-cold.zip"
+    },
+    {
+      "timestamp": "2026-04-27T02:06:18.825Z",
+      "project": "chromium",
+      "route": "/dashboard/3d-lab",
+      "scenario": "warm",
+      "runIndex": 1,
+      "status": 200,
+      "ok": true,
+      "finalUrl": "http://localhost:3217/dashboard/3d-lab",
+      "durationMs": 3211.813000000002,
+      "navigation": {
+        "name": "http://localhost:3217/dashboard/3d-lab",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 2364.89999999851,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentEncoding": "gzip",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 4.199999999254942,
+        "domainLookupStart": 4.199999999254942,
+        "domainLookupEnd": 4.199999999254942,
+        "connectStart": 4.199999999254942,
+        "secureConnectionStart": 0,
+        "connectEnd": 4.199999999254942,
+        "requestStart": 4.899999998509884,
+        "responseStart": 206.19999999925494,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 206.19999999925494,
+        "responseEnd": 786.3999999985099,
+        "transferSize": 32402,
+        "encodedBodySize": 32102,
+        "decodedBodySize": 181608,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 209,
+        "unloadEventEnd": 209,
+        "domInteractive": 786.6999999992549,
+        "domContentLoadedEventStart": 786.6999999992549,
+        "domContentLoadedEventEnd": 786.6999999992549,
+        "domComplete": 2364.7999999970198,
+        "loadEventStart": 2364.89999999851,
+        "loadEventEnd": 2364.89999999851,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "low"
+        }
+      },
+      "paints": {
+        "fcp": 680,
+        "fp": 680
+      },
+      "webVitalsProxy": {
+        "lcp": 1072,
+        "cls": 0,
+        "longTaskCount": 1,
+        "longTaskTotalMs": 248,
+        "maxLongTaskMs": 248,
+        "inpProxyMs": null
+      },
+      "resources": {
+        "count": 25,
+        "totalTransferSize": 3182797,
+        "totalEncodedBodySize": 6538209,
+        "byType": {
+          "link": {
+            "count": 12,
+            "transferSize": 231280,
+            "encodedBodySize": 227980
+          },
+          "script": {
+            "count": 9,
+            "transferSize": 2951517,
+            "encodedBodySize": 6234061
+          },
+          "css": {
+            "count": 4,
+            "transferSize": 0,
+            "encodedBodySize": 76168
+          }
+        },
+        "slowest": [
+          {
+            "name": "http://localhost:3217/_next/static/chunks/main-app.js?v=1777255575596",
+            "initiatorType": "script",
+            "duration": 1620.2999999970198,
+            "transferSize": 2720965,
+            "encodedBodySize": 2720665
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/layout.js",
+            "initiatorType": "script",
+            "duration": 609.5,
+            "transferSize": 228452,
+            "encodedBodySize": 228152
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/error.js",
+            "initiatorType": "script",
+            "duration": 358.30000000074506,
+            "transferSize": 300,
+            "encodedBodySize": 209579
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/3d-lab/error.js",
+            "initiatorType": "script",
+            "duration": 351.20000000298023,
+            "transferSize": 300,
+            "encodedBodySize": 209630
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/3d-lab/layout.js",
+            "initiatorType": "script",
+            "duration": 349.4000000022352,
+            "transferSize": 300,
+            "encodedBodySize": 14190
+          },
+          {
+            "name": "http://localhost:3217/_next/static/css/app/layout.css?v=1777255575596",
+            "initiatorType": "link",
+            "duration": 348.8999999985099,
+            "transferSize": 56871,
+            "encodedBodySize": 56571
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/3d-lab/page.js",
+            "initiatorType": "script",
+            "duration": 337,
+            "transferSize": 300,
+            "encodedBodySize": 366772
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/webpack.js?v=1777255575596",
+            "initiatorType": "link",
+            "duration": 330.69999999925494,
+            "transferSize": 29049,
+            "encodedBodySize": 28749
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/error.js",
+            "initiatorType": "script",
+            "duration": 326.19999999925494,
+            "transferSize": 300,
+            "encodedBodySize": 121017
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app-pages-internals.js",
+            "initiatorType": "script",
+            "duration": 265.3999999985099,
+            "transferSize": 300,
+            "encodedBodySize": 61083
+          },
+          {
+            "name": "https://lh3.googleusercontent.com/a/ACg8ocL-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X=s96-c",
+            "initiatorType": "link",
+            "duration": 92.89999999850988,
+            "transferSize": 0,
+            "encodedBodySize": 0
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/bc08e10e1c60a660-s.p.woff2?v=1777255575596",
+            "initiatorType": "link",
+            "duration": 58,
+            "transferSize": 11508,
+            "encodedBodySize": 11208
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/b7ea2ab4a8ad1f81-s.p.woff2?v=1777255575596",
+            "initiatorType": "link",
+            "duration": 54.29999999701977,
+            "transferSize": 9024,
+            "encodedBodySize": 8724
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/8a1d8947e5852e30-s.p.woff2?v=1777255575596",
+            "initiatorType": "link",
+            "duration": 53.399999998509884,
+            "transferSize": 34860,
+            "encodedBodySize": 34560
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/9816a0e0ed309b6c-s.p.woff2?v=1777255575596",
+            "initiatorType": "link",
+            "duration": 53.399999998509884,
+            "transferSize": 11664,
+            "encodedBodySize": 11364
+          }
+        ]
+      },
+      "heap": {
+        "jsHeapSizeLimit": 2330000000,
+        "totalJSHeapSize": 239000000,
+        "usedJSHeapSize": 167000000
+      },
+      "errors": [
+        "Internal Next.js error: Router action dispatched before initialization.",
+        "Invalid or unexpected token"
+      ],
+      "screenshot": null,
+      "trace": ".ai/00_performance/traces/chromium-dashboard-3d-lab-warm.zip"
+    },
+    {
+      "timestamp": "2026-04-27T02:06:21.395Z",
+      "project": "chromium",
+      "route": "/dashboard/3d-lab",
+      "scenario": "cold",
+      "runIndex": 2,
+      "status": 200,
+      "ok": true,
+      "finalUrl": "http://localhost:3217/dashboard/3d-lab",
+      "durationMs": 2486.498707999999,
+      "navigation": {
+        "name": "http://localhost:3217/dashboard/3d-lab",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 1532.8999999985099,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentEncoding": "gzip",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 0,
+        "domainLookupStart": 0.5999999977648258,
+        "domainLookupEnd": 0.5999999977648258,
+        "connectStart": 0.5999999977648258,
+        "secureConnectionStart": 0,
+        "connectEnd": 0.6999999992549419,
+        "requestStart": 0.7999999970197678,
+        "responseStart": 181.09999999776483,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 181.09999999776483,
+        "responseEnd": 585.6999999992549,
+        "transferSize": 32402,
+        "encodedBodySize": 32102,
+        "decodedBodySize": 181608,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 586.0999999977648,
+        "domContentLoadedEventStart": 586.0999999977648,
+        "domContentLoadedEventEnd": 586.0999999977648,
+        "domComplete": 1532.699999999255,
+        "loadEventStart": 1532.8999999985099,
+        "loadEventEnd": 1532.8999999985099,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "high"
+        }
+      },
+      "paints": {
+        "fcp": 516,
+        "fp": 516
+      },
+      "webVitalsProxy": {
+        "lcp": 872,
+        "cls": 0,
+        "longTaskCount": 1,
+        "longTaskTotalMs": 302,
+        "maxLongTaskMs": 302,
+        "inpProxyMs": null
+      },
+      "resources": {
+        "count": 24,
+        "totalTransferSize": 6630353,
+        "totalEncodedBodySize": 6623453,
+        "byType": {
+          "link": {
+            "count": 12,
+            "transferSize": 231284,
+            "encodedBodySize": 227984
+          },
+          "script": {
+            "count": 9,
+            "transferSize": 6350357,
+            "encodedBodySize": 6347657
+          },
+          "css": {
+            "count": 3,
+            "transferSize": 48712,
+            "encodedBodySize": 47812
+          }
+        },
+        "slowest": [
+          {
+            "name": "http://localhost:3217/_next/static/chunks/main-app.js?v=1777255579009",
+            "initiatorType": "script",
+            "duration": 1007.8000000007451,
+            "transferSize": 2720965,
+            "encodedBodySize": 2720665
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/3d-lab/page.js",
+            "initiatorType": "script",
+            "duration": 741.6999999992549,
+            "transferSize": 367072,
+            "encodedBodySize": 366772
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/error.js",
+            "initiatorType": "script",
+            "duration": 721.0999999977648,
+            "transferSize": 209879,
+            "encodedBodySize": 209579
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/3d-lab/error.js",
+            "initiatorType": "script",
+            "duration": 718.8000000007451,
+            "transferSize": 209930,
+            "encodedBodySize": 209630
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/layout.js",
+            "initiatorType": "script",
+            "duration": 582.9000000022352,
+            "transferSize": 2303273,
+            "encodedBodySize": 2302973
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/layout.js",
+            "initiatorType": "script",
+            "duration": 537,
+            "transferSize": 342048,
+            "encodedBodySize": 341748
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/3d-lab/layout.js",
+            "initiatorType": "script",
+            "duration": 360.6000000014901,
+            "transferSize": 14490,
+            "encodedBodySize": 14190
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/error.js",
+            "initiatorType": "script",
+            "duration": 359.30000000074506,
+            "transferSize": 121317,
+            "encodedBodySize": 121017
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app-pages-internals.js",
+            "initiatorType": "script",
+            "duration": 323.70000000298023,
+            "transferSize": 61383,
+            "encodedBodySize": 61083
+          },
+          {
+            "name": "http://localhost:3217/_next/static/css/app/layout.css?v=1777255579009",
+            "initiatorType": "link",
+            "duration": 259.4000000022352,
+            "transferSize": 56871,
+            "encodedBodySize": 56571
+          },
+          {
+            "name": "https://lh3.googleusercontent.com/a/ACg8ocL-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X=s96-c",
+            "initiatorType": "link",
+            "duration": 107.89999999850988,
+            "transferSize": 0,
+            "encodedBodySize": 0
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/3dc379dc9b5dec12-s.p.woff2",
+            "initiatorType": "css",
+            "duration": 92.5,
+            "transferSize": 25540,
+            "encodedBodySize": 25240
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/bc08e10e1c60a660-s.p.woff2?v=1777255579009",
+            "initiatorType": "link",
+            "duration": 71.5,
+            "transferSize": 11508,
+            "encodedBodySize": 11208
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/b7ea2ab4a8ad1f81-s.p.woff2?v=1777255579009",
+            "initiatorType": "link",
+            "duration": 71,
+            "transferSize": 9024,
+            "encodedBodySize": 8724
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/9816a0e0ed309b6c-s.p.woff2?v=1777255579009",
+            "initiatorType": "link",
+            "duration": 70.09999999776483,
+            "transferSize": 11664,
+            "encodedBodySize": 11364
+          }
+        ]
+      },
+      "heap": {
+        "jsHeapSizeLimit": 2330000000,
+        "totalJSHeapSize": 254000000,
+        "usedJSHeapSize": 188000000
+      },
+      "errors": [
+        "Invalid or unexpected token"
+      ],
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "timestamp": "2026-04-27T02:06:26.036Z",
+      "project": "chromium",
+      "route": "/dashboard/3d-lab",
+      "scenario": "warm",
+      "runIndex": 2,
+      "status": 200,
+      "ok": true,
+      "finalUrl": "http://localhost:3217/dashboard/3d-lab",
+      "durationMs": 2070.531415999998,
+      "navigation": {
+        "name": "http://localhost:3217/dashboard/3d-lab",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 621.8000000007451,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentEncoding": "gzip",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 0.19999999925494194,
+        "domainLookupStart": 0.19999999925494194,
+        "domainLookupEnd": 0.19999999925494194,
+        "connectStart": 0.19999999925494194,
+        "secureConnectionStart": 0,
+        "connectEnd": 0.19999999925494194,
+        "requestStart": 0.6000000014901161,
+        "responseStart": 79.80000000074506,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 79.80000000074506,
+        "responseEnd": 143.40000000223517,
+        "transferSize": 32409,
+        "encodedBodySize": 32109,
+        "decodedBodySize": 181608,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 81.10000000149012,
+        "unloadEventEnd": 81.10000000149012,
+        "domInteractive": 149.30000000074506,
+        "domContentLoadedEventStart": 149.30000000074506,
+        "domContentLoadedEventEnd": 149.30000000074506,
+        "domComplete": 621.8000000007451,
+        "loadEventStart": 621.8000000007451,
+        "loadEventEnd": 621.8000000007451,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "high"
+        }
+      },
+      "paints": {
+        "fcp": 176,
+        "fp": 176
+      },
+      "webVitalsProxy": {
+        "lcp": 176,
+        "cls": 0,
+        "longTaskCount": 1,
+        "longTaskTotalMs": 214,
+        "maxLongTaskMs": 214,
+        "inpProxyMs": null
+      },
+      "resources": {
+        "count": 26,
+        "totalTransferSize": 2955048,
+        "totalEncodedBodySize": 6814537,
+        "byType": {
+          "link": {
+            "count": 12,
+            "transferSize": 231284,
+            "encodedBodySize": 227984
+          },
+          "script": {
+            "count": 9,
+            "transferSize": 2723365,
+            "encodedBodySize": 6538642
+          },
+          "css": {
+            "count": 3,
+            "transferSize": 0,
+            "encodedBodySize": 47812
+          },
+          "img": {
+            "count": 1,
+            "transferSize": 0,
+            "encodedBodySize": 0
+          },
+          "fetch": {
+            "count": 1,
+            "transferSize": 399,
+            "encodedBodySize": 99
+          }
+        },
+        "slowest": [
+          {
+            "name": "http://localhost:3217/_next/static/chunks/main-app.js?v=1777255583953",
+            "initiatorType": "script",
+            "duration": 285.4000000022352,
+            "transferSize": 2720965,
+            "encodedBodySize": 2720665
+          },
+          {
+            "name": "https://lh3.googleusercontent.com/a/ACg8ocL-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X=s96-c",
+            "initiatorType": "link",
+            "duration": 115.40000000223517,
+            "transferSize": 0,
+            "encodedBodySize": 0
+          },
+          {
+            "name": "https://lh3.googleusercontent.com/a/ACg8ocL-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X=s96-c",
+            "initiatorType": "img",
+            "duration": 102.5,
+            "transferSize": 0,
+            "encodedBodySize": 0
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/bc08e10e1c60a660-s.p.woff2?v=1777255583953",
+            "initiatorType": "link",
+            "duration": 35.70000000298023,
+            "transferSize": 11508,
+            "encodedBodySize": 11208
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/b7ea2ab4a8ad1f81-s.p.woff2?v=1777255583953",
+            "initiatorType": "link",
+            "duration": 35.100000001490116,
+            "transferSize": 9024,
+            "encodedBodySize": 8724
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/9816a0e0ed309b6c-s.p.woff2?v=1777255583953",
+            "initiatorType": "link",
+            "duration": 34.70000000298023,
+            "transferSize": 11664,
+            "encodedBodySize": 11364
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/error.js",
+            "initiatorType": "script",
+            "duration": 34.69999999925494,
+            "transferSize": 300,
+            "encodedBodySize": 209579
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/8a1d8947e5852e30-s.p.woff2?v=1777255583953",
+            "initiatorType": "link",
+            "duration": 34.600000001490116,
+            "transferSize": 34860,
+            "encodedBodySize": 34560
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/layout.js",
+            "initiatorType": "script",
+            "duration": 34.599999997764826,
+            "transferSize": 300,
+            "encodedBodySize": 2302973
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/3d-lab/error.js",
+            "initiatorType": "script",
+            "duration": 33.400000002235174,
+            "transferSize": 300,
+            "encodedBodySize": 209630
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/76fcc95954fbfc88-s.p.woff2?v=1777255583953",
+            "initiatorType": "link",
+            "duration": 32.100000001490116,
+            "transferSize": 9856,
+            "encodedBodySize": 9556
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/5d259b4d93dec8ad-s.p.woff2?v=1777255583953",
+            "initiatorType": "link",
+            "duration": 31.5,
+            "transferSize": 9816,
+            "encodedBodySize": 9516
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/56da557e531d1081-s.p.woff2?v=1777255583953",
+            "initiatorType": "link",
+            "duration": 31.200000002980232,
+            "transferSize": 24104,
+            "encodedBodySize": 23804
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/3dc379dc9b5dec12-s.p.woff2?v=1777255583953",
+            "initiatorType": "link",
+            "duration": 31,
+            "transferSize": 25540,
+            "encodedBodySize": 25240
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/0e96d314a90a6138-s.p.woff2?v=1777255583953",
+            "initiatorType": "link",
+            "duration": 30.699999999254942,
+            "transferSize": 8988,
+            "encodedBodySize": 8688
+          }
+        ]
+      },
+      "heap": {
+        "jsHeapSizeLimit": 2330000000,
+        "totalJSHeapSize": 148000000,
+        "usedJSHeapSize": 123000000
+      },
+      "errors": [],
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "timestamp": "2026-04-27T02:06:28.210Z",
+      "project": "chromium",
+      "route": "/dashboard/3d-lab",
+      "scenario": "cold",
+      "runIndex": 3,
+      "status": 200,
+      "ok": true,
+      "finalUrl": "http://localhost:3217/dashboard/3d-lab",
+      "durationMs": 2091.4134170000034,
+      "navigation": {
+        "name": "http://localhost:3217/dashboard/3d-lab",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 661.1999999992549,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentEncoding": "gzip",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 0.09999999776482582,
+        "domainLookupStart": 0.8999999985098839,
+        "domainLookupEnd": 0.8999999985098839,
+        "connectStart": 0.8999999985098839,
+        "secureConnectionStart": 0,
+        "connectEnd": 1,
+        "requestStart": 1.0999999977648258,
+        "responseStart": 77.89999999850988,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 77.89999999850988,
+        "responseEnd": 126.09999999776483,
+        "transferSize": 32407,
+        "encodedBodySize": 32107,
+        "decodedBodySize": 181608,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 154.19999999925494,
+        "domContentLoadedEventStart": 154.19999999925494,
+        "domContentLoadedEventEnd": 154.19999999925494,
+        "domComplete": 661.1999999992549,
+        "loadEventStart": 661.1999999992549,
+        "loadEventEnd": 661.1999999992549,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "high"
+        }
+      },
+      "paints": {
+        "fcp": 160,
+        "fp": 160
+      },
+      "webVitalsProxy": {
+        "lcp": 704,
+        "cls": 0,
+        "longTaskCount": 1,
+        "longTaskTotalMs": 281,
+        "maxLongTaskMs": 281,
+        "inpProxyMs": null
+      },
+      "resources": {
+        "count": 26,
+        "totalTransferSize": 6821737,
+        "totalEncodedBodySize": 6814537,
+        "byType": {
+          "link": {
+            "count": 12,
+            "transferSize": 231284,
+            "encodedBodySize": 227984
+          },
+          "script": {
+            "count": 9,
+            "transferSize": 6541342,
+            "encodedBodySize": 6538642
+          },
+          "css": {
+            "count": 3,
+            "transferSize": 48712,
+            "encodedBodySize": 47812
+          },
+          "img": {
+            "count": 1,
+            "transferSize": 0,
+            "encodedBodySize": 0
+          },
+          "fetch": {
+            "count": 1,
+            "transferSize": 399,
+            "encodedBodySize": 99
+          }
+        },
+        "slowest": [
+          {
+            "name": "http://localhost:3217/_next/static/chunks/main-app.js?v=1777255586117",
+            "initiatorType": "script",
+            "duration": 266.80000000074506,
+            "transferSize": 2720965,
+            "encodedBodySize": 2720665
+          },
+          {
+            "name": "https://lh3.googleusercontent.com/a/ACg8ocL-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X=s96-c",
+            "initiatorType": "link",
+            "duration": 178.09999999776483,
+            "transferSize": 0,
+            "encodedBodySize": 0
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/layout.js",
+            "initiatorType": "script",
+            "duration": 172,
+            "transferSize": 2303273,
+            "encodedBodySize": 2302973
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/layout.js",
+            "initiatorType": "script",
+            "duration": 75.19999999925494,
+            "transferSize": 533033,
+            "encodedBodySize": 532733
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/3d-lab/page.js",
+            "initiatorType": "script",
+            "duration": 66.60000000149012,
+            "transferSize": 367072,
+            "encodedBodySize": 366772
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/error.js",
+            "initiatorType": "script",
+            "duration": 56.399999998509884,
+            "transferSize": 209879,
+            "encodedBodySize": 209579
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/3d-lab/error.js",
+            "initiatorType": "script",
+            "duration": 48,
+            "transferSize": 209930,
+            "encodedBodySize": 209630
+          },
+          {
+            "name": "https://lh3.googleusercontent.com/a/ACg8ocL-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X=s96-c",
+            "initiatorType": "img",
+            "duration": 39.900000002235174,
+            "transferSize": 0,
+            "encodedBodySize": 0
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/error.js",
+            "initiatorType": "script",
+            "duration": 33.19999999925494,
+            "transferSize": 121317,
+            "encodedBodySize": 121017
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/3dc379dc9b5dec12-s.p.woff2",
+            "initiatorType": "css",
+            "duration": 27.799999997019768,
+            "transferSize": 25540,
+            "encodedBodySize": 25240
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/b7ea2ab4a8ad1f81-s.p.woff2?v=1777255586117",
+            "initiatorType": "link",
+            "duration": 26.300000000745058,
+            "transferSize": 9024,
+            "encodedBodySize": 8724
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/bc08e10e1c60a660-s.p.woff2?v=1777255586117",
+            "initiatorType": "link",
+            "duration": 26.300000000745058,
+            "transferSize": 11508,
+            "encodedBodySize": 11208
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/8a1d8947e5852e30-s.p.woff2?v=1777255586117",
+            "initiatorType": "link",
+            "duration": 25.5,
+            "transferSize": 34860,
+            "encodedBodySize": 34560
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/9816a0e0ed309b6c-s.p.woff2?v=1777255586117",
+            "initiatorType": "link",
+            "duration": 25.400000002235174,
+            "transferSize": 11664,
+            "encodedBodySize": 11364
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/76fcc95954fbfc88-s.p.woff2?v=1777255586117",
+            "initiatorType": "link",
+            "duration": 24.199999999254942,
+            "transferSize": 9856,
+            "encodedBodySize": 9556
+          }
+        ]
+      },
+      "heap": {
+        "jsHeapSizeLimit": 2330000000,
+        "totalJSHeapSize": 157000000,
+        "usedJSHeapSize": 139000000
+      },
+      "errors": [],
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "timestamp": "2026-04-27T02:06:31.896Z",
+      "project": "chromium",
+      "route": "/dashboard/3d-lab",
+      "scenario": "warm",
+      "runIndex": 3,
+      "status": 200,
+      "ok": true,
+      "finalUrl": "http://localhost:3217/dashboard/3d-lab",
+      "durationMs": 1930.6119160000017,
+      "navigation": {
+        "name": "http://localhost:3217/dashboard/3d-lab",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 553.1999999992549,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentEncoding": "gzip",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 0.30000000074505806,
+        "domainLookupStart": 0.30000000074505806,
+        "domainLookupEnd": 0.30000000074505806,
+        "connectStart": 0.30000000074505806,
+        "secureConnectionStart": 0,
+        "connectEnd": 0.30000000074505806,
+        "requestStart": 0.6999999992549419,
+        "responseStart": 65.19999999925494,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 65.19999999925494,
+        "responseEnd": 115.60000000149012,
+        "transferSize": 32408,
+        "encodedBodySize": 32108,
+        "decodedBodySize": 181608,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 66.39999999850988,
+        "unloadEventEnd": 66.39999999850988,
+        "domInteractive": 121.69999999925494,
+        "domContentLoadedEventStart": 121.69999999925494,
+        "domContentLoadedEventEnd": 121.69999999925494,
+        "domComplete": 553.1000000014901,
+        "loadEventStart": 553.1999999992549,
+        "loadEventEnd": 553.1999999992549,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "high"
+        }
+      },
+      "paints": {
+        "fcp": 144,
+        "fp": 144
+      },
+      "webVitalsProxy": {
+        "lcp": 144,
+        "cls": 0,
+        "longTaskCount": 1,
+        "longTaskTotalMs": 198,
+        "maxLongTaskMs": 198,
+        "inpProxyMs": null
+      },
+      "resources": {
+        "count": 26,
+        "totalTransferSize": 2955048,
+        "totalEncodedBodySize": 6814537,
+        "byType": {
+          "link": {
+            "count": 12,
+            "transferSize": 231284,
+            "encodedBodySize": 227984
+          },
+          "script": {
+            "count": 9,
+            "transferSize": 2723365,
+            "encodedBodySize": 6538642
+          },
+          "css": {
+            "count": 3,
+            "transferSize": 0,
+            "encodedBodySize": 47812
+          },
+          "img": {
+            "count": 1,
+            "transferSize": 0,
+            "encodedBodySize": 0
+          },
+          "fetch": {
+            "count": 1,
+            "transferSize": 399,
+            "encodedBodySize": 99
+          }
+        },
+        "slowest": [
+          {
+            "name": "http://localhost:3217/_next/static/chunks/main-app.js?v=1777255589959",
+            "initiatorType": "script",
+            "duration": 254.59999999776483,
+            "transferSize": 2720965,
+            "encodedBodySize": 2720665
+          },
+          {
+            "name": "https://lh3.googleusercontent.com/a/ACg8ocL-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X=s96-c",
+            "initiatorType": "link",
+            "duration": 47.5,
+            "transferSize": 0,
+            "encodedBodySize": 0
+          },
+          {
+            "name": "https://lh3.googleusercontent.com/a/ACg8ocL-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X-X=s96-c",
+            "initiatorType": "img",
+            "duration": 34.400000002235174,
+            "transferSize": 0,
+            "encodedBodySize": 0
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/layout.js",
+            "initiatorType": "script",
+            "duration": 33.80000000074506,
+            "transferSize": 300,
+            "encodedBodySize": 2302973
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/bc08e10e1c60a660-s.p.woff2?v=1777255589959",
+            "initiatorType": "link",
+            "duration": 26.900000002235174,
+            "transferSize": 11508,
+            "encodedBodySize": 11208
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/error.js",
+            "initiatorType": "script",
+            "duration": 26.800000000745058,
+            "transferSize": 300,
+            "encodedBodySize": 209579
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/9816a0e0ed309b6c-s.p.woff2?v=1777255589959",
+            "initiatorType": "link",
+            "duration": 26.799999997019768,
+            "transferSize": 11664,
+            "encodedBodySize": 11364
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/b7ea2ab4a8ad1f81-s.p.woff2?v=1777255589959",
+            "initiatorType": "link",
+            "duration": 26.699999999254942,
+            "transferSize": 9024,
+            "encodedBodySize": 8724
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/8a1d8947e5852e30-s.p.woff2?v=1777255589959",
+            "initiatorType": "link",
+            "duration": 26.399999998509884,
+            "transferSize": 34860,
+            "encodedBodySize": 34560
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/app/dashboard/3d-lab/error.js",
+            "initiatorType": "script",
+            "duration": 25.900000002235174,
+            "transferSize": 300,
+            "encodedBodySize": 209630
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/5d259b4d93dec8ad-s.p.woff2?v=1777255589959",
+            "initiatorType": "link",
+            "duration": 24.100000001490116,
+            "transferSize": 9816,
+            "encodedBodySize": 9516
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/76fcc95954fbfc88-s.p.woff2?v=1777255589959",
+            "initiatorType": "link",
+            "duration": 23.800000000745058,
+            "transferSize": 9856,
+            "encodedBodySize": 9556
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/56da557e531d1081-s.p.woff2?v=1777255589959",
+            "initiatorType": "link",
+            "duration": 23.600000001490116,
+            "transferSize": 24104,
+            "encodedBodySize": 23804
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/3dc379dc9b5dec12-s.p.woff2?v=1777255589959",
+            "initiatorType": "link",
+            "duration": 23.5,
+            "transferSize": 25540,
+            "encodedBodySize": 25240
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/0e96d314a90a6138-s.p.woff2?v=1777255589959",
+            "initiatorType": "link",
+            "duration": 23.300000000745058,
+            "transferSize": 8988,
+            "encodedBodySize": 8688
+          }
+        ]
+      },
+      "heap": {
+        "jsHeapSizeLimit": 2330000000,
+        "totalJSHeapSize": 148000000,
+        "usedJSHeapSize": 123000000
+      },
+      "errors": [],
+      "screenshot": null,
+      "trace": null
+    }
+  ],
+  "routeSummaries": [
+    {
+      "route": "/dashboard/3d-lab",
+      "runs": 6,
+      "cold": {
+        "count": 3,
+        "min": 2091.4134170000034,
+        "max": 28677.127167,
+        "mean": 11085.013097333334,
+        "median": 2486.498707999999,
+        "p50": 2486.498707999999,
+        "p75": 15581.812937499999,
+        "p95": 26058.064321099995,
+        "p99": 28153.314597819997,
+        "stddev": 12440.548786847896
+      },
+      "warm": {
+        "count": 3,
+        "min": 1930.6119160000017,
+        "max": 3211.813000000002,
+        "mean": 2404.318777333334,
+        "median": 2070.531415999998,
+        "p50": 2070.531415999998,
+        "p75": 2641.172208,
+        "p95": 3097.684841600001,
+        "p99": 3188.987368320002,
+        "stddev": 573.8347940828133
+      },
+      "ttfb": {
+        "count": 6,
+        "min": 65.19999999925494,
+        "max": 24987.599999997765,
+        "mean": 4266.299999998882,
+        "median": 130.44999999925494,
+        "p50": 130.44999999925494,
+        "p75": 199.9249999988824,
+        "p95": 18792.249999998137,
+        "p99": 23748.529999997845,
+        "stddev": 9267.004754863212
+      },
+      "domContentLoaded": {
+        "count": 6,
+        "min": 121.69999999925494,
+        "max": 25589.199999999255,
+        "mean": 4564.533333332588,
+        "median": 370.1499999985099,
+        "p50": 370.1499999985099,
+        "p75": 736.5499999988824,
+        "p95": 19388.574999999255,
+        "p99": 24349.07499999926,
+        "stddev": 9405.855077674863
+      },
+      "load": {
+        "count": 6,
+        "min": 553.1999999992549,
+        "max": 27743.5,
+        "mean": 5579.583333332713,
+        "median": 1097.0499999988824,
+        "p50": 1097.0499999988824,
+        "p75": 2156.89999999851,
+        "p95": 21398.849999999627,
+        "p99": 26474.56999999993,
+        "stddev": 9932.97267143093
+      },
+      "fcp": {
+        "count": 6,
+        "min": 144,
+        "max": 25620,
+        "mean": 4549.333333333333,
+        "median": 346,
+        "p50": 346,
+        "p75": 639,
+        "p95": 19385,
+        "p99": 24373.000000000004,
+        "stddev": 9425.247700841725
+      },
+      "lcp": {
+        "count": 6,
+        "min": 144,
+        "max": 25848,
+        "mean": 4802.666666666667,
+        "median": 788,
+        "p50": 788,
+        "p75": 1022,
+        "p95": 19654,
+        "p99": 24609.200000000004,
+        "stddev": 9417.911634516197
+      },
+      "cls": {
+        "count": 6,
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "median": 0,
+        "p50": 0,
+        "p75": 0,
+        "p95": 0,
+        "p99": 0,
+        "stddev": 0
+      },
+      "longTaskTotal": {
+        "count": 6,
+        "min": 198,
+        "max": 687,
+        "mean": 321.6666666666667,
+        "median": 264.5,
+        "p50": 264.5,
+        "p75": 296.75,
+        "p95": 590.75,
+        "p99": 667.75,
+        "stddev": 167.24300350753757
+      },
+      "requests": {
+        "count": 6,
+        "min": 24,
+        "max": 38,
+        "mean": 27.5,
+        "median": 26,
+        "p50": 26,
+        "p75": 26,
+        "p95": 35,
+        "p99": 37.400000000000006,
+        "stddev": 4.752192476461084
+      },
+      "transferredBytes": {
+        "count": 6,
+        "min": 2955048,
+        "max": 6933800,
+        "mean": 4913130.5,
+        "median": 4906575,
+        "p50": 4906575,
+        "p75": 6773891,
+        "p95": 6905784.25,
+        "p99": 6928196.85,
+        "stddev": 1885778.5876313571
+      },
+      "errorCount": 3,
+      "screenshots": [
+        ".ai/00_performance/screenshots/chromium-dashboard-3d-lab-cold.png"
+      ],
+      "traces": [
+        ".ai/00_performance/traces/chromium-dashboard-3d-lab-cold.zip",
+        ".ai/00_performance/traces/chromium-dashboard-3d-lab-warm.zip"
+      ]
+    }
+  ],
+  "summary": {
+    "coldDurationMs": {
+      "count": 3,
+      "min": 2091.4134170000034,
+      "max": 28677.127167,
+      "mean": 11085.013097333334,
+      "median": 2486.498707999999,
+      "p50": 2486.498707999999,
+      "p75": 15581.812937499999,
+      "p95": 26058.064321099995,
+      "p99": 28153.314597819997,
+      "stddev": 12440.548786847896
+    },
+    "warmDurationMs": {
+      "count": 3,
+      "min": 1930.6119160000017,
+      "max": 3211.813000000002,
+      "mean": 2404.318777333334,
+      "median": 2070.531415999998,
+      "p50": 2070.531415999998,
+      "p75": 2641.172208,
+      "p95": 3097.684841600001,
+      "p99": 3188.987368320002,
+      "stddev": 573.8347940828133
+    },
+    "fcpMs": {
+      "count": 6,
+      "min": 144,
+      "max": 25620,
+      "mean": 4549.333333333333,
+      "median": 346,
+      "p50": 346,
+      "p75": 639,
+      "p95": 19385,
+      "p99": 24373.000000000004,
+      "stddev": 9425.247700841725
+    },
+    "lcpMs": {
+      "count": 6,
+      "min": 144,
+      "max": 25848,
+      "mean": 4802.666666666667,
+      "median": 788,
+      "p50": 788,
+      "p75": 1022,
+      "p95": 19654,
+      "p99": 24609.200000000004,
+      "stddev": 9417.911634516197
+    },
+    "requestCount": {
+      "count": 6,
+      "min": 24,
+      "max": 38,
+      "mean": 27.5,
+      "median": 26,
+      "p50": 26,
+      "p75": 26,
+      "p95": 35,
+      "p99": 37.400000000000006,
+      "stddev": 4.752192476461084
+    },
+    "transferredBytes": {
+      "count": 6,
+      "min": 2955048,
+      "max": 6933800,
+      "mean": 4913130.5,
+      "median": 4906575,
+      "p50": 4906575,
+      "p75": 6773891,
+      "p95": 6905784.25,
+      "p99": 6928196.85,
+      "stddev": 1885778.5876313571
+    }
+  },
+  "notes": [
+    "Navigation duration is measured wall-clock around page.goto plus bounded network-idle/settling wait.",
+    "Web vital values are browser Performance API/observer proxies; validate production Core Web Vitals with RUM for final budgets.",
+    "Traced runs add overhead and are diagnostic, not pristine latency baselines."
+  ]
+}

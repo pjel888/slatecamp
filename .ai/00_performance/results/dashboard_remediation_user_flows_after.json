@@ -1,0 +1,166 @@
+{
+  "timestamp": "2026-04-27T00:20:23.440Z",
+  "project": "chromium",
+  "demoAuthEnabled": true,
+  "repeat": 3,
+  "runs": [
+    {
+      "timestamp": "2026-04-27T00:19:23.308Z",
+      "project": "chromium",
+      "name": "open app to first visible UI",
+      "status": "failed",
+      "durationMs": 2.2024160000146367,
+      "metrics": {},
+      "error": "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3217/\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3217/\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "timestamp": "2026-04-27T00:19:23.336Z",
+      "project": "chromium",
+      "name": "open app to first visible UI",
+      "status": "failed",
+      "durationMs": 27.693749999976717,
+      "metrics": {},
+      "error": "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3217/\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3217/\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "timestamp": "2026-04-27T00:19:23.340Z",
+      "project": "chromium",
+      "name": "open app to first visible UI",
+      "status": "failed",
+      "durationMs": 3.5388749999692664,
+      "metrics": {},
+      "error": "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3217/\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3217/\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "timestamp": "2026-04-27T00:19:43.348Z",
+      "project": "chromium",
+      "name": "login entry to authenticated dashboard (demo auth)",
+      "status": "failed",
+      "durationMs": 20007.885249999992,
+      "metrics": {},
+      "error": "page.waitForURL: Timeout 20000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation until \"load\"\n  navigated to \"chrome-error://chromewebdata/\"\n============================================================"
+    },
+    {
+      "timestamp": "2026-04-27T00:19:43.359Z",
+      "project": "chromium",
+      "name": "dashboard primary data visible (demo auth)",
+      "status": "failed",
+      "durationMs": 11.765833000012208,
+      "metrics": {},
+      "error": "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3217/dashboard\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3217/dashboard\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "timestamp": "2026-04-27T00:19:43.366Z",
+      "project": "chromium",
+      "name": "wiki search/filter proxy (demo auth)",
+      "status": "failed",
+      "durationMs": 6.8082080000313,
+      "metrics": {},
+      "error": "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3217/dashboard/wiki\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3217/dashboard/wiki\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "timestamp": "2026-04-27T00:20:03.377Z",
+      "project": "chromium",
+      "name": "login entry to authenticated dashboard (demo auth)",
+      "status": "failed",
+      "durationMs": 20011.06479199999,
+      "metrics": {},
+      "error": "page.waitForURL: Timeout 20000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation until \"load\"\n  navigated to \"chrome-error://chromewebdata/\"\n============================================================"
+    },
+    {
+      "timestamp": "2026-04-27T00:20:03.387Z",
+      "project": "chromium",
+      "name": "dashboard primary data visible (demo auth)",
+      "status": "failed",
+      "durationMs": 10.18083300004946,
+      "metrics": {},
+      "error": "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3217/dashboard\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3217/dashboard\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "timestamp": "2026-04-27T00:20:03.394Z",
+      "project": "chromium",
+      "name": "wiki search/filter proxy (demo auth)",
+      "status": "failed",
+      "durationMs": 6.924082999990787,
+      "metrics": {},
+      "error": "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3217/dashboard/wiki\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3217/dashboard/wiki\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "timestamp": "2026-04-27T00:20:23.404Z",
+      "project": "chromium",
+      "name": "login entry to authenticated dashboard (demo auth)",
+      "status": "failed",
+      "durationMs": 20009.253917000024,
+      "metrics": {},
+      "error": "page.waitForURL: Timeout 20000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation until \"load\"\n  navigated to \"chrome-error://chromewebdata/\"\n============================================================"
+    },
+    {
+      "timestamp": "2026-04-27T00:20:23.413Z",
+      "project": "chromium",
+      "name": "dashboard primary data visible (demo auth)",
+      "status": "failed",
+      "durationMs": 9.211624999996275,
+      "metrics": {},
+      "error": "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3217/dashboard\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3217/dashboard\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "timestamp": "2026-04-27T00:20:23.422Z",
+      "project": "chromium",
+      "name": "wiki search/filter proxy (demo auth)",
+      "status": "failed",
+      "durationMs": 8.927708000002895,
+      "metrics": {},
+      "error": "page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3217/dashboard/wiki\nCall log:\n\u001b[2m  - navigating to \"http://localhost:3217/dashboard/wiki\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    }
+  ],
+  "summaries": {
+    "open app to first visible UI": {
+      "count": 3,
+      "min": 2.2024160000146367,
+      "max": 27.693749999976717,
+      "mean": 11.14501366665354,
+      "median": 3.5388749999692664,
+      "p50": 3.5388749999692664,
+      "p75": 15.616312499972992,
+      "p95": 25.27826249997597,
+      "p99": 27.210652499976568,
+      "stddev": 11.71443657307876
+    },
+    "login entry to authenticated dashboard (demo auth)": {
+      "count": 3,
+      "min": 20007.885249999992,
+      "max": 20011.06479199999,
+      "mean": 20009.401319666667,
+      "median": 20009.253917000024,
+      "p50": 20009.253917000024,
+      "p75": 20010.159354500007,
+      "p95": 20010.883704499993,
+      "p99": 20011.02857449999,
+      "stddev": 1.3022205373997178
+    },
+    "dashboard primary data visible (demo auth)": {
+      "count": 3,
+      "min": 9.211624999996275,
+      "max": 11.765833000012208,
+      "mean": 10.386097000019314,
+      "median": 10.18083300004946,
+      "p50": 10.18083300004946,
+      "p75": 10.973333000030834,
+      "p95": 11.607333000015933,
+      "p99": 11.734133000012953,
+      "stddev": 1.0528040682225939
+    },
+    "wiki search/filter proxy (demo auth)": {
+      "count": 3,
+      "min": 6.8082080000313,
+      "max": 8.927708000002895,
+      "mean": 7.553333000008327,
+      "median": 6.924082999990787,
+      "p50": 6.924082999990787,
+      "p75": 7.925895499996841,
+      "p95": 8.727345500001684,
+      "p99": 8.887635500002652,
+      "stddev": 0.9729805528585701
+    }
+  }
+}

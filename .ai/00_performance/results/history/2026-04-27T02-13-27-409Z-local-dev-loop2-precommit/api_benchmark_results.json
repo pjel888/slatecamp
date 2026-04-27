@@ -1,0 +1,579 @@
+{
+  "timestamp": "2026-04-26T17:56:34.840Z",
+  "baseUrl": "http://localhost:3217",
+  "repeat": 5,
+  "timeoutMs": 15000,
+  "serverReachable": true,
+  "autoStartedServer": true,
+  "autoStartLog": ".ai/00_performance/logs/perf-api-autostart-webserver.log",
+  "endpoints": [
+    {
+      "path": "/api/admin/flags",
+      "file": "src/app/api/admin/flags/route.ts",
+      "methods": [
+        "POST",
+        "DELETE"
+      ],
+      "hasDynamicSegment": false,
+      "usesSupabase": false,
+      "usesAuth": false,
+      "usesExternalFetch": false,
+      "cacheSignals": []
+    },
+    {
+      "path": "/api/ai/embed",
+      "file": "src/app/api/ai/embed/route.ts",
+      "methods": [
+        "POST"
+      ],
+      "hasDynamicSegment": false,
+      "usesSupabase": true,
+      "usesAuth": true,
+      "usesExternalFetch": false,
+      "cacheSignals": []
+    },
+    {
+      "path": "/api/ai/generate-questions",
+      "file": "src/app/api/ai/generate-questions/route.ts",
+      "methods": [
+        "POST"
+      ],
+      "hasDynamicSegment": false,
+      "usesSupabase": true,
+      "usesAuth": true,
+      "usesExternalFetch": false,
+      "cacheSignals": []
+    },
+    {
+      "path": "/api/ai/socratic",
+      "file": "src/app/api/ai/socratic/route.ts",
+      "methods": [],
+      "hasDynamicSegment": false,
+      "usesSupabase": true,
+      "usesAuth": true,
+      "usesExternalFetch": false,
+      "cacheSignals": []
+    },
+    {
+      "path": "/api/ai/study-agent",
+      "file": "src/app/api/ai/study-agent/route.ts",
+      "methods": [
+        "POST"
+      ],
+      "hasDynamicSegment": false,
+      "usesSupabase": true,
+      "usesAuth": true,
+      "usesExternalFetch": false,
+      "cacheSignals": []
+    },
+    {
+      "path": "/api/ai/tutor",
+      "file": "src/app/api/ai/tutor/route.ts",
+      "methods": [
+        "POST"
+      ],
+      "hasDynamicSegment": false,
+      "usesSupabase": true,
+      "usesAuth": true,
+      "usesExternalFetch": false,
+      "cacheSignals": []
+    },
+    {
+      "path": "/api/cron/compute-signals",
+      "file": "src/app/api/cron/compute-signals/route.ts",
+      "methods": [
+        "GET"
+      ],
+      "hasDynamicSegment": false,
+      "usesSupabase": true,
+      "usesAuth": false,
+      "usesExternalFetch": false,
+      "cacheSignals": []
+    },
+    {
+      "path": "/api/cron/focus-review-scan",
+      "file": "src/app/api/cron/focus-review-scan/route.ts",
+      "methods": [
+        "GET"
+      ],
+      "hasDynamicSegment": false,
+      "usesSupabase": true,
+      "usesAuth": false,
+      "usesExternalFetch": false,
+      "cacheSignals": []
+    },
+    {
+      "path": "/api/payments/checkout",
+      "file": "src/app/api/payments/checkout/route.ts",
+      "methods": [
+        "POST"
+      ],
+      "hasDynamicSegment": false,
+      "usesSupabase": true,
+      "usesAuth": true,
+      "usesExternalFetch": false,
+      "cacheSignals": []
+    },
+    {
+      "path": "/api/webhooks/lemonsqueezy",
+      "file": "src/app/api/webhooks/lemonsqueezy/route.ts",
+      "methods": [
+        "POST"
+      ],
+      "hasDynamicSegment": false,
+      "usesSupabase": true,
+      "usesAuth": false,
+      "usesExternalFetch": false,
+      "cacheSignals": []
+    },
+    {
+      "path": "/api/webhooks/payrex",
+      "file": "src/app/api/webhooks/payrex/route.ts",
+      "methods": [
+        "POST"
+      ],
+      "hasDynamicSegment": false,
+      "usesSupabase": true,
+      "usesAuth": false,
+      "usesExternalFetch": false,
+      "cacheSignals": []
+    },
+    {
+      "path": "/auth/callback",
+      "file": "src/app/auth/callback/route.ts",
+      "methods": [
+        "GET"
+      ],
+      "hasDynamicSegment": false,
+      "usesSupabase": true,
+      "usesAuth": true,
+      "usesExternalFetch": false,
+      "cacheSignals": []
+    }
+  ],
+  "benchmarkableGetEndpoints": [
+    {
+      "path": "/api/cron/compute-signals",
+      "file": "src/app/api/cron/compute-signals/route.ts",
+      "methods": [
+        "GET"
+      ],
+      "hasDynamicSegment": false,
+      "usesSupabase": true,
+      "usesAuth": false,
+      "usesExternalFetch": false,
+      "cacheSignals": []
+    },
+    {
+      "path": "/api/cron/focus-review-scan",
+      "file": "src/app/api/cron/focus-review-scan/route.ts",
+      "methods": [
+        "GET"
+      ],
+      "hasDynamicSegment": false,
+      "usesSupabase": true,
+      "usesAuth": false,
+      "usesExternalFetch": false,
+      "cacheSignals": []
+    },
+    {
+      "path": "/auth/callback",
+      "file": "src/app/auth/callback/route.ts",
+      "methods": [
+        "GET"
+      ],
+      "hasDynamicSegment": false,
+      "usesSupabase": true,
+      "usesAuth": true,
+      "usesExternalFetch": false,
+      "cacheSignals": []
+    }
+  ],
+  "runs": [
+    {
+      "endpoint": "/api/cron/compute-signals",
+      "file": "src/app/api/cron/compute-signals/route.ts",
+      "runIndex": 1,
+      "scenario": "first",
+      "status": 401,
+      "ok": false,
+      "redirected": false,
+      "locationPath": null,
+      "responseBytes": 24,
+      "ttfbProxyMs": 1170.504500000001,
+      "totalMs": 1170.8025830000006,
+      "error": null
+    },
+    {
+      "endpoint": "/api/cron/compute-signals",
+      "file": "src/app/api/cron/compute-signals/route.ts",
+      "runIndex": 2,
+      "scenario": "warm-repeat",
+      "status": 401,
+      "ok": false,
+      "redirected": false,
+      "locationPath": null,
+      "responseBytes": 24,
+      "ttfbProxyMs": 4.583416999999827,
+      "totalMs": 4.637959000001501,
+      "error": null
+    },
+    {
+      "endpoint": "/api/cron/compute-signals",
+      "file": "src/app/api/cron/compute-signals/route.ts",
+      "runIndex": 3,
+      "scenario": "warm-repeat",
+      "status": 401,
+      "ok": false,
+      "redirected": false,
+      "locationPath": null,
+      "responseBytes": 24,
+      "ttfbProxyMs": 3.680833000000348,
+      "totalMs": 3.7309580000001006,
+      "error": null
+    },
+    {
+      "endpoint": "/api/cron/compute-signals",
+      "file": "src/app/api/cron/compute-signals/route.ts",
+      "runIndex": 4,
+      "scenario": "warm-repeat",
+      "status": 401,
+      "ok": false,
+      "redirected": false,
+      "locationPath": null,
+      "responseBytes": 24,
+      "ttfbProxyMs": 3.4101670000000013,
+      "totalMs": 3.4570420000000013,
+      "error": null
+    },
+    {
+      "endpoint": "/api/cron/compute-signals",
+      "file": "src/app/api/cron/compute-signals/route.ts",
+      "runIndex": 5,
+      "scenario": "warm-repeat",
+      "status": 401,
+      "ok": false,
+      "redirected": false,
+      "locationPath": null,
+      "responseBytes": 24,
+      "ttfbProxyMs": 3.4104999999999563,
+      "totalMs": 3.4661250000008295,
+      "error": null
+    },
+    {
+      "endpoint": "/api/cron/focus-review-scan",
+      "file": "src/app/api/cron/focus-review-scan/route.ts",
+      "runIndex": 1,
+      "scenario": "first",
+      "status": 401,
+      "ok": false,
+      "redirected": false,
+      "locationPath": null,
+      "responseBytes": 24,
+      "ttfbProxyMs": 988.3897080000006,
+      "totalMs": 988.4226660000004,
+      "error": null
+    },
+    {
+      "endpoint": "/api/cron/focus-review-scan",
+      "file": "src/app/api/cron/focus-review-scan/route.ts",
+      "runIndex": 2,
+      "scenario": "warm-repeat",
+      "status": 401,
+      "ok": false,
+      "redirected": false,
+      "locationPath": null,
+      "responseBytes": 24,
+      "ttfbProxyMs": 6.192291999999725,
+      "totalMs": 6.214041999999608,
+      "error": null
+    },
+    {
+      "endpoint": "/api/cron/focus-review-scan",
+      "file": "src/app/api/cron/focus-review-scan/route.ts",
+      "runIndex": 3,
+      "scenario": "warm-repeat",
+      "status": 401,
+      "ok": false,
+      "redirected": false,
+      "locationPath": null,
+      "responseBytes": 24,
+      "ttfbProxyMs": 4.017874999999549,
+      "totalMs": 4.053416999999172,
+      "error": null
+    },
+    {
+      "endpoint": "/api/cron/focus-review-scan",
+      "file": "src/app/api/cron/focus-review-scan/route.ts",
+      "runIndex": 4,
+      "scenario": "warm-repeat",
+      "status": 401,
+      "ok": false,
+      "redirected": false,
+      "locationPath": null,
+      "responseBytes": 24,
+      "ttfbProxyMs": 3.8291250000002037,
+      "totalMs": 3.8678340000005846,
+      "error": null
+    },
+    {
+      "endpoint": "/api/cron/focus-review-scan",
+      "file": "src/app/api/cron/focus-review-scan/route.ts",
+      "runIndex": 5,
+      "scenario": "warm-repeat",
+      "status": 401,
+      "ok": false,
+      "redirected": false,
+      "locationPath": null,
+      "responseBytes": 24,
+      "ttfbProxyMs": 3.19733400000041,
+      "totalMs": 3.2386249999999563,
+      "error": null
+    },
+    {
+      "endpoint": "/auth/callback",
+      "file": "src/app/auth/callback/route.ts",
+      "runIndex": 1,
+      "scenario": "first",
+      "status": 307,
+      "ok": false,
+      "redirected": true,
+      "locationPath": "/dashboard",
+      "responseBytes": 0,
+      "ttfbProxyMs": 3884.9897089999995,
+      "totalMs": 3885.1015000000007,
+      "error": null
+    },
+    {
+      "endpoint": "/auth/callback",
+      "file": "src/app/auth/callback/route.ts",
+      "runIndex": 2,
+      "scenario": "warm-repeat",
+      "status": 307,
+      "ok": false,
+      "redirected": true,
+      "locationPath": "/dashboard",
+      "responseBytes": 0,
+      "ttfbProxyMs": 58.854708999999275,
+      "totalMs": 58.87512500000048,
+      "error": null
+    },
+    {
+      "endpoint": "/auth/callback",
+      "file": "src/app/auth/callback/route.ts",
+      "runIndex": 3,
+      "scenario": "warm-repeat",
+      "status": 307,
+      "ok": false,
+      "redirected": true,
+      "locationPath": "/dashboard",
+      "responseBytes": 0,
+      "ttfbProxyMs": 5.91675000000032,
+      "totalMs": 5.95416699999987,
+      "error": null
+    },
+    {
+      "endpoint": "/auth/callback",
+      "file": "src/app/auth/callback/route.ts",
+      "runIndex": 4,
+      "scenario": "warm-repeat",
+      "status": 307,
+      "ok": false,
+      "redirected": true,
+      "locationPath": "/dashboard",
+      "responseBytes": 0,
+      "ttfbProxyMs": 7.924000000000888,
+      "totalMs": 7.936166999999841,
+      "error": null
+    },
+    {
+      "endpoint": "/auth/callback",
+      "file": "src/app/auth/callback/route.ts",
+      "runIndex": 5,
+      "scenario": "warm-repeat",
+      "status": 307,
+      "ok": false,
+      "redirected": true,
+      "locationPath": "/dashboard",
+      "responseBytes": 0,
+      "ttfbProxyMs": 71.52933400000074,
+      "totalMs": 71.54937500000051,
+      "error": null
+    }
+  ],
+  "endpointSummaries": [
+    {
+      "endpoint": "/api/cron/compute-signals",
+      "file": "src/app/api/cron/compute-signals/route.ts",
+      "methods": [
+        "GET"
+      ],
+      "usesSupabase": true,
+      "usesAuth": false,
+      "cacheSignals": [],
+      "runCount": 5,
+      "errorRate": 0,
+      "timeoutRate": 0,
+      "statusCodes": [
+        401
+      ],
+      "latencyMs": {
+        "count": 5,
+        "min": 3.4570420000000013,
+        "max": 1170.8025830000006,
+        "mean": 237.2189334000006,
+        "median": 3.7309580000001006,
+        "p50": 3.7309580000001006,
+        "p75": 4.637959000001501,
+        "p95": 937.5696582000006,
+        "p99": 1124.1559980400007,
+        "stddev": 466.7920248709252
+      },
+      "ttfbProxyMs": {
+        "count": 5,
+        "min": 3.4101670000000013,
+        "max": 1170.504500000001,
+        "mean": 237.1178834000002,
+        "median": 3.680833000000348,
+        "p50": 3.680833000000348,
+        "p75": 4.583416999999827,
+        "p95": 937.3202834000004,
+        "p99": 1123.867656680001,
+        "stddev": 466.69350721259434
+      },
+      "responseBytes": {
+        "count": 5,
+        "min": 24,
+        "max": 24,
+        "mean": 24,
+        "median": 24,
+        "p50": 24,
+        "p75": 24,
+        "p95": 24,
+        "p99": 24,
+        "stddev": 0
+      }
+    },
+    {
+      "endpoint": "/api/cron/focus-review-scan",
+      "file": "src/app/api/cron/focus-review-scan/route.ts",
+      "methods": [
+        "GET"
+      ],
+      "usesSupabase": true,
+      "usesAuth": false,
+      "cacheSignals": [],
+      "runCount": 5,
+      "errorRate": 0,
+      "timeoutRate": 0,
+      "statusCodes": [
+        401
+      ],
+      "latencyMs": {
+        "count": 5,
+        "min": 3.2386249999999563,
+        "max": 988.4226660000004,
+        "mean": 201.15931679999994,
+        "median": 4.053416999999172,
+        "p50": 4.053416999999172,
+        "p75": 6.214041999999608,
+        "p95": 791.9809412000001,
+        "p99": 949.1343210400004,
+        "stddev": 393.63295246318756
+      },
+      "ttfbProxyMs": {
+        "count": 5,
+        "min": 3.19733400000041,
+        "max": 988.3897080000006,
+        "mean": 201.1252668000001,
+        "median": 4.017874999999549,
+        "p50": 4.017874999999549,
+        "p75": 6.192291999999725,
+        "p95": 791.9502248000002,
+        "p99": 949.1018113600005,
+        "stddev": 393.6335156198396
+      },
+      "responseBytes": {
+        "count": 5,
+        "min": 24,
+        "max": 24,
+        "mean": 24,
+        "median": 24,
+        "p50": 24,
+        "p75": 24,
+        "p95": 24,
+        "p99": 24,
+        "stddev": 0
+      }
+    },
+    {
+      "endpoint": "/auth/callback",
+      "file": "src/app/auth/callback/route.ts",
+      "methods": [
+        "GET"
+      ],
+      "usesSupabase": true,
+      "usesAuth": true,
+      "cacheSignals": [],
+      "runCount": 5,
+      "errorRate": 0,
+      "timeoutRate": 0,
+      "statusCodes": [
+        307
+      ],
+      "latencyMs": {
+        "count": 5,
+        "min": 5.95416699999987,
+        "max": 3885.1015000000007,
+        "mean": 805.8832668000002,
+        "median": 58.87512500000048,
+        "p50": 58.87512500000048,
+        "p75": 71.54937500000051,
+        "p95": 3122.391075,
+        "p99": 3732.5594150000006,
+        "stddev": 1539.8349583652803
+      },
+      "ttfbProxyMs": {
+        "count": 5,
+        "min": 5.91675000000032,
+        "max": 3884.9897089999995,
+        "mean": 805.8429004000002,
+        "median": 58.854708999999275,
+        "p50": 58.854708999999275,
+        "p75": 71.52933400000074,
+        "p95": 3122.297633999999,
+        "p99": 3732.4512939999995,
+        "stddev": 1539.7992894212543
+      },
+      "responseBytes": {
+        "count": 5,
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "median": 0,
+        "p50": 0,
+        "p75": 0,
+        "p95": 0,
+        "p99": 0,
+        "stddev": 0
+      }
+    }
+  ],
+  "summary": {
+    "count": 15,
+    "min": 3.2386249999999563,
+    "max": 3885.1015000000007,
+    "mean": 414.75383900000026,
+    "median": 5.95416699999987,
+    "p50": 5.95416699999987,
+    "p75": 65.2122500000005,
+    "p95": 1985.0922580999977,
+    "p99": 3505.099651619999,
+    "stddev": 995.6667592896719
+  },
+  "notes": [
+    "Only static GET route handlers were automatically benchmarked to avoid destructive operations and missing dynamic params.",
+    "TTFB proxy is measured as fetch response header arrival time in the Node/Bun fetch client.",
+    "The script auto-started a local Playwright web server because the target was initially unreachable."
+  ]
+}

@@ -1,0 +1,4974 @@
+{
+  "timestamp": "2026-04-26T17:37:27.868Z",
+  "frameworkAndRuntime": {
+    "next": "16.2.3",
+    "react": "^19.2.5",
+    "nodeType": "Next.js App Router application; Bun script runner/package manager; Node-compatible runtime.",
+    "packageManager": "bun"
+  },
+  "packageScripts": {
+    "dev": "bun run scripts/dev.js",
+    "dev:turbo": "next dev --turbopack",
+    "dev:webpack": "next dev --webpack",
+    "build": "next build",
+    "start": "next start",
+    "check:storybook": "bun scripts/check-storybook.ts",
+    "storybook": "bun run check:storybook && storybook dev -p 6006",
+    "build-storybook": "bun run check:storybook && storybook build",
+    "lint": "bun run check:storybook && eslint .",
+    "lint:fix": "eslint . --fix",
+    "test:e2e": "bun scripts/playwright-run.ts all",
+    "test:e2e:smoke": "bun scripts/playwright-run.ts smoke",
+    "test:e2e:prod": "bun scripts/playwright-run.ts prod",
+    "test:e2e:auth-demo": "bun scripts/playwright-run.ts auth-demo",
+    "test:e2e:auth-demo:learning": "bun scripts/playwright-run.ts auth-demo-learning",
+    "test:e2e:auth-demo:portals": "bun scripts/playwright-run.ts auth-demo-portals",
+    "test:e2e:auth-demo:3d-lab": "bun scripts/playwright-run.ts auth-demo-3d-lab",
+    "test:e2e:auth-demo:restricted": "bun scripts/playwright-run.ts auth-demo-restricted",
+    "test:e2e:headed": "bun scripts/playwright-run.ts headed",
+    "test:e2e:ui": "bun scripts/playwright-run.ts ui",
+    "check:entitlements": "bun run scripts/check-entitlement-legacy-usage.ts",
+    "design:lint": "bunx --bun @google/design.md@0.1.0 lint DESIGN.md",
+    "type-check": "bun scripts/type-check.ts",
+    "validate:release": "bun run type-check && bun run lint && bun run check:entitlements && bun audit && bun run build && bun run test:e2e:prod && bun run test:e2e:auth-demo && bun run test:e2e:auth-demo:learning && bun run test:e2e:auth-demo:restricted && bun run test:e2e:auth-demo:portals && bun run test:e2e:auth-demo:3d-lab",
+    "db:seed": "bun scripts/seed.ts",
+    "bones:build": "boneyard-js build http://localhost:3000/dashboard --out ./src/bones",
+    "perf:environment": "bun .ai/00_performance/scripts/environment.mjs",
+    "perf:inventory": "bun .ai/00_performance/scripts/inventory.mjs",
+    "perf:frontend": "PLAYWRIGHT_DEMO_AUTH=true bunx playwright test --config=.ai/00_performance/playwright/playwright.perf.config.ts --project=chromium --workers=1",
+    "perf:e2e": "bun run perf:frontend",
+    "perf:api": "bun .ai/00_performance/scripts/api-benchmark.mjs",
+    "perf:supabase": "bun .ai/00_performance/scripts/supabase-inventory.mjs",
+    "perf:build": "bun .ai/00_performance/scripts/build-startup.mjs",
+    "perf:hotspots": "bun .ai/00_performance/scripts/hotspot-audit.mjs",
+    "perf:summary": "bun .ai/00_performance/scripts/summarize.mjs",
+    "perf:all": "bun run perf:inventory && bun run perf:environment && bun run perf:supabase && bun run perf:hotspots && bun run perf:api && bun run perf:frontend && bun run perf:build && bun run perf:summary"
+  },
+  "installedPerformanceTools": [
+    {
+      "name": "@playwright/test",
+      "installed": true,
+      "version": "1.59.1"
+    },
+    {
+      "name": "cypress",
+      "installed": false,
+      "version": null
+    },
+    {
+      "name": "vitest",
+      "installed": false,
+      "version": null
+    },
+    {
+      "name": "jest",
+      "installed": false,
+      "version": null
+    },
+    {
+      "name": "lighthouse",
+      "installed": false,
+      "version": null
+    },
+    {
+      "name": "web-vitals",
+      "installed": false,
+      "version": null
+    },
+    {
+      "name": "k6",
+      "installed": false,
+      "version": null
+    },
+    {
+      "name": "autocannon",
+      "installed": false,
+      "version": null
+    },
+    {
+      "name": "clinic",
+      "installed": false,
+      "version": null
+    },
+    {
+      "name": "@next/bundle-analyzer",
+      "installed": false,
+      "version": null
+    },
+    {
+      "name": "webpack-bundle-analyzer",
+      "installed": false,
+      "version": null
+    },
+    {
+      "name": "react-scan",
+      "installed": false,
+      "version": null
+    }
+  ],
+  "testFrameworks": {
+    "playwright": true,
+    "cypress": false,
+    "vitest": false,
+    "jest": false,
+    "eslint": true,
+    "typescript": true
+  },
+  "routes": {
+    "pages": [
+      {
+        "path": "/",
+        "file": "src/app/page.tsx"
+      },
+      {
+        "path": "/about",
+        "file": "src/app/about/page.tsx"
+      },
+      {
+        "path": "/admin",
+        "file": "src/app/admin/page.tsx"
+      },
+      {
+        "path": "/admin/3d-models",
+        "file": "src/app/admin/3d-models/page.tsx"
+      },
+      {
+        "path": "/admin/activity",
+        "file": "src/app/admin/activity/page.tsx"
+      },
+      {
+        "path": "/admin/assets",
+        "file": "src/app/admin/assets/page.tsx"
+      },
+      {
+        "path": "/admin/assets/:id",
+        "file": "src/app/admin/assets/[id]/page.tsx"
+      },
+      {
+        "path": "/admin/audit",
+        "file": "src/app/admin/audit/page.tsx"
+      },
+      {
+        "path": "/admin/knowledge",
+        "file": "src/app/admin/knowledge/page.tsx"
+      },
+      {
+        "path": "/admin/knowledge/:id",
+        "file": "src/app/admin/knowledge/[id]/page.tsx"
+      },
+      {
+        "path": "/admin/knowledge/analytics",
+        "file": "src/app/admin/knowledge/analytics/page.tsx"
+      },
+      {
+        "path": "/admin/knowledge/import",
+        "file": "src/app/admin/knowledge/import/page.tsx"
+      },
+      {
+        "path": "/admin/knowledge/new",
+        "file": "src/app/admin/knowledge/new/page.tsx"
+      },
+      {
+        "path": "/admin/knowledge/questions",
+        "file": "src/app/admin/knowledge/questions/page.tsx"
+      },
+      {
+        "path": "/admin/knowledge/questions/:id",
+        "file": "src/app/admin/knowledge/questions/[id]/page.tsx"
+      },
+      {
+        "path": "/admin/knowledge/questions/design-problems",
+        "file": "src/app/admin/knowledge/questions/design-problems/page.tsx"
+      },
+      {
+        "path": "/admin/knowledge/questions/design-problems/:id",
+        "file": "src/app/admin/knowledge/questions/design-problems/[id]/page.tsx"
+      },
+      {
+        "path": "/admin/knowledge/questions/new",
+        "file": "src/app/admin/knowledge/questions/new/page.tsx"
+      },
+      {
+        "path": "/admin/knowledge/questions/scenarios",
+        "file": "src/app/admin/knowledge/questions/scenarios/page.tsx"
+      },
+      {
+        "path": "/admin/knowledge/questions/scenarios/:id",
+        "file": "src/app/admin/knowledge/questions/scenarios/[id]/page.tsx"
+      },
+      {
+        "path": "/admin/login",
+        "file": "src/app/(admin-public)/admin/login/page.tsx"
+      },
+      {
+        "path": "/admin/pipeline",
+        "file": "src/app/admin/pipeline/page.tsx"
+      },
+      {
+        "path": "/admin/preview/:previewId",
+        "file": "src/app/admin/preview/[previewId]/page.tsx"
+      },
+      {
+        "path": "/admin/reviews",
+        "file": "src/app/admin/reviews/page.tsx"
+      },
+      {
+        "path": "/admin/search",
+        "file": "src/app/admin/search/page.tsx"
+      },
+      {
+        "path": "/admin/settings",
+        "file": "src/app/admin/settings/page.tsx"
+      },
+      {
+        "path": "/admin/taxonomy",
+        "file": "src/app/admin/taxonomy/page.tsx"
+      },
+      {
+        "path": "/admin/taxonomy/coverage",
+        "file": "src/app/admin/taxonomy/coverage/page.tsx"
+      },
+      {
+        "path": "/admin/wiki",
+        "file": "src/app/admin/wiki/page.tsx"
+      },
+      {
+        "path": "/auth/reset-password",
+        "file": "src/app/auth/reset-password/page.tsx"
+      },
+      {
+        "path": "/calculators",
+        "file": "src/app/calculators/page.tsx"
+      },
+      {
+        "path": "/calculators/chb",
+        "file": "src/app/calculators/chb/page.tsx"
+      },
+      {
+        "path": "/calculators/drywall",
+        "file": "src/app/calculators/drywall/page.tsx"
+      },
+      {
+        "path": "/calculators/flooring",
+        "file": "src/app/calculators/flooring/page.tsx"
+      },
+      {
+        "path": "/calculators/paint",
+        "file": "src/app/calculators/paint/page.tsx"
+      },
+      {
+        "path": "/ceo",
+        "file": "src/app/(protected)/ceo/page.tsx"
+      },
+      {
+        "path": "/ceo/analytics",
+        "file": "src/app/(protected)/ceo/analytics/page.tsx"
+      },
+      {
+        "path": "/ceo/financials",
+        "file": "src/app/(protected)/ceo/financials/page.tsx"
+      },
+      {
+        "path": "/ceo/insights",
+        "file": "src/app/(protected)/ceo/insights/page.tsx"
+      },
+      {
+        "path": "/ceo/team",
+        "file": "src/app/(protected)/ceo/team/page.tsx"
+      },
+      {
+        "path": "/contact",
+        "file": "src/app/contact/page.tsx"
+      },
+      {
+        "path": "/dashboard",
+        "file": "src/app/dashboard/page.tsx"
+      },
+      {
+        "path": "/dashboard/3d-lab",
+        "file": "src/app/dashboard/3d-lab/page.tsx"
+      },
+      {
+        "path": "/dashboard/3d-lab/:moduleId",
+        "file": "src/app/dashboard/3d-lab/[moduleId]/page.tsx"
+      },
+      {
+        "path": "/dashboard/analytics",
+        "file": "src/app/dashboard/analytics/page.tsx"
+      },
+      {
+        "path": "/dashboard/analytics/advanced",
+        "file": "src/app/dashboard/analytics/advanced/page.tsx"
+      },
+      {
+        "path": "/dashboard/area-c",
+        "file": "src/app/dashboard/area-c/page.tsx"
+      },
+      {
+        "path": "/dashboard/area-c/calculator",
+        "file": "src/app/dashboard/area-c/calculator/page.tsx"
+      },
+      {
+        "path": "/dashboard/area-c/design-problems",
+        "file": "src/app/dashboard/area-c/design-problems/page.tsx"
+      },
+      {
+        "path": "/dashboard/area-c/design-problems/:problemId",
+        "file": "src/app/dashboard/area-c/design-problems/[problemId]/page.tsx"
+      },
+      {
+        "path": "/dashboard/area-c/design-quiz",
+        "file": "src/app/dashboard/area-c/design-quiz/page.tsx"
+      },
+      {
+        "path": "/dashboard/area-c/design-quiz/:scenarioId",
+        "file": "src/app/dashboard/area-c/design-quiz/[scenarioId]/page.tsx"
+      },
+      {
+        "path": "/dashboard/assessment",
+        "file": "src/app/dashboard/assessment/page.tsx"
+      },
+      {
+        "path": "/dashboard/camptrails",
+        "file": "src/app/dashboard/camptrails/page.tsx"
+      },
+      {
+        "path": "/dashboard/camptrails/:slug",
+        "file": "src/app/dashboard/camptrails/[slug]/page.tsx"
+      },
+      {
+        "path": "/dashboard/camptrails/:slug/day/:dayNumber/complete",
+        "file": "src/app/dashboard/camptrails/[slug]/day/[dayNumber]/complete/page.tsx"
+      },
+      {
+        "path": "/dashboard/camptrails/:slug/today",
+        "file": "src/app/dashboard/camptrails/[slug]/today/page.tsx"
+      },
+      {
+        "path": "/dashboard/code-updates",
+        "file": "src/app/dashboard/code-updates/page.tsx"
+      },
+      {
+        "path": "/dashboard/cram-card",
+        "file": "src/app/dashboard/cram-card/page.tsx"
+      },
+      {
+        "path": "/dashboard/dae-mode",
+        "file": "src/app/dashboard/dae-mode/page.tsx"
+      },
+      {
+        "path": "/dashboard/drills",
+        "file": "src/app/dashboard/drills/page.tsx"
+      },
+      {
+        "path": "/dashboard/drills/sessions",
+        "file": "src/app/dashboard/drills/sessions/page.tsx"
+      },
+      {
+        "path": "/dashboard/exam-outcome",
+        "file": "src/app/dashboard/exam-outcome/page.tsx"
+      },
+      {
+        "path": "/dashboard/flash",
+        "file": "src/app/dashboard/flash/page.tsx"
+      },
+      {
+        "path": "/dashboard/flash/:category",
+        "file": "src/app/dashboard/flash/[category]/page.tsx"
+      },
+      {
+        "path": "/dashboard/heatmap",
+        "file": "src/app/dashboard/heatmap/page.tsx"
+      },
+      {
+        "path": "/dashboard/notes",
+        "file": "src/app/dashboard/notes/page.tsx"
+      },
+      {
+        "path": "/dashboard/notifications",
+        "file": "src/app/dashboard/notifications/page.tsx"
+      },
+      {
+        "path": "/dashboard/pods",
+        "file": "src/app/dashboard/pods/page.tsx"
+      },
+      {
+        "path": "/dashboard/pods/:podId",
+        "file": "src/app/dashboard/pods/[podId]/page.tsx"
+      },
+      {
+        "path": "/dashboard/professional",
+        "file": "src/app/dashboard/professional/page.tsx"
+      },
+      {
+        "path": "/dashboard/results-day",
+        "file": "src/app/dashboard/results-day/page.tsx"
+      },
+      {
+        "path": "/dashboard/score-reveal",
+        "file": "src/app/dashboard/score-reveal/page.tsx"
+      },
+      {
+        "path": "/dashboard/settings",
+        "file": "src/app/dashboard/settings/page.tsx"
+      },
+      {
+        "path": "/dashboard/settings/billing",
+        "file": "src/app/dashboard/settings/billing/page.tsx"
+      },
+      {
+        "path": "/dashboard/settings/developer",
+        "file": "src/app/dashboard/settings/developer/page.tsx"
+      },
+      {
+        "path": "/dashboard/studio",
+        "file": "src/app/dashboard/studio/page.tsx"
+      },
+      {
+        "path": "/dashboard/trail",
+        "file": "src/app/dashboard/trail/page.tsx"
+      },
+      {
+        "path": "/dashboard/trails",
+        "file": "src/app/dashboard/trails/page.tsx"
+      },
+      {
+        "path": "/dashboard/upgrade",
+        "file": "src/app/dashboard/upgrade/page.tsx"
+      },
+      {
+        "path": "/dashboard/welcome-pro",
+        "file": "src/app/dashboard/welcome-pro/page.tsx"
+      },
+      {
+        "path": "/dashboard/wiki",
+        "file": "src/app/dashboard/wiki/page.tsx"
+      },
+      {
+        "path": "/dashboard/wiki/:slug",
+        "file": "src/app/dashboard/wiki/[slug]/page.tsx"
+      },
+      {
+        "path": "/developer",
+        "file": "src/app/developer/page.tsx"
+      },
+      {
+        "path": "/developer/api-reference",
+        "file": "src/app/developer/api-reference/page.tsx"
+      },
+      {
+        "path": "/developer/architecture",
+        "file": "src/app/developer/architecture/page.tsx"
+      },
+      {
+        "path": "/developer/status",
+        "file": "src/app/developer/status/page.tsx"
+      },
+      {
+        "path": "/developer/status/database",
+        "file": "src/app/developer/status/database/page.tsx"
+      },
+      {
+        "path": "/developer/status/infrastructure",
+        "file": "src/app/developer/status/infrastructure/page.tsx"
+      },
+      {
+        "path": "/developer/tools",
+        "file": "src/app/developer/tools/page.tsx"
+      },
+      {
+        "path": "/developer/tools/console",
+        "file": "src/app/developer/tools/console/page.tsx"
+      },
+      {
+        "path": "/developer/tools/db",
+        "file": "src/app/developer/tools/db/page.tsx"
+      },
+      {
+        "path": "/developer/tools/logs",
+        "file": "src/app/developer/tools/logs/page.tsx"
+      },
+      {
+        "path": "/developer/tools/test-data",
+        "file": "src/app/developer/tools/test-data/page.tsx"
+      },
+      {
+        "path": "/forgot-password",
+        "file": "src/app/(auth)/forgot-password/page.tsx"
+      },
+      {
+        "path": "/login",
+        "file": "src/app/(auth)/login/page.tsx"
+      },
+      {
+        "path": "/onboarding",
+        "file": "src/app/(auth)/onboarding/page.tsx"
+      },
+      {
+        "path": "/onboarding/comp-exam",
+        "file": "src/app/(auth)/onboarding/comp-exam/page.tsx"
+      },
+      {
+        "path": "/pricing",
+        "file": "src/app/pricing/page.tsx"
+      },
+      {
+        "path": "/quiz",
+        "file": "src/app/quiz/page.tsx"
+      },
+      {
+        "path": "/quiz/:mode/session/:sessionId",
+        "file": "src/app/quiz/[mode]/session/[sessionId]/page.tsx"
+      },
+      {
+        "path": "/quiz/:mode/session/:sessionId/results",
+        "file": "src/app/quiz/[mode]/session/[sessionId]/results/page.tsx"
+      },
+      {
+        "path": "/quiz/:mode/session/:sessionId/review",
+        "file": "src/app/quiz/[mode]/session/[sessionId]/review/page.tsx"
+      },
+      {
+        "path": "/quiz/:mode/setup",
+        "file": "src/app/quiz/[mode]/setup/page.tsx"
+      },
+      {
+        "path": "/register",
+        "file": "src/app/(auth)/register/page.tsx"
+      },
+      {
+        "path": "/settings",
+        "file": "src/app/settings/page.tsx"
+      },
+      {
+        "path": "/test-3d",
+        "file": "src/app/test-3d/page.tsx"
+      },
+      {
+        "path": "/tools",
+        "file": "src/app/tools/page.tsx"
+      },
+      {
+        "path": "/tools/floor-tiles-calculator",
+        "file": "src/app/tools/floor-tiles-calculator/page.tsx"
+      },
+      {
+        "path": "/tools/lot-plotter",
+        "file": "src/app/tools/lot-plotter/page.tsx"
+      },
+      {
+        "path": "/tools/wall-paint-calculator",
+        "file": "src/app/tools/wall-paint-calculator/page.tsx"
+      },
+      {
+        "path": "/try",
+        "file": "src/app/try/page.tsx"
+      }
+    ],
+    "layouts": [
+      {
+        "path": "/developer",
+        "file": "src/app/developer/layout.tsx"
+      },
+      {
+        "path": "/test-3d",
+        "file": "src/app/test-3d/layout.tsx"
+      },
+      {
+        "path": "/admin/search",
+        "file": "src/app/admin/search/layout.tsx"
+      },
+      {
+        "path": "/admin",
+        "file": "src/app/admin/layout.tsx"
+      },
+      {
+        "path": "/quiz",
+        "file": "src/app/quiz/layout.tsx"
+      },
+      {
+        "path": "/dashboard/score-reveal",
+        "file": "src/app/dashboard/score-reveal/layout.tsx"
+      },
+      {
+        "path": "/dashboard/3d-lab",
+        "file": "src/app/dashboard/3d-lab/layout.tsx"
+      },
+      {
+        "path": "/dashboard/wiki",
+        "file": "src/app/dashboard/wiki/layout.tsx"
+      },
+      {
+        "path": "/dashboard/notes",
+        "file": "src/app/dashboard/notes/layout.tsx"
+      },
+      {
+        "path": "/dashboard",
+        "file": "src/app/dashboard/layout.tsx"
+      },
+      {
+        "path": "/dashboard/drills",
+        "file": "src/app/dashboard/drills/layout.tsx"
+      },
+      {
+        "path": "/dashboard/analytics",
+        "file": "src/app/dashboard/analytics/layout.tsx"
+      },
+      {
+        "path": "/ceo",
+        "file": "src/app/(protected)/ceo/layout.tsx"
+      },
+      {
+        "path": "/",
+        "file": "src/app/layout.tsx"
+      },
+      {
+        "path": "/calculators",
+        "file": "src/app/calculators/layout.tsx"
+      }
+    ],
+    "loading": [
+      {
+        "path": "/developer/tools/test-data",
+        "file": "src/app/developer/tools/test-data/loading.tsx"
+      },
+      {
+        "path": "/developer/tools/logs",
+        "file": "src/app/developer/tools/logs/loading.tsx"
+      },
+      {
+        "path": "/developer/tools/db",
+        "file": "src/app/developer/tools/db/loading.tsx"
+      },
+      {
+        "path": "/developer/tools",
+        "file": "src/app/developer/tools/loading.tsx"
+      },
+      {
+        "path": "/developer/tools/console",
+        "file": "src/app/developer/tools/console/loading.tsx"
+      },
+      {
+        "path": "/developer/api-reference",
+        "file": "src/app/developer/api-reference/loading.tsx"
+      },
+      {
+        "path": "/developer/status/database",
+        "file": "src/app/developer/status/database/loading.tsx"
+      },
+      {
+        "path": "/developer/status",
+        "file": "src/app/developer/status/loading.tsx"
+      },
+      {
+        "path": "/developer/status/infrastructure",
+        "file": "src/app/developer/status/infrastructure/loading.tsx"
+      },
+      {
+        "path": "/developer/architecture",
+        "file": "src/app/developer/architecture/loading.tsx"
+      },
+      {
+        "path": "/developer",
+        "file": "src/app/developer/loading.tsx"
+      },
+      {
+        "path": "/contact",
+        "file": "src/app/contact/loading.tsx"
+      },
+      {
+        "path": "/tools/floor-tiles-calculator",
+        "file": "src/app/tools/floor-tiles-calculator/loading.tsx"
+      },
+      {
+        "path": "/tools/lot-plotter",
+        "file": "src/app/tools/lot-plotter/loading.tsx"
+      },
+      {
+        "path": "/tools/wall-paint-calculator",
+        "file": "src/app/tools/wall-paint-calculator/loading.tsx"
+      },
+      {
+        "path": "/tools",
+        "file": "src/app/tools/loading.tsx"
+      },
+      {
+        "path": "/admin/settings",
+        "file": "src/app/admin/settings/loading.tsx"
+      },
+      {
+        "path": "/admin/pipeline",
+        "file": "src/app/admin/pipeline/loading.tsx"
+      },
+      {
+        "path": "/admin/activity",
+        "file": "src/app/admin/activity/loading.tsx"
+      },
+      {
+        "path": "/admin/articles/:id",
+        "file": "src/app/admin/articles/[id]/loading.tsx"
+      },
+      {
+        "path": "/admin/search",
+        "file": "src/app/admin/search/loading.tsx"
+      },
+      {
+        "path": "/admin/dashboard",
+        "file": "src/app/admin/dashboard/loading.tsx"
+      },
+      {
+        "path": "/admin/audit",
+        "file": "src/app/admin/audit/loading.tsx"
+      },
+      {
+        "path": "/admin/knowledge/new",
+        "file": "src/app/admin/knowledge/new/loading.tsx"
+      },
+      {
+        "path": "/admin/knowledge",
+        "file": "src/app/admin/knowledge/loading.tsx"
+      },
+      {
+        "path": "/admin/knowledge/:id",
+        "file": "src/app/admin/knowledge/[id]/loading.tsx"
+      },
+      {
+        "path": "/admin/knowledge/import",
+        "file": "src/app/admin/knowledge/import/loading.tsx"
+      },
+      {
+        "path": "/admin/knowledge/analytics",
+        "file": "src/app/admin/knowledge/analytics/loading.tsx"
+      },
+      {
+        "path": "/admin/knowledge/questions/new",
+        "file": "src/app/admin/knowledge/questions/new/loading.tsx"
+      },
+      {
+        "path": "/admin/knowledge/questions",
+        "file": "src/app/admin/knowledge/questions/loading.tsx"
+      },
+      {
+        "path": "/admin/taxonomy",
+        "file": "src/app/admin/taxonomy/loading.tsx"
+      },
+      {
+        "path": "/admin/taxonomy/coverage",
+        "file": "src/app/admin/taxonomy/coverage/loading.tsx"
+      },
+      {
+        "path": "/admin/3d-models",
+        "file": "src/app/admin/3d-models/loading.tsx"
+      },
+      {
+        "path": "/admin",
+        "file": "src/app/admin/loading.tsx"
+      },
+      {
+        "path": "/admin/assets",
+        "file": "src/app/admin/assets/loading.tsx"
+      },
+      {
+        "path": "/admin/assets/:id",
+        "file": "src/app/admin/assets/[id]/loading.tsx"
+      },
+      {
+        "path": "/admin/login",
+        "file": "src/app/admin/login/loading.tsx"
+      },
+      {
+        "path": "/admin/reviews",
+        "file": "src/app/admin/reviews/loading.tsx"
+      },
+      {
+        "path": "/quiz/:mode/setup",
+        "file": "src/app/quiz/[mode]/setup/loading.tsx"
+      },
+      {
+        "path": "/quiz/:mode/session/:sessionId/results",
+        "file": "src/app/quiz/[mode]/session/[sessionId]/results/loading.tsx"
+      },
+      {
+        "path": "/quiz/:mode/session/:sessionId/review",
+        "file": "src/app/quiz/[mode]/session/[sessionId]/review/loading.tsx"
+      },
+      {
+        "path": "/quiz/:mode/session/:sessionId",
+        "file": "src/app/quiz/[mode]/session/[sessionId]/loading.tsx"
+      },
+      {
+        "path": "/quiz",
+        "file": "src/app/quiz/loading.tsx"
+      },
+      {
+        "path": "/about",
+        "file": "src/app/about/loading.tsx"
+      },
+      {
+        "path": "/dashboard/settings",
+        "file": "src/app/dashboard/settings/loading.tsx"
+      },
+      {
+        "path": "/dashboard/studio",
+        "file": "src/app/dashboard/studio/loading.tsx"
+      },
+      {
+        "path": "/dashboard/upgrade",
+        "file": "src/app/dashboard/upgrade/loading.tsx"
+      },
+      {
+        "path": "/dashboard/professional",
+        "file": "src/app/dashboard/professional/loading.tsx"
+      },
+      {
+        "path": "/dashboard/exam-outcome",
+        "file": "src/app/dashboard/exam-outcome/loading.tsx"
+      },
+      {
+        "path": "/dashboard/score-reveal",
+        "file": "src/app/dashboard/score-reveal/loading.tsx"
+      },
+      {
+        "path": "/dashboard/welcome-pro",
+        "file": "src/app/dashboard/welcome-pro/loading.tsx"
+      },
+      {
+        "path": "/dashboard/3d-lab/:moduleId",
+        "file": "src/app/dashboard/3d-lab/[moduleId]/loading.tsx"
+      },
+      {
+        "path": "/dashboard/3d-lab",
+        "file": "src/app/dashboard/3d-lab/loading.tsx"
+      },
+      {
+        "path": "/dashboard/wiki",
+        "file": "src/app/dashboard/wiki/loading.tsx"
+      },
+      {
+        "path": "/dashboard/wiki/:slug",
+        "file": "src/app/dashboard/wiki/[slug]/loading.tsx"
+      },
+      {
+        "path": "/dashboard/assessment",
+        "file": "src/app/dashboard/assessment/loading.tsx"
+      },
+      {
+        "path": "/dashboard/camptrails",
+        "file": "src/app/dashboard/camptrails/loading.tsx"
+      },
+      {
+        "path": "/dashboard/camptrails/:slug/today",
+        "file": "src/app/dashboard/camptrails/[slug]/today/loading.tsx"
+      },
+      {
+        "path": "/dashboard/camptrails/:slug",
+        "file": "src/app/dashboard/camptrails/[slug]/loading.tsx"
+      },
+      {
+        "path": "/dashboard/camptrails/:slug/day/:dayNumber/complete",
+        "file": "src/app/dashboard/camptrails/[slug]/day/[dayNumber]/complete/loading.tsx"
+      },
+      {
+        "path": "/dashboard/results-day",
+        "file": "src/app/dashboard/results-day/loading.tsx"
+      },
+      {
+        "path": "/dashboard/cram-card",
+        "file": "src/app/dashboard/cram-card/loading.tsx"
+      },
+      {
+        "path": "/dashboard/flash/:category",
+        "file": "src/app/dashboard/flash/[category]/loading.tsx"
+      },
+      {
+        "path": "/dashboard/flash",
+        "file": "src/app/dashboard/flash/loading.tsx"
+      },
+      {
+        "path": "/dashboard/code-updates",
+        "file": "src/app/dashboard/code-updates/loading.tsx"
+      },
+      {
+        "path": "/dashboard/notes",
+        "file": "src/app/dashboard/notes/loading.tsx"
+      },
+      {
+        "path": "/dashboard/pods",
+        "file": "src/app/dashboard/pods/loading.tsx"
+      },
+      {
+        "path": "/dashboard/pods/:podId",
+        "file": "src/app/dashboard/pods/[podId]/loading.tsx"
+      },
+      {
+        "path": "/dashboard/dae-mode",
+        "file": "src/app/dashboard/dae-mode/loading.tsx"
+      },
+      {
+        "path": "/dashboard",
+        "file": "src/app/dashboard/loading.tsx"
+      },
+      {
+        "path": "/dashboard/drills/sessions",
+        "file": "src/app/dashboard/drills/sessions/loading.tsx"
+      },
+      {
+        "path": "/dashboard/drills",
+        "file": "src/app/dashboard/drills/loading.tsx"
+      },
+      {
+        "path": "/dashboard/notifications",
+        "file": "src/app/dashboard/notifications/loading.tsx"
+      },
+      {
+        "path": "/dashboard/analytics/advanced",
+        "file": "src/app/dashboard/analytics/advanced/loading.tsx"
+      },
+      {
+        "path": "/dashboard/analytics",
+        "file": "src/app/dashboard/analytics/loading.tsx"
+      },
+      {
+        "path": "/dashboard/area-c/design-quiz/:scenarioId",
+        "file": "src/app/dashboard/area-c/design-quiz/[scenarioId]/loading.tsx"
+      },
+      {
+        "path": "/dashboard/area-c/design-quiz",
+        "file": "src/app/dashboard/area-c/design-quiz/loading.tsx"
+      },
+      {
+        "path": "/dashboard/area-c/design-problems/:problemId",
+        "file": "src/app/dashboard/area-c/design-problems/[problemId]/loading.tsx"
+      },
+      {
+        "path": "/dashboard/area-c/design-problems",
+        "file": "src/app/dashboard/area-c/design-problems/loading.tsx"
+      },
+      {
+        "path": "/dashboard/area-c/calculator",
+        "file": "src/app/dashboard/area-c/calculator/loading.tsx"
+      },
+      {
+        "path": "/dashboard/area-c",
+        "file": "src/app/dashboard/area-c/loading.tsx"
+      },
+      {
+        "path": "/ceo/insights",
+        "file": "src/app/(protected)/ceo/insights/loading.tsx"
+      },
+      {
+        "path": "/ceo/financials",
+        "file": "src/app/(protected)/ceo/financials/loading.tsx"
+      },
+      {
+        "path": "/ceo/team",
+        "file": "src/app/(protected)/ceo/team/loading.tsx"
+      },
+      {
+        "path": "/ceo",
+        "file": "src/app/(protected)/ceo/loading.tsx"
+      },
+      {
+        "path": "/try",
+        "file": "src/app/try/loading.tsx"
+      },
+      {
+        "path": "/",
+        "file": "src/app/loading.tsx"
+      },
+      {
+        "path": "/register",
+        "file": "src/app/(auth)/register/loading.tsx"
+      },
+      {
+        "path": "/forgot-password",
+        "file": "src/app/(auth)/forgot-password/loading.tsx"
+      },
+      {
+        "path": "/login",
+        "file": "src/app/(auth)/login/loading.tsx"
+      },
+      {
+        "path": "/onboarding",
+        "file": "src/app/(auth)/onboarding/loading.tsx"
+      },
+      {
+        "path": "/pricing",
+        "file": "src/app/pricing/loading.tsx"
+      }
+    ],
+    "errors": [
+      {
+        "path": "/developer",
+        "file": "src/app/developer/error.tsx"
+      },
+      {
+        "path": "/admin",
+        "file": "src/app/admin/error.tsx"
+      },
+      {
+        "path": "/dashboard/3d-lab",
+        "file": "src/app/dashboard/3d-lab/error.tsx"
+      },
+      {
+        "path": "/dashboard",
+        "file": "src/app/dashboard/error.tsx"
+      },
+      {
+        "path": "/dashboard/analytics",
+        "file": "src/app/dashboard/analytics/error.tsx"
+      },
+      {
+        "path": "/",
+        "file": "src/app/error.tsx"
+      },
+      {
+        "path": "/",
+        "file": "src/app/(auth)/error.tsx"
+      }
+    ],
+    "routeHandlers": [
+      {
+        "path": "/api/admin/flags",
+        "file": "src/app/api/admin/flags/route.ts",
+        "methods": [
+          "POST",
+          "DELETE"
+        ],
+        "runtime": null,
+        "dynamic": null,
+        "usesSupabase": false,
+        "usesAuth": false,
+        "usesExternalFetch": false
+      },
+      {
+        "path": "/api/ai/embed",
+        "file": "src/app/api/ai/embed/route.ts",
+        "methods": [
+          "POST"
+        ],
+        "runtime": null,
+        "dynamic": null,
+        "usesSupabase": true,
+        "usesAuth": true,
+        "usesExternalFetch": false
+      },
+      {
+        "path": "/api/ai/generate-questions",
+        "file": "src/app/api/ai/generate-questions/route.ts",
+        "methods": [
+          "POST"
+        ],
+        "runtime": null,
+        "dynamic": null,
+        "usesSupabase": true,
+        "usesAuth": true,
+        "usesExternalFetch": false
+      },
+      {
+        "path": "/api/ai/socratic",
+        "file": "src/app/api/ai/socratic/route.ts",
+        "methods": [],
+        "runtime": null,
+        "dynamic": null,
+        "usesSupabase": true,
+        "usesAuth": true,
+        "usesExternalFetch": false
+      },
+      {
+        "path": "/api/ai/study-agent",
+        "file": "src/app/api/ai/study-agent/route.ts",
+        "methods": [
+          "POST"
+        ],
+        "runtime": null,
+        "dynamic": null,
+        "usesSupabase": true,
+        "usesAuth": true,
+        "usesExternalFetch": false
+      },
+      {
+        "path": "/api/ai/tutor",
+        "file": "src/app/api/ai/tutor/route.ts",
+        "methods": [
+          "POST"
+        ],
+        "runtime": null,
+        "dynamic": null,
+        "usesSupabase": true,
+        "usesAuth": true,
+        "usesExternalFetch": false
+      },
+      {
+        "path": "/api/cron/compute-signals",
+        "file": "src/app/api/cron/compute-signals/route.ts",
+        "methods": [
+          "GET"
+        ],
+        "runtime": null,
+        "dynamic": null,
+        "usesSupabase": true,
+        "usesAuth": false,
+        "usesExternalFetch": false
+      },
+      {
+        "path": "/api/cron/focus-review-scan",
+        "file": "src/app/api/cron/focus-review-scan/route.ts",
+        "methods": [
+          "GET"
+        ],
+        "runtime": null,
+        "dynamic": null,
+        "usesSupabase": true,
+        "usesAuth": false,
+        "usesExternalFetch": false
+      },
+      {
+        "path": "/api/payments/checkout",
+        "file": "src/app/api/payments/checkout/route.ts",
+        "methods": [
+          "POST"
+        ],
+        "runtime": null,
+        "dynamic": null,
+        "usesSupabase": true,
+        "usesAuth": true,
+        "usesExternalFetch": false
+      },
+      {
+        "path": "/api/webhooks/lemonsqueezy",
+        "file": "src/app/api/webhooks/lemonsqueezy/route.ts",
+        "methods": [
+          "POST"
+        ],
+        "runtime": null,
+        "dynamic": null,
+        "usesSupabase": true,
+        "usesAuth": false,
+        "usesExternalFetch": false
+      },
+      {
+        "path": "/api/webhooks/payrex",
+        "file": "src/app/api/webhooks/payrex/route.ts",
+        "methods": [
+          "POST"
+        ],
+        "runtime": null,
+        "dynamic": null,
+        "usesSupabase": true,
+        "usesAuth": false,
+        "usesExternalFetch": false
+      },
+      {
+        "path": "/auth/callback",
+        "file": "src/app/auth/callback/route.ts",
+        "methods": [
+          "GET"
+        ],
+        "runtime": null,
+        "dynamic": null,
+        "usesSupabase": true,
+        "usesAuth": true,
+        "usesExternalFetch": false
+      }
+    ]
+  },
+  "counts": {
+    "pages": 112,
+    "layouts": 15,
+    "loading": 92,
+    "errors": 7,
+    "routeHandlers": 12,
+    "clientComponents": 654,
+    "serverActionLikeFiles": 168,
+    "sourceFiles": 1971
+  },
+  "routeGroups": {
+    "publicRoutes": [
+      "/",
+      "/about",
+      "/auth/reset-password",
+      "/contact",
+      "/forgot-password",
+      "/login",
+      "/pricing",
+      "/register",
+      "/try"
+    ],
+    "dashboardRoutes": [
+      "/dashboard",
+      "/dashboard/3d-lab",
+      "/dashboard/3d-lab/:moduleId",
+      "/dashboard/analytics",
+      "/dashboard/analytics/advanced",
+      "/dashboard/area-c",
+      "/dashboard/area-c/calculator",
+      "/dashboard/area-c/design-problems",
+      "/dashboard/area-c/design-problems/:problemId",
+      "/dashboard/area-c/design-quiz",
+      "/dashboard/area-c/design-quiz/:scenarioId",
+      "/dashboard/assessment",
+      "/dashboard/camptrails",
+      "/dashboard/camptrails/:slug",
+      "/dashboard/camptrails/:slug/day/:dayNumber/complete",
+      "/dashboard/camptrails/:slug/today",
+      "/dashboard/code-updates",
+      "/dashboard/cram-card",
+      "/dashboard/dae-mode",
+      "/dashboard/drills",
+      "/dashboard/drills/sessions",
+      "/dashboard/exam-outcome",
+      "/dashboard/flash",
+      "/dashboard/flash/:category",
+      "/dashboard/heatmap",
+      "/dashboard/notes",
+      "/dashboard/notifications",
+      "/dashboard/pods",
+      "/dashboard/pods/:podId",
+      "/dashboard/professional",
+      "/dashboard/results-day",
+      "/dashboard/score-reveal",
+      "/dashboard/settings",
+      "/dashboard/settings/billing",
+      "/dashboard/settings/developer",
+      "/dashboard/studio",
+      "/dashboard/trail",
+      "/dashboard/trails",
+      "/dashboard/upgrade",
+      "/dashboard/welcome-pro",
+      "/dashboard/wiki",
+      "/dashboard/wiki/:slug"
+    ],
+    "adminRoutes": [
+      "/admin",
+      "/admin/3d-models",
+      "/admin/activity",
+      "/admin/assets",
+      "/admin/assets/:id",
+      "/admin/audit",
+      "/admin/knowledge",
+      "/admin/knowledge/:id",
+      "/admin/knowledge/analytics",
+      "/admin/knowledge/import",
+      "/admin/knowledge/new",
+      "/admin/knowledge/questions",
+      "/admin/knowledge/questions/:id",
+      "/admin/knowledge/questions/design-problems",
+      "/admin/knowledge/questions/design-problems/:id",
+      "/admin/knowledge/questions/new",
+      "/admin/knowledge/questions/scenarios",
+      "/admin/knowledge/questions/scenarios/:id",
+      "/admin/login",
+      "/admin/pipeline",
+      "/admin/preview/:previewId",
+      "/admin/reviews",
+      "/admin/search",
+      "/admin/settings",
+      "/admin/taxonomy",
+      "/admin/taxonomy/coverage",
+      "/admin/wiki"
+    ],
+    "developerRoutes": [
+      "/developer",
+      "/developer/api-reference",
+      "/developer/architecture",
+      "/developer/status",
+      "/developer/status/database",
+      "/developer/status/infrastructure",
+      "/developer/tools",
+      "/developer/tools/console",
+      "/developer/tools/db",
+      "/developer/tools/logs",
+      "/developer/tools/test-data"
+    ],
+    "quizRoutes": [
+      "/quiz",
+      "/quiz/:mode/session/:sessionId",
+      "/quiz/:mode/session/:sessionId/results",
+      "/quiz/:mode/session/:sessionId/review",
+      "/quiz/:mode/setup"
+    ]
+  },
+  "e2eSpecs": [
+    "e2e/access-boundaries.spec.ts",
+    "e2e/authenticated-demo-3d-lab.spec.ts",
+    "e2e/authenticated-demo-portals.spec.ts",
+    "e2e/authenticated-demo-restricted.spec.ts",
+    "e2e/authenticated-demo.spec.ts",
+    "e2e/launch-smoke.spec.ts",
+    "e2e/learning-flow.spec.ts",
+    "e2e/wiki-learning.spec.ts"
+  ],
+  "dataFetchingArchitecture": {
+    "dataFetchingFiles": [
+      {
+        "file": "src/app/developer/tools/loading.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/developer/tools/console/page.tsx",
+        "flags": [
+          "supabase-client",
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/app/developer/api-reference/loading.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/developer/status/database/loading.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/developer/status/loading.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/developer/status/infrastructure/loading.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/developer/status/page.tsx",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/developer/architecture/loading.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/developer/loading.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/developer/page.tsx",
+        "flags": [
+          "supabase-client",
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/app/(admin-public)/admin/login/page-client.tsx",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/auth/reset-password/page.tsx",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/auth/callback/route.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/admin/settings/loading.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/admin/pipeline/loading.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/admin/activity/loading.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/admin/activity/page.tsx",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/admin/search/_components/ContentSearchClient.tsx",
+        "flags": [
+          "supabase-client",
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/app/admin/search/loading.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/admin/dashboard/loading.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/admin/audit/loading.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/admin/knowledge/new/loading.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/admin/knowledge/new/page.tsx",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/admin/knowledge/loading.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/admin/knowledge/[id]/loading.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/admin/knowledge/[id]/page.tsx",
+        "flags": [
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/app/admin/knowledge/analytics/loading.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/admin/knowledge/questions/new/page.tsx",
+        "flags": [
+          "supabase-client",
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/app/admin/knowledge/questions/loading.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/admin/knowledge/questions/[id]/page.tsx",
+        "flags": [
+          "supabase-client",
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/app/admin/knowledge/questions/page.tsx",
+        "flags": [
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/app/admin/taxonomy/loading.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/admin/taxonomy/coverage/loading.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/admin/layout.tsx",
+        "flags": [
+          "request-bound-server-api"
+        ]
+      },
+      {
+        "file": "src/app/admin/3d-models/_components/ModelConfigDetail.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/admin/3d-models/loading.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/admin/preview/[previewId]/page.tsx",
+        "flags": [
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/app/admin/assets/loading.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/admin/assets/[id]/loading.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/admin/page.tsx",
+        "flags": [
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/app/admin/reviews/loading.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/quiz/[mode]/setup/page.tsx",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/quiz/[mode]/session/[sessionId]/results/page.tsx",
+        "flags": [
+          "supabase-client",
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/app/quiz/[mode]/session/[sessionId]/review/loading.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/quiz/[mode]/session/[sessionId]/page.tsx",
+        "flags": [
+          "supabase-client",
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/app/dashboard/settings/account-center-card.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/dashboard/settings/page.tsx",
+        "flags": [
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/app/dashboard/upgrade/page.tsx",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/dashboard/professional/page.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/dashboard/exam-outcome/actions.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/dashboard/exam-outcome/page.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/dashboard/score-reveal/page.tsx",
+        "flags": [
+          "supabase-client",
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/app/dashboard/welcome-pro/page.tsx",
+        "flags": [
+          "supabase-client",
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/app/dashboard/3d-lab/[moduleId]/page.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/dashboard/3d-lab/page.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/dashboard/wiki/[slug]/page.tsx",
+        "flags": [
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/app/dashboard/assessment/page.tsx",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/dashboard/camptrails/page.tsx",
+        "flags": [
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/app/dashboard/camptrails/[slug]/today/page.tsx",
+        "flags": [
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/app/dashboard/camptrails/[slug]/loading.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/dashboard/camptrails/[slug]/day/[dayNumber]/complete/page.tsx",
+        "flags": [
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/app/dashboard/camptrails/[slug]/page.tsx",
+        "flags": [
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/app/dashboard/results-day/page.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/dashboard/code-updates/_components/CodeUpdateFeed.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/dashboard/notes/page.tsx",
+        "flags": [
+          "supabase-client",
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/app/dashboard/pods/page.tsx",
+        "flags": [
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/app/dashboard/pods/[podId]/page.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/dashboard/dae-mode/_components/DAEModeClient.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/dashboard/dae-mode/page.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/dashboard/drills/sessions/page.tsx",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/dashboard/drills/page.tsx",
+        "flags": [
+          "supabase-client",
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/app/dashboard/notifications/loading.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/dashboard/notifications/page.tsx",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/dashboard/analytics/loading.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/dashboard/area-c/design-problems/[problemId]/page.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/dashboard/area-c/design-problems/page.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/dashboard/area-c/_components/DesignProblemCard.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/(protected)/ceo/insights/page.tsx",
+        "flags": [
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/app/(protected)/ceo/financials/page.tsx",
+        "flags": [
+          "supabase-client",
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/app/(protected)/ceo/layout.tsx",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/(protected)/ceo/page.tsx",
+        "flags": [
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/app/api/payments/checkout/route.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/api/admin/flags/route.ts",
+        "flags": [
+          "request-bound-server-api"
+        ]
+      },
+      {
+        "file": "src/app/api/ai/embed/route.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/api/ai/study-agent/route.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/api/ai/tutor/route.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/api/ai/generate-questions/route.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/api/ai/socratic/route.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/api/webhooks/lemonsqueezy/route.ts",
+        "flags": [
+          "supabase-call",
+          "request-bound-server-api"
+        ]
+      },
+      {
+        "file": "src/app/api/webhooks/payrex/route.ts",
+        "flags": [
+          "supabase-call",
+          "request-bound-server-api"
+        ]
+      },
+      {
+        "file": "src/app/api/cron/compute-signals/route.ts",
+        "flags": [
+          "supabase-call",
+          "request-bound-server-api"
+        ]
+      },
+      {
+        "file": "src/app/api/cron/focus-review-scan/route.ts",
+        "flags": [
+          "supabase-call",
+          "request-bound-server-api"
+        ]
+      },
+      {
+        "file": "src/app/(auth)/register/register-form.tsx",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/(auth)/register/page.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/(auth)/forgot-password/page.tsx",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/(auth)/error.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/(auth)/login/login-form.tsx",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/(auth)/login/page.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/app/(auth)/onboarding/page.tsx",
+        "flags": [
+          "supabase-client",
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/app/(auth)/onboarding/comp-exam/page.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/features/3d-lab/config/modules/08-vertical/stairway-geometry-u-shape.ts",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/features/3d-lab/config/modules/08-vertical/stairway-geometry-contracts.ts",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/features/3d-lab/config/modules/08-vertical/stairway-geometry-l-shape.ts",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/features/3d-lab/config/modules/08-vertical/stairway-computation.ts",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/features/3d-lab/config/modules/08-vertical/stairway-configurator.ts",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/features/3d-lab/utils/registryLoader.ts",
+        "flags": [
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/features/3d-lab/components/shell/LabBrowserShell.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/features/3d-lab/components/overlays/DOMOverlayLayer.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/features/3d-lab/components/LabBrowser.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/features/3d-lab/components/templates/GenericControlPanel.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/features/3d-lab/DevControlsModule/canvas/layers/DevControlsLayers.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/features/3d-lab/templates/ExplodedAssemblyScene.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/components/trails/TrailCard.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/components/ui/slider.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/components/ui/skeleton.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/components/landing/LandingPageFallback.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/components/landing/LandingPageContent.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/components/admin/settings/AdminRoleManager.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/components/admin/SMEReviewQueue.tsx",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/components/admin/unified-editor/DirtyStateProvider.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/components/admin/unified-editor/ContentEditorIndex.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/components/admin/unified-editor/SaveAllBar.tsx",
+        "flags": [
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/components/wiki/navigation/WikiLayoutContent.tsx",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/components/wiki/navigation/WikiSidebarShell.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/components/wiki/widgets/registry.ts",
+        "flags": [
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/components/shared/difficulty-bar.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/components/shared/data-table.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/components/shared/DashboardPageSkeleton.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/components/shared/LogoutButton.tsx",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/components/shared/question-dot-navigator.stories.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/components/assessment/ScoreReveal.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/components/assessment/PreAssessmentTeaser.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/components/assessment/AssessmentQuiz.tsx",
+        "flags": [
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/components/dashboard/SubjectMasteryCard.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/components/dashboard/upgrade/UpgradeButtons.tsx",
+        "flags": [
+          "fetch"
+        ]
+      },
+      {
+        "file": "src/components/dashboard/TransitionPromptServer.tsx",
+        "flags": [
+          "supabase-client",
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/components/dashboard/ActivityHeatmap.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/components/dashboard/ReviewCenterSyncServer.tsx",
+        "flags": [
+          "supabase-client",
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/components/dashboard/DashboardLayoutContent.tsx",
+        "flags": [
+          "supabase-client",
+          "supabase-call",
+          "request-bound-server-api",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/components/dashboard/ReviewCalendarServer.tsx",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/components/dashboard/ResultsDayBannerServer.tsx",
+        "flags": [
+          "supabase-client",
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/components/dashboard/heatmap/HeatmapGrid.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/components/dashboard/StreakRibbon.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/components/dashboard/BloomTrackerServer.tsx",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/components/testing/hub/HeroConfigurator.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/components/marketing/MarketingNav.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/components/marketing/TestimonialShowcase.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/components/marketing/hero/HeroCards.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/components/dev/dev-toolbar.tsx",
+        "flags": [
+          "fetch"
+        ]
+      },
+      {
+        "file": "src/components/quiz-v2/setup/SetupFlow.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/components/quiz-v2/setup/IntroSlide2.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/components/quiz-v2/StandardQuizShell.tsx",
+        "flags": [
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/components/quiz-v2/results/SimulationDebrief.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/components/quiz-v2/SocraticExplorer.tsx",
+        "flags": [
+          "fetch"
+        ]
+      },
+      {
+        "file": "src/components/notifications/NotificationBell.tsx",
+        "flags": [
+          "supabase-client"
+        ]
+      },
+      {
+        "file": "src/components/analytics/PacingAccuracy.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/components/analytics/ModeFunnel.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/components/analytics/ForgettingCurves.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/components/analytics/StaminaHeatmap.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/components/analytics/ExamOutcomeSection.tsx",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/components/analytics/StudyStreakCalendar.tsx",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/mocks/status.ts",
+        "flags": [
+          "fetch"
+        ]
+      },
+      {
+        "file": "src/lib/demo/data.ts",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/routes.ts",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/developer/repo-metrics.ts",
+        "flags": [
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/lib/developer/status-snapshot.ts",
+        "flags": [
+          "fetch"
+        ]
+      },
+      {
+        "file": "src/lib/context/discipline-context.tsx",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/analytics.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/admin/editor-integrity/standard-question.ts",
+        "flags": [
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/lib/queries/notifications.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/queries/adaptive-quiz.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/queries/ceo/financial-queries.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/lib/queries/ceo/team-queries.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/queries/ceo/user-queries.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/lib/queries/ceo/auth.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/queries/ceo/analytics/get-coverage-gap.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/queries/ceo/analytics/get-learning-velocity.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/queries/ceo/analytics/get-pass-rate.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/queries/ceo/analytics/get-engagement-depth.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/lib/queries/ceo/analytics/get-question-health.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/queries/ceo/analytics/get-cage-quality.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/queries/ceo/analytics/get-study-cohorts.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/queries/ceo/analytics/get-content-effectiveness.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/queries/ceo/analytics/get-adoption-funnel.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/queries/trails.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/queries/srs.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/quiz/stamina-analysis.test.ts",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/quiz/to-client-question.ts",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/quiz/interleaved-selection.ts",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/quiz/median-time.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/quiz/intelligent-routing.ts",
+        "flags": [
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/lib/quiz/answer-matching.ts",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/srs/update.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/cage/verifyBindingToken.ts",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/cage/nonceService.ts",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/cage/generateBindingToken.ts",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/cage/cageTokenStore.ts",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/utils/promise.ts",
+        "flags": [
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/lib/supabase/middleware.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/lib/supabase/admin.ts",
+        "flags": [
+          "supabase-client"
+        ]
+      },
+      {
+        "file": "src/lib/supabase/client.ts",
+        "flags": [
+          "supabase-client"
+        ]
+      },
+      {
+        "file": "src/lib/supabase/server.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call",
+          "request-bound-server-api"
+        ]
+      },
+      {
+        "file": "src/lib/supabase/bootstrap.ts",
+        "flags": [
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/lib/design-scenarios.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/entitlements/resolve-role.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/lib/entitlements/dev-overrides.ts",
+        "flags": [
+          "request-bound-server-api"
+        ]
+      },
+      {
+        "file": "src/lib/entitlements/audit.ts",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/entitlements/get-viewer-entitlements.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/lib/notes/uploadImage.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/audit/audit-queries.ts",
+        "flags": [
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/lib/__tests__/readiness-score.test.ts",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/focus-review/generate-queue.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/ai/provider.ts",
+        "flags": [
+          "fetch",
+          "request-bound-server-api"
+        ]
+      },
+      {
+        "file": "src/lib/analytics-server.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/teach-back.ts",
+        "flags": [
+          "fetch",
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/dashboard-page.ts",
+        "flags": [
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/lib/actions/progress-report/actions.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/lib/actions/progress-report/generate.ts",
+        "flags": [
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/lib/actions/pods.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/lib/actions/lab.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/comp-exam-onboarding.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/lib/actions/oath-taking.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/studio-mode.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/ei-prompts.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/wiki-bookmarks.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/session-actions.ts",
+        "flags": [
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/lib/actions/final-stretch.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/notification-triggers.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/daily-mission.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/analytics.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/lib/actions/dae-mode.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/lib/actions/streak.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/notifications.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/mastery/update-decay-rate.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/mastery/post-interaction-hooks.ts",
+        "flags": [
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/lib/actions/mastery/dismiss-empty-topic.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/mastery/cramming-detector.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/mastery/update-mastery-stats.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/mastery/update-memory-strength.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/analytics-data.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/lib/actions/calibration-score-update.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/stats-actions.ts",
+        "flags": [
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/lib/actions/design-problems.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/adaptive-session.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/email-preferences.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/wiki-interactions.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/admin/wiki-queries.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/admin/wiki.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/admin/question-queries.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/admin/design-problems.ts",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/admin/pipeline.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/admin/assets.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/admin/taxonomy.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/admin/content.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/lib/actions/admin/dashboard.ts",
+        "flags": [
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/lib/actions/admin/design-scenarios.ts",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/admin/roles.test.ts",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/admin/coverage.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/admin/questions.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/admin/bulk.ts",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/admin/roles.ts",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/notes-actions.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/bloom-tracker.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/lib/actions/taxonomy.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/srs-dashboard.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/srs-review.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/wiki/submit-prequestion.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/wiki/get-prequestions.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/dashboard.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/lib/actions/session-insights.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/assessment/get-questions.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/wiki-quiz.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/social-proof.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/lib/actions/preview-actions.ts",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/user-stats.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/wiki-reads.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/professional-mode.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/ceo/export-actions.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/lib/actions/ceo/team-actions.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/ceo/financial-actions.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/session-discovery.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/results-day.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/cram-card.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/daily-dose/actions.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/daily-dose/generate.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/lib/actions/cached-queries.ts",
+        "flags": [
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/lib/actions/flash-cards.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/trails.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/profile.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/lib/actions/mastery.ts",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/readiness-score-update.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/lib/actions/dev/test-data.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/dev/db-viewer.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/quiz-v2/skip-question.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/quiz-v2/check-generation-answer.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/quiz-v2/get-review-data.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/lib/actions/quiz-v2/start-session.ts",
+        "flags": [
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/lib/actions/quiz-v2/classify-and-store-error.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/quiz-v2/save-prediction.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/quiz-v2/pause-resume.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/quiz-v2/session-helpers.ts",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/quiz-v2/abandon-session.ts",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/quiz-v2/get-confidence-matrix.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/quiz-v2/update-session-progress.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/quiz-v2/get-session-questions.ts",
+        "flags": [
+          "supabase-client"
+        ]
+      },
+      {
+        "file": "src/lib/actions/quiz-v2/submit-answer.ts",
+        "flags": [
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/lib/actions/quiz-v2/sr-post-submit.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/quiz-v2/generate-recommendations.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/quiz-v2/flag-question.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/quiz-v2/get-prediction-history.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/quiz-v2/successive-relearning.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/quiz-v2/end-session.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/lib/actions/quiz-v2/save-postdiction.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/wiki-actions.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/lib/actions/sync-notifications.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/srs.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/code-updates.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/debrief.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/lib/actions/sessions.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/heatmap.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/lib/actions/assessment.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/analytics/get-error-patterns.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/analytics/write-theta.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/analytics/get-memory-strength-data.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/analytics/shared-helpers.ts",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/analytics/get-reading-correlation-data.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/analytics/chart-data.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/lib/actions/analytics/cross-feature-data.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/analytics/get-metacognition-data.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/analytics/get-relearning-data.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/analytics/get-topic-intelligence-data.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/lib/actions/analytics/get-mode-funnel.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/analytics/get-multimodal-study-data.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/lib/actions/analytics/get-calibration-data.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/analytics/get-mastery-history.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/analytics/get-irt-data.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/analytics/get-reading-depth-data.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/actions/mastery-actions.ts",
+        "flags": [
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/lib/actions/analytics-events.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/api/require-admin.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/import/import-actions.ts",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/logging/server.ts",
+        "flags": [
+          "supabase-call",
+          "parallel-fetching"
+        ]
+      },
+      {
+        "file": "src/lib/paywall/score-reveal.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/paywall/daily-cap.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/endurance/compute.ts",
+        "flags": [
+          "supabase-client",
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/submission/stateMachine.ts",
+        "flags": [
+          "supabase-call"
+        ]
+      },
+      {
+        "file": "src/lib/lab-analytics.ts",
+        "flags": [
+          "fetch"
+        ]
+      }
+    ],
+    "cachingFiles": [
+      {
+        "file": "src/features/3d-lab/components/ModuleViewer.tsx",
+        "flags": [
+          "browser-storage-cache-or-state"
+        ]
+      },
+      {
+        "file": "src/features/3d-lab/components/shell/GuidedTour.tsx",
+        "flags": [
+          "browser-storage-cache-or-state"
+        ]
+      },
+      {
+        "file": "src/features/3d-lab/components/shell/ViewportShell.tsx",
+        "flags": [
+          "browser-storage-cache-or-state"
+        ]
+      },
+      {
+        "file": "src/features/3d-lab/components/shell/FirstTimeTooltip.tsx",
+        "flags": [
+          "browser-storage-cache-or-state"
+        ]
+      },
+      {
+        "file": "src/features/3d-lab/components/ModuleContextCard.tsx",
+        "flags": [
+          "browser-storage-cache-or-state"
+        ]
+      },
+      {
+        "file": "src/features/3d-lab/components/OnboardingFlow.tsx",
+        "flags": [
+          "browser-storage-cache-or-state"
+        ]
+      },
+      {
+        "file": "src/features/3d-lab/DevControlsModule/stores/useDevControlsStore.ts",
+        "flags": [
+          "browser-storage-cache-or-state"
+        ]
+      },
+      {
+        "file": "src/features/3d-lab/DevControlsModule/dashboard/CollapsibleSection.tsx",
+        "flags": [
+          "browser-storage-cache-or-state"
+        ]
+      },
+      {
+        "file": "src/features/3d-lab/DevControlsModule/hooks/usePanelState.ts",
+        "flags": [
+          "browser-storage-cache-or-state"
+        ]
+      },
+      {
+        "file": "src/stores/dev-store.ts",
+        "flags": [
+          "browser-storage-cache-or-state"
+        ]
+      },
+      {
+        "file": "src/stores/useQuizStore.ts",
+        "flags": [
+          "browser-storage-cache-or-state"
+        ]
+      },
+      {
+        "file": "src/stores/useQuizTimerStore.ts",
+        "flags": [
+          "browser-storage-cache-or-state"
+        ]
+      },
+      {
+        "file": "src/components/sidebar/SidebarProvider.tsx",
+        "flags": [
+          "browser-storage-cache-or-state"
+        ]
+      },
+      {
+        "file": "src/components/portal/CommandPalette.tsx",
+        "flags": [
+          "browser-storage-cache-or-state"
+        ]
+      },
+      {
+        "file": "src/components/wiki/navigation/WikiSidebarShell.tsx",
+        "flags": [
+          "browser-storage-cache-or-state"
+        ]
+      },
+      {
+        "file": "src/components/shared/taxonomy-tree.tsx",
+        "flags": [
+          "browser-storage-cache-or-state"
+        ]
+      },
+      {
+        "file": "src/components/shared/Omnibar.tsx",
+        "flags": [
+          "browser-storage-cache-or-state"
+        ]
+      },
+      {
+        "file": "src/components/quiz-v2/SwipeTooltip.tsx",
+        "flags": [
+          "browser-storage-cache-or-state"
+        ]
+      },
+      {
+        "file": "src/hooks/notes/useNotesPanels.ts",
+        "flags": [
+          "browser-storage-cache-or-state"
+        ]
+      },
+      {
+        "file": "src/lib/developer/repo-metrics.ts",
+        "flags": [
+          "server-cache-helper"
+        ]
+      },
+      {
+        "file": "src/lib/developer/status-snapshot.ts",
+        "flags": [
+          "revalidation"
+        ]
+      },
+      {
+        "file": "src/lib/admin/roles.ts",
+        "flags": [
+          "server-cache-helper"
+        ]
+      },
+      {
+        "file": "src/lib/quiz/offline/db.ts",
+        "flags": [
+          "browser-storage-cache-or-state"
+        ]
+      },
+      {
+        "file": "src/lib/supabase/server.ts",
+        "flags": [
+          "server-cache-helper"
+        ]
+      },
+      {
+        "file": "src/lib/entitlements/resolve-role.ts",
+        "flags": [
+          "server-cache-helper"
+        ]
+      },
+      {
+        "file": "src/lib/entitlements/get-viewer-entitlements.ts",
+        "flags": [
+          "server-cache-helper"
+        ]
+      },
+      {
+        "file": "src/lib/hooks/useDraggableFloatingPosition.ts",
+        "flags": [
+          "browser-storage-cache-or-state"
+        ]
+      },
+      {
+        "file": "src/lib/actions/dashboard-page.ts",
+        "flags": [
+          "server-cache-helper"
+        ]
+      },
+      {
+        "file": "src/lib/actions/progress-report/actions.ts",
+        "flags": [
+          "server-cache-helper"
+        ]
+      },
+      {
+        "file": "src/lib/actions/pods.ts",
+        "flags": [
+          "revalidation"
+        ]
+      },
+      {
+        "file": "src/lib/actions/lab.ts",
+        "flags": [
+          "revalidation"
+        ]
+      },
+      {
+        "file": "src/lib/actions/session-actions.ts",
+        "flags": [
+          "server-cache-helper"
+        ]
+      },
+      {
+        "file": "src/lib/actions/analytics.ts",
+        "flags": [
+          "server-cache-helper"
+        ]
+      },
+      {
+        "file": "src/lib/actions/notifications.ts",
+        "flags": [
+          "revalidation"
+        ]
+      },
+      {
+        "file": "src/lib/actions/analytics-data.ts",
+        "flags": [
+          "server-cache-helper"
+        ]
+      },
+      {
+        "file": "src/lib/actions/stats-actions.ts",
+        "flags": [
+          "server-cache-helper"
+        ]
+      },
+      {
+        "file": "src/lib/actions/design-problems.ts",
+        "flags": [
+          "revalidation"
+        ]
+      },
+      {
+        "file": "src/lib/actions/preview-actions.test.ts",
+        "flags": [
+          "server-cache-helper"
+        ]
+      },
+      {
+        "file": "src/lib/actions/admin/wiki.ts",
+        "flags": [
+          "revalidation"
+        ]
+      },
+      {
+        "file": "src/lib/actions/admin/questions.test.ts",
+        "flags": [
+          "server-cache-helper"
+        ]
+      },
+      {
+        "file": "src/lib/actions/admin/design-problems.ts",
+        "flags": [
+          "revalidation"
+        ]
+      },
+      {
+        "file": "src/lib/actions/admin/pipeline.ts",
+        "flags": [
+          "revalidation"
+        ]
+      },
+      {
+        "file": "src/lib/actions/admin/assets.ts",
+        "flags": [
+          "revalidation"
+        ]
+      },
+      {
+        "file": "src/lib/actions/admin/taxonomy.ts",
+        "flags": [
+          "revalidation"
+        ]
+      },
+      {
+        "file": "src/lib/actions/admin/content.ts",
+        "flags": [
+          "revalidation"
+        ]
+      },
+      {
+        "file": "src/lib/actions/admin/dashboard.ts",
+        "flags": [
+          "server-cache-helper"
+        ]
+      },
+      {
+        "file": "src/lib/actions/admin/design-scenarios.ts",
+        "flags": [
+          "revalidation"
+        ]
+      },
+      {
+        "file": "src/lib/actions/admin/questions.ts",
+        "flags": [
+          "revalidation"
+        ]
+      },
+      {
+        "file": "src/lib/actions/admin/bulk.ts",
+        "flags": [
+          "revalidation"
+        ]
+      },
+      {
+        "file": "src/lib/actions/notes-actions.ts",
+        "flags": [
+          "revalidation"
+        ]
+      },
+      {
+        "file": "src/lib/actions/preview-actions.ts",
+        "flags": [
+          "revalidation"
+        ]
+      },
+      {
+        "file": "src/lib/actions/professional-mode.ts",
+        "flags": [
+          "revalidation"
+        ]
+      },
+      {
+        "file": "src/lib/actions/ceo/team-actions.ts",
+        "flags": [
+          "revalidation"
+        ]
+      },
+      {
+        "file": "src/lib/actions/ceo/financial-actions.ts",
+        "flags": [
+          "revalidation"
+        ]
+      },
+      {
+        "file": "src/lib/actions/cached-queries.ts",
+        "flags": [
+          "server-cache-helper"
+        ]
+      },
+      {
+        "file": "src/lib/actions/trails.ts",
+        "flags": [
+          "revalidation"
+        ]
+      },
+      {
+        "file": "src/lib/actions/profile.ts",
+        "flags": [
+          "revalidation"
+        ]
+      },
+      {
+        "file": "src/lib/actions/mastery.ts",
+        "flags": [
+          "server-cache-helper"
+        ]
+      },
+      {
+        "file": "src/lib/actions/quiz-v2/skip-question.ts",
+        "flags": [
+          "revalidation"
+        ]
+      },
+      {
+        "file": "src/lib/actions/quiz-v2/abandon-session.ts",
+        "flags": [
+          "revalidation"
+        ]
+      },
+      {
+        "file": "src/lib/actions/quiz-v2/flag-question.ts",
+        "flags": [
+          "revalidation"
+        ]
+      },
+      {
+        "file": "src/lib/actions/quiz-v2/end-session.ts",
+        "flags": [
+          "revalidation"
+        ]
+      },
+      {
+        "file": "src/lib/actions/wiki-actions.ts",
+        "flags": [
+          "server-cache-helper"
+        ]
+      },
+      {
+        "file": "src/lib/actions/cache-tags.ts",
+        "flags": [
+          "revalidation"
+        ]
+      },
+      {
+        "file": "src/lib/actions/sessions.ts",
+        "flags": [
+          "revalidation"
+        ]
+      },
+      {
+        "file": "src/lib/actions/analytics/shared-helpers.ts",
+        "flags": [
+          "server-cache-helper"
+        ]
+      },
+      {
+        "file": "src/lib/actions/analytics/chart-data.ts",
+        "flags": [
+          "server-cache-helper"
+        ]
+      },
+      {
+        "file": "src/lib/actions/mastery-actions.ts",
+        "flags": [
+          "server-cache-helper"
+        ]
+      },
+      {
+        "file": "src/lib/import/import-actions.ts",
+        "flags": [
+          "revalidation"
+        ]
+      }
+    ],
+    "clientComponents": [
+      "src/storybook/mocks/next-link.tsx",
+      "src/storybook/mocks/next-dynamic.tsx",
+      "src/storybook/mocks/next-navigation.tsx",
+      "src/app/developer/tools/test-data/test-data-client.tsx",
+      "src/app/developer/tools/console/console-client.tsx",
+      "src/app/developer/_components/DevPortalSearch.tsx",
+      "src/app/developer/_components/EndpointCard.tsx",
+      "src/app/developer/_components/DevPortalShell.tsx",
+      "src/app/developer/error.tsx",
+      "src/app/tools/floor-tiles-calculator/FloorTilesPageClient.tsx",
+      "src/app/tools/lot-plotter/LotPlotterClient.tsx",
+      "src/app/tools/wall-paint-calculator/WallPaintPageClient.tsx",
+      "src/app/(admin-public)/admin/login/page-client.tsx",
+      "src/app/auth/reset-password/page.tsx",
+      "src/app/admin/pipeline/_components/PipelineCard.tsx",
+      "src/app/admin/pipeline/_components/PipelineClient.tsx",
+      "src/app/admin/search/_components/ContentSearchClient.tsx",
+      "src/app/admin/knowledge/_components/ArticleDetailClient.tsx",
+      "src/app/admin/_components/AdminShell.tsx",
+      "src/app/admin/error.tsx",
+      "src/app/admin/3d-models/_components/ModelRegistryPage.tsx",
+      "src/app/admin/3d-models/_components/ModelConfigDetail.tsx",
+      "src/app/admin/3d-models/_components/ModelRegistryTree.tsx",
+      "src/app/quiz/[mode]/setup/client.tsx",
+      "src/app/dashboard/settings/theme-card.tsx",
+      "src/app/dashboard/settings/logout-card.tsx",
+      "src/app/dashboard/settings/discipline-card.tsx",
+      "src/app/dashboard/settings/account-mode-card.tsx",
+      "src/app/dashboard/settings/profile-card.tsx",
+      "src/app/dashboard/settings/notifications-card.tsx",
+      "src/app/dashboard/studio/_components/StudioHub.tsx",
+      "src/app/dashboard/professional/_components/ProfessionalHub.tsx",
+      "src/app/dashboard/exam-outcome/ExamOutcomeSurvey.tsx",
+      "src/app/dashboard/3d-lab/layout.tsx",
+      "src/app/dashboard/3d-lab/error.tsx",
+      "src/app/dashboard/results-day/_components/NonPasserFlow.tsx",
+      "src/app/dashboard/results-day/_components/PasserFlow.tsx",
+      "src/app/dashboard/results-day/_components/ResultsDayClient.tsx",
+      "src/app/dashboard/cram-card/_components/CramCardGate.tsx",
+      "src/app/dashboard/cram-card/_components/CramCardEntry.tsx",
+      "src/app/dashboard/cram-card/_components/CramCardPage.tsx",
+      "src/app/dashboard/flash/_components/FlashCard.tsx",
+      "src/app/dashboard/flash/_components/FlashSession.tsx",
+      "src/app/dashboard/code-updates/_components/CodeUpdateFeed.tsx",
+      "src/app/dashboard/pods/_components/PodHub.tsx",
+      "src/app/dashboard/pods/_components/PodView.tsx",
+      "src/app/dashboard/pods/_components/JoinPodForm.tsx",
+      "src/app/dashboard/pods/_components/CreatePodModal.tsx",
+      "src/app/dashboard/dae-mode/_components/WorkContextSelector.tsx",
+      "src/app/dashboard/dae-mode/_components/DAEQuizSession.tsx",
+      "src/app/dashboard/dae-mode/_components/DAEModeClient.tsx",
+      "src/app/dashboard/error.tsx",
+      "src/app/dashboard/analytics/error.tsx",
+      "src/app/dashboard/area-c/design-quiz/_components/QuestionCard.tsx",
+      "src/app/dashboard/area-c/design-quiz/_components/ScenarioResults.tsx",
+      "src/app/dashboard/area-c/design-quiz/_components/SolutionReveal.tsx",
+      "src/app/dashboard/area-c/design-quiz/_components/DesignQuizSession.tsx",
+      "src/app/dashboard/area-c/design-quiz/_components/ScenarioCard.tsx",
+      "src/app/dashboard/area-c/_components/DesignProblemCard.tsx",
+      "src/app/dashboard/area-c/_components/BPComplianceChecklist.tsx",
+      "src/app/dashboard/area-c/_components/DesignProblemSession.tsx",
+      "src/app/dashboard/area-c/_components/DevControlsCalculator.tsx",
+      "src/app/(protected)/ceo/_components/CeoShell.tsx",
+      "src/app/calculators/drywall/_components/DrywallCalculator.tsx",
+      "src/app/calculators/paint/_components/PaintCalculator.tsx",
+      "src/app/calculators/flooring/_components/FlooringCalculator.tsx",
+      "src/app/calculators/chb/_components/CHBCalculator.tsx",
+      "src/app/error.tsx",
+      "src/app/(auth)/register/register-form.tsx",
+      "src/app/(auth)/forgot-password/page.tsx",
+      "src/app/(auth)/error.tsx",
+      "src/app/(auth)/login/login-form.tsx",
+      "src/app/(auth)/onboarding/_components/ReviewCenterStep.tsx",
+      "src/app/(auth)/onboarding/_components/CoexistenceScreen.tsx",
+      "src/app/(auth)/onboarding/_components/CalibrationScreen.tsx",
+      "src/app/(auth)/onboarding/_components/OnboardingForm.tsx",
+      "src/app/(auth)/onboarding/comp-exam/_components/CompExamFlow.tsx",
+      "src/app/(auth)/onboarding/comp-exam/_components/ScoreEntryForm.tsx",
+      "src/app/(auth)/onboarding/comp-exam/_components/HeatmapPreview.tsx",
+      "src/app/pricing/pricing-content.tsx",
+      "src/features/wall-configurator/components/AreaSummaryBar.tsx",
+      "src/features/wall-configurator/components/WallConfigurator.tsx",
+      "src/features/wall-configurator/components/steps/Step1CoreSelect.tsx",
+      "src/features/wall-configurator/components/steps/Step7BOM.tsx",
+      "src/features/wall-configurator/components/steps/Step4Sides.tsx",
+      "src/features/wall-configurator/components/steps/Step6Finish.tsx",
+      "src/features/wall-configurator/components/steps/Step3Openings.tsx",
+      "src/features/wall-configurator/components/steps/Step5Treatment.tsx",
+      "src/features/wall-configurator/components/steps/Step2Geometry.tsx",
+      "src/features/wall-configurator/hooks/useWallComputation.ts",
+      "src/features/wall-configurator/store/useWallConfigStore.ts",
+      "src/features/3d-lab/scenes/FARPlayground/FARPlayground.tsx",
+      "src/features/3d-lab/scenes/FARPlayground/FARScene.tsx",
+      "src/features/3d-lab/scenes/ClassicalOrders/ClassicalOrdersScene.tsx",
+      "src/features/3d-lab/scenes/ClassicalOrders/ClassicalOrders.tsx",
+      "src/features/3d-lab/scenes/NBCPEnvelope/NBCPScene.tsx",
+      "src/features/3d-lab/scenes/NBCPEnvelope/NBCPEnvelope.tsx",
+      "src/features/3d-lab/scenes/NBCPEnvelope/NBCPTelemetry.tsx",
+      "src/features/3d-lab/scenes/NBCPEnvelope/NBCPControlPanel.tsx",
+      "src/features/3d-lab/config/modules/10-materials/wall-computed-context.tsx",
+      "src/features/3d-lab/stores/useWallLabStore.ts",
+      "src/features/3d-lab/components/CategoryGrid.tsx",
+      "src/features/3d-lab/components/stairway/ViewportComfortGauge.tsx",
+      "src/features/3d-lab/components/stairway/EvacuationControls.tsx",
+      "src/features/3d-lab/components/stairway/PresetChipStrip.tsx",
+      "src/features/3d-lab/components/stairway/ComplianceSummaryBadge.tsx",
+      "src/features/3d-lab/components/stairway/ComparisonPanel.tsx",
+      "src/features/3d-lab/components/stairway/DimensionSlider.tsx",
+      "src/features/3d-lab/components/stairway/ChildSafetyPanel.tsx",
+      "src/features/3d-lab/components/stairway/ComplianceLawCard.tsx",
+      "src/features/3d-lab/components/stairway/MaterialSelectorPanel.tsx",
+      "src/features/3d-lab/components/stairway/ComparisonToggle.tsx",
+      "src/features/3d-lab/components/stairway/NosingDetailPanel.tsx",
+      "src/features/3d-lab/components/stairway/ClickInspectPopover.tsx",
+      "src/features/3d-lab/components/stairway/FixButton.tsx",
+      "src/features/3d-lab/components/stairway/PresetChip.tsx",
+      "src/features/3d-lab/components/stairway/ViolationRow.tsx",
+      "src/features/3d-lab/components/stairway/EgressCalculatorPanel.tsx",
+      "src/features/3d-lab/components/stairway/HandrailDetailPanel.tsx",
+      "src/features/3d-lab/components/stairway/LawActivationDot.tsx",
+      "src/features/3d-lab/components/ModuleCard.tsx",
+      "src/features/3d-lab/components/ModuleViewer.tsx",
+      "src/features/3d-lab/components/shell/LabEmptyState.tsx",
+      "src/features/3d-lab/components/shell/ViewportToast.tsx",
+      "src/features/3d-lab/components/shell/LayersPanel.tsx",
+      "src/features/3d-lab/components/shell/CommandPalette.tsx",
+      "src/features/3d-lab/components/shell/LabMetaPanel.tsx",
+      "src/features/3d-lab/components/shell/ViewportBottomSheet.tsx",
+      "src/features/3d-lab/components/shell/ViewportSidebar.tsx",
+      "src/features/3d-lab/components/shell/ViewportStatusBar.tsx",
+      "src/features/3d-lab/components/shell/GuidedTour.tsx",
+      "src/features/3d-lab/components/shell/LabModuleShell.tsx",
+      "src/features/3d-lab/components/shell/LabOverlayLayer.tsx",
+      "src/features/3d-lab/components/shell/SceneGround.tsx",
+      "src/features/3d-lab/components/shell/SceneToolbar.tsx",
+      "src/features/3d-lab/components/shell/ViewportContextMenu.tsx",
+      "src/features/3d-lab/components/shell/ViewportToolbar.tsx",
+      "src/features/3d-lab/components/shell/LabViewportFrame.tsx",
+      "src/features/3d-lab/components/shell/ViewportShell.tsx",
+      "src/features/3d-lab/components/shell/CameraNavigationBar.tsx",
+      "src/features/3d-lab/components/shell/KpiBar.tsx",
+      "src/features/3d-lab/components/shell/ViewportSkeleton.tsx",
+      "src/features/3d-lab/components/shell/ViewportHeader.tsx",
+      "src/features/3d-lab/components/shell/FirstTimeTooltip.tsx",
+      "src/features/3d-lab/components/shell/LabBrowserShell.tsx",
+      "src/features/3d-lab/components/shell/WebGLRecovery.tsx",
+      "src/features/3d-lab/components/shell/PanelCollapseButton.tsx",
+      "src/features/3d-lab/components/shell/CompassRose.tsx",
+      "src/features/3d-lab/components/overlays/LabelOverlay.tsx",
+      "src/features/3d-lab/components/overlays/ViolationBadge.tsx",
+      "src/features/3d-lab/components/overlays/PartTooltip.tsx",
+      "src/features/3d-lab/components/overlays/HotspotCard.tsx",
+      "src/features/3d-lab/components/overlays/DimensionLabel.tsx",
+      "src/features/3d-lab/components/overlays/CameraSync.tsx",
+      "src/features/3d-lab/components/overlays/DOMOverlayLayer.tsx",
+      "src/features/3d-lab/components/GlobalCanvasPortal.tsx",
+      "src/features/3d-lab/components/CanvasWrapper.tsx",
+      "src/features/3d-lab/components/ModuleContextCard.tsx",
+      "src/features/3d-lab/components/ModuleList.tsx",
+      "src/features/3d-lab/components/controls/LabSlider.tsx",
+      "src/features/3d-lab/components/InfoPanel.tsx",
+      "src/features/3d-lab/components/LabBrowser.tsx",
+      "src/features/3d-lab/components/LabTopBar.tsx",
+      "src/features/3d-lab/components/templates/PerformanceDashboard.tsx",
+      "src/features/3d-lab/components/templates/WallConfigurator/AreaSummaryBar.tsx",
+      "src/features/3d-lab/components/templates/WallConfigurator/SponsorPalette.tsx",
+      "src/features/3d-lab/components/templates/WallConfigurator/ConfigPanel.tsx",
+      "src/features/3d-lab/components/templates/WallConfigurator/steps/CoreTypeStep.tsx",
+      "src/features/3d-lab/components/templates/WallConfigurator/steps/TreatmentStep.tsx",
+      "src/features/3d-lab/components/templates/WallConfigurator/steps/ColorSponsorStep.tsx",
+      "src/features/3d-lab/components/templates/WallConfigurator/steps/FinishTypeStep.tsx",
+      "src/features/3d-lab/components/templates/WallConfigurator/steps/GeometryStep.tsx",
+      "src/features/3d-lab/components/templates/WallConfigurator/BOMPanel.tsx",
+      "src/features/3d-lab/components/templates/CoreTypeCardStrip.tsx",
+      "src/features/3d-lab/components/templates/WallConfiguratorRightPanel.tsx",
+      "src/features/3d-lab/components/templates/InstancedMesh.tsx",
+      "src/features/3d-lab/components/templates/FloorPlanLegendSidebar.tsx",
+      "src/features/3d-lab/components/templates/PerformanceMetricCell.tsx",
+      "src/features/3d-lab/components/templates/CoreTypeCard.tsx",
+      "src/features/3d-lab/components/templates/ExplodedPartsSidebar.tsx",
+      "src/features/3d-lab/components/templates/WallConfiguratorLeftPanel.tsx",
+      "src/features/3d-lab/components/templates/ArchMass.tsx",
+      "src/features/3d-lab/components/templates/GenericControlPanel.tsx",
+      "src/features/3d-lab/components/templates/ControlPanel.tsx",
+      "src/features/3d-lab/components/templates/ComparisonDashboard.tsx",
+      "src/features/3d-lab/components/templates/ExplodeSliderControl.tsx",
+      "src/features/3d-lab/components/templates/HumanSilhouette.tsx",
+      "src/features/3d-lab/components/templates/InfoPanel.tsx",
+      "src/features/3d-lab/components/templates/ViewModeButtonStrip.tsx",
+      "src/features/3d-lab/components/templates/ViolationIndicator.tsx",
+      "src/features/3d-lab/components/templates/HotspotAnnotation.tsx",
+      "src/features/3d-lab/components/templates/FocusModeToggle.tsx",
+      "src/features/3d-lab/components/templates/AnimatedStepsSidebar.tsx",
+      "src/features/3d-lab/components/templates/BOMPanel.tsx",
+      "src/features/3d-lab/components/templates/CutDepthSliderControl.tsx",
+      "src/features/3d-lab/components/templates/CutawayLayersSidebar.tsx",
+      "src/features/3d-lab/components/rendering/SceneBase.tsx",
+      "src/features/3d-lab/components/rendering/StudioLighting.tsx",
+      "src/features/3d-lab/components/rendering/AssetPreloader.tsx",
+      "src/features/3d-lab/components/rendering/SceneConfig.tsx",
+      "src/features/3d-lab/components/LabViewport.tsx",
+      "src/features/3d-lab/components/OnboardingFlow.tsx",
+      "src/features/3d-lab/DevControlsModule/index.tsx",
+      "src/features/3d-lab/DevControlsModule/stores/useSelectionStore.ts",
+      "src/features/3d-lab/DevControlsModule/stores/useDevControlsStore.ts",
+      "src/features/3d-lab/DevControlsModule/canvas/layers/LotGround.tsx",
+      "src/features/3d-lab/DevControlsModule/canvas/layers/RROWIndicator.tsx",
+      "src/features/3d-lab/DevControlsModule/canvas/layers/DevControlsLayers.tsx",
+      "src/features/3d-lab/DevControlsModule/canvas/layers/FirewallMarkers.tsx",
+      "src/features/3d-lab/DevControlsModule/canvas/InvalidateBridge.tsx",
+      "src/features/3d-lab/DevControlsModule/canvas/SceneLighting.tsx",
+      "src/features/3d-lab/DevControlsModule/canvas/DevControlsCanvas.tsx",
+      "src/features/3d-lab/DevControlsModule/canvas/annotations/DimensionLines.tsx",
+      "src/features/3d-lab/DevControlsModule/dashboard/PanelResizer.tsx",
+      "src/features/3d-lab/DevControlsModule/dashboard/tabs/SettingsTab.tsx",
+      "src/features/3d-lab/DevControlsModule/dashboard/ClosureEquationStrip.tsx",
+      "src/features/3d-lab/DevControlsModule/dashboard/BottomSheet.tsx",
+      "src/features/3d-lab/DevControlsModule/dashboard/ViewportWrapper.tsx",
+      "src/features/3d-lab/DevControlsModule/dashboard/CompactScorecardGrid.tsx",
+      "src/features/3d-lab/DevControlsModule/dashboard/CameraPresetBar.tsx",
+      "src/features/3d-lab/DevControlsModule/dashboard/OutputPanel.tsx",
+      "src/features/3d-lab/DevControlsModule/dashboard/MobileSheetContent.tsx",
+      "src/features/3d-lab/DevControlsModule/dashboard/TourOverlay.tsx",
+      "src/features/3d-lab/DevControlsModule/dashboard/LotInputPanel.tsx",
+      "src/features/3d-lab/DevControlsModule/dashboard/DevControlsCombinedLayers.tsx",
+      "src/features/3d-lab/DevControlsModule/dashboard/CollapsibleSection.tsx",
+      "src/features/3d-lab/DevControlsModule/dashboard/DevControlsLabV2.tsx",
+      "src/features/3d-lab/DevControlsModule/dashboard/KpiChip.tsx",
+      "src/features/3d-lab/DevControlsModule/dashboard/ComplianceSummary.tsx",
+      "src/features/3d-lab/DevControlsModule/dashboard/AMBFThreeWayPanel.tsx",
+      "src/features/3d-lab/DevControlsModule/dashboard/DevControlsDashboard.tsx",
+      "src/features/3d-lab/DevControlsModule/dashboard/FirewallPanel.tsx",
+      "src/features/3d-lab/DevControlsModule/dashboard/SetbackInfoPanel.tsx",
+      "src/features/3d-lab/DevControlsModule/dashboard/ZoningInputPanel.tsx",
+      "src/features/3d-lab/DevControlsModule/dashboard/FlarPanel.tsx",
+      "src/features/3d-lab/DevControlsModule/dashboard/ProposedBuildingPanel.tsx",
+      "src/features/3d-lab/DevControlsModule/dashboard/StatusBar.tsx",
+      "src/features/3d-lab/DevControlsModule/dashboard/SharedToolbarBridge.tsx",
+      "src/features/3d-lab/DevControlsModule/dashboard/ComplianceScorecard.tsx",
+      "src/features/3d-lab/DevControlsModule/dashboard/BhlPanel.tsx",
+      "src/features/3d-lab/DevControlsModule/dashboard/InputPanel.tsx",
+      "src/features/3d-lab/DevControlsModule/dashboard/KpiBar.tsx",
+      "src/features/3d-lab/DevControlsModule/dashboard/LayerToggles.tsx",
+      "src/features/3d-lab/DevControlsModule/dashboard/LayersOverlay.tsx",
+      "src/features/3d-lab/DevControlsModule/dashboard/PresetSelector.tsx",
+      "src/features/3d-lab/DevControlsModule/dashboard/splits/SetbackControls.tsx",
+      "src/features/3d-lab/DevControlsModule/dashboard/splits/ZoneTableRef.tsx",
+      "src/features/3d-lab/DevControlsModule/dashboard/splits/BhlInfo.tsx",
+      "src/features/3d-lab/DevControlsModule/dashboard/splits/FlarInfo.tsx",
+      "src/features/3d-lab/DevControlsModule/dashboard/splits/ZoneSelector.tsx",
+      "src/features/3d-lab/DevControlsModule/dashboard/splits/BhlControls.tsx",
+      "src/features/3d-lab/DevControlsModule/dashboard/splits/FlarControls.tsx",
+      "src/features/3d-lab/DevControlsModule/dashboard/splits/LotSummary.tsx",
+      "src/features/3d-lab/DevControlsModule/dashboard/splits/SetbackInfo.tsx",
+      "src/features/3d-lab/DevControlsModule/dashboard/splits/LotControls.tsx",
+      "src/features/3d-lab/DevControlsModule/dashboard/DevControlsLayerToggles.tsx",
+      "src/features/3d-lab/DevControlsModule/dashboard/ZoneLegend.tsx",
+      "src/features/3d-lab/DevControlsModule/dashboard/ViolationBanner.tsx",
+      "src/features/3d-lab/DevControlsModule/hooks/usePanelState.ts",
+      "src/features/3d-lab/DevControlsModule/hooks/useKeyboardShortcuts.ts",
+      "src/features/3d-lab/hooks/useCollaborationPresence.ts",
+      "src/features/3d-lab/hooks/useDragDrop.ts",
+      "src/features/3d-lab/hooks/useModuleLifecycle.ts",
+      "src/features/3d-lab/hooks/useInvalidateOnChange.ts",
+      "src/features/3d-lab/hooks/useSelectionModel.ts",
+      "src/features/3d-lab/hooks/useUndoRedo.ts",
+      "src/features/3d-lab/hooks/useCameraSnap.ts",
+      "src/features/3d-lab/hooks/useViewportShortcuts.ts",
+      "src/features/3d-lab/hooks/useTemplateContent.tsx",
+      "src/features/3d-lab/templates/WallConfiguratorRenderer.tsx",
+      "src/features/3d-lab/templates/ExplodedAssembly.tsx",
+      "src/features/3d-lab/templates/FloorPlanWalkthrough.tsx",
+      "src/features/3d-lab/templates/CutawaySection.tsx",
+      "src/features/3d-lab/templates/ParametricSceneRenderer.tsx",
+      "src/features/3d-lab/templates/ParametricScene.tsx",
+      "src/features/3d-lab/templates/FloorPlanScene.tsx",
+      "src/features/3d-lab/templates/AnimatedSequence.tsx",
+      "src/features/3d-lab/templates/WallConfiguratorTemplate.tsx",
+      "src/components/sidebar/SidebarContent.tsx",
+      "src/components/sidebar/SidebarProvider.tsx",
+      "src/components/sidebar/MobileSidebarShell.tsx",
+      "src/components/sidebar/MobileDrawer.tsx",
+      "src/components/sidebar/SidebarNavItem.tsx",
+      "src/components/sidebar/Sidebar.tsx",
+      "src/components/sidebar/SidebarHeader.tsx",
+      "src/components/sidebar/SidebarFooter.tsx",
+      "src/components/sidebar/MobileTopBar.tsx",
+      "src/components/trails/CatchUpView.tsx",
+      "src/components/trails/TrailPhaseMap.tsx",
+      "src/components/trails/MissedDayCard.tsx",
+      "src/components/trails/TrailLibrary.tsx",
+      "src/components/trails/TrailStepCard.tsx",
+      "src/components/trails/ScoreTrajectoryChart.tsx",
+      "src/components/trails/TrailDayView.tsx",
+      "src/components/trails/DayCompletionMoment.tsx",
+      "src/components/trails/TrailRibbon.tsx",
+      "src/components/trails/TrailFilterRow.tsx",
+      "src/components/trails/TrailDetail.tsx",
+      "src/components/trails/TrailDailyView.tsx",
+      "src/components/trails/TrailDetailEnroll.tsx",
+      "src/components/ui/alert-dialog.tsx",
+      "src/components/ui/pagination.tsx",
+      "src/components/ui/bottom-navigation.tsx",
+      "src/components/ui/tabs.tsx",
+      "src/components/ui/slider.tsx",
+      "src/components/ui/input-group.tsx",
+      "src/components/ui/popover.tsx",
+      "src/components/ui/progress.tsx",
+      "src/components/ui/toaster.tsx",
+      "src/components/ui/sheet.tsx",
+      "src/components/ui/unified-slider.tsx",
+      "src/components/ui/scroll-area.tsx",
+      "src/components/ui/resizable.tsx",
+      "src/components/ui/label.tsx",
+      "src/components/ui/accordion.tsx",
+      "src/components/ui/tooltip.tsx",
+      "src/components/ui/alert.tsx",
+      "src/components/ui/switch.tsx",
+      "src/components/ui/calendar.tsx",
+      "src/components/ui/breadcrumb.tsx",
+      "src/components/ui/radio-group.tsx",
+      "src/components/ui/command.tsx",
+      "src/components/ui/list-group.tsx",
+      "src/components/ui/close-button.tsx",
+      "src/components/ui/avatar.tsx",
+      "src/components/ui/dialog.tsx",
+      "src/components/ui/badge.tsx",
+      "src/components/ui/separator.tsx",
+      "src/components/ui/button.tsx",
+      "src/components/ui/toast.tsx",
+      "src/components/ui/checkbox.tsx",
+      "src/components/ui/dropdown-menu.tsx",
+      "src/components/ui/select.tsx",
+      "src/components/ui/textarea.tsx",
+      "src/components/ui/input.tsx",
+      "src/components/settings/StudyWindowSelector.tsx",
+      "src/components/developer/Breadcrumbs.tsx",
+      "src/components/3d/Workspace.tsx",
+      "src/components/tools/lot-plotter/LotPlotterForm.tsx",
+      "src/components/tools/floor-tiles/FloorTilesForm.tsx",
+      "src/components/tools/ThreeDCanvasPlaceholder.tsx",
+      "src/components/tools/wall-paint/WallPaintForm.tsx",
+      "src/components/tools/ToolPageLayout.tsx",
+      "src/components/portal/PortalSidebar.tsx",
+      "src/components/portal/CommandPalette.tsx",
+      "src/components/portal/MobileNav.tsx",
+      "src/components/portal/CopyButton.tsx",
+      "src/components/portal/StickyTOC.tsx",
+      "src/components/portal/PortalTopbar.tsx",
+      "src/components/interactive-illustrations/2D/SetbackIllustration.tsx",
+      "src/components/auth/SignInWithGoogleButton.tsx",
+      "src/components/layout/HeaderActions.tsx",
+      "src/components/admin/settings/RoleSelect.tsx",
+      "src/components/admin/settings/AdminRoleManager.tsx",
+      "src/components/admin/QuestionImporter.tsx",
+      "src/components/admin/QuestionQuickPreview.tsx",
+      "src/components/admin/QuestionsTableClient.tsx",
+      "src/components/admin/QuestionEditor.tsx",
+      "src/components/admin/DesignProblemEditor.tsx",
+      "src/components/admin/ArticleQuestionImporter.tsx",
+      "src/components/admin/AssetDetailView.tsx",
+      "src/components/admin/AssetUploader.tsx",
+      "src/components/admin/SMEReviewQueue.tsx",
+      "src/components/admin/TaxonomyEditor.tsx",
+      "src/components/admin/DesignScenarioEditor.tsx",
+      "src/components/admin/AuditLogViewer.tsx",
+      "src/components/admin/unified-editor/DirtyStateProvider.tsx",
+      "src/components/admin/unified-editor/ContentEditorIndex.tsx",
+      "src/components/admin/unified-editor/SaveAllBar.tsx",
+      "src/components/admin/unified-editor/EIPromptsPanel.tsx",
+      "src/components/admin/unified-editor/QuestionsPanel.tsx",
+      "src/components/admin/unified-editor/OutlinePanel.tsx",
+      "src/components/admin/unified-editor/PanelErrorBoundary.tsx",
+      "src/components/admin/unified-editor/ArticlePanel.tsx",
+      "src/components/admin/unified-editor/UnifiedContentEditor.tsx",
+      "src/components/admin/unified-editor/ContentBar.tsx",
+      "src/components/admin/DeleteArticleModal.tsx",
+      "src/components/admin/AssetList.tsx",
+      "src/components/admin/BulkActionBar.tsx",
+      "src/components/quiz/navigation-guard.tsx",
+      "src/components/wiki/blocks/WikiPre.tsx",
+      "src/components/wiki/blocks/RevealBlock.tsx",
+      "src/components/wiki/blocks/TeachBackPrompt.tsx",
+      "src/components/wiki/blocks/WikiTabs.tsx",
+      "src/components/wiki/blocks/Mermaid.tsx",
+      "src/components/wiki/blocks/ElaborativeInterrogation.tsx",
+      "src/components/wiki/blocks/PrequestionGate.tsx",
+      "src/components/wiki/blocks/InlineQuiz.tsx",
+      "src/components/wiki/navigation/WikiContentShell.tsx",
+      "src/components/wiki/navigation/WikiReadingProgress.tsx",
+      "src/components/wiki/navigation/WikiHeaderClient.tsx",
+      "src/components/wiki/navigation/WikiSidebarShell.tsx",
+      "src/components/wiki/navigation/WikiBookmarks.tsx",
+      "src/components/wiki/navigation/WikiNavigationContext.tsx",
+      "src/components/wiki/navigation/WikiSidebar.tsx",
+      "src/components/wiki/navigation/WikiTableOfContents.tsx",
+      "src/components/wiki/navigation/WikiRightSidebar.tsx",
+      "src/components/wiki/navigation/WikiDisciplineContext.tsx",
+      "src/components/wiki/quiz/WikiQuizModal.tsx",
+      "src/components/wiki/quiz/WikiQuizButton.tsx",
+      "src/components/wiki/shared/WikiNoteAnchor.tsx",
+      "src/components/wiki/shared/WikiHighlighter.tsx",
+      "src/components/wiki/shared/WikiRelatedPopover.tsx",
+      "src/components/wiki/shared/WikiTextSelection.tsx",
+      "src/components/wiki/shared/WikiSourcesPopover.tsx",
+      "src/components/wiki/shared/WikiReadTracker.tsx",
+      "src/components/wiki/shared/WikiReference.tsx",
+      "src/components/wiki/article/WikiArticleError.tsx",
+      "src/components/wiki/widgets/dsgn013/BodyDimensionExplorer.tsx",
+      "src/components/wiki/widgets/dsgn013/WorkstationCalculator.tsx",
+      "src/components/wiki/widgets/dsgn013/BodyDimensionDrill.tsx",
+      "src/components/wiki/widgets/dsgn013/DHRatioExplorer.tsx",
+      "src/components/wiki/widgets/dsgn013/DimensionDrill.tsx",
+      "src/components/wiki/widgets/dsgn013/ReachEnvelopeDiagram.tsx",
+      "src/components/wiki/widgets/dsgn013/BedSizeComparator.tsx",
+      "src/components/wiki/widgets/dsgn013/SpatialQualityDrill.tsx",
+      "src/components/wiki/widgets/dsgn013/BedroomPlanView.tsx",
+      "src/components/wiki/widgets/dsgn013/ProportionComparator.tsx",
+      "src/components/wiki/widgets/Lab3DWidget.tsx",
+      "src/components/wiki/widgets/bp344/DoorConfigurator.tsx",
+      "src/components/wiki/widgets/bp344/GrabBarExplainer.tsx",
+      "src/components/wiki/widgets/bp344/ComparisonTable.tsx",
+      "src/components/wiki/widgets/bp344/CorridorVisualizer.tsx",
+      "src/components/wiki/widgets/bp344/CubicleChecker.tsx",
+      "src/components/wiki/widgets/bp344/RecallDrill.tsx",
+      "src/components/motion/StaggerChildren.tsx",
+      "src/components/motion/ScrollReveal.tsx",
+      "src/components/shared/legal-citation-badge.tsx",
+      "src/components/shared/Navbar.tsx",
+      "src/components/shared/SourceBadge.tsx",
+      "src/components/shared/score-display.tsx",
+      "src/components/shared/app-drawer.tsx",
+      "src/components/shared/data-table.tsx",
+      "src/components/shared/SlatecampLoader.tsx",
+      "src/components/shared/LogoutButton.tsx",
+      "src/components/shared/question-card.tsx",
+      "src/components/shared/PanelCollapseHandle.tsx",
+      "src/components/shared/floating-panel.tsx",
+      "src/components/shared/question-dot-navigator.tsx",
+      "src/components/shared/taxonomy-tree.tsx",
+      "src/components/shared/NavigationProgress.tsx",
+      "src/components/shared/ThemeToggle.tsx",
+      "src/components/shared/ThemeProvider.tsx",
+      "src/components/shared/action-card.tsx",
+      "src/components/shared/DashboardHeader.tsx",
+      "src/components/shared/mode-button.tsx",
+      "src/components/shared/sidebar-nav.tsx",
+      "src/components/shared/WikiSidePanel.tsx",
+      "src/components/shared/Omnibar.tsx",
+      "src/components/shared/CodeBlock.tsx",
+      "src/components/shared/taxonomy-picker.tsx",
+      "src/components/assessment/ScoreReveal.tsx",
+      "src/components/assessment/AnimatedScore.tsx",
+      "src/components/assessment/PreAssessmentTeaser.tsx",
+      "src/components/assessment/AssessmentQuiz.tsx",
+      "src/components/ceo/TeamTable.tsx",
+      "src/components/ceo/RevenueExpenseChart.tsx",
+      "src/components/ceo/RoleAssignmentModal.tsx",
+      "src/components/ceo/ExportButton.tsx",
+      "src/components/ceo/charts/RevenueExpenseChartClient.tsx",
+      "src/components/ceo/charts/DepartmentCostChartClient.tsx",
+      "src/components/ceo/charts/ExpenseBreakdownChartClient.tsx",
+      "src/components/ceo/charts/RevenueChartClient.tsx",
+      "src/components/ceo/FinancialEntryForm.tsx",
+      "src/components/ceo/DepartmentCostChart.tsx",
+      "src/components/ceo/RevenueChart.tsx",
+      "src/components/ceo/ExpenseBreakdownChart.tsx",
+      "src/components/ceo/analytics/QuestionHealth.tsx",
+      "src/components/ceo/analytics/CAGEQuality.tsx",
+      "src/components/ceo/analytics/StudyCohort.tsx",
+      "src/components/ceo/analytics/ContentEffectiveness.tsx",
+      "src/components/ceo/analytics/EngagementDepth.tsx",
+      "src/components/ceo/analytics/LearningVelocity.tsx",
+      "src/components/ceo/analytics/AdoptionFunnel.tsx",
+      "src/components/ceo/analytics/CoverageGap.tsx",
+      "src/components/ceo/analytics/PassRate.tsx",
+      "src/components/ceo/FinancialLedger.tsx",
+      "src/components/dashboard/SubjectMasteryCard.tsx",
+      "src/components/dashboard/upgrade/UpgradeButtons.tsx",
+      "src/components/dashboard/BloomTrackerSkeleton.tsx",
+      "src/components/dashboard/ReviewCalendarSkeleton.tsx",
+      "src/components/dashboard/ActivityHeatmap.tsx",
+      "src/components/dashboard/ReviewCalendar.tsx",
+      "src/components/dashboard/StreakRibbonSkeleton.tsx",
+      "src/components/dashboard/RichInfoPopover.tsx",
+      "src/components/dashboard/DashboardAnalyticsSync.tsx",
+      "src/components/dashboard/ResultsDayBanner.tsx",
+      "src/components/dashboard/WelcomeGuide.tsx",
+      "src/components/dashboard/ModeCard.tsx",
+      "src/components/dashboard/SubjectMasterySkeleton.tsx",
+      "src/components/dashboard/SubjectRadarChart.tsx",
+      "src/components/dashboard/TaxonomyHeatmap.tsx",
+      "src/components/dashboard/HeroCommandBar.tsx",
+      "src/components/dashboard/heatmap/HeatmapHeader.tsx",
+      "src/components/dashboard/heatmap/HeatmapGrid.tsx",
+      "src/components/dashboard/DailyDoseCard.tsx",
+      "src/components/dashboard/TransitionPrompt.tsx",
+      "src/components/dashboard/BloomCognitiveTracker.tsx",
+      "src/components/testing/hub/ReviewHub.tsx",
+      "src/components/testing/hub/SessionsTable.tsx",
+      "src/components/testing/hub/HeroConfigurator.tsx",
+      "src/components/score/ZoneContextCard.tsx",
+      "src/components/score/ReadinessScoreRing.tsx",
+      "src/components/notes/NotesList.tsx",
+      "src/components/notes/NoteEditor.tsx",
+      "src/components/notes/QuickCaptureDrawer.tsx",
+      "src/components/notes/TemplatePicker.tsx",
+      "src/components/notes/NotesEditor.tsx",
+      "src/components/notes/NotesNavigator.tsx",
+      "src/components/notes/NotesShell.tsx",
+      "src/components/calculators/CHBInputPanel.tsx",
+      "src/components/calculators/FlooringScene.tsx",
+      "src/components/calculators/PaintInputPanel.tsx",
+      "src/components/calculators/DrywallInputPanel.tsx",
+      "src/components/calculators/PaintScene.tsx",
+      "src/components/calculators/FlooringInputPanel.tsx",
+      "src/components/calculators/CHBScene.tsx",
+      "src/components/calculators/InputPrimitives.tsx",
+      "src/components/calculators/ExportActions.tsx",
+      "src/components/calculators/DrywallScene.tsx",
+      "src/components/calculators/AssumptionsAccordion.tsx",
+      "src/components/marketing/FaqSection.tsx",
+      "src/components/marketing/ContactForm.tsx",
+      "src/components/marketing/AnalyticsSection.tsx",
+      "src/components/marketing/HeroSection.tsx",
+      "src/components/marketing/hero/HeroCards.tsx",
+      "src/components/marketing/HeroHeadline.tsx",
+      "src/components/dev/dev-overlay.tsx",
+      "src/components/dev/dev-keyboard-provider.tsx",
+      "src/components/dev/impersonation-panel.tsx",
+      "src/components/dev/system-info.tsx",
+      "src/components/dev/dev-toolbar.tsx",
+      "src/components/dev/demo-shell.tsx",
+      "src/components/dev/dev-badge.tsx",
+      "src/components/dev/feature-flag-board.tsx",
+      "src/components/quiz-v2/SlideToSubmit.tsx",
+      "src/components/quiz-v2/CrammingNudge.tsx",
+      "src/components/quiz-v2/TimerTicker.tsx",
+      "src/components/quiz-v2/QuizFooter.tsx",
+      "src/components/quiz-v2/QuizBody.tsx",
+      "src/components/quiz-v2/MnemonicTip.tsx",
+      "src/components/quiz-v2/SwipeableOption.tsx",
+      "src/components/quiz-v2/MicroBreakOverlay.tsx",
+      "src/components/quiz-v2/PredictionSlider.tsx",
+      "src/components/quiz-v2/QuizHeader.tsx",
+      "src/components/quiz-v2/DoseProgressStepper.tsx",
+      "src/components/quiz-v2/FeedbackPanel.tsx",
+      "src/components/quiz-v2/GestureCaptureZone.tsx",
+      "src/components/quiz-v2/setup/SimulationChecklist.tsx",
+      "src/components/quiz-v2/setup/SetupFlow.tsx",
+      "src/components/quiz-v2/setup/QuestionCountPills.tsx",
+      "src/components/quiz-v2/setup/IntroSlide1.tsx",
+      "src/components/quiz-v2/setup/IntroSlide2.tsx",
+      "src/components/quiz-v2/setup/PressureLevelSelector.tsx",
+      "src/components/quiz-v2/setup/IntroSlide3.tsx",
+      "src/components/quiz-v2/SubmitConfirmModal.tsx",
+      "src/components/quiz-v2/OptionsColumn.tsx",
+      "src/components/quiz-v2/SRProgressRing.tsx",
+      "src/components/quiz-v2/QuestionPalette.tsx",
+      "src/components/quiz-v2/ExitConfirmModal.tsx",
+      "src/components/quiz-v2/StandardQuizShell.tsx",
+      "src/components/quiz-v2/SimulationShell.tsx",
+      "src/components/quiz-v2/results/CoachObservationCard.tsx",
+      "src/components/quiz-v2/results/ScoreReveal.tsx",
+      "src/components/quiz-v2/results/ReviewCard.tsx",
+      "src/components/quiz-v2/results/SimulationDebrief.tsx",
+      "src/components/quiz-v2/results/ReviewFilterBar.tsx",
+      "src/components/quiz-v2/results/FeedForwardCards.tsx",
+      "src/components/quiz-v2/results/ConfidenceMatrix.tsx",
+      "src/components/quiz-v2/results/StaminaChart.tsx",
+      "src/components/quiz-v2/results/ResultsCTAs.tsx",
+      "src/components/quiz-v2/results/ResultsWithPostdiction.tsx",
+      "src/components/quiz-v2/results/PredictionComparison.tsx",
+      "src/components/quiz-v2/results/ReviewCardList.tsx",
+      "src/components/quiz-v2/GenerationInput.tsx",
+      "src/components/quiz-v2/SwipeTooltip.tsx",
+      "src/components/quiz-v2/HintButton.tsx",
+      "src/components/quiz-v2/CalculatingResultsOverlay.tsx",
+      "src/components/quiz-v2/SRSpacingTimeline.tsx",
+      "src/components/quiz-v2/SocraticExplorer.tsx",
+      "src/components/quiz-v2/BaseQuizShell.tsx",
+      "src/components/quiz-v2/SRCriterionCard.tsx",
+      "src/components/quiz-v2/PostdictionPrompt.tsx",
+      "src/components/quiz-v2/QuestionSkeleton.tsx",
+      "src/components/quiz-v2/ConfidenceInput.tsx",
+      "src/components/quiz-v2/EnduranceShell.tsx",
+      "src/components/quiz-v2/PacingNudge.tsx",
+      "src/components/quiz-v2/QuizOption.tsx",
+      "src/components/quiz-v2/TimerDisplay.tsx",
+      "src/components/quiz-v2/QuestionColumn.tsx",
+      "src/components/graphics/icons/Icon.tsx",
+      "src/components/notifications/NotificationList.tsx",
+      "src/components/notifications/NotificationBell.tsx",
+      "src/components/notifications/NotificationFilters.tsx",
+      "src/components/notifications/NotificationPreferences.tsx",
+      "src/components/notifications/NotificationItem.tsx",
+      "src/components/analytics/PacingAccuracy.tsx",
+      "src/components/analytics/ErrorPatterns.tsx",
+      "src/components/analytics/SimulationTrajectory.tsx",
+      "src/components/analytics/DifficultyMasteryScatter.tsx",
+      "src/components/analytics/TopicIntelligenceCards.tsx",
+      "src/components/analytics/MultimodalStudy.tsx",
+      "src/components/analytics/ConfidenceCalibration.tsx",
+      "src/components/analytics/MemoryHealthMap.tsx",
+      "src/components/analytics/ModeFunnel.tsx",
+      "src/components/analytics/StaminaCurve.tsx",
+      "src/components/analytics/SessionHistory.tsx",
+      "src/components/analytics/TimeSpentDistribution.tsx",
+      "src/components/analytics/AnalyticsErrorBoundary.tsx",
+      "src/components/analytics/ExamOutcomeForm.tsx",
+      "src/components/analytics/IRTTrajectoryChart.tsx",
+      "src/components/analytics/AccuracyBySubject.tsx",
+      "src/components/analytics/ReadingCorrelation.tsx",
+      "src/components/analytics/ForgettingCurves.tsx",
+      "src/components/analytics/StaminaHeatmap.tsx",
+      "src/components/analytics/MetacognitionChart.tsx",
+      "src/components/analytics/ReadingDepthHeatmap.tsx",
+      "src/components/analytics/PacingQuadrant.tsx",
+      "src/components/analytics/CalibrationScoreCard.tsx",
+      "src/components/analytics/ProgressCard.tsx",
+      "src/components/analytics/RelearningVelocity.tsx",
+      "src/components/analytics/ReadinessTrajectory.tsx",
+      "src/components/analytics/AnalyticsTabNav.tsx",
+      "src/components/analytics/MasterySparklineGrid.tsx",
+      "src/components/analytics/PacingInsights.tsx",
+      "src/components/analytics/ExamCountdown.tsx",
+      "src/components/analytics/TimelineHeatmap.tsx",
+      "src/components/analytics/CalibrationCurve.tsx",
+      "src/components/analytics/QuadrantOverlay.tsx",
+      "src/components/analytics/StudyVelocity.tsx",
+      "src/components/analytics/StudyStreakCalendar.tsx",
+      "src/components/analytics/WeakestTopics.tsx",
+      "src/hooks/useGestureSignalCapture.ts",
+      "src/hooks/useQuizShellHandlers.ts",
+      "src/hooks/useOnlineStatus.ts",
+      "src/hooks/notes/useNotesList.ts",
+      "src/hooks/notes/useNotesPanels.ts",
+      "src/hooks/notes/useNoteEditor.ts",
+      "src/hooks/useDeviceSensors.ts",
+      "src/hooks/useLabTelemetry.ts",
+      "src/hooks/useChartColors.ts",
+      "src/lib/context/note-context.tsx",
+      "src/lib/context/tier-context.tsx",
+      "src/lib/context/active-session-context.tsx",
+      "src/lib/context/entitlement-context.tsx",
+      "src/lib/context/discipline-context.tsx",
+      "src/lib/context/breadcrumb-context.tsx",
+      "src/lib/analytics.ts",
+      "src/lib/supabase/client.ts",
+      "src/lib/notes/uploadImage.ts",
+      "src/lib/hooks/useDraggableFloatingPosition.ts",
+      "src/lib/hooks/use-toast.ts",
+      "src/lib/hooks/useFeatureFlag.ts",
+      "src/lib/analytics/events.ts"
+    ],
+    "serverActions": [
+      "src/app/dashboard/exam-outcome/actions.ts",
+      "src/lib/queries/adaptive-quiz.ts",
+      "src/lib/queries/ceo/analytics/get-coverage-gap.ts",
+      "src/lib/queries/ceo/analytics/get-learning-velocity.ts",
+      "src/lib/queries/ceo/analytics/get-pass-rate.ts",
+      "src/lib/queries/ceo/analytics/get-engagement-depth.ts",
+      "src/lib/queries/ceo/analytics/get-question-health.ts",
+      "src/lib/queries/ceo/analytics/get-cage-quality.ts",
+      "src/lib/queries/ceo/analytics/get-study-cohorts.ts",
+      "src/lib/queries/ceo/analytics/get-content-effectiveness.ts",
+      "src/lib/queries/ceo/analytics/get-adoption-funnel.ts",
+      "src/lib/queries/trails.ts",
+      "src/lib/queries/srs.ts",
+      "src/lib/srs/update.ts",
+      "src/lib/supabase/bootstrap.ts",
+      "src/lib/audit/audit-actions.ts",
+      "src/lib/focus-review/generate-queue.ts",
+      "src/lib/analytics-server.ts",
+      "src/lib/actions/teach-back.ts",
+      "src/lib/actions/dashboard-page.ts",
+      "src/lib/actions/progress-report/actions.ts",
+      "src/lib/actions/progress-report/generate.ts",
+      "src/lib/actions/pods.ts",
+      "src/lib/actions/lab.ts",
+      "src/lib/actions/contact.ts",
+      "src/lib/actions/comp-exam-onboarding.ts",
+      "src/lib/actions/oath-taking.ts",
+      "src/lib/actions/studio-mode.ts",
+      "src/lib/actions/dashboard-page.test.ts",
+      "src/lib/actions/ei-prompts.ts",
+      "src/lib/actions/wiki-bookmarks.ts",
+      "src/lib/actions/session-actions.ts",
+      "src/lib/actions/final-stretch.ts",
+      "src/lib/actions/notification-triggers.ts",
+      "src/lib/actions/daily-mission.ts",
+      "src/lib/actions/analytics.ts",
+      "src/lib/actions/dae-mode.ts",
+      "src/lib/actions/streak.ts",
+      "src/lib/actions/notifications.ts",
+      "src/lib/actions/mastery/update-decay-rate.ts",
+      "src/lib/actions/mastery/post-interaction-hooks.ts",
+      "src/lib/actions/mastery/dismiss-empty-topic.ts",
+      "src/lib/actions/mastery/cramming-detector.ts",
+      "src/lib/actions/mastery/update-mastery-stats.ts",
+      "src/lib/actions/mastery/update-memory-strength.ts",
+      "src/lib/actions/analytics-data.ts",
+      "src/lib/actions/calibration-score-update.ts",
+      "src/lib/actions/stats-actions.ts",
+      "src/lib/actions/design-problems.ts",
+      "src/lib/actions/adaptive-session.ts",
+      "src/lib/actions/preview-actions.test.ts",
+      "src/lib/actions/email-preferences.ts",
+      "src/lib/actions/wiki-interactions.ts",
+      "src/lib/actions/admin/content.test.ts",
+      "src/lib/actions/admin/pipeline.test.ts",
+      "src/lib/actions/admin/wiki-queries.ts",
+      "src/lib/actions/admin/wiki.ts",
+      "src/lib/actions/admin/design-problems.test.ts",
+      "src/lib/actions/admin/question-queries.ts",
+      "src/lib/actions/admin/questions.test.ts",
+      "src/lib/actions/admin/design-problems.ts",
+      "src/lib/actions/admin/design-scenarios.test.ts",
+      "src/lib/actions/admin/pipeline.ts",
+      "src/lib/actions/admin/assets.ts",
+      "src/lib/actions/admin/taxonomy.ts",
+      "src/lib/actions/admin/content.ts",
+      "src/lib/actions/admin/dashboard.ts",
+      "src/lib/actions/admin/design-scenarios.ts",
+      "src/lib/actions/admin/roles.test.ts",
+      "src/lib/actions/admin/coverage.ts",
+      "src/lib/actions/admin/questions.ts",
+      "src/lib/actions/admin/wiki.test.ts",
+      "src/lib/actions/admin/bulk.ts",
+      "src/lib/actions/admin/roles.ts",
+      "src/lib/actions/admin/assets.test.ts",
+      "src/lib/actions/notes-actions.ts",
+      "src/lib/actions/analytics.test.ts",
+      "src/lib/actions/bloom-tracker.ts",
+      "src/lib/actions/taxonomy.ts",
+      "src/lib/actions/srs-dashboard.ts",
+      "src/lib/actions/srs-review.ts",
+      "src/lib/actions/wiki/submit-prequestion.ts",
+      "src/lib/actions/wiki/get-prequestions.ts",
+      "src/lib/actions/dashboard.ts",
+      "src/lib/actions/session-insights.ts",
+      "src/lib/actions/assessment/get-questions.ts",
+      "src/lib/actions/wiki-quiz.ts",
+      "src/lib/actions/social-proof.ts",
+      "src/lib/actions/preview-actions.ts",
+      "src/lib/actions/user-stats.ts",
+      "src/lib/actions/wiki-reads.ts",
+      "src/lib/actions/professional-mode.ts",
+      "src/lib/actions/ceo/export-actions.ts",
+      "src/lib/actions/ceo/team-actions.ts",
+      "src/lib/actions/ceo/financial-actions.ts",
+      "src/lib/actions/dashboard-helpers.ts",
+      "src/lib/actions/session-discovery.ts",
+      "src/lib/actions/results-day.ts",
+      "src/lib/actions/cram-card.ts",
+      "src/lib/actions/daily-dose/actions.ts",
+      "src/lib/actions/daily-dose/generate.ts",
+      "src/lib/actions/cached-queries.ts",
+      "src/lib/actions/flash-cards.ts",
+      "src/lib/actions/ai/generate-mnemonic.ts",
+      "src/lib/actions/trails.ts",
+      "src/lib/actions/profile.ts",
+      "src/lib/actions/mastery.ts",
+      "src/lib/actions/readiness-score-update.ts",
+      "src/lib/actions/dev/test-data.ts",
+      "src/lib/actions/dev/db-viewer.ts",
+      "src/lib/actions/quiz-v2/start-session.test.ts",
+      "src/lib/actions/quiz-v2/get-session-questions.test.ts",
+      "src/lib/actions/quiz-v2/skip-question.ts",
+      "src/lib/actions/quiz-v2/check-generation-answer.ts",
+      "src/lib/actions/quiz-v2/get-review-data.ts",
+      "src/lib/actions/quiz-v2/schemas.ts",
+      "src/lib/actions/quiz-v2/post-session-hooks.ts",
+      "src/lib/actions/quiz-v2/start-session.ts",
+      "src/lib/actions/quiz-v2/classify-and-store-error.ts",
+      "src/lib/actions/quiz-v2/save-prediction.ts",
+      "src/lib/actions/quiz-v2/pause-resume.ts",
+      "src/lib/actions/quiz-v2/session-helpers.ts",
+      "src/lib/actions/quiz-v2/abandon-session.ts",
+      "src/lib/actions/quiz-v2/get-confidence-matrix.ts",
+      "src/lib/actions/quiz-v2/index.ts",
+      "src/lib/actions/quiz-v2/update-session-progress.ts",
+      "src/lib/actions/quiz-v2/get-session-questions.ts",
+      "src/lib/actions/quiz-v2/submit-answer.ts",
+      "src/lib/actions/quiz-v2/sr-post-submit.ts",
+      "src/lib/actions/quiz-v2/submit-answer.test.ts",
+      "src/lib/actions/quiz-v2/generate-recommendations.ts",
+      "src/lib/actions/quiz-v2/flag-question.ts",
+      "src/lib/actions/quiz-v2/get-prediction-history.ts",
+      "src/lib/actions/quiz-v2/successive-relearning.ts",
+      "src/lib/actions/quiz-v2/end-session.ts",
+      "src/lib/actions/quiz-v2/save-postdiction.ts",
+      "src/lib/actions/wiki-actions.ts",
+      "src/lib/actions/quiz.test.ts",
+      "src/lib/actions/sync-notifications.ts",
+      "src/lib/actions/srs.ts",
+      "src/lib/actions/code-updates.ts",
+      "src/lib/actions/cache-tags.ts",
+      "src/lib/actions/debrief.ts",
+      "src/lib/actions/sessions.ts",
+      "src/lib/actions/heatmap.ts",
+      "src/lib/actions/assessment.ts",
+      "src/lib/actions/analytics/get-error-patterns.ts",
+      "src/lib/actions/analytics/write-theta.ts",
+      "src/lib/actions/analytics/get-memory-strength-data.ts",
+      "src/lib/actions/analytics/shared-helpers.ts",
+      "src/lib/actions/analytics/get-reading-correlation-data.ts",
+      "src/lib/actions/analytics/chart-data.ts",
+      "src/lib/actions/analytics/cross-feature-data.ts",
+      "src/lib/actions/analytics/get-metacognition-data.ts",
+      "src/lib/actions/analytics/get-relearning-data.ts",
+      "src/lib/actions/analytics/get-topic-intelligence-data.ts",
+      "src/lib/actions/analytics/get-mode-funnel.ts",
+      "src/lib/actions/analytics/get-multimodal-study-data.ts",
+      "src/lib/actions/analytics/get-calibration-data.ts",
+      "src/lib/actions/analytics/get-mastery-history.ts",
+      "src/lib/actions/analytics/get-irt-data.ts",
+      "src/lib/actions/analytics/get-reading-depth-data.ts",
+      "src/lib/actions/mastery-actions.ts",
+      "src/lib/actions/analytics-events.ts",
+      "src/lib/api/require-admin.ts",
+      "src/lib/import/import-actions.ts",
+      "src/lib/paywall/score-reveal.ts",
+      "src/lib/paywall/daily-cap.ts"
+    ],
+    "hasReactQuery": false,
+    "hasSWR": false,
+    "hasZustand": true
+  },
+  "knownUserJourneyCandidates": [
+    {
+      "name": "landing/startup",
+      "paths": [
+        "/",
+        "/try"
+      ]
+    },
+    {
+      "name": "login/signup/recovery",
+      "paths": [
+        "/login",
+        "/register",
+        "/forgot-password",
+        "/auth/reset-password"
+      ]
+    },
+    {
+      "name": "dashboard/home",
+      "paths": [
+        "/dashboard"
+      ]
+    },
+    {
+      "name": "learning/wiki",
+      "paths": [
+        "/dashboard/wiki",
+        "/dashboard/wiki/:slug"
+      ]
+    },
+    {
+      "name": "quiz/session",
+      "paths": [
+        "/quiz",
+        "/quiz/:mode/session/:sessionId",
+        "/quiz/:mode/session/:sessionId/results",
+        "/quiz/:mode/session/:sessionId/review",
+        "/quiz/:mode/setup"
+      ]
+    },
+    {
+      "name": "3d lab",
+      "paths": [
+        "/dashboard/3d-lab",
+        "/dashboard/3d-lab/:moduleId"
+      ]
+    },
+    {
+      "name": "admin/content",
+      "paths": [
+        "/admin",
+        "/admin/3d-models",
+        "/admin/activity",
+        "/admin/assets",
+        "/admin/assets/:id",
+        "/admin/audit",
+        "/admin/knowledge",
+        "/admin/knowledge/:id",
+        "/admin/knowledge/analytics",
+        "/admin/knowledge/import",
+        "/admin/knowledge/new",
+        "/admin/knowledge/questions",
+        "/admin/knowledge/questions/:id",
+        "/admin/knowledge/questions/design-problems",
+        "/admin/knowledge/questions/design-problems/:id",
+        "/admin/knowledge/questions/new",
+        "/admin/knowledge/questions/scenarios",
+        "/admin/knowledge/questions/scenarios/:id",
+        "/admin/login",
+        "/admin/pipeline"
+      ]
+    },
+    {
+      "name": "developer/internal",
+      "paths": [
+        "/developer",
+        "/developer/api-reference",
+        "/developer/architecture",
+        "/developer/status",
+        "/developer/status/database",
+        "/developer/status/infrastructure",
+        "/developer/tools",
+        "/developer/tools/console",
+        "/developer/tools/db",
+        "/developer/tools/logs",
+        "/developer/tools/test-data"
+      ]
+    }
+  ]
+}

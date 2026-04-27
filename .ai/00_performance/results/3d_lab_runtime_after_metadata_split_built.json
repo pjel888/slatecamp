@@ -1,0 +1,1502 @@
+{
+  "timestamp": "2026-04-27T02:06:45.144Z",
+  "project": "chromium",
+  "repeat": 3,
+  "routeFilter": "/dashboard/3d-lab",
+  "targetRoutes": [
+    "/dashboard/3d-lab"
+  ],
+  "runs": [
+    {
+      "timestamp": "2026-04-27T02:06:36.363Z",
+      "project": "chromium",
+      "route": "/dashboard/3d-lab",
+      "scenario": "cold",
+      "runIndex": 1,
+      "status": 200,
+      "ok": true,
+      "finalUrl": "http://localhost:3217/login?next=%2Fdashboard%2F3d-lab",
+      "durationMs": 1413.3586249999998,
+      "navigation": {
+        "name": "http://localhost:3217/login?next=%2Fdashboard%2F3d-lab",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 99.70000000298023,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentEncoding": "gzip",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0.10000000149011612,
+        "redirectEnd": 5,
+        "fetchStart": 5,
+        "domainLookupStart": 5,
+        "domainLookupEnd": 5,
+        "connectStart": 5,
+        "secureConnectionStart": 0,
+        "connectEnd": 5,
+        "requestStart": 5.300000000745058,
+        "responseStart": 17.100000001490116,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 17.100000001490116,
+        "responseEnd": 17.400000002235174,
+        "transferSize": 5747,
+        "encodedBodySize": 5447,
+        "decodedBodySize": 31918,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 58.20000000298023,
+        "domContentLoadedEventStart": 58.20000000298023,
+        "domContentLoadedEventEnd": 58.20000000298023,
+        "domComplete": 99.70000000298023,
+        "loadEventStart": 99.70000000298023,
+        "loadEventEnd": 99.70000000298023,
+        "type": "navigate",
+        "redirectCount": 1,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "high"
+        }
+      },
+      "paints": {
+        "fcp": 136,
+        "fp": 136
+      },
+      "webVitalsProxy": {
+        "lcp": 136,
+        "cls": 0,
+        "longTaskCount": 0,
+        "longTaskTotalMs": 0,
+        "maxLongTaskMs": null,
+        "inpProxyMs": null
+      },
+      "resources": {
+        "count": 42,
+        "totalTransferSize": 533232,
+        "totalEncodedBodySize": 520632,
+        "byType": {
+          "link": {
+            "count": 12,
+            "transferSize": 204022,
+            "encodedBodySize": 200422
+          },
+          "script": {
+            "count": 22,
+            "transferSize": 319663,
+            "encodedBodySize": 313063
+          },
+          "fetch": {
+            "count": 8,
+            "transferSize": 9547,
+            "encodedBodySize": 7147
+          }
+        },
+        "slowest": [
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0_smmzknl9ine.js",
+            "initiatorType": "script",
+            "duration": 41.100000001490116,
+            "transferSize": 54478,
+            "encodedBodySize": 54178
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0gyz64yr6t~f3.js",
+            "initiatorType": "script",
+            "duration": 38.399999998509884,
+            "transferSize": 6708,
+            "encodedBodySize": 6408
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0t_z3k4nu4~rs.js",
+            "initiatorType": "script",
+            "duration": 38.19999999925494,
+            "transferSize": 3149,
+            "encodedBodySize": 2849
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0id79jb2t3gzf.js",
+            "initiatorType": "script",
+            "duration": 37.19999999925494,
+            "transferSize": 10018,
+            "encodedBodySize": 9718
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0zs448320-qgc.js",
+            "initiatorType": "script",
+            "duration": 36.600000001490116,
+            "transferSize": 23367,
+            "encodedBodySize": 23067
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0rildm_fb6m6~.js",
+            "initiatorType": "script",
+            "duration": 34,
+            "transferSize": 5587,
+            "encodedBodySize": 5287
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/07a1a2kxrw2h~.js",
+            "initiatorType": "script",
+            "duration": 33.400000002235174,
+            "transferSize": 11581,
+            "encodedBodySize": 11281
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0wz0w08kgtzob.js",
+            "initiatorType": "script",
+            "duration": 32.69999999925494,
+            "transferSize": 4762,
+            "encodedBodySize": 4462
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0_yssc5vgw9.i.js",
+            "initiatorType": "script",
+            "duration": 31.100000001490116,
+            "transferSize": 13242,
+            "encodedBodySize": 12942
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0ds35ano3cs-_.js",
+            "initiatorType": "script",
+            "duration": 29.5,
+            "transferSize": 8652,
+            "encodedBodySize": 8352
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0rwwge57xnfls.js",
+            "initiatorType": "script",
+            "duration": 29,
+            "transferSize": 64380,
+            "encodedBodySize": 64080
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/05xc-y__0slj1.js",
+            "initiatorType": "script",
+            "duration": 27.399999998509884,
+            "transferSize": 8532,
+            "encodedBodySize": 8232
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0r2vu57nynpop.js",
+            "initiatorType": "script",
+            "duration": 26.599999997764826,
+            "transferSize": 8647,
+            "encodedBodySize": 8347
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/17t4g96du420q.js",
+            "initiatorType": "script",
+            "duration": 26.199999999254942,
+            "transferSize": 11096,
+            "encodedBodySize": 10796
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0l1p7u6~77l-y.js",
+            "initiatorType": "script",
+            "duration": 25.699999999254942,
+            "transferSize": 10659,
+            "encodedBodySize": 10359
+          }
+        ]
+      },
+      "heap": {
+        "jsHeapSizeLimit": 2330000000,
+        "totalJSHeapSize": 10000000,
+        "usedJSHeapSize": 10000000
+      },
+      "errors": [],
+      "screenshot": ".ai/00_performance/screenshots/chromium-dashboard-3d-lab-cold.png",
+      "trace": ".ai/00_performance/traces/chromium-dashboard-3d-lab-cold.zip"
+    },
+    {
+      "timestamp": "2026-04-27T02:06:38.371Z",
+      "project": "chromium",
+      "route": "/dashboard/3d-lab",
+      "scenario": "warm",
+      "runIndex": 1,
+      "status": 200,
+      "ok": true,
+      "finalUrl": "http://localhost:3217/login?next=%2Fdashboard%2F3d-lab",
+      "durationMs": 1332.584875,
+      "navigation": {
+        "name": "http://localhost:3217/login?next=%2Fdashboard%2F3d-lab",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 40,
+        "initiatorType": "navigation",
+        "deliveryType": "cache",
+        "nextHopProtocol": "",
+        "renderBlockingStatus": "non-blocking",
+        "contentEncoding": "gzip",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 2.399999998509884,
+        "fetchStart": 2.399999998509884,
+        "domainLookupStart": 2.399999998509884,
+        "domainLookupEnd": 2.399999998509884,
+        "connectStart": 2.399999998509884,
+        "secureConnectionStart": 0,
+        "connectEnd": 2.399999998509884,
+        "requestStart": 2.699999999254942,
+        "responseStart": 5,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 5,
+        "responseEnd": 5.299999997019768,
+        "transferSize": 300,
+        "encodedBodySize": 5447,
+        "decodedBodySize": 31918,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 6.099999997764826,
+        "unloadEventEnd": 6.099999997764826,
+        "domInteractive": 11.099999997764826,
+        "domContentLoadedEventStart": 11.099999997764826,
+        "domContentLoadedEventEnd": 11.099999997764826,
+        "domComplete": 40,
+        "loadEventStart": 40,
+        "loadEventEnd": 40,
+        "type": "navigate",
+        "redirectCount": 1,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "high"
+        }
+      },
+      "paints": {
+        "fcp": 32,
+        "fp": 32
+      },
+      "webVitalsProxy": {
+        "lcp": 60,
+        "cls": 0.0067840576171875,
+        "longTaskCount": 0,
+        "longTaskTotalMs": 0,
+        "maxLongTaskMs": null,
+        "inpProxyMs": null
+      },
+      "resources": {
+        "count": 42,
+        "totalTransferSize": 9546,
+        "totalEncodedBodySize": 520631,
+        "byType": {
+          "link": {
+            "count": 12,
+            "transferSize": 0,
+            "encodedBodySize": 200422
+          },
+          "script": {
+            "count": 22,
+            "transferSize": 0,
+            "encodedBodySize": 313063
+          },
+          "fetch": {
+            "count": 8,
+            "transferSize": 9546,
+            "encodedBodySize": 7146
+          }
+        },
+        "slowest": [
+          {
+            "name": "http://localhost:3217/?_rsc=to9i9",
+            "initiatorType": "fetch",
+            "duration": 8.900000002235174,
+            "transferSize": 1822,
+            "encodedBodySize": 1522
+          },
+          {
+            "name": "http://localhost:3217/register?_rsc=12sxf",
+            "initiatorType": "fetch",
+            "duration": 8,
+            "transferSize": 1097,
+            "encodedBodySize": 797
+          },
+          {
+            "name": "http://localhost:3217/register?_rsc=m8m8p",
+            "initiatorType": "fetch",
+            "duration": 7.900000002235174,
+            "transferSize": 1095,
+            "encodedBodySize": 795
+          },
+          {
+            "name": "http://localhost:3217/register?_rsc=4c4j4",
+            "initiatorType": "fetch",
+            "duration": 7.899999998509884,
+            "transferSize": 2187,
+            "encodedBodySize": 1887
+          },
+          {
+            "name": "http://localhost:3217/register?_rsc=17yrj",
+            "initiatorType": "fetch",
+            "duration": 5.600000001490116,
+            "transferSize": 795,
+            "encodedBodySize": 495
+          },
+          {
+            "name": "http://localhost:3217/?_rsc=17yrj",
+            "initiatorType": "fetch",
+            "duration": 5.199999999254942,
+            "transferSize": 444,
+            "encodedBodySize": 144
+          },
+          {
+            "name": "http://localhost:3217/register?_rsc=gowx9",
+            "initiatorType": "fetch",
+            "duration": 4.600000001490116,
+            "transferSize": 898,
+            "encodedBodySize": 598
+          },
+          {
+            "name": "http://localhost:3217/register?_rsc=9m5cy",
+            "initiatorType": "fetch",
+            "duration": 4.199999999254942,
+            "transferSize": 1208,
+            "encodedBodySize": 908
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/0c795a286deabae8-s.p.14tvuu96~wkr0.woff2",
+            "initiatorType": "link",
+            "duration": 0,
+            "transferSize": 0,
+            "encodedBodySize": 34560
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/36363bfb06833f56-s.p.0-pny06~-x26a.woff2",
+            "initiatorType": "link",
+            "duration": 0,
+            "transferSize": 0,
+            "encodedBodySize": 8688
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/6bd983bd58a87a3d-s.p.0h108oidc_0fm.woff2",
+            "initiatorType": "link",
+            "duration": 0,
+            "transferSize": 0,
+            "encodedBodySize": 25240
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/89ea96820aa96980-s.p.05i4trv5wh9ym.woff2",
+            "initiatorType": "link",
+            "duration": 0,
+            "transferSize": 0,
+            "encodedBodySize": 11364
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/a73419dd2ba2d841-s.p.0x-0vqtj_fzf1.woff2",
+            "initiatorType": "link",
+            "duration": 0,
+            "transferSize": 0,
+            "encodedBodySize": 8724
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/bd61c44353c129b5-s.p.1558nfkaan-be.woff2",
+            "initiatorType": "link",
+            "duration": 0,
+            "transferSize": 0,
+            "encodedBodySize": 23804
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/bdef460321aa07a0-s.p.0ir8mx04_4scw.woff2",
+            "initiatorType": "link",
+            "duration": 0,
+            "transferSize": 0,
+            "encodedBodySize": 9516
+          }
+        ]
+      },
+      "heap": {
+        "jsHeapSizeLimit": 2330000000,
+        "totalJSHeapSize": 13400000,
+        "usedJSHeapSize": 10000000
+      },
+      "errors": [],
+      "screenshot": null,
+      "trace": ".ai/00_performance/traces/chromium-dashboard-3d-lab-warm.zip"
+    },
+    {
+      "timestamp": "2026-04-27T02:06:39.772Z",
+      "project": "chromium",
+      "route": "/dashboard/3d-lab",
+      "scenario": "cold",
+      "runIndex": 2,
+      "status": 200,
+      "ok": true,
+      "finalUrl": "http://localhost:3217/login?next=%2Fdashboard%2F3d-lab",
+      "durationMs": 1360.176125,
+      "navigation": {
+        "name": "http://localhost:3217/login?next=%2Fdashboard%2F3d-lab",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 60.399999998509884,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentEncoding": "gzip",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 2.2999999970197678,
+        "fetchStart": 2.2999999970197678,
+        "domainLookupStart": 2.2999999970197678,
+        "domainLookupEnd": 2.2999999970197678,
+        "connectStart": 2.2999999970197678,
+        "secureConnectionStart": 0,
+        "connectEnd": 2.2999999970197678,
+        "requestStart": 2.599999997764826,
+        "responseStart": 5.199999999254942,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 5.199999999254942,
+        "responseEnd": 5.5,
+        "transferSize": 5747,
+        "encodedBodySize": 5447,
+        "decodedBodySize": 31918,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 28,
+        "domContentLoadedEventStart": 28,
+        "domContentLoadedEventEnd": 28,
+        "domComplete": 60.399999998509884,
+        "loadEventStart": 60.399999998509884,
+        "loadEventEnd": 60.399999998509884,
+        "type": "navigate",
+        "redirectCount": 1,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "low"
+        }
+      },
+      "paints": {
+        "fcp": 56,
+        "fp": 56
+      },
+      "webVitalsProxy": {
+        "lcp": 92,
+        "cls": 0.0067840576171875,
+        "longTaskCount": 0,
+        "longTaskTotalMs": 0,
+        "maxLongTaskMs": null,
+        "inpProxyMs": null
+      },
+      "resources": {
+        "count": 42,
+        "totalTransferSize": 533231,
+        "totalEncodedBodySize": 520631,
+        "byType": {
+          "link": {
+            "count": 12,
+            "transferSize": 204022,
+            "encodedBodySize": 200422
+          },
+          "script": {
+            "count": 22,
+            "transferSize": 319663,
+            "encodedBodySize": 313063
+          },
+          "fetch": {
+            "count": 8,
+            "transferSize": 9546,
+            "encodedBodySize": 7146
+          }
+        },
+        "slowest": [
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0_smmzknl9ine.js",
+            "initiatorType": "script",
+            "duration": 34.20000000298023,
+            "transferSize": 54478,
+            "encodedBodySize": 54178
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0t_z3k4nu4~rs.js",
+            "initiatorType": "script",
+            "duration": 32.70000000298023,
+            "transferSize": 3149,
+            "encodedBodySize": 2849
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0zs448320-qgc.js",
+            "initiatorType": "script",
+            "duration": 31.900000002235174,
+            "transferSize": 23367,
+            "encodedBodySize": 23067
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0gyz64yr6t~f3.js",
+            "initiatorType": "script",
+            "duration": 30.5,
+            "transferSize": 6708,
+            "encodedBodySize": 6408
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0id79jb2t3gzf.js",
+            "initiatorType": "script",
+            "duration": 30.200000002980232,
+            "transferSize": 10018,
+            "encodedBodySize": 9718
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0rildm_fb6m6~.js",
+            "initiatorType": "script",
+            "duration": 29.600000001490116,
+            "transferSize": 5587,
+            "encodedBodySize": 5287
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0wz0w08kgtzob.js",
+            "initiatorType": "script",
+            "duration": 28.5,
+            "transferSize": 4762,
+            "encodedBodySize": 4462
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/07a1a2kxrw2h~.js",
+            "initiatorType": "script",
+            "duration": 22.900000002235174,
+            "transferSize": 11581,
+            "encodedBodySize": 11281
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0_yssc5vgw9.i.js",
+            "initiatorType": "script",
+            "duration": 22.699999999254942,
+            "transferSize": 13242,
+            "encodedBodySize": 12942
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/05xc-y__0slj1.js",
+            "initiatorType": "script",
+            "duration": 22.399999998509884,
+            "transferSize": 8532,
+            "encodedBodySize": 8232
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0ds35ano3cs-_.js",
+            "initiatorType": "script",
+            "duration": 21.199999999254942,
+            "transferSize": 8652,
+            "encodedBodySize": 8352
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0r2vu57nynpop.js",
+            "initiatorType": "script",
+            "duration": 20.199999999254942,
+            "transferSize": 8647,
+            "encodedBodySize": 8347
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0rwwge57xnfls.js",
+            "initiatorType": "script",
+            "duration": 19.5,
+            "transferSize": 64380,
+            "encodedBodySize": 64080
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0l1p7u6~77l-y.js",
+            "initiatorType": "script",
+            "duration": 17.400000002235174,
+            "transferSize": 10659,
+            "encodedBodySize": 10359
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0pg~8tlmtu~~m.css",
+            "initiatorType": "link",
+            "duration": 16.5,
+            "transferSize": 54436,
+            "encodedBodySize": 54136
+          }
+        ]
+      },
+      "heap": {
+        "jsHeapSizeLimit": 2330000000,
+        "totalJSHeapSize": 10000000,
+        "usedJSHeapSize": 10000000
+      },
+      "errors": [],
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "timestamp": "2026-04-27T02:06:41.719Z",
+      "project": "chromium",
+      "route": "/dashboard/3d-lab",
+      "scenario": "warm",
+      "runIndex": 2,
+      "status": 200,
+      "ok": true,
+      "finalUrl": "http://localhost:3217/login?next=%2Fdashboard%2F3d-lab",
+      "durationMs": 1300.362416,
+      "navigation": {
+        "name": "http://localhost:3217/login?next=%2Fdashboard%2F3d-lab",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 20.5,
+        "initiatorType": "navigation",
+        "deliveryType": "cache",
+        "nextHopProtocol": "",
+        "renderBlockingStatus": "non-blocking",
+        "contentEncoding": "gzip",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0.10000000149011612,
+        "redirectEnd": 2.100000001490116,
+        "fetchStart": 2.100000001490116,
+        "domainLookupStart": 2.100000001490116,
+        "domainLookupEnd": 2.100000001490116,
+        "connectStart": 2.100000001490116,
+        "secureConnectionStart": 0,
+        "connectEnd": 2.100000001490116,
+        "requestStart": 2.300000000745058,
+        "responseStart": 4.199999999254942,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 4.199999999254942,
+        "responseEnd": 4.400000002235174,
+        "transferSize": 300,
+        "encodedBodySize": 5447,
+        "decodedBodySize": 31918,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 5.400000002235174,
+        "unloadEventEnd": 5.400000002235174,
+        "domInteractive": 9.699999999254942,
+        "domContentLoadedEventStart": 9.699999999254942,
+        "domContentLoadedEventEnd": 9.699999999254942,
+        "domComplete": 20.5,
+        "loadEventStart": 20.5,
+        "loadEventEnd": 20.5,
+        "type": "navigate",
+        "redirectCount": 1,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "high"
+        }
+      },
+      "paints": {
+        "fcp": 32,
+        "fp": 32
+      },
+      "webVitalsProxy": {
+        "lcp": 32,
+        "cls": 0,
+        "longTaskCount": 0,
+        "longTaskTotalMs": 0,
+        "maxLongTaskMs": null,
+        "inpProxyMs": null
+      },
+      "resources": {
+        "count": 42,
+        "totalTransferSize": 9547,
+        "totalEncodedBodySize": 520632,
+        "byType": {
+          "link": {
+            "count": 12,
+            "transferSize": 0,
+            "encodedBodySize": 200422
+          },
+          "script": {
+            "count": 22,
+            "transferSize": 0,
+            "encodedBodySize": 313063
+          },
+          "fetch": {
+            "count": 8,
+            "transferSize": 9547,
+            "encodedBodySize": 7147
+          }
+        },
+        "slowest": [
+          {
+            "name": "http://localhost:3217/?_rsc=to9i9",
+            "initiatorType": "fetch",
+            "duration": 10.5,
+            "transferSize": 1823,
+            "encodedBodySize": 1523
+          },
+          {
+            "name": "http://localhost:3217/register?_rsc=4c4j4",
+            "initiatorType": "fetch",
+            "duration": 6.699999999254942,
+            "transferSize": 2187,
+            "encodedBodySize": 1887
+          },
+          {
+            "name": "http://localhost:3217/register?_rsc=m8m8p",
+            "initiatorType": "fetch",
+            "duration": 6.399999998509884,
+            "transferSize": 1095,
+            "encodedBodySize": 795
+          },
+          {
+            "name": "http://localhost:3217/register?_rsc=12sxf",
+            "initiatorType": "fetch",
+            "duration": 6.300000000745058,
+            "transferSize": 1097,
+            "encodedBodySize": 797
+          },
+          {
+            "name": "http://localhost:3217/register?_rsc=17yrj",
+            "initiatorType": "fetch",
+            "duration": 5.199999999254942,
+            "transferSize": 795,
+            "encodedBodySize": 495
+          },
+          {
+            "name": "http://localhost:3217/?_rsc=17yrj",
+            "initiatorType": "fetch",
+            "duration": 4.899999998509884,
+            "transferSize": 444,
+            "encodedBodySize": 144
+          },
+          {
+            "name": "http://localhost:3217/register?_rsc=gowx9",
+            "initiatorType": "fetch",
+            "duration": 3.600000001490116,
+            "transferSize": 898,
+            "encodedBodySize": 598
+          },
+          {
+            "name": "http://localhost:3217/register?_rsc=9m5cy",
+            "initiatorType": "fetch",
+            "duration": 3.300000000745058,
+            "transferSize": 1208,
+            "encodedBodySize": 908
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/0c795a286deabae8-s.p.14tvuu96~wkr0.woff2",
+            "initiatorType": "link",
+            "duration": 0,
+            "transferSize": 0,
+            "encodedBodySize": 34560
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/36363bfb06833f56-s.p.0-pny06~-x26a.woff2",
+            "initiatorType": "link",
+            "duration": 0,
+            "transferSize": 0,
+            "encodedBodySize": 8688
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/6bd983bd58a87a3d-s.p.0h108oidc_0fm.woff2",
+            "initiatorType": "link",
+            "duration": 0,
+            "transferSize": 0,
+            "encodedBodySize": 25240
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/89ea96820aa96980-s.p.05i4trv5wh9ym.woff2",
+            "initiatorType": "link",
+            "duration": 0,
+            "transferSize": 0,
+            "encodedBodySize": 11364
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/a73419dd2ba2d841-s.p.0x-0vqtj_fzf1.woff2",
+            "initiatorType": "link",
+            "duration": 0,
+            "transferSize": 0,
+            "encodedBodySize": 8724
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/bd61c44353c129b5-s.p.1558nfkaan-be.woff2",
+            "initiatorType": "link",
+            "duration": 0,
+            "transferSize": 0,
+            "encodedBodySize": 23804
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/bdef460321aa07a0-s.p.0ir8mx04_4scw.woff2",
+            "initiatorType": "link",
+            "duration": 0,
+            "transferSize": 0,
+            "encodedBodySize": 9516
+          }
+        ]
+      },
+      "heap": {
+        "jsHeapSizeLimit": 2330000000,
+        "totalJSHeapSize": 12700000,
+        "usedJSHeapSize": 10000000
+      },
+      "errors": [],
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "timestamp": "2026-04-27T02:06:43.114Z",
+      "project": "chromium",
+      "route": "/dashboard/3d-lab",
+      "scenario": "cold",
+      "runIndex": 3,
+      "status": 200,
+      "ok": true,
+      "finalUrl": "http://localhost:3217/login?next=%2Fdashboard%2F3d-lab",
+      "durationMs": 1349.0316669999993,
+      "navigation": {
+        "name": "http://localhost:3217/login?next=%2Fdashboard%2F3d-lab",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 59.80000000074506,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentEncoding": "gzip",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 2.099999997764826,
+        "fetchStart": 2.099999997764826,
+        "domainLookupStart": 2.099999997764826,
+        "domainLookupEnd": 2.099999997764826,
+        "connectStart": 2.099999997764826,
+        "secureConnectionStart": 0,
+        "connectEnd": 2.099999997764826,
+        "requestStart": 2.300000000745058,
+        "responseStart": 4.199999999254942,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 4.199999999254942,
+        "responseEnd": 4.5,
+        "transferSize": 5747,
+        "encodedBodySize": 5447,
+        "decodedBodySize": 31918,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 26.800000000745058,
+        "domContentLoadedEventStart": 26.800000000745058,
+        "domContentLoadedEventEnd": 26.800000000745058,
+        "domComplete": 59.80000000074506,
+        "loadEventStart": 59.80000000074506,
+        "loadEventEnd": 59.80000000074506,
+        "type": "navigate",
+        "redirectCount": 1,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "low"
+        }
+      },
+      "paints": {
+        "fcp": 52,
+        "fp": 52
+      },
+      "webVitalsProxy": {
+        "lcp": 76,
+        "cls": 0.0067840576171875,
+        "longTaskCount": 0,
+        "longTaskTotalMs": 0,
+        "maxLongTaskMs": null,
+        "inpProxyMs": null
+      },
+      "resources": {
+        "count": 42,
+        "totalTransferSize": 533233,
+        "totalEncodedBodySize": 520633,
+        "byType": {
+          "link": {
+            "count": 12,
+            "transferSize": 204022,
+            "encodedBodySize": 200422
+          },
+          "script": {
+            "count": 22,
+            "transferSize": 319663,
+            "encodedBodySize": 313063
+          },
+          "fetch": {
+            "count": 8,
+            "transferSize": 9548,
+            "encodedBodySize": 7148
+          }
+        },
+        "slowest": [
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0_smmzknl9ine.js",
+            "initiatorType": "script",
+            "duration": 26.100000001490116,
+            "transferSize": 54478,
+            "encodedBodySize": 54178
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0id79jb2t3gzf.js",
+            "initiatorType": "script",
+            "duration": 22.800000000745058,
+            "transferSize": 10018,
+            "encodedBodySize": 9718
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0gyz64yr6t~f3.js",
+            "initiatorType": "script",
+            "duration": 22.300000000745058,
+            "transferSize": 6708,
+            "encodedBodySize": 6408
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0t_z3k4nu4~rs.js",
+            "initiatorType": "script",
+            "duration": 22.199999999254942,
+            "transferSize": 3149,
+            "encodedBodySize": 2849
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0zs448320-qgc.js",
+            "initiatorType": "script",
+            "duration": 21.700000002980232,
+            "transferSize": 23367,
+            "encodedBodySize": 23067
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0rildm_fb6m6~.js",
+            "initiatorType": "script",
+            "duration": 20.800000000745058,
+            "transferSize": 5587,
+            "encodedBodySize": 5287
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0rwwge57xnfls.js",
+            "initiatorType": "script",
+            "duration": 20.600000001490116,
+            "transferSize": 64380,
+            "encodedBodySize": 64080
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0wz0w08kgtzob.js",
+            "initiatorType": "script",
+            "duration": 19.600000001490116,
+            "transferSize": 4762,
+            "encodedBodySize": 4462
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/07a1a2kxrw2h~.js",
+            "initiatorType": "script",
+            "duration": 19.200000002980232,
+            "transferSize": 11581,
+            "encodedBodySize": 11281
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0_yssc5vgw9.i.js",
+            "initiatorType": "script",
+            "duration": 18.700000002980232,
+            "transferSize": 13242,
+            "encodedBodySize": 12942
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/05xc-y__0slj1.js",
+            "initiatorType": "script",
+            "duration": 17.900000002235174,
+            "transferSize": 8532,
+            "encodedBodySize": 8232
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0ds35ano3cs-_.js",
+            "initiatorType": "script",
+            "duration": 17.300000000745058,
+            "transferSize": 8652,
+            "encodedBodySize": 8352
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0pg~8tlmtu~~m.css",
+            "initiatorType": "link",
+            "duration": 16,
+            "transferSize": 54436,
+            "encodedBodySize": 54136
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/0r2vu57nynpop.js",
+            "initiatorType": "script",
+            "duration": 15.599999997764826,
+            "transferSize": 8647,
+            "encodedBodySize": 8347
+          },
+          {
+            "name": "http://localhost:3217/_next/static/chunks/18cilrg3kkkfk.js",
+            "initiatorType": "script",
+            "duration": 14.300000000745058,
+            "transferSize": 29329,
+            "encodedBodySize": 29029
+          }
+        ]
+      },
+      "heap": {
+        "jsHeapSizeLimit": 2330000000,
+        "totalJSHeapSize": 10000000,
+        "usedJSHeapSize": 10000000
+      },
+      "errors": [],
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "timestamp": "2026-04-27T02:06:45.090Z",
+      "project": "chromium",
+      "route": "/dashboard/3d-lab",
+      "scenario": "warm",
+      "runIndex": 3,
+      "status": 200,
+      "ok": true,
+      "finalUrl": "http://localhost:3217/login?next=%2Fdashboard%2F3d-lab",
+      "durationMs": 1326.1682919999985,
+      "navigation": {
+        "name": "http://localhost:3217/login?next=%2Fdashboard%2F3d-lab",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 45.600000001490116,
+        "initiatorType": "navigation",
+        "deliveryType": "cache",
+        "nextHopProtocol": "",
+        "renderBlockingStatus": "non-blocking",
+        "contentEncoding": "gzip",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 11.100000001490116,
+        "fetchStart": 11.100000001490116,
+        "domainLookupStart": 11.100000001490116,
+        "domainLookupEnd": 11.100000001490116,
+        "connectStart": 11.100000001490116,
+        "secureConnectionStart": 0,
+        "connectEnd": 11.100000001490116,
+        "requestStart": 16.900000002235174,
+        "responseStart": 28.100000001490116,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 28.100000001490116,
+        "responseEnd": 28.400000002235174,
+        "transferSize": 300,
+        "encodedBodySize": 5447,
+        "decodedBodySize": 31918,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 29.5,
+        "unloadEventEnd": 29.5,
+        "domInteractive": 34.5,
+        "domContentLoadedEventStart": 34.5,
+        "domContentLoadedEventEnd": 34.5,
+        "domComplete": 45.600000001490116,
+        "loadEventStart": 45.600000001490116,
+        "loadEventEnd": 45.600000001490116,
+        "type": "navigate",
+        "redirectCount": 1,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "low"
+        }
+      },
+      "paints": {
+        "fcp": 60,
+        "fp": 60
+      },
+      "webVitalsProxy": {
+        "lcp": 60,
+        "cls": 0,
+        "longTaskCount": 0,
+        "longTaskTotalMs": 0,
+        "maxLongTaskMs": null,
+        "inpProxyMs": null
+      },
+      "resources": {
+        "count": 42,
+        "totalTransferSize": 9547,
+        "totalEncodedBodySize": 520632,
+        "byType": {
+          "link": {
+            "count": 12,
+            "transferSize": 0,
+            "encodedBodySize": 200422
+          },
+          "script": {
+            "count": 22,
+            "transferSize": 0,
+            "encodedBodySize": 313063
+          },
+          "fetch": {
+            "count": 8,
+            "transferSize": 9547,
+            "encodedBodySize": 7147
+          }
+        },
+        "slowest": [
+          {
+            "name": "http://localhost:3217/?_rsc=to9i9",
+            "initiatorType": "fetch",
+            "duration": 6.900000002235174,
+            "transferSize": 1823,
+            "encodedBodySize": 1523
+          },
+          {
+            "name": "http://localhost:3217/register?_rsc=12sxf",
+            "initiatorType": "fetch",
+            "duration": 6.199999999254942,
+            "transferSize": 1097,
+            "encodedBodySize": 797
+          },
+          {
+            "name": "http://localhost:3217/register?_rsc=4c4j4",
+            "initiatorType": "fetch",
+            "duration": 6.100000001490116,
+            "transferSize": 2187,
+            "encodedBodySize": 1887
+          },
+          {
+            "name": "http://localhost:3217/register?_rsc=m8m8p",
+            "initiatorType": "fetch",
+            "duration": 6,
+            "transferSize": 1095,
+            "encodedBodySize": 795
+          },
+          {
+            "name": "http://localhost:3217/register?_rsc=17yrj",
+            "initiatorType": "fetch",
+            "duration": 4.599999997764826,
+            "transferSize": 795,
+            "encodedBodySize": 495
+          },
+          {
+            "name": "http://localhost:3217/?_rsc=17yrj",
+            "initiatorType": "fetch",
+            "duration": 4.400000002235174,
+            "transferSize": 444,
+            "encodedBodySize": 144
+          },
+          {
+            "name": "http://localhost:3217/register?_rsc=gowx9",
+            "initiatorType": "fetch",
+            "duration": 3.199999999254942,
+            "transferSize": 898,
+            "encodedBodySize": 598
+          },
+          {
+            "name": "http://localhost:3217/register?_rsc=9m5cy",
+            "initiatorType": "fetch",
+            "duration": 2.900000002235174,
+            "transferSize": 1208,
+            "encodedBodySize": 908
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/0c795a286deabae8-s.p.14tvuu96~wkr0.woff2",
+            "initiatorType": "link",
+            "duration": 0,
+            "transferSize": 0,
+            "encodedBodySize": 34560
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/36363bfb06833f56-s.p.0-pny06~-x26a.woff2",
+            "initiatorType": "link",
+            "duration": 0,
+            "transferSize": 0,
+            "encodedBodySize": 8688
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/6bd983bd58a87a3d-s.p.0h108oidc_0fm.woff2",
+            "initiatorType": "link",
+            "duration": 0,
+            "transferSize": 0,
+            "encodedBodySize": 25240
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/89ea96820aa96980-s.p.05i4trv5wh9ym.woff2",
+            "initiatorType": "link",
+            "duration": 0,
+            "transferSize": 0,
+            "encodedBodySize": 11364
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/a73419dd2ba2d841-s.p.0x-0vqtj_fzf1.woff2",
+            "initiatorType": "link",
+            "duration": 0,
+            "transferSize": 0,
+            "encodedBodySize": 8724
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/bd61c44353c129b5-s.p.1558nfkaan-be.woff2",
+            "initiatorType": "link",
+            "duration": 0,
+            "transferSize": 0,
+            "encodedBodySize": 23804
+          },
+          {
+            "name": "http://localhost:3217/_next/static/media/bdef460321aa07a0-s.p.0ir8mx04_4scw.woff2",
+            "initiatorType": "link",
+            "duration": 0,
+            "transferSize": 0,
+            "encodedBodySize": 9516
+          }
+        ]
+      },
+      "heap": {
+        "jsHeapSizeLimit": 2330000000,
+        "totalJSHeapSize": 11900000,
+        "usedJSHeapSize": 10000000
+      },
+      "errors": [],
+      "screenshot": null,
+      "trace": null
+    }
+  ],
+  "routeSummaries": [
+    {
+      "route": "/dashboard/3d-lab",
+      "runs": 6,
+      "cold": {
+        "count": 3,
+        "min": 1349.0316669999993,
+        "max": 1413.3586249999998,
+        "mean": 1374.1888056666664,
+        "median": 1360.176125,
+        "p50": 1360.176125,
+        "p75": 1386.767375,
+        "p95": 1408.0403749999998,
+        "p99": 1412.2949749999998,
+        "stddev": 28.0684377428092
+      },
+      "warm": {
+        "count": 3,
+        "min": 1300.362416,
+        "max": 1332.584875,
+        "mean": 1319.7051943333329,
+        "median": 1326.1682919999985,
+        "p50": 1326.1682919999985,
+        "p75": 1329.3765834999992,
+        "p95": 1331.9432166999998,
+        "p99": 1332.45654334,
+        "stddev": 13.926005399690556
+      },
+      "ttfb": {
+        "count": 6,
+        "min": 4.199999999254942,
+        "max": 28.100000001490116,
+        "mean": 10.633333333457509,
+        "median": 5.099999999627471,
+        "p50": 5.099999999627471,
+        "p75": 14.125000000931323,
+        "p95": 25.350000001490116,
+        "p99": 27.55000000149012,
+        "stddev": 9.045563677220724
+      },
+      "domContentLoaded": {
+        "count": 6,
+        "min": 9.699999999254942,
+        "max": 58.20000000298023,
+        "mean": 28.050000000124175,
+        "median": 27.40000000037253,
+        "p50": 27.40000000037253,
+        "p75": 32.875,
+        "p95": 52.275000002235174,
+        "p99": 57.01500000283123,
+        "stddev": 16.208099828382935
+      },
+      "load": {
+        "count": 6,
+        "min": 20.5,
+        "max": 99.70000000298023,
+        "mean": 54.333333333954215,
+        "median": 52.70000000111759,
+        "p50": 52.70000000111759,
+        "p75": 60.24999999906868,
+        "p95": 89.87500000186265,
+        "p99": 97.73500000275672,
+        "stddev": 24.328424163132645
+      },
+      "fcp": {
+        "count": 6,
+        "min": 32,
+        "max": 136,
+        "mean": 61.333333333333336,
+        "median": 54,
+        "p50": 54,
+        "p75": 59,
+        "p95": 117,
+        "p99": 132.20000000000002,
+        "stddev": 35.15047020390418
+      },
+      "lcp": {
+        "count": 6,
+        "min": 32,
+        "max": 136,
+        "mean": 76,
+        "median": 68,
+        "p50": 68,
+        "p75": 88,
+        "p95": 125,
+        "p99": 133.8,
+        "stddev": 32.41398874971525
+      },
+      "cls": {
+        "count": 6,
+        "min": 0,
+        "max": 0.0067840576171875,
+        "mean": 0.0033920288085937506,
+        "median": 0.00339202880859375,
+        "p50": 0.00339202880859375,
+        "p75": 0.0067840576171875,
+        "p95": 0.0067840576171875,
+        "p99": 0.0067840576171875,
+        "stddev": 0.00339202880859375
+      },
+      "longTaskTotal": {
+        "count": 6,
+        "min": 0,
+        "max": 0,
+        "mean": 0,
+        "median": 0,
+        "p50": 0,
+        "p75": 0,
+        "p95": 0,
+        "p99": 0,
+        "stddev": 0
+      },
+      "requests": {
+        "count": 6,
+        "min": 42,
+        "max": 42,
+        "mean": 42,
+        "median": 42,
+        "p50": 42,
+        "p75": 42,
+        "p95": 42,
+        "p99": 42,
+        "stddev": 0
+      },
+      "transferredBytes": {
+        "count": 6,
+        "min": 9546,
+        "max": 533233,
+        "mean": 271389.3333333333,
+        "median": 271389,
+        "p50": 271389,
+        "p75": 533231.75,
+        "p95": 533232.75,
+        "p99": 533232.95,
+        "stddev": 261842.66666751538
+      },
+      "errorCount": 0,
+      "screenshots": [
+        ".ai/00_performance/screenshots/chromium-dashboard-3d-lab-cold.png"
+      ],
+      "traces": [
+        ".ai/00_performance/traces/chromium-dashboard-3d-lab-cold.zip",
+        ".ai/00_performance/traces/chromium-dashboard-3d-lab-warm.zip"
+      ]
+    }
+  ],
+  "summary": {
+    "coldDurationMs": {
+      "count": 3,
+      "min": 1349.0316669999993,
+      "max": 1413.3586249999998,
+      "mean": 1374.1888056666664,
+      "median": 1360.176125,
+      "p50": 1360.176125,
+      "p75": 1386.767375,
+      "p95": 1408.0403749999998,
+      "p99": 1412.2949749999998,
+      "stddev": 28.0684377428092
+    },
+    "warmDurationMs": {
+      "count": 3,
+      "min": 1300.362416,
+      "max": 1332.584875,
+      "mean": 1319.7051943333329,
+      "median": 1326.1682919999985,
+      "p50": 1326.1682919999985,
+      "p75": 1329.3765834999992,
+      "p95": 1331.9432166999998,
+      "p99": 1332.45654334,
+      "stddev": 13.926005399690556
+    },
+    "fcpMs": {
+      "count": 6,
+      "min": 32,
+      "max": 136,
+      "mean": 61.333333333333336,
+      "median": 54,
+      "p50": 54,
+      "p75": 59,
+      "p95": 117,
+      "p99": 132.20000000000002,
+      "stddev": 35.15047020390418
+    },
+    "lcpMs": {
+      "count": 6,
+      "min": 32,
+      "max": 136,
+      "mean": 76,
+      "median": 68,
+      "p50": 68,
+      "p75": 88,
+      "p95": 125,
+      "p99": 133.8,
+      "stddev": 32.41398874971525
+    },
+    "requestCount": {
+      "count": 6,
+      "min": 42,
+      "max": 42,
+      "mean": 42,
+      "median": 42,
+      "p50": 42,
+      "p75": 42,
+      "p95": 42,
+      "p99": 42,
+      "stddev": 0
+    },
+    "transferredBytes": {
+      "count": 6,
+      "min": 9546,
+      "max": 533233,
+      "mean": 271389.3333333333,
+      "median": 271389,
+      "p50": 271389,
+      "p75": 533231.75,
+      "p95": 533232.75,
+      "p99": 533232.95,
+      "stddev": 261842.66666751538
+    }
+  },
+  "notes": [
+    "Navigation duration is measured wall-clock around page.goto plus bounded network-idle/settling wait.",
+    "Web vital values are browser Performance API/observer proxies; validate production Core Web Vitals with RUM for final budgets.",
+    "Traced runs add overhead and are diagnostic, not pristine latency baselines."
+  ]
+}

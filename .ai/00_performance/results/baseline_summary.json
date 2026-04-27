@@ -1,0 +1,249 @@
+{
+  "timestamp": "2026-04-27T02:16:56.447Z",
+  "missingInputs": [],
+  "environment": {
+    "gitCommit": "936d6de57efcfb850a9774eedc4967da568520e9",
+    "branch": "main",
+    "os": {
+      "platform": "darwin",
+      "release": "25.3.0",
+      "arch": "arm64",
+      "type": "Darwin"
+    },
+    "versions": {
+      "node": "v25.8.0",
+      "bun": "1.3.10",
+      "playwright": "Version 1.59.1"
+    }
+  },
+  "inventoryCounts": {
+    "pages": 112,
+    "layouts": 15,
+    "loading": 92,
+    "errors": 7,
+    "routeHandlers": 12,
+    "clientComponents": 654,
+    "serverActionLikeFiles": 168,
+    "sourceFiles": 1971
+  },
+  "frontendSummary": {
+    "coldDurationMs": {
+      "count": 42,
+      "min": 1279.7451660000079,
+      "max": 1555.916458,
+      "mean": 1363.1733749285713,
+      "median": 1354.3328125000044,
+      "p50": 1354.3328125000044,
+      "p75": 1373.3520724999962,
+      "p95": 1434.222433350001,
+      "p99": 1511.2588820299993,
+      "stddev": 43.31910309888958
+    },
+    "warmDurationMs": {
+      "count": 42,
+      "min": 1264.6752910000068,
+      "max": 1400.630666,
+      "mean": 1321.3745376190473,
+      "median": 1319.5939795000013,
+      "p50": 1319.5939795000013,
+      "p75": 1333.0165097499962,
+      "p95": 1363.1069357000008,
+      "p99": 1391.46556044,
+      "stddev": 25.038619023780072
+    },
+    "fcpMs": {
+      "count": 84,
+      "min": 20,
+      "max": 140,
+      "mean": 49.095238095238095,
+      "median": 48,
+      "p50": 48,
+      "p75": 56,
+      "p95": 83.39999999999998,
+      "p99": 116.76000000000005,
+      "stddev": 19.8023682131222
+    },
+    "lcpMs": {
+      "count": 84,
+      "min": 20,
+      "max": 140,
+      "mean": 59.523809523809526,
+      "median": 52,
+      "p50": 52,
+      "p75": 80,
+      "p95": 92,
+      "p99": 116.76000000000005,
+      "stddev": 22.512682240861583
+    },
+    "requestCount": {
+      "count": 84,
+      "min": 30,
+      "max": 61,
+      "mean": 45.857142857142854,
+      "median": 42,
+      "p50": 42,
+      "p75": 57,
+      "p95": 60,
+      "p99": 61,
+      "stddev": 8.596985708101773
+    },
+    "transferredBytes": {
+      "count": 84,
+      "min": 0,
+      "max": 645483,
+      "mean": 282647.9761904762,
+      "median": 236732,
+      "p50": 236732,
+      "p75": 533349.75,
+      "p95": 644677.25,
+      "p99": 645478.85,
+      "stddev": 272139.7644718337
+    }
+  },
+  "apiSummary": {
+    "count": 15,
+    "min": 3.2386249999999563,
+    "max": 3885.1015000000007,
+    "mean": 414.75383900000026,
+    "median": 5.95416699999987,
+    "p50": 5.95416699999987,
+    "p75": 65.2122500000005,
+    "p95": 1985.0922580999977,
+    "p99": 3505.099651619999,
+    "stddev": 995.6667592896719
+  },
+  "supabaseSummary": {
+    "tablesTouched": 77,
+    "selectStarCount": 9,
+    "unboundedReadCandidates": 160,
+    "clientSideQueryBlocks": 4,
+    "authCallSignals": 49,
+    "rpcCallSignals": 16,
+    "storageCallSignals": 8,
+    "realtimeCallSignals": 2
+  },
+  "buildSummary": {
+    "runs": [
+      {
+        "runIndex": 1,
+        "durationMs": 42475.317584000004,
+        "exitCode": 0
+      }
+    ],
+    "summary": {
+      "count": 1,
+      "min": 42475.317584000004,
+      "max": 42475.317584000004,
+      "mean": 42475.317584000004,
+      "median": 42475.317584000004,
+      "p50": 42475.317584000004,
+      "p75": 42475.317584000004,
+      "p95": 42475.317584000004,
+      "p99": 42475.317584000004,
+      "stddev": 0
+    }
+  },
+  "hotspotSummary": {
+    "clientComponent": 666,
+    "broadContext": 35,
+    "renderArrayWork": 656,
+    "clientSorting": 57,
+    "clientFiltering": 215,
+    "expensiveFormatting": 64,
+    "regexConstruction": 1774,
+    "dynamicImportCandidate": 99,
+    "useEffectFetch": 5,
+    "stateStormCandidate": 372,
+    "unboundedList": 39,
+    "r3fHeavy": 96,
+    "imageRisk": 10,
+    "sequentialAwait": 263,
+    "jsonSerialization": 44
+  },
+  "bottlenecks": [
+    {
+      "rank": 1,
+      "title": "3D Lab dev-server runtime/memory remains a full-suite blocker",
+      "location": "src/app/dashboard/3d-lab/page.tsx; src/features/3d-lab/components/*; src/features/3d-lab/config/registry/*",
+      "evidence": "Next dev server restarted near memory threshold during /dashboard/3d-lab; Playwright timed out at 180000 ms and the browser context closed.",
+      "metricBefore": "Last complete 3D Lab cold p95 1361 ms",
+      "impact": "Blocks reliable full-suite frontend regression testing and indicates heavy route startup/memory pressure.",
+      "confidence": "high",
+      "ease": "medium",
+      "risk": "medium",
+      "verify": "Run route-isolated built-app measurement plus heap profiling, then compare 3D Lab route chunks and p95."
+    },
+    {
+      "rank": 2,
+      "title": "Supabase broad-read and missing-limit candidates remain after first tightening pass",
+      "location": "results/supabase_query_inventory.json and 07_supabase_database.md",
+      "evidence": "9 select-star candidate(s), 160 unbounded read candidate(s), 4 client query block(s).",
+      "metricBefore": "blocked-without-live-read-only-credentialed-query-plan",
+      "impact": "Can inflate payloads, RLS work, network bytes, and waterfall latency.",
+      "confidence": "medium",
+      "ease": "varies",
+      "risk": "medium-high",
+      "verify": "Continue explicit columns/limits on high-traffic paths, then run targeted EXPLAIN and route perf tests."
+    },
+    {
+      "rank": 3,
+      "title": "Admin content/editor surfaces overfetch and render large lists without virtualization",
+      "location": "src/lib/actions/admin/content.ts; src/components/admin/unified-editor/QuestionsPanel.tsx; taxonomy tree/picker components",
+      "evidence": "Static audit found broad admin content loads, a 1481-line QuestionsPanel, and unvirtualized list/grouping risks.",
+      "metricBefore": "Privileged admin runtime metric requires safe role fixture.",
+      "impact": "Affects internal content operations and editor responsiveness.",
+      "confidence": "medium",
+      "ease": "medium-hard",
+      "risk": "medium",
+      "verify": "Measure admin routes with privileged fixtures; add pagination/virtualization; remeasure."
+    },
+    {
+      "rank": 4,
+      "title": "AI/API routes need mocked latency/error budget benchmarks after timeout wrappers",
+      "location": "src/app/api/ai/*/route.ts; src/lib/ai/provider.ts; payment/webhook routes",
+      "evidence": "Provider fetch timeout wrappers were added, but mutation/AI/payment POST benchmarks remain blocked without safe mocked/staging fixtures.",
+      "metricBefore": "Mutation/AI POST endpoints were not called by safe benchmark harness.",
+      "impact": "Can create long tail waits and serverless duration risk.",
+      "confidence": "medium",
+      "ease": "medium",
+      "risk": "medium",
+      "verify": "Add mocked provider latency benchmarks; track p95/p99 and timeout rate."
+    },
+    {
+      "rank": 5,
+      "title": "Cron routes include N+1/per-user scaling patterns",
+      "location": "src/app/api/cron/compute-signals/route.ts; src/app/api/cron/focus-review-scan/route.ts",
+      "evidence": "API/backend audit found loops over active users with multiple DB calls per user; focus-review timestamp schema mismatch was fixed but scaling remains unmeasured.",
+      "metricBefore": "Cron endpoints require secret and were not automatically called.",
+      "impact": "Operational timeout risk grows with active users.",
+      "confidence": "medium-high",
+      "ease": "medium-hard",
+      "risk": "high",
+      "verify": "Measure on local seeded DB by user count and compare batch/RPC refactor."
+    },
+    {
+      "rank": 6,
+      "title": "Bundle-heavy route families need analyzer-backed budgets",
+      "location": "analytics, wiki, admin editor, notes, 3D Lab; Mermaid/CodeMirror/Tiptap/Recharts imports",
+      "evidence": "Build and hotspot scans show tracked heavy dependencies and large build artifacts; direct 3D imports reduced hub manifest bytes but registry metadata split remains open.",
+      "metricBefore": "Build p50 42475 ms; largest static 2290.6 KiB",
+      "impact": "Large JS chunks harm cold route load and interaction readiness.",
+      "confidence": "medium",
+      "ease": "varies",
+      "risk": "low-medium",
+      "verify": "Add route bundle budgets and rerun perf:build plus perf:frontend."
+    },
+    {
+      "rank": 7,
+      "title": "Dashboard sync dedupe needs production-auth monitoring",
+      "location": "src/components/dashboard/DashboardAnalyticsSync.tsx; src/lib/actions/dashboard-page.ts; src/app/dashboard/page.tsx",
+      "evidence": "Local comparison after sync-payload split shows cold p95 delta -8197 ms (-32.58%).",
+      "metricBefore": "Dashboard cold p95 1369 ms",
+      "impact": "Dashboard is the primary authenticated landing page; the local fix needs credentialed production-like confirmation.",
+      "confidence": "medium",
+      "ease": "easy",
+      "risk": "low-medium",
+      "verify": "Rerun dashboard route/user-flow p95 with safe auth fixture and compare request counts/server logs."
+    }
+  ]
+}

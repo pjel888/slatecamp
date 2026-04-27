@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-04-27T00:29:35.733Z",
+  "status": "blocked-without-live-read-only-credentialed-query-plan",
+  "summary": {
+    "min": null,
+    "max": null,
+    "mean": null,
+    "median": null,
+    "p50": null,
+    "p75": null,
+    "p95": null,
+    "p99": null,
+    "stddev": null
+  },
+  "notes": [
+    "This script performs static inventory only and intentionally avoids live database reads/writes by default.",
+    "Run targeted EXPLAIN/EXPLAIN ANALYZE manually or through a safe read-only database role for specific query shapes."
+  ]
+}

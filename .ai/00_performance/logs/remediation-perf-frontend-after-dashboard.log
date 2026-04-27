@@ -1,0 +1,332 @@
+Command: bun run perf:frontend
+Working directory: /Users/philiplewis/slatecamp
+Start: 2026-04-27T00:11:38Z
+
+$ PLAYWRIGHT_DEMO_AUTH=true bunx playwright test --config=.ai/00_performance/playwright/playwright.perf.config.ts --project=chromium --workers=1
+[2m[WebServer] [22m(node:52768) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:52769) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 15 tests using 1 worker
+
+(node:52868) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:52868) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+  ✓   1 [chromium] › .ai/00_performance/playwright/perf.spec.ts:281:9 › SlateCamp performance navigation baselines › navigation metrics for / (18.3s)
+  ✓   2 [chromium] › .ai/00_performance/playwright/perf.spec.ts:281:9 › SlateCamp performance navigation baselines › navigation metrics for /about (13.9s)
+  ✓   3 [chromium] › .ai/00_performance/playwright/perf.spec.ts:281:9 › SlateCamp performance navigation baselines › navigation metrics for /auth/reset-password (16.0s)
+  ✓   4 [chromium] › .ai/00_performance/playwright/perf.spec.ts:281:9 › SlateCamp performance navigation baselines › navigation metrics for /contact (14.3s)
+  ✓   5 [chromium] › .ai/00_performance/playwright/perf.spec.ts:281:9 › SlateCamp performance navigation baselines › navigation metrics for /forgot-password (13.3s)
+[2m[WebServer] [22m⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+  ✓   6 [chromium] › .ai/00_performance/playwright/perf.spec.ts:281:9 › SlateCamp performance navigation baselines › navigation metrics for /login (39.2s)
+  ✓   7 [chromium] › .ai/00_performance/playwright/perf.spec.ts:281:9 › SlateCamp performance navigation baselines › navigation metrics for /pricing (22.6s)
+  ✓   8 [chromium] › .ai/00_performance/playwright/perf.spec.ts:281:9 › SlateCamp performance navigation baselines › navigation metrics for /register (26.2s)
+  ✓   9 [chromium] › .ai/00_performance/playwright/perf.spec.ts:281:9 › SlateCamp performance navigation baselines › navigation metrics for /try (15.1s)
+[2m[WebServer] [22m[browser] Uncaught Error: Internal Next.js error: Router action dispatched before initialization.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+  ✓  10 [chromium] › .ai/00_performance/playwright/perf.spec.ts:281:9 › SlateCamp performance navigation baselines › navigation metrics for /dashboard (26.0s)
+  ✓  11 [chromium] › .ai/00_performance/playwright/perf.spec.ts:281:9 › SlateCamp performance navigation baselines › navigation metrics for /dashboard/settings (31.2s)
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+  ✓  12 [chromium] › .ai/00_performance/playwright/perf.spec.ts:281:9 › SlateCamp performance navigation baselines › navigation metrics for /dashboard/wiki (38.8s)
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m[browser] The width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m[browser] Encountered two children with the same key, `00000000-0000-4000-8000-000000000104`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+[2m[WebServer] [22m[browser] Encountered two children with the same key, `00000000-0000-4000-8000-000000000105`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+[2m[WebServer] [22m[browser] The width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m[browser] Encountered two children with the same key, `00000000-0000-4000-8000-000000000104`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+[2m[WebServer] [22m[browser] Encountered two children with the same key, `00000000-0000-4000-8000-000000000105`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+[2m[WebServer] [22m[browser] The width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m[browser] The width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m[browser] The width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m[browser] The width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m[browser] Encountered two children with the same key, `00000000-0000-4000-8000-000000000104`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+[2m[WebServer] [22m[browser] Encountered two children with the same key, `00000000-0000-4000-8000-000000000105`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+[2m[WebServer] [22m[browser] The width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m[browser] Encountered two children with the same key, `00000000-0000-4000-8000-000000000104`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+[2m[WebServer] [22m[browser] Encountered two children with the same key, `00000000-0000-4000-8000-000000000105`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+[2m[WebServer] [22m[browser] The width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m[browser] The width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m[browser] The width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m[browser] Encountered two children with the same key, `00000000-0000-4000-8000-000000000104`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+[2m[WebServer] [22m[browser] Encountered two children with the same key, `00000000-0000-4000-8000-000000000105`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+[2m[WebServer] [22m[browser] The width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m[browser] The width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m[browser] Encountered two children with the same key, `00000000-0000-4000-8000-000000000104`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+[2m[WebServer] [22m[browser] Encountered two children with the same key, `00000000-0000-4000-8000-000000000105`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m[browser] The width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m[browser] The width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m[browser] Encountered two children with the same key, `00000000-0000-4000-8000-000000000104`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+[2m[WebServer] [22m[browser] Encountered two children with the same key, `00000000-0000-4000-8000-000000000105`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+[2m[WebServer] [22m[browser] The width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m[browser] The width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m[browser] Encountered two children with the same key, `00000000-0000-4000-8000-000000000104`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+[2m[WebServer] [22m[browser] Encountered two children with the same key, `00000000-0000-4000-8000-000000000105`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m[browser] The width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m[browser] The width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m[browser] Encountered two children with the same key, `00000000-0000-4000-8000-000000000104`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+[2m[WebServer] [22m[browser] Encountered two children with the same key, `00000000-0000-4000-8000-000000000105`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+[2m[WebServer] [22m[browser] The width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m[browser] The width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m[browser] Encountered two children with the same key, `00000000-0000-4000-8000-000000000104`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+[2m[WebServer] [22m[browser] Encountered two children with the same key, `00000000-0000-4000-8000-000000000105`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m[browser] The width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m[browser] Encountered two children with the same key, `00000000-0000-4000-8000-000000000104`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+[2m[WebServer] [22m[browser] Encountered two children with the same key, `00000000-0000-4000-8000-000000000105`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+[2m[WebServer] [22m[browser] The width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m[browser] Encountered two children with the same key, `00000000-0000-4000-8000-000000000104`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+[2m[WebServer] [22m[browser] Encountered two children with the same key, `00000000-0000-4000-8000-000000000105`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+[2m[WebServer] [22m[browser] The width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m[browser] The width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m[browser] The width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m[browser] The width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m[browser] Encountered two children with the same key, `00000000-0000-4000-8000-000000000104`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+[2m[WebServer] [22m[browser] Encountered two children with the same key, `00000000-0000-4000-8000-000000000105`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+[2m[WebServer] [22m[browser] The width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m[browser] The width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m[browser] Encountered two children with the same key, `00000000-0000-4000-8000-000000000104`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+[2m[WebServer] [22m[browser] Encountered two children with the same key, `00000000-0000-4000-8000-000000000105`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22mThe width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m[browser] The width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m[browser] The width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m[browser] Encountered two children with the same key, `00000000-0000-4000-8000-000000000104`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+[2m[WebServer] [22m[browser] Encountered two children with the same key, `00000000-0000-4000-8000-000000000105`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+[2m[WebServer] [22m[browser] The width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m[browser] The width(-1) and height(-1) of chart should be greater than 0,
+[2m[WebServer] [22m       please check the style of container, or the props width(100%) and height(100%),
+[2m[WebServer] [22m       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+[2m[WebServer] [22m       height and width.
+[2m[WebServer] [22m[browser] Encountered two children with the same key, `00000000-0000-4000-8000-000000000104`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+[2m[WebServer] [22m[browser] Encountered two children with the same key, `00000000-0000-4000-8000-000000000105`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+  ✓  13 [chromium] › .ai/00_performance/playwright/perf.spec.ts:281:9 › SlateCamp performance navigation baselines › navigation metrics for /dashboard/analytics (1.3m)
+[2m[WebServer] [22m
+[2m[WebServer] [22m<--- Last few GCs --->
+[2m[WebServer] [22m c[52769:0x8b080c000]   456627 ms: Mark-Compact 3376.7 (3461.5) -> 3357.2 (3456.0) MB, pooled: 128.5 MB, 1096.35 / 0.21 ms (+ 1359.2 ms in 263 steps since start of marking, biggest step 10.2 ms, walltime since start of marking 2734 ms) (average mu = 0.284, [52769:0x8b080c000]   460751 ms: Mark-Compact 3397.2 (3491.8) -> 3387.2 (3483.5) MB, pooled: 130.0 MB, 277.80 / 0.17 ms (+ 2139.5 ms in 371 steps since start of marking, biggest step 41.8 ms, walltime since start of marking 3336 ms) (average mu = 0.357, c
+[2m[WebServer] [22mFATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory
+[2m[WebServer] [22m----- Native stack trace -----
+[2m[WebServer] [22m
+[2m[WebServer] [22m 1: 0x100cd2e88 node::OOMErrorHandler(char const*, v8::OOMDetails const&) [/Users/philiplewis/.nvm/versions/node/v25.8.0/bin/node]
+[2m[WebServer] [22m 2: 0x100eedff4 v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, v8::OOMDetails const&) [/Users/philiplewis/.nvm/versions/node/v25.8.0/bin/node]
+[2m[WebServer] [22m 3: 0x10113ad4c v8::internal::Heap::stack() [/Users/philiplewis/.nvm/versions/node/v25.8.0/bin/node]
+[2m[WebServer] [22m 4: 0x10113e278 v8::internal::Heap::HasLowYoungGenerationAllocationRate() [/Users/philiplewis/.nvm/versions/node/v25.8.0/bin/node]
+[2m[WebServer] [22m 5: 0x101150508 v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags, v8::internal::PerformHeapLimitCheck)::$_1::operator()() const [/Users/philiplewis/.nvm/versions/node/v25.8.0/bin/node]
+[2m[WebServer] [22m 6: 0x10114fdcc void heap::base::Stack::SetMarkerAndCallbackImpl<v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags, v8::internal::PerformHeapLimitCheck)::$_1>(heap::base::Stack*, void*, void const*) [/Users/philiplewis/.nvm/versions/node/v25.8.0/bin/node]
+[2m[WebServer] [22m 7: 0x101a99b30 PushAllRegistersAndIterateStack [/Users/philiplewis/.nvm/versions/node/v25.8.0/bin/node]
+[2m[WebServer] [22m 8: 0x101138b00 v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags, v8::internal::PerformHeapLimitCheck) [/Users/philiplewis/.nvm/versions/node/v25.8.0/bin/node]
+[2m[WebServer] [22m 9: 0x10113a654 v8::internal::Heap::HandleExternalMemoryInterrupt() [/Users/philiplewis/.nvm/versions/node/v25.8.0/bin/node]
+[2m[WebServer] [22m10: 0x1013a4e20 v8::internal::JSArrayBuffer::Setup(v8::internal::SharedFlag, v8::internal::ResizableFlag, std::__1::shared_ptr<v8::internal::BackingStore>, v8::internal::Isolate*) [/Users/philiplewis/.nvm/versions/node/v25.8.0/bin/node]
+[2m[WebServer] [22m11: 0x100f44290 v8::internal::(anonymous namespace)::ConstructBuffer(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::JSFunction>, v8::internal::DirectHandle<v8::internal::JSReceiver>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::InitializedFlag) [/Users/philiplewis/.nvm/versions/node/v25.8.0/bin/node]
+[2m[WebServer] [22m12: 0x100f43b40 v8::internal::Builtin_ArrayBufferConstructor_DoNotInitialize(int, unsigned long*, v8::internal::Isolate*) [/Users/philiplewis/.nvm/versions/node/v25.8.0/bin/node]
+[2m[WebServer] [22m13: 0x101b89394 Builtins_CEntry_Return1_ArgvOnStack_BuiltinExit [/Users/philiplewis/.nvm/versions/node/v25.8.0/bin/node]
+[2m[WebServer] [22m14: 0x101c384a4 Builtins_CreateTypedArray [/Users/philiplewis/.nvm/versions/node/v25.8.0/bin/node]
+[2m[WebServer] [22m15: 0x127869fa8
+[2m[WebServer] [22m16: 0x126ef19c8
+[2m[WebServer] [22m17: 0x1279ba1b0
+[2m[WebServer] [22m18: 0x125859e24
+[2m[WebServer] [22m19: 0x1267f6770
+[2m[WebServer] [22m20: 0x125f35d34
+[2m[WebServer] [22m21: 0x125b3ffc4
+[2m[WebServer] [22m22: 0x101bfe058 Builtins_PromiseFulfillReactionJob [/Users/philiplewis/.nvm/versions/node/v25.8.0/bin/node]
+[2m[WebServer] [22m23: 0x101b16920 Builtins_RunMicrotasks [/Users/philiplewis/.nvm/versions/node/v25.8.0/bin/node]
+[2m[WebServer] [22m24: 0x101ae6850 Builtins_JSRunMicrotasksEntry [/Users/philiplewis/.nvm/versions/node/v25.8.0/bin/node]
+[2m[WebServer] [22m25: 0x10106a94c v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) [/Users/philiplewis/.nvm/versions/node/v25.8.0/bin/node]
+[2m[WebServer] [22m26: 0x10106b1e8 v8::internal::(anonymous namespace)::InvokeWithTryCatch(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) [/Users/philiplewis/.nvm/versions/node/v25.8.0/bin/node]
+[2m[WebServer] [22m27: 0x10106b30c v8::internal::Execution::TryRunMicrotasks(v8::internal::Isolate*, v8::internal::MicrotaskQueue*) [/Users/philiplewis/.nvm/versions/node/v25.8.0/bin/node]
+[2m[WebServer] [22m28: 0x102f80830 v8::internal::MicrotaskQueue::RunMicrotasks(v8::internal::Isolate*) [/Users/philiplewis/.nvm/versions/node/v25.8.0/bin/node]
+[2m[WebServer] [22m29: 0x102f80b78 v8::internal::MicrotaskQueue::PerformCheckpoint(v8::Isolate*) (.cold.1) [/Users/philiplewis/.nvm/versions/node/v25.8.0/bin/node]
+[2m[WebServer] [22m30: 0x101099e90 v8::internal::MicrotaskQueue::PerformCheckpoint(v8::Isolate*) [/Users/philiplewis/.nvm/versions/node/v25.8.0/bin/node]
+[2m[WebServer] [22m31: 0x101aeb3cc Builtins_CallApiCallbackOptimizedNoProfiling [/Users/philiplewis/.nvm/versions/node/v25.8.0/bin/node]
+[2m[WebServer] [22m32: 0x1267899d4
+[2m[WebServer] [22m33: 0x101ae696c Builtins_JSEntryTrampoline [/Users/philiplewis/.nvm/versions/node/v25.8.0/bin/node]
+[2m[WebServer] [22m34: 0x101ae6610 Builtins_JSEntry [/Users/philiplewis/.nvm/versions/node/v25.8.0/bin/node]
+[2m[WebServer] [22m35: 0x10106a994 v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) [/Users/philiplewis/.nvm/versions/node/v25.8.0/bin/node]
+[2m[WebServer] [22m36: 0x10106a318 v8::internal::Execution::Call(v8::internal::Isolate*, v8::internal::DirectHandle<v8::internal::Object>, v8::internal::DirectHandle<v8::internal::Object>, v8::base::Vector<v8::internal::DirectHandle<v8::internal::Object> const>) [/Users/philiplewis/.nvm/versions/node/v25.8.0/bin/node]
+[2m[WebServer] [22m37: 0x100eff4d4 v8::Function::Call(v8::Isolate*, v8::Local<v8::Context>, v8::Local<v8::Value>, int, v8::Local<v8::Value>*) [/Users/philiplewis/.nvm/versions/node/v25.8.0/bin/node]
+[2m[WebServer] [22m38: 0x100bdf094 node::InternalCallbackScope::Close() [/Users/philiplewis/.nvm/versions/node/v25.8.0/bin/node]
+[2m[WebServer] [22m39: 0x100bdf30c node::InternalMakeCallback(node::Environment*, v8::Local<v8::Object>, v8::Local<v8::Object>, v8::Local<v8::Function>, int, v8::Local<v8::Value>*, node::async_context, v8::Local<v8::Value>) [/Users/philiplewis/.nvm/versions/node/v25.8.0/bin/node]
+[2m[WebServer] [22m40: 0x100bf2904 node::AsyncWrap::MakeCallback(v8::Local<v8::Function>, int, v8::Local<v8::Value>*) [/Users/philiplewis/.nvm/versions/node/v25.8.0/bin/node]
+[2m[WebServer] [22m41: 0x100ded948 node::(anonymous namespace)::CompressionStream<node::(anonymous namespace)::ZlibContext>::AfterThreadPoolWork(int) [/Users/philiplewis/.nvm/versions/node/v25.8.0/bin/node]
+[2m[WebServer] [22m42: 0x100c97560 node::ThreadPoolWork::ScheduleWork()::'lambda'(uv_work_s*, int)::operator()(uv_work_s*, int) const [/Users/philiplewis/.nvm/versions/node/v25.8.0/bin/node]
+[2m[WebServer] [22m43: 0x100c97428 node::ThreadPoolWork::ScheduleWork()::'lambda'(uv_work_s*, int)::__invoke(uv_work_s*, int) [/Users/philiplewis/.nvm/versions/node/v25.8.0/bin/node]
+[2m[WebServer] [22m44: 0x101ac34c0 uv__work_done [/Users/philiplewis/.nvm/versions/node/v25.8.0/bin/node]
+[2m[WebServer] [22m45: 0x101ac714c uv__async_io [/Users/philiplewis/.nvm/versions/node/v25.8.0/bin/node]
+[2m[WebServer] [22m46: 0x101adb2bc uv__io_poll [/Users/philiplewis/.nvm/versions/node/v25.8.0/bin/node]
+[2m[WebServer] [22m47: 0x101ac76d0 uv_run [/Users/philiplewis/.nvm/versions/node/v25.8.0/bin/node]
+[2m[WebServer] [22m48: 0x100be053c node::SpinEventLoopInternal(node::Environment*) [/Users/philiplewis/.nvm/versions/node/v25.8.0/bin/node]
+[2m[WebServer] [22m49: 0x102ee36e4 node::NodeMainInstance::Run() (.cold.1) [/Users/philiplewis/.nvm/versions/node/v25.8.0/bin/node]
+[2m[WebServer] [22m50: 0x100d168c4 node::NodeMainInstance::Run() [/Users/philiplewis/.nvm/versions/node/v25.8.0/bin/node]
+[2m[WebServer] [22m51: 0x100c9134c node::Start(int, char**) [/Users/philiplewis/.nvm/versions/node/v25.8.0/bin/node]
+[2m[WebServer] [22m52: 0x19084dd54 start [/usr/lib/dyld]
+  ✓  14 [chromium] › .ai/00_performance/playwright/perf.spec.ts:281:9 › SlateCamp performance navigation baselines › navigation metrics for /dashboard/3d-lab (1.7m)
+  ✓  15 [chromium] › .ai/00_performance/playwright/perf.spec.ts:293:7 › SlateCamp performance navigation baselines › user flow timing proxies (1.0m)
+
+  Slow test file: [chromium] › .ai/00_performance/playwright/perf.spec.ts (8.6m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  15 passed (8.7m)
