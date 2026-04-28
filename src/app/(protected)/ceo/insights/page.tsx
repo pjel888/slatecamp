@@ -11,12 +11,14 @@ import {
   getChurnSignals,
 } from '@/lib/queries/ceo/user-queries'
 import { formatPercent } from '@/types/ceo'
+import { verifyCeoAccess } from '@/lib/queries/ceo/auth'
 
 export const metadata = {
   title: 'Behavioral Insights — CEO Dashboard',
 }
 
 export default async function InsightsPage() {
+  await verifyCeoAccess()
   const [snapshot, cohorts, churnRisk, timeToValue, churnSignals] =
     await Promise.all([
       getEngagementSnapshot(),

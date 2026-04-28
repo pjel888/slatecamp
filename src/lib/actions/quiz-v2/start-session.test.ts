@@ -49,6 +49,9 @@ const toClientQuestionMock = mock((_question: any, position: number) => ({
 const logServerErrorMock = mock(() => Promise.resolve())
 
 mock.module('@/lib/supabase/server', () => ({
+  createStaticClient: () => Promise.resolve({}),
+  hasAuthCookie: () => Promise.resolve(false),
+  getUserIfPresent: () => Promise.resolve({ data: { user: null } }),
   getUser: getUserMock,
   createServiceClient: createServiceClientMock,
 }))
@@ -71,6 +74,7 @@ mock.module('@/lib/actions/cached-queries', () => ({
 
 mock.module('@/lib/quiz/to-client-question', () => ({
   buildTaxonomyBreadcrumbMap: () => Promise.resolve(new Map()),
+  fetchQuestionsForClient: mock(() => Promise.resolve([])),
   toClientQuestion: toClientQuestionMock,
 }))
 

@@ -1,15 +1,13 @@
 import type { Metadata } from 'next'
-import { redirect } from 'next/navigation'
-import { ROUTES } from '@/lib/routes'
-import { canManageContent } from '@/lib/admin/roles'
+import { assertPermission } from '@/lib/admin/roles'
 import { QuestionImporter } from '@/components/admin/QuestionImporter'
 import { Breadcrumb } from '@/components/ui/breadcrumb'
+import { ROUTES } from '@/lib/routes'
 
 export const metadata: Metadata = { title: 'Import Questions - SlateCamp Admin' }
 
 export default async function ImportQuestionsPage() {
-  const authorized = await canManageContent()
-  if (!authorized) redirect(ROUTES.admin.root)
+  await assertPermission('admin.content.import')
 
   return (
     <div className="mx-auto max-w-2xl space-y-6">

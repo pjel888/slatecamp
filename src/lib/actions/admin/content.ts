@@ -1,7 +1,7 @@
 'use server'
 import { createClient } from '@/lib/supabase/server'
 import { createAdminClient } from '@/lib/supabase/admin'
-import { canManageContent, canReviewContent } from '@/lib/admin/roles'
+import { assertPermission } from '@/lib/admin/roles'
 import { revalidatePath, revalidateTag } from '@/lib/cache/revalidate'
 import { CACHE_TAGS } from '../cache-tags'
 import { ROUTES } from '@/lib/routes'
@@ -221,10 +221,7 @@ export interface SaveArticleFullResult {
 }
 
 const assertCanReadAdminContent = async () => {
-  const authorized = await canReviewContent()
-  if (!authorized) {
-    throw new Error('Unauthorized: insufficient permissions')
-  }
+  await assertPermission('admin.content.view')
 }
 
 // ─── MDX Preview Compilation ─────────────────────────────────
@@ -251,7 +248,7 @@ export const compileMdxPreview = async (source: string) => {
 
 /** Fetch all data needed for the content editor index page */
 export const getContentEditorIndexData = async () => {
-  await assertCanReadAdminContent()
+  await assertPermission('admin.content.view')
   const supabase = await createClient()
 
   // Parallel: articles, taxonomy nodes, article-taxonomy links, questions for search
@@ -405,7 +402,7 @@ export const getContentEditorIndexData = async () => {
 
 /** Fetch full article with all editable fields */
 export const getArticleFull = async (id: string) => {
-  await assertCanReadAdminContent()
+  await assertPermission('admin.content.view')
   const supabase = await createClient()
   const { data, error } = await supabase
     .from('wiki_articles')
@@ -421,7 +418,7 @@ export const getArticleFull = async (id: string) => {
 
 /** Get only the updated_at timestamp for conflict detection */
 export const getArticleUpdatedAt = async (id: string): Promise<string | null> => {
-  await assertCanReadAdminContent()
+  await assertPermission('admin.content.view')
   const supabase = await createClient()
   const { data, error } = await supabase
     .from('wiki_articles')
@@ -435,7 +432,7 @@ export const getArticleUpdatedAt = async (id: string): Promise<string | null> =>
 
 /** Get taxonomy node links for an article */
 export const getArticleTaxonomyNodes = async (articleId: string) => {
-  await assertCanReadAdminContent()
+  await assertPermission('admin.content.view')
   const supabase = await createClient()
   const { data, error } = await supabase
     .from('wiki_article_taxonomy')
@@ -475,7 +472,7 @@ export const getQuestionsByNodeIds = async (nodeIds: string[]) => {
 
 /** Get questions directly linked to an article via article_id */
 export const getQuestionsByArticleId = async (articleId: string) => {
-  await assertCanReadAdminContent()
+  await assertPermission('admin.content.view')
   const supabase = await createClient()
   const { data, error } = await supabase
     .from('questions')
@@ -543,22 +540,7 @@ export const importQuestionsForArticle = async (
   topicId: string,
   questionsJson: string
 ) => {
-  const authorized = await canManageContent()
-  if (!authorized) {
-    await logServerError({
-      family: 'admin',
-      eventName: 'content_import_questions_unauthorized',
-      message: 'Unauthorized attempt to import article questions.',
-      context: {
-        routeOrAction: 'admin:content.importQuestions',
-        metadata: {
-          articleId,
-          topicId,
-        },
-      },
-    })
-    throw new Error('Unauthorized: insufficient permissions')
-  }
+  await assertPermission('admin.content.import')
 
   let parsedQuestions: ImportedQuestion[]
   try {
@@ -622,7 +604,7 @@ export const importQuestionsForArticle = async (
 
 /** Get info for a single taxonomy node */
 export const getTaxonomyNodeInfo = async (nodeId: string) => {
-  await assertCanReadAdminContent()
+  await assertPermission('admin.content.view')
   const supabase = await createClient()
   const { data, error } = await supabase
     .from('taxonomy_tree')
@@ -636,7 +618,7 @@ export const getTaxonomyNodeInfo = async (nodeId: string) => {
 
 /** Get info for multiple taxonomy nodes */
 export const getTaxonomyNodesInfo = async (nodeIds: string[]) => {
-  await assertCanReadAdminContent()
+  await assertPermission('admin.content.view')
   if (nodeIds.length === 0) return []
 
   const supabase = await createClient()
@@ -654,7 +636,7 @@ export const getTaxonomyNodesInfo = async (nodeIds: string[]) => {
 
 /** Get ALL EI prompts for an article (admin view — all statuses, not just published) */
 export const getAllEIPromptsForArticle = async (articleId: string) => {
-  await assertCanReadAdminContent()
+  await assertPermission('admin.content.view')
   // Use admin client to bypass RLS — student-facing RLS only allows published+active
   const supabase = createAdminClient()
   const { data, error } = await supabase
@@ -689,21 +671,7 @@ export const updateArticleFull = async (
     reviewer_comments?: string
   }
 ) => {
-  const authorized = await canManageContent()
-  if (!authorized) {
-    await logServerError({
-      family: 'admin',
-      eventName: 'content_update_article_unauthorized',
-      message: 'Unauthorized attempt to update full article content.',
-      context: {
-        routeOrAction: 'admin:content.updateArticleFull',
-        metadata: {
-          articleId: id,
-        },
-      },
-    })
-    throw new Error('Unauthorized: insufficient permissions')
-  }
+  await assertPermission('admin.content.edit')
 
   const supabase = createAdminClient()
   const { data: existingArticle, error: existingArticleError } = await supabase
@@ -853,21 +821,7 @@ export const updateArticleFull = async (
 export const saveArticleFull = async (
   data: SaveArticleFullInput,
 ): Promise<SaveArticleFullResult> => {
-  const authorized = await canManageContent()
-  if (!authorized) {
-    await logServerError({
-      family: 'admin',
-      eventName: 'content_save_article_unauthorized',
-      message: 'Unauthorized attempt to save article content.',
-      context: {
-        routeOrAction: 'admin:content.saveArticleFull',
-        metadata: {
-          articleId: data.article_id ?? null,
-        },
-      },
-    })
-    throw new Error('Unauthorized: insufficient permissions')
-  }
+  await assertPermission('admin.content.edit')
 
   const title = data.title.trim()
   const content = data.content.trim()
@@ -1053,21 +1007,7 @@ export const createEIPrompt = async (data: {
   sort_order?: number
   status?: string
 }) => {
-  const authorized = await canManageContent()
-  if (!authorized) {
-    await logServerError({
-      family: 'admin',
-      eventName: 'content_create_ei_prompt_unauthorized',
-      message: 'Unauthorized attempt to create an EI prompt.',
-      context: {
-        routeOrAction: 'admin:content.createEIPrompt',
-        metadata: {
-          articleId: data.article_id,
-        },
-      },
-    })
-    throw new Error('Unauthorized: insufficient permissions')
-  }
+  await assertPermission('admin.content.create')
 
   const supabase = createAdminClient()
   const { data: newPrompt, error } = await supabase
@@ -1118,21 +1058,7 @@ export const updateEIPrompt = async (
     status?: string
   }
 ) => {
-  const authorized = await canManageContent()
-  if (!authorized) {
-    await logServerError({
-      family: 'admin',
-      eventName: 'content_update_ei_prompt_unauthorized',
-      message: 'Unauthorized attempt to update an EI prompt.',
-      context: {
-        routeOrAction: 'admin:content.updateEIPrompt',
-        metadata: {
-          promptId,
-        },
-      },
-    })
-    throw new Error('Unauthorized: insufficient permissions')
-  }
+  await assertPermission('admin.content.edit')
 
   const supabase = createAdminClient()
   const { error } = await supabase
@@ -1164,21 +1090,7 @@ export const updateEIPrompt = async (
 
 /** Delete an EI prompt */
 export const deleteEIPrompt = async (promptId: string) => {
-  const authorized = await canManageContent()
-  if (!authorized) {
-    await logServerError({
-      family: 'admin',
-      eventName: 'content_delete_ei_prompt_unauthorized',
-      message: 'Unauthorized attempt to delete an EI prompt.',
-      context: {
-        routeOrAction: 'admin:content.deleteEIPrompt',
-        metadata: {
-          promptId,
-        },
-      },
-    })
-    throw new Error('Unauthorized: insufficient permissions')
-  }
+  await assertPermission('admin.content.delete')
 
   const supabase = createAdminClient()
   const { error } = await supabase

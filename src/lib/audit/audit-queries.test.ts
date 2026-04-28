@@ -34,6 +34,9 @@ const wikiArticlesLimitMock = mock(() =>
 )
 
 mock.module('@/lib/supabase/server', () => ({
+  createStaticClient: () => Promise.resolve({}),
+  hasAuthCookie: () => Promise.resolve(false),
+  getUserIfPresent: () => Promise.resolve({ data: { user: null } }),
   createServiceClient: () =>
     Promise.resolve({
       from: (table: string) => {
@@ -73,6 +76,7 @@ mock.module('@/lib/supabase/server', () => ({
 
 mock.module('@/lib/admin/roles', () => ({
   isSuperAdmin: mock(() => Promise.resolve(true)),
+  assertPermission: mock(() => Promise.resolve()),
 }))
 
 const { getAuditLogs } = await import('./audit-queries')

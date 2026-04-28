@@ -21,6 +21,7 @@ interface RoleAssignmentModalProps {
 }
 
 const ROLE_OPTIONS: { value: SystemRole; label: string; description: string }[] = [
+  { value: 'ceo',         label: 'CEO',          description: 'Chief Executive Officer. Full business and admin access.' },
   { value: 'super_admin', label: 'Super Admin', description: 'Full platform access including billing and team management.' },
   { value: 'admin',       label: 'Admin',       description: 'Manage content, questions, and users. Cannot manage billing.' },
   { value: 'lead',        label: 'Lead',         description: 'Team lead access: review analytics and manage content.' },

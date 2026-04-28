@@ -1,7 +1,7 @@
 'use server'
 
 import { createAdminClient } from '@/lib/supabase/admin'
-import { canManageContent } from '@/lib/admin/roles'
+import { assertPermission } from '@/lib/admin/roles'
 import { revalidatePath } from 'next/cache'
 
 export interface AdminDesignProblemSummary {
@@ -37,8 +37,7 @@ export interface AdminDesignProblemDetail {
 }
 
 export const getAdminDesignProblems = async (): Promise<AdminDesignProblemSummary[]> => {
-  const authorized = await canManageContent()
-  if (!authorized) throw new Error('Unauthorized')
+  await assertPermission('admin.content.view')
 
   const supabase = createAdminClient()
   const { data: problems, error } = await supabase
@@ -70,8 +69,7 @@ export const getAdminDesignProblems = async (): Promise<AdminDesignProblemSummar
 export const getAdminDesignProblem = async (
   problemId: string,
 ): Promise<AdminDesignProblemDetail | null> => {
-  const authorized = await canManageContent()
-  if (!authorized) throw new Error('Unauthorized')
+  await assertPermission('admin.content.view')
 
   const supabase = createAdminClient()
   const { data: problem, error: problemError } = await supabase
@@ -114,8 +112,7 @@ export const updateAdminDesignProblemQuestion = async (
   questionId: string,
   data: Partial<AdminDesignProblemQuestion>,
 ) => {
-  const authorized = await canManageContent()
-  if (!authorized) throw new Error('Unauthorized')
+  await assertPermission('admin.content.edit')
 
   const supabase = createAdminClient()
   const { error } = await supabase
@@ -139,8 +136,7 @@ export const updateAdminDesignProblemQuestion = async (
 }
 
 export const createAdminDesignProblemQuestion = async (problemId: string) => {
-  const authorized = await canManageContent()
-  if (!authorized) throw new Error('Unauthorized')
+  await assertPermission('admin.content.create')
 
   const supabase = createAdminClient()
   const { data: lastQuestion } = await supabase

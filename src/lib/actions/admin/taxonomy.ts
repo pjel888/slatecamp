@@ -3,12 +3,13 @@
 import { createClient } from '@/lib/supabase/server'
 import { createAdminClient } from '@/lib/supabase/admin'
 import { revalidatePath, revalidateTag } from 'next/cache'
-import { canManageContent } from '@/lib/admin/roles'
+import { assertPermission } from '@/lib/admin/roles'
 import { z } from 'zod'
 import { CACHE_TAGS } from '../cache-tags'
 import { logServerError } from '@/lib/logging/server'
 
 export const getTaxonomyNodes = async () => {
+  await assertPermission('admin.taxonomy.manage')
   const supabase = await createClient()
 
   const { data, error } = await supabase
@@ -31,21 +32,7 @@ const updateNodeSchema = z.object({
 })
 
 export const updateTaxonomyNode = async (id: string, data: { name: string }) => {
-  const authorized = await canManageContent()
-  if (!authorized) {
-    await logServerError({
-      family: 'admin',
-      eventName: 'taxonomy_update_unauthorized',
-      message: 'Unauthorized attempt to update taxonomy node.',
-      context: {
-        routeOrAction: 'admin:taxonomy.update',
-        metadata: {
-          nodeId: id,
-        },
-      },
-    })
-    throw new Error('Unauthorized: insufficient permissions')
-  }
+  await assertPermission('admin.taxonomy.manage')
 
   const parsed = updateNodeSchema.safeParse(data)
   if (!parsed.success) {
@@ -110,18 +97,7 @@ export const createTaxonomyNode = async (data: {
   discipline_id: string
   sort_order?: number
 }) => {
-  const authorized = await canManageContent()
-  if (!authorized) {
-    await logServerError({
-      family: 'admin',
-      eventName: 'taxonomy_create_unauthorized',
-      message: 'Unauthorized attempt to create taxonomy node.',
-      context: {
-        routeOrAction: 'admin:taxonomy.create',
-      },
-    })
-    throw new Error('Unauthorized: insufficient permissions')
-  }
+  await assertPermission('admin.taxonomy.manage')
 
   const parsed = createNodeSchema.safeParse(data)
   if (!parsed.success) {
@@ -192,21 +168,7 @@ export const createTaxonomyNode = async (data: {
 }
 
 export const deleteTaxonomyNode = async (id: string) => {
-  const authorized = await canManageContent()
-  if (!authorized) {
-    await logServerError({
-      family: 'admin',
-      eventName: 'taxonomy_delete_unauthorized',
-      message: 'Unauthorized attempt to delete taxonomy node.',
-      context: {
-        routeOrAction: 'admin:taxonomy.delete',
-        metadata: {
-          nodeId: id,
-        },
-      },
-    })
-    throw new Error('Unauthorized: insufficient permissions')
-  }
+  await assertPermission('admin.taxonomy.manage')
 
   const supabase = createAdminClient()
 

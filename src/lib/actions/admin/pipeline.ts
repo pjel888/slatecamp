@@ -2,7 +2,7 @@
 
 import { createClient } from '@/lib/supabase/server'
 import { createAdminClient } from '@/lib/supabase/admin'
-import { canManageContent, canReviewContent } from '@/lib/admin/roles'
+import { assertPermission } from '@/lib/admin/roles'
 import { revalidatePath, revalidateTag } from '@/lib/cache/revalidate'
 import { CACHE_TAGS } from '../cache-tags'
 import { ROUTES } from '@/lib/routes'
@@ -12,10 +12,7 @@ import { compileMdxPreview } from './content'
 import { countStandardQuestionsForArticle } from '@/lib/admin/editor-integrity/standard-question'
 
 export const getPipelineArticles = async () => {
-  const authorized = await canReviewContent()
-  if (!authorized) {
-    throw new Error('Unauthorized')
-  }
+  await assertPermission('admin.pipeline.manage')
 
   const supabase = await createClient()
   const { data } = await supabase
@@ -27,22 +24,7 @@ export const getPipelineArticles = async () => {
 }
 
 export const updateArticleStatus = async (articleId: string, newStatus: string) => {
-  const authorized = await canManageContent()
-  if (!authorized) {
-    await logServerError({
-      family: 'admin',
-      eventName: 'pipeline_update_status_unauthorized',
-      message: 'Unauthorized attempt to update article pipeline status.',
-      context: {
-        routeOrAction: 'admin:pipeline.updateArticleStatus',
-        metadata: {
-          articleId,
-          newStatus,
-        },
-      },
-    })
-    throw new Error('Unauthorized')
-  }
+  await assertPermission('admin.pipeline.manage')
 
   const supabase = createAdminClient()
   const canonicalStatus = normalizeEditorStatus(newStatus)

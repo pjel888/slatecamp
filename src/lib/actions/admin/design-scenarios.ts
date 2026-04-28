@@ -1,7 +1,7 @@
 'use server'
 
 import { createAdminClient } from '@/lib/supabase/admin'
-import { canManageContent } from '@/lib/admin/roles'
+import { assertPermission } from '@/lib/admin/roles'
 import { revalidatePath } from 'next/cache'
 import { logServerError } from '@/lib/logging/server'
 
@@ -38,8 +38,7 @@ export interface AdminDesignScenarioDetail {
 }
 
 export const getAdminDesignScenarios = async (): Promise<AdminDesignScenarioSummary[]> => {
-  const authorized = await canManageContent()
-  if (!authorized) throw new Error('Unauthorized')
+  await assertPermission('admin.content.view')
 
   const supabase = createAdminClient()
   const { data: scenarios, error } = await supabase
@@ -71,8 +70,7 @@ export const getAdminDesignScenarios = async (): Promise<AdminDesignScenarioSumm
 export const getAdminDesignScenario = async (
   scenarioId: string,
 ): Promise<AdminDesignScenarioDetail | null> => {
-  const authorized = await canManageContent()
-  if (!authorized) throw new Error('Unauthorized')
+  await assertPermission('admin.content.view')
 
   const supabase = createAdminClient()
   const { data: scenario, error: scenarioError } = await supabase
@@ -114,8 +112,7 @@ export const updateAdminDesignScenarioQuestion = async (
   questionId: string,
   data: Partial<AdminDesignScenarioQuestion>,
 ) => {
-  const authorized = await canManageContent()
-  if (!authorized) throw new Error('Unauthorized')
+  await assertPermission('admin.content.edit')
 
   const supabase = createAdminClient()
   const { error } = await supabase
@@ -151,8 +148,7 @@ export const updateAdminDesignScenarioQuestion = async (
 }
 
 export const createAdminDesignScenarioQuestion = async (scenarioId: string) => {
-  const authorized = await canManageContent()
-  if (!authorized) throw new Error('Unauthorized')
+  await assertPermission('admin.content.create')
 
   const supabase = createAdminClient()
   const { data: lastQuestion } = await supabase

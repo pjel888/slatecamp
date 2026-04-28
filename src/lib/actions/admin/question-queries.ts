@@ -1,7 +1,7 @@
 'use server'
 
 import { createClient } from '@/lib/supabase/server'
-import { canReviewContent } from '@/lib/admin/roles'
+import { assertPermission } from '@/lib/admin/roles'
 import { isExceptionQuestionType } from '@/lib/admin/editor-integrity/standard-question'
 
 export interface Question {
@@ -19,10 +19,7 @@ export interface Question {
 }
 
 const assertCanReadAdminQuestions = async () => {
-  const authorized = await canReviewContent()
-  if (!authorized) {
-    throw new Error('Unauthorized: insufficient permissions')
-  }
+  await assertPermission('admin.content.view')
 }
 
 export const getQuestions = async (
@@ -402,7 +399,7 @@ export const getQuestionsTaxonomyTree = async (): Promise<QuestionTreeNode[]> =>
 }
 
 export const getQuestionsForAnalytics = async () => {
-  await assertCanReadAdminQuestions()
+  await assertPermission('admin.analytics.view')
   const supabase = await createClient()
 
   const { data, error } = await supabase

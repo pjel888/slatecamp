@@ -1,7 +1,7 @@
 'use server'
 
 import { createAdminClient } from '@/lib/supabase/admin'
-import { canManageUsers } from '@/lib/admin/roles'
+import { assertPermission } from '@/lib/admin/roles'
 import { logServerError } from '@/lib/logging/server'
 
 const INTERNAL_ADMIN_ROLES = [
@@ -30,10 +30,7 @@ export interface AdminRoleRow {
  * List all users with admin roles, ordered by most recently added.
  */
 export const getAdminUsers = async () => {
-  const allowed = await canManageUsers()
-  if (!allowed) {
-    throw new Error('Unauthorized: only super_admin can view admin roles')
-  }
+  await assertPermission('admin.users.manage')
 
   const supabase = createAdminClient()
   const { data, error } = await supabase
@@ -78,18 +75,7 @@ export const getAdminUsers = async () => {
  * Requires super_admin permission.
  */
 export const assignRole = async (formData: FormData) => {
-  const allowed = await canManageUsers()
-  if (!allowed) {
-    await logServerError({
-      family: 'admin',
-      eventName: 'assign_role_unauthorized',
-      message: 'Unauthorized attempt to assign an admin role.',
-      context: {
-        routeOrAction: 'admin:roles.assign',
-      },
-    })
-    throw new Error('Unauthorized: only super_admin can assign roles')
-  }
+  await assertPermission('admin.users.manage')
 
   const userId = formData.get('userId') as string
   const role = formData.get('role') as string
@@ -167,18 +153,7 @@ export const assignRole = async (formData: FormData) => {
  * Requires super_admin permission.
  */
 export const revokeRole = async (formData: FormData) => {
-  const allowed = await canManageUsers()
-  if (!allowed) {
-    await logServerError({
-      family: 'admin',
-      eventName: 'revoke_role_unauthorized',
-      message: 'Unauthorized attempt to revoke an admin role.',
-      context: {
-        routeOrAction: 'admin:roles.revoke',
-      },
-    })
-    throw new Error('Unauthorized: only super_admin can revoke roles')
-  }
+  await assertPermission('admin.users.manage')
 
   const roleId = formData.get('roleId') as string
 

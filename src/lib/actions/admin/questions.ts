@@ -3,7 +3,7 @@
 import { createAdminClient } from "@/lib/supabase/admin";
 import { createClient } from "@/lib/supabase/server";
 import { revalidatePath } from "next/cache";
-import { canManageContent } from "@/lib/admin/roles";
+import { assertPermission } from "@/lib/admin/roles";
 import { ROUTES } from "@/lib/routes";
 import { logServerError } from "@/lib/logging/server";
 import {
@@ -70,21 +70,7 @@ const validateStandardQuestionMutationInput = ({
 }
 
 export async function deleteQuestions(ids: string[]) {
-  const authorized = await canManageContent()
-  if (!authorized) {
-    await logServerError({
-      family: 'admin',
-      eventName: 'questions_delete_many_unauthorized',
-      message: 'Unauthorized attempt to bulk delete questions.',
-      context: {
-        routeOrAction: 'admin:questions.deleteMany',
-        metadata: {
-          questionCount: ids.length,
-        },
-      },
-    })
-    throw new Error('Unauthorized: insufficient permissions')
-  }
+  await assertPermission('admin.content.delete')
 
   const supabase = createAdminClient();
   const { data: rows, error: rowsError } = await supabase
@@ -129,18 +115,7 @@ export async function deleteQuestions(ids: string[]) {
 }
 
 export async function createQuestion(data: CreateQuestionInput) {
-  const authorized = await canManageContent()
-  if (!authorized) {
-    await logServerError({
-      family: 'admin',
-      eventName: 'questions_create_unauthorized',
-      message: 'Unauthorized attempt to create a question.',
-      context: {
-        routeOrAction: 'admin:questions.create',
-      },
-    })
-    throw new Error('Unauthorized: insufficient permissions')
-  }
+  await assertPermission('admin.content.create')
 
   try {
     validateStandardQuestionMutationInput({
@@ -237,21 +212,7 @@ export async function createQuestion(data: CreateQuestionInput) {
 }
 
 export const updateQuestion = async (id: string, data: Partial<CreateQuestionInput>) => {
-  const authorized = await canManageContent()
-  if (!authorized) {
-    await logServerError({
-      family: 'admin',
-      eventName: 'questions_update_unauthorized',
-      message: 'Unauthorized attempt to update a question.',
-      context: {
-        routeOrAction: 'admin:questions.update',
-        metadata: {
-          questionId: id,
-        },
-      },
-    })
-    throw new Error('Unauthorized: insufficient permissions')
-  }
+  await assertPermission('admin.content.edit')
 
   const authClient = await createClient()
   const { data: { user } } = await authClient.auth.getUser()
@@ -360,21 +321,7 @@ export const updateQuestion = async (id: string, data: Partial<CreateQuestionInp
 }
 
 export const deleteQuestion = async (id: string) => {
-  const authorized = await canManageContent()
-  if (!authorized) {
-    await logServerError({
-      family: 'admin',
-      eventName: 'questions_delete_unauthorized',
-      message: 'Unauthorized attempt to delete a question.',
-      context: {
-        routeOrAction: 'admin:questions.deleteOne',
-        metadata: {
-          questionId: id,
-        },
-      },
-    })
-    throw new Error('Unauthorized: insufficient permissions')
-  }
+  await assertPermission('admin.content.delete')
 
   const supabase = createAdminClient();
   const { data: existingQuestion, error: existingQuestionError } = await supabase

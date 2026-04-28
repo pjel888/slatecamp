@@ -11,6 +11,7 @@ import { CAGEQualitySection } from '@/components/ceo/analytics/CAGEQualitySectio
 import { StudyCohortSection } from '@/components/ceo/analytics/StudyCohortSection'
 import { QuestionHealthSection } from '@/components/ceo/analytics/QuestionHealthSection'
 import { LearningVelocitySection } from '@/components/ceo/analytics/LearningVelocitySection'
+import { verifyCeoAccess } from '@/lib/queries/ceo/auth'
 
 export const dynamic = 'force-dynamic'
 
@@ -18,7 +19,8 @@ export const metadata = {
   title: 'Analytics — CEO Dashboard',
 }
 
-export default function CEOAnalyticsPage() {
+export default async function CEOAnalyticsPage() {
+  await verifyCeoAccess()
   return (
     <div className="flex flex-col gap-8 max-w-screen-xl">
 

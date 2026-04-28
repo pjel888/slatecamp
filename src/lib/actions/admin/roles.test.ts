@@ -55,6 +55,7 @@ mock.module('@/lib/supabase/admin', () => ({
 
 mock.module('@/lib/admin/roles', () => ({
   canManageUsers: mock(() => Promise.resolve(true)),
+  assertPermission: mock(() => Promise.resolve()),
 }))
 
 const logServerErrorMock = mock(() => Promise.resolve())

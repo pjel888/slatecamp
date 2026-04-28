@@ -57,6 +57,7 @@ const DEFAULT_ENTITLEMENTS = {
   },
   featureFlags: {},
   decisions: {},
+  permissions: [],
 } as unknown as ViewerEntitlements
 
 const EntitlementContext = createContext<EntitlementContextValue>({

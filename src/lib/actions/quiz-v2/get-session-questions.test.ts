@@ -12,6 +12,10 @@ const getOwnedSessionOrThrowMock = mock()
 const fetchQuestionsForClientMock = mock()
 
 mock.module('@/lib/supabase/server', () => ({
+  createStaticClient: () => Promise.resolve({}),
+  createServiceClient: createClientMock,
+  hasAuthCookie: () => Promise.resolve(false),
+  getUserIfPresent: () => Promise.resolve({ data: { user: null } }),
   createClient: createClientMock,
   getUser: getUserMock,
 }))

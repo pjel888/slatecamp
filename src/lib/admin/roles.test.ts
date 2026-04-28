@@ -25,6 +25,10 @@ const mockFrom = mock((table: string) => ({
 }))
 
 mock.module('@/lib/supabase/server', () => ({
+  createStaticClient: () => Promise.resolve({}),
+  createServiceClient: () => Promise.resolve({}),
+  hasAuthCookie: () => Promise.resolve(false),
+  getUserIfPresent: () => Promise.resolve({ data: { user: null } }),
   createClient: () =>
     Promise.resolve({
       auth: { getUser: mockGetUser },
@@ -40,6 +44,7 @@ const {
   canManageContent,
   canReviewContent,
   canManageUsers,
+  assertPermission,
 } = await import('./roles')
 
 describe('Admin Roles', () => {
@@ -187,6 +192,39 @@ describe('Admin Roles', () => {
 
       mockRole('content_admin')
       expect(await canManageUsers()).toBe(false)
+    })
+  })
+
+  describe('assertPermission', () => {
+    const mockRole = (role: string | null) => {
+      mockGetUser.mockResolvedValue({
+        data: { user: { id: 'user-1', email: 'test@example.com', app_metadata: {} } },
+        error: null,
+      })
+      mockDbRole = role
+      mockProfileRole = null
+    }
+
+    test('passes silently when user has permission', async () => {
+      mockRole('super_admin')
+      await expect(assertPermission('admin.content.create')).resolves.toBeUndefined()
+    })
+
+    test('throws when user lacks permission', async () => {
+      mockRole('member')
+      await expect(assertPermission('admin.content.create')).rejects.toThrow('Forbidden')
+    })
+
+    test('sme_reviewer can approve content but not create', async () => {
+      mockRole('sme_reviewer')
+      await expect(assertPermission('admin.content.approve')).resolves.toBeUndefined()
+      await expect(assertPermission('admin.content.create')).rejects.toThrow('Forbidden')
+    })
+
+    test('developer can edit but not publish', async () => {
+      mockRole('developer')
+      await expect(assertPermission('admin.content.edit')).resolves.toBeUndefined()
+      await expect(assertPermission('admin.content.publish')).rejects.toThrow('Forbidden')
     })
   })
 })

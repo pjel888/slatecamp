@@ -1,4 +1,4 @@
-import { beforeEach, describe, expect, mock, test } from 'bun:test'
+import { afterAll, beforeEach, describe, expect, mock, test } from 'bun:test'
 
 const getUserMock = mock(() => {
   throw new Error('auth unavailable')
@@ -23,9 +23,11 @@ mock.module('@supabase/ssr', () => ({
   }),
 }))
 
+const originalDemoConfig = { ...(await import('@/lib/demo/config')) }
+
 mock.module('@/lib/demo/config', () => ({
+  ...originalDemoConfig,
   isDemoMode: () => false,
-  DEMO_USER: { id: 'demo-user' },
 }))
 
 mock.module('next/server', () => ({
@@ -44,13 +46,18 @@ mock.module('next/server', () => ({
   after: (fn: () => unknown) => fn(),
 }))
 
+const originalPolicy = { ...(await import('@/lib/entitlements/policy')) }
+const originalResolveRole = { ...(await import('@/lib/entitlements/resolve-role')) }
+
 mock.module('@/lib/entitlements/policy', () => ({
+  ...originalPolicy,
   canAccessAdminCmsForRole: () => false,
   canAccessCeoPortalForRole: () => false,
   canAccessDeveloperPortalForRole: () => false,
 }))
 
 mock.module('@/lib/entitlements/resolve-role', () => ({
+  ...originalResolveRole,
   resolveCurrentUserRole: () =>
     Promise.resolve({
       normalizedRole: 'member',
@@ -70,6 +77,14 @@ describe('supabase/middleware', () => {
   beforeEach(() => {
     getUserMock.mockClear()
   })
+
+  afterAll(() => {
+    mock.module('@/lib/entitlements/policy', () => ({ ...originalPolicy }))
+    mock.module('@/lib/entitlements/resolve-role', () => ({ ...originalResolveRole }))
+    mock.module('@/lib/demo/config', () => ({ ...originalDemoConfig }))
+  })
+
+
 
   test('logs getUser failures and still redirects unauthenticated protected routes', async () => {
     const errorSpy = mock(() => {})

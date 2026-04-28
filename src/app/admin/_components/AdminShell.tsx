@@ -9,6 +9,8 @@ import { PORTALS } from '@/config/portals'
 import { Toaster } from '@/components/ui/toaster'
 import type { NavGroup } from '@/components/portal'
 import type { UserRole } from '@/lib/admin/roles'
+import { getPermissionsForRole } from '@/lib/entitlements/policy'
+import type { AdminPermission } from '@/lib/entitlements/types'
 
 const adminPages = [
   { title: 'Dashboard', href: '/admin', group: 'Overview' },
@@ -32,7 +34,20 @@ const adminPages = [
   { title: 'Settings', href: '/admin/settings', group: 'Settings' },
 ]
 
-const adminNavItems: NavGroup[] = [
+interface NavItemWithPermission {
+  label: string
+  href: string
+  icon: React.ReactNode
+  permission?: AdminPermission
+  children?: { label: string; href: string; permission?: AdminPermission }[]
+}
+
+interface NavGroupWithPermissions {
+  label: string
+  items: NavItemWithPermission[]
+}
+
+const adminNavItemsSource: NavGroupWithPermissions[] = [
   {
     label: 'Overview',
     items: [
@@ -40,6 +55,7 @@ const adminNavItems: NavGroup[] = [
         label: 'Dashboard',
         href: '/admin',
         icon: <SquaresFour className="w-3.5 h-3.5" />,
+        permission: 'admin.dashboard.view',
       },
     ],
   },
@@ -50,22 +66,24 @@ const adminNavItems: NavGroup[] = [
         label: 'Browser',
         href: '/admin/knowledge',
         icon: <FileText className="w-3.5 h-3.5" />,
+        permission: 'admin.content.view',
         children: [
-          { label: 'All Content', href: '/admin/knowledge' },
-          { label: 'Create Article', href: '/admin/knowledge/new' },
+          { label: 'All Content', href: '/admin/knowledge', permission: 'admin.content.view' },
+          { label: 'Create Article', href: '/admin/knowledge/new', permission: 'admin.content.create' },
         ],
       },
       {
         label: 'Question Bank',
         href: '/admin/knowledge/questions',
         icon: <Question className="w-3.5 h-3.5" />,
+        permission: 'admin.content.view',
         children: [
-          { label: 'All Questions', href: '/admin/knowledge/questions' },
-          { label: 'Design Problem Questions', href: '/admin/knowledge/questions/design-problems' },
-          { label: 'Scenario Questions', href: '/admin/knowledge/questions/scenarios' },
-          { label: 'Create New', href: '/admin/knowledge/questions/new' },
-          { label: 'Import', href: '/admin/knowledge/import' },
-          { label: 'Quality Analytics', href: '/admin/knowledge/analytics' },
+          { label: 'All Questions', href: '/admin/knowledge/questions', permission: 'admin.content.view' },
+          { label: 'Design Problem Questions', href: '/admin/knowledge/questions/design-problems', permission: 'admin.content.view' },
+          { label: 'Scenario Questions', href: '/admin/knowledge/questions/scenarios', permission: 'admin.content.view' },
+          { label: 'Create New', href: '/admin/knowledge/questions/new', permission: 'admin.content.create' },
+          { label: 'Import', href: '/admin/knowledge/import', permission: 'admin.content.import' },
+          { label: 'Quality Analytics', href: '/admin/knowledge/analytics', permission: 'admin.analytics.view' },
         ],
       },
     ],
@@ -77,22 +95,25 @@ const adminNavItems: NavGroup[] = [
         label: 'Taxonomy',
         href: '/admin/taxonomy',
         icon: <GitBranch className="w-3.5 h-3.5" />,
+        permission: 'admin.taxonomy.manage',
         children: [
-          { label: 'Tree Editor', href: '/admin/taxonomy' },
-          { label: 'Coverage Map', href: '/admin/taxonomy/coverage' },
+          { label: 'Tree Editor', href: '/admin/taxonomy', permission: 'admin.taxonomy.manage' },
+          { label: 'Coverage Map', href: '/admin/taxonomy/coverage', permission: 'admin.analytics.view' },
         ],
       },
       {
         label: '3D Assets',
         href: '/admin/assets',
         icon: <Cube className="w-3.5 h-3.5" />,
+        permission: 'admin.assets.manage',
       },
       {
         label: '3D Models Registry',
         href: '/admin/3d-models',
         icon: <TreeStructure className="w-3.5 h-3.5" />,
+        permission: 'admin.access',
         children: [
-          { label: 'All Models', href: '/admin/3d-models' },
+          { label: 'All Models', href: '/admin/3d-models', permission: 'admin.access' },
         ],
       },
     ],
@@ -104,16 +125,19 @@ const adminNavItems: NavGroup[] = [
         label: 'Review Queue',
         href: '/admin/reviews',
         icon: <CheckSquare className="w-3.5 h-3.5" />,
+        permission: 'admin.reviews.view',
       },
       {
         label: 'Publishing Pipeline',
         href: '/admin/pipeline',
         icon: <GitPullRequest className="w-3.5 h-3.5" />,
+        permission: 'admin.pipeline.manage',
       },
       {
         label: 'Content Search',
         href: '/admin/search',
         icon: <MagnifyingGlass className="w-3.5 h-3.5" />,
+        permission: 'admin.search.use',
       },
     ],
   },
@@ -124,11 +148,13 @@ const adminNavItems: NavGroup[] = [
         label: 'Audit Log',
         href: '/admin/audit',
         icon: <Clock className="w-3.5 h-3.5" />,
+        permission: 'admin.audit.view',
       },
       {
         label: 'Pulse Feed',
         href: '/admin/activity',
         icon: <Pulse className="w-3.5 h-3.5" />,
+        permission: 'admin.activity.view',
       },
     ],
   },
@@ -139,10 +165,32 @@ const adminNavItems: NavGroup[] = [
         label: 'Settings',
         href: '/admin/settings',
         icon: <GearSix className="w-3.5 h-3.5" />,
+        permission: 'admin.users.manage',
       },
     ],
   },
 ]
+
+const filterNavItems = (role: UserRole, badgeCounts?: { pendingReviews: number }): NavGroup[] => {
+  const permissions = new Set(getPermissionsForRole(role))
+
+  return adminNavItemsSource
+    .map((group) => {
+      const filteredItems = group.items
+        .filter((item) => !item.permission || permissions.has(item.permission))
+        .map((item) => ({
+          label: item.label,
+          href: item.href,
+          icon: item.icon,
+          badge: item.label === 'Review Queue' ? badgeCounts?.pendingReviews : undefined,
+          children: item.children
+            ? item.children.filter((child) => !child.permission || permissions.has(child.permission))
+            : undefined,
+        }))
+      return { label: group.label, items: filteredItems }
+    })
+    .filter((group) => group.items.length > 0)
+}
 
 interface AdminShellProps {
   role: UserRole
@@ -156,13 +204,7 @@ export const shouldBypassAdminShellChrome = (pathname: string) =>
 
 const AdminShell = ({ role, badgeCounts, noPadding = false, children }: AdminShellProps) => {
   const pathname = usePathname()
-  const navItemsWithBadges = adminNavItems.map((group) => ({
-    ...group,
-    items: group.items.map((item) => ({
-      ...item,
-      badge: item.label === 'Review Queue' ? badgeCounts?.pendingReviews : undefined,
-    })),
-  }))
+  const filteredNavItems = filterNavItems(role, badgeCounts)
 
   if (shouldBypassAdminShellChrome(pathname)) {
     return (
@@ -180,7 +222,7 @@ const AdminShell = ({ role, badgeCounts, noPadding = false, children }: AdminShe
         topbarBg={PORTALS.admin.topbarBg}
         accentColor={PORTALS.admin.accentColor}
         accentLightColor={PORTALS.admin.accentLightColor}
-        navItems={navItemsWithBadges}
+        navItems={filteredNavItems}
         rightContent={<AdminRoleBadge role={role} />}
         backLabel={PORTALS.admin.backLabel}
         noPadding={noPadding}
@@ -193,4 +235,4 @@ const AdminShell = ({ role, badgeCounts, noPadding = false, children }: AdminShe
   )
 }
 
-export { AdminShell, adminNavItems }
+export { AdminShell, adminNavItemsSource as adminNavItems }

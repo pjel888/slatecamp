@@ -1,9 +1,8 @@
-import { redirect } from 'next/navigation'
-import { ROUTES } from '@/lib/routes'
-import { canManageContent } from '@/lib/admin/roles'
+import { assertPermission } from '@/lib/admin/roles'
 import { createClient } from '@/lib/supabase/server'
 import { QuestionEditor } from '@/components/admin/QuestionEditor'
 import { Breadcrumb } from '@/components/ui/breadcrumb'
+import { ROUTES } from '@/lib/routes'
 import {
   getArticleFull,
 } from '@/lib/actions/admin/content'
@@ -16,8 +15,7 @@ interface PageProps {
 }
 
 const NewQuestionPage = async ({ searchParams }: PageProps) => {
-  const authorized = await canManageContent()
-  if (!authorized) redirect(ROUTES.admin.root)
+  await assertPermission('admin.content.create')
 
   const { topic: topicId } = await searchParams
   const supabase = await createClient()

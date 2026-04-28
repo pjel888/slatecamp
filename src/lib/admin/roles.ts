@@ -8,7 +8,9 @@ import {
   canManageContentForRole,
   canManageUsersForRole,
   canReviewContentForRole,
+  hasPermission,
 } from '@/lib/entitlements/policy'
+import type { AdminPermission } from '@/lib/entitlements/types'
 
 export type UserRole =
   | 'super_admin'
@@ -83,3 +85,14 @@ export const getUserRoles = cache(async function getUserRoles(): Promise<UserRol
   const role = await getUserRole()
   return role ? [role] : []
 })
+
+/**
+ * Assert that the current user has a specific admin permission.
+ * Throws a 403-style error if the permission is missing.
+ */
+export async function assertPermission(permission: AdminPermission): Promise<void> {
+  const resolution = await getResolution()
+  if (!hasPermission(resolution.normalizedRole, permission)) {
+    throw new Error(`Forbidden: missing permission ${permission}`)
+  }
+}

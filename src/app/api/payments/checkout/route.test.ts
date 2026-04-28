@@ -36,6 +36,10 @@ mock.module('@/lib/demo/config', () => ({
 }))
 
 mock.module('@/lib/supabase/server', () => ({
+  createStaticClient: () => Promise.resolve({}),
+  createServiceClient: () => Promise.resolve({}),
+  hasAuthCookie: () => Promise.resolve(false),
+  getUserIfPresent: () => Promise.resolve({ data: { user: null } }),
   createClient: () =>
     Promise.resolve({
       auth: {

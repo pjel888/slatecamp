@@ -1,9 +1,12 @@
 import type { Metadata } from 'next'
+import { assertPermission } from '@/lib/admin/roles'
 import { SMEReviewQueue } from '@/components/admin/SMEReviewQueue'
 
 export const metadata: Metadata = { title: 'Reviews - SlateCamp Admin' }
 
 export default async function AdminReviewsPage() {
+  await assertPermission('admin.reviews.view')
+
   return (
     <div className="space-y-6">
       <div>

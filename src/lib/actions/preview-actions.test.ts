@@ -31,6 +31,7 @@ const canManageContentMock = mock(() => Promise.resolve(true))
 mock.module('@/lib/admin/roles', () => ({
   canManageContent: canManageContentMock,
   canReviewContent: mock(() => Promise.resolve(true)),
+  assertPermission: mock(() => Promise.resolve()),
 }))
 
 const revalidatePathMock = mock(() => {})

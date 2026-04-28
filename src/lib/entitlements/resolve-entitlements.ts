@@ -9,7 +9,7 @@ import {
   PAID_ENTITLEMENT_FEATURE_KEYS,
   type EntitlementFeatureKey,
 } from './feature-keys'
-import { getPolicySnapshotForRole } from './policy'
+import { getPolicySnapshotForRole, getPermissionsForRole } from './policy'
 import type {
   CanonicalSubscriptionStatus,
   FeatureAccessDecision,
@@ -89,6 +89,7 @@ export const buildViewerEntitlements = ({
     overrides,
     featureFlags,
     decisions: {},
+    permissions: getPermissionsForRole(roleResolution.normalizedRole),
   }
 }
 

@@ -1,4 +1,4 @@
-import { notFound, redirect } from 'next/navigation'
+import { notFound } from 'next/navigation'
 import { Suspense } from 'react'
 
 import { getEIPromptsForArticle, getUserEIResponsesForArticle } from '@/lib/actions/ei-prompts'
@@ -7,8 +7,7 @@ import { getSubjectName } from '@/types/testing'
 import { estimateReadingTime } from '@/lib/wiki-markdown'
 import { getTeachBackCriteria } from '@/lib/actions/teach-back'
 import type { TaxonomyNode } from '@/lib/actions/taxonomy'
-import { ROUTES } from '@/lib/routes'
-import { canManageContent, canReviewContent } from '@/lib/admin/roles'
+import { assertPermission } from '@/lib/admin/roles'
 import { createAdminClient } from '@/lib/supabase/admin'
 
 const mapDifficulty = (level?: number | null): 'Foundational' | 'Intermediate' | 'Advanced' => {
@@ -38,13 +37,7 @@ async function getRelatedTopics(node: TaxonomyNode | null, supabase: any): Promi
  * fallbacks where appropriate.
  */
 export default async function PreviewPage(props: { params: Promise<{ previewId: string }> }) {
-  const [canManage, canReview] = await Promise.all([
-    canManageContent(),
-    canReviewContent(),
-  ])
-  if (!canManage && !canReview) {
-    redirect(ROUTES.admin.login)
-  }
+  await assertPermission('admin.preview.view')
 
   const params = await props.params
   const previewId = params.previewId

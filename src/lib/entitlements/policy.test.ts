@@ -6,6 +6,8 @@ import {
   canAccessDeveloperPortalForRole,
   canSeeDevToolbarForRole,
   canWriteDevOverridesForRole,
+  hasPermission,
+  getPermissionsForRole,
 } from './policy'
 
 describe('entitlement policy', () => {
@@ -37,5 +39,34 @@ describe('entitlement policy', () => {
     expect(canAccessCeoPortalForRole('ceo')).toBe(true)
     expect(canAccessCeoPortalForRole('super_admin')).toBe(true)
     expect(canAccessCeoPortalForRole('admin')).toBe(false)
+  })
+
+  test('hasPermission grants owner all admin permissions', () => {
+    expect(hasPermission('owner', 'admin.audit.view')).toBe(true)
+    expect(hasPermission('owner', 'admin.users.manage')).toBe(true)
+    expect(hasPermission('owner', 'admin.content.create')).toBe(true)
+  })
+
+  test('hasPermission denies sme_reviewer content creation', () => {
+    expect(hasPermission('sme_reviewer', 'admin.content.create')).toBe(false)
+    expect(hasPermission('sme_reviewer', 'admin.content.edit')).toBe(false)
+    expect(hasPermission('sme_reviewer', 'admin.content.approve')).toBe(true)
+    expect(hasPermission('sme_reviewer', 'admin.reviews.view')).toBe(true)
+  })
+
+  test('hasPermission denies ceo audit log access', () => {
+    expect(hasPermission('ceo', 'admin.audit.view')).toBe(false)
+    expect(hasPermission('ceo', 'admin.users.manage')).toBe(true)
+  })
+
+  test('hasPermission denies member all admin permissions', () => {
+    expect(hasPermission('member', 'admin.access')).toBe(false)
+    expect(hasPermission('anonymous', 'admin.dashboard.view')).toBe(false)
+  })
+
+  test('getPermissionsForRole returns correct count', () => {
+    expect(getPermissionsForRole('owner').length).toBe(20)
+    expect(getPermissionsForRole('sme_reviewer').length).toBe(9)
+    expect(getPermissionsForRole('member').length).toBe(0)
   })
 })

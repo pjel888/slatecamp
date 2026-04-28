@@ -92,6 +92,7 @@ const mockCanReviewContent = mock(() => Promise.resolve(true))
 mock.module('@/lib/admin/roles', () => ({
   canManageContent: mockCanManageContent,
   canReviewContent: mockCanReviewContent,
+  assertPermission: mock(() => Promise.resolve()),
 }))
 
 const mockRevalidateTag = mock(() => {})
@@ -121,6 +122,9 @@ mock.module('@/components/wiki/article/WikiArticle', () => ({
 }))
 
 mock.module('@/lib/supabase/server', () => ({
+  createServiceClient: () => Promise.resolve({}),
+  hasAuthCookie: () => Promise.resolve(false),
+  getUserIfPresent: () => Promise.resolve({ data: { user: null } }),
   createClient: () =>
     Promise.resolve({
       auth: {

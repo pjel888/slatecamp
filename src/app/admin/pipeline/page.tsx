@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { assertPermission } from '@/lib/admin/roles'
 import { getPipelineArticles } from '@/lib/actions/admin/pipeline'
 import { SectionHeader } from '@/components/shared/section-header'
 import { PipelineClient } from './_components/PipelineClient'
@@ -10,6 +11,7 @@ export const metadata: Metadata = { title: 'Publishing Pipeline — SlateCamp Ad
 /* ------------------------------------------------------------------ */
 
 const PipelinePage = async () => {
+  await assertPermission('admin.pipeline.manage')
   const articles = await getPipelineArticles()
 
   return (

@@ -4,7 +4,7 @@ import { z } from 'zod'
 import { createAdminClient } from "@/lib/supabase/admin";
 import { createClient } from "@/lib/supabase/server";
 import { revalidatePath, revalidateTag } from "@/lib/cache/revalidate";
-import { canManageContent, canReviewContent } from "@/lib/admin/roles";
+import { assertPermission } from "@/lib/admin/roles";
 import { CACHE_TAGS } from '../cache-tags'
 import { ROUTES } from '@/lib/routes'
 import { logServerError } from '@/lib/logging/server'
@@ -26,21 +26,7 @@ const UpdateWikiArticleSchema = z.object({
 })
 
 export const updateWikiArticle = async (id: string, data: z.infer<typeof UpdateWikiArticleSchema>) => {
-  const authorized = await canManageContent()
-  if (!authorized) {
-    await logServerError({
-      family: 'admin',
-      eventName: 'wiki_update_unauthorized',
-      message: 'Unauthorized attempt to update wiki article.',
-      context: {
-        routeOrAction: 'admin:wiki.update',
-        metadata: {
-          articleId: id,
-        },
-      },
-    })
-    throw new Error('Unauthorized: insufficient permissions')
-  }
+  await assertPermission('admin.content.edit')
 
   const parsed = UpdateWikiArticleSchema.safeParse(data)
   if (!parsed.success) {
@@ -117,18 +103,7 @@ export const updateWikiArticle = async (id: string, data: z.infer<typeof UpdateW
 }
 
 export const createWikiArticle = async (data: z.infer<typeof UpdateWikiArticleSchema>) => {
-  const authorized = await canManageContent()
-  if (!authorized) {
-    await logServerError({
-      family: 'admin',
-      eventName: 'wiki_create_unauthorized',
-      message: 'Unauthorized attempt to create wiki article.',
-      context: {
-        routeOrAction: 'admin:wiki.create',
-      },
-    })
-    throw new Error('Unauthorized: insufficient permissions')
-  }
+  await assertPermission('admin.content.create')
 
   const parsed = UpdateWikiArticleSchema.safeParse(data)
   if (!parsed.success) {
@@ -232,21 +207,7 @@ export const createWikiArticle = async (data: z.infer<typeof UpdateWikiArticleSc
 }
 
 export async function deleteWikiArticle(id: string) {
-  const authorized = await canManageContent()
-  if (!authorized) {
-    await logServerError({
-      family: 'admin',
-      eventName: 'wiki_delete_unauthorized',
-      message: 'Unauthorized attempt to delete wiki article.',
-      context: {
-        routeOrAction: 'admin:wiki.delete',
-        metadata: {
-          articleId: id,
-        },
-      },
-    })
-    throw new Error('Unauthorized: insufficient permissions')
-  }
+  await assertPermission('admin.content.delete')
 
   const supabase = createAdminClient()
 
@@ -287,10 +248,7 @@ export const approveWikiArticleReview = async (
   articleId: string,
   reviewerComments?: string,
 ) => {
-  const authorized = await canReviewContent()
-  if (!authorized) {
-    throw new Error('Unauthorized: insufficient permissions')
-  }
+  await assertPermission('admin.content.approve')
 
   const authClient = await createClient()
   const { data: { user } } = await authClient.auth.getUser()
@@ -351,10 +309,7 @@ export const requestWikiArticleChanges = async (
   articleId: string,
   reviewerComments: string,
 ) => {
-  const authorized = await canReviewContent()
-  if (!authorized) {
-    throw new Error('Unauthorized: insufficient permissions')
-  }
+  await assertPermission('admin.content.approve')
 
   if (!reviewerComments.trim()) {
     throw new Error('Reviewer comments are required when requesting changes.')

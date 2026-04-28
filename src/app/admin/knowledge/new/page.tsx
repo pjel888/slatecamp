@@ -1,6 +1,5 @@
-import { redirect } from 'next/navigation'
 import { ROUTES } from '@/lib/routes'
-import { canManageContent } from '@/lib/admin/roles'
+import { assertPermission } from '@/lib/admin/roles'
 import { UnifiedContentEditor } from '@/components/admin/unified-editor'
 import { createClient } from '@/lib/supabase/server'
 import { Breadcrumb } from '@/components/ui/breadcrumb'
@@ -10,8 +9,7 @@ export const metadata = {
 }
 
 const NewContentPage = async () => {
-  const authorized = await canManageContent()
-  if (!authorized) redirect(ROUTES.admin.root)
+  await assertPermission('admin.content.create')
 
   // Fetch all taxonomy nodes for the selector
   const supabase = await createClient()

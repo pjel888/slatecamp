@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { assertPermission } from '@/lib/admin/roles'
 import { getAssets } from '@/lib/actions/admin/assets'
 import { AssetList } from '@/components/admin/AssetList'
 import { AssetUploader } from '@/components/admin/AssetUploader'
@@ -6,6 +7,7 @@ import { AssetUploader } from '@/components/admin/AssetUploader'
 export const metadata: Metadata = { title: '3D Assets - SlateCamp Admin' }
 
 export default async function AdminAssetsPage() {
+  await assertPermission('admin.assets.manage')
   const assets = await getAssets()
 
   return (

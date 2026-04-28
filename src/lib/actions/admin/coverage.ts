@@ -1,5 +1,5 @@
 import { createClient } from '@/lib/supabase/server'
-import { canReviewContent } from '@/lib/admin/roles'
+import { assertPermission } from '@/lib/admin/roles'
 import { classifyCoverage, type CoverageCellData, type CoverageLevel } from '@/lib/utils/coverage'
 
 // Re-export so existing imports from this module continue to work
@@ -23,8 +23,7 @@ interface TaxonomyNode {
  * ------------------------------------------------------------------ */
 
 export const fetchCoverageData = async () => {
-  const authorized = await canReviewContent()
-  if (!authorized) throw new Error('Unauthorized')
+  await assertPermission('admin.analytics.view')
 
   const supabase = await createClient()
 

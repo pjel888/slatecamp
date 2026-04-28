@@ -80,6 +80,10 @@ mock.module('@/lib/supabase/admin', () => ({
 }))
 
 mock.module('@/lib/supabase/server', () => ({
+  createStaticClient: () => Promise.resolve({}),
+  createServiceClient: () => Promise.resolve({}),
+  hasAuthCookie: () => Promise.resolve(false),
+  getUserIfPresent: () => Promise.resolve({ data: { user: null } }),
   createClient: () =>
     Promise.resolve({
       auth: {
@@ -89,6 +93,27 @@ mock.module('@/lib/supabase/server', () => ({
               user: { id: 'user-1' },
             },
           }),
+      },
+      from: (table: string) => {
+        if (table === 'profiles') {
+          return {
+            select: () => ({
+              eq: () => ({
+                maybeSingle: () => Promise.resolve({ data: { role: 'super_admin' }, error: null }),
+              }),
+            }),
+          }
+        }
+        if (table === 'user_roles') {
+          return {
+            select: () => ({
+              eq: () => ({
+                order: () => Promise.resolve({ data: [{ role: 'super_admin' }], error: null }),
+              }),
+            }),
+          }
+        }
+        return {} as never
       },
     }),
   getUser: () =>
@@ -101,9 +126,11 @@ mock.module('@/lib/supabase/server', () => ({
 
 const canManageContentMock = mock(() => Promise.resolve(true))
 const canReviewContentMock = mock(() => Promise.resolve(true))
+const assertPermissionMock = mock(() => Promise.resolve())
 mock.module('@/lib/admin/roles', () => ({
   canManageContent: canManageContentMock,
   canReviewContent: canReviewContentMock,
+  assertPermission: assertPermissionMock,
 }))
 
 mock.module('next/cache', () => ({
@@ -121,6 +148,7 @@ const { createQuestion, updateQuestion } = await import('./questions')
 describe('admin/questions', () => {
   beforeEach(() => {
     canManageContentMock.mockResolvedValue(true)
+    assertPermissionMock.mockResolvedValue(undefined)
     insertMock.mockClear()
     updateEqMock.mockClear()
     deleteEqMock.mockClear()
@@ -129,6 +157,7 @@ describe('admin/questions', () => {
     articleMaybeSingleMock.mockClear()
     mappingMaybeSingleMock.mockClear()
     logServerErrorMock.mockClear()
+    assertPermissionMock.mockClear()
   })
 
   test('throws validation error when article_id is missing', async () => {
@@ -147,7 +176,7 @@ describe('admin/questions', () => {
   })
 
   test('rejects question mutations when manage permission is denied', async () => {
-    canManageContentMock.mockResolvedValueOnce(false)
+    assertPermissionMock.mockRejectedValueOnce(new Error('Forbidden: admin.content.create required'))
 
     await expect(
       createQuestion({
@@ -161,7 +190,7 @@ describe('admin/questions', () => {
         topic_id: 'topic-1',
         article_id: 'article-1',
       } as any),
-    ).rejects.toThrow('Unauthorized: insufficient permissions')
+    ).rejects.toThrow('Forbidden')
   })
 
   test('creates a standard question with canonical option shape and article ownership', async () => {

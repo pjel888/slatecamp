@@ -1,4 +1,4 @@
-import { beforeEach, describe, expect, mock, test } from 'bun:test'
+import { afterAll, beforeEach, describe, expect, mock, test } from 'bun:test'
 
 mock.module('server-only', () => ({}))
 
@@ -50,7 +50,12 @@ mock.module('@/lib/supabase/admin', () => ({
   }),
 }))
 
+const originalResolveRole = { ...(await import('@/lib/entitlements/resolve-role')) }
+const originalDevOverrides = { ...(await import('@/lib/entitlements/dev-overrides')) }
+const originalPolicy = { ...(await import('@/lib/entitlements/policy')) }
+
 mock.module('@/lib/entitlements/resolve-role', () => ({
+  ...originalResolveRole,
   resolveCurrentUserRole: () =>
     Promise.resolve({
       normalizedRole: 'developer',
@@ -63,6 +68,7 @@ mock.module('@/lib/entitlements/resolve-role', () => ({
 }))
 
 mock.module('@/lib/entitlements/dev-overrides', () => ({
+  ...originalDevOverrides,
   resolveDevOverrides: () =>
     Promise.resolve({
       allowDevPortalBypass: false,
@@ -70,6 +76,7 @@ mock.module('@/lib/entitlements/dev-overrides', () => ({
 }))
 
 mock.module('@/lib/entitlements/policy', () => ({
+  ...originalPolicy,
   canAccessAdminCmsForRole: () => false,
   canAccessCeoPortalForRole: () => false,
   canAccessDeveloperPortalForRole: () => true,
@@ -80,6 +87,12 @@ const { getApplicationErrorEvents, logServerError } = await import('./server')
 describe('logging/server', () => {
   beforeEach(() => {
     insertMock.mockClear()
+  })
+
+  afterAll(() => {
+    mock.module('@/lib/entitlements/policy', () => ({ ...originalPolicy }))
+    mock.module('@/lib/entitlements/resolve-role', () => ({ ...originalResolveRole }))
+    mock.module('@/lib/entitlements/dev-overrides', () => ({ ...originalDevOverrides }))
   })
 
   test('persists sanitized application errors to analytics_events', async () => {

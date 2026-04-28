@@ -73,9 +73,13 @@ const canManageContentMock = mock(() => Promise.resolve(true))
 mock.module('@/lib/admin/roles', () => ({
   canManageContent: canManageContentMock,
   canReviewContent: mock(() => Promise.resolve(true)),
+  assertPermission: mock(() => Promise.resolve()),
 }))
 
 mock.module('@/lib/supabase/server', () => ({
+  createServiceClient: () => Promise.resolve({}),
+  hasAuthCookie: () => Promise.resolve(false),
+  getUserIfPresent: () => Promise.resolve({ data: { user: null } }),
   createClient: () =>
     Promise.resolve({
       auth: {

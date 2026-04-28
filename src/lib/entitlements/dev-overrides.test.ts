@@ -3,6 +3,8 @@ import { beforeEach, describe, expect, mock, test } from 'bun:test'
 let cookieValue: string | undefined
 
 mock.module('next/headers', () => ({
+  draftMode: () => Promise.resolve({ isEnabled: false }),
+  headers: () => Promise.resolve({ get: () => null }),
   cookies: async () => ({
     get: (name: string) =>
       name === 'cerebro_dev_flags' && cookieValue

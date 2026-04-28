@@ -37,7 +37,16 @@ const ceoNavItems: NavGroup[] = [
   {
     label: 'Operations',
     items: [
-      { href: '/ceo/team', label: 'Team', icon: <Buildings className="w-3.5 h-3.5" /> },
+      {
+        href: '/ceo/team',
+        label: 'Team',
+        icon: <Buildings className="w-3.5 h-3.5" />,
+        children: [
+          { label: 'Team Roster', href: '/ceo/team' },
+          { label: 'Admin Roles', href: '/ceo/team/admin-roles' },
+          { label: 'Permission Audit', href: '/ceo/team/permission-audit' },
+        ],
+      },
       {
         href: '/ceo/financials',
         label: 'Financials',

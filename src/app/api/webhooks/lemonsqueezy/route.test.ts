@@ -29,6 +29,8 @@ const updateEqMock = mock(() => Promise.resolve({ error: null }))
 const insertMock = mock(() => Promise.resolve({ error: null }))
 
 mock.module('next/headers', () => ({
+  cookies: () => Promise.resolve({}),
+  draftMode: () => Promise.resolve({ isEnabled: false }),
   headers: () =>
     Promise.resolve({
       get: (name: string) => (name === 'x-signature' ? 'sig' : null),

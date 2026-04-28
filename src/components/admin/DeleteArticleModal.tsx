@@ -73,7 +73,7 @@ export const DeleteArticleModal = ({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent showCloseButton={false}>
+      <DialogContent showCloseButton={true}>
         <DialogHeader>
           <DialogTitle>Archive Article</DialogTitle>
           <DialogDescription>

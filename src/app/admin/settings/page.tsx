@@ -1,8 +1,6 @@
 import type { Metadata } from 'next'
-import { redirect } from 'next/navigation'
 
-import { isSuperAdmin } from '@/lib/admin/roles'
-import { ROUTES } from '@/lib/routes'
+import { assertPermission } from '@/lib/admin/roles'
 import { getAdminUsers } from '@/lib/actions/admin/roles'
 import { SectionHeader } from '@/components/shared/section-header'
 import { AdminRoleManager } from '@/components/admin/settings/AdminRoleManager'
@@ -10,8 +8,7 @@ import { AdminRoleManager } from '@/components/admin/settings/AdminRoleManager'
 export const metadata: Metadata = { title: 'Settings - SlateCamp Admin' }
 
 const AdminSettingsPage = async () => {
-  const isSuper = await isSuperAdmin()
-  if (!isSuper) redirect(ROUTES.admin.root)
+  await assertPermission('admin.users.manage')
 
   const { rows: adminUsers, storageMode } = await getAdminUsers()
 

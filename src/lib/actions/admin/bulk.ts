@@ -2,13 +2,12 @@
 
 import { revalidatePath, revalidateTag } from '@/lib/cache/revalidate'
 import { CACHE_TAGS } from '../cache-tags'
-import { canManageContent } from '@/lib/admin/roles'
+import { assertPermission } from '@/lib/admin/roles'
 import { createAdminClient } from '@/lib/supabase/admin'
 import { ROUTES } from '@/lib/routes'
 
 export const bulkDeleteQuestions = async (ids: string[]) => {
-  const authorized = await canManageContent()
-  if (!authorized) return { error: 'Unauthorized' }
+  await assertPermission('admin.content.delete')
 
   const supabase = createAdminClient()
   const { data: rows, error: rowsError } = await supabase
@@ -35,8 +34,7 @@ export const bulkDeleteQuestions = async (ids: string[]) => {
 }
 
 export const bulkDeleteArticles = async (ids: string[]) => {
-  const authorized = await canManageContent()
-  if (!authorized) return { error: 'Unauthorized' }
+  await assertPermission('admin.content.delete')
 
   const supabase = createAdminClient()
   const { error } = await supabase

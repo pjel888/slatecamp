@@ -87,6 +87,28 @@ export interface FeatureAccessDecision {
   trace: string[]
 }
 
+export type AdminPermission =
+  | 'admin.access'
+  | 'admin.dashboard.view'
+  | 'admin.content.view'
+  | 'admin.content.create'
+  | 'admin.content.edit'
+  | 'admin.content.delete'
+  | 'admin.content.publish'
+  | 'admin.content.approve'
+  | 'admin.content.import'
+  | 'admin.taxonomy.manage'
+  | 'admin.assets.manage'
+  | 'admin.pipeline.manage'
+  | 'admin.reviews.view'
+  | 'admin.audit.view'
+  | 'admin.activity.view'
+  | 'admin.search.use'
+  | 'admin.analytics.view'
+  | 'admin.settings.view'
+  | 'admin.users.manage'
+  | 'admin.preview.view'
+
 export interface ViewerEntitlements {
   traceId: string
   userId: string | null
@@ -102,6 +124,7 @@ export interface ViewerEntitlements {
   overrides: DevOverrideState
   featureFlags: Partial<Record<EntitlementFeatureKey, NormalizedFeatureFlag>>
   decisions: Partial<Record<EntitlementFeatureKey, FeatureAccessDecision>>
+  permissions: AdminPermission[]
 }
 
 export interface EntitlementAuditEvent {

@@ -64,6 +64,7 @@ mock.module('@/lib/supabase/admin', () => ({
 const canManageContentMock = mock(() => Promise.resolve(true))
 mock.module('@/lib/admin/roles', () => ({
   canManageContent: canManageContentMock,
+  assertPermission: mock(() => Promise.resolve()),
 }))
 
 const revalidatePathMock = mock(() => {})

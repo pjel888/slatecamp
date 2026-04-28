@@ -35,6 +35,9 @@ const logServerErrorMock = mock(() => Promise.resolve())
 const logServerEventMock = mock(() => Promise.resolve())
 
 mock.module('@/lib/supabase/server', () => ({
+  createStaticClient: () => Promise.resolve({}),
+  hasAuthCookie: () => Promise.resolve(false),
+  getUserIfPresent: () => Promise.resolve({ data: { user: null } }),
   createServiceClient: createServiceClientMock,
   getUser: getUserMock,
 }))

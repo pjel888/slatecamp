@@ -1,7 +1,7 @@
 import { redirect } from 'next/navigation'
 import { getUser } from '@/lib/supabase/server'
 import { ROUTES } from '@/lib/routes'
-import { canReviewContent, getUserRole } from '@/lib/admin/roles'
+import { canReviewContent, getUserRole, assertPermission } from '@/lib/admin/roles'
 import { AdminShell } from './_components/AdminShell'
 import { getNeedsAttentionData } from '@/lib/actions/admin/dashboard'
 import { headers } from 'next/headers'
@@ -28,6 +28,11 @@ export default async function AdminLayout({
   const isAdmin = await canReviewContent()
   if (!isAdmin && pathname !== ROUTES.admin.login) {
     redirect(ROUTES.dashboard.root)
+  }
+
+  // Defense-in-depth: assert admin.access permission for all non-login admin routes
+  if (pathname !== ROUTES.admin.login) {
+    await assertPermission('admin.access')
   }
 
   const role = await getUserRole()

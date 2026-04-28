@@ -1,8 +1,7 @@
 'use server'
 
-import { createClient } from '@/lib/supabase/server'
 import { createAdminClient } from '@/lib/supabase/admin'
-import { canReviewContent } from '@/lib/admin/roles'
+import { assertPermission } from '@/lib/admin/roles'
 import type { AuditLog } from '@/lib/audit/audit-queries'
 import { unstable_cache } from 'next/cache'
 import { REVIEW_QUEUE_STATUSES } from '@/lib/admin/editor-workflow'
@@ -28,9 +27,7 @@ const fetchAdminStats = unstable_cache(
 )
 
 export const getAdminStats = async () => {
-  const authorized = await canReviewContent()
-  if (!authorized) throw new Error('Unauthorized')
-
+  await assertPermission('admin.dashboard.view')
   return fetchAdminStats()
 }
 
@@ -88,9 +85,7 @@ const fetchAdminDashboardData = unstable_cache(
 )
 
 export const getAdminDashboardData = async (): Promise<AdminDashboardData> => {
-  const authorized = await canReviewContent()
-  if (!authorized) throw new Error('Unauthorized')
-
+  await assertPermission('admin.dashboard.view')
   return fetchAdminDashboardData()
 }
 
@@ -174,9 +169,7 @@ const fetchContentBySubject = unstable_cache(
 )
 
 export const getContentBySubject = async (): Promise<SubjectContentCount[]> => {
-  const authorized = await canReviewContent()
-  if (!authorized) throw new Error('Unauthorized')
-
+  await assertPermission('admin.dashboard.view')
   return fetchContentBySubject()
 }
 
@@ -210,9 +203,7 @@ const fetchNeedsAttentionData = unstable_cache(
 )
 
 export const getNeedsAttentionData = async (): Promise<NeedsAttentionData> => {
-  const authorized = await canReviewContent()
-  if (!authorized) throw new Error('Unauthorized')
-
+  await assertPermission('admin.dashboard.view')
   return fetchNeedsAttentionData()
 }
 
@@ -264,8 +255,6 @@ const fetchCriticalCoverageGap = unstable_cache(
 )
 
 export const getCriticalCoverageGap = async (): Promise<CoverageGap | null> => {
-  const authorized = await canReviewContent()
-  if (!authorized) throw new Error('Unauthorized')
-
+  await assertPermission('admin.dashboard.view')
   return fetchCriticalCoverageGap()
 }

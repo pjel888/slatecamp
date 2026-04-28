@@ -31,6 +31,10 @@ mock.module('@/lib/supabase/admin', () => ({
 }))
 
 mock.module('@/lib/supabase/server', () => ({
+  createStaticClient: () => Promise.resolve({}),
+  createServiceClient: () => Promise.resolve({}),
+  hasAuthCookie: () => Promise.resolve(false),
+  getUserIfPresent: () => Promise.resolve({ data: { user: null } }),
   createClient: () =>
     Promise.resolve({
       auth: {
@@ -55,6 +59,7 @@ const canReviewContentMock = mock(() => Promise.resolve(true))
 mock.module('@/lib/admin/roles', () => ({
   canManageContent: canManageContentMock,
   canReviewContent: canReviewContentMock,
+  assertPermission: mock(() => Promise.resolve()),
 }))
 
 mock.module('next/cache', () => ({
