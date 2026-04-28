@@ -22,7 +22,7 @@ const makeQueryStub = (result: { data: unknown; error: unknown }) => {
   return chain
 }
 
-const makeFromStub = (result: { data: unknown; error: unknown }) => () => makeQueryStub(result)
+const _makeFromStub = (result: { data: unknown; error: unknown }) => () => makeQueryStub(result)
 
 // Default stubs — all succeed with empty data
 let fromImpl: (table: string) => ReturnType<typeof makeQueryStub>

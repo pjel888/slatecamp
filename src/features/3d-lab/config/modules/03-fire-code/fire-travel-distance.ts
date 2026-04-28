@@ -378,7 +378,7 @@ const ANNOTATIONS: AnnotationDef[] = [
     position: (params) => {
       const occ = String(params.occupancyType ?? 'Assembly/Business')
       const spr = Boolean(params.sprinklered ?? true)
-      const max = getMaxTravel(occ, spr)
+      const _max = getMaxTravel(occ, spr)
       return [15, 1.5, 1] satisfies [number, number, number]
     },
   },

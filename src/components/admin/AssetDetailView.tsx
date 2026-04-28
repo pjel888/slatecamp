@@ -106,6 +106,7 @@ export const AssetDetailView = ({ asset }: AssetDetailViewProps) => {
             <CardContent className="p-4 space-y-3">
               <div className="aspect-video bg-muted rounded-md flex items-center justify-center overflow-hidden">
                 {asset.thumbnail ? (
+                  // eslint-disable-next-line @next/next/no-img-element -- Admin asset thumbnails can point at arbitrary storage URLs outside next/image allowlist.
                   <img
                     src={asset.thumbnail}
                     alt={asset.name}

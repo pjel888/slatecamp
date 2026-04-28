@@ -89,7 +89,7 @@ export const ProportionComparator = () => {
                   className={`transition-all duration-150 ${
                     isActive
                       ? 'fill-camp-cobalt/10 stroke-camp-cobalt stroke-2'
-                      : 'fill-muted stroke-[#E0DED8] stroke-1 group-hover:stroke-camp-cobalt'
+                      : 'fill-muted stroke-wiki-border stroke-1 group-hover:stroke-camp-cobalt'
                   }`}
                 />
                 <text

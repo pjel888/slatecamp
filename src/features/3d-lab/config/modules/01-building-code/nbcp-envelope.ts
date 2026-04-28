@@ -132,8 +132,8 @@ function geometry(
   const firewall = Boolean(params.hasFirewall)
 
   const zoning = getZoning(zone)
-  const tla = lotW * lotD
-  const pso = zoning.pso / 100
+  const _tla = lotW * lotD
+  const _pso = zoning.pso / 100
   const bhl = zoning.bhl
 
   // Setbacks (firewall reduces side to 0)

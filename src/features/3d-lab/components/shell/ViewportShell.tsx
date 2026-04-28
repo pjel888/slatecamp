@@ -113,13 +113,13 @@ export const ViewportShell = ({
     // Idle cursors per mode
     if (navMode === 'pan') return 'grab'
     return ORBIT_CURSOR
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, [navMode, activeInteraction])
 
   // Reset shell state on unmount
   useEffect(() => {
     return () => { reset() }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, [])
 
   // Resolve sidebar configs
@@ -167,7 +167,7 @@ export const ViewportShell = ({
   useEffect(() => {
     if (leftCfg?.defaultCollapsed) useViewportShellStore.getState().toggleLeftSidebar()
     if (rightCfg?.defaultCollapsed) useViewportShellStore.getState().toggleRightSidebar()
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, [])
 
   // Set initial mobile tab
@@ -176,7 +176,7 @@ export const ViewportShell = ({
     if (tabs.length > 0) {
       useViewportShellStore.getState().setMobileTab(tabs[0].id)
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, [])
 
   const showStatusBar = shellConfig.statusBar !== false

@@ -1,6 +1,6 @@
 // src/app/dashboard/3d-lab/_constants/nbcp.test.ts
 import { describe, test, expect } from 'bun:test'
-import { getRrowBhl, getBaseSetbacks, ZONING_TABLE, ZoningClass, LotType } from './nbcp'
+import { getRrowBhl, getBaseSetbacks, ZONING_TABLE, ZoningClass } from './nbcp'
 
 describe('getRrowBhl', () => {
   test('8.00m maps to 5 storeys (>= lower bound)', () => {

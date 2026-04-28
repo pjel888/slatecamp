@@ -8,7 +8,6 @@ import {
   TooltipTrigger,
   TooltipContent,
 } from '@/components/ui/tooltip'
-import { EmptyState } from '@/components/shared/empty-state'
 import { getScoreColorHex } from '@/components/shared/score-display'
 import type { SubjectMastery } from '@/types/dashboard'
 import { ROUTES } from '@/lib/routes'

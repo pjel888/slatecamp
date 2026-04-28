@@ -12,7 +12,7 @@
 //
 // DO NOT modify without cross-referencing the official IRR text.
 
-import type { ZoneClass, FirewallSide, PerSideSetbacks } from './types'
+import type { ZoneClass, FirewallSide } from './types'
 
 // ─── Table VIII.1 Entry ─────────────────────────────────────────────────────
 

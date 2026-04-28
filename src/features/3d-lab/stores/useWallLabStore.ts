@@ -77,7 +77,7 @@ export const CORE_THICKNESS_OPTIONS: Record<CoreType, CoreThicknessOption[]> = {
 }
 
 export function getDefaultThickness(core: CoreType): number {
-  const opts = CORE_THICKNESS_OPTIONS[core]
+  const _opts = CORE_THICKNESS_OPTIONS[core]
   // Pick the most common / middle option
   return core === 'chb' ? 150
     : core === 'drywall' ? 13

@@ -71,13 +71,13 @@ function BOMRowItem({ row, showBuy, zebra, unitPrice, isEditing, onStartEdit, on
     <div
       className={[
         'grid grid-cols-[1fr_auto_auto_auto] items-center gap-x-2 px-3 py-1.5',
-        zebra ? 'bg-[#F8F7F5]' : 'bg-white',
+        zebra ? 'bg-surface-light' : 'bg-white',
       ].join(' ')}
     >
-      <span className="text-[12px] text-[#1A2332] leading-snug">{row.label}</span>
-      <span className="font-mono text-[12px] font-medium text-right text-[#1A2332] tabular-nums min-w-[48px]">
+      <span className="text-[12px] text-foreground leading-snug">{row.label}</span>
+      <span className="font-mono text-[12px] font-medium text-right text-foreground tabular-nums min-w-[48px]">
         {isWholeNumber ? fmtInt(qty) : fmt(qty)}
-        <span className="text-[10px] text-[#8896A7] ml-0.5">{row.unit}</span>
+        <span className="text-[10px] text-muted-foreground ml-0.5">{row.unit}</span>
       </span>
       {/* Editable unit price */}
       <div className="min-w-[52px] text-right">
@@ -88,13 +88,13 @@ function BOMRowItem({ row, showBuy, zebra, unitPrice, isEditing, onStartEdit, on
             defaultValue={unitPrice}
             onBlur={(e) => { onPriceChange(parseFloat(e.target.value) || 0); onEndEdit() }}
             onKeyDown={(e) => { if (e.key === 'Enter') { onPriceChange(parseFloat((e.target as HTMLInputElement).value) || 0); onEndEdit() } }}
-            className="w-[52px] border border-[#1B3FC4] rounded-sm px-1 py-0.5 text-[11px] font-mono text-right focus:outline-none"
+            className="w-[52px] border border-primary rounded-sm px-1 py-0.5 text-[11px] font-mono text-right focus:outline-none"
           />
         ) : (
           <button
             type="button"
             onClick={onStartEdit}
-            className="font-mono text-[11px] text-[#8896A7] hover:text-[#1B3FC4] cursor-pointer transition-colors duration-150"
+            className="font-mono text-[11px] text-muted-foreground hover:text-primary cursor-pointer transition-colors duration-150"
             title="Click to edit unit price"
           >
             ₱{fmt(unitPrice, 0)}
@@ -102,7 +102,7 @@ function BOMRowItem({ row, showBuy, zebra, unitPrice, isEditing, onStartEdit, on
         )}
       </div>
       {/* Line cost */}
-      <span className="font-mono text-[12px] font-medium text-right text-[#1A2332] tabular-nums min-w-[64px]">
+      <span className="font-mono text-[12px] font-medium text-right text-foreground tabular-nums min-w-[64px]">
         ₱{fmtCost(lineCost)}
       </span>
     </div>
@@ -528,12 +528,12 @@ export function BOMPanel() {
   return (
     <div className="flex flex-col h-full">
       {/* ── Header ───────────────────────────────────────────────── */}
-      <div className="flex items-center justify-between px-4 py-3 border-b border-[#D4DAE3] shrink-0">
+      <div className="flex items-center justify-between px-4 py-3 border-b border-border shrink-0">
         <div>
-          <h2 className="text-sm font-semibold text-[#1A2332] leading-tight">
+          <h2 className="text-sm font-semibold text-foreground leading-tight">
             Bill of Materials
           </h2>
-          <p className="mt-0.5 text-[11px] text-[#4A5568] leading-snug">
+          <p className="mt-0.5 text-[11px] text-text-secondary leading-snug">
             Live estimates — updates as you configure.
           </p>
         </div>
@@ -545,15 +545,15 @@ export function BOMPanel() {
           className={[
             'flex items-center gap-1.5 px-2.5 py-1 rounded-sm border text-[11px] font-medium transition-colors duration-150',
             showBuy
-              ? 'bg-[#1B3FC4] border-[#1B3FC4] text-white'
-              : 'bg-white border-[#D4DAE3] text-[#4A5568] hover:border-[#1B3FC4] hover:text-[#1B3FC4]',
+              ? 'bg-primary border-primary text-white'
+              : 'bg-white border-border text-text-secondary hover:border-primary hover:text-primary',
           ].join(' ')}
           title={showBuy ? 'Showing procurement (buy) quantities' : 'Showing adjusted (net + waste) quantities'}
         >
           <span
             className={[
               'w-3 h-3 rounded-full border inline-block',
-              showBuy ? 'bg-white border-white' : 'bg-[#D4DAE3] border-[#D4DAE3]',
+              showBuy ? 'bg-white border-white' : 'bg-border border-border',
             ].join(' ')}
           />
           {showBuy ? 'Buy' : 'Net'}
@@ -561,27 +561,27 @@ export function BOMPanel() {
       </div>
 
       {/* ── Area Summary Strip ────────────────────────────────────── */}
-      <div className="flex items-center gap-3 px-4 py-2 bg-[#F8F7F5] border-b border-[#D4DAE3] shrink-0">
+      <div className="flex items-center gap-3 px-4 py-2 bg-surface-light border-b border-border shrink-0">
         <AreaPill label="Gross" value={grossAreaSqm} />
-        <span className="text-[#D4DAE3] text-[10px]">→</span>
+        <span className="text-border text-[10px]">→</span>
         <AreaPill label="Net" value={netAreaSqm} />
-        <span className="text-[#D4DAE3] text-[10px]">→</span>
+        <span className="text-border text-[10px]">→</span>
         <AreaPill label="Finish" value={finishAreaSqm} highlight />
       </div>
 
       {/* ── Column Headers ──────────────────────────────────────── */}
-      <div className="grid grid-cols-[1fr_auto_auto_auto] items-center gap-x-2 px-3 py-1 bg-[#F8F7F5] border-b border-[#D4DAE3] shrink-0">
-        <span className="text-[9px] font-semibold text-[#8896A7] uppercase tracking-wider">Material</span>
-        <span className="text-[9px] font-semibold text-[#8896A7] uppercase tracking-wider text-right min-w-[48px]">Qty</span>
-        <span className="text-[9px] font-semibold text-[#8896A7] uppercase tracking-wider text-right min-w-[52px]">Unit ₱</span>
-        <span className="text-[9px] font-semibold text-[#8896A7] uppercase tracking-wider text-right min-w-[64px]">Cost</span>
+      <div className="grid grid-cols-[1fr_auto_auto_auto] items-center gap-x-2 px-3 py-1 bg-surface-light border-b border-border shrink-0">
+        <span className="text-[9px] font-semibold text-muted-foreground uppercase tracking-wider">Material</span>
+        <span className="text-[9px] font-semibold text-muted-foreground uppercase tracking-wider text-right min-w-[48px]">Qty</span>
+        <span className="text-[9px] font-semibold text-muted-foreground uppercase tracking-wider text-right min-w-[52px]">Unit ₱</span>
+        <span className="text-[9px] font-semibold text-muted-foreground uppercase tracking-wider text-right min-w-[64px]">Cost</span>
       </div>
 
       {/* ── Materials Table ───────────────────────────────────────── */}
       <div className="flex-1 overflow-y-auto min-h-0">
         {bomRows.length === 0 ? (
           <div className="px-4 py-6 text-center">
-            <p className="text-[12px] text-[#8896A7]">
+            <p className="text-[12px] text-muted-foreground">
               Configure your wall to see material estimates.
             </p>
           </div>
@@ -592,7 +592,7 @@ export function BOMPanel() {
                 // Section header row
                 if (row.layerCode === 'LABOR_HEADER') {
                   return (
-                    <div key="labor-header" className="px-3 py-1.5 bg-[#1A2332]">
+                    <div key="labor-header" className="px-3 py-1.5 bg-foreground">
                       <span className="text-[10px] font-semibold text-white/80 uppercase tracking-wider">Labor</span>
                     </div>
                   )
@@ -619,9 +619,9 @@ export function BOMPanel() {
             </div>
 
             {/* ── Total Cost Row ─────────────────────────────────────── */}
-            <div className="grid grid-cols-[1fr_auto] items-center gap-x-2 px-3 py-2.5 bg-[#1A2332] border-t border-[#D4DAE3]">
+            <div className="grid grid-cols-[1fr_auto] items-center gap-x-2 px-3 py-2.5 bg-foreground border-t border-border">
               <span className="text-[12px] font-semibold text-white">Estimated Total</span>
-              <span className="font-mono text-[14px] font-bold text-[#F5A623] tabular-nums">
+              <span className="font-mono text-[14px] font-bold text-camp-amber tabular-nums">
                 ₱{fmtCost(
                   bomRows.reduce((sum, row) => {
                     if (row.layerCode === 'LABOR_HEADER') return sum
@@ -640,9 +640,9 @@ export function BOMPanel() {
       </div>
 
       {/* ── Footer ───────────────────────────────────────────────── */}
-      <div className="shrink-0 border-t border-[#D4DAE3]">
+      <div className="shrink-0 border-t border-border">
         {/* Disclaimer */}
-        <p className="px-4 py-2 text-[10px] text-[#8896A7] italic leading-snug">
+        <p className="px-4 py-2 text-[10px] text-muted-foreground italic leading-snug">
           Estimates are approximate. Verify quantities with your supplier.
         </p>
 
@@ -651,7 +651,7 @@ export function BOMPanel() {
           <button
             type="button"
             onClick={handlePrint}
-            className="flex items-center gap-1 px-2.5 py-1 rounded-sm border border-[#D4DAE3] text-[11px] text-[#4A5568] hover:border-[#1B3FC4] hover:text-[#1B3FC4] transition-colors duration-150"
+            className="flex items-center gap-1 px-2.5 py-1 rounded-sm border border-border text-[11px] text-text-secondary hover:border-primary hover:text-primary transition-colors duration-150"
           >
             <PrintIcon />
             Print
@@ -659,7 +659,7 @@ export function BOMPanel() {
           <button
             type="button"
             onClick={handleCopy}
-            className="flex items-center gap-1 px-2.5 py-1 rounded-sm border border-[#D4DAE3] text-[11px] text-[#4A5568] hover:border-[#1B3FC4] hover:text-[#1B3FC4] transition-colors duration-150"
+            className="flex items-center gap-1 px-2.5 py-1 rounded-sm border border-border text-[11px] text-text-secondary hover:border-primary hover:text-primary transition-colors duration-150"
           >
             <CopyIcon />
             Copy
@@ -668,9 +668,9 @@ export function BOMPanel() {
 
         {/* Sponsor attribution */}
         {activeSponsor && (
-          <div className="flex items-center gap-2 px-4 py-2 border-t border-[#D4DAE3] bg-[#F8F7F5]">
-            <span className="text-[10px] text-[#8896A7] italic">Powered by</span>
-            <span className="text-[11px] font-semibold text-[#1A2332]">{activeSponsor.name}</span>
+          <div className="flex items-center gap-2 px-4 py-2 border-t border-border bg-surface-light">
+            <span className="text-[10px] text-muted-foreground italic">Powered by</span>
+            <span className="text-[11px] font-semibold text-foreground">{activeSponsor.name}</span>
           </div>
         )}
       </div>
@@ -683,11 +683,11 @@ export function BOMPanel() {
 function AreaPill({ label, value, highlight }: { label: string; value: number; highlight?: boolean }) {
   return (
     <div className="flex flex-col items-center">
-      <span className="text-[9px] text-[#8896A7] uppercase tracking-wide leading-none">{label}</span>
+      <span className="text-[9px] text-muted-foreground uppercase tracking-wide leading-none">{label}</span>
       <span
         className={[
           'font-mono text-[11px] font-medium leading-snug',
-          highlight ? 'text-[#1B3FC4]' : 'text-[#1A2332]',
+          highlight ? 'text-primary' : 'text-foreground',
         ].join(' ')}
       >
         {value.toFixed(2)} m²

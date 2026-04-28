@@ -1,8 +1,7 @@
 'use server'
 
-import { revalidateTag, revalidatePath } from 'next/cache'
+import { revalidatePath } from 'next/cache'
 import { createClient, getUser } from '@/lib/supabase/server'
-import { ROUTES } from '@/lib/routes'
 
 export const flagQuestion = async (input: {
   sessionId: string

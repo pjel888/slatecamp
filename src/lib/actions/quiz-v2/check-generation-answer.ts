@@ -26,7 +26,7 @@ export const checkGenerationAnswer = async (
   questionId: string,
   userAnswer: string,
 ): Promise<CheckGenerationResult> => {
-  const supabase = await createClient()
+  const _supabase = await createClient()
   const {
     data: { user },
   } = await getUser()

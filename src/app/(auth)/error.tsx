@@ -9,7 +9,7 @@ type ErrorProps = {
   reset: () => void
 }
 
-export default function AuthError({ error, reset }: ErrorProps) {
+export default function AuthError({ error, reset: _reset }: ErrorProps) {
   useEffect(() => {
     console.error('[AUTH ERROR]', error.message)
   }, [error])

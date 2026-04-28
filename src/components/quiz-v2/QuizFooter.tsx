@@ -18,7 +18,7 @@ export const QuizFooter = memo(({
   config,
   currentPosition,
   totalQuestions,
-  hasAnswered,
+  hasAnswered: _hasAnswered,
   onPrevious,
   onNext,
 }: QuizFooterProps) => {

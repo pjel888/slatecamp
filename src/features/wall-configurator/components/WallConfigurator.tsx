@@ -27,7 +27,7 @@ function isActiveStep(n: number): n is ActiveStep {
   return (STEP_SEQUENCE as readonly number[]).includes(n)
 }
 
-function nextInSequence(current: ActiveStep): ActiveStep {
+function _nextInSequence(current: ActiveStep): ActiveStep {
   const idx = STEP_SEQUENCE.indexOf(current)
   return idx < STEP_SEQUENCE.length - 1 ? STEP_SEQUENCE[idx + 1] : current
 }

@@ -30,7 +30,7 @@ export function ColorSponsorStep() {
   if (finishType === 'tiles') {
     return (
       <div className="flex flex-col gap-3">
-        <span className="text-[11px] font-medium text-[#4A5568] uppercase tracking-wide">Tile Pattern</span>
+        <span className="text-[11px] font-medium text-text-secondary uppercase tracking-wide">Tile Pattern</span>
         <div className="grid grid-cols-2 gap-2">
           {TILE_PATTERNS.map((p) => {
             const isSelected = tilePattern === p.value
@@ -42,14 +42,14 @@ export function ColorSponsorStep() {
                 className={[
                   'flex flex-col items-center justify-center gap-1.5 border rounded-md p-3 cursor-pointer transition-colors duration-150',
                   isSelected
-                    ? 'border-[#1B3FC4] bg-[#EEF2FC]'
-                    : 'border-[#D4DAE3] bg-white hover:border-[#1B3FC4]',
+                    ? 'border-primary bg-primary-50'
+                    : 'border-border bg-white hover:border-primary',
                 ].join(' ')}
               >
                 <span className="text-[22px] leading-none" aria-hidden="true">
                   {p.symbol}
                 </span>
-                <span className="text-[12px] font-medium text-[#1A2332]">{p.label}</span>
+                <span className="text-[12px] font-medium text-foreground">{p.label}</span>
               </button>
             )
           })}
@@ -61,7 +61,7 @@ export function ColorSponsorStep() {
   return (
     <div className="flex flex-col gap-3">
       {/* Sponsor tabs */}
-      <div className="flex border-b border-[#D4DAE3] gap-0">
+      <div className="flex border-b border-border gap-0">
         {SPONSOR_BRANDS.map((brand) => {
           const isActive = activeSponsor.id === brand.id
           return (
@@ -72,8 +72,8 @@ export function ColorSponsorStep() {
               className={[
                 'px-3 py-2 text-[12px] font-medium transition-colors duration-150 -mb-px border-b-2',
                 isActive
-                  ? 'border-[#1B3FC4] text-[#1B3FC4]'
-                  : 'border-transparent text-[#8896A7] hover:text-[#4A5568]',
+                  ? 'border-primary text-primary'
+                  : 'border-transparent text-muted-foreground hover:text-text-secondary',
               ].join(' ')}
             >
               {brand.name}
@@ -99,12 +99,12 @@ export function ColorSponsorStep() {
             >
               <span
                 className={[
-                  'w-8 h-8 rounded-full border border-[#D4DAE3] block transition-transform duration-150 hover:scale-110',
-                  isSelected ? 'ring-2 ring-[#1B3FC4] ring-offset-2' : '',
+                  'w-8 h-8 rounded-full border border-border block transition-transform duration-150 hover:scale-110',
+                  isSelected ? 'ring-2 ring-primary ring-offset-2' : '',
                 ].join(' ')}
                 style={{ backgroundColor: color.hex }}
               />
-              <span className="text-[9px] text-[#8896A7] text-center truncate w-8 leading-tight">
+              <span className="text-[9px] text-muted-foreground text-center truncate w-8 leading-tight">
                 {color.name}
               </span>
             </button>
@@ -116,12 +116,12 @@ export function ColorSponsorStep() {
       {selectedColorName && (
         <div className="flex items-center gap-2 pt-1">
           <span
-            className="w-4 h-4 rounded-full border border-[#D4DAE3] shrink-0"
+            className="w-4 h-4 rounded-full border border-border shrink-0"
             style={{ backgroundColor: selectedColorHex }}
           />
-          <span className="text-[12px] text-[#4A5568]">
+          <span className="text-[12px] text-text-secondary">
             {selectedColorName}{' '}
-            <span className="font-mono text-[11px] text-[#8896A7]">({selectedColorHex})</span>
+            <span className="font-mono text-[11px] text-muted-foreground">({selectedColorHex})</span>
           </span>
         </div>
       )}

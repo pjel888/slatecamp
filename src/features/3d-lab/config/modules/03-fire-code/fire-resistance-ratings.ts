@@ -3,7 +3,7 @@
 import type { ParametricSceneConfig, ParameterDef, GeometryInstruction, AnnotationDef, Preset } from '@/features/3d-lab/types/templates'
 
 function str(v: number | string | boolean): string { return String(v) }
-function num(v: number | string | boolean): number { return typeof v === 'number' ? v : Number(v) }
+function _num(v: number | string | boolean): number { return typeof v === 'number' ? v : Number(v) }
 
 const CONSTRUCTION_TYPES: Record<string, { rating: number; color: string; material: string }> = {
   'Type I':   { rating: 4, color: '#2D9F6F', material: 'RC Frame + RC Walls' },

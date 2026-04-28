@@ -9,13 +9,13 @@ import { Button } from '@/components/ui/button'
 import { getModuleById } from '@/features/3d-lab/config/registry'
 import { importModuleConfig } from '@/features/3d-lab/config/module-paths'
 import { ROUTES } from '@/lib/routes'
-import type { 
-  TemplateType, 
-  ParametricSceneConfig, 
-  ExplodedAssemblyConfig, 
-  FloorPlanConfig, 
-  CutawaySectionConfig, 
-  AnimatedSequenceConfig 
+import type {
+  TemplateType as _TemplateType,
+  ParametricSceneConfig,
+  ExplodedAssemblyConfig,
+  FloorPlanConfig,
+  CutawaySectionConfig,
+  AnimatedSequenceConfig
 } from '@/features/3d-lab/types/templates'
 
 // ─── Loading Spinner ───────────────────────────────────────────────────────
@@ -66,14 +66,14 @@ interface Lab3DWidgetProps {
 
 /**
  * Lab3DWidget: Embeds a 3D Lab module directly into a wiki article.
- * 
+ *
  * Usage in MDX:
  * <Lab3DWidget moduleId="stairway-configurator" caption="Interactive Stair Compliance" />
  */
 export default function Lab3DWidget({ moduleId, height = 420, caption }: Lab3DWidgetProps) {
   const [config, setConfig] = React.useState<unknown>(null)
   const [error, setError] = React.useState<string | null>(null)
-  
+
   const registryEntry = React.useMemo(() => getModuleById(moduleId), [moduleId])
 
   React.useEffect(() => {
@@ -128,7 +128,7 @@ export default function Lab3DWidget({ moduleId, height = 420, caption }: Lab3DWi
       <Card className="overflow-hidden bg-foreground border-foreground/20" style={{ height }}>
         <div className="relative h-full w-full group">
           {renderScene()}
-          
+
           {/* Overlay Actions */}
           <div className="absolute top-3 right-3 flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
             <Button
@@ -141,7 +141,7 @@ export default function Lab3DWidget({ moduleId, height = 420, caption }: Lab3DWi
               Full Lab
             </Button>
           </div>
-          
+
           {/* Module Identity Badge */}
           <div className="absolute bottom-3 left-3 px-2 py-1 bg-foreground/80 border border-foreground/40 rounded-sm pointer-events-none">
             <p className="text-[10px] font-mono text-background/60 uppercase tracking-wider flex items-center gap-1.5">
@@ -151,7 +151,7 @@ export default function Lab3DWidget({ moduleId, height = 420, caption }: Lab3DWi
           </div>
         </div>
       </Card>
-      
+
       {caption && (
         <p className="text-[11px] italic text-muted-foreground text-center px-4">
           {caption}

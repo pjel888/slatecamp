@@ -81,7 +81,7 @@ export const BedSizeComparator = () => {
                   className={`transition-all duration-150 ${
                     isActive
                       ? 'fill-camp-cobalt/15 stroke-camp-cobalt stroke-2'
-                      : 'fill-cobalt-light stroke-[#E0DED8] stroke-1 group-hover:stroke-camp-cobalt group-hover:stroke-2'
+                      : 'fill-cobalt-light stroke-wiki-border stroke-1 group-hover:stroke-camp-cobalt group-hover:stroke-2'
                   }`}
                 />
                 <text

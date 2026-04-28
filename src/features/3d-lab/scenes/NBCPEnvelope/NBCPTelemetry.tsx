@@ -44,7 +44,7 @@ export const NBCPTelemetry = memo(function NBCPTelemetry() {
     tla, pso, ambf, ambf_by_setbacks, ambf_by_pso,
     bhl_effective, bhl_meters, bhl_source,
     flar, maxGFA, effectiveStoreys, effectiveHeight,
-    displayStoreys, displayHeight,
+    displayStoreys, displayHeight: _displayHeight,
     tosl, tosl_pct,
     amvb, setbacks, violations,
   } = computed

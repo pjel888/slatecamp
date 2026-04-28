@@ -29,7 +29,7 @@ export const useNoteEditor = ({ initialOpenNoteId, setStubs }: UseNoteEditorOpti
   // Open note from URL param
   useEffect(() => {
     if (initialOpenNoteId) selectNote(initialOpenNoteId)
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, [initialOpenNoteId])
 
   // Debounced save

@@ -1,6 +1,6 @@
 'use server'
 
-import { createClient, getUser } from '@/lib/supabase/server'
+import { createClient } from '@/lib/supabase/server'
 import type { FlashCard, FlashCategory } from '@/lib/flash-cards'
 import { getCategoryLabel } from '@/lib/flash-cards'
 

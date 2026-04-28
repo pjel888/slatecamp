@@ -189,7 +189,7 @@ export function Step7BOM() {
       </div>
 
       {/* Assumptions Block */}
-      <div className="bg-[#F2F0EB] border border-border rounded-lg p-4 mt-4">
+      <div className="bg-wiki-row-light border border-border rounded-lg p-4 mt-4">
         <p className="font-mono text-[9px] font-medium uppercase tracking-[0.12em] text-text-tertiary mb-2.5">
           Engineering Constants Used
         </p>

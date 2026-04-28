@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, useMemo } from 'react'
+import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import { Command } from 'cmdk'
 import {
@@ -243,7 +243,7 @@ export const Omnibar = ({
                   <h3 className="text-lg font-bold text-foreground leading-tight">
                     {selectedResult.title}
                   </h3>
-                  <div 
+                  <div
                     className="text-[13px] text-muted-foreground leading-relaxed line-clamp-[12] [&_mark]:bg-primary/20 [&_mark]:text-primary [&_mark]:font-medium [&_mark]:rounded-sm"
                     dangerouslySetInnerHTML={{ __html: selectedResult.snippet }}
                   />
@@ -295,7 +295,7 @@ const ResultItem = ({
       <span className="text-sm font-semibold text-foreground truncate">
         {item.title}
       </span>
-      <div 
+      <div
         className="text-[11px] text-muted-foreground truncate [&_mark]:bg-primary/10 [&_mark]:text-primary [&_mark]:font-semibold"
         dangerouslySetInnerHTML={{ __html: item.snippet.replace(/<[^>]*>?/gm, (match) => match === '<mark>' || match === '</mark>' ? match : '') }}
       />

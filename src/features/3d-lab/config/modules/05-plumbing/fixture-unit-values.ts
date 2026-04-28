@@ -2,7 +2,7 @@
 // Fixture Unit Values — NPCP (DFU)
 import type { ParametricSceneConfig, ParameterDef, GeometryInstruction, AnnotationDef, Preset } from '@/features/3d-lab/types/templates'
 
-function num(v: number | string | boolean): number { return typeof v === 'number' ? v : Number(v) }
+function _num(v: number | string | boolean): number { return typeof v === 'number' ? v : Number(v) }
 
 const FIXTURES: Array<{ id: string; label: string; dfu: number; trapSize: number; color: string }> = [
   { id: 'wc', label: 'Water Closet', dfu: 4, trapSize: 76, color: '#3b82f6' },

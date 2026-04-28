@@ -4,7 +4,7 @@ import { useState, useMemo } from 'react'
 import { MagnifyingGlass, CaretDown, CaretUp } from '@phosphor-icons/react/dist/ssr'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
-import type { QuizMode, TaxonomySubject, TaxonomySubtopic } from '@/types/quiz-config'
+import type { QuizMode, TaxonomySubject } from '@/types/quiz-config'
 
 // ─── Mastery helpers ──────────────────────────────────────────────────────────
 

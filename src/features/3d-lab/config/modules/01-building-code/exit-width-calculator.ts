@@ -19,7 +19,7 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   const showFlow = Boolean(params.showFlow)
   // 5.1mm per person capacity per exit unit; min 710mm per exit
   const minWidthPerExit = Math.max(occ * 0.0051 / nExits, 0.71)
-  const totalMinW = minWidthPerExit * nExits
+  const _totalMinW = minWidthPerExit * nExits
   const violated = eW < minWidthPerExit || eW < 0.71
   const roomW = 12.0
   const roomD = 10.0

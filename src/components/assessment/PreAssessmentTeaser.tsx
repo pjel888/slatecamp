@@ -109,7 +109,7 @@ export const PreAssessmentTeaser = () => {
 
   // ── Completion: Account gate ──────────────────────────────
   if (completed) {
-    const score = Math.round((correctCount / SAMPLE_QUESTIONS.length) * 100)
+    const _score = Math.round((correctCount / SAMPLE_QUESTIONS.length) * 100)
     return (
       <div className="flex min-h-screen flex-col items-center justify-center px-6">
         <div className="mx-auto w-full max-w-md text-center">
@@ -142,7 +142,7 @@ export const PreAssessmentTeaser = () => {
   }
 
   // ── Question UI ───────────────────────────────────────────
-  const isCorrect = showResult && selectedOption === question.correctId
+  const _isCorrect = showResult && selectedOption === question.correctId
 
   return (
     <div className="flex min-h-screen flex-col">

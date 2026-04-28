@@ -178,7 +178,7 @@ export default function CutawaySection({ config }: CutawaySectionProps) {
   }, [config.parameters, cutMax])
 
   // Create a stable Zustand store — intentionally keyed on config.id only
-  const useStore = useMemo(() => createModuleStore(defaults), [config.id]) // eslint-disable-line react-hooks/exhaustive-deps
+  const useStore = useMemo(() => createModuleStore(defaults), [config.id])
 
   const cameraPos = config.camera?.position ?? [2, 1.5, 2]
   const cameraFov = config.camera?.fov ?? 40

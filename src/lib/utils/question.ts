@@ -28,7 +28,7 @@ export const normalizeOptions = (
     const obj = options as Record<string, unknown>
     return OPTION_LETTERS
       .filter((key) => key in obj && typeof obj[key] === 'string')
-      .map((key, i) => ({
+      .map((key, _i) => ({
         id: key,
         letter: key.toUpperCase() as 'A' | 'B' | 'C' | 'D',
         text: String(obj[key]),

@@ -117,12 +117,13 @@ export function AssetList({ initialAssets }: AssetListProps) {
               {/* Thumbnail */}
               <div className="aspect-video bg-muted rounded-t-lg flex items-center justify-center">
                 {asset.thumbnail ? (
+                  // eslint-disable-next-line @next/next/no-img-element -- Admin asset thumbnails can point at arbitrary storage URLs outside next/image allowlist.
                   <img src={asset.thumbnail} alt={asset.name} className="w-full h-full object-cover rounded-t-lg" />
                 ) : (
                   <SCIcon icon={Cube} size="2xl" className="text-muted-foreground" />
                 )}
               </div>
-              
+
               {/* Info */}
               <div className="p-4">
                 <div className="flex items-start justify-between mb-2">

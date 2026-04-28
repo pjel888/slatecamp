@@ -14,7 +14,7 @@ const parameters: ParameterDef[] = [
 
 function geometry(params: Record<string, number | boolean | string>): GeometryInstruction[] {
   const iType = str(params.institutionType)
-  const capacity = num(params.capacity)
+  const _capacity = num(params.capacity)
   const floors = num(params.numFloors)
   const showProg = Boolean(params.showProgram)
   const stH = 0.7

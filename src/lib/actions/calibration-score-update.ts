@@ -59,9 +59,6 @@ export const updateCalibrationScore = async (userId?: string): Promise<number | 
   let confidentTotal = 0
   let guessingCorrect = 0
   let guessingTotal = 0
-  let partlyCorrect = 0
-  let partlyTotal = 0
-
   for (const row of tagged) {
     const prob = row.confidence
       ? (CONFIDENCE_PROBABILITY[row.confidence] ?? DEFAULT_CONFIDENCE_PROBABILITY)
@@ -76,9 +73,6 @@ export const updateCalibrationScore = async (userId?: string): Promise<number | 
     } else if (row.confidence === 'unsure') {
       guessingTotal++
       if (row.is_correct) guessingCorrect++
-    } else {
-      partlyTotal++
-      if (row.is_correct) partlyCorrect++
     }
   }
 

@@ -10,8 +10,8 @@ import { ColorSponsorStep } from './steps/ColorSponsorStep'
 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
-    <div className="flex flex-col gap-2 px-3 py-3 border-b border-[#D4DAE3] last:border-b-0">
-      <span className="text-[11px] font-semibold text-[#8896A7] uppercase tracking-wider">
+    <div className="flex flex-col gap-2 px-3 py-3 border-b border-border last:border-b-0">
+      <span className="text-[11px] font-semibold text-muted-foreground uppercase tracking-wider">
         {title}
       </span>
       {children}
@@ -48,11 +48,11 @@ export function ConfigPanel() {
         </Section>
       </div>
 
-      <div className="px-3 py-2 border-t border-[#D4DAE3] shrink-0">
+      <div className="px-3 py-2 border-t border-border shrink-0">
         <button
           type="button"
           onClick={reset}
-          className="text-[12px] text-[#8896A7] hover:text-[#4A5568] transition-colors duration-150"
+          className="text-[12px] text-muted-foreground hover:text-text-secondary transition-colors duration-150"
         >
           Reset All
         </button>

@@ -66,7 +66,7 @@ const ToggleGroup = ({
 }: {
   label: string
   value: string
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
   onChange: (v: any) => void
   options: { value: string; label: string }[]
 }) => (
@@ -527,7 +527,7 @@ interface DraftQuestionCardProps {
 
 const DraftQuestionCard = ({
   draft,
-  index,
+  index: _index,
   isExpanded,
   onExpand,
   onRemove,

@@ -38,7 +38,7 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   const Vmin = 0.11 * Ca * I * W
   const V = Math.min(Vcalc, Vmax)
   const Vfinal = Math.max(V, Vmin)
-  const scale = 0.2
+  const _scale = 0.2
   const floors = 5
   const stH = 0.6
   const bW = 1.5

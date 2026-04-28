@@ -4,7 +4,7 @@ import { assertCeoRole } from '@/lib/queries/ceo/auth'
 import { getFinancialSummary } from '@/lib/queries/ceo/financial-queries'
 import { getTeamMembers } from '@/lib/queries/ceo/team-queries'
 import { createClient } from '@/lib/supabase/server'
-import { formatPeso, formatPercent } from '@/types/ceo'
+import { formatPeso } from '@/types/ceo'
 
 export const generateInvestorExport = async (): Promise<{
   success: boolean

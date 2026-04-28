@@ -106,7 +106,7 @@ export const DesignProblemSession = ({ problem, session }: DesignProblemSessionP
   const [showAssessment, setShowAssessment] = useState(false)
   const [completing, setCompleting] = useState(false)
   const [completed, setCompleted] = useState(false)
-  const [checklistCompletion, setChecklistCompletion] = useState<Record<string, boolean>>(
+  const [checklistCompletion, _setChecklistCompletion] = useState<Record<string, boolean>>(
     (session.checklist_completion ?? {}) as Record<string, boolean>
   )
 

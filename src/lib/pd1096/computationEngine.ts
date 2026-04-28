@@ -47,7 +47,7 @@ export function computeDevControls(input: DevControlsInput): DevControlsResult {
 
   if (lot.polygonVertices && lot.polygonVertices.length >= 3) {
     // Polygon lot: inset each edge by its boundary-tagged setback amount
-    const lotPoly = buildRectangularPolygon(lot.width, lot.depth) // fallback structure
+    const _lotPoly = buildRectangularPolygon(lot.width, lot.depth) // fallback structure
     // Build a proper polygon with edges for inset computation
     const polyWithEdges = (() => {
       const verts = lot.polygonVertices

@@ -31,7 +31,7 @@ export function CoreTypeStep() {
       <select
         value={coreType}
         onChange={(e) => setCoreType(e.target.value as CoreType)}
-        className="w-full border border-[#D4DAE3] rounded-sm px-2 py-1.5 text-[13px] text-[#1A2332] bg-white focus:outline-none focus:border-[#1B3FC4] transition-colors duration-150"
+        className="w-full border border-border rounded-sm px-2 py-1.5 text-[13px] text-foreground bg-white focus:outline-none focus:border-primary transition-colors duration-150"
       >
         {CORE_OPTIONS.map((opt) => (
           <option key={opt.value} value={opt.value}>
@@ -43,11 +43,11 @@ export function CoreTypeStep() {
       {/* Thickness selector */}
       {thicknessOptions.length > 1 && (
         <div className="flex flex-col gap-1">
-          <label className="text-[11px] text-[#4A5568]">Thickness</label>
+          <label className="text-[11px] text-text-secondary">Thickness</label>
           <select
             value={coreThicknessMM}
             onChange={(e) => setCoreThickness(Number(e.target.value))}
-            className="w-full border border-[#D4DAE3] rounded-sm px-2 py-1.5 text-[13px] text-[#1A2332] bg-white focus:outline-none focus:border-[#1B3FC4] transition-colors duration-150"
+            className="w-full border border-border rounded-sm px-2 py-1.5 text-[13px] text-foreground bg-white focus:outline-none focus:border-primary transition-colors duration-150"
           >
             {thicknessOptions.map((opt) => (
               <option key={opt.mm} value={opt.mm}>
@@ -61,7 +61,7 @@ export function CoreTypeStep() {
       {/* Moisture resistant toggle (drywall / cement board) */}
       {showMoistureToggle && (
         <label className="flex items-center justify-between gap-2 py-1.5 cursor-pointer">
-          <span className="text-[12px] text-[#1A2332]">Moisture resistant</span>
+          <span className="text-[12px] text-foreground">Moisture resistant</span>
           <Switch
             size="sm"
             checked={coreMoistureResistant}

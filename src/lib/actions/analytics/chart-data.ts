@@ -2,9 +2,9 @@
 
 import { unstable_cache } from 'next/cache'
 import { createClient, getUser, createServiceClient } from '@/lib/supabase/server'
-import { PACING_TARGET_MS, PASSING_ACCURACY, REVIEW_THRESHOLD, MASTERY_THRESHOLD, getSubjectColor } from '@/lib/constants/analytics'
-import { fetchTaxonomyNodeMap, type TaxNode, wrapResult, wrapError, type AnalyticsResult } from '@/lib/actions/analytics/shared-helpers'
-import { MODE_COLORS, getModeColor, getForgettingCurveColor } from '@/lib/constants/chart-colors'
+import { REVIEW_THRESHOLD, MASTERY_THRESHOLD } from '@/lib/constants/analytics'
+import { wrapResult, wrapError, type AnalyticsResult } from '@/lib/actions/analytics/shared-helpers'
+import { getModeColor, getForgettingCurveColor } from '@/lib/constants/chart-colors'
 
 // ── Types ────────────────────────────────────────────────────────────────────
 
@@ -585,7 +585,7 @@ export const getExamCountdownData = async (): Promise<AnalyticsResult<ExamCountd
 
     // Node counts
     const masteryData = (masteryRes.data || []) as any[]
-    const masteryMap = new Map(masteryData.map(m => [m.topic_id, m.current_mastery_weight]))
+    const _masteryMap = new Map(masteryData.map(m => [m.topic_id, m.current_mastery_weight]))
 
     let totalTaxonomyNodes = 0
     if (disciplineRes.data?.current_discipline_id) {

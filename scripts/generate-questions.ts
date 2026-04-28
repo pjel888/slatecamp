@@ -113,10 +113,10 @@ function generateQuestionsFromContent(
   articleTitle: string,
   rawContent: string,
   folderName: string,
-  fileName: string
+  _fileName: string
 ): GeneratedQuestion[] {
   const questions: GeneratedQuestion[] = []
-  
+
   // Extract key data points from content
   const extractedData = extractKeyData(rawContent)
   const tables = extractTables(rawContent)
@@ -124,7 +124,7 @@ function generateQuestionsFromContent(
   const trapAlerts = extractTrapAlerts(rawContent)
   const legalRefs = extractLegalReferences(rawContent)
   const dimensions = extractDimensions(rawContent)
-  
+
   // Generate 10 questions covering different aspects
   const questionTypes = [
     'key_fact',
@@ -138,14 +138,14 @@ function generateQuestionsFromContent(
     'application',
     'synthesis',
   ]
-  
+
   for (let i = 0; i < 10; i++) {
     const questionType = questionTypes[i]
     const difficulty = DIFFICULTY_LEVELS[Math.floor(Math.random() * DIFFICULTY_LEVELS.length)]
     const bloomLevel = BLOOM_LEVELS[Math.floor(Math.random() * 3)] // Focus on lower-order skills
-    
+
     let question: GeneratedQuestion | null = null
-    
+
     switch (questionType) {
       case 'key_fact':
         question = generateKeyFactQuestion(articleTitle, extractedData, difficulty, bloomLevel, folderName)
@@ -178,12 +178,12 @@ function generateQuestionsFromContent(
         question = generateSynthesisQuestion(articleTitle, rawContent, mnemonics, difficulty, bloomLevel, folderName)
         break
     }
-    
+
     if (question) {
       questions.push(question)
     }
   }
-  
+
   return questions
 }
 
@@ -192,23 +192,23 @@ function generateQuestionsFromContent(
  */
 function extractKeyData(content: string): string[] {
   const facts: string[] = []
-  
+
   // Extract bold terms
   const boldTerms = content.match(/\*\*([^*]+)\*\*/g) || []
   facts.push(...boldTerms.map(t => t.replace(/\*\*/g, '')))
-  
+
   // Extract numbered items
   const numberedItems = content.match(/^\d+\.\s+(.+)/gm) || []
   facts.push(...numberedItems.map(item => item.replace(/^\d+\.\s+/, '')))
-  
+
   // Extract bullet points
   const bullets = content.match(/^[-*]\s+(.+)/gm) || []
   facts.push(...bullets.map(b => b.replace(/^[-*]\s+/, '')))
-  
+
   // Extract specific values with units
   const valuesWithUnits = content.match(/\d+\.?\d*\s*(mm|cm|m|°|%|hours?|hrs?|minutes?|min|feet|ft|×|x)/gi) || []
   facts.push(...valuesWithUnits)
-  
+
   return [...new Set(facts)].slice(0, 50) // Deduplicate and limit
 }
 
@@ -219,19 +219,19 @@ function extractTables(content: string): { headers: string[], rows: string[][] }
   const tables: { headers: string[], rows: string[][] }[] = []
   const tableRegex = /\|(.+)\|[\r\n]+\|[-:\s|]+\|[\r\n]+((?:\|.+\|[\r\n]*)+)/g
   let match
-  
+
   while ((match = tableRegex.exec(content)) !== null) {
     const headerLine = match[1]
     const rowLines = match[2].trim().split('\n')
-    
+
     const headers = headerLine.split('|').map(h => h.trim()).filter(h => h)
-    const rows = rowLines.map(row => 
+    const rows = rowLines.map(row =>
       row.split('|').map(cell => cell.trim()).filter(cell => cell)
     )
-    
+
     tables.push({ headers, rows })
   }
-  
+
   return tables
 }
 
@@ -240,18 +240,18 @@ function extractTables(content: string): { headers: string[], rows: string[][] }
  */
 function extractMnemonics(content: string): { mnemonic: string, meaning: string }[] {
   const mnemonics: { mnemonic: string, meaning: string }[] = []
-  
+
   // Find mnemonic sections
   const mnemonicRegex = /\*\*"([^"]+)"\s*[–—]\s*\*\*(.+?)(?=\n\n|\n---|$)/g
   let match
-  
+
   while ((match = mnemonicRegex.exec(content)) !== null) {
     mnemonics.push({
       mnemonic: match[1],
       meaning: match[2].trim()
     })
   }
-  
+
   // Also find quoted mnemonics
   const quoteRegex = /"([A-Z]{2,})"[^"]*"([^"]+)"/g
   while ((match = quoteRegex.exec(content)) !== null) {
@@ -260,7 +260,7 @@ function extractMnemonics(content: string): { mnemonic: string, meaning: string 
       meaning: match[2]
     })
   }
-  
+
   return mnemonics
 }
 
@@ -269,22 +269,22 @@ function extractMnemonics(content: string): { mnemonic: string, meaning: string 
  */
 function extractTrapAlerts(content: string): { statement: string, truth: string }[] {
   const traps: { statement: string, truth: string }[] = []
-  
+
   const trapRegex = /\*\*TRAP[^:]*:?\s*\*\*(.+?)(?=\n\n>|>|\n---|\n\*\*|$)/g
   let match
-  
+
   while ((match = trapRegex.exec(content)) !== null) {
     const trapText = match[1].trim()
-    
+
     // Try to find the TRUTH section after the trap
     const truthMatch = content.substring(match.index + match[0].length).match(/TRUTH[:\s]+([\s\S]+?)(?=\n\n|\n---)/)
-    
+
     traps.push({
       statement: trapText.replace(/^TRAP[^:]*:?\s*/i, ''),
       truth: truthMatch ? truthMatch[1].trim() : 'Review the article content for the correct information.'
     })
   }
-  
+
   return traps
 }
 
@@ -293,7 +293,7 @@ function extractTrapAlerts(content: string): { statement: string, truth: string 
  */
 function extractLegalReferences(content: string): { law: string, section?: string, context: string }[] {
   const refs: { law: string, section?: string, context: string }[] = []
-  
+
   // BP references
   const bpRegex = /(BP\s*344|BP\s*220|BP\s*\d+)([^,\n]*)?/gi
   let match
@@ -304,7 +304,7 @@ function extractLegalReferences(content: string): { law: string, section?: strin
       context: extractContextAround(content, match.index, 100)
     })
   }
-  
+
   // PD references
   const pdRegex = /(PD\s*1096|PD\s*957|PD\s*\d+)([^,\n]*)?/gi
   while ((match = pdRegex.exec(content)) !== null) {
@@ -314,7 +314,7 @@ function extractLegalReferences(content: string): { law: string, section?: strin
       context: extractContextAround(content, match.index, 100)
     })
   }
-  
+
   // RA references
   const raRegex = /(RA\s*\d+)([^,\n]*)?/gi
   while ((match = raRegex.exec(content)) !== null) {
@@ -324,7 +324,7 @@ function extractLegalReferences(content: string): { law: string, section?: strin
       context: extractContextAround(content, match.index, 100)
     })
   }
-  
+
   return [...new Map(refs.map(r => [r.law, r])).values()] // Deduplicate by law
 }
 
@@ -333,7 +333,7 @@ function extractLegalReferences(content: string): { law: string, section?: strin
  */
 function extractDimensions(content: string): { value: string, unit: string, context: string }[] {
   const dims: { value: string, unit: string, context: string }[] = []
-  
+
   // Metric measurements
   const metricRegex = /(\d+\.?\d*)\s*(mm|cm|m|km|ml|L)/gi
   let match
@@ -344,7 +344,7 @@ function extractDimensions(content: string): { value: string, unit: string, cont
       context: extractContextAround(content, match.index, 80)
     })
   }
-  
+
   // Imperial measurements
   const imperialRegex = /(\d+\.?\d*)\s*(ft|feet|"|in|inches?|yards?)/gi
   while ((match = imperialRegex.exec(content)) !== null) {
@@ -354,7 +354,7 @@ function extractDimensions(content: string): { value: string, unit: string, cont
       context: extractContextAround(content, match.index, 80)
     })
   }
-  
+
   // Percentages
   const percentRegex = /(\d+\.?\d*)\s*%/g
   while ((match = percentRegex.exec(content)) !== null) {
@@ -364,7 +364,7 @@ function extractDimensions(content: string): { value: string, unit: string, cont
       context: extractContextAround(content, match.index, 80)
     })
   }
-  
+
   return [...new Map(dims.map(d => [`${d.value}${d.unit}`, d])).values()].slice(0, 30)
 }
 
@@ -387,30 +387,30 @@ function generateKeyFactQuestion(
   folderName: string
 ): GeneratedQuestion | null {
   if (facts.length < 4) return null
-  
+
   const correctFact = facts[Math.floor(Math.random() * Math.min(facts.length, 10))]
-  const otherFacts = facts.filter(f => f !== correctFact).slice(0, 9)
-  
+  const _otherFacts = facts.filter(f => f !== correctFact).slice(0, 9)
+
   // Create options
   const options: QuestionOption[] = [
     { id: 'A', text: correctFact.substring(0, 200) }
   ]
-  
+
   // Add incorrect options
   const distractors = shuffleArray([
     `Incorrect: This contradicts ${folderName.split(' ')[0]} principles`,
     `Incorrect: This applies to a different architectural context`,
     `Incorrect: This is a common misconception in ${folderName.split(' ')[0]}`,
   ]).slice(0, 3)
-  
+
   distractors.forEach((d, i) => {
     options.push({ id: String.fromCharCode(66 + i), text: d })
   })
-  
+
   // Shuffle options
   const shuffledOptions = shuffleArray(options)
   const correctId = shuffledOptions.find(o => o.text === correctFact.substring(0, 200))?.id || 'A'
-  
+
   return {
     topic_id: null,
     topic_name: FOLDER_TO_SUBJECT_LABEL[folderName] || folderName,
@@ -441,13 +441,13 @@ function generateDefinitionQuestion(
 ): GeneratedQuestion {
   // Extract definition-like patterns
   const definedTerms = content.match(/\*\*([^*]+)\*\*\s*(?:is|are|refers to|means|=\s*)([^.\n]+)/gi) || []
-  
-  const correctDef = definedTerms.length > 0 
+
+  const correctDef = definedTerms.length > 0
     ? definedTerms[0].replace(/\*\*/g, '')
     : `The concept of ${title} is fundamental to ${folderName}`
-  
+
   const term = title.split(' ')[0]
-  
+
   return {
     topic_id: null,
     topic_name: FOLDER_TO_SUBJECT_LABEL[folderName] || folderName,
@@ -503,15 +503,15 @@ function generateTableQuestion(
       explanation: `This question tests interpretation of tabular data from ${title}.`
     }
   }
-  
+
   const table = tables[0]
   if (table.rows.length === 0) return null
-  
+
   // Generate question from first table row
   const row = table.rows[0]
   const correctValue = row[row.length - 1]
   const category = row[0]
-  
+
   return {
     topic_id: null,
     topic_name: FOLDER_TO_SUBJECT_LABEL[folderName] || folderName,
@@ -564,9 +564,9 @@ function generateMnemonicQuestion(
       explanation: `This question tests understanding of mnemonic devices from ${title}.`
     }
   }
-  
+
   const mn = mnemonics[0]
-  
+
   return {
     topic_id: null,
     topic_name: FOLDER_TO_SUBJECT_LABEL[folderName] || folderName,
@@ -581,7 +581,7 @@ function generateMnemonicQuestion(
         return { ...o, id: 'A' }
       }
       return { ...o, id: String.fromCharCode(66 + arr.findIndex(a => a === o) - 1) }
-    }).map((o, i, arr) => {
+    }).map((o, i, _arr) => {
       if (o.id === 'A') return o
       return { ...o, id: String.fromCharCode(66 + i) }
     }),
@@ -630,9 +630,9 @@ function generateTrapAlertQuestion(
       explanation: `This question tests recognition of common traps from ${title}.`
     }
   }
-  
+
   const trap = traps[0]
-  
+
   return {
     topic_id: null,
     topic_name: FOLDER_TO_SUBJECT_LABEL[folderName] || folderName,
@@ -689,9 +689,9 @@ function generateLegalReferenceQuestion(
       explanation: `This question tests awareness of the Philippine legal framework for ${folderName}.`
     }
   }
-  
+
   const ref = legalRefs[0]
-  
+
   return {
     topic_id: null,
     topic_name: FOLDER_TO_SUBJECT_LABEL[folderName] || folderName,
@@ -748,9 +748,9 @@ function generateComputationQuestion(
       explanation: `This question tests readiness for computation-based questions from ${title}.`
     }
   }
-  
+
   const dim = dimensions[0]
-  
+
   return {
     topic_id: null,
     topic_name: FOLDER_TO_SUBJECT_LABEL[folderName] || folderName,
@@ -839,10 +839,10 @@ function generateSynthesisQuestion(
   bloomLevel: string,
   folderName: string
 ): GeneratedQuestion {
-  const mnemonicHint = mnemonics.length > 0 
+  const mnemonicHint = mnemonics.length > 0
     ? ` Remember: "${mnemonics[0].mnemonic}"`
     : ''
-  
+
   return {
     topic_id: null,
     topic_name: FOLDER_TO_SUBJECT_LABEL[folderName] || folderName,
@@ -986,7 +986,7 @@ async function main() {
         // Check if questions file already exists
         const jsonFileName = fileName.replace(/\.md$/, '') + '_questions.json'
         const jsonFilePath = path.join(folderPath, jsonFileName)
-        
+
         if (fs.existsSync(jsonFilePath)) {
           result.status = 'skipped'
           console.log(`   ↷ ${fileName} (questions already exist, skipping)`)

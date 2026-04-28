@@ -24,7 +24,7 @@ const NAVIGATION_DEFAULTS: Pick<
   guidedSequenceComplete: false,
 }
 
-export const useLabNavigationStore = create<LabNavigationState>()((set, get) => ({
+export const useLabNavigationStore = create<LabNavigationState>()((set, _get) => ({
   ...NAVIGATION_DEFAULTS,
 
   advanceSequence: () =>

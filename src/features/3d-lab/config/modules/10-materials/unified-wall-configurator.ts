@@ -16,7 +16,7 @@ import { wallPresets } from './wall-presets'
 const mm = (v: number | string | boolean): number =>
   (typeof v === 'number' ? v : Number(v)) / 1000
 
-const num = (v: number | string | boolean): number =>
+const _num = (v: number | string | boolean): number =>
   typeof v === 'number' ? v : Number(v)
 
 const str = (v: number | string | boolean): string =>
@@ -393,7 +393,7 @@ const annotations: AnnotationDef[] = [
     label: 'Total Build-Out',
     description:
       'Total wall build-out affects room net dimensions. Account for plaster and finish layers when calculating net floor area per NBCP minimum room size requirements.',
-    position: (p) => [0, -0.3, 0],
+    position: (_p) => [0, -0.3, 0],
   },
 ]
 

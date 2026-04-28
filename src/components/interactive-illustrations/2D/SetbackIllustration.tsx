@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useRef, useEffect } from 'react'
+import { useState } from 'react'
 
 const CONFIGS = [
   { label: 'Below 6m', rrow: 'below 6m', front: 1.5 },
@@ -460,7 +460,7 @@ export default function PHBuildingSetbacks() {
   const [curIdx, setCurIdx] = useState(1)
   const config = CONFIGS[curIdx]
   const fp = config.front * SC
-  const bh = LH - fp - REAR * SC
+  const _bh = LH - fp - REAR * SC
 
   const styles: Record<string, any> = {
     wrapper: {

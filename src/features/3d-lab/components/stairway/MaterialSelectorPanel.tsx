@@ -1,7 +1,6 @@
 'use client'
 
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
-import { Badge } from '@/components/ui/badge'
 import { cn } from '@/lib/utils'
 import { STAIR_MATERIALS, getMaterialById } from '../../config/modules/08-vertical/stairway-materials'
 import type { UseBoundStore, StoreApi } from 'zustand'

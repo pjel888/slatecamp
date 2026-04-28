@@ -45,7 +45,7 @@ export const TeamTable = ({ members }: TeamTableProps) => {
         (m) => m.endDate !== null && new Date(m.endDate) <= now,
       ),
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, [members, activeFilter])
 
   const buildColumns = (isAlumni: boolean): Column<TeamMember>[] => [
@@ -120,7 +120,7 @@ export const TeamTable = ({ members }: TeamTableProps) => {
     {
       key: 'status',
       header: 'Status',
-      render: (member) =>
+      render: (_member) =>
         isAlumni ? (
           <span className="inline-flex items-center rounded-sm bg-muted px-2 py-0.5 text-[11px] text-muted-foreground">
             Alumni

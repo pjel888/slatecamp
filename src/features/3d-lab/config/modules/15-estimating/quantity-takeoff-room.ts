@@ -56,7 +56,7 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
 }
 
 const annotations: AnnotationDef[] = [
-  { id: 'ann-floor', label: 'Floor Area', description: 'Floor area = Width × Depth (finished floor area, not including wall thickness)', position: (p) => [0, -(0.3), 0] },
+  { id: 'ann-floor', label: 'Floor Area', description: 'Floor area = Width × Depth (finished floor area, not including wall thickness)', position: (_p) => [0, -(0.3), 0] },
   { id: 'ann-wall', label: 'Wall Area', description: 'Gross wall area = Perimeter × Height; deduct openings for net area in takeoff', position: (p) => [-(mm(p.roomWidth) / 2) - 0.8, mm(p.wallHeight) / 2, 0] },
 ]
 

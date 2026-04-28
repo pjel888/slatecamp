@@ -4,7 +4,7 @@ import type { CampTrail, TrailEnrollment } from '@/types/app'
 import { RecommendedTrailCard } from '@/components/trails/RecommendedTrailCard'
 import { ActiveTrailBanner } from '@/components/trails/ActiveTrailBanner'
 import { TrailLibrary } from '@/components/trails/TrailLibrary'
-import { MapTrifold, Compass } from '@phosphor-icons/react/dist/ssr'
+import { Compass } from '@phosphor-icons/react/dist/ssr'
 
 const CampTrailsPage = async () => {
   const [trails, enrollments, recommendation] = await Promise.all([

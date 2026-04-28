@@ -44,7 +44,7 @@ export const ElaborativeInterrogation = ({
   revealText,
   options: rawOptions,
   articleId,
-  type,
+  type: _type,
   placeholder,
   existingResponse,
 }: ElaborativeInterrogationProps) => {

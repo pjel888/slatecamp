@@ -2,7 +2,7 @@
 // Fire-Rated Barrier — RA 9514 IRR Rule 10 §10.2
 import type { ParametricSceneConfig, ParameterDef, GeometryInstruction, ViolationRule, AnnotationDef, Preset } from '@/features/3d-lab/types/templates'
 
-function num(v: number | string | boolean): number { return typeof v === 'number' ? v : Number(v) }
+function _num(v: number | string | boolean): number { return typeof v === 'number' ? v : Number(v) }
 function str(v: number | string | boolean): string { return String(v) }
 
 // Required layers by fire rating (hours)

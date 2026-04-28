@@ -73,12 +73,12 @@ describe('buildPolygonFromSegments', () => {
   })
 
   test('rectangular lot: N→E→S→W = 20×15 = 300 sqm', () => {
-    const segments: LotSegment[] = [
+    const _segments: LotSegment[] = [
       makeSegment('N', 90, 'E', 20, 'front'),   // East 20m
       makeSegment('S', 0, 'E', 15, 'right_side'), // South 15m (S 0° E = due south... wait)
     ]
     // Actually for a clean rectangle: East, South, West, North
-    const rect: LotSegment[] = [
+    const _rect: LotSegment[] = [
       makeSegment('N', 90, 'E', 20, 'front'),     // due East 20m
       makeSegment('S', 0, 'W', 15, 'right_side'),  // due South 15m → S 0° W...
     ]

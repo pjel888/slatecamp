@@ -1,0 +1,33 @@
+Changes: 181 files, 275 symbols
+Affected processes: 33
+Risk level: critical
+
+Changed symbols:
+  undefined inspect → scripts/db-inspect.ts
+  undefined i → scripts/generate-questions.ts
+  undefined question → scripts/generate-questions.ts
+  undefined headers → scripts/generate-questions.ts
+  undefined rows → scripts/generate-questions.ts
+  undefined trapRegex → scripts/generate-questions.ts
+  undefined correctFact → scripts/generate-questions.ts
+  undefined correctDef → scripts/generate-questions.ts
+  undefined term → scripts/generate-questions.ts
+  undefined table → scripts/generate-questions.ts
+  undefined mn → scripts/generate-questions.ts
+  undefined trap → scripts/generate-questions.ts
+  undefined ref → scripts/generate-questions.ts
+  undefined dim → scripts/generate-questions.ts
+  undefined mnemonicHint → scripts/generate-questions.ts
+  ... and 260 more
+
+Affected execution flows:
+  • GET → DeepClone (8 steps) — changed: GET
+  • GET → Set (8 steps) — changed: GET
+  • GET → CreateDemoUuid (8 steps) — changed: GET
+  • DisciplineProvider → DeepClone (8 steps) — changed: DisciplineProvider
+  • DisciplineProvider → Set (8 steps) — changed: DisciplineProvider
+  • DisciplineProvider → CreateDemoUuid (8 steps) — changed: DisciplineProvider
+  • WikiRightSidebar → Dispatch (5 steps) — changed: WikiRightSidebar
+  • GET → MockQueryBuilder (4 steps) — changed: GET
+  • GET → MockRealtimeChannel (4 steps) — changed: GET
+  • GET → MockStorageBucket (4 steps) — changed: GET

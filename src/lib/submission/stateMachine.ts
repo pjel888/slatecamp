@@ -30,7 +30,7 @@ const ALLOWED_TRANSITIONS: Record<SubmissionFSMState, SubmissionFSMState[]> = {
   rejected: [],     // Terminal state
 }
 
-function isValidTransition(from: SubmissionFSMState, to: SubmissionFSMState): boolean {
+function _isValidTransition(from: SubmissionFSMState, to: SubmissionFSMState): boolean {
   return ALLOWED_TRANSITIONS[from]?.includes(to) ?? false
 }
 

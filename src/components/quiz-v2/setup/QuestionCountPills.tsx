@@ -4,7 +4,7 @@ import { cn } from '@/lib/utils'
 
 const COUNT_OPTIONS = [10, 20, 30, 50, 100] as const
 
-type CountOption = (typeof COUNT_OPTIONS)[number]
+type _CountOption = (typeof COUNT_OPTIONS)[number]
 
 interface QuestionCountPillsProps {
   selected: number

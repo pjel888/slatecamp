@@ -13,7 +13,7 @@ export function GeometryStep() {
     <div className="flex flex-col gap-3">
       <div className="grid grid-cols-2 gap-2">
         <div className="flex flex-col gap-1">
-          <label className="text-[11px] text-[#4A5568] leading-none">Length (m)</label>
+          <label className="text-[11px] text-text-secondary leading-none">Length (m)</label>
           <input
             type="number"
             step={0.1}
@@ -21,11 +21,11 @@ export function GeometryStep() {
             max={20}
             value={lengthM}
             onChange={(e) => setGeometry(parseFloat(e.target.value) || 0.5, heightM)}
-            className="border border-[#D4DAE3] rounded-sm px-2 py-1.5 text-[13px] font-mono w-full focus:outline-none focus:border-[#1B3FC4] transition-colors duration-150"
+            className="border border-border rounded-sm px-2 py-1.5 text-[13px] font-mono w-full focus:outline-none focus:border-primary transition-colors duration-150"
           />
         </div>
         <div className="flex flex-col gap-1">
-          <label className="text-[11px] text-[#4A5568] leading-none">Height (m)</label>
+          <label className="text-[11px] text-text-secondary leading-none">Height (m)</label>
           <input
             type="number"
             step={0.1}
@@ -33,11 +33,11 @@ export function GeometryStep() {
             max={20}
             value={heightM}
             onChange={(e) => setGeometry(lengthM, parseFloat(e.target.value) || 0.5)}
-            className="border border-[#D4DAE3] rounded-sm px-2 py-1.5 text-[13px] font-mono w-full focus:outline-none focus:border-[#1B3FC4] transition-colors duration-150"
+            className="border border-border rounded-sm px-2 py-1.5 text-[13px] font-mono w-full focus:outline-none focus:border-primary transition-colors duration-150"
           />
         </div>
       </div>
-      <p className="text-[11px] text-[#8896A7]">
+      <p className="text-[11px] text-muted-foreground">
         Gross area: <span className="font-mono">{gross}</span> sqm
       </p>
     </div>

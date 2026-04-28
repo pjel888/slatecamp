@@ -1,7 +1,6 @@
 'use server'
 
 import { createClient } from '@/lib/supabase/server'
-import type { SupabaseClient } from '@supabase/supabase-js'
 
 // ── Types ────────────────────────────────────────────────────────────────────
 
@@ -125,9 +124,10 @@ export const generateDailyDose = async (
     if (diff > 0) daysUntilExam = Math.ceil(diff / (24 * 60 * 60 * 1000))
   }
 
-  // Compute average session minutes from recent completions
+  // Compute average session minutes from recent completions. This is retained as
+  // an explicit ignored signal until dose sizing starts consuming it.
   const recentSessions = avgSessionResult.data ?? []
-  let avgSessionMinutes = 30
+  let _avgSessionMinutes = 30
   if (recentSessions.length > 0) {
     const durations = recentSessions
       .filter((s: { started_at: string; completed_at: string | null }) => s.completed_at)
@@ -138,7 +138,7 @@ export const generateDailyDose = async (
       })
       .filter((d: number) => d > 0 && d < 180) // filter outliers
     if (durations.length > 0) {
-      avgSessionMinutes = Math.round(
+      _avgSessionMinutes = Math.round(
         durations.reduce((a: number, b: number) => a + b, 0) / durations.length,
       )
     }

@@ -90,7 +90,7 @@ export const ModuleViewer = ({ modelId, basePath }: ModuleViewerProps) => {
       cancelled = true
       resetSession()
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, [modelId])
 
   const handleBack = useCallback(() => router.push(basePath), [router, basePath])
@@ -120,7 +120,7 @@ export const ModuleViewer = ({ modelId, basePath }: ModuleViewerProps) => {
   const description = config?.description ?? entry?.description ?? ''
   const subject = config?.subject ?? entry?.subject ?? ''
 
-  const hotspotCount = config?.hotspots?.length ?? 0
+  const _hotspotCount = config?.hotspots?.length ?? 0
   const totalALEQuestions = entry?.leaQuestionCount ?? 0
 
   // Construct a consistent ModuleConfig object for the context card
@@ -168,7 +168,7 @@ export const ModuleViewer = ({ modelId, basePath }: ModuleViewerProps) => {
 
   if (loading) {
     return (
-      <div className="flex h-full w-full items-center justify-center bg-[#F8F7F5]">
+      <div className="flex h-full w-full items-center justify-center bg-surface-light">
         <SCIcon icon={CircleNotch} size="lg" className="animate-spin text-muted-foreground" />
         <span className="ml-2 text-[11px] text-muted-foreground uppercase tracking-widest font-black">
           Loading Module...
@@ -179,7 +179,7 @@ export const ModuleViewer = ({ modelId, basePath }: ModuleViewerProps) => {
 
   if (error) {
     return (
-      <div className="flex h-full w-full flex-col items-center justify-center bg-[#F8F7F5] gap-4">
+      <div className="flex h-full w-full flex-col items-center justify-center bg-surface-light gap-4">
         <p className="text-sm text-red-500 font-medium">Failed to load module: {modelId}</p>
         <button onClick={handleBack} className="text-xs text-primary hover:underline">
           Return to Lab Browser

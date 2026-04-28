@@ -1,5 +1,5 @@
 import { unstable_cache } from 'next/cache'
-import { createClient, getUser, createServiceClient } from '@/lib/supabase/server'
+import { getUser, createServiceClient } from '@/lib/supabase/server'
 import { getWeekBoundary } from './dashboard-helpers'
 import { transformSyllabusCoverage } from './mastery-actions'
 import { getCachedTaxonomyTreeByDiscipline, getCachedWikiArticles } from './cached-queries'
@@ -9,7 +9,6 @@ import {
   getUserMasteryTag,
   getUserStatsTag,
 } from './cache-tags'
-import type { SupabaseClient } from '@supabase/supabase-js'
 import type {
   HeroMicroStat,
   WeekStat,

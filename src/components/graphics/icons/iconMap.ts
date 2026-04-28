@@ -6,7 +6,7 @@ import {
   Exam, Books, Ruler, Buildings, TreeStructure, Compass,
   Certificate, Star, TrendUp, TrendDown, Eye, EyeSlash,
   SpeakerHigh, SpeakerSlash, Sun, Moon, Funnel,
-  Play, Pause, Stop, ArrowClockwise, Checks,
+  Play, Pause, Stop as _Stop, ArrowClockwise, Checks,
   FileText, Image, CubeTransparent, Lightbulb,
   Warning, Info, ShieldCheck, Lock, Sparkle,
   CalendarBlank, Clock, Fire, Heartbeat,

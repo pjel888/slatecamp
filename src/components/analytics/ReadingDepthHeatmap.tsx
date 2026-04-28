@@ -18,7 +18,7 @@ const toIntensity = (value: number, max: number): number => {
   return Math.min(1, value / max)
 }
 
-const intensityToBg = (intensity: number, baseHex: string): string => {
+const _intensityToBg = (intensity: number, baseHex: string): string => {
   // Opacity steps: 0→10%, 0.25→30%, 0.5→55%, 0.75→75%, 1→95%
   const opacity = Math.round((0.1 + intensity * 0.85) * 100)
   return `${baseHex}${opacity < 10 ? `0${opacity}` : opacity}`
@@ -115,7 +115,7 @@ export const ReadingDepthHeatmap = ({ data }: Props) => {
               const intensity = toIntensity(value, colMaxes[col.key])
               const baseColor = colColors[ci] ?? colors.primary
               // Use opacity class approach via inline style for SVG-safe rendering
-              const bgOpacity = Math.round(0.1 + intensity * 0.85)
+              const _bgOpacity = Math.round(0.1 + intensity * 0.85)
 
               return (
                 <div

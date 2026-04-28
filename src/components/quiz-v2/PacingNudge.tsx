@@ -29,7 +29,7 @@ const PacingNudge = memo(({
   const autoAdvanceFired = useRef(false)
 
   // Subscriptions
-  const elapsedMs = useQuizTimerStore((s) => s.elapsedMs)
+  const _elapsedMs = useQuizTimerStore((s) => s.elapsedMs)
   const timeStartedMs = useQuizStore((s) => s.answers[questionId]?.timeStartedMs ?? 0)
 
   const questionTimeMs = timeStartedMs > 0 ? Date.now() - timeStartedMs : 0

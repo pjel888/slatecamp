@@ -49,7 +49,7 @@ const ScoreReveal = ({
   score,
   subjectScores,
   recommendation,
-  isRetaker = false,
+  isRetaker: _isRetaker = false,
 }: ScoreRevealProps) => {
   const [showSecondary, setShowSecondary] = useState(false)
   const zone = getZone(score)

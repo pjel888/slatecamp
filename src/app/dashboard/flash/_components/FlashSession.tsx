@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useCallback, useEffect, useRef } from 'react'
+import { useState, useCallback, useRef } from 'react'
 import type { FlashCard as FlashCardType, FlashCategory } from '@/lib/flash-cards'
 import { FlashCard } from './FlashCard'
 

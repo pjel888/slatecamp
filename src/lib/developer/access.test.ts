@@ -5,7 +5,7 @@ const originalGetViewerEntitlements = { ...(await import('@/lib/entitlements/get
 
 mock.module('@/lib/entitlements/get-viewer-entitlements', () => ({
   ...originalGetViewerEntitlements,
-  getViewerEntitlements: async (featureKeys: string[]) => {
+  getViewerEntitlements: async (_featureKeys: string[]) => {
     // Simulate based on a global test variable
     const role = (globalThis as any).__test_role__ ?? 'member'
     const allowed = role === 'developer' || role === 'admin' || role === 'super_admin' || role === 'owner' || role === 'ceo' || role === 'content_admin'

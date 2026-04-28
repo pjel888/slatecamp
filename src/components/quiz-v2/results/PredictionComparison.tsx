@@ -80,7 +80,7 @@ const PredictionComparison = ({
   postdictionScore,
   actualScore,
 }: PredictionComparisonProps) => {
-  const [history, setHistory] = useState<PredictionHistoryEntry[]>([])
+  const [_history, setHistory] = useState<PredictionHistoryEntry[]>([])
   const [trendText, setTrendText] = useState<string | null>(null)
 
   // Fetch prediction history for trend analysis

@@ -446,7 +446,7 @@ interface Props {
   config: ParametricSceneConfig
 }
 
-export function WallConfiguratorRenderer({ config }: Props) {
+export function WallConfiguratorRenderer({ config: _config }: Props) {
   const groupRef = useRef<Group>(null)
   useDisposeOnUnmount(groupRef)
 

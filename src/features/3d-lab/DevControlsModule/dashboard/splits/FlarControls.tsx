@@ -16,7 +16,7 @@ export function FlarControls() {
   const zoneClass = useDevControlsStore((s) => s.zoning.zoneClass)
   const flarOverride = useDevControlsStore((s) => s.flarOverride)
   const setFlarOverride = useDevControlsStore((s) => s.setFlarOverride)
-  const currentFlar = useDevControlsStore((s) => s.result.flar)
+  const _currentFlar = useDevControlsStore((s) => s.result.flar)
 
   const flarRange = lookupFLAR(zoneClass)
   const sliderValue = flarOverride ?? flarRange.mid

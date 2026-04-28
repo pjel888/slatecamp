@@ -118,7 +118,7 @@ export function TimelineHeatmap({ rows, weekLabels }: TimelineHeatmapProps) {
     [weekLabels, weekCount],
   )
 
-  const visibleWeekSet = useMemo(() => new Set(visibleWeeks), [visibleWeeks])
+  const _visibleWeekSet = useMemo(() => new Set(visibleWeeks), [visibleWeeks])
 
   // Filter cells and compute global max for color scaling
   const { filteredRows, globalMax } = useMemo(() => {
@@ -232,7 +232,7 @@ export function TimelineHeatmap({ rows, weekLabels }: TimelineHeatmapProps) {
 
                 {/* Cells */}
                 <div className="flex" style={{ gap: COL_GAP }}>
-                  {row.cells.map((cell, i) => {
+                  {row.cells.map((cell, _i) => {
                     const level = toLevel(cell.count, globalMax)
                     const bg = getCellBg(level)
                     const textColor = getCellTextColor(level)
@@ -244,7 +244,7 @@ export function TimelineHeatmap({ rows, weekLabels }: TimelineHeatmapProps) {
                     if (cell.accuracy !== null) {
                       tipLines.push(`${cell.accuracy}% accuracy`)
                     }
-                    const tipText = tipLines.join(' · ')
+                    const _tipText = tipLines.join(' · ')
 
                     return (
                       <Tooltip key={cell.weekStart}>

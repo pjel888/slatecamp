@@ -311,7 +311,7 @@ function getTemplateType(filePath: string): string {
 }
 
 /** Fix import paths: any depth of ../../ to _types → correct relative path */
-function fixImportPaths(filePath: string, catFolder: string) {
+function fixImportPaths(filePath: string, _catFolder: string) {
   const content = fs.readFileSync(filePath, 'utf8')
   // Module files are at _config/modules/{catFolder}/{file}.ts
   // They need to reach _types/ which is at ../../_types/ from _config/modules/

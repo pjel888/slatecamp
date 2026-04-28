@@ -3,7 +3,7 @@
 // Materials are created ONCE at module scope — never reinstantiated in components.
 
 import * as THREE from 'three'
-import { COLOR, OPACITY } from './constants'
+import { COLOR } from './constants'
 
 // ─── Singleton Materials ────────────────────────────────────────────────────
 

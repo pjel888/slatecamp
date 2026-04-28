@@ -1,7 +1,7 @@
 'use client'
 
 import * as React from 'react'
-import { Brain, ThumbsUp, ThumbsDown, LinkSimple, FileText } from '@phosphor-icons/react/dist/ssr'
+import { ThumbsUp, ThumbsDown, LinkSimple } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
@@ -40,8 +40,8 @@ interface WikiRightSidebarProps {
 }
 
 export function WikiRightSidebar({
-  practiceHref,
-  practiceLabel,
+  practiceHref: _practiceHref,
+  practiceLabel: _practiceLabel,
   nodeId,
   articleId,
   topicName,
@@ -70,7 +70,7 @@ export function WikiRightSidebar({
     })
   }
 
-  const handleStudyInNotes = async () => {
+  const _handleStudyInNotes = async () => {
     if (articleId) {
       const res = await addWikiBookmark(articleId)
       if (res.success) {
@@ -126,9 +126,9 @@ export function WikiRightSidebar({
 
       {/* 1.5 Save to Notes Workspace */}
       {/* <div className="mb-5">
-        <Button 
-          variant="outline" 
-          size="sm" 
+        <Button
+          variant="outline"
+          size="sm"
           onClick={handleStudyInNotes}
           className="w-full justify-start gap-2 h-9 text-[11px] font-bold uppercase tracking-widest text-muted-foreground hover:text-primary transition-all duration-200 group border-border/60 hover:border-primary/30 cursor-pointer"
         >

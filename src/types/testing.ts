@@ -1,4 +1,4 @@
-import type { TestMode, SessionStatus, Question, QuizSession } from './app'
+import type { TestMode } from './app'
 
 // ─── Mode Source (maps UI modes to config.source) ─────────────────────────────
 

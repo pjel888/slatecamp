@@ -53,7 +53,7 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   const inst: GeometryInstruction[] = []
 
   // Ground plane — tilted to show slope
-  const slopeAngle = Math.atan(slopeP / 100)
+  const _slopeAngle = Math.atan(slopeP / 100)
   inst.push({
     id: 'ground',
     type: 'box',

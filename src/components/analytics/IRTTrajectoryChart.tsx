@@ -3,7 +3,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import {
   ResponsiveContainer,
-  AreaChart,
+  AreaChart as _AreaChart,
   Area,
   XAxis,
   YAxis,

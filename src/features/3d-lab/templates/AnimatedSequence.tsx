@@ -79,7 +79,7 @@ export default function AnimatedSequence({ config }: AnimatedSequenceProps) {
     }
   }, [currentStep, maxStep, setParam])
 
-  const handleSliderChange = useCallback(
+  const _handleSliderChange = useCallback(
     (e: React.ChangeEvent<HTMLInputElement>) => {
       setParam('currentStep', parseInt(e.target.value, 10))
       setParam('isPlaying', false)
@@ -128,7 +128,7 @@ export default function AnimatedSequence({ config }: AnimatedSequenceProps) {
                 setParam('currentStep', Math.round(v))
                 setParam('isPlaying', false)
               }}
-              formatValue={(v) => `/ ${config.steps.length}`}
+              formatValue={(_v) => `/ ${config.steps.length}`}
               compact
               className="mb-2"
             />

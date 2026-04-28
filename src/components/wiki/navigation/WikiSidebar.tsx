@@ -7,7 +7,6 @@ import { BookOpen } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { getTaxonomyTree } from '@/lib/actions/wiki-actions'
 import type { TaxonomyNode } from '@/lib/actions/taxonomy'
-import { cn } from '@/lib/utils'
 import { useWikiNavigation } from './WikiNavigationContext'
 import { Eyebrow } from '@/components/ui/eyebrow'
 import { TaxonomyTree } from '@/components/shared/taxonomy-tree'
@@ -79,8 +78,8 @@ export const shouldFetchClientTaxonomy = (initialNodes?: TaxonomyNode[]) =>
 
 export const WikiSidebar = ({
   disciplineId,
-  disciplineName,
-  collapsed,
+  disciplineName: _disciplineName,
+  collapsed: _collapsed,
   initialNodes,
 }: WikiSidebarProps) => {
   const pathname = usePathname()
@@ -158,7 +157,7 @@ export const WikiSidebar = ({
 
   return (
     <aside className="w-full h-full bg-background flex flex-col overflow-hidden">
-      
+
       {/* Syllabus section */}
       {syllabusTree.length > 0 && (
         <div className="flex flex-col flex-1 min-h-0">

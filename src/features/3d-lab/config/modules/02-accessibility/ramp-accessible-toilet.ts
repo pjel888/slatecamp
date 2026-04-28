@@ -331,7 +331,7 @@ const violations: ViolationRule[] = [
     message: 'Minimum ramp width 1,200mm',
     codeCitation: 'BP 344 2024 IRR §5.2',
     severity: 'error',
-    position: (p) => [0, -0.1, 0],
+    position: (_p) => [0, -0.1, 0],
   },
   {
     id: 'min-landing',

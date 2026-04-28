@@ -8,7 +8,7 @@ const Loading = () => (
       <Skeleton className="h-8 w-24 rounded-full" />
     </div>
     {Array.from({ length: 5 }).map((_, i) => (
-      <div key={i} className="border border-[#D4DAE3] rounded-md p-4 space-y-3">
+      <div key={i} className="border border-border rounded-md p-4 space-y-3">
         <Skeleton className="h-5 w-3/4" />
         <Skeleton className="h-4 w-1/2" />
         <Skeleton className="h-10 w-full rounded-sm" />

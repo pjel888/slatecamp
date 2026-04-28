@@ -76,9 +76,9 @@ const LabeledInput = ({
         borderRadius: 6,
         color: INK_PRIMARY,
       }}
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
       onFocus={(e: any) => { e.target.style.borderColor = COBALT }}
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
       onBlur={(e: any) => { e.target.style.borderColor = BORDER }}
     />
     {hint && (

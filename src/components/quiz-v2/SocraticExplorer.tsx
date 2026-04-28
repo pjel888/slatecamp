@@ -57,7 +57,7 @@ export const SocraticExplorer = ({
   const [isComplete, setIsComplete] = useState(false)
   const scrollRef = useRef<HTMLDivElement>(null)
   const inputRef = useRef<HTMLInputElement>(null)
-  
+
   const openWikiPanel = useQuizStore((s) => s.openWikiPanel)
 
   const handleSourceClick = (slug: string) => {
@@ -79,7 +79,7 @@ export const SocraticExplorer = ({
   // Auto-start: send first request on mount
   useEffect(() => {
     sendMessage(null)
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, [])
 
   const sendMessage = useCallback(
@@ -263,8 +263,8 @@ export const SocraticExplorer = ({
               >
                 <p className="whitespace-pre-wrap">{stripSources(msg.content)}</p>
                 {msg.sources.length > 0 && (
-                  <SourceBadgeRow 
-                    sources={msg.sources} 
+                  <SourceBadgeRow
+                    sources={msg.sources}
                     onSourceClick={handleSourceClick}
                   />
                 )}

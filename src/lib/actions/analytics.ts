@@ -2,9 +2,9 @@
 
 import { unstable_cache } from 'next/cache'
 import { createClient, getUser, createServiceClient } from '@/lib/supabase/server'
-import type { HeatmapCluster, HeatmapNode, NodeState } from '@/components/dashboard/TaxonomyHeatmap'
+import type { HeatmapCluster, NodeState } from '@/components/dashboard/TaxonomyHeatmap'
 import { PACING_TARGET_MS, PASSING_ACCURACY, RETENTION_HALF_LIFE_DAYS, getSubjectColor } from '@/lib/constants/analytics'
-import { fetchTaxonomyNodeMap, buildLevel1Resolver, type TaxNode, wrapResult, wrapError, type AnalyticsResult } from '@/lib/actions/analytics/shared-helpers'
+import { fetchTaxonomyNodeMap, buildLevel1Resolver, wrapResult, wrapError, type AnalyticsResult } from '@/lib/actions/analytics/shared-helpers'
 
 // ── Analytics data interfaces ────────────────────────────────────────────────
 

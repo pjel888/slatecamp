@@ -158,7 +158,7 @@ export const LabViewportFrame = ({ children }: LabViewportFrameProps) => {
   if (webglSupported === false) {
     return (
       <div
-        className="absolute inset-0 z-0 flex items-center justify-center overflow-hidden bg-[#F8F7F5] p-6"
+        className="absolute inset-0 z-0 flex items-center justify-center overflow-hidden bg-surface-light p-6"
         data-testid="3dlab-webgl-unavailable"
       >
         <div className="max-w-md rounded-lg border border-border bg-card p-6 text-center shadow-lg">
@@ -180,7 +180,7 @@ export const LabViewportFrame = ({ children }: LabViewportFrameProps) => {
   if (webglSupported === null) {
     return (
       <div
-        className="absolute inset-0 z-0 flex items-center justify-center overflow-hidden bg-[#F8F7F5]"
+        className="absolute inset-0 z-0 flex items-center justify-center overflow-hidden bg-surface-light"
         data-testid="3dlab-webgl-checking"
       >
         <div className="rounded-sm border border-border bg-card/95 px-3 py-2 text-[11px] font-semibold uppercase tracking-wider text-muted-foreground shadow-sm">
@@ -192,7 +192,7 @@ export const LabViewportFrame = ({ children }: LabViewportFrameProps) => {
 
   return (
     <div
-      className="absolute inset-0 z-0 overflow-hidden bg-[#F8F7F5]"
+      className="absolute inset-0 z-0 overflow-hidden bg-surface-light"
       style={{ touchAction: 'none' }}
     >
       <WebGLErrorBoundary>

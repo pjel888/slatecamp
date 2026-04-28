@@ -77,7 +77,7 @@ export const QuickCaptureDrawer = ({ userId }: QuickCaptureDrawerProps) => {
       // Flush any pending save on close
       if (debounceRef.current) clearTimeout(debounceRef.current)
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, [drawerOpen])
 
   const loadNotes = async () => {
@@ -91,13 +91,13 @@ export const QuickCaptureDrawer = ({ userId }: QuickCaptureDrawerProps) => {
     setNoteId(null)
     noteIdRef.current = null
     setTitle('')
-    
-    // If we have initialText from the anchor (e.g. from wiki highlight), 
+
+    // If we have initialText from the anchor (e.g. from wiki highlight),
     // seed the editor with a paragraph block.
-    const initialContent = anchor.initialText 
+    const initialContent = anchor.initialText
       ? { type: 'doc', content: [{ type: 'paragraph', content: [{ type: 'text', text: anchor.initialText }] }] }
       : EMPTY_DOC
-    
+
     setContent(initialContent)
     setNoteType(hasQuestionContext ? 'gap_analysis' : 'quick_capture')
     setSaveState('idle')

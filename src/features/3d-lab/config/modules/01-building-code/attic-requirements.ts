@@ -20,7 +20,7 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   const hasHatch = Boolean(params.hasAccessHatch)
   const hatchSize = mm(params.hatchSize)
   const pitchRad = (pitch * Math.PI) / 180
-  const riseH = (span / 2) * Math.tan(pitchRad)
+  const _riseH = (span / 2) * Math.tan(pitchRad)
   const rafterLen = (span / 2) / Math.cos(pitchRad)
   const cH = 2.7
   const wallT = 0.15

@@ -195,7 +195,7 @@ function geometry(
   const ns = getNearSource(nsType)
   const R = R_FACTORS[sysType] ?? 8.5
   const Fa = soil.Fa[zone] ?? 1.0
-  const Fv = soil.Fv[zone] ?? 1.0
+  const _Fv = soil.Fv[zone] ?? 1.0
 
   // Approximate base shear coefficient: V/W ≈ (Z * Na * Fa) / R (simplified)
   const baseShearCoeff = (Z * ns.Na * Fa) / R

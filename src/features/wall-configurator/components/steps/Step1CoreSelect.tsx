@@ -83,25 +83,25 @@ export function Step1CoreSelect() {
               className={[
                 'cursor-pointer rounded-md p-3 text-left transition-colors duration-150 ease-out',
                 isSelected
-                  ? 'border-l-[3px] border-l-[#1B3FC4] bg-[#EEF2FC]'
+                  ? 'border-l-[3px] border-l-[#1B3FC4] bg-primary-50'
                   : 'border border-border hover:border-primary',
               ].join(' ')}
             >
-              <p className="font-mono text-[8px] font-medium uppercase tracking-[0.12em] text-[#8896A7]">
+              <p className="font-mono text-[8px] font-medium uppercase tracking-[0.12em] text-muted-foreground">
                 {option.label}
               </p>
               <p
                 className={[
                   'mt-1 text-[13px] font-semibold',
-                  isSelected ? 'text-[#1B3FC4]' : 'text-[#1A2332]',
+                  isSelected ? 'text-primary' : 'text-foreground',
                 ].join(' ')}
               >
                 {option.title}
               </p>
               <ol className="mt-2 flex flex-col gap-1">
                 {option.sequence.map((step, i) => (
-                  <li key={step} className="flex items-start gap-1.5 text-[12px] text-[#4A5568]">
-                    <span className="font-mono text-[9px] text-[#1B3FC4] shrink-0 mt-px">
+                  <li key={step} className="flex items-start gap-1.5 text-[12px] text-text-secondary">
+                    <span className="font-mono text-[9px] text-primary shrink-0 mt-px">
                       {i + 1}
                     </span>
                     {step}
@@ -118,7 +118,7 @@ export function Step1CoreSelect() {
           type="button"
           onClick={handleNext}
           disabled={!coreType}
-          className="rounded-sm bg-[#1B3FC4] px-4 py-2 text-[13px] font-medium text-white transition-colors duration-150 ease-out hover:bg-[#1535A8] disabled:cursor-not-allowed disabled:opacity-40"
+          className="rounded-sm bg-primary px-4 py-2 text-[13px] font-medium text-white transition-colors duration-150 ease-out hover:bg-primary-700 disabled:cursor-not-allowed disabled:opacity-40"
         >
           Continue
         </button>

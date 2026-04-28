@@ -12,7 +12,7 @@ import { headers } from 'next/headers'
  *   { "crons": [{ "path": "/api/cron/compute-signals", "schedule": "30 16 * * *" }] }
  *   (16:30 UTC = 00:30 PHT, after focus-review scan)
  */
-export async function GET(request: Request) {
+export async function GET(_request: Request) {
   const headersList = await headers()
   const authHeader = headersList.get('authorization')
 

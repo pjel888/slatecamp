@@ -1,6 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { HeroConfigurator } from './HeroConfigurator'
-import { TooltipProvider } from '@/components/ui/tooltip'
 
 const mockSubjects = [
   { node_id: '1', name: 'Building Technology', subject_area: 'BT' },

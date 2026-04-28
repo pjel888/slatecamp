@@ -18,10 +18,10 @@ interface InfoTooltipProps {
  * Use next to card titles and labels for consistent UX across dashboard, analytics, quiz, library.
  */
 export function InfoTooltip({
-  content,
+  content: _content,
   title,
-  side = "top",
-  align = "center",
+  side: _side = "top",
+  align: _align = "center",
   className,
 }: InfoTooltipProps) {
   return (

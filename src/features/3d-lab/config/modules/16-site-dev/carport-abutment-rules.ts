@@ -50,7 +50,7 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   // Perforated/open above 1.50m
   const perfH = cpH - Math.max(solidH, solidLimit)
   if (perfH > 0) {
-    const perfY = Math.max(solidH, solidLimit) + perfH / 2
+    const _perfY = Math.max(solidH, solidLimit) + perfH / 2
     // CHB perforated blocks (open lattice)
     const rows = Math.round(perfH / 0.2)
     for (let r = 0; r < Math.min(rows, 8); r++) {

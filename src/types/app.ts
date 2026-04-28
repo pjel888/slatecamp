@@ -808,7 +808,7 @@ export interface NodeMasteryState {
 export const STEP_TYPE_CONFIG = {
   wiki: { icon: '📖', label: 'WIKI READ', accent: '', cta: 'Start Reading →' },
   quiz: { icon: '⚡', label: 'QUIZ', accent: 'bg-primary-50', cta: 'Start Quiz →' },
-  lab: { icon: '🏛️', label: '3D LAB', accent: 'bg-[#EEEDFE]', cta: 'Open 3D Lab →' },
+  lab: { icon: '🏛️', label: '3D LAB', accent: 'bg-primary-50', cta: 'Open 3D Lab →' },
   review: { icon: '🔄', label: 'REVIEW', accent: 'bg-signal-gold-light', cta: 'Start Review →' },
 } as const
 

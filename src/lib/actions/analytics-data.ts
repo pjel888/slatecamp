@@ -3,7 +3,7 @@
 import { unstable_cache } from 'next/cache'
 import { createClient, getUser, createServiceClient } from '@/lib/supabase/server'
 import { WEAKEST_TOPICS_MIN_ATTEMPTS, WEAKEST_TOPICS_LIMIT } from '@/lib/constants/analytics'
-import { fetchTaxonomyNodeMap, buildLevel1Resolver, type TaxNode, wrapResult, wrapError, type AnalyticsResult } from '@/lib/actions/analytics/shared-helpers'
+import { fetchTaxonomyNodeMap, buildLevel1Resolver, wrapResult, wrapError, type AnalyticsResult } from '@/lib/actions/analytics/shared-helpers'
 
 // ── Types ────────────────────────────────────────────────────────────────────
 

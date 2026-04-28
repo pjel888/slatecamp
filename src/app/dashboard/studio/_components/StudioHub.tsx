@@ -53,7 +53,7 @@ interface StudioHubProps {
   userName: string
 }
 
-export const StudioHub = ({ userName }: StudioHubProps) => {
+export const StudioHub = ({ userName: _userName }: StudioHubProps) => {
   return (
     <div className="flex flex-col gap-6 w-full max-w-3xl mx-auto py-6 px-4">
       {/* Header */}

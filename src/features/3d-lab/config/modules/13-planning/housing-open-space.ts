@@ -43,11 +43,11 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   const bA = Math.sqrt(floorA * (lW / lD)) * scale
   const bDs = Math.sqrt(floorA * (lD / lW)) * scale
   const frontSB = 1.5 * scale
-  const sideSB = 0.75 * scale
+  const _sideSB = 0.75 * scale
   const inst: GeometryInstruction[] = []
 
   // Lot boundary
-  const lotColor = violatesLot ? '#fca5a5' : '#d4d4d8'
+  const _lotColor = violatesLot ? '#fca5a5' : '#d4d4d8'
   inst.push({ id: 'lot-floor', type: 'box', position: [0, -0.02, 0], args: [lWs, 0.04, lDs], color: '#4d7c0f', opacity: 0.25, transparent: true, label: `Lot: ${lotArea.toFixed(0)} sqm` })
   inst.push({ id: 'lot-left', type: 'box', position: [-lWs / 2, 0.04, 0], args: [0.04, 0.08, lDs], color: violatesLot ? '#D64545' : '#71717a' })
   inst.push({ id: 'lot-right', type: 'box', position: [lWs / 2, 0.04, 0], args: [0.04, 0.08, lDs], color: violatesLot ? '#D64545' : '#71717a' })

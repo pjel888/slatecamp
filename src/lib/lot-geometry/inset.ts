@@ -3,7 +3,7 @@
 // Offsets each edge inward by its boundary-tagged setback amount,
 // then intersects adjacent offset edges to get the inset polygon.
 
-import type { LotVertex, LotEdge, BoundaryTag, ComputedLotPolygon } from '@/types/lot'
+import type { LotVertex, BoundaryTag, ComputedLotPolygon } from '@/types/lot'
 
 interface SetbackValues {
   front: number

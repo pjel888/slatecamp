@@ -2,7 +2,7 @@
 // CSI MasterFormat Explorer — Specifications
 import type { ParametricSceneConfig, ParameterDef, GeometryInstruction, AnnotationDef, Preset } from '@/features/3d-lab/types/templates'
 
-function num(v: number | string | boolean): number { return typeof v === 'number' ? v : Number(v) }
+function _num(v: number | string | boolean): number { return typeof v === 'number' ? v : Number(v) }
 function str(v: number | string | boolean): string { return String(v) }
 
 const DIVISIONS: Array<{ div: number; label: string; color: string }> = [

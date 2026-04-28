@@ -45,7 +45,7 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   const systems = [{ data: dataA, xOff: -sep / 2, label: 'A' }, { data: dataB, xOff: sep / 2, label: 'B' }]
   systems.forEach(({ data, xOff, label }) => {
     // Base shear capacity relative bar
-    const heightScale = data.R / 8.5
+    const _heightScale = data.R / 8.5
     const totalH = floors * stH
     for (let f = 0; f < floors; f++) {
       inst.push({ id: `frame-${label}-${f}`, type: 'box', position: [xOff, f * stH + stH / 2, 0], args: [bW * 0.95, stH - 0.02, bW * 0.6], color: data.color, opacity: 0.7, transparent: true })

@@ -126,12 +126,12 @@ function geometry(
 
   // PSO check
   const footprint = buildW * buildD
-  const actualPSO = (footprint / tla) * 100
+  const _actualPSO = (footprint / tla) * 100
 
   // TGFA and FAR
   const tgfa = footprint * floors
   const actualFAR = tgfa / tla
-  const maxTGFA = ctrl.far * tla
+  const _maxTGFA = ctrl.far * tla
 
   // Building height
   const buildingH = floors * floorH

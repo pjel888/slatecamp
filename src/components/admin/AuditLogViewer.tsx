@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState, useEffect } from 'react'
-import { MagnifyingGlass, DownloadSimple, CaretDown, CaretRight } from '@phosphor-icons/react/dist/ssr'
+import { MagnifyingGlass, CaretDown, CaretRight } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { getAuditLogsAction, type AuditLog } from '@/lib/audit/audit-actions'
 import type { AuditFeedMode } from '@/lib/audit/audit-queries'
@@ -46,7 +46,7 @@ export function AuditLogViewer() {
   }
 
   const filteredLogs = logs.filter(log => {
-    const matchesSearch = searchQuery 
+    const matchesSearch = searchQuery
       ? log.record_id.includes(searchQuery) || log.table_name.includes(searchQuery)
       : true
     return matchesSearch

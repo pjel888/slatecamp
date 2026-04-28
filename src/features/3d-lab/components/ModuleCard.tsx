@@ -22,7 +22,7 @@ const TEMPLATE_META: Record<TemplateType, { label: string; icon: PhosphorIcon; c
 
 // ─── Module Card ─────────────────────────────────────────────────────────────
 
-export function ModuleCard({ module, basePath }: { module: ModuleRegistryEntry; basePath: string }) {
+export function ModuleCard({ module, basePath: _basePath }: { module: ModuleRegistryEntry; basePath: string }) {
   const isBuilt = module.status === 'built' || module.status === 'ready'
   const tmpl = TEMPLATE_META[module.templateType]
 

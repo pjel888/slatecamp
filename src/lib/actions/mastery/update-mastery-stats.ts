@@ -23,7 +23,7 @@ export const updateMasteryStats = async (params: {
     isCorrect,
     timeSpentMs,
     testMode,
-    difficulty = 0.5,
+    difficulty: _difficulty = 0.5,
     isSuspectedLuckyGuess = false,
   } = params
 
@@ -90,7 +90,7 @@ export const updateMasteryStats = async (params: {
       .eq('user_id', userId)
       .eq('topic_id', topicId)
       .eq('question_id', questionId)
-    
+
     // If count is <= 1, it means this is either the first time or we just inserted the current one
     const isNewQuestion = (prevSeenCount ?? 0) <= 1
     const prevDistinct = current?.distinct_questions_seen ?? 0

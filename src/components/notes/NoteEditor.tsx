@@ -20,7 +20,7 @@ interface NoteEditorProps {
 
 export function NoteEditor({ note, onUpdate, isSaving }: NoteEditorProps) {
   const [editorReady, setEditorReady] = useState(false);
-  const [content, setContent] = useState(note.content)
+  const [_content, _setContent] = useState(note.content)
   const lastUpdated = useRef(note.updated_at)
 
   const editor = useEditor({
@@ -41,7 +41,7 @@ export function NoteEditor({ note, onUpdate, isSaving }: NoteEditorProps) {
     },
     onUpdate: ({ editor }) => {
       const json = editor.getJSON()
-      
+
       // Extract title from first line
       const firstNode = json.content?.[0]
       let title = ''
@@ -64,7 +64,7 @@ export function NoteEditor({ note, onUpdate, isSaving }: NoteEditorProps) {
     if (editor && note.updated_at !== lastUpdated.current) {
       const currentContent = JSON.stringify(editor.getJSON())
       const newContent = JSON.stringify(note.content)
-      
+
       if (currentContent !== newContent) {
         editor.commands.setContent(note.content)
       }
@@ -135,13 +135,13 @@ export function NoteEditor({ note, onUpdate, isSaving }: NoteEditorProps) {
       <div className="flex-1 overflow-y-auto">
         <div className="mx-auto max-w-2xl pt-16 pb-16">
           <div className="mb-8 px-8 text-[11px] text-muted-foreground text-center">
-            {new Date(note.updated_at).toLocaleString([], { 
-              weekday: 'long', 
-              year: 'numeric', 
-              month: 'long', 
-              day: 'numeric', 
-              hour: 'numeric', 
-              minute: 'numeric' 
+            {new Date(note.updated_at).toLocaleString([], {
+              weekday: 'long',
+              year: 'numeric',
+              month: 'long',
+              day: 'numeric',
+              hour: 'numeric',
+              minute: 'numeric'
             })}
           </div>
           <EditorContent editor={editor} />

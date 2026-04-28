@@ -1,7 +1,6 @@
 'use server';
 
 import { createClient, getUser } from '@/lib/supabase/server';
-import type { TestMode } from '@/types/app';
 import { ROUTES } from '@/lib/routes';
 
 export interface DailyMission {
@@ -31,7 +30,7 @@ export async function getDailyMissions(): Promise<DailyMission[]> {
     .eq('user_id', user.id)
     .maybeSingle();
 
-  const disciplineId = stats?.current_discipline_id;
+  const _disciplineId = stats?.current_discipline_id;
 
   // Check if today's quiz is done
   const today = new Date().toISOString().split('T')[0];
@@ -70,7 +69,7 @@ export async function getDailyMissions(): Promise<DailyMission[]> {
   return missions;
 }
 
-export async function claimMissionReward(missionId: string) {
+export async function claimMissionReward(_missionId: string) {
   // logic to boost readiness or tokens
   return { success: true };
 }

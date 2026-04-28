@@ -25,7 +25,7 @@ export default function ParametricScene({ config }: ParametricSceneProps) {
     return d
   }, [config.parameters])
 
-  const useStore = useMemo(() => createModuleStore(defaults), [config.id]) // eslint-disable-line react-hooks/exhaustive-deps
+  const useStore = useMemo(() => createModuleStore(defaults), [config.id])
 
   const cameraPos = config.camera?.position ?? [3, 3, 3]
   const cameraFov = config.camera?.fov ?? 45

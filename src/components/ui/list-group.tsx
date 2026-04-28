@@ -112,7 +112,6 @@ const ListGroupItem = React.forwardRef<HTMLLIElement, ListGroupItemProps>(
         ref={ref}
         data-slot="list-group-item"
         className={baseClasses}
-        aria-disabled={disabled}
         aria-current={active ? 'true' : undefined}
         {...props}
       >

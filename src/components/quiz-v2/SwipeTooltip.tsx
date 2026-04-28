@@ -10,7 +10,7 @@ interface SwipeTooltipProps {
   onDismiss: () => void
 }
 
-export const SwipeTooltip = ({ targetRef, onDismiss }: SwipeTooltipProps) => {
+export const SwipeTooltip = ({ targetRef: _targetRef, onDismiss }: SwipeTooltipProps) => {
   const [visible, setVisible] = useState(false)
 
   useEffect(() => {

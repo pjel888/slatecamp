@@ -42,7 +42,7 @@ function TogglePill({
 
 function BasisBadge({ basis }: { basis: string }) {
   return (
-    <span className="font-mono text-[8px] font-medium uppercase tracking-[0.08em] px-[7px] py-[3px] rounded bg-[#F2F0EB] text-text-secondary whitespace-nowrap">
+    <span className="font-mono text-[8px] font-medium uppercase tracking-[0.08em] px-[7px] py-[3px] rounded bg-wiki-row-light text-text-secondary whitespace-nowrap">
       {BASIS_LABEL[basis] ?? basis.toUpperCase()}
     </span>
   )

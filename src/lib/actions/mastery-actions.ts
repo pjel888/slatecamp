@@ -1,6 +1,6 @@
 
 import { unstable_cache } from 'next/cache'
-import { createClient, getUser, createServiceClient } from '@/lib/supabase/server'
+import { getUser, createServiceClient } from '@/lib/supabase/server'
 import { getCachedTaxonomyTreeByDiscipline } from './cached-queries'
 import { getDashboardTag, getReadinessScoreTag, getUserMasteryTag } from './cache-tags'
 import type { SupabaseClient } from '@supabase/supabase-js'

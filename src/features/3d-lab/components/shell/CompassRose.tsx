@@ -4,7 +4,7 @@
 // Only rendered when ViewportCapabilities.compassRose is true.
 // Rotates as camera orbits. Click to snap to north-facing view.
 
-import { useRef, useCallback } from 'react'
+import { useRef } from 'react'
 import { useFrame, useThree } from '@react-three/fiber'
 import { Html } from '@react-three/drei'
 import * as THREE from 'three'

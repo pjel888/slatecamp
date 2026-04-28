@@ -1,6 +1,6 @@
 import os from 'node:os'
 import path from 'node:path'
-import { ensurePerfDirs, RESULTS_DIR, runCommand, safeJsonFile, summarizeNumbers, writeCommandLog, writeMarkdown, cpuSummary } from './perf-utils.mjs'
+import { ensurePerfDirs, RESULTS_DIR, runCommand, safeJsonFile, writeCommandLog, writeMarkdown, cpuSummary } from './perf-utils.mjs'
 
 ensurePerfDirs()
 const commands = [

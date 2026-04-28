@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 import { persist, createJSONStorage } from 'zustand/middleware'
-import type { UserTier, UserType, OrgMemberRole } from '@/types/app'
+import type { UserTier, UserType } from '@/types/app'
 import type { FeatureFlagKey } from '@/config/feature-flags'
 
 // ---------------------------------------------------------------------------

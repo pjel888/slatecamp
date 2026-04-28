@@ -16,7 +16,6 @@ import {
   isTerminalSessionStatus,
 } from './session-helpers'
 import { createClient, getUser } from '@/lib/supabase/server'
-import { ROUTES } from '@/lib/routes'
 import type { EndSessionInput, EndSessionResult, QuizSessionConfig, SessionStatus } from '@/types/quiz-config'
 
 interface SessionRow {

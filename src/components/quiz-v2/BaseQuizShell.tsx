@@ -15,7 +15,7 @@ import type { QuizSessionConfig } from '@/types/quiz-config'
 
 // ─── Dynamic Imports ─────────────────────────────────────────────────────────
 
-const QuestionPalette = dynamic(() => import('./QuestionPalette').then(m => m.QuestionPalette), { ssr: false })
+const _QuestionPalette = dynamic(() => import('./QuestionPalette').then(m => m.QuestionPalette), { ssr: false })
 const ExitConfirmModal = dynamic(() => import('./ExitConfirmModal').then(m => m.ExitConfirmModal), { ssr: false })
 const SubmitConfirmModal = dynamic(() => import('./SubmitConfirmModal').then(m => m.SubmitConfirmModal), { ssr: false })
 const MicroBreakOverlay = dynamic(() => import('./MicroBreakOverlay').then(m => m.MicroBreakOverlay), { ssr: false })

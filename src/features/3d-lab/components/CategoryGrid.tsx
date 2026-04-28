@@ -122,7 +122,7 @@ function CategoryCard({ categoryKey, category, moduleCount, onSelect }: Category
 
 // ─── Featured Module Banner ───────────────────────────────────────────────────
 
-export function FeaturedModuleBanner({ basePath }: { basePath?: string }) {
+export function FeaturedModuleBanner({ basePath: _basePath }: { basePath?: string }) {
   const href = ROUTES.lab.module('site-development-controls')
 
   return (

@@ -45,7 +45,7 @@ function geometry(params: Record<string, number | boolean | string>): GeometryIn
   const openSpaceD = lDs * Math.min(openSpacePct, 0.5)
 
   // Building footprint: typical 60-70% max coverage
-  const maxCoverage = 0.70
+  const _maxCoverage = 0.70
   const bFootW = lWs * 0.85
   const bFootD = lDs * (1 - openSpacePct - 0.08)
   const storeySizeH = 0.25

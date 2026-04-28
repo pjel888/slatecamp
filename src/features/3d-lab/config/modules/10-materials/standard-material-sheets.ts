@@ -2,7 +2,7 @@
 // Standard Material Sheets — Construction Materials
 import type { ExplodedAssemblyConfig } from '@/features/3d-lab/types/templates'
 
-function yOff(v: number): [number, number, number] { return [0, v, 0] }
+function _yOff(v: number): [number, number, number] { return [0, v, 0] }
 
 // At 1:100 scale: 1220mm = 0.122 units, 2440mm = 0.244 units
 // For clarity scale up 4×: 1220mm → 0.488, 2440mm → 0.976

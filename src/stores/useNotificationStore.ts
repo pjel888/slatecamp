@@ -1,5 +1,4 @@
 import { create } from 'zustand'
-import { createClient } from '@/lib/supabase/client'
 import type { Notification } from '@/types/notifications'
 import {
   getUnreadCount,

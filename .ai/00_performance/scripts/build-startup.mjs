@@ -1,6 +1,6 @@
 import path from 'node:path'
-import { existsSync, readdirSync, statSync } from 'node:fs'
-import { ensurePerfDirs, repoPath, RESULTS_DIR, LOGS_DIR, fileSize, runCommand, safeJsonFile, summarizeNumbers, walk, writeCommandLog, writeMarkdown } from './perf-utils.mjs'
+import { existsSync } from 'node:fs'
+import { ensurePerfDirs, repoPath, RESULTS_DIR, fileSize, runCommand, safeJsonFile, summarizeNumbers, walk, writeCommandLog, writeMarkdown } from './perf-utils.mjs'
 
 ensurePerfDirs()
 const repeat = Number(process.env.PERF_BUILD_REPEAT ?? 1)

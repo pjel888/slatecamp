@@ -1,0 +1,22 @@
+{
+  "baseline": {
+    "warnings": 344,
+    "errors": 0,
+    "fixableWarnings": 18,
+    "topRules": {
+      "@typescript-eslint/no-unused-vars": 203,
+      "no-restricted-syntax": 120,
+      "unused-disable-directive": 18,
+      "@next/next/no-img-element": 2,
+      "jsx-a11y/role-supports-aria-props": 1
+    }
+  },
+  "final": {
+    "warnings": 0,
+    "errors": 0,
+    "command": "bun run lint"
+  },
+  "notes": [
+    "Raw ESLint JSON inventories generated during the work were intentionally not retained because ESLint JSON includes full source text for warned files and is too noisy for the durable ledger."
+  ]
+}

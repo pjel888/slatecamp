@@ -38,7 +38,7 @@ export default function ExplodedAssembly({ config }: ExplodedAssemblyProps) {
     [activeAnnotation, config.parts],
   )
 
-  const handleSliderChange = useCallback(
+  const _handleSliderChange = useCallback(
     (e: React.ChangeEvent<HTMLInputElement>) => {
       setParam('explode', parseFloat(e.target.value))
     },

@@ -29,15 +29,15 @@ interface TrailStepCardProps {
 
 const CTA_ROUTES: Record<TrailStepType, (nodeIds: string[]) => string> = {
   wiki: () => '/dashboard/wiki',
-  quiz: (nodeIds) => `/quiz/camp/setup`,
+  quiz: (_nodeIds) => `/quiz/camp/setup`,
   lab: () => '/dashboard/3d-lab',
-  review: (nodeIds) => `/quiz/camp/setup`,
+  review: (_nodeIds) => `/quiz/camp/setup`,
 }
 
 const TrailStepCard = ({
   step,
-  enrollmentId,
-  trailSlug,
+  enrollmentId: _enrollmentId,
+  trailSlug: _trailSlug,
   onComplete,
   isPending = false,
   focusReviewFlagged = false,

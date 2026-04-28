@@ -81,7 +81,7 @@ const violations: ViolationRule[] = [
 
 const annotations: AnnotationDef[] = [
   { id: 'ann-10pct', label: '10% Floor Area Rule', description: 'Total ventilation openings must equal at least 10% of floor area served for adequate air exchange', codeCitation: 'PD 1096 IRR Rule VIII §803', position: (p) => [-(mm(p.roomWidth) / 2) - 0.8, 1.5, 0] },
-  { id: 'ann-cross', label: 'Cross Ventilation', description: 'Openings on opposite walls enable cross-ventilation; inlet low, outlet high maximises stack effect', codeCitation: 'PD 1096 IRR Rule VIII §803', position: (p) => [0, 2.8, 0] },
+  { id: 'ann-cross', label: 'Cross Ventilation', description: 'Openings on opposite walls enable cross-ventilation; inlet low, outlet high maximises stack effect', codeCitation: 'PD 1096 IRR Rule VIII §803', position: (_p) => [0, 2.8, 0] },
 ]
 
 const presets: Preset[] = [

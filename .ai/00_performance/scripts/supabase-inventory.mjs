@@ -1,6 +1,6 @@
 import path from 'node:path'
 import { readFileSync } from 'node:fs'
-import { ensurePerfDirs, repoPath, RESULTS_DIR, rel, safeJsonFile, summarizeNumbers, walk, writeMarkdown } from './perf-utils.mjs'
+import { ensurePerfDirs, repoPath, RESULTS_DIR, rel, safeJsonFile, walk, writeMarkdown } from './perf-utils.mjs'
 
 ensurePerfDirs()
 const scanRoots = ['src', 'scripts', 'supabase'].map((root) => repoPath(root))

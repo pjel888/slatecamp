@@ -1,6 +1,5 @@
 'use client'
 
-import { Card } from "@/components/ui/card"
 import { Skeleton } from "@/components/ui/skeleton"
 
 export const SubjectMasterySkeleton = () => {
@@ -19,7 +18,7 @@ export const SubjectMasterySkeleton = () => {
       <div className='row-span-2 rounded-md bg-muted border border-border-design p-3 flex flex-col min-h-0'>
         <Skeleton className='h-3 w-24 mb-1.5 bg-muted' />
         <Skeleton className='h-2.5 w-40 mb-4 bg-muted' />
-        
+
         <div className='space-y-4 flex-1'>
           {[1, 2, 3, 4, 5, 6].map((i) => (
             <div key={i} className="space-y-1.5">

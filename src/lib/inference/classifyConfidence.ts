@@ -15,8 +15,8 @@ import type {
 // These are initial calibration values. Will be refined from real gesture data.
 // DO NOT document in public materials.
 
-const VELOCITY_DELIBERATE_MIN = 0.0005
-const VELOCITY_DELIBERATE_MAX = 0.05
+const _VELOCITY_DELIBERATE_MIN = 0.0005
+const _VELOCITY_DELIBERATE_MAX = 0.05
 const VELOCITY_GUESSING_MIN = 0.08      // Very fast → likely guessing
 const PATH_DEVIATION_HIGH = 0.15         // High deviation → hesitancy
 const REVERSAL_HIGH = 5                  // Many direction changes → uncertainty

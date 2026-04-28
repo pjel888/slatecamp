@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useCallback, useMemo } from 'react'
-import type { DesignScenario, HiddenTrap, DesignScenarioQuestion } from '@/lib/design-scenarios'
+import type { DesignScenario, HiddenTrap } from '@/lib/design-scenarios'
 import { BriefPanel } from './BriefPanel'
 import { QuestionCard } from './QuestionCard'
 import { SolutionReveal } from './SolutionReveal'
@@ -119,7 +119,7 @@ export const DesignQuizSession = ({ scenario }: DesignQuizSessionProps) => {
 
   const handleNext = useCallback(() => {
     const isLast = currentIndex === scenario.questions.length - 1
-    
+
     if (isLast) {
       if (answers.length === scenario.questions.length) {
         handleFinish()
@@ -129,7 +129,7 @@ export const DesignQuizSession = ({ scenario }: DesignQuizSessionProps) => {
     } else {
       const nextIndex = currentIndex + 1
       setCurrentIndex(nextIndex)
-      
+
       const nextQuestion = scenario.questions[nextIndex]
       const existing = answers.find(a => a.questionNumber === nextQuestion.number)
       if (existing) {
@@ -146,7 +146,7 @@ export const DesignQuizSession = ({ scenario }: DesignQuizSessionProps) => {
     if (currentIndex > 0) {
       const prevIndex = currentIndex - 1
       setCurrentIndex(prevIndex)
-      
+
       const prevQuestion = scenario.questions[prevIndex]
       const existing = answers.find(a => a.questionNumber === prevQuestion.number)
       if (existing) {
@@ -160,7 +160,7 @@ export const DesignQuizSession = ({ scenario }: DesignQuizSessionProps) => {
   }, [currentIndex, scenario.questions, answers])
 
   const handleReviewUnanswered = useCallback(() => {
-    const firstUnanswered = scenario.questions.findIndex(q => 
+    const firstUnanswered = scenario.questions.findIndex(q =>
       !answers.some(a => a.questionNumber === q.number)
     )
     if (firstUnanswered !== -1) {

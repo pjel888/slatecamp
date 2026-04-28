@@ -38,7 +38,7 @@ const BACKUP_FILE = path.join(
 );
 
 // Legal article patterns that must NOT be touched
-const LEGAL_ARTICLE_EXCLUSION = `
+const _LEGAL_ARTICLE_EXCLUSION = `
   AND text !~* 'article \\d|article [IVXLC]+|Civil Code|PD \\d|RA \\d|PEC Article|Code of Ethical|Water Code|Electrical Code|Fire Code|Building Code'
 `;
 
@@ -51,7 +51,7 @@ const supabase = createClient(
 );
 
 /** Execute raw SQL via Supabase RPC */
-async function sql<T = Record<string, unknown>>(
+async function _sql<T = Record<string, unknown>>(
   query: string
 ): Promise<T[]> {
   const { data, error } = await supabase.rpc("exec_sql", {
@@ -327,7 +327,7 @@ async function tier1Delete() {
   let deleted = 0;
   for (let i = 0; i < safeToDelete.length; i += 50) {
     const batch = safeToDelete.slice(i, i + 50);
-    const { error: delErr, count } = await supabase
+    const { error: delErr, count: _count } = await supabase
       .from("questions")
       .delete()
       .in("question_id", batch);

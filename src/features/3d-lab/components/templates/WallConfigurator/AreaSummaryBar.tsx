@@ -7,7 +7,7 @@ export function AreaSummaryBar() {
   const area = computeAreaState(state)
 
   return (
-    <div className="flex divide-x divide-white/15 bg-[#1A2332] shrink-0">
+    <div className="flex divide-x divide-white/15 bg-foreground shrink-0">
       {[
         { label: 'Gross Area', value: area.grossAreaSqm.toFixed(2), unit: 'sqm', highlight: false },
         { label: 'Net Area', value: area.netAreaSqm.toFixed(2), unit: 'sqm', highlight: true },

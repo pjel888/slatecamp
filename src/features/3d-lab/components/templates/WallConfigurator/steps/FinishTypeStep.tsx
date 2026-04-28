@@ -42,19 +42,19 @@ export function FinishTypeStep() {
               className={[
                 'flex flex-col items-start gap-1 border rounded-md p-3 text-left transition-colors duration-150',
                 opt.disabled
-                  ? 'opacity-50 cursor-not-allowed border-[#D4DAE3] bg-white'
+                  ? 'opacity-50 cursor-not-allowed border-border bg-white'
                   : isSelected
-                  ? 'border-[#1B3FC4] bg-[#EEF2FC] cursor-pointer'
-                  : 'border-[#D4DAE3] bg-white hover:border-[#1B3FC4] cursor-pointer',
+                  ? 'border-primary bg-primary-50 cursor-pointer'
+                  : 'border-border bg-white hover:border-primary cursor-pointer',
               ].join(' ')}
             >
-              <span className="text-[13px] font-medium text-[#1A2332] leading-tight">
+              <span className="text-[13px] font-medium text-foreground leading-tight">
                 {opt.name}
                 {opt.disabled && (
-                  <span className="ml-1.5 text-[10px] text-[#8896A7] font-normal">soon</span>
+                  <span className="ml-1.5 text-[10px] text-muted-foreground font-normal">soon</span>
                 )}
               </span>
-              <span className="text-[11px] text-[#4A5568] leading-snug">{opt.description}</span>
+              <span className="text-[11px] text-text-secondary leading-snug">{opt.description}</span>
             </button>
           )
         })}
@@ -63,7 +63,7 @@ export function FinishTypeStep() {
       {/* Paint extras */}
       {finishType === 'paint' && (
         <div className="flex flex-col gap-1.5 pt-1">
-          <span className="text-[11px] text-[#4A5568]">Topcoat coats:</span>
+          <span className="text-[11px] text-text-secondary">Topcoat coats:</span>
           <div className="flex gap-1.5">
             {COAT_OPTIONS.map((c) => (
               <button
@@ -73,8 +73,8 @@ export function FinishTypeStep() {
                 className={[
                   'w-9 h-9 text-[13px] font-medium rounded-sm border transition-colors duration-150',
                   topcoatCoats === c
-                    ? 'border-[#1B3FC4] bg-[#1B3FC4] text-white'
-                    : 'border-[#D4DAE3] text-[#4A5568] hover:border-[#1B3FC4]',
+                    ? 'border-primary bg-primary text-white'
+                    : 'border-border text-text-secondary hover:border-primary',
                 ].join(' ')}
               >
                 {c}
@@ -101,7 +101,7 @@ function TileExtras({ tileConfig, onTileConfig }: TileExtrasProps) {
   return (
     <div className="flex flex-col gap-3 pt-1">
       <div className="flex flex-col gap-1.5">
-        <span className="text-[11px] text-[#4A5568]">Tile size:</span>
+        <span className="text-[11px] text-text-secondary">Tile size:</span>
         <div className="flex gap-1.5 flex-wrap">
           {TILE_SIZES.map((ts) => {
             const isSelected =
@@ -114,8 +114,8 @@ function TileExtras({ tileConfig, onTileConfig }: TileExtrasProps) {
                 className={[
                   'text-[12px] font-mono px-2.5 py-1.5 rounded-sm border transition-colors duration-150',
                   isSelected
-                    ? 'border-[#1B3FC4] bg-[#1B3FC4] text-white'
-                    : 'border-[#D4DAE3] text-[#4A5568] hover:border-[#1B3FC4]',
+                    ? 'border-primary bg-primary text-white'
+                    : 'border-border text-text-secondary hover:border-primary',
                 ].join(' ')}
               >
                 {ts.sizeLabel}
@@ -125,7 +125,7 @@ function TileExtras({ tileConfig, onTileConfig }: TileExtrasProps) {
         </div>
       </div>
       <div className="flex flex-col gap-1">
-        <label className="text-[11px] text-[#4A5568]">Grout gap (mm):</label>
+        <label className="text-[11px] text-text-secondary">Grout gap (mm):</label>
         <input
           type="number"
           step={1}
@@ -135,7 +135,7 @@ function TileExtras({ tileConfig, onTileConfig }: TileExtrasProps) {
           onChange={(e) =>
             onTileConfig({ ...tileConfig, groutGapMM: parseInt(e.target.value, 10) || 3 })
           }
-          className="border border-[#D4DAE3] rounded-sm px-2 py-1.5 text-[13px] font-mono w-24 focus:outline-none focus:border-[#1B3FC4] transition-colors duration-150"
+          className="border border-border rounded-sm px-2 py-1.5 text-[13px] font-mono w-24 focus:outline-none focus:border-primary transition-colors duration-150"
         />
       </div>
     </div>

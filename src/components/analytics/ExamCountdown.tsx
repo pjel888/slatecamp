@@ -1,6 +1,6 @@
 'use client'
 
-import { CalendarBlank, Target, Warning, ArrowUp, ArrowDown, Minus } from '@phosphor-icons/react'
+import { Target, Warning, ArrowUp, ArrowDown, Minus } from '@phosphor-icons/react'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { RichInfoPopover } from '@/components/dashboard/RichInfoPopover'

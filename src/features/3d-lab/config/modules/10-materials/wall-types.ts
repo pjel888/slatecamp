@@ -2,7 +2,6 @@
 // Wall Configurator v2 — TypeScript type definitions
 // Pure types only — no runtime code
 
-import type { Vector3Tuple } from 'three'
 
 // ─── Core Type System ───────────────────────────────────────────────────────
 

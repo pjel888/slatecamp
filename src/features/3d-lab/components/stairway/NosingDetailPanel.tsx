@@ -80,7 +80,7 @@ const NosingDetailPanel = ({ useStore }: NosingDetailPanelProps) => {
 const DimensionRow = ({
   label,
   value,
-  limit,
+  limit: _limit,
   unit,
   isViolation,
   citation,

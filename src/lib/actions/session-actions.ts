@@ -1,5 +1,5 @@
 import { unstable_cache } from 'next/cache'
-import { createClient, getUser, createServiceClient } from '@/lib/supabase/server'
+import { getUser, createServiceClient } from '@/lib/supabase/server'
 import { getDashboardTag, getUserSessionsTag } from './cache-tags'
 import type { SupabaseClient } from '@supabase/supabase-js'
 import type {

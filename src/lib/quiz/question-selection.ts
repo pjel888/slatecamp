@@ -2,7 +2,7 @@
 // Selects questions based on mode config: topics, difficulty, freshness
 
 import { toClientQuestion, type QuestionForClientRow } from '@/lib/quiz/to-client-question'
-import type { QuizSessionConfig, QuizMode } from '@/types/quiz-config'
+import type { QuizSessionConfig } from '@/types/quiz-config'
 
 interface SelectionParams {
   userId: string
@@ -44,7 +44,7 @@ export const buildQuestionSelectionQuery = ({
 const getDifficultyDistribution = (
   mode: string,
   initial: string,
-  userMastery: number,
+  _userMastery: number,
 ): Record<string, number> => {
   switch (mode) {
     case 'adaptive':

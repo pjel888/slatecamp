@@ -37,7 +37,7 @@ export const IdleOpen: Story = {
   },
 }
 
-const mockResults = [
+const _mockResults = [
   {
     article_id: '1',
     title: 'PD 1096 - Rule VIII: Light and Ventilation',
@@ -61,5 +61,5 @@ const mockResults = [
 // Note: Omnibar internally handles search via server action `searchWikiArticles`.
 // In a real Storybook setup, we would use MSW to mock that API call.
 // Since we can't easily add MSW here, these stories represent the UI shell.
-// For "Results" state, we'd need to modify Omnibar to accept initialResults for testing, 
+// For "Results" state, we'd need to modify Omnibar to accept initialResults for testing,
 // but we'll stick to the current production API.

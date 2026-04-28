@@ -24,9 +24,9 @@ export const BriefPanel = ({ scenario }: BriefPanelProps) => {
     bg: 'var(--background)',
   }
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
   const sd = scenario.site_data as any
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
   const prog = scenario.program as any
 
   const siteRows: { label: string; value: string }[] = [

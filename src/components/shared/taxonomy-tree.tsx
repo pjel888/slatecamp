@@ -102,18 +102,18 @@ const STORAGE_KEY = 'wiki_taxonomy_expanded'
 /** Highlight matched substrings in search results. */
 const HighlightMatch = React.memo(({ text, query }: { text: string; query: string }) => {
   if (!query || query.length < 2) return <>{text}</>
-  
+
   const parts = React.useMemo(() => {
     try {
       const escaped = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
       return text.split(new RegExp(`(${escaped})`, 'gi'))
-    } catch (e) {
+    } catch {
       return [text]
     }
   }, [text, query])
 
   if (parts.length === 1) return <>{text}</>
-  
+
   return (
     <>
       {parts.map((part, i) =>
@@ -223,7 +223,7 @@ const TreeRow = React.memo(({
   label,
   href,
   isActive,
-  isDimmed,
+  isDimmed: _isDimmed,
   isChildActive,
   level,
   isExpandable,
@@ -234,7 +234,7 @@ const TreeRow = React.memo(({
   isArticle = false,
 }: TreeRowProps) => {
   const { onNavigate, onSelect, searchQuery, renderRight, showCounts } = useTaxonomyTree()
-  
+
   const handleClick = (e: React.MouseEvent) => {
     // Branch A: structural node click in Admin/Filter mode
     if (onSelect && rawNode) {
@@ -401,20 +401,20 @@ const TreeBranch = React.memo(({
 
   const hasChildren = (node.children?.length ?? 0) > 0
   const hasArticles = (node.articles?.length ?? 0) > 0
-  
+
   const isArticleNode = node.level >= 3
   const isExpandable = !isArticleNode && (hasChildren || hasArticles || node.level <= 2)
   const isExpanded = matchSet ? matchSet.has(node.node_id) : expanded.has(node.node_id)
-  
+
   const nodeSlug = node.slug ?? ''
   const effectiveSlug = nodeSlug || (isArticleNode && node.articles?.length ? node.articles[0].slug : '')
-    
-  const isActive = activeNodeId 
+
+  const isActive = activeNodeId
     ? activeNodeId === node.node_id
     : activeSlug
       ? (effectiveSlug === activeSlug || node.articles?.some(a => a.slug === activeSlug))
       : false
-    
+
   const isChildActive = activeAncestors?.has(node.node_id) ?? false
   const isDimmed = dimInactive && (activeSlug || activeNodeId) && !isActive && !isChildActive
 
@@ -477,13 +477,13 @@ const TreeBranch = React.memo(({
                 isActive={activeSlug === art.slug || activeNodeId === art.article_id}
                 isDimmed={dimInactive && (!!activeSlug || !!activeNodeId) && activeSlug !== art.slug && activeNodeId !== art.article_id}
                 isChildActive={false}
-                level={3} 
+                level={3}
                 isArticle={true}
-                rawNode={{ 
-                  node_id: `article:${art.article_id}`, 
-                  name: art.title, 
-                  level: 3, 
-                  question_count: art.question_count 
+                rawNode={{
+                  node_id: `article:${art.article_id}`,
+                  name: art.title,
+                  level: 3,
+                  question_count: art.question_count
                 } as any}
               />
             ))}
@@ -549,7 +549,7 @@ const TaxonomyTree = ({
   }, [])
 
   const matchSet = React.useMemo(() => filterNodes(nodes, deferredQuery), [nodes, deferredQuery])
-  
+
   const activeAncestors = React.useMemo(() => {
     if (!activeSlug && !activeNodeId) return null
     return new Set(findAncestorIds(nodes, activeSlug ?? ''))

@@ -90,7 +90,7 @@ export const OutlinePanel = ({
 
   // ── EI prompts grouped by heading ──────────────────────────
 
-  const eiByHeading = useMemo(() => {
+  const _eiByHeading = useMemo(() => {
     const map = new Map<string, EIPromptData[]>()
     for (const prompt of eiPrompts) {
       const key = prompt.insert_after_heading || '(no heading)'

@@ -2,7 +2,7 @@
 
 import { createClient, getUser } from '@/lib/supabase/server'
 import { generateDailyDose, adjustDoseToTimeBudget } from './generate'
-import type { DailyDose, DoseActivity } from './generate'
+import type { DoseActivity } from './generate'
 
 // ── Types ────────────────────────────────────────────────────────────────────
 

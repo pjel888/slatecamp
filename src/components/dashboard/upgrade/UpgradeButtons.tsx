@@ -10,7 +10,7 @@ interface UpgradeButtonsProps {
 
 export const UpgradeButtons = ({ tier = 'pro' }: UpgradeButtonsProps) => {
   const [loading, setLoading] = useState<string | null>(null)
-  const router = useRouter()
+  const _router = useRouter()
 
   const handleCheckout = async (provider?: 'lemonsqueezy' | 'payrex') => {
     setLoading(provider || 'loading')

@@ -27,7 +27,7 @@ export function WikiReference({ slug, children, className }: WikiReferenceProps)
   const [summary, setSummary] = React.useState<string | null>(null)
   const [title, setTitle] = React.useState<string | null>(null)
   const [isLoading, setIsLoading] = React.useState(false)
-  const router = useRouter()
+  const _router = useRouter()
 
   const fetchSummary = React.useCallback(async () => {
     if (summary) return
@@ -40,7 +40,7 @@ export function WikiReference({ slug, children, className }: WikiReferenceProps)
       } else {
         setSummary('Article not found.')
       }
-    } catch (err) {
+    } catch {
       setSummary('Failed to load summary.')
     } finally {
       setIsLoading(false)
@@ -62,7 +62,7 @@ export function WikiReference({ slug, children, className }: WikiReferenceProps)
               <SCIcon icon={FileText} size="xs" className="opacity-40 group-hover:opacity-100" />
             </SheetTrigger>
           </Tooltip.Trigger>
-          
+
           <Tooltip.Portal>
             <Tooltip.Content
               side="top"
@@ -101,7 +101,7 @@ export function WikiReference({ slug, children, className }: WikiReferenceProps)
             <SheetTitle className="text-lg font-bold">
               {title || 'Loading Article...'}
             </SheetTitle>
-            <Link 
+            <Link
               href={ROUTES.wiki.article(slug)}
               className="text-[11px] font-medium text-camp-cobalt hover:underline"
               onClick={() => setIsOpen(false)}
@@ -110,14 +110,14 @@ export function WikiReference({ slug, children, className }: WikiReferenceProps)
             </Link>
           </div>
         </SheetHeader>
-        
+
         <div className="flex-1 overflow-y-auto">
-          {/* 
+          {/*
               This is a simplified view of the article.
               In a real implementation, we'd use a dedicated Peek renderer
               or re-use the WikiArticle component with limited features.
           */}
-          <iframe 
+          <iframe
             src={`${ROUTES.wiki.article(slug)}?minimal=true`}
             className="w-full h-full border-none"
             title={`Peek: ${title}`}

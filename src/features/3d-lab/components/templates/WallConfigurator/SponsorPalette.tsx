@@ -13,7 +13,7 @@ export function SponsorPalette({ sponsorId, onColorSelect, selectedHex }: Sponso
 
   if (!sponsor) {
     return (
-      <p className="text-[11px] text-[#8896A7]">No sponsor palette available.</p>
+      <p className="text-[11px] text-muted-foreground">No sponsor palette available.</p>
     )
   }
 
@@ -31,12 +31,12 @@ export function SponsorPalette({ sponsorId, onColorSelect, selectedHex }: Sponso
           >
             <span
               className={[
-                'w-8 h-8 rounded-full border border-[#D4DAE3] block transition-transform duration-150 hover:scale-110',
-                isSelected ? 'ring-2 ring-[#1B3FC4] ring-offset-1' : '',
+                'w-8 h-8 rounded-full border border-border block transition-transform duration-150 hover:scale-110',
+                isSelected ? 'ring-2 ring-primary ring-offset-1' : '',
               ].join(' ')}
               style={{ backgroundColor: color.hex }}
             />
-            <span className="text-[9px] text-[#8896A7] text-center truncate w-8 leading-tight">
+            <span className="text-[9px] text-muted-foreground text-center truncate w-8 leading-tight">
               {color.name}
             </span>
           </button>

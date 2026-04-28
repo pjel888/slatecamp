@@ -125,7 +125,7 @@ export default function FloorPlanWalkthrough({
   }, [config.parameters])
 
   // Create a stable Zustand store — intentionally keyed on config.id only
-  const useStore = useMemo(() => createModuleStore(defaults), [config.id]) // eslint-disable-line react-hooks/exhaustive-deps
+  const useStore = useMemo(() => createModuleStore(defaults), [config.id])
 
   const params = useStore((s) => s.params)
   const cameraPos = config.camera?.position ?? [0, 15, 8]

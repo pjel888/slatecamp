@@ -67,7 +67,7 @@ interface CeoShellProps {
   children: React.ReactNode
 }
 
-export const CeoShell = ({ displayName, children }: CeoShellProps) => (
+export const CeoShell = ({ displayName: _displayName, children }: CeoShellProps) => (
   <SidebarProvider disableShortcuts={true}>
     <PortalLayout
       portalLabel={PORTALS.ceo.label}

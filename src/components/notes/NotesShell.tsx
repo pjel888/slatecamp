@@ -16,7 +16,7 @@ const NotesEditor = dynamic(
   { ssr: false },
 )
 import { ContextBadge } from '@/components/notes/ContextBadge'
-import { useNotesPanels, useNotesList, useNoteEditor } from '@/hooks/notes'
+import { useNotesPanels, useNoteEditor } from '@/hooks/notes'
 import { useToast } from '@/lib/hooks/use-toast'
 import type { NoteStub, Note } from '@/types/app'
 
@@ -36,7 +36,7 @@ const applyFilter = (stubs: NoteStub[], filter: NavFilter): NoteStub[] => {
       return filter.source === 'wiki'
         ? stubs.filter((n) => n.article_id && !n.is_virtual)
         : stubs.filter((n) => n.question_id)
-    default: 
+    default:
       // 'all' filter shows all real notes but NOT virtual bookmarks by default
       // This matches standard "All Notes" behavior in apps like Apple Notes / Notion
       return stubs.filter(n => !n.is_virtual)
@@ -55,10 +55,10 @@ export const NotesShell = ({ initialNotes, initialFolders, initialOpenNoteId, us
 
   // Extracted hooks
   const { navCollapsed, setNavCollapsed, listCollapsed, setListCollapsed } = useNotesPanels()
-  
+
   // Mix initial notes with virtual bookmarks
   const [allStubs, setAllStubs] = useState<NoteStub[]>(initialNotes)
-  
+
   useEffect(() => {
     // Load wiki bookmarks as virtual notes
     getWikiBookmarks().then((bookmarks) => {
@@ -89,8 +89,8 @@ export const NotesShell = ({ initialNotes, initialFolders, initialOpenNoteId, us
     pendingContent,
     setPendingContent,
     selectNote,
-  } = useNoteEditor({ 
-    initialOpenNoteId, 
+  } = useNoteEditor({
+    initialOpenNoteId,
     setStubs: setAllStubs as any // Hook expects real stubs setter, we give it our mixed setter
   })
 
@@ -158,13 +158,13 @@ export const NotesShell = ({ initialNotes, initialFolders, initialOpenNoteId, us
     if (!pendingDeleteId) return
     const id = pendingDeleteId
     const isVirtual = id.startsWith('virtual_')
-    
+
     setPendingDeleteId(null)
     setAllStubs((prev) => prev.filter((n) => n.id !== id))
-    
-    if (selectedId === id) { 
+
+    if (selectedId === id) {
       setSelectedId(null)
-      setCurrentNote(null) 
+      setCurrentNote(null)
     }
 
     if (isVirtual) {
@@ -258,7 +258,7 @@ export const NotesShell = ({ initialNotes, initialFolders, initialOpenNoteId, us
                     <p className="text-sm text-text-secondary mb-4">
                       This is a bookmarked wiki article. To take personal notes, create a new note and link it to this article.
                     </p>
-                    <button 
+                    <button
                       onClick={handleCreate}
                       className="text-xs font-bold text-primary uppercase tracking-widest hover:underline"
                     >
@@ -291,7 +291,7 @@ export const NotesShell = ({ initialNotes, initialFolders, initialOpenNoteId, us
                     <div className="flex items-center gap-1.5 text-[10px] font-medium text-destructive">
                       <div className="w-1 h-1 rounded-full bg-destructive" />
                       Save failed
-                      <button 
+                      <button
                         onClick={() => {
                           if (pendingTitle === null && pendingContent === null) {
                             setPendingTitle(currentNote.title)
@@ -308,7 +308,7 @@ export const NotesShell = ({ initialNotes, initialFolders, initialOpenNoteId, us
                     </div>
                   )}
                 </div>
-                
+
                 <div className="text-[10px] text-text-tertiary tabular-nums">
                   {JSON.stringify(currentNote.content).length} chars
                 </div>

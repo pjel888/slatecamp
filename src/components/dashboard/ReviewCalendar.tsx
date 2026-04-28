@@ -211,20 +211,20 @@ interface ReviewCalendarProps {
 
 export const ReviewCalendar = ({ data }: ReviewCalendarProps) => {
   const router = useRouter()
-  const [reviewModal, setReviewModal] = useState<{ topicId: string; topicName: string } | null>(null)
+  const [_reviewModal, setReviewModal] = useState<{ topicId: string; topicName: string } | null>(null)
   const [hiddenTopics, setHiddenTopics] = useState<string[]>([])
   const hiddenTopicIds = new Set(hiddenTopics)
 
-  const handleModalClose = useCallback(() => {
+  const _handleModalClose = useCallback(() => {
     setReviewModal(null)
   }, [])
 
-  const handleModalComplete = useCallback(() => {
+  const _handleModalComplete = useCallback(() => {
     setReviewModal(null)
     router.refresh()
   }, [router])
 
-  const handleModalEmpty = useCallback((topicId: string) => {
+  const _handleModalEmpty = useCallback((topicId: string) => {
     setHiddenTopics((prev) => (
       prev.includes(topicId) ? prev : [...prev, topicId]
     ))

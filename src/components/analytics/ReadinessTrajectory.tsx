@@ -5,7 +5,7 @@ import { SCIcon } from '@/components/graphics/icons/Icon'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { RichInfoPopover } from '@/components/dashboard/RichInfoPopover'
 import {
-  ResponsiveContainer, ComposedChart, Area, Line, XAxis, YAxis,
+  ResponsiveContainer, ComposedChart, Area, Line as _Line, XAxis, YAxis,
   CartesianGrid, Tooltip, ReferenceLine,
 } from 'recharts'
 import { cn } from '@/lib/utils'

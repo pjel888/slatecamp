@@ -39,7 +39,7 @@ for (const file of files) {
 
 const byCategory = Object.fromEntries(Object.keys(categories).map((category) => [category, findings.filter((f) => f.category === category).length]))
 const largeFiles = files.map((file) => ({ file: rel(file), lines: readFileSync(file, 'utf8').split(/\r?\n/).length })).sort((a, b) => b.lines - a.lines).slice(0, 80)
-const clientFiles = findings.filter((f) => f.category === 'clientComponent').map((f) => f.file)
+const _clientFiles = findings.filter((f) => f.category === 'clientComponent').map((f) => f.file)
 const heavyImportFindings = findings.filter((f) => f.category === 'dynamicImportCandidate' || f.category === 'r3fHeavy')
 
 const result = {

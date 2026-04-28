@@ -45,7 +45,7 @@ export function DimensionLines() {
   const lotD = useDevControlsStore((s) => s.lot.depth)
   const sb = useDevControlsStore((s) => s.result.setbacks.effective)
   const bW = useDevControlsStore((s) => s.result.buildableWidth)
-  const bD = useDevControlsStore((s) => s.result.buildableDepth)
+  const _bD = useDevControlsStore((s) => s.result.buildableDepth)
   const bhl = useDevControlsStore((s) => s.result.bhlMeters)
 
   const y = GEOMETRY_Y.LOT_SURFACE + 0.05

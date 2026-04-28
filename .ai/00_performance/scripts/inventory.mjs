@@ -1,6 +1,6 @@
 import path from 'node:path'
 import { existsSync, readFileSync } from 'node:fs'
-import { ensurePerfDirs, repoPath, RESULTS_DIR, RAW_DIR, rel, routeFromAppFile, safeJsonFile, walk, writeMarkdown } from './perf-utils.mjs'
+import { ensurePerfDirs, repoPath, RESULTS_DIR, rel, routeFromAppFile, safeJsonFile, walk, writeMarkdown } from './perf-utils.mjs'
 
 ensurePerfDirs()
 const packageJson = JSON.parse(readFileSync(repoPath('package.json'), 'utf8'))

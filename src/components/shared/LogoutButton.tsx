@@ -7,7 +7,7 @@ import { SignOut } from '@phosphor-icons/react/dist/ssr'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 
 export function LogoutButton() {
-  const router = useRouter()
+  const _router = useRouter()
 
   async function handleClick() {
     // 1. Clear real Supabase session if it exists (ignoring demo mode)

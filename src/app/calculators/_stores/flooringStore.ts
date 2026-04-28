@@ -36,7 +36,7 @@ const DEFAULT_INPUTS: FlooringInputs = {
   includeSparePercent: 0,
 }
 
-const EMPTY_COMPUTED: FlooringEstimate = {
+const _EMPTY_COMPUTED: FlooringEstimate = {
   grossAreaSqm: 0,
   exclusionAreaSqm: 0,
   netAreaSqm: 0,

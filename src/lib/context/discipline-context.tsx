@@ -35,7 +35,7 @@ export function DisciplineProvider({
   initialDisciplines,
 }: DisciplineProviderProps) {
   const [activeDiscipline, setActiveDiscipline] = useState<Discipline | null>(initialDiscipline);
-  const [allDisciplines, setAllDisciplines] = useState<Discipline[]>(initialDisciplines);
+  const [allDisciplines, _setAllDisciplines] = useState<Discipline[]>(initialDisciplines);
   const router = useRouter();
 
   const refreshActiveDiscipline = useCallback(async () => {

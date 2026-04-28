@@ -1,7 +1,7 @@
 'use server'
 
 import { unstable_cache } from 'next/cache'
-import { createClient, getUser, createServiceClient } from '@/lib/supabase/server'
+import { getUser, createServiceClient } from '@/lib/supabase/server'
 import { wrapResult, wrapError, type AnalyticsResult } from '@/lib/actions/analytics/shared-helpers'
 
 export interface SubjectMastery {

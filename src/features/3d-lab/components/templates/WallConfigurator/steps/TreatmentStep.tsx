@@ -22,7 +22,7 @@ export function TreatmentStep() {
     <div className="flex flex-col gap-4">
       {/* Sides selector */}
       <div className="flex flex-col gap-2">
-        <span className="text-[11px] font-medium text-[#4A5568] uppercase tracking-wide">Sides to Finish</span>
+        <span className="text-[11px] font-medium text-text-secondary uppercase tracking-wide">Sides to Finish</span>
         <div className="grid grid-cols-2 gap-2">
           {([1, 2] as const).map((s) => (
             <button
@@ -32,14 +32,14 @@ export function TreatmentStep() {
               className={[
                 'flex flex-col items-center justify-center border rounded-md p-3 cursor-pointer transition-colors duration-150 gap-1',
                 sides === s
-                  ? 'border-[#1B3FC4] bg-[#EEF2FC]'
-                  : 'border-[#D4DAE3] bg-white hover:border-[#1B3FC4]',
+                  ? 'border-primary bg-primary-50'
+                  : 'border-border bg-white hover:border-primary',
               ].join(' ')}
             >
-              <span className="text-[13px] font-medium text-[#1A2332]">
+              <span className="text-[13px] font-medium text-foreground">
                 {s === 1 ? '1 Side' : 'Both Sides'}
               </span>
-              <span className="text-[11px] text-[#4A5568]">
+              <span className="text-[11px] text-text-secondary">
                 {s === 1 ? 'Single face finish' : 'Finish both faces'}
               </span>
             </button>
@@ -50,16 +50,16 @@ export function TreatmentStep() {
       {/* Treatment layer toggles */}
       {treatmentLayers.length > 0 && (
         <div className="flex flex-col gap-2">
-          <span className="text-[11px] font-medium text-[#4A5568] uppercase tracking-wide">Treatment Layers</span>
+          <span className="text-[11px] font-medium text-text-secondary uppercase tracking-wide">Treatment Layers</span>
           <div className="flex flex-col gap-2">
             {treatmentLayers.map((layer) => (
               <label
                 key={layer.code}
-                className="flex items-center justify-between gap-3 cursor-pointer py-2 px-3 border border-[#D4DAE3] rounded-md bg-white hover:border-[#1B3FC4] transition-colors duration-150"
+                className="flex items-center justify-between gap-3 cursor-pointer py-2 px-3 border border-border rounded-md bg-white hover:border-primary transition-colors duration-150"
               >
                 <div className="min-w-0">
-                  <span className="block text-[13px] font-medium text-[#1A2332]">{layer.label}</span>
-                  <span className="block text-[11px] text-[#4A5568]">
+                  <span className="block text-[13px] font-medium text-foreground">{layer.label}</span>
+                  <span className="block text-[11px] text-text-secondary">
                     {LAYER_DESCRIPTIONS[layer.code] ?? ''}
                   </span>
                 </div>
@@ -79,12 +79,12 @@ export function TreatmentStep() {
       {/* Lason section */}
       {isMasonry && (
         <div className="flex flex-col gap-2">
-          <div className="w-full h-px bg-[#D4DAE3]" />
-          <span className="text-[11px] font-medium text-[#4A5568] uppercase tracking-wide">Concrete Neutralizer (Lason)</span>
-          <label className="flex items-center justify-between gap-3 cursor-pointer py-2 px-3 border border-[#D4DAE3] rounded-md bg-white hover:border-[#1B3FC4] transition-colors duration-150">
+          <div className="w-full h-px bg-border" />
+          <span className="text-[11px] font-medium text-text-secondary uppercase tracking-wide">Concrete Neutralizer (Lason)</span>
+          <label className="flex items-center justify-between gap-3 cursor-pointer py-2 px-3 border border-border rounded-md bg-white hover:border-primary transition-colors duration-150">
             <div className="min-w-0">
-              <span className="block text-[13px] font-medium text-[#1A2332]">Apply Neutralizer</span>
-              <span className="block text-[11px] text-[#4A5568]">
+              <span className="block text-[13px] font-medium text-foreground">Apply Neutralizer</span>
+              <span className="block text-[11px] text-text-secondary">
                 Neutralizes alkalinity before painting
               </span>
             </div>
@@ -99,7 +99,7 @@ export function TreatmentStep() {
 
           {lason.enabled && (
             <div className="flex flex-col gap-1.5 pl-3">
-              <span className="text-[11px] text-[#4A5568]">Product type:</span>
+              <span className="text-[11px] text-text-secondary">Product type:</span>
               <div className="flex flex-col gap-1.5">
                 {(
                   [
@@ -113,13 +113,13 @@ export function TreatmentStep() {
                       name="lason-product"
                       checked={lason.productType === opt.value}
                       onChange={() => setLason({ ...lason, productType: opt.value })}
-                      className="accent-[#1B3FC4]"
+                      className="accent-primary"
                     />
-                    <span className="text-[12px] text-[#1A2332]">{opt.label}</span>
+                    <span className="text-[12px] text-foreground">{opt.label}</span>
                   </label>
                 ))}
               </div>
-              <p className="text-[11px] text-[#8896A7] mt-1">
+              <p className="text-[11px] text-muted-foreground mt-1">
                 Applied after plaster cures to neutralize alkalinity before painting.
               </p>
             </div>

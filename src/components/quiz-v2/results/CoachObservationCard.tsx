@@ -1,7 +1,6 @@
 'use client'
 
 import { ArrowRight, Brain } from '@phosphor-icons/react'
-import Link from 'next/link'
 import { cn } from '@/lib/utils'
 import type { CoachObservation } from '@/types/patent'
 
