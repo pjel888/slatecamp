@@ -1,0 +1,22 @@
+Command: bun run test:e2e:auth-demo:ceo-portal
+Working directory: /Users/philiplewis/slatecamp
+Start: 2026-04-28T11:33:00+08:00
+$ bun scripts/playwright-run.ts auth-demo-ceo-portal
+[2m[WebServer] [22m(node:47545) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:47568) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+(node:47854) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:47854) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[2m[WebServer] [22m⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+  ✓  1 [chromium] › e2e/ceo-portal.spec.ts:16:7 › ceo control plane and audit logging › can access CEO surfaces and exercise admin-role audit flow (24.5s)
+
+  1 passed (33.2s)
+End: 2026-04-28T11:33:34+08:00
+Exit code: 0

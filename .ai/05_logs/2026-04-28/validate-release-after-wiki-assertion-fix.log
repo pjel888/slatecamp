@@ -1,0 +1,1279 @@
+$ bun run type-check && bun run lint && bun run check:entitlements && bun audit && bun run build && bun run test:e2e:prod && bun run test:e2e:auth-demo && bun run test:e2e:auth-demo:learning && bun run test:e2e:auth-demo:restricted && bun run test:e2e:auth-demo:portals && bun run test:e2e:auth-demo:3d-lab && bun run test:e2e:auth-demo:admin-content-admin && bun run test:e2e:auth-demo:admin-sme-reviewer && bun run test:e2e:auth-demo:admin-developer && bun run test:e2e:auth-demo:ceo-portal
+$ bun scripts/type-check.ts
+$ bun run check:storybook && eslint .
+$ bun scripts/check-storybook.ts
+Storybook guard OK: 106 story file(s) scanned; 0 placeholder marker file(s) still tracked.
+Baseline files already cleaned or removed:
+- src/components/shared/action-card.stories.tsx
+- src/components/shared/app-drawer.stories.tsx
+- src/components/shared/breadcrumb.stories.tsx
+- src/components/shared/SlatecampLoader.stories.tsx
+- src/components/shared/content-sidebar.stories.tsx
+- src/components/shared/DashboardHeader.stories.tsx
+- src/components/shared/DashboardPageSkeleton.stories.tsx
+- src/components/shared/data-table.stories.tsx
+- src/components/shared/difficulty-bar.stories.tsx
+- src/components/shared/empty-state.stories.tsx
+- src/components/shared/event-badge.stories.tsx
+- src/components/shared/floating-panel.stories.tsx
+- src/components/shared/InfoTooltip.stories.tsx
+- src/components/shared/legal-citation-badge.stories.tsx
+- src/components/shared/LogoutButton.stories.tsx
+- src/components/shared/mode-button.stories.tsx
+- src/components/shared/Navbar.stories.tsx
+- src/components/shared/NavigationProgress.stories.tsx
+- src/components/shared/Omnibar.stories.tsx
+- src/components/shared/page-header.stories.tsx
+- src/components/shared/PanelCollapseHandle.stories.tsx
+- src/components/shared/question-card.stories.tsx
+- src/components/shared/question-dot-navigator.stories.tsx
+- src/components/shared/QuickStatsRow.stories.tsx
+- src/components/shared/score-display.stories.tsx
+- src/components/shared/section-header.stories.tsx
+- src/components/shared/sidebar-nav.stories.tsx
+- src/components/shared/SourceBadge.stories.tsx
+- src/components/shared/stat-card.stories.tsx
+- src/components/shared/student-view-watermark.stories.tsx
+- src/components/shared/taxonomy-picker.stories.tsx
+- src/components/shared/taxonomy-tree.stories.tsx
+- src/components/shared/ThemeProvider.stories.tsx
+- src/components/shared/ThemeToggle.stories.tsx
+- src/components/shared/WikiSidePanel.stories.tsx
+- src/components/ui/accordion.stories.tsx
+- src/components/ui/alert-dialog.stories.tsx
+- src/components/ui/avatar.stories.tsx
+- src/components/ui/badge.stories.tsx
+- src/components/ui/button.stories.tsx
+- src/components/ui/calendar.stories.tsx
+- src/components/ui/card.stories.tsx
+- src/components/ui/checkbox.stories.tsx
+- src/components/ui/close-button.stories.tsx
+- src/components/ui/command.stories.tsx
+- src/components/ui/dialog.stories.tsx
+- src/components/ui/dropdown-menu.stories.tsx
+- src/components/ui/eyebrow.stories.tsx
+- src/components/ui/form-field.stories.tsx
+- src/components/ui/input.stories.tsx
+- src/components/ui/input-group.stories.tsx
+- src/components/ui/label.stories.tsx
+- src/components/ui/popover.stories.tsx
+- src/components/ui/progress.stories.tsx
+- src/components/ui/progress-bar.stories.tsx
+- src/components/ui/radio-group.stories.tsx
+- src/components/ui/resizable.stories.tsx
+- src/components/ui/scroll-area.stories.tsx
+- src/components/ui/select.stories.tsx
+- src/components/ui/separator.stories.tsx
+- src/components/ui/sheet.stories.tsx
+- src/components/ui/skeleton.stories.tsx
+- src/components/ui/slider.stories.tsx
+- src/components/ui/spinner.stories.tsx
+- src/components/ui/switch.stories.tsx
+- src/components/ui/tabs.stories.tsx
+- src/components/ui/textarea.stories.tsx
+- src/components/ui/toast.stories.tsx
+- src/components/ui/toaster.stories.tsx
+- src/components/ui/toolbar.stories.tsx
+- src/components/ui/tooltip.stories.tsx
+
+/Users/philiplewis/slatecamp/.ai/00_performance/scripts/build-startup.mjs
+  2:22  warning  'readdirSync' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+  2:35  warning  'statSync' is defined but never used. Allowed unused vars must match /^_/u     @typescript-eslint/no-unused-vars
+  3:49  warning  'LOGS_DIR' is defined but never used. Allowed unused vars must match /^_/u     @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/.ai/00_performance/scripts/environment.mjs
+  3:65  warning  'summarizeNumbers' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/.ai/00_performance/scripts/hotspot-audit.mjs
+  42:7  warning  'clientFiles' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/.ai/00_performance/scripts/inventory.mjs
+  3:49  warning  'RAW_DIR' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/.ai/00_performance/scripts/supabase-inventory.mjs
+  3:68  warning  'summarizeNumbers' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/scripts/db-inspect.ts
+  1:10  warning  'createClient' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/scripts/generate-questions.ts
+  116:3   warning  'fileName' is defined but never used. Allowed unused args must match /^_/u             @typescript-eslint/no-unused-vars
+  392:9   warning  'otherFacts' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+  584:19  warning  'arr' is defined but never used. Allowed unused args must match /^_/u                  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/scripts/regen-taxonomy-v2.ts
+  314:43  warning  'catFolder' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/scripts/sanitize-article-refs.ts
+   41:7   warning  'LEGAL_ARTICLE_EXCLUSION' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+   54:16  warning  'sql' is defined but never used. Allowed unused vars must match /^_/u                               @typescript-eslint/no-unused-vars
+  330:28  warning  'count' is assigned a value but never used. Allowed unused vars must match /^_/u                    @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/app/(auth)/error.tsx
+  12:44  warning  'reset' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/app/(protected)/ceo/_components/CeoShell.tsx
+  70:28  warning  'displayName' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/app/api/cron/compute-signals/route.ts
+  15:27  warning  'request' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/app/calculators/_stores/flooringStore.ts
+  39:7  warning  'EMPTY_COMPUTED' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/app/dashboard/area-c/_components/DesignProblemSession.tsx
+  109:31  warning  'setChecklistCompletion' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/app/dashboard/area-c/_components/DevControlsCalculator.tsx
+  79:7  warning  Unused eslint-disable directive (no problems were reported from '@typescript-eslint/no-explicit-any')
+  81:7  warning  Unused eslint-disable directive (no problems were reported from '@typescript-eslint/no-explicit-any')
+
+/Users/philiplewis/slatecamp/src/app/dashboard/area-c/design-quiz/_components/BriefPanel.tsx
+  27:3  warning  Unused eslint-disable directive (no problems were reported from '@typescript-eslint/no-explicit-any')
+  29:3  warning  Unused eslint-disable directive (no problems were reported from '@typescript-eslint/no-explicit-any')
+
+/Users/philiplewis/slatecamp/src/app/dashboard/area-c/design-quiz/_components/DesignQuizSession.tsx
+  4:43  warning  'DesignScenarioQuestion' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/app/dashboard/camptrails/page.tsx
+  7:10  warning  'MapTrifold' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/app/dashboard/flash/_components/FlashSession.tsx
+  3:33  warning  'useEffect' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/app/dashboard/studio/_components/StudioHub.tsx
+  56:29  warning  'userName' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/app/quiz/[mode]/session/[sessionId]/loading.tsx
+  5:20  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+
+/Users/philiplewis/slatecamp/src/app/quiz/[mode]/session/[sessionId]/review/loading.tsx
+  11:30  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+
+/Users/philiplewis/slatecamp/src/components/admin/AssetDetailView.tsx
+  109:19  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+/Users/philiplewis/slatecamp/src/components/admin/AssetList.tsx
+  120:19  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+/Users/philiplewis/slatecamp/src/components/admin/AuditLogViewer.tsx
+  4:27  warning  'DownloadSimple' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/admin/unified-editor/OutlinePanel.tsx
+  93:9  warning  'eiByHeading' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/admin/unified-editor/QuestionsPanel.tsx
+   69:3  warning  Unused eslint-disable directive (no problems were reported from '@typescript-eslint/no-explicit-any')
+  530:3  warning  'index' is defined but never used. Allowed unused args must match /^_/u                                @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/analytics/DifficultyMasteryScatter.tsx
+  3:10  warning  'useState' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/analytics/ExamCountdown.tsx
+  3:10  warning  'CalendarBlank' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/analytics/IRTTrajectoryChart.tsx
+  6:3  warning  'AreaChart' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/analytics/ReadinessTrajectory.tsx
+  8:45  warning  'Line' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/analytics/ReadingDepthHeatmap.tsx
+   21:7   warning  'intensityToBg' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+  118:21  warning  'bgOpacity' is assigned a value but never used. Allowed unused vars must match /^_/u      @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/analytics/TimelineHeatmap.tsx
+  121:9   warning  'visibleWeekSet' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+  235:41  warning  'i' is defined but never used. Allowed unused args must match /^_/u                        @typescript-eslint/no-unused-vars
+  247:27  warning  'tipText' is assigned a value but never used. Allowed unused vars must match /^_/u         @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/assessment/PreAssessmentTeaser.tsx
+  112:11  warning  'score' is assigned a value but never used. Allowed unused vars must match /^_/u      @typescript-eslint/no-unused-vars
+  145:9   warning  'isCorrect' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/assessment/ScoreReveal.tsx
+  52:3  warning  'isRetaker' is assigned a value but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/calculators/FloatingCameraBar.tsx
+  153:22  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+
+/Users/philiplewis/slatecamp/src/components/ceo/TeamTable.tsx
+   48:3   warning  Unused eslint-disable directive (no problems were reported from 'react-hooks/exhaustive-deps')
+  123:16  warning  'member' is defined but never used. Allowed unused args must match /^_/u                        @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/dashboard/BloomTrackerSkeleton.tsx
+  3:10  warning  'Card' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/dashboard/ReviewCalendar.tsx
+  214:10  warning  'reviewModal' is assigned a value but never used. Allowed unused vars must match /^_/u          @typescript-eslint/no-unused-vars
+  218:9   warning  'handleModalClose' is assigned a value but never used. Allowed unused vars must match /^_/u     @typescript-eslint/no-unused-vars
+  222:9   warning  'handleModalComplete' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+  227:9   warning  'handleModalEmpty' is assigned a value but never used. Allowed unused vars must match /^_/u     @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/dashboard/ReviewCalendarSkeleton.tsx
+  3:10  warning  'Card' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/dashboard/StreakRibbonSkeleton.tsx
+  3:10  warning  'cn' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/dashboard/SubjectMasteryCard.tsx
+  11:10  warning  'EmptyState' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/dashboard/SubjectMasterySkeleton.tsx
+  3:10  warning  'Card' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/dashboard/upgrade/UpgradeButtons.tsx
+  13:9  warning  'router' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/graphics/icons/iconMap.ts
+  9:16  warning  'Stop' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/interactive-illustrations/2D/SetbackIllustration.tsx
+    3:20  warning  'useRef' is defined but never used. Allowed unused vars must match /^_/u       @typescript-eslint/no-unused-vars
+    3:28  warning  'useEffect' is defined but never used. Allowed unused vars must match /^_/u    @typescript-eslint/no-unused-vars
+  463:9   warning  'bh' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/marketing/HeroSection.tsx
+  10:10  warning  'cn' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/notes/NoteEditor.tsx
+  23:10  warning  'content' is assigned a value but never used. Allowed unused vars must match /^_/u     @typescript-eslint/no-unused-vars
+  23:19  warning  'setContent' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/notes/NotesShell.tsx
+  19:26  warning  'useNotesList' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/notes/QuickCaptureDrawer.tsx
+  80:5  warning  Unused eslint-disable directive (no problems were reported from 'react-hooks/exhaustive-deps')
+
+/Users/philiplewis/slatecamp/src/components/quiz-v2/BaseQuizShell.tsx
+  18:7  warning  'QuestionPalette' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/quiz-v2/PacingNudge.tsx
+  32:9  warning  'elapsedMs' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/quiz-v2/QuizFooter.tsx
+  21:3  warning  'hasAnswered' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/quiz-v2/SocraticExplorer.tsx
+  82:5  warning  Unused eslint-disable directive (no problems were reported from 'react-hooks/exhaustive-deps')
+
+/Users/philiplewis/slatecamp/src/components/quiz-v2/SwipeTooltip.tsx
+  13:32  warning  'targetRef' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/quiz-v2/results/CoachObservationCard.tsx
+  4:8  warning  'Link' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/quiz-v2/results/PredictionComparison.tsx
+  83:10  warning  'history' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/quiz-v2/setup/IntroSlide2.tsx
+  7:42  warning  'TaxonomySubtopic' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/quiz-v2/setup/QuestionCountPills.tsx
+  7:6  warning  'CountOption' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/r3f/useDisposeOnUnmount.ts
+  65:5  warning  Unused eslint-disable directive (no problems were reported from 'react-hooks/exhaustive-deps')
+
+/Users/philiplewis/slatecamp/src/components/shared/InfoTooltip.tsx
+  21:3  warning  'content' is defined but never used. Allowed unused args must match /^_/u         @typescript-eslint/no-unused-vars
+  23:3  warning  'side' is assigned a value but never used. Allowed unused args must match /^_/u   @typescript-eslint/no-unused-vars
+  24:3  warning  'align' is assigned a value but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/shared/LogoutButton.tsx
+  10:9  warning  'router' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/shared/Omnibar.stories.tsx
+  40:7  warning  'mockResults' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/shared/Omnibar.tsx
+  3:31  warning  'useMemo' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/shared/taxonomy-tree.tsx
+  110:14  warning  'e' is defined but never used                                               @typescript-eslint/no-unused-vars
+  226:3   warning  'isDimmed' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/shared/user-avatar.tsx
+  3:10  warning  'cn' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/sidebar/Sidebar.tsx
+  24:46  warning  'isAdmin' is defined but never used. Allowed unused args must match /^_/u          @typescript-eslint/no-unused-vars
+  24:55  warning  'isDevMode' is defined but never used. Allowed unused args must match /^_/u        @typescript-eslint/no-unused-vars
+  25:39  warning  'toggle' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/testing/hub/HeroConfigurator.stories.tsx
+  3:10  warning  'TooltipProvider' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/testing/hub/HeroConfigurator.tsx
+  3:31  warning  'useMemo' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/testing/hub/SessionsTable.tsx
+  20:10  warning  'ROUTES' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/trails/TrailStepCard.tsx
+  32:10  warning  'nodeIds' is defined but never used. Allowed unused args must match /^_/u       @typescript-eslint/no-unused-vars
+  34:12  warning  'nodeIds' is defined but never used. Allowed unused args must match /^_/u       @typescript-eslint/no-unused-vars
+  39:3   warning  'enrollmentId' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  40:3   warning  'trailSlug' is defined but never used. Allowed unused args must match /^_/u     @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/ui/avatar.stories.tsx
+  2:18  warning  'AvatarImage' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/ui/badge.tsx
+  5:42  warning  'Fire' is defined but never used. Allowed unused vars must match /^_/u    @typescript-eslint/no-unused-vars
+  5:64  warning  'Trophy' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/ui/list-group.tsx
+  111:7  warning  The attribute aria-disabled is not supported by the role listitem. This role is implicit on the element li  jsx-a11y/role-supports-aria-props
+
+/Users/philiplewis/slatecamp/src/components/ui/stepper.tsx
+  2:20  warning  'VariantProps' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/wiki/blocks/ElaborativeInterrogation.tsx
+  47:3  warning  'type' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/wiki/navigation/WikiRightSidebar.tsx
+   4:10  warning  'Brain' is defined but never used. Allowed unused vars must match /^_/u                        @typescript-eslint/no-unused-vars
+   4:51  warning  'FileText' is defined but never used. Allowed unused vars must match /^_/u                     @typescript-eslint/no-unused-vars
+  43:3   warning  'practiceHref' is defined but never used. Allowed unused args must match /^_/u                 @typescript-eslint/no-unused-vars
+  44:3   warning  'practiceLabel' is defined but never used. Allowed unused args must match /^_/u                @typescript-eslint/no-unused-vars
+  73:9   warning  'handleStudyInNotes' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/wiki/navigation/WikiSidebar.tsx
+  10:10  warning  'cn' is defined but never used. Allowed unused vars must match /^_/u              @typescript-eslint/no-unused-vars
+  82:3   warning  'disciplineName' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+  83:3   warning  'collapsed' is defined but never used. Allowed unused args must match /^_/u       @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/wiki/shared/WikiReference.tsx
+  30:9   warning  'router' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+  43:14  warning  'err' is defined but never used                                                    @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/wiki/widgets/Lab3DWidget.tsx
+  13:3  warning  'TemplateType' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/components/wiki/widgets/dsgn013/BedSizeComparator.tsx
+  84:25  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+
+/Users/philiplewis/slatecamp/src/components/wiki/widgets/dsgn013/ProportionComparator.tsx
+  92:25  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/DevControlsModule/canvas/annotations/DimensionLines.tsx
+  48:9  warning  'bD' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/DevControlsModule/canvas/materials.ts
+  6:17  warning  'OPACITY' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/DevControlsModule/dashboard/splits/FlarControls.tsx
+  19:9  warning  'currentFlar' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/components/CategoryGrid.tsx
+  125:40  warning  'basePath' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/components/ModuleCard.tsx
+  25:38  warning  'basePath' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/components/ModuleViewer.tsx
+   93:5   warning  Unused eslint-disable directive (no problems were reported from 'react-hooks/exhaustive-deps')
+  123:9   warning  'hotspotCount' is assigned a value but never used. Allowed unused vars must match /^_/u                                                                             @typescript-eslint/no-unused-vars
+  171:22  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  182:22  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/components/shell/CompassRose.tsx
+  7:18  warning  'useCallback' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/components/shell/LabViewportFrame.tsx
+  161:19  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  183:19  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  195:17  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/components/shell/ViewportShell.tsx
+  116:3  warning  Unused eslint-disable directive (no problems were reported from 'react-hooks/exhaustive-deps')
+  122:3  warning  Unused eslint-disable directive (no problems were reported from 'react-hooks/exhaustive-deps')
+  170:3  warning  Unused eslint-disable directive (no problems were reported from 'react-hooks/exhaustive-deps')
+  179:3  warning  Unused eslint-disable directive (no problems were reported from 'react-hooks/exhaustive-deps')
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/components/stairway/EvacuationControls.tsx
+  4:10  warning  'cn' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/components/stairway/MaterialSelectorPanel.tsx
+  4:10  warning  'Badge' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/components/stairway/NosingDetailPanel.tsx
+  83:3  warning  'limit' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/components/templates/WallConfigurator/AreaSummaryBar.tsx
+  10:20  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/components/templates/WallConfigurator/BOMPanel.tsx
+   74:17  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+   77:23  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+   78:23  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+   80:25  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+   91:23  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+   97:23  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  105:23  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  531:22  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  533:25  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  536:24  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  548:17  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  549:17  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  556:51  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  564:22  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  566:25  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  568:25  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  573:22  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  574:25  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  575:25  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  576:25  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  577:25  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  584:26  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  595:55  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  622:28  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  624:31  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  643:22  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  645:22  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  654:23  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  662:23  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  671:26  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  672:29  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  673:29  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  686:23  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  690:23  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  690:42  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/components/templates/WallConfigurator/ConfigPanel.tsx
+  13:20  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  14:23  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  51:22  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  55:21  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/components/templates/WallConfigurator/SponsorPalette.tsx
+  16:20  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  34:17  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  35:30  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  39:29  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/components/templates/WallConfigurator/steps/ColorSponsorStep.tsx
+   33:25  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+   45:23  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+   46:23  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+   52:33  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+   64:22  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+   75:21  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+   76:21  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  102:19  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  103:32  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  107:31  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  119:23  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  122:27  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  124:29  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/components/templates/WallConfigurator/steps/CoreTypeStep.tsx
+  34:19  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  46:28  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  50:23  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  64:27  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/components/templates/WallConfigurator/steps/FinishTypeStep.tsx
+   45:21  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+   47:21  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+   48:21  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+   51:31  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+   54:35  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+   57:31  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+   66:27  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+   76:23  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+   77:23  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  104:25  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  117:23  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  118:23  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  128:26  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  138:21  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/components/templates/WallConfigurator/steps/GeometryStep.tsx
+  16:28  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  24:23  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  28:28  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  36:23  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  40:20  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/components/templates/WallConfigurator/steps/TreatmentStep.tsx
+   25:25  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+   35:21  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+   36:21  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+   39:31  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+   42:31  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+   53:27  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+   58:27  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+   61:35  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+   62:35  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+   82:26  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+   83:27  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+   84:28  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+   86:31  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+   87:31  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  102:31  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  116:33  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  118:37  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  122:28  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/config/modules/01-building-code/attic-requirements.ts
+  23:9  warning  'riseH' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/config/modules/01-building-code/development-controls-pso.ts
+  129:9  warning  'actualPSO' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+  134:9  warning  'maxTGFA' is assigned a value but never used. Allowed unused vars must match /^_/u    @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/config/modules/01-building-code/exit-width-calculator.ts
+  22:9  warning  'totalMinW' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/config/modules/01-building-code/natural-ventilation-rules.ts
+  84:220  warning  'p' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/config/modules/01-building-code/nbcp-envelope.ts
+  135:9  warning  'tla' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+  136:9  warning  'pso' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/config/modules/02-accessibility/ramp-accessible-toilet.ts
+  334:16  warning  'p' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/config/modules/03-fire-code/fire-rated-barrier.ts
+  5:10  warning  'num' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/config/modules/03-fire-code/fire-resistance-ratings.ts
+  6:10  warning  'num' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/config/modules/03-fire-code/fire-travel-distance.ts
+  381:13  warning  'max' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/config/modules/04-structural/base-shear-calculator.ts
+  41:9  warning  'scale' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/config/modules/04-structural/seismic-parameter-map.ts
+  198:9  warning  'Fv' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/config/modules/04-structural/seismic-zone-map.ts
+  5:10  warning  'num' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/config/modules/04-structural/structural-systems-comparison.ts
+  48:11  warning  'heightScale' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/config/modules/05-plumbing/fixture-unit-values.ts
+  5:10  warning  'num' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/config/modules/10-materials/standard-material-sheets.ts
+  5:10  warning  'yOff' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/config/modules/10-materials/unified-wall-configurator.ts
+   19:7   warning  'num' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+  396:16  warning  'p' is defined but never used. Allowed unused args must match /^_/u             @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/config/modules/10-materials/wall-types.ts
+  5:15  warning  'Vector3Tuple' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/config/modules/13-planning/building-typology-institutional.ts
+  17:9  warning  'capacity' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/config/modules/13-planning/building-typology-residential.ts
+  17:9  warning  'br' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/config/modules/13-planning/erosion-control-fence.ts
+  56:9  warning  'slopeAngle' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/config/modules/13-planning/housing-lot-minimums.ts
+  48:9  warning  'maxCoverage' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/config/modules/13-planning/housing-open-space.ts
+  46:9  warning  'sideSB' is assigned a value but never used. Allowed unused vars must match /^_/u    @typescript-eslint/no-unused-vars
+  50:9  warning  'lotColor' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/config/modules/14-prof-practice/csi-masterformat-explorer.ts
+  5:10  warning  'num' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/config/modules/15-estimating/quantity-takeoff-room.ts
+  59:149  warning  'p' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/config/modules/16-site-dev/carport-abutment-rules.ts
+  53:11  warning  'perfY' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/constants/nbcp.test.ts
+  3:66  warning  'LotType' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/scenes/NBCPEnvelope/NBCPTelemetry.tsx
+  47:21  warning  'displayHeight' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/stores/useLabNavigationStore.ts
+  27:73  warning  'get' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/stores/useWallLabStore.ts
+  80:9  warning  'opts' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/templates/AnimatedSequence.tsx
+   82:9   warning  'handleSliderChange' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+  131:29  warning  'v' is defined but never used. Allowed unused args must match /^_/u                            @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/templates/CutawaySection.tsx
+  181:76  warning  Unused eslint-disable directive (no problems were reported from 'react-hooks/exhaustive-deps')
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/templates/ExplodedAssembly.tsx
+  41:9  warning  'handleSliderChange' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/templates/FloorPlanWalkthrough.tsx
+  128:76  warning  Unused eslint-disable directive (no problems were reported from 'react-hooks/exhaustive-deps')
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/templates/ParametricScene.tsx
+  28:76  warning  Unused eslint-disable directive (no problems were reported from 'react-hooks/exhaustive-deps')
+
+/Users/philiplewis/slatecamp/src/features/3d-lab/templates/WallConfiguratorRenderer.tsx
+  449:44  warning  'config' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/features/wall-configurator/components/WallConfigurator.tsx
+  30:10  warning  'nextInSequence' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/features/wall-configurator/components/steps/Step1CoreSelect.tsx
+   86:21  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+   90:28  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+   96:32  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+   96:51  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  103:44  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  104:37  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  121:21  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+
+/Users/philiplewis/slatecamp/src/features/wall-configurator/components/steps/Step5Treatment.tsx
+  45:21  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+
+/Users/philiplewis/slatecamp/src/features/wall-configurator/components/steps/Step6Finish.tsx
+   80:29  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+  121:29  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+
+/Users/philiplewis/slatecamp/src/features/wall-configurator/components/steps/Step7BOM.tsx
+  192:22  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+
+/Users/philiplewis/slatecamp/src/hooks/notes/useNoteEditor.ts
+  32:3  warning  Unused eslint-disable directive (no problems were reported from 'react-hooks/exhaustive-deps')
+
+/Users/philiplewis/slatecamp/src/lib/actions/analytics-data.ts
+  6:58  warning  'TaxNode' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/lib/actions/analytics.test.ts
+  25:7  warning  'makeFromStub' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/lib/actions/analytics.ts
+  5:31  warning  'HeatmapNode' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+  7:58  warning  'TaxNode' is defined but never used. Allowed unused vars must match /^_/u      @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/lib/actions/analytics/chart-data.ts
+    5:10  warning  'PACING_TARGET_MS' is defined but never used. Allowed unused vars must match /^_/u      @typescript-eslint/no-unused-vars
+    5:28  warning  'PASSING_ACCURACY' is defined but never used. Allowed unused vars must match /^_/u      @typescript-eslint/no-unused-vars
+    5:83  warning  'getSubjectColor' is defined but never used. Allowed unused vars must match /^_/u       @typescript-eslint/no-unused-vars
+    6:10  warning  'fetchTaxonomyNodeMap' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+    6:37  warning  'TaxNode' is defined but never used. Allowed unused vars must match /^_/u               @typescript-eslint/no-unused-vars
+    7:10  warning  'MODE_COLORS' is defined but never used. Allowed unused vars must match /^_/u           @typescript-eslint/no-unused-vars
+  588:11  warning  'masteryMap' is assigned a value but never used. Allowed unused vars must match /^_/u   @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/lib/actions/calibration-score-update.ts
+  80:7   warning  'partlyTotal' is assigned a value but never used. Allowed unused vars must match /^_/u    @typescript-eslint/no-unused-vars
+  81:27  warning  'partlyCorrect' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/lib/actions/ceo/export-actions.ts
+  7:22  warning  'formatPercent' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/lib/actions/ceo/team-actions.ts
+  8:10  warning  'ROUTES' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/lib/actions/daily-dose/actions.ts
+  5:15  warning  'DailyDose' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/lib/actions/daily-dose/generate.ts
+    4:15  warning  'SupabaseClient' is defined but never used. Allowed unused vars must match /^_/u              @typescript-eslint/no-unused-vars
+  141:7   warning  'avgSessionMinutes' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/lib/actions/daily-mission.ts
+   4:15  warning  'TestMode' is defined but never used. Allowed unused vars must match /^_/u               @typescript-eslint/no-unused-vars
+  34:9   warning  'disciplineId' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+  73:42  warning  'missionId' is defined but never used. Allowed unused args must match /^_/u              @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/lib/actions/flash-cards.ts
+  3:24  warning  'getUser' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/lib/actions/mastery-actions.ts
+  3:10  warning  'createClient' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/lib/actions/mastery.ts
+  4:10  warning  'createClient' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/lib/actions/mastery/update-mastery-stats.ts
+  26:5  warning  'difficulty' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/lib/actions/quiz-v2/check-generation-answer.ts
+  29:9  warning  'supabase' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/lib/actions/quiz-v2/end-session.ts
+  19:10  warning  'ROUTES' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/lib/actions/quiz-v2/flag-question.ts
+  3:10  warning  'revalidateTag' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+  5:10  warning  'ROUTES' is defined but never used. Allowed unused vars must match /^_/u         @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/lib/actions/quiz-v2/skip-question.ts
+  3:10  warning  'revalidateTag' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/lib/actions/quiz-v2/successive-relearning.ts
+  3:24  warning  'getUser' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/lib/actions/session-actions.ts
+  2:10  warning  'createClient' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/lib/actions/stats-actions.ts
+   2:10  warning  'createClient' is defined but never used. Allowed unused vars must match /^_/u    @typescript-eslint/no-unused-vars
+  12:15  warning  'SupabaseClient' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/lib/actions/wiki-interactions.ts
+  4:10  warning  'revalidatePath' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/lib/context/discipline-context.tsx
+  38:26  warning  'setAllDisciplines' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/lib/hooks/use-toast.ts
+  22:7  warning  'actionTypes' is assigned a value but only used as a type. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/lib/inference/classifyConfidence.ts
+  18:7  warning  'VELOCITY_DELIBERATE_MIN' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+  19:7  warning  'VELOCITY_DELIBERATE_MAX' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/lib/lot-geometry/__tests__/lot-geometry.test.ts
+  76:11  warning  'segments' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+  81:11  warning  'rect' is assigned a value but never used. Allowed unused vars must match /^_/u      @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/lib/lot-geometry/inset.ts
+  6:26  warning  'LotEdge' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/lib/pd1096/computationEngine.ts
+  50:11  warning  'lotPoly' is assigned a value but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/lib/pd1096/zoningTables.ts
+  15:40  warning  'PerSideSetbacks' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/lib/quiz/question-selection.ts
+   5:34  warning  'QuizMode' is defined but never used. Allowed unused vars must match /^_/u     @typescript-eslint/no-unused-vars
+  47:3   warning  'userMastery' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/lib/submission/stateMachine.ts
+  33:10  warning  'isValidTransition' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/lib/utils/question.ts
+  31:18  warning  'i' is defined but never used. Allowed unused args must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/stores/dev-store.ts
+  3:35  warning  'OrgMemberRole' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/stores/useNotificationStore.ts
+  2:10  warning  'createClient' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+
+/Users/philiplewis/slatecamp/src/types/app.ts
+  811:48  warning  Avoid hardcoded hex in Tailwind classes. Use a design token (e.g., text-primary, bg-muted, border-border) or a shade scale (e.g., bg-primary-50, text-success-700)  no-restricted-syntax
+
+/Users/philiplewis/slatecamp/src/types/testing.ts
+  1:25  warning  'SessionStatus' is defined but never used. Allowed unused vars must match /^_/u  @typescript-eslint/no-unused-vars
+  1:40  warning  'Question' is defined but never used. Allowed unused vars must match /^_/u       @typescript-eslint/no-unused-vars
+  1:50  warning  'QuizSession' is defined but never used. Allowed unused vars must match /^_/u    @typescript-eslint/no-unused-vars
+
+✖ 343 problems (0 errors, 343 warnings)
+  0 errors and 18 warnings potentially fixable with the `--fix` option.
+
+$ bun run scripts/check-entitlement-legacy-usage.ts
+Entitlement legacy usage check passed.
+[0.03ms] ".env.local"
+[0m[1mbun audit [0m[2mv1.3.10 (30e609e0)[0m
+No vulnerabilities found
+$ next build
+▲ Next.js 16.2.3 (Turbopack)
+- Environments: .env.local
+- Experiments (use with caution):
+  · serverActions
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 15.3s
+  Running TypeScript ...
+  Finished TypeScript in 19.0s ...
+  Collecting page data using 7 workers ...
+  Generating static pages using 7 workers (0/102) ...
+  Generating static pages using 7 workers (25/102)
+  Generating static pages using 7 workers (50/102)
+  Generating static pages using 7 workers (76/102)
+✓ Generating static pages using 7 workers (102/102) in 1035ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ƒ /
+├ ○ /_not-found
+├ ƒ /about
+├ ƒ /admin
+├ ƒ /admin/3d-models
+├ ƒ /admin/activity
+├ ƒ /admin/assets
+├ ƒ /admin/assets/[id]
+├ ƒ /admin/audit
+├ ƒ /admin/knowledge
+├ ƒ /admin/knowledge/[id]
+├ ƒ /admin/knowledge/analytics
+├ ƒ /admin/knowledge/import
+├ ƒ /admin/knowledge/new
+├ ƒ /admin/knowledge/questions
+├ ƒ /admin/knowledge/questions/[id]
+├ ƒ /admin/knowledge/questions/design-problems
+├ ƒ /admin/knowledge/questions/design-problems/[id]
+├ ƒ /admin/knowledge/questions/new
+├ ƒ /admin/knowledge/questions/scenarios
+├ ƒ /admin/knowledge/questions/scenarios/[id]
+├ ○ /admin/login
+├ ƒ /admin/pipeline
+├ ƒ /admin/preview/[previewId]
+├ ƒ /admin/reviews
+├ ƒ /admin/search
+├ ƒ /admin/settings
+├ ƒ /admin/taxonomy
+├ ƒ /admin/taxonomy/coverage
+├ ƒ /admin/wiki
+├ ƒ /api/admin/flags
+├ ƒ /api/ai/embed
+├ ƒ /api/ai/generate-questions
+├ ƒ /api/ai/socratic
+├ ƒ /api/ai/study-agent
+├ ƒ /api/ai/tutor
+├ ƒ /api/cron/compute-signals
+├ ƒ /api/cron/focus-review-scan
+├ ƒ /api/og/score
+├ ƒ /api/payments/checkout
+├ ƒ /api/webhooks/lemonsqueezy
+├ ƒ /api/webhooks/payrex
+├ ƒ /auth/callback
+├ ○ /auth/reset-password
+├ ○ /calculators
+├ ○ /calculators/chb
+├ ○ /calculators/drywall
+├ ○ /calculators/flooring
+├ ○ /calculators/paint
+├ ƒ /ceo
+├ ƒ /ceo/analytics
+├ ƒ /ceo/financials
+├ ƒ /ceo/insights
+├ ƒ /ceo/team
+├ ƒ /ceo/team/admin-roles
+├ ƒ /ceo/team/permission-audit
+├ ƒ /contact
+├ ƒ /dashboard
+├ ƒ /dashboard/3d-lab
+├ ƒ /dashboard/3d-lab/[moduleId]
+├ ƒ /dashboard/analytics
+├ ƒ /dashboard/analytics/advanced
+├ ƒ /dashboard/area-c
+├ ƒ /dashboard/area-c/calculator
+├ ƒ /dashboard/area-c/design-problems
+├ ƒ /dashboard/area-c/design-problems/[problemId]
+├ ƒ /dashboard/area-c/design-quiz
+├ ƒ /dashboard/area-c/design-quiz/[scenarioId]
+├ ƒ /dashboard/assessment
+├ ƒ /dashboard/camptrails
+├ ƒ /dashboard/camptrails/[slug]
+├ ƒ /dashboard/camptrails/[slug]/day/[dayNumber]/complete
+├ ƒ /dashboard/camptrails/[slug]/today
+├ ƒ /dashboard/code-updates
+├ ƒ /dashboard/cram-card
+├ ƒ /dashboard/dae-mode
+├ ƒ /dashboard/drills
+├ ƒ /dashboard/drills/sessions
+├ ƒ /dashboard/exam-outcome
+├ ƒ /dashboard/flash
+├ ƒ /dashboard/flash/[category]
+├ ƒ /dashboard/heatmap
+├ ƒ /dashboard/notes
+├ ƒ /dashboard/notifications
+├ ƒ /dashboard/pods
+├ ƒ /dashboard/pods/[podId]
+├ ƒ /dashboard/professional
+├ ƒ /dashboard/results-day
+├ ƒ /dashboard/score-reveal
+├ ƒ /dashboard/settings
+├ ƒ /dashboard/settings/billing
+├ ƒ /dashboard/settings/developer
+├ ƒ /dashboard/studio
+├ ƒ /dashboard/trail
+├ ƒ /dashboard/trails
+├ ƒ /dashboard/upgrade
+├ ƒ /dashboard/welcome-pro
+├ ƒ /dashboard/wiki
+├ ƒ /dashboard/wiki/[slug]
+├ ƒ /developer
+├ ƒ /developer/api-reference
+├ ƒ /developer/architecture
+├ ƒ /developer/status
+├ ƒ /developer/status/database
+├ ƒ /developer/status/infrastructure
+├ ƒ /developer/tools
+├ ƒ /developer/tools/console
+├ ƒ /developer/tools/db
+├ ƒ /developer/tools/logs
+├ ƒ /developer/tools/test-data
+├ ○ /forgot-password
+├ ○ /icon.svg
+├ ○ /login
+├ ƒ /onboarding
+├ ƒ /onboarding/comp-exam
+├ ƒ /pricing
+├ ○ /quiz
+├ ƒ /quiz/[mode]/session/[sessionId]
+├ ƒ /quiz/[mode]/session/[sessionId]/results
+├ ƒ /quiz/[mode]/session/[sessionId]/review
+├ ƒ /quiz/[mode]/setup
+├ ○ /register
+├ ○ /settings
+├ ○ /test-3d
+├ ƒ /tools
+├ ƒ /tools/floor-tiles-calculator
+├ ƒ /tools/lot-plotter
+├ ƒ /tools/wall-paint-calculator
+└ ○ /try
+
+
+ƒ Proxy (Middleware)
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
+$ bun scripts/playwright-run.ts prod
+[2m[WebServer] [22m(node:49710) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 50 tests using 4 workers
+
+(node:49712) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:49711) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:49713) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:49714) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:49711) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:49713) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:49714) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:49712) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 [mobile-chromium] › e2e/access-boundaries.spec.ts:38:9 › unauthenticated access boundaries › /dashboard redirects to /login (22ms)
+  ✓   3 [chromium] › e2e/access-boundaries.spec.ts:38:9 › unauthenticated access boundaries › /dashboard redirects to /login (21ms)
+  ✓   5 [mobile-chromium] › e2e/access-boundaries.spec.ts:38:9 › unauthenticated access boundaries › /dashboard/settings redirects to /login (7ms)
+  ✓   6 [chromium] › e2e/access-boundaries.spec.ts:38:9 › unauthenticated access boundaries › /dashboard/settings redirects to /login (6ms)
+  ✓   7 [mobile-chromium] › e2e/access-boundaries.spec.ts:38:9 › unauthenticated access boundaries › /dashboard/assessment redirects to /login (8ms)
+  ✓   8 [chromium] › e2e/access-boundaries.spec.ts:38:9 › unauthenticated access boundaries › /dashboard/assessment redirects to /login (8ms)
+  ✓   9 [mobile-chromium] › e2e/access-boundaries.spec.ts:38:9 › unauthenticated access boundaries › /dashboard/welcome-pro redirects to /login (8ms)
+  ✓  10 [chromium] › e2e/access-boundaries.spec.ts:38:9 › unauthenticated access boundaries › /dashboard/welcome-pro redirects to /login (7ms)
+  ✓  11 [mobile-chromium] › e2e/access-boundaries.spec.ts:38:9 › unauthenticated access boundaries › /developer redirects to /login (5ms)
+  ✓  12 [chromium] › e2e/access-boundaries.spec.ts:38:9 › unauthenticated access boundaries › /developer redirects to /login (4ms)
+  ✓  13 [mobile-chromium] › e2e/access-boundaries.spec.ts:38:9 › unauthenticated access boundaries › /ceo redirects to /login (5ms)
+  ✓  14 [chromium] › e2e/access-boundaries.spec.ts:38:9 › unauthenticated access boundaries › /ceo redirects to /login (6ms)
+  ✓  15 [mobile-chromium] › e2e/access-boundaries.spec.ts:38:9 › unauthenticated access boundaries › /admin redirects to /admin/login (10ms)
+  ✓  16 [chromium] › e2e/access-boundaries.spec.ts:38:9 › unauthenticated access boundaries › /admin redirects to /admin/login (9ms)
+  ✓  17 [mobile-chromium] › e2e/access-boundaries.spec.ts:38:9 › unauthenticated access boundaries › /admin/knowledge redirects to /admin/login (5ms)
+  ✓  18 [chromium] › e2e/access-boundaries.spec.ts:38:9 › unauthenticated access boundaries › /admin/knowledge redirects to /admin/login (4ms)
+  ✓  19 [mobile-chromium] › e2e/access-boundaries.spec.ts:45:7 › unauthenticated access boundaries › /auth/callback without code returns a deterministic auth error (21ms)
+  ✓  20 [chromium] › e2e/access-boundaries.spec.ts:45:7 › unauthenticated access boundaries › /auth/callback without code returns a deterministic auth error (21ms)
+  ✓   4 [chromium] › e2e/launch-smoke.spec.ts:59:9 › launch-critical public routes › / renders expected public content (613ms)
+  ✓   2 [mobile-chromium] › e2e/launch-smoke.spec.ts:59:9 › launch-critical public routes › / renders expected public content (792ms)
+  ✓  21 [chromium] › e2e/launch-smoke.spec.ts:59:9 › launch-critical public routes › /login renders expected public content (187ms)
+  ✓  22 [mobile-chromium] › e2e/launch-smoke.spec.ts:59:9 › launch-critical public routes › /login renders expected public content (211ms)
+  ✓  23 [chromium] › e2e/launch-smoke.spec.ts:59:9 › launch-critical public routes › /forgot-password renders expected public content (214ms)
+  ✓  24 [mobile-chromium] › e2e/launch-smoke.spec.ts:59:9 › launch-critical public routes › /forgot-password renders expected public content (227ms)
+  ✓  25 [chromium] › e2e/launch-smoke.spec.ts:59:9 › launch-critical public routes › /auth/reset-password renders expected public content (219ms)
+  ✓  26 [mobile-chromium] › e2e/launch-smoke.spec.ts:59:9 › launch-critical public routes › /auth/reset-password renders expected public content (248ms)
+  ✓  27 [chromium] › e2e/launch-smoke.spec.ts:59:9 › launch-critical public routes › /pricing renders expected public content (276ms)
+  ✓  29 [chromium] › e2e/launch-smoke.spec.ts:59:9 › launch-critical public routes › /about renders expected public content (276ms)
+  ✓  28 [mobile-chromium] › e2e/launch-smoke.spec.ts:59:9 › launch-critical public routes › /pricing renders expected public content (338ms)
+  ✓  30 [chromium] › e2e/launch-smoke.spec.ts:59:9 › launch-critical public routes › /contact renders expected public content (276ms)
+  ✓  31 [mobile-chromium] › e2e/launch-smoke.spec.ts:59:9 › launch-critical public routes › /about renders expected public content (320ms)
+  ✓  32 [chromium] › e2e/launch-smoke.spec.ts:59:9 › launch-critical public routes › /register renders expected public content (189ms)
+  ✓  33 [mobile-chromium] › e2e/launch-smoke.spec.ts:59:9 › launch-critical public routes › /contact renders expected public content (259ms)
+  ✓  34 [chromium] › e2e/launch-smoke.spec.ts:59:9 › launch-critical public routes › /try renders expected public content (199ms)
+  ✓  36 [chromium] › e2e/launch-smoke.spec.ts:83:9 › launch-critical redirect shims › /test-3d redirects to /dashboard/3d-lab (24ms)
+  ✓  37 [chromium] › e2e/launch-smoke.spec.ts:83:9 › launch-critical redirect shims › /dashboard/trail redirects to /dashboard/camptrails (4ms)
+  ✓  38 [chromium] › e2e/launch-smoke.spec.ts:83:9 › launch-critical redirect shims › /dashboard/trails redirects to /dashboard/camptrails (3ms)
+  ✓  39 [chromium] › e2e/launch-smoke.spec.ts:83:9 › launch-critical redirect shims › /dashboard/heatmap redirects to /dashboard/analytics (2ms)
+  ✓  40 [chromium] › e2e/launch-smoke.spec.ts:83:9 › launch-critical redirect shims › /dashboard/settings/billing redirects to /dashboard/settings (5ms)
+  ✓  41 [chromium] › e2e/launch-smoke.spec.ts:83:9 › launch-critical redirect shims › /dashboard/settings/developer redirects to /developer (13ms)
+  ✓  42 [chromium] › e2e/launch-smoke.spec.ts:83:9 › launch-critical redirect shims › /admin/wiki redirects to /admin/knowledge (3ms)
+  ✓  35 [mobile-chromium] › e2e/launch-smoke.spec.ts:59:9 › launch-critical public routes › /register renders expected public content (211ms)
+  ✓  43 [mobile-chromium] › e2e/launch-smoke.spec.ts:59:9 › launch-critical public routes › /try renders expected public content (203ms)
+  ✓  44 [mobile-chromium] › e2e/launch-smoke.spec.ts:83:9 › launch-critical redirect shims › /test-3d redirects to /dashboard/3d-lab (12ms)
+  ✓  45 [mobile-chromium] › e2e/launch-smoke.spec.ts:83:9 › launch-critical redirect shims › /dashboard/trail redirects to /dashboard/camptrails (2ms)
+  ✓  46 [mobile-chromium] › e2e/launch-smoke.spec.ts:83:9 › launch-critical redirect shims › /dashboard/trails redirects to /dashboard/camptrails (2ms)
+  ✓  47 [mobile-chromium] › e2e/launch-smoke.spec.ts:83:9 › launch-critical redirect shims › /dashboard/heatmap redirects to /dashboard/analytics (2ms)
+  ✓  48 [mobile-chromium] › e2e/launch-smoke.spec.ts:83:9 › launch-critical redirect shims › /dashboard/settings/billing redirects to /dashboard/settings (2ms)
+  ✓  49 [mobile-chromium] › e2e/launch-smoke.spec.ts:83:9 › launch-critical redirect shims › /dashboard/settings/developer redirects to /developer (2ms)
+  ✓  50 [mobile-chromium] › e2e/launch-smoke.spec.ts:83:9 › launch-critical redirect shims › /admin/wiki redirects to /admin/knowledge (9ms)
+
+  50 passed (4.6s)
+$ bun scripts/playwright-run.ts auth-demo
+[2m[WebServer] [22m[playwright-web-server] Removed stale Next dev lock at /Users/philiplewis/slatecamp/.next/dev/lock
+[2m[WebServer] [22m(node:49955) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:49956) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 7 tests using 1 worker
+
+(node:50212) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:50212) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [chromium] › e2e/authenticated-demo.spec.ts:14:7 › demo-authenticated first-run flows › dashboard renders the authenticated demo shell (13.8s)
+  ✓  2 [chromium] › e2e/authenticated-demo.spec.ts:38:7 › demo-authenticated first-run flows › settings stays reachable as the first-run account recovery surface (8.9s)
+  ✓  3 [chromium] › e2e/authenticated-demo.spec.ts:59:7 › demo-authenticated first-run flows › authenticated demo onboarding resolves into the post-onboarding dashboard path (6.1s)
+  ✓  4 [chromium] › e2e/authenticated-demo.spec.ts:71:9 › demo-authenticated first-run flows › authenticated demo auth entry /login resolves into dashboard (4.1s)
+  ✓  5 [chromium] › e2e/authenticated-demo.spec.ts:71:9 › demo-authenticated first-run flows › authenticated demo auth entry /register resolves into dashboard (3.1s)
+  ✓  6 [chromium] › e2e/authenticated-demo.spec.ts:79:7 › demo-authenticated first-run flows › authenticated demo admin login emits a dashboard redirect response (5.7s)
+  ✓  7 [chromium] › e2e/authenticated-demo.spec.ts:91:7 › demo-authenticated first-run flows › demo callback normalizes unsafe and legacy next paths (4.5s)
+
+  7 passed (54.2s)
+$ bun scripts/playwright-run.ts auth-demo-learning
+[2m[WebServer] [22m[playwright-web-server] Removed stale Next dev lock at /Users/philiplewis/slatecamp/.next/dev/lock
+[2m[WebServer] [22m(node:52130) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:52131) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 4 tests using 1 worker
+
+(node:52413) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:52413) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:52131) Warning: `--localstorage-file` was provided without a valid path
+  ✓  1 [chromium] › e2e/learning-flow.spec.ts:13:7 › demo-auth learning flow › canceling a ready but unentered session does not create a resume CTA (23.2s)
+[2m[WebServer] [22m(node:54202) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:54397) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  2 [chromium] › e2e/learning-flow.spec.ts:47:7 › demo-auth learning flow › drills hub launches a custom session and supports one answer submission (24.8s)
+[2m[WebServer] [22m(node:56745) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  3 [chromium] › e2e/wiki-learning.spec.ts:14:7 › demo-auth wiki learning flow › wiki landing and seeded article resolve (1.1m)
+[2m[WebServer] [22m(node:56943) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:57006) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  4 [chromium] › e2e/wiki-learning.spec.ts:37:7 › demo-auth wiki learning flow › missing wiki slug resolves to dashboard not-found UI (2.6s)
+
+  4 passed (2.1m)
+$ bun scripts/playwright-run.ts auth-demo-restricted
+[2m[WebServer] [22m[playwright-web-server] Removed stale Next dev lock at /Users/philiplewis/slatecamp/.next/dev/lock
+[2m[WebServer] [22m(node:57098) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:57099) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 6 tests using 1 worker
+
+(node:57497) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:57497) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m⨯ Error: Forbidden: missing permission admin.dashboard.view
+[2m[WebServer] [22m    at assertPermission (src/lib/admin/roles.ts:98:11)
+[2m[WebServer] [22m    at async getAdminDashboardData (src/lib/actions/admin/dashboard.ts:88:3)
+[2m[WebServer] [22m    at async AdminDashboardPage (src/app/admin/page.tsx:87:61)
+[2m[WebServer] [22m  [90m 96 |[0m   [36mconst[0m resolution = [36mawait[0m getResolution()
+[2m[WebServer] [22m  [90m 97 |[0m   [36mif[0m (!hasPermission(resolution.normalizedRole, permission)) {
+[2m[WebServer] [22m[31m[1m>[0m [90m 98 |[0m     [36mthrow[0m [36mnew[0m [33mError[0m([32m`Forbidden: missing permission [0m${permission[32m}`[0m)
+[2m[WebServer] [22m  [90m    |[0m           [31m[1m^[0m
+[2m[WebServer] [22m  [90m 99 |[0m   }
+[2m[WebServer] [22m  [90m100 |[0m }
+[2m[WebServer] [22m  [90m101 |[0m {
+[2m[WebServer] [22m  digest: [32m'723382009'[39m
+[2m[WebServer] [22m}
+  ✓  1 [chromium] › e2e/authenticated-demo-restricted.spec.ts:23:9 › demo-authenticated restricted role › member demo user is denied /admin (6.0s)
+  ✓  2 [chromium] › e2e/authenticated-demo-restricted.spec.ts:23:9 › demo-authenticated restricted role › member demo user is denied /admin/knowledge (28.8s)
+  ✓  3 [chromium] › e2e/authenticated-demo-restricted.spec.ts:23:9 › demo-authenticated restricted role › member demo user is denied /developer (6.9s)
+  ✓  4 [chromium] › e2e/authenticated-demo-restricted.spec.ts:23:9 › demo-authenticated restricted role › member demo user is denied /developer/tools (2.5s)
+  ✓  5 [chromium] › e2e/authenticated-demo-restricted.spec.ts:23:9 › demo-authenticated restricted role › member demo user is denied /ceo (9.7s)
+  ✓  6 [chromium] › e2e/authenticated-demo-restricted.spec.ts:23:9 › demo-authenticated restricted role › member demo user is denied /ceo/financials (3.2s)
+
+  6 passed (1.1m)
+$ bun scripts/playwright-run.ts auth-demo-portals
+[2m[WebServer] [22m[playwright-web-server] Removed stale Next dev lock at /Users/philiplewis/slatecamp/.next/dev/lock
+[2m[WebServer] [22m(node:59897) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:59908) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 5 tests using 1 worker
+
+(node:60122) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:60122) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [chromium] › e2e/authenticated-demo-portals.spec.ts:38:9 › demo-authenticated privileged portals › authenticated demo user can reach /admin (4.8s)
+  ✓  2 [chromium] › e2e/authenticated-demo-portals.spec.ts:38:9 › demo-authenticated privileged portals › authenticated demo user can reach /admin/knowledge (19.9s)
+  ✓  3 [chromium] › e2e/authenticated-demo-portals.spec.ts:38:9 › demo-authenticated privileged portals › authenticated demo user can reach /developer (19.6s)
+  ✓  4 [chromium] › e2e/authenticated-demo-portals.spec.ts:38:9 › demo-authenticated privileged portals › authenticated demo user can reach /developer/tools (3.3s)
+  ✓  5 [chromium] › e2e/authenticated-demo-portals.spec.ts:38:9 › demo-authenticated privileged portals › authenticated demo user can reach /ceo/financials (12.1s)
+
+  5 passed (1.1m)
+$ bun scripts/playwright-run.ts auth-demo-3d-lab
+[2m[WebServer] [22m[playwright-web-server] Removed stale Next dev lock at /Users/philiplewis/slatecamp/.next/dev/lock
+[2m[WebServer] [22m(node:62551) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:62566) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 3 tests using 1 worker
+
+(node:62878) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:62878) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [chromium] › e2e/authenticated-demo-3d-lab.spec.ts:14:7 › demo-authenticated 3D Lab › authenticated demo user can reach /dashboard/3d-lab (16.7s)
+[2m[WebServer] [22m(node:64797) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:65152) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  2 [chromium] › e2e/authenticated-demo-3d-lab.spec.ts:26:7 › demo-authenticated 3D Lab › authenticated demo user can reach a visible 3D Lab module route (41.8s)
+[2m[WebServer] [22m[browser] THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.
+[2m[WebServer] [22m[browser] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[2m[WebServer] [22m[browser] THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.
+[2m[WebServer] [22m(node:65293) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:65296) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  3 [chromium] › e2e/authenticated-demo-3d-lab.spec.ts:39:7 › demo-authenticated 3D Lab › invalid 3D module slug resolves to the dashboard not-found UI (2.9s)
+
+  3 passed (1.2m)
+$ bun scripts/playwright-run.ts auth-demo-admin-content-admin
+[2m[WebServer] [22m[playwright-web-server] Removed stale Next dev lock at /Users/philiplewis/slatecamp/.next/dev/lock
+[2m[WebServer] [22m(node:65491) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:65493) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 6 tests using 1 worker
+
+(node:65717) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65717) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [chromium] › e2e/admin-permissions-content-admin.spec.ts:14:7 › content-admin permission matrix › can access admin dashboard and sees permitted nav items (5.1s)
+  ✓  2 [chromium] › e2e/admin-permissions-content-admin.spec.ts:48:7 › content-admin permission matrix › can access pipeline and publishing surfaces (17.1s)
+  ✓  3 [chromium] › e2e/admin-permissions-content-admin.spec.ts:57:7 › content-admin permission matrix › can access reviews queue (13.8s)
+  ✓  4 [chromium] › e2e/admin-permissions-content-admin.spec.ts:66:7 › content-admin permission matrix › is denied ceo portal routes (7.0s)
+  ✓  5 [chromium] › e2e/admin-permissions-content-admin.spec.ts:71:7 › content-admin permission matrix › is denied developer portal routes (6.6s)
+  ✓  6 [chromium] › e2e/admin-permissions-content-admin.spec.ts:76:7 › content-admin permission matrix › is denied audit log page (8.4s)
+
+  6 passed (1.1m)
+$ bun scripts/playwright-run.ts auth-demo-admin-sme-reviewer
+[2m[WebServer] [22m[playwright-web-server] Removed stale Next dev lock at /Users/philiplewis/slatecamp/.next/dev/lock
+[2m[WebServer] [22m(node:68126) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:68128) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 2 tests using 1 worker
+
+(node:68502) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:68502) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [chromium] › e2e/admin-permissions-sme-reviewer.spec.ts:14:7 › sme-reviewer permission matrix › can access admin dashboard and sees review-centric nav items (6.2s)
+  ✓  2 [chromium] › e2e/admin-permissions-sme-reviewer.spec.ts:54:7 › sme-reviewer permission matrix › can access reviews queue (15.8s)
+
+  2 passed (30.5s)
+$ bun scripts/playwright-run.ts auth-demo-admin-developer
+[2m[WebServer] [22m[playwright-web-server] Removed stale Next dev lock at /Users/philiplewis/slatecamp/.next/dev/lock
+[2m[WebServer] [22m(node:69449) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:69459) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 5 tests using 1 worker
+
+(node:69687) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:69687) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [chromium] › e2e/admin-permissions-developer.spec.ts:14:7 › developer permission matrix › can access developer portal (5.1s)
+  ✓  2 [chromium] › e2e/admin-permissions-developer.spec.ts:26:7 › developer permission matrix › can access admin dashboard with limited nav scope (2.3s)
+  ✓  3 [chromium] › e2e/admin-permissions-developer.spec.ts:61:7 › developer permission matrix › can access developer tools (1.5s)
+  ✘  4 [chromium] › e2e/admin-permissions-developer.spec.ts:73:7 › developer permission matrix › is denied ceo portal routes (45.5s)
+(node:71833) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:71833) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  5 [chromium] › e2e/admin-permissions-developer.spec.ts:82:7 › developer permission matrix › is denied admin pipeline and reviews (1.7m)
+
+
+  1) [chromium] › e2e/admin-permissions-developer.spec.ts:73:7 › developer permission matrix › is denied ceo portal routes
+
+    Error: [2mexpect([22m[31mpage[39m[2m).[22mtoHaveURL[2m([22m[32mexpected[39m[2m)[22m failed
+
+    Expected pattern: [32m/\/dashboard/[39m
+    Received string:  [31m"http://localhost:3223/ceo/financials"[39m
+    Timeout: 30000ms
+
+    Call log:
+    [2m  - Expect "toHaveURL" with timeout 30000ms[22m
+    [2m    6 × unexpected value "http://localhost:3223/ceo/financials"[22m
+    [2m    - waiting for" http://localhost:3223/dashboard" navigation to finish...[22m
+
+
+      74 |     test.setTimeout(90000)
+      75 |     await gotoAllowRedirectAbort(page, '/ceo/financials')
+    > 76 |     await expect(page).toHaveURL(/\/dashboard/, { timeout: 30000 })
+         |                        ^
+      77 |
+      78 |     await gotoAllowRedirectAbort(page, '/ceo/team/admin-roles')
+      79 |     await expect(page).toHaveURL(/\/dashboard/, { timeout: 30000 })
+        at /Users/philiplewis/slatecamp/e2e/admin-permissions-developer.spec.ts:76:24
+
+    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/admin-permissions-develope-1474b-is-denied-ceo-portal-routes-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/admin-permissions-develope-1474b-is-denied-ceo-portal-routes-chromium/error-context.md
+
+  2) [chromium] › e2e/admin-permissions-developer.spec.ts:82:7 › developer permission matrix › is denied admin pipeline and reviews
+
+    [31mTest timeout of 90000ms exceeded.[39m
+
+    Error: [2mexpect([22m[31mpage[39m[2m).[22mtoHaveURL[2m([22m[32mexpected[39m[2m)[22m failed
+
+    Expected pattern: [32m/\/dashboard/[39m
+    Received string:  [31m"http://localhost:3223/admin/reviews"[39m
+
+    Call log:
+    [2m  - Expect "toHaveURL" with timeout 30000ms[22m
+    [2m    6 × unexpected value "http://localhost:3223/admin/reviews"[22m
+
+
+      86 |
+      87 |     await gotoAllowRedirectAbort(page, '/admin/reviews')
+    > 88 |     await expect(page).toHaveURL(/\/dashboard/, { timeout: 30000 })
+         |                        ^
+      89 |
+      90 |     await gotoAllowRedirectAbort(page, '/admin/audit')
+      91 |     await expect(page).toHaveURL(/\/dashboard/, { timeout: 30000 })
+        at /Users/philiplewis/slatecamp/e2e/admin-permissions-developer.spec.ts:88:24
+
+    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/admin-permissions-develope-f52b8--admin-pipeline-and-reviews-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/admin-permissions-develope-f52b8--admin-pipeline-and-reviews-chromium/error-context.md
+
+  2 failed
+    [chromium] › e2e/admin-permissions-developer.spec.ts:73:7 › developer permission matrix › is denied ceo portal routes
+    [chromium] › e2e/admin-permissions-developer.spec.ts:82:7 › developer permission matrix › is denied admin pipeline and reviews
+  3 passed (2.7m)
+error: script "test:e2e:auth-demo:admin-developer" exited with code 1
+error: script "validate:release" exited with code 1

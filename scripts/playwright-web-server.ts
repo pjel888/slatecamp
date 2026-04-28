@@ -1,5 +1,5 @@
 import { execFileSync } from 'node:child_process'
-import { mkdirSync, writeFileSync } from 'node:fs'
+import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
 import path from 'node:path'
 
 const port = process.env.PLAYWRIGHT_PORT ?? '3217'
@@ -55,6 +55,40 @@ const nextBin =
 const args = useBuiltApp
   ? ['start', '--port', port]
   : ['dev', '--webpack', '--port', port]
+
+function processIsAlive(pid: number) {
+  try {
+    process.kill(pid, 0)
+    return true
+  } catch {
+    return false
+  }
+}
+
+function clearStaleNextDevLock() {
+  if (useBuiltApp) return
+
+  const devDir = path.join(process.cwd(), '.next/dev')
+  const lockPath = path.join(devDir, 'lock')
+  if (!existsSync(lockPath)) return
+
+  try {
+    const lock = JSON.parse(readFileSync(lockPath, 'utf8')) as { pid?: unknown }
+    const pid = typeof lock.pid === 'number' ? lock.pid : Number(lock.pid)
+    if (Number.isFinite(pid) && processIsAlive(pid)) {
+      return
+    }
+
+    rmSync(devDir, { force: true, recursive: true })
+    console.warn(`[playwright-web-server] Removed stale Next dev cache at ${devDir}`)
+  } catch (error) {
+    console.warn(
+      `[playwright-web-server] Could not inspect Next dev lock at ${lockPath}: ${String(error)}`,
+    )
+  }
+}
+
+clearStaleNextDevLock()
 
 const server = Bun.spawn([nextBin, ...args], {
   env,

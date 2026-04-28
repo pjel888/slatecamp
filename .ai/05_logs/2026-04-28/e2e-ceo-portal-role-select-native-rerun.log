@@ -1,0 +1,19 @@
+Command: bun run test:e2e:auth-demo:ceo-portal
+Working directory: /Users/philiplewis/slatecamp
+Start: 2026-04-28T11:16:54+08:00
+$ bun scripts/playwright-run.ts auth-demo-ceo-portal
+[2m[WebServer] [22m(node:33348) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:33406) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 4 tests using 1 worker
+
+(node:34202) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:34202) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [chromium] › e2e/ceo-portal.spec.ts:16:7 › ceo control plane and audit logging › can access financials dashboard (12.1s)
+  ✓  2 [chromium] › e2e/ceo-portal.spec.ts:32:7 › ceo control plane and audit logging › can access team overview (15.7s)
+  ✓  3 [chromium] › e2e/ceo-portal.spec.ts:42:7 › ceo control plane and audit logging › admin role manager loads and shows current admin users (17.2s)
+error: script "test:e2e:auth-demo:ceo-portal" was terminated by signal SIGKILL (Forced quit)

@@ -1,0 +1,99 @@
+bun test v1.3.10 (30e609e0)
+
+src/lib/developer/access.test.ts:
+(pass) assertDeveloperAccess > throws for member role [1.83ms]
+(pass) assertDeveloperAccess > throws for anonymous role [0.03ms]
+(pass) assertDeveloperAccess > throws for sme_reviewer role [0.02ms]
+(pass) assertDeveloperAccess > resolves for developer role [0.13ms]
+(pass) assertDeveloperAccess > resolves for admin role [0.02ms]
+(pass) assertDeveloperAccess > resolves for super_admin role [0.02ms]
+(pass) assertDeveloperAccess > resolves for owner role [0.02ms]
+(pass) assertDeveloperAccess > resolves for ceo role [0.03ms]
+
+src/lib/admin/roles.test.ts:
+(pass) Admin Roles > getUserRole > returns null when no user is authenticated [0.82ms]
+(pass) Admin Roles > getUserRole > returns role from database when present [0.24ms]
+(pass) Admin Roles > getUserRole > returns role from auth metadata before database fallbacks [0.05ms]
+(pass) Admin Roles > getUserRole > returns role from profile when auth metadata is empty [0.05ms]
+(pass) Admin Roles > getUserRole > falls back to legacy ADMIN_EMAILS when no DB role exists [0.05ms]
+(pass) Admin Roles > Permission Helpers > isAdmin returns true for super_admin and owner [0.08ms]
+(pass) Admin Roles > Permission Helpers > isAdmin returns true for content_admin [0.04ms]
+(pass) Admin Roles > Permission Helpers > isSuperAdmin returns true for super_admin and owner [0.08ms]
+(pass) Admin Roles > Permission Helpers > canManageContent excludes reviewer-only roles [0.09ms]
+(pass) Admin Roles > Permission Helpers > canReviewContent matches multiple staff roles [0.12ms]
+(pass) Admin Roles > Permission Helpers > canManageUsers returns true for super_admin and owner [0.14ms]
+(pass) Admin Roles > assertPermission > passes silently when user has permission [15.98ms]
+(pass) Admin Roles > assertPermission > throws when user lacks permission [0.48ms]
+(pass) Admin Roles > assertPermission > sme_reviewer can approve content but not create [0.07ms]
+(pass) Admin Roles > assertPermission > developer can edit but not publish [0.05ms]
+
+src/lib/ceo/access.test.ts:
+(pass) assertCeoAccess > resolves for allowed entitlements
+(pass) assertCeoAccess > throws when CEO portal access is denied [0.22ms]
+
+src/lib/supabase/middleware.test.ts:
+(pass) supabase/middleware > logs getUser failures and still redirects unauthenticated protected routes [2.39ms]
+[application-error] auth.middleware_get_user_failed {
+  namespace: "application_error",
+  severity: "error",
+  family: "auth",
+  eventName: "middleware_get_user_failed",
+  message: "Failed to refresh auth session in middleware.",
+  requestId: "13db1a46-2e05-4618-a2a1-480d70eca01e",
+  traceId: "91297ce3-af4f-4a04-9c84-f77b2c78e0a0",
+  routeOrAction: "middleware:/admin",
+  userId: null,
+  sessionId: null,
+  provider: null,
+  eventId: null,
+  fingerprint: "auth|middleware_get_user_failed|middleware:/admin|auth unavailable",
+  metadata: {
+    method: "GET",
+    hostname: "localhost",
+  },
+  error: {
+    name: "Error",
+    message: "auth unavailable",
+    cause: undefined,
+  },
+  createdAt: "2026-04-28T07:48:29.494Z",
+}
+(pass) supabase/middleware > redirects unauthenticated admin root to the admin login surface [1.91ms]
+
+src/lib/entitlements/policy.test.ts:
+(pass) entitlement policy > keeps developer tooling separate from admin cms access
+(pass) entitlement policy > allows reviewer content access without developer tooling [0.40ms]
+(pass) entitlement policy > supports explicit developer portal bypass only through policy [0.02ms]
+(pass) entitlement policy > limits override writes to internal engineering roles [0.02ms]
+(pass) entitlement policy > allows admin cms access for general admin role
+(pass) entitlement policy > keeps ceo portal restricted to ceo and super admin [0.01ms]
+(pass) entitlement policy > hasPermission grants owner all admin permissions [0.02ms]
+(pass) entitlement policy > hasPermission denies sme_reviewer content creation [0.02ms]
+(pass) entitlement policy > hasPermission denies ceo audit log access
+(pass) entitlement policy > hasPermission denies member all admin permissions
+(pass) entitlement policy > getPermissionsForRole returns correct count [0.02ms]
+
+src/lib/entitlements/resolve-role.test.ts:
+(pass) resolveRoleFromInputs > prefers forced dev user bypass over all other sources
+(pass) resolveRoleFromInputs > disables forced dev user role override when Playwright neutralizes local impersonation [0.27ms]
+(pass) resolveRoleFromInputs > prefers user_roles as the canonical source over other role surfaces [0.03ms]
+(pass) resolveRoleFromInputs > falls back to profiles.role when user_roles are absent [0.01ms]
+(pass) resolveRoleFromInputs > falls back to admin email when no structured role exists [0.02ms]
+(pass) resolveRoleFromInputs > returns member for authenticated users without an internal role [0.02ms]
+(pass) resolveRoleFromInputs > returns anonymous for missing identity [0.01ms]
+
+src/lib/actions/dev/test-data.test.ts:
+(pass) generateTestSessions > rejects when developer access is denied
+(pass) generateTestSessions > validates count to be within 1-100 [0.41ms]
+(pass) generateTestSessions > returns message when no exam profile [0.19ms]
+(pass) generateTestOrg > rejects when developer access is denied [0.06ms]
+(pass) generateTestOrg > creates organization successfully [0.12ms]
+
+src/lib/actions/dev/db-viewer.test.ts:
+(pass) getTableInfo > returns table info from RPC [0.41ms]
+(pass) getTableInfo > falls back to known tables when RPC fails [0.42ms]
+
+ 52 pass
+ 0 fail
+ 99 expect() calls
+Ran 52 tests across 8 files. [450.00ms]

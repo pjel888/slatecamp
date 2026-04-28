@@ -18,10 +18,20 @@ import { Suspense } from 'react'
 import { estimateReadingTime } from '@/lib/wiki-markdown'
 import { getTeachBackCriteria } from '@/lib/actions/teach-back'
 import { ROUTES } from '@/lib/routes'
-import { getArticleSources, getArticleSiblings } from '@/lib/actions/wiki-actions'
+import {
+  getArticleSources,
+  getArticleSiblings,
+  type WikiArticleSource,
+} from '@/lib/actions/wiki-actions'
 import { getCachedArticleAndNode, getCachedTaxonomyTreeByDiscipline } from '@/lib/actions/cached-queries'
-import { getEIPromptsForArticle, getUserEIResponsesForArticle } from '@/lib/actions/ei-prompts'
+import {
+  getEIPromptsForArticle,
+  getUserEIResponsesForArticle,
+  type EIPrompt,
+  type EIResponseMap,
+} from '@/lib/actions/ei-prompts'
 import type { TaxonomyNode } from '@/lib/actions/taxonomy'
+import { isDemoMode } from '@/lib/demo/config'
 
 const mapDifficulty = (level?: number | null): 'Foundational' | 'Intermediate' | 'Advanced' => {
   if (!level || level <= 1) return 'Foundational'
@@ -55,15 +65,24 @@ export default async function WikiArticlePage(props: WikiArticlePageProps) {
     return notFound()
   }
 
-  // ALL secondary data in parallel — no more sequential waterfall
-  const [eiPrompts, eiResponses, sources, teachBackCriteria, relatedTopics, siblings] = await Promise.all([
-    getEIPromptsForArticle(article.article_id),
-    getUserEIResponsesForArticle(article.article_id),
-    getArticleSources(article.article_id),
-    node?.node_id ? getTeachBackCriteria(node.node_id) : Promise.resolve(null),
-    getRelatedTopics(node),
-    node?.node_id ? getArticleSiblings(node.node_id) : Promise.resolve({ prev: null, next: null }),
-  ])
+  const demoMode = isDemoMode()
+
+  // Demo-mode wiki smoke tests should prove route/content resolution without
+  // waiting on optional personalization, teach-back, source, or sibling sidebars.
+  // Live/staging runs keep the full parallel data fan-out below.
+  const demoEIPrompts: EIPrompt[] = []
+  const demoEIResponses: EIResponseMap = {}
+  const demoSources: WikiArticleSource[] = []
+  const [eiPrompts, eiResponses, sources, teachBackCriteria, relatedTopics, siblings] = demoMode
+    ? [demoEIPrompts, demoEIResponses, demoSources, null, [], { prev: null, next: null }] as const
+    : await Promise.all([
+        getEIPromptsForArticle(article.article_id),
+        getUserEIResponsesForArticle(article.article_id),
+        getArticleSources(article.article_id),
+        node?.node_id ? getTeachBackCriteria(node.node_id) : Promise.resolve(null),
+        getRelatedTopics(node),
+        node?.node_id ? getArticleSiblings(node.node_id) : Promise.resolve({ prev: null, next: null }),
+      ])
 
   const practiceHref = ROUTES.quiz.setup('camp')
   const practiceLabel = 'Practice this Article'

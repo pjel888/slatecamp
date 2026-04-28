@@ -1,0 +1,73 @@
+$ bun scripts/playwright-run.ts auth-demo-wiki
+[2m[WebServer] [22m(node:56100) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:56101) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 2 tests using 1 worker
+
+(node:59431) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:59431) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [chromium] › e2e/wiki-learning.spec.ts:14:7 › demo-auth wiki learning flow › wiki landing and seeded article resolve (2.4m)
+(node:67343) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:67343) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  2 [chromium] › e2e/wiki-learning.spec.ts:47:7 › demo-auth wiki learning flow › missing wiki slug resolves to dashboard not-found UI (1.8m)
+
+
+  1) [chromium] › e2e/wiki-learning.spec.ts:14:7 › demo-auth wiki learning flow › wiki landing and seeded article resolve
+
+    TimeoutError: page.goto: Timeout 120000ms exceeded.
+    Call log:
+    [2m  - navigating to "http://localhost:3225/dashboard/wiki", waiting until "domcontentloaded"[22m
+
+
+      14 |   test('wiki landing and seeded article resolve', async ({ page }) => {
+      15 |     test.setTimeout(240000)
+    > 16 |     const landing = await page.goto('/dashboard/wiki', {
+         |                                ^
+      17 |       waitUntil: 'domcontentloaded',
+      18 |       timeout: 120000,
+      19 |     })
+        at /Users/philiplewis/slatecamp/e2e/wiki-learning.spec.ts:16:32
+
+    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/wiki-learning-demo-auth-wi-1fef3--and-seeded-article-resolve-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/wiki-learning-demo-auth-wi-1fef3--and-seeded-article-resolve-chromium/error-context.md
+
+  2) [chromium] › e2e/wiki-learning.spec.ts:47:7 › demo-auth wiki learning flow › missing wiki slug resolves to dashboard not-found UI
+
+    [31mTest timeout of 90000ms exceeded.[39m
+
+    Error: page.goto: Test timeout of 90000ms exceeded.
+    Call log:
+    [2m  - navigating to "http://localhost:3225/dashboard/wiki/__missing__", waiting until "domcontentloaded"[22m
+
+
+       at support/authenticated-demo.ts:41
+
+      39 |
+      40 |   if (page.url() === 'about:blank') {
+    > 41 |     return page.goto(path, { waitUntil: 'domcontentloaded' })
+         |                 ^
+      42 |   }
+      43 |
+      44 |   return response
+        at gotoAllowRedirectAbort (/Users/philiplewis/slatecamp/e2e/support/authenticated-demo.ts:41:17)
+        at /Users/philiplewis/slatecamp/e2e/wiki-learning.spec.ts:49:22
+
+    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/wiki-learning-demo-auth-wi-da58d-s-to-dashboard-not-found-UI-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/wiki-learning-demo-auth-wi-da58d-s-to-dashboard-not-found-UI-chromium/error-context.md
+
+  2 failed
+    [chromium] › e2e/wiki-learning.spec.ts:14:7 › demo-auth wiki learning flow › wiki landing and seeded article resolve
+    [chromium] › e2e/wiki-learning.spec.ts:47:7 › demo-auth wiki learning flow › missing wiki slug resolves to dashboard not-found UI
+error: script "test:e2e:auth-demo:wiki" exited with code 1

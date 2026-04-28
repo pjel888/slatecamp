@@ -1,0 +1,96 @@
+$ bun scripts/playwright-run.ts auth-demo-admin-content-admin
+[2m[WebServer] [22m(node:97685) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:97686) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 6 tests using 1 worker
+
+(node:97764) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:97764) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [chromium] › e2e/admin-permissions-content-admin.spec.ts:14:7 › content-admin permission matrix › can access admin dashboard and sees permitted nav items (8.1s)
+(node:97914) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:97914) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  2 [chromium] › e2e/admin-permissions-content-admin.spec.ts:48:7 › content-admin permission matrix › can access pipeline and publishing surfaces (37.1s)
+  ✓  3 [chromium] › e2e/admin-permissions-content-admin.spec.ts:57:7 › content-admin permission matrix › can access reviews queue (30.4s)
+  ✓  4 [chromium] › e2e/admin-permissions-content-admin.spec.ts:66:7 › content-admin permission matrix › is denied ceo portal routes (32.2s)
+  ✘  5 [chromium] › e2e/admin-permissions-content-admin.spec.ts:72:7 › content-admin permission matrix › is denied developer portal routes (0ms)
+(node:98929) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:98929) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  6 [chromium] › e2e/admin-permissions-content-admin.spec.ts:78:7 › content-admin permission matrix › is denied audit log page (520ms)
+
+
+  1) [chromium] › e2e/admin-permissions-content-admin.spec.ts:14:7 › content-admin permission matrix › can access admin dashboard and sees permitted nav items
+
+    Error: browser runtime errors
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoEqual[2m([22m[32mexpected[39m[2m) // deep equality[22m
+
+    [32m- Expected  - 1[39m
+    [31m+ Received  + 3[39m
+
+    [32m- Array [][39m
+    [31m+ Array [[39m
+    [31m+   "Invalid or unexpected token",[39m
+    [31m+ ][39m
+
+       at support/authenticated-demo.ts:21
+
+      19 |       await use()
+      20 |
+    > 21 |       expect(errors, 'browser runtime errors').toEqual([])
+         |                                                ^
+      22 |     },
+      23 |     { auto: true },
+      24 |   ],
+        at Object.exports.authenticatedDemoTest._test.test.extend.assertNoAppErrors.auto (/Users/philiplewis/slatecamp/e2e/support/authenticated-demo.ts:21:48)
+
+    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/admin-permissions-content--778ce-nd-sees-permitted-nav-items-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/admin-permissions-content--778ce-nd-sees-permitted-nav-items-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/admin-permissions-content--778ce-nd-sees-permitted-nav-items-chromium/error-context.md
+
+  2) [chromium] › e2e/admin-permissions-content-admin.spec.ts:72:7 › content-admin permission matrix › is denied developer portal routes
+
+    Error: worker process exited unexpectedly (code=null, signal=SIGKILL)
+
+  3) [chromium] › e2e/admin-permissions-content-admin.spec.ts:78:7 › content-admin permission matrix › is denied audit log page
+
+    Error: apiRequestContext.get: connect ECONNREFUSED ::1:3217
+    Call log:
+    [2m  - → GET http://localhost:3217/admin/audit[22m
+    [2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.7727.15 Safari/537.36[22m
+    [2m    - accept: */*[22m
+    [2m    - accept-encoding: gzip,deflate,br[22m
+
+        at apiRequestContext.get: connect ECONNREFUSED ::1:3217
+        at expectDashboardRedirect (/Users/philiplewis/slatecamp/e2e/admin-permissions-content-admin.spec.ts:88:34)
+        at /Users/philiplewis/slatecamp/e2e/admin-permissions-content-admin.spec.ts:80:11
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/admin-permissions-content--51b70-ix-is-denied-audit-log-page-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/admin-permissions-content--51b70-ix-is-denied-audit-log-page-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/admin-permissions-content--51b70-ix-is-denied-audit-log-page-chromium/error-context.md
+
+  3 failed
+    [chromium] › e2e/admin-permissions-content-admin.spec.ts:14:7 › content-admin permission matrix › can access admin dashboard and sees permitted nav items
+    [chromium] › e2e/admin-permissions-content-admin.spec.ts:72:7 › content-admin permission matrix › is denied developer portal routes
+    [chromium] › e2e/admin-permissions-content-admin.spec.ts:78:7 › content-admin permission matrix › is denied audit log page
+  3 passed (2.3m)
+error: script "test:e2e:auth-demo:admin-content-admin" exited with code 1

@@ -1,0 +1,60 @@
+Command: bun run test:e2e:auth-demo:ceo-portal
+Working directory: /Users/philiplewis/slatecamp
+Start: 2026-04-28T11:31:42+08:00
+$ bun scripts/playwright-run.ts auth-demo-ceo-portal
+[2m[WebServer] [22m(node:44272) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:44274) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+(node:44693) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:44693) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[2m[WebServer] [22m⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+  ✘  1 [chromium] › e2e/ceo-portal.spec.ts:16:7 › ceo control plane and audit logging › can access CEO surfaces and exercise admin-role audit flow (48.5s)
+
+
+  1) [chromium] › e2e/ceo-portal.spec.ts:16:7 › ceo control plane and audit logging › can access CEO surfaces and exercise admin-role audit flow
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoContainText[2m([22m[32mexpected[39m[2m)[22m failed
+
+    Locator: locator('body')
+    Expected substring: [32m"user roles"[39m
+    Received string:    [31m"DEVSkip to main contentSlateCampAdmin ConsoleceoDashboardOverviewDashboardKnowledge BaseBrowserQuestion BankStructureTaxonomy3D Assets3D Models RegistryQualityReview QueuePublishing PipelineContent SearchPulsePulse FeedSettingsSettingsCommand PaletteSearch components, status, tools...ActivityActivity FeedRecent content changes across the platformDEdemo-use deleted User Role 550e8400just nowDELETEDEdemo-use created User Role 550e8400just nowCREATE"[39m
+    Timeout: 15000ms
+
+    Call log:
+    [2m  - Expect "toContainText" with timeout 15000ms[22m
+    [2m  - waiting for locator('body')[22m
+    [2m    19 × locator resolved to <body class="__variable_de0309 __variable_bdb7b4 __variable_dd4049 __variable_bb509a __variable_1084b9 font-sans antialiased">…</body>[22m
+    [2m       - unexpected value "DEVSkip to main contentSlateCampAdmin ConsoleceoDashboardOverviewDashboardKnowledge BaseBrowserQuestion BankStructureTaxonomy3D Assets3D Models RegistryQualityReview QueuePublishing PipelineContent SearchPulsePulse FeedSettingsSettingsCommand PaletteSearch components, status, tools...ActivityActivity FeedRecent content changes across the platformDEdemo-use deleted User Role 550e8400just nowDELETEDEdemo-use created User Role 550e8400just nowCREATE"[22m
+
+
+      94 |       timeout: 15000,
+      95 |     })
+    > 96 |     await expect(page.locator('body')).toContainText('user roles', {
+         |                                        ^
+      97 |       timeout: 15000,
+      98 |     })
+      99 |   })
+        at /Users/philiplewis/slatecamp/e2e/ceo-portal.spec.ts:96:40
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/ceo-portal-ceo-control-pla-624d9-rcise-admin-role-audit-flow-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/ceo-portal-ceo-control-pla-624d9-rcise-admin-role-audit-flow-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/ceo-portal-ceo-control-pla-624d9-rcise-admin-role-audit-flow-chromium/error-context.md
+
+  1 failed
+    [chromium] › e2e/ceo-portal.spec.ts:16:7 › ceo control plane and audit logging › can access CEO surfaces and exercise admin-role audit flow
+error: script "test:e2e:auth-demo:ceo-portal" exited with code 1
+End: 2026-04-28T11:32:41+08:00
+Exit code: 1

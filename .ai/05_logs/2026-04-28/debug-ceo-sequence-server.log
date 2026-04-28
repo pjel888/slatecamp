@@ -1,0 +1,15 @@
+▲ Next.js 16.2.3 (webpack)
+- Local:         http://localhost:3237
+- Network:       http://127.0.2.2:3237
+- Environments: .env.local
+✓ Ready in 358ms
+- Experiments (use with caution):
+  · serverActions
+
+○ Compiling /ceo/financials ...
+ GET /ceo/financials 200 in 10.6s (next.js: 10.1s, application-code: 460ms)
+ GET /ceo/financials 200 in 223ms (next.js: 6ms, application-code: 217ms)
+○ Compiling /ceo/team ...
+ GET /ceo/financials 200 in 58ms (next.js: 26ms, application-code: 33ms)
+ GET /ceo/team 200 in 5.9s (next.js: 5.6s, application-code: 341ms)
+ GET /ceo/team/admin-roles 200 in 2.3s (next.js: 1836ms, application-code: 431ms)

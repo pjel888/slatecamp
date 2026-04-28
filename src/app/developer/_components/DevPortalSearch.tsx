@@ -12,6 +12,7 @@ export const DevPortalSearch = () => {
     <div className="relative ml-auto flex items-center gap-2">
       <button
         type="button"
+        aria-label="Open search command palette"
         onClick={() => {
           const isMac = navigator.platform.toUpperCase().includes('MAC')
           document.dispatchEvent(
@@ -23,7 +24,7 @@ export const DevPortalSearch = () => {
             }),
           )
         }}
-        className="flex w-[200px] cursor-pointer items-center gap-1.5 rounded-xs border border-white/10 bg-white/[0.06] px-2.5 py-1 transition-colors duration-150 hover:bg-white/[0.10]"
+        className="flex w-[200px] cursor-pointer items-center gap-1.5 rounded-xs border border-white/10 bg-white/[0.06] px-2.5 py-1 transition-colors duration-150 hover:bg-white/[0.10] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/30"
       >
         <MagnifyingGlass className="h-3.5 w-3.5 shrink-0 text-white/30" />
         <span className="flex-1 text-left text-xs text-white/25">Search docs and tools...</span>

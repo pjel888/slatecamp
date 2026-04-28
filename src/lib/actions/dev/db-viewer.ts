@@ -1,6 +1,7 @@
 'use server'
 
 import { createClient } from '@/lib/supabase/server'
+import { assertDeveloperAccess } from '@/lib/developer/access'
 
 export interface TableInfo {
   table_name: string
@@ -12,6 +13,8 @@ export interface TableInfo {
  * Get table names, approximate row counts, and RLS status for all public tables.
  */
 export async function getTableInfo(): Promise<TableInfo[]> {
+  await assertDeveloperAccess()
+
   const supabase = await createClient()
 
   const { data, error } = await supabase.rpc('get_table_info_for_dev')

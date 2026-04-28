@@ -12,6 +12,7 @@ test.describe('demo-authenticated first-run flows', () => {
   )
 
   test('dashboard renders the authenticated demo shell', async ({ page }) => {
+    test.setTimeout(90000)
     const response = await page.goto('/dashboard', {
       waitUntil: 'domcontentloaded',
     })
@@ -20,11 +21,17 @@ test.describe('demo-authenticated first-run flows', () => {
     await expect(page).toHaveURL(/\/dashboard$/)
     await expect(page.locator('body')).toContainText(
       /SlateCamp|Dashboard/i,
+      { timeout: 60000 },
     )
-    await expect(page.locator('body')).toContainText(/Philip\./i)
-    await expect(page.locator('body')).toContainText(/Readiness Score/i)
+    await expect(page.locator('body')).toContainText(/Philip\./i, {
+      timeout: 60000,
+    })
+    await expect(page.locator('body')).toContainText(/Readiness Score/i, {
+      timeout: 60000,
+    })
     await expect(page.locator('body')).toContainText(
       /Wiki|Drills|Camp Trail|Analytics|Settings/i,
+      { timeout: 60000 },
     )
   })
 
@@ -84,9 +91,10 @@ test.describe('demo-authenticated first-run flows', () => {
   test('demo callback normalizes unsafe and legacy next paths', async ({
     request,
   }) => {
-    test.setTimeout(45000)
+    test.setTimeout(90000)
     const unsafe = await request.get('/auth/callback?next=//evil.example', {
       maxRedirects: 0,
+      timeout: 60000,
     })
     const unsafeLocation = unsafe.headers().location
 
@@ -98,7 +106,7 @@ test.describe('demo-authenticated first-run flows', () => {
 
     const legacy = await request.get(
       '/auth/callback?next=/dashboard/heatmap',
-      { maxRedirects: 0 },
+      { maxRedirects: 0, timeout: 60000 },
     )
     const legacyLocation = legacy.headers().location
 

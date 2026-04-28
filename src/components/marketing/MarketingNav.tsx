@@ -5,23 +5,26 @@ import { cn } from '@/lib/utils'
 import { getUserIfPresent } from '@/lib/supabase/server'
 
 const NAV_LINKS = [
-  { href: ROUTES.calculators.root, label: 'Tools' },
-  { href: ROUTES.pricing, label: 'Pricing' },
-  { href: ROUTES.about, label: 'About' },
-  { href: ROUTES.contact, label: 'Contact' },
+  { href: ROUTES.pricing, label: 'Plans' },
 ] as const
 
 export async function MarketingNav({
   activeRoute = '/',
   logoScrollsToTop = false,
   variant = 'light',
+  isLoggedIn: knownIsLoggedIn,
 }: {
   activeRoute?: string
   logoScrollsToTop?: boolean
   variant?: 'light' | 'dark'
+  isLoggedIn?: boolean
 }) {
-  const { data: { user } } = await getUserIfPresent()
-  const isLoggedIn = !!user
+  const authResult =
+    typeof knownIsLoggedIn === 'boolean' ? null : await getUserIfPresent()
+  const isLoggedIn =
+    typeof knownIsLoggedIn === 'boolean'
+      ? knownIsLoggedIn
+      : !!authResult?.data.user
   const isDark = variant === 'dark'
 
   const linkClass = (href: string) =>
@@ -78,6 +81,12 @@ export async function MarketingNav({
               <a href='#how-it-works' className={linkClass('/')}>
                 How it works
               </a>
+              <a href='#use-cases' className={linkClass('/')}>
+                Use cases
+              </a>
+              <a href='#faq' className={linkClass('/')}>
+                FAQ
+              </a>
             </>
           ) : (
             <>
@@ -86,6 +95,12 @@ export async function MarketingNav({
               </Link>
               <Link href='/#how-it-works' className={linkClass('/')}>
                 How it works
+              </Link>
+              <Link href='/#use-cases' className={linkClass('/')}>
+                Use cases
+              </Link>
+              <Link href='/#faq' className={linkClass('/')}>
+                FAQ
               </Link>
             </>
           )}
@@ -131,7 +146,7 @@ export async function MarketingNav({
                     : 'bg-primary hover:bg-primary-700',
                 )}
               >
-                Join Free →
+                Start Learning
               </Link>
             </>
           )}

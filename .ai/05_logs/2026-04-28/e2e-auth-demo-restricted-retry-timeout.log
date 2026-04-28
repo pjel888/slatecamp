@@ -1,0 +1,86 @@
+$ bun scripts/playwright-run.ts auth-demo-restricted
+[2m[WebServer] [22m[playwright-web-server] Removed stale Next dev cache at /Users/philiplewis/slatecamp/.next/dev
+[2m[WebServer] [22m(node:51295) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:51296) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 6 tests using 1 worker
+
+(node:51982) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:51982) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m⨯ Error: Forbidden: missing permission admin.dashboard.view
+[2m[WebServer] [22m    at assertPermission (src/lib/admin/roles.ts:97:11)
+[2m[WebServer] [22m    at async getAdminDashboardData (src/lib/actions/admin/dashboard.ts:88:3)
+[2m[WebServer] [22m    at async AdminDashboardPage (src/app/admin/page.tsx:87:61)
+[2m[WebServer] [22m  [90m 95 |[0m   [36mconst[0m resolution = [36mawait[0m getResolution()
+[2m[WebServer] [22m  [90m 96 |[0m   [36mif[0m (!hasPermission(resolution.normalizedRole, permission)) {
+[2m[WebServer] [22m[31m[1m>[0m [90m 97 |[0m     [36mthrow[0m [36mnew[0m [33mError[0m([32m`Forbidden: missing permission [0m${permission[32m}`[0m)
+[2m[WebServer] [22m  [90m    |[0m           [31m[1m^[0m
+[2m[WebServer] [22m  [90m 98 |[0m   }
+[2m[WebServer] [22m  [90m 99 |[0m }
+[2m[WebServer] [22m  [90m100 |[0m {
+[2m[WebServer] [22m  digest: [32m'2646930845'[39m
+[2m[WebServer] [22m}
+  ✓  1 [chromium] › e2e/authenticated-demo-restricted.spec.ts:23:9 › demo-authenticated restricted role › member demo user is denied /admin (10.9s)
+  ✓  2 [chromium] › e2e/authenticated-demo-restricted.spec.ts:23:9 › demo-authenticated restricted role › member demo user is denied /admin/knowledge (34.4s)
+  ✓  3 [chromium] › e2e/authenticated-demo-restricted.spec.ts:23:9 › demo-authenticated restricted role › member demo user is denied /developer (1.5m)
+  ✓  4 [chromium] › e2e/authenticated-demo-restricted.spec.ts:23:9 › demo-authenticated restricted role › member demo user is denied /developer/tools (4.1s)
+[2m[WebServer] [22m⨯ Error: Not authorized: CEO portal access required
+[2m[WebServer] [22m    at assertCeoAccess (src/lib/ceo/access.ts:17:11)
+[2m[WebServer] [22m    at async getEngagementPreview (src/lib/queries/ceo/financial-queries.ts:263:3)
+[2m[WebServer] [22m    at async EngagementSection (src/app/(protected)/ceo/page.tsx:102:22)
+[2m[WebServer] [22m  [90m15 |[0m     entitlements.decisions[[33mENTITLEMENT_FEATURE_KEYS[0m.ceoPortal]?.allowed ?? [36mfalse[0m
+[2m[WebServer] [22m  [90m16 |[0m   [36mif[0m (!allowed) {
+[2m[WebServer] [22m[31m[1m>[0m [90m17 |[0m     [36mthrow[0m [36mnew[0m [33mError[0m([32m'Not authorized: CEO portal access required'[0m)
+[2m[WebServer] [22m  [90m   |[0m           [31m[1m^[0m
+[2m[WebServer] [22m  [90m18 |[0m   }
+[2m[WebServer] [22m  [90m19 |[0m }
+[2m[WebServer] [22m  [90m20 |[0m {
+[2m[WebServer] [22m  digest: [32m'2993739564'[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m⨯ Error: Not authorized: CEO portal access required
+[2m[WebServer] [22m    at assertCeoAccess (src/lib/ceo/access.ts:17:11)
+[2m[WebServer] [22m    at async getUnitEconomics (src/lib/queries/ceo/financial-queries.ts:175:3)
+[2m[WebServer] [22m    at async UnitEconomicsSection (src/app/(protected)/ceo/page.tsx:158:20)
+[2m[WebServer] [22m  [90m15 |[0m     entitlements.decisions[[33mENTITLEMENT_FEATURE_KEYS[0m.ceoPortal]?.allowed ?? [36mfalse[0m
+[2m[WebServer] [22m  [90m16 |[0m   [36mif[0m (!allowed) {
+[2m[WebServer] [22m[31m[1m>[0m [90m17 |[0m     [36mthrow[0m [36mnew[0m [33mError[0m([32m'Not authorized: CEO portal access required'[0m)
+[2m[WebServer] [22m  [90m   |[0m           [31m[1m^[0m
+[2m[WebServer] [22m  [90m18 |[0m   }
+[2m[WebServer] [22m  [90m19 |[0m }
+[2m[WebServer] [22m  [90m20 |[0m {
+[2m[WebServer] [22m  digest: [32m'3361641925'[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m⨯ Error: Not authorized: CEO portal access required
+[2m[WebServer] [22m    at assertCeoAccess (src/lib/ceo/access.ts:17:11)
+[2m[WebServer] [22m    at async getFinancialSummary (src/lib/queries/ceo/financial-queries.ts:17:3)
+[2m[WebServer] [22m    at async NorthStarSection (src/app/(protected)/ceo/page.tsx:35:46)
+[2m[WebServer] [22m  [90m15 |[0m     entitlements.decisions[[33mENTITLEMENT_FEATURE_KEYS[0m.ceoPortal]?.allowed ?? [36mfalse[0m
+[2m[WebServer] [22m  [90m16 |[0m   [36mif[0m (!allowed) {
+[2m[WebServer] [22m[31m[1m>[0m [90m17 |[0m     [36mthrow[0m [36mnew[0m [33mError[0m([32m'Not authorized: CEO portal access required'[0m)
+[2m[WebServer] [22m  [90m   |[0m           [31m[1m^[0m
+[2m[WebServer] [22m  [90m18 |[0m   }
+[2m[WebServer] [22m  [90m19 |[0m }
+[2m[WebServer] [22m  [90m20 |[0m {
+[2m[WebServer] [22m  digest: [32m'3437002482'[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m⨯ Error: Not authorized: CEO portal access required
+[2m[WebServer] [22m    at assertCeoAccess (src/lib/ceo/access.ts:17:11)
+[2m[WebServer] [22m    at async getFinancialSummary (src/lib/queries/ceo/financial-queries.ts:17:3)
+[2m[WebServer] [22m    at async BusinessHealthSection (src/app/(protected)/ceo/page.tsx:83:36)
+[2m[WebServer] [22m  [90m15 |[0m     entitlements.decisions[[33mENTITLEMENT_FEATURE_KEYS[0m.ceoPortal]?.allowed ?? [36mfalse[0m
+[2m[WebServer] [22m  [90m16 |[0m   [36mif[0m (!allowed) {
+[2m[WebServer] [22m[31m[1m>[0m [90m17 |[0m     [36mthrow[0m [36mnew[0m [33mError[0m([32m'Not authorized: CEO portal access required'[0m)
+[2m[WebServer] [22m  [90m   |[0m           [31m[1m^[0m
+[2m[WebServer] [22m  [90m18 |[0m   }
+[2m[WebServer] [22m  [90m19 |[0m }
+[2m[WebServer] [22m  [90m20 |[0m {
+[2m[WebServer] [22m  digest: [32m'1053543180'[39m
+[2m[WebServer] [22m}
+  ✓  5 [chromium] › e2e/authenticated-demo-restricted.spec.ts:23:9 › demo-authenticated restricted role › member demo user is denied /ceo (34.0s)
+  ✓  6 [chromium] › e2e/authenticated-demo-restricted.spec.ts:23:9 › demo-authenticated restricted role › member demo user is denied /ceo/financials (16.5s)
+
+  6 passed (3.5m)

@@ -1,0 +1,32 @@
+$ bun scripts/playwright-run.ts auth-demo-admin-content-admin
+[2m[WebServer] [22m(node:3430) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:3431) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 6 tests using 1 worker
+
+(node:3576) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3576) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [chromium] › e2e/admin-permissions-content-admin.spec.ts:14:7 › content-admin permission matrix › can access admin dashboard and sees permitted nav items (5.2s)
+  ✓  2 [chromium] › e2e/admin-permissions-content-admin.spec.ts:48:7 › content-admin permission matrix › can access pipeline and publishing surfaces (34.0s)
+  ✓  3 [chromium] › e2e/admin-permissions-content-admin.spec.ts:57:7 › content-admin permission matrix › can access reviews queue (36.9s)
+  ✓  4 [chromium] › e2e/admin-permissions-content-admin.spec.ts:66:7 › content-admin permission matrix › is denied ceo portal routes (21.7s)
+  ✓  5 [chromium] › e2e/admin-permissions-content-admin.spec.ts:72:7 › content-admin permission matrix › is denied developer portal routes (21.2s)
+[2m[WebServer] [22m⨯ Error: Forbidden: missing permission admin.audit.view
+[2m[WebServer] [22m    at assertPermission (src/lib/admin/roles.ts:96:11)
+[2m[WebServer] [22m    at async AdminAuditPage (src/app/admin/audit/page.tsx:8:3)
+[2m[WebServer] [22m  [90m94 |[0m   [36mconst[0m resolution = [36mawait[0m getResolution()
+[2m[WebServer] [22m  [90m95 |[0m   [36mif[0m (!hasPermission(resolution.normalizedRole, permission)) {
+[2m[WebServer] [22m[31m[1m>[0m [90m96 |[0m     [36mthrow[0m [36mnew[0m [33mError[0m([32m`Forbidden: missing permission [0m${permission[32m}`[0m)
+[2m[WebServer] [22m  [90m   |[0m           [31m[1m^[0m
+[2m[WebServer] [22m  [90m97 |[0m   }
+[2m[WebServer] [22m  [90m98 |[0m }
+[2m[WebServer] [22m  [90m99 |[0m {
+[2m[WebServer] [22m  digest: [32m'2872617478'[39m
+[2m[WebServer] [22m}
+  ✓  6 [chromium] › e2e/admin-permissions-content-admin.spec.ts:78:7 › content-admin permission matrix › is denied audit log page (11.4s)
+
+  6 passed (2.3m)

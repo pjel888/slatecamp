@@ -1,0 +1,228 @@
+Command: bun run test:e2e:auth-demo:admin-content-admin
+Working directory: /Users/philiplewis/slatecamp
+Start: 2026-04-28T12:14:43+08:00
+$ bun scripts/playwright-run.ts auth-demo-admin-content-admin
+[2m[WebServer] [22m(node:51151) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 6 tests using 1 worker
+
+(node:51196) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:51196) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [chromium] › e2e/admin-permissions-content-admin.spec.ts:14:7 › content-admin permission matrix › can access admin dashboard and sees permitted nav items (15.6s)
+(node:51825) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:51825) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  2 [chromium] › e2e/admin-permissions-content-admin.spec.ts:48:7 › content-admin permission matrix › can access pipeline and publishing surfaces (15.5s)
+(node:52422) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:52422) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  3 [chromium] › e2e/admin-permissions-content-admin.spec.ts:57:7 › content-admin permission matrix › can access reviews queue (15.5s)
+(node:53108) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:53108) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  4 [chromium] › e2e/admin-permissions-content-admin.spec.ts:66:7 › content-admin permission matrix › is denied ceo portal routes (144ms)
+(node:53189) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:53189) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  5 [chromium] › e2e/admin-permissions-content-admin.spec.ts:71:7 › content-admin permission matrix › is denied developer portal routes (149ms)
+(node:53196) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:53196) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  6 [chromium] › e2e/admin-permissions-content-admin.spec.ts:76:7 › content-admin permission matrix › is denied audit log page (136ms)
+
+
+  1) [chromium] › e2e/admin-permissions-content-admin.spec.ts:14:7 › content-admin permission matrix › can access admin dashboard and sees permitted nav items
+
+    Error: [2mexpect([22m[31mpage[39m[2m).[22mtoHaveURL[2m([22m[32mexpected[39m[2m)[22m failed
+
+    Expected pattern: [32m/\/admin$/[39m
+    Received string:  [31m"http://localhost:3221/admin/login?next=%2Fadmin"[39m
+    Timeout: 15000ms
+
+    Call log:
+    [2m  - Expect "toHaveURL" with timeout 15000ms[22m
+    [2m    19 × unexpected value "http://localhost:3221/admin/login?next=%2Fadmin"[22m
+
+
+      17 |     test.setTimeout(45000)
+      18 |     await gotoAllowRedirectAbort(page, '/admin')
+    > 19 |     await expect(page).toHaveURL(/\/admin$/, { timeout: 15000 })
+         |                        ^
+      20 |
+      21 |     // Overview nav group visible
+      22 |     await expect(page.locator('body')).toContainText('Dashboard', {
+        at /Users/philiplewis/slatecamp/e2e/admin-permissions-content-admin.spec.ts:19:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/admin-permissions-content--778ce-nd-sees-permitted-nav-items-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/admin-permissions-content--778ce-nd-sees-permitted-nav-items-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/admin-permissions-content--778ce-nd-sees-permitted-nav-items-chromium/error-context.md
+
+  2) [chromium] › e2e/admin-permissions-content-admin.spec.ts:48:7 › content-admin permission matrix › can access pipeline and publishing surfaces
+
+    Error: [2mexpect([22m[31mpage[39m[2m).[22mtoHaveURL[2m([22m[32mexpected[39m[2m)[22m failed
+
+    Expected pattern: [32m/\/admin\/pipeline$/[39m
+    Received string:  [31m"http://localhost:3221/admin/login?next=%2Fadmin%2Fpipeline"[39m
+    Timeout: 15000ms
+
+    Call log:
+    [2m  - Expect "toHaveURL" with timeout 15000ms[22m
+    [2m    19 × unexpected value "http://localhost:3221/admin/login?next=%2Fadmin%2Fpipeline"[22m
+
+
+      49 |     test.setTimeout(90000)
+      50 |     await gotoAllowRedirectAbort(page, '/admin/pipeline')
+    > 51 |     await expect(page).toHaveURL(/\/admin\/pipeline$/, { timeout: 15000 })
+         |                        ^
+      52 |     await expect(page.locator('body')).toContainText(/Pipeline|Publish|Status/i, {
+      53 |       timeout: 15000,
+      54 |     })
+        at /Users/philiplewis/slatecamp/e2e/admin-permissions-content-admin.spec.ts:51:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/admin-permissions-content--450af-ine-and-publishing-surfaces-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/admin-permissions-content--450af-ine-and-publishing-surfaces-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/admin-permissions-content--450af-ine-and-publishing-surfaces-chromium/error-context.md
+
+  3) [chromium] › e2e/admin-permissions-content-admin.spec.ts:57:7 › content-admin permission matrix › can access reviews queue
+
+    Error: [2mexpect([22m[31mpage[39m[2m).[22mtoHaveURL[2m([22m[32mexpected[39m[2m)[22m failed
+
+    Expected pattern: [32m/\/admin\/reviews$/[39m
+    Received string:  [31m"http://localhost:3221/admin/login?next=%2Fadmin%2Freviews"[39m
+    Timeout: 15000ms
+
+    Call log:
+    [2m  - Expect "toHaveURL" with timeout 15000ms[22m
+    [2m    19 × unexpected value "http://localhost:3221/admin/login?next=%2Fadmin%2Freviews"[22m
+
+
+      58 |     test.setTimeout(90000)
+      59 |     await gotoAllowRedirectAbort(page, '/admin/reviews')
+    > 60 |     await expect(page).toHaveURL(/\/admin\/reviews$/, { timeout: 15000 })
+         |                        ^
+      61 |     await expect(page.locator('body')).toContainText(/Review|Queue|Pending/i, {
+      62 |       timeout: 15000,
+      63 |     })
+        at /Users/philiplewis/slatecamp/e2e/admin-permissions-content-admin.spec.ts:60:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/admin-permissions-content--a2557-ix-can-access-reviews-queue-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/admin-permissions-content--a2557-ix-can-access-reviews-queue-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/admin-permissions-content--a2557-ix-can-access-reviews-queue-chromium/error-context.md
+
+  4) [chromium] › e2e/admin-permissions-content-admin.spec.ts:66:7 › content-admin permission matrix › is denied ceo portal routes
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m"/[7mdashboard[27m"[39m
+    Received: [31m"/[7mlogin[27m"[39m
+
+      89 |   if ([307, 308].includes(response.status())) {
+      90 |     expect(location, `${path} should return a Location header`).toBeTruthy()
+    > 91 |     expect(new URL(location!, 'http://localhost').pathname).toBe('/dashboard')
+         |                                                             ^
+      92 |     return
+      93 |   }
+      94 |
+        at expectDashboardRedirect (/Users/philiplewis/slatecamp/e2e/admin-permissions-content-admin.spec.ts:91:61)
+        at /Users/philiplewis/slatecamp/e2e/admin-permissions-content-admin.spec.ts:68:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/admin-permissions-content--843e2-is-denied-ceo-portal-routes-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/admin-permissions-content--843e2-is-denied-ceo-portal-routes-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/admin-permissions-content--843e2-is-denied-ceo-portal-routes-chromium/error-context.md
+
+  5) [chromium] › e2e/admin-permissions-content-admin.spec.ts:71:7 › content-admin permission matrix › is denied developer portal routes
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m"/[7mdashboard[27m"[39m
+    Received: [31m"/[7mlogin[27m"[39m
+
+      89 |   if ([307, 308].includes(response.status())) {
+      90 |     expect(location, `${path} should return a Location header`).toBeTruthy()
+    > 91 |     expect(new URL(location!, 'http://localhost').pathname).toBe('/dashboard')
+         |                                                             ^
+      92 |     return
+      93 |   }
+      94 |
+        at expectDashboardRedirect (/Users/philiplewis/slatecamp/e2e/admin-permissions-content-admin.spec.ts:91:61)
+        at /Users/philiplewis/slatecamp/e2e/admin-permissions-content-admin.spec.ts:73:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/admin-permissions-content--a75ab-ied-developer-portal-routes-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/admin-permissions-content--a75ab-ied-developer-portal-routes-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/admin-permissions-content--a75ab-ied-developer-portal-routes-chromium/error-context.md
+
+  6) [chromium] › e2e/admin-permissions-content-admin.spec.ts:76:7 › content-admin permission matrix › is denied audit log page
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32m"/[7mdashboard[27m"[39m
+    Received: [31m"/[7madmin/login[27m"[39m
+
+      89 |   if ([307, 308].includes(response.status())) {
+      90 |     expect(location, `${path} should return a Location header`).toBeTruthy()
+    > 91 |     expect(new URL(location!, 'http://localhost').pathname).toBe('/dashboard')
+         |                                                             ^
+      92 |     return
+      93 |   }
+      94 |
+        at expectDashboardRedirect (/Users/philiplewis/slatecamp/e2e/admin-permissions-content-admin.spec.ts:91:61)
+        at /Users/philiplewis/slatecamp/e2e/admin-permissions-content-admin.spec.ts:78:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/admin-permissions-content--51b70-ix-is-denied-audit-log-page-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/admin-permissions-content--51b70-ix-is-denied-audit-log-page-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/admin-permissions-content--51b70-ix-is-denied-audit-log-page-chromium/error-context.md
+
+  6 failed
+    [chromium] › e2e/admin-permissions-content-admin.spec.ts:14:7 › content-admin permission matrix › can access admin dashboard and sees permitted nav items
+    [chromium] › e2e/admin-permissions-content-admin.spec.ts:48:7 › content-admin permission matrix › can access pipeline and publishing surfaces
+    [chromium] › e2e/admin-permissions-content-admin.spec.ts:57:7 › content-admin permission matrix › can access reviews queue
+    [chromium] › e2e/admin-permissions-content-admin.spec.ts:66:7 › content-admin permission matrix › is denied ceo portal routes
+    [chromium] › e2e/admin-permissions-content-admin.spec.ts:71:7 › content-admin permission matrix › is denied developer portal routes
+    [chromium] › e2e/admin-permissions-content-admin.spec.ts:76:7 › content-admin permission matrix › is denied audit log page
+error: script "test:e2e:auth-demo:admin-content-admin" exited with code 1
+End: 2026-04-28T12:15:34+08:00
+Exit code: 1

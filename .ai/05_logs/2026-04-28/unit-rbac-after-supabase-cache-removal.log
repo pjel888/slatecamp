@@ -1,0 +1,61 @@
+bun test v1.3.10 (30e609e0)
+
+src/lib/admin/roles.test.ts:
+(pass) Admin Roles > getUserRole > returns null when no user is authenticated [20.42ms]
+(pass) Admin Roles > getUserRole > returns role from database when present [0.51ms]
+(pass) Admin Roles > getUserRole > returns role from auth metadata before database fallbacks [0.10ms]
+(pass) Admin Roles > getUserRole > returns role from profile when auth metadata is empty [0.05ms]
+(pass) Admin Roles > getUserRole > falls back to legacy ADMIN_EMAILS when no DB role exists [0.07ms]
+(pass) Admin Roles > Permission Helpers > isAdmin returns true for super_admin and owner [0.10ms]
+(pass) Admin Roles > Permission Helpers > isAdmin returns true for content_admin [0.06ms]
+(pass) Admin Roles > Permission Helpers > isSuperAdmin returns true for super_admin and owner [0.10ms]
+(pass) Admin Roles > Permission Helpers > canManageContent excludes reviewer-only roles [0.08ms]
+(pass) Admin Roles > Permission Helpers > canReviewContent matches multiple staff roles [0.11ms]
+(pass) Admin Roles > Permission Helpers > canManageUsers returns true for super_admin and owner [0.10ms]
+(pass) Admin Roles > assertPermission > passes silently when user has permission [1.10ms]
+(pass) Admin Roles > assertPermission > throws when user lacks permission [2.05ms]
+(pass) Admin Roles > assertPermission > sme_reviewer can approve content but not create [0.11ms]
+(pass) Admin Roles > assertPermission > developer can edit but not publish [0.05ms]
+
+src/lib/supabase/middleware.test.ts:
+(pass) supabase/middleware > logs getUser failures and still redirects unauthenticated protected routes [4.26ms]
+[application-error] auth.middleware_get_user_failed {
+  namespace: "application_error",
+  severity: "error",
+  family: "auth",
+  eventName: "middleware_get_user_failed",
+  message: "Failed to refresh auth session in middleware.",
+  requestId: "3c7a1baa-dc98-4f96-a642-b61f17b3eb2f",
+  traceId: "48b6d5ee-e874-476e-b0b7-9630adbb4792",
+  routeOrAction: "middleware:/admin",
+  userId: null,
+  sessionId: null,
+  provider: null,
+  eventId: null,
+  fingerprint: "auth|middleware_get_user_failed|middleware:/admin|auth unavailable",
+  metadata: {
+    method: "GET",
+    hostname: "localhost",
+  },
+  error: {
+    name: "Error",
+    message: "auth unavailable",
+    cause: undefined,
+  },
+  createdAt: "2026-04-28T05:24:13.073Z",
+}
+(pass) supabase/middleware > redirects unauthenticated admin root to the admin login surface [1.90ms]
+
+src/lib/entitlements/resolve-role.test.ts:
+(pass) resolveRoleFromInputs > prefers forced dev user bypass over all other sources [0.03ms]
+(pass) resolveRoleFromInputs > disables forced dev user role override when Playwright neutralizes local impersonation [0.02ms]
+(pass) resolveRoleFromInputs > prefers user_roles as the canonical source over other role surfaces [0.03ms]
+(pass) resolveRoleFromInputs > falls back to profiles.role when user_roles are absent [0.06ms]
+(pass) resolveRoleFromInputs > falls back to admin email when no structured role exists [0.04ms]
+(pass) resolveRoleFromInputs > returns member for authenticated users without an internal role [0.02ms]
+(pass) resolveRoleFromInputs > returns anonymous for missing identity
+
+ 24 pass
+ 0 fail
+ 50 expect() calls
+Ran 24 tests across 3 files. [437.00ms]

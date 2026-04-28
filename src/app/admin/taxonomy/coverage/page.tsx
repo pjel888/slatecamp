@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { assertPermission } from '@/lib/admin/roles'
+import { requirePermissionOrRedirect } from '@/lib/admin/roles'
 import { fetchCoverageData, classifyCoverage, type CoverageCellData, type CoverageLevel } from '@/lib/actions/admin/coverage'
 import { SectionHeader } from '@/components/shared/section-header'
 
@@ -26,7 +26,7 @@ const coverageStyles: Record<CoverageLevel, string> = {
  * ------------------------------------------------------------------ */
 
 const AdminTaxonomyCoveragePage = async () => {
-  await assertPermission('admin.analytics.view')
+  await requirePermissionOrRedirect('admin.analytics.view')
   const { level1, childrenMap, stats } = await fetchCoverageData()
 
   if (level1.length === 0) {

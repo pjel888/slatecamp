@@ -1,0 +1,158 @@
+$ bun scripts/playwright-run.ts auth-demo-admin-content-admin
+[2m[WebServer] [22m(node:88033) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:88034) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 6 tests using 1 worker
+
+(node:88369) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:88369) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+  ✘  1 [chromium] › e2e/admin-permissions-content-admin.spec.ts:14:7 › content-admin permission matrix › can access admin dashboard and sees permitted nav items (14.7s)
+(node:88428) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:88428) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  2 [chromium] › e2e/admin-permissions-content-admin.spec.ts:48:7 › content-admin permission matrix › can access pipeline and publishing surfaces (33.3s)
+  ✓  3 [chromium] › e2e/admin-permissions-content-admin.spec.ts:57:7 › content-admin permission matrix › can access reviews queue (12.8s)
+  ✓  4 [chromium] › e2e/admin-permissions-content-admin.spec.ts:66:7 › content-admin permission matrix › is denied ceo portal routes (16.6s)
+  ✘  5 [chromium] › e2e/admin-permissions-content-admin.spec.ts:72:7 › content-admin permission matrix › is denied developer portal routes (51.6s)
+(node:92663) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:92663) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  6 [chromium] › e2e/admin-permissions-content-admin.spec.ts:78:7 › content-admin permission matrix › is denied audit log page (50.3s)
+
+
+  1) [chromium] › e2e/admin-permissions-content-admin.spec.ts:14:7 › content-admin permission matrix › can access admin dashboard and sees permitted nav items
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).not.[22mtoContainText[2m([22m[32mexpected[39m[2m)[22m failed
+
+    Locator: locator('body')
+    Expected substring: not [32m"Audit Log"[39m
+    Received string: [31m"DEVSkip to main contentSlateCampAdmin ConsoleownerDashboardOverviewDashboardKnowledge BaseBrowserQuestion BankStructureTaxonomy3D Assets3D Models RegistryQualityReview QueuePublishing PipelineContent SearchPulse[7mAudit Log[27mPulse FeedSettingsSettingsCommand PaletteSearch components, status, tools...AdminDashboardContent ManagementDashboardCoverage gap detectedALE Foundations(A1.1) has high exam frequency but 0 questions.Create contentNeeds AttentionAll clear — nothing needs immediate attention.Total Questions12Total Articles1Published1Draft0Content by SubjectResource DistributionResource distribution across the syllabusQuestionsArticlesA1Building Code6Items1WikiB1Structures6Items1WikiQuick ActionsCreate QuestionAdd a new question to the bankCreate ArticleWrite a new wiki articleKnowledge BrowserManage existing contentImport ContentBulk import from spreadsheetReview QueueItems awaiting reviewTaxonomy EditorManage content taxonomyRecent ActivitySystem LogsView allNo recent activity recorded."[39m
+    Timeout: 5000ms
+
+    Call log:
+    [2m  - Expect "not toContainText" with timeout 5000ms[22m
+    [2m  - waiting for locator('body')[22m
+    [2m    9 × locator resolved to <body class="__variable_de0309 __variable_bdb7b4 __variable_dd4049 __variable_bb509a __variable_1084b9 font-sans antialiased">…</body>[22m
+    [2m      - unexpected value "DEVSkip to main contentSlateCampAdmin ConsoleownerDashboardOverviewDashboardKnowledge BaseBrowserQuestion BankStructureTaxonomy3D Assets3D Models RegistryQualityReview QueuePublishing PipelineContent SearchPulseAudit LogPulse FeedSettingsSettingsCommand PaletteSearch components, status, tools...AdminDashboardContent ManagementDashboardCoverage gap detectedALE Foundations(A1.1) has high exam frequency but 0 questions.Create contentNeeds AttentionAll clear — nothing needs immediate attention.Total Questions12Total Articles1Published1Draft0Content by SubjectResource DistributionResource distribution across the syllabusQuestionsArticlesA1Building Code6Items1WikiB1Structures6Items1WikiQuick ActionsCreate QuestionAdd a new question to the bankCreate ArticleWrite a new wiki articleKnowledge BrowserManage existing contentImport ContentBulk import from spreadsheetReview QueueItems awaiting reviewTaxonomy EditorManage content taxonomyRecent ActivitySystem LogsView allNo recent activity recorded."[22m
+
+
+      43 |     await expect(
+      44 |       page.locator('body'),
+    > 45 |     ).not.toContainText('Audit Log', { timeout: 5000 })
+         |           ^
+      46 |   })
+      47 |
+      48 |   test('can access pipeline and publishing surfaces', async ({ page }) => {
+        at /Users/philiplewis/slatecamp/e2e/admin-permissions-content-admin.spec.ts:45:11
+
+    Error: browser runtime errors
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoEqual[2m([22m[32mexpected[39m[2m) // deep equality[22m
+
+    [32m- Expected  - 1[39m
+    [31m+ Received  + 4[39m
+
+    [32m- Array [][39m
+    [31m+ Array [[39m
+    [31m+   "Invalid or unexpected token",[39m
+    [31m+   "Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.",[39m
+    [31m+ ][39m
+
+       at support/authenticated-demo.ts:21
+
+      19 |       await use()
+      20 |
+    > 21 |       expect(errors, 'browser runtime errors').toEqual([])
+         |                                                ^
+      22 |     },
+      23 |     { auto: true },
+      24 |   ],
+        at Object.exports.authenticatedDemoTest._test.test.extend.assertNoAppErrors.auto (/Users/philiplewis/slatecamp/e2e/support/authenticated-demo.ts:21:48)
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/admin-permissions-content--778ce-nd-sees-permitted-nav-items-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/admin-permissions-content--778ce-nd-sees-permitted-nav-items-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/admin-permissions-content--778ce-nd-sees-permitted-nav-items-chromium/error-context.md
+
+  2) [chromium] › e2e/admin-permissions-content-admin.spec.ts:72:7 › content-admin permission matrix › is denied developer portal routes
+
+    [31mTest timeout of 45000ms exceeded.[39m
+
+    Error: apiRequestContext.get: Request context disposed.
+    Call log:
+    [2m  - → GET http://localhost:3217/developer/tools[22m
+    [2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.7727.15 Safari/537.36[22m
+    [2m    - accept: */*[22m
+    [2m    - accept-encoding: gzip,deflate,br[22m
+
+
+      86 |   path: string,
+      87 | ) {
+    > 88 |   const response = await request.get(path, { maxRedirects: 0 })
+         |                                  ^
+      89 |   const location = response.headers().location
+      90 |
+      91 |   if ([307, 308].includes(response.status())) {
+        at expectDashboardRedirect (/Users/philiplewis/slatecamp/e2e/admin-permissions-content-admin.spec.ts:88:34)
+        at /Users/philiplewis/slatecamp/e2e/admin-permissions-content-admin.spec.ts:75:11
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/admin-permissions-content--a75ab-ied-developer-portal-routes-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/admin-permissions-content--a75ab-ied-developer-portal-routes-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/admin-permissions-content--a75ab-ied-developer-portal-routes-chromium/error-context.md
+
+  3) [chromium] › e2e/admin-permissions-content-admin.spec.ts:78:7 › content-admin permission matrix › is denied audit log page
+
+    [31mTest timeout of 45000ms exceeded.[39m
+
+    Error: apiRequestContext.get: Request context disposed.
+    Call log:
+    [2m  - → GET http://localhost:3217/admin/audit[22m
+    [2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.7727.15 Safari/537.36[22m
+    [2m    - accept: */*[22m
+    [2m    - accept-encoding: gzip,deflate,br[22m
+
+
+      86 |   path: string,
+      87 | ) {
+    > 88 |   const response = await request.get(path, { maxRedirects: 0 })
+         |                                  ^
+      89 |   const location = response.headers().location
+      90 |
+      91 |   if ([307, 308].includes(response.status())) {
+        at expectDashboardRedirect (/Users/philiplewis/slatecamp/e2e/admin-permissions-content-admin.spec.ts:88:34)
+        at /Users/philiplewis/slatecamp/e2e/admin-permissions-content-admin.spec.ts:80:11
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/admin-permissions-content--51b70-ix-is-denied-audit-log-page-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/admin-permissions-content--51b70-ix-is-denied-audit-log-page-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/admin-permissions-content--51b70-ix-is-denied-audit-log-page-chromium/error-context.md
+
+  3 failed
+    [chromium] › e2e/admin-permissions-content-admin.spec.ts:14:7 › content-admin permission matrix › can access admin dashboard and sees permitted nav items
+    [chromium] › e2e/admin-permissions-content-admin.spec.ts:72:7 › content-admin permission matrix › is denied developer portal routes
+    [chromium] › e2e/admin-permissions-content-admin.spec.ts:78:7 › content-admin permission matrix › is denied audit log page
+  3 passed (3.2m)
+error: script "test:e2e:auth-demo:admin-content-admin" exited with code 1

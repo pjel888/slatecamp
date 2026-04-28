@@ -1,4 +1,3 @@
-import { cache } from 'react'
 import { createClient, getUser } from '@/lib/supabase/server'
 import type { CanonicalRole, RoleResolution, RoleSource } from './types'
 export type { RoleResolution } from './types'
@@ -40,6 +39,19 @@ const pickStrongestRole = (
 
     return ROLE_PRIORITY[role] > ROLE_PRIORITY[strongest] ? role : strongest
   }, null)
+
+interface DevForceRoleEnv {
+  NODE_ENV?: string
+  DISABLE_DEV_FORCE_USER_ID?: string
+  DEV_FORCE_USER_ID?: string
+}
+
+export const isDevForceUserRoleOverrideActive = (
+  env: DevForceRoleEnv = process.env,
+): boolean =>
+  env.NODE_ENV === 'development' &&
+  env.DISABLE_DEV_FORCE_USER_ID !== 'true' &&
+  Boolean(env.DEV_FORCE_USER_ID)
 
 interface RoleInputs {
   email?: string | null
@@ -185,7 +197,7 @@ export const resolveRoleFromInputs = (inputs: RoleInputs): RoleResolution => {
   }
 }
 
-export const resolveCurrentUserRole = cache(async (): Promise<RoleResolution> => {
+export const resolveCurrentUserRole = async (): Promise<RoleResolution> => {
   const {
     data: { user },
   } = await getUser()
@@ -211,7 +223,6 @@ export const resolveCurrentUserRole = cache(async (): Promise<RoleResolution> =>
     userMetadataRole: user.user_metadata?.role,
     profileRole: profileResult.data?.role,
     userRoleRows: roleRowsResult.data ?? [],
-    forcedUserIdActive:
-      process.env.NODE_ENV === 'development' && Boolean(process.env.DEV_FORCE_USER_ID),
+    forcedUserIdActive: isDevForceUserRoleOverrideActive(),
   })
-})
+}

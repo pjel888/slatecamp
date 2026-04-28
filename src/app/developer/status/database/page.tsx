@@ -49,21 +49,24 @@ const DatabaseStatusPage = async () => {
           Connection Pool
         </p>
         <Card size="sm">
-          <div className="flex h-3 w-full overflow-hidden rounded-full bg-muted">
+          <div className="flex h-3 w-full overflow-hidden rounded-full bg-muted" role="img" aria-label="Connection pool usage">
             <div
               className="bg-primary transition-all duration-150"
               style={{ width: `${activePercent}%` }}
               title={`Active: ${active}`}
+              aria-label={`Active connections: ${active}`}
             />
             <div
               className="bg-emerald-500 transition-all duration-150"
               style={{ width: `${idlePercent}%` }}
               title={`Idle: ${idle}`}
+              aria-label={`Idle connections: ${idle}`}
             />
             <div
               className="bg-border transition-all duration-150"
               style={{ width: `${remainingPercent}%` }}
               title={`Available: ${max - active - idle}`}
+              aria-label={`Available connections: ${max - active - idle}`}
             />
           </div>
           <div className="flex items-center gap-4 mt-3">

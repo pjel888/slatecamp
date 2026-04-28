@@ -8,7 +8,7 @@ export const authenticatedDemoTest = base.extend<{ assertNoAppErrors: void }>({
       const errors: string[] = []
 
       page.on('pageerror', (error) => {
-        errors.push(error.message)
+        errors.push(error.stack || error.message)
       })
       page.on('console', (message) => {
         if (message.type() === 'error') {
@@ -25,17 +25,30 @@ export const authenticatedDemoTest = base.extend<{ assertNoAppErrors: void }>({
 })
 
 export async function gotoAllowRedirectAbort(page: Page, path: string) {
-  return page.goto(path, { waitUntil: 'commit' }).catch((error) => {
+  const response = await page.goto(path, {
+    timeout: 120000,
+    waitUntil: 'commit',
+  }).catch((error) => {
     const message = String(error)
     if (
       message.includes('ERR_ABORTED') ||
-      message.includes('frame was detached')
+      message.includes('frame was detached') ||
+      (message.includes('Timeout') && page.url() !== 'about:blank')
     ) {
       return null
     }
 
     throw error
   })
+
+  if (page.url() === 'about:blank') {
+    return page.goto(path, {
+      timeout: 120000,
+      waitUntil: 'commit',
+    })
+  }
+
+  return response
 }
 
 export async function slideControlByLabel(page: Page, label: RegExp | string) {

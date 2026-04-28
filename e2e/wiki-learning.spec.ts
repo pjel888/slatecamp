@@ -12,36 +12,43 @@ test.describe('demo-auth wiki learning flow', () => {
   )
 
   test('wiki landing and seeded article resolve', async ({ page }) => {
-    test.setTimeout(90000)
-    const landing = await page.goto('/dashboard/wiki', {
-      waitUntil: 'domcontentloaded',
-    })
+    test.setTimeout(240000)
+    const landing = await gotoAllowRedirectAbort(page, '/dashboard/wiki')
 
-    expect(landing?.ok(), '/dashboard/wiki should return 2xx').toBe(true)
+    if (landing) {
+      expect(landing.ok(), '/dashboard/wiki should return 2xx').toBe(true)
+    }
     await expect(
       page.getByRole('heading', { name: /Knowledge Wiki/i }),
     ).toBeVisible()
 
-    await gotoAllowRedirectAbort(page, '/dashboard/wiki/demo-ale-foundations')
+    const article = await gotoAllowRedirectAbort(
+      page,
+      '/dashboard/wiki/demo-ale-foundations',
+    )
+    if (article) {
+      expect(
+        article.ok(),
+        '/dashboard/wiki/demo-ale-foundations should return 2xx',
+      ).toBe(true)
+    }
     await expect(page).toHaveURL(/\/dashboard\/wiki\/demo-ale-foundations$/, {
-      timeout: 30000,
+      timeout: 60000,
     })
-    await expect(page.locator('#wiki-center-pane')).toContainText(
-      /Demo ALE Foundations/i,
-      { timeout: 30000 },
-    )
-    await expect(page.locator('#wiki-center-pane')).toContainText(
-      /Core Rule/i,
-      { timeout: 30000 },
-    )
+    await expect(
+      page.getByRole('heading', { name: /^Demo ALE Foundations$/ }).first(),
+    ).toBeVisible({ timeout: 60000 })
+    await expect(
+      page.getByRole('heading', { name: /Core Rule/i }),
+    ).toBeVisible({ timeout: 60000 })
   })
 
   test('missing wiki slug resolves to dashboard not-found UI', async ({ page }) => {
     test.setTimeout(90000)
-    const response = await page.goto('/dashboard/wiki/__missing__', {
-      waitUntil: 'domcontentloaded',
-      timeout: 90000,
-    })
+    const response = await gotoAllowRedirectAbort(
+      page,
+      '/dashboard/wiki/__missing__',
+    )
     expect(response?.ok(), 'missing wiki slug should resolve via not-found UI').toBe(
       true,
     )

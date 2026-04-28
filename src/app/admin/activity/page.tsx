@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { createClient } from '@/lib/supabase/server'
-import { assertPermission } from '@/lib/admin/roles'
+import { requirePermissionOrRedirect } from '@/lib/admin/roles'
 import { formatRelativeTime } from '@/lib/utils/format-time'
 import { Card } from '@/components/ui/card'
 import { EventBadge } from '@/components/shared/event-badge'
@@ -66,7 +66,7 @@ const formatTableName = (tableName: string): string => {
 /* ------------------------------------------------------------------ */
 
 const AdminActivityPage = async () => {
-  await assertPermission('admin.activity.view')
+  await requirePermissionOrRedirect('admin.activity.view')
 
   const supabase = await createClient()
   const { data: logs } = await supabase

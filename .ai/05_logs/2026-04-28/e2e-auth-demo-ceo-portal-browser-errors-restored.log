@@ -1,0 +1,17 @@
+$ bun scripts/playwright-run.ts auth-demo-ceo-portal
+[2m[WebServer] [22m[playwright-web-server] Removed stale Next dev cache at /Users/philiplewis/slatecamp/.next/dev
+[2m[WebServer] [22m(node:93019) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:93041) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+(node:93740) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:93740) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+  ✓  1 [chromium] › e2e/ceo-portal.spec.ts:16:7 › ceo control plane and audit logging › can access CEO surfaces and exercise admin-role audit flow (48.5s)
+
+  1 passed (1.1m)

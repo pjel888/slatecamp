@@ -1,0 +1,87 @@
+$ bun scripts/playwright-run.ts auth-demo-admin-developer
+[2m[WebServer] [22m[playwright-web-server] Removed stale Next dev lock at /Users/philiplewis/slatecamp/.next/dev/lock
+[2m[WebServer] [22m(node:79100) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:79120) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 5 tests using 1 worker
+
+(node:79498) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:79498) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [chromium] › e2e/admin-permissions-developer.spec.ts:27:7 › developer permission matrix › can access developer portal (7.0s)
+  ✓  2 [chromium] › e2e/admin-permissions-developer.spec.ts:39:7 › developer permission matrix › can access admin dashboard with limited nav scope (3.4s)
+  ✓  3 [chromium] › e2e/admin-permissions-developer.spec.ts:74:7 › developer permission matrix › can access developer tools (1.8s)
+  ✘  4 [chromium] › e2e/admin-permissions-developer.spec.ts:86:7 › developer permission matrix › is denied ceo portal routes (11.3s)
+(node:80381) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:80381) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  5 [chromium] › e2e/admin-permissions-developer.spec.ts:92:7 › developer permission matrix › is denied admin pipeline and reviews (39.3s)
+
+
+  1) [chromium] › e2e/admin-permissions-developer.spec.ts:86:7 › developer permission matrix › is denied ceo portal routes
+
+    Error: /ceo/financials should redirect to the learner dashboard
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoContain[2m([22m[32mexpected[39m[2m) // indexOf[22m
+
+    Expected value: [32m200[39m
+    Received array: [31m[307, 308][39m
+
+      15 |     [307, 308],
+      16 |     `${path} should redirect to the learner dashboard`,
+    > 17 |   ).toContain(response.status())
+         |     ^
+      18 |   expect(response.headers().location ?? '').toContain('/dashboard')
+      19 | }
+      20 |
+        at expectDashboardRedirect (/Users/philiplewis/slatecamp/e2e/admin-permissions-developer.spec.ts:17:5)
+        at /Users/philiplewis/slatecamp/e2e/admin-permissions-developer.spec.ts:88:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/admin-permissions-develope-1474b-is-denied-ceo-portal-routes-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/admin-permissions-develope-1474b-is-denied-ceo-portal-routes-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/admin-permissions-develope-1474b-is-denied-ceo-portal-routes-chromium/error-context.md
+
+  2) [chromium] › e2e/admin-permissions-developer.spec.ts:92:7 › developer permission matrix › is denied admin pipeline and reviews
+
+    Error: /admin/pipeline should redirect to the learner dashboard
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoContain[2m([22m[32mexpected[39m[2m) // indexOf[22m
+
+    Expected value: [32m200[39m
+    Received array: [31m[307, 308][39m
+
+      15 |     [307, 308],
+      16 |     `${path} should redirect to the learner dashboard`,
+    > 17 |   ).toContain(response.status())
+         |     ^
+      18 |   expect(response.headers().location ?? '').toContain('/dashboard')
+      19 | }
+      20 |
+        at expectDashboardRedirect (/Users/philiplewis/slatecamp/e2e/admin-permissions-developer.spec.ts:17:5)
+        at /Users/philiplewis/slatecamp/e2e/admin-permissions-developer.spec.ts:94:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/admin-permissions-develope-f52b8--admin-pipeline-and-reviews-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/admin-permissions-develope-f52b8--admin-pipeline-and-reviews-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/admin-permissions-develope-f52b8--admin-pipeline-and-reviews-chromium/error-context.md
+
+  2 failed
+    [chromium] › e2e/admin-permissions-developer.spec.ts:86:7 › developer permission matrix › is denied ceo portal routes
+    [chromium] › e2e/admin-permissions-developer.spec.ts:92:7 › developer permission matrix › is denied admin pipeline and reviews
+  3 passed (1.2m)
+error: script "test:e2e:auth-demo:admin-developer" exited with code 1

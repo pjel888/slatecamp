@@ -1,0 +1,121 @@
+Command: bun run test:e2e:auth-demo:admin-sme-reviewer
+Working directory: /Users/philiplewis/slatecamp
+Start: 2026-04-28T11:43:36+08:00
+$ bun scripts/playwright-run.ts auth-demo-admin-sme-reviewer
+[2m[WebServer] [22m(node:73510) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:73527) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 5 tests using 1 worker
+
+(node:73905) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:73905) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [chromium] › e2e/admin-permissions-sme-reviewer.spec.ts:14:7 › sme-reviewer permission matrix › can access admin dashboard and sees review-centric nav items (6.8s)
+  ✓  2 [chromium] › e2e/admin-permissions-sme-reviewer.spec.ts:54:7 › sme-reviewer permission matrix › can access reviews queue (1.5m)
+  ✘  3 [chromium] › e2e/admin-permissions-sme-reviewer.spec.ts:63:7 › sme-reviewer permission matrix › can access pipeline for review approvals (1.8m)
+(node:82612) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:82612) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  4 [chromium] › e2e/admin-permissions-sme-reviewer.spec.ts:72:7 › sme-reviewer permission matrix › is denied content creation routes (1.2m)
+(node:85696) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:85696) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  5 [chromium] › e2e/admin-permissions-sme-reviewer.spec.ts:78:7 › sme-reviewer permission matrix › is denied ceo and developer portals (1.2m)
+
+
+  1) [chromium] › e2e/admin-permissions-sme-reviewer.spec.ts:63:7 › sme-reviewer permission matrix › can access pipeline for review approvals
+
+    [31mTest timeout of 90000ms exceeded.[39m
+
+    Error: page.goto: Test timeout of 90000ms exceeded.
+    Call log:
+    [2m  - navigating to "http://localhost:3222/admin/pipeline", waiting until "domcontentloaded"[22m
+
+
+       at support/authenticated-demo.ts:41
+
+      39 |
+      40 |   if (page.url() === 'about:blank') {
+    > 41 |     return page.goto(path, { waitUntil: 'domcontentloaded' })
+         |                 ^
+      42 |   }
+      43 |
+      44 |   return response
+        at gotoAllowRedirectAbort (/Users/philiplewis/slatecamp/e2e/support/authenticated-demo.ts:41:17)
+        at /Users/philiplewis/slatecamp/e2e/admin-permissions-sme-reviewer.spec.ts:65:5
+
+    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/admin-permissions-sme-revi-eecc7-peline-for-review-approvals-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/admin-permissions-sme-revi-eecc7-peline-for-review-approvals-chromium/error-context.md
+
+  2) [chromium] › e2e/admin-permissions-sme-reviewer.spec.ts:72:7 › sme-reviewer permission matrix › is denied content creation routes
+
+    TimeoutError: apiRequestContext.get: Timeout 60000ms exceeded.
+    Call log:
+    [2m  - → GET http://localhost:3222/admin/knowledge/questions/new[22m
+    [2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.7727.15 Safari/537.36[22m
+    [2m    - accept: */*[22m
+    [2m    - accept-encoding: gzip,deflate,br[22m
+
+
+      87 |   path: string,
+      88 | ) {
+    > 89 |   const response = await request.get(path, { maxRedirects: 0, timeout: 60000 })
+         |                                  ^
+      90 |   const location = response.headers().location
+      91 |
+      92 |   if ([307, 308].includes(response.status())) {
+        at expectDashboardRedirect (/Users/philiplewis/slatecamp/e2e/admin-permissions-sme-reviewer.spec.ts:89:34)
+        at /Users/philiplewis/slatecamp/e2e/admin-permissions-sme-reviewer.spec.ts:74:11
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/admin-permissions-sme-revi-b5ea4-ied-content-creation-routes-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/admin-permissions-sme-revi-b5ea4-ied-content-creation-routes-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/admin-permissions-sme-revi-b5ea4-ied-content-creation-routes-chromium/error-context.md
+
+  3) [chromium] › e2e/admin-permissions-sme-reviewer.spec.ts:78:7 › sme-reviewer permission matrix › is denied ceo and developer portals
+
+    TimeoutError: apiRequestContext.get: Timeout 60000ms exceeded.
+    Call log:
+    [2m  - → GET http://localhost:3222/ceo/financials[22m
+    [2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.7727.15 Safari/537.36[22m
+    [2m    - accept: */*[22m
+    [2m    - accept-encoding: gzip,deflate,br[22m
+
+
+      87 |   path: string,
+      88 | ) {
+    > 89 |   const response = await request.get(path, { maxRedirects: 0, timeout: 60000 })
+         |                                  ^
+      90 |   const location = response.headers().location
+      91 |
+      92 |   if ([307, 308].includes(response.status())) {
+        at expectDashboardRedirect (/Users/philiplewis/slatecamp/e2e/admin-permissions-sme-reviewer.spec.ts:89:34)
+        at /Users/philiplewis/slatecamp/e2e/admin-permissions-sme-reviewer.spec.ts:80:11
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/admin-permissions-sme-revi-e4bbf-d-ceo-and-developer-portals-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/admin-permissions-sme-revi-e4bbf-d-ceo-and-developer-portals-chromium/error-context.md
+
+  3 failed
+    [chromium] › e2e/admin-permissions-sme-reviewer.spec.ts:63:7 › sme-reviewer permission matrix › can access pipeline for review approvals
+    [chromium] › e2e/admin-permissions-sme-reviewer.spec.ts:72:7 › sme-reviewer permission matrix › is denied content creation routes
+    [chromium] › e2e/admin-permissions-sme-reviewer.spec.ts:78:7 › sme-reviewer permission matrix › is denied ceo and developer portals
+  2 passed (6.3m)
+error: script "test:e2e:auth-demo:admin-sme-reviewer" exited with code 1
+End: 2026-04-28T11:49:55+08:00
+Exit code: 1

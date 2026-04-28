@@ -1,0 +1,710 @@
+{
+  "target": {
+    "id": "Function:src/lib/admin/roles.ts:assertPermission",
+    "name": "assertPermission",
+    "type": "Function",
+    "filePath": "src/lib/admin/roles.ts"
+  },
+  "direction": "upstream",
+  "impactedCount": 66,
+  "risk": "CRITICAL",
+  "summary": {
+    "direct": 57,
+    "processes_affected": 17,
+    "modules_affected": 4
+  },
+  "affected_processes": [
+    {
+      "name": "SaveAllBar",
+      "type": "Function",
+      "filePath": "src/components/admin/unified-editor/SaveAllBar.tsx",
+      "affected_process_count": 11,
+      "total_hits": 19,
+      "earliest_broken_step": 1
+    },
+    {
+      "name": "handleDelete",
+      "type": "Function",
+      "filePath": "src/components/admin/DeleteArticleModal.tsx",
+      "affected_process_count": 8,
+      "total_hits": 15,
+      "earliest_broken_step": 1
+    },
+    {
+      "name": "handleSave",
+      "type": "Function",
+      "filePath": "src/components/admin/QuestionEditor.tsx",
+      "affected_process_count": 7,
+      "total_hits": 13,
+      "earliest_broken_step": 1
+    },
+    {
+      "name": "createAdminDesignScenarioQuestion",
+      "type": "Function",
+      "filePath": "src/lib/actions/admin/design-scenarios.ts",
+      "affected_process_count": 8,
+      "total_hits": 8,
+      "earliest_broken_step": 1
+    },
+    {
+      "name": "updateArticleFull",
+      "type": "Function",
+      "filePath": "src/lib/actions/admin/content.ts",
+      "affected_process_count": 8,
+      "total_hits": 8,
+      "earliest_broken_step": 1
+    },
+    {
+      "name": "createAdminDesignProblemQuestion",
+      "type": "Function",
+      "filePath": "src/lib/actions/admin/design-problems.ts",
+      "affected_process_count": 8,
+      "total_hits": 8,
+      "earliest_broken_step": 1
+    },
+    {
+      "name": "saveArticleFull",
+      "type": "Function",
+      "filePath": "src/lib/actions/admin/content.ts",
+      "affected_process_count": 7,
+      "total_hits": 7,
+      "earliest_broken_step": 1
+    },
+    {
+      "name": "deleteQuestion",
+      "type": "Function",
+      "filePath": "src/lib/actions/admin/questions.ts",
+      "affected_process_count": 5,
+      "total_hits": 5,
+      "earliest_broken_step": 1
+    },
+    {
+      "name": "revokeRole",
+      "type": "Function",
+      "filePath": "src/lib/actions/admin/roles.ts",
+      "affected_process_count": 5,
+      "total_hits": 5,
+      "earliest_broken_step": 1
+    },
+    {
+      "name": "updateArticleStatus",
+      "type": "Function",
+      "filePath": "src/lib/actions/admin/pipeline.ts",
+      "affected_process_count": 5,
+      "total_hits": 5,
+      "earliest_broken_step": 1
+    },
+    {
+      "name": "bulkDeleteQuestions",
+      "type": "Function",
+      "filePath": "src/lib/actions/admin/bulk.ts",
+      "affected_process_count": 5,
+      "total_hits": 5,
+      "earliest_broken_step": 1
+    },
+    {
+      "name": "updateQuestion",
+      "type": "Function",
+      "filePath": "src/lib/actions/admin/questions.ts",
+      "affected_process_count": 5,
+      "total_hits": 5,
+      "earliest_broken_step": 1
+    },
+    {
+      "name": "approveWikiArticleReview",
+      "type": "Function",
+      "filePath": "src/lib/actions/admin/wiki.ts",
+      "affected_process_count": 5,
+      "total_hits": 5,
+      "earliest_broken_step": 1
+    },
+    {
+      "name": "createAsset",
+      "type": "Function",
+      "filePath": "src/lib/actions/admin/assets.ts",
+      "affected_process_count": 5,
+      "total_hits": 5,
+      "earliest_broken_step": 1
+    },
+    {
+      "name": "createTaxonomyNode",
+      "type": "Function",
+      "filePath": "src/lib/actions/admin/taxonomy.ts",
+      "affected_process_count": 5,
+      "total_hits": 5,
+      "earliest_broken_step": 1
+    },
+    {
+      "name": "createWikiArticle",
+      "type": "Function",
+      "filePath": "src/lib/actions/admin/wiki.ts",
+      "affected_process_count": 5,
+      "total_hits": 5,
+      "earliest_broken_step": 1
+    },
+    {
+      "name": "createEIPrompt",
+      "type": "Function",
+      "filePath": "src/lib/actions/admin/content.ts",
+      "affected_process_count": 5,
+      "total_hits": 5,
+      "earliest_broken_step": 1
+    }
+  ],
+  "affected_modules": [
+    {
+      "name": "Admin",
+      "hits": 38,
+      "impact": "direct"
+    },
+    {
+      "name": "Actions",
+      "hits": 24,
+      "impact": "direct"
+    },
+    {
+      "name": "Hooks",
+      "hits": 2,
+      "impact": "direct"
+    },
+    {
+      "name": "Unified-editor",
+      "hits": 2,
+      "impact": "direct"
+    }
+  ],
+  "byDepth": {
+    "1": [
+      {
+        "depth": 1,
+        "id": "Function:src/app/admin/layout.tsx:AdminLayout",
+        "name": "AdminLayout",
+        "filePath": "src/app/admin/layout.tsx",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/wiki.ts:updateWikiArticle",
+        "name": "updateWikiArticle",
+        "filePath": "src/lib/actions/admin/wiki.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/wiki.ts:createWikiArticle",
+        "name": "createWikiArticle",
+        "filePath": "src/lib/actions/admin/wiki.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/wiki.ts:deleteWikiArticle",
+        "name": "deleteWikiArticle",
+        "filePath": "src/lib/actions/admin/wiki.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/wiki.ts:approveWikiArticleReview",
+        "name": "approveWikiArticleReview",
+        "filePath": "src/lib/actions/admin/wiki.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/wiki.ts:requestWikiArticleChanges",
+        "name": "requestWikiArticleChanges",
+        "filePath": "src/lib/actions/admin/wiki.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/taxonomy.ts:getTaxonomyNodes",
+        "name": "getTaxonomyNodes",
+        "filePath": "src/lib/actions/admin/taxonomy.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/taxonomy.ts:updateTaxonomyNode",
+        "name": "updateTaxonomyNode",
+        "filePath": "src/lib/actions/admin/taxonomy.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/taxonomy.ts:createTaxonomyNode",
+        "name": "createTaxonomyNode",
+        "filePath": "src/lib/actions/admin/taxonomy.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/taxonomy.ts:deleteTaxonomyNode",
+        "name": "deleteTaxonomyNode",
+        "filePath": "src/lib/actions/admin/taxonomy.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/roles.ts:getAdminUsers",
+        "name": "getAdminUsers",
+        "filePath": "src/lib/actions/admin/roles.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/roles.ts:assignRole",
+        "name": "assignRole",
+        "filePath": "src/lib/actions/admin/roles.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/roles.ts:revokeRole",
+        "name": "revokeRole",
+        "filePath": "src/lib/actions/admin/roles.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/questions.ts:deleteQuestions",
+        "name": "deleteQuestions",
+        "filePath": "src/lib/actions/admin/questions.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/questions.ts:createQuestion",
+        "name": "createQuestion",
+        "filePath": "src/lib/actions/admin/questions.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/questions.ts:updateQuestion",
+        "name": "updateQuestion",
+        "filePath": "src/lib/actions/admin/questions.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/questions.ts:deleteQuestion",
+        "name": "deleteQuestion",
+        "filePath": "src/lib/actions/admin/questions.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/question-queries.ts:assertCanReadAdminQuestions",
+        "name": "assertCanReadAdminQuestions",
+        "filePath": "src/lib/actions/admin/question-queries.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/question-queries.ts:getQuestionsForAnalytics",
+        "name": "getQuestionsForAnalytics",
+        "filePath": "src/lib/actions/admin/question-queries.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/pipeline.ts:getPipelineArticles",
+        "name": "getPipelineArticles",
+        "filePath": "src/lib/actions/admin/pipeline.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/pipeline.ts:updateArticleStatus",
+        "name": "updateArticleStatus",
+        "filePath": "src/lib/actions/admin/pipeline.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/design-scenarios.ts:getAdminDesignScenarios",
+        "name": "getAdminDesignScenarios",
+        "filePath": "src/lib/actions/admin/design-scenarios.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/design-scenarios.ts:getAdminDesignScenario",
+        "name": "getAdminDesignScenario",
+        "filePath": "src/lib/actions/admin/design-scenarios.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/design-scenarios.ts:updateAdminDesignScenarioQuestion",
+        "name": "updateAdminDesignScenarioQuestion",
+        "filePath": "src/lib/actions/admin/design-scenarios.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/design-scenarios.ts:createAdminDesignScenarioQuestion",
+        "name": "createAdminDesignScenarioQuestion",
+        "filePath": "src/lib/actions/admin/design-scenarios.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/design-problems.ts:getAdminDesignProblems",
+        "name": "getAdminDesignProblems",
+        "filePath": "src/lib/actions/admin/design-problems.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/design-problems.ts:getAdminDesignProblem",
+        "name": "getAdminDesignProblem",
+        "filePath": "src/lib/actions/admin/design-problems.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/design-problems.ts:updateAdminDesignProblemQuestion",
+        "name": "updateAdminDesignProblemQuestion",
+        "filePath": "src/lib/actions/admin/design-problems.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/design-problems.ts:createAdminDesignProblemQuestion",
+        "name": "createAdminDesignProblemQuestion",
+        "filePath": "src/lib/actions/admin/design-problems.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/dashboard.ts:getAdminStats",
+        "name": "getAdminStats",
+        "filePath": "src/lib/actions/admin/dashboard.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/dashboard.ts:getAdminDashboardData",
+        "name": "getAdminDashboardData",
+        "filePath": "src/lib/actions/admin/dashboard.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/dashboard.ts:getContentBySubject",
+        "name": "getContentBySubject",
+        "filePath": "src/lib/actions/admin/dashboard.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/dashboard.ts:getNeedsAttentionData",
+        "name": "getNeedsAttentionData",
+        "filePath": "src/lib/actions/admin/dashboard.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/dashboard.ts:getCriticalCoverageGap",
+        "name": "getCriticalCoverageGap",
+        "filePath": "src/lib/actions/admin/dashboard.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/coverage.ts:fetchCoverageData",
+        "name": "fetchCoverageData",
+        "filePath": "src/lib/actions/admin/coverage.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/content.ts:assertCanReadAdminContent",
+        "name": "assertCanReadAdminContent",
+        "filePath": "src/lib/actions/admin/content.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/content.ts:getContentEditorIndexData",
+        "name": "getContentEditorIndexData",
+        "filePath": "src/lib/actions/admin/content.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/content.ts:getArticleFull",
+        "name": "getArticleFull",
+        "filePath": "src/lib/actions/admin/content.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/content.ts:getArticleUpdatedAt",
+        "name": "getArticleUpdatedAt",
+        "filePath": "src/lib/actions/admin/content.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/content.ts:getArticleTaxonomyNodes",
+        "name": "getArticleTaxonomyNodes",
+        "filePath": "src/lib/actions/admin/content.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/content.ts:getQuestionsByArticleId",
+        "name": "getQuestionsByArticleId",
+        "filePath": "src/lib/actions/admin/content.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/content.ts:importQuestionsForArticle",
+        "name": "importQuestionsForArticle",
+        "filePath": "src/lib/actions/admin/content.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/content.ts:getTaxonomyNodeInfo",
+        "name": "getTaxonomyNodeInfo",
+        "filePath": "src/lib/actions/admin/content.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/content.ts:getTaxonomyNodesInfo",
+        "name": "getTaxonomyNodesInfo",
+        "filePath": "src/lib/actions/admin/content.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/content.ts:getAllEIPromptsForArticle",
+        "name": "getAllEIPromptsForArticle",
+        "filePath": "src/lib/actions/admin/content.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/content.ts:updateArticleFull",
+        "name": "updateArticleFull",
+        "filePath": "src/lib/actions/admin/content.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/content.ts:saveArticleFull",
+        "name": "saveArticleFull",
+        "filePath": "src/lib/actions/admin/content.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/content.ts:createEIPrompt",
+        "name": "createEIPrompt",
+        "filePath": "src/lib/actions/admin/content.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/content.ts:updateEIPrompt",
+        "name": "updateEIPrompt",
+        "filePath": "src/lib/actions/admin/content.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/content.ts:deleteEIPrompt",
+        "name": "deleteEIPrompt",
+        "filePath": "src/lib/actions/admin/content.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/bulk.ts:bulkDeleteQuestions",
+        "name": "bulkDeleteQuestions",
+        "filePath": "src/lib/actions/admin/bulk.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/bulk.ts:bulkDeleteArticles",
+        "name": "bulkDeleteArticles",
+        "filePath": "src/lib/actions/admin/bulk.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/assets.ts:getAssets",
+        "name": "getAssets",
+        "filePath": "src/lib/actions/admin/assets.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/assets.ts:getAsset",
+        "name": "getAsset",
+        "filePath": "src/lib/actions/admin/assets.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/assets.ts:createAsset",
+        "name": "createAsset",
+        "filePath": "src/lib/actions/admin/assets.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/assets.ts:uploadAssetFile",
+        "name": "uploadAssetFile",
+        "filePath": "src/lib/actions/admin/assets.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/actions/admin/assets.ts:archiveAsset",
+        "name": "archiveAsset",
+        "filePath": "src/lib/actions/admin/assets.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      }
+    ],
+    "2": [
+      {
+        "depth": 2,
+        "id": "Function:src/components/admin/QuestionEditor.tsx:handleSave",
+        "name": "handleSave",
+        "filePath": "src/components/admin/QuestionEditor.tsx",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/components/admin/DeleteArticleModal.tsx:handleDelete",
+        "name": "handleDelete",
+        "filePath": "src/components/admin/DeleteArticleModal.tsx",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/lib/actions/admin/question-queries.ts:getQuestions",
+        "name": "getQuestions",
+        "filePath": "src/lib/actions/admin/question-queries.ts",
+        "relationType": "CALLS",
+        "confidence": 0.95
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/lib/actions/admin/question-queries.ts:getQuestionsGroupedByArticle",
+        "name": "getQuestionsGroupedByArticle",
+        "filePath": "src/lib/actions/admin/question-queries.ts",
+        "relationType": "CALLS",
+        "confidence": 0.95
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/lib/actions/admin/question-queries.ts:getQuestionsByTopicIds",
+        "name": "getQuestionsByTopicIds",
+        "filePath": "src/lib/actions/admin/question-queries.ts",
+        "relationType": "CALLS",
+        "confidence": 0.95
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/lib/actions/admin/question-queries.ts:getQuestionsTaxonomyTree",
+        "name": "getQuestionsTaxonomyTree",
+        "filePath": "src/lib/actions/admin/question-queries.ts",
+        "relationType": "CALLS",
+        "confidence": 0.95
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/lib/actions/admin/question-queries.ts:getQuestion",
+        "name": "getQuestion",
+        "filePath": "src/lib/actions/admin/question-queries.ts",
+        "relationType": "CALLS",
+        "confidence": 0.95
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/lib/actions/admin/content.ts:getQuestionsByNodeIds",
+        "name": "getQuestionsByNodeIds",
+        "filePath": "src/lib/actions/admin/content.ts",
+        "relationType": "CALLS",
+        "confidence": 0.95
+      },
+      {
+        "depth": 2,
+        "id": "Function:src/components/admin/unified-editor/SaveAllBar.tsx:SaveAllBar",
+        "name": "SaveAllBar",
+        "filePath": "src/components/admin/unified-editor/SaveAllBar.tsx",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      }
+    ]
+  }
+}

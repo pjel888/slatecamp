@@ -1,9 +1,12 @@
 import { createClient, getUser } from '@/lib/supabase/server'
 import { buildDevSystemInfo, getConnectionState } from '@/lib/dev/dev-mode'
 import { developerNextVersion } from '@/lib/developer/tech-stack'
+import { assertDeveloperAccess } from '@/lib/developer/access'
 import { ConsoleClient } from './console-client'
 
 export default async function DeveloperConsolePage() {
+  await assertDeveloperAccess()
+
   const supabase = await createClient()
 
   // Fetch user and feature flags in parallel — flags don't depend on user.id

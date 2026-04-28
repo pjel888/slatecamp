@@ -7,7 +7,7 @@ import { getSubjectName } from '@/types/testing'
 import { estimateReadingTime } from '@/lib/wiki-markdown'
 import { getTeachBackCriteria } from '@/lib/actions/teach-back'
 import type { TaxonomyNode } from '@/lib/actions/taxonomy'
-import { assertPermission } from '@/lib/admin/roles'
+import { requirePermissionOrRedirect } from '@/lib/admin/roles'
 import { createAdminClient } from '@/lib/supabase/admin'
 
 const mapDifficulty = (level?: number | null): 'Foundational' | 'Intermediate' | 'Advanced' => {
@@ -37,7 +37,7 @@ async function getRelatedTopics(node: TaxonomyNode | null, supabase: any): Promi
  * fallbacks where appropriate.
  */
 export default async function PreviewPage(props: { params: Promise<{ previewId: string }> }) {
-  await assertPermission('admin.preview.view')
+  await requirePermissionOrRedirect('admin.preview.view')
 
   const params = await props.params
   const previewId = params.previewId

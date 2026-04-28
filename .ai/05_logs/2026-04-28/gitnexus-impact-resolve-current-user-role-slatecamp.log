@@ -1,0 +1,28 @@
+{
+  "status": "ambiguous",
+  "message": "Found 2 symbols matching 'resolveCurrentUserRole'. Use target_uid, file_path, or kind to disambiguate.",
+  "target": {
+    "name": "resolveCurrentUserRole"
+  },
+  "direction": "upstream",
+  "impactedCount": 0,
+  "risk": "UNKNOWN",
+  "candidates": [
+    {
+      "uid": "Function:src/lib/entitlements/resolve-role.ts:resolveCurrentUserRole",
+      "name": "resolveCurrentUserRole",
+      "kind": "Function",
+      "filePath": "src/lib/entitlements/resolve-role.ts",
+      "line": 199,
+      "score": 0.56
+    },
+    {
+      "uid": "Const:src/lib/entitlements/resolve-role.ts:resolveCurrentUserRole",
+      "name": "resolveCurrentUserRole",
+      "kind": "",
+      "filePath": "src/lib/entitlements/resolve-role.ts",
+      "line": 199,
+      "score": 0.5
+    }
+  ]
+}

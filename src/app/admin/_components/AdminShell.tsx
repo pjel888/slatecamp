@@ -12,26 +12,34 @@ import type { UserRole } from '@/lib/admin/roles'
 import { getPermissionsForRole } from '@/lib/entitlements/policy'
 import type { AdminPermission } from '@/lib/entitlements/types'
 
-const adminPages = [
-  { title: 'Dashboard', href: '/admin', group: 'Overview' },
-  { title: 'Knowledge Browser', href: '/admin/knowledge', group: 'Knowledge Base' },
-  { title: 'Question Bank', href: '/admin/knowledge/questions', group: 'Knowledge Base' },
-  { title: 'Design Problem Questions', href: '/admin/knowledge/questions/design-problems', group: 'Knowledge Base' },
-  { title: 'Scenario Questions', href: '/admin/knowledge/questions/scenarios', group: 'Knowledge Base' },
-  { title: 'Create Question', href: '/admin/knowledge/questions/new', group: 'Knowledge Base' },
-  { title: 'Import Content', href: '/admin/knowledge/import', group: 'Knowledge Base' },
-  { title: 'Quality Analytics', href: '/admin/knowledge/analytics', group: 'Knowledge Base' },
-  { title: 'Create Article', href: '/admin/knowledge/new', group: 'Knowledge Base' },
-  { title: 'Taxonomy Editor', href: '/admin/taxonomy', group: 'Structure' },
-  { title: 'Coverage Map', href: '/admin/taxonomy/coverage', group: 'Structure' },
-  { title: '3D Assets', href: '/admin/assets', group: 'Structure' },
-  { title: '3D Models Registry', href: '/admin/3d-models', group: 'Structure' },
-  { title: 'Review Queue', href: '/admin/reviews', group: 'Quality' },
-  { title: 'Publishing Pipeline', href: '/admin/pipeline', group: 'Quality' },
-  { title: 'Content Search', href: '/admin/search', group: 'Quality' },
-  { title: 'Audit Log', href: '/admin/audit', group: 'Pulse' },
-  { title: 'Pulse Feed', href: '/admin/activity', group: 'Pulse' },
-  { title: 'Settings', href: '/admin/settings', group: 'Settings' },
+interface AdminPage {
+  title: string
+  href: string
+  group: string
+  keywords?: string
+  permission?: AdminPermission
+}
+
+const adminPages: AdminPage[] = [
+  { title: 'Dashboard', href: '/admin', group: 'Overview', permission: 'admin.dashboard.view' },
+  { title: 'Knowledge Browser', href: '/admin/knowledge', group: 'Knowledge Base', permission: 'admin.content.view' },
+  { title: 'Question Bank', href: '/admin/knowledge/questions', group: 'Knowledge Base', permission: 'admin.content.view' },
+  { title: 'Design Problem Questions', href: '/admin/knowledge/questions/design-problems', group: 'Knowledge Base', permission: 'admin.content.view' },
+  { title: 'Scenario Questions', href: '/admin/knowledge/questions/scenarios', group: 'Knowledge Base', permission: 'admin.content.view' },
+  { title: 'Create Question', href: '/admin/knowledge/questions/new', group: 'Knowledge Base', permission: 'admin.content.create' },
+  { title: 'Import Content', href: '/admin/knowledge/import', group: 'Knowledge Base', permission: 'admin.content.import' },
+  { title: 'Quality Analytics', href: '/admin/knowledge/analytics', group: 'Knowledge Base', permission: 'admin.analytics.view' },
+  { title: 'Create Article', href: '/admin/knowledge/new', group: 'Knowledge Base', permission: 'admin.content.create' },
+  { title: 'Taxonomy Editor', href: '/admin/taxonomy', group: 'Structure', permission: 'admin.taxonomy.manage' },
+  { title: 'Coverage Map', href: '/admin/taxonomy/coverage', group: 'Structure', permission: 'admin.analytics.view' },
+  { title: '3D Assets', href: '/admin/assets', group: 'Structure', permission: 'admin.assets.manage' },
+  { title: '3D Models Registry', href: '/admin/3d-models', group: 'Structure', permission: 'admin.access' },
+  { title: 'Review Queue', href: '/admin/reviews', group: 'Quality', permission: 'admin.reviews.view' },
+  { title: 'Publishing Pipeline', href: '/admin/pipeline', group: 'Quality', permission: 'admin.pipeline.manage' },
+  { title: 'Content Search', href: '/admin/search', group: 'Quality', permission: 'admin.search.use' },
+  { title: 'Audit Log', href: '/admin/audit', group: 'Pulse', permission: 'admin.audit.view' },
+  { title: 'Pulse Feed', href: '/admin/activity', group: 'Pulse', permission: 'admin.activity.view' },
+  { title: 'Settings', href: '/admin/settings', group: 'Settings', permission: 'admin.users.manage' },
 ]
 
 interface NavItemWithPermission {
@@ -192,6 +200,12 @@ const filterNavItems = (role: UserRole, badgeCounts?: { pendingReviews: number }
     .filter((group) => group.items.length > 0)
 }
 
+const filterAdminPages = (role: UserRole) => {
+  const permissions = new Set(getPermissionsForRole(role))
+
+  return adminPages.filter((page) => !page.permission || permissions.has(page.permission))
+}
+
 interface AdminShellProps {
   role: UserRole
   badgeCounts?: { pendingReviews: number }
@@ -205,6 +219,7 @@ export const shouldBypassAdminShellChrome = (pathname: string) =>
 const AdminShell = ({ role, badgeCounts, noPadding = false, children }: AdminShellProps) => {
   const pathname = usePathname()
   const filteredNavItems = filterNavItems(role, badgeCounts)
+  const filteredAdminPages = filterAdminPages(role)
 
   if (shouldBypassAdminShellChrome(pathname)) {
     return (
@@ -227,7 +242,7 @@ const AdminShell = ({ role, badgeCounts, noPadding = false, children }: AdminShe
         backLabel={PORTALS.admin.backLabel}
         noPadding={noPadding}
       >
-        <CommandPalette pages={adminPages} />
+        <CommandPalette pages={filteredAdminPages} />
         {children}
         <Toaster />
       </PortalLayout>

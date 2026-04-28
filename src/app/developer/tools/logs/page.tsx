@@ -7,6 +7,7 @@ import { SectionHeader } from '@/components/shared/section-header'
 import { getAuditLogs } from '@/lib/audit/audit-queries'
 import { developerSurfaceTruthNotes } from '@/lib/developer/surface-registry'
 import { getApplicationErrorEvents } from '@/lib/logging/server'
+import { assertDeveloperAccess } from '@/lib/developer/access'
 
 interface AuditLogRow extends Record<string, unknown> {
   id: string
@@ -112,6 +113,8 @@ const applicationColumns: Column<ApplicationErrorRow>[] = [
 ]
 
 export default async function LogsPage() {
+  await assertDeveloperAccess()
+
   let auditError: Error | null = null
   let applicationError: Error | null = null
   let auditRows: AuditLogRow[] = []

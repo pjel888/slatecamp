@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Shield, UserMinus, Users } from '@phosphor-icons/react/dist/ssr'
 import {
   assignAdminRole,
@@ -35,6 +35,9 @@ const ROLE_BADGE_MAP: Record<string, { variant: 'danger' | 'warning' | 'info' | 
 const truncateUuid = (uuid: string) =>
   uuid.length > 12 ? `${uuid.slice(0, 8)}…${uuid.slice(-4)}` : uuid
 
+const getAdminRoleRowKey = (row: AdminUserRow) =>
+  row.id || `${row.user_id}-${row.role}-${row.created_at}`
+
 export const CeoAdminRoleManager = ({
   initialAdminUsers,
 }: {
@@ -46,6 +49,11 @@ export const CeoAdminRoleManager = ({
   const [error, setError] = useState<string | null>(null)
   const [assigning, setAssigning] = useState(false)
   const [revokingId, setRevokingId] = useState<string | null>(null)
+  const [hydrated, setHydrated] = useState(false)
+
+  useEffect(() => {
+    setHydrated(true)
+  }, [])
 
   const handleAssignRole = async () => {
     setAssigning(true)
@@ -95,7 +103,11 @@ export const CeoAdminRoleManager = ({
   }
 
   return (
-    <div className="space-y-6">
+    <div
+      className="space-y-6"
+      data-testid="ceo-admin-role-manager"
+      data-hydrated={hydrated ? 'true' : 'false'}
+    >
       {error ? (
         <Card className="border-destructive/30 bg-destructive/5 p-4 text-sm text-destructive">
           {error}
@@ -138,7 +150,7 @@ export const CeoAdminRoleManager = ({
 
                   return (
                     <tr
-                      key={row.id}
+                      key={getAdminRoleRowKey(row)}
                       className="border-b border-border bg-card transition-colors duration-150 hover:bg-muted/50"
                     >
                       <td className="px-4 py-3 text-sm">

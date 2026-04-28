@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useCallback } from 'react'
 import { CaretDown } from '@phosphor-icons/react/dist/ssr'
 import { cn } from '@/lib/utils'
 import { Badge } from '@/components/ui/badge'
@@ -41,52 +41,89 @@ export const EndpointCard = ({
   const style = methodStyles[method.toUpperCase()] ?? { variant: 'primary' as const, label: method }
   const hasDetails = requestSchema || responseExample || curlExample
 
+  const toggleExpanded = useCallback(() => {
+    if (hasDetails) {
+      setExpanded((prev) => !prev)
+    }
+  }, [hasDetails])
+
   return (
     <div
       className={cn(
         'border border-border rounded-xs transition-colors duration-150',
-        hasDetails && 'cursor-pointer hover:border-primary/20 hover:bg-primary/[0.01]',
+        hasDetails && 'hover:border-primary/20 hover:bg-primary/[0.01]',
         className,
       )}
     >
-      <div
-        className="flex items-start gap-2.5 px-3 py-2.5"
-        onClick={() => hasDetails && setExpanded(!expanded)}
-      >
-        <Badge
-          variant={style.variant}
-          size="xs"
-          className="font-[family-name:var(--font-dm-mono)] min-w-[44px] justify-center mt-0.5"
+      {hasDetails ? (
+        <button
+          type="button"
+          aria-expanded={expanded}
+          onClick={toggleExpanded}
+          className="flex w-full items-start gap-2.5 px-3 py-2.5 text-left"
         >
-          {style.label}
-        </Badge>
-        <div className="flex-1 min-w-0">
-          <div className="font-[family-name:var(--font-dm-mono)] text-xs font-medium text-foreground">
-            {path}
-          </div>
-          <div className="text-[11px] text-muted-foreground mt-0.5">{description}</div>
-          {auth && (
-            <div className="text-[11px] text-muted-foreground mt-0.5">
-              Auth: <span className="font-medium">{auth}</span>
+          <Badge
+            variant={style.variant}
+            size="xs"
+            className="font-[family-name:var(--font-dm-mono)] min-w-[44px] justify-center mt-0.5"
+          >
+            {style.label}
+          </Badge>
+          <div className="flex-1 min-w-0">
+            <div className="font-[family-name:var(--font-dm-mono)] text-xs font-medium text-foreground">
+              {path}
             </div>
-          )}
-        </div>
-        <div className="flex items-center gap-1.5 shrink-0">
-          {badges?.map((b) => (
-            <Badge key={b} variant="default" size="xs" shape="pill" className="font-[family-name:var(--font-dm-mono)]">
-              {b}
-            </Badge>
-          ))}
-          {hasDetails && (
+            <div className="text-[11px] text-muted-foreground mt-0.5">{description}</div>
+            {auth && (
+              <div className="text-[11px] text-muted-foreground mt-0.5">
+                Auth: <span className="font-medium">{auth}</span>
+              </div>
+            )}
+          </div>
+          <div className="flex items-center gap-1.5 shrink-0">
+            {badges?.map((b) => (
+              <Badge key={b} variant="default" size="xs" shape="pill" className="font-[family-name:var(--font-dm-mono)]">
+                {b}
+              </Badge>
+            ))}
             <CaretDown
               className={cn(
                 'w-3.5 h-3.5 text-muted-foreground transition-transform duration-150',
                 expanded && 'rotate-180',
               )}
+              aria-hidden="true"
             />
-          )}
+          </div>
+        </button>
+      ) : (
+        <div className="flex items-start gap-2.5 px-3 py-2.5">
+          <Badge
+            variant={style.variant}
+            size="xs"
+            className="font-[family-name:var(--font-dm-mono)] min-w-[44px] justify-center mt-0.5"
+          >
+            {style.label}
+          </Badge>
+          <div className="flex-1 min-w-0">
+            <div className="font-[family-name:var(--font-dm-mono)] text-xs font-medium text-foreground">
+              {path}
+            </div>
+            <div className="text-[11px] text-muted-foreground mt-0.5">{description}</div>
+            {auth && (
+              <div className="text-[11px] text-muted-foreground mt-0.5">
+                Auth: <span className="font-medium">{auth}</span>
+              </div>
+            )}
+          </div>
+          <div className="flex items-center gap-1.5 shrink-0">
+            {badges?.map((b) => (
+              <Badge key={b} variant="default" size="xs" shape="pill" className="font-[family-name:var(--font-dm-mono)]">
+                {b}
+              </Badge>
+            ))}
+          </div>
         </div>
-      </div>
+      )}
 
       {expanded && hasDetails && (
         <div className="px-3 pb-3 space-y-3 border-t border-border pt-3">

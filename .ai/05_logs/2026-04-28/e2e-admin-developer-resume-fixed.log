@@ -1,0 +1,119 @@
+Command: bun run test:e2e:auth-demo:admin-developer
+Working directory: /Users/philiplewis/slatecamp
+Start: 2026-04-28T11:05:57+08:00
+$ bun scripts/playwright-run.ts auth-demo-admin-developer
+[2m[WebServer] [22m(node:50631) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:50671) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 5 tests using 1 worker
+
+(node:51677) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:51677) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [chromium] › e2e/admin-permissions-developer.spec.ts:14:7 › developer permission matrix › can access developer portal (4.5s)
+  ✓  2 [chromium] › e2e/admin-permissions-developer.spec.ts:26:7 › developer permission matrix › can access admin dashboard with limited nav scope (3.3s)
+  ✓  3 [chromium] › e2e/admin-permissions-developer.spec.ts:61:7 › developer permission matrix › can access developer tools (2.2s)
+  ✘  4 [chromium] › e2e/admin-permissions-developer.spec.ts:73:7 › developer permission matrix › is denied ceo portal routes (42.3s)
+(node:58422) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:58422) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  5 [chromium] › e2e/admin-permissions-developer.spec.ts:82:7 › developer permission matrix › is denied admin pipeline and reviews (1.4m)
+
+
+  1) [chromium] › e2e/admin-permissions-developer.spec.ts:73:7 › developer permission matrix › is denied ceo portal routes
+
+    Error: [2mexpect([22m[31mpage[39m[2m).[22mtoHaveURL[2m([22m[32mexpected[39m[2m)[22m failed
+
+    Expected pattern: [32m/\/dashboard/[39m
+    Received string:  [31m"http://localhost:3223/ceo/financials"[39m
+    Timeout: 30000ms
+
+    Call log:
+    [2m  - Expect "toHaveURL" with timeout 30000ms[22m
+    [2m    5 × unexpected value "http://localhost:3223/ceo/financials"[22m
+    [2m    - waiting for" http://localhost:3223/dashboard" navigation to finish...[22m
+    [2m    6 × unexpected value "http://localhost:3223/ceo/financials"[22m
+    [2m    - waiting for" http://localhost:3223/ceo/financials" navigation to finish...[22m
+
+
+      74 |     test.setTimeout(90000)
+      75 |     await gotoAllowRedirectAbort(page, '/ceo/financials')
+    > 76 |     await expect(page).toHaveURL(/\/dashboard/, { timeout: 30000 })
+         |                        ^
+      77 |
+      78 |     await gotoAllowRedirectAbort(page, '/ceo/team/admin-roles')
+      79 |     await expect(page).toHaveURL(/\/dashboard/, { timeout: 30000 })
+        at /Users/philiplewis/slatecamp/e2e/admin-permissions-developer.spec.ts:76:24
+
+    Error: browser runtime errors
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoEqual[2m([22m[32mexpected[39m[2m) // deep equality[22m
+
+    [32m- Expected  - 1[39m
+    [31m+ Received  + 6[39m
+
+    [32m- Array [][39m
+    [31m+ Array [[39m
+    [31m+   "WebSocket connection to 'ws://localhost:3223/_next/webpack-hmr?id=3iccHA45Pv6d5nBhxvqVI' failed: ",[39m
+    [31m+   "WebSocket connection to 'ws://localhost:3223/_next/webpack-hmr?id=3iccHA45Pv6d5nBhxvqVI' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED",[39m
+    [31m+   "WebSocket connection to 'ws://localhost:3223/_next/webpack-hmr?id=3iccHA45Pv6d5nBhxvqVI' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED",[39m
+    [31m+   "WebSocket connection to 'ws://localhost:3223/_next/webpack-hmr?id=3iccHA45Pv6d5nBhxvqVI' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED",[39m
+    [31m+ ][39m
+
+       at support/authenticated-demo.ts:21
+
+      19 |       await use()
+      20 |
+    > 21 |       expect(errors, 'browser runtime errors').toEqual([])
+         |                                                ^
+      22 |     },
+      23 |     { auto: true },
+      24 |   ],
+        at Object.exports.authenticatedDemoTest._test.test.extend.assertNoAppErrors.auto (/Users/philiplewis/slatecamp/e2e/support/authenticated-demo.ts:21:48)
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/admin-permissions-develope-1474b-is-denied-ceo-portal-routes-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/admin-permissions-develope-1474b-is-denied-ceo-portal-routes-chromium/error-context.md
+
+  2) [chromium] › e2e/admin-permissions-developer.spec.ts:82:7 › developer permission matrix › is denied admin pipeline and reviews
+
+    Error: [2mexpect([22m[31mpage[39m[2m).[22mtoHaveURL[2m([22m[32mexpected[39m[2m)[22m failed
+
+    Expected pattern: [32m/\/dashboard/[39m
+    Received string:  [31m"http://localhost:3223/admin/pipeline"[39m
+    Timeout: 30000ms
+
+    Call log:
+    [2m  - Expect "toHaveURL" with timeout 30000ms[22m
+    [2m    5 × unexpected value "http://localhost:3223/admin/pipeline"[22m
+    [2m    - waiting for" http://localhost:3223/dashboard" navigation to finish...[22m
+
+
+      83 |     test.setTimeout(90000)
+      84 |     await gotoAllowRedirectAbort(page, '/admin/pipeline')
+    > 85 |     await expect(page).toHaveURL(/\/dashboard/, { timeout: 30000 })
+         |                        ^
+      86 |
+      87 |     await gotoAllowRedirectAbort(page, '/admin/reviews')
+      88 |     await expect(page).toHaveURL(/\/dashboard/, { timeout: 30000 })
+        at /Users/philiplewis/slatecamp/e2e/admin-permissions-developer.spec.ts:85:24
+
+    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/admin-permissions-develope-f52b8--admin-pipeline-and-reviews-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/admin-permissions-develope-f52b8--admin-pipeline-and-reviews-chromium/error-context.md
+
+  2 failed
+    [chromium] › e2e/admin-permissions-developer.spec.ts:73:7 › developer permission matrix › is denied ceo portal routes
+    [chromium] › e2e/admin-permissions-developer.spec.ts:82:7 › developer permission matrix › is denied admin pipeline and reviews
+  3 passed (2.4m)
+error: script "test:e2e:auth-demo:admin-developer" exited with code 1
+End: 2026-04-28T11:08:22+08:00
+Exit code: 1

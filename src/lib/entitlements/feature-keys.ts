@@ -24,6 +24,7 @@ export const ENTITLEMENT_FEATURE_KEYS = {
   devToolbar: 'dev_toolbar',
   devOverrideWrite: 'dev_override_write',
   adminCms: 'admin_cms',
+  ceoPortal: 'ceo_portal',
   srsReview: 'srs_review',
 } as const
 

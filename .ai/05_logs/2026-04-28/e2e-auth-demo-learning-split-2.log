@@ -1,0 +1,22 @@
+$ bun scripts/playwright-run.ts auth-demo-learning
+[2m[WebServer] [22m[playwright-web-server] Removed stale Next dev cache at /Users/philiplewis/slatecamp/.next/dev
+[2m[WebServer] [22m(node:42931) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:42964) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 2 tests using 1 worker
+
+(node:43397) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:43397) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:42964) Warning: `--localstorage-file` was provided without a valid path
+  ✓  1 [chromium] › e2e/learning-flow.spec.ts:13:7 › demo-auth learning flow › canceling a ready but unentered session does not create a resume CTA (26.7s)
+[2m[WebServer] [22m(node:45006) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  2 [chromium] › e2e/learning-flow.spec.ts:47:7 › demo-auth learning flow › drills hub launches a custom session and supports one answer submission (13.7s)
+[2m[WebServer] [22m(node:45116) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+  2 passed (52.7s)

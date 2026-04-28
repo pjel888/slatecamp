@@ -1,0 +1,11 @@
+file:///Users/philiplewis/.npm/_npx/5e786f48223a616c/node_modules/gitnexus/dist/mcp/local/local-backend.js:318
+        throw new Error(`Multiple repositories indexed. Specify which one with the "repo" parameter. Available: ${labels.join(', ')}`);
+              ^
+
+Error: Multiple repositories indexed. Specify which one with the "repo" parameter. Available: vitruvius, slatecamp
+    at LocalBackend.resolveRepo (file:///Users/philiplewis/.npm/_npx/5e786f48223a616c/node_modules/gitnexus/dist/mcp/local/local-backend.js:318:15)
+    at async LocalBackend.callTool (file:///Users/philiplewis/.npm/_npx/5e786f48223a616c/node_modules/gitnexus/dist/mcp/local/local-backend.js:553:22)
+    at async detectChangesCommand (file:///Users/philiplewis/.npm/_npx/5e786f48223a616c/node_modules/gitnexus/dist/cli/tool.js:162:20)
+    at async Command.<anonymous> (file:///Users/philiplewis/.npm/_npx/5e786f48223a616c/node_modules/gitnexus/dist/cli/lazy-action.js:16:9)
+
+Node.js v25.9.0

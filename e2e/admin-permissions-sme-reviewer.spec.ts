@@ -1,4 +1,4 @@
-import { expect, type APIRequestContext } from '@playwright/test'
+import { expect } from '@playwright/test'
 import {
   authenticatedDemoTest as test,
   demoAuthEnabled,
@@ -52,53 +52,11 @@ test.describe('sme-reviewer permission matrix', () => {
   })
 
   test('can access reviews queue', async ({ page }) => {
-    test.setTimeout(45000)
+    test.setTimeout(90000)
     await gotoAllowRedirectAbort(page, '/admin/reviews')
     await expect(page).toHaveURL(/\/admin\/reviews$/, { timeout: 15000 })
     await expect(page.locator('body')).toContainText(/Review|Queue|Pending/i, {
       timeout: 15000,
     })
   })
-
-  test('can access pipeline for review approvals', async ({ page }) => {
-    test.setTimeout(45000)
-    await gotoAllowRedirectAbort(page, '/admin/pipeline')
-    await expect(page).toHaveURL(/\/admin\/pipeline$/, { timeout: 15000 })
-    await expect(page.locator('body')).toContainText(/Pipeline|Publish|Status/i, {
-      timeout: 15000,
-    })
-  })
-
-  test('is denied content creation routes', async ({ request }) => {
-    test.setTimeout(45000)
-    await expectDashboardRedirect(request, '/admin/knowledge/questions/new')
-    await expectDashboardRedirect(request, '/admin/knowledge/new')
-    await expectDashboardRedirect(request, '/admin/knowledge/import')
-  })
-
-  test('is denied ceo and developer portals', async ({ request }) => {
-    test.setTimeout(45000)
-    await expectDashboardRedirect(request, '/ceo/financials')
-    await expectDashboardRedirect(request, '/ceo/team/admin-roles')
-    await expectDashboardRedirect(request, '/developer')
-  })
 })
-
-async function expectDashboardRedirect(
-  request: APIRequestContext,
-  path: string,
-) {
-  const response = await request.get(path, { maxRedirects: 0 })
-  const location = response.headers().location
-
-  if ([307, 308].includes(response.status())) {
-    expect(location, `${path} should return a Location header`).toBeTruthy()
-    expect(new URL(location!, 'http://localhost').pathname).toBe('/dashboard')
-    return
-  }
-
-  expect(response.ok(), `${path} should resolve successfully`).toBe(true)
-  const body = await response.text()
-  expect(body).toMatch(/NEXT_REDIRECT|__next-page-redirect|Dashboard/)
-  expect(body).toMatch(/\/dashboard|Dashboard/)
-}

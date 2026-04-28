@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowLeft } from '@phosphor-icons/react/dist/ssr'
 import { ROUTES } from '@/lib/routes'
-import { assertPermission } from '@/lib/admin/roles'
+import { requirePermissionOrRedirect } from '@/lib/admin/roles'
 import { getQuestionsForAnalytics } from '@/lib/actions/admin/question-queries'
 import { SectionHeader } from '@/components/shared/section-header'
 import { StatCard } from '@/components/shared/stat-card'
@@ -68,7 +68,7 @@ const computeStats = (
 /* ------------------------------------------------------------------ */
 
 const QuestionsAnalyticsPage = async () => {
-  await assertPermission('admin.analytics.view')
+  await requirePermissionOrRedirect('admin.analytics.view')
   const questions = await getQuestionsForAnalytics()
   const stats = computeStats(questions)
 

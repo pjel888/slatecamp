@@ -10,6 +10,7 @@ import { Clock } from '@phosphor-icons/react/dist/ssr'
 export const metadata = {
   title: 'Permission Audit — CEO Dashboard',
 }
+export const dynamic = 'force-dynamic'
 
 const ACTION_LABEL_MAP: Record<string, string> = {
   'role.assign': 'Assigned',

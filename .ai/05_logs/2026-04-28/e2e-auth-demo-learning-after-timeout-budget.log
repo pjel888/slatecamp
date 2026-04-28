@@ -1,0 +1,130 @@
+[2m[WebServer] [22m[playwright-web-server] Removed stale Next dev cache at /Users/philiplewis/slatecamp/.next/dev
+[2m[WebServer] [22m(node:19305) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:19306) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 4 tests using 1 worker
+
+(node:19768) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:19768) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:19306) Warning: `--localstorage-file` was provided without a valid path
+  ✓  1 [chromium] › e2e/learning-flow.spec.ts:13:7 › demo-auth learning flow › canceling a ready but unentered session does not create a resume CTA (25.4s)
+[2m[WebServer] [22m(node:25144) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  2 [chromium] › e2e/learning-flow.spec.ts:47:7 › demo-auth learning flow › drills hub launches a custom session and supports one answer submission (27.0s)
+(node:25951) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:25951) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:30402) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  3 [chromium] › e2e/wiki-learning.spec.ts:13:7 › demo-auth wiki learning flow › wiki landing and seeded article resolve (2.3m)
+(node:32925) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:32925) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:33211) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  4 [chromium] › e2e/wiki-learning.spec.ts:40:7 › demo-auth wiki learning flow › missing wiki slug resolves to dashboard not-found UI (39.5s)
+
+
+  1) [chromium] › e2e/learning-flow.spec.ts:47:7 › demo-auth learning flow › drills hub launches a custom session and supports one answer submission
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoContainText[2m([22m[32mexpected[39m[2m)[22m failed
+
+    Locator: getByRole('status')
+    Expected pattern: [32m/Correct/i[39m
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toContainText" with timeout 5000ms[22m
+    [2m  - waiting for getByRole('status')[22m
+
+
+      82 |     await page.getByLabel(/Slide to submit/i).press('Enter')
+      83 |
+    > 84 |     await expect(page.getByRole('status')).toContainText(/Correct/i)
+         |                                            ^
+      85 |     await expect(
+      86 |       page.getByRole('button', { name: /^Next question$|^See results$/ }).first(),
+      87 |     ).toBeVisible()
+        at /Users/philiplewis/slatecamp/e2e/learning-flow.spec.ts:84:44
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/learning-flow-demo-auth-le-d5e8d-ports-one-answer-submission-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/learning-flow-demo-auth-le-d5e8d-ports-one-answer-submission-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/learning-flow-demo-auth-le-d5e8d-ports-one-answer-submission-chromium/error-context.md
+
+  2) [chromium] › e2e/wiki-learning.spec.ts:13:7 › demo-auth wiki learning flow › wiki landing and seeded article resolve
+
+    TimeoutError: page.goto: Timeout 120000ms exceeded.
+    Call log:
+    [2m  - navigating to "http://localhost:3218/dashboard/wiki/demo-ale-foundations", waiting until "domcontentloaded"[22m
+
+
+      23 |     ).toBeVisible()
+      24 |
+    > 25 |     await page.goto('/dashboard/wiki/demo-ale-foundations', {
+         |                ^
+      26 |       waitUntil: 'domcontentloaded',
+      27 |       timeout: 120000,
+      28 |     })
+        at /Users/philiplewis/slatecamp/e2e/wiki-learning.spec.ts:25:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/wiki-learning-demo-auth-wi-1fef3--and-seeded-article-resolve-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/wiki-learning-demo-auth-wi-1fef3--and-seeded-article-resolve-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/wiki-learning-demo-auth-wi-1fef3--and-seeded-article-resolve-chromium/error-context.md
+
+  3) [chromium] › e2e/wiki-learning.spec.ts:40:7 › demo-auth wiki learning flow › missing wiki slug resolves to dashboard not-found UI
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: getByRole('heading', { name: /This page doesn't exist/i })
+    Expected: visible
+    Timeout: 30000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 30000ms[22m
+    [2m  - waiting for getByRole('heading', { name: /This page doesn't exist/i })[22m
+
+
+      49 |     await expect(
+      50 |       page.getByRole('heading', { name: /This page doesn't exist/i }),
+    > 51 |     ).toBeVisible({ timeout: 30000 })
+         |       ^
+      52 |   })
+      53 | })
+      54 |
+        at /Users/philiplewis/slatecamp/e2e/wiki-learning.spec.ts:51:7
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/wiki-learning-demo-auth-wi-da58d-s-to-dashboard-not-found-UI-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/wiki-learning-demo-auth-wi-da58d-s-to-dashboard-not-found-UI-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/wiki-learning-demo-auth-wi-da58d-s-to-dashboard-not-found-UI-chromium/error-context.md
+
+  3 failed
+    [chromium] › e2e/learning-flow.spec.ts:47:7 › demo-auth learning flow › drills hub launches a custom session and supports one answer submission
+    [chromium] › e2e/wiki-learning.spec.ts:13:7 › demo-auth wiki learning flow › wiki landing and seeded article resolve
+    [chromium] › e2e/wiki-learning.spec.ts:40:7 › demo-auth wiki learning flow › missing wiki slug resolves to dashboard not-found UI
+  1 passed (4.1m)

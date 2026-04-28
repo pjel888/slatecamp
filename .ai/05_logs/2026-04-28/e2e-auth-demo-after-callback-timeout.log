@@ -1,0 +1,22 @@
+$ bun scripts/playwright-run.ts auth-demo
+[2m[WebServer] [22m[playwright-web-server] Removed stale Next dev cache at /Users/philiplewis/slatecamp/.next/dev
+[2m[WebServer] [22m(node:84131) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:84171) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 7 tests using 1 worker
+
+(node:84580) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:84580) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [chromium] › e2e/authenticated-demo.spec.ts:14:7 › demo-authenticated first-run flows › dashboard renders the authenticated demo shell (27.0s)
+  ✓  2 [chromium] › e2e/authenticated-demo.spec.ts:38:7 › demo-authenticated first-run flows › settings stays reachable as the first-run account recovery surface (4.6s)
+  ✓  3 [chromium] › e2e/authenticated-demo.spec.ts:59:7 › demo-authenticated first-run flows › authenticated demo onboarding resolves into the post-onboarding dashboard path (4.8s)
+  ✓  4 [chromium] › e2e/authenticated-demo.spec.ts:71:9 › demo-authenticated first-run flows › authenticated demo auth entry /login resolves into dashboard (4.1s)
+  ✓  5 [chromium] › e2e/authenticated-demo.spec.ts:71:9 › demo-authenticated first-run flows › authenticated demo auth entry /register resolves into dashboard (3.6s)
+  ✓  6 [chromium] › e2e/authenticated-demo.spec.ts:79:7 › demo-authenticated first-run flows › authenticated demo admin login emits a dashboard redirect response (2.4s)
+  ✓  7 [chromium] › e2e/authenticated-demo.spec.ts:91:7 › demo-authenticated first-run flows › demo callback normalizes unsafe and legacy next paths (11.2s)
+
+  7 passed (1.2m)

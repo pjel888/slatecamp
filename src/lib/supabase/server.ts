@@ -1,7 +1,6 @@
 import { createServerClient } from '@supabase/ssr'
 import { createClient as createSupabaseClient } from '@supabase/supabase-js'
 import { cookies, headers } from 'next/headers'
-import { cache } from 'react'
 import { isDemoMode } from '@/lib/demo/config'
 import { createMockSupabaseClient } from '@/lib/demo/mock-supabase'
 
@@ -10,7 +9,7 @@ const hasDevForceUser = () =>
   process.env.DISABLE_DEV_FORCE_USER_ID !== 'true' &&
   !!process.env.DEV_FORCE_USER_ID
 
-export const createStaticClient = cache(async () => {
+export const createStaticClient = async () => {
   if (isDemoMode()) {
     return createMockSupabaseClient() as any
   }
@@ -22,9 +21,9 @@ export const createStaticClient = cache(async () => {
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
     key,
   )
-})
+}
 
-export const createServiceClient = cache(async () => {
+export const createServiceClient = async () => {
   if (isDemoMode()) {
     return createMockSupabaseClient() as any
   }
@@ -33,9 +32,9 @@ export const createServiceClient = cache(async () => {
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
     process.env.SUPABASE_SERVICE_ROLE_KEY!,
   )
-})
+}
 
-export const createClient = cache(async () => {
+export const createClient = async () => {
   if (isDemoMode()) {
     return createMockSupabaseClient() as unknown as ReturnType<
       typeof createServerClient
@@ -68,7 +67,7 @@ export const createClient = cache(async () => {
       },
     },
   )
-})
+}
 
 export async function hasAuthCookie() {
   const cookieStore = await cookies()
@@ -83,7 +82,7 @@ export async function hasAuthCookie() {
   })
 }
 
-export const getUserIfPresent = cache(async () => {
+export const getUserIfPresent = async () => {
   if (isDemoMode()) {
     const { getDemoUser } = await import('@/lib/demo/config')
     return {
@@ -130,8 +129,8 @@ export const getUserIfPresent = cache(async () => {
 
   const supabase = await createClient()
   return await supabase.auth.getUser()
-})
+}
 
-export const getUser = cache(async () => {
+export const getUser = async () => {
   return getUserIfPresent()
-})
+}

@@ -1,0 +1,84 @@
+Command: bun run test:e2e:auth-demo:ceo-portal
+Working directory: /Users/philiplewis/slatecamp
+Start: 2026-04-28T11:11:03+08:00
+$ bun scripts/playwright-run.ts auth-demo-ceo-portal
+[2m[WebServer] [22m(node:87872) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:87875) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 4 tests using 1 worker
+
+(node:88966) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:88966) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [chromium] › e2e/ceo-portal.spec.ts:16:7 › ceo control plane and audit logging › can access financials dashboard (9.8s)
+  ✓  2 [chromium] › e2e/ceo-portal.spec.ts:32:7 › ceo control plane and audit logging › can access team overview (15.6s)
+  ✓  3 [chromium] › e2e/ceo-portal.spec.ts:42:7 › ceo control plane and audit logging › admin role manager loads and shows current admin users (16.7s)
+  ✘  4 [chromium] › e2e/ceo-portal.spec.ts:60:7 › ceo control plane and audit logging › can assign and revoke a role, with audit trail (1.6m)
+
+
+  1) [chromium] › e2e/ceo-portal.spec.ts:60:7 › ceo control plane and audit logging › can assign and revoke a role, with audit trail
+
+    [31mTest timeout of 90000ms exceeded.[39m
+
+    Error: browser runtime errors
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoEqual[2m([22m[32mexpected[39m[2m) // deep equality[22m
+
+    [32m- Expected  -  1[39m
+    [31m+ Received  + 13[39m
+
+    [32m- Array [][39m
+    [31m+ Array [[39m
+    [31m+   "WebSocket connection to 'ws://localhost:3224/_next/webpack-hmr?id=BGoc_tIYznKCgWGBOzb58' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED",[39m
+    [31m+   "WebSocket connection to 'ws://localhost:3224/_next/webpack-hmr?id=BGoc_tIYznKCgWGBOzb58' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED",[39m
+    [31m+   "WebSocket connection to 'ws://localhost:3224/_next/webpack-hmr?id=BGoc_tIYznKCgWGBOzb58' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED",[39m
+    [31m+   "WebSocket connection to 'ws://localhost:3224/_next/webpack-hmr?id=BGoc_tIYznKCgWGBOzb58' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED",[39m
+    [31m+   "WebSocket connection to 'ws://localhost:3224/_next/webpack-hmr?id=BGoc_tIYznKCgWGBOzb58' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED",[39m
+    [31m+   "WebSocket connection to 'ws://localhost:3224/_next/webpack-hmr?id=BGoc_tIYznKCgWGBOzb58' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED",[39m
+    [31m+   "WebSocket connection to 'ws://localhost:3224/_next/webpack-hmr?id=BGoc_tIYznKCgWGBOzb58' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED",[39m
+    [31m+   "WebSocket connection to 'ws://localhost:3224/_next/webpack-hmr?id=BGoc_tIYznKCgWGBOzb58' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED",[39m
+    [31m+   "WebSocket connection to 'ws://localhost:3224/_next/webpack-hmr?id=BGoc_tIYznKCgWGBOzb58' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED",[39m
+    [31m+   "WebSocket connection to 'ws://localhost:3224/_next/webpack-hmr?id=BGoc_tIYznKCgWGBOzb58' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED",[39m
+    [31m+   "WebSocket connection to 'ws://localhost:3224/_next/webpack-hmr?id=BGoc_tIYznKCgWGBOzb58' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED",[39m
+    [31m+ ][39m
+
+       at support/authenticated-demo.ts:21
+
+      19 |       await use()
+      20 |
+    > 21 |       expect(errors, 'browser runtime errors').toEqual([])
+         |                                                ^
+      22 |     },
+      23 |     { auto: true },
+      24 |   ],
+        at Object.exports.authenticatedDemoTest._test.test.extend.assertNoAppErrors.auto (/Users/philiplewis/slatecamp/e2e/support/authenticated-demo.ts:21:48)
+
+    Error: locator.click: Test timeout of 90000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('[role="option"]:has-text("Developer")')[22m
+
+
+      72 |     // Open role select dropdown and choose "Developer"
+      73 |     await page.getByRole('combobox').click()
+    > 74 |     await page.locator('[role="option"]:has-text("Developer")').click()
+         |                                                                 ^
+      75 |
+      76 |     await page.getByRole('button', { name: 'Assign Role' }).click()
+      77 |
+        at /Users/philiplewis/slatecamp/e2e/ceo-portal.spec.ts:74:65
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/ceo-portal-ceo-control-pla-de662-oke-a-role-with-audit-trail-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/ceo-portal-ceo-control-pla-de662-oke-a-role-with-audit-trail-chromium/error-context.md
+
+  1 failed
+    [chromium] › e2e/ceo-portal.spec.ts:60:7 › ceo control plane and audit logging › can assign and revoke a role, with audit trail
+  3 passed (2.4m)
+error: script "test:e2e:auth-demo:ceo-portal" exited with code 1
+End: 2026-04-28T11:13:30+08:00
+Exit code: 1

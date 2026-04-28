@@ -1,0 +1,16 @@
+$ bun scripts/playwright-run.ts auth-demo-wiki
+[2m[WebServer] [22m(node:89153) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:89162) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m⨯ Another next dev server is already running.
+[2m[WebServer] [22m
+[2m[WebServer] [22m- Local:        http://localhost:3300
+[2m[WebServer] [22m- PID:          87044
+[2m[WebServer] [22m- Dir:          /Users/philiplewis/slatecamp
+[2m[WebServer] [22m- Log:          .next/dev/logs/next-development.log
+[2m[WebServer] [22m
+[2m[WebServer] [22mRun kill 87044 to stop it.
+Error: Process from config.webServer was not able to start. Exit code: 1
+
+error: script "test:e2e:auth-demo:wiki" exited with code 1

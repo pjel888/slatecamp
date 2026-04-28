@@ -1,11 +1,11 @@
 import type { Metadata } from 'next'
-import { assertPermission } from '@/lib/admin/roles'
+import { requirePermissionOrRedirect } from '@/lib/admin/roles'
 import { AuditLogViewer } from '@/components/admin/AuditLogViewer'
 
 export const metadata: Metadata = { title: 'Audit Log - SlateCamp Admin' }
 
 export default async function AdminAuditPage() {
-  await assertPermission('admin.audit.view')
+  await requirePermissionOrRedirect('admin.audit.view')
 
   return (
     <div className="space-y-6">

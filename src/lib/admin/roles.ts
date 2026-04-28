@@ -1,8 +1,9 @@
-import { cache } from 'react'
+import { redirect } from 'next/navigation'
 import {
   resolveCurrentUserRole,
   type RoleResolution,
 } from '@/lib/entitlements/resolve-role'
+import { ROUTES } from '@/lib/routes'
 import {
   canAccessAdminCmsForRole,
   canManageContentForRole,
@@ -30,10 +31,10 @@ const getResolution = async (): Promise<RoleResolution> => resolveCurrentUserRol
  *
  * @deprecated Prefer `resolveCurrentUserRole()` from `@/lib/entitlements/resolve-role`.
  */
-export const getUserRole = cache(async (): Promise<UserRole | null> => {
+export async function getUserRole(): Promise<UserRole | null> {
   const resolution = await getResolution()
   return resolution.compatibilityRole
-})
+}
 
 /**
  * Check if user is an admin (super_admin or content_admin)
@@ -81,10 +82,10 @@ export async function canManageUsers(): Promise<boolean> {
  * Get all roles for a user.
  * Wrapped with React cache() to deduplicate calls within a single RSC render pass.
  */
-export const getUserRoles = cache(async function getUserRoles(): Promise<UserRole[]> {
+export async function getUserRoles(): Promise<UserRole[]> {
   const role = await getUserRole()
   return role ? [role] : []
-})
+}
 
 /**
  * Assert that the current user has a specific admin permission.
@@ -94,5 +95,22 @@ export async function assertPermission(permission: AdminPermission): Promise<voi
   const resolution = await getResolution()
   if (!hasPermission(resolution.normalizedRole, permission)) {
     throw new Error(`Forbidden: missing permission ${permission}`)
+  }
+}
+
+/**
+ * Route-page variant of assertPermission.
+ *
+ * Server actions should keep using assertPermission so callers receive a
+ * structured failure. Admin pages should redirect instead of rendering a Next
+ * error page when a staff role reaches a URL outside its permission scope.
+ */
+export async function requirePermissionOrRedirect(
+  permission: AdminPermission,
+  redirectTo = ROUTES.dashboard.root,
+): Promise<void> {
+  const resolution = await getResolution()
+  if (!hasPermission(resolution.normalizedRole, permission)) {
+    redirect(redirectTo)
   }
 }

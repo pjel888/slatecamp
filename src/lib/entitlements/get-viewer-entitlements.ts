@@ -7,7 +7,10 @@ import { type EntitlementFeatureKey, ENTITLEMENT_FEATURE_KEYS } from './feature-
 import { normalizeFeatureFlagRecord } from './normalize-feature-flag'
 import { normalizeTierValue, toConfigMismatchEvent } from './normalize-tier'
 import { resolveDevOverrides } from './dev-overrides'
-import { resolveRoleFromInputs } from './resolve-role'
+import {
+  isDevForceUserRoleOverrideActive,
+  resolveRoleFromInputs,
+} from './resolve-role'
 import { buildViewerEntitlements, evaluateFeatureAccess } from './resolve-entitlements'
 import type {
   CanonicalSubscriptionStatus,
@@ -84,8 +87,7 @@ const loadViewerEntitlementSnapshot = cache(async (): Promise<ViewerEntitlements
     userMetadataRole: user.user_metadata?.role,
     profileRole: profileResult.data?.role,
     userRoleRows: roleRowsResult.data ?? [],
-    forcedUserIdActive:
-      process.env.NODE_ENV === 'development' && Boolean(process.env.DEV_FORCE_USER_ID),
+    forcedUserIdActive: isDevForceUserRoleOverrideActive(),
   })
 
   const subscription = subscriptionResult.data as SubscriptionRow | null

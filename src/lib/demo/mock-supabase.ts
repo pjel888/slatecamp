@@ -173,6 +173,7 @@ class MockQueryBuilder {
   private countMode: string | null = null
   private orders: OrderRule[] = []
   private limitCount: number | null = null
+  private rangeBounds: { from: number; to: number } | null = null
   private isSingle = false
   private isMaybeSingle = false
   private mutationType: 'insert' | 'update' | 'upsert' | 'delete' | null = null
@@ -246,6 +247,11 @@ class MockQueryBuilder {
 
   limit(count: number) {
     this.limitCount = count
+    return this
+  }
+
+  range(from: number, to: number) {
+    this.rangeBounds = { from, to }
     return this
   }
 
@@ -390,6 +396,10 @@ class MockQueryBuilder {
 
     if (this.limitCount !== null) {
       rows = rows.slice(0, this.limitCount)
+    }
+
+    if (this.rangeBounds) {
+      rows = rows.slice(this.rangeBounds.from, this.rangeBounds.to + 1)
     }
 
     if (this.isSingle || this.isMaybeSingle) {

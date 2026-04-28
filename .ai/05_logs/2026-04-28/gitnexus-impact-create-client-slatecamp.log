@@ -1,0 +1,36 @@
+{
+  "status": "ambiguous",
+  "message": "Found 3 symbols matching 'createClient'. Use target_uid, file_path, or kind to disambiguate.",
+  "target": {
+    "name": "createClient"
+  },
+  "direction": "upstream",
+  "impactedCount": 0,
+  "risk": "UNKNOWN",
+  "candidates": [
+    {
+      "uid": "Function:src/lib/supabase/client.ts:createClient",
+      "name": "createClient",
+      "kind": "Function",
+      "filePath": "src/lib/supabase/client.ts",
+      "line": 6,
+      "score": 0.56
+    },
+    {
+      "uid": "Function:src/lib/supabase/server.ts:createClient",
+      "name": "createClient",
+      "kind": "Function",
+      "filePath": "src/lib/supabase/server.ts",
+      "line": 36,
+      "score": 0.56
+    },
+    {
+      "uid": "Const:src/lib/supabase/server.ts:createClient",
+      "name": "createClient",
+      "kind": "",
+      "filePath": "src/lib/supabase/server.ts",
+      "line": 36,
+      "score": 0.5
+    }
+  ]
+}

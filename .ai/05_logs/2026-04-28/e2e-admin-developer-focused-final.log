@@ -1,0 +1,18 @@
+Command: bun run test:e2e:auth-demo:admin-developer
+Working directory: /Users/philiplewis/slatecamp
+Start: 2026-04-28T11:40:01+08:00
+$ bun scripts/playwright-run.ts auth-demo-admin-developer
+[2m[WebServer] [22m(node:64736) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:64737) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 5 tests using 1 worker
+
+(node:65064) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:65064) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [chromium] › e2e/admin-permissions-developer.spec.ts:14:7 › developer permission matrix › can access developer portal (18.7s)
+  ✓  2 [chromium] › e2e/admin-permissions-developer.spec.ts:26:7 › developer permission matrix › can access admin dashboard with limited nav scope (9.6s)
+error: script "test:e2e:auth-demo:admin-developer" exited with code 143

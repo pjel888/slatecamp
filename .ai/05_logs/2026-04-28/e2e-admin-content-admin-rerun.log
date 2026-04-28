@@ -1,0 +1,63 @@
+$ bun scripts/playwright-run.ts auth-demo-admin-content-admin
+[2m[WebServer] [22m(node:86667) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:86668) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 6 tests using 1 worker
+
+(node:86716) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:86716) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [chromium] › e2e/admin-permissions-content-admin.spec.ts:14:7 › content-admin permission matrix › can access admin dashboard and sees permitted nav items (20.1s)
+(node:86799) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:86799) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  2 [chromium] › e2e/admin-permissions-content-admin.spec.ts:48:7 › content-admin permission matrix › can access pipeline and publishing surfaces (16.5s)
+  ✓  3 [chromium] › e2e/admin-permissions-content-admin.spec.ts:57:7 › content-admin permission matrix › can access reviews queue (6.8s)
+  ✓  4 [chromium] › e2e/admin-permissions-content-admin.spec.ts:66:7 › content-admin permission matrix › is denied ceo portal routes (11.9s)
+  ✓  5 [chromium] › e2e/admin-permissions-content-admin.spec.ts:72:7 › content-admin permission matrix › is denied developer portal routes (19.1s)
+  ✓  6 [chromium] › e2e/admin-permissions-content-admin.spec.ts:78:7 › content-admin permission matrix › is denied audit log page (26.3s)
+
+
+  1) [chromium] › e2e/admin-permissions-content-admin.spec.ts:14:7 › content-admin permission matrix › can access admin dashboard and sees permitted nav items
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).not.[22mtoContainText[2m([22m[32mexpected[39m[2m)[22m failed
+
+    Locator: locator('body')
+    Expected substring: not [32m"Audit Log"[39m
+    Received string: [31m"DEVSkip to main contentSlateCampAdmin ConsoleownerDashboardOverviewDashboardKnowledge BaseBrowserQuestion BankStructureTaxonomy3D Assets3D Models RegistryQualityReview QueuePublishing PipelineContent SearchPulse[7mAudit Log[27mPulse FeedSettingsSettingsCommand PaletteSearch components, status, tools...AdminDashboardContent ManagementDashboardCoverage gap detectedALE Foundations(A1.1) has high exam frequency but 0 questions.Create contentNeeds AttentionAll clear — nothing needs immediate attention.Total Questions12Total Articles1Published1Draft0Content by SubjectResource DistributionResource distribution across the syllabusQuestionsArticlesA1Building Code6Items1WikiB1Structures6Items1WikiQuick ActionsCreate QuestionAdd a new question to the bankCreate ArticleWrite a new wiki articleKnowledge BrowserManage existing contentImport ContentBulk import from spreadsheetReview QueueItems awaiting reviewTaxonomy EditorManage content taxonomyRecent ActivitySystem LogsView allNo recent activity recorded."[39m
+    Timeout: 5000ms
+
+    Call log:
+    [2m  - Expect "not toContainText" with timeout 5000ms[22m
+    [2m  - waiting for locator('body')[22m
+    [2m    8 × locator resolved to <body class="__variable_de0309 __variable_bdb7b4 __variable_dd4049 __variable_bb509a __variable_1084b9 font-sans antialiased">…</body>[22m
+    [2m      - unexpected value "DEVSkip to main contentSlateCampAdmin ConsoleownerDashboardOverviewDashboardKnowledge BaseBrowserQuestion BankStructureTaxonomy3D Assets3D Models RegistryQualityReview QueuePublishing PipelineContent SearchPulseAudit LogPulse FeedSettingsSettingsCommand PaletteSearch components, status, tools...AdminDashboardContent ManagementDashboardCoverage gap detectedALE Foundations(A1.1) has high exam frequency but 0 questions.Create contentNeeds AttentionAll clear — nothing needs immediate attention.Total Questions12Total Articles1Published1Draft0Content by SubjectResource DistributionResource distribution across the syllabusQuestionsArticlesA1Building Code6Items1WikiB1Structures6Items1WikiQuick ActionsCreate QuestionAdd a new question to the bankCreate ArticleWrite a new wiki articleKnowledge BrowserManage existing contentImport ContentBulk import from spreadsheetReview QueueItems awaiting reviewTaxonomy EditorManage content taxonomyRecent ActivitySystem LogsView allNo recent activity recorded."[22m
+
+
+      43 |     await expect(
+      44 |       page.locator('body'),
+    > 45 |     ).not.toContainText('Audit Log', { timeout: 5000 })
+         |           ^
+      46 |   })
+      47 |
+      48 |   test('can access pipeline and publishing surfaces', async ({ page }) => {
+        at /Users/philiplewis/slatecamp/e2e/admin-permissions-content-admin.spec.ts:45:11
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/admin-permissions-content--778ce-nd-sees-permitted-nav-items-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/admin-permissions-content--778ce-nd-sees-permitted-nav-items-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/admin-permissions-content--778ce-nd-sees-permitted-nav-items-chromium/error-context.md
+
+  1 failed
+    [chromium] › e2e/admin-permissions-content-admin.spec.ts:14:7 › content-admin permission matrix › can access admin dashboard and sees permitted nav items
+  5 passed (1.9m)
+error: script "test:e2e:auth-demo:admin-content-admin" exited with code 1

@@ -1,6 +1,9 @@
 import { describe, expect, test } from 'bun:test'
 
-import { resolveRoleFromInputs } from './resolve-role'
+import {
+  isDevForceUserRoleOverrideActive,
+  resolveRoleFromInputs,
+} from './resolve-role'
 
 describe('resolveRoleFromInputs', () => {
   test('prefers forced dev user bypass over all other sources', () => {
@@ -13,6 +16,27 @@ describe('resolveRoleFromInputs', () => {
 
     expect(resolution.normalizedRole).toBe('owner')
     expect(resolution.resolvedFrom).toBe('dev_force_user')
+  })
+
+  test('disables forced dev user role override when Playwright neutralizes local impersonation', () => {
+    const baseEnv = {
+      NODE_ENV: 'development',
+      DEV_FORCE_USER_ID: '00000000-0000-4000-8000-000000000001',
+    }
+
+    expect(
+      isDevForceUserRoleOverrideActive({
+        ...baseEnv,
+        DISABLE_DEV_FORCE_USER_ID: 'true',
+      }),
+    ).toBe(false)
+
+    expect(
+      isDevForceUserRoleOverrideActive({
+        ...baseEnv,
+        DISABLE_DEV_FORCE_USER_ID: 'false',
+      }),
+    ).toBe(true)
   })
 
   test('prefers user_roles as the canonical source over other role surfaces', () => {

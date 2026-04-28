@@ -1,4 +1,4 @@
-import { assertPermission } from '@/lib/admin/roles'
+import { requirePermissionOrRedirect } from '@/lib/admin/roles'
 import { createClient } from '@/lib/supabase/server'
 import { QuestionEditor } from '@/components/admin/QuestionEditor'
 import { Breadcrumb } from '@/components/ui/breadcrumb'
@@ -15,7 +15,7 @@ interface PageProps {
 }
 
 const NewQuestionPage = async ({ searchParams }: PageProps) => {
-  await assertPermission('admin.content.create')
+  await requirePermissionOrRedirect('admin.content.create')
 
   const { topic: topicId } = await searchParams
   const supabase = await createClient()

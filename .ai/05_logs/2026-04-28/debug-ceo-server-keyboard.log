@@ -1,0 +1,13 @@
+▲ Next.js 16.2.3 (webpack)
+- Local:         http://localhost:3235
+- Network:       http://127.0.2.2:3235
+- Environments: .env.local
+✓ Ready in 396ms
+- Experiments (use with caution):
+  · serverActions
+
+○ Compiling /ceo/team/admin-roles ...
+ GET /ceo/team/admin-roles 200 in 7.4s (next.js: 7.1s, application-code: 376ms)
+ GET /ceo/team/admin-roles 200 in 202ms (next.js: 4ms, application-code: 198ms)
+[browser] Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+ GET /ceo/team/admin-roles 200 in 72ms (next.js: 6ms, application-code: 66ms)

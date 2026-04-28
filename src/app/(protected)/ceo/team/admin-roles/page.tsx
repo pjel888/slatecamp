@@ -6,6 +6,7 @@ import { CeoAdminRoleManager } from '@/components/ceo/CeoAdminRoleManager'
 export const metadata = {
   title: 'Admin Roles — CEO Dashboard',
 }
+export const dynamic = 'force-dynamic'
 
 export default async function CeoAdminRolesPage() {
   await verifyCeoAccess()

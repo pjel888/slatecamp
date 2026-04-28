@@ -1,0 +1,20 @@
+$ bun scripts/playwright-run.ts auth-demo-portals
+[2m[WebServer] [22m[playwright-web-server] Removed stale Next dev cache at /Users/philiplewis/slatecamp/.next/dev
+[2m[WebServer] [22m(node:16191) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:16192) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 5 tests using 1 worker
+
+(node:17060) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:17060) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [chromium] › e2e/authenticated-demo-portals.spec.ts:38:9 › demo-authenticated privileged portals › authenticated demo user can reach /admin (15.4s)
+  ✓  2 [chromium] › e2e/authenticated-demo-portals.spec.ts:38:9 › demo-authenticated privileged portals › authenticated demo user can reach /admin/knowledge (1.0m)
+  ✓  3 [chromium] › e2e/authenticated-demo-portals.spec.ts:38:9 › demo-authenticated privileged portals › authenticated demo user can reach /developer (1.9m)
+  ✓  4 [chromium] › e2e/authenticated-demo-portals.spec.ts:38:9 › demo-authenticated privileged portals › authenticated demo user can reach /developer/tools (7.8s)
+  ✓  5 [chromium] › e2e/authenticated-demo-portals.spec.ts:38:9 › demo-authenticated privileged portals › authenticated demo user can reach /ceo/financials (33.8s)
+
+  5 passed (4.2m)

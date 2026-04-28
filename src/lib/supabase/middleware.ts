@@ -7,7 +7,9 @@ import {
   canAccessAdminCmsForRole,
   canAccessCeoPortalForRole,
   canAccessDeveloperPortalForRole,
+  hasPermission,
 } from "@/lib/entitlements/policy";
+import type { AdminPermission } from "@/lib/entitlements/types";
 import { logEntitlementAuditEvent } from "@/lib/entitlements/audit";
 import { logEdgeError } from "@/lib/logging/edge";
 
@@ -19,6 +21,60 @@ const LEGACY_ROUTE_REDIRECTS: Record<string, string> = {
   [ROUTES.legacy.dashboardTrail]: ROUTES.dashboard.camptrails,
   [ROUTES.legacy.dashboardTrails]: ROUTES.dashboard.camptrails,
   [ROUTES.legacy.settings]: ROUTES.dashboard.settings,
+}
+
+const ADMIN_PATH_PERMISSIONS: Array<[RegExp, AdminPermission]> = [
+  [/^\/admin\/audit(?:\/|$)/, 'admin.audit.view'],
+  [/^\/admin\/activity(?:\/|$)/, 'admin.activity.view'],
+  [/^\/admin\/pipeline(?:\/|$)/, 'admin.pipeline.manage'],
+  [/^\/admin\/reviews(?:\/|$)/, 'admin.reviews.view'],
+  [/^\/admin\/knowledge\/questions\/new(?:\/|$)/, 'admin.content.create'],
+  [/^\/admin\/knowledge\/import(?:\/|$)/, 'admin.content.import'],
+  [/^\/admin\/knowledge\/new(?:\/|$)/, 'admin.content.create'],
+  [/^\/admin\/knowledge\/analytics(?:\/|$)/, 'admin.analytics.view'],
+  [/^\/admin\/taxonomy(?:\/|$)/, 'admin.taxonomy.manage'],
+  [/^\/admin\/assets(?:\/|$)/, 'admin.assets.manage'],
+  [/^\/admin\/settings(?:\/|$)/, 'admin.users.manage'],
+  [/^\/admin\/search(?:\/|$)/, 'admin.search.use'],
+  [/^\/admin\/preview(?:\/|$)/, 'admin.preview.view'],
+  [/^\/admin\/3d-models(?:\/|$)/, 'admin.access'],
+  [/^\/admin(?:\/|$)/, 'admin.dashboard.view'],
+]
+
+const requiredAdminPermissionForPath = (pathname: string) =>
+  ADMIN_PATH_PERMISSIONS.find(([pattern]) => pattern.test(pathname))?.[1] ?? null
+
+const hasPrivilegedRouteAccess = ({
+  pathname,
+  isAdminPath,
+  isDeveloperPath,
+  isCeoPath,
+  normalizedRole,
+  allowDeveloperBypass,
+}: {
+  pathname: string
+  isAdminPath: boolean
+  isDeveloperPath: boolean
+  isCeoPath: boolean
+  normalizedRole: Parameters<typeof canAccessAdminCmsForRole>[0]
+  allowDeveloperBypass: boolean
+}) => {
+  const canAccessPortal =
+    isAdminPath
+      ? canAccessAdminCmsForRole(normalizedRole)
+      : isDeveloperPath
+        ? canAccessDeveloperPortalForRole(normalizedRole, allowDeveloperBypass)
+        : isCeoPath
+          ? canAccessCeoPortalForRole(normalizedRole)
+          : true
+
+  if (!canAccessPortal) return false
+
+  const adminPermission = isAdminPath
+    ? requiredAdminPermissionForPath(pathname)
+    : null
+
+  return !adminPermission || hasPermission(normalizedRole, adminPermission)
 }
 
 export const updateSession = async (request: NextRequest) => {
@@ -38,9 +94,8 @@ export const updateSession = async (request: NextRequest) => {
   }
 
   // 1.5 LOCAL DEV ABSOLUTE BYPASS
-  // If we are on localhost and have a force user ID, we allow everything.
-  const isLocal = request.nextUrl.hostname === 'localhost' || request.nextUrl.hostname === '127.0.0.1';
-  const isDev = process.env.NODE_ENV === 'development' && isLocal;
+  // If we are in development and have a force user ID, we allow everything.
+  const isDev = process.env.NODE_ENV === 'development';
   const hasForceUser =
     process.env.DISABLE_DEV_FORCE_USER_ID !== 'true' &&
     !!process.env.DEV_FORCE_USER_ID;
@@ -56,11 +111,40 @@ export const updateSession = async (request: NextRequest) => {
   // 2. PUBLIC PATHS
   const isPublicPath = PUBLIC_ROUTES.some((path) => pathname === path) || pathname === ROUTES.admin.login;
 
+  const isAdminPath = (pathname === ROUTES.admin.root || pathname.startsWith(ROUTES.admin.root + '/')) && pathname !== ROUTES.admin.login;
+  const isDeveloperPath = pathname === ROUTES.developer.root || pathname.startsWith(ROUTES.developer.root + '/');
+  const isCeoPath = pathname === ROUTES.ceo.root || pathname.startsWith(ROUTES.ceo.root + '/');
+
   // 3. DEMO MODE
   if (isDemoMode()) {
     if (pathname === ROUTES.auth.login || pathname === ROUTES.auth.register || pathname === ROUTES.admin.login) {
       return NextResponse.redirect(new URL(ROUTES.dashboard.root, request.url));
     }
+
+    if (isAdminPath || isDeveloperPath || isCeoPath) {
+      const { getDemoUser } = await import('@/lib/demo/config')
+      const demoUser = getDemoUser()
+      const roleResolution = resolveRoleFromInputs({
+        email: demoUser.email,
+        appMetadataRole: demoUser.app_metadata?.role,
+        userMetadataRole: demoUser.user_metadata?.role,
+        forcedUserIdActive: false,
+      })
+      const allowDeveloperBypass = process.env.ALLOW_DEV_PORTAL_BYPASS === 'true'
+      const canAccess = hasPrivilegedRouteAccess({
+        pathname,
+        isAdminPath,
+        isDeveloperPath,
+        isCeoPath,
+        normalizedRole: roleResolution.normalizedRole,
+        allowDeveloperBypass,
+      })
+
+      if (!canAccess) {
+        return NextResponse.redirect(new URL(ROUTES.dashboard.root, request.url))
+      }
+    }
+
     return response;
   }
 
@@ -127,10 +211,6 @@ export const updateSession = async (request: NextRequest) => {
     return redirectWithCookies(ROUTES.dashboard.root);
   }
 
-  const isAdminPath = (pathname === ROUTES.admin.root || pathname.startsWith(ROUTES.admin.root + '/')) && pathname !== ROUTES.admin.login;
-  const isDeveloperPath = pathname === ROUTES.developer.root || pathname.startsWith(ROUTES.developer.root + '/');
-  const isCeoPath = pathname === ROUTES.ceo.root || pathname.startsWith(ROUTES.ceo.root + '/');
-
   // 6. PRIVILEGED ROUTE GATING (defense-in-depth — app layouts also check)
   if (isAdminPath || isDeveloperPath || isCeoPath) {
     const [profileResult, roleRowsResult] = await Promise.all([
@@ -153,15 +233,14 @@ export const updateSession = async (request: NextRequest) => {
 
     const allowDeveloperBypass = process.env.ALLOW_DEV_PORTAL_BYPASS === 'true'
 
-    const canAccess =
-      isAdminPath
-        ? canAccessAdminCmsForRole(roleResolution.normalizedRole)
-        : isDeveloperPath
-          ? canAccessDeveloperPortalForRole(
-              roleResolution.normalizedRole,
-              allowDeveloperBypass,
-            )
-          : canAccessCeoPortalForRole(roleResolution.normalizedRole)
+    const canAccess = hasPrivilegedRouteAccess({
+      pathname,
+      isAdminPath,
+      isDeveloperPath,
+      isCeoPath,
+      normalizedRole: roleResolution.normalizedRole,
+      allowDeveloperBypass,
+    })
 
     logEntitlementAuditEvent({
       eventName: canAccess ? 'tooling.access' : 'entitlement.denied',

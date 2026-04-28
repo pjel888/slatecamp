@@ -4,12 +4,15 @@ import { DataTable, type Column } from '@/components/shared/data-table'
 import { EmptyState } from '@/components/shared/empty-state'
 import { SectionHeader } from '@/components/shared/section-header'
 import { getTableInfo, type TableInfo } from '@/lib/actions/dev/db-viewer'
+import { assertDeveloperAccess } from '@/lib/developer/access'
 
 type DatabaseTableRow = Record<string, unknown> & TableInfo & {
   rls_status: string
 }
 
 export default async function DatabaseViewerPage() {
+  await assertDeveloperAccess()
+
   const tables = await getTableInfo()
 
   const rows: DatabaseTableRow[] = tables.map((table) => ({

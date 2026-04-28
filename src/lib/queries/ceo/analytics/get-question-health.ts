@@ -1,6 +1,7 @@
 'use server'
 
 import { createClient } from '@/lib/supabase/server'
+import { assertCeoAccess } from '@/lib/ceo/access'
 import { wrapResult, wrapError } from '@/lib/actions/analytics/shared-helpers'
 import type { AnalyticsResult } from '@/lib/actions/analytics/shared-helpers'
 
@@ -13,6 +14,8 @@ export type QuestionHealthRow = {
 }
 
 export const getQuestionHealthData = async (): Promise<AnalyticsResult<QuestionHealthRow[]>> => {
+  await assertCeoAccess()
+
   try {
     const supabase = await createClient()
 

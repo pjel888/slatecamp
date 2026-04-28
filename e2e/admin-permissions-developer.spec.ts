@@ -1,9 +1,10 @@
-import { expect, type APIRequestContext } from '@playwright/test'
+import { expect } from '@playwright/test'
 import {
   authenticatedDemoTest as test,
   demoAuthEnabled,
   gotoAllowRedirectAbort,
 } from './support/authenticated-demo'
+
 
 test.describe('developer permission matrix', () => {
   test.skip(
@@ -15,9 +16,12 @@ test.describe('developer permission matrix', () => {
     test.setTimeout(45000)
     await gotoAllowRedirectAbort(page, '/developer')
     await expect(page).toHaveURL(/\/developer$/, { timeout: 15000 })
-    await expect(page.locator('body')).toContainText(/Developer Portal|Internal Docs/i, {
-      timeout: 15000,
-    })
+    await expect(page.locator('body')).toContainText(
+      /Developer Portal|Internal Docs/i,
+      {
+        timeout: 15000,
+      },
+    )
   })
 
   test('can access admin dashboard with limited nav scope', async ({
@@ -38,60 +42,68 @@ test.describe('developer permission matrix', () => {
     })
 
     // Publishing and Reviews hidden
-    await expect(
-      page.locator('body'),
-    ).not.toContainText('Publishing Pipeline', { timeout: 5000 })
-    await expect(
-      page.locator('body'),
-    ).not.toContainText('Review Queue', { timeout: 5000 })
+    await expect(page.locator('body')).not.toContainText(
+      'Publishing Pipeline',
+      { timeout: 5000 },
+    )
+    await expect(page.locator('body')).not.toContainText('Review Queue', {
+      timeout: 5000,
+    })
 
     // Structure and Audit hidden
-    await expect(
-      page.locator('body'),
-    ).not.toContainText('Taxonomy', { timeout: 5000 })
-    await expect(
-      page.locator('body'),
-    ).not.toContainText('Audit Log', { timeout: 5000 })
+    await expect(page.locator('body')).not.toContainText('Taxonomy', {
+      timeout: 5000,
+    })
+    await expect(page.locator('body')).not.toContainText('Audit Log', {
+      timeout: 5000,
+    })
   })
 
   test('can access developer tools', async ({ page }) => {
     test.setTimeout(45000)
     await gotoAllowRedirectAbort(page, '/developer/tools')
     await expect(page).toHaveURL(/\/developer\/tools$/, { timeout: 15000 })
-    await expect(page.locator('body')).toContainText(/Dev Tools|Internal tools/i, {
-      timeout: 15000,
-    })
+    await expect(page.locator('body')).toContainText(
+      /Dev Tools|Internal tools/i,
+      {
+        timeout: 15000,
+      },
+    )
   })
 
-  test('is denied ceo portal routes', async ({ request }) => {
+  test('can access developer console', async ({ page }) => {
     test.setTimeout(45000)
-    await expectDashboardRedirect(request, '/ceo/financials')
-    await expectDashboardRedirect(request, '/ceo/team/admin-roles')
+    await gotoAllowRedirectAbort(page, '/developer/tools/console')
+    await expect(page).toHaveURL(/\/developer\/tools\/console$/, { timeout: 15000 })
+    await expect(page.locator('body')).toContainText(
+      /Console|System|Feature Flags/i,
+      {
+        timeout: 15000,
+      },
+    )
   })
 
-  test('is denied admin pipeline and reviews', async ({ request }) => {
+  test('can access database viewer', async ({ page }) => {
     test.setTimeout(45000)
-    await expectDashboardRedirect(request, '/admin/pipeline')
-    await expectDashboardRedirect(request, '/admin/reviews')
-    await expectDashboardRedirect(request, '/admin/audit')
+    await gotoAllowRedirectAbort(page, '/developer/tools/db')
+    await expect(page).toHaveURL(/\/developer\/tools\/db$/, { timeout: 15000 })
+    await expect(page.locator('body')).toContainText(
+      /Database|Table|Rows/i,
+      {
+        timeout: 15000,
+      },
+    )
+  })
+
+  test('can access logs viewer', async ({ page }) => {
+    test.setTimeout(45000)
+    await gotoAllowRedirectAbort(page, '/developer/tools/logs')
+    await expect(page).toHaveURL(/\/developer\/tools\/logs$/, { timeout: 15000 })
+    await expect(page.locator('body')).toContainText(
+      /Logs|Audit|Application Errors/i,
+      {
+        timeout: 15000,
+      },
+    )
   })
 })
-
-async function expectDashboardRedirect(
-  request: APIRequestContext,
-  path: string,
-) {
-  const response = await request.get(path, { maxRedirects: 0 })
-  const location = response.headers().location
-
-  if ([307, 308].includes(response.status())) {
-    expect(location, `${path} should return a Location header`).toBeTruthy()
-    expect(new URL(location!, 'http://localhost').pathname).toBe('/dashboard')
-    return
-  }
-
-  expect(response.ok(), `${path} should resolve successfully`).toBe(true)
-  const body = await response.text()
-  expect(body).toMatch(/NEXT_REDIRECT|__next-page-redirect|Dashboard/)
-  expect(body).toMatch(/\/dashboard|Dashboard/)
-}

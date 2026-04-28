@@ -1,6 +1,7 @@
 'use server'
 
 import { createClient } from '@/lib/supabase/server'
+import { assertCeoAccess } from '@/lib/ceo/access'
 import { wrapResult, wrapError, type AnalyticsResult } from '@/lib/actions/analytics/shared-helpers'
 
 // ─── Types ────────────────────────────────────────────────────────────────────
@@ -21,6 +22,8 @@ const MASTERY_THRESHOLD = 0.75
 export const getLearningVelocityData = async (): Promise<
   AnalyticsResult<LearningVelocityRow[]>
 > => {
+  await assertCeoAccess()
+
   try {
     const supabase = await createClient()
 

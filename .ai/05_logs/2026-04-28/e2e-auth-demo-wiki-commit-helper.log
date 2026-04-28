@@ -1,0 +1,64 @@
+$ bun scripts/playwright-run.ts auth-demo-wiki
+[2m[WebServer] [22m[playwright-web-server] Removed stale Next dev cache at /Users/philiplewis/slatecamp/.next/dev
+[2m[WebServer] [22m(node:75639) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:75654) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 2 tests using 1 worker
+
+(node:76478) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:76478) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:80104) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [chromium] › e2e/wiki-learning.spec.ts:14:7 › demo-auth wiki learning flow › wiki landing and seeded article resolve (2.5m)
+(node:84224) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:84224) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:84417) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:85222) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  2 [chromium] › e2e/wiki-learning.spec.ts:46:7 › demo-auth wiki learning flow › missing wiki slug resolves to dashboard not-found UI (26.2s)
+
+
+  1) [chromium] › e2e/wiki-learning.spec.ts:14:7 › demo-auth wiki learning flow › wiki landing and seeded article resolve
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: getByRole('heading', { name: /^Demo ALE Foundations$/ }).first()
+    Expected: visible
+    Timeout: 60000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 60000ms[22m
+    [2m  - waiting for getByRole('heading', { name: /^Demo ALE Foundations$/ }).first()[22m
+
+
+      38 |     await expect(
+      39 |       page.getByRole('heading', { name: /^Demo ALE Foundations$/ }).first(),
+    > 40 |     ).toBeVisible({ timeout: 60000 })
+         |       ^
+      41 |     await expect(
+      42 |       page.getByRole('heading', { name: /Core Rule/i }),
+      43 |     ).toBeVisible({ timeout: 60000 })
+        at /Users/philiplewis/slatecamp/e2e/wiki-learning.spec.ts:40:7
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/wiki-learning-demo-auth-wi-1fef3--and-seeded-article-resolve-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/wiki-learning-demo-auth-wi-1fef3--and-seeded-article-resolve-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/wiki-learning-demo-auth-wi-1fef3--and-seeded-article-resolve-chromium/error-context.md
+
+  1 failed
+    [chromium] › e2e/wiki-learning.spec.ts:14:7 › demo-auth wiki learning flow › wiki landing and seeded article resolve
+  1 passed (3.3m)
+error: script "test:e2e:auth-demo:wiki" exited with code 1

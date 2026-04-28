@@ -1,4 +1,5 @@
 import { createClient } from '@/lib/supabase/server'
+import { assertCeoAccess } from '@/lib/ceo/access'
 import type {
   FinancialSummary,
   RevenueBreakdown,
@@ -13,6 +14,7 @@ import { TIER_PRICES } from '@/lib/utils/constants'
 // ============================================================================
 
 export const getFinancialSummary = async (): Promise<FinancialSummary> => {
+  await assertCeoAccess()
   const supabase = await createClient()
 
   const now = new Date()
@@ -69,6 +71,7 @@ export const getFinancialSummary = async (): Promise<FinancialSummary> => {
 // ============================================================================
 
 export const getRevenueBreakdown = async (): Promise<RevenueBreakdown[]> => {
+  await assertCeoAccess()
   const supabase = await createClient()
   const defaultAmountByTier: Partial<Record<UserTier, number>> = {
     pro: TIER_PRICES.pro.amount,
@@ -159,6 +162,7 @@ export const getRevenueBreakdown = async (): Promise<RevenueBreakdown[]> => {
 
 // Separate lightweight query just for paying user count (used in NorthStar)
 export const getPayingUserCount = async (): Promise<number> => {
+  await assertCeoAccess()
   const supabase = await createClient()
   const { count } = await supabase
     .from('user_subscriptions')
@@ -168,6 +172,7 @@ export const getPayingUserCount = async (): Promise<number> => {
 }
 
 export const getUnitEconomics = async (): Promise<UnitEconomics> => {
+  await assertCeoAccess()
   const supabase = await createClient()
 
   const now = new Date()
@@ -255,6 +260,7 @@ export const getUnitEconomics = async (): Promise<UnitEconomics> => {
 // ============================================================================
 
 export const getEngagementPreview = async (): Promise<EngagementSnapshot | null> => {
+  await assertCeoAccess()
   const supabase = await createClient()
 
   // Try materialized view first

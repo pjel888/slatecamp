@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { assertPermission } from '@/lib/admin/roles'
+import { requirePermissionOrRedirect } from '@/lib/admin/roles'
 import { QuestionImporter } from '@/components/admin/QuestionImporter'
 import { Breadcrumb } from '@/components/ui/breadcrumb'
 import { ROUTES } from '@/lib/routes'
@@ -7,7 +7,7 @@ import { ROUTES } from '@/lib/routes'
 export const metadata: Metadata = { title: 'Import Questions - SlateCamp Admin' }
 
 export default async function ImportQuestionsPage() {
-  await assertPermission('admin.content.import')
+  await requirePermissionOrRedirect('admin.content.import')
 
   return (
     <div className="mx-auto max-w-2xl space-y-6">

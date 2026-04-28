@@ -1,17 +1,32 @@
 'use server'
 
 import { createClient, getUser } from '@/lib/supabase/server'
+import { assertDeveloperAccess } from '@/lib/developer/access'
+import { checkRateLimit } from '@/lib/rate-limit'
+import { logServerEvent } from '@/lib/logging/server'
 
 /**
  * Generate mock quiz sessions for the current user.
  */
 export async function generateTestSessions(count: number) {
+  await assertDeveloperAccess()
+
   const supabase = await createClient()
   const {
     data: { user },
   } = await getUser()
 
   if (!user) throw new Error('Not authenticated')
+
+  // Rate limiting
+  const rateLimitKey = `generate-test-sessions:${user.id}`
+  const rateLimit = checkRateLimit(rateLimitKey)
+  if (!rateLimit.allowed) {
+    throw new Error(`Rate limit exceeded. Try again in ${rateLimit.retryAfter} seconds.`)
+  }
+
+  // Input validation
+  const validatedCount = Math.max(1, Math.min(100, Math.floor(count)))
 
   // Get user's active exam profile
   const { data: profile } = await supabase
@@ -39,7 +54,7 @@ export async function generateTestSessions(count: number) {
   const sessionTypes = ['subject_quick', 'custom_compiled', 'topic_drill'] as const
   let created = 0
 
-  for (let i = 0; i < count; i++) {
+  for (let i = 0; i < validatedCount; i++) {
     const sessionType = sessionTypes[i % sessionTypes.length]
     const subject = subjects[i % subjects.length]
 
@@ -68,19 +83,40 @@ export async function generateTestSessions(count: number) {
     if (!error) created++
   }
 
-  return { message: `Generated ${created}/${count} test sessions.` }
+  await logServerEvent({
+    severity: 'info',
+    family: 'developer',
+    eventName: 'test_sessions_generated',
+    message: `Generated ${created}/${validatedCount} test sessions`,
+    context: {
+      routeOrAction: 'generateTestSessions',
+      userId: user.id,
+      metadata: { count: validatedCount, created },
+    },
+  })
+
+  return { message: `Generated ${created}/${validatedCount} test sessions.` }
 }
 
 /**
  * Generate a test organization with the current user as owner.
  */
 export async function generateTestOrg() {
+  await assertDeveloperAccess()
+
   const supabase = await createClient()
   const {
     data: { user },
   } = await getUser()
 
   if (!user) throw new Error('Not authenticated')
+
+  // Rate limiting
+  const rateLimitKey = `generate-test-org:${user.id}`
+  const rateLimit = checkRateLimit(rateLimitKey)
+  if (!rateLimit.allowed) {
+    throw new Error(`Rate limit exceeded. Try again in ${rateLimit.retryAfter} seconds.`)
+  }
 
   const slug = `test-org-${Date.now()}`
 
@@ -108,6 +144,18 @@ export async function generateTestOrg() {
   if (memberError) {
     return { message: `Org created but failed to add member: ${memberError.message}` }
   }
+
+  await logServerEvent({
+    severity: 'info',
+    family: 'developer',
+    eventName: 'test_org_generated',
+    message: `Created test organization ${slug}`,
+    context: {
+      routeOrAction: 'generateTestOrg',
+      userId: user.id,
+      metadata: { orgId: org.org_id, slug },
+    },
+  })
 
   return { message: `Created organization "${org.name}" (${slug}) with you as owner.` }
 }

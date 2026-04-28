@@ -1,0 +1,10 @@
+Usage: gitnexus detect-changes|detect_changes [options]
+
+Map git diff hunks to indexed symbols and affected execution flows
+
+Options:
+  -s, --scope <scope>   What to analyze: unstaged, staged, all, or compare
+                        (default: "unstaged")
+  -b, --base-ref <ref>  Branch/commit for compare scope (e.g. main)
+  -r, --repo <name>     Target repository
+  -h, --help            display help for command

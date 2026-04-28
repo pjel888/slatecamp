@@ -42,6 +42,7 @@ const BANNED_PATTERNS = [
       'src/lib/entitlements/dev-overrides.test.ts',
       'src/lib/entitlements/get-viewer-entitlements.ts',
       'src/lib/entitlements/resolve-role.ts',
+      'src/lib/entitlements/resolve-role.test.ts',
       'src/lib/demo/config.ts',
       'src/lib/supabase/server.ts',
       'src/lib/supabase/client.ts',

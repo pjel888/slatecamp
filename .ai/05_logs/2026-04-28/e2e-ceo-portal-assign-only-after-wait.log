@@ -1,0 +1,70 @@
+Command: PLAYWRIGHT_DEMO_AUTH=true PLAYWRIGHT_DEMO_ROLE=ceo PLAYWRIGHT_PORT=3224 NEXT_PUBLIC_ENABLE_DEMO_MODE=true PERF_DEV_SERVER_MEMORY_PROFILE=false bunx --bun playwright test e2e/ceo-portal.spec.ts --project=chromium --grep 'assign and revoke'
+Working directory: /Users/philiplewis/slatecamp
+Start: 2026-04-28T11:23:19+08:00
+[2m[WebServer] [22m[0m[33mWarning[0m[2m:[0m [1mThe 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.[0m
+[2m[WebServer] [22m[0m      [2mat [0m[0m[1m[3mwarnOnDeactivatedColors[0m[2m ([0m[0m[36minternal:tty[0m[2m:[0m[33m33[0m[2m:[33m24[0m[2m)[0m
+[2m[WebServer] [22m[0m      [2mat [0m[0m[1m[3mgetColorDepth[0m[2m ([0m[0m[36minternal:tty[0m[2m:[0m[33m42[0m[2m:[33m39[0m[2m)[0m
+[2m[WebServer] [22m[0m      [2mat [0m[0m[1m[3mshouldColorize[0m[2m ([0m[0m[36minternal:util/colors[0m[2m:[0m[33m14[0m[2m:[33m109[0m[2m)[0m
+[2m[WebServer] [22m[0m      [2mat [0m[0m[1m[3mrefresh[0m[2m ([0m[0m[36minternal:util/colors[0m[2m:[0m[33m18[0m[2m:[33m31[0m[2m)[0m
+[2m[WebServer] [22m[0m      [2mat [0m[0m[1m[3minternal:util/colors[0m[2m ([0m[0m[36minternal:util/colors[0m[2m:[0m[33m24[0m[2m:[33m16[0m[2m)[0m
+[2m[WebServer] [22m[0m      [2mat [0m[0m[1m[3minternal:assert/assertion_error[0m[2m ([0m[0m[36minternal:assert/assertion_error[0m[2m:[0m[33m2[0m[2m:[33m187[0m[2m)[0m
+[2m[WebServer] [22m[0m      [2mat [0m[0m[1m[3mloadAssertionError[0m[2m ([0m[0m[36mnode:assert[0m[2m:[0m[33m28[0m[2m:[33m96[0m[2m)[0m
+[2m[WebServer] [22m
+[2m[WebServer] [22mWarning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m    at emitWarning (null)
+[2m[WebServer] [22m    at warnOnDeactivatedColors (internal:tty:33:24)
+[2m[WebServer] [22m    at getColorDepth (internal:tty:42:39)
+[2m[WebServer] [22m    at shouldColorize (internal:util/colors:14:109)
+[2m[WebServer] [22m    at refresh (internal:util/colors:18:31)
+[2m[WebServer] [22m    at <unknown> (internal:util/colors (internal:util/colors:24:16)
+[2m[WebServer] [22m    at anonymous (null)
+[2m[WebServer] [22m    at <unknown> (internal:assert/assertion_error (internal:assert/assertion_error:2:187)
+[2m[WebServer] [22m    at anonymous (null)
+[2m[WebServer] [22m    at assign (null)
+[2m[WebServer] [22m    at anonymous (null)
+[2m[WebServer] [22m    at anonymous (null)
+[2m[WebServer] [22m    at anonymous (null)
+[2m[WebServer] [22m    at processTicksAndRejections (null)
+
+Running 1 test using 1 worker
+
+[0m[33mWarning[0m[2m:[0m [1mThe 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.[0m
+[0m      [2mat [0m[0m[1m[3mwarnOnDeactivatedColors[0m[2m ([0m[0m[36minternal:tty[0m[2m:[0m[33m33[0m[2m:[33m24[0m[2m)[0m
+[0m      [2mat [0m[0m[1m[3mgetColorDepth[0m[2m ([0m[0m[36minternal:tty[0m[2m:[0m[33m42[0m[2m:[33m39[0m[2m)[0m
+[0m      [2mat [0m[0m[1m[3mshouldColorize[0m[2m ([0m[0m[36minternal:util/colors[0m[2m:[0m[33m14[0m[2m:[33m109[0m[2m)[0m
+[0m      [2mat [0m[0m[1m[3mrefresh[0m[2m ([0m[0m[36minternal:util/colors[0m[2m:[0m[33m18[0m[2m:[33m31[0m[2m)[0m
+[0m      [2mat [0m[0m[1m[3minternal:util/colors[0m[2m ([0m[0m[36minternal:util/colors[0m[2m:[0m[33m24[0m[2m:[33m16[0m[2m)[0m
+[0m      [2mat [0m[0m[1m[3minternal:assert/assertion_error[0m[2m ([0m[0m[36minternal:assert/assertion_error[0m[2m:[0m[33m2[0m[2m:[33m187[0m[2m)[0m
+[0m      [2mat [0m[0m[1m[3mloadAssertionError[0m[2m ([0m[0m[36mnode:assert[0m[2m:[0m[33m28[0m[2m:[33m96[0m[2m)[0m
+
+  ✘  1 [chromium] › e2e/ceo-portal.spec.ts:60:2 › ceo control plane and audit logging › can assign and revoke a role, with audit trail (1.9m)
+
+
+  1) [chromium] › e2e/ceo-portal.spec.ts:60:2 › ceo control plane and audit logging › can assign and revoke a role, with audit trail
+
+    [31mTest timeout of 90000ms exceeded.[39m
+
+    Error: fill: Test timeout of 90000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('input#userId')[22m
+
+
+      68 |
+      69 |     // 2. Assign a role to the test target user
+    > 70 |     await page.locator('input#userId').fill(TEST_TARGET_USER_ID)
+         |                                       ^
+      71 |
+      72 |     await page.getByRole('combobox', { name: 'Role' }).selectOption('developer')
+      73 |
+        at /Users/philiplewis/slatecamp/e2e/ceo-portal.spec.ts:70:39
+
+    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/ceo-portal-ceo-control-pla-de662-oke-a-role-with-audit-trail-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/ceo-portal-ceo-control-pla-de662-oke-a-role-with-audit-trail-chromium/error-context.md
+
+  1 failed
+    [chromium] › e2e/ceo-portal.spec.ts:60:2 › ceo control plane and audit logging › can assign and revoke a role, with audit trail
+End: 2026-04-28T11:25:29+08:00
+Exit code: 1

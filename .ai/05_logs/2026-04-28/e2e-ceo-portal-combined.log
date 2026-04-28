@@ -1,0 +1,58 @@
+Command: bun run test:e2e:auth-demo:ceo-portal
+Working directory: /Users/philiplewis/slatecamp
+Start: 2026-04-28T11:26:36+08:00
+$ bun scripts/playwright-run.ts auth-demo-ceo-portal
+[2m[WebServer] [22m(node:12607) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:12649) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+(node:13741) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:13741) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [chromium] › e2e/ceo-portal.spec.ts:16:7 › ceo control plane and audit logging › can access CEO surfaces and exercise admin-role audit flow (1.1m)
+
+
+  1) [chromium] › e2e/ceo-portal.spec.ts:16:7 › ceo control plane and audit logging › can access CEO surfaces and exercise admin-role audit flow
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeEnabled[2m([22m[2m)[22m failed
+
+    Locator:  getByRole('button', { name: 'Assign Role' })
+    Expected: enabled
+    Received: disabled
+    Timeout:  15000ms
+
+    Call log:
+    [2m  - Expect "toBeEnabled" with timeout 15000ms[22m
+    [2m  - waiting for getByRole('button', { name: 'Assign Role' })[22m
+    [2m    18 × locator resolved to <button disabled tabindex="0" type="button" data-disabled="" data-slot="button" aria-disabled="true" class="group/button inline-flex shrink-0 items-center justify-center rounded-sm border border-transparent bg-clip-padding font-medium whitespace-nowrap transition-all duration-150 ease-out outline-none select-none focus-visible:ring-2 focus-visible:ring-primary/20 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed aria-invalid:border-destructive ari…>Assign Role</button>[22m
+    [2m       - unexpected value "disabled"[22m
+
+
+      52 |
+      53 |     const assignRoleButton = page.getByRole('button', { name: 'Assign Role' })
+    > 54 |     await expect(assignRoleButton).toBeEnabled({ timeout: 15000 })
+         |                                    ^
+      55 |     await assignRoleButton.click()
+      56 |
+      57 |     await expect(
+        at /Users/philiplewis/slatecamp/e2e/ceo-portal.spec.ts:54:36
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/ceo-portal-ceo-control-pla-624d9-rcise-admin-role-audit-flow-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/ceo-portal-ceo-control-pla-624d9-rcise-admin-role-audit-flow-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/ceo-portal-ceo-control-pla-624d9-rcise-admin-role-audit-flow-chromium/error-context.md
+
+  1 failed
+    [chromium] › e2e/ceo-portal.spec.ts:16:7 › ceo control plane and audit logging › can access CEO surfaces and exercise admin-role audit flow
+error: script "test:e2e:auth-demo:ceo-portal" exited with code 1
+End: 2026-04-28T11:27:50+08:00
+Exit code: 1

@@ -43,11 +43,13 @@ const SectionHeader = ({
 }: SectionHeaderProps) => {
   const styles = levelStyles[level]
 
+  const HeadingTag = level === 'page' ? 'h1' : level === 'card' ? 'h3' : 'h2'
+
   return (
     <div className={cn('flex items-start justify-between', className)}>
       <div className="flex flex-col">
         {eyebrow && <span className={styles.eyebrow}>{eyebrow}</span>}
-        <h2 className={styles.title}>{title}</h2>
+        <HeadingTag className={styles.title}>{title}</HeadingTag>
         {subtitle && <p className={styles.subtitle}>{subtitle}</p>}
       </div>
       {action && <div className="shrink-0">{action}</div>}

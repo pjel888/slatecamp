@@ -39,7 +39,7 @@ const StatusOverviewPage = async () => {
   const serviceStatuses = await getDeveloperServiceStatusSnapshot()
   const { database: dbStatus, api: apiStatus, auth: authStatus, edge: edgeStatus } = serviceStatuses
 
-  // Ping API for real latency
+  // Measure server-to-Supabase latency (not client-facing)
   const startPing = performance.now()
   const supabase = await createClient()
   await supabase.from('profiles').select('id').limit(1).catch(() => null)

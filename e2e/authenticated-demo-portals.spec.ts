@@ -38,14 +38,14 @@ test.describe('demo-authenticated privileged portals', () => {
     test(`authenticated demo user can reach ${route.path}`, async ({
       page,
     }) => {
-      test.setTimeout(45000)
+      test.setTimeout(150000)
       await gotoAllowRedirectAbort(page, route.path)
       await expect(page).toHaveURL(
         new RegExp(`${route.path.replace(/\//g, '\\/')}$`),
-        { timeout: 15000 },
+        { timeout: 30000 },
       )
       await expect(page.locator('body')).toContainText(route.text, {
-        timeout: 15000,
+        timeout: 30000,
       })
     })
   }

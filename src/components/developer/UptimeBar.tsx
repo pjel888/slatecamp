@@ -25,12 +25,14 @@ const dayLabelMap = {
 
 export const UptimeBar = ({ days, uptimePercentage }: UptimeBarProps) => (
   <div className="flex items-center gap-3">
-    <div className="flex items-center gap-[1.5px]">
+    <div className="flex items-center gap-[1.5px]" role="list" aria-label="30-day uptime history">
       {days.map((day) => (
         <div
           key={day.date}
           className={`w-1 h-5 rounded-[1px] ${dayColorMap[day.status]}`}
           title={`${day.date}: ${dayLabelMap[day.status]}`}
+          role="listitem"
+          aria-label={`${day.date}: ${dayLabelMap[day.status]}`}
         />
       ))}
     </div>

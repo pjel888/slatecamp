@@ -1,0 +1,53 @@
+$ bun scripts/playwright-run.ts auth-demo-wiki
+[2m[WebServer] [22m(node:89887) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:89918) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 2 tests using 1 worker
+
+(node:92364) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:92364) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [chromium] › e2e/wiki-learning.spec.ts:14:7 › demo-auth wiki learning flow › wiki landing and seeded article resolve (2.2m)
+(node:99313) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:99313) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:1307) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:1542) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  2 [chromium] › e2e/wiki-learning.spec.ts:46:7 › demo-auth wiki learning flow › missing wiki slug resolves to dashboard not-found UI (38.4s)
+
+
+  1) [chromium] › e2e/wiki-learning.spec.ts:14:7 › demo-auth wiki learning flow › wiki landing and seeded article resolve
+
+    TimeoutError: page.goto: Timeout 120000ms exceeded.
+    Call log:
+    [2m  - navigating to "http://localhost:3225/dashboard/wiki", waiting until "commit"[22m
+
+
+       at support/authenticated-demo.ts:28
+
+      26 |
+      27 | export async function gotoAllowRedirectAbort(page: Page, path: string) {
+    > 28 |   const response = await page.goto(path, {
+         |                               ^
+      29 |     timeout: 120000,
+      30 |     waitUntil: 'commit',
+      31 |   }).catch((error) => {
+        at gotoAllowRedirectAbort (/Users/philiplewis/slatecamp/e2e/support/authenticated-demo.ts:28:31)
+        at /Users/philiplewis/slatecamp/e2e/wiki-learning.spec.ts:16:49
+
+    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/wiki-learning-demo-auth-wi-1fef3--and-seeded-article-resolve-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/wiki-learning-demo-auth-wi-1fef3--and-seeded-article-resolve-chromium/error-context.md
+
+  1 failed
+    [chromium] › e2e/wiki-learning.spec.ts:14:7 › demo-auth wiki learning flow › wiki landing and seeded article resolve
+  1 passed (3.7m)
+error: script "test:e2e:auth-demo:wiki" exited with code 1

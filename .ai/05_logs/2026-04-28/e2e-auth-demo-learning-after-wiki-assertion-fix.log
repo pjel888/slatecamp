@@ -1,0 +1,30 @@
+$ bun scripts/playwright-run.ts auth-demo-learning
+[2m[WebServer] [22m[playwright-web-server] Removed stale Next dev lock at /Users/philiplewis/slatecamp/.next/dev/lock
+[2m[WebServer] [22m(node:41200) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:41215) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 4 tests using 1 worker
+
+(node:41549) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:41549) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:41215) Warning: `--localstorage-file` was provided without a valid path
+  ✓  1 [chromium] › e2e/learning-flow.spec.ts:13:7 › demo-auth learning flow › canceling a ready but unentered session does not create a resume CTA (29.0s)
+[2m[WebServer] [22m(node:43283) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:43349) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  2 [chromium] › e2e/learning-flow.spec.ts:47:7 › demo-auth learning flow › drills hub launches a custom session and supports one answer submission (16.0s)
+[2m[WebServer] [22m(node:46480) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  3 [chromium] › e2e/wiki-learning.spec.ts:14:7 › demo-auth wiki learning flow › wiki landing and seeded article resolve (1.4m)
+[2m[WebServer] [22m(node:46676) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:46712) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  4 [chromium] › e2e/wiki-learning.spec.ts:37:7 › demo-auth wiki learning flow › missing wiki slug resolves to dashboard not-found UI (1.9s)
+
+  4 passed (2.3m)

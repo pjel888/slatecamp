@@ -1,0 +1,24 @@
+Command: bun run test:e2e:auth-demo:admin-developer
+Working directory: /Users/philiplewis/slatecamp
+Start: 2026-04-28T11:08:58+08:00
+$ bun scripts/playwright-run.ts auth-demo-admin-developer
+[2m[WebServer] [22m(node:72612) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:72653) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 5 tests using 1 worker
+
+(node:73815) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:73815) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [chromium] › e2e/admin-permissions-developer.spec.ts:14:7 › developer permission matrix › can access developer portal (4.6s)
+  ✓  2 [chromium] › e2e/admin-permissions-developer.spec.ts:23:7 › developer permission matrix › can access admin dashboard with limited nav scope (2.1s)
+  ✓  3 [chromium] › e2e/admin-permissions-developer.spec.ts:57:7 › developer permission matrix › can access developer tools (1.9s)
+  ✓  4 [chromium] › e2e/admin-permissions-developer.spec.ts:66:7 › developer permission matrix › is denied ceo portal routes (26.8s)
+  ✓  5 [chromium] › e2e/admin-permissions-developer.spec.ts:72:7 › developer permission matrix › is denied admin pipeline and reviews (1.2m)
+
+  5 passed (1.9m)
+End: 2026-04-28T11:10:56+08:00
+Exit code: 0

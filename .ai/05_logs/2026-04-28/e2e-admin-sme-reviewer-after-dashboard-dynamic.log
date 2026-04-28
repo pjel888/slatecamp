@@ -1,0 +1,39 @@
+$ bun scripts/playwright-run.ts auth-demo-admin-sme-reviewer
+[2m[WebServer] [22m(node:6472) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:6473) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 5 tests using 1 worker
+
+(node:6498) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:6498) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [chromium] › e2e/admin-permissions-sme-reviewer.spec.ts:14:7 › sme-reviewer permission matrix › can access admin dashboard and sees review-centric nav items (7.3s)
+  ✓  2 [chromium] › e2e/admin-permissions-sme-reviewer.spec.ts:54:7 › sme-reviewer permission matrix › can access reviews queue (20.2s)
+  ✓  3 [chromium] › e2e/admin-permissions-sme-reviewer.spec.ts:63:7 › sme-reviewer permission matrix › can access pipeline for review approvals (23.4s)
+[2m[WebServer] [22m⨯ Error: Forbidden: missing permission admin.content.create
+[2m[WebServer] [22m    at assertPermission (src/lib/admin/roles.ts:96:11)
+[2m[WebServer] [22m    at async NewQuestionPage (src/app/admin/knowledge/questions/new/page.tsx:18:3)
+[2m[WebServer] [22m  [90m94 |[0m   [36mconst[0m resolution = [36mawait[0m getResolution()
+[2m[WebServer] [22m  [90m95 |[0m   [36mif[0m (!hasPermission(resolution.normalizedRole, permission)) {
+[2m[WebServer] [22m[31m[1m>[0m [90m96 |[0m     [36mthrow[0m [36mnew[0m [33mError[0m([32m`Forbidden: missing permission [0m${permission[32m}`[0m)
+[2m[WebServer] [22m  [90m   |[0m           [31m[1m^[0m
+[2m[WebServer] [22m  [90m97 |[0m   }
+[2m[WebServer] [22m  [90m98 |[0m }
+[2m[WebServer] [22m  [90m99 |[0m {
+[2m[WebServer] [22m  digest: [32m'1899243149'[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m⨯ Error: Forbidden: missing permission admin.content.create
+[2m[WebServer] [22m    at assertPermission (src/lib/admin/roles.ts:96:11)
+[2m[WebServer] [22m    at async NewContentPage (src/app/admin/knowledge/new/page.tsx:12:3)
+[2m[WebServer] [22m  [90m94 |[0m   [36mconst[0m resolution = [36mawait[0m getResolution()
+[2m[WebServer] [22m  [90m95 |[0m   [36mif[0m (!hasPermission(resolution.normalizedRole, permission)) {
+[2m[WebServer] [22m[31m[1m>[0m [90m96 |[0m     [36mthrow[0m [36mnew[0m [33mError[0m([32m`Forbidden: missing permission [0m${permission[32m}`[0m)
+[2m[WebServer] [22m  [90m   |[0m           [31m[1m^[0m
+[2m[WebServer] [22m  [90m97 |[0m   }
+[2m[WebServer] [22m  [90m98 |[0m }
+[2m[WebServer] [22m  [90m99 |[0m {
+[2m[WebServer] [22m  digest: [32m'1884862682'[39m
+[2m[WebServer] [22m}

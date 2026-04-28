@@ -1,12 +1,14 @@
 'use client'
 
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from '@/components/ui/select'
+const ADMIN_ROLE_OPTIONS = [
+  { value: 'owner', label: 'Owner' },
+  { value: 'super_admin', label: 'Super Admin' },
+  { value: 'admin', label: 'Admin' },
+  { value: 'content_admin', label: 'Content Admin' },
+  { value: 'sme_reviewer', label: 'SME Reviewer' },
+  { value: 'developer', label: 'Developer' },
+  { value: 'ceo', label: 'CEO' },
+]
 
 export const RoleSelect = ({
   value,
@@ -16,22 +18,19 @@ export const RoleSelect = ({
   onValueChange: (value: string) => void
 }) => {
   return (
-    <>
-      <input type="hidden" name="role" value={value} />
-      <Select value={value} onValueChange={onValueChange}>
-        <SelectTrigger className="w-full">
-          <SelectValue placeholder="Select role..." />
-        </SelectTrigger>
-        <SelectContent>
-          <SelectItem value="owner">Owner</SelectItem>
-          <SelectItem value="super_admin">Super Admin</SelectItem>
-          <SelectItem value="admin">Admin</SelectItem>
-          <SelectItem value="content_admin">Content Admin</SelectItem>
-          <SelectItem value="sme_reviewer">SME Reviewer</SelectItem>
-          <SelectItem value="developer">Developer</SelectItem>
-          <SelectItem value="ceo">CEO</SelectItem>
-        </SelectContent>
-      </Select>
-    </>
+    <select
+      id="role"
+      name="role"
+      value={value}
+      onChange={(event) => onValueChange(event.target.value)}
+      className="h-8 w-full rounded-sm border border-input bg-transparent px-2.5 py-1 text-sm text-foreground outline-none transition-colors focus-visible:border-primary focus-visible:ring-2 focus-visible:ring-primary/20 disabled:cursor-not-allowed disabled:opacity-50 dark:bg-input/30"
+    >
+      <option value="">Select role...</option>
+      {ADMIN_ROLE_OPTIONS.map((option) => (
+        <option key={option.value} value={option.value}>
+          {option.label}
+        </option>
+      ))}
+    </select>
   )
 }

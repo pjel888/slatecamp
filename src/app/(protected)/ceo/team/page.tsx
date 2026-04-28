@@ -8,6 +8,7 @@ import { formatPeso } from '@/types/ceo'
 export const metadata = {
   title: 'Team — CEO Dashboard',
 }
+export const dynamic = 'force-dynamic'
 
 const CeoTeamPage = async () => {
   await verifyCeoAccess()

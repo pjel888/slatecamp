@@ -1,0 +1,39 @@
+$ bun scripts/playwright-run.ts auth-demo-admin-developer
+[2m[WebServer] [22m(node:56636) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:56689) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 5 tests using 1 worker
+
+(node:57629) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:57629) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [chromium] › e2e/admin-permissions-developer.spec.ts:14:7 › developer permission matrix › can access developer portal (4.1s)
+  ✓  2 [chromium] › e2e/admin-permissions-developer.spec.ts:23:7 › developer permission matrix › can access admin dashboard with limited nav scope (3.7s)
+  ✓  3 [chromium] › e2e/admin-permissions-developer.spec.ts:57:7 › developer permission matrix › can access developer tools (2.3s)
+  ✓  4 [chromium] › e2e/admin-permissions-developer.spec.ts:66:7 › developer permission matrix › is denied ceo portal routes (24.3s)
+[2m[WebServer] [22m⨯ Error: Forbidden: missing permission admin.pipeline.manage
+[2m[WebServer] [22m    at assertPermission (src/lib/admin/roles.ts:96:11)
+[2m[WebServer] [22m    at async PipelinePage (src/app/admin/pipeline/page.tsx:14:3)
+[2m[WebServer] [22m  [90m94 |[0m   [36mconst[0m resolution = [36mawait[0m getResolution()
+[2m[WebServer] [22m  [90m95 |[0m   [36mif[0m (!hasPermission(resolution.normalizedRole, permission)) {
+[2m[WebServer] [22m[31m[1m>[0m [90m96 |[0m     [36mthrow[0m [36mnew[0m [33mError[0m([32m`Forbidden: missing permission [0m${permission[32m}`[0m)
+[2m[WebServer] [22m  [90m   |[0m           [31m[1m^[0m
+[2m[WebServer] [22m  [90m97 |[0m   }
+[2m[WebServer] [22m  [90m98 |[0m }
+[2m[WebServer] [22m  [90m99 |[0m {
+[2m[WebServer] [22m  digest: [32m'786867913'[39m
+[2m[WebServer] [22m}
+  ✘  5 [chromium] › e2e/admin-permissions-developer.spec.ts:72:7 › developer permission matrix › is denied admin pipeline and reviews (0ms)
+
+
+  1) [chromium] › e2e/admin-permissions-developer.spec.ts:72:7 › developer permission matrix › is denied admin pipeline and reviews
+
+    Error: worker process exited unexpectedly (code=null, signal=SIGKILL)
+
+  1 failed
+    [chromium] › e2e/admin-permissions-developer.spec.ts:72:7 › developer permission matrix › is denied admin pipeline and reviews
+  4 passed (1.4m)
+error: script "test:e2e:auth-demo:admin-developer" exited with code 1

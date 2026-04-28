@@ -12,6 +12,7 @@ import { Eyebrow } from '@/components/ui/eyebrow'
 export const metadata = {
   title: 'Financials — CEO Dashboard',
 }
+export const dynamic = 'force-dynamic'
 
 const BREAK_EVEN_MRR = 172_000
 

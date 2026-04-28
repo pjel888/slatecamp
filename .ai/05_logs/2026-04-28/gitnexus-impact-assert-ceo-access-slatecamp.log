@@ -1,0 +1,145 @@
+{
+  "target": {
+    "id": "Function:src/lib/ceo/access.ts:assertCeoAccess",
+    "name": "assertCeoAccess",
+    "type": "Function",
+    "filePath": "src/lib/ceo/access.ts"
+  },
+  "direction": "upstream",
+  "impactedCount": 14,
+  "risk": "MEDIUM",
+  "summary": {
+    "direct": 14,
+    "processes_affected": 0,
+    "modules_affected": 2
+  },
+  "affected_processes": [],
+  "affected_modules": [
+    {
+      "name": "Actions",
+      "hits": 8,
+      "impact": "direct"
+    },
+    {
+      "name": "Analytics",
+      "hits": 6,
+      "impact": "direct"
+    }
+  ],
+  "byDepth": {
+    "1": [
+      {
+        "depth": 1,
+        "id": "Function:src/lib/queries/ceo/financial-queries.ts:getFinancialSummary",
+        "name": "getFinancialSummary",
+        "filePath": "src/lib/queries/ceo/financial-queries.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/queries/ceo/financial-queries.ts:getRevenueBreakdown",
+        "name": "getRevenueBreakdown",
+        "filePath": "src/lib/queries/ceo/financial-queries.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/queries/ceo/financial-queries.ts:getPayingUserCount",
+        "name": "getPayingUserCount",
+        "filePath": "src/lib/queries/ceo/financial-queries.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/queries/ceo/financial-queries.ts:getUnitEconomics",
+        "name": "getUnitEconomics",
+        "filePath": "src/lib/queries/ceo/financial-queries.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/queries/ceo/financial-queries.ts:getEngagementPreview",
+        "name": "getEngagementPreview",
+        "filePath": "src/lib/queries/ceo/financial-queries.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/queries/ceo/analytics/get-study-cohorts.ts:getStudyCohortsData",
+        "name": "getStudyCohortsData",
+        "filePath": "src/lib/queries/ceo/analytics/get-study-cohorts.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/queries/ceo/analytics/get-question-health.ts:getQuestionHealthData",
+        "name": "getQuestionHealthData",
+        "filePath": "src/lib/queries/ceo/analytics/get-question-health.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/queries/ceo/analytics/get-pass-rate.ts:getPassRateData",
+        "name": "getPassRateData",
+        "filePath": "src/lib/queries/ceo/analytics/get-pass-rate.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/queries/ceo/analytics/get-learning-velocity.ts:getLearningVelocityData",
+        "name": "getLearningVelocityData",
+        "filePath": "src/lib/queries/ceo/analytics/get-learning-velocity.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/queries/ceo/analytics/get-engagement-depth.ts:getEngagementDepthData",
+        "name": "getEngagementDepthData",
+        "filePath": "src/lib/queries/ceo/analytics/get-engagement-depth.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/queries/ceo/analytics/get-coverage-gap.ts:getCoverageGapData",
+        "name": "getCoverageGapData",
+        "filePath": "src/lib/queries/ceo/analytics/get-coverage-gap.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/queries/ceo/analytics/get-content-effectiveness.ts:getContentEffectivenessData",
+        "name": "getContentEffectivenessData",
+        "filePath": "src/lib/queries/ceo/analytics/get-content-effectiveness.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/queries/ceo/analytics/get-cage-quality.ts:getCAGEQualityData",
+        "name": "getCAGEQualityData",
+        "filePath": "src/lib/queries/ceo/analytics/get-cage-quality.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      },
+      {
+        "depth": 1,
+        "id": "Function:src/lib/queries/ceo/analytics/get-adoption-funnel.ts:getAdoptionFunnelData",
+        "name": "getAdoptionFunnelData",
+        "filePath": "src/lib/queries/ceo/analytics/get-adoption-funnel.ts",
+        "relationType": "CALLS",
+        "confidence": 0.9
+      }
+    ]
+  }
+}

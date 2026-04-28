@@ -6,6 +6,8 @@ const env = Object.fromEntries(
   }),
 )
 
+env.PERF_DEV_SERVER_MEMORY_PROFILE ??= 'false'
+
 const playwrightBin =
   process.platform === 'win32'
     ? './node_modules/.bin/playwright.cmd'
@@ -19,6 +21,11 @@ const commandByMode: Record<string, string[]> = {
   'auth-demo-learning': [
     'test',
     'e2e/learning-flow.spec.ts',
+    '--project=chromium',
+    '--workers=1',
+  ],
+  'auth-demo-wiki': [
+    'test',
     'e2e/wiki-learning.spec.ts',
     '--project=chromium',
     '--workers=1',
@@ -27,6 +34,7 @@ const commandByMode: Record<string, string[]> = {
     'test',
     'e2e/authenticated-demo-portals.spec.ts',
     '--project=chromium',
+    '--workers=1',
   ],
   'auth-demo-3d-lab': [
     'test',
@@ -78,6 +86,7 @@ if (mode === 'prod') {
 if (
   mode === 'auth-demo' ||
   mode === 'auth-demo-learning' ||
+  mode === 'auth-demo-wiki' ||
   mode === 'auth-demo-portals' ||
   mode === 'auth-demo-3d-lab' ||
   mode === 'auth-demo-restricted' ||
@@ -87,10 +96,15 @@ if (
   mode === 'auth-demo-ceo-portal'
 ) {
   env.PLAYWRIGHT_DEMO_AUTH = 'true'
+  env.NEXT_PUBLIC_ENABLE_DEMO_MODE = 'true'
 }
 
 if (mode === 'auth-demo-learning') {
   env.PLAYWRIGHT_PORT = '3218'
+}
+
+if (mode === 'auth-demo-wiki') {
+  env.PLAYWRIGHT_PORT = '3225'
 }
 
 if (mode === 'auth-demo-restricted') {
@@ -101,18 +115,26 @@ if (mode === 'auth-demo-restricted') {
 
 if (mode === 'auth-demo-admin-content-admin') {
   env.PLAYWRIGHT_DEMO_ROLE = 'content_admin'
+  env.PLAYWRIGHT_DEMO_EMAIL = 'content-admin@example.com'
+  env.PLAYWRIGHT_PORT ??= '3221'
 }
 
 if (mode === 'auth-demo-admin-sme-reviewer') {
   env.PLAYWRIGHT_DEMO_ROLE = 'sme_reviewer'
+  env.PLAYWRIGHT_DEMO_EMAIL = 'sme-reviewer@example.com'
+  env.PLAYWRIGHT_PORT ??= '3222'
 }
 
 if (mode === 'auth-demo-admin-developer') {
   env.PLAYWRIGHT_DEMO_ROLE = 'developer'
+  env.PLAYWRIGHT_DEMO_EMAIL = 'developer@example.com'
+  env.PLAYWRIGHT_PORT ??= '3223'
 }
 
 if (mode === 'auth-demo-ceo-portal') {
   env.PLAYWRIGHT_DEMO_ROLE = 'ceo'
+  env.PLAYWRIGHT_DEMO_EMAIL = 'ceo@example.com'
+  env.PLAYWRIGHT_PORT ??= '3224'
 }
 
 const testRun = Bun.spawn([playwrightBin, ...args], {

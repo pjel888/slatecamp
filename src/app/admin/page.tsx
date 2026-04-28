@@ -3,6 +3,8 @@ import Link from 'next/link'
 import { ROUTES } from '@/lib/routes'
 import { Plus, FileText, UploadSimple, ArrowRight, Warning, ClipboardText, GitBranch, SquaresFour } from '@phosphor-icons/react/dist/ssr'
 import { getAdminDashboardData, getContentBySubject, getCriticalCoverageGap, getNeedsAttentionData } from '@/lib/actions/admin/dashboard'
+import { getUserRole } from '@/lib/admin/roles'
+import { hasPermission } from '@/lib/entitlements/policy'
 import { formatRelativeTime } from '@/lib/utils/format-time'
 import { SectionHeader } from '@/components/shared/section-header'
 import { StatCard } from '@/components/shared/stat-card'
@@ -15,6 +17,7 @@ import { DashboardMetricCard } from '@/components/shared/dashboard-metric-card'
 import { SubjectDistributionBar } from '@/components/shared/subject-distribution-bar'
 
 export const metadata: Metadata = { title: 'Dashboard — SlateCamp Admin' }
+export const dynamic = 'force-dynamic'
 
 /* ------------------------------------------------------------------ */
 /*  Actor initials helper                                               */
@@ -26,42 +29,48 @@ const getInitials = (actorId: string): string => actorId.slice(0, 2).toUpperCase
 /*  Quick actions config                                               */
 /* ------------------------------------------------------------------ */
 
-const quickActions = [
+const ALL_QUICK_ACTIONS = [
   {
     icon: <Plus size={16} className="text-muted-foreground" />,
     title: 'Create Question',
     subtitle: 'Add a new question to the bank',
     href: '/admin/knowledge/questions/new',
+    permission: 'admin.content.create' as const,
   },
   {
     icon: <FileText size={16} className="text-muted-foreground" />,
     title: 'Create Article',
     subtitle: 'Write a new wiki article',
     href: '/admin/knowledge/new',
+    permission: 'admin.content.create' as const,
   },
   {
     icon: <SquaresFour size={16} className="text-muted-foreground" />,
     title: 'Knowledge Browser',
     subtitle: 'Manage existing content',
     href: '/admin/knowledge',
+    permission: 'admin.content.view' as const,
   },
   {
     icon: <UploadSimple size={16} className="text-muted-foreground" />,
     title: 'Import Content',
     subtitle: 'Bulk import from spreadsheet',
     href: '/admin/knowledge/import',
+    permission: 'admin.content.import' as const,
   },
   {
     icon: <ClipboardText size={16} className="text-muted-foreground" />,
     title: 'Review Queue',
     subtitle: 'Items awaiting review',
     href: '/admin/reviews',
+    permission: 'admin.reviews.view' as const,
   },
   {
     icon: <GitBranch size={16} className="text-muted-foreground" />,
     title: 'Taxonomy Editor',
     subtitle: 'Manage content taxonomy',
     href: '/admin/taxonomy',
+    permission: 'admin.taxonomy.manage' as const,
   },
 ]
 
@@ -70,6 +79,11 @@ const quickActions = [
 /* ------------------------------------------------------------------ */
 
 const AdminDashboardPage = async () => {
+  const role = await getUserRole()
+  const quickActions = ALL_QUICK_ACTIONS.filter((action) =>
+    role ? hasPermission(role, action.permission) : false,
+  )
+
   const [data, subjectCounts, coverageGap, attentionData] = await Promise.all([
     getAdminDashboardData(),
     getContentBySubject(),

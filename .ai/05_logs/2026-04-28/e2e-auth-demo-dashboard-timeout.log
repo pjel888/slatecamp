@@ -1,0 +1,26 @@
+Command: bun run test:e2e:auth-demo
+Working directory: /Users/philiplewis/slatecamp
+Start: 2026-04-28T12:04:14+08:00
+$ bun scripts/playwright-run.ts auth-demo
+[2m[WebServer] [22m(node:25974) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:25989) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 7 tests using 1 worker
+
+(node:26229) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:26229) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [chromium] › e2e/authenticated-demo.spec.ts:14:7 › demo-authenticated first-run flows › dashboard renders the authenticated demo shell (17.9s)
+  ✓  2 [chromium] › e2e/authenticated-demo.spec.ts:38:7 › demo-authenticated first-run flows › settings stays reachable as the first-run account recovery surface (4.2s)
+  ✓  3 [chromium] › e2e/authenticated-demo.spec.ts:59:7 › demo-authenticated first-run flows › authenticated demo onboarding resolves into the post-onboarding dashboard path (2.6s)
+  ✓  4 [chromium] › e2e/authenticated-demo.spec.ts:71:9 › demo-authenticated first-run flows › authenticated demo auth entry /login resolves into dashboard (2.5s)
+  ✓  5 [chromium] › e2e/authenticated-demo.spec.ts:71:9 › demo-authenticated first-run flows › authenticated demo auth entry /register resolves into dashboard (2.4s)
+  ✓  6 [chromium] › e2e/authenticated-demo.spec.ts:79:7 › demo-authenticated first-run flows › authenticated demo admin login emits a dashboard redirect response (1.4s)
+  ✓  7 [chromium] › e2e/authenticated-demo.spec.ts:91:7 › demo-authenticated first-run flows › demo callback normalizes unsafe and legacy next paths (3.1s)
+
+  7 passed (43.4s)
+End: 2026-04-28T12:04:59+08:00
+Exit code: 0

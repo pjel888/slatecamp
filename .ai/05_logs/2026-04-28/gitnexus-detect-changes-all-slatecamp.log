@@ -1,0 +1,33 @@
+Changes: 79 files, 198 symbols
+Affected processes: 61
+Risk level: critical
+
+Changed symbols:
+  undefined GitNexus — Code Intelligence → AGENTS.md
+  undefined GitNexus — Code Intelligence → CLAUDE.md
+  undefined location → e2e/admin-permissions-content-admin.spec.ts
+  undefined expectDashboardRedirect → e2e/admin-permissions-content-admin.spec.ts
+  undefined location → e2e/authenticated-demo-restricted.spec.ts
+  undefined lastError → e2e/authenticated-demo-restricted.spec.ts
+  undefined attempt → e2e/authenticated-demo-restricted.spec.ts
+  undefined message → e2e/authenticated-demo-restricted.spec.ts
+  undefined expectDashboardRedirect → e2e/authenticated-demo-restricted.spec.ts
+  undefined requestWithRetry → e2e/authenticated-demo-restricted.spec.ts
+  undefined response → e2e/authenticated-demo.spec.ts
+  undefined unsafe → e2e/authenticated-demo.spec.ts
+  undefined legacy → e2e/authenticated-demo.spec.ts
+  undefined TEST_TARGET_USER_ID → e2e/ceo-portal.spec.ts
+  undefined response → e2e/learning-flow.spec.ts
+  ... and 183 more
+
+Affected execution flows:
+  • PreviewPage → DeepClone (8 steps) — changed: PreviewPage
+  • PreviewPage → Set (8 steps) — changed: PreviewPage
+  • CreateStaticClient → DeepClone (7 steps) — changed: createStaticClient
+  • CreateStaticClient → Set (7 steps) — changed: createStaticClient
+  • CreateStaticClient → CreateDemoUuid (7 steps) — changed: createStaticClient
+  • CreateStaticClient → DeepClone (7 steps) — changed: createStaticClient
+  • CreateClient → DeepClone (7 steps) — changed: createClient
+  • CreateClient → Set (7 steps) — changed: createClient
+  • CreateClient → CreateDemoUuid (7 steps) — changed: createClient
+  • CreateClient → DeepClone (7 steps) — changed: createClient

@@ -1,0 +1,55 @@
+$ bun scripts/playwright-run.ts auth-demo-admin-developer
+[2m[WebServer] [22m(node:408) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:533) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 5 tests using 1 worker
+
+(node:1653) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1653) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [chromium] › e2e/admin-permissions-developer.spec.ts:14:7 › developer permission matrix › can access developer portal (4.7s)
+  ✓  2 [chromium] › e2e/admin-permissions-developer.spec.ts:23:7 › developer permission matrix › can access admin dashboard with limited nav scope (3.7s)
+  ✓  3 [chromium] › e2e/admin-permissions-developer.spec.ts:57:7 › developer permission matrix › can access developer tools (2.5s)
+  ✓  4 [chromium] › e2e/admin-permissions-developer.spec.ts:66:7 › developer permission matrix › is denied ceo portal routes (34.9s)
+  ✘  5 [chromium] › e2e/admin-permissions-developer.spec.ts:72:7 › developer permission matrix › is denied admin pipeline and reviews (1.6m)
+
+
+  1) [chromium] › e2e/admin-permissions-developer.spec.ts:72:7 › developer permission matrix › is denied admin pipeline and reviews
+
+    [31mTest timeout of 90000ms exceeded.[39m
+
+    Error: apiRequestContext.get: Request context disposed.
+    Call log:
+    [2m  - → GET http://localhost:3223/admin/audit[22m
+    [2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.7727.15 Safari/537.36[22m
+    [2m    - accept: */*[22m
+    [2m    - accept-encoding: gzip,deflate,br[22m
+
+
+      82 |   path: string,
+      83 | ) {
+    > 84 |   const response = await request.get(path, { maxRedirects: 0, timeout: 60000 })
+         |                                  ^
+      85 |   const location = response.headers().location
+      86 |
+      87 |   if ([307, 308].includes(response.status())) {
+        at expectDashboardRedirect (/Users/philiplewis/slatecamp/e2e/admin-permissions-developer.spec.ts:84:34)
+        at /Users/philiplewis/slatecamp/e2e/admin-permissions-developer.spec.ts:76:11
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/admin-permissions-develope-f52b8--admin-pipeline-and-reviews-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/admin-permissions-develope-f52b8--admin-pipeline-and-reviews-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/admin-permissions-develope-f52b8--admin-pipeline-and-reviews-chromium/error-context.md
+
+  1 failed
+    [chromium] › e2e/admin-permissions-developer.spec.ts:72:7 › developer permission matrix › is denied admin pipeline and reviews
+  4 passed (2.5m)
+error: script "test:e2e:auth-demo:admin-developer" exited with code 1

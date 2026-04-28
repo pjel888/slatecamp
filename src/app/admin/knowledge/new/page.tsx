@@ -1,5 +1,5 @@
 import { ROUTES } from '@/lib/routes'
-import { assertPermission } from '@/lib/admin/roles'
+import { requirePermissionOrRedirect } from '@/lib/admin/roles'
 import { UnifiedContentEditor } from '@/components/admin/unified-editor'
 import { createClient } from '@/lib/supabase/server'
 import { Breadcrumb } from '@/components/ui/breadcrumb'
@@ -9,7 +9,7 @@ export const metadata = {
 }
 
 const NewContentPage = async () => {
-  await assertPermission('admin.content.create')
+  await requirePermissionOrRedirect('admin.content.create')
 
   // Fetch all taxonomy nodes for the selector
   const supabase = await createClient()

@@ -1,0 +1,25 @@
+Command: bun run test:e2e:auth-demo:admin-content-admin
+Working directory: /Users/philiplewis/slatecamp
+Start: 2026-04-28T11:41:29+08:00
+$ bun scripts/playwright-run.ts auth-demo-admin-content-admin
+[2m[WebServer] [22m(node:68393) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:68396) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 6 tests using 1 worker
+
+(node:68656) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:68656) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [chromium] › e2e/admin-permissions-content-admin.spec.ts:14:7 › content-admin permission matrix › can access admin dashboard and sees permitted nav items (6.4s)
+  ✓  2 [chromium] › e2e/admin-permissions-content-admin.spec.ts:48:7 › content-admin permission matrix › can access pipeline and publishing surfaces (33.2s)
+  ✓  3 [chromium] › e2e/admin-permissions-content-admin.spec.ts:57:7 › content-admin permission matrix › can access reviews queue (28.1s)
+  ✓  4 [chromium] › e2e/admin-permissions-content-admin.spec.ts:66:7 › content-admin permission matrix › is denied ceo portal routes (9.2s)
+  ✓  5 [chromium] › e2e/admin-permissions-content-admin.spec.ts:71:7 › content-admin permission matrix › is denied developer portal routes (11.3s)
+  ✓  6 [chromium] › e2e/admin-permissions-content-admin.spec.ts:76:7 › content-admin permission matrix › is denied audit log page (20.1s)
+
+  6 passed (2.0m)
+End: 2026-04-28T11:43:28+08:00
+Exit code: 0

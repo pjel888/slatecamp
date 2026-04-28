@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { ROUTES } from '@/lib/routes'
-import { assertPermission } from '@/lib/admin/roles'
+import { requirePermissionOrRedirect } from '@/lib/admin/roles'
 import { getAsset } from '@/lib/actions/admin/assets'
 import { AssetDetailView } from '@/components/admin/AssetDetailView'
 import { Breadcrumb } from '@/components/ui/breadcrumb'
@@ -13,7 +13,7 @@ interface PageProps {
 }
 
 export default async function AssetDetailPage({ params }: PageProps) {
-  await assertPermission('admin.assets.manage')
+  await requirePermissionOrRedirect('admin.assets.manage')
 
   const { id } = await params
   const asset = await getAsset(id)

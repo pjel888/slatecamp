@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 
-import { assertPermission } from '@/lib/admin/roles'
+import { requirePermissionOrRedirect } from '@/lib/admin/roles'
 import { getAdminUsers } from '@/lib/actions/admin/roles'
 import { SectionHeader } from '@/components/shared/section-header'
 import { AdminRoleManager } from '@/components/admin/settings/AdminRoleManager'
@@ -8,7 +8,7 @@ import { AdminRoleManager } from '@/components/admin/settings/AdminRoleManager'
 export const metadata: Metadata = { title: 'Settings - SlateCamp Admin' }
 
 const AdminSettingsPage = async () => {
-  await assertPermission('admin.users.manage')
+  await requirePermissionOrRedirect('admin.users.manage')
 
   const { rows: adminUsers, storageMode } = await getAdminUsers()
 

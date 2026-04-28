@@ -1,0 +1,75 @@
+$ bun scripts/playwright-run.ts auth-demo-admin-content-admin
+[2m[WebServer] [22m(node:95530) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:95532) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 6 tests using 1 worker
+
+(node:95637) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:95637) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [chromium] › e2e/admin-permissions-content-admin.spec.ts:14:7 › content-admin permission matrix › can access admin dashboard and sees permitted nav items (9.4s)
+(node:95707) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:95707) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  2 [chromium] › e2e/admin-permissions-content-admin.spec.ts:48:7 › content-admin permission matrix › can access pipeline and publishing surfaces (32.0s)
+  ✓  3 [chromium] › e2e/admin-permissions-content-admin.spec.ts:57:7 › content-admin permission matrix › can access reviews queue (24.1s)
+  ✓  4 [chromium] › e2e/admin-permissions-content-admin.spec.ts:66:7 › content-admin permission matrix › is denied ceo portal routes (29.2s)
+  ✓  5 [chromium] › e2e/admin-permissions-content-admin.spec.ts:72:7 › content-admin permission matrix › is denied developer portal routes (20.5s)
+[2m[WebServer] [22m⨯ Error: Forbidden: missing permission admin.audit.view
+[2m[WebServer] [22m    at assertPermission (src/lib/admin/roles.ts:96:11)
+[2m[WebServer] [22m    at async AdminAuditPage (src/app/admin/audit/page.tsx:8:3)
+[2m[WebServer] [22m  [90m94 |[0m   [36mconst[0m resolution = [36mawait[0m getResolution()
+[2m[WebServer] [22m  [90m95 |[0m   [36mif[0m (!hasPermission(resolution.normalizedRole, permission)) {
+[2m[WebServer] [22m[31m[1m>[0m [90m96 |[0m     [36mthrow[0m [36mnew[0m [33mError[0m([32m`Forbidden: missing permission [0m${permission[32m}`[0m)
+[2m[WebServer] [22m  [90m   |[0m           [31m[1m^[0m
+[2m[WebServer] [22m  [90m97 |[0m   }
+[2m[WebServer] [22m  [90m98 |[0m }
+[2m[WebServer] [22m  [90m99 |[0m {
+[2m[WebServer] [22m  digest: [32m'2872617478'[39m
+[2m[WebServer] [22m}
+  ✓  6 [chromium] › e2e/admin-permissions-content-admin.spec.ts:78:7 › content-admin permission matrix › is denied audit log page (15.9s)
+
+
+  1) [chromium] › e2e/admin-permissions-content-admin.spec.ts:14:7 › content-admin permission matrix › can access admin dashboard and sees permitted nav items
+
+    Error: browser runtime errors
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoEqual[2m([22m[32mexpected[39m[2m) // deep equality[22m
+
+    [32m- Expected  - 1[39m
+    [31m+ Received  + 3[39m
+
+    [32m- Array [][39m
+    [31m+ Array [[39m
+    [31m+   "Invalid or unexpected token",[39m
+    [31m+ ][39m
+
+       at support/authenticated-demo.ts:21
+
+      19 |       await use()
+      20 |
+    > 21 |       expect(errors, 'browser runtime errors').toEqual([])
+         |                                                ^
+      22 |     },
+      23 |     { auto: true },
+      24 |   ],
+        at Object.exports.authenticatedDemoTest._test.test.extend.assertNoAppErrors.auto (/Users/philiplewis/slatecamp/e2e/support/authenticated-demo.ts:21:48)
+
+    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/admin-permissions-content--778ce-nd-sees-permitted-nav-items-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/admin-permissions-content--778ce-nd-sees-permitted-nav-items-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/admin-permissions-content--778ce-nd-sees-permitted-nav-items-chromium/error-context.md
+
+  1 failed
+    [chromium] › e2e/admin-permissions-content-admin.spec.ts:14:7 › content-admin permission matrix › can access admin dashboard and sees permitted nav items
+  5 passed (2.3m)
+error: script "test:e2e:auth-demo:admin-content-admin" exited with code 1

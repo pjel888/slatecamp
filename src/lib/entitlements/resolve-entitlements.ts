@@ -168,6 +168,18 @@ export const evaluateFeatureAccess = (
     }
   }
 
+  if (featureKey === ENTITLEMENT_FEATURE_KEYS.ceoPortal) {
+    return {
+      featureKey,
+      allowed: entitlements.tooling.ceoPortal,
+      reason: entitlements.tooling.ceoPortal
+        ? 'allowed'
+        : 'tooling_policy_denied',
+      source: 'policy',
+      trace: [...trace, `policy:ceoPortal=${entitlements.tooling.ceoPortal}`],
+    }
+  }
+
   if (featureKey === ENTITLEMENT_FEATURE_KEYS.srsReview) {
     return {
       featureKey,

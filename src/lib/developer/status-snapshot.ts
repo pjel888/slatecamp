@@ -23,6 +23,7 @@ const normalizeComponentStatus = (status?: string | null): ServiceStatus => {
 export const getDeveloperServiceStatusSnapshot = async (): Promise<DeveloperServiceStatusSnapshot> => {
   const summaryResponse = await fetch('https://status.supabase.com/api/v2/summary.json', {
     next: { revalidate: 60 },
+    signal: AbortSignal.timeout(5000),
   }).catch(() => null)
   const summary = summaryResponse?.ok ? await summaryResponse.json() : null
 
