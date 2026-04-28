@@ -38,6 +38,26 @@ const commandByMode: Record<string, string[]> = {
     'e2e/authenticated-demo-restricted.spec.ts',
     '--project=chromium',
   ],
+  'auth-demo-admin-content-admin': [
+    'test',
+    'e2e/admin-permissions-content-admin.spec.ts',
+    '--project=chromium',
+  ],
+  'auth-demo-admin-sme-reviewer': [
+    'test',
+    'e2e/admin-permissions-sme-reviewer.spec.ts',
+    '--project=chromium',
+  ],
+  'auth-demo-admin-developer': [
+    'test',
+    'e2e/admin-permissions-developer.spec.ts',
+    '--project=chromium',
+  ],
+  'auth-demo-ceo-portal': [
+    'test',
+    'e2e/ceo-portal.spec.ts',
+    '--project=chromium',
+  ],
   headed: ['test', '--headed'],
   ui: ['test', '--ui'],
 }
