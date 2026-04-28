@@ -17,6 +17,7 @@ const PRIMARY_KEY_BY_TABLE: Record<string, string> = {
   taxonomy_tree: 'node_id',
   user_interactions: 'interaction_id',
   wiki_articles: 'article_id',
+  audit_logs: 'id',
 }
 
 const JOIN_KEY_OVERRIDES: Record<string, string[]> = {
