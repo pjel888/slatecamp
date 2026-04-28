@@ -80,7 +80,11 @@ if (
   mode === 'auth-demo-learning' ||
   mode === 'auth-demo-portals' ||
   mode === 'auth-demo-3d-lab' ||
-  mode === 'auth-demo-restricted'
+  mode === 'auth-demo-restricted' ||
+  mode === 'auth-demo-admin-content-admin' ||
+  mode === 'auth-demo-admin-sme-reviewer' ||
+  mode === 'auth-demo-admin-developer' ||
+  mode === 'auth-demo-ceo-portal'
 ) {
   env.PLAYWRIGHT_DEMO_AUTH = 'true'
 }
@@ -93,6 +97,22 @@ if (mode === 'auth-demo-restricted') {
   env.PLAYWRIGHT_DEMO_ROLE = 'member'
   env.PLAYWRIGHT_DEMO_TIER = 'free'
   env.PLAYWRIGHT_DEMO_EMAIL = 'student@example.com'
+}
+
+if (mode === 'auth-demo-admin-content-admin') {
+  env.PLAYWRIGHT_DEMO_ROLE = 'content_admin'
+}
+
+if (mode === 'auth-demo-admin-sme-reviewer') {
+  env.PLAYWRIGHT_DEMO_ROLE = 'sme_reviewer'
+}
+
+if (mode === 'auth-demo-admin-developer') {
+  env.PLAYWRIGHT_DEMO_ROLE = 'developer'
+}
+
+if (mode === 'auth-demo-ceo-portal') {
+  env.PLAYWRIGHT_DEMO_ROLE = 'ceo'
 }
 
 const testRun = Bun.spawn([playwrightBin, ...args], {
