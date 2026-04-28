@@ -70,11 +70,8 @@ test.describe('ceo control plane and audit logging', () => {
     await page.locator('input#userId').fill(TEST_TARGET_USER_ID)
 
     // Open role select dropdown and choose "Developer"
-    await page.locator('[data-radix-popper-content-wrapper] + button, button:has-text("Select role")').first().click().catch(() => {
-      // Radix Select trigger may not have a stable selector; try clicking the trigger by proximity
-      return page.getByRole('combobox').click()
-    })
-    await page.getByText('Developer', { exact: false }).click()
+    await page.getByRole('combobox').click()
+    await page.locator('[role="option"]:has-text("Developer")').click()
 
     await page.getByRole('button', { name: 'Assign Role' }).click()
 
