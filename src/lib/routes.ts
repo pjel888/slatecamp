@@ -78,21 +78,12 @@ export const ROUTES = {
     session: (mode: string, sessionId: string) => `/quiz/${mode}/session/${sessionId}` as const,
     results: (mode: string, sessionId: string) => `/quiz/${mode}/session/${sessionId}/results` as const,
     review: (mode: string, sessionId: string) => `/quiz/${mode}/session/${sessionId}/review` as const,
-    // Legacy mapping
-    legacy: {
-      setup: (mode: string) => `/quiz/${mode}/setup` as const,
-      session: (sessionId: string, mode: string = 'camp') => `/quiz/${mode}/session/${sessionId}` as const,
-      results: (sessionId: string, mode: string = 'camp') => `/quiz/${mode}/session/${sessionId}/results` as const,
-      simSetup: '/quiz/full_exam/setup',
-      simResults: (sessionId: string) => `/quiz/full_exam/session/${sessionId}/results` as const,
-    }
   },
 
   // ── 3D Lab ───────────────────────────────────
   lab: {
     root: '/dashboard/3d-lab',
     module: (moduleId: string) => `/dashboard/3d-lab/${moduleId}` as const,
-    test: '/test-3d',
   },
 
   // ── Wiki ─────────────────────────────────────
@@ -157,18 +148,6 @@ export const ROUTES = {
     statusDatabase: '/developer/status/database',
     statusInfrastructure: '/developer/status/infrastructure',
   },
-
-  // ── Legacy Redirects ─────────────────────────
-  legacy: {
-    adminWiki: '/admin/wiki',
-    dashboardHeatmap: '/dashboard/heatmap',
-    dashboardSettingsBilling: '/dashboard/settings/billing',
-    dashboardSettingsDeveloper: '/dashboard/settings/developer',
-    dashboardTrail: '/dashboard/trail',
-    dashboardTrails: '/dashboard/trails',
-    settings: '/settings',
-  },
-
   // ── API Routes ───────────────────────────────
   api: {
     analytics: {

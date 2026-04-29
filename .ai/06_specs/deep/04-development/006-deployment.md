@@ -60,7 +60,7 @@ Configured in `vercel.json`:
 {
   "crons": [
     {
-      "path": "/api/cron/blindspot-scan",
+      "path": "/api/cron/focus-review-scan",
       "schedule": "0 16 * * *"
     },
     {
@@ -73,7 +73,7 @@ Configured in `vercel.json`:
 
 ### Blindspot Scan
 
-- **Path:** `/api/cron/blindspot-scan`
+- **Path:** `/api/cron/focus-review-scan`
 - **Schedule:** Daily at 4:00 PM UTC
 - **Purpose:** Refresh the blindspot queue — identifies 3 weakest mastered nodes + unexplored grey nodes
 - **Auth:** `Authorization: Bearer ${CRON_SECRET}`
@@ -147,3 +147,8 @@ This is a known issue with the current build pipeline. The build fails after com
 
 *Source: `vercel.json`, `CLAUDE.md`, `next.config.ts`*
 
+
+
+## 2026-04-29 audit note
+
+This document may include historical product/reference language. Current codebase route truth for cron jobs is `/api/cron/focus-review-scan` and `/api/cron/compute-signals` from `src/app/api/cron/**/route.ts` and `vercel.json`.

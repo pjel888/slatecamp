@@ -64,14 +64,19 @@ Boundary summary:
 
 Key files:
 - `src/lib/payments/provider.ts`
-- `src/lib/lemonsqueezy/config.ts`
 - `src/lib/payrex/config.ts`
 - `src/app/api/payments/checkout/route.ts`
-- `src/app/api/webhooks/lemonsqueezy/route.ts`
 - `src/app/api/webhooks/payrex/route.ts`
+- `src/lib/ai/provider.ts`
+- `src/app/api/ai/*/route.ts`
+
+Current launch stance:
+- Payments are deferred for the current payment-free launch; keep `NEXT_PUBLIC_PAYMENTS_ENABLED=false`.
+- LemonSqueezy runtime files and dependency were removed in Plan B cleanup; only legacy schema/type columns remain.
+- Live AI provider behavior is deferred; launch-facing quiz AI helper UI is disabled.
 
 Risk:
-- payment behavior depends on env flags, provider selection, and webhook integrity
+- future payment/AI behavior depends on env flags, provider selection, webhook integrity, and live provider contracts
 
 ## Runtime-truth vs mock-truth
 

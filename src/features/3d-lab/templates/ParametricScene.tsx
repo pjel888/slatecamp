@@ -73,8 +73,8 @@ export default function ParametricScene({ config }: ParametricSceneProps) {
           sceneConfig={{
             cameraPosition: cameraPos,
             cameraFov: cameraFov,
-            minDistance: 1,
-            maxDistance: 25,
+            minDistance: 0.01,
+            maxDistance: Infinity,
             showGround: false,
           }}
         >

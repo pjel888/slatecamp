@@ -52,7 +52,7 @@ export const dbClusters = [
     variant: 'danger' as const,
     tables: [
       { name: 'profiles',            desc: 'full_name, discipline_id, account_mode',        access: 'Own-user' },
-      { name: 'user_subscriptions',  desc: 'tier, status, lemonsqueezy IDs',                      access: 'Own-user + admin' },
+      { name: 'user_subscriptions',  desc: 'tier, status, PayRex IDs; legacy LemonSqueezy columns remain in schema', access: 'Own-user + admin' },
       { name: 'organizations',       desc: 'name, type, max_seats',                         access: 'Org members' },
       { name: 'user_roles',          desc: 'role enum',                                     access: 'Admin only' },
       { name: 'audit_logs',          desc: 'actor_id, event_type, content_snapshot',        access: 'Super admin' },
@@ -155,14 +155,11 @@ export const envVars = {
     'NEXT_PUBLIC_SUPABASE_URL',
     'NEXT_PUBLIC_SUPABASE_ANON_KEY',
     'NEXT_PUBLIC_APP_URL',
-    'NEXT_PUBLIC_LEMONSQUEEZY_PUBLISHABLE_KEY',
   ],
   server: [
     'SUPABASE_SERVICE_ROLE_KEY',
-    'ANTHROPIC_API_KEY',
-    'LEMONSQUEEZY_API_KEY',
-    'LEMONSQUEEZY_WEBHOOK_SECRET',
-    'PAYREX_SECRET_KEY',
+    'PAYREX_SECRET_KEY (deferred payment)',
+    'ANTHROPIC_API_KEY (deferred AI)',
   ],
 }
 

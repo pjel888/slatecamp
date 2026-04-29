@@ -62,6 +62,14 @@ export const useViewportShortcuts = () => {
           break
 
         // Camera navigation shortcuts
+        case 'o':
+          e.preventDefault()
+          store.setNavMode('orbit')
+          break
+        case 'h':
+          e.preventDefault()
+          store.setNavMode('pan')
+          break
         case '1':
           e.preventDefault()
           store.snapToPreset('front', 'shortcut')

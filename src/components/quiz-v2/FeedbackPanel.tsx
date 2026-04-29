@@ -19,6 +19,7 @@ const SocraticExplorer = lazy(() =>
 )
 
 const SOCRATIC_MODES: QuizMode[] = ['camp', 'focus_review', 'subject', 'chill']
+const LIVE_AI_HELPERS_ENABLED = false
 
 const ERROR_HEADING_MAP: Record<Exclude<ErrorCategory, 'lucky_guess'>, string> = {
   knowledge_gap: "Here's what to know",
@@ -59,8 +60,10 @@ export const FeedbackPanel = ({
   const totalQuestions = useQuizStore((s) => s.totalQuestions)
 
   const showSocraticButton =
+    LIVE_AI_HELPERS_ENABLED &&
     !feedback.isCorrect && mode != null && SOCRATIC_MODES.includes(mode)
   const showMnemonic =
+    LIVE_AI_HELPERS_ENABLED &&
     !feedback.isCorrect && failCount >= 2 && feedback.rationale != null
   const isLastQuestion = totalQuestions > 0 && currentIndex === totalQuestions - 1
   const nextActionLabel = isLastQuestion ? 'See results' : 'Next question'

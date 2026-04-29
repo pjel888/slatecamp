@@ -42,7 +42,28 @@ type Measurement = {
   notes: string[]
 }
 
+type CameraRuntimeSnapshot = {
+  ready: true
+  projection: 'perspective' | 'orthographic' | 'unknown'
+  projectionMode: 'perspective' | 'orthographic'
+  selectedCameraPreset: string | null
+  manualOrbit: boolean
+  navMode: 'orbit' | 'pan' | 'look'
+  activeInteraction: 'idle' | 'orbiting' | 'panning'
+  commandId: number
+  commandPreset: string | null
+  position: [number, number, number]
+  target: [number, number, number] | null
+  distance: number | null
+  viewHeight: number | null
+  fov: number | null
+  zoom: number | null
+  near: number | null
+  far: number | null
+}
+
 const measurements: Measurement[] = []
+const cameraSettleMs = Number(process.env.THREED_CAMERA_SETTLE_MS ?? 850)
 
 const parseModuleIds = () => {
   const registryDir = path.join(repoRoot, 'src/features/3d-lab/config/registry')
@@ -304,6 +325,88 @@ async function newMeasuredPage(browser: Browser, options: BrowserContextOptions 
   return { context, page }
 }
 
+async function readCameraSnapshot(page: Page) {
+  await page.waitForFunction(
+    () => typeof (window as unknown as { __slatecamp3dLabCamera?: { read?: unknown } }).__slatecamp3dLabCamera?.read === 'function',
+    undefined,
+    { timeout: 12_000 },
+  )
+
+  return page.evaluate(() =>
+    (window as unknown as {
+      __slatecamp3dLabCamera: { read: () => CameraRuntimeSnapshot }
+    }).__slatecamp3dLabCamera.read(),
+  )
+}
+
+async function waitForCameraSettle(page: Page) {
+  await page.waitForTimeout(cameraSettleMs)
+  return readCameraSnapshot(page)
+}
+
+async function waitForCameraProjection(page: Page, projection: CameraRuntimeSnapshot['projection']) {
+  await page.waitForFunction(
+    (expectedProjection) =>
+      (window as unknown as {
+        __slatecamp3dLabCamera?: { read?: () => CameraRuntimeSnapshot }
+      }).__slatecamp3dLabCamera?.read?.().projection === expectedProjection,
+    projection,
+    { timeout: 12_000 },
+  )
+  return waitForCameraSettle(page)
+}
+
+const vectorDistance = (a: [number, number, number] | null, b: [number, number, number] | null) => {
+  if (!a || !b) return Infinity
+  return Math.hypot(a[0] - b[0], a[1] - b[1], a[2] - b[2])
+}
+
+const cameraDirection = (snapshot: CameraRuntimeSnapshot): [number, number, number] | null => {
+  if (!snapshot.target) return null
+  return [
+    snapshot.position[0] - snapshot.target[0],
+    snapshot.position[1] - snapshot.target[1],
+    snapshot.position[2] - snapshot.target[2],
+  ]
+}
+
+const directionCosine = (a: [number, number, number] | null, b: [number, number, number]) => {
+  if (!a) return -1
+  const aLength = Math.hypot(...a)
+  const bLength = Math.hypot(...b)
+  if (aLength <= 0.0001 || bLength <= 0.0001) return -1
+  return (a[0] * b[0] + a[1] * b[1] + a[2] * b[2]) / (aLength * bLength)
+}
+
+function expectFiniteCameraSnapshot(snapshot: CameraRuntimeSnapshot) {
+  expect(snapshot.position.every(Number.isFinite)).toBeTruthy()
+  expect(snapshot.target?.every(Number.isFinite) ?? false).toBeTruthy()
+  expect(snapshot.distance ?? NaN).toBeGreaterThan(0)
+  expect(snapshot.viewHeight ?? NaN).toBeGreaterThan(0)
+  expect(snapshot.far ?? NaN).toBeGreaterThan(Math.max(100, snapshot.distance ?? 0))
+  expect(snapshot.near ?? NaN).toBeLessThan(1)
+}
+
+function expectFramingClose(before: CameraRuntimeSnapshot, after: CameraRuntimeSnapshot, toleranceRatio = 0.35) {
+  expectFiniteCameraSnapshot(before)
+  expectFiniteCameraSnapshot(after)
+  const beforeHeight = before.viewHeight ?? NaN
+  const afterHeight = after.viewHeight ?? NaN
+  const ratio = afterHeight / beforeHeight
+  expect(ratio).toBeGreaterThan(1 - toleranceRatio)
+  expect(ratio).toBeLessThan(1 + toleranceRatio)
+}
+
+function expectDirectionCloseTo(snapshot: CameraRuntimeSnapshot, direction: [number, number, number], minCosine = 0.96) {
+  expect(directionCosine(cameraDirection(snapshot), direction)).toBeGreaterThan(minCosine)
+}
+
+function expectSameViewDirection(before: CameraRuntimeSnapshot, after: CameraRuntimeSnapshot, minCosine = 0.98) {
+  const beforeDirection = cameraDirection(before)
+  if (!beforeDirection) throw new Error('Camera snapshot is missing a target')
+  expect(directionCosine(cameraDirection(after), beforeDirection)).toBeGreaterThan(minCosine)
+}
+
 const writeJson = (fileName: string, payload: unknown) => {
   fs.writeFileSync(path.join(resultsDir, fileName), `${JSON.stringify(payload, null, 2)}\n`)
 }
@@ -473,6 +576,9 @@ test.describe.serial('3D Lab production hardening gates', () => {
         for (const id of ['orbit', 'pan', 'top', 'front', 'left', 'right', 'rear', 'iso-ne', 'iso-nw', 'iso-se', 'iso-sw', 'persp', 'iso', 'zoom-in', 'zoom-out', 'zoom-fit', 'reset']) {
           await expect(toolbarOverlay.getByTestId(`3dlab-control-${id}`)).toBeVisible()
         }
+        await expect(toolbarOverlay.getByTestId('3dlab-control-zoom-slider')).toBeVisible()
+        await expect(toolbarOverlay.getByTestId('3dlab-control-iso-se')).toHaveAttribute('aria-pressed', 'true')
+        await expect(toolbarOverlay.getByTestId('3dlab-control-persp')).toHaveAttribute('aria-pressed', 'true')
 
         const clickToolbarItem = async (testId: string) => {
           await toolbarOverlay.getByTestId(testId).evaluate((element) => {
@@ -480,14 +586,103 @@ test.describe.serial('3D Lab production hardening gates', () => {
           })
         }
 
+        const initialCamera = await waitForCameraSettle(page)
+        expect(initialCamera.projection).toBe('perspective')
+        expect(initialCamera.projectionMode).toBe('perspective')
+        expect(initialCamera.selectedCameraPreset).toBe('iso-se')
+        expectDirectionCloseTo(initialCamera, [1, 0.75, -1])
+        expectFiniteCameraSnapshot(initialCamera)
+
+        await clickToolbarItem('3dlab-control-iso')
+        const orthographicCamera = await waitForCameraProjection(page, 'orthographic')
+        await expect(toolbarOverlay.getByTestId('3dlab-control-iso')).toHaveAttribute('aria-pressed', 'true')
+        await expect(toolbarOverlay.getByTestId('3dlab-control-iso-se')).toHaveAttribute('aria-pressed', 'true')
+        expect(orthographicCamera.projectionMode).toBe('orthographic')
+        expect(orthographicCamera.selectedCameraPreset).toBe('iso-se')
+        expectFramingClose(initialCamera, orthographicCamera, 0.25)
+        expectSameViewDirection(initialCamera, orthographicCamera)
+        expect(vectorDistance(initialCamera.target, orthographicCamera.target)).toBeLessThan(0.5)
+
+        await clickToolbarItem('3dlab-control-persp')
+        const perspectiveCamera = await waitForCameraProjection(page, 'perspective')
+        await expect(toolbarOverlay.getByTestId('3dlab-control-persp')).toHaveAttribute('aria-pressed', 'true')
+        await expect(toolbarOverlay.getByTestId('3dlab-control-iso-se')).toHaveAttribute('aria-pressed', 'true')
+        expect(perspectiveCamera.projectionMode).toBe('perspective')
+        expect(perspectiveCamera.selectedCameraPreset).toBe('iso-se')
+        expectFramingClose(orthographicCamera, perspectiveCamera, 0.25)
+        expectSameViewDirection(orthographicCamera, perspectiveCamera)
+
         await clickToolbarItem('3dlab-control-pan')
         await expect(toolbarOverlay.getByTestId('3dlab-control-pan')).toHaveAttribute('aria-pressed', 'true')
         await clickToolbarItem('3dlab-control-orbit')
         await expect(toolbarOverlay.getByTestId('3dlab-control-orbit')).toHaveAttribute('aria-pressed', 'true')
-        await clickToolbarItem('3dlab-control-top')
-        await expect(toolbarOverlay.getByTestId('3dlab-control-top')).toHaveAttribute('aria-pressed', 'true')
+
+        const zoomedCamera = await (async () => {
+          await clickToolbarItem('3dlab-control-zoom-in')
+          await clickToolbarItem('3dlab-control-zoom-in')
+          return waitForCameraSettle(page)
+        })()
+
+        await clickToolbarItem('3dlab-control-iso-ne')
+        const namedPerspectiveCamera = await waitForCameraSettle(page)
+        await expect(toolbarOverlay.getByTestId('3dlab-control-persp')).toHaveAttribute('aria-pressed', 'true')
+        await expect(toolbarOverlay.getByTestId('3dlab-control-iso-ne')).toHaveAttribute('aria-pressed', 'true')
+        expect(namedPerspectiveCamera.projection).toBe('perspective')
+        expect(namedPerspectiveCamera.projectionMode).toBe('perspective')
+        expect(namedPerspectiveCamera.selectedCameraPreset).toBe('iso-ne')
+        expectFramingClose(zoomedCamera, namedPerspectiveCamera, 0.25)
+        expectDirectionCloseTo(namedPerspectiveCamera, [1, 0.75, 1])
+
+        await clickToolbarItem('3dlab-control-iso')
+        const namedOrthographicCamera = await waitForCameraProjection(page, 'orthographic')
+        await expect(toolbarOverlay.getByTestId('3dlab-control-iso')).toHaveAttribute('aria-pressed', 'true')
+        await expect(toolbarOverlay.getByTestId('3dlab-control-iso-ne')).toHaveAttribute('aria-pressed', 'true')
+        expect(namedOrthographicCamera.selectedCameraPreset).toBe('iso-ne')
+
+        await clickToolbarItem('3dlab-control-iso-sw')
+        const switchedOrthographicCamera = await waitForCameraSettle(page)
+        await expect(toolbarOverlay.getByTestId('3dlab-control-iso')).toHaveAttribute('aria-pressed', 'true')
+        await expect(toolbarOverlay.getByTestId('3dlab-control-iso-sw')).toHaveAttribute('aria-pressed', 'true')
+        expect(switchedOrthographicCamera.projection).toBe('orthographic')
+        expect(switchedOrthographicCamera.projectionMode).toBe('orthographic')
+        expect(switchedOrthographicCamera.selectedCameraPreset).toBe('iso-sw')
+        expectFramingClose(namedOrthographicCamera, switchedOrthographicCamera, 0.25)
+        expectDirectionCloseTo(switchedOrthographicCamera, [-1, 0.75, -1])
+
+        for (let i = 0; i < 4; i += 1) await clickToolbarItem('3dlab-control-zoom-in')
+        await clickToolbarItem('3dlab-control-pan')
+        const beforePanCamera = await waitForCameraSettle(page)
+        await expect(toolbarOverlay.getByTestId('3dlab-control-pan')).toHaveAttribute('aria-pressed', 'true')
+
+        const canvas = page.locator('canvas').first()
+        await expect(canvas).toBeVisible()
+        const box = await canvas.boundingBox()
+        if (!box) throw new Error('3D Lab canvas has no bounding box for pan regression')
+        const viewport = page.viewportSize()
+        const startX = box.x + box.width / 2
+        const startY = box.y + box.height / 2
+        const endX = Math.min((viewport?.width ?? box.x + box.width) - 4, box.x + box.width + 60)
+        const endY = Math.min((viewport?.height ?? box.y + box.height) - 4, box.y + box.height / 2 + 120)
+        await page.mouse.move(startX, startY)
+        await page.mouse.down({ button: 'left' })
+        await page.mouse.move(endX, endY, { steps: 10 })
+        await page.mouse.up({ button: 'left' })
+
+        const afterPanCamera = await waitForCameraSettle(page)
+        expect(afterPanCamera.activeInteraction).toBe('idle')
+        expect(afterPanCamera.projection).toBe('orthographic')
+        expect(vectorDistance(beforePanCamera.target, afterPanCamera.target)).toBeGreaterThan(0.01)
+        expect(vectorDistance(beforePanCamera.position, afterPanCamera.position)).toBeGreaterThan(0.01)
+        expect(afterPanCamera.distance ?? NaN).toBeGreaterThan(0)
+        expect(afterPanCamera.distance ?? NaN).toBeLessThan(Math.max(100, (beforePanCamera.distance ?? 1) * 5))
+
         await clickToolbarItem('3dlab-control-reset')
         await expect(toolbarOverlay.getByTestId('3dlab-control-persp')).toHaveAttribute('aria-pressed', 'true')
+        await expect(toolbarOverlay.getByTestId('3dlab-control-iso-se')).toHaveAttribute('aria-pressed', 'true')
+        const resetCamera = await waitForCameraProjection(page, 'perspective')
+        expect(resetCamera.selectedCameraPreset).toBe('iso-se')
+        expectDirectionCloseTo(resetCamera, [1, 0.75, -1])
+        expectFiniteCameraSnapshot(resetCamera)
 
         for (const id of ['grid', 'dimensions', 'xray', 'layers', 'screenshot', 'fullscreen']) {
           await expect(toolbarOverlay.getByTestId(`3dlab-toolbar-${id}`)).toBeVisible()

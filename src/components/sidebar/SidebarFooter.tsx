@@ -8,6 +8,7 @@ import {
   TooltipProvider,
 } from '@/components/ui/tooltip'
 import { cn } from '@/lib/utils'
+import { SIDEBAR_PADDING } from './types'
 
 // ---------------------------------------------------------------------------
 // SidebarFooter — HTML v4 anatomy
@@ -40,14 +41,12 @@ export const SidebarFooter = ({
 
   const profileRow = (
     <div
-      role="button"
-      tabIndex={0}
+      aria-label={userDisplay.name}
       data-t={userDisplay.name}
       className={cn(
-        'flex h-[30px] w-full items-center rounded-md cursor-pointer',
+        'grid h-[30px] w-full grid-cols-[40px_minmax(0,1fr)] items-center gap-1 overflow-hidden rounded-md',
         'transition-colors duration-[120ms] ease-out',
         'hover:bg-gray-100 dark:hover:bg-gray-800',
-        'outline-none focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-camp-cobalt',
       )}
     >
       {/* Avatar container: 40x30px */}
@@ -79,8 +78,8 @@ export const SidebarFooter = ({
       <div
         className={cn(
           'flex flex-col justify-center min-w-0 overflow-hidden',
-          'transition-opacity duration-[180ms] ease-out',
-          expanded ? 'opacity-100' : 'opacity-0 w-0',
+          'transition-[opacity,transform] duration-[180ms] ease-out motion-reduce:transition-none motion-reduce:transform-none',
+          expanded ? 'translate-x-0 opacity-100' : 'pointer-events-none translate-x-1 opacity-0',
         )}
       >
         {/* Name + Pro badge */}
@@ -114,8 +113,9 @@ export const SidebarFooter = ({
       className={cn(
         'flex flex-col gap-2',
         'border-t border-gray-200 dark:border-gray-800',
-        'pt-4 pb-6 px-[6px]',
+        'pt-3 pb-5',
       )}
+      style={{ paddingInline: SIDEBAR_PADDING }}
     >
       {/* Profile row — with tooltip when collapsed */}
       {!expanded ? (
@@ -138,9 +138,9 @@ export const SidebarFooter = ({
         ref={toggleRef}
         onClick={onToggle}
         aria-expanded={expanded}
-        aria-label="Toggle sidebar"
+        aria-label={expanded ? 'Collapse sidebar' : 'Expand sidebar'}
         className={cn(
-          'flex h-[30px] w-full items-center rounded-md',
+          'grid h-[30px] w-full grid-cols-[40px_minmax(0,1fr)] items-center gap-1 overflow-hidden rounded-md',
           'transition-colors duration-[120ms] ease-out',
           'hover:bg-gray-100 dark:hover:bg-gray-800',
           'outline-none focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-camp-cobalt',
@@ -159,29 +159,33 @@ export const SidebarFooter = ({
           />
         </div>
 
-        {/* Toggle label */}
-        <span
-          className={cn(
-            'whitespace-nowrap overflow-hidden text-[11.5px] text-gray-400 dark:text-gray-500',
-            'transition-opacity duration-[180ms] ease-out',
-            expanded ? 'opacity-100' : 'opacity-0 w-0',
-          )}
-        >
-          Collapse
-        </span>
+        <span className="flex min-w-0 items-center overflow-hidden">
+          {/* Toggle label */}
+          <span
+            aria-hidden={!expanded}
+            className={cn(
+              'whitespace-nowrap overflow-hidden text-[11.5px] text-gray-400 dark:text-gray-500',
+              'transition-[opacity,transform] duration-[180ms] ease-out motion-reduce:transition-none motion-reduce:transform-none',
+              expanded ? 'translate-x-0 opacity-100' : 'pointer-events-none translate-x-1 opacity-0',
+            )}
+          >
+            {expanded ? 'Collapse' : 'Expand'}
+          </span>
 
-        {/* Shortcut badge */}
-        <span
-          className={cn(
-            'ml-auto mr-1 font-mono text-[11px] font-medium',
-            'text-gray-400 dark:text-gray-500',
-            'bg-gray-100 dark:bg-gray-800',
-            'px-1 rounded-[3px]',
-            'transition-opacity duration-[180ms] ease-out',
-            expanded ? 'opacity-100' : 'opacity-0 w-0 overflow-hidden',
-          )}
-        >
-          ⌘B
+          {/* Shortcut badge */}
+          <span
+            aria-hidden={!expanded}
+            className={cn(
+              'ml-auto mr-1 overflow-hidden font-mono text-[11px] font-medium',
+              'text-gray-400 dark:text-gray-500',
+              'bg-gray-100 dark:bg-gray-800',
+              'px-1 rounded-[3px]',
+              'transition-opacity duration-[180ms] ease-out motion-reduce:transition-none',
+              expanded ? 'opacity-100' : 'pointer-events-none opacity-0',
+            )}
+          >
+            ⌘B
+          </span>
         </span>
       </button>
     </div>

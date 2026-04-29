@@ -1,7 +1,7 @@
 import type { UserTier } from "@/types/app";
 import { FEATURE_PAYMENTS_ENABLED } from '@/lib/constants/feature-flags';
 
-export type PaymentProvider = "lemonsqueezy" | "payrex";
+export type PaymentProvider = "payrex";
 export type PaymentUnavailableCode =
   | "PAYMENTS_DISABLED"
   | "PAYMENT_PROVIDER_UNSUPPORTED"
@@ -33,16 +33,9 @@ export interface CheckoutResult {
   provider: PaymentProvider;
 }
 
-type LemonSqueezyCheckoutClient = {
-  createCheckout(args: unknown): Promise<{
-    url?: string | null;
-    id?: string | null;
-  }>;
-};
-
 export function getPaymentProvider(): PaymentProvider {
   const provider = (process.env.PAYMENT_PROVIDER ?? "payrex").toLowerCase();
-  if (provider === "lemonsqueezy" || provider === "payrex") return provider;
+  if (provider === "payrex") return provider;
   throw new PaymentUnavailableError(
     `Unsupported payment provider "${provider}".`,
     "PAYMENT_PROVIDER_UNSUPPORTED",
@@ -67,55 +60,9 @@ export async function createCheckout(
     );
   }
 
-  const provider = getPaymentProvider();
+  getPaymentProvider();
 
-  if (provider === "lemonsqueezy") {
-    return createLemonSqueezyCheckout(params);
-  }
   return createPayRexCheckout(params);
-}
-
-async function createLemonSqueezyCheckout(
-  params: CreateCheckoutParams
-): Promise<CheckoutResult> {
-  const { getLemonSqueezy, LEMONSQUEEZY_PLANS } = await import("@/lib/lemonsqueezy/config");
-  const ls = getLemonSqueezy() as LemonSqueezyCheckoutClient | null;
-  if (!ls) {
-    throw new PaymentUnavailableError(
-      "LemonSqueezy is not configured.",
-      "PAYMENT_PROVIDER_UNAVAILABLE",
-    );
-  }
-
-  const plan = LEMONSQUEEZY_PLANS[params.tier];
-  if (!plan.variantId) {
-    throw new PaymentUnavailableError(
-      `LemonSqueezy variant missing for ${params.tier}.`,
-      "PAYMENT_PLAN_UNAVAILABLE",
-    );
-  }
-
-  // Note: LemonSqueezy checkout creation differs from LemonSqueezy
-  // This is a placeholder for actual LS checkout implementation
-  const checkout = await ls.createCheckout({
-    variantId: plan.variantId,
-    attributes: {
-      user_email: params.email,
-      custom_data: { userId: params.userId, tier: params.tier },
-      checkout_data: {
-        email: params.email,
-      },
-    },
-  });
-
-  if (!checkout?.url || !checkout?.id) {
-    throw new PaymentUnavailableError(
-      "LemonSqueezy did not return a checkout URL.",
-      "PAYMENT_CHECKOUT_UNAVAILABLE",
-    );
-  }
-
-  return { url: checkout.url, id: checkout.id, provider: "lemonsqueezy" };
 }
 
 async function createPayRexCheckout(

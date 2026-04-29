@@ -12,7 +12,7 @@
 
 **Top local directories:** none
 
-**Top local files:** `accordion.stories.tsx`, `accordion.tsx`, `alert-dialog.tsx`, `alert.stories.tsx`, `alert.tsx`, `avatar.stories.tsx`, `avatar.tsx`, `badge.stories.tsx`, `badge.tsx`, `bottom-navigation.stories.tsx`
+**Top local files:** `accordion.stories.tsx`, `accordion.tsx`, `alert-dialog.tsx`, `alert.stories.tsx`, `alert.tsx`, `avatar.stories.tsx`, `avatar.tsx`, `badge.stories.tsx`, `badge.tsx`, `button.tsx`
 
 ### What agents must do here
 - Inspect the consuming routes/features before changing shared UI behavior in this subtree.

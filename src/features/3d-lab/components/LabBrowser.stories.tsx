@@ -26,14 +26,3 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 export const DashboardCatalog: Story = {}
-
-export const TestHarnessPath: Story = {
-  args: {
-    basePath: '/test-3d',
-  },
-  parameters: {
-    appShell: {
-      pathname: '/test-3d',
-    },
-  },
-}

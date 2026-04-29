@@ -10,7 +10,7 @@
 
 **Current snapshot:** 54 directories and 524 files beneath this scope (excluding this `AGENTS.md`).
 
-**Top local directories:** `_config/`, `_constants/`, `_stores/`, `_types/`, `components/`, `config/`, `constants/`, `DevControlsModule/`, `hooks/`, `scenes/`
+**Top local directories:** `components/`, `config/`, `constants/`, `DevControlsModule/`, `hooks/`, `scenes/`, `stores/`, `templates/`, `types/`, `utils/`
 
 **Top local files:** `gate-copy.test.ts`, `gate-copy.ts`
 

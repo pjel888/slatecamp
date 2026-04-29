@@ -11,7 +11,7 @@ import {
   getRrowBhl,
   getBaseSetbacks,
   type FirewallSide,
-} from '../_constants/nbcp'
+} from '../constants/nbcp'
 
 // ─── I/O Types ────────────────────────────────────────────────────────────────
 

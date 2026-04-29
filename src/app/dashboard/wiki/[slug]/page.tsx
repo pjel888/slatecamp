@@ -6,7 +6,6 @@ import {
   WikiHeader,
   WikiRightSidebar,
   WikiRightSidebarSkeleton,
-  TeachBackPrompt,
   WrongAnswerBanner,
   WikiReadTracker,
 } from '@/components/wiki'
@@ -16,7 +15,6 @@ import { cn } from '@/lib/utils'
 import { getSubjectName } from '@/types/testing'
 import { Suspense } from 'react'
 import { estimateReadingTime } from '@/lib/wiki-markdown'
-import { getTeachBackCriteria } from '@/lib/actions/teach-back'
 import { ROUTES } from '@/lib/routes'
 import {
   getArticleSources,
@@ -73,13 +71,12 @@ export default async function WikiArticlePage(props: WikiArticlePageProps) {
   const demoEIPrompts: EIPrompt[] = []
   const demoEIResponses: EIResponseMap = {}
   const demoSources: WikiArticleSource[] = []
-  const [eiPrompts, eiResponses, sources, teachBackCriteria, relatedTopics, siblings] = demoMode
-    ? [demoEIPrompts, demoEIResponses, demoSources, null, [], { prev: null, next: null }] as const
+  const [eiPrompts, eiResponses, sources, relatedTopics, siblings] = demoMode
+    ? [demoEIPrompts, demoEIResponses, demoSources, [], { prev: null, next: null }] as const
     : await Promise.all([
         getEIPromptsForArticle(article.article_id),
         getUserEIResponsesForArticle(article.article_id),
         getArticleSources(article.article_id),
-        node?.node_id ? getTeachBackCriteria(node.node_id) : Promise.resolve(null),
         getRelatedTopics(node),
         node?.node_id ? getArticleSiblings(node.node_id) : Promise.resolve({ prev: null, next: null }),
       ])
@@ -157,16 +154,6 @@ export default async function WikiArticlePage(props: WikiArticlePageProps) {
                   eiResponses={eiResponses}
                 />
               </Suspense>
-
-              {teachBackCriteria && (
-                <div className="mt-16 pt-16 border-t border-wiki-border">
-                  <TeachBackPrompt
-                    topicId={wikiNodeId!}
-                    topicName={wikiNodeName!}
-                    entryPoint="wiki"
-                  />
-                </div>
-              )}
 
             </div>
           </div>

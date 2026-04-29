@@ -4,16 +4,6 @@ import { isDemoMode } from "@/lib/demo/config";
 import { trackServerEvent } from "@/lib/analytics-server";
 import { ROUTES } from "@/lib/routes";
 
-const LEGACY_NEXT_PATHS: Record<string, string> = {
-  [ROUTES.legacy.adminWiki]: ROUTES.admin.knowledge,
-  [ROUTES.legacy.dashboardHeatmap]: ROUTES.dashboard.analytics,
-  [ROUTES.legacy.dashboardSettingsBilling]: ROUTES.dashboard.settings,
-  [ROUTES.legacy.dashboardSettingsDeveloper]: ROUTES.developer.root,
-  [ROUTES.legacy.dashboardTrail]: ROUTES.dashboard.camptrails,
-  [ROUTES.legacy.dashboardTrails]: ROUTES.dashboard.camptrails,
-  [ROUTES.legacy.settings]: ROUTES.dashboard.settings,
-};
-
 const normalizeNextPath = (next: string | null): string => {
   if (!next || !next.startsWith("/") || next.startsWith("//")) {
     return ROUTES.dashboard.root;
@@ -21,7 +11,7 @@ const normalizeNextPath = (next: string | null): string => {
 
   const [pathWithMaybeHash, query = ""] = next.split("?", 2);
   const [pathname, hash = ""] = pathWithMaybeHash.split("#", 2);
-  const normalizedPath = LEGACY_NEXT_PATHS[pathname] ?? pathname;
+  const normalizedPath = pathname;
   const normalizedQuery = query ? `?${query}` : "";
   const normalizedHash = hash ? `#${hash}` : "";
 

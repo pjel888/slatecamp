@@ -32,11 +32,6 @@ export const SIDEBAR_NAV_ITEMS: SidebarNavItemConfig[] = [
     tier: 'default',
     group: 'explore',
     shortcut: '⌘4',
-    children: [
-      { id: '3d-site', label: 'Site Development', href: '/dashboard/3d-lab/site-development-controls' },
-      { id: '3d-stairs', label: 'Stairs', href: '/dashboard/3d-lab/stairway-configurator' },
-      { id: '3d-wall', label: 'Unified Wall', href: '/dashboard/3d-lab/unified-wall-configurator' },
-    ],
   },
 
   // Practice group — tier: secondary (tools)
@@ -47,9 +42,6 @@ export const SIDEBAR_NAV_ITEMS: SidebarNavItemConfig[] = [
     icon: Exam,
     tier: 'secondary',
     group: 'practice',
-    children: [
-      { id: 'test-sessions', label: 'Sessions', href: '/dashboard/drills/sessions' },
-    ],
   },
   { id: 'camptrail', href: '/dashboard/camptrails', label: 'Camp Trail', icon: Path, tier: 'secondary', group: 'practice' },
   { id: 'flash', href: '/dashboard/flash', label: 'Flash Cards', icon: Cards, tier: 'secondary', group: 'practice' },

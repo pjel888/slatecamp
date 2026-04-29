@@ -12,8 +12,8 @@ export const UpgradeButtons = ({ tier = 'pro' }: UpgradeButtonsProps) => {
   const [loading, setLoading] = useState<string | null>(null)
   const _router = useRouter()
 
-  const handleCheckout = async (provider?: 'lemonsqueezy' | 'payrex') => {
-    setLoading(provider || 'loading')
+  const handleCheckout = async () => {
+    setLoading('payrex')
     try {
       const response = await fetch('/api/payments/checkout', {
         method: 'POST',
@@ -40,19 +40,11 @@ export const UpgradeButtons = ({ tier = 'pro' }: UpgradeButtonsProps) => {
   return (
     <div className="mt-6 flex flex-col items-center gap-3 w-full max-w-sm">
       <Button
-        onClick={() => handleCheckout('payrex')}
+        onClick={handleCheckout}
         disabled={loading !== null}
         className="w-full h-12 text-sm font-semibold"
       >
         {loading === 'payrex' ? 'Connecting to GCash...' : 'Pay with GCash / Maya'}
-      </Button>
-      <Button
-        variant="outline"
-        onClick={() => handleCheckout('lemonsqueezy')}
-        disabled={loading !== null}
-        className="w-full h-12 text-sm font-medium"
-      >
-        {loading === 'lemonsqueezy' ? 'Connecting...' : 'Pay with Card'}
       </Button>
     </div>
   )

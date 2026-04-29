@@ -13,7 +13,7 @@ export const KpiBar = () => {
   const overallCompliant = result.overallCompliant
 
   return (
-    <div className="absolute inset-x-0 bottom-16 z-10 pointer-events-none">
+    <div className="absolute inset-x-0 bottom-24 z-10 pointer-events-none">
       <div className="mx-auto flex max-w-xl flex-col items-center">
         {/* KPI chips — positioned above the shared CameraNavigationBar */}
         <div

@@ -2,10 +2,9 @@ import { notFound } from 'next/navigation'
 import { Suspense } from 'react'
 
 import { getEIPromptsForArticle, getUserEIResponsesForArticle } from '@/lib/actions/ei-prompts'
-import { getArticleHeadings, WikiArticle, WikiHeader, WikiArticleHero, WikiRightSidebar, TeachBackPrompt } from '@/components/wiki'
+import { getArticleHeadings, WikiArticle, WikiHeader, WikiArticleHero, WikiRightSidebar } from '@/components/wiki'
 import { getSubjectName } from '@/types/testing'
 import { estimateReadingTime } from '@/lib/wiki-markdown'
-import { getTeachBackCriteria } from '@/lib/actions/teach-back'
 import type { TaxonomyNode } from '@/lib/actions/taxonomy'
 import { requirePermissionOrRedirect } from '@/lib/admin/roles'
 import { createAdminClient } from '@/lib/supabase/admin'
@@ -100,7 +99,7 @@ export default async function PreviewPage(props: { params: Promise<{ previewId: 
   const headings = getArticleHeadings(article)
   const readingTime = estimateReadingTime(article.content || '')
 
-  const [eiPrompts, eiResponses, sources, teachBackCriteria, relatedTopics] = await Promise.all([
+  const [eiPrompts, eiResponses, sources, relatedTopics] = await Promise.all([
     getEIPromptsForArticle(article.article_id),
     getUserEIResponsesForArticle(article.article_id), // Wait, should we show responses in Admin preview? Actually `getUserEIResponsesForArticle` uses `auth.uid()`, which is fine since admin is authed.
     supabase
@@ -109,7 +108,6 @@ export default async function PreviewPage(props: { params: Promise<{ previewId: 
       .eq('article_id', article.article_id)
       .order('sort_order', { ascending: true })
       .then(({ data }) => data || []),
-    node?.node_id ? getTeachBackCriteria(node.node_id) : Promise.resolve(null),
     getRelatedTopics(node, supabase),
   ])
 
@@ -174,13 +172,6 @@ export default async function PreviewPage(props: { params: Promise<{ previewId: 
                 eiResponses={eiResponses}
               />
 
-              {teachBackCriteria && node?.node_id && node?.name && (
-                <TeachBackPrompt
-                  topicId={node.node_id}
-                  topicName={node.name}
-                  entryPoint="wiki"
-                />
-              )}
             </div>
           </div>
         </main>

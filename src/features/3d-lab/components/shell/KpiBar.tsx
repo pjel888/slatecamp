@@ -20,7 +20,7 @@ export const KpiBar = ({ metrics }: KpiBarProps) => {
 
   return (
     <div
-      className="absolute bottom-14 left-1/2 z-20 -translate-x-1/2 flex items-center gap-0.5 rounded-lg px-2 py-1 pointer-events-auto"
+      className="absolute bottom-24 left-1/2 z-20 -translate-x-1/2 flex items-center gap-0.5 rounded-lg px-2 py-1 pointer-events-auto"
       style={{ backgroundColor: 'var(--viewport-overlay-bg)', backdropFilter: 'blur(8px)' }}
     >
       {metrics.map((metric, i) => (

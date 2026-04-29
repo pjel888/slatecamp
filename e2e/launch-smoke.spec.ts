@@ -1,4 +1,4 @@
-import { expect, test, type APIRequestContext } from '@playwright/test'
+import { expect, test } from '@playwright/test'
 
 type PublicRouteSmoke = {
   path: string
@@ -67,34 +67,3 @@ test.describe('launch-critical public routes', () => {
     })
   }
 })
-
-test.describe('launch-critical redirect shims', () => {
-  const redirects = [
-    { from: '/test-3d', to: '/dashboard/3d-lab' },
-    { from: '/dashboard/trail', to: '/dashboard/camptrails' },
-    { from: '/dashboard/trails', to: '/dashboard/camptrails' },
-    { from: '/dashboard/heatmap', to: '/dashboard/analytics' },
-    { from: '/dashboard/settings/billing', to: '/dashboard/settings' },
-    { from: '/dashboard/settings/developer', to: '/developer' },
-    { from: '/admin/wiki', to: '/admin/knowledge' },
-  ]
-
-  for (const route of redirects) {
-    test(`${route.from} redirects to ${route.to}`, async ({ request }) => {
-      await expectRedirect(request, route.from, route.to)
-    })
-  }
-})
-
-async function expectRedirect(
-  request: APIRequestContext,
-  from: string,
-  expectedPathname: string,
-) {
-  const response = await request.get(from, { maxRedirects: 0 })
-  const location = response.headers().location
-
-  expect([307, 308]).toContain(response.status())
-  expect(location, `${from} should return a Location header`).toBeTruthy()
-  expect(new URL(location!, 'http://localhost').pathname).toBe(expectedPathname)
-}

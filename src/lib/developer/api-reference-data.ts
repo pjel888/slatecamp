@@ -6,18 +6,18 @@ export const paymentEndpoints = [
   {
     method: 'POST',
     path: '/api/payments/checkout',
-    description: 'Create a LemonSqueezy or PayRex checkout session for a paid tier.',
+    description: 'Create a PayRex checkout session for a paid tier.',
     auth: 'User session (Supabase)',
     badges: ['Zod'],
     requestSchema: `// Body
 {
   tier: "pro" | "prime" | "institutional"   // "free" returns 400
 }`,
-    responseExample: `// 200 OK — LemonSqueezy
+    responseExample: `// 200 OK — PayRex
 {
-  "url": "https://checkout.lemonsqueezy.com/pay/cs_...",
-  "id": "cs_live_...",
-  "provider": "lemonsqueezy"
+  "url": "https://checkout.payrex.com/...",
+  "id": "pi_...",
+  "provider": "payrex"
 }
 
 // 200 OK — Demo mode
@@ -34,19 +34,6 @@ export const paymentEndpoints = [
 ]
 
 export const webhookEndpoints = [
-  {
-    method: 'POST',
-    path: '/api/webhooks/lemonsqueezy',
-    description: 'Handle LemonSqueezy subscription lifecycle events. Verifies x-signature header.',
-    auth: 'LemonSqueezy webhook signature (LEMONSQUEEZY_WEBHOOK_SECRET)',
-    badges: ['LemonSqueezy'],
-    requestSchema: `// LemonSqueezy Event — raw body required for signature verification
-// Handled events:
-//   checkout.session.completed  → upsert user_subscriptions (tier, lemonsqueezy_customer_id, lemonsqueezy_subscription_id, status='active')
-//                                  + insert analytics_events { event_name: 'pro_subscribed' }
-//   customer.subscription.deleted → downgrade to tier='free', status='cancelled'`,
-    responseExample: `{ "received": true }`,
-  },
   {
     method: 'POST',
     path: '/api/webhooks/payrex',
@@ -230,31 +217,6 @@ export const adminEndpoints = [
   },
 ]
 
-export const debugEndpoints = [
-  {
-    method: 'GET',
-    path: '/api/debug-taxonomy',
-    description:
-      'Return taxonomy structure summary: node counts by level, article coverage, and sample level-3 nodes. For content managers.',
-    auth: 'Authenticated user (Supabase session)',
-    responseExample: `{
-  "totalNodes": 284,
-  "levels": { "1": 8, "2": 64, "3": 212 },
-  "nodesWithArticles": 178,
-  "totalArticles": 203,
-  "l2Total": 64,
-  "l2WithChildren": 61,
-  "sampleLevel3Nodes": [
-    {
-      "name": "Beam Design",
-      "node_id": "uuid",
-      "parent_id": "uuid",
-      "articles": [{ "article_id": "uuid", "title": "..." }]
-    }
-  ]
-}`,
-  },
-]
 
 export const routeHandlerSections = [
   { label: 'Payments', endpoints: paymentEndpoints },
@@ -262,7 +224,6 @@ export const routeHandlerSections = [
   { label: 'Cron Jobs', endpoints: cronEndpoints },
   { label: 'AI', endpoints: aiEndpoints },
   { label: 'Admin', endpoints: adminEndpoints },
-  { label: 'Debug', endpoints: debugEndpoints },
 ]
 
 // ─── Server Actions data ──────────────────────────────────────────────────────
@@ -546,40 +507,22 @@ export const actionGroups: ActionGroup[] = [
   },
 ]
 
-export const lemonsqueezyWebhookEvents = [
-  {
-    event: 'checkout.session.completed',
-    mutations: [
-      "UPSERT user_subscriptions SET tier, lemonsqueezy_customer_id, lemonsqueezy_subscription_id, status='active' ON user_id = metadata.userId",
-      "INSERT analytics_events { event_name: 'pro_subscribed', event_properties: { plan, lemonsqueezy_subscription_id } }",
-    ],
-  },
-  {
-    event: 'customer.subscription.deleted',
-    mutations: [
-      "UPDATE user_subscriptions SET tier='free', lemonsqueezy_subscription_id=null, status='cancelled' WHERE lemonsqueezy_subscription_id = subscription.id",
-    ],
-  },
-]
-
 export const payrexWebhookEvents = [
   {
     event: 'payment_intent.succeeded',
     mutations: [
-      "UPDATE user_subscriptions SET tier (from metadata.tier or derived from amount_cents), status='active' WHERE user_id = metadata.user_id",
+      "UPSERT user_subscriptions ON CONFLICT user_id with tier (from metadata.tier or derived from amount_cents), status='active', provider='payrex'",
     ],
   },
 ]
 
 export const webhookSignatureNotes = {
-  lemonsqueezy:
-    'Reads raw body text (not parsed JSON) and verifies against x-signature using lemonsqueezy.webhooks.constructEvent(body, sig, LEMONSQUEEZY_WEBHOOK_SECRET). Returns 400 if signature is missing or invalid. Requires LEMONSQUEEZY_WEBHOOK_SECRET.',
   payrex:
     'Reads raw body text and verifies against payrex-signature using payrex.webhooks.parseEvent(body, signature, PAYREX_WEBHOOK_SECRET). Returns 400 if signature is missing or invalid. Requires PAYREX_WEBHOOK_SECRET.',
 } as const
 
 export const sharedWebhookConventions = [
-  'Both handlers use createAdminClient() (service role) to bypass RLS for subscription mutations.',
-  'All successful responses return { \"received\": true } with HTTP 200. LemonSqueezy and PayRex retry on non-2xx responses.',
-  'Register webhook endpoints in the provider dashboards against the production URL. Use lemonsqueezy listen --forward-to localhost:3000/api/webhooks/lemonsqueezy for local development.',
+  'The PayRex handler uses createAdminClient() (service role) to bypass RLS for subscription mutations.',
+  'Successful webhook responses return { \"received\": true } with HTTP 200. PayRex retries on non-2xx responses.',
+  'Register the PayRex webhook endpoint in the provider dashboard against the production URL.',
 ]

@@ -1,5 +1,5 @@
 import { useRegisterInvalidate } from '@/components/r3f/useRegisterInvalidate'
-import { useNBCPStore } from '../_stores/nbcpStore'
+import { useNBCPStore } from '../stores/nbcpStore'
 
 /**
  * Registers R3F invalidate() into the NBCP envelope store.

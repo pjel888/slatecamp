@@ -1,5 +1,5 @@
 import { useRegisterInvalidate } from '@/components/r3f/useRegisterInvalidate'
-import type { ModuleStoreState } from '../_stores/createModuleStore'
+import type { ModuleStoreState } from '../stores/createModuleStore'
 import type { StoreApi, UseBoundStore } from 'zustand'
 
 /**

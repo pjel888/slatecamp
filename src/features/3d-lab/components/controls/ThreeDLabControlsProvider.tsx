@@ -17,6 +17,7 @@ export interface ThreeDLabCameraControlConfig {
   resetPreset?: CameraSelectionPreset
   minDistance?: number
   maxDistance?: number
+  minPanTargetDistance?: number
   minPolarAngle?: number
   maxPolarAngle?: number
 }
@@ -24,7 +25,8 @@ export interface ThreeDLabCameraControlConfig {
 export const THREE_D_LAB_CONTROL_MAPPING = {
   mouse: {
     left: 'orbit-or-pan-by-active-mode',
-    middle: 'pan',
+    shiftLeft: 'temporary-pan-while-orbiting',
+    middle: 'orbit',
     right: 'reserved-context-menu',
     wheel: 'zoom-to-cursor',
   },
@@ -33,6 +35,8 @@ export const THREE_D_LAB_CONTROL_MAPPING = {
     twoFinger: 'dolly-pan',
   },
   keyboard: {
+    o: 'orbit-mode',
+    h: 'pan-mode',
     one: 'front',
     two: 'top',
     three: 'iso',
@@ -43,6 +47,10 @@ export const THREE_D_LAB_CONTROL_MAPPING = {
     d: 'toggle-dimensions',
     x: 'toggle-xray',
     l: 'toggle-layers',
+  },
+  toolbar: {
+    zoomSlider: 'continuous-zoom-delta',
+    zoomExtents: 'fit-visible-lesson-model',
   },
 } as const
 

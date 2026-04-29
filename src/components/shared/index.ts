@@ -1,7 +1,6 @@
 export * from './action-card'
 export * from './analytics-chart-container'
 export * from './app-drawer'
-export * from './breadcrumb'
 export * from './coverage-progress'
 export * from './DashboardHeader'
 export * from './dashboard-metric-card'

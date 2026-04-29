@@ -191,8 +191,8 @@ export default function CutawaySection({ config }: CutawaySectionProps) {
           sceneConfig={{
             cameraPosition: cameraPos,
             cameraFov: cameraFov,
-            minDistance: 1,
-            maxDistance: 20,
+            minDistance: 0.01,
+            maxDistance: Infinity,
           }}
         >
           <CutawaySectionScene config={config} useStore={useStore} />

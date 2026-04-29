@@ -18,7 +18,7 @@ import { HeroCards } from './hero/HeroCards'
 const STATS = [
   'Syllabus-mapped to the LEA',
   'Real-time Readiness Score',
-  'AI answers cite their sources',
+  'Source-backed explanations',
 ] as const
 
 /* ── Main Hero Section Export ── */

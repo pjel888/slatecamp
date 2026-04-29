@@ -17,6 +17,7 @@ import { WallConfiguratorLeftPanel } from '@/features/3d-lab/components/template
 import { WallConfiguratorRightPanel } from '@/features/3d-lab/components/templates/WallConfiguratorRightPanel'
 import { DevControlsSceneContent } from '@/features/3d-lab/DevControlsModule/canvas/DevControlsCanvas'
 import { DevControlsLeftSidebar, DevControlsRightSidebar, DevControlsStatusContent } from '@/features/3d-lab/DevControlsModule/dashboard/DevControlsShellSlots'
+import { DevControlsLayerToggles } from '@/features/3d-lab/DevControlsModule/dashboard/DevControlsLayerToggles'
 import { SharedToolbarBridge } from '@/features/3d-lab/DevControlsModule/dashboard/SharedToolbarBridge'
 import { CAMERA_PRESETS as SITE_DEV_CAMERA_PRESETS } from '@/features/3d-lab/DevControlsModule/canvas/constants'
 import { createModuleStore } from '@/features/3d-lab/stores/createModuleStore'
@@ -91,8 +92,9 @@ const siteDevelopmentCameraControls = {
   },
   zoomToFit: SITE_DEV_CAMERA_PRESETS.perspective,
   resetPreset: 'perspective' as const,
-  minDistance: 0.5,
-  maxDistance: 500,
+  minDistance: 0.01,
+  maxDistance: Infinity,
+  minPanTargetDistance: 16,
 }
 
 // ─── Hook ───────────────────────────────────────────────────────────────────
@@ -156,7 +158,20 @@ export const useTemplateContent = (
     const capabilities: ViewportCapabilities = { ...templateDefaults.capabilities }
 
     const cameraPos = config.camera?.position ?? [3, 3, 3]
+    const cameraTarget = config.camera?.target ?? [0, 1, 0]
     const cameraFov = config.camera?.fov ?? 45
+    const moduleCameraControls = {
+      presets: {
+        perspective: { position: cameraPos, target: cameraTarget, fov: cameraFov },
+        orbit: { position: cameraPos, target: cameraTarget, fov: cameraFov },
+        ...(config.camera?.presets ?? {}),
+      },
+      zoomToFit: config.camera?.zoomToFit ?? { position: cameraPos, target: cameraTarget, fov: cameraFov },
+      resetPreset: config.camera?.resetPreset ?? ('perspective' as const),
+      minPanTargetDistance: config.camera?.minPanTargetDistance,
+      minDistance: 0.01,
+      maxDistance: Infinity,
+    }
 
     const canvasWrapper = (
       children: React.ReactNode,
@@ -166,10 +181,11 @@ export const useTemplateContent = (
         <CanvasWrapper
           sceneConfig={{
             cameraPosition: cameraPos,
-            cameraTarget: config.camera?.target ?? [0, 1, 0],
+            cameraTarget,
             cameraFov: cameraFov,
-            minDistance: 1,
-            maxDistance: 25,
+            minDistance: 0.01,
+            maxDistance: Infinity,
+            cameraControls: moduleCameraControls,
             showGround: false,
             ...sceneConfigOverrides,
           }}
@@ -205,7 +221,7 @@ export const useTemplateContent = (
                       cameraPosition: SITE_DEV_CAMERA_PRESETS.perspective.position,
                       cameraTarget: SITE_DEV_CAMERA_PRESETS.perspective.target,
                       cameraFov: SITE_DEV_CAMERA_PRESETS.perspective.fov,
-                      maxDistance: 500,
+                      maxDistance: Infinity,
                       showGround: false,
                       disableLighting: true,
                       disableSceneBase: true,
@@ -218,6 +234,7 @@ export const useTemplateContent = (
               leftSidebarContent: <DevControlsLeftSidebar />,
               rightSidebarContent: <DevControlsRightSidebar />,
               statusBarContent: <DevControlsStatusContent />,
+              layersPanelContent: <DevControlsLayerToggles />,
             },
           }
         }

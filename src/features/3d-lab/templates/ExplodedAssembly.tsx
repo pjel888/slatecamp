@@ -60,8 +60,8 @@ export default function ExplodedAssembly({ config }: ExplodedAssemblyProps) {
             cameraPosition: cam?.position ?? [6, 6, 6],
             cameraFov: cam?.fov ?? 35,
             showGround: false,
-            minDistance: 3,
-            maxDistance: 20,
+            minDistance: 0.01,
+            maxDistance: Infinity,
           }}
         >
           <ExplodedAssemblyScene config={config} useStore={useStore} />

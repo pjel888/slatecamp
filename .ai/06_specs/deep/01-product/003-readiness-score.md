@@ -119,7 +119,7 @@ Used in:
 ## Cron Job Computation
 
 Readiness scores are recomputed daily via Vercel Cron:
-- **blindspot-scan:** Daily at 4:00 PM UTC
+- **focus-review-scan:** Daily at 4:00 PM UTC
 - **compute-signals:** Daily at 4:30 PM UTC
 
 **Source:** `vercel.json`
@@ -133,3 +133,8 @@ Readiness scores are recomputed daily via Vercel Cron:
 ---
 
 *Readiness Score analysis: 2026-04-06*
+
+
+## 2026-04-29 audit note
+
+This document may include historical product/reference language. Current codebase route truth for cron jobs is `/api/cron/focus-review-scan` and `/api/cron/compute-signals` from `src/app/api/cron/**/route.ts` and `vercel.json`.

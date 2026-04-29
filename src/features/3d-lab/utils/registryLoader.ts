@@ -3,9 +3,9 @@
 // Dynamically imports only the registry for the active category,
 // keeping the main bundle free of 200+ module metadata entries.
 
-import type { ModuleRegistryEntry } from '../_types/templates'
-import type { CategoryKey } from '../_config/taxonomy'
-import { ASSET_TAXONOMY } from '../_config/taxonomy'
+import type { ModuleRegistryEntry } from '../types/templates'
+import type { CategoryKey } from '../config/taxonomy'
+import { ASSET_TAXONOMY } from '../config/taxonomy'
 
 /** Registry cache to avoid re-importing the same category */
 const registryCache = new Map<string, ModuleRegistryEntry[]>()

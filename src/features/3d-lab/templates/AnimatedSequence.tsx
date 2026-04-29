@@ -96,8 +96,8 @@ export default function AnimatedSequence({ config }: AnimatedSequenceProps) {
             cameraPosition: cam?.position ?? [5, 5, 5],
             cameraFov: cam?.fov ?? 40,
             showGround: false,
-            minDistance: 2,
-            maxDistance: 25,
+            minDistance: 0.01,
+            maxDistance: Infinity,
           }}
         >
           <AnimatedSequenceScene config={config} useStore={useStore} />

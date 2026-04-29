@@ -88,7 +88,7 @@ test.describe('demo-authenticated first-run flows', () => {
     expect(body).toMatch(/\/dashboard/)
   })
 
-  test('demo callback normalizes unsafe and legacy next paths', async ({
+  test('demo callback rejects unsafe next paths', async ({
     request,
   }) => {
     test.setTimeout(90000)
@@ -102,18 +102,5 @@ test.describe('demo-authenticated first-run flows', () => {
     expect(unsafeLocation).toBeTruthy()
     expect(new URL(unsafeLocation!, 'http://localhost').pathname).toBe(
       '/dashboard',
-    )
-
-    const legacy = await request.get(
-      '/auth/callback?next=/dashboard/heatmap',
-      { maxRedirects: 0, timeout: 60000 },
-    )
-    const legacyLocation = legacy.headers().location
-
-    expect([307, 308]).toContain(legacy.status())
-    expect(legacyLocation).toBeTruthy()
-    expect(new URL(legacyLocation!, 'http://localhost').pathname).toBe(
-      '/dashboard/analytics',
-    )
-  })
+    )  })
 })

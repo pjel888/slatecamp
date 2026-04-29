@@ -1,6 +1,6 @@
 'use client'
 
-import { SPONSOR_BRANDS } from '../../_stores/useWallLabStore'
+import { SPONSOR_BRANDS } from '../../../stores/useWallLabStore'
 
 interface SponsorPaletteProps {
   sponsorId: string

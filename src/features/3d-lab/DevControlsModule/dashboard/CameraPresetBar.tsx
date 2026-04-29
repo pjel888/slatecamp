@@ -81,7 +81,7 @@ export function FloatingCameraBar() {
   const setShowDimensions = useDevControlsStore((s) => s.setShowDimensions)
 
   return (
-    <div className="absolute bottom-4 left-1/2 z-10 -translate-x-1/2">
+    <div className="absolute bottom-14 left-1/2 z-10 -translate-x-1/2">
       <div className="flex items-center gap-0.5 rounded-md border border-white/20 bg-foreground/40 px-1.5 py-1.5 backdrop-blur-xl shadow-lg">
         {/* Main views */}
         {CAMERA_OPTIONS.filter(o => o.group === 'main').map((opt) => {

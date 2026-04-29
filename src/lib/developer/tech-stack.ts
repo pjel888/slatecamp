@@ -16,7 +16,7 @@ export interface DeveloperTechStackRow {
   notes?: string
 }
 
-const PAYMENTS_VERSION = `${version('@lemonsqueezy/lemonsqueezy.js')} / ${version('payrex-node')}`
+const PAYMENTS_VERSION = version('payrex-node')
 const UI_VERSION = `${version('@base-ui/react')} / ${version('shadcn')}`
 const THREE_VERSION = `${version('three')} / ${version('@react-three/fiber')}`
 const CONTENT_VERSION = version('next-mdx-remote')
@@ -39,9 +39,9 @@ export const developerPortalTechStack: DeveloperTechStackRow[] = [
   { label: 'AI', pkg: '@anthropic-ai/sdk', version: version('@anthropic-ai/sdk') },
   {
     label: 'Payments',
-    pkg: '@lemonsqueezy/lemonsqueezy.js + payrex-node',
+    pkg: 'payrex-node',
     version: PAYMENTS_VERSION,
-    notes: 'PayRex active path; LemonSqueezy config currently stubbed',
+    notes: 'PayRex is the only retained payment provider path for the launch codebase.',
   },
   { label: 'Validation', pkg: 'zod', version: version('zod') },
   {

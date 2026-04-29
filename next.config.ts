@@ -43,46 +43,6 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
-        source: '/settings',
-        destination: '/dashboard/settings',
-        permanent: false,
-      },
-      {
-        source: '/dashboard/settings/billing',
-        destination: '/dashboard/settings',
-        permanent: false,
-      },
-      {
-        source: '/dashboard/settings/developer',
-        destination: '/developer',
-        permanent: false,
-      },
-      {
-        source: '/dashboard/trail',
-        destination: '/dashboard/camptrails',
-        permanent: false,
-      },
-      {
-        source: '/dashboard/trails',
-        destination: '/dashboard/camptrails',
-        permanent: false,
-      },
-      {
-        source: '/dashboard/heatmap',
-        destination: '/dashboard/analytics',
-        permanent: false,
-      },
-      {
-        source: '/admin/wiki',
-        destination: '/admin/knowledge',
-        permanent: false,
-      },
-      {
-        source: '/test-3d',
-        destination: '/dashboard/3d-lab',
-        permanent: false,
-      },
-      {
         source: '/dashboard/wiki/ale-:slug',
         destination: '/dashboard/wiki/lea-:slug',
         permanent: true,
@@ -90,31 +50,6 @@ const nextConfig: NextConfig = {
       {
         source: '/ale-starter',
         destination: '/lea-starter',
-        permanent: true,
-      },
-      {
-        source: '/quiz/focus-review/:path*',
-        destination: '/quiz/focus_review/:path*',
-        permanent: true,
-      },
-      {
-        source: '/quiz/article-review/:path*',
-        destination: '/quiz/article_review/:path*',
-        permanent: true,
-      },
-      {
-        source: '/quiz/fullexam/:path*',
-        destination: '/quiz/full_exam/:path*',
-        permanent: true,
-      },
-      {
-        source: '/quiz/extended/:path*',
-        destination: '/quiz/endurance/:path*',
-        permanent: true,
-      },
-      {
-        source: '/quiz/focused/:path*',
-        destination: '/quiz/focus_review/:path*',
         permanent: true,
       },
     ]

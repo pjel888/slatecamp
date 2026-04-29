@@ -321,7 +321,7 @@ export const SubjectMasteryCard = ({ data }: SubjectMasteryCardProps) => {
               </p>
             </div>
             <Link
-              href="/quiz?mode=diagnostic"
+              href={ROUTES.quiz.hub}
               className="mt-2 inline-flex h-8 items-center justify-center rounded-sm bg-primary px-4 text-[11px] font-bold text-white transition-colors hover:bg-primary-700"
             >
               Start Diagnostic

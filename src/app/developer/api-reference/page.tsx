@@ -1,7 +1,7 @@
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs'
 import { SectionHeader } from '@/components/shared/section-header'
 import { EndpointCard } from '../_components/EndpointCard'
-import { actionGroups, lemonsqueezyWebhookEvents, payrexWebhookEvents, routeHandlerSections, sharedWebhookConventions, webhookSignatureNotes } from '@/lib/developer/api-reference-data'
+import { actionGroups, payrexWebhookEvents, routeHandlerSections, sharedWebhookConventions, webhookSignatureNotes } from '@/lib/developer/api-reference-data'
 
 export const metadata = {
   title: 'API Reference — SlateCamp Developer Portal',
@@ -132,59 +132,6 @@ export default function ApiReferencePage() {
         {/* ── Tab 3: Webhooks ───────────────────────────────────── */}
         <TabsContent value="webhooks" className="pt-6 space-y-8">
 
-          {/* LemonSqueezy */}
-          <section>
-            <p className="font-[family-name:var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground mb-3">
-              LemonSqueezy — POST /api/webhooks/lemonsqueezy
-            </p>
-            <div className="rounded-xs border border-border overflow-hidden">
-              <table className="w-full text-left">
-                <thead>
-                  <tr className="border-b border-border bg-muted/60">
-                    <th className="px-4 py-2 text-[11px] font-semibold uppercase tracking-wider text-muted-foreground w-[35%]">
-                      Event
-                    </th>
-                    <th className="px-4 py-2 text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
-                      Database Mutations
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {lemonsqueezyWebhookEvents.map((row, index) => (
-                    <tr
-                      key={row.event}
-                      className={index < lemonsqueezyWebhookEvents.length - 1 ? 'border-b border-border hover:bg-muted/30 transition-colors duration-150' : 'hover:bg-muted/30 transition-colors duration-150'}
-                    >
-                      <td className="px-4 py-3 align-top">
-                        <span className="font-[family-name:var(--font-dm-mono)] text-[11px] text-foreground">
-                          {row.event}
-                        </span>
-                      </td>
-                      <td className="px-4 py-3 align-top">
-                        {row.mutations.map((mutation, mutationIndex) => (
-                          <p
-                            key={`${row.event}-${mutationIndex}`}
-                            className={`text-[11px] text-muted-foreground leading-relaxed${mutationIndex > 0 ? ' mt-1' : ''}`}
-                          >
-                            {mutation}
-                          </p>
-                        ))}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-
-            <div className="mt-4 rounded-xs border border-border bg-muted/30 px-4 py-3">
-              <p className="font-[family-name:var(--font-dm-mono)] text-[11px] uppercase tracking-[0.1em] text-muted-foreground mb-2">
-                Signature Verification
-              </p>
-              <p className="text-[11px] text-muted-foreground leading-relaxed">
-                {webhookSignatureNotes.lemonsqueezy}
-              </p>
-            </div>
-          </section>
 
           {/* PayRex */}
           <section>

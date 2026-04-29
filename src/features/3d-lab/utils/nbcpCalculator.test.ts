@@ -1,7 +1,7 @@
 // src/app/dashboard/3d-lab/_utils/nbcpCalculator.test.ts
 import { describe, test, expect } from 'bun:test'
 import { calculateEnvelope, type NBCPInputs } from './nbcpCalculator'
-import { ZoningClass, LotType } from '../_constants/nbcp'
+import { ZoningClass, LotType } from '../constants/nbcp'
 
 const NO_FIREWALLS = { front: false, rear: false, left: false, right: false }
 

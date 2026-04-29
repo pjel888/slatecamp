@@ -15,11 +15,16 @@ export const Z_INDEX = {
 } as const
 
 // ---------------------------------------------------------------------------
-// Layout Constants (locked HTML v4: 52px collapsed / 216px expanded)
+// Layout Constants (sidebar grid)
 // ---------------------------------------------------------------------------
 
-export const SIDEBAR_WIDTH_COLLAPSED = 52
 export const SIDEBAR_WIDTH_EXPANDED = 256
+/** Sidebar horizontal padding: 6px */
+export const SIDEBAR_PADDING = 6
+/** Fixed icon slot width: 40px. Icon center = padding + 20px in every state. */
+export const SIDEBAR_ICON_SLOT = 40
+/** Collapsed width = left padding + fixed icon slot + right padding */
+export const SIDEBAR_WIDTH_COLLAPSED = SIDEBAR_PADDING * 2 + SIDEBAR_ICON_SLOT
 
 /** Nav item row height: 32px */
 export const NAV_ITEM_HEIGHT = 32
@@ -27,8 +32,14 @@ export const NAV_ITEM_HEIGHT = 32
 export const HEADER_HEIGHT = 64
 /** Footer row heights: 30px each (profile + toggle) */
 export const FOOTER_ROW_HEIGHT = 30
-/** Sidebar horizontal padding: 6px */
-export const SIDEBAR_PADDING = 6
+/** Gap between fixed icon slot and label column: 4px */
+export const SIDEBAR_ITEM_GAP = 4
+/** Vertical gap between primary rows inside a group: 4px */
+export const SIDEBAR_ITEM_STACK_GAP = 4
+/** Vertical space between meaningful nav sections: 12px */
+export const SIDEBAR_SECTION_GAP = 12
+/** Divider inset matches sidebar padding so separators share one rail width. */
+export const SIDEBAR_DIVIDER_INSET = SIDEBAR_PADDING
 
 /**
  * Icon container: 40px wide x 32px tall, flex-shrink-0.
@@ -97,7 +108,6 @@ export interface SidebarNavItemConfig {
   tier: IconTier
   group?: string
   shortcut?: string
-  children?: { id: string; label: string; href: string }[]
 }
 
 export interface SidebarNavGroupConfig {

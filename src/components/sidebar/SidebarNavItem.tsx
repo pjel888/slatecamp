@@ -1,7 +1,6 @@
 'use client'
 
 import Link from 'next/link'
-import { usePathname, useSearchParams } from 'next/navigation'
 import {
   Tooltip,
   TooltipTrigger,
@@ -18,8 +17,9 @@ import type { SidebarNavItemProps } from './types'
 
 // ---------------------------------------------------------------------------
 // SidebarNavItem — HTML v4 anatomy
-// Row height: 32px. Icon container: 40x32px. Label/badge: opacity-only toggle.
-// Active indicator: ::before pseudo at left:-6px (parent px-[6px] is the bleed zone).
+// Row height: 32px. Grid: 40px fixed icon slot + label column.
+// The icon slot never changes, so the icon center stays at padding + 20px.
+// Active indicator stays inside the row so label clipping cannot hide it.
 // ---------------------------------------------------------------------------
 
 export const SidebarNavItem = ({
@@ -29,39 +29,21 @@ export const SidebarNavItem = ({
   showTooltip,
   onNavigate,
 }: SidebarNavItemProps) => {
-  const { icon: Icon, label, href, tier, shortcut, children } = item
-  const pathname = usePathname()
-  const searchParams = useSearchParams()
+  const { icon: Icon, label, href, tier, shortcut } = item
 
   const tierOpacity = ICON_TIER_OPACITY[tier]
-
-  const isChildActive = (childHref: string) => {
-    if (childHref.includes('?')) {
-      const [path, query] = childHref.split('?')
-      const params = new URLSearchParams(query)
-      const isPathMatch = pathname === path
-      // Check if all params in childHref match current searchParams
-      let allParamsMatch = true
-      params.forEach((value, key) => {
-        if (searchParams.get(key) !== value) {
-          allParamsMatch = false
-        }
-      })
-      return isPathMatch && allParamsMatch
-    }
-    return pathname === childHref
-  }
 
   const anchor = (
     <Link
       href={href}
       onClick={onNavigate}
       aria-current={isActive ? 'page' : undefined}
+      aria-label={expanded ? undefined : label}
       data-t={label}
       data-k={shortcut}
       className={cn(
         // Base layout
-        'relative flex h-8 w-full items-center rounded-md px-0 outline-none',
+        'relative grid h-8 w-full grid-cols-[40px_minmax(0,1fr)] items-center gap-1 overflow-hidden rounded-md px-0 outline-none',
         // Transition
         'transition-colors duration-[120ms] ease-out',
         // Focus-visible ring
@@ -75,8 +57,7 @@ export const SidebarNavItem = ({
           'bg-primary-50 dark:bg-primary-900/20',
           'text-primary dark:text-primary-400',
           // ::before active left-border indicator
-          // left:-6px bleeds into the parent px-[6px] padding zone
-          'before:absolute before:left-[-6px] before:top-1/2 before:-translate-y-1/2',
+          'before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2',
           'before:w-[2.5px] before:h-4',
           'before:bg-camp-cobalt dark:before:bg-primary-400',
           'before:rounded-r-sm',
@@ -105,12 +86,13 @@ export const SidebarNavItem = ({
         />
       </span>
 
-      {/* Label — opacity-only visibility, takes no space when collapsed */}
+      {/* Label — clipped/faded in collapsed mode without affecting icon position */}
       <span
+        aria-hidden={!expanded}
         className={cn(
-          'whitespace-nowrap overflow-hidden text-[12.5px] leading-none transition-opacity duration-[180ms]',
+          'min-w-0 truncate whitespace-nowrap text-[12.5px] leading-none transition-[opacity,transform] duration-[180ms] ease-out motion-reduce:transition-none motion-reduce:transform-none',
           isActive ? 'font-medium' : 'font-normal',
-          expanded ? 'opacity-100' : 'opacity-0 w-0',
+          expanded ? 'translate-x-0 opacity-100' : 'pointer-events-none translate-x-1 opacity-0',
         )}
       >
         {label}
@@ -135,7 +117,7 @@ export const SidebarNavItem = ({
   )
 
   return (
-    <div className="flex flex-col w-full">
+    <div className="w-full">
       {showTooltip && !expanded ? (
         <TooltipProvider delay={0}>
           <Tooltip>
@@ -152,30 +134,6 @@ export const SidebarNavItem = ({
         </TooltipProvider>
       ) : (
         anchor
-      )}
-
-      {/* Children nodes - only visible when sidebar is expanded */}
-      {expanded && children && children.length > 0 && (
-        <div className="mt-1 flex flex-col gap-0.5 ml-[19px] pl-4 border-l border-border/60">
-          {children.map((child) => {
-            const active = isChildActive(child.href)
-            return (
-              <Link
-                key={child.id}
-                href={child.href}
-                onClick={onNavigate}
-                className={cn(
-                  'flex h-7 items-center rounded-md px-2 text-[11.5px] transition-colors duration-100',
-                  active
-                    ? 'bg-primary-50/50 dark:bg-primary-900/10 text-primary dark:text-primary-400 font-medium'
-                    : 'text-text-tertiary hover:bg-gray-100 dark:hover:bg-gray-800/50 hover:text-text-primary'
-                )}
-              >
-                {child.label}
-              </Link>
-            )
-          })}
-        </div>
       )}
     </div>
   )

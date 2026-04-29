@@ -34,6 +34,7 @@ const DEVCONTROLS_LAYERS: { key: LayerKey; label: string; color: string }[] = [
   { key: 'bhl', label: 'BHL Ceiling', color: '#E8853A' },
   { key: 'flar', label: 'FLAR Ceiling', color: '#2D9F6F' },
   { key: 'rrow', label: 'Road & Grid', color: '#6B7280' },
+  { key: 'building', label: 'Context Buildings', color: '#D4D0C8' },
   { key: 'firewall', label: 'Firewall Markers', color: '#FF6B35' },
 ]
 

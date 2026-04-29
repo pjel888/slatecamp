@@ -67,11 +67,12 @@ It combines student study flows, admin content tooling, internal developer and b
 3. Content mutations through `src/lib/actions/admin/*`
 4. Persistence in Supabase-backed tables and migrations
 
-### Payment/webhook flow
+### Deferred payment/webhook flow
 
-1. Provider webhook requests hit `src/app/api/webhooks/lemonsqueezy/route.ts` and `src/app/api/webhooks/payrex/route.ts`
-2. Both use admin Supabase access
-3. Subscription and analytics side effects update tables before current idempotency marker insert
+1. Current launch keeps payments disabled (`NEXT_PUBLIC_PAYMENTS_ENABLED=false`).
+2. Future PayRex webhook requests hit `src/app/api/webhooks/payrex/route.ts`.
+3. The handler uses admin Supabase access, upserts subscription state, and records processed webhook events.
+4. LemonSqueezy runtime route/config/dependency were removed; legacy schema/type columns are deferred DB cleanup.
 
 ### 3D learning flow
 
@@ -82,10 +83,10 @@ It combines student study flows, admin content tooling, internal developer and b
 ## Data flow and external systems
 
 - Supabase/PostgreSQL: primary data store, auth, RLS, and admin/service-role operations
-- LemonSqueezy and PayRex: payment and webhook providers
+- PayRex: deferred payment/webhook provider; LemonSqueezy runtime removed
 - Vercel cron paths: `/api/cron/focus-review-scan`, `/api/cron/compute-signals`
 - Storybook: component/dev validation surface
-- Anthropic/OpenAI-related SDKs are present in dependencies, but the main audited external systems with live route evidence are Supabase and payments
+- Anthropic/OpenAI provider code remains for deferred AI endpoints, but live provider behavior is not part of the current launch scope
 
 ## Deployment, release, and tooling shape
 

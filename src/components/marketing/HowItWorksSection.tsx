@@ -11,7 +11,7 @@ const STEPS = [
   {
     num: '02',
     title: 'Answer questions',
-    desc: 'AI adapts difficulty in real-time. Spaced repetition schedules reviews at the mathematically optimal interval.',
+    desc: 'Difficulty adjusts from your answers. Spaced repetition schedules reviews at the mathematically optimal interval.',
   },
   {
     num: '03',
@@ -60,5 +60,4 @@ export const HowItWorksSection = () => (
     </div>
   </section>
 )
-
 

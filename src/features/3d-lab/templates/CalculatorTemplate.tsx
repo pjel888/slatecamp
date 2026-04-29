@@ -29,7 +29,7 @@ import { usePaintStore } from '@/app/calculators/_stores/paintStore'
 import { useDrywallStore } from '@/app/calculators/_stores/drywallStore'
 import { useCHBStore } from '@/app/calculators/_stores/chbStore'
 import { FloatingCameraBar, getCalcCameraPresets, type CalcCameraPreset } from '@/components/calculators/FloatingCameraBar'
-import type { CalculatorConfig } from '../_types/templates'
+import type { CalculatorConfig } from '../types/templates'
 import Link from 'next/link'
 import { ROUTES } from '@/lib/routes'
 
@@ -80,10 +80,8 @@ const buildCalculatorCameraControls = (presets: Record<CalcCameraPreset, ReturnT
   },
   zoomToFit: presets.perspective,
   resetPreset: 'perspective' as const,
-  minDistance: 0.5,
-  maxDistance: 80,
-  minPolarAngle: Math.PI * 0.05,
-  maxPolarAngle: Math.PI * 0.48,
+  minDistance: 0.01,
+  maxDistance: Infinity,
 })
 
 function CalculatorInputContent({ config, tool }: { config: CalculatorConfig; tool: ToolRenderProps }) {
@@ -141,8 +139,6 @@ function CalculatorSceneContent({
             cameraFov: cam.fov,
             cameraZoom: cam.zoom,
             clearColor: '#F2F0EB',
-            minPolarAngle: Math.PI * 0.05,
-            maxPolarAngle: Math.PI * 0.48,
             cameraControls: buildCalculatorCameraControls(presets),
           }}
         >

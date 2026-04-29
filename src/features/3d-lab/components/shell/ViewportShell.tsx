@@ -237,7 +237,7 @@ export const ViewportShell = ({
           {/* Shared viewport controls — every module uses this shell-owned overlay. */}
           <div data-testid="3dlab-shell-toolbar-overlay" className="pointer-events-none absolute inset-0 z-20">
             <SceneToolbar />
-            <LayersPanel />
+            <LayersPanel>{content.layersPanelContent}</LayersPanel>
             <CameraNavigationBar />
           </div>
 
@@ -301,7 +301,7 @@ export const ViewportShell = ({
           {/* Shared viewport controls — every module uses this shell-owned overlay. */}
           <div data-testid="3dlab-shell-toolbar-overlay-mobile" className="pointer-events-none absolute inset-0 z-20">
             <SceneToolbar />
-            <LayersPanel />
+            <LayersPanel>{content.layersPanelContent}</LayersPanel>
             <CameraNavigationBar />
           </div>
 

@@ -5,6 +5,7 @@
 import type React from 'react'
 import type { Vector3Tuple } from 'three'
 import type { CategoryKey, LaunchPhase } from '../config/taxonomy'
+import type { CameraSelectionPreset } from '../utils/camera-presets'
 
 // ─── Regulatory Citation Types ───────────────────────────────────────────────
 
@@ -151,6 +152,21 @@ export interface CameraConfig {
   fov?: number
   near?: number
   far?: number
+  presets?: Partial<Record<CameraSelectionPreset, {
+    position: Vector3Tuple
+    target: Vector3Tuple
+    fov?: number
+    zoom?: number
+  }>>
+  zoomToFit?: {
+    position: Vector3Tuple
+    target: Vector3Tuple
+    fov?: number
+    zoom?: number
+  }
+  resetPreset?: CameraSelectionPreset
+  /** Prevents perspective pan from becoming microscopic after deep zoom-to-cursor. */
+  minPanTargetDistance?: number
 }
 
 // ─── Parametric Scene Config ─────────────────────────────────────────────────
@@ -504,6 +520,8 @@ export interface ViewportShellContent {
   canvasContent: React.ReactNode
   /** Status bar content */
   statusBarContent?: React.ReactNode
+  /** Module-specific layer controls injected into the shared LayersPanel. */
+  layersPanelContent?: React.ReactNode
   /** Template-specific toolbar additions */
   toolbarExtras?: React.ReactNode
 }

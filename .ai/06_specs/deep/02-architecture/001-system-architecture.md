@@ -159,7 +159,7 @@ Session refresh handled in `middleware.ts` at root.
 
 | Job | Schedule | Purpose |
 |-----|---------|---------|
-| `blindspot-scan` | Daily 4pm UTC | Refresh blindspot queue (3 weakest + grey nodes) |
+| `focus-review-scan` | Daily 4pm UTC | Generate focus-review queues (3 weakest + grey nodes) |
 | `compute-signals` | Daily 4:30pm UTC | Recalculate competence signals |
 
 ---
@@ -212,3 +212,8 @@ Governance:
 
 The detector currently exists to prevent new raw-tier, raw-role, and raw `target_tier` logic from being introduced outside the canonical entitlement boundary.
 
+
+
+## 2026-04-29 audit note
+
+This document may include historical product/reference language. Current codebase route truth for cron jobs is `/api/cron/focus-review-scan` and `/api/cron/compute-signals` from `src/app/api/cron/**/route.ts` and `vercel.json`.

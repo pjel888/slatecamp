@@ -16,7 +16,7 @@ High-value areas include:
 - `srs/`, `readiness/`, `quiz/`
 - `wiki/`
 - `admin/`
-- `payments/`, `payrex/`, `lemonsqueezy/`, `paywall/`
+- `payments/`, `payrex/`, `paywall/`
 - `analytics/`, `logging/`, `audit/`
 - `supabase/`
 - `pd1096/`, `lot-geometry/`

@@ -75,7 +75,12 @@ export function SceneBase({
 
       {/* Ground plane — explicit warm stone geometry */}
       {showGround && (
-        <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0, 0]} receiveShadow>
+        <mesh
+          rotation={[-Math.PI / 2, 0, 0]}
+          position={[0, 0, 0]}
+          receiveShadow
+          userData={{ slatecampCameraFitExclude: true }}
+        >
           <planeGeometry args={[groundSize, groundSize]} />
           <meshStandardMaterial
             color={GROUND_COLOR}
@@ -87,7 +92,11 @@ export function SceneBase({
 
       {/* Ground shadow plane - simple darkened disc instead of ContactShadows (avoids worker) */}
       {showGround && (
-        <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0.001, 0]}>
+        <mesh
+          rotation={[-Math.PI / 2, 0, 0]}
+          position={[0, 0.001, 0]}
+          userData={{ slatecampCameraFitExclude: true }}
+        >
           <circleGeometry args={[12, 64]} />
           <meshBasicMaterial color="#000000" transparent opacity={0.08} depthWrite={false} />
         </mesh>

@@ -13,16 +13,6 @@ import type { AdminPermission } from "@/lib/entitlements/types";
 import { logEntitlementAuditEvent } from "@/lib/entitlements/audit";
 import { logEdgeError } from "@/lib/logging/edge";
 
-const LEGACY_ROUTE_REDIRECTS: Record<string, string> = {
-  [ROUTES.legacy.adminWiki]: ROUTES.admin.knowledge,
-  [ROUTES.legacy.dashboardHeatmap]: ROUTES.dashboard.analytics,
-  [ROUTES.legacy.dashboardSettingsBilling]: ROUTES.dashboard.settings,
-  [ROUTES.legacy.dashboardSettingsDeveloper]: ROUTES.developer.root,
-  [ROUTES.legacy.dashboardTrail]: ROUTES.dashboard.camptrails,
-  [ROUTES.legacy.dashboardTrails]: ROUTES.dashboard.camptrails,
-  [ROUTES.legacy.settings]: ROUTES.dashboard.settings,
-}
-
 const ADMIN_PATH_PERMISSIONS: Array<[RegExp, AdminPermission]> = [
   [/^\/admin\/audit(?:\/|$)/, 'admin.audit.view'],
   [/^\/admin\/activity(?:\/|$)/, 'admin.activity.view'],
@@ -84,13 +74,6 @@ export const updateSession = async (request: NextRequest) => {
   // 1. STATIC & API BYPASS
   if (pathname.includes('.') || pathname.startsWith('/_next') || pathname.startsWith('/api') || pathname.startsWith(ROUTES.auth.callback)) {
     return response;
-  }
-
-  const legacyRedirectPath = LEGACY_ROUTE_REDIRECTS[pathname]
-  if (legacyRedirectPath) {
-    const redirectUrl = request.nextUrl.clone()
-    redirectUrl.pathname = legacyRedirectPath
-    return NextResponse.redirect(redirectUrl)
   }
 
   // 1.5 LOCAL DEV ABSOLUTE BYPASS

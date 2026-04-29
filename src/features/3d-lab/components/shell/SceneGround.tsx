@@ -11,6 +11,7 @@ const GroundGrid = () => {
   return (
     <Grid
       position={[0, 0, 0]}
+      userData={{ slatecampCameraFitExclude: true }}
       infiniteGrid
       fadeDistance={500}
       fadeStrength={5}
@@ -36,6 +37,7 @@ export const SceneGround = () => {
       <GizmoHelper
         alignment="bottom-right"
         margin={[60, 60]}
+        userData={{ slatecampCameraFitExclude: true }}
       >
         <GizmoViewport
           axisColors={['#ef4444', '#22c55e', '#3b82f6']}

@@ -6,7 +6,8 @@ import type { ViewMode } from '@/features/3d-lab/types/templates'
 import type { ThreeDLabCameraControlConfig } from '@/features/3d-lab/components/controls/ThreeDLabControlsProvider'
 import type { CameraPreset } from '@/lib/pd1096/types'
 import {
-  getProjectionModeForSelectedPreset,
+  DEFAULT_VIEW_PRESET,
+  getProjectionModeAfterCommand,
   getSelectedCameraPresetAfterCommand,
   normalizeCameraCommandPreset,
   shouldClearManualOrbitForCommand,
@@ -25,6 +26,7 @@ export interface ViewportShellState {
   selectedCameraPreset: CameraPreset | null
   cameraCommandId: number
   cameraCommandPreset: CameraCommandPreset | null
+  cameraZoomDelta: number
   cameraControlConfig: ThreeDLabCameraControlConfig
 
   // Navigation mode
@@ -88,6 +90,7 @@ export interface ViewportShellState {
   setViewMode: (mode: ViewMode) => void
   setCameraPreset: (presetId: CameraPreset | null) => void
   snapToPreset: (preset: CameraCommandPreset, source?: 'toolbar' | 'shortcut' | 'context-menu' | 'system') => void
+  zoomByDelta: (delta: number) => void
   setCameraControlConfig: (config: ThreeDLabCameraControlConfig) => void
   resetCameraControlConfig: () => void
 
@@ -106,6 +109,7 @@ const DEFAULTS: Pick<
   | 'selectedCameraPreset'
   | 'cameraCommandId'
   | 'cameraCommandPreset'
+  | 'cameraZoomDelta'
   | 'cameraControlConfig'
   | 'mobileActiveTab'
   | 'bottomSheetOpen'
@@ -125,9 +129,10 @@ const DEFAULTS: Pick<
   leftSidebarCollapsed: false,
   rightSidebarCollapsed: false,
   activeViewMode: 'perspective',
-  selectedCameraPreset: 'perspective',
-  cameraCommandId: 0,
-  cameraCommandPreset: null,
+  selectedCameraPreset: DEFAULT_VIEW_PRESET,
+  cameraCommandId: 1,
+  cameraCommandPreset: 'zoom-to-fit',
+  cameraZoomDelta: 0,
   cameraControlConfig: {},
   navMode: 'orbit' as const,
   activeInteraction: 'idle' as const,
@@ -219,7 +224,6 @@ export const useViewportShellStore = create<ViewportShellState>()((set, get) => 
   setCameraPreset: (presetId) => {
     set({
       selectedCameraPreset: presetId,
-      projectionMode: getProjectionModeForSelectedPreset(presetId),
       manualOrbit: false,
     })
     get().invalidateFn?.()
@@ -229,13 +233,33 @@ export const useViewportShellStore = create<ViewportShellState>()((set, get) => 
     const s = get()
     const normalized = normalizeCameraCommandPreset(preset)
     const selectedCameraPreset = getSelectedCameraPresetAfterCommand(s.selectedCameraPreset, preset)
+    const clearManualOrbit = shouldClearManualOrbitForCommand(preset)
 
     set({
       selectedCameraPreset,
       cameraCommandId: s.cameraCommandId + 1,
       cameraCommandPreset: normalized,
-      projectionMode: getProjectionModeForSelectedPreset(selectedCameraPreset),
-      manualOrbit: shouldClearManualOrbitForCommand(preset) ? false : s.manualOrbit,
+      projectionMode: getProjectionModeAfterCommand(s.projectionMode, preset),
+      manualOrbit: clearManualOrbit ? false : s.manualOrbit,
+    })
+    get().invalidateFn?.()
+  },
+
+  zoomByDelta: (delta) => {
+    const safeDelta = Number.isFinite(delta)
+      ? Math.max(-100, Math.min(100, delta))
+      : 0
+
+    if (safeDelta === 0) return
+
+    const s = get()
+    set({
+      selectedCameraPreset: getSelectedCameraPresetAfterCommand(s.selectedCameraPreset, 'zoom-delta'),
+      cameraCommandId: s.cameraCommandId + 1,
+      cameraCommandPreset: 'zoom-delta',
+      cameraZoomDelta: safeDelta,
+      projectionMode: s.projectionMode,
+      manualOrbit: s.manualOrbit,
     })
     get().invalidateFn?.()
   },

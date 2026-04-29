@@ -298,23 +298,23 @@ export const BentoFeatureGrid = () => (
           </div>
         </div>
 
-        {/* AI — Camp Cream (no noise) */}
+        {/* SOURCE-BACKED STUDY — Camp Cream (no noise) */}
         <div className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 motion-safe:delay-[900ms] rounded-md border border-border-design bg-white p-7 transition-transform duration-150 hover:-translate-y-0.5'>
           <div className='relative z-10'>
             <span className='font-[family-name:var(--font-dm-mono)] text-[11px] tracking-[0.2em] uppercase text-marketing-subtle'>
-              [ Bounded Intelligence ]
+              [ Verified References ]
             </span>
             <h3 className='mt-7 font-[family-name:var(--font-syne)] text-[clamp(18px,2.2vw,26px)] font-extrabold leading-[1.1] text-camp-black'>
-              AI That Cites
+              Answers That Cite
               <br />
-              Its Sources
+              Their Sources
             </h3>
             <p className='mt-2 text-[13px] leading-relaxed text-text-2'>
-              Tethered to our verified database. Temperature 0.0. Every response
-              links to its exact source.
+              Tethered to verified wiki articles, taxonomy nodes, and question
+              rationales so study context stays traceable.
             </p>
             <div className='mt-3 flex gap-[5px]'>
-              <Pill variant='light'>Zero-Hallucination</Pill>
+              <Pill variant='light'>Traceable Sources</Pill>
             </div>
           </div>
         </div>
@@ -357,5 +357,4 @@ export const BentoFeatureGrid = () => (
     </div>
   </section>
 )
-
 

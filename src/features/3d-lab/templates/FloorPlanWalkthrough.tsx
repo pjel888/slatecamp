@@ -164,8 +164,8 @@ export default function FloorPlanWalkthrough({
             cameraPosition: cameraPos,
             cameraFov: cameraFov,
             showGround: false,
-            minDistance: 5,
-            maxDistance: 40,
+            minDistance: 0.01,
+            maxDistance: Infinity,
           }}
         >
           <FloorPlanScene

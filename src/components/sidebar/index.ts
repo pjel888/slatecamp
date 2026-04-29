@@ -10,6 +10,12 @@ export { MobileDrawer } from './MobileDrawer'
 export { MobileSidebarShell } from './MobileSidebarShell'
 export {
   Z_INDEX,
+  SIDEBAR_DIVIDER_INSET,
+  SIDEBAR_ICON_SLOT,
+  SIDEBAR_ITEM_GAP,
+  SIDEBAR_ITEM_STACK_GAP,
+  SIDEBAR_PADDING,
+  SIDEBAR_SECTION_GAP,
   SIDEBAR_WIDTH_COLLAPSED,
   SIDEBAR_WIDTH_EXPANDED,
   ICON_CONTAINER_CLASS,

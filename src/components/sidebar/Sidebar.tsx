@@ -8,6 +8,9 @@ import { SidebarNavItem } from './SidebarNavItem'
 import { SidebarFooter } from './SidebarFooter'
 import { SIDEBAR_GROUPS, DASHBOARD_ITEM, SETTINGS_ITEM } from './sidebar-constants'
 import {
+  SIDEBAR_DIVIDER_INSET,
+  SIDEBAR_PADDING,
+  SIDEBAR_SECTION_GAP,
   SIDEBAR_WIDTH_COLLAPSED,
   SIDEBAR_WIDTH_EXPANDED,
   TRANSITION,
@@ -15,6 +18,7 @@ import {
 import type { SidebarProps } from './types'
 import { useActiveSession } from '@/lib/context/active-session-context'
 import { ConfirmDialog } from '@/components/ui/dialog'
+import { cn } from '@/lib/utils'
 
 // ---------------------------------------------------------------------------
 // Sidebar — structural nav shell for push layout
@@ -120,6 +124,12 @@ export const Sidebar = ({ userDisplay, tier, isAdmin: _isAdmin, isDevMode: _isDe
   const isActive = (href: string, exact = false) =>
     exact ? pathname === href : pathname === href || pathname.startsWith(href + '/')
 
+  const sidebarPaddingStyle = { paddingInline: SIDEBAR_PADDING }
+  const dividerStyle = {
+    marginInline: SIDEBAR_DIVIDER_INSET,
+    marginBlock: SIDEBAR_SECTION_GAP,
+  }
+
   return (
     <>
       <ConfirmDialog
@@ -160,10 +170,10 @@ export const Sidebar = ({ userDisplay, tier, isAdmin: _isAdmin, isDevMode: _isDe
         {/* Scrollable body */}
         <div
           style={{ padding: 0 }}
-          className="flex flex-1 flex-col overflow-y-auto overflow-x-hidden py-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+          className="flex flex-1 flex-col overflow-y-auto overflow-x-hidden py-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
         >
           {/* Dashboard — standalone */}
-          <div className="pt-4 pb-4 px-[6px]">
+          <div className="pt-2" style={sidebarPaddingStyle}>
             <SidebarNavItem
               item={DASHBOARD_ITEM}
               isActive={isActive(DASHBOARD_ITEM.href, true)}
@@ -174,21 +184,31 @@ export const Sidebar = ({ userDisplay, tier, isAdmin: _isAdmin, isDevMode: _isDe
           </div>
 
           {/* Separator */}
-          <div className="mx-[6px] pt-2 pb-4 border-t border-border" />
+          <div className="border-t border-border" style={dividerStyle} />
 
           {/* Nav groups */}
-          <div className="flex flex-col gap-3 px-[6px] pt-2">
+          <div className="flex flex-col gap-3" style={sidebarPaddingStyle}>
             {SIDEBAR_GROUPS.map((group, groupIdx) => (
-              <div key={group.key} className="flex flex-col gap-0.5">
-                {/* Group label (expanded) → thin divider (collapsed), skip divider for first group */}
-                <div className="h-5 flex items-center">
-                  {expanded ? (
-                    <span className="px-2 text-[8px] font-bold tracking-wider text-text-tertiary uppercase select-none">
-                      {group.label}
-                    </span>
-                  ) : groupIdx > 0 ? (
-                    <div className="mx-1 w-full border-t border-border/40" />
-                  ) : null}
+              <div key={group.key} className="flex flex-col gap-1">
+                {/* Group header slot stays mounted at the same height in both states.
+                    Only opacity changes, so section labels never push icon rows. */}
+                <div className="relative flex h-5 items-center overflow-hidden">
+                  <span
+                    aria-hidden={!expanded}
+                    className={cn(
+                      'px-2 text-[8px] font-bold tracking-wider text-text-tertiary uppercase select-none',
+                      'transition-[opacity,transform] duration-[180ms] ease-out motion-reduce:transition-none motion-reduce:transform-none',
+                      expanded ? 'translate-x-0 opacity-100' : 'pointer-events-none translate-x-1 opacity-0',
+                    )}
+                  >
+                    {group.label}
+                  </span>
+                  {!expanded && groupIdx > 0 && (
+                    <div
+                      aria-hidden="true"
+                      className="absolute inset-x-1 top-1/2 border-t border-border/40"
+                    />
+                  )}
                 </div>
                 {group.items.map((navItem) => (
                   <SidebarNavItem
@@ -209,7 +229,7 @@ export const Sidebar = ({ userDisplay, tier, isAdmin: _isAdmin, isDevMode: _isDe
         </div>
 
         {/* Settings — pinned above footer, outside scrollable body for spatial lock */}
-        <div className="shrink-0 pb-4" style={{ padding: '0 6px 16px' }}>
+        <div className="shrink-0 pb-3" style={sidebarPaddingStyle}>
           <SidebarNavItem
             item={SETTINGS_ITEM}
             isActive={isActive(SETTINGS_ITEM.href)}

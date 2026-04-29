@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useRef, type ChangeEvent } from 'react'
 import {
   Rotate3d, Hand,
   ArrowUp, ArrowDown, ArrowLeft, ArrowRight, Undo2,
@@ -10,7 +10,6 @@ import {
 } from 'lucide-react'
 import { useViewportShellStore } from '@/features/3d-lab/stores/useViewportShellStore'
 import {
-  isIsoPreset,
   type CameraCommandPreset,
   type CameraSelectionPreset,
 } from '@/features/3d-lab/utils/camera-presets'
@@ -65,12 +64,16 @@ const PRESET_TO_BUTTON: Partial<Record<CameraSelectionPreset, string>> = {
 
 export const CameraNavigationBar = () => {
   const snapToPreset = useViewportShellStore((s) => s.snapToPreset)
+  const zoomByDelta = useViewportShellStore((s) => s.zoomByDelta)
   const navMode = useViewportShellStore((s) => s.navMode)
   const activeInteraction = useViewportShellStore((s) => s.activeInteraction)
   const setNavMode = useViewportShellStore((s) => s.setNavMode)
   const selectedCameraPreset = useViewportShellStore((s) => s.selectedCameraPreset)
+  const projectionMode = useViewportShellStore((s) => s.projectionMode)
   const manualOrbit = useViewportShellStore((s) => s.manualOrbit)
   const [flashId, setFlashId] = useState<string | null>(null)
+  const [zoomSlider, setZoomSlider] = useState(0)
+  const zoomSliderRef = useRef(0)
 
   const handleClick = useCallback((btn: NavButtonDef) => {
     if (btn.type === 'mode' && btn.mode) {
@@ -94,17 +97,88 @@ export const CameraNavigationBar = () => {
     }
 
     if (btn.type === 'snap' && btn.preset) {
+      if (btn.id === 'persp') return projectionMode === 'perspective'
+      if (btn.id === 'iso') return projectionMode === 'orthographic'
       if (manualOrbit) return false
-      if (btn.id === 'iso') return isIsoPreset(selectedCameraPreset)
       return PRESET_TO_BUTTON[selectedCameraPreset ?? 'perspective'] === btn.id
     }
 
     return flashId === btn.id
   }
 
+  const handleZoomSliderChange = useCallback((event: ChangeEvent<HTMLInputElement>) => {
+    const nextValue = Number(event.target.value)
+    const delta = nextValue - zoomSliderRef.current
+    zoomSliderRef.current = nextValue
+    setZoomSlider(nextValue)
+    zoomByDelta(delta)
+  }, [zoomByDelta])
+
+  const resetZoomSlider = useCallback(() => {
+    zoomSliderRef.current = 0
+    setZoomSlider(0)
+  }, [])
+
+  const renderButton = (btn: NavButtonDef) => {
+    const active = isActive(btn)
+    const Icon = btn.icon
+
+    return (
+      <button
+        key={btn.id}
+        type="button"
+        onClick={() => handleClick(btn)}
+        aria-label={btn.label}
+        aria-pressed={active}
+        data-testid={`3dlab-control-${btn.id}`}
+        title={btn.label}
+        className="flex flex-col items-center justify-center gap-0.5 rounded-md px-1.5 py-1 min-w-[36px] transition-colors duration-150 ease-out"
+        style={{
+          backgroundColor: active ? 'var(--viewport-overlay-active)' : 'transparent',
+          color: active ? 'white' : 'var(--viewport-overlay-text)',
+        }}
+      >
+        <Icon className="h-3.5 w-3.5" />
+        <span className="text-[8px] font-mono leading-none">{btn.label}</span>
+      </button>
+    )
+  }
+
+  const renderZoomGroup = (groupButtons: NavButtonDef[]) => {
+    const zoomOut = groupButtons.find((btn) => btn.id === 'zoom-out')
+    const zoomIn = groupButtons.find((btn) => btn.id === 'zoom-in')
+    const zoomFit = groupButtons.find((btn) => btn.id === 'zoom-fit')
+
+    return (
+      <>
+        {zoomOut && renderButton(zoomOut)}
+        <label className="flex h-9 w-24 items-center px-1" title="Drag right to zoom in, left to zoom out">
+          <span className="sr-only">Camera zoom slider</span>
+          <input
+            type="range"
+            min={-100}
+            max={100}
+            step={1}
+            value={zoomSlider}
+            onChange={handleZoomSliderChange}
+            onPointerUp={resetZoomSlider}
+            onKeyUp={resetZoomSlider}
+            onBlur={resetZoomSlider}
+            aria-label="Camera zoom slider"
+            data-testid="3dlab-control-zoom-slider"
+            className="h-2 w-full cursor-ew-resize rounded-full"
+            style={{ accentColor: 'var(--viewport-overlay-active)' }}
+          />
+        </label>
+        {zoomIn && renderButton(zoomIn)}
+        {zoomFit && renderButton(zoomFit)}
+      </>
+    )
+  }
+
   return (
     <div
-      className="absolute bottom-3 left-1/2 z-20 -translate-x-1/2 flex items-center gap-0.5 rounded-lg px-1 py-1 pointer-events-auto cursor-default"
+      className="absolute bottom-12 left-1/2 z-20 -translate-x-1/2 flex items-center gap-0.5 rounded-lg px-1 py-1 pointer-events-auto cursor-default"
       style={{ backgroundColor: 'var(--viewport-overlay-bg)', backdropFilter: 'blur(8px)' }}
     >
       {GROUPS.map((group, gi) => {
@@ -116,29 +190,7 @@ export const CameraNavigationBar = () => {
             {gi > 0 && (
               <div className="mx-1 h-8 w-px self-center" style={{ backgroundColor: 'var(--viewport-overlay-text)', opacity: 0.15 }} />
             )}
-            {groupButtons.map((btn) => {
-              const active = isActive(btn)
-              const Icon = btn.icon
-              return (
-                <button
-                  key={btn.id}
-                  type="button"
-                  onClick={() => handleClick(btn)}
-                  aria-label={btn.label}
-                  aria-pressed={active}
-                  data-testid={`3dlab-control-${btn.id}`}
-                  title={btn.label}
-                  className="flex flex-col items-center justify-center gap-0.5 rounded-md px-1.5 py-1 min-w-[36px] transition-colors duration-150 ease-out"
-                  style={{
-                    backgroundColor: active ? 'var(--viewport-overlay-active)' : 'transparent',
-                    color: active ? 'white' : 'var(--viewport-overlay-text)',
-                  }}
-                >
-                  <Icon className="h-3.5 w-3.5" />
-                  <span className="text-[8px] font-mono leading-none">{btn.label}</span>
-                </button>
-              )
-            })}
+            {group === 'zoom' ? renderZoomGroup(groupButtons) : groupButtons.map(renderButton)}
           </span>
         )
       })}
