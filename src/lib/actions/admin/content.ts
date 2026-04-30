@@ -8,7 +8,6 @@ import { ROUTES } from '@/lib/routes'
 import { logServerError } from '@/lib/logging/server'
 import {
   getStatusWriteCandidates,
-  isLegacyStatusConstraintError,
   normalizeEditorStatus,
 } from '@/lib/admin/editor-workflow'
 import {
@@ -66,32 +65,14 @@ const updateWikiArticleWithCompatibleStatus = async ({
   articleId: string
   payload: Record<string, unknown>
 }) => {
-  const writeCandidates = getStatusWriteCandidates(payload.status as string | null | undefined)
-  let error: { code?: string; message?: string } | null = null
-
-  for (const candidate of writeCandidates) {
-    const result = await supabase
-      .from('wiki_articles')
-      .update({
-        ...payload,
-        status: candidate,
-      })
-      .eq('article_id', articleId)
-
-    error = result.error
-
-    if (!error) {
-      break
-    }
-
-    const shouldRetryCompatibilityWrite =
-      candidate !== writeCandidates[writeCandidates.length - 1] &&
-      isLegacyStatusConstraintError(error)
-
-    if (!shouldRetryCompatibilityWrite) {
-      break
-    }
-  }
+  const [status] = getStatusWriteCandidates(payload.status as string | null | undefined)
+  const { error } = await supabase
+    .from('wiki_articles')
+    .update({
+      ...payload,
+      status,
+    })
+    .eq('article_id', articleId)
 
   return { error }
 }
@@ -103,35 +84,16 @@ const insertWikiArticleWithCompatibleStatus = async ({
   supabase: ReturnType<typeof createAdminClient>
   payload: Record<string, unknown>
 }) => {
-  const writeCandidates = getStatusWriteCandidates(payload.status as string | null | undefined)
-  let lastResult: { data: any; error: any } | null = null
+  const [status] = getStatusWriteCandidates(payload.status as string | null | undefined)
 
-  for (const candidate of writeCandidates) {
-    const result = await supabase
-      .from('wiki_articles')
-      .insert({
-        ...payload,
-        status: candidate,
-      })
-      .select('article_id, slug')
-      .single()
-
-    lastResult = result
-
-    if (!result.error) {
-      break
-    }
-
-    const shouldRetryCompatibilityWrite =
-      candidate !== writeCandidates[writeCandidates.length - 1] &&
-      isLegacyStatusConstraintError(result.error)
-
-    if (!shouldRetryCompatibilityWrite) {
-      break
-    }
-  }
-
-  return lastResult ?? { data: null, error: new Error('Failed to insert wiki article') }
+  return supabase
+    .from('wiki_articles')
+    .insert({
+      ...payload,
+      status,
+    })
+    .select('article_id, slug')
+    .single()
 }
 
 const ensureArticlePublishableForStatus = async ({

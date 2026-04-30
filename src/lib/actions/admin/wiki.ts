@@ -8,10 +8,7 @@ import { assertPermission } from "@/lib/admin/roles";
 import { CACHE_TAGS } from '../cache-tags'
 import { ROUTES } from '@/lib/routes'
 import { logServerError } from '@/lib/logging/server'
-import {
-  getStatusWriteCandidates,
-  isLegacyStatusConstraintError,
-} from '@/lib/admin/editor-workflow'
+import { getStatusWriteCandidates } from '@/lib/admin/editor-workflow'
 import { compileMdxPreview } from './content'
 
 const UpdateWikiArticleSchema = z.object({
@@ -50,32 +47,15 @@ export const updateWikiArticle = async (id: string, data: z.infer<typeof UpdateW
 
   // Use raw data for update to avoid Zod object differences if needed, 
   // but parsed data is safer.
-  const writeCandidates = getStatusWriteCandidates(parsed.data.status)
-  let error: { code?: string; message?: string } | null = null
-
-  for (const candidate of writeCandidates) {
-    const result = await supabase
-      .from('wiki_articles')
-      .update({
-        ...parsed.data,
-        status: candidate,
-        updated_at: new Date().toISOString(),
-      })
-      .eq('article_id', id)
-
-    error = result.error
-    if (!error) {
-      break
-    }
-
-    const shouldRetryCompatibilityWrite =
-      candidate !== writeCandidates[writeCandidates.length - 1] &&
-      isLegacyStatusConstraintError(error)
-
-    if (!shouldRetryCompatibilityWrite) {
-      break
-    }
-  }
+  const [status] = getStatusWriteCandidates(parsed.data.status)
+  const { error } = await supabase
+    .from('wiki_articles')
+    .update({
+      ...parsed.data,
+      status,
+      updated_at: new Date().toISOString(),
+    })
+    .eq('article_id', id)
 
   if (!error) {
     revalidateTag(CACHE_TAGS.wiki, 'max')
@@ -125,38 +105,18 @@ export const createWikiArticle = async (data: z.infer<typeof UpdateWikiArticleSc
 
   const supabase = createAdminClient()
 
-  const writeCandidates = getStatusWriteCandidates(parsed.data.status)
-  let newArticle = null
-  let error: { code?: string; message?: string } | null = null
-
-  for (const candidate of writeCandidates) {
-    const result = await supabase
-      .from('wiki_articles')
-      .insert([{
-        ...parsed.data,
-        author_id: parsed.data.author_id || user?.id,
-        status: candidate,
-        created_at: new Date().toISOString(),
-        updated_at: new Date().toISOString()
-      }])
-      .select()
-      .single()
-
-    newArticle = result.data
-    error = result.error
-
-    if (!error) {
-      break
-    }
-
-    const shouldRetryCompatibilityWrite =
-      candidate !== writeCandidates[writeCandidates.length - 1] &&
-      isLegacyStatusConstraintError(error)
-
-    if (!shouldRetryCompatibilityWrite) {
-      break
-    }
-  }
+  const [status] = getStatusWriteCandidates(parsed.data.status)
+  const { data: newArticle, error } = await supabase
+    .from('wiki_articles')
+    .insert([{
+      ...parsed.data,
+      author_id: parsed.data.author_id || user?.id,
+      status,
+      created_at: new Date().toISOString(),
+      updated_at: new Date().toISOString()
+    }])
+    .select()
+    .single()
 
   let mappingError = null
 

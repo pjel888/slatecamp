@@ -75,6 +75,25 @@ describe('Admin Roles', () => {
       expect(role).toBe('content_admin')
     })
 
+    test('returns canonical user_roles rows before auth metadata', async () => {
+      mockGetUser.mockResolvedValue({
+        data: {
+          user: {
+            id: 'user-1',
+            email: 'dev@example.com',
+            app_metadata: { role: 'owner' },
+            user_metadata: { role: 'developer' },
+          },
+        },
+        error: null,
+      })
+      mockDbRole = 'content_admin'
+      mockProfileRole = 'ceo'
+
+      const role = await getUserRole()
+      expect(role).toBe('content_admin')
+    })
+
     test('returns role from auth metadata before database fallbacks', async () => {
       mockGetUser.mockResolvedValue({
         data: {
@@ -139,9 +158,22 @@ describe('Admin Roles', () => {
       expect(await isAdmin()).toBe(true)
     })
 
-    test('isAdmin returns true for content_admin', async () => {
-      mockRole('content_admin')
-      expect(await isAdmin()).toBe(true)
+    test('isAdmin mirrors admin CMS policy for internal staff roles', async () => {
+      for (const role of [
+        'owner',
+        'super_admin',
+        'content_admin',
+        'sme_reviewer',
+        'admin',
+        'developer',
+        'ceo',
+      ]) {
+        mockRole(role)
+        expect(await isAdmin()).toBe(true)
+      }
+
+      mockRole('member')
+      expect(await isAdmin()).toBe(false)
     })
 
     test('isSuperAdmin returns true for super_admin and owner', async () => {

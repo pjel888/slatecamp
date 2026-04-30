@@ -29,6 +29,7 @@
     "test:e2e:headed": "bun scripts/playwright-run.ts headed",
     "test:e2e:ui": "bun scripts/playwright-run.ts ui",
     "check:entitlements": "bun run scripts/check-entitlement-legacy-usage.ts",
+    "check:auth-cleanup-readiness": "bun --env-file=.env.local scripts/check-auth-cleanup-readiness.ts",
     "design:lint": "bunx --bun @google/design.md@0.1.0 lint DESIGN.md",
     "type-check": "bun scripts/type-check.ts",
     "test": "bun test src/",

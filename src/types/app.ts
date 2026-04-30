@@ -637,7 +637,6 @@ export interface FeatureFlagRecord {
   description: string | null
   enabled: boolean
   target_tier: string[]
-  target_roles: string[]
   created_by: string | null
   created_at: string
   updated_at: string

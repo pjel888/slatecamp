@@ -53,7 +53,6 @@ export interface NormalizedFeatureFlag {
   enabled: boolean
   allowedTiers: UserTier[]
   rawTargetTier: string[]
-  rawTargetRoles: string[]
   normalizationTrace: string[]
 }
 

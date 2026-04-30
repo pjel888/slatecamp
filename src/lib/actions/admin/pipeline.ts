@@ -61,24 +61,10 @@ export const updateArticleStatus = async (articleId: string, newStatus: string) 
     }
   }
 
-  let { error } = await supabase
+  const { error } = await supabase
     .from('wiki_articles')
     .update({ status: canonicalStatus, updated_at: new Date().toISOString() })
     .eq('article_id', articleId)
-
-  const shouldRetryLegacyReviewStatus =
-    canonicalStatus === 'in_review' &&
-    error &&
-    (error.code === '23514' || error.message.includes('status'))
-
-  if (shouldRetryLegacyReviewStatus) {
-    const legacyResult = await supabase
-      .from('wiki_articles')
-      .update({ status: 'pending_review', updated_at: new Date().toISOString() })
-      .eq('article_id', articleId)
-
-    error = legacyResult.error
-  }
 
   if (error) {
     await logServerError({

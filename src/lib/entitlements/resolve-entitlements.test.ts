@@ -132,7 +132,6 @@ describe('resolve entitlements', () => {
           enabled: false,
           allowedTiers: [],
           rawTargetTier: [],
-          rawTargetRoles: [],
           normalizationTrace: ['disabled'],
         },
       },
@@ -145,5 +144,39 @@ describe('resolve entitlements', () => {
 
     expect(decision.allowed).toBe(false)
     expect(decision.reason).toBe('feature_disabled')
+  })
+
+  test('uses tier-only feature flags for feature decisions', () => {
+    const entitlements = buildViewerEntitlements({
+      traceId: 'test-trace',
+      userId: 'user-1',
+      email: 'admin@example.com',
+      rawTier: 'free',
+      subscriptionStatus: 'active',
+      roleResolution: {
+        ...baseRoleResolution,
+        normalizedRole: 'content_admin',
+        compatibilityRole: 'content_admin',
+        resolvedFrom: 'user_roles',
+      },
+      overrides: baseOverrides,
+      featureFlags: {
+        [ENTITLEMENT_FEATURE_KEYS.questionsUnlimited]: {
+          key: ENTITLEMENT_FEATURE_KEYS.questionsUnlimited,
+          enabled: true,
+          allowedTiers: ['pro'],
+          rawTargetTier: ['pro'],
+          normalizationTrace: ['key:questions_unlimited'],
+        },
+      },
+    })
+
+    const decision = evaluateFeatureAccess(
+      entitlements,
+      ENTITLEMENT_FEATURE_KEYS.questionsUnlimited,
+    )
+
+    expect(decision.allowed).toBe(false)
+    expect(decision.reason).toBe('insufficient_tier')
   })
 })

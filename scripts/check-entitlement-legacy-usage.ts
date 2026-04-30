@@ -31,6 +31,7 @@ const BANNED_PATTERNS = [
       'DATABASE_SCHEMA.sql',
       'scripts/check-entitlement-legacy-usage.ts',
       'src/lib/entitlements/normalize-feature-flag.test.ts',
+      'scripts/check-auth-cleanup-readiness.ts',
     ],
   },
   {
@@ -48,6 +49,8 @@ const BANNED_PATTERNS = [
       'src/lib/supabase/client.ts',
       'src/lib/supabase/middleware.ts',
       'src/lib/supabase/middleware.test.ts',
+      // Playwright harnesses may set deterministic dev-force env for real-DB E2E only.
+      'scripts/playwright-run.ts',
       'scripts/playwright-web-server.ts',
       'scripts/check-entitlement-legacy-usage.ts',
       'src/lib/admin/roles.test.ts',

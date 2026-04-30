@@ -3,20 +3,16 @@ import { describe, expect, test } from 'bun:test'
 import { normalizeFeatureFlagRecord } from './normalize-feature-flag'
 
 describe('normalizeFeatureFlagRecord', () => {
-  test('expands legacy paid tier shape to all canonical paid tiers', () => {
+  test('drops legacy paid tier values after launch data normalization', () => {
     const normalized = normalizeFeatureFlagRecord({
       key: '3d_lab_full',
       enabled: true,
       target_tier: ['camp', 'insurance', 'institutional'],
-      target_roles: [],
     })
 
-    expect(normalized.allowedTiers).toEqual([
-      'pro',
-      'prime',
-      'institutional',
-      'enterprise',
-    ])
+    expect(normalized.allowedTiers).toEqual(['institutional'])
+    expect(normalized.normalizationTrace).toContain('unknown-tier:camp')
+    expect(normalized.normalizationTrace).toContain('unknown-tier:insurance')
   })
 
   test('keeps canonical tiers unchanged', () => {
@@ -24,7 +20,6 @@ describe('normalizeFeatureFlagRecord', () => {
       key: 'questions_unlimited',
       enabled: true,
       target_tier: ['pro', 'prime'],
-      target_roles: [],
     })
 
     expect(normalized.allowedTiers).toEqual(['pro', 'prime'])
@@ -35,7 +30,6 @@ describe('normalizeFeatureFlagRecord', () => {
       key: 'unknown_feature',
       enabled: true,
       target_tier: ['free', 'mystery-tier'],
-      target_roles: [],
     })
 
     expect(normalized.allowedTiers).toEqual(['free'])

@@ -1139,7 +1139,6 @@ export type Database = {
           enabled: boolean
           id: string
           key: string
-          target_roles: string[] | null
           target_tier: string[] | null
           updated_at: string
         }
@@ -1150,7 +1149,6 @@ export type Database = {
           enabled?: boolean
           id?: string
           key: string
-          target_roles?: string[] | null
           target_tier?: string[] | null
           updated_at?: string
         }
@@ -1161,7 +1159,6 @@ export type Database = {
           enabled?: boolean
           id?: string
           key?: string
-          target_roles?: string[] | null
           target_tier?: string[] | null
           updated_at?: string
         }

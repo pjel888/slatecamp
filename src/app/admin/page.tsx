@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { ROUTES } from '@/lib/routes'
 import { Plus, FileText, UploadSimple, ArrowRight, Warning, ClipboardText, GitBranch, SquaresFour } from '@phosphor-icons/react/dist/ssr'
 import { getAdminDashboardData, getContentBySubject, getCriticalCoverageGap, getNeedsAttentionData } from '@/lib/actions/admin/dashboard'
-import { getUserRole } from '@/lib/admin/roles'
+import { resolveCurrentUserRole } from '@/lib/entitlements/resolve-role'
 import { hasPermission } from '@/lib/entitlements/policy'
 import { formatRelativeTime } from '@/lib/utils/format-time'
 import { SectionHeader } from '@/components/shared/section-header'
@@ -79,9 +79,9 @@ const ALL_QUICK_ACTIONS = [
 /* ------------------------------------------------------------------ */
 
 const AdminDashboardPage = async () => {
-  const role = await getUserRole()
+  const { normalizedRole: role } = await resolveCurrentUserRole()
   const quickActions = ALL_QUICK_ACTIONS.filter((action) =>
-    role ? hasPermission(role, action.permission) : false,
+    hasPermission(role, action.permission),
   )
 
   const [data, subjectCounts, coverageGap, attentionData] = await Promise.all([

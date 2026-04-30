@@ -78,7 +78,7 @@ const loadViewerEntitlementSnapshot = cache(async (): Promise<ViewerEntitlements
         .maybeSingle(),
       supabase
         .from('feature_flags')
-        .select('key, enabled, target_tier, target_roles'),
+        .select('key, enabled, target_tier'),
     ])
 
   const roleResolution = resolveRoleFromInputs({
@@ -119,29 +119,6 @@ const loadViewerEntitlementSnapshot = cache(async (): Promise<ViewerEntitlements
             'feature_flags.key',
           ),
         )
-      }
-
-      if ((record.target_roles ?? []).length > 0) {
-        logEntitlementAuditEvent({
-          eventName: 'entitlement.config.mismatch',
-          timestamp: new Date().toISOString(),
-          traceId,
-          userId: user.id,
-          routeOrAction: 'feature_flags.target_roles',
-          featureKey: normalized.key,
-          normalizedRole: roleResolution.normalizedRole,
-          roleSource: roleResolution.resolvedFrom,
-          rawTier,
-          subscriptionStatus: normalizeSubscriptionStatus(subscription?.status ?? null),
-          effectiveTier: rawTier,
-          overrideState: {
-            ...overrides,
-            featureOverrides: Object.fromEntries(
-              Object.entries(overrides.featureOverrides),
-            ),
-          },
-          trace: ['target_roles_present_but_runtime_ignored'],
-        })
       }
 
       return [normalized.key, normalized]

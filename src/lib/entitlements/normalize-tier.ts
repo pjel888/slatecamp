@@ -1,13 +1,6 @@
 import type { UserTier } from '@/types/app'
 import type { EntitlementAuditEvent } from './types'
 
-type LegacyTier = 'camp' | 'insurance'
-
-const LEGACY_TIER_MAP: Record<LegacyTier, UserTier> = {
-  camp: 'pro',
-  insurance: 'institutional',
-}
-
 const CANONICAL_TIERS = new Set<UserTier>([
   'free',
   'pro',
@@ -45,16 +38,6 @@ export const normalizeTierValue = (
       wasLegacy: false,
       rawValue: value,
       trace: [`${context}:${value}`],
-    }
-  }
-
-  if (typeof value === 'string' && value in LEGACY_TIER_MAP) {
-    const normalized = LEGACY_TIER_MAP[value as LegacyTier]
-    return {
-      tier: normalized,
-      wasLegacy: true,
-      rawValue: value,
-      trace: [`${context}:legacy(${value})=>${normalized}`],
     }
   }
 

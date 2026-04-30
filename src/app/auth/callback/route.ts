@@ -3,6 +3,8 @@ import { createClient } from "@/lib/supabase/server";
 import { isDemoMode } from "@/lib/demo/config";
 import { trackServerEvent } from "@/lib/analytics-server";
 import { ROUTES } from "@/lib/routes";
+import { canAccessAdminCmsForRole } from "@/lib/entitlements/policy";
+import { resolveCurrentUserRole } from "@/lib/entitlements/resolve-role";
 
 const normalizeNextPath = (next: string | null): string => {
   if (!next || !next.startsWith("/") || next.startsWith("//")) {
@@ -55,8 +57,8 @@ export async function GET(request: Request) {
         trackServerEvent('signup_completed', { source: signup_source, utm_campaign, utm_medium })
       }
 
-      const { isAdmin } = await import("@/lib/admin/roles");
-      const isUserAdmin = await isAdmin();
+      const roleResolution = await resolveCurrentUserRole();
+      const isUserAdmin = canAccessAdminCmsForRole(roleResolution.normalizedRole);
       
       let redirectPath = next;
       

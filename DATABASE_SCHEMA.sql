@@ -1151,7 +1151,6 @@ CREATE TABLE feature_flags (
   description                              TEXT,
   enabled                                  BOOLEAN NOT NULL DEFAULT FALSE,
   target_tier                              TEXT[] DEFAULT '{}',
-  target_roles                             TEXT[] DEFAULT '{}',
   created_by                               UUID,
   created_at                               TIMESTAMPTZ NOT NULL DEFAULT now(),
   updated_at                               TIMESTAMPTZ NOT NULL DEFAULT now()

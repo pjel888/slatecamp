@@ -182,9 +182,11 @@ describe('admin/pipeline', () => {
     )
   })
 
-  test('falls back to pending_review when canonical in_review is rejected by legacy schema', async () => {
+  test('does not fall back to pending_review when canonical in_review is rejected', async () => {
     simulateLegacyReviewSchema = true
-    await expect(updateArticleStatus('article-legacy', 'in_review')).resolves.toBeUndefined()
-    expect(legacyUpdateEqMock).toHaveBeenCalledTimes(1)
+    await expect(updateArticleStatus('article-legacy', 'in_review')).rejects.toThrow(
+      'status constraint',
+    )
+    expect(legacyUpdateEqMock).toHaveBeenCalledTimes(0)
   })
 })
