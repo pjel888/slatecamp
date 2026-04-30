@@ -54,8 +54,8 @@ export const ROUTES = {
     cramCard: '/dashboard/cram-card',
     daeMode: '/dashboard/dae-mode',
     designProblems: '/dashboard/area-c/design-problems',
-    drills: '/dashboard/drills',
-    drillsSessions: '/dashboard/drills/sessions',
+    drills: '/quiz',
+    drillsSessions: '/quiz/sessions',
     flash: '/dashboard/flash',
     notes: '/dashboard/notes',
     notifications: '/dashboard/notifications',
@@ -71,13 +71,26 @@ export const ROUTES = {
     trailToday: (slug: string) => `/dashboard/camptrails/${slug}/today` as const,
   },
 
-  // ── Quiz & Drills (unified engine) ───────────
+  // ── Quiz (canonical learning-assessment surface) ───────────
   quiz: {
-    hub: '/dashboard/drills',
+    root: '/quiz',
+    hub: '/quiz',
+    sessions: '/quiz/sessions',
+    legacyHub: '/dashboard/drills',
+    legacySessions: '/dashboard/drills/sessions',
     setup: (mode: string) => `/quiz/${mode}/setup` as const,
-    session: (mode: string, sessionId: string) => `/quiz/${mode}/session/${sessionId}` as const,
-    results: (mode: string, sessionId: string) => `/quiz/${mode}/session/${sessionId}/results` as const,
-    review: (mode: string, sessionId: string) => `/quiz/${mode}/session/${sessionId}/review` as const,
+    session: (sessionIdOrMode: string, maybeSessionId?: string) =>
+      maybeSessionId
+        ? `/quiz/${sessionIdOrMode}/session/${maybeSessionId}`
+        : `/quiz/session/${sessionIdOrMode}`,
+    results: (sessionIdOrMode: string, maybeSessionId?: string) =>
+      maybeSessionId
+        ? `/quiz/${sessionIdOrMode}/session/${maybeSessionId}/results`
+        : `/quiz/session/${sessionIdOrMode}/results`,
+    review: (sessionIdOrMode: string, maybeSessionId?: string) =>
+      maybeSessionId
+        ? `/quiz/${sessionIdOrMode}/session/${maybeSessionId}/review`
+        : `/quiz/session/${sessionIdOrMode}/review`,
   },
 
   // ── 3D Lab ───────────────────────────────────
@@ -92,14 +105,20 @@ export const ROUTES = {
     article: (slug: string) => `/dashboard/wiki/${slug}` as const,
   },
 
-  // ── Calculators & Tools ──────────────────────
+  // ── Tools / Calculators ──────────────────────
   calculators: {
     root: '/tools',
+    suiteRoot: '/tools',
+    chb: '/tools/chb',
+    drywall: '/tools/drywall',
     floorTiles: '/tools/floor-tiles-calculator',
-    wallPaint: '/tools/wall-paint-calculator',
+    flooring: '/tools/flooring',
+    legacySuiteRoot: '/calculators',
     lotPlotter: '/tools/lot-plotter',
-    suiteRoot: '/calculators',
-    tool: (slug: string) => `/calculators/${slug}` as const,
+    paint: '/tools/paint',
+    wallPaint: '/tools/wall-paint-calculator',
+    legacyTool: (slug: string) => `/calculators/${slug}` as const,
+    tool: (slug: string) => `/tools/${slug}` as const,
   },
 
   // ── Admin ────────────────────────────────────
@@ -181,9 +200,18 @@ export const PUBLIC_ROUTES: string[] = [
   ROUTES.auth.resetPassword,
   ROUTES.auth.callback,
   ROUTES.calculators.root,
+  ROUTES.calculators.chb,
+  ROUTES.calculators.drywall,
   ROUTES.calculators.floorTiles,
-  ROUTES.calculators.wallPaint,
+  ROUTES.calculators.flooring,
+  ROUTES.calculators.legacySuiteRoot,
+  ROUTES.calculators.legacyTool('chb'),
+  ROUTES.calculators.legacyTool('drywall'),
+  ROUTES.calculators.legacyTool('flooring'),
+  ROUTES.calculators.legacyTool('paint'),
   ROUTES.calculators.lotPlotter,
+  ROUTES.calculators.paint,
+  ROUTES.calculators.wallPaint,
   ROUTES.try,
 ];
 
@@ -237,8 +265,8 @@ export const DASHBOARD_ROUTES: RouteConfig[] = [
   },
   {
     path: ROUTES.dashboard.drills,
-    title: 'Drills',
-    sidebarLabel: 'Drills',
+    title: 'Quiz',
+    sidebarLabel: 'Quiz',
     icon: Exam,
     group: 'practice',
   },
@@ -324,8 +352,9 @@ export const STATIC_PAGE_TITLES: Record<string, string> = Object.fromEntries(
 const DEFAULT_TITLE = 'Overview'
 
 const DYNAMIC_TITLE_PREFIXES: { prefix: string; title: string }[] = [
-  { prefix: '/dashboard/quiz/', title: 'Active Session' },
-  { prefix: '/dashboard/drills/', title: 'Drills' },
+  { prefix: '/quiz/session/', title: 'Quiz Session' },
+  { prefix: '/quiz/', title: 'Quiz' },
+  { prefix: '/dashboard/drills/', title: 'Quiz' },
   { prefix: '/dashboard/wiki/', title: 'Knowledge Wiki' },
   { prefix: '/dashboard/flash/', title: 'LEA Numbers Flash' },
   { prefix: '/dashboard/pods/', title: 'Study Pods' },

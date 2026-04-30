@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/illumination-levels.ts
+// src/features/3d-lab/config/modules/illumination-levels.ts
 // Illumination Levels — PEC (Philippine Electrical Code)
 // ─────────────────────────────────────────────────────────────────────────────
 

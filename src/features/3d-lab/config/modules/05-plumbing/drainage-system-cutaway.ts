@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/drainage-system-cutaway.ts
+// src/features/3d-lab/config/modules/drainage-system-cutaway.ts
 import type { CutawaySectionConfig } from '@/features/3d-lab/types/templates'
 
 export const drainageSystemCutawayConfig: CutawaySectionConfig = {

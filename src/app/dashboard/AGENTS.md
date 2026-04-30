@@ -1,14 +1,14 @@
 <!-- Parent: ../../../AGENTS.md -->
-<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-16 -->
+<!-- Generated: 2026-04-16 | Reality Refresh: 2026-04-30 -->
 
 # dashboard
 
 <!-- REALITY-REFRESH:START -->
-## 2026-04-16 Reality Refresh
+## 2026-04-30 Reality Refresh
 
 **Scope:** `src/app/dashboard/` subtree
 
-**Current snapshot:** 61 directories and 146 files beneath this scope (excluding this `AGENTS.md`).
+**Current snapshot:** 54 directories and 130 files beneath this scope (excluding this `AGENTS.md`).
 
 **Top local directories:** `3d-lab/`, `analytics/`, `area-c/`, `assessment/`, `camptrails/`, `code-updates/`, `cram-card/`, `dae-mode/`, `developer/`, `drills/`
 
@@ -29,3 +29,7 @@
 - If older notes, counts, or examples elsewhere in this file drift from the live tree, prefer current code and this reality-refresh block.
 - When you change structure, ownership, workflow, or key file references in this scope, update this `AGENTS.md` in the same change.
 <!-- REALITY-REFRESH:END -->
+
+### 2026-04-30 quiz/drills ownership note
+- `drills/` remains only as a legacy redirect subtree to `/quiz` and `/quiz/sessions`.
+- New standard quiz UI, sessions, results, and review work belongs under `src/app/quiz/`, not `src/app/dashboard/drills/`.

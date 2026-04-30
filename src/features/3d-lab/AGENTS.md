@@ -8,7 +8,7 @@
 
 **Scope:** `src/features/3d-lab/` subtree
 
-**Current snapshot:** 54 directories and 524 files beneath this scope (excluding this `AGENTS.md`).
+**Current snapshot:** 50 directories and 514 files beneath this scope (excluding this `AGENTS.md`).
 
 **Top local directories:** `components/`, `config/`, `constants/`, `DevControlsModule/`, `hooks/`, `scenes/`, `stores/`, `templates/`, `types/`, `utils/`
 

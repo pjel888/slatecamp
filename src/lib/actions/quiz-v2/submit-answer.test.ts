@@ -155,6 +155,96 @@ describe('submitAnswer', () => {
     expect(rpcMock).toHaveBeenCalled()
   })
 
+  test('accepts captured slide gesture traces from the UI', async () => {
+    getOwnedSessionOrThrowMock.mockResolvedValue(baseSession)
+
+    const rpcMock = mock(() => ({
+      single: () => Promise.resolve({
+        data: {
+          interaction_id: 'int-gesture',
+          answered_count: 1,
+          correct_count: 1,
+          wiki_slug: 'test-article',
+          rationale: 'Because science.',
+        },
+        error: null
+      })
+    }))
+
+    createServiceClientMock.mockReturnValue(Promise.resolve({
+      rpc: rpcMock,
+      from: (table: string) => ({
+        select: () => ({
+          eq: () => ({
+            single: () => Promise.resolve({
+              data: table === 'questions' ? baseQuestion : null,
+              error: null
+            })
+          })
+        })
+      })
+    }))
+
+    const result = await submitAnswer({
+      ...baseInput,
+      signalTrace: [
+        { timestamp: 12.5, type: 'start', x: 8, y: 24, pressure: 0.4 },
+        { timestamp: 242.1, type: 'move', x: 320, y: 24, pressure: 0.5 },
+        { timestamp: 310.4, type: 'end', x: 420, y: 24, pressure: 0.3 },
+      ],
+      gestureDurationMs: 298,
+      sensorsAvailable: false,
+    })
+
+    expect(result.isCorrect).toBe(true)
+    expect(rpcMock).toHaveBeenCalled()
+  })
+
+  test('normalizes out-of-bounds gesture traces instead of rejecting the final answer', async () => {
+    getOwnedSessionOrThrowMock.mockResolvedValue(baseSession)
+
+    const rpcMock = mock(() => ({
+      single: () => Promise.resolve({
+        data: {
+          interaction_id: 'int-gesture-clamped',
+          answered_count: 1,
+          correct_count: 1,
+          wiki_slug: 'test-article',
+          rationale: 'Because science.',
+        },
+        error: null
+      })
+    }))
+
+    createServiceClientMock.mockReturnValue(Promise.resolve({
+      rpc: rpcMock,
+      from: (table: string) => ({
+        select: () => ({
+          eq: () => ({
+            single: () => Promise.resolve({
+              data: table === 'questions' ? baseQuestion : null,
+              error: null
+            })
+          })
+        })
+      })
+    }))
+
+    const result = await submitAnswer({
+      ...baseInput,
+      signalTrace: [
+        { timestamp: 12.5, type: 'start', x: 0.08, y: 0.5, pressure: 0.4 },
+        { timestamp: 242.1, type: 'move', x: 0.62, y: -0.12, pressure: 1.7 },
+        { timestamp: 310.4, type: 'end', x: 1.2, y: 0.5, pressure: 0.3 },
+      ],
+      gestureDurationMs: 298,
+      sensorsAvailable: false,
+    })
+
+    expect(result.isCorrect).toBe(true)
+    expect(rpcMock).toHaveBeenCalled()
+  })
+
   test('final question triggers session completion', async () => {
     const lastQuestionSession = { ...baseSession, question_ids: ['550e8400-e29b-41d4-a716-446655440001'] }
     getOwnedSessionOrThrowMock.mockResolvedValue(lastQuestionSession)

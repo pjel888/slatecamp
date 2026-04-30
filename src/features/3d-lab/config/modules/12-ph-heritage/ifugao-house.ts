@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/ifugao-house.ts
+// src/features/3d-lab/config/modules/ifugao-house.ts
 // Ifugao House — Philippine Vernacular Architecture
 import type { ExplodedAssemblyConfig } from '@/features/3d-lab/types/templates'
 

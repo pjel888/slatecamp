@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/roof-truss-queen-post.ts
+// src/features/3d-lab/config/modules/roof-truss-queen-post.ts
 // Queen Post Roof Truss — Construction
 import type { ExplodedAssemblyConfig } from '@/features/3d-lab/types/templates'
 

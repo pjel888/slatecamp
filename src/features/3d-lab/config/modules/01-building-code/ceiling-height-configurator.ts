@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/ceiling-height-configurator.ts
+// src/features/3d-lab/config/modules/ceiling-height-configurator.ts
 // Ceiling Height Configurator — PD 1096 Rule VIII
 // ─────────────────────────────────────────────────────────────────────────────
 

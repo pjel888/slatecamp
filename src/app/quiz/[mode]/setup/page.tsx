@@ -76,7 +76,7 @@ const QuizSetupPage = async ({ params, searchParams }: SetupPageProps) => {
             })
 
             if (!('error' in result)) {
-              redirect(`/quiz/focus_review/session/${result.sessionId}`)
+              redirect(`/quiz/session/${result.sessionId}`)
             }
           } catch (e) {
             // If redirect throws (expected in Next.js), let it propagate

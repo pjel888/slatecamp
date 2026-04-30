@@ -24,12 +24,12 @@ export const shortLabel = (subject: string): string => {
 export const getMasteryLabel = (weight: number): MasteryLabel => getMasteryLevel(weight) as MasteryLabel
 
 export const MODE_NAMES: Record<string, string> = {
-  camp: 'Camp Mode',
-  storm: 'Storm Mode',
-  chill: 'Chill Mode',
+  camp: 'Quiz',
+  storm: 'Timed Quiz',
+  chill: 'Quiz',
   timed: 'Timed Quiz',
   practice: 'Practice Quiz',
-  custom: 'Custom Quiz',
+  custom: 'Quiz',
   focus_review: 'Focus Review',
   full_exam: 'Full Exam Simulation',
   endurance: 'Design Endurance Training',
@@ -46,11 +46,11 @@ export const MODE_BADGES: Record<string, string> = {
 }
 
 export const MODE_TOOLTIPS: Record<string, string> = {
-  camp: 'Camp Mode gives you instant feedback after each question — ideal for learning and review.',
-  storm: 'Storm Mode simulates real exam conditions — no feedback until you finish.',
+  camp: 'Quiz gives you instant feedback after each question — ideal for learning and review.',
+  storm: 'Timed Quiz simulates exam pressure — no feedback until you finish.',
   timed: 'Timed Quiz adds a countdown — practice working under pressure.',
   practice: 'Practice Quiz lets you study at your own pace with full explanations.',
-  chill: 'Chill Mode removes all pressure — study relaxed, no timer, full feedback.',
+  chill: 'Quiz can be configured without pressure: no timer and full feedback.',
 }
 
 export const formatModeName = (mode: string): string => {

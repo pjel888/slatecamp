@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/carport-abutment-rules.ts
+// src/features/3d-lab/config/modules/carport-abutment-rules.ts
 // Carport Abutment Rules — PD 1096 Rule VII §708
 import type { ParametricSceneConfig, ParameterDef, GeometryInstruction, ViolationRule, AnnotationDef, Preset } from '@/features/3d-lab/types/templates'
 

@@ -12,6 +12,7 @@ interface SlideToSubmitProps {
   onSubmit: () => void
   disabled?: boolean
   label?: string
+  testId?: string
   /** Set to true when the answer has been checked and feedback is showing */
   checked?: boolean
 }
@@ -28,6 +29,7 @@ export const SlideToSubmit = ({
   onSubmit,
   disabled = false,
   label = 'Slide to submit',
+  testId,
   checked = false,
 }: SlideToSubmitProps) => {
   const trackRef = useRef<HTMLDivElement>(null)
@@ -144,6 +146,7 @@ export const SlideToSubmit = ({
       aria-disabled={disabled ? true : undefined}
       tabIndex={disabled ? -1 : 0}
       onKeyDown={handleKeyDown}
+      data-testid={testId}
     >
       {/* Track fill — Cobalt gradient following the handle */}
       <div
@@ -178,6 +181,7 @@ export const SlideToSubmit = ({
       {/* Draggable handle — always shows arrow, stays at end when completed */}
       <div
         {...bind()}
+        data-testid={testId ? `${testId}-handle` : undefined}
         className={cn(
           'relative z-10 flex items-center justify-center shrink-0 rounded-sm shadow-sm',
           completed

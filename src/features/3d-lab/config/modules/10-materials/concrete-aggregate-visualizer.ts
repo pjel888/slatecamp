@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/concrete-aggregate-visualizer.ts
+// src/features/3d-lab/config/modules/concrete-aggregate-visualizer.ts
 // Concrete Aggregate Visualizer — Building Materials
 import type { ParametricSceneConfig, ParameterDef, GeometryInstruction, AnnotationDef, Preset } from '@/features/3d-lab/types/templates'
 

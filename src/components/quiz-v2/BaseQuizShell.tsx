@@ -153,8 +153,14 @@ export const BaseQuizShell = ({
     )
   }
 
+  const navigationBusy = calculatingResults || status === 'finalizing'
+
   return (
-    <div className="flex flex-col min-h-screen bg-surface-focused" aria-label="Quiz session">
+    <div
+      className="flex min-h-screen flex-col bg-surface-focused"
+      aria-label="Quiz session"
+      aria-busy={navigationBusy || undefined}
+    >
       <TimerTicker />
 
       <QuizHeader
@@ -199,6 +205,7 @@ export const BaseQuizShell = ({
           // but we also need it here in the footer.
           onNext()
         }}
+        isBusy={navigationBusy}
       />
 
       {/* Exit confirmation dialog */}

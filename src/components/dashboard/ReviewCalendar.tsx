@@ -334,7 +334,7 @@ export const ReviewCalendar = ({ data }: ReviewCalendarProps) => {
             </div>
             <button
               type="button"
-              onClick={() => router.push('/dashboard/drills')}
+              onClick={() => router.push('/quiz')}
               className="flex items-center gap-0.5 text-[11px] font-medium text-primary transition-colors duration-150 hover:text-primary-700"
             >
               Review all

@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/foundation-types.ts
+// src/features/3d-lab/config/modules/foundation-types.ts
 // Foundation Types — Construction
 import type { ExplodedAssemblyConfig } from '@/features/3d-lab/types/templates'
 

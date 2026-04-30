@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/building-height-limits.ts
+// src/features/3d-lab/config/modules/building-height-limits.ts
 // Building Height Limits — PD 1096 Rule VII
 import type { ParametricSceneConfig, ParameterDef, GeometryInstruction, ViolationRule, AnnotationDef, Preset } from '@/features/3d-lab/types/templates'
 

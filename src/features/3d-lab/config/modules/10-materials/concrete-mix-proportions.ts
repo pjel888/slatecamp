@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/concrete-mix-proportions.ts
+// src/features/3d-lab/config/modules/concrete-mix-proportions.ts
 // Concrete Mix Proportions — Building Materials / NSCP
 import type { ParametricSceneConfig, ParameterDef, GeometryInstruction, ViolationRule, AnnotationDef, Preset } from '@/features/3d-lab/types/templates'
 

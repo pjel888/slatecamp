@@ -129,7 +129,7 @@ export const HeroConfigurator = ({ initialSubjects }: HeroConfiguratorProps) => 
         if (err.errorCode === 'PRO_MODE_REQUIRED' || err.error === 'TIER_INSUFFICIENT') {
           setError('This feature requires a Pro subscription.')
         } else if (err.error === 'NO_QUESTIONS') {
-          setError('No questions found for your selection. Try adding more subjects.')
+          setError(err.message ?? 'No questions found. Try widening your selection or changing difficulty.')
         } else {
           setError(err.message ?? 'Failed to start session. Please try again.')
         }
@@ -148,7 +148,7 @@ export const HeroConfigurator = ({ initialSubjects }: HeroConfiguratorProps) => 
 
   const handleEnterSession = useCallback(() => {
     if (readySessionId) {
-      router.push(ROUTES.quiz.session('custom', readySessionId))
+      router.push(ROUTES.quiz.session(readySessionId))
     }
   }, [readySessionId, router])
 
@@ -173,7 +173,7 @@ export const HeroConfigurator = ({ initialSubjects }: HeroConfiguratorProps) => 
 
   return (
     <TooltipProvider>
-      <div className="relative overflow-hidden rounded-md border border-border bg-card p-6 shadow-sm">
+      <div className="relative overflow-hidden rounded-md border border-border bg-card p-6 shadow-sm" data-testid="quiz-configurator">
         {/* Subtle Background Pattern */}
         <div className="absolute right-0 top-0 -mr-16 -mt-16 opacity-[0.03]">
           <MagicWand size={320} weight="fill" />
@@ -208,7 +208,7 @@ export const HeroConfigurator = ({ initialSubjects }: HeroConfiguratorProps) => 
             </div>
 
             {/* Subject Drop Zone / Palette */}
-            <div className="min-h-[120px] rounded-lg border-2 border-dashed border-muted bg-muted/20 p-4">
+            <div className="min-h-[120px] rounded-lg border-2 border-dashed border-muted bg-muted/20 p-4" data-testid="quiz-subject-palette">
               {availableSubjects.length === 0 ? (
                 <div className="flex flex-wrap gap-2">
                   {Array.from({ length: 12 }).map((_, i) => (
@@ -226,6 +226,9 @@ export const HeroConfigurator = ({ initialSubjects }: HeroConfiguratorProps) => 
                       <motion.button
                         key={subject.node_id}
                         layout
+                        type="button"
+                        data-testid="quiz-subject-option"
+                        aria-pressed={isSelected}
                         onClick={() => toggleSubject(subject.node_id)}
                         whileHover={{ scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}
@@ -256,7 +259,7 @@ export const HeroConfigurator = ({ initialSubjects }: HeroConfiguratorProps) => 
             </div>
 
             {/* Dynamic Status Label */}
-            <div className="flex items-center gap-2 text-sm font-medium text-muted-foreground">
+            <div className="flex items-center gap-2 text-sm font-medium text-muted-foreground" data-testid="quiz-selection-status" aria-live="polite">
               <Info size={16} />
               {selectedSubjectIds.size === 0
                 ? "Pedagogical routing ready."
@@ -311,7 +314,8 @@ export const HeroConfigurator = ({ initialSubjects }: HeroConfiguratorProps) => 
                     <SlideToSubmit
                       disabled={selectedSubjectIds.size === 0 || isModalOpen}
                       onSubmit={handleStart}
-                      label="Slide to start session"
+                      label="Slide to start quiz"
+                      testId="quiz-start-slider"
                     />
                   </div>
                 </TooltipTrigger>
@@ -339,14 +343,14 @@ export const HeroConfigurator = ({ initialSubjects }: HeroConfiguratorProps) => 
         <DialogContent showCloseButton={modalPhase === 'ready'} className="p-8">
           {modalPhase === 'preparing' && (
             <div className="flex flex-col items-center text-center">
-              <DialogTitle className="sr-only">Preparing Your Session</DialogTitle>
-              <DialogDescription className="sr-only">Building your personalized question queue</DialogDescription>
+              <DialogTitle className="sr-only">Preparing Your Quiz</DialogTitle>
+              <DialogDescription className="sr-only">Building your personalized quiz queue</DialogDescription>
               <div className="h-14 w-14 animate-spin rounded-full border-[3px] border-primary/20 border-t-primary" />
               <h3 className="mt-6 text-lg font-bold text-foreground" aria-hidden="true">
-                Preparing Your Session
+                Preparing Your Quiz
               </h3>
               <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
-                Building your personalized question queue with 60/30/10 intelligent routing...
+                Building your personalized quiz queue with 60/30/10 intelligent routing...
               </p>
               <div className="mt-6 flex items-center gap-3">
                 <div className="flex gap-1">
@@ -367,7 +371,7 @@ export const HeroConfigurator = ({ initialSubjects }: HeroConfiguratorProps) => 
 
           {modalPhase === 'ready' && (
             <div className="flex flex-col items-center text-center">
-              <DialogTitle className="sr-only">Session Ready</DialogTitle>
+              <DialogTitle className="sr-only">Quiz Ready</DialogTitle>
               <DialogDescription className="sr-only">
                 {readyQuestionCount} questions queued
               </DialogDescription>
@@ -380,7 +384,7 @@ export const HeroConfigurator = ({ initialSubjects }: HeroConfiguratorProps) => 
               </div>
 
               <h3 className="mt-6 text-lg font-bold text-foreground" aria-hidden="true">
-                Session Ready
+                Quiz Ready
               </h3>
               <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
                 {readyQuestionCount} questions queued across {selectedSubjectIds.size} subject{selectedSubjectIds.size === 1 ? '' : 's'}.
@@ -389,13 +393,14 @@ export const HeroConfigurator = ({ initialSubjects }: HeroConfiguratorProps) => 
 
               <div className="mt-8 flex w-full flex-col gap-3">
                 <Button
+                  data-testid="quiz-enter-session"
                   onClick={handleEnterSession}
                   className="w-full bg-primary text-white hover:bg-primary/90"
                   size="lg"
                   disabled={isCancellingSession}
                 >
                   <ArrowRight size={16} weight="bold" className="mr-2" />
-                  Enter Session
+                  Enter Quiz
                 </Button>
                 <Button
                   onClick={() => void handleCancelSession()}

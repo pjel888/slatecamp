@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/parking-layout.ts
+// src/features/3d-lab/config/modules/parking-layout.ts
 // Parking Layout — PD 1096 (National Building Code)
 // ─────────────────────────────────────────────────────────────────────────────
 

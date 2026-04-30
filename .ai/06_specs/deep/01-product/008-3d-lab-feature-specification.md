@@ -804,7 +804,7 @@ interface ModuleRegistryEntry {
 | SITE_DEV | 16 | 4 | 3 | Building Laws & Codes |
 | **TOTAL** | | **209** | | |
 
-**Note:** Registry files `cat-17.ts` and `cat-18.ts` exist as empty placeholders for future categories (Specialized Concrete, Topography & Landscape).
+**Cleanup note (2026-04-30):** Empty placeholder registry files `cat-17.ts` and `cat-18.ts` were removed. The active registry is the 16-category LEA-aligned surface imported by `src/features/3d-lab/config/registry/index.ts`.
 
 ### Template Type Distribution
 
@@ -2412,14 +2412,14 @@ However, the following 3D Lab components should be treated as **migration-sensit
 |----------|-------------|-----|
 | `CategoryGrid.tsx:62` | `TODO: Re-enable phase locking before production launch` | DECISION: Phase-based access control disabled |
 | `legacyLabStore.ts` | Legacy store with hardcoded NBCP defaults, not yet fully replaced by focused stores | TECH DEBT |
-| `cat-17.ts`, `cat-18.ts` | Empty placeholder categories (Specialized Concrete, Topography & Landscape) | DECISION: Whether to populate or remove |
+| `cat-17.ts`, `cat-18.ts` | Empty placeholder categories were removed on 2026-04-30 | RESOLVED |
 | `ModuleViewer.tsx:200` | `isBespoke` check hardcoded to `site-development-controls` only | TECH DEBT: Should be data-driven |
 | `LabViewport.tsx:156-158` | Legacy scene routing hardcoded for `far-calculator`, `classical-orders` | TECH DEBT: Should be registered in module registry |
 | `models_3d` table | Active in Admin Asset Manager but unused in student-facing modules | TECH DEBT: Integrate into student modules |
 | `ModuleViewer.tsx:78` | `config` typed as `any` | TECH DEBT: Should use discriminated union |
 | `useLabStore.ts` | Combined facade re-subscribes to all 3 stores on every render | PERF: Consider memoization or selector optimization |
 | `DASHBOARD_VISIBLE_IDS` | Only 4 of 209 modules visible | DECISION: Rollout strategy for remaining modules |
-| `_stores/`, `_types/`, `_config/` | Shadow directories with re-exports -- duplicate navigation paths | TECH DEBT: Consolidate to single path |
+| `_stores/`, `_types/`, `_config/` | Shadow directories with re-exports were retired; canonical paths are under `src/features/3d-lab/{config,types,stores}` | RESOLVED |
 | `LabModuleShell` | No longer used by any active rendering path -- all modules route through ViewportShell | TECH DEBT: Remove after confirming no external imports |
 | `LabPanelLayout` | Competing layout system -- ViewportShell + ViewportSidebar is the replacement | TECH DEBT: Remove after confirming no external imports |
 | Calculator template | Uses ViewportShell header but keeps own internal 3-column layout | DECISION: Full migration deferred -- complex per-toolType input panels |

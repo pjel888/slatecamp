@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/vigan-heritage-house.ts
+// src/features/3d-lab/config/modules/vigan-heritage-house.ts
 // Vigan Heritage House — Philippine Vernacular Architecture
 import type { ExplodedAssemblyConfig } from '@/features/3d-lab/types/templates'
 

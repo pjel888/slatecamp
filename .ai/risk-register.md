@@ -1,11 +1,11 @@
 # Risk Register
 
-**Last updated:** 2026-04-29 final launch hardening pass.
+**Last updated:** 2026-04-30 route consolidation verification pass.
 **Launch stance:** payment-free and live-AI-provider-free. PayRex checkout/webhook QA and live OpenAI/Anthropic verification are deferred post-launch items, not current launch blockers.
 
 | ID | Risk | Classification | Current evidence | Recommended action | Owner |
 |---|---|---|---|---|---|
-| R-001 | Broad optional/internal route surface | Launch warning | 105 page routes remain, including CEO/developer/studio/professional/pods/result-day/DAE optional/internal surfaces. | Keep internal/gated surfaces out of public navigation; run founder cutline review before public launch. | Product/engineering |
+| R-001 | Broad optional/internal route surface | Launch warning | 109 page routes remain, including CEO/developer/studio/professional/pods/result-day/DAE optional/internal surfaces. | Keep internal/gated surfaces out of public navigation; run founder cutline review before public launch. | Product/engineering |
 | R-002 | Legacy LemonSqueezy schema/type columns remain | Deferred technical debt | Runtime LemonSqueezy route/config/dependency are removed, but `lemonsqueezy_*` columns remain in `DATABASE_SCHEMA.sql`, `src/types/supabase.ts`, and `src/types/app.ts`. | Defer to explicit DB reset/squash cleanup PR. | Backend |
 | R-003 | PayRex live checkout/webhook not verified | Deferred post-launch | `src/app/api/payments/checkout/route.ts` and `src/app/api/webhooks/payrex/route.ts` remain, but `NEXT_PUBLIC_PAYMENTS_ENABLED=false` keeps them outside current launch surface. | Run PayRex staging checkout/webhook QA before any paid launch. | Product/backend |
 | R-004 | Live AI provider behavior not verified | Deferred post-launch | `/api/ai/*` routes remain; launch-facing quiz AI helper UI is disabled in `src/components/quiz-v2/FeedbackPanel.tsx`. | Run provider-backed smoke tests before exposing live AI UI/copy. | Product/backend |

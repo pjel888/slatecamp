@@ -56,10 +56,10 @@ const MODE_LABELS: Record<string, string> = {
   chill: 'Chill',
   subject: 'Subject',
   focus_review: 'Focus Review',
-  custom: 'Custom',
+  custom: 'Quiz',
   storm: 'Storm',
   full_exam: 'Full Exam',
-  endurance: 'Extended',
+  endurance: 'Endurance',
   article_review: 'Article Review',
 }
 
@@ -129,7 +129,7 @@ const getSessionUrl = (session: SessionRecord): string => {
   const modeKey = getModeKey(session)
 
   if (session.status === 'in_progress') {
-    return `/quiz/${modeKey}/session/${session.session_id}`
+    return `/quiz/session/${session.session_id}`
   }
 
   if (READING_MODES.has(modeKey)) {
@@ -139,7 +139,7 @@ const getSessionUrl = (session: SessionRecord): string => {
     }
   }
 
-  return `/quiz/${modeKey}/session/${session.session_id}/results`
+  return `/quiz/session/${session.session_id}/results`
 }
 
 const getScoreDisplay = (session: SessionRecord): {

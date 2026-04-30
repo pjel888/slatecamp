@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/attic-requirements.ts
+// src/features/3d-lab/config/modules/attic-requirements.ts
 // Attic Requirements — PD 1096 Rule VIII
 import type { ParametricSceneConfig, ParameterDef, GeometryInstruction, ViolationRule, AnnotationDef, Preset } from '@/features/3d-lab/types/templates'
 

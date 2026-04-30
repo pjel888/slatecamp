@@ -241,7 +241,7 @@ export async function getDashboardData(): Promise<DashboardData> {
       title: `Practice: ${topicName}`,
       subtitle: `This topic needs a little attention — 5 focused questions to sharpen your understanding`,
       estimatedMinutes: 4,
-      href: ROUTES.quiz.setup('camp'),
+      href: ROUTES.quiz.root,
     }
   } else {
     catalyst = {
@@ -249,7 +249,7 @@ export async function getDashboardData(): Promise<DashboardData> {
       title: 'Daily Warmup',
       subtitle: 'A quick 5-question session from your core subjects — the perfect way to start',
       estimatedMinutes: 3,
-      href: ROUTES.quiz.setup('camp'),
+      href: ROUTES.quiz.root,
     }
   }
 
@@ -264,7 +264,7 @@ export async function getDashboardData(): Promise<DashboardData> {
       type: 'quiz',
       title: `${modeName}`,
       subtitle: total > 0 ? `${total} questions · ${formatRelativeTime(lastDone.updated_at)}` : formatRelativeTime(lastDone.updated_at),
-      href: `/dashboard/drills`,
+      href: `/quiz`,
     })
   }
 
@@ -307,7 +307,7 @@ function emptyDashboard(userName: string): DashboardData {
       title: 'Start Your First Session',
       subtitle: 'Jump in with a 5-question warmup — no setup needed',
       estimatedMinutes: 3,
-      href: ROUTES.quiz.setup('camp'),
+      href: ROUTES.quiz.root,
     },
     recentActivities: [],
     totalAnswered: 0,
@@ -320,12 +320,12 @@ function emptyDashboard(userName: string): DashboardData {
 
 function formatModeName(mode: string): string {
   const map: Record<string, string> = {
-    camp: 'Camp Mode Quiz',
-    storm: 'Storm Mode Quiz',
-    chill: 'Chill Mode Quiz',
+    camp: 'Quiz',
+    storm: 'Timed Quiz',
+    chill: 'Quiz',
     timed: 'Timed Quiz',
     practice: 'Practice Quiz',
-    custom: 'Custom Quiz',
+    custom: 'Quiz',
     focus_review: 'Focus Review',
     full_exam: 'Full Exam Simulation',
     endurance: 'Endurance Quiz',

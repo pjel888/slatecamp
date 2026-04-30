@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/earthwork-volume.ts
+// src/features/3d-lab/config/modules/earthwork-volume.ts
 // Earthwork Volume — Cut and Fill Calculation
 import type { ParametricSceneConfig, ParameterDef, GeometryInstruction, AnnotationDef, Preset } from '@/features/3d-lab/types/templates'
 

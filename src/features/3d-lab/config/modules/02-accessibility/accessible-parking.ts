@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/accessible-parking.ts
+// src/features/3d-lab/config/modules/accessible-parking.ts
 // Accessible Parking — BP 344 (Accessibility Law)
 // ─────────────────────────────────────────────────────────────────────────────
 

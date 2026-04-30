@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/machine-room-layout.ts
+// src/features/3d-lab/config/modules/machine-room-layout.ts
 // Machine Room Layout — PMEC (Philippine Mechanical Engineering Code)
 // ─────────────────────────────────────────────────────────────────────────────
 

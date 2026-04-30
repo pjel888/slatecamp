@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/fire-resistance-ratings.ts
+// src/features/3d-lab/config/modules/fire-resistance-ratings.ts
 // Fire Resistance Ratings — PD 1096 Rule II / RA 9514
 import type { ParametricSceneConfig, ParameterDef, GeometryInstruction, AnnotationDef, Preset } from '@/features/3d-lab/types/templates'
 

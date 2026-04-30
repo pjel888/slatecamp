@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/fault-line-setback.ts
+// src/features/3d-lab/config/modules/fault-line-setback.ts
 // Fault Line Setback — Environmental Planning / PHIVOLCS
 // ─────────────────────────────────────────────────────────────────────────────
 

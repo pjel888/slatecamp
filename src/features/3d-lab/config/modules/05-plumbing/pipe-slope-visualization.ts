@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/pipe-slope-visualization.ts
+// src/features/3d-lab/config/modules/pipe-slope-visualization.ts
 // Pipe Slope Visualization — NPCP
 // ─────────────────────────────────────────────────────────────────────────────
 // Cutaway building section showing drainage pipe slopes:

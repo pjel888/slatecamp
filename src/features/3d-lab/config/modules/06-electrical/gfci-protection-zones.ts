@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/gfci-protection-zones.ts
+// src/features/3d-lab/config/modules/gfci-protection-zones.ts
 // GFCI Protection Zones — PEC (Philippine Electrical Code)
 // ─────────────────────────────────────────────────────────────────────────────
 

@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/water-meter-assembly.ts
+// src/features/3d-lab/config/modules/water-meter-assembly.ts
 // Water Meter Assembly — NPCP Plumbing
 import type { ExplodedAssemblyConfig } from '@/features/3d-lab/types/templates'
 

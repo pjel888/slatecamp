@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/beam-construction-sequence.ts
+// src/features/3d-lab/config/modules/beam-construction-sequence.ts
 // Beam Construction Sequence — Construction
 // ─────────────────────────────────────────────────────────────────────────────
 // Shoring/props → bottom form → side form → bottom rebar → stirrups → top rebar → pour → strip.

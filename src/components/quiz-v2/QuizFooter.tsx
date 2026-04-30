@@ -12,6 +12,7 @@ interface QuizFooterProps {
   hasAnswered: boolean
   onPrevious: () => void
   onNext: () => void
+  isBusy?: boolean
 }
 
 export const QuizFooter = memo(({
@@ -21,10 +22,13 @@ export const QuizFooter = memo(({
   hasAnswered: _hasAnswered,
   onPrevious,
   onNext,
+  isBusy = false,
 }: QuizFooterProps) => {
   const isFirst = currentPosition === 1
   const isLast = currentPosition === totalQuestions
   const showBack = config.navigation.backAllowed && !isFirst
+  const nextLabel = isLast ? (isBusy ? 'Preparing...' : 'See results') : 'Next'
+  const nextAriaLabel = isLast ? (isBusy ? 'Preparing results' : 'See results') : 'Next question'
 
   return (
     <footer
@@ -37,11 +41,13 @@ export const QuizFooter = memo(({
           <button
             type="button"
             onClick={onPrevious}
+            disabled={isBusy}
             className={cn(
               'inline-flex items-center gap-1 text-[13px] text-text-secondary',
               'hover:text-foreground transition-colors duration-150',
               'min-h-[44px] px-1',
               'focus-visible:outline-none focus-visible:underline',
+              isBusy && 'cursor-not-allowed opacity-50',
             )}
             aria-label="Previous question"
           >
@@ -61,17 +67,20 @@ export const QuizFooter = memo(({
         <button
           type="button"
           onClick={onNext}
+          disabled={isBusy}
           className={cn(
             'inline-flex items-center gap-1 text-[13px]',
             'min-h-[44px] px-1',
             'transition-colors duration-150',
             'focus-visible:outline-none focus-visible:underline',
             'text-primary hover:text-primary-700',
+            isBusy && 'cursor-wait opacity-70',
           )}
-          aria-label={isLast ? 'See results' : 'Next question'}
+          aria-label={nextAriaLabel}
+          aria-busy={isBusy || undefined}
         >
-          {isLast ? 'See results' : 'Next'}
-          {!isLast && <ArrowRight size={14} aria-hidden="true" />}
+          {nextLabel}
+          {!isLast && !isBusy && <ArrowRight size={14} aria-hidden="true" />}
         </button>
       </div>
     </footer>

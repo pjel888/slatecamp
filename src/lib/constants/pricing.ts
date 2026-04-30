@@ -29,7 +29,7 @@ export const INDIVIDUAL_TIERS: PricingTier[] = [
     hook: 'Build the habit before exam day.',
     features: [
       'Unlimited access to the Wiki',
-      'Camp Mode (basic feedback quizzing)',
+      'Quiz (basic feedback quizzing)',
     ],
     limits: [
       'No analytics',
@@ -70,7 +70,7 @@ export const INDIVIDUAL_TIERS: PricingTier[] = [
     features: [
       'Everything in Pro',
       'F-01 Readiness Score — pass-probability gauge',
-      'Storm Mode — timed high-pressure exams',
+      'Timed Quiz — high-pressure exams',
       'AI Tutor (Basic) — 10k monthly tokens',
     ],
     highlighted: false,
@@ -145,7 +145,7 @@ export const EDUCATIONAL_TIERS: PricingTier[] = [
     features: [
       'Everything in Educational — Camp',
       `Co-Branding ("${siteConfig.name} powered by [Your Name]")`,
-      'Custom Session Builder — instructors inject their own questions & push as Daily Missions',
+      'Quiz Builder — instructors inject their own questions & push as Daily Missions',
     ],
     highlighted: true,
     ctaLabel: 'Contact Sales',

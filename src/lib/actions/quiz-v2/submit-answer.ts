@@ -340,24 +340,24 @@ export const submitAnswer = async (
         )
       }
 
-      if (interactionId && input.signalTrace?.length) {
+      if (interactionId && parsedInput.signalTrace?.length) {
         backgroundTasks.push(
           (async () => {
             const { createAdminClient: getAdmin } = await import('@/lib/supabase/admin')
             const admin = getAdmin()
 
-            const first = input.signalTrace![0]
-            const last = input.signalTrace![input.signalTrace!.length - 1]
+            const first = parsedInput.signalTrace![0]
+            const last = parsedInput.signalTrace![parsedInput.signalTrace!.length - 1]
             const durationMs = Math.round(last.timestamp - first.timestamp)
 
             const { error } = await admin.from('interaction_signal_traces').insert({
               interaction_id: interactionId,
-              events: input.signalTrace,
-              event_count: input.signalTrace!.length,
+              events: parsedInput.signalTrace,
+              event_count: parsedInput.signalTrace!.length,
               duration_ms: durationMs,
               capture_rate_hz:
-                durationMs > 0 ? input.signalTrace!.length / (durationMs / 1000) : 0,
-              device_sensors_available: input.sensorsAvailable ?? false,
+                durationMs > 0 ? parsedInput.signalTrace!.length / (durationMs / 1000) : 0,
+              device_sensors_available: parsedInput.sensorsAvailable ?? false,
             })
 
             if (error) {

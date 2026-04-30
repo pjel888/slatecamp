@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/emergency-lighting-layout.ts
+// src/features/3d-lab/config/modules/emergency-lighting-layout.ts
 // Emergency Lighting Layout — RA 9514 / PEC
 // ─────────────────────────────────────────────────────────────────────────────
 

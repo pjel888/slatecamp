@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/contemporary-parametric.ts
+// src/features/3d-lab/config/modules/contemporary-parametric.ts
 import type { CutawaySectionConfig } from '@/features/3d-lab/types/templates'
 
 export const contemporaryParametricConfig: CutawaySectionConfig = {

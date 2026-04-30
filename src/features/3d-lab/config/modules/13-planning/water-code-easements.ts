@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/water-code-easements.ts
+// src/features/3d-lab/config/modules/water-code-easements.ts
 // Water Code Easements — Philippine Water Code (PD 1067) / Environmental Planning
 // ─────────────────────────────────────────────────────────────────────────────
 

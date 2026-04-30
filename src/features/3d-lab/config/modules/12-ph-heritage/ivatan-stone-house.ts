@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/ivatan-stone-house.ts
+// src/features/3d-lab/config/modules/ivatan-stone-house.ts
 // Ivatan Stone House — Philippine Vernacular Architecture
 import type { ExplodedAssemblyConfig } from '@/features/3d-lab/types/templates'
 

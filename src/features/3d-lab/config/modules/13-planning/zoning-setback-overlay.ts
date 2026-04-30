@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/zoning-setback-overlay.ts
+// src/features/3d-lab/config/modules/zoning-setback-overlay.ts
 // Zoning Setback Overlay — PD 1096 (National Building Code)
 // ─────────────────────────────────────────────────────────────────────────────
 

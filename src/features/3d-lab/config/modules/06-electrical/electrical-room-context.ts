@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/electrical-room-context.ts
+// src/features/3d-lab/config/modules/electrical-room-context.ts
 // Electrical Room Context — PEC
 import type { ParametricSceneConfig, ParameterDef, GeometryInstruction, AnnotationDef, Preset } from '@/features/3d-lab/types/templates'
 

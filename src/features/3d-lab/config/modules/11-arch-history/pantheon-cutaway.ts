@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/pantheon-cutaway.ts
+// src/features/3d-lab/config/modules/pantheon-cutaway.ts
 import type { CutawaySectionConfig } from '@/features/3d-lab/types/templates'
 
 export const pantheonCutawayConfig: CutawaySectionConfig = {

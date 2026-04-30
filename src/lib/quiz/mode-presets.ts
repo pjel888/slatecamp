@@ -500,12 +500,12 @@ export const mergeWithPreset = (
 
 /** Get human-readable mode label */
 export const MODE_LABELS: Record<QuizMode, string> = {
-  camp: 'Camp Mode',
-  chill: 'Chill Mode',
+  camp: 'Quiz',
+  chill: 'Quiz',
   subject: 'Subject Focus',
   focus_review: 'Focus Review',
-  custom: 'Custom Session',
-  storm: 'Storm Mode',
+  custom: 'Quiz',
+  storm: 'Timed Quiz',
   full_exam: 'Full Exam Simulation',
   endurance: 'Extended Practice',
   article_review: 'Article Review',

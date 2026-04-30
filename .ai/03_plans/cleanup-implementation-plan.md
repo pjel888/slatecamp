@@ -91,7 +91,7 @@ Execute repository cleanup in safe, repository-specific waves that reduce dead w
 - preserve compatibility inventories until post-validation confirmation
 
 ## Open questions
-- should `/tools` and `/calculators` stay split as product tiers?
+- resolved 2026-04-30: `/tools` is canonical; `/calculators` is redirect-only compatibility.
 - which developer surfaces must stay manual/demo by design?
 - which DB helper scripts are still operator-owned?
 

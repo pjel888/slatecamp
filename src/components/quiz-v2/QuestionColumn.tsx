@@ -21,7 +21,7 @@ export const QuestionColumn = memo(({
   const isFormative = mode != null && FORMATIVE_MODES.has(mode)
 
   return (
-    <section aria-label="Question" aria-describedby={stemId}>
+    <section aria-label="Question" aria-describedby={stemId} data-testid="quiz-current-question">
       {/* Topic breadcrumb */}
       <p className="text-xs text-muted-foreground mb-3 leading-snug">
         {question.taxonomy_breadcrumb}

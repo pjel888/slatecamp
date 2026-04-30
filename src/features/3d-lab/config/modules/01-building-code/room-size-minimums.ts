@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/room-size-minimums.ts
+// src/features/3d-lab/config/modules/room-size-minimums.ts
 // Room Size Minimums — PD 1096 Rule VIII §801
 import type { ParametricSceneConfig, ParameterDef, GeometryInstruction, ViolationRule, AnnotationDef, Preset } from '@/features/3d-lab/types/templates'
 import { PD_1096 } from '@/features/3d-lab/config/constants'

@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/chb-block-types.ts
+// src/features/3d-lab/config/modules/chb-block-types.ts
 // CHB Block Types — Building Materials
 // ─────────────────────────────────────────────────────────────────────────────
 // Exploded view of standard Philippine CHB (Concrete Hollow Block) sizes:

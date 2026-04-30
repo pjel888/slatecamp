@@ -20,7 +20,6 @@ import {
   List,
   ShieldCheck,
   ClipboardText,
-  BookOpen,
   Globe,
   Path,
 } from '@phosphor-icons/react/dist/ssr'
@@ -30,10 +29,9 @@ import { ROUTES } from '@/lib/routes'
 const NAV_ITEMS = [
   { href: ROUTES.dashboard.root, label: 'Dashboard', icon: SquaresFour },
   { href: ROUTES.wiki.root, label: 'Wiki', icon: Globe },
-  { href: ROUTES.dashboard.drills, label: 'Quiz', icon: Brain },
-  { href: ROUTES.dashboard.drillsSessions, label: 'Sessions', icon: ClipboardText },
+  { href: ROUTES.quiz.root, label: 'Quiz', icon: Brain },
+  { href: ROUTES.quiz.sessions, label: 'Sessions', icon: ClipboardText },
   { href: ROUTES.dashboard.camptrails, label: 'CampTrails', icon: Path },
-  { href: ROUTES.dashboard.drills, label: 'Review', icon: BookOpen },
   { href: ROUTES.dashboard.analytics, label: 'Analytics', icon: ChartBar },
   { href: ROUTES.lab.root, label: '3D Lab', icon: Cube },
   { href: ROUTES.dashboard.settings, label: 'Settings', icon: GearSix },

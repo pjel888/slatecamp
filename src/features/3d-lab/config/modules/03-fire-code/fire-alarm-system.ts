@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/fire-alarm-system.ts
+// src/features/3d-lab/config/modules/fire-alarm-system.ts
 // Fire Alarm System — RA 9514 (Fire Code of the Philippines)
 // ─────────────────────────────────────────────────────────────────────────────
 

@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/split-ac-cutaway.ts
+// src/features/3d-lab/config/modules/split-ac-cutaway.ts
 import type { CutawaySectionConfig } from '@/features/3d-lab/types/templates'
 
 export const splitAcCutawayConfig: CutawaySectionConfig = {

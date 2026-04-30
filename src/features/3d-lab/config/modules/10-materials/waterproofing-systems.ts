@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/waterproofing-systems.ts
+// src/features/3d-lab/config/modules/waterproofing-systems.ts
 import type { CutawaySectionConfig } from '@/features/3d-lab/types/templates'
 
 export const waterproofingSystemsConfig: CutawaySectionConfig = {

@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/bahay-na-bato.ts
+// src/features/3d-lab/config/modules/bahay-na-bato.ts
 // ─── Bahay na Bato — Philippine Heritage House ──────────────────────────────
 // Exploded assembly of the traditional Filipino stone house showing
 // structural layers from coral-stone foundation to clay tile roof.

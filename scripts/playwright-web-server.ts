@@ -31,12 +31,16 @@ const env = Object.fromEntries(
   }),
 )
 
-delete env.DEV_FORCE_USER_ID
+delete env.NO_COLOR
+if (env.PLAYWRIGHT_ALLOW_DEV_FORCE_USER_ID !== 'true') {
+  delete env.DEV_FORCE_USER_ID
+}
 delete env.DEV_FORCE_TIER
 delete env.NEXT_PUBLIC_DEMO_MODE
 
 env.ALLOW_DEV_PORTAL_BYPASS = 'false'
-env.DISABLE_DEV_FORCE_USER_ID = 'true'
+env.DISABLE_DEV_FORCE_USER_ID =
+  env.PLAYWRIGHT_ALLOW_DEV_FORCE_USER_ID === 'true' ? 'false' : 'true'
 env.NEXT_PUBLIC_APP_URL ??= `http://localhost:${port}`
 env.NEXT_PUBLIC_ENABLE_DEMO_MODE = demoAuthEnabled ? 'true' : 'false'
 env.NEXT_PUBLIC_PAYMENTS_ENABLED ??= 'false'
@@ -46,6 +50,15 @@ if (demoAuthEnabled) {
 }
 env.NEXT_PUBLIC_SUPABASE_ANON_KEY ??= 'ci-anon-key'
 env.NEXT_PUBLIC_SUPABASE_URL ??= 'https://hrpdwqurngnyajuhbkdg.supabase.co'
+
+const localStorageFile =
+  env.PLAYWRIGHT_LOCALSTORAGE_FILE ?? '.next/playwright-node-localstorage.json'
+const localStorageNodeOption = `--localstorage-file=${localStorageFile}`
+env.NODE_OPTIONS = env.NODE_OPTIONS?.trim()
+  ? env.NODE_OPTIONS.includes('--localstorage-file')
+    ? env.NODE_OPTIONS
+    : `${env.NODE_OPTIONS} ${localStorageNodeOption}`
+  : localStorageNodeOption
 
 const nextBin =
   process.platform === 'win32'

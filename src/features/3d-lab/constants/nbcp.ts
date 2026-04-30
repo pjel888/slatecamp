@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_constants/nbcp.ts
+// src/features/3d-lab/constants/nbcp.ts
 // 2004 Revised IRR of PD 1096 — Rules VII & VIII
 // IMPORTANT: Every value here is sourced from the IRR. Do NOT modify without
 // cross-referencing the 2004 Revised Implementing Rules and Regulations of PD 1096.

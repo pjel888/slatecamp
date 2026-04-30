@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/refuge-area-design.ts
+// src/features/3d-lab/config/modules/refuge-area-design.ts
 // Refuge Area Design — RA 9514 (Fire Code of the Philippines) / BP 344
 // ─────────────────────────────────────────────────────────────────────────────
 

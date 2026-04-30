@@ -14,63 +14,63 @@ test.describe('demo-auth learning flow', () => {
     page,
   }) => {
     test.setTimeout(90000)
-    await page.goto('/dashboard/drills', {
+    await page.goto('/quiz', {
       waitUntil: 'domcontentloaded',
     })
 
     await expect(
-      page.getByRole('heading', { name: /Intelligent Configurator/i }),
+      page.getByRole('heading', { name: /Configure your quiz/i }),
     ).toBeVisible()
 
     await page.waitForTimeout(5000)
     await page.getByRole('button', { name: /Add All/i }).click()
     await expect(page.getByText(/Targeting 2 subjects/i)).toBeVisible()
-    await page.getByLabel(/Slide to start session/i).press('Enter')
+    await page.getByLabel(/Slide to start quiz/i).press('Enter')
 
     await expect(
-      page.getByRole('heading', { name: /Session Ready/i }),
+      page.getByRole('heading', { name: /Quiz Ready/i }),
     ).toBeVisible({ timeout: 20000 })
     await page.getByRole('button', { name: /^Cancel$/ }).click()
 
     await expect(
-      page.getByRole('heading', { name: /Intelligent Configurator/i }),
+      page.getByRole('heading', { name: /Configure your quiz/i }),
     ).toBeVisible()
     await page.reload({ waitUntil: 'domcontentloaded' })
     await expect(
-      page.getByRole('heading', { name: /Intelligent Configurator/i }),
+      page.getByRole('heading', { name: /Configure your quiz/i }),
     ).toBeVisible()
     await expect(
-      page.getByRole('link', { name: /Resume session/i }),
+      page.getByRole('link', { name: /Resume quiz/i }),
     ).toHaveCount(0)
   })
 
-  test('drills hub launches a custom session and supports one answer submission', async ({
+  test('quiz hub launches a custom session and supports one answer submission', async ({
     page,
   }) => {
     test.setTimeout(150000)
-    const response = await page.goto('/dashboard/drills', {
+    const response = await page.goto('/quiz', {
       waitUntil: 'domcontentloaded',
     })
 
-    expect(response?.ok(), '/dashboard/drills should return 2xx').toBe(true)
+    expect(response?.ok(), '/quiz should return 2xx').toBe(true)
     await expect(
-      page.getByRole('heading', { name: /Build Mastery\. Earn your Score\./i }),
+      page.getByRole('heading', { name: /Build mastery with one focused quiz/i }),
     ).toBeVisible()
     await expect(
-      page.getByRole('heading', { name: /Intelligent Configurator/i }),
+      page.getByRole('heading', { name: /Configure your quiz/i }),
     ).toBeVisible()
 
     await page.waitForTimeout(5000)
     await page.getByRole('button', { name: /Add All/i }).click()
     await expect(page.getByText(/Targeting 2 subjects/i)).toBeVisible()
-    await page.getByLabel(/Slide to start session/i).press('Enter')
+    await page.getByLabel(/Slide to start quiz/i).press('Enter')
 
     await expect(
-      page.getByRole('heading', { name: /Session Ready/i }),
+      page.getByRole('heading', { name: /Quiz Ready/i }),
     ).toBeVisible({ timeout: 20000 })
-    await page.getByRole('button', { name: /Enter Session/i }).click()
+    await page.getByRole('button', { name: /Enter Quiz/i }).click()
 
-    await expect(page).toHaveURL(/\/quiz\/custom\/session\//, {
+    await expect(page).toHaveURL(/\/quiz\/session\//, {
       timeout: 60000,
     })
     await expect(

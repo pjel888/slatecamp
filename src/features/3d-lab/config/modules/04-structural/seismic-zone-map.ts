@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/seismic-zone-map.ts
+// src/features/3d-lab/config/modules/seismic-zone-map.ts
 // Seismic Zone Map — NSCP Chapter 2 §208
 import type { ParametricSceneConfig, ParameterDef, GeometryInstruction, AnnotationDef, Preset } from '@/features/3d-lab/types/templates'
 

@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/column-interaction-diagram.ts
+// src/features/3d-lab/config/modules/column-interaction-diagram.ts
 // Column Interaction Diagram — NSCP Chapter 4
 import type { ParametricSceneConfig, ParameterDef, GeometryInstruction, ViolationRule, AnnotationDef, Preset } from '@/features/3d-lab/types/templates'
 

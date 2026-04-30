@@ -33,6 +33,9 @@ bun run dev
 | `bun run test:e2e:prod` | bun scripts/playwright-run.ts prod |
 | `bun run test:e2e:auth-demo` | bun scripts/playwright-run.ts auth-demo |
 | `bun run test:e2e:auth-demo:learning` | bun scripts/playwright-run.ts auth-demo-learning |
+| `bun run test:e2e:auth-demo:sidebar` | bun scripts/playwright-run.ts auth-demo-sidebar |
+| `bun run test:e2e:quiz-real` | bun scripts/playwright-run.ts quiz-real |
+| `bun run test:e2e:drills-real` | bun scripts/playwright-run.ts quiz-real |
 | `bun run test:e2e:auth-demo:wiki` | bun scripts/playwright-run.ts auth-demo-wiki |
 | `bun run test:e2e:auth-demo:portals` | bun scripts/playwright-run.ts auth-demo-portals |
 | `bun run test:e2e:auth-demo:3d-lab` | bun scripts/playwright-run.ts auth-demo-3d-lab |
@@ -47,6 +50,7 @@ bun run dev
 | `bun run design:lint` | bunx --bun @google/design.md@0.1.0 lint DESIGN.md |
 | `bun run type-check` | bun scripts/type-check.ts |
 | `bun run test` / `bun test src/` | bun test src/ |
+| `bun run test:coverage` | bun test --coverage src/ |
 | `bun run validate:release` | bun run type-check && bun run lint && bun run check:entitlements && bun audit && bun run build && bun run test:e2e:prod && bun run test:e2e:auth-demo && bun run test:e2e:auth-demo:learning && bun run test:e2e:auth-demo:wiki && bun run test:e2e:auth-demo:restricted && bun run test:e2e:auth-demo:portals && bun run test:e2e:auth-demo:3d-lab && bun run test:e2e:auth-demo:admin-content-admin && bun run test:e2e:auth-demo:admin-sme-reviewer && bun run test:e2e:auth-demo:admin-developer && bun run test:e2e:auth-demo:ceo-portal |
 | `bun run db:seed` | bun scripts/seed.ts |
 | `bun run bones:build` | boneyard-js build http://localhost:3000/dashboard --out ./src/bones |

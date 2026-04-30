@@ -172,7 +172,7 @@ export const EnduranceShell = ({
   useEffect(() => {
     if (status === 'results' && results) {
       stopTimer()
-      router.push(`/quiz/endurance/session/${sessionId}/results`)
+      router.push(`/quiz/session/${sessionId}/results`)
     }
   }, [status, results, sessionId, router, stopTimer])
 

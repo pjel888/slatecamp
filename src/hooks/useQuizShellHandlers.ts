@@ -19,7 +19,7 @@ interface UseQuizShellHandlersProps {
  * useQuizShellHandlers: Unified logic for quiz navigation and session termination.
  * Reduces duplication across Standard, Simulation, and Endurance shells.
  */
-export const useQuizShellHandlers = ({ sessionId, mode }: UseQuizShellHandlersProps) => {
+export const useQuizShellHandlers = ({ sessionId, mode: _mode }: UseQuizShellHandlersProps) => {
   const router = useRouter()
   const directionRef = useRef<'forward' | 'backward'>('forward')
 
@@ -53,19 +53,32 @@ export const useQuizShellHandlers = ({ sessionId, mode }: UseQuizShellHandlersPr
     const { currentIndex, totalQuestions, results, feedback } = state
     const isLast = currentIndex === totalQuestions - 1
     const answeredCount = state.getAnsweredCount()
+    const showResultsTransition = () => {
+      useQuizStore.setState((s) => ({
+        status: 'finalizing',
+        ui: { ...s.ui, calculatingResults: true, submitModalOpen: false },
+      }))
+    }
+    const finishWithResults = (finalResults: NonNullable<typeof results>) => {
+      showResultsTransition()
+      window.setTimeout(() => {
+        endSession(finalResults)
+      }, 900)
+    }
 
     // 1. If feedback is visible, handle transition
     if (feedback.visible) {
       if (isLast) {
-        if (answeredCount < totalQuestions) {
-          state.showSubmitModal()
+        if (results) {
+          finishWithResults(results)
+        } else if (answeredCount >= totalQuestions) {
+          showResultsTransition()
         } else {
-          useQuizStore.setState(s => ({ ui: { ...s.ui, calculatingResults: true } }))
-          if (results) endSession(results)
+          state.showSubmitModal()
         }
+        return
       }
       hideFeedback()
-      if (isLast) return
     }
 
     // 2. If it's the last question, check if we can submit
@@ -73,8 +86,7 @@ export const useQuizShellHandlers = ({ sessionId, mode }: UseQuizShellHandlersPr
       if (answeredCount < totalQuestions) {
         state.showSubmitModal()
       } else if (results) {
-        useQuizStore.setState(s => ({ ui: { ...s.ui, calculatingResults: true } }))
-        endSession(results)
+        finishWithResults(results)
       }
       return
     }
@@ -119,7 +131,7 @@ export const useQuizShellHandlers = ({ sessionId, mode }: UseQuizShellHandlersPr
       )
       endSession(result)
     } catch {
-      router.push(`/quiz/${mode}/session/${sessionId}/results`)
+      router.push(`/quiz/session/${sessionId}/results`)
     }
   }
 

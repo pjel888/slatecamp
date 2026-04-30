@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/nbcp-envelope.ts
+// src/features/3d-lab/config/modules/nbcp-envelope.ts
 // NBCP Building Envelope — PD 1096 Rule VII
 // Simplified parametric version of the legacy NBCPEnvelope scene
 // ─────────────────────────────────────────────────────────────────────────────

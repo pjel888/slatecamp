@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/wall-section-assembly.ts
+// src/features/3d-lab/config/modules/wall-section-assembly.ts
 // Wall Section Assembly — PD 1096 Construction
 import type { ExplodedAssemblyConfig } from '@/features/3d-lab/types/templates'
 

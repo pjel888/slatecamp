@@ -126,7 +126,7 @@ src/
 │   │       └── NBCPTelemetry.tsx      # Analytics tracking
 │   │
 │   ├── src/features/3d-lab/stores/     # Zustand store definitions
-│   │   ├── legacyLabStore.ts          # Legacy store for FAR/ClassicalOrders compatibility
+│   │   ├── legacyLabStore.ts          # Compatibility-only store for FAR/ClassicalOrders
 │   │   ├── nbcpStore.ts               # NBCP-specific computed envelope state
 │   │   └── createModuleStore.ts       # Factory for per-module parameter stores
 │   │
@@ -398,7 +398,7 @@ The outer `Html` wrapper uses `pointerEvents='none'`; interactive content inside
 
 | Store | File | State |
 |-------|------|-------|
-| `useLabStore` | `src/features/3d-lab/stores/legacyLabStore.ts` | Legacy parametric + hotspot store for the remaining FAR Playground / Classical Orders compatibility surfaces. Tracks `lotArea`, `far`, `bhl`, `setbackFront`, `setbackSide`, `activeHotspotId`, `isQuizMode`, `quizTargetPartId`, and `invalidateFn`. All mutating actions call `invalidateFn()` immediately after `set()`. |
+| `useLabStore` | `src/features/3d-lab/stores/legacyLabStore.ts` | Compatibility-only parametric + hotspot store for the remaining FAR Playground / Classical Orders scenes. It is not a route-local shim and should not be used by new registry modules. Tracks `lotArea`, `far`, `bhl`, `setbackFront`, `setbackSide`, `activeHotspotId`, `isQuizMode`, `quizTargetPartId`, and `invalidateFn`. All mutating actions call `invalidateFn()` immediately after `set()`. |
 | `useNBCPStore` | `src/features/3d-lab/stores/nbcpStore.ts` | NBCP-specific computed values: buildable envelope dimensions, lot type, violation array. |
 | `createModuleStore` | `src/features/3d-lab/stores/createModuleStore.ts` | Factory function returning a Zustand store instance scoped to a single module's parameter definitions. |
 

@@ -229,7 +229,7 @@ export const generateRecommendations = async (
           'Spaced repetition items are due. A quick review session keeps your knowledge fresh.',
         action: {
           type: 'open_srs',
-          href: '/dashboard/drills?tab=review',
+          href: '/quiz',
         },
       })
     }

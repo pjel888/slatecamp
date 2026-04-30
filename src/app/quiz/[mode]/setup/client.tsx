@@ -53,7 +53,7 @@ export const SetupPageClient = ({
         setPhase('prediction')
       } else {
         setPhase('navigating')
-        router.push(`/quiz/${mode}/session/${result.sessionId}`)
+        router.push(`/quiz/session/${result.sessionId}`)
       }
     } catch (err) {
       console.error('[quiz-setup] startSession failed:', err)
@@ -65,7 +65,7 @@ export const SetupPageClient = ({
   const handlePredictionConfirm = useCallback(() => {
     if (!createdSessionId) return
     setPhase('navigating')
-    router.push(`/quiz/${mode}/session/${createdSessionId}`)
+    router.push(`/quiz/session/${createdSessionId}`)
   }, [createdSessionId, mode, router])
 
   const handleBack = () => {

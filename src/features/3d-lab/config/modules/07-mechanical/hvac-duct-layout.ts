@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/hvac-duct-layout.ts
+// src/features/3d-lab/config/modules/hvac-duct-layout.ts
 // HVAC Duct Layout — PMEC (Philippine Mechanical Engineering Code)
 // ─────────────────────────────────────────────────────────────────────────────
 

@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/smoke-control-systems.ts
+// src/features/3d-lab/config/modules/smoke-control-systems.ts
 // Smoke Control Systems — RA 9514
 // ─────────────────────────────────────────────────────────────────────────────
 // Stairwell pressurization, smoke partitions, sprinkler-vent downdraft method.

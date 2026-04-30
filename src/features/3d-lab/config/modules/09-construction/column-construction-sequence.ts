@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/column-construction-sequence.ts
+// src/features/3d-lab/config/modules/column-construction-sequence.ts
 // Column Construction Sequence — Construction
 // ─────────────────────────────────────────────────────────────────────────────
 // Step-by-step: layout → vertical rebar → lateral ties → formwork → pour → cure → strip.

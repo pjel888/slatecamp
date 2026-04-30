@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/structural-systems-comparison.ts
+// src/features/3d-lab/config/modules/structural-systems-comparison.ts
 // Structural Systems Comparison — NSCP Chapter 2
 import type { ParametricSceneConfig, ParameterDef, GeometryInstruction, AnnotationDef, Preset } from '@/features/3d-lab/types/templates'
 

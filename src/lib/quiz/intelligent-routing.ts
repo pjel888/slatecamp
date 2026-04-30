@@ -35,6 +35,81 @@ interface RoutingOptions {
 // PostgREST has URL length limits (~2000 chars). Chunk large .in() queries.
 const CHUNK_SIZE = 100 
 
+type QuestionState = {
+  question_id: string
+  last_is_correct: boolean
+  last_seen_at: string
+}
+
+type InteractionStateRow = {
+  question_id: string | null
+  is_correct: boolean | null
+  interaction_timestamp: string | null
+}
+
+export const deriveQuestionStatesFromInteractions = (
+  interactions: InteractionStateRow[],
+): QuestionState[] => {
+  const byQuestion = new Map<string, QuestionState>()
+
+  for (const interaction of interactions) {
+    if (!interaction.question_id || interaction.is_correct == null) continue
+
+    const lastSeenAt = interaction.interaction_timestamp ?? new Date(0).toISOString()
+    const existing = byQuestion.get(interaction.question_id)
+    if (existing && existing.last_seen_at >= lastSeenAt) continue
+
+    byQuestion.set(interaction.question_id, {
+      question_id: interaction.question_id,
+      last_is_correct: interaction.is_correct,
+      last_seen_at: lastSeenAt,
+    })
+  }
+
+  return Array.from(byQuestion.values())
+}
+
+const loadQuestionStates = async (
+  supabase: SupabaseClient,
+  userId: string,
+): Promise<QuestionState[]> => {
+  const { data: allStates, error: statesErr } = await supabase
+    .from('user_question_states')
+    .select('question_id, last_is_correct, last_seen_at')
+    .eq('user_id', userId)
+    .limit(2000)
+
+  if (!statesErr) return (allStates ?? []) as QuestionState[]
+
+  const shouldFallbackToInteractions =
+    statesErr.message?.toLowerCase().includes('permission denied') ||
+    statesErr.code === '42501'
+
+  if (!shouldFallbackToInteractions) {
+    console.warn('[intelligent-routing] question states query failed:', statesErr.message)
+    return []
+  }
+
+  const { data: interactions, error: interactionsErr } = await supabase
+    .from('user_interactions')
+    .select('question_id, is_correct, interaction_timestamp')
+    .eq('user_id', userId)
+    .order('interaction_timestamp', { ascending: false })
+    .limit(2000)
+
+  if (interactionsErr) {
+    console.warn('[intelligent-routing] question history fallback failed:', {
+      statesError: statesErr.message,
+      interactionsError: interactionsErr.message,
+    })
+    return []
+  }
+
+  return deriveQuestionStatesFromInteractions(
+    (interactions ?? []) as InteractionStateRow[],
+  )
+}
+
 const queryQuestionsChunked = async (
   supabase: SupabaseClient,
   cols: string,
@@ -116,17 +191,10 @@ export const selectQuestionsWithRouting = async ({
 
   const srCutoff = new Date(Date.now() - 14 * 24 * 60 * 60 * 1000).toISOString()
 
-  // 2. Single query to user_question_states (replaces 3 separate queries)
-  // Trigger-maintained summary table — one row per (user_id, question_id)
-  const { data: allStates, error: statesErr } = await supabase
-    .from('user_question_states')
-    .select('question_id, last_is_correct, last_seen_at')
-    .eq('user_id', userId)
-    .limit(2000)
-
-  if (statesErr) console.warn('[intelligent-routing] question states query failed:', statesErr.message)
-
-  const states = allStates ?? []
+  // 2. Load routing history from the trigger-maintained state table. If older
+  // environments are missing table grants, derive the same latest-per-question
+  // shape from canonical user_interactions instead of degrading to "all unseen".
+  const states = await loadQuestionStates(supabase, userId)
   const interactedIds = states.map(s => s.question_id)
   const remediationIds = states.filter(s => !s.last_is_correct).map(s => s.question_id)
   const srIds = states.filter(s => s.last_is_correct && s.last_seen_at < srCutoff).map(s => s.question_id)
@@ -211,7 +279,7 @@ export const selectQuestionsWithRouting = async ({
   }
 
   if (pool.length === 0) {
-    console.error('[intelligent-routing] CRITICAL: Empty pool after all fallbacks.', {
+    console.warn('[intelligent-routing] Empty pool after all fallbacks.', {
       topicCount: topicIds.length,
       difficultyRange,
       interactedCount: interactedIds.length,

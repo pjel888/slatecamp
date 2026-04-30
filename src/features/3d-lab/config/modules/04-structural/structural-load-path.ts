@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/structural-load-path.ts
+// src/features/3d-lab/config/modules/structural-load-path.ts
 import type { AnimatedSequenceConfig } from '@/features/3d-lab/types/templates'
 
 /**

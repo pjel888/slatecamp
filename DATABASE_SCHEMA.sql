@@ -1238,8 +1238,24 @@ CREATE TABLE user_question_states (
   last_is_correct                          BOOLEAN NOT NULL,
   total_attempts                           INTEGER NOT NULL DEFAULT 1,
   total_time_ms                            INTEGER NOT NULL DEFAULT 0,
-  avg_time_ms                              INTEGER NOT NULL DEFAULT 0
+  avg_time_ms                              INTEGER NOT NULL DEFAULT 0,
+  PRIMARY KEY (user_id, question_id)
 );
+
+ALTER TABLE user_question_states ENABLE ROW LEVEL SECURITY;
+
+CREATE POLICY user_question_states_select_own
+  ON user_question_states
+  FOR SELECT
+  TO authenticated
+  USING ((SELECT auth.uid()) = user_id);
+
+CREATE POLICY user_question_states_service_role_all
+  ON user_question_states
+  FOR ALL
+  TO service_role
+  USING ((SELECT auth.role()) = 'service_role')
+  WITH CHECK ((SELECT auth.role()) = 'service_role');
 
 -- ============================================================================
 -- 15. Wiki Performance Indexes (2026-04-07)

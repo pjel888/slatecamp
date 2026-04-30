@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/horizontal-exit-design.ts
+// src/features/3d-lab/config/modules/horizontal-exit-design.ts
 // Horizontal Exit Design — RA 9514 (Fire Code of the Philippines)
 // ─────────────────────────────────────────────────────────────────────────────
 

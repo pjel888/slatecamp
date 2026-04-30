@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/standard-material-sheets.ts
+// src/features/3d-lab/config/modules/standard-material-sheets.ts
 // Standard Material Sheets — Construction Materials
 import type { ExplodedAssemblyConfig } from '@/features/3d-lab/types/templates'
 

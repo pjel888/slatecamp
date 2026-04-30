@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/near-source-factors.ts
+// src/features/3d-lab/config/modules/near-source-factors.ts
 // Near-Source Factors — NSCP Chapter 2 §208
 import type { ParametricSceneConfig, ParameterDef, GeometryInstruction, AnnotationDef, Preset } from '@/features/3d-lab/types/templates'
 

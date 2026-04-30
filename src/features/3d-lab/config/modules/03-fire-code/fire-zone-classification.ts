@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/fire-zone-classification.ts
+// src/features/3d-lab/config/modules/fire-zone-classification.ts
 // Fire Zone Classification — RA 9514 (Fire Code of the Philippines)
 // ─────────────────────────────────────────────────────────────────────────────
 

@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/florence-cathedral-dome.ts
+// src/features/3d-lab/config/modules/florence-cathedral-dome.ts
 import type { CutawaySectionConfig } from '@/features/3d-lab/types/templates'
 
 export const florenceCathedralDomeConfig: CutawaySectionConfig = {

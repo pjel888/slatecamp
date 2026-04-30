@@ -943,7 +943,7 @@ const QuestionCard = ({
                 ? 'border-warning bg-warning-50 text-warning'
                 : 'border-border bg-card text-text-secondary hover:border-text-tertiary hover:text-text-primary'
             }`}
-            title="Toggle Camp Mode preview"
+            title="Toggle Quiz preview"
           >
             {showCampPreview ? 'Hide Preview' : 'Preview'}
           </button>
@@ -965,7 +965,7 @@ const QuestionCard = ({
         onDelete={onDelete}
       />
 
-      {/* ── Camp Mode Preview (inline toggle) ─────────────── */}
+      {/* ── Quiz Preview (inline toggle) ─────────────── */}
       {showCampPreview && (
         <div className="border-t border-border px-3 pb-3 pt-3">
           <div className="space-y-3 rounded-md border border-border bg-surface-light p-3">

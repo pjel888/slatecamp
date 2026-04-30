@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/rebar-catalog.ts
+// src/features/3d-lab/config/modules/rebar-catalog.ts
 // Full Philippine Rebar Catalog — 8mm through 36mm
 import type { ExplodedAssemblyConfig } from '@/features/3d-lab/types/templates'
 

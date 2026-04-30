@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/wheelchair-maneuvering.ts
+// src/features/3d-lab/config/modules/wheelchair-maneuvering.ts
 // Wheelchair Maneuvering — BP 344 (2024 IRR)
 // ─────────────────────────────────────────────────────────────────────────────
 

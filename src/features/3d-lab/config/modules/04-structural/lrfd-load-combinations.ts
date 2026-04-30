@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/lrfd-load-combinations.ts
+// src/features/3d-lab/config/modules/lrfd-load-combinations.ts
 // LRFD Load Combinations — NSCP
 // ─────────────────────────────────────────────────────────────────────────────
 // Seven NSCP LRFD load combinations shown as colored force arrows on a building.

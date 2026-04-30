@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/exit-width-calculator.ts
+// src/features/3d-lab/config/modules/exit-width-calculator.ts
 // Exit Width Calculator — RA 9514 Fire Code
 import type { ParametricSceneConfig, ParameterDef, GeometryInstruction, ViolationRule, AnnotationDef, Preset } from '@/features/3d-lab/types/templates'
 

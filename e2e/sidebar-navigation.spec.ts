@@ -9,7 +9,7 @@ const navLabels = [
   'Wiki',
   'Notes',
   '3D Lab',
-  'Drills',
+  'Quiz',
   'Camp Trail',
   'Flash Cards',
   'Analytics',
@@ -77,13 +77,18 @@ async function sidebarWidth(sidebar: Locator) {
 }
 
 async function setSidebarExpanded(page: Page, expanded: boolean) {
-  await page.evaluate((value) => {
-    window.localStorage.setItem('slatecamp_sidebar_expanded', String(value))
-  }, expanded)
-  await page.goto('/dashboard', { waitUntil: 'domcontentloaded' })
-  await expect(page.getByText('Rendering', { exact: false })).toHaveCount(0, {
-    timeout: 30_000,
-  })
+  const sidebar = page.getByRole('navigation', { name: 'Main navigation' })
+  const targetWidth = expanded ? 256 : 52
+  const currentWidth = await sidebarWidth(sidebar)
+
+  if (currentWidth !== targetWidth) {
+    await page.evaluate((label) => {
+      const button = document.querySelector<HTMLButtonElement>(
+        `button[aria-label="${label}"]`,
+      )
+      button?.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true }))
+    }, expanded ? 'Expand sidebar' : 'Collapse sidebar')
+  }
 }
 
 type CenterPoint = {

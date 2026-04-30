@@ -8,11 +8,11 @@
 
 **Scope:** `src/app/tools/` subtree
 
-**Current snapshot:** 3 directories and 11 files beneath this scope (excluding this `AGENTS.md`).
+**Current snapshot:** 7 route directories and 15 files beneath this scope (excluding this `AGENTS.md`).
 
-**Top local directories:** `floor-tiles-calculator/`, `lot-plotter/`, `wall-paint-calculator/`
+**Top local directories:** `chb/`, `drywall/`, `floor-tiles-calculator/`, `flooring/`, `lot-plotter/`, `paint/`, `wall-paint-calculator/`
 
-**Top local files:** `loading.tsx`, `page.tsx`
+**Top local files:** `loading.tsx`, `page.tsx`; material-estimating routes render shared calculator shells from `src/components/calculators/`.
 
 ### What agents must do here
 - Inspect route groups, `page.tsx`, `layout.tsx`, `loading.tsx`, `error.tsx`, and any `route.ts` handlers in this subtree before editing.

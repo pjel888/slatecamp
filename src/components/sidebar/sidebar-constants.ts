@@ -37,8 +37,8 @@ export const SIDEBAR_NAV_ITEMS: SidebarNavItemConfig[] = [
   // Practice group — tier: secondary (tools)
   {
     id: 'testing',
-    href: '/dashboard/drills',
-    label: 'Drills',
+    href: '/quiz',
+    label: 'Quiz',
     icon: Exam,
     tier: 'secondary',
     group: 'practice',

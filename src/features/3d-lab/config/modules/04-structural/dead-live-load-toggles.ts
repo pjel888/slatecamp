@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/dead-live-load-toggles.ts
+// src/features/3d-lab/config/modules/dead-live-load-toggles.ts
 // Dead/Live Load Toggles — NSCP Chapter 2
 import type { ParametricSceneConfig, ParameterDef, GeometryInstruction, ViolationRule, AnnotationDef, Preset } from '@/features/3d-lab/types/templates'
 

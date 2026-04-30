@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/ramp-gradient-building.ts
+// src/features/3d-lab/config/modules/ramp-gradient-building.ts
 // Building Ramp Gradient — RA 9514 Fire Code
 import type { ParametricSceneConfig, ParameterDef, GeometryInstruction, ViolationRule, AnnotationDef, Preset } from '@/features/3d-lab/types/templates'
 

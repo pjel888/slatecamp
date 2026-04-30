@@ -41,7 +41,7 @@ const DAEQuizSession = ({ sessionId, questions, onExit }: DAEQuizSessionProps) =
       setCurrentIndex((i) => i + 1)
     } else {
       // Go to results
-      router.push(`/quiz/chill/session/${sessionId}/results`)
+      router.push(`/quiz/session/${sessionId}/results`)
     }
   }
 

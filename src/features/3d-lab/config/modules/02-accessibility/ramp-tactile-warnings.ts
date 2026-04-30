@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/ramp-tactile-warnings.ts
+// src/features/3d-lab/config/modules/ramp-tactile-warnings.ts
 // Ramp Tactile Warning Blocks — BP 344 2024 IRR §6.1
 import type { ParametricSceneConfig, ParameterDef, GeometryInstruction, ViolationRule, AnnotationDef, Preset } from '@/features/3d-lab/types/templates'
 

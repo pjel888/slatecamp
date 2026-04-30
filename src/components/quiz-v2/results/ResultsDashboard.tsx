@@ -121,6 +121,7 @@ const ResultsDashboard = ({
       <main
         className="max-w-[900px] mx-auto px-4 py-8 space-y-8"
         aria-label="Session results"
+        data-testid="quiz-results"
       >
         {/* ── Section 1: Score Hero ──────────────────────────────────────────── */}
         <section aria-label="Score summary">

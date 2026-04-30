@@ -27,6 +27,13 @@ import { logServerError } from '@/lib/logging/server'
 const DIRECT_QUESTION_COLS =
   'question_id, article_id, topic_id, text, options, difficulty, prompt_image_url, question_type, rationale, explanation'
 
+interface TaxonomyGraphNode {
+  node_id: string
+  parent_id: string | null
+  is_leaf: boolean
+  is_cross_ref_only: boolean
+}
+
 const generateCageSessionKey = (): string | null => {
   try {
     return randomBytes(32).toString('hex')
@@ -47,6 +54,69 @@ const issueSessionNonces = async (
   } catch {
     return {}
   }
+}
+
+const resolveLiveTaxonomyDescendants = async (
+  supabase: Awaited<ReturnType<typeof createServiceClient>>,
+  selectedTopicIds: string[],
+): Promise<string[]> => {
+  if (selectedTopicIds.length === 0) return []
+
+  const result = new Set<string>()
+  const visited = new Set<string>()
+  const queue = [...selectedTopicIds]
+
+  while (queue.length > 0) {
+    const batch = queue.splice(0, 100).filter((nodeId) => !visited.has(nodeId))
+    if (batch.length === 0) continue
+    batch.forEach((nodeId) => visited.add(nodeId))
+
+    const [{ data: nodes }, { data: childNodes }] = await Promise.all([
+      supabase
+        .from('taxonomy_tree')
+        .select('node_id, parent_id, is_leaf, is_cross_ref_only')
+        .in('node_id', batch)
+        .is('deprecated_at', null),
+      supabase
+        .from('taxonomy_tree')
+        .select('node_id, parent_id, is_leaf, is_cross_ref_only')
+        .in('parent_id', batch)
+        .is('deprecated_at', null),
+    ])
+
+    const nodesById = new Map(
+      ((nodes ?? []) as TaxonomyGraphNode[]).map((node) => [node.node_id, node]),
+    )
+
+    for (const nodeId of batch) {
+      const node = nodesById.get(nodeId)
+      if (!node) {
+        result.add(nodeId)
+      } else if (!node.is_cross_ref_only) {
+        result.add(nodeId)
+      }
+    }
+
+    for (const child of (childNodes ?? []) as TaxonomyGraphNode[]) {
+      if (!child.is_cross_ref_only) queue.push(child.node_id)
+    }
+
+    const crossRefSources = ((nodes ?? []) as TaxonomyGraphNode[])
+      .filter((node) => node.is_cross_ref_only)
+      .map((node) => node.node_id)
+    if (crossRefSources.length > 0) {
+      const { data: crossRefs } = await supabase
+        .from('taxonomy_cross_references')
+        .select('target_node_id')
+        .in('source_node_id', crossRefSources)
+
+      for (const crossRef of (crossRefs ?? []) as { target_node_id: string }[]) {
+        queue.push(crossRef.target_node_id)
+      }
+    }
+  }
+
+  return Array.from(result)
 }
 
 export const startSession = async (
@@ -195,6 +265,12 @@ export const startSession = async (
         // Cached in-memory traversal — replaces 4-7 sequential DB queries with zero on cache hit
         const resolved = await resolveTaxonomyDescendants(topics)
         topicIds = resolved.length > 0 ? resolved : topics
+        if (topicIds.length <= topics.length) {
+          const liveResolved = await resolveLiveTaxonomyDescendants(supabase, topics)
+          if (liveResolved.length > topicIds.length) {
+            topicIds = liveResolved
+          }
+        }
       } else if (disciplines.length > 0 && disciplines.length <= 3) {
         filterByDisciplineId = disciplines[0]
       } else if (disciplineId) {
@@ -258,28 +334,44 @@ export const startSession = async (
 
     // Generate CAGE session key before insert (sync, no dependencies)
     const sessionKey = generateCageSessionKey()
+    const sessionInsertPayload = {
+      user_id: user.id,
+      discipline_id: disciplineId,
+      test_mode: parsedInput.mode,
+      status: 'in_progress',
+      config: mergedConfig,
+      question_ids: questionIds,
+      subject_ids: uniqueTopicIds,
+      current_question_index: 0,
+      started_at: new Date().toISOString(),
+      cage_session_key: sessionKey,
+      is_full_exam: parsedInput.mode === 'full_exam',
+      is_endurance: parsedInput.mode === 'endurance',
+    }
+
+    const insertQuizSession = async (payload: typeof sessionInsertPayload) => {
+      const response = await supabase
+        .from('quiz_sessions')
+        .insert(payload)
+        .select('session_id')
+        .single()
+
+      if (response.error?.code === 'PGRST204') {
+        const { is_endurance: _isEndurance, is_full_exam: _isFullExam, ...legacyCompatiblePayload } = payload
+        return supabase
+          .from('quiz_sessions')
+          .insert(legacyCompatiblePayload)
+          .select('session_id')
+          .single()
+      }
+
+      return response
+    }
 
     // Parallel: breadcrumb map + session insert (independent operations)
     const [taxonomyMap, { data: session, error: sessionError }] = await Promise.all([
       buildTaxonomyBreadcrumbMap(supabase, uniqueTopicIds),
-      supabase
-        .from('quiz_sessions')
-        .insert({
-          user_id: user.id,
-          discipline_id: disciplineId,
-          test_mode: parsedInput.mode,
-          status: 'in_progress',
-          config: mergedConfig,
-          question_ids: questionIds,
-          subject_ids: uniqueTopicIds,
-          current_question_index: 0,
-          started_at: new Date().toISOString(),
-          cage_session_key: sessionKey,
-          is_full_exam: parsedInput.mode === 'full_exam',
-          is_endurance: parsedInput.mode === 'endurance',
-        })
-        .select('session_id')
-        .single(),
+      insertQuizSession(sessionInsertPayload),
     ])
 
     if (sessionError || !session) {

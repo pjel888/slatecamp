@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/rebar-sizes-catalog.ts
+// src/features/3d-lab/config/modules/rebar-sizes-catalog.ts
 // Rebar Sizes Catalog — NSCP / Philippine Standards
 import type { ExplodedAssemblyConfig } from '@/features/3d-lab/types/templates'
 

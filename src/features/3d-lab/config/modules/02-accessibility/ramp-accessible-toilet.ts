@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/ramp-accessible-toilet.ts
+// src/features/3d-lab/config/modules/ramp-accessible-toilet.ts
 // Ramp & Accessible Toilet — BP 344 2024 IRR §5.2
 // ─────────────────────────────────────────────────────────────────────────────
 

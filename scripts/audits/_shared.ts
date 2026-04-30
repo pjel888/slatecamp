@@ -48,7 +48,7 @@ export const APP_ROOT = join(REPO_ROOT, 'src', 'app')
 export const EVIDENCE_ROOT = join(REPO_ROOT, '.ai', '02_audits', 'evidence')
 const ROUTE_MANIFEST_FILENAME = 'route-manifest.json'
 
-const PUBLIC_PREFIXES = ['/', '/about', '/contact', '/pricing', '/try', '/tools', '/calculators']
+const PUBLIC_PREFIXES = ['/', '/about', '/contact', '/pricing', '/try', '/tools']
 const AUTH_PREFIXES = ['/login', '/register', '/forgot-password', '/auth/reset-password', '/onboarding']
 const PROTECTED_PREFIXES = ['/dashboard', '/admin', '/developer', '/ceo', '/quiz', '/settings', '/test-3d']
 const DEFAULT_PROTECTED_PROBES = new Set(['/dashboard', '/admin', '/developer', '/ceo'])

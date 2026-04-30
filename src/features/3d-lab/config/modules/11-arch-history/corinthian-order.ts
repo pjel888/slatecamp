@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/corinthian-order.ts
+// src/features/3d-lab/config/modules/corinthian-order.ts
 // Corinthian Order — Classical Architecture History
 import type { ExplodedAssemblyConfig } from '@/features/3d-lab/types/templates'
 

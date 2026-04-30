@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/subdivision-layout-pd957.ts
+// src/features/3d-lab/config/modules/subdivision-layout-pd957.ts
 // Subdivision Layout (PD 957 Open Market) — Environmental Planning
 // ─────────────────────────────────────────────────────────────────────────────
 

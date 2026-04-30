@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/construction-types-comparison.ts
+// src/features/3d-lab/config/modules/construction-types-comparison.ts
 // Construction Types Comparison — PD 1096 Rule V
 // ─────────────────────────────────────────────────────────────────────────────
 // Side-by-side exploded comparison of 5 construction types (Type I–V)

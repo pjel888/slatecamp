@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/classical-orders-comparison.ts
+// src/features/3d-lab/config/modules/classical-orders-comparison.ts
 // ─── Classical Orders Comparison ────────────────────────────────────────────
 // Side-by-side exploded comparison of the five classical column orders:
 // Tuscan, Doric, Ionic, Corinthian, and Composite.

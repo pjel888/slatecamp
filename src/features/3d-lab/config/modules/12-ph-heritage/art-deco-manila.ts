@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/art-deco-manila.ts
+// src/features/3d-lab/config/modules/art-deco-manila.ts
 import type { CutawaySectionConfig } from '@/features/3d-lab/types/templates'
 
 export const artDecoManilaConfig: CutawaySectionConfig = {

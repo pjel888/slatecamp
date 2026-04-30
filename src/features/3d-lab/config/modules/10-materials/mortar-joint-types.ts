@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/mortar-joint-types.ts
+// src/features/3d-lab/config/modules/mortar-joint-types.ts
 import type { CutawaySectionConfig } from '@/features/3d-lab/types/templates'
 
 export const mortarJointTypesConfig: CutawaySectionConfig = {

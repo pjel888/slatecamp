@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/modernism-five-points.ts
+// src/features/3d-lab/config/modules/modernism-five-points.ts
 // Modernism Five Points — Le Corbusier's Five Points of Architecture
 import type { ExplodedAssemblyConfig } from '@/features/3d-lab/types/templates'
 

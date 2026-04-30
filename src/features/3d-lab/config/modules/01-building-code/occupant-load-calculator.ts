@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/occupant-load-calculator.ts
+// src/features/3d-lab/config/modules/occupant-load-calculator.ts
 // Occupant Load Calculator — RA 9514 IRR Rule 10
 // ─────────────────────────────────────────────────────────────────────────────
 

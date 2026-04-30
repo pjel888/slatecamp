@@ -1,6 +1,6 @@
 import { Skeleton } from '@/components/ui/skeleton'
 
-const DrillsLoading = () => {
+const LegacyQuizRedirectLoading = () => {
   return (
     <div className="px-6 py-8 w-full space-y-8">
       {/* Header */}
@@ -45,4 +45,4 @@ const DrillsLoading = () => {
   )
 }
 
-export default DrillsLoading
+export default LegacyQuizRedirectLoading

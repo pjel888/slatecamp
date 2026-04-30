@@ -1,13 +1,13 @@
 import { redirect } from 'next/navigation'
+import { ROUTES } from '@/lib/routes'
 
 interface ReviewPageProps {
   params: Promise<{ mode: string; sessionId: string }>
 }
 
-/** Review page now redirects to the merged results page */
-const QuizReviewPage = async ({ params }: ReviewPageProps) => {
-  const { mode, sessionId } = await params
-  redirect(`/quiz/${mode}/session/${sessionId}/results`)
+const LegacyModeQuizReviewPage = async ({ params }: ReviewPageProps) => {
+  const { sessionId } = await params
+  redirect(ROUTES.quiz.results(sessionId))
 }
 
-export default QuizReviewPage
+export default LegacyModeQuizReviewPage

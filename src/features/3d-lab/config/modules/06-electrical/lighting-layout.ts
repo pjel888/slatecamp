@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/lighting-layout.ts
+// src/features/3d-lab/config/modules/lighting-layout.ts
 // Lighting Layout — PEC (Philippine Electrical Code)
 // ─────────────────────────────────────────────────────────────────────────────
 

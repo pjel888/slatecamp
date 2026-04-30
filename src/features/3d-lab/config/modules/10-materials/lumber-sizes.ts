@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/lumber-sizes.ts
+// src/features/3d-lab/config/modules/lumber-sizes.ts
 // Philippine Standard Lumber Dimensions
 import type { ExplodedAssemblyConfig } from '@/features/3d-lab/types/templates'
 

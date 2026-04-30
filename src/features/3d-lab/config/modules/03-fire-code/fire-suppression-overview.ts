@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/fire-suppression-overview.ts
+// src/features/3d-lab/config/modules/fire-suppression-overview.ts
 import type { CutawaySectionConfig } from '@/features/3d-lab/types/templates'
 
 export const fireSuppressionOverviewConfig: CutawaySectionConfig = {

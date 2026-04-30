@@ -8,7 +8,7 @@ import { ROUTES } from '@/lib/routes'
 export const metadata = {
   title: `Free Architecture Tools — ${siteConfig.name}`,
   description:
-    'Browser-based calculators for architecture students and professionals. Floor tiles, wall paint, and lot plotter tools built for LEA exam prep.',
+    'Browser-based calculators and 3D estimating tools for architecture students and professionals. Floor tiles, wall paint, lot plotting, CHB, drywall, flooring, and paint tools built for LEA exam prep.',
   keywords: [
     'architecture tools',
     'floor tile calculator',
@@ -44,6 +44,34 @@ const TOOLS = [
     href: ROUTES.calculators.lotPlotter,
     tag: 'Site Planning',
   },
+  {
+    icon: <GridFour size={22} weight='regular' />,
+    title: 'Tile Layout Visualizer',
+    description: 'Estimate tile layouts with a 3D pattern preview and waste calculation.',
+    href: ROUTES.calculators.flooring,
+    tag: '3D Estimating',
+  },
+  {
+    icon: <PaintBucket size={22} weight='regular' />,
+    title: 'Paint Visualizer',
+    description: 'Calculate paint for walls and ceilings with a 3D room preview.',
+    href: ROUTES.calculators.paint,
+    tag: '3D Estimating',
+  },
+  {
+    icon: <GridFour size={22} weight='regular' />,
+    title: 'Drywall Partition Estimator',
+    description: 'Estimate boards, studs, and tracks for drywall partitions.',
+    href: ROUTES.calculators.drywall,
+    tag: '3D Estimating',
+  },
+  {
+    icon: <GridFour size={22} weight='regular' />,
+    title: 'CHB Wall Builder',
+    description: 'Estimate hollow blocks, mortar, cement, sand, and rebar.',
+    href: ROUTES.calculators.chb,
+    tag: '3D Estimating',
+  },
 ]
 
 export default function ToolsHubPage() {
@@ -58,7 +86,7 @@ export default function ToolsHubPage() {
               Free Architecture Tools
             </h1>
             <p className='mt-4 text-[17px] text-muted-foreground leading-relaxed'>
-              Browser-based calculators for architecture students and professionals.
+              Browser-based calculators and 3D estimating tools for architecture students and professionals.
               Built for LEA exam prep.
             </p>
           </div>

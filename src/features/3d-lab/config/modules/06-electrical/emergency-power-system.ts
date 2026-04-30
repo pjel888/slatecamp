@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/emergency-power-system.ts
+// src/features/3d-lab/config/modules/emergency-power-system.ts
 // Emergency Power System — PEC (Philippine Electrical Code)
 // ─────────────────────────────────────────────────────────────────────────────
 

@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/steel-sections-catalog.ts
+// src/features/3d-lab/config/modules/steel-sections-catalog.ts
 // Steel Sections Catalog — Construction Materials
 import type { ExplodedAssemblyConfig } from '@/features/3d-lab/types/templates'
 

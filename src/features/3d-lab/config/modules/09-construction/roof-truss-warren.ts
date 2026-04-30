@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/roof-truss-warren.ts
+// src/features/3d-lab/config/modules/roof-truss-warren.ts
 // Warren Roof Truss — Construction
 import type { ExplodedAssemblyConfig } from '@/features/3d-lab/types/templates'
 

@@ -1,12 +1,12 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Drills | SlateCamp',
+  title: 'Quiz | SlateCamp',
   description: 'Build mastery through guided study, timed practice, and exam simulations.',
 }
 
-const DrillsLayout = ({ children }: { children: React.ReactNode }) => {
+const LegacyQuizRedirectLayout = ({ children }: { children: React.ReactNode }) => {
   return <>{children}</>
 }
 
-export default DrillsLayout
+export default LegacyQuizRedirectLayout

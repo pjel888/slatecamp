@@ -16,7 +16,7 @@ export default function QuizNotFound() {
       </p>
       <div className="flex flex-col gap-3 w-full max-w-xs">
         <Button asChild variant="primary" size="lg">
-          <Link href={ROUTES.dashboard.drills}>Return to Testing Hub</Link>
+          <Link href={ROUTES.quiz.root}>Return to Quiz</Link>
         </Button>
         <Button asChild variant="ghost" size="lg">
           <Link href={ROUTES.dashboard.root}>Go to Dashboard</Link>

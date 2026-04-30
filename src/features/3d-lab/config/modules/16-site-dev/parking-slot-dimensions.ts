@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/parking-slot-dimensions.ts
+// src/features/3d-lab/config/modules/parking-slot-dimensions.ts
 // Parking Slot Dimensions — PD 1096 Rule XIX
 import type { ParametricSceneConfig, ParameterDef, GeometryInstruction, ViolationRule, AnnotationDef, Preset } from '@/features/3d-lab/types/templates'
 

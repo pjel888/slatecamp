@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/water-supply-riser.ts
+// src/features/3d-lab/config/modules/water-supply-riser.ts
 import type { CutawaySectionConfig } from '@/features/3d-lab/types/templates'
 
 export const waterSupplyRiserConfig: CutawaySectionConfig = {

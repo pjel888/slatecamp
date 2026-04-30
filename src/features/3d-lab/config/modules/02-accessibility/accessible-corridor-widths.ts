@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/accessible-corridor-widths.ts
+// src/features/3d-lab/config/modules/accessible-corridor-widths.ts
 // Accessible Corridor Widths — BP 344 2024 IRR §4
 import type { ParametricSceneConfig, ParameterDef, GeometryInstruction, ViolationRule, AnnotationDef, Preset } from '@/features/3d-lab/types/templates'
 

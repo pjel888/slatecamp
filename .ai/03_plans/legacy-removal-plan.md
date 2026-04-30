@@ -62,8 +62,8 @@ Remove or consolidate superseded routes, wrappers, aliases, and compatibility su
 2. validate likely-dead UI/hooks/helpers (`L1-L003`–`L1-L007`)
 3. inventory and consolidate admin aliases (`L2-ADM-001`)
 4. converge quiz/testing/drills routing (`L2-QUIZ-002`)
-5. rationalize calculator namespace after product decision (`L2-CALC-003`)
-6. retire 3D-lab legacy shims and stale route docs (`L2-3DLAB-004`)
+5. completed 2026-04-30: rationalize calculator namespace after product decision (`L2-CALC-003`)
+6. completed 2026-04-30: retire 3D-lab legacy shims and stale route docs (`L2-3DLAB-004`) by keeping the canonical feature-layer registry, removing stale 18-category generator artifacts, removing empty placeholder registry files, and updating route-local path drift
 7. only then tackle auth/status/feature-flag compatibility branches (`L5-C02`, `L5-C03`, `L5-C06`)
 8. quarantine or archive ad hoc DB helper scripts (`L5-C07`) after explicit ownership review
 
@@ -86,4 +86,3 @@ Remove or consolidate superseded routes, wrappers, aliases, and compatibility su
 ## Approval points needing human decision
 - whether admin and calculator aliases remain long-lived compatibility surfaces
 - whether manual DB helper scripts should be archived, retained, or moved under a clearer ops surface
-

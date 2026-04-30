@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/bond-pattern-comparison.ts
+// src/features/3d-lab/config/modules/bond-pattern-comparison.ts
 // Bond Pattern Comparison — Construction Materials
 import type { ExplodedAssemblyConfig } from '@/features/3d-lab/types/templates'
 

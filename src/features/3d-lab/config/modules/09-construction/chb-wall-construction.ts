@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/chb-wall-construction.ts
+// src/features/3d-lab/config/modules/chb-wall-construction.ts
 // CHB Wall Construction Sequence — Construction
 // ─────────────────────────────────────────────────────────────────────────────
 // Layout → dry first course → mortar bed → running bond → vertical rebar → grout → lintels → plastering.

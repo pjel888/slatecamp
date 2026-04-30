@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/csi-masterformat-explorer.ts
+// src/features/3d-lab/config/modules/csi-masterformat-explorer.ts
 // CSI MasterFormat Explorer — Specifications
 import type { ParametricSceneConfig, ParameterDef, GeometryInstruction, AnnotationDef, Preset } from '@/features/3d-lab/types/templates'
 

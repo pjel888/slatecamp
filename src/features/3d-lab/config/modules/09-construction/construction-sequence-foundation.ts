@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/construction-sequence-foundation.ts
+// src/features/3d-lab/config/modules/construction-sequence-foundation.ts
 import type { AnimatedSequenceConfig } from '@/features/3d-lab/types/templates'
 
 /**

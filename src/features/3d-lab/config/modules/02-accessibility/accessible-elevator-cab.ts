@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/accessible-elevator-cab.ts
+// src/features/3d-lab/config/modules/accessible-elevator-cab.ts
 // Accessible Elevator Cab — BP 344 2024 IRR §7.3
 import type { ParametricSceneConfig, ParameterDef, GeometryInstruction, ViolationRule, AnnotationDef, Preset } from '@/features/3d-lab/types/templates'
 

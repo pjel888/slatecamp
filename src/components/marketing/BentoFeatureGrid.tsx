@@ -292,8 +292,8 @@ export const BentoFeatureGrid = () => (
               Timed quizzes, full analytics. Watch your readiness climb.
             </p>
             <div className='mt-3 flex gap-[5px]'>
-              <Pill variant='dark'>Camp Mode</Pill>
-              <Pill variant='dark'>Storm Mode</Pill>
+              <Pill variant='dark'>Quiz</Pill>
+              <Pill variant='dark'>Timed Quiz</Pill>
             </div>
           </div>
         </div>

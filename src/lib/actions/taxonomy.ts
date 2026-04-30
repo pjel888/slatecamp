@@ -159,7 +159,7 @@ export async function getTaxonomyTree(disciplineId: string): Promise<TaxonomyNod
 
 /**
  * Fetches the top-level subjects (Level 1) for the user's current discipline.
- * Used by the Hero Configurator on the Testing Hub.
+ * Used by the Quiz configurator.
  */
 export async function getCoreSubjects() {
   const supabase = await createClient()

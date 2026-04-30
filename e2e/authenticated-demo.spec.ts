@@ -30,7 +30,7 @@ test.describe('demo-authenticated first-run flows', () => {
       timeout: 60000,
     })
     await expect(page.locator('body')).toContainText(
-      /Wiki|Drills|Camp Trail|Analytics|Settings/i,
+      /Wiki|Quiz|Camp Trail|Analytics|Settings/i,
       { timeout: 60000 },
     )
   })

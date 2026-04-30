@@ -1,9 +1,9 @@
 # Complete Route Map
 
-**Last audit:** 2026-04-29
-**Post-Plan-B cleanup counts:** 105 `page.tsx` routes, 14 layouts, 92 loading states, 7 error boundaries.
+**Last audit:** 2026-04-30
+**Post-route-cleanup counts:** 109 `page.tsx` routes, 13 layouts, 92 loading states, 7 error boundaries.
 
-This file is the canonical route inventory for the current codebase. It was regenerated after Plan B cleanup removed redirect-only legacy pages (`/settings`, `/test-3d`, `/admin/wiki`, `/dashboard/heatmap`, `/dashboard/trail`, `/dashboard/trails`, `/dashboard/settings/billing`, `/dashboard/settings/developer`, and `/quiz`). Route groups in parentheses are omitted from URL paths. Dynamic params are shown with bracket syntax.
+This file is the canonical route inventory for the current codebase. It was refreshed after Quiz consolidation made `/quiz` the canonical hub and kept `/dashboard/drills` as redirect-only compatibility. Route groups in parentheses are omitted from URL paths. Dynamic params are shown with bracket syntax.
 
 ## Page routes
 
@@ -38,11 +38,6 @@ This file is the canonical route inventory for the current codebase. It was rege
 | /admin/taxonomy | page | src/app/admin/taxonomy/page.tsx | admin | Admin taxonomy/coverage surface. | Admin taxonomy/coverage | `@/lib/admin/roles`, `@/lib/actions/admin/taxonomy`, `@/components/admin/TaxonomyEditor` | Has route loading state. |
 | /admin/taxonomy/coverage | page | src/app/admin/taxonomy/coverage/page.tsx | admin | Admin taxonomy/coverage surface. | Admin taxonomy/coverage | `@/lib/admin/roles`, `@/lib/actions/admin/coverage`, `@/components/shared/section-header` (+3) | Has route loading state. |
 | /auth/reset-password | page | src/app/auth/reset-password/page.tsx | public/auth | Authentication, password reset, registration, or onboarding flow. | Auth/onboarding | `@/components/graphics/icons/Icon`, `@/components/ui/button`, `@/components/ui/input` (+4) | — |
-| /calculators | page | src/app/calculators/page.tsx | public utility | Public utility/calculator surface. | Tools/calculators | `@/lib/routes` | — |
-| /calculators/chb | page | src/app/calculators/chb/page.tsx | public utility | Public utility/calculator surface. | Tools/calculators | `./_components/CHBCalculator` | — |
-| /calculators/drywall | page | src/app/calculators/drywall/page.tsx | public utility | Public utility/calculator surface. | Tools/calculators | `./_components/DrywallCalculator` | — |
-| /calculators/flooring | page | src/app/calculators/flooring/page.tsx | public utility | Public utility/calculator surface. | Tools/calculators | `./_components/FlooringCalculator` | — |
-| /calculators/paint | page | src/app/calculators/paint/page.tsx | public utility | Public utility/calculator surface. | Tools/calculators | `./_components/PaintCalculator` | — |
 | /ceo | page | src/app/(protected)/ceo/page.tsx | owner/CEO | Owner/CEO internal business analytics and team operations. | CEO/internal ops | `@/components/shared/stat-card`, `@/components/ui/eyebrow`, `@/components/ceo/RunwayGauge` (+5) | Has route loading state. |
 | /ceo/analytics | page | src/app/(protected)/ceo/analytics/page.tsx | owner/CEO | Owner/CEO internal business analytics and team operations. | CEO/internal ops | `@/components/ui/eyebrow`, `@/components/ceo/skeletons/ChartSkeleton`, `@/components/analytics/AnalyticsErrorBoundary` (+10) | — |
 | /ceo/financials | page | src/app/(protected)/ceo/financials/page.tsx | owner/CEO | Owner/CEO internal business analytics and team operations. | CEO/internal ops | `@/lib/supabase/server`, `@/lib/queries/ceo/auth`, `@/components/shared/stat-card` (+7) | Has route loading state. |
@@ -70,8 +65,8 @@ This file is the canonical route inventory for the current codebase. It was rege
 | /dashboard/code-updates | page | src/app/dashboard/code-updates/page.tsx | authenticated | Learner dashboard page. | Learner dashboard | `@/lib/actions/code-updates`, `./_components/CodeUpdateFeed` | Has route loading state. |
 | /dashboard/cram-card | page | src/app/dashboard/cram-card/page.tsx | authenticated | Flash/cram review page. | Flash/cram review | `@/components/layouts/SharedPageLayout`, `@/lib/actions/cram-card`, `./_components/CramCardPage` | Has route loading state. |
 | /dashboard/dae-mode | page | src/app/dashboard/dae-mode/page.tsx | authenticated | Learner dashboard page. | Learner dashboard | `@/lib/supabase/server`, `@/lib/routes`, `@/lib/actions/dae-mode` (+2) | Has route loading state. |
-| /dashboard/drills | page | src/app/dashboard/drills/page.tsx | authenticated | Drills page. | Drills | `@/lib/supabase/server`, `@/lib/routes`, `@/components/testing/hub/ReviewHub` (+3) | Has route loading state. |
-| /dashboard/drills/sessions | page | src/app/dashboard/drills/sessions/page.tsx | authenticated | Drills page. | Drills | `@/lib/supabase/server`, `@/lib/routes`, `@/components/testing/hub/SessionsTable` | Has route loading state. |
+| /dashboard/drills | page | src/app/dashboard/drills/page.tsx | authenticated | Legacy redirect to `/quiz`. | Quiz compatibility | `next/navigation`, `@/lib/routes` | Redirect-only compatibility route. |
+| /dashboard/drills/sessions | page | src/app/dashboard/drills/sessions/page.tsx | authenticated | Legacy redirect to `/quiz/sessions`. | Quiz compatibility | `next/navigation`, `@/lib/routes` | Redirect-only compatibility route. |
 | /dashboard/exam-outcome | page | src/app/dashboard/exam-outcome/page.tsx | authenticated | Learner dashboard page. | Learner dashboard | `@/lib/routes`, `@/lib/supabase/server`, `@/components/layouts/SharedPageLayout` (+1) | Has route loading state. |
 | /dashboard/flash | page | src/app/dashboard/flash/page.tsx | authenticated | Flash/cram review page. | Flash/cram review | `@/components/layouts/SharedPageLayout`, `./_components/FlashHub`, `@/lib/actions/flash-cards` | Has route loading state. |
 | /dashboard/flash/[category] | page dynamic | src/app/dashboard/flash/[category]/page.tsx | authenticated | Flash/cram review page. | Flash/cram review | `@/components/layouts/SharedPageLayout`, `../_components/FlashSession`, `@/lib/actions/flash-cards` (+1) | Dynamic params present. Has route loading state. |
@@ -104,15 +99,24 @@ This file is the canonical route inventory for the current codebase. It was rege
 | /onboarding | page | src/app/(auth)/onboarding/page.tsx | public/auth | Authentication, password reset, registration, or onboarding flow. | Auth/onboarding | `@/lib/supabase/server`, `@/lib/routes`, `@/lib/supabase/bootstrap` (+3) | Has route loading state. |
 | /onboarding/comp-exam | page | src/app/(auth)/onboarding/comp-exam/page.tsx | public/auth | Authentication, password reset, registration, or onboarding flow. | Auth/onboarding | `@/lib/supabase/server`, `@/lib/routes`, `./_components/CompExamFlow` | — |
 | /pricing | page | src/app/pricing/page.tsx | public | Public marketing or conversion page. | Marketing/public | `@/components/marketing/MarketingNav`, `@/components/marketing/MarketingFooter`, `@/components/marketing/FaqSection` (+5) | Has route loading state. |
-| /quiz/[mode]/session/[sessionId] | page dynamic | src/app/quiz/[mode]/session/[sessionId]/page.tsx | authenticated | Canonical quiz setup, active session, review, or results flow. | Quiz session loop | `@/lib/quiz/mode-presets`, `@/lib/quiz/to-client-question`, `@/lib/supabase/server` (+1) | Dynamic params present. Has route loading state. |
-| /quiz/[mode]/session/[sessionId]/results | page dynamic | src/app/quiz/[mode]/session/[sessionId]/results/page.tsx | authenticated | Canonical quiz setup, active session, review, or results flow. | Quiz session loop | `@/lib/supabase/server`, `@/types/quiz-config`, `@/lib/quiz/mode-presets` (+5) | Dynamic params present. Has route loading state. |
-| /quiz/[mode]/session/[sessionId]/review | page dynamic | src/app/quiz/[mode]/session/[sessionId]/review/page.tsx | authenticated | Canonical quiz setup, active session, review, or results flow. | Quiz session loop | — | Dynamic params present. Has route loading state. |
+| /quiz/[mode]/session/[sessionId] | page dynamic | src/app/quiz/[mode]/session/[sessionId]/page.tsx | authenticated | Legacy modeful active-session compatibility wrapper. | Quiz session loop | `@/lib/quiz/mode-presets`, `@/lib/quiz/to-client-question`, `@/lib/supabase/server` (+1) | Dynamic params present. Has route loading state. |
+| /quiz/[mode]/session/[sessionId]/results | page dynamic | src/app/quiz/[mode]/session/[sessionId]/results/page.tsx | authenticated | Legacy modeful results compatibility wrapper. | Quiz session loop | `@/lib/supabase/server`, `@/types/quiz-config`, `@/lib/quiz/mode-presets` (+5) | Dynamic params present. Has route loading state. |
+| /quiz/[mode]/session/[sessionId]/review | page dynamic | src/app/quiz/[mode]/session/[sessionId]/review/page.tsx | authenticated | Legacy modeful review compatibility wrapper. | Quiz session loop | — | Dynamic params present. Has route loading state. |
+| /quiz | page | src/app/quiz/page.tsx | authenticated | Canonical quiz hub. | Quiz builder | `./_components/QuizHubContent` | Has route loading state. |
+| /quiz/sessions | page | src/app/quiz/sessions/page.tsx | authenticated | Canonical quiz session history. | Quiz session history | `@/components/testing/hub/SessionsTable`, `@/lib/supabase/server` | — |
+| /quiz/session/[sessionId] | page dynamic | src/app/quiz/session/[sessionId]/page.tsx | authenticated | Canonical active quiz session. | Quiz session loop | `../_components/QuizSessionRoute` | Dynamic params present. |
+| /quiz/session/[sessionId]/results | page dynamic | src/app/quiz/session/[sessionId]/results/page.tsx | authenticated | Canonical quiz results. | Quiz results | `../../_components/QuizResultsRoute` | Dynamic params present. |
+| /quiz/session/[sessionId]/review | page dynamic | src/app/quiz/session/[sessionId]/review/page.tsx | authenticated | Canonical quiz review. | Quiz review | `@/components/quiz-v2/ReviewPage` | Dynamic params present. |
 | /quiz/[mode]/setup | page dynamic | src/app/quiz/[mode]/setup/page.tsx | authenticated | Canonical quiz setup, active session, review, or results flow. | Quiz session loop | `@/lib/supabase/server`, `@/lib/actions/quiz-v2`, `@/types/quiz-config` (+1) | Dynamic params present. Has route loading state. |
 | /register | page | src/app/(auth)/register/page.tsx | public/auth | Authentication, password reset, registration, or onboarding flow. | Auth/onboarding | `./register-form`, `@/lib/constants/site`, `@/lib/demo/config` (+1) | Has route loading state. |
-| /tools | page | src/app/tools/page.tsx | public utility | Public utility/calculator surface. | Tools/calculators | `@/components/marketing/MarketingNav`, `@/components/marketing/MarketingFooter`, `@/components/tools/ToolCard` (+2) | Has route loading state. |
-| /tools/floor-tiles-calculator | page | src/app/tools/floor-tiles-calculator/page.tsx | public utility | Public utility/calculator surface. | Tools/calculators | `@/components/marketing/MarketingNav`, `@/components/marketing/MarketingFooter`, `@/lib/constants/site` (+2) | Has route loading state. |
-| /tools/lot-plotter | page | src/app/tools/lot-plotter/page.tsx | public utility | Public utility/calculator surface. | Tools/calculators | `@/components/marketing/MarketingNav`, `@/components/marketing/MarketingFooter`, `@/lib/constants/site` (+2) | Has route loading state. |
-| /tools/wall-paint-calculator | page | src/app/tools/wall-paint-calculator/page.tsx | public utility | Public utility/calculator surface. | Tools/calculators | `@/components/marketing/MarketingNav`, `@/components/marketing/MarketingFooter`, `@/lib/constants/site` (+2) | Has route loading state. |
+| /tools | page | src/app/tools/page.tsx | public utility | Canonical public utility/calculator hub. | Tools/calculators | `@/components/marketing/MarketingNav`, `@/components/marketing/MarketingFooter`, `@/components/tools/ToolCard` (+2) | Has route loading state. |
+| /tools/chb | page | src/app/tools/chb/page.tsx | public utility | Canonical 3D CHB estimating tool. | Tools/calculators | `@/components/calculators/CalculatorToolShell`, `@/components/calculators/calculator-tool-registry` | Legacy `/calculators/chb` redirects here. |
+| /tools/drywall | page | src/app/tools/drywall/page.tsx | public utility | Canonical 3D drywall estimating tool. | Tools/calculators | `@/components/calculators/CalculatorToolShell`, `@/components/calculators/calculator-tool-registry` | Legacy `/calculators/drywall` redirects here. |
+| /tools/floor-tiles-calculator | page | src/app/tools/floor-tiles-calculator/page.tsx | public utility | Public floor tile calculator. | Tools/calculators | `@/components/marketing/MarketingNav`, `@/components/marketing/MarketingFooter`, `@/lib/constants/site` (+2) | Has route loading state. |
+| /tools/flooring | page | src/app/tools/flooring/page.tsx | public utility | Canonical 3D flooring estimating tool. | Tools/calculators | `@/components/calculators/CalculatorToolShell`, `@/components/calculators/calculator-tool-registry` | Legacy `/calculators/flooring` redirects here. |
+| /tools/lot-plotter | page | src/app/tools/lot-plotter/page.tsx | public utility | Public lot plotting tool. | Tools/calculators | `@/components/marketing/MarketingNav`, `@/components/marketing/MarketingFooter`, `@/lib/constants/site` (+2) | Has route loading state. |
+| /tools/paint | page | src/app/tools/paint/page.tsx | public utility | Canonical 3D paint estimating tool. | Tools/calculators | `@/components/calculators/CalculatorToolShell`, `@/components/calculators/calculator-tool-registry` | Legacy `/calculators/paint` redirects here. |
+| /tools/wall-paint-calculator | page | src/app/tools/wall-paint-calculator/page.tsx | public utility | Public wall paint calculator. | Tools/calculators | `@/components/marketing/MarketingNav`, `@/components/marketing/MarketingFooter`, `@/lib/constants/site` (+2) | Has route loading state. |
 | /try | page | src/app/try/page.tsx | public | Public marketing or conversion page. | Marketing/public | `@/components/assessment/PreAssessmentTeaser` | Has route loading state. |
 
 ## Layout segments
@@ -122,7 +126,6 @@ This file is the canonical route inventory for the current codebase. It was rege
 | / | src/app/layout.tsx | public |
 | /admin | src/app/admin/layout.tsx | admin |
 | /admin/search | src/app/admin/search/layout.tsx | admin |
-| /calculators | src/app/calculators/layout.tsx | public utility |
 | /ceo | src/app/(protected)/ceo/layout.tsx | owner/CEO |
 | /dashboard | src/app/dashboard/layout.tsx | authenticated |
 | /dashboard/3d-lab | src/app/dashboard/3d-lab/layout.tsx | authenticated |
@@ -242,3 +245,8 @@ This file is the canonical route inventory for the current codebase. It was rege
 | /dashboard/3d-lab | src/app/dashboard/3d-lab/error.tsx | authenticated |
 | /dashboard/analytics | src/app/dashboard/analytics/error.tsx | authenticated |
 | /developer | src/app/developer/error.tsx | developer/internal |
+
+
+## 2026-04-30 Quiz consolidation note
+
+`/quiz` is the canonical standard quiz surface. `/dashboard/drills` and `/dashboard/drills/sessions` are redirect-only compatibility routes. General setup routes (`camp`, `chill`, `subject`, `custom`, `storm`, `full_exam`) redirect to `/quiz`; focused and endurance flows remain exceptions.

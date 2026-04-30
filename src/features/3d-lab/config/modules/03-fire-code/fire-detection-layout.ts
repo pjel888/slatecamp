@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/fire-detection-layout.ts
+// src/features/3d-lab/config/modules/fire-detection-layout.ts
 // Fire Detection Layout — RA 9514 (Fire Code of the Philippines)
 // ─────────────────────────────────────────────────────────────────────────────
 

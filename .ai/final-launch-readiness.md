@@ -66,7 +66,7 @@ No product launch blocker is currently identified for the **payment-free/live-AI
 
 | Warning | Evidence | Mitigation |
 |---|---|---|
-| Broad optional/internal route surface remains | 105 page routes, including optional/internal surfaces. | Keep public navigation focused; founder cutline review before external launch. |
+| Broad optional/internal route surface remains | 109 page routes, including optional/internal surfaces. | Keep public navigation focused; founder cutline review before external launch. |
 | Full broad suites not run in this final pass | `test:e2e`, `validate:release`, and `perf:all` are larger CI/staging-sized matrices. | Run in CI/staging before broader public launch if desired. |
 | Dirty tree provenance | `.ai/cleanup-execution-log.md` records pre-existing dirty files and generated artifacts. | Review before commit; do not mix unrelated provenance. |
 | Dormant LemonSqueezy schema/type fields | `DATABASE_SCHEMA.sql`, `src/types/supabase.ts`, `src/types/app.ts`. | Defer to explicit DB cleanup/reset PR. |

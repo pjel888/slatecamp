@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/outlet-spacing-room.ts
+// src/features/3d-lab/config/modules/outlet-spacing-room.ts
 // Outlet Spacing — PEC (Philippine Electrical Code)
 // ─────────────────────────────────────────────────────────────────────────────
 

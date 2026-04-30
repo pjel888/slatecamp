@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/air-changes-per-hour.ts
+// src/features/3d-lab/config/modules/air-changes-per-hour.ts
 // Air Changes Per Hour (ACH) — PMEC
 // ─────────────────────────────────────────────────────────────────────────────
 // Room section animations showing airflow patterns by occupancy type.

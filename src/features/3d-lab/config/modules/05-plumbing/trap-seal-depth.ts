@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/trap-seal-depth.ts
+// src/features/3d-lab/config/modules/trap-seal-depth.ts
 import type { CutawaySectionConfig } from '@/features/3d-lab/types/templates'
 
 export const trapSealDepthConfig: CutawaySectionConfig = {

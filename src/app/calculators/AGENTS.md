@@ -8,13 +8,14 @@
 
 **Scope:** `src/app/calculators/` subtree
 
-**Current snapshot:** 11 directories and 35 files beneath this scope (excluding this `AGENTS.md`).
+**Current snapshot:** 2 private directories and 17 files beneath this scope (excluding this `AGENTS.md`).
 
-**Top local directories:** `_lib/`, `_stores/`, `chb/`, `drywall/`, `flooring/`, `paint/`
+**Top local directories:** `_lib/`, `_stores/`
 
-**Top local files:** `layout.tsx`, `page.tsx`
+**Top local files:** none; this subtree now holds private calculator engines/stores only. Public calculator routes live under `src/app/tools/`.
 
 ### What agents must do here
+- Do not add public route pages under this subtree; `/tools` is the canonical public utility namespace and `/calculators` is a legacy redirect.
 - Inspect route groups, `page.tsx`, `layout.tsx`, `loading.tsx`, `error.tsx`, and any `route.ts` handlers in this subtree before editing.
 - Preserve server-component defaults, auth/portal boundaries, and route-level loading/error behavior.
 - Cross-check UI/route changes against the matching components, server actions, and nearest portal docs in `.ai`.

@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/fire-travel-distance.ts
+// src/features/3d-lab/config/modules/fire-travel-distance.ts
 // ─── Fire Code Travel Distance Module ───────────────────────────────────────
 // RA 9514 IRR Rule 10 — Travel distance, dead-end corridors, exit requirements
 

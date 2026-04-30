@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/01-building-code/site-development-controls.ts
+// src/features/3d-lab/config/modules/01-building-code/site-development-controls.ts
 // PD 1096 Rules VII & VIII — Site Development Controls (PSO, AMBF, ISA, USA, TOSL, MACA)
 // This is a BESPOKE scene (custom Canvas + own store), not a parametric template.
 // The config exists for registry/catalog purposes; rendering is handled by _scenes/SiteControls/.

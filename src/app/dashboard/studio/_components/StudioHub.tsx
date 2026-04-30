@@ -41,11 +41,11 @@ const STUDIO_CARDS: StudioCard[] = [
     cta: 'Open notes',
   },
   {
-    title: 'Practice Questions',
-    description: 'Test your knowledge of codes and standards with targeted questions.',
-    href: '/dashboard/drills',
+    title: 'Quiz',
+    description: 'Choose topics and answer targeted questions.',
+    href: '/quiz',
     icon: Exam,
-    cta: 'Test your knowledge',
+    cta: 'Start quiz',
   },
 ]
 

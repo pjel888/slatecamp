@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/housing-open-space.ts
+// src/features/3d-lab/config/modules/housing-open-space.ts
 // Housing Open Space — PD 957 / BP 220
 import type { ParametricSceneConfig, ParameterDef, GeometryInstruction, ViolationRule, AnnotationDef, Preset } from '@/features/3d-lab/types/templates'
 

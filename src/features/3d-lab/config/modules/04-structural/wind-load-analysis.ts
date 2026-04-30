@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/wind-load-analysis.ts
+// src/features/3d-lab/config/modules/wind-load-analysis.ts
 // Wind Load Analysis — NSCP Chapter 2
 import type { ParametricSceneConfig, ParameterDef, GeometryInstruction, AnnotationDef, Preset } from '@/features/3d-lab/types/templates'
 

@@ -87,7 +87,7 @@ const CampTrailsPage = async () => {
             </h2>
             <p className="text-sm text-text-secondary max-w-md">
               Structured study paths are coming soon. In the meantime, you can
-              practice with Camp Mode or explore the Wiki.
+              practice with Quiz or explore the Wiki.
             </p>
           </div>
         )}

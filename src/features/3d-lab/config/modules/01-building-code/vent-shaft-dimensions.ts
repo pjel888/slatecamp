@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/vent-shaft-dimensions.ts
+// src/features/3d-lab/config/modules/vent-shaft-dimensions.ts
 // Vent Shaft Dimensions — PD 1096 Rule VIII §806
 import type { ParametricSceneConfig, ParameterDef, GeometryInstruction, ViolationRule, AnnotationDef, Preset } from '@/features/3d-lab/types/templates'
 

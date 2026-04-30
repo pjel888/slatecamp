@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/mounting-heights.ts
+// src/features/3d-lab/config/modules/mounting-heights.ts
 // Electrical Mounting Heights — PEC (Philippine Electrical Code)
 import type { ParametricSceneConfig, ParameterDef, GeometryInstruction, ViolationRule, AnnotationDef, Preset } from '@/features/3d-lab/types/templates'
 

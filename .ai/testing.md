@@ -5,11 +5,13 @@
 ## Testing stack
 
 - Bun unit/integration tests: `bun run test` (`bun test src/`).
+- Bun coverage reporting: `bun run test:coverage` (`bun test --coverage src/`).
 - TypeScript check: `bun run type-check`.
 - ESLint + Storybook precheck: `bun run lint`.
 - Storybook consistency check: `bun run check:storybook`.
 - Design standard lint: `bun run design:lint`.
-- Playwright E2E scripts: `bun run test:e2e:*` via `scripts/playwright-run.ts`.
+- Playwright E2E scripts: `bun run test:e2e:*` via `scripts/playwright-run.ts`, including the real seeded quiz lane `bun run test:e2e:quiz-real` (with `test:e2e:drills-real` retained as a legacy alias).
+- Default Playwright E2E (`bun run test:e2e`) runs the production-built launch smoke/access-boundary lane; run the named auth/demo/quiz lanes for their required environment modes.
 - Performance scripts: `bun run perf:*` under `.ai/00_performance/`.
 
 ## Current inventory
@@ -135,6 +137,13 @@ Current launch is payment-free and live-AI-provider-free. Tests for `src/app/api
 
 Launch-critical tests protect: core routes, access boundaries, quiz/session logic, wiki/content paths, entitlement checks, Storybook story integrity, design lint, build, and 3D performance gates.
 
+## 2026-04-30 Quiz consolidation verification update
+
+- `bun run test:coverage` is available and was run after the quiz consolidation. Current aggregate coverage: **60.19% functions / 68.02% lines** across `src/`.
+- Canonical real-user quiz E2E is `bun run test:e2e:quiz-real`; it seeds deterministic questions, opens `/quiz`, uses the real slide-to-start and slide-to-submit controls, checks real question text/options/progress/results, and covers the recoverable “No questions found” path.
+- `bun run test:e2e:drills-real` remains as a legacy alias to the canonical quiz-real lane for old operator muscle memory.
+- Sidebar regression coverage has a named lane: `bun run test:e2e:auth-demo:sidebar`.
+
 ## Final hardening verification update — 2026-04-29
 
 Current launch stance is payment-free and live-AI-provider-free. The final local hardening pass verified the launch-critical suite without requiring PayRex, LemonSqueezy, OpenAI, or Anthropic live credentials.
@@ -152,3 +161,10 @@ Current launch stance is payment-free and live-AI-provider-free. The final local
 | `bun run perf:3d:gates` | Passed | Warning/read-existing-artifact mode; no failures/warnings. |
 
 Not run in this final pass: full `bun run test:e2e`, `bun run validate:release`, and `bun run perf:all`. These are broader CI/staging-sized suites and are recommended before a wider public release, but they are not blockers for founder/product review of the current payment-free/live-AI-free launch scope.
+
+
+## 2026-04-30 Tools namespace cleanup verification update
+
+- `/tools` is the canonical public utility/calculator namespace.
+- `e2e/launch-smoke.spec.ts` now renders `/tools` and asserts `/calculators` and `/calculators/chb` redirect to `/tools` and `/tools/chb`.
+- Calculator engine unit tests remain under `src/app/calculators/_lib/__tests__/` because the engines/stores were not moved in this route cleanup pass.

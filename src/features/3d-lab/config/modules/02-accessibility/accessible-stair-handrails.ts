@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/accessible-stair-handrails.ts
+// src/features/3d-lab/config/modules/accessible-stair-handrails.ts
 // Accessible Stair Handrails — BP 344 2024 IRR §6.3
 import type { ParametricSceneConfig, ParameterDef, GeometryInstruction, ViolationRule, AnnotationDef, Preset } from '@/features/3d-lab/types/templates'
 

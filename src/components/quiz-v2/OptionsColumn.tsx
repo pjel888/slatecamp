@@ -139,6 +139,7 @@ export const OptionsColumn = memo(({
           label={config.feedback.timing === 'none' ? 'Slide to continue' : 'Slide to submit'}
           disabled={!hasAnswered || isDisabled}
           checked={isChecked}
+          testId="quiz-submit-slider"
         />
       </GestureCaptureZone>
 

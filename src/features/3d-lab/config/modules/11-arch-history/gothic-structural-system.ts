@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/gothic-structural-system.ts
+// src/features/3d-lab/config/modules/gothic-structural-system.ts
 import type { CutawaySectionConfig } from '@/features/3d-lab/types/templates'
 
 export const gothicStructuralSystemConfig: CutawaySectionConfig = {

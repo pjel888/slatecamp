@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/pd957-vs-bp220-comparison.ts
+// src/features/3d-lab/config/modules/pd957-vs-bp220-comparison.ts
 // PD 957 vs BP 220 Subdivision Comparison — Environmental Planning
 // ─────────────────────────────────────────────────────────────────────────────
 

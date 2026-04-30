@@ -1,6 +1,6 @@
 'use client'
 
-import { lazy, Suspense, useEffect, useState } from 'react'
+import { lazy, Suspense, useEffect, useRef, useState } from 'react'
 import {
   ArrowRight,
   ArrowSquareOut,
@@ -50,6 +50,7 @@ export const FeedbackPanel = ({
   failCount = 0,
 }: FeedbackPanelProps) => {
   const [socraticOpen, setSocraticOpen] = useState(false)
+  const finalTransitionStartedRef = useRef(false)
 
   const openWikiPanel = useQuizStore((s) => s.openWikiPanel)
   const feedbackGateActive = useQuizStore((s) => s.feedback.feedbackGateActive)
@@ -58,6 +59,7 @@ export const FeedbackPanel = ({
   const tickFeedbackGate = useQuizStore((s) => s.tickFeedbackGate)
   const currentIndex = useQuizStore((s) => s.currentIndex)
   const totalQuestions = useQuizStore((s) => s.totalQuestions)
+  const calculatingResults = useQuizStore((s) => s.ui.calculatingResults)
 
   const showSocraticButton =
     LIVE_AI_HELPERS_ENABLED &&
@@ -66,12 +68,14 @@ export const FeedbackPanel = ({
     LIVE_AI_HELPERS_ENABLED &&
     !feedback.isCorrect && failCount >= 2 && feedback.rationale != null
   const isLastQuestion = totalQuestions > 0 && currentIndex === totalQuestions - 1
+  const isPreparingResults = isLastQuestion && calculatingResults
   const nextActionLabel = isLastQuestion ? 'See results' : 'Next question'
 
   useEffect(() => {
     if (gatedDelayMs > 0) {
       startFeedbackGate(gatedDelayMs)
     }
+    finalTransitionStartedRef.current = false
   }, [gatedDelayMs, feedback.questionId, startFeedbackGate])
 
   useEffect(() => {
@@ -91,6 +95,30 @@ export const FeedbackPanel = ({
   const isGeneration = feedback.questionType != null && feedback.questionType !== 'mcq'
   const countdownSeconds = Math.ceil(remainingMs / 1000)
   const countdownProgress = gatedDelayMs > 0 ? 1 - remainingMs / gatedDelayMs : 1
+  const startFinalTransition = () => {
+    if (!isLastQuestion || finalTransitionStartedRef.current) return false
+    if (!nextReady || isPreparingResults) return false
+
+    finalTransitionStartedRef.current = true
+
+    useQuizStore.setState((state) => ({
+      status: 'finalizing',
+      ui: { ...state.ui, calculatingResults: true, submitModalOpen: false },
+    }))
+
+    onNext()
+    return true
+  }
+
+  const handleNextPointerDown = (event: React.PointerEvent<HTMLButtonElement>) => {
+    if (event.button !== 0) return
+    startFinalTransition()
+  }
+
+  const handleNextClick = () => {
+    if (startFinalTransition()) return
+    if (!isLastQuestion && nextReady) onNext()
+  }
 
   return (
     <div
@@ -253,15 +281,22 @@ export const FeedbackPanel = ({
           <Button
             variant="primary"
             size="sm"
-            disabled={!nextReady}
-            onClick={onNext}
-            aria-disabled={!nextReady}
+            disabled={!nextReady || isPreparingResults}
+            onClick={handleNextClick}
+            onPointerDown={isLastQuestion ? handleNextPointerDown : undefined}
+            aria-disabled={!nextReady || isPreparingResults}
+            aria-busy={isPreparingResults || undefined}
             className={cn(
               'transition-all duration-300 min-w-[80px]',
               !nextReady && 'cursor-not-allowed opacity-50 grayscale animate-pulse',
+              isPreparingResults && 'cursor-wait opacity-75',
             )}
           >
-            {nextReady ? nextActionLabel : `Wait (${countdownSeconds}s)`}
+            {isPreparingResults
+              ? 'Preparing results...'
+              : nextReady
+                ? nextActionLabel
+                : `Wait (${countdownSeconds}s)`}
           </Button>
 
           {showSocraticButton && (

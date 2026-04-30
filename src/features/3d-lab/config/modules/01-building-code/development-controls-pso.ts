@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/development-controls-pso.ts
+// src/features/3d-lab/config/modules/development-controls-pso.ts
 // Development Controls — PD 1096 Rule VII (PSO / TGFA / AMBF)
 // ─────────────────────────────────────────────────────────────────────────────
 

@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/lintel-over-opening.ts
+// src/features/3d-lab/config/modules/lintel-over-opening.ts
 import type { CutawaySectionConfig } from '@/features/3d-lab/types/templates'
 
 export const lintelOverOpeningConfig: CutawaySectionConfig = {

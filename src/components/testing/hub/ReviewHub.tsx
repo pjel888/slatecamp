@@ -7,10 +7,7 @@ import { ROUTES } from '@/lib/routes'
 import { ReadinessScoreRing } from '@/components/score/ReadinessScoreRing'
 import { SectionHeader } from '@/components/shared/section-header'
 import { HeroConfigurator } from './HeroConfigurator'
-import type {
-  ModeSource,
-  SimulationGateStatus,
-} from '@/types/testing'
+import type { ModeSource } from '@/types/testing'
 import type {
   SRActiveCycle,
   SRDueCycle,
@@ -80,29 +77,10 @@ interface HubSignal {
   ctaLabel: string
 }
 
-const getModeKey = (session: RawSession): string => {
-  return session.config?.mode ?? session.config?.source ?? session.test_mode ?? 'camp'
-}
-
 const getSessionHref = (session: RawSession): string => {
-  const modeKey = getModeKey(session)
   return session.status === 'completed'
-    ? `/quiz/${modeKey}/session/${session.session_id}/results`
-    : `/quiz/${modeKey}/session/${session.session_id}`
-}
-
-const computeSimulationGate = (
-  readinessScore: number,
-  hasInternalTierBypass: boolean,
-): SimulationGateStatus => {
-  const required = 65
-  return {
-    isUnlocked: hasInternalTierBypass || readinessScore >= required,
-    currentReadiness: readinessScore,
-    requiredReadiness: required,
-    hasEnduranceCalibration: false,
-    pointsNeeded: Math.max(0, required - readinessScore),
-  }
+    ? ROUTES.quiz.results(session.session_id)
+    : ROUTES.quiz.session(session.session_id)
 }
 
 const getReadinessZone = (
@@ -144,10 +122,6 @@ const ReviewHub = ({
   srProgress = { active: 0, spacing: 0, durable: 0, reset: 0, total: 0 },
 }: ReviewHubProps) => {
   const { effectiveTier } = viewerEntitlements
-  const simulationGateStatus = useMemo(
-    () => computeSimulationGate(readinessScore, viewerEntitlements.tooling.internalTierBypass),
-    [readinessScore, viewerEntitlements.tooling.internalTierBypass],
-  )
   const readinessZone = useMemo(
     () => getReadinessZone(readinessScore),
     [readinessScore],
@@ -219,13 +193,13 @@ const ReviewHub = ({
     <div className="w-full bg-background">
       <main
         className="w-full px-6 py-8"
-        aria-label="Review and Testing hub"
+        aria-label="Quiz hub"
       >
         <header className="mb-8">
           <SectionHeader
-            eyebrow="Review & Testing"
-            title="Build Mastery. Earn your Score."
-            subtitle="Configure a dynamic session that fits your goal today. Every answer feeds your Readiness Score."
+            eyebrow="Quiz"
+            title="Build mastery with one focused quiz."
+            subtitle="Choose topics, set the question count, slide to start, and let every answer feed your Readiness Score."
             level="page"
           />
         </header>
@@ -285,14 +259,14 @@ const ReviewHub = ({
             <div className="rounded-md border border-border bg-card p-5">
               <SectionHeader
                 eyebrow="Next Best Move"
-                title={inProgressSession ? 'Resume your live session' : 'Choose today’s launch point'}
+                title={inProgressSession ? 'Resume your live quiz' : 'Choose today’s quiz'}
                 subtitle={
                   inProgressSession
                     ? `Session · question ${Math.min(
                         (inProgressSession.current_question_index ?? 0) + 1,
                         Math.max(1, inProgressSession.question_ids?.length ?? 1),
                       )} of ${inProgressSession.question_ids?.length ?? 0}`
-                    : 'Use the intelligent configurator to launch your targeted session.'
+                    : 'Use the quiz configurator to launch a targeted question set.'
                 }
                 level="section"
               />
@@ -300,14 +274,14 @@ const ReviewHub = ({
                 <div className="mt-4 space-y-3">
                   <div className="rounded-md bg-primary-50 p-4">
                     <p className="text-sm text-text-secondary">
-                      You already have an active session running. Resume it before starting another one.
+                      You already have an active quiz running. Resume it before starting another one.
                     </p>
                   </div>
                   <Link
                     href={resumeHref}
                     className="inline-flex w-full items-center justify-center rounded-sm bg-primary px-4 py-2.5 text-sm font-medium text-white transition-opacity duration-150 hover:opacity-90"
                   >
-                    Resume session
+                    Resume quiz
                   </Link>
                 </div>
               ) : (
@@ -316,7 +290,7 @@ const ReviewHub = ({
                     href="#hero-configurator"
                     className="inline-flex items-center justify-center rounded-sm bg-primary px-4 py-2.5 text-sm font-medium text-white transition-opacity duration-150 hover:opacity-90"
                   >
-                    Configure Session
+                    Configure Quiz
                   </a>
                 </div>
               )}
@@ -325,9 +299,9 @@ const ReviewHub = ({
 
           <section id="hero-configurator">
             <SectionHeader
-              eyebrow="Dynamic Engine"
-              title="Intelligent Configurator"
-              subtitle="Drag subjects to the canvas and slide to start. Our engine routes the perfect mix of unseen, remediation, and reinforcement questions."
+              eyebrow="Quiz Builder"
+              title="Configure your quiz"
+              subtitle="Select subjects, set the question count, and slide to start. The engine mixes unseen, remediation, and reinforcement questions."
               level="section"
             />
             <div className="mt-4">
@@ -339,7 +313,7 @@ const ReviewHub = ({
             <section>
               <SectionHeader
                 eyebrow="Suggested Next"
-                title="High-impact ways to spend your next session"
+                title="High-impact ways to spend your next quiz"
                 level="section"
               />
               <div className="mt-4 grid gap-3 md:grid-cols-3">
@@ -361,58 +335,39 @@ const ReviewHub = ({
 
           <section>
             <SectionHeader
-              eyebrow="Exam Readiness"
-              title="Specialized Simulations"
-              subtitle="Timed pressure, long-form endurance, and the full exam simulation."
+              eyebrow="Special Formats"
+              title="Use focused quiz formats only when the task is different"
+              subtitle="The standard Quiz is the default. Design and Endurance remain separate because they test a different kind of performance."
               level="section"
             />
             <div className="mt-4 grid gap-4 md:grid-cols-2">
               <div className="flex flex-col justify-between rounded-md border border-border bg-card p-5">
                 <div>
-                  <h3 className="text-lg font-bold text-foreground">Full Exam Simulation</h3>
+                  <h3 className="text-lg font-bold text-foreground">Design Quiz</h3>
                   <p className="mt-2 text-sm text-text-secondary">
-                    Strict 4-hour countdown, 200 questions. Proctored UI with no immediate feedback. Results delayed by 24 hours.
+                    Scenario-based Area C design practice with project briefs, design decisions, and solution review.
                   </p>
                 </div>
                 <div className="mt-6">
-                  {effectiveTier === 'free' ? (
-                    <div className="flex items-center justify-between p-3 rounded-md bg-muted/50 border border-dashed border-border">
-                      <div className="flex items-center gap-2 text-xs font-medium text-muted-foreground">
-                        <Lock size={14} weight="bold" />
-                        <span>Pro Subscription Required</span>
-                      </div>
-                      <Link
-                        href={ROUTES.pricing}
-                        className="text-xs font-bold text-primary hover:underline"
-                      >
-                        Upgrade
-                      </Link>
-                    </div>
-                  ) : simulationGateStatus.isUnlocked ? (
-                    <Link
-                      href={ROUTES.quiz.setup('full_exam')}
-                      className="inline-flex w-full items-center justify-center rounded-sm bg-primary px-4 py-2.5 text-sm font-medium text-white transition-opacity duration-150 hover:opacity-90"
-                    >
-                      Start Simulation
-                    </Link>
-                  ) : (
-                    <div className="inline-flex w-full items-center justify-center rounded-sm bg-muted px-4 py-2.5 text-sm font-medium text-muted-foreground cursor-not-allowed">
-                      Locked (Requires {simulationGateStatus.requiredReadiness} Readiness)
-                    </div>
-                  )}
+                  <Link
+                    href="/dashboard/area-c/design-quiz"
+                    className="inline-flex w-full items-center justify-center rounded-sm border border-border bg-card px-4 py-2.5 text-sm font-medium text-foreground transition-colors duration-150 hover:bg-background"
+                  >
+                    Open Design Quiz
+                  </Link>
                 </div>
               </div>
-              
+
               <div className="flex flex-col justify-between rounded-md border border-border bg-card p-5">
                 <div>
-                  <h3 className="text-lg font-bold text-foreground">Design Endurance</h3>
+                  <h3 className="text-lg font-bold text-foreground">Endurance Quiz</h3>
                   <p className="mt-2 text-sm text-text-secondary">
-                    Long-form extended practice. Tracks your stamina and accuracy over time to prepare you for grueling exam sessions.
+                    Long-form extended practice. Tracks stamina and accuracy over time for exam-length focus.
                   </p>
                 </div>
                 <div className="mt-6">
                   {effectiveTier === 'free' ? (
-                    <div className="flex items-center justify-between p-3 rounded-md bg-muted/50 border border-dashed border-border">
+                    <div className="flex items-center justify-between rounded-md border border-dashed border-border bg-muted/50 p-3">
                       <div className="flex items-center gap-2 text-xs font-medium text-muted-foreground">
                         <Lock size={14} weight="bold" />
                         <span>Pro Subscription Required</span>
@@ -429,7 +384,7 @@ const ReviewHub = ({
                       href={ROUTES.quiz.setup('endurance')}
                       className="inline-flex w-full items-center justify-center rounded-sm border border-border bg-card px-4 py-2.5 text-sm font-medium text-foreground transition-colors duration-150 hover:bg-background"
                     >
-                      Start Endurance Training
+                      Start Endurance Quiz
                     </Link>
                   )}
                 </div>
@@ -439,7 +394,7 @@ const ReviewHub = ({
 
           <div className="rounded-md border border-border bg-primary-50 p-4">
             <p className="text-sm text-text-secondary">
-              Focus Review queue:{' '}
+              Focus Review signal:{' '}
               <span className="font-medium text-foreground">{focusQueue?.question_count ?? 0}</span>
               {' '}queued questions across{' '}
               <span className="font-medium text-foreground">{focusQueue?.node_ids.length ?? weakNodes.length}</span>

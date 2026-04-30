@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/storm-drainage-system.ts
+// src/features/3d-lab/config/modules/storm-drainage-system.ts
 import type { CutawaySectionConfig } from '@/features/3d-lab/types/templates'
 
 export const stormDrainageSystemConfig: CutawaySectionConfig = {

@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/concrete-density-values.ts
+// src/features/3d-lab/config/modules/concrete-density-values.ts
 // Concrete Density Values — NSCP Chapter 2
 import type { ParametricSceneConfig, ParameterDef, GeometryInstruction, AnnotationDef, Preset } from '@/features/3d-lab/types/templates'
 

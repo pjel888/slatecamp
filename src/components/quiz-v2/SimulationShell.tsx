@@ -158,7 +158,7 @@ export const SimulationShell = ({
   useEffect(() => {
     if (status === 'results' && results) {
       stopTimer()
-      router.push(`/quiz/full_exam/session/${sessionId}/results`)
+      router.push(`/quiz/session/${sessionId}/results`)
     }
   }, [status, results, sessionId, router, stopTimer])
 

@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/firewall-construction.ts
+// src/features/3d-lab/config/modules/firewall-construction.ts
 import type { CutawaySectionConfig } from '@/features/3d-lab/types/templates'
 
 export const firewallConstructionConfig: CutawaySectionConfig = {

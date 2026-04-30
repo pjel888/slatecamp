@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/superposition-demo.ts
+// src/features/3d-lab/config/modules/superposition-demo.ts
 // Superposition of Orders — Architectural History
 // ─────────────────────────────────────────────────────────────────────────────
 // Colosseum-style stacking of the three classical orders:

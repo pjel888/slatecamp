@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/grounding-system.ts
+// src/features/3d-lab/config/modules/grounding-system.ts
 import type { CutawaySectionConfig } from '@/features/3d-lab/types/templates'
 
 export const groundingSystemConfig: CutawaySectionConfig = {

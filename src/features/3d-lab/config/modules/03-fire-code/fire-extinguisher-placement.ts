@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/fire-extinguisher-placement.ts
+// src/features/3d-lab/config/modules/fire-extinguisher-placement.ts
 // Fire Extinguisher Placement — RA 9514 (Fire Code of the Philippines)
 // ─────────────────────────────────────────────────────────────────────────────
 

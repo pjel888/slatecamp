@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/composite-order.ts
+// src/features/3d-lab/config/modules/composite-order.ts
 // Composite Order — Classical Architecture History
 import type { ExplodedAssemblyConfig } from '@/features/3d-lab/types/templates'
 

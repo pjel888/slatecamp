@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/exit-door-mechanics.ts
+// src/features/3d-lab/config/modules/exit-door-mechanics.ts
 // Exit Door Mechanics — RA 9514 IRR Rule 10
 // ─────────────────────────────────────────────────────────────────────────────
 // Animated sequence showing exit door requirements: swing direction,

@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/corridor-width-calculator.ts
+// src/features/3d-lab/config/modules/corridor-width-calculator.ts
 // Corridor Width Calculator — PD 1096 Rule VIII
 import type { ParametricSceneConfig, ParameterDef, GeometryInstruction, ViolationRule, AnnotationDef, Preset } from '@/features/3d-lab/types/templates'
 

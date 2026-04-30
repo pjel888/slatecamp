@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/project-delivery-methods.ts
+// src/features/3d-lab/config/modules/project-delivery-methods.ts
 // Project Delivery Methods — Professional Practice
 // ─────────────────────────────────────────────────────────────────────────────
 // Animated flowchart comparing Design-Bid-Build, Design-Build, CM at Risk,

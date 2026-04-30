@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/steel-connections.ts
+// src/features/3d-lab/config/modules/steel-connections.ts
 // Steel Connections — NSCP Structural Steel
 import type { ExplodedAssemblyConfig } from '@/features/3d-lab/types/templates'
 

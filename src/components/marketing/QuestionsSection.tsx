@@ -19,7 +19,7 @@ const QuizMockup = () => (
             Building Technology · Q14
           </div>
           <div className='mt-0.5 text-[13px] font-bold text-white'>
-            Storm Mode — 18:42 remaining
+            Timed Quiz — 18:42 remaining
           </div>
         </div>
         <div className='rounded-full bg-white/15 px-3 py-1 font-mono text-[11px] text-white/70'>
@@ -126,7 +126,7 @@ export const QuestionsSection = () => (
           />
           <FeatureCheckItem
             title='Three study modes'
-            description='Review for low-pressure recall. Camp Mode for tracked sessions. Storm Mode for full exam simulation with a timer.'
+            description='Use Quiz for tracked topic practice with slide-to-submit interactions and results review.'
             accentColor='#1B3FC4'
           />
           <FeatureCheckItem

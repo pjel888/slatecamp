@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/garage-ventilation.ts
+// src/features/3d-lab/config/modules/garage-ventilation.ts
 // Garage Ventilation — PD 1096 / PMEC
 import type { ParametricSceneConfig, ParameterDef, GeometryInstruction, ViolationRule, AnnotationDef, Preset } from '@/features/3d-lab/types/templates'
 

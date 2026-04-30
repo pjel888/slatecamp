@@ -19,6 +19,13 @@ import type { GestureSignalEvent } from '@/types/patent'
 
 const MAX_BUFFER = 500
 
+const normalizePointerCoordinate = (offset: number, size: number) => {
+  if (!Number.isFinite(offset) || !Number.isFinite(size) || size <= 0) return 0
+  return Math.min(1, Math.max(0, offset / size))
+}
+
+const clampUnitInterval = (value: number) => Math.min(1, Math.max(0, value))
+
 interface GestureCaptureZoneProps {
   children: React.ReactNode
   onBufferReady: (buffer: GestureSignalEvent[]) => void
@@ -37,12 +44,12 @@ export const GestureCaptureZone = ({ children, onBufferReady }: GestureCaptureZo
       const event: GestureSignalEvent = {
         timestamp: performance.now(),
         type,
-        x: (e.clientX - rect.left) / rect.width,
-        y: (e.clientY - rect.top) / rect.height,
+        x: normalizePointerCoordinate(e.clientX - rect.left, rect.width),
+        y: normalizePointerCoordinate(e.clientY - rect.top, rect.height),
       }
 
       // Touch pressure/contact area — Claim 6
-      if (e.pressure > 0) event.pressure = e.pressure
+      if (e.pressure > 0) event.pressure = clampUnitInterval(e.pressure)
       if (e.width > 0) event.contactWidth = e.width
       if (e.height > 0) event.contactHeight = e.height
 

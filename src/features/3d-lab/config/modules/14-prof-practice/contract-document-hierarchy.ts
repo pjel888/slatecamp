@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/contract-document-hierarchy.ts
+// src/features/3d-lab/config/modules/contract-document-hierarchy.ts
 // Contract Document Hierarchy — Professional Practice
 import type { ExplodedAssemblyConfig } from '@/features/3d-lab/types/templates'
 

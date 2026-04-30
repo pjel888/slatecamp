@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/handrail-requirements.ts
+// src/features/3d-lab/config/modules/handrail-requirements.ts
 // Handrail Requirements — PD 1096 Rule VIII §809
 import type { ParametricSceneConfig, ParameterDef, GeometryInstruction, ViolationRule, AnnotationDef, Preset } from '@/features/3d-lab/types/templates'
 

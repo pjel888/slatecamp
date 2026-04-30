@@ -71,7 +71,7 @@ export const SRCriterionCard = ({
               onClick={onBackToHub}
               className="rounded-sm text-text-secondary"
             >
-              Back to Testing Hub
+              Back to Quiz
             </Button>
           )}
         </div>

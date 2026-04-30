@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/refrigeration-cycle.ts
+// src/features/3d-lab/config/modules/refrigeration-cycle.ts
 // Refrigeration Cycle — PMEC
 // ─────────────────────────────────────────────────────────────────────────────
 // Compressor → condenser → expansion valve → evaporator vapor-compression loop.

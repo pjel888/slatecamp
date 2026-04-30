@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_constants/nbcp.test.ts
+// src/features/3d-lab/constants/nbcp.test.ts
 import { describe, test, expect } from 'bun:test'
 import { getRrowBhl, getBaseSetbacks, ZONING_TABLE, ZoningClass } from './nbcp'
 

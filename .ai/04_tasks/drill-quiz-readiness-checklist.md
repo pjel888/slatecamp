@@ -1,4 +1,4 @@
-# Drill / Quiz Readiness Checklist
+# Quiz Readiness Checklist
 
 ## 1. Feature Pre-Flight (Hardening Phase)
 - [x] `endSession` DB calls parallelized or moved to background. (Confirmed in `src/lib/actions/quiz-v2/end-session.ts`)
@@ -30,3 +30,12 @@
 - [x] Does the readiness score update accurately? (Yes, logic preserved but optimized)
 
 **Current Readiness Status: READY FOR PRODUCTION DEPLOYMENT.**
+
+
+## 2026-04-30 Route Consolidation Decision
+
+- `/quiz` is the canonical product name and route for the standard configurable quiz.
+- `/dashboard/drills` and `/dashboard/drills/sessions` are legacy compatibility redirects only.
+- The general quiz surface has one normal mode: choose topics, choose question count, start via slide/keyboard fallback, answer via slide-to-submit, then see results.
+- Design Quiz and Endurance Quiz remain as special formats because they assess different workflows.
+- Real-user E2E coverage lives in `e2e/quiz-real-user-flow.spec.ts` and is run with `bun run test:e2e:quiz-real`; `test:e2e:drills-real` is a legacy alias.

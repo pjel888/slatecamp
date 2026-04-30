@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/formwork-assembly.ts
+// src/features/3d-lab/config/modules/formwork-assembly.ts
 // Formwork Assembly — Construction (Slab Formwork)
 import type { ExplodedAssemblyConfig } from '@/features/3d-lab/types/templates'
 

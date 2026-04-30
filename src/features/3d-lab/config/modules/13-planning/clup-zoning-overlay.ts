@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/clup-zoning-overlay.ts
+// src/features/3d-lab/config/modules/clup-zoning-overlay.ts
 // CLUP Zoning Overlay — Environmental Planning / HLURB
 // ─────────────────────────────────────────────────────────────────────────────
 

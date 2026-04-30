@@ -114,6 +114,7 @@ export const QuizOption = ({
   return (
     <div className="relative group">
       <label
+        data-testid="quiz-answer-option"
         className={cn(
           optionVariants({
             state,

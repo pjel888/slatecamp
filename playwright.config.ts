@@ -5,6 +5,7 @@ const baseURL =
   process.env.PLAYWRIGHT_BASE_URL ?? `http://localhost:${port}`
 const demoAuthEnabled = process.env.PLAYWRIGHT_DEMO_AUTH === 'true'
 const useBuiltApp = process.env.PLAYWRIGHT_USE_BUILT_APP === 'true'
+const allowDevForceUser = process.env.PLAYWRIGHT_ALLOW_DEV_FORCE_USER_ID === 'true'
 
 const webServerEnv = Object.fromEntries(
   Object.entries(process.env).filter((entry): entry is [string, string] => {
@@ -46,8 +47,10 @@ export default defineConfig({
     env: {
       ...webServerEnv,
       ALLOW_DEV_PORTAL_BYPASS: 'false',
-      DEV_FORCE_USER_ID: '',
-      DISABLE_DEV_FORCE_USER_ID: 'true',
+      DEV_FORCE_USER_ID: allowDevForceUser
+        ? (process.env.DEV_FORCE_USER_ID ?? process.env.PLAYWRIGHT_DRILLS_USER_ID ?? '')
+        : '',
+      DISABLE_DEV_FORCE_USER_ID: allowDevForceUser ? 'false' : 'true',
       NEXT_PUBLIC_APP_URL: baseURL,
       NEXT_PUBLIC_ENABLE_DEMO_MODE: demoAuthEnabled ? 'true' : 'false',
       NEXT_PUBLIC_PAYMENTS_ENABLED: 'false',

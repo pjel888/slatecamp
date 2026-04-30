@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/fire-door-ratings.ts
+// src/features/3d-lab/config/modules/fire-door-ratings.ts
 import type { CutawaySectionConfig } from '@/features/3d-lab/types/templates'
 
 export const fireDoorRatingsConfig: CutawaySectionConfig = {

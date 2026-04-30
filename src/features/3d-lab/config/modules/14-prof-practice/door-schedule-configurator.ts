@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/door-schedule-configurator.ts
+// src/features/3d-lab/config/modules/door-schedule-configurator.ts
 // Door Schedule Configurator — PD 1096 Rule VIII
 import type { ParametricSceneConfig, ParameterDef, GeometryInstruction, ViolationRule, AnnotationDef, Preset } from '@/features/3d-lab/types/templates'
 

@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/slab-construction-sequence.ts
+// src/features/3d-lab/config/modules/slab-construction-sequence.ts
 // Slab Construction Sequence — Construction
 // ─────────────────────────────────────────────────────────────────────────────
 // Shoring → stringers → formply (18mm) → bottom rebar → bar chairs → top rebar → MEP sleeves → pour → cure → strip.

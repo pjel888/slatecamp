@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/natural-ventilation-rules.ts
+// src/features/3d-lab/config/modules/natural-ventilation-rules.ts
 // Natural Ventilation Rules — PD 1096 Rule VIII §803
 import type { ParametricSceneConfig, ParameterDef, GeometryInstruction, ViolationRule, AnnotationDef, Preset } from '@/features/3d-lab/types/templates'
 

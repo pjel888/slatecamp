@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/roman-arch-vault.ts
+// src/features/3d-lab/config/modules/roman-arch-vault.ts
 import type { CutawaySectionConfig } from '@/features/3d-lab/types/templates'
 
 export const romanArchVaultConfig: CutawaySectionConfig = {

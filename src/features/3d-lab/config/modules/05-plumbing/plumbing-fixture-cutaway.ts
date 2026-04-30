@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/plumbing-fixture-cutaway.ts
+// src/features/3d-lab/config/modules/plumbing-fixture-cutaway.ts
 import type { CutawaySectionConfig } from '@/features/3d-lab/types/templates'
 
 // ─── NPCP Reference Table ───────────────────────────────────────────────────

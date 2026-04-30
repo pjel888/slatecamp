@@ -34,10 +34,10 @@ export const PostModuleCTA = ({
       </p>
       {topicSlug && (
         <Link
-          href={`${ROUTES.dashboard.drills}?topic=${topicSlug}&mode=camp&count=10`}
+          href={`${ROUTES.quiz.root}?topic=${topicSlug}&count=10`}
           className="block w-full py-2.5 bg-camp-cobalt text-white text-center text-[13px] font-medium rounded-sm hover:bg-primary-700 transition-colors duration-150"
         >
-          Answer 10 questions on {topicName} in Camp Mode
+          Answer 10 quiz questions on {topicName}
         </Link>
       )}
     </div>

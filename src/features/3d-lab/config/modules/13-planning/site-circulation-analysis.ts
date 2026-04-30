@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/site-circulation-analysis.ts
+// src/features/3d-lab/config/modules/site-circulation-analysis.ts
 // Site Circulation Analysis — Environmental Planning / Planning
 // ─────────────────────────────────────────────────────────────────────────────
 

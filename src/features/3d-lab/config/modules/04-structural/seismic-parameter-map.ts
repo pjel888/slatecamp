@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/seismic-parameter-map.ts
+// src/features/3d-lab/config/modules/seismic-parameter-map.ts
 // Seismic Parameter Map — NSCP Chapter 2
 // ─────────────────────────────────────────────────────────────────────────────
 // Interactive visualization of Philippine seismic zones, soil profiles,

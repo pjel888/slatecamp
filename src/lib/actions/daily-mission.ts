@@ -47,12 +47,12 @@ export async function getDailyMissions(): Promise<DailyMission[]> {
     {
       id: 'daily-practice',
       title: 'Daily Practice',
-      description: 'Complete one Camp Mode session to maintain your streak.',
+      description: 'Complete one Quiz session to maintain your streak.',
       isCompleted: quizCompleted,
       rewardType: 'readiness',
       rewardValue: 2,
       actionLabel: 'Start Practice',
-      actionHref: ROUTES.quiz.setup('camp'),
+      actionHref: ROUTES.quiz.root,
     },
     {
       id: 'wiki-explorer',

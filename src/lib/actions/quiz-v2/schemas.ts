@@ -2,6 +2,12 @@ import { z } from 'zod'
 
 const uuidSchema = z.string().uuid('Must be a valid UUID')
 
+const clampUnitInterval = (value: unknown) => {
+  const numericValue = typeof value === 'number' ? value : Number(value)
+  if (!Number.isFinite(numericValue)) return value
+  return Math.min(1, Math.max(0, numericValue))
+}
+
 export const startSessionInputSchema = z.object({
   mode: z.enum([
     'camp',
@@ -18,12 +24,31 @@ export const startSessionInputSchema = z.object({
   trailDayId: uuidSchema.optional(),
 })
 
-export const gestureSignalEventSchema = z.object({
-  t: z.number().int().min(0),
-  x: z.number().min(0).max(4000),
-  y: z.number().min(0).max(4000),
-  p: z.number().min(0).max(1).optional(),
-})
+export const gestureSignalEventSchema = z.preprocess(
+  (raw) => {
+    if (!raw || typeof raw !== 'object' || Array.isArray(raw)) return raw
+
+    const event = raw as Record<string, unknown>
+    return {
+      ...event,
+      x: clampUnitInterval(event.x),
+      y: clampUnitInterval(event.y),
+      pressure:
+        event.pressure == null ? event.pressure : clampUnitInterval(event.pressure),
+    }
+  },
+  z.object({
+    timestamp: z.number().min(0),
+    type: z.enum(['start', 'move', 'end', 'cancel']),
+    x: z.number().min(0).max(1),
+    y: z.number().min(0).max(1),
+    contactWidth: z.number().min(0).optional(),
+    contactHeight: z.number().min(0).optional(),
+    pressure: z.number().min(0).max(1).optional(),
+    accelerometer: z.object({ x: z.number(), y: z.number(), z: z.number() }).optional(),
+    gyroscope: z.object({ alpha: z.number(), beta: z.number(), gamma: z.number() }).optional(),
+  }),
+)
 
 export const cageBindingTokenSchema = z.object({
   nonce: z.string().min(8),

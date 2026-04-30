@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/shoreline-setback.ts
+// src/features/3d-lab/config/modules/shoreline-setback.ts
 // Shoreline Setback — Environmental Planning / DENR / Water Code
 // ─────────────────────────────────────────────────────────────────────────────
 

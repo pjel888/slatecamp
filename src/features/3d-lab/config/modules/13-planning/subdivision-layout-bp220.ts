@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/subdivision-layout-bp220.ts
+// src/features/3d-lab/config/modules/subdivision-layout-bp220.ts
 // Subdivision Layout (BP 220 Socialized Housing) — Environmental Planning
 // ─────────────────────────────────────────────────────────────────────────────
 

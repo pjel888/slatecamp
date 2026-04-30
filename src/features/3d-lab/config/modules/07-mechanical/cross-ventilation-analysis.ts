@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/cross-ventilation-analysis.ts
+// src/features/3d-lab/config/modules/cross-ventilation-analysis.ts
 // Cross-Ventilation Analysis — PMEC
 // ─────────────────────────────────────────────────────────────────────────────
 // Natural airflow through windward/leeward openings and pressure differential.

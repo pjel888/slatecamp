@@ -43,6 +43,16 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: '/calculators',
+        destination: '/tools',
+        permanent: false,
+      },
+      {
+        source: '/calculators/:path*',
+        destination: '/tools/:path*',
+        permanent: false,
+      },
+      {
         source: '/dashboard/wiki/ale-:slug',
         destination: '/dashboard/wiki/lea-:slug',
         permanent: true,
@@ -51,6 +61,46 @@ const nextConfig: NextConfig = {
         source: '/ale-starter',
         destination: '/lea-starter',
         permanent: true,
+      },
+      {
+        source: '/dashboard/drills',
+        destination: '/quiz',
+        permanent: false,
+      },
+      {
+        source: '/dashboard/drills/sessions',
+        destination: '/quiz/sessions',
+        permanent: false,
+      },
+      {
+        source: '/quiz/camp/setup',
+        destination: '/quiz',
+        permanent: false,
+      },
+      {
+        source: '/quiz/chill/setup',
+        destination: '/quiz',
+        permanent: false,
+      },
+      {
+        source: '/quiz/subject/setup',
+        destination: '/quiz',
+        permanent: false,
+      },
+      {
+        source: '/quiz/custom/setup',
+        destination: '/quiz',
+        permanent: false,
+      },
+      {
+        source: '/quiz/storm/setup',
+        destination: '/quiz',
+        permanent: false,
+      },
+      {
+        source: '/quiz/full_exam/setup',
+        destination: '/quiz',
+        permanent: false,
       },
     ]
   },

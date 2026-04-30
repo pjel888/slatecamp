@@ -1,4 +1,4 @@
-// src/app/dashboard/3d-lab/_config/modules/backflow-prevention.ts
+// src/features/3d-lab/config/modules/backflow-prevention.ts
 // Backflow Prevention Devices — NPCP Plumbing
 import type { ExplodedAssemblyConfig } from '@/features/3d-lab/types/templates'
 

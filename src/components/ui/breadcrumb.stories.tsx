@@ -83,7 +83,7 @@ export const DarkMode: Story = {
       <Breadcrumb
         items={[
           { label: 'Dashboard', href: '/dashboard' },
-          { label: 'Drills', href: '/dashboard/drills' },
+          { label: 'Quiz', href: '/quiz' },
           { label: 'PD 1096 Quiz' },
         ]}
       />
