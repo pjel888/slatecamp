@@ -26,6 +26,26 @@ This protocol tells an AI or human editor **what to read, what may be edited, wh
 4. `04-fact-checking-and-source-policy.md` — evidence, citation, and uncertainty policy.
 5. `05-review-and-safety-checklist.md` — reviewer checklist and blockers.
 6. `06-command-runbook.md` — exact command sequences.
+7. `07-review-packets-and-templates.md` — review packet, finding, approval, and blocker templates.
+8. `08-quality-rubric-and-pilot-playbook.md` — editorial quality rubric and dry-run pilot process.
+
+## Roles
+
+- **Editor / AI assistant:** reads the bundle, drafts `normalized.md` edits, records evidence, and prepares review packets.
+- **Reviewer:** approves source-backed changes, answer-key changes, and any apply decision.
+- **Release operator:** runs dry-run/apply commands and verifies reports. This can be the same person as reviewer only if explicitly recorded.
+- **Maintainer:** updates scripts or protocol when blockers reveal tooling gaps.
+
+## Quick start for a single article
+
+```bash
+bun run content-audit:compose -- --article-id <article_id> --overwrite
+bun run content-audit:diff -- --article-id <article_id> --summary
+bun run content-audit:validate -- --article-id <article_id> --summary
+bun run content-audit:push:dry-run -- --article-id <article_id>
+```
+
+Use the templates in `07-review-packets-and-templates.md` before requesting apply approval.
 
 ## Standard workflow
 
@@ -49,3 +69,5 @@ This protocol tells an AI or human editor **what to read, what may be edited, wh
 - Never mutate Supabase without explicit `--apply`.
 - Never use AI APIs from the content-audit scripts.
 - Never rewrite questions directly in `linked-questions.json`.
+- Never treat `component-suggestions.json` as permission to auto-insert components.
+- Never treat `ui-block-edits.json` as an enabled raw UI compose/apply path.

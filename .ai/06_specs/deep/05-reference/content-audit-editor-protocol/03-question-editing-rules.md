@@ -33,6 +33,8 @@ Create:
 
 The script also accepts `update` or `fields`, but `proposed` is preferred for clarity.
 
+Use the exported `content_hash` from `linked-questions.json` when present. If it is not present, the question push script computes the exported hash and reports it in dry-run output.
+
 ## Allowed update fields
 
 The current question push script allows only these fields:
@@ -100,6 +102,12 @@ The question push script:
 - Compares the remote hash with the exported/edit baseline.
 - Refuses stale remote updates.
 - Updates only allowed fields plus `updated_at`.
+
+## Low-risk vs high-risk question edits
+
+Low-risk question edits usually change only `text`, `rationale`, `explanation`, or `code_citation` without changing the correct answer.
+
+High-risk question edits change answer selection, numeric answer values, accepted answers, tolerances, options, or assessment classification. High-risk edits require source-backed reviewer approval before apply.
 
 ## Do not couple article and question pushes
 

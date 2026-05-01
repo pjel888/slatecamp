@@ -25,8 +25,8 @@ Create a deep reference protocol under `.ai/06_specs/deep/05-reference/content-a
 ### Phase 1 — Protocol creation
 
 - Add local `AGENTS.md` for protocol scope.
-- Add README and six operating docs.
-- Cover articles, questions, fact-checking, review safety, and commands.
+- Add README and eight operating docs.
+- Cover articles, questions, fact-checking, review safety, commands, review packet templates, quality rubric, and pilot playbook.
 
 ### Phase 2 — Index sync
 
@@ -41,10 +41,11 @@ Create a deep reference protocol under `.ai/06_specs/deep/05-reference/content-a
 - Run `git diff --check`.
 - Run lightweight grep checks for `content-audit:*` command references.
 
-### Phase 4 — Pilot adoption (future)
+### Phase 4 — Pilot adoption (queued)
 
-- Select one exported article with linked questions.
-- Follow the protocol without applying changes.
+- Select one exported article with linked questions and sources.
+- Complete a review packet using the template.
+- Follow the protocol through dry-run only.
 - Record friction and update the protocol if command behavior or review language is unclear.
 
 ### Phase 5 — Future automation gates (future)
@@ -59,14 +60,16 @@ These are intentionally out of scope for the docs rollout:
 
 ## Acceptance criteria
 
-- [ ] `.ai/06_specs/deep/05-reference/content-audit-editor-protocol/` exists with protocol docs.
-- [ ] `.ai/03_plans/content-audit-editor-protocol/` exists with rollout tracking.
-- [ ] Article, question, fact-check, safety, and command workflows are documented.
-- [ ] Docs state dry-run-first and apply-gated Supabase mutation rules.
-- [ ] Docs state no AI APIs are integrated.
-- [ ] Docs state generated exports are not canonical docs.
-- [ ] Indexes point to the new docs.
-- [ ] `git diff --check` passes.
+- [x] `.ai/06_specs/deep/05-reference/content-audit-editor-protocol/` exists with protocol docs.
+- [x] `.ai/03_plans/content-audit-editor-protocol/` exists with rollout tracking.
+- [x] Article, question, fact-check, safety, and command workflows are documented.
+- [x] Review packet templates and quality rubric are documented.
+- [x] Docs state dry-run-first and apply-gated Supabase mutation rules.
+- [x] Docs state no AI APIs are integrated.
+- [x] Docs state generated exports are not canonical docs.
+- [x] Indexes point to the new docs.
+- [ ] Dry-run-only editorial pilot completed.
+- [ ] `git diff --check` passes for the latest docs update.
 
 ## Risks and mitigations
 

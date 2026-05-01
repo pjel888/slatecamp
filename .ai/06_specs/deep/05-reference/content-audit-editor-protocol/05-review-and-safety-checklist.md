@@ -10,6 +10,8 @@
 - [ ] `sources.json` read for available evidence.
 - [ ] `taxonomy.json` read for scope/context.
 - [ ] Review target and evidence requirement are clear.
+- [ ] Risk tier is assigned.
+- [ ] Review packet is started for non-trivial edits.
 
 ## During-edit checklist
 
@@ -41,6 +43,7 @@ Then confirm:
 - [ ] No unresolved placeholders remain.
 - [ ] UI blocks were reinserted exactly; intentional raw UI block edits are not supported by the current compose/push path.
 - [ ] Diff is limited to intended prose/question-adjacent changes.
+- [ ] Review packet records report paths and blocker counts.
 
 ## Push dry-run checklist
 
@@ -113,3 +116,17 @@ bun run content-audit:push:apply -- --all-safe --confirm "APPLY ALL SAFE CONTENT
 ```
 
 Prefer article-by-article apply during editorial rollout. Use bulk apply only after a reviewed batch has clean validation and dry-run reports.
+
+
+## Ready-for-review checklist
+
+- [ ] Review packet is complete.
+- [ ] Risk tier is correct.
+- [ ] Source evidence is sufficient for the risk tier.
+- [ ] Question impact is explicit.
+- [ ] UI preservation notes are explicit.
+- [ ] Commands and report results are recorded.
+
+## Pilot-only checklist
+
+During the first editorial pilot, stop after dry-run unless a separate explicit apply approval exists. Record friction in `.ai/03_plans/content-audit-editor-protocol/README.md`.

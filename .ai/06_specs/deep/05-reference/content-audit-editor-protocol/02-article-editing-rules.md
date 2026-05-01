@@ -104,6 +104,18 @@ If `candidate.md` needs to change:
 - Do not convert custom syntax to plain markdown if it was preserved as a UI block.
 - Do not remove citations, source labels, or code citations unless replacing them with better evidence.
 
+## Edit decision matrix
+
+| Situation | Action | Required artifact |
+| --- | --- | --- |
+| Typo or grammar only | Edit `normalized.md`. | Diff/validate reports. |
+| Factual statement with source support | Edit `normalized.md`. | Review packet fact-check record. |
+| Factual statement unclear | Do not assert correction. | Blocker escalation note. |
+| Linked question wording affected | Draft question edit. | `question-edits/<question_id>.json`. |
+| Answer key affected | Stop for reviewer approval. | Source-backed question edit + approval metadata. |
+| UI raw block appears wrong | Do not edit raw UI. | Follow-up implementation task. |
+| Component suggestion looks useful | Do not auto-insert. | Future component recommendation task, if desired. |
+
 ## Completion criteria for article edits
 
 An article edit is locally complete only when:

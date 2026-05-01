@@ -27,6 +27,22 @@ Expected files include:
 - `candidate.md` — recomposed push candidate generated from `normalized.md` and `ui-blocks.json`.
 - `compose-report.json`, `diff-report.json`, `validation-report.json`, `push-report.json` — machine-readable safety reports.
 
+
+## Bundle lifecycle
+
+```text
+exported -> normalized -> edited -> candidate_ready -> locally_validated -> dry_run_passed -> applied
+                 |            |                 |                 |
+                 v            v                 v                 v
+              blocked      blocked          blocked/conflict   re-export required
+```
+
+Move forward only when the generated report for the current stage has no blockers. If a later stage fails, return to the earliest source file that can safely fix the problem: usually `normalized.md`, never `candidate.md`.
+
+## Review packet expectation
+
+For any edit beyond typo-level cleanup, prepare a review packet using `07-review-packets-and-templates.md`. The packet should explain intent, evidence, linked-question impact, UI preservation notes, commands run, and reviewer decision.
+
 ## Editor workflow
 
 ### 1. Select the article
@@ -45,12 +61,13 @@ Use `original.md` only for baseline comparison; do not edit it.
 
 ### 2. Establish the review target
 
-Before changing text, write down the target in notes or a review issue:
+Before changing text, write down the target in a review packet, PR note, or issue:
 
 - Article ID and slug.
 - Claim or section being reviewed.
 - Whether the task is copy cleanup, factual correction, source alignment, question alignment, or UI-preservation review.
 - Which sources justify the change.
+- The expected risk tier from `08-quality-rubric-and-pilot-playbook.md`.
 - Whether linked questions are affected.
 
 ### 3. Edit the article safely
@@ -129,3 +146,12 @@ Stop and escalate instead of pushing when:
 - Push dry-run reports blockers.
 - Linked questions need answer-key changes but lack reviewer approval.
 - Remote content is stale.
+
+
+## Recovery rules
+
+- If remote content is stale, re-export the article before editing further.
+- If a placeholder is damaged, restore it from Git diff or regenerate `normalized.md` from `original.md`.
+- If parser output is uncertain, do not force a push until a reviewer accepts the risk or a parser fix is made.
+- If a question edit is stale, re-export the article bundle so linked question hashes are current.
+- If source evidence is weak, mark the review blocked instead of softening the claim into unsupported wording.

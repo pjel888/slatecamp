@@ -75,6 +75,8 @@
 - `05-reference/content-audit-editor-protocol/04-fact-checking-and-source-policy.md` — Active
 - `05-reference/content-audit-editor-protocol/05-review-and-safety-checklist.md` — Active
 - `05-reference/content-audit-editor-protocol/06-command-runbook.md` — Active
+- `05-reference/content-audit-editor-protocol/07-review-packets-and-templates.md` — Active
+- `05-reference/content-audit-editor-protocol/08-quality-rubric-and-pilot-playbook.md` — Active
 
 ## archive
 

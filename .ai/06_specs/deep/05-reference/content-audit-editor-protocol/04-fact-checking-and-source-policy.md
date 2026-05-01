@@ -18,7 +18,7 @@ Use the strongest available source for the claim type.
 3. Recognized textbooks, standards, or regulator-published references where primary law is not enough.
 4. Internal SlateCamp taxonomy/question context for learning alignment, not as proof of external facts.
 
-Do not cite memory, unsourced web snippets, or model output as evidence.
+Do not cite memory, unsourced web snippets, or model output as evidence. For Philippine architecture law/code work, prefer exact legal instrument, rule, table, and section references over broad summaries.
 
 ## Fact-check record shape
 
@@ -39,6 +39,14 @@ When recording a factual issue in review notes, use this structure:
   "linked_question_impact": "none | review_needed | question_edit_created:<question_id>"
 }
 ```
+
+## Confidence rubric
+
+| Confidence | Standard | Action |
+| --- | --- | --- |
+| High | Primary or official source directly supports the claim; section/page is identified. | Eligible for factual edit after review. |
+| Medium | Reliable secondary source supports the claim or primary source is relevant but sectioning is incomplete. | Eligible for cautious wording; reviewer should confirm. |
+| Low | Evidence is indirect, conflicting, outdated, or missing exact authority. | Do not push factual correction; escalate. |
 
 ## Citation requirements
 

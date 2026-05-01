@@ -2,6 +2,19 @@
 
 All commands run from the repository root with Bun.
 
+## Command safety policy
+
+| Command family | Live Supabase mutation? | Default safety | Notes |
+| --- | --- | --- | --- |
+| export / normalize / inventory / compose / diff / validate | No article mutation | Local files only | Export reads Supabase; generated files stay under `.ai/content-audit-export/`. |
+| push dry-run | No | Dry-run | Fetches remote content for stale checks only. |
+| push apply | Yes | Explicit `--apply` required | Requires scope and clean safety gates. |
+| question push dry-run | No | Dry-run | Fetches remote question for stale checks only. |
+| question push apply | Yes | Explicit `--apply` required | Updates whitelisted question fields only. |
+| admin-log dry-run | No | Dry-run | Previews `ai_audit_runs` payload. |
+| admin-log apply | Yes | Explicit `--apply` required | Inserts local run metadata; does not start an AI job. |
+
+
 ## Full local export and round-trip preparation
 
 ```bash
@@ -15,7 +28,7 @@ bun run content-audit:diff -- --all --summary
 bun run content-audit:validate -- --all --summary
 ```
 
-This creates and verifies local generated data under `.ai/content-audit-export/`. It does not mutate live Supabase article content.
+This creates and verifies local generated data under `.ai/content-audit-export/`. It does not mutate live Supabase article content. Inspect `export-summary.json`, `sync-state.json`, and validation reports before assigning edits.
 
 ## Three-article smoke run
 
@@ -155,6 +168,15 @@ bun run content-audit:roundtrip -- validate --all --summary
 ```
 
 Supported subcommands include `export`, `normalize`, `inventory`, `components`, `compose`, `diff`, `validate`, `push`, `push-question`, `admin-log`, `component-suggestions`, `ui-block-edits`, `fact-check`, and `rewrite`. The guarded future commands still fail closed.
+
+## Interpreting failures
+
+- `stale_check_passed: false` means re-export before pushing.
+- `safe_to_push: false` means inspect `blockers` before any apply.
+- `unresolved_placeholders_count > 0` means restore placeholders or re-normalize.
+- `ui_blocks_changed_count > 0` means stop; raw UI preservation failed.
+- `pushed: false` in dry-run is expected.
+- `pushed: false` in apply means inspect blockers and updated row count.
 
 ## Reports to inspect
 
