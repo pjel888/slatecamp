@@ -445,8 +445,8 @@ See also:
 
 # 19. GitNexus / code-intelligence note
 
-This repo includes GitNexus guidance and graph-aware code-intelligence expectations.
-If a task depends on blast radius, caller tracing, or refactor safety, follow the repo's GitNexus guidance rather than improvising blind search-and-replace work.
+This repo includes GitNexus, code-review-graph, and ChunkHound guidance for graph-aware code-intelligence expectations.
+If a task depends on blast radius, caller tracing, dependency impact, or refactor safety, run the mandatory three-signal pass in root `AGENTS.md`: GitNexus impact/context, code-review-graph minimal context plus impact radius, and ChunkHound search/research corroboration. Do not improvise blind search-and-replace work, and do not present a high-confidence blast-radius conclusion if any required signal is stale, unavailable, or failed.
 
 ---
 
@@ -461,6 +461,13 @@ When `CLAUDE.md` changes, verify alignment with:
 
 This file should be policy-heavy, current, and operationally useful.
 It must not become a stale parallel universe.
+
+## Mandatory blast-radius triad
+- Any blast-radius, caller tracing, dependency impact, or refactor-safety analysis must use **all three** code-intelligence systems before conclusions or edits: GitNexus, code-review-graph, and ChunkHound.
+- GitNexus is the authoritative call/process graph signal. Run `gitnexus_impact({target: "symbolName", direction: "upstream"})` before editing any function, class, or method, and use `gitnexus_detect_changes()` before commit/completion checks that involve source edits.
+- code-review-graph is the changed-file impact signal. Use the `code-review-graph` MCP tools, starting with `get_minimal_context_tool`, then `get_impact_radius_tool` for changed files or the intended diff. If MCP is unavailable, use `uvx code-review-graph==2.3.2 detect-changes --repo C:\Users\phili\Desktop\slatecamp`.
+- ChunkHound is the code-search corroboration signal. Run a targeted ChunkHound search or research query for the symbol, file, route, or workflow being changed (semantic/multi-hop when embeddings are available; regex/path-filtered search otherwise) so non-obvious related code is not missed.
+- Report the three-signal result together. If any system is stale, unavailable, or fails, state that explicitly, refresh/retry when safe, and do not present a high-confidence blast-radius conclusion from only one tool.
 
 <!-- gitnexus:start -->
 # GitNexus — Code Intelligence

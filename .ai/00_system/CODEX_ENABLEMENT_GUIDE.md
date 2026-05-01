@@ -66,6 +66,23 @@ This guide is the fastest way for future Codex sessions to orient in SlateCamp a
 - `.agents/README.md`
 - `.ai/00_system/CODEX_SKILLS_MAP.md`
 
+### Blast-radius or refactor-safety work
+
+- Root `AGENTS.md` owns the mandatory blast-radius triad.
+- Always run and reconcile all three signals before high-confidence impact claims or edits:
+  - GitNexus MCP: `gitnexus_impact` / `gitnexus_context` / `gitnexus_detect_changes`
+  - code-review-graph MCP: `get_minimal_context_tool` then `get_impact_radius_tool`
+  - ChunkHound: targeted search/research for the changed symbol, file, route, or workflow; use semantic/multi-hop when embeddings are available and regex/path-filtered search otherwise
+- Project Codex MCP config lives at `.codex/config.toml`; the expected local servers are `gitnexus`, `code-review-graph`, and `chunkhound`.
+- ChunkHound should prefer the local Ollama/OpenAI-compatible setup when available:
+  - embeddings: `nomic-embed-text:latest`
+  - base URL: `http://127.0.0.1:11434/v1`
+  - utility LLM: `qwen2.5:3b`
+  - synthesis LLM: `llama3.1:8b`; `gemma4:e4b` is available but heavier
+  - reranking: disabled unless a local `/rerank`-compatible service is added; use `chunkhound search` semantic/regex corroboration instead of `chunkhound research` when rerank support is unavailable
+- Do not rely on VoyageAI for routine ChunkHound work in this environment; it hit billing/rate-limit failures during indexing.
+- If one signal is stale or unavailable, refresh/retry when safe and disclose the gap instead of replacing the triad with grep-only analysis.
+
 ### Companion AI CLI work
 
 - Kimi Code CLI is available locally and should be used opportunistically when it can improve quality, speed, or independent verification.

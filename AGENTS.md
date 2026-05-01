@@ -81,6 +81,13 @@ Use these roles intentionally. Do not let them drift into contradictory copies.
 - Plans must link back to findings and stop short of implementation details.
 - Generated audit artifacts are deliverables, not new baseline scope.
 
+## Mandatory blast-radius triad
+- Any blast-radius, caller tracing, dependency impact, or refactor-safety analysis must use **all three** code-intelligence systems before conclusions or edits: GitNexus, code-review-graph, and ChunkHound.
+- GitNexus is the authoritative call/process graph signal. Run `gitnexus_impact({target: "symbolName", direction: "upstream"})` before editing any function, class, or method, and use `gitnexus_detect_changes()` before commit/completion checks that involve source edits.
+- code-review-graph is the changed-file impact signal. Use the `code-review-graph` MCP tools, starting with `get_minimal_context_tool`, then `get_impact_radius_tool` for changed files or the intended diff. If MCP is unavailable, use `uvx code-review-graph==2.3.2 detect-changes --repo C:\Users\phili\Desktop\slatecamp`.
+- ChunkHound is the code-search corroboration signal. Run a targeted ChunkHound search or research query for the symbol, file, route, or workflow being changed (semantic/multi-hop when embeddings are available; regex/path-filtered search otherwise) so non-obvious related code is not missed.
+- Report the three-signal result together. If any system is stale, unavailable, or fails, state that explicitly, refresh/retry when safe, and do not present a high-confidence blast-radius conclusion from only one tool.
+
 <!-- gitnexus:start -->
 # GitNexus — Code Intelligence
 
