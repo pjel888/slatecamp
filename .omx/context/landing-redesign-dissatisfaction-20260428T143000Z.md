@@ -1,0 +1,30 @@
+# Ralph Context Snapshot — Landing Redesign Dissatisfaction
+
+- Task statement: User is dissatisfied with the current SlateCamp landing page implementation after browser review. They specifically called out that the "Current waypoint" card does not make sense and that the overall landing needs to be better.
+- Desired outcome: Rework the landing page into a coherent, production-ready ALE startup landing page with an impressive full-bleed 3D voxel background, no confusing decorative UI, strong UX hierarchy, clear copy, and verified responsive/browser behavior.
+- Known facts/evidence:
+  - Current implementation has full-bleed R3F hero with a visible waypoint card and pause control.
+  - User dislikes waypoint card and says a lot does not make sense.
+  - Previous verification passed build/type/lint/browser smoke, but visual/product meaning is now rejected.
+  - Browser Use plugin has no callable browser tool exposed in this session; Playwright screenshots are the available fallback for browser evidence.
+- Constraints:
+  - Use Bun for scripts.
+  - Preserve Next.js App Router server/client boundaries.
+  - Preserve 3D performance safeguards: reduced motion, WebGL fallback, page visibility pause, DPR caps.
+  - Keep copy ALE-canonical, coach-like, calm, and purposeful.
+  - No new dependencies unless explicitly requested.
+  - Run GitNexus impact before editing symbols.
+- Unknowns/open questions:
+  - Exact aesthetic preference beyond "better" and prior references PixelVault/Bruno Simon; infer from user critique: immersive world should feel meaningful, not random UI overlays.
+- Likely codebase touchpoints:
+  - src/components/landing/CampLandingPage.tsx
+  - src/components/landing/HeroCampScene.tsx
+  - src/components/landing/CampSceneCanvas.tsx
+  - src/components/marketing/MarketingNav.tsx
+  - src/app/page.tsx
+- Acceptance criteria:
+  - Remove confusing Current waypoint card from visible UI.
+  - Replace hero concept with a clear "readiness command center over living study world" narrative.
+  - Browser screenshots at mobile/tablet/desktop show no horizontal overflow, 1 H1, visible CTA, full hero canvas/background.
+  - Lint, type-check, build pass.
+  - Architect/verifier review passes or issues addressed.

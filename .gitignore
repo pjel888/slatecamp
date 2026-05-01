@@ -74,7 +74,21 @@ chunkhound.json
 flowbite/
 .ai/worktrees/
 .tmp-comment-checker/
-.omx/
+# OMX durable handoff files are tracked selectively.
+# Keep machine/session/runtime material local.
+.omx/artifacts/
+.omx/drafts/
+.omx/logs/
+.omx/state/
+.omx/team/
+.omx/tmp/
+.omx/audit/env-inventory.json
+.omx/context/pre-team-dirty-*
+.omx/hud-config.json
+.omx/metrics.json
+.omx/notepad.md
+.omx/setup-scope.json
+.omx/tmux-hook.json
 .playwright-mcp/
 dump.sql
 nul

@@ -64,6 +64,7 @@ const eslintConfig = defineConfig([
     // Generated/vendor artifacts not maintained as source in this repo:
     "storybook-static/**",
     "flowbite/**",
+    ".omx/**",
   ]),
 ]);
 

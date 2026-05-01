@@ -1,0 +1,219 @@
+{
+  "version": 1,
+  "team_name": "bootstrap-approved-slatecamp-m",
+  "generated_at": "2026-04-25T09:49:29.947Z",
+  "lore_commit_protocol_required": true,
+  "runtime_commits_are_scaffolding": true,
+  "task_summary": [
+    {
+      "id": "1",
+      "subject": "Supabase lint repair: function search_path and RLS policy",
+      "owner": "worker-1",
+      "status": "completed",
+      "description": "Priority task from user. Fix Supabase lint items without destructive data changes. Read root AGENTS.md and supabase/AGENTS.md, then inspect DATABASE_SCHEMA.sql and supabase/migrations for these functions: public.get_fallback_questions, public.search_wiki_articles_pure, public.get_unseen_questions, public.update_user_question_state, public.fetch_normalization_batch, public.search_wiki_articles_hybrid, public.get_article_with_node, public.submit_quiz_answer_v2, public.refresh_user_question_states. Add a new guarded migration that sets explicit search_path for each function, preserving signatures/ownership/permissions. Also inspect public.interaction_signal_traces RLS policy named Users can insert signal traces via service role; replace unrestricted WITH CHECK true with a service-role/admin-safe policy or server-only insert path appropriate to existing auth model. Do not drop data or tables. Update DATABASE_SCHEMA.sql if repo practice supports it from migration evidence, otherwise document exact follow-up. Include a concise issue summary and verification commands. Commit your worker changes with Lore protocol.",
+      "result_excerpt": "Issue summary:\n- Added a guarded migration to pin search_path for the flagged Supabase functions using public, extensions, pg_temp.\n- Tightened public.interaction_signal_traces inserts to the existing server-only service_role path used by …"
+    },
+    {
+      "id": "2",
+      "subject": "Phase 0 baseline inventory and audit artifact",
+      "owner": "worker-2",
+      "status": "completed",
+      "description": "Create the Phase 0 source-of-truth freeze artifact for the approved plan. Read root AGENTS.md and .ai/AGENTS.md. Produce .ai/02_audits/2026-04-25-mvp-readiness-baseline.md with live evidence: git status, app route counts, layouts/loading/errors/handlers, components/features/actions/migrations/.ai counts, package scripts, docs count drift, route constants mismatch summary, Supabase read-only evidence already gathered if available. Do not remediate beyond documentation. Commit worker changes with Lore protocol.",
+      "result_excerpt": "Summary: Created Phase 0 MVP readiness baseline artifact at .ai/02_audits/2026-04-25-mvp-readiness-baseline.md (commit 59e62a9c).\nVerification:\n- PASS referenced-path existence scan: all cited files exist.\n- PASS git diff --check -- .ai/02…"
+    },
+    {
+      "id": "3",
+      "subject": "Route/path consumer manifest and dead target plan",
+      "owner": "worker-3",
+      "status": "completed",
+      "description": "Build a repo-wide route/path consumer inventory for the approved plan. Read root AGENTS.md plus relevant src AGENTS files before edits. Focus on src/lib/routes.ts and hardcoded Link/router.push/redirect/href/notification/email targets. Produce an audit artifact under .ai/02_audits/2026-04-25-route-path-consumer-audit.md listing missing/stale targets including /dashboard/campfire, /dashboard/library, /dashboard/trails, /dashboard/settings/billing, /dashboard/settings/developer, /admin/wiki, /auth/reset-password, and /quiz/full_exam/setup. Include recommended hide/redirect/implement disposition. Avoid source remediation unless a trivially safe link target replacement is obvious and isolated. Commit worker changes with Lore protocol.",
+      "result_excerpt": "Created .ai/02_audits/2026-04-25-route-path-consumer-audit.md with live route inventory, requested target dispositions, and extra stale-target findings (/settings, /dashboard/trail, /dashboard/heatmap). Commit: 61ca4e04. Verification: PASS…"
+    },
+    {
+      "id": "4",
+      "subject": "Public/student claim matrix and hide-by-default recommendations",
+      "owner": "worker-4",
+      "status": "completed",
+      "description": "Create the public/student-facing claim matrix required by the approved plan. Read root AGENTS.md and relevant .ai and src app/component AGENTS. Audit landing, pricing, marketing sections, contact/about, testimonial/social proof, auth/onboarding, dashboard empty/result-day/notification/email surfaces. Produce .ai/02_audits/2026-04-25-public-claim-matrix.md with each claim status: implemented, evidence path, narrowed, hidden, or deferred. Apply hide/narrow recommendations only for small safe copy edits if clear; otherwise document. Pay special attention to unsupported billing, Campfire, Library, institutional/enterprise pricing, payment-method/cancel-anytime/student-discount/team-pricing, placeholder testimonials, AI Tutor claims. Commit worker changes with Lore protocol.",
+      "result_excerpt": "Completed task 4. Added .ai/02_audits/2026-04-25-public-claim-matrix.md documenting public/student-facing claim status across landing, pricing, contact, auth/try, results-day, notifications, upgrade, and email surfaces. Commit: f3330d39. V…"
+    },
+    {
+      "id": "5",
+      "subject": "UX/UI route audit tooling and verification contract",
+      "owner": "worker-5",
+      "status": "completed",
+      "description": "Set up the audit tooling/evidence contract from the approved plan. Read root AGENTS.md, scripts/AGENTS.md, src/app/AGENTS.md, and package.json. Create or draft scripts/audits/public-route-smoke.ts and scripts/audits/auth-route-browser.ts if feasible without new dependencies, using installed Playwright for browser crawl and fetch for public route smoke. Output evidence paths under .ai/02_audits/evidence/. Include route manifest shape, console/page error capture, failed network capture, redirect-loop detection, and gated/fixture-missing accounting. Keep credentials/env guarded; do not use owner personal account or demo bypass as signoff. Commit worker changes with Lore protocol.",
+      "result_excerpt": "Completed UX audit tooling/evidence-contract hardening in commit eccf534e. Updated scripts/audits/_shared.ts typing so audit accounting passes repo typecheck and updated scripts/audits/auth-route-browser.ts to emit evidence with an environ…"
+    }
+  ],
+  "operational_entries": [
+    {
+      "recorded_at": "2026-04-25T09:24:12.876Z",
+      "operation": "auto_checkpoint",
+      "worker_name": "worker-3",
+      "task_id": "3",
+      "status": "applied",
+      "operational_commit": "61ca4e0409c1bd25a41a3da7ae986e57f7a4b934",
+      "worktree_path": "/Users/philiplewis/slatecamp/.omx/team/bootstrap-approved-slatecamp-m/worktrees/worker-3",
+      "detail": "Dirty worker worktree checkpointed before runtime integration."
+    },
+    {
+      "recorded_at": "2026-04-25T09:24:17.695Z",
+      "operation": "auto_checkpoint",
+      "worker_name": "worker-5",
+      "task_id": "5",
+      "status": "applied",
+      "operational_commit": "9266b6d90644994a98abd026d4d7999bf3af3adf",
+      "worktree_path": "/Users/philiplewis/slatecamp/.omx/team/bootstrap-approved-slatecamp-m/worktrees/worker-5",
+      "detail": "Dirty worker worktree checkpointed before runtime integration."
+    },
+    {
+      "recorded_at": "2026-04-25T09:24:59.810Z",
+      "operation": "integration_cherry_pick",
+      "worker_name": "worker-3",
+      "task_id": "3",
+      "status": "applied",
+      "operational_commit": "178b72203dcc8db86b45a704a7dfe70b4a6bab35",
+      "source_commit": "61ca4e0409c1bd25a41a3da7ae986e57f7a4b934",
+      "leader_head_before": "54e9d6c1ba6f45083755a03b4612ba51ce7aa72a",
+      "leader_head_after": "178b72203dcc8db86b45a704a7dfe70b4a6bab35",
+      "worktree_path": "/Users/philiplewis/slatecamp/.omx/team/bootstrap-approved-slatecamp-m/worktrees/worker-3",
+      "detail": "Leader created a runtime cherry-pick commit while integrating diverged worker history."
+    },
+    {
+      "recorded_at": "2026-04-25T09:25:47.340Z",
+      "operation": "integration_cherry_pick",
+      "worker_name": "worker-4",
+      "task_id": "4",
+      "status": "applied",
+      "operational_commit": "80f787b92c1a2490dd5a24f24d21db66d3af9c61",
+      "source_commit": "41b569d32c501d43d2fba7f8d7d04e6cf897885f",
+      "leader_head_before": "178b72203dcc8db86b45a704a7dfe70b4a6bab35",
+      "leader_head_after": "80f787b92c1a2490dd5a24f24d21db66d3af9c61",
+      "worktree_path": "/Users/philiplewis/slatecamp/.omx/team/bootstrap-approved-slatecamp-m/worktrees/worker-4",
+      "detail": "Leader created a runtime cherry-pick commit while integrating diverged worker history."
+    },
+    {
+      "recorded_at": "2026-04-25T09:26:01.773Z",
+      "operation": "integration_cherry_pick",
+      "worker_name": "worker-5",
+      "task_id": "5",
+      "status": "applied",
+      "operational_commit": "f3a4d96fce3b7392ab8357ac134828df525bdc48",
+      "source_commit": "9266b6d90644994a98abd026d4d7999bf3af3adf",
+      "leader_head_before": "80f787b92c1a2490dd5a24f24d21db66d3af9c61",
+      "leader_head_after": "f3a4d96fce3b7392ab8357ac134828df525bdc48",
+      "worktree_path": "/Users/philiplewis/slatecamp/.omx/team/bootstrap-approved-slatecamp-m/worktrees/worker-5",
+      "detail": "Leader created a runtime cherry-pick commit while integrating diverged worker history."
+    },
+    {
+      "recorded_at": "2026-04-25T09:24:11.805Z",
+      "operation": "auto_checkpoint",
+      "worker_name": "worker-1",
+      "task_id": "1",
+      "status": "applied",
+      "operational_commit": "573442b9b4c27dc6f486b55fc525eb2ba6f441ea",
+      "worktree_path": "/Users/philiplewis/slatecamp/.omx/team/bootstrap-approved-slatecamp-m/worktrees/worker-1",
+      "detail": "Dirty worker worktree checkpointed before runtime integration."
+    },
+    {
+      "recorded_at": "2026-04-25T09:24:16.750Z",
+      "operation": "auto_checkpoint",
+      "worker_name": "worker-4",
+      "task_id": "4",
+      "status": "applied",
+      "operational_commit": "41b569d32c501d43d2fba7f8d7d04e6cf897885f",
+      "worktree_path": "/Users/philiplewis/slatecamp/.omx/team/bootstrap-approved-slatecamp-m/worktrees/worker-4",
+      "detail": "Dirty worker worktree checkpointed before runtime integration."
+    },
+    {
+      "recorded_at": "2026-04-25T09:24:46.125Z",
+      "operation": "integration_merge",
+      "worker_name": "worker-1",
+      "task_id": "1",
+      "status": "applied",
+      "operational_commit": "54e9d6c1ba6f45083755a03b4612ba51ce7aa72a",
+      "source_commit": "573442b9b4c27dc6f486b55fc525eb2ba6f441ea",
+      "leader_head_before": "ae79f6842fcce8e91821d1071112f6f16e8cc1f5",
+      "leader_head_after": "54e9d6c1ba6f45083755a03b4612ba51ce7aa72a",
+      "worktree_path": "/Users/philiplewis/slatecamp/.omx/team/bootstrap-approved-slatecamp-m/worktrees/worker-1",
+      "detail": "Leader created a runtime merge commit to integrate worker history."
+    },
+    {
+      "recorded_at": "2026-04-25T09:49:29.945Z",
+      "operation": "shutdown_merge",
+      "worker_name": "worker-1",
+      "task_id": "1",
+      "status": "conflict",
+      "operational_commit": null,
+      "source_commit": "863bf100e33a35115405426d7cb017327858abab",
+      "leader_head_before": "59e62a9c85794fb932da66160cd95a6b7a49a191",
+      "leader_head_after": "59e62a9c85794fb932da66160cd95a6b7a49a191",
+      "worktree_path": "/Users/philiplewis/slatecamp/.omx/team/bootstrap-approved-slatecamp-m/worktrees/worker-1",
+      "report_path": "/Users/philiplewis/slatecamp/.omx/team/bootstrap-approved-slatecamp-m/worktrees/worker-1/.omx/diff.md",
+      "detail": "error: Your local changes to the following files would be overwritten by merge:\n\tsupabase/migrations/20260425093000_fix_function_search_path_and_signal_trace_rls.sql\nPlease commit your changes or stash them before you merge.\nAborting\nMerge with strategy ort failed."
+    },
+    {
+      "recorded_at": "2026-04-25T09:49:29.945Z",
+      "operation": "shutdown_merge",
+      "worker_name": "worker-2",
+      "task_id": "2",
+      "status": "noop",
+      "operational_commit": null,
+      "source_commit": "ae79f6842fcce8e91821d1071112f6f16e8cc1f5",
+      "leader_head_before": "59e62a9c85794fb932da66160cd95a6b7a49a191",
+      "leader_head_after": "59e62a9c85794fb932da66160cd95a6b7a49a191",
+      "worktree_path": "/Users/philiplewis/slatecamp/.omx/team/bootstrap-approved-slatecamp-m/worktrees/worker-2",
+      "report_path": "/Users/philiplewis/slatecamp/.omx/team/bootstrap-approved-slatecamp-m/worktrees/worker-2/.omx/diff.md",
+      "detail": "source already reachable from leader HEAD"
+    },
+    {
+      "recorded_at": "2026-04-25T09:49:29.945Z",
+      "operation": "shutdown_merge",
+      "worker_name": "worker-3",
+      "task_id": "3",
+      "status": "applied",
+      "operational_commit": "4a91eab9d796a3932b0540d281b203dfe935f37c",
+      "source_commit": "61ca4e0409c1bd25a41a3da7ae986e57f7a4b934",
+      "leader_head_before": "59e62a9c85794fb932da66160cd95a6b7a49a191",
+      "leader_head_after": "4a91eab9d796a3932b0540d281b203dfe935f37c",
+      "worktree_path": "/Users/philiplewis/slatecamp/.omx/team/bootstrap-approved-slatecamp-m/worktrees/worker-3",
+      "report_path": "/Users/philiplewis/slatecamp/.omx/team/bootstrap-approved-slatecamp-m/worktrees/worker-3/.omx/diff.md",
+      "detail": "Merge made by the 'ort' strategy."
+    },
+    {
+      "recorded_at": "2026-04-25T09:49:29.945Z",
+      "operation": "shutdown_merge",
+      "worker_name": "worker-4",
+      "task_id": "4",
+      "status": "conflict",
+      "operational_commit": null,
+      "source_commit": "f3330d395369fcd70cb725b5754a31841d57da48",
+      "leader_head_before": "4a91eab9d796a3932b0540d281b203dfe935f37c",
+      "leader_head_after": "4a91eab9d796a3932b0540d281b203dfe935f37c",
+      "worktree_path": "/Users/philiplewis/slatecamp/.omx/team/bootstrap-approved-slatecamp-m/worktrees/worker-4",
+      "report_path": "/Users/philiplewis/slatecamp/.omx/team/bootstrap-approved-slatecamp-m/worktrees/worker-4/.omx/diff.md",
+      "detail": "error: The following untracked working tree files would be overwritten by merge:\n\t.ai/02_audits/2026-04-25-public-claim-matrix.md\nPlease move or remove them before you merge.\nAborting\nMerge with strategy ort failed."
+    },
+    {
+      "recorded_at": "2026-04-25T09:49:29.945Z",
+      "operation": "shutdown_merge",
+      "worker_name": "worker-5",
+      "task_id": "5",
+      "status": "conflict",
+      "operational_commit": null,
+      "source_commit": "eccf534ec767e53ea68a65b654bbd180c4e8be97",
+      "leader_head_before": "4a91eab9d796a3932b0540d281b203dfe935f37c",
+      "leader_head_after": "4a91eab9d796a3932b0540d281b203dfe935f37c",
+      "worktree_path": "/Users/philiplewis/slatecamp/.omx/team/bootstrap-approved-slatecamp-m/worktrees/worker-5",
+      "report_path": "/Users/philiplewis/slatecamp/.omx/team/bootstrap-approved-slatecamp-m/worktrees/worker-5/.omx/diff.md",
+      "detail": "error: Your local changes to the following files would be overwritten by merge:\n\tscripts/audits/_shared.ts\n\tscripts/audits/auth-route-browser.ts\nPlease commit your changes or stash them before you merge.\nAborting\nMerge with strategy ort failed."
+    }
+  ],
+  "recommended_next_steps": [
+    "Inspect the current branch diff/log and identify which runtime-originated commits should be squashed or rewritten.",
+    "Derive semantic commit boundaries from completed task subjects, code diffs, and shutdown reports rather than from omx(team) operational commit subjects.",
+    "Create final commit messages in Lore format with intent-first subjects and only the trailers that add decision context."
+  ],
+  "leader_finalization_prompt": "Team \"bootstrap-approved-slatecamp-m\" is ready for commit finalization. Treat runtime-originated commits (auto-checkpoints, merge/cherry-picks, cross-rebases, shutdown checkpoints) as temporary scaffolding rather than final history. Do not reuse operational commit subjects verbatim. Completed task subjects: Supabase lint repair: function search_path and RLS policy | Phase 0 baseline inventory and audit artifact | Route/path consumer manifest and dead target plan | Public/student claim matrix and hide-by-default recommendations | UX/UI route audit tooling and verification contract. Rewrite or squash the operational history into clean Lore-format final commit(s) with intent-first subjects and relevant trailers. Use task subjects/results and shutdown diff reports to choose semantic commit boundaries and rationale."
+}

@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "team_name": "read-only-evidence-lanes-for-d",
+  "updated_at": "2026-04-29T10:33:48.858Z",
+  "runtime_commits_are_scaffolding": true,
+  "entries": [
+    {
+      "recorded_at": "2026-04-29T10:33:48.857Z",
+      "operation": "shutdown_merge",
+      "worker_name": "worker-1",
+      "task_id": "1",
+      "status": "noop",
+      "operational_commit": null,
+      "source_commit": "01820eb8ea9895ca11e3a390649451a7c4632f82",
+      "leader_head_before": "01820eb8ea9895ca11e3a390649451a7c4632f82",
+      "leader_head_after": "01820eb8ea9895ca11e3a390649451a7c4632f82",
+      "worktree_path": "/Users/philiplewis/slatecamp/.omx/team/read-only-evidence-lanes-for-d/worktrees/worker-1",
+      "report_path": "/Users/philiplewis/slatecamp/.omx/team/read-only-evidence-lanes-for-d/worktrees/worker-1/.omx/diff.md",
+      "detail": "source already reachable from leader HEAD"
+    },
+    {
+      "recorded_at": "2026-04-29T10:33:48.857Z",
+      "operation": "shutdown_merge",
+      "worker_name": "worker-2",
+      "task_id": "3",
+      "status": "noop",
+      "operational_commit": null,
+      "source_commit": "01820eb8ea9895ca11e3a390649451a7c4632f82",
+      "leader_head_before": "01820eb8ea9895ca11e3a390649451a7c4632f82",
+      "leader_head_after": "01820eb8ea9895ca11e3a390649451a7c4632f82",
+      "worktree_path": "/Users/philiplewis/slatecamp/.omx/team/read-only-evidence-lanes-for-d/worktrees/worker-2",
+      "report_path": "/Users/philiplewis/slatecamp/.omx/team/read-only-evidence-lanes-for-d/worktrees/worker-2/.omx/diff.md",
+      "detail": "source already reachable from leader HEAD"
+    }
+  ]
+}

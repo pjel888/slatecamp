@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "team_name": "audit-only-for-3d-lab-camera-c",
+  "updated_at": "2026-04-29T02:54:56.868Z",
+  "runtime_commits_are_scaffolding": true,
+  "entries": [
+    {
+      "recorded_at": "2026-04-29T02:54:56.867Z",
+      "operation": "shutdown_merge",
+      "worker_name": "worker-1",
+      "task_id": "1",
+      "status": "noop",
+      "operational_commit": null,
+      "source_commit": "2072821d5f84826ad912862c46f654ceb4e1946e",
+      "leader_head_before": "2072821d5f84826ad912862c46f654ceb4e1946e",
+      "leader_head_after": "2072821d5f84826ad912862c46f654ceb4e1946e",
+      "worktree_path": "/Users/philiplewis/slatecamp/.omx/team/audit-only-for-3d-lab-camera-c/worktrees/worker-1",
+      "report_path": "/Users/philiplewis/slatecamp/.omx/team/audit-only-for-3d-lab-camera-c/worktrees/worker-1/.omx/diff.md",
+      "detail": "source already reachable from leader HEAD"
+    },
+    {
+      "recorded_at": "2026-04-29T02:54:56.867Z",
+      "operation": "shutdown_merge",
+      "worker_name": "worker-2",
+      "task_id": "2",
+      "status": "conflict",
+      "operational_commit": null,
+      "source_commit": "ab051a395bbf7c845e00be8b6a355cca5662d3cf",
+      "leader_head_before": "2072821d5f84826ad912862c46f654ceb4e1946e",
+      "leader_head_after": "2072821d5f84826ad912862c46f654ceb4e1946e",
+      "worktree_path": "/Users/philiplewis/slatecamp/.omx/team/audit-only-for-3d-lab-camera-c/worktrees/worker-2",
+      "report_path": "/Users/philiplewis/slatecamp/.omx/team/audit-only-for-3d-lab-camera-c/worktrees/worker-2/.omx/diff.md",
+      "detail": "error: Your local changes to the following files would be overwritten by merge:\n\tsrc/features/3d-lab/hooks/useCameraSnap.ts\n\tsrc/features/3d-lab/stores/useViewportShellStore.test.ts\n\tsrc/features/3d-lab/stores/useViewportShellStore.ts\n\tsrc/features/3d-lab/utils/camera-presets.test.ts\n\tsrc/features/3d-lab/utils/camera-presets.ts\nPlease commit your changes or stash them before you merge.\nAborting\nMerge with strategy ort failed."
+    }
+  ]
+}

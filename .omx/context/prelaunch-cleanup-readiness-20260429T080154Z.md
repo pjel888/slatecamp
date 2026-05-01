@@ -1,0 +1,23 @@
+# Pre-launch Cleanup Readiness Context Snapshot
+
+- Timestamp UTC: 2026-04-29T08:01:54Z
+- Task: comprehensive pre-launch readiness and cleanup analysis after documentation audit.
+- Desired outcome: decision-ready `.ai/` planning docs: prelaunch readiness, cleanup plan, legacy retirement, do-not-maintain, launch cutline, risk register; update known issues and audit log. No source cleanup/deletion.
+- Known facts/evidence:
+  - Prior docs audit documented 114 page routes, 13 API route handlers, 27 features, 157 server/action/query files, 76 schema tables, 92 migrations, 89 test/spec files, 106 Storybook stories, 69 current env vars.
+  - `bun run test`, `type-check`, `lint`, `check:storybook`, `design:lint` passed in prior audit; `bun run build` was blocked by active Next dev server.
+  - Repo is currently dirty with documentation changes plus pre-existing source/UI/3D/sidebar/landing changes.
+  - Pre-launch principle: prefer canonical launch simplification over old compatibility paths unless directly required by launch evidence.
+- Constraints:
+  - Documentation/planning only; do not delete source code.
+  - Do not expose secrets; env files only for names.
+  - Use current codebase as truth, README/.ai as map.
+  - Use Bun for package scripts.
+  - Preserve `.ai` history; mark superseded/canonical where needed.
+- Unknowns/open questions:
+  - Exact founder/product cutline for optional surfaces; infer and mark decisions needed.
+  - Live external service readiness cannot be verified without credentials.
+  - Full e2e/release build status pending build-server conflict resolution.
+- Likely touchpoints:
+  - README.md, `.ai/*.md`, `.ai/00_system/`, `.ai/06_specs/`
+  - `src/app`, `src/lib/actions`, `src/lib/queries`, `src/components`, `src/features`, `middleware.ts`, `package.json`, `DATABASE_SCHEMA.sql`, `supabase/migrations`, `e2e`, Storybook.
