@@ -11,6 +11,8 @@ These are the real repo-level commands from `package.json`:
 - `bun run start`
 - `bun run lint`
 - `bun run lint:fix`
+- `bun run test`
+- `bun run test:coverage`
 - `bun run test:e2e`
 - `bun run test:e2e:smoke`
 - `bun run test:e2e:prod`
@@ -43,12 +45,16 @@ These are the real repo-level commands from `package.json`:
 - `bun run bones:build`
 - `bun audit`
 
-There is **no root `test` script** today. Browser coverage is exposed through the explicit Playwright `test:e2e*` scripts.
+Unit/integration coverage is exposed through the root `test` and `test:coverage`
+scripts. Browser coverage is exposed through the explicit Playwright `test:e2e*`
+scripts.
 
 ## Validation matrix
 
 | Command | Use when | Primary surfaces | Notes |
 | --- | --- | --- | --- |
+| `bun run test` | unit/integration regression coverage | `src/**/*.test.ts` | runs Bun tests under `src/`; use targeted `bun test <paths>` while iterating |
+| `bun run test:coverage` | numeric unit/integration coverage report | `src/**/*.test.ts` | wraps `bun test --coverage src/`; use alongside behavioral E2E evidence, not as a browser-flow substitute |
 | `bun run type-check` | source behavior, contracts, architecture claims | `src/`, `scripts/`, docs that assert live code behavior | clears stale `.next/dev/types` before the repo-wide TypeScript gate |
 | `bun run lint` | workflow/style/tooling claims or code changes | repo-wide | runs `check:storybook` first |
 | `bun run build` | route/runtime behavior changes, app readiness checks | `src/app`, `src/lib`, env-sensitive app runtime | env/dependency sensitive |
@@ -119,7 +125,7 @@ There is **no root `test` script** today. Browser coverage is exposed through th
 
 ## Explicit warnings
 
-- Do not invent a root `test` command
+- Use the real root `bun run test` / `bun run test:coverage` scripts; do not invent alternate aggregate test names
 - Do not treat Playwright presence as full product QA; the current suite is launch-smoke coverage, not complete authenticated flow coverage
 - Do not treat `db:seed` or reset/seed SQL as casual validation
 - Do not assume `build` is a clean repo-health signal until the broken Bun bootstrap path is repaired

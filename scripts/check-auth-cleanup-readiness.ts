@@ -12,6 +12,35 @@ type FeatureFlagRow = {
 }
 
 const CANONICAL_TIERS = new Set(['free', 'pro', 'prime', 'institutional', 'enterprise'])
+const CANONICAL_FEATURE_KEYS = new Set([
+  'readiness_score_live',
+  'analytics_dashboard_full',
+  'taxonomy_heatmap_full',
+  'questions_all_difficulty',
+  'questions_unlimited',
+  'camp_trails_full_library',
+  'focus_review_protocol',
+  'endurance_cycle',
+  'full_exam',
+  '3d_lab_full',
+  'ai_assistant_unlimited',
+  'paywall_enabled',
+  'storm_mode_enabled',
+  'full_exam_enabled',
+  'endurance_mode_enabled',
+  'custom_session_enabled',
+  'subject_mode_enabled',
+  'focus_review_enabled',
+  'chill_mode_enabled',
+  'ai_tutor_enabled',
+  'calibration_enabled',
+  'developer_portal',
+  'dev_toolbar',
+  'dev_override_write',
+  'admin_cms',
+  'ceo_portal',
+  'srs_review',
+])
 const LEGACY_REVIEW_STATUSES = ['review', 'pending_review']
 const REQUIRED_MIGRATION = 'supabase/migrations/20260430110000_fix_feature_flag_read_grants.sql'
 
@@ -128,6 +157,18 @@ async function main() {
         : `${nonCanonicalTierFlags.length} rows contain non-canonical tiers: ${nonCanonicalTierFlags
           .map((row) => `${row.key} [${row.tiers.join(', ')}]`)
           .join('; ')}`,
+    })
+
+    const unknownFeatureKeys = (featureFlags ?? [])
+      .map((row) => row.key ?? '<unknown>')
+      .filter((key) => !CANONICAL_FEATURE_KEYS.has(key))
+
+    addResult(results, {
+      name: 'feature_flags.key canonical',
+      status: unknownFeatureKeys.length === 0 ? 'pass' : 'fail',
+      summary: unknownFeatureKeys.length === 0
+        ? 'All feature flag keys match the application entitlement vocabulary.'
+        : `${unknownFeatureKeys.length} unknown feature flag key(s): ${unknownFeatureKeys.join(', ')}`,
     })
   }
 
