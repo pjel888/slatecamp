@@ -17,6 +17,8 @@ export interface ThreeDLabCameraControlConfig {
   resetPreset?: CameraSelectionPreset
   minDistance?: number
   maxDistance?: number
+  minZoom?: number
+  maxZoom?: number
   minPanTargetDistance?: number
   minPolarAngle?: number
   maxPolarAngle?: number

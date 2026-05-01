@@ -62,6 +62,8 @@ export interface SceneConfigProps {
 }
 
 const DEFAULT_MIN_PAN_TARGET_DISTANCE = 8
+const MIN_ORTHOGRAPHIC_ZOOM = 0.05
+const MAX_ORTHOGRAPHIC_ZOOM = 500
 
 type CameraDiagnosticsSnapshot = {
   ready: true
@@ -622,12 +624,12 @@ export const SceneConfig = ({
       <OrbitControls
         key={useOrthographicCamera ? 'orthographic-controls' : 'perspective-controls'}
         makeDefault
-        minDistance={controlConfig.minDistance ?? minDistance}
-        maxDistance={controlConfig.maxDistance ?? maxDistance}
+        minDistance={useOrthographicCamera ? undefined : controlConfig.minDistance ?? minDistance}
+        maxDistance={useOrthographicCamera ? undefined : controlConfig.maxDistance ?? maxDistance}
         minPolarAngle={controlConfig.minPolarAngle ?? minPolarAngle}
         maxPolarAngle={controlConfig.maxPolarAngle ?? maxPolarAngle}
-        minZoom={0.01}
-        maxZoom={Infinity}
+        minZoom={useOrthographicCamera ? controlConfig.minZoom ?? MIN_ORTHOGRAPHIC_ZOOM : undefined}
+        maxZoom={useOrthographicCamera ? controlConfig.maxZoom ?? MAX_ORTHOGRAPHIC_ZOOM : undefined}
         enableDamping={true}
         dampingFactor={0.08}
         enableRotate={true}

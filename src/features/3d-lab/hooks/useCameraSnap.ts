@@ -4,7 +4,7 @@
 // Subscribes to cameraCommandPreset in useViewportShellStore.
 // When the command changes, animates OrbitControls camera to target position.
 
-import { useEffect, useRef } from 'react'
+import { useCallback, useEffect, useRef } from 'react'
 import { useThree, useFrame } from '@react-three/fiber'
 import { useViewportShellStore } from '@/features/3d-lab/stores/useViewportShellStore'
 import {
@@ -14,6 +14,14 @@ import {
   normalizeCameraCommandPreset,
   type CameraSelectionPreset,
 } from '@/features/3d-lab/utils/camera-presets'
+import {
+  applyOrthographicClippingPlanesForBounds,
+  computeOrthographicZoomForBounds as computeFittedOrthographicZoom,
+  computeOrthographicGroundFootprint,
+  expandBoundsByGroundFootprint,
+  expandCameraClipBoundsByObject,
+  shouldIncludeObjectInCameraFit,
+} from '@/features/3d-lab/utils/isometric-camera-fit'
 import type { ThreeDLabCameraPreset } from '@/features/3d-lab/components/controls/ThreeDLabControlsProvider'
 import * as THREE from 'three'
 
@@ -41,6 +49,9 @@ const CAMERA_FIT_MARGIN = 1.25
 const MIN_FIT_RADIUS = 0.5
 const MAX_ORTHOGRAPHIC_ZOOM = 500
 const MIN_ORTHOGRAPHIC_ZOOM = 0.05
+const MIN_GRID_CLIP_RADIUS = 160
+const MAX_GRID_CLIP_RADIUS = 1200
+const GRID_CLIP_PADDING = 1.4
 const FITTED_VIEW_PRESETS = new Set<CameraSelectionPreset>([
   'front',
   'top',
@@ -131,18 +142,7 @@ const setOrbitTarget = (controls: unknown, target: THREE.Vector3) => {
 const getCameraProjection = (camera: THREE.Camera): 'perspective' | 'orthographic' =>
   camera instanceof THREE.OrthographicCamera ? 'orthographic' : 'perspective'
 
-const shouldSkipCameraFitObject = (object: THREE.Object3D) => {
-  if (!object.visible) return true
-  if (object instanceof THREE.Camera || object instanceof THREE.Light) return true
-
-  let current: THREE.Object3D | null = object
-  while (current) {
-    if (current.userData?.slatecampCameraFitExclude) return true
-    current = current.parent
-  }
-
-  return false
-}
+const shouldSkipCameraFitObject = (object: THREE.Object3D) => !shouldIncludeObjectInCameraFit(object)
 
 const expandBoundsByVisibleGeometry = (
   scene: THREE.Scene,
@@ -164,11 +164,24 @@ const expandBoundsByVisibleGeometry = (
     const size = objectBounds.getSize(new THREE.Vector3())
     const largestDimension = Math.max(size.x, size.y, size.z)
 
-    // Scene chrome such as infinite grids, ground planes, gizmos, and accidental
-    // helper planes should not push zoom-extents miles away from the lesson model.
-    if (!Number.isFinite(largestDimension) || largestDimension <= 0 || largestDimension > 250) return
+    if (!Number.isFinite(largestDimension) || largestDimension <= 0) return
 
     bounds.union(objectBounds)
+  })
+
+  return !bounds.isEmpty()
+}
+
+const expandClipBoundsByVisibleGeometry = (
+  scene: THREE.Scene,
+  bounds: THREE.Box3,
+  objectBounds: THREE.Box3,
+) => {
+  bounds.makeEmpty()
+
+  scene.updateMatrixWorld(true)
+  scene.traverse((object) => {
+    expandCameraClipBoundsByObject(object, bounds, objectBounds)
   })
 
   return !bounds.isEmpty()
@@ -183,6 +196,28 @@ const syncCameraClip = (camera: THREE.Camera, radius: number, distance: number) 
     camera.far = Math.max(5000, safeDistance + safeRadius * 20)
     camera.updateProjectionMatrix()
   }
+}
+
+const syncOrthographicCameraClipToBounds = ({
+  camera,
+  bounds,
+  position,
+  target,
+  ensureBoundsInFront = false,
+}: {
+  camera: THREE.OrthographicCamera
+  bounds: THREE.Box3
+  position?: THREE.Vector3
+  target?: THREE.Vector3
+  ensureBoundsInFront?: boolean
+}) => {
+  applyOrthographicClippingPlanesForBounds({
+    camera,
+    bounds,
+    position,
+    target,
+    ensureBoundsInFront,
+  })
 }
 
 const syncCameraLens = (camera: THREE.Camera, target: ThreeDLabCameraPreset) => {
@@ -361,52 +396,6 @@ const applyProjectionTransitionFrame = ({
   return false
 }
 
-const computeOrthographicZoomForBounds = ({
-  camera,
-  bounds,
-  position,
-  target,
-}: {
-  camera: THREE.OrthographicCamera
-  bounds: THREE.Box3
-  position: THREE.Vector3
-  target: THREE.Vector3
-}) => {
-  const viewMatrix = new THREE.Matrix4()
-    .lookAt(position, target, camera.up)
-    .setPosition(position)
-    .invert()
-
-  let minX = Infinity
-  let maxX = -Infinity
-  let minY = Infinity
-  let maxY = -Infinity
-  const corner = new THREE.Vector3()
-
-  for (const x of [bounds.min.x, bounds.max.x]) {
-    for (const y of [bounds.min.y, bounds.max.y]) {
-      for (const z of [bounds.min.z, bounds.max.z]) {
-        corner.set(x, y, z).applyMatrix4(viewMatrix)
-        minX = Math.min(minX, corner.x)
-        maxX = Math.max(maxX, corner.x)
-        minY = Math.min(minY, corner.y)
-        maxY = Math.max(maxY, corner.y)
-      }
-    }
-  }
-
-  const width = Math.max(maxX - minX, MIN_FIT_RADIUS) * CAMERA_FIT_MARGIN
-  const height = Math.max(maxY - minY, MIN_FIT_RADIUS) * CAMERA_FIT_MARGIN
-  const frustumWidth = Math.max(0.01, camera.right - camera.left)
-  const frustumHeight = Math.max(0.01, camera.top - camera.bottom)
-
-  return clamp(
-    Math.min(frustumWidth / width, frustumHeight / height),
-    MIN_ORTHOGRAPHIC_ZOOM,
-    MAX_ORTHOGRAPHIC_ZOOM,
-  )
-}
-
 const resolveScenePresetTarget = ({
   presetKey,
   configuredTarget,
@@ -438,8 +427,9 @@ const resolveScenePresetTarget = ({
     ? (controls as { target: THREE.Vector3 }).target
     : null
   const configuredCenter = new THREE.Vector3().fromArray(configuredTarget.target)
-  const center = controlTarget?.clone()
-    ?? (hasVisibleBounds && isFiniteVector(sphere.center) ? sphere.center.clone() : configuredCenter)
+  const center = hasVisibleBounds && isFiniteVector(sphere.center)
+    ? sphere.center.clone()
+    : controlTarget?.clone() ?? configuredCenter
   const radius = hasVisibleBounds && isFiniteVector(sphere.center)
     ? Math.max(MIN_FIT_RADIUS, sphere.radius)
     : MIN_FIT_RADIUS
@@ -464,13 +454,25 @@ const resolveScenePresetTarget = ({
     .fromArray(configuredTarget.position)
     .distanceTo(new THREE.Vector3().fromArray(configuredTarget.target))
   const currentDistance = camera.position.distanceTo(center)
-  const distance = Number.isFinite(currentDistance) && currentDistance > 0.01
-    ? currentDistance
-    : Math.max(configuredDistance, radius * 4)
+  const distance = Math.max(
+    Number.isFinite(currentDistance) && currentDistance > 0.01 ? currentDistance : 0,
+    configuredDistance,
+    radius * 4,
+  )
   const position = center.clone().addScaledVector(direction, distance)
-  syncCameraClip(camera, radius, distance)
 
   if (camera instanceof THREE.OrthographicCamera) {
+    if (hasVisibleBounds) {
+      syncOrthographicCameraClipToBounds({
+        camera,
+        bounds,
+        position,
+        target: center,
+      })
+    } else {
+      syncCameraClip(camera, radius, distance)
+    }
+
     return {
       position: position.toArray() as [number, number, number],
       target: center.toArray() as [number, number, number],
@@ -479,6 +481,8 @@ const resolveScenePresetTarget = ({
   }
 
   if (camera instanceof THREE.PerspectiveCamera) {
+    syncCameraClip(camera, radius, distance)
+
     return {
       position: position.toArray() as [number, number, number],
       target: center.toArray() as [number, number, number],
@@ -549,13 +553,19 @@ const resolveSceneZoomToFitTarget = ({
   if (camera instanceof THREE.OrthographicCamera) {
     const distance = Math.max(camera.position.distanceTo(center), radius * 4)
     const position = center.clone().addScaledVector(direction, distance)
-    const zoom = computeOrthographicZoomForBounds({
+    const zoom = clamp(computeFittedOrthographicZoom({
+      camera,
+      bounds,
+      position,
+      target: center,
+      padding: CAMERA_FIT_MARGIN,
+    }), MIN_ORTHOGRAPHIC_ZOOM, MAX_ORTHOGRAPHIC_ZOOM)
+    syncOrthographicCameraClipToBounds({
       camera,
       bounds,
       position,
       target: center,
     })
-    syncCameraClip(camera, radius, distance)
 
     return {
       position: position.toArray() as [number, number, number],
@@ -588,6 +598,8 @@ export const useCameraSnap = () => {
   const zoomDirectionRef = useRef(new THREE.Vector3())
   const fitBoundsRef = useRef(new THREE.Box3())
   const fitObjectBoundsRef = useRef(new THREE.Box3())
+  const clipBoundsRef = useRef(new THREE.Box3())
+  const clipObjectBoundsRef = useRef(new THREE.Box3())
   const fitSphereRef = useRef(new THREE.Sphere())
   const fitDirectionRef = useRef(new THREE.Vector3())
   const prevCommandIdRef = useRef<number | null>(null)
@@ -595,6 +607,27 @@ export const useCameraSnap = () => {
   const lastCameraFrameRef = useRef<CameraFrame | null>(null)
   const fitRetryRef = useRef<ReturnType<typeof setTimeout> | null>(null)
   const fitRetryAttemptRef = useRef(0)
+
+  const syncOrthographicClipToVisibleScene = useCallback(() => {
+    if (!(camera instanceof THREE.OrthographicCamera)) return false
+    if (!expandClipBoundsByVisibleGeometry(scene, clipBoundsRef.current, clipObjectBoundsRef.current)) return false
+
+    expandBoundsByGroundFootprint(
+      clipBoundsRef.current,
+      computeOrthographicGroundFootprint({
+        camera,
+        padding: GRID_CLIP_PADDING,
+        minRadius: MIN_GRID_CLIP_RADIUS,
+        maxRadius: MAX_GRID_CLIP_RADIUS,
+      }),
+    )
+    syncOrthographicCameraClipToBounds({
+      camera,
+      bounds: clipBoundsRef.current,
+      ensureBoundsInFront: true,
+    })
+    return true
+  }, [camera, scene])
 
   // Drive animation via useFrame - works with demand frameloop
   useFrame(() => {
@@ -612,6 +645,7 @@ export const useCameraSnap = () => {
 
     const anim = animRef.current
     if (!anim.active) {
+      syncOrthographicClipToVisibleScene()
       writeLastCameraFrame()
       return
     }
@@ -644,8 +678,28 @@ export const useCameraSnap = () => {
     } else {
       invalidate()
     }
+    syncOrthographicClipToVisibleScene()
     writeLastCameraFrame()
   })
+
+  useEffect(() => {
+    if (!controls || typeof controls !== 'object' || !('addEventListener' in controls)) return
+
+    const controlEvents = controls as {
+      addEventListener: (type: 'change', listener: () => void) => void
+      removeEventListener: (type: 'change', listener: () => void) => void
+    }
+    const handleChange = () => {
+      if (syncOrthographicClipToVisibleScene()) invalidate()
+    }
+
+    controlEvents.addEventListener('change', handleChange)
+    handleChange()
+
+    return () => {
+      controlEvents.removeEventListener('change', handleChange)
+    }
+  }, [controls, invalidate, syncOrthographicClipToVisibleScene])
 
   useEffect(() => {
     const clearFitRetry = () => {
@@ -688,6 +742,7 @@ export const useCameraSnap = () => {
       if (camera instanceof THREE.OrthographicCamera) {
         camera.zoom = clamp(camera.zoom * zoomFactor, MIN_ORTHOGRAPHIC_ZOOM, MAX_ORTHOGRAPHIC_ZOOM)
         camera.updateProjectionMatrix()
+        syncOrthographicClipToVisibleScene()
       } else if (camera instanceof THREE.PerspectiveCamera) {
         const orbitTarget = controls && typeof controls === 'object' && 'target' in controls
           ? (controls as { target: THREE.Vector3 }).target
@@ -825,6 +880,7 @@ export const useCameraSnap = () => {
             orbitControls.target.set(...target.target)
             orbitControls.update()
           }
+          syncOrthographicClipToVisibleScene()
           invalidate()
           return
         }
@@ -892,6 +948,7 @@ export const useCameraSnap = () => {
           orbitControls.target.set(...target.target)
           orbitControls.update()
         }
+        syncOrthographicClipToVisibleScene()
         invalidate()
         return
       }
@@ -925,5 +982,5 @@ export const useCameraSnap = () => {
       clearFitRetry()
       unsubscribe()
     }
-  }, [camera, controls, scene, viewportSize, getThree, invalidate])
+  }, [camera, controls, scene, viewportSize, getThree, invalidate, syncOrthographicClipToVisibleScene])
 }
