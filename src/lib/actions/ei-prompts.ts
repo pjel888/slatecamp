@@ -1,6 +1,6 @@
 'use server'
 
-import { createClient } from '@/lib/supabase/server'
+import { createClient, getUser } from '@/lib/supabase/server'
 
 export type EIPrompt = {
   prompt_id: string
@@ -47,7 +47,7 @@ export const getUserEIResponsesForArticle = async (
   articleId: string
 ): Promise<EIResponseMap> => {
   const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
+  const { data: { user } } = await getUser()
   if (!user) return {}
 
   const { data } = await supabase

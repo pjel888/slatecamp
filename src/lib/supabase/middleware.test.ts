@@ -1,26 +1,42 @@
 import { afterAll, beforeEach, describe, expect, mock, test } from 'bun:test'
 
-const getUserMock = mock(() => {
+const getUserMock = mock(async (): Promise<any> => {
   throw new Error('auth unavailable')
 })
 
+let capturedCookieHandlers:
+  | {
+      setAll: (
+        cookies: Array<{
+          name: string
+          value: string
+          options?: Record<string, unknown>
+        }>,
+      ) => void
+    }
+  | null = null
+
 const cookieBag = () => {
-  const store: { name: string; value: string }[] = []
+  const store: { name: string; value: string; options?: unknown }[] = []
 
   return {
-    set: (name: string, value: string) => {
-      store.push({ name, value })
+    set: (name: string, value: string, options?: unknown) => {
+      store.push({ name, value, options })
     },
     getAll: () => store,
   }
 }
 
 mock.module('@supabase/ssr', () => ({
-  createServerClient: () => ({
-    auth: {
-      getUser: getUserMock,
-    },
-  }),
+  createBrowserClient: () => ({}),
+  createServerClient: (_url: string, _key: string, options: any) => {
+    capturedCookieHandlers = options.cookies
+    return {
+      auth: {
+        getUser: getUserMock,
+      },
+    }
+  },
 }))
 
 const originalDemoConfig = { ...(await import('@/lib/demo/config')) }
@@ -76,6 +92,10 @@ const { updateSession } = await import('./middleware')
 describe('supabase/middleware', () => {
   beforeEach(() => {
     getUserMock.mockClear()
+    getUserMock.mockImplementation(async (): Promise<any> => {
+      throw new Error('auth unavailable')
+    })
+    capturedCookieHandlers = null
   })
 
   afterAll(() => {
@@ -143,5 +163,49 @@ describe('supabase/middleware', () => {
     expect(response.status).toBe(307)
     expect(response.url).toContain('/admin/login')
     expect(response.url).toContain('next=%2Fadmin')
+  })
+
+  test('propagates refreshed auth cookies to the same request and response', async () => {
+    const originalForceUser = process.env.DEV_FORCE_USER_ID
+    delete process.env.DEV_FORCE_USER_ID
+    const requestCookieSet = mock(() => {})
+
+    getUserMock.mockImplementation(async () => {
+      capturedCookieHandlers?.setAll([
+        {
+          name: 'sb-test-auth-token',
+          value: 'fresh-token',
+          options: { path: '/', httpOnly: true },
+        },
+      ])
+      return { data: { user: null }, error: null }
+    })
+
+    const request = {
+      method: 'GET',
+      nextUrl: {
+        pathname: '/login',
+        hostname: 'localhost',
+      },
+      url: 'http://localhost/login',
+      cookies: {
+        getAll: () => [{ name: 'sb-test-auth-token', value: 'old-token' }],
+        set: requestCookieSet,
+      },
+    } as any
+
+    const response = await updateSession(request)
+
+    if (originalForceUser) {
+      process.env.DEV_FORCE_USER_ID = originalForceUser
+    }
+
+    expect(requestCookieSet).toHaveBeenCalledWith('sb-test-auth-token', 'fresh-token')
+    expect(response.cookies.getAll()).toContainEqual(
+      expect.objectContaining({
+        name: 'sb-test-auth-token',
+        value: 'fresh-token',
+      }),
+    )
   })
 })

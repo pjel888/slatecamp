@@ -1,6 +1,7 @@
 import { createServerClient } from '@supabase/ssr'
 import { createClient as createSupabaseClient } from '@supabase/supabase-js'
 import { cookies, headers } from 'next/headers'
+import { cache } from 'react'
 import { isDemoMode } from '@/lib/demo/config'
 import { createMockSupabaseClient } from '@/lib/demo/mock-supabase'
 
@@ -82,7 +83,7 @@ export async function hasAuthCookie() {
   })
 }
 
-export const getUserIfPresent = async () => {
+const resolveUserIfPresent = async () => {
   if (isDemoMode()) {
     const { getDemoUser } = await import('@/lib/demo/config')
     return {
@@ -130,6 +131,8 @@ export const getUserIfPresent = async () => {
   const supabase = await createClient()
   return await supabase.auth.getUser()
 }
+
+export const getUserIfPresent = cache(resolveUserIfPresent)
 
 export const getUser = async () => {
   return getUserIfPresent()

@@ -14,6 +14,7 @@ import { logEntitlementAuditEvent } from "@/lib/entitlements/audit";
 import { logEdgeError } from "@/lib/logging/edge";
 
 const ADMIN_PATH_PERMISSIONS: Array<[RegExp, AdminPermission]> = [
+  [/^\/admin\/ai-audit(?:\/|$)/, 'admin.content.view'],
   [/^\/admin\/audit(?:\/|$)/, 'admin.audit.view'],
   [/^\/admin\/activity(?:\/|$)/, 'admin.activity.view'],
   [/^\/admin\/pipeline(?:\/|$)/, 'admin.pipeline.manage'],
@@ -139,9 +140,10 @@ export const updateSession = async (request: NextRequest) => {
       cookies: {
         getAll() { return request.cookies.getAll(); },
         setAll(cookiesToSet) {
-          cookiesToSet.forEach(({ name, value, options }) =>
+          cookiesToSet.forEach(({ name, value, options }) => {
+            request.cookies.set(name, value)
             response.cookies.set(name, value, options)
-          );
+          });
         },
       },
     }

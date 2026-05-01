@@ -18,6 +18,7 @@ const CHECKOUT_TIERS = ["pro", "prime", "institutional"] as const;
 type CheckoutTier = (typeof CHECKOUT_TIERS)[number]
 const isCheckoutTier = (value: unknown): value is CheckoutTier =>
   typeof value === "string" && CHECKOUT_TIERS.includes(value as CheckoutTier)
+const DASHBOARD_SETTINGS_PATH = ROUTES.dashboard?.settings ?? '/dashboard/settings'
 
 export async function POST(request: Request) {
   if (!isPaymentEnabled()) {
@@ -30,7 +31,7 @@ export async function POST(request: Request) {
   if (isDemoMode()) {
     const origin = request.headers.get("origin") ?? "http://localhost:3000";
     return NextResponse.json({
-      url: `${origin}${ROUTES.dashboard.settings}?success=true`,
+      url: `${origin}${DASHBOARD_SETTINGS_PATH}?success=true`,
       id: "demo-checkout",
       provider: "demo",
     });
@@ -65,8 +66,8 @@ export async function POST(request: Request) {
       userId: user.id,
       email: user.email!,
       tier,
-      successUrl: `${origin}${ROUTES.dashboard.settings}?success=true`,
-      cancelUrl: `${origin}${ROUTES.dashboard.settings}?cancelled=true`,
+      successUrl: `${origin}${DASHBOARD_SETTINGS_PATH}?success=true`,
+      cancelUrl: `${origin}${DASHBOARD_SETTINGS_PATH}?cancelled=true`,
     });
 
     logEntitlementAuditEvent({
