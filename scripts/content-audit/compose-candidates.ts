@@ -5,20 +5,27 @@ import { readFile } from 'node:fs/promises'
 import {
   ArticleMetadata,
   UiBlocksFile,
+  buildComposeErrorFile,
   composeCandidate,
+  createExportId,
   discoverArticleDirs,
+  nowIso,
   parseArgs,
   resolveExportRoot,
   updateArticleSyncState,
   writeJson,
+  writeRunLog,
   writeText,
 } from './lib'
 
 async function main() {
   const options = parseArgs()
   const root = resolveExportRoot(options.input)
+  const runId = createExportId()
+  const startedAt = nowIso()
   const articleDirs = discoverArticleDirs(root, options)
   let processed = 0
+  let errorCount = 0
 
   for (const articleDir of articleDirs) {
     try {
@@ -38,24 +45,52 @@ async function main() {
       const uiBlocks = JSON.parse(await readFile(uiBlocksPath, 'utf-8')) as UiBlocksFile
       const metadata = JSON.parse(await readFile(metadataPath, 'utf-8')) as ArticleMetadata
       const { candidate, report } = composeCandidate({ normalized, uiBlocks, original })
-      metadata.candidate_content_hash = report.candidate_hash
-      if (report.blockers.length && options.strict) throw new Error(report.blockers.join('; '))
       if (!options.dryRun) {
-        await writeText(candidatePath, candidate)
         await writeJson(path.join(articleDir, 'compose-report.json'), report)
-        await writeJson(metadataPath, metadata)
-        await updateArticleSyncState(root, articleDir, metadata, {
-          candidate_hash: report.candidate_hash,
-          sync_status: report.safe_to_diff ? 'candidate_ready' : 'error',
-        })
+        if (report.blockers.length > 0) {
+          await writeJson(path.join(articleDir, 'compose-error.json'), buildComposeErrorFile({ articleId: uiBlocks.article_id, slug: uiBlocks.slug, report }))
+        } else {
+          metadata.candidate_content_hash = report.candidate_hash
+          await writeText(candidatePath, candidate)
+          await writeJson(metadataPath, metadata)
+          await updateArticleSyncState(root, articleDir, metadata, {
+            candidate_hash: report.candidate_hash,
+            sync_status: 'candidate_ready',
+          })
+        }
       }
+      if (report.blockers.length && options.strict) throw new Error(report.blockers.join('; '))
       processed += 1
       console.log(`${options.dryRun ? 'DRY' : '✓'} compose ${uiBlocks.article_id}: ${report.candidate_matches_original ? 'matches original' : 'changed'}; blockers=${report.blockers.length}`)
     } catch (error) {
       const message = error instanceof Error ? error.message : String(error)
+      errorCount += 1
+      if (!options.dryRun) {
+        try {
+          const metadataPath = path.join(articleDir, 'article-metadata.json')
+          const metadata = existsSync(metadataPath) ? JSON.parse(await readFile(metadataPath, 'utf-8')) as ArticleMetadata : null
+          await writeJson(path.join(articleDir, 'compose-error.json'), buildComposeErrorFile({
+            articleId: metadata?.article_id ?? null,
+            slug: metadata?.slug ?? null,
+            error,
+          }))
+        } catch {
+          // Best-effort sidecar; keep the original compose error visible.
+        }
+      }
       console.error(`✗ compose ${articleDir}: ${message}`)
       if (options.strict) throw error
     }
+  }
+  if (!options.dryRun) {
+    await writeRunLog(root, runId, {
+      command: 'content-audit:compose',
+      started_at: startedAt,
+      completed_at: nowIso(),
+      processed,
+      error_count: errorCount,
+      status: errorCount > 0 ? 'completed_with_errors' : 'completed',
+    })
   }
   console.log(`Composed ${processed} candidate(s)`)
 }

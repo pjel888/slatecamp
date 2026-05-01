@@ -11,6 +11,7 @@ import {
   scanComponentInventory,
   updateSyncStateRoot,
   writeJson,
+  writeRunLog,
   writeText,
 } from './lib'
 
@@ -42,6 +43,13 @@ async function main() {
     await writeText(path.join(inventoryRoot, 'component-fit-notes.md'), makeFitNotes(inventory))
     await writePerArticleComponentUsage(exportRoot, inventory.article_usage)
     await updateSyncStateRoot(exportRoot, { last_component_inventory_run_id: inventoryRunId })
+    await writeRunLog(exportRoot, inventoryRunId, {
+      command: 'content-audit:inventory',
+      component_count: inventory.components.length,
+      article_usage_count: inventory.article_usage.article_count,
+      warning_count: inventory.audit_report.warnings.length,
+      status: 'completed',
+    })
   }
 
   console.log(JSON.stringify(inventory.audit_report, null, 2))

@@ -6,8 +6,12 @@ import {
   ArticleMetadata,
   DiffReport,
   UiBlocksFile,
+  assertBulkApplyConfirmation,
+  buildComposeErrorFile,
+  buildDiffMarkdown,
   composeCandidate,
   createContentAuditSupabaseClient,
+  createExportId,
   diffCandidate,
   discoverArticleDirs,
   evaluatePushSafety,
@@ -18,18 +22,25 @@ import {
   updateArticleSyncState,
   updateArticleContentIfUnchanged,
   writeJson,
+  writeRunLog,
   writeText,
 } from './lib'
 
 async function main() {
   const options = parseArgs()
+  assertBulkApplyConfirmation(options)
   const root = resolveExportRoot(options.input)
+  const runId = createExportId()
+  const startedAt = nowIso()
   if (!options.articleId && !options.slug && !options.allSafe) {
     throw new Error('Push requires --article-id, --slug, or --all-safe. Dry-run is still default.')
   }
   const articleDirs = discoverArticleDirs(root, options)
   const supabase = createContentAuditSupabaseClient()
   const dryRun = options.dryRun === true || options.apply !== true
+  let processed = 0
+  let pushed = 0
+  let errorCount = 0
 
   for (const articleDir of articleDirs) {
     const attemptedAt = nowIso()
@@ -135,19 +146,34 @@ async function main() {
       if (dryRun) syncPatch.last_push_dry_run_at = attemptedAt
       if (report.pushed) syncPatch.last_push_applied_at = attemptedAt
       await updateArticleSyncState(root, articleDir, metadata, syncPatch)
-      await writeJson(path.join(articleDir, 'push-report.json'), report)
+      await writePushReports(articleDir, report)
       if (report.blockers.some((blocker: string) => blocker.includes('stale') || blocker.includes('Remote Supabase content differs'))) {
         await writeJson(path.join(articleDir, 'conflict-report.json'), report)
       }
+      processed += 1
+      if (report.pushed) pushed += 1
       console.log(`${report.pushed ? '✓ pushed' : '✓ push dry/safe-check'} ${metadata.article_id}: blockers=${report.blockers.length}`)
     } catch (error) {
       const message = error instanceof Error ? error.message : String(error)
+      errorCount += 1
       report.blockers.push(message)
-      await writeJson(path.join(articleDir, 'push-report.json'), report)
+      await writePushReports(articleDir, report)
       console.error(`✗ push ${articleDir}: ${message}`)
       if (options.strict) throw error
     }
   }
+  await writeRunLog(root, runId, {
+    command: 'content-audit:push',
+    started_at: startedAt,
+    completed_at: nowIso(),
+    dry_run: dryRun,
+    apply: options.apply === true,
+    all_safe: options.allSafe === true,
+    processed,
+    pushed,
+    error_count: errorCount,
+    status: errorCount > 0 ? 'completed_with_errors' : 'completed',
+  })
 }
 
 main().catch((error) => {
@@ -183,9 +209,17 @@ async function prepareCandidateAndDiff({
     if (!uiBlocks) throw new Error('candidate.md missing/stale and ui-blocks.json is unavailable for auto-compose.')
     const normalized = await readFile(normalizedPath, 'utf-8')
     const composed = composeCandidate({ normalized, uiBlocks, original })
+    await writeJson(path.join(articleDir, 'compose-report.json'), composed.report)
+    if (composed.report.blockers.length > 0) {
+      await writeJson(path.join(articleDir, 'compose-error.json'), buildComposeErrorFile({
+        articleId: metadata.article_id,
+        slug: metadata.slug,
+        report: composed.report,
+      }))
+      throw new Error(`Auto-compose failed: ${composed.report.blockers.join('; ')}`)
+    }
     candidate = composed.candidate
     await writeText(candidatePath, candidate)
-    await writeJson(path.join(articleDir, 'compose-report.json'), composed.report)
     metadata.candidate_content_hash = composed.report.candidate_hash
     await writeJson(path.join(articleDir, 'article-metadata.json'), metadata)
     actions.push('auto_composed_candidate')
@@ -201,10 +235,16 @@ async function prepareCandidateAndDiff({
     const normalized = existsSync(normalizedPath) ? await readFile(normalizedPath, 'utf-8') : null
     diffReport = diffCandidate({ metadata, original, normalized, candidate, uiBlocks })
     await writeJson(diffPath, diffReport)
+    await writeText(path.join(articleDir, 'diff-report.md'), buildDiffMarkdown(diffReport))
     actions.push('auto_generated_diff')
   }
 
   return { candidate, diffReport, actions }
+}
+
+async function writePushReports(articleDir: string, report: unknown) {
+  await writeJson(path.join(articleDir, 'push-report.json'), report)
+  await writeJson(path.join(articleDir, 'push-result.json'), report)
 }
 
 function isFileStale(targetPath: string, sourcePaths: string[]) {

@@ -8,6 +8,8 @@ import type { Database } from '../../src/types/supabase'
 export const EXPORT_VERSION = 'content-roundtrip-v1'
 export const PARSER_VERSION = 'ui-block-parser-v1'
 export const DEFAULT_OUTPUT_ROOT = '.ai/content-audit-export'
+export const HASH_ALGORITHM = 'sha256' as const
+export const BULK_APPLY_CONFIRMATION = 'APPLY ALL SAFE CONTENT AUDIT PUSHES'
 const UI_PLACEHOLDER_OPEN = '[SLATECAMP_UI_BLOCK:'
 const UI_PLACEHOLDER_CLOSE = '[/SLATECAMP_UI_BLOCK]'
 
@@ -19,6 +21,7 @@ export interface CliOptions {
   limit?: number
   articleId?: string
   slug?: string
+  changedOnly?: boolean
   input?: string
   output?: string
   dryRun?: boolean
@@ -32,6 +35,7 @@ export interface CliOptions {
   apply?: boolean
   force?: boolean
   allSafe?: boolean
+  confirm?: string
   reviewerId?: string
   note?: string
   command?: string
@@ -58,6 +62,9 @@ export interface ArticleMetadata {
   normalized_content_hash: string | null
   candidate_content_hash: string | null
   ui_blocks_hash: string | null
+  linked_questions_hash?: string | null
+  sources_hash?: string | null
+  hash_algorithm?: typeof HASH_ALGORITHM
   exported_at: string
   export_run_id: string
   export_version: string
@@ -72,13 +79,14 @@ export interface ArticleMetadata {
 
 export interface UiBlock {
   block_id: string
-  block_type: 'mdx_component' | 'raw_html' | 'shortcode' | 'container_directive' | 'unknown_custom_block'
+  block_type: 'mdx_component' | 'raw_html' | 'shortcode' | 'container_directive' | 'fenced_custom_block' | 'unknown_custom_block'
   component_name: string | null
   raw: string
   raw_hash: string
   placeholder: string
   placeholder_hash: string
   props?: JsonObject | null
+  props_json?: JsonObject | null
   props_text?: string | null
   children_raw?: string | null
   children_text?: string | null
@@ -300,6 +308,7 @@ function normalizeAliases(options: CliOptions) {
   if (raw.article && !options.articleId) options.articleId = String(raw.article)
   if (raw.article_id && !options.articleId) options.articleId = String(raw.article_id)
   if (raw.all_safe && !options.allSafe) options.allSafe = Boolean(raw.all_safe)
+  if (raw.changed_only && !options.changedOnly) options.changedOnly = Boolean(raw.changed_only)
   options.includeQuestions ??= true
   options.includeSources ??= true
   options.includeTaxonomy ??= true
@@ -453,6 +462,24 @@ export async function updateArticleSyncState(
   await writeSyncState(root, state)
 }
 
+export interface ChangedArticleDecisionInput {
+  currentContent: string
+  currentUpdatedAt?: string | null
+  existingMetadata?: Partial<Pick<ArticleMetadata, 'original_content_hash' | 'content_hash' | 'updated_at'>> | null
+  existingOriginal?: string | null
+}
+
+export function shouldExportChangedArticle({
+  currentContent,
+  existingMetadata,
+  existingOriginal,
+}: ChangedArticleDecisionInput) {
+  if (!existingMetadata && existingOriginal == null) return true
+  const currentHash = sha256(currentContent)
+  const existingHash = existingMetadata?.original_content_hash ?? existingMetadata?.content_hash ?? (existingOriginal != null ? sha256(existingOriginal) : null)
+  return existingHash !== currentHash
+}
+
 export function discoverArticleDirs(root: string, filters: Pick<CliOptions, 'articleId' | 'slug'> = {}) {
   const articlesRoot = path.join(root, 'articles')
   if (!existsSync(articlesRoot)) return []
@@ -477,28 +504,52 @@ export function lineNumberAt(content: string, offset: number) {
   return content.slice(0, offset).split('\n').length
 }
 
-function codeFenceRanges(content: string) {
-  const ranges: Array<{ start: number; end: number }> = []
-  const lineRegex = /^(```|~~~)/gm
+interface CodeFenceRange {
+  start: number
+  end: number
+  fence: string
+  info: string
+  bodyStart: number
+  bodyEnd: number
+}
+
+function codeFenceRanges(content: string): CodeFenceRange[] {
+  const ranges: CodeFenceRange[] = []
+  const lineRegex = /^(```|~~~)([^\n]*)\n?/gm
   let openStart: number | null = null
   let openFence: string | null = null
+  let openInfo = ''
+  let bodyStart = 0
   let match: RegExpExecArray | null
 
   while ((match = lineRegex.exec(content)) !== null) {
     if (openStart === null) {
       openStart = match.index
       openFence = match[1]
+      openInfo = match[2]?.trim() ?? ''
+      bodyStart = lineRegex.lastIndex
       continue
     }
     if (match[1] === openFence) {
       const nextNewline = content.indexOf('\n', lineRegex.lastIndex)
-      ranges.push({ start: openStart, end: nextNewline === -1 ? content.length : nextNewline + 1 })
+      ranges.push({
+        start: openStart,
+        end: nextNewline === -1 ? content.length : nextNewline + 1,
+        fence: openFence,
+        info: openInfo,
+        bodyStart,
+        bodyEnd: match.index,
+      })
       openStart = null
       openFence = null
+      openInfo = ''
+      bodyStart = 0
     }
   }
 
-  if (openStart !== null) ranges.push({ start: openStart, end: content.length })
+  if (openStart !== null && openFence !== null) {
+    ranges.push({ start: openStart, end: content.length, fence: openFence, info: openInfo, bodyStart, bodyEnd: content.length })
+  }
   return ranges
 }
 
@@ -528,7 +579,7 @@ export function normalizeArticleContent(original: string, metadata: Pick<Article
 
   ranges.forEach((range, index) => {
     const raw = original.slice(range.start, range.end)
-    const blockId = `block_${String(index + 1).padStart(4, '0')}`
+    const blockId = `ui_${String(index + 1).padStart(4, '0')}`
     const props = parseProps(range.propsText)
     const propsText = range.propsText?.trim() || null
     const propsSummary = props ? summarizeProps(props) : propsText
@@ -557,6 +608,7 @@ export function normalizeArticleContent(original: string, metadata: Pick<Article
       placeholder,
       placeholder_hash: sha256(placeholder),
       props,
+      props_json: props,
       props_text: propsText,
       children_raw: range.childrenRaw,
       children_text: childrenText,
@@ -658,6 +710,7 @@ export function detectUiBlockRanges(content: string): DetectedRange[] {
   const protectedRanges = codeFenceRanges(content)
   const ranges: DetectedRange[] = []
 
+  addFencedCustomBlockRanges(content, protectedRanges, ranges)
   addJsxRanges(content, protectedRanges, ranges)
   addShortcodeRanges(content, protectedRanges, ranges)
   addDirectiveRanges(content, protectedRanges, ranges)
@@ -673,6 +726,36 @@ export function detectUiBlockRanges(content: string): DetectedRange[] {
       acc.push(range)
       return acc
     }, [])
+}
+
+function addFencedCustomBlockRanges(content: string, fencedRanges: CodeFenceRange[], ranges: DetectedRange[]) {
+  for (const fence of fencedRanges) {
+    const info = fence.info.trim()
+    const body = content.slice(fence.bodyStart, fence.bodyEnd)
+    const componentName = inferFencedComponentName(info, body)
+    if (!componentName) continue
+    ranges.push({
+      start: fence.start,
+      end: fence.end,
+      componentName,
+      blockType: 'fenced_custom_block',
+      propsText: info || null,
+      childrenRaw: body,
+      confidence: 'medium',
+      warnings: ['Explicit fenced UI/content block preserved as a single raw block; ordinary code fences remain protected.'],
+    })
+  }
+}
+
+function inferFencedComponentName(info: string, body: string) {
+  const language = info.split(/\s+/)[0]?.toLowerCase() ?? ''
+  if (/^(slatecamp-ui|ui-block|ui-component|component|components|interactive|interactivity|mdx-component)$/.test(language)) {
+    return info.match(/(?:component|name)=["']?([A-Za-z][\w.-]*)/)?.[1] ?? language
+  }
+  if (/^(json|jsonc)$/.test(language) && /"(?:(?:component(?:_name)?)|block_type)"\s*:/.test(body) && /"raw_preserved"\s*:\s*true|"slatecamp_ui"\s*:\s*true/.test(body)) {
+    return body.match(/"component(?:_name)?"\s*:\s*"([^"]+)"/)?.[1] ?? 'json-ui-block'
+  }
+  return null
 }
 
 function addJsxRanges(content: string, protectedRanges: Array<{ start: number; end: number }>, ranges: DetectedRange[]) {
@@ -856,8 +939,32 @@ function escapeAttribute(value: string) {
   return value.replace(/"/g, '&quot;')
 }
 
+export function normalizeUiBlockId(blockId: string) {
+  return blockId.replace(/^block_/, 'ui_')
+}
+
+function legacyUiBlockId(blockId: string) {
+  return blockId.replace(/^ui_/, 'block_')
+}
+
+function uiBlockIdAliases(blockId: string) {
+  const normalized = normalizeUiBlockId(blockId)
+  const legacy = legacyUiBlockId(normalized)
+  return [...new Set([blockId, normalized, legacy])]
+}
+
+export function normalizeUiBlockRecord(block: UiBlock): UiBlock {
+  const props = block.props ?? block.props_json ?? null
+  return {
+    ...block,
+    block_id: normalizeUiBlockId(block.block_id),
+    props,
+    props_json: props,
+  }
+}
+
 export function placeholderRegex() {
-  return /\[SLATECAMP_UI_BLOCK:(block_\d{4})[^\]]*\][\s\S]*?\[\/SLATECAMP_UI_BLOCK\]/g
+  return /\[SLATECAMP_UI_BLOCK:((?:ui|block)_\d{4})[^\]]*\][\s\S]*?\[\/SLATECAMP_UI_BLOCK\]/g
 }
 
 export function findPlaceholders(content: string) {
@@ -879,7 +986,11 @@ export function composeCandidate({
   uiBlocks: UiBlocksFile
   original?: string | null
 }): { candidate: string; report: ComposeReport } {
-  const blocksById = new Map(uiBlocks.blocks.map((block) => [block.block_id, block]))
+  const blocks = uiBlocks.blocks.map(normalizeUiBlockRecord)
+  const blocksById = new Map<string, UiBlock>()
+  for (const block of blocks) {
+    for (const alias of uiBlockIdAliases(block.block_id)) blocksById.set(alias, block)
+  }
   const placeholders = findPlaceholders(normalized)
   const unresolved: string[] = []
   const used = new Set<string>()
@@ -900,7 +1011,7 @@ export function composeCandidate({
   }
   candidate += normalized.slice(cursor)
 
-  const unusedBlocks = uiBlocks.blocks.map((block) => block.block_id).filter((blockId) => !used.has(blockId))
+  const unusedBlocks = blocks.map((block) => block.block_id).filter((blockId) => !used.has(blockId))
   const blockers = [...unresolved.map((blockId) => `Unresolved placeholder ${blockId}`)]
   const warnings = unusedBlocks.map((blockId) => `UI block ${blockId} was not used during composition.`)
   const originalHash = original != null ? sha256(original) : null
@@ -912,12 +1023,12 @@ export function composeCandidate({
     original_hash: originalHash,
     normalized_hash: sha256(normalized),
     candidate_hash: candidateHash,
-    ui_blocks_count: uiBlocks.blocks.length,
+    ui_blocks_count: blocks.length,
     placeholders_found: placeholders.length,
     placeholders_resolved: placeholders.length - unresolved.length,
     unresolved_placeholders: unresolved,
     unused_blocks: unusedBlocks,
-    preserved_blocks_reinserted: uiBlocks.blocks.filter((block) => candidate.includes(block.raw)).length,
+    preserved_blocks_reinserted: blocks.filter((block) => candidate.includes(block.raw)).length,
     candidate_matches_original: originalHash ? candidateHash === originalHash : null,
     safe_to_diff: blockers.length === 0,
     blockers,
@@ -943,7 +1054,7 @@ export function diffCandidate({
   const newHash = sha256(candidate)
   const lineStats = summarizeLineDiff(original, candidate)
   const unresolvedPlaceholders = candidate.includes(UI_PLACEHOLDER_OPEN) ? findPlaceholders(candidate).length || 1 : 0
-  const blocks = uiBlocks?.blocks ?? []
+  const blocks = uiBlocks?.blocks.map(normalizeUiBlockRecord) ?? []
   const missingBlocks = blocks.filter((block) => !candidate.includes(block.raw))
   const changedUiBlocks = missingBlocks.length
   const blockers: string[] = []
@@ -991,6 +1102,96 @@ export function diffCandidate({
     blockers,
     warnings,
     summary: locallySafe ? 'Locally safe after recomposition; remote stale check still required before push.' : `Unsafe: ${blockers.join('; ')}`,
+  }
+}
+
+export function buildDiffMarkdown(report: DiffReport) {
+  return [
+    `# Content Diff Report: ${report.slug ?? report.article_id}`,
+    '',
+    `Generated: ${report.generated_at}`,
+    `Article ID: ${report.article_id}`,
+    `Changed: ${report.changed}`,
+    `Safe to push locally: ${report.safe_to_push}`,
+    '',
+    '## Hashes',
+    '',
+    `- Original: \`${report.original_hash}\``,
+    `- Normalized: \`${report.normalized_hash ?? 'not available'}\``,
+    `- Candidate: \`${report.candidate_hash}\``,
+    '',
+    '## Line summary',
+    '',
+    `- Changed lines: ${report.changed_line_count}`,
+    `- Inserted lines: ${report.inserted_line_count}`,
+    `- Deleted lines: ${report.deleted_line_count}`,
+    '',
+    '## UI block preservation',
+    '',
+    `- UI blocks expected: ${report.ui_blocks_count}`,
+    `- UI blocks preserved: ${report.preserved_blocks_count}`,
+    `- UI blocks changed/missing: ${report.ui_blocks_changed_count}`,
+    `- Unresolved placeholders: ${report.unresolved_placeholders_count}`,
+    '',
+    '## Blockers',
+    '',
+    ...(report.blockers.length ? report.blockers.map((blocker) => `- ${blocker}`) : ['- None']),
+    '',
+    '## Warnings',
+    '',
+    ...(report.warnings.length ? report.warnings.map((warning) => `- ${warning}`) : ['- None']),
+    '',
+  ].join('\n')
+}
+
+export function buildUiBlockEditsFile(result: NormalizeResult) {
+  return {
+    article_id: result.article_id,
+    slug: result.slug,
+    generated_at: nowIso(),
+    parser_version: result.uiBlocks.parser_version,
+    edit_count: 0,
+    edits: [] as JsonObject[],
+    warnings: [
+      'Intentional UI block edits are not part of the current milestone. Preserve raw UI block content unless a future audited workflow explicitly records edits here.',
+    ],
+  }
+}
+
+export function buildComposeErrorFile({
+  articleId,
+  slug,
+  report,
+  error,
+}: {
+  articleId: string | null
+  slug: string | null
+  report?: ComposeReport | null
+  error?: unknown
+}) {
+  const message = error instanceof Error ? error.message : error == null ? null : String(error)
+  return {
+    article_id: articleId,
+    slug,
+    generated_at: nowIso(),
+    safe_to_write_candidate: false,
+    blockers: report?.blockers ?? (message ? [message] : []),
+    warnings: report?.warnings ?? [],
+    report: report ?? null,
+  }
+}
+
+export async function writeRunLog(root: string, runId: string, value: JsonObject) {
+  await writeJson(path.join(root, 'runs', runId, 'run-log.json'), {
+    run_id: runId,
+    generated_at: nowIso(),
+    ...value,
+  })
+}
+
+export function assertBulkApplyConfirmation(options: Pick<CliOptions, 'allSafe' | 'apply' | 'confirm'>) {
+  if (options.allSafe && options.apply === true && options.confirm !== BULK_APPLY_CONFIRMATION) {
+    throw new Error(`Bulk --all-safe --apply requires --confirm "${BULK_APPLY_CONFIRMATION}".`)
   }
 }
 
@@ -1048,6 +1249,9 @@ export function evaluatePushSafety(input: PushSafetyInput): PushSafetyResult {
   const warnings: string[] = []
 
   if (!input.candidate) blockers.push('candidate.md is missing.')
+  if (input.apply && candidateHash != null && candidateHash === originalHash) {
+    blockers.push('candidate.md matches original.md; refusing no-op apply.')
+  }
   if (originalHash !== input.metadata.original_content_hash && originalHash !== input.metadata.content_hash) {
     blockers.push('original.md hash does not match article metadata export hash.')
   }

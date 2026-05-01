@@ -56,15 +56,27 @@ Preferred output layout:
       normalized.md
       candidate.md
       ui-blocks.json
+      ui-block-edits.json
+      parser-errors.json
       article-metadata.json
       linked-questions.json
       sources.json
       taxonomy.json
+      component-usage.json
+      compose-report.json
+      compose-error.json
       diff-report.json
+      diff-report.md
+      push-report.json
+      push-result.json
+      conflict-report.json
+  runs/
+    <run_id>/run-log.json
   component-inventory/
     components.json
     component-files.json
     component-usage-in-articles.json
+    component-audit-report.json
     unknown-components.json
     component-fit-notes.md
 ```

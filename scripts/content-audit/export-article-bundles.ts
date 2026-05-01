@@ -1,25 +1,51 @@
 #!/usr/bin/env bun
 import path from 'node:path'
-import { existsSync } from 'node:fs'
+import { existsSync, readFileSync } from 'node:fs'
 import {
   ArticleMetadata,
   CliOptions,
   EXPORT_VERSION,
+  HASH_ALGORITHM,
   createContentAuditSupabaseClient,
   createExportId,
+  discoverArticleDirs,
   nowIso,
   parseArgs,
   resolveExportRoot,
   safeFolderName,
   sha256,
   sha256Json,
+  shouldExportChangedArticle,
   updateArticleSyncState,
   updateSyncStateRoot,
   writeJson,
+  writeRunLog,
   writeText,
 } from './lib'
 
 type ArticleRow = Record<string, any>
+
+type ExistingBundle = {
+  articleDir: string | null
+  metadata: Partial<ArticleMetadata> | null
+  original: string | null
+}
+
+interface ExportedArticleSummary {
+  article_id: string
+  title: string
+  slug: string | null
+  bundle_path: string
+  content_hash: string
+  original_content_hash: string
+  linked_questions_hash: string
+  sources_hash: string
+  question_count: number
+  source_count: number
+  taxonomy_count: number
+  ui_block_count: number
+  parser_status: ArticleMetadata['parser_status']
+}
 
 async function main() {
   const options = parseArgs()
@@ -28,15 +54,27 @@ async function main() {
   const exportId = createExportId()
   const startedAt = nowIso()
   const manifest = {
+    export_version: EXPORT_VERSION,
+    export_run_id: exportId,
     export_id: exportId,
+    generated_at: startedAt,
     export_started_at: startedAt,
     export_completed_at: null as string | null,
     repo_path: process.cwd(),
     supabase_project_ref: inferSupabaseProjectRef(),
+    hash_algorithm: HASH_ALGORITHM,
+    changed_only: options.changedOnly === true,
+    article_count: 0,
+    question_count: 0,
+    source_count: 0,
+    taxonomy_link_count: 0,
+    component_count: 0,
     total_articles_exported: 0,
     total_questions_exported: 0,
     total_sources_exported: 0,
     total_taxonomy_links_exported: 0,
+    articles: [] as ExportedArticleSummary[],
+    skipped_unchanged: [] as Array<{ article_id: string; slug: string | null; content_hash: string }>,
     errors: [] as string[],
     warnings: [] as string[],
   }
@@ -47,9 +85,26 @@ async function main() {
 
   for (const article of articles) {
     try {
-      const folder = safeFolderName(article.slug, article.article_id, usedFolders)
+      const content = article.content ?? ''
+      const existingBundle = findExistingBundle(exportRoot, article)
+      const changed = shouldExportChangedArticle({
+        currentContent: content,
+        currentUpdatedAt: article.updated_at ?? null,
+        existingMetadata: existingBundle.metadata,
+        existingOriginal: existingBundle.original,
+      })
+      if (options.changedOnly && !changed) {
+        manifest.skipped_unchanged.push({ article_id: article.article_id, slug: article.slug ?? null, content_hash: sha256(content) })
+        console.log(`↷ unchanged ${article.article_id} ${article.slug ?? ''}`)
+        continue
+      }
+
+      const folder = existingBundle.articleDir && options.changedOnly
+        ? path.basename(existingBundle.articleDir)
+        : safeFolderName(article.slug, article.article_id, usedFolders)
+      usedFolders.add(folder)
       const articleDir = path.join(exportRoot, 'articles', folder)
-      if (!dryRun && existsSync(articleDir) && options.overwrite !== true) {
+      if (!dryRun && existsSync(articleDir) && options.overwrite !== true && options.changedOnly !== true) {
         manifest.warnings.push(`Skipping ${article.article_id}: ${articleDir} exists; pass --overwrite true to replace bundle files.`)
         continue
       }
@@ -59,8 +114,11 @@ async function main() {
         options.includeSources === false ? Promise.resolve([]) : fetchSources(article.article_id, supabase),
         options.includeTaxonomy === false ? Promise.resolve([]) : fetchTaxonomy(article.article_id, supabase),
       ])
+      const linkedQuestionsHash = sha256Json(questions)
+      const sourcesHash = sha256Json(sources)
+      const contentHash = sha256(content)
+      const exportedAt = nowIso()
 
-      const content = article.content ?? ''
       const metadata: ArticleMetadata = {
         article_id: article.article_id,
         title: article.title,
@@ -77,12 +135,15 @@ async function main() {
         updated_at: article.updated_at ?? null,
         updated_by: article.updated_by ?? null,
         updated_note: article.updated_note ?? null,
-        content_hash: sha256(content),
-        original_content_hash: sha256(content),
+        content_hash: contentHash,
+        original_content_hash: contentHash,
         normalized_content_hash: null,
         candidate_content_hash: null,
         ui_blocks_hash: null,
-        exported_at: nowIso(),
+        linked_questions_hash: linkedQuestionsHash,
+        sources_hash: sourcesHash,
+        hash_algorithm: HASH_ALGORITHM,
+        exported_at: exportedAt,
         export_run_id: exportId,
         export_version: EXPORT_VERSION,
         source_table: 'wiki_articles',
@@ -99,11 +160,15 @@ async function main() {
         await writeJson(path.join(articleDir, 'article-metadata.json'), metadata)
         await writeJson(path.join(articleDir, 'linked-questions.json'), {
           article_id: article.article_id,
+          hash_algorithm: HASH_ALGORITHM,
+          linked_questions_hash: linkedQuestionsHash,
           question_count: questions.length,
           questions: questions.map((question) => ({ ...question, content_hash: sha256Json(question) })),
         })
         await writeJson(path.join(articleDir, 'sources.json'), {
           article_id: article.article_id,
+          hash_algorithm: HASH_ALGORITHM,
+          sources_hash: sourcesHash,
           source_count: sources.length,
           sources,
         })
@@ -118,6 +183,26 @@ async function main() {
         })
       }
 
+      const summary: ExportedArticleSummary = {
+        article_id: article.article_id,
+        title: article.title,
+        slug: article.slug ?? null,
+        bundle_path: path.relative(exportRoot, articleDir),
+        content_hash: contentHash,
+        original_content_hash: contentHash,
+        linked_questions_hash: linkedQuestionsHash,
+        sources_hash: sourcesHash,
+        question_count: questions.length,
+        source_count: sources.length,
+        taxonomy_count: taxonomy.length,
+        ui_block_count: 0,
+        parser_status: metadata.parser_status,
+      }
+      manifest.articles.push(summary)
+      manifest.article_count += 1
+      manifest.question_count += questions.length
+      manifest.source_count += sources.length
+      manifest.taxonomy_link_count += taxonomy.length
       manifest.total_articles_exported += 1
       manifest.total_questions_exported += questions.length
       manifest.total_sources_exported += sources.length
@@ -132,12 +217,39 @@ async function main() {
   }
 
   manifest.export_completed_at = nowIso()
+  manifest.generated_at = manifest.export_completed_at
   if (!dryRun) {
     await writeJson(path.join(exportRoot, 'manifest.json'), manifest)
     await writeJson(path.join(exportRoot, 'export-summary.json'), manifest)
+    await writeRunLog(exportRoot, exportId, {
+      command: 'content-audit:export',
+      started_at: startedAt,
+      completed_at: manifest.export_completed_at,
+      changed_only: manifest.changed_only,
+      article_count: manifest.article_count,
+      skipped_unchanged_count: manifest.skipped_unchanged.length,
+      warning_count: manifest.warnings.length,
+      error_count: manifest.errors.length,
+      status: manifest.errors.length > 0 ? 'completed_with_errors' : 'completed',
+    })
     await updateSyncStateRoot(exportRoot, { last_export_run_id: exportId })
   }
   console.log(JSON.stringify(manifest, null, 2))
+}
+
+function findExistingBundle(exportRoot: string, article: ArticleRow): ExistingBundle {
+  const candidates = [
+    ...discoverArticleDirs(exportRoot, { articleId: article.article_id }),
+    ...(article.slug ? discoverArticleDirs(exportRoot, { slug: article.slug }) : []),
+  ]
+  const articleDir = [...new Set(candidates)][0] ?? null
+  if (!articleDir) return { articleDir: null, metadata: null, original: null }
+
+  const metadataPath = path.join(articleDir, 'article-metadata.json')
+  const originalPath = path.join(articleDir, 'original.md')
+  const metadata = existsSync(metadataPath) ? JSON.parse(readFileSync(metadataPath, 'utf-8')) as Partial<ArticleMetadata> : null
+  const original = existsSync(originalPath) ? readFileSync(originalPath, 'utf-8') : null
+  return { articleDir, metadata, original }
 }
 
 async function fetchArticles(options: CliOptions, supabase: any): Promise<ArticleRow[]> {

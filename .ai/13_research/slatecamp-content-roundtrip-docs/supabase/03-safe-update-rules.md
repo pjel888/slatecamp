@@ -8,6 +8,7 @@ Only update `wiki_articles.content` after:
 candidate.md composed
 candidate.md diffed
 current Supabase content hash matches original hash
+candidate hash differs from original hash
 --apply passed
 ```
 
@@ -28,13 +29,13 @@ Question updates require separate explicit command and stale check per question.
 
 ## No bulk blind push
 
-Bulk push should not be implemented in MVP. If added later, require:
+Bulk push is guarded by all of the same per-article checks and requires an exact confirmation phrase:
 
-```text
---apply
---all
---confirm <exact phrase>
+```bash
+bun run content-audit:push:apply -- --all-safe --confirm "APPLY ALL SAFE CONTENT AUDIT PUSHES"
 ```
+
+Without that exact confirmation, `--all-safe --apply` aborts before fetching or mutating rows.
 
 ## Conflict handling
 
@@ -44,3 +45,5 @@ If stale:
 write conflict-report.json
 abort
 ```
+
+Push also writes both `push-report.json` and `push-result.json` for compatibility with older docs.
