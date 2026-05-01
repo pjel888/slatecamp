@@ -35,6 +35,7 @@ const adminPages: AdminPage[] = [
   { title: '3D Assets', href: '/admin/assets', group: 'Structure', permission: 'admin.assets.manage' },
   { title: '3D Models Registry', href: '/admin/3d-models', group: 'Structure', permission: 'admin.access' },
   { title: 'Review Queue', href: '/admin/reviews', group: 'Quality', permission: 'admin.reviews.view' },
+  { title: 'AI Audit Control Center', href: '/admin/ai-audit', group: 'Quality', keywords: 'content quality findings proposals audit workflow', permission: 'admin.content.view' },
   { title: 'Publishing Pipeline', href: '/admin/pipeline', group: 'Quality', permission: 'admin.pipeline.manage' },
   { title: 'Content Search', href: '/admin/search', group: 'Quality', permission: 'admin.search.use' },
   { title: 'Audit Log', href: '/admin/audit', group: 'Pulse', permission: 'admin.audit.view' },
@@ -134,6 +135,20 @@ const adminNavItemsSource: NavGroupWithPermissions[] = [
         href: '/admin/reviews',
         icon: <CheckSquare className="w-3.5 h-3.5" />,
         permission: 'admin.reviews.view',
+      },
+      {
+        label: 'AI Audit',
+        href: '/admin/ai-audit',
+        icon: <Pulse className="w-3.5 h-3.5" />,
+        permission: 'admin.content.view',
+        children: [
+          { label: 'Overview', href: '/admin/ai-audit', permission: 'admin.content.view' },
+          { label: 'Articles', href: '/admin/ai-audit/articles', permission: 'admin.content.view' },
+          { label: 'Questions', href: '/admin/ai-audit/questions', permission: 'admin.content.view' },
+          { label: 'Findings', href: '/admin/ai-audit/findings', permission: 'admin.content.view' },
+          { label: 'Runs', href: '/admin/ai-audit/runs', permission: 'admin.content.view' },
+          { label: 'Proposals', href: '/admin/ai-audit/proposals', permission: 'admin.content.view' },
+        ],
       },
       {
         label: 'Publishing Pipeline',
