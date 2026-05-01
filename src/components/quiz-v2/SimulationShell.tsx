@@ -7,6 +7,7 @@ import { useQuizTimerStore } from '@/stores/useQuizTimerStore'
 import { BaseQuizShell } from './BaseQuizShell'
 import { QuizBody } from './QuizBody'
 import { useQuizShellHandlers } from '@/hooks/useQuizShellHandlers'
+import { ROUTES } from '@/lib/routes'
 import { 
   getSessionQuestions, 
   updateSessionProgress 
@@ -158,7 +159,7 @@ export const SimulationShell = ({
   useEffect(() => {
     if (status === 'results' && results) {
       stopTimer()
-      router.push(`/quiz/session/${sessionId}/results`)
+      router.push(ROUTES.dashboard.quizResults(sessionId))
     }
   }, [status, results, sessionId, router, stopTimer])
 

@@ -9,6 +9,7 @@ import { QuizBody } from './QuizBody'
 import { PacingNudge } from './PacingNudge'
 import { useQuizShellHandlers } from '@/hooks/useQuizShellHandlers'
 import { useOnlineStatus } from '@/hooks/useOnlineStatus'
+import { ROUTES } from '@/lib/routes'
 import { 
   getSessionQuestions, 
   updateSessionProgress 
@@ -170,9 +171,9 @@ export const StandardQuizShell = ({
   useEffect(() => {
     if (status === 'results' && results) {
       stopTimer()
-      router.push(`/quiz/session/${sessionId}/results`)
+      router.push(ROUTES.dashboard.quizResults(sessionId))
     }
-  }, [status, results, config.mode, sessionId, router, stopTimer])
+  }, [status, results, sessionId, router, stopTimer])
 
   // Safety net: recover from race condition where calculatingResults is true
   // but endSession was never called (results arrived after user tapped Next)

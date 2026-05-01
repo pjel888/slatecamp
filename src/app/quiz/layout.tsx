@@ -5,13 +5,9 @@ export const metadata: Metadata = {
   description: 'Practice questions and test your knowledge.',
 }
 
-/** Minimal layout for quiz pages — no dashboard sidebar, full focus */
+/** Legacy redirect shell; canonical quiz UI lives under /dashboard/quiz. */
 const QuizLayout = ({ children }: { children: React.ReactNode }) => {
-  return (
-    <div className="min-h-screen bg-surface-light">
-      {children}
-    </div>
-  )
+  return <>{children}</>
 }
 
 export default QuizLayout

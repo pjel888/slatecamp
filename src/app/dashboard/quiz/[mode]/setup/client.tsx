@@ -7,6 +7,7 @@ import { PredictionSlider, shouldShowPrediction } from '@/components/quiz-v2/Pre
 import { SlatecampLoader } from '@/components/shared/SlatecampLoader'
 import type { QuizMode, QuizSessionConfig, TaxonomySubject } from '@/types/quiz-config'
 import { startSession } from '@/lib/actions/quiz-v2'
+import { ROUTES } from '@/lib/routes'
 import { useQuizStore } from '@/stores/useQuizStore'
 import { useQuizTimerStore } from '@/stores/useQuizTimerStore'
 
@@ -53,7 +54,7 @@ export const SetupPageClient = ({
         setPhase('prediction')
       } else {
         setPhase('navigating')
-        router.push(`/quiz/session/${result.sessionId}`)
+        router.push(ROUTES.dashboard.quizSession(result.sessionId))
       }
     } catch (err) {
       console.error('[quiz-setup] startSession failed:', err)
@@ -65,8 +66,8 @@ export const SetupPageClient = ({
   const handlePredictionConfirm = useCallback(() => {
     if (!createdSessionId) return
     setPhase('navigating')
-    router.push(`/quiz/session/${createdSessionId}`)
-  }, [createdSessionId, mode, router])
+    router.push(ROUTES.dashboard.quizSession(createdSessionId))
+  }, [createdSessionId, router])
 
   const handleBack = () => {
     router.back()

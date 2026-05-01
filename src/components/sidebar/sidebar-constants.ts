@@ -10,6 +10,7 @@ import {
   GearSix,
 } from '@phosphor-icons/react/dist/ssr'
 import type { SidebarNavItemConfig, SidebarNavGroupConfig } from './types'
+import { ROUTES } from '@/lib/routes'
 
 // ---------------------------------------------------------------------------
 // Complete navigation config (matching locked HTML v4 + current routes)
@@ -17,16 +18,16 @@ import type { SidebarNavItemConfig, SidebarNavGroupConfig } from './types'
 
 export const SIDEBAR_NAV_ITEMS: SidebarNavItemConfig[] = [
   // Dashboard (standalone, no group) — tier: default
-  { id: 'dashboard', href: '/dashboard', label: 'Dashboard', icon: SquaresFour, tier: 'default', shortcut: '⌘1' },
+  { id: 'dashboard', href: ROUTES.dashboard.root, label: 'Dashboard', icon: SquaresFour, tier: 'default', shortcut: '⌘1' },
 
   // Learn group — tier: default (primary study loop)
-  { id: 'wiki', href: '/dashboard/wiki', label: 'Wiki', icon: Globe, tier: 'default', group: 'learn', shortcut: '⌘2' },
-  { id: 'notes', href: '/dashboard/notes', label: 'Notes', icon: FileText, tier: 'default', group: 'learn', shortcut: '⌘3' },
+  { id: 'wiki', href: ROUTES.dashboard.wiki, label: 'Wiki', icon: Globe, tier: 'default', group: 'learn', shortcut: '⌘2' },
+  { id: 'notes', href: ROUTES.dashboard.notes, label: 'Notes', icon: FileText, tier: 'default', group: 'learn', shortcut: '⌘3' },
 
   // Explore group — tier: default (interactive tools)
   {
     id: '3d-lab',
-    href: '/dashboard/3d-lab',
+    href: ROUTES.lab.root,
     label: '3D Lab',
     icon: Cube,
     tier: 'default',
@@ -37,20 +38,20 @@ export const SIDEBAR_NAV_ITEMS: SidebarNavItemConfig[] = [
   // Practice group — tier: secondary (tools)
   {
     id: 'testing',
-    href: '/quiz',
+    href: ROUTES.dashboard.quiz,
     label: 'Quiz',
     icon: Exam,
     tier: 'secondary',
     group: 'practice',
   },
-  { id: 'camptrail', href: '/dashboard/camptrails', label: 'Camp Trail', icon: Path, tier: 'secondary', group: 'practice' },
-  { id: 'flash', href: '/dashboard/flash', label: 'Flash Cards', icon: Cards, tier: 'secondary', group: 'practice' },
+  { id: 'camptrail', href: ROUTES.dashboard.camptrails, label: 'Camp Trail', icon: Path, tier: 'secondary', group: 'practice' },
+  { id: 'flash', href: ROUTES.dashboard.flash, label: 'Flash Cards', icon: Cards, tier: 'secondary', group: 'practice' },
 
   // Data group — tier: secondary (tools)
-  { id: 'analytics', href: '/dashboard/analytics', label: 'Analytics', icon: ChartBar, tier: 'secondary', group: 'data' },
+  { id: 'analytics', href: ROUTES.dashboard.analytics, label: 'Analytics', icon: ChartBar, tier: 'secondary', group: 'data' },
 
   // Settings (standalone, bottom-pinned) — tier: tertiary
-  { id: 'settings', href: '/dashboard/settings', label: 'Settings', icon: GearSix, tier: 'tertiary' },
+  { id: 'settings', href: ROUTES.dashboard.settings, label: 'Settings', icon: GearSix, tier: 'tertiary' },
 ]
 
 // ---------------------------------------------------------------------------
@@ -72,8 +73,8 @@ export const SETTINGS_ITEM = SIDEBAR_NAV_ITEMS.find((i) => i.id === 'settings')!
 // ---------------------------------------------------------------------------
 
 export const SHORTCUT_MAP: Record<string, string> = {
-  '1': '/dashboard',
-  '2': '/dashboard/wiki',
-  '3': '/dashboard/notes',
-  '4': '/dashboard/3d-lab',
+  '1': ROUTES.dashboard.root,
+  '2': ROUTES.dashboard.wiki,
+  '3': ROUTES.dashboard.notes,
+  '4': ROUTES.lab.root,
 }

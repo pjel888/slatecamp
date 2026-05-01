@@ -2,6 +2,7 @@
 
 import { useRouter } from 'next/navigation'
 import { cn } from '@/lib/utils'
+import { ROUTES } from '@/lib/routes'
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -16,11 +17,15 @@ export const ResultsCTAs = ({ sessionId, missedCount }: ResultsCTAsProps) => {
   const router = useRouter()
 
   const handlePracticeMissed = () => {
-    router.push(`/quiz/focus_review/setup?source=missed&sessionId=${sessionId}`)
+    const params = new URLSearchParams({
+      source: 'missed',
+      sessionId,
+    })
+    router.push(`${ROUTES.dashboard.quizSetup('focus_review')}?${params}`)
   }
 
   const handleDashboard = () => {
-    router.push('/quiz')
+    router.push(ROUTES.dashboard.quiz)
   }
 
   return (

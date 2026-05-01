@@ -8,6 +8,7 @@ import {
   endSession as endSessionAction,
 } from '@/lib/actions/quiz-v2'
 import { withMinimumDuration } from '@/lib/utils/promise'
+import { ROUTES } from '@/lib/routes'
 import type { GestureSignalEvent } from '@/types/patent'
 
 interface UseQuizShellHandlersProps {
@@ -131,7 +132,7 @@ export const useQuizShellHandlers = ({ sessionId, mode: _mode }: UseQuizShellHan
       )
       endSession(result)
     } catch {
-      router.push(`/quiz/session/${sessionId}/results`)
+      router.push(ROUTES.dashboard.quizResults(sessionId))
     }
   }
 

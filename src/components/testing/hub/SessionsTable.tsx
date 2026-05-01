@@ -17,6 +17,7 @@ import {
   AlertDialogTrigger,
 } from '@/components/ui/alert-dialog'
 import { abandonSession as abandonSessionAction } from '@/lib/actions/quiz-v2'
+import { ROUTES } from '@/lib/routes'
 
 interface SessionConfig {
   mode?: string
@@ -129,7 +130,7 @@ const getSessionUrl = (session: SessionRecord): string => {
   const modeKey = getModeKey(session)
 
   if (session.status === 'in_progress') {
-    return `/quiz/session/${session.session_id}`
+    return ROUTES.dashboard.quizSession(session.session_id)
   }
 
   if (READING_MODES.has(modeKey)) {
@@ -139,7 +140,7 @@ const getSessionUrl = (session: SessionRecord): string => {
     }
   }
 
-  return `/quiz/session/${session.session_id}/results`
+  return ROUTES.dashboard.quizResults(session.session_id)
 }
 
 const getScoreDisplay = (session: SessionRecord): {

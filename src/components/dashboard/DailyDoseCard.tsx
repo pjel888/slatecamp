@@ -15,6 +15,7 @@ import { Button } from '@/components/ui/button'
 import { getTodayDose, startDoseActivity, regenerateDose } from '@/lib/actions/daily-dose/actions'
 import type { StoredDose } from '@/lib/actions/daily-dose/actions'
 import type { DoseActivity } from '@/lib/actions/daily-dose/generate'
+import { ROUTES } from '@/lib/routes'
 
 // ── Activity icon map ────────────────────────────────────────────────────────
 
@@ -36,7 +37,7 @@ const TIME_BUDGET_OPTIONS = [15, 30, 45, 60]
 
 const getActivityHref = (activity: DoseActivity): string => {
   const mode = (activity.config.mode as string) ?? 'camp'
-  return `/quiz/${mode}/setup`
+  return ROUTES.dashboard.quizSetup(mode)
 }
 
 // ── Main Component ───────────────────────────────────────────────────────────

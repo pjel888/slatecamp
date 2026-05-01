@@ -5,9 +5,9 @@ interface ReviewPageProps {
   params: Promise<{ sessionId: string }>
 }
 
-const CanonicalQuizReviewPage = async ({ params }: ReviewPageProps) => {
+const LegacyQuizReviewPage = async ({ params }: ReviewPageProps) => {
   const { sessionId } = await params
-  redirect(ROUTES.quiz.results(sessionId))
+  redirect(ROUTES.dashboard.quizReview(sessionId))
 }
 
-export default CanonicalQuizReviewPage
+export default LegacyQuizReviewPage

@@ -1,12 +1,13 @@
-import { QuizResultsRoute } from '../../../../_components/QuizResultsRoute'
+import { redirect } from 'next/navigation'
+import { ROUTES } from '@/lib/routes'
 
 interface ResultsPageProps {
-  params: Promise<{ mode: string; sessionId: string }>
+  params: Promise<{ sessionId: string }>
 }
 
 const LegacyModeQuizResultsPage = async ({ params }: ResultsPageProps) => {
-  const { mode, sessionId } = await params
-  return <QuizResultsRoute sessionId={sessionId} routeMode={mode} />
+  const { sessionId } = await params
+  redirect(ROUTES.dashboard.quizResults(sessionId))
 }
 
 export default LegacyModeQuizResultsPage

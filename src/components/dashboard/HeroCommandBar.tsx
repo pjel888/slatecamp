@@ -213,10 +213,10 @@ export function HeroCommandBar({
         </div>
 
         {/* Divider 2 */}
-        {children && !isNewUser && <div className='w-px bg-white/15 self-stretch my-4' />}
+        {children && <div className='w-px bg-white/15 self-stretch my-4' />}
 
         {/* SECTION 3: Study Activity Heatmap */}
-        {children && !isNewUser && (
+        {children && (
           <div className='flex-1 min-w-0 py-3 px-4 overflow-hidden'>
             {children}
           </div>

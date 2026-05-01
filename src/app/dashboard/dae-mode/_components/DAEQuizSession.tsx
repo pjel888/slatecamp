@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { ArrowLeft, ArrowRight } from '@phosphor-icons/react/dist/ssr'
+import { ROUTES } from '@/lib/routes'
 import type { DAEQuestion } from '@/lib/actions/dae-mode'
 
 // ─── Props ────────────────────────────────────────────────────────────────────
@@ -41,7 +42,7 @@ const DAEQuizSession = ({ sessionId, questions, onExit }: DAEQuizSessionProps) =
       setCurrentIndex((i) => i + 1)
     } else {
       // Go to results
-      router.push(`/quiz/session/${sessionId}/results`)
+      router.push(ROUTES.dashboard.quizResults(sessionId))
     }
   }
 

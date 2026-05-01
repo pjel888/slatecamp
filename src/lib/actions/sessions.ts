@@ -44,7 +44,7 @@ export async function closeSession(sessionId: string): Promise<SessionActionResu
     .eq("user_id", user.id);
 
   if (error) return { error: error.message };
-  revalidatePath(ROUTES.dashboard.drills);
+  revalidatePath(ROUTES.dashboard.quiz);
   revalidatePath(ROUTES.dashboard.root);
   return {};
 }
@@ -70,7 +70,7 @@ export async function deleteSession(sessionId: string): Promise<SessionActionRes
     .eq("user_id", user.id);
 
   if (error) return { error: error.message };
-  revalidatePath(ROUTES.dashboard.drills);
+  revalidatePath(ROUTES.dashboard.quiz);
   revalidatePath(ROUTES.dashboard.root);
   return {};
 }

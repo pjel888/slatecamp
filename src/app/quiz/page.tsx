@@ -1,5 +1,8 @@
-import { QuizHubContent } from './_components/QuizHubContent'
+import { redirect } from 'next/navigation'
+import { ROUTES } from '@/lib/routes'
 
-const QuizPage = () => <QuizHubContent />
+const LegacyQuizPage = () => {
+  redirect(ROUTES.dashboard.quiz)
+}
 
-export default QuizPage
+export default LegacyQuizPage

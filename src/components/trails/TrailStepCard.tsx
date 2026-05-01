@@ -14,6 +14,7 @@ import { useRouter } from 'next/navigation'
 import { Check, Clock, Timer } from '@phosphor-icons/react/dist/ssr'
 import { SleepAwareLabel } from '@/components/trails/SleepAwareLabel'
 import { FocusReviewPriorityFlag } from '@/components/trails/FocusReviewPriorityFlag'
+import { ROUTES } from '@/lib/routes'
 import { STEP_TYPE_CONFIG } from '@/types/app'
 import type { TrailStep, TrailStepType } from '@/types/app'
 
@@ -28,10 +29,10 @@ interface TrailStepCardProps {
 }
 
 const CTA_ROUTES: Record<TrailStepType, (nodeIds: string[]) => string> = {
-  wiki: () => '/dashboard/wiki',
-  quiz: (_nodeIds) => `/quiz/camp/setup`,
-  lab: () => '/dashboard/3d-lab',
-  review: (_nodeIds) => `/quiz/camp/setup`,
+  wiki: () => ROUTES.dashboard.wiki,
+  quiz: (_nodeIds) => ROUTES.dashboard.quizSetup('camp'),
+  lab: () => ROUTES.lab.root,
+  review: (_nodeIds) => ROUTES.dashboard.quizSetup('camp'),
 }
 
 const TrailStepCard = ({

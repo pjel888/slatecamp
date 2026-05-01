@@ -1,9 +1,9 @@
 # Complete Route Map
 
-**Last audit:** 2026-04-30
-**Post-route-cleanup counts:** 109 `page.tsx` routes, 13 layouts, 92 loading states, 7 error boundaries.
+**Last audit:** 2026-05-01
+**Post-route-cleanup counts:** 118 `page.tsx` routes, 14 layouts, 95 loading states, 7 error boundaries.
 
-This file is the canonical route inventory for the current codebase. It was refreshed after Quiz consolidation made `/quiz` the canonical hub and kept `/dashboard/drills` as redirect-only compatibility. Route groups in parentheses are omitted from URL paths. Dynamic params are shown with bracket syntax.
+This file is the canonical route inventory for the current codebase. It was refreshed after Quiz moved back under `/dashboard/quiz` so the dashboard sidebar shell remains visible; `/quiz/*` and `/dashboard/drills*` are redirect-only compatibility. Route groups in parentheses are omitted from URL paths. Dynamic params are shown with bracket syntax.
 
 ## Page routes
 
@@ -65,8 +65,17 @@ This file is the canonical route inventory for the current codebase. It was refr
 | /dashboard/code-updates | page | src/app/dashboard/code-updates/page.tsx | authenticated | Learner dashboard page. | Learner dashboard | `@/lib/actions/code-updates`, `./_components/CodeUpdateFeed` | Has route loading state. |
 | /dashboard/cram-card | page | src/app/dashboard/cram-card/page.tsx | authenticated | Flash/cram review page. | Flash/cram review | `@/components/layouts/SharedPageLayout`, `@/lib/actions/cram-card`, `./_components/CramCardPage` | Has route loading state. |
 | /dashboard/dae-mode | page | src/app/dashboard/dae-mode/page.tsx | authenticated | Learner dashboard page. | Learner dashboard | `@/lib/supabase/server`, `@/lib/routes`, `@/lib/actions/dae-mode` (+2) | Has route loading state. |
-| /dashboard/drills | page | src/app/dashboard/drills/page.tsx | authenticated | Legacy redirect to `/quiz`. | Quiz compatibility | `next/navigation`, `@/lib/routes` | Redirect-only compatibility route. |
-| /dashboard/drills/sessions | page | src/app/dashboard/drills/sessions/page.tsx | authenticated | Legacy redirect to `/quiz/sessions`. | Quiz compatibility | `next/navigation`, `@/lib/routes` | Redirect-only compatibility route. |
+| /dashboard/drills | page | src/app/dashboard/drills/page.tsx | authenticated | Legacy redirect to `/dashboard/quiz`. | Quiz compatibility | `next/navigation`, `@/lib/routes` | Redirect-only compatibility route. |
+| /dashboard/drills/sessions | page | src/app/dashboard/drills/sessions/page.tsx | authenticated | Legacy redirect to `/dashboard/quiz/sessions`. | Quiz compatibility | `next/navigation`, `@/lib/routes` | Redirect-only compatibility route. |
+| /dashboard/quiz | page | src/app/dashboard/quiz/page.tsx | authenticated | Canonical dashboard quiz hub. | Quiz builder | `./_components/QuizHubContent` | Renders inside dashboard sidebar shell. Has route loading state. |
+| /dashboard/quiz/sessions | page | src/app/dashboard/quiz/sessions/page.tsx | authenticated | Canonical quiz session history. | Quiz session history | `@/components/testing/hub/SessionsTable`, `@/lib/supabase/server` | Renders inside dashboard sidebar shell. |
+| /dashboard/quiz/[mode]/session/[sessionId] | page dynamic | src/app/dashboard/quiz/[mode]/session/[sessionId]/page.tsx | authenticated | Modeful compatibility redirect to canonical dashboard session URL. | Quiz compatibility | `next/navigation`, `@/lib/routes` | Redirect-only compatibility route. |
+| /dashboard/quiz/[mode]/session/[sessionId]/results | page dynamic | src/app/dashboard/quiz/[mode]/session/[sessionId]/results/page.tsx | authenticated | Modeful compatibility redirect to canonical dashboard results URL. | Quiz compatibility | `next/navigation`, `@/lib/routes` | Redirect-only compatibility route. |
+| /dashboard/quiz/[mode]/session/[sessionId]/review | page dynamic | src/app/dashboard/quiz/[mode]/session/[sessionId]/review/page.tsx | authenticated | Modeful compatibility redirect to canonical dashboard review URL. | Quiz compatibility | `next/navigation`, `@/lib/routes` | Redirect-only compatibility route. |
+| /dashboard/quiz/[mode]/setup | page dynamic | src/app/dashboard/quiz/[mode]/setup/page.tsx | authenticated | Focused/special quiz setup flow. | Quiz session loop | `@/lib/supabase/server`, `@/lib/actions/quiz-v2`, `@/types/quiz-config` (+2) | General modes redirect to `/dashboard/quiz`; focused/endurance/article flows stay supported. Has route loading state. |
+| /dashboard/quiz/session/[sessionId] | page dynamic | src/app/dashboard/quiz/session/[sessionId]/page.tsx | authenticated | Canonical active quiz session. | Quiz session loop | `../../_components/QuizSessionRoute` | Dashboard header suppressed; sidebar remains visible. Has route loading state. |
+| /dashboard/quiz/session/[sessionId]/results | page dynamic | src/app/dashboard/quiz/session/[sessionId]/results/page.tsx | authenticated | Canonical quiz results. | Quiz results | `../../../_components/QuizResultsRoute` | Dynamic params present. |
+| /dashboard/quiz/session/[sessionId]/review | page dynamic | src/app/dashboard/quiz/session/[sessionId]/review/page.tsx | authenticated | Canonical quiz review redirect. | Quiz review | `next/navigation`, `@/lib/routes` | Redirects to results until review UI is separate. |
 | /dashboard/exam-outcome | page | src/app/dashboard/exam-outcome/page.tsx | authenticated | Learner dashboard page. | Learner dashboard | `@/lib/routes`, `@/lib/supabase/server`, `@/components/layouts/SharedPageLayout` (+1) | Has route loading state. |
 | /dashboard/flash | page | src/app/dashboard/flash/page.tsx | authenticated | Flash/cram review page. | Flash/cram review | `@/components/layouts/SharedPageLayout`, `./_components/FlashHub`, `@/lib/actions/flash-cards` | Has route loading state. |
 | /dashboard/flash/[category] | page dynamic | src/app/dashboard/flash/[category]/page.tsx | authenticated | Flash/cram review page. | Flash/cram review | `@/components/layouts/SharedPageLayout`, `../_components/FlashSession`, `@/lib/actions/flash-cards` (+1) | Dynamic params present. Has route loading state. |
@@ -99,15 +108,15 @@ This file is the canonical route inventory for the current codebase. It was refr
 | /onboarding | page | src/app/(auth)/onboarding/page.tsx | public/auth | Authentication, password reset, registration, or onboarding flow. | Auth/onboarding | `@/lib/supabase/server`, `@/lib/routes`, `@/lib/supabase/bootstrap` (+3) | Has route loading state. |
 | /onboarding/comp-exam | page | src/app/(auth)/onboarding/comp-exam/page.tsx | public/auth | Authentication, password reset, registration, or onboarding flow. | Auth/onboarding | `@/lib/supabase/server`, `@/lib/routes`, `./_components/CompExamFlow` | — |
 | /pricing | page | src/app/pricing/page.tsx | public | Public marketing or conversion page. | Marketing/public | `@/components/marketing/MarketingNav`, `@/components/marketing/MarketingFooter`, `@/components/marketing/FaqSection` (+5) | Has route loading state. |
-| /quiz/[mode]/session/[sessionId] | page dynamic | src/app/quiz/[mode]/session/[sessionId]/page.tsx | authenticated | Legacy modeful active-session compatibility wrapper. | Quiz session loop | `@/lib/quiz/mode-presets`, `@/lib/quiz/to-client-question`, `@/lib/supabase/server` (+1) | Dynamic params present. Has route loading state. |
-| /quiz/[mode]/session/[sessionId]/results | page dynamic | src/app/quiz/[mode]/session/[sessionId]/results/page.tsx | authenticated | Legacy modeful results compatibility wrapper. | Quiz session loop | `@/lib/supabase/server`, `@/types/quiz-config`, `@/lib/quiz/mode-presets` (+5) | Dynamic params present. Has route loading state. |
-| /quiz/[mode]/session/[sessionId]/review | page dynamic | src/app/quiz/[mode]/session/[sessionId]/review/page.tsx | authenticated | Legacy modeful review compatibility wrapper. | Quiz session loop | — | Dynamic params present. Has route loading state. |
-| /quiz | page | src/app/quiz/page.tsx | authenticated | Canonical quiz hub. | Quiz builder | `./_components/QuizHubContent` | Has route loading state. |
-| /quiz/sessions | page | src/app/quiz/sessions/page.tsx | authenticated | Canonical quiz session history. | Quiz session history | `@/components/testing/hub/SessionsTable`, `@/lib/supabase/server` | — |
-| /quiz/session/[sessionId] | page dynamic | src/app/quiz/session/[sessionId]/page.tsx | authenticated | Canonical active quiz session. | Quiz session loop | `../_components/QuizSessionRoute` | Dynamic params present. |
-| /quiz/session/[sessionId]/results | page dynamic | src/app/quiz/session/[sessionId]/results/page.tsx | authenticated | Canonical quiz results. | Quiz results | `../../_components/QuizResultsRoute` | Dynamic params present. |
-| /quiz/session/[sessionId]/review | page dynamic | src/app/quiz/session/[sessionId]/review/page.tsx | authenticated | Canonical quiz review. | Quiz review | `@/components/quiz-v2/ReviewPage` | Dynamic params present. |
-| /quiz/[mode]/setup | page dynamic | src/app/quiz/[mode]/setup/page.tsx | authenticated | Canonical quiz setup, active session, review, or results flow. | Quiz session loop | `@/lib/supabase/server`, `@/lib/actions/quiz-v2`, `@/types/quiz-config` (+1) | Dynamic params present. Has route loading state. |
+| /quiz/[mode]/session/[sessionId] | page dynamic | src/app/quiz/[mode]/session/[sessionId]/page.tsx | authenticated | Legacy redirect to `/dashboard/quiz/session/[sessionId]`. | Quiz compatibility | `next/navigation`, `@/lib/routes` | Redirect-only compatibility route. |
+| /quiz/[mode]/session/[sessionId]/results | page dynamic | src/app/quiz/[mode]/session/[sessionId]/results/page.tsx | authenticated | Legacy redirect to `/dashboard/quiz/session/[sessionId]/results`. | Quiz compatibility | `next/navigation`, `@/lib/routes` | Redirect-only compatibility route. |
+| /quiz/[mode]/session/[sessionId]/review | page dynamic | src/app/quiz/[mode]/session/[sessionId]/review/page.tsx | authenticated | Legacy redirect to `/dashboard/quiz/session/[sessionId]/review`. | Quiz compatibility | `next/navigation`, `@/lib/routes` | Redirect-only compatibility route. |
+| /quiz | page | src/app/quiz/page.tsx | authenticated | Legacy redirect to `/dashboard/quiz`. | Quiz compatibility | `next/navigation`, `@/lib/routes` | Redirect-only compatibility route. |
+| /quiz/sessions | page | src/app/quiz/sessions/page.tsx | authenticated | Legacy redirect to `/dashboard/quiz/sessions`. | Quiz compatibility | `next/navigation`, `@/lib/routes` | Redirect-only compatibility route. |
+| /quiz/session/[sessionId] | page dynamic | src/app/quiz/session/[sessionId]/page.tsx | authenticated | Legacy redirect to `/dashboard/quiz/session/[sessionId]`. | Quiz compatibility | `next/navigation`, `@/lib/routes` | Redirect-only compatibility route. |
+| /quiz/session/[sessionId]/results | page dynamic | src/app/quiz/session/[sessionId]/results/page.tsx | authenticated | Legacy redirect to `/dashboard/quiz/session/[sessionId]/results`. | Quiz compatibility | `next/navigation`, `@/lib/routes` | Redirect-only compatibility route. |
+| /quiz/session/[sessionId]/review | page dynamic | src/app/quiz/session/[sessionId]/review/page.tsx | authenticated | Legacy redirect to `/dashboard/quiz/session/[sessionId]/review`. | Quiz compatibility | `next/navigation`, `@/lib/routes` | Redirect-only compatibility route. |
+| /quiz/[mode]/setup | page dynamic | src/app/quiz/[mode]/setup/page.tsx | authenticated | Legacy redirect to `/dashboard/quiz/[mode]/setup`. | Quiz compatibility | `next/navigation`, `@/lib/routes` | Preserves query parameters. |
 | /register | page | src/app/(auth)/register/page.tsx | public/auth | Authentication, password reset, registration, or onboarding flow. | Auth/onboarding | `./register-form`, `@/lib/constants/site`, `@/lib/demo/config` (+1) | Has route loading state. |
 | /tools | page | src/app/tools/page.tsx | public utility | Canonical public utility/calculator hub. | Tools/calculators | `@/components/marketing/MarketingNav`, `@/components/marketing/MarketingFooter`, `@/components/tools/ToolCard` (+2) | Has route loading state. |
 | /tools/chb | page | src/app/tools/chb/page.tsx | public utility | Canonical 3D CHB estimating tool. | Tools/calculators | `@/components/calculators/CalculatorToolShell`, `@/components/calculators/calculator-tool-registry` | Legacy `/calculators/chb` redirects here. |
@@ -131,6 +140,7 @@ This file is the canonical route inventory for the current codebase. It was refr
 | /dashboard/3d-lab | src/app/dashboard/3d-lab/layout.tsx | authenticated |
 | /dashboard/analytics | src/app/dashboard/analytics/layout.tsx | authenticated |
 | /dashboard/drills | src/app/dashboard/drills/layout.tsx | authenticated |
+| /dashboard/quiz | src/app/dashboard/quiz/layout.tsx | authenticated |
 | /dashboard/notes | src/app/dashboard/notes/layout.tsx | authenticated |
 | /dashboard/score-reveal | src/app/dashboard/score-reveal/layout.tsx | authenticated |
 | /dashboard/wiki | src/app/dashboard/wiki/layout.tsx | authenticated |
@@ -191,6 +201,9 @@ This file is the canonical route inventory for the current codebase. It was refr
 | /dashboard/dae-mode | src/app/dashboard/dae-mode/loading.tsx | authenticated |
 | /dashboard/drills | src/app/dashboard/drills/loading.tsx | authenticated |
 | /dashboard/drills/sessions | src/app/dashboard/drills/sessions/loading.tsx | authenticated |
+| /dashboard/quiz | src/app/dashboard/quiz/loading.tsx | authenticated |
+| /dashboard/quiz/[mode]/setup | src/app/dashboard/quiz/[mode]/setup/loading.tsx | authenticated |
+| /dashboard/quiz/session/[sessionId] | src/app/dashboard/quiz/session/[sessionId]/loading.tsx | authenticated |
 | /dashboard/exam-outcome | src/app/dashboard/exam-outcome/loading.tsx | authenticated |
 | /dashboard/flash | src/app/dashboard/flash/loading.tsx | authenticated |
 | /dashboard/flash/[category] | src/app/dashboard/flash/[category]/loading.tsx | authenticated |
@@ -247,6 +260,6 @@ This file is the canonical route inventory for the current codebase. It was refr
 | /developer | src/app/developer/error.tsx | developer/internal |
 
 
-## 2026-04-30 Quiz consolidation note
+## 2026-05-01 Quiz consolidation note
 
-`/quiz` is the canonical standard quiz surface. `/dashboard/drills` and `/dashboard/drills/sessions` are redirect-only compatibility routes. General setup routes (`camp`, `chill`, `subject`, `custom`, `storm`, `full_exam`) redirect to `/quiz`; focused and endurance flows remain exceptions.
+`/dashboard/quiz` is the canonical standard quiz surface so the sidebar and dashboard session guard remain visible. `/quiz/*`, `/dashboard/drills`, and `/dashboard/drills/sessions` are redirect-only compatibility routes. General setup routes (`camp`, `chill`, `subject`, `custom`, `storm`, `full_exam`) redirect to `/dashboard/quiz`; focused and endurance flows remain exceptions under `/dashboard/quiz/[mode]/setup`.

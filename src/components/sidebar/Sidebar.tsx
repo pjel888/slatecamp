@@ -151,7 +151,6 @@ export const Sidebar = ({ userDisplay, tier, isAdmin: _isAdmin, isDevMode: _isDe
           position: 'relative',
           flexShrink: 0,
           height: '100dvh',
-          display: 'flex',
           flexDirection: 'column',
           overflow: 'hidden',
           borderRight: '1px solid var(--border)',

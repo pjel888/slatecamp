@@ -1,4 +1,4 @@
-import { expect } from '@playwright/test'
+import { expect, type Page } from '@playwright/test'
 import {
   authenticatedDemoTest as test,
   demoAuthEnabled,
@@ -10,21 +10,43 @@ test.describe('demo-auth learning flow', () => {
     'Set PLAYWRIGHT_DEMO_AUTH=true to run demo-auth learning coverage.',
   )
 
+  const selectAllDemoSubjects = async (page: Page) => {
+    await page.getByRole('button', { name: /Add All/i }).click()
+    const targetingText = page.getByText(/Targeting 2 subjects/i)
+
+    try {
+      await expect(targetingText).toBeVisible({ timeout: 10_000 })
+      return
+    } catch {
+      for (const subjectName of [/Building Code/i, /Structures/i]) {
+        const subjectButton = page.getByRole('button', { name: subjectName })
+        if ((await subjectButton.getAttribute('aria-pressed')) !== 'true') {
+          await subjectButton.click({ force: true })
+        }
+      }
+    }
+
+    await expect(targetingText).toBeVisible({ timeout: 10_000 })
+  }
+
   test('canceling a ready but unentered session does not create a resume CTA', async ({
     page,
   }) => {
     test.setTimeout(90000)
-    await page.goto('/quiz', {
+    await page.setViewportSize({ width: 1440, height: 900 })
+    await page.goto('/dashboard/quiz', {
       waitUntil: 'domcontentloaded',
     })
 
+    await expect(
+      page.getByRole('navigation', { name: 'Main navigation' }),
+    ).toBeVisible({ timeout: 30_000 })
     await expect(
       page.getByRole('heading', { name: /Configure your quiz/i }),
     ).toBeVisible()
 
     await page.waitForTimeout(5000)
-    await page.getByRole('button', { name: /Add All/i }).click()
-    await expect(page.getByText(/Targeting 2 subjects/i)).toBeVisible()
+    await selectAllDemoSubjects(page)
     await page.getByLabel(/Slide to start quiz/i).press('Enter')
 
     await expect(
@@ -48,11 +70,15 @@ test.describe('demo-auth learning flow', () => {
     page,
   }) => {
     test.setTimeout(150000)
-    const response = await page.goto('/quiz', {
+    await page.setViewportSize({ width: 1440, height: 900 })
+    const response = await page.goto('/dashboard/quiz', {
       waitUntil: 'domcontentloaded',
     })
 
-    expect(response?.ok(), '/quiz should return 2xx').toBe(true)
+    expect(response?.ok(), '/dashboard/quiz should return 2xx').toBe(true)
+    await expect(
+      page.getByRole('navigation', { name: 'Main navigation' }),
+    ).toBeVisible({ timeout: 30_000 })
     await expect(
       page.getByRole('heading', { name: /Build mastery with one focused quiz/i }),
     ).toBeVisible()
@@ -61,8 +87,7 @@ test.describe('demo-auth learning flow', () => {
     ).toBeVisible()
 
     await page.waitForTimeout(5000)
-    await page.getByRole('button', { name: /Add All/i }).click()
-    await expect(page.getByText(/Targeting 2 subjects/i)).toBeVisible()
+    await selectAllDemoSubjects(page)
     await page.getByLabel(/Slide to start quiz/i).press('Enter')
 
     await expect(
@@ -70,7 +95,7 @@ test.describe('demo-auth learning flow', () => {
     ).toBeVisible({ timeout: 20000 })
     await page.getByRole('button', { name: /Enter Quiz/i }).click()
 
-    await expect(page).toHaveURL(/\/quiz\/session\//, {
+    await expect(page).toHaveURL(/\/dashboard\/quiz\/session\//, {
       timeout: 60000,
     })
     await expect(

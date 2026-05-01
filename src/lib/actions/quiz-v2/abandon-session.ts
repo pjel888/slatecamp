@@ -30,7 +30,7 @@ export const abandonSession = async (sessionId: string) => {
 
   revalidateDashboardCacheTags(user.id)
   revalidatePath(ROUTES.dashboard.root)
-  revalidatePath(ROUTES.dashboard.drills)
+  revalidatePath(ROUTES.dashboard.quiz)
 
   return { success: true }
 }

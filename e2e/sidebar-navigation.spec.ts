@@ -35,6 +35,7 @@ test.describe('sidebar navigation rail', () => {
     })
 
     expect(response?.ok(), '/dashboard should return 2xx').toBe(true)
+    await suppressNextDevPortal(page)
     await page.keyboard.press('Escape')
     await page.waitForTimeout(100)
     await setSidebarExpanded(page, false)
@@ -68,6 +69,35 @@ test.describe('sidebar navigation rail', () => {
     await expect(page.locator('[data-slot="tooltip-content"]')).toContainText(
       'Wiki',
     )
+
+    const quizLink = sidebar.locator('[data-t="Quiz"]')
+    await quizLink.click()
+    await expect(page).toHaveURL(/\/dashboard\/quiz$/)
+    await expect(sidebar.locator('[data-t="Quiz"]')).toHaveAttribute(
+      'aria-current',
+      'page',
+    )
+  })
+
+  test('uses the mobile navigation shell without rendering the desktop rail', async ({
+    page,
+  }) => {
+    await page.setViewportSize({ width: 390, height: 844 })
+    const response = await page.goto('/dashboard/quiz', {
+      waitUntil: 'domcontentloaded',
+    })
+
+    expect(response?.ok(), '/dashboard/quiz should return 2xx on mobile').toBe(
+      true,
+    )
+    await suppressNextDevPortal(page)
+
+    await expect(
+      page.getByRole('button', { name: 'Open navigation' }),
+    ).toBeVisible()
+    await expect(
+      page.getByRole('navigation', { name: 'Main navigation' }),
+    ).toBeHidden()
   })
 })
 
@@ -82,13 +112,25 @@ async function setSidebarExpanded(page: Page, expanded: boolean) {
   const currentWidth = await sidebarWidth(sidebar)
 
   if (currentWidth !== targetWidth) {
-    await page.evaluate((label) => {
-      const button = document.querySelector<HTMLButtonElement>(
-        `button[aria-label="${label}"]`,
-      )
-      button?.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true }))
-    }, expanded ? 'Expand sidebar' : 'Collapse sidebar')
+    const toggle = sidebar.getByRole('button', {
+      name: expanded ? 'Expand sidebar' : 'Collapse sidebar',
+    })
+
+    await expect(toggle).toBeVisible()
+    await toggle.click()
+    await expect.poll(() => sidebarWidth(sidebar)).toBe(targetWidth)
   }
+}
+
+async function suppressNextDevPortal(page: Page) {
+  await page.addStyleTag({
+    content: `
+      nextjs-portal {
+        display: none !important;
+        pointer-events: none !important;
+      }
+    `,
+  })
 }
 
 type CenterPoint = {

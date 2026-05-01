@@ -31,7 +31,7 @@ const meta = {
     },
   },
   args: {
-    practiceHref: '/quiz',
+    practiceHref: '/dashboard/quiz',
     practiceLabel: 'Review this topic',
     nodeId: 'storybook-topic',
     articleId: wikiHeaderFixture.articleId,

@@ -9,6 +9,7 @@ import {
   Exam,
   ArrowRight,
 } from '@phosphor-icons/react'
+import { ROUTES } from '@/lib/routes'
 
 interface StudioCard {
   title: string
@@ -22,28 +23,28 @@ const STUDIO_CARDS: StudioCard[] = [
   {
     title: 'Code Reference',
     description: 'Browse building codes, standards, and technical references organized by topic.',
-    href: '/dashboard/wiki',
+    href: ROUTES.dashboard.wiki,
     icon: Globe,
     cta: 'Browse references',
   },
   {
     title: '3D Lab',
     description: 'Explore spatial relationships and architectural concepts in three dimensions.',
-    href: '/dashboard/3d-lab',
+    href: ROUTES.lab.root,
     icon: Cube,
     cta: 'Open 3D Lab',
   },
   {
     title: 'Notes',
     description: 'Your personal workspace for project notes, sketches, and quick references.',
-    href: '/dashboard/notes',
+    href: ROUTES.dashboard.notes,
     icon: FileText,
     cta: 'Open notes',
   },
   {
     title: 'Quiz',
     description: 'Choose topics and answer targeted questions.',
-    href: '/quiz',
+    href: ROUTES.dashboard.quiz,
     icon: Exam,
     cta: 'Start quiz',
   },

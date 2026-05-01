@@ -37,6 +37,7 @@ const DashboardLayoutContent = async ({ children }: DashboardLayoutContentProps)
     headerList.get('x-pathname') ?? headerList.get('next-url') ?? ''
   const isLabPath =
     pathname === ROUTES.lab.root || pathname.startsWith(`${ROUTES.lab.root}/`)
+  const isQuizSessionPath = pathname.startsWith(`${ROUTES.dashboard.quiz}/session/`)
   const supabase = await createClient()
   const {
     data: { user },
@@ -194,13 +195,13 @@ const DashboardLayoutContent = async ({ children }: DashboardLayoutContentProps)
                 <SidebarContent>
                 <BreadcrumbProvider>
                   <Navbar isAdmin={userCanSeeDevToolbar} />
-                  {!isLabPath && (
+                  {!isQuizSessionPath && (
                     <div>
                       <DashboardHeader userId={user.id} />
                     </div>
                   )}
                   <main
-                    className={`flex-1 min-h-0 min-w-0 ${isLabPath ? 'overflow-hidden bg-page-bg' : 'overflow-y-auto bg-page-bg'}`}
+                    className={`flex-1 min-h-0 min-w-0 ${isQuizSessionPath ? 'overflow-hidden bg-surface-focused' : 'overflow-y-auto bg-page-bg'}`}
                   >
                     {children}
                   </main>

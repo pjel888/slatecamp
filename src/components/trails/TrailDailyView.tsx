@@ -10,6 +10,7 @@ import {
   Clock,
 } from '@phosphor-icons/react/dist/ssr'
 import { completeStep } from '@/lib/actions/trails'
+import { ROUTES } from '@/lib/routes'
 import type { CampTrail, TrailDay, TrailStep, TrailEnrollment } from '@/types/app'
 
 /**
@@ -91,7 +92,7 @@ export const TrailDailyView = ({
           stepId: step.step_id,
         })
         // Navigate to wiki placeholder
-        router.push('/dashboard/wiki')
+        router.push(ROUTES.dashboard.wiki)
         return
       }
 
@@ -100,7 +101,7 @@ export const TrailDailyView = ({
         const topicParam = step.target_node_ids.length > 0
           ? `?topics=${step.target_node_ids.join(',')}`
           : ''
-        router.push(`/quiz/camp/setup${topicParam}`)
+        router.push(`${ROUTES.dashboard.quizSetup('camp')}${topicParam}`)
         return
       }
 
@@ -109,7 +110,7 @@ export const TrailDailyView = ({
           enrollmentId: enrollment.enrollment_id,
           stepId: step.step_id,
         })
-        router.push('/dashboard/3d-lab')
+        router.push(ROUTES.lab.root)
         return
       }
 

@@ -4,6 +4,7 @@ import { useState, useCallback } from 'react'
 import Link from 'next/link'
 import { ArrowRight, CheckCircle } from '@phosphor-icons/react'
 import type { DoseActivity } from '@/lib/actions/daily-dose/generate'
+import { ROUTES } from '@/lib/routes'
 
 // ── Types ────────────────────────────────────────────────────────────────────
 
@@ -37,7 +38,7 @@ const TransitionCard = ({
 }) => {
   const label = STEP_LABEL[nextActivity.type] ?? 'Activity'
   const mode = (nextActivity.config.mode as string) ?? 'camp'
-  const href = `/quiz/${mode}/setup`
+  const href = ROUTES.dashboard.quizSetup(mode)
 
   return (
     <div

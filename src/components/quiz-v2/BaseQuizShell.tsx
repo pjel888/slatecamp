@@ -1,8 +1,9 @@
 'use client'
 
-import { ReactNode } from 'react'
+import { ReactNode, useEffect } from 'react'
 import dynamic from 'next/dynamic'
 import { useQuizStore } from '@/stores/useQuizStore'
+import { useActiveSession } from '@/lib/context/active-session-context'
 import { cn } from '@/lib/utils'
 import { QuizHeader } from './QuizHeader'
 import { QuizFooter } from './QuizFooter'
@@ -79,6 +80,12 @@ export const BaseQuizShell = ({
   onPrevious,
 }: BaseQuizShellProps) => {
   const reducedMotion = useReducedMotion()
+  const { setActiveSession } = useActiveSession()
+
+  useEffect(() => {
+    setActiveSession('quiz')
+    return () => setActiveSession(null)
+  }, [setActiveSession])
 
   // Granular store state
   const status = useQuizStore((s) => s.status)
@@ -138,7 +145,7 @@ export const BaseQuizShell = ({
   // Loading state
   if (!_hasHydrated || !currentQuestion || status === 'idle' || status === 'loading') {
     return (
-      <div className="flex flex-col min-h-screen bg-surface-focused">
+      <div className="flex h-full min-h-0 flex-col bg-surface-focused">
         <div className="flex items-center gap-3 px-4 py-2.5 border-b border-border bg-card">
           <span className="text-xs font-medium text-muted-foreground capitalize">{config.mode}</span>
           <div className="flex-1 h-1.5 rounded-full bg-border" />
@@ -157,7 +164,7 @@ export const BaseQuizShell = ({
 
   return (
     <div
-      className="flex min-h-screen flex-col bg-surface-focused"
+      className="flex h-full min-h-0 flex-col bg-surface-focused"
       aria-label="Quiz session"
       aria-busy={navigationBusy || undefined}
     >

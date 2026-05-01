@@ -230,7 +230,7 @@ export async function getDashboardData(): Promise<DashboardData> {
       subtitle: `You were on question ${current + 1} of ${total} — pick up right where you left off`,
       progress: { current: current + 1, total },
       estimatedMinutes: Math.max(1, Math.ceil((total - current) * 1.2)),
-      href: ROUTES.dashboard.drills,
+      href: ROUTES.dashboard.quiz,
     }
   } else if (weak) {
     const topicName =
@@ -264,7 +264,7 @@ export async function getDashboardData(): Promise<DashboardData> {
       type: 'quiz',
       title: `${modeName}`,
       subtitle: total > 0 ? `${total} questions · ${formatRelativeTime(lastDone.updated_at)}` : formatRelativeTime(lastDone.updated_at),
-      href: `/quiz`,
+      href: ROUTES.dashboard.quiz,
     })
   }
 
@@ -275,7 +275,7 @@ export async function getDashboardData(): Promise<DashboardData> {
       type: 'note',
       title: note.title || 'Untitled Note',
       subtitle: formatRelativeTime(note.updated_at),
-      href: `/dashboard/notes`,
+      href: ROUTES.dashboard.notes,
     })
   }
 

@@ -9,6 +9,7 @@ import { QuizBody } from './QuizBody'
 import { analyzeStamina, detectFatigue } from '@/lib/quiz/stamina-analysis'
 import { cn } from '@/lib/utils'
 import { useQuizShellHandlers } from '@/hooks/useQuizShellHandlers'
+import { ROUTES } from '@/lib/routes'
 import { 
   getSessionQuestions, 
   updateSessionProgress 
@@ -172,7 +173,7 @@ export const EnduranceShell = ({
   useEffect(() => {
     if (status === 'results' && results) {
       stopTimer()
-      router.push(`/quiz/session/${sessionId}/results`)
+      router.push(ROUTES.dashboard.quizResults(sessionId))
     }
   }, [status, results, sessionId, router, stopTimer])
 

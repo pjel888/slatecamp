@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation'
 import { CalendarBlank, Warning, Clock, ArrowRight } from '@phosphor-icons/react'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { cn } from '@/lib/utils'
+import { ROUTES } from '@/lib/routes'
 // ── Types (inlined from deleted get-review-calendar.ts) ──────────────────────
 
 export type ReviewUrgency = 'overdue' | 'due_today' | 'upcoming'
@@ -334,7 +335,7 @@ export const ReviewCalendar = ({ data }: ReviewCalendarProps) => {
             </div>
             <button
               type="button"
-              onClick={() => router.push('/quiz')}
+              onClick={() => router.push(ROUTES.dashboard.quiz)}
               className="flex items-center gap-0.5 text-[11px] font-medium text-primary transition-colors duration-150 hover:text-primary-700"
             >
               Review all

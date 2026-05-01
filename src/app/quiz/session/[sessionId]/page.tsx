@@ -1,12 +1,13 @@
-import { QuizSessionRoute } from '../../_components/QuizSessionRoute'
+import { redirect } from 'next/navigation'
+import { ROUTES } from '@/lib/routes'
 
 interface SessionPageProps {
   params: Promise<{ sessionId: string }>
 }
 
-const CanonicalQuizSessionPage = async ({ params }: SessionPageProps) => {
+const LegacyQuizSessionPage = async ({ params }: SessionPageProps) => {
   const { sessionId } = await params
-  return <QuizSessionRoute sessionId={sessionId} />
+  redirect(ROUTES.dashboard.quizSession(sessionId))
 }
 
-export default CanonicalQuizSessionPage
+export default LegacyQuizSessionPage

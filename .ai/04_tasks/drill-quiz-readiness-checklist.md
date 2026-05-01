@@ -32,10 +32,10 @@
 **Current Readiness Status: READY FOR PRODUCTION DEPLOYMENT.**
 
 
-## 2026-04-30 Route Consolidation Decision
+## 2026-05-01 Route Consolidation Decision
 
-- `/quiz` is the canonical product name and route for the standard configurable quiz.
-- `/dashboard/drills` and `/dashboard/drills/sessions` are legacy compatibility redirects only.
+- `/dashboard/quiz` is the canonical product route for the standard configurable quiz because it must render inside the dashboard shell/sidebar.
+- `/quiz`, `/quiz/*`, `/dashboard/drills`, and `/dashboard/drills/sessions` are legacy compatibility redirects only.
 - The general quiz surface has one normal mode: choose topics, choose question count, start via slide/keyboard fallback, answer via slide-to-submit, then see results.
 - Design Quiz and Endurance Quiz remain as special formats because they assess different workflows.
-- Real-user E2E coverage lives in `e2e/quiz-real-user-flow.spec.ts` and is run with `bun run test:e2e:quiz-real`; `test:e2e:drills-real` is a legacy alias.
+- Real-user E2E coverage lives in `e2e/quiz-real-user-flow.spec.ts` and now starts from `/dashboard/quiz`; `test:e2e:drills-real` is a legacy alias.

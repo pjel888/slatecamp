@@ -67,7 +67,7 @@ export const WeakestTopics = ({ data }: Props) => (
                     {item.masteryPct}%
                   </span>
                   <Link
-                    href={ROUTES.dashboard.drills}
+                    href={ROUTES.dashboard.quiz}
                     className="text-[11px] font-semibold text-primary hover:text-primary-700 transition-colors duration-150"
                   >
                     Practice

@@ -38,11 +38,11 @@ async function selectSubject(page: Page, name: string | RegExp, selectedCount: n
 
 async function openQuiz(page: Page) {
   await page.addInitScript(() => window.localStorage.clear())
-  const response = await page.goto('/quiz', {
+  const response = await page.goto('/dashboard/quiz', {
     waitUntil: 'domcontentloaded',
   })
 
-  expect(response?.ok(), '/quiz should return 2xx').toBe(true)
+  expect(response?.ok(), '/dashboard/quiz should return 2xx').toBe(true)
   await expect(
     page.getByRole('heading', { name: /Configure your quiz/i }),
   ).toBeVisible({ timeout: 60_000 })
@@ -81,7 +81,7 @@ test.describe('real seeded quiz session flow', () => {
     await expect(page.getByText(/3 questions queued across/i)).toBeVisible()
     await page.getByTestId('quiz-enter-session').click()
 
-    await expect(page).toHaveURL(/\/quiz\/session\//, {
+    await expect(page).toHaveURL(/\/dashboard\/quiz\/session\//, {
       timeout: 60_000,
     })
 
@@ -115,7 +115,7 @@ test.describe('real seeded quiz session flow', () => {
     await expect(page.getByText(/Final answer saved/i)).toBeVisible()
     await expect(page.getByText(/Results dashboard next/i)).toBeVisible()
 
-    await expect(page).toHaveURL(/\/quiz\/session\/[^/]+\/results/, {
+    await expect(page).toHaveURL(/\/dashboard\/quiz\/session\/[^/]+\/results/, {
       timeout: 60_000,
     })
     await expect(page.getByTestId('quiz-results')).toBeVisible({ timeout: 60_000 })

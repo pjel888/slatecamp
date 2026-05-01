@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { ROUTES } from '@/lib/routes'
 import type { SubjectFloorAlert as SubjectFloorAlertType } from '@/types/dashboard'
 
 interface SubjectFloorAlertProps {
@@ -24,7 +25,7 @@ export const SubjectFloorAlert = ({ alerts }: SubjectFloorAlertProps) => {
               {alert.floorPct}% in every subject to pass — regardless of your overall score.
             </p>
             <Link
-              href={`/quiz?subject=${alert.leaId ?? ''}`}
+              href={`${ROUTES.dashboard.quiz}?subject=${alert.leaId ?? ''}`}
               className="mt-2 inline-block rounded-sm bg-primary px-3 py-1.5 text-sm font-medium text-white transition-colors duration-150 ease-out hover:bg-primary-700"
             >
               Study {alert.subject} Now →

@@ -23,6 +23,39 @@ import {
  * 4. Keep alphabetically sorted within each namespace
  */
 
+const DASHBOARD_QUIZ_ROOT = '/dashboard/quiz' as const
+const DASHBOARD_QUIZ_SESSIONS = `${DASHBOARD_QUIZ_ROOT}/sessions` as const
+
+const dashboardQuizSetup = (mode: string) =>
+  `${DASHBOARD_QUIZ_ROOT}/${mode}/setup` as const
+
+const dashboardQuizSession = (sessionId: string) =>
+  `${DASHBOARD_QUIZ_ROOT}/session/${sessionId}` as const
+
+const dashboardQuizResults = (sessionId: string) =>
+  `${DASHBOARD_QUIZ_ROOT}/session/${sessionId}/results` as const
+
+const dashboardQuizReview = (sessionId: string) =>
+  `${DASHBOARD_QUIZ_ROOT}/session/${sessionId}/review` as const
+
+export const LEGACY_QUIZ_ROUTES = {
+  root: '/quiz',
+  hub: '/quiz',
+  sessions: '/quiz/sessions',
+  setup: (mode: string) => `/quiz/${mode}/setup` as const,
+  session: (sessionId: string) => `/quiz/session/${sessionId}` as const,
+  results: (sessionId: string) => `/quiz/session/${sessionId}/results` as const,
+  review: (sessionId: string) => `/quiz/session/${sessionId}/review` as const,
+  modeSession: (mode: string, sessionId: string) =>
+    `/quiz/${mode}/session/${sessionId}` as const,
+  modeResults: (mode: string, sessionId: string) =>
+    `/quiz/${mode}/session/${sessionId}/results` as const,
+  modeReview: (mode: string, sessionId: string) =>
+    `/quiz/${mode}/session/${sessionId}/review` as const,
+  dashboardDrills: '/dashboard/drills',
+  dashboardDrillsSessions: '/dashboard/drills/sessions',
+} as const
+
 export const ROUTES = {
   // ── Public ─────────────────────────────────────
   home: '/',
@@ -54,43 +87,45 @@ export const ROUTES = {
     cramCard: '/dashboard/cram-card',
     daeMode: '/dashboard/dae-mode',
     designProblems: '/dashboard/area-c/design-problems',
-    drills: '/quiz',
-    drillsSessions: '/quiz/sessions',
+    drills: DASHBOARD_QUIZ_ROOT,
+    drillsSessions: DASHBOARD_QUIZ_SESSIONS,
     flash: '/dashboard/flash',
     notes: '/dashboard/notes',
     notifications: '/dashboard/notifications',
     pods: '/dashboard/pods',
     professional: '/dashboard/professional',
     resultsDay: '/dashboard/results-day',
+    quiz: DASHBOARD_QUIZ_ROOT,
+    quizSessions: DASHBOARD_QUIZ_SESSIONS,
     settings: '/dashboard/settings',
     studio: '/dashboard/studio',
     upgrade: '/dashboard/upgrade',
     wiki: '/dashboard/wiki',
     // Dynamic helpers
     pod: (podId: string) => `/dashboard/pods/${podId}` as const,
+    quizSetup: dashboardQuizSetup,
+    quizSession: dashboardQuizSession,
+    quizResults: dashboardQuizResults,
+    quizReview: dashboardQuizReview,
     trailToday: (slug: string) => `/dashboard/camptrails/${slug}/today` as const,
   },
 
   // ── Quiz (canonical learning-assessment surface) ───────────
   quiz: {
-    root: '/quiz',
-    hub: '/quiz',
-    sessions: '/quiz/sessions',
-    legacyHub: '/dashboard/drills',
-    legacySessions: '/dashboard/drills/sessions',
-    setup: (mode: string) => `/quiz/${mode}/setup` as const,
+    root: DASHBOARD_QUIZ_ROOT,
+    hub: DASHBOARD_QUIZ_ROOT,
+    sessions: DASHBOARD_QUIZ_SESSIONS,
+    legacyRoot: LEGACY_QUIZ_ROUTES.root,
+    legacyHub: LEGACY_QUIZ_ROUTES.dashboardDrills,
+    legacySessions: LEGACY_QUIZ_ROUTES.sessions,
+    legacyDashboardSessions: LEGACY_QUIZ_ROUTES.dashboardDrillsSessions,
+    setup: dashboardQuizSetup,
     session: (sessionIdOrMode: string, maybeSessionId?: string) =>
-      maybeSessionId
-        ? `/quiz/${sessionIdOrMode}/session/${maybeSessionId}`
-        : `/quiz/session/${sessionIdOrMode}`,
+      dashboardQuizSession(maybeSessionId ?? sessionIdOrMode),
     results: (sessionIdOrMode: string, maybeSessionId?: string) =>
-      maybeSessionId
-        ? `/quiz/${sessionIdOrMode}/session/${maybeSessionId}/results`
-        : `/quiz/session/${sessionIdOrMode}/results`,
+      dashboardQuizResults(maybeSessionId ?? sessionIdOrMode),
     review: (sessionIdOrMode: string, maybeSessionId?: string) =>
-      maybeSessionId
-        ? `/quiz/${sessionIdOrMode}/session/${maybeSessionId}/review`
-        : `/quiz/session/${sessionIdOrMode}/review`,
+      dashboardQuizReview(maybeSessionId ?? sessionIdOrMode),
   },
 
   // ── 3D Lab ───────────────────────────────────
@@ -264,11 +299,15 @@ export const DASHBOARD_ROUTES: RouteConfig[] = [
     group: 'learn',
   },
   {
-    path: ROUTES.dashboard.drills,
+    path: ROUTES.dashboard.quiz,
     title: 'Quiz',
     sidebarLabel: 'Quiz',
     icon: Exam,
     group: 'practice',
+  },
+  {
+    path: ROUTES.dashboard.quizSessions,
+    title: 'Quiz Sessions',
   },
   {
     path: ROUTES.dashboard.daeMode,
@@ -349,19 +388,28 @@ export const STATIC_PAGE_TITLES: Record<string, string> = Object.fromEntries(
   DASHBOARD_ROUTES.map(({ path, title }) => [path, title]),
 ) as Record<string, string>
 
+const LEGACY_PAGE_TITLES: Record<string, string> = {
+  [LEGACY_QUIZ_ROUTES.root]: 'Quiz',
+  [LEGACY_QUIZ_ROUTES.sessions]: 'Quiz Sessions',
+  [LEGACY_QUIZ_ROUTES.dashboardDrills]: 'Quiz',
+  [LEGACY_QUIZ_ROUTES.dashboardDrillsSessions]: 'Quiz Sessions',
+}
+
 const DEFAULT_TITLE = 'Overview'
 
 const DYNAMIC_TITLE_PREFIXES: { prefix: string; title: string }[] = [
-  { prefix: '/quiz/session/', title: 'Quiz Session' },
-  { prefix: '/quiz/', title: 'Quiz' },
-  { prefix: '/dashboard/drills/', title: 'Quiz' },
+  { prefix: dashboardQuizSession(''), title: 'Quiz Session' },
+  { prefix: `${ROUTES.dashboard.quiz}/`, title: 'Quiz' },
+  { prefix: LEGACY_QUIZ_ROUTES.session(''), title: 'Quiz Session' },
+  { prefix: `${LEGACY_QUIZ_ROUTES.root}/`, title: 'Quiz' },
+  { prefix: `${LEGACY_QUIZ_ROUTES.dashboardDrills}/`, title: 'Quiz' },
   { prefix: '/dashboard/wiki/', title: 'Knowledge Wiki' },
   { prefix: '/dashboard/flash/', title: 'LEA Numbers Flash' },
   { prefix: '/dashboard/pods/', title: 'Study Pods' },
 ]
 
 export const getPageTitle = (pathname: string): string => {
-  const exact = STATIC_PAGE_TITLES[pathname]
+  const exact = STATIC_PAGE_TITLES[pathname] ?? LEGACY_PAGE_TITLES[pathname]
   if (exact) return exact
 
   const dynamicMatch = DYNAMIC_TITLE_PREFIXES.find(({ prefix }) =>

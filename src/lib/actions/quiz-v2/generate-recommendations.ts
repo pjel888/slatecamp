@@ -211,7 +211,7 @@ export const generateRecommendations = async (
           description: `Review the core concepts for ${wikiTargetTopic.topicName} before your next session.`,
           action: {
             type: 'open_wiki',
-            href: `/dashboard/wiki/${wikiRec.slug}`,
+            href: ROUTES.wiki.article(wikiRec.slug),
           },
         })
       }
@@ -229,7 +229,7 @@ export const generateRecommendations = async (
           'Spaced repetition items are due. A quick review session keeps your knowledge fresh.',
         action: {
           type: 'open_srs',
-          href: '/quiz',
+          href: ROUTES.dashboard.quiz,
         },
       })
     }

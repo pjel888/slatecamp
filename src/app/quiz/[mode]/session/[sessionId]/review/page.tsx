@@ -2,12 +2,12 @@ import { redirect } from 'next/navigation'
 import { ROUTES } from '@/lib/routes'
 
 interface ReviewPageProps {
-  params: Promise<{ mode: string; sessionId: string }>
+  params: Promise<{ sessionId: string }>
 }
 
 const LegacyModeQuizReviewPage = async ({ params }: ReviewPageProps) => {
   const { sessionId } = await params
-  redirect(ROUTES.quiz.results(sessionId))
+  redirect(ROUTES.dashboard.quizReview(sessionId))
 }
 
 export default LegacyModeQuizReviewPage
