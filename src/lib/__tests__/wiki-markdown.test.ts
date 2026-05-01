@@ -1,5 +1,11 @@
 import { describe, it, expect } from 'bun:test'
-import { sanitizeMDX, injectEIPrompts, extractHeadings } from '../wiki-markdown'
+import {
+  createMdxFallbackSource,
+  sanitizeMDX,
+  injectEIPrompts,
+  extractHeadings,
+  slugifyHeading,
+} from '../wiki-markdown'
 
 describe('wiki-markdown utility', () => {
   describe('sanitizeMDX', () => {
@@ -24,6 +30,39 @@ describe('wiki-markdown utility', () => {
 
     it('does not escape valid components', () => {
       expect(sanitizeMDX('<Note>text</Note>')).toBe('<Note>text</Note>')
+    })
+
+    it('separates inline prose in JSX learning callouts so MDX can parse the block', () => {
+      expect(sanitizeMDX('<Tip>**Remember:** inspect the section.</Tip>')).toBe(
+        '<Tip>\n\n**Remember:** inspect the section.</Tip>',
+      )
+    })
+  })
+
+  describe('createMdxFallbackSource', () => {
+    it('preserves authored prose while removing malformed self-closing learning widgets', () => {
+      const malformed = [
+        '## Core Concept',
+        'Keep the main lesson visible.',
+        '<WikiMistakeCard mistake="Dismissing" correction="Students say architecture is "temporary\\" or \\"primitive.\\"" />',
+        'Continue with the next idea.',
+      ].join('\n')
+
+      const fallback = createMdxFallbackSource(malformed)
+
+      expect(fallback).toContain('## Core Concept')
+      expect(fallback).toContain('Keep the main lesson visible.')
+      expect(fallback).toContain('Continue with the next idea.')
+      expect(fallback).not.toContain('WikiMistakeCard')
+    })
+
+    it('unwraps prose-bearing callouts instead of turning the article into a summary', () => {
+      const fallback = createMdxFallbackSource(
+        '<Tip>**Check this:** explain why the code threshold matters.</Tip>',
+      )
+
+      expect(fallback).toContain('**Check this:** explain why the code threshold matters.')
+      expect(fallback.toLowerCase()).not.toContain('summary')
     })
   })
 
@@ -70,6 +109,25 @@ describe('wiki-markdown utility', () => {
       expect(headings).toHaveLength(2)
       expect(headings[0]).toEqual({ id: 'my-heading', text: 'My Heading', level: 2 })
       expect(headings[1]).toEqual({ id: 'sub-heading', text: 'Sub Heading', level: 3 })
+    })
+
+    it('keeps repeated heading anchors unique in source order', () => {
+      const content = '## Same Heading\n### Same Heading\n## Same Heading'
+      const headings = extractHeadings(content)
+
+      expect(headings.map((heading) => heading.id)).toEqual([
+        'same-heading',
+        'same-heading-2',
+        'same-heading-3',
+      ])
+    })
+
+    it('falls back to a stable section anchor for punctuation-only headings', () => {
+      expect(slugifyHeading('§')).toBe('section')
+      expect(extractHeadings('## §\n## §').map((heading) => heading.id)).toEqual([
+        'section',
+        'section-2',
+      ])
     })
   })
 })

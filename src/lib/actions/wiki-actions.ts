@@ -7,7 +7,7 @@ import type { WikiArticle } from "@/types/app";
 import type { TaxonomyNode } from "@/lib/actions/taxonomy";
 import { getCachedTaxonomyTreeByDiscipline } from "./cached-queries";
 
-const WIKI_ARTICLE_COLUMNS = 'article_id, slug, title, content, created_at, updated_at, lea_tests_you, updated_note, subject_label, difficulty_label'
+const WIKI_ARTICLE_COLUMNS = 'article_id, slug, title, content, created_at, updated_at, lea_tests_you, updated_note, subject_label, difficulty_label, read_time'
 const TAXONOMY_NODE_COLUMNS = 'node_id, discipline_id, parent_id, level, name, subject_area, is_leaf, slug, sort_order, lea_id, description, exam_frequency, bloom_level, difficulty, prc_area'
 
 /**
@@ -102,7 +102,9 @@ export const getArticleSources = async (articleId: string): Promise<WikiArticleS
     .order('sort_order', { ascending: true })
 
   if (error) {
-    console.error('[getArticleSources] Error:', error.message)
+    // Sources are supplemental; RLS or missing grants should not pollute the
+    // learner-facing article with development-console errors.
+    console.warn('[getArticleSources] Sources unavailable:', error.message)
     return []
   }
   return (data ?? []) as WikiArticleSource[]
@@ -373,7 +375,7 @@ export async function resolveArticleAndNode(
   // Path 1: slug matches an article slug
   const { data: article } = await supabase
     .from('wiki_articles')
-    .select('article_id, slug, title, content, created_at, updated_at, lea_tests_you, updated_note, subject_label, difficulty_label, status')
+    .select('article_id, slug, title, content, created_at, updated_at, lea_tests_you, updated_note, subject_label, difficulty_label, read_time, status')
     .eq('slug', slug)
     .eq('status', 'published')
     .limit(1)
@@ -443,7 +445,7 @@ export async function resolveArticleAndNode(
 
   const { data: nodeArticle } = await supabase
     .from('wiki_articles')
-    .select('article_id, slug, title, content, created_at, updated_at, lea_tests_you, updated_note, subject_label, difficulty_label, status')
+    .select('article_id, slug, title, content, created_at, updated_at, lea_tests_you, updated_note, subject_label, difficulty_label, read_time, status')
     .eq('article_id', articleId)
     .eq('status', 'published')
     .maybeSingle()
@@ -567,7 +569,7 @@ export async function getWikiArticlesByNode(
     .select(`
       wiki_articles (
         article_id, slug, title, content, created_at, updated_at,
-        lea_tests_you, updated_note, subject_label, difficulty_label, status
+        lea_tests_you, updated_note, subject_label, difficulty_label, read_time, status
       )
     `)
     .eq("node_id", nodeId);

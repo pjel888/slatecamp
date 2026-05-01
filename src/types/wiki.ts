@@ -38,8 +38,8 @@ export interface WikiArticleHeroProps {
   difficulty: 'Foundational' | 'Intermediate' | 'Advanced'
   readTime: string
   title: string
-  updatedNote: string
-  leaTestsYou: string
+  updatedNote?: string
+  leaTestsYou?: string
   isMinimal?: boolean
 }
 

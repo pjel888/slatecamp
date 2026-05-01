@@ -3,12 +3,15 @@ import {
   WikiArticleSkeleton,
   getArticleHeadings,
   WikiArticleHero,
+  WikiLearningJourney,
+  WikiLearningCompletion,
   WikiHeader,
   WikiRightSidebar,
   WikiRightSidebarSkeleton,
   WrongAnswerBanner,
   WikiReadTracker,
 } from '@/components/wiki'
+import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { cn } from '@/lib/utils'
@@ -37,6 +40,49 @@ const mapDifficulty = (level?: number | null): 'Foundational' | 'Intermediate' |
   return 'Advanced'
 }
 
+const normalizeDifficulty = (label?: string | null, level?: number | null): 'Foundational' | 'Intermediate' | 'Advanced' => {
+  if (label === 'Foundational' || label === 'Intermediate' || label === 'Advanced') return label
+  return mapDifficulty(level)
+}
+
+const formatUpdatedNote = (updatedNote?: string | null, updatedAt?: string | null) => {
+  if (updatedNote?.trim()) return updatedNote
+  if (!updatedAt) return undefined
+  return `Updated ${new Date(updatedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}`
+}
+
+const formatReadTime = (storedReadTime: string | null | undefined, minutes: number) => {
+  if (storedReadTime?.trim()) return storedReadTime.replace(/\s*read$/i, '')
+  return `${minutes} min`
+}
+
+const truncateMetadataDescription = (value: string, maxLength = 155) => {
+  const normalized = value.replace(/\s+/g, ' ').trim()
+  if (normalized.length <= maxLength) return normalized
+  return `${normalized.slice(0, maxLength - 1).trimEnd()}…`
+}
+
+interface ArticleLearningMetadata {
+  title: string
+  subject_label?: string | null
+  difficulty_label?: string | null
+  lea_tests_you?: string | null
+}
+
+const getArticleLearningContext = (
+  article: ArticleLearningMetadata,
+  node: TaxonomyNode | null,
+) => {
+  const subjectLabel = article.subject_label || getSubjectName(node?.subject_area) || 'General Knowledge'
+  const difficultyLabel = normalizeDifficulty(article.difficulty_label, node?.difficulty ?? node?.level)
+  const learningPurpose =
+    article.lea_tests_you ||
+    node?.description ||
+    `Understand ${node?.name || article.title} well enough to recognize it in exam and practice scenarios.`
+
+  return { subjectLabel, difficultyLabel, learningPurpose }
+}
+
 interface WikiArticlePageProps {
   params: Promise<{ slug: string }>
   searchParams: Promise<{ 
@@ -44,6 +90,44 @@ interface WikiArticlePageProps {
     from?: string
     topic?: string
   }>
+}
+
+export async function generateMetadata(
+  props: Pick<WikiArticlePageProps, 'params'>,
+): Promise<Metadata> {
+  const { slug } = await props.params
+  const { article, node } = await getCachedArticleAndNode(slug)
+
+  if (!article) {
+    return {
+      title: 'Wiki Article Not Found | SlateCamp',
+      robots: { index: false, follow: false },
+    }
+  }
+
+  const { subjectLabel, difficultyLabel, learningPurpose } = getArticleLearningContext(article, node)
+  const description = truncateMetadataDescription(learningPurpose)
+  const title = `${article.title} | SlateCamp Wiki`
+
+  return {
+    title,
+    description,
+    robots: { index: false, follow: false },
+    openGraph: {
+      title,
+      description,
+      type: 'article',
+    },
+    twitter: {
+      card: 'summary',
+      title,
+      description,
+    },
+    other: {
+      'slatecamp:wiki-subject': subjectLabel,
+      'slatecamp:wiki-difficulty': difficultyLabel,
+    },
+  }
 }
 
 /**
@@ -89,6 +173,9 @@ export default async function WikiArticlePage(props: WikiArticlePageProps) {
   // Extract data for all zones
   const headings = getArticleHeadings(article)
   const readingTime = estimateReadingTime(article.content || '')
+  const { subjectLabel, difficultyLabel, learningPurpose } = getArticleLearningContext(article, node)
+  const readTimeLabel = formatReadTime(article.read_time, readingTime)
+  const updatedNote = formatUpdatedNote(article.updated_note, article.updated_at)
 
   const sidebarContent = (
     <WikiRightSidebar
@@ -138,11 +225,23 @@ export default async function WikiArticlePage(props: WikiArticlePageProps) {
 
               <WikiArticleHero
                 title={article.title}
-                subject={getSubjectName(node?.subject_area) || 'General Knowledge'}
-                difficulty={mapDifficulty(node?.level)}
-                readTime={`${readingTime} min`}
-                updatedNote={article.updated_at ? `Updated ${new Date(article.updated_at).toLocaleDateString()}` : undefined}
-                leaTestsYou="demonstrate comprehensive understanding of this architectural principle and apply it correctly in professional practice."
+                subject={subjectLabel}
+                difficulty={difficultyLabel}
+                readTime={readTimeLabel}
+                updatedNote={updatedNote}
+                leaTestsYou={learningPurpose}
+              />
+
+              <WikiLearningJourney
+                title={article.title}
+                subject={subjectLabel}
+                difficulty={difficultyLabel}
+                readTime={readTimeLabel}
+                whyItMatters={learningPurpose}
+                nodeName={wikiNodeName}
+                headings={headings}
+                relatedTopics={relatedTopics}
+                isMinimal={isMinimal}
               />
 
               <Suspense fallback={<WikiArticleSkeleton />}>
@@ -154,6 +253,14 @@ export default async function WikiArticlePage(props: WikiArticlePageProps) {
                   eiResponses={eiResponses}
                 />
               </Suspense>
+
+              {!isMinimal && (
+                <WikiLearningCompletion
+                  title={article.title}
+                  headings={headings}
+                  nodeName={wikiNodeName}
+                />
+              )}
 
             </div>
           </div>

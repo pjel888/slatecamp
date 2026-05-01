@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useTransition } from 'react'
-import DOMPurify from 'isomorphic-dompurify'
+import DOMPurify from 'dompurify'
 import { trackEvent } from '@/lib/analytics'
 import { submitEIResponse } from '@/lib/actions/ei-prompts'
 import { parseMdxProp } from '../shared/parse-mdx-prop'

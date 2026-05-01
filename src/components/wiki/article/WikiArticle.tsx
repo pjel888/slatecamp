@@ -2,7 +2,13 @@ import React, { Suspense } from 'react'
 import { compileMDX } from 'next-mdx-remote/rsc'
 import remarkGfm from 'remark-gfm'
 import { Skeleton } from '@/components/ui/skeleton'
-import { extractHeadings, sanitizeMDX, injectEIPrompts } from '@/lib/wiki-markdown'
+import {
+  createHeadingIdTracker,
+  createMdxFallbackSource,
+  extractHeadings,
+  sanitizeMDX,
+  injectEIPrompts,
+} from '@/lib/wiki-markdown'
 import type { WikiArticle as WikiArticleType } from '@/types/app'
 import type { TocHeading } from '@/lib/wiki-markdown'
 import type { EIPrompt as EIPromptType, EIResponseMap } from '@/lib/actions/ei-prompts'
@@ -48,16 +54,34 @@ interface WikiArticleProps {
 const WIKI_PROSE_CLASS_NAME =
   'prose prose-wiki dark:prose-invert'
 
-/** Stable component for H2 headings */
-function WikiH2(props: React.HTMLAttributes<HTMLHeadingElement>) {
-  const id = props.children?.toString().toLowerCase().replace(/[^a-z0-9\s-]/g, '').trim().replace(/\s+/g, '-')
-  return <h2 id={id} {...props} />
+function getHeadingText(children: React.ReactNode): string {
+  return React.Children.toArray(children)
+    .map((child) => {
+      if (typeof child === 'string' || typeof child === 'number') return String(child)
+      if (React.isValidElement<{ children?: React.ReactNode }>(child)) {
+        return getHeadingText(child.props.children)
+      }
+      return ''
+    })
+    .join('')
 }
 
-/** Stable component for H3 headings */
-function WikiH3(props: React.HTMLAttributes<HTMLHeadingElement>) {
-  const id = props.children?.toString().toLowerCase().replace(/[^a-z0-9\s-]/g, '').trim().replace(/\s+/g, '-')
-  return <h3 id={id} {...props} />
+function createWikiHeadingComponents() {
+  const nextHeadingId = createHeadingIdTracker()
+
+  const WikiH2 = ({ children, id, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
+    <h2 id={id || nextHeadingId(getHeadingText(children))} {...props}>
+      {children}
+    </h2>
+  )
+
+  const WikiH3 = ({ children, id, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
+    <h3 id={id || nextHeadingId(getHeadingText(children))} {...props}>
+      {children}
+    </h3>
+  )
+
+  return { h2: WikiH2, h3: WikiH3 }
 }
 
 /** Stable component for Tables */
@@ -123,8 +147,6 @@ function WikiEIBlock(props: any) {
 
 /** Master components map — ALL values are stable function references */
 const WIKI_COMPONENTS = {
-  h2: WikiH2,
-  h3: WikiH3,
   table: WikiTable,
   thead: WikiTHead,
   th: WikiTH,
@@ -213,21 +235,36 @@ export const compileWikiArticleWithRenderer = async ({
   const processedContent = injectEIPrompts(cleaned, eiPrompts)
   const sanitizedContent = sanitizeMDX(processedContent)
   const widgets = await resolveWidgets(sanitizedContent)
-  const components = { ...WIKI_COMPONENTS, ...widgets }
+  const headingComponents = createWikiHeadingComponents()
+  const components = { ...WIKI_COMPONENTS, ...headingComponents, ...widgets }
   const scope = {
     __mdx_prompts: eiPrompts,
     __mdx_responses: eiResponses,
     __mdx_article_id: article.article_id,
   }
 
-  return await compileMDX({
-    source: sanitizedContent,
-    components,
-    options: {
-      mdxOptions: { remarkPlugins: [remarkGfm] },
-      scope,
-    },
-  })
+  try {
+    return await compileMDX({
+      source: sanitizedContent,
+      components,
+      options: {
+        mdxOptions: { remarkPlugins: [remarkGfm] },
+        scope,
+      },
+    })
+  } catch (error) {
+    const fallbackSource = createMdxFallbackSource(processedContent)
+    if (!fallbackSource || fallbackSource === sanitizedContent) throw error
+
+    return await compileMDX({
+      source: fallbackSource,
+      components,
+      options: {
+        mdxOptions: { remarkPlugins: [remarkGfm] },
+        scope,
+      },
+    })
+  }
 }
 
 export const WikiArticle = async ({
@@ -260,7 +297,7 @@ export const WikiArticle = async ({
     })
     mdxContent = compiled
   } catch (err: any) {
-    console.error('[MDX ERROR]', err.message)
+    console.warn('[MDX WARN] Falling back to article error state:', err.message)
     mdxContent = <WikiArticleError />
   }
 

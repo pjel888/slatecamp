@@ -39,17 +39,17 @@ export const WikiArticleHero = ({
       </h1>
 
       {/* Updated metadata */}
-      {!isMinimal && (
+      {!isMinimal && updatedNote ? (
         <p className="font-[var(--font-dm-mono)] text-[11px] text-wiki-muted">
           {updatedNote}
         </p>
-      )}
+      ) : null}
 
       {/* Hero divider — separates hero from article content */}
       <div className={cn("border-t border-wiki-border mt-7 dark:border-wiki-invert-divider", isMinimal && "mt-2")} />
 
       {/* LEA orientation banner — NOT a callout */}
-      {!isMinimal && (
+      {!isMinimal && leaTestsYou ? (
         <div className="border border-camp-cobalt/20 bg-cobalt-light rounded-md px-4 py-3 dark:bg-primary/10">
           <p className="font-[var(--font-dm-mono)] text-[11px] font-medium uppercase tracking-widest text-camp-cobalt mb-1">
             The LEA tests you to
@@ -58,7 +58,7 @@ export const WikiArticleHero = ({
             {leaTestsYou}
           </p>
         </div>
-      )}
+      ) : null}
 
 
     </header>

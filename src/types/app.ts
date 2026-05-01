@@ -92,6 +92,7 @@ export interface WikiArticle {
   updated_note?: string | null;
   subject_label?: string | null;
   difficulty_label?: 'Foundational' | 'Intermediate' | 'Advanced' | null;
+  read_time?: string | null;
 }
 
 export interface UserSubscription {
