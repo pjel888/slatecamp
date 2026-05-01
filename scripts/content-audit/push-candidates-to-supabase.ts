@@ -1,0 +1,214 @@
+#!/usr/bin/env bun
+import path from 'node:path'
+import { existsSync, statSync } from 'node:fs'
+import { readFile } from 'node:fs/promises'
+import {
+  ArticleMetadata,
+  DiffReport,
+  UiBlocksFile,
+  composeCandidate,
+  createContentAuditSupabaseClient,
+  diffCandidate,
+  discoverArticleDirs,
+  evaluatePushSafety,
+  nowIso,
+  parseArgs,
+  resolveExportRoot,
+  sha256,
+  updateArticleSyncState,
+  updateArticleContentIfUnchanged,
+  writeJson,
+  writeText,
+} from './lib'
+
+async function main() {
+  const options = parseArgs()
+  const root = resolveExportRoot(options.input)
+  if (!options.articleId && !options.slug && !options.allSafe) {
+    throw new Error('Push requires --article-id, --slug, or --all-safe. Dry-run is still default.')
+  }
+  const articleDirs = discoverArticleDirs(root, options)
+  const supabase = createContentAuditSupabaseClient()
+  const dryRun = options.dryRun === true || options.apply !== true
+
+  for (const articleDir of articleDirs) {
+    const attemptedAt = nowIso()
+    let report: any = {
+      attempted_at: attemptedAt,
+      dry_run: dryRun,
+      apply: options.apply === true,
+      pushed: false,
+      blockers: [] as string[],
+      warnings: [] as string[],
+      updated_rows_count: 0,
+    }
+
+    try {
+      const metadata = JSON.parse(await readFile(path.join(articleDir, 'article-metadata.json'), 'utf-8')) as ArticleMetadata
+      report.article_id = metadata.article_id
+      report.slug = metadata.slug
+      const originalPath = path.join(articleDir, 'original.md')
+      const candidatePath = path.join(articleDir, 'candidate.md')
+      const diffPath = path.join(articleDir, 'diff-report.json')
+      const uiBlocksPath = path.join(articleDir, 'ui-blocks.json')
+      const normalizedPath = path.join(articleDir, 'normalized.md')
+      const original = existsSync(originalPath) ? await readFile(originalPath, 'utf-8') : ''
+      let candidate = existsSync(candidatePath) ? await readFile(candidatePath, 'utf-8') : null
+      const uiBlocks = existsSync(uiBlocksPath) ? JSON.parse(await readFile(uiBlocksPath, 'utf-8')) as UiBlocksFile : null
+      const preparation = await prepareCandidateAndDiff({
+        articleDir,
+        metadata,
+        original,
+        candidate,
+        uiBlocks,
+        candidatePath,
+        diffPath,
+        normalizedPath,
+        uiBlocksPath,
+      })
+      candidate = preparation.candidate
+      const diffReport = preparation.diffReport
+      report.preparation_actions = preparation.actions
+
+      const { data: remote, error } = await supabase
+        .from('wiki_articles')
+        .select('article_id,content,updated_at')
+        .eq('article_id', metadata.article_id)
+        .maybeSingle()
+      if (error) throw new Error(`Failed to fetch current remote article: ${error.message}`)
+      if (!remote) throw new Error('Remote article not found')
+
+      const safety = evaluatePushSafety({
+        metadata,
+        original,
+        candidate,
+        diffReport,
+        uiBlocks,
+        remoteContent: remote.content,
+        apply: options.apply === true,
+        dryRun,
+        force: options.force === true,
+      })
+
+      report = {
+        ...report,
+        ...safety,
+        remote_updated_at_before: remote.updated_at,
+        dry_run: safety.dry_run,
+        apply: safety.apply,
+      }
+
+      if (options.allSafe && diffReport && !diffReport.safe_to_push) {
+        report.blockers.push('--all-safe skipped article because diff-report is unsafe.')
+      }
+
+      if (report.blockers.length === 0 && options.apply === true && !dryRun) {
+        const updatePayload: Record<string, unknown> = {
+          content: candidate,
+          updated_at: nowIso(),
+        }
+        if (options.reviewerId) updatePayload.updated_by = options.reviewerId
+        if (options.note) updatePayload.updated_note = options.note
+        const updated = await updateArticleContentIfUnchanged({
+          supabase,
+          articleId: metadata.article_id,
+          originalContent: original,
+          updatePayload,
+        })
+        report.pushed = true
+        report.updated_rows_count = updated.length
+        report.updated_at_after = updated[0]?.updated_at ?? null
+      }
+
+      const syncStatus = report.pushed
+        ? 'pushed'
+        : report.blockers.some((blocker: string) => blocker.includes('stale') || blocker.includes('Remote Supabase content differs'))
+          ? 'conflict'
+          : report.blockers.length === 0
+            ? 'dry_run_passed'
+            : 'error'
+      const syncPatch = {
+        candidate_hash: safety.candidate_hash,
+        last_diff_at: diffReport?.generated_at ?? null,
+        sync_status: syncStatus,
+      } as Parameters<typeof updateArticleSyncState>[3]
+      if (dryRun) syncPatch.last_push_dry_run_at = attemptedAt
+      if (report.pushed) syncPatch.last_push_applied_at = attemptedAt
+      await updateArticleSyncState(root, articleDir, metadata, syncPatch)
+      await writeJson(path.join(articleDir, 'push-report.json'), report)
+      if (report.blockers.some((blocker: string) => blocker.includes('stale') || blocker.includes('Remote Supabase content differs'))) {
+        await writeJson(path.join(articleDir, 'conflict-report.json'), report)
+      }
+      console.log(`${report.pushed ? '✓ pushed' : '✓ push dry/safe-check'} ${metadata.article_id}: blockers=${report.blockers.length}`)
+    } catch (error) {
+      const message = error instanceof Error ? error.message : String(error)
+      report.blockers.push(message)
+      await writeJson(path.join(articleDir, 'push-report.json'), report)
+      console.error(`✗ push ${articleDir}: ${message}`)
+      if (options.strict) throw error
+    }
+  }
+}
+
+main().catch((error) => {
+  console.error(error instanceof Error ? error.message : error)
+  process.exit(1)
+})
+
+async function prepareCandidateAndDiff({
+  articleDir,
+  metadata,
+  original,
+  candidate,
+  uiBlocks,
+  candidatePath,
+  diffPath,
+  normalizedPath,
+  uiBlocksPath,
+}: {
+  articleDir: string
+  metadata: ArticleMetadata
+  original: string
+  candidate: string | null
+  uiBlocks: UiBlocksFile | null
+  candidatePath: string
+  diffPath: string
+  normalizedPath: string
+  uiBlocksPath: string
+}) {
+  const actions: string[] = []
+  const candidateNeedsCompose = !candidate || isFileStale(candidatePath, [normalizedPath, uiBlocksPath])
+  if (candidateNeedsCompose) {
+    if (!existsSync(normalizedPath)) throw new Error('candidate.md missing/stale and normalized.md is unavailable for auto-compose.')
+    if (!uiBlocks) throw new Error('candidate.md missing/stale and ui-blocks.json is unavailable for auto-compose.')
+    const normalized = await readFile(normalizedPath, 'utf-8')
+    const composed = composeCandidate({ normalized, uiBlocks, original })
+    candidate = composed.candidate
+    await writeText(candidatePath, candidate)
+    await writeJson(path.join(articleDir, 'compose-report.json'), composed.report)
+    metadata.candidate_content_hash = composed.report.candidate_hash
+    await writeJson(path.join(articleDir, 'article-metadata.json'), metadata)
+    actions.push('auto_composed_candidate')
+  }
+
+  let diffReport = existsSync(diffPath) ? JSON.parse(await readFile(diffPath, 'utf-8')) as DiffReport : null
+  const diffNeedsGeneration = !diffReport ||
+    isFileStale(diffPath, [path.join(articleDir, 'original.md'), candidatePath, uiBlocksPath]) ||
+    (candidate ? diffReport.candidate_hash !== sha256(candidate) : false)
+
+  if (diffNeedsGeneration) {
+    if (!candidate) throw new Error('candidate.md is missing and could not be auto-composed.')
+    const normalized = existsSync(normalizedPath) ? await readFile(normalizedPath, 'utf-8') : null
+    diffReport = diffCandidate({ metadata, original, normalized, candidate, uiBlocks })
+    await writeJson(diffPath, diffReport)
+    actions.push('auto_generated_diff')
+  }
+
+  return { candidate, diffReport, actions }
+}
+
+function isFileStale(targetPath: string, sourcePaths: string[]) {
+  if (!existsSync(targetPath)) return true
+  const targetMtime = statSync(targetPath).mtimeMs
+  return sourcePaths.some((sourcePath) => existsSync(sourcePath) && statSync(sourcePath).mtimeMs > targetMtime)
+}

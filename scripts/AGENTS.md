@@ -7,7 +7,7 @@
 This file governs `scripts/` and the repository's script-level maintenance/tooling surface.
 
 ## Current subtree reality
-`scripts/` currently contains 38 files and 1 nested directory.
+`scripts/` currently contains 39 direct files, 3 direct nested directories, and 58 script files within two levels.
 
 Live script areas include:
 - dev server launcher (`dev.js`)
@@ -15,6 +15,7 @@ Live script areas include:
 - storybook checks
 - entitlement checks
 - content import/upload/normalization utilities
+- content round-trip audit tooling (`scripts/content-audit/`) for Supabase export, markdown/UI-block preservation, candidate composition, validation, diffing, and dry-run-first push safety
 - taxonomy/content-linking utilities
 - legal citation/content quality tooling
 
