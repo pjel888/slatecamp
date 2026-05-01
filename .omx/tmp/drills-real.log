@@ -1,0 +1,55 @@
+$ bun scripts/playwright-run.ts drills-real
+[2m[WebServer] [22m[playwright-web-server] Removed stale Next dev cache at /Users/philiplewis/slatecamp/.next/dev
+[2m[WebServer] [22m(node:10872) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:10931) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 3 tests using 1 worker
+
+(node:12776) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:12776) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:10931) Warning: `--localstorage-file` was provided without a valid path
+[2m[WebServer] [22m[intelligent-routing] question states query failed: permission denied for table user_question_states
+[2m[WebServer] [22m(node:21037) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:21648) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:21794) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:21934) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:22073) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:22145) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:22491) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:22711) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22m(node:23930) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[2m[WebServer] [22m(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [chromium] › e2e/drills-real-user-flow.spec.ts:66:7 › real seeded drills session flow › starts through real slide controls, submits persisted questions, and exits with saved progress (1.2m)
+[2m[WebServer] [22m[intelligent-routing] question states query failed: permission denied for table user_question_states
+  ✓  2 [chromium] › e2e/drills-real-user-flow.spec.ts:128:7 › real seeded drills session flow › supports accessible keyboard fallback for the start slider (7.2s)
+[2m[WebServer] [22m[intelligent-routing] question states query failed: permission denied for table user_question_states
+[2m[WebServer] [22m[intelligent-routing] CRITICAL: Empty pool after all fallbacks. {
+[2m[WebServer] [22m  topicCount: [33m1[39m,
+[2m[WebServer] [22m  difficultyRange: { min: [33m0.4[39m, max: [33m0.7[39m },
+[2m[WebServer] [22m  interactedCount: [33m0[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[browser] Failed to start session: No questions found. Try widening your selection or changing difficulty.
+[2m[WebServer] [22m    at handleStart (src/components/testing/hub/HeroConfigurator.tsx:126:17)
+[2m[WebServer] [22m  124 |       if (!result.success) {
+[2m[WebServer] [22m  125 |         const err = result as { message?: string; error?: string; errorCode?: string }
+[2m[WebServer] [22m> 126 |         console.error('Failed to start session:', err.message ?? err.error)
+[2m[WebServer] [22m      |                 ^
+[2m[WebServer] [22m  127 |
+[2m[WebServer] [22m  128 |         setModalPhase(null)
+[2m[WebServer] [22m  129 |         if (err.errorCode === 'PRO_MODE_REQUIRED' || err.error === 'TIER_INSUFFICIENT') { (src/components/testing/hub/HeroConfigurator.tsx:126:17)
+[2m[WebServer] [22m[intelligent-routing] question states query failed: permission denied for table user_question_states
+  ✓  3 [chromium] › e2e/drills-real-user-flow.spec.ts:143:7 › real seeded drills session flow › shows a recoverable error when selected filters have no matching questions (11.3s)
+
+  3 passed (1.8m)

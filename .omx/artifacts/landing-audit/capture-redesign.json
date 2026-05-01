@@ -1,0 +1,105 @@
+[
+  {
+    "name": "redesign-desktop",
+    "ok": true,
+    "status": 200,
+    "screenshot": ".omx/artifacts/landing-audit/redesign-desktop.png",
+    "consoleMessages": [
+      "warning: [.WebGL-0x12c001d6800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+      "warning: THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.",
+      "warning: [.WebGL-0x12c001c4e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+      "warning: [.WebGL-0x12c001c4e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+      "warning: [.WebGL-0x12c001c4e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+    ],
+    "title": "SlateCamp — Know Your ALE Readiness Before Exam Day",
+    "overflowX": false,
+    "scrollW": 1440,
+    "innerW": 1440,
+    "h1Count": 1,
+    "hero": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 1016
+    },
+    "canvas": [
+      {
+        "w": 1440,
+        "h": 1016,
+        "top": 0,
+        "left": 0
+      }
+    ],
+    "ctaVisible": true,
+    "hasWaypointCard": false,
+    "bodyMentionsLEA": false,
+    "brokenHashes": [],
+    "navText": "Slate Camp Features How it works FAQ Plans Go to dashboard"
+  },
+  {
+    "name": "redesign-tablet",
+    "ok": true,
+    "status": 200,
+    "screenshot": ".omx/artifacts/landing-audit/redesign-tablet.png",
+    "consoleMessages": [
+      "warning: THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."
+    ],
+    "title": "SlateCamp — Know Your ALE Readiness Before Exam Day",
+    "overflowX": false,
+    "scrollW": 768,
+    "innerW": 768,
+    "h1Count": 1,
+    "hero": {
+      "x": 0,
+      "y": 0,
+      "w": 768,
+      "h": 1016
+    },
+    "canvas": [
+      {
+        "w": 768,
+        "h": 1016,
+        "top": 0,
+        "left": 0
+      }
+    ],
+    "ctaVisible": true,
+    "hasWaypointCard": false,
+    "bodyMentionsLEA": false,
+    "brokenHashes": [],
+    "navText": "Slate Camp Features How it works FAQ Plans Go to dashboard"
+  },
+  {
+    "name": "redesign-mobile",
+    "ok": true,
+    "status": 200,
+    "screenshot": ".omx/artifacts/landing-audit/redesign-mobile.png",
+    "consoleMessages": [
+      "warning: THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."
+    ],
+    "title": "SlateCamp — Know Your ALE Readiness Before Exam Day",
+    "overflowX": false,
+    "scrollW": 390,
+    "innerW": 390,
+    "h1Count": 1,
+    "hero": {
+      "x": 0,
+      "y": 0,
+      "w": 390,
+      "h": 1128
+    },
+    "canvas": [
+      {
+        "w": 390,
+        "h": 1128,
+        "top": 0,
+        "left": 0
+      }
+    ],
+    "ctaVisible": true,
+    "hasWaypointCard": false,
+    "bodyMentionsLEA": false,
+    "brokenHashes": [],
+    "navText": "Slate Camp Go to dashboard"
+  }
+]

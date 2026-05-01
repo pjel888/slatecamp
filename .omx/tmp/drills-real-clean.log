@@ -1,0 +1,24 @@
+$ bun scripts/playwright-run.ts drills-real
+[2m[WebServer] [22m[playwright-web-server] Removed stale Next dev cache at /Users/philiplewis/slatecamp/.next/dev
+
+Running 3 tests using 1 worker
+
+  ✓  1 [chromium] › e2e/drills-real-user-flow.spec.ts:66:7 › real seeded drills session flow › starts through real slide controls, submits persisted questions, and opens results through the final transition (1.3m)
+  ✓  2 [chromium] › e2e/drills-real-user-flow.spec.ts:124:7 › real seeded drills session flow › supports accessible keyboard fallback for the start slider (9.8s)
+[2m[WebServer] [22m[intelligent-routing] CRITICAL: Empty pool after all fallbacks. {
+[2m[WebServer] [22m  topicCount: [33m1[39m,
+[2m[WebServer] [22m  difficultyRange: { min: [33m0.4[39m, max: [33m0.7[39m },
+[2m[WebServer] [22m  interactedCount: [33m3[39m
+[2m[WebServer] [22m}
+[2m[WebServer] [22m[36m[browser][39m Failed to start session: No questions found. Try widening your selection or changing difficulty.
+[2m[WebServer] [22m[31m    at handleStart (src/components/testing/hub/HeroConfigurator.tsx:126:17)[39m
+[2m[WebServer] [22m  124 |       if (!result.success) {
+[2m[WebServer] [22m  125 |         const err = result as { message?: string; error?: string; errorCode?: string }
+[2m[WebServer] [22m> 126 |         console.error('Failed to start session:', err.message ?? err.error)
+[2m[WebServer] [22m      |                 ^
+[2m[WebServer] [22m  127 |
+[2m[WebServer] [22m  128 |         setModalPhase(null)
+[2m[WebServer] [22m  129 |         if (err.errorCode === 'PRO_MODE_REQUIRED' || err.error === 'TIER_INSUFFICIENT') { [2m(src/components/testing/hub/HeroConfigurator.tsx:126:17)[22m
+  ✓  3 [chromium] › e2e/drills-real-user-flow.spec.ts:139:7 › real seeded drills session flow › shows a recoverable error when selected filters have no matching questions (14.8s)
+
+  3 passed (2.0m)

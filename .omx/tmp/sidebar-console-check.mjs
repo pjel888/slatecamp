@@ -1,0 +1,16 @@
+import { chromium } from 'playwright'
+const errors = []
+const browser = await chromium.launch({ headless: true })
+const page = await browser.newPage({ baseURL: 'http://localhost:3001', viewport: { width: 1440, height: 900 } })
+page.on('console', msg => { if (msg.type() === 'error') errors.push(msg.text()) })
+page.on('pageerror', err => errors.push(err.message))
+await page.addInitScript(() => window.localStorage.setItem('slatecamp_sidebar_expanded', 'false'))
+await page.goto('/dashboard', { waitUntil: 'load' })
+await page.waitForTimeout(5000)
+await page.getByRole('button', { name: 'Expand sidebar' }).click()
+await page.waitForTimeout(700)
+await page.getByRole('button', { name: 'Collapse sidebar' }).click()
+await page.waitForTimeout(700)
+console.log(JSON.stringify({ consoleErrors: errors }, null, 2))
+await browser.close()
+process.exit(errors.length ? 1 : 0)

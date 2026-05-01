@@ -1,0 +1,2197 @@
+[
+  {
+    "name": "slate-desktop",
+    "ok": true,
+    "screenshot": ".omx/artifacts/landing-audit/slate-desktop.png",
+    "consoleErrors": [
+      "warning: [.WebGL-0x10c001cea00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+      "warning: THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.",
+      "warning: [.WebGL-0x10c001c2400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+      "warning: [.WebGL-0x10c001c2400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+      "warning: [.WebGL-0x10c001c2400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+    ],
+    "title": "SlateCamp — Know Your LEA Readiness Before Exam Day",
+    "url": "http://localhost:3001/",
+    "width": 1440,
+    "height": 1000,
+    "docH": 1000,
+    "scrollW": 1440,
+    "overflowX": false,
+    "bg": "rgb(255, 255, 255)",
+    "hero": {
+      "w": 1440,
+      "h": 900,
+      "top": 0
+    },
+    "main": {
+      "w": 1440,
+      "h": 5225
+    },
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "Your Learning Basecamp",
+        "href": null,
+        "aria": null,
+        "classes": "mt-6 max-w-3xl font-display text-[clamp(2.8rem,8vw,5.75rem)] font-black leading-[0.95] text-ink"
+      },
+      {
+        "tag": "h3",
+        "text": "Learn together",
+        "href": null,
+        "aria": null,
+        "classes": "mt-2 text-[18px] font-bold text-white"
+      },
+      {
+        "tag": "h2",
+        "text": "A product map learners can understand at a glance.",
+        "href": null,
+        "aria": null,
+        "classes": "mt-3 font-display text-[clamp(2rem,4vw,3.25rem)] font-black leading-tight text-ink"
+      },
+      {
+        "tag": "h3",
+        "text": "Guided learning paths",
+        "href": null,
+        "aria": null,
+        "classes": "mt-1 text-[15px] font-bold text-ink"
+      },
+      {
+        "tag": "h3",
+        "text": "Notes, discussion, reflection",
+        "href": null,
+        "aria": null,
+        "classes": "mt-1 text-[15px] font-bold text-ink"
+      },
+      {
+        "tag": "h3",
+        "text": "Review with clarity",
+        "href": null,
+        "aria": null,
+        "classes": "mt-1 text-[15px] font-bold text-ink"
+      },
+      {
+        "tag": "h3",
+        "text": "Mastery milestones",
+        "href": null,
+        "aria": null,
+        "classes": "mt-1 text-[15px] font-bold text-ink"
+      },
+      {
+        "tag": "h3",
+        "text": "Launch your next goal",
+        "href": null,
+        "aria": null,
+        "classes": "mt-1 text-[15px] font-bold text-ink"
+      },
+      {
+        "tag": "h2",
+        "text": "Practical tools, framed as a guided learning trail.",
+        "href": null,
+        "aria": null,
+        "classes": "mt-3 font-display text-[clamp(2rem,4vw,3.25rem)] font-black leading-tight text-ink"
+      },
+      {
+        "tag": "h3",
+        "text": "Guided Trails",
+        "href": null,
+        "aria": null,
+        "classes": "mt-1 text-[17px] font-bold text-ink"
+      },
+      {
+        "tag": "h3",
+        "text": "Readiness Tracking",
+        "href": null,
+        "aria": null,
+        "classes": "mt-1 text-[17px] font-bold text-ink"
+      },
+      {
+        "tag": "h3",
+        "text": "Campfire Notes",
+        "href": null,
+        "aria": null,
+        "classes": "mt-1 text-[17px] font-bold text-ink"
+      },
+      {
+        "tag": "h3",
+        "text": "Cohort Momentum",
+        "href": null,
+        "aria": null,
+        "classes": "mt-1 text-[17px] font-bold text-ink"
+      },
+      {
+        "tag": "h3",
+        "text": "Professional Workflow",
+        "href": null,
+        "aria": null,
+        "classes": "mt-1 text-[17px] font-bold text-ink"
+      },
+      {
+        "tag": "h2",
+        "text": "From trailhead to summit, every step has a next action.",
+        "href": null,
+        "aria": null,
+        "classes": "mt-3 font-display text-[clamp(2rem,4vw,3.25rem)] font-black leading-tight text-white"
+      },
+      {
+        "tag": "h3",
+        "text": "Choose your trail",
+        "href": null,
+        "aria": null,
+        "classes": "mt-4 text-[16px] font-bold text-white"
+      },
+      {
+        "tag": "h3",
+        "text": "Learn with focused resources",
+        "href": null,
+        "aria": null,
+        "classes": "mt-4 text-[16px] font-bold text-white"
+      },
+      {
+        "tag": "h3",
+        "text": "Practice and reflect",
+        "href": null,
+        "aria": null,
+        "classes": "mt-4 text-[16px] font-bold text-white"
+      },
+      {
+        "tag": "h3",
+        "text": "Reach your summit",
+        "href": null,
+        "aria": null,
+        "classes": "mt-4 text-[16px] font-bold text-white"
+      },
+      {
+        "tag": "h2",
+        "text": "Built for serious learners with different schedules.",
+        "href": null,
+        "aria": null,
+        "classes": "mt-3 font-display text-[clamp(2rem,4vw,3.25rem)] font-black leading-tight text-ink"
+      },
+      {
+        "tag": "h3",
+        "text": "Students",
+        "href": null,
+        "aria": null,
+        "classes": "text-[16px] font-bold text-ink"
+      },
+      {
+        "tag": "h3",
+        "text": "Working professionals",
+        "href": null,
+        "aria": null,
+        "classes": "text-[16px] font-bold text-ink"
+      },
+      {
+        "tag": "h3",
+        "text": "Teams or cohorts",
+        "href": null,
+        "aria": null,
+        "classes": "text-[16px] font-bold text-ink"
+      },
+      {
+        "tag": "h3",
+        "text": "Self-paced learners",
+        "href": null,
+        "aria": null,
+        "classes": "text-[16px] font-bold text-ink"
+      },
+      {
+        "tag": "h2",
+        "text": "Credibility space for outcomes, partners, and candidate stories.",
+        "href": null,
+        "aria": null,
+        "classes": "mt-3 font-display text-[clamp(2rem,4vw,3.25rem)] font-black leading-tight text-ink"
+      },
+      {
+        "tag": "h2",
+        "text": "Plain answers before you start.",
+        "href": null,
+        "aria": null,
+        "classes": "mt-3 font-display text-[clamp(2rem,4vw,3.25rem)] font-black leading-tight text-ink"
+      },
+      {
+        "tag": "h2",
+        "text": "Ready to start your next learning trail?",
+        "href": null,
+        "aria": null,
+        "classes": "mt-3 max-w-2xl font-display text-[clamp(2rem,4vw,3.75rem)] font-black leading-tight text-white"
+      }
+    ],
+    "buttons": [
+      {
+        "tag": "a",
+        "text": "SlateCamp 🇵🇭",
+        "href": "http://localhost:3001/#top",
+        "w": 174,
+        "h": 26,
+        "top": 15,
+        "left": 120
+      },
+      {
+        "tag": "a",
+        "text": "Features",
+        "href": "http://localhost:3001/#features",
+        "w": 74,
+        "h": 44,
+        "top": 6,
+        "left": 554
+      },
+      {
+        "tag": "a",
+        "text": "How it works",
+        "href": "http://localhost:3001/#how-it-works",
+        "w": 96,
+        "h": 44,
+        "top": 6,
+        "left": 631
+      },
+      {
+        "tag": "a",
+        "text": "Use cases",
+        "href": "http://localhost:3001/#use-cases",
+        "w": 82,
+        "h": 44,
+        "top": 6,
+        "left": 732
+      },
+      {
+        "tag": "a",
+        "text": "FAQ",
+        "href": "http://localhost:3001/#faq",
+        "w": 48,
+        "h": 44,
+        "top": 6,
+        "left": 818
+      },
+      {
+        "tag": "a",
+        "text": "Plans",
+        "href": "http://localhost:3001/pricing",
+        "w": 55,
+        "h": 44,
+        "top": 6,
+        "left": 870
+      },
+      {
+        "tag": "a",
+        "text": "Go to dashboard",
+        "href": "http://localhost:3001/dashboard",
+        "w": 136,
+        "h": 44,
+        "top": 6,
+        "left": 1184
+      },
+      {
+        "tag": "a",
+        "text": "Go to Dashboard",
+        "href": "http://localhost:3001/dashboard",
+        "w": 182,
+        "h": 47,
+        "top": 650,
+        "left": 120
+      },
+      {
+        "tag": "a",
+        "text": "See How It Works",
+        "href": "http://localhost:3001/#how-it-works",
+        "w": 168,
+        "h": 47,
+        "top": 650,
+        "left": 314
+      },
+      {
+        "tag": "button",
+        "text": "Learn together",
+        "href": null,
+        "w": 120,
+        "h": 29,
+        "top": 517,
+        "left": 929
+      },
+      {
+        "tag": "button",
+        "text": "Follow structured paths",
+        "href": null,
+        "w": 147,
+        "h": 25,
+        "top": 486,
+        "left": 684
+      },
+      {
+        "tag": "button",
+        "text": "Reflect and review",
+        "href": null,
+        "w": 179,
+        "h": 37,
+        "top": 688,
+        "left": 982
+      },
+      {
+        "tag": "button",
+        "text": "Track mastery",
+        "href": null,
+        "w": 90,
+        "h": 22,
+        "top": 322,
+        "left": 1054
+      },
+      {
+        "tag": "button",
+        "text": "Launch your next goal",
+        "href": null,
+        "w": 234,
+        "h": 42,
+        "top": 853,
+        "left": 805
+      },
+      {
+        "tag": "button",
+        "text": "Pause",
+        "href": null,
+        "w": 82,
+        "h": 36,
+        "top": 163,
+        "left": 1221
+      },
+      {
+        "tag": "button",
+        "text": "Learn together",
+        "href": null,
+        "w": 78,
+        "h": 57,
+        "top": 703,
+        "left": 872
+      },
+      {
+        "tag": "button",
+        "text": "Follow structured paths",
+        "href": null,
+        "w": 78,
+        "h": 57,
+        "top": 703,
+        "left": 958
+      },
+      {
+        "tag": "button",
+        "text": "Reflect and review",
+        "href": null,
+        "w": 78,
+        "h": 57,
+        "top": 703,
+        "left": 1044
+      },
+      {
+        "tag": "button",
+        "text": "Track mastery",
+        "href": null,
+        "w": 78,
+        "h": 57,
+        "top": 703,
+        "left": 1130
+      },
+      {
+        "tag": "button",
+        "text": "Launch your next goal",
+        "href": null,
+        "w": 78,
+        "h": 57,
+        "top": 703,
+        "left": 1216
+      },
+      {
+        "tag": "summary",
+        "text": "Is SlateCamp only for the Philippine Architecture Licensure Exam?",
+        "href": null,
+        "w": 858,
+        "h": 23,
+        "top": 4561,
+        "left": 291
+      },
+      {
+        "tag": "summary",
+        "text": "Does the camp metaphor replace serious analytics?",
+        "href": null,
+        "w": 858,
+        "h": 23,
+        "top": 4625,
+        "left": 291
+      },
+      {
+        "tag": "summary",
+        "text": "Can I start without a paid plan?",
+        "href": null,
+        "w": 858,
+        "h": 23,
+        "top": 4688,
+        "left": 291
+      },
+      {
+        "tag": "a",
+        "text": "Go to Dashboard",
+        "href": "http://localhost:3001/dashboard",
+        "w": 182,
+        "h": 45,
+        "top": 4956,
+        "left": 1090
+      },
+      {
+        "tag": "a",
+        "text": "Tools",
+        "href": "http://localhost:3001/tools",
+        "w": 51,
+        "h": 42,
+        "top": 5250,
+        "left": 614
+      },
+      {
+        "tag": "a",
+        "text": "Pricing",
+        "href": "http://localhost:3001/pricing",
+        "w": 61,
+        "h": 42,
+        "top": 5250,
+        "left": 669
+      },
+      {
+        "tag": "a",
+        "text": "About",
+        "href": "http://localhost:3001/about",
+        "w": 55,
+        "h": 42,
+        "top": 5250,
+        "left": 735
+      },
+      {
+        "tag": "a",
+        "text": "Contact",
+        "href": "http://localhost:3001/contact",
+        "w": 65,
+        "h": 42,
+        "top": 5250,
+        "left": 794
+      }
+    ],
+    "canvases": [
+      {
+        "w": 640,
+        "h": 638,
+        "top": 147,
+        "left": 679
+      }
+    ],
+    "bodyText": "DEV SlateCamp 🇵🇭 Features How it works Use cases FAQ Plans Go to dashboard Professional LEA review platform Your Learning Basecamp SlateCamp helps students and professionals turn scattered learning into guided progress — with structured paths, notes, practice, community, and a live view of Philippine Architecture Licensure Exam readiness. Go to Dashboard See How It Works Syllabus-mapped LEA prep Readiness Score powered by IRT Built by a licensed architect Learn together Follow structured paths Reflect and review Track mastery Launch your next goal INTERACTIVE MAP Basecamp, trails, lake review, summit goals, and launch shore. Pause CURRENT CAMP STOP Learn together Discussion, notes, and reflection keep momentum visible. Learn together Follow structured paths Reflect and review Track mastery Launch your next goal Built for LEA candidates Question paths mapped to architecture subjects 3D models for spatial concepts EXPLORE THE CAMP A product map learners can understand at a glance. The landscape is a narrative layer for real product behavior: paths, discussion, review, mastery, and outcomes. TRAILS Guided learning paths Follow a structured route through LEA topics, prerequisites, and practice instead of piecing together a plan from scattered notes. CAMPFIRE Notes, discussion, reflection Gather ideas from practice, wiki references, and community momentum so each study block leaves a clear trace. LAKE Review with clarity Readiness signals and heatmaps turn noisy progress into a calm view of what needs one more pass. MOUNTAINS Mastery milestones Climb toward measurable confidence with subject coverage, calibrated practice, and exam-day readiness. SHORE Launch your next goal Turn review into action: simulations, focused drills, and a clear next destination after every session. FEATURES Practical tools, framed as a guided learning trail. The camp story stays subtle. The value is concrete: structure, progress, notes, collaboration, and professional context. CURRICULUM PATHS Guided Trails Structured study routes help candidates move through the LEA syllabus with less guesswork and fewer dead ends. PROGRESS INTELLIGENCE Readiness Tracking A live Readiness Score and taxonomy heatmap show where you stand before exam day. KNOWLEDGE CAPTURE Campfire Notes Keep references, reflections, and review notes close to the questions and topics that created them. SHARED ACCOUNTABILITY Cohort Momentum Built to support self-paced learners, review groups, and professional routines without turning study into noise. STUDENT TO PRACTITIONER Professional Workflow Architecture-focused tools, wiki references, and 3D models connect exam prep to real practice. HOW IT WORKS From trailhead to summit, every step has a next action. Choose a route, study with context, practice deliberately, then use readiness signals to decide what comes next. 01 Choose your trail Start from a guided path, diagnostic, or focused topic depending on where you are in review. 02 Learn with focused resources Move between practice, wiki references, notes, and 3D explanations without losing context. 03 Practice and reflect Use drills, review prompts, and clear explanations to turn mistakes into the next study move. 04 Reach your summit Track readiness, close gaps, and build a routine that lasts through exam season. USE CASES Built for serious learners with different schedules. SlateCamp keeps the workflow clear whether you study alone, with a group, between work hours, or in a dedicated review season. Students Build a repeatable review routine around the LEA syllabus, practice, and progress signals. Working professionals Use focused sessions and clear next steps when study time has to fit around real work. Teams or cohorts Create shared momentum around paths, discussion, and measurable readiness. Self-paced learners Explore at your own pace while still knowing what to do next. TRUST Credibility space for outcomes, partners, and candidate stories. This section is intentionally placeholder-ready until verified testimonials, institutional logos, or outcome data are ready to publish. PLACEHOLDER-READY Replace with a verified candidate quote after launch interviews. PLACEHOLDER-READY Add review-center, school, or partner marks only after permission. PLACEHOLDER-READY Publish real outcome data only when the cohort sample is large enough. FAQ Plain answers before you start. The landing page is more immersive, but the product promise remains direct. Is SlateCamp only for the Philippine Architecture Licensure Exam? Does the camp metaphor replace serious analytics? Can I start without a paid plan? TRAILHEAD Ready to start your next learning trail? Begin at basecamp, follow a path, and keep your progress visible all the way to exam readiness. Go to Dashboard © 2026 SlateCamp Tools Pricing About Contact Less, but better."
+  },
+  {
+    "name": "slate-tablet",
+    "ok": true,
+    "screenshot": ".omx/artifacts/landing-audit/slate-tablet.png",
+    "consoleErrors": [
+      "warning: THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."
+    ],
+    "title": "SlateCamp — Know Your LEA Readiness Before Exam Day",
+    "url": "http://localhost:3001/",
+    "width": 768,
+    "height": 1000,
+    "docH": 1000,
+    "scrollW": 768,
+    "overflowX": false,
+    "bg": "rgb(255, 255, 255)",
+    "hero": {
+      "w": 768,
+      "h": 1395,
+      "top": 0
+    },
+    "main": {
+      "w": 768,
+      "h": 5722
+    },
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "Your Learning Basecamp",
+        "href": null,
+        "aria": null,
+        "classes": "mt-6 max-w-3xl font-display text-[clamp(2.8rem,8vw,5.75rem)] font-black leading-[0.95] text-ink"
+      },
+      {
+        "tag": "h3",
+        "text": "Learn together",
+        "href": null,
+        "aria": null,
+        "classes": "mt-2 text-[18px] font-bold text-white"
+      },
+      {
+        "tag": "h2",
+        "text": "A product map learners can understand at a glance.",
+        "href": null,
+        "aria": null,
+        "classes": "mt-3 font-display text-[clamp(2rem,4vw,3.25rem)] font-black leading-tight text-ink"
+      },
+      {
+        "tag": "h3",
+        "text": "Guided learning paths",
+        "href": null,
+        "aria": null,
+        "classes": "mt-1 text-[15px] font-bold text-ink"
+      },
+      {
+        "tag": "h3",
+        "text": "Notes, discussion, reflection",
+        "href": null,
+        "aria": null,
+        "classes": "mt-1 text-[15px] font-bold text-ink"
+      },
+      {
+        "tag": "h3",
+        "text": "Review with clarity",
+        "href": null,
+        "aria": null,
+        "classes": "mt-1 text-[15px] font-bold text-ink"
+      },
+      {
+        "tag": "h3",
+        "text": "Mastery milestones",
+        "href": null,
+        "aria": null,
+        "classes": "mt-1 text-[15px] font-bold text-ink"
+      },
+      {
+        "tag": "h3",
+        "text": "Launch your next goal",
+        "href": null,
+        "aria": null,
+        "classes": "mt-1 text-[15px] font-bold text-ink"
+      },
+      {
+        "tag": "h2",
+        "text": "Practical tools, framed as a guided learning trail.",
+        "href": null,
+        "aria": null,
+        "classes": "mt-3 font-display text-[clamp(2rem,4vw,3.25rem)] font-black leading-tight text-ink"
+      },
+      {
+        "tag": "h3",
+        "text": "Guided Trails",
+        "href": null,
+        "aria": null,
+        "classes": "mt-1 text-[17px] font-bold text-ink"
+      },
+      {
+        "tag": "h3",
+        "text": "Readiness Tracking",
+        "href": null,
+        "aria": null,
+        "classes": "mt-1 text-[17px] font-bold text-ink"
+      },
+      {
+        "tag": "h3",
+        "text": "Campfire Notes",
+        "href": null,
+        "aria": null,
+        "classes": "mt-1 text-[17px] font-bold text-ink"
+      },
+      {
+        "tag": "h3",
+        "text": "Cohort Momentum",
+        "href": null,
+        "aria": null,
+        "classes": "mt-1 text-[17px] font-bold text-ink"
+      },
+      {
+        "tag": "h3",
+        "text": "Professional Workflow",
+        "href": null,
+        "aria": null,
+        "classes": "mt-1 text-[17px] font-bold text-ink"
+      },
+      {
+        "tag": "h2",
+        "text": "From trailhead to summit, every step has a next action.",
+        "href": null,
+        "aria": null,
+        "classes": "mt-3 font-display text-[clamp(2rem,4vw,3.25rem)] font-black leading-tight text-white"
+      },
+      {
+        "tag": "h3",
+        "text": "Choose your trail",
+        "href": null,
+        "aria": null,
+        "classes": "mt-4 text-[16px] font-bold text-white"
+      },
+      {
+        "tag": "h3",
+        "text": "Learn with focused resources",
+        "href": null,
+        "aria": null,
+        "classes": "mt-4 text-[16px] font-bold text-white"
+      },
+      {
+        "tag": "h3",
+        "text": "Practice and reflect",
+        "href": null,
+        "aria": null,
+        "classes": "mt-4 text-[16px] font-bold text-white"
+      },
+      {
+        "tag": "h3",
+        "text": "Reach your summit",
+        "href": null,
+        "aria": null,
+        "classes": "mt-4 text-[16px] font-bold text-white"
+      },
+      {
+        "tag": "h2",
+        "text": "Built for serious learners with different schedules.",
+        "href": null,
+        "aria": null,
+        "classes": "mt-3 font-display text-[clamp(2rem,4vw,3.25rem)] font-black leading-tight text-ink"
+      },
+      {
+        "tag": "h3",
+        "text": "Students",
+        "href": null,
+        "aria": null,
+        "classes": "text-[16px] font-bold text-ink"
+      },
+      {
+        "tag": "h3",
+        "text": "Working professionals",
+        "href": null,
+        "aria": null,
+        "classes": "text-[16px] font-bold text-ink"
+      },
+      {
+        "tag": "h3",
+        "text": "Teams or cohorts",
+        "href": null,
+        "aria": null,
+        "classes": "text-[16px] font-bold text-ink"
+      },
+      {
+        "tag": "h3",
+        "text": "Self-paced learners",
+        "href": null,
+        "aria": null,
+        "classes": "text-[16px] font-bold text-ink"
+      },
+      {
+        "tag": "h2",
+        "text": "Credibility space for outcomes, partners, and candidate stories.",
+        "href": null,
+        "aria": null,
+        "classes": "mt-3 font-display text-[clamp(2rem,4vw,3.25rem)] font-black leading-tight text-ink"
+      },
+      {
+        "tag": "h2",
+        "text": "Plain answers before you start.",
+        "href": null,
+        "aria": null,
+        "classes": "mt-3 font-display text-[clamp(2rem,4vw,3.25rem)] font-black leading-tight text-ink"
+      },
+      {
+        "tag": "h2",
+        "text": "Ready to start your next learning trail?",
+        "href": null,
+        "aria": null,
+        "classes": "mt-3 max-w-2xl font-display text-[clamp(2rem,4vw,3.75rem)] font-black leading-tight text-white"
+      }
+    ],
+    "buttons": [
+      {
+        "tag": "a",
+        "text": "SlateCamp 🇵🇭",
+        "href": "http://localhost:3001/#top",
+        "w": 174,
+        "h": 26,
+        "top": 15,
+        "left": 24
+      },
+      {
+        "tag": "a",
+        "text": "Features",
+        "href": "http://localhost:3001/#features",
+        "w": 74,
+        "h": 44,
+        "top": 6,
+        "left": 218
+      },
+      {
+        "tag": "a",
+        "text": "How it works",
+        "href": "http://localhost:3001/#how-it-works",
+        "w": 96,
+        "h": 44,
+        "top": 6,
+        "left": 295
+      },
+      {
+        "tag": "a",
+        "text": "Use cases",
+        "href": "http://localhost:3001/#use-cases",
+        "w": 82,
+        "h": 44,
+        "top": 6,
+        "left": 396
+      },
+      {
+        "tag": "a",
+        "text": "FAQ",
+        "href": "http://localhost:3001/#faq",
+        "w": 48,
+        "h": 44,
+        "top": 6,
+        "left": 482
+      },
+      {
+        "tag": "a",
+        "text": "Plans",
+        "href": "http://localhost:3001/pricing",
+        "w": 55,
+        "h": 44,
+        "top": 6,
+        "left": 534
+      },
+      {
+        "tag": "a",
+        "text": "Go to dashboard",
+        "href": "http://localhost:3001/dashboard",
+        "w": 136,
+        "h": 44,
+        "top": 6,
+        "left": 608
+      },
+      {
+        "tag": "a",
+        "text": "Go to Dashboard",
+        "href": "http://localhost:3001/dashboard",
+        "w": 182,
+        "h": 47,
+        "top": 473,
+        "left": 24
+      },
+      {
+        "tag": "a",
+        "text": "See How It Works",
+        "href": "http://localhost:3001/#how-it-works",
+        "w": 168,
+        "h": 47,
+        "top": 473,
+        "left": 218
+      },
+      {
+        "tag": "button",
+        "text": "Learn together",
+        "href": null,
+        "w": 121,
+        "h": 29,
+        "top": 1062,
+        "left": 314
+      },
+      {
+        "tag": "button",
+        "text": "Follow structured paths",
+        "href": null,
+        "w": 147,
+        "h": 25,
+        "top": 1031,
+        "left": 68
+      },
+      {
+        "tag": "button",
+        "text": "Reflect and review",
+        "href": null,
+        "w": 179,
+        "h": 37,
+        "top": 1233,
+        "left": 367
+      },
+      {
+        "tag": "button",
+        "text": "Track mastery",
+        "href": null,
+        "w": 90,
+        "h": 22,
+        "top": 867,
+        "left": 439
+      },
+      {
+        "tag": "button",
+        "text": "Launch your next goal",
+        "href": null,
+        "w": 236,
+        "h": 43,
+        "top": 1398,
+        "left": 189
+      },
+      {
+        "tag": "button",
+        "text": "Pause",
+        "href": null,
+        "w": 82,
+        "h": 36,
+        "top": 708,
+        "left": 645
+      },
+      {
+        "tag": "button",
+        "text": "Learn together",
+        "href": null,
+        "w": 78,
+        "h": 57,
+        "top": 1247,
+        "left": 296
+      },
+      {
+        "tag": "button",
+        "text": "Follow structured paths",
+        "href": null,
+        "w": 78,
+        "h": 57,
+        "top": 1247,
+        "left": 382
+      },
+      {
+        "tag": "button",
+        "text": "Reflect and review",
+        "href": null,
+        "w": 78,
+        "h": 57,
+        "top": 1247,
+        "left": 468
+      },
+      {
+        "tag": "button",
+        "text": "Track mastery",
+        "href": null,
+        "w": 78,
+        "h": 57,
+        "top": 1247,
+        "left": 554
+      },
+      {
+        "tag": "button",
+        "text": "Launch your next goal",
+        "href": null,
+        "w": 78,
+        "h": 57,
+        "top": 1247,
+        "left": 640
+      },
+      {
+        "tag": "summary",
+        "text": "Is SlateCamp only for the Philippine Architecture Licensure Exam?",
+        "href": null,
+        "w": 678,
+        "h": 23,
+        "top": 5122,
+        "left": 45
+      },
+      {
+        "tag": "summary",
+        "text": "Does the camp metaphor replace serious analytics?",
+        "href": null,
+        "w": 678,
+        "h": 23,
+        "top": 5185,
+        "left": 45
+      },
+      {
+        "tag": "summary",
+        "text": "Can I start without a paid plan?",
+        "href": null,
+        "w": 678,
+        "h": 23,
+        "top": 5249,
+        "left": 45
+      },
+      {
+        "tag": "a",
+        "text": "Go to Dashboard",
+        "href": "http://localhost:3001/dashboard",
+        "w": 182,
+        "h": 45,
+        "top": 5485,
+        "left": 514
+      },
+      {
+        "tag": "a",
+        "text": "Tools",
+        "href": "http://localhost:3001/tools",
+        "w": 51,
+        "h": 42,
+        "top": 5747,
+        "left": 278
+      },
+      {
+        "tag": "a",
+        "text": "Pricing",
+        "href": "http://localhost:3001/pricing",
+        "w": 61,
+        "h": 42,
+        "top": 5747,
+        "left": 333
+      },
+      {
+        "tag": "a",
+        "text": "About",
+        "href": "http://localhost:3001/about",
+        "w": 55,
+        "h": 42,
+        "top": 5747,
+        "left": 399
+      },
+      {
+        "tag": "a",
+        "text": "Contact",
+        "href": "http://localhost:3001/contact",
+        "w": 65,
+        "h": 42,
+        "top": 5747,
+        "left": 458
+      }
+    ],
+    "canvases": [
+      {
+        "w": 718,
+        "h": 638,
+        "top": 692,
+        "left": 25
+      }
+    ],
+    "bodyText": "DEV SlateCamp 🇵🇭 Features How it works Use cases FAQ Plans Go to dashboard Professional LEA review platform Your Learning Basecamp SlateCamp helps students and professionals turn scattered learning into guided progress — with structured paths, notes, practice, community, and a live view of Philippine Architecture Licensure Exam readiness. Go to Dashboard See How It Works Syllabus-mapped LEA prep Readiness Score powered by IRT Built by a licensed architect Learn together Follow structured paths Reflect and review Track mastery Launch your next goal INTERACTIVE MAP Basecamp, trails, lake review, summit goals, and launch shore. Pause CURRENT CAMP STOP Learn together Discussion, notes, and reflection keep momentum visible. Learn together Follow structured paths Reflect and review Track mastery Launch your next goal Built for LEA candidates Question paths mapped to architecture subjects 3D models for spatial concepts EXPLORE THE CAMP A product map learners can understand at a glance. The landscape is a narrative layer for real product behavior: paths, discussion, review, mastery, and outcomes. TRAILS Guided learning paths Follow a structured route through LEA topics, prerequisites, and practice instead of piecing together a plan from scattered notes. CAMPFIRE Notes, discussion, reflection Gather ideas from practice, wiki references, and community momentum so each study block leaves a clear trace. LAKE Review with clarity Readiness signals and heatmaps turn noisy progress into a calm view of what needs one more pass. MOUNTAINS Mastery milestones Climb toward measurable confidence with subject coverage, calibrated practice, and exam-day readiness. SHORE Launch your next goal Turn review into action: simulations, focused drills, and a clear next destination after every session. FEATURES Practical tools, framed as a guided learning trail. The camp story stays subtle. The value is concrete: structure, progress, notes, collaboration, and professional context. CURRICULUM PATHS Guided Trails Structured study routes help candidates move through the LEA syllabus with less guesswork and fewer dead ends. PROGRESS INTELLIGENCE Readiness Tracking A live Readiness Score and taxonomy heatmap show where you stand before exam day. KNOWLEDGE CAPTURE Campfire Notes Keep references, reflections, and review notes close to the questions and topics that created them. SHARED ACCOUNTABILITY Cohort Momentum Built to support self-paced learners, review groups, and professional routines without turning study into noise. STUDENT TO PRACTITIONER Professional Workflow Architecture-focused tools, wiki references, and 3D models connect exam prep to real practice. HOW IT WORKS From trailhead to summit, every step has a next action. Choose a route, study with context, practice deliberately, then use readiness signals to decide what comes next. 01 Choose your trail Start from a guided path, diagnostic, or focused topic depending on where you are in review. 02 Learn with focused resources Move between practice, wiki references, notes, and 3D explanations without losing context. 03 Practice and reflect Use drills, review prompts, and clear explanations to turn mistakes into the next study move. 04 Reach your summit Track readiness, close gaps, and build a routine that lasts through exam season. USE CASES Built for serious learners with different schedules. SlateCamp keeps the workflow clear whether you study alone, with a group, between work hours, or in a dedicated review season. Students Build a repeatable review routine around the LEA syllabus, practice, and progress signals. Working professionals Use focused sessions and clear next steps when study time has to fit around real work. Teams or cohorts Create shared momentum around paths, discussion, and measurable readiness. Self-paced learners Explore at your own pace while still knowing what to do next. TRUST Credibility space for outcomes, partners, and candidate stories. This section is intentionally placeholder-ready until verified testimonials, institutional logos, or outcome data are ready to publish. PLACEHOLDER-READY Replace with a verified candidate quote after launch interviews. PLACEHOLDER-READY Add review-center, school, or partner marks only after permission. PLACEHOLDER-READY Publish real outcome data only when the cohort sample is large enough. FAQ Plain answers before you start. The landing page is more immersive, but the product promise remains direct. Is SlateCamp only for the Philippine Architecture Licensure Exam? Does the camp metaphor replace serious analytics? Can I start without a paid plan? TRAILHEAD Ready to start your next learning trail? Begin at basecamp, follow a path, and keep your progress visible all the way to exam readiness. Go to Dashboard © 2026 SlateCamp Tools Pricing About Contact Less, but better."
+  },
+  {
+    "name": "slate-mobile",
+    "ok": true,
+    "screenshot": ".omx/artifacts/landing-audit/slate-mobile.png",
+    "consoleErrors": [
+      "warning: THREE.THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."
+    ],
+    "title": "SlateCamp — Know Your LEA Readiness Before Exam Day",
+    "url": "http://localhost:3001/",
+    "width": 390,
+    "height": 844,
+    "docH": 844,
+    "scrollW": 390,
+    "overflowX": false,
+    "bg": "rgb(255, 255, 255)",
+    "hero": {
+      "w": 390,
+      "h": 1293,
+      "top": 0
+    },
+    "main": {
+      "w": 390,
+      "h": 8485
+    },
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "Your Learning Basecamp",
+        "href": null,
+        "aria": null,
+        "classes": "mt-6 max-w-3xl font-display text-[clamp(2.8rem,8vw,5.75rem)] font-black leading-[0.95] text-ink"
+      },
+      {
+        "tag": "h3",
+        "text": "Learn together",
+        "href": null,
+        "aria": null,
+        "classes": "mt-2 text-[18px] font-bold text-white"
+      },
+      {
+        "tag": "h2",
+        "text": "A product map learners can understand at a glance.",
+        "href": null,
+        "aria": null,
+        "classes": "mt-3 font-display text-[clamp(2rem,4vw,3.25rem)] font-black leading-tight text-ink"
+      },
+      {
+        "tag": "h3",
+        "text": "Guided learning paths",
+        "href": null,
+        "aria": null,
+        "classes": "mt-1 text-[15px] font-bold text-ink"
+      },
+      {
+        "tag": "h3",
+        "text": "Notes, discussion, reflection",
+        "href": null,
+        "aria": null,
+        "classes": "mt-1 text-[15px] font-bold text-ink"
+      },
+      {
+        "tag": "h3",
+        "text": "Review with clarity",
+        "href": null,
+        "aria": null,
+        "classes": "mt-1 text-[15px] font-bold text-ink"
+      },
+      {
+        "tag": "h3",
+        "text": "Mastery milestones",
+        "href": null,
+        "aria": null,
+        "classes": "mt-1 text-[15px] font-bold text-ink"
+      },
+      {
+        "tag": "h3",
+        "text": "Launch your next goal",
+        "href": null,
+        "aria": null,
+        "classes": "mt-1 text-[15px] font-bold text-ink"
+      },
+      {
+        "tag": "h2",
+        "text": "Practical tools, framed as a guided learning trail.",
+        "href": null,
+        "aria": null,
+        "classes": "mt-3 font-display text-[clamp(2rem,4vw,3.25rem)] font-black leading-tight text-ink"
+      },
+      {
+        "tag": "h3",
+        "text": "Guided Trails",
+        "href": null,
+        "aria": null,
+        "classes": "mt-1 text-[17px] font-bold text-ink"
+      },
+      {
+        "tag": "h3",
+        "text": "Readiness Tracking",
+        "href": null,
+        "aria": null,
+        "classes": "mt-1 text-[17px] font-bold text-ink"
+      },
+      {
+        "tag": "h3",
+        "text": "Campfire Notes",
+        "href": null,
+        "aria": null,
+        "classes": "mt-1 text-[17px] font-bold text-ink"
+      },
+      {
+        "tag": "h3",
+        "text": "Cohort Momentum",
+        "href": null,
+        "aria": null,
+        "classes": "mt-1 text-[17px] font-bold text-ink"
+      },
+      {
+        "tag": "h3",
+        "text": "Professional Workflow",
+        "href": null,
+        "aria": null,
+        "classes": "mt-1 text-[17px] font-bold text-ink"
+      },
+      {
+        "tag": "h2",
+        "text": "From trailhead to summit, every step has a next action.",
+        "href": null,
+        "aria": null,
+        "classes": "mt-3 font-display text-[clamp(2rem,4vw,3.25rem)] font-black leading-tight text-white"
+      },
+      {
+        "tag": "h3",
+        "text": "Choose your trail",
+        "href": null,
+        "aria": null,
+        "classes": "mt-4 text-[16px] font-bold text-white"
+      },
+      {
+        "tag": "h3",
+        "text": "Learn with focused resources",
+        "href": null,
+        "aria": null,
+        "classes": "mt-4 text-[16px] font-bold text-white"
+      },
+      {
+        "tag": "h3",
+        "text": "Practice and reflect",
+        "href": null,
+        "aria": null,
+        "classes": "mt-4 text-[16px] font-bold text-white"
+      },
+      {
+        "tag": "h3",
+        "text": "Reach your summit",
+        "href": null,
+        "aria": null,
+        "classes": "mt-4 text-[16px] font-bold text-white"
+      },
+      {
+        "tag": "h2",
+        "text": "Built for serious learners with different schedules.",
+        "href": null,
+        "aria": null,
+        "classes": "mt-3 font-display text-[clamp(2rem,4vw,3.25rem)] font-black leading-tight text-ink"
+      },
+      {
+        "tag": "h3",
+        "text": "Students",
+        "href": null,
+        "aria": null,
+        "classes": "text-[16px] font-bold text-ink"
+      },
+      {
+        "tag": "h3",
+        "text": "Working professionals",
+        "href": null,
+        "aria": null,
+        "classes": "text-[16px] font-bold text-ink"
+      },
+      {
+        "tag": "h3",
+        "text": "Teams or cohorts",
+        "href": null,
+        "aria": null,
+        "classes": "text-[16px] font-bold text-ink"
+      },
+      {
+        "tag": "h3",
+        "text": "Self-paced learners",
+        "href": null,
+        "aria": null,
+        "classes": "text-[16px] font-bold text-ink"
+      },
+      {
+        "tag": "h2",
+        "text": "Credibility space for outcomes, partners, and candidate stories.",
+        "href": null,
+        "aria": null,
+        "classes": "mt-3 font-display text-[clamp(2rem,4vw,3.25rem)] font-black leading-tight text-ink"
+      },
+      {
+        "tag": "h2",
+        "text": "Plain answers before you start.",
+        "href": null,
+        "aria": null,
+        "classes": "mt-3 font-display text-[clamp(2rem,4vw,3.25rem)] font-black leading-tight text-ink"
+      },
+      {
+        "tag": "h2",
+        "text": "Ready to start your next learning trail?",
+        "href": null,
+        "aria": null,
+        "classes": "mt-3 max-w-2xl font-display text-[clamp(2rem,4vw,3.75rem)] font-black leading-tight text-white"
+      }
+    ],
+    "buttons": [
+      {
+        "tag": "a",
+        "text": "SlateCamp 🇵🇭",
+        "href": "http://localhost:3001/#top",
+        "w": 174,
+        "h": 26,
+        "top": 15,
+        "left": 24
+      },
+      {
+        "tag": "a",
+        "text": "Features",
+        "href": "http://localhost:3001/#features",
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "a",
+        "text": "How it works",
+        "href": "http://localhost:3001/#how-it-works",
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "a",
+        "text": "Use cases",
+        "href": "http://localhost:3001/#use-cases",
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "a",
+        "text": "FAQ",
+        "href": "http://localhost:3001/#faq",
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "a",
+        "text": "Plans",
+        "href": "http://localhost:3001/pricing",
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "a",
+        "text": "Go to dashboard",
+        "href": "http://localhost:3001/dashboard",
+        "w": 136,
+        "h": 44,
+        "top": 6,
+        "left": 230
+      },
+      {
+        "tag": "a",
+        "text": "Go to Dashboard",
+        "href": "http://localhost:3001/dashboard",
+        "w": 342,
+        "h": 45,
+        "top": 473,
+        "left": 24
+      },
+      {
+        "tag": "a",
+        "text": "See How It Works",
+        "href": "http://localhost:3001/#how-it-works",
+        "w": 342,
+        "h": 47,
+        "top": 530,
+        "left": 24
+      },
+      {
+        "tag": "button",
+        "text": "Learn together",
+        "href": null,
+        "w": 30,
+        "h": 21,
+        "top": 1068,
+        "left": 173
+      },
+      {
+        "tag": "button",
+        "text": "Follow structured paths",
+        "href": null,
+        "w": 26,
+        "h": 18,
+        "top": 1048,
+        "left": 23
+      },
+      {
+        "tag": "button",
+        "text": "Reflect and review",
+        "href": null,
+        "w": 38,
+        "h": 26,
+        "top": 1180,
+        "left": 224
+      },
+      {
+        "tag": "button",
+        "text": "Track mastery",
+        "href": null,
+        "w": 23,
+        "h": 16,
+        "top": 940,
+        "left": 249
+      },
+      {
+        "tag": "button",
+        "text": "Launch your next goal",
+        "href": null,
+        "w": 44,
+        "h": 31,
+        "top": 1288,
+        "left": 123
+      },
+      {
+        "tag": "button",
+        "text": "Pause",
+        "href": null,
+        "w": 82,
+        "h": 36,
+        "top": 842,
+        "left": 267
+      },
+      {
+        "tag": "button",
+        "text": "Learn together",
+        "href": null,
+        "w": 141,
+        "h": 30,
+        "top": 1113,
+        "left": 50
+      },
+      {
+        "tag": "button",
+        "text": "Follow structured paths",
+        "href": null,
+        "w": 141,
+        "h": 30,
+        "top": 1113,
+        "left": 199
+      },
+      {
+        "tag": "button",
+        "text": "Reflect and review",
+        "href": null,
+        "w": 141,
+        "h": 30,
+        "top": 1151,
+        "left": 50
+      },
+      {
+        "tag": "button",
+        "text": "Track mastery",
+        "href": null,
+        "w": 141,
+        "h": 30,
+        "top": 1151,
+        "left": 199
+      },
+      {
+        "tag": "button",
+        "text": "Launch your next goal",
+        "href": null,
+        "w": 141,
+        "h": 30,
+        "top": 1189,
+        "left": 50
+      },
+      {
+        "tag": "summary",
+        "text": "Is SlateCamp only for the Philippine Architecture Licensure Exam?",
+        "href": null,
+        "w": 300,
+        "h": 45,
+        "top": 7731,
+        "left": 45
+      },
+      {
+        "tag": "summary",
+        "text": "Does the camp metaphor replace serious analytics?",
+        "href": null,
+        "w": 300,
+        "h": 45,
+        "top": 7817,
+        "left": 45
+      },
+      {
+        "tag": "summary",
+        "text": "Can I start without a paid plan?",
+        "href": null,
+        "w": 300,
+        "h": 23,
+        "top": 7903,
+        "left": 45
+      },
+      {
+        "tag": "a",
+        "text": "Go to Dashboard",
+        "href": "http://localhost:3001/dashboard",
+        "w": 278,
+        "h": 45,
+        "top": 8328,
+        "left": 56
+      },
+      {
+        "tag": "a",
+        "text": "Tools",
+        "href": "http://localhost:3001/tools",
+        "w": 51,
+        "h": 42,
+        "top": 8544,
+        "left": 73
+      },
+      {
+        "tag": "a",
+        "text": "Pricing",
+        "href": "http://localhost:3001/pricing",
+        "w": 61,
+        "h": 42,
+        "top": 8544,
+        "left": 128
+      },
+      {
+        "tag": "a",
+        "text": "About",
+        "href": "http://localhost:3001/about",
+        "w": 55,
+        "h": 42,
+        "top": 8544,
+        "left": 193
+      },
+      {
+        "tag": "a",
+        "text": "Contact",
+        "href": "http://localhost:3001/contact",
+        "w": 65,
+        "h": 42,
+        "top": 8544,
+        "left": 252
+      }
+    ],
+    "canvases": [
+      {
+        "w": 340,
+        "h": 418,
+        "top": 826,
+        "left": 25
+      }
+    ],
+    "bodyText": "DEV SlateCamp 🇵🇭 Go to dashboard Professional LEA review platform Your Learning Basecamp SlateCamp helps students and professionals turn scattered learning into guided progress — with structured paths, notes, practice, community, and a live view of Philippine Architecture Licensure Exam readiness. Go to Dashboard See How It Works Syllabus-mapped LEA prep Readiness Score powered by IRT Built by a licensed architect INTERACTIVE MAP Basecamp, trails, lake review, summit goals, and launch shore. Pause CURRENT CAMP STOP Learn together Discussion, notes, and reflection keep momentum visible. Learn together Follow structured paths Reflect and review Track mastery Launch your next goal Built for LEA candidates Question paths mapped to architecture subjects 3D models for spatial concepts EXPLORE THE CAMP A product map learners can understand at a glance. The landscape is a narrative layer for real product behavior: paths, discussion, review, mastery, and outcomes. TRAILS Guided learning paths Follow a structured route through LEA topics, prerequisites, and practice instead of piecing together a plan from scattered notes. CAMPFIRE Notes, discussion, reflection Gather ideas from practice, wiki references, and community momentum so each study block leaves a clear trace. LAKE Review with clarity Readiness signals and heatmaps turn noisy progress into a calm view of what needs one more pass. MOUNTAINS Mastery milestones Climb toward measurable confidence with subject coverage, calibrated practice, and exam-day readiness. SHORE Launch your next goal Turn review into action: simulations, focused drills, and a clear next destination after every session. FEATURES Practical tools, framed as a guided learning trail. The camp story stays subtle. The value is concrete: structure, progress, notes, collaboration, and professional context. CURRICULUM PATHS Guided Trails Structured study routes help candidates move through the LEA syllabus with less guesswork and fewer dead ends. PROGRESS INTELLIGENCE Readiness Tracking A live Readiness Score and taxonomy heatmap show where you stand before exam day. KNOWLEDGE CAPTURE Campfire Notes Keep references, reflections, and review notes close to the questions and topics that created them. SHARED ACCOUNTABILITY Cohort Momentum Built to support self-paced learners, review groups, and professional routines without turning study into noise. STUDENT TO PRACTITIONER Professional Workflow Architecture-focused tools, wiki references, and 3D models connect exam prep to real practice. HOW IT WORKS From trailhead to summit, every step has a next action. Choose a route, study with context, practice deliberately, then use readiness signals to decide what comes next. 01 Choose your trail Start from a guided path, diagnostic, or focused topic depending on where you are in review. 02 Learn with focused resources Move between practice, wiki references, notes, and 3D explanations without losing context. 03 Practice and reflect Use drills, review prompts, and clear explanations to turn mistakes into the next study move. 04 Reach your summit Track readiness, close gaps, and build a routine that lasts through exam season. USE CASES Built for serious learners with different schedules. SlateCamp keeps the workflow clear whether you study alone, with a group, between work hours, or in a dedicated review season. Students Build a repeatable review routine around the LEA syllabus, practice, and progress signals. Working professionals Use focused sessions and clear next steps when study time has to fit around real work. Teams or cohorts Create shared momentum around paths, discussion, and measurable readiness. Self-paced learners Explore at your own pace while still knowing what to do next. TRUST Credibility space for outcomes, partners, and candidate stories. This section is intentionally placeholder-ready until verified testimonials, institutional logos, or outcome data are ready to publish. PLACEHOLDER-READY Replace with a verified candidate quote after launch interviews. PLACEHOLDER-READY Add review-center, school, or partner marks only after permission. PLACEHOLDER-READY Publish real outcome data only when the cohort sample is large enough. FAQ Plain answers before you start. The landing page is more immersive, but the product promise remains direct. Is SlateCamp only for the Philippine Architecture Licensure Exam? Does the camp metaphor replace serious analytics? Can I start without a paid plan? TRAILHEAD Ready to start your next learning trail? Begin at basecamp, follow a path, and keep your progress visible all the way to exam readiness. Go to Dashboard © 2026 SlateCamp Tools Pricing About Contact Less, but better."
+  },
+  {
+    "name": "pixelvault",
+    "ok": true,
+    "screenshot": ".omx/artifacts/landing-audit/pixelvault.png",
+    "consoleErrors": [],
+    "title": "PIXELVAULT – An Immersive Creative Marketplace from 2047",
+    "url": "https://www.pixelvault.fit/",
+    "width": 1440,
+    "height": 1000,
+    "docH": 1000,
+    "scrollW": 1440,
+    "overflowX": false,
+    "bg": "rgb(0, 0, 0)",
+    "hero": null,
+    "main": {
+      "w": 1440,
+      "h": 1000
+    },
+    "headings": [],
+    "buttons": [
+      {
+        "tag": "button",
+        "text": "[PIXELVAULT]",
+        "href": null,
+        "w": 86,
+        "h": 17,
+        "top": 24,
+        "left": 16
+      },
+      {
+        "tag": "button",
+        "text": "SOUND [OFF]",
+        "href": null,
+        "w": 79,
+        "h": 17,
+        "top": 24,
+        "left": 302
+      },
+      {
+        "tag": "button",
+        "text": "SHOP",
+        "href": null,
+        "w": 29,
+        "h": 17,
+        "top": 24,
+        "left": 1124
+      },
+      {
+        "tag": "button",
+        "text": "PLAYGROUND",
+        "href": null,
+        "w": 72,
+        "h": 17,
+        "top": 24,
+        "left": 1353
+      },
+      {
+        "tag": "button",
+        "text": "CONTACT",
+        "href": null,
+        "w": 48,
+        "h": 17,
+        "top": 960,
+        "left": 1376
+      },
+      {
+        "tag": "a",
+        "text": "",
+        "href": "https://www.awwwards.com/sites/pixel-vault",
+        "w": 53,
+        "h": 171,
+        "top": 414,
+        "left": 1387
+      },
+      {
+        "tag": "a",
+        "text": "infopixelvault18@gmail.com",
+        "href": "mailto:infopixelvault18@gmail.com",
+        "w": 169,
+        "h": 19,
+        "top": 518,
+        "left": 637
+      },
+      {
+        "tag": "a",
+        "text": "Linkedin",
+        "href": "https://www.linkedin.com/in/karancodes/",
+        "w": 52,
+        "h": 22,
+        "top": 647,
+        "left": 900
+      },
+      {
+        "tag": "a",
+        "text": "X",
+        "href": "https://x.com/KaranChouh2108",
+        "w": 7,
+        "h": 22,
+        "top": 647,
+        "left": 972
+      },
+      {
+        "tag": "a",
+        "text": "Linkedin",
+        "href": "https://www.linkedin.com/in/harshitkumarsahu-14082004aug/",
+        "w": 52,
+        "h": 22,
+        "top": 678,
+        "left": 900
+      },
+      {
+        "tag": "a",
+        "text": "X",
+        "href": "https://x.com/poltuharshit14",
+        "w": 7,
+        "h": 22,
+        "top": 678,
+        "left": 972
+      }
+    ],
+    "canvases": [
+      {
+        "w": 1440,
+        "h": 1000,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "w": 1440,
+        "h": 1000,
+        "top": 0,
+        "left": 0
+      }
+    ],
+    "bodyText": "aVtta MetatetacM [PIXELVAULT] SOUND [OFF] SHOP PLAYGROUND [X] [X] [X] [X] [X] * PIXELVAULT / IMMERSIVE CREATIVE MARKETPLACE / 2047 EXPERIENCE THE FUTURE BEFORE IT ARRIVES 3D ASSETS · SHADERS · VISUAL ART · CREATOR ECONOMY BUY · SELL · DISCOVER VAULT STATUS ------------ SESSION : [28.04.2026] TIMESTAMP: [21:32:24] ASSETS : (LOADED) DISPLAY : (1440X1000PX @ 75HZ) CLIENT : (GOOGLE CHROME) MARKET : (2047) VAULT STATUS ------------ SESSION : [28.04.2026] TIMESTAMP: [21:32:24] ASSETS : (LOADED) DISPLAY : (1440X1000PX @ 75HZ) CLIENT : (GOOGLE CHROME) MARKET : (2047) © 2026 [PIXELVAULT] PIXELVAULT IS AN IMMERSIVE CREATIVE MARKETPLACE FROM 2047. EXPERIENCES THE FUTURE BEFORE IT ARRIVES. CONTACT"
+  },
+  {
+    "name": "bruno",
+    "ok": true,
+    "screenshot": ".omx/artifacts/landing-audit/bruno.png",
+    "consoleErrors": [
+      "warning: No available adapters.",
+      "warning: THREE.WebGPURenderer: WebGPU is not available, running under WebGL2 backend.",
+      "warning: The resource https://bruno-simon.com/respawns/respawnsReferences-compressed.glb was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has",
+      "warning: The resource https://bruno-simon.com/behindTheScene/stars.ktx was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `a",
+      "warning: The resource https://bruno-simon.com/palette.ktx was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and ",
+      "warning: The resource https://bruno-simon.com/intro/sound.ktx was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value "
+    ],
+    "title": "Bruno's",
+    "url": "https://bruno-simon.com/",
+    "width": 1440,
+    "height": 1000,
+    "docH": 1000,
+    "scrollW": 1440,
+    "overflowX": false,
+    "bg": "rgba(0, 0, 0, 0)",
+    "hero": null,
+    "main": null,
+    "headings": [
+      {
+        "tag": "h2",
+        "text": "Three.js",
+        "href": null,
+        "aria": null,
+        "classes": "title"
+      },
+      {
+        "tag": "h2",
+        "text": "Three.js Journey",
+        "href": null,
+        "aria": null,
+        "classes": "title"
+      },
+      {
+        "tag": "h2",
+        "text": "Devlogs",
+        "href": null,
+        "aria": null,
+        "classes": "title"
+      },
+      {
+        "tag": "h2",
+        "text": "Source code",
+        "href": null,
+        "aria": null,
+        "classes": "title"
+      },
+      {
+        "tag": "h2",
+        "text": "Musics",
+        "href": null,
+        "aria": null,
+        "classes": "title"
+      },
+      {
+        "tag": "h2",
+        "text": "Some more links",
+        "href": null,
+        "aria": null,
+        "classes": "title"
+      }
+    ],
+    "buttons": [
+      {
+        "tag": "button",
+        "text": "Interact",
+        "href": null,
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "button",
+        "text": "Unstuck",
+        "href": null,
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "button",
+        "text": "",
+        "href": null,
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "button",
+        "text": "",
+        "href": null,
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "button",
+        "text": "",
+        "href": null,
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "button",
+        "text": "",
+        "href": null,
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "button",
+        "text": "",
+        "href": null,
+        "w": 44,
+        "h": 44,
+        "top": 20,
+        "left": 1396
+      },
+      {
+        "tag": "button",
+        "text": "",
+        "href": null,
+        "w": 44,
+        "h": 44,
+        "top": 70,
+        "left": 1396
+      },
+      {
+        "tag": "button",
+        "text": "A",
+        "href": null,
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "button",
+        "text": "",
+        "href": null,
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "button",
+        "text": "",
+        "href": null,
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "button",
+        "text": "",
+        "href": null,
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "button",
+        "text": "",
+        "href": null,
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "button",
+        "text": "",
+        "href": null,
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "button",
+        "text": "",
+        "href": null,
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "button",
+        "text": "",
+        "href": null,
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "button",
+        "text": "Toggles sound",
+        "href": null,
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "button",
+        "text": "Toggles some effects Low",
+        "href": null,
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "button",
+        "text": "Teleports you to the closest respawn Respawn",
+        "href": null,
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "button",
+        "text": "Resets every object Reset",
+        "href": null,
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "button",
+        "text": "Best for performance WebGPU",
+        "href": null,
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "button",
+        "text": "Pending",
+        "href": null,
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "button",
+        "text": "Mouse Keyboard",
+        "href": null,
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "button",
+        "text": "Mobile Tablet",
+        "href": null,
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "button",
+        "text": "Gamepad",
+        "href": null,
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "button",
+        "text": "Unlock at",
+        "href": null,
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "button",
+        "text": "Unlock at",
+        "href": null,
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "button",
+        "text": "Unlock at",
+        "href": null,
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "button",
+        "text": "Unlock at",
+        "href": null,
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "button",
+        "text": "Unlock at",
+        "href": null,
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "button",
+        "text": "Unlock at",
+        "href": null,
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "button",
+        "text": "Reset achievements",
+        "href": null,
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "button",
+        "text": "Restart",
+        "href": null,
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "button",
+        "text": "End",
+        "href": null,
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "button",
+        "text": "Controls",
+        "href": null,
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "button",
+        "text": "",
+        "href": null,
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "a",
+        "text": "Three.js",
+        "href": "https://threejs.org/",
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "a",
+        "text": "X",
+        "href": "https://x.com/mrdoob",
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "a",
+        "text": "GitHub",
+        "href": "http://github.com/mrdoob",
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "a",
+        "text": "X",
+        "href": "https://x.com/sea3dformat",
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "a",
+        "text": "GitHub",
+        "href": "https://github.com/sunag",
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "a",
+        "text": "TSL",
+        "href": "https://github.com/mrdoob/three.js/wiki/Three.js-Shading-Language",
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "a",
+        "text": "huge course",
+        "href": "https://threejs-journey.com/",
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "a",
+        "text": "Youtube channel",
+        "href": "https://www.youtube.com/playlist?list=PL5nApUt6Z8sTZxEsEMd8x89OCKCAAfNL0",
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "a",
+        "text": "GitHub",
+        "href": "https://github.com/brunosimon/folio-2025",
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "a",
+        "text": "MIT license",
+        "href": "https://choosealicense.com/licenses/mit/",
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "a",
+        "text": "Linktree",
+        "href": "https://linktr.ee/Kounine",
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "a",
+        "text": "CC0 license",
+        "href": "https://choosealicense.com/licenses/cc0-1.0/",
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "a",
+        "text": "here",
+        "href": "https://github.com/brunosimon/folio-2025/tree/main/static/sounds/musics",
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "a",
+        "text": "Rapier",
+        "href": "https://rapier.rs/",
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "a",
+        "text": "Howler.js",
+        "href": "https://howlerjs.com/",
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "a",
+        "text": "Amatic SC",
+        "href": "https://fonts.google.com/specimen/Amatic+SC",
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "a",
+        "text": "Nunito",
+        "href": "https://fonts.google.com/specimen/Nunito?query=Nunito",
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "button",
+        "text": "A",
+        "href": null,
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "button",
+        "text": "Submit",
+        "href": null,
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "button",
+        "text": "Restart",
+        "href": null,
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "button",
+        "text": "A",
+        "href": null,
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "a",
+        "text": "Join server",
+        "href": "https://discord.com/channels/769928116701233152/1445064878384480288",
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "a",
+        "text": "Start chating",
+        "href": "https://discord.com/users/202907325722263553",
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      },
+      {
+        "tag": "button",
+        "text": "A",
+        "href": null,
+        "w": 0,
+        "h": 0,
+        "top": 0,
+        "left": 0
+      }
+    ],
+    "canvases": [
+      {
+        "w": 1440,
+        "h": 1000,
+        "top": 0,
+        "left": 0
+      }
+    ],
+    "bodyText": ""
+  }
+]

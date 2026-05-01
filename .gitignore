@@ -60,6 +60,10 @@ lint-errors.txt
 # Agent workspace symlinks (all resolve to .ai/)
 .claude/
 .codex/
+!.codex/
+.codex/config.toml
+.codex/**/__pycache__/
+.codex/**/*.pyc
 .cursor/
 .gemini/
 .omc/
@@ -74,21 +78,10 @@ chunkhound.json
 flowbite/
 .ai/worktrees/
 .tmp-comment-checker/
-# OMX durable handoff files are tracked selectively.
-# Keep machine/session/runtime material local.
-.omx/artifacts/
-.omx/drafts/
-.omx/logs/
-.omx/state/
-.omx/team/
-.omx/tmp/
+# OMX handoff files are tracked selectively.
+# Keep environment inventory and noisy transient dirty-diff captures local.
 .omx/audit/env-inventory.json
 .omx/context/pre-team-dirty-*
-.omx/hud-config.json
-.omx/metrics.json
-.omx/notepad.md
-.omx/setup-scope.json
-.omx/tmux-hook.json
 .playwright-mcp/
 dump.sql
 nul
