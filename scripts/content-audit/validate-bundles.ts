@@ -210,6 +210,13 @@ async function validateManifest(root: string, report: ValidationReport) {
   }
   if (manifest.hash_algorithm !== HASH_ALGORITHM) report.blockers.push(`manifest.json hash_algorithm is ${String(manifest.hash_algorithm)}; expected ${HASH_ALGORITHM}.`)
   if (!Array.isArray(manifest.articles)) report.blockers.push('manifest.json articles must be an array.')
+  if (Array.isArray(manifest.articles)) {
+    for (const article of manifest.articles as Array<Record<string, unknown>>) {
+      const label = String(article.article_id ?? article.slug ?? 'unknown article')
+      if (!article.folder) report.blockers.push(`manifest.json article ${label} is missing folder.`)
+      if (article.linked_question_count == null) report.blockers.push(`manifest.json article ${label} is missing linked_question_count.`)
+    }
+  }
 }
 
 main().catch((error) => {

@@ -11,6 +11,12 @@ const commandMap: Record<string, string> = {
   diff: 'scripts/content-audit/diff-candidates.ts',
   validate: 'scripts/content-audit/validate-bundles.ts',
   push: 'scripts/content-audit/push-candidates-to-supabase.ts',
+  'push-question': 'scripts/content-audit/push-question-to-supabase.ts',
+  'admin-log': 'scripts/content-audit/sync-run-log-to-admin-audit.ts',
+  'component-suggestions': 'scripts/content-audit/suggest-component-placements.ts',
+  'ui-block-edits': 'scripts/content-audit/validate-ui-block-edits.ts',
+  'fact-check': 'scripts/content-audit/ai-feature-guard.ts',
+  rewrite: 'scripts/content-audit/ai-feature-guard.ts',
 }
 
 const options = parseArgs()

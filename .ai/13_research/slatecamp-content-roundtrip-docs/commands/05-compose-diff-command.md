@@ -3,7 +3,7 @@
 ## Compose
 
 ```bash
-pnpm content-audit:compose --article <article_id>
+bun run content-audit:compose --article <article_id>
 ```
 
 Composes:
@@ -21,7 +21,7 @@ If a UI block is unused, warn.
 ## Diff
 
 ```bash
-pnpm content-audit:diff --article <article_id>
+bun run content-audit:diff --article <article_id>
 ```
 
 Compares:

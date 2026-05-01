@@ -48,3 +48,13 @@
 - [ ] No automatic fact-checking is added.
 - [ ] No article/question is overwritten during export/normalize/diff.
 - [ ] All scripts pass typecheck/lint according to repo conventions.
+
+## Final parity additions
+
+- [ ] Manifest article summaries include schema aliases `folder` and `linked_question_count`.
+- [ ] New export folders use `<safe-slug>--<article_id>` naming.
+- [ ] Question push is separate, stale-safe, and dry-run by default.
+- [ ] Optional admin AI Audit import is dry-run by default and best-effort.
+- [ ] Component suggestions are metadata-only and do not auto-insert.
+- [ ] UI block edit ledger validation exists and does not silently mutate preserved blocks.
+- [ ] AI fact-checking/rewrite commands fail closed and do not call AI APIs.

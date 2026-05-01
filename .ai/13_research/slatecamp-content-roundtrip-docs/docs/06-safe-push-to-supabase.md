@@ -41,13 +41,13 @@ question diff report
 The command should default to no mutation:
 
 ```bash
-pnpm content-audit:push --article <article_id>
+bun run content-audit:push:dry-run -- --article-id <article_id>
 ```
 
 To mutate:
 
 ```bash
-pnpm content-audit:push --article <article_id> --apply
+bun run content-audit:push:apply -- --article-id <article_id>
 ```
 
 ## Article update
@@ -72,7 +72,7 @@ Do not update questions just because an article changed.
 Use separate commands such as:
 
 ```bash
-pnpm content-audit:push-question --question <question_id> --apply
+bun run content-audit:push-question:apply -- --question-id <question_id>
 ```
 
 ## Conflict behavior

@@ -1,6 +1,6 @@
 # Question Round-Trip Future
 
-This milestone exports linked questions. It does not need to fully implement question editing/pushing, but the design should not block it.
+This milestone exports linked questions and now includes an explicit stale-safe question push command. Question edits remain separate from article push and require a local question-edits sidecar plus --apply.
 
 ## Future local structure
 
@@ -13,7 +13,7 @@ question-edits/
 ## Question push should be explicit
 
 ```bash
-pnpm content-audit:push-question --question <question_id> --apply
+bun run content-audit:push-question:apply -- --question-id <question_id>
 ```
 
 ## Required stale check

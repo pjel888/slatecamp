@@ -36,3 +36,12 @@ push applied -> ai_review_decisions or audit log
 ```
 
 This is optional for the first implementation.
+
+## Implemented optional importer
+
+```bash
+bun run content-audit:admin-log -- --run-id latest
+bun run content-audit:admin-log -- --run-id latest --apply
+```
+
+The importer is dry-run by default. With `--apply`, it inserts one best-effort `ai_audit_runs` row using existing AI Audit tables. Missing-table or permission errors are reported as warnings so local content-audit workflows remain independent.

@@ -48,3 +48,11 @@ design principle article -> visual comparison, critique prompt, annotated exampl
 ```
 
 The implementation should not hardcode these recommendations into article content. Keep this as metadata/reporting only until a later content upgrade phase.
+
+## Implemented metadata-only suggestion report
+
+```bash
+bun run content-audit:component-suggestions -- --all
+```
+
+This creates per-article `component-suggestions.json` and aggregate `component-inventory/component-suggestions.json`. It is deterministic metadata only and does not auto-insert or rewrite article content. If run with `--apply`, it writes a blocked `component-insertion-report.json` and still performs no insertion.

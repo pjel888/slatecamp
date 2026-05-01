@@ -5,12 +5,12 @@ The first implementation does not need to solve everything.
 ## MVP commands
 
 ```bash
-pnpm content-audit:export
-pnpm content-audit:normalize
-pnpm content-audit:components
-pnpm content-audit:diff --article <article_id>
-pnpm content-audit:push --article <article_id>
-pnpm content-audit:push --article <article_id> --apply
+bun run content-audit:export
+bun run content-audit:normalize
+bun run content-audit:components
+bun run content-audit:diff -- --article-id <article_id>
+bun run content-audit:push:dry-run -- --article-id <article_id>
+bun run content-audit:push:apply -- --article-id <article_id>
 ```
 
 ## MVP outputs
@@ -37,3 +37,14 @@ bulk push without review
 question correction automation
 source verification automation
 ```
+
+## Optional explicit follow-up surfaces
+
+```bash
+bun run content-audit:push-question:dry-run -- --question-id <question_id>
+bun run content-audit:admin-log -- --run-id latest
+bun run content-audit:component-suggestions -- --all
+bun run content-audit:ui-block-edits -- --all
+```
+
+AI fact-checking, AI rewrite, and automatic component insertion remain fail-closed guard surfaces only; no AI APIs are integrated.

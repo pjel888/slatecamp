@@ -74,7 +74,14 @@
     "content-audit:push:dry-run": "bun scripts/content-audit/push-candidates-to-supabase.ts --dry-run",
     "content-audit:push:apply": "bun scripts/content-audit/push-candidates-to-supabase.ts --apply",
     "content-audit:push": "bun scripts/content-audit/push-candidates-to-supabase.ts",
-    "content-audit:roundtrip": "bun scripts/content-audit/run-content-roundtrip.ts"
+    "content-audit:roundtrip": "bun scripts/content-audit/run-content-roundtrip.ts",
+    "content-audit:push-question:dry-run": "bun scripts/content-audit/push-question-to-supabase.ts --dry-run",
+    "content-audit:push-question:apply": "bun scripts/content-audit/push-question-to-supabase.ts --apply",
+    "content-audit:admin-log": "bun scripts/content-audit/sync-run-log-to-admin-audit.ts",
+    "content-audit:component-suggestions": "bun scripts/content-audit/suggest-component-placements.ts",
+    "content-audit:ui-block-edits": "bun scripts/content-audit/validate-ui-block-edits.ts",
+    "content-audit:fact-check": "bun scripts/content-audit/ai-feature-guard.ts fact-check",
+    "content-audit:rewrite": "bun scripts/content-audit/ai-feature-guard.ts rewrite"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.78.0",

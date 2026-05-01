@@ -14,7 +14,7 @@ Each article exports as a self-contained folder under `.ai/content-audit-export/
     <run_id>/
       run-log.json
   articles/
-    <safe-slug-or-article-id>/
+    <safe-slug>--<article_id>/
       original.md
       normalized.md
       candidate.md
@@ -26,6 +26,7 @@ Each article exports as a self-contained folder under `.ai/content-audit-export/
       sources.json
       taxonomy.json
       component-usage.json
+      component-suggestions.json
       compose-report.json
       compose-error.json
       diff-report.json
@@ -33,11 +34,15 @@ Each article exports as a self-contained folder under `.ai/content-audit-export/
       push-report.json
       push-result.json
       conflict-report.json
+      question-edits/
+        <question_id>.json
+        <question_id>.push-report.json
   component-inventory/
     components.json
     component-files.json
     component-usage-in-articles.json
     component-audit-report.json
+    component-suggestions.json
     unknown-components.json
     component-fit-notes.md
 ```
@@ -69,6 +74,10 @@ warnings[]
 ```
 
 Each `articles[]` entry summarizes article id, title, slug, bundle path, content hash, linked question hash, source hash, and row counts.
+
+## Folder naming
+
+New exports use `<safe-slug>--<article_id>` where the slug segment is sanitized and truncated. Missing slugs use `article--<article_id>`.
 
 ## `original.md`
 

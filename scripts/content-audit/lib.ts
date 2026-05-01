@@ -36,6 +36,9 @@ export interface CliOptions {
   force?: boolean
   allSafe?: boolean
   confirm?: string
+  questionId?: string
+  adminAuditLog?: boolean
+  allowUiBlockEdits?: boolean
   reviewerId?: string
   note?: string
   command?: string
@@ -307,8 +310,12 @@ function normalizeAliases(options: CliOptions) {
   const raw = options as JsonObject
   if (raw.article && !options.articleId) options.articleId = String(raw.article)
   if (raw.article_id && !options.articleId) options.articleId = String(raw.article_id)
+  if (raw.question && !options.questionId) options.questionId = String(raw.question)
+  if (raw.question_id && !options.questionId) options.questionId = String(raw.question_id)
   if (raw.all_safe && !options.allSafe) options.allSafe = Boolean(raw.all_safe)
   if (raw.changed_only && !options.changedOnly) options.changedOnly = Boolean(raw.changed_only)
+  if (raw.admin_audit_log && !options.adminAuditLog) options.adminAuditLog = Boolean(raw.admin_audit_log)
+  if (raw.allow_ui_block_edits && !options.allowUiBlockEdits) options.allowUiBlockEdits = Boolean(raw.allow_ui_block_edits)
   options.includeQuestions ??= true
   options.includeSources ??= true
   options.includeTaxonomy ??= true
@@ -381,19 +388,19 @@ export function resolveExportRoot(rawPath?: string, cwd = process.cwd()): string
 }
 
 export function safeFolderName(slug: string | null | undefined, articleId: string, used = new Set<string>()) {
-  const baseSource = slug?.trim() || articleId
+  const baseSource = slug?.trim() || 'article'
   const base = baseSource
     .normalize('NFKD')
     .replace(/[\u0300-\u036f]/g, '')
     .toLowerCase()
     .replace(/[^a-z0-9._-]+/g, '-')
     .replace(/^-+|-+$/g, '')
-    .slice(0, 120) || articleId
-  let candidate = base
-  if (used.has(candidate)) candidate = `${base}-${articleId}`.slice(0, 160)
+    .slice(0, 100) || 'article'
+  const suffix = `--${articleId}`
+  let candidate = `${base}${suffix}`.slice(0, 170)
   let counter = 2
   while (used.has(candidate)) {
-    candidate = `${base}-${articleId}-${counter}`.slice(0, 170)
+    candidate = `${base}${suffix}-${counter}`.slice(0, 180)
     counter += 1
   }
   used.add(candidate)

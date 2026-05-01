@@ -15,10 +15,13 @@
     {
       "article_id": "string",
       "folder": "string",
+      "bundle_path": "string",
       "title": "string",
       "slug": "string",
+      "content_hash": "sha256:string",
       "original_content_hash": "sha256:string",
       "linked_question_count": 0,
+      "question_count": 0,
       "source_count": 0,
       "ui_block_count": 0,
       "parser_status": "string"

@@ -12,7 +12,7 @@ NORMALIZE
 original.md -> normalized.md + ui-blocks.json
 
 EDIT
-human/Codex/Kimi edits normalized.md or structured question files
+human/local review edits normalized.md or structured question files
 
 COMPOSE
 normalized.md + ui-blocks.json -> candidate.md
@@ -54,7 +54,7 @@ Direct editing is risky because:
 Do not push by default. A push command should require an explicit apply flag, such as:
 
 ```bash
-pnpm content-audit:push --article <article_id> --apply
+bun run content-audit:push:apply -- --article-id <article_id>
 ```
 
 Dry run should be the default behavior.

@@ -35,11 +35,13 @@ interface ExportedArticleSummary {
   article_id: string
   title: string
   slug: string | null
+  folder: string
   bundle_path: string
   content_hash: string
   original_content_hash: string
   linked_questions_hash: string
   sources_hash: string
+  linked_question_count: number
   question_count: number
   source_count: number
   taxonomy_count: number
@@ -187,11 +189,13 @@ async function main() {
         article_id: article.article_id,
         title: article.title,
         slug: article.slug ?? null,
+        folder,
         bundle_path: path.relative(exportRoot, articleDir),
         content_hash: contentHash,
         original_content_hash: contentHash,
         linked_questions_hash: linkedQuestionsHash,
         sources_hash: sourcesHash,
+        linked_question_count: questions.length,
         question_count: questions.length,
         source_count: sources.length,
         taxonomy_count: taxonomy.length,

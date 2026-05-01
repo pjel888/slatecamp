@@ -15,6 +15,7 @@ import {
   normalizeArticleContent,
   parseArgs,
   readSyncState,
+  safeFolderName,
   scanComponentInventory,
   sha256,
   shouldExportChangedArticle,
@@ -178,11 +179,18 @@ describe('content-audit compose/diff/push safety', () => {
   })
 
   test('cli parser supports changed-only, all-safe, and confirm flags', () => {
-    const options = parseArgs(['--changed-only', '--all-safe', '--confirm', BULK_APPLY_CONFIRMATION, '--article_id', 'a1'])
+    const options = parseArgs(['--changed-only', '--all-safe', '--confirm', BULK_APPLY_CONFIRMATION, '--article_id', 'a1', '--question-id', 'q1', '--admin-audit-log'])
     expect(options.changedOnly).toBe(true)
     expect(options.allSafe).toBe(true)
     expect(options.confirm).toBe(BULK_APPLY_CONFIRMATION)
     expect(options.articleId).toBe('a1')
+    expect(options.questionId).toBe('q1')
+    expect(options.adminAuditLog).toBe(true)
+  })
+
+  test('folder names use stable slug double-dash article id schema', () => {
+    expect(safeFolderName('Hello World!', '00000000-0000-4000-8000-000000000001')).toBe('hello-world--00000000-0000-4000-8000-000000000001')
+    expect(safeFolderName(null, '00000000-0000-4000-8000-000000000002')).toBe('article--00000000-0000-4000-8000-000000000002')
   })
 
 

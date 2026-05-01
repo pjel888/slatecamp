@@ -88,6 +88,40 @@ bun run content-audit:push:apply -- --all-safe --confirm "APPLY ALL SAFE CONTENT
 bun run content-audit:validate -- --all --summary
 ```
 
+## Question push dry-run/apply
+
+Question mutation is separate from article push and requires a local `question-edits/<question_id>.json` file plus stale checks.
+
+```bash
+bun run content-audit:push-question:dry-run -- --question-id <question_id>
+bun run content-audit:push-question:apply -- --question-id <question_id>
+```
+
+## Optional admin AI Audit import
+
+Admin logging is explicit and dry-run by default. It imports a local run log into `ai_audit_runs` only when `--apply` is passed and the AI Audit tables exist.
+
+```bash
+bun run content-audit:admin-log -- --run-id latest
+bun run content-audit:admin-log -- --run-id latest --apply
+```
+
+## Component suggestions and UI block edit validation
+
+```bash
+bun run content-audit:component-suggestions -- --all
+bun run content-audit:ui-block-edits -- --all
+```
+
+## Guarded non-goals
+
+The following commands intentionally fail closed because this milestone still has no AI APIs, fact-checking, or automatic rewriting:
+
+```bash
+bun run content-audit:fact-check
+bun run content-audit:rewrite
+```
+
 ## Orchestrator
 
 ```bash

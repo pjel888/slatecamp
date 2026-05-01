@@ -48,3 +48,11 @@ question-edits/
 `candidate.md` should always be generated, not manually edited.
 
 If a human edits `candidate.md`, the system should warn that the edit may not round-trip.
+
+## UI block edit ledger validation
+
+```bash
+bun run content-audit:ui-block-edits -- --all
+```
+
+`ui-block-edits.json` can hold proposed manual UI block edits with `block_id`, `previous_raw_hash`, `proposed_raw`, `raw_hash`, `reason`, `status`, and approval metadata. The validator checks hashes and approval fields but does not automatically mutate preserved UI blocks or push them.
