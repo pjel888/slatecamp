@@ -15,3 +15,6 @@ Use this folder for:
 - `client-server-boundary-rules.md`
 
 Deep product/reference docs now live under `deep/`.
+
+## Current deep reference additions
+- `deep/05-reference/content-audit-editor-protocol/` documents the AI/human editor protocol for generated content-audit bundles.

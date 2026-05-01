@@ -67,6 +67,14 @@
 - `05-reference/001-rls-patterns.md` — Active
 - `05-reference/002-glossary.md` — Active
 - `05-reference/003-environment-vars.md` — Active
+- `05-reference/content-audit-editor-protocol/AGENTS.md` — Active local guidance
+- `05-reference/content-audit-editor-protocol/README.md` — Active content-audit editor protocol entrypoint
+- `05-reference/content-audit-editor-protocol/01-editor-operating-protocol.md` — Active
+- `05-reference/content-audit-editor-protocol/02-article-editing-rules.md` — Active
+- `05-reference/content-audit-editor-protocol/03-question-editing-rules.md` — Active
+- `05-reference/content-audit-editor-protocol/04-fact-checking-and-source-policy.md` — Active
+- `05-reference/content-audit-editor-protocol/05-review-and-safety-checklist.md` — Active
+- `05-reference/content-audit-editor-protocol/06-command-runbook.md` — Active
 
 ## archive
 
