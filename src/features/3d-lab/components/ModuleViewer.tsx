@@ -121,7 +121,7 @@ export const ModuleViewer = ({ modelId, basePath }: ModuleViewerProps) => {
   const subject = config?.subject ?? entry?.subject ?? ''
 
   const _hotspotCount = config?.hotspots?.length ?? 0
-  const totalALEQuestions = entry?.leaQuestionCount ?? 0
+  const totalLEAQuestions = entry?.leaQuestionCount ?? 0
 
   // Construct a consistent ModuleConfig object for the context card
   const moduleMetadata: ModuleConfig = useMemo(() => ({
@@ -196,7 +196,7 @@ export const ModuleViewer = ({ modelId, basePath }: ModuleViewerProps) => {
         title={title}
         codeReference={codeRef}
         visitedCount={0}
-        totalCount={totalALEQuestions}
+        totalCount={totalLEAQuestions}
         onBack={handleBack}
         shellConfig={templateContent.shellConfig}
         capabilities={templateContent.capabilities}
@@ -221,7 +221,7 @@ export const ModuleViewer = ({ modelId, basePath }: ModuleViewerProps) => {
       title={title}
       codeReference={codeRef}
       visitedCount={0}
-      totalCount={totalALEQuestions}
+      totalCount={totalLEAQuestions}
       onBack={handleBack}
       shellConfig={{}}
       capabilities={{ resetCamera: true }}

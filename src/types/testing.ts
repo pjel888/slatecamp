@@ -300,12 +300,12 @@ export const LEA_SUBJECTS = [
   { id: 'LEA-DSGN', name: 'Building Laws & Codes', short: 'Building Laws' },
 ] as const
 
-export type ALESubjectId = typeof LEA_SUBJECTS[number]['id']
+export type LEASubjectId = typeof LEA_SUBJECTS[number]['id']
 
 const LEA_SUBJECT_MAP = new Map(LEA_SUBJECTS.map((s) => [s.id, s]))
 
 export const getSubjectName = (leaId: string | undefined | null): string =>
-  LEA_SUBJECT_MAP.get(leaId as ALESubjectId)?.name ?? leaId ?? 'Unknown'
+  LEA_SUBJECT_MAP.get(leaId as LEASubjectId)?.name ?? leaId ?? 'Unknown'
 
 export const getSubjectShortName = (leaId: string | undefined | null): string =>
-  LEA_SUBJECT_MAP.get(leaId as ALESubjectId)?.short ?? leaId ?? 'Unknown'
+  LEA_SUBJECT_MAP.get(leaId as LEASubjectId)?.short ?? leaId ?? 'Unknown'

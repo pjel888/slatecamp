@@ -33,7 +33,7 @@ const SUBJECT_READINESS = [
 
 /* ── Card 1: LEA Subject Coverage (Back Left) ── */
 
-const ALESubjectCoverageCard = () => {
+const LEASubjectCoverageCard = () => {
   const subjects = [
     { name: 'Building Technology', weight: '20%', color: 'bg-camp-cobalt' },
     { name: 'Structural Design', weight: '15%', color: 'bg-camp-cobalt' },
@@ -258,7 +258,7 @@ export const HeroCards = ({ isLoggedIn }: { isLoggedIn: boolean }) => (
     id='hero-right'
     className='relative flex min-h-[320px] w-full flex-col items-center gap-4 md:col-span-5 md:min-h-[380px]  md:flex-row md:items-stretch md:justify-center md:gap-0'
   >
-    <ALESubjectCoverageCard />
+    <LEASubjectCoverageCard />
     <MockQuestionCard />
     <ConversionHookCard isLoggedIn={isLoggedIn} />
   </div>

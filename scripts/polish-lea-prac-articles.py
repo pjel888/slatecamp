@@ -3,7 +3,7 @@
 Pass 7 — Learning polish on all Professional Practice (lea-prac-*) articles.
 
 Processes each unique article directory, applying:
-1. Replace generic Learning Goals with specific ALE-topic objectives
+1. Replace generic Learning Goals with specific LEA-topic objectives
 2. Remove AI meta-commentary
 3. Add "## Related Articles" section with cross-references
 4. Strengthen ExamTips and Warnings
@@ -74,18 +74,18 @@ LEARNING_GOALS = {
     "lea-prac-law-007": (
         "## Learning Goal\n\n"
         "After studying this article, you should be able to:\n\n"
-        "- List the ALE eligibility requirements: BS Architecture, DAE, moral character certificates.\n"
+        "- List the LEA eligibility requirements: BS Architecture, DAE, moral character certificates.\n"
         "- Explain the Documentary Alternative Evaluation (DAE) process and who qualifies.\n"
         "- State the required documents for examination application.\n"
-        "- Identify the grounds for disqualification from taking the ALE."
+        "- Identify the grounds for disqualification from taking the LEA."
     ),
     "lea-prac-law-008": (
         "## Learning Goal\n\n"
         "After studying this article, you should be able to:\n\n"
-        "- Describe the ALE structure: subject areas, number of items, and time allocation.\n"
+        "- Describe the LEA structure: subject areas, number of items, and time allocation.\n"
         "- State the passing standard (general average of 70%, no subject below 50%).\n"
         "- Explain the retaking policy and how many times a taker may re-take.\n"
-        "- Identify the five (5) subject areas tested on the ALE."
+        "- Identify the five (5) subject areas tested on the LEA."
     ),
     "lea-prac-law-009": (
         "## Learning Goal\n\n"
@@ -701,7 +701,7 @@ LEARNING_GOALS = {
         "- Explain the ASEAN Mutual Recognition Arrangement (MRA) for architectural services.\n"
         "- Describe the eligibility requirements for ASEAN architects.\n"
         "- Identify how the MRA facilitates cross-border practice within ASEAN.\n"
-        "- Distinguish MRA registration from the full Philippine ALE pathway."
+        "- Distinguish MRA registration from the full Philippine LEA pathway."
     ),
     "lea-prac-frm-007": (
         "## Learning Goal\n\n"
@@ -1076,12 +1076,11 @@ def strengthen_ui_blocks(content, slug):
             if text.startswith("**LEA") or len(text) < 80:
                 # Add stronger language
                 new_text = text.rstrip('.')
-                if "ALE" not in new_text and "LEA" not in new_text:
-                    new_text = f"**ALE Must-Know:** {new_text}"
+                if "LEA" not in new_text:
+                    new_text = f"**LEA Must-Know:** {new_text}"
                 else:
-                    new_text = new_text.replace("**LEA", "**ALE")
                     if not new_text.endswith("— memorize this for the exam."):
-                        new_text = new_text.rstrip('.') + " — this distinction appears on every ALE cycle."
+                        new_text = new_text.rstrip('.') + " — this distinction appears on every LEA cycle."
                 # Rebuild
                 new_full = full.replace(props, props).replace(
                     f"Text: {text}",
@@ -1103,8 +1102,8 @@ def strengthen_ui_blocks(content, slug):
             # Add ⚠️ if not present
             if "⚠" not in text:
                 new_text = f"⚠️ {text}"
-                if "ALE" not in new_text and "LEA" not in new_text:
-                    new_text += " — expect this as a trap answer on the ALE."
+                if "LEA" not in new_text:
+                    new_text += " — expect this as a trap answer on the LEA."
                 new_full = full.replace(
                     f"Text: {text}",
                     f"Text: {new_text}"
@@ -1138,20 +1137,20 @@ def replace_learning_goal(content, slug, category):
         new_goal = (
             f"## Learning Goal\n\n"
             f"After studying this article, you should be able to:\n\n"
-            f"- Identify and explain the {topics} tested on the ALE.\n"
+            f"- Identify and explain the {topics} tested on the LEA.\n"
             f"- Apply relevant code provisions and standards to exam scenarios.\n"
             f"- Distinguish between different rules, roles, and procedures in architectural practice."
         )
 
     # Define the old patterns to replace
     old_patterns = [
-        # Generic "After reading this article, you should understand the key concepts tested in the ALE..."
-        r'## Learning Goal\n\nAfter reading this article, you should understand the key concepts tested in the ALE for this topic, including relevant code provisions, dimensional standards, and common exam applications\.',
+        # Generic "After reading this article, you should understand the key concepts tested in the LEA..."
+        r'## Learning Goal\n\nAfter reading this article, you should understand the key concepts tested in the LEA for this topic, including relevant code provisions, dimensional standards, and common exam applications\.',
         # What You Need to Know for the LEA pattern
-        r'## What You Need to Know for the LEA\n## Learning Goal\nAfter reading this article, you should understand the key concepts tested in the ALE for this topic, including relevant code provisions, dimensional standards, and common exam applications\.',
-        r'## What You Need to Know for the LEA\n## Learning Goal\nAfter reading this article, you should understand the key concepts tested in the ALE for this topic, including the four-tiered obligations under SPP Document 200, the enforcement role of PRBoA, and common exam scenarios testing ethical prioritization\.',
+        r'## What You Need to Know for the LEA\n## Learning Goal\nAfter reading this article, you should understand the key concepts tested in the LEA for this topic, including relevant code provisions, dimensional standards, and common exam applications\.',
+        r'## What You Need to Know for the LEA\n## Learning Goal\nAfter reading this article, you should understand the key concepts tested in the LEA for this topic, including the four-tiered obligations under SPP Document 200, the enforcement role of PRBoA, and common exam scenarios testing ethical prioritization\.',
         # Multi-paragraph generic learning goals
-        r'## Learning Goal\n\nAfter reading this article, you should be able to:\n\n- Identify and explain key legal provisions under RA 9266 and related laws tested on the ALE\.\n- Apply statutory definitions, qualifications, and procedural rules to exam scenarios\.\n- Distinguish between the roles, powers, and liabilities of different actors in architectural practice\.',
+        r'## Learning Goal\n\nAfter reading this article, you should be able to:\n\n- Identify and explain key legal provisions under RA 9266 and related laws tested on the LEA\.\n- Apply statutory definitions, qualifications, and procedural rules to exam scenarios\.\n- Distinguish between the roles, powers, and liabilities of different actors in architectural practice\.',
         # The specific text that follows a triple-dash separator
         r'\n\n---\n\n### Learning Goal\nAfter reading this article, you should be able to: explain what RA 9266 replaced, describe the structure and qualifications of the PRBoA, distinguish three key architectural roles under the law, and correctly cite the sections that govern them\.',
         # Generic multi-line
@@ -1183,9 +1182,9 @@ def replace_learning_goal(content, slug, category):
         flags=re.DOTALL
     )
 
-    # Remove "Why This Matters for the ALE" if it exists alongside the new goal
+    # Remove "Why This Matters for the LEA" if it exists alongside the new goal
     content = re.sub(
-        r'\n\n### Why This Matters for the ALE\n\n.*?(?=\n\n---|\n\n###|\n\n\[)',
+        r'\n\n### Why This Matters for the LEA\n\n.*?(?=\n\n---|\n\n###|\n\n\[)',
         '',
         content,
         flags=re.DOTALL

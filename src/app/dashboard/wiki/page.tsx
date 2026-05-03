@@ -15,7 +15,7 @@ export default function WikiPage() {
             Knowledge Wiki
           </h1>
           <p className='text-muted-foreground text-sm leading-relaxed'>
-            Access the authoritative guide for the Architecture Licensure Exam.
+            Access the authoritative guide for the Licensure Examination for Architects (LEA).
             Select a topic from the taxonomy tree on the left to begin your study.
           </p>
         </div>

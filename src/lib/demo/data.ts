@@ -101,7 +101,7 @@ export const DEMO_PROFILE = getDemoProfile()
 export const DEMO_DISCIPLINES = [
   {
     discipline_id: DEMO_DISCIPLINE_ID,
-    name: 'Architecture Licensure Exam',
+    name: 'Licensure Examination for Architects',
     acronym: 'LEA',
     created_at: daysAgo(180),
     updated_at: daysAgo(7),
@@ -133,7 +133,7 @@ export const DEMO_TAXONOMY = [
     discipline_id: DEMO_DISCIPLINE_ID,
     parent_id: DEMO_SUBJECT_BUILDING_CODE_ID,
     level: 2,
-    name: 'ALE Foundations',
+    name: 'LEA Foundations',
     subject_area: 'Building Code',
     is_leaf: true,
     is_cross_ref_only: false,
@@ -234,9 +234,9 @@ export const DEMO_WIKI_ARTICLES = [
   {
     article_id: DEMO_WIKI_ARTICLE_ID,
     slug: DEMO_WIKI_ARTICLE_SLUG,
-    title: 'Demo ALE Foundations',
+    title: 'Demo LEA Foundations',
     content: [
-      '# Demo ALE Foundations',
+      '# Demo LEA Foundations',
       '',
       'This seeded article exists so the wiki route has one real published path in demo mode.',
       '',

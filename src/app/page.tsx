@@ -11,7 +11,7 @@ export const dynamic = 'force-dynamic'
 export const metadata: Metadata = {
   title: `${siteConfig.name} — Know Your LEA Readiness Before Exam Day`,
   description:
-    'The only LEA prep platform built by a licensed architect. A real-time Readiness Score, expert-verified wiki, and interactive 3D building code models.  Built specifically for the Philippine Architecture Licensure Exam.',
+    'The only LEA prep platform built by a licensed architect. A real-time Readiness Score, expert-verified wiki, and interactive 3D building code models.  Built specifically for the Licensure Examination for Architects (LEA).',
   openGraph: {
     title: `${siteConfig.name} — The LEA Readiness Intelligence Platform`,
     description:
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     'architecture wiki Philippines',
     'spaced repetition architecture exam',
     'SlateCamp',
-    'Philippine Architecture Licensure Exam',
+    'Licensure Examination for Architects (LEA)',
     'LEA mock exam',
   ],
   alternates: {

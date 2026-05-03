@@ -103,7 +103,7 @@ export interface ModuleMeta {
   category: string
   /** Route path from dashboard root */
   routePath: string
-  /** ALE taxonomy nodes this module covers */
+  /** LEA taxonomy nodes this module covers */
   aleTaxonomy: string[]
   /** PD 1096 / RA 9514 / BP 344 rule references */
   codeReferences: string[]
@@ -489,7 +489,7 @@ export interface LearningSchema {
   keyValues: string[]
   /** Prerequisite knowledge */
   prerequisites: string[]
-  /** ALE question types this module prepares for */
+  /** LEA question types this module prepares for */
   aleQuestionTypes: string[]
   /** Success criteria -- how we know the module worked */
   successCriteria: string

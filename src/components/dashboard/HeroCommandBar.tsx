@@ -229,7 +229,7 @@ export function HeroCommandBar({
           <TooltipTrigger asChild>
             <div className='flex items-center gap-3 px-6 py-2.5 cursor-default'>
               <span className='font-dm-mono text-white/40 text-[11px] font-medium uppercase tracking-wider shrink-0'>
-                Architecture Licensure Exam (LEA) Syllabus
+                Licensure Examination for Architects (LEA) Syllabus
               </span>
               <div className='h-1.5 flex-1 rounded-full overflow-hidden bg-white/10'>
                 <div

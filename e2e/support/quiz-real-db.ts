@@ -126,8 +126,8 @@ export async function seedQuizRealDb() {
     await supabase.from('disciplines').upsert(
       {
         discipline_id: QUIZ_REAL_SEED.disciplineId,
-        name: 'Playwright Architecture Licensure Exam d100',
-        acronym: 'PW-ALE-D100',
+        name: 'Playwright LEA d100',
+acronym: 'PW-LEA-D100'
         updated_at: now,
       },
       { onConflict: 'discipline_id' },

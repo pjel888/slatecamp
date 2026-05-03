@@ -18,7 +18,7 @@ const SocialCard = ({ firstName }: { firstName: string | null }) => {
       aria-label="Shareable achievement card"
     >
       <p className="text-xs font-semibold uppercase tracking-widest text-white/60 mb-3">
-        Architecture Licensure Exam
+        Licensure Examination for Architects (LEA)
       </p>
       <p className="text-2xl font-bold text-white leading-tight">
         {displayName}
@@ -55,7 +55,7 @@ const PasserFlow = ({ firstName }: PasserFlowProps) => {
       {/* Congratulations card */}
       <div className="rounded-md p-8 text-center bg-primary">
         <p className="text-xs font-semibold uppercase tracking-widest text-white/60 mb-2">
-          Architecture Licensure Exam
+          Licensure Examination for Architects (LEA)
         </p>
         <h1 className="text-2xl font-bold text-white leading-tight">
           Architect{firstName ? ` ${firstName}` : ''}. You did it.

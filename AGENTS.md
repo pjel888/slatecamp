@@ -11,7 +11,7 @@
 This file governs the whole repository unless a deeper `AGENTS.md` overrides it.
 
 ## Current repository reality
-SlateCamp is a large Next.js App Router codebase for ALE preparation. It is a **pre-launch MVP** that is broad, mature, and operationally heavy.
+SlateCamp is a large Next.js App Router codebase for LEA preparation. It is a **pre-launch MVP** that is broad, mature, and operationally heavy.
 
 Live evidence from the repo on 2026-04-17:
 - `src/app/` contains 125 `page.tsx` routes, 16 layouts, 96 loading files, 9 error boundaries, and 12 route handlers

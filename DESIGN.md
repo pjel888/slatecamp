@@ -133,7 +133,7 @@ components:
 
 ## Overview
 
-SlateCamp is a calm, work-focused review platform for Philippine Architecture Licensure Exam candidates. The interface should feel serious, legible, and coach-like: dense enough for repeated study, quiet enough for anxious candidates, and precise enough for professional exam preparation.
+SlateCamp is a calm, work-focused review platform for Philippine Licensure Examination for Architects (LEA) candidates. The interface should feel serious, legible, and coach-like: dense enough for repeated study, quiet enough for anxious candidates, and precise enough for professional exam preparation.
 
 The visual language is restrained and instructional. Use structural hierarchy, strong typography, exact spacing, and a small semantic color system instead of decorative effects. Every screen should help the student decide what to do next without hype, shame, or manufactured gamification.
 

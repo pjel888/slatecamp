@@ -23,7 +23,7 @@ const sixQuestions = [
   {
     question: 'What is the LEA and who needs to take it?',
     answer:
-      'The Architect Licensure Examination (LEA) is the Philippine board exam required for all architecture graduates who wish to practice as licensed architects. It covers seven subjects spanning design, history, utilities, and the National Building Code.',
+      'The Licensure Examination for Architects (LEA) is the Philippine board exam required for all architecture graduates who wish to practice as licensed architects. It covers seven subjects spanning design, history, utilities, and the National Building Code.',
   },
   {
     question: 'How does SlateCamp differ from traditional review centers?',

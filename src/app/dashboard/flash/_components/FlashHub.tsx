@@ -11,7 +11,7 @@ export const FlashHub = ({ categories }: FlashHubProps) => {
       <div className='flex flex-col gap-1'>
         <h1 className='text-xl font-semibold text-foreground'>LEA Numbers Flash</h1>
         <p className='text-sm text-muted-foreground'>
-          Critical code numbers for the Architect Licensure Examination. Tap a category to start.
+          Critical code numbers for the Licensure Examination for Architects (LEA). Tap a category to start.
         </p>
       </div>
 

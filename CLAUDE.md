@@ -10,7 +10,7 @@ If `README.md`, `.ai/`, `.ai/06_specs/deep/`, `AGENTS.md`, or older plans disagr
 
 # 1. Repository identity
 
-SlateCamp is a large Next.js App Router codebase for the **Philippine Architecture Licensure Exam (ALE)**.
+SlateCamp is a large Next.js App Router codebase for the **Licensure Examination for Architects (LEA)**.
 
 **Current Status**: **Pre-launch MVP**. The absolute priority is to create the best, most effective, and accurate MVP for launch.
 

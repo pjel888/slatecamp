@@ -11,7 +11,7 @@ export const PROFESSIONS: {
     label: "Architecture",
     icon: "pencil-ruler",
     exams: [
-      { value: "LEA 2026", label: "LEA — Architect Licensure Exam (PH)" },
+      { value: "LEA 2026", label: "LEA — Licensure Examination for Architects (PH)" },
       { value: "ARE 5.0", label: "ARE 5.0 — Architect Registration Exam (US)" },
       { value: "RIBA Part 3", label: "RIBA Part 3 (UK)" },
     ],

@@ -85,7 +85,7 @@ export function WikiLearningJourney({
               Start with the learning path
             </h2>
             <p className="max-w-2xl text-sm leading-relaxed text-wiki-body dark:text-wiki-invert-body">
-              This page keeps the full article intact, then adds orientation, checkpoints, and next steps so you can study it like an ALE training module.
+              This page keeps the full article intact, then adds orientation, checkpoints, and next steps so you can study it like an LEA training module.
             </p>
           </div>
 

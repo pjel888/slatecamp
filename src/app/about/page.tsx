@@ -65,7 +65,7 @@ export default function AboutPage() {
                   The LEA struggle is real
                 </h2>
                 <p className="mt-4 text-[15px] leading-relaxed text-text-secondary">
-                  The Architecture Licensure Examination covers a wide taxonomy
+                  The Licensure Examination for Architects (LEA) covers a wide taxonomy
                   — from the National Building Code to Architectural Theory,
                   Professional Practice to Specifications. Most reviewers treat
                   every topic the same. You end up spending hours on subjects

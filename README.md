@@ -2,7 +2,7 @@
 
 ## Overview
 
-SlateCamp is a **Next.js App Router application for Philippine Architecture Licensure Exam (ALE) preparation**. It serves architecture candidates who need one place for practice tests, taxonomy-linked reference material, 3D/visual learning, study trails, analytics, notes, and admin-managed content operations.
+SlateCamp is a **Next.js App Router application for Licensure Examination for Architects (LEA) preparation**. It serves architecture candidates who need one place for practice tests, taxonomy-linked reference material, 3D/visual learning, study trails, analytics, notes, and admin-managed content operations.
 
 The current app is a **pre-launch MVP**: broad and operationally mature, but still being hardened. The current codebase, not older strategy docs, is the source of truth for this README.
 
@@ -13,7 +13,7 @@ The current app is a **pre-launch MVP**: broad and operationally mature, but sti
 This launch pass is explicitly **payment-free and live-AI-provider-free**. PayRex checkout/webhook verification, LemonSqueezy, and live OpenAI/Anthropic provider behavior are deferred post-launch work, not blockers for the current launch scope. Public copy now emphasizes source-backed learning rather than live AI. Payment UI remains disabled unless `NEXT_PUBLIC_PAYMENTS_ENABLED=true` is intentionally set for a future paid launch.
 
 - **Status:** Pre-launch MVP.
-- **Primary user:** ALE candidate/student.
+- **Primary user:** LEA candidate/student.
 - **Internal users:** content/admin operators, developers, and owner/CEO operators.
 - **Current post-cleanup counts (2026-04-30):** 109 page routes, 11 App Router route handlers, 13 layouts, 92 loading states, 7 error boundaries, 157 server/action/query files, 76 schema tables, 92 migrations, 88 test/spec files, 100 Storybook stories.
 - **Important working-tree note:** this audit started with pre-existing uncommitted source changes. Documentation reflects the files currently present on disk.
@@ -355,7 +355,7 @@ This is an implementation inventory only, not a legal conclusion. See `.ai/ip-in
 
 | IP-Relevant Item | Category | Status | Key Files | Why It Matters |
 | --- | --- | --- | --- | --- |
-| ALE taxonomy-linked learning graph | Content system / data model | Implemented | DATABASE_SCHEMA.sql; src/lib/actions/wiki-actions.ts; src/lib/actions/taxonomy.ts | Connects questions, wiki, trails, mastery and analytics around architecture exam taxonomy. |
+| LEA taxonomy-linked learning graph | Content system / data model | Implemented | DATABASE_SCHEMA.sql; src/lib/actions/wiki-actions.ts; src/lib/actions/taxonomy.ts | Connects questions, wiki, trails, mastery and analytics around architecture exam taxonomy. |
 | Quiz mode and session engine | Training/drill logic | Implemented | src/lib/actions/quiz-v2/; src/stores/useQuizStore.ts; src/lib/quiz/ | Custom exam-prep modes, session state, confidence/error handling, review/debrief. |
 | Readiness score / mastery model | Scoring/evaluation logic | Implemented | src/lib/__tests__/readiness-score.test.ts; src/lib/actions/analytics.ts; src/lib/actions/mastery-actions.ts | Computes readiness, mastery, pacing, stamina, memory health and predictions. |
 | SRS and focus-review queue | Training/drill logic | Implemented | src/lib/srs/; src/lib/focus-review/generate-queue.ts | Spaced repetition and weak-node queue generation for targeted review. |

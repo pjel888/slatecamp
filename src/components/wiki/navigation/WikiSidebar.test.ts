@@ -8,7 +8,7 @@ const seededNodes: TaxonomyNode[] = [
     discipline_id: '00000000-0000-4000-8000-000000000101',
     parent_id: '00000000-0000-4000-8000-000000000102',
     level: 2,
-    name: 'ALE Foundations',
+    name: 'LEA Foundations',
     subject_area: 'Building Code',
     is_leaf: true,
     slug: 'demo-ale-foundations',
