@@ -1,9 +1,9 @@
 ---
 title: "Philippine Laws & Codes — Mastery & Connections"
 slug: "mastery-philippine-laws"
-subject_label: "ALE-LAWS · Philippine Laws & Codes for Architectural Practice"
+subject_label: "LEA-LAWS · Philippine Laws & Codes for Architectural Practice"
 difficulty_label: "Advanced"
-ale_tests_you: "Your ability to trace any design or practice decision back to its governing legal framework — and to apply that framework correctly across every ALE subject area, not just in isolated law questions."
+ale_tests_you: "Your ability to trace any design or practice decision back to its governing legal framework — and to apply that framework correctly across every LEA subject area, not just in isolated law questions."
 status: "draft"
 ---
 
@@ -29,9 +29,9 @@ RA 9266 is the root of professional regulation. Everything about what an archite
 
 RA 9266 (Architecture Act of 2004) → PRC Resolution implementing the IRR → PRBOA Board Resolutions → Code of Ethical Conduct for Registered and Licensed Architects → Individual practice decisions
 
-<ExamTip>ALE questions on professional conduct are not judgment calls — they are code questions. The Code of Ethical Conduct for Registered and Licensed Architects has specific provisions on: accepting commissions from contractors (conflict of interest), competitive fee bidding (generally discouraged as contrary to professional dignity), advertising (permitted within defined limits), responsibility to the public versus client, and the requirement to report unsafe structures. Know the code, not just the general principle.</ExamTip>
+<ExamTip>LEA questions on professional conduct are not judgment calls — they are code questions. The Code of Ethical Conduct for Registered and Licensed Architects has specific provisions on: accepting commissions from contractors (conflict of interest), competitive fee bidding (generally discouraged as contrary to professional dignity), advertising (permitted within defined limits), responsibility to the public versus client, and the requirement to report unsafe structures. Know the code, not just the general principle.</ExamTip>
 
-**What RA 9266 defines that the ALE tests:**
+**What RA 9266 defines that the LEA tests:**
 
 - The definition of the practice of architecture (and what constitutes unlicensed practice)
 - The scope of what a registered architect may sign and seal
@@ -72,7 +72,7 @@ For residential development, PD 957 governs subdivision and condominium developm
 
 <ComparisonTable columns={["Standard","PD 957 (Open Market)","BP 220 (Socialized/Economic)"]} rows={[["Minimum lot area (single detached)","120 sqm (urban)","72 sqm (economic) / 54 sqm (socialized)"],["Minimum road right-of-way","10m (collector)","6m (local road)"],["Open space requirement","30% of gross area","3.5 sqm per lot (minimum)"],["Community facilities","Required by type","Scaled to project size"],["Floor area of core house","Not prescribed","22 sqm minimum"]]} />
 
-## Which Laws Appear in Which ALE Subjects
+## Which Laws Appear in Which LEA Subjects
 
 This is the connection map that transforms isolated law knowledge into exam-ready application.
 
@@ -105,7 +105,7 @@ This is the connection map that transforms isolated law knowledge into exam-read
 - PD 1096: structural requirements, geotechnical investigation requirements
 - NSCP 2015: governing structural code (technical, not legislative, but enforced through NBCP)
 
-<Tip>Create a two-column study sheet: left column lists each ALE subject; right column lists the laws that appear in that subject's questions. Use this as a cross-reference index during review. When you encounter a practice question, identify its subject area and its governing law simultaneously — this builds the connection habit that the exam rewards.</Tip>
+<Tip>Create a two-column study sheet: left column lists each LEA subject; right column lists the laws that appear in that subject's questions. Use this as a cross-reference index during review. When you encounter a practice question, identify its subject area and its governing law simultaneously — this builds the connection habit that the exam rewards.</Tip>
 
 ## The "Law in Context" Study Approach
 
@@ -121,7 +121,7 @@ The most durable study method for Philippine Laws is to always anchor a legal pr
 
 <Callout>The laws governing Philippine architectural practice are not arbitrary bureaucratic requirements. They are the accumulated legal response to actual failures — buildings that collapsed, fires that killed occupants who couldn't exit, developments that exploited buyers, professionals who exercised authority without accountability. When you understand the history behind a law, you understand why its provisions are specific and non-negotiable.</Callout>
 
-## Integration Patterns: What the ALE Actually Tests
+## Integration Patterns: What the LEA Actually Tests
 
 **Pattern 1: Sequential Permit Process**
 "An architect completed the design for a 5-storey mixed-use building. In what sequence must the following clearances and permits be obtained before the building can be legally occupied?"
@@ -145,7 +145,7 @@ The goal of mastery in Philippine Laws is to carry a mental regulatory map into 
 
 Three practices build this map:
 
-**Practice with scenario-based questions, not definition questions.** "What does RA 9514 require?" is less useful practice than "A 3-storey restaurant has a maximum travel distance of __ meters to the nearest exit." The second form matches how the ALE tests this knowledge.
+**Practice with scenario-based questions, not definition questions.** "What does RA 9514 require?" is less useful practice than "A 3-storey restaurant has a maximum travel distance of __ meters to the nearest exit." The second form matches how the LEA tests this knowledge.
 
 **Review the laws that changed recently.** The creation of DHSUD (RA 11201, 2019) reorganized housing agency jurisdiction. RA 9514's 2008 revision significantly changed the fire code from its predecessor. Knowing which laws have been updated, and what changed, prevents you from applying superseded provisions.
 

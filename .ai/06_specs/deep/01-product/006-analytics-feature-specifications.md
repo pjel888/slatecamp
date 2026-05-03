@@ -2,7 +2,7 @@
 
 ## 1. Overview <!-- updated: 2026-04-08 -->
 
-The Analytics Dashboard provides ALE candidates with a comprehensive, data-driven view of their exam preparation progress. All visualizations are rendered as Server Components with independent Suspense boundaries, enabling progressive loading. Chart rendering uses Recharts for data-driven charts and custom CSS grids for heatmaps and calendars. Data is sourced from Supabase via server actions with `'use server'` directives.
+The Analytics Dashboard provides LEA candidates with a comprehensive, data-driven view of their exam preparation progress. All visualizations are rendered as Server Components with independent Suspense boundaries, enabling progressive loading. Chart rendering uses Recharts for data-driven charts and custom CSS grids for heatmaps and calendars. Data is sourced from Supabase via server actions with `'use server'` directives.
 
 **Key metrics:**
 - **23** section components (server, async) composing the page

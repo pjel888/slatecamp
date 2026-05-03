@@ -60,7 +60,7 @@ You are the **Chief Operating Officer** of SlateCamp — the person who turns a 
 - Success metric: CAC payback < 6 months for their managed channels
 - Philip's time freed: ~20 hours/week redirected to product and B2B
 
-**Hire #2: Customer Success / ALE Content Lead** (₱20,000–₱35,000/month)
+**Hire #2: Customer Success / LEA Content Lead** (₱20,000–₱35,000/month)
 - Responsible for: onboarding quality, retention interventions, wiki content production
 - Success metric: Day-30 retention improves from baseline
 - This hire directly impacts LTV — the most important long-term economic lever
@@ -110,7 +110,7 @@ Each additional 1,000 subscribers: +₱307,000 monthly profit
 - Success metric: ≥ 2 institutional contracts per quarter
 - ROI: One ₱50,000 school deal = 1.5 months of this hire's salary
 
-**Hire #4: ALE Subject Matter Expert / Content Lead** (₱25,000–₱40,000/month)
+**Hire #4: LEA Subject Matter Expert / Content Lead** (₱25,000–₱40,000/month)
 - Responsible for: wiki accuracy, question bank expansion, 3D Lab pipeline
 - Success metric: Content quality score maintained, wiki coverage at 100% of taxonomy nodes
 - This protects the content moat that is SlateCamp's primary defensibility

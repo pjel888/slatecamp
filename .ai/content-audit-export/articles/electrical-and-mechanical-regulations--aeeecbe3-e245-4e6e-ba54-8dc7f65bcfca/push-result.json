@@ -1,12 +1,12 @@
 {
-  "attempted_at": "2026-05-03T14:02:03.540Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-03T14:17:37.371Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
-  "blockers": [
-    "Failed to update wiki_articles.content: Bad Request"
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
   ],
-  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "aeeecbe3-e245-4e6e-ba54-8dc7f65bcfca",
   "slug": "electrical-and-mechanical-regulations",

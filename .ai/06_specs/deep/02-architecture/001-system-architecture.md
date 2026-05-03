@@ -9,7 +9,7 @@
 
 ## Overview
 
-SlateCamp is a cognitive-first, personalized ALE (Architectural Licensure Examination) prep platform for the Philippine Architecture Licensure Exam. The system combines adaptive quiz flows, an expert-linked wiki, analytics, admin tooling, and interactive 3D learning modules under a shared Next.js codebase.
+SlateCamp is a cognitive-first, personalized LEA (Architectural Licensure Examination) prep platform for the Philippine Licensure Examination for Architects. The system combines adaptive quiz flows, an expert-linked wiki, analytics, admin tooling, and interactive 3D learning modules under a shared Next.js codebase.
 
 ---
 

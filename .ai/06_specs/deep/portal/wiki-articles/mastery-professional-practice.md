@@ -1,9 +1,9 @@
 ---
 title: "Professional Practice & Jurisprudence — Mastery & Connections"
 slug: "mastery-professional-practice"
-subject_label: "ALE-PRAC · Professional Practice & Jurisprudence"
+subject_label: "LEA-PRAC · Professional Practice & Jurisprudence"
 difficulty_label: "Intermediate"
-ale_tests_you: "Ability to trace the logical chain from RA 9266 through registration, ethics, services, fees, and contracts; connect Professional Practice to Laws & Codes and Architectural Design; and recognize integration patterns in multi-subject ALE scenarios."
+ale_tests_you: "Ability to trace the logical chain from RA 9266 through registration, ethics, services, fees, and contracts; connect Professional Practice to Laws & Codes and Architectural Design; and recognize integration patterns in multi-subject LEA scenarios."
 status: "draft"
 ---
 
@@ -11,7 +11,7 @@ status: "draft"
 
 Professional Practice & Jurisprudence has a clear internal logic. Once you see the chain — from the law that authorizes the profession, to the standards that define how it is practiced, to the ethics that govern how practitioners behave — the subject stops feeling like a scattered collection of rules and starts feeling like a coherent professional framework.
 
-This article maps that internal logic and the connections to other ALE subjects. If you are already comfortable with the foundational content, this is where you build the integrated understanding that the harder ALE questions demand.
+This article maps that internal logic and the connections to other LEA subjects. If you are already comfortable with the foundational content, this is where you build the integrated understanding that the harder LEA questions demand.
 
 ## The Internal Chain: RA 9266 → Everything Else
 
@@ -19,7 +19,7 @@ The logical chain of Professional Practice runs like this:
 
 **RA 9266 establishes the profession.** It defines what architecture is, who may practice it, how practitioners are qualified and registered, what they are responsible for, and what happens when they fall short. Everything else in Professional Practice is downstream of this law.
 
-**Registration establishes the practitioner.** The Board of Architecture, operating under the PRC, administers the ALE, evaluates qualifications, and issues the Certificate of Registration and Professional Identification Card. Without registration, there is no legal authority to practice. RA 9266 Section 20 makes this explicit: no person shall practice architecture in the Philippines without a certificate of registration.
+**Registration establishes the practitioner.** The Board of Architecture, operating under the PRC, administers the LEA, evaluates qualifications, and issues the Certificate of Registration and Professional Identification Card. Without registration, there is no legal authority to practice. RA 9266 Section 20 makes this explicit: no person shall practice architecture in the Philippines without a certificate of registration.
 
 **Ethics governs how the registered architect behaves.** The UAP Code of Ethical Conduct and the ethical provisions of RA 9266 set the standards for professional conduct: honesty with clients, protection of the public interest, avoidance of conflicts of interest, fair dealing with colleagues. Ethics is not a separate topic — it is the behavioral layer that sits on top of every professional interaction.
 
@@ -29,7 +29,7 @@ The logical chain of Professional Practice runs like this:
 
 **Contracts define the legal relationship.** The owner-architect agreement and the owner-contractor agreement are the instruments through which services and fees are formalized into enforceable commitments. Construction administration is where the architect's contractual obligations to the owner meet the contractor's contractual obligations to the owner — and where the architect must act with both loyalty to the client and fairness to all parties.
 
-<Callout>The chain runs in one direction for most purposes: law → registration → ethics → services → fees → contracts. But the ALE can test any link in the chain and any connection between links. A question about an architect's fee dispute involves services, fees, and contracts simultaneously. A question about professional misconduct involves ethics, registration, and RA 9266 simultaneously. Train yourself to see the whole chain.</Callout>
+<Callout>The chain runs in one direction for most purposes: law → registration → ethics → services → fees → contracts. But the LEA can test any link in the chain and any connection between links. A question about an architect's fee dispute involves services, fees, and contracts simultaneously. A question about professional misconduct involves ethics, registration, and RA 9266 simultaneously. Train yourself to see the whole chain.</Callout>
 
 ## The SPP Document Chain in Detail
 
@@ -55,7 +55,7 @@ The SPP documents form their own internal sequence. Understanding how they relat
 
 **SPP 301** (Standard Fee Guidelines) is the fee document — the standard percentage scales, the computation methodology, and the guidelines for non-standard fee arrangements.
 
-<ExamTip>ALE questions about SPP documents often describe a service scenario and ask which SPP document governs it. The key is knowing what makes each document distinct: SPP 201 is pre-design, SPP 202 is regular design, SPP 208 is design-build, SPP 301 is fees. When in doubt, ask: what phase? what delivery method? what type of service?</ExamTip>
+<ExamTip>LEA questions about SPP documents often describe a service scenario and ask which SPP document governs it. The key is knowing what makes each document distinct: SPP 201 is pre-design, SPP 202 is regular design, SPP 208 is design-build, SPP 301 is fees. When in doubt, ask: what phase? what delivery method? what type of service?</ExamTip>
 
 <ElaborativeInterrogation question="An architect is hired to manage the construction of a project for which another firm provided the design. Which SPP document primarily governs the architect's services, and what is the key difference in the architect's role compared to a standard design-bid-build project?" answer="SPP 204 governs the architect's role in construction management. The key difference is that in construction management, the architect does not hold the authority to make binding determinations between owner and contractor the way they do in design-bid-build. In construction management, the architect's role is primarily advisory and coordinating — they review work, track progress, and support the owner's decision-making, but the owner typically holds contracts directly with multiple trade contractors. The architect's quasi-judicial role as arbiter (which they hold under SPP 202) does not apply in the same way." />
 
@@ -97,9 +97,9 @@ The connection between Professional Practice and Architectural Design is most vi
 
 <Tip>When studying construction administration, think of it as the final phase of design — not a separate activity. The RFI, the shop drawing review, the change order: each one is a moment where the design intent meets construction reality, and the architect's job is to ensure the intent survives the collision.</Tip>
 
-## Integration Patterns the ALE Tests
+## Integration Patterns the LEA Tests
 
-**The scenario with multiple relationships.** ALE questions often describe a project with an owner, an architect, a contractor, and sometimes a subcontractor or a third-party consultant. The question asks about the architect's obligation in a specific situation — a payment dispute, a defective work claim, a change in scope. Working through these scenarios requires knowing the contractual chain (who has a contract with whom), the SPP service framework (what the architect's obligations are), and the ethical framework (what the architect owes to each party).
+**The scenario with multiple relationships.** LEA questions often describe a project with an owner, an architect, a contractor, and sometimes a subcontractor or a third-party consultant. The question asks about the architect's obligation in a specific situation — a payment dispute, a defective work claim, a change in scope. Working through these scenarios requires knowing the contractual chain (who has a contract with whom), the SPP service framework (what the architect's obligations are), and the ethical framework (what the architect owes to each party).
 
 **The ethics-meets-business scenario.** Questions where a client offers an architect a referral fee, or where an architect is asked to recommend a contractor who has given them gifts, or where an architect is tempted to certify work they have not inspected — these combine ethical obligations with practical practice knowledge. The UAP Code and RA 9266 are both relevant, but the question is testing judgment, not just recall.
 

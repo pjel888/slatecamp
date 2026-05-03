@@ -1,4 +1,4 @@
-# ALE Glossary
+# LEA Glossary
 
 **Status:** Active
 **Analysis Date:** 2026-04-06
@@ -6,17 +6,17 @@
 
 ## Purpose
 
-This glossary defines domain-specific terminology for the Philippine Architecture Licensure Exam (ALE) as used in SlateCamp. Terms are organized by category and cross-referenced to their implementation locations.
+This glossary defines domain-specific terminology for the Philippine Licensure Examination for Architects (LEA) as used in SlateCamp. Terms are organized by category and cross-referenced to their implementation locations.
 
 ---
 
 ## Domain Terms
 
-### ALE Subjects
+### LEA Subjects
 
 | Term | Full Name | Description |
 |------|----------|-------------|
-| **ALE** | Architectural Licensure Examination | The 4-hour, 100-item pencil-and-paper exam administered by PRC. Passing rate varies 30-50%. |
+| **LEA** | Architectural Licensure Examination | The 4-hour, 100-item pencil-and-paper exam administered by PRC. Passing rate varies 30-50%. |
 | **AMBF** | Allowable Maximum Building Floor Area | Maximum total floor area permitted based on lot size and FLAR. Formula: `AMBF = Lot Area × FLAR`. |
 | **BHL** | Building Height Limit | Maximum allowed building height in meters, determined by street width and zone classification. |
 | **EOS** | Easement of Service | Required setback for utility easements (sewer, water, electrical). Minimum 3m. |
@@ -114,7 +114,7 @@ This glossary defines domain-specific terminology for the Philippine Architectur
 
 | Entity | Description | Key Fields |
 |--------|-------------|-----------|
-| `subjects` | ALE exam subjects | id, name, code |
+| `subjects` | LEA exam subjects | id, name, code |
 | `subtopics` | Topics within subjects | id, subject_id, name |
 | `articles` | Wiki learning content | id, subtopic_id, title, content_md |
 | `questions` | Assessment items | id, subtopic_id, stem, correct_answer, explanation, difficulty, discrimination |

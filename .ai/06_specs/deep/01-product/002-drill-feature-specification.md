@@ -79,7 +79,7 @@ The codebase uses three terms interchangeably due to historical evolution. The c
 | Mid | `102f822` | Quiz-v2 architecture with shells, intelligent routing, DB schema |
 | Late | `c9597dc` | Testing to Drills route migration + subscription tier consolidation |
 | Late | `a1a3f2c` | Gesture reliability, performance, a11y audit (33 findings) |
-| Late | `31ac84f` | Global ALE to LEA terminology migration |
+| Late | `31ac84f` | Global LEA to LEA terminology migration |
 | Latest | — | Drill optimization: P0 results race condition fix, server action parallelization, CAGE verification wired end-to-end, session_status enum expanded, offline queue auto-flush |
 
 ---

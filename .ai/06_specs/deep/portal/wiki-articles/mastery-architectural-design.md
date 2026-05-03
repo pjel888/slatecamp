@@ -1,15 +1,15 @@
 ---
 title: "Architectural Design and Site Planning — Mastery & Connections"
 slug: "mastery-architectural-design"
-subject_label: "ALE-DSGN · Architectural Design and Site Planning"
+subject_label: "LEA-DSGN · Architectural Design and Site Planning"
 difficulty_label: "Advanced"
-ale_tests_you: "Your ability to synthesize knowledge from every ALE subject into coherent design decisions — treating architectural design not as a standalone skill but as the discipline that integrates structure, services, law, planning, and human experience."
+ale_tests_you: "Your ability to synthesize knowledge from every LEA subject into coherent design decisions — treating architectural design not as a standalone skill but as the discipline that integrates structure, services, law, planning, and human experience."
 status: "draft"
 ---
 
 # Architectural Design and Site Planning — Mastery & Connections
 
-At the mastery level, Architectural Design stops being a subject you study and becomes a lens through which you read everything else. This article maps the connections — how the thirteen subtopics link to each other, and how this subject reaches outward to pull concepts from every corner of the ALE.
+At the mastery level, Architectural Design stops being a subject you study and becomes a lens through which you read everything else. This article maps the connections — how the thirteen subtopics link to each other, and how this subject reaches outward to pull concepts from every corner of the LEA.
 
 If you've covered the overview and done your initial round of practice questions, this is where you build the integrative picture that separates a good score from an excellent one.
 
@@ -37,9 +37,9 @@ Every building type generates a specific regulatory context. You cannot design a
 
 Code requirements ultimately live in drawings. A fire exit stair that meets RA 9514 travel distance requirements must be shown in the correct location on the floor plan. An accessible toilet that meets BP 344 turning radius requirements must be drawn to scale to verify adequacy. Graphic communication is the medium through which code compliance is demonstrated and verified.
 
-## Connections to Every Other ALE Subject
+## Connections to Every Other LEA Subject
 
-Architectural Design is the only ALE subject that has a documented connection to every other subject in the exam. This is what makes it both the most demanding and the most rewarding subject to master.
+Architectural Design is the only LEA subject that has a documented connection to every other subject in the exam. This is what makes it both the most demanding and the most rewarding subject to master.
 
 ### Connection to Architectural Theory, Humanities, and Technology
 
@@ -65,9 +65,9 @@ Space planning for building services is one of the most practically tested integ
 - **Plumbing cores** — wet areas stacked vertically across floors for efficiency
 - **Fire protection** (sprinkler heads, standpipe hose cabinets, fire pump rooms) — driven by RA 9514 requirements
 
-A floor plan that looks elegant but has no mechanical room, no electrical room, and no clear riser shaft strategy is not a complete design. The ALE tests whether you understand what those service spaces require and how they should be located relative to the building's functional zones.
+A floor plan that looks elegant but has no mechanical room, no electrical room, and no clear riser shaft strategy is not a complete design. The LEA tests whether you understand what those service spaces require and how they should be located relative to the building's functional zones.
 
-<ExamTip>ALE questions frequently present floor plan scenarios and ask you to identify the most appropriate location for a mechanical room, electrical room, or fire escape stair. These are integration questions: they require knowledge of MEPF space requirements (from the MEPF subject), fire egress rules (RA 9514), and architectural planning principles (service zones at the building's perimeter or core) all applied simultaneously.</ExamTip>
+<ExamTip>LEA questions frequently present floor plan scenarios and ask you to identify the most appropriate location for a mechanical room, electrical room, or fire escape stair. These are integration questions: they require knowledge of MEPF space requirements (from the MEPF subject), fire egress rules (RA 9514), and architectural planning principles (service zones at the building's perimeter or core) all applied simultaneously.</ExamTip>
 
 ### Connection to Philippine Laws and Practice Management
 
@@ -75,7 +75,7 @@ The legal framework is inseparable from design practice. Three laws shape nearly
 
 **PD 1096 (National Building Code)** — occupancy classification governs setbacks, height limits, floor area ratios, and use regulations. A mixed-use building may have different occupancy classifications on different floors, each with its own requirements.
 
-**BP 344 (Accessibility Law)** — accessible design is not a special condition applied to specific buildings. It is a universal requirement for all public buildings, and the ALE tests it extensively. Ramp slopes (1:12 maximum), door widths (900mm minimum clear), accessible parking dimensions (3.7m × 5.0m), tactile guide paths, accessible toilet layouts — these are specific, tested, consequential.
+**BP 344 (Accessibility Law)** — accessible design is not a special condition applied to specific buildings. It is a universal requirement for all public buildings, and the LEA tests it extensively. Ramp slopes (1:12 maximum), door widths (900mm minimum clear), accessible parking dimensions (3.7m × 5.0m), tactile guide paths, accessible toilet layouts — these are specific, tested, consequential.
 
 **RA 9514 (Fire Code)** — means of egress is a life safety system. Travel distances, exit widths per occupant load, number of exits required, stair enclosure requirements, exit discharge to public way — all are tested in the Architectural Design context.
 
@@ -101,7 +101,7 @@ The student who has studied Architectural Design in isolation will see a design 
 
 <Callout>This is why Architectural Design is saved for comprehensive review rather than early study. It is the subject where all your other preparation lands. If you haven't covered the codes, the structures, the services, and the laws first, you cannot bring them to bear on design decisions. Build the foundation subjects first, then let Architectural Design become the place where they integrate.</Callout>
 
-## Integration Patterns: What the ALE Actually Tests
+## Integration Patterns: What the LEA Actually Tests
 
 **Pattern 1: Code-Constrained Design Selection**
 "A two-storey commercial building with 300 occupants on the second floor requires how many exits, and what is the minimum combined exit width?"
@@ -129,7 +129,7 @@ Three practices accelerate mastery of Architectural Design as an integration sub
 
 **Work backward from exam scenarios.** Take a practice question and, after answering it, identify every subject it drew upon. A question that seems to be about residential design may require structural knowledge, code knowledge, and anthropometric knowledge simultaneously. Making those connections explicit accelerates the integration.
 
-Your SlateCamp Readiness Score for ALE-DSGN reflects this integrative depth. A high score means you are consistently applying the right knowledge from the right subject in multi-constraint design scenarios — which is exactly what the ALE, and professional practice, requires.
+Your SlateCamp Readiness Score for LEA-DSGN reflects this integrative depth. A high score means you are consistently applying the right knowledge from the right subject in multi-constraint design scenarios — which is exactly what the LEA, and professional practice, requires.
 
 ---
 

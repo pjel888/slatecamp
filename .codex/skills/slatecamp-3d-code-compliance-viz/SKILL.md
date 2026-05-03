@@ -17,7 +17,7 @@ description: >
 
 ## The Compliance Visualization Mandate
 
-The #1 cause of ALE Area C failure is NOT bad design — it is wrong development controls.
+The #1 cause of LEA Area C failure is NOT bad design — it is wrong development controls.
 Students who miscalculate AMBF, miscopy setbacks, or forget BP 344 requirements lose
 points on items that are purely computational, not creative. These are the most teachable,
 most visualizable, and most preventable failure modes.
@@ -82,7 +82,7 @@ These aren't standalone models — they're overlays ON a floor plan or site plan
 
 ## Development Controls Calculator — Interactive Module
 
-The highest-value compliance module for ALE preparation. Students input lot data
+The highest-value compliance module for LEA preparation. Students input lot data
 and building parameters → the system computes and visualizes all development controls.
 
 ### Architecture
@@ -504,7 +504,7 @@ function BuildableEnvelope({ lot, setbacks, zoning }: EnvelopeProps) {
 
 ---
 
-## ALE Area C — Quick Reference Tables
+## LEA Area C — Quick Reference Tables
 
 ### RA 9514 Travel Distance Limits (meters)
 
@@ -605,5 +605,5 @@ function ComplianceScorecard({ items }: { items: ComplianceItem[] }) {
 | `references/ra9514-fire-egress-tables.md` | Travel distance, exit width, occupant load factor tables |
 | `references/bp344-2024-checklist.md` | Full BP 344 2024 IRR compliance checklist with dimensions |
 | `references/lgu-zoning-matrices.md` | Common LGU zoning parameters (Manila, Makati, Cebu, Davao) |
-| `references/area-c-computation-templates.md` | Step-by-step computation templates for ALE Area C |
+| `references/area-c-computation-templates.md` | Step-by-step computation templates for LEA Area C |
 | `references/parking-tables.md` | Parking requirement tables by occupancy and LGU |

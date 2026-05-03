@@ -1,12 +1,12 @@
 {
-  "attempted_at": "2026-05-03T14:01:46.356Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-03T14:17:53.509Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
-  "blockers": [
-    "Failed to update wiki_articles.content: Bad Request"
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
   ],
-  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "fba5f537-2da9-4fb3-b6eb-696d1937a92a",
   "slug": "spp-doc-208-architectural-design-competition-adc",

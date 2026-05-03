@@ -9,7 +9,7 @@
 
 ## SlateCamp Design System
 
-SlateCamp uses the **SlateCamp design system**: a calm, study-first product language for Philippine Architecture Licensure Exam candidates. The system is not a borrowed external design-language derivative. External references are research inputs only; the current authority is SlateCamp's own candidate-centered doctrine in `DESIGN.md`.
+SlateCamp uses the **SlateCamp design system**: a calm, study-first product language for Philippine Licensure Examination for Architects candidates. The system is not a borrowed external design-language derivative. External references are research inputs only; the current authority is SlateCamp's own candidate-centered doctrine in `DESIGN.md`.
 
 `DESIGN.md` is the root-level agent-readable contract for the same design system. Keep it aligned with this document and `src/app/globals.css` whenever color, typography, spacing, shape, component, or visual identity rules change. Validate it with `bun run design:lint`.
 

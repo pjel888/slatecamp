@@ -10,7 +10,7 @@ SlateCamp has a credible launch-critical core: public funnel, Supabase auth/onbo
 
 ## Launch product inference
 
-The intended launch product is an ALE prep web app for Philippine architecture candidates: readiness diagnosis, targeted practice, reference/wiki learning, structured trails, visual/3D learning, analytics, notes, and admin-managed content operations. Evidence: `README.md`, `.ai/features.md`, `src/components/sidebar/sidebar-constants.ts`, `src/app/dashboard/page.tsx`, `src/app/quiz/[mode]/*`, `src/components/wiki/`, `src/features/3d-lab/`, and admin routes under `src/app/admin/`.
+The intended launch product is an LEA prep web app for Philippine architecture candidates: readiness diagnosis, targeted practice, reference/wiki learning, structured trails, visual/3D learning, analytics, notes, and admin-managed content operations. Evidence: `README.md`, `.ai/features.md`, `src/components/sidebar/sidebar-constants.ts`, `src/app/dashboard/page.tsx`, `src/app/quiz/[mode]/*`, `src/components/wiki/`, `src/features/3d-lab/`, and admin routes under `src/app/admin/`.
 
 ## Feature Fate Map
 

@@ -1,12 +1,12 @@
 {
-  "attempted_at": "2026-05-03T14:02:15.774Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-03T14:17:48.896Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
-  "blockers": [
-    "Failed to update wiki_articles.content: Bad Request"
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
   ],
-  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
   "slug": "pd-1096-rule-vii-area-metrics",

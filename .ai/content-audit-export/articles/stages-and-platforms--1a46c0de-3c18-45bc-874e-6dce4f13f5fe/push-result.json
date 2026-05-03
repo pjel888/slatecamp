@@ -1,12 +1,12 @@
 {
-  "attempted_at": "2026-05-03T14:01:47.004Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-03T14:17:54.119Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
-  "blockers": [
-    "Failed to update wiki_articles.content: Bad Request"
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
   ],
-  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "1a46c0de-3c18-45bc-874e-6dce4f13f5fe",
   "slug": "stages-and-platforms",

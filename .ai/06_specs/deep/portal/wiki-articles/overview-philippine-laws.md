@@ -1,7 +1,7 @@
 ---
 title: "Philippine Laws & Codes — Overview & Study Strategy"
 slug: "overview-philippine-laws"
-subject_label: "ALE-LAWS · Philippine Laws & Codes for Architectural Practice"
+subject_label: "LEA-LAWS · Philippine Laws & Codes for Architectural Practice"
 difficulty_label: "Foundational"
 ale_tests_you: "Your ability to apply Philippine legislation and regulatory standards to real architectural practice scenarios — from professional conduct and building permits to fire safety compliance, accessibility mandates, and housing development controls."
 status: "draft"
@@ -11,7 +11,7 @@ status: "draft"
 
 No one becomes a licensed architect in the Philippines without understanding the legal framework that governs the profession. The Philippine Laws & Codes subject exists precisely because architecture is a regulated practice — one where decisions have legal, safety, and social consequences that extend far beyond aesthetic judgment.
 
-Here is what makes this subject different from everything else in the ALE: it is not really a standalone subject. It is a cross-reference subject — the legal dimension of architectural practice that threads through every other area of the exam. Understanding this early will shape how you study it.
+Here is what makes this subject different from everything else in the LEA: it is not really a standalone subject. It is a cross-reference subject — the legal dimension of architectural practice that threads through every other area of the exam. Understanding this early will shape how you study it.
 
 <KeyValues items='[{"label":"PRC Area","value":"Cross-reference — appears in PPJ, Arch Design, MEPF, Planning questions"},{"label":"Primary Legislation","value":"RA 9266, PD 1096, RA 9514, BP 344, BP 220, PD 957, RA 7160"},{"label":"Governing Body","value":"Professional Regulation Commission (PRC) via PRBOA"},{"label":"Core Reference","value":"RA 9266 — Architecture Act of 2004"},{"label":"Subtopic Count","value":"8 major subtopics"}]' />
 
@@ -39,9 +39,9 @@ Philippine Laws & Codes spans eight subtopics, each representing a cluster of le
 
 Most examinees approach Philippine Laws as a memorization subject — a list of law numbers, enactment dates, and key provisions to be recalled on demand. This approach produces limited results.
 
-The ALE does not primarily test whether you can recite that RA 9514 was enacted in 2008. It tests whether you can apply RA 9514 requirements to a design scenario. The distinction matters enormously for how you study.
+The LEA does not primarily test whether you can recite that RA 9514 was enacted in 2008. It tests whether you can apply RA 9514 requirements to a design scenario. The distinction matters enormously for how you study.
 
-<Callout>Philippine Laws questions appear across multiple ALE subject areas — not just in a dedicated Laws section. A question in Architectural Design about accessible ramp slopes is a BP 344 application question. A question in PPJ (Professional Practice and Jurisprudence) about architect's liability is an RA 9266 question. A question in Site Development about subdivision road widths is a PD 957 question. Studying laws in context — not in isolation — is the strategy that transfers to the actual exam.</Callout>
+<Callout>Philippine Laws questions appear across multiple LEA subject areas — not just in a dedicated Laws section. A question in Architectural Design about accessible ramp slopes is a BP 344 application question. A question in PPJ (Professional Practice and Jurisprudence) about architect's liability is an RA 9266 question. A question in Site Development about subdivision road widths is a PD 957 question. Studying laws in context — not in isolation — is the strategy that transfers to the actual exam.</Callout>
 
 ## The Key Laws Every Philippine Architect Must Know
 
@@ -49,7 +49,7 @@ The ALE does not primarily test whether you can recite that RA 9514 was enacted 
 
 ## Recommended Study Sequence
 
-The eight subtopics of Philippine Laws have a natural hierarchy based on how frequently their provisions appear across the ALE.
+The eight subtopics of Philippine Laws have a natural hierarchy based on how frequently their provisions appear across the LEA.
 
 **Phase 1 — The Professional Foundation (Weeks 1–2)**
 
@@ -64,7 +64,7 @@ Then cover PD 1096 (National Building Code). This is the most referenced code in
 
 **Phase 2 — Safety and Accessibility (Weeks 3–4)**
 
-Cover RA 9514 (Fire Code) and BP 344 (Accessibility Law) together. These two generate a high volume of specific, numerical questions on the ALE. For RA 9514, focus on means of egress requirements — travel distances, exit widths, number of exits, stair enclosure standards, occupant load calculations. For BP 344, focus on ramp specifications, accessible toilet layouts, parking stall dimensions, door width requirements, and tactile guidance systems.
+Cover RA 9514 (Fire Code) and BP 344 (Accessibility Law) together. These two generate a high volume of specific, numerical questions on the LEA. For RA 9514, focus on means of egress requirements — travel distances, exit widths, number of exits, stair enclosure standards, occupant load calculations. For BP 344, focus on ramp specifications, accessible toilet layouts, parking stall dimensions, door width requirements, and tactile guidance systems.
 
 <Tip>Create a single reference sheet for RA 9514 and BP 344 numerical requirements side by side. These numbers are tested frequently and exactly. Minimum accessible ramp width (1.2m clear), maximum ramp slope (1:12), minimum accessible door clear width (900mm), accessible parking stall (3.7m × 5.0m) — these appear repeatedly across practice questions and the actual exam.</Tip>
 
@@ -84,7 +84,7 @@ Cover the Environmental and Disaster Management laws (EIA requirements, RA 10121
 
 **Treating this subject as separate from design.** Laws are not separate from the design process — they are constraints within which design happens. Every time you study a building type, immediately connect it to the laws that govern it. Schools are governed by PD 1096 (occupancy), RA 9514 (egress for educational occupancies), and BP 344 (accessibility). Study them together.
 
-**Ignoring the newer laws.** Many review materials were written before RA 9514's 2008 revision or before the implementing rules of RA 9266 were finalized. Verify that your reference materials reflect current law. The ALE tests the current governing legislation.
+**Ignoring the newer laws.** Many review materials were written before RA 9514's 2008 revision or before the implementing rules of RA 9266 were finalized. Verify that your reference materials reflect current law. The LEA tests the current governing legislation.
 
 **Neglecting the Code of Ethical Conduct.** RA 9266's implementing rules include the Code of Ethical Conduct for Registered and Licensed Architects. Ethics questions — about conflict of interest, competitive bidding, advertising, professional fees, and responsibility to the public — appear in the PPJ section but draw directly from this code. They are not vague judgment questions; they test specific code provisions.
 
@@ -99,10 +99,10 @@ The single most effective study method for Philippine Laws is integration with t
 - When you study **Site Development and Planning**, simultaneously study RA 7160 LGU powers, EIA requirements, and CLUP processes.
 - When you study **Professional Practice (PPJ)**, simultaneously study RA 9266 scope of practice, Code of Ethics, and professional liability.
 
-This contextual approach means you are never studying a law in the abstract. You are always studying it in relation to a real practice situation — which is exactly how the ALE will test it.
+This contextual approach means you are never studying a law in the abstract. You are always studying it in relation to a real practice situation — which is exactly how the LEA will test it.
 
 SlateCamp's session tagging connects Philippine Laws questions to the subjects where they originate, so your practice data shows you not just "Laws" proficiency but specifically which laws you're applying correctly in which design contexts.
 
 ---
 
-**Next step:** Read the Mastery & Connections article to see how Philippine laws thread through every ALE subject and how to build the regulatory map that transforms isolated law knowledge into integrated practice judgment.
+**Next step:** Read the Mastery & Connections article to see how Philippine laws thread through every LEA subject and how to build the regulatory map that transforms isolated law knowledge into integrated practice judgment.

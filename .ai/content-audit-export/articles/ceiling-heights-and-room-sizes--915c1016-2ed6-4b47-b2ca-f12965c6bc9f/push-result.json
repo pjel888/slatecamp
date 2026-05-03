@@ -1,12 +1,12 @@
 {
-  "attempted_at": "2026-05-03T14:02:51.040Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-03T14:17:34.545Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
-  "blockers": [
-    "Failed to update wiki_articles.content: Bad Request"
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
   ],
-  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
   "slug": "ceiling-heights-and-room-sizes",

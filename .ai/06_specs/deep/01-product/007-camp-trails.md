@@ -4,7 +4,7 @@
 
 ## Overview
 
-Camp Trails are structured study paths that guide students through the ALE curriculum over a defined period. Each trail is a curated sequence of daily steps mixing wiki reads, quizzes, 3D lab sessions, and reviews.
+Camp Trails are structured study paths that guide students through the LEA curriculum over a defined period. Each trail is a curated sequence of daily steps mixing wiki reads, quizzes, 3D lab sessions, and reviews.
 
 **Source:** `src/components/trails/` (22 files), `src/lib/queries/trails.ts`, `src/types/app.ts`
 

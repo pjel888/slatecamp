@@ -13,14 +13,14 @@ This file governs the whole repository unless a deeper `AGENTS.md` overrides it.
 ## Current repository reality
 SlateCamp is a large Next.js App Router codebase for LEA preparation. It is a **pre-launch MVP** that is broad, mature, and operationally heavy.
 
-Live evidence from the repo on 2026-04-17:
-- `src/app/` contains 125 `page.tsx` routes, 16 layouts, 96 loading files, 9 error boundaries, and 12 route handlers
-- `src/lib/actions/` contains 156 files across root and feature subdirectories
-- `src/components/` contains 716 files
-- `src/features/` contains 551 files
-- `supabase/migrations/` contains 89 migration files
-- `src/` contains 64 test files
-- the repo tracks 122 `AGENTS.md` files
+Live evidence from the repo on 2026-05-03:
+- `src/app/` contains 128 `page.tsx` routes, 15 layouts, 105 loading files, 7 error boundaries, and 11 route handlers
+- `src/lib/actions/` contains 160 files across root and feature subdirectories
+- `src/components/` contains 667 files
+- `src/features/` contains 540 files
+- `supabase/migrations/` contains 100 migration files
+- `src/` contains 81 test files
+- the repo tracks 128 `AGENTS.md` files
 
 This is not a greenfield app or a toy demo. Treat it like a multi-surface product with significant documentation and governance needs.
 

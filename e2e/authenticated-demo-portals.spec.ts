@@ -18,7 +18,7 @@ test.describe('demo-authenticated privileged portals', () => {
     },
     {
       path: '/admin/knowledge',
-      text: /All Content|New Article|Demo ALE Foundations/i,
+      text: /All Content|New Article|Demo LEA Foundations/i,
     },
     {
       path: '/developer',

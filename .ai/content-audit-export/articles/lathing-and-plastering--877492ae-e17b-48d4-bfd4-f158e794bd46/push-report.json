@@ -1,12 +1,12 @@
 {
-  "attempted_at": "2026-05-03T14:02:36.752Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-03T14:17:41.297Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
-  "blockers": [
-    "Failed to update wiki_articles.content: Bad Request"
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
   ],
-  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "877492ae-e17b-48d4-bfd4-f158e794bd46",
   "slug": "lathing-and-plastering",

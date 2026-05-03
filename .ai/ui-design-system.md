@@ -12,7 +12,7 @@
 
 ## Current design contract
 
-- Study-first, calm, work-focused ALE prep interface.
+- Study-first, calm, work-focused LEA prep interface.
 - Camp Cobalt primary (`#1B3FC4`), Ink foreground (`#1A2332`), semantic success/warning/destructive colors, Camp Orange sparingly for warm CTA, Trail Accent for Camp Trails.
 - Atkinson Hyperlegible body/UI text, Plus Jakarta Sans headings, DM Mono for code/numeric/technical references.
 - Compact 4px rhythm; common gaps 8/16/24px; no nested card stacks as a default pattern.

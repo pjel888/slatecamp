@@ -1,7 +1,7 @@
 ---
 title: "Planning, Housing & Urban Design — Overview & Study Strategy"
 slug: "overview-planning-housing-urban-design"
-subject_label: "ALE-PLAN · Planning, Housing & Urban Design"
+subject_label: "LEA-PLAN · Planning, Housing & Urban Design"
 difficulty_label: "Foundational"
 ale_tests_you: "Ability to apply planning principles, housing standards, and urban design frameworks in the Philippine context, including relevant legislation and agency mandates."
 status: "draft"
@@ -17,13 +17,13 @@ For many candidates, this subject feels more abstract than the design subjects. 
 
 ## What This Subject Actually Covers
 
-The ALE organizes Planning, Housing & Urban Design into seven subtopic areas:
+The LEA organizes Planning, Housing & Urban Design into seven subtopic areas:
 
 **General Principles and History of Planning** — The intellectual tradition of urban planning: from Haussmann's Paris to Ebenezer Howard's Garden City, from the City Beautiful movement to Jane Jacobs's critique of urban renewal. This subtopic grounds the technical content in a theoretical and historical context.
 
 **Housing and Human Settlements Planning** — Standards for residential development, housing typologies, density calculations, site requirements, and the frameworks for planning communities at various income levels. This is where BP 220 (Economic and Socialized Housing) and PD 957 (Subdivision and Condominium Buyers' Protective Decree) become essential reading.
 
-**Innovation Layer — 21st Century Planning** — Emerging frameworks: smart cities, transit-oriented development (TOD), resilience planning, inclusive design at the urban scale, and climate-adaptive urbanism. The ALE increasingly tests awareness of contemporary approaches alongside traditional planning doctrine.
+**Innovation Layer — 21st Century Planning** — Emerging frameworks: smart cities, transit-oriented development (TOD), resilience planning, inclusive design at the urban scale, and climate-adaptive urbanism. The LEA increasingly tests awareness of contemporary approaches alongside traditional planning doctrine.
 
 **Landscape Architecture and Ecology** — The integration of green infrastructure, ecological corridors, stormwater management, and open space planning into urban design. Understanding the relationship between built and natural systems is tested here.
 
@@ -35,7 +35,7 @@ The ALE organizes Planning, Housing & Urban Design into seven subtopic areas:
 
 ## The Philippine Context Is the Core
 
-Many planning questions on the ALE have a distinctly Philippine framing. The exam is not testing abstract international planning theory — it is testing whether you can function as a professional architect within the Philippine regulatory environment.
+Many planning questions on the LEA have a distinctly Philippine framing. The exam is not testing abstract international planning theory — it is testing whether you can function as a professional architect within the Philippine regulatory environment.
 
 The three legislative pillars you must know cold:
 
@@ -45,7 +45,7 @@ The three legislative pillars you must know cold:
 
 **BP 220 — Economic and Socialized Housing.** Sets the minimum design and construction standards for economic and socialized housing projects — standards that are deliberately less stringent than those for open-market housing, in recognition of affordability constraints. Know the minimum lot sizes, road widths, and open space requirements for each housing category.
 
-<ExamTip>The ALE frequently asks about the minimum standards under BP 220 and PD 957. These are specific numbers — minimum lot sizes, minimum road right-of-way widths, minimum open space percentages. Memorize the key figures for each housing category (socialized, economic, low-cost, medium-cost, open market).</ExamTip>
+<ExamTip>The LEA frequently asks about the minimum standards under BP 220 and PD 957. These are specific numbers — minimum lot sizes, minimum road right-of-way widths, minimum open space percentages. Memorize the key figures for each housing category (socialized, economic, low-cost, medium-cost, open market).</ExamTip>
 
 **DHSUD** (Department of Human Settlements and Urban Development, formerly HLURB) is the primary regulatory body for housing and land use. Know its mandate, its relationship to LGUs, and how it interfaces with other agencies.
 
@@ -63,7 +63,7 @@ The three legislative pillars you must know cold:
 
 ## Connection to Laws & Codes
 
-Planning, Housing & Urban Design and Laws & Codes (ALE-LAWS) have substantial overlap. The same legislation appears in both subjects, but Laws & Codes tends to test statutory interpretation and specific provisions, while Planning tests the application of those laws to planning and design scenarios.
+Planning, Housing & Urban Design and Laws & Codes (LEA-LAWS) have substantial overlap. The same legislation appears in both subjects, but Laws & Codes tends to test statutory interpretation and specific provisions, while Planning tests the application of those laws to planning and design scenarios.
 
 If you are studying both subjects simultaneously (which is the recommended approach), use your planning study to build conceptual understanding and your Laws study to nail the specific provisions.
 

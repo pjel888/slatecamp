@@ -1,7 +1,7 @@
 ---
 title: "Theory of Architecture — Overview & Study Strategy"
 slug: "overview-theory-of-architecture"
-subject_label: "ALE-THEO · Theory of Architecture"
+subject_label: "LEA-THEO · Theory of Architecture"
 difficulty_label: "Foundational"
 ale_tests_you: "Your ability to identify, explain, and apply architectural principles, philosophies, movements, and theories to design problems — including Filipino architectural identity and climate-responsive design."
 status: "draft"
@@ -9,9 +9,9 @@ status: "draft"
 
 # Theory of Architecture — Overview & Study Strategy
 
-Theory of Architecture is the conceptual heartbeat of the ALE. Every other subject — from Architectural Design to Building Utilities — eventually traces its "why" back here. Before you can design a humane space, size a room for human comfort, or argue for a material choice, you need a framework for thinking about what architecture actually *is*. This subject builds that framework.
+Theory of Architecture is the conceptual heartbeat of the LEA. Every other subject — from Architectural Design to Building Utilities — eventually traces its "why" back here. Before you can design a humane space, size a room for human comfort, or argue for a material choice, you need a framework for thinking about what architecture actually *is*. This subject builds that framework.
 
-<KeyValues items='[{"label":"PRC Area","value":"Area A — Architecture & Planning"},{"label":"Weight","value":"25% of Area A"},{"label":"PRC Subject Code","value":"ALE-THEO"},{"label":"Subtopics","value":"9 major areas"},{"label":"Key Thinkers","value":"Vitruvius, Ching, Frampton, Filipino masters"}]' />
+<KeyValues items='[{"label":"PRC Area","value":"Area A — Architecture & Planning"},{"label":"Weight","value":"25% of Area A"},{"label":"PRC Subject Code","value":"LEA-THEO"},{"label":"Subtopics","value":"9 major areas"},{"label":"Key Thinkers","value":"Vitruvius, Ching, Frampton, Filipino masters"}]' />
 
 ## What This Subject Covers
 
@@ -25,7 +25,7 @@ The PRC's nine subtopics move through a logical arc — from the philosophical t
 
 **Architectural Movements and Contemporary Discourse** maps the timeline from Modernism through Postmodernism, Deconstructivism, Critical Regionalism, and parametric design. This overlaps significantly with Architectural History — think of THEO as the "ideas" side and HIST as the "timeline" side of the same coin.
 
-**Design Perception — Anthropometrics, Proxemics, and Kinesthetics** is where theory meets the human body. Edward T. Hall's proxemics (intimate, personal, social, public zones) and Neufert's anthropometric data connect directly to space planning. The ALE board has historically tested specific distances and zone dimensions.
+**Design Perception — Anthropometrics, Proxemics, and Kinesthetics** is where theory meets the human body. Edward T. Hall's proxemics (intimate, personal, social, public zones) and Neufert's anthropometric data connect directly to space planning. The LEA board has historically tested specific distances and zone dimensions.
 
 **Space Planning Theory and Architectural Programming** bridges theory and practice. Programming is the analytical process that precedes design — identifying user needs, functional relationships, and spatial requirements before pencil meets paper.
 
@@ -45,9 +45,9 @@ Students who skip deeply understanding Theory often find that their other subjec
 
 ### Pass 1 — Principles First (Weeks 1–2)
 
-Start with Ching. Work through *Architecture: Form, Space, and Order* not to memorize captions but to build visual literacy. Can you identify proportion in a plan? Can you recognize hierarchy in a section? The ALE presents images and asks you to name the principle at work. Practice this actively.
+Start with Ching. Work through *Architecture: Form, Space, and Order* not to memorize captions but to build visual literacy. Can you identify proportion in a plan? Can you recognize hierarchy in a section? The LEA presents images and asks you to name the principle at work. Practice this actively.
 
-Simultaneously, ground yourself in Vitruvius's triad. Nearly every ALE theory question can be anchored to one of those three legs.
+Simultaneously, ground yourself in Vitruvius's triad. Nearly every LEA theory question can be anchored to one of those three legs.
 
 <Tip>Make a two-column sheet: left column is the design principle (rhythm, balance, emphasis, etc.), right column is a real building or space where you can clearly see it. Retrieving examples forces deeper processing than re-reading definitions.</Tip>
 
@@ -70,7 +70,7 @@ This is also when you revisit Anthropometrics with fresh eyes — not as dry dim
 
 ## Common Pitfalls
 
-**Confusing Theory with History.** The ALE has two separate but overlapping subjects. THEO asks "what does this principle mean and how does it apply?" HIST asks "when did this happen and who built it?" A Baroque *style* question belongs in History; a Baroque *spatial principle* (axial progression, dramatic light) question belongs in Theory.
+**Confusing Theory with History.** The LEA has two separate but overlapping subjects. THEO asks "what does this principle mean and how does it apply?" HIST asks "when did this happen and who built it?" A Baroque *style* question belongs in History; a Baroque *spatial principle* (axial progression, dramatic light) question belongs in Theory.
 
 **Memorizing without understanding.** The board regularly presents novel scenarios — an unfamiliar building image, a paraphrased principle — precisely to test whether you understand or just memorized. If you can only recognize a term when it appears verbatim, you have studied the surface.
 

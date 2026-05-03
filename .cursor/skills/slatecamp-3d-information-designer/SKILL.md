@@ -25,7 +25,7 @@ right time, in the right place, in the right amount — so the student LEARNS, n
 **The information design tests:**
 1. **Mayer's Coherence:** Is every piece of information essential to the learning objective?
 2. **Cognitive Load:** Can the student process this information given what else is on screen?
-3. **Retrieval:** Will the student be able to recall this information during the ALE?
+3. **Retrieval:** Will the student be able to recall this information during the LEA?
 4. **Feedback:** Does the student know if they understood correctly?
 
 ---
@@ -113,7 +113,7 @@ Instead: Two separate hotspots — one for riser, one for tread.
 
 **Rule 3: The dimension callout is the most memorable element.**
 Students remember numbers attached to visual elements. The dimension callout box
-(with the value and unit in monospace) is the #1 retrieval cue for the ALE.
+(with the value and unit in monospace) is the #1 retrieval cue for the LEA.
 
 **Rule 4: Personalization tone (Mayer's Principle #10).**
 ```
@@ -351,7 +351,7 @@ interface ModuleLearningObjective {
   moduleSlug: string
   primaryObjective: string        // "After completing this module, the student can..."
   bloomLevel: 1 | 2 | 3 | 4     // Target Bloom's taxonomy level
-  aleQuestionTypes: string[]      // Types of ALE questions this prepares for
+  aleQuestionTypes: string[]      // Types of LEA questions this prepares for
   keyValues: string[]             // The 3-5 numbers the student should memorize
   prerequisiteKnowledge: string[] // What the student should know before this module
   successCriteria: string         // How we know the module worked

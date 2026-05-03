@@ -1,12 +1,12 @@
 {
-  "attempted_at": "2026-05-03T14:01:49.308Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-03T14:17:46.138Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
-  "blockers": [
-    "Failed to update wiki_articles.content: Bad Request"
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
   ],
-  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
   "slug": "lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr",

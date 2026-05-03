@@ -20,7 +20,7 @@ interface TaxonomyNode {
   subject_area: string;
   slug?: string | null;
   is_leaf: boolean;          // true = topic (no children)
-  // ALE metadata (v5.0)
+  // LEA metadata (v5.0)
   ale_id?: string | null;
   description?: string | null;
   exam_frequency?: string | null;
@@ -44,10 +44,10 @@ interface TaxonomyNode {
 | 1 | Subject | false | Building Laws |
 | 2 | Topic | true | Building Setbacks (NBCP Rule 7) |
 
-## ALE Metadata
+## LEA Metadata
 
-Taxonomy nodes carry ALE-specific metadata:
-- **ale_id** — Official ALE designation
+Taxonomy nodes carry LEA-specific metadata:
+- **ale_id** — Official LEA designation
 - **exam_frequency** — How often this appears on the board exam
 - **bloom_level** — Bloom's taxonomy cognitive level
 - **prc_area** — PRC exam area
@@ -55,7 +55,7 @@ Taxonomy nodes carry ALE-specific metadata:
 
 ## Orphan Detection
 
-The "Unassigned" filter in the Knowledge Hub shows content not yet mapped to the taxonomy tree. This ensures all content has a home in the ALE subject structure.
+The "Unassigned" filter in the Knowledge Hub shows content not yet mapped to the taxonomy tree. This ensures all content has a home in the LEA subject structure.
 
 ## CRUD Operations
 
@@ -64,7 +64,7 @@ Taxonomy edits via server actions in `src/lib/actions/admin/taxonomy.ts`:
 - Update node metadata
 - Move node (reparent)
 - Delete node (with content reassignment)
-- Bulk ALE ID assignment
+- Bulk LEA ID assignment
 
 ---
 

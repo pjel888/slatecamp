@@ -1,7 +1,7 @@
 ---
 title: "Planning, Housing & Urban Design — Mastery & Connections"
 slug: "mastery-planning-housing-urban-design"
-subject_label: "ALE-PLAN · Planning, Housing & Urban Design"
+subject_label: "LEA-PLAN · Planning, Housing & Urban Design"
 difficulty_label: "Intermediate"
 ale_tests_you: "Ability to trace connections between planning subtopics, apply planning law in multi-subject scenarios, and recognize how site analysis, urban design, housing standards, and governance interact in Philippine practice."
 status: "draft"
@@ -31,7 +31,7 @@ The most useful organizing principle for this subject is **scale** — from the 
 
 **Innovation Layer** is the forward-looking overlay — the emerging frameworks that are beginning to reshape practice at every scale.
 
-<Note>When you encounter a planning question on the ALE, your first move should be to identify the scale it is operating at. A question about lot coverage is a site-planning question. A question about CLUP approval is a governance question. A question about TOD is an urban-planning question. Identifying the scale focuses your recall.</Note>
+<Note>When you encounter a planning question on the LEA, your first move should be to identify the scale it is operating at. A question about lot coverage is a site-planning question. A question about CLUP approval is a governance question. A question about TOD is an urban-planning question. Identifying the scale focuses your recall.</Note>
 
 ## Site Analysis → Urban Planning: The Upward Chain
 
@@ -47,7 +47,7 @@ The tools are the same — maps, analysis, judgment about what the land can supp
 
 ## Connections to Architectural Design
 
-The Site Planning and Environmental Analysis subtopic is the most direct bridge between Planning and Architectural Design. The ALE treats site planning as a shared competency — questions about building orientation, setbacks, lot coverage, floor area ratio, and access can appear in either subject area.
+The Site Planning and Environmental Analysis subtopic is the most direct bridge between Planning and Architectural Design. The LEA treats site planning as a shared competency — questions about building orientation, setbacks, lot coverage, floor area ratio, and access can appear in either subject area.
 
 Key overlapping concepts:
 
@@ -83,13 +83,13 @@ Planning, Housing & Urban Design and Laws & Codes share a substantial body of le
 
 ## Connections to Environmental Design
 
-Landscape Architecture and Ecology connects directly to the Environmental Design subject area (ALE-ENV). The shared content includes:
+Landscape Architecture and Ecology connects directly to the Environmental Design subject area (LEA-ENV). The shared content includes:
 
 - Bioclimatic design principles (passive solar, natural ventilation, daylighting) — tested in Environmental Design as building-scale strategies, and in Planning as urban-scale considerations (street orientation, tree canopy, urban heat island mitigation)
 - Stormwater management — tested in Environmental Design as a site drainage challenge, and in Planning as a green infrastructure and low-impact development strategy
 - Ecological sensitivity zones — wetlands, flood-prone areas, steep slopes — that constrain both site planning decisions and building design choices
 
-The ALE sometimes presents a scenario where environmental constraints (a mangrove buffer, a landslide hazard zone, a floodway) overlap with planning decisions (where to site roads, buildings, or open spaces). These questions are testing your ability to integrate environmental analysis with planning judgment.
+The LEA sometimes presents a scenario where environmental constraints (a mangrove buffer, a landslide hazard zone, a floodway) overlap with planning decisions (where to site roads, buildings, or open spaces). These questions are testing your ability to integrate environmental analysis with planning judgment.
 
 ## The SPP of Planning: The CLUP Process
 
@@ -107,7 +107,7 @@ Just as Professional Practice has the SPP document chain, Planning has its own s
 
 ## Integration Patterns
 
-**Planning + Design + Laws:** The most complex ALE questions integrate all three. A scenario presents a development project, asks you to identify the applicable standards (planning), the design implications (architectural design), and the legal requirements (laws). Practice working through scenarios from all three angles simultaneously.
+**Planning + Design + Laws:** The most complex LEA questions integrate all three. A scenario presents a development project, asks you to identify the applicable standards (planning), the design implications (architectural design), and the legal requirements (laws). Practice working through scenarios from all three angles simultaneously.
 
 **Planning + History:** The history of planning is not just background — it explains why current Philippine planning instruments are structured the way they are. The influence of American colonial planning (the Burnham Plan for Manila and Baguio, the surveyed grid of American-period subdivisions) is visible in contemporary Philippine urbanism. Knowing this history makes the present more legible.
 

@@ -326,12 +326,12 @@ export function MEPTogglePanel() {
 The 3D Lab prioritizes construction methods used in Philippine practice:
 
 ### Structural Systems
-| System | Prevalence | ALE Relevance | 3D Module Priority |
+| System | Prevalence | LEA Relevance | 3D Module Priority |
 |---|---|---|---|
 | RCC frame + CHB infill | Dominant (80%+ of projects) | Very high | P1 |
 | Structural steel frame | Commercial/industrial | High | P2 |
 | Load-bearing CHB walls | Low-rise residential | Medium | P2 |
-| Pre-stressed concrete | Bridges, large spans | Low in ALE | P3 |
+| Pre-stressed concrete | Bridges, large spans | Low in LEA | P3 |
 | Timber frame (traditional) | Provincial, heritage | History questions | P3 |
 
 ### Wall Systems
@@ -342,7 +342,7 @@ The 3D Lab prioritizes construction methods used in Philippine practice:
 | Curtain wall | Aluminum mullion + glass + spandrel + sealant | 100-200mm depth |
 | Drywall partition | Metal studs + gypsum board (both sides) | 92mm total (typical) |
 
-### Connection Details (High ALE Frequency)
+### Connection Details (High LEA Frequency)
 | Detail | Code Reference | Why It's Tested |
 |---|---|---|
 | Column-to-footing | NSCP 2015 Sec 1808 | Reinforcement development length |

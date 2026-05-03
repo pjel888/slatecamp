@@ -1299,14 +1299,14 @@ Tiptap is in `package.json` (v3.20.4 with 10+ extensions) but is NOT used by the
 | **Three-panel editor** | Outline + Article + Questions in a single view |
 | **Draft preview** | Iframe-based student view with live content injection |
 | **Design system migration** | Token enforcement across admin surfaces |
-| **ALE to LEA rename** | Global terminology migration |
+| **LEA to LEA rename** | Global terminology migration |
 | **Dashboard overhaul** | Stats cards, coverage alerts, needs-attention cards, activity feed |
 
 ### Recent Git Commits Touching Admin
 
 | Hash | Summary |
 |------|---------|
-| `31ac84f` | Global ALE → LEA terminology migration |
+| `31ac84f` | Global LEA → LEA terminology migration |
 | `92800ce` | Fix broken 3d-lab import paths for Storybook |
 | `35f1aaf` | Phase 7 app-wide token enforcement |
 | `5c08edd` | Final audit — 90 stories + admin knowledge token fixes |

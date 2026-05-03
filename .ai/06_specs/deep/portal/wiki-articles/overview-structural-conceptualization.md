@@ -1,7 +1,7 @@
 ---
 title: "Structural Conceptualization — Overview & Study Strategy"
 slug: "overview-structural-conceptualization"
-subject_label: "ALE-STRC · Structural Conceptualization"
+subject_label: "LEA-STRC · Structural Conceptualization"
 difficulty_label: "Foundational"
 ale_tests_you: "Your ability to apply structural principles to real building scenarios — from calculating load paths to selecting appropriate lateral force systems and reading structural drawings."
 status: "draft"
@@ -9,11 +9,11 @@ status: "draft"
 
 # Structural Conceptualization — Overview & Study Strategy
 
-Structural Conceptualization sits at the heart of Area B in the Philippine Architecture Licensure Exam. It asks a deceptively honest question: can you think structurally? Not just recall formulas — but genuinely understand why buildings stand, how forces travel through them, and what happens when the ground shakes.
+Structural Conceptualization sits at the heart of Area B in the Philippine Licensure Examination for Architects. It asks a deceptively honest question: can you think structurally? Not just recall formulas — but genuinely understand why buildings stand, how forces travel through them, and what happens when the ground shakes.
 
 If you've been putting this subject off because it feels more like engineering than architecture, this guide is your entry point. The good news: you don't need an engineering degree. You need a clear mental model, the right sequence, and consistent practice with the National Structural Code of the Philippines (NSCP 2015).
 
-<KeyValues items='[{"label":"PRC Area","value":"Area B — Structural, MEPF, Construction"},{"label":"Subject Weight","value":"35% of Area B"},{"label":"Area B Share of Total ALE","value":"Approximately 30% of total exam"},{"label":"Governing Code","value":"NSCP 2015 (7th Edition)"},{"label":"Subtopic Count","value":"12 major subtopics"}]' />
+<KeyValues items='[{"label":"PRC Area","value":"Area B — Structural, MEPF, Construction"},{"label":"Subject Weight","value":"35% of Area B"},{"label":"Area B Share of Total LEA","value":"Approximately 30% of total exam"},{"label":"Governing Code","value":"NSCP 2015 (7th Edition)"},{"label":"Subtopic Count","value":"12 major subtopics"}]' />
 
 ## What This Subject Actually Covers
 
@@ -45,11 +45,11 @@ Structural Conceptualization spans twelve interconnected subtopics. Read them no
 
 ## Why This Subject Carries So Much Weight
 
-Structural Conceptualization is tied with MEPF as the heaviest subject within Area B. Together, they make Area B the most technically demanding section of the ALE. The reason is professional accountability: an architect who cannot assess structural adequacy — even at a conceptual level — is a safety risk to the public.
+Structural Conceptualization is tied with MEPF as the heaviest subject within Area B. Together, they make Area B the most technically demanding section of the LEA. The reason is professional accountability: an architect who cannot assess structural adequacy — even at a conceptual level — is a safety risk to the public.
 
 The PRC's intention is not to produce structural engineers. It's to produce architects who can collaborate intelligently with structural engineers, catch coordination problems, make informed schematic decisions, and understand why the NSCP requirements exist.
 
-<ExamTip>The ALE tests structural *conceptualization* — not structural *design*. You will rarely be asked to perform full engineering calculations. You will frequently be asked to identify the correct structural system for a scenario, recognize load paths, apply NSCP provisions conceptually, and interpret structural drawings.</ExamTip>
+<ExamTip>The LEA tests structural *conceptualization* — not structural *design*. You will rarely be asked to perform full engineering calculations. You will frequently be asked to identify the correct structural system for a scenario, recognize load paths, apply NSCP provisions conceptually, and interpret structural drawings.</ExamTip>
 
 ## The NSCP 2015 Thread
 
@@ -58,7 +58,7 @@ Every subtopic in this subject runs through one governing document: the National
 You don't need to memorize it cover to cover. You need to understand its structure:
 
 - **Volume I** covers buildings and other structures (concrete, steel, timber, masonry, seismic, wind)
-- **Volume II** covers bridges (not an ALE focus)
+- **Volume II** covers bridges (not an LEA focus)
 
 The exam will reference NSCP provisions in question scenarios. Knowing which section governs which material — concrete in Chapter 4, steel in Chapter 5, timber in Chapter 6, masonry in Chapter 7, seismic in Chapter 2 — gives you a significant advantage.
 
@@ -92,7 +92,7 @@ Move from materials to systems: Foundation Systems, Deep Foundations, Lateral Fo
 
 **Phase 4 — Integrate and Apply (Weeks 7–8)**
 
-Practice reading structural drawings. Apply NSCP provisions to multi-material scenarios. Attempt practice problems that mix subtopics — a scenario combining seismic loads, reinforced concrete shear walls, and pile foundations is exactly the kind of integration the ALE tests.
+Practice reading structural drawings. Apply NSCP provisions to multi-material scenarios. Attempt practice problems that mix subtopics — a scenario combining seismic loads, reinforced concrete shear walls, and pile foundations is exactly the kind of integration the LEA tests.
 
 <ElaborativeInterrogation question="Why do buildings in Seismic Zone 4 (most of the Philippines) require ductile detailing in reinforced concrete frames?" answer="Ductile detailing — closely spaced ties in columns, special confinement at joints — allows structural members to deform significantly without losing load-carrying capacity. In a major earthquake, you want the building to absorb energy through controlled yielding rather than brittle failure. NSCP Chapter 4 and Chapter 2 prescribe these details precisely because the goal is life safety, not preventing all damage." />
 
@@ -112,8 +112,8 @@ Practice reading structural drawings. Apply NSCP provisions to multi-material sc
 
 SlateCamp maps every Structural Conceptualization question to its subtopic, so your session data shows you exactly where your understanding is strong and where it needs more attention. When you practice in Storm Mode (timed, high-intensity), you'll see how quickly you can apply structural concepts under pressure. When you switch to Camp Mode (untimed, explanation-forward), you can work through the reasoning behind each answer without the clock running.
 
-Your Readiness Score for ALE-STRC updates as you practice, giving you a real-time signal on where to invest your next study session.
+Your Readiness Score for LEA-STRC updates as you practice, giving you a real-time signal on where to invest your next study session.
 
 ---
 
-**Next step:** Once you have a sense of the subject landscape, move to the Mastery & Connections article to see how these subtopics link to each other and to the rest of the ALE.
+**Next step:** Once you have a sense of the subject landscape, move to the Mastery & Connections article to see how these subtopics link to each other and to the rest of the LEA.

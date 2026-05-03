@@ -1,12 +1,12 @@
 {
-  "attempted_at": "2026-05-03T14:01:27.879Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-03T14:17:52.732Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
-  "blockers": [
-    "Failed to update wiki_articles.content: Bad Request"
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
   ],
-  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046",
   "slug": "site-planning-accessible-routes-vs-open-space",

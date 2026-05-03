@@ -44,7 +44,7 @@ SME reviews verify:
 - Factual accuracy against source materials
 - Code citation correctness (NBCP, PRC references)
 - Appropriate Bloom's taxonomy level
-- ALE alignment
+- LEA alignment
 - Clear, unambiguous question wording
 - Per-option rationales (correct + distractors)
 

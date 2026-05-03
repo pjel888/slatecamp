@@ -100,12 +100,13 @@ Current `.ai` routing source of truth:
 
 These figures are time-sensitive and must be revalidated if reused later.
 
-- `src/app/`: **124** `page.tsx` files, **16** layouts, **95** loading files, **9** error files, **12** route handlers
-- `src/lib/actions/`: **156** files
-- `src/components/`: **716** files
-- `src/features/`: **551** files
-- `supabase/migrations/`: **89** files
-- tracked `AGENTS.md` files: **122**
+- `src/app/`: **128** `page.tsx` files, **15** layouts, **105** loading files, **7** error files, **11** route handlers
+- `src/lib/actions/`: **160** files
+- `src/components/`: **667** files
+- `src/features/`: **540** files
+- `supabase/migrations/`: **100** files
+- `src/`: **81** test files
+- tracked `AGENTS.md` files: **128**
 
 ## Major active surfaces
 

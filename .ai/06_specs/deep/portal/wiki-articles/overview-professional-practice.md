@@ -1,7 +1,7 @@
 ---
 title: "Professional Practice & Jurisprudence — Overview & Study Strategy"
 slug: "overview-professional-practice"
-subject_label: "ALE-PRAC · Professional Practice & Jurisprudence"
+subject_label: "LEA-PRAC · Professional Practice & Jurisprudence"
 difficulty_label: "Foundational"
 ale_tests_you: "Ability to apply the standards of Philippine architectural professional practice — including RA 9266, SPP documents, fee computation, contract types, and ethical obligations — to realistic practice scenarios."
 status: "draft"
@@ -11,7 +11,7 @@ status: "draft"
 
 Professional Practice & Jurisprudence is the subject that describes the professional life you are about to enter. It covers how architects are licensed, how they are paid, how they structure their relationships with clients and contractors, what they are legally and ethically responsible for, and how they continue growing throughout their careers.
 
-It is also, by question count, the most heavily tested subject on the ALE.
+It is also, by question count, the most heavily tested subject on the LEA.
 
 Understanding that weight should calibrate your attention: this is not an area to skim. A strong command of Professional Practice will reliably boost your overall score, because the question pool is large enough that consistent performance here makes a significant difference.
 
@@ -23,7 +23,7 @@ Professional Practice & Jurisprudence is organized into six subtopics:
 
 **Architectural Services & Project Delivery** — The types of services architects provide (pre-design, design, construction phase, post-construction), the methods by which projects are delivered (design-bid-build, design-build, construction management, integrated project delivery), and how the architect's role varies across those delivery methods.
 
-**Compensation, Fees & Payment Methods** — How architects are compensated: percentage-of-construction-cost, lump sum, time-based, per unit of work, and cost plus professional fee. The SPP documents define the standard fee scales, and the ALE tests both the methods and the arithmetic behind them.
+**Compensation, Fees & Payment Methods** — How architects are compensated: percentage-of-construction-cost, lump sum, time-based, per unit of work, and cost plus professional fee. The SPP documents define the standard fee scales, and the LEA tests both the methods and the arithmetic behind them.
 
 **Contracts, Bonds & Construction Administration** — The contractual relationships between owner, architect, and contractor. Types of construction contracts (lump sum, unit price, cost plus, guaranteed maximum price). The performance bond, payment bond, and surety requirements. The architect's role during construction administration — reviewing submittals, issuing certificates of payment, managing change orders.
 
@@ -35,9 +35,9 @@ Professional Practice & Jurisprudence is organized into six subtopics:
 
 ## Why This Subject Has the Largest Question Pool
 
-Professional Practice is the most directly applicable subject to day-to-day architectural work. The PRC designs the ALE to ensure that every licensed architect can competently manage client relationships, structure service agreements, administer contracts, and uphold professional ethics. The depth of the question pool reflects that breadth of practical relevance.
+Professional Practice is the most directly applicable subject to day-to-day architectural work. The PRC designs the LEA to ensure that every licensed architect can competently manage client relationships, structure service agreements, administer contracts, and uphold professional ethics. The depth of the question pool reflects that breadth of practical relevance.
 
-This is also why the questions tend to be scenario-based. Rather than asking "what is a performance bond?" the ALE is more likely to present a situation where a contractor defaults and ask what the architect's obligations are, or present a fee computation scenario and ask you to calculate the correct professional fee.
+This is also why the questions tend to be scenario-based. Rather than asking "what is a performance bond?" the LEA is more likely to present a situation where a contractor defaults and ask what the architect's obligations are, or present a fee computation scenario and ask you to calculate the correct professional fee.
 
 <Note>Because Professional Practice questions are often scenario-based, reading comprehension and careful attention to the specific conditions in each question matters as much as raw knowledge. Practice reading scenarios slowly and identifying the key variables before selecting your answer.</Note>
 
@@ -49,7 +49,7 @@ The Standards of Professional Practice (SPP) is the document set that defines ho
 
 SPP 202 (Regular Design Services) and SPP 301 (Standard Fees) are the most heavily tested. SPP 202 defines the phases of regular architectural service (schematic design, design development, contract documents, construction phase), and SPP 301 sets the standard percentage fee scales by construction type and cost.
 
-<ExamTip>Memorize the five phases of regular architectural service under SPP 202 and what the architect delivers in each phase. ALE questions frequently present a phase description and ask you to identify it, or present a deliverable and ask which phase it belongs to.</ExamTip>
+<ExamTip>Memorize the five phases of regular architectural service under SPP 202 and what the architect delivers in each phase. LEA questions frequently present a phase description and ask you to identify it, or present a deliverable and ask which phase it belongs to.</ExamTip>
 
 ## Study Strategy: Master RA 9266 First
 
@@ -68,11 +68,11 @@ Once RA 9266 is solid, the SPP documents make more sense — they are the profes
 
 ## Fee Computation: The Arithmetic Matters
 
-Professional fee calculations are a predictable source of ALE questions, and they reward candidates who practice the arithmetic rather than just reading about it.
+Professional fee calculations are a predictable source of LEA questions, and they reward candidates who practice the arithmetic rather than just reading about it.
 
 The standard fee for Regular Design Services is a percentage of the Project Construction Cost (PCC), sliding based on the type of project and the construction cost range. Higher-cost projects have lower percentage fees; lower-cost and more complex projects have higher percentage fees.
 
-A basic example: if the standard fee rate for a given project type and cost range is 8%, and the PCC is ₱10,000,000, then the professional fee is ₱800,000. But the ALE may add complexity — partial services only, or reimbursable expenses included, or a lump-sum fee arrangement with a change in scope.
+A basic example: if the standard fee rate for a given project type and cost range is 8%, and the PCC is ₱10,000,000, then the professional fee is ₱800,000. But the LEA may add complexity — partial services only, or reimbursable expenses included, or a lump-sum fee arrangement with a change in scope.
 
 Practice scenarios where you calculate fees from first principles, not just pattern-match to a formula.
 
@@ -84,9 +84,9 @@ Practice scenarios where you calculate fees from first principles, not just patt
 
 **Mixing up bond types.** The performance bond guarantees that the contractor will complete the work. The payment bond guarantees that the contractor will pay subcontractors and suppliers. The surety bond is the general category; performance and payment are specific types. These distinctions appear regularly in construction administration questions.
 
-**Underestimating ethics questions.** Ethics questions on the ALE are not always obvious dilemmas. They often present subtle conflicts of interest, fee-splitting arrangements, or referral situations and ask whether the architect's conduct was appropriate. The UAP Code of Ethical Conduct and RA 9266 both govern these situations — read them with attention to the specific prohibitions.
+**Underestimating ethics questions.** Ethics questions on the LEA are not always obvious dilemmas. They often present subtle conflicts of interest, fee-splitting arrangements, or referral situations and ask whether the architect's conduct was appropriate. The UAP Code of Ethical Conduct and RA 9266 both govern these situations — read them with attention to the specific prohibitions.
 
-**Assuming the architect always has the same role.** In design-bid-build, the architect is the owner's representative and acts as a quasi-independent arbiter in disputes between owner and contractor. In design-build, the architect's role is fundamentally different — they are typically employed by or partnered with the contractor. In construction management, the architect's authority during construction is more limited. The ALE tests awareness of how the architect's role shifts across delivery methods.
+**Assuming the architect always has the same role.** In design-bid-build, the architect is the owner's representative and acts as a quasi-independent arbiter in disputes between owner and contractor. In design-build, the architect's role is fundamentally different — they are typically employed by or partnered with the contractor. In construction management, the architect's authority during construction is more limited. The LEA tests awareness of how the architect's role shifts across delivery methods.
 
 <Tip>Create a side-by-side comparison of design-bid-build, design-build, and construction management delivery methods: who holds each contract, what the architect's role is in each phase, and what the key advantages and risks of each method are for the owner. This one exercise clarifies a lot of commonly confused content.</Tip>
 

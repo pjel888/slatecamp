@@ -1,12 +1,12 @@
 {
-  "attempted_at": "2026-05-03T14:02:41.943Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-03T14:17:53.805Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
-  "blockers": [
-    "Failed to update wiki_articles.content: Bad Request"
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
   ],
-  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "f7861b5b-0833-4cd3-a634-0dfb9f53891c",
   "slug": "spp-doc-209-architectural-consulting-services-pacs",

@@ -2906,7 +2906,7 @@
             "description": "Partial Content"
           }
         },
-        "summary": "Legal citations for ALE-LAWS subtopics and code_provision nodes.",
+        "summary": "Legal citations for LEA-LAWS subtopics and code_provision nodes.",
         "tags": [
           "taxonomy_sources"
         ]
@@ -2929,7 +2929,7 @@
             "description": "Created"
           }
         },
-        "summary": "Legal citations for ALE-LAWS subtopics and code_provision nodes.",
+        "summary": "Legal citations for LEA-LAWS subtopics and code_provision nodes.",
         "tags": [
           "taxonomy_sources"
         ]
@@ -2973,7 +2973,7 @@
             "description": "No Content"
           }
         },
-        "summary": "Legal citations for ALE-LAWS subtopics and code_provision nodes.",
+        "summary": "Legal citations for LEA-LAWS subtopics and code_provision nodes.",
         "tags": [
           "taxonomy_sources"
         ]
@@ -3020,7 +3020,7 @@
             "description": "No Content"
           }
         },
-        "summary": "Legal citations for ALE-LAWS subtopics and code_provision nodes.",
+        "summary": "Legal citations for LEA-LAWS subtopics and code_provision nodes.",
         "tags": [
           "taxonomy_sources"
         ]
@@ -13434,7 +13434,7 @@
     },
     "/taxonomy_cross_references": {
       "get": {
-        "description": "   v5.0 has 47+ cross-reference pairs from ALE-LAWS subtopics.",
+        "description": "   v5.0 has 47+ cross-reference pairs from LEA-LAWS subtopics.",
         "parameters": [
           {
             "$ref": "#/parameters/rowFilter.taxonomy_cross_references.id"
@@ -13487,13 +13487,13 @@
             "description": "Partial Content"
           }
         },
-        "summary": "Bidirectional graph between ALE-LAWS law nodes and substantive subject nodes.",
+        "summary": "Bidirectional graph between LEA-LAWS law nodes and substantive subject nodes.",
         "tags": [
           "taxonomy_cross_references"
         ]
       },
       "post": {
-        "description": "   v5.0 has 47+ cross-reference pairs from ALE-LAWS subtopics.",
+        "description": "   v5.0 has 47+ cross-reference pairs from LEA-LAWS subtopics.",
         "parameters": [
           {
             "$ref": "#/parameters/body.taxonomy_cross_references"
@@ -13510,13 +13510,13 @@
             "description": "Created"
           }
         },
-        "summary": "Bidirectional graph between ALE-LAWS law nodes and substantive subject nodes.",
+        "summary": "Bidirectional graph between LEA-LAWS law nodes and substantive subject nodes.",
         "tags": [
           "taxonomy_cross_references"
         ]
       },
       "delete": {
-        "description": "   v5.0 has 47+ cross-reference pairs from ALE-LAWS subtopics.",
+        "description": "   v5.0 has 47+ cross-reference pairs from LEA-LAWS subtopics.",
         "parameters": [
           {
             "$ref": "#/parameters/rowFilter.taxonomy_cross_references.id"
@@ -13542,13 +13542,13 @@
             "description": "No Content"
           }
         },
-        "summary": "Bidirectional graph between ALE-LAWS law nodes and substantive subject nodes.",
+        "summary": "Bidirectional graph between LEA-LAWS law nodes and substantive subject nodes.",
         "tags": [
           "taxonomy_cross_references"
         ]
       },
       "patch": {
-        "description": "   v5.0 has 47+ cross-reference pairs from ALE-LAWS subtopics.",
+        "description": "   v5.0 has 47+ cross-reference pairs from LEA-LAWS subtopics.",
         "parameters": [
           {
             "$ref": "#/parameters/rowFilter.taxonomy_cross_references.id"
@@ -13577,7 +13577,7 @@
             "description": "No Content"
           }
         },
-        "summary": "Bidirectional graph between ALE-LAWS law nodes and substantive subject nodes.",
+        "summary": "Bidirectional graph between LEA-LAWS law nodes and substantive subject nodes.",
         "tags": [
           "taxonomy_cross_references"
         ]
@@ -19220,7 +19220,7 @@
       "type": "object"
     },
     "taxonomy_sources": {
-      "description": "Legal citations for ALE-LAWS subtopics and code_provision nodes.\n   v5.0 COMPLETE: all 66 source URLs populated with verified official URLs.",
+      "description": "Legal citations for LEA-LAWS subtopics and code_provision nodes.\n   v5.0 COMPLETE: all 66 source URLs populated with verified official URLs.",
       "required": [
         "id",
         "node_id",
@@ -19399,7 +19399,7 @@
         },
         "churn_risk_score": {
           "default": 0,
-          "description": "DEPRECATED ÔÇö use user_computed_signals.churn_risk_score instead",
+          "description": "DEPRECATED Ã”Ã‡Ã¶ use user_computed_signals.churn_risk_score instead",
           "format": "double precision",
           "type": "number"
         },
@@ -19409,7 +19409,7 @@
         },
         "score_velocity_7d": {
           "default": 0,
-          "description": "DEPRECATED ÔÇö use user_computed_signals.score_velocity_7d instead",
+          "description": "DEPRECATED Ã”Ã‡Ã¶ use user_computed_signals.score_velocity_7d instead",
           "format": "double precision",
           "type": "number"
         },
@@ -19447,7 +19447,7 @@
         },
         "is_retaker": {
           "default": false,
-          "description": "Set during onboarding: \"Have you taken the ALE before?\" Activates retaker framing.",
+          "description": "Set during onboarding: \"Have you taken the LEA before?\" Activates retaker framing.",
           "format": "boolean",
           "type": "boolean"
         },
@@ -20348,8 +20348,8 @@
           "format": "text",
           "type": "string"
         },
-        "ale_tests_you": {
-          "description": "One-sentence ALE test statement shown in article hero banner",
+        "lea_tests_you": {
+          "description": "One-sentence LEA test statement shown in article hero banner",
           "format": "text",
           "type": "string"
         },
@@ -20603,19 +20603,19 @@
         },
         "has_bloom_apply_correct": {
           "default": false,
-          "description": "True once user correctly answers an apply-level question on this node.\n   One-way flag ÔÇö never resets. Used for Bloom cognitive ceiling enforcement.",
+          "description": "True once user correctly answers an apply-level question on this node.\n   One-way flag Ã”Ã‡Ã¶ never resets. Used for Bloom cognitive ceiling enforcement.",
           "format": "boolean",
           "type": "boolean"
         },
         "has_bloom_analyze_correct": {
           "default": false,
-          "description": "True once user correctly answers an analyze-level question on this node.\n   One-way flag ÔÇö never resets. Used for Bloom cognitive ceiling enforcement.",
+          "description": "True once user correctly answers an analyze-level question on this node.\n   One-way flag Ã”Ã‡Ã¶ never resets. Used for Bloom cognitive ceiling enforcement.",
           "format": "boolean",
           "type": "boolean"
         },
         "distinct_questions_seen": {
           "default": 0,
-          "description": "Count of unique question_ids answered (any result) for this node.\n   < 5 ÔåÆ node contributes at 40% weight (thin_coverage state in heatmap)\n   5-9 ÔåÆ node contributes at 85% weight\n   >= 10 ÔåÆ node contributes at 100% weight\n   Prevents question bank memorization at low question counts.",
+          "description": "Count of unique question_ids answered (any result) for this node.\n   < 5 Ã”Ã¥Ã† node contributes at 40% weight (thin_coverage state in heatmap)\n   5-9 Ã”Ã¥Ã† node contributes at 85% weight\n   >= 10 Ã”Ã¥Ã† node contributes at 100% weight\n   Prevents question bank memorization at low question counts.",
           "format": "integer",
           "type": "integer"
         },
@@ -20756,7 +20756,7 @@
         },
         "reviewer_type": {
           "default": "first_taker",
-          "description": "Onboarding type. first_taker = first ALE attempt. returning_reviewer = has reviewed before.\n   NEVER use \"retaker\" or \"failed\" in user-facing copy. Use \"returning reviewer\" always.",
+          "description": "Onboarding type. first_taker = first LEA attempt. returning_reviewer = has reviewed before.\n   NEVER use \"retaker\" or \"failed\" in user-facing copy. Use \"returning reviewer\" always.",
           "format": "text",
           "type": "string"
         },
@@ -20774,7 +20774,7 @@
           "format": "date",
           "type": "string"
         },
-        "ale_result": {
+        "lea_result": {
           "description": "Set by user on Results Day flow. 'failed' is stored internally but NEVER shown to user.\n   User-facing copy: \"returning reviewer\", \"next cycle\", \"your data is saved\".",
           "format": "text",
           "type": "string"
@@ -20785,7 +20785,7 @@
         },
         "account_mode": {
           "default": "review_mode",
-          "description": "review_mode = default (ALE prep). professional_mode = post-pass.\n   student_mode = BSA student (Studio Mode). dae_mode = licensed architect in DAE period.",
+          "description": "review_mode = default (LEA prep). professional_mode = post-pass.\n   student_mode = BSA student (Studio Mode). dae_mode = licensed architect in DAE period.",
           "format": "text",
           "type": "string"
         },
@@ -21055,12 +21055,12 @@
           "format": "text",
           "type": "string"
         },
-        "ale_question_count": {
-          "description": "Estimated ALE questions per sitting covered by this module.",
+        "lea_question_count": {
+          "description": "Estimated LEA questions per sitting covered by this module.",
           "format": "integer",
           "type": "integer"
         },
-        "ale_question_type": {
+        "lea_question_type": {
           "format": "text",
           "type": "string"
         },
@@ -21569,7 +21569,7 @@
         },
         "status": {
           "default": "draft",
-          "description": "Review workflow state ÔÇö mirrors wiki_articles.status pattern.\n   draft     = being authored, invisible to students\n   review    = submitted for SME approval\n   published = live and visible to students\n   archived  = retired (prefer is_active=false for temporary removal)\n   CRITICAL: A wrong reveal_text trains incorrect exam answers. Review gate is mandatory.",
+          "description": "Review workflow state Ã”Ã‡Ã¶ mirrors wiki_articles.status pattern.\n   draft     = being authored, invisible to students\n   review    = submitted for SME approval\n   published = live and visible to students\n   archived  = retired (prefer is_active=false for temporary removal)\n   CRITICAL: A wrong reveal_text trains incorrect exam answers. Review gate is mandatory.",
           "format": "text",
           "type": "string"
         },
@@ -22453,7 +22453,7 @@
       "required": [
         "update_id",
         "summary",
-        "is_ale_testable",
+        "is_lea_testable",
         "published_at"
       ],
       "properties": {
@@ -22463,7 +22463,7 @@
           "format": "uuid",
           "type": "string"
         },
-        "ale_id": {
+        "lea_id": {
           "description": "Note:\nThis is a Foreign Key to `taxonomy_tree.ale_id`.<fk table='taxonomy_tree' column='ale_id'/>",
           "format": "text",
           "type": "string"
@@ -22484,7 +22484,7 @@
           "format": "date",
           "type": "string"
         },
-        "is_ale_testable": {
+        "is_lea_testable": {
           "default": true,
           "format": "boolean",
           "type": "boolean"
@@ -22860,7 +22860,7 @@
       "type": "object"
     },
     "taxonomy_cross_references": {
-      "description": "Bidirectional graph between ALE-LAWS law nodes and substantive subject nodes.\n   v5.0 has 47+ cross-reference pairs from ALE-LAWS subtopics.",
+      "description": "Bidirectional graph between LEA-LAWS law nodes and substantive subject nodes.\n   v5.0 has 47+ cross-reference pairs from LEA-LAWS subtopics.",
       "required": [
         "id",
         "source_node_id",
@@ -23702,13 +23702,13 @@
         },
         "passing_threshold_pct": {
           "default": 70,
-          "description": "ALE: 70% general weighted average required. Used by Readiness Score pass prediction.",
+          "description": "LEA: 70% general weighted average required. Used by Readiness Score pass prediction.",
           "format": "smallint",
           "type": "integer"
         },
         "subject_floor_pct": {
           "default": 50,
-          "description": "ALE: No individual subject may fall below 50%. Used by Readiness Score sub-score alerts.",
+          "description": "LEA: No individual subject may fall below 50%. Used by Readiness Score sub-score alerts.",
           "format": "smallint",
           "type": "integer"
         },
@@ -23727,7 +23727,7 @@
           "type": "array"
         },
         "recent_passing_rates": {
-          "description": "Recent ALE batch passing rates for analytics and student framing.",
+          "description": "Recent LEA batch passing rates for analytics and student framing.",
           "format": "jsonb"
         }
       },
@@ -24096,13 +24096,13 @@
           "format": "timestamp with time zone",
           "type": "string"
         },
-        "ale_id": {
-          "description": "Human-readable ALE string identifier per taxonomy JSON id_convention.\n   Format: ALE-[SUBJ] | ALE-[SUBJ]-[NNN] | ALE-[SUBJ]-[NNN]-[NN]\n   Examples: ALE-HIST, ALE-HIST-001, ALE-HIST-001-04\n   Canonical cross-reference key ÔÇö every import operation uses this as the upsert key.\n   NULL on legacy v1 nodes (pre-v5.0). Set on all v5.0 nodes.",
+        "lea_id": {
+          "description": "Human-readable LEA string identifier per taxonomy JSON id_convention.\n   Format: LEA-[SUBJ] | LEA-[SUBJ]-[NNN] | LEA-[SUBJ]-[NNN]-[NN]\n   Examples: LEA-HIST, LEA-HIST-001, LEA-HIST-001-04\n   Canonical cross-reference key Ã”Ã‡Ã¶ every import operation uses this as the upsert key.\n   NULL on legacy v1 nodes (pre-v5.0). Set on all v5.0 nodes.",
           "format": "text",
           "type": "string"
         },
         "node_type": {
-          "description": "Content classification ÔÇö only set on subtopics (is_leaf=true).\n   Drives quiz question type, heatmap display category, wiki content templates.\n   NULL on subject and topic level nodes.",
+          "description": "Content classification Ã”Ã‡Ã¶ only set on subtopics (is_leaf=true).\n   Drives quiz question type, heatmap display category, wiki content templates.\n   NULL on subject and topic level nodes.",
           "enum": [
             "concept",
             "code_provision",
@@ -24118,7 +24118,7 @@
           "type": "string"
         },
         "exam_frequency": {
-          "description": "SME-assessed ALE exam frequency. high = appears most exams; medium = occasional; low = in scope but rare.\n   In v5.0: all 172 subtopics have this value.\n   NULL on subject and topic level nodes.",
+          "description": "SME-assessed LEA exam frequency. high = appears most exams; medium = occasional; low = in scope but rare.\n   In v5.0: all 172 subtopics have this value.\n   NULL on subject and topic level nodes.",
           "enum": [
             "low",
             "medium",
@@ -24128,7 +24128,7 @@
           "type": "string"
         },
         "prc_area": {
-          "description": "PRC exam area: A (30%), B (30%), C (40%), or cross-reference (ALE-LAWS, 0%).\n   Only set on subject-level nodes (level=1). NULL on topics and subtopics.",
+          "description": "PRC exam area: A (30%), B (30%), C (40%), or cross-reference (LEA-LAWS, 0%).\n   Only set on subject-level nodes (level=1). NULL on topics and subtopics.",
           "format": "text",
           "type": "string"
         },
@@ -24147,17 +24147,17 @@
         },
         "is_cross_ref_only": {
           "default": false,
-          "description": "TRUE for ALE-LAWS subject node and all descendants (topics + subtopics).\n   When TRUE:\n   - Questions CANNOT be tagged to this node (enforced by trigger trg_check_question_topic)\n   - Wiki articles CAN be created for this node\n   - This node is EXCLUDED from student-facing heatmap mastery display\n   ALE-LAWS carries zero exam weight. Its law questions appear distributed across Areas A, B, C.",
+          "description": "TRUE for LEA-LAWS subject node and all descendants (topics + subtopics).\n   When TRUE:\n   - Questions CANNOT be tagged to this node (enforced by trigger trg_check_question_topic)\n   - Wiki articles CAN be created for this node\n   - This node is EXCLUDED from student-facing heatmap mastery display\n   LEA-LAWS carries zero exam weight. Its law questions appear distributed across Areas A, B, C.",
           "format": "boolean",
           "type": "boolean"
         },
         "deprecated_at": {
-          "description": "Set when this node is superseded by a v5.0 node with the same content.\n   NEVER hard-delete taxonomy nodes ÔÇö user_interactions and user_node_mastery\n   reference them historically. Deprecated nodes are excluded from all live queries\n   via WHERE deprecated_at IS NULL.",
+          "description": "Set when this node is superseded by a v5.0 node with the same content.\n   NEVER hard-delete taxonomy nodes Ã”Ã‡Ã¶ user_interactions and user_node_mastery\n   reference them historically. Deprecated nodes are excluded from all live queries\n   via WHERE deprecated_at IS NULL.",
           "format": "timestamp with time zone",
           "type": "string"
         },
         "wiki_items": {
-          "description": "Typed structured content from taxonomy JSON v5.0 wiki_items array.\n   Each item: { text: string, type: heading|fact|definition|formula|code_provision|detail|exam_tip|cross_ref|warning, source_ref?: ale_id }\n   This is the AUTHORING BRIEF for the wiki article ÔÇö not the article itself.\n   SMEs write wiki_articles.content using this as their structured brief.\n   wiki_content (legacy untyped strings) is NOT stored in the DB ÔÇö treat as deprecated in JSON.\n   Empty array on legacy v1 nodes and subject/topic level nodes.",
+          "description": "Typed structured content from taxonomy JSON v5.0 wiki_items array.\n   Each item: { text: string, type: heading|fact|definition|formula|code_provision|detail|exam_tip|cross_ref|warning, source_ref?: ale_id }\n   This is the AUTHORING BRIEF for the wiki article Ã”Ã‡Ã¶ not the article itself.\n   SMEs write wiki_articles.content using this as their structured brief.\n   wiki_content (legacy untyped strings) is NOT stored in the DB Ã”Ã‡Ã¶ treat as deprecated in JSON.\n   Empty array on legacy v1 nodes and subject/topic level nodes.",
           "format": "jsonb"
         },
         "bloom_level": {
@@ -24177,7 +24177,7 @@
           "type": "integer"
         },
         "typical_question_formats": {
-          "description": "Array of typical ALE question formats for this subtopic.\n   Values: mcq_recall, mcq_application, mcq_calculation, design_application.\n   Empty array on subject and topic level nodes.",
+          "description": "Array of typical LEA question formats for this subtopic.\n   Values: mcq_recall, mcq_application, mcq_calculation, design_application.\n   Empty array on subject and topic level nodes.",
           "format": "text[]",
           "items": {
             "type": "string"
@@ -24186,7 +24186,7 @@
         },
         "is_computation_heavy": {
           "default": false,
-          "description": "TRUE for subtopics where ALE exam items typically require multi-step calculation.\n   False by default ÔÇö only explicitly TRUE for designated ALE-STRC/ALE-UTIL subtopics.",
+          "description": "TRUE for subtopics where LEA exam items typically require multi-step calculation.\n   False by default Ã”Ã‡Ã¶ only explicitly TRUE for designated LEA-STRC/LEA-UTIL subtopics.",
           "format": "boolean",
           "type": "boolean"
         },
@@ -25658,7 +25658,7 @@
     },
     "rowFilter.user_global_stats.churn_risk_score": {
       "name": "churn_risk_score",
-      "description": "DEPRECATED ÔÇö use user_computed_signals.churn_risk_score instead",
+      "description": "DEPRECATED Ã”Ã‡Ã¶ use user_computed_signals.churn_risk_score instead",
       "required": false,
       "in": "query",
       "type": "string"
@@ -25671,7 +25671,7 @@
     },
     "rowFilter.user_global_stats.score_velocity_7d": {
       "name": "score_velocity_7d",
-      "description": "DEPRECATED ÔÇö use user_computed_signals.score_velocity_7d instead",
+      "description": "DEPRECATED Ã”Ã‡Ã¶ use user_computed_signals.score_velocity_7d instead",
       "required": false,
       "in": "query",
       "type": "string"
@@ -25720,7 +25720,7 @@
     },
     "rowFilter.user_global_stats.is_retaker": {
       "name": "is_retaker",
-      "description": "Set during onboarding: \"Have you taken the ALE before?\" Activates retaker framing.",
+      "description": "Set during onboarding: \"Have you taken the LEA before?\" Activates retaker framing.",
       "required": false,
       "in": "query",
       "type": "string"
@@ -26808,8 +26808,8 @@
       "type": "string"
     },
     "rowFilter.wiki_articles.ale_tests_you": {
-      "name": "ale_tests_you",
-      "description": "One-sentence ALE test statement shown in article hero banner",
+      "name": "lea_tests_you",
+      "description": "One-sentence LEA test statement shown in article hero banner",
       "required": false,
       "in": "query",
       "type": "string"
@@ -27105,21 +27105,21 @@
     },
     "rowFilter.user_node_mastery.has_bloom_apply_correct": {
       "name": "has_bloom_apply_correct",
-      "description": "True once user correctly answers an apply-level question on this node.\n   One-way flag ÔÇö never resets. Used for Bloom cognitive ceiling enforcement.",
+      "description": "True once user correctly answers an apply-level question on this node.\n   One-way flag Ã”Ã‡Ã¶ never resets. Used for Bloom cognitive ceiling enforcement.",
       "required": false,
       "in": "query",
       "type": "string"
     },
     "rowFilter.user_node_mastery.has_bloom_analyze_correct": {
       "name": "has_bloom_analyze_correct",
-      "description": "True once user correctly answers an analyze-level question on this node.\n   One-way flag ÔÇö never resets. Used for Bloom cognitive ceiling enforcement.",
+      "description": "True once user correctly answers an analyze-level question on this node.\n   One-way flag Ã”Ã‡Ã¶ never resets. Used for Bloom cognitive ceiling enforcement.",
       "required": false,
       "in": "query",
       "type": "string"
     },
     "rowFilter.user_node_mastery.distinct_questions_seen": {
       "name": "distinct_questions_seen",
-      "description": "Count of unique question_ids answered (any result) for this node.\n   < 5 ÔåÆ node contributes at 40% weight (thin_coverage state in heatmap)\n   5-9 ÔåÆ node contributes at 85% weight\n   >= 10 ÔåÆ node contributes at 100% weight\n   Prevents question bank memorization at low question counts.",
+      "description": "Count of unique question_ids answered (any result) for this node.\n   < 5 Ã”Ã¥Ã† node contributes at 40% weight (thin_coverage state in heatmap)\n   5-9 Ã”Ã¥Ã† node contributes at 85% weight\n   >= 10 Ã”Ã¥Ã† node contributes at 100% weight\n   Prevents question bank memorization at low question counts.",
       "required": false,
       "in": "query",
       "type": "string"
@@ -27294,7 +27294,7 @@
     },
     "rowFilter.profiles.reviewer_type": {
       "name": "reviewer_type",
-      "description": "Onboarding type. first_taker = first ALE attempt. returning_reviewer = has reviewed before.\n   NEVER use \"retaker\" or \"failed\" in user-facing copy. Use \"returning reviewer\" always.",
+      "description": "Onboarding type. first_taker = first LEA attempt. returning_reviewer = has reviewed before.\n   NEVER use \"retaker\" or \"failed\" in user-facing copy. Use \"returning reviewer\" always.",
       "required": false,
       "in": "query",
       "type": "string"
@@ -27324,7 +27324,7 @@
       "type": "string"
     },
     "rowFilter.profiles.ale_result": {
-      "name": "ale_result",
+      "name": "lea_result",
       "description": "Set by user on Results Day flow. 'failed' is stored internally but NEVER shown to user.\n   User-facing copy: \"returning reviewer\", \"next cycle\", \"your data is saved\".",
       "required": false,
       "in": "query",
@@ -27338,7 +27338,7 @@
     },
     "rowFilter.profiles.account_mode": {
       "name": "account_mode",
-      "description": "review_mode = default (ALE prep). professional_mode = post-pass.\n   student_mode = BSA student (Studio Mode). dae_mode = licensed architect in DAE period.",
+      "description": "review_mode = default (LEA prep). professional_mode = post-pass.\n   student_mode = BSA student (Studio Mode). dae_mode = licensed architect in DAE period.",
       "required": false,
       "in": "query",
       "type": "string"
@@ -27667,14 +27667,14 @@
       "type": "string"
     },
     "rowFilter.models_3d.ale_question_count": {
-      "name": "ale_question_count",
-      "description": "Estimated ALE questions per sitting covered by this module.",
+      "name": "lea_question_count",
+      "description": "Estimated LEA questions per sitting covered by this module.",
       "required": false,
       "in": "query",
       "type": "string"
     },
     "rowFilter.models_3d.ale_question_type": {
-      "name": "ale_question_type",
+      "name": "lea_question_type",
       "required": false,
       "in": "query",
       "type": "string"
@@ -28261,7 +28261,7 @@
     },
     "rowFilter.wiki_ei_prompts.status": {
       "name": "status",
-      "description": "Review workflow state ÔÇö mirrors wiki_articles.status pattern.\n   draft     = being authored, invisible to students\n   review    = submitted for SME approval\n   published = live and visible to students\n   archived  = retired (prefer is_active=false for temporary removal)\n   CRITICAL: A wrong reveal_text trains incorrect exam answers. Review gate is mandatory.",
+      "description": "Review workflow state Ã”Ã‡Ã¶ mirrors wiki_articles.status pattern.\n   draft     = being authored, invisible to students\n   review    = submitted for SME approval\n   published = live and visible to students\n   archived  = retired (prefer is_active=false for temporary removal)\n   CRITICAL: A wrong reveal_text trains incorrect exam answers. Review gate is mandatory.",
       "required": false,
       "in": "query",
       "type": "string"
@@ -29283,7 +29283,7 @@
       "type": "string"
     },
     "rowFilter.code_updates.ale_id": {
-      "name": "ale_id",
+      "name": "lea_id",
       "required": false,
       "in": "query",
       "type": "string"
@@ -29313,7 +29313,7 @@
       "type": "string"
     },
     "rowFilter.code_updates.is_ale_testable": {
-      "name": "is_ale_testable",
+      "name": "is_lea_testable",
       "required": false,
       "in": "query",
       "type": "string"
@@ -30713,14 +30713,14 @@
     },
     "rowFilter.disciplines.passing_threshold_pct": {
       "name": "passing_threshold_pct",
-      "description": "ALE: 70% general weighted average required. Used by Readiness Score pass prediction.",
+      "description": "LEA: 70% general weighted average required. Used by Readiness Score pass prediction.",
       "required": false,
       "in": "query",
       "type": "string"
     },
     "rowFilter.disciplines.subject_floor_pct": {
       "name": "subject_floor_pct",
-      "description": "ALE: No individual subject may fall below 50%. Used by Readiness Score sub-score alerts.",
+      "description": "LEA: No individual subject may fall below 50%. Used by Readiness Score sub-score alerts.",
       "required": false,
       "in": "query",
       "type": "string"
@@ -30739,7 +30739,7 @@
     },
     "rowFilter.disciplines.recent_passing_rates": {
       "name": "recent_passing_rates",
-      "description": "Recent ALE batch passing rates for analytics and student framing.",
+      "description": "Recent LEA batch passing rates for analytics and student framing.",
       "required": false,
       "in": "query",
       "type": "string"
@@ -31159,29 +31159,29 @@
       "type": "string"
     },
     "rowFilter.taxonomy_tree.ale_id": {
-      "name": "ale_id",
-      "description": "Human-readable ALE string identifier per taxonomy JSON id_convention.\n   Format: ALE-[SUBJ] | ALE-[SUBJ]-[NNN] | ALE-[SUBJ]-[NNN]-[NN]\n   Examples: ALE-HIST, ALE-HIST-001, ALE-HIST-001-04\n   Canonical cross-reference key ÔÇö every import operation uses this as the upsert key.\n   NULL on legacy v1 nodes (pre-v5.0). Set on all v5.0 nodes.",
+      "name": "lea_id",
+      "description": "Human-readable LEA string identifier per taxonomy JSON id_convention.\n   Format: LEA-[SUBJ] | LEA-[SUBJ]-[NNN] | LEA-[SUBJ]-[NNN]-[NN]\n   Examples: LEA-HIST, LEA-HIST-001, LEA-HIST-001-04\n   Canonical cross-reference key Ã”Ã‡Ã¶ every import operation uses this as the upsert key.\n   NULL on legacy v1 nodes (pre-v5.0). Set on all v5.0 nodes.",
       "required": false,
       "in": "query",
       "type": "string"
     },
     "rowFilter.taxonomy_tree.node_type": {
       "name": "node_type",
-      "description": "Content classification ÔÇö only set on subtopics (is_leaf=true).\n   Drives quiz question type, heatmap display category, wiki content templates.\n   NULL on subject and topic level nodes.",
+      "description": "Content classification Ã”Ã‡Ã¶ only set on subtopics (is_leaf=true).\n   Drives quiz question type, heatmap display category, wiki content templates.\n   NULL on subject and topic level nodes.",
       "required": false,
       "in": "query",
       "type": "string"
     },
     "rowFilter.taxonomy_tree.exam_frequency": {
       "name": "exam_frequency",
-      "description": "SME-assessed ALE exam frequency. high = appears most exams; medium = occasional; low = in scope but rare.\n   In v5.0: all 172 subtopics have this value.\n   NULL on subject and topic level nodes.",
+      "description": "SME-assessed LEA exam frequency. high = appears most exams; medium = occasional; low = in scope but rare.\n   In v5.0: all 172 subtopics have this value.\n   NULL on subject and topic level nodes.",
       "required": false,
       "in": "query",
       "type": "string"
     },
     "rowFilter.taxonomy_tree.prc_area": {
       "name": "prc_area",
-      "description": "PRC exam area: A (30%), B (30%), C (40%), or cross-reference (ALE-LAWS, 0%).\n   Only set on subject-level nodes (level=1). NULL on topics and subtopics.",
+      "description": "PRC exam area: A (30%), B (30%), C (40%), or cross-reference (LEA-LAWS, 0%).\n   Only set on subject-level nodes (level=1). NULL on topics and subtopics.",
       "required": false,
       "in": "query",
       "type": "string"
@@ -31207,21 +31207,21 @@
     },
     "rowFilter.taxonomy_tree.is_cross_ref_only": {
       "name": "is_cross_ref_only",
-      "description": "TRUE for ALE-LAWS subject node and all descendants (topics + subtopics).\n   When TRUE:\n   - Questions CANNOT be tagged to this node (enforced by trigger trg_check_question_topic)\n   - Wiki articles CAN be created for this node\n   - This node is EXCLUDED from student-facing heatmap mastery display\n   ALE-LAWS carries zero exam weight. Its law questions appear distributed across Areas A, B, C.",
+      "description": "TRUE for LEA-LAWS subject node and all descendants (topics + subtopics).\n   When TRUE:\n   - Questions CANNOT be tagged to this node (enforced by trigger trg_check_question_topic)\n   - Wiki articles CAN be created for this node\n   - This node is EXCLUDED from student-facing heatmap mastery display\n   LEA-LAWS carries zero exam weight. Its law questions appear distributed across Areas A, B, C.",
       "required": false,
       "in": "query",
       "type": "string"
     },
     "rowFilter.taxonomy_tree.deprecated_at": {
       "name": "deprecated_at",
-      "description": "Set when this node is superseded by a v5.0 node with the same content.\n   NEVER hard-delete taxonomy nodes ÔÇö user_interactions and user_node_mastery\n   reference them historically. Deprecated nodes are excluded from all live queries\n   via WHERE deprecated_at IS NULL.",
+      "description": "Set when this node is superseded by a v5.0 node with the same content.\n   NEVER hard-delete taxonomy nodes Ã”Ã‡Ã¶ user_interactions and user_node_mastery\n   reference them historically. Deprecated nodes are excluded from all live queries\n   via WHERE deprecated_at IS NULL.",
       "required": false,
       "in": "query",
       "type": "string"
     },
     "rowFilter.taxonomy_tree.wiki_items": {
       "name": "wiki_items",
-      "description": "Typed structured content from taxonomy JSON v5.0 wiki_items array.\n   Each item: { text: string, type: heading|fact|definition|formula|code_provision|detail|exam_tip|cross_ref|warning, source_ref?: ale_id }\n   This is the AUTHORING BRIEF for the wiki article ÔÇö not the article itself.\n   SMEs write wiki_articles.content using this as their structured brief.\n   wiki_content (legacy untyped strings) is NOT stored in the DB ÔÇö treat as deprecated in JSON.\n   Empty array on legacy v1 nodes and subject/topic level nodes.",
+      "description": "Typed structured content from taxonomy JSON v5.0 wiki_items array.\n   Each item: { text: string, type: heading|fact|definition|formula|code_provision|detail|exam_tip|cross_ref|warning, source_ref?: ale_id }\n   This is the AUTHORING BRIEF for the wiki article Ã”Ã‡Ã¶ not the article itself.\n   SMEs write wiki_articles.content using this as their structured brief.\n   wiki_content (legacy untyped strings) is NOT stored in the DB Ã”Ã‡Ã¶ treat as deprecated in JSON.\n   Empty array on legacy v1 nodes and subject/topic level nodes.",
       "required": false,
       "in": "query",
       "type": "string"
@@ -31242,14 +31242,14 @@
     },
     "rowFilter.taxonomy_tree.typical_question_formats": {
       "name": "typical_question_formats",
-      "description": "Array of typical ALE question formats for this subtopic.\n   Values: mcq_recall, mcq_application, mcq_calculation, design_application.\n   Empty array on subject and topic level nodes.",
+      "description": "Array of typical LEA question formats for this subtopic.\n   Values: mcq_recall, mcq_application, mcq_calculation, design_application.\n   Empty array on subject and topic level nodes.",
       "required": false,
       "in": "query",
       "type": "string"
     },
     "rowFilter.taxonomy_tree.is_computation_heavy": {
       "name": "is_computation_heavy",
-      "description": "TRUE for subtopics where ALE exam items typically require multi-step calculation.\n   False by default ÔÇö only explicitly TRUE for designated ALE-STRC/ALE-UTIL subtopics.",
+      "description": "TRUE for subtopics where LEA exam items typically require multi-step calculation.\n   False by default Ã”Ã‡Ã¶ only explicitly TRUE for designated LEA-STRC/LEA-UTIL subtopics.",
       "required": false,
       "in": "query",
       "type": "string"

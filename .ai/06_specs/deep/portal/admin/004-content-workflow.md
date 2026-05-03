@@ -42,7 +42,7 @@ Complete content lifecycle from creation to publication, including versioning, a
 2. Metadata Tagging
    └─ IRT parameters (difficulty, discrimination)
    └─ Bloom's level
-   └─ ALE area
+   └─ LEA area
    └─ Topic assignment
    
 3. Rationale Writing

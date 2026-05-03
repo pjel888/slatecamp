@@ -45,7 +45,7 @@ Question editor (`/admin/knowledge/questions/[id]`):
 - Question metadata: difficulty, discrimination, Bloom level
 - Option-level rationales
 - Code citations
-- ALE area tagging
+- LEA area tagging
 
 **Source:** `src/components/admin/unified-editor/QuestionEditor.tsx`
 

@@ -1,7 +1,7 @@
 ---
 title: "History of Architecture — Overview & Study Strategy"
 slug: "overview-history-of-architecture"
-subject_label: "ALE-HIST · History of Architecture"
+subject_label: "LEA-HIST · History of Architecture"
 difficulty_label: "Foundational"
 ale_tests_you: "Ability to identify architectural periods, styles, key works, and architects across world history and contextualize them within broader cultural and technological movements."
 status: "draft"
@@ -9,7 +9,7 @@ status: "draft"
 
 # History of Architecture — Overview & Study Strategy
 
-History of Architecture is one of the most expansive subjects on the ALE. It spans tens of thousands of years — from the first stone shelters of prehistory to the parametric towers of the 21st century — and it touches every inhabited region of the world. That breadth is both what makes it fascinating and what makes it worth approaching with a clear strategy.
+History of Architecture is one of the most expansive subjects on the LEA. It spans tens of thousands of years — from the first stone shelters of prehistory to the parametric towers of the 21st century — and it touches every inhabited region of the world. That breadth is both what makes it fascinating and what makes it worth approaching with a clear strategy.
 
 The good news: this subject rewards curious, connected thinking. Once you see the through-lines — how trade routes carried building techniques, how climate shaped form, how each generation reacted to the one before it — the material starts to organize itself.
 
@@ -17,7 +17,7 @@ The good news: this subject rewards curious, connected thinking. Once you see th
 
 ## What This Subject Actually Covers
 
-The ALE treats History of Architecture as a survey of human building across 11 subtopic areas:
+The LEA treats History of Architecture as a survey of human building across 11 subtopic areas:
 
 - **Pre-Historic & Ancient** — Megalithic structures, Mesopotamia, Egypt, Greece, Rome
 - **Medieval to Baroque** — Early Christian, Byzantine, Romanesque, Gothic, Renaissance, Mannerist, Baroque, Rococo
@@ -31,7 +31,7 @@ The ALE treats History of Architecture as a survey of human building across 11 s
 - **Australian & New Zealand Architecture** — Indigenous building, colonial period, contemporary practice
 - **United States Architecture** — Colonial through the Chicago School, Mid-Century Modern, and postwar urbanism
 
-<Note>Philippine Architecture deserves its own dedicated study pass even though it also appears here. It connects directly to your lived context, and the ALE questions on it often reward specificity — knowing the difference between a *bahay na bato* and a *bahay kubo* matters.</Note>
+<Note>Philippine Architecture deserves its own dedicated study pass even though it also appears here. It connects directly to your lived context, and the LEA questions on it often reward specificity — knowing the difference between a *bahay na bato* and a *bahay kubo* matters.</Note>
 
 ## Why 35% Matters
 
@@ -45,9 +45,9 @@ Most candidates default to chronological study — reading Western architectural
 
 A more effective approach is **hybrid**: start with one chronological pass through Western history to establish your temporal anchor, then study the other traditions thematically by asking "what was happening here during the same era?"
 
-For example, while Gothic cathedrals were rising in France (12th–14th century), the Angkor Wat complex was being completed in Cambodia, the Great Zimbabwe was under construction, and the Aztec Empire was consolidating in Mesoamerica. Holding these in the same frame makes each tradition more memorable — and the ALE sometimes tests exactly this kind of cross-cultural awareness.
+For example, while Gothic cathedrals were rising in France (12th–14th century), the Angkor Wat complex was being completed in Cambodia, the Great Zimbabwe was under construction, and the Aztec Empire was consolidating in Mesoamerica. Holding these in the same frame makes each tradition more memorable — and the LEA sometimes tests exactly this kind of cross-cultural awareness.
 
-<ExamTip>ALE questions on History often provide a photograph or description of a building and ask you to identify its period, style, architect, or cultural tradition. Train yourself to read buildings visually: column types, arch forms, roof profiles, ornamental vocabulary, and material palette are all legible clues.</ExamTip>
+<ExamTip>LEA questions on History often provide a photograph or description of a building and ask you to identify its period, style, architect, or cultural tradition. Train yourself to read buildings visually: column types, arch forms, roof profiles, ornamental vocabulary, and material palette are all legible clues.</ExamTip>
 
 ## Time Allocation Tips
 

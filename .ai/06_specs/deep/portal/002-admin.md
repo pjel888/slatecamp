@@ -71,7 +71,7 @@ Context-aware editor:
 
 Unified question listing:
 - Taxonomy-driven browser
-- Filters: status, difficulty, subject, ALE area
+- Filters: status, difficulty, subject, LEA area
 - Bulk actions
 - Search across question text
 
@@ -81,7 +81,7 @@ Unified question listing:
 
 `/admin/taxonomy/` — Global taxonomy tree:
 - Discipline → Subject → Topic hierarchy
-- ALE ID assignment
+- LEA ID assignment
 - Bloom's level tagging
 - Exam frequency metadata
 - Orphaned content detection (Unassigned filter)

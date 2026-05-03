@@ -16,22 +16,22 @@ The difference between a startup that gets copied and dies versus one that grows
 ## SlateCamp's Competitive Landscape
 
 ### Current Direct Competitors
-**There are no ALE-specific digital platforms with mastery-based architecture.** This is the core insight.
+**There are no LEA-specific digital platforms with mastery-based architecture.** This is the core insight.
 
 | Competitor | Type | What They Offer | SlateCamp's Edge |
 |---|---|---|---|
 | Physical review centers (EAR, SAROC, etc.) | Offline, classroom | Structured review, human instruction | SlateCamp: data-driven, 24/7, mobile, fraction of the cost |
-| Generic review apps (Quizlet, etc.) | General quiz tools | Flashcards, basic quizzes | SlateCamp: ALE-specific content, Readiness Score, structured path |
+| Generic review apps (Quizlet, etc.) | General quiz tools | Flashcards, basic quizzes | SlateCamp: LEA-specific content, Readiness Score, structured path |
 | PDF dumps / reviewer books | Static content | Content coverage | SlateCamp: interactive, adaptive, measurable progress |
 | YouTube (architecture tutors) | Free video content | Content explanation | SlateCamp: assessment, not just content |
 | Edukasyon.ph | Philippine EdTech | Scholarship/school matching | No overlap — different function |
 | Generic LMS (Moodle, Canvas) | Institutional tools | Course delivery | SlateCamp: exam-prep mastery, not course delivery |
 
-**Conclusion:** SlateCamp enters a market with no true head-to-head competitor in the digital mastery engine category for ALE prep. This is a first-mover window that closes as SlateCamp grows. Move fast.
+**Conclusion:** SlateCamp enters a market with no true head-to-head competitor in the digital mastery engine category for LEA prep. This is a first-mover window that closes as SlateCamp grows. Move fast.
 
 ### Future Potential Competitive Threats
 1. **Review centers going digital** — most lack the tech talent to build what SlateCamp is building. Will likely license SlateCamp instead of competing (making them partners, not threats).
-2. **Global EdTech platforms entering PH** — Coursera, Udemy don't have ALE-specific content. Quipper has PH presence but focuses on K-12.
+2. **Global EdTech platforms entering PH** — Coursera, Udemy don't have LEA-specific content. Quipper has PH presence but focuses on K-12.
 3. **A copycat founder** — The real threat. Timing moats matter. Build user base and data advantage before a copycat can catch up.
 4. **PRC building their own digital reviewer** — Government moves slowly. Low threat in 3–5 year window.
 
@@ -43,14 +43,14 @@ The difference between a startup that gets copied and dies versus one that grows
 **Description:** Philip is a licensed architect. This is not a feature. It is an existential competitive advantage that no general tech founder can replicate without years of investment.
 
 **Why this matters:**
-- ALE taxonomy is deeply specialized (building codes, professional practice, architectural theory, structural systems, etc.)
+- LEA taxonomy is deeply specialized (building codes, professional practice, architectural theory, structural systems, etc.)
 - Philip knows which content matters, which is tested, which review centers get wrong
-- Philip has credibility with architecture schools, UAP, and the ALE community that a generic tech founder cannot buy
+- Philip has credibility with architecture schools, UAP, and the LEA community that a generic tech founder cannot buy
 
 **How to fortify this moat:**
 - Build relationships with PRC-registered architects and UAP officials before competitors have a reason to
 - Commission content only through licensed architects — no crowdsourced review dumps
-- Position Philip as the visible expert: publish ALE insights, speak at architecture events, be the face of ALE prep credibility
+- Position Philip as the visible expert: publish LEA insights, speak at architecture events, be the face of LEA prep credibility
 - Hire licensed architects onto the advisory board before any competitor can
 
 **Durability:** High — replicated only by a competitor who also has an architect-founder with equivalent domain expertise
@@ -58,15 +58,15 @@ The difference between a startup that gets copied and dies versus one that grows
 ---
 
 ### Moat 2: Proprietary Performance Data (Data Moat)
-**Description:** Every diagnostic, every session, every question answered on SlateCamp generates data that no competitor can access. As SlateCamp accumulates data on thousands of ALE candidates, its ability to predict readiness, identify weak taxonomy nodes, and calibrate question difficulty becomes increasingly superior.
+**Description:** Every diagnostic, every session, every question answered on SlateCamp generates data that no competitor can access. As SlateCamp accumulates data on thousands of LEA candidates, its ability to predict readiness, identify weak taxonomy nodes, and calibrate question difficulty becomes increasingly superior.
 
 **Why this matters:**
-- A platform with 10,000 ALE candidate performance profiles knows which topics most-failed candidates struggled with, which questions discriminate well between ready and not-ready students, and how readiness score trajectories predict exam outcomes
+- A platform with 10,000 LEA candidate performance profiles knows which topics most-failed candidates struggled with, which questions discriminate well between ready and not-ready students, and how readiness score trajectories predict exam outcomes
 - This data trains a better Readiness Score model than any competitor starting from zero
 
 **How to fortify this moat:**
-- Tag every question with taxonomy node, difficulty level, and ALE exam history
-- Track performance-to-outcome: correlate Readiness Scores with actual ALE pass/fail results (requires user consent + post-exam survey — build this into the product)
+- Tag every question with taxonomy node, difficulty level, and LEA exam history
+- Track performance-to-outcome: correlate Readiness Scores with actual LEA pass/fail results (requires user consent + post-exam survey — build this into the product)
 - Use performance data to improve Camp Trail recommendations algorithmically — this creates a virtuous loop: better data → better recommendations → better outcomes → more users → more data
 - License this data to UAP or PRC (with user consent) — creates institutional legitimacy and revenue
 
@@ -74,21 +74,21 @@ The difference between a startup that gets copied and dies versus one that grows
 
 ---
 
-### Moat 3: ALE-Specific Content Library (Content Moat)
-**Description:** Building a complete, accurate, ALE-calibrated content library takes years and requires deep subject matter expertise. Once built, it cannot be easily replicated.
+### Moat 3: LEA-Specific Content Library (Content Moat)
+**Description:** Building a complete, accurate, LEA-calibrated content library takes years and requires deep subject matter expertise. Once built, it cannot be easily replicated.
 
 **Why this matters:**
-- The ALE covers 9 areas: Architectural Design, Structural Design, Environmental Control, Professional Practice, Urban and Regional Planning, and more
+- The LEA covers 9 areas: Architectural Design, Structural Design, Environmental Control, Professional Practice, Urban and Regional Planning, and more
 - Accurate content calibration (which topics appear, at what depth, with what framing) is the product
 - Incorrect content = failed candidates = destroyed reputation
 
 **How to fortify this moat:**
 - Build content through licensed architects only — enforce credential requirement for all content contributors
-- Create a proprietary ALE taxonomy map that accurately represents the PRC's actual exam distribution
+- Create a proprietary LEA taxonomy map that accurately represents the PRC's actual exam distribution
 - Partner with UAP to have content reviewed and endorsed — creates a content legitimacy that competitors cannot claim without equivalent institutional relationships
-- Create the SlateCamp Wiki as the definitive, publicly trusted ALE reference — drives SEO, builds authority, reduces CAC
+- Create the SlateCamp Wiki as the definitive, publicly trusted LEA reference — drives SEO, builds authority, reduces CAC
 
-**Durability:** Medium-high — content can be copied but accurate ALE-calibrated content takes 12–18 months to build properly
+**Durability:** Medium-high — content can be copied but accurate LEA-calibrated content takes 12–18 months to build properly
 
 ---
 
@@ -102,8 +102,8 @@ The difference between a startup that gets copied and dies versus one that grows
 **How to fortify this moat:**
 - Build Campfire as a curated, moderated community — not a chaotic Facebook group
 - Incentivize passers to stay through: identity (Passer badge, Hall of Passers), purpose (helping the next generation), and recognition (featured success stories)
-- Create events that bring the community together: ALE results celebration, mentorship Q&As
-- Make the community exclusivity a brand signal: "SlateCamp's Campfire is where ALE passers give back."
+- Create events that bring the community together: LEA results celebration, mentorship Q&As
+- Make the community exclusivity a brand signal: "SlateCamp's Campfire is where LEA passers give back."
 
 **Durability:** High — network effects compounds; no competitor can recreate 3 years of community history
 
@@ -113,7 +113,7 @@ The difference between a startup that gets copied and dies versus one that grows
 **Description:** Once SlateCamp has contracts with 5–10 architecture schools and review centers, these relationships create a structural distribution advantage. These institutions become referral engines that competitors cannot easily displace.
 
 **Why this matters:**
-- A school that has integrated SlateCamp into their ALE prep program recommends it to every student — this is zero-marginal-cost acquisition
+- A school that has integrated SlateCamp into their LEA prep program recommends it to every student — this is zero-marginal-cost acquisition
 - Institutional contracts are sticky: once integrated, the switching cost (new onboarding, training, trust re-building) is high
 - UAP endorsement or DepEd recognition creates a brand authority signal that functions as a regulatory moat
 
@@ -121,7 +121,7 @@ The difference between a startup that gets copied and dies versus one that grows
 - Sign multi-year school partnerships early, before competitors recognize the value
 - Build the institutional dashboard to be deeply integrated into school workflows — not just a student tool
 - Pursue UAP official recognition of SlateCamp as a recommended review tool
-- Create co-branded certification: "[School Name] ALE Prep, Powered by SlateCamp" — gives the school credit, gives SlateCamp the logo
+- Create co-branded certification: "[School Name] LEA Prep, Powered by SlateCamp" — gives the school credit, gives SlateCamp the logo
 
 **Durability:** High — institutional relationships are slow to form and slow to leave; once signed, multi-year renewal is the default
 
@@ -130,10 +130,10 @@ The difference between a startup that gets copied and dies versus one that grows
 ## Competitive Positioning Statement
 
 **For investors and partners:**
-> "SlateCamp is the only mastery-based ALE preparation platform built by an architect, for architects. We combine domain-specific content accuracy with a proprietary Readiness Score engine and the only ALE-specific learning community in the Philippines. Our data advantage, community moat, and institutional relationships create compounding defensibility with each exam cycle."
+> "SlateCamp is the only mastery-based LEA preparation platform built by an architect, for architects. We combine domain-specific content accuracy with a proprietary Readiness Score engine and the only LEA-specific learning community in the Philippines. Our data advantage, community moat, and institutional relationships create compounding defensibility with each exam cycle."
 
 **For students:**
-> "Not just a reviewer. A system that tells you exactly where you stand, what to fix, and whether you're ready. The only platform built specifically for the ALE — by someone who passed it."
+> "Not just a reviewer. A system that tells you exactly where you stand, what to fix, and whether you're ready. The only platform built specifically for the LEA — by someone who passed it."
 
 ---
 
@@ -144,14 +144,14 @@ The difference between a startup that gets copied and dies versus one that grows
 - Positioning shift: "Born digital vs. went digital." SlateCamp's UX and data architecture are native advantages
 - Counter-offer to review centers: "Don't build it — license SlateCamp instead. You keep the brand, we run the tech."
 
-**If a well-funded EdTech company enters ALE prep:**
+**If a well-funded EdTech company enters LEA prep:**
 - Response: Accelerate community moat and data moat — these are the hardest to replicate fast
 - Move immediately on institutional contracts — lock in schools with multi-year deals
 - Push toward UAP official endorsement — regulatory/institutional credibility is hardest to buy
 - Remember: Generic platforms that try to enter niche markets almost always fail (too expensive to rebuild for the niche, network effects don't transfer)
 
 **If a copycat launches:**
-- Response: Brand dominance — become so synonymous with ALE prep that "ALE reviewer" = "SlateCamp" in students' minds
+- Response: Brand dominance — become so synonymous with LEA prep that "LEA reviewer" = "SlateCamp" in students' minds
 - Accelerate the Passer community — this is the only thing a copycat cannot replicate
 - Flood the market with social proof — 100 success stories vs. a copycat with 0
 - Trademark "SlateCamp", "Readiness Score", "Camp Trail", "Campfire" as brand assets
@@ -161,7 +161,7 @@ The difference between a startup that gets copied and dies versus one that grows
 ## The Moat-Building Calendar
 
 **Year 1 priorities (build the foundation):**
-- ✓ Domain content library: Build the full ALE taxonomy content
+- ✓ Domain content library: Build the full LEA taxonomy content
 - ✓ Performance data: Instrument every session for data collection
 - ✓ First community: Get 50 passers active in Campfire before the end of the first cycle
 - ✓ First institutional deal: Sign 1 school or review center
@@ -173,9 +173,9 @@ The difference between a startup that gets copied and dies versus one that grows
 - Content: 1,000+ validated questions, full taxonomy coverage
 
 **Year 3 priorities (make it irreplaceable):**
-- Data monopoly: The only entity with 5,000+ ALE candidate performance profiles
+- Data monopoly: The only entity with 5,000+ LEA candidate performance profiles
 - Institutional standard: Recognized by UAP as the official digital prep companion
-- Community brand: "Campfire" is the ALE prep community — not a feature, a destination
+- Community brand: "Campfire" is the LEA prep community — not a feature, a destination
 - Adjacent markets: CPD, career layer, SEA expansion to PRC equivalents in other countries
 
 ---

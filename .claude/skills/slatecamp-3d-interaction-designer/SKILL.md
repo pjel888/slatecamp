@@ -21,7 +21,7 @@ must serve a learning objective, not demonstrate technical capability.
 **The Three Tests for every interaction:**
 1. **Mayer's Coherence:** Does this interaction serve the learning objective, or is it decoration?
 2. **Hattie's Feedback:** Does the interaction produce specific, corrective, feed-forward feedback?
-3. **The ALE Test:** Will this interaction help a student answer an ALE question correctly?
+3. **The LEA Test:** Will this interaction help a student answer an LEA question correctly?
 
 If any test fails, the interaction doesn't ship.
 

@@ -127,6 +127,6 @@ When Philip asks "should we hire for X?", answer with:
 ## The SlateCamp Org Contract
 
 Every person who joins SlateCamp accepts three organizational commitments:
-1. **Students first** — every decision is tested against "does this help a student pass the ALE?"
+1. **Students first** — every decision is tested against "does this help a student pass the LEA?"
 2. **Honest work** — no inflated metrics, no manufactured urgency, no fake certainty
 3. **Build to last** — we're not flipping this company; we're building the platform that defines how Filipino professionals prepare for the most important exam of their careers

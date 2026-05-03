@@ -1,12 +1,12 @@
 {
-  "attempted_at": "2026-05-03T14:02:35.466Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-03T14:17:48.540Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
-  "blockers": [
-    "Failed to update wiki_articles.content: `apikey` request header or query parameter is either missing or invalid. Double check your Supabase `anon` or `service_role` API key."
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
   ],
-  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
   "slug": "minimum-requirements-group-a-dwellings",

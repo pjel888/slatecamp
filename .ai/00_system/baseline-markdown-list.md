@@ -609,9 +609,9 @@
 - `.ai/plans/Error Logging/2026-04-11-Error-Logging-Audit.md`
 - `.ai/plans/Error Logging/2026-04-12-Error-Logging-Implementation-Plan.md`
 - `.ai/plans/Error Logging/2026-04-12-Error-Logging-Phase-2-Plan.md`
-- `.ai/plans/Graph-Learning/Graph-Based Learning Architecture for a Philippine Architecture Licensure Exam Review App-ChatGPT.md`
-- `.ai/plans/Graph-Learning/Graph-Based Learning Architecture for a Philippine Architecture Licensure Exam Review App-Gemini.md`
-- `.ai/plans/Graph-Learning/Graph-Based Learning Architecture for a Philippine Architecture Licensure Exam Review App-Perplexity.md`
+- `.ai/plans/Graph-Learning/Graph-Based Learning Architecture for a Philippine Licensure Examination for Architects Review App-ChatGPT.md`
+- `.ai/plans/Graph-Learning/Graph-Based Learning Architecture for a Philippine Licensure Examination for Architects Review App-Gemini.md`
+- `.ai/plans/Graph-Learning/Graph-Based Learning Architecture for a Philippine Licensure Examination for Architects Review App-Perplexity.md`
 - `.ai/prompts/2026-04-12-Admin-Knowledge-Speed-Optimization-And-Functionality-Audit-And-Implementation-Plan.md`
 - `.ai/rules/design.md`
 - `.ai/rules/flowbite-alignment.md`

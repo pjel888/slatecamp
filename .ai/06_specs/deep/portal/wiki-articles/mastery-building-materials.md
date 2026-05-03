@@ -1,7 +1,7 @@
 ---
 title: "Building Materials and Construction Methods — Mastery & Connections"
 slug: "mastery-building-materials"
-subject_label: "ALE-MATL · Building Materials and Construction Methods"
+subject_label: "LEA-MATL · Building Materials and Construction Methods"
 difficulty_label: "Intermediate"
 ale_tests_you: "Your ability to apply material knowledge across construction systems, specifications, and cost estimation — and to recognize how material choices ripple into structural, mechanical, and design decisions."
 status: "draft"
@@ -13,7 +13,7 @@ Materials knowledge does not live in a subject silo. Every time an architect mak
 
 ## How the Subtopics Connect: The Material-to-Delivery Chain
 
-The ten subtopics of ALE-MATL follow a logical chain from raw material knowledge to delivered building:
+The ten subtopics of LEA-MATL follow a logical chain from raw material knowledge to delivered building:
 
 ```
 Materials Knowledge (Masonry, Wood, Metals, Glass, Roofing, Finishes, Hardware)
@@ -33,7 +33,7 @@ Understanding this chain also reveals the study priority logic: material propert
 
 ## The Computational Chain: Material → Quantity → Cost
 
-The most distinctively technical thread in ALE-MATL is the computational chain that links a material choice to a buildable, priceable quantity.
+The most distinctively technical thread in LEA-MATL is the computational chain that links a material choice to a buildable, priceable quantity.
 
 **Step 1 — Design decision establishes a material and geometry.** A 150mm CHB wall, 3.0m high, 8.0m long. A 100mm concrete slab, 6.0m × 9.0m. A timber floor framed with 2×8 joists at 400mm o.c.
 
@@ -43,23 +43,23 @@ The most distinctively technical thread in ALE-MATL is the computational chain t
 
 **Step 4 — Quantities price out to cost.** Unit cost per bag, per cubic meter, per kilogram × quantity = material cost. Add labor, equipment, and overhead for total construction cost.
 
-<ExamTip>The ALE frequently presents Step 2 → Step 3 problems: "Given a slab of these dimensions and this mix design, how many bags of cement are required?" Practice these with a consistent unit discipline. Errors almost always come from unit conversion mistakes — confusing cubic meters with cubic feet, or forgetting to account for waste factors.</ExamTip>
+<ExamTip>The LEA frequently presents Step 2 → Step 3 problems: "Given a slab of these dimensions and this mix design, how many bags of cement are required?" Practice these with a consistent unit discipline. Errors almost always come from unit conversion mistakes — confusing cubic meters with cubic feet, or forgetting to account for waste factors.</ExamTip>
 
 Board questions may present any step of this chain in isolation or ask you to complete the chain across multiple steps. Know each step well enough to enter the chain at any point.
 
-## ALE-MATL ↔ Structural Theory and Design
+## LEA-MATL ↔ Structural Theory and Design
 
-The connection between materials and structures is so tight that it is sometimes hard to tell where one subject ends and the other begins. The ALE keeps them distinct, but the knowledge flows both ways.
+The connection between materials and structures is so tight that it is sometimes hard to tell where one subject ends and the other begins. The LEA keeps them distinct, but the knowledge flows both ways.
 
-**From Materials to Structures:** Understanding concrete compressive strength (f'c), steel yield strength (fy), and timber allowable stress values is prerequisite knowledge for structural design. When a structures question asks about a reinforced concrete beam, the material properties (f'c = 28 MPa, fy = 415 MPa) are the starting inputs. ALE-MATL builds the vocabulary; ALE-STRU applies it.
+**From Materials to Structures:** Understanding concrete compressive strength (f'c), steel yield strength (fy), and timber allowable stress values is prerequisite knowledge for structural design. When a structures question asks about a reinforced concrete beam, the material properties (f'c = 28 MPa, fy = 415 MPa) are the starting inputs. LEA-MATL builds the vocabulary; LEA-STRU applies it.
 
-**From Structures to Materials:** The structural system choice determines the material requirements. A steel moment frame requires specific connection hardware, fireproofing, and corrosion protection — all ALE-MATL territory. A post-tensioned concrete slab requires specific high-strength strand, anchorage hardware, and grout — material knowledge that the structures context motivates.
+**From Structures to Materials:** The structural system choice determines the material requirements. A steel moment frame requires specific connection hardware, fireproofing, and corrosion protection — all LEA-MATL territory. A post-tensioned concrete slab requires specific high-strength strand, anchorage hardware, and grout — material knowledge that the structures context motivates.
 
 <WikiExamTable headers={["Structural System","Primary Material Consideration (MATL)","Primary Design Consideration (STRU)"]} rows={[["Reinforced concrete frame","Cement type, w/c ratio, aggregate size, rebar grade","Beam depth, column sizing, stirrup spacing"],["Structural steel frame","Section shape (W, HSS, angle), yield strength, connection type","Member selection, connection design, drift control"],["Load-bearing masonry","CHB grade, mortar mix, bond pattern","Wall thickness, reinforcement, lateral stability"],["Timber frame","Species, grade, moisture content, connector type","Span tables, load duration factors, joint design"],["Post-tensioned concrete","High-strength strand, duct system, anchorage hardware","Prestress losses, balanced loading, deflection control"]]} />
 
 <Tip>When studying structural systems, always ask: "What does the material need to perform well in this system?" And when studying materials, ask: "What structural system is this material best suited for?" The cross-referencing accelerates both subjects simultaneously.</Tip>
 
-## ALE-MATL ↔ Building Utilities (MEPF)
+## LEA-MATL ↔ Building Utilities (MEPF)
 
 The material-utility connection is often overlooked in study planning, but it generates reliable exam questions.
 
@@ -69,9 +69,9 @@ The material-utility connection is often overlooked in study planning, but it ge
 
 **Fire resistance and fire suppression coordination** link roofing, wall assembly, and ceiling materials to the fire rating requirements that drive sprinkler head placement, fire damper locations, and egress corridor specifications. A Type X gypsum board ceiling assembly, for example, achieves its fire rating only when correctly installed with the specified fastener pattern and joint treatment — a materials-method specification.
 
-<Note>The MEPF coordination dimension of ALE-MATL often appears in scenario questions: "The architect is detailing the penetration of a 150mm sanitary drain through a 2-hour rated concrete floor assembly. Which of the following firestopping materials and methods would maintain the floor's fire rating?" These questions reward candidates who studied materials and utilities in conversation with each other.</Note>
+<Note>The MEPF coordination dimension of LEA-MATL often appears in scenario questions: "The architect is detailing the penetration of a 150mm sanitary drain through a 2-hour rated concrete floor assembly. Which of the following firestopping materials and methods would maintain the floor's fire rating?" These questions reward candidates who studied materials and utilities in conversation with each other.</Note>
 
-## ALE-MATL ↔ Architectural Design: Finishes and Specifications
+## LEA-MATL ↔ Architectural Design: Finishes and Specifications
 
 The connection between materials and design practice runs through finishes selection and specification writing — two of the most direct points where material knowledge shapes the designed environment.
 
@@ -81,17 +81,17 @@ The connection between materials and design practice runs through finishes selec
 
 <ElaborativeInterrogation question="A project requires a waterproof floor finish in a hospital operating theater. What are the material selection criteria, and how would you communicate them in a specification?" answer="Criteria: seamless (no grout joints that can harbor bacteria), slip-resistant even when wet, chemical-resistant to cleaning agents and disinfectants, capable of withstanding repeated cleaning cycles, compatible with the structural slab and drainage system, and meeting IPCC or hospital infection control standards. In a specification, the General section would reference relevant standards (e.g., ASTM, DOH hospital design guidelines). The Products section would specify the exact flooring system (e.g., epoxy terrazzo or seamless vinyl sheet) with minimum performance thresholds for slip resistance, chemical resistance, and seam treatment. The Execution section would describe surface preparation requirements, installation method, curing conditions, and quality control testing (e.g., spark test for membrane integrity)." />
 
-## ALE-MATL ↔ Sustainable Design
+## LEA-MATL ↔ Sustainable Design
 
 The Sustainable and Green Materials subtopic is not a standalone island — it reframes every other materials subtopic through a lifecycle lens.
 
-**Embodied carbon** — the carbon emitted during the extraction, manufacture, transport, and installation of a material — is increasingly tested in the ALE as awareness of whole-lifecycle environmental impact grows. Concrete has high embodied carbon; timber stores carbon; recycled steel dramatically reduces embodied carbon versus virgin steel. These comparisons are now ALE-relevant knowledge.
+**Embodied carbon** — the carbon emitted during the extraction, manufacture, transport, and installation of a material — is increasingly tested in the LEA as awareness of whole-lifecycle environmental impact grows. Concrete has high embodied carbon; timber stores carbon; recycled steel dramatically reduces embodied carbon versus virgin steel. These comparisons are now LEA-relevant knowledge.
 
-**BERDE (Building for Ecologically Responsive Design Excellence)**, the Philippine green building rating system, awards credits for regional materials (reducing transport distance), recycled content, low-VOC finishes, and rapidly renewable materials. Knowing the BERDE materials credits and their thresholds is preparation for both the ALE and practice.
+**BERDE (Building for Ecologically Responsive Design Excellence)**, the Philippine green building rating system, awards credits for regional materials (reducing transport distance), recycled content, low-VOC finishes, and rapidly renewable materials. Knowing the BERDE materials credits and their thresholds is preparation for both the LEA and practice.
 
 <Tip>Frame the sustainable materials subtopic as a filter you apply to every other materials decision, not a separate topic. Ask: "What is the embodied carbon of this material? Can recycled or regional alternatives achieve the same performance? What are the indoor air quality implications of this finish?" This reframing turns one subtopic into a lens that sharpens all the others.</Tip>
 
-## Integration Patterns: How ALE-MATL Questions Cross Boundaries
+## Integration Patterns: How LEA-MATL Questions Cross Boundaries
 
 **Pattern 1: Material → Method → Specification.** "An architect specifies a waterproof membrane for a roof terrace over a habitable space. The structural slab is post-tensioned concrete. Which type of waterproofing membrane is most appropriate, and what surface preparation does it require?" (Answer requires knowledge of concrete substrates, membrane compatibility, and specification execution requirements.)
 
@@ -99,10 +99,10 @@ The Sustainable and Green Materials subtopic is not a standalone island — it r
 
 **Pattern 3: Material → System → MEPF Coordination.** "A curtain wall system with insulated glazing units is specified for a high-rise office building. What thermal performance criteria should the glazing achieve to comply with ASHRAE 90.1 energy standards, and how does this affect the mechanical cooling load?" (Answer requires materials knowledge applied to an energy performance outcome.)
 
-<Warn>When you encounter a question that seems purely computational, check whether it has a material property condition embedded in it. The "trick" in many ALE estimating questions is that you must first identify the correct material specification (e.g., which cement type, which concrete mix) before you can compute the quantity. Rushing to the arithmetic without reading the scenario carefully is a reliable way to choose the wrong answer.</Warn>
+<Warn>When you encounter a question that seems purely computational, check whether it has a material property condition embedded in it. The "trick" in many LEA estimating questions is that you must first identify the correct material specification (e.g., which cement type, which concrete mix) before you can compute the quantity. Rushing to the arithmetic without reading the scenario carefully is a reliable way to choose the wrong answer.</Warn>
 
 ## The Specification as a Cross-Subject Document
 
-The final integration insight: the specifications package for a building project draws from virtually every ALE subject. Structural specifications reference NSCP. Electrical specifications reference the Philippine Electrical Code. Plumbing specifications reference the National Plumbing Code. Fire protection specifications reference RA 9514. Material specifications reference Philippine National Standards (PNS) and ASTM.
+The final integration insight: the specifications package for a building project draws from virtually every LEA subject. Structural specifications reference NSCP. Electrical specifications reference the Philippine Electrical Code. Plumbing specifications reference the National Plumbing Code. Fire protection specifications reference RA 9514. Material specifications reference Philippine National Standards (PNS) and ASTM.
 
-The architect who coordinates specifications — who ensures that the roofing spec, the structural spec, the plumbing spec, and the fire protection spec do not conflict with each other — is exercising the integrative knowledge that the ALE is ultimately testing. ALE-MATL builds the vocabulary for one major thread of that coordination.
+The architect who coordinates specifications — who ensures that the roofing spec, the structural spec, the plumbing spec, and the fire protection spec do not conflict with each other — is exercising the integrative knowledge that the LEA is ultimately testing. LEA-MATL builds the vocabulary for one major thread of that coordination.

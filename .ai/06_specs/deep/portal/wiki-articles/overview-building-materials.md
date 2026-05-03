@@ -1,7 +1,7 @@
 ---
 title: "Building Materials and Construction Methods — Overview & Study Strategy"
 slug: "overview-building-materials"
-subject_label: "ALE-MATL · Building Materials and Construction Methods"
+subject_label: "LEA-MATL · Building Materials and Construction Methods"
 difficulty_label: "Foundational"
 ale_tests_you: "Your knowledge of material properties, appropriate construction methods, specification writing, and your ability to compute quantities and costs for common building materials."
 status: "draft"
@@ -9,9 +9,9 @@ status: "draft"
 
 # Building Materials and Construction Methods — Overview & Study Strategy
 
-If Theory of Architecture is the philosophical foundation of the ALE, Building Materials and Construction Methods is where ideas meet the physical world. This subject is unapologetically practical. It asks you to know what things are made of, how they are put together, and — critically — how many of them you need and what they cost. Alongside Building Utilities, it carries the heaviest weight in Area B, making it one of the most consequential subjects in the entire examination.
+If Theory of Architecture is the philosophical foundation of the LEA, Building Materials and Construction Methods is where ideas meet the physical world. This subject is unapologetically practical. It asks you to know what things are made of, how they are put together, and — critically — how many of them you need and what they cost. Alongside Building Utilities, it carries the heaviest weight in Area B, making it one of the most consequential subjects in the entire examination.
 
-<KeyValues items='[{"label":"PRC Area","value":"Area B — Materials, Construction & Utilities"},{"label":"Weight","value":"30% of Area B"},{"label":"PRC Subject Code","value":"ALE-MATL"},{"label":"Subtopics","value":"10 major areas"},{"label":"Computational depth","value":"Estimating, board foot, material quantities"}]' />
+<KeyValues items='[{"label":"PRC Area","value":"Area B — Materials, Construction & Utilities"},{"label":"Weight","value":"30% of Area B"},{"label":"PRC Subject Code","value":"LEA-MATL"},{"label":"Subtopics","value":"10 major areas"},{"label":"Computational depth","value":"Estimating, board foot, material quantities"}]' />
 
 ## What This Subject Covers
 
@@ -19,7 +19,7 @@ Ten subtopics span the full lifecycle of a building material — from raw form t
 
 **Masonry and Concrete** covers the most ubiquitous construction materials in the Philippines. Portland cement types, concrete mix design, hollow concrete blocks (CHB), reinforced concrete principles, and masonry bonding patterns. Given that the vast majority of Philippine construction is reinforced concrete, this subtopic is foundational in both the exam and in practice.
 
-**Wood and Timber Products** covers species, grading, dimensional lumber, engineered wood products (plywood, LVL, glulam), and timber joinery. The Philippines has specific DENR regulations on timber use, and the ALE tests awareness of both the material properties and the regulatory context.
+**Wood and Timber Products** covers species, grading, dimensional lumber, engineered wood products (plywood, LVL, glulam), and timber joinery. The Philippines has specific DENR regulations on timber use, and the LEA tests awareness of both the material properties and the regulatory context.
 
 **Metals, Glass, and Glazing** covers structural steel sections (W-shapes, channels, angles), aluminum systems, glass types (tempered, laminated, insulated glazing units), curtain wall systems, and performance characteristics like U-value and SHGC (Solar Heat Gain Coefficient) — the last of which connects directly to tropical climate design.
 
@@ -35,7 +35,7 @@ Ten subtopics span the full lifecycle of a building material — from raw form t
 
 **Architectural Specifications and Documentation** covers CSI MasterFormat divisions, the structure of a specification section (general, products, execution), types of specifications (prescriptive, performance, proprietary, reference), and the architect's role in ensuring specifications align with design intent and local material availability.
 
-**Sustainable and Green Materials** covers LEED and BERDE criteria as they apply to materials, embodied carbon, recycled content, regional sourcing, VOC limits for interior finishes, and the lifecycle assessment framework. This subtopic has grown in prominence in recent ALE cycles.
+**Sustainable and Green Materials** covers LEED and BERDE criteria as they apply to materials, embodied carbon, recycled content, regional sourcing, VOC limits for interior finishes, and the lifecycle assessment framework. This subtopic has grown in prominence in recent LEA cycles.
 
 ## Why This Subject Demands Both Memory and Calculation
 
@@ -54,9 +54,9 @@ Build a systematic inventory of material knowledge organized by category. For ea
 3. **Applications** — Where is this material appropriate, and where is it not?
 4. **Philippine context** — What local standards, brands, or availability considerations apply?
 
-<WikiExamTable headers={["Material","Key Classification","Critical Property","Common ALE Test Point"]} rows={[["Portland Cement","Types I–V","Compressive strength gain rate","Type II = moderate sulfate resistance; Type III = high early strength"],["Concrete Hollow Block","Non-load-bearing / Load-bearing","Compressive strength","Load-bearing CHB: min 5.17 MPa; standard sizes: 100mm, 150mm, 200mm"],["Structural Steel","W-shapes, channels, angles, tubes","Yield strength","A36 steel: 250 MPa yield; A572 Gr.50: 345 MPa"],["Tempered Glass","Heat-strengthened vs. fully tempered","Impact resistance","Tempered is 4× stronger than annealed; breaks into small cubes"],["Gypsum Board","Standard, moisture-resistant, fire-rated","Fire resistance","Type X: 5/8-inch fire-rated board for shaft walls"]]} />
+<WikiExamTable headers={["Material","Key Classification","Critical Property","Common LEA Test Point"]} rows={[["Portland Cement","Types I–V","Compressive strength gain rate","Type II = moderate sulfate resistance; Type III = high early strength"],["Concrete Hollow Block","Non-load-bearing / Load-bearing","Compressive strength","Load-bearing CHB: min 5.17 MPa; standard sizes: 100mm, 150mm, 200mm"],["Structural Steel","W-shapes, channels, angles, tubes","Yield strength","A36 steel: 250 MPa yield; A572 Gr.50: 345 MPa"],["Tempered Glass","Heat-strengthened vs. fully tempered","Impact resistance","Tempered is 4× stronger than annealed; breaks into small cubes"],["Gypsum Board","Standard, moisture-resistant, fire-rated","Fire resistance","Type X: 5/8-inch fire-rated board for shaft walls"]]} />
 
-<Tip>Use the material inventory as a comparison exercise. Do not just study concrete in isolation — study it next to masonry, then next to steel, asking: "When would you choose one over the other, and why?" The ALE often presents comparative scenarios.</Tip>
+<Tip>Use the material inventory as a comparison exercise. Do not just study concrete in isolation — study it next to masonry, then next to steel, asking: "When would you choose one over the other, and why?" The LEA often presents comparative scenarios.</Tip>
 
 ### Stage 2 — Methods and Systems (Weeks 4–5)
 
@@ -89,13 +89,13 @@ Dedicate focused time to the two most commonly underestimated areas.
 
 **Forgetting the formulas under pressure.** Estimating computations are formula-dependent. Write your key formulas on a single reference sheet and drill them under timed conditions. The exam does not provide formula sheets.
 
-**Confusing material properties.** Compressive strength, tensile strength, flexural strength, modulus of elasticity, thermal conductivity, R-value, U-value — each measures something different, and the ALE distinguishes between them. Know what each property means, what units it uses, and which materials are being compared.
+**Confusing material properties.** Compressive strength, tensile strength, flexural strength, modulus of elasticity, thermal conductivity, R-value, U-value — each measures something different, and the LEA distinguishes between them. Know what each property means, what units it uses, and which materials are being compared.
 
-<Warn>Do not assume Philippine construction practice is identical to US or European standards. The ALE tests Philippine-specific standards and codes — NSCP (National Structural Code of the Philippines), DPWH specifications, and local product standards. Where Philippine standards differ from international ones, the Philippine standard governs.</Warn>
+<Warn>Do not assume Philippine construction practice is identical to US or European standards. The LEA tests Philippine-specific standards and codes — NSCP (National Structural Code of the Philippines), DPWH specifications, and local product standards. Where Philippine standards differ from international ones, the Philippine standard governs.</Warn>
 
 **Neglecting specifications.** Candidates who came from practice-heavy backgrounds sometimes skip this subtopic because it feels administrative. But specification questions are reliable exam content, and they are among the easier points to earn with focused study.
 
-**Underestimating sustainable materials.** BERDE and green building criteria have entered the ALE in recent cycles. Treat this subtopic as a growing area, not a peripheral one.
+**Underestimating sustainable materials.** BERDE and green building criteria have entered the LEA in recent cycles. Treat this subtopic as a growing area, not a peripheral one.
 
 <ElaborativeInterrogation question="What is the difference between a prescriptive specification and a performance specification, and when would you use each?" answer="A prescriptive specification names the exact product, manufacturer, or material to be used — it leaves no room for substitution without the architect's approval. It is used when the design intent depends on a specific product's appearance, finish, or compatibility, and when the architect wants tight control over the outcome. A performance specification describes the required outcome or measurable characteristics (e.g., 'glass shall achieve a minimum SHGC of 0.25 and a U-value of 1.2 W/m²K') without specifying the exact product. It is used when the outcome matters more than the method, when competition among suppliers is desirable to control cost, or when proprietary specifications are restricted by procurement rules." />
 

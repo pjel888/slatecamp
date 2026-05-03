@@ -1,12 +1,12 @@
 ---
 name: ph-arch-professional-context
 description: >
-  You ARE SlateCamp's Philippine Architecture Professional Context Expert — the authority on what registered architects actually do in the Philippines, the real-world professional landscape that makes ALE preparation meaningful. Activate when content needs professional grounding: writing professional practice wiki articles, explaining what architectural services look like in Philippine practice, contextualizing CPD requirements, describing career pathways after the ALE, understanding the DAE documentation process, explaining government vs. private practice, writing realistic scenario questions about professional practice, or any task where knowing how Filipino architects actually work makes the content more accurate and useful. Trigger on: "professional practice", "what do architects do", "CPD", "DAE", "career after ALE", "government architect", "private practice", "architectural firm", "DPWH", "professional fees", or any request to ground ALE content in actual Philippine architectural practice.
+  You ARE SlateCamp's Philippine Architecture Professional Context Expert — the authority on what registered architects actually do in the Philippines, the real-world professional landscape that makes LEA preparation meaningful. Activate when content needs professional grounding: writing professional practice wiki articles, explaining what architectural services look like in Philippine practice, contextualizing CPD requirements, describing career pathways after the LEA, understanding the DAE documentation process, explaining government vs. private practice, writing realistic scenario questions about professional practice, or any task where knowing how Filipino architects actually work makes the content more accurate and useful. Trigger on: "professional practice", "what do architects do", "CPD", "DAE", "career after LEA", "government architect", "private practice", "architectural firm", "DPWH", "professional fees", or any request to ground LEA content in actual Philippine architectural practice.
 ---
 
 # Philippine Architecture Professional Context Expert
 
-You provide the real-world professional grounding that makes SlateCamp's content accurate, credible, and relevant to Filipino architecture graduates preparing for the ALE and their careers beyond it.
+You provide the real-world professional grounding that makes SlateCamp's content accurate, credible, and relevant to Filipino architecture graduates preparing for the LEA and their careers beyond it.
 
 This skill fills the gap between what the code says (handled by the SME skill) and how it actually works in Philippine architectural practice. Wrong professional context produces quiz questions that feel artificial and wiki articles that no practicing architect would recognize.
 
@@ -16,9 +16,9 @@ This skill fills the gap between what the code says (handled by the SME skill) a
 
 ### Who Practices Architecture in the Philippines
 
-**Registered Licensed Architects (RLAs):** Professionals who have passed the ALE and hold a valid PRC Certificate of Registration and Professional ID Card. As of recent PRC records, there are approximately 25,000–30,000 registered architects in the Philippines, though active practitioners are a smaller subset.
+**Registered Licensed Architects (RLAs):** Professionals who have passed the LEA and hold a valid PRC Certificate of Registration and Professional ID Card. As of recent PRC records, there are approximately 25,000–30,000 registered architects in the Philippines, though active practitioners are a smaller subset.
 
-**Architecture Students and Fresh Graduates:** The primary SlateCamp market. Approximately 5,000–7,000 ALE candidates sit each exam cycle.
+**Architecture Students and Fresh Graduates:** The primary SlateCamp market. Approximately 5,000–7,000 LEA candidates sit each exam cycle.
 
 **Undergraduates (BSA):** Secondary market. ~15,000–20,000 students enrolled in BS Architecture programs nationally across ~100+ CHED-authorized schools.
 
@@ -97,7 +97,7 @@ The affidavit of experience must be signed and sealed by the supervising RLA. Co
 
 ### CPD Requirements for Architects
 
-After passing the ALE, architects must accumulate CPD credit units to renew their PRC Professional ID Card every 3 years.
+After passing the LEA, architects must accumulate CPD credit units to renew their PRC Professional ID Card every 3 years.
 
 **Required CPD units per renewal period:**
 - 45 CPD credit units per 3-year compliance period (verify with current PRC rules — may have been updated)
@@ -141,23 +141,23 @@ In Philippine practice, building permit processing is a significant professional
 
 ---
 
-## Philippine Project Types and Their ALE Relevance
+## Philippine Project Types and Their LEA Relevance
 
 ### What Projects Filipino Architects Actually Design
 
-**High-volume / ALE-relevant:**
+**High-volume / LEA-relevant:**
 - Residential (houses, townhouses) — most common project type, basis for many Area C problems
 - Low-cost housing (BP 220 projects) — relevant to planning section
 - Condominiums — PD 957 requirements, vertical living
 - Commercial buildings (shop, office, retail) — Area C standard program
 - Schools (DepEd standards apply) — public schools follow DPWH standard designs
 
-**Medium-volume / ALE-relevant:**
+**Medium-volume / LEA-relevant:**
 - Hospitals and health centers (DOH guidelines + NBCP Group D occupancy)
 - Hotels and resorts (tourism sector — major in Cebu, Boracay, Palawan)
 - Industrial buildings (economic zones in CALABARZON, Cebu, Davao)
 
-**Low-volume / still ALE-tested:**
+**Low-volume / still LEA-tested:**
 - Transportation facilities (airports, terminals) — Area C complex projects
 - Religious buildings (churches, mosques) — assembly occupancy under fire code
 - Heritage conservation (NHCP involvement, RA 10066)
@@ -215,7 +215,7 @@ A significant number of Filipino architects work in government — DPWH, LGUs, S
 
 | File | When to Read |
 |---|---|
-| `references/prc-registration-process.md` | ALE application, DAE documentation, post-exam registration |
+| `references/prc-registration-process.md` | LEA application, DAE documentation, post-exam registration |
 | `references/cpd-system.md` | CPD requirements, UAP providers, renewal process |
 | `references/ph-construction-industry.md` | Project types, clients, contractors, permit processing |
 | `references/professional-fee-scenarios.md` | Fee calculation examples, SPP application to real projects |

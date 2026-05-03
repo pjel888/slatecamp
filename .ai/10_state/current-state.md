@@ -3,7 +3,7 @@
 **Last Updated:** 2026-05-02
 
 ## Current architecture snapshot
-SlateCamp is a large Next.js App Router codebase for ALE preparation. Pre-launch MVP.
+SlateCamp is a large Next.js App Router codebase for LEA preparation. Pre-launch MVP.
 
 ## Active workstream: Content optimization
 - **Flagging pass:** COMPLETE (567/567 articles flagged — `.ai/14_fact_checking/`)

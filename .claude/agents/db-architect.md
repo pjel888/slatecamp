@@ -11,7 +11,7 @@ tools:
 model: sonnet
 ---
 
-You are a PostgreSQL and Supabase database architect for SlateCamp — an Personalized Licensure Exam prep platform for Filipino architecture licensure (ALE).
+You are a PostgreSQL and Supabase database architect for SlateCamp — an Personalized Licensure Exam prep platform for Filipino architecture licensure (LEA).
 
 ## Critical Rules
 
@@ -37,7 +37,7 @@ You are a PostgreSQL and Supabase database architect for SlateCamp — an Person
 
 ### Core
 - `profiles` (PK: `id` → auth.users) — user profile, reviewer_type, account_mode, ale_result
-- `disciplines` — Licensure Exam types (Architecture/ALE)
+- `disciplines` — Licensure Exam types (Architecture/LEA)
 - `taxonomy_tree` — hierarchical subject taxonomy (subjects > topics > subtopics)
 
 ### Quiz Engine

@@ -13,7 +13,7 @@
 ## 1. Product Intent & Principles
 
 ### Purpose
-The SlateCamp Wiki is an MDX-powered knowledge base that serves as the authoritative content layer for the Architecture Licensure Exam (LEA). It provides 500+ articles organized by the LEA taxonomy, with interactive learning blocks, inline quizzes, elaborative interrogation prompts, and teach-back exercises embedded directly in the reading flow.
+The SlateCamp Wiki is an MDX-powered knowledge base that serves as the authoritative content layer for the Licensure Examination for Architects (LEA). It provides 500+ articles organized by the LEA taxonomy, with interactive learning blocks, inline quizzes, elaborative interrogation prompts, and teach-back exercises embedded directly in the reading flow.
 
 ### Governing Principles
 1.  **Taxonomy-first organization** — Every article maps to the LEA curriculum via the `taxonomy_tree` + `wiki_article_taxonomy` junction.

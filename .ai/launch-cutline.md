@@ -10,7 +10,7 @@ Launch should center on the learner study loop and internal content operations. 
 
 | Area | Keep for Launch | Defer | Remove | Needs Decision | Notes |
 | --- | --- | --- | --- | --- | --- |
-| Public acquisition/auth | Homepage, about/contact/pricing/try, login/register/reset/callback/onboarding | Legacy public redirects after URL decisions | Old ALE starter redirects and redirect-only pages | Area C / optional surface choices | Keep concise public funnel. |
+| Public acquisition/auth | Homepage, about/contact/pricing/try, login/register/reset/callback/onboarding | Legacy public redirects after URL decisions | Old LEA starter redirects and redirect-only pages | Area C / optional surface choices | Keep concise public funnel. |
 | Student core learning | Dashboard, Wiki, Notes, Quiz v2, Camp Trails, Flash/SRS, Analytics, 3D Lab, Assessment | Pods, professional/results-day, DAE, Studio, code updates, notifications if not explicit launch promises | Redirect shims and old route aliases | Area C prominence | Launch should feel focused. |
 | Internal operations | Admin CMS/content/question/taxonomy/assets/settings/reviews/audit; developer portal for internal status; CEO only if owner uses it | CEO analytics/financial cockpit polish | Public exposure of internal portals | Which internal portals block launch | Keep gated and out of public nav. |
 | Integrations | Supabase; cron only with monitoring; OG image | PayRex, AI provider, LemonSqueezy, email/push/PostHog/Stripe/Google Cloud extras | LemonSqueezy runtime and unused envs | None for current payment-free/live-AI-free launch | Avoid half-enabled integrations. |

@@ -1,7 +1,7 @@
 ---
 title: "Structural Conceptualization — Mastery & Connections"
 slug: "mastery-structural-conceptualization"
-subject_label: "ALE-STRC · Structural Conceptualization"
+subject_label: "LEA-STRC · Structural Conceptualization"
 difficulty_label: "Advanced"
 ale_tests_you: "Your ability to see structural design as an integrated system — tracing how decisions in one subtopic constrain and inform decisions in all others, and how structural thinking connects to architecture, materials, and building services."
 status: "draft"
@@ -19,7 +19,7 @@ Every structural decision flows through a sequence. Disrupting this sequence —
 
 This is not just a study sequence. It is the actual logic of structural design. When an exam question places you in the middle of this chain — "given a 6-story RC frame in Seismic Zone 4, which lateral system is most appropriate?" — you are expected to trace backward (what are the loads? what is the seismic demand?) and forward (what does the selected system require of the foundation?).
 
-<ExamTip>When an ALE question presents a structural scenario, mentally walk the load path before selecting an answer. Ask: where does the load originate? How does it travel to the ground? What material and system is carrying it? This chain-of-reasoning approach catches the most common trap answers, which are correct for a different point in the chain.</ExamTip>
+<ExamTip>When an LEA question presents a structural scenario, mentally walk the load path before selecting an answer. Ask: where does the load originate? How does it travel to the ground? What material and system is carrying it? This chain-of-reasoning approach catches the most common trap answers, which are correct for a different point in the chain.</ExamTip>
 
 ## How the Subtopics Connect to Each Other
 
@@ -54,7 +54,7 @@ No structural system is complete until forces reach the ground. Foundation selec
 
 The connection between lateral systems and foundations is particularly important: seismic and wind overturning forces create significant uplift on the tension side of a building, which can govern pile design. An examiner who asks about pile capacity under combined gravity and seismic load is testing whether you can see this connection.
 
-## Connections to Other ALE Subjects
+## Connections to Other LEA Subjects
 
 ### Connection to Materials and Construction Methods
 
@@ -66,15 +66,15 @@ When you study both subjects together — rather than treating them as silos —
 
 This connection is tested more than most examinees expect. Seismic bracing for mechanical equipment — HVAC units, large piping runs, electrical switchgear — is an NSCP requirement with structural implications. A large rooftop HVAC unit contributes to the building's seismic mass (higher mass = higher base shear). Equipment vibration can cause structural fatigue in supports designed only for static loads.
 
-The practical coordination skill — an architect knowing that a mechanical room cannot be placed on a cantilevered slab without structural review — is exactly what the ALE is testing when it integrates MEPF and structural questions.
+The practical coordination skill — an architect knowing that a mechanical room cannot be placed on a cantilevered slab without structural review — is exactly what the LEA is testing when it integrates MEPF and structural questions.
 
-<Callout>In real practice, the architect's role in structural coordination is primarily one of integration: ensuring that mechanical chases don't penetrate shear walls, that equipment weights are communicated to the structural engineer, and that the design process doesn't finalize structural layout before MEP routing is resolved. The ALE tests this coordination awareness.</Callout>
+<Callout>In real practice, the architect's role in structural coordination is primarily one of integration: ensuring that mechanical chases don't penetrate shear walls, that equipment weights are communicated to the structural engineer, and that the design process doesn't finalize structural layout before MEP routing is resolved. The LEA tests this coordination awareness.</Callout>
 
 ### Connection to Architectural Design
 
 Every structural system decision has architectural consequences, and vice versa. Column grid spacing determines floor plate efficiency. Shear wall placement constrains open-plan layouts. Long-span systems enable column-free spaces that are essential for assembly occupancies.
 
-The ALE's Architectural Design subject will present scenarios where structural feasibility is part of the design judgment. A student who has internalized structural conceptualization will recognize when a proposed design requires an impractically long span, an unsupported cantilever, or a structural configuration that seismic requirements would not permit.
+The LEA's Architectural Design subject will present scenarios where structural feasibility is part of the design judgment. A student who has internalized structural conceptualization will recognize when a proposed design requires an impractically long span, an unsupported cantilever, or a structural configuration that seismic requirements would not permit.
 
 ### The NSCP Thread Across Everything
 
@@ -86,7 +86,7 @@ The NSCP is not just a Structural Conceptualization resource. It intersects with
 
 Understanding the NSCP as a cross-cutting document — not a structural-only reference — is a mark of exam readiness.
 
-## Integration Patterns: What the ALE Actually Tests
+## Integration Patterns: What the LEA Actually Tests
 
 At the mastery level, the exam presents scenarios rather than isolated facts. Here are the integration patterns that appear most frequently:
 
@@ -110,7 +110,7 @@ This requires: understanding that differential settlement induces secondary bend
 
 ## Building Your Integration Habit
 
-The difference between a student who scores in the upper band on ALE-STRC and one who scrapes through is almost never about knowing more facts. It is almost always about having built the mental model that connects the facts.
+The difference between a student who scores in the upper band on LEA-STRC and one who scrapes through is almost never about knowing more facts. It is almost always about having built the mental model that connects the facts.
 
 Three practices accelerate this:
 
@@ -120,7 +120,7 @@ Three practices accelerate this:
 
 **Practice cross-subject questions deliberately.** After you've covered MEPF basics, attempt questions that combine seismic bracing for equipment with lateral system design. After you've covered Architectural Design, attempt questions that require structural system judgment as part of a design scenario.
 
-Your SlateCamp session history will show you which integration patterns you're consistently getting right and which ones reveal gaps. Use that signal to direct your next review session — the Readiness Score for ALE-STRC reflects exactly this depth of connection, not just surface recall.
+Your SlateCamp session history will show you which integration patterns you're consistently getting right and which ones reveal gaps. Use that signal to direct your next review session — the Readiness Score for LEA-STRC reflects exactly this depth of connection, not just surface recall.
 
 ---
 

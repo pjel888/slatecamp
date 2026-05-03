@@ -2,7 +2,7 @@
 
 **Last audit:** 2026-04-29
 
-SlateCamp is a Next.js App Router application for Philippine Architecture Licensure Exam preparation. It combines public marketing, authenticated student study workflows, admin content operations, developer tooling, and owner/CEO operational dashboards.
+SlateCamp is a Next.js App Router application for Philippine Licensure Examination for Architects preparation. It combines public marketing, authenticated student study workflows, admin content operations, developer tooling, and owner/CEO operational dashboards.
 
 ## Current audited counts
 

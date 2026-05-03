@@ -1,12 +1,12 @@
 {
-  "attempted_at": "2026-05-03T14:02:48.223Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-03T14:17:51.672Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
-  "blockers": [
-    "Failed to update wiki_articles.content: Bad Request"
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
   ],
-  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "5ba0b022-0a85-4d27-af92-79d093a8d491",
   "slug": "residential-clearances",

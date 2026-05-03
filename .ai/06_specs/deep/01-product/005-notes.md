@@ -4,7 +4,7 @@
 
 ## Overview
 
-SlateCamp's notes system provides contextually anchored note-taking for ALE preparation. Notes are stored as TipTap JSONB, enabling rich text with embedded formatting, and can be anchored to specific study objects (topics, questions, sessions, articles).
+SlateCamp's notes system provides contextually anchored note-taking for LEA preparation. Notes are stored as TipTap JSONB, enabling rich text with embedded formatting, and can be anchored to specific study objects (topics, questions, sessions, articles).
 
 **Source:** `src/components/notes/` (9 files), `src/lib/notes/`, `src/types/app.ts`
 
@@ -70,7 +70,7 @@ Notes can be anchored to multiple contexts simultaneously:
 
 | Anchor | Use Case |
 |--------|----------|
-| `topic_id` | Notes about a specific ALE topic |
+| `topic_id` | Notes about a specific LEA topic |
 | `question_id` | Notes explaining a specific question |
 | `session_id` | Session-specific reflections |
 | `article_id` | Notes linked to a wiki article |
@@ -82,7 +82,7 @@ Notes can be anchored to multiple contexts simultaneously:
 TipTap-based rich text editor:
 - JSONB storage (not HTML)
 - Extensions: bold, italic, headings, lists, code blocks, links, images
-- Custom extensions for ALE-specific content (code citations, formula blocks)
+- Custom extensions for LEA-specific content (code citations, formula blocks)
 - Toolbar in `NoteEditorToolbar.tsx`
 
 **Source:** `src/components/notes/NoteEditor.tsx`, `src/components/notes/Toolbar.tsx`
@@ -98,7 +98,7 @@ TipTap-based rich text editor:
 
 ## Templates
 
-Pre-built note templates for common ALE study patterns:
+Pre-built note templates for common LEA study patterns:
 - Cornell method template
 - Gap analysis template
 - Formula reference template

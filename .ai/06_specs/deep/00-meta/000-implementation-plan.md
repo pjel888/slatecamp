@@ -432,7 +432,7 @@ jobs:
 
 ## What is SlateCamp?
 
-SlateCamp is an ALE prep platform built for the Philippine Architecture Licensure Exam.
+SlateCamp is an LEA prep platform built for the Philippine Licensure Examination for Architects.
 The product combines adaptive quiz flows, an expert-linked wiki, analytics, admin tooling,
 and interactive 3D learning modules under a shared Next.js codebase.
 

@@ -2481,7 +2481,7 @@ However, the following 3D Lab components should be treated as **migration-sensit
 | 2026-04-09 | `786b6d0` | feat(3d-lab): migrate Exploded and Cutaway templates to ViewportShell (Phase 2B) |
 | 2026-04-09 | `8139ef7` | feat(3d-lab): migrate ParametricScene to ViewportShell (Phase 2) |
 | 2026-04-09 | `0895408` | feat(3d-lab): add Unified Viewport Shell foundation (Phase 1) |
-| 2026-04-08 | `31ac84f` | refactor: global ALE -> LEA terminology migration |
+| 2026-04-08 | `31ac84f` | refactor: global LEA -> LEA terminology migration |
 | 2026-04-08 | `33b420b` | feat: complete Wave 4 -- egress sim + batch verifier |
 | 2026-04-07 | `15b488e` | refactor: migrate Cat 01 + Cat 03 to shared constants |
 | 2026-04-07 | `68c5a1f` | feat: add LegalCitation type, shared constants, audit script |
@@ -2523,7 +2523,7 @@ However, the following 3D Lab components should be treated as **migration-sensit
 
 4. **Regulatory Track:** LegalCitation type system, shared constants (PD 1096, BP 344, RA 9514, NSCP), audit infrastructure
 
-5. **Terminology Migration:** ALE -> LEA naming standardization across entire codebase (2026-04-08)
+5. **Terminology Migration:** LEA -> LEA naming standardization across entire codebase (2026-04-08)
 
 6. **Unified Viewport Shell (Phase 1-5):** Slot-based layout system replacing per-template containers:
    - Phase 1: Shell foundation (ViewportShell, ViewportSidebar, ViewportHeader, ViewportToolbar)

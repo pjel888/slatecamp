@@ -1,7 +1,7 @@
 ---
 title: "Theory of Architecture — Mastery & Connections"
 slug: "mastery-theory-of-architecture"
-subject_label: "ALE-THEO · Theory of Architecture"
+subject_label: "LEA-THEO · Theory of Architecture"
 difficulty_label: "Intermediate"
 ale_tests_you: "Your ability to synthesize across subtopics and apply theoretical frameworks to cross-subject design scenarios — connecting principles to history, space planning to design process, and tropical theory to site conditions."
 status: "draft"
@@ -9,7 +9,7 @@ status: "draft"
 
 # Theory of Architecture — Mastery & Connections
 
-Once you have the individual subtopics under control, the real work of Theory mastery begins: seeing how everything connects. The ALE does not test subtopics in hermetically sealed boxes. Board questions routinely ask you to apply a theoretical principle to a design scenario, link a philosopher's argument to a spatial condition, or recognize a movement's influence in a contemporary building. This article is your guide to building those connections.
+Once you have the individual subtopics under control, the real work of Theory mastery begins: seeing how everything connects. The LEA does not test subtopics in hermetically sealed boxes. Board questions routinely ask you to apply a theoretical principle to a design scenario, link a philosopher's argument to a spatial condition, or recognize a movement's influence in a contemporary building. This article is your guide to building those connections.
 
 ## How the Subtopics Form a Single Arc
 
@@ -37,7 +37,7 @@ Innovation & Filipino Architect's Identity
 
 ## Ching's Framework as the Unifying Thread
 
-Francis D.K. Ching's vocabulary — form, space, order, light, texture, proportion, scale, balance, rhythm, emphasis, unity — functions as a shared language across nearly every Theory subtopic. More importantly, it extends into other ALE subjects.
+Francis D.K. Ching's vocabulary — form, space, order, light, texture, proportion, scale, balance, rhythm, emphasis, unity — functions as a shared language across nearly every Theory subtopic. More importantly, it extends into other LEA subjects.
 
 When a Philosophies question asks what Le Corbusier meant by the "promenade architecturale," you are applying Ching's concept of movement through space and sequential spatial experience. When a Movements question asks what Deconstructivism challenged, the answer is Ching's classical notions of order, symmetry, and hierarchy. When an Anthropometrics question asks about the relationship between ceiling height and perceived spatial quality, you are in Ching territory again.
 
@@ -45,7 +45,7 @@ When a Philosophies question asks what Le Corbusier meant by the "promenade arch
 
 ## Theory ↔ Architectural History: The Ideas / Timeline Relationship
 
-This is the most important cross-subject connection in the entire ALE. Theory and History share enormous conceptual territory — Modernism, Postmodernism, Brutalism, Deconstructivism, Critical Regionalism all appear in both subjects. The distinction is in the question type:
+This is the most important cross-subject connection in the entire LEA. Theory and History share enormous conceptual territory — Modernism, Postmodernism, Brutalism, Deconstructivism, Critical Regionalism all appear in both subjects. The distinction is in the question type:
 
 <WikiExamTable headers={["If the question asks...","It belongs to..."]} rows={[["When was the Barcelona Pavilion built, and by whom?","Architectural History"],["What spatial principle does the Barcelona Pavilion demonstrate?","Theory of Architecture"],["Which movement does the Barcelona Pavilion represent?","Either — depends on framing"],["How does free-flowing space differ from additive space?","Theory of Architecture"],["Which early modern buildings used pilotis?","Architectural History"]]} />
 
@@ -101,6 +101,6 @@ The Pritzker list, studied for Theory, also enriches your History and Design kno
 
 ## Building Your Own Connection Map
 
-The most effective mastery activity for Theory is building a personal connection map — a visual diagram where each subtopic node has lines drawn to every other ALE subject it connects with. When you can articulate *why* a connection exists (not just that it does), you are operating at the integration level the exam rewards.
+The most effective mastery activity for Theory is building a personal connection map — a visual diagram where each subtopic node has lines drawn to every other LEA subject it connects with. When you can articulate *why* a connection exists (not just that it does), you are operating at the integration level the exam rewards.
 
-Start with Ching at the center. Draw lines to every subtopic. Then add the other ALE subjects around the perimeter and draw lines from Theory subtopics to those subjects wherever a genuine connection exists. What you will find is that Theory has connections everywhere — because theory is everywhere. That is exactly why it carries 25% of Area A.
+Start with Ching at the center. Draw lines to every subtopic. Then add the other LEA subjects around the perimeter and draw lines from Theory subtopics to those subjects wherever a genuine connection exists. What you will find is that Theory has connections everywhere — because theory is everywhere. That is exactly why it carries 25% of Area A.

@@ -20,7 +20,7 @@ These words must NEVER appear anywhere in SlateCamp's student-facing UI:
 
 | Category | Forbidden | Why |
 |---|---|---|
-| Failure language | fail, failed, failure | Hiya culture — ALE failure is deeply personal |
+| Failure language | fail, failed, failure | Hiya culture — LEA failure is deeply personal |
 | Retry language | retry, retake, retaker | Same — never label a student by their failure |
 | Dismissive encouragement | try again, don't give up, better luck this time | Patronizing in the PH exam context |
 | Blame language | what went wrong | Assigns fault to the student |
@@ -145,7 +145,7 @@ Text: White
 Font: Syne Bold
 
 "Arch. [Full Name]"
-"January 2026 ALE Topnotcher"
+"January 2026 LEA Topnotcher"
 "PRC Board Rank #[N]"
 
 Logo: SlateCamp logo bottom-right
@@ -157,7 +157,7 @@ Logo: SlateCamp logo bottom-right
 
 ### Branching Question
 ```
-"Is this your first time preparing for the ALE?"
+"Is this your first time preparing for the LEA?"
   ○ "Yes, first time"         → existing onboarding
   ○ "I've reviewed before"    → retaker branch
 ```
@@ -174,7 +174,7 @@ No mention of the previous attempt. No condolences. No motivational platitude.
 ```
 "Which subjects felt hardest last time?"
 
-[Multi-select from 8 ALE subjects]
+[Multi-select from 8 LEA subjects]
 
 [Skip] button visible — no penalty for skipping
 ```
@@ -188,7 +188,7 @@ Identical to existing onboarding step. No changes.
 
 **Screen 4: Proof Simulation Prompt**
 ```
-"You've sat the ALE before. Let's see exactly where you stand today
+"You've sat the LEA before. Let's see exactly where you stand today
 — under exam conditions. A full simulation, your score delivered 24 hours later."
 
 [Start Proof Simulation]    [Skip for now]
@@ -244,7 +244,7 @@ Returning reviewers: gate bypassed. Offered Day 1.
 
 **Dashboard copy:**
 ```
-"Day 2 of the ALE requires sustained focus for 3+ hours.
+"Day 2 of the LEA requires sustained focus for 3+ hours.
 Your current Area C Window: [X] minutes.
 Today's session extends it to [X + 10%] minutes."
 ```
@@ -256,7 +256,7 @@ Today's session extends it to [X + 10%] minutes."
 
 **Tooltip on (?) icon:**
 ```
-"The ALE's Architectural Design component lasts 3+ hours.
+"The LEA's Architectural Design component lasts 3+ hours.
 Most first-time failures on Area C happen because students run out of time,
 not knowledge. This mechanic builds the cognitive stamina that Day 2 demands."
 ```
@@ -281,7 +281,7 @@ SlateCamp — Know you'll win.
 180mm min, 200mm max       PD 1096, Rule VII, §1202 — Stair Riser Heights
 
 [Hook text from wiki exam_tip]
-"The ALE often tests this as 'which of these stairways is non-compliant'
+"The LEA often tests this as 'which of these stairways is non-compliant'
 — any riser outside 180–200mm fails."
 ```
 
@@ -304,7 +304,7 @@ Complete 20 study sessions to unlock your personalized Cram Card
 ```
 ⚠️ [Subject Name] is at [X%]
 
-The ALE requires at least 50% in every subject to pass
+The LEA requires at least 50% in every subject to pass
 — regardless of your overall score. This subject will determine your result.
 
 Study [Subject Name] Now →
@@ -337,7 +337,7 @@ State color logic:
 ## Marketing Pages
 
 ### About Page
-- Philip's story (licensed architect, ALE journey, why SlateCamp exists)
+- Philip's story (licensed architect, LEA journey, why SlateCamp exists)
 - The camp metaphor explained
 - The pedagogical approach (IRT, mastery-based, anti-inflation scoring)
 - Team section (solo founder for now)

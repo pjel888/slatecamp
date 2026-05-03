@@ -4,7 +4,7 @@
 
 ## Overview
 
-The Readiness Score is SlateCamp's primary mastery metric for ALE preparation. It is a real-time, IRT-based computation that reflects a student's estimated probability of passing the board exam, not a raw percentage of questions answered correctly.
+The Readiness Score is SlateCamp's primary mastery metric for LEA preparation. It is a real-time, IRT-based computation that reflects a student's estimated probability of passing the board exam, not a raw percentage of questions answered correctly.
 
 **Source:** `src/lib/readiness-score.ts` (330 lines, pure function — no DB access)
 
@@ -38,7 +38,7 @@ The score is capped until a student demonstrates competence on Level 3 and Level
 
 ### 3. Grey Node Penalty
 
-Taxonomy nodes that a student has never encountered ("grey nodes" in the heatmap) apply a penalty to the overall score. Full coverage of the ALE taxonomy is required for a maximum score.
+Taxonomy nodes that a student has never encountered ("grey nodes" in the heatmap) apply a penalty to the overall score. Full coverage of the LEA taxonomy is required for a maximum score.
 
 ### 4. Bloom's Cognitive Level Ceiling
 

@@ -6,7 +6,7 @@
 -- 1. DISCIPLINES
 -- ────────────────────────────────────────────────────────────
 INSERT INTO disciplines (name, acronym)
-VALUES ('Architecture Licensure Exam', 'LEA')
+VALUES ('Licensure Examination for Architects', 'LEA')
 ON CONFLICT (name) DO NOTHING;
 
 -- ────────────────────────────────────────────────────────────

@@ -1,12 +1,12 @@
 {
-  "attempted_at": "2026-05-03T14:02:38.990Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-03T14:17:51.319Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
-  "blockers": [
-    "Failed to update wiki_articles.content: `apikey` request header or query parameter is either missing or invalid. Double check your Supabase `anon` or `service_role` API key."
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
   ],
-  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "ba36cb75-5bb4-4d12-802c-f5ab921f7949",
   "slug": "prefabricated-constructions",

@@ -1,12 +1,12 @@
 {
-  "attempted_at": "2026-05-03T14:02:34.791Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-03T14:17:56.088Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
-  "blockers": [
-    "Failed to update wiki_articles.content: Bad Request"
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
   ],
-  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "66b5fe8b-8fda-4483-aa77-37d52adec286",
   "slug": "vertical-openings-and-floor-roof-construction",

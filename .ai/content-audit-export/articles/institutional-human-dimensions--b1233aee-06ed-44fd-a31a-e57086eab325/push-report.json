@@ -1,12 +1,12 @@
 {
-  "attempted_at": "2026-05-03T14:02:47.372Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-03T14:17:39.403Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
-  "blockers": [
-    "Failed to update wiki_articles.content: `apikey` request header or query parameter is either missing or invalid. Double check your Supabase `anon` or `service_role` API key."
+  "blockers": [],
+  "warnings": [
+    "Dry-run mode: no Supabase mutation will be performed."
   ],
-  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "b1233aee-06ed-44fd-a31a-e57086eab325",
   "slug": "institutional-human-dimensions",

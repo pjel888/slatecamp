@@ -36,7 +36,7 @@ test.describe('demo-auth wiki learning flow', () => {
       timeout: 60000,
     })
     await expect(
-      page.getByRole('heading', { name: /^Demo ALE Foundations$/ }).first(),
+      page.getByRole('heading', { name: /^Demo LEA Foundations$/ }).first(),
     ).toBeVisible({ timeout: 60000 })
     await expect(
       page.getByRole('heading', { name: /Core Rule/i }),
