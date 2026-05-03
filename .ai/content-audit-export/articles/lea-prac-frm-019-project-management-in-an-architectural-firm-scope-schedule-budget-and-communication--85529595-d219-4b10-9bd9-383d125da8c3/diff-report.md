@@ -1,9 +1,9 @@
 # Content Diff Report: lea-prac-frm-019-project-management-in-an-architectural-firm-scope-schedule-budget-and-communication-control
 
-Generated: 2026-05-03T07:49:05.198Z
+Generated: 2026-05-03T11:49:57.210Z
 Article ID: 85529595-d219-4b10-9bd9-383d125da8c3
 Changed: true
-Safe to push locally: false
+Safe to push locally: true
 
 ## Hashes
 
@@ -19,14 +19,14 @@ Safe to push locally: false
 
 ## UI block preservation
 
-- UI blocks expected: 3
-- UI blocks preserved: 2
-- UI blocks changed/missing: 1
+- UI blocks expected: 1
+- UI blocks preserved: 1
+- UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate is missing 1 preserved UI block(s).
+- None
 
 ## Warnings
 

@@ -68,7 +68,6 @@ Standard 180° hooks are most common in Philippine construction for negative mom
 Hook memory: 180° = 4_db_ min 65mm (small bend, short extension). 90° longitudinal = 12_db_ (wide bend, long extension). Stirrup 90° ≤16mm = 4_db_ inside (tight bend). Seismic 135° = 6_db_ with min 75mm extension (mandatory minimum). Bend diameter increases with bar size: 6_db_ (10–25mm), 8_db_ (28–32mm), 10_db_ (36mm).
 </Tip>
 
-
 ## Related Articles
 
 See also: **Concrete Cover** (lea-strc-007-01) for how hooks relate to cover requirements, **Deformed Bars** (lea-strc-006-02) for the bar sizes used with hooks, and **Column Ties** (lea-strc-007-04) for seismic hook requirements in columns.
@@ -77,4 +76,3 @@ See also: **Concrete Cover** (lea-strc-007-01) for how hooks relate to cover req
 
 <Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
 
-<WikiMistakeList mistakes={[ "Seismic hook = 90° — WRONG. Seismic/SMRF hoops = 135° bend angle (ERR-STRC-014).", "180° hook = 12_db_ or 40mm min — WRONG. Always 4_db_ (min 65mm) (ERR-STRC-021).", "All stirrup hooks = 4_db_ inside diameter — WRONG. Only ≤16mm ties; 20–25mm ties = 6_db_.", "Seismic hook extension = 6_db_ only (no mm minimum) — WRONG. Per ACI 318-19 Section 25.3.4, must be 6_db_ AND min 75mm (take the larger). This requirement applies to columns with Pu > 0.3Agf'c or f'c > 70 MPa.", "Longitudinal 90° hook = 6_db_ — WRONG. Longitudinal 90° hook: inside diameter = 12_db_, extension = 12_db_. Stirrup 90° hook ≤16mm: inside diameter = 4_db_, extension = 6_db_. Stirrup 90° hook 20–25mm: inside diameter = 6_db_, extension = 12_db_.", "Inside bend diameter irrelevant to hook type — WRONG. Inside diameter (4_db_, 6_db_, 10_db_) varies by bar size and is critical to prevent concrete crushing." ]} />

@@ -1,15 +1,15 @@
 # Content Diff Report: lea-prac-frm-007-reciprocity-principles-in-architectural-practice
 
-Generated: 2026-05-03T10:55:14.319Z
+Generated: 2026-05-03T11:51:03.108Z
 Article ID: e51e9a56-7251-460e-8d00-5feaa3884f0a
 Changed: true
-Safe to push locally: false
+Safe to push locally: true
 
 ## Hashes
 
 - Original: `sha256:f02a03bc084eabf57214e8ba72cbac9f819a6b8f19135e53910b590946376209`
-- Normalized: `sha256:56be0712a380d531c83ff06bfe1a25c1e60b8b8cee311f33eae520b129525a1e`
-- Candidate: `sha256:eb0683b796c4c8f85d026b03a4e686652bdf303cb67b17e9fa2e792b7d92d7b5`
+- Normalized: `sha256:2ed6f41df0f6fd6b5ca291fc77499e3c253e67391fe374cc29aa2c1f970f50c9`
+- Candidate: `sha256:2252ca4f380b936171b1fc6ffaa7fc12c3890d78a45ef61da00df7775efc2b2b`
 
 ## Line summary
 
@@ -26,7 +26,7 @@ Safe to push locally: false
 
 ## Blockers
 
-- original.md hash does not match article metadata export hash.
+- None
 
 ## Warnings
 

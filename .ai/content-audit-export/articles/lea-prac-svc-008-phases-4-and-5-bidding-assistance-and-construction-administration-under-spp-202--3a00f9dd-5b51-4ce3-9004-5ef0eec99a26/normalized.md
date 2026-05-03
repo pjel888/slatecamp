@@ -6,7 +6,7 @@ After reading this article, you should be able to:
 - Describe the Bidding or Negotiation Phase activities: bid document preparation, pre-bid conference, bid analysis, and award recommendation.
 - Describe the Construction Administration Phase activities: site visits, payment certification, change order review, and project closeout.
 - Distinguish the Architect's role in bidding assistance from the construction administration role.
-- Apply Phases 5 and 6 requirements to ALE scenarios involving bid evaluation, contract award, and construction-phase services.
+- Apply Phases 5 and 6 requirements to LEA scenarios involving bid evaluation, contract award, and construction-phase services.
 
 SPP 202 identifies six phases of regular design services: Project Definition Phase, Schematic Design Phase, Design Development Phase, Contract Documents Phase, Bidding or Negotiation Phase, and Construction Phase. Bidding Assistance and Construction Administration are the fifth and sixth phases.—complete the architect's engagement with the project. According to SPP 202, the Contract Documents Phase represents 90% of the architect's total design fees. The specific percentage allocations for Bidding Assistance and Construction Administration phases are not explicitly detailed in SPP 202 as separate percentages.
 

@@ -364,15 +364,7 @@ For buildings in isokeraunic zones >50 days/year (most of Philippines):
 
 ## Common Mistakes and Corrections
 
-[SLATECAMP_UI_BLOCK:ui_0007 component="WikiMistakeList" status="unknown"]
-Extracted summary:
-- Props: mistakes="{[{\"mistake\": \"Using only one down conductor on a building. Single point of failure means entire structure unprotected if that conductor fails during strike.\",\"correction\": \"Install minimum two independent down conductors per PEC Article 2.50. Preferred: one per corner of rectangular buildings. Ensures redundancy and current distribution.\"}", mistake=true, Accepting=true, ground=true, resistance=true
-- Text: 15 ohms. Marginal resistance increases voltage rise during strike, risking step and touch hazards.","correction": "Design grounding system to achieve ≤10 ohms. Use parallel rods, deep electrodes, or ring conductors combined. Test with clamp-on tester after installation."}, , , , ]} />
-[/SLATECAMP_UI_BLOCK]
-
-## Compliance with PEC and IEC 62305
-
-The Philippine Electrical Code (PEC) Part 2, Article 2.50 mandates lightning protection systems for structures exceeding 23 m (Class II per PEC Article 2.90) or in high-risk isokeraunic zones. The design process follows IEC 62305 methodology:
+EC) Part 2, Article 2.50 mandates lightning protection systems for structures exceeding 23 m (Class II per PEC Article 2.90) or in high-risk isokeraunic zones. The design process follows IEC 62305 methodology:
 
 **Design Steps (IEC 62305-2 Risk Analysis):**
 1. Determine lightning protection level based on risk assessment (Level I–IV)
@@ -405,9 +397,8 @@ See also within Electrical Systems: **lea-util-003-02-core-concept**, **lea-util
 
 > **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
 
-
 [SLATECAMP_UI_BLOCK:ui_e001 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Exam Tip — Apply electrical protection levels and the fault hierarchy —:** Building Utilities carries the heaviest weight in Area B. Focus on code-specific values (PEC ampacities, Revised Plumbing Code fixture units, NFPA spacing requirements) and regulatory triggers (when is a fire alarm mandatory? when is seismic bracing required?). Practice load computations and system sizing problems which appear regularly on the exam.
+- Text: **LEA Exam Tip — Apply electrical protection levels and the fault hierarchy —:** Building Utilities carries the heaviest weight in Area B. Focus on code-specific values (PEC ampacities, Revised Plumbing Code fixture units, NFPA spacing requirements) and regulatory triggers (when is a fire alarm mandatory? when is seismic bracing required?). Practice load computations and system sizing problems which appear regularly on the exam.
 [/SLATECAMP_UI_BLOCK]

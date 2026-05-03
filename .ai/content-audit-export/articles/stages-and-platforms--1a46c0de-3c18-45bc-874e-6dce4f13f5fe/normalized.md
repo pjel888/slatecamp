@@ -364,7 +364,7 @@ Cross-drill with **Article 22** (fire-extinguishing systems — sprinkler trigge
 
 ## Exam Tip
 
-ALE Trap: Platforms ≤ 1.20 m high are NOT classified as stages and do not require stage permits. Full stages require: proscenium wall (2-hour fire rating for stages > 200 m²), fire curtain, sprinklers, and separate dressing room egress. The 1.20 m threshold is the critical distinction.
+LEA Trap: Platforms ≤ 1.20 m high are NOT classified as stages and do not require stage permits. Full stages require: proscenium wall (2-hour fire rating for stages > 200 m²), fire curtain, sprinklers, and separate dressing room egress. The 1.20 m threshold is the critical distinction.
 
 ## Cross‑References
 

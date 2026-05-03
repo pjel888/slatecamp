@@ -1,9 +1,9 @@
 # Content Diff Report: lea-util-003-05-core-definitions-grounding-vs-bonding
 
-Generated: 2026-05-03T10:55:34.964Z
+Generated: 2026-05-03T11:49:13.426Z
 Article ID: 92be8354-f938-4307-a40c-4620c1381cba
 Changed: true
-Safe to push locally: false
+Safe to push locally: true
 
 ## Hashes
 
@@ -26,7 +26,7 @@ Safe to push locally: false
 
 ## Blockers
 
-- original.md hash does not match article metadata export hash.
+- None
 
 ## Warnings
 

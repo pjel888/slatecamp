@@ -1,9 +1,9 @@
 # Content Diff Report: lea-util-005-04-communication-protocols-technologies
 
-Generated: 2026-05-03T07:48:34.133Z
+Generated: 2026-05-03T11:49:40.711Z
 Article ID: f52e3126-774f-4eec-8456-8417769bb34a
 Changed: true
-Safe to push locally: false
+Safe to push locally: true
 
 ## Hashes
 
@@ -26,7 +26,7 @@ Safe to push locally: false
 
 ## Blockers
 
-- original.md hash does not match article metadata export hash.
+- None
 
 ## Warnings
 

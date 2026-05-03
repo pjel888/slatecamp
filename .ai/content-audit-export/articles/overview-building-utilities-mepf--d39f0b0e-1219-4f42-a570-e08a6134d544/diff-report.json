@@ -1,21 +1,21 @@
 {
   "article_id": "d39f0b0e-1219-4f42-a570-e08a6134d544",
   "slug": "overview-building-utilities-mepf",
-  "generated_at": "2026-05-03T10:55:41.104Z",
+  "generated_at": "2026-05-03T11:49:18.576Z",
   "old_hash": "sha256:0de56a93588fc7128d177998c5111b724f1fc7ffdd35ae63f775cd5cd10ef845",
-  "new_hash": "sha256:3c13c2e26094038f624357d1705fee88872129c2e21e6271a3f2808ab071a573",
+  "new_hash": "sha256:74bd756461912d83c4c43f11ecbcb04338be75b3a02bbf73726458b1e459748c",
   "original_hash": "sha256:0de56a93588fc7128d177998c5111b724f1fc7ffdd35ae63f775cd5cd10ef845",
-  "normalized_hash": "sha256:468c0cd4a211feaab0e5a1739b01a6f62af74f1a8b1e2b61ba2a2f1aff4a937e",
-  "candidate_hash": "sha256:3c13c2e26094038f624357d1705fee88872129c2e21e6271a3f2808ab071a573",
+  "normalized_hash": "sha256:2ae977aa0d71502429223cfb45e9b15624fca745838c441de11868f7bf5f51d0",
+  "candidate_hash": "sha256:74bd756461912d83c4c43f11ecbcb04338be75b3a02bbf73726458b1e459748c",
   "changed": true,
   "changed_line_count": 99,
   "inserted_line_count": 0,
   "deleted_line_count": 35,
-  "ui_blocks_original_count": 7,
+  "ui_blocks_original_count": 4,
   "ui_blocks_candidate_count": 4,
-  "ui_blocks_changed_count": 3,
-  "ui_blocks_count": 7,
-  "unresolved_placeholders_count": 1,
+  "ui_blocks_changed_count": 0,
+  "ui_blocks_count": 4,
+  "unresolved_placeholders_count": 0,
   "preserved_blocks_count": 4,
   "changed_text_summary": {
     "changed": 99,
@@ -25,21 +25,14 @@
     "candidate_line_count": 72
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0002",
-      "ui_0006",
-      "ui_0008"
-    ],
-    "changed_count": 3
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "Candidate is missing 3 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 3 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

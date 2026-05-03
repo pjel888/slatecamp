@@ -65,10 +65,10 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Priority — Key Punch List Rules:**
+- Text: **LEA Priority — Key Punch List Rules:**
   1. Created by architect at Substantial Completion inspection
   2. Minor items only (not substantial defects suggesting premature certification)
-  3. Contract — this distinction appears on every ALE cycle.
+  3. Contract — this distinction appears on every LEA cycle.
 [/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]

@@ -4,7 +4,7 @@
 
 ### Examination Format and Subject Areas
 
-The Architect Licensure Examination comprises multiple subject areas designed to assess comprehensive architectural competency across design, theory, history, building science, and professional practice. RA 9266, Section 15 specifies that the LEA shall consist of written examination covering the syllabi approved by the Board in consultation with the academe. The Board develops examination syllabi in coordination with the Commission on Higher Education (CHED) to ensure alignment with curriculum standards at recognized architecture schools. All examination questions fall within the scope of the official syllabus for each subject, ensuring fairness and transparency. The specific subjects and question allocation are determined by Board Resolution and published annually before examination dates.
+The Licensure Examination for Architects (LEA) comprises multiple subject areas designed to assess comprehensive architectural competency across design, theory, history, building science, and professional practice. RA 9266, Section 15 specifies that the LEA shall consist of written examination covering the syllabi approved by the Board in consultation with the academe. The Board develops examination syllabi in coordination with the Commission on Higher Education (CHED) to ensure alignment with curriculum standards at recognized architecture schools. All examination questions fall within the scope of the official syllabus for each subject, ensuring fairness and transparency. The specific subjects and question allocation are determined by Board Resolution and published annually before examination dates.
 
 ### Weighted Average and Minimum Passing Requirement
 

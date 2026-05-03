@@ -132,9 +132,11 @@ Building orientation influences cross-ventilation effectiveness through **wind e
 
 ## Common Mistakes
 
-<WikiMistakeCard mistake="Applying Temperate-Zone Solar Logic" correction="Assuming south-facing windows should capture winter sun for heating." context="In the Philippines, winter sun (altitude >59°) is still intense; minimizing south-west exposure is correct." />
-
-<WikiMistakeCard mistake="Neglecting East-West Exposure Risk" correction="Designing east or west-facing primary facades." context="These orientations increase cooling demand by 20–30%; a major liability in high-humidity Coronas Type II/IV climates." />
+ed"]
+Extracted summary:
+- Props: mistake="Neglecting East-West Exposure Risk", correction="Designing east or west-facing primary facades.", context="These orientations increase cooling demand by 20–30%; a major liability in high-humidity Coronas Type II/IV climates."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 <WikiMistakeList mistakes={["Under-Sizing Overhangs. Calculating overhang depth but failing to account for seasonal variation. A 1.0 m overhang may work for summer solstice but inadequately shade winter sun lower-angle sun on secondary facades.", "Ignoring Facade Aspect Ratio. Using identical window-to-wall ratios on all facades. Tropical design requires larger windows on north/south; minimal openings on east/west.", "Oversimplified Cardinal Orientation. Rigid adherence to true north-south orientation ignores Coronas climate-specific wind patterns. Type I climates benefit from 10–15° east deviation; Type II/IV may require different compromise.", "Missing Louver Articulation. Designing fixed overhangs instead of adjustable louvers. Horizontal louvers angled 60–70° from horizontal perform better than deep static cantilevers for high-altitude tropical sun."]} />
 

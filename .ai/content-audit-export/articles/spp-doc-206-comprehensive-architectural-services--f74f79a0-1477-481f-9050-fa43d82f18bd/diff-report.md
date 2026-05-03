@@ -1,6 +1,6 @@
 # Content Diff Report: spp-doc-206-comprehensive-architectural-services
 
-Generated: 2026-05-03T10:55:59.256Z
+Generated: 2026-05-03T11:49:32.997Z
 Article ID: f74f79a0-1477-481f-9050-fa43d82f18bd
 Changed: true
 Safe to push locally: true
@@ -8,8 +8,8 @@ Safe to push locally: true
 ## Hashes
 
 - Original: `sha256:8d72c537564f156cdce8e3fa5b18acffb45d0d8f71fdd8bb85eb1116cb718fc5`
-- Normalized: `sha256:33af67fb5d8ac8ed1454f7741d942b22923b40672f06a6846cd6fa07ddf34cb3`
-- Candidate: `sha256:8a3132f3f03a2ec2c0ba1413423a5061a4191b12657f5e782f20c9911f97a7b9`
+- Normalized: `sha256:3ee15bf7afe52aa325318114034afb14ae0284fc1ecc210594852e60ba37c23d`
+- Candidate: `sha256:afe99a19248ef4694d7634a8ca49bb4f8fd1b3e5aee6179afcaca3ae46053daa`
 
 ## Line summary
 

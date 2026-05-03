@@ -442,7 +442,7 @@ Which element is non-compliant, and with which Philippine standard?
 
 ## Exam Tip
 
-ALE Trap: The five critical dimensions for accessible design: vertical reach max = 1,830 mm (not 1,800!), forward reach max = 1,200 mm, side reach max = 1,370 mm, knee clearance min = 680 mm, wheelchair seat height = 460-500 mm. These are directly tested in BP 344 questions.
+LEA Trap: The five critical dimensions for accessible design: vertical reach max = 1,830 mm (not 1,800!), forward reach max = 1,200 mm, side reach max = 1,370 mm, knee clearance min = 680 mm, wheelchair seat height = 460-500 mm. These are directly tested in BP 344 questions.
 
 ## Cross‑References
 

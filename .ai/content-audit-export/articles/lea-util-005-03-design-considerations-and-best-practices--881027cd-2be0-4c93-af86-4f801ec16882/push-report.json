@@ -1,25 +1,21 @@
 {
-  "attempted_at": "2026-05-03T07:52:54.052Z",
+  "attempted_at": "2026-05-03T11:49:58.655Z",
   "dry_run": true,
   "apply": false,
   "pushed": false,
-  "blockers": [
-    "original.md hash does not match article metadata export hash.",
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
-  ],
+  "blockers": [],
   "warnings": [
     "Dry-run mode: no Supabase mutation will be performed."
   ],
   "updated_rows_count": 0,
   "article_id": "881027cd-2be0-4c93-af86-4f801ec16882",
   "slug": "lea-util-005-03-design-considerations-and-best-practices",
-  "preparation_actions": [],
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
   "remote_hash_before": "sha256:8a570e3a892889f97f8e9094f38b8a62c14177546fda8742ea85acc7632e0110",
   "original_hash": "sha256:8a570e3a892889f97f8e9094f38b8a62c14177546fda8742ea85acc7632e0110",
-  "candidate_hash": "sha256:2f1821882426989a8edb8e642a37a8e8e2e411e8b61da114d45b993914a4e157",
+  "candidate_hash": "sha256:d4d49a57d61dfbda705695e3e2c5e2ba0729e91c3a7105c87e171b8bb0d86f50",
   "stale_check_passed": true,
   "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
 }

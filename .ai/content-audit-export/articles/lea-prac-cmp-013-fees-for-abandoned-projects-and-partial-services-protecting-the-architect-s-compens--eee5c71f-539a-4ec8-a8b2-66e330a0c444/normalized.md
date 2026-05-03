@@ -15,8 +15,6 @@ After studying this article, you should be able to:
 - Identify the rules protecting the architect's compensation.
 - Apply abandonment compensation rules to exam scenarios.
 
-
-
 ### Definition of Abandoned Projects
 
 An abandoned project is one where the client discontinues the project before completion. The client may abandon during Schematic Design before committing to design direction; during Design Development before finalizing the scope and cost estimate; after Contract Documents are prepared but before construction begins; or during construction. The point of abandonment determines what design work has been completed and what compensation the architect has earned.
@@ -29,20 +27,17 @@ The key principle is that the architect receives compensation for completed desi
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="Callout" status="preserved"]
 
-
-\[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: **LEA Priority — Fee Computation:** Know the five compensation methods (percentage-of-PCC, MDPE, lump sum, per diem/retainer, reimbursable expenses). Master the sliding scale for Groups 1-3 (5%→4%→3%→
 \[/SLATECAMP_UI_BLOCK\]
-
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
 Extracted summary:
 - Props: code=irr, section=Architect's Guidelines / SPP 202, title=Fee Computation — Regulatory Basis
 - Text: Fee computation under the Architect's Guidelines follows SPP 202 classification groups and the DAEDS/DADS framework. The percentage-of-PCC method applies group-specific rates to Project Construction C...
 [/SLATECAMP_UI_BLOCK]
-
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="KeyValues" status="preserved"]
 Extracted summary:

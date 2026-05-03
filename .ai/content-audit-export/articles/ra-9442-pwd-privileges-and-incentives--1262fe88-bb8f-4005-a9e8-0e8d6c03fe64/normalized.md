@@ -85,14 +85,7 @@ Applies to (for PWD’s exclusive use):
 [SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
 Extracted summary:
 
-\[SLATECAMP_UI_BLOCK:ui_0005 component="Warn" status="preserved"]
-Extracted summary:
-- Props: 
-- Text: Common traps: confusing BP 344 with PD 1096, mixing up dimensions for ramps vs. stairs vs. handrails.
-\[/SLATECAMP_UI_BLOCK\]
-- Props: (none)
-- Text: Common traps: confusing BP 344 with PD 1096, mixing up dimensions for ramps v...
-[/SLATECAMP_UI_BLOCK]
+\
 - Domestic air/sea/land transport fares.[web:29]
 - Hotels, restaurants, recreation (cinemas, amusement).[web:29][web:32]
 - Funeral and burial services.[web:29]
@@ -133,15 +126,7 @@ Extracted summary:
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
 
-\[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: 
-- Text: **LEA Pattern:** Determine if a building meets accessibility requirements. Calculate accessible parking slots per standards.
-\[/SLATECAMP_UI_BLOCK\]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Pattern:** Determine if a building meets accessibility requirements. Ca...
-[/SLATECAMP_UI_BLOCK]
+\
 
 The exact penalty bands in your draft are too narrow.
 

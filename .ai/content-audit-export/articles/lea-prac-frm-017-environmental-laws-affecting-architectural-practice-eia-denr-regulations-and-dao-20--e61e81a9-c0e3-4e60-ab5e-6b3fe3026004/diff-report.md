@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-2003-30
 
-Generated: 2026-05-03T07:49:42.225Z
+Generated: 2026-05-03T11:50:09.919Z
 Article ID: e61e81a9-c0e3-4e60-ab5e-6b3fe3026004
 Changed: true
 Safe to push locally: false
@@ -8,25 +8,25 @@ Safe to push locally: false
 ## Hashes
 
 - Original: `sha256:d752fd311e62bbb631cbf7db9331429c04fc88c560d4fc7bf92818b9e27a3069`
-- Normalized: `sha256:8e89b7b042dab50d0ba7e864ff118de52fed1f4d368222f30f7ed1dd8a4b3f2b`
-- Candidate: `sha256:73cd05bec67f7f66f1db5f318bb1e733a96f7de000ce19fb85e20a111c0d0253`
+- Normalized: `sha256:8ad25bcd75180e24aa3296fe8cde5699eb85e31aedc87f45b17147c8a5ddc003`
+- Candidate: `sha256:72efb2c64a09f895e34b40eff3f268391ebec89f6e52a0fc899594bf4330349a`
 
 ## Line summary
 
-- Changed lines: 62
-- Inserted lines: 31
+- Changed lines: 68
+- Inserted lines: 37
 - Deleted lines: 0
 
 ## UI block preservation
 
-- UI blocks expected: 5
+- UI blocks expected: 4
 - UI blocks preserved: 4
-- UI blocks changed/missing: 1
-- Unresolved placeholders: 0
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- Candidate is missing 1 preserved UI block(s).
+- Candidate contains unresolved UI block placeholders.
 
 ## Warnings
 

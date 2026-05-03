@@ -51,11 +51,11 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Priority — Addenda Rules:**
+- Text: **LEA Priority — Addenda Rules:**
   1. Addenda must go to ALL bidders (equal information)
   2. Issued < 48 hours before deadline → extend deadline
   3. Addenda are sequentially numbered
-  4. Addenda b — this distinction appears on every ALE cycle.
+  4. Addenda b — this distinction appears on every LEA cycle.
 [/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes

@@ -33,3 +33,13 @@ _Article prepared in compliance with DOE resource assessments, Meralco grid inte
   maximum annual energy. Fixed horizontal arrays receive ~10% less; fixed
   south-facing tilted arrays at latitude optimize year-round performance.
 </Note>
+
+Extracted summary:
+- Props: title='Philippine Regulatory Framework' variant='info'
+- Text: Under the Renewable Energy Act (RA 9513) and DOE Circular DC2013-05-0009 (as amended by DC2026-02-0008 and subsequent circulars), grid-tied PV systems operate under net metering policy. Note: DC2026-02-0008 (issued February 2026) introduces mandatory energy storage requirements for variable renewable energy plants ≥10 MW. Excess generation is credited at the end-user rate (not the feed-in tariff). The National Electrical Code (NEC) and PEC (Philippine Electrical Code) requirements mandate instal
+[/SLATECAMP_UI_BLOCK:ui_0001 component="WikiCalloutBox" status="preserved"]
+
+Extracted summary:
+- Props: title='Incentives (as of 2026)' variant='success'
+- Text: Duty-free import and VAT exemption on PV equipment under RA 9513 (Renewable Energy Act) and DOE implementing rules (DNER 2021-02-0002). Regional electric cooperatives may offer rebates for connected members. Check with local government for property tax holidays on solar installations (some LGUs grant 5–10 year exemptions).
+[/SLATECAMP_UI_BLOCK:ui_0011 component="WikiCalloutBox" status="preserved"]

@@ -1,6 +1,6 @@
 ## Introduction
 ## Learning Goal
-After reading this article, you should understand the key concepts tested in the ALE for this topic, including relevant code provisions, dimensional standards, and common exam applications.
+After reading this article, you should understand the key concepts tested in the LEA for this topic, including relevant code provisions, dimensional standards, and common exam applications.
 
 The distinction between ethically permissible fee-sharing and prohibited kickbacks is one of the most subtle issues in professional practice. On the surface, they appear identical: an architect receives money from a third party (supplier, contractor, or referral source) based on recommending or engaging that party's services. However, ethical analysis depends on disclosure, client benefit, and absence of profit motive that compromises professional judgment.
 
@@ -408,7 +408,7 @@ The LEA examination tests disciplinary judgment about commission arrangements th
 
 ## About This Article
 
-This article is part of the SlateCamp Professional Practice Content Engine for LEA preparation. It synthesizes regulatory frameworks, case law principles, and professional standards into competency-based learning outcomes aligned with the Architecture Licensure Examination syllabus.
+This article is part of the SlateCamp Professional Practice Content Engine for LEA preparation. It synthesizes regulatory frameworks, case law principles, and professional standards into competency-based learning outcomes aligned with the Licensure Examination for Architects syllabus.
 
 **Revision History:**
 

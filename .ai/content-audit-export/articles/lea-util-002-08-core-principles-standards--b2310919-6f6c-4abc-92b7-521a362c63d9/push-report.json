@@ -1,10 +1,9 @@
 {
-  "attempted_at": "2026-05-03T07:52:27.058Z",
+  "attempted_at": "2026-05-03T11:49:45.394Z",
   "dry_run": true,
   "apply": false,
   "pushed": false,
   "blockers": [
-    "original.md hash does not match article metadata export hash.",
     "diff-report.json marks candidate unsafe.",
     "Candidate has unresolved placeholders.",
     "--all-safe skipped article because diff-report is unsafe."
@@ -15,10 +14,12 @@
   "updated_rows_count": 0,
   "article_id": "b2310919-6f6c-4abc-92b7-521a362c63d9",
   "slug": "lea-util-002-08-core-principles-standards",
-  "preparation_actions": [],
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
   "remote_hash_before": "sha256:45ce8d5e7554274a76155d96d0c01b2a6054b0358b109f96af91f35ec0eecb30",
   "original_hash": "sha256:45ce8d5e7554274a76155d96d0c01b2a6054b0358b109f96af91f35ec0eecb30",
-  "candidate_hash": "sha256:e8ed6224d08a9b2dc2758c674db460be00ab62ed716ac70a29f8c1cf634cf5a5",
+  "candidate_hash": "sha256:7413de99f050a9e4ae4cb207fcf44958a1a7b29c159ba170bd756a167359d11d",
   "stale_check_passed": true,
   "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
 }

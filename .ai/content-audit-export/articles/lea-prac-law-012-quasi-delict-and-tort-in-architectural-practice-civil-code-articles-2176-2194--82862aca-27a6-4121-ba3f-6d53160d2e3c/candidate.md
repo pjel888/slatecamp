@@ -54,3 +54,9 @@ Legal Basis: Civil Code of the Philippines, Articles 2176 (Quasi-Delict Definiti
 - [Signing and Sealing Rules](lea-prac-law-017)
 - [Code of Ethical Conduct](lea-prac-eth-001)
 - [Professional Practice Forms](lea-prac-frm-001)
+
+[SLATECAMP_UI_BLOCK:ui_0001 component="AuthorityContent" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK:ui_0001 component="AuthorityContent" status="preserved"]

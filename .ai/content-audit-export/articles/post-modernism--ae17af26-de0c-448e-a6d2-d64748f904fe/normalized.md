@@ -58,7 +58,7 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Trap:** "Post-Modernism means 'after Modernism' chronologically" — PARTIALLY TRUE but incomplete. Post-Modernism is a specific architectural movement defined by Venturi's Complexity and Contradi
+- Text: **LEA Trap:** "Post-Modernism means 'after Modernism' chronologically" — PARTIALLY TRUE but incomplete. Post-Modernism is a specific architectural movement defined by Venturi's Complexity and Contradi
 [/SLATECAMP_UI_BLOCK]
 
 

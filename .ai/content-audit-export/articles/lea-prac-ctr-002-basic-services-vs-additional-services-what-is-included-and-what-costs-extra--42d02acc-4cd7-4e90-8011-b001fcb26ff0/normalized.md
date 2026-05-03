@@ -32,7 +32,7 @@ The architect coordinates with structural, mechanical, electrical, and other dis
 [SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Watch — Frequent Test Point:** The most common exam question about Additional Services involves when the architect should notify the client about a service being outside Basic Services. The corr — this distinction appears on every ALE cycle.
+- Text: **LEA Watch — Frequent Test Point:** The most common exam question about Additional Services involves when the architect should notify the client about a service being outside Basic Services. The corr — this distinction appears on every LEA cycle.
 [/SLATECAMP_UI_BLOCK]
 
 ### Documentation of Additional Services

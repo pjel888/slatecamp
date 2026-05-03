@@ -193,12 +193,7 @@ Extracted summary:
 - Text: (none detected)
 [/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeList" status="unknown"]
-Extracted summary:
-- Props: title="Common Material Selection and Installation Errors", items=true, Using=true, high-absorption=true, stone=true, limestone=true
-- Text: 3%, travertine >5%) in exterior tropical exposure without sealing: Water absorption and freeze-thaw (or biological growth in tropical climate) will cause rapid degradation. Granite (≤0.4% absorption) or sealed marble is required for external exposure.",
-[/SLATECAMP_UI_BLOCK]
-    "Specifying marble for exterior applications: Marble's acid sensitivity and higher absorption make it unsuitable for exposed exterior in wet or industrial environments. Reserve marble for protected interior use.",
+ity and higher absorption make it unsuitable for exposed exterior in wet or industrial environments. Reserve marble for protected interior use.",
     "Confusing water absorption with durability: A stone with 2% absorption might be durable if properly sealed; a stone with 0.3% absorption is inherently durable. Always verify both absorption and protection measures.",
     "Neglecting back-up wall water management in stone veneer: Stone veneer does not stop water penetration; water will reach the backup wall at ventilation or control joint gaps. Proper drainage plane and flashing behind veneer is critical.",
     "Assuming all Romblon marble is equivalent: Romblon marble quality varies by quarry and depth; some sources have lower compressive strength or higher absorption. Verify material test reports, especially for critical applications."
@@ -210,9 +205,8 @@ See also within Masonry and Concrete: **lea-matl-002-03-core-concept**, **lea-ma
 
 > **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
 
-
 [SLATECAMP_UI_BLOCK:ui_e001 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Exam Tip — Identify natural stone types (granite, marble, limestone, sa:** This topic is heavily tested in Area B. Focus on mastering material classifications, key property values (compressive strength, R-value, unit weight), and estimating formulas. Create comparison tables to distinguish similar materials (e.g., cement Types I–V, glass types, insulation types). Practice computational problems for concrete volume, board foot, CHB count, and paint coverage — these are reliable exam items.
+- Text: **LEA Exam Tip — Identify natural stone types (granite, marble, limestone, sa:** This topic is heavily tested in Area B. Focus on mastering material classifications, key property values (compressive strength, R-value, unit weight), and estimating formulas. Create comparison tables to distinguish similar materials (e.g., cement Types I–V, glass types, insulation types). Practice computational problems for concrete volume, board foot, CHB count, and paint coverage — these are reliable exam items.
 [/SLATECAMP_UI_BLOCK]

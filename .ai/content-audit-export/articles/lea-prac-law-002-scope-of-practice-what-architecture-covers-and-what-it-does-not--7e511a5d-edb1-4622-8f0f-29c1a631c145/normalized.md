@@ -1,6 +1,6 @@
 ## Scope of Practice: What Architecture Covers and What It Does Not
 ## Learning Goal
-After reading this article, you should understand the key concepts tested in the ALE for this topic, including relevant code provisions, dimensional standards, and common exam applications.
+After reading this article, you should understand the key concepts tested in the LEA for this topic, including relevant code provisions, dimensional standards, and common exam applications.
 
 ### The Comprehensive Definition of Architectural Scope
 
@@ -117,7 +117,7 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: ⚠️ Common exam trap: confusing 'structural conceptualization' (architect scope — conceiving structural elements and their arrangement) with 'structural design documents' (engineer scope — calculations and signed/sealed structural plans). Architects lead structural thinking; engineers own structural accountability. — expect this as a trap answer on the ALE.
+- Text: ⚠️ Common exam trap: confusing 'structural conceptualization' (architect scope — conceiving structural elements and their arrangement) with 'structural design documents' (engineer scope — calculations and signed/sealed structural plans). Architects lead structural thinking; engineers own structural accountability. — expect this as a trap answer on the LEA.
 [/SLATECAMP_UI_BLOCK]
 
 

@@ -4,8 +4,8 @@
   "normalized_created_at": "2026-05-01T13:33:43.640Z",
   "parser_version": "ui-block-parser-v1",
   "original_content_hash": "sha256:7d0b8d12d5d105307e5f2ab9250b013b7a848af9d66cdd9d2ab7d7e60a700e95",
-  "normalized_content_hash": "a3c659fcb8d158f32e58285b8221c96207cf23f774352dce8aa049f09c87be4f",
-  "ui_block_count": 12,
+  "normalized_content_hash": "830d0002db6e6ceaa8b45d0e2ebc64d001b121c8d3582c89fd22ac62a798179e",
+  "ui_block_count": 11,
   "total_blocks": 12,
   "blocks": [
     {
@@ -169,30 +169,6 @@
       "status": "preserved"
     },
     {
-      "block_id": "ui_0008",
-      "block_type": "mdx_component",
-      "component_name": "ExamTip",
-      "raw": "<ExamTip>**Pattern 4: Specific Building Features**",
-      "raw_hash": "sha256:e4784b473b822f057e93a7eea2dfd176d2bce8867b601fa4a990ddeba84a9bef",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0008 component=\"ExamTip\" status=\"unknown\"]\nExtracted summary:\n- Props: (none)\n- Text: **Pattern 4: Specific Building Features**\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:e099772f11cc9df9d6108bcc720051366c1aeff9d060b3246d2b044aa1386e64",
-      "props": {},
-      "props_json": {},
-      "props_text": null,
-      "children_raw": null,
-      "children_text": "**Pattern 4: Specific Building Features**",
-      "start_offset": 7706,
-      "end_offset": 7756,
-      "line_start": 46,
-      "line_end": 46,
-      "parser_confidence": "low",
-      "parse_status": "unknown_block",
-      "warnings": [
-        "No closing tag found for ExamTip; preserved opening line as unknown custom block."
-      ],
-      "status": "unknown"
-    },
-    {
       "block_id": "ui_0009",
       "block_type": "mdx_component",
       "component_name": "WikiMistakeCard",
@@ -301,32 +277,7 @@
       "status": "preserved"
     }
   ],
-  "unknown_blocks": [
-    {
-      "block_id": "ui_0008",
-      "block_type": "mdx_component",
-      "component_name": "ExamTip",
-      "raw": "<ExamTip>**Pattern 4: Specific Building Features**",
-      "raw_hash": "sha256:e4784b473b822f057e93a7eea2dfd176d2bce8867b601fa4a990ddeba84a9bef",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0008 component=\"ExamTip\" status=\"unknown\"]\nExtracted summary:\n- Props: (none)\n- Text: **Pattern 4: Specific Building Features**\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:e099772f11cc9df9d6108bcc720051366c1aeff9d060b3246d2b044aa1386e64",
-      "props": {},
-      "props_json": {},
-      "props_text": null,
-      "children_raw": null,
-      "children_text": "**Pattern 4: Specific Building Features**",
-      "start_offset": 7706,
-      "end_offset": 7756,
-      "line_start": 46,
-      "line_end": 46,
-      "parser_confidence": "low",
-      "parse_status": "unknown_block",
-      "warnings": [
-        "No closing tag found for ExamTip; preserved opening line as unknown custom block."
-      ],
-      "status": "unknown"
-    }
-  ],
+  "unknown_blocks": [],
   "unresolved_critical_blocks": [],
   "ui_blocks_hash": "sha256:bcd92cb8ceac27f0aeb80cf69d33c43769f27e938c52ee8660ee94a1d2a902ce"
 }

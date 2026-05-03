@@ -370,7 +370,7 @@ Extracted summary:
 
 ## Exam Tip
 
-ALE Trap: Nine specialized services: Interior Design, Landscape Architecture, Acoustics, Lighting, Preservation, Space Planning, Urban Design, Graphic Design, Expert Witness. Compensation: per-diem, fixed fee, or lump sum — NOT percentage of construction cost (unless the basic services contract also uses percentage). Expert witness is the only one with a forensic/legal character.
+LEA Trap: Nine specialized services: Interior Design, Landscape Architecture, Acoustics, Lighting, Preservation, Space Planning, Urban Design, Graphic Design, Expert Witness. Compensation: per-diem, fixed fee, or lump sum — NOT percentage of construction cost (unless the basic services contract also uses percentage). Expert witness is the only one with a forensic/legal character.
 
 ## Cross‑References
 

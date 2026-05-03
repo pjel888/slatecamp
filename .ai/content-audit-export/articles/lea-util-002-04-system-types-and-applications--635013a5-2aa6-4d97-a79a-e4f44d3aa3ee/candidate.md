@@ -306,5 +306,5 @@ See also within HVAC and Mechanical Systems: **lea-util-002-03-core-concept**, *
 [SLATECAMP_UI_BLOCK:ui_e001 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Exam Tip — Distinguish HVAC system types (split-type, window-type, pack:** Building Utilities carries the heaviest weight in Area B. Focus on code-specific values (PEC ampacities, Revised Plumbing Code fixture units, NFPA spacing requirements) and regulatory triggers (when is a fire alarm mandatory? when is seismic bracing required?). Practice load computations and system sizing problems which appear regularly on the exam.
+- Text: **LEA Exam Tip — Distinguish HVAC system types (split-type, window-type, pack:** Building Utilities carries the heaviest weight in Area B. Focus on code-specific values (PEC ampacities, Revised Plumbing Code fixture units, NFPA spacing requirements) and regulatory triggers (when is a fire alarm mandatory? when is seismic bracing required?). Practice load computations and system sizing problems which appear regularly on the exam.
 [/SLATECAMP_UI_BLOCK]

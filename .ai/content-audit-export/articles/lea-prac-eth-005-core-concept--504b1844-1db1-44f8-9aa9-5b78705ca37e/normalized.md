@@ -6,7 +6,7 @@ After reading this article, you should be able to:
 - Explain the ethical prohibition on unfair fee competition and collusive fee-fixing agreements.
 - Describe the direct supervision requirement: the architect who signs and seals must have prepared or directly supervised the work.
 - Identify the obligation to respect other architects' existing commissions and not supplant them.
-- Apply professional-obligation standards to ALE scenarios involving fee competition, signing-sealing, and colleague relations.
+- Apply professional-obligation standards to LEA scenarios involving fee competition, signing-sealing, and colleague relations.
 
 The architect's obligation to the profession requires three things: **(1) refusing to compete through fee undercutting or unfair means, (2) respecting other architects' existing work assignments, and (3) never signing or sealing work that was not prepared under the architect's direct personal supervision.** These three rules protect profession integrity, individual architect reputations, and public safety.
 
@@ -52,7 +52,7 @@ The PRBoA (3 members: 1 Chairman + 2 Members per RA 9266 §4) monitors signing/s
 [SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: ⚠️ **Critical Exam Trap:** "Direct supervision" does NOT mean reviewing final documents. It means the architect personally directed the design process, made major decisions, and was available to review w... — expect this as a trap answer on the ALE.
+- Text: ⚠️ **Critical Exam Trap:** "Direct supervision" does NOT mean reviewing final documents. It means the architect personally directed the design process, made major decisions, and was available to review w... — expect this as a trap answer on the LEA.
 [/SLATECAMP_UI_BLOCK]
 
 ## How It's Tested
@@ -72,7 +72,7 @@ Architect A proposes 20M for a project. Architect B offers 12M for identical sco
 [SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Memory Aid:** "SSN" — (S)eal only work under direct supervision; (S)upervision must be personal and integral; (N)otify original architects of successor work. When a question involves signing sea — this distinction appears on every ALE cycle.
+- Text: **LEA Memory Aid:** "SSN" — (S)eal only work under direct supervision; (S)upervision must be personal and integral; (N)otify original architects of successor work. When a question involves signing sea — this distinction appears on every LEA cycle.
 [/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]

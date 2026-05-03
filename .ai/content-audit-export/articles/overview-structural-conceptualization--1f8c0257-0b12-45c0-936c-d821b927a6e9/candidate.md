@@ -4,7 +4,7 @@
 
 ## Learning Goal
 
-Master the structural principles tested in the ALE for Structural Conceptualization, including: statics and mechanics of materials, loads and load combinations (NSCP 2015), reinforced concrete, steel, timber, foundation systems, lateral force and seismic design, wind loads, masonry, composite structures, and structural drawing interpretation. By the end of this study map, you should understand the 12-subtopic dependency chain and the optimal study sequence.
+Master the structural principles tested in the LEA for Structural Conceptualization, including: statics and mechanics of materials, loads and load combinations (NSCP 2015), reinforced concrete, steel, timber, foundation systems, lateral force and seismic design, wind loads, masonry, composite structures, and structural drawing interpretation. By the end of this study map, you should understand the 12-subtopic dependency chain and the optimal study sequence.
 
 ## Subject Coverage
 
@@ -55,7 +55,7 @@ Practice reading **structural drawings** and applying NSCP provisions to multi-m
 - **Not practicing with actual structural drawings.** You need to read structural plans, identify column grids, read rebar schedules, and understand section cuts.
 - **Confusing NSCP chapters.** Chapter 2 = seismic, Chapter 4 = concrete, Chapter 5 = steel, Chapter 6 = timber, Chapter 7 = masonry.
 
-\[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: The 2015 edition (7th) is the current governing edition for PRC licensure purposes. Some review materials reference older editions — always cross-check against the 7th edition for load combinations, s

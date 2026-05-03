@@ -1,6 +1,6 @@
 # Content Diff Report: spp-doc-207-design-build-services
 
-Generated: 2026-05-03T07:50:05.281Z
+Generated: 2026-05-03T11:50:17.396Z
 Article ID: f76bad6c-4bdf-4d2c-bdfb-a3381c42e320
 Changed: true
 Safe to push locally: true
@@ -8,8 +8,8 @@ Safe to push locally: true
 ## Hashes
 
 - Original: `sha256:1e4bb1152dedc6ed3ca2bf9ee187e7ff5b9ad8eadad8236ea72ff6f7ece1d54a`
-- Normalized: `sha256:db11ed30840cba87a33872b244552709a2caab51c1e0204a09f3a06379c9c58d`
-- Candidate: `sha256:2f480054e1daff2d1f8970a63ddbfafbf9ecb79b25f0a862eed780fd6afd00b6`
+- Normalized: `sha256:b31c3eb6c0b53fa3c2f73112fda49e27e9171c982f4926f6bb97562e59f857fc`
+- Candidate: `sha256:1d80806d4aeb4dd0c1994185fc039cf5898e0f85256975a1cd18e998d41ef7f0`
 
 ## Line summary
 

@@ -6,7 +6,7 @@ After reading this article, you should be able to:
 - Define professional indemnity insurance and explain what claims it covers (negligence, errors, omissions) in architectural practice.
 - Identify typical coverage limitations and exclusions (fraud, intentional misconduct, unlicensed practice).
 - Distinguish between per-occurrence limits, aggregate limits, deductibles, and claims-made vs. occurrence-based policies.
-- Apply professional indemnity insurance concepts to ALE scenarios involving liability claims against architects.
+- Apply professional indemnity insurance concepts to LEA scenarios involving liability claims against architects.
 
 
 Professional indemnity insurance protects architects from claims arising from negligence or errors in their professional services, covering legal costs and damages awarded to injured parties.

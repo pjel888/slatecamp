@@ -1,15 +1,15 @@
 # Content Diff Report: lea-prac-frm-004-joint-venture-in-architecture
 
-Generated: 2026-05-03T10:55:48.584Z
+Generated: 2026-05-03T11:49:24.842Z
 Article ID: 846e0ded-f254-441a-a9d2-67af1f617ba5
 Changed: true
-Safe to push locally: false
+Safe to push locally: true
 
 ## Hashes
 
 - Original: `sha256:c40c48feef5b4dd0df6bfd3080aec53aea235e461a9e5ba6ca70fc7db9d661d5`
-- Normalized: `sha256:20f8f21dd4f1f7d12c7475f97c6a10600d045025781589d1d67be746607ab412`
-- Candidate: `sha256:a5609d8bd27c87748d59b5b1bbee468250325be1e28955b7477eff0e2e0dac3f`
+- Normalized: `sha256:dfd1d6f46d91a7b39104f6b0f8dbd5c2aa41e7edd8b49d8954c4b82dee781837`
+- Candidate: `sha256:f04c063d55fc9108cca171e7273a14aecc77e5f027e9f8dce203da8d2f8e3799`
 
 ## Line summary
 
@@ -19,15 +19,14 @@ Safe to push locally: false
 
 ## UI block preservation
 
-- UI blocks expected: 2
+- UI blocks expected: 1
 - UI blocks preserved: 1
-- UI blocks changed/missing: 1
-- Unresolved placeholders: 1
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 1 preserved UI block(s).
+- None
 
 ## Warnings
 

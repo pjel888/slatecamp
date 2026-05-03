@@ -6,7 +6,7 @@ After reading this article, you should be able to:
 - Describe the PRBoA's quasi-judicial authority to investigate complaints against licensed architects under RA 9266 and the Code of Ethical Conduct.
 - Identify the four phases of the disciplinary process: complaint filing, formal investigation, administrative hearing, and appeal.
 - Explain the grounds for discipline, range of penalties (from reprimand to revocation), and the appeals process.
-- Apply disciplinary procedures to ALE scenarios involving professional misconduct, ethics violations, and Board jurisdiction.
+- Apply disciplinary procedures to LEA scenarios involving professional misconduct, ethics violations, and Board jurisdiction.
 
 The Professional Regulatory Board of Architecture (PRBoA), operating under the Professional Regulation Commission (PRC), possesses quasi-judicial authority to investigate complaints against licensed architects and licensed architects-in-training (RLAs). Understanding the disciplinary process is critical for LEA candidates because it establishes the mechanisms through which professional standards are enforced and protects both the public and the profession.
 
@@ -52,7 +52,7 @@ Prior to formal investigation, the PRBoA may:
 [SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Test Point:** Know that the PRBoA may dismiss a complaint before formal investigation if it lacks sufficient factual basis or is clearly frivolous. This is distinct from dismissal after investigation due to insufficient evidence — this distinction appears on every ALE cycle.
+- Text: **LEA Test Point:** Know that the PRBoA may dismiss a complaint before formal investigation if it lacks sufficient factual basis or is clearly frivolous. This is distinct from dismissal after investigation due to insufficient evidence — this distinction appears on every LEA cycle.
 [/SLATECAMP_UI_BLOCK]
 
 ## STEP 2: The Investigation Phase
@@ -194,7 +194,7 @@ A disciplinary decision includes:
 [SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Test Point:** The PRBoA decision must contain written findings and conclusions explaining the board's reasoning. A decision that merely announces punishment without explanation is vulnerable to appeal and may be reversed by higher courts — this distinction appears on every ALE cycle.
+- Text: **LEA Test Point:** The PRBoA decision must contain written findings and conclusions explaining the board's reasoning. A decision that merely announces punishment without explanation is vulnerable to appeal and may be reversed by higher courts — this distinction appears on every LEA cycle.
 [/SLATECAMP_UI_BLOCK]
 
 ## STEP 5: The Appeal Process
@@ -356,7 +356,7 @@ Understanding this process is essential for ethical practice because it establis
 
 ## About This Article
 
-This article is part of the SlateCamp Professional Practice Content Engine for LEA preparation. It synthesizes regulatory frameworks, case law principles, and professional standards into competency-based learning outcomes aligned with the Architecture Licensure Examination syllabus.
+This article is part of the SlateCamp Professional Practice Content Engine for LEA preparation. It synthesizes regulatory frameworks, case law principles, and professional standards into competency-based learning outcomes aligned with the Licensure Examination for Architects syllabus.
 
 **Revision History:**
 - 2026-03-22: Initial publication covering complaint, investigation, hearing, and appeal phases

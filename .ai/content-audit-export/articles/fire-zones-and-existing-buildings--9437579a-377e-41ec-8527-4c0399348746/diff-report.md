@@ -1,6 +1,6 @@
 # Content Diff Report: fire-zones-and-existing-buildings
 
-Generated: 2026-05-03T07:53:52.146Z
+Generated: 2026-05-03T11:50:22.228Z
 Article ID: 9437579a-377e-41ec-8527-4c0399348746
 Changed: true
 Safe to push locally: true
@@ -8,8 +8,8 @@ Safe to push locally: true
 ## Hashes
 
 - Original: `sha256:b365e17fe841d54651a317e0bc49b97ae8fc6f5563ff069eab9adee915747462`
-- Normalized: `sha256:c9f0760cf68863f7971a4f622b8310e4d02c1644af8198cc096c13b9f98c3355`
-- Candidate: `sha256:6b914c5d246bb34bfa181e6a35373d7a64c1938c40a869619c371d9fd0819c0c`
+- Normalized: `sha256:3340b0d130e2c03f319fa6befddeeef04179edefc6803edec13efc2bc176ab69`
+- Candidate: `sha256:e1465b14dd07344691a3f440f6a8ab0d35b34a134db31657bf0c20d5347f33bc`
 
 ## Line summary
 

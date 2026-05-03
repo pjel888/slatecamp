@@ -7,7 +7,6 @@ Barangay halls and small government buildings serve multiple administrative and 
 
 ---
 
-
 ## Core Concept
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
@@ -88,15 +87,7 @@ Barangay halls are the civic infrastructure linking national and local governmen
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
 
-\[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: 
-- Text: **LEA Pattern:** Identify the type of spatial organization from a plan — look for the organizing geometry.
-\[/SLATECAMP_UI_BLOCK\]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Pattern:** Identify the type of spatial organization from a plan — look...
-[/SLATECAMP_UI_BLOCK]
+\
 "A barangay hall with a 120-sqm multi-purpose hall plus administrative offices is classified as Group E or H depending on the dominant occupant load." 
 
 **Pattern 2: Population-Scaled Sizing**
@@ -108,7 +99,6 @@ Extracted summary:
 > **Memory Rule:** Captain = 9 sqm; SK = 10 sqm. Counter = 2.0m per 1k people. Exit width = 5.5 mm/person. Ramp = 1:20 (short) or 1:12 (long).
 
 ---
-
 
 **Exam Tip — ERR-DSGN-025:** Barangay halls have dual occupancy: administrative (Group D) + assembly (Group E/C if public meeting space). Calculate each component separately and use the most restrictive egress.
 

@@ -168,17 +168,7 @@ Extracted summary:
 
 #### Heat Detector Spacing
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="WikiExamTable" status="unknown"]
-Extracted summary:
-- Props: headers="{[\"Detector Type\", \"Spacing Center-to-Center\", \"Notes\"]}", rows=true, Fixed-temperature=true, typical=true, m=true, ft=true, NFPA=true, Section=true, site-specific=true, per=true, thermal=true, capacity=true
-- Text: 38°C ambient)", "6.1 m (20 ft) or less", "Reduce spacing; temperature rise rate is slower in hot ambient"]]} />
-[/SLATECAMP_UI_BLOCK]
-
----
-
-### Flame Detectors
-
-**Principle:** Detect infrared or ultraviolet radiation emitted by flames. Used in large, open spaces or outdoors where smoke detectors are impractical.
+et radiation emitted by flames. Used in large, open spaces or outdoors where smoke detectors are impractical.
 
 **Types:**
 - **Infrared (IR):** Senses heat radiation; responds in 4–8 seconds per NFPA 72
@@ -400,17 +390,7 @@ Extracted summary:
 
 ## Common Design Errors and Corrections
 
-[SLATECAMP_UI_BLOCK:ui_0010 component="WikiMistakeList" status="unknown"]
-Extracted summary:
-- Props: mistakes=true, Spacing=true, smoke=true, detectors=true, m=true, apart=true, to=true, reduce=true, cost=true, NFPA=true, specifies=true, maximum=true
-- Text: 21 m; adding expensive retrofit later", "Omitting fire alarm zones in mechanical rooms, electrical rooms; fire protection engineer finds non-compliance pre-occupancy", "Running fire alarm wiring in same conduit as power wiring; causes EMI nuisance alarms in addressable systems", "Not sizing backup battery for 24-hour standby; battery depletes during extended power outage", "Using ionization detectors instead of photoelectric in commercial spaces; higher false-alarm rate per RA 9514 preference"]}
-[/SLATECAMP_UI_BLOCK]
-
----
-
-## Worked Example: 6-Storey Office Building, Metro Manila
-
-**Building Parameters:**
+ing Parameters:**
 - 6 storeys (height ~21 m)
 - Each floor: 800 m² open-plan office + 200 m² core (toilets, mechanical, storage)
 - Occupant load: ~200 per floor (1,200 total)
@@ -505,9 +485,8 @@ See also within Fire Protection Systems: **lea-util-004-05-core-concept**, **lea
 
 > **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
 
-
 [SLATECAMP_UI_BLOCK:ui_e001 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Exam Tip — Identify when fire alarm systems are mandatory per RA 9514 (:** Building Utilities carries the heaviest weight in Area B. Focus on code-specific values (PEC ampacities, Revised Plumbing Code fixture units, NFPA spacing requirements) and regulatory triggers (when is a fire alarm mandatory? when is seismic bracing required?). Practice load computations and system sizing problems which appear regularly on the exam.
+- Text: **LEA Exam Tip — Identify when fire alarm systems are mandatory per RA 9514 (:** Building Utilities carries the heaviest weight in Area B. Focus on code-specific values (PEC ampacities, Revised Plumbing Code fixture units, NFPA spacing requirements) and regulatory triggers (when is a fire alarm mandatory? when is seismic bracing required?). Practice load computations and system sizing problems which appear regularly on the exam.
 [/SLATECAMP_UI_BLOCK]

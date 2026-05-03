@@ -1,15 +1,15 @@
 # Content Diff Report: overview-history-of-architecture
 
-Generated: 2026-05-03T10:55:20.651Z
+Generated: 2026-05-03T11:49:02.503Z
 Article ID: b58c3d7f-d8c1-434e-9c12-dc58b3645440
 Changed: true
-Safe to push locally: false
+Safe to push locally: true
 
 ## Hashes
 
 - Original: `sha256:3bab16d5ae0afff5115c89ee4260160467cf772049d384e1a8e429ebf73cf6f3`
-- Normalized: `sha256:aea156f0c971769210403618d9c6cc546e71499c36317ca0703aa460970e639d`
-- Candidate: `sha256:d8d2629600eb4093e8d7d8b0827dd774f54a433debe6a003f2c84dfefcc86bf8`
+- Normalized: `sha256:6a5ef34b9234d3c04a20abbb49beca63eaa21183ad3a400ebd62dbfeeba3d4b1`
+- Candidate: `sha256:75234eecd13f722fc2cf62871ac10f65e12807f34896033909bdc9b9a059e44f`
 
 ## Line summary
 
@@ -19,15 +19,14 @@ Safe to push locally: false
 
 ## UI block preservation
 
-- UI blocks expected: 5
+- UI blocks expected: 3
 - UI blocks preserved: 3
-- UI blocks changed/missing: 2
-- Unresolved placeholders: 1
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 2 preserved UI block(s).
+- None
 
 ## Warnings
 

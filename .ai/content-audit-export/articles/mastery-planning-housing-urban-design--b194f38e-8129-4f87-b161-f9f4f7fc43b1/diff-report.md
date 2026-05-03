@@ -1,15 +1,15 @@
 # Content Diff Report: mastery-planning-housing-urban-design
 
-Generated: 2026-05-03T10:55:51.738Z
+Generated: 2026-05-03T11:49:26.695Z
 Article ID: b194f38e-8129-4f87-b161-f9f4f7fc43b1
 Changed: true
-Safe to push locally: false
+Safe to push locally: true
 
 ## Hashes
 
 - Original: `sha256:df2ed82a182a1e82b7c2921bbf61f12fa064606f50e5165dfcf4910e6608405a`
-- Normalized: `sha256:fe15da43f995ff79c412e2b9a4958308cfdaa8d6d48335c2d48a7880c0b9ba6e`
-- Candidate: `sha256:4b1cdf69883d8db09b54825b43b2034d156f7292a727bdf92c87ba1f351c74f0`
+- Normalized: `sha256:4f998e6548a8ea05a9b1bd23d328e29fb90f0460a82dab1d1b92bb7201861548`
+- Candidate: `sha256:00665e2d28aa7fb89ee53d4eecaafbdb614f5de0ad56599af5728f4796d59a9c`
 
 ## Line summary
 
@@ -19,15 +19,14 @@ Safe to push locally: false
 
 ## UI block preservation
 
-- UI blocks expected: 4
+- UI blocks expected: 3
 - UI blocks preserved: 3
-- UI blocks changed/missing: 1
-- Unresolved placeholders: 1
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 1 preserved UI block(s).
+- None
 
 ## Warnings
 

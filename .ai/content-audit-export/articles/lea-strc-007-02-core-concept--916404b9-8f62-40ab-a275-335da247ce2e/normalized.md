@@ -70,10 +70,7 @@ Extracted summary:
 - Text: Hook memory: 180° = 4_db_ min 65mm (small bend, short extension). 90° longitudinal = 12_db_ (wide bend, long extension). Stirrup 90° ≤16mm = 4_db_ inside (tight bend). Seismic 135° = 6_db_ with min 75mm extension (mandatory minimum). Bend diameter increases with bar size: 6_db_ (10–25mm), 8_db_ (28–32mm), 10_db_ (36mm).
 - **Exam relevance:** High — expect at least one question on this topic per LEA set.
 
-
-
 [/SLATECAMP_UI_BLOCK]
-
 
 ## Related Articles
 
@@ -87,8 +84,3 @@ Extracted summary:
 - Text: These are frequently tested traps. Memorize them to avoid losing easy points on exam day.
 [/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes="{[\"Using a 90° hook where a seismic hook (135°) is required; SMRF columns and special seismic hoops require 135° hooks with 6_d_b_ extension.\",\"Confusing hook bend diameter for stirrups vs. longitudinal bars; stirrup 90° hook has inside diameter = 4_d_b_ (≤16 mm bar), longitudinal 90° hook has inside diameter = 12_d_b_.\",\"Assuming inside bend diameter is irrelevant to hook type; inside diameter (4_d_b_, 6_d_b_, 10_d_b_) varies by bar size and is critical to prevent concrete crushing.\",\"Forgetting that hook extension length depends on bar size and hook type; a 90° hook for a 20 mm stirrup has a 12_d_b_ extension, not 6_d_b_.\"]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]

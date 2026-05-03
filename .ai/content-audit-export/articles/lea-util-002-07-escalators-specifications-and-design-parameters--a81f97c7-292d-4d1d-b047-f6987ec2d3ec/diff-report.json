@@ -1,7 +1,7 @@
 {
   "article_id": "a81f97c7-292d-4d1d-b047-f6987ec2d3ec",
   "slug": "lea-util-002-07-escalators-specifications-and-design-parameters",
-  "generated_at": "2026-05-03T10:55:57.884Z",
+  "generated_at": "2026-05-03T11:49:31.800Z",
   "old_hash": "sha256:3c5ce4e0471d590f5f6c6cc93d690f4edd75dd4b148b70cff028ad256bddcbde",
   "new_hash": "sha256:98b74322889a82e87d40da284880172fef8e9d9544b65289edd1dd024b106276",
   "original_hash": "sha256:3c5ce4e0471d590f5f6c6cc93d690f4edd75dd4b148b70cff028ad256bddcbde",
@@ -28,13 +28,11 @@
     "missing_block_ids": [],
     "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "original.md hash does not match article metadata export hash."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: original.md hash does not match article metadata export hash."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

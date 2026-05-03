@@ -1,21 +1,21 @@
 {
   "article_id": "b194f38e-8129-4f87-b161-f9f4f7fc43b1",
   "slug": "mastery-planning-housing-urban-design",
-  "generated_at": "2026-05-03T10:55:51.738Z",
+  "generated_at": "2026-05-03T11:49:26.695Z",
   "old_hash": "sha256:df2ed82a182a1e82b7c2921bbf61f12fa064606f50e5165dfcf4910e6608405a",
-  "new_hash": "sha256:4b1cdf69883d8db09b54825b43b2034d156f7292a727bdf92c87ba1f351c74f0",
+  "new_hash": "sha256:00665e2d28aa7fb89ee53d4eecaafbdb614f5de0ad56599af5728f4796d59a9c",
   "original_hash": "sha256:df2ed82a182a1e82b7c2921bbf61f12fa064606f50e5165dfcf4910e6608405a",
-  "normalized_hash": "sha256:fe15da43f995ff79c412e2b9a4958308cfdaa8d6d48335c2d48a7880c0b9ba6e",
-  "candidate_hash": "sha256:4b1cdf69883d8db09b54825b43b2034d156f7292a727bdf92c87ba1f351c74f0",
+  "normalized_hash": "sha256:4f998e6548a8ea05a9b1bd23d328e29fb90f0460a82dab1d1b92bb7201861548",
+  "candidate_hash": "sha256:00665e2d28aa7fb89ee53d4eecaafbdb614f5de0ad56599af5728f4796d59a9c",
   "changed": true,
   "changed_line_count": 73,
   "inserted_line_count": 0,
   "deleted_line_count": 10,
-  "ui_blocks_original_count": 4,
+  "ui_blocks_original_count": 3,
   "ui_blocks_candidate_count": 3,
-  "ui_blocks_changed_count": 1,
-  "ui_blocks_count": 4,
-  "unresolved_placeholders_count": 1,
+  "ui_blocks_changed_count": 0,
+  "ui_blocks_count": 3,
+  "unresolved_placeholders_count": 0,
   "preserved_blocks_count": 3,
   "changed_text_summary": {
     "changed": 73,
@@ -25,19 +25,14 @@
     "candidate_line_count": 97
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0002"
-    ],
-    "changed_count": 1
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "Candidate is missing 1 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 1 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

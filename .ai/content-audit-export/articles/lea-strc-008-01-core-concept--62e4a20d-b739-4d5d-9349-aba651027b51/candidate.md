@@ -59,7 +59,6 @@ _Tests vocabulary: splice plates, gusset plate (if needed), and fasteners. Reinf
 
 <Tip>KL/r = 200 for compression; KL/r ≤ 300 (preferred) for tension. If a problem says slenderness is high, ask: is it a compression member (fail) or tension member (check 300 limit)?</Tip>
 
-
 ## Related Articles
 
 See also: **Bolted Connections** (lea-strc-008-02) for how steel members are joined, **Structural Design Capacity** (lea-strc-005-02) for steel member capacity checks, and **Trusses** (lea-strc-002-05) for typical steel truss applications.
@@ -67,4 +66,3 @@ See also: **Bolted Connections** (lea-strc-008-02) for how steel members are joi
 ## Common Mistakes
 <Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
 
-<WikiMistakeList mistakes={["Confusing W-section flange width with height: W sections are identified as W(depth)×(unit weight); a W460×89 is 460 mm deep, not wide.","Applying the compression KL/r limit (200) to tension members: tension allows KL/r ≤ 300 (preferred); no AISC limit for tension > 300, but design judgment advised.","Treating gusset plates as load-carrying members: gusset plates are _transition_ geometry; they concentrate stress and require local analysis.","Ignoring section orientation: a C-channel is stronger with web vertical (I-like bending) than horizontal; always check intended use.","Assuming all built-up sections are more efficient: built-up sections are heavier and require field welding; use only when rolled shapes cannot fit."]} />

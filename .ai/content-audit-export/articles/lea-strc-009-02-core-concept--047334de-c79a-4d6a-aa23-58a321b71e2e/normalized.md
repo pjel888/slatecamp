@@ -35,13 +35,7 @@ Extracted summary:
 - _Adjustment_: Design tables account for moisture content (green vs. dry). Green timber (≥19% moisture) has lower allowable stresses than kiln-dried (≤15%).
 
 ### Wood Product Density Classifications
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiExamTable" status="unknown"]
-Extracted summary:
-- Props: headers="{[\"Product\", \"Density Range\", \"Typical Use\"]}", rows=true, Fiberboard=true
-- Text: 160 to &lt;497 kg/m³", "Thermal/acoustic insulation, underlayment"],
-[/SLATECAMP_UI_BLOCK]
-    ["Hardboard", "≥497 kg/m³", "Underlayment, sheathing, lining"],
-    ["Solid Lumber", "Varies by species", "Beams, joists, columns, primary structure"]
+  ["Solid Lumber", "Varies by species", "Beams, joists, columns, primary structure"]
   ]}
 />
 
@@ -77,10 +71,7 @@ Extracted summary:
 - Text: Group I = highest capacity (Yakal, Molave); Group IV = lowest (White Lauan, Red Balau). Always verify the specific group from the design manual or code supplement.
 - **Exam relevance:** High — expect at least one question on this topic per LEA set.
 
-
-
 [/SLATECAMP_UI_BLOCK]
-
 
 ## Related Articles
 

@@ -6,7 +6,7 @@ After reading this article, you should be able to:
 - Explain the general rule that fee competition among architects is legal and ethical.
 - Identify prohibited anti-competitive practices: collusive fee-fixing, predatory pricing, and deceptive fee practices.
 - Distinguish ethical fee discounting from unethical practices that compromise professional standards.
-- Apply fee competition rules to ALE scenarios involving minimum fee schedules, competitive bidding, and professional standards.
+- Apply fee competition rules to LEA scenarios involving minimum fee schedules, competitive bidding, and professional standards.
 
 The relationship between professional ethics and fair competition in architecture creates tension: architects must maintain professional standards while competing fairly with one another for projects and fees. This article examines the ethical limits on fee competition, restrictions on setting minimum fees, and the distinction between competitive fee structures and unethical cost-cutting.
 
@@ -452,7 +452,7 @@ The Philippine Competition Act (RA 10667) specifically addresses anti-competitiv
 
 ## About This Article
 
-This article is part of the SlateCamp Professional Practice Content Engine for LEA preparation. It synthesizes regulatory frameworks, case law principles, and professional standards into competency-based learning outcomes aligned with the Architecture Licensure Examination syllabus.
+This article is part of the SlateCamp Professional Practice Content Engine for LEA preparation. It synthesizes regulatory frameworks, case law principles, and professional standards into competency-based learning outcomes aligned with the Licensure Examination for Architects syllabus.
 
 **Revision History:**
 - 2026-03-22: Initial publication covering professional licensing and registration requirements

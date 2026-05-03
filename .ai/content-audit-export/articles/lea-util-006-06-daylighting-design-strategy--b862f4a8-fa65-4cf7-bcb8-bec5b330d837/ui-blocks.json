@@ -4,7 +4,7 @@
   "normalized_created_at": "2026-05-01T13:33:43.701Z",
   "parser_version": "ui-block-parser-v1",
   "original_content_hash": "sha256:fc6a16f0526b22c2b3813de3d9f0d6b06520a966ca518f157ad72323ab9e9b38",
-  "normalized_content_hash": "24c2b7e15e4cb51902820e68e527d78114b7f06ba04ffd5b684b9e8703d34b40",
+  "normalized_content_hash": "9e0ce7409914796ad356091fbc3f50ede89e6c0cbf41c9e097a502baf63d125e",
   "ui_block_count": 2,
   "total_blocks": 2,
   "blocks": [
@@ -12,9 +12,9 @@
       "block_id": "ui_0001",
       "block_type": "mdx_component",
       "component_name": "InfoBox",
-      "raw": "<InfoBox title=\"Key Takeaway\" type=\"success\">Natural daylight integration with intelligent artificial lighting controls reduces energy consumption by 30\u201350% in perimeter zones while improving occupant visual comfort and wellbeing. PD 1096 Rule VIII and the Philippine Green Building Code establish minimum daylighting and maximum lighting power density standards; design coordination between orientation, shading, sensor placement, and control logic ensures compliance and operational efficiency in tropical climates.</InfoBox>",
+      "raw": "<InfoBox title=\"Key Takeaway\" type=\"success\">Natural daylight integration with intelligent artificial lighting controls reduces energy consumption by 30–50% in perimeter zones while improving occupant visual comfort and wellbeing. PD 1096 Rule VIII and the Philippine Green Building Code establish minimum daylighting and maximum lighting power density standards; design coordination between orientation, shading, sensor placement, and control logic ensures compliance and operational efficiency in tropical climates.</InfoBox>",
       "raw_hash": "sha256:2049efef1e457783ef3c7fee5389b419fa1a8486f69a861644de32d88937b280",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"InfoBox\" status=\"preserved\"]\nExtracted summary:\n- Props: title=\"Key Takeaway\", type=\"success\"\n- Text: Natural daylight integration with intelligent artificial lighting controls reduces energy consumption by 30\u201350% in perimeter zones while improving occupant visual comfort and wellbeing. PD 1096 Rule VIII and the Philippine Green Building Code establish minimum daylighting and maximum lighting power density standards; design coordination between orientation, shading, sensor placement, and control logic ensures compliance and operational efficiency in tropical climates.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"InfoBox\" status=\"preserved\"]\nExtracted summary:\n- Props: title=\"Key Takeaway\", type=\"success\"\n- Text: Natural daylight integration with intelligent artificial lighting controls reduces energy consumption by 30–50% in perimeter zones while improving occupant visual comfort and wellbeing. PD 1096 Rule VIII and the Philippine Green Building Code establish minimum daylighting and maximum lighting power density standards; design coordination between orientation, shading, sensor placement, and control logic ensures compliance and operational efficiency in tropical climates.\n[/SLATECAMP_UI_BLOCK]",
       "placeholder_hash": "sha256:900e364b16a35b3ba15dcc6b6ff7c328a74adf75c736957101d96ef917a3c74e",
       "props": {
         "title": "Key Takeaway",
@@ -25,8 +25,8 @@
         "type": "success"
       },
       "props_text": "title=\"Key Takeaway\" type=\"success\"",
-      "children_raw": "Natural daylight integration with intelligent artificial lighting controls reduces energy consumption by 30\u201350% in perimeter zones while improving occupant visual comfort and wellbeing. PD 1096 Rule VIII and the Philippine Green Building Code establish minimum daylighting and maximum lighting power density standards; design coordination between orientation, shading, sensor placement, and control logic ensures compliance and operational efficiency in tropical climates.",
-      "children_text": "Natural daylight integration with intelligent artificial lighting controls reduces energy consumption by 30\u201350% in perimeter zones while improving occupant visual comfort and wellbeing. PD 1096 Rule VIII and the Philippine Green Building Code establish minimum daylighting and maximum lighting power density standards; design coordination between orientation, shading, sensor placement, and control logic ensures compliance and operational efficiency in tropical climates.",
+      "children_raw": "Natural daylight integration with intelligent artificial lighting controls reduces energy consumption by 30–50% in perimeter zones while improving occupant visual comfort and wellbeing. PD 1096 Rule VIII and the Philippine Green Building Code establish minimum daylighting and maximum lighting power density standards; design coordination between orientation, shading, sensor placement, and control logic ensures compliance and operational efficiency in tropical climates.",
+      "children_text": "Natural daylight integration with intelligent artificial lighting controls reduces energy consumption by 30–50% in perimeter zones while improving occupant visual comfort and wellbeing. PD 1096 Rule VIII and the Philippine Green Building Code establish minimum daylighting and maximum lighting power density standards; design coordination between orientation, shading, sensor placement, and control logic ensures compliance and operational efficiency in tropical climates.",
       "start_offset": 16871,
       "end_offset": 17398,
       "line_start": 226,
@@ -40,9 +40,9 @@
       "block_id": "ui_0002",
       "block_type": "mdx_component",
       "component_name": "Leart",
-      "raw": "<Leart type=\"note\">For tropical climates, specify daylight harvesting setpoints with \u00b115\u201320% seasonal adjustment to account for monsoon-induced variation in baseline illuminance. Manual override controls enable occupant adaptation to unexpected weather changes and personal lighting preferences.</Leart>",
+      "raw": "<Leart type=\"note\">For tropical climates, specify daylight harvesting setpoints with ±15–20% seasonal adjustment to account for monsoon-induced variation in baseline illuminance. Manual override controls enable occupant adaptation to unexpected weather changes and personal lighting preferences.</Leart>",
       "raw_hash": "sha256:3b6956829ac26bdc843adf9889f9e86e00ff0bd8511990a40eecdb9c310d0105",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"Leart\" status=\"preserved\"]\nExtracted summary:\n- Props: type=\"note\"\n- Text: For tropical climates, specify daylight harvesting setpoints with \u00b115\u201320% seasonal adjustment to account for monsoon-induced variation in baseline illuminance. Manual override controls enable occupant adaptation to unexpected weather changes and personal lighting preferences.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"Leart\" status=\"preserved\"]\nExtracted summary:\n- Props: type=\"note\"\n- Text: For tropical climates, specify daylight harvesting setpoints with ±15–20% seasonal adjustment to account for monsoon-induced variation in baseline illuminance. Manual override controls enable occupant adaptation to unexpected weather changes and personal lighting preferences.\n[/SLATECAMP_UI_BLOCK]",
       "placeholder_hash": "sha256:97e3d938c91bc8d515b2e0b5e13ce693b09b0ffeb9dd1313c6efc9fda96bbca5",
       "props": {
         "type": "note"
@@ -51,8 +51,8 @@
         "type": "note"
       },
       "props_text": "type=\"note\"",
-      "children_raw": "For tropical climates, specify daylight harvesting setpoints with \u00b115\u201320% seasonal adjustment to account for monsoon-induced variation in baseline illuminance. Manual override controls enable occupant adaptation to unexpected weather changes and personal lighting preferences.",
-      "children_text": "For tropical climates, specify daylight harvesting setpoints with \u00b115\u201320% seasonal adjustment to account for monsoon-induced variation in baseline illuminance. Manual override controls enable occupant adaptation to unexpected weather changes and personal lighting preferences.",
+      "children_raw": "For tropical climates, specify daylight harvesting setpoints with ±15–20% seasonal adjustment to account for monsoon-induced variation in baseline illuminance. Manual override controls enable occupant adaptation to unexpected weather changes and personal lighting preferences.",
+      "children_text": "For tropical climates, specify daylight harvesting setpoints with ±15–20% seasonal adjustment to account for monsoon-induced variation in baseline illuminance. Manual override controls enable occupant adaptation to unexpected weather changes and personal lighting preferences.",
       "start_offset": 17400,
       "end_offset": 17703,
       "line_start": 228,

@@ -1,6 +1,6 @@
 # Content Diff Report: lea-plan-005-04-core-concept
 
-Generated: 2026-05-03T07:49:26.534Z
+Generated: 2026-05-03T11:50:03.497Z
 Article ID: f6b1d119-9ba2-436b-ba39-d62abceef5ed
 Changed: true
 Safe to push locally: true

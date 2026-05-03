@@ -1,7 +1,7 @@
 {
   "article_id": "319c1e17-e0c6-409d-9886-c8a85ecaf747",
   "slug": "lea-util-003-04-wire-insulation-types-and-ratings",
-  "generated_at": "2026-05-03T07:49:17.328Z",
+  "generated_at": "2026-05-03T11:49:59.072Z",
   "old_hash": "sha256:3ff8e56b7599e821a0e4c0eb5e2f0b7e700d104812fabcd96c850c5015d027fd",
   "new_hash": "sha256:976ef7613d0f181a40cf74a51293fe09f8adc6da9fee08895acab0b4f55686f6",
   "original_hash": "sha256:3ff8e56b7599e821a0e4c0eb5e2f0b7e700d104812fabcd96c850c5015d027fd",
@@ -28,13 +28,11 @@
     "missing_block_ids": [],
     "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "original.md hash does not match article metadata export hash."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: original.md hash does not match article metadata export hash."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

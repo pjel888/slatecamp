@@ -4,7 +4,7 @@
   "normalized_created_at": "2026-05-01T13:33:43.989Z",
   "parser_version": "ui-block-parser-v1",
   "original_content_hash": "sha256:e9d93a57df5fe612f6f1154e5bccad8e3d903f43597fa2248fc2da8267e8eca3",
-  "normalized_content_hash": "d5b95fe6fee7e57933a0750d74fc5d4b602321b20447a66ada5d2720b1537217",
+  "normalized_content_hash": "5b96d950fd477ef8df79470305f9157b3a674103b28f5207f59a3a33cbea2d8c",
   "ui_block_count": 4,
   "total_blocks": 2,
   "blocks": [
@@ -33,7 +33,7 @@
     {
       "block_id": "ui_0003",
       "component_name": "LawCallout",
-      "raw": "<LawCallout code=\"ra9266\" section=\"PRBoA Res. No. 02, Series of 2006\" title=\"The Architect's Credo \u2014 Legal Status\">\nThe Architect's Credo is promulgated under PRBoA authority. It is a mandatory recitation but is aspirational rather than directly enforceable through discipline. Violations of the Credo alone cannot trigger suspension or revocation \u2014 only Code violations can. However, the Credo is used as supporting evidence in character evaluations during disciplinary proceedings.\n</LawCallout>",
+      "raw": "<LawCallout code=\"ra9266\" section=\"PRBoA Res. No. 02, Series of 2006\" title=\"The Architect's Credo — Legal Status\">\nThe Architect's Credo is promulgated under PRBoA authority. It is a mandatory recitation but is aspirational rather than directly enforceable through discipline. Violations of the Credo alone cannot trigger suspension or revocation — only Code violations can. However, the Credo is used as supporting evidence in character evaluations during disciplinary proceedings.\n</LawCallout>",
       "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"LawCallout\" status=\"preserved\"]",
       "props_text": "code=ra9266, section=PRBoA Res. No. 02, Series of 2006, title=The Architect",
       "props_json": {
@@ -41,32 +41,32 @@
         "section": "PRBoA Res. No. 02, Series of 2006",
         "title": "The Architect"
       },
-      "children_raw": "The Architect's Credo is promulgated under PRBoA authority. It is a mandatory recitation but is aspirational rather than directly enforceable through discipline. Violations of the Credo alone cannot trigger suspension or revocation \u2014 only Code violations can. However, the Credo is used as supporting evidence in character evaluations during disciplinary proceedings.",
-      "children_text": "The Architect's Credo is promulgated under PRBoA authority. It is a mandatory recitation but is aspirational rather than directly enforceable through discipline. Violations of the Credo alone cannot trigger suspension or revocation \u2014 only Code violations can. However, the Credo is used as supporting evidence in character evaluations during disciplinary proceedings.",
+      "children_raw": "The Architect's Credo is promulgated under PRBoA authority. It is a mandatory recitation but is aspirational rather than directly enforceable through discipline. Violations of the Credo alone cannot trigger suspension or revocation — only Code violations can. However, the Credo is used as supporting evidence in character evaluations during disciplinary proceedings.",
+      "children_text": "The Architect's Credo is promulgated under PRBoA authority. It is a mandatory recitation but is aspirational rather than directly enforceable through discipline. Violations of the Credo alone cannot trigger suspension or revocation — only Code violations can. However, the Credo is used as supporting evidence in character evaluations during disciplinary proceedings.",
       "parse_status": "parsed",
       "raw_hash": "sha256:e03d2b5b56433c42fb72d5e0dcb73c2e2d1f0957a3061877636d59b99c28be21"
     },
     {
       "block_id": "ui_0004",
       "component_name": "Warn",
-      "raw": "<Warn>\n  **Critical Distinction:** The LEA often tests whether the Credo is \"enforceable.\" The answer is NO \u2014 the Credo is aspirational. Only the Code of Ethical Conduct (SPP Doc 200) and RA 9266 are directly enforceable through PRBoA disciplinary action. However, abandoning Credo principles can be used as supporting character evidence in Code violation proceedings.\n</Warn>",
+      "raw": "<Warn>\n  **Critical Distinction:** The LEA often tests whether the Credo is \"enforceable.\" The answer is NO — the Credo is aspirational. Only the Code of Ethical Conduct (SPP Doc 200) and RA 9266 are directly enforceable through PRBoA disciplinary action. However, abandoning Credo principles can be used as supporting character evidence in Code violation proceedings.\n</Warn>",
       "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"Warn\" status=\"preserved\"]",
       "props_text": "(none)",
       "props_json": {},
-      "children_raw": "**Critical Distinction:** The LEA often tests whether the Credo is \"enforceable.\" The answer is NO \u2014 the Credo is aspirational. Only the Code of Ethical Conduct (SPP Doc 200) and RA 9266 are directly enforceable through PRBoA disciplinary action. However, abandoning Credo principles can be used as supporting character evidence in Code violation proceedings.",
-      "children_text": "**Critical Distinction:** The LEA often tests whether the Credo is \"enforceable.\" The answer is NO \u2014 the Credo is aspirational. Only the Code of Ethical Conduct (SPP Doc 200) and RA 9266 are directly enforceable through PRBoA disciplinary action. However, abandoning Credo principles can be used as supporting character evidence in Code violation proceedings.",
+      "children_raw": "**Critical Distinction:** The LEA often tests whether the Credo is \"enforceable.\" The answer is NO — the Credo is aspirational. Only the Code of Ethical Conduct (SPP Doc 200) and RA 9266 are directly enforceable through PRBoA disciplinary action. However, abandoning Credo principles can be used as supporting character evidence in Code violation proceedings.",
+      "children_text": "**Critical Distinction:** The LEA often tests whether the Credo is \"enforceable.\" The answer is NO — the Credo is aspirational. Only the Code of Ethical Conduct (SPP Doc 200) and RA 9266 are directly enforceable through PRBoA disciplinary action. However, abandoning Credo principles can be used as supporting character evidence in Code violation proceedings.",
       "parse_status": "parsed",
       "raw_hash": "sha256:c0470be15feb867ad65b88c9c2467a97f7f5d8dcb2f2c257c6e922e0e4697411"
     },
     {
       "block_id": "ui_0005",
       "component_name": "ExamTip",
-      "raw": "<ExamTip>\n  **LEA Watch:** Questions about the Credo often pair it with a Code provision and ask which applies. Remember: If the question involves a \"pledge,\" \"commitment,\" or \"character\" \u2014 it's the Credo. If it involves enforceable obligations, sanctions, or mandatory conduct \u2014 it's the Code. The Credo uses \"I shall\" language; the Code uses numbered sections.\n</ExamTip>",
+      "raw": "<ExamTip>\n  **LEA Watch:** Questions about the Credo often pair it with a Code provision and ask which applies. Remember: If the question involves a \"pledge,\" \"commitment,\" or \"character\" — it's the Credo. If it involves enforceable obligations, sanctions, or mandatory conduct — it's the Code. The Credo uses \"I shall\" language; the Code uses numbered sections.\n</ExamTip>",
       "placeholder": "[SLATECAMP_UI_BLOCK:ui_0005 component=\"ExamTip\" status=\"preserved\"]",
       "props_text": "(none)",
       "props_json": {},
-      "children_raw": "**LEA Watch:** Questions about the Credo often pair it with a Code provision and ask which applies. Remember: If the question involves a \"pledge,\" \"commitment,\" or \"character\" \u2014 it's the Credo. If it involves enforceable obligations, sanctions, or mandatory conduct \u2014 it's the Code. The Credo uses \"I shall\" language; the Code uses numbered sections.",
-      "children_text": "**LEA Watch:** Questions about the Credo often pair it with a Code provision and ask which applies. Remember: If the question involves a \"pledge,\" \"commitment,\" or \"character\" \u2014 it's the Credo. If it involves enforceable obligations, sanctions, or mandatory conduct \u2014 it's the Code. The Credo uses \"I shall\" language; the Code uses numbered sections.",
+      "children_raw": "**LEA Watch:** Questions about the Credo often pair it with a Code provision and ask which applies. Remember: If the question involves a \"pledge,\" \"commitment,\" or \"character\" — it's the Credo. If it involves enforceable obligations, sanctions, or mandatory conduct — it's the Code. The Credo uses \"I shall\" language; the Code uses numbered sections.",
+      "children_text": "**LEA Watch:** Questions about the Credo often pair it with a Code provision and ask which applies. Remember: If the question involves a \"pledge,\" \"commitment,\" or \"character\" — it's the Credo. If it involves enforceable obligations, sanctions, or mandatory conduct — it's the Code. The Credo uses \"I shall\" language; the Code uses numbered sections.",
       "parse_status": "parsed",
       "raw_hash": "sha256:0ccabfacfd84f2473df247a5def25f55a608e28ec54d670bc4517db4a0850c3c"
     }

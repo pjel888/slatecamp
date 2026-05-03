@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-svc-006-phase-2-design-development-coordination-engineering-integration-and-fee
 
-Generated: 2026-05-03T07:49:41.106Z
+Generated: 2026-05-03T11:50:09.392Z
 Article ID: bdc69dbd-c7fb-405f-b8f7-38a6a8fce526
 Changed: true
 Safe to push locally: true
@@ -8,8 +8,8 @@ Safe to push locally: true
 ## Hashes
 
 - Original: `sha256:81607df183b5cd05015220e766e09aa9dce13ac875d6f709c9f5a27586f2efc6`
-- Normalized: `sha256:e461bc1cfbf9a288801d9d394e91711b7893d241533065ee018ec6031ea28fd0`
-- Candidate: `sha256:b3f9c907bc46a9d1014592db77af52cf44dc3d6ef9afe851df8350d118f0c3f9`
+- Normalized: `sha256:70c5115078225fabd87049ce41b782d10d1f7c8b493abf311bef82f1ea0e0693`
+- Candidate: `sha256:4cd1c0e267ffdedb33453778cf13cdbc62433aca77e0f8647a06ba504be18c30`
 
 ## Line summary
 

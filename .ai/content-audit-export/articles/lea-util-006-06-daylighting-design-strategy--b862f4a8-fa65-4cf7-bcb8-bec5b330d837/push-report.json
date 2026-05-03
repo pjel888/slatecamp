@@ -1,10 +1,9 @@
 {
-  "attempted_at": "2026-05-03T07:52:17.792Z",
+  "attempted_at": "2026-05-03T11:49:40.160Z",
   "dry_run": true,
   "apply": false,
   "pushed": false,
   "blockers": [
-    "original.md hash does not match article metadata export hash.",
     "diff-report.json marks candidate unsafe.",
     "Candidate has unresolved placeholders.",
     "--all-safe skipped article because diff-report is unsafe."
@@ -15,10 +14,12 @@
   "updated_rows_count": 0,
   "article_id": "b862f4a8-fa65-4cf7-bcb8-bec5b330d837",
   "slug": "lea-util-006-06-daylighting-design-strategy",
-  "preparation_actions": [],
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
   "remote_hash_before": "sha256:fc6a16f0526b22c2b3813de3d9f0d6b06520a966ca518f157ad72323ab9e9b38",
   "original_hash": "sha256:fc6a16f0526b22c2b3813de3d9f0d6b06520a966ca518f157ad72323ab9e9b38",
-  "candidate_hash": "sha256:56dca33848a2c505e12100b4f8312bf4bbd12898b1ae2d1518479a30367d34cc",
+  "candidate_hash": "sha256:9e4896b29eaacde3a8d7471dfc54a8532adb7c4ea138d41da00da330e8129ae6",
   "stale_check_passed": true,
   "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
 }

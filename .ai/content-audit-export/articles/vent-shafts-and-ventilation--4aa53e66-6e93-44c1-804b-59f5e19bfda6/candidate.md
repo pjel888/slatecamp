@@ -288,7 +288,7 @@ An architect is designing a below-grade workshop in a mixed-use building. The sp
 
 ## Exam Tip
 
-ALE Swipe: Vent shaft minimum dimensions = 1.20 m × 1.20 m for non-Fire Zone 1 buildings, 1.50 m × 1.50 m for Fire Zone 1. Max shaft coverage = 10% of required lot area. Mechanical ventilation can substitute for natural ventilation at 10 air changes per hour for most occupancy types.
+LEA Swipe: Vent shaft minimum dimensions = 1.20 m × 1.20 m for non-Fire Zone 1 buildings, 1.50 m × 1.50 m for Fire Zone 1. Max shaft coverage = 10% of required lot area. Mechanical ventilation can substitute for natural ventilation at 10 air changes per hour for most occupancy types.
 
 ## Cross‑References
 

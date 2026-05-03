@@ -1,7 +1,7 @@
 {
   "article_id": "387760f0-6468-40d6-b78e-a463c9f543b2",
   "slug": "lea-prac-frm-002-partnership-in-architectural-practice",
-  "generated_at": "2026-05-03T07:48:34.012Z",
+  "generated_at": "2026-05-03T11:49:40.564Z",
   "old_hash": "sha256:bd61c7deacd4cc2d42cee374bf61e42d7e7c5e804aa9b58848ff54f78f7e6a48",
   "new_hash": "sha256:4c6dc357cf64103dd8429fb6d718ff2725ee53a10f238de16dc53f7f70dcd0b5",
   "original_hash": "sha256:bd61c7deacd4cc2d42cee374bf61e42d7e7c5e804aa9b58848ff54f78f7e6a48",
@@ -11,12 +11,12 @@
   "changed_line_count": 56,
   "inserted_line_count": 22,
   "deleted_line_count": 0,
-  "ui_blocks_original_count": 4,
-  "ui_blocks_candidate_count": 3,
-  "ui_blocks_changed_count": 1,
-  "ui_blocks_count": 4,
+  "ui_blocks_original_count": 2,
+  "ui_blocks_candidate_count": 2,
+  "ui_blocks_changed_count": 0,
+  "ui_blocks_count": 2,
   "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 3,
+  "preserved_blocks_count": 2,
   "changed_text_summary": {
     "changed": 56,
     "inserted": 22,
@@ -25,18 +25,14 @@
     "candidate_line_count": 62
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0001"
-    ],
-    "changed_count": 1
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate is missing 1 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate is missing 1 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

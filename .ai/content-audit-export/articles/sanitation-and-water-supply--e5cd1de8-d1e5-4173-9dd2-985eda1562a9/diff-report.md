@@ -1,6 +1,6 @@
 # Content Diff Report: sanitation-and-water-supply
 
-Generated: 2026-05-03T07:49:42.495Z
+Generated: 2026-05-03T11:50:10.050Z
 Article ID: e5cd1de8-d1e5-4173-9dd2-985eda1562a9
 Changed: true
 Safe to push locally: true
@@ -8,8 +8,8 @@ Safe to push locally: true
 ## Hashes
 
 - Original: `sha256:4fc9cc3b0e7ea7b482485624bea42f02e327f6df87a1e6f2da46f93a22c153d8`
-- Normalized: `sha256:948e5e2cab2e98f85e7863cda91f9b104a2c433bdd7471a5c8b2ceea603b9e90`
-- Candidate: `sha256:7980dd45fa89df37107c1ab08613381c35116ee774b12423d43fb10ed303ea7b`
+- Normalized: `sha256:654dfcc444235e9a2c7b58f9c36c09496e393d4959721320177792f6ac17dbfc`
+- Candidate: `sha256:4af469e8233a95cdaac5929b45f14e352f9cdc2c3f8f2e99f32761971d9026f6`
 
 ## Line summary
 

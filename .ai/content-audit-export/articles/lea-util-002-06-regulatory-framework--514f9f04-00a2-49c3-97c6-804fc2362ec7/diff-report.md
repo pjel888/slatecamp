@@ -1,9 +1,9 @@
 # Content Diff Report: lea-util-002-06-regulatory-framework
 
-Generated: 2026-05-03T10:56:06.720Z
+Generated: 2026-05-03T11:49:38.063Z
 Article ID: 514f9f04-00a2-49c3-97c6-804fc2362ec7
 Changed: true
-Safe to push locally: false
+Safe to push locally: true
 
 ## Hashes
 
@@ -26,7 +26,7 @@ Safe to push locally: false
 
 ## Blockers
 
-- original.md hash does not match article metadata export hash.
+- None
 
 ## Warnings
 

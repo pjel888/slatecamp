@@ -44,7 +44,7 @@ Andalusian architecture represents Islam at its most refined and most fragile. T
 "Distinguish Andalusian Islamic architecture from Abbasid or Ottoman traditions in terms of spatial strategy, material choices, and decorative approach." (Andalusian: intimate courtyards, stucco and tile, poetic inscriptions, ephemeral colonnades; Abbasid: monumental iwans, brick and stone, muqarnas as structural element; Ottoman: centralized domes, marble cladding, hierarchical courtyards.)
 
 </ExamTip>
-<ExamTip>**Pattern 4: Specific Building Features**
+
 "The **Great Mosque of Córdoba** employs which arch type as its signature, and how does this differ from earlier Islamic mosques?" (Answer: **Horseshoe arch** (or Moorish arch) with alternating red and white voussoirs; differs from simple round or four-centered arches; becomes defining feature of Andalusian style; allows expansion without height increase.)
 
 <Callout>The LEA tests your knowledge of **Andalusian Islamic** (al-Andalus) architecture in medieval Spain (8th–15th centuries). You must identify the **Alhambra**, understand its spatial and decorative systems, and recognize how Andalusian design differs from Central Islamic traditions.</Callout>

@@ -62,8 +62,8 @@ Per the flagging report, the old 1:12 standard is a common error in pre-2024 exa
 
 The architect must verify that the design meets these specific standards. This is not subjective judgment; standards are explicit. The architect should maintain a compliance checklist and verify each element. Doing so creates a documentation trail and demonstrates professional diligence.
 
-<ExamTip title="ALE Exam Tip">
-The ALE frequently tests ramp slope ratios. Remember: **1:20 is the general maximum** under the 2024 Revised IRR. The old 1:12 standard (from the original/original amended IRR) is no longer current for general accessible ramps. The only remaining 1:12 reference in the 2024 Revised IRR is for swimming pool transfer walls. Be careful not to confuse the two standards on exam questions.
+<ExamTip title="LEA Exam Tip">
+The LEA frequently tests ramp slope ratios. Remember: **1:20 is the general maximum** under the 2024 Revised IRR. The old 1:12 standard (from the original/original amended IRR) is no longer current for general accessible ramps. The only remaining 1:12 reference in the 2024 Revised IRR is for swimming pool transfer walls. Be careful not to confuse the two standards on exam questions.
 </ExamTip>
 
 ### Universal Design Principles vs. Segregated Access

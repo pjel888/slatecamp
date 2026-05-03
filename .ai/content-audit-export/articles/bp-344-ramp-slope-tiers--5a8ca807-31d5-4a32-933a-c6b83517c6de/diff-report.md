@@ -1,6 +1,6 @@
 # Content Diff Report: bp-344-ramp-slope-tiers
 
-Generated: 2026-05-03T10:55:35.472Z
+Generated: 2026-05-03T11:49:13.827Z
 Article ID: 5a8ca807-31d5-4a32-933a-c6b83517c6de
 Changed: true
 Safe to push locally: true

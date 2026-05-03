@@ -61,10 +61,10 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Priority — Certificate of Occupancy Key Points:**
+- Text: **LEA Priority — Certificate of Occupancy Key Points:**
   1. Issued by Building Official (government), not architect
   2. Separate from and often after Substantial Completion
-  3. Based on inspection  — this distinction appears on every ALE cycle.
+  3. Based on inspection  — this distinction appears on every LEA cycle.
 [/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
@@ -84,10 +84,10 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Priority — Certificate of Occupancy Key Points:**
+- Text: **LEA Priority — Certificate of Occupancy Key Points:**
   1. Issued by Building Official (government), not architect
   2. Separate from and often after Substantial Completion
-  3. Based on inspection  — this distinction appears on every ALE cycle.
+  3. Based on inspection  — this distinction appears on every LEA cycle.
 [/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]

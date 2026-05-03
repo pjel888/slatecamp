@@ -217,18 +217,10 @@ NFPA 40 is the direct American analog to Rule XIV, Section 1401. The 2019 editio
 
 ### 5.2 IFC / IBC (International Fire Code / International Building Code)
 
-
 [SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
 Extracted summary:
 
-\[SLATECAMP_UI_BLOCK:ui_0005 component="Warn" status="preserved"]
-Extracted summary:
-- Props: 
-- Text: Don't memorize every code section number — memorize the *rule*. The LEA tests application, not recall.
-\[/SLATECAMP_UI_BLOCK\]
-- Props: (none)
-- Text: Don't memorize every code section number — memorize the *rule*. The LEA tests...
-[/SLATECAMP_UI_BLOCK]
+\
 Under the IFC, cellulose nitrate film is regulated under **Chapter 31 (Highly Toxic Materials)** or **Chapter 56 (Explosives and Fireworks)** for quantities above defined thresholds — a categorization reflecting the self-oxidizing, gas-generating combustion behavior that characterizes it as more than merely "flammable." The IFC approach is more complex than Rule XIV's volume-based triggers, incorporating occupancy classifications and hazardous material quantity thresholds.
 
 Modern IBC/IFC provisions acknowledge the near-total transition to digital imaging in the USA and treat cellulose nitrate film as a legacy specialty material rather than a common building hazard.
@@ -334,7 +326,6 @@ Compared to the NFPA 40 standard for cellulose nitrate film storage, which of th
 ---
 
 **Question 3**
-
 
 [SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
 Extracted summary:

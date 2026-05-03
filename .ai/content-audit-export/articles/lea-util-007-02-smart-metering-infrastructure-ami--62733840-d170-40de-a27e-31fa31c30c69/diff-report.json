@@ -1,28 +1,28 @@
 {
   "article_id": "62733840-d170-40de-a27e-31fa31c30c69",
   "slug": "lea-util-007-02-smart-metering-infrastructure-ami",
-  "generated_at": "2026-05-03T07:48:43.784Z",
+  "generated_at": "2026-05-03T11:49:45.048Z",
   "old_hash": "sha256:36793fc2022bf18b217cb6ef0dd5109daa4c10152fec41ce806d0cbe340b3114",
-  "new_hash": "sha256:c9d825acd176153828ea01857a5a1d230d91928b559f9ca576ccf9065b862fc1",
+  "new_hash": "sha256:3b545d7fd97723ba745d423adf4009c9245bf3074983f871ba486561f9528e83",
   "original_hash": "sha256:36793fc2022bf18b217cb6ef0dd5109daa4c10152fec41ce806d0cbe340b3114",
-  "normalized_hash": "sha256:0c2ef0e2a38b19fe54cee1c2209605ff8adf2a470d66ef78ab481f3d1241c992",
-  "candidate_hash": "sha256:c9d825acd176153828ea01857a5a1d230d91928b559f9ca576ccf9065b862fc1",
+  "normalized_hash": "sha256:8ebfa7998b67cf1031ad8a2cfdc709c4c24dca20ef7e47a2c013981051a477af",
+  "candidate_hash": "sha256:3b545d7fd97723ba745d423adf4009c9245bf3074983f871ba486561f9528e83",
   "changed": true,
-  "changed_line_count": 208,
-  "inserted_line_count": 13,
+  "changed_line_count": 203,
+  "inserted_line_count": 8,
   "deleted_line_count": 0,
-  "ui_blocks_original_count": 10,
-  "ui_blocks_candidate_count": 10,
+  "ui_blocks_original_count": 9,
+  "ui_blocks_candidate_count": 9,
   "ui_blocks_changed_count": 0,
-  "ui_blocks_count": 10,
+  "ui_blocks_count": 9,
   "unresolved_placeholders_count": 1,
-  "preserved_blocks_count": 10,
+  "preserved_blocks_count": 9,
   "changed_text_summary": {
-    "changed": 208,
-    "inserted": 13,
+    "changed": 203,
+    "inserted": 8,
     "deleted": 0,
     "original_line_count": 198,
-    "candidate_line_count": 211
+    "candidate_line_count": 206
   },
   "changed_ui_blocks_summary": {
     "missing_block_ids": [],
@@ -31,12 +31,10 @@
   "locally_safe_to_push": false,
   "safe_to_push": false,
   "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "original.md hash does not match article metadata export hash."
+    "Candidate contains unresolved UI block placeholders."
   ],
   "warnings": [
-    "ui-blocks.json contains unknown custom blocks; push requires review or --force.",
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; original.md hash does not match article metadata export hash."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders."
 }

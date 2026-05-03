@@ -1,12 +1,12 @@
 {
   "article_id": "4f0754d8-6bd7-459b-8359-8f65857914b2",
   "slug": "interior-doors-and-hardware",
-  "generated_at": "2026-05-03T07:53:53.893Z",
-  "old_hash": "sha256:f0d919c1bcff1f3b9b59b3b6f64f4e01d18ca812c02c278ead7f80865274e6bb",
-  "new_hash": "sha256:ac12345b83c39a2a749d6eede8a8632d8b412a21a928fd52245428cfb7341319",
-  "original_hash": "sha256:f0d919c1bcff1f3b9b59b3b6f64f4e01d18ca812c02c278ead7f80865274e6bb",
-  "normalized_hash": "sha256:c1abf3f9c4a30a601e566dc6cdaefba4a4a77cbe051e6a0d8df4dc8f5f533309",
-  "candidate_hash": "sha256:ac12345b83c39a2a749d6eede8a8632d8b412a21a928fd52245428cfb7341319",
+  "generated_at": "2026-05-03T11:50:23.274Z",
+  "old_hash": "sha256:e519500d7bad450d37effbb2210e5c55a7d001e4c9f2a07fe36a70e158d5e842",
+  "new_hash": "sha256:92fc878b1ec01feedaabec429e60eefd25de3655123e1216fd2035d637939382",
+  "original_hash": "sha256:e519500d7bad450d37effbb2210e5c55a7d001e4c9f2a07fe36a70e158d5e842",
+  "normalized_hash": "sha256:cffaaf18490606c3054eeda5d48018a8ee9b28306bf3baaf3e3e104abe457ccc",
+  "candidate_hash": "sha256:92fc878b1ec01feedaabec429e60eefd25de3655123e1216fd2035d637939382",
   "changed": true,
   "changed_line_count": 292,
   "inserted_line_count": 45,
@@ -28,13 +28,11 @@
     "missing_block_ids": [],
     "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "original.md hash does not match article metadata export hash."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: original.md hash does not match article metadata export hash."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

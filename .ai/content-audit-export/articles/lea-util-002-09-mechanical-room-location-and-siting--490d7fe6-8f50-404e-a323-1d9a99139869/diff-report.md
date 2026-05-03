@@ -1,9 +1,9 @@
 # Content Diff Report: lea-util-002-09-mechanical-room-location-and-siting
 
-Generated: 2026-05-03T10:55:29.931Z
+Generated: 2026-05-03T11:49:09.499Z
 Article ID: 490d7fe6-8f50-404e-a323-1d9a99139869
 Changed: true
-Safe to push locally: false
+Safe to push locally: true
 
 ## Hashes
 
@@ -26,7 +26,7 @@ Safe to push locally: false
 
 ## Blockers
 
-- original.md hash does not match article metadata export hash.
+- None
 
 ## Warnings
 

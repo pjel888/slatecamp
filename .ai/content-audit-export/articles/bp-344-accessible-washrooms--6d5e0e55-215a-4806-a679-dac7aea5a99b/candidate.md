@@ -138,7 +138,7 @@ When designing an accessible washroom in any occupancy under Rule VII, treat BP 
 
 ## Exam Tip
 
-ALE Trap: Accessible water closet clearance: 900 mm wide × 1,500 mm deep min + 450 mm side transfer space (left or right). Grab bars: horizontal at 750-850 mm height, 1.3 kN capacity. The side transfer side is the most tested dimension — the space must be on BOTH sides of an accessible stall but the BARRIER-FREE approach requires transfer from either side.
+LEA Trap: Accessible water closet clearance: 900 mm wide × 1,500 mm deep min + 450 mm side transfer space (left or right). Grab bars: horizontal at 750-850 mm height, 1.3 kN capacity. The side transfer side is the most tested dimension — the space must be on BOTH sides of an accessible stall but the BARRIER-FREE approach requires transfer from either side.
 
 ## Cross‑References
 

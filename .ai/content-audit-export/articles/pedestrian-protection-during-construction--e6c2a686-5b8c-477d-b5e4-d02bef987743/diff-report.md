@@ -1,6 +1,6 @@
 # Content Diff Report: pedestrian-protection-during-construction
 
-Generated: 2026-05-03T10:55:45.422Z
+Generated: 2026-05-03T11:49:22.217Z
 Article ID: e6c2a686-5b8c-477d-b5e4-d02bef987743
 Changed: true
 Safe to push locally: true

@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality
 
-Generated: 2026-05-03T10:55:52.719Z
+Generated: 2026-05-03T11:49:27.596Z
 Article ID: 92d4ab9e-b544-4812-96b7-72ca589f102c
 Changed: true
 Safe to push locally: true
@@ -8,8 +8,8 @@ Safe to push locally: true
 ## Hashes
 
 - Original: `sha256:5910f839ea306da519e80eee821c2ac507b7c4790aeee9df7da3cc199d2151b7`
-- Normalized: `sha256:ffafc48e5053785e9f67954577637d79d289f70ffd7ec2efc59ee452946a215a`
-- Candidate: `sha256:f3439cb38249cbdfdbab5c4da853dfe319652af8d2394d0a717afec6c82d4272`
+- Normalized: `sha256:3979c25b974f6cd18c49c96f5260409c7593d023734e03ac20593278ec6f929d`
+- Candidate: `sha256:efbd11c7a94dc8f5bd45970887ef3525a674b2ecbe23c7ec64b13919fdc51e13`
 
 ## Line summary
 

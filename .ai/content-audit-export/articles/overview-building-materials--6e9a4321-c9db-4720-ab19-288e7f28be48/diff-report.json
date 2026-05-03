@@ -1,45 +1,38 @@
 {
   "article_id": "6e9a4321-c9db-4720-ab19-288e7f28be48",
   "slug": "overview-building-materials",
-  "generated_at": "2026-05-03T07:53:54.753Z",
+  "generated_at": "2026-05-03T11:50:23.691Z",
   "old_hash": "sha256:050d8c32ef2b2cdcd6e9a7cb67fff37fb8042bc0e5f60960bc9cd08728e32a5e",
-  "new_hash": "sha256:4e5c826accfeef4b553da8e40467d419e51b0aa28b99eba1fc5d7eec19bb1152",
+  "new_hash": "sha256:146e848dfb501eac4d2fbbf4af14480e241a96182ca5755569be7e817c0bf300",
   "original_hash": "sha256:050d8c32ef2b2cdcd6e9a7cb67fff37fb8042bc0e5f60960bc9cd08728e32a5e",
-  "normalized_hash": "sha256:59f32d1de490bd0c236e3177bb726619435d520bb45b179eb1729a4bcb47a7a2",
-  "candidate_hash": "sha256:4e5c826accfeef4b553da8e40467d419e51b0aa28b99eba1fc5d7eec19bb1152",
+  "normalized_hash": "sha256:306b5debf7dec000bd63db48e0c2d4d954563c472a849f759f2662bcae68a1a6",
+  "candidate_hash": "sha256:146e848dfb501eac4d2fbbf4af14480e241a96182ca5755569be7e817c0bf300",
   "changed": true,
   "changed_line_count": 86,
   "inserted_line_count": 0,
-  "deleted_line_count": 39,
-  "ui_blocks_original_count": 7,
+  "deleted_line_count": 24,
+  "ui_blocks_original_count": 3,
   "ui_blocks_candidate_count": 3,
-  "ui_blocks_changed_count": 4,
-  "ui_blocks_count": 7,
+  "ui_blocks_changed_count": 0,
+  "ui_blocks_count": 3,
   "unresolved_placeholders_count": 0,
   "preserved_blocks_count": 3,
   "changed_text_summary": {
     "changed": 86,
     "inserted": 0,
-    "deleted": 39,
+    "deleted": 24,
     "original_line_count": 95,
-    "candidate_line_count": 56
+    "candidate_line_count": 71
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0002",
-      "ui_0004",
-      "ui_0006",
-      "ui_0007"
-    ],
-    "changed_count": 4
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate is missing 4 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate is missing 4 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

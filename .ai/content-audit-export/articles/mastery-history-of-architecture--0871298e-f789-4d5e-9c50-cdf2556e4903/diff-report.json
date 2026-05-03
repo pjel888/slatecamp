@@ -1,46 +1,38 @@
 {
   "article_id": "0871298e-f789-4d5e-9c50-cdf2556e4903",
   "slug": "mastery-history-of-architecture",
-  "generated_at": "2026-05-03T07:48:47.675Z",
+  "generated_at": "2026-05-03T11:49:46.856Z",
   "old_hash": "sha256:303bf0802cf5477d335c659aff637d1aa853942a0686ed28c999759a412f8a8e",
-  "new_hash": "sha256:d69eb3d79fd231df2b32dfd60d49c2b0aa13d2877cac8168eb79053fbbcfbe84",
+  "new_hash": "sha256:d03215b5341fc7cfb1eeffeb494289e9aa0d164e8bed3babce51dfdd4be0062d",
   "original_hash": "sha256:303bf0802cf5477d335c659aff637d1aa853942a0686ed28c999759a412f8a8e",
-  "normalized_hash": "sha256:2ee3165700da08f66adb8486b85869e06f7c62ae76017cce2ed535a8a3c1535c",
-  "candidate_hash": "sha256:d69eb3d79fd231df2b32dfd60d49c2b0aa13d2877cac8168eb79053fbbcfbe84",
+  "normalized_hash": "sha256:69d25a568b1b650dfcff104d437bce606940a2f854c1c6a20901b2f292581a37",
+  "candidate_hash": "sha256:d03215b5341fc7cfb1eeffeb494289e9aa0d164e8bed3babce51dfdd4be0062d",
   "changed": true,
-  "changed_line_count": 53,
-  "inserted_line_count": 0,
-  "deleted_line_count": 9,
-  "ui_blocks_original_count": 7,
+  "changed_line_count": 65,
+  "inserted_line_count": 11,
+  "deleted_line_count": 0,
+  "ui_blocks_original_count": 2,
   "ui_blocks_candidate_count": 2,
-  "ui_blocks_changed_count": 5,
-  "ui_blocks_count": 7,
+  "ui_blocks_changed_count": 0,
+  "ui_blocks_count": 2,
   "unresolved_placeholders_count": 0,
   "preserved_blocks_count": 2,
   "changed_text_summary": {
-    "changed": 53,
-    "inserted": 0,
-    "deleted": 9,
+    "changed": 65,
+    "inserted": 11,
+    "deleted": 0,
     "original_line_count": 81,
-    "candidate_line_count": 72
+    "candidate_line_count": 92
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0003",
-      "ui_0004",
-      "ui_0005",
-      "ui_0006",
-      "ui_0007"
-    ],
-    "changed_count": 5
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate is missing 5 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate is missing 5 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

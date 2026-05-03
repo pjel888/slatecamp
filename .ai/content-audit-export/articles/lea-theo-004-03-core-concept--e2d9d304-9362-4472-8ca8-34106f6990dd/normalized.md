@@ -123,11 +123,7 @@ The Philippine Green Building Code offers two compliance paths:
 **Energy Modeling Software Accepted by DOE:**
 - EnergyPlus (US DOE, freely available; most rigorous)
 - TRACE 3D+ (proprietary; widely used by MEP engineers in Philippines)
-- IES [SLATECAMP_UI_BLOCK:ui_0003 component="VE" status="unknown"]
-Extracted summary:
-- Props: (none)
-- Text: (proprietary; advanced capability)
-[/SLATECAMP_UI_BLOCK]
+- IES 
 - HAP/CHVAC (design-stage estimates)
 
 Models must account for Philippine tropical conditions: 26–28°C baseline temperatures, 75–85% humidity, monsoon wind patterns, and Type I–IV climate variation by region.
@@ -219,14 +215,7 @@ LEA students should anticipate questions referencing "climate-ambitious design" 
 
 ## Key Facts and Testable Items
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="WikiExamTable" status="unknown"]
-Extracted summary:
-- Props: headers="{["Standard / Requirement", "Detail"]}", rows=true, RA=true, Framework=true, Philippine=true, Climate=true, Change=true, Act=true, delegates=true, building=true, code=true, authority=true
-- Text: 0.6 on 30%+ of wall area + roof; light/reflective finishes"]', '["Mechanical HVAC COP Minimum", "2.5 (air conditioning); higher (~3.0–3.5) for variable-refrigerant-flow systems"]', '["Lighting Power Density", "8–10 W/m² (occupancy-dependent); LED minimum 40 lumens/watt"]', '["Water Reduction Target", "30% below baseline (hybrid rainwater + low-flow fixture strategy typical)"]', '["LEED Comparison", "Global standard, US-biased; BERDE is national standard, tropical-optimized"]', '["Energy Modeling
-[/SLATECAMP_UI_BLOCK]
-## How It's Tested on the LEA
-
-[SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
+ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
 - Text: 1. **Code vs. BERDE Distinction:** "A developer achieves Philippine Green Building Code compliance (Path A prescriptive). Can they claim BERDE certification? Explain the relationship between the two systems." - **Answer:** No. Code compliance is necessary but insufficient for BERDE. Code sets minimum baselines (roof insulation, window U-values, etc.); BERDE requires *exceeding* baseline across 11 categories and earning ≥25 points. A Path A building may meet Code but score only 15–20 BERDE points
@@ -302,11 +291,7 @@ Extracted summary:
 
 **Net-Zero Energy** — Annual on-site renewable generation (solar PV, wind, geothermal) equals or exceeds annual building consumption; not mandated by Code but incentivized by BERDE and pursued by forward-looking developers.
 
-**Energy Modeling Software** — Simulation tools predicting annual energy consumption under tropical climate conditions (26–28°C baseline, humidity 75–85%, monsoon wind). EnergyPlus (free, rigorous), TRACE 3D+, IES [SLATECAMP_UI_BLOCK:ui_0015 component="VE" status="unknown"]
-Extracted summary:
-- Props: (none)
-- Text: accepted by DOE.
-[/SLATECAMP_UI_BLOCK]
+**Energy Modeling Software** — Simulation tools predicting annual energy consumption under tropical climate conditions (26–28°C baseline, humidity 75–85%, monsoon wind). EnergyPlus (free, rigorous), TRACE 3D+, IES 
 
 **ERV (Energy Recovery Ventilation)** — System capturing heat/moisture from exhaust air and transferring to incoming fresh air, reducing HVAC load; typically improves efficiency 20–25% in naturally ventilated spaces.
 

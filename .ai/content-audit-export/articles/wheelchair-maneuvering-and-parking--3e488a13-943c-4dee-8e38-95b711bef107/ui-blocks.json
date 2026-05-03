@@ -4,7 +4,7 @@
   "normalized_created_at": "2026-05-01T13:33:44.156Z",
   "parser_version": "ui-block-parser-v1",
   "original_content_hash": "sha256:351a5ff01a06abd7bfdb331f14628bcfe3a7a2571ec1e0f658bda8d3cdab5ce2",
-  "normalized_content_hash": "sha256:53980df8d897e2dad7972668ac3d2f5978c4ca5856f366703352260e64b42ff1",
+  "normalized_content_hash": "40f657d92b5252dc83b7d3ee940d11400e8f436a6f538f4300f063fd8940279e",
   "ui_block_count": 3,
   "total_blocks": 3,
   "blocks": [
@@ -12,22 +12,22 @@
       "block_id": "ui_0001",
       "block_type": "mdx_component",
       "component_name": "LawCallout",
-      "raw": "<LawCallout code=\"bp344\" section=\"Section 6 - Maneuvering Space\">\n\n\nPer BP 344 2024 IRR Appendix C, accessible parking stalls must be: 4000 mm width \u00d7 5000 mm length, with an 1800 mm wide access aisle. Vertical clearance must be \u22652300 mm. The accessible stall must be the nearest to the accessible entrance on the shortest possible route. ISA signage at 600\u00d7600 mm on poles is required.\n\n\n</LawCallout>",
+      "raw": "<LawCallout code=\"bp344\" section=\"Section 6 - Maneuvering Space\">\n\n\nPer BP 344 2024 IRR Appendix C, accessible parking stalls must be: 4000 mm width × 5000 mm length, with an 1800 mm wide access aisle. Vertical clearance must be ≥2300 mm. The accessible stall must be the nearest to the accessible entrance on the shortest possible route. ISA signage at 600×600 mm on poles is required.\n\n\n</LawCallout>",
       "raw_hash": "sha256:a6ce5643bbd358bd12d8d2c9141ac336548b78a621377365d10104728679b9ef",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"LawCallout\" status=\"new\"]\nExtracted summary:\n- Props: code=\"bp344\" title=\"BP 344 2024 IRR \u2014 Accessible Parking\"\n- Text: Per BP 344 2024 IRR Appendix C, accessible parking stalls must be: 4000 mm width \u00d7 5000 mm length, with an 1800 mm wide access aisle. Vertical clearance must be \u22652300 mm. The accessible stall must be \n[/SLATECAMP_UI_BLOCK]",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"LawCallout\" status=\"new\"]\nExtracted summary:\n- Props: code=\"bp344\" title=\"BP 344 2024 IRR — Accessible Parking\"\n- Text: Per BP 344 2024 IRR Appendix C, accessible parking stalls must be: 4000 mm width × 5000 mm length, with an 1800 mm wide access aisle. Vertical clearance must be ≥2300 mm. The accessible stall must be \n[/SLATECAMP_UI_BLOCK]",
       "placeholder_hash": "sha256:02415c055c8f2c2905f5b52469fb48b8497fb81fbd0eecb683bd8a66b4227249",
       "props": {
         "code": "bp344",
-        "title": "BP 344 2024 IRR \u2014 Accessible Parking"
+        "title": "BP 344 2024 IRR — Accessible Parking"
       },
       "props_json": {
         "code": "bp344",
-        "title": "BP 344 2024 IRR \u2014 Accessible Parking",
+        "title": "BP 344 2024 IRR — Accessible Parking",
         "section": "Section 6 - Maneuvering Space"
       },
-      "props_text": "code=bp344, title=BP 344 2024 IRR \u2014 Accessible Parking, section=Section 6 - Maneuvering Space",
-      "children_raw": "\n\nPer BP 344 2024 IRR Appendix C, accessible parking stalls must be: 4000 mm width \u00d7 5000 mm length, with an 1800 mm wide access aisle. Vertical clearance must be \u22652300 mm. The accessible stall must be the nearest to the accessible entrance on the shortest possible route. ISA signage at 600\u00d7600 mm on poles is required.\n\n",
-      "children_text": "Per BP 344 2024 IRR Appendix C, accessible parking stalls must be: 4000 mm width \u00d7 5000 mm length, with an 1800 mm wide access aisle. Vertical clearance must be \u22652300 mm. The accessible stall must be the nearest to the accessible entrance on the shortest possible route. ISA signage at 600\u00d7600 mm on poles is required.",
+      "props_text": "code=bp344, title=BP 344 2024 IRR — Accessible Parking, section=Section 6 - Maneuvering Space",
+      "children_raw": "\n\nPer BP 344 2024 IRR Appendix C, accessible parking stalls must be: 4000 mm width × 5000 mm length, with an 1800 mm wide access aisle. Vertical clearance must be ≥2300 mm. The accessible stall must be the nearest to the accessible entrance on the shortest possible route. ISA signage at 600×600 mm on poles is required.\n\n",
+      "children_text": "Per BP 344 2024 IRR Appendix C, accessible parking stalls must be: 4000 mm width × 5000 mm length, with an 1800 mm wide access aisle. Vertical clearance must be ≥2300 mm. The accessible stall must be the nearest to the accessible entrance on the shortest possible route. ISA signage at 600×600 mm on poles is required.",
       "status": "new"
     },
     {
@@ -49,15 +49,15 @@
       "block_id": "ui_0003",
       "block_type": "mdx_component",
       "component_name": "ExamTip",
-      "raw": "<ExamTip >\n\nMemorize the mnemonic: '4 \u2013 1.8 \u2013 2.3 \u2013 1.5 \u2013 1.8 \u2013 1.2'. Test yourself by converting each number to its corresponding element: 4.0 m (stall width), 1.8 m (aisle width), 2.3 m (vertical clearance), 1.5 m (corridor width), 1.8 m (turning space), 1.2 m (ramp width).\n\n</ExamTip>",
+      "raw": "<ExamTip >\n\nMemorize the mnemonic: '4 – 1.8 – 2.3 – 1.5 – 1.8 – 1.2'. Test yourself by converting each number to its corresponding element: 4.0 m (stall width), 1.8 m (aisle width), 2.3 m (vertical clearance), 1.5 m (corridor width), 1.8 m (turning space), 1.2 m (ramp width).\n\n</ExamTip>",
       "raw_hash": "sha256:385a0ff7137f48b15a3a1c681faad38e4dbe7f6e242c97b18bc863869f42ef8c",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"ExamTip\" status=\"new\"]\nExtracted summary:\n- Props: (none)\n- Text: Memorize the mnemonic: '4 \u2013 1.8 \u2013 2.3 \u2013 1.5 \u2013 1.8 \u2013 1.2'. Test yourself by converting each number to its corresponding element: 4.0 m (stall width), 1.8 m (aisle width), 2.3 m (vertical clearance), 1.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"ExamTip\" status=\"new\"]\nExtracted summary:\n- Props: (none)\n- Text: Memorize the mnemonic: '4 – 1.8 – 2.3 – 1.5 – 1.8 – 1.2'. Test yourself by converting each number to its corresponding element: 4.0 m (stall width), 1.8 m (aisle width), 2.3 m (vertical clearance), 1.\n[/SLATECAMP_UI_BLOCK]",
       "placeholder_hash": "sha256:598be3ea32e3c2b44441f16056a18c4dd47fab13b1755f9c94ec1e86d6c95c15",
       "props": {},
       "props_json": {},
       "props_text": null,
-      "children_raw": "\n\nMemorize the mnemonic: '4 \u2013 1.8 \u2013 2.3 \u2013 1.5 \u2013 1.8 \u2013 1.2'. Test yourself by converting each number to its corresponding element: 4.0 m (stall width), 1.8 m (aisle width), 2.3 m (vertical clearance), 1.5 m (corridor width), 1.8 m (turning space), 1.2 m (ramp width).\n\n",
-      "children_text": "Memorize the mnemonic: '4 \u2013 1.8 \u2013 2.3 \u2013 1.5 \u2013 1.8 \u2013 1.2'. Test yourself by converting each number to its corresponding element: 4.0 m (stall width), 1.8 m (aisle width), 2.3 m (vertical clearance), 1.5 m (corridor width), 1.8 m (turning space), 1.2 m (ramp width).",
+      "children_raw": "\n\nMemorize the mnemonic: '4 – 1.8 – 2.3 – 1.5 – 1.8 – 1.2'. Test yourself by converting each number to its corresponding element: 4.0 m (stall width), 1.8 m (aisle width), 2.3 m (vertical clearance), 1.5 m (corridor width), 1.8 m (turning space), 1.2 m (ramp width).\n\n",
+      "children_text": "Memorize the mnemonic: '4 – 1.8 – 2.3 – 1.5 – 1.8 – 1.2'. Test yourself by converting each number to its corresponding element: 4.0 m (stall width), 1.8 m (aisle width), 2.3 m (vertical clearance), 1.5 m (corridor width), 1.8 m (turning space), 1.2 m (ramp width).",
       "status": "new"
     }
   ],

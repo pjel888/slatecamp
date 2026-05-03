@@ -1,6 +1,6 @@
 # Content Diff Report: accessible-seating-in-assembly-areas
 
-Generated: 2026-05-03T07:48:25.037Z
+Generated: 2026-05-03T11:49:35.441Z
 Article ID: 571e1d4f-999b-4cf9-a4de-3d35157314d2
 Changed: true
 Safe to push locally: true
@@ -8,8 +8,8 @@ Safe to push locally: true
 ## Hashes
 
 - Original: `sha256:36496badf40d8a151aa233201161baa32256d00a0cdf94b725fc607aa116a2bd`
-- Normalized: `sha256:f61b2af83717378b37cc91e850716405202b0f5a9590ae95a2940afbe3814efe`
-- Candidate: `sha256:2616acaad0e2b6451fae208826fcd4ed6fa323d4c1f916557fa3aac18da5b901`
+- Normalized: `sha256:b7b4e495a21a109a8ca0336152b700e96a358a52550137c74d334a3fa40fbbe2`
+- Candidate: `sha256:e2cc0b3222a5993bb0f8ea9d70cccc1eafba735ff1a277e6bcf3ba3edd0bb37e`
 
 ## Line summary
 

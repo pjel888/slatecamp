@@ -70,7 +70,6 @@ Storage facilities (warehouses) in industrial zones require 12.0 kPa if heavy ma
 
 <Tip>Live load defaults to the table value. Partitions always add 1.0 kPa (if anticipated). Storage can be 2–6× the occupancy LL if heavy materials are present. The occupant's use is the occupant's responsibility—the designer provides the capacity, not the police.</Tip>
 
-
 ## Related Articles
 
 See also: **Load Types** (lea-strc-001-02) for the complete live load discussion, **Base Shear** (lea-strc-004-03) for how seismic weight enters the formula, and **Required Strength** (lea-strc-005-01) for how live load factors into combinations.
@@ -79,4 +78,3 @@ See also: **Load Types** (lea-strc-001-02) for the complete live load discussion
 
 <Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
 
-<WikiMistakeList mistakes={["Using a single LL value for all floors. Different occupancies have different minimum LL values. Verify occupancy and apply the correct value.","Forgetting to add partition load (1.0 kPa) for office floors. Partitions are common; add 1.0 kPa even if the initial design has open plan.","Confusing live load and dead load. LL = occupancy; DL = weight of structure. They combine in design but are distinct.","Assuming LL reduction applies to all structures. Reduction requires tributary area > 14 m². Small columns, beams, and edge members do not qualify.","Treating occupancy changes as the designer's problem. Once built, the occupant's use is the occupant's responsibility. If use changes, the designer cannot be held liable if the original design was compliant with the intended occupancy.","Using 'normal residential' LL = 1.5 kPa. The NSCP specifies 1.9 kPa for residential. No lower values without a code exception.","Ignoring storage loads. A 'general purpose' floor designed for office (2.4 kPa) cannot safely handle stored machinery (12.0 kPa) without structural upgrade."]} />

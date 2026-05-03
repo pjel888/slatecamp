@@ -84,17 +84,17 @@ Extracted summary:
 - **Ignoring coordination hierarchy.** Route constrained systems first (gravity drains, large ducts).
 - **Forgetting PH-specific standards.** PEC, NPCP, RA 9514 — use Philippine codes, not international equivalents.
 
-\[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: The design principle guiding MEP coordination is: route the most constrained system first. Gravity drains (which must slope) and large HVAC ducts (which cannot easily bend) should be coordinated into 
 \[/SLATECAMP_UI_BLOCK\]
-\[SLATECAMP_UI_BLOCK:ui_0007 component="Warn" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: When the LEA presents a question that references both a legal obligation and a technical requirement, pay close attention to whether it is asking about the legal process (jurisdiction of Laws) or the 
 \[/SLATECAMP_UI_BLOCK\]
-\[SLATECAMP_UI_BLOCK:ui_0009 component="Tip" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: Study reverberation time alongside the Theory subtopic on Design Perception and the Materials subtopic on interior finishes. The connection point is the acoustic absorption coefficient (α) of differen

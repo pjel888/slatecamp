@@ -457,7 +457,7 @@ Extracted summary:
 
 ## Exam Tip
 
-ALE Trap: Competition types: (1) OPEN = any qualified architect, (2) INVITED = selected architects only, (3) LIMITED = pre-qualified firms, (4) STUDENT = architecture students. Jury = 5 members minimum (majority must be architects). Winner gets: (a) cash prize OR (b) commission. The architect RETAINS copyright of competition entries (unless the contract specifically transfers it).
+LEA Trap: Competition types: (1) OPEN = any qualified architect, (2) INVITED = selected architects only, (3) LIMITED = pre-qualified firms, (4) STUDENT = architecture students. Jury = 5 members minimum (majority must be architects). Winner gets: (a) cash prize OR (b) commission. The architect RETAINS copyright of competition entries (unless the contract specifically transfers it).
 
 ## Cross‑References
 

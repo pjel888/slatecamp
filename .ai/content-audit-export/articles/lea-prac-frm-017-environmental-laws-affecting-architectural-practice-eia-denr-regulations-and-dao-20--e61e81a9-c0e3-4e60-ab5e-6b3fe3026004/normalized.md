@@ -71,7 +71,7 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: ⚠️ ECC REQUIREMENT: Projects classified as Environmentally Critical (ECPs) or in Environmentally Critical Areas (ECAs) REQUIRE an ECC before construction. Construction without an ECC is an environmental law violation. — expect this as a trap answer on the ALE.
+- Text: ⚠️ ECC REQUIREMENT: Projects classified as Environmentally Critical (ECPs) or in Environmentally Critical Areas (ECAs) REQUIRE an ECC before construction. Construction without an ECC is an environmental law violation. — expect this as a trap answer on the LEA.
 [/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
@@ -100,3 +100,9 @@ Extracted summary:
 - [RA 9266 Legal Framework](lea-prac-law-001)
 - [Government Procurement](lea-prac-frm-012)
 - [Environmental Laws](lea-prac-frm-017)
+
+[SLATECAMP_UI_BLOCK:ui_0001 component="JSX" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: null
+[/SLATECAMP_UI_BLOCK:ui_0001 component="JSX" status="preserved"]

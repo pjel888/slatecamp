@@ -6,7 +6,7 @@ After reading this article, you should be able to:
 - Describe the deliverables and activities of Schematic Design (Phase 2 under SPP 202): conceptual plans, elevations, and preliminary cost estimates.
 - Identify the key design decisions made during Schematic Design: project delivery method, design concept, and updated SPPCC.
 - Explain the fee allocation for Schematic Design under SPP 202 and how it relates to the total design fee.
-- Apply Schematic Design phase requirements to ALE scenarios involving owner approval, cost feedback, and design progression.
+- Apply Schematic Design phase requirements to LEA scenarios involving owner approval, cost feedback, and design progression.
 
 ### Schematic Design Deliverables and Activities
 

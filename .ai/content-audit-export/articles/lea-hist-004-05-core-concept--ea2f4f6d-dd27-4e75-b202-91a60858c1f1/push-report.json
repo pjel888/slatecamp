@@ -1,11 +1,9 @@
 {
-  "attempted_at": "2026-05-03T10:56:01.160Z",
+  "attempted_at": "2026-05-03T11:49:34.669Z",
   "dry_run": true,
   "apply": false,
   "pushed": false,
-  "blockers": [
-    "ui-blocks.json contains unknown/unparseable blocks; rerun with --force only after manual review."
-  ],
+  "blockers": [],
   "warnings": [
     "Dry-run mode: no Supabase mutation will be performed."
   ],
@@ -17,7 +15,7 @@
   ],
   "remote_hash_before": "sha256:43b47ff0ecd14a3994c8276d761a5421e66ce94b684c120a9d72c43ded913162",
   "original_hash": "sha256:43b47ff0ecd14a3994c8276d761a5421e66ce94b684c120a9d72c43ded913162",
-  "candidate_hash": "sha256:5dfb9c65d7dbdfeb686f69addab37ddcd142d413bd34510b03306a6bdfcedeb5",
+  "candidate_hash": "sha256:c8a98a742a8136804edef609e69c418eae7464f3786f3b24e50192ba480b9241",
   "stale_check_passed": true,
   "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
 }

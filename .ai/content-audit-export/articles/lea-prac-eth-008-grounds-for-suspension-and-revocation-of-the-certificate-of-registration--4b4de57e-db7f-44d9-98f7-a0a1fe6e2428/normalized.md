@@ -1,6 +1,6 @@
 ## Grounds for Suspension and Revocation of the Certificate of Registration
 ## Learning Goal
-After reading this article, you should understand the key concepts tested in the ALE for this topic, including the four statutory grounds under RA 9266 Section 23, the distinction between suspension and revocation, and the procedural framework for disciplinary action.
+After reading this article, you should understand the key concepts tested in the LEA for this topic, including the four statutory grounds under RA 9266 Section 23, the distinction between suspension and revocation, and the procedural framework for disciplinary action.
 
 The Certificate of Registration grants architects the legal authority to practice, sign and seal documents, and represent themselves as licensed professionals. The Board of Architecture may suspend or revoke registration upon discovery of grounds establishing violation of law, ethics violations, or professional incompetence.
 
@@ -26,7 +26,7 @@ This ground addresses the integrity of the licensing system itself. Examples inc
 [SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: ⚠️ **Critical Distinction:** Fraud or deceit under Sec 23(b) applies specifically to obtaining *registration*, not to fraudulent conduct in professional practice. Fraud during practice falls under Sec 23... — expect this as a trap answer on the ALE.
+- Text: ⚠️ **Critical Distinction:** Fraud or deceit under Sec 23(b) applies specifically to obtaining *registration*, not to fraudulent conduct in professional practice. Fraud during practice falls under Sec 23... — expect this as a trap answer on the LEA.
 [/SLATECAMP_UI_BLOCK]
 
 **Gross Negligence, Incompetence, or Recklessness (RA 9266 Sec 23(c))**
@@ -51,10 +51,10 @@ RA 9266 Section 24 permits reinstatement after two years from the revocation dat
 [SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Priority — Know These 4 Grounds for Certain:**
+- Text: **LEA Priority — Know These 4 Grounds for Certain:**
   1. Sec 23(a): Code of Ethical Conduct violations (most tested)
   2. Sec 23(b): Fraud in OBTAINING registration (not fraud during practice)
-  3. S — this distinction appears on every ALE cycle.
+  3. S — this distinction appears on every LEA cycle.
 [/SLATECAMP_UI_BLOCK]
 
 ### LEA Test Points

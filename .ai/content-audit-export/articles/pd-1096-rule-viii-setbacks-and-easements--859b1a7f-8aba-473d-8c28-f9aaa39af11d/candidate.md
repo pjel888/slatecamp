@@ -631,7 +631,7 @@ _Study well. See you at the Board._
 
 ## Exam Tip
 
-ALE Trap: Minimum setbacks by occupancy and fire zone: 1-2 story = front 3.0 m, sides 2.0 m, rear 2.0 m | 3-4 story = front 4.5 m, sides 3.0 m, rear 3.0 m | 5+ story = front 6.0 m, sides 4.5 m, rear 4.5 m. Corner lots: both front-facing street sides = front yard requirements. The 3.0 m front setback for 1-2 story buildings is the most tested.
+LEA Trap: Minimum setbacks by occupancy and fire zone: 1-2 story = front 3.0 m, sides 2.0 m, rear 2.0 m | 3-4 story = front 4.5 m, sides 3.0 m, rear 3.0 m | 5+ story = front 6.0 m, sides 4.5 m, rear 4.5 m. Corner lots: both front-facing street sides = front yard requirements. The 3.0 m front setback for 1-2 story buildings is the most tested.
 
 ## Cross‑References
 

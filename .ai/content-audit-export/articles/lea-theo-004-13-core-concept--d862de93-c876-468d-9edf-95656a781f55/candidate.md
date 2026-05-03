@@ -234,10 +234,11 @@ Sun shading devices earn **BERDE points** in multiple categories:
 
 ## Key Facts and Testable Items
 
-<WikiExamTable headers={["Shading Device Type", "Optimal Application", "Cooling Load Reduction", "Philippine Effectiveness", "LEA Testing Focus"]} rows={[['["**Horizontal Louvers (Brise-Soleil)**", "South-facing primary windows", "40–50%", "High (sun high-angle year-round)", "Louver angle 45–70°; spacing; depth"]', '["**Vertical Fins**", "East and west facades", "50–70%", "Very High (critical for E/W liability)", "Fin width, spacing, protrusion depth"]', '["**Egg-Crate Screens**", "Combination E/W and high-glare zones", "50–70%", "High (integrated H+V shading)", "Three-dimensional geometry; cell sizing"]', '["**Light Shelves**", "Deep office floor plates (>10 m from window)", "35–45% + daylighting 12–15 m penetration", "Moderate (complementary to direct shading)", "Reflectance ≥90%; shelf angle; ceiling bounce"]', '["**Deep Overhangs**", "South-facing; transitional spaces", "35–50%", "High (vernacular alignment; extended gallery)", "Depth calculation using tangent method"]', '["**Motorized Louvers**", "Premium buildings; seasonal optimization", "45–60% (dynamic) vs. 35–45% (fixed)", "Low-Moderate (cost-benefit marginal in Type I/II perpetual heat)", "Control strategy; sensor integration"]', '["**Switchable Glazing**", "Façade transparency critical (e.g., showcase)", "40–60%", "Low (high cost; marginal benefit in tropical)", "Transmittance range; color uniformity"]', '["**Manual Roller Shades**", "Schools, public buildings, occupied offices", "30–50%", "Moderate (dependent on occupant behavior)", "Cost-effectiveness; occupant reliability"]', '["**Brise-Soleil (Fixed 3D)**", "Architectural expression + performance", "45–65%", "Very High (aesthetic integration)", "Le Corbusier geometric principles; pattern evolution"]', '["**Overhang Sizing (Tangent Calc.)**", "All facades; baseline requirement", "20–50% (depth-dependent)", "Universal", "Window height; solar altitude; seasonal variation"]']]} />
-## How It's Tested on the LEA
-
-<ExamTip>1. **Overhang Design Calculation**: Design south-facing windows for a Batanes building (20°N latitude). Winter solstice noon altitude = 53.5°. Window height = 2.5 m. Calculate required overhang depth to prevent direct penetration. Verify summer (79°) and equinox (69°) penetration is acceptable (diffuse only).</ExamTip>
+ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 1. **Overhang Design Calculation**: Design south-facing windows for a Batanes building (20°N latitude). Winter solstice noon altitude = 53.5°. Window height = 2.5 m. Calculate required overhang depth to prevent direct penetration. Verify summer (79°) and equinox (69°) penetration is acceptable (diffuse only).
+[/SLATECAMP_UI_BLOCK]
 
 <ExamTip>2. **East-West Facade Shading Strategy**: A 14-story Manila office building has 40% of its facade area facing east and west (solar liability). Design a comprehensive shading strategy combining vertical fins, horizontal shelves, and glazing selection. Calculate cooling load reduction percentage. Specify material, spacing, and angle.</ExamTip>
 

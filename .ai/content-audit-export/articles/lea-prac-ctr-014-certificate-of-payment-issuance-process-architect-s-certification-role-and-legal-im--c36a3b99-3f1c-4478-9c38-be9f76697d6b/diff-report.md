@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-ctr-014-certificate-of-payment-issuance-process-architect-s-certification-role-and-legal-implications
 
-Generated: 2026-05-03T10:55:46.152Z
+Generated: 2026-05-03T11:49:22.854Z
 Article ID: c36a3b99-3f1c-4478-9c38-be9f76697d6b
 Changed: true
 Safe to push locally: true
@@ -8,8 +8,8 @@ Safe to push locally: true
 ## Hashes
 
 - Original: `sha256:3d337b3cf873fcb3bc494cef43605ac5b2b913feb5ae7535adf8085e058ad3b5`
-- Normalized: `sha256:ffa4ba231fd3b2b27922ca13bae814b9f21f925b4215b0b2b50adeaf6994aadd`
-- Candidate: `sha256:ffa4ba231fd3b2b27922ca13bae814b9f21f925b4215b0b2b50adeaf6994aadd`
+- Normalized: `sha256:f09779fd22199d4686137c3158d6bcaa652d23b154ae93410814ddecbdf450cf`
+- Candidate: `sha256:f09779fd22199d4686137c3158d6bcaa652d23b154ae93410814ddecbdf450cf`
 
 ## Line summary
 

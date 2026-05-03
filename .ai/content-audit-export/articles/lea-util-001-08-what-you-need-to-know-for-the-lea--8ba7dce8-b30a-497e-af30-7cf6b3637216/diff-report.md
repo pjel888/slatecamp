@@ -1,34 +1,32 @@
 # Content Diff Report: lea-util-001-08-what-you-need-to-know-for-the-lea
 
-Generated: 2026-05-03T07:49:30.200Z
+Generated: 2026-05-03T11:50:06.066Z
 Article ID: 8ba7dce8-b30a-497e-af30-7cf6b3637216
 Changed: true
-Safe to push locally: false
+Safe to push locally: true
 
 ## Hashes
 
 - Original: `sha256:30870aa732287e73a86bcf92615b64625d3d5cca4ba55c331d461331ad37dc71`
-- Normalized: `sha256:6486dd8346dbab06d2b70aa48ef4787b728c37c675e9af75b87ae97b12bfde3f`
-- Candidate: `sha256:6486dd8346dbab06d2b70aa48ef4787b728c37c675e9af75b87ae97b12bfde3f`
+- Normalized: `sha256:53d968a2962012d984face5544564ae2af6b3cad53d061cd7db7c1f48f629f75`
+- Candidate: `sha256:faa87c4fd9a60f401221b3a6a4f03045c303d51425d1f2f08568d1b46319d09e`
 
 ## Line summary
 
-- Changed lines: 169
+- Changed lines: 170
 - Inserted lines: 0
-- Deleted lines: 155
+- Deleted lines: 164
 
 ## UI block preservation
 
-- UI blocks expected: 3
-- UI blocks preserved: 0
-- UI blocks changed/missing: 3
-- Unresolved placeholders: 1
+- UI blocks expected: 1
+- UI blocks preserved: 1
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate contains unresolved UI block placeholders.
-- Candidate is missing 3 preserved UI block(s).
-- original.md hash does not match article metadata export hash.
+- None
 
 ## Warnings
 

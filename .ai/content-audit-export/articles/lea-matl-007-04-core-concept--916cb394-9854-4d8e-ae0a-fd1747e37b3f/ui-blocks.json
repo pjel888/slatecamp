@@ -4,7 +4,7 @@
   "normalized_created_at": "2026-05-01T13:33:43.319Z",
   "parser_version": "ui-block-parser-v1",
   "original_content_hash": "sha256:969336dc8bc2242dfd1ecb504488c7552f92d990ffceb53ba35ce21e5774d1c2",
-  "normalized_content_hash": "87faa53c66dfbae8a473f659cc46052d68ff0312b9e05e047f1818ef72b37c6f",
+  "normalized_content_hash": "087e3407538cc0b9335115fd1e1f9f69824d210f3edad039f39b881201d95683",
   "ui_block_count": 6,
   "total_blocks": 6,
   "blocks": [
@@ -12,15 +12,15 @@
       "block_id": "ui_0001",
       "block_type": "mdx_component",
       "component_name": "Tip",
-      "raw": "<Tip>Memory aid: VOC &lt;300 g/L for interior latex (low-VOC). Oil enamel has higher VOC but better durability on metal. Primer is 90% of paint success\u2014don't skip it. Intumescent paint is required for structural steel fire protection, not aesthetic protection. Coverage rate drives project cost and timeline.</Tip>",
+      "raw": "<Tip>Memory aid: VOC &lt;300 g/L for interior latex (low-VOC). Oil enamel has higher VOC but better durability on metal. Primer is 90% of paint success—don't skip it. Intumescent paint is required for structural steel fire protection, not aesthetic protection. Coverage rate drives project cost and timeline.</Tip>",
       "raw_hash": "sha256:08a5bcda60aeae18c71fed204a266454647e5796e7833ad4aa5a2c0dc9b75b97",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: Memory aid: VOC &lt;300 g/L for interior latex (low-VOC). Oil enamel has higher VOC but better durability on metal. Primer is 90% of paint success\u2014don't skip it. Intumescent paint is required for structural steel fire protection, not aesthetic protection. Coverage rate drives project cost and timeline.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: Memory aid: VOC &lt;300 g/L for interior latex (low-VOC). Oil enamel has higher VOC but better durability on metal. Primer is 90% of paint success—don't skip it. Intumescent paint is required for structural steel fire protection, not aesthetic protection. Coverage rate drives project cost and timeline.\n[/SLATECAMP_UI_BLOCK]",
       "placeholder_hash": "sha256:6773f7a68ac1fa43474547a6d5f4f3c65c2e9411a13c4dc87a4cd8fa528abf8e",
       "props": {},
       "props_json": {},
       "props_text": null,
-      "children_raw": "Memory aid: VOC &lt;300 g/L for interior latex (low-VOC). Oil enamel has higher VOC but better durability on metal. Primer is 90% of paint success\u2014don't skip it. Intumescent paint is required for structural steel fire protection, not aesthetic protection. Coverage rate drives project cost and timeline.",
-      "children_text": "Memory aid: VOC &lt;300 g/L for interior latex (low-VOC). Oil enamel has higher VOC but better durability on metal. Primer is 90% of paint success\u2014don't skip it. Intumescent paint is required for structural steel fire protection, not aesthetic protection. Coverage rate drives project cost and timeline.",
+      "children_raw": "Memory aid: VOC &lt;300 g/L for interior latex (low-VOC). Oil enamel has higher VOC but better durability on metal. Primer is 90% of paint success—don't skip it. Intumescent paint is required for structural steel fire protection, not aesthetic protection. Coverage rate drives project cost and timeline.",
+      "children_text": "Memory aid: VOC &lt;300 g/L for interior latex (low-VOC). Oil enamel has higher VOC but better durability on metal. Primer is 90% of paint success—don't skip it. Intumescent paint is required for structural steel fire protection, not aesthetic protection. Coverage rate drives project cost and timeline.",
       "start_offset": 6782,
       "end_offset": 7096,
       "line_start": 55,
@@ -118,19 +118,19 @@
       "block_id": "ui_0005",
       "block_type": "mdx_component",
       "component_name": "WikiMistakeCard",
-      "raw": "<WikiMistakeCard mistake=\"Calculating paint volume without accounting for spreading rate, under-budgeting materials\" correction=\"Coverage rate (8-12 m\u00b2/L) determines volume needed. A 5000 m\u00b2 wall at 10 m\u00b2/L needs 500L per coat. Multiply by number of coats. Budget contingency for waste (5-10%).\" />",
+      "raw": "<WikiMistakeCard mistake=\"Calculating paint volume without accounting for spreading rate, under-budgeting materials\" correction=\"Coverage rate (8-12 m²/L) determines volume needed. A 5000 m² wall at 10 m²/L needs 500L per coat. Multiply by number of coats. Budget contingency for waste (5-10%).\" />",
       "raw_hash": "sha256:2423dd34a45a7a6a97ec3db8db3c69ac197cd91e3c43d92dd654624622dcdbee",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0005 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: mistake=\"Calculating paint volume without accounting for spreading rate, under-budgeting materials\", correction=\"Coverage rate (8-12 m\u00b2/L) determines volume needed. A 5000 m\u00b2 wall at 10 m\u00b2/L needs 500L per coat. Multiply by number of coats. Budget contingency for waste (5-10%).\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0005 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: mistake=\"Calculating paint volume without accounting for spreading rate, under-budgeting materials\", correction=\"Coverage rate (8-12 m²/L) determines volume needed. A 5000 m² wall at 10 m²/L needs 500L per coat. Multiply by number of coats. Budget contingency for waste (5-10%).\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
       "placeholder_hash": "sha256:0482a1dda7ad8fa4b6ed090d45d2ae37cb05f385308f086ba0bb62437e65afe4",
       "props": {
         "mistake": "Calculating paint volume without accounting for spreading rate, under-budgeting materials",
-        "correction": "Coverage rate (8-12 m\u00b2/L) determines volume needed. A 5000 m\u00b2 wall at 10 m\u00b2/L needs 500L per coat. Multiply by number of coats. Budget contingency for waste (5-10%)."
+        "correction": "Coverage rate (8-12 m²/L) determines volume needed. A 5000 m² wall at 10 m²/L needs 500L per coat. Multiply by number of coats. Budget contingency for waste (5-10%)."
       },
       "props_json": {
         "mistake": "Calculating paint volume without accounting for spreading rate, under-budgeting materials",
-        "correction": "Coverage rate (8-12 m\u00b2/L) determines volume needed. A 5000 m\u00b2 wall at 10 m\u00b2/L needs 500L per coat. Multiply by number of coats. Budget contingency for waste (5-10%)."
+        "correction": "Coverage rate (8-12 m²/L) determines volume needed. A 5000 m² wall at 10 m²/L needs 500L per coat. Multiply by number of coats. Budget contingency for waste (5-10%)."
       },
-      "props_text": "mistake=\"Calculating paint volume without accounting for spreading rate, under-budgeting materials\" correction=\"Coverage rate (8-12 m\u00b2/L) determines volume needed. A 5000 m\u00b2 wall at 10 m\u00b2/L needs 500L per coat. Multiply by number of coats. Budget contingency for waste (5-10%).\"",
+      "props_text": "mistake=\"Calculating paint volume without accounting for spreading rate, under-budgeting materials\" correction=\"Coverage rate (8-12 m²/L) determines volume needed. A 5000 m² wall at 10 m²/L needs 500L per coat. Multiply by number of coats. Budget contingency for waste (5-10%).\"",
       "children_raw": null,
       "children_text": null,
       "start_offset": 8110,

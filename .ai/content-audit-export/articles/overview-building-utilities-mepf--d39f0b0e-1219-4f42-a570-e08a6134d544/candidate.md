@@ -4,7 +4,7 @@
 
 ## Learning Goal
 
-Master the building utilities systems tested in the ALE, including: electrical and power systems (PEC), mechanical/HVAC systems (ASHRAE standards), sanitary and plumbing (NPCP), acoustics and illumination, communication systems, fire protection (RA 9514), high-tech/intelligent building systems, and building utilities integration. By the end of this study map, you should understand each system's purpose, components, governing code, and coordination requirements.
+Master the building utilities systems tested in the LEA, including: electrical and power systems (PEC), mechanical/HVAC systems (ASHRAE standards), sanitary and plumbing (NPCP), acoustics and illumination, communication systems, fire protection (RA 9514), high-tech/intelligent building systems, and building utilities integration. By the end of this study map, you should understand each system's purpose, components, governing code, and coordination requirements.
 
 ## Subject Coverage
 
@@ -47,17 +47,17 @@ Practice multi-system scenarios: hospital ED, high-rise residential, school with
 - **Ignoring communication and intelligent building subtopics.** Growing in prominence; often straightforward conceptual questions.
 - **Neglecting coordination principles.** Route the most constrained system first (gravity drains, large ducts) before smaller conduits.
 
-\[SLATECAMP_UI_BLOCK:ui_0002 component="Callout" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: The LEA does not expect architects to be licensed engineers in these systems. It expects architects to know enough to: (1) allocate appropriate space and clearances for equipment, (2) understand syste
 \[/SLATECAMP_UI_BLOCK\]
-\[SLATECAMP_UI_BLOCK:ui_0006 component="Tip" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: Build a one-page system summary for each major system. Include: purpose, key components, governing code, critical design parameters, and one diagram (the system schematic or a typical riser diagram). 
 \[/SLATECAMP_UI_BLOCK\]
-\[SLATECAMP_UI_BLOCK:ui_0008 component="Note" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: Building Utilities is a subject where practice questions are particularly valuable. The scenarios are specific enough that reading theory alone does not build the problem-solving fluency the exam requ

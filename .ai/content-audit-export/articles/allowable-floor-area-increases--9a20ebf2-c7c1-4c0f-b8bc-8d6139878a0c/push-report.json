@@ -1,23 +1,21 @@
 {
-  "attempted_at": "2026-05-03T07:52:47.818Z",
+  "attempted_at": "2026-05-03T11:49:56.282Z",
   "dry_run": true,
   "apply": false,
   "pushed": false,
-  "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
-  ],
+  "blockers": [],
   "warnings": [
     "Dry-run mode: no Supabase mutation will be performed."
   ],
   "updated_rows_count": 0,
   "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
   "slug": "allowable-floor-area-increases",
-  "preparation_actions": [],
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
   "remote_hash_before": "sha256:7c1b24108182ae430b62645f9ff855435f34ecb17141253cfb3e699f189dea0a",
   "original_hash": "sha256:7c1b24108182ae430b62645f9ff855435f34ecb17141253cfb3e699f189dea0a",
-  "candidate_hash": "sha256:bdf82a60d673b133c5da8c0c2276245a92c14a1ba9f4321ce34b52b3c8bf3346",
+  "candidate_hash": "sha256:95820139025382da9ae37134b2db49b3215b9e7b033af5f668d8648f33ff341c",
   "stale_check_passed": true,
   "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
 }

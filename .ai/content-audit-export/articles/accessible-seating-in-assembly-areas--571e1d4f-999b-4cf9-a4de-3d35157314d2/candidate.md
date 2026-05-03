@@ -274,7 +274,7 @@ The 5% priority waiting seats are for **waiting areas** (lobbies, queues). They 
 
 <ExamTip>
 
-**ALE Tip — Dispersal is implied, not explicit.** The 2024 IRR says wheelchair spaces must "adjoin accessible circulation" (Sec. 4.4). It does NOT explicitly say "disperse throughout the seating bowl." However, exam questions expect dispersal because clustering all spaces in one location violates the implied principle of equal access. If an answer choice says "group all spaces at the back row," it is WRONG.
+**LEA Tip — Dispersal is implied, not explicit.** The 2024 IRR says wheelchair spaces must "adjoin accessible circulation" (Sec. 4.4). It does NOT explicitly say "disperse throughout the seating bowl." However, exam questions expect dispersal because clustering all spaces in one location violates the implied principle of equal access. If an answer choice says "group all spaces at the back row," it is WRONG.
 
 </ExamTip>
 

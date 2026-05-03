@@ -55,7 +55,7 @@ The remedies available under RA 8293 include preliminary injunctions to stop ong
 [SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: ⚠️ Function vs. Expression distinction: RA 8293 protects the ORIGINAL EXPRESSION (spatial arrangement, aesthetic proportions, facade design, unique structural concept). It does NOT protect FUNCTIONAL elements required by building code (stair dimensions, conduit sizing, minimum room areas). — expect this as a trap answer on the ALE.
+- Text: ⚠️ Function vs. Expression distinction: RA 8293 protects the ORIGINAL EXPRESSION (spatial arrangement, aesthetic proportions, facade design, unique structural concept). It does NOT protect FUNCTIONAL elements required by building code (stair dimensions, conduit sizing, minimum room areas). — expect this as a trap answer on the LEA.
 [/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]

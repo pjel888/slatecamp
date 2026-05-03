@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee
 
-Generated: 2026-05-03T07:49:28.229Z
+Generated: 2026-05-03T11:50:04.576Z
 Article ID: 617cdac3-3b02-44b0-b81f-f8827fc4242e
 Changed: true
 Safe to push locally: true
@@ -8,8 +8,8 @@ Safe to push locally: true
 ## Hashes
 
 - Original: `sha256:c55dbc1eddf72a6e9233275ca453e9fcfab9c915809f699c184036dd385ce82b`
-- Normalized: `sha256:b06b93c1eaabbd722f7dd17bb829339206066466dad0566ca41dd5f59b083f71`
-- Candidate: `sha256:e8a5f523edd7b560b3ad55d32767aa0a9513c52067a81e566ca85b2e3ac24639`
+- Normalized: `sha256:4f3bab16b78b3c86c3fe6d38c37d99fc35e79158e528192d83ca8cbb5ead045e`
+- Candidate: `sha256:9b5de20d0096337740a5fcf3681050016c09f4ac0b9c4d14c363982bcb779251`
 
 ## Line summary
 

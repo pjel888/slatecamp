@@ -58,7 +58,7 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0005 component="Warn" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: ⚠️ Acceptance of the building does NOT waive rights under Article 1723. The owner's acceptance of keys and occupancy does not extinguish the right to sue for defects — only an express written waiver can release claims. The law prevents IMPLIED waiver through acceptance alone. — expect this as a trap answer on the ALE.
+- Text: ⚠️ Acceptance of the building does NOT waive rights under Article 1723. The owner's acceptance of keys and occupancy does not extinguish the right to sue for defects — only an express written waiver can release claims. The law prevents IMPLIED waiver through acceptance alone. — expect this as a trap answer on the LEA.
 [/SLATECAMP_UI_BLOCK]
 
 ---

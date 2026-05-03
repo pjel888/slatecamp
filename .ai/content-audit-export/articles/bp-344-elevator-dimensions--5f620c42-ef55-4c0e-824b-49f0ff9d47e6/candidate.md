@@ -263,7 +263,7 @@ fails the 2024 IRR on **at least four specific counts**.[file:4] Name each viola
 
 ## Exam Tip
 
-ALE Swipe: Elevator cab minimum: 1.20 m × 1.30 m (small occupancy) or 1.60 m × 1.50 m (large occupancy > 500 persons). Door clear opening = 900 mm minimum. Call buttons: 900-1,100 mm from floor. Braille required on all floor buttons. Audible annunciator for each floor. The 900 mm door opening is the most tested dimension.
+LEA Swipe: Elevator cab minimum: 1.20 m × 1.30 m (small occupancy) or 1.60 m × 1.50 m (large occupancy > 500 persons). Door clear opening = 900 mm minimum. Call buttons: 900-1,100 mm from floor. Braille required on all floor buttons. Audible annunciator for each floor. The 900 mm door opening is the most tested dimension.
 
 ## Cross‑References
 

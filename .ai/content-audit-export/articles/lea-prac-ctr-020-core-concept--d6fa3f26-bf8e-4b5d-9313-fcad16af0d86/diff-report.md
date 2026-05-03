@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-ctr-020-core-concept
 
-Generated: 2026-05-03T10:55:33.765Z
+Generated: 2026-05-03T11:49:12.511Z
 Article ID: d6fa3f26-bf8e-4b5d-9313-fcad16af0d86
 Changed: true
 Safe to push locally: true

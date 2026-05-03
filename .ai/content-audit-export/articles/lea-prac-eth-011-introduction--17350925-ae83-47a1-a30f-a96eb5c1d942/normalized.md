@@ -1,6 +1,6 @@
 ## Introduction
 ## Learning Goal
-After reading this article, you should understand the key concepts tested in the ALE for this topic, including relevant code provisions, dimensional standards, and common exam applications.
+After reading this article, you should understand the key concepts tested in the LEA for this topic, including relevant code provisions, dimensional standards, and common exam applications.
 
 Conflicts of interest represent one of the most challenging ethical issues in architectural practice. Unlike clear violations (fraud, negligence), conflicts exist in shades of gray. An architect may have competing interests that cloud judgment, yet honestly believe she will act objectively. The Code of Ethical Conduct and RA 9266 require more than honest intention—they require **disclosure and client informed consent**.
 
@@ -57,7 +57,7 @@ Financial conflicts occur when the architect has direct or indirect economic int
 [SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Test Point:** The fact that equivalent products exist is irrelevant. If the architect benefits financially from selecting one supplier over another, that's a conflict requiring disclosure, regardless of product quality. Disclosure isn't always easy—clients may react negatively—but it's ethically mandatory — this distinction appears on every ALE cycle.
+- Text: **LEA Test Point:** The fact that equivalent products exist is irrelevant. If the architect benefits financially from selecting one supplier over another, that's a conflict requiring disclosure, regardless of product quality. Disclosure isn't always easy—clients may react negatively—but it's ethically mandatory — this distinction appears on every LEA cycle.
 [/SLATECAMP_UI_BLOCK]
 
 ### Type 1B: Investment in Contractor or Vendor
@@ -181,7 +181,7 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Test Point:** Personal romantic relationships with vendors or contractors create conflicts so inherent that disclosure may not be sufficient ethical remedy. Best practice: Recuse yourself entirely from recommendations involving persons with whom you have romantic relationships — this distinction appears on every ALE cycle.
+- Text: **LEA Test Point:** Personal romantic relationships with vendors or contractors create conflicts so inherent that disclosure may not be sufficient ethical remedy. Best practice: Recuse yourself entirely from recommendations involving persons with whom you have romantic relationships — this distinction appears on every LEA cycle.
 [/SLATECAMP_UI_BLOCK]
 
 ### Type 3C: Friendship and Social Relationships
@@ -332,13 +332,13 @@ The PRBoA enforces conflict of interest rules through discipline:
 [SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Exam Insight:** Questions about conflicts often test whether candidates understand that: 1. A conflict exists based on objective circumstances, not subjective belief in objectivity 2. Disclosure is the primary remedy for most conflicts 3. Some conflicts are so fundamental they require recusal 4. Concealing a conflict and profiting from it is more serious than disclosing it 5. Even clients' consent doesn't eliminate the ethical duty to disclose — this distinction appears on every ALE cycle.
+- Text: **LEA Exam Insight:** Questions about conflicts often test whether candidates understand that: 1. A conflict exists based on objective circumstances, not subjective belief in objectivity 2. Disclosure is the primary remedy for most conflicts 3. Some conflicts are so fundamental they require recusal 4. Concealing a conflict and profiting from it is more serious than disclosing it 5. Even clients' consent doesn't eliminate the ethical duty to disclose — this distinction appears on every LEA cycle.
 [/SLATECAMP_UI_BLOCK]
 
 
 ## About This Article
 
-This article is part of the SlateCamp Professional Practice Content Engine for LEA preparation. It synthesizes regulatory frameworks, case law principles, and professional standards into competency-based learning outcomes aligned with the Architecture Licensure Examination syllabus.
+This article is part of the SlateCamp Professional Practice Content Engine for LEA preparation. It synthesizes regulatory frameworks, case law principles, and professional standards into competency-based learning outcomes aligned with the Licensure Examination for Architects syllabus.
 
 **Revision History:**
 - 2026-03-22: Initial publication covering conflict of interest management

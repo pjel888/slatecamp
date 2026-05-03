@@ -6,22 +6,20 @@
 
 After studying this article, you should be able to:
 
-- List the ALE eligibility requirements: BS Architecture, DAE, moral character certificates.
+- List the LEA eligibility requirements: BS Architecture, DAE, moral character certificates.
 - Explain the Documentary Alternative Evaluation (DAE) process and who qualifies.
 - State the required documents for examination application.
-- Identify the grounds for disqualification from taking the ALE.
-
-
+- Identify the grounds for disqualification from taking the LEA.
 
 [SLATECAMP_UI_BLOCK:ui_0008 component="LawCallout" status="preserved"]
 Extracted summary:
 - Props: code=ra9266, title=RA 9266, Section 13 — LEA Eligibility Requirements
-- Text: Legal Basis: RA 9266 (Architecture Act of 2004), Section 13 (Qualifications for Admission to the Architect Licensure Examination); PRBoA Resolutions on DAE implementation.
+- Text: Legal Basis: RA 9266 (Architecture Act of 2004), Section 13 (Qualifications for Admission to the Licensure Examination for Architects); PRBoA Resolutions on DAE implementation.
 [/SLATECAMP_UI_BLOCK]
 
 ### Academic Foundation and Moral Character
 
-To apply for the Architect Licensure Examination (LEA), candidates must meet four fundamental requirements established under RA 9266, Section 13. First, applicants must hold a Bachelor of Science degree in Architecture from a school, college, academy, or institute duly recognized and accredited by the Commission on Higher Education (CHED). This ensures all candidates have completed a rigorous five-year architectural curriculum. Second, all applicants must be of _good moral character_, established through documentary evidence and a valid NBI clearance. Third, candidates must possess Diversified Architectural Experience (DAE) of _two (2) years_ documented through an Architect-Mentor Affidavit. Fourth, applicants must not have been convicted of any criminal offense involving moral turpitude.
+To apply for the Licensure Examination for Architects (LEA), candidates must meet four fundamental requirements established under RA 9266, Section 13. First, applicants must hold a Bachelor of Science degree in Architecture from a school, college, academy, or institute duly recognized and accredited by the Commission on Higher Education (CHED). This ensures all candidates have completed a rigorous five-year architectural curriculum. Second, all applicants must be of _good moral character_, established through documentary evidence and a valid NBI clearance. Third, candidates must possess Diversified Architectural Experience (DAE) of _two (2) years_ documented through an Architect-Mentor Affidavit. Fourth, applicants must not have been convicted of any criminal offense involving moral turpitude.
 
 ### Diversified Architectural Experience (DAE) Requirements
 
@@ -42,18 +40,16 @@ A critical advantage exists for candidates holding a Master's degree in Architec
 [SLATECAMP_UI_BLOCK:ui_0006 component="Warn" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: ⚠️ Fraudulent applications — false evidence or misrepresentation — result in **denial of registration** and, if discovered later, **suspension or revocation** of the Certificate of Registration. The Boar... — expect this as a trap answer on the ALE.
+- Text: ⚠️ Fraudulent applications — false evidence or misrepresentation — result in **denial of registration** and, if discovered later, **suspension or revocation** of the Certificate of Registration. The Boar... — expect this as a trap answer on the LEA.
 [/SLATECAMP_UI_BLOCK]
 
 The Board requires submission of all supporting documents before examination registration is finalized. These include the Diversified Architecture Experience Logbook, the architect-mentor's Professional Tax Receipt (PTR) and Integrated and Accredited Professional Organization of Architects (IAPOA) number, copies of the mentor's valid Professional ID, and original college diplomas or baccalaureate transcripts with graduation dates and the remark "For Board Examination Purposes" clearly marked. Fraudulent applications containing false evidence or misrepresentations result in denial of registration or, if discovered later, suspension or revocation of the Certificate of Registration. The Board reserves the right to verify all credentials with CHED and the National Bureau of Investigation before proceeding with examination approval.
-
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
 - Text: The four LEA eligibility requirements (C-A-A-E): Citizenship (Filipino), Age (21+ at exam time), Academics (B.S. Arch from CHED-recognized school), Experience (DAE — minimum 2 years or 3,840 hours).
 [/SLATECAMP_UI_BLOCK]
-
 
 [SLATECAMP_UI_BLOCK:ui_0005 component="Note" status="preserved"]
 Extracted summary:
@@ -63,17 +59,17 @@ Extracted summary:
 
 ---
 
-\[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+\
 Extracted summary:
 - Props: 
-- Text: Legal Basis: RA 9266 (Architecture Act of 2004), Section 13 (Qualifications for Admission to the Architect Licensure Examination); PRBoA Resolutions on DAE implementation.
+- Text: Legal Basis: RA 9266 (Architecture Act of 2004), Section 13 (Qualifications for Admission to the Licensure Examination for Architects); PRBoA Resolutions on DAE implementation.
 \[/SLATECAMP_UI_BLOCK\]
-\[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: A Master's degree in Architecture reduces the DAE requirement by **one (1) year** (from 2 years to 1 year). This is a commonly tested advantage. The reduction applies only to Master's degrees from CHE
 \[/SLATECAMP_UI_BLOCK\]
-\[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: Fraudulent applications — false evidence or misrepresentation — result in **denial of registration** and, if discovered later, **suspension or revocation** of the Certificate of Registration. The Boar

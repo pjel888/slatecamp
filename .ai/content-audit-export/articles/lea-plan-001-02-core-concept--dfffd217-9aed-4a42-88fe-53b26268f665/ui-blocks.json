@@ -4,7 +4,7 @@
   "normalized_created_at": "2026-05-01T13:33:43.944Z",
   "parser_version": "ui-block-parser-v1",
   "original_content_hash": "sha256:eb00239ceb23d3c941b171d3daa41091b372a4db227c5dfa00db22d1d806f7d5",
-  "normalized_content_hash": "sha256:eb00239ceb23d3c941b171d3daa41091b372a4db227c5dfa00db22d1d806f7d5",
+  "normalized_content_hash": "8c0ac5846cb91809f1c4b72a99b9040a3af1aec6319fc11b91171be3e99196b9",
   "ui_block_count": 5,
   "total_blocks": 5,
   "blocks": [
@@ -514,15 +514,15 @@
       "block_id": "ui_0004",
       "block_type": "mdx_component",
       "component_name": "Tip",
-      "raw": "<Tip>\n**Time horizon memory:** STRATEGIC = 10\u201320 years (think 2045 vision). TACTICAL = 1\u20135 years (specific projects starting soon). OPERATIONAL = 0\u20131 year (permits, budgets, now). Always match the time horizon to the classification.\n</Tip>",
+      "raw": "<Tip>\n**Time horizon memory:** STRATEGIC = 10–20 years (think 2045 vision). TACTICAL = 1–5 years (specific projects starting soon). OPERATIONAL = 0–1 year (permits, budgets, now). Always match the time horizon to the classification.\n</Tip>",
       "raw_hash": "sha256:74c2f2dae57387bdeb5eac0e133fbee823c7dec61bc3fcccc775ae5870c1df4a",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: **Time horizon memory:** STRATEGIC = 10\u201320 years (think 2045 vision). TACTICAL = 1\u20135 years (specific projects starting soon). OPERATIONAL = 0\u20131 year (permits, budgets, now). Always match the time horizon to the classification.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: **Time horizon memory:** STRATEGIC = 10–20 years (think 2045 vision). TACTICAL = 1–5 years (specific projects starting soon). OPERATIONAL = 0–1 year (permits, budgets, now). Always match the time horizon to the classification.\n[/SLATECAMP_UI_BLOCK]",
       "placeholder_hash": "sha256:bb0f3b80380ea1d9ebb73a7a92c171a8d7d8d42f2a3fae0685b61ad073eb49f7",
       "props": {},
       "props_json": {},
       "props_text": null,
-      "children_raw": "\n**Time horizon memory:** STRATEGIC = 10\u201320 years (think 2045 vision). TACTICAL = 1\u20135 years (specific projects starting soon). OPERATIONAL = 0\u20131 year (permits, budgets, now). Always match the time horizon to the classification.\n",
-      "children_text": "**Time horizon memory:** STRATEGIC = 10\u201320 years (think 2045 vision). TACTICAL = 1\u20135 years (specific projects starting soon). OPERATIONAL = 0\u20131 year (permits, budgets, now). Always match the time horizon to the classification.",
+      "children_raw": "\n**Time horizon memory:** STRATEGIC = 10–20 years (think 2045 vision). TACTICAL = 1–5 years (specific projects starting soon). OPERATIONAL = 0–1 year (permits, budgets, now). Always match the time horizon to the classification.\n",
+      "children_text": "**Time horizon memory:** STRATEGIC = 10–20 years (think 2045 vision). TACTICAL = 1–5 years (specific projects starting soon). OPERATIONAL = 0–1 year (permits, budgets, now). Always match the time horizon to the classification.",
       "start_offset": 6954,
       "end_offset": 7193,
       "line_start": 33,
@@ -536,17 +536,17 @@
       "block_id": "ui_0005",
       "block_type": "mdx_component",
       "component_name": "WikiMistakeList",
-      "raw": "<WikiMistakeList mistakes={[\"Confusing strategic planning with any plan \u2014 strategic must be 10+ years\", \"Thinking tactical planning is physical improvements; it's actually mid-term policies and projects\", \"Assuming all planning approaches (rational, incremental, advocacy, communicative) are equally dominant \u2014 rational was postwar dominant; others emerged as critiques\", \"Forgetting the CLUP is strategic, not tactical \u2014 the zoning ordinance implements it tactically\", \"Not recognizing that approach (how decisions are made) is separate from sclea and time horizon\"]} />",
+      "raw": "<WikiMistakeList mistakes={[\"Confusing strategic planning with any plan — strategic must be 10+ years\", \"Thinking tactical planning is physical improvements; it's actually mid-term policies and projects\", \"Assuming all planning approaches (rational, incremental, advocacy, communicative) are equally dominant — rational was postwar dominant; others emerged as critiques\", \"Forgetting the CLUP is strategic, not tactical — the zoning ordinance implements it tactically\", \"Not recognizing that approach (how decisions are made) is separate from sclea and time horizon\"]} />",
       "raw_hash": "sha256:153fbc6fa2638cb99d11961464be1777429dbf0ba774982e95c3986c70ad2a68",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0005 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\\"Confusing strategic planning with any plan \u2014 strategic must be 10+ years\\\", \\\"Thinking tactical planning is physical improvements; it's actually mid-term policies and projects\\\", \\\"Assuming all planning approaches (rational, incremental, advocacy, communicative) are equally dominant \u2014 rational was postwar dominant; others emerged as critiques\\\", \\\"Forgetting the CLUP is strategic, not tactical \u2014 the zoning ordinance implements it tactically\\\", \\\"Not recognizing that approach (how decisions are made) is separate from sclea and time horizon\\\"]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0005 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\\"Confusing strategic planning with any plan — strategic must be 10+ years\\\", \\\"Thinking tactical planning is physical improvements; it's actually mid-term policies and projects\\\", \\\"Assuming all planning approaches (rational, incremental, advocacy, communicative) are equally dominant — rational was postwar dominant; others emerged as critiques\\\", \\\"Forgetting the CLUP is strategic, not tactical — the zoning ordinance implements it tactically\\\", \\\"Not recognizing that approach (how decisions are made) is separate from sclea and time horizon\\\"]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
       "placeholder_hash": "sha256:0e4017973bf0c38ae7dec5af7351dc1d68a3712f2686f5bc38efa9891f8f842f",
       "props": {
-        "mistakes": "{[\"Confusing strategic planning with any plan \u2014 strategic must be 10+ years\", \"Thinking tactical planning is physical improvements; it's actually mid-term policies and projects\", \"Assuming all planning approaches (rational, incremental, advocacy, communicative) are equally dominant \u2014 rational was postwar dominant; others emerged as critiques\", \"Forgetting the CLUP is strategic, not tactical \u2014 the zoning ordinance implements it tactically\", \"Not recognizing that approach (how decisions are made) is separate from sclea and time horizon\"]}"
+        "mistakes": "{[\"Confusing strategic planning with any plan — strategic must be 10+ years\", \"Thinking tactical planning is physical improvements; it's actually mid-term policies and projects\", \"Assuming all planning approaches (rational, incremental, advocacy, communicative) are equally dominant — rational was postwar dominant; others emerged as critiques\", \"Forgetting the CLUP is strategic, not tactical — the zoning ordinance implements it tactically\", \"Not recognizing that approach (how decisions are made) is separate from sclea and time horizon\"]}"
       },
       "props_json": {
-        "mistakes": "{[\"Confusing strategic planning with any plan \u2014 strategic must be 10+ years\", \"Thinking tactical planning is physical improvements; it's actually mid-term policies and projects\", \"Assuming all planning approaches (rational, incremental, advocacy, communicative) are equally dominant \u2014 rational was postwar dominant; others emerged as critiques\", \"Forgetting the CLUP is strategic, not tactical \u2014 the zoning ordinance implements it tactically\", \"Not recognizing that approach (how decisions are made) is separate from sclea and time horizon\"]}"
+        "mistakes": "{[\"Confusing strategic planning with any plan — strategic must be 10+ years\", \"Thinking tactical planning is physical improvements; it's actually mid-term policies and projects\", \"Assuming all planning approaches (rational, incremental, advocacy, communicative) are equally dominant — rational was postwar dominant; others emerged as critiques\", \"Forgetting the CLUP is strategic, not tactical — the zoning ordinance implements it tactically\", \"Not recognizing that approach (how decisions are made) is separate from sclea and time horizon\"]}"
       },
-      "props_text": "mistakes={[\"Confusing strategic planning with any plan \u2014 strategic must be 10+ years\", \"Thinking tactical planning is physical improvements; it's actually mid-term policies and projects\", \"Assuming all planning approaches (rational, incremental, advocacy, communicative) are equally dominant \u2014 rational was postwar dominant; others emerged as critiques\", \"Forgetting the CLUP is strategic, not tactical \u2014 the zoning ordinance implements it tactically\", \"Not recognizing that approach (how decisions are made) is separate from sclea and time horizon\"]}",
+      "props_text": "mistakes={[\"Confusing strategic planning with any plan — strategic must be 10+ years\", \"Thinking tactical planning is physical improvements; it's actually mid-term policies and projects\", \"Assuming all planning approaches (rational, incremental, advocacy, communicative) are equally dominant — rational was postwar dominant; others emerged as critiques\", \"Forgetting the CLUP is strategic, not tactical — the zoning ordinance implements it tactically\", \"Not recognizing that approach (how decisions are made) is separate from sclea and time horizon\"]}",
       "children_raw": null,
       "children_text": null,
       "start_offset": 7215,

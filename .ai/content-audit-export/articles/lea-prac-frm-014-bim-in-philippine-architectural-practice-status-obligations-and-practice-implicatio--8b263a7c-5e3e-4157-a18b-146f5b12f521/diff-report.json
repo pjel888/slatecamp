@@ -1,42 +1,40 @@
 {
   "article_id": "8b263a7c-5e3e-4157-a18b-146f5b12f521",
   "slug": "lea-prac-frm-014-bim-in-philippine-architectural-practice-status-obligations-and-practice-implications",
-  "generated_at": "2026-05-03T10:55:39.008Z",
+  "generated_at": "2026-05-03T11:49:16.834Z",
   "old_hash": "sha256:e8dc12abd82c8edc6037030132d5a06f681ae015a8d7ce70242d5fec6eae2438",
-  "new_hash": "sha256:15333483032c6410787e6cb4a492735bccfb7829d5f74a1681885a3fdb8ec822",
+  "new_hash": "sha256:3e5c1f3a8b79eeff378d26bb1311570754b8f19f9df28c769ced842b4b6b9f8a",
   "original_hash": "sha256:e8dc12abd82c8edc6037030132d5a06f681ae015a8d7ce70242d5fec6eae2438",
-  "normalized_hash": "sha256:f84987841787270ae0478a025689037beb89126b51f33cde88582a3b578b3b81",
-  "candidate_hash": "sha256:15333483032c6410787e6cb4a492735bccfb7829d5f74a1681885a3fdb8ec822",
+  "normalized_hash": "sha256:6cf2dd341f43c86a657846fec1c5da49179b115a3f721f3a8dd068510fad01cb",
+  "candidate_hash": "sha256:3e5c1f3a8b79eeff378d26bb1311570754b8f19f9df28c769ced842b4b6b9f8a",
   "changed": true,
-  "changed_line_count": 70,
-  "inserted_line_count": 37,
+  "changed_line_count": 76,
+  "inserted_line_count": 43,
   "deleted_line_count": 0,
-  "ui_blocks_original_count": 4,
+  "ui_blocks_original_count": 3,
   "ui_blocks_candidate_count": 3,
-  "ui_blocks_changed_count": 1,
-  "ui_blocks_count": 4,
-  "unresolved_placeholders_count": 0,
+  "ui_blocks_changed_count": 0,
+  "ui_blocks_count": 3,
+  "unresolved_placeholders_count": 1,
   "preserved_blocks_count": 3,
   "changed_text_summary": {
-    "changed": 70,
-    "inserted": 37,
+    "changed": 76,
+    "inserted": 43,
     "deleted": 0,
     "original_line_count": 47,
-    "candidate_line_count": 84
+    "candidate_line_count": 90
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0001"
-    ],
-    "changed_count": 1
+    "missing_block_ids": [],
+    "changed_count": 0
   },
   "locally_safe_to_push": false,
   "safe_to_push": false,
   "blockers": [
-    "Candidate is missing 1 preserved UI block(s)."
+    "Candidate contains unresolved UI block placeholders."
   ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate is missing 1 preserved UI block(s)."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders."
 }

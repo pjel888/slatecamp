@@ -78,7 +78,10 @@ Applies to (for PWD’s exclusive use):
 - Medicines and medical supplies.[web:30]
 - Medical & dental services, diagnostics, professional fees.[web:29]
 
-<Warn>The most common accessibility traps: confusing BP 344 (accessible design) with PD 1096 (general building code), and mixing up the dimensional requirements for wheelchair ramps vs. stairs vs. handrails.</Warn>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
+Extracted summary:
+
+\
 - Domestic air/sea/land transport fares.[web:29]
 - Hotels, restaurants, recreation (cinemas, amusement).[web:29][web:32]
 - Funeral and burial services.[web:29]
@@ -117,7 +120,9 @@ Applies to (for PWD’s exclusive use):
 
 ## Penalties (After RA 10754 and Implementing Rules)
 
-<ExamTip>**LEA Pattern:** Questions ask whether a building or space meets accessibility requirements. Calculate required number of accessible parking slots per total parking (1:100 ratio for first 500, then 1:200). Know the minimums.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+
+\
 
 The exact penalty bands in your draft are too narrow.
 

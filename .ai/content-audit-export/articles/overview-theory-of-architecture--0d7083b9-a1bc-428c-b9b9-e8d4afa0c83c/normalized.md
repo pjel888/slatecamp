@@ -8,7 +8,7 @@ Extracted summary:
 
 ## Learning Goal
 
-Master the theoretical framework tested in the ALE for Theory of Architecture, including: nature of architecture (Vitruvius triad), elements and principles of design (Ching), philosophies and theories of the masters (Le Corbusier, Wright, Kahn, Venturi), movements and contemporary discourse, design perception (anthropometrics, proxemics, kinesthetics), space planning theory, tropical architecture, Filipino architect's identity, and the Pritzker Prize. By the end of this study map, you should be able to apply theoretical principles to design scenarios.
+Master the theoretical framework tested in the LEA for Theory of Architecture, including: nature of architecture (Vitruvius triad), elements and principles of design (Ching), philosophies and theories of the masters (Le Corbusier, Wright, Kahn, Venturi), movements and contemporary discourse, design perception (anthropometrics, proxemics, kinesthetics), space planning theory, tropical architecture, Filipino architect's identity, and the Pritzker Prize. By the end of this study map, you should be able to apply theoretical principles to design scenarios.
 
 ## Subject Coverage
 
@@ -63,12 +63,12 @@ Extracted summary:
 - Text: Do not spend disproportionate time on the Pritzker list at the expense of principles. The laureate questions are worth only a small fraction of the Theory section. Know the list, but do not let it crowd out Ching and the philosophical foundations.
 [/SLATECAMP_UI_BLOCK]
 
-\[SLATECAMP_UI_BLOCK:ui_0002 component="Callout" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: Theory is not abstract decoration on top of "real" architectural knowledge. It is the interpretive lens through which all other subjects become coherent. A structures problem is also a theory problem 
 \[/SLATECAMP_UI_BLOCK\]
-\[SLATECAMP_UI_BLOCK:ui_0007 component="Note" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: The PRC increasingly emphasizes Filipino architectural identity — not as a narrow nationalist question, but as a sophisticated design challenge. How does a Filipino architect honor vernacular intellig

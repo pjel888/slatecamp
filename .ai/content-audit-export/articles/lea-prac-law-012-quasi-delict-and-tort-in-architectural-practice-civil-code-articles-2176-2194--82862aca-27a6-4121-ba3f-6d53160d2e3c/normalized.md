@@ -41,7 +41,7 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: ⚠️ CRITICAL DISTINCTION: Article 1723 = STRUCTURAL COLLAPSE ONLY + requires CONTRACTUAL relationship. Article 2176 (Quasi-delict) = ANY NEGLIGENCE causing damage + applies even WITHOUT a contract. A third party injured by falling debris has a quasi-delict claim, not an Article 1723 claim. — expect this as a trap answer on the ALE.
+- Text: ⚠️ CRITICAL DISTINCTION: Article 1723 = STRUCTURAL COLLAPSE ONLY + requires CONTRACTUAL relationship. Article 2176 (Quasi-delict) = ANY NEGLIGENCE causing damage + applies even WITHOUT a contract. A third party injured by falling debris has a quasi-delict claim, not an Article 1723 claim. — expect this as a trap answer on the LEA.
 [/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
@@ -68,3 +68,9 @@ Extracted summary:
 - [Signing and Sealing Rules](lea-prac-law-017)
 - [Code of Ethical Conduct](lea-prac-eth-001)
 - [Professional Practice Forms](lea-prac-frm-001)
+
+[SLATECAMP_UI_BLOCK:ui_0001 component="AuthorityContent" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK:ui_0001 component="AuthorityContent" status="preserved"]

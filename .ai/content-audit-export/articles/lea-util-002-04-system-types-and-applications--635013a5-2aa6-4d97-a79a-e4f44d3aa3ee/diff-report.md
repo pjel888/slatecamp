@@ -1,6 +1,6 @@
 # Content Diff Report: lea-util-002-04-system-types-and-applications
 
-Generated: 2026-05-03T07:50:01.719Z
+Generated: 2026-05-03T11:50:15.702Z
 Article ID: 635013a5-2aa6-4d97-a79a-e4f44d3aa3ee
 Changed: true
 Safe to push locally: false
@@ -8,8 +8,8 @@ Safe to push locally: false
 ## Hashes
 
 - Original: `sha256:37641573e203d85a3cea458b5c166c1f825c86ad16f354f4891d80c5ed764fde`
-- Normalized: `sha256:c8c7fc8ff078d0aaa313294233ffe5209f6ca6b68f1131fc6dd43887bcfce9a8`
-- Candidate: `sha256:9734855d8b61ad2da1442daaaac682b6d38318621585e0f46a162b0a5a406c12`
+- Normalized: `sha256:16ccaab3b640e8033e32f37f6eeacb912f2fb45333909a9eb8e10982cb6e76e8`
+- Candidate: `sha256:532a63b948b4ad9aaf4c0512f619802a4ad1ecfd7967c402b41ecdcb0bb66c8a`
 
 ## Line summary
 
@@ -27,7 +27,6 @@ Safe to push locally: false
 ## Blockers
 
 - Candidate contains unresolved UI block placeholders.
-- original.md hash does not match article metadata export hash.
 
 ## Warnings
 

@@ -9,8 +9,6 @@ After studying this article, you should be able to:
 - Explain how firm size and project complexity affect the multiplier.
 - Calculate the architect's fee using the MDPE method.
 
-
-
 ---
 ### Overhead Component of the Multiplier
 
@@ -64,10 +62,9 @@ When proposing MDPE fees to clients, the architect should present the multiplier
 
 To compare MDPE multipliers with percentage-of-PCC ranges, the architect can calculate what fee percentage the MDPE would produce at the estimated PCC. If DPE is estimated at 2 million pesos with a 2.5 multiplier (resulting in 5 million peso fee), and PCC is 100 million pesos, the effective percentage is 5%. If Group classification ranges from 8–10%, the MDPE fee is lower and may be more favorable. Conversely, if PCC is only 30 million pesos, the effective percentage would be 16.7%, suggesting MDPE is more expensive. This comparison helps determine which method best aligns fee with project characteristics.
 
-<ExamTip>On the ALE, MDPE multiplier questions typically test understanding of the fee calculation structure rather than specific multiplier values. Be prepared to identify which components make up the multiplier (overhead, profit, non-technical factors), explain how to derive a multiplier from firm financial data, and compare MDPE with percentage-of-PCC methods. Computation questions may ask you to calculate a fee given DPE and multiplier components.</ExamTip>
+<ExamTip>On the LEA, MDPE multiplier questions typically test understanding of the fee calculation structure rather than specific multiplier values. Be prepared to identify which components make up the multiplier (overhead, profit, non-technical factors), explain how to derive a multiplier from firm financial data, and compare MDPE with percentage-of-PCC methods. Computation questions may ask you to calculate a fee given DPE and multiplier components.</ExamTip>
 
-
-\[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: The MDPE multiplier methodology is governed by UAP SPP Document 201, which provides the standard framework for calculating design professional engagement fees based on direct personnel expense, overhe

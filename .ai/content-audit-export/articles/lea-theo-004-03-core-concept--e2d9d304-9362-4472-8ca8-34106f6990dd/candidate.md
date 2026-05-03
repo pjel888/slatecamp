@@ -119,7 +119,7 @@ The Philippine Green Building Code offers two compliance paths:
 **Energy Modeling Software Accepted by DOE:**
 - EnergyPlus (US DOE, freely available; most rigorous)
 - TRACE 3D+ (proprietary; widely used by MEP engineers in Philippines)
-- IES <VE> (proprietary; advanced capability)
+- IES 
 - HAP/CHVAC (design-stage estimates)
 
 Models must account for Philippine tropical conditions: 26–28°C baseline temperatures, 75–85% humidity, monsoon wind patterns, and Type I–IV climate variation by region.
@@ -203,11 +203,11 @@ LEA students should anticipate questions referencing "climate-ambitious design" 
 
 ## Key Facts and Testable Items
 
-<WikiExamTable headers={["Standard / Requirement", "Detail"]} rows={[['["RA 9729 Framework", "Philippine Climate Change Act (2009); delegates building code authority to DOE; mandatory compliance"]', '["Philippine Green Building Code", "Mandatory minimum; 2015 edition; applies to new buildings, major renovations (thresholds vary)"]', '["Code Compliance Paths", "Path A (prescriptive) = meet each category minimum; Path B (performance) = ≤90% baseline via simulation"]', '["BERDE Star Levels", "1–5 stars; thresholds ~25–40 (1★), 40–55 (2★), 55–70 (3★), 70–85 (4★), 85+ (5★) points"]', '["BERDE Categories", "11 total: Energy (16%), Water (10%), Waste (8%), Management (12%), Land/Ecology (16%), Materials (10%), Transport (5%), Health (10%), Emissions (6%), Community (4%), Economic (3%)"]', '["Roof Insulation Minimum", "50–75mm; R-8 minimum (U-value dependent on zone)"]', '["Window U-value Maximum", "&lt;5.8 W/m²K typical; lower in high-solar-load areas"]', '["Natural Ventilation Minimum", "8–12 air changes/hour; 10% operable window area of floor area"]', '["Envelope Color Requirement", "Albedo >0.6 on 30%+ of wall area + roof; light/reflective finishes"]', '["Mechanical HVAC COP Minimum", "2.5 (air conditioning); higher (~3.0–3.5) for variable-refrigerant-flow systems"]', '["Lighting Power Density", "8–10 W/m² (occupancy-dependent); LED minimum 40 lumens/watt"]', '["Water Reduction Target", "30% below baseline (hybrid rainwater + low-flow fixture strategy typical)"]', '["LEED Comparison", "Global standard, US-biased; BERDE is national standard, tropical-optimized"]', '["Energy Modeling Software", "EnergyPlus (free, rigorous), TRACE 3D+, IES <VE>, HAP/CHVAC accepted by DOE"]', '["Net-Zero Definition", "Annual on-site renewable generation ≥ annual consumption (not mandatory Code, but BERDE incentivizes)"]', '["Embodied Carbon (Operational)", "Operational carbon = annual kWh consumed × grid carbon intensity (~0.6 kg CO₂/kWh Philippines grid); mandatory Path B simulation accounting"]']]} />
-## How It's Tested on the LEA
-
-<ExamTip>1. **Code vs. BERDE Distinction:** "A developer achieves Philippine Green Building Code compliance (Path A prescriptive). Can they claim BERDE certification? Explain the relationship between the two systems."
-   - **Answer:** No. Code compliance is necessary but insufficient for BERDE. Code sets minimum baselines (roof insulation, window U-values, etc.); BERDE requires *exceeding* baseline across 11 categories and earning ≥25 points. A Path A building may meet Code but score only 15–20 BERDE points (below 1-Star threshold). BERDE requires intentional design optimization (renewables, water reduction, site ecology, materials strategy) beyond Code minimums.</ExamTip>
+ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 1. **Code vs. BERDE Distinction:** "A developer achieves Philippine Green Building Code compliance (Path A prescriptive). Can they claim BERDE certification? Explain the relationship between the two systems." - **Answer:** No. Code compliance is necessary but insufficient for BERDE. Code sets minimum baselines (roof insulation, window U-values, etc.); BERDE requires *exceeding* baseline across 11 categories and earning ≥25 points. A Path A building may meet Code but score only 15–20 BERDE points
+[/SLATECAMP_UI_BLOCK]
 
 <ExamTip>2. **Energy Modeling Trade-Off:** "A 3,000 m² office tower in Makati chooses Path B (performance-based) compliance. The design proposes: (a) windows at 35% facade area (exceeding Code 25–30% norm) with low-U-value (4.0 W/m²K), but (b) minimal mechanical cooling (VRF system COP 2.8, smaller capacity). Sketch an energy model logic justifying this trade-off under RA 9729."
    - **Answer:** Daylighting strategy reduces lighting power density (→ lower cooling load). Larger windows with low-U-value minimize conductive gain despite increased glazing area. Natural ventilation via operable windows (15% opening area) reduces HVAC runtime 30–40% during amihan (Nov–Apr) and early morning/evening. Path B simulation demonstrates annual kWh ≤90% baseline (e.g., 85 kWh/m²/year vs. 95 baseline). Trade-off is justified if simulation confirms net-zero cooling-load reduction despite higher solar aperture.</ExamTip>
@@ -261,7 +261,7 @@ LEA students should anticipate questions referencing "climate-ambitious design" 
 
 **Net-Zero Energy** — Annual on-site renewable generation (solar PV, wind, geothermal) equals or exceeds annual building consumption; not mandated by Code but incentivized by BERDE and pursued by forward-looking developers.
 
-**Energy Modeling Software** — Simulation tools predicting annual energy consumption under tropical climate conditions (26–28°C baseline, humidity 75–85%, monsoon wind). EnergyPlus (free, rigorous), TRACE 3D+, IES <VE> accepted by DOE.
+**Energy Modeling Software** — Simulation tools predicting annual energy consumption under tropical climate conditions (26–28°C baseline, humidity 75–85%, monsoon wind). EnergyPlus (free, rigorous), TRACE 3D+, IES 
 
 **ERV (Energy Recovery Ventilation)** — System capturing heat/moisture from exhaust air and transferring to incoming fresh air, reducing HVAC load; typically improves efficiency 20–25% in naturally ventilated spaces.
 

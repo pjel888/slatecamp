@@ -1,6 +1,6 @@
 # Content Diff Report: rule-i-general-provisions
 
-Generated: 2026-05-03T10:56:05.507Z
+Generated: 2026-05-03T11:49:37.151Z
 Article ID: 3ad2ad2a-e525-44c3-8edf-bf7036d9c31a
 Changed: true
 Safe to push locally: true

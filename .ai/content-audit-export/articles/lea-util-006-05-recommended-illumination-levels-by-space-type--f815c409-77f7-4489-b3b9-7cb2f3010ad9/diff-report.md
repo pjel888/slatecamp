@@ -1,9 +1,9 @@
 # Content Diff Report: lea-util-006-05-recommended-illumination-levels-by-space-type
 
-Generated: 2026-05-03T10:55:18.923Z
+Generated: 2026-05-03T11:49:01.376Z
 Article ID: f815c409-77f7-4489-b3b9-7cb2f3010ad9
 Changed: true
-Safe to push locally: false
+Safe to push locally: true
 
 ## Hashes
 
@@ -26,7 +26,7 @@ Safe to push locally: false
 
 ## Blockers
 
-- original.md hash does not match article metadata export hash.
+- None
 
 ## Warnings
 

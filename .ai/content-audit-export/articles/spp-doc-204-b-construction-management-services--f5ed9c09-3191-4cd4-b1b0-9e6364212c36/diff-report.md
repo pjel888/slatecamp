@@ -1,6 +1,6 @@
 # Content Diff Report: spp-doc-204-b-construction-management-services
 
-Generated: 2026-05-03T10:55:58.208Z
+Generated: 2026-05-03T11:49:32.173Z
 Article ID: f5ed9c09-3191-4cd4-b1b0-9e6364212c36
 Changed: true
 Safe to push locally: true
@@ -8,8 +8,8 @@ Safe to push locally: true
 ## Hashes
 
 - Original: `sha256:1174a70fa66f6f3140c5c143cf394bb3aac6ab78b99d900af2ce8fd6bb3e1ff6`
-- Normalized: `sha256:0bcbe6817f642c8c0e4316ebcccc84a4c08d28e7d493822fe14f18430dbd8ef2`
-- Candidate: `sha256:2ebfc0cfd1294ad03fc2cfec82d74588fe62d78db5ae719ee6ba2e532d021d42`
+- Normalized: `sha256:1a5c0bdd6e6866aa7f1d7083f29682bdc2a48cb09211722cf9c85e5c62291aac`
+- Candidate: `sha256:778b6949af9fd10d816754eec5c84c524c19cb834c5b0739dd5f8d8170f796f5`
 
 ## Line summary
 

@@ -69,7 +69,7 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Watch:** Questions about the hierarchy often present scenarios where a client demands a cost-cutting measure that would compromise structural safety. The correct answer always prioritizes public — this distinction appears on every ALE cycle.
+- Text: **LEA Watch:** Questions about the hierarchy often present scenarios where a client demands a cost-cutting measure that would compromise structural safety. The correct answer always prioritizes public — this distinction appears on every LEA cycle.
 [/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]

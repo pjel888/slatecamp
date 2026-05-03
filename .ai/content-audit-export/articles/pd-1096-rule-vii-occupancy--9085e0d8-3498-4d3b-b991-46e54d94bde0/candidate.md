@@ -312,7 +312,7 @@ One-liner: **“One is flimsy. Five is a fortress.”**
 
 ## Exam Tip
 
-ALE Trap: The ten occupancy groups: A=Residential, B=Commercial, C=Industrial, D=Institutional, E=Educational, F=Assembly, G=Recreational, H=Storage, I=Business, J=Dangerous. For mixed-occupancy, the STRICTEST requirements govern the entire building UNLESS the uses are separated by 2-hour fire-rated construction. The 'separated vs non-separated' distinction is the key exam point.
+LEA Trap: The ten occupancy groups: A=Residential, B=Commercial, C=Industrial, D=Institutional, E=Educational, F=Assembly, G=Recreational, H=Storage, I=Business, J=Dangerous. For mixed-occupancy, the STRICTEST requirements govern the entire building UNLESS the uses are separated by 2-hour fire-rated construction. The 'separated vs non-separated' distinction is the key exam point.
 
 ## Cross‑References
 

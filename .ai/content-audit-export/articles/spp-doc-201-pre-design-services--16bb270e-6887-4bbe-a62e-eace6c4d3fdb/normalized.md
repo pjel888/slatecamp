@@ -305,7 +305,7 @@ When a project requires Comprehensive Architectural Services under **SPP Doc. 20
 
 ## Exam Tip
 
-ALE Trap: SPP 201 = PRE-design services (before SPP 202). Six phases: (1) Project Definition, (2) Feasibility Study, (3) Site Analysis, (4) Space Programming, (5) Design Guidelines, (6) Consultant Selection. Compensation is per-diem or fixed fee — NOT percentage of construction cost. The most tested distinction: SPP 201 is optional/separate, SPP 202 is the standard.
+LEA Trap: SPP 201 = PRE-design services (before SPP 202). Six phases: (1) Project Definition, (2) Feasibility Study, (3) Site Analysis, (4) Space Programming, (5) Design Guidelines, (6) Consultant Selection. Compensation is per-diem or fixed fee — NOT percentage of construction cost. The most tested distinction: SPP 201 is optional/separate, SPP 202 is the standard.
 
 ## Cross‑References
 

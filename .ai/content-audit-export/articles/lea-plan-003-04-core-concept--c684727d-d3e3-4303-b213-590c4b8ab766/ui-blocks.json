@@ -4,7 +4,7 @@
   "normalized_created_at": "2026-05-01T13:33:43.904Z",
   "parser_version": "ui-block-parser-v1",
   "original_content_hash": "sha256:c976abac7c3aae800f67b758de5010fe9f6480e3cf644b6b0206468216e3ba37",
-  "normalized_content_hash": "sha256:c976abac7c3aae800f67b758de5010fe9f6480e3cf644b6b0206468216e3ba37",
+  "normalized_content_hash": "9fe4006653297f734b43202dce5d462e9687a6c9463d6764276876e6279d92d6",
   "ui_block_count": 4,
   "total_blocks": 4,
   "blocks": [
@@ -324,15 +324,15 @@
       "block_id": "ui_0003",
       "block_type": "mdx_component",
       "component_name": "Tip",
-      "raw": "<Tip>NHA produces housing (sites-and-services, core, medium-rise). RA 10884 requires developers to dedicate 15\u201320% of project cost to balanced housing. Self-help succeeds when community organization is strong (Turner principle: Housing by People).</Tip>",
+      "raw": "<Tip>NHA produces housing (sites-and-services, core, medium-rise). RA 10884 requires developers to dedicate 15–20% of project cost to balanced housing. Self-help succeeds when community organization is strong (Turner principle: Housing by People).</Tip>",
       "raw_hash": "sha256:f81b6605e190ad8288337780d43adac91d2ce9b3ea68c3e618ee248250a8ec6f",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: NHA produces housing (sites-and-services, core, medium-rise). RA 10884 requires developers to dedicate 15\u201320% of project cost to balanced housing. Self-help succeeds when community organization is strong (Turner principle: Housing by People).\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: NHA produces housing (sites-and-services, core, medium-rise). RA 10884 requires developers to dedicate 15–20% of project cost to balanced housing. Self-help succeeds when community organization is strong (Turner principle: Housing by People).\n[/SLATECAMP_UI_BLOCK]",
       "placeholder_hash": "sha256:ad1925284c5b650ea5b437056446f7184f04930248382b6f50f5b3822e9bd205",
       "props": {},
       "props_json": {},
       "props_text": null,
-      "children_raw": "NHA produces housing (sites-and-services, core, medium-rise). RA 10884 requires developers to dedicate 15\u201320% of project cost to balanced housing. Self-help succeeds when community organization is strong (Turner principle: Housing by People).",
-      "children_text": "NHA produces housing (sites-and-services, core, medium-rise). RA 10884 requires developers to dedicate 15\u201320% of project cost to balanced housing. Self-help succeeds when community organization is strong (Turner principle: Housing by People).",
+      "children_raw": "NHA produces housing (sites-and-services, core, medium-rise). RA 10884 requires developers to dedicate 15–20% of project cost to balanced housing. Self-help succeeds when community organization is strong (Turner principle: Housing by People).",
+      "children_text": "NHA produces housing (sites-and-services, core, medium-rise). RA 10884 requires developers to dedicate 15–20% of project cost to balanced housing. Self-help succeeds when community organization is strong (Turner principle: Housing by People).",
       "start_offset": 6221,
       "end_offset": 6474,
       "line_start": 39,
@@ -346,17 +346,17 @@
       "block_id": "ui_0004",
       "block_type": "mdx_component",
       "component_name": "WikiMistakeList",
-      "raw": "<WikiMistakeList mistakes={[\"Confusing sites-and-services (land only) with core housing (basic structure provided)\",\"Assuming NHA only builds high-rise towers (NHA also does sites-and-services and core housing)\",\"Thinking RA 10884 applies to NHA projects (it applies to PRIVATE developer projects)\",\"Believing in-situ upgrading is the same as relocation (in-situ = no relocation; relocation = moving to a new site)\",\"Misremembering balanced housing percentage as 10% or 25% (it is 15\u201320%)\"]} />",
+      "raw": "<WikiMistakeList mistakes={[\"Confusing sites-and-services (land only) with core housing (basic structure provided)\",\"Assuming NHA only builds high-rise towers (NHA also does sites-and-services and core housing)\",\"Thinking RA 10884 applies to NHA projects (it applies to PRIVATE developer projects)\",\"Believing in-situ upgrading is the same as relocation (in-situ = no relocation; relocation = moving to a new site)\",\"Misremembering balanced housing percentage as 10% or 25% (it is 15–20%)\"]} />",
       "raw_hash": "sha256:4cf5035ed6351d41b285e2c8ff662b3735b5c0993b2c9e8ccce1968adec0f19a",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\\"Confusing sites-and-services (land only) with core housing (basic structure provided)\\\",\\\"Assuming NHA only builds high-rise towers (NHA also does sites-and-services and core housing)\\\",\\\"Thinking RA 10884 applies to NHA projects (it applies to PRIVATE developer projects)\\\",\\\"Believing in-situ upgrading is the same as relocation (in-situ = no relocation; relocation = moving to a new site)\\\",\\\"Misremembering balanced housing percentage as 10% or 25% (it is 15\u201320%)\\\"]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\\"Confusing sites-and-services (land only) with core housing (basic structure provided)\\\",\\\"Assuming NHA only builds high-rise towers (NHA also does sites-and-services and core housing)\\\",\\\"Thinking RA 10884 applies to NHA projects (it applies to PRIVATE developer projects)\\\",\\\"Believing in-situ upgrading is the same as relocation (in-situ = no relocation; relocation = moving to a new site)\\\",\\\"Misremembering balanced housing percentage as 10% or 25% (it is 15–20%)\\\"]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
       "placeholder_hash": "sha256:c990325134b0f0a253ec847f1803ecb35b49f6479e8c2c558358b2bfebbaeb22",
       "props": {
-        "mistakes": "{[\"Confusing sites-and-services (land only) with core housing (basic structure provided)\",\"Assuming NHA only builds high-rise towers (NHA also does sites-and-services and core housing)\",\"Thinking RA 10884 applies to NHA projects (it applies to PRIVATE developer projects)\",\"Believing in-situ upgrading is the same as relocation (in-situ = no relocation; relocation = moving to a new site)\",\"Misremembering balanced housing percentage as 10% or 25% (it is 15\u201320%)\"]}"
+        "mistakes": "{[\"Confusing sites-and-services (land only) with core housing (basic structure provided)\",\"Assuming NHA only builds high-rise towers (NHA also does sites-and-services and core housing)\",\"Thinking RA 10884 applies to NHA projects (it applies to PRIVATE developer projects)\",\"Believing in-situ upgrading is the same as relocation (in-situ = no relocation; relocation = moving to a new site)\",\"Misremembering balanced housing percentage as 10% or 25% (it is 15–20%)\"]}"
       },
       "props_json": {
-        "mistakes": "{[\"Confusing sites-and-services (land only) with core housing (basic structure provided)\",\"Assuming NHA only builds high-rise towers (NHA also does sites-and-services and core housing)\",\"Thinking RA 10884 applies to NHA projects (it applies to PRIVATE developer projects)\",\"Believing in-situ upgrading is the same as relocation (in-situ = no relocation; relocation = moving to a new site)\",\"Misremembering balanced housing percentage as 10% or 25% (it is 15\u201320%)\"]}"
+        "mistakes": "{[\"Confusing sites-and-services (land only) with core housing (basic structure provided)\",\"Assuming NHA only builds high-rise towers (NHA also does sites-and-services and core housing)\",\"Thinking RA 10884 applies to NHA projects (it applies to PRIVATE developer projects)\",\"Believing in-situ upgrading is the same as relocation (in-situ = no relocation; relocation = moving to a new site)\",\"Misremembering balanced housing percentage as 10% or 25% (it is 15–20%)\"]}"
       },
-      "props_text": "mistakes={[\"Confusing sites-and-services (land only) with core housing (basic structure provided)\",\"Assuming NHA only builds high-rise towers (NHA also does sites-and-services and core housing)\",\"Thinking RA 10884 applies to NHA projects (it applies to PRIVATE developer projects)\",\"Believing in-situ upgrading is the same as relocation (in-situ = no relocation; relocation = moving to a new site)\",\"Misremembering balanced housing percentage as 10% or 25% (it is 15\u201320%)\"]}",
+      "props_text": "mistakes={[\"Confusing sites-and-services (land only) with core housing (basic structure provided)\",\"Assuming NHA only builds high-rise towers (NHA also does sites-and-services and core housing)\",\"Thinking RA 10884 applies to NHA projects (it applies to PRIVATE developer projects)\",\"Believing in-situ upgrading is the same as relocation (in-situ = no relocation; relocation = moving to a new site)\",\"Misremembering balanced housing percentage as 10% or 25% (it is 15–20%)\"]}",
       "children_raw": null,
       "children_text": null,
       "start_offset": 6496,

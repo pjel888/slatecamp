@@ -58,17 +58,12 @@ _A manufacturing facility proposes discharge of treated effluent (BOD = 45 mg/L)
 
 <WikiMistakeCard mistake="Placing leach field 10 m from well instead of 25 m" correction="Revised National Plumbing Code § 305.2 and P.D. 856 require minimum 25 m separation to protect groundwater from septic tank contamination in areas with 2–8 m depth to water table." />
 
-<WikiMistakeList mistakes={["Ignoring grease trap sizing for commercial kitchens; requires 40 L minimum + flow-based capacity per Revised National Plumbing Code § 307.4", "Storing solid waste >3 days in hot climate without temperature control; RA 9003 requires 3-day max in humid regions", "Not segregating waste per RA 9003 at source; four streams (biodegradable, non-recyclable, recyclable, hazardous) are mandatory, not optional", "Confusing STP overflow rate (50–150 L/capita/day design flow) with peak hourly flow; peak is 3–4× average and drives tank volume sizing", "Submitting building permit without DENR discharge permit or Sanitary Inspection Certificate (SIC) from LGU; required for all projects with on-site treatment"]} />
-
-## Related Articles
-
-See also within Plumbing and Sanitary Systems: **lea-util-001-07-core-concept**, **lea-util-001-08-core-concept**, **lea-util-001-09-core-concept**.
+ea-util-001-07-core-concept**, **lea-util-001-08-core-concept**, **lea-util-001-09-core-concept**.
 
 > **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
-
 
 [SLATECAMP_UI_BLOCK:ui_e001 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Exam Tip — Identify waste disposal and treatment systems (septic tanks,:** Building Utilities carries the heaviest weight in Area B. Focus on code-specific values (PEC ampacities, Revised Plumbing Code fixture units, NFPA spacing requirements) and regulatory triggers (when is a fire alarm mandatory? when is seismic bracing required?). Practice load computations and system sizing problems which appear regularly on the exam.
+- Text: **LEA Exam Tip — Identify waste disposal and treatment systems (septic tanks,:** Building Utilities carries the heaviest weight in Area B. Focus on code-specific values (PEC ampacities, Revised Plumbing Code fixture units, NFPA spacing requirements) and regulatory triggers (when is a fire alarm mandatory? when is seismic bracing required?). Practice load computations and system sizing problems which appear regularly on the exam.
 [/SLATECAMP_UI_BLOCK]

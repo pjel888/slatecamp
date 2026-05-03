@@ -1,6 +1,6 @@
 # Content Diff Report: minimum-requirements-group-a-dwellings
 
-Generated: 2026-05-03T07:49:19.303Z
+Generated: 2026-05-03T11:50:00.501Z
 Article ID: 42eb0c36-da27-4b7e-a1e3-4ed915bfca8d
 Changed: true
 Safe to push locally: true

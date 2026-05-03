@@ -69,14 +69,7 @@ Extracted summary:
 
 ## Key Facts and Testable Items
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiExamTable" status="unknown"]
-Extracted summary:
-- Props: headers="{["Kinesthetic Element", "Standard Dimension", "Metric", "Imperial", "Testing Context", "Psychology/Effect"]}", rows=true, Riser=true, height=true, maximum=true, residential=true, mm=true, in=true, PD=true, Rule=true, VIII=true, Exceeding=true
-- Text: 5 mm disrupts rhythm"]', '["Handrail height (main)", "800–900 mm", "800–900 mm", "31.5–35.5 in", "PD 1096 Rule VIII", "Measured vertically from tread nosing"]', '["Handrail height (child)", "700 mm", "700 mm", "27.5 in", "BP 344", "Additional rail for children"]', '["Handrail extensions", "300 mm", "300 mm", "12 in", "PD 1096", "Beyond top and bottom of flight"]', '["Ramp maximum slope (building)", "1:20", "1:20", "5%", "BP 344 2024 IRR", "Accessible ramp in building"]', '["Ramp maximum slope (c
-[/SLATECAMP_UI_BLOCK]
-## How It's Tested on the LEA
-
-[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
+ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
 - Text: 1. **Direct Stair Dimension Recall (MCQ):** "According to PD 1096, the maximum riser height for residential stairs is (a) 150 mm (b) 180 mm (c) 200 mm (d) 250 mm." Answer: (c) 200 mm. Straightforward recall of code limits.
@@ -132,13 +125,7 @@ Extracted summary:
 - Text: (none detected)
 [/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0014 component="WikiMistakeList" status="unknown"]
-Extracted summary:
-- Props: mistakes=true, Mixing=true, up=true, ramp=true, slope=true, notation=true, A=true, of=true, means=true, unit=true, per=true, units=true
-- Text: 13 mm requires a ramp under BP 344.
-[/SLATECAMP_UI_BLOCK]
-   - 300–600 mm signals territorial separation;
-   - > 600 mm demands architectural notice.
+chitectural notice.
 
 Thresholds are meaningful and regulated."]} />
 

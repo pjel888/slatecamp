@@ -246,14 +246,7 @@ Sun shading devices earn **BERDE points** in multiple categories:
 
 ## Key Facts and Testable Items
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiExamTable" status="unknown"]
-Extracted summary:
-- Props: headers="{["Shading Device Type", "Optimal Application", "Cooling Load Reduction", "Philippine Effectiveness", "LEA Testing Focus"]}", rows=true, Horizontal=true, Louvers=true, Brise-Soleil=true, South-facing=true, primary=true, windows=true, High=true, sun=true, high-angle=true, year-round=true
-- Text: 10 m from window)", "35–45% + daylighting 12–15 m penetration", "Moderate (complementary to direct shading)", "Reflectance ≥90%; shelf angle; ceiling bounce"]', '["**Deep Overhangs**", "South-facing; transitional spaces", "35–50%", "High (vernacular alignment; extended gallery)", "Depth calculation using tangent method"]', '["**Motorized Louvers**", "Premium buildings; seasonal optimization", "45–60% (dynamic) vs. 35–45% (fixed)", "Low-Moderate (cost-benefit marginal in Type I/II perpetual heat)
-[/SLATECAMP_UI_BLOCK]
-## How It's Tested on the LEA
-
-[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
+ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
 - Text: 1. **Overhang Design Calculation**: Design south-facing windows for a Batanes building (20°N latitude). Winter solstice noon altitude = 53.5°. Window height = 2.5 m. Calculate required overhang depth to prevent direct penetration. Verify summer (79°) and equinox (69°) penetration is acceptable (diffuse only).

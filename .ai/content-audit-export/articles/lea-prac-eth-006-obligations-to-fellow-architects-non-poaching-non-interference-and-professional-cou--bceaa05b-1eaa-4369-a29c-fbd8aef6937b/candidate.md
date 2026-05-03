@@ -1,6 +1,6 @@
 ## Obligations to Fellow Architects — Non-Poaching, Non-Interference, and Professional Courtesy
 ## Learning Goal
-After reading this article, you should understand the key concepts tested in the ALE for this topic, including non-poaching rules, notification requirements, successor architect obligations, and the prohibition on injurious conduct.
+After reading this article, you should understand the key concepts tested in the LEA for this topic, including non-poaching rules, notification requirements, successor architect obligations, and the prohibition on injurious conduct.
 
 Professional relationships form the foundation of architectural practice. The Code of Ethical Conduct establishes clear obligations governing how architects interact with colleagues, protecting both individual practitioners and the profession's integrity.
 

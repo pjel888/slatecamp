@@ -6,7 +6,7 @@ After reading this article, you should be able to:
 - Explain the ethical prohibition on unfair fee competition and collusive fee-fixing agreements.
 - Describe the direct supervision requirement: the architect who signs and seals must have prepared or directly supervised the work.
 - Identify the obligation to respect other architects' existing commissions and not supplant them.
-- Apply professional-obligation standards to ALE scenarios involving fee competition, signing-sealing, and colleague relations.
+- Apply professional-obligation standards to LEA scenarios involving fee competition, signing-sealing, and colleague relations.
 
 The architect's obligation to the profession requires three things: **(1) refusing to compete through fee undercutting or unfair means, (2) respecting other architects' existing work assignments, and (3) never signing or sealing work that was not prepared under the architect's direct personal supervision.** These three rules protect profession integrity, individual architect reputations, and public safety.
 

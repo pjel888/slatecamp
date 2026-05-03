@@ -1,7 +1,7 @@
 {
   "article_id": "91727ebf-ee05-4aa8-a538-d8c599a1d9c9",
   "slug": "lea-util-003-02-emergency-power-systems",
-  "generated_at": "2026-05-03T07:49:43.787Z",
+  "generated_at": "2026-05-03T11:50:10.318Z",
   "old_hash": "sha256:4fe7dcf5466724f5f0aff50765d1b8852fa70014984eacd234327391885512a0",
   "new_hash": "sha256:8e922d06741babc1664ae16d9c9489c4d9fa12afaf5b10a87ac40a8a03ae5b62",
   "original_hash": "sha256:4fe7dcf5466724f5f0aff50765d1b8852fa70014984eacd234327391885512a0",
@@ -28,13 +28,11 @@
     "missing_block_ids": [],
     "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "original.md hash does not match article metadata export hash."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: original.md hash does not match article metadata export hash."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

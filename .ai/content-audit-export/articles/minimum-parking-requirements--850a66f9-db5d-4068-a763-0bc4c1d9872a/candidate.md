@@ -530,7 +530,7 @@ A building has 180 total off-street parking slots. How many accessible (PWD) par
 
 ## Exam Tip
 
-ALE Swipe: Parking ratios vary by occupancy: Group A (1 per unit), Group B/C (1 per 40 m² GFA), Group D/E (1 per 3 beds), Group F (1 per 50 m² GFA). CBD = 50% reduction. Compact cars = max 35% of total. These are all tested.
+LEA Swipe: Parking ratios vary by occupancy: Group A (1 per unit), Group B/C (1 per 40 m² GFA), Group D/E (1 per 3 beds), Group F (1 per 50 m² GFA). CBD = 50% reduction. Compact cars = max 35% of total. These are all tested.
 
 ## Cross‑References
 

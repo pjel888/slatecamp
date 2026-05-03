@@ -4,17 +4,17 @@
 
 After studying this article, you should be able to:
 
-- Describe the ALE structure: subject areas, number of items, and time allocation.
+- Describe the LEA structure: subject areas, number of items, and time allocation.
 - State the passing standard (general average of 70%, no subject below 50%).
 - Explain the retaking policy and how many times a taker may re-take.
-- Identify the five (5) subject areas tested on the ALE.
+- Identify the five (5) subject areas tested on the LEA.
 
 ---
 
 ---
 ### Examination Format and Subject Areas
 
-The Architect Licensure Examination comprises multiple subject areas designed to assess comprehensive architectural competency across design, theory, history, building science, and professional practice. RA 9266, Section 15 specifies that the LEA shall consist of written examination covering the syllabi approved by the Board in consultation with the academe. The Board develops examination syllabi in coordination with the Commission on Higher Education (CHED) to ensure alignment with curriculum standards at recognized architecture schools. All examination questions fall within the scope of the official syllabus for each subject, ensuring fairness and transparency. The specific subjects and question allocation are determined by Board Resolution and published annually before examination dates.
+The Licensure Examination for Architects comprises multiple subject areas designed to assess comprehensive architectural competency across design, theory, history, building science, and professional practice. RA 9266, Section 15 specifies that the LEA shall consist of written examination covering the syllabi approved by the Board in consultation with the academe. The Board develops examination syllabi in coordination with the Commission on Higher Education (CHED) to ensure alignment with curriculum standards at recognized architecture schools. All examination questions fall within the scope of the official syllabus for each subject, ensuring fairness and transparency. The specific subjects and question allocation are determined by Board Resolution and published annually before examination dates.
 
 ### Weighted Average and Minimum Passing Requirement
 
@@ -43,7 +43,7 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: ⚠️ CRITICAL: The 50% floor applies INDIVIDUALLY to each subject area, not as an average. A candidate scoring 80% in four subjects but 45% in one subject FAILS, even if the overall average exceeds 70%. Both conditions must be met: (1) General weighted average ≥ 70%, AND (2) No grade below 50% in any subject. — expect this as a trap answer on the ALE.
+- Text: ⚠️ CRITICAL: The 50% floor applies INDIVIDUALLY to each subject area, not as an average. A candidate scoring 80% in four subjects but 45% in one subject FAILS, even if the overall average exceeds 70%. Both conditions must be met: (1) General weighted average ≥ 70%, AND (2) No grade below 50% in any subject. — expect this as a trap answer on the LEA.
 [/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]

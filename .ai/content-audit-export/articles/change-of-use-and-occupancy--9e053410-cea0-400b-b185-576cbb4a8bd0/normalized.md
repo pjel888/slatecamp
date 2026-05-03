@@ -14,7 +14,7 @@ By the end of this article, you will be able to:
 
 ---
 
-## Why This Matters for the ALE
+## Why This Matters for the LEA
 
 The change-of-use topic sits squarely in **Area 1 (Professional Practice)** — approximately 30% of LEA exam weight. It tests both **procedural knowledge** (what form to file, who approves, what document is issued) and **conceptual knowledge** (hazard comparison, Building Official authority, occupancy classification). Expect at least 2-3 questions on this topic across the Professional Practice and Design subtests.
 

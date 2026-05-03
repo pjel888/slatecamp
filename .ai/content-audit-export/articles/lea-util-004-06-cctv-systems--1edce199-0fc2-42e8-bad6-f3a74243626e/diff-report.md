@@ -1,9 +1,9 @@
 # Content Diff Report: lea-util-004-06-cctv-systems
 
-Generated: 2026-05-03T10:55:17.312Z
+Generated: 2026-05-03T11:49:00.365Z
 Article ID: 1edce199-0fc2-42e8-bad6-f3a74243626e
 Changed: true
-Safe to push locally: false
+Safe to push locally: true
 
 ## Hashes
 
@@ -26,7 +26,7 @@ Safe to push locally: false
 
 ## Blockers
 
-- original.md hash does not match article metadata export hash.
+- None
 
 ## Warnings
 

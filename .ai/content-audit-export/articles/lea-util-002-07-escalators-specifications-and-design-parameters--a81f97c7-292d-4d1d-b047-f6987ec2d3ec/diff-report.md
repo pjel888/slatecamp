@@ -1,9 +1,9 @@
 # Content Diff Report: lea-util-002-07-escalators-specifications-and-design-parameters
 
-Generated: 2026-05-03T10:55:57.884Z
+Generated: 2026-05-03T11:49:31.800Z
 Article ID: a81f97c7-292d-4d1d-b047-f6987ec2d3ec
 Changed: true
-Safe to push locally: false
+Safe to push locally: true
 
 ## Hashes
 
@@ -26,7 +26,7 @@ Safe to push locally: false
 
 ## Blockers
 
-- original.md hash does not match article metadata export hash.
+- None
 
 ## Warnings
 

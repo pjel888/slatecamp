@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method
 
-Generated: 2026-05-03T07:48:56.621Z
+Generated: 2026-05-03T11:49:53.300Z
 Article ID: db248a33-44f2-411c-a069-9685200a588c
 Changed: true
 Safe to push locally: true
@@ -8,8 +8,8 @@ Safe to push locally: true
 ## Hashes
 
 - Original: `sha256:4cc481bf118133ca6b3d942995742493db2d340c12f66356d568530a4d68c032`
-- Normalized: `sha256:911bbdf7a6ecf5167305e888331dcd6194c4ba31eaf844a75e72a79e7d5a3c9b`
-- Candidate: `sha256:e74eab2d25d56990d73a4e29f4471a5d0e785a19bcc798f53acf51719280b3e1`
+- Normalized: `sha256:7f8898d072839e0a988d54f3e047617fa2683e6bb88bc1926f256887d5036ca3`
+- Candidate: `sha256:af0ca22ef56e7a3d50d0534477f95679de7e7f378ca42575cdc21ee56c255edb`
 
 ## Line summary
 

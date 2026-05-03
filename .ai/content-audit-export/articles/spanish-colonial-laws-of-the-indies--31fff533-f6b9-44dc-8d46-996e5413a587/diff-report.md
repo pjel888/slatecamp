@@ -1,6 +1,6 @@
 # Content Diff Report: spanish-colonial-laws-of-the-indies
 
-Generated: 2026-05-03T10:55:29.075Z
+Generated: 2026-05-03T11:49:08.842Z
 Article ID: 31fff533-f6b9-44dc-8d46-996e5413a587
 Changed: true
 Safe to push locally: true
@@ -8,8 +8,8 @@ Safe to push locally: true
 ## Hashes
 
 - Original: `sha256:70075103d21f377fc85a029dc2e92e6a0cd267023ed84f42fac0d10876565bf2`
-- Normalized: `sha256:1cbb7dbc11d756da1e45f7ebb707d842e0b6af2b3c13fbedf5a056fa907bc6f7`
-- Candidate: `sha256:41efb73ac0a0d5c887643be00e3a925f323d6f71d74daf71f612f861717b237b`
+- Normalized: `sha256:9c8b530d929ee929a4ddd4b54b424e956812adf6ac50da2facfeaf7d62110dd3`
+- Candidate: `sha256:fead379a92085d46b1907c2c01cc6ebc0187a22fd948248ad75682debaef7887`
 
 ## Line summary
 

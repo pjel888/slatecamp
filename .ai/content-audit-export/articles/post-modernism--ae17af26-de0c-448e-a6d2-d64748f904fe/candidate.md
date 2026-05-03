@@ -57,7 +57,7 @@ You encounter an LEA question showing a photograph of a building with a comicall
 
 <ExamTip>
 
-**ALE Trap:** "Post-Modernism means 'after Modernism' chronologically" — PARTIALLY TRUE but incomplete. Post-Modernism is a specific architectural movement defined by Venturi's Complexity and Contradiction in Architecture (1966) and Learning from Las Vegas (1972). It explicitly REJECTS Modernist dogma (ornament is crime, form follows function, truth to materials). Not everything built after 1970 is Post-Modern — it must show historical reference, irony, or symbolism.
+**LEA Trap:** "Post-Modernism means 'after Modernism' chronologically" — PARTIALLY TRUE but incomplete. Post-Modernism is a specific architectural movement defined by Venturi's Complexity and Contradiction in Architecture (1966) and Learning from Las Vegas (1972). It explicitly REJECTS Modernist dogma (ornament is crime, form follows function, truth to materials). Not everything built after 1970 is Post-Modern — it must show historical reference, irony, or symbolism.
 
 </ExamTip>
 

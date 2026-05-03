@@ -6,7 +6,7 @@ After reading this article, you should be able to:
 - Describe the deliverables of the Contract Document Phase (Phase 4): working drawings, technical specifications, and bidding documents.
 - Explain why this phase earns 50% of the total design services fee under SPP 202.
 - Identify the components of a complete contract document package and their roles in construction administration.
-- Apply Contract Document Phase requirements to ALE scenarios involving document completeness, specification types, and bid package assembly.
+- Apply Contract Document Phase requirements to LEA scenarios involving document completeness, specification types, and bid package assembly.
 
 The Contract Document Phase represents the most significant single payment under SPP 202, earning 50% of the architect's total design services fees. This phase produces the comprehensive drawings and specifications needed to communicate all construction requirements to contractors and building officials.
 
@@ -32,7 +32,7 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Pattern:** Expect scenario-based questions where you must determine whi — this distinction appears on every ALE cycle.
+- Text: **LEA Pattern:** Expect scenario-based questions where you must determine whi — this distinction appears on every LEA cycle.
 [/SLATECAMP_UI_BLOCK]
 Contract Documents require extensive coordination among all design disciplines to ensure completeness and consistency. The architect updates the Statement of Probable Project Construction Cost based on changes in scope, requirements, or market conditions. The architect also assists the owner in filing required documents to secure approval from government authorities having jurisdiction over the design of the project. This comprehensive support during permitting represents a critical service ensuring regulatory compliance.
 
@@ -40,7 +40,7 @@ Contract Documents require extensive coordination among all design disciplines t
 [SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Pattern:** Expect scenario-based questions where you must determine whi — this distinction appears on every ALE cycle.
+- Text: **LEA Pattern:** Expect scenario-based questions where you must determine whi — this distinction appears on every LEA cycle.
 [/SLATECAMP_UI_BLOCK]
 ### Fee Significance and Cumulative Achievement
 

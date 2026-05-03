@@ -69,21 +69,7 @@ Extracted summary:
 - Text: (none detected)
 [/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeCard" status="unknown"]
-Extracted summary:
-- Props: mistake=true, Painting=true, concrete=true, with=true, moisture=true
-- Text: 3% CM (calcium chloride method)" correction="Test moisture per ASTM F2170 before painting. Moisture >3% CM causes blistering and delamination within 4-6 months. Defer painting or install moisture barrier." />
-[/SLATECAMP_UI_BLOCK]
-
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeCard" status="unknown"]
-Extracted summary:
-- Props: mistake=true, Ignoring=true, ASTM=true, D3276=true, application=true, conditions=true, temperature=true, lt=true, C=true, humidity=true
-- Text: 85%, rain risk)" correction="Do not apply paint in marginal conditions. High humidity and low temperature slow curing, trapping moisture and causing adhesion failure. Wait for ideal conditions or use accelerated-cure primers." />
-[/SLATECAMP_UI_BLOCK]
-
-[SLATECAMP_UI_BLOCK:ui_0006 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes="{[\"Assuming drywall primer is optional for topcoat adhesion\", \"Mixing incompatible binders (latex over enamel without sanding and primer)\", \"Failing to caulk gaps, joints, and penetrations before finish coat\", \"Applying topcoat before primer cure time (typically 2-4 hours per coat)\", \"Using VOC-high paints without confirming local air-quality compliance\"]}"
+is optional for topcoat adhesion\", \"Mixing incompatible binders (latex over enamel without sanding and primer)\", \"Failing to caulk gaps, joints, and penetrations before finish coat\", \"Applying topcoat before primer cure time (typically 2-4 hours per coat)\", \"Using VOC-high paints without confirming local air-quality compliance\"]}"
 - Text: (none detected)
 [/SLATECAMP_UI_BLOCK]
 
@@ -93,9 +79,8 @@ See also within Interior Finishes: **lea-matl-007-01-core-concept**, **lea-matl-
 
 > **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
 
-
 [SLATECAMP_UI_BLOCK:ui_e001 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Exam Tip — Classify wall finishes (paint, wallpaper, gypsum board, plyw:** This topic is heavily tested in Area B. Focus on mastering material classifications, key property values (compressive strength, R-value, unit weight), and estimating formulas. Create comparison tables to distinguish similar materials (e.g., cement Types I–V, glass types, insulation types). Practice computational problems for concrete volume, board foot, CHB count, and paint coverage — these are reliable exam items.
+- Text: **LEA Exam Tip — Classify wall finishes (paint, wallpaper, gypsum board, plyw:** This topic is heavily tested in Area B. Focus on mastering material classifications, key property values (compressive strength, R-value, unit weight), and estimating formulas. Create comparison tables to distinguish similar materials (e.g., cement Types I–V, glass types, insulation types). Practice computational problems for concrete volume, board foot, CHB count, and paint coverage — these are reliable exam items.
 [/SLATECAMP_UI_BLOCK]

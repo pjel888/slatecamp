@@ -22,7 +22,7 @@ Compensation for SDP services depends on the sum of estimated costs: civil works
 [SLATECAMP_UI_BLOCK:ui_0001 component="Warn" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: ⚠️ Do not confuse SPP 203.4 (SDP—a sub-service under Professional Architectural Services) with SPP 209 (Professional Architectural Consulting Services / PACS). SDP includes landscape/hardscape planning under the architect's scope; PACS does not. — expect this as a trap answer on the ALE.
+- Text: ⚠️ Do not confuse SPP 203.4 (SDP—a sub-service under Professional Architectural Services) with SPP 209 (Professional Architectural Consulting Services / PACS). SDP includes landscape/hardscape planning under the architect's scope; PACS does not. — expect this as a trap answer on the LEA.
 [/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="Note" status="preserved"]

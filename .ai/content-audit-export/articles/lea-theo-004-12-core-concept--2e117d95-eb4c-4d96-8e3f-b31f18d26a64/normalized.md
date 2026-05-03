@@ -195,15 +195,7 @@ A naturally ventilated building in a Coronas Type I climate with effective dayli
 
 ## Key Facts and Testable Items
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiExamTable" status="unknown"]
-Extracted summary:
-- Props: headers="{["Thermal Variable", "Philippine Tropical Context", "ASHRAE 55 Requirement", "BERDE Application"]}", rows=true, Dry-Bulb=true, Temperature=true, C=true, exterior=true, Type=true, I=true, peak=true, interior=true, achievable=true, mechanical=true
-- Text: 70% discomfort", "Dehumidification credit if RH
-[/SLATECAMP_UI_BLOCK]
-
-## How It's Tested on the LEA
-
-[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
+"ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
 - Text: 1. **PMV Calculation**: A Manila office building (2:00 PM, Apr, dry season) has: T_air = 34°C, T_mean_rad = 36°C, RH = 60%, air velocity = 0.2 m/s, met = 1.2, clo = 0.4. Calculate PMV using simplified Fanger method. Is this acceptable under ASHRAE 55 Category II? Propose design solution.
@@ -253,15 +245,7 @@ Extracted summary:
 - Text: (none detected)
 [/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeList" status="unknown"]
-Extracted summary:
-- Props: mistakes=true, Underestimating=true, Humidity=true, Impact=true, on=true, Evaporative=true, Cooling=true, Monsoon=true, season=true, Type=true, II=true, RH=true
-- Text: 2.0 m/s) to achieve comfort at 29°C. This creates draft discomfort and psychological malaise; better to design for 27–28°C with moderate ventilation (0.5–1.0 m/s).", "Ignoring CO₂ Impact on Cognitive Performance. Meeting ASHRAE 62.1 outdoor air rates (7.5 L/s per person) but allowing CO₂ to exceed 1,000 ppm in poorly ventilated zones. Decision-making ability declines; this affects productivity despite thermal comfort."]} />
-[/SLATECAMP_UI_BLOCK]
-
-## Key Terms
-
-**Thermal Comfort** — Psychological condition expressing satisfaction with thermal environment; subjective and dependent on physiological, psychological, and behavioral adaptation.
+satisfaction with thermal environment; subjective and dependent on physiological, psychological, and behavioral adaptation.
 
 **PMV (Predicted Mean Vote)** — Numerical index of thermal sensation (−3 to +3); calculated from metabolic rate, clothing, air temperature, humidity, air velocity, and radiant temperature.
 

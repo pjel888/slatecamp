@@ -1,7 +1,7 @@
 {
   "article_id": "490d7fe6-8f50-404e-a323-1d9a99139869",
   "slug": "lea-util-002-09-mechanical-room-location-and-siting",
-  "generated_at": "2026-05-03T10:55:29.931Z",
+  "generated_at": "2026-05-03T11:49:09.499Z",
   "old_hash": "sha256:dd2b423cb740b300f91b83110c0d0f444b2c59b6a86c04fae39db225d316896d",
   "new_hash": "sha256:c089ae23d4fbe921fcefce226bec0593c71f84f2896ecb5717a7b405633a9fae",
   "original_hash": "sha256:dd2b423cb740b300f91b83110c0d0f444b2c59b6a86c04fae39db225d316896d",
@@ -28,13 +28,11 @@
     "missing_block_ids": [],
     "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "original.md hash does not match article metadata export hash."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: original.md hash does not match article metadata export hash."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

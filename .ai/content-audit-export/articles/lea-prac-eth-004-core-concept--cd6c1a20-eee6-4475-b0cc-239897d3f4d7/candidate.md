@@ -6,7 +6,7 @@ After reading this article, you should be able to:
 - Define the fiduciary nature of the architect-client relationship and the architect's duty of unquestioned loyalty.
 - Identify disclosure obligations: conflicts of interest, third-party compensation, and material relationships.
 - Explain the prohibition on accepting compensation from third parties without client knowledge and consent.
-- Apply fiduciary duty principles to ALE scenarios involving conflicts of interest, client trust, and ethical obligations.
+- Apply fiduciary duty principles to LEA scenarios involving conflicts of interest, client trust, and ethical obligations.
 
 The architect-client relationship rests on good faith and the architect's unquestioned loyalty to the client. The architect must disclose all conflicts of interest, refuse compensation from third parties without client consent, and prioritize client welfare even when this conflicts with fee maximization.
 

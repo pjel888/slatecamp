@@ -32,7 +32,7 @@ Groups 1 through 3 classify projects according to their level of architectural a
 [SLATECAMP_UI_BLOCK:ui_0001 component="Warn" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: ⚠️ The sliding scale is one of the most tested computation topics in the Compensation block. For Groups 1–3, the base percentage applies only to the first ₱50M of PCC. The excess is charged at progressively lower rates. — expect this as a trap answer on the ALE.
+- Text: ⚠️ The sliding scale is one of the most tested computation topics in the Compensation block. For Groups 1–3, the base percentage applies only to the first ₱50M of PCC. The excess is charged at progressively lower rates. — expect this as a trap answer on the LEA.
 [/SLATECAMP_UI_BLOCK]
 
 The sliding scale applies identically to Groups 1, 2, and 3 — only the base rate for the first ₱50M differs. Each successive bracket is 1% lower than the previous one. For example, Group 1's sliding scale is 5% → 4% → 3% → 2% → 1% → 0.5%, while Group 2's is 6% → 5% → 4% → 3% → 2% → 1%:

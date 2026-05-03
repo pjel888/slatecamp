@@ -6,7 +6,7 @@ After reading this article, you should be able to:
 - Define architectural (space) programming as a pre-design service under SPP 201, described as a problem-seeking process.
 - Describe the programming process: client interviews, space inventory, adjacency analysis, and program statement.
 - Identify the key deliverables: space list, area requirements, functional relationships, and design criteria.
-- Apply programming concepts to ALE scenarios involving client needs assessment and pre-design documentation.
+- Apply programming concepts to LEA scenarios involving client needs assessment and pre-design documentation.
 
 Architectural programming is a pre-design service that translates the client's functional and spatial needs into a written program guiding the architect's design work. SPP 201 defines this service as an analytical problem-seeking process leading to the statement and identification of both horizontal and vertical relationships in offering a solution.
 

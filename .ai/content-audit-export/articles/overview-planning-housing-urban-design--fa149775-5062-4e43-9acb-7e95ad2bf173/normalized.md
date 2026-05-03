@@ -8,7 +8,7 @@ Extracted summary:
 
 ## Learning Goal
 
-Master the planning, housing, and urban design framework tested in the ALE, including: general principles and history of planning, housing and human settlements (BP 220, PD 957), 21st-century planning (TOD, smart cities, resilience), landscape ecology, planning governance and Philippine planning law (RA 7160, RA 7279), site planning and environmental analysis, and urban/regional planning. By the end of this study map, you should understand the scale-based mental model and the key Philippine legislation governing planning practice.
+Master the planning, housing, and urban design framework tested in the LEA, including: general principles and history of planning, housing and human settlements (BP 220, PD 957), 21st-century planning (TOD, smart cities, resilience), landscape ecology, planning governance and Philippine planning law (RA 7160, RA 7279), site planning and environmental analysis, and urban/regional planning. By the end of this study map, you should understand the scale-based mental model and the key Philippine legislation governing planning practice.
 
 ## Subject Coverage
 
@@ -57,7 +57,7 @@ Extracted summary:
 - **Underweighting governance.** Agency jurisdiction questions are reliably correct-or-wrong — invest time in the governance map.
 - **Neglecting the CLUP/Zoning Ordinance distinction.** CLUP = policy document; Zoning Ordinance = implementing legal instrument.
 
-\[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: Draw a simple map of the Philippine planning system: NEDA at the regional and national level, DHSUD for housing, DILG supervising LGUs, LGUs exercising planning authority under RA 7160. Add the key la

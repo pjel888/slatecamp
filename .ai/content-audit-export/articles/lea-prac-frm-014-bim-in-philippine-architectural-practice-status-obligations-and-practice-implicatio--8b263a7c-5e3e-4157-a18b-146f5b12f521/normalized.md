@@ -36,7 +36,7 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: ⚠️ **Warning:** Environmental compliance (EIA, ECC, CNC) is a distinct regulatory process from building permit requirements. An ECC is required before the building permit application — they are sequentia... — expect this as a trap answer on the ALE.
+- Text: ⚠️ **Warning:** Environmental compliance (EIA, ECC, CNC) is a distinct regulatory process from building permit requirements. An ECC is required before the building permit application — they are sequentia... — expect this as a trap answer on the LEA.
 [/SLATECAMP_UI_BLOCK]
 
 
@@ -87,3 +87,9 @@ BIM training covers not just software but also modeling standards, clash detecti
 - [RA 9266 Legal Framework](lea-prac-law-001)
 - [Government Procurement](lea-prac-frm-012)
 - [Environmental Laws](lea-prac-frm-017)
+
+[SLATECAMP_UI_BLOCK:ui_0001 component="JSX" status="preserved"]
+Extracted summary:
+- Props: code=ra9266, section=Section 3 - Scope of Practice
+- Text: null
+[/SLATECAMP_UI_BLOCK:ui_0001 component="JSX" status="preserved"]

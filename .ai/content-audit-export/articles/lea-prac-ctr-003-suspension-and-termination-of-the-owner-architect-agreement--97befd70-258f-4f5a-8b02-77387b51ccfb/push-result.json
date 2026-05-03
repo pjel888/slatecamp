@@ -1,11 +1,11 @@
 {
-  "attempted_at": "2026-05-03T07:52:17.429Z",
+  "attempted_at": "2026-05-03T11:49:39.802Z",
   "dry_run": true,
   "apply": false,
   "pushed": false,
   "blockers": [
     "diff-report.json marks candidate unsafe.",
-    "UI block preservation failed.",
+    "Candidate has unresolved placeholders.",
     "--all-safe skipped article because diff-report is unsafe."
   ],
   "warnings": [
@@ -14,10 +14,12 @@
   "updated_rows_count": 0,
   "article_id": "97befd70-258f-4f5a-8b02-77387b51ccfb",
   "slug": "lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement",
-  "preparation_actions": [],
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
   "remote_hash_before": "sha256:f5b8563e4c775e2ea6d11e23c83132706233b85d1c48c27dc1a4ec87c9dc8f2e",
   "original_hash": "sha256:f5b8563e4c775e2ea6d11e23c83132706233b85d1c48c27dc1a4ec87c9dc8f2e",
-  "candidate_hash": "sha256:236890faa2fcce9ae8590869a698e107a640568968e8493206c7814b9ff2bc6e",
+  "candidate_hash": "sha256:a771b264360b60d4581d426458e8b5a2d17e21aa725014678399b66cb1e16f30",
   "stale_check_passed": true,
   "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
 }

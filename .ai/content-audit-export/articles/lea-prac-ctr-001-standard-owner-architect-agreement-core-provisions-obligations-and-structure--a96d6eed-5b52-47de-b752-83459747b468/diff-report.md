@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-ctr-001-standard-owner-architect-agreement-core-provisions-obligations-and-structure
 
-Generated: 2026-05-03T07:53:53.501Z
+Generated: 2026-05-03T11:50:23.023Z
 Article ID: a96d6eed-5b52-47de-b752-83459747b468
 Changed: true
 Safe to push locally: true
@@ -8,7 +8,7 @@ Safe to push locally: true
 ## Hashes
 
 - Original: `sha256:55fa337e5ff4abb15b0abd9a7a9fee9dd455b8e96acd88c7808a55126a2a34df`
-- Normalized: `sha256:e663e3cc998d4774eff598b0a74848bf4a24ca90e8cb169725b5ef1d5701dcc9`
+- Normalized: `sha256:eb1e47b3454a6ef85e09fc75d84bf3b4e15cde152f1ff440741b78c7c5f0646a`
 - Candidate: `sha256:56bce3239240367e2ad7ac044c92b00d5ba376d73fc531c99135f59c80a0aa5f`
 
 ## Line summary

@@ -157,11 +157,11 @@ The bahay kubo survives typhoons (flexible framing absorbs wind load), remains n
 
 ## Key Facts and Testable Items
 
-<WikiExamTable headers={["Strategy", "Mechanism", "LEA-Testable Detail"]} rows={[['["Cross-Ventilation", "Pressure-driven flow through opposing apertures", "Minimum 15m plan depth for effective circulation; asymmetric outlet sizing (20–30% floor area) >inlet (6–10%)"]', '["Stack Effect", "Buoyancy-driven vertical air movement", "Requires ΔT ≥ 3–4°C; 3m+ stack height optimal; open stairwells more effective than shafts"]', '["Overhang Depth", "Solar altitude × sill geometry", "East wall 8am Manila (10°N) requires 2.5–3m; West wall 3pm requires 3–4m"]', '["Light Shelf", "Reflected daylight + reduced glare", "30–40% heat gain reduction; specular aluminum + diffuse ceiling"]', '["Lightweight Construction", "Fast thermal response", "2–3°C cooler during occupied hours vs. heavyweight; 35.9% better nighttime cooling effectiveness"]', '["Thermal Mass Debate", "Suppressed diurnal range (ΔT &lt;6°C)", "Default lightweight in Types I–II; mass justified only in Type III+ with proven nighttime cooling below 20°C"]', '["Roof Reflectance", "Albedo > 0.7 (white surface)", "Reduces surface temp 60→40°C; cuts interior heat gain 40%"]', '["Roof Insulation", "Prevents heat ingress (not loss)", "50–75mm fiberglass/foam reduces heat gain 25–30%"]', '["Bahay Kubo Principles", "Vernacular passive exemplar", "Elevation, overhangs, open plan, slat flooring, ventanillas, natural materials"]']]} />
-## How It's Tested on the LEA
-
-<ExamTip>1. **Cross-Ventilation Sizing:** "An office building plan is 18m (N-S) × 25m (E-W) in Cebu (Type IV climate). Prevailing wind: southwest (habagat, May–Oct). Specify aperture sizing for cross-ventilation and justify your inlet/outlet ratio."
-   - **Answer:** E-W width exceeds 15m effective ventilation depth. Solution: interior courtyard or atrium (6m×6m) to create two 9.5m zones on each side. SW-facing facades: inlet 6% floor area (1.5m² for 25m²), NE-facing outlet 25% (6.25m²). Asymmetry creates velocity.</ExamTip>
+ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 1. **Cross-Ventilation Sizing:** "An office building plan is 18m (N-S) × 25m (E-W) in Cebu (Type IV climate). Prevailing wind: southwest (habagat, May–Oct). Specify aperture sizing for cross-ventilation and justify your inlet/outlet ratio." - **Answer:** E-W width exceeds 15m effective ventilation depth. Solution: interior courtyard or atrium (6m×6m) to create two 9.5m zones on each side. SW-facing facades: inlet 6% floor area (1.5m² for 25m²), NE-facing outlet 25% (6.25m²). Asymmetry creates ve
+[/SLATECAMP_UI_BLOCK]
 
 <ExamTip>2. **Thermal Mass Rejection:** "A developer proposes thick concrete walls in an Eastern Visayas project (Type II, no dry season, nighttime temp 24°C). Critique this choice and propose an alternative."
    - **Answer:** Type II climate prevents nighttime thermal discharge (insufficient ΔT between wall [25°C] and ambient [24°C]). Concrete mass will trap daytime heat and re-radiate at night, degrading comfort. Alternative: 150mm lightweight block + 50mm EPS insulation; open floor plan with 20% window area + operable louvers for continuous ventilation. Stack effect via atrium for core cooling.</ExamTip>

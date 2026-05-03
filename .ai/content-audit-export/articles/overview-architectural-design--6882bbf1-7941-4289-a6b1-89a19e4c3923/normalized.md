@@ -8,7 +8,7 @@ Extracted summary:
 
 ## Learning Goal
 
-Master the key concepts tested in the ALE for Architectural Design, including: space planning, circulation, building typology, design process, site analysis, anthropometrics, accessibility standards (BP 344, RA 7277/9442), fire safety egress (RA 9514), parking design, and NBCP application (PD 1096). By the end of this study map, you should understand the subject's scope, how its 13 subtopics interrelate, and the optimal sequence for tackling them.
+Master the key concepts tested in the LEA for Architectural Design, including: space planning, circulation, building typology, design process, site analysis, anthropometrics, accessibility standards (BP 344, RA 7277/9442), fire safety egress (RA 9514), parking design, and NBCP application (PD 1096). By the end of this study map, you should understand the subject's scope, how its 13 subtopics interrelate, and the optimal sequence for tackling them.
 
 ## Subject Coverage
 
@@ -76,7 +76,7 @@ Extracted summary:
 - **Neglecting site planning.** Setbacks, easements, solar orientation, drainage, and buildable area calculations generate substantial exam content.
 - **Confusing codes across systems.** Know which code governs which design decision: BP 344 for accessibility, RA 9514 for fire safety, PD 1096 for building permits and occupancy.
 
-\[SLATECAMP_UI_BLOCK:ui_0002 component="Callout" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: This is the most integrated subject in the LEA. Every other subject you study — structures, MEPF, materials, construction, planning, laws — contributes concepts that appear in Architectural Design que

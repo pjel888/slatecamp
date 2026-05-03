@@ -272,11 +272,7 @@ The physical installation location significantly influences pump performance and
 
 ## Common Errors and Misconceptions
 
-<WikiMistakeList mistakes={[{"mistake": "Using discharge pressure instead of TDH when sizing pumps.", "correction": "TDH combines static head, friction loss, and residual pressure. The pump must overcome all three simultaneously. Discharge pressure ≠ TDH."}, {"mistake": "Ignoring friction loss in short pipe runs (&lt;50 m).", "correction": "Even short piping with elbows and valves contributes measurable friction loss. Always add 20–30% to the straight-pipe equivleant length for fittings."}, {"mistake": "Assuming municipal water pressure remains constant during peak demand.", "correction": "Pressure drops significantly when municipal supply is shared. Conduct a 24-hour pressure survey and design to the minimum sustained pressure documented."}, {"mistake": "Selecting pump based solely on nameplate capacity without verifying the actual operating point on the pump curve.", "correction": "Pump curves show how flow, head, and efficiency vary. Operating at the design point (center of curve) ensures maximum reliability."}, {"mistake": "Forgetting to account for sclea buildup in older pipes when applying Hazen-Williams C values.", "correction": "Use C = 100–110 for pipes >10 years old instead of C = 120 for new pipe to predict actual friction loss accurately."}]} />
-
-## Summary Checklist for LEA Examiners
-
-When evaluating fire pump sizing calculations:
+g calculations:
 - ✓ Static head calculated correctly (elevation difference from suction to highest device)
 - ✓ Friction loss derived using Hazen-Williams with appropriate C value
 - ✓ Residual pressure at least 3.45 bar (35 m) for Ordinary Hazard Group 1 (RA 9514 IRR)
@@ -296,9 +292,8 @@ See also within Fire Protection Systems: **lea-util-004-04-core-concept**, **lea
 
 > **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
 
-
 [SLATECAMP_UI_BLOCK:ui_e001 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Exam Tip — Apply the formula of fire protection: R = hazard × occupancy:** Building Utilities carries the heaviest weight in Area B. Focus on code-specific values (PEC ampacities, Revised Plumbing Code fixture units, NFPA spacing requirements) and regulatory triggers (when is a fire alarm mandatory? when is seismic bracing required?). Practice load computations and system sizing problems which appear regularly on the exam.
+- Text: **LEA Exam Tip — Apply the formula of fire protection: R = hazard × occupancy:** Building Utilities carries the heaviest weight in Area B. Focus on code-specific values (PEC ampacities, Revised Plumbing Code fixture units, NFPA spacing requirements) and regulatory triggers (when is a fire alarm mandatory? when is seismic bracing required?). Practice load computations and system sizing problems which appear regularly on the exam.
 [/SLATECAMP_UI_BLOCK]

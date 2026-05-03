@@ -1,6 +1,6 @@
 # Content Diff Report: site-exterior-circulation
 
-Generated: 2026-05-03T07:49:29.086Z
+Generated: 2026-05-03T11:50:05.076Z
 Article ID: 875a991f-b8ca-4655-a252-8b5c9f1fc54d
 Changed: true
 Safe to push locally: false
@@ -8,25 +8,25 @@ Safe to push locally: false
 ## Hashes
 
 - Original: `sha256:5de73065f826242db9f73955de86d521e9e17eec93d018727fdc63c753f25505`
-- Normalized: `sha256:bf44611a477132191b5ed160ddea52e18b2235e7e301c3ea2cd2c7e2e10d80e7`
-- Candidate: `sha256:cedb5fe9b3d85ac9d68d72829c4d591c888bb30aa69fa466d1493f327319020c`
+- Normalized: `sha256:b8528f93d7999062a57a13ee05d0b78ff997643e9f4b377be460ea6ea156637d`
+- Candidate: `sha256:8fb21ab60017e226c0ec7adfab659fb33df8309ff0bccf11c0d98ebd3fcbea24`
 
 ## Line summary
 
-- Changed lines: 170
-- Inserted lines: 18
+- Changed lines: 180
+- Inserted lines: 28
 - Deleted lines: 0
 
 ## UI block preservation
 
-- UI blocks expected: 6
+- UI blocks expected: 4
 - UI blocks preserved: 4
-- UI blocks changed/missing: 2
-- Unresolved placeholders: 0
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- Candidate is missing 2 preserved UI block(s).
+- Candidate contains unresolved UI block placeholders.
 
 ## Warnings
 

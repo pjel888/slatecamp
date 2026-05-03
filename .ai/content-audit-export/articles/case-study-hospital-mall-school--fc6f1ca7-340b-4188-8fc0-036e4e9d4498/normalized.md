@@ -2,7 +2,7 @@
 ## Learning Goal
 After reading this article, you should be able to:
 
-Apply building code requirements to the three most frequently tested building typologies on the ALE: hospitals (Group D, requiring special fire/smoke control, minimum corridor width 2.40 m, emergency power); malls/shopping centers (Group F, requiring malls as public ways, sprinklers above 12 m height); and schools (Group E, requiring 2 exits per classroom, special fire alarm, maximum travel distance 45 m).
+Apply building code requirements to the three most frequently tested building typologies on the LEA: hospitals (Group D, requiring special fire/smoke control, minimum corridor width 2.40 m, emergency power); malls/shopping centers (Group F, requiring malls as public ways, sprinklers above 12 m height); and schools (Group E, requiring 2 exits per classroom, special fire alarm, maximum travel distance 45 m).
 
 _Scenario‑Based Integration – Dimensions + Laws in One Place_
 
@@ -194,7 +194,7 @@ Do you want me to adapt this file into a shorter “exam‑type handout” versi
 [SLATECAMP_UI_BLOCK:ui_0039 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Tip — Mall Corridor Width:** For retail malls, the accessible route width is 1.20 m minimum (BP 344). However, the PD 1096 fire exit width is calculated based on occupant load ÷ 40 (for stairs) or ÷ 80 (for doors/ramps). The governing requirement is the LARGER of the two. Always check BOTH cod
+- Text: **LEA Tip — Mall Corridor Width:** For retail malls, the accessible route width is 1.20 m minimum (BP 344). However, the PD 1096 fire exit width is calculated based on occupant load ÷ 40 (for stairs) or ÷ 80 (for doors/ramps). The governing requirement is the LARGER of the two. Always check BOTH cod
 [/SLATECAMP_UI_BLOCK]
 
 

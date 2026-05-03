@@ -40,9 +40,11 @@ The building's significance for the LEA lies in its typological and technical no
 <ExamTip>**Pattern 2:** Site integration and symbolism. "How does the Sydney Opera House's location (Bennelong Point, harbourfront), material (white tile), and silhouette contribute to its global iconic status and its relationship to its geographic context?" (Answer: Waterside site amplifies visual presence and reflection; white cladding responds to harbor light; silhouette echoes sails—maritime symbolism appropriate to coastal Australia.) Expect questions linking form, setting, and cultural meaning.
 
 </ExamTip>
-<ExamTip>**Pattern 3:** Vernacular adaptation and climate response. "Traditional Pacific island meeting houses (flea, bure, wharenui) employ which design strategies to manage tropical climate and support communal function?" (Answer: Open-sided pavilions maximize airflow; steep roof pitches shed rain; elevated platforms provide underdraft cooling; flexible interior partitions allow rapid reconfiguration.) Expect to identify indigenous climate logic and social spatial organization.
-
-<Callout>The LEA emphasizes the **Sydney Opera House** (**Jørn Utzon**, 1973) as the defining Pacific Modernist icon—shell-vault geometry, iconic silhouette, harborfrontintegration, and structural innovation. Recognize its significance as a global architectural milestone, not merely an Australian monument. Secondary knowledge includes indigenous Pacific vernacular (Pacific island meeting houses, Polynesian adaptive building) and early colonial architecture in the region, but the exam prioritizes Utzon's masterwork.</Callout>
+ed"]
+Extracted summary:
+- Props: 
+- Text: The LEA emphasizes the **Sydney Opera House** (**Jørn Utzon**, 1973) as the defining Pacific Modernist icon—shell-vault geometry, iconic silhouette, harborfrontintegration, and structural innovation. 
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 

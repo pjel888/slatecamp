@@ -1,28 +1,28 @@
 {
   "article_id": "62e4a20d-b739-4d5d-9349-aba651027b51",
   "slug": "lea-strc-008-01-core-concept",
-  "generated_at": "2026-05-03T07:49:03.099Z",
+  "generated_at": "2026-05-03T11:49:56.622Z",
   "old_hash": "sha256:4bfa6f58c04861bbeeaaeb52396ffb50f7f4d172337f3acceb6e6d2af2e23316",
-  "new_hash": "sha256:f280417327e63b66a23a08e9b079d7e1fb50bd37616854e5fd7a673fcc553f18",
+  "new_hash": "sha256:9c791e641a399ae71dce3766902aab6901e6b965ac588b1dc8a52aec8474a623",
   "original_hash": "sha256:4bfa6f58c04861bbeeaaeb52396ffb50f7f4d172337f3acceb6e6d2af2e23316",
-  "normalized_hash": "sha256:3839f63b96af87d38773be7f22a1d9ae3d6027302a477be58884515d244abca8",
-  "candidate_hash": "sha256:f280417327e63b66a23a08e9b079d7e1fb50bd37616854e5fd7a673fcc553f18",
+  "normalized_hash": "sha256:4f9ffe6a4df909751235e071ebcb9554a9a2ed943a6b9d57a9aa2fc9d8ed20d9",
+  "candidate_hash": "sha256:9c791e641a399ae71dce3766902aab6901e6b965ac588b1dc8a52aec8474a623",
   "changed": true,
-  "changed_line_count": 68,
-  "inserted_line_count": 14,
+  "changed_line_count": 67,
+  "inserted_line_count": 13,
   "deleted_line_count": 0,
-  "ui_blocks_original_count": 3,
-  "ui_blocks_candidate_count": 3,
+  "ui_blocks_original_count": 2,
+  "ui_blocks_candidate_count": 2,
   "ui_blocks_changed_count": 0,
-  "ui_blocks_count": 3,
+  "ui_blocks_count": 2,
   "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 3,
+  "preserved_blocks_count": 2,
   "changed_text_summary": {
-    "changed": 68,
-    "inserted": 14,
+    "changed": 67,
+    "inserted": 13,
     "deleted": 0,
     "original_line_count": 56,
-    "candidate_line_count": 70
+    "candidate_line_count": 69
   },
   "changed_ui_blocks_summary": {
     "missing_block_ids": [],
@@ -32,7 +32,6 @@
   "safe_to_push": true,
   "blockers": [],
   "warnings": [
-    "ui-blocks.json contains unknown custom blocks; push requires review or --force.",
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
   "summary": "Locally safe after recomposition; remote stale check still required before push."

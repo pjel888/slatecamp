@@ -52,11 +52,7 @@ Extracted summary:
 - Props: (none)
 - Text: **Pattern 3: Regional Style Recognition** "Distinguish Andalusian Islamic architecture from Abbasid or Ottoman traditions in terms of spatial strategy, material choices, and decorative approach." (Andalusian: intimate courtyards, stucco and tile, poetic inscriptions, ephemeral colonnades; Abbasid: monumental iwans, brick and stone, muqarnas as structural element; Ottoman: centralized domes, marble cladding, hierarchical courtyards.)
 [/SLATECAMP_UI_BLOCK]
-[SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="unknown"]
-Extracted summary:
-- Props: (none)
-- Text: **Pattern 4: Specific Building Features**
-[/SLATECAMP_UI_BLOCK]
+
 "The **Great Mosque of Córdoba** employs which arch type as its signature, and how does this differ from earlier Islamic mosques?" (Answer: **Horseshoe arch** (or Moorish arch) with alternating red and white voussoirs; differs from simple round or four-centered arches; becomes defining feature of Andalusian style; allows expansion without height increase.)
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]

@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement
 
-Generated: 2026-05-03T07:48:37.046Z
+Generated: 2026-05-03T11:49:42.013Z
 Article ID: 3d48211b-8add-4934-8dab-ae8bdae74035
 Changed: true
 Safe to push locally: true
@@ -8,8 +8,8 @@ Safe to push locally: true
 ## Hashes
 
 - Original: `sha256:353fa3fbbdd50673dedfab60ded43c7c7fbb6086c63b863adf7b339319bfed4b`
-- Normalized: `sha256:adba6ceb3bc9abfddc387f7adf800af024439fccb102569f8ec90c8bb18bbad3`
-- Candidate: `sha256:8222088aac400758f4fe15f15a0db584161aef550085995f483cf8ba248f7928`
+- Normalized: `sha256:dabb295f1834572dbe0854b5bef9f4c3b4c798d6da426948474998d210987aca`
+- Candidate: `sha256:cc3924aafd558511015142b1a285a8a02d51afc887635593cdc135a17fbcaf3f`
 
 ## Line summary
 

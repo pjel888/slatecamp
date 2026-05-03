@@ -1,6 +1,6 @@
 # Content Diff Report: signs-design-and-construction
 
-Generated: 2026-05-03T07:50:06.776Z
+Generated: 2026-05-03T11:50:18.332Z
 Article ID: 16a0bc40-d538-4e4a-8408-cd41dd7aa7aa
 Changed: true
 Safe to push locally: true
@@ -8,8 +8,8 @@ Safe to push locally: true
 ## Hashes
 
 - Original: `sha256:5174cb1fa5c4f8a9e743c9d43acf602405d4eed5222497d92b5b32efb2c0a899`
-- Normalized: `sha256:00790f3b23b8e3c73f8af26a4faab264471ee9a494cd2bf8cb87bf1951f46fa0`
-- Candidate: `sha256:ce72c9ee2fa531442088cfc8b41c92161f97cb1835b8aa801b03bcd4a9b989a8`
+- Normalized: `sha256:991ce1b28a381718153e3df1790bfc9902b779ed0b9bfe3bdcd7550445d47e3d`
+- Candidate: `sha256:98bb8d9e804f27b62feb88ab629a06f5d55635373761f3608247415bbb524484`
 
 ## Line summary
 

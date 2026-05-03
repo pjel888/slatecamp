@@ -6,7 +6,7 @@ After reading this article, you should be able to:
 - Explain the architect's primary obligation to public health, safety, and welfare as the foundational ethical duty.
 - Identify the prohibition on misrepresenting qualifications, experience, or expertise.
 - Describe the affirmative duty to report illegal practice, unlicensed individuals, and professional misconduct.
-- Apply public-obligation ethical standards to ALE scenarios involving code violations, misrepresentation, and reporting duties.
+- Apply public-obligation ethical standards to LEA scenarios involving code violations, misrepresentation, and reporting duties.
 
 The architect's primary obligation to the public transcends individual projects — it encompasses a duty to maintain public health and safety, represent qualifications honestly, and report violations of professional standards that endanger the community.
 
@@ -67,7 +67,7 @@ Building material manufacturer offers fee for architect to endorse product. Code
 [SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Priority:** Questions about "public obligation" almost always test the hierarchy — public safety trumps client profit. The "PSR" mnemonic helps: (P) Public safety above all else, (S) Specializat — this distinction appears on every ALE cycle.
+- Text: **LEA Priority:** Questions about "public obligation" almost always test the hierarchy — public safety trumps client profit. The "PSR" mnemonic helps: (P) Public safety above all else, (S) Specializat — this distinction appears on every LEA cycle.
 [/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]

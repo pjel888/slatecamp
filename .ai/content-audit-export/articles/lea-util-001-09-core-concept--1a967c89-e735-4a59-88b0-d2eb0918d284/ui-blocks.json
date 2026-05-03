@@ -4,8 +4,8 @@
   "normalized_created_at": "2026-05-01T13:33:43.584Z",
   "parser_version": "ui-block-parser-v1",
   "original_content_hash": "sha256:f0c62a67efeb15167506036bfce9d19e966055e56dcd45d74e556cb802c735ce",
-  "normalized_content_hash": "0005c7d036a82d7152f2f52dee427cd1d246b869fb2afb976914588d053b0c80",
-  "ui_block_count": 9,
+  "normalized_content_hash": "fb36a6bc22a9ac77b4633509c55ae9e5a6fdcf4b586d06358b342b1b2d4f44c3",
+  "ui_block_count": 7,
   "total_blocks": 9,
   "blocks": [
     {
@@ -125,70 +125,6 @@
       "status": "preserved"
     },
     {
-      "block_id": "ui_0006",
-      "block_type": "mdx_component",
-      "component_name": "WikiMistakeCard",
-      "raw": "<WikiMistakeCard mistake=\"Using a runoff coefficient > 1 or assuming all rainfall becomes runoff.\" correction=\"Coefficient C is always \u2264 1. For concrete roofs, C \u2248 0.85 means 15% is lost to evaporation, wetting, and initial absorption.\" />",
-      "raw_hash": "sha256:f64504d3b5d67e7d8223c4bd854d42f02911d129444d9c1b861b62d29e6a1c72",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0006 component=\"WikiMistakeCard\" status=\"unknown\"]\nExtracted summary:\n- Props: mistake=true, Using=true, a=true, runoff=true, coefficient=true\n- Text: 1 or assuming all rainfall becomes runoff.\" correction=\"Coefficient C is always \u2264 1. For concrete roofs, C \u2248 0.85 means 15% is lost to evaporation, wetting, and initial absorption.\" />\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:6406efb7156509bec2a984474a99120584c800b3255f8ff389197900a05bbd73",
-      "props": {
-        "mistake": true,
-        "Using": true,
-        "a": true,
-        "runoff": true,
-        "coefficient": true
-      },
-      "props_json": {
-        "mistake": true,
-        "Using": true,
-        "a": true,
-        "runoff": true,
-        "coefficient": true
-      },
-      "props_text": "mistake=\"Using a runoff coefficient",
-      "children_raw": null,
-      "children_text": "1 or assuming all rainfall becomes runoff.\" correction=\"Coefficient C is always \u2264 1. For concrete roofs, C \u2248 0.85 means 15% is lost to evaporation, wetting, and initial absorption.\" />",
-      "start_offset": 9273,
-      "end_offset": 9512,
-      "line_start": 150,
-      "line_end": 150,
-      "parser_confidence": "low",
-      "parse_status": "unknown_block",
-      "warnings": [
-        "No closing tag found for WikiMistakeCard; preserved opening line as unknown custom block."
-      ],
-      "status": "unknown"
-    },
-    {
-      "block_id": "ui_0007",
-      "block_type": "mdx_component",
-      "component_name": "WikiMistakeCard",
-      "raw": "<WikiMistakeCard mistake=\"Ignoring first-flush diversion when sizing a cistern, leading to oversized or contaminated storage.\" correction=\"Account for first-flush volume (typically 0.5\u20131.0 mm depth per 1 m\u00b2 roof). Many codes require a separate bypass container or valve.\" />",
-      "raw_hash": "sha256:7c324b012ba331477965fab8ec72ed6b3735603ce2b2ea4731058404d3580b1c",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0007 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: mistake=\"Ignoring first-flush diversion when sizing a cistern, leading to oversized or contaminated storage.\", correction=\"Account for first-flush volume (typically 0.5\u20131.0 mm depth per 1 m\u00b2 roof). Many codes require a separate bypass container or valve.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:2c0a0f0dfb9bc5965cf3112888ad21b8560f0681757de0747635b35c17b89b98",
-      "props": {
-        "mistake": "Ignoring first-flush diversion when sizing a cistern, leading to oversized or contaminated storage.",
-        "correction": "Account for first-flush volume (typically 0.5\u20131.0 mm depth per 1 m\u00b2 roof). Many codes require a separate bypass container or valve."
-      },
-      "props_json": {
-        "mistake": "Ignoring first-flush diversion when sizing a cistern, leading to oversized or contaminated storage.",
-        "correction": "Account for first-flush volume (typically 0.5\u20131.0 mm depth per 1 m\u00b2 roof). Many codes require a separate bypass container or valve."
-      },
-      "props_text": "mistake=\"Ignoring first-flush diversion when sizing a cistern, leading to oversized or contaminated storage.\" correction=\"Account for first-flush volume (typically 0.5\u20131.0 mm depth per 1 m\u00b2 roof). Many codes require a separate bypass container or valve.\"",
-      "children_raw": null,
-      "children_text": null,
-      "start_offset": 9514,
-      "end_offset": 9788,
-      "line_start": 152,
-      "line_end": 152,
-      "parser_confidence": "high",
-      "parse_status": "parsed",
-      "warnings": [],
-      "status": "preserved"
-    },
-    {
       "block_id": "ui_0008",
       "block_type": "mdx_component",
       "component_name": "WikiMistakeCard",
@@ -243,44 +179,7 @@
       "status": "preserved"
     }
   ],
-  "unknown_blocks": [
-    {
-      "block_id": "ui_0006",
-      "block_type": "mdx_component",
-      "component_name": "WikiMistakeCard",
-      "raw": "<WikiMistakeCard mistake=\"Using a runoff coefficient > 1 or assuming all rainfall becomes runoff.\" correction=\"Coefficient C is always \u2264 1. For concrete roofs, C \u2248 0.85 means 15% is lost to evaporation, wetting, and initial absorption.\" />",
-      "raw_hash": "sha256:f64504d3b5d67e7d8223c4bd854d42f02911d129444d9c1b861b62d29e6a1c72",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0006 component=\"WikiMistakeCard\" status=\"unknown\"]\nExtracted summary:\n- Props: mistake=true, Using=true, a=true, runoff=true, coefficient=true\n- Text: 1 or assuming all rainfall becomes runoff.\" correction=\"Coefficient C is always \u2264 1. For concrete roofs, C \u2248 0.85 means 15% is lost to evaporation, wetting, and initial absorption.\" />\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:6406efb7156509bec2a984474a99120584c800b3255f8ff389197900a05bbd73",
-      "props": {
-        "mistake": true,
-        "Using": true,
-        "a": true,
-        "runoff": true,
-        "coefficient": true
-      },
-      "props_json": {
-        "mistake": true,
-        "Using": true,
-        "a": true,
-        "runoff": true,
-        "coefficient": true
-      },
-      "props_text": "mistake=\"Using a runoff coefficient",
-      "children_raw": null,
-      "children_text": "1 or assuming all rainfall becomes runoff.\" correction=\"Coefficient C is always \u2264 1. For concrete roofs, C \u2248 0.85 means 15% is lost to evaporation, wetting, and initial absorption.\" />",
-      "start_offset": 9273,
-      "end_offset": 9512,
-      "line_start": 150,
-      "line_end": 150,
-      "parser_confidence": "low",
-      "parse_status": "unknown_block",
-      "warnings": [
-        "No closing tag found for WikiMistakeCard; preserved opening line as unknown custom block."
-      ],
-      "status": "unknown"
-    }
-  ],
+  "unknown_blocks": [],
   "unresolved_critical_blocks": [],
   "ui_blocks_hash": "sha256:993a337a8ab3b326d71fdbd0909488e8088bacca791eb1be956b4647e9e232b2"
 }

@@ -1,6 +1,6 @@
 # Content Diff Report: north-american-indigenous-architecture
 
-Generated: 2026-05-03T10:55:51.914Z
+Generated: 2026-05-03T11:49:26.836Z
 Article ID: 5fd2842e-ca3e-4e6d-bb87-65067d23a482
 Changed: true
 Safe to push locally: true

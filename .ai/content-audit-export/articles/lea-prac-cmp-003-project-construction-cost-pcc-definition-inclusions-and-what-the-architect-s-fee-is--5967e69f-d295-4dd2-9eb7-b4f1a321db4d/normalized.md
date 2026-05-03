@@ -50,7 +50,7 @@ During preliminary phases (Schematic Design), PCC estimates may have accuracy ra
 [SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Pattern:** Given a project budget, determine the architect's fee. PCC = — this distinction appears on every ALE cycle.
+- Text: **LEA Pattern:** Given a project budget, determine the architect's fee. PCC = — this distinction appears on every LEA cycle.
 [/SLATECAMP_UI_BLOCK]
 Owner contingency reserves for construction cost overruns are excluded from PCC. These reserves protect the owner against cost escalation during construction but do not represent costs the architect anticipated during design. Contingency reserves typically range from 5–15% of the estimated construction cost and remain separate from PCC for fee calculation purposes.
 

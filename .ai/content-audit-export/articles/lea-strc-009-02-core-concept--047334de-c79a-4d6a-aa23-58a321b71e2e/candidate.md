@@ -31,9 +31,7 @@ Philippine timber stress groups rank species by bending and compression capacity
 - _Adjustment_: Design tables account for moisture content (green vs. dry). Green timber (≥19% moisture) has lower allowable stresses than kiln-dried (≤15%).
 
 ### Wood Product Density Classifications
-<WikiExamTable headers={["Product", "Density Range", "Typical Use"]} rows={[ ["Fiberboard", ">160 to &lt;497 kg/m³", "Thermal/acoustic insulation, underlayment"],
-    ["Hardboard", "≥497 kg/m³", "Underlayment, sheathing, lining"],
-    ["Solid Lumber", "Varies by species", "Beams, joists, columns, primary structure"]
+  ["Solid Lumber", "Varies by species", "Beams, joists, columns, primary structure"]
   ]}
 />
 
@@ -64,7 +62,6 @@ Philippine lumber grading is governed by the National Timber Code and referenced
 - Takeaway: Product category, not just density, determines application scope.
 
 <Tip>Group I = highest capacity (Yakal, Molave); Group IV = lowest (White Lauan, Red Balau). Always verify the specific group from the design manual or code supplement.</Tip>
-
 
 ## Related Articles
 

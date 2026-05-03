@@ -1,6 +1,6 @@
 ## SPP Doc 202 Overview: The Six-Phase Framework and Its Design Logic
 ## Learning Goal
-After reading this article, you should understand the key concepts tested in the ALE for this topic, including relevant code provisions, dimensional standards, and common exam applications.
+After reading this article, you should understand the key concepts tested in the LEA for this topic, including relevant code provisions, dimensional standards, and common exam applications.
 
 SPP Document 202 defines regular design services under a six-phase framework that organizes the architect's work from project definition through construction administration. The document addresses both individual and group architectural practice while clarifying foreign architect requirements and business process outsourcing restrictions for Philippine projects.
 

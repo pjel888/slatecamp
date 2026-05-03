@@ -447,7 +447,7 @@ Extracted summary:
 
 ## Exam Tip
 
-ALE Swipe: PACS = Professional Architectural Consulting Services. A consultant under SPP 209 CANNOT be the architect of record on the same project. Fee arrangements: hourly, retainer, or fixed fee. The 'no dual role' prohibition is the most tested principle — an architect cannot both design (as AOR) and advise (as consultant) on the same project.
+LEA Swipe: PACS = Professional Architectural Consulting Services. A consultant under SPP 209 CANNOT be the architect of record on the same project. Fee arrangements: hourly, retainer, or fixed fee. The 'no dual role' prohibition is the most tested principle — an architect cannot both design (as AOR) and advise (as consultant) on the same project.
 
 ## Cross‑References
 

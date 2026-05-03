@@ -53,7 +53,7 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: ⚠️ **Exam Trap:** The surety's liability is LIMITED to the bond amount. If completion costs exceed the bond, the surety is not obligated to pay the excess. The owner's recovery is therefore capped at the... — expect this as a trap answer on the ALE.
+- Text: ⚠️ **Exam Trap:** The surety's liability is LIMITED to the bond amount. If completion costs exceed the bond, the surety is not obligated to pay the excess. The owner's recovery is therefore capped at the... — expect this as a trap answer on the LEA.
 [/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes

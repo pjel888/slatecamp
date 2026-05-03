@@ -4,7 +4,7 @@
   "normalized_created_at": "2026-05-01T13:33:43.357Z",
   "parser_version": "ui-block-parser-v1",
   "original_content_hash": "sha256:26cf571f51e2019c7f0f04cb1c94ebf2628b922444ad3910fe65ac933318325a",
-  "normalized_content_hash": "sha256:5610c3b4aee729d950b4802d624331e3f4b8777470b7ec6d9a69c8883f038bb8",
+  "normalized_content_hash": "984d45a5c1d3029eebbb3493116efb0f3fdd37f837429f47828b192a73d3e3f0",
   "ui_block_count": 4,
   "total_blocks": 3,
   "blocks": [
@@ -27,19 +27,19 @@
     {
       "block_id": "ui_0002",
       "component_name": "Warn",
-      "raw": "<Warn>\n  **Critical Distinction:** Fraud or deceit under Sec 23(b) applies specifically to obtaining *registration*, not to fraudulent conduct in professional practice. Fraud during practice falls under Sec 23(d) (Code violations) or the Code of Ethical Conduct. Sec 23(b) targets the gateway to the profession \u2014 catching architects who lied about their education, experience, or examination eligibility.\n</Warn>",
+      "raw": "<Warn>\n  **Critical Distinction:** Fraud or deceit under Sec 23(b) applies specifically to obtaining *registration*, not to fraudulent conduct in professional practice. Fraud during practice falls under Sec 23(d) (Code violations) or the Code of Ethical Conduct. Sec 23(b) targets the gateway to the profession — catching architects who lied about their education, experience, or examination eligibility.\n</Warn>",
       "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"Warn\" status=\"preserved\"]",
       "props_text": "(none)",
       "props_json": {},
-      "children_raw": "**Critical Distinction:** Fraud or deceit under Sec 23(b) applies specifically to obtaining *registration*, not to fraudulent conduct in professional practice. Fraud during practice falls under Sec 23(d) (Code violations) or the Code of Ethical Conduct. Sec 23(b) targets the gateway to the profession \u2014 catching architects who lied about their education, experience, or examination eligibility.",
-      "children_text": "**Critical Distinction:** Fraud or deceit under Sec 23(b) applies specifically to obtaining *registration*, not to fraudulent conduct in professional practice. Fraud during practice falls under Sec 23(d) (Code violations) or the Code of Ethical Conduct. Sec 23(b) targets the gateway to the profession \u2014 catching architects who lied about their education, experience, or examination eligibility.",
+      "children_raw": "**Critical Distinction:** Fraud or deceit under Sec 23(b) applies specifically to obtaining *registration*, not to fraudulent conduct in professional practice. Fraud during practice falls under Sec 23(d) (Code violations) or the Code of Ethical Conduct. Sec 23(b) targets the gateway to the profession — catching architects who lied about their education, experience, or examination eligibility.",
+      "children_text": "**Critical Distinction:** Fraud or deceit under Sec 23(b) applies specifically to obtaining *registration*, not to fraudulent conduct in professional practice. Fraud during practice falls under Sec 23(d) (Code violations) or the Code of Ethical Conduct. Sec 23(b) targets the gateway to the profession — catching architects who lied about their education, experience, or examination eligibility.",
       "parse_status": "parsed",
       "raw_hash": "sha256:a8a69dbe81a9536839c8848507d44d0f398ff4dfe3f417f5e376df7f1f742a27"
     },
     {
       "block_id": "ui_0003",
       "component_name": "LawCallout",
-      "raw": "<LawCallout code=\"ra9266\" section=\"Section 30 - Revocation\">\nSimple negligence (a mistake or error in judgment) does not constitute grounds for suspension or revocation. The standard requires gross negligence \u2014 a clear, substantial, and unjustified departure from professional standards. An architect who makes an isolated calculation error has committed simple negligence. An architect who repeatedly approves structural designs without reviewing calculations has committed gross negligence.\n</LawCallout>",
+      "raw": "<LawCallout code=\"ra9266\" section=\"Section 30 - Revocation\">\nSimple negligence (a mistake or error in judgment) does not constitute grounds for suspension or revocation. The standard requires gross negligence — a clear, substantial, and unjustified departure from professional standards. An architect who makes an isolated calculation error has committed simple negligence. An architect who repeatedly approves structural designs without reviewing calculations has committed gross negligence.\n</LawCallout>",
       "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"LawCallout\" status=\"preserved\"]",
       "props_text": "code=ra9266, section=Section 30 - Revocation, title=Gross Negligence vs. Simple Negligence",
       "props_json": {
@@ -47,20 +47,20 @@
         "section": "Section 30 - Revocation",
         "title": "Gross Negligence vs. Simple Negligence"
       },
-      "children_raw": "Simple negligence (a mistake or error in judgment) does not constitute grounds for suspension or revocation. The standard requires gross negligence \u2014 a clear, substantial, and unjustified departure from professional standards. An architect who makes an isolated calculation error has committed simple negligence. An architect who repeatedly approves structural designs without reviewing calculations has committed gross negligence.",
-      "children_text": "Simple negligence (a mistake or error in judgment) does not constitute grounds for suspension or revocation. The standard requires gross negligence \u2014 a clear, substantial, and unjustified departure from professional standards. An architect who makes an isolated calculation error has committed simple negligence. An architect who repeatedly approves structural designs without reviewing calculations has committed gross negligence.",
+      "children_raw": "Simple negligence (a mistake or error in judgment) does not constitute grounds for suspension or revocation. The standard requires gross negligence — a clear, substantial, and unjustified departure from professional standards. An architect who makes an isolated calculation error has committed simple negligence. An architect who repeatedly approves structural designs without reviewing calculations has committed gross negligence.",
+      "children_text": "Simple negligence (a mistake or error in judgment) does not constitute grounds for suspension or revocation. The standard requires gross negligence — a clear, substantial, and unjustified departure from professional standards. An architect who makes an isolated calculation error has committed simple negligence. An architect who repeatedly approves structural designs without reviewing calculations has committed gross negligence.",
       "parse_status": "parsed",
       "raw_hash": "sha256:74da3fb6743677de63c165eed9d20b397b504df19e01a241a639bc09332bf408"
     },
     {
       "block_id": "ui_0004",
       "component_name": "ExamTip",
-      "raw": "<ExamTip>\n  **LEA Priority \u2014 Know These 4 Grounds for Certain:**\n  1. Sec 23(a): Code of Ethical Conduct violations (most tested)\n  2. Sec 23(b): Fraud in OBTAINING registration (not fraud during practice)\n  3. Sec 23(c): Gross negligence/incompetence/recklessness (NOT simple negligence)\n  4. Sec 23(d): Catch-all \u2014 any violation of RA 9266, IRR, Code, or SPP\n  The most common LEA question: \"An architect makes an isolated calculation error \u2014 is this grounds for revocation?\" Answer: NO \u2014 this is simple negligence, which does not satisfy the gross negligence standard under Sec 23(c).\n</ExamTip>",
+      "raw": "<ExamTip>\n  **LEA Priority — Know These 4 Grounds for Certain:**\n  1. Sec 23(a): Code of Ethical Conduct violations (most tested)\n  2. Sec 23(b): Fraud in OBTAINING registration (not fraud during practice)\n  3. Sec 23(c): Gross negligence/incompetence/recklessness (NOT simple negligence)\n  4. Sec 23(d): Catch-all — any violation of RA 9266, IRR, Code, or SPP\n  The most common LEA question: \"An architect makes an isolated calculation error — is this grounds for revocation?\" Answer: NO — this is simple negligence, which does not satisfy the gross negligence standard under Sec 23(c).\n</ExamTip>",
       "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"ExamTip\" status=\"preserved\"]",
       "props_text": "(none)",
       "props_json": {},
-      "children_raw": "**LEA Priority \u2014 Know These 4 Grounds for Certain:**\n  1. Sec 23(a): Code of Ethical Conduct violations (most tested)\n  2. Sec 23(b): Fraud in OBTAINING registration (not fraud during practice)\n  3. Sec 23(c): Gross negligence/incompetence/recklessness (NOT simple negligence)\n  4. Sec 23(d): Catch-all \u2014 any violation of RA 9266, IRR, Code, or SPP\n  The most common LEA question: \"An architect makes an isolated calculation error \u2014 is this grounds for revocation?\" Answer: NO \u2014 this is simple negligence, which does not satisfy the gross negligence standard under Sec 23(c).",
-      "children_text": "**LEA Priority \u2014 Know These 4 Grounds for Certain:**\n  1. Sec 23(a): Code of Ethical Conduct violations (most tested)\n  2. Sec 23(b): Fraud in OBTAINING registration (not fraud during practice)\n  3. Sec 23(c): Gross negligence/incompetence/recklessness (NOT simple negligence)\n  4. Sec 23(d): Catch-all \u2014 any violation of RA 9266, IRR, Code, or SPP\n  The most common LEA question: \"An architect makes an isolated calculation error \u2014 is this grounds for revocation?\" Answer: NO \u2014 this is simple negligence, which does not satisfy the gross negligence standard under Sec 23(c).",
+      "children_raw": "**LEA Priority — Know These 4 Grounds for Certain:**\n  1. Sec 23(a): Code of Ethical Conduct violations (most tested)\n  2. Sec 23(b): Fraud in OBTAINING registration (not fraud during practice)\n  3. Sec 23(c): Gross negligence/incompetence/recklessness (NOT simple negligence)\n  4. Sec 23(d): Catch-all — any violation of RA 9266, IRR, Code, or SPP\n  The most common LEA question: \"An architect makes an isolated calculation error — is this grounds for revocation?\" Answer: NO — this is simple negligence, which does not satisfy the gross negligence standard under Sec 23(c).",
+      "children_text": "**LEA Priority — Know These 4 Grounds for Certain:**\n  1. Sec 23(a): Code of Ethical Conduct violations (most tested)\n  2. Sec 23(b): Fraud in OBTAINING registration (not fraud during practice)\n  3. Sec 23(c): Gross negligence/incompetence/recklessness (NOT simple negligence)\n  4. Sec 23(d): Catch-all — any violation of RA 9266, IRR, Code, or SPP\n  The most common LEA question: \"An architect makes an isolated calculation error — is this grounds for revocation?\" Answer: NO — this is simple negligence, which does not satisfy the gross negligence standard under Sec 23(c).",
       "parse_status": "parsed",
       "raw_hash": "sha256:57528212efa1b4747a25b4386b4e9e3bb68777bf35f79813092a1b920c073227"
     }

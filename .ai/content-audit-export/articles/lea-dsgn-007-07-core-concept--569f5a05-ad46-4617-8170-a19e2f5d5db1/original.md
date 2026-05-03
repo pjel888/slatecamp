@@ -1,6 +1,6 @@
 ## What You Need to Know for the LEA
 
-Development control calculations determine how much gross floor area (GFA) you can build on a given lot. These calculations bind your design decisions from the earliest stages and are routinely tested in the Architecture Licensure Examination (LEA) through worked problems.
+Development control calculations determine how much gross floor area (GFA) you can build on a given lot. These calculations bind your design decisions from the earliest stages and are routinely tested in the Licensure Examination for Architects (LEA) (LEA) through worked problems.
 
 ## Core Concept
 

@@ -1,21 +1,21 @@
 {
-  "attempted_at": "2026-05-03T07:52:24.452Z",
+  "attempted_at": "2026-05-03T11:49:44.089Z",
   "dry_run": true,
   "apply": false,
   "pushed": false,
-  "blockers": [
-    "ui-blocks.json contains unknown/unparseable blocks; rerun with --force only after manual review."
-  ],
+  "blockers": [],
   "warnings": [
     "Dry-run mode: no Supabase mutation will be performed."
   ],
   "updated_rows_count": 0,
   "article_id": "916404b9-8f62-40ab-a275-335da247ce2e",
   "slug": "lea-strc-007-02-core-concept",
-  "preparation_actions": [],
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
   "remote_hash_before": "sha256:41d49cfc1b8791e032cd7b3ee0937da0e64a71d12c7f8bebd372519f5f001c15",
   "original_hash": "sha256:41d49cfc1b8791e032cd7b3ee0937da0e64a71d12c7f8bebd372519f5f001c15",
-  "candidate_hash": "sha256:e22f984c1a9e313b065d9cc69c6f92a0148fa75c9fe1a77e12b07bee81226a73",
+  "candidate_hash": "sha256:914dc910985635b337d73780e951d908da50c1bc0566f0c3cca193cf4c661f33",
   "stale_check_passed": true,
   "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
 }

@@ -93,7 +93,7 @@ You are standing at the center of a Philippine town plaza. Directly in front of 
 
 <ExamTip>
 
-**ALE Trap:** "The Laws of the Indies were applied uniformly across all Spanish colonies" — FALSE. While the 1573 Ordenanzas were the legal framework, local conditions forced adaptations: Philippine versions had thinner walls (earthquake adaptation), wider arcades (tropical sun/rain), and churches oriented differently than the strict E-W rule when site conditions demanded. The ALE tests whether you know the principle AND its local modification.
+**LEA Trap:** "The Laws of the Indies were applied uniformly across all Spanish colonies" — FALSE. While the 1573 Ordenanzas were the legal framework, local conditions forced adaptations: Philippine versions had thinner walls (earthquake adaptation), wider arcades (tropical sun/rain), and churches oriented differently than the strict E-W rule when site conditions demanded. The LEA tests whether you know the principle AND its local modification.
 
 </ExamTip>
 

@@ -11,8 +11,6 @@ After studying this article, you should be able to:
 - Explain when each method is used in Philippine practice.
 - Apply fee method selection to specific service scenarios.
 
-
-
 ### Per Diem Compensation
 
 Per Diem (Latin for "per day") establishes a daily fee for the architect's time and expertise. The architect charges a fixed daily rate for each day spent on project-related work, regardless of how many hours are worked that day or what specific deliverables result. Per Diem is appropriate for site observation during construction (Construction Administration), site visits for feasibility analysis, expert consultation on specialized projects, or limited architectural services.
@@ -22,7 +20,6 @@ Per Diem rates should be established by mutual agreement between architect and c
 Per Diem works well for Construction Administration when the architect's on-site presence is intermittent or variable in intensity. Rather than estimating total hours (which is uncertain during construction), the architect and client agree to specific on-site visit frequency (twice weekly, for example) at a negotiated Per Diem rate. The contract specifies whether the rate includes travel time or whether travel is separate.
 
 <KeyValues items=[{"value": "5-12%", "label": "DAEDS Fee Range"}, {"value": "50M", "label": "PCC Bracket Threshold"}, {"value": "10 Groups", "label": "Project Classification"}, {"value": "150%", "label": "Renovation Multiplier"}] />
-
 
 <KeyValues items=[{"value": "5-12%", "label": "DAEDS Fee Range"}, {"value": "50M", "label": "PCC Bracket Threshold"}, {"value": "10 Groups", "label": "Project Classification"}, {"value": "150%", "label": "Renovation Multiplier"}] />
 - Text: Note: Per Diem rates are distinct from hourly rates. A Per Diem covers a full day regardless of hours worked, while hourly rates charge by actual time spent. The contract must clearly specify which method applies to avoid billing disputes.

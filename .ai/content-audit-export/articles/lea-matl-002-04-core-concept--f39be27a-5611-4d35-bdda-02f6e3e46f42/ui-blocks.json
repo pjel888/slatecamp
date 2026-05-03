@@ -4,8 +4,8 @@
   "normalized_created_at": "2026-05-01T13:33:43.278Z",
   "parser_version": "ui-block-parser-v1",
   "original_content_hash": "sha256:2801a8bc6dd5e0a82eedce32f9887448b76601f904b600193be95c40949dd24f",
-  "normalized_content_hash": "817973799da83f895d87462fd9ed9483de1061d602bd3443774668e57e845b0f",
-  "ui_block_count": 3,
+  "normalized_content_hash": "e7d34193f6e7da2afa662fc561fbd2d279e29e9ab3b0a27dd717a43866a4fcbe",
+  "ui_block_count": 2,
   "total_blocks": 3,
   "blocks": [
     {
@@ -59,86 +59,9 @@
       "parse_status": "parsed",
       "warnings": [],
       "status": "preserved"
-    },
-    {
-      "block_id": "ui_0003",
-      "block_type": "mdx_component",
-      "component_name": "WikiMistakeList",
-      "raw": "<WikiMistakeList\n  title=\"Common Material Selection and Installation Errors\"\n  items={[\n    \"Using high-absorption stone (limestone >3%, travertine >5%) in exterior tropical exposure without sealing: Water absorption and freeze-thaw (or biological growth in tropical climate) will cause rapid degradation. Granite (\u22640.4% absorption) or selead marble is required for external exposure.\",",
-      "raw_hash": "sha256:54c79a85f6eb30df94abb1a6270fb8dd82df30d75cec1b91847464e68861ea27",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"WikiMistakeList\" status=\"unknown\"]\nExtracted summary:\n- Props: title=\"Common Material Selection and Installation Errors\", items=true, Using=true, high-absorption=true, stone=true, limestone=true\n- Text: 3%, travertine >5%) in exterior tropical exposure without sealing: Water absorption and freeze-thaw (or biological growth in tropical climate) will cause rapid degradation. Granite (\u22640.4% absorption) or selead marble is required for external exposure.\",\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:e8f9b217f856f434de401f32b299e75b24a055261d3d8bf2b4c684ecd8c9b487",
-      "props": {
-        "title": "Common Material Selection and Installation Errors",
-        "items": true,
-        "Using": true,
-        "high-absorption": true,
-        "stone": true,
-        "limestone": true
-      },
-      "props_json": {
-        "title": "Common Material Selection and Installation Errors",
-        "items": true,
-        "Using": true,
-        "high-absorption": true,
-        "stone": true,
-        "limestone": true
-      },
-      "props_text": "title=\"Common Material Selection and Installation Errors\"\n  items={[\n    \"Using high-absorption stone (limestone",
-      "children_raw": null,
-      "children_text": "3%, travertine >5%) in exterior tropical exposure without sealing: Water absorption and freeze-thaw (or biological growth in tropical climate) will cause rapid degradation. Granite (\u22640.4% absorption) or selead marble is required for external exposure.\",",
-      "start_offset": 10503,
-      "end_offset": 10889,
-      "line_start": 191,
-      "line_end": 194,
-      "parser_confidence": "low",
-      "parse_status": "unknown_block",
-      "warnings": [
-        "No closing tag found for WikiMistakeList; preserved opening line as unknown custom block."
-      ],
-      "status": "unknown"
     }
   ],
-  "unknown_blocks": [
-    {
-      "block_id": "ui_0003",
-      "block_type": "mdx_component",
-      "component_name": "WikiMistakeList",
-      "raw": "<WikiMistakeList\n  title=\"Common Material Selection and Installation Errors\"\n  items={[\n    \"Using high-absorption stone (limestone >3%, travertine >5%) in exterior tropical exposure without sealing: Water absorption and freeze-thaw (or biological growth in tropical climate) will cause rapid degradation. Granite (\u22640.4% absorption) or selead marble is required for external exposure.\",",
-      "raw_hash": "sha256:54c79a85f6eb30df94abb1a6270fb8dd82df30d75cec1b91847464e68861ea27",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"WikiMistakeList\" status=\"unknown\"]\nExtracted summary:\n- Props: title=\"Common Material Selection and Installation Errors\", items=true, Using=true, high-absorption=true, stone=true, limestone=true\n- Text: 3%, travertine >5%) in exterior tropical exposure without sealing: Water absorption and freeze-thaw (or biological growth in tropical climate) will cause rapid degradation. Granite (\u22640.4% absorption) or selead marble is required for external exposure.\",\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:e8f9b217f856f434de401f32b299e75b24a055261d3d8bf2b4c684ecd8c9b487",
-      "props": {
-        "title": "Common Material Selection and Installation Errors",
-        "items": true,
-        "Using": true,
-        "high-absorption": true,
-        "stone": true,
-        "limestone": true
-      },
-      "props_json": {
-        "title": "Common Material Selection and Installation Errors",
-        "items": true,
-        "Using": true,
-        "high-absorption": true,
-        "stone": true,
-        "limestone": true
-      },
-      "props_text": "title=\"Common Material Selection and Installation Errors\"\n  items={[\n    \"Using high-absorption stone (limestone",
-      "children_raw": null,
-      "children_text": "3%, travertine >5%) in exterior tropical exposure without sealing: Water absorption and freeze-thaw (or biological growth in tropical climate) will cause rapid degradation. Granite (\u22640.4% absorption) or selead marble is required for external exposure.\",",
-      "start_offset": 10503,
-      "end_offset": 10889,
-      "line_start": 191,
-      "line_end": 194,
-      "parser_confidence": "low",
-      "parse_status": "unknown_block",
-      "warnings": [
-        "No closing tag found for WikiMistakeList; preserved opening line as unknown custom block."
-      ],
-      "status": "unknown"
-    }
-  ],
+  "unknown_blocks": [],
   "unresolved_critical_blocks": [],
   "ui_blocks_hash": "sha256:99f631914ea0567ba46d1f9d6e06d7f7e63dfe72b066a2f7b247725f0489508c"
 }

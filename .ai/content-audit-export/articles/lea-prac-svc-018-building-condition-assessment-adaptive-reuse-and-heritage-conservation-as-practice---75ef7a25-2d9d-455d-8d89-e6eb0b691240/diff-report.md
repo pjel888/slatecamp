@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice-services
 
-Generated: 2026-05-03T10:55:44.773Z
+Generated: 2026-05-03T11:49:21.684Z
 Article ID: 75ef7a25-2d9d-455d-8d89-e6eb0b691240
 Changed: true
 Safe to push locally: false

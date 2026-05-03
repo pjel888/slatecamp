@@ -1,20 +1,18 @@
 {
-  "attempted_at": "2026-05-03T07:52:54.827Z",
+  "attempted_at": "2026-05-03T11:49:59.071Z",
   "dry_run": true,
   "apply": false,
   "pushed": false,
-  "blockers": [
-    "original.md hash does not match article metadata export hash.",
-    "diff-report.json marks candidate unsafe.",
-    "--all-safe skipped article because diff-report is unsafe."
-  ],
+  "blockers": [],
   "warnings": [
     "Dry-run mode: no Supabase mutation will be performed."
   ],
   "updated_rows_count": 0,
   "article_id": "319c1e17-e0c6-409d-9886-c8a85ecaf747",
   "slug": "lea-util-003-04-wire-insulation-types-and-ratings",
-  "preparation_actions": [],
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
   "remote_hash_before": "sha256:3ff8e56b7599e821a0e4c0eb5e2f0b7e700d104812fabcd96c850c5015d027fd",
   "original_hash": "sha256:3ff8e56b7599e821a0e4c0eb5e2f0b7e700d104812fabcd96c850c5015d027fd",
   "candidate_hash": "sha256:976ef7613d0f181a40cf74a51293fe09f8adc6da9fee08895acab0b4f55686f6",

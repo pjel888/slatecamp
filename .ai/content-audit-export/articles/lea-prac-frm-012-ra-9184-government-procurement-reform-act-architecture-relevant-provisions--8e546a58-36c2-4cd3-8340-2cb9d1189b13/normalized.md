@@ -82,7 +82,7 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: ⚠️ Prohibited activities: collusion, fraud, bribery, conflict of interest, and bid-rigging. Architects must NOT communicate with other bidding firms to arrange fees or coordinate responses. Violations can result in PERMANENT disqualification from government procurement. — expect this as a trap answer on the ALE.
+- Text: ⚠️ Prohibited activities: collusion, fraud, bribery, conflict of interest, and bid-rigging. Architects must NOT communicate with other bidding firms to arrange fees or coordinate responses. Violations can result in PERMANENT disqualification from government procurement. — expect this as a trap answer on the LEA.
 [/SLATECAMP_UI_BLOCK]
 
 

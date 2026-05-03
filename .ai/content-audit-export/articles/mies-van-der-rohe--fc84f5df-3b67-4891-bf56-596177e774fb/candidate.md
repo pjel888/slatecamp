@@ -1,7 +1,5 @@
 # Mies van der Rohe
 
-
-
 ## Learning Goal
 
 <Tip>Focus on the architect's defining philosophy and key built works. The LEA frequently tests the relationship between an architect's theoretical principles and their physical execution in specific buildings.</Tip>
@@ -48,9 +46,6 @@ You are standing inside the Barcelona Pavilion and notice there are no interior 
 | Cruciform Column | A column with a cross-shaped (+) section | Look for: Barcelona Pavilion, Tugendhat House — these are Mies's signature structural members |
 
 <Example>The Barcelona Pavilion (1929) by Mies van der Rohe exemplifies free-flowing space through freestanding planes of marble, onyx, and glass supported by cruciform steel columns — no interior doors, no corridors, no enclosed rooms.</Example>
-
-
-<ExamTip>**LEA Pattern:** Questions about this architect often present an unfamiliar building and ask you to identify the architect based on characteristic details — look for signature elements like cruciform columns (Mies), pilotis (Corbusier), or structural expressionism (Gaudi).</ExamTip>
 
 <ExamTip>**LEA Pattern:** Questions about this architect often present an unfamiliar building and ask you to identify the architect based on characteristic details — look for signature elements like cruciform columns (Mies), pilotis (Corbusier), or structural expressionism (Gaudi).</ExamTip>
 ## LEA Exam Traps and Common Mistakes

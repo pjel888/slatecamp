@@ -6,7 +6,7 @@ After reading this article, you should be able to:
 - Explain the Architect's certification function in issuing Certificates of Payment and the legal implications of such certification.
 - Describe the application-for-payment process: submission, review, site inspection, and certification or withholding.
 - Identify the legal weight of an Architect's certification and the consequences of certifying incomplete or defective work.
-- Apply Certificate of Payment procedures to ALE scenarios involving payment disputes and the Architect's gate-keeping role.
+- Apply Certificate of Payment procedures to LEA scenarios involving payment disputes and the Architect's gate-keeping role.
 
 
 The Certificate of Payment is the architect's formal certification that the contractor has performed work in accordance with contract terms and is entitled to payment for services rendered.

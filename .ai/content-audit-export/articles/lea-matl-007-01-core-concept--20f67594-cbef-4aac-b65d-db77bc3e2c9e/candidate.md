@@ -63,19 +63,12 @@ Slip resistance matters in common areas and ramps. Glazed polished tiles (common
 
 <WikiMistakeCard mistake="Selecting PEI I or II for kitchens because the tile 'looks nice'" correction="Kitchens demand PEI III minimum. PEI I and II wear visibly within 2-3 years under foot traffic, leading to costly replacement and drywall damage." />
 
-<WikiMistakeCard mistake="Ignoring subfloor flatness when specifying large-format tiles (>60cm)" correction="Large tiles magnify subfloor irregularities. Require flatness to 1/8" in 10 ft per ASTM F710 and setting bed thickness 6-10mm for thin-set to prevent voids and cracking." />
-
-<WikiMistakeList mistakes={["Assuming all 'porcelain' tiles meet &lt;0.5% absorption without test data", "Grouting wide joints (>6mm) on floors expecting water exposure", "Failing to specify setting material compatibility (epoxy vs. latex-modified mortar with certain stone types)", "Not accounting for thermal expansion in large-format tile installations in direct sun", "Mixing high-PEI tile with insufficient slope in wet rooms, trapping standing water"]} />
-
-## Related Articles
-
-See also within Interior Finishes: **lea-matl-007-02-core-concept**, **lea-matl-007-03-core-concept**, **lea-matl-007-04-core-concept**, **lea-matl-007-05-core-concept**.
+core-concept**, **lea-matl-007-05-core-concept**.
 
 > **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
-
 
 [SLATECAMP_UI_BLOCK:ui_e001 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Exam Tip — Classify floor finishes (ceramic tile, porcelain, hardwood, :** This topic is heavily tested in Area B. Focus on mastering material classifications, key property values (compressive strength, R-value, unit weight), and estimating formulas. Create comparison tables to distinguish similar materials (e.g., cement Types I–V, glass types, insulation types). Practice computational problems for concrete volume, board foot, CHB count, and paint coverage — these are reliable exam items.
+- Text: **LEA Exam Tip — Classify floor finishes (ceramic tile, porcelain, hardwood, :** This topic is heavily tested in Area B. Focus on mastering material classifications, key property values (compressive strength, R-value, unit weight), and estimating formulas. Create comparison tables to distinguish similar materials (e.g., cement Types I–V, glass types, insulation types). Practice computational problems for concrete volume, board foot, CHB count, and paint coverage — these are reliable exam items.
 [/SLATECAMP_UI_BLOCK]

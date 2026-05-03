@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions
 
-Generated: 2026-05-03T10:55:52.170Z
+Generated: 2026-05-03T11:49:27.187Z
 Article ID: af5e9418-3dd1-4123-beb3-6d6472714254
 Changed: true
 Safe to push locally: true
@@ -8,8 +8,8 @@ Safe to push locally: true
 ## Hashes
 
 - Original: `sha256:610aedda193d3de7ecdfd7dd788e6e243bdba995ab3ece144c5ed94f957916be`
-- Normalized: `sha256:0ecbb6bc86a2d2818eea810f03313f8b7408e16302a0ebd0fe1f30fe7bb6b8db`
-- Candidate: `sha256:f816f694da64b9a10b0869333bd9265ad5ff65e1308036e3a23473494aebea28`
+- Normalized: `sha256:44ee1177c755a1717b1a2a5ad3839054418121cba2b0eb1ee0778a8b8f880b06`
+- Candidate: `sha256:d87d91f95fde7873f15ef96419f1cb46ac8c99ceff476b09981b7c7e4a5eafbf`
 
 ## Line summary
 

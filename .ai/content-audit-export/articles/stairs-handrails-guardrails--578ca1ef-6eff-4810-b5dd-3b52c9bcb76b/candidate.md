@@ -140,7 +140,7 @@ Guard (protective railing) must be **1,100 mm** where drop > 750 mm. This is **s
 
 ## Exam Tip
 
-ALE Trap: When BP 344 and PD 1096 conflict on stairs, BP 344 accessibility requirements PREVAIL for accessible routes, but PD 1096 governs structural and life-safety requirements. Dual handrails (700/900 mm) is the most tested BP 344 stair requirement.
+LEA Trap: When BP 344 and PD 1096 conflict on stairs, BP 344 accessibility requirements PREVAIL for accessible routes, but PD 1096 governs structural and life-safety requirements. Dual handrails (700/900 mm) is the most tested BP 344 stair requirement.
 
 \[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
 Extracted summary:

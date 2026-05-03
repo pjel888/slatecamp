@@ -90,7 +90,7 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
 Extracted summary:
 - Props: 
-- Text: The Vitruvian Triad is tested on virtually every Philippine Architecture Licensure Examination. You must know the three principles precisely, understand their Latin and English terminology, and be abl
+- Text: The Vitruvian Triad is tested on virtually every Philippine Licensure Examination for Architects. You must know the three principles precisely, understand their Latin and English terminology, and be abl
 [/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes

@@ -8,7 +8,7 @@ Extracted summary:
 
 ## Learning Goal
 
-Master the professional practice framework tested in the ALE, including: RA 9266 (The Architecture Act), SPP documents (200–208, 301), fee computation methods, construction contracts and bonds, professional ethics, CPD requirements, practice forms, and registration/liability provisions. By the end of this study map, you should understand the logical chain from legislation through services, fees, and contracts.
+Master the professional practice framework tested in the LEA, including: RA 9266 (The Architecture Act), SPP documents (200–208, 301), fee computation methods, construction contracts and bonds, professional ethics, CPD requirements, practice forms, and registration/liability provisions. By the end of this study map, you should understand the logical chain from legislation through services, fees, and contracts.
 
 ## Subject Coverage
 
@@ -73,12 +73,12 @@ Sole proprietorship, partnership, corporation; CPD requirements for renewal.
 - **Assuming the architect always has the same role.** Design-bid-build vs. design-build vs. construction management — different roles and authorities.
 - **Confusing SPP document scopes.** SPP 201 is pre-design; SPP 202 is regular design; SPP 208 is design-build; SPP 301 is fees.
 
-\[SLATECAMP_UI_BLOCK:ui_0002 component="Note" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: Because Professional Practice questions are often scenario-based, reading comprehension and careful attention to the specific conditions in each question matters as much as raw knowledge. Practice rea
 \[/SLATECAMP_UI_BLOCK\]
-\[SLATECAMP_UI_BLOCK:ui_0006 component="Tip" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: Create a side-by-side comparison of design-bid-build, design-build, and construction management delivery methods: who holds each contract, what the architect's role is in each phase, and what the key 

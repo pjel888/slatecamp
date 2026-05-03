@@ -52,7 +52,7 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0035 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **LEA Exam Pattern — Etymology Trap:** Brutalism comes from béton brut (raw concrete), NOT from the English word "brutal." This is the single most tested etymology question on the Philippine ALE for architectural movements. The answer is always "béton brut" (Option B on multiple-choice). Le Corbusie
+- Text: **LEA Exam Pattern — Etymology Trap:** Brutalism comes from béton brut (raw concrete), NOT from the English word "brutal." This is the single most tested etymology question on the Philippine LEA for architectural movements. The answer is always "béton brut" (Option B on multiple-choice). Le Corbusie
 [/SLATECAMP_UI_BLOCK]
 
 

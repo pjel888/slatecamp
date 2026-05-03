@@ -1,6 +1,6 @@
 # Content Diff Report: lea-util-006-06-daylighting-design-strategy
 
-Generated: 2026-05-03T07:48:33.634Z
+Generated: 2026-05-03T11:49:40.162Z
 Article ID: b862f4a8-fa65-4cf7-bcb8-bec5b330d837
 Changed: true
 Safe to push locally: false
@@ -8,8 +8,8 @@ Safe to push locally: false
 ## Hashes
 
 - Original: `sha256:fc6a16f0526b22c2b3813de3d9f0d6b06520a966ca518f157ad72323ab9e9b38`
-- Normalized: `sha256:24c2b7e15e4cb51902820e68e527d78114b7f06ba04ffd5b684b9e8703d34b40`
-- Candidate: `sha256:56dca33848a2c505e12100b4f8312bf4bbd12898b1ae2d1518479a30367d34cc`
+- Normalized: `sha256:9e0ce7409914796ad356091fbc3f50ede89e6c0cbf41c9e097a502baf63d125e`
+- Candidate: `sha256:9e4896b29eaacde3a8d7471dfc54a8532adb7c4ea138d41da00da330e8129ae6`
 
 ## Line summary
 
@@ -27,7 +27,6 @@ Safe to push locally: false
 ## Blockers
 
 - Candidate contains unresolved UI block placeholders.
-- original.md hash does not match article metadata export hash.
 
 ## Warnings
 

@@ -6,7 +6,7 @@ After reading this article, you should be able to:
 - Explain the purpose and aspirational nature of the Architect's Credo as distinct from the enforceable Code of Ethical Conduct.
 - Identify the core pledges in the Architect's Credo (duty to self, country, God, profession, and clients).
 - Distinguish the Credo's role in character evaluation from the Code's role in disciplinary proceedings.
-- Apply the distinction between aspirational ethics and enforceable conduct rules to ALE exam scenarios.
+- Apply the distinction between aspirational ethics and enforceable conduct rules to LEA exam scenarios.
 
 The Architect's Credo (promulgated via PRBoA Resolution No. 02, Series of 2006) condenses ethical principles into core commitments recited at professional oaths. It reinforces but does not replace the Code of Ethical Conduct; the Credo expresses aspirational values while the Code establishes enforceable obligations.
 

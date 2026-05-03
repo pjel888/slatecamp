@@ -44,7 +44,7 @@ Operations include regular board meetings, shareholder meetings, and formalized 
 
 ---
 
-\[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: Unlike sole proprietorships and partnerships, the corporate veil protects shareholders from personal liability for corporate debts beyond their investment. However, individual architects remain person

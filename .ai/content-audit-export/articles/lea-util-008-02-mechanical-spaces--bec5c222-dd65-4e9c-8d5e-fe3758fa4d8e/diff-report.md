@@ -1,9 +1,9 @@
 # Content Diff Report: lea-util-008-02-mechanical-spaces
 
-Generated: 2026-05-03T07:48:45.803Z
+Generated: 2026-05-03T11:49:46.140Z
 Article ID: bec5c222-dd65-4e9c-8d5e-fe3758fa4d8e
 Changed: true
-Safe to push locally: false
+Safe to push locally: true
 
 ## Hashes
 
@@ -26,7 +26,7 @@ Safe to push locally: false
 
 ## Blockers
 
-- original.md hash does not match article metadata export hash.
+- None
 
 ## Warnings
 

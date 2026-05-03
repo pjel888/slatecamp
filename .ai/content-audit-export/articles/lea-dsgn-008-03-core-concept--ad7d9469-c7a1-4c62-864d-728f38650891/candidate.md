@@ -2,7 +2,7 @@
 
 ## Learning Goal
 Apply sprinkler system impact on egress — increased travel distance (46m → 61m) and dead-end corridor allowance (6m → 15m), identify when sprinklers are required per RA 9514, and specify fire detection and alarm system components.
-Sprinkler systems and fire detection change two critical egress parameters: sprinklers increase the allowable travel distance from **$46\text{m}$ to $61\text{m}$** and extend the allowable length of dead-end corridors from **$6\text{m}$ to $15\text{m}$**. This is one of the highest-impact code relationships in fire safety design for the Architecture Licensure Examination.
+Sprinkler systems and fire detection change two critical egress parameters: sprinklers increase the allowable travel distance from **$46\text{m}$ to $61\text{m}$** and extend the allowable length of dead-end corridors from **$6\text{m}$ to $15\text{m}$**. This is one of the highest-impact code relationships in fire safety design for the Licensure Examination for Architects.
 
 
 ## Core Concept

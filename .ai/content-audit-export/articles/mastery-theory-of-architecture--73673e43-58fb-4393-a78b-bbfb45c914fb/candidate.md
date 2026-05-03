@@ -69,22 +69,22 @@ The Nature of Architecture subtopic — what architecture is obligated to do for
 - **Neglecting proxemics and anthropometrics.** Specific zone distances and human dimensions are testable.
 - **Over-investing in Pritzker list.** Principles and philosophies are weighted more heavily.
 
-\[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: Keep a copy of Ching's diagrams accessible while studying other Theory subtopics. Ask yourself: "Which principle from Ching is this philosopher or movement engaging with?" That habit will accelerate y
 \[/SLATECAMP_UI_BLOCK\]
-\[SLATECAMP_UI_BLOCK:ui_0005 component="Note" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: Louis Kahn's distinction between "served spaces" (living rooms, offices, classrooms — the spaces people inhabit for primary activities) and "servant spaces" (corridors, mechanical rooms, toilets — the
 \[/SLATECAMP_UI_BLOCK\]
-\[SLATECAMP_UI_BLOCK:ui_0006 component="Tip" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: Study the PAGASA wind rose data for the Philippine archipelago alongside your tropical architecture notes. Knowing that northeast monsoon dominates November–February and southwest monsoon dominates Ju
 \[/SLATECAMP_UI_BLOCK\]
-\[SLATECAMP_UI_BLOCK:ui_0007 component="Warn" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: Integration questions are where students who memorized without understanding fall short. If you only know what Critical Regionalism is in the abstract, you cannot apply it to a specific Filipino clima

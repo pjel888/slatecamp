@@ -159,7 +159,7 @@ Ans: The 1200 mm BP 344 clear width requirement governs for accessible ramps, as
 <LawCallout code="bp344" section="Section 4 - Prevailing Law">
 
 
-📌 Exam Tip: The ALE frequently tests the BP 344 ramp width (1200 mm) vs. sidewalk width (1500 mm) distinction in scenario-based questions. Remember: ramp = 1200 mm, sidewalk = 1500 mm, rest space = 1800 mm. These three numbers appear together in integrated compliance questions.
+📌 Exam Tip: The LEA frequently tests the BP 344 ramp width (1200 mm) vs. sidewalk width (1500 mm) distinction in scenario-based questions. Remember: ramp = 1200 mm, sidewalk = 1500 mm, rest space = 1800 mm. These three numbers appear together in integrated compliance questions.
 
 
 </LawCallout>

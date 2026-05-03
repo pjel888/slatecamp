@@ -1,32 +1,32 @@
 # Content Diff Report: lea-prac-eth-005-core-concept
 
-Generated: 2026-05-03T07:49:33.323Z
+Generated: 2026-05-03T11:50:07.434Z
 Article ID: 504b1844-1db1-44f8-9aa9-5b78705ca37e
 Changed: true
-Safe to push locally: false
+Safe to push locally: true
 
 ## Hashes
 
 - Original: `sha256:1ca2d3f0a4559c3701f94fcddcf96aa563a09408f9b4489455a944cba5dfc88c`
-- Normalized: `sha256:dd4cb19305af4c999eca1845803b5abb3ea3c4799edd1c3df1b6445ac0855fc1`
-- Candidate: `sha256:3a66223a6dd56dbcbc28ad79ee63652929558f2956ad8f42a5038cd532633520`
+- Normalized: `sha256:e6de1ca2a83ab504cbd8e45ebcac0e2db4564f268fc0b3ed0087207e98099523`
+- Candidate: `sha256:866d4a447cb8cd13fb5cf07b915d2bb1ffa75dd0e571b4c18e8569f3c26ced01`
 
 ## Line summary
 
-- Changed lines: 85
-- Inserted lines: 25
+- Changed lines: 87
+- Inserted lines: 27
 - Deleted lines: 0
 
 ## UI block preservation
 
-- UI blocks expected: 5
-- UI blocks preserved: 3
-- UI blocks changed/missing: 2
+- UI blocks expected: 4
+- UI blocks preserved: 4
+- UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate is missing 2 preserved UI block(s).
+- None
 
 ## Warnings
 

@@ -4,35 +4,10 @@
   "normalized_created_at": "2026-05-01T13:33:43.440Z",
   "parser_version": "ui-block-parser-v1",
   "original_content_hash": "sha256:0883a4b21cf32107a5820974eca27bf99a83cb387d34ca45278065cfdba397a8",
-  "normalized_content_hash": "sha256:7bb661c641acdb50bc179effd4bd848a56e3c5f1c49aa2ddcbea84dc047f0d58",
-  "ui_block_count": 4,
+  "normalized_content_hash": "6cf2dd341f43c86a657846fec1c5da49179b115a3f721f3a8dd068510fad01cb",
+  "ui_block_count": 3,
   "total_blocks": 3,
   "blocks": [
-    {
-      "block_id": "ui_0001",
-      "block_type": "mdx_component",
-      "component_name": "JSX",
-      "raw": "<LawCallout code=\"ra9266\" section=\"Section 3 - Scope of Practice\">\nnull\n</LawCallout>",
-      "raw_hash": "sha256:a6ad7b54e059f76ba77c1741d94a9603e48cdcfdc6de4215efef60a9bfab5005",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"JSX\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: null\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:8c68170d1ea105d4667bb8cb9b8e720f28ed451acc605b8da09477c5f178ef7e",
-      "props": {},
-      "props_json": {
-        "code": "ra9266",
-        "section": "Section 3 - Scope of Practice"
-      },
-      "props_text": "code=ra9266, section=Section 3 - Scope of Practice",
-      "children_raw": "null",
-      "children_text": "null",
-      "start_offset": 92,
-      "end_offset": 107,
-      "line_start": 3,
-      "line_end": 3,
-      "parser_confidence": "high",
-      "parse_status": "parsed",
-      "warnings": [],
-      "status": "preserved"
-    },
     {
       "block_id": "ui_0002",
       "block_type": "mdx_component",

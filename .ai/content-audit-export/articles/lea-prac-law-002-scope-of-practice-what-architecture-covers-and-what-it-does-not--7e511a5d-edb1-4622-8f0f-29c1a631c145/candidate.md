@@ -1,6 +1,6 @@
 ## Scope of Practice: What Architecture Covers and What It Does Not
 ## Learning Goal
-After reading this article, you should understand the key concepts tested in the ALE for this topic, including relevant code provisions, dimensional standards, and common exam applications.
+After reading this article, you should understand the key concepts tested in the LEA for this topic, including relevant code provisions, dimensional standards, and common exam applications.
 
 ### The Comprehensive Definition of Architectural Scope
 

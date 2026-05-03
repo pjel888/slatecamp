@@ -72,21 +72,12 @@ Extracted summary:
 - Text: (none detected)
 [/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeList" status="unknown"]
-Extracted summary:
-- Props: mistakes=true, Ignoring=true, grease=true, trap=true, sizing=true, for=true, commercial=true, kitchens=true, requires=true, L=true, minimum=true, flow-based=true
-- Text: 3 days in hot climate without temperature control; RA 9003 requires 3-day max in humid regions", "Not segregating waste per RA 9003 at source; four streams (biodegradable, non-recyclable, recyclable, hazardous) are mandatory, not optional", "Confusing STP overflow rate (50–150 L/capita/day design flow) with peak hourly flow; peak is 3–4× average and drives tank volume sizing", "Submitting building permit without DENR discharge permit or Sanitary Inspection Certificate (SIC) from LGU; required fo
-[/SLATECAMP_UI_BLOCK]
-
-## Related Articles
-
-See also within Plumbing and Sanitary Systems: **lea-util-001-07-core-concept**, **lea-util-001-08-core-concept**, **lea-util-001-09-core-concept**.
+ea-util-001-07-core-concept**, **lea-util-001-08-core-concept**, **lea-util-001-09-core-concept**.
 
 > **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
-
 
 [SLATECAMP_UI_BLOCK:ui_e001 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Exam Tip — Identify waste disposal and treatment systems (septic tanks,:** Building Utilities carries the heaviest weight in Area B. Focus on code-specific values (PEC ampacities, Revised Plumbing Code fixture units, NFPA spacing requirements) and regulatory triggers (when is a fire alarm mandatory? when is seismic bracing required?). Practice load computations and system sizing problems which appear regularly on the exam.
+- Text: **LEA Exam Tip — Identify waste disposal and treatment systems (septic tanks,:** Building Utilities carries the heaviest weight in Area B. Focus on code-specific values (PEC ampacities, Revised Plumbing Code fixture units, NFPA spacing requirements) and regulatory triggers (when is a fire alarm mandatory? when is seismic bracing required?). Practice load computations and system sizing problems which appear regularly on the exam.
 [/SLATECAMP_UI_BLOCK]

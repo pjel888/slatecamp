@@ -445,7 +445,7 @@ Together, these documents ensure that architectural practice in the Philippines 
 
 ## Exam Tip
 
-ALE Swipe: Nine SPP Docs: 201 (Pre-Design), 202 (Regular Design), 203 (Specialized), 204-A (Full-Time Supervision), 204-B (CM), 205 (Post-Construction), 206 (Comprehensive), 207 (Design-Build), 208 (Competition), 209 (Consulting). All are derived from RA 9266, Art. I, Sec. 4 (Architect's scope of practice). The three most tested are 202 (fee split), 201 (pre-design scope), and 207 (design-build).
+LEA Swipe: Nine SPP Docs: 201 (Pre-Design), 202 (Regular Design), 203 (Specialized), 204-A (Full-Time Supervision), 204-B (CM), 205 (Post-Construction), 206 (Comprehensive), 207 (Design-Build), 208 (Competition), 209 (Consulting). All are derived from RA 9266, Art. I, Sec. 4 (Architect's scope of practice). The three most tested are 202 (fee split), 201 (pre-design scope), and 207 (design-build).
 
 ## Cross‑References
 

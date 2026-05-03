@@ -4,7 +4,7 @@
   "normalized_created_at": "2026-05-01T13:33:43.713Z",
   "parser_version": "ui-block-parser-v1",
   "original_content_hash": "sha256:f0c00721148ae170ce5126bf573bce5f090a2ac53e5b4f95e50fdf39d83f9fae",
-  "normalized_content_hash": "sha256:209c3e58261e89f829d0a8ad3e476828d9e1cf3b9523deaa2534589978b5c193",
+  "normalized_content_hash": "1e294c5327bea55dc16c3335f7470d00cafef0d989205df53c16d0d76d0c3cbb",
   "ui_block_count": 12,
   "total_blocks": 0,
   "blocks": [
@@ -23,12 +23,12 @@
     {
       "block_id": "ui_0002",
       "component_name": "Tip",
-      "raw": "<Tip>Think of it as a generational upgrade: RA 545 (1950) served the post-war generation of architects. RA 9266 (2004) modernized regulation for the 21st century \u2014 expanding scope, strengthening board powers, and introducing continuing professional development.</Tip>",
+      "raw": "<Tip>Think of it as a generational upgrade: RA 545 (1950) served the post-war generation of architects. RA 9266 (2004) modernized regulation for the 21st century — expanding scope, strengthening board powers, and introducing continuing professional development.</Tip>",
       "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"Tip\" status=\"preserved\"]",
       "props_text": "(none)",
       "props_json": {},
-      "children_raw": "Think of it as a generational upgrade: RA 545 (1950) served the post-war generation of architects. RA 9266 (2004) modernized regulation for the 21st century \u2014 expanding scope, strengthening board powers, and introducing continuing professional development.",
-      "children_text": "Think of it as a generational upgrade: RA 545 (1950) served the post-war generation of architects. RA 9266 (2004) modernized regulation for the 21st century \u2014 expanding scope, strengthening board powers, and introducing continuing professional development.",
+      "children_raw": "Think of it as a generational upgrade: RA 545 (1950) served the post-war generation of architects. RA 9266 (2004) modernized regulation for the 21st century — expanding scope, strengthening board powers, and introducing continuing professional development.",
+      "children_text": "Think of it as a generational upgrade: RA 545 (1950) served the post-war generation of architects. RA 9266 (2004) modernized regulation for the 21st century — expanding scope, strengthening board powers, and introducing continuing professional development.",
       "parse_status": "parsed",
       "raw_hash": "sha256:de5843fdf376d715d0363ffed18a97cfc727be3d3ae5341309911c8afe033a3a"
     },
@@ -50,12 +50,12 @@
     {
       "block_id": "ui_0004",
       "component_name": "Warn",
-      "raw": "<Warn>The flagging audit found a common error in earlier materials: **Section 41** does NOT designate IAPOA. Section 41 is about implementing rules and regulations. The correct reference is **Section 4**. This distinction has appeared in ALE questions.</Warn>",
+      "raw": "<Warn>The flagging audit found a common error in earlier materials: **Section 41** does NOT designate IAPOA. Section 41 is about implementing rules and regulations. The correct reference is **Section 4**. This distinction has appeared in LEA questions.</Warn>",
       "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"Warn\" status=\"preserved\"]",
       "props_text": "(none)",
       "props_json": {},
-      "children_raw": "The flagging audit found a common error in earlier materials: **Section 41** does NOT designate IAPOA. Section 41 is about implementing rules and regulations. The correct reference is **Section 4**. This distinction has appeared in ALE questions.",
-      "children_text": "The flagging audit found a common error in earlier materials: **Section 41** does NOT designate IAPOA. Section 41 is about implementing rules and regulations. The correct reference is **Section 4**. This distinction has appeared in ALE questions.",
+      "children_raw": "The flagging audit found a common error in earlier materials: **Section 41** does NOT designate IAPOA. Section 41 is about implementing rules and regulations. The correct reference is **Section 4**. This distinction has appeared in LEA questions.",
+      "children_text": "The flagging audit found a common error in earlier materials: **Section 41** does NOT designate IAPOA. Section 41 is about implementing rules and regulations. The correct reference is **Section 4**. This distinction has appeared in LEA questions.",
       "parse_status": "parsed",
       "raw_hash": "sha256:36fbaefbf2da97a19f414a11da0f60479e7b0b4387851ffcc51ec59bbc165301"
     },
@@ -122,15 +122,15 @@
     {
       "block_id": "ui_0009",
       "component_name": "LawCallout",
-      "raw": "<LawCallout code=\"irr\" section=\"IRR Section 3\">\n**Consulting Architect:** An academically and professionally qualified architect with exceptional expertise in a branch of architecture. The Consulting Architect assumes **no civil liability** for the project under Article 1723 unless interfering with the AoR's functions \u2014 but is liable under their own service agreements.\n</LawCallout>",
+      "raw": "<LawCallout code=\"irr\" section=\"IRR Section 3\">\n**Consulting Architect:** An academically and professionally qualified architect with exceptional expertise in a branch of architecture. The Consulting Architect assumes **no civil liability** for the project under Article 1723 unless interfering with the AoR's functions — but is liable under their own service agreements.\n</LawCallout>",
       "placeholder": "[SLATECAMP_UI_BLOCK:ui_0009 component=\"LawCallout\" status=\"preserved\"]",
       "props_text": "code=irr, section=IRR Section 3",
       "props_json": {
         "code": "irr",
         "section": "IRR Section 3"
       },
-      "children_raw": "**Consulting Architect:** An academically and professionally qualified architect with exceptional expertise in a branch of architecture. The Consulting Architect assumes **no civil liability** for the project under Article 1723 unless interfering with the AoR's functions \u2014 but is liable under their own service agreements.",
-      "children_text": "**Consulting Architect:** An academically and professionally qualified architect with exceptional expertise in a branch of architecture. The Consulting Architect assumes **no civil liability** for the project under Article 1723 unless interfering with the AoR's functions \u2014 but is liable under their own service agreements.",
+      "children_raw": "**Consulting Architect:** An academically and professionally qualified architect with exceptional expertise in a branch of architecture. The Consulting Architect assumes **no civil liability** for the project under Article 1723 unless interfering with the AoR's functions — but is liable under their own service agreements.",
+      "children_text": "**Consulting Architect:** An academically and professionally qualified architect with exceptional expertise in a branch of architecture. The Consulting Architect assumes **no civil liability** for the project under Article 1723 unless interfering with the AoR's functions — but is liable under their own service agreements.",
       "parse_status": "parsed",
       "raw_hash": "sha256:e9048a7c917620e9db88e4dfc131cd5124f45021f864b52b92e2679028d32e37"
     },
@@ -164,12 +164,12 @@
     {
       "block_id": "ui_0012",
       "component_name": "Warn",
-      "raw": "<Warn>The earlier version of this article cited **Section 20(a)** for structural conceptualization. This is wrong. Section 20 is about the seal, issuance, and use of the architect's seal \u2014 not about design scope. The correct reference is **Section 3(4)(a) or Section 3(5)** of the IRR, which define the scope of practice and structural conceptualization.</Warn>",
+      "raw": "<Warn>The earlier version of this article cited **Section 20(a)** for structural conceptualization. This is wrong. Section 20 is about the seal, issuance, and use of the architect's seal — not about design scope. The correct reference is **Section 3(4)(a) or Section 3(5)** of the IRR, which define the scope of practice and structural conceptualization.</Warn>",
       "placeholder": "[SLATECAMP_UI_BLOCK:ui_0012 component=\"Warn\" status=\"preserved\"]",
       "props_text": "(none)",
       "props_json": {},
-      "children_raw": "The earlier version of this article cited **Section 20(a)** for structural conceptualization. This is wrong. Section 20 is about the seal, issuance, and use of the architect's seal \u2014 not about design scope. The correct reference is **Section 3(4)(a) or Section 3(5)** of the IRR, which define the scope of practice and structural conceptualization.",
-      "children_text": "The earlier version of this article cited **Section 20(a)** for structural conceptualization. This is wrong. Section 20 is about the seal, issuance, and use of the architect's seal \u2014 not about design scope. The correct reference is **Section 3(4)(a) or Section 3(5)** of the IRR, which define the scope of practice and structural conceptualization.",
+      "children_raw": "The earlier version of this article cited **Section 20(a)** for structural conceptualization. This is wrong. Section 20 is about the seal, issuance, and use of the architect's seal — not about design scope. The correct reference is **Section 3(4)(a) or Section 3(5)** of the IRR, which define the scope of practice and structural conceptualization.",
+      "children_text": "The earlier version of this article cited **Section 20(a)** for structural conceptualization. This is wrong. Section 20 is about the seal, issuance, and use of the architect's seal — not about design scope. The correct reference is **Section 3(4)(a) or Section 3(5)** of the IRR, which define the scope of practice and structural conceptualization.",
       "parse_status": "parsed",
       "raw_hash": "sha256:574b104642b7644f96139e52a0a13bfb81fb307b1057194e529bda8a627d0321"
     }

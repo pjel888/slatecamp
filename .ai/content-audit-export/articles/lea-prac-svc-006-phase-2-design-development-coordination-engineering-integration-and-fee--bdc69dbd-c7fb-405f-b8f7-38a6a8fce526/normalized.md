@@ -6,7 +6,7 @@ After reading this article, you should be able to:
 - Describe the deliverables of Design Development (Phase 3 under SPP 202): detailed drawings, specifications, and refined cost estimates.
 - Explain the coordination and integration of structural, MEP, and other engineering consultants during this phase.
 - Identify the fee allocation for Design Development (20% of total design fees under SPP 202).
-- Apply Design Development phase requirements to ALE scenarios involving technical documentation and consultant coordination.
+- Apply Design Development phase requirements to LEA scenarios involving technical documentation and consultant coordination.
 
 Design Development builds upon the approved schematic design to produce detailed drawings, specifications, and cost estimates. This phase earns 20% of the architect's total design fees and focuses on translating conceptual design into technical documents ready for contract document preparation.
 
@@ -32,7 +32,7 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Pattern:** Expect scenario-based questions where you must determine whi — this distinction appears on every ALE cycle.
+- Text: **LEA Pattern:** Expect scenario-based questions where you must determine whi — this distinction appears on every LEA cycle.
 [/SLATECAMP_UI_BLOCK]
 Design Development requires active coordination among the architect and engineering consultants. The architect must ensure that structural, mechanical, electrical, and plumbing systems integrate effectively with the architectural design. This phase typically sees the greatest amount of consultant coordination, as systems must be refined from schematic concepts into coordinated technical designs. The architect acts as the lead professional coordinating all disciplines to achieve an integrated solution.
 
@@ -40,7 +40,7 @@ Design Development requires active coordination among the architect and engineer
 [SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Pattern:** Expect scenario-based questions where you must determine whi — this distinction appears on every ALE cycle.
+- Text: **LEA Pattern:** Expect scenario-based questions where you must determine whi — this distinction appears on every LEA cycle.
 [/SLATECAMP_UI_BLOCK]
 ### Fee Milestone and Cumulative Progress
 

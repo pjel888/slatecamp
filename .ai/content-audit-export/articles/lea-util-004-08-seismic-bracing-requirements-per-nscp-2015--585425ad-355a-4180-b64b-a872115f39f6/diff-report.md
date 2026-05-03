@@ -1,9 +1,9 @@
 # Content Diff Report: lea-util-004-08-seismic-bracing-requirements-per-nscp-2015
 
-Generated: 2026-05-03T07:50:10.128Z
+Generated: 2026-05-03T11:50:20.175Z
 Article ID: 585425ad-355a-4180-b64b-a872115f39f6
 Changed: true
-Safe to push locally: false
+Safe to push locally: true
 
 ## Hashes
 
@@ -26,7 +26,7 @@ Safe to push locally: false
 
 ## Blockers
 
-- original.md hash does not match article metadata export hash.
+- None
 
 ## Warnings
 

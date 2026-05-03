@@ -1,6 +1,6 @@
 # Content Diff Report: dangerous-and-ruinous-buildings
 
-Generated: 2026-05-03T10:55:37.763Z
+Generated: 2026-05-03T11:49:15.781Z
 Article ID: ad9732f1-f733-4bc1-acb5-72b4bb53555d
 Changed: true
 Safe to push locally: true

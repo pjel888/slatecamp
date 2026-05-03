@@ -162,22 +162,22 @@ These interactions create an ecosystem of professional regulation; no single age
 
 ---
 
-\[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: Legal Basis: RA 9266 (Architecture Act of 2004), Sections 7 (Review and Approval), 8 (Administrative Supervision), and 9 (Suspension or Removal of Board Members); RA 9266 IRR, Sections 7-9.
 \[/SLATECAMP_UI_BLOCK\]
-\[SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: A common exam trap: confusing **administrative supervision** (PRC handles budget, staff, facilities — organizational support) with **operational control** (PRBoA decides professional standards, exam c
 \[/SLATECAMP_UI_BLOCK\]
-\[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: The three-tier appeal path is: **Board (first instance)** → **Commission (appeal)** → **Court of Appeals (judicial review)**. The Commission does not retry the case — it reviews the Board's record for
 \[/SLATECAMP_UI_BLOCK\]
-\[SLATECAMP_UI_BLOCK:ui_0008 component="LawCallout" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: Legal Basis: RA 9266 (Architecture Act of 2004), Sections 7 (Review and Approval), 8 (Administrative Supervision), and 9 (Suspension or Removal of Board Members); RA 9266 IRR, Sections 7-9.

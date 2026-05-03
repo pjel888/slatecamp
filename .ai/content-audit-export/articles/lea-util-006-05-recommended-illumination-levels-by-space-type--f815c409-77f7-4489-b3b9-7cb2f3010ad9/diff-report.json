@@ -1,7 +1,7 @@
 {
   "article_id": "f815c409-77f7-4489-b3b9-7cb2f3010ad9",
   "slug": "lea-util-006-05-recommended-illumination-levels-by-space-type",
-  "generated_at": "2026-05-03T10:55:18.923Z",
+  "generated_at": "2026-05-03T11:49:01.376Z",
   "old_hash": "sha256:090fb061e98d696745edadc6da0d19eb3767bf51a7cf9f45375e1fd6fc206572",
   "new_hash": "sha256:9771e73ef9aba68c772157de446e786938e70912e34c4d5b6fae11d74384ac59",
   "original_hash": "sha256:090fb061e98d696745edadc6da0d19eb3767bf51a7cf9f45375e1fd6fc206572",
@@ -28,13 +28,11 @@
     "missing_block_ids": [],
     "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "original.md hash does not match article metadata export hash."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: original.md hash does not match article metadata export hash."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

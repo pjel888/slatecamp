@@ -37,7 +37,7 @@ The strength of the architect's position depends on documentary evidence showing
 [SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: ⚠️ The architect's copyright ownership exists even if (a) the client paid for the design services, AND (b) the project was never constructed. Payment for services does NOT transfer copyright — only a written assignment agreement transfers ownership. — expect this as a trap answer on the ALE.
+- Text: ⚠️ The architect's copyright ownership exists even if (a) the client paid for the design services, AND (b) the project was never constructed. Payment for services does NOT transfer copyright — only a written assignment agreement transfers ownership. — expect this as a trap answer on the LEA.
 [/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]

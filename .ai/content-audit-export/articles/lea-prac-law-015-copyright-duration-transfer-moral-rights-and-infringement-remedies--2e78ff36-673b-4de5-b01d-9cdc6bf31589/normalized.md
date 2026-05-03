@@ -61,7 +61,7 @@ Violations of the right of integrity—such as radical demolition of distinctive
 [SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: ⚠️ MORAL RIGHTS are INALIENABLE — architects retain them even after assigning economic copyright. The right of attribution ensures proper credit; the right of integrity protects against distortion damaging professional reputation. These cannot be waived or transferred. — expect this as a trap answer on the ALE.
+- Text: ⚠️ MORAL RIGHTS are INALIENABLE — architects retain them even after assigning economic copyright. The right of attribution ensures proper credit; the right of integrity protects against distortion damaging professional reputation. These cannot be waived or transferred. — expect this as a trap answer on the LEA.
 [/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]

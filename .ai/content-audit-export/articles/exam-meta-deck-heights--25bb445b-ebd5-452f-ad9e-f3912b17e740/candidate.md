@@ -183,7 +183,7 @@ All dimensions in this deck are governed by BP 344 (2024 IRR), specifically Appe
 
 <ExamTip>
 
-**ALE Dimensional Strategy:** When a question gives a height in mm, immediately locate it on the ladder: below 750 (reach ranges, clearance), 750–900 (handrail zone — most common exam range), 900–1200 (handle/guard zone), above 1200 (max reach). If you know the band, you can eliminate 2–3 wrong answers instantly without memorizing every number.
+**LEA Dimensional Strategy:** When a question gives a height in mm, immediately locate it on the ladder: below 750 (reach ranges, clearance), 750–900 (handrail zone — most common exam range), 900–1200 (handle/guard zone), above 1200 (max reach). If you know the band, you can eliminate 2–3 wrong answers instantly without memorizing every number.
 
 </ExamTip>
 

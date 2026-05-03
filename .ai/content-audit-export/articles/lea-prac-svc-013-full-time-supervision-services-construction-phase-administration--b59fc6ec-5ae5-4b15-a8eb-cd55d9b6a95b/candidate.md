@@ -1,6 +1,6 @@
 ## Full-Time Supervision Services: Construction Phase Administration
 ## Learning Goal
-After reading this article, you should understand the key concepts tested in the ALE for this topic, including relevant code provisions, dimensional standards, and common exam applications.
+After reading this article, you should understand the key concepts tested in the LEA for this topic, including relevant code provisions, dimensional standards, and common exam applications.
 
 Full-Time Supervision Services establish the architect's presence throughout construction implementation, ensuring design intent realization and quality control. SPP Doc 204-A defines the scope, organization, compensation, and legal responsibilities of supervision services. This service category evolved from the historical clerk-of-works role, adapting to modern project complexity and regulatory requirements. Full-time supervision represents a distinct professional offering separate from design services.
 

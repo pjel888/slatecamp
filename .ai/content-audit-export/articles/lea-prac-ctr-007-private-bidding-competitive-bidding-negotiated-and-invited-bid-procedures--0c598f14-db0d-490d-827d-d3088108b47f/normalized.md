@@ -43,9 +43,9 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Priority — Know the Differences:**
+- Text: **LEA Priority — Know the Differences:**
   - **Competitive** = public announcement, multiple bidders, sealed bids, public opening
-  - **Negotiated** = single contractor, direct negotiation, no bid bon — this distinction appears on every ALE cycle.
+  - **Negotiated** = single contractor, direct negotiation, no bid bon — this distinction appears on every LEA cycle.
 [/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes

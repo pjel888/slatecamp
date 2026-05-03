@@ -1,6 +1,6 @@
 # Content Diff Report: pd-1096-rule-viii-light-and-ventilation
 
-Generated: 2026-05-03T07:49:52.779Z
+Generated: 2026-05-03T11:50:10.962Z
 Article ID: cb947ab1-7737-4bde-8a47-606b5d305ed6
 Changed: true
 Safe to push locally: true

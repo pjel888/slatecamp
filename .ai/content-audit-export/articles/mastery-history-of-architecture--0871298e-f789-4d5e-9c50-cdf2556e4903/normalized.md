@@ -71,22 +71,22 @@ Every major modern movement has a theoretical underpinning published before the 
 - **Treating Philippine architecture as isolated.** It's a story of layered influences from multiple cultures.
 - **Neglecting non-Western chronology.** Map non-Western timelines onto Western eras.
 
-\[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: Build a set of flashcards or a reference sheet organized by period, not by architect. Then practice navigating it in both directions: given an architect, identify the period; given a building image, i
 \[/SLATECAMP_UI_BLOCK\]
-\[SLATECAMP_UI_BLOCK:ui_0005 component="Tip" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: Memory Aid: Think of architectural history as a dialogue. Ancient → Medieval (Romans to Byzantine) = technology transfer. Medieval → Renaissance = conscious RETURN to antiquity. Renaissance → Baroque 
 \[/SLATECAMP_UI_BLOCK\]
-\[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: LEA Strategy: When faced with a 'what movement comes next' question, think thesis and antithesis. Every major movement defines itself partly by what it REJECTS from the previous period. The Modern Mov
 \[/SLATECAMP_UI_BLOCK\]
-\[SLATECAMP_UI_BLOCK:ui_0007 component="Example" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: Cross-Cultural Example: Spanish Colonial architecture in the Philippines (bahay na bato) combined Filipino stilt-house typology with Spanish masonry ground floor. This is not just a historical curiosi

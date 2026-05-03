@@ -173,15 +173,7 @@ Extracted summary:
 
 A compliant Philippine BEMS performs:
 
-[SLATECAMP_UI_BLOCK:ui_0010 component="BEMSFunctionality" status="unknown"]
-Extracted summary:
-- Props: functions=true, Consumption=true, tracking=true, Daily=true, monthly=true, annual=true, roll-ups=true, by=true, meter=true, zone=true, Demand=true, forecasting=true
-- Text: 15% anomalies within 24 hours"], ["Report generation", "Auto-export of DOE compliance reports (BEC-A2 format)"]]} />
-[/SLATECAMP_UI_BLOCK]
-
----
-
-## Practical Application: Energy Management in Philippine Office Buildings
+ldings
 
 ### Case Study: 15,000 m² Mixed-Use Office
 
@@ -222,9 +214,8 @@ See also within Renewable and Alternative Energy: **lea-util-007-04-core-concept
 
 > **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
 
-
 [SLATECAMP_UI_BLOCK:ui_e001 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Exam Tip — Design smart metering and advanced metering infrastructure (:** Building Utilities carries the heaviest weight in Area B. Focus on code-specific values (PEC ampacities, Revised Plumbing Code fixture units, NFPA spacing requirements) and regulatory triggers (when is a fire alarm mandatory? when is seismic bracing required?). Practice load computations and system sizing problems which appear regularly on the exam.
+- Text: **LEA Exam Tip — Design smart metering and advanced metering infrastructure (:** Building Utilities carries the heaviest weight in Area B. Focus on code-specific values (PEC ampacities, Revised Plumbing Code fixture units, NFPA spacing requirements) and regulatory triggers (when is a fire alarm mandatory? when is seismic bracing required?). Practice load computations and system sizing problems which appear regularly on the exam.
 [/SLATECAMP_UI_BLOCK]

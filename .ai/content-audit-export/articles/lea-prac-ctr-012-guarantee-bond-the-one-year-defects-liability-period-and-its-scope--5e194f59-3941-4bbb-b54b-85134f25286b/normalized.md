@@ -40,7 +40,7 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: ⚠️ **Critical Distinction:** The contractor's one-year contractual guarantee under UAP Document 301 is INDEPENDENT of and IN ADDITION TO the statutory liability under Civil Code Article 1723. Article 172... — expect this as a trap answer on the ALE.
+- Text: ⚠️ **Critical Distinction:** The contractor's one-year contractual guarantee under UAP Document 301 is INDEPENDENT of and IN ADDITION TO the statutory liability under Civil Code Article 1723. Article 172... — expect this as a trap answer on the LEA.
 [/SLATECAMP_UI_BLOCK]
 
 ### Procedure for Defect Correction
@@ -50,10 +50,10 @@ The Owner must report defects in writing during or within a reasonable time afte
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Priority — Guarantee Bond Rules:**
+- Text: **LEA Priority — Guarantee Bond Rules:**
   1. Period: 1 year from Substantial Completion (NOT Final Completion)
   2. Coverage: Workmanship and materials defects (NOT design errors)
-  3. Statutory over — this distinction appears on every ALE cycle.
+  3. Statutory over — this distinction appears on every LEA cycle.
 [/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes

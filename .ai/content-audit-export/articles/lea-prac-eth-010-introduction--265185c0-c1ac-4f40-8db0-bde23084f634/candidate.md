@@ -1,6 +1,6 @@
 ## Introduction
 ## Learning Goal
-After reading this article, you should understand the key concepts tested in the ALE for this topic, including relevant code provisions, dimensional standards, and common exam applications.
+After reading this article, you should understand the key concepts tested in the LEA for this topic, including relevant code provisions, dimensional standards, and common exam applications.
 
 The LEA examination tests candidates' ability to recognize unprofessional conduct in realistic scenarios. Rather than abstract ethical rules, architects must identify violations in context—understanding when conduct crosses from acceptable professional practice into violation territory.
 
@@ -456,7 +456,7 @@ Same violation (inadequate site investigation) yields vastly different disciplin
 
 ## About This Article
 
-This article is part of the SlateCamp Professional Practice Content Engine for LEA preparation. It synthesizes regulatory frameworks, case law principles, and professional standards into competency-based learning outcomes aligned with the Architecture Licensure Examination syllabus.
+This article is part of the SlateCamp Professional Practice Content Engine for LEA preparation. It synthesizes regulatory frameworks, case law principles, and professional standards into competency-based learning outcomes aligned with the Licensure Examination for Architects syllabus.
 
 **Revision History:**
 - 2026-03-22: Initial publication covering unprofessional conduct patterns

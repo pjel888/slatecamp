@@ -1,25 +1,21 @@
 {
-  "attempted_at": "2026-05-03T07:53:20.532Z",
+  "attempted_at": "2026-05-03T11:50:06.065Z",
   "dry_run": true,
   "apply": false,
   "pushed": false,
-  "blockers": [
-    "original.md hash does not match article metadata export hash.",
-    "diff-report.json marks candidate unsafe.",
-    "Candidate has unresolved placeholders.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
-  ],
+  "blockers": [],
   "warnings": [
     "Dry-run mode: no Supabase mutation will be performed."
   ],
   "updated_rows_count": 0,
   "article_id": "8ba7dce8-b30a-497e-af30-7cf6b3637216",
   "slug": "lea-util-001-08-what-you-need-to-know-for-the-lea",
-  "preparation_actions": [],
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
   "remote_hash_before": "sha256:30870aa732287e73a86bcf92615b64625d3d5cca4ba55c331d461331ad37dc71",
   "original_hash": "sha256:30870aa732287e73a86bcf92615b64625d3d5cca4ba55c331d461331ad37dc71",
-  "candidate_hash": "sha256:6486dd8346dbab06d2b70aa48ef4787b728c37c675e9af75b87ae97b12bfde3f",
+  "candidate_hash": "sha256:faa87c4fd9a60f401221b3a6a4f03045c303d51425d1f2f08568d1b46319d09e",
   "stale_check_passed": true,
   "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
 }

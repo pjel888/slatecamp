@@ -463,7 +463,7 @@ Say each answer aloud before revealing.
 
 ## Exam Tip
 
-ALE Swipe: Height limits by occupancy — Group A (residential) = 15 m max, Group B (commercial/office) = 15 m, Group C (industrial) = 20 m, Group D (institutional) = 15 m. Height increases: +1 story if sprinklered, +1 story if open frontage > 30%. The 15 m residential height cap is the most tested limit.
+LEA Swipe: Height limits by occupancy — Group A (residential) = 15 m max, Group B (commercial/office) = 15 m, Group C (industrial) = 20 m, Group D (institutional) = 15 m. Height increases: +1 story if sprinklered, +1 story if open frontage > 30%. The 15 m residential height cap is the most tested limit.
 
 ## Cross‑References
 

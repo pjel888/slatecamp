@@ -31,7 +31,7 @@ Think: *"Andes Tamed Everything"* — the Inca turned the most hostile terrain o
 
 <Example>
 
-**Sacsayhuamán (Cusco, Peru):** A zigzag fortress wall with stones weighing up to 300 tons each. The stones are so precisely fitted that a knife blade cannot fit between them — and this without mortar. The wall's zigzag plan provides seismic resistance in multiple directions: each jamb acts as a buttress against lateral forces. This is the ALE's favorite Inca example for seismic adaptation questions.
+**Sacsayhuamán (Cusco, Peru):** A zigzag fortress wall with stones weighing up to 300 tons each. The stones are so precisely fitted that a knife blade cannot fit between them — and this without mortar. The wall's zigzag plan provides seismic resistance in multiple directions: each jamb acts as a buttress against lateral forces. This is the LEA's favorite Inca example for seismic adaptation questions.
 
 </Example>
 
@@ -55,7 +55,7 @@ Think: *"Andes Tamed Everything"* — the Inca turned the most hostile terrain o
 
 <ExamTip>
 
-**ALE Trap:** "Inca stone walls used mortar to hold stones together" — FALSE. Inca ashlar masonry is dry-stone (no mortar). The precise fitting was achieved through trial-and-error pecking and hammering, not cutting. Also: "Trapezoidal doorways were purely decorative" — FALSE. Trapezoidal openings are seismically advantageous: the angled sides distribute stress more evenly than rectangular openings during earthquakes.
+**LEA Trap:** "Inca stone walls used mortar to hold stones together" — FALSE. Inca ashlar masonry is dry-stone (no mortar). The precise fitting was achieved through trial-and-error pecking and hammering, not cutting. Also: "Trapezoidal doorways were purely decorative" — FALSE. Trapezoidal openings are seismically advantageous: the angled sides distribute stress more evenly than rectangular openings during earthquakes.
 
 </ExamTip>
 

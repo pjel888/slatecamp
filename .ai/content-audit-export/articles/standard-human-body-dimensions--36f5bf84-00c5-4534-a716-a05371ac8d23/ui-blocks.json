@@ -4,7 +4,7 @@
   "normalized_created_at": "2026-05-01T13:33:43.739Z",
   "parser_version": "ui-block-parser-v1",
   "original_content_hash": "sha256:1d33724299d8cf75f2afeffcfec1485b149f2bb461052da98ab7029fcbad9353",
-  "normalized_content_hash": "sha256:a2c9b9a4296e4d0ec073146a68dc82ed0a4741f8f3451334a0e364169b34b90f",
+  "normalized_content_hash": "4954548d3db5c8c1e0a96184a80caa3f34bca43d4fdf5befc2ea6ba2d4f5f4c5",
   "ui_block_count": 3,
   "total_blocks": 3,
   "blocks": [
@@ -40,9 +40,9 @@
       "block_id": "ui_0002",
       "block_type": "mdx_component",
       "component_name": "Callout",
-      "raw": "<Callout variant=\"tip\" title=\"Mnemonic\">\n\nThe REACH-CLEAR Rule\n- **R**EACH \u2192 5th percentile sets the _upper limit_ of control placement\n- **CLEAR**ance \u2192 95th percentile sets the _lower limit_ of space provision\n\n</Callout>",
+      "raw": "<Callout variant=\"tip\" title=\"Mnemonic\">\n\nThe REACH-CLEAR Rule\n- **R**EACH → 5th percentile sets the _upper limit_ of control placement\n- **CLEAR**ance → 95th percentile sets the _lower limit_ of space provision\n\n</Callout>",
       "raw_hash": "sha256:dd2695ef26a6a30e3679b28285b5726640805eebe576a75770a94a761ee549a9",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"Callout\" status=\"preserved\"]\nExtracted summary:\n- Props: variant=\"tip\", title=\"Mnemonic\"\n- Text: The REACH-CLEAR Rule - **R**EACH \u2192 5th percentile sets the _upper limit_ of control placement - **CLEAR**ance \u2192 95th percentile sets the _lower limit_ of space provision\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"Callout\" status=\"preserved\"]\nExtracted summary:\n- Props: variant=\"tip\", title=\"Mnemonic\"\n- Text: The REACH-CLEAR Rule - **R**EACH → 5th percentile sets the _upper limit_ of control placement - **CLEAR**ance → 95th percentile sets the _lower limit_ of space provision\n[/SLATECAMP_UI_BLOCK]",
       "placeholder_hash": "sha256:ad822dc8c3c496910a37c3de44ff97160b0ecdcda143c7c67f657aed0f11e6e8",
       "props": {
         "variant": "tip",
@@ -53,8 +53,8 @@
         "title": "Mnemonic"
       },
       "props_text": "variant=\"tip\" title=\"Mnemonic\"",
-      "children_raw": "\n\nThe REACH-CLEAR Rule\n- **R**EACH \u2192 5th percentile sets the _upper limit_ of control placement\n- **CLEAR**ance \u2192 95th percentile sets the _lower limit_ of space provision\n\n",
-      "children_text": "The REACH-CLEAR Rule - **R**EACH \u2192 5th percentile sets the _upper limit_ of control placement - **CLEAR**ance \u2192 95th percentile sets the _lower limit_ of space provision",
+      "children_raw": "\n\nThe REACH-CLEAR Rule\n- **R**EACH → 5th percentile sets the _upper limit_ of control placement\n- **CLEAR**ance → 95th percentile sets the _lower limit_ of space provision\n\n",
+      "children_text": "The REACH-CLEAR Rule - **R**EACH → 5th percentile sets the _upper limit_ of control placement - **CLEAR**ance → 95th percentile sets the _lower limit_ of space provision",
       "start_offset": 9239,
       "end_offset": 9462,
       "line_start": 83,
@@ -68,9 +68,9 @@
       "block_id": "ui_0003",
       "block_type": "mdx_component",
       "component_name": "LawCallout",
-      "raw": "<LawCallout code=\"reference\" section=\"Neufert - Human Dimensions\">\n\n\nKey Design Rule: In a Philippine accessible building (BP 344), light switches, outlets, and controls must be \u2264 120 cm from the floor to be reachable from a wheelchair. This figure is derived from _wheelchair user forward reach_, not ambulatory adult reach.\n\n\n</LawCallout>",
+      "raw": "<LawCallout code=\"reference\" section=\"Neufert - Human Dimensions\">\n\n\nKey Design Rule: In a Philippine accessible building (BP 344), light switches, outlets, and controls must be ≤ 120 cm from the floor to be reachable from a wheelchair. This figure is derived from _wheelchair user forward reach_, not ambulatory adult reach.\n\n\n</LawCallout>",
       "raw_hash": "sha256:95dd56510c57c81fd75d4aaf33f5e151faef61ab7df9cfc666a9f72c090d5dde",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"LawCallout\" status=\"preserved\"]\nExtracted summary:\n- Props: code=\"bp344\"\n- Text: Key Design Rule: In a Philippine accessible building (BP 344), light switches, outlets, and controls must be \u2264 120 cm from the floor to be reachable from a wheelchair. This figure is derived from _wheelchair user forward reach_, not ambulatory adult reach.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"LawCallout\" status=\"preserved\"]\nExtracted summary:\n- Props: code=\"bp344\"\n- Text: Key Design Rule: In a Philippine accessible building (BP 344), light switches, outlets, and controls must be ≤ 120 cm from the floor to be reachable from a wheelchair. This figure is derived from _wheelchair user forward reach_, not ambulatory adult reach.\n[/SLATECAMP_UI_BLOCK]",
       "placeholder_hash": "sha256:ea3e68a775d108c2420197c206e8768ae0a15f3258b53583d30c402ca5a3c511",
       "props": {
         "code": "bp344"
@@ -80,8 +80,8 @@
         "section": "Neufert - Human Dimensions"
       },
       "props_text": "code=reference, section=Neufert - Human Dimensions",
-      "children_raw": "\n\nKey Design Rule: In a Philippine accessible building (BP 344), light switches, outlets, and controls must be \u2264 120 cm from the floor to be reachable from a wheelchair. This figure is derived from _wheelchair user forward reach_, not ambulatory adult reach.\n\n",
-      "children_text": "Key Design Rule: In a Philippine accessible building (BP 344), light switches, outlets, and controls must be \u2264 120 cm from the floor to be reachable from a wheelchair. This figure is derived from _wheelchair user forward reach_, not ambulatory adult reach.",
+      "children_raw": "\n\nKey Design Rule: In a Philippine accessible building (BP 344), light switches, outlets, and controls must be ≤ 120 cm from the floor to be reachable from a wheelchair. This figure is derived from _wheelchair user forward reach_, not ambulatory adult reach.\n\n",
+      "children_text": "Key Design Rule: In a Philippine accessible building (BP 344), light switches, outlets, and controls must be ≤ 120 cm from the floor to be reachable from a wheelchair. This figure is derived from _wheelchair user forward reach_, not ambulatory adult reach.",
       "start_offset": 20275,
       "end_offset": 20573,
       "line_start": 233,

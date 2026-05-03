@@ -1,6 +1,6 @@
 # Content Diff Report: lea-matl-003-04-core-concept
 
-Generated: 2026-05-03T10:55:35.138Z
+Generated: 2026-05-03T11:49:13.560Z
 Article ID: 7dccfed0-8f85-47ad-b72b-8e5940d8276a
 Changed: true
 Safe to push locally: false
@@ -8,8 +8,8 @@ Safe to push locally: false
 ## Hashes
 
 - Original: `sha256:f99e5a04ac462bc55f229e0515a04b2262ec6a30d96047841b8d4cc1df067d59`
-- Normalized: `sha256:e37a5674aea147c09d3e9d65db34fc9f6d8e0f3055d45da2dc1dab2187dc8311`
-- Candidate: `sha256:596635df2a607523c6e2e6eef9321505e613c3d7c1129ac21df9f1bad1c4faee`
+- Normalized: `sha256:af5080ea25d1ac729b5bdf1321e115dbf92db06ff1db76e6c6e7bfe635b2cd9b`
+- Candidate: `sha256:007002cda3fcd30110ad8dd6f0f81977b01a9ea17838ab028edf09fd38094029`
 
 ## Line summary
 
@@ -27,7 +27,6 @@ Safe to push locally: false
 ## Blockers
 
 - Candidate contains unresolved UI block placeholders.
-- original.md hash does not match article metadata export hash.
 
 ## Warnings
 

@@ -142,13 +142,7 @@ Extracted summary:
 - Text: (none detected)
 [/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="WikiMistakeCard" status="unknown"]
-Extracted summary:
-- Props: mistake=true, Using=true, a=true, runoff=true, coefficient=true
-- Text: 1 or assuming all rainfall becomes runoff." correction="Coefficient C is always ≤ 1. For concrete roofs, C ≈ 0.85 means 15% is lost to evaporation, wetting, and initial absorption." />
-[/SLATECAMP_UI_BLOCK]
-
-[SLATECAMP_UI_BLOCK:ui_0007 component="WikiMistakeCard" status="preserved"]
+ed"]
 Extracted summary:
 - Props: mistake="Ignoring first-flush diversion when sizing a cistern, leading to oversized or contaminated storage.", correction="Account for first-flush volume (typically 0.5–1.0 mm depth per 1 m² roof). Many codes require a separate bypass container or valve."
 - Text: (none detected)
@@ -172,9 +166,8 @@ See also within Plumbing and Sanitary Systems: **lea-util-001-06-core-concept**,
 
 > **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
 
-
 [SLATECAMP_UI_BLOCK:ui_e001 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Exam Tip — Design rainwater harvesting systems — calculate catchment ar:** Building Utilities carries the heaviest weight in Area B. Focus on code-specific values (PEC ampacities, Revised Plumbing Code fixture units, NFPA spacing requirements) and regulatory triggers (when is a fire alarm mandatory? when is seismic bracing required?). Practice load computations and system sizing problems which appear regularly on the exam.
+- Text: **LEA Exam Tip — Design rainwater harvesting systems — calculate catchment ar:** Building Utilities carries the heaviest weight in Area B. Focus on code-specific values (PEC ampacities, Revised Plumbing Code fixture units, NFPA spacing requirements) and regulatory triggers (when is a fire alarm mandatory? when is seismic bracing required?). Practice load computations and system sizing problems which appear regularly on the exam.
 [/SLATECAMP_UI_BLOCK]

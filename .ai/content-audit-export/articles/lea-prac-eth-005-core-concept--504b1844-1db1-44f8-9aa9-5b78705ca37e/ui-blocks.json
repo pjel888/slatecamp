@@ -4,7 +4,7 @@
   "normalized_created_at": "2026-05-01T13:33:44.010Z",
   "parser_version": "ui-block-parser-v1",
   "original_content_hash": "sha256:92774e1bc5f2b2eb9252b3625da7f92786e197a62d3b70db7a431395ce659a92",
-  "normalized_content_hash": "806df3f386c086bd40ac582b51351058f0a38ecc75bd6b484c75ed358f35885a",
+  "normalized_content_hash": "e6de1ca2a83ab504cbd8e45ebcac0e2db4564f268fc0b3ed0087207e98099523",
   "ui_block_count": 4,
   "total_blocks": 2,
   "blocks": [
@@ -33,13 +33,13 @@
     {
       "block_id": "ui_0003",
       "component_name": "LawCallout",
-      "raw": "<LawCallout code=\"ra9266\" section=\"Section 5 (a-k)\" title=\"Profession Obligations \u2014 Key Prohibitions\">\nSection 5 establishes the profession obligation. Key subsections: (b) shall not compete on basis of fee differences or use donation for competitive advantage; (c) shall not seek commissions known to be already endowed to another architect; (e) shall not assume commission until written notification and proof of termination; (f) shall notify original architect of successor work even if owner changed; (g) shall not injure another architect's reputation; (i) shall not sign/seal work not under direct personal supervision; (j) shall mentor subordinates.\n</LawCallout>",
+      "raw": "<LawCallout code=\"ra9266\" section=\"Section 5 (a-k)\" title=\"Profession Obligations — Key Prohibitions\">\nSection 5 establishes the profession obligation. Key subsections: (b) shall not compete on basis of fee differences or use donation for competitive advantage; (c) shall not seek commissions known to be already endowed to another architect; (e) shall not assume commission until written notification and proof of termination; (f) shall notify original architect of successor work even if owner changed; (g) shall not injure another architect's reputation; (i) shall not sign/seal work not under direct personal supervision; (j) shall mentor subordinates.\n</LawCallout>",
       "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"LawCallout\" status=\"preserved\"]",
-      "props_text": "code=ra9266, section=Section 5 (a-k), title=Profession Obligations \u2014 Key Prohibitions",
+      "props_text": "code=ra9266, section=Section 5 (a-k), title=Profession Obligations — Key Prohibitions",
       "props_json": {
         "code": "ra9266",
         "section": "Section 5 (a-k)",
-        "title": "Profession Obligations \u2014 Key Prohibitions"
+        "title": "Profession Obligations — Key Prohibitions"
       },
       "children_raw": "Section 5 establishes the profession obligation. Key subsections: (b) shall not compete on basis of fee differences or use donation for competitive advantage; (c) shall not seek commissions known to be already endowed to another architect; (e) shall not assume commission until written notification and proof of termination; (f) shall notify original architect of successor work even if owner changed; (g) shall not injure another architect's reputation; (i) shall not sign/seal work not under direct personal supervision; (j) shall mentor subordinates.",
       "children_text": "Section 5 establishes the profession obligation. Key subsections: (b) shall not compete on basis of fee differences or use donation for competitive advantage; (c) shall not seek commissions known to be already endowed to another architect; (e) shall not assume commission until written notification and proof of termination; (f) shall notify original architect of successor work even if owner changed; (g) shall not injure another architect's reputation; (i) shall not sign/seal work not under direct personal supervision; (j) shall mentor subordinates.",
@@ -49,24 +49,24 @@
     {
       "block_id": "ui_0004",
       "component_name": "Warn",
-      "raw": "<Warn>\n  **Critical Exam Trap:** \"Direct supervision\" does NOT mean reviewing final documents. It means the architect personally directed the design process, made major decisions, and was available to review work as it progressed. Remote supervision, email-based approval, or post-hoc review of finished work does NOT satisfy \u00a75-i. The architect who signs the documents must know the design intimately \u2014 not just the final product.\n</Warn>",
+      "raw": "<Warn>\n  **Critical Exam Trap:** \"Direct supervision\" does NOT mean reviewing final documents. It means the architect personally directed the design process, made major decisions, and was available to review work as it progressed. Remote supervision, email-based approval, or post-hoc review of finished work does NOT satisfy §5-i. The architect who signs the documents must know the design intimately — not just the final product.\n</Warn>",
       "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"Warn\" status=\"preserved\"]",
       "props_text": "(none)",
       "props_json": {},
-      "children_raw": "**Critical Exam Trap:** \"Direct supervision\" does NOT mean reviewing final documents. It means the architect personally directed the design process, made major decisions, and was available to review work as it progressed. Remote supervision, email-based approval, or post-hoc review of finished work does NOT satisfy \u00a75-i. The architect who signs the documents must know the design intimately \u2014 not just the final product.",
-      "children_text": "**Critical Exam Trap:** \"Direct supervision\" does NOT mean reviewing final documents. It means the architect personally directed the design process, made major decisions, and was available to review work as it progressed. Remote supervision, email-based approval, or post-hoc review of finished work does NOT satisfy \u00a75-i. The architect who signs the documents must know the design intimately \u2014 not just the final product.",
+      "children_raw": "**Critical Exam Trap:** \"Direct supervision\" does NOT mean reviewing final documents. It means the architect personally directed the design process, made major decisions, and was available to review work as it progressed. Remote supervision, email-based approval, or post-hoc review of finished work does NOT satisfy §5-i. The architect who signs the documents must know the design intimately — not just the final product.",
+      "children_text": "**Critical Exam Trap:** \"Direct supervision\" does NOT mean reviewing final documents. It means the architect personally directed the design process, made major decisions, and was available to review work as it progressed. Remote supervision, email-based approval, or post-hoc review of finished work does NOT satisfy §5-i. The architect who signs the documents must know the design intimately — not just the final product.",
       "parse_status": "parsed",
       "raw_hash": "sha256:bf9954aa873cceeec8135ab60226326a5d584a86effdec3de4b5163387d74c87"
     },
     {
       "block_id": "ui_0005",
       "component_name": "ExamTip",
-      "raw": "<ExamTip>\n  **LEA Memory Aid:** \"SSN\" \u2014 (S)eal only work under direct supervision; (S)upervision must be personal and integral; (N)otify original architects of successor work. When a question involves signing sealed documents or fee competition, apply SSN to identify violations.\n</ExamTip>",
+      "raw": "<ExamTip>\n  **LEA Memory Aid:** \"SSN\" — (S)eal only work under direct supervision; (S)upervision must be personal and integral; (N)otify original architects of successor work. When a question involves signing sealed documents or fee competition, apply SSN to identify violations.\n</ExamTip>",
       "placeholder": "[SLATECAMP_UI_BLOCK:ui_0005 component=\"ExamTip\" status=\"preserved\"]",
       "props_text": "(none)",
       "props_json": {},
-      "children_raw": "**LEA Memory Aid:** \"SSN\" \u2014 (S)eal only work under direct supervision; (S)upervision must be personal and integral; (N)otify original architects of successor work. When a question involves signing sealed documents or fee competition, apply SSN to identify violations.",
-      "children_text": "**LEA Memory Aid:** \"SSN\" \u2014 (S)eal only work under direct supervision; (S)upervision must be personal and integral; (N)otify original architects of successor work. When a question involves signing sealed documents or fee competition, apply SSN to identify violations.",
+      "children_raw": "**LEA Memory Aid:** \"SSN\" — (S)eal only work under direct supervision; (S)upervision must be personal and integral; (N)otify original architects of successor work. When a question involves signing sealed documents or fee competition, apply SSN to identify violations.",
+      "children_text": "**LEA Memory Aid:** \"SSN\" — (S)eal only work under direct supervision; (S)upervision must be personal and integral; (N)otify original architects of successor work. When a question involves signing sealed documents or fee competition, apply SSN to identify violations.",
       "parse_status": "parsed",
       "raw_hash": "sha256:e8587ea9ba3828feb3ab6aee64cd33b139a993832bab5c57cfa6491b45aacca0"
     }

@@ -153,7 +153,7 @@ Extracted summary:
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
 Extracted summary:
-- Text: 📌 Exam Tip: The ALE frequently tests the BP 344 ramp width (1200 mm) vs. sidewalk width (1500 mm) distinction in scenario-based questions. Remember: ramp = 1200 mm, sidewalk = 1500 mm, rest space = 1800 mm. These three numbers appear together in integrated compliance questions.
+- Text: 📌 Exam Tip: The LEA frequently tests the BP 344 ramp width (1200 mm) vs. sidewalk width (1500 mm) distinction in scenario-based questions. Remember: ramp = 1200 mm, sidewalk = 1500 mm, rest space = 1800 mm. These three numbers appear together in integrated compliance questions.
 [/SLATECAMP_UI_BLOCK]
 
 ---

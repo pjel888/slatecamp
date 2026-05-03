@@ -59,15 +59,7 @@ You open an LEA question booklet and see a black-and-white photograph of a white
 [SLATECAMP_UI_BLOCK:ui_0002 component="Example" status="preserved"]
 Extracted summary:
 
-\[SLATECAMP_UI_BLOCK:ui_0005 component="Example" status="preserved"]
-Extracted summary:
-- Props: 
-- Text: The Barcelona Pavilion (1929) by Mies van der Rohe exemplifies free-flowing space through freestanding planes of marble, onyx, and glass supported by cruciform steel columns — no interior doors, no co
-\[/SLATECAMP_UI_BLOCK\]
-- Props: (none)
-- Text: The Barcelona Pavilion (1929) by Mies van der Rohe exemplifies free-flowing s...
-[/SLATECAMP_UI_BLOCK]
-
+\
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
 Extracted summary:

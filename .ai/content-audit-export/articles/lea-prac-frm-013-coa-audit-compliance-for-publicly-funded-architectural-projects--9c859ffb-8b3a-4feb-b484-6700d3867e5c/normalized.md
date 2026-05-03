@@ -72,7 +72,7 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: ⚠️ COA findings: Notice of Suspension (NS) — temporary hold; Notice of Disallowance (ND) — transaction disallowed, may require refund; Notice of Charge (NC) — personal liability. Architects must respond promptly and maintain complete documentation. — expect this as a trap answer on the ALE.
+- Text: ⚠️ COA findings: Notice of Suspension (NS) — temporary hold; Notice of Disallowance (ND) — transaction disallowed, may require refund; Notice of Charge (NC) — personal liability. Architects must respond promptly and maintain complete documentation. — expect this as a trap answer on the LEA.
 [/SLATECAMP_UI_BLOCK]
 
 

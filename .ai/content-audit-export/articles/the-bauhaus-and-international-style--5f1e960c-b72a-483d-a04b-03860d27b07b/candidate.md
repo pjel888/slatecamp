@@ -74,7 +74,7 @@ You see a stark white building with a flat roof, glass curtain walls, no applied
 
 <ExamTip>
 
-**ALE Trap:** "The Bauhaus and the International Style are the same thing" — FALSE. The Bauhaus was a GERMAN SCHOOL (1919-1933) that taught all arts and crafts. The International Style is a STYLE CLASSIFICATION (codified 1932 by Hitchcock and Johnson for a MoMA exhibition). The Bauhaus influenced the International Style, but they are not synonymous — Gropius, Breuer, and Mies were Bauhaus figures who later practiced International Style, but many International Style architects (e.g., Le Corbusier) had no Bauhaus connection.
+**LEA Trap:** "The Bauhaus and the International Style are the same thing" — FALSE. The Bauhaus was a GERMAN SCHOOL (1919-1933) that taught all arts and crafts. The International Style is a STYLE CLASSIFICATION (codified 1932 by Hitchcock and Johnson for a MoMA exhibition). The Bauhaus influenced the International Style, but they are not synonymous — Gropius, Breuer, and Mies were Bauhaus figures who later practiced International Style, but many International Style architects (e.g., Le Corbusier) had no Bauhaus connection.
 
 </ExamTip>
 

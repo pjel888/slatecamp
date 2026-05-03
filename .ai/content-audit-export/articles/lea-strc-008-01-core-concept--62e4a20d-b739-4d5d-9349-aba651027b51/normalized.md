@@ -63,10 +63,7 @@ Extracted summary:
 - Text: KL/r = 200 for compression; KL/r ≤ 300 (preferred) for tension. If a problem says slenderness is high, ask: is it a compression member (fail) or tension member (check 300 limit)?
 - **Exam relevance:** High — expect at least one question on this topic per LEA set.
 
-
-
 [/SLATECAMP_UI_BLOCK]
-
 
 ## Related Articles
 
@@ -79,8 +76,3 @@ Extracted summary:
 - Text: These are frequently tested traps. Memorize them to avoid losing easy points on exam day.
 [/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes="{[\"Confusing W-section flange width with section height; W-sections are identified by nominal depth and weight (e.g., W12×50), not by flange width alone.\",\"Applying compression slenderness limit (KL/r ≤ 200) to tension members; the 200 limit applies to compression. Tension uses a preferred limit of KL/r ≤ 300, but design judgment advised.\",\"Treating gusset plates as load-carrying members; gusset plates are _transition_ geometry; they concentrate stress and require local analysis.\",\"Ignoring section orientation; a C-channel is stronger with web vertical (I-like bending) than horizontal; always check intended use.\",\"Assuming all built-up sections are more efficient; built-up sections are heavier and require field welding; use only when rolled shapes cannot fit.\"]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]

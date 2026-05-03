@@ -1,9 +1,9 @@
 # Content Diff Report: lea-prac-frm-001-sole-proprietorship-in-architectural-practice
 
-Generated: 2026-05-03T07:48:39.133Z
+Generated: 2026-05-03T11:49:43.198Z
 Article ID: 7a53c305-43d6-424a-9a4d-fc4f86de1805
 Changed: true
-Safe to push locally: false
+Safe to push locally: true
 
 ## Hashes
 
@@ -19,14 +19,14 @@ Safe to push locally: false
 
 ## UI block preservation
 
-- UI blocks expected: 3
+- UI blocks expected: 1
 - UI blocks preserved: 1
-- UI blocks changed/missing: 2
+- UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate is missing 2 preserved UI block(s).
+- None
 
 ## Warnings
 

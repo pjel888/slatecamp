@@ -6,7 +6,7 @@ After reading this article, you should be able to:
 - Describe the deliverables of the Contract Document Phase (Phase 4): working drawings, technical specifications, and bidding documents.
 - Explain why this phase earns 50% of the total design services fee under SPP 202.
 - Identify the components of a complete contract document package and their roles in construction administration.
-- Apply Contract Document Phase requirements to ALE scenarios involving document completeness, specification types, and bid package assembly.
+- Apply Contract Document Phase requirements to LEA scenarios involving document completeness, specification types, and bid package assembly.
 
 The Contract Document Phase represents the most significant single payment under SPP 202, earning 50% of the architect's total design services fees. This phase produces the comprehensive drawings and specifications needed to communicate all construction requirements to contractors and building officials.
 

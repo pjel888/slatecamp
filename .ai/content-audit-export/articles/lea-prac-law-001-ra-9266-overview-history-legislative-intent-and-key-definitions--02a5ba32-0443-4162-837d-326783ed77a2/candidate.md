@@ -35,7 +35,7 @@ The Professional Regulatory Board of Architecture (PRBoA) is created under Secti
 
 The Board has three members: a Chairman and two Members. They are appointed by the President of the Philippines from a list of five nominees per position. The nominees come from the **Integrated and Accredited Professional Organization of Architects (IAPOA)** — now the United Architects of the Philippines (UAP) — as designated by Section 4.
 
-<Warn>The flagging audit found a common error in earlier materials: **Section 41** does NOT designate IAPOA. Section 41 is about implementing rules and regulations. The correct reference is **Section 4**. This distinction has appeared in ALE questions.</Warn>
+<Warn>The flagging audit found a common error in earlier materials: **Section 41** does NOT designate IAPOA. Section 41 is about implementing rules and regulations. The correct reference is **Section 4**. This distinction has appeared in LEA questions.</Warn>
 
 **Qualifications required:**
 
@@ -122,7 +122,7 @@ The law tasks the PRBoA with adopting the Code of Ethical Conduct and Standards 
 
 ### What the Exam Tests
 
-ALE questions on this topic typically fall into three categories:
+LEA questions on this topic typically fall into three categories:
 
 | Type | Example |
 |------|---------|

@@ -57,10 +57,11 @@ Kinesthetics is tested because it is where perception (THEO-003) meets design re
 
 ## Key Facts and Testable Items
 
-<WikiExamTable headers={["Kinesthetic Element", "Standard Dimension", "Metric", "Imperial", "Testing Context", "Psychology/Effect"]} rows={[['["Riser height (maximum residential)", "200 mm", "200 mm", "8 in", "PD 1096 Rule VIII", "Exceeding max is illegal; too high is exhausting"]', '["Riser height (maximum commercial)", "190 mm", "190 mm", "7.5 in", "PD 1096 Rule VIII", ""]', '["Riser height (minimum)", "100 mm", "100 mm", "4 in", "PD 1096 Rule VIII", "Below min creates trip hazard"]', '["Tread depth (minimum)", "250 mm", "250 mm", "10 in", "PD 1096 Rule VIII", "Too shallow = foot instability"]', '["Tread depth (exit stair min)", "279 mm", "279 mm", "11 in", "RA 9514 (Fire Code)", "For means of egress"]', '["2R+T ergonomic guideline", "600–630 mm", "600–630 mm", "24–25 in", "Comfort verification", "Ensures riser and tread are proportionally comfortable"]', '["Stair consistency tolerance", "±5 mm", "±5 mm", "±0.2 in", "PD 1096 Rule VIII", "Variation >5 mm disrupts rhythm"]', '["Handrail height (main)", "800–900 mm", "800–900 mm", "31.5–35.5 in", "PD 1096 Rule VIII", "Measured vertically from tread nosing"]', '["Handrail height (child)", "700 mm", "700 mm", "27.5 in", "BP 344", "Additional rail for children"]', '["Handrail extensions", "300 mm", "300 mm", "12 in", "PD 1096", "Beyond top and bottom of flight"]', '["Ramp maximum slope (building)", "1:20", "1:20", "5%", "BP 344 2024 IRR", "Accessible ramp in building"]', '["Ramp maximum slope (curb ramp)", "1:12", "1:12", "8.33%", "BP 344 2024 IRR", "Only for short curb ramps ≤1.5 m rise"]', '["Ramp maximum rise per run", "750 mm", "750 mm", "30 in", "BP 344", "Landings required every 750 mm rise"]', '["Ramp minimum width", "1200 mm", "1200 mm", "48 in", "BP 344", "Two-way traffic"]', '["Corridor width (single‑file)", "900 mm", "900 mm", "36 in", "PD 1096 Rule VIII Sec. 804", "Residential corridor min"]', '["Corridor width (two‑way)", "1200 mm", "1200 mm", "48 in", "PD 1096 / RA 9514", "Communal / fire exit corridors"]', '["Door threshold (accessible max)", "6 mm (vertical)", "6 mm", "0.25 in", "BP 344", "Level change; 6–13 mm must be beveled"]', '["Level change (significant boundary)", "300–600 mm", "300–600 mm", "12–24 in", "Design perception", "Territorial separation"]']]} />
-## How It's Tested on the LEA
-
-<ExamTip>1. **Direct Stair Dimension Recall (MCQ):** "According to PD 1096, the maximum riser height for residential stairs is (a) 150 mm (b) 180 mm (c) 200 mm (d) 250 mm." Answer: (c) 200 mm. Straightforward recall of code limits.</ExamTip>
+ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 1. **Direct Stair Dimension Recall (MCQ):** "According to PD 1096, the maximum riser height for residential stairs is (a) 150 mm (b) 180 mm (c) 200 mm (d) 250 mm." Answer: (c) 200 mm. Straightforward recall of code limits.
+[/SLATECAMP_UI_BLOCK]
 
 <ExamTip>2. **Stair Design Calculation via 2R+T Rule:** "A stair has a 170 mm riser. Using the 2R+T = 600–630 mm ergonomic guideline, what is the ideal tread depth? (a) 230 mm (b) 260 mm (c) 290 mm (d) 320 mm." Answer: (c) 290 mm (2×170+290 = 630 mm). Tests understanding of proportional relationship, not just memorization.</ExamTip>
 
@@ -80,12 +81,7 @@ Kinesthetics is tested because it is where perception (THEO-003) meets design re
 
 <WikiMistakeCard mistake="Applying the 2R+T rule incorrectly" correction="The formula is 2 × (riser) + tread, not (riser + tread) × 2 or riser + 2 × tread." context="Double‑check: if riser = 170 mm and tread = 290 mm, then 2(170) + 290 = 340 + 290 = 630 mm ✓." />
 
-<WikiMistakeList mistakes={["Mixing up ramp slope notation. A slope of 1:12 means 1 unit up per 12 units horizontal; students sometimes reverse it. For accessible building ramps in the Philippines, the required slope is **1:20**, not 1:12 (except curb ramps). The colon notation is universal: the first number is rise, the second is run.", "Forgetting that ramp slope and stair dimensions are different contexts. Stairs use discrete steps; ramps use continuous slope. They are different kinesthetic experiences and different calculations.", "Treating corridor width as merely a fire code requirement. Corridor width affects user psychology, proxemic comfort, and spatial experience. A 900 mm corridor feels tight; a 1200 mm corridor feels open and welcoming. The LEA rewards answers that integrate width with user experience.", "Ignoring handrails in stair design. Students focus on riser and tread but forget that handrails are essential to safety and to kinesthetic navigation. Without a handrail, elderly and disabled users cannot safely use stairs. The LEA tests: \"Why must handrails extend 300 mm beyond the top and bottom of a stair flight?\" Answer: To allow users to maintain grip while transitioning from stair to landing, preventing falls.", "Underestimating threshold and level change impact. A student might design a 50 mm step, thinking it is \"negligible,\" but:
-   - ≤6 mm is acceptable (level);
-   - 6–13 mm must be beveled;
-   - > 13 mm requires a ramp under BP 344.
-   - 300–600 mm signals territorial separation;
-   - > 600 mm demands architectural notice.
+chitectural notice.
 
 Thresholds are meaningful and regulated."]} />
 

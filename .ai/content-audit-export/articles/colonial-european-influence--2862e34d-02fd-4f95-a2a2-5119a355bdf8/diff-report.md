@@ -1,6 +1,6 @@
 # Content Diff Report: colonial-european-influence
 
-Generated: 2026-05-03T10:55:29.254Z
+Generated: 2026-05-03T11:49:08.966Z
 Article ID: 2862e34d-02fd-4f95-a2a2-5119a355bdf8
 Changed: true
 Safe to push locally: true

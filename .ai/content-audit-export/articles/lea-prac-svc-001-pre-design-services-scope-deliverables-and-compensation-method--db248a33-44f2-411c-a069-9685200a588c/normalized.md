@@ -6,7 +6,7 @@ After reading this article, you should be able to:
 - Define pre-design services under SPP Doc 201 and explain how they differ from regular design phases.
 - Identify the scope and deliverables of pre-design services: problem identification, site analysis, and initial conceptualization.
 - Describe the compensation methods for pre-design services (lump sum, professional fee plus overhead, per diem).
-- Apply pre-design service classifications to ALE scenarios involving early-stage architectural engagements.
+- Apply pre-design service classifications to LEA scenarios involving early-stage architectural engagements.
 
 SPP Document 201 defines pre-design services as the architectural work performed before the architect begins regular design phases. These services range from initial problem identification through activities that allow the architect to initially conceptualize architectural and allied solutions.
 
@@ -32,7 +32,7 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Pattern:** Expect scenario-based questions where you must determine whi — this distinction appears on every ALE cycle.
+- Text: **LEA Pattern:** Expect scenario-based questions where you must determine whi — this distinction appears on every LEA cycle.
 [/SLATECAMP_UI_BLOCK]
 The architect's pre-design deliverables depend on the service type but typically include analysis documents, feasibility reports, space programs, site studies, and design briefs. Consultation services produce written advice and direction on contemplated projects. Pre-feasibility studies involve procurement and analysis of secondary information to aid early decision-making. Feasibility studies provide detailed analysis determining the viability of a proposed development.
 
@@ -40,7 +40,7 @@ The architect's pre-design deliverables depend on the service type but typically
 [SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Pattern:** Expect scenario-based questions where you must determine whi — this distinction appears on every ALE cycle.
+- Text: **LEA Pattern:** Expect scenario-based questions where you must determine whi — this distinction appears on every LEA cycle.
 [/SLATECAMP_UI_BLOCK]
 ### Compensation Methods for Pre-Design Services
 

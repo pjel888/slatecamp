@@ -276,7 +276,7 @@ The PM fee under SPP 206 is generally **2–5% of the Estimated Project Cost**, 
 
 ## Exam Tip
 
-ALE Trap: CM (204-B) vs Full-Time Supervision (204-A): CM manages COST and SCHEDULE in addition to quality. CM coordinates MULTIPLE prime contractors. CM produces (1) CPM schedule, (2) Cost reports, (3) Change order management, (4) Value engineering options. The key test point: CM has authority over budget, FTS does not.
+LEA Trap: CM (204-B) vs Full-Time Supervision (204-A): CM manages COST and SCHEDULE in addition to quality. CM coordinates MULTIPLE prime contractors. CM produces (1) CPM schedule, (2) Cost reports, (3) Change order management, (4) Value engineering options. The key test point: CM has authority over budget, FTS does not.
 
 ## Cross‑References
 

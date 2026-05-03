@@ -341,7 +341,7 @@ Extracted summary:
 
 ## Exam Tip
 
-ALE Swipe: Design-Build (DB) vs Design-Bid-Build (DBB): DB = single entity responsible for both design and construction. DBB = separate contracts (owner-architect + owner-contractor). Architect's ethical obligation under DB: must maintain PROFESSIONAL INDEPENDENCE — the architect cannot be subordinate to the contractor's commercial interests. The independence requirement is the most tested ethical point.
+LEA Swipe: Design-Build (DB) vs Design-Bid-Build (DBB): DB = single entity responsible for both design and construction. DBB = separate contracts (owner-architect + owner-contractor). Architect's ethical obligation under DB: must maintain PROFESSIONAL INDEPENDENCE — the architect cannot be subordinate to the contractor's commercial interests. The independence requirement is the most tested ethical point.
 
 ## Cross‑References
 

@@ -148,9 +148,11 @@ The Philippines experiences two distinct monsoon seasons: the Southwest (May–O
 
 <WikiMistakeCard mistake="Forgetting to convert units in Rational Method (e.g., using mm/hr directly without converting to m/s or using hectares without converting to m²)." correction="Always apply unit conversion: 1 ha = 10,000 m²; I (mm/hr) ÷ 3,600 = I (m/s) or use 0.2778 × mm/hr × ha factor." />
 
-<WikiMistakeCard mistake="Using a runoff coefficient > 1 or assuming all rainfall becomes runoff." correction="Coefficient C is always ≤ 1. For concrete roofs, C ≈ 0.85 means 15% is lost to evaporation, wetting, and initial absorption." />
-
-<WikiMistakeCard mistake="Ignoring first-flush diversion when sizing a cistern, leading to oversized or contaminated storage." correction="Account for first-flush volume (typically 0.5–1.0 mm depth per 1 m² roof). Many codes require a separate bypass container or valve." />
+ed"]
+Extracted summary:
+- Props: mistake="Ignoring first-flush diversion when sizing a cistern, leading to oversized or contaminated storage.", correction="Account for first-flush volume (typically 0.5–1.0 mm depth per 1 m² roof). Many codes require a separate bypass container or valve."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 <WikiMistakeCard mistake="Selecting storm drain pipe diameter without checking velocity, then finding either dry, sluggish pipes or erosive, noisy flow." correction="Always verify velocity is 0.6–3.0 m/s using Q = V × A. Adjust slope or diameter to stay within range." />
 
@@ -162,9 +164,8 @@ See also within Plumbing and Sanitary Systems: **lea-util-001-06-core-concept**,
 
 > **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
 
-
 [SLATECAMP_UI_BLOCK:ui_e001 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Exam Tip — Design rainwater harvesting systems — calculate catchment ar:** Building Utilities carries the heaviest weight in Area B. Focus on code-specific values (PEC ampacities, Revised Plumbing Code fixture units, NFPA spacing requirements) and regulatory triggers (when is a fire alarm mandatory? when is seismic bracing required?). Practice load computations and system sizing problems which appear regularly on the exam.
+- Text: **LEA Exam Tip — Design rainwater harvesting systems — calculate catchment ar:** Building Utilities carries the heaviest weight in Area B. Focus on code-specific values (PEC ampacities, Revised Plumbing Code fixture units, NFPA spacing requirements) and regulatory triggers (when is a fire alarm mandatory? when is seismic bracing required?). Practice load computations and system sizing problems which appear regularly on the exam.
 [/SLATECAMP_UI_BLOCK]

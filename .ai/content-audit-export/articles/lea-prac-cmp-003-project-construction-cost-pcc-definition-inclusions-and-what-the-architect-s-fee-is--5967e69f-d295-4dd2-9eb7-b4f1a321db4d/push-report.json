@@ -1,20 +1,18 @@
 {
-  "attempted_at": "2026-05-03T07:53:45.895Z",
+  "attempted_at": "2026-05-03T11:50:19.109Z",
   "dry_run": true,
   "apply": false,
   "pushed": false,
-  "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
-  ],
+  "blockers": [],
   "warnings": [
     "Dry-run mode: no Supabase mutation will be performed."
   ],
   "updated_rows_count": 0,
   "article_id": "5967e69f-d295-4dd2-9eb7-b4f1a321db4d",
   "slug": "lea-prac-cmp-003-project-construction-cost-pcc-definition-inclusions-and-what-the-architect-s-fee-is-based-on",
-  "preparation_actions": [],
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
   "remote_hash_before": "sha256:1a836afe26d44ab0d38da499f14776aca373aea8eb04aea91ba3f6cc2d1eb920",
   "original_hash": "sha256:1a836afe26d44ab0d38da499f14776aca373aea8eb04aea91ba3f6cc2d1eb920",
   "candidate_hash": "sha256:65f238a787fedc65ec8a4458743d8c760ec5377c070ffde9fe33ed9e1c378439",

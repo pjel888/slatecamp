@@ -292,7 +292,7 @@ Extracted summary:
 
 ## Exam Tip
 
-ALE Swipe: Exterior wall fire-rating based on proximity to property line: < 1.0 m = 1-hour from interior, 1.0-3.0 m = 1-hour exterior, > 3.0 m = no fire-rating required for exterior walls. The 1.0 m threshold is the most tested distance.
+LEA Swipe: Exterior wall fire-rating based on proximity to property line: < 1.0 m = 1-hour from interior, 1.0-3.0 m = 1-hour exterior, > 3.0 m = no fire-rating required for exterior walls. The 1.0 m threshold is the most tested distance.
 
 ## Cross‑References
 

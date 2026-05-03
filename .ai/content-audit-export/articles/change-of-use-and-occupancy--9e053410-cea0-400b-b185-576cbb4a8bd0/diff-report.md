@@ -1,32 +1,32 @@
 # Content Diff Report: change-of-use-and-occupancy
 
-Generated: 2026-05-03T07:53:52.361Z
+Generated: 2026-05-03T11:50:22.361Z
 Article ID: 9e053410-cea0-400b-b185-576cbb4a8bd0
 Changed: true
-Safe to push locally: false
+Safe to push locally: true
 
 ## Hashes
 
 - Original: `sha256:08cdcce4406b78c96d47007b807a451b509bbf0688d94f77ce1f99465c1c213a`
-- Normalized: `sha256:ca064b631491b8a9679e2654c35d00ba8a1ae53a16317b55cb1eb4c7b7d0a2db`
-- Candidate: `sha256:31ccba47cfc2721a6abdb911b777a4851dd2889312f824f2d8ec71b87d67d5d6`
+- Normalized: `sha256:89f8255fdf82518d81b7632385eca19a1f8bae8f2c1b9298b3d7527e18bd39a8`
+- Candidate: `sha256:d9d3bd6412be91f6c4135a91a6f8f12047e359b82815cf8d6b3f98699c4ea254`
 
 ## Line summary
 
-- Changed lines: 312
-- Inserted lines: 24
+- Changed lines: 324
+- Inserted lines: 38
 - Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 8
-- UI blocks preserved: 6
-- UI blocks changed/missing: 2
+- UI blocks preserved: 8
+- UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate is missing 2 preserved UI block(s).
+- None
 
 ## Warnings
 

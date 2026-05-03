@@ -41,7 +41,7 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: ⚠️ **Warning:** Environmental compliance (EIA, ECC, CNC) is a distinct regulatory process from building permit requirements. An ECC is required before the building permit application — they are sequentia... — expect this as a trap answer on the ALE.
+- Text: ⚠️ **Warning:** Environmental compliance (EIA, ECC, CNC) is a distinct regulatory process from building permit requirements. An ECC is required before the building permit application — they are sequentia... — expect this as a trap answer on the LEA.
 [/SLATECAMP_UI_BLOCK]
 
 

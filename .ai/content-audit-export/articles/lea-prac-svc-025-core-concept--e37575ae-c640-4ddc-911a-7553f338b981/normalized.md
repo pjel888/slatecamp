@@ -18,7 +18,7 @@ AI Services are distinct from overall architectural design (SPP 202 as a whole) 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Warn" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: ⚠️ **Critical distinction:** SPP 208 is Architectural Design Competition (for design competitions only). SPP 203 Section 203.1 is the standard service for Interior Design planning and documentation. Do not confuse these under any circumstances—they are entirely different service categories with different legal frameworks, scopes, and fee structures. — expect this as a trap answer on the ALE.
+- Text: ⚠️ **Critical distinction:** SPP 208 is Architectural Design Competition (for design competitions only). SPP 203 Section 203.1 is the standard service for Interior Design planning and documentation. Do not confuse these under any circumstances—they are entirely different service categories with different legal frameworks, scopes, and fee structures. — expect this as a trap answer on the LEA.
 [/SLATECAMP_UI_BLOCK]
 
 An architect providing AI Services operates in one of two legal capacities:

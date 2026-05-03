@@ -1,7 +1,7 @@
 {
   "article_id": "f52e3126-774f-4eec-8456-8417769bb34a",
   "slug": "lea-util-005-04-communication-protocols-technologies",
-  "generated_at": "2026-05-03T07:48:34.133Z",
+  "generated_at": "2026-05-03T11:49:40.711Z",
   "old_hash": "sha256:055a0212390987910a2d2b6602dbe64a2a1ee5a5b7e44ad3491c124c5676a742",
   "new_hash": "sha256:0d4caed8a3bdf3745bbeb94ca118ea532cb1faed5e5df32f10d006d3b419c55e",
   "original_hash": "sha256:055a0212390987910a2d2b6602dbe64a2a1ee5a5b7e44ad3491c124c5676a742",
@@ -28,13 +28,11 @@
     "missing_block_ids": [],
     "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "original.md hash does not match article metadata export hash."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: original.md hash does not match article metadata export hash."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

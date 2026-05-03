@@ -1,6 +1,6 @@
 ## Obligations to Contractors and Suppliers — Independence and Impartiality
 ## Learning Goal
-After reading this article, you should understand the key concepts tested in the ALE for this topic, including the prohibition on gifts and commissions from contractors, the market discount exception, and the architect's mediatory role.
+After reading this article, you should understand the key concepts tested in the LEA for this topic, including the prohibition on gifts and commissions from contractors, the market discount exception, and the architect's mediatory role.
 
 The architect's role as mediator between client interests and contractor performance requires absolute independence from financial or personal entanglement with construction professionals. The Code of Ethical Conduct establishes strict prohibitions on gifts, commissions, and arrangements that would compromise professional judgment.
 
@@ -29,7 +29,7 @@ Code Section 4-b permits architects to accept market discounts on building mater
 [SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: ⚠️ **Critical Distinction:** Free engineering services from a supplier (service) violate §4-a. A volume discount on materials (financial benefit) is permissible if credited to the client. Services create... — expect this as a trap answer on the ALE.
+- Text: ⚠️ **Critical Distinction:** Free engineering services from a supplier (service) violate §4-a. A volume discount on materials (financial benefit) is permissible if credited to the client. Services create... — expect this as a trap answer on the LEA.
 [/SLATECAMP_UI_BLOCK]
 
 ## How It's Tested
@@ -45,7 +45,7 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Watch:** The "appearance of bias" standard is broader than actual bias. Even if the architect consciously remains fair, accepting benefits creates an appearance of impropriety. Professional ethi — this distinction appears on every ALE cycle.
+- Text: **LEA Watch:** The "appearance of bias" standard is broader than actual bias. Even if the architect consciously remains fair, accepting benefits creates an appearance of impropriety. Professional ethi — this distinction appears on every LEA cycle.
 [/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes

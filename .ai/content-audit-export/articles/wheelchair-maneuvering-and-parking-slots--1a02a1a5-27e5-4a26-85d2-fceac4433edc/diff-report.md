@@ -1,6 +1,6 @@
 # Content Diff Report: wheelchair-maneuvering-and-parking-slots
 
-Generated: 2026-05-03T10:55:28.689Z
+Generated: 2026-05-03T11:49:08.573Z
 Article ID: 1a02a1a5-27e5-4a26-85d2-fceac4433edc
 Changed: true
 Safe to push locally: true

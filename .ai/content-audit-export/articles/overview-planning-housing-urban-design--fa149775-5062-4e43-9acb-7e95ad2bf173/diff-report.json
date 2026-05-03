@@ -1,43 +1,38 @@
 {
   "article_id": "fa149775-5062-4e43-9acb-7e95ad2bf173",
   "slug": "overview-planning-housing-urban-design",
-  "generated_at": "2026-05-03T07:49:40.972Z",
+  "generated_at": "2026-05-03T11:50:09.253Z",
   "old_hash": "sha256:8f98c71688da509ddad78f19048277ba2e8e68773ebe8211a8365634d8b08b07",
-  "new_hash": "sha256:b9bf8b52eeb0956c96a0f230ad1d165c7e25eba5951c19652a7edf64e42dec71",
+  "new_hash": "sha256:22779acba6347975dab741c9b205c1ae6c480979a6d891ebe2f4311d96263feb",
   "original_hash": "sha256:8f98c71688da509ddad78f19048277ba2e8e68773ebe8211a8365634d8b08b07",
-  "normalized_hash": "sha256:2cb31449753942bec8762b2cbfff268bda5df4c6a679ec94e9fe21a41b821024",
-  "candidate_hash": "sha256:b9bf8b52eeb0956c96a0f230ad1d165c7e25eba5951c19652a7edf64e42dec71",
+  "normalized_hash": "sha256:d8e4083a683e4dd34e9c7c7d1c4e157bdab339f08693930a18bb9ff69389a45a",
+  "candidate_hash": "sha256:22779acba6347975dab741c9b205c1ae6c480979a6d891ebe2f4311d96263feb",
   "changed": true,
   "changed_line_count": 66,
   "inserted_line_count": 0,
-  "deleted_line_count": 27,
-  "ui_blocks_original_count": 5,
+  "deleted_line_count": 22,
+  "ui_blocks_original_count": 3,
   "ui_blocks_candidate_count": 3,
-  "ui_blocks_changed_count": 2,
-  "ui_blocks_count": 5,
+  "ui_blocks_changed_count": 0,
+  "ui_blocks_count": 3,
   "unresolved_placeholders_count": 0,
   "preserved_blocks_count": 3,
   "changed_text_summary": {
     "changed": 66,
     "inserted": 0,
-    "deleted": 27,
+    "deleted": 22,
     "original_line_count": 81,
-    "candidate_line_count": 54
+    "candidate_line_count": 59
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0004",
-      "ui_0005"
-    ],
-    "changed_count": 2
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate is missing 2 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate is missing 2 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

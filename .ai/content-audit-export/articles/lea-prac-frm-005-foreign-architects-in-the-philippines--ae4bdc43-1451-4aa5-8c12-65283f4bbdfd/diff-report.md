@@ -1,9 +1,9 @@
 # Content Diff Report: lea-prac-frm-005-foreign-architects-in-the-philippines
 
-Generated: 2026-05-03T07:48:31.054Z
+Generated: 2026-05-03T11:49:38.327Z
 Article ID: ae4bdc43-1451-4aa5-8c12-65283f4bbdfd
 Changed: true
-Safe to push locally: false
+Safe to push locally: true
 
 ## Hashes
 
@@ -19,14 +19,14 @@ Safe to push locally: false
 
 ## UI block preservation
 
-- UI blocks expected: 4
-- UI blocks preserved: 3
-- UI blocks changed/missing: 1
+- UI blocks expected: 2
+- UI blocks preserved: 2
+- UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate is missing 1 preserved UI block(s).
+- None
 
 ## Warnings
 

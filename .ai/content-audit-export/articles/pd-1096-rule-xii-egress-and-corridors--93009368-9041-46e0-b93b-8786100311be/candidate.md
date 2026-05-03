@@ -523,7 +523,7 @@ _Study this alongside your Rule VIII (setbacks) reviewer so you can handle integ
 
 ## Exam Tip
 
-ALE Swipe: Occupant load factors: Assembly (concentrated) = 0.65 m²/person, Assembly (less concentrated) = 1.40 m²/person, Business = 9.30 m²/person, Educational = 1.85 m²/person, Mercantile = 2.80 m²/person. Egress width = occupant load × 0.55 mm per person (for stair) or 0.81 mm per person (for door/corridor). These factors are the most tested calculations.
+LEA Swipe: Occupant load factors: Assembly (concentrated) = 0.65 m²/person, Assembly (less concentrated) = 1.40 m²/person, Business = 9.30 m²/person, Educational = 1.85 m²/person, Mercantile = 2.80 m²/person. Egress width = occupant load × 0.55 mm per person (for stair) or 0.81 mm per person (for door/corridor). These factors are the most tested calculations.
 
 ## Cross‑References
 

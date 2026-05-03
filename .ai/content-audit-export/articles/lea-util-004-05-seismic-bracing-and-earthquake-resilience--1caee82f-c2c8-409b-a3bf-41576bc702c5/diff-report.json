@@ -1,7 +1,7 @@
 {
   "article_id": "1caee82f-c2c8-409b-a3bf-41576bc702c5",
   "slug": "lea-util-004-05-seismic-bracing-and-earthquake-resilience",
-  "generated_at": "2026-05-03T10:55:33.566Z",
+  "generated_at": "2026-05-03T11:49:12.382Z",
   "old_hash": "sha256:62a8bd04c9c5a26e8fe53a4f3637adc43869575adb64f608defaa612a1a20230",
   "new_hash": "sha256:435c9c5ada49088109b668976e8a7ffe2a6b8b6e5ff0e5d731a59475c7d4160b",
   "original_hash": "sha256:62a8bd04c9c5a26e8fe53a4f3637adc43869575adb64f608defaa612a1a20230",
@@ -28,13 +28,11 @@
     "missing_block_ids": [],
     "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "original.md hash does not match article metadata export hash."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: original.md hash does not match article metadata export hash."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

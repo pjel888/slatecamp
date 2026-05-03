@@ -30,7 +30,7 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: ⚠️ The previous version of this article claimed a foreign applicant could prove "reciprocity OR substantial equivalence in education, training, and experience." This is incorrect. The phrase "substantial... — expect this as a trap answer on the ALE.
+- Text: ⚠️ The previous version of this article claimed a foreign applicant could prove "reciprocity OR substantial equivalence in education, training, and experience." This is incorrect. The phrase "substantial... — expect this as a trap answer on the LEA.
 [/SLATECAMP_UI_BLOCK]
 
 Reciprocity exists when a foreign country admits Filipino architects to practice without restriction, or allows them to take an examination on fully equal terms. "Strict and absolute equality" means:
@@ -54,16 +54,16 @@ Extracted summary:
 
 | Pathway | Legal Basis | What It Grants | Requirements |
 |---|---|---|---|
-| Full licensure via exam | Section 27 | Philippine architect license (permanent, renewable) | Prove reciprocity, pass the ALE, meet all registration requirements |
+| Full licensure via exam | Section 27 | Philippine architect license (permanent, renewable) | Prove reciprocity, pass the LEA, meet all registration requirements |
 | Temporary/special permit | Section 38 | Project-specific practice permit (temporary, with Filipino counterpart) | Foreign national, specific project, Filipino counterpart, Board approval |
 
 [SLATECAMP_UI_BLOCK:ui_0005 component="Warn" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: ⚠️ The previous version of this article claimed that "all foreign architects, including those from reciprocal countries, must secure a temporary/special permit under Section 38." This is incorrect. A for... — expect this as a trap answer on the ALE.
+- Text: ⚠️ The previous version of this article claimed that "all foreign architects, including those from reciprocal countries, must secure a temporary/special permit under Section 38." This is incorrect. A for... — expect this as a trap answer on the LEA.
 [/SLATECAMP_UI_BLOCK]
 
-**Section 27 pathway:** A foreign national from a reciprocal country applies to take the ALE. If they prove reciprocity, pass the exam, and meet all requirements, they become a registered and licensed Philippine architect. They practice under the same rules as any Filipino architect.
+**Section 27 pathway:** A foreign national from a reciprocal country applies to take the LEA. If they prove reciprocity, pass the exam, and meet all requirements, they become a registered and licensed Philippine architect. They practice under the same rules as any Filipino architect.
 
 **Section 38 pathway:** A foreign national who is licensed in their home country (but not in the Philippines) can obtain a temporary or special permit to provide architectural services on a specific project. This permit is project-specific, requires a Filipino counterpart architect, and is granted at the Board's discretion. It applies to both reciprocal and non-reciprocal country nationals.
 
@@ -79,7 +79,7 @@ The Board of Architecture evaluates whether a foreign country actually grants re
 [SLATECAMP_UI_BLOCK:ui_0006 component="Warn" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: ⚠️ The article previously claimed the Board "maintains a list of countries with which reciprocity exists." The Board evaluates reciprocity evidence on a case-by-case or ad hoc basis. There is no widely p... — expect this as a trap answer on the ALE.
+- Text: ⚠️ The article previously claimed the Board "maintains a list of countries with which reciprocity exists." The Board evaluates reciprocity evidence on a case-by-case or ad hoc basis. There is no widely p... — expect this as a trap answer on the LEA.
 [/SLATECAMP_UI_BLOCK]
 
 If a country withdraws reciprocal rights, the Board restricts access for that country's nationals. If new reciprocity is established, the Board certifies it and opens examination access.
@@ -88,7 +88,7 @@ If a country withdraws reciprocal rights, the Board restricts access for that co
 
 ### What the Exam Tests
 
-ALE questions on this topic typically test three things:
+LEA questions on this topic typically test three things:
 
 | Type | Example |
 |------|---------|
@@ -116,7 +116,7 @@ What two things must a foreign country provide for Section 27 reciprocity to exi
 A foreign architect from Singapore wants to practice in the Philippines on a single hotel project for 6 months. They do not plan to take the Philippine exam. Which section applies, and what requirements must they meet?
 
 **Transfer:**
-A foreign architect from a reciprocal country passes the Philippine ALE and registers as a licensed architect. Their client later asks if they need a Filipino counterpart under Section 38. What do you tell them, and why?
+A foreign architect from a reciprocal country passes the Philippine LEA and registers as a licensed architect. Their client later asks if they need a Filipino counterpart under Section 38. What do you tell them, and why?
 
 
 ## Related Articles

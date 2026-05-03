@@ -1,6 +1,6 @@
 # Content Diff Report: exam-meta-deck-heights
 
-Generated: 2026-05-03T10:55:37.558Z
+Generated: 2026-05-03T11:49:15.653Z
 Article ID: 25bb445b-ebd5-452f-ad9e-f3912b17e740
 Changed: true
 Safe to push locally: true
@@ -8,8 +8,8 @@ Safe to push locally: true
 ## Hashes
 
 - Original: `sha256:2716496ef7ef013561f0afa2a6fab716aa51fef9dc11b0116f2a9b82c3e591b2`
-- Normalized: `sha256:30829a12742f4daf788a861385113e740a9ff3474b66b10b1db1bc431c0ccf8b`
-- Candidate: `sha256:f2b69540b216ec51f416048ab1b1888e52b9e78fa133a10feb35127e6c0704b4`
+- Normalized: `sha256:495ebd90deebd5b9203d44bb5b120eb7c1fd4e41dbbd06ff26507b6bca5f806a`
+- Candidate: `sha256:8b96bd4da9c5a07fbc3a3f6150ad237cae5a77acb3e501136e9843480709eded`
 
 ## Line summary
 

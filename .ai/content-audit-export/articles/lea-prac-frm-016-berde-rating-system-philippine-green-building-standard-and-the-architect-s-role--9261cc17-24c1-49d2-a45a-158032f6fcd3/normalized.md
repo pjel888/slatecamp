@@ -75,7 +75,7 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: ⚠️ BERDE is VOLUNTARY unless the LGU requires it. The Philippine Green Building Code (PD 1096 IRR) is MANDATORY minimum standard. Do not confuse voluntary certification with mandatory code compliance. — expect this as a trap answer on the ALE.
+- Text: ⚠️ BERDE is VOLUNTARY unless the LGU requires it. The Philippine Green Building Code (PD 1096 IRR) is MANDATORY minimum standard. Do not confuse voluntary certification with mandatory code compliance. — expect this as a trap answer on the LEA.
 [/SLATECAMP_UI_BLOCK]
 
 

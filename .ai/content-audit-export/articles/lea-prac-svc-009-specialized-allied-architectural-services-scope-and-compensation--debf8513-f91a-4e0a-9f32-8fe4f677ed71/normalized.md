@@ -6,7 +6,7 @@ After reading this article, you should be able to:
 - Define Specialized Allied Architectural Services under SPP Doc 203 and distinguish them from regular design services.
 - Identify the seventeen service categories under SPP 203, including acoustic design, lighting design, interior design, and heritage conservation.
 - Explain the compensation framework for specialized services: separate agreements, professional fee plus overhead, or percentage of construction cost.
-- Apply SPP 203 classifications to ALE scenarios involving non-traditional architectural engagements.
+- Apply SPP 203 classifications to LEA scenarios involving non-traditional architectural engagements.
 
 Specialized Allied Architectural Services encompass a broad range of professional offerings beyond traditional architectural design. These services address specific technical, aesthetic, and functional requirements that projects demand. SPP Doc 203 establishes the framework for scope, compensation, and professional responsibilities across seventeen distinct service categories. Understanding these services enables architects to expand their practice and provide comprehensive solutions to clients.
 
@@ -47,7 +47,7 @@ Environmental certification services guide projects through sustainability ratin
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Pattern:** Expect scenario-based questions where you must determine whi — this distinction appears on every ALE cycle.
+- Text: **LEA Pattern:** Expect scenario-based questions where you must determine whi — this distinction appears on every LEA cycle.
 [/SLATECAMP_UI_BLOCK]
 
 Building appraisal services establish market value, condition assessment, and income-generating potential of properties. These services support investment decisions, insurance valuations, and financial planning. Structural conceptualization services develop early-stage structural systems before detailed engineering. This service optimizes structural efficiency, cost, and constructability during the conceptual design phase.
@@ -55,7 +55,7 @@ Building appraisal services establish market value, condition assessment, and in
 [SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Pattern:** Expect scenario-based questions where you must determine whi — this distinction appears on every ALE cycle.
+- Text: **LEA Pattern:** Expect scenario-based questions where you must determine whi — this distinction appears on every LEA cycle.
 [/SLATECAMP_UI_BLOCK]
 
 ### Additional Specialized Services

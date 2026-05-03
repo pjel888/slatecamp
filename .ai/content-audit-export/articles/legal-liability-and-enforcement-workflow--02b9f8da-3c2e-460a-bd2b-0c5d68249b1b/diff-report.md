@@ -1,6 +1,6 @@
 # Content Diff Report: legal-liability-and-enforcement-workflow
 
-Generated: 2026-05-03T07:48:42.441Z
+Generated: 2026-05-03T11:49:44.625Z
 Article ID: 02b9f8da-3c2e-460a-bd2b-0c5d68249b1b
 Changed: true
 Safe to push locally: true

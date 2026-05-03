@@ -57,11 +57,9 @@ Boysen brands like KNOxOUT (marketed as air-purifying with claimed NOx-reducing 
 
 <WikiMistakeCard mistake="Applying paint to gypsum drywall without primer in high-humidity bathrooms" correction="Prime with fungicide-treated primer (e.g., Boysen fungicide-rich primers) before topcoat. Unprimed drywall absorbs moisture and promotes mold." />
 
-<WikiMistakeCard mistake="Painting concrete with moisture >3% CM (calcium chloride method)" correction="Test moisture per ASTM F2170 before painting. Moisture >3% CM causes blistering and delamination within 4-6 months. Defer painting or install moisture barrier." />
-
-<WikiMistakeCard mistake="Ignoring ASTM D3276 application conditions (temperature &lt;10°C, humidity >85%, rain risk)" correction="Do not apply paint in marginal conditions. High humidity and low temperature slow curing, trapping moisture and causing adhesion failure. Wait for ideal conditions or use accelerated-cure primers." />
-
-<WikiMistakeList mistakes={["Assuming drywall primer is optional for topcoat adhesion", "Mixing incompatible binders (latex over enamel without sanding and primer)", "Failing to caulk gaps, joints, and penetrations before finish coat", "Applying topcoat before primer cure time (typically 2-4 hours per coat)", "Using VOC-high paints without confirming local air-quality compliance"]} />
+is optional for topcoat adhesion\", \"Mixing incompatible binders (latex over enamel without sanding and primer)\", \"Failing to caulk gaps, joints, and penetrations before finish coat\", \"Applying topcoat before primer cure time (typically 2-4 hours per coat)\", \"Using VOC-high paints without confirming local air-quality compliance\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 
@@ -69,9 +67,8 @@ See also within Interior Finishes: **lea-matl-007-01-core-concept**, **lea-matl-
 
 > **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
 
-
 [SLATECAMP_UI_BLOCK:ui_e001 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Exam Tip — Classify wall finishes (paint, wallpaper, gypsum board, plyw:** This topic is heavily tested in Area B. Focus on mastering material classifications, key property values (compressive strength, R-value, unit weight), and estimating formulas. Create comparison tables to distinguish similar materials (e.g., cement Types I–V, glass types, insulation types). Practice computational problems for concrete volume, board foot, CHB count, and paint coverage — these are reliable exam items.
+- Text: **LEA Exam Tip — Classify wall finishes (paint, wallpaper, gypsum board, plyw:** This topic is heavily tested in Area B. Focus on mastering material classifications, key property values (compressive strength, R-value, unit weight), and estimating formulas. Create comparison tables to distinguish similar materials (e.g., cement Types I–V, glass types, insulation types). Practice computational problems for concrete volume, board foot, CHB count, and paint coverage — these are reliable exam items.
 [/SLATECAMP_UI_BLOCK]

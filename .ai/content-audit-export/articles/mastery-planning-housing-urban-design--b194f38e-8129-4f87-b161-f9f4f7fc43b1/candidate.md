@@ -82,7 +82,7 @@ Bioclimatic design at building scale (Environmental Design) and urban scale (Pla
 - **Confusing CLUP with Zoning Ordinance.** CLUP = policy; Zoning Ordinance = legal instrument.
 - **Treating site planning and urban planning as unrelated.** Same analytical discipline at different resolutions.
 
-\[SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: Environmental Impact Assessment (EIA), required under PD 1586, operates across scleas — from the site (direct impacts) to the regional (cumulative and downstream impacts). Understanding EIA as a multi

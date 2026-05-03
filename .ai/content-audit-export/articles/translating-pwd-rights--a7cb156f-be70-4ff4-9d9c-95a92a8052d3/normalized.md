@@ -5,7 +5,7 @@ After reading this article, you should be able to:
 
 Translate legal PWD rights (RA 7277, RA 9442, RA 10754, BP 344) into specific architectural design decisions: calculate the minimum number of accessible parking spaces (1 of 25, 2% of total), accessible toilet rooms, and accessible routes; identify the design requirements triggered by building occupancy, size, and type; and apply accessibility requirements to existing building alterations.
 ---
-### The Complete Rights-to-Details Matrix for Philippine Architecture Licensure
+### The Complete Rights-to-Details Matrix for Philippine Licensure Examination for Architects
 
 ---
 
@@ -436,7 +436,7 @@ Extracted summary:
 
 ## Exam Tip
 
-ALE Trap: Key design translations from PWD laws: RA 7277 = accessible parking (1 per 25 slots min), accessible toilets (1 per floor), ramps | RA 9442 = 20% discount (triggers NO design change, it is an economic privilege) | BP 344 = specific dimensional requirements (tactile warnings, counter heights, grab bars). The most tested: RA 7277 mandates facilities, RA 9442 mandates discounts — DO NOT confuse them.
+LEA Trap: Key design translations from PWD laws: RA 7277 = accessible parking (1 per 25 slots min), accessible toilets (1 per floor), ramps | RA 9442 = 20% discount (triggers NO design change, it is an economic privilege) | BP 344 = specific dimensional requirements (tactile warnings, counter heights, grab bars). The most tested: RA 7277 mandates facilities, RA 9442 mandates discounts — DO NOT confuse them.
 
 ## Cross‑References
 

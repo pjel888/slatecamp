@@ -303,15 +303,7 @@ Extracted summary:
 
 ## Common Errors and Misconceptions
 
-[SLATECAMP_UI_BLOCK:ui_0009 component="WikiMistakeList" status="unknown"]
-Extracted summary:
-- Props: mistakes="{[{\"mistake\": \"Using discharge pressure instead of TDH when sizing pumps.\", \"correction\": \"TDH combines static head, friction loss, and residual pressure. The pump must overcome all three simultaneously. Discharge pressure ≠ TDH.\"}", mistake=true, Ignoring=true, friction=true, loss=true, in=true, short=true, pipe=true, runs=true, lt=true, m=true, correction=true
-- Text: 10 years old instead of C = 120 for new pipe to predict actual friction loss accurately."}]} />
-[/SLATECAMP_UI_BLOCK]
-
-## Summary Checklist for LEA Examiners
-
-When evaluating fire pump sizing calculations:
+g calculations:
 - ✓ Static head calculated correctly (elevation difference from suction to highest device)
 - ✓ Friction loss derived using Hazen-Williams with appropriate C value
 - ✓ Residual pressure at least 3.45 bar (35 m) for Ordinary Hazard Group 1 (RA 9514 IRR)
@@ -331,9 +323,8 @@ See also within Fire Protection Systems: **lea-util-004-04-core-concept**, **lea
 
 > **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
 
-
 [SLATECAMP_UI_BLOCK:ui_e001 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Exam Tip — Apply the formula of fire protection: R = hazard × occupancy:** Building Utilities carries the heaviest weight in Area B. Focus on code-specific values (PEC ampacities, Revised Plumbing Code fixture units, NFPA spacing requirements) and regulatory triggers (when is a fire alarm mandatory? when is seismic bracing required?). Practice load computations and system sizing problems which appear regularly on the exam.
+- Text: **LEA Exam Tip — Apply the formula of fire protection: R = hazard × occupancy:** Building Utilities carries the heaviest weight in Area B. Focus on code-specific values (PEC ampacities, Revised Plumbing Code fixture units, NFPA spacing requirements) and regulatory triggers (when is a fire alarm mandatory? when is seismic bracing required?). Practice load computations and system sizing problems which appear regularly on the exam.
 [/SLATECAMP_UI_BLOCK]

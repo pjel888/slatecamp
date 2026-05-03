@@ -1,6 +1,6 @@
 ## Construction Management Services: Scope and Professional Authority
 ## Learning Goal
-After reading this article, you should understand the key concepts tested in the ALE for this topic, including relevant code provisions, dimensional standards, and common exam applications.
+After reading this article, you should understand the key concepts tested in the LEA for this topic, including relevant code provisions, dimensional standards, and common exam applications.
 
 Construction Management Services address the comprehensive coordination demands of modern construction projects. SPP Doc 204-B establishes standards for construction managers operating within the Philippine architectural profession. This service evolved from recognition that project complexity demands specialized management expertise beyond traditional supervision. Construction managers coordinate cost, schedule, quality, safety, and stakeholder relationships throughout project delivery.
 

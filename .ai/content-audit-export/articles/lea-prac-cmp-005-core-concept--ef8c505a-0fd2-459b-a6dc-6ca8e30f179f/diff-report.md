@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-cmp-005-core-concept
 
-Generated: 2026-05-03T10:55:55.587Z
+Generated: 2026-05-03T11:49:29.812Z
 Article ID: ef8c505a-0fd2-459b-a6dc-6ca8e30f179f
 Changed: true
 Safe to push locally: true

@@ -11,8 +11,6 @@ After studying this article, you should be able to:
 - Identify the rules protecting the architect's compensation.
 - Apply abandonment compensation rules to exam scenarios.
 
-
-
 ### Definition of Abandoned Projects
 
 An abandoned project is one where the client discontinues the project before completion. The client may abandon during Schematic Design before committing to design direction; during Design Development before finalizing the scope and cost estimate; after Contract Documents are prepared but before construction begins; or during construction. The point of abandonment determines what design work has been completed and what compensation the architect has earned.
@@ -24,7 +22,6 @@ The architect's fee is typically structured as milestone-based payments tied to 
 The key principle is that the architect receives compensation for completed design phases, not for projected future phases. The contract must clearly establish this milestone-based compensation structure so both parties understand what percentage of the total fee the architect earns if the project is abandoned at different points.
 
 <KeyValues items=[{"value": "5-12%", "label": "DAEDS Fee Range"}, {"value": "50M", "label": "PCC Bracket Threshold"}, {"value": "10 Groups", "label": "Project Classification"}, {"value": "150%", "label": "Renovation Multiplier"}] />
-
 
 <KeyValues items=[{"value": "5-12%", "label": "DAEDS Fee Range"}, {"value": "50M", "label": "PCC Bracket Threshold"}, {"value": "10 Groups", "label": "Project Classification"}, {"value": "150%", "label": "Renovation Multiplier"}] />
 Extracted summary:

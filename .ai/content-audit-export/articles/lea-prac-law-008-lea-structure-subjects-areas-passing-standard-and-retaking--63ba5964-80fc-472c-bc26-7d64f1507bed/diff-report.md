@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-law-008-lea-structure-subjects-areas-passing-standard-and-retaking
 
-Generated: 2026-05-03T10:55:58.548Z
+Generated: 2026-05-03T11:49:32.448Z
 Article ID: 63ba5964-80fc-472c-bc26-7d64f1507bed
 Changed: true
 Safe to push locally: true
@@ -8,8 +8,8 @@ Safe to push locally: true
 ## Hashes
 
 - Original: `sha256:05d449344cd0d605402b47a79679c92a04b83a596f546e4167ab6d77380e3ef5`
-- Normalized: `sha256:d154d17c4e5fc4a19d529eec954d974e2a90e8845086038778dab1f9ad606395`
-- Candidate: `sha256:7bee84b4dc9b4faf0251cc6cd004ec4289edd4118972791548a77c48fa529012`
+- Normalized: `sha256:34edbed9b954485bc31f729ac10a740e4fc8bc9cd7cb6a3b6fa4fffb752b6987`
+- Candidate: `sha256:e1ac06ed54576d656ac780024428a46cd8ce5056fa755408395884f28f00895d`
 
 ## Line summary
 

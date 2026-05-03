@@ -1,9 +1,11 @@
 {
-  "attempted_at": "2026-05-03T10:55:34.631Z",
+  "attempted_at": "2026-05-03T11:49:13.141Z",
   "dry_run": true,
   "apply": false,
   "pushed": false,
-  "blockers": [],
+  "blockers": [
+    "Remote Supabase content differs from export baseline; refusing stale push."
+  ],
   "warnings": [
     "Dry-run mode: no Supabase mutation will be performed."
   ],
@@ -14,8 +16,8 @@
     "auto_generated_diff"
   ],
   "remote_hash_before": "sha256:c4771c1af94a7603872d8806c54b44b60adadf8af862b22da97a81a285083676",
-  "original_hash": "sha256:c4771c1af94a7603872d8806c54b44b60adadf8af862b22da97a81a285083676",
-  "candidate_hash": "sha256:4ed0f7de429873e3e2cb3e5f05127a8381ce158fb6bbd6e11eaf7b959b36c0eb",
-  "stale_check_passed": true,
+  "original_hash": "sha256:a657213495121f3cefc5cf0b70bcdcbc94db069e9c83aa26236f6fc28e5b2449",
+  "candidate_hash": "sha256:e811975a1b39d70cb9a6ebb6a0ef62c17bdfa0b570592ba32ec08668d990e0dc",
+  "stale_check_passed": false,
   "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
 }

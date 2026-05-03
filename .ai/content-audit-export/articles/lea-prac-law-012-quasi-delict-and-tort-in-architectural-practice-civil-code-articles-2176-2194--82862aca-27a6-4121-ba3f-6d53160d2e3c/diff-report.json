@@ -1,42 +1,40 @@
 {
   "article_id": "82862aca-27a6-4121-ba3f-6d53160d2e3c",
   "slug": "lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194",
-  "generated_at": "2026-05-03T07:48:58.123Z",
+  "generated_at": "2026-05-03T11:49:54.584Z",
   "old_hash": "sha256:6b87bd6407910fe1ea7fd41498270ddfb0d61fadead72f56372f13dcf1bb144f",
-  "new_hash": "sha256:182043de426e16b0a2a1cec38a7f0b7d8cb9998db2f4660228429501f168f3b7",
+  "new_hash": "sha256:58ca925204ddf8e2d6d59cf73951c8db933eede62b78a4969ada3c13f5ba676f",
   "original_hash": "sha256:6b87bd6407910fe1ea7fd41498270ddfb0d61fadead72f56372f13dcf1bb144f",
-  "normalized_hash": "sha256:b01cc3b0d615ce1fd41261bbea7c85d0150988a8ead0a32688e9968236e88696",
-  "candidate_hash": "sha256:182043de426e16b0a2a1cec38a7f0b7d8cb9998db2f4660228429501f168f3b7",
+  "normalized_hash": "sha256:d77c974d2bafcad1d9070aeb601fee583596092d8e03864457080256c1068dbe",
+  "candidate_hash": "sha256:58ca925204ddf8e2d6d59cf73951c8db933eede62b78a4969ada3c13f5ba676f",
   "changed": true,
-  "changed_line_count": 46,
-  "inserted_line_count": 31,
+  "changed_line_count": 52,
+  "inserted_line_count": 37,
   "deleted_line_count": 0,
-  "ui_blocks_original_count": 5,
+  "ui_blocks_original_count": 4,
   "ui_blocks_candidate_count": 4,
-  "ui_blocks_changed_count": 1,
-  "ui_blocks_count": 5,
-  "unresolved_placeholders_count": 0,
+  "ui_blocks_changed_count": 0,
+  "ui_blocks_count": 4,
+  "unresolved_placeholders_count": 1,
   "preserved_blocks_count": 4,
   "changed_text_summary": {
-    "changed": 46,
-    "inserted": 31,
+    "changed": 52,
+    "inserted": 37,
     "deleted": 0,
     "original_line_count": 26,
-    "candidate_line_count": 57
+    "candidate_line_count": 63
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0001"
-    ],
-    "changed_count": 1
+    "missing_block_ids": [],
+    "changed_count": 0
   },
   "locally_safe_to_push": false,
   "safe_to_push": false,
   "blockers": [
-    "Candidate is missing 1 preserved UI block(s)."
+    "Candidate contains unresolved UI block placeholders."
   ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate is missing 1 preserved UI block(s)."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders."
 }

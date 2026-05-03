@@ -1,7 +1,5 @@
 # Pre-Columbian Mesoamerica
 
-
-
 ## Learning Goal
 
 <Tip>Focus on the architect's defining philosophy and key built works. The LEA frequently tests the relationship between an architect's theoretical principles and their physical execution in specific buildings.</Tip>
@@ -36,10 +34,7 @@ Think: *"Power, People, Adaptation"* — pyramids project power, plazas gather p
 | **Plazas** | Ciudadela, Teotihuacan (~400 × 400 m); Avenue of the Dead axis (~2.4 km); Templo Mayor precinct, Tenochtitlan | Plastered stone pavements; bounded by platforms and temples | Open courts for ritual, market, and political assembly; axial alignment with pyramids; sunken or raised variants for hierarchy | Communal gathering at monumental scale; spatial hierarchy reinforces social order; drainage integrated into pavement design |
 | **Aztec Urbanism (Tenochtitlan)** | Founded 1325; destroyed 1521; estimated 150,000–300,000 population; 8–13.5 km² | *Tezontle* stone, adobe, timber; chinampas (artificial island-gardens); causeways of compacted earth and stone | Four-quadrant (*campan*) grid along cardinal axes; three major causeways to mainland; aqueducts from Chapultepec; chinampas for agriculture | Water-adapted urbanism: chinampas convert lake into productive agricultural land; causeways manage access and flood control; aqueducts supply potable water separate from saline lake water |
 
-
 <ExamTip>**LEA Pattern:** Questions about this architect often present an unfamiliar building and ask you to identify the architect based on characteristic details — look for signature elements like cruciform columns (Mies), pilotis (Corbusier), or structural expressionism (Gaudi).</ExamTip>
-
-<Example>The Barcelona Pavilion (1929) by Mies van der Rohe exemplifies free-flowing space through freestanding planes of marble, onyx, and glass supported by cruciform steel columns — no interior doors, no corridors, no enclosed rooms.</Example>
 
 <ExamTip>**LEA Pattern:** Questions about this architect often present an unfamiliar building and ask you to identify the architect based on characteristic details — look for signature elements like cruciform columns (Mies), pilotis (Corbusier), or structural expressionism (Gaudi).</ExamTip>
 ## LEA Exam Traps and Common Mistakes

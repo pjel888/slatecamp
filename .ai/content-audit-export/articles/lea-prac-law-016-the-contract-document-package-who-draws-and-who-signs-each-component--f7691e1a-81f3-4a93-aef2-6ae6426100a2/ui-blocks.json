@@ -4,36 +4,10 @@
   "normalized_created_at": "2026-05-01T13:33:43.485Z",
   "parser_version": "ui-block-parser-v1",
   "original_content_hash": "sha256:8d57c2da78900241e9f657611b55455eaef3e81e914290a5c8883d70e6df1ad4",
-  "normalized_content_hash": "sha256:5513ceee77055afb03a3d479413e7a610e0b755b05d3503912ee9e91bfbe1bb3",
-  "ui_block_count": 4,
+  "normalized_content_hash": "309ea91474b0322fa1cbf27bb5a53ae829e0614cef38a4c488991f92567f2841",
+  "ui_block_count": 3,
   "total_blocks": 4,
   "blocks": [
-    {
-      "block_id": "ui_0001",
-      "block_type": "mdx_component",
-      "component_name": "AuthorityContent",
-      "raw": "<AuthorityContent />",
-      "raw_hash": "sha256:24642038e25616f63c1ccb806fbd56ca5151829eff71b4494ada3441658b9797",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"AuthorityContent\" status=\"preserved\"]\nExtracted summary:\n- Props: courseId=\"LEA-PRAC-LAW-016\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:245c865bb0a4105f53a2a30ed5e211e5d27d3eb4a4ccc0469fb6ba45915931ef",
-      "props": {
-        "courseId": "LEA-PRAC-LAW-016"
-      },
-      "props_json": {
-        "courseId": "LEA-PRAC-LAW-016"
-      },
-      "props_text": "courseId=\"LEA-PRAC-LAW-016\"",
-      "children_raw": "(none detected)",
-      "children_text": "(none detected)",
-      "start_offset": 0,
-      "end_offset": 0,
-      "line_start": 0,
-      "line_end": 0,
-      "parser_confidence": "high",
-      "parse_status": "parsed",
-      "warnings": [],
-      "status": "preserved"
-    },
     {
       "block_id": "ui_0002",
       "block_type": "mdx_component",

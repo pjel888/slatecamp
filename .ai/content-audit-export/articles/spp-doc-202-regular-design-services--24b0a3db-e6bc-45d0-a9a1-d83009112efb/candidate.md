@@ -365,7 +365,7 @@ All signboards placed at the project site during construction must be **approved
 
 ## Exam Tip
 
-ALE Swipe: SPP 202 five phases and fee percentages: SD (Phase 1) = 15% of basic fee | DD (Phase 2) = 20% | CD (Phase 3) = 30% (largest single phase) | Bidding (Phase 4) = 5% (smallest) | CA (Phase 5) = 30%. The 15-20-30-5-30 percentage sequence is the most tested fee allocation on the exam.
+LEA Swipe: SPP 202 five phases and fee percentages: SD (Phase 1) = 15% of basic fee | DD (Phase 2) = 20% | CD (Phase 3) = 30% (largest single phase) | Bidding (Phase 4) = 5% (smallest) | CA (Phase 5) = 30%. The 15-20-30-5-30 percentage sequence is the most tested fee allocation on the exam.
 
 ## Cross‑References
 

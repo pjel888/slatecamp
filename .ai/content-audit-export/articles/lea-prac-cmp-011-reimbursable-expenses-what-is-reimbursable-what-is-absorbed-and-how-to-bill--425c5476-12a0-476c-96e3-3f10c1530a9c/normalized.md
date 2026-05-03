@@ -33,7 +33,7 @@ Printing and copying costs are reimbursable, including cost of printing full set
 [SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Priority — Fee Computation:** Know the five compensation methods (percentage-of-PCC, MDPE, lump sum, per diem/retainer, reimbursable expenses). Master the sliding scale for Groups 1-3 (5%→4%→3%→ — this distinction appears on every ALE cycle.
+- Text: **LEA Priority — Fee Computation:** Know the five compensation methods (percentage-of-PCC, MDPE, lump sum, per diem/retainer, reimbursable expenses). Master the sliding scale for Groups 1-3 (5%→4%→3%→ — this distinction appears on every LEA cycle.
 [/SLATECAMP_UI_BLOCK]
 
 

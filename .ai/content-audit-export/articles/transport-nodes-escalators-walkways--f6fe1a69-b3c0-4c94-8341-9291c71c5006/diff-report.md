@@ -1,6 +1,6 @@
 # Content Diff Report: transport-nodes-escalators-walkways
 
-Generated: 2026-05-03T10:56:00.502Z
+Generated: 2026-05-03T11:49:34.054Z
 Article ID: f6fe1a69-b3c0-4c94-8341-9291c71c5006
 Changed: true
 Safe to push locally: false
@@ -19,15 +19,14 @@ Safe to push locally: false
 
 ## UI block preservation
 
-- UI blocks expected: 6
+- UI blocks expected: 4
 - UI blocks preserved: 4
-- UI blocks changed/missing: 2
+- UI blocks changed/missing: 0
 - Unresolved placeholders: 1
 
 ## Blockers
 
 - Candidate contains unresolved UI block placeholders.
-- Candidate is missing 2 preserved UI block(s).
 
 ## Warnings
 

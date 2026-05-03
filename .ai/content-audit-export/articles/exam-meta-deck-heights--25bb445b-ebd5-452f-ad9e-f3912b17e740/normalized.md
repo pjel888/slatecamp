@@ -184,7 +184,7 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0045 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Dimensional Strategy:** When a question gives a height in mm, immediately locate it on the ladder: below 750 (reach ranges), 750-900 (handrail zone), 900-1200 (handle/guard zone), above 1200 (max reach). If you know the band, you can eliminate 2-3 wrong answers.
+- Text: **LEA Dimensional Strategy:** When a question gives a height in mm, immediately locate it on the ladder: below 750 (reach ranges), 750-900 (handrail zone), 900-1200 (handle/guard zone), above 1200 (max reach). If you know the band, you can eliminate 2-3 wrong answers.
 [/SLATECAMP_UI_BLOCK]
 
 ---

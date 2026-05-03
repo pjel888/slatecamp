@@ -177,14 +177,7 @@ Extracted summary:
 
 ## Key Facts and Testable Items
 
-[SLATECAMP_UI_BLOCK:ui_0007 component="WikiExamTable" status="unknown"]
-Extracted summary:
-- Props: headers="{["Strategy", "Mechanism", "LEA-Testable Detail"]}", rows=true, Cross-Ventilation=true, Pressure-driven=true, flow=true, through=true, opposing=true, apertures=true, Minimum=true, plan=true, depth=true, for=true
-- Text: inlet (6–10%)"]', '["Stack Effect", "Buoyancy-driven vertical air movement", "Requires ΔT ≥ 3–4°C; 3m+ stack height optimal; open stairwells more effective than shafts"]', '["Overhang Depth", "Solar altitude × sill geometry", "East wall 8am Manila (10°N) requires 2.5–3m; West wall 3pm requires 3–4m"]', '["Light Shelf", "Reflected daylight + reduced glare", "30–40% heat gain reduction; specular aluminum + diffuse ceiling"]', '["Lightweight Construction", "Fast thermal response", "2–3°C cooler dur
-[/SLATECAMP_UI_BLOCK]
-## How It's Tested on the LEA
-
-[SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
+ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
 - Text: 1. **Cross-Ventilation Sizing:** "An office building plan is 18m (N-S) × 25m (E-W) in Cebu (Type IV climate). Prevailing wind: southwest (habagat, May–Oct). Specify aperture sizing for cross-ventilation and justify your inlet/outlet ratio." - **Answer:** E-W width exceeds 15m effective ventilation depth. Solution: interior courtyard or atrium (6m×6m) to create two 9.5m zones on each side. SW-facing facades: inlet 6% floor area (1.5m² for 25m²), NE-facing outlet 25% (6.25m²). Asymmetry creates ve

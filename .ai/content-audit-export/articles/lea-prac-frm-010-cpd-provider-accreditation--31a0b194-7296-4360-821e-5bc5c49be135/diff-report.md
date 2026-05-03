@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-frm-010-cpd-provider-accreditation
 
-Generated: 2026-05-03T07:49:38.706Z
+Generated: 2026-05-03T11:50:08.221Z
 Article ID: 31a0b194-7296-4360-821e-5bc5c49be135
 Changed: true
 Safe to push locally: true
@@ -19,8 +19,8 @@ Safe to push locally: true
 
 ## UI block preservation
 
-- UI blocks expected: 4
-- UI blocks preserved: 4
+- UI blocks expected: 2
+- UI blocks preserved: 2
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

@@ -1,9 +1,9 @@
 # Content Diff Report: lea-util-007-04-solar-photovoltaic-pv-systems
 
-Generated: 2026-05-03T10:55:47.400Z
+Generated: 2026-05-03T11:49:23.918Z
 Article ID: 06c6e7dc-b3cd-4ff8-a25a-fed405c47830
 Changed: true
-Safe to push locally: false
+Safe to push locally: true
 
 ## Hashes
 
@@ -26,7 +26,7 @@ Safe to push locally: false
 
 ## Blockers
 
-- original.md hash does not match article metadata export hash.
+- None
 
 ## Warnings
 

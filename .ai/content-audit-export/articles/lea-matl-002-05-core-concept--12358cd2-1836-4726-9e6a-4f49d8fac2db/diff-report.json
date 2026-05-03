@@ -1,12 +1,12 @@
 {
   "article_id": "12358cd2-1836-4726-9e6a-4f49d8fac2db",
   "slug": "lea-matl-002-05-core-concept",
-  "generated_at": "2026-05-03T07:49:20.439Z",
+  "generated_at": "2026-05-03T11:50:00.891Z",
   "old_hash": "sha256:1643bba7ae553e2a92ca107672034538e0d61ff11732450a20adbdd752ebd06a",
-  "new_hash": "sha256:a6f03b30dddc0d011410767dc687177d2166950e69d4b039571fc21cc840e786",
+  "new_hash": "sha256:bf047f80c90bc4ded28b0b5ae3d9d476c69d252987d477c4cd7ec18749f02a85",
   "original_hash": "sha256:1643bba7ae553e2a92ca107672034538e0d61ff11732450a20adbdd752ebd06a",
-  "normalized_hash": "sha256:1add1d99bbcf9787b40ace3def54aa04b8ecbf814e73878283a2ee6d5563b5d0",
-  "candidate_hash": "sha256:a6f03b30dddc0d011410767dc687177d2166950e69d4b039571fc21cc840e786",
+  "normalized_hash": "sha256:a30694081f871a8dfd7b1e56895743aa54b5bf720a92dc31031ba39dbccfb109",
+  "candidate_hash": "sha256:bf047f80c90bc4ded28b0b5ae3d9d476c69d252987d477c4cd7ec18749f02a85",
   "changed": true,
   "changed_line_count": 18,
   "inserted_line_count": 14,
@@ -31,11 +31,10 @@
   "locally_safe_to_push": false,
   "safe_to_push": false,
   "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "original.md hash does not match article metadata export hash."
+    "Candidate contains unresolved UI block placeholders."
   ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; original.md hash does not match article metadata export hash."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders."
 }

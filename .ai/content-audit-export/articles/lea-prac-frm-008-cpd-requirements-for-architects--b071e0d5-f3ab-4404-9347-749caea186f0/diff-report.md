@@ -1,9 +1,9 @@
 # Content Diff Report: lea-prac-frm-008-cpd-requirements-for-architects
 
-Generated: 2026-05-03T07:48:55.032Z
+Generated: 2026-05-03T11:49:51.909Z
 Article ID: b071e0d5-f3ab-4404-9347-749caea186f0
 Changed: true
-Safe to push locally: false
+Safe to push locally: true
 
 ## Hashes
 
@@ -19,14 +19,14 @@ Safe to push locally: false
 
 ## UI block preservation
 
-- UI blocks expected: 4
-- UI blocks preserved: 3
-- UI blocks changed/missing: 1
+- UI blocks expected: 2
+- UI blocks preserved: 2
+- UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate is missing 1 preserved UI block(s).
+- None
 
 ## Warnings
 

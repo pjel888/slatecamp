@@ -1,6 +1,6 @@
 ## Introduction
 ## Learning Goal
-After reading this article, you should understand the key concepts tested in the ALE for this topic, including relevant code provisions, dimensional standards, and common exam applications.
+After reading this article, you should understand the key concepts tested in the LEA for this topic, including relevant code provisions, dimensional standards, and common exam applications.
 
 The LEA examination tests candidates' ability to recognize unprofessional conduct in realistic scenarios. Rather than abstract ethical rules, architects must identify violations in context—understanding when conduct crosses from acceptable professional practice into violation territory.
 
@@ -28,7 +28,7 @@ Understanding this spectrum is critical because LEA scenarios ask candidates to 
 [SLATECAMP_UI_BLOCK:ui_0011 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Priority — Ethical Hierarchy:** Public safety > Client interests > Personal profit. The architect's obligation under RA 9266 and the Code of Ethical Conduct is absolute and non-delegable. Key vi — this distinction appears on every ALE cycle.
+- Text: **LEA Priority — Ethical Hierarchy:** Public safety > Client interests > Personal profit. The architect's obligation under RA 9266 and the Code of Ethical Conduct is absolute and non-delegable. Key vi — this distinction appears on every LEA cycle.
 [/SLATECAMP_UI_BLOCK]
 
 
@@ -78,9 +78,9 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Test Strategy:** When evaluating design negligence scenarios, ask:
+- Text: **LEA Test Strategy:** When evaluating design negligence scenarios, ask:
 1. Did the architect investigate the full scope of requirements?
-2. Are the design calculations consistent with those requireme — this distinction appears on every ALE cycle.
+2. Are the design calculations consistent with those requireme — this distinction appears on every LEA cycle.
 [/SLATECAMP_UI_BLOCK]
 
 ### Scenario 2: Construction Administration Negligence
@@ -147,7 +147,7 @@ Incompetence differs from negligence: an architect may lack the skill or knowled
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Test Point:** Misrepresentation of qualifications is treated as both incompetence (lacking actual skill) and dishonesty (falsely claiming it). This combination justifies harsher discipline than  — this distinction appears on every ALE cycle.
+- Text: **LEA Test Point:** Misrepresentation of qualifications is treated as both incompetence (lacking actual skill) and dishonesty (falsely claiming it). This combination justifies harsher discipline than  — this distinction appears on every LEA cycle.
 [/SLATECAMP_UI_BLOCK]
 
 ## Pattern 3: Dishonesty and Fraudulent Conduct
@@ -231,7 +231,7 @@ Conflicts of interest occur when an architect has competing financial or profess
 [SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Critical Point:** A conflict of interest exists when an architect has competing interests that could compromise objectivity—even if the architect believes they would act objectively anyway. The  — this distinction appears on every ALE cycle.
+- Text: **LEA Critical Point:** A conflict of interest exists when an architect has competing interests that could compromise objectivity—even if the architect believes they would act objectively anyway. The  — this distinction appears on every LEA cycle.
 [/SLATECAMP_UI_BLOCK]
 
 **Scenario 10: Undisclosed Multiple Representation**
@@ -332,7 +332,7 @@ Beyond specific violations, RA 9266 Section 23(g) authorizes discipline for "any
 [SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Test Point:** Criminal conviction is grounds for professional discipline even if unrelated to architecture practice. The conviction demonstrates character unfitness for holding professional lice — this distinction appears on every ALE cycle.
+- Text: **LEA Test Point:** Criminal conviction is grounds for professional discipline even if unrelated to architecture practice. The conviction demonstrates character unfitness for holding professional lice — this distinction appears on every LEA cycle.
 [/SLATECAMP_UI_BLOCK]
 
 **Scenario 16: Habitual Substance Abuse**
@@ -428,7 +428,7 @@ The PRBoA considers factors beyond the violation itself:
 [SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Test Strategy:** When analyzing a disciplinary scenario, identify both the core violation AND the contextual factors that affect severity. An LEA question might give you identical violations wit — this distinction appears on every ALE cycle.
+- Text: **LEA Test Strategy:** When analyzing a disciplinary scenario, identify both the core violation AND the contextual factors that affect severity. An LEA question might give you identical violations wit — this distinction appears on every LEA cycle.
 [/SLATECAMP_UI_BLOCK]
 
 ## The Role of Intent and Negligence Versus Fraud
@@ -464,7 +464,7 @@ Extracted summary:
 
 ## About This Article
 
-This article is part of the SlateCamp Professional Practice Content Engine for LEA preparation. It synthesizes regulatory frameworks, case law principles, and professional standards into competency-based learning outcomes aligned with the Architecture Licensure Examination syllabus.
+This article is part of the SlateCamp Professional Practice Content Engine for LEA preparation. It synthesizes regulatory frameworks, case law principles, and professional standards into competency-based learning outcomes aligned with the Licensure Examination for Architects syllabus.
 
 **Revision History:**
 - 2026-03-22: Initial publication covering unprofessional conduct patterns

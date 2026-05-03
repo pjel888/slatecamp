@@ -47,7 +47,6 @@ The Philippines lies in a typhoon belt where wind speeds regularly exceed 200 km
 
 <Tip>_Basic Wind Speed_ = 3-sec gust at 10m, Exposure C baseline. If you cannot state this in one sentence, you will fail the exam. The 0.02 probability is non-negotiable; it defines the entire hazard level.</Tip>
 
-
 ## Related Articles
 
 See also: **Load Types** (lea-strc-001-02) for wind load as a load category, **Required Strength** (lea-strc-005-01) for wind load combinations, and **Base Shear** (lea-strc-004-03) for comparison with seismic lateral loads.
@@ -55,4 +54,3 @@ See also: **Load Types** (lea-strc-001-02) for wind load as a load category, **R
 ## Common Mistakes
 <Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
 
-<WikiMistakeList mistakes={["Confusing basic wind speed with locally measured wind or gusts at arbitrary heights—basic wind speed is always the Exposure C reference at 10 m","Treating Exposure B (moderate) and Exposure C (open) as the same category; Exposure B is denser and reduces wind speed more","Ignoring the dual conditions for low-rise buildings (both height ≤18 m AND height ≤ least dimension); a tall, narrow building fails the second condition","Assuming an open building (>80% walls) automatically experiences less wind load; interior pressurization still occurs if the building encloses significant air volume","Forgetting that flexible structure thresholds (f < 1 Hz or height > 4 × least dimension) trigger dynamic wind analysis, not static procedures"]} />

@@ -32,10 +32,10 @@ If the contractor fails to pay for work performed or materials delivered, subcon
 [SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Priority — Payment Bond Key Points:**
+- Text: **LEA Priority — Payment Bond Key Points:**
   1. Protects subcontractors, suppliers, and laborers (NOT the owner)
   2. Claim period: typically 60-90 days from last furnishing of labor/materials
-  3. S — this distinction appears on every ALE cycle.
+  3. S — this distinction appears on every LEA cycle.
 [/SLATECAMP_UI_BLOCK]
 
 ### Distinction Between Payment and Performance Bonds

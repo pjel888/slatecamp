@@ -464,7 +464,7 @@ Before your exam, verify these without looking:
 
 ## Exam Tip
 
-ALE Swipe: The minimum aisle width for mercantile occupancies is 900 mm for counters (if non-accessible) and 1.20 m for accessible routes. Queuing space = 900 mm per person in line. Service counters must have a 760-860 mm high section for wheelchair users.
+LEA Swipe: The minimum aisle width for mercantile occupancies is 900 mm for counters (if non-accessible) and 1.20 m for accessible routes. Queuing space = 900 mm per person in line. Service counters must have a 760-860 mm high section for wheelchair users.
 
 ## Cross‑References
 

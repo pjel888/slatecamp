@@ -1,9 +1,9 @@
 # Content Diff Report: lea-util-002-03-core-ventilation-standards
 
-Generated: 2026-05-03T07:48:56.321Z
+Generated: 2026-05-03T11:49:52.851Z
 Article ID: 903c66da-2864-48b0-b638-2ed218a173e2
 Changed: true
-Safe to push locally: false
+Safe to push locally: true
 
 ## Hashes
 
@@ -26,7 +26,7 @@ Safe to push locally: false
 
 ## Blockers
 
-- original.md hash does not match article metadata export hash.
+- None
 
 ## Warnings
 

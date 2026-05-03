@@ -50,11 +50,7 @@ Extracted summary:
 - Props: (none)
 - Text: _Basic Wind Speed_ = 3-sec gust at 10m, Exposure C baseline. If you cannot state this in one sentence, you will fail the exam. The 0.02 probability is non-negotiable; it defines the entire hazard level.
 
-
-
-
 [/SLATECAMP_UI_BLOCK]
-
 
 ## Related Articles
 
@@ -67,8 +63,3 @@ Extracted summary:
 - Text: These are frequently tested traps. Memorize them to avoid losing easy points on exam day.
 [/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes="{[\"Confusing basic wind speed with locally measured gusts; basic wind speed is a standardized 3-second gust at 10 m in Exposure C, not an arbitrary field measurement.\",\"Assuming open buildings (≥80% walls open) automatically experience less wind load; interior pressurization still occurs if the building encloses significant air volume.\",\"Forgetting that flexible structure thresholds (frequency < 1 Hz or height > 4 × least dimension) trigger dynamic wind analysis, not static procedures.\"]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]

@@ -226,7 +226,7 @@ Would you like a separate ultra‑short “exam cram” version with just the Q 
 
 ## Exam Tip
 
-ALE Trap: Three laws with different privileges: RA 7277 = original Magna Carta (accessibility mandates), RA 9442 = added 20% discount/VAT exemption, RA 10754 = expanded to all PWD (removed the 70% disability threshold). The VA T exemption is ON TOP of the 20% discount — not a replacement. Total savings = 20% discount + VAT on the discounted amount.
+LEA Trap: Three laws with different privileges: RA 7277 = original Magna Carta (accessibility mandates), RA 9442 = added 20% discount/VAT exemption, RA 10754 = expanded to all PWD (removed the 70% disability threshold). The VA T exemption is ON TOP of the 20% discount — not a replacement. Total savings = 20% discount + VAT on the discounted amount.
 
 ## Cross‑References
 

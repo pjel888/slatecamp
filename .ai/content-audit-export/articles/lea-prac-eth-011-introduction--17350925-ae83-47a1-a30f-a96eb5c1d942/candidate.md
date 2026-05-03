@@ -1,6 +1,6 @@
 ## Introduction
 ## Learning Goal
-After reading this article, you should understand the key concepts tested in the ALE for this topic, including relevant code provisions, dimensional standards, and common exam applications.
+After reading this article, you should understand the key concepts tested in the LEA for this topic, including relevant code provisions, dimensional standards, and common exam applications.
 
 Conflicts of interest represent one of the most challenging ethical issues in architectural practice. Unlike clear violations (fraud, negligence), conflicts exist in shades of gray. An architect may have competing interests that cloud judgment, yet honestly believe she will act objectively. The Code of Ethical Conduct and RA 9266 require more than honest intention—they require **disclosure and client informed consent**.
 
@@ -356,7 +356,7 @@ The PRBoA enforces conflict of interest rules through discipline:
 
 ## About This Article
 
-This article is part of the SlateCamp Professional Practice Content Engine for LEA preparation. It synthesizes regulatory frameworks, case law principles, and professional standards into competency-based learning outcomes aligned with the Architecture Licensure Examination syllabus.
+This article is part of the SlateCamp Professional Practice Content Engine for LEA preparation. It synthesizes regulatory frameworks, case law principles, and professional standards into competency-based learning outcomes aligned with the Licensure Examination for Architects syllabus.
 
 **Revision History:**
 - 2026-03-22: Initial publication covering conflict of interest management

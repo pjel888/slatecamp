@@ -316,7 +316,7 @@ Extracted summary:
 
 ## Exam Tip
 
-ALE Trap: Comprehensive = SPP 201 + 202 + 204 + 205 in a single contract. Basic fee = 15% of construction cost (max). Not included: specialized services (203). Comprehensive is a BUNDLE — the 15% ceiling applies to the bundle, not to each phase. The most tested: if a client asks for 'all services', it likely triggers SPP 206 (Comprehensive), not just SPP 202.
+LEA Trap: Comprehensive = SPP 201 + 202 + 204 + 205 in a single contract. Basic fee = 15% of construction cost (max). Not included: specialized services (203). Comprehensive is a BUNDLE — the 15% ceiling applies to the bundle, not to each phase. The most tested: if a client asks for 'all services', it likely triggers SPP 206 (Comprehensive), not just SPP 202.
 
 ## Cross‑References
 

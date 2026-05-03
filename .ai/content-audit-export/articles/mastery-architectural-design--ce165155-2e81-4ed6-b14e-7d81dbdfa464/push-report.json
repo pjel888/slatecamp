@@ -1,23 +1,21 @@
 {
-  "attempted_at": "2026-05-03T07:52:18.520Z",
+  "attempted_at": "2026-05-03T11:49:40.842Z",
   "dry_run": true,
   "apply": false,
   "pushed": false,
-  "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
-  ],
+  "blockers": [],
   "warnings": [
     "Dry-run mode: no Supabase mutation will be performed."
   ],
   "updated_rows_count": 0,
   "article_id": "ce165155-2e81-4ed6-b14e-7d81dbdfa464",
   "slug": "mastery-architectural-design",
-  "preparation_actions": [],
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
   "remote_hash_before": "sha256:5d854166e78a39ca68800fe8311960861ce57f694f7499a7b7c15e942ab9600f",
   "original_hash": "sha256:5d854166e78a39ca68800fe8311960861ce57f694f7499a7b7c15e942ab9600f",
-  "candidate_hash": "sha256:eb6d80fd138a4e17f86403c8deb8bcecbbb2d8ddac97e2b0e4e2a9774d8f195e",
+  "candidate_hash": "sha256:3e9743f06ed787feb2d9f87e1f6eaad4617ed8a57b6837d524975cc52d25f2af",
   "stale_check_passed": true,
   "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
 }

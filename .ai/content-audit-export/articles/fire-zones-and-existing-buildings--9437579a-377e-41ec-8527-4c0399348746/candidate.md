@@ -630,7 +630,7 @@ The Philippines faces a combination of risk factors that make fire zone rules mo
 
 ## Exam Tip
 
-ALE Trap: Existing non-conforming buildings in Fire Zone 1 must be upgraded when the cost of alteration exceeds 50% of building value. Know the three zones (1=highest restriction, 4=lowest) and which occupancy types are prohibited in each.
+LEA Trap: Existing non-conforming buildings in Fire Zone 1 must be upgraded when the cost of alteration exceeds 50% of building value. Know the three zones (1=highest restriction, 4=lowest) and which occupancy types are prohibited in each.
 
 ## Cross‑References
 

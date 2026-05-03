@@ -6,7 +6,7 @@ After reading this article, you should be able to:
 - Identify the scope and limits of the Architect's authority during construction as defined by the Contract Documents and Doc 301.
 - Distinguish between the Architect's right to issue directives (remove defective work, require testing) and the Contractor's control over means and methods.
 - Explain the Architect's authority to issue Change Orders and the thresholds requiring Owner authorization.
-- Apply the limits on Architect authority to ALE scenarios involving disputes over work methods, payment certification, and contract interpretation.
+- Apply the limits on Architect authority to LEA scenarios involving disputes over work methods, payment certification, and contract interpretation.
 
 
 
@@ -74,6 +74,6 @@ Extracted summary:
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
 Extracted summary:
-- Props: title=ALE Strategy
+- Props: title=LEA Strategy
 - Text: **High-yield topic:** Know the specific limits of the architect's authority — they cannot direct contractor means/methods, only verify compliance with contract documents.
 [/SLATECAMP_UI_BLOCK]

@@ -1,9 +1,9 @@
 # Content Diff Report: lea-util-008-03-electrical-utility-connection
 
-Generated: 2026-05-03T07:50:06.627Z
+Generated: 2026-05-03T11:50:18.188Z
 Article ID: e956216b-4b72-4a6a-a471-5cb42162c054
 Changed: true
-Safe to push locally: false
+Safe to push locally: true
 
 ## Hashes
 
@@ -26,7 +26,7 @@ Safe to push locally: false
 
 ## Blockers
 
-- original.md hash does not match article metadata export hash.
+- None
 
 ## Warnings
 

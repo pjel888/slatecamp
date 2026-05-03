@@ -172,13 +172,7 @@ Extracted summary:
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0011 component="WikiMistakeCard" status="unknown"]
-Extracted summary:
-- Props: mistake="Applying Temperate-Zone Solar Logic", correction="Assuming south-facing windows should capture winter sun for heating.", context=true, In=true, the=true, Philippines=true, winter=true, sun=true, altitude=true
-- Text: 59°) is still intense; minimizing south-west exposure is correct." />
-[/SLATECAMP_UI_BLOCK]
-
-[SLATECAMP_UI_BLOCK:ui_0012 component="WikiMistakeCard" status="preserved"]
+ed"]
 Extracted summary:
 - Props: mistake="Neglecting East-West Exposure Risk", correction="Designing east or west-facing primary facades.", context="These orientations increase cooling demand by 20–30%; a major liability in high-humidity Coronas Type II/IV climates."
 - Text: (none detected)

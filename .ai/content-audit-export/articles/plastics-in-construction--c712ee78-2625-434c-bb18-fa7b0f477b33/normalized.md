@@ -453,7 +453,7 @@ Return to this module in **3 days**. If you can answer the three Active Recall q
 
 ## Exam Tip
 
-ALE Trap: Foam plastic insulation requires a 15-minute thermal barrier unless protected by 1/2″ gypsum board. Maximum permitted foam plastic area in interior finish = 10% of wall/celling area (for foam plastic not covered by thermal barrier). The 15-minute thermal barrier is the key safety requirement.
+LEA Trap: Foam plastic insulation requires a 15-minute thermal barrier unless protected by 1/2″ gypsum board. Maximum permitted foam plastic area in interior finish = 10% of wall/celling area (for foam plastic not covered by thermal barrier). The 15-minute thermal barrier is the key safety requirement.
 
 ## Cross‑References
 

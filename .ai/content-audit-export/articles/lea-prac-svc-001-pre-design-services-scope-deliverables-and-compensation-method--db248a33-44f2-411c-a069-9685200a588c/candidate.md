@@ -6,7 +6,7 @@ After reading this article, you should be able to:
 - Define pre-design services under SPP Doc 201 and explain how they differ from regular design phases.
 - Identify the scope and deliverables of pre-design services: problem identification, site analysis, and initial conceptualization.
 - Describe the compensation methods for pre-design services (lump sum, professional fee plus overhead, per diem).
-- Apply pre-design service classifications to ALE scenarios involving early-stage architectural engagements.
+- Apply pre-design service classifications to LEA scenarios involving early-stage architectural engagements.
 
 SPP Document 201 defines pre-design services as the architectural work performed before the architect begins regular design phases. These services range from initial problem identification through activities that allow the architect to initially conceptualize architectural and allied solutions.
 

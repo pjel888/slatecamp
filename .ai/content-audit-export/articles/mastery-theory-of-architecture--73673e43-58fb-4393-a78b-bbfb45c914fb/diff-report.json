@@ -1,47 +1,38 @@
 {
   "article_id": "73673e43-58fb-4393-a78b-bbfb45c914fb",
   "slug": "mastery-theory-of-architecture",
-  "generated_at": "2026-05-03T07:50:09.718Z",
+  "generated_at": "2026-05-03T11:50:19.636Z",
   "old_hash": "sha256:7ef13d0b8e370a293ca4595b058815b55e85728835ba66b95c0cdb87c32b302a",
-  "new_hash": "sha256:8ff10a904fc8b2267aa7f77dbaae000b5da3209bf30e42e398daf6d902fad640",
+  "new_hash": "sha256:439f014a844dcef3f8d1e6fec12bb398282913a6a6b9abe2e3b4021835c3eba9",
   "original_hash": "sha256:7ef13d0b8e370a293ca4595b058815b55e85728835ba66b95c0cdb87c32b302a",
-  "normalized_hash": "sha256:a21365ea6b046e05f1913a689a38f64db5faecc90a0c75bcd1dc11f250d8f15e",
-  "candidate_hash": "sha256:8ff10a904fc8b2267aa7f77dbaae000b5da3209bf30e42e398daf6d902fad640",
+  "normalized_hash": "sha256:28a0a06cf5fc51991781292be84e390189dfcf17fd0fb5b4d08c46643f9ea991",
+  "candidate_hash": "sha256:439f014a844dcef3f8d1e6fec12bb398282913a6a6b9abe2e3b4021835c3eba9",
   "changed": true,
-  "changed_line_count": 52,
-  "inserted_line_count": 0,
-  "deleted_line_count": 18,
-  "ui_blocks_original_count": 8,
+  "changed_line_count": 54,
+  "inserted_line_count": 2,
+  "deleted_line_count": 0,
+  "ui_blocks_original_count": 2,
   "ui_blocks_candidate_count": 2,
-  "ui_blocks_changed_count": 6,
-  "ui_blocks_count": 8,
+  "ui_blocks_changed_count": 0,
+  "ui_blocks_count": 2,
   "unresolved_placeholders_count": 0,
   "preserved_blocks_count": 2,
   "changed_text_summary": {
-    "changed": 52,
-    "inserted": 0,
-    "deleted": 18,
+    "changed": 54,
+    "inserted": 2,
+    "deleted": 0,
     "original_line_count": 97,
-    "candidate_line_count": 79
+    "candidate_line_count": 99
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0002",
-      "ui_0004",
-      "ui_0005",
-      "ui_0006",
-      "ui_0007",
-      "ui_0008"
-    ],
-    "changed_count": 6
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate is missing 6 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate is missing 6 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

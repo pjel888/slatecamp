@@ -4,14 +4,14 @@
   "normalized_created_at": "2026-05-01T13:33:43.431Z",
   "parser_version": "ui-block-parser-v1",
   "original_content_hash": "sha256:5837fb78cb5b7738f1606e4f5c240f6a8682375c6e8d8251b64caa14c8cac725",
-  "normalized_content_hash": "sha256:e813a72a38c2074455ceebeeac3f2433069eb8ef2d947660dc8d8182dff2833f",
+  "normalized_content_hash": "262e3008a931c952467ca43a7093d0b590e126e8a413ff95a8fe9cfce0c863bd",
   "ui_block_count": 4,
   "total_blocks": 0,
   "blocks": [
     {
       "block_id": "ui_0001",
       "component_name": "LawCallout",
-      "raw": "<LawCallout code=\"uap\" section=\"Code of Ethics - Obligations to Colleagues\">\nThe Code establishes four key protections for fellow architects: (1) Non-poaching \u2014 shall not seek commissions known to be already endowed to another architect (\u00a75-c); (2) Non-interference \u2014 shall not assume commission until written notification and proof of termination/compensation settlement (\u00a75-e); (3) Successor work notice \u2014 shall notify original architect of additions or renovations even if owner changed (\u00a75-f); (4) No injurious conduct \u2014 shall not knowingly injure another architect's reputation (\u00a75-g).\n</LawCallout>",
+      "raw": "<LawCallout code=\"uap\" section=\"Code of Ethics - Obligations to Colleagues\">\nThe Code establishes four key protections for fellow architects: (1) Non-poaching — shall not seek commissions known to be already endowed to another architect (§5-c); (2) Non-interference — shall not assume commission until written notification and proof of termination/compensation settlement (§5-e); (3) Successor work notice — shall notify original architect of additions or renovations even if owner changed (§5-f); (4) No injurious conduct — shall not knowingly injure another architect's reputation (§5-g).\n</LawCallout>",
       "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"LawCallout\" status=\"preserved\"]",
       "props_text": "code=uap, section=Code of Ethics - Obligations to Colleagues, title=Fellow Architect Obligations Under the Code",
       "props_json": {
@@ -19,8 +19,8 @@
         "section": "Code of Ethics - Obligations to Colleagues",
         "title": "Fellow Architect Obligations Under the Code"
       },
-      "children_raw": "The Code establishes four key protections for fellow architects: (1) Non-poaching \u2014 shall not seek commissions known to be already endowed to another architect (\u00a75-c); (2) Non-interference \u2014 shall not assume commission until written notification and proof of termination/compensation settlement (\u00a75-e); (3) Successor work notice \u2014 shall notify original architect of additions or renovations even if owner changed (\u00a75-f); (4) No injurious conduct \u2014 shall not knowingly injure another architect's reputation (\u00a75-g).",
-      "children_text": "The Code establishes four key protections for fellow architects: (1) Non-poaching \u2014 shall not seek commissions known to be already endowed to another architect (\u00a75-c); (2) Non-interference \u2014 shall not assume commission until written notification and proof of termination/compensation settlement (\u00a75-e); (3) Successor work notice \u2014 shall notify original architect of additions or renovations even if owner changed (\u00a75-f); (4) No injurious conduct \u2014 shall not knowingly injure another architect's reputation (\u00a75-g).",
+      "children_raw": "The Code establishes four key protections for fellow architects: (1) Non-poaching — shall not seek commissions known to be already endowed to another architect (§5-c); (2) Non-interference — shall not assume commission until written notification and proof of termination/compensation settlement (§5-e); (3) Successor work notice — shall notify original architect of additions or renovations even if owner changed (§5-f); (4) No injurious conduct — shall not knowingly injure another architect's reputation (§5-g).",
+      "children_text": "The Code establishes four key protections for fellow architects: (1) Non-poaching — shall not seek commissions known to be already endowed to another architect (§5-c); (2) Non-interference — shall not assume commission until written notification and proof of termination/compensation settlement (§5-e); (3) Successor work notice — shall notify original architect of additions or renovations even if owner changed (§5-f); (4) No injurious conduct — shall not knowingly injure another architect's reputation (§5-g).",
       "parse_status": "parsed",
       "raw_hash": "sha256:d6ebf4a4c18a99e5612689acadac56b6f3d54b68b479c5e92ae2def4b8a23a67"
     },
@@ -39,12 +39,12 @@
     {
       "block_id": "ui_0003",
       "component_name": "ExamTip",
-      "raw": "<ExamTip>\n  **LEA Watch:** Questions about fellow architect obligations often involve a scenario where an architect approaches a client who is known to be negotiating with another architect. The correct answer always involves the notification requirement under \u00a75-c/5-e. Even if no contract is signed, active negotiation triggers the protection.\n</ExamTip>",
+      "raw": "<ExamTip>\n  **LEA Watch:** Questions about fellow architect obligations often involve a scenario where an architect approaches a client who is known to be negotiating with another architect. The correct answer always involves the notification requirement under §5-c/5-e. Even if no contract is signed, active negotiation triggers the protection.\n</ExamTip>",
       "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"ExamTip\" status=\"preserved\"]",
       "props_text": "(none)",
       "props_json": {},
-      "children_raw": "**LEA Watch:** Questions about fellow architect obligations often involve a scenario where an architect approaches a client who is known to be negotiating with another architect. The correct answer always involves the notification requirement under \u00a75-c/5-e. Even if no contract is signed, active negotiation triggers the protection.",
-      "children_text": "**LEA Watch:** Questions about fellow architect obligations often involve a scenario where an architect approaches a client who is known to be negotiating with another architect. The correct answer always involves the notification requirement under \u00a75-c/5-e. Even if no contract is signed, active negotiation triggers the protection.",
+      "children_raw": "**LEA Watch:** Questions about fellow architect obligations often involve a scenario where an architect approaches a client who is known to be negotiating with another architect. The correct answer always involves the notification requirement under §5-c/5-e. Even if no contract is signed, active negotiation triggers the protection.",
+      "children_text": "**LEA Watch:** Questions about fellow architect obligations often involve a scenario where an architect approaches a client who is known to be negotiating with another architect. The correct answer always involves the notification requirement under §5-c/5-e. Even if no contract is signed, active negotiation triggers the protection.",
       "parse_status": "parsed",
       "raw_hash": "sha256:7085142b6088bd469359d6671f3e7dcd3aa539ad72057c77accf8c6ebe802528"
     },

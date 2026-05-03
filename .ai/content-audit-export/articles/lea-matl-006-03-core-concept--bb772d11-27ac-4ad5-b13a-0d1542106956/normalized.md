@@ -53,13 +53,7 @@ Extracted summary:
 - Text: (none detected)
 [/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeCard" status="unknown"]
-Extracted summary:
-- Props: mistake=true, Applying=true, liquid=true, acrylic=true, waterproofing=true, over=true, damp=true, concrete=true
-- Text: 85% RH) expecting moisture to be tolerated, resulting in blistering and delamination." correction="Acrylic is humidity-sensitive; requires &lt;85% RH substrate and air. Polyurethane tolerates damp conditions. Match material to substrate moisture before application." />
-[/SLATECAMP_UI_BLOCK]
-
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+ed"]
 Extracted summary:
 - Props: mistakes="{[\"Using torch-applied bituminous on damp substrate without allowing concrete cure time\", \"Omitting seam overlap (50-75 mm) on membrane systems, risking water bypass at sheet edges\", \"Applying single-coat liquid waterproofing at 0.8 mm (below ASTM D6083 minimum 1.5 mm), reducing effective protection\", \"Neglecting UV topcoat on exposed acrylic waterproofing (acrylic is not UV-stable; blistering occurs within 1-2 years)\"]}"
 - Text: (none detected)
@@ -71,9 +65,8 @@ See also within Roofing, Waterproofing, and Insulation: **lea-matl-006-01-core-c
 
 > **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
 
-
 [SLATECAMP_UI_BLOCK:ui_e001 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Exam Tip — Distinguish waterproofing from damp-proofing by application :** This topic is heavily tested in Area B. Focus on mastering material classifications, key property values (compressive strength, R-value, unit weight), and estimating formulas. Create comparison tables to distinguish similar materials (e.g., cement Types I–V, glass types, insulation types). Practice computational problems for concrete volume, board foot, CHB count, and paint coverage — these are reliable exam items.
+- Text: **LEA Exam Tip — Distinguish waterproofing from damp-proofing by application :** This topic is heavily tested in Area B. Focus on mastering material classifications, key property values (compressive strength, R-value, unit weight), and estimating formulas. Create comparison tables to distinguish similar materials (e.g., cement Types I–V, glass types, insulation types). Practice computational problems for concrete volume, board foot, CHB count, and paint coverage — these are reliable exam items.
 [/SLATECAMP_UI_BLOCK]

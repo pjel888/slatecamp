@@ -1,6 +1,6 @@
 # Content Diff Report: stairs-handrails-guardrails
 
-Generated: 2026-05-03T07:48:41.138Z
+Generated: 2026-05-03T11:49:43.960Z
 Article ID: 578ca1ef-6eff-4810-b5dd-3b52c9bcb76b
 Changed: true
 Safe to push locally: false
@@ -8,25 +8,25 @@ Safe to push locally: false
 ## Hashes
 
 - Original: `sha256:d0e5e629a7ea229d9093fc1a8f602dd19b721c9dbf799594d11fbc459a6d9e78`
-- Normalized: `sha256:0a2f44d4a4c5cb0ef9c6409ca6561b553b4e0c8bc2ae7995a1e040dbb97eb9a9`
-- Candidate: `sha256:cc735791d8309d97d656b5994a13e508a5ea62df63fdf477f6cb541e140f3781`
+- Normalized: `sha256:9c73a247f16a8937a33fc3df8a678d08eb83fca578b1a49015fc67545f27effb`
+- Candidate: `sha256:51325a557136371ad8a07612b5c7cceda93f3b9145ae7624bffbe88c264a8f04`
 
 ## Line summary
 
-- Changed lines: 149
-- Inserted lines: 28
+- Changed lines: 174
+- Inserted lines: 53
 - Deleted lines: 0
 
 ## UI block preservation
 
-- UI blocks expected: 6
+- UI blocks expected: 1
 - UI blocks preserved: 1
-- UI blocks changed/missing: 5
-- Unresolved placeholders: 0
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 1
 
 ## Blockers
 
-- Candidate is missing 5 preserved UI block(s).
+- Candidate contains unresolved UI block placeholders.
 
 ## Warnings
 

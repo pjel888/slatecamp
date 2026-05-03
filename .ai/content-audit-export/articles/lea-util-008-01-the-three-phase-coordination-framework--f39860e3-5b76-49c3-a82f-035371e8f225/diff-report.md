@@ -1,9 +1,9 @@
 # Content Diff Report: lea-util-008-01-the-three-phase-coordination-framework
 
-Generated: 2026-05-03T07:48:56.887Z
+Generated: 2026-05-03T11:49:53.673Z
 Article ID: f39860e3-5b76-49c3-a82f-035371e8f225
 Changed: true
-Safe to push locally: false
+Safe to push locally: true
 
 ## Hashes
 
@@ -26,7 +26,7 @@ Safe to push locally: false
 
 ## Blockers
 
-- original.md hash does not match article metadata export hash.
+- None
 
 ## Warnings
 

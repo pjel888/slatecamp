@@ -227,14 +227,7 @@ The following checklist consolidates all prescriptive requirements of Sections 1
 [SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
 Extracted summary:
 
-\[SLATECAMP_UI_BLOCK:ui_0005 component="Warn" status="preserved"]
-Extracted summary:
-- Props: 
-- Text: Don't memorize every code section number — memorize the *rule*. The LEA tests application, not recall.
-\[/SLATECAMP_UI_BLOCK\]
-- Props: (none)
-- Text: Don't memorize every code section number — memorize the *rule*. The LEA tests...
-[/SLATECAMP_UI_BLOCK]
+\
 - [ ] Booth walls and structure: steel ≥ No. 18 U.S. gauge
 - [ ] Booth floor area: ≤ 150 sq.m
 - [ ] Booth floor area: ≤ 10% of basic permitted area for the building's Occupancy Group
@@ -343,7 +336,6 @@ The Philippine tropical climate introduces specific design considerations not ad
 > Both from the exhaust **gate** (discharge point).
 
 The number sequence — **2 and 8** — doubles from one requirement to the next. If you remember "2 and 8," you will never mix up the two discharge clearances. Add the qualifier: **"from the gate"** to remind you this applies to the discharge point (the end of the exhaust duct), not to the booth itself.
-
 
 [SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
 Extracted summary:

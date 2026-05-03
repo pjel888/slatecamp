@@ -4,14 +4,14 @@
   "normalized_created_at": "2026-05-01T13:33:43.686Z",
   "parser_version": "ui-block-parser-v1",
   "original_content_hash": "sha256:f434ab79d265ee57580d120a3846ed91375de6c12ed97cb898b9e9d0f7221c70",
-  "normalized_content_hash": "bbec58dd46bf0a4644384f78ba6f685ac3b1595e1aa1b753f3d7759adec88f20",
+  "normalized_content_hash": "b23d6fc50e8851ed88c0894d38e2880b6662868a82b0acab0723ad546a37605c",
   "ui_block_count": 4,
   "total_blocks": 0,
   "blocks": [
     {
       "block_id": "ui_0001",
       "component_name": "LawCallout",
-      "raw": "<LawCallout code=\"ra9266\" section=\"UAP Doc 301, SPP Doc 201-209\" title=\"Bid Document Components\">\nEssential bid documents: (1) Advertisement/Invitation to Bid; (2) Instructions to Bidders; (3) Proposed Agreement; (4) General Conditions (UAP Doc 301); (5) Special Provisions; (6) Drawings; (7) Specifications; (8) Schedules. The Instructions to Bidders establish binding rules \u2014 they specify bid format, deadlines, bond requirements, evaluation criteria, and the consequences of non-compliance.\n</LawCallout>",
+      "raw": "<LawCallout code=\"ra9266\" section=\"UAP Doc 301, SPP Doc 201-209\" title=\"Bid Document Components\">\nEssential bid documents: (1) Advertisement/Invitation to Bid; (2) Instructions to Bidders; (3) Proposed Agreement; (4) General Conditions (UAP Doc 301); (5) Special Provisions; (6) Drawings; (7) Specifications; (8) Schedules. The Instructions to Bidders establish binding rules — they specify bid format, deadlines, bond requirements, evaluation criteria, and the consequences of non-compliance.\n</LawCallout>",
       "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"LawCallout\" status=\"preserved\"]",
       "props_text": "code=ra9266, section=UAP Doc 301, SPP Doc 201-209, title=Bid Document Components",
       "props_json": {
@@ -19,8 +19,8 @@
         "section": "UAP Doc 301, SPP Doc 201-209",
         "title": "Bid Document Components"
       },
-      "children_raw": "Essential bid documents: (1) Advertisement/Invitation to Bid; (2) Instructions to Bidders; (3) Proposed Agreement; (4) General Conditions (UAP Doc 301); (5) Special Provisions; (6) Drawings; (7) Specifications; (8) Schedules. The Instructions to Bidders establish binding rules \u2014 they specify bid format, deadlines, bond requirements, evaluation criteria, and the consequences of non-compliance.",
-      "children_text": "Essential bid documents: (1) Advertisement/Invitation to Bid; (2) Instructions to Bidders; (3) Proposed Agreement; (4) General Conditions (UAP Doc 301); (5) Special Provisions; (6) Drawings; (7) Specifications; (8) Schedules. The Instructions to Bidders establish binding rules \u2014 they specify bid format, deadlines, bond requirements, evaluation criteria, and the consequences of non-compliance.",
+      "children_raw": "Essential bid documents: (1) Advertisement/Invitation to Bid; (2) Instructions to Bidders; (3) Proposed Agreement; (4) General Conditions (UAP Doc 301); (5) Special Provisions; (6) Drawings; (7) Specifications; (8) Schedules. The Instructions to Bidders establish binding rules — they specify bid format, deadlines, bond requirements, evaluation criteria, and the consequences of non-compliance.",
+      "children_text": "Essential bid documents: (1) Advertisement/Invitation to Bid; (2) Instructions to Bidders; (3) Proposed Agreement; (4) General Conditions (UAP Doc 301); (5) Special Provisions; (6) Drawings; (7) Specifications; (8) Schedules. The Instructions to Bidders establish binding rules — they specify bid format, deadlines, bond requirements, evaluation criteria, and the consequences of non-compliance.",
       "parse_status": "parsed",
       "raw_hash": "sha256:1017f7ccbc9ad6c0776c17faa5282fea91a0929b8ec96594ee44e1fde8115f29"
     },
@@ -39,24 +39,24 @@
     {
       "block_id": "ui_0003",
       "component_name": "ProcessFlow",
-      "raw": "<ProcessFlow>\n  **Addendum Issuance Process:**\n  Step 1: Architect identifies error, ambiguity, or missing information\n  Step 2: Prepare written Addendum \u2014 sequentially numbered (No. 1, No. 2, etc.)\n  Step 3: Reference specific sections, pages, or drawings affected\n  Step 4: State whether it modifies, deletes, or adds information\n  Step 5: Distribute to ALL bidders who received original bid documents\n  Step 6: If < 48 hours to deadline, extend bid deadline proportionally\n  Step 7: Track all Addenda issued and confirm all bidders received them\n</ProcessFlow>",
+      "raw": "<ProcessFlow>\n  **Addendum Issuance Process:**\n  Step 1: Architect identifies error, ambiguity, or missing information\n  Step 2: Prepare written Addendum — sequentially numbered (No. 1, No. 2, etc.)\n  Step 3: Reference specific sections, pages, or drawings affected\n  Step 4: State whether it modifies, deletes, or adds information\n  Step 5: Distribute to ALL bidders who received original bid documents\n  Step 6: If < 48 hours to deadline, extend bid deadline proportionally\n  Step 7: Track all Addenda issued and confirm all bidders received them\n</ProcessFlow>",
       "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"ProcessFlow\" status=\"preserved\"]",
       "props_text": "(none)",
       "props_json": {},
-      "children_raw": "**Addendum Issuance Process:**\n  Step 1: Architect identifies error, ambiguity, or missing information\n  Step 2: Prepare written Addendum \u2014 sequentially numbered (No. 1, No. 2, etc.)\n  Step 3: Reference specific sections, pages, or drawings affected\n  Step 4: State whether it modifies, deletes, or adds information\n  Step 5: Distribute to ALL bidders who received original bid documents\n  Step 6: If < 48 hours to deadline, extend bid deadline proportionally\n  Step 7: Track all Addenda issued and confirm all bidders received them",
-      "children_text": "**Addendum Issuance Process:**\n  Step 1: Architect identifies error, ambiguity, or missing information\n  Step 2: Prepare written Addendum \u2014 sequentially numbered (No. 1, No. 2, etc.)\n  Step 3: Reference specific sections, pages, or drawings affected\n  Step 4: State whether it modifies, deletes, or adds information\n  Step 5: Distribute to ALL bidders who received original bid documents\n  Step 6: If < 48 hours to deadline, extend bid deadline proportionally\n  Step 7: Track all Addenda issued and confirm all bidders received them",
+      "children_raw": "**Addendum Issuance Process:**\n  Step 1: Architect identifies error, ambiguity, or missing information\n  Step 2: Prepare written Addendum — sequentially numbered (No. 1, No. 2, etc.)\n  Step 3: Reference specific sections, pages, or drawings affected\n  Step 4: State whether it modifies, deletes, or adds information\n  Step 5: Distribute to ALL bidders who received original bid documents\n  Step 6: If < 48 hours to deadline, extend bid deadline proportionally\n  Step 7: Track all Addenda issued and confirm all bidders received them",
+      "children_text": "**Addendum Issuance Process:**\n  Step 1: Architect identifies error, ambiguity, or missing information\n  Step 2: Prepare written Addendum — sequentially numbered (No. 1, No. 2, etc.)\n  Step 3: Reference specific sections, pages, or drawings affected\n  Step 4: State whether it modifies, deletes, or adds information\n  Step 5: Distribute to ALL bidders who received original bid documents\n  Step 6: If < 48 hours to deadline, extend bid deadline proportionally\n  Step 7: Track all Addenda issued and confirm all bidders received them",
       "parse_status": "parsed",
       "raw_hash": "sha256:6d06cc9073f46e0606cf7705fc750a02c24a657c1e7fb23b4fc5bc524d6e0298"
     },
     {
       "block_id": "ui_0004",
       "component_name": "ExamTip",
-      "raw": "<ExamTip>\n  **LEA Priority \u2014 Addenda Rules:**\n  1. Addenda must go to ALL bidders (equal information)\n  2. Issued < 48 hours before deadline \u2192 extend deadline\n  3. Addenda are sequentially numbered\n  4. Addenda become part of the Contract Documents\n  5. Oral clarifications are NOT binding \u2014 must be confirmed in writing as an Addendum\n</ExamTip>",
+      "raw": "<ExamTip>\n  **LEA Priority — Addenda Rules:**\n  1. Addenda must go to ALL bidders (equal information)\n  2. Issued < 48 hours before deadline → extend deadline\n  3. Addenda are sequentially numbered\n  4. Addenda become part of the Contract Documents\n  5. Oral clarifications are NOT binding — must be confirmed in writing as an Addendum\n</ExamTip>",
       "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"ExamTip\" status=\"preserved\"]",
       "props_text": "(none)",
       "props_json": {},
-      "children_raw": "**LEA Priority \u2014 Addenda Rules:**\n  1. Addenda must go to ALL bidders (equal information)\n  2. Issued < 48 hours before deadline \u2192 extend deadline\n  3. Addenda are sequentially numbered\n  4. Addenda become part of the Contract Documents\n  5. Oral clarifications are NOT binding \u2014 must be confirmed in writing as an Addendum",
-      "children_text": "**LEA Priority \u2014 Addenda Rules:**\n  1. Addenda must go to ALL bidders (equal information)\n  2. Issued < 48 hours before deadline \u2192 extend deadline\n  3. Addenda are sequentially numbered\n  4. Addenda become part of the Contract Documents\n  5. Oral clarifications are NOT binding \u2014 must be confirmed in writing as an Addendum",
+      "children_raw": "**LEA Priority — Addenda Rules:**\n  1. Addenda must go to ALL bidders (equal information)\n  2. Issued < 48 hours before deadline → extend deadline\n  3. Addenda are sequentially numbered\n  4. Addenda become part of the Contract Documents\n  5. Oral clarifications are NOT binding — must be confirmed in writing as an Addendum",
+      "children_text": "**LEA Priority — Addenda Rules:**\n  1. Addenda must go to ALL bidders (equal information)\n  2. Issued < 48 hours before deadline → extend deadline\n  3. Addenda are sequentially numbered\n  4. Addenda become part of the Contract Documents\n  5. Oral clarifications are NOT binding — must be confirmed in writing as an Addendum",
       "parse_status": "parsed",
       "raw_hash": "sha256:3d484731881834ecebac225199495e160dc5af57d6be4219a1fbcecc9f0fb9e9"
     }

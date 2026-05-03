@@ -6,7 +6,7 @@ After reading this article, you should be able to:
 - Distinguish between pre-feasibility studies (secondary information, early decision-making) and detailed feasibility studies (comprehensive analysis).
 - Identify the contents of a feasibility study: market analysis, technical assessment, financial projections, and risk evaluation.
 - Explain the Architect's distinct role in feasibility studies and how it differs from other consultants' contributions.
-- Apply feasibility study concepts to ALE scenarios involving project viability assessment and pre-design decision-making.
+- Apply feasibility study concepts to LEA scenarios involving project viability assessment and pre-design decision-making.
 
 Feasibility studies represent a critical pre-design service that determines whether a proposed development is viable. SPP 201 distinguishes between pre-feasibility studies, which use secondary information for early decision-making, and detailed feasibility studies, which analyze the project comprehensively against present and future trends.
 

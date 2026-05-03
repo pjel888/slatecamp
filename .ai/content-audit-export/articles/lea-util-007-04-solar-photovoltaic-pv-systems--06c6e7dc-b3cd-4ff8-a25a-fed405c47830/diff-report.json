@@ -1,7 +1,7 @@
 {
   "article_id": "06c6e7dc-b3cd-4ff8-a25a-fed405c47830",
   "slug": "lea-util-007-04-solar-photovoltaic-pv-systems",
-  "generated_at": "2026-05-03T10:55:47.400Z",
+  "generated_at": "2026-05-03T11:49:23.918Z",
   "old_hash": "sha256:873f8ff319ecbf108f82bd462e0569493514bbba7713e99b035e8a34edad2540",
   "new_hash": "sha256:68f8e4ec6808ae8f26596badf38174226886fd1adf20311fa6bef338fa67cc7a",
   "original_hash": "sha256:873f8ff319ecbf108f82bd462e0569493514bbba7713e99b035e8a34edad2540",
@@ -28,13 +28,11 @@
     "missing_block_ids": [],
     "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "original.md hash does not match article metadata export hash."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: original.md hash does not match article metadata export hash."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

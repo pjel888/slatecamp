@@ -94,7 +94,7 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Trap:** "The Laws of the Indies were applied uniformly across all Spanish colonies" — FALSE. While the 1573 Ordenanzas were the legal framework, local conditions forced adaptations: Philippine v
+- Text: **LEA Trap:** "The Laws of the Indies were applied uniformly across all Spanish colonies" — FALSE. While the 1573 Ordenanzas were the legal framework, local conditions forced adaptations: Philippine v
 [/SLATECAMP_UI_BLOCK]
 
 

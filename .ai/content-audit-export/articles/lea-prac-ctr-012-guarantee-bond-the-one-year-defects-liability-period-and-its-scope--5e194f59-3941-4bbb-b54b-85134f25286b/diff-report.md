@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope
 
-Generated: 2026-05-03T07:49:40.246Z
+Generated: 2026-05-03T11:50:08.865Z
 Article ID: 5e194f59-3941-4bbb-b54b-85134f25286b
 Changed: true
 Safe to push locally: true
@@ -8,7 +8,7 @@ Safe to push locally: true
 ## Hashes
 
 - Original: `sha256:0c2c8e4402dbe573f7b9a0f02804578f1026e3fb5f1c3b2e3a5d2de856777c90`
-- Normalized: `sha256:2fdfd0212e34a71f1b7ff3d5b8557c07c31fddc2ea0f9b9f97295f6db3daa106`
+- Normalized: `sha256:ead048426c68be6b23d3fbee7f2474c5dd4a5dc78f8c9b6ef73b3dbf84cbc220`
 - Candidate: `sha256:1ed2cf1e59262f1600b0c4c286efc3185dacd77a4ad70ae04cfb54c33a747662`
 
 ## Line summary

@@ -1,12 +1,12 @@
 {
   "article_id": "3a7ba43c-5ef5-4fd8-b054-ccb8a567d6f7",
   "slug": "lea-prac-eth-013-introduction",
-  "generated_at": "2026-05-03T07:50:09.294Z",
-  "old_hash": "sha256:82a8637c32e97eadae76e45eb323f602c72f81659e00ea247c3e4f5135d199fc",
-  "new_hash": "sha256:2171f5a8447ff214ea1c547dcb0fdd9ca44c532f78f95e13662595f6920ac7c9",
-  "original_hash": "sha256:82a8637c32e97eadae76e45eb323f602c72f81659e00ea247c3e4f5135d199fc",
-  "normalized_hash": "sha256:340c505280edc7c2f26e2405a935e741a74af44b6f2ed7965b524ab39e226191",
-  "candidate_hash": "sha256:2171f5a8447ff214ea1c547dcb0fdd9ca44c532f78f95e13662595f6920ac7c9",
+  "generated_at": "2026-05-03T11:50:19.245Z",
+  "old_hash": "sha256:8938b073204618cc9acdcba75b3233c87025e39dd8bd2db573236ada5d86ba95",
+  "new_hash": "sha256:d0e14b591d098e894f3ff02fa90882269bbb9dd2b68446b372dcb2d42471fb50",
+  "original_hash": "sha256:8938b073204618cc9acdcba75b3233c87025e39dd8bd2db573236ada5d86ba95",
+  "normalized_hash": "sha256:76fd07bcc4476661da96735ad526a93596475fddbf5e096092a259fa67099f4e",
+  "candidate_hash": "sha256:d0e14b591d098e894f3ff02fa90882269bbb9dd2b68446b372dcb2d42471fb50",
   "changed": true,
   "changed_line_count": 427,
   "inserted_line_count": 22,
@@ -28,11 +28,13 @@
     "missing_block_ids": [],
     "changed_count": 0
   },
-  "locally_safe_to_push": true,
-  "safe_to_push": true,
-  "blockers": [],
+  "locally_safe_to_push": false,
+  "safe_to_push": false,
+  "blockers": [
+    "original.md hash does not match article metadata export hash."
+  ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push."
+  "summary": "Unsafe: original.md hash does not match article metadata export hash."
 }

@@ -6,7 +6,7 @@ After reading this article, you should be able to:
 - Describe the Contractor's primary obligations under Doc 301: strict conformity to Contract Documents, qualified workforce, bonds, and warranty of quality.
 - Explain the Contractor's one-year Guarantee Period under Doc 301 and the scope of post-completion defect remediation.
 - Identify the bonds required of the Contractor (bid bond, performance bond, guarantee bond) and their respective purposes.
-- Apply Contractor obligation principles to ALE scenarios involving defective work, non-conforming materials, and warranty claims.
+- Apply Contractor obligation principles to LEA scenarios involving defective work, non-conforming materials, and warranty claims.
 
 
 
@@ -86,7 +86,7 @@ S — Scope: Execute all work per the Contract Documents. W — Workmanship: Qua
 
 </Tip>
 
-<ExamTip title="Contractor Obligations on the Bar/ALE">
+<ExamTip title="Contractor Obligations on the Bar/LEA">
 
 This topic appears most often in MCQs testing: (1) the distinction between the 1-year contractual guarantee under Doc 301 and the 10/15-year statutory liability under Art. 1723 of the Civil Code; (2) whether a contractor can delegate responsibility to subcontractors (no); (3) liquidated damages vs. penalties; and (4) the three required bonds (Bid, Performance, Payment). Essay questions often present a structural defect discovered after one year — examinees must analyze both contractual and statutory liability.
 

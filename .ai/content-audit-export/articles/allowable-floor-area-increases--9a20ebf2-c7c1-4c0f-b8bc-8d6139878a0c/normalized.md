@@ -519,15 +519,13 @@ In the Philippine floor area framework under PD 1096 and the 2004 Revised IRR, w
 
 ---
 
-
-
 ---
 
 ## Cross‑References
 
 **Pd 1096 Rule Vii Area Metrics**, **Penthouses And Roof Structures**, **Fire Zones And Existing Buildings**, **Minimum Parking Requirements**
 
-\[SLATECAMP_UI_BLOCK:ui_0001 component="Note" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: Corrected note: The answer using the exact formula is 60,750 sq ft. Choose the closest option in the actual exam and always verify arithmetic. The methodology — If = 0.50; Is = 3.00 (single-story); ad

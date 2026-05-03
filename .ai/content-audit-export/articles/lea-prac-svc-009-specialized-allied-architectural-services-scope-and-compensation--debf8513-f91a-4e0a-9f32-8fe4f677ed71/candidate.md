@@ -6,7 +6,7 @@ After reading this article, you should be able to:
 - Define Specialized Allied Architectural Services under SPP Doc 203 and distinguish them from regular design services.
 - Identify the seventeen service categories under SPP 203, including acoustic design, lighting design, interior design, and heritage conservation.
 - Explain the compensation framework for specialized services: separate agreements, professional fee plus overhead, or percentage of construction cost.
-- Apply SPP 203 classifications to ALE scenarios involving non-traditional architectural engagements.
+- Apply SPP 203 classifications to LEA scenarios involving non-traditional architectural engagements.
 
 Specialized Allied Architectural Services encompass a broad range of professional offerings beyond traditional architectural design. These services address specific technical, aesthetic, and functional requirements that projects demand. SPP Doc 203 establishes the framework for scope, compensation, and professional responsibilities across seventeen distinct service categories. Understanding these services enables architects to expand their practice and provide comprehensive solutions to clients.
 

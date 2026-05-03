@@ -7,7 +7,7 @@ After reading this article, you should understand the key electrical and mechani
 
 ---
 
-### Why This Matters for the ALE
+### Why This Matters for the LEA
 
 Electrical and mechanical regulations appear in Area B (Utilities) covering approximately 5-10% of the exam. Questions typically test specific dimensional clearances, not general principles. The numbers matter.
 

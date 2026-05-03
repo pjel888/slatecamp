@@ -1,6 +1,6 @@
 ## Prohibited Acts, Criminal Penalties, and Enforcement
 ## Learning Goal
-After reading this article, you should understand the key concepts tested in the ALE for this topic, including relevant code provisions, dimensional standards, and common exam applications.
+After reading this article, you should understand the key concepts tested in the LEA for this topic, including relevant code provisions, dimensional standards, and common exam applications.
 
 ### The Statutory Foundation: Sections 29 and 30 of the IRR
 

@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-critical-distinction
 
-Generated: 2026-05-03T10:55:40.052Z
+Generated: 2026-05-03T11:49:17.751Z
 Article ID: ecf888fd-c314-4d20-87e6-4841f84b71a0
 Changed: true
 Safe to push locally: false

@@ -4,7 +4,7 @@
   "normalized_created_at": "2026-05-01T13:33:43.716Z",
   "parser_version": "ui-block-parser-v1",
   "original_content_hash": "sha256:5e6598d1f5c5319075836a198ae1ff1254101b5a7c70ccc3cf9ded4c63e1a542",
-  "normalized_content_hash": "99cda16217cfb7682dc571754e9a65ede1e988cc8079e36149bb77944f765b3f",
+  "normalized_content_hash": "338b7d6f357b4c96838d983270934c76fbb5ac184159b46c33b7ef97f35a8abf",
   "ui_block_count": 17,
   "total_blocks": 17,
   "blocks": [
@@ -140,15 +140,15 @@
       "block_id": "ui_0006",
       "block_type": "mdx_component",
       "component_name": "Example",
-      "raw": "<Example>A building drain of 100mm diameter running 15 meters horizontally requires a minimum slope of 1:50. The total vertical drop needed is 15 meters \u00f7 50 = 0.3 meters or 300mm. If the outlet is at elevation 100m, the inlet must be at least 100.3m.</Example>",
+      "raw": "<Example>A building drain of 100mm diameter running 15 meters horizontally requires a minimum slope of 1:50. The total vertical drop needed is 15 meters ÷ 50 = 0.3 meters or 300mm. If the outlet is at elevation 100m, the inlet must be at least 100.3m.</Example>",
       "raw_hash": "sha256:b6ce2225dac137d89ade86e3a9209dcf9a7ca3033e1a6227fa51427a3fbbddef",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0006 component=\"Example\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: A building drain of 100mm diameter running 15 meters horizontally requires a minimum slope of 1:50. The total vertical drop needed is 15 meters \u00f7 50 = 0.3 meters or 300mm. If the outlet is at elevation 100m, the inlet must be at least 100.3m.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0006 component=\"Example\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: A building drain of 100mm diameter running 15 meters horizontally requires a minimum slope of 1:50. The total vertical drop needed is 15 meters ÷ 50 = 0.3 meters or 300mm. If the outlet is at elevation 100m, the inlet must be at least 100.3m.\n[/SLATECAMP_UI_BLOCK]",
       "placeholder_hash": "sha256:35cb6388c7e60798747bba8d86fbc7b78cc1a037844485f006344d0b90681fa4",
       "props": {},
       "props_json": {},
       "props_text": null,
-      "children_raw": "A building drain of 100mm diameter running 15 meters horizontally requires a minimum slope of 1:50. The total vertical drop needed is 15 meters \u00f7 50 = 0.3 meters or 300mm. If the outlet is at elevation 100m, the inlet must be at least 100.3m.",
-      "children_text": "A building drain of 100mm diameter running 15 meters horizontally requires a minimum slope of 1:50. The total vertical drop needed is 15 meters \u00f7 50 = 0.3 meters or 300mm. If the outlet is at elevation 100m, the inlet must be at least 100.3m.",
+      "children_raw": "A building drain of 100mm diameter running 15 meters horizontally requires a minimum slope of 1:50. The total vertical drop needed is 15 meters ÷ 50 = 0.3 meters or 300mm. If the outlet is at elevation 100m, the inlet must be at least 100.3m.",
+      "children_text": "A building drain of 100mm diameter running 15 meters horizontally requires a minimum slope of 1:50. The total vertical drop needed is 15 meters ÷ 50 = 0.3 meters or 300mm. If the outlet is at elevation 100m, the inlet must be at least 100.3m.",
       "start_offset": 3147,
       "end_offset": 3408,
       "line_start": 33,
@@ -184,19 +184,19 @@
       "block_id": "ui_0008",
       "block_type": "mdx_component",
       "component_name": "WikiExamTable",
-      "raw": "<WikiExamTable headers={[\"Requirement\", \"Minimum\", \"Maximum\", \"Source\"]} rows={[[\"Water seal depth\", \"50mm (2\\\")\", \"100mm (4\\\")\", \"RNPC Section 308\"], [\"Trap size\", \"Same diameter as fixture branch\", \"\u2014\", \"RNPC Section 308.1\"], [\"Distance from trap to vent\", \"Depends on pipe diameter\", \"See RNPC venting tables\", \"RNPC venting provisions\"]]]} />",
+      "raw": "<WikiExamTable headers={[\"Requirement\", \"Minimum\", \"Maximum\", \"Source\"]} rows={[[\"Water seal depth\", \"50mm (2\\\")\", \"100mm (4\\\")\", \"RNPC Section 308\"], [\"Trap size\", \"Same diameter as fixture branch\", \"—\", \"RNPC Section 308.1\"], [\"Distance from trap to vent\", \"Depends on pipe diameter\", \"See RNPC venting tables\", \"RNPC venting provisions\"]]]} />",
       "raw_hash": "sha256:3112060bc1203317fccba620d9e35089732e1eb018f38c968ecfa7628f3bdda8",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0008 component=\"WikiExamTable\" status=\"preserved\"]\nExtracted summary:\n- Props: headers=\"{[\\\"Requirement\\\", \\\"Minimum\\\", \\\"Maximum\\\", \\\"Source\\\"]}\", rows=\"{[[\\\"Water seal depth\\\", \\\"50mm (2\\\\\\\")\\\", \\\"100mm (4\\\\\\\")\\\", \\\"RNPC Section 308\\\"], [\\\"Trap size\\\", \\\"Same diameter as fixture branch\\\", \\\"\u2014\\\", \\\"RNPC Section 308.1\\\"], [\\\"Distance from trap to vent\\\", \\\"Depends on pipe diameter\\\", \\\"See RNPC venting tables\\\", \\\"RNPC venting provisions\\\"]]]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0008 component=\"WikiExamTable\" status=\"preserved\"]\nExtracted summary:\n- Props: headers=\"{[\\\"Requirement\\\", \\\"Minimum\\\", \\\"Maximum\\\", \\\"Source\\\"]}\", rows=\"{[[\\\"Water seal depth\\\", \\\"50mm (2\\\\\\\")\\\", \\\"100mm (4\\\\\\\")\\\", \\\"RNPC Section 308\\\"], [\\\"Trap size\\\", \\\"Same diameter as fixture branch\\\", \\\"—\\\", \\\"RNPC Section 308.1\\\"], [\\\"Distance from trap to vent\\\", \\\"Depends on pipe diameter\\\", \\\"See RNPC venting tables\\\", \\\"RNPC venting provisions\\\"]]]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
       "placeholder_hash": "sha256:04df2750eadc9b25e2444c413c102d63cd55b09d4da90b1505951dfd7464c585",
       "props": {
         "headers": "{[\"Requirement\", \"Minimum\", \"Maximum\", \"Source\"]}",
-        "rows": "{[[\"Water seal depth\", \"50mm (2\\\")\", \"100mm (4\\\")\", \"RNPC Section 308\"], [\"Trap size\", \"Same diameter as fixture branch\", \"\u2014\", \"RNPC Section 308.1\"], [\"Distance from trap to vent\", \"Depends on pipe diameter\", \"See RNPC venting tables\", \"RNPC venting provisions\"]]]}"
+        "rows": "{[[\"Water seal depth\", \"50mm (2\\\")\", \"100mm (4\\\")\", \"RNPC Section 308\"], [\"Trap size\", \"Same diameter as fixture branch\", \"—\", \"RNPC Section 308.1\"], [\"Distance from trap to vent\", \"Depends on pipe diameter\", \"See RNPC venting tables\", \"RNPC venting provisions\"]]]}"
       },
       "props_json": {
         "headers": "{[\"Requirement\", \"Minimum\", \"Maximum\", \"Source\"]}",
-        "rows": "{[[\"Water seal depth\", \"50mm (2\\\")\", \"100mm (4\\\")\", \"RNPC Section 308\"], [\"Trap size\", \"Same diameter as fixture branch\", \"\u2014\", \"RNPC Section 308.1\"], [\"Distance from trap to vent\", \"Depends on pipe diameter\", \"See RNPC venting tables\", \"RNPC venting provisions\"]]]}"
+        "rows": "{[[\"Water seal depth\", \"50mm (2\\\")\", \"100mm (4\\\")\", \"RNPC Section 308\"], [\"Trap size\", \"Same diameter as fixture branch\", \"—\", \"RNPC Section 308.1\"], [\"Distance from trap to vent\", \"Depends on pipe diameter\", \"See RNPC venting tables\", \"RNPC venting provisions\"]]]}"
       },
-      "props_text": "headers={[\"Requirement\", \"Minimum\", \"Maximum\", \"Source\"]} rows={[[\"Water seal depth\", \"50mm (2\\\")\", \"100mm (4\\\")\", \"RNPC Section 308\"], [\"Trap size\", \"Same diameter as fixture branch\", \"\u2014\", \"RNPC Section 308.1\"], [\"Distance from trap to vent\", \"Depends on pipe diameter\", \"See RNPC venting tables\", \"RNPC venting provisions\"]]]}",
+      "props_text": "headers={[\"Requirement\", \"Minimum\", \"Maximum\", \"Source\"]} rows={[[\"Water seal depth\", \"50mm (2\\\")\", \"100mm (4\\\")\", \"RNPC Section 308\"], [\"Trap size\", \"Same diameter as fixture branch\", \"—\", \"RNPC Section 308.1\"], [\"Distance from trap to vent\", \"Depends on pipe diameter\", \"See RNPC venting tables\", \"RNPC venting provisions\"]]]}",
       "children_raw": null,
       "children_text": null,
       "start_offset": 3935,
@@ -234,19 +234,19 @@
       "block_id": "ui_0010",
       "block_type": "mdx_component",
       "component_name": "WikiExamTable",
-      "raw": "<WikiExamTable headers={[\"Location\", \"Requirement\"]} rows={[[\"At building drain inlet\", \"Required at point where building drain meets building sewer\"], [\"Change of direction\", \"Required where pipe changes direction greater than 45 degrees\"], [\"Horizontal to vertical transition\", \"Required at all transitions between horizontal building drain and vertical soil stack\"], [\"Straight runs\", \"Maximum 15m spacing for 100mm pipe and larger pipes per RNPC \u00a7310.2\"], [\"Grade (ground level)\", \"Accessible cleanout required outside building at building sewer origin\"]]]} />",
+      "raw": "<WikiExamTable headers={[\"Location\", \"Requirement\"]} rows={[[\"At building drain inlet\", \"Required at point where building drain meets building sewer\"], [\"Change of direction\", \"Required where pipe changes direction greater than 45 degrees\"], [\"Horizontal to vertical transition\", \"Required at all transitions between horizontal building drain and vertical soil stack\"], [\"Straight runs\", \"Maximum 15m spacing for 100mm pipe and larger pipes per RNPC §310.2\"], [\"Grade (ground level)\", \"Accessible cleanout required outside building at building sewer origin\"]]]} />",
       "raw_hash": "sha256:0808a9e2840e07027b68ef0829642f07f0b9718de68da36d34ea91c38e8dd175",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0010 component=\"WikiExamTable\" status=\"preserved\"]\nExtracted summary:\n- Props: headers=\"{[\\\"Location\\\", \\\"Requirement\\\"]}\", rows=\"{[[\\\"At building drain inlet\\\", \\\"Required at point where building drain meets building sewer\\\"], [\\\"Change of direction\\\", \\\"Required where pipe changes direction greater than 45 degrees\\\"], [\\\"Horizontal to vertical transition\\\", \\\"Required at all transitions between horizontal building drain and vertical soil stack\\\"], [\\\"Straight runs\\\", \\\"Maximum 15m spacing for 100mm pipe and larger pipes per RNPC \u00a7310.2\\\"], [\\\"Grade (ground level)\\\", \\\"Accessible cleanout required outside building at building sewer origin\\\"]]]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0010 component=\"WikiExamTable\" status=\"preserved\"]\nExtracted summary:\n- Props: headers=\"{[\\\"Location\\\", \\\"Requirement\\\"]}\", rows=\"{[[\\\"At building drain inlet\\\", \\\"Required at point where building drain meets building sewer\\\"], [\\\"Change of direction\\\", \\\"Required where pipe changes direction greater than 45 degrees\\\"], [\\\"Horizontal to vertical transition\\\", \\\"Required at all transitions between horizontal building drain and vertical soil stack\\\"], [\\\"Straight runs\\\", \\\"Maximum 15m spacing for 100mm pipe and larger pipes per RNPC §310.2\\\"], [\\\"Grade (ground level)\\\", \\\"Accessible cleanout required outside building at building sewer origin\\\"]]]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
       "placeholder_hash": "sha256:3665acbb06693036510f7ae123b482983b2df712c881c2328158ad442fa28e85",
       "props": {
         "headers": "{[\"Location\", \"Requirement\"]}",
-        "rows": "{[[\"At building drain inlet\", \"Required at point where building drain meets building sewer\"], [\"Change of direction\", \"Required where pipe changes direction greater than 45 degrees\"], [\"Horizontal to vertical transition\", \"Required at all transitions between horizontal building drain and vertical soil stack\"], [\"Straight runs\", \"Maximum 15m spacing for 100mm pipe and larger pipes per RNPC \u00a7310.2\"], [\"Grade (ground level)\", \"Accessible cleanout required outside building at building sewer origin\"]]]}"
+        "rows": "{[[\"At building drain inlet\", \"Required at point where building drain meets building sewer\"], [\"Change of direction\", \"Required where pipe changes direction greater than 45 degrees\"], [\"Horizontal to vertical transition\", \"Required at all transitions between horizontal building drain and vertical soil stack\"], [\"Straight runs\", \"Maximum 15m spacing for 100mm pipe and larger pipes per RNPC §310.2\"], [\"Grade (ground level)\", \"Accessible cleanout required outside building at building sewer origin\"]]]}"
       },
       "props_json": {
         "headers": "{[\"Location\", \"Requirement\"]}",
-        "rows": "{[[\"At building drain inlet\", \"Required at point where building drain meets building sewer\"], [\"Change of direction\", \"Required where pipe changes direction greater than 45 degrees\"], [\"Horizontal to vertical transition\", \"Required at all transitions between horizontal building drain and vertical soil stack\"], [\"Straight runs\", \"Maximum 15m spacing for 100mm pipe and larger pipes per RNPC \u00a7310.2\"], [\"Grade (ground level)\", \"Accessible cleanout required outside building at building sewer origin\"]]]}"
+        "rows": "{[[\"At building drain inlet\", \"Required at point where building drain meets building sewer\"], [\"Change of direction\", \"Required where pipe changes direction greater than 45 degrees\"], [\"Horizontal to vertical transition\", \"Required at all transitions between horizontal building drain and vertical soil stack\"], [\"Straight runs\", \"Maximum 15m spacing for 100mm pipe and larger pipes per RNPC §310.2\"], [\"Grade (ground level)\", \"Accessible cleanout required outside building at building sewer origin\"]]]}"
       },
-      "props_text": "headers={[\"Location\", \"Requirement\"]} rows={[[\"At building drain inlet\", \"Required at point where building drain meets building sewer\"], [\"Change of direction\", \"Required where pipe changes direction greater than 45 degrees\"], [\"Horizontal to vertical transition\", \"Required at all transitions between horizontal building drain and vertical soil stack\"], [\"Straight runs\", \"Maximum 15m spacing for 100mm pipe and larger pipes per RNPC \u00a7310.2\"], [\"Grade (ground level)\", \"Accessible cleanout required outside building at building sewer origin\"]]]}",
+      "props_text": "headers={[\"Location\", \"Requirement\"]} rows={[[\"At building drain inlet\", \"Required at point where building drain meets building sewer\"], [\"Change of direction\", \"Required where pipe changes direction greater than 45 degrees\"], [\"Horizontal to vertical transition\", \"Required at all transitions between horizontal building drain and vertical soil stack\"], [\"Straight runs\", \"Maximum 15m spacing for 100mm pipe and larger pipes per RNPC §310.2\"], [\"Grade (ground level)\", \"Accessible cleanout required outside building at building sewer origin\"]]]}",
       "children_raw": null,
       "children_text": null,
       "start_offset": 5101,

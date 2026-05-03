@@ -3,7 +3,7 @@
 ## Learning Goal
 Develop space programs from client requirements, calculate net-to-gross area ratios, organize adjacencies and circulation patterns, and apply anthropometric clearances to room layouts.
 
-Development control calculations determine how much gross floor area (GFA) you can build on a given lot. These calculations bind your design decisions from the earliest stages and are routinely tested in the Architecture Licensure Examination (LEA) through worked problems.
+Development control calculations determine how much gross floor area (GFA) you can build on a given lot. These calculations bind your design decisions from the earliest stages and are routinely tested in the Licensure Examination for Architects (LEA) through worked problems.
 
 
 ## Core Concept

@@ -287,7 +287,7 @@ SPP 205 is the **final link in the SPP 201–205 service chain**, which together
 
 ## Exam Tip
 
-ALE Swipe: Four post-construction services: (1) Building commissioning and start-up, (2) Record (as-built) drawings, (3) Post-occupancy evaluation (POE), (4) Operations and maintenance manuals. Distinguish: as-built drawings ARE a post-construction service (SPP 205), NOT part of SPP 202. POE is frequently tested as the systematic evaluation of building performance after occupancy.
+LEA Swipe: Four post-construction services: (1) Building commissioning and start-up, (2) Record (as-built) drawings, (3) Post-occupancy evaluation (POE), (4) Operations and maintenance manuals. Distinguish: as-built drawings ARE a post-construction service (SPP 205), NOT part of SPP 202. POE is frequently tested as the systematic evaluation of building performance after occupancy.
 
 ## Cross‑References
 

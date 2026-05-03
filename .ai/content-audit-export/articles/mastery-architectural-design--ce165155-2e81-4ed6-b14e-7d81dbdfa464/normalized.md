@@ -2,7 +2,7 @@
 
 ## Learning Goal
 
-Achieve synthesis-level understanding of Architectural Design as the integration subject of the ALE. Connect all 13 subtopics across design process, anthropometrics, building typology, codes, and graphic communication. Trace how Architectural Design draws from Structural Conceptualization, MEPF, Laws, Theory, Materials, and Planning to produce complete, code-compliant building designs.
+Achieve synthesis-level understanding of Architectural Design as the integration subject of the LEA. Connect all 13 subtopics across design process, anthropometrics, building typology, codes, and graphic communication. Trace how Architectural Design draws from Structural Conceptualization, MEPF, Laws, Theory, Materials, and Planning to produce complete, code-compliant building designs.
 
 ## The Internal Logic: How Subtopics Connect
 

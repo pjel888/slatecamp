@@ -1,43 +1,40 @@
 {
   "article_id": "875a991f-b8ca-4655-a252-8b5c9f1fc54d",
   "slug": "site-exterior-circulation",
-  "generated_at": "2026-05-03T07:49:29.086Z",
+  "generated_at": "2026-05-03T11:50:05.076Z",
   "old_hash": "sha256:5de73065f826242db9f73955de86d521e9e17eec93d018727fdc63c753f25505",
-  "new_hash": "sha256:cedb5fe9b3d85ac9d68d72829c4d591c888bb30aa69fa466d1493f327319020c",
+  "new_hash": "sha256:8fb21ab60017e226c0ec7adfab659fb33df8309ff0bccf11c0d98ebd3fcbea24",
   "original_hash": "sha256:5de73065f826242db9f73955de86d521e9e17eec93d018727fdc63c753f25505",
-  "normalized_hash": "sha256:bf44611a477132191b5ed160ddea52e18b2235e7e301c3ea2cd2c7e2e10d80e7",
-  "candidate_hash": "sha256:cedb5fe9b3d85ac9d68d72829c4d591c888bb30aa69fa466d1493f327319020c",
+  "normalized_hash": "sha256:b8528f93d7999062a57a13ee05d0b78ff997643e9f4b377be460ea6ea156637d",
+  "candidate_hash": "sha256:8fb21ab60017e226c0ec7adfab659fb33df8309ff0bccf11c0d98ebd3fcbea24",
   "changed": true,
-  "changed_line_count": 170,
-  "inserted_line_count": 18,
+  "changed_line_count": 180,
+  "inserted_line_count": 28,
   "deleted_line_count": 0,
-  "ui_blocks_original_count": 6,
+  "ui_blocks_original_count": 4,
   "ui_blocks_candidate_count": 4,
-  "ui_blocks_changed_count": 2,
-  "ui_blocks_count": 6,
-  "unresolved_placeholders_count": 0,
+  "ui_blocks_changed_count": 0,
+  "ui_blocks_count": 4,
+  "unresolved_placeholders_count": 1,
   "preserved_blocks_count": 4,
   "changed_text_summary": {
-    "changed": 170,
-    "inserted": 18,
+    "changed": 180,
+    "inserted": 28,
     "deleted": 0,
     "original_line_count": 152,
-    "candidate_line_count": 170
+    "candidate_line_count": 180
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0002",
-      "ui_0005"
-    ],
-    "changed_count": 2
+    "missing_block_ids": [],
+    "changed_count": 0
   },
   "locally_safe_to_push": false,
   "safe_to_push": false,
   "blockers": [
-    "Candidate is missing 2 preserved UI block(s)."
+    "Candidate contains unresolved UI block placeholders."
   ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate is missing 2 preserved UI block(s)."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders."
 }

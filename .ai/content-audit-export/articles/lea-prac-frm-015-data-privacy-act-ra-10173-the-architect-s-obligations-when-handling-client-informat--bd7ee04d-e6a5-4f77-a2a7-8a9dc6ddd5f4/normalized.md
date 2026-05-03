@@ -71,7 +71,7 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: ⚠️ Penalties: Unauthorized processing of personal info = 1-3 years imprisonment + fine up to PHP 2M. Unauthorized processing of SENSITIVE personal info = 3-6 years + fine up to PHP 5M. Architects must take data privacy obligations seriously. — expect this as a trap answer on the ALE.
+- Text: ⚠️ Penalties: Unauthorized processing of personal info = 1-3 years imprisonment + fine up to PHP 2M. Unauthorized processing of SENSITIVE personal info = 3-6 years + fine up to PHP 5M. Architects must take data privacy obligations seriously. — expect this as a trap answer on the LEA.
 [/SLATECAMP_UI_BLOCK]
 
 

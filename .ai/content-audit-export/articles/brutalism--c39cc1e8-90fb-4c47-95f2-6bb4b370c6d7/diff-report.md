@@ -1,6 +1,6 @@
 # Content Diff Report: brutalism
 
-Generated: 2026-05-03T07:48:54.765Z
+Generated: 2026-05-03T11:49:51.736Z
 Article ID: c39cc1e8-90fb-4c47-95f2-6bb4b370c6d7
 Changed: true
 Safe to push locally: true
@@ -8,8 +8,8 @@ Safe to push locally: true
 ## Hashes
 
 - Original: `sha256:2099e1af1713f2b8aeb11c5a0bd411eeaca5bd8cba86cf4c9717cc8c556caa0e`
-- Normalized: `sha256:0ddc92527fae747eb77c909501746fc4d8e6978bf6ad52723dff9c8911a3f123`
-- Candidate: `sha256:573af4b189d08f02268d861dfdac16605587bf1e1e6760fa8435b850c52b31a3`
+- Normalized: `sha256:c49c6dbec613db28519a524e4cb7a4caef743e3872d13b15d79c3673add45e7a`
+- Candidate: `sha256:382c00675df15c254e1a38c014cd630f5df47b9861d8f23e7ac21edb47859a85`
 
 ## Line summary
 

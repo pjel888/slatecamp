@@ -54,7 +54,7 @@ While the standard SPP 202 cumulative percentages (5-20-40-90-95-100) apply to m
 [SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Pattern:** Given a project budget, determine the architect's fee. PCC = — this distinction appears on every ALE cycle.
+- Text: **LEA Pattern:** Given a project budget, determine the architect's fee. PCC = — this distinction appears on every LEA cycle.
 [/SLATECAMP_UI_BLOCK]
 ### Milestone-Based vs. Time-Based Billing
 

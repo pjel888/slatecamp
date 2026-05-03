@@ -428,7 +428,7 @@ Extracted summary:
 
 ## Exam Tip
 
-ALE Swipe: Accessible route requirements: max slope 1:20, min width 1.20 m, passing spaces every 30 m (1.50 m × 1.50 m minimum). Open space minimum = 30% of lot area (PD 1096). When these conflict, the accessible route width requirement governs — you cannot reduce path width to meet open space minimums.
+LEA Swipe: Accessible route requirements: max slope 1:20, min width 1.20 m, passing spaces every 30 m (1.50 m × 1.50 m minimum). Open space minimum = 30% of lot area (PD 1096). When these conflict, the accessible route width requirement governs — you cannot reduce path width to meet open space minimums.
 
 ## Cross‑References
 

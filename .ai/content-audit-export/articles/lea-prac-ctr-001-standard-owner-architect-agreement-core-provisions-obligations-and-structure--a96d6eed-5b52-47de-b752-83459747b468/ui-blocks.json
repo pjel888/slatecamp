@@ -4,14 +4,14 @@
   "normalized_created_at": "2026-05-01T13:33:44.182Z",
   "parser_version": "ui-block-parser-v1",
   "original_content_hash": "sha256:55fa337e5ff4abb15b0abd9a7a9fee9dd455b8e96acd88c7808a55126a2a34df",
-  "normalized_content_hash": "sha256:c00e682090585e434b53dfa260d06da9b2c3e99af802452cd748ba194ea2fa31",
+  "normalized_content_hash": "eb1e47b3454a6ef85e09fc75d84bf3b4e15cde152f1ff440741b78c7c5f0646a",
   "ui_block_count": 3,
   "total_blocks": 0,
   "blocks": [
     {
       "block_id": "ui_0001",
       "component_name": "LawCallout",
-      "raw": "<LawCallout code=\"uap\" section=\"SPP Doc. 202 - Standard Owner-Architect Agreement\">\nUnder SPP Document 202, the standard service phases are: SD (20%), DD (20%), CD (30%), Bidding (5%), and CA (25%). The agreement explicitly distinguishes Basic Services from Additional Services. Additional services \u2014 such as BIM, renderings, or specialized consulting \u2014 are separately defined and billed to prevent scope disputes and cost overruns.\n</LawCallout>",
+      "raw": "<LawCallout code=\"uap\" section=\"SPP Doc. 202 - Standard Owner-Architect Agreement\">\nUnder SPP Document 202, the standard service phases are: SD (20%), DD (20%), CD (30%), Bidding (5%), and CA (25%). The agreement explicitly distinguishes Basic Services from Additional Services. Additional services — such as BIM, renderings, or specialized consulting — are separately defined and billed to prevent scope disputes and cost overruns.\n</LawCallout>",
       "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"LawCallout\" status=\"preserved\"]",
       "props_text": "code=uap, section=SPP Doc. 202 - Standard Owner-Architect Agreement, title=Standard Service Phases",
       "props_json": {
@@ -19,32 +19,32 @@
         "section": "SPP Doc. 202 - Standard Owner-Architect Agreement",
         "title": "Standard Service Phases"
       },
-      "children_raw": "Under SPP Document 202, the standard service phases are: SD (20%), DD (20%), CD (30%), Bidding (5%), and CA (25%). The agreement explicitly distinguishes Basic Services from Additional Services. Additional services \u2014 such as BIM, renderings, or specialized consulting \u2014 are separately defined and billed to prevent scope disputes and cost overruns.",
-      "children_text": "Under SPP Document 202, the standard service phases are: SD (20%), DD (20%), CD (30%), Bidding (5%), and CA (25%). The agreement explicitly distinguishes Basic Services from Additional Services. Additional services \u2014 such as BIM, renderings, or specialized consulting \u2014 are separately defined and billed to prevent scope disputes and cost overruns.",
+      "children_raw": "Under SPP Document 202, the standard service phases are: SD (20%), DD (20%), CD (30%), Bidding (5%), and CA (25%). The agreement explicitly distinguishes Basic Services from Additional Services. Additional services — such as BIM, renderings, or specialized consulting — are separately defined and billed to prevent scope disputes and cost overruns.",
+      "children_text": "Under SPP Document 202, the standard service phases are: SD (20%), DD (20%), CD (30%), Bidding (5%), and CA (25%). The agreement explicitly distinguishes Basic Services from Additional Services. Additional services — such as BIM, renderings, or specialized consulting — are separately defined and billed to prevent scope disputes and cost overruns.",
       "parse_status": "parsed",
       "raw_hash": "sha256:1c4d779920148e7deca289ac49e543f3292769a70456d9bd67379a9afe8583c6"
     },
     {
       "block_id": "ui_0002",
       "component_name": "ExamTip",
-      "raw": "<ExamTip>\n  **LEA Watch:** The Owner-Architect agreement operates independently from the construction contract. Changes to one do not automatically affect the other. The architect's role shifts from \"Owner's agent\" during design to \"impartial contract administrator\" during construction \u2014 this dual role is a frequent LEA test point.\n</ExamTip>",
+      "raw": "<ExamTip>\n  **LEA Watch:** The Owner-Architect agreement operates independently from the construction contract. Changes to one do not automatically affect the other. The architect's role shifts from \"Owner's agent\" during design to \"impartial contract administrator\" during construction — this dual role is a frequent LEA test point.\n</ExamTip>",
       "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"ExamTip\" status=\"preserved\"]",
       "props_text": "(none)",
       "props_json": {},
-      "children_raw": "**LEA Watch:** The Owner-Architect agreement operates independently from the construction contract. Changes to one do not automatically affect the other. The architect's role shifts from \"Owner's agent\" during design to \"impartial contract administrator\" during construction \u2014 this dual role is a frequent LEA test point.",
-      "children_text": "**LEA Watch:** The Owner-Architect agreement operates independently from the construction contract. Changes to one do not automatically affect the other. The architect's role shifts from \"Owner's agent\" during design to \"impartial contract administrator\" during construction \u2014 this dual role is a frequent LEA test point.",
+      "children_raw": "**LEA Watch:** The Owner-Architect agreement operates independently from the construction contract. Changes to one do not automatically affect the other. The architect's role shifts from \"Owner's agent\" during design to \"impartial contract administrator\" during construction — this dual role is a frequent LEA test point.",
+      "children_text": "**LEA Watch:** The Owner-Architect agreement operates independently from the construction contract. Changes to one do not automatically affect the other. The architect's role shifts from \"Owner's agent\" during design to \"impartial contract administrator\" during construction — this dual role is a frequent LEA test point.",
       "parse_status": "parsed",
       "raw_hash": "sha256:e1cfd54291c27027ee1bcbba968c208b319ba9cf11fc9b24338954f1879409ca"
     },
     {
       "block_id": "ui_0003",
       "component_name": "ProcessFlow",
-      "raw": "<ProcessFlow>\n  **Owner-Architect Agreement Lifecycle:**\n  Step 1: **Engagement** \u2014 Scope, fee, and phase structure documented in signed agreement\n  Step 2: **Schematic Design** \u2014 20% fee earned upon approval\n  Step 3: **Design Development** \u2014 20% fee earned upon approval\n  Step 4: **Construction Documents** \u2014 30% fee earned upon submission for permit\n  Step 5: **Bidding** \u2014 5% fee earned\n  Step 6: **Construction Administration** \u2014 25% fee earned over project duration\n  Step 7: **Closeout** \u2014 Final payment, certificate of completion, document turnover\n</ProcessFlow>",
+      "raw": "<ProcessFlow>\n  **Owner-Architect Agreement Lifecycle:**\n  Step 1: **Engagement** — Scope, fee, and phase structure documented in signed agreement\n  Step 2: **Schematic Design** — 20% fee earned upon approval\n  Step 3: **Design Development** — 20% fee earned upon approval\n  Step 4: **Construction Documents** — 30% fee earned upon submission for permit\n  Step 5: **Bidding** — 5% fee earned\n  Step 6: **Construction Administration** — 25% fee earned over project duration\n  Step 7: **Closeout** — Final payment, certificate of completion, document turnover\n</ProcessFlow>",
       "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"ProcessFlow\" status=\"preserved\"]",
       "props_text": "(none)",
       "props_json": {},
-      "children_raw": "**Owner-Architect Agreement Lifecycle:**\n  Step 1: **Engagement** \u2014 Scope, fee, and phase structure documented in signed agreement\n  Step 2: **Schematic Design** \u2014 20% fee earned upon approval\n  Step 3: **Design Development** \u2014 20% fee earned upon approval\n  Step 4: **Construction Documents** \u2014 30% fee earned upon submission for permit\n  Step 5: **Bidding** \u2014 5% fee earned\n  Step 6: **Construction Administration** \u2014 25% fee earned over project duration\n  Step 7: **Closeout** \u2014 Final payment, certificate of completion, document turnover",
-      "children_text": "**Owner-Architect Agreement Lifecycle:**\n  Step 1: **Engagement** \u2014 Scope, fee, and phase structure documented in signed agreement\n  Step 2: **Schematic Design** \u2014 20% fee earned upon approval\n  Step 3: **Design Development** \u2014 20% fee earned upon approval\n  Step 4: **Construction Documents** \u2014 30% fee earned upon submission for permit\n  Step 5: **Bidding** \u2014 5% fee earned\n  Step 6: **Construction Administration** \u2014 25% fee earned over project duration\n  Step 7: **Closeout** \u2014 Final payment, certificate of completion, document turnover",
+      "children_raw": "**Owner-Architect Agreement Lifecycle:**\n  Step 1: **Engagement** — Scope, fee, and phase structure documented in signed agreement\n  Step 2: **Schematic Design** — 20% fee earned upon approval\n  Step 3: **Design Development** — 20% fee earned upon approval\n  Step 4: **Construction Documents** — 30% fee earned upon submission for permit\n  Step 5: **Bidding** — 5% fee earned\n  Step 6: **Construction Administration** — 25% fee earned over project duration\n  Step 7: **Closeout** — Final payment, certificate of completion, document turnover",
+      "children_text": "**Owner-Architect Agreement Lifecycle:**\n  Step 1: **Engagement** — Scope, fee, and phase structure documented in signed agreement\n  Step 2: **Schematic Design** — 20% fee earned upon approval\n  Step 3: **Design Development** — 20% fee earned upon approval\n  Step 4: **Construction Documents** — 30% fee earned upon submission for permit\n  Step 5: **Bidding** — 5% fee earned\n  Step 6: **Construction Administration** — 25% fee earned over project duration\n  Step 7: **Closeout** — Final payment, certificate of completion, document turnover",
       "parse_status": "parsed",
       "raw_hash": "sha256:a207bbadd03a2ac8b52d3a5f26181333b781c54605aae6ddecbd1d7d659122d4"
     }

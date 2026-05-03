@@ -4,7 +4,7 @@
   "normalized_created_at": "2026-05-01T13:33:43.960Z",
   "parser_version": "ui-block-parser-v1",
   "original_content_hash": "sha256:45cfa45c75154018dccb6ad917d078c9a1032b4c5573f0232c9ff62cdf0e9cc2",
-  "normalized_content_hash": "sha256:0e89fcd21b7365daaad2128d6897d8fc915c3d2f5ce007b684e2f6aaafaa8430",
+  "normalized_content_hash": "626d4acb1efe56a83fe640c16f97355605af6f00fa762d9f14c63641ef0f1779",
   "ui_block_count": 3,
   "total_blocks": 3,
   "blocks": [
@@ -12,22 +12,22 @@
       "block_id": "ui_0001",
       "block_type": "mdx_component",
       "component_name": "LawCallout",
-      "raw": "<LawCallout code=\"bp344\" section=\"Section 7 - Widths and Slopes\">\n\n\nPer BP 344 2024 IRR Appendix A, Table A.1.1: Accessible Ramp Width = 1200 mm minimum clear width. Slope 1:20 (5.0%) \u2014 no stated rise limit, landings every 15.0 m. Slope 1:15 (6.67%) \u2014 max run 10,500 mm, max rise 700 mm, landings every 10.0 m. Intermediate landings: minimum 1800 mm length. Upper and lower landings: \u22651800 mm in direction of travel.\n\n\n</LawCallout>",
+      "raw": "<LawCallout code=\"bp344\" section=\"Section 7 - Widths and Slopes\">\n\n\nPer BP 344 2024 IRR Appendix A, Table A.1.1: Accessible Ramp Width = 1200 mm minimum clear width. Slope 1:20 (5.0%) — no stated rise limit, landings every 15.0 m. Slope 1:15 (6.67%) — max run 10,500 mm, max rise 700 mm, landings every 10.0 m. Intermediate landings: minimum 1800 mm length. Upper and lower landings: ≥1800 mm in direction of travel.\n\n\n</LawCallout>",
       "raw_hash": "sha256:5c844cf69a574d7ecca2f9ff32e1a9db3a5e0aa1f0105a427f6b46d01a7394c2",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"LawCallout\" status=\"new\"]\nExtracted summary:\n- Props: code=\"bp344\" title=\"BP 344 2024 IRR \u2014 Widths & Slopes\"\n- Text: Per BP 344 2024 IRR Appendix A, Table A.1.1: Accessible Ramp Width = 1200 mm minimum clear width. Slope 1:20 (5.0%) \u2014 no stated rise limit, landings every 15.0 m. Slope 1:15 (6.67%) \u2014 max run 10,500 m\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"LawCallout\" status=\"new\"]\nExtracted summary:\n- Props: code=\"bp344\" title=\"BP 344 2024 IRR — Widths & Slopes\"\n- Text: Per BP 344 2024 IRR Appendix A, Table A.1.1: Accessible Ramp Width = 1200 mm minimum clear width. Slope 1:20 (5.0%) — no stated rise limit, landings every 15.0 m. Slope 1:15 (6.67%) — max run 10,500 m\n[/SLATECAMP_UI_BLOCK]",
       "placeholder_hash": "sha256:0fcfd156215b3f537508e6778c69f5bb856a349533f72ce519de2872f04b2983",
       "props": {
         "code": "bp344",
-        "title": "BP 344 2024 IRR \u2014 Widths & Slopes"
+        "title": "BP 344 2024 IRR — Widths & Slopes"
       },
       "props_json": {
         "code": "bp344",
-        "title": "BP 344 2024 IRR \u2014 Widths & Slopes",
+        "title": "BP 344 2024 IRR — Widths & Slopes",
         "section": "Section 7 - Widths and Slopes"
       },
-      "props_text": "code=bp344, title=BP 344 2024 IRR \u2014 Widths & Slopes, section=Section 7 - Widths and Slopes",
-      "children_raw": "\n\nPer BP 344 2024 IRR Appendix A, Table A.1.1: Accessible Ramp Width = 1200 mm minimum clear width. Slope 1:20 (5.0%) \u2014 no stated rise limit, landings every 15.0 m. Slope 1:15 (6.67%) \u2014 max run 10,500 mm, max rise 700 mm, landings every 10.0 m. Intermediate landings: minimum 1800 mm length. Upper and lower landings: \u22651800 mm in direction of travel.\n\n",
-      "children_text": "Per BP 344 2024 IRR Appendix A, Table A.1.1: Accessible Ramp Width = 1200 mm minimum clear width. Slope 1:20 (5.0%) \u2014 no stated rise limit, landings every 15.0 m. Slope 1:15 (6.67%) \u2014 max run 10,500 mm, max rise 700 mm, landings every 10.0 m. Intermediate landings: minimum 1800 mm length. Upper and lower landings: \u22651800 mm in direction of travel.",
+      "props_text": "code=bp344, title=BP 344 2024 IRR — Widths & Slopes, section=Section 7 - Widths and Slopes",
+      "children_raw": "\n\nPer BP 344 2024 IRR Appendix A, Table A.1.1: Accessible Ramp Width = 1200 mm minimum clear width. Slope 1:20 (5.0%) — no stated rise limit, landings every 15.0 m. Slope 1:15 (6.67%) — max run 10,500 mm, max rise 700 mm, landings every 10.0 m. Intermediate landings: minimum 1800 mm length. Upper and lower landings: ≥1800 mm in direction of travel.\n\n",
+      "children_text": "Per BP 344 2024 IRR Appendix A, Table A.1.1: Accessible Ramp Width = 1200 mm minimum clear width. Slope 1:20 (5.0%) — no stated rise limit, landings every 15.0 m. Slope 1:15 (6.67%) — max run 10,500 mm, max rise 700 mm, landings every 10.0 m. Intermediate landings: minimum 1800 mm length. Upper and lower landings: ≥1800 mm in direction of travel.",
       "status": "new"
     },
     {
@@ -49,15 +49,15 @@
       "block_id": "ui_0003",
       "block_type": "mdx_component",
       "component_name": "ExamTip",
-      "raw": "<ExamTip >\n\nHandrails are required when the ramp rise exceeds 150 mm (about 6 inches). Edge protection (curbs, rails, or extended surfaces) is required on both sides of any ramp with a rise exceeding 150 mm. These are frequently tested together \u2014 a ramp exam question often bundles slope, run, landing, handrail, and edge protection requirements.\n\n</ExamTip>",
+      "raw": "<ExamTip >\n\nHandrails are required when the ramp rise exceeds 150 mm (about 6 inches). Edge protection (curbs, rails, or extended surfaces) is required on both sides of any ramp with a rise exceeding 150 mm. These are frequently tested together — a ramp exam question often bundles slope, run, landing, handrail, and edge protection requirements.\n\n</ExamTip>",
       "raw_hash": "sha256:2b08b6b22848d60686369e33a0a04c2b3e0871deadcfa9ea91d1c0bee83b39dd",
       "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"ExamTip\" status=\"new\"]\nExtracted summary:\n- Props: (none)\n- Text: Handrails are required when the ramp rise exceeds 150 mm (about 6 inches). Edge protection (curbs, rails, or extended surfaces) is required on both sides of any ramp with a rise exceeding 150 mm. Thes\n[/SLATECAMP_UI_BLOCK]",
       "placeholder_hash": "sha256:cbfa585bf35ef3d93b102d8baddc0bec75925b393a79d2c6642dd3153b295ecf",
       "props": {},
       "props_json": {},
       "props_text": null,
-      "children_raw": "\n\nHandrails are required when the ramp rise exceeds 150 mm (about 6 inches). Edge protection (curbs, rails, or extended surfaces) is required on both sides of any ramp with a rise exceeding 150 mm. These are frequently tested together \u2014 a ramp exam question often bundles slope, run, landing, handrail, and edge protection requirements.\n\n",
-      "children_text": "Handrails are required when the ramp rise exceeds 150 mm (about 6 inches). Edge protection (curbs, rails, or extended surfaces) is required on both sides of any ramp with a rise exceeding 150 mm. These are frequently tested together \u2014 a ramp exam question often bundles slope, run, landing, handrail, and edge protection requirements.",
+      "children_raw": "\n\nHandrails are required when the ramp rise exceeds 150 mm (about 6 inches). Edge protection (curbs, rails, or extended surfaces) is required on both sides of any ramp with a rise exceeding 150 mm. These are frequently tested together — a ramp exam question often bundles slope, run, landing, handrail, and edge protection requirements.\n\n",
+      "children_text": "Handrails are required when the ramp rise exceeds 150 mm (about 6 inches). Edge protection (curbs, rails, or extended surfaces) is required on both sides of any ramp with a rise exceeding 150 mm. These are frequently tested together — a ramp exam question often bundles slope, run, landing, handrail, and edge protection requirements.",
       "status": "new"
     }
   ],

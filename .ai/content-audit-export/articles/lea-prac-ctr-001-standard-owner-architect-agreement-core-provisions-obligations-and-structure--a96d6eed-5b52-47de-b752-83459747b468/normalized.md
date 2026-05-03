@@ -28,7 +28,7 @@ The architect serves as the Owner's agent during design and as an impartial cont
 [SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Watch:** The Owner-Architect agreement operates independently from the construction contract. Changes to one do not automatically affect the other. The architect's role shifts from "Owner's agen — this distinction appears on every ALE cycle.
+- Text: **LEA Watch:** The Owner-Architect agreement operates independently from the construction contract. Changes to one do not automatically affect the other. The architect's role shifts from "Owner's agen — this distinction appears on every LEA cycle.
 [/SLATECAMP_UI_BLOCK]
 
 ### Compensation and Payment Terms

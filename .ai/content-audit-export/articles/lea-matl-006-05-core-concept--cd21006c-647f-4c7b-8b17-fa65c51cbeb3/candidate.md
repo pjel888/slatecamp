@@ -43,21 +43,18 @@ Philippine construction employs ASTM C920 silicone sealants for high-movement bu
 
 ## Common Mistakes
 
-<WikiMistakeCard mistake="Designing sealant joint depth as depth = width × 2 (inverse of correct 2:1 ratio), resulting in excessively deep, stress-concentrated sealant." correction="Correct ratio: width ÷ 2 = depth. A 10 mm wide joint requires 5 mm depth, not 20 mm. Deep sealant (>12.7 mm) fails from lack of tensile strength at center." />
+ed"]
+Extracted summary:
+- Props: mistake="Omitting backer rod behind sealant, allowing three-sided bonding (adhesion on top, sides, bottom), which prevents proper flex and causes adhesive failure.", correction="Backer rod is mandatory; prevents 3-sided bonding. Sealant bonds only to top and sides. Rod diameter 1.25-1.5× joint width; typical 15-20 mm rod for 10-15 mm joints."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeCard mistake="Omitting backer rod behind sealant, allowing three-sided bonding (adhesion on top, sides, bottom), which prevents proper flex and causes adhesive failure." correction="Backer rod is mandatory; prevents 3-sided bonding. Sealant bonds only to top and sides. Rod diameter 1.25-1.5× joint width; typical 15-20 mm rod for 10-15 mm joints." />
-
-<WikiMistakeList mistakes={["Applying silicone sealant over wet or high-humidity surfaces, resulting in cure inhibition and permanent tackiness", "Selecting acrylic caulk for exterior joints subject to movement; acrylic cannot accommodate >10% strain without cracking", "Specifying Class 25 sealant for joints with ±0.5 mm movement (requires Class 100/50 or Class 50)", "Applying sealant outside 4-38°C substrate temperature range, preventing proper polymerization and adhesion"]} />
-
-## Related Articles
-
-See also within Roofing, Waterproofing, and Insulation: **lea-matl-006-01-core-concept**, **lea-matl-006-02-core-concept**, **lea-matl-006-03-core-concept**, **lea-matl-006-04-core-concept**.
+tion: **lea-matl-006-01-core-concept**, **lea-matl-006-02-core-concept**, **lea-matl-006-03-core-concept**, **lea-matl-006-04-core-concept**.
 
 > **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
-
 
 [SLATECAMP_UI_BLOCK:ui_e001 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Exam Tip — Classify sealants (silicone, polyurethane, polysulfide, acry:** This topic is heavily tested in Area B. Focus on mastering material classifications, key property values (compressive strength, R-value, unit weight), and estimating formulas. Create comparison tables to distinguish similar materials (e.g., cement Types I–V, glass types, insulation types). Practice computational problems for concrete volume, board foot, CHB count, and paint coverage — these are reliable exam items.
+- Text: **LEA Exam Tip — Classify sealants (silicone, polyurethane, polysulfide, acry:** This topic is heavily tested in Area B. Focus on mastering material classifications, key property values (compressive strength, R-value, unit weight), and estimating formulas. Create comparison tables to distinguish similar materials (e.g., cement Types I–V, glass types, insulation types). Practice computational problems for concrete volume, board foot, CHB count, and paint coverage — these are reliable exam items.
 [/SLATECAMP_UI_BLOCK]

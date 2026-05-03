@@ -44,7 +44,7 @@ Termination occurs naturally upon project completion or may be triggered by part
 
 ---
 
-\[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: The Filipino Counterpart Requirement is a frequently tested concept. Foreign architects CANNOT practice independently in the Philippines — they must always work in association with a local Philippine 

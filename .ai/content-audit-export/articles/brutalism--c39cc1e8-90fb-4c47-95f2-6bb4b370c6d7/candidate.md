@@ -51,7 +51,7 @@ You are visiting the Cultural Center of the Philippines on Roxas Boulevard and n
 
 <ExamTip>
 
-**LEA Exam Pattern — Etymology Trap:** Brutalism comes from béton brut (raw concrete), NOT from the English word "brutal." This is the single most tested etymology question on the Philippine ALE for architectural movements. The answer is always "béton brut" (Option B on multiple-choice). Le Corbusier's Unité d'Habitation (1952) is the definitive origin building.
+**LEA Exam Pattern — Etymology Trap:** Brutalism comes from béton brut (raw concrete), NOT from the English word "brutal." This is the single most tested etymology question on the Philippine LEA for architectural movements. The answer is always "béton brut" (Option B on multiple-choice). Le Corbusier's Unité d'Habitation (1952) is the definitive origin building.
 
 </ExamTip>
 

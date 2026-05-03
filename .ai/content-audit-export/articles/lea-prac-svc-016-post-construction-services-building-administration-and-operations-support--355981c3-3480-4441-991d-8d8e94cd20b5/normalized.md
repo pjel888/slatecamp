@@ -1,6 +1,6 @@
 ## Post-Construction Services: Building Administration and Operations Support
 ## Learning Goal
-After reading this article, you should understand the key concepts tested in the ALE for this topic, including relevant code provisions, dimensional standards, and common exam applications.
+After reading this article, you should understand the key concepts tested in the LEA for this topic, including relevant code provisions, dimensional standards, and common exam applications.
 
 Post-Construction Services extend architectural involvement beyond project completion into building operations and facility management. SPP Doc 205 establishes the framework for comprehensive post-construction service offerings. These services recognize that buildings require sustained professional attention after occupancy to maintain performance, functionality, and value. Post-construction services require multi-disciplinary professional teams coordinating across specialized domains.
 

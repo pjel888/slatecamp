@@ -6,7 +6,7 @@ After reading this article, you should be able to:
 - Distinguish between pre-feasibility studies (secondary information, early decision-making) and detailed feasibility studies (comprehensive analysis).
 - Identify the contents of a feasibility study: market analysis, technical assessment, financial projections, and risk evaluation.
 - Explain the Architect's distinct role in feasibility studies and how it differs from other consultants' contributions.
-- Apply feasibility study concepts to ALE scenarios involving project viability assessment and pre-design decision-making.
+- Apply feasibility study concepts to LEA scenarios involving project viability assessment and pre-design decision-making.
 
 Feasibility studies represent a critical pre-design service that determines whether a proposed development is viable. SPP 201 distinguishes between pre-feasibility studies, which use secondary information for early decision-making, and detailed feasibility studies, which analyze the project comprehensively against present and future trends.
 
@@ -32,7 +32,7 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Pattern:** Expect scenario-based questions where you must determine whi — this distinction appears on every ALE cycle.
+- Text: **LEA Pattern:** Expect scenario-based questions where you must determine whi — this distinction appears on every LEA cycle.
 [/SLATECAMP_UI_BLOCK]
 A comprehensive feasibility study sets the proposed development against present and future trends to forecast performance. The architect examines financial viability, market demand, technical feasibility, legal and regulatory compliance, and environmental impact. The study typically includes site analysis, market research findings, financial projections, risk assessment, and recommendations for proceeding or modifying the project concept.
 
@@ -40,7 +40,7 @@ A comprehensive feasibility study sets the proposed development against present 
 [SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Pattern:** Expect scenario-based questions where you must determine whi — this distinction appears on every ALE cycle.
+- Text: **LEA Pattern:** Expect scenario-based questions where you must determine whi — this distinction appears on every LEA cycle.
 [/SLATECAMP_UI_BLOCK]
 ### The Architect's Distinct Professional Role
 

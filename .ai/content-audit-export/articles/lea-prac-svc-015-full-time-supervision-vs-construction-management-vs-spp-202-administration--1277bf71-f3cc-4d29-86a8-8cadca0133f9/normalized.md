@@ -1,6 +1,6 @@
 ## Full-Time Supervision vs. Construction Management vs. SPP 202 Administration
 ## Learning Goal
-After reading this article, you should understand the key concepts tested in the ALE for this topic, including relevant code provisions, dimensional standards, and common exam applications.
+After reading this article, you should understand the key concepts tested in the LEA for this topic, including relevant code provisions, dimensional standards, and common exam applications.
 
 Understanding the distinctions among supervision, construction management, and design administration clarifies professional roles and contractual obligations. SPP 204 addresses full-time supervision, SPP 205 covers construction management, and SPP 202 establishes regular design services standards. Each service category addresses specific project phases and professional responsibilities with distinct compensation methods and liability frameworks. Architects must clearly communicate these distinctions to clients to establish appropriate engagement arrangements.
 

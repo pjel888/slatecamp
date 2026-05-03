@@ -79,7 +79,7 @@ Extracted summary:
 - **Neglecting foundation-to-structure connection.** Lateral overturning forces govern pile design in tall buildings.
 - **Isolating structures from architectural design.** Every structural decision has a design consequence and vice versa.
 
-\[SLATECAMP_UI_BLOCK:ui_0004 component="Callout" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: In real practice, the architect's role in structural coordination is primarily one of integration: ensuring that mechanical chases don't penetrate shear walls, that equipment weights are communicated 

@@ -67,7 +67,7 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: ⚠️ CRITICAL: Section 22 RA 9266 makes it a DISCIPLINARY VIOLATION to sign/seal documents not prepared under your direct supervision. This is one of the most commonly tested violations. Penalties include suspension or revocation of the Certificate of Registration. — expect this as a trap answer on the ALE.
+- Text: ⚠️ CRITICAL: Section 22 RA 9266 makes it a DISCIPLINARY VIOLATION to sign/seal documents not prepared under your direct supervision. This is one of the most commonly tested violations. Penalties include suspension or revocation of the Certificate of Registration. — expect this as a trap answer on the LEA.
 [/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
@@ -94,3 +94,9 @@ Extracted summary:
 - [Signing and Sealing Rules](lea-prac-law-017)
 - [Code of Ethical Conduct](lea-prac-eth-001)
 - [Professional Practice Forms](lea-prac-frm-001)
+
+[SLATECAMP_UI_BLOCK:ui_0001 component="AuthorityContent" status="preserved"]
+Extracted summary:
+- Props: courseId="LEA-PRAC-LAW-017"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK:ui_0001 component="AuthorityContent" status="preserved"]

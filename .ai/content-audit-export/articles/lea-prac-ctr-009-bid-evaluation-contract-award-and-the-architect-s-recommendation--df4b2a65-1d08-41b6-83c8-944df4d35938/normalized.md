@@ -39,7 +39,7 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: ⚠️ **Critical Exam Point:** All communications regarding bid evaluation, scoring, and the recommendation must remain CONFIDENTIAL until the contract is formally awarded. Disclosure of bid values, technic... — expect this as a trap answer on the ALE.
+- Text: ⚠️ **Critical Exam Point:** All communications regarding bid evaluation, scoring, and the recommendation must remain CONFIDENTIAL until the contract is formally awarded. Disclosure of bid values, technic... — expect this as a trap answer on the LEA.
 [/SLATECAMP_UI_BLOCK]
 
 ### Documentation and Transparency
@@ -49,10 +49,10 @@ The bid evaluation process must be documented thoroughly. The architect maintain
 [SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Priority — Know These Rules:**
+- Text: **LEA Priority — Know These Rules:**
   1. Evaluation criteria must be established BEFORE bids are opened (not after)
   2. Non-responsive bids are rejected (not accepted with conditions)
-  3. Architect — this distinction appears on every ALE cycle.
+  3. Architect — this distinction appears on every LEA cycle.
 [/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes

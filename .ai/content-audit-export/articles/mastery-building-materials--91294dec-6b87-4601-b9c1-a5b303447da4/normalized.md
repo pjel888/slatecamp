@@ -78,22 +78,22 @@ BERDE credits for regional materials, recycled content, low-VOC finishes, rapidl
 - **Neglecting waste factors.** Always include 5–10% waste in material quantity computations.
 - **Forgetting PH-specific standards.** Philippine standards govern over international ones where they differ.
 
-\[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: When studying structural systems, always ask: "What does the material need to perform well in this system?" And when studying materials, ask: "What structural system is this material best suited for?"
 \[/SLATECAMP_UI_BLOCK\]
-\[SLATECAMP_UI_BLOCK:ui_0005 component="Note" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: The MEPF coordination dimension of LEA-MATL often appears in scenario questions: "The architect is detailing the penetration of a 150mm sanitary drain through a 2-hour rated concrete floor assembly. W
 \[/SLATECAMP_UI_BLOCK\]
-\[SLATECAMP_UI_BLOCK:ui_0007 component="Tip" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: Frame the sustainable materials subtopic as a filter you apply to every other materials decision, not a separate topic. Ask: "What is the embodied carbon of this material? Can recycled or regional alt
 \[/SLATECAMP_UI_BLOCK\]
-\[SLATECAMP_UI_BLOCK:ui_0008 component="Warn" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: When you encounter a question that seems purely computational, check whether it has a material property condition embedded in it. The "trick" in many LEA estimating questions is that you must first id

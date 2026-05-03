@@ -48,7 +48,7 @@ The Board has three members: a Chairman and two Members. They are appointed by t
 [SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: ⚠️ The flagging audit found a common error in earlier materials: **Section 41** does NOT designate IAPOA. Section 41 is about implementing rules and regulations. The correct reference is **Section 4**. T... — expect this as a trap answer on the ALE.
+- Text: ⚠️ The flagging audit found a common error in earlier materials: **Section 41** does NOT designate IAPOA. Section 41 is about implementing rules and regulations. The correct reference is **Section 4**. T... — expect this as a trap answer on the LEA.
 [/SLATECAMP_UI_BLOCK]
 
 **Qualifications required:**
@@ -133,7 +133,7 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0012 component="Warn" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: ⚠️ The earlier version of this article cited **Section 20(a)** for structural conceptualization. This is wrong. Section 20 is about the seal, issuance, and use of the architect's seal — not about design ... — expect this as a trap answer on the ALE.
+- Text: ⚠️ The earlier version of this article cited **Section 20(a)** for structural conceptualization. This is wrong. Section 20 is about the seal, issuance, and use of the architect's seal — not about design ... — expect this as a trap answer on the LEA.
 [/SLATECAMP_UI_BLOCK]
 
 Structural conceptualization is part of the architect's scope. However, the **preparation and signing of structural design documents** remains the exclusive domain of licensed structural engineers. Architects conceptualize; engineers calculate and certify. This boundary prevents scope overlap while acknowledging the collaborative nature of building design.
@@ -154,7 +154,7 @@ The law tasks the PRBoA with adopting the Code of Ethical Conduct and Standards 
 
 ### What the Exam Tests
 
-ALE questions on this topic typically fall into three categories:
+LEA questions on this topic typically fall into three categories:
 
 | Type | Example |
 |------|---------|

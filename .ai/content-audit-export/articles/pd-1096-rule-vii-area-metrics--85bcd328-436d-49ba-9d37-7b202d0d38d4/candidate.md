@@ -388,7 +388,7 @@ Answer aloud, then check.
 
 ## Exam Tip
 
-ALE Trap: Three distinct metrics: (1) FAR = total floor area ÷ lot area, (2) Building coverage = footprint area ÷ lot area (max 70% in most zones), (3) Floor area = sum of all floor plates measured from exterior walls. Exclusions from FAR: basement (if used only for parking/mechanical), roof decks, uncovered balconies. FAR is the MOST tested metric on the exam.
+LEA Trap: Three distinct metrics: (1) FAR = total floor area ÷ lot area, (2) Building coverage = footprint area ÷ lot area (max 70% in most zones), (3) Floor area = sum of all floor plates measured from exterior walls. Exclusions from FAR: basement (if used only for parking/mechanical), roof decks, uncovered balconies. FAR is the MOST tested metric on the exam.
 
 ## Cross‑References
 

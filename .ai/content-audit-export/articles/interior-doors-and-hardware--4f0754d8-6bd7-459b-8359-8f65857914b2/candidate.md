@@ -1,5 +1,5 @@
 # Interior Doors and Hardware
-### BP 344 (2024 IRR) — Philippine Architecture Licensure Exam Review
+### BP 344 (2024 IRR) — Philippine Licensure Examination for Architects Review
 
 ---
 
@@ -287,7 +287,7 @@ You are teaching a first-year architecture student who just drew a restroom door
 
 ## Exam Tip
 
-ALE Trap: Minimum clear opening width = 900 mm for accessible doors, 700 mm for interior non-accessible. Fire doors must be self-closing with positive latching. Panic hardware required on exit doors of Group E, F, H, I occupancies. The clear opening is measured with door at 90° — NOT the door leaf width.
+LEA Trap: Minimum clear opening width = 900 mm for accessible doors, 700 mm for interior non-accessible. Fire doors must be self-closing with positive latching. Panic hardware required on exit doors of Group E, F, H, I occupancies. The clear opening is measured with door at 90° — NOT the door leaf width.
 
 ## Cross‑References
 

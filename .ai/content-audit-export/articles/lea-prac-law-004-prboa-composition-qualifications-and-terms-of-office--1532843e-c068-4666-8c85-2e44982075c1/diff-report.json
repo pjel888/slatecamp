@@ -1,22 +1,22 @@
 {
   "article_id": "1532843e-c068-4666-8c85-2e44982075c1",
   "slug": "lea-prac-law-004-prboa-composition-qualifications-and-terms-of-office",
-  "generated_at": "2026-05-03T10:55:35.989Z",
+  "generated_at": "2026-05-03T11:49:14.354Z",
   "old_hash": "sha256:a29e3b93f3e8152b7892f61790edf65a69923ee99211a30dbbaeb451669ab09f",
-  "new_hash": "sha256:76cf591d3120982d00bffc3301cbae5a811167455beb94b7f5d099f7a735c5db",
+  "new_hash": "sha256:453395a1ee82c71f39456d68eca7d488c7db9549ab1f01f301335a18f96c4771",
   "original_hash": "sha256:a29e3b93f3e8152b7892f61790edf65a69923ee99211a30dbbaeb451669ab09f",
-  "normalized_hash": "sha256:166f9ecf04487588e81ddee9549af85663e5452a126be8c80e81e41f0a0b1fd7",
-  "candidate_hash": "sha256:76cf591d3120982d00bffc3301cbae5a811167455beb94b7f5d099f7a735c5db",
+  "normalized_hash": "sha256:3f65de06b51efe91aa79b07176896af866f1936c2e1a07316228bd4d99af9787",
+  "candidate_hash": "sha256:453395a1ee82c71f39456d68eca7d488c7db9549ab1f01f301335a18f96c4771",
   "changed": true,
   "changed_line_count": 112,
   "inserted_line_count": 52,
   "deleted_line_count": 0,
-  "ui_blocks_original_count": 6,
-  "ui_blocks_candidate_count": 3,
-  "ui_blocks_changed_count": 3,
-  "ui_blocks_count": 6,
-  "unresolved_placeholders_count": 1,
-  "preserved_blocks_count": 3,
+  "ui_blocks_original_count": 2,
+  "ui_blocks_candidate_count": 2,
+  "ui_blocks_changed_count": 0,
+  "ui_blocks_count": 2,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 2,
   "changed_text_summary": {
     "changed": 112,
     "inserted": 52,
@@ -25,21 +25,14 @@
     "candidate_line_count": 151
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0001",
-      "ui_0002",
-      "ui_0004"
-    ],
-    "changed_count": 3
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "Candidate is missing 3 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 3 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

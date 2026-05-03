@@ -345,7 +345,7 @@ A frequently misunderstood distinction is the difference between the architect's
 
 ## Exam Tip
 
-ALE Swipe: Full-time supervision (204-A) vs Construction Administration (SPP 202 Phase 5): FTS = DAILY on-site inspection, CA = periodic observation. Five FTS duties: (1) Daily quality control, (2) Verify conformance to plans, (3) Interpret contract documents, (4) Prepare change orders, (5) Maintain daily log. Compensation = monthly salary or percentage of salary.
+LEA Swipe: Full-time supervision (204-A) vs Construction Administration (SPP 202 Phase 5): FTS = DAILY on-site inspection, CA = periodic observation. Five FTS duties: (1) Daily quality control, (2) Verify conformance to plans, (3) Interpret contract documents, (4) Prepare change orders, (5) Maintain daily log. Compensation = monthly salary or percentage of salary.
 
 ## Cross‑References
 

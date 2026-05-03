@@ -1,28 +1,28 @@
 {
   "article_id": "20f67594-cbef-4aac-b65d-db77bc3e2c9e",
   "slug": "lea-matl-007-01-core-concept",
-  "generated_at": "2026-05-03T07:50:06.181Z",
+  "generated_at": "2026-05-03T11:50:17.787Z",
   "old_hash": "sha256:f02fdb79f6b8a01040764046504aac69f63bfc10165e4ca0efb86c9ad4e4870a",
-  "new_hash": "sha256:5a2a14a2a16883fb593513e34112d17a3cb7fa01e28d0edfe601ebf619006c6d",
+  "new_hash": "sha256:54847e5df60d67207433e84658d172b12089dbefaad677259bb5df9fb75d1cd3",
   "original_hash": "sha256:f02fdb79f6b8a01040764046504aac69f63bfc10165e4ca0efb86c9ad4e4870a",
-  "normalized_hash": "sha256:9d9c19f873428455b576546faff6dc1ca27c4debc611b9eeac5a8c23c0a9d27f",
-  "candidate_hash": "sha256:5a2a14a2a16883fb593513e34112d17a3cb7fa01e28d0edfe601ebf619006c6d",
+  "normalized_hash": "sha256:b4e587b4c8589b2433dc370be2b12e0608aec04716e6c6eaa95fbea6bc7ed1f1",
+  "candidate_hash": "sha256:54847e5df60d67207433e84658d172b12089dbefaad677259bb5df9fb75d1cd3",
   "changed": true,
-  "changed_line_count": 19,
-  "inserted_line_count": 14,
+  "changed_line_count": 14,
+  "inserted_line_count": 7,
   "deleted_line_count": 0,
-  "ui_blocks_original_count": 6,
-  "ui_blocks_candidate_count": 6,
+  "ui_blocks_original_count": 4,
+  "ui_blocks_candidate_count": 4,
   "ui_blocks_changed_count": 0,
-  "ui_blocks_count": 6,
+  "ui_blocks_count": 4,
   "unresolved_placeholders_count": 1,
-  "preserved_blocks_count": 6,
+  "preserved_blocks_count": 4,
   "changed_text_summary": {
-    "changed": 19,
-    "inserted": 14,
+    "changed": 14,
+    "inserted": 7,
     "deleted": 0,
     "original_line_count": 68,
-    "candidate_line_count": 82
+    "candidate_line_count": 75
   },
   "changed_ui_blocks_summary": {
     "missing_block_ids": [],
@@ -31,12 +31,10 @@
   "locally_safe_to_push": false,
   "safe_to_push": false,
   "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "original.md hash does not match article metadata export hash."
+    "Candidate contains unresolved UI block placeholders."
   ],
   "warnings": [
-    "ui-blocks.json contains unknown custom blocks; push requires review or --force.",
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; original.md hash does not match article metadata export hash."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders."
 }

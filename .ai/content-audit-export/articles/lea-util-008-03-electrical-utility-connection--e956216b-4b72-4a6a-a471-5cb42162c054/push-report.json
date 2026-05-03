@@ -1,20 +1,18 @@
 {
-  "attempted_at": "2026-05-03T07:53:44.749Z",
+  "attempted_at": "2026-05-03T11:50:18.186Z",
   "dry_run": true,
   "apply": false,
   "pushed": false,
-  "blockers": [
-    "original.md hash does not match article metadata export hash.",
-    "diff-report.json marks candidate unsafe.",
-    "--all-safe skipped article because diff-report is unsafe."
-  ],
+  "blockers": [],
   "warnings": [
     "Dry-run mode: no Supabase mutation will be performed."
   ],
   "updated_rows_count": 0,
   "article_id": "e956216b-4b72-4a6a-a471-5cb42162c054",
   "slug": "lea-util-008-03-electrical-utility-connection",
-  "preparation_actions": [],
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
   "remote_hash_before": "sha256:853b5cbec7fe491a28b0019de54d243c6d549f3206842ed9cf04d98eee1f4f98",
   "original_hash": "sha256:853b5cbec7fe491a28b0019de54d243c6d549f3206842ed9cf04d98eee1f4f98",
   "candidate_hash": "sha256:898b517ccd86769a4b73635d6417767c22b255810f3dacc5d932d384c45ccc10",

@@ -387,7 +387,7 @@ Extracted summary:
 
 ## Exam Tip
 
-ALE Trap: Septic tank minimum = 2 chambers (1/3 and 2/3 of volume). Capacity = 0.2 m³ per bedroom minimum. Leaching field trench = 600 mm width minimum, 1.5 m minimum from property line. Well-to-septic separation = 15 m minimum (horizontal). The 15 m separation is the most tested distance.
+LEA Trap: Septic tank minimum = 2 chambers (1/3 and 2/3 of volume). Capacity = 0.2 m³ per bedroom minimum. Leaching field trench = 600 mm width minimum, 1.5 m minimum from property line. Well-to-septic separation = 15 m minimum (horizontal). The 15 m separation is the most tested distance.
 
 ## Cross‑References
 

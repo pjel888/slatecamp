@@ -263,7 +263,7 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0025 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Tip — Dispersal is implied, not explicit.** The 2024 IRR says wheelchair spaces must "adjoin accessible circulation" (Sec. 4.4). It does NOT explicitly say "disperse throughout the seating bowl." However, exam questions expect dispersal because clustering all spaces in one location violates th
+- Text: **LEA Tip — Dispersal is implied, not explicit.** The 2024 IRR says wheelchair spaces must "adjoin accessible circulation" (Sec. 4.4). It does NOT explicitly say "disperse throughout the seating bowl." However, exam questions expect dispersal because clustering all spaces in one location violates th
 [/SLATECAMP_UI_BLOCK]
 
 

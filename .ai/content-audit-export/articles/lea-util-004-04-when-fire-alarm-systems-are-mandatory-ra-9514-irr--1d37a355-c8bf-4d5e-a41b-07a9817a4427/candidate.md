@@ -174,13 +174,7 @@ Key regulatory references:
 
 #### Heat Detector Spacing
 
-<WikiExamTable headers={["Detector Type", "Spacing Center-to-Center", "Notes"]} rows={[["Fixed-temperature (typical)", "6.1–9.1 m (20–30 ft)", "NFPA 72 Section 17.6.2; site-specific per thermal capacity"], ["Rate-of-rise", "6.1–9.1 m (20–30 ft)", "Same spacing as fixed-temp; rate element provides early detection"], ["High-temperature spaces (>38°C ambient)", "6.1 m (20 ft) or less", "Reduce spacing; temperature rise rate is slower in hot ambient"]]} />
-
----
-
-### Flame Detectors
-
-**Principle:** Detect infrared or ultraviolet radiation emitted by flames. Used in large, open spaces or outdoors where smoke detectors are impractical.
+et radiation emitted by flames. Used in large, open spaces or outdoors where smoke detectors are impractical.
 
 **Types:**
 - **Infrared (IR):** Senses heat radiation; responds in 4–8 seconds per NFPA 72
@@ -415,13 +409,7 @@ Smoke detectors in kitchens create nuisance alarms from normal cooking operation
 
 ## Common Design Errors and Corrections
 
-<WikiMistakeList mistakes={["Spacing smoke detectors 12 m apart to reduce cost (NFPA 72 specifies 9.1 m maximum center-to-center)", "Installing heat detectors in kitchens without adequate spacing in cooking zones, then disabling them due to false alarms", "Mounting manual pull stations at 1.8 m height (too high for children, wheelchair users; must be 1.07–1.22 m per NFPA 72 Section 17.15)", "Forgetting to include voice evacuation system in buildings >21 m; adding expensive retrofit later", "Omitting fire alarm zones in mechanical rooms, electrical rooms; fire protection engineer finds non-compliance pre-occupancy", "Running fire alarm wiring in same conduit as power wiring; causes EMI nuisance alarms in addressable systems", "Not sizing backup battery for 24-hour standby; battery depletes during extended power outage", "Using ionization detectors instead of photoelectric in commercial spaces; higher false-alarm rate per RA 9514 preference"]} />
-
----
-
-## Worked Example: 6-Storey Office Building, Metro Manila
-
-**Building Parameters:**
+ing Parameters:**
 - 6 storeys (height ~21 m)
 - Each floor: 800 m² open-plan office + 200 m² core (toilets, mechanical, storage)
 - Occupant load: ~200 per floor (1,200 total)
@@ -541,9 +529,8 @@ See also within Fire Protection Systems: **lea-util-004-05-core-concept**, **lea
 
 > **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
 
-
 [SLATECAMP_UI_BLOCK:ui_e001 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Exam Tip — Identify when fire alarm systems are mandatory per RA 9514 (:** Building Utilities carries the heaviest weight in Area B. Focus on code-specific values (PEC ampacities, Revised Plumbing Code fixture units, NFPA spacing requirements) and regulatory triggers (when is a fire alarm mandatory? when is seismic bracing required?). Practice load computations and system sizing problems which appear regularly on the exam.
+- Text: **LEA Exam Tip — Identify when fire alarm systems are mandatory per RA 9514 (:** Building Utilities carries the heaviest weight in Area B. Focus on code-specific values (PEC ampacities, Revised Plumbing Code fixture units, NFPA spacing requirements) and regulatory triggers (when is a fire alarm mandatory? when is seismic bracing required?). Practice load computations and system sizing problems which appear regularly on the exam.
 [/SLATECAMP_UI_BLOCK]

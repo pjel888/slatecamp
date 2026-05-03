@@ -1,9 +1,9 @@
 # Content Diff Report: lea-prac-frm-002-partnership-in-architectural-practice
 
-Generated: 2026-05-03T07:48:34.012Z
+Generated: 2026-05-03T11:49:40.564Z
 Article ID: 387760f0-6468-40d6-b78e-a463c9f543b2
 Changed: true
-Safe to push locally: false
+Safe to push locally: true
 
 ## Hashes
 
@@ -19,14 +19,14 @@ Safe to push locally: false
 
 ## UI block preservation
 
-- UI blocks expected: 4
-- UI blocks preserved: 3
-- UI blocks changed/missing: 1
+- UI blocks expected: 2
+- UI blocks preserved: 2
+- UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate is missing 1 preserved UI block(s).
+- None
 
 ## Warnings
 

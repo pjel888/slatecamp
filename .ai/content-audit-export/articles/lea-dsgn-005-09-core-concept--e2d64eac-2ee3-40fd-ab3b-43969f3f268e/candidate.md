@@ -7,7 +7,6 @@ Barangay halls and small government buildings serve multiple administrative and 
 
 ---
 
-
 ## Core Concept
 
 <Tip>Design principles tested on the LEA focus on the relationship between form and space. Understand how primary elements (point, line, plane, volume) generate architectural form and how spatial organization types (centralized, linear, radial, clustered, grid) shape building layout.</Tip>
@@ -70,7 +69,9 @@ Barangay halls are the civic infrastructure linking national and local governmen
 
 **Pattern 1: Occupancy Classification**
 
-<ExamTip>**LEA Pattern:** A floor plan or spatial diagram is shown and you must identify the type of spatial organization (centralized, linear, radial, clustered, grid). Look for the organizing geometry — the path or point that anchors the arrangement.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+
+\
 "A barangay hall with a 120-sqm multi-purpose hall plus administrative offices is classified as Group E or H depending on the dominant occupant load." 
 
 **Pattern 2: Population-Scaled Sizing**
@@ -82,7 +83,6 @@ Barangay halls are the civic infrastructure linking national and local governmen
 > **Memory Rule:** Captain = 9 sqm; SK = 10 sqm. Counter = 2.0m per 1k people. Exit width = 5.5 mm/person. Ramp = 1:20 (short) or 1:12 (long).
 
 ---
-
 
 **Exam Tip — ERR-DSGN-025:** Barangay halls have dual occupancy: administrative (Group D) + assembly (Group E/C if public meeting space). Calculate each component separately and use the most restrictive egress.
 

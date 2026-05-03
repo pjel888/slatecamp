@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-frm-021-quantity-surveying-and-cost-estimation-the-architect-s-role-vs-the-qs-professional-s-role
 
-Generated: 2026-05-03T07:49:39.654Z
+Generated: 2026-05-03T11:50:08.475Z
 Article ID: 303f8a75-b42b-4405-8c39-082b4d7b6322
 Changed: true
 Safe to push locally: true

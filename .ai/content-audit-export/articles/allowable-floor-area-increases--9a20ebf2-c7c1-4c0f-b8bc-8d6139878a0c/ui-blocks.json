@@ -4,35 +4,10 @@
   "normalized_created_at": "2026-05-01T13:33:43.856Z",
   "parser_version": "ui-block-parser-v1",
   "original_content_hash": "sha256:94c0efa2e8b1dec8b9cd12c2ec16732ef41188cc7d7834bf94e0eb18ed3f9c9f",
-  "normalized_content_hash": "sha256:bd75cbc74d67c680668ad9ae66388174e22eb850886b1abec6249dfef4f79d79",
-  "ui_block_count": 5,
+  "normalized_content_hash": "dda119c66d28fd43d845e19b140e7aae552a2e5e6faf8eba2cf6fe3c79c38a2c",
+  "ui_block_count": 4,
   "total_blocks": 5,
   "blocks": [
-    {
-      "block_id": "ui_0001",
-      "block_type": "mdx_component",
-      "component_name": "Note",
-      "raw": "<LawCallout code=\"pd1096\" section=\"Rule VII - Floor Area Increase\">\n\n\nCorrected note: The answer using the exact formula is 60,750 sq ft. Choose the closest option in the actual exam and always verify arithmetic. The methodology \u2014 If = 0.50; Is = 3.00 (single-story); additive formula \u2014 is what the LEA tests.\n\n\n</LawCallout>",
-      "raw_hash": "sha256:fabfab51cc09473bce6edddb2cd159f4c6bb4c67f51a54ffb49c4202bb94ad0a",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Note\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: Corrected note: The answer using the exact formula is 60,750 sq ft. Choose the closest option in the actual exam and always verify arithmetic. The methodology \u2014 If = 0.50; Is = 3.00 (single-story); additive formula \u2014 is what the LEA tests.\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:dee2913e2a1b4f4e1d1325f5c56dbb229415a3ce4e3f75b6739bf839446900db",
-      "props": {},
-      "props_json": {
-        "code": "pd1096",
-        "section": "Rule VII - Floor Area Increase"
-      },
-      "props_text": "code=pd1096, section=Rule VII - Floor Area Increase",
-      "children_raw": "\n\nCorrected note: The answer using the exact formula is 60,750 sq ft. Choose the closest option in the actual exam and always verify arithmetic. The methodology \u2014 If = 0.50; Is = 3.00 (single-story); additive formula \u2014 is what the LEA tests.\n\n",
-      "children_text": "Corrected note: The answer using the exact formula is 60,750 sq ft. Choose the closest option in the actual exam and always verify arithmetic. The methodology \u2014 If = 0.50; Is = 3.00 (single-story); additive formula \u2014 is what the LEA tests.",
-      "start_offset": 32933,
-      "end_offset": 33189,
-      "line_start": 449,
-      "line_end": 453,
-      "parser_confidence": "high",
-      "parse_status": "parsed",
-      "warnings": [],
-      "status": "preserved"
-    },
     {
       "block_id": "ui_0002",
       "block_type": "mdx_component",

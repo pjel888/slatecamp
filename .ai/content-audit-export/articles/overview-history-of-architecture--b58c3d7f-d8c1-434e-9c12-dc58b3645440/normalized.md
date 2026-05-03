@@ -8,7 +8,7 @@ Extracted summary:
 
 ## Learning Goal
 
-Master the architectural history timeline tested in the ALE across 11 regional/cultural traditions, including: Prehistoric/Ancient, Medieval to Baroque, Modern & Contemporary, Asian & Pacific, Islamic, Philippine, African, Latin American, Pre-Columbian, Australian/NZ, and United States architecture. By the end of this study map, you should be able to identify periods, styles, architects, buildings, and cultural influences from visual and contextual cues.
+Master the architectural history timeline tested in the LEA across 11 regional/cultural traditions, including: Prehistoric/Ancient, Medieval to Baroque, Modern & Contemporary, Asian & Pacific, Islamic, Philippine, African, Latin American, Pre-Columbian, Australian/NZ, and United States architecture. By the end of this study map, you should be able to identify periods, styles, architects, buildings, and cultural influences from visual and contextual cues.
 
 ## Subject Coverage
 
@@ -69,12 +69,12 @@ Extracted summary:
 - **Treating Philippine Architecture as a separate silo.** It's a story of layered influences — Austronesian, Hindu-Buddhist, Islamic, Spanish, American.
 - **Ignoring non-Western chronology.** Map non-Western timelines onto Western eras you already know.
 
-\[SLATECAMP_UI_BLOCK:ui_0002 component="Note" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: Philippine Architecture deserves its own dedicated study pass even though it also appears here. It connects directly to your lived context, and the LEA questions on it often reward specificity — knowi
 \[/SLATECAMP_UI_BLOCK\]
-\[SLATECAMP_UI_BLOCK:ui_0005 component="Tip" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: Create a single master timeline spanning the full chronological range. For each major era, add one column per cultural tradition (Western, Islamic, South Asian, East Asian, Philippine, etc.). Seeing g

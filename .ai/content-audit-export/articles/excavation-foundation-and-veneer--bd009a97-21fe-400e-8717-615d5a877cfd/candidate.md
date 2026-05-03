@@ -252,7 +252,7 @@ D. 1,000 kg (2× panel weight per the anchored veneer lateral force requirement)
 
 ## Exam Tip
 
-ALE Swipe: Minimum footing depth = 600 mm below grade (in non-expansive soils). Shoring required when excavation exceeds 2.0 m from property line. Underpinning required when excavation goes below adjacent foundation bottom. Veneer anchors at maximum 400 mm o.c. vertically, 600 mm o.c. horizontally.
+LEA Swipe: Minimum footing depth = 600 mm below grade (in non-expansive soils). Shoring required when excavation exceeds 2.0 m from property line. Underpinning required when excavation goes below adjacent foundation bottom. Veneer anchors at maximum 400 mm o.c. vertically, 600 mm o.c. horizontally.
 
 ## Cross‑References
 

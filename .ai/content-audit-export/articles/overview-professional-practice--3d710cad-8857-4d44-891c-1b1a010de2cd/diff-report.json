@@ -1,21 +1,21 @@
 {
   "article_id": "3d710cad-8857-4d44-891c-1b1a010de2cd",
   "slug": "overview-professional-practice",
-  "generated_at": "2026-05-03T10:55:20.199Z",
+  "generated_at": "2026-05-03T11:49:02.094Z",
   "old_hash": "sha256:dbcaaee83db3d558589d69d0deb773331436d5a9cd9a5854fa2390bbbe61d8f8",
-  "new_hash": "sha256:26ad0c9a1b6c15657bb9a74afc8725fd1370b7cf513358be07a10752a4f95b92",
+  "new_hash": "sha256:c857d28fe768829965962a104282ee564bd5cc229c67b975105a259b513446bc",
   "original_hash": "sha256:dbcaaee83db3d558589d69d0deb773331436d5a9cd9a5854fa2390bbbe61d8f8",
-  "normalized_hash": "sha256:c96953d7e038bf6f0349e935e97818c024d282bba3eb3e26ef30f9c5c26a330f",
-  "candidate_hash": "sha256:26ad0c9a1b6c15657bb9a74afc8725fd1370b7cf513358be07a10752a4f95b92",
+  "normalized_hash": "sha256:17f699ef12a6d7cce12bed19b584de7754ff0e5ca6a41ef042ca7ffdd63dde13",
+  "candidate_hash": "sha256:c857d28fe768829965962a104282ee564bd5cc229c67b975105a259b513446bc",
   "changed": true,
   "changed_line_count": 86,
   "inserted_line_count": 0,
   "deleted_line_count": 19,
-  "ui_blocks_original_count": 6,
+  "ui_blocks_original_count": 4,
   "ui_blocks_candidate_count": 4,
-  "ui_blocks_changed_count": 2,
-  "ui_blocks_count": 6,
-  "unresolved_placeholders_count": 1,
+  "ui_blocks_changed_count": 0,
+  "ui_blocks_count": 4,
+  "unresolved_placeholders_count": 0,
   "preserved_blocks_count": 4,
   "changed_text_summary": {
     "changed": 86,
@@ -25,20 +25,14 @@
     "candidate_line_count": 76
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0002",
-      "ui_0006"
-    ],
-    "changed_count": 2
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "Candidate is missing 2 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 2 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

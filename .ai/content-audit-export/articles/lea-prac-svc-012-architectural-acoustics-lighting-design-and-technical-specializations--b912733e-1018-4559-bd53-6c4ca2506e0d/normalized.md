@@ -6,7 +6,7 @@ After reading this article, you should be able to:
 - Define the scope of acoustic design services: noise control, reverberation, sound isolation, and vibration control.
 - Define the scope of lighting design services: natural and artificial light planning, luminance calculations, and energy efficiency.
 - Identify the building types and applications requiring specialized acoustic or lighting design.
-- Apply technical specialization concepts to ALE scenarios involving specialized service classification and compensation.
+- Apply technical specialization concepts to LEA scenarios involving specialized service classification and compensation.
 
 Technical architectural specializations extend beyond traditional building design to address sophisticated performance requirements. Acoustic design and lighting design represent two fundamental technical specializations that shape occupant experience and building functionality. SPP Doc 203 establishes standards for these services within the broader framework of specialized allied architectural services. These specializations demand expertise beyond general architectural training and command appropriate professional compensation.
 

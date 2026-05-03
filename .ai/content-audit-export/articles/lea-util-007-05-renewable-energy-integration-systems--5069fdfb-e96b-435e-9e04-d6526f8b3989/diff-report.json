@@ -1,11 +1,11 @@
 {
   "article_id": "5069fdfb-e96b-435e-9e04-d6526f8b3989",
   "slug": "lea-util-007-05-renewable-energy-integration-systems",
-  "generated_at": "2026-05-03T10:56:04.812Z",
+  "generated_at": "2026-05-03T11:49:36.657Z",
   "old_hash": "sha256:2dd136465bda0ccbc35017d0255fd6888ce90fcf913bb6f44992cdd74983363e",
   "new_hash": "sha256:6dd60f12dea2b0a6791ef8776162c427c402eb7cec135211ca0530de41e27dd7",
   "original_hash": "sha256:2dd136465bda0ccbc35017d0255fd6888ce90fcf913bb6f44992cdd74983363e",
-  "normalized_hash": "sha256:8029334b4ac3a8edca3d8e6f19a95e12691154df668c59468047ff48b5529bea",
+  "normalized_hash": "sha256:583d17013e2b5ff1ac09c7dd20d2e643d1b807ef6485d79fc23443b33604a564",
   "candidate_hash": "sha256:6dd60f12dea2b0a6791ef8776162c427c402eb7cec135211ca0530de41e27dd7",
   "changed": true,
   "changed_line_count": 175,
@@ -28,13 +28,11 @@
     "missing_block_ids": [],
     "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "original.md hash does not match article metadata export hash."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: original.md hash does not match article metadata export hash."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

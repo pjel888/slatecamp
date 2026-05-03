@@ -344,7 +344,7 @@ Understanding this process is essential for ethical practice because it establis
 
 ## About This Article
 
-This article is part of the SlateCamp Professional Practice Content Engine for LEA preparation. It synthesizes regulatory frameworks, case law principles, and professional standards into competency-based learning outcomes aligned with the Architecture Licensure Examination syllabus.
+This article is part of the SlateCamp Professional Practice Content Engine for LEA preparation. It synthesizes regulatory frameworks, case law principles, and professional standards into competency-based learning outcomes aligned with the Licensure Examination for Architects (LEA) syllabus.
 
 **Revision History:**
 - 2026-03-22: Initial publication covering complaint, investigation, hearing, and appeal phases

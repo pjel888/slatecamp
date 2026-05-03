@@ -6,7 +6,7 @@ After reading this article, you should be able to:
 - Identify the purpose, scope, and structure of UAP Document 301 (General Conditions) and its role in the three-party relationship.
 - Explain the hierarchy of contract documents and how conflicts are resolved among the Agreement, General Conditions, Special Provisions, Drawings, and Specifications.
 - Describe the respective roles, rights, and obligations of the Owner, Contractor, and Architect under Doc 301.
-- Apply Doc 301 provisions to ALE scenarios involving contract interpretation, party responsibilities, and the architect's role as contract administrator.
+- Apply Doc 301 provisions to LEA scenarios involving contract interpretation, party responsibilities, and the architect's role as contract administrator.
 
 
 

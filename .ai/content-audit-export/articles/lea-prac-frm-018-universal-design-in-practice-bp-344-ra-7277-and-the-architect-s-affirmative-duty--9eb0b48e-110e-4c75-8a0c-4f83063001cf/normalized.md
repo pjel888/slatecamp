@@ -32,7 +32,7 @@ The law applies to all new construction and alterations. The 2024 Revised IRR do
 [SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
 Extracted summary:
 - Props: title=No General Cost Exemption
-- Text: ⚠️ The 2024 Revised IRR of BP 344 does NOT contain a general exemption based on cost percentage (such as "20% of total building cost"). If a project faces genuine constraints, the architect should docume... — expect this as a trap answer on the ALE.
+- Text: ⚠️ The 2024 Revised IRR of BP 344 does NOT contain a general exemption based on cost percentage (such as "20% of total building cost"). If a project faces genuine constraints, the architect should docume... — expect this as a trap answer on the LEA.
 [/SLATECAMP_UI_BLOCK]
 
 ### The Architect's Affirmative Duty During Design
@@ -70,8 +70,8 @@ The architect must verify that the design meets these specific standards. This i
 
 [SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
 Extracted summary:
-- Props: title=ALE Exam Tip
-- Text: The ALE frequently tests ramp slope ratios. Remember: **1:20 is the general maximum** under the 2024 Revised IRR. The old 1:12 standard (from the original/original amended IRR) is no longer current fo...
+- Props: title=LEA Exam Tip
+- Text: The LEA frequently tests ramp slope ratios. Remember: **1:20 is the general maximum** under the 2024 Revised IRR. The old 1:12 standard (from the original/original amended IRR) is no longer current fo...
 [/SLATECAMP_UI_BLOCK]
 
 ### Universal Design Principles vs. Segregated Access

@@ -4,8 +4,8 @@
   "normalized_created_at": "2026-05-01T13:33:43.387Z",
   "parser_version": "ui-block-parser-v1",
   "original_content_hash": "sha256:1085e74a7b397f34ec97cdf8a09681dff2bcd35125e4f6de23b07ef3a3b9fcee",
-  "normalized_content_hash": "9cb0cb086a3f56aa6daed42590eedbe4c0bf3e770b42659da1367c3e029748ed",
-  "ui_block_count": 13,
+  "normalized_content_hash": "94895416ba56df202c90fd18648e7ceacf5f3a24e89ac525ac4bde273968d33c",
+  "ui_block_count": 11,
   "total_blocks": 13,
   "blocks": [
     {
@@ -235,80 +235,6 @@
       "status": "preserved"
     },
     {
-      "block_id": "ui_0011",
-      "block_type": "mdx_component",
-      "component_name": "WikiMistakeCard",
-      "raw": "<WikiMistakeCard mistake=\"Applying Temperate-Zone Solar Logic\" correction=\"Assuming south-facing windows should capture winter sun for heating.\" context=\"In the Philippines, winter sun (altitude >59\u00b0) is still intense; minimizing south-west exposure is correct.\" />",
-      "raw_hash": "sha256:7cadb64f26705ef9a1469d321a9330f486c17395e2e7b6c8bfb95d8253c9a3fa",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0011 component=\"WikiMistakeCard\" status=\"unknown\"]\nExtracted summary:\n- Props: mistake=\"Applying Temperate-Zone Solar Logic\", correction=\"Assuming south-facing windows should capture winter sun for heating.\", context=true, In=true, the=true, Philippines=true, winter=true, sun=true, altitude=true\n- Text: 59\u00b0) is still intense; minimizing south-west exposure is correct.\" />\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:4513b7a68d75096aab791e2f735d76b2c5252210da6cb96d2333dffeb0318e4a",
-      "props": {
-        "mistake": "Applying Temperate-Zone Solar Logic",
-        "correction": "Assuming south-facing windows should capture winter sun for heating.",
-        "context": true,
-        "In": true,
-        "the": true,
-        "Philippines": true,
-        "winter": true,
-        "sun": true,
-        "altitude": true
-      },
-      "props_json": {
-        "mistake": "Applying Temperate-Zone Solar Logic",
-        "correction": "Assuming south-facing windows should capture winter sun for heating.",
-        "context": true,
-        "In": true,
-        "the": true,
-        "Philippines": true,
-        "winter": true,
-        "sun": true,
-        "altitude": true
-      },
-      "props_text": "mistake=\"Applying Temperate-Zone Solar Logic\" correction=\"Assuming south-facing windows should capture winter sun for heating.\" context=\"In the Philippines, winter sun (altitude",
-      "children_raw": null,
-      "children_text": "59\u00b0) is still intense; minimizing south-west exposure is correct.\" />",
-      "start_offset": 13084,
-      "end_offset": 13349,
-      "line_start": 138,
-      "line_end": 138,
-      "parser_confidence": "low",
-      "parse_status": "unknown_block",
-      "warnings": [
-        "No closing tag found for WikiMistakeCard; preserved opening line as unknown custom block."
-      ],
-      "status": "unknown"
-    },
-    {
-      "block_id": "ui_0012",
-      "block_type": "mdx_component",
-      "component_name": "WikiMistakeCard",
-      "raw": "<WikiMistakeCard mistake=\"Neglecting East-West Exposure Risk\" correction=\"Designing east or west-facing primary facades.\" context=\"These orientations increase cooling demand by 20\u201330%; a major liability in high-humidity Coronas Type II/IV climates.\" />",
-      "raw_hash": "sha256:a765b5b21698955ae5daacbef976d18a81fef7ce46f523e51c7ca157db7aee35",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0012 component=\"WikiMistakeCard\" status=\"preserved\"]\nExtracted summary:\n- Props: mistake=\"Neglecting East-West Exposure Risk\", correction=\"Designing east or west-facing primary facades.\", context=\"These orientations increase cooling demand by 20\u201330%; a major liability in high-humidity Coronas Type II/IV climates.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:40be13678ce5092c9d45a4896f0889e9affa121d9de3817cc7b0ce6dfb56dca5",
-      "props": {
-        "mistake": "Neglecting East-West Exposure Risk",
-        "correction": "Designing east or west-facing primary facades.",
-        "context": "These orientations increase cooling demand by 20\u201330%; a major liability in high-humidity Coronas Type II/IV climates."
-      },
-      "props_json": {
-        "mistake": "Neglecting East-West Exposure Risk",
-        "correction": "Designing east or west-facing primary facades.",
-        "context": "These orientations increase cooling demand by 20\u201330%; a major liability in high-humidity Coronas Type II/IV climates."
-      },
-      "props_text": "mistake=\"Neglecting East-West Exposure Risk\" correction=\"Designing east or west-facing primary facades.\" context=\"These orientations increase cooling demand by 20\u201330%; a major liability in high-humidity Coronas Type II/IV climates.\"",
-      "children_raw": null,
-      "children_text": null,
-      "start_offset": 13351,
-      "end_offset": 13603,
-      "line_start": 140,
-      "line_end": 140,
-      "parser_confidence": "high",
-      "parse_status": "parsed",
-      "warnings": [],
-      "status": "preserved"
-    },
-    {
       "block_id": "ui_0013",
       "block_type": "mdx_component",
       "component_name": "WikiMistakeList",
@@ -335,52 +261,7 @@
       "status": "preserved"
     }
   ],
-  "unknown_blocks": [
-    {
-      "block_id": "ui_0011",
-      "block_type": "mdx_component",
-      "component_name": "WikiMistakeCard",
-      "raw": "<WikiMistakeCard mistake=\"Applying Temperate-Zone Solar Logic\" correction=\"Assuming south-facing windows should capture winter sun for heating.\" context=\"In the Philippines, winter sun (altitude >59\u00b0) is still intense; minimizing south-west exposure is correct.\" />",
-      "raw_hash": "sha256:7cadb64f26705ef9a1469d321a9330f486c17395e2e7b6c8bfb95d8253c9a3fa",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0011 component=\"WikiMistakeCard\" status=\"unknown\"]\nExtracted summary:\n- Props: mistake=\"Applying Temperate-Zone Solar Logic\", correction=\"Assuming south-facing windows should capture winter sun for heating.\", context=true, In=true, the=true, Philippines=true, winter=true, sun=true, altitude=true\n- Text: 59\u00b0) is still intense; minimizing south-west exposure is correct.\" />\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:4513b7a68d75096aab791e2f735d76b2c5252210da6cb96d2333dffeb0318e4a",
-      "props": {
-        "mistake": "Applying Temperate-Zone Solar Logic",
-        "correction": "Assuming south-facing windows should capture winter sun for heating.",
-        "context": true,
-        "In": true,
-        "the": true,
-        "Philippines": true,
-        "winter": true,
-        "sun": true,
-        "altitude": true
-      },
-      "props_json": {
-        "mistake": "Applying Temperate-Zone Solar Logic",
-        "correction": "Assuming south-facing windows should capture winter sun for heating.",
-        "context": true,
-        "In": true,
-        "the": true,
-        "Philippines": true,
-        "winter": true,
-        "sun": true,
-        "altitude": true
-      },
-      "props_text": "mistake=\"Applying Temperate-Zone Solar Logic\" correction=\"Assuming south-facing windows should capture winter sun for heating.\" context=\"In the Philippines, winter sun (altitude",
-      "children_raw": null,
-      "children_text": "59\u00b0) is still intense; minimizing south-west exposure is correct.\" />",
-      "start_offset": 13084,
-      "end_offset": 13349,
-      "line_start": 138,
-      "line_end": 138,
-      "parser_confidence": "low",
-      "parse_status": "unknown_block",
-      "warnings": [
-        "No closing tag found for WikiMistakeCard; preserved opening line as unknown custom block."
-      ],
-      "status": "unknown"
-    }
-  ],
+  "unknown_blocks": [],
   "unresolved_critical_blocks": [],
   "ui_blocks_hash": "sha256:56594d2c4890946755b34974e6f46d452d7a46ad01b41f6b285f3d5b1bd105a1"
 }

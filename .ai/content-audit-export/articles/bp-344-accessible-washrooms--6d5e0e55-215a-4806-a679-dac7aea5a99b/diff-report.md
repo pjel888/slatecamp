@@ -1,6 +1,6 @@
 # Content Diff Report: bp-344-accessible-washrooms
 
-Generated: 2026-05-03T07:50:09.584Z
+Generated: 2026-05-03T11:50:19.509Z
 Article ID: 6d5e0e55-215a-4806-a679-dac7aea5a99b
 Changed: true
 Safe to push locally: true
@@ -8,8 +8,8 @@ Safe to push locally: true
 ## Hashes
 
 - Original: `sha256:78921577efafdfed9c989b7d919418a14b826dd7ef9f30d96e046131ea2690d0`
-- Normalized: `sha256:89588c90956d40842dc04edc1b5862c61fbb382c1cff4fc6aa28d144d4fee9e5`
-- Candidate: `sha256:6565f1829d6c76655f8c96af9d5302ec2f02c3fceea42924619f57219fb666ab`
+- Normalized: `sha256:bf667971fa6d4f321bfee73b1b4e1bd2d01404797626fceacf23f9a6ec0e813d`
+- Candidate: `sha256:d852ed2ba150069272912dc5300169a4aa053d03b8ee28de8d1634170c695c17`
 
 ## Line summary
 

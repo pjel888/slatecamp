@@ -6,7 +6,7 @@ After reading this article, you should be able to:
 - Describe the PRBoA's quasi-judicial authority to investigate complaints against licensed architects under RA 9266 and the Code of Ethical Conduct.
 - Identify the four phases of the disciplinary process: complaint filing, formal investigation, administrative hearing, and appeal.
 - Explain the grounds for discipline, range of penalties (from reprimand to revocation), and the appeals process.
-- Apply disciplinary procedures to ALE scenarios involving professional misconduct, ethics violations, and Board jurisdiction.
+- Apply disciplinary procedures to LEA scenarios involving professional misconduct, ethics violations, and Board jurisdiction.
 
 The Professional Regulatory Board of Architecture (PRBoA), operating under the Professional Regulation Commission (PRC), possesses quasi-judicial authority to investigate complaints against licensed architects and licensed architects-in-training (RLAs). Understanding the disciplinary process is critical for LEA candidates because it establishes the mechanisms through which professional standards are enforced and protects both the public and the profession.
 
@@ -363,7 +363,7 @@ Understanding this process is essential for ethical practice because it establis
 
 ## About This Article
 
-This article is part of the SlateCamp Professional Practice Content Engine for LEA preparation. It synthesizes regulatory frameworks, case law principles, and professional standards into competency-based learning outcomes aligned with the Architecture Licensure Examination syllabus.
+This article is part of the SlateCamp Professional Practice Content Engine for LEA preparation. It synthesizes regulatory frameworks, case law principles, and professional standards into competency-based learning outcomes aligned with the Licensure Examination for Architects syllabus.
 
 **Revision History:**
 - 2026-03-22: Initial publication covering complaint, investigation, hearing, and appeal phases

@@ -1,6 +1,6 @@
 ## Prohibited Acts, Criminal Penalties, and Enforcement
 ## Learning Goal
-After reading this article, you should understand the key concepts tested in the ALE for this topic, including relevant code provisions, dimensional standards, and common exam applications.
+After reading this article, you should understand the key concepts tested in the LEA for this topic, including relevant code provisions, dimensional standards, and common exam applications.
 
 ### The Statutory Foundation: Sections 29 and 30 of the IRR
 
@@ -143,7 +143,7 @@ While RA 9266 establishes criminal and disciplinary remedies, the fundamental li
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Pattern:** Code questions provide scenarios with dimensions/quantities — this distinction appears on every ALE cycle.
+- Text: **LEA Pattern:** Code questions provide scenarios with dimensions/quantities — this distinction appears on every LEA cycle.
 [/SLATECAMP_UI_BLOCK]
 Thus, if an Architect-of-Record designs a structure with inadequate foundation capacity and the building settles, causing damage, the AoR is civilly liable under Article 1723. If a Consulting Architect advises a client on code compliance but intentionally provides false information, the Consulting Architect assumes civil liability for the client's reliance. Civil liability is distinct from and may coexist with criminal or disciplinary consequences.
 
@@ -151,7 +151,7 @@ Thus, if an Architect-of-Record designs a structure with inadequate foundation c
 [SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Pattern:** Code questions provide scenarios with dimensions/quantities — this distinction appears on every ALE cycle.
+- Text: **LEA Pattern:** Code questions provide scenarios with dimensions/quantities — this distinction appears on every LEA cycle.
 [/SLATECAMP_UI_BLOCK]
 > **Tip: Three Tracks of Liability**
 >

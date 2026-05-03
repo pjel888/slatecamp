@@ -4,8 +4,8 @@
   "normalized_created_at": "2026-05-01T13:33:43.589Z",
   "parser_version": "ui-block-parser-v1",
   "original_content_hash": "sha256:4a378c804c4fe84e091f7126fb771caa77b115e2cb064b4f5096669c8751b05c",
-  "normalized_content_hash": "e88dada7925704e1de35f43d26414926244a1e6cc7b73140db20dc604c10ceaf",
-  "ui_block_count": 7,
+  "normalized_content_hash": "c45d7c170673ca0b8e57b3dffa81c1a616230b887abc0c97770bc1836315a5ca",
+  "ui_block_count": 6,
   "total_blocks": 8,
   "blocks": [
     {
@@ -143,42 +143,6 @@
       "status": "preserved"
     },
     {
-      "block_id": "ui_0007",
-      "block_type": "mdx_component",
-      "component_name": "WikiMistakeList",
-      "raw": "<WikiMistakeList mistakes={[{\"mistake\": \"Using only one down conductor on a building. Single point of failure means entire structure unprotected if that conductor fails during strike.\",\"correction\": \"Install minimum two independent down conductors per PEC Article 2.50. Preferred: one per corner of rectangular buildings. Ensures redundancy and current distribution.\"},{\"mistake\": \"Accepting ground resistance >15 ohms. Marginal resistance increases voltage rise during strike, risking step and touch hazards.\",\"correction\": \"Design grounding system to achieve \u226410 ohms. Use parallel rods, deep electrodes, or ring conductors combined. Test with clamp-on tester after installation.\"},{\"mistake\": \"Running down conductors through occupied spaces (inside walls, along window edges). Strikes produce 30 kA+ currents; voltage rise creates electrocution risk.\",\"correction\": \"Route down conductors on exterior surfaces only. Maintain \u22651.8 m clearance from windows, doors, balconies per NFPA 780. Use insulated supports or conduit for added safety.\"},{\"mistake\": \"Bonding metal roof equipment with undersized wire (e.g., 6 mm\u00b2 copper instead of 16 mm\u00b2 minimum).\",\"correction\": \"All bonding must use \u226516 mm\u00b2 copper or \u226525 mm\u00b2 aluminum per PEC. Undersized bonding can fuse during strike, creating hazard.\"},{\"mistake\": \"Installing air terminals with ball-end design on residential buildings. Belief that ball is more effective.\",\"correction\": \"Ball and sharp terminals are equivleant per IEC 62305. Choose based on aesthetics or regional preference. Ensure terminal \u22650.5 m above roof, properly secured.\"},{\"mistake\": \"Neglecting bonding of solar panel frames. Assumption that PV systems are isolated.\",\"correction\": \"Solar panels are metal structures exposed to direct lightning. Bond frames to down conductor system within 2 m. Bond DC strings and inverter chassis via SPD to grounding network.\"}]} />",
-      "raw_hash": "sha256:b9c5987bb598b2ea6024f2834f65340541b2e4b84f5db541d09817691776e6cd",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0007 component=\"WikiMistakeList\" status=\"unknown\"]\nExtracted summary:\n- Props: mistakes=\"{[{\\\"mistake\\\": \\\"Using only one down conductor on a building. Single point of failure means entire structure unprotected if that conductor fails during strike.\\\",\\\"correction\\\": \\\"Install minimum two independent down conductors per PEC Article 2.50. Preferred: one per corner of rectangular buildings. Ensures redundancy and current distribution.\\\"}\", mistake=true, Accepting=true, ground=true, resistance=true\n- Text: 15 ohms. Marginal resistance increases voltage rise during strike, risking step and touch hazards.\",\"correction\": \"Design grounding system to achieve \u226410 ohms. Use parallel rods, deep electrodes, or ring conductors combined. Test with clamp-on tester after installation.\"}, , , , ]} />\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:cc0a2a7555195bf66c888c27d1d3375aaae0a0601f9e7b59b63b80abc2ddf251",
-      "props": {
-        "mistakes": "{[{\"mistake\": \"Using only one down conductor on a building. Single point of failure means entire structure unprotected if that conductor fails during strike.\",\"correction\": \"Install minimum two independent down conductors per PEC Article 2.50. Preferred: one per corner of rectangular buildings. Ensures redundancy and current distribution.\"}",
-        "mistake": true,
-        "Accepting": true,
-        "ground": true,
-        "resistance": true
-      },
-      "props_json": {
-        "mistakes": "{[{\"mistake\": \"Using only one down conductor on a building. Single point of failure means entire structure unprotected if that conductor fails during strike.\",\"correction\": \"Install minimum two independent down conductors per PEC Article 2.50. Preferred: one per corner of rectangular buildings. Ensures redundancy and current distribution.\"}",
-        "mistake": true,
-        "Accepting": true,
-        "ground": true,
-        "resistance": true
-      },
-      "props_text": "mistakes={[{\"mistake\": \"Using only one down conductor on a building. Single point of failure means entire structure unprotected if that conductor fails during strike.\",\"correction\": \"Install minimum two independent down conductors per PEC Article 2.50. Preferred: one per corner of rectangular buildings. Ensures redundancy and current distribution.\"},{\"mistake\": \"Accepting ground resistance",
-      "children_raw": null,
-      "children_text": "15 ohms. Marginal resistance increases voltage rise during strike, risking step and touch hazards.\",\"correction\": \"Design grounding system to achieve \u226410 ohms. Use parallel rods, deep electrodes, or ring conductors combined. Test with clamp-on tester after installation.\"}, , , , ]} />",
-      "start_offset": 16843,
-      "end_offset": 18737,
-      "line_start": 363,
-      "line_end": 363,
-      "parser_confidence": "low",
-      "parse_status": "unknown_block",
-      "warnings": [
-        "No closing tag found for WikiMistakeList; preserved opening line as unknown custom block."
-      ],
-      "status": "unknown"
-    },
-    {
       "block_id": "ui_0008",
       "block_type": "mdx_component",
       "component_name": "Callout",
@@ -207,44 +171,7 @@
       "status": "preserved"
     }
   ],
-  "unknown_blocks": [
-    {
-      "block_id": "ui_0007",
-      "block_type": "mdx_component",
-      "component_name": "WikiMistakeList",
-      "raw": "<WikiMistakeList mistakes={[{\"mistake\": \"Using only one down conductor on a building. Single point of failure means entire structure unprotected if that conductor fails during strike.\",\"correction\": \"Install minimum two independent down conductors per PEC Article 2.50. Preferred: one per corner of rectangular buildings. Ensures redundancy and current distribution.\"},{\"mistake\": \"Accepting ground resistance >15 ohms. Marginal resistance increases voltage rise during strike, risking step and touch hazards.\",\"correction\": \"Design grounding system to achieve \u226410 ohms. Use parallel rods, deep electrodes, or ring conductors combined. Test with clamp-on tester after installation.\"},{\"mistake\": \"Running down conductors through occupied spaces (inside walls, along window edges). Strikes produce 30 kA+ currents; voltage rise creates electrocution risk.\",\"correction\": \"Route down conductors on exterior surfaces only. Maintain \u22651.8 m clearance from windows, doors, balconies per NFPA 780. Use insulated supports or conduit for added safety.\"},{\"mistake\": \"Bonding metal roof equipment with undersized wire (e.g., 6 mm\u00b2 copper instead of 16 mm\u00b2 minimum).\",\"correction\": \"All bonding must use \u226516 mm\u00b2 copper or \u226525 mm\u00b2 aluminum per PEC. Undersized bonding can fuse during strike, creating hazard.\"},{\"mistake\": \"Installing air terminals with ball-end design on residential buildings. Belief that ball is more effective.\",\"correction\": \"Ball and sharp terminals are equivleant per IEC 62305. Choose based on aesthetics or regional preference. Ensure terminal \u22650.5 m above roof, properly secured.\"},{\"mistake\": \"Neglecting bonding of solar panel frames. Assumption that PV systems are isolated.\",\"correction\": \"Solar panels are metal structures exposed to direct lightning. Bond frames to down conductor system within 2 m. Bond DC strings and inverter chassis via SPD to grounding network.\"}]} />",
-      "raw_hash": "sha256:b9c5987bb598b2ea6024f2834f65340541b2e4b84f5db541d09817691776e6cd",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0007 component=\"WikiMistakeList\" status=\"unknown\"]\nExtracted summary:\n- Props: mistakes=\"{[{\\\"mistake\\\": \\\"Using only one down conductor on a building. Single point of failure means entire structure unprotected if that conductor fails during strike.\\\",\\\"correction\\\": \\\"Install minimum two independent down conductors per PEC Article 2.50. Preferred: one per corner of rectangular buildings. Ensures redundancy and current distribution.\\\"}\", mistake=true, Accepting=true, ground=true, resistance=true\n- Text: 15 ohms. Marginal resistance increases voltage rise during strike, risking step and touch hazards.\",\"correction\": \"Design grounding system to achieve \u226410 ohms. Use parallel rods, deep electrodes, or ring conductors combined. Test with clamp-on tester after installation.\"}, , , , ]} />\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:cc0a2a7555195bf66c888c27d1d3375aaae0a0601f9e7b59b63b80abc2ddf251",
-      "props": {
-        "mistakes": "{[{\"mistake\": \"Using only one down conductor on a building. Single point of failure means entire structure unprotected if that conductor fails during strike.\",\"correction\": \"Install minimum two independent down conductors per PEC Article 2.50. Preferred: one per corner of rectangular buildings. Ensures redundancy and current distribution.\"}",
-        "mistake": true,
-        "Accepting": true,
-        "ground": true,
-        "resistance": true
-      },
-      "props_json": {
-        "mistakes": "{[{\"mistake\": \"Using only one down conductor on a building. Single point of failure means entire structure unprotected if that conductor fails during strike.\",\"correction\": \"Install minimum two independent down conductors per PEC Article 2.50. Preferred: one per corner of rectangular buildings. Ensures redundancy and current distribution.\"}",
-        "mistake": true,
-        "Accepting": true,
-        "ground": true,
-        "resistance": true
-      },
-      "props_text": "mistakes={[{\"mistake\": \"Using only one down conductor on a building. Single point of failure means entire structure unprotected if that conductor fails during strike.\",\"correction\": \"Install minimum two independent down conductors per PEC Article 2.50. Preferred: one per corner of rectangular buildings. Ensures redundancy and current distribution.\"},{\"mistake\": \"Accepting ground resistance",
-      "children_raw": null,
-      "children_text": "15 ohms. Marginal resistance increases voltage rise during strike, risking step and touch hazards.\",\"correction\": \"Design grounding system to achieve \u226410 ohms. Use parallel rods, deep electrodes, or ring conductors combined. Test with clamp-on tester after installation.\"}, , , , ]} />",
-      "start_offset": 16843,
-      "end_offset": 18737,
-      "line_start": 363,
-      "line_end": 363,
-      "parser_confidence": "low",
-      "parse_status": "unknown_block",
-      "warnings": [
-        "No closing tag found for WikiMistakeList; preserved opening line as unknown custom block."
-      ],
-      "status": "unknown"
-    }
-  ],
+  "unknown_blocks": [],
   "unresolved_critical_blocks": [],
   "ui_blocks_hash": "0e5f2d6c468d87fc1243cd19ba7638e9ff5f0847f7003f2875c8ec2d3fa0f5f9"
 }

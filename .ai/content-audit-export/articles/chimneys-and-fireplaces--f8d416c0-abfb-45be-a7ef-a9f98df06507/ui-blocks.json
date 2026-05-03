@@ -4,7 +4,7 @@
   "normalized_created_at": "2026-05-01T13:33:43.234Z",
   "parser_version": "ui-block-parser-v1",
   "original_content_hash": "sha256:4134b92eb70d3f18b0df1be62aa7d6534881563f55c0eca57901455bb092f026",
-  "normalized_content_hash": "9ae0a99d6effabe6468a89085f471201e0232905c1a2a80f88f95614247969f6",
+  "normalized_content_hash": "eabd985c33c5646679af2bc0f607c0b2be36c9d17bd087fc9646a8159d4f5b4b",
   "ui_block_count": 4,
   "total_blocks": 4,
   "blocks": [
@@ -34,53 +34,53 @@
       "block_id": "ui_0002",
       "block_type": "mdx_component",
       "component_name": "LawCallout",
-      "raw": "<LawCallout code=\"nbcp\" section=\"Rule XII, Sec. 1211\" title=\"WALSH Mnemonic \u2014 Five Governing Principles\">\n\nW = Walls (thickness by heat load); A = Anchorage (lateral, at 1.80 m intervals); L = Lining (fire clay \u2265 15 mm, or firebrick \u2265 500 mm); S = Separation / Clearance (50 mm interior, 25 mm exterior); H = Height (\u2265 600 mm above roof AND above any obstruction within 3 m). Memorize this sequence \u2014 it covers every major metric in Section 1211.\n\n</LawCallout>",
+      "raw": "<LawCallout code=\"nbcp\" section=\"Rule XII, Sec. 1211\" title=\"WALSH Mnemonic — Five Governing Principles\">\n\nW = Walls (thickness by heat load); A = Anchorage (lateral, at 1.80 m intervals); L = Lining (fire clay ≥ 15 mm, or firebrick ≥ 500 mm); S = Separation / Clearance (50 mm interior, 25 mm exterior); H = Height (≥ 600 mm above roof AND above any obstruction within 3 m). Memorize this sequence — it covers every major metric in Section 1211.\n\n</LawCallout>",
       "raw_hash": "sha256:a3caba928c0abcf91fbd7eb92c425f358b19621cad9bf89a6396a42f0c644dce",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"LawCallout\" status=\"new\"]\nExtracted summary:\n- Props: code=\"nbcp\", section=\"Rule XII, Sec. 1211\", title=\"WALSH Mnemonic \u2014 Five Governing Principles\"\n- Text: W = Walls (thickness by heat load); A = Anchorage (lateral, at 1.80 m intervals); L = Lining (fire clay \u2265 15 mm, or firebrick \u2265 500 mm); S = Separation / Clearance (50 mm interior, 25 mm exterior); H = Height (\u2265 600 mm above roof AND above any obstruction within 3 m). Memorize this sequence \u2014 it covers every major metric in Section 1211.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"LawCallout\" status=\"new\"]\nExtracted summary:\n- Props: code=\"nbcp\", section=\"Rule XII, Sec. 1211\", title=\"WALSH Mnemonic — Five Governing Principles\"\n- Text: W = Walls (thickness by heat load); A = Anchorage (lateral, at 1.80 m intervals); L = Lining (fire clay ≥ 15 mm, or firebrick ≥ 500 mm); S = Separation / Clearance (50 mm interior, 25 mm exterior); H = Height (≥ 600 mm above roof AND above any obstruction within 3 m). Memorize this sequence — it covers every major metric in Section 1211.\n[/SLATECAMP_UI_BLOCK]",
       "placeholder_hash": "sha256:267ba19b108e8b7ee8cefb062c38b8eb2bf57d3ef97d4ca39cdcef4626ec4ec8",
       "props": {
         "code": "nbcp",
         "section": "Rule XII, Sec. 1211",
-        "title": "WALSH Mnemonic \u2014 Five Governing Principles"
+        "title": "WALSH Mnemonic — Five Governing Principles"
       },
       "props_json": {
         "code": "nbcp",
         "section": "Rule XII, Sec. 1211",
-        "title": "WALSH Mnemonic \u2014 Five Governing Principles"
+        "title": "WALSH Mnemonic — Five Governing Principles"
       },
-      "props_text": "code=\"nbcp\" section=\"Rule XII, Sec. 1211\" title=\"WALSH Mnemonic \u2014 Five Governing Principles\"",
-      "children_raw": "\n\nW = Walls (thickness by heat load); A = Anchorage (lateral, at 1.80 m intervals); L = Lining (fire clay \u2265 15 mm, or firebrick \u2265 500 mm); S = Separation / Clearance (50 mm interior, 25 mm exterior); H = Height (\u2265 600 mm above roof AND above any obstruction within 3 m). Memorize this sequence \u2014 it covers every major metric in Section 1211.\n\n",
-      "children_text": "W = Walls (thickness by heat load); A = Anchorage (lateral, at 1.80 m intervals); L = Lining (fire clay \u2265 15 mm, or firebrick \u2265 500 mm); S = Separation / Clearance (50 mm interior, 25 mm exterior); H = Height (\u2265 600 mm above roof AND above any obstruction within 3 m). Memorize this sequence \u2014 it covers every major metric in Section 1211.",
+      "props_text": "code=\"nbcp\" section=\"Rule XII, Sec. 1211\" title=\"WALSH Mnemonic — Five Governing Principles\"",
+      "children_raw": "\n\nW = Walls (thickness by heat load); A = Anchorage (lateral, at 1.80 m intervals); L = Lining (fire clay ≥ 15 mm, or firebrick ≥ 500 mm); S = Separation / Clearance (50 mm interior, 25 mm exterior); H = Height (≥ 600 mm above roof AND above any obstruction within 3 m). Memorize this sequence — it covers every major metric in Section 1211.\n\n",
+      "children_text": "W = Walls (thickness by heat load); A = Anchorage (lateral, at 1.80 m intervals); L = Lining (fire clay ≥ 15 mm, or firebrick ≥ 500 mm); S = Separation / Clearance (50 mm interior, 25 mm exterior); H = Height (≥ 600 mm above roof AND above any obstruction within 3 m). Memorize this sequence — it covers every major metric in Section 1211.",
       "status": "new"
     },
     {
       "block_id": "ui_0003",
       "block_type": "mdx_component",
       "component_name": "Tip",
-      "raw": "<Tip>\n\nRemember the fireplace dimensions sequence: 200 mm outer wall \u2192 250 mm firebox wall \u2192 500 mm firebox depth \u2192 10 mm max firebrick joint. Say it like a phone number: \"Two, two-fifty, five-hundred, ten.\"\n\n</Tip>",
+      "raw": "<Tip>\n\nRemember the fireplace dimensions sequence: 200 mm outer wall → 250 mm firebox wall → 500 mm firebox depth → 10 mm max firebrick joint. Say it like a phone number: \"Two, two-fifty, five-hundred, ten.\"\n\n</Tip>",
       "raw_hash": "sha256:ac8262efa63ab3712057059a3e4a788b37fb4e476ef9f3331c0925ff0736b179",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"Tip\" status=\"new\"]\nExtracted summary:\n- Props: (none)\n- Text: Remember the fireplace dimensions sequence: 200 mm outer wall \u2192 250 mm firebox wall \u2192 500 mm firebox depth \u2192 10 mm max firebrick joint. Say it like a phone number: \"Two, two-fifty, five-hundred, ten.\"\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"Tip\" status=\"new\"]\nExtracted summary:\n- Props: (none)\n- Text: Remember the fireplace dimensions sequence: 200 mm outer wall → 250 mm firebox wall → 500 mm firebox depth → 10 mm max firebrick joint. Say it like a phone number: \"Two, two-fifty, five-hundred, ten.\"\n[/SLATECAMP_UI_BLOCK]",
       "placeholder_hash": "sha256:ca6a52db3f502fcd0356313f8a23bd22c3c6a593cdee1f1a8d1a6a597f760b76",
       "props": {},
       "props_json": {},
       "props_text": null,
-      "children_raw": "\n\nRemember the fireplace dimensions sequence: 200 mm outer wall \u2192 250 mm firebox wall \u2192 500 mm firebox depth \u2192 10 mm max firebrick joint. Say it like a phone number: \"Two, two-fifty, five-hundred, ten.\"\n\n",
-      "children_text": "Remember the fireplace dimensions sequence: 200 mm outer wall \u2192 250 mm firebox wall \u2192 500 mm firebox depth \u2192 10 mm max firebrick joint. Say it like a phone number: \"Two, two-fifty, five-hundred, ten.\"",
+      "children_raw": "\n\nRemember the fireplace dimensions sequence: 200 mm outer wall → 250 mm firebox wall → 500 mm firebox depth → 10 mm max firebrick joint. Say it like a phone number: \"Two, two-fifty, five-hundred, ten.\"\n\n",
+      "children_text": "Remember the fireplace dimensions sequence: 200 mm outer wall → 250 mm firebox wall → 500 mm firebox depth → 10 mm max firebrick joint. Say it like a phone number: \"Two, two-fifty, five-hundred, ten.\"",
       "status": "new"
     },
     {
       "block_id": "ui_0004",
       "block_type": "mdx_component",
       "component_name": "Warn",
-      "raw": "<Warn>\n\nThere are TWO concurrent height conditions. The chimney must be \u2265 600 mm above the roof surface AND \u2265 600 mm above the highest point of any building element within 3.00 m of the chimney. If a parapet wall, dormer, or adjacent structure is within 3.00 m and taller than the chimney top, the chimney fails \u2014 even if it meets the 600 mm above-roof condition. Both conditions must be satisfied simultaneously.\n\n</Warn>",
+      "raw": "<Warn>\n\nThere are TWO concurrent height conditions. The chimney must be ≥ 600 mm above the roof surface AND ≥ 600 mm above the highest point of any building element within 3.00 m of the chimney. If a parapet wall, dormer, or adjacent structure is within 3.00 m and taller than the chimney top, the chimney fails — even if it meets the 600 mm above-roof condition. Both conditions must be satisfied simultaneously.\n\n</Warn>",
       "raw_hash": "sha256:8a8cce617290303ede72db23cad5ccf4cd7ec1bd11340d05cb7ba4b93362da51",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"Warn\" status=\"new\"]\nExtracted summary:\n- Props: (none)\n- Text: There are TWO concurrent height conditions. The chimney must be \u2265 600 mm above the roof surface AND \u2265 600 mm above the highest point of any building element within 3.00 m of the chimney. If a parapet wall, dormer, or adjacent structure is within 3.00 m and taller than the chimney top, the chimney fails \u2014 even if it meets the 600 mm above-roof condition. Both conditions must be satisfied simultaneously.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"Warn\" status=\"new\"]\nExtracted summary:\n- Props: (none)\n- Text: There are TWO concurrent height conditions. The chimney must be ≥ 600 mm above the roof surface AND ≥ 600 mm above the highest point of any building element within 3.00 m of the chimney. If a parapet wall, dormer, or adjacent structure is within 3.00 m and taller than the chimney top, the chimney fails — even if it meets the 600 mm above-roof condition. Both conditions must be satisfied simultaneously.\n[/SLATECAMP_UI_BLOCK]",
       "placeholder_hash": "sha256:2b8117a5675eac975f53689982f868def4d74f3cb5f8dfa61305a9da23afb984",
       "props": {},
       "props_json": {},
       "props_text": null,
-      "children_raw": "\n\nThere are TWO concurrent height conditions. The chimney must be \u2265 600 mm above the roof surface AND \u2265 600 mm above the highest point of any building element within 3.00 m of the chimney. If a parapet wall, dormer, or adjacent structure is within 3.00 m and taller than the chimney top, the chimney fails \u2014 even if it meets the 600 mm above-roof condition. Both conditions must be satisfied simultaneously.\n\n",
-      "children_text": "There are TWO concurrent height conditions. The chimney must be \u2265 600 mm above the roof surface AND \u2265 600 mm above the highest point of any building element within 3.00 m of the chimney. If a parapet wall, dormer, or adjacent structure is within 3.00 m and taller than the chimney top, the chimney fails \u2014 even if it meets the 600 mm above-roof condition. Both conditions must be satisfied simultaneously.",
+      "children_raw": "\n\nThere are TWO concurrent height conditions. The chimney must be ≥ 600 mm above the roof surface AND ≥ 600 mm above the highest point of any building element within 3.00 m of the chimney. If a parapet wall, dormer, or adjacent structure is within 3.00 m and taller than the chimney top, the chimney fails — even if it meets the 600 mm above-roof condition. Both conditions must be satisfied simultaneously.\n\n",
+      "children_text": "There are TWO concurrent height conditions. The chimney must be ≥ 600 mm above the roof surface AND ≥ 600 mm above the highest point of any building element within 3.00 m of the chimney. If a parapet wall, dormer, or adjacent structure is within 3.00 m and taller than the chimney top, the chimney fails — even if it meets the 600 mm above-roof condition. Both conditions must be satisfied simultaneously.",
       "status": "new"
     }
   ],

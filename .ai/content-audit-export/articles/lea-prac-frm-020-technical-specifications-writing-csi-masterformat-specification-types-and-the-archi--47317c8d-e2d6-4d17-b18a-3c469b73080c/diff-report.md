@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-architect-s-responsibility
 
-Generated: 2026-05-03T10:55:53.118Z
+Generated: 2026-05-03T11:49:27.875Z
 Article ID: 47317c8d-e2d6-4d17-b18a-3c469b73080c
 Changed: true
 Safe to push locally: true

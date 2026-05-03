@@ -1,10 +1,9 @@
 {
-  "attempted_at": "2026-05-03T10:55:43.867Z",
+  "attempted_at": "2026-05-03T11:49:20.911Z",
   "dry_run": true,
   "apply": false,
   "pushed": false,
   "blockers": [
-    "original.md hash does not match article metadata export hash.",
     "diff-report.json marks candidate unsafe.",
     "Candidate has unresolved placeholders.",
     "--all-safe skipped article because diff-report is unsafe."
@@ -20,7 +19,7 @@
   ],
   "remote_hash_before": "sha256:784c9f37d865fd8b757e7c41433c194b7374d3653878595b2310b7483267ca47",
   "original_hash": "sha256:784c9f37d865fd8b757e7c41433c194b7374d3653878595b2310b7483267ca47",
-  "candidate_hash": "sha256:06470ac34e69cdcc3450a5f328617a63fa466e048abda9a52e29c002d94dc2b9",
+  "candidate_hash": "sha256:38f35977b50777d93139cab4b6146a3d39977466f6ce1e1d84636514cb84bb41",
   "stale_check_passed": true,
   "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
 }

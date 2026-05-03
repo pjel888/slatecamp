@@ -4,7 +4,7 @@
   "normalized_created_at": "2026-05-01T13:33:43.858Z",
   "parser_version": "ui-block-parser-v1",
   "original_content_hash": "sha256:8ea216926fd4c9d3f930d9b7f11ec2e0fa59812a0bfea9d61346a345bdd6f30b",
-  "normalized_content_hash": "5e81aafbe0de8fe1efee6e04e980287c39015ea6e8b18a5e8c513fd0ca224e51",
+  "normalized_content_hash": "905e0a7d1eda95e73f7b29698e51d4e3d855905ce5e359f02eef4621eda82d0f",
   "ui_block_count": 5,
   "total_blocks": 2,
   "blocks": [
@@ -34,7 +34,7 @@
       "block_id": "ui_0002",
       "block_type": "mdx_component",
       "component_name": "WikiMistakeList",
-      "raw": "<WikiMistakeList mistakes={[\"Assuming Substantial Completion and Final Completion are the same milestone (They are distinct\u2014substantial means ready for use; final means all work done)\", \"Thinking the guarantee period runs from Final Completion (It runs from Substantial Completion per UAP Doc 301\u2014critical distinction)\", \"Believing the architect should withhold Substantial Completion certificate until all defects are corrected (Substantial Completion is occupancy readiness; Final Completion is when defects are corrected)\", \"Confusing liquidated damages end date with Final Completion (Delay damages end at Substantial Completion, not Final Completion)\", \"Assuming punch list items must all be trivial (Punch list can include significant work\u2014the criterion is that owner can occupy for intended use despite the items)\", \"Thinking the contractor's guarantee bond begins after all defects are corrected (It starts from Substantial Completion date, even if Final Completion is later)\", \"Misunderstanding that risk and insurance responsibility shift at Substantial Completion (Owner assumes risk and must insure at substantial completion, before final completion)\", \"Believing the architect cannot certify Substantial Completion if any work remains (Substantial completion does not require perfection\u2014only occupancy readiness)\"] />",
+      "raw": "<WikiMistakeList mistakes={[\"Assuming Substantial Completion and Final Completion are the same milestone (They are distinct—substantial means ready for use; final means all work done)\", \"Thinking the guarantee period runs from Final Completion (It runs from Substantial Completion per UAP Doc 301—critical distinction)\", \"Believing the architect should withhold Substantial Completion certificate until all defects are corrected (Substantial Completion is occupancy readiness; Final Completion is when defects are corrected)\", \"Confusing liquidated damages end date with Final Completion (Delay damages end at Substantial Completion, not Final Completion)\", \"Assuming punch list items must all be trivial (Punch list can include significant work—the criterion is that owner can occupy for intended use despite the items)\", \"Thinking the contractor's guarantee bond begins after all defects are corrected (It starts from Substantial Completion date, even if Final Completion is later)\", \"Misunderstanding that risk and insurance responsibility shift at Substantial Completion (Owner assumes risk and must insure at substantial completion, before final completion)\", \"Believing the architect cannot certify Substantial Completion if any work remains (Substantial completion does not require perfection—only occupancy readiness)\"] />",
       "raw_hash": "sha256:e3d6fa0e0fcabf272702bf9c676ebc4ac499939fadea591aa09759ddea112c6a",
       "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=true, Assuming=true, Substantial=true, Completion=true, and=true, Final=true, are=true, the=true, same=true, milestone=true, They=true, distinct=true\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
       "placeholder_hash": "sha256:74fb310ff61ee23712c1949836a30872d6681c02535ef550352bab649c2ce65b",
@@ -234,7 +234,7 @@
         "perfection": true,
         "only": true
       },
-      "props_text": "mistakes={[\"Assuming Substantial Completion and Final Completion are the same milestone (They are distinct\u2014substantial means ready for use; final means all work done)\", \"Thinking the guarantee period runs from Final Completion (It runs from Substantial Completion per UAP Doc 301\u2014critical distinction)\", \"Believing the architect should withhold Substantial Completion certificate until all defects are corrected (Substantial Completion is occupancy readiness; Final Completion is when defects are corrected)\", \"Confusing liquidated damages end date with Final Completion (Delay damages end at Substantial Completion, not Final Completion)\", \"Assuming punch list items must all be trivial (Punch list can include significant work\u2014the criterion is that owner can occupy for intended use despite the items)\", \"Thinking the contractor's guarantee bond begins after all defects are corrected (It starts from Substantial Completion date, even if Final Completion is later)\", \"Misunderstanding that risk and insurance responsibility shift at Substantial Completion (Owner assumes risk and must insure at substantial completion, before final completion)\", \"Believing the architect cannot certify Substantial Completion if any work remains (Substantial completion does not require perfection\u2014only occupancy readiness)\"]",
+      "props_text": "mistakes={[\"Assuming Substantial Completion and Final Completion are the same milestone (They are distinct—substantial means ready for use; final means all work done)\", \"Thinking the guarantee period runs from Final Completion (It runs from Substantial Completion per UAP Doc 301—critical distinction)\", \"Believing the architect should withhold Substantial Completion certificate until all defects are corrected (Substantial Completion is occupancy readiness; Final Completion is when defects are corrected)\", \"Confusing liquidated damages end date with Final Completion (Delay damages end at Substantial Completion, not Final Completion)\", \"Assuming punch list items must all be trivial (Punch list can include significant work—the criterion is that owner can occupy for intended use despite the items)\", \"Thinking the contractor's guarantee bond begins after all defects are corrected (It starts from Substantial Completion date, even if Final Completion is later)\", \"Misunderstanding that risk and insurance responsibility shift at Substantial Completion (Owner assumes risk and must insure at substantial completion, before final completion)\", \"Believing the architect cannot certify Substantial Completion if any work remains (Substantial completion does not require perfection—only occupancy readiness)\"]",
       "children_raw": null,
       "children_text": null,
       "start_offset": 6698,
@@ -249,12 +249,12 @@
     {
       "block_id": "ui_0005",
       "component_name": "LawCallout",
-      "raw": "<LawCallout code=\"ra9266\" section=\"UAP Doc 301 \u00a730-33\" title=\"Substantial Completion vs. Final Completion\">\nSubstantial Completion: Work sufficiently complete for owner occupancy despite minor punch list items. Contractor's liability for liquidated damages ends. Owner assumes responsibility. Architect issues Certificate of Substantial Completion. Final Completion: All work finished, defects remedied, documentation submitted. Contractor's 1-year Guarantee Bond runs from Substantial Completion date, NOT Final Completion.\n</LawCallout>",
+      "raw": "<LawCallout code=\"ra9266\" section=\"UAP Doc 301 §30-33\" title=\"Substantial Completion vs. Final Completion\">\nSubstantial Completion: Work sufficiently complete for owner occupancy despite minor punch list items. Contractor's liability for liquidated damages ends. Owner assumes responsibility. Architect issues Certificate of Substantial Completion. Final Completion: All work finished, defects remedied, documentation submitted. Contractor's 1-year Guarantee Bond runs from Substantial Completion date, NOT Final Completion.\n</LawCallout>",
       "placeholder": "[SLATECAMP_UI_BLOCK:ui_0005 component=\"LawCallout\" status=\"preserved\"]",
-      "props_text": "code=ra9266, section=UAP Doc 301 \u00a730-33, title=Substantial Completion vs. Final Completion",
+      "props_text": "code=ra9266, section=UAP Doc 301 §30-33, title=Substantial Completion vs. Final Completion",
       "props_json": {
         "code": "ra9266",
-        "section": "UAP Doc 301 \u00a730-33",
+        "section": "UAP Doc 301 §30-33",
         "title": "Substantial Completion vs. Final Completion"
       },
       "children_raw": "Substantial Completion: Work sufficiently complete for owner occupancy despite minor punch list items. Contractor's liability for liquidated damages ends. Owner assumes responsibility. Architect issues Certificate of Substantial Completion. Final Completion: All work finished, defects remedied, documentation submitted. Contractor's 1-year Guarantee Bond runs from Substantial Completion date, NOT Final Completion.",
@@ -265,13 +265,13 @@
     {
       "block_id": "ui_0004",
       "component_name": "LawCallout",
-      "raw": "<LawCallout code=\"ra9266\" section=\"UAP Doc 301 \u00a730-33\" title=\"Punch List \u2014 Contractor's Remaining Obligations\">\nThe punch list is a formal contract document created by the architect at Substantial Completion inspection. It itemizes outstanding work items that must be completed before Final Completion. The contractor completes punch list items at NO additional cost. The architect verifies correction and issues Certificate of Final Completion. Items indicating Substantial Completion was premature (structural, major systems) should NOT appear on a punch list.\n</LawCallout>",
+      "raw": "<LawCallout code=\"ra9266\" section=\"UAP Doc 301 §30-33\" title=\"Punch List — Contractor's Remaining Obligations\">\nThe punch list is a formal contract document created by the architect at Substantial Completion inspection. It itemizes outstanding work items that must be completed before Final Completion. The contractor completes punch list items at NO additional cost. The architect verifies correction and issues Certificate of Final Completion. Items indicating Substantial Completion was premature (structural, major systems) should NOT appear on a punch list.\n</LawCallout>",
       "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"LawCallout\" status=\"preserved\"]",
-      "props_text": "code=ra9266, section=UAP Doc 301 \u00a730-33, title=Punch List \u2014 Contractor",
+      "props_text": "code=ra9266, section=UAP Doc 301 §30-33, title=Punch List — Contractor",
       "props_json": {
         "code": "ra9266",
-        "section": "UAP Doc 301 \u00a730-33",
-        "title": "Punch List \u2014 Contractor"
+        "section": "UAP Doc 301 §30-33",
+        "title": "Punch List — Contractor"
       },
       "children_raw": "The punch list is a formal contract document created by the architect at Substantial Completion inspection. It itemizes outstanding work items that must be completed before Final Completion. The contractor completes punch list items at NO additional cost. The architect verifies correction and issues Certificate of Final Completion. Items indicating Substantial Completion was premature (structural, major systems) should NOT appear on a punch list.",
       "children_text": "The punch list is a formal contract document created by the architect at Substantial Completion inspection. It itemizes outstanding work items that must be completed before Final Completion. The contractor completes punch list items at NO additional cost. The architect verifies correction and issues Certificate of Final Completion. Items indicating Substantial Completion was premature (structural, major systems) should NOT appear on a punch list.",
@@ -281,12 +281,12 @@
     {
       "block_id": "ui_0003",
       "component_name": "ExamTip",
-      "raw": "<ExamTip>\n  **LEA Priority \u2014 Key Punch List Rules:**\n  1. Created by architect at Substantial Completion inspection\n  2. Minor items only (not substantial defects suggesting premature certification)\n  3. Contractor completes at no extra cost \u2014 NOT a change order\n  4. Architect verifies corrections before issuing Final Completion\n  5. Binding contract document \u2014 not optional suggestions\n</ExamTip>",
+      "raw": "<ExamTip>\n  **LEA Priority — Key Punch List Rules:**\n  1. Created by architect at Substantial Completion inspection\n  2. Minor items only (not substantial defects suggesting premature certification)\n  3. Contractor completes at no extra cost — NOT a change order\n  4. Architect verifies corrections before issuing Final Completion\n  5. Binding contract document — not optional suggestions\n</ExamTip>",
       "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"ExamTip\" status=\"preserved\"]",
       "props_text": "(none)",
       "props_json": {},
-      "children_raw": "**LEA Priority \u2014 Key Punch List Rules:**\n  1. Created by architect at Substantial Completion inspection\n  2. Minor items only (not substantial defects suggesting premature certification)\n  3. Contractor completes at no extra cost \u2014 NOT a change order\n  4. Architect verifies corrections before issuing Final Completion\n  5. Binding contract document \u2014 not optional suggestions",
-      "children_text": "**LEA Priority \u2014 Key Punch List Rules:**\n  1. Created by architect at Substantial Completion inspection\n  2. Minor items only (not substantial defects suggesting premature certification)\n  3. Contractor completes at no extra cost \u2014 NOT a change order\n  4. Architect verifies corrections before issuing Final Completion\n  5. Binding contract document \u2014 not optional suggestions",
+      "children_raw": "**LEA Priority — Key Punch List Rules:**\n  1. Created by architect at Substantial Completion inspection\n  2. Minor items only (not substantial defects suggesting premature certification)\n  3. Contractor completes at no extra cost — NOT a change order\n  4. Architect verifies corrections before issuing Final Completion\n  5. Binding contract document — not optional suggestions",
+      "children_text": "**LEA Priority — Key Punch List Rules:**\n  1. Created by architect at Substantial Completion inspection\n  2. Minor items only (not substantial defects suggesting premature certification)\n  3. Contractor completes at no extra cost — NOT a change order\n  4. Architect verifies corrections before issuing Final Completion\n  5. Binding contract document — not optional suggestions",
       "parse_status": "parsed",
       "raw_hash": "sha256:b29a033e9f4d6ff1bcf46f7aadc40449c351c220de5928cc7211db29ee9b6ff6"
     }

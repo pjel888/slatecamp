@@ -1,32 +1,32 @@
 # Content Diff Report: lea-theo-001-09-core-concept
 
-Generated: 2026-05-03T07:49:31.594Z
+Generated: 2026-05-03T11:50:06.787Z
 Article ID: 25607252-c20a-4013-99f5-af11e829fd18
 Changed: true
 Safe to push locally: false
 
 ## Hashes
 
-- Original: `sha256:881803f672dd4d7c2d63677a6ae5d81d5a47236936986a70ef111f0eed784801`
-- Normalized: `sha256:28af954fa0bf6c05b7454648bc51feb458eba2b1b8217965c93315aa37b639de`
-- Candidate: `sha256:989f241bc7078c90dc0515565f3be1b2d66aa791f24a49f0234312ca3bd85a97`
+- Original: `sha256:f10b5c5e7f105adbfb31982f0c4040eec42859ef361bc098735682106cbb3da7`
+- Normalized: `sha256:5437702221c00b896795ecec07c8b8dceb5b5d7754f605c3846340b486008326`
+- Candidate: `sha256:6b35c0da29a9cc8ed7d701f176b9e520e0b858e6de5f3a9bb08574c8f118b287`
 
 ## Line summary
 
-- Changed lines: 94
-- Inserted lines: 7
+- Changed lines: 98
+- Inserted lines: 11
 - Deleted lines: 0
 
 ## UI block preservation
 
 - UI blocks expected: 13
-- UI blocks preserved: 12
-- UI blocks changed/missing: 1
+- UI blocks preserved: 13
+- UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 
 ## Blockers
 
-- Candidate is missing 1 preserved UI block(s).
+- original.md hash does not match article metadata export hash.
 
 ## Warnings
 

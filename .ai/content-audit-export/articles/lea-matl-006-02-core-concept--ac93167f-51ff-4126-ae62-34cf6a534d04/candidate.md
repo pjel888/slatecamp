@@ -74,17 +74,7 @@ In Philippine wind zones, collar ties in the upper 1/3 are recommended for $V > 
  correction='Truss span depends on geometry. Fink W-pattern distributes load more efficiently than Queen Post verticals. Span capability increases with geometric complexity.'
 />
 
-<WikiMistakeCard
- mistake='Treating collar ties as a mandatory NSCP 2015 code command in all circumstances.'
- correction='Collar ties are a standard design practice for controlling lateral thrust and rafter spreading. While not explicitly mandated by every section of the NSCP, they are essential in typhoon zones ($V > 30\text{ m/s}$) to ensure structural stability.'
-/>
-
-<WikiMistakeList
- mistakes={[
- 'Designing purlins without accounting for corrugated roof load concentration at ribs',
- 'Using span-to-depth ratio >8:1 for residential trusses, which typically causes L/240 deflection limit exceedance',
- 'Neglecting wind uplift in truss web member design, causing tension reversal in diagonals',
- 'Incorrectly calculating collar tie load as tributary rafter load alone without wind multipliers',
+ibutary rafter load alone without wind multipliers',
  ]}
 />
 
@@ -94,9 +84,8 @@ See also within Roofing, Waterproofing, and Insulation: **lea-matl-006-01-core-c
 
 > **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
 
-
 [SLATECAMP_UI_BLOCK:ui_e001 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Exam Tip — Identify roofing system components — underlayment, flashings:** This topic is heavily tested in Area B. Focus on mastering material classifications, key property values (compressive strength, R-value, unit weight), and estimating formulas. Create comparison tables to distinguish similar materials (e.g., cement Types I–V, glass types, insulation types). Practice computational problems for concrete volume, board foot, CHB count, and paint coverage — these are reliable exam items.
+- Text: **LEA Exam Tip — Identify roofing system components — underlayment, flashings:** This topic is heavily tested in Area B. Focus on mastering material classifications, key property values (compressive strength, R-value, unit weight), and estimating formulas. Create comparison tables to distinguish similar materials (e.g., cement Types I–V, glass types, insulation types). Practice computational problems for concrete volume, board foot, CHB count, and paint coverage — these are reliable exam items.
 [/SLATECAMP_UI_BLOCK]

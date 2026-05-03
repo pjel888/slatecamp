@@ -1,5 +1,5 @@
 # Interior Doors and Hardware
-### BP 344 (2024 IRR) — Philippine Architecture Licensure Exam Review
+### BP 344 (2024 IRR) — Philippine Licensure Examination for Architects Review
 
 ---
 

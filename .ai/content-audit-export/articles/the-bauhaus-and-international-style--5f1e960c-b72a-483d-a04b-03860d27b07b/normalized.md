@@ -75,7 +75,7 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Trap:** "The Bauhaus and the International Style are the same thing" — FALSE. The Bauhaus was a GERMAN SCHOOL (1919-1933) that taught all arts and crafts. The International Style is a STYLE CLAS
+- Text: **LEA Trap:** "The Bauhaus and the International Style are the same thing" — FALSE. The Bauhaus was a GERMAN SCHOOL (1919-1933) that taught all arts and crafts. The International Style is a STYLE CLAS
 [/SLATECAMP_UI_BLOCK]
 
 

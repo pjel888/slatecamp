@@ -1,6 +1,6 @@
 # Content Diff Report: lodging-and-residential-accessibility
 
-Generated: 2026-05-03T10:55:58.409Z
+Generated: 2026-05-03T11:49:32.307Z
 Article ID: 7a3b0ff7-407f-40cc-b398-fca6358f4db7
 Changed: true
 Safe to push locally: true

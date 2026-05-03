@@ -1,7 +1,5 @@
 # North American Indigenous Architecture
 
-
-
 ## Learning Goal
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
@@ -44,18 +42,10 @@ Think: *"People Live Together"* — all three traditions are fundamentally about
 | **Longhouse** | Haudenosaunee (Iroquois) Confederacy; Northeastern woodlands; pre-contact through historic period | Sapling pole frame (up to 1,000 saplings per 50 m house); bark cladding (elm, cedar); avg. 24 × 5.5 × 5.5 m; up to 75 m+ | Central corridor with multiple hearths; family compartments along both sides; storage platforms above; smoke holes in barrel-vaulted roof | Shared hearths provide communal heating in cold winters; flexible timber frame absorbs wind loads; elongated plan maximizes interior area per unit of material |
 | **Tipi** | Plains nations (Lakota, Cheyenne, Blackfoot, others); widespread post-1700s (horse era) | 14–20 lodgepole pine or red cedar poles; bison hide or canvas cover; 4–6 m height | Conical form; adjustable smoke flaps at apex; tilted axis (steeper windward side); interior liner for insulation and draft control | Low profile resists sustained high winds; chimney-effect ventilation (base intake, apex exhaust); rapid assembly/disassembly (under 30 minutes by experienced users); portable for nomadic life |
 
-
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
 Extracted summary:
 
-\[SLATECAMP_UI_BLOCK:ui_0005 component="Example" status="preserved"]
-Extracted summary:
-- Props: 
-- Text: The Barcelona Pavilion (1929) by Mies van der Rohe exemplifies free-flowing space through freestanding planes of marble, onyx, and glass supported by cruciform steel columns — no interior doors, no co
-\[/SLATECAMP_UI_BLOCK\]
-- Props: (none)
-- Text: **LEA Pattern:** Questions about this architect often present an unfamiliar b...
-[/SLATECAMP_UI_BLOCK]
+\
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="Example" status="preserved"]
 Extracted summary:

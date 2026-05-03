@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role
 
-Generated: 2026-05-03T07:48:50.135Z
+Generated: 2026-05-03T11:49:47.795Z
 Article ID: 332b32e5-1890-4765-a7b3-317790804247
 Changed: true
 Safe to push locally: true
@@ -8,8 +8,8 @@ Safe to push locally: true
 ## Hashes
 
 - Original: `sha256:15e3531dd2983c92357083b05bfffefab9c2711c15520482d8f7503c51389aad`
-- Normalized: `sha256:f95e3ac7f18603e4cc1a02cf7915f90ed46b46f0ab487aaef5ae74588e1b8eb6`
-- Candidate: `sha256:9daa64f80edd28322a585fa28906fa9278639ccdf2cb047aca583860fc33da9a`
+- Normalized: `sha256:c37ff80d3bd37f1c765270a11e36cf659be6b32dcb59825566cf6b5a951598f4`
+- Candidate: `sha256:7970c889faaf3cf5e14eaae47132f372918fa33765372349b8a13e1a4a488649`
 
 ## Line summary
 

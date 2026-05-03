@@ -6,7 +6,7 @@ After reading this article, you should be able to:
 - Describe the deliverables of Design Development (Phase 3 under SPP 202): detailed drawings, specifications, and refined cost estimates.
 - Explain the coordination and integration of structural, MEP, and other engineering consultants during this phase.
 - Identify the fee allocation for Design Development (20% of total design fees under SPP 202).
-- Apply Design Development phase requirements to ALE scenarios involving technical documentation and consultant coordination.
+- Apply Design Development phase requirements to LEA scenarios involving technical documentation and consultant coordination.
 
 Design Development builds upon the approved schematic design to produce detailed drawings, specifications, and cost estimates. This phase earns 20% of the architect's total design fees and focuses on translating conceptual design into technical documents ready for contract document preparation.
 

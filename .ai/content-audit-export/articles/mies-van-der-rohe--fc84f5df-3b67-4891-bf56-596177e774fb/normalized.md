@@ -1,7 +1,5 @@
 # Mies van der Rohe
 
-
-
 ## Learning Goal
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
@@ -58,15 +56,7 @@ You are standing inside the Barcelona Pavilion and notice there are no interior 
 [SLATECAMP_UI_BLOCK:ui_0002 component="Example" status="preserved"]
 Extracted summary:
 
-\[SLATECAMP_UI_BLOCK:ui_0005 component="Example" status="preserved"]
-Extracted summary:
-- Props: 
-- Text: The Barcelona Pavilion (1929) by Mies van der Rohe exemplifies free-flowing space through freestanding planes of marble, onyx, and glass supported by cruciform steel columns — no interior doors, no co
-\[/SLATECAMP_UI_BLOCK\]
-- Props: (none)
-- Text: The Barcelona Pavilion (1929) by Mies van der Rohe exemplifies free-flowing s...
-[/SLATECAMP_UI_BLOCK]
-
+\
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
 Extracted summary:

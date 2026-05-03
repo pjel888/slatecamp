@@ -56,7 +56,7 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Trap:** "Inca stone walls used mortar to hold stones together" — FALSE. Inca ashlar masonry is dry-stone (no mortar). The precise fitting was achieved through trial-and-error pecking and hammeri
+- Text: **LEA Trap:** "Inca stone walls used mortar to hold stones together" — FALSE. Inca ashlar masonry is dry-stone (no mortar). The precise fitting was achieved through trial-and-error pecking and hammeri
 [/SLATECAMP_UI_BLOCK]
 
 

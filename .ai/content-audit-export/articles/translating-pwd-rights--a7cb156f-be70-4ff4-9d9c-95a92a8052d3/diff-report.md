@@ -1,15 +1,15 @@
 # Content Diff Report: translating-pwd-rights
 
-Generated: 2026-05-03T07:49:34.061Z
+Generated: 2026-05-03T11:50:07.561Z
 Article ID: a7cb156f-be70-4ff4-9d9c-95a92a8052d3
 Changed: true
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:beecc6c3eb243ec0bde1e795ab80f506af47fcd2b521fed6d16667f18802707d`
-- Normalized: `sha256:b45375667bd1c6639c03eed3e78490d6e210b465f7d22bddc97c05e961e33498`
-- Candidate: `sha256:4e11f1a878dcc88d06c7d3aea299f9100df7fdc95fcc930650beb8e60b852607`
+- Original: `sha256:66b9adb67c2f065fabd75eeefa3137a2178d16bcdcb98c6073419f033400e80e`
+- Normalized: `sha256:f6afe2986ba92f80deeb9e0315ea549fbd023ceff571863ae5b5b1a27e22be27`
+- Candidate: `sha256:b90ef26dfc5efd28a448652a9bc31b8e949dd1701a255b09f4d59972354dc356`
 
 ## Line summary
 

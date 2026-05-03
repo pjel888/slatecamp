@@ -1,15 +1,15 @@
 # Content Diff Report: fire-resistive-construction-ratings
 
-Generated: 2026-05-03T10:55:42.289Z
+Generated: 2026-05-03T11:49:19.729Z
 Article ID: aef59aa2-220e-47fc-9492-6b2bd98f9bea
 Changed: true
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:257933bc4ea185e305721484f79eb8f07452bcdd10bd5b0f92ef435006710390`
-- Normalized: `sha256:928dbe48b54068bf118aa70aa699f91ff75c2e8c06917178d36cebac13987587`
-- Candidate: `sha256:f79297000c9351612a850663e39c8f1505e4c39e76c13d55af67c162ac6b4f37`
+- Original: `sha256:9676700a5deaad4e4acd613bc2c5702e41fcb16e474d85aa6bbdebbd99e74d04`
+- Normalized: `sha256:4efd42fc680d2e05a065e54dcbaa89682685fbdb6b3e94274a1957c145753480`
+- Candidate: `sha256:7120efde03c1763a74e178c8d01d10706ff301d3431313d1e73b900f1228450d`
 
 ## Line summary
 

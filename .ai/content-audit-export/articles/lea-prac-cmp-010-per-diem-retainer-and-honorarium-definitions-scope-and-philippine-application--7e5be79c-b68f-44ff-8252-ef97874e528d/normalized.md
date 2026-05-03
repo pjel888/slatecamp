@@ -15,8 +15,6 @@ After studying this article, you should be able to:
 - Explain when each method is used in Philippine practice.
 - Apply fee method selection to specific service scenarios.
 
-
-
 ### Per Diem Compensation
 
 Per Diem (Latin for "per day") establishes a daily fee for the architect's time and expertise. The architect charges a fixed daily rate for each day spent on project-related work, regardless of how many hours are worked that day or what specific deliverables result. Per Diem is appropriate for site observation during construction (Construction Administration), site visits for feasibility analysis, expert consultation on specialized projects, or limited architectural services.
@@ -29,20 +27,17 @@ Per Diem works well for Construction Administration when the architect's on-site
 Extracted summary:
 - Props: (none)
 
-
-\[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: **LEA Priority — Fee Computation:** Know the five compensation methods (percentage-of-PCC, MDPE, lump sum, per diem/retainer, reimbursable expenses). Master the sliding scale for Groups 1-3 (5%→4%→3%→
 \[/SLATECAMP_UI_BLOCK\]
-
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
 Extracted summary:
 - Props: code=irr, section=Architect's Guidelines / SPP 202, title=Fee Computation — Regulatory Basis
 - Text: Fee computation under the Architect's Guidelines follows SPP 202 classification groups and the DAEDS/DADS framework. The percentage-of-PCC method applies group-specific rates to Project Construction C...
 [/SLATECAMP_UI_BLOCK]
-
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="KeyValues" status="preserved"]
 Extracted summary:

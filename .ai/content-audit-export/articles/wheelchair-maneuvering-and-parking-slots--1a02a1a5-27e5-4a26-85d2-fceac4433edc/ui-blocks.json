@@ -4,7 +4,7 @@
   "normalized_created_at": "2026-05-01T13:33:43.333Z",
   "parser_version": "ui-block-parser-v1",
   "original_content_hash": "sha256:5bb1d50ad558cc076ee4fdae8bad3e1cf6b111c12c26d2ca07b32dba035e1acd",
-  "normalized_content_hash": "sha256:f2fbc29bd30f8741af4d0910cdc150db2fafec77e705d17fcd628e453157699e",
+  "normalized_content_hash": "9c2a88f931dd1bd2125d1f899b0f944c8f9f515c2271475e565d899fd7905ef3",
   "ui_block_count": 3,
   "total_blocks": 3,
   "blocks": [
@@ -12,22 +12,22 @@
       "block_id": "ui_0001",
       "block_type": "mdx_component",
       "component_name": "LawCallout",
-      "raw": "<LawCallout code=\"bp344\" section=\"Section 6 - Parking Slots\">\n\n\nPer BP 344 2024 IRR Appendix A: accessible ramp minimum clear width = 1200 mm. Preferred slope = 1:20 (5.0%). Acceptable slope = 1:15 (6.67%) with max run 10,500 mm and max rise 700 mm. Maximum slope = 1:12 (8.33%). Landings must be \u22651800 mm in length. Edge protection required where ramp run exceeds 150 mm vertical rise.\n\n\n</LawCallout>",
+      "raw": "<LawCallout code=\"bp344\" section=\"Section 6 - Parking Slots\">\n\n\nPer BP 344 2024 IRR Appendix A: accessible ramp minimum clear width = 1200 mm. Preferred slope = 1:20 (5.0%). Acceptable slope = 1:15 (6.67%) with max run 10,500 mm and max rise 700 mm. Maximum slope = 1:12 (8.33%). Landings must be ≥1800 mm in length. Edge protection required where ramp run exceeds 150 mm vertical rise.\n\n\n</LawCallout>",
       "raw_hash": "sha256:dc554531b2ab4f6522c9dc2c6a0938492ca4bcf25e7f695a2f7a180d25800132",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"LawCallout\" status=\"new\"]\nExtracted summary:\n- Props: code=\"bp344\" title=\"BP 344 2024 IRR \u2014 Ramps Appendix A\"\n- Text: Per BP 344 2024 IRR Appendix A: accessible ramp minimum clear width = 1200 mm. Preferred slope = 1:20 (5.0%). Acceptable slope = 1:15 (6.67%) with max run 10,500 mm and max rise 700 mm. Maximum slope \n[/SLATECAMP_UI_BLOCK]",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"LawCallout\" status=\"new\"]\nExtracted summary:\n- Props: code=\"bp344\" title=\"BP 344 2024 IRR — Ramps Appendix A\"\n- Text: Per BP 344 2024 IRR Appendix A: accessible ramp minimum clear width = 1200 mm. Preferred slope = 1:20 (5.0%). Acceptable slope = 1:15 (6.67%) with max run 10,500 mm and max rise 700 mm. Maximum slope \n[/SLATECAMP_UI_BLOCK]",
       "placeholder_hash": "sha256:c2179822b01ef2adb25896cdbb43e619eab6331cccdf34531bf393bbf4fdeeb1",
       "props": {
         "code": "bp344",
-        "title": "BP 344 2024 IRR \u2014 Ramps Appendix A"
+        "title": "BP 344 2024 IRR — Ramps Appendix A"
       },
       "props_json": {
         "code": "bp344",
-        "title": "BP 344 2024 IRR \u2014 Ramps Appendix A",
+        "title": "BP 344 2024 IRR — Ramps Appendix A",
         "section": "Section 6 - Parking Slots"
       },
-      "props_text": "code=bp344, title=BP 344 2024 IRR \u2014 Ramps Appendix A, section=Section 6 - Parking Slots",
-      "children_raw": "\n\nPer BP 344 2024 IRR Appendix A: accessible ramp minimum clear width = 1200 mm. Preferred slope = 1:20 (5.0%). Acceptable slope = 1:15 (6.67%) with max run 10,500 mm and max rise 700 mm. Maximum slope = 1:12 (8.33%). Landings must be \u22651800 mm in length. Edge protection required where ramp run exceeds 150 mm vertical rise.\n\n",
-      "children_text": "Per BP 344 2024 IRR Appendix A: accessible ramp minimum clear width = 1200 mm. Preferred slope = 1:20 (5.0%). Acceptable slope = 1:15 (6.67%) with max run 10,500 mm and max rise 700 mm. Maximum slope = 1:12 (8.33%). Landings must be \u22651800 mm in length. Edge protection required where ramp run exceeds 150 mm vertical rise.",
+      "props_text": "code=bp344, title=BP 344 2024 IRR — Ramps Appendix A, section=Section 6 - Parking Slots",
+      "children_raw": "\n\nPer BP 344 2024 IRR Appendix A: accessible ramp minimum clear width = 1200 mm. Preferred slope = 1:20 (5.0%). Acceptable slope = 1:15 (6.67%) with max run 10,500 mm and max rise 700 mm. Maximum slope = 1:12 (8.33%). Landings must be ≥1800 mm in length. Edge protection required where ramp run exceeds 150 mm vertical rise.\n\n",
+      "children_text": "Per BP 344 2024 IRR Appendix A: accessible ramp minimum clear width = 1200 mm. Preferred slope = 1:20 (5.0%). Acceptable slope = 1:15 (6.67%) with max run 10,500 mm and max rise 700 mm. Maximum slope = 1:12 (8.33%). Landings must be ≥1800 mm in length. Edge protection required where ramp run exceeds 150 mm vertical rise.",
       "status": "new"
     },
     {
@@ -49,15 +49,15 @@
       "block_id": "ui_0003",
       "block_type": "mdx_component",
       "component_name": "ExamTip",
-      "raw": "<ExamTip >\n\nFor exam problems: first determine whether the question references Appendix A (ramps \u2014 verified dimensions) or Appendix C (parking \u2014 verify availability). If the question gives specific slope/run data, use Appendix A formulas: Run = Rise \u00d7 Slope Ratio. Example: 700 mm rise \u00d7 15 = 10,500 mm max run.\n\n</ExamTip>",
+      "raw": "<ExamTip >\n\nFor exam problems: first determine whether the question references Appendix A (ramps — verified dimensions) or Appendix C (parking — verify availability). If the question gives specific slope/run data, use Appendix A formulas: Run = Rise × Slope Ratio. Example: 700 mm rise × 15 = 10,500 mm max run.\n\n</ExamTip>",
       "raw_hash": "sha256:924a1ad9ab0926a1ca7c49c25aa8608f80f3a0bd8a62b12d02afe20d4c95df40",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"ExamTip\" status=\"new\"]\nExtracted summary:\n- Props: (none)\n- Text: For exam problems: first determine whether the question references Appendix A (ramps \u2014 verified dimensions) or Appendix C (parking \u2014 verify availability). If the question gives specific slope/run data\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"ExamTip\" status=\"new\"]\nExtracted summary:\n- Props: (none)\n- Text: For exam problems: first determine whether the question references Appendix A (ramps — verified dimensions) or Appendix C (parking — verify availability). If the question gives specific slope/run data\n[/SLATECAMP_UI_BLOCK]",
       "placeholder_hash": "sha256:44ade98938fb33db642383ac313e64fe6507c6686bc0ba9685bf7f05cb8c4092",
       "props": {},
       "props_json": {},
       "props_text": null,
-      "children_raw": "\n\nFor exam problems: first determine whether the question references Appendix A (ramps \u2014 verified dimensions) or Appendix C (parking \u2014 verify availability). If the question gives specific slope/run data, use Appendix A formulas: Run = Rise \u00d7 Slope Ratio. Example: 700 mm rise \u00d7 15 = 10,500 mm max run.\n\n",
-      "children_text": "For exam problems: first determine whether the question references Appendix A (ramps \u2014 verified dimensions) or Appendix C (parking \u2014 verify availability). If the question gives specific slope/run data, use Appendix A formulas: Run = Rise \u00d7 Slope Ratio. Example: 700 mm rise \u00d7 15 = 10,500 mm max run.",
+      "children_raw": "\n\nFor exam problems: first determine whether the question references Appendix A (ramps — verified dimensions) or Appendix C (parking — verify availability). If the question gives specific slope/run data, use Appendix A formulas: Run = Rise × Slope Ratio. Example: 700 mm rise × 15 = 10,500 mm max run.\n\n",
+      "children_text": "For exam problems: first determine whether the question references Appendix A (ramps — verified dimensions) or Appendix C (parking — verify availability). If the question gives specific slope/run data, use Appendix A formulas: Run = Rise × Slope Ratio. Example: 700 mm rise × 15 = 10,500 mm max run.",
       "status": "new"
     }
   ],

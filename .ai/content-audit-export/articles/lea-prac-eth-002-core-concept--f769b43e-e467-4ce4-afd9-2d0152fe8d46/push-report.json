@@ -1,23 +1,21 @@
 {
-  "attempted_at": "2026-05-03T07:53:19.677Z",
+  "attempted_at": "2026-05-03T11:50:05.599Z",
   "dry_run": true,
   "apply": false,
   "pushed": false,
-  "blockers": [
-    "diff-report.json marks candidate unsafe.",
-    "UI block preservation failed.",
-    "--all-safe skipped article because diff-report is unsafe."
-  ],
+  "blockers": [],
   "warnings": [
     "Dry-run mode: no Supabase mutation will be performed."
   ],
   "updated_rows_count": 0,
   "article_id": "f769b43e-e467-4ce4-afd9-2d0152fe8d46",
   "slug": "lea-prac-eth-002-core-concept",
-  "preparation_actions": [],
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
   "remote_hash_before": "sha256:370f12746fb95f62dc1edc573dff1a0b5f9d4609a6c10f7d05563df8bf409072",
   "original_hash": "sha256:370f12746fb95f62dc1edc573dff1a0b5f9d4609a6c10f7d05563df8bf409072",
-  "candidate_hash": "sha256:491f066731ee54f86b3297f9a4de5485093fe132240735216669e4e68b4c4598",
+  "candidate_hash": "sha256:315d4af6b8ae94a86bbf368e18aebb4946fec83f35a1414d62bff8209eccc02d",
   "stale_check_passed": true,
   "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
 }

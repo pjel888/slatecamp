@@ -518,7 +518,7 @@ Key items to self-test:
 
 ## Exam Tip
 
-ALE Swipe: Prefabricated buildings require: (1) building permit like any other construction, (2) special inspection for critical connections, (3) third-party certification for structural components, (4) compliance with all fire-resistance requirements. No shortcut on code compliance just because it's factory-built.
+LEA Swipe: Prefabricated buildings require: (1) building permit like any other construction, (2) special inspection for critical connections, (3) third-party certification for structural components, (4) compliance with all fire-resistance requirements. No shortcut on code compliance just because it's factory-built.
 
 ## Cross‑References
 

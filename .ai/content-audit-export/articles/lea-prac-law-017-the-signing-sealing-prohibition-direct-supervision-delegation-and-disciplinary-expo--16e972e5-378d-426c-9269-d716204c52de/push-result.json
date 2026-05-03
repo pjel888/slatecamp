@@ -1,11 +1,11 @@
 {
-  "attempted_at": "2026-05-03T10:55:40.903Z",
+  "attempted_at": "2026-05-03T11:49:18.426Z",
   "dry_run": true,
   "apply": false,
   "pushed": false,
   "blockers": [
     "diff-report.json marks candidate unsafe.",
-    "UI block preservation failed.",
+    "Candidate has unresolved placeholders.",
     "--all-safe skipped article because diff-report is unsafe."
   ],
   "warnings": [
@@ -19,7 +19,7 @@
   ],
   "remote_hash_before": "sha256:ca7e1ac56ba8ed420275028a0e53d01db1f3e65bd7c871adbcdfec8bba04ae10",
   "original_hash": "sha256:ca7e1ac56ba8ed420275028a0e53d01db1f3e65bd7c871adbcdfec8bba04ae10",
-  "candidate_hash": "sha256:af7cf6ff413d36193e80236835f1ef918060c783fc3d16790e1eb2ae09b1fff8",
+  "candidate_hash": "sha256:4f4466fb0d7748d195422cf79847607cdea48479be9cbc68ea1cd512b479dac5",
   "stale_check_passed": true,
   "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
 }

@@ -1,7 +1,7 @@
 {
   "article_id": "f6fe1a69-b3c0-4c94-8341-9291c71c5006",
   "slug": "transport-nodes-escalators-walkways",
-  "generated_at": "2026-05-03T10:56:00.502Z",
+  "generated_at": "2026-05-03T11:49:34.054Z",
   "old_hash": "sha256:bbdf1ce26355ce97f43a1d2f40edd24620520b5de085b00db2e3d8066fb3270b",
   "new_hash": "sha256:7b3281fd488d1b770dd31e2651c01508d6d115aad1edf48c438dfc27cffd4a29",
   "original_hash": "sha256:bbdf1ce26355ce97f43a1d2f40edd24620520b5de085b00db2e3d8066fb3270b",
@@ -11,10 +11,10 @@
   "changed_line_count": 165,
   "inserted_line_count": 28,
   "deleted_line_count": 0,
-  "ui_blocks_original_count": 6,
+  "ui_blocks_original_count": 4,
   "ui_blocks_candidate_count": 4,
-  "ui_blocks_changed_count": 2,
-  "ui_blocks_count": 6,
+  "ui_blocks_changed_count": 0,
+  "ui_blocks_count": 4,
   "unresolved_placeholders_count": 1,
   "preserved_blocks_count": 4,
   "changed_text_summary": {
@@ -25,20 +25,16 @@
     "candidate_line_count": 165
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0002",
-      "ui_0005"
-    ],
-    "changed_count": 2
+    "missing_block_ids": [],
+    "changed_count": 0
   },
   "locally_safe_to_push": false,
   "safe_to_push": false,
   "blockers": [
-    "Candidate contains unresolved UI block placeholders.",
-    "Candidate is missing 2 preserved UI block(s)."
+    "Candidate contains unresolved UI block placeholders."
   ],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate contains unresolved UI block placeholders.; Candidate is missing 2 preserved UI block(s)."
+  "summary": "Unsafe: Candidate contains unresolved UI block placeholders."
 }

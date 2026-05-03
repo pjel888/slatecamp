@@ -1,6 +1,6 @@
 # Content Diff Report: lea-matl-006-03-core-concept
 
-Generated: 2026-05-03T10:55:34.131Z
+Generated: 2026-05-03T11:49:12.769Z
 Article ID: bb772d11-27ac-4ad5-b13a-0d1542106956
 Changed: true
 Safe to push locally: false
@@ -8,28 +8,27 @@ Safe to push locally: false
 ## Hashes
 
 - Original: `sha256:b25e6ae917eb5ffb5544dff2100621f24bf4c2892ee8d674bf52ab7b29ed2636`
-- Normalized: `sha256:683e43b3e56ec34f0ebdb9b41ea04ac4006b14c3cddccf9a18ff760404c6191b`
-- Candidate: `sha256:8051887efa2851a2d53275205f1514ccd80013234a75f029e8f23ed5ae988dd4`
+- Normalized: `sha256:d186631f6be19ea8a697812d8046feec7e0ee38373f50852c15cdd70f0e7ecef`
+- Candidate: `sha256:0326c371180507e7c5976d01d09aad06af3dbc8be9e76823f5d4d60482d555fd`
 
 ## Line summary
 
-- Changed lines: 17
-- Inserted lines: 14
+- Changed lines: 21
+- Inserted lines: 15
 - Deleted lines: 0
 
 ## UI block preservation
 
-- UI blocks expected: 4
-- UI blocks preserved: 4
-- UI blocks changed/missing: 0
+- UI blocks expected: 3
+- UI blocks preserved: 2
+- UI blocks changed/missing: 1
 - Unresolved placeholders: 1
 
 ## Blockers
 
 - Candidate contains unresolved UI block placeholders.
-- original.md hash does not match article metadata export hash.
+- Candidate is missing 1 preserved UI block(s).
 
 ## Warnings
 
-- ui-blocks.json contains unknown custom blocks; push requires review or --force.
 - Remote stale check has not been run by diff; push command must verify Supabase before mutation.

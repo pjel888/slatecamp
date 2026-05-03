@@ -5,7 +5,6 @@ Assess whether existing utilities (water supply, power, sewage, stormwater, tele
 
 During site planning, designers must assess whether utilities and infrastructure systems (water supply, power, sewage, stormwater, telecommunications) can adequately serve the proposed development. This assessment determines feasibility and informs engineering design.
 
-
 ## Core Concept
 
 Site planning requires comprehensive utility and infrastructure assessment to ensure that proposed developments can be served by existing systems or require new infrastructure investment. Unlike LEA-UTIL (which covers utility service provision policies across broader regions), this assessment occurs at the project scale to verify water supply capacity, electrical distribution adequacy, wastewater treatment capability, drainage system readiness, and telecommunications coverage.
@@ -16,15 +15,7 @@ Assessment phases typically include: (1) inventory of existing infrastructure ca
 
 ## Key Provisions
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="WikiExamTable" status="unknown"]
-Extracted summary:
-- Props: headers="[", Utility=true, System=true, Key=true, Assessment=true, Points=true, Philippine=true, Law=true, Relevance=true, rows="[[", Water=true, Supply=true
-- Text: 20m wide, lakes/sea); post-Yolanda 40m no-build zone"], ["**Telecommunications**", "Signal coverage; nearest fiber node; carrier infrastructure availability", "NTC standards; increasingly linked to smart city zoning"]] />
-[/SLATECAMP_UI_BLOCK]
-
-## Philippine Context
-
-In the Philippine context, infrastructure assessment reveals significant capacity constraints in developing LGUs. Water supply systems frequently operate below design capacity during dry season; power grids in provincial areas often require augmentation; and centralized sewage treatment is limited to major urban centers, making on-site STP design mandatory for most suburban and rural projects. PD 1067 easement compliance is critical — many informal settlements violate water body easements, and formal development must respect these protected areas. Post-Yolanda zoning (40m no-build zone from mean high tide) requires careful site assessment in coastal areas.
+ssment reveals significant capacity constraints in developing LGUs. Water supply systems frequently operate below design capacity during dry season; power grids in provincial areas often require augmentation; and centralized sewage treatment is limited to major urban centers, making on-site STP design mandatory for most suburban and rural projects. PD 1067 easement compliance is critical — many informal settlements violate water body easements, and formal development must respect these protected areas. Post-Yolanda zoning (40m no-build zone from mean high tide) requires careful site assessment in coastal areas.
 
 ## How It's Tested
 
@@ -39,7 +30,6 @@ Extracted summary:
 - Props: (none)
 - Text: **Infrastructure assessment = matching site demand to system capacity.** If capacity is insufficient, the gap must be filled (either by developer investment or infrastructure upgrade agreement). Always check Philippine law constraints (RA 9275 for STP, PD 1067 for easements).
 [/SLATECAMP_UI_BLOCK]
-
 
 **Exam Tip:** Verify utility capacity BEFORE finalizing development program. Common deficiencies: water supply insufficient for peak demand, sewage treatment under capacity, storm drainage undersized for 10-year or 25-year storm event.
 

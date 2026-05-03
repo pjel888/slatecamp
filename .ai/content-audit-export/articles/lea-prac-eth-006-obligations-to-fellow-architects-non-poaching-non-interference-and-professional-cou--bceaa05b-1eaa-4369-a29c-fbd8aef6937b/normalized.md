@@ -1,6 +1,6 @@
 ## Obligations to Fellow Architects — Non-Poaching, Non-Interference, and Professional Courtesy
 ## Learning Goal
-After reading this article, you should understand the key concepts tested in the ALE for this topic, including non-poaching rules, notification requirements, successor architect obligations, and the prohibition on injurious conduct.
+After reading this article, you should understand the key concepts tested in the LEA for this topic, including non-poaching rules, notification requirements, successor architect obligations, and the prohibition on injurious conduct.
 
 Professional relationships form the foundation of architectural practice. The Code of Ethical Conduct establishes clear obligations governing how architects interact with colleagues, protecting both individual practitioners and the profession's integrity.
 
@@ -29,7 +29,7 @@ Section 5-g prohibits architects from knowingly injuring, falsely or maliciously
 [SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: ⚠️ **Exam Trap:** Notification alone does NOT satisfy the obligation. Section 5-e demands THREE sequential confirmations: (1) written notice to the original architect, (2) conclusive determination of emp... — expect this as a trap answer on the ALE.
+- Text: ⚠️ **Exam Trap:** Notification alone does NOT satisfy the obligation. Section 5-e demands THREE sequential confirmations: (1) written notice to the original architect, (2) conclusive determination of emp... — expect this as a trap answer on the LEA.
 [/SLATECAMP_UI_BLOCK]
 
 ## How It's Tested
@@ -43,7 +43,7 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Watch:** Questions about fellow architect obligations often involve a scenario where an architect approaches a client who is known to be negotiating with another architect. The correct answer al — this distinction appears on every ALE cycle.
+- Text: **LEA Watch:** Questions about fellow architect obligations often involve a scenario where an architect approaches a client who is known to be negotiating with another architect. The correct answer al — this distinction appears on every LEA cycle.
 [/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]

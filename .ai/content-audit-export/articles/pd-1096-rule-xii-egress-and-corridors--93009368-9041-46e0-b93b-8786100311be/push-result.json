@@ -1,5 +1,5 @@
 {
-  "attempted_at": "2026-05-03T07:52:37.487Z",
+  "attempted_at": "2026-05-03T11:49:51.286Z",
   "dry_run": true,
   "apply": false,
   "pushed": false,
@@ -10,10 +10,12 @@
   "updated_rows_count": 0,
   "article_id": "93009368-9041-46e0-b93b-8786100311be",
   "slug": "pd-1096-rule-xii-egress-and-corridors",
-  "preparation_actions": [],
+  "preparation_actions": [
+    "auto_generated_diff"
+  ],
   "remote_hash_before": "sha256:255db37993c662cc0a281fd01e3d2ddc1dabd4fd8fe00e5f0401a6769dc0bfe7",
   "original_hash": "sha256:255db37993c662cc0a281fd01e3d2ddc1dabd4fd8fe00e5f0401a6769dc0bfe7",
-  "candidate_hash": "sha256:5c6a8b653d0250658629b9207dad9d78d5b224fbc4ee487c79cf9072b0e82886",
+  "candidate_hash": "sha256:95e2f4f6b470351633eefdf8e3b974e8326ebae20123281863a52e89b91233cd",
   "stale_check_passed": true,
   "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
 }

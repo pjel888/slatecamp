@@ -6,7 +6,7 @@ After reading this article, you should be able to:
 - Define retention money and explain its purpose: performance security, defect remediation fund, and completion incentive.
 - Identify standard retention rates (5%-10%) and how retention is applied to each certified payment.
 - Describe the conditions for release of retention at Substantial Completion and Final Completion.
-- Apply retention money rules to ALE scenarios involving contractor default, punch-list completion, and final accounting.
+- Apply retention money rules to LEA scenarios involving contractor default, punch-list completion, and final accounting.
 
 
 Retention money is a percentage of contract payments withheld by the owner as security for contractor performance, quality of work, and defect remediation during and after construction.

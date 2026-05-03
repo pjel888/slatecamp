@@ -1,6 +1,6 @@
 # Content Diff Report: the-bauhaus-and-international-style
 
-Generated: 2026-05-03T10:55:23.417Z
+Generated: 2026-05-03T11:49:04.646Z
 Article ID: 5f1e960c-b72a-483d-a04b-03860d27b07b
 Changed: true
 Safe to push locally: true
@@ -8,8 +8,8 @@ Safe to push locally: true
 ## Hashes
 
 - Original: `sha256:3c53061a6ad41d8768578ffa43d76ebf37d916bd016d499fe53cb0f8d178079f`
-- Normalized: `sha256:2b9e5c88975704156a903fbca4109b51184a03cfefd667c0d43741cf98781506`
-- Candidate: `sha256:456b76d1f7599d626815bcac963f9dbc8c7aef33972fea04e2e550d58cf1dcf4`
+- Normalized: `sha256:c502df381aad6982e6e5c8dc80de699cc1b4b11d261eddc3c98dc638c7c610c0`
+- Candidate: `sha256:48a5a2c470f9051499b11fddaf03123d62e7768d3ff50236185b564b51141710`
 
 ## Line summary
 

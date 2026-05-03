@@ -1,42 +1,38 @@
 {
   "article_id": "584a3bfe-0f9a-4c59-8576-b52a2f2a9074",
   "slug": "lea-hist-011-01-core-concept",
-  "generated_at": "2026-05-03T07:49:26.292Z",
+  "generated_at": "2026-05-03T11:50:03.370Z",
   "old_hash": "sha256:8d1654a58147726d3c9130aed886e1310624680e2ced960e69800fcbbd9e88ce",
-  "new_hash": "sha256:7e5abae9598ef35e4df9e64f93848b95b92e8e049ca819e789c8f21144fe7715",
+  "new_hash": "sha256:170182aeb3f1272a43a8b95b2e43bf3f898f77df5008d49ec5e28a132d8e8a68",
   "original_hash": "sha256:8d1654a58147726d3c9130aed886e1310624680e2ced960e69800fcbbd9e88ce",
-  "normalized_hash": "sha256:bde59032c54db4c8837b8ea1bcee66fa83c30f2f53d74f16ab7ce3c719aaa4f5",
-  "candidate_hash": "sha256:7e5abae9598ef35e4df9e64f93848b95b92e8e049ca819e789c8f21144fe7715",
+  "normalized_hash": "sha256:250fe12abe3c15bf2a78aa00b7af5ad96211cbfe2d5a1647c268b90b8052f0d3",
+  "candidate_hash": "sha256:170182aeb3f1272a43a8b95b2e43bf3f898f77df5008d49ec5e28a132d8e8a68",
   "changed": true,
-  "changed_line_count": 59,
-  "inserted_line_count": 4,
+  "changed_line_count": 61,
+  "inserted_line_count": 6,
   "deleted_line_count": 0,
   "ui_blocks_original_count": 11,
-  "ui_blocks_candidate_count": 10,
-  "ui_blocks_changed_count": 1,
+  "ui_blocks_candidate_count": 11,
+  "ui_blocks_changed_count": 0,
   "ui_blocks_count": 11,
   "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 10,
+  "preserved_blocks_count": 11,
   "changed_text_summary": {
-    "changed": 59,
-    "inserted": 4,
+    "changed": 61,
+    "inserted": 6,
     "deleted": 0,
     "original_line_count": 74,
-    "candidate_line_count": 78
+    "candidate_line_count": 80
   },
   "changed_ui_blocks_summary": {
-    "missing_block_ids": [
-      "ui_0001"
-    ],
-    "changed_count": 1
+    "missing_block_ids": [],
+    "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "Candidate is missing 1 preserved UI block(s)."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: Candidate is missing 1 preserved UI block(s)."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

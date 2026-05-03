@@ -70,3 +70,13 @@ Large buildings may have a fire command center or emergency operations center. T
 Fire detection and alarm systems are communications networks that detect hazards and broadcast safety-critical information to occupants, responders, and building systems. In the Philippine context, system design must account for 220V/60Hz power, RA 9514 occupancy classifications, and NFPA 72 signaling standards. The choice between conventional and addressable architectures, Class A vs. Class B circuits, centralized or distributed voice evacuation, and single or redundant monitoring paths all depends on the building's risk profile and life safety obligations. Proper wiring, grounding, and integration with building management systems ensure that fire alarm signals reliably reach the people and systems that respond.
 
 \<Callout type="info">The 220V/60Hz electrical standard in the Philippines affects fire alarm power supply sizing and standby battery calculations. Fire alarm systems must maintain minimum 24-hour standby plus 15-minute alarm duration per NFPA 72 Chapter 10 Section 10.6, requiring robust UPS and battery backup design.</Callout>
+
+Extracted summary:
+- Props: title="Loop Polarity in Class A SLC Circuits" variant="info"
+- Text: Class A SLC loops use bipolar signaling: the outgoing conductor and return conductor carry opposite polarity signals. If the outgoing wire opens, the loop detects this as a break; alarm signals continue through the return path. The control panel monitors the loop for opens and shorts and annunciates line trouble while maintaining alarm transmission capability. This is why Class A circuits cost more to install—extra copper, loop splitters, and diagnostic intelligence—but justify the cost in space
+[/SLATECAMP_UI_BLOCK:ui_0002 component="WikiCalloutBox" status="preserved"]
+
+Extracted summary:
+- Props: title="NAC Load Calculations in 220V Philippine Buildings" variant="warning"
+- Text: Philippine fire alarm systems operate on a nominal 220V single-phase supply (some systems use 110V or 48V DC backup). NAC load calculations must account for peak demand: if the FACP supplies multiple NAC circuits and a Mass Notification System simultaneously, the total current demand can exceed the circuit capacity. A typical NAC branch in a 50-person occupancy space (say, one floor of an office building) draws 2–4 amps at alarm condition. A 16-amp FACP power supply can support 2–3 NAC circuits 
+[/SLATECAMP_UI_BLOCK:ui_0005 component="WikiCalloutBox" status="preserved"]

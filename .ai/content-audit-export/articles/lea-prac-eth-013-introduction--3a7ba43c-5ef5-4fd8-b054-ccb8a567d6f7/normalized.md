@@ -6,7 +6,7 @@ After reading this article, you should be able to:
 - Explain the general rule that fee competition among architects is legal and ethical.
 - Identify prohibited anti-competitive practices: collusive fee-fixing, predatory pricing, and deceptive fee practices.
 - Distinguish ethical fee discounting from unethical practices that compromise professional standards.
-- Apply fee competition rules to ALE scenarios involving minimum fee schedules, competitive bidding, and professional standards.
+- Apply fee competition rules to LEA scenarios involving minimum fee schedules, competitive bidding, and professional standards.
 
 The relationship between professional ethics and fair competition in architecture creates tension: architects must maintain professional standards while competing fairly with one another for projects and fees. This article examines the ethical limits on fee competition, restrictions on setting minimum fees, and the distinction between competitive fee structures and unethical cost-cutting.
 
@@ -44,7 +44,7 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Test Point:** Even informal "understanding" among architects to maintain price minimums constitutes collusion. "We all know no one charges below 4%" is price-fixing if there's tacit agreement or coordination. Architects charging different fees independently is competition; architects agreeing to matching minimums is collusion — this distinction appears on every ALE cycle.
+- Text: **LEA Test Point:** Even informal "understanding" among architects to maintain price minimums constitutes collusion. "We all know no one charges below 4%" is price-fixing if there's tacit agreement or coordination. Architects charging different fees independently is competition; architects agreeing to matching minimums is collusion — this distinction appears on every LEA cycle.
 [/SLATECAMP_UI_BLOCK]
 
 ### Type 1B: Recommended Fee Schedule Agreements
@@ -148,7 +148,7 @@ These varied fees are **not collusive**. Each architect arrived at the fee indep
 [SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **ALE Test Point:** Losing a bid to a competitor with a lower fee is ethical competition. An architect frustrated by losing bids to lower-cost competitors cannot ethically address this by colluding with competitors to maintain minimum fees. The solution is to either: - Improve efficiency and reduce costs, or - Develop specialization/differentiation to justify higher fees, or - Focus on clients who value quality over lowest cost — this distinction appears on every ALE cycle.
+- Text: **LEA Test Point:** Losing a bid to a competitor with a lower fee is ethical competition. An architect frustrated by losing bids to lower-cost competitors cannot ethically address this by colluding with competitors to maintain minimum fees. The solution is to either: - Improve efficiency and reduce costs, or - Develop specialization/differentiation to justify higher fees, or - Focus on clients who value quality over lowest cost — this distinction appears on every LEA cycle.
 [/SLATECAMP_UI_BLOCK]
 
 ### Type 2C: Value-Based Fee Approaches
@@ -412,7 +412,7 @@ Extracted summary:
 
 ## About This Article
 
-This article is part of the SlateCamp Professional Practice Content Engine for LEA preparation. It synthesizes regulatory frameworks, case law principles, and professional standards into competency-based learning outcomes aligned with the Architecture Licensure Examination syllabus.
+This article is part of the SlateCamp Professional Practice Content Engine for LEA preparation. It synthesizes regulatory frameworks, case law principles, and professional standards into competency-based learning outcomes aligned with the Licensure Examination for Architects syllabus.
 
 **Revision History:**
 - 2026-03-22: Initial publication covering professional licensing and registration requirements

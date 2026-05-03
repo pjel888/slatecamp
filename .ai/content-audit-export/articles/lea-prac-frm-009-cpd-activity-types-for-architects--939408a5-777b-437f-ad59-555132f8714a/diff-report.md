@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-frm-009-cpd-activity-types-for-architects
 
-Generated: 2026-05-03T10:55:54.315Z
+Generated: 2026-05-03T11:49:28.763Z
 Article ID: 939408a5-777b-437f-ad59-555132f8714a
 Changed: true
 Safe to push locally: true

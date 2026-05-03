@@ -1,5 +1,5 @@
 # Translating PWD Rights
-### The Complete Rights-to-Details Matrix for Philippine Architecture Licensure
+### The Complete Rights-to-Details Matrix for Philippine Licensure Examination for Architects
 
 ---
 

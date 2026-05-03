@@ -1,6 +1,6 @@
 # Content Diff Report: post-modernism
 
-Generated: 2026-05-03T10:55:23.798Z
+Generated: 2026-05-03T11:49:04.939Z
 Article ID: ae17af26-de0c-448e-a6d2-d64748f904fe
 Changed: true
 Safe to push locally: true
@@ -8,8 +8,8 @@ Safe to push locally: true
 ## Hashes
 
 - Original: `sha256:92009998ec3637170ab15c52fc190769a71ba99eaba91176cb5602b7b199fb4a`
-- Normalized: `sha256:476f66ca1bf91754259abf11f4a0f35820604684c16fc58489adecd45ef2f775`
-- Candidate: `sha256:f273a6c4416668a42053ea64d2e4cd3eccbff540b73bccbb8725354ddd7d1819`
+- Normalized: `sha256:f6502d7e881c7585d3473e307e23f93ef84ab6a2783dee16b557e96278c2b8a1`
+- Candidate: `sha256:b9596baa24a6f6fe2d365a2cbeceab9c24a73e7f59fbb0c3eeca2e3ba5122921`
 
 ## Line summary
 

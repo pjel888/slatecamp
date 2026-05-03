@@ -1,6 +1,6 @@
 # Content Diff Report: lea-hist-004-08-core-concept
 
-Generated: 2026-05-03T10:55:43.372Z
+Generated: 2026-05-03T11:49:20.549Z
 Article ID: 369fd847-ad5b-4214-b86b-68cd7f62c534
 Changed: true
 Safe to push locally: true

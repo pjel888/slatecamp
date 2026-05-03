@@ -1,6 +1,6 @@
 ## Obligations to Contractors and Suppliers — Independence and Impartiality
 ## Learning Goal
-After reading this article, you should understand the key concepts tested in the ALE for this topic, including the prohibition on gifts and commissions from contractors, the market discount exception, and the architect's mediatory role.
+After reading this article, you should understand the key concepts tested in the LEA for this topic, including the prohibition on gifts and commissions from contractors, the market discount exception, and the architect's mediatory role.
 
 The architect's role as mediator between client interests and contractor performance requires absolute independence from financial or personal entanglement with construction professionals. The Code of Ethical Conduct establishes strict prohibitions on gifts, commissions, and arrangements that would compromise professional judgment.
 

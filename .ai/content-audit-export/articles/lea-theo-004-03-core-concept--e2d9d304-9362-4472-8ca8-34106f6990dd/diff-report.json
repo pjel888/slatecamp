@@ -1,32 +1,32 @@
 {
   "article_id": "e2d9d304-9362-4472-8ca8-34106f6990dd",
   "slug": "lea-theo-004-03-core-concept",
-  "generated_at": "2026-05-03T07:49:21.926Z",
+  "generated_at": "2026-05-03T11:50:01.427Z",
   "old_hash": "sha256:c2f7ef6919fb9b8555ca84567c98b6677ce643104506f2da63e07d30c8523d5f",
-  "new_hash": "sha256:0a99ffe79a222ac544b6495295e9572209b8f52bfb4fe010e862e665e462ada6",
+  "new_hash": "sha256:296ac56b33c1263b9480c701a5b17378da8da5489bc65a4063e204bb8633bb79",
   "original_hash": "sha256:c2f7ef6919fb9b8555ca84567c98b6677ce643104506f2da63e07d30c8523d5f",
-  "normalized_hash": "sha256:879b8a6c664d1d53d3b4db6187889ef49615e6f5dc6f3b94f01306af1e475334",
-  "candidate_hash": "sha256:0a99ffe79a222ac544b6495295e9572209b8f52bfb4fe010e862e665e462ada6",
+  "normalized_hash": "sha256:4f86269dd4a2cf0bd9c2993287982c679e04c6c8505adc5d0a7511d14ba19721",
+  "candidate_hash": "sha256:296ac56b33c1263b9480c701a5b17378da8da5489bc65a4063e204bb8633bb79",
   "changed": true,
-  "changed_line_count": 253,
-  "inserted_line_count": 2,
+  "changed_line_count": 258,
+  "inserted_line_count": 4,
   "deleted_line_count": 0,
-  "ui_blocks_original_count": 15,
-  "ui_blocks_candidate_count": 14,
+  "ui_blocks_original_count": 12,
+  "ui_blocks_candidate_count": 11,
   "ui_blocks_changed_count": 1,
-  "ui_blocks_count": 15,
+  "ui_blocks_count": 12,
   "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 14,
+  "preserved_blocks_count": 11,
   "changed_text_summary": {
-    "changed": 253,
-    "inserted": 2,
+    "changed": 258,
+    "inserted": 4,
     "deleted": 0,
     "original_line_count": 274,
-    "candidate_line_count": 276
+    "candidate_line_count": 278
   },
   "changed_ui_blocks_summary": {
     "missing_block_ids": [
-      "ui_0001"
+      "ui_0007"
     ],
     "changed_count": 1
   },
@@ -36,7 +36,6 @@
     "Candidate is missing 1 preserved UI block(s)."
   ],
   "warnings": [
-    "ui-blocks.json contains unknown custom blocks; push requires review or --force.",
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
   "summary": "Unsafe: Candidate is missing 1 preserved UI block(s)."

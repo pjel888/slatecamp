@@ -11,8 +11,6 @@ After studying this article, you should be able to:
 - Explain the Board's role in licensure, discipline, CPD, and standard-setting.
 - Apply §7 powers to exam scenarios involving board jurisdiction.
 
-
-
 <LawCallout code="ra9266" section="Section 7 - Specific Powers">
 Legal Basis: RA 9266 (Architecture Act of 2004), Section 7 (Powers and Functions of the Professional Regulatory Board of Architecture); RA 9266 IRR, Section 7.
 </LawCallout>
@@ -154,17 +152,17 @@ This public-trustee orientation distinguishes professional regulation from indus
 
 ---
 
-\[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: Legal Basis: RA 9266 (Architecture Act of 2004), Section 7 (Powers and Functions of the Professional Regulatory Board of Architecture); RA 9266 IRR, Section 7.
 \[/SLATECAMP_UI_BLOCK\]
-\[SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: The distinction between Commission review of **rules** (must pre-approve) vs. **disciplinary decisions** (appeal only) is one of the most frequently tested concepts. For rules: Commission pre-approval
 \[/SLATECAMP_UI_BLOCK\]
-\[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: The 14 powers of the PRBoA can be grouped into four categories: (1) **Rulemaking** — IRR, ethical code, CPD guidelines; (2) **Licensing** — registration, examination, special permits; (3) **Adjudicato

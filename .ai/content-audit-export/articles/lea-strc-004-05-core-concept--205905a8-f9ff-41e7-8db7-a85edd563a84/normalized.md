@@ -74,10 +74,7 @@ Extracted summary:
 - Text: Live load defaults to the table value. Partitions always add 1.0 kPa (if anticipated). Storage can be 2–6× the occupancy LL if heavy materials are present. The occupant's use is the occupant's responsibility—the designer provides the capacity, not the police.
 - **Exam relevance:** High — expect at least one question on this topic per LEA set.
 
-
-
 [/SLATECAMP_UI_BLOCK]
-
 
 ## Related Articles
 
@@ -91,8 +88,3 @@ Extracted summary:
 - Text: These are frequently tested traps. Memorize them to avoid losing easy points on exam day.
 [/SLATECAMP_UI_BLOCK]
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes="{[\"Using a single LL value for all floors; different occupancies on different floors have different LL values per NSCP Table 202.\",\"Applying LL reduction to small tributary areas; reduction only applies when tributary area ≥ 18.6 m². Small columns, beams, and edge members do not qualify.\",\"Treating occupancy changes as the designer's problem; once built, if use changes, the occupant is responsible. Original design compliant with intended occupancy is sufficient.\",\"Using 'normal residential' LL = 1.5 kPa; the NSCP specifies 1.9 kPa for residential. No lower values without a code exception.\",\"Ignoring storage loads; a 'general purpose' floor designed for office LL (2.4 kPa) is inadequate if the occupant later uses the space for light storage (6.0 kPa).\"]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]

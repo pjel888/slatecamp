@@ -1,6 +1,6 @@
 ## Grounds for Suspension and Revocation of the Certificate of Registration
 ## Learning Goal
-After reading this article, you should understand the key concepts tested in the ALE for this topic, including the four statutory grounds under RA 9266 Section 23, the distinction between suspension and revocation, and the procedural framework for disciplinary action.
+After reading this article, you should understand the key concepts tested in the LEA for this topic, including the four statutory grounds under RA 9266 Section 23, the distinction between suspension and revocation, and the procedural framework for disciplinary action.
 
 The Certificate of Registration grants architects the legal authority to practice, sign and seal documents, and represent themselves as licensed professionals. The Board of Architecture may suspend or revoke registration upon discovery of grounds establishing violation of law, ethics violations, or professional incompetence.
 

@@ -1,7 +1,7 @@
 {
   "article_id": "0c236406-a3aa-46b6-9833-b2aa88a6e131",
   "slug": "lea-util-006-07-mepf-equipment-noise-sources-and-output-levels",
-  "generated_at": "2026-05-03T07:48:37.928Z",
+  "generated_at": "2026-05-03T11:49:42.434Z",
   "old_hash": "sha256:8d315ef8c355028fc2f5cdb38ab5425bfba29f087a5e0989a402a2c9fe29bf97",
   "new_hash": "sha256:704935e9e27d93bc3fc24da070ef9b6a076a64722031cf2ddc9f1e670724f753",
   "original_hash": "sha256:8d315ef8c355028fc2f5cdb38ab5425bfba29f087a5e0989a402a2c9fe29bf97",
@@ -28,13 +28,11 @@
     "missing_block_ids": [],
     "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "original.md hash does not match article metadata export hash."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: original.md hash does not match article metadata export hash."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

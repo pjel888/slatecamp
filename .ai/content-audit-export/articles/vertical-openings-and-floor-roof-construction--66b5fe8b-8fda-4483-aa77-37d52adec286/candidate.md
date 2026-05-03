@@ -277,7 +277,7 @@ D. Compliant — Sec. 1206 applies only to buildings taller than 3 storeys
 
 ## Exam Tip
 
-ALE Trap: Vertical openings ≤ 1.0 m² may be UNPROTECTED if they do not connect more than 3 stories. Openings > 1.0 m² require 1-hour enclosure (or 2-hour for buildings > 4 stories). The 1.0 m² threshold and the 3-story limit are both frequently tested.
+LEA Trap: Vertical openings ≤ 1.0 m² may be UNPROTECTED if they do not connect more than 3 stories. Openings > 1.0 m² require 1-hour enclosure (or 2-hour for buildings > 4 stories). The 1.0 m² threshold and the 3-story limit are both frequently tested.
 
 ## Cross‑References
 

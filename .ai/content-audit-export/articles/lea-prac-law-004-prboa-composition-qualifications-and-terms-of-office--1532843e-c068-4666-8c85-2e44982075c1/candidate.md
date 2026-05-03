@@ -118,22 +118,22 @@ This deadline ensured that regulatory mechanisms would be in place within a reas
 
 ---
 
-\[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: Legal Basis: RA 9266 (Architecture Act of 2004), Sections 4 (Composition), 5 (Qualifications), and 6 (Terms of Office); RA 9266 IRR, Sections 4-6.
 \[/SLATECAMP_UI_BLOCK\]
-\[SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: The IRR, Section 6, specifies the reappointment term is a uniform **three (3) years** for ALL members, regardless of their initial term length. Do not assume the reappointment equals the initial term.
 \[/SLATECAMP_UI_BLOCK\]
-\[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: Remember the tenure pattern as **MAX-6-5-4**: Chairman max 6 years, 2-year Member max 5 years, 1-year Member max 4 years. The reappointment is always a flat 3 years.
 \[/SLATECAMP_UI_BLOCK\]
-\[SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
+\
 Extracted summary:
 - Props: 
 - Text: Legal Basis: RA 9266 (Architecture Act of 2004), Sections 4 (Composition), 5 (Qualifications), and 6 (Terms of Office); RA 9266 IRR, Sections 4-6.

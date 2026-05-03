@@ -86,3 +86,9 @@ Legal Basis: PD 1151 (Environmental Policy), PD 1152 (Environmental Code), DENR 
 - [RA 9266 Legal Framework](lea-prac-law-001)
 - [Government Procurement](lea-prac-frm-012)
 - [Environmental Laws](lea-prac-frm-017)
+
+[SLATECAMP_UI_BLOCK:ui_0001 component="JSX" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: null
+[/SLATECAMP_UI_BLOCK:ui_0001 component="JSX" status="preserved"]
