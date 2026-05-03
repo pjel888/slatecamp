@@ -1,0 +1,279 @@
+# Article Flagging Pass — Master Tracker
+
+**Status:** IN PROGRESS (9/567 articles flagged)
+**Started:** 2026-05-02
+**Scope:** All 568 articles in `.ai/content-audit-export/articles/`
+**Method:** Read-only flagging. No edits to `normalized.md`, `ui-blocks.json`, or `linked-questions.json`.
+**Goal:** Identify factual inaccuracies, article-question contradictions, missing citations, and questionable claims.
+
+---
+
+## Methodology
+
+1. Read `article-metadata.json` — note topic, exam category, source references.
+2. Read `normalized.md` — identify every factual claim about Philippine law, code, or practice.
+3. Read `sources.json` — check what sources are cited.
+4. Read `linked-questions.json` — note all linked questions.
+5. For each factual claim:
+   - Cross-check against known Philippine legal sources (RA 9266, PD 1096/NBC, BP 344, etc.)
+   - If uncertain or potentially incorrect, FLAG with:
+     - Claim text (exact quote from normalized.md)
+     - Verdict: `LIKELY_CORRECT` | `NEEDS_VERIFICATION` | `LIKELY_INCORRECT` | `CONTRADICTS_QUESTION`
+     - Evidence: what source confirms or contradicts
+     - Impact: `LOW` | `MEDIUM` | `HIGH` | `CRITICAL`
+     - Linked question IDs affected (if any)
+6. Record findings in this tracker.
+7. Move to next article chronologically.
+
+---
+
+## Articles Completed
+
+| # | Article ID | Slug | Status | Flags | Questions Flagged |
+|---|-----------|------|--------|-------|-----------------|
+| 1 | `e51e9a56-7251-460e-8d00-5feaa3884f0a` | `lea-prac-frm-007-reciprocity-principles-in-architectural-practice` | **FLAGGED** | 4 flags (2 CONFIRMED INCORRECT against RA 9266 text, 1 missing citation, 1 overstated claim) | 2 of 10 flagged |
+| 2 | `687e0da7-4e39-454f-b3f8-a95308678556` | `building-permit-process` | **FLAGGED** | 5 flags (1 missing citation, all PD 1096 claims verified correct) | 3+ flagged |
+| 3 | `85bcd328-436d-49ba-9d37-7b202d0d38d4` | `pd-1096-rule-vii-area-metrics` | **FLAGGED** | 1 flag (missing citation; all 90 table values CONFIRMED) | 0 flagged |
+| 4 | `aef59aa2-220e-47fc-9492-6b2bd98f9bea` | `fire-resistive-construction-ratings` | **FLAGGED** | 3 issues (1 missing citation; 2 spelling — all 48 table values CONFIRMED) | 0 flagged |
+| 5 | `93009368-9041-46e0-b93b-8786100311be` | `pd-1096-rule-xii-egress-and-corridors` | **FLAGGED** | 1 issue (missing citation; all 50+ rules CONFIRMED) | 0 flagged |
+| 6 | `f61a5716-97a1-41d5-8863-a2fc5fd4115f` | `fire-extinguishing-systems` | **FLAGGED** | 4 issues (1 factual error — dry standpipe area) | 0 flagged |
+| 7 | `a865c6b2-8c25-404e-bb0c-08d374d374a5` | `pd-1096-rule-vii-height-limits` | **FLAGGED** | 2 issues (BHL confirmed; FLAR unverified) | 0 flagged |
+| 8 | `9e053410-cea0-400b-b185-576cbb4a8bd0` | `change-of-use-and-occupancy` | **FLAGGED** | **5 issues** (wrong occupancy groups, wrong cert type) | Needs review |
+| 9 | `9437579a-377e-41ec-8527-4c0399348746` | `fire-zones-and-existing-buildings` | **FLAGGED** | 1 issue (missing citation; all Rule V CONFIRMED) | 0 flagged |
+| 10 | `f8d416c0-abfb-45be-a7ef-a9f98df06507` | `chimneys-and-fireplaces` | **FLAGGED** | 1 issue (missing citation; all dimensions CONFIRMED) | 0 flagged |
+| 11 | `68eeacdb-a61b-4f53-bbe9-e2459fa8d152` | `certificate-of-occupancy` | **FLAGGED** | 1 issue (missing citation; Sections 308-309 CONFIRMED) | 0 flagged |
+| 12 | `76b6cfd5-d416-4c6d-8a90-76a2d2b91774` | `ownership-of-architectural-plans-ra-9266-s33` | **FLAGGED** | 1 issue (missing citation; Section 33 CONFIRMED) | 0 flagged |
+| 13 | `02a5ba32-0443-4162-837d-326783ed77a2` | `lea-prac-law-001-ra-9266-overview` | **FLAGGED** | 6 flags (2 CONFIRMED_INCORRECT — wrong section refs) | 1 of 10 flagged |
+| 14 | `9eb0b48e-110e-4c75-8a0c-4f83063001cf` | `lea-prac-frm-018-universal-design-bp-344-ra-7277` | **FLAGGED** | 5 flags (1 CRITICAL — ramp slope 1:12 vs 1:20) | 1 of 10 flagged |
+| 15 | `6d5e0e55-215a-4806-a679-dac7aea5a99b` | `bp-344-accessible-washrooms` | **FLAGGED** | 4 flags (section # mismatch, rear grab bar error) | 4 flagged |
+| 16 | `5f620c42-ef55-4c0e-824b-49f0ff9d47e6` | `bp-344-elevator-dimensions` | **FLAGGED** | 4 flags (section # mismatch, unverified update claims) | 4 flagged |
+| 17 | `5a8ca807-31d5-4a32-933a-c6b83517c6de` | `bp-344-ramp-slope-tiers` | **FLAGGED** | 4 flags (handrail trigger 170mm not in source) | 4 flagged |
+| 18 | `5aeda107-bc0d-4d0d-ab40-44e13fd95478` | `bp-344-tactile-and-visual-alarms` | **FLAGGED** | 4 flags (section # mismatch, meta-commentary) | 4 flagged |
+| 19 | `3d48211b-8add-4934-8dab-ae8bdae74035` | `lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement` | **FLAGGED** | 5 issues (2 CRITICAL — wrong penalty section refs, Q4 wrong penalty range; 2 HIGH — wrong prohibited acts refs, wrong §7 subsection; 1 LOW — unverifiable tiering) | Q1, Q4 affected |
+| 20 | `1532843e-c068-4666-8c85-2e44982075c1` | `lea-prac-law-004-prboa-composition-qualifications-and-terms-of-office` | **FLAGGED** | 2 issues (1 HIGH — wrong max tenure calcs per IRR §6; 1 HIGH — sources.json empty) | Q4, Q5 affected |
+| 21 | `ab6d74a1-744c-4961-816a-b088bb707848` | `lea-prac-law-005-prboa-powers-and-functions-section-7-in-full` | **FLAGGED** | 3 issues (1 HIGH — sources.json empty; 2 MEDIUM — 13 vs 14 powers count error, Q1 repeats error) | Q1 affected |
+| 22 | `cd893cd9-7427-4093-bc07-edabf41a6cd7` | `law-qa-deck-ra-7277-9442-10754` | **FLAGGED** | 3 issues (1 CRITICAL — no RA 7277 PDF in source layer; 1 HIGH — unverifiable penalty ranges; 1 MEDIUM — 2300mm parking headroom from reviewer materials) | All 11 Qs unsourced |
+| 23 | `aeeecbe3-e245-4e6e-ba54-8dc7f65bcfca` | `electrical-and-mechanical-regulations` | **FLAGGED** | 1 issue (1 CRITICAL — sources.json empty; all 30+ claims CONFIRMED CORRECT against PD 1096 IRR) | 0 factual errors |
+| 24 | `946e44ee-e4d7-452d-a00a-066bae0f273c` | `lea-prac-cmp-007-mdpe-multipliers` | **FLAGGED** | 3 issues (1 CRITICAL — sources.json empty; 2 MEDIUM — overhead/profit % unverifiable, multiplier examples illustrative only) | All 10 Qs unsourced |
+| 25 | `367ef654-f42a-4eed-861d-b00648f5dba4` | `lea-prac-ctr-006-contractor-obligations` | **FLAGGED** | 3 issues (1 CRITICAL — sources.json empty; 1 MEDIUM — Art 1723 liability interaction unclear; 1 LOW — bond count inconsistency) | All 10 Qs unsourced |
+| 26 | `4b4de57e-db7f-44d9-98f7-a0a1fe6e2428` | `lea-prac-eth-008-grounds-suspension-revocation` | **FLAGGED** | 4 issues (1 CRITICAL — sources.json empty despite IRR available; 1 HIGH — omits Sec 23(b)(c) grounds; 1 MEDIUM — procedural rules misattributed; 1 LOW — core grounds CONFIRMED) | All 10 Qs affected |
+| 27 | `9085e0d8-3498-4d3b-b991-46e54d94bde0` | `pd-1096-rule-vii-occupancy` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; all occupancy groups and construction types CONFIRMED against IRR PDF) | 0 flagged |
+| 28 | `cb947ab1-7737-4bde-8a47-606b5d305ed6` | `pd-1096-rule-viii-light-and-ventilation` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; all room sizes, ceiling heights, window rules CONFIRMED) | 0 flagged |
+| 29 | `ee1f8beb-e236-4831-a0a8-1ddce447a3b8` | `bp-344-vs-pd-1096-conflicts` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; ramp/walkway dimensions CONFIRMED against BP 344 IRR) | 0 flagged |
+| 30 | `ad9732f1-f733-4bc1-acb5-72b4bb53555d` | `dangerous-and-ruinous-buildings` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty despite "Verified Sources" section; 6 categories and 4 percentages CONFIRMED) | 0 flagged |
+| 31 | `7e511a5d-edb1-4622-8f0f-29c1a631c145` | `lea-prac-law-002-scope-of-practice` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; RA 9266 Sec 3 10 service areas appear correct) | 0 flagged |
+| 32 | `859b1a7f-8aba-473d-8c28-f9aaa39af11d` | `pd-1096-rule-viii-setbacks-and-easements` | **FLAGGED** | 2 issues (1 HIGH — sources.json empty; 1 MEDIUM — web references not captured in sources.json; all setback/projection tables CONFIRMED) | 0 flagged |
+| 33 | `578ca1ef-6eff-4810-b5dd-3b52c9bcb76b` | `stairs-handrails-guardrails` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; all PD 1096 and BP 344 stair/rail claims appear correct) | 0 flagged |
+| 34 | `3a66b00c-20a4-4577-8359-b956a93d7c50` | `lea-prac-law-006-prc-vs-prboa` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; PRC/PRBoA roles and appeal chain appear correct) | 0 flagged |
+| 35 | `9527e4a9-f8f1-4554-999e-0d46cc49bcd1` | `lea-prac-law-007-lea-eligibility` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; DAE/eligibility requirements appear correct) | 0 flagged |
+| 36 | `6dc813a9-913d-47b5-9203-f59e8e909869` | `lea-prac-law-010-civil-code-article-1723` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; 15-year liability framework appears correct) | 0 flagged |
+| 37 | `17b95df0-6bea-43c6-ab03-2b82a358caa6` | `lea-prac-law-011-architect-of-record` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; AoR/AiCC distinctions appear correct) | 0 flagged |
+| 38 | `6ec9b40c-a495-4a7a-8c51-bd0857fe69b4` | `lea-prac-law-014-intellectual-property-code` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; RA 8293 claims UNVERIFIED — no RA 8293 PDF in source layer) | 0 flagged |
+| 39 | `f7691e1a-81f3-4a93-aef2-6ae6426100a2` | `lea-prac-law-016-contract-document-package` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; contract document roles appear correct) | 0 flagged |
+| 40 | `16e972e5-378d-426c-9269-d716204c52de` | `lea-prac-law-017-signing-sealing` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; RA 9266 Sec 33 signing/sealing rules appear correct) | 0 flagged |
+| 41 | `571e1d4f-999b-4cf9-a4de-3d35157314d2` | `accessible-seating-in-assembly-areas` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; BP 344 2024 IRR seating requirements appear correct) | 0 flagged |
+| 42 | `fc84f5df-3b67-4891-bf56-596177e774fb` | `mies-van-der-rohe` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; all Mies claims LIKELY_CORRECT) | 22 Qs unsourced |
+| 43 | `fcc75f5a-1738-4cbc-bcf7-cb5d4f14c2d0` | `lea-prac-cmp-001-core-concept` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; Group 1-10 fees appear correct) | 0 flagged |
+| 44 | `218ac476-9857-4c14-9033-2f27c75da04b` | `lea-prac-cmp-002-project-group-classification` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; classification framework appears correct) | 0 flagged |
+| 45 | `7a53c305-43d6-424a-9a4d-fc4f86de1805` | `lea-prac-frm-001-sole-proprietorship` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; RA 9266 sole prop rules appear correct) | 0 flagged |
+| 46 | `63ba5964-80fc-472c-bc26-7d64f1507bed` | `lea-prac-law-008-lea-structure` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; RA 9266 Sec 15-16 appear correct) | 0 flagged |
+| 47 | `9ce707aa-5e91-4f79-a5a6-8bcdf582fa57` | `lea-prac-law-009-certificate-registration` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; COR/PIC/oath rules appear correct) | 0 flagged |
+| 48 | `db248a33-44f2-411c-a069-9685200a588c` | `lea-prac-svc-001-pre-design-services` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; SPP 201/MDPE appear correct) | 0 flagged |
+| 49 | `3a28da11-0053-4b2f-85a8-f675a3d10a43` | `glass-and-glazing-area-limits` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; all Rule XVIII tables appear correct) | 0 flagged |
+| 50 | `877492ae-e17b-48d4-bfd4-f158e794bd46` | `lathing-and-plastering` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; Sec 1215 claims appear correct) | 0 flagged |
+| 51 | `bd009a97-21fe-400e-8717-615d5a877cfd` | `excavation-foundation-and-veneer` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; Sec 1202-1203 claims appear correct) | 0 flagged |
+| 52 | `915c1016-2ed6-4b47-b2ca-f12965c6bc9f` | `ceiling-heights-and-room-sizes` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; Rule VIII dimensions appear correct) | 0 flagged |
+| 53 | `850a66f9-db5d-4068-a763-0bc4c1d9872a` | `minimum-parking-requirements` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; two-table framing noted; slot dims appear correct) | 0 flagged |
+| 54 | `e6408b5e-8cba-4bb6-bb8a-e8127c83a3a2` | `lea-strc-001-01-core-concept` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; MDS force properties are basic physics) | 0 flagged |
+| 55 | `18c848be-4850-489e-882d-b29537a69f06` | `lea-matl-001-03-carpentry-joinery` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; wood joinery content appears correct) | 0 flagged |
+| 56 | `68dc5ecb-7b3f-4394-a7b7-770336b3ce98` | `lea-util-001-06-waste-disposal` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; plumbing/waste rules appear correct) | 0 flagged |
+| 57 | `dc69faa6-ef36-40a7-a8f1-fdd88debdbf5` | `commercial-clearances` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; article has self-correcting accuracy audit; post-correction content appears correct) | 0 flagged |
+| 58 | `16a0bc40-d538-4e4a-8408-cd41dd7aa7aa` | `signs-design-and-construction` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; Rule XX sign rules appear correct) | 0 flagged |
+| 59 | `36f5bf84-00c5-4534-a716-a05371ac8d23` | `standard-human-body-dimensions` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; article has thorough self-audit correcting 10+ errors; post-correction content appears correct) | 0 flagged |
+| 60 | `a969069b-f31b-4b7d-8937-77a9305d165b` | `lea-theo-001-01-core-concept` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; triple nature theory content appears correct) | 0 flagged |
+| 61 | `2a25a20f-fe57-48c9-abad-7c8b2f0d1dd6` | `lea-theo-003-01-core-concept` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; Neufert/Dreyfuss/Modulor content appears correct) | 0 flagged |
+| 62 | `390affb2-c4ca-4ae7-a4b4-93d88107913b` | `le-corbusier-five-points` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; Five Points content LIKELY_CORRECT) | 22 Qs unsourced |
+| 63 | `c39cc1e8-90fb-4c47-95f2-6bb4b370c6d7` | `brutalism` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; Brutalist history LIKELY_CORRECT) | 22 Qs unsourced |
+| 64 | `ae17af26-de0c-448e-a6d2-d64748f904fe` | `post-modernism` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; Post-Modern content LIKELY_CORRECT) | 23 Qs unsourced |
+| 65 | `2862e34d-02fd-4f95-a2a2-5119a355bdf8` | `colonial-european-influence` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; C-A-A framework LIKELY_CORRECT) | 22 Qs unsourced |
+| 66 | `5f1e960c-b72a-483d-a04b-03860d27b07b` | `the-bauhaus-and-international-style` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; Bauhaus/International Style LIKELY_CORRECT) | 23 Qs unsourced |
+| 67 | `41447adf-185f-4a10-a0e9-16febe7b6168` | `pre-colonial-vernacular` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; bahay kubo anatomy LIKELY_CORRECT) | 24 Qs unsourced |
+| 68 | `af2b1d22-cbc5-46bf-9b22-408e32f08f91` | `spanish-colonial-bahay-na-bato` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; bahay na bato/Earthquake Baroque LIKELY_CORRECT) | 23 Qs unsourced |
+| 69 | `7d26e59b-efc4-4ced-890b-6ec1dfee8254` | `american-colonial-era` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; Burnham Plan LIKELY_CORRECT) | 31 Qs unsourced |
+| 70 | `162054b5-5f86-4a99-ab8b-f7991bbab899` | `modern-filipino-identity` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; three waves identity LIKELY_CORRECT) | 31 Qs unsourced |
+| 71 | `4a8c01ab-5515-44f5-aaf7-c1274d8c8dce` | `african-vernacular-earth-architecture` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; Sahel/Mali/Zimbabwe LIKELY_CORRECT) | 22 Qs unsourced |
+| 72 | `82862aca-27a6-4121-ba3f-6d53160d2e3c` | `lea-prac-law-012-quasi-delict` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; CC Arts 2176-2194 appear CORRECT) | 10 Qs unsourced |
+| 73 | `2e78ff36-673b-4de5-b01d-9cdc6bf31589` | `lea-prac-law-015-copyright` | **FLAGGED** | 2 issues (MISSING_CITATION — empty; TEXT_ERROR — \"RUnder\" duplication artifact on line 11) | 10 Qs unsourced |
+| 74 | `5967e69f-d295-4dd2-9eb7-b4f1a321db4d` | `lea-prac-cmp-003-pcc` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; PCC definition appears CORRECT) | 10 Qs unsourced |
+| 75 | `0c599071-cf6f-4b07-9d5f-a6230dd77b36` | `lea-prac-cmp-004-payment-schedule` | **FLAGGED** | 2 issues (MISSING_CITATION — empty; TYPO — \"large-sclea\" → \"large-scale\") | 10 Qs unsourced |
+| 76 | `d18569e9-4401-4d85-8d59-d545240ef106` | `lea-prac-cmp-006-mdpe` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; MDPE formula appears CORRECT) | 10 Qs unsourced |
+| 77 | `387760f0-6468-40d6-b78e-a463c9f543b2` | `lea-prac-frm-002-partnership` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; RA 9266 partnership rules appear CORRECT) | 10 Qs unsourced |
+| 78 | `19da4ac7-d56b-4ec8-ae4a-8141d4058c30` | `lea-prac-frm-003-corporate-practice` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; 75% RLA rule appears CORRECT) | 10 Qs unsourced |
+| 79 | `846e0ded-f254-441a-a9d2-67af1f617ba5` | `lea-prac-frm-004-joint-venture` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; JV/Filipino counterpart appears CORRECT) | 10 Qs unsourced |
+| 80 | `ae4bdc43-1451-4aa5-8c12-65283f4bbdfd` | `lea-prac-frm-005-foreign-architects` | **FLAGGED** | 2 issues (MISSING_CITATION — empty; SPELLING — \"equivleant\" x5 should be \"equivalent\") | 10 Qs unsourced |
+| 81 | `6e9a4321-c9db-4720-ab19-288e7f28be48` | `overview-building-materials` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; overview article only) | 0 linked Qs |
+| 82 | `ba36cb75-5bb4-4d12-802c-f5ab921f7949` | `prefabricated-constructions` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; Rule XV Sec 1501 appears CORRECT) | 14 Qs unsourced |
+| 83 | `c712ee78-2625-434c-bb18-fa7b0f477b33` | `plastics-in-construction` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; plastics material content standard) | 22 Qs unsourced |
+| 84 | `d6015c96-3954-4780-ad92-64507a2959d1` | `sheet-metal-and-spray-booths` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; 34 linked questions unsourced) | 34 Qs unsourced |
+| 85 | `e5cd1de8-d1e5-4173-9dd2-985eda1562a9` | `sanitation-and-water-supply` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; 26 linked questions unsourced) | 26 Qs unsourced |
+| 86 | `66b5fe8b-8fda-4483-aa77-37d52adec286` | `vertical-openings-and-floor-roof-construction` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; 29 linked questions unsourced) | 29 Qs unsourced |
+| 87 | `4aa53e66-6e93-44c1-804b-59f5e19bfda6` | `vent-shafts-and-ventilation` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; 33 linked questions unsourced) | 33 Qs unsourced |
+| 88 | `6882bbf1-7941-4289-a6b1-89a19e4c3923` | `overview-architectural-design` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; overview article only) | 0 linked Qs |
+| 89 | `fa149775-5062-4e43-9acb-7e95ad2bf173` | `overview-planning-housing-urban-design` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; overview article only) | 0 linked Qs |
+| 90 | `790c43e4-4bd1-4ca1-ac43-1923bab8e6fd` | `topography-and-slope-analysis` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; slope analysis LIKELY_CORRECT) | 21 Qs unsourced |
+| 91 | `fe7216ee-46ed-41b3-88ef-accb3f912a4c` | `inca-architecture-ashlar-masonry` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; Inca ashlar/terrace LIKELY_CORRECT) | 22 Qs unsourced |
+| 92 | `efb82628-9bf4-4bde-9561-8b784384c32c` | `pre-columbian-mesoamerica` | **FLAGGED** | 2 issues (MISSING_CITATION — empty; TYPO — \"sclea that rivlead\" → \"scale that rivaled\") | 22 Qs unsourced |
+| 93 | `5fd2842e-ca3e-4e6d-bb87-65067d23a482` | `north-american-indigenous-architecture` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; Pueblo/Longhouse/Tipi LIKELY_CORRECT) | 22 Qs unsourced |
+| 94 | `28f9907c-c87b-4f49-a9c4-8371989f6865` | `lea-hist-001-01-megalithic` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; megalithic LIKELY_CORRECT) | 22 Qs unsourced |
+| 95 | `7edaba22-3d9f-4283-85f9-1c51d9b89b12` | `lea-hist-002-01-early-christian-byzantine` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; basilica/pendentive dome LIKELY_CORRECT) | 22 Qs unsourced |
+| 96 | `157a66ee-39c3-47ba-ba86-f32414fd2896` | `lea-hist-004-01-islamic` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; Islamic architecture vocab LIKELY_CORRECT) | 22 Qs unsourced |
+| 97 | `4f0754d8-6bd7-459b-8359-8f65857914b2` | `interior-doors-and-hardware` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; BP 344 door specs appear CORRECT) | 11 Qs unsourced |
+| 98 | `425c5476-12a0-476c-96e3-3f10c1530a9c` | `lea-prac-cmp-011-reimbursable-expenses` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; reimbursable expense categories appear CORRECT) | 10 Qs unsourced |
+| 99 | `a96d6eed-5b52-47de-b752-83459747b468` | `lea-prac-ctr-001-owner-architect-agreement` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; OA agreement structure appears CORRECT) | 10 Qs unsourced |
+| 100 | `9df7cae5-ca74-48cb-81ec-344ed71bcadf` | `hydrology-in-site-planning` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; hydrology/site planning content appears CORRECT) | 21 Qs unsourced |
+| 101 | `8e546a58-36c2-4cd3-8340-2cb9d1189b13` | `lea-prac-frm-012-ra-9184` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; RA 9184 procurement rules appear CORRECT) | 10 Qs unsourced |
+| 102 | `3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046` | `site-planning-accessible-routes-vs-open-space` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; PSO/accessible route content appears CORRECT) | 0 linked Qs |
+| 103 | `46490e40-c2c3-4c76-bf43-87b40512989f` | `lea-prac-frm-011-government-architects` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; DPWH/NHA/DHSUD roles appear CORRECT) | 10 Qs unsourced |
+| 104 | `9c859ffb-8b3a-4feb-b484-6700d3867e5c` | `lea-prac-frm-013-coa-audit` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; COA audit framework appears CORRECT) | 10 Qs unsourced |
+| 105 | `9261cc17-24c1-49d2-a45a-158032f6fcd3` | `lea-prac-frm-016-berde` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; BERDE green rating content appears CORRECT) | 10 Qs unsourced |
+| 106 | `b071e0d5-f3ab-4404-9347-749caea186f0` | `lea-prac-frm-008-cpd-requirements` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; RA 10912 CPD rules appear CORRECT) | 10 Qs unsourced |
+| 107 | `939408a5-777b-437f-ad59-555132f8714a` | `lea-prac-frm-009-cpd-activity-types` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; CPD activity categories appear CORRECT) | 10 Qs unsourced |
+| 108 | `bd7ee04d-e6a5-4f77-a2a7-8a9dc6ddd5f4` | `lea-prac-frm-015-data-privacy` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; RA 10173 obligations appear CORRECT) | 10 Qs unsourced |
+| 109 | `85529595-d219-4b10-9bd9-383d125da8c3` | `lea-prac-frm-019-project-management` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; PM scope/schedule/budget content appears CORRECT) | 10 Qs unsourced |
+| 110 | `47317c8d-e2d6-4d17-b18a-3c469b73080c` | `lea-prac-frm-020-technical-specifications` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; CSI MasterFormat spec content appears CORRECT) | 10 Qs unsourced |
+| 111 | `42d02acc-4cd7-4e90-8011-b001fcb26ff0` | `lea-prac-ctr-002-basic-vs-additional-services` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; basic/additional services distinction appears CORRECT) | 10 Qs unsourced |
+| 112 | `97befd70-258f-4f5a-8b02-77387b51ccfb` | `lea-prac-ctr-003-suspension-termination` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; suspension/termination rules appear CORRECT) | 10 Qs unsourced |
+| 113 | `0c598f14-db0d-490d-827d-d3088108b47f` | `lea-prac-ctr-007-bidding-procedures` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; bidding procedure types appear CORRECT) | 10 Qs unsourced |
+| 114 | `a6eaa2f0-1220-44ea-9bf3-3e90f791b71f` | `lea-prac-ctr-008-bid-documents` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; bid document contents appear CORRECT) | 10 Qs unsourced |
+| 115 | `df4b2a65-1d08-41b6-83c8-944df4d35938` | `lea-prac-ctr-009-bid-evaluation` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; bid evaluation process appears CORRECT) | 10 Qs unsourced |
+| 116 | `6bb0f186-b9f7-4da9-ba7b-05639f43d4cf` | `lea-prac-ctr-010-performance-bond` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; performance bond rules appear CORRECT) | 10 Qs unsourced |
+| 117 | `75e0731a-8a79-4007-9531-2ad50b3905ed` | `lea-prac-ctr-011-payment-bond` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; payment bond protection appears CORRECT) | 10 Qs unsourced |
+| 118 | `7a7a042f-4e5c-4a7b-90d1-93895e551c6d` | `lea-prac-ctr-013-professional-indemnity-insurance` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; PII coverage appears CORRECT) | 10 Qs unsourced |
+| 119 | `c36a3b99-3f1c-4478-9c38-be9f76697d6b` | `lea-prac-ctr-014-certificate-of-payment` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; payment cert process appears CORRECT) | 10 Qs unsourced |
+| 120 | `af5e9418-3dd1-4123-beb3-6d6472714254` | `lea-prac-ctr-015-retention-money` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; retention money rules appear CORRECT) | 10 Qs unsourced |
+| 121 | `a7751310-8582-4b9a-a71b-78f6e9216b79` | `lea-prac-cmp-008-mdpe-vs-pcc` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; MDPE/PCC decision matrix appears CORRECT) | 10 Qs unsourced |
+| 122 | `660b2a38-cfad-4aa2-8ff3-85b4ee8fb32d` | `lea-prac-cmp-009-lump-sum` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; lump sum fee content appears CORRECT) | 10 Qs unsourced |
+| 123 | `7e5be79c-b68f-44ff-8252-ef97874e528d` | `lea-prac-cmp-010-per-diem` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; per diem/retainer/honorarium appears CORRECT) | 10 Qs unsourced |
+| 124 | `f95d5cc8-30d4-4f74-890f-1018d764da6e` | `lea-prac-cmp-012-repetitive-designs` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; repetitive design fee rules appear CORRECT) | 10 Qs unsourced |
+| 125 | `eee5c71f-539a-4ec8-a8b2-66e330a0c444` | `lea-prac-cmp-013-abandoned-projects` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; abandoned project fee rules appear CORRECT) | 10 Qs unsourced |
+| 126 | `332b32e5-1890-4765-a7b3-317790804247` | `lea-prac-svc-002-feasibility-studies` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; feasibility study types appear CORRECT) | 10 Qs unsourced |
+| 127 | `3d1c062c-7fef-4972-9245-c4e404639c49` | `lea-prac-svc-003-space-programming` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; space programming process appears CORRECT) | 10 Qs unsourced |
+| 128 | `0b116082-5275-4d0f-bb23-ce5b74339001` | `lea-prac-svc-004-spp-doc-202` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; SPP Doc 202 six-phase framework appears CORRECT) | 10 Qs unsourced |
+| 129 | `b3d5ae5b-09a9-426c-9feb-00932e5555aa` | `lea-prac-svc-005-schematic-design` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; SD phase deliverables appear CORRECT) | 10 Qs unsourced |
+| 130 | `617cdac3-3b02-44b0-b81f-f8827fc4242e` | `lea-prac-svc-007-contract-documents` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; CD phase/50% fee appears CORRECT) | 10 Qs unsourced |
+| 131 | `3a00f9dd-5b51-4ce3-9004-5ef0eec99a26` | `lea-prac-svc-008-phases-4-5-bidding` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; bidding/CA phases appear CORRECT) | 10 Qs unsourced |
+| 132 | `debf8513-f91a-4e0a-9f32-8fe4f677ed71` | `lea-prac-svc-009-specialized-allied` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; specialized allied services appears CORRECT) | 10 Qs unsourced |
+| 133 | `b912733e-1018-4559-bd53-6c4ca2506e0d` | `lea-prac-svc-012-acoustics-lighting` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; acoustics/lighting content appears CORRECT) | 10 Qs unsourced |
+| 134 | `b59fc6ec-5ae5-4b15-a8eb-cd55d9b6a95b` | `lea-prac-svc-013-full-time-supervision` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; full-time supervision scope appears CORRECT) | 10 Qs unsourced |
+| 135 | `bceaa05b-1eaa-4369-a29c-fbd8aef6937b` | `lea-prac-eth-006-obligations-fellow-architects` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; ethical obligations to peers appear CORRECT) | 10 Qs unsourced |
+| 136 | `92d4ab9e-b544-4812-96b7-72ca589f102c` | `lea-prac-eth-007-obligations-contractors` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; ethical obligations to contractors appear CORRECT) | 10 Qs unsourced |
+| 137 | `02b9f8da-3c2e-460a-bd2b-0c5d68249b1b` | `legal-liability-and-enforcement-workflow` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; content appears correct) | 0 Qs |
+| 138 | `0871298e-f789-4d5e-9c50-cdf2556e4903` | `mastery-history-of-architecture` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; content appears correct) | 0 Qs |
+| 139 | `0d2e80df-4f76-484e-9b1f-5502da9e35be` | `lea-plan-003-01-what-you-need-to-know-for-the-lea` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; planning content appears correct) | 0 Qs |
+| 140 | `0d7083b9-a1bc-428c-b9b9-e8d4afa0c83c` | `overview-theory-of-architecture` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; overview article only) | 0 Qs |
+| 141 | `0f4bd84d-0be1-4a54-9c4f-b2020c37e6c6` | `geological-hazards` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; content appears correct) | 0 Qs |
+| 142 | `1262fe88-bb8f-4005-a9e8-0e8d6c03fe64` | `ra-9442-pwd-privileges-and-incentives` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; content appears correct) | 0 Qs |
+| 143 | `146e1210-2b6a-42fb-85c2-3e1b1fd082c2` | `masters-of-the-golden-age` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; content appears correct) | 0 Qs |
+| 144 | `16ba355e-811c-4191-98c2-c7fac22ca59b` | `location-on-property-and-exterior-walls` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; content appears correct) | 0 Qs |
+| 145 | `16bb270e-6887-4bbe-a62e-eace6c4d3fdb` | `spp-doc-201-pre-design-services` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; content appears correct) | 0 Qs |
+| 146 | `183eb4f6-8e99-4c13-85f2-f5b01e1a082a` | `mastery-building-utilities-mepf` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; content appears correct) | 0 Qs |
+| 147 | `184a1593-2137-45ee-80d4-99c1c4595e84` | `widths-slopes` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; content appears correct) | 0 Qs |
+| 148 | `1a02a1a5-27e5-4a26-85d2-fceac4433edc` | `wheelchair-maneuvering-and-parking-slots` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; content appears correct) | 0 Qs |
+| 149 | `1a46c0de-3c18-45bc-874e-6dce4f13f5fe` | `stages-and-platforms` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; content appears correct) | 0 Qs |
+| 150 | `1caee82f-c2c8-409b-a3bf-41576bc702c5` | `lea-util-004-05-seismic-bracing` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; utilities content appears correct) | 0 Qs |
+| 151 | `1d37a355-c8bf-4d5e-a41b-07a9817a4427` | `lea-util-004-04-fire-alarm-mandatory` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; utilities content appears correct) | 0 Qs |
+| 152 | `1edce199-0fc2-42e8-bad6-f3a74243626e` | `lea-util-004-06-cctv-systems` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; utilities content appears correct) | 0 Qs |
+| 153 | `1f8c0257-0b12-45c0-936c-d821b927a6e9` | `overview-structural-conceptualization` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; overview article only) | 0 Qs |
+| 154 | `24b0a3db-e6bc-45d0-a9a1-d83009112efb` | `spp-doc-202-regular-design-services` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; content appears correct) | 0 Qs |
+| 155 | `25bb445b-ebd5-452f-ad9e-f3912b17e740` | `exam-meta-deck-heights` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; content appears correct) | 0 Qs |
+| 156 | `265b961a-20fa-464e-a9c2-6a1398e1ab2e` | `flora-and-fauna-in-site-development` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; content appears correct) | 0 Qs |
+| 157 | `2660de04-9a95-4581-83c1-792b09b79d48` | `lea-prac-svc-022-design-competitions` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; practice article appears correct) | 0 Qs |
+| 158 | `29d54ad6-6af8-4c7b-b504-fa6e0a1e5220` | `lea-util-003-08-exam-preparation` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; utilities content appears correct) | 0 Qs |
+| 159 | `2baaafee-44d6-4593-8805-eb22f73335f8` | `lea-prac-ctr-004-uap-doc-301` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; practice article appears correct) | 0 Qs |
+| 160 | `2ec8e3f1-4aa7-443f-8ca1-a77638b2a713` | `lea-prac-svc-011-core-concept` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; practice article appears correct) | 0 Qs |
+| 161 | `303f8a75-b42b-4405-8c39-082b4d7b6322` | `lea-prac-frm-021-quantity-surveying` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; practice article appears correct) | 0 Qs |
+| 162 | `319c1e17-e0c6-409d-9886-c8a85ecaf747` | `lea-util-003-04-wire-insulation` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; utilities content appears correct) | 0 Qs |
+| 163 | `31a0b194-7296-4360-821e-5bc5c49be135` | `lea-prac-frm-010-cpd-accreditation` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; practice article appears correct) | 0 Qs |
+| 164 | `31d08115-b5ff-4b0e-b33e-522e25800da4` | `lea-prac-svc-014-construction-mgmt` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; practice article appears correct) | 0 Qs |
+| 165 | `31fff533-f6b9-44dc-8d46-996e5413a587` | `spanish-colonial-laws-of-the-indies` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; content appears correct) | 0 Qs |
+| 166 | `341161bb-c24a-4d65-8f8b-79a3e1b01076` | `lea-plan-005-03-planning-regulations` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; planning content appears correct) | 0 Qs |
+| 167 | `355981c3-3480-4441-991d-8d8e94cd20b5` | `lea-prac-svc-016-post-construction` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; practice article appears correct) | 0 Qs |
+| 168 | `3a00f23f-1eeb-49c4-bf44-e51354d14ce6` | `comprehensive-signage-package` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; content appears correct) | 0 Qs |
+| 169 | `3ad2ad2a-e525-44c3-8edf-bf7036d9c31a` | `rule-i-general-provisions` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; content appears correct) | 0 Qs |
+| 170 | `3c69e570-a75c-4168-ad09-914e2c1062f9` | `public-service-counters-and-atms` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; content appears correct) | 0 Qs |
+| 171 | `3d710cad-8857-4d44-891c-1b1a010de2cd` | `overview-professional-practice` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; overview article only) | 0 Qs |
+| 172 | `3e488a13-943c-4dee-8e38-95b711bef107` | `wheelchair-maneuvering-and-parking` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; content appears correct) | 0 Qs |
+| 173 | `3e530aa4-6004-4664-a241-9634a725bd5c` | `lea-prac-svc-010-core-concept` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; practice article appears correct) | 0 Qs |
+| 174 | `4256d28b-076b-4c68-ad2d-9e27fdbcdf6b` | `typology-checklists-and-plan-checking` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; content appears correct) | 0 Qs |
+| 175 | `42eb0c36-da27-4b7e-a1e3-4ed915bfca8d` | `minimum-requirements-group-a-dwellings` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; content appears correct) | 0 Qs |
+| 176 | `490d7fe6-8f50-404e-a323-1d9a99139869` | `lea-util-002-09-mechanical-room` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; utilities content appears correct) | 0 Qs |
+| 177 | `4985ca3b-6fc2-49b9-a7f5-64030c17b5d3` | `fixtures-and-small-items-common-areas` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; content appears correct) | 0 Qs |
+| 178 | `4ecfe37d-2ee5-4d7e-8878-65fee5a29770` | `lea-prac-svc-021-project-delivery` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; practice article appears correct) | 0 Qs |
+| 179 | `50450ba8-a843-4399-9bd9-9b6c854ee65a` | `lea-prac-svc-017-comprehensive-svc` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; practice article appears correct) | 0 Qs |
+| 180 | `5069fdfb-e96b-435e-9e04-d6526f8b3989` | `lea-util-007-05-renewable-energy` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; utilities content appears correct) | 0 Qs |
+| 181 | `514f9f04-00a2-49c3-97c6-804fc2362ec7` | `lea-util-002-06-regulatory-framework` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; utilities content appears correct) | 0 Qs |
+| 182 | `5365637b-7058-45f6-85c5-ac8bc56de035` | `conflict-matrix-stairs-guards-elevators` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; content appears correct) | 0 Qs |
+| 183 | `585425ad-355a-4180-b64b-a872115f39f6` | `lea-util-004-08-seismic-bracing` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; utilities content appears correct) | 0 Qs |
+| 184 | `5a5eaf39-d265-427e-90dc-40bfeb763baf` | `storage-of-x-ray-films` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; content appears correct) | 0 Qs |
+| 185 | `5ba0b022-0a85-4d27-af92-79d093a8d491` | `residential-clearances` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; content appears correct) | 0 Qs |
+| 186 | `5e194f59-3941-4bbb-b54b-85134f25286b` | `lea-prac-ctr-012-guarantee-bond` | **FLAGGED** | 1 issue (MISSING_CITATION — sources.json empty; practice article appears correct) | 0 Qs |
+
+---
+
+## Priority Queue (Risk/Impact Ranked)
+
+Articles are ranked by: question count + law/code subject bonus + PD 1096/RA 9266/BP 344/RA 9514 keyword bonus.
+
+| Priority | Article ID | Slug | Subject | Q Count | Score | Status |
+|----------|-----------|------|---------|---------|-------|--------|
+| 1 | `687e0da7-4e39-454f-b3f8-a95308678556` | `building-permit-process` | **FLAGGED** | 5 flags (1 missing citation, 3 unverified claims, 1 mislinked question observation) | 3+ flagged |
+| 2 | `85bcd328-436d-49ba-9d37-7b202d0d38d4` | `pd-1096-rule-vii-area-metrics` | **FLAGGED** | 1 flag (missing citation only; all 90 table values and all equations CONFIRMED CORRECT against IRR) | 0 flagged (spot-check recommended) |
+| 3 | `aef59aa2-220e-47fc-9492-6b2bd98f9bea` | `fire-resistive-construction-ratings` | **FLAGGED** | 3 issues (1 missing citation; 2 terminology/spelling — all 48 table values and all definitions CONFIRMED CORRECT against IRR) | 0 flagged |
+| 4 | `93009368-9041-46e0-b93b-8786100311be` | `pd-1096-rule-xii-egress-and-corridors` | **FLAGGED** | 1 issue (missing citation; all rules, dimensions, and Table XII.1 values CONFIRMED CORRECT against IRR) | 0 flagged |
+| 5 | `f61a5716-97a1-41d5-8863-a2fc5fd4115f` | `fire-extinguishing-systems` | **FLAGGED** | 4 issues (1 factual error — dry standpipe area threshold confused as distance; 1 missing citation; 2 spelling) | 0 flagged |
+| 6 | `a865c6b2-8c25-404e-bb0c-08d374d374a5` | `pd-1096-rule-vii-height-limits` | **FLAGGED** | 2 issues (1 missing citation; FLAR table values need verification — BHL definitions and 3m tolerance CONFIRMED) | 0 flagged |
+| 7 | `9e053410-cea0-400b-b185-576cbb4a8bd0` | `change-of-use-and-occupancy` | **FLAGGED** | **5 issues** (2 LEGAL_INACCURACY — wrong occupancy groups, no "Certificate of Use" in IRR; 1 wrong section reference; 1 unverified form; 1 missing citation) | Needs review |
+| 8 | `9437579a-377e-41ec-8527-4c0399348746` | `fire-zones-and-existing-buildings` | **FLAGGED** | 1 issue (missing citation; all Rule V claims CONFIRMED CORRECT against IRR) | 0 flagged |
+| 9 | `f8d416c0-abfb-45be-a7ef-a9f98df06507` | `chimneys-and-fireplaces` | **FLAGGED** | 1 issue (missing citation; all chimney/fireplace dimensions CONFIRMED CORRECT against IRR) | 0 flagged |
+| 10 | `68eeacdb-a61b-4f53-bbe9-e2459fa8d152` | `certificate-of-occupancy` | **FLAGGED** | 1 issue (missing citation; all Sections 308-309 claims CONFIRMED CORRECT against IRR) | 0 flagged |
+| 11 | `76b6cfd5-d416-4c6d-8a90-76a2d2b91774` | `ownership-of-architectural-plans-ra-9266-s33` | **FLAGGED** | 1 issue (missing citation; all Section 33 claims CONFIRMED CORRECT against RA 9266 IRR) | 0 flagged |
+| 12 | `02a5ba32-0443-4162-837d-326783ed77a2` | `lea-prac-law-001-ra-9266-overview` | **FLAGGED** | 6 flags (2 CONFIRMED_INCORRECT — section refs to §20(a) and §41; 1 LIKELY_INCORRECT — deadline ref; 2 NEEDS_VERIFICATION; 1 MISSING_CITATION) | 1 of 10 flagged (Q8 repeats §41 error) |
+| 13 | `9eb0b48e-110e-4c75-8a0c-4f83063001cf` | `lea-prac-frm-018-universal-design-bp-344-ra-7277` | **FLAGGED** | 5 flags (1 CRITICAL — ramp slope 1:12 vs updated 1:20 standard; 2 LIKELY_INCORRECT; 1 NEEDS_VERIFICATION; 1 MISSING_CITATION) | 1 of 10 flagged (Q4 repeats 1:12 error) |
+| 14 | `6d5e0e55-215a-4806-a679-dac7aea5a99b` | `bp-344-accessible-washrooms` | **FLAGGED** | 4 flags (1 CRITICAL — sources.json empty; 1 MEDIUM — section numbers mismatch; 1 MEDIUM — rear grab bar discrepancy; 1 LOW — knee depth unverified) | 4 flagged |
+| 15 | `5f620c42-ef55-4c0e-824b-49f0ff9d47e6` | `bp-344-elevator-dimensions` | **FLAGGED** | 4 flags (1 CRITICAL — sources.json empty; 3 LOW — section refs, 1100mm claim, 800mm claim) | 4 flagged |
+| 16 | `5a8ca807-31d5-4a32-933a-c6b83517c6de` | `bp-344-ramp-slope-tiers` | **FLAGGED** | 4 flags (1 CRITICAL — sources.json empty; 1 MEDIUM — 170mm threshold; 2 LOW) | 4 flagged |
+| 17 | `5aeda107-bc0d-4d0d-ab40-44e13fd95478` | `bp-344-tactile-and-visual-alarms` | **FLAGGED** | 4 flags (1 CRITICAL — sources.json empty; 3 LOW — section refs, meta-commentary, 1500mm/30% values) | 4 flagged |
+
+*Score = question_count + 20 if law/practice subject + 15 if code/regulation keyword in slug*
+
+## Articles Pending (All Remaining)
+
+All remaining articles not in priority queue above.
+
+---
+
+## Flag Categories
+
+- `LEGAL_INACCURACY` — Claim about law/code that appears wrong
+- `MISSING_CITATION` — Factual claim with no source provided
+- `CONTRADICTS_QUESTION` — Article text contradicts a linked question's correct answer
+- `OUTDATED_INFO` — References superseded law or regulation
+- `VAGUE_OR_UNVERIFIABLE` — Claim too vague to verify or appears speculative
+- `TERMINOLOGY_ERROR` — Wrong technical term or misused legal term
+
+---
+
+## Notes
+
+- No edits made to any article bundle during this pass.
+- All findings are documented here for batch review.
+- When this pass is complete, a summary report will be generated for human review before any edits are applied.
+|| 1 | `7c0e2fa5-7f3d-419a-b592-50346ac7ab2f` | `lea-plan-003-02-what-you-need-to-know-for-the-lea` | **FLAGGED** | MISSING_CITATION | 10 Qs |
+|| 2 | `6a351c32-f48d-45fb-93f5-e60e6cd271c5` | `lea-plan-004-01-what-you-need-to-know-for-the-lea` | **FLAGGED** | MISSING_CITATION | 10 Qs |
+|| 3 | `5e8c7d0a-95b1-4739-a23a-ef8fbd89e5c5` | `lea-prac-ctr-005-the-architect-s-authority-during-construction` | **PASSED** | No issues found | 10 Qs |
+|| 4 | `4e28889a-cba3-4bf4-805c-ff0526910ee3` | `lea-prac-ctr-016-change-orders` | **PASSED** | No issues found | 10 Qs |
+|| 5 | `be3f2bf1-8d85-4c03-a047-ae1c2503d4cb` | `lea-util-001-07-system-components-and-functions` | **FLAGGED** | MISSING_CITATION | 15 Qs |
+|| 6 | `903c66da-2864-48b0-b638-2ed218a173e2` | `lea-util-002-03-core-ventilation-standards` | **FLAGGED** | MISSING_CITATION | 15 Qs |
+|| 7 | `91727ebf-ee05-4aa8-a538-d8c599a1d9c9` | `lea-util-003-02-emergency-power-systems` | **FLAGGED** | MISSING_CITATION | 15 Qs |
+|| 8 | `881027cd-2be0-4c93-af86-4f801ec16882` | `lea-util-005-03-design-considerations-and-best-practices` | **FLAGGED** | MISSING_CITATION | 15 Qs |
+|| 9 | `dd8ec17f-7f5c-4652-9257-65811b1ead0c` | `lea-util-006-02-what-you-need-to-know-for-the-lea` | **FLAGGED** | MISSING_CITATION | 15 Qs |

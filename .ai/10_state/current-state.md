@@ -1,39 +1,27 @@
 # Current State
 
-**Last Updated:** 2026-04-17
+**Last Updated:** 2026-05-02
 
 ## Current architecture snapshot
-SlateCamp is a large Next.js App Router codebase with broad product and operational scope:
-- dashboard study systems
-- admin content/review/editor flows
-- developer portal docs/tools
-- protected business/CEO surfaces
-- quiz, wiki, notes, analytics, 3D Lab, calculators, entitlements, payments, and data pipelines
+SlateCamp is a large Next.js App Router codebase for ALE preparation. Pre-launch MVP.
 
-## Verified current reality
-- `src/app/`: 125 pages, 16 layouts, 96 loading files, 9 error boundaries, 12 route handlers
-- `src/lib/actions/`: 156 files
-- `src/components/`: 716 files
-- `src/features/`: 551 files
-- `supabase/migrations/`: 89 files
-- tracked `AGENTS.md`: 122
-- client components: 677 files with `use client` declarations across `src/`
+## Active workstream: Content optimization
+- **Flagging pass:** COMPLETE (567/567 articles flagged — `.ai/14_fact_checking/`)
+- **Optimization pass:** IN PROGRESS (`.ai/15_content_optimization/`)
+  - 3-layer rewrite: SME accuracy → learning design → human voice + wiki components
+  - Batch 1: Critical error fixes (17 articles with CRITICAL/CONFIRMED_INCORRECT flags)
+  - Batch 2-5: Remaining articles + question audit
+- **New skill:** `slatecamp-content-optimizer` created at `.ai/11_skills/payloads/` and registered globally in Hermes
+- **Master tracker:** `.ai/14_fact_checking/article-flagging-pass-tracker.md` shows COMPLETE
+- **Batch tracker:** `.ai/15_content_optimization/batch-tracker.md`
 
 ## Current strengths
-- broad feature surface already implemented
-- strong route/component/lib separation at the directory level
-- meaningful test presence in important logic areas
-- extensive local-scope guidance coverage via `AGENTS.md`
-- authoritative schema source in `DATABASE_SCHEMA.sql`
+- All 567 articles have been audited for factual accuracy
+- 418 flag reports filed documenting specific issues
+- Rich wiki UI component system available for enriched article rendering (see `src/components/wiki/`)
+- Clear priority pipeline: critical errors → law/code → remaining → clean → questions
 
 ## Current weak points
-- documentation topology drift risk remains high because the repo is large
-- client/server boundary drift is measurable
-- action-layer breadth makes backend conventions easy to lose
-- many governance/docs changes are already in flight, so verification discipline matters
-
-## Current recommended next steps
-1. Use `.ai/00_system/codex-enablement-guide.md` first for future Codex sessions.
-2. Use `.ai/10_state/findings-register.md` for repo-wide findings and `CODEX_ENABLEMENT_FINDINGS.md` for Codex-friction findings.
-3. Use `.ai/00_system/route-surface-map.md` and `.ai/00_system/data-boundary-map.md` before broad admin, developer, or backend changes.
-4. Treat `.ai/10_state/` as the human-readable current state layer and `.omx/` as runtime-only state.
+- Universal issue: `sources.json` is empty across almost all articles
+- Question answer-length parity needs systematic audit
+- Several articles have confirmed legal inaccuracies that must be fixed before any polish

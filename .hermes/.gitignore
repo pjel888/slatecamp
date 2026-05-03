@@ -1,0 +1,14 @@
+.env
+auth.json
+*.db
+*.sqlite
+*.sqlite3
+cache/
+checkpoints/
+logs/
+sessions/
+profiles/*/.env
+profiles/*/auth.json
+*.log
+*.secret
+*.key

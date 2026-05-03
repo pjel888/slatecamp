@@ -1,0 +1,14 @@
+# Optional ignore-style reference for agent workflows.
+# Keep as an example unless your Hermes version supports this file directly.
+
+.env
+.env.*
+node_modules/
+.next/
+dist/
+build/
+coverage/
+.git/
+*.log
+*.sqlite
+*.db

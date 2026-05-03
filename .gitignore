@@ -64,12 +64,15 @@ lint-errors.txt
 .codex/config.toml
 .codex/**/__pycache__/
 .codex/**/*.pyc
+__pycache__/
+*.pyc
 .cursor/
 .gemini/
 .omc/
 
 
 .chunkhound/*
+**/.chunkhound/
 .chunkhound.json
 **/.chunkhound.json
 chunkhound/
@@ -91,3 +94,6 @@ nul
 
 # Generated local content round-trip exports (scripts are tracked; bundles are reproducible)
 .ai/content-audit-export/
+
+# Raw source layer (local reference PDFs and source documents)
+001_Raw-Source-Layer/
