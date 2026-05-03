@@ -1,19 +1,19 @@
 {
-  "attempted_at": "2026-05-03T13:47:32.969Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:01:54.416Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "939408a5-777b-437f-ad59-555132f8714a",
   "slug": "lea-prac-frm-009-cpd-activity-types-for-architects",
   "preparation_actions": [],
-  "remote_hash_before": "sha256:681e3ac77085ad94769505d2bf1bf8dac37851e7f20c0cf743c3182436a57952",
+  "remote_hash_before": "sha256:b9321cec9b600bf8d30a6df74602878adb0461e61aa205f16b4855ccb53f5ccd",
   "original_hash": "sha256:681e3ac77085ad94769505d2bf1bf8dac37851e7f20c0cf743c3182436a57952",
   "candidate_hash": "sha256:b9321cec9b600bf8d30a6df74602878adb0461e61aa205f16b4855ccb53f5ccd",
-  "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-05-03T13:51:02.501561+00:00"
 }

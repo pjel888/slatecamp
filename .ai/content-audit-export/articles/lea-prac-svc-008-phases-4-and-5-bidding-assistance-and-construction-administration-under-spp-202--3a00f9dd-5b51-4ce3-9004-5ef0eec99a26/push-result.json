@@ -1,19 +1,19 @@
 {
-  "attempted_at": "2026-05-03T13:47:18.000Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:01:31.795Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "3a00f9dd-5b51-4ce3-9004-5ef0eec99a26",
   "slug": "lea-prac-svc-008-phases-4-and-5-bidding-assistance-and-construction-administration-under-spp-202",
   "preparation_actions": [],
-  "remote_hash_before": "sha256:679d3fe222f3bbc7d88e3fefd276bf121be963ce129fad4916ffd9cdeec4fe3b",
+  "remote_hash_before": "sha256:640432f744dbab7978748fc441162563c2bce7acf28abe4b4f144e3a0496948f",
   "original_hash": "sha256:679d3fe222f3bbc7d88e3fefd276bf121be963ce129fad4916ffd9cdeec4fe3b",
   "candidate_hash": "sha256:640432f744dbab7978748fc441162563c2bce7acf28abe4b4f144e3a0496948f",
-  "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-05-03T13:50:18.717139+00:00"
 }

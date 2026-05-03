@@ -1,21 +1,19 @@
 {
-  "attempted_at": "2026-05-03T13:06:54.593Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:02:08.622Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
     "Remote Supabase content differs from export baseline; refusing stale push."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "a6eaa2f0-1220-44ea-9bf3-3e90f791b71f",
   "slug": "lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda",
   "preparation_actions": [],
-  "remote_hash_before": "sha256:f434ab79d265ee57580d120a3846ed91375de6c12ed97cb898b9e9d0f7221c70",
-  "original_hash": "sha256:d327eaee463361064be737e515b13623c0a9e56d0b0f604f0a79109414954af2",
+  "remote_hash_before": "sha256:219c263c8e91fdf96eade37049234d2cbf2a0dbe495e7e26c5510c6949fed642",
+  "original_hash": "sha256:f434ab79d265ee57580d120a3846ed91375de6c12ed97cb898b9e9d0f7221c70",
   "candidate_hash": "sha256:219c263c8e91fdf96eade37049234d2cbf2a0dbe495e7e26c5510c6949fed642",
   "stale_check_passed": false,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "remote_updated_at_before": "2026-05-03T13:51:26.633208+00:00"
 }

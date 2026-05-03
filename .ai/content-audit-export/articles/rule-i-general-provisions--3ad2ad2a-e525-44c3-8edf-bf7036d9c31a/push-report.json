@@ -1,12 +1,12 @@
 {
-  "attempted_at": "2026-05-03T13:47:41.189Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:02:06.165Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Failed to update wiki_articles.content: Bad Request"
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "3ad2ad2a-e525-44c3-8edf-bf7036d9c31a",
   "slug": "rule-i-general-provisions",

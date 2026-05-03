@@ -1,12 +1,12 @@
 {
-  "attempted_at": "2026-05-03T13:47:26.213Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:01:42.400Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Failed to update wiki_articles.content: Bad Request"
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
   "slug": "minimum-parking-requirements",

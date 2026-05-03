@@ -1,19 +1,19 @@
 {
-  "attempted_at": "2026-05-03T13:47:21.264Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:01:36.002Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "25bb445b-ebd5-452f-ad9e-f3912b17e740",
   "slug": "exam-meta-deck-heights",
   "preparation_actions": [],
-  "remote_hash_before": "sha256:2716496ef7ef013561f0afa2a6fab716aa51fef9dc11b0116f2a9b82c3e591b2",
+  "remote_hash_before": "sha256:8b96bd4da9c5a07fbc3a3f6150ad237cae5a77acb3e501136e9843480709eded",
   "original_hash": "sha256:2716496ef7ef013561f0afa2a6fab716aa51fef9dc11b0116f2a9b82c3e591b2",
   "candidate_hash": "sha256:8b96bd4da9c5a07fbc3a3f6150ad237cae5a77acb3e501136e9843480709eded",
-  "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-05-03T13:50:32.140756+00:00"
 }

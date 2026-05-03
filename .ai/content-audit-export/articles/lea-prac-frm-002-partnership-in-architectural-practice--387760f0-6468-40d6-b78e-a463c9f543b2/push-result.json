@@ -1,19 +1,19 @@
 {
-  "attempted_at": "2026-05-03T13:47:44.334Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:02:10.676Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "387760f0-6468-40d6-b78e-a463c9f543b2",
   "slug": "lea-prac-frm-002-partnership-in-architectural-practice",
   "preparation_actions": [],
-  "remote_hash_before": "sha256:af72cc5506e1063fdf0b4b3d2685598b438fe9c20388d975f18fe5ffe2979a42",
+  "remote_hash_before": "sha256:4c6dc357cf64103dd8429fb6d718ff2725ee53a10f238de16dc53f7f70dcd0b5",
   "original_hash": "sha256:af72cc5506e1063fdf0b4b3d2685598b438fe9c20388d975f18fe5ffe2979a42",
   "candidate_hash": "sha256:4c6dc357cf64103dd8429fb6d718ff2725ee53a10f238de16dc53f7f70dcd0b5",
-  "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-05-03T13:51:30.512467+00:00"
 }

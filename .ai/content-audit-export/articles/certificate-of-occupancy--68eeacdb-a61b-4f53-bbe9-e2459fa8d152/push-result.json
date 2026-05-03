@@ -1,12 +1,12 @@
 {
-  "attempted_at": "2026-05-03T13:48:20.184Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:06:22.510Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Failed to update wiki_articles.content: Bad Request"
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "68eeacdb-a61b-4f53-bbe9-e2459fa8d152",
   "slug": "certificate-of-occupancy",

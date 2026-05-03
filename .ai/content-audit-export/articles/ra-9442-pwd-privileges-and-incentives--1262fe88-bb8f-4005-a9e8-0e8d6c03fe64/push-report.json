@@ -1,19 +1,19 @@
 {
-  "attempted_at": "2026-05-03T13:47:30.172Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:01:50.221Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "1262fe88-bb8f-4005-a9e8-0e8d6c03fe64",
   "slug": "ra-9442-pwd-privileges-and-incentives",
   "preparation_actions": [],
-  "remote_hash_before": "sha256:b4f1140b86e00214da3ec241c747f6e3d5c3cde8c3bc4cad8d189c0711d73fa6",
+  "remote_hash_before": "sha256:bc956545a3c551e940e26ef385114af106b1c9b96b371ac38733d109abe2cd99",
   "original_hash": "sha256:b4f1140b86e00214da3ec241c747f6e3d5c3cde8c3bc4cad8d189c0711d73fa6",
   "candidate_hash": "sha256:bc956545a3c551e940e26ef385114af106b1c9b96b371ac38733d109abe2cd99",
-  "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-05-03T13:50:56.33594+00:00"
 }

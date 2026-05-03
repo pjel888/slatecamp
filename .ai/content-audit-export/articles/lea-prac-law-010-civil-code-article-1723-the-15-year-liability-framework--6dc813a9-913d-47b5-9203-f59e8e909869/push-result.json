@@ -1,19 +1,19 @@
 {
-  "attempted_at": "2026-05-03T13:47:10.380Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:01:24.478Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "6dc813a9-913d-47b5-9203-f59e8e909869",
   "slug": "lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework",
   "preparation_actions": [],
-  "remote_hash_before": "sha256:17543d82128080d15c2f048c7907a0f86af2cb0915a699abb0944456b18fdf48",
+  "remote_hash_before": "sha256:16f616dc5535be11f1143b6df775246eff056d856c685b1a5f127aad91790d94",
   "original_hash": "sha256:17543d82128080d15c2f048c7907a0f86af2cb0915a699abb0944456b18fdf48",
   "candidate_hash": "sha256:16f616dc5535be11f1143b6df775246eff056d856c685b1a5f127aad91790d94",
-  "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-05-03T13:49:57.934588+00:00"
 }

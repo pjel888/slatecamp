@@ -1,19 +1,19 @@
 {
-  "attempted_at": "2026-05-03T13:47:28.480Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:01:47.535Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "06c6e7dc-b3cd-4ff8-a25a-fed405c47830",
   "slug": "lea-util-007-04-solar-photovoltaic-pv-systems",
   "preparation_actions": [],
-  "remote_hash_before": "sha256:873f8ff319ecbf108f82bd462e0569493514bbba7713e99b035e8a34edad2540",
+  "remote_hash_before": "sha256:68f8e4ec6808ae8f26596badf38174226886fd1adf20311fa6bef338fa67cc7a",
   "original_hash": "sha256:873f8ff319ecbf108f82bd462e0569493514bbba7713e99b035e8a34edad2540",
   "candidate_hash": "sha256:68f8e4ec6808ae8f26596badf38174226886fd1adf20311fa6bef338fa67cc7a",
-  "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-05-03T13:50:52.170985+00:00"
 }

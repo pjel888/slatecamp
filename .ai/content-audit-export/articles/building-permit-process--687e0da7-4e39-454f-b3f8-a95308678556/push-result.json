@@ -1,12 +1,12 @@
 {
-  "attempted_at": "2026-05-03T13:47:27.154Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:01:44.452Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Failed to update wiki_articles.content: Bad Request"
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
   "slug": "building-permit-process",

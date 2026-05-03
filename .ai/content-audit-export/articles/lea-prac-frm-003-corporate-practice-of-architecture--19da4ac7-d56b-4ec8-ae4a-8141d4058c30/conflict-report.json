@@ -1,21 +1,19 @@
 {
-  "attempted_at": "2026-05-03T13:06:38.957Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:01:46.648Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
     "Remote Supabase content differs from export baseline; refusing stale push."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "19da4ac7-d56b-4ec8-ae4a-8141d4058c30",
   "slug": "lea-prac-frm-003-corporate-practice-of-architecture",
   "preparation_actions": [],
-  "remote_hash_before": "sha256:1bf2d72a0d8949880033981c4afbe1dd64d8f3b25c01afd1dbc2666877c59e74",
-  "original_hash": "sha256:be039275d4defa80654ccfacf1e24f4c50cc1464f3cc0f820ac852d4ed1afcca",
+  "remote_hash_before": "sha256:bb6f45bbdfa0923bb46d25e1e3082b0d36ac784ced055080e714a79e2cd3b02d",
+  "original_hash": "sha256:1bf2d72a0d8949880033981c4afbe1dd64d8f3b25c01afd1dbc2666877c59e74",
   "candidate_hash": "sha256:bb6f45bbdfa0923bb46d25e1e3082b0d36ac784ced055080e714a79e2cd3b02d",
   "stale_check_passed": false,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "remote_updated_at_before": "2026-05-03T13:50:50.843746+00:00"
 }

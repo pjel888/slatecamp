@@ -1,19 +1,19 @@
 {
-  "attempted_at": "2026-05-03T13:48:28.581Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:03:03.306Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "e956216b-4b72-4a6a-a471-5cb42162c054",
   "slug": "lea-util-008-03-electrical-utility-connection",
   "preparation_actions": [],
-  "remote_hash_before": "sha256:853b5cbec7fe491a28b0019de54d243c6d549f3206842ed9cf04d98eee1f4f98",
+  "remote_hash_before": "sha256:898b517ccd86769a4b73635d6417767c22b255810f3dacc5d932d384c45ccc10",
   "original_hash": "sha256:853b5cbec7fe491a28b0019de54d243c6d549f3206842ed9cf04d98eee1f4f98",
   "candidate_hash": "sha256:898b517ccd86769a4b73635d6417767c22b255810f3dacc5d932d384c45ccc10",
-  "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-05-03T13:52:45.592209+00:00"
 }

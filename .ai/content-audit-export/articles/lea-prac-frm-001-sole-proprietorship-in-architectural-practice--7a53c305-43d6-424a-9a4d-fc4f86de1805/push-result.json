@@ -1,19 +1,19 @@
 {
-  "attempted_at": "2026-05-03T13:47:46.837Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:02:14.494Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "7a53c305-43d6-424a-9a4d-fc4f86de1805",
   "slug": "lea-prac-frm-001-sole-proprietorship-in-architectural-practice",
   "preparation_actions": [],
-  "remote_hash_before": "sha256:bdeadee974833df1309dd99ad1ce93e1a8a285f77e6c66c13b5abf857c0d92cb",
+  "remote_hash_before": "sha256:44281c23d78344c2180fe418e16317a0a9732ba4eb6cbca5c3e63f7159942b65",
   "original_hash": "sha256:bdeadee974833df1309dd99ad1ce93e1a8a285f77e6c66c13b5abf857c0d92cb",
   "candidate_hash": "sha256:44281c23d78344c2180fe418e16317a0a9732ba4eb6cbca5c3e63f7159942b65",
-  "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-05-03T13:51:36.053665+00:00"
 }

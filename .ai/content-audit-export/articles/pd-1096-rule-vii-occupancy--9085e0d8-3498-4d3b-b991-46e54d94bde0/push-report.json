@@ -1,12 +1,12 @@
 {
-  "attempted_at": "2026-05-03T13:47:19.532Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:01:33.776Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Failed to update wiki_articles.content: Bad Request"
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "9085e0d8-3498-4d3b-b991-46e54d94bde0",
   "slug": "pd-1096-rule-vii-occupancy",

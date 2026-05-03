@@ -1,12 +1,12 @@
 {
-  "attempted_at": "2026-05-03T13:47:59.878Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:02:28.638Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Failed to update wiki_articles.content: `apikey` request header or query parameter is either missing or invalid. Double check your Supabase `anon` or `service_role` API key."
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "a865c6b2-8c25-404e-bb0c-08d374d374a5",
   "slug": "pd-1096-rule-vii-height-limits",

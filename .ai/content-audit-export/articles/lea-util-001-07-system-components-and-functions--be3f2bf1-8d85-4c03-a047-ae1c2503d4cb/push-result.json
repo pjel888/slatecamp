@@ -1,19 +1,19 @@
 {
-  "attempted_at": "2026-05-03T13:47:45.286Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:02:12.043Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "be3f2bf1-8d85-4c03-a047-ae1c2503d4cb",
   "slug": "lea-util-001-07-system-components-and-functions",
   "preparation_actions": [],
-  "remote_hash_before": "sha256:5e6598d1f5c5319075836a198ae1ff1254101b5a7c70ccc3cf9ded4c63e1a542",
+  "remote_hash_before": "sha256:2202cddb72a57030dfc4546950d78c2e4b0a6fe13c3430726c0441e51cd55e3e",
   "original_hash": "sha256:5e6598d1f5c5319075836a198ae1ff1254101b5a7c70ccc3cf9ded4c63e1a542",
   "candidate_hash": "sha256:2202cddb72a57030dfc4546950d78c2e4b0a6fe13c3430726c0441e51cd55e3e",
-  "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-05-03T13:51:32.632943+00:00"
 }

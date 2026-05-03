@@ -1,12 +1,12 @@
 {
-  "attempted_at": "2026-05-03T13:47:08.543Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:01:22.418Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Failed to update wiki_articles.content: Bad Request"
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "f2c105fd-51fc-4b48-b53a-77242dbb91b0",
   "slug": "uap-spp-doc-standards-of-professional-practice-for-philippine-architects",

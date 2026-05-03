@@ -1,19 +1,19 @@
 {
-  "attempted_at": "2026-05-03T13:47:22.953Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:01:37.969Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "75e0731a-8a79-4007-9531-2ad50b3905ed",
   "slug": "lea-prac-ctr-011-payment-bond-protection-for-subcontractors-and-suppliers",
   "preparation_actions": [],
-  "remote_hash_before": "sha256:c28af436a7ec654f43c1c416ae36c22dfb555d1d300e3d133e5f2f5c8d1c2a04",
+  "remote_hash_before": "sha256:a4ecceec358fc1ee7c737227930b398eded2ab445215451f14667abe2f028433",
   "original_hash": "sha256:c28af436a7ec654f43c1c416ae36c22dfb555d1d300e3d133e5f2f5c8d1c2a04",
   "candidate_hash": "sha256:a4ecceec358fc1ee7c737227930b398eded2ab445215451f14667abe2f028433",
-  "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-05-03T13:50:36.938869+00:00"
 }

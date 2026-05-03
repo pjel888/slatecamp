@@ -1,19 +1,19 @@
 {
-  "attempted_at": "2026-05-03T13:47:21.906Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:01:36.919Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "6bb0f186-b9f7-4da9-ba7b-05639f43d4cf",
   "slug": "lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond",
   "preparation_actions": [],
-  "remote_hash_before": "sha256:84404d66d96a17c6901ed0df5870e55ab06001e1c5b57ab97d13b9547da35007",
+  "remote_hash_before": "sha256:e7859561fd835868be66a5ef3c0b3a9c9bec54423a04a6beac3ef49ba3b799ea",
   "original_hash": "sha256:84404d66d96a17c6901ed0df5870e55ab06001e1c5b57ab97d13b9547da35007",
   "candidate_hash": "sha256:e7859561fd835868be66a5ef3c0b3a9c9bec54423a04a6beac3ef49ba3b799ea",
-  "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-05-03T13:50:34.167801+00:00"
 }

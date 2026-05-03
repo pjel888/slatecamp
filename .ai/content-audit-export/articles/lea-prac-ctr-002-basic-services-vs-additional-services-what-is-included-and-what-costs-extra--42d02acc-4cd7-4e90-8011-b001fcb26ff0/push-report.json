@@ -1,19 +1,19 @@
 {
-  "attempted_at": "2026-05-03T13:48:26.271Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:03:00.326Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "42d02acc-4cd7-4e90-8011-b001fcb26ff0",
   "slug": "lea-prac-ctr-002-basic-services-vs-additional-services-what-is-included-and-what-costs-extra",
   "preparation_actions": [],
-  "remote_hash_before": "sha256:4faa9a9eb951832f41142b2ae9bbeb15f6dc0aa562a3e3bd57c01c097c05845a",
+  "remote_hash_before": "sha256:b5b08a7a864d8ee31488f945e0e11e7bcb5aedd5a1754cc333f1d1fce9874aea",
   "original_hash": "sha256:4faa9a9eb951832f41142b2ae9bbeb15f6dc0aa562a3e3bd57c01c097c05845a",
   "candidate_hash": "sha256:b5b08a7a864d8ee31488f945e0e11e7bcb5aedd5a1754cc333f1d1fce9874aea",
-  "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-05-03T13:52:40.805268+00:00"
 }

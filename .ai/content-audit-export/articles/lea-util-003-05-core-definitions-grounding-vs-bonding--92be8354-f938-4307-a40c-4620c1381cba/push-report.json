@@ -1,19 +1,19 @@
 {
-  "attempted_at": "2026-05-03T13:47:19.285Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:01:33.478Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "92be8354-f938-4307-a40c-4620c1381cba",
   "slug": "lea-util-003-05-core-definitions-grounding-vs-bonding",
   "preparation_actions": [],
-  "remote_hash_before": "sha256:6008dadf6d42d2da99da11d4eef07e8edbf6b46b5a06acbeb9dd41f74be3a35b",
+  "remote_hash_before": "sha256:9f8979827a262ec78d89d76a656f2718cd99d456d705d06d9b81a79c092c2c5d",
   "original_hash": "sha256:6008dadf6d42d2da99da11d4eef07e8edbf6b46b5a06acbeb9dd41f74be3a35b",
   "candidate_hash": "sha256:9f8979827a262ec78d89d76a656f2718cd99d456d705d06d9b81a79c092c2c5d",
-  "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-05-03T13:50:24.777828+00:00"
 }

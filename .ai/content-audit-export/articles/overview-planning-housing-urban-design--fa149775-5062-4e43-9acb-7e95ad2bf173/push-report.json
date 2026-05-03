@@ -1,19 +1,19 @@
 {
-  "attempted_at": "2026-05-03T13:48:16.316Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:02:48.762Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "fa149775-5062-4e43-9acb-7e95ad2bf173",
   "slug": "overview-planning-housing-urban-design",
   "preparation_actions": [],
-  "remote_hash_before": "sha256:8f98c71688da509ddad78f19048277ba2e8e68773ebe8211a8365634d8b08b07",
+  "remote_hash_before": "sha256:22779acba6347975dab741c9b205c1ae6c480979a6d891ebe2f4311d96263feb",
   "original_hash": "sha256:8f98c71688da509ddad78f19048277ba2e8e68773ebe8211a8365634d8b08b07",
   "candidate_hash": "sha256:22779acba6347975dab741c9b205c1ae6c480979a6d891ebe2f4311d96263feb",
-  "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-05-03T13:52:25.623876+00:00"
 }

@@ -1,24 +1,19 @@
 {
-  "attempted_at": "2026-05-03T13:06:48.010Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:01:59.367Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
-    "original.md hash does not match article metadata export hash.",
-    "Remote Supabase content differs from export baseline; refusing stale push.",
-    "diff-report.json marks candidate unsafe.",
-    "--all-safe skipped article because diff-report is unsafe."
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "63ba5964-80fc-472c-bc26-7d64f1507bed",
   "slug": "lea-prac-law-008-lea-structure-subjects-areas-passing-standard-and-retaking",
   "preparation_actions": [],
-  "remote_hash_before": "sha256:05d449344cd0d605402b47a79679c92a04b83a596f546e4167ab6d77380e3ef5",
-  "original_hash": "sha256:59f594bee9657234283e6e47ded6961a1772d5e899d8a9135c94e99e48ae3a74",
+  "remote_hash_before": "sha256:e1ac06ed54576d656ac780024428a46cd8ce5056fa755408395884f28f00895d",
+  "original_hash": "sha256:05d449344cd0d605402b47a79679c92a04b83a596f546e4167ab6d77380e3ef5",
   "candidate_hash": "sha256:e1ac06ed54576d656ac780024428a46cd8ce5056fa755408395884f28f00895d",
   "stale_check_passed": false,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "remote_updated_at_before": "2026-05-03T13:51:12.57842+00:00"
 }

@@ -1,12 +1,12 @@
 {
-  "attempted_at": "2026-05-03T13:47:46.156Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:02:13.318Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Failed to update wiki_articles.content: Bad Request"
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "0c236406-a3aa-46b6-9833-b2aa88a6e131",
   "slug": "lea-util-006-07-mepf-equipment-noise-sources-and-output-levels",

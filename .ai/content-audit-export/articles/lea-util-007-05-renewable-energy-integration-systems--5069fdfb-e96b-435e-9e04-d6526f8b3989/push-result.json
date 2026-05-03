@@ -1,19 +1,19 @@
 {
-  "attempted_at": "2026-05-03T13:47:40.447Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:02:05.483Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "5069fdfb-e96b-435e-9e04-d6526f8b3989",
   "slug": "lea-util-007-05-renewable-energy-integration-systems",
   "preparation_actions": [],
-  "remote_hash_before": "sha256:2dd136465bda0ccbc35017d0255fd6888ce90fcf913bb6f44992cdd74983363e",
+  "remote_hash_before": "sha256:a5d6c690c5047f1b5637d495096164a24039c305dda6bbfd8b406151acd42980",
   "original_hash": "sha256:2dd136465bda0ccbc35017d0255fd6888ce90fcf913bb6f44992cdd74983363e",
   "candidate_hash": "sha256:a5d6c690c5047f1b5637d495096164a24039c305dda6bbfd8b406151acd42980",
-  "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-05-03T13:51:21.635417+00:00"
 }

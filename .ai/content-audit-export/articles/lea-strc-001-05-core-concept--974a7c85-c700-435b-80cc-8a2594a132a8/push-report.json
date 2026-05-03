@@ -1,19 +1,19 @@
 {
-  "attempted_at": "2026-05-03T13:48:29.289Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:03:04.297Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "974a7c85-c700-435b-80cc-8a2594a132a8",
   "slug": "lea-strc-001-05-core-concept",
   "preparation_actions": [],
-  "remote_hash_before": "sha256:32c593fc3aa341daa701b32a4df335849d0aaa02ff2646f5a8e386e5d135fd85",
+  "remote_hash_before": "sha256:7b3eb8c839bce8d3e139b18e0180cb8fb3378cca1f3f59acbc249e1c3460dffb",
   "original_hash": "sha256:32c593fc3aa341daa701b32a4df335849d0aaa02ff2646f5a8e386e5d135fd85",
   "candidate_hash": "sha256:7b3eb8c839bce8d3e139b18e0180cb8fb3378cca1f3f59acbc249e1c3460dffb",
-  "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-05-03T13:52:46.86157+00:00"
 }

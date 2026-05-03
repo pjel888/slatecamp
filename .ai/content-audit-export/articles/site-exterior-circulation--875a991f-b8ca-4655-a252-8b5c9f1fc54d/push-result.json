@@ -1,19 +1,19 @@
 {
-  "attempted_at": "2026-05-03T13:48:11.073Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:02:42.827Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "875a991f-b8ca-4655-a252-8b5c9f1fc54d",
   "slug": "site-exterior-circulation",
   "preparation_actions": [],
-  "remote_hash_before": "sha256:5de73065f826242db9f73955de86d521e9e17eec93d018727fdc63c753f25505",
+  "remote_hash_before": "sha256:dfaa4b5e285fe93d1c2e09e7c3fce1fbf55eb526391acfa5cb1bd1cb6989dd4f",
   "original_hash": "sha256:5de73065f826242db9f73955de86d521e9e17eec93d018727fdc63c753f25505",
   "candidate_hash": "sha256:dfaa4b5e285fe93d1c2e09e7c3fce1fbf55eb526391acfa5cb1bd1cb6989dd4f",
-  "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-05-03T13:52:16.451153+00:00"
 }

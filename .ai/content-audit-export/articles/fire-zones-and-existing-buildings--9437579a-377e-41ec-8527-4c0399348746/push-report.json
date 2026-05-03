@@ -1,12 +1,12 @@
 {
-  "attempted_at": "2026-05-03T13:48:33.283Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:03:08.676Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Failed to update wiki_articles.content: "
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "9437579a-377e-41ec-8527-4c0399348746",
   "slug": "fire-zones-and-existing-buildings",

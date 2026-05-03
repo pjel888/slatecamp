@@ -1,19 +1,19 @@
 {
-  "attempted_at": "2026-05-03T13:47:08.034Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:01:21.715Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "50450ba8-a843-4399-9bd9-9b6c854ee65a",
   "slug": "lea-prac-svc-017-comprehensive-architectural-services-the-full-spectrum-commission",
   "preparation_actions": [],
-  "remote_hash_before": "sha256:18b97b4b0e80d1460186d8730484faad5433e098d38a2ef374e5d6c12504266b",
+  "remote_hash_before": "sha256:93c9ce2d213c201320a57ca3a6d2fdc09154195c70abbec8580977dd91108069",
   "original_hash": "sha256:18b97b4b0e80d1460186d8730484faad5433e098d38a2ef374e5d6c12504266b",
   "candidate_hash": "sha256:93c9ce2d213c201320a57ca3a6d2fdc09154195c70abbec8580977dd91108069",
-  "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-05-03T13:49:50.795747+00:00"
 }

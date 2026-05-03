@@ -1,19 +1,19 @@
 {
-  "attempted_at": "2026-05-03T13:47:17.428Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:01:31.281Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "265b961a-20fa-464e-a9c2-6a1398e1ab2e",
   "slug": "flora-and-fauna-in-site-development",
   "preparation_actions": [],
-  "remote_hash_before": "sha256:43ea5cde85c75ed80cf5d36aff9abefeb6f4ccd2b705e086fbf2ebc8f39832a3",
+  "remote_hash_before": "sha256:13aead3f866527bd7801fced8312982d6bc8c971062f4c0c88e359692637c243",
   "original_hash": "sha256:43ea5cde85c75ed80cf5d36aff9abefeb6f4ccd2b705e086fbf2ebc8f39832a3",
   "candidate_hash": "sha256:13aead3f866527bd7801fced8312982d6bc8c971062f4c0c88e359692637c243",
-  "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-05-03T13:50:15.955041+00:00"
 }

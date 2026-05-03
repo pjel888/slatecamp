@@ -1,12 +1,12 @@
 {
-  "attempted_at": "2026-05-03T13:47:48.431Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:02:16.966Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Failed to update wiki_articles.content: Bad Request"
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "02b9f8da-3c2e-460a-bd2b-0c5d68249b1b",
   "slug": "legal-liability-and-enforcement-workflow",

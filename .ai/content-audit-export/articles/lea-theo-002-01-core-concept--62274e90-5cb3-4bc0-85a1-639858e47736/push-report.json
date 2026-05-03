@@ -1,12 +1,12 @@
 {
-  "attempted_at": "2026-05-03T13:47:08.419Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:01:22.112Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Failed to update wiki_articles.content: Bad Request"
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "62274e90-5cb3-4bc0-85a1-639858e47736",
   "slug": "lea-theo-002-01-core-concept",

@@ -1,19 +1,19 @@
 {
-  "attempted_at": "2026-05-03T13:47:26.338Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:01:42.695Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "ab6d74a1-744c-4961-816a-b088bb707848",
   "slug": "lea-prac-law-005-prboa-powers-and-functions-section-7-in-full",
   "preparation_actions": [],
-  "remote_hash_before": "sha256:7657ca09b9986f9c7e71c4091ff657f1c338e86fc060b87a7d1f0ea13cd12ad1",
+  "remote_hash_before": "sha256:17e29f3281af274ebdec6e68983e120e56c99361d32a75c184660a10d1a8b112",
   "original_hash": "sha256:7657ca09b9986f9c7e71c4091ff657f1c338e86fc060b87a7d1f0ea13cd12ad1",
   "candidate_hash": "sha256:17e29f3281af274ebdec6e68983e120e56c99361d32a75c184660a10d1a8b112",
-  "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-05-03T13:50:47.095303+00:00"
 }

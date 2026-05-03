@@ -1,19 +1,19 @@
 {
-  "attempted_at": "2026-05-03T13:47:04.405Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:01:16.945Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "e51e9a56-7251-460e-8d00-5feaa3884f0a",
   "slug": "lea-prac-frm-007-reciprocity-principles-in-architectural-practice",
   "preparation_actions": [],
-  "remote_hash_before": "sha256:2cf5afa641d46621e90437f79ebf70b9c44d6eba5df32b6490dffab771c843e5",
+  "remote_hash_before": "sha256:2252ca4f380b936171b1fc6ffaa7fc12c3890d78a45ef61da00df7775efc2b2b",
   "original_hash": "sha256:2cf5afa641d46621e90437f79ebf70b9c44d6eba5df32b6490dffab771c843e5",
   "candidate_hash": "sha256:2252ca4f380b936171b1fc6ffaa7fc12c3890d78a45ef61da00df7775efc2b2b",
-  "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-05-03T13:49:40.396084+00:00"
 }

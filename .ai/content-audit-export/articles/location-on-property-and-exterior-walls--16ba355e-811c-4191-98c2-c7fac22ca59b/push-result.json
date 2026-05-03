@@ -1,12 +1,12 @@
 {
-  "attempted_at": "2026-05-03T13:47:46.968Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:02:14.665Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Failed to update wiki_articles.content: Bad Request"
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "16ba355e-811c-4191-98c2-c7fac22ca59b",
   "slug": "location-on-property-and-exterior-walls",

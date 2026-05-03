@@ -1,19 +1,19 @@
 {
-  "attempted_at": "2026-05-03T13:47:05.327Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:01:18.178Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "c534d94f-967a-48bb-babf-419fa6d35ec7",
   "slug": "spp-doc-204-a-fulltime-supervision-services",
   "preparation_actions": [],
-  "remote_hash_before": "sha256:206b7f7cab0bb02dd09022ede0f5439c8b78bcaad7f5e8658b0498b2c80adb4a",
+  "remote_hash_before": "sha256:a50226a06d96266371a73846231683b2770e0a209f029dc1e207e9d86decba13",
   "original_hash": "sha256:206b7f7cab0bb02dd09022ede0f5439c8b78bcaad7f5e8658b0498b2c80adb4a",
   "candidate_hash": "sha256:a50226a06d96266371a73846231683b2770e0a209f029dc1e207e9d86decba13",
-  "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-05-03T13:49:41.536323+00:00"
 }

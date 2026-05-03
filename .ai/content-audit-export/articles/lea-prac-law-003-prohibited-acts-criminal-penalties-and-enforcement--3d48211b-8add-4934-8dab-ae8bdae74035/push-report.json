@@ -1,19 +1,19 @@
 {
-  "attempted_at": "2026-05-03T13:47:45.750Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:02:12.794Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "3d48211b-8add-4934-8dab-ae8bdae74035",
   "slug": "lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement",
   "preparation_actions": [],
-  "remote_hash_before": "sha256:353fa3fbbdd50673dedfab60ded43c7c7fbb6086c63b863adf7b339319bfed4b",
+  "remote_hash_before": "sha256:cc3924aafd558511015142b1a285a8a02d51afc887635593cdc135a17fbcaf3f",
   "original_hash": "sha256:353fa3fbbdd50673dedfab60ded43c7c7fbb6086c63b863adf7b339319bfed4b",
   "candidate_hash": "sha256:cc3924aafd558511015142b1a285a8a02d51afc887635593cdc135a17fbcaf3f",
-  "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-05-03T13:51:33.584045+00:00"
 }

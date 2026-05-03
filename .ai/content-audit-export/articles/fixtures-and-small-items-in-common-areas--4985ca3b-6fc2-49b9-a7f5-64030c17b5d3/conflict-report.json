@@ -1,21 +1,19 @@
 {
-  "attempted_at": "2026-05-03T13:06:29.639Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:01:33.052Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
     "Remote Supabase content differs from export baseline; refusing stale push."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "4985ca3b-6fc2-49b9-a7f5-64030c17b5d3",
   "slug": "fixtures-and-small-items-in-common-areas",
   "preparation_actions": [],
-  "remote_hash_before": "sha256:c4771c1af94a7603872d8806c54b44b60adadf8af862b22da97a81a285083676",
-  "original_hash": "sha256:a657213495121f3cefc5cf0b70bcdcbc94db069e9c83aa26236f6fc28e5b2449",
+  "remote_hash_before": "sha256:e811975a1b39d70cb9a6ebb6a0ef62c17bdfa0b570592ba32ec08668d990e0dc",
+  "original_hash": "sha256:c4771c1af94a7603872d8806c54b44b60adadf8af862b22da97a81a285083676",
   "candidate_hash": "sha256:e811975a1b39d70cb9a6ebb6a0ef62c17bdfa0b570592ba32ec08668d990e0dc",
   "stale_check_passed": false,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "remote_updated_at_before": "2026-05-03T13:50:23.853817+00:00"
 }

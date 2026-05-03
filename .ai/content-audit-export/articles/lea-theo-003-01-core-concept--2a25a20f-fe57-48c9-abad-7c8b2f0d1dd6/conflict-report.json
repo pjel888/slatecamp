@@ -1,21 +1,19 @@
 {
-  "attempted_at": "2026-05-03T13:06:27.031Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:01:30.232Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
     "Remote Supabase content differs from export baseline; refusing stale push."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "2a25a20f-fe57-48c9-abad-7c8b2f0d1dd6",
   "slug": "lea-theo-003-01-core-concept",
   "preparation_actions": [],
-  "remote_hash_before": "sha256:b6c441ef784e9267807855d8d76469fdd3e29189a42731fbeda114589c1a2a8b",
-  "original_hash": "sha256:e639a54d715a4a2dc8d199581ba7dfedd66f81cf29f1ca12536685c302757a74",
+  "remote_hash_before": "sha256:c18cd9b10ca07efb2c18ef809a4cfb799c6bcb2dc1b2ecf2be0735b3c867dfea",
+  "original_hash": "sha256:b6c441ef784e9267807855d8d76469fdd3e29189a42731fbeda114589c1a2a8b",
   "candidate_hash": "sha256:c18cd9b10ca07efb2c18ef809a4cfb799c6bcb2dc1b2ecf2be0735b3c867dfea",
   "stale_check_passed": false,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "remote_updated_at_before": "2026-05-03T13:50:12.588256+00:00"
 }

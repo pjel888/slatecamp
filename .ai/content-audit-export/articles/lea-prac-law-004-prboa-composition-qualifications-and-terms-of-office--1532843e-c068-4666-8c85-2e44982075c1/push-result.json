@@ -1,19 +1,19 @@
 {
-  "attempted_at": "2026-05-03T13:47:20.090Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:01:34.816Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "1532843e-c068-4666-8c85-2e44982075c1",
   "slug": "lea-prac-law-004-prboa-composition-qualifications-and-terms-of-office",
   "preparation_actions": [],
-  "remote_hash_before": "sha256:a29e3b93f3e8152b7892f61790edf65a69923ee99211a30dbbaeb451669ab09f",
+  "remote_hash_before": "sha256:453395a1ee82c71f39456d68eca7d488c7db9549ab1f01f301335a18f96c4771",
   "original_hash": "sha256:a29e3b93f3e8152b7892f61790edf65a69923ee99211a30dbbaeb451669ab09f",
   "candidate_hash": "sha256:453395a1ee82c71f39456d68eca7d488c7db9549ab1f01f301335a18f96c4771",
-  "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-05-03T13:50:28.225816+00:00"
 }

@@ -1,19 +1,19 @@
 {
-  "attempted_at": "2026-05-03T13:47:26.508Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:01:42.882Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "75ef7a25-2d9d-455d-8d89-e6eb0b691240",
   "slug": "lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice-services",
   "preparation_actions": [],
-  "remote_hash_before": "sha256:5935c5453fe63aef73edd20f593f69948604b066026f9f73f72e98d030f308e2",
+  "remote_hash_before": "sha256:93c4b7c3545013dc99b4a051120eb9c286e3e85d122274c198d2e914dc8c798e",
   "original_hash": "sha256:5935c5453fe63aef73edd20f593f69948604b066026f9f73f72e98d030f308e2",
   "candidate_hash": "sha256:93c4b7c3545013dc99b4a051120eb9c286e3e85d122274c198d2e914dc8c798e",
-  "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-05-03T13:50:47.39498+00:00"
 }

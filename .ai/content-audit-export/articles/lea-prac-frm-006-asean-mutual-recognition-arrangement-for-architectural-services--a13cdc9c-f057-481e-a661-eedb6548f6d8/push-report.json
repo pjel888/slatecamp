@@ -1,19 +1,19 @@
 {
-  "attempted_at": "2026-05-03T13:47:23.608Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:01:38.644Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "a13cdc9c-f057-481e-a661-eedb6548f6d8",
   "slug": "lea-prac-frm-006-asean-mutual-recognition-arrangement-for-architectural-services",
   "preparation_actions": [],
-  "remote_hash_before": "sha256:bcbffb0f6256da6cfb5e19a555af58da18699484bb0c163e0c45a75212520b89",
+  "remote_hash_before": "sha256:1f42c77f1993c3d9c2f8ab707d8f91920dcab2d7600f8db1b3fcb5f916749cbe",
   "original_hash": "sha256:bcbffb0f6256da6cfb5e19a555af58da18699484bb0c163e0c45a75212520b89",
   "candidate_hash": "sha256:1f42c77f1993c3d9c2f8ab707d8f91920dcab2d7600f8db1b3fcb5f916749cbe",
-  "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-05-03T13:50:38.743221+00:00"
 }

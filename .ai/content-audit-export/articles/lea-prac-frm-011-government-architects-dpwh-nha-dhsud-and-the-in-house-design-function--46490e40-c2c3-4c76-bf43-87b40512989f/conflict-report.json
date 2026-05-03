@@ -1,21 +1,19 @@
 {
-  "attempted_at": "2026-05-03T13:06:25.969Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:01:28.871Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
   "blockers": [
     "Remote Supabase content differs from export baseline; refusing stale push."
   ],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
-  ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "46490e40-c2c3-4c76-bf43-87b40512989f",
   "slug": "lea-prac-frm-011-government-architects-dpwh-nha-dhsud-and-the-in-house-design-function",
   "preparation_actions": [],
-  "remote_hash_before": "sha256:03c745e9f59e7b9ffd426e1bb46eade03220a9ef8ec1ae96578f246e89f1e8b8",
-  "original_hash": "sha256:ab604eeef9d328b9c6f2516b6015f6af4d4f211432dc2fcdcce501113920b812",
+  "remote_hash_before": "sha256:470a2f616b16203e9ecc95f9bd60d88eb95fd5e60208f460e7c6254870bfa12f",
+  "original_hash": "sha256:03c745e9f59e7b9ffd426e1bb46eade03220a9ef8ec1ae96578f246e89f1e8b8",
   "candidate_hash": "sha256:470a2f616b16203e9ecc95f9bd60d88eb95fd5e60208f460e7c6254870bfa12f",
   "stale_check_passed": false,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "remote_updated_at_before": "2026-05-03T13:50:08.640764+00:00"
 }

@@ -1,19 +1,19 @@
 {
-  "attempted_at": "2026-05-03T13:48:30.161Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:03:05.405Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "6d5e0e55-215a-4806-a679-dac7aea5a99b",
   "slug": "bp-344-accessible-washrooms",
   "preparation_actions": [],
-  "remote_hash_before": "sha256:78921577efafdfed9c989b7d919418a14b826dd7ef9f30d96e046131ea2690d0",
+  "remote_hash_before": "sha256:d852ed2ba150069272912dc5300169a4aa053d03b8ee28de8d1634170c695c17",
   "original_hash": "sha256:78921577efafdfed9c989b7d919418a14b826dd7ef9f30d96e046131ea2690d0",
   "candidate_hash": "sha256:d852ed2ba150069272912dc5300169a4aa053d03b8ee28de8d1634170c695c17",
-  "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-05-03T13:52:48.906005+00:00"
 }

@@ -1,19 +1,19 @@
 {
-  "attempted_at": "2026-05-03T13:47:12.468Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:01:26.851Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "916cb394-9854-4d8e-ae0a-fd1747e37b3f",
   "slug": "lea-matl-007-04-core-concept",
   "preparation_actions": [],
-  "remote_hash_before": "sha256:e92c17aebe1ccffd1e8b17512015c95ed6893aa1bb915a0245895f79f953889d",
+  "remote_hash_before": "sha256:063a60660296dee4a465803782e4d49624bdd72e947596be60e9b76b1bfa0809",
   "original_hash": "sha256:e92c17aebe1ccffd1e8b17512015c95ed6893aa1bb915a0245895f79f953889d",
   "candidate_hash": "sha256:063a60660296dee4a465803782e4d49624bdd72e947596be60e9b76b1bfa0809",
-  "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-05-03T13:50:03.956879+00:00"
 }

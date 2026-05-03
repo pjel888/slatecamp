@@ -1,19 +1,19 @@
 {
-  "attempted_at": "2026-05-03T13:47:13.396Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:01:27.492Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "bb2f1b8b-855d-4eeb-aeb3-8cf3874508d0",
   "slug": "mastery-structural-conceptualization",
   "preparation_actions": [],
-  "remote_hash_before": "sha256:ac525c1382cbfe8d2a5d381636fd40bcef1da71f754830d45ffd640d78bd9cad",
+  "remote_hash_before": "sha256:57e01803c37ab3e28d56f70bd9c9082d9a012b80e8480f1cfbd18a99fed0ee13",
   "original_hash": "sha256:ac525c1382cbfe8d2a5d381636fd40bcef1da71f754830d45ffd640d78bd9cad",
   "candidate_hash": "sha256:57e01803c37ab3e28d56f70bd9c9082d9a012b80e8480f1cfbd18a99fed0ee13",
-  "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-05-03T13:50:05.730609+00:00"
 }

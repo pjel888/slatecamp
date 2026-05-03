@@ -1,19 +1,19 @@
 {
-  "attempted_at": "2026-05-03T13:47:11.552Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:01:25.904Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "01e537a7-be03-49ec-b745-258474c27f70",
   "slug": "lea-prac-svc-023-core-concept",
   "preparation_actions": [],
-  "remote_hash_before": "sha256:413babbd578244e8577bb92cd1b8bf9b46e7265417b13d1951b7858280503ac3",
+  "remote_hash_before": "sha256:abe9be03673eb81af6108fa27117e03462dbba832c71e316af146d83b1ea3f9d",
   "original_hash": "sha256:413babbd578244e8577bb92cd1b8bf9b46e7265417b13d1951b7858280503ac3",
   "candidate_hash": "sha256:abe9be03673eb81af6108fa27117e03462dbba832c71e316af146d83b1ea3f9d",
-  "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-05-03T13:50:01.331136+00:00"
 }

@@ -1,19 +1,19 @@
 {
-  "attempted_at": "2026-05-03T13:47:28.603Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:01:47.687Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "60c3b78a-e1c7-4c5e-880e-f9526d6c570d",
   "slug": "21st-century-movements",
   "preparation_actions": [],
-  "remote_hash_before": "sha256:a9e1f2be8340e401f5c38b6e4f7c56d66f142dde0816794dc7c7f451e4db177b",
+  "remote_hash_before": "sha256:0165c73f7d6dfc4c004da9c0148cc4fa238aed667ef0fbb16eca71a06b1c2253",
   "original_hash": "sha256:a9e1f2be8340e401f5c38b6e4f7c56d66f142dde0816794dc7c7f451e4db177b",
   "candidate_hash": "sha256:0165c73f7d6dfc4c004da9c0148cc4fa238aed667ef0fbb16eca71a06b1c2253",
-  "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-05-03T13:50:52.445318+00:00"
 }

@@ -1,19 +1,19 @@
 {
-  "attempted_at": "2026-05-03T13:47:53.942Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:02:22.005Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "0d7083b9-a1bc-428c-b9b9-e8d4afa0c83c",
   "slug": "overview-theory-of-architecture",
   "preparation_actions": [],
-  "remote_hash_before": "sha256:73d9e268e1899af2c0c1704e136fcd4d0467019a4b34fe1ed3b2be4a8a4b3c46",
+  "remote_hash_before": "sha256:fd11130bedab794d2dfc828ec2c32659b9fe061b08162b546e009af30d4b937b",
   "original_hash": "sha256:73d9e268e1899af2c0c1704e136fcd4d0467019a4b34fe1ed3b2be4a8a4b3c46",
   "candidate_hash": "sha256:fd11130bedab794d2dfc828ec2c32659b9fe061b08162b546e009af30d4b937b",
-  "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-05-03T13:51:47.356034+00:00"
 }

@@ -1,19 +1,19 @@
 {
-  "attempted_at": "2026-05-03T13:47:23.885Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:01:38.887Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "d39f0b0e-1219-4f42-a570-e08a6134d544",
   "slug": "overview-building-utilities-mepf",
   "preparation_actions": [],
-  "remote_hash_before": "sha256:0de56a93588fc7128d177998c5111b724f1fc7ffdd35ae63f775cd5cd10ef845",
+  "remote_hash_before": "sha256:74bd756461912d83c4c43f11ecbcb04338be75b3a02bbf73726458b1e459748c",
   "original_hash": "sha256:0de56a93588fc7128d177998c5111b724f1fc7ffdd35ae63f775cd5cd10ef845",
   "candidate_hash": "sha256:74bd756461912d83c4c43f11ecbcb04338be75b3a02bbf73726458b1e459748c",
-  "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-05-03T13:50:39.516003+00:00"
 }

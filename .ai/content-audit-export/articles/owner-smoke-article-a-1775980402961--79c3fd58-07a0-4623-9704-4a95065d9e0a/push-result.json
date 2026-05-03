@@ -1,19 +1,19 @@
 {
-  "attempted_at": "2026-05-03T13:47:09.327Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:01:23.412Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "79c3fd58-07a0-4623-9704-4a95065d9e0a",
   "slug": "owner-smoke-article-a-1775980402961",
   "preparation_actions": [],
-  "remote_hash_before": "sha256:a441227d68768f7d266f351900c831cf961c189944861daac09804b8696f5df1",
+  "remote_hash_before": "sha256:a54c8997238e68f8e435f933c8bc17b8208617317e1f92ec0a2ae89d128534d8",
   "original_hash": "sha256:a441227d68768f7d266f351900c831cf961c189944861daac09804b8696f5df1",
   "candidate_hash": "sha256:a54c8997238e68f8e435f933c8bc17b8208617317e1f92ec0a2ae89d128534d8",
-  "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-12T13:40:40.746765+00:00"
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-05-03T13:49:54.643163+00:00"
 }

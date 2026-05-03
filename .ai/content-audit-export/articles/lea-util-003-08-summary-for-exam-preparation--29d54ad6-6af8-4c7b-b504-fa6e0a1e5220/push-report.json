@@ -1,12 +1,12 @@
 {
-  "attempted_at": "2026-05-03T13:47:38.041Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:02:01.908Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Failed to update wiki_articles.content: Bad Request"
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "29d54ad6-6af8-4c7b-b504-fa6e0a1e5220",
   "slug": "lea-util-003-08-summary-for-exam-preparation",

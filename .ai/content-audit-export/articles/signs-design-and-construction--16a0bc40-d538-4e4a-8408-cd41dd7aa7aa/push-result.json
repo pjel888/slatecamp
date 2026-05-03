@@ -1,19 +1,19 @@
 {
-  "attempted_at": "2026-05-03T13:48:28.734Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:03:03.508Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
   "slug": "signs-design-and-construction",
   "preparation_actions": [],
-  "remote_hash_before": "sha256:5174cb1fa5c4f8a9e743c9d43acf602405d4eed5222497d92b5b32efb2c0a899",
+  "remote_hash_before": "sha256:98bb8d9e804f27b62feb88ab629a06f5d55635373761f3608247415bbb524484",
   "original_hash": "sha256:5174cb1fa5c4f8a9e743c9d43acf602405d4eed5222497d92b5b32efb2c0a899",
   "candidate_hash": "sha256:98bb8d9e804f27b62feb88ab629a06f5d55635373761f3608247415bbb524484",
-  "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-05-03T13:52:45.947344+00:00"
 }

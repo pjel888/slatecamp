@@ -1,19 +1,19 @@
 {
-  "attempted_at": "2026-05-03T13:47:34.752Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:01:56.840Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "17b95df0-6bea-43c6-ab03-2b82a358caa6",
   "slug": "lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountability",
   "preparation_actions": [],
-  "remote_hash_before": "sha256:95d8cfdb8c5cf1e07d0c446e179fb06b0d4c6f245168c956d94cefc36246d4e2",
+  "remote_hash_before": "sha256:d70b512d5210b29c4ced115edcf49159f87e84ae6766a524c38be3309e13a3cb",
   "original_hash": "sha256:95d8cfdb8c5cf1e07d0c446e179fb06b0d4c6f245168c956d94cefc36246d4e2",
   "candidate_hash": "sha256:d70b512d5210b29c4ced115edcf49159f87e84ae6766a524c38be3309e13a3cb",
-  "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-05-03T13:51:06.483178+00:00"
 }

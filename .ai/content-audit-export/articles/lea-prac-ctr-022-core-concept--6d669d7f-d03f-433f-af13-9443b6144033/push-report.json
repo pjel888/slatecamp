@@ -1,19 +1,19 @@
 {
-  "attempted_at": "2026-05-03T13:48:29.105Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:03:04.145Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "6d669d7f-d03f-433f-af13-9443b6144033",
   "slug": "lea-prac-ctr-022-core-concept",
   "preparation_actions": [],
-  "remote_hash_before": "sha256:1f94b0fb58a9116d19639bb6baaaee0e47f8ee3eb42baec165bdbed6d991218b",
+  "remote_hash_before": "sha256:a903161865c5e33f1f68e9cc07c5457f9c26ddc60ca71ab6e163059c8d9d550d",
   "original_hash": "sha256:1f94b0fb58a9116d19639bb6baaaee0e47f8ee3eb42baec165bdbed6d991218b",
   "candidate_hash": "sha256:a903161865c5e33f1f68e9cc07c5457f9c26ddc60ca71ab6e163059c8d9d550d",
-  "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-05-03T13:52:46.575113+00:00"
 }

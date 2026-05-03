@@ -1,19 +1,19 @@
 {
-  "attempted_at": "2026-05-03T13:48:32.879Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:03:08.362Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "6604a199-6687-435d-aeb1-ffdc46be7d23",
   "slug": "lea-prac-eth-001-core-concept",
   "preparation_actions": [],
-  "remote_hash_before": "sha256:aeb94ff0b4b1a946dbbc08b104b6bfb93e6325bc0a4b6c50bd30dfa526962aa0",
+  "remote_hash_before": "sha256:7c780be2a35a95103036b80388e82d65d2ea849386d0d9a1d75ae41272c39088",
   "original_hash": "sha256:aeb94ff0b4b1a946dbbc08b104b6bfb93e6325bc0a4b6c50bd30dfa526962aa0",
   "candidate_hash": "sha256:7c780be2a35a95103036b80388e82d65d2ea849386d0d9a1d75ae41272c39088",
-  "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-05-03T13:52:53.512522+00:00"
 }

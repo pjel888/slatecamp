@@ -1,19 +1,19 @@
 {
-  "attempted_at": "2026-05-03T13:47:36.083Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:01:59.163Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "7a3b0ff7-407f-40cc-b398-fca6358f4db7",
   "slug": "lodging-and-residential-accessibility",
   "preparation_actions": [],
-  "remote_hash_before": "sha256:60e54ddedc491d57fbb427d7260a9381855d2fcb2d09c4855e7910f9806890c1",
+  "remote_hash_before": "sha256:c1aa7c10076bf433e9110608a4d5ed0e9cde659b4a1bfafed6f0036704aa0f28",
   "original_hash": "sha256:60e54ddedc491d57fbb427d7260a9381855d2fcb2d09c4855e7910f9806890c1",
   "candidate_hash": "sha256:c1aa7c10076bf433e9110608a4d5ed0e9cde659b4a1bfafed6f0036704aa0f28",
-  "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-05-03T13:51:12.228832+00:00"
 }

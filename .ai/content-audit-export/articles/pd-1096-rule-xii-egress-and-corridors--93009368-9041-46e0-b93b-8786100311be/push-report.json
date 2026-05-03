@@ -1,12 +1,12 @@
 {
-  "attempted_at": "2026-05-03T13:47:55.868Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:02:24.301Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Failed to update wiki_articles.content: Bad Request"
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "93009368-9041-46e0-b93b-8786100311be",
   "slug": "pd-1096-rule-xii-egress-and-corridors",

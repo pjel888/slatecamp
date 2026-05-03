@@ -1,19 +1,19 @@
 {
-  "attempted_at": "2026-05-03T13:47:05.643Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:01:18.468Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "fe7216ee-46ed-41b3-88ef-accb3f912a4c",
   "slug": "inca-architecture-ashlar-masonry",
   "preparation_actions": [],
-  "remote_hash_before": "sha256:8b8c3356eca5d20e5bdd0349a34db13c46fef2e2237e0bd635176b755e692a00",
+  "remote_hash_before": "sha256:ff94328b7d3eca923d08b87f370fee0357b37476edc201e2cd6edce7b7b73a28",
   "original_hash": "sha256:8b8c3356eca5d20e5bdd0349a34db13c46fef2e2237e0bd635176b755e692a00",
   "candidate_hash": "sha256:ff94328b7d3eca923d08b87f370fee0357b37476edc201e2cd6edce7b7b73a28",
-  "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-05-03T13:49:42.230488+00:00"
 }

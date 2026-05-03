@@ -1,19 +1,19 @@
 {
-  "attempted_at": "2026-05-03T13:47:56.066Z",
-  "dry_run": true,
-  "apply": false,
+  "attempted_at": "2026-05-03T14:02:24.676Z",
+  "dry_run": false,
+  "apply": true,
   "pushed": false,
-  "blockers": [],
-  "warnings": [
-    "Dry-run mode: no Supabase mutation will be performed."
+  "blockers": [
+    "Remote Supabase content differs from export baseline; refusing stale push."
   ],
+  "warnings": [],
   "updated_rows_count": 0,
   "article_id": "7a48ab8a-3609-484d-b7e3-76f2fc1f6040",
   "slug": "lea-prac-svc-024-value-engineering-as-an-architectural-service-concept-process-and-practice-ethics",
   "preparation_actions": [],
-  "remote_hash_before": "sha256:99082e18385cd30447661c6d0dc2c8c7d53fda27aec75a842b5126feeaac2172",
+  "remote_hash_before": "sha256:e8f6ce2a2e4d4aadb4a2416f8cce3c1c42982dcdae815c94d2e5ade38c6e8108",
   "original_hash": "sha256:99082e18385cd30447661c6d0dc2c8c7d53fda27aec75a842b5126feeaac2172",
   "candidate_hash": "sha256:e8f6ce2a2e4d4aadb4a2416f8cce3c1c42982dcdae815c94d2e5ade38c6e8108",
-  "stale_check_passed": true,
-  "remote_updated_at_before": "2026-04-08T07:44:46.846261+00:00"
+  "stale_check_passed": false,
+  "remote_updated_at_before": "2026-05-03T13:51:51.366738+00:00"
 }
