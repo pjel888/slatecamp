@@ -1271,7 +1271,7 @@ export function evaluatePushSafety(input: PushSafetyInput): PushSafetyResult {
   if (input.diffReport && input.diffReport.unresolved_placeholders_count > 0) blockers.push('Candidate has unresolved placeholders.')
   if (input.diffReport && input.diffReport.ui_blocks_changed_count > 0) blockers.push('UI block preservation failed.')
   if (!input.uiBlocks) blockers.push('ui-blocks.json is missing.')
-  if (input.uiBlocks?.unresolved_critical_blocks.length) blockers.push('ui-blocks.json contains unresolved critical blocks.')
+  if (input.uiBlocks?.unresolved_critical_blocks?.length) blockers.push('ui-blocks.json contains unresolved critical blocks.')
   if (!input.force && input.uiBlocks?.blocks.some((block) => block.status === 'unknown' || block.parse_status === 'unknown_block')) {
     blockers.push('ui-blocks.json contains unknown/unparseable blocks; rerun with --force only after manual review.')
   }

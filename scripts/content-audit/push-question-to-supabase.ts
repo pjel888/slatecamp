@@ -47,6 +47,7 @@ interface QuestionEditFile {
   proposed?: JsonRecord
   update?: JsonRecord
   fields?: JsonRecord
+  status?: string
 }
 
 async function main() {
@@ -91,6 +92,12 @@ async function main() {
   if (edit.question_id && edit.question_id !== questionId) (report.blockers as string[]).push('question-edits file question_id does not match requested question.')
   if (!edit.reason) (report.warnings as string[]).push('question edit has no reason field.')
   if (!edit.approved_by || !edit.approved_at) (report.warnings as string[]).push('question edit is missing approved_by/approved_at review metadata.')
+  if (edit.status === 'duplicate') {
+    ;(report.warnings as string[]).push('Question is flagged as duplicate; skipping push to Supabase.')
+    await writeQuestionReports(root, questionId, located.articleDir, report)
+    console.log(JSON.stringify(report, null, 2))
+    return
+  }
 
   const proposed = sanitizeQuestionUpdate(edit.proposed ?? edit.update ?? edit.fields ?? {})
   if (Object.keys(proposed).length === 0) (report.blockers as string[]).push('Question edit has no allowed proposed fields to update.')
